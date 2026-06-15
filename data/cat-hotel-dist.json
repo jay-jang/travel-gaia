@@ -156,6 +156,10 @@
     "relationships": [
       {
         "type": "related",
+        "targetTerm": "GDS"
+      },
+      {
+        "type": "related",
         "targetTerm": "CRS"
       },
       {

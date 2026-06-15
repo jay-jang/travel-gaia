@@ -191,6 +191,28 @@ mark{background:var(--accent-weak);color:var(--accent);padding:0 2px;border-radi
 #kg:active{cursor:grabbing}
 .kg-tip{position:absolute;pointer-events:none;background:var(--text);color:var(--surface);font-size:.78rem;font-weight:600;padding:6px 10px;border-radius:9px;opacity:0;transform:translate(-50%,-130%);transition:opacity .1s;white-space:nowrap;z-index:5;max-width:260px}
 
+/* classroom page */
+.classroom-wrap{display:grid;grid-template-columns:350px 1fr;gap:24px;background:var(--surface);border:1px solid var(--border);border-radius:20px;box-shadow:var(--shadow);overflow:hidden;animation:fadeUp .5s both;min-height:500px;margin-bottom:30px}
+@media (max-width:900px){.classroom-wrap{grid-template-columns:1fr}}
+.classroom-left{padding:24px;display:flex;flex-direction:column;gap:20px;border-right:1px solid var(--border);background:var(--surface-2)}
+@media (max-width:900px){.classroom-left{border-right:none;border-bottom:1px solid var(--border)}}
+.classroom-tabs{display:flex;gap:8px;border-bottom:1px solid var(--border);padding-bottom:12px}
+.classroom-tab{flex:1;padding:10px;border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:8px;cursor:pointer;font-family:var(--grotesk);font-weight:700;font-size:0.85rem;text-align:center;transition:all 0.2s}
+.classroom-tab.active{background:var(--grad);color:#fff;border-color:transparent;box-shadow:0 4px 12px rgba(120,40,255,0.25)}
+.classroom-tab:hover:not(.active){border-color:var(--accent);color:var(--accent)}
+.classroom-content{flex:1;display:flex;flex-direction:column;gap:12px}
+.classroom-title{font-family:var(--grotesk);font-size:1.25rem;font-weight:700;margin:0;color:var(--text)}
+.classroom-step-count{font-size:0.85rem;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em}
+.classroom-narration{font-size:0.95rem;line-height:1.62;color:var(--muted);min-height:120px}
+.classroom-controls{display:flex;gap:12px;margin-top:auto}
+.classroom-btn{flex:1;padding:11px 16px;border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:10px;cursor:pointer;font-family:var(--grotesk);font-weight:700;font-size:0.9rem;text-align:center;transition:all 0.2s;display:inline-flex;align-items:center;justify-content:center}
+.classroom-btn:disabled{opacity:0.4;cursor:not-allowed;border-color:var(--border)!important;color:var(--muted)!important;background:var(--surface)!important}
+.classroom-btn-primary{background:var(--grad);color:#fff;border-color:transparent;box-shadow:0 4px 12px rgba(120,40,255,0.25)}
+.classroom-btn-primary:hover:not(:disabled){transform:translateY(-1px);box-shadow:0 6px 16px rgba(120,40,255,0.35)}
+.classroom-btn-secondary:hover:not(:disabled){border-color:var(--accent);color:var(--accent)}
+.classroom-right{position:relative;flex:1;background:var(--surface);display:flex;align-items:center;justify-content:center}
+#classroomCanvas{display:block;width:100%;height:100%;min-height:400px}
+
 footer{color:var(--faint);font-size:.78rem;text-align:center;padding:26px;border-top:1px solid var(--border);margin-top:30px}
 
 @media (max-width:880px){
@@ -232,6 +254,7 @@ footer{color:var(--faint);font-size:.78rem;text-align:center;padding:26px;border
 "use strict";
 (function(){
   const RAW = JSON.parse(document.getElementById('glossary-data').textContent);
+  window.GLOSSARY_DATA = RAW;
   const META = RAW.meta||{}, CATS = RAW.categories||[], ENTRIES = RAW.entries||[];
   const byId = new Map(ENTRIES.map(e=>[e.id,e]));
   const catById = new Map(CATS.map(c=>[c.id,c]));
@@ -259,12 +282,14 @@ footer{color:var(--faint);font-size:.78rem;text-align:center;padding:26px;border
       notFound:'표제어를 찾을 수 없습니다', toHome:'홈으로',
       disc:`정의는 공개 산업 표준(IATA·ATPCO·OpenTravel·HTNG·ISO 등) 및 공급자 문서를 근거로 한 편집 요약이며, 중요한 의사결정 전 1차 출처로 검증하시기 바랍니다. 마지막 갱신: ${esc(META.generatedAt||'')}.`,
       gTitle:'용어 관계 그래프', gNodes:'노드', gEdges:'관계',
-      gHint:'노드를 드래그해 정리하고, 클릭하면 해당 용어로 이동합니다. 카테고리 범례로 필터. <b>실선</b>=관련, <span style="color:var(--warn)">점선</span>=혼동 주의.',
+      gHint:'노드를 클릭하면 주변 관계가 확장되며, 이미 확장된 노드를 다시 클릭하면 용어 상세 페이지로 이동합니다. 외곽 점선 링 = 미확장 이웃 있음.',
       idxTitle:'전체 색인', idxAZ:'가나다·ABC', idxByCat:'카테고리별', idxAll:n=>`전체 ${n}개 표제어`,
       RLAB:{sameAs:'같음',broader:'상위 개념',narrower:'하위 개념',parent:'부모',child:'자식',related:'관련',conflicts:'충돌',replaces:'대체',contrasts:'대비'},
       ST:{active:'활성',deprecated:'폐지/레거시',ambiguous:'중의적'},
       CT:{acronym:'약어',"standard-term":'표준 용어',standard:'표준',"business-term":'업무 용어',"provider-term":'공급자 용어',code:'코드',metric:'지표',process:'프로세스',role:'역할',document:'문서'},
-      PR:{same:'같음',narrower:'하위',broader:'상위',related:'관련',conflicting:'충돌'} },
+      PR:{same:'같음',narrower:'하위',broader:'상위',related:'관련',conflicting:'충돌'},
+      classroom:'🏫 클래스룸', classroomPh:'클래스 선택 및 학습 진행',
+      btnBack:'이전 단계', btnNext:'다음 단계', btnFinish:'학습 완료', btnRestart:'다시 학습' },
     en:{ sub:'Travel-Industry Terminology', searchPh:'Search terms (e.g., PNR, RBD, codeshare, fare)…',
       enc:'Encyclopedia', home:'🏠 Home', cats:'Categories', graph:'🕸 Knowledge Graph', index:'📇 Full Index',
       heroT:'Travel-industry terms, unified in one reference', heroB:'An encyclopedia that <b>unifies terminology across providers and standards</b> spread over air, hotel, distribution, settlement and specs. Compare names for one concept, and explore with per-term illustrations, a knowledge graph, and a full index.',
@@ -278,12 +303,14 @@ footer{color:var(--faint);font-size:.78rem;text-align:center;padding:26px;border
       notFound:'Term not found', toHome:'Back to home',
       disc:`Definitions are editorial summaries grounded in public industry standards (IATA, ATPCO, OpenTravel, HTNG, ISO, etc.) and provider docs; verify against primary sources before critical decisions. Last updated: ${esc(META.generatedAt||'')}.`,
       gTitle:'Term Knowledge Graph', gNodes:'nodes', gEdges:'links',
-      gHint:'Drag nodes to arrange; click to open a term. Filter via the legend. <b>Solid</b> = related, <span style="color:var(--warn)">dashed</span> = distinction.',
+      gHint:'Click a node to expand its relationships. Click it again when expanded to view details. Dashed outer ring = has hidden neighbors.',
       idxTitle:'Full Index', idxAZ:'A–Z', idxByCat:'By category', idxAll:n=>`${n} terms total`,
       RLAB:{sameAs:'Same as',broader:'Broader',narrower:'Narrower',parent:'Parent',child:'Child',related:'Related',conflicts:'Conflicts',replaces:'Replaces',contrasts:'Contrasts'},
       ST:{active:'Active',deprecated:'Deprecated',ambiguous:'Ambiguous'},
       CT:{acronym:'Acronym',"standard-term":'Standard term',standard:'Standard',"business-term":'Business term',"provider-term":'Provider term',code:'Code',metric:'Metric',process:'Process',role:'Role',document:'Document'},
-      PR:{same:'Same',narrower:'Narrower',broader:'Broader',related:'Related',conflicting:'Conflicting'} },
+      PR:{same:'Same',narrower:'Narrower',broader:'Broader',related:'Related',conflicting:'Conflicting'},
+      classroom:'🏫 Classroom', classroomPh:'Select a class and track your progress',
+      btnBack:'Back', btnNext:'Next Step', btnFinish:'Finish', btnRestart:'Restart' },
   };
   const t = k => (T[LANG] && T[LANG][k]!==undefined) ? T[LANG][k] : T.en[k];
   const Lf = (e,f) => { if(LANG==='ko'){ const v=e[f+'_ko']; if(v&&String(v).trim()) return v; } return e[f]||''; };
@@ -322,6 +349,7 @@ footer{color:var(--faint);font-size:.78rem;text-align:center;padding:26px;border
       <a class="cat-link${(h2==='#/'||!h2)?' active':''}" href="#/">${t('home')}</a>
       <a class="cat-link${h2.startsWith('#/index')?' active':''}" href="#/index">${t('index')}</a>
       <a class="cat-link${h2.startsWith('#/graph')?' active':''}" href="#/graph">${t('graph')}</a>
+      <a class="cat-link${h2.startsWith('#/classroom')?' active':''}" href="#/classroom">${t('classroom')}</a>
       <div class="nav-title">${esc(t('cats'))} (${CATS.length})</div>`;
     CATS.forEach(c=>{ const n=(entriesByCat.get(c.id)||[]).length;
       h+=`<a class="cat-link${c.id===activeCat?' active':''}" href="#/category/${c.id}"><span>${dot(c)} ${esc(catName(c))}</span><span class="cnt">${n}</span></a>`; });
@@ -422,6 +450,444 @@ footer{color:var(--faint);font-size:.78rem;text-align:center;padding:26px;border
     main.querySelector('.idx-toggle').addEventListener('click',ev=>{ const b=ev.target.closest('button[data-mode]'); if(!b)return; IDXMODE=b.dataset.mode; renderIndex(); });
   }
 
+  /* educational classroom */
+  let classroomClassId = 'class101';
+  let classroomStep = 0;
+  let classroomFinished = false;
+  let classroomRAF = null;
+  let classroomResizeFn = null;
+
+  function stopClassroom(){
+    if(classroomRAF){ cancelAnimationFrame(classroomRAF); classroomRAF=null; }
+    if(classroomResizeFn){ window.removeEventListener('resize', classroomResizeFn); classroomResizeFn=null; }
+  }
+
+  const CLASSES = [
+    {
+      id: 'class101',
+      title: {
+        ko: 'Class 101: GDS 기반 전통적 항공 유통 (Basic)',
+        en: 'Class 101: Traditional GDS-based Distribution (Basic)'
+      },
+      nodes: [
+        { id: 'crs', label: 'CRS', x: 0.15, y: 0.5, cat: 'air-ops' },
+        { id: 'gds', label: 'GDS', x: 0.35, y: 0.5, cat: 'standards' },
+        { id: 'bsp', label: 'BSP', x: 0.55, y: 0.4, cat: 'pay' },
+        { id: 'arc', label: 'ARC', x: 0.55, y: 0.6, cat: 'pay' },
+        { id: 'ota', label: 'OTA', x: 0.75, y: 0.5, cat: 'hotel-dist' },
+        { id: 'customer', label: { ko: '고객', en: 'Customer' }, x: 0.9, y: 0.5, cat: 'customer' }
+      ],
+      connections: [
+        { from: 'customer', to: 'ota' },
+        { from: 'ota', to: 'gds' },
+        { from: 'gds', to: 'crs' },
+        { from: 'gds', to: 'bsp' },
+        { from: 'gds', to: 'arc' },
+        { from: 'crs', to: 'bsp' },
+        { from: 'crs', to: 'arc' },
+        { from: 'ota', to: 'bsp' },
+        { from: 'ota', to: 'arc' }
+      ],
+      steps: [
+        {
+          narration: {
+            ko: '고객이 Online Travel Agency(OTA)에서 항공권을 검색합니다. 검색 요청은 GDS를 거쳐 항공사의 CRS로 전달되어 실시간 가용성과 운임 정보를 조회합니다.',
+            en: 'The customer searches for flights on an OTA. The search request is routed through the GDS to query real-time availability and fares from the airline\'s CRS.'
+          },
+          activeNodes: ['customer', 'ota', 'gds', 'crs'],
+          activeConnections: [
+            { from: 'customer', to: 'ota' },
+            { from: 'ota', to: 'gds' },
+            { from: 'gds', to: 'crs' }
+          ]
+        },
+        {
+          narration: {
+            ko: '여정과 운임을 확정한 후 예약을 생성합니다. GDS와 CRS 간에 PNR(Passenger Name Record)이 생성 및 동기화되며 예약번호가 부여됩니다.',
+            en: 'After selecting the itinerary and fare, a booking is made. A PNR (Passenger Name Record) is created and synchronized between GDS and CRS, returning a booking reference.'
+          },
+          activeNodes: ['ota', 'gds', 'crs'],
+          activeConnections: [
+            { from: 'ota', to: 'gds' },
+            { from: 'gds', to: 'crs' }
+          ]
+        },
+        {
+          narration: {
+            ko: '결제가 진행되면 BSP(국제선 정산) 또는 ARC(미국 국내선 정산) 시스템을 통해 여행사와 항공사 간 정산 및 승인 절차가 진행됩니다.',
+            en: 'Once payment is processed, financial settlement begins between the agency and the airline via BSP (for international) or ARC (for US domestic) systems.'
+          },
+          activeNodes: ['ota', 'gds', 'crs', 'bsp', 'arc'],
+          activeConnections: [
+            { from: 'ota', to: 'bsp' },
+            { from: 'ota', to: 'arc' },
+            { from: 'crs', to: 'bsp' },
+            { from: 'crs', to: 'arc' }
+          ]
+        },
+        {
+          narration: {
+            ko: '정산 승인이 완료되면 CRS에서 전자 항공권(e-Ticket)이 발행되며, 발권 정보가 GDS를 거쳐 OTA를 통해 고객에게 전달됩니다.',
+            en: 'Upon settlement authorization, the e-Ticket is issued by the CRS and routed through the GDS and OTA to the customer.'
+          },
+          activeNodes: ['crs', 'gds', 'ota', 'customer'],
+          activeConnections: [
+            { from: 'crs', to: 'gds' },
+            { from: 'gds', to: 'ota' },
+            { from: 'ota', to: 'customer' }
+          ]
+        },
+        {
+          narration: {
+            ko: '기본 학습 완료! 전통적 유통 방식은 GDS가 핵심 중개 역할을 수행하고 BSP/ARC가 일괄 정산을 제공하여 다대다(N:N) 관계의 효율성을 보장합니다.',
+            en: 'Basic learning complete! Traditional distribution features GDS as the central intermediary and BSP/ARC providing aggregated settlement to enable efficient N:N relationships.'
+          },
+          activeNodes: ['customer', 'ota', 'gds', 'bsp', 'arc', 'crs'],
+          activeConnections: []
+        }
+      ]
+    },
+    {
+      id: 'class201',
+      title: {
+        ko: 'Class 201: NDC & ONE Order 기반 현대적 유통 (NDC/Modern)',
+        en: 'Class 201: Modern NDC & ONE Order Distribution (NDC/Modern)'
+      },
+      nodes: [
+        { id: 'crs', label: 'CRS', x: 0.15, y: 0.5, cat: 'air-ops' },
+        { id: 'ndc', label: 'NDC API', x: 0.35, y: 0.5, cat: 'standards' },
+        { id: 'settlement', label: { ko: '직접 정산/VCC', en: 'Direct Sett. / VCC' }, x: 0.55, y: 0.4, cat: 'pay' },
+        { id: 'bsp', label: 'BSP/ARC', x: 0.55, y: 0.6, cat: 'pay' },
+        { id: 'ota', label: { ko: '현대적 대리점', en: 'Modern Agent' }, x: 0.75, y: 0.5, cat: 'hotel-dist' },
+        { id: 'customer', label: { ko: '고객', en: 'Customer' }, x: 0.9, y: 0.5, cat: 'customer' }
+      ],
+      connections: [
+        { from: 'customer', to: 'ota' },
+        { from: 'ota', to: 'ndc' },
+        { from: 'ndc', to: 'crs' },
+        { from: 'ota', to: 'settlement' },
+        { from: 'ota', to: 'bsp' },
+        { from: 'crs', to: 'settlement' },
+        { from: 'crs', to: 'bsp' }
+      ],
+      steps: [
+        {
+          narration: {
+            ko: '고객이 검색할 때 항공사가 NDC API를 통해 실시간으로 개인화된 제안(Offer)을 직접 구성하여 에이전트에게 전송합니다.',
+            en: 'When the customer searches, the airline directly constructs a personalized Offer in real time via its NDC API and sends it to the agent.'
+          },
+          activeNodes: ['customer', 'ota', 'ndc', 'crs'],
+          activeConnections: [
+            { from: 'customer', to: 'ota' },
+            { from: 'ota', to: 'ndc' },
+            { from: 'ndc', to: 'crs' }
+          ]
+        },
+        {
+          narration: {
+            ko: '고객이 상품을 선택하면 기존 PNR/e-Ticket 대신 단일 주문 문서인 ONE Order(Order)가 생성되어 항공사 시스템에 직접 등록됩니다.',
+            en: 'Upon product selection, a single consolidated ONE Order (Order) is created and stored in the airline system, replacing legacy PNRs and e-Tickets.'
+          },
+          activeNodes: ['ota', 'ndc', 'crs'],
+          activeConnections: [
+            { from: 'ota', to: 'ndc' },
+            { from: 'ndc', to: 'crs' }
+          ]
+        },
+        {
+          narration: {
+            ko: '결제 시 BSP/ARC 외에도 가상신용카드(VCC)나 핀테크 간편결제를 이용하여 항공사로 직접 정산(Direct Settlement)할 수 있습니다.',
+            en: 'During payment, direct settlement to the airline is possible using Virtual Credit Cards (VCC) or fintech solutions, alongside BSP/ARC.'
+          },
+          activeNodes: ['ota', 'settlement', 'bsp', 'crs'],
+          activeConnections: [
+            { from: 'ota', to: 'settlement' },
+            { from: 'ota', to: 'bsp' },
+            { from: 'crs', to: 'settlement' },
+            { from: 'crs', to: 'bsp' }
+          ]
+        },
+        {
+          narration: {
+            ko: '부가서비스(Ancillaries) 구매 및 일정 변경 등 주문의 사후 관리(Servicing)가 NDC API를 통해 실시간으로 주문(Order)에 반영됩니다.',
+            en: 'Post-booking servicing, such as purchasing ancillaries or changing schedules, is handled in real time via NDC API and directly updated in the Order.'
+          },
+          activeNodes: ['customer', 'ota', 'ndc', 'crs'],
+          activeConnections: [
+            { from: 'customer', to: 'ota' },
+            { from: 'ota', to: 'ndc' },
+            { from: 'ndc', to: 'crs' }
+          ]
+        },
+        {
+          narration: {
+            ko: '현대적 유통 학습 완료! NDC와 ONE Order는 항공사가 직접 제품 구성 및 고객 관계를 제어하고, 유통 단계를 간소화하며 비용을 대폭 절감합니다.',
+            en: 'Modern distribution learning complete! NDC and ONE Order enable airlines to directly control offers and customer relationships, streamlining distribution and cutting costs.'
+          },
+          activeNodes: ['customer', 'ota', 'ndc', 'settlement', 'bsp', 'crs'],
+          activeConnections: []
+        }
+      ]
+    }
+  ];
+
+  function renderClassroom(){
+    stopClassroom();
+    stopGraph();
+
+    main.innerHTML = `<div class="crumbs"><a href="#/">${esc(t('home2'))}</a> › ${esc(t('classroom'))}</div>
+      <div class="sec-title" style="margin-top:0">${esc(t('classroom'))}</div>
+      <p style="color:var(--muted);margin:-6px 0 14px">${esc(t('classroomPh'))}</p>
+      
+      <div class="classroom-wrap">
+        <div class="classroom-left">
+          <div class="classroom-tabs">
+            <button class="classroom-tab ${classroomClassId==='class101'?'active':''}" data-class="class101">Class 101</button>
+            <button class="classroom-tab ${classroomClassId==='class201'?'active':''}" data-class="class201">Class 201</button>
+          </div>
+          <div class="classroom-content">
+            <h3 class="classroom-title" id="classTitle"></h3>
+            <div class="classroom-step-count" id="classStepCount"></div>
+            <div class="classroom-narration" id="classNarration"></div>
+          </div>
+          <div class="classroom-controls">
+            <button class="classroom-btn classroom-btn-secondary" id="classBtnBack">${esc(t('btnBack'))}</button>
+            <button class="classroom-btn classroom-btn-primary" id="classBtnNext">${esc(t('btnNext'))}</button>
+          </div>
+        </div>
+        <div class="classroom-right">
+          <canvas id="classroomCanvas"></canvas>
+        </div>
+      </div>`;
+
+    renderSidebar(null);
+
+    const canvas = $('#classroomCanvas'), ctx = canvas.getContext('2d');
+    const catColor = id => (catById.get(id)||{}).color || '#888';
+    let W = 0, H = 0, dpr = Math.min(window.devicePixelRatio||1, 2);
+    let particleT = 0;
+
+    function resize(){
+      const rightPanel = $('.classroom-right');
+      if(!rightPanel) return;
+      W = rightPanel.clientWidth;
+      H = Math.max(400, Math.min(600, Math.round(window.innerHeight * 0.6)));
+      canvas.style.height = H + 'px';
+      canvas.style.width = '100%';
+      canvas.width = W * dpr;
+      canvas.height = H * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+    resize();
+    classroomResizeFn = resize;
+    window.addEventListener('resize', classroomResizeFn);
+
+    function updateClassroomStep(){
+      const cls = CLASSES.find(c => c.id === classroomClassId);
+      if(!cls) return;
+
+      const titleText = cls.title[LANG] || cls.title.en;
+      $('#classTitle').textContent = titleText;
+
+      const stepNum = classroomStep + 1;
+      const countText = LANG === 'ko' ? `단계 ${stepNum} / 5` : `Step ${stepNum} / 5`;
+      $('#classStepCount').textContent = countText;
+
+      if(classroomFinished){
+        $('#classNarration').textContent = LANG === 'ko' 
+          ? '축하합니다! 학습을 완료하셨습니다. 다시 학습 버튼을 누르면 처음부터 다시 진행할 수 있습니다.'
+          : 'Congratulations! You have completed the learning module. Click Restart to start over.';
+      } else {
+        const step = cls.steps[classroomStep];
+        $('#classNarration').textContent = step.narration[LANG] || step.narration.en;
+      }
+
+      // Update buttons
+      const btnBack = $('#classBtnBack');
+      btnBack.disabled = classroomStep === 0;
+
+      const btnNext = $('#classBtnNext');
+      if(classroomStep < 4){
+        btnNext.textContent = t('btnNext');
+      } else {
+        btnNext.textContent = classroomFinished ? t('btnRestart') : t('btnFinish');
+      }
+    }
+
+    // Attach listeners
+    $('.classroom-tabs').addEventListener('click', e => {
+      const btn = e.target.closest('.classroom-tab');
+      if(!btn) return;
+      const cid = btn.dataset.class;
+      if(cid && cid !== classroomClassId){
+        classroomClassId = cid;
+        classroomStep = 0;
+        classroomFinished = false;
+        document.querySelectorAll('.classroom-tab').forEach(t => t.classList.toggle('active', t.dataset.class === cid));
+        updateClassroomStep();
+      }
+    });
+
+    $('#classBtnBack').addEventListener('click', () => {
+      if(classroomFinished){
+        classroomFinished = false;
+      } else if(classroomStep > 0){
+        classroomStep--;
+      }
+      updateClassroomStep();
+    });
+
+    $('#classBtnNext').addEventListener('click', () => {
+      if(classroomStep < 4){
+        classroomStep++;
+      } else {
+        if(!classroomFinished){
+          classroomFinished = true;
+        } else {
+          classroomFinished = false;
+          classroomStep = 0;
+        }
+      }
+      updateClassroomStep();
+    });
+
+    function draw(){
+      ctx.clearRect(0, 0, W, H);
+      const dark = document.documentElement.dataset.theme === 'dark';
+      const cls = CLASSES.find(c => c.id === classroomClassId);
+      if(!cls) return;
+
+      const step = cls.steps[classroomStep];
+      if(!step) return;
+
+      // Active vs Inactive state
+      const activeNodes = classroomFinished ? cls.nodes.map(n => n.id) : step.activeNodes;
+      const activeConns = classroomFinished ? [] : (step.activeConnections || []);
+
+      const nodes = cls.nodes.map(n => {
+        return {
+          ...n,
+          px: n.x * W,
+          py: n.y * H,
+          isActive: activeNodes.includes(n.id)
+        };
+      });
+      const nodeMap = new Map(nodes.map(n => [n.id, n]));
+
+      // 1. Draw connections
+      cls.connections.forEach(conn => {
+        const n1 = nodeMap.get(conn.from);
+        const n2 = nodeMap.get(conn.to);
+        if(!n1 || !n2) return;
+
+        const isActiveConn = activeConns.some(ac => 
+          (ac.from === conn.from && ac.to === conn.to) || (ac.from === conn.to && ac.to === conn.from)
+        );
+
+        ctx.beginPath();
+        ctx.moveTo(n1.px, n1.py);
+        ctx.lineTo(n2.px, n2.py);
+
+        ctx.save();
+        if(isActiveConn){
+          ctx.strokeStyle = catColor(n1.cat);
+          ctx.lineWidth = 3;
+          ctx.globalAlpha = 1.0;
+          ctx.shadowBlur = 8;
+          ctx.shadowColor = catColor(n1.cat);
+        } else {
+          ctx.strokeStyle = dark ? '#262d47' : '#e3e6f0';
+          ctx.lineWidth = 1.5;
+          ctx.globalAlpha = 0.2;
+          ctx.shadowBlur = 0;
+        }
+        ctx.stroke();
+        ctx.restore();
+      });
+
+      // 2. Draw active connections particles
+      if(activeConns.length > 0){
+        activeConns.forEach(ac => {
+          const n1 = nodeMap.get(ac.from);
+          const n2 = nodeMap.get(ac.to);
+          if(!n1 || !n2) return;
+
+          const color = catColor(n1.cat);
+          const numParticles = 3;
+          for(let i=0; i<numParticles; i++){
+            const tVal = (particleT + i / numParticles) % 1.0;
+            const px = n1.px * (1 - tVal) + n2.px * tVal;
+            const py = n1.py * (1 - tVal) + n2.py * tVal;
+
+            ctx.save();
+            ctx.beginPath();
+            ctx.arc(px, py, 4.5, 0, 2*Math.PI);
+            ctx.fillStyle = '#ffffff';
+            ctx.shadowBlur = 8;
+            ctx.shadowColor = color;
+            ctx.fill();
+            ctx.restore();
+          }
+        });
+      }
+
+      // 3. Draw nodes
+      nodes.forEach(n => {
+        const color = catColor(n.cat);
+        const radius = n.isActive ? 22 : 16;
+
+        ctx.save();
+        if(n.isActive){
+          ctx.globalAlpha = 1.0;
+          ctx.shadowBlur = 12;
+          ctx.shadowColor = color;
+        } else {
+          ctx.globalAlpha = 0.2;
+          ctx.shadowBlur = 0;
+        }
+
+        ctx.beginPath();
+        ctx.arc(n.px, n.py, radius, 0, 2*Math.PI);
+        ctx.fillStyle = color;
+        ctx.fill();
+
+        if(n.isActive){
+          ctx.strokeStyle = dark ? '#ffffff' : '#0b1020';
+          ctx.lineWidth = 2.5;
+          ctx.stroke();
+        }
+        ctx.restore();
+
+        // Label below
+        ctx.save();
+        if(n.isActive){
+          ctx.globalAlpha = 1.0;
+          ctx.fillStyle = dark ? '#f3f5ff' : '#0b1020';
+          ctx.font = '700 13px ' + getComputedStyle(document.body).fontFamily;
+        } else {
+          ctx.globalAlpha = 0.3;
+          ctx.fillStyle = dark ? '#a3acca' : '#535d77';
+          ctx.font = '500 12px ' + getComputedStyle(document.body).fontFamily;
+        }
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+
+        const labelText = typeof n.label === 'object' ? (LANG === 'ko' ? n.label.ko : n.label.en) : n.label;
+        ctx.fillText(labelText, n.px, n.py + radius + 16);
+        ctx.restore();
+      });
+    }
+
+    function loop(){
+      particleT = (particleT + 0.006) % 1.0;
+      draw();
+      classroomRAF = requestAnimationFrame(loop);
+    }
+
+    updateClassroomStep();
+    loop();
+  }
+
   /* knowledge graph */
   let kgRAF=null; function stopGraph(){ if(kgRAF){ cancelAnimationFrame(kgRAF); kgRAF=null; } }
   function renderGraph(){
@@ -434,6 +900,51 @@ footer{color:var(--faint);font-size:.78rem;text-align:center;padding:26px;border
     edges.forEach(ed=>{ nById.get(ed.a).deg++; nById.get(ed.b).deg++; });
     const ci=new Map(CATS.map((c,i)=>[c.id,i]));
     nodes.forEach((n,i)=>{ const ang=(ci.get(n.cat)||0)/CATS.length*2*Math.PI; n.x=Math.cos(ang)*220+((i*53)%90-45); n.y=Math.sin(ang)*220+((i*31)%90-45); });
+
+    // Determine starting root node
+    const hash = location.hash || '#/';
+    let rootId = null;
+    const qIdx = hash.indexOf('?');
+    if (qIdx !== -1) {
+      const qStr = hash.slice(qIdx + 1);
+      const pairs = qStr.split('&');
+      pairs.forEach(p => {
+        const parts = p.split('=');
+        if (parts.length === 2) {
+          const key = decodeURIComponent(parts[0]);
+          const val = decodeURIComponent(parts[1]);
+          if (key === 'focus' || key === 'root') {
+            rootId = val.trim().toLowerCase();
+          }
+        }
+      });
+    }
+
+    let rootNode = null;
+    if (rootId) {
+      rootNode = nById.get(rootId);
+    }
+    if (!rootNode) {
+      let maxDeg = -1;
+      nodes.forEach(n => {
+        if (n.deg > maxDeg) {
+          maxDeg = n.deg;
+          rootNode = n;
+        }
+      });
+    }
+
+    const visibleNodeIds = new Set();
+    const expandedNodeIds = new Set();
+    if (rootNode) {
+      rootNode.x = 0;
+      rootNode.y = 0;
+      rootNode.vx = 0;
+      rootNode.vy = 0;
+      visibleNodeIds.add(rootNode.id);
+    }
+    window.kgVisibleNodeIds = visibleNodeIds;
+
     const legend=CATS.map(c=>`<span class="legend-item" data-cat="${c.id}"><span class="ld" style="background:${c.color}"></span>${esc(catName(c))}</span>`).join('');
     main.innerHTML=`<div class="crumbs"><a href="#/">${esc(t('home2'))}</a> › ${esc(t('gTitle'))}</div>
       <div class="graph-head"><div class="sec-title" style="margin:0">🕸 ${esc(t('gTitle'))}</div><div style="color:var(--faint);font-size:.82rem">${nodes.length} ${esc(t('gNodes'))} · ${edges.length} ${esc(t('gEdges'))}</div></div>
@@ -444,7 +955,7 @@ footer{color:var(--faint);font-size:.78rem;text-align:center;padding:26px;border
     const active=new Set(CATS.map(c=>c.id)); let W=0,H=0,dpr=Math.min(window.devicePixelRatio||1,2);
     function resize(){ W=wrap.clientWidth; H=Math.max(440,Math.min(720,Math.round(window.innerHeight*0.7))); canvas.style.height=H+'px'; canvas.width=W*dpr; canvas.height=H*dpr; ctx.setTransform(dpr,0,0,dpr,0,0); }
     resize(); const cx=()=>W/2, cy=()=>H/2; let hover=null, drag=null, dragMoved=false;
-    const isActive=n=>active.has(n.cat); const nodeR=n=>4+Math.sqrt(n.deg)*1.7;
+    const isActive=n=>visibleNodeIds.has(n.id) && active.has(n.cat); const nodeR=n=>4+Math.sqrt(n.deg)*1.7;
     function step(){ const A=nodes.filter(isActive);
       for(let i=0;i<A.length;i++){ const a=A[i]; for(let j=i+1;j<A.length;j++){ const b=A[j];
         let dx=a.x-b.x,dy=a.y-b.y,d2=dx*dx+dy*dy+0.01; const f=1500/d2; const d=Math.sqrt(d2); dx/=d; dy/=d; a.vx+=dx*f; a.vy+=dy*f; b.vx-=dx*f; b.vy-=dy*f; } }
@@ -453,13 +964,45 @@ footer{color:var(--faint);font-size:.78rem;text-align:center;padding:26px;border
       A.forEach(n=>{ n.vx+=-n.x*0.0026; n.vy+=-n.y*0.0026; if(n===drag) return; n.vx*=0.86; n.vy*=0.86; n.x+=n.vx; n.y+=n.vy;
         const m=24,rx=W/2-m,ry=H/2-m; if(n.x<-rx){n.x=-rx;n.vx*=-.4} if(n.x>rx){n.x=rx;n.vx*=-.4} if(n.y<-ry){n.y=-ry;n.vy*=-.4} if(n.y>ry){n.y=ry;n.vy*=-.4} }); }
     const nbr=new Map(); edges.forEach(ed=>{ (nbr.get(ed.a)||nbr.set(ed.a,new Set()).get(ed.a)).add(ed.b); (nbr.get(ed.b)||nbr.set(ed.b,new Set()).get(ed.b)).add(ed.a); });
+
+    const hasHiddenNeighbors = (nodeId) => {
+      const neighbors = nbr.get(nodeId);
+      if (!neighbors) return false;
+      for (const neighborId of neighbors) {
+        if (!visibleNodeIds.has(neighborId)) return true;
+      }
+      return false;
+    };
+
+    function getNeighbors1and2(nodeId) {
+      const neighbors = new Set();
+      const d1 = nbr.get(nodeId);
+      if (d1) {
+        d1.forEach(id1 => {
+          neighbors.add(id1);
+          const d2 = nbr.get(id1);
+          if (d2) {
+            d2.forEach(id2 => {
+              neighbors.add(id2);
+            });
+          }
+        });
+      }
+      return neighbors;
+    }
+
     function draw(){ ctx.clearRect(0,0,W,H); const ox=cx(),oy=cy(); const dark=document.documentElement.dataset.theme==='dark';
       edges.forEach(ed=>{ const a=nById.get(ed.a),b=nById.get(ed.b); if(!isActive(a)||!isActive(b)) return; const hot=hover&&(ed.a===hover.id||ed.b===hover.id);
         ctx.beginPath(); ctx.moveTo(a.x+ox,a.y+oy); ctx.lineTo(b.x+ox,b.y+oy);
         if(ed.kind==='dist'){ ctx.setLineDash([4,4]); ctx.strokeStyle=hot?'#ff2d8e':(dark?'rgba(255,95,166,.5)':'rgba(217,115,13,.4)'); } else { ctx.setLineDash([]); ctx.strokeStyle=hot?(dark?'rgba(139,107,255,.9)':'rgba(79,43,255,.7)'):(dark?'rgba(120,140,180,.16)':'rgba(80,60,140,.14)'); }
         ctx.lineWidth=hot?1.8:1; ctx.stroke(); }); ctx.setLineDash([]);
       nodes.forEach(n=>{ if(!isActive(n)) return; const dim=hover&&n!==hover&&!(nbr.get(hover.id)&&nbr.get(hover.id).has(n.id));
-        ctx.globalAlpha=dim?0.2:1; ctx.beginPath(); ctx.arc(n.x+ox,n.y+oy,nodeR(n),0,7); ctx.fillStyle=catColor(n.cat); ctx.fill();
+        ctx.globalAlpha=dim?0.2:1;
+        if(hasHiddenNeighbors(n.id)){
+          ctx.beginPath(); ctx.arc(n.x+ox,n.y+oy,nodeR(n)+4,0,2*Math.PI);
+          ctx.strokeStyle=catColor(n.cat); ctx.lineWidth=1.5; ctx.setLineDash([3,3]); ctx.stroke(); ctx.setLineDash([]);
+        }
+        ctx.beginPath(); ctx.arc(n.x+ox,n.y+oy,nodeR(n),0,7); ctx.fillStyle=catColor(n.cat); ctx.fill();
         if(n===hover){ ctx.lineWidth=2.5; ctx.strokeStyle=dark?'#fff':'#0b1020'; ctx.stroke(); } ctx.globalAlpha=1; });
       ctx.font='600 11px '+getComputedStyle(document.body).fontFamily; ctx.textAlign='center';
       const showLabel=n=> (hover&&(n===hover||(nbr.get(hover.id)&&nbr.get(hover.id).has(n.id)))) || (!hover&&n.deg>=5);
@@ -474,7 +1017,30 @@ footer{color:var(--faint);font-size:.78rem;text-align:center;padding:26px;border
         tip.innerHTML=`${esc(nm)} <span style="opacity:.7">— ${esc(catName(catById.get(n.cat)||{}))}</span>`; tip.style.left=(n.x+cx())+'px'; tip.style.top=(n.y+cy())+'px'; tip.style.opacity=1; canvas.style.cursor='pointer'; }
       else { tip.style.opacity=0; canvas.style.cursor='grab'; } }
     function onDown(ev){ const p=rel(ev); drag=pick(p.x,p.y); dragMoved=false; }
-    function onUp(){ if(drag&&!dragMoved){ location.hash='#/term/'+drag.id; } drag=null; }
+    function onUp(){
+      if(drag&&!dragMoved){
+        const clickedNodeId=drag.id;
+        if(hasHiddenNeighbors(clickedNodeId)){
+          const neighbors=getNeighbors1and2(clickedNodeId);
+          neighbors.forEach(id=>{
+            if(!visibleNodeIds.has(id)){
+              const n=nById.get(id);
+              if(n){
+                const dx=(Math.random()-0.5)*10;
+                const dy=(Math.random()-0.5)*10;
+                n.x=drag.x+dx; n.y=drag.y+dy;
+                n.vx=(Math.random()-0.5)*2; n.vy=(Math.random()-0.5)*2;
+              }
+              visibleNodeIds.add(id);
+            }
+          });
+          expandedNodeIds.add(clickedNodeId);
+        } else {
+          location.hash='#/term/'+clickedNodeId;
+        }
+      }
+      drag=null;
+    }
     canvas.addEventListener('mousemove',onMove); canvas.addEventListener('mousedown',onDown); window.addEventListener('mouseup',onUp);
     canvas.addEventListener('touchstart',onDown,{passive:true}); canvas.addEventListener('touchmove',onMove,{passive:false}); canvas.addEventListener('touchend',onUp);
     $('#kgLegend').addEventListener('click',e=>{ const el=e.target.closest('.legend-item'); if(!el) return; const id=el.dataset.cat; if(active.has(id)){active.delete(id);el.classList.add('off');} else {active.add(id);el.classList.remove('off');} });
@@ -484,14 +1050,15 @@ footer{color:var(--faint);font-size:.78rem;text-align:center;padding:26px;border
   /* router */
   function dispatch(){ const hash=location.hash||'#/';
     if(hash==='#/index'||hash.startsWith('#/index')){ document.title='Index — Travel Gaia'; if($('#q'))$('#q').value=''; return renderIndex(); }
-    if(hash==='#/graph'){ document.title='Knowledge Graph — Travel Gaia'; if($('#q'))$('#q').value=''; return renderGraph(); }
+    if(hash==='#/graph'||hash.startsWith('#/graph?')){ document.title='Knowledge Graph — Travel Gaia'; if($('#q'))$('#q').value=''; return renderGraph(); }
+    if(hash==='#/classroom'||hash.startsWith('#/classroom')){ document.title='Classroom — Travel Gaia'; if($('#q'))$('#q').value=''; return renderClassroom(); }
     const m=hash.match(/^#\/(term|category|q)\/(.+)$/);
     if(!m||hash==='#/'){ document.title='Travel Gaia — 여행 산업 용어 백과사전'; if($('#q'))$('#q').value=''; return renderHome(); }
     const kind=m[1], dec=decodeURIComponent(m[2]);
     if(kind==='term') return renderTerm(dec); if(kind==='category') return renderCategory(dec);
     if(kind==='q'){ if($('#q'))$('#q').value=dec; return renderSearch(dec); } renderHome(); }
-  function route(){ stopGraph(); closeNav(); const go=()=>dispatch();
-    if(document.startViewTransition && !location.hash.startsWith('#/graph')){ document.startViewTransition(go); } else go(); }
+  function route(){ stopGraph(); stopClassroom(); closeNav(); const go=()=>dispatch();
+    if(document.startViewTransition && !location.hash.startsWith('#/graph') && !location.hash.startsWith('#/classroom')){ document.startViewTransition(go); } else go(); }
   window.addEventListener('hashchange',route);
 
   /* search box */
