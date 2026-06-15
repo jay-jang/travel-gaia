@@ -1,10 +1,1297 @@
-[{"id":"pnr","term":"PNR","abbreviation":"PNR","aliases":["Passenger Name Record","Booking Record","Booking File","Reservation Record"],"category":"air-ops","conceptType":"document","status":"active","definition":"A Passenger Name Record (PNR) is the data record in a reservation system (CRS/GDS or airline host) that holds the itinerary, passenger details, and contact information for one or more travelers traveling together. It is identified by a unique alphanumeric record locator and serves as the central container for all booking-related data.","definition_ko":"PNR(Passenger Name Record, 여객 예약 기록)은 함께 여행하는 한 명 이상의 여행객에 대한 여정, 승객 정보, 연락처 정보를 담는 예약 시스템(CRS/GDS 또는 항공사 호스트)의 데이터 레코드다. 고유한 영숫자 record locator로 식별되며, 예약 관련 모든 데이터를 담는 중심 컨테이너 역할을 한다.","term_ko":"여객 예약 기록(PNR)","longDef":"A PNR minimally requires the five mandatory elements often summarized as 'PRINT': Phone (contact), Received from, Itinerary (segments), Name(s), and Ticketing arrangement. Beyond these, it can hold SSR/OSI elements, frequent flyer data, fare/pricing records, ticket numbers, and remarks. Each reservation system assigns its own record locator, so a single booking distributed across a GDS and multiple airline hosts may have several distinct locators linked by the itinerary.","longDef_ko":"PNR은 흔히 'PRINT'로 요약되는 다섯 가지 필수 요소, 즉 Phone(연락처), Received from(접수처), Itinerary(여정, 즉 segment), Name(승객명), Ticketing(발권 처리)을 최소한으로 요구한다. 이 외에도 SSR/OSI 요소, 상용고객 정보, 운임/요금 기록, 항공권 번호, 비고 사항 등을 담을 수 있다. 각 예약 시스템은 고유한 record locator를 부여하므로, 하나의 예약이 GDS와 여러 항공사 호스트에 분산되면 여정으로 연결된 서로 다른 record locator를 여러 개 가질 수 있다.","standardBody":"IATA","providerTerms":[{"provider":"Amadeus","term":"PNR","context":"Amadeus calls the booking record a PNR with a 6-character record locator","context_ko":"Amadeus는 예약 기록을 6자리 record locator를 가진 PNR이라고 부른다","relationship":"same"},{"provider":"Sabre","term":"PNR / Record Locator","context":"Sabre refers to the booking file as a PNR identified by a record locator","context_ko":"Sabre는 예약 파일을 record locator로 식별되는 PNR이라고 지칭한다","relationship":"same"}],"relationships":[{"type":"related","targetTerm":"Segment"},{"type":"related","targetTerm":"SSR"},{"type":"related","targetTerm":"OSI"},{"type":"related","targetTerm":"Queue"},{"type":"related","targetTerm":"E-ticket"},{"type":"related","targetTerm":"Order"}],"distinctions":[{"targetTerm":"Order","explanation":"An NDC Order is the airline-centric, order-management successor concept to the PNR; the PNR is the legacy GDS/host reservation record.","explanation_ko":"NDC Order는 항공사 중심의 주문 관리 개념으로 PNR을 계승하는 개념이며, PNR은 기존 GDS/호스트 예약 기록이다."},{"targetTerm":"E-ticket","explanation":"The PNR is the reservation/itinerary record, whereas the e-ticket is the separate proof-of-payment/fulfillment document created when the PNR is ticketed.","explanation_ko":"PNR은 예약/여정 기록인 반면, e-ticket은 PNR이 발권될 때 생성되는 별도의 결제 증빙/이행 문서다."}],"sources":[{"name":"Passenger Services Conference Resolutions Manual (PSCRM)","org":"IATA","version":"","section":"","url":""},{"name":"Amadeus Functional Documentation — PNR","org":"Amadeus","version":"","section":"","url":""}]},
-{"id":"segment","term":"Segment","abbreviation":"","aliases":["Booking Segment","Flight Segment","Air Segment"],"category":"air-ops","conceptType":"business-term","status":"active","definition":"A segment is a single bookable air transportation unit between a board point and an off point as marketed and sold under one flight number, regardless of how many physical takeoffs and landings (legs) it contains. It is the unit of inventory that is sold, ticketed, and stored as an itinerary element in a PNR.","definition_ko":"segment(구간)은 하나의 편명으로 마케팅되고 판매되는, 탑승지(board point)와 하기지(off point) 사이의 단일 예약 가능 항공 운송 단위로, 물리적인 이착륙(leg)이 몇 번이든 관계없이 하나의 단위로 본다. 이는 판매·발권되고 PNR에 여정 요소로 저장되는 좌석 재고(inventory) 단위다.","term_ko":"구간(Segment)","longDef":"A segment corresponds to a flight number and a booking class (RBD) from origin to destination as offered for sale. A direct flight that makes an intermediate stop without a change of flight number is one segment but two legs. Segments are the basis for availability requests, fare component construction, and flight coupons; each ticketed segment normally maps to one flight coupon.","longDef_ko":"segment는 판매를 위해 제공되는 출발지에서 도착지까지의 편명과 예약 등급(RBD)에 대응한다. 편명 변경 없이 중간 기착하는 직항편은 하나의 segment이지만 두 개의 leg이다. segment는 좌석 가용성 조회, 운임 구성 요소(fare component) 구성, 항공권 쿠폰의 기준이 되며, 발권된 각 segment는 일반적으로 하나의 flight coupon에 대응한다.","standardBody":"IATA","providerTerms":[],"relationships":[{"type":"parent","targetTerm":"Leg"},{"type":"child","targetTerm":"PNR"},{"type":"related","targetTerm":"Married Segment"},{"type":"related","targetTerm":"Passive Segment"},{"type":"related","targetTerm":"RBD"},{"type":"related","targetTerm":"Flight Coupon"},{"type":"related","targetTerm":"Fare Component"}],"distinctions":[{"targetTerm":"Leg","explanation":"A segment is the marketed origin-to-destination flight under one flight number; a leg is a single physical takeoff-to-landing hop, so one segment can contain multiple legs.","explanation_ko":"segment는 하나의 편명으로 마케팅되는 출발지에서 도착지까지의 항공편이며, leg은 단일 물리적 이착륙 구간이므로 하나의 segment가 여러 개의 leg을 포함할 수 있다."}],"sources":[{"name":"Passenger Services Conference Resolutions Manual (PSCRM)","org":"IATA","version":"","section":"","url":""},{"name":"Standard Schedules Information Manual (SSIM)","org":"IATA","version":"","section":"","url":""}]},
-{"id":"leg","term":"Leg","abbreviation":"","aliases":["Flight Leg","Hop"],"category":"air-ops","conceptType":"business-term","status":"active","definition":"A leg is a single physical movement of an aircraft from one takeoff (departure airport) to the next landing (arrival airport). It is the operational building block of a flight; a flight number may operate over one or more legs.","definition_ko":"leg(운항 구간)은 한 번의 이륙(출발 공항)에서 다음 착륙(도착 공항)까지의 항공기 단일 물리적 이동이다. 항공편의 운영상 기본 단위이며, 하나의 편명이 하나 이상의 leg으로 운항될 수 있다.","term_ko":"운항 구간(Leg)","longDef":"Legs describe the operational reality of an aircraft's routing, used in schedule data (e.g., SSIM leg records) and operations control. A multi-leg flight under a single flight number (a through or direct flight) presents to the buyer as one segment but is operated as two or more legs, each with its own departure/arrival times and possibly different equipment.","longDef_ko":"leg은 항공기 노선의 운영상 실제를 나타내며, 스케줄 데이터(예: SSIM leg 레코드)와 운항 통제에 사용된다. 단일 편명으로 운항되는 여러 leg 항공편(through 또는 직항편)은 구매자에게는 하나의 segment로 표시되지만, 각각 고유한 출발/도착 시각과 경우에 따라 다른 기재(equipment)를 가진 둘 이상의 leg으로 운항된다.","standardBody":"IATA","providerTerms":[],"relationships":[{"type":"child","targetTerm":"Segment"},{"type":"related","targetTerm":"Schedule Change"}],"distinctions":[{"targetTerm":"Segment","explanation":"A leg is one physical takeoff-to-landing hop, while a segment is the sold/marketed flight under one flight number that may span several legs.","explanation_ko":"leg은 하나의 물리적 이착륙 구간인 반면, segment는 여러 leg에 걸칠 수 있는, 하나의 편명으로 판매·마케팅되는 항공편이다."}],"sources":[{"name":"Standard Schedules Information Manual (SSIM)","org":"IATA","version":"","section":"","url":""}]},
-{"id":"married-segment","term":"Married Segment","abbreviation":"","aliases":["Married Segments","Married Segment Logic","Segment Marriage"],"category":"air-ops","conceptType":"business-term","status":"active","definition":"Married segments are two or more connecting segments that an airline links together in availability and inventory control so they must be sold, modified, and cancelled as a single inseparable unit. The logic prevents agents from breaking the connection to access more favorable class availability that the airline would not offer for the individual local segment.","definition_ko":"married segment(결합 구간)는 항공사가 좌석 가용성 및 재고 통제에서 함께 연결하여, 분리할 수 없는 하나의 단위로 판매·변경·취소해야 하는 둘 이상의 연결 segment를 말한다. 이 로직은 항공사가 개별 로컬 segment에 대해서는 제공하지 않을 더 유리한 등급 가용성에 접근하기 위해 에이전트가 연결을 임의로 분리하는 것을 방지한다.","term_ko":"결합 구간(Married Segment)","longDef":"Carriers use married-segment logic so that availability returned for a connection (origin-to-destination) reflects the airline's O&D revenue-management decision rather than the standalone availability of each point-to-point leg. Attempting to cancel or split one married segment, or to book it separately at a class only offered for the through journey, is rejected by the host inventory system. This is a key mechanism enforcing O&D control and limiting 'cross-class' or married-segment abuse.","longDef_ko":"항공사는 연결편(출발지에서 도착지)에 반환되는 가용성이 각 지점 간 leg의 독립적인 가용성이 아니라 항공사의 O&D 수익 관리(revenue management) 결정을 반영하도록 married-segment 로직을 사용한다. 하나의 married segment를 취소하거나 분리하려는 시도, 또는 통과 여정(through journey)에 대해서만 제공되는 등급으로 별도 예약하려는 시도는 호스트 재고 시스템에 의해 거부된다. 이는 O&D 통제를 강제하고 'cross-class' 또는 married-segment 남용을 제한하는 핵심 메커니즘이다.","standardBody":"","providerTerms":[],"relationships":[{"type":"related","targetTerm":"Segment"},{"type":"related","targetTerm":"Availability"},{"type":"related","targetTerm":"Origin & Destination"},{"type":"related","targetTerm":"RBD"}],"distinctions":[{"targetTerm":"Passive Segment","explanation":"A married segment is a live, inventory-controlled connection sold as a unit, whereas a passive segment is an informational segment that does not draw on the operating carrier's inventory.","explanation_ko":"married segment는 하나의 단위로 판매되는, 재고 통제를 받는 실시간 연결편인 반면, passive segment는 운항 항공사의 재고를 차감하지 않는 정보성 segment다."}],"sources":[{"name":"Passenger Services Conference Resolutions Manual (PSCRM)","org":"IATA","version":"","section":"","url":""},{"name":"Amadeus Functional Documentation — Availability and Married Segment Logic","org":"Amadeus","version":"","section":"","url":""}]},
-{"id":"passive-segment","term":"Passive Segment","abbreviation":"","aliases":["Passive Booking","Informational Segment","Ghost Segment"],"category":"air-ops","conceptType":"business-term","status":"active","definition":"A passive segment is a flight segment added to a PNR for record-keeping, pricing, or ticketing purposes that does not generate a real inventory request to, or hold space in, the operating carrier's reservation system. It mirrors a booking that was actually confirmed elsewhere (e.g., directly with the airline or in another system).","definition_ko":"passive segment(수동 구간)는 기록 관리, 운임 산정 또는 발권 목적으로 PNR에 추가되는 항공 segment로, 운항 항공사의 예약 시스템에 실제 재고 요청을 보내거나 좌석을 점유하지 않는다. 실제로는 다른 곳(예: 항공사 직접 또는 다른 시스템)에서 확약된 예약을 반영한다.","term_ko":"수동 구간(Passive Segment)","longDef":"Passive segments are typically created with passive status codes so the GDS shows the itinerary for ticketing and documentation without sending an active sell message that would decrement seat inventory. They are commonly used to ticket a booking made outside the GDS, to build complete itineraries for fare construction, or for airline reporting. Misuse of passive segments (e.g., to circumvent ticketing) is policed by GDSs and airlines, and ARNK is a related non-air placeholder for surface gaps.","longDef_ko":"passive segment는 일반적으로 passive 상태 코드로 생성되어, 좌석 재고를 차감하는 능동 판매(sell) 메시지를 보내지 않고도 GDS가 발권 및 문서화를 위해 여정을 표시하도록 한다. 주로 GDS 외부에서 이루어진 예약을 발권하거나, 운임 구성을 위해 완전한 여정을 구성하거나, 항공사 보고 목적으로 사용된다. passive segment의 오용(예: 발권 회피)은 GDS와 항공사에 의해 단속되며, ARNK는 지상 구간 공백을 나타내는 관련 비항공 자리표시자(placeholder)다.","standardBody":"","providerTerms":[{"provider":"Sabre","term":"Passive Segment / GK status","context":"Sabre uses passive status codes such as GK to add informational segments that do not access inventory","context_ko":"Sabre는 GK와 같은 passive 상태 코드를 사용하여 재고에 접근하지 않는 정보성 segment를 추가한다","relationship":"same"},{"provider":"Amadeus","term":"Passive Segment","context":"Amadeus supports passive segments for ticketing of externally confirmed space","context_ko":"Amadeus는 외부에서 확약된 좌석의 발권을 위해 passive segment를 지원한다","relationship":"same"}],"relationships":[{"type":"related","targetTerm":"Segment"},{"type":"related","targetTerm":"ARNK"},{"type":"related","targetTerm":"PNR"},{"type":"related","targetTerm":"Ticketing Time Limit"}],"distinctions":[{"targetTerm":"ARNK","explanation":"A passive segment is an informational air segment that does not access inventory, whereas ARNK is a non-air placeholder marking a surface (non-flown) gap in the itinerary.","explanation_ko":"passive segment는 재고에 접근하지 않는 정보성 항공 segment인 반면, ARNK는 여정에서 지상(비운항) 공백을 표시하는 비항공 자리표시자다."},{"targetTerm":"Married Segment","explanation":"A passive segment holds no live inventory, while married segments are active inventory-controlled connections sold and managed as a unit.","explanation_ko":"passive segment는 실시간 재고를 점유하지 않는 반면, married segment는 하나의 단위로 판매·관리되는, 재고 통제를 받는 능동 연결편이다."}],"sources":[{"name":"Sabre Format Finder — Passive Segments","org":"Sabre","version":"","section":"","url":""},{"name":"Amadeus Functional Documentation — Passive Segments","org":"Amadeus","version":"","section":"","url":""}]},
-{"id":"arnk","term":"ARNK","abbreviation":"ARNK","aliases":["Arrival Unknown","Arunk","Surface Segment","Off-Point Segment"],"category":"air-ops","conceptType":"business-term","status":"active","definition":"ARNK ('Arrival Unknown') is a non-air itinerary element inserted into a PNR to indicate a surface (non-flown) break between the arrival point of one flight segment and the departure point of the next. It tells the system the gap is intentional rather than an error and is not a bookable flight.","definition_ko":"ARNK('Arrival Unknown', 도착지 미상)는 한 항공 segment의 도착 지점과 다음 segment의 출발 지점 사이의 지상(비운항) 단절을 나타내기 위해 PNR에 삽입되는 비항공 여정 요소다. 해당 공백이 오류가 아니라 의도된 것이며 예약 가능한 항공편이 아님을 시스템에 알린다.","term_ko":"지상 구간 표시(ARNK, 도착지 미상)","longDef":"An ARNK element is added when a passenger flies into one city and departs from a different city (an open-jaw or surface sector), bridging the gap so the itinerary remains continuous for ticketing and fare construction. It carries no flight, holds no inventory, and is non-revenue; many GDSs warn or require an ARNK when off-points do not match so the agent confirms the surface segment is deliberate.","longDef_ko":"ARNK 요소는 승객이 한 도시로 입국하여 다른 도시에서 출발할 때(오픈조 또는 지상 구간) 추가되며, 그 공백을 연결하여 발권 및 운임 구성을 위해 여정이 연속성을 유지하도록 한다. 항공편을 포함하지 않고, 재고를 점유하지 않으며, 수익이 발생하지 않는다. 많은 GDS는 하기지가 일치하지 않을 때 ARNK를 경고하거나 요구하여, 에이전트가 해당 지상 구간이 의도된 것임을 확인하도록 한다.","standardBody":"","providerTerms":[{"provider":"Sabre","term":"ARNK","context":"Sabre inserts an ARNK segment to mark a surface break in the itinerary","context_ko":"Sabre는 여정의 지상 구간 단절을 표시하기 위해 ARNK segment를 삽입한다","relationship":"same"},{"provider":"Amadeus","term":"ARNK","context":"Amadeus uses ARNK to denote an arrival-unknown surface sector","context_ko":"Amadeus는 도착지 미상 지상 구간을 나타내기 위해 ARNK를 사용한다","relationship":"same"}],"relationships":[{"type":"related","targetTerm":"Segment"},{"type":"related","targetTerm":"Passive Segment"},{"type":"related","targetTerm":"Journey"},{"type":"related","targetTerm":"Origin & Destination"}],"distinctions":[{"targetTerm":"Passive Segment","explanation":"ARNK marks a surface (non-flown) gap with no flight at all, whereas a passive segment is an informational air segment for a flight confirmed outside the active inventory.","explanation_ko":"ARNK는 항공편이 전혀 없는 지상(비운항) 공백을 표시하는 반면, passive segment는 능동 재고 외부에서 확약된 항공편에 대한 정보성 항공 segment다."},{"targetTerm":"Leg","explanation":"ARNK is a non-flown placeholder bridging a surface break, while a leg is an actual physical flown hop of an aircraft.","explanation_ko":"ARNK는 지상 구간 단절을 연결하는 비운항 자리표시자인 반면, leg은 항공기의 실제 물리적 운항 구간이다."}],"sources":[{"name":"Sabre Format Finder — ARNK","org":"Sabre","version":"","section":"","url":""},{"name":"Amadeus Functional Documentation — Itinerary Elements","org":"Amadeus","version":"","section":"","url":""}]},
-{"id":"ssr","term":"SSR","abbreviation":"SSR","aliases":["Special Service Request","Special Service Requirement"],"category":"air-ops","conceptType":"standard-term","status":"active","definition":"A Special Service Request (SSR) is a standardized, coded message element in a PNR used to request or notify an action-required special service from a carrier, such as a wheelchair, special meal, unaccompanied minor, or to convey data like Secure Flight passenger details. Each SSR uses a four-letter IATA code and typically receives a status reply (action/advice code) from the carrier.","definition_ko":"SSR(Special Service Request, 특별 서비스 요청)은 휠체어, 특별 기내식, 비동반 소아 등 항공사로부터 조치가 필요한 특별 서비스를 요청하거나 통보하기 위해, 또는 Secure Flight 승객 정보와 같은 데이터를 전달하기 위해 PNR에 사용되는 표준화된 코드 메시지 요소다. 각 SSR은 4자리 IATA 코드를 사용하며 일반적으로 항공사로부터 상태 응답(action/advice 코드)을 받는다.","term_ko":"특별 서비스 요청(SSR)","longDef":"SSRs follow the IATA PADIS/PSCRM standard format and four-letter code set (e.g., WCHR wheelchair, VGML vegetarian meal, UMNR unaccompanied minor, DOCS for passport/Secure Flight data). Because an SSR is action-oriented, it is transmitted to and acknowledged by each affected carrier, distinguishing it from purely informational messaging. SSRs are central to accessibility (PRM) handling, regulatory data transmission, and ancillary service requests.","longDef_ko":"SSR은 IATA PADIS/PSCRM 표준 형식과 4자리 코드 체계(예: WCHR 휠체어, VGML 채식 기내식, UMNR 비동반 소아, DOCS 여권/Secure Flight 데이터)를 따른다. SSR은 조치 지향적이므로 영향을 받는 각 항공사에 전송되어 확인되며, 이는 순수 정보성 메시지와 구별되는 점이다. SSR은 접근성(PRM) 처리, 규제 데이터 전송, 부가 서비스 요청에 핵심적이다.","standardBody":"IATA","providerTerms":[],"relationships":[{"type":"related","targetTerm":"OSI"},{"type":"related","targetTerm":"PNR"},{"type":"related","targetTerm":"PRM"},{"type":"related","targetTerm":"Secure Flight"},{"type":"related","targetTerm":"Ancillary Service"}],"distinctions":[{"targetTerm":"OSI","explanation":"An SSR is an action-required, coded request to a carrier that expects a status reply, whereas an OSI is purely informational and requires no carrier action or response.","explanation_ko":"SSR은 항공사에 보내는 조치가 필요한 코드 요청으로 상태 응답을 기대하는 반면, OSI는 순수 정보성으로 항공사의 조치나 응답을 요구하지 않는다."}],"sources":[{"name":"Passenger Services Conference Resolutions Manual (PSCRM)","org":"IATA","version":"","section":"","url":""},{"name":"PADIS EDIFACT/XML Message Standards","org":"IATA","version":"","section":"","url":""}]},
-{"id":"osi","term":"OSI","abbreviation":"OSI","aliases":["Other Service Information","Other Supplementary Information"],"category":"air-ops","conceptType":"standard-term","status":"active","definition":"Other Service Information (OSI) is an informational free-text or semi-structured message element in a PNR sent to one or all carriers to communicate information that does not require any carrier action or reply, such as a passenger contact note or VIP advisory. Unlike an SSR, it carries no action/status code.","definition_ko":"OSI(Other Service Information, 기타 서비스 정보)는 승객 연락처 메모나 VIP 안내처럼 항공사의 조치나 응답이 필요 없는 정보를 전달하기 위해 한 곳 또는 모든 항공사에 전송되는, PNR 내의 정보성 자유 텍스트 또는 반정형 메시지 요소다. SSR과 달리 action/status 코드를 포함하지 않는다.","term_ko":"기타 서비스 정보(OSI)","longDef":"OSI elements convey advisory information to the carrier (for example, frequent-flyer notes, special handling courtesies, or operational remarks) and are addressed either to a specific airline or to all carriers in the itinerary. Because OSI is non-actionable, the carrier is not expected to confirm or respond, which is the key operational difference from an SSR.","longDef_ko":"OSI 요소는 항공사에 안내성 정보(예: 상용고객 메모, 특별 응대 사항, 운영상 비고)를 전달하며, 특정 항공사 또는 여정 내 모든 항공사를 수신 대상으로 지정한다. OSI는 조치를 요하지 않으므로 항공사가 확인하거나 응답할 것으로 기대되지 않으며, 이것이 SSR과의 핵심적인 운영상 차이점이다.","standardBody":"IATA","providerTerms":[],"relationships":[{"type":"related","targetTerm":"SSR"},{"type":"related","targetTerm":"PNR"}],"distinctions":[{"targetTerm":"SSR","explanation":"OSI is purely informational with no required carrier action or reply, whereas an SSR is an action request that expects a confirming status code from the carrier.","explanation_ko":"OSI는 항공사의 조치나 응답이 필요 없는 순수 정보성인 반면, SSR은 항공사로부터 확인 상태 코드를 기대하는 조치 요청이다."}],"sources":[{"name":"Passenger Services Conference Resolutions Manual (PSCRM)","org":"IATA","version":"","section":"","url":""},{"name":"PADIS EDIFACT/XML Message Standards","org":"IATA","version":"","section":"","url":""}]},
-{"id":"mct","term":"MCT","abbreviation":"MCT","aliases":["Minimum Connecting Time","Minimum Connect Time"],"category":"air-ops","conceptType":"standard-term","status":"active","definition":"Minimum Connecting Time (MCT) is the shortest published time interval required for a passenger and their baggage to transfer between two flights at a given airport for the connection to be considered legal and bookable. It varies by airport, terminal, domestic/international status, and carrier combination.","definition_ko":"MCT(Minimum Connecting Time, 최소 연결 시간)는 특정 공항에서 두 항공편 간 승객과 수하물이 환승하는 데 필요한, 해당 연결이 정상적이고 예약 가능한 것으로 간주되기 위한 최소 공시 시간 간격이다. 공항, 터미널, 국내/국제 여부, 항공사 조합에 따라 달라진다.","term_ko":"최소 연결 시간(MCT)","longDef":"MCT values are published by airports and carriers and aggregated by IATA in standard reference data, and reservation/availability systems use them to validate whether a connection is legal before offering it. Distinct MCTs apply to combinations such as domestic-to-domestic, domestic-to-international, international-to-international, and online versus interline connections. A connection shorter than the applicable MCT is normally rejected by booking systems as an illegal connection.","longDef_ko":"MCT 값은 공항과 항공사가 공시하고 IATA가 표준 참조 데이터로 집계하며, 예약/가용성 시스템은 연결편을 제공하기 전에 해당 연결이 정상적인지 검증하는 데 이를 사용한다. 국내-국내, 국내-국제, 국제-국제, 그리고 online(자사) 연결과 interline 연결과 같은 조합에 각각 다른 MCT가 적용된다. 적용 MCT보다 짧은 연결은 일반적으로 예약 시스템에 의해 비정상 연결(illegal connection)로 거부된다.","standardBody":"IATA","providerTerms":[],"relationships":[{"type":"related","targetTerm":"Segment"},{"type":"related","targetTerm":"Journey"},{"type":"related","targetTerm":"Interline"},{"type":"related","targetTerm":"Availability"}],"distinctions":[{"targetTerm":"Slot","explanation":"MCT is the minimum passenger/baggage transfer time governing connection legality, whereas a slot is an allocated airport authorization to use runway/terminal capacity at a specific time.","explanation_ko":"MCT는 연결 적법성을 좌우하는 승객/수하물의 최소 환승 시간인 반면, slot은 특정 시각에 활주로/터미널 용량을 사용하도록 배정된 공항 허가다."}],"sources":[{"name":"Standard Schedules Information Manual (SSIM)","org":"IATA","version":"","section":"","url":""}]},
-{"id":"queue","term":"Queue","abbreviation":"","aliases":["GDS Queue","PNR Queue","Work Queue"],"category":"air-ops","conceptType":"business-term","status":"active","definition":"A queue is an electronic work list within a CRS/GDS or airline host into which PNRs (or messages) are automatically or manually placed so that they can be reviewed and acted upon, for example after a schedule change, ticketing time limit, or waitlist clearance. Each queue is identified by a number/category and routes work to the appropriate agent or office.","definition_ko":"queue(큐, 작업 대기열)는 CRS/GDS 또는 항공사 호스트 내의 전자 작업 목록으로, 스케줄 변경, 발권 시한, 대기자 확약 등의 이후에 PNR(또는 메시지)이 자동 또는 수동으로 배치되어 검토 및 처리될 수 있도록 한다. 각 queue는 번호/카테고리로 식별되며 작업을 적절한 에이전트나 사무소로 라우팅한다.","term_ko":"작업 대기열(Queue)","longDef":"Queues are the workflow backbone of reservation systems: the host places a PNR on a designated queue when an event requires human follow-up (schedule changes, time-limit warnings, confirmations from waitlist, special service replies). Agents 'work the queue' by retrieving PNRs one by one, taking action, and removing or re-queuing them. Numbering and category conventions differ by GDS (for example, schedule-change and ticketing queues), but the concept of an event-driven work list is common across systems.","longDef_ko":"queue는 예약 시스템 워크플로의 근간이다. 호스트는 사람이 후속 처리해야 하는 이벤트(스케줄 변경, 시한 경고, 대기자 확약, 특별 서비스 응답)가 발생하면 지정된 queue에 PNR을 배치한다. 에이전트는 PNR을 하나씩 조회하여 조치를 취하고 이를 제거하거나 다시 큐에 넣는 방식으로 'queue를 처리'한다. 번호 및 카테고리 규칙은 GDS마다 다르지만(예: 스케줄 변경 및 발권 queue), 이벤트 기반 작업 목록이라는 개념은 시스템 전반에 공통적이다.","standardBody":"","providerTerms":[{"provider":"Amadeus","term":"Queue","context":"Amadeus organizes PNR follow-up work into numbered queues and categories","context_ko":"Amadeus는 PNR 후속 처리 작업을 번호가 매겨진 queue와 카테고리로 구성한다","relationship":"same"},{"provider":"Sabre","term":"Queue","context":"Sabre routes PNRs needing action to numbered queues for agents to work","context_ko":"Sabre는 조치가 필요한 PNR을 에이전트가 처리하도록 번호가 매겨진 queue로 라우팅한다","relationship":"same"},{"provider":"Travelport","term":"Queue","context":"Galileo/Apollo and Worldspan use queues to manage PNR follow-up","context_ko":"Galileo/Apollo와 Worldspan은 PNR 후속 처리를 관리하기 위해 queue를 사용한다","relationship":"same"}],"relationships":[{"type":"related","targetTerm":"PNR"},{"type":"related","targetTerm":"Schedule Change"},{"type":"related","targetTerm":"Ticketing Time Limit"},{"type":"related","targetTerm":"IROPS"}],"distinctions":[],"sources":[{"name":"Amadeus Functional Documentation — Queues","org":"Amadeus","version":"","section":"","url":""},{"name":"Sabre Format Finder — Queues","org":"Sabre","version":"","section":"","url":""}]}]
+[
+  {
+    "id": "pnr",
+    "term": "PNR",
+    "abbreviation": "PNR",
+    "aliases": [
+      "Passenger Name Record",
+      "Booking Record",
+      "Booking File",
+      "Reservation Record"
+    ],
+    "category": "air-ops",
+    "conceptType": "document",
+    "status": "active",
+    "definition": "A Passenger Name Record (PNR) is the data record in a reservation system (CRS/GDS or airline host) that holds the itinerary, passenger details, and contact information for one or more travelers traveling together. It is identified by a unique alphanumeric record locator and serves as the central container for all booking-related data.",
+    "definition_ko": "PNR(Passenger Name Record, 여객 예약 기록)은 함께 여행하는 한 명 이상의 여행객에 대한 여정, 승객 정보, 연락처 정보를 담는 예약 시스템(CRS/GDS 또는 항공사 호스트)의 데이터 레코드다. 고유한 영숫자 record locator로 식별되며, 예약 관련 모든 데이터를 담는 중심 컨테이너 역할을 한다.",
+    "term_ko": "여객 예약 기록(PNR)",
+    "longDef": "A PNR minimally requires the five mandatory elements often summarized as 'PRINT': Phone (contact), Received from, Itinerary (segments), Name(s), and Ticketing arrangement. Beyond these, it can hold SSR/OSI elements, frequent flyer data, fare/pricing records, ticket numbers, and remarks. Each reservation system assigns its own record locator, so a single booking distributed across a GDS and multiple airline hosts may have several distinct locators linked by the itinerary.",
+    "longDef_ko": "PNR은 흔히 'PRINT'로 요약되는 다섯 가지 필수 요소, 즉 Phone(연락처), Received from(접수처), Itinerary(여정, 즉 segment), Name(승객명), Ticketing(발권 처리)을 최소한으로 요구한다. 이 외에도 SSR/OSI 요소, 상용고객 정보, 운임/요금 기록, 항공권 번호, 비고 사항 등을 담을 수 있다. 각 예약 시스템은 고유한 record locator를 부여하므로, 하나의 예약이 GDS와 여러 항공사 호스트에 분산되면 여정으로 연결된 서로 다른 record locator를 여러 개 가질 수 있다.",
+    "standardBody": "IATA",
+    "providerTerms": [
+      {
+        "provider": "Amadeus",
+        "term": "PNR",
+        "context": "Amadeus calls the booking record a PNR with a 6-character record locator",
+        "context_ko": "Amadeus는 예약 기록을 6자리 record locator를 가진 PNR이라고 부른다",
+        "relationship": "same"
+      },
+      {
+        "provider": "Sabre",
+        "term": "PNR / Record Locator",
+        "context": "Sabre refers to the booking file as a PNR identified by a record locator",
+        "context_ko": "Sabre는 예약 파일을 record locator로 식별되는 PNR이라고 지칭한다",
+        "relationship": "same"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Segment"
+      },
+      {
+        "type": "related",
+        "targetTerm": "SSR"
+      },
+      {
+        "type": "related",
+        "targetTerm": "OSI"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Queue"
+      },
+      {
+        "type": "related",
+        "targetTerm": "E-ticket"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Order"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Order",
+        "explanation": "An NDC Order is the airline-centric, order-management successor concept to the PNR; the PNR is the legacy GDS/host reservation record.",
+        "explanation_ko": "NDC Order는 항공사 중심의 주문 관리 개념으로 PNR을 계승하는 개념이며, PNR은 기존 GDS/호스트 예약 기록이다."
+      },
+      {
+        "targetTerm": "E-ticket",
+        "explanation": "The PNR is the reservation/itinerary record, whereas the e-ticket is the separate proof-of-payment/fulfillment document created when the PNR is ticketed.",
+        "explanation_ko": "PNR은 예약/여정 기록인 반면, e-ticket은 PNR이 발권될 때 생성되는 별도의 결제 증빙/이행 문서다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Passenger Services Conference Resolutions Manual (PSCRM)",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Amadeus Functional Documentation — PNR",
+        "org": "Amadeus",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"11\" y=\"6\" width=\"26\" height=\"36\" rx=\"3\"/><line x1=\"16\" y1=\"14\" x2=\"32\" y2=\"14\"/><line x1=\"16\" y1=\"20\" x2=\"32\" y2=\"20\"/><line x1=\"16\" y1=\"26\" x2=\"28\" y2=\"26\"/><circle cx=\"29\" cy=\"34\" r=\"4.5\"/><path d=\"M32.2 37.2 35 40\"/></svg>"
+  },
+  {
+    "id": "segment",
+    "term": "Segment",
+    "abbreviation": "",
+    "aliases": [
+      "Booking Segment",
+      "Flight Segment",
+      "Air Segment"
+    ],
+    "category": "air-ops",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "A segment is a single bookable air transportation unit between a board point and an off point as marketed and sold under one flight number, regardless of how many physical takeoffs and landings (legs) it contains. It is the unit of inventory that is sold, ticketed, and stored as an itinerary element in a PNR.",
+    "definition_ko": "segment(구간)은 하나의 편명으로 마케팅되고 판매되는, 탑승지(board point)와 하기지(off point) 사이의 단일 예약 가능 항공 운송 단위로, 물리적인 이착륙(leg)이 몇 번이든 관계없이 하나의 단위로 본다. 이는 판매·발권되고 PNR에 여정 요소로 저장되는 좌석 재고(inventory) 단위다.",
+    "term_ko": "구간(Segment)",
+    "longDef": "A segment corresponds to a flight number and a booking class (RBD) from origin to destination as offered for sale. A direct flight that makes an intermediate stop without a change of flight number is one segment but two legs. Segments are the basis for availability requests, fare component construction, and flight coupons; each ticketed segment normally maps to one flight coupon.",
+    "longDef_ko": "segment는 판매를 위해 제공되는 출발지에서 도착지까지의 편명과 예약 등급(RBD)에 대응한다. 편명 변경 없이 중간 기착하는 직항편은 하나의 segment이지만 두 개의 leg이다. segment는 좌석 가용성 조회, 운임 구성 요소(fare component) 구성, 항공권 쿠폰의 기준이 되며, 발권된 각 segment는 일반적으로 하나의 flight coupon에 대응한다.",
+    "standardBody": "IATA",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "parent",
+        "targetTerm": "Leg"
+      },
+      {
+        "type": "child",
+        "targetTerm": "PNR"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Married Segment"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Passive Segment"
+      },
+      {
+        "type": "related",
+        "targetTerm": "RBD"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Flight Coupon"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Fare Component"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Leg",
+        "explanation": "A segment is the marketed origin-to-destination flight under one flight number; a leg is a single physical takeoff-to-landing hop, so one segment can contain multiple legs.",
+        "explanation_ko": "segment는 하나의 편명으로 마케팅되는 출발지에서 도착지까지의 항공편이며, leg은 단일 물리적 이착륙 구간이므로 하나의 segment가 여러 개의 leg을 포함할 수 있다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Passenger Services Conference Resolutions Manual (PSCRM)",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Standard Schedules Information Manual (SSIM)",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"34\" r=\"3.5\"/><circle cx=\"38\" cy=\"14\" r=\"3.5\"/><line x1=\"12.6\" y1=\"31.4\" x2=\"35.4\" y2=\"16.6\"/></svg>"
+  },
+  {
+    "id": "leg",
+    "term": "Leg",
+    "abbreviation": "",
+    "aliases": [
+      "Flight Leg",
+      "Hop"
+    ],
+    "category": "air-ops",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "A leg is a single physical movement of an aircraft from one takeoff (departure airport) to the next landing (arrival airport). It is the operational building block of a flight; a flight number may operate over one or more legs.",
+    "definition_ko": "leg(운항 구간)은 한 번의 이륙(출발 공항)에서 다음 착륙(도착 공항)까지의 항공기 단일 물리적 이동이다. 항공편의 운영상 기본 단위이며, 하나의 편명이 하나 이상의 leg으로 운항될 수 있다.",
+    "term_ko": "운항 구간(Leg)",
+    "longDef": "Legs describe the operational reality of an aircraft's routing, used in schedule data (e.g., SSIM leg records) and operations control. A multi-leg flight under a single flight number (a through or direct flight) presents to the buyer as one segment but is operated as two or more legs, each with its own departure/arrival times and possibly different equipment.",
+    "longDef_ko": "leg은 항공기 노선의 운영상 실제를 나타내며, 스케줄 데이터(예: SSIM leg 레코드)와 운항 통제에 사용된다. 단일 편명으로 운항되는 여러 leg 항공편(through 또는 직항편)은 구매자에게는 하나의 segment로 표시되지만, 각각 고유한 출발/도착 시각과 경우에 따라 다른 기재(equipment)를 가진 둘 이상의 leg으로 운항된다.",
+    "standardBody": "IATA",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "child",
+        "targetTerm": "Segment"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Schedule Change"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Segment",
+        "explanation": "A leg is one physical takeoff-to-landing hop, while a segment is the sold/marketed flight under one flight number that may span several legs.",
+        "explanation_ko": "leg은 하나의 물리적 이착륙 구간인 반면, segment는 여러 leg에 걸칠 수 있는, 하나의 편명으로 판매·마케팅되는 항공편이다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Standard Schedules Information Manual (SSIM)",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><line x1=\"6\" y1=\"40\" x2=\"42\" y2=\"40\"/><path d=\"M9 36 C16 16 32 16 39 24\"/><path d=\"M33 12 L41 20 L32 24\"/></svg>"
+  },
+  {
+    "id": "married-segment",
+    "term": "Married Segment",
+    "abbreviation": "",
+    "aliases": [
+      "Married Segments",
+      "Married Segment Logic",
+      "Segment Marriage"
+    ],
+    "category": "air-ops",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "Married segments are two or more connecting segments that an airline links together in availability and inventory control so they must be sold, modified, and cancelled as a single inseparable unit. The logic prevents agents from breaking the connection to access more favorable class availability that the airline would not offer for the individual local segment.",
+    "definition_ko": "married segment(결합 구간)는 항공사가 좌석 가용성 및 재고 통제에서 함께 연결하여, 분리할 수 없는 하나의 단위로 판매·변경·취소해야 하는 둘 이상의 연결 segment를 말한다. 이 로직은 항공사가 개별 로컬 segment에 대해서는 제공하지 않을 더 유리한 등급 가용성에 접근하기 위해 에이전트가 연결을 임의로 분리하는 것을 방지한다.",
+    "term_ko": "결합 구간(Married Segment)",
+    "longDef": "Carriers use married-segment logic so that availability returned for a connection (origin-to-destination) reflects the airline's O&D revenue-management decision rather than the standalone availability of each point-to-point leg. Attempting to cancel or split one married segment, or to book it separately at a class only offered for the through journey, is rejected by the host inventory system. This is a key mechanism enforcing O&D control and limiting 'cross-class' or married-segment abuse.",
+    "longDef_ko": "항공사는 연결편(출발지에서 도착지)에 반환되는 가용성이 각 지점 간 leg의 독립적인 가용성이 아니라 항공사의 O&D 수익 관리(revenue management) 결정을 반영하도록 married-segment 로직을 사용한다. 하나의 married segment를 취소하거나 분리하려는 시도, 또는 통과 여정(through journey)에 대해서만 제공되는 등급으로 별도 예약하려는 시도는 호스트 재고 시스템에 의해 거부된다. 이는 O&D 통제를 강제하고 'cross-class' 또는 married-segment 남용을 제한하는 핵심 메커니즘이다.",
+    "standardBody": "",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Segment"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Availability"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Origin & Destination"
+      },
+      {
+        "type": "related",
+        "targetTerm": "RBD"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Passive Segment",
+        "explanation": "A married segment is a live, inventory-controlled connection sold as a unit, whereas a passive segment is an informational segment that does not draw on the operating carrier's inventory.",
+        "explanation_ko": "married segment는 하나의 단위로 판매되는, 재고 통제를 받는 실시간 연결편인 반면, passive segment는 운항 항공사의 재고를 차감하지 않는 정보성 segment다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Passenger Services Conference Resolutions Manual (PSCRM)",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Amadeus Functional Documentation — Availability and Married Segment Logic",
+        "org": "Amadeus",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"18\" cy=\"24\" r=\"9\"/><circle cx=\"30\" cy=\"24\" r=\"9\"/></svg>"
+  },
+  {
+    "id": "passive-segment",
+    "term": "Passive Segment",
+    "abbreviation": "",
+    "aliases": [
+      "Passive Booking",
+      "Informational Segment",
+      "Ghost Segment"
+    ],
+    "category": "air-ops",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "A passive segment is a flight segment added to a PNR for record-keeping, pricing, or ticketing purposes that does not generate a real inventory request to, or hold space in, the operating carrier's reservation system. It mirrors a booking that was actually confirmed elsewhere (e.g., directly with the airline or in another system).",
+    "definition_ko": "passive segment(수동 구간)는 기록 관리, 운임 산정 또는 발권 목적으로 PNR에 추가되는 항공 segment로, 운항 항공사의 예약 시스템에 실제 재고 요청을 보내거나 좌석을 점유하지 않는다. 실제로는 다른 곳(예: 항공사 직접 또는 다른 시스템)에서 확약된 예약을 반영한다.",
+    "term_ko": "수동 구간(Passive Segment)",
+    "longDef": "Passive segments are typically created with passive status codes so the GDS shows the itinerary for ticketing and documentation without sending an active sell message that would decrement seat inventory. They are commonly used to ticket a booking made outside the GDS, to build complete itineraries for fare construction, or for airline reporting. Misuse of passive segments (e.g., to circumvent ticketing) is policed by GDSs and airlines, and ARNK is a related non-air placeholder for surface gaps.",
+    "longDef_ko": "passive segment는 일반적으로 passive 상태 코드로 생성되어, 좌석 재고를 차감하는 능동 판매(sell) 메시지를 보내지 않고도 GDS가 발권 및 문서화를 위해 여정을 표시하도록 한다. 주로 GDS 외부에서 이루어진 예약을 발권하거나, 운임 구성을 위해 완전한 여정을 구성하거나, 항공사 보고 목적으로 사용된다. passive segment의 오용(예: 발권 회피)은 GDS와 항공사에 의해 단속되며, ARNK는 지상 구간 공백을 나타내는 관련 비항공 자리표시자(placeholder)다.",
+    "standardBody": "",
+    "providerTerms": [
+      {
+        "provider": "Sabre",
+        "term": "Passive Segment / GK status",
+        "context": "Sabre uses passive status codes such as GK to add informational segments that do not access inventory",
+        "context_ko": "Sabre는 GK와 같은 passive 상태 코드를 사용하여 재고에 접근하지 않는 정보성 segment를 추가한다",
+        "relationship": "same"
+      },
+      {
+        "provider": "Amadeus",
+        "term": "Passive Segment",
+        "context": "Amadeus supports passive segments for ticketing of externally confirmed space",
+        "context_ko": "Amadeus는 외부에서 확약된 좌석의 발권을 위해 passive segment를 지원한다",
+        "relationship": "same"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Segment"
+      },
+      {
+        "type": "related",
+        "targetTerm": "ARNK"
+      },
+      {
+        "type": "related",
+        "targetTerm": "PNR"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Ticketing Time Limit"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "ARNK",
+        "explanation": "A passive segment is an informational air segment that does not access inventory, whereas ARNK is a non-air placeholder marking a surface (non-flown) gap in the itinerary.",
+        "explanation_ko": "passive segment는 재고에 접근하지 않는 정보성 항공 segment인 반면, ARNK는 여정에서 지상(비운항) 공백을 표시하는 비항공 자리표시자다."
+      },
+      {
+        "targetTerm": "Married Segment",
+        "explanation": "A passive segment holds no live inventory, while married segments are active inventory-controlled connections sold and managed as a unit.",
+        "explanation_ko": "passive segment는 실시간 재고를 점유하지 않는 반면, married segment는 하나의 단위로 판매·관리되는, 재고 통제를 받는 능동 연결편이다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Sabre Format Finder — Passive Segments",
+        "org": "Sabre",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Amadeus Functional Documentation — Passive Segments",
+        "org": "Amadeus",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"34\" r=\"3.5\"/><circle cx=\"38\" cy=\"14\" r=\"3.5\"/><line x1=\"13\" y1=\"31\" x2=\"35.4\" y2=\"16.6\" stroke-dasharray=\"1 5\"/></svg>"
+  },
+  {
+    "id": "arnk",
+    "term": "ARNK",
+    "abbreviation": "ARNK",
+    "aliases": [
+      "Arrival Unknown",
+      "Arunk",
+      "Surface Segment",
+      "Off-Point Segment"
+    ],
+    "category": "air-ops",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "ARNK ('Arrival Unknown') is a non-air itinerary element inserted into a PNR to indicate a surface (non-flown) break between the arrival point of one flight segment and the departure point of the next. It tells the system the gap is intentional rather than an error and is not a bookable flight.",
+    "definition_ko": "ARNK('Arrival Unknown', 도착지 미상)는 한 항공 segment의 도착 지점과 다음 segment의 출발 지점 사이의 지상(비운항) 단절을 나타내기 위해 PNR에 삽입되는 비항공 여정 요소다. 해당 공백이 오류가 아니라 의도된 것이며 예약 가능한 항공편이 아님을 시스템에 알린다.",
+    "term_ko": "지상 구간 표시(ARNK, 도착지 미상)",
+    "longDef": "An ARNK element is added when a passenger flies into one city and departs from a different city (an open-jaw or surface sector), bridging the gap so the itinerary remains continuous for ticketing and fare construction. It carries no flight, holds no inventory, and is non-revenue; many GDSs warn or require an ARNK when off-points do not match so the agent confirms the surface segment is deliberate.",
+    "longDef_ko": "ARNK 요소는 승객이 한 도시로 입국하여 다른 도시에서 출발할 때(오픈조 또는 지상 구간) 추가되며, 그 공백을 연결하여 발권 및 운임 구성을 위해 여정이 연속성을 유지하도록 한다. 항공편을 포함하지 않고, 재고를 점유하지 않으며, 수익이 발생하지 않는다. 많은 GDS는 하기지가 일치하지 않을 때 ARNK를 경고하거나 요구하여, 에이전트가 해당 지상 구간이 의도된 것임을 확인하도록 한다.",
+    "standardBody": "",
+    "providerTerms": [
+      {
+        "provider": "Sabre",
+        "term": "ARNK",
+        "context": "Sabre inserts an ARNK segment to mark a surface break in the itinerary",
+        "context_ko": "Sabre는 여정의 지상 구간 단절을 표시하기 위해 ARNK segment를 삽입한다",
+        "relationship": "same"
+      },
+      {
+        "provider": "Amadeus",
+        "term": "ARNK",
+        "context": "Amadeus uses ARNK to denote an arrival-unknown surface sector",
+        "context_ko": "Amadeus는 도착지 미상 지상 구간을 나타내기 위해 ARNK를 사용한다",
+        "relationship": "same"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Segment"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Passive Segment"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Journey"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Origin & Destination"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Passive Segment",
+        "explanation": "ARNK marks a surface (non-flown) gap with no flight at all, whereas a passive segment is an informational air segment for a flight confirmed outside the active inventory.",
+        "explanation_ko": "ARNK는 항공편이 전혀 없는 지상(비운항) 공백을 표시하는 반면, passive segment는 능동 재고 외부에서 확약된 항공편에 대한 정보성 항공 segment다."
+      },
+      {
+        "targetTerm": "Leg",
+        "explanation": "ARNK is a non-flown placeholder bridging a surface break, while a leg is an actual physical flown hop of an aircraft.",
+        "explanation_ko": "ARNK는 지상 구간 단절을 연결하는 비운항 자리표시자인 반면, leg은 항공기의 실제 물리적 운항 구간이다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Sabre Format Finder — ARNK",
+        "org": "Sabre",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Amadeus Functional Documentation — Itinerary Elements",
+        "org": "Amadeus",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"8\" cy=\"24\" r=\"3\"/><circle cx=\"40\" cy=\"24\" r=\"3\"/><line x1=\"13\" y1=\"24\" x2=\"19\" y2=\"24\"/><line x1=\"29\" y1=\"24\" x2=\"35\" y2=\"24\"/><path d=\"M21 19 L27 29 M27 19 L21 29\"/></svg>"
+  },
+  {
+    "id": "ssr",
+    "term": "SSR",
+    "abbreviation": "SSR",
+    "aliases": [
+      "Special Service Request",
+      "Special Service Requirement"
+    ],
+    "category": "air-ops",
+    "conceptType": "standard-term",
+    "status": "active",
+    "definition": "A Special Service Request (SSR) is a standardized, coded message element in a PNR used to request or notify an action-required special service from a carrier, such as a wheelchair, special meal, unaccompanied minor, or to convey data like Secure Flight passenger details. Each SSR uses a four-letter IATA code and typically receives a status reply (action/advice code) from the carrier.",
+    "definition_ko": "SSR(Special Service Request, 특별 서비스 요청)은 휠체어, 특별 기내식, 비동반 소아 등 항공사로부터 조치가 필요한 특별 서비스를 요청하거나 통보하기 위해, 또는 Secure Flight 승객 정보와 같은 데이터를 전달하기 위해 PNR에 사용되는 표준화된 코드 메시지 요소다. 각 SSR은 4자리 IATA 코드를 사용하며 일반적으로 항공사로부터 상태 응답(action/advice 코드)을 받는다.",
+    "term_ko": "특별 서비스 요청(SSR)",
+    "longDef": "SSRs follow the IATA PADIS/PSCRM standard format and four-letter code set (e.g., WCHR wheelchair, VGML vegetarian meal, UMNR unaccompanied minor, DOCS for passport/Secure Flight data). Because an SSR is action-oriented, it is transmitted to and acknowledged by each affected carrier, distinguishing it from purely informational messaging. SSRs are central to accessibility (PRM) handling, regulatory data transmission, and ancillary service requests.",
+    "longDef_ko": "SSR은 IATA PADIS/PSCRM 표준 형식과 4자리 코드 체계(예: WCHR 휠체어, VGML 채식 기내식, UMNR 비동반 소아, DOCS 여권/Secure Flight 데이터)를 따른다. SSR은 조치 지향적이므로 영향을 받는 각 항공사에 전송되어 확인되며, 이는 순수 정보성 메시지와 구별되는 점이다. SSR은 접근성(PRM) 처리, 규제 데이터 전송, 부가 서비스 요청에 핵심적이다.",
+    "standardBody": "IATA",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "OSI"
+      },
+      {
+        "type": "related",
+        "targetTerm": "PNR"
+      },
+      {
+        "type": "related",
+        "targetTerm": "PRM"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Secure Flight"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Ancillary Service"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "OSI",
+        "explanation": "An SSR is an action-required, coded request to a carrier that expects a status reply, whereas an OSI is purely informational and requires no carrier action or response.",
+        "explanation_ko": "SSR은 항공사에 보내는 조치가 필요한 코드 요청으로 상태 응답을 기대하는 반면, OSI는 순수 정보성으로 항공사의 조치나 응답을 요구하지 않는다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Passenger Services Conference Resolutions Manual (PSCRM)",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "PADIS EDIFACT/XML Message Standards",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 7 L29 18 L41 19.5 L32 28 L34.5 40 L24 34 L13.5 40 L16 28 L7 19.5 L19 18 Z\"/></svg>"
+  },
+  {
+    "id": "osi",
+    "term": "OSI",
+    "abbreviation": "OSI",
+    "aliases": [
+      "Other Service Information",
+      "Other Supplementary Information"
+    ],
+    "category": "air-ops",
+    "conceptType": "standard-term",
+    "status": "active",
+    "definition": "Other Service Information (OSI) is an informational free-text or semi-structured message element in a PNR sent to one or all carriers to communicate information that does not require any carrier action or reply, such as a passenger contact note or VIP advisory. Unlike an SSR, it carries no action/status code.",
+    "definition_ko": "OSI(Other Service Information, 기타 서비스 정보)는 승객 연락처 메모나 VIP 안내처럼 항공사의 조치나 응답이 필요 없는 정보를 전달하기 위해 한 곳 또는 모든 항공사에 전송되는, PNR 내의 정보성 자유 텍스트 또는 반정형 메시지 요소다. SSR과 달리 action/status 코드를 포함하지 않는다.",
+    "term_ko": "기타 서비스 정보(OSI)",
+    "longDef": "OSI elements convey advisory information to the carrier (for example, frequent-flyer notes, special handling courtesies, or operational remarks) and are addressed either to a specific airline or to all carriers in the itinerary. Because OSI is non-actionable, the carrier is not expected to confirm or respond, which is the key operational difference from an SSR.",
+    "longDef_ko": "OSI 요소는 항공사에 안내성 정보(예: 상용고객 메모, 특별 응대 사항, 운영상 비고)를 전달하며, 특정 항공사 또는 여정 내 모든 항공사를 수신 대상으로 지정한다. OSI는 조치를 요하지 않으므로 항공사가 확인하거나 응답할 것으로 기대되지 않으며, 이것이 SSR과의 핵심적인 운영상 차이점이다.",
+    "standardBody": "IATA",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "SSR"
+      },
+      {
+        "type": "related",
+        "targetTerm": "PNR"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "SSR",
+        "explanation": "OSI is purely informational with no required carrier action or reply, whereas an SSR is an action request that expects a confirming status code from the carrier.",
+        "explanation_ko": "OSI는 항공사의 조치나 응답이 필요 없는 순수 정보성인 반면, SSR은 항공사로부터 확인 상태 코드를 기대하는 조치 요청이다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Passenger Services Conference Resolutions Manual (PSCRM)",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "PADIS EDIFACT/XML Message Standards",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"17\"/><line x1=\"24\" y1=\"22\" x2=\"24\" y2=\"33\"/><circle cx=\"24\" cy=\"16\" r=\"0.5\" fill=\"currentColor\"/></svg>"
+  },
+  {
+    "id": "mct",
+    "term": "MCT",
+    "abbreviation": "MCT",
+    "aliases": [
+      "Minimum Connecting Time",
+      "Minimum Connect Time"
+    ],
+    "category": "air-ops",
+    "conceptType": "standard-term",
+    "status": "active",
+    "definition": "Minimum Connecting Time (MCT) is the shortest published time interval required for a passenger and their baggage to transfer between two flights at a given airport for the connection to be considered legal and bookable. It varies by airport, terminal, domestic/international status, and carrier combination.",
+    "definition_ko": "MCT(Minimum Connecting Time, 최소 연결 시간)는 특정 공항에서 두 항공편 간 승객과 수하물이 환승하는 데 필요한, 해당 연결이 정상적이고 예약 가능한 것으로 간주되기 위한 최소 공시 시간 간격이다. 공항, 터미널, 국내/국제 여부, 항공사 조합에 따라 달라진다.",
+    "term_ko": "최소 연결 시간(MCT)",
+    "longDef": "MCT values are published by airports and carriers and aggregated by IATA in standard reference data, and reservation/availability systems use them to validate whether a connection is legal before offering it. Distinct MCTs apply to combinations such as domestic-to-domestic, domestic-to-international, international-to-international, and online versus interline connections. A connection shorter than the applicable MCT is normally rejected by booking systems as an illegal connection.",
+    "longDef_ko": "MCT 값은 공항과 항공사가 공시하고 IATA가 표준 참조 데이터로 집계하며, 예약/가용성 시스템은 연결편을 제공하기 전에 해당 연결이 정상적인지 검증하는 데 이를 사용한다. 국내-국내, 국내-국제, 국제-국제, 그리고 online(자사) 연결과 interline 연결과 같은 조합에 각각 다른 MCT가 적용된다. 적용 MCT보다 짧은 연결은 일반적으로 예약 시스템에 의해 비정상 연결(illegal connection)로 거부된다.",
+    "standardBody": "IATA",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Segment"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Journey"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Interline"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Availability"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Slot",
+        "explanation": "MCT is the minimum passenger/baggage transfer time governing connection legality, whereas a slot is an allocated airport authorization to use runway/terminal capacity at a specific time.",
+        "explanation_ko": "MCT는 연결 적법성을 좌우하는 승객/수하물의 최소 환승 시간인 반면, slot은 특정 시각에 활주로/터미널 용량을 사용하도록 배정된 공항 허가다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Standard Schedules Information Manual (SSIM)",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"27\" r=\"13\"/><polyline points=\"24,20 24,27 29,30\"/><path d=\"M9 9 H17 M17 9 L14 6 M17 9 L14 12\"/><path d=\"M39 14 H31 M31 14 L34 11 M31 14 L34 17\"/></svg>"
+  },
+  {
+    "id": "queue",
+    "term": "Queue",
+    "abbreviation": "",
+    "aliases": [
+      "GDS Queue",
+      "PNR Queue",
+      "Work Queue"
+    ],
+    "category": "air-ops",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "A queue is an electronic work list within a CRS/GDS or airline host into which PNRs (or messages) are automatically or manually placed so that they can be reviewed and acted upon, for example after a schedule change, ticketing time limit, or waitlist clearance. Each queue is identified by a number/category and routes work to the appropriate agent or office.",
+    "definition_ko": "queue(큐, 작업 대기열)는 CRS/GDS 또는 항공사 호스트 내의 전자 작업 목록으로, 스케줄 변경, 발권 시한, 대기자 확약 등의 이후에 PNR(또는 메시지)이 자동 또는 수동으로 배치되어 검토 및 처리될 수 있도록 한다. 각 queue는 번호/카테고리로 식별되며 작업을 적절한 에이전트나 사무소로 라우팅한다.",
+    "term_ko": "작업 대기열(Queue)",
+    "longDef": "Queues are the workflow backbone of reservation systems: the host places a PNR on a designated queue when an event requires human follow-up (schedule changes, time-limit warnings, confirmations from waitlist, special service replies). Agents 'work the queue' by retrieving PNRs one by one, taking action, and removing or re-queuing them. Numbering and category conventions differ by GDS (for example, schedule-change and ticketing queues), but the concept of an event-driven work list is common across systems.",
+    "longDef_ko": "queue는 예약 시스템 워크플로의 근간이다. 호스트는 사람이 후속 처리해야 하는 이벤트(스케줄 변경, 시한 경고, 대기자 확약, 특별 서비스 응답)가 발생하면 지정된 queue에 PNR을 배치한다. 에이전트는 PNR을 하나씩 조회하여 조치를 취하고 이를 제거하거나 다시 큐에 넣는 방식으로 'queue를 처리'한다. 번호 및 카테고리 규칙은 GDS마다 다르지만(예: 스케줄 변경 및 발권 queue), 이벤트 기반 작업 목록이라는 개념은 시스템 전반에 공통적이다.",
+    "standardBody": "",
+    "providerTerms": [
+      {
+        "provider": "Amadeus",
+        "term": "Queue",
+        "context": "Amadeus organizes PNR follow-up work into numbered queues and categories",
+        "context_ko": "Amadeus는 PNR 후속 처리 작업을 번호가 매겨진 queue와 카테고리로 구성한다",
+        "relationship": "same"
+      },
+      {
+        "provider": "Sabre",
+        "term": "Queue",
+        "context": "Sabre routes PNRs needing action to numbered queues for agents to work",
+        "context_ko": "Sabre는 조치가 필요한 PNR을 에이전트가 처리하도록 번호가 매겨진 queue로 라우팅한다",
+        "relationship": "same"
+      },
+      {
+        "provider": "Travelport",
+        "term": "Queue",
+        "context": "Galileo/Apollo and Worldspan use queues to manage PNR follow-up",
+        "context_ko": "Galileo/Apollo와 Worldspan은 PNR 후속 처리를 관리하기 위해 queue를 사용한다",
+        "relationship": "same"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "PNR"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Schedule Change"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Ticketing Time Limit"
+      },
+      {
+        "type": "related",
+        "targetTerm": "IROPS"
+      }
+    ],
+    "distinctions": [],
+    "sources": [
+      {
+        "name": "Amadeus Functional Documentation — Queues",
+        "org": "Amadeus",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Sabre Format Finder — Queues",
+        "org": "Sabre",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"9\" cy=\"12\" r=\"2\"/><circle cx=\"9\" cy=\"24\" r=\"2\"/><circle cx=\"9\" cy=\"36\" r=\"2\"/><line x1=\"17\" y1=\"12\" x2=\"40\" y2=\"12\"/><line x1=\"17\" y1=\"24\" x2=\"40\" y2=\"24\"/><line x1=\"17\" y1=\"36\" x2=\"40\" y2=\"36\"/></svg>"
+  },
+  {
+    "id": "record-locator",
+    "term": "Record Locator",
+    "abbreviation": "",
+    "aliases": [
+      "PNR Locator",
+      "Booking Reference",
+      "Reservation Code",
+      "Confirmation Code",
+      "RLOC"
+    ],
+    "category": "air-ops",
+    "conceptType": "code",
+    "status": "active",
+    "definition": "A Record Locator is the short alphanumeric identifier — conventionally six characters — assigned by an airline host or GDS to uniquely retrieve a Passenger Name Record (PNR). It is the code passengers receive to access their booking; the PNR is the underlying data record while the locator is its key.",
+    "longDef": "Each reservation system that holds a copy of a booking generates its own Record Locator, so a single trip can carry multiple locators: the GDS/agency locator, the validating or operating carrier's host locator, and codeshare partners' locators, often cross-referenced in the PNR. The six-character format is a long-standing industry convention (letters and digits, frequently excluding ambiguous characters); it is not globally unique across all systems, which is why retrieval also depends on the issuing office or system context. Locators appear in different positions across GDSs (e.g., on the Amadeus RP/ header line, at the top of a Sabre or Worldspan record, and after the RLOC tag in Galileo).",
+    "standardBody": "",
+    "term_ko": "Record Locator (예약 조회 번호 / 예약 번호)",
+    "definition_ko": "Record Locator는 항공사 호스트나 GDS가 PNR(Passenger Name Record)을 고유하게 조회하기 위해 부여하는 짧은 영숫자 식별자로, 관례적으로 6자리다. 승객이 예약을 조회할 때 받는 코드가 Record Locator이며, PNR이 실제 데이터 레코드라면 Record Locator는 그 레코드를 가리키는 key에 해당한다.",
+    "longDef_ko": "한 여정이라도 예약 사본을 보유한 시스템마다 별도의 Record Locator를 생성하므로, GDS/여행사 locator, 발권/운항 항공사 호스트 locator, codeshare 파트너 locator 등 여러 개가 존재할 수 있고 이들은 보통 PNR 안에서 상호 참조된다. 6자리 형식(영문자+숫자, 혼동되는 문자는 흔히 제외)은 오래된 업계 관례이며 모든 시스템에 걸쳐 전역 고유한 것은 아니어서, 조회 시 발권 office나 시스템 context가 함께 필요하다. GDS마다 표시 위치가 달라 Amadeus는 RP/ 헤더 줄, Sabre·Worldspan은 레코드 최상단, Galileo는 RLOC 태그 뒤에 나타난다.",
+    "providerTerms": [
+      {
+        "provider": "Amadeus",
+        "term": "Record Locator (RLOC)",
+        "context": "Six-character reservation reference shown on the RP/ header line of a PNR.",
+        "context_ko": "PNR의 RP/ 헤더 줄에 표시되는 6자리 예약 참조번호.",
+        "relationship": "same"
+      },
+      {
+        "provider": "Sabre",
+        "term": "Record Locator",
+        "context": "Alphanumeric code retrieving a Sabre PNR, displayed at the top of the record.",
+        "context_ko": "Sabre PNR을 조회하는 영숫자 코드로 레코드 최상단에 표시.",
+        "relationship": "same"
+      },
+      {
+        "provider": "Travelport",
+        "term": "Record Locator / RLOC",
+        "context": "Galileo/Apollo/Worldspan booking reference used to access the reservation.",
+        "context_ko": "예약 접근에 사용되는 Galileo/Apollo/Worldspan 예약 참조번호.",
+        "relationship": "same"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "PNR"
+      },
+      {
+        "type": "related",
+        "targetTerm": "GDS"
+      },
+      {
+        "type": "related",
+        "targetTerm": "E-ticket"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "PNR",
+        "explanation": "The PNR is the full reservation data record (names, segments, contacts, SSRs); the Record Locator is merely the short key used to retrieve that record. One trip can have several locators pointing to copies of essentially the same PNR data.",
+        "explanation_ko": "PNR은 이름, segment, 연락처, SSR 등 예약 데이터 전체 레코드이고, Record Locator는 그 레코드를 조회하는 짧은 key일 뿐이다. 한 여정에 여러 locator가 사실상 같은 PNR 데이터 사본을 가리킬 수 있다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "IATA",
+        "name": "Passenger Services Conference Resolutions Manual (PSCRM)",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "org": "Travelport",
+        "name": "Travelport+ (Galileo) Format Guide",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"7\" y=\"14\" width=\"34\" height=\"20\" rx=\"3\"/><path d=\"M14 22h6M14 28h12M28 22h6\"/><circle cx=\"33\" cy=\"28\" r=\"3.5\"/><path d=\"M35.5 30.5 39 34\"/></svg>"
+  },
+  {
+    "id": "split-pnr",
+    "term": "Split PNR",
+    "abbreviation": "",
+    "aliases": [
+      "Divide PNR",
+      "Divided Booking",
+      "PNR Split",
+      "Associate PNR"
+    ],
+    "category": "air-ops",
+    "conceptType": "process",
+    "status": "active",
+    "definition": "Splitting a PNR is the reservation process of dividing one Passenger Name Record into two so that one or more passengers can be handled separately from the rest of the party. The divided passengers are moved into a new PNR with its own Record Locator, while the original PNR retains the remaining passengers.",
+    "longDef": "Agents split a PNR when part of a group needs a different itinerary, cancellation, reissue, or special handling that should not affect the others — for example one traveller of two changing a return flight. After a successful split the systems cross-reference the two records (commonly tagged as PARENT/ASSOCIATE PNRs and noted in PNR history). Splitting is also required operationally before partial cancellation or reissue so each passenger's ticketing remains consistent. Cryptic commands differ by GDS (e.g., Amadeus SP, Sabre D / divide-party flows).",
+    "standardBody": "",
+    "term_ko": "Split PNR (PNR 분리 / Divide)",
+    "definition_ko": "Split PNR은 하나의 PNR(Passenger Name Record)을 둘로 나누어 일부 승객을 나머지 일행과 분리해 처리하는 예약 작업이다. 분리된 승객은 자체 Record Locator를 가진 새 PNR로 옮겨지고, 원본 PNR에는 나머지 승객이 남는다.",
+    "longDef_ko": "일행 중 일부만 다른 여정·취소·재발행·특별 처리가 필요하고 나머지에 영향을 주면 안 될 때(예: 2인 중 1인만 귀국편 변경) PNR을 split한다. 분리가 성공하면 두 레코드는 보통 PARENT/ASSOCIATE PNR로 태깅되고 PNR history에 기록되며 상호 참조된다. 부분 취소나 재발행 전에 각 승객의 발권 일관성을 유지하기 위해서도 split이 운영상 필요하다. cryptic 명령은 GDS마다 달라 Amadeus는 SP, Sabre는 divide-party(D) 흐름을 쓴다.",
+    "providerTerms": [
+      {
+        "provider": "Amadeus",
+        "term": "Split (SP)",
+        "context": "Splits selected passengers into an associate PNR with a separate record locator.",
+        "context_ko": "선택한 승객을 별도 record locator를 가진 associate PNR로 분리.",
+        "relationship": "same"
+      },
+      {
+        "provider": "Sabre",
+        "term": "Divide (D)",
+        "context": "Divide-the-booking function that separates one or more name elements into a new PNR.",
+        "context_ko": "하나 이상의 이름 요소를 새 PNR로 분리하는 divide-the-booking 기능.",
+        "relationship": "same"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "PNR"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Group PNR"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Record Locator"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Reissue"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Group PNR",
+        "explanation": "Splitting a PNR creates a new separate record for some passengers; a Group PNR is a single record holding many passengers under shared inventory. Splitting is often the action applied to part of a group, not the group structure itself.",
+        "explanation_ko": "Split PNR은 일부 승객을 위한 새 분리 레코드를 만드는 작업이고, Group PNR은 공유 inventory 아래 다수 승객을 담는 하나의 레코드다. split은 흔히 group의 일부에 적용하는 동작이지 group 구조 자체가 아니다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "Amadeus",
+        "name": "Amadeus Service Hub — How to split a PNR (Cryptic)",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "org": "IATA",
+        "name": "Passenger Services Conference Resolutions Manual (PSCRM)",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 24h8\"/><path d=\"M18 24 28 14h10\"/><path d=\"M18 24 28 34h10\"/><circle cx=\"10\" cy=\"24\" r=\"3\"/><circle cx=\"40\" cy=\"14\" r=\"3\"/><circle cx=\"40\" cy=\"34\" r=\"3\"/></svg>"
+  },
+  {
+    "id": "group-pnr",
+    "term": "Group PNR",
+    "abbreviation": "",
+    "aliases": [
+      "Group Booking",
+      "Group Reservation",
+      "Group Block"
+    ],
+    "category": "air-ops",
+    "conceptType": "document",
+    "status": "active",
+    "definition": "A Group PNR is a single Passenger Name Record created to hold a block of seats for a group of passengers (typically a defined minimum, such as 10 or more) travelling together on the same itinerary, often before all individual names are known. Names are added against the held seats over time, and unassigned places are tracked until name-in or cancellation.",
+    "longDef": "Group bookings are governed by negotiated group fares and carrier group policies, with deadlines (name list submission, deposit, final payment/ticketing) that differ from individual fares. The Group PNR shows the booked group size versus the number of names entered (unassigned count), and may be split into individual PNRs for ticketing or when members deviate. Carriers control group inventory separately from regular Availability, and over-blocking or late name-in can trigger fees, penalties, or seat reduction.",
+    "standardBody": "",
+    "term_ko": "Group PNR (단체 PNR / 단체 예약)",
+    "definition_ko": "Group PNR은 같은 여정을 함께 이용하는 단체 승객(보통 10명 이상 등 정해진 최소 인원)을 위해 좌석 block을 잡아두는 하나의 PNR(Passenger Name Record)이며, 종종 개별 이름이 모두 확정되기 전에 생성된다. 확보한 좌석에 시간이 지나며 이름을 추가하고, 미배정 좌석은 name-in 또는 취소 시점까지 관리된다.",
+    "longDef_ko": "단체 예약은 협상된 group fare와 항공사 단체 규정의 적용을 받으며, 명단 제출·예치금·최종 결제/발권 마감 등 개인 운임과 다른 기한이 존재한다. Group PNR에는 예약된 단체 규모와 입력된 이름 수(미배정 인원)가 함께 표시되고, 발권을 위해 또는 일부 인원의 여정 변경 시 개별 PNR로 split될 수 있다. 항공사는 단체 inventory를 일반 Availability와 별도로 관리하며, 과다 block이나 늦은 name-in은 수수료·페널티·좌석 감축을 유발할 수 있다.",
+    "providerTerms": [
+      {
+        "provider": "Amadeus",
+        "term": "Group PNR",
+        "context": "PNR holding a number of seats with unassigned names tracked by element 0 and NM count.",
+        "context_ko": "좌석 수를 보유하며 element 0과 NM 수로 미배정 이름을 관리하는 PNR.",
+        "relationship": "same"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "PNR"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Split PNR"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Availability"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Allotment"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Allotment",
+        "explanation": "An Allotment is a pre-negotiated block of inventory a carrier or supplier grants a distributor to sell; a Group PNR is a specific reservation record holding seats for one identified travelling group. A group booking may draw on an allotment but is not the same as the allotment agreement.",
+        "explanation_ko": "Allotment는 항공사·공급자가 판매자에게 사전 협상으로 부여한 inventory block이고, Group PNR은 식별된 한 단체를 위해 좌석을 보유한 구체적 예약 레코드다. 단체 예약이 allotment를 사용할 수 있지만 allotment 계약 자체와는 다르다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "Amadeus",
+        "name": "Amadeus Groups User Guide",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "org": "IATA",
+        "name": "Passenger Services Conference Resolutions Manual (PSCRM)",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"17\" cy=\"16\" r=\"5\"/><circle cx=\"31\" cy=\"16\" r=\"5\"/><path d=\"M9 34c0-5 3.5-8 8-8s8 3 8 8\"/><path d=\"M23 34c0-5 3.5-8 8-8s8 3 8 8\"/></svg>"
+  },
+  {
+    "id": "itinerary",
+    "term": "Itinerary",
+    "abbreviation": "",
+    "aliases": [
+      "Travel Itinerary",
+      "Itinerary Receipt",
+      "Trip Itinerary"
+    ],
+    "category": "air-ops",
+    "conceptType": "document",
+    "status": "active",
+    "definition": "An Itinerary is the ordered list of travel segments — flights and any surface/non-air elements — that make up a passenger's journey as recorded in a PNR. The Itinerary/Receipt is also the passenger-facing document that summarizes these segments together with dates, times, booking status, and ticketing information.",
+    "longDef": "Within a PNR the itinerary holds the air Segments (and their Legs), any ARNK surface gaps, and connecting points, in chronological sequence; it underpins fare construction over the Origin & Destination and journey. The combined Itinerary/Receipt document (for electronic tickets, the e-ticket Itinerary/Receipt) is what the traveller carries and presents, listing flight numbers, carriers, times, fare/ticketing details and conditions. The order and continuity of itinerary segments matter for ticketing validity and for minimum connection time checks.",
+    "standardBody": "",
+    "term_ko": "Itinerary (여정)",
+    "definition_ko": "Itinerary는 PNR에 기록된 승객 여정을 구성하는 여행 segment(항공편 및 surface/비항공 요소)의 순서화된 목록이다. Itinerary/Receipt는 이 segment들을 날짜·시간·예약 status·발권 정보와 함께 요약한 승객용 문서이기도 하다.",
+    "longDef_ko": "PNR 안에서 itinerary는 항공 Segment(및 그 Leg), ARNK surface 구간, 환승점을 시간 순서로 담으며, Origin & Destination과 journey 단위의 운임 산출 기반이 된다. 결합된 Itinerary/Receipt 문서(전자항공권의 경우 e-ticket Itinerary/Receipt)는 승객이 소지·제시하는 것으로 편명, 항공사, 시간, 운임/발권 상세, 조건을 나열한다. itinerary segment의 순서와 연속성은 발권 유효성과 최소 연결시간(MCT) 점검에 중요하다.",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "PNR"
+      },
+      {
+        "type": "broader",
+        "targetTerm": "Segment"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Journey"
+      },
+      {
+        "type": "related",
+        "targetTerm": "ARNK"
+      },
+      {
+        "type": "related",
+        "targetTerm": "E-ticket"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Journey",
+        "explanation": "A Journey is the fare/pricing concept describing the overall trip (e.g., one-way, round-trip, open-jaw) used in fare construction; the Itinerary is the concrete ordered list of booked segments. One itinerary realizes a journey but adds specific flights, dates and times.",
+        "explanation_ko": "Journey는 운임 산출에서 쓰는 전체 여행의 운임 개념(편도, 왕복, open-jaw 등)이고, Itinerary는 예약된 segment의 구체적 순서 목록이다. 하나의 itinerary가 journey를 실현하되 구체적 편명·날짜·시간을 더한다."
+      },
+      {
+        "targetTerm": "E-ticket",
+        "explanation": "The e-ticket is the electronic record of the contract of carriage and coupons; the Itinerary/Receipt is the human-readable summary issued alongside it. They are related documents, not the same artifact.",
+        "explanation_ko": "E-ticket은 운송계약과 coupon의 전자 기록이고, Itinerary/Receipt는 그와 함께 발행되는 사람이 읽을 수 있는 요약본이다. 관련 문서이지 동일한 산출물은 아니다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "IATA",
+        "name": "Passenger Services Conference Resolutions Manual (PSCRM)",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"11\" y=\"7\" width=\"26\" height=\"34\" rx=\"3\"/><circle cx=\"18\" cy=\"15\" r=\"1.6\" fill=\"currentColor\" stroke=\"none\"/><circle cx=\"18\" cy=\"24\" r=\"1.6\" fill=\"currentColor\" stroke=\"none\"/><circle cx=\"18\" cy=\"33\" r=\"1.6\" fill=\"currentColor\" stroke=\"none\"/><path d=\"M24 15h7M24 24h7M24 33h7\"/></svg>"
+  },
+  {
+    "id": "seat-map",
+    "term": "Seat Map",
+    "abbreviation": "",
+    "aliases": [
+      "Seatmap",
+      "Seating Chart",
+      "Seat Availability Map",
+      "Aircraft Seat Map"
+    ],
+    "category": "air-ops",
+    "conceptType": "standard-term",
+    "status": "active",
+    "definition": "A Seat Map is the graphical or structured representation of an aircraft cabin layout for a specific flight and cabin, showing each seat's position, type and current availability so passengers can select a seat. It is requested and returned per flight segment, reflecting the seating configuration and any chargeable seat attributes.",
+    "longDef": "Seat maps are exchanged via standardized messages: the OpenTravel OTA_AirSeatMapRQ/RS pair and, in NDC, a SeatAvailability message that returns free and paid seats (the latter as priced offers/CatalogOfferings). A seat map encodes rows and columns, seat characteristics (window/aisle, exit row, bassinet, extra legroom, blocked), occupancy/availability, and price where the seat is an Ancillary Service / EMD-paid item. Carrier configurations vary by aircraft type and version, and the map reflects pre-blocked or already-assigned seats; seat selection results are stored against the PNR segment.",
+    "standardBody": "OpenTravel Alliance",
+    "term_ko": "Seat Map (좌석 배치도 / 좌석맵)",
+    "definition_ko": "Seat Map은 특정 항공편과 cabin의 항공기 객실 배치를 그래픽 또는 구조화된 형태로 표현한 것으로, 각 좌석의 위치·유형·현재 가용 여부를 보여 승객이 좌석을 선택할 수 있게 한다. flight segment별로 요청·반환되며 좌석 구성과 유료 좌석 속성을 반영한다.",
+    "longDef_ko": "Seat Map은 표준 메시지로 교환된다. OpenTravel의 OTA_AirSeatMapRQ/RS 쌍, NDC에서는 무료·유료 좌석(유료는 priced offer/CatalogOffering)을 반환하는 SeatAvailability 메시지가 사용된다. seat map은 행·열, 좌석 특성(창측/통로측, 비상구열, bassinet, 추가 legroom, 사용불가), 점유/가용 여부, 그리고 좌석이 Ancillary Service / EMD로 결제되는 경우의 가격을 담는다. 항공기 type·version에 따라 구성이 달라지고 사전 block되거나 이미 배정된 좌석을 반영하며, 좌석 선택 결과는 PNR segment에 저장된다.",
+    "providerTerms": [
+      {
+        "provider": "OpenTravel Alliance",
+        "term": "OTA_AirSeatMapRQ / OTA_AirSeatMapRS",
+        "context": "XML request/response messages carrying cabin seat layout and availability per segment.",
+        "context_ko": "segment별 cabin 좌석 배치와 가용 여부를 담는 XML 요청/응답 메시지.",
+        "relationship": "same"
+      },
+      {
+        "provider": "Travelport",
+        "term": "Seat Map API",
+        "context": "Universal API/JSON service returning aircraft seat maps for booking and seat assignment.",
+        "context_ko": "예약 및 좌석 배정을 위해 항공기 seat map을 반환하는 Universal API/JSON 서비스.",
+        "relationship": "related"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Segment"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Ancillary Service"
+      },
+      {
+        "type": "related",
+        "targetTerm": "EMD"
+      },
+      {
+        "type": "related",
+        "targetTerm": "NDC"
+      },
+      {
+        "type": "related",
+        "targetTerm": "OpenTravel Alliance"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Availability",
+        "explanation": "Availability tells whether seats can be sold in a given booking class (RBD) at the flight/cabin level; a Seat Map shows the physical layout and which individual seats are open for assignment. Availability drives selling; seat map drives seat selection.",
+        "explanation_ko": "Availability는 특정 예약 클래스(RBD)에서 항공편/cabin 단위로 좌석 판매 가능 여부를 알려주고, Seat Map은 물리적 배치와 어떤 개별 좌석을 배정할 수 있는지를 보여준다. availability는 판매를, seat map은 좌석 선택을 좌우한다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "OpenTravel Alliance",
+        "name": "OpenTravel Specifications — OTA_AirSeatMapRQ/RS",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "org": "IATA",
+        "name": "NDC Implementation Guide — SeatAvailability",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M16 11c-3 5-3 26 0 30M32 11c3 5 3 26 0 30\"/><rect x=\"19\" y=\"15\" width=\"4\" height=\"4\" rx=\"1\"/><rect x=\"25\" y=\"15\" width=\"4\" height=\"4\" rx=\"1\"/><rect x=\"19\" y=\"22\" width=\"4\" height=\"4\" rx=\"1\"/><rect x=\"25\" y=\"22\" width=\"4\" height=\"4\" rx=\"1\"/><rect x=\"19\" y=\"29\" width=\"4\" height=\"4\" rx=\"1\"/><rect x=\"25\" y=\"29\" width=\"4\" height=\"4\" rx=\"1\"/></svg>"
+  },
+  {
+    "id": "waitlist",
+    "term": "Waitlist",
+    "abbreviation": "",
+    "aliases": [
+      "Wait List",
+      "Waitlisting",
+      "Waitlisted"
+    ],
+    "category": "air-ops",
+    "conceptType": "process",
+    "status": "active",
+    "definition": "A Waitlist is a holding list for a flight and booking class that has no immediate confirmed Availability, on which a passenger's request is queued pending seats opening up. The segment is held in a waitlist status (e.g., HL) and is cleared to confirmed (HK) automatically or manually if and when space becomes available.",
+    "longDef": "Waitlisting lets agents request a sell on a closed or full class; the host returns or sets a waitlist advice/status code such as HL ('have waitlisted'). Clearance can be triggered at the segment level or at the Origin & Destination level by revenue-management and inventory logic, and is communicated by a status change and PNR/Queue notification. Waitlist priority and limits are carrier-controlled, and unconfirmed waitlisted segments generally cannot be ticketed; they may be auto-cancelled if not cleared by a deadline.",
+    "standardBody": "",
+    "term_ko": "Waitlist (대기 예약 / 웨이팅)",
+    "definition_ko": "Waitlist는 즉시 확약 Availability가 없는 항공편·예약 클래스에 대해 승객 요청을 대기열에 올려 두는 목록으로, 좌석이 생기기를 기다린다. 해당 segment는 대기 status(예: HL)로 유지되며, 좌석이 확보되면 자동 또는 수동으로 확약(HK)으로 clear된다.",
+    "longDef_ko": "Waitlist는 마감되거나 만석인 클래스에 sell을 요청할 수 있게 하며, 호스트는 HL('have waitlisted') 같은 대기 advice/status 코드를 설정·반환한다. clear는 segment 단위 또는 Origin & Destination 단위로 수익관리·inventory 로직에 의해 트리거되며 status 변경과 PNR/Queue 알림으로 전달된다. 대기 우선순위와 한도는 항공사가 통제하고, 확약되지 않은 waitlist segment는 일반적으로 발권할 수 없으며 마감 시한까지 clear되지 않으면 자동 취소될 수 있다.",
+    "providerTerms": [
+      {
+        "provider": "GDS (industry)",
+        "term": "HL",
+        "context": "Segment status code meaning 'have waitlisted' — held on the waiting list.",
+        "context_ko": "'have waitlisted'를 의미하는 segment status 코드로 대기 목록에 보류된 상태.",
+        "relationship": "related"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Availability"
+      },
+      {
+        "type": "related",
+        "targetTerm": "RBD"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Booking Status Code"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Segment"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Overbooking"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Overbooking",
+        "explanation": "Overbooking is the carrier deliberately confirming more bookings than seats to offset no-shows; a Waitlist holds unconfirmed requests awaiting space. Waitlisted passengers are not confirmed, whereas overbooked passengers hold confirmed status that may exceed capacity.",
+        "explanation_ko": "Overbooking은 no-show를 상쇄하려 좌석보다 많은 예약을 의도적으로 확약하는 것이고, Waitlist는 좌석을 기다리는 미확약 요청을 보유하는 것이다. waitlist 승객은 미확약 상태인 반면 overbooking 승객은 정원을 초과할 수 있는 확약 상태를 보유한다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "IATA",
+        "name": "Passenger Services Conference Resolutions Manual (PSCRM)",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "org": "Travelport",
+        "name": "Smartpoint Cloud Help — Waitlist flights",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M16 8h16M16 40h16\"/><path d=\"M18 8c0 8 12 10 12 16s-12 8-12 16\"/><path d=\"M30 8c0 8-12 10-12 16s12 8 12 16\"/><path d=\"M21 36h6\"/></svg>"
+  },
+  {
+    "id": "booking-status-code",
+    "term": "Booking Status Code",
+    "abbreviation": "",
+    "aliases": [
+      "Segment Status Code",
+      "Status Code",
+      "Action Code",
+      "Advice Code"
+    ],
+    "category": "air-ops",
+    "conceptType": "code",
+    "status": "active",
+    "definition": "A Booking Status Code is a standardized two-letter code attached to a PNR air segment that indicates the segment's reservation state or the action/advice exchanged between systems — for example HK (holds confirmed), HL (waitlisted), or UN (unable, flight not operating). The codes drive how segments are sold, confirmed, changed, and cancelled across GDS and airline hosts.",
+    "longDef": "Status codes split into action/request codes used when selling or messaging (e.g., NN need, SS sold, HN have requested) and advice/reply or holding codes returned or held in the PNR (e.g., HK confirmed, HL waitlisted, KK confirming, UC unable, UN flight not operating, HX cancelled by carrier, TK/TL schedule-change advices). Inactive codes such as UN, UC, HX and NO are moved to PNR history. The codes are an interline teletype/EDIFACT convention so that any carrier or GDS interprets a segment's state identically; agents must action certain codes (e.g., respond to schedule-change codes) before ticketing.",
+    "standardBody": "",
+    "term_ko": "Booking Status Code (예약 status 코드 / segment status 코드)",
+    "definition_ko": "Booking Status Code는 PNR 항공 segment에 붙는 표준 2자리 코드로, 해당 segment의 예약 상태 또는 시스템 간 교환되는 action/advice를 나타낸다. 예: HK(확약 보유), HL(waitlist), UN(불가, 미운항). 이 코드들은 GDS와 항공사 호스트 전반에서 segment의 판매·확약·변경·취소 방식을 좌우한다.",
+    "longDef_ko": "status 코드는 판매·메시징 시 쓰는 action/request 코드(예: NN need, SS sold, HN have requested)와 PNR에 반환·보유되는 advice/reply 또는 holding 코드(예: HK 확약, HL waitlist, KK confirming, UC 불가, UN 미운항, HX 항공사 취소, TK/TL 스케줄 변경 advice)로 나뉜다. UN, UC, HX, NO 같은 비활성 코드는 PNR history로 이동한다. 이 코드는 interline teletype/EDIFACT 관례로, 어떤 항공사·GDS든 segment 상태를 동일하게 해석하게 한다. 발권 전 특정 코드(예: 스케줄 변경 코드)에는 agent가 반드시 조치해야 한다.",
+    "providerTerms": [
+      {
+        "provider": "GDS (industry)",
+        "term": "HK / HL / SS / UC / UN / HX / KK",
+        "context": "Common segment status codes: confirmed, waitlisted, sold, unable, not operating, carrier-cancelled, confirming.",
+        "context_ko": "일반 segment status 코드: 확약, waitlist, 판매됨, 불가, 미운항, 항공사 취소, confirming.",
+        "relationship": "same"
+      },
+      {
+        "provider": "Travelport",
+        "term": "PNR Status Codes",
+        "context": "Universal API documented air status/advice codes for segment state.",
+        "context_ko": "segment 상태를 나타내는 Universal API의 항공 status/advice 코드.",
+        "relationship": "same"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Segment"
+      },
+      {
+        "type": "related",
+        "targetTerm": "PNR"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Waitlist"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Schedule Change"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Availability"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "RBD",
+        "explanation": "An RBD (booking/class code) is a single-letter inventory class that prices and allocates the fare; a Booking Status Code is a two-letter code describing the reservation state of a segment regardless of which RBD it is booked in.",
+        "explanation_ko": "RBD(예약 클래스 코드)는 운임을 매기고 배정하는 1자리 inventory 클래스이고, Booking Status Code는 어떤 RBD로 예약됐든 segment의 예약 상태를 나타내는 2자리 코드다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "IATA",
+        "name": "Passenger Services Conference Resolutions Manual (PSCRM) / AIRIMP",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "org": "Travelport",
+        "name": "Universal API — Air Status Codes",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"7\" y=\"13\" width=\"34\" height=\"22\" rx=\"3\"/><path d=\"M13 24h5l3 5 4-10 3 5h7\"/></svg>"
+  },
+  {
+    "id": "open-segment",
+    "term": "Open Segment",
+    "abbreviation": "",
+    "aliases": [
+      "Open-dated Segment",
+      "Open Date Segment",
+      "Open Air Segment"
+    ],
+    "category": "air-ops",
+    "conceptType": "standard-term",
+    "status": "active",
+    "definition": "An Open Segment is an air segment entered in a PNR with a routing and carrier but no fixed flight number or date (an 'open' booking), used when a passenger holds the right to travel a sector without a committed date. It carries no confirmed reservation status and must later be date-stamped and confirmed before the passenger can fly.",
+    "longDef": "Open segments preserve itinerary continuity and ticket coupon sequence when a future sector's date is undecided, and historically supported open-dated tickets. They are not actively held seats and many carriers restrict or refuse them (some treat open-dated GDS bookings as a violation subject to fees); fare rules govern whether a coupon may be issued open and how it is later confirmed. They differ from an ARNK, which marks a deliberate surface gap rather than an unscheduled air sector still to be flown on the validating itinerary.",
+    "standardBody": "",
+    "term_ko": "Open Segment (오픈 구간 / open-dated segment)",
+    "definition_ko": "Open Segment는 PNR에 routing과 항공사는 있으나 확정된 편명·날짜가 없는('open') 항공 segment로, 승객이 날짜를 확정하지 않은 채 특정 구간을 이용할 권리를 보유할 때 쓰인다. 확약 예약 status가 없으며, 탑승 전에 날짜를 지정하고 확약해야 한다.",
+    "longDef_ko": "Open segment는 미래 구간의 날짜가 미정일 때 여정 연속성과 항공권 coupon 순서를 유지하며, 과거 open-dated ticket을 뒷받침했다. 실제로 좌석을 보유하는 것이 아니어서 많은 항공사가 이를 제한·거부한다(일부는 open-dated GDS 예약을 위반으로 보고 수수료를 부과). coupon을 open으로 발권할 수 있는지와 이후 확약 방법은 운임 규정이 정한다. ARNK가 검증 여정상 surface 구간을 의도적으로 표시하는 것인 반면, open segment는 아직 일정이 정해지지 않았으나 향후 비행할 항공 구간이라는 점에서 다르다.",
+    "providerTerms": [
+      {
+        "provider": "GDS (industry)",
+        "term": "Open segment",
+        "context": "Air segment booked with carrier and routing but no flight/date; typically requires at least one confirmed segment in the PNR.",
+        "context_ko": "항공사와 routing만 있고 편명/날짜가 없는 항공 segment로, 보통 PNR에 확약 segment가 최소 1개 필요.",
+        "relationship": "same"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Segment"
+      },
+      {
+        "type": "related",
+        "targetTerm": "ARNK"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Flight Coupon"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Booking Status Code"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "ARNK",
+        "explanation": "ARNK marks a non-air ('arrival unknown') surface gap so the itinerary's continuity is acknowledged; an Open Segment is an actual air sector the passenger intends to fly but without a fixed date/flight yet. ARNK is never flown; an open segment is meant to be confirmed and flown.",
+        "explanation_ko": "ARNK는 비항공('arrival unknown') surface 구간을 표시해 여정 연속성을 인정하는 것이고, Open Segment는 승객이 실제로 비행할 의도가 있으나 아직 날짜/편명이 없는 항공 구간이다. ARNK는 결코 비행하지 않지만 open segment는 확약 후 비행하기로 한 구간이다."
+      },
+      {
+        "targetTerm": "Passive Segment",
+        "explanation": "A Passive Segment is a non-active segment created to mirror a booking confirmed elsewhere (e.g., for ticketing), holding no live inventory; an Open Segment is undated and unconfirmed by design rather than a copy of an external confirmation.",
+        "explanation_ko": "Passive Segment는 다른 곳에서 확약된 예약을 (예: 발권 목적으로) 반영하려 만든 비활성 segment로 실제 inventory를 보유하지 않는다. Open Segment는 외부 확약의 사본이 아니라 본래 날짜 없이 미확약 상태로 설계된 구간이다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "IATA",
+        "name": "Passenger Services Conference Resolutions Manual (PSCRM)",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "org": "Travelport",
+        "name": "Travelport+ (Galileo) Format Guide",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"11\" cy=\"24\" r=\"3\"/><circle cx=\"37\" cy=\"24\" r=\"3\"/><path d=\"M15 24h4M22 24h4M29 24h4\"/><path d=\"M37 14v-3M37 37v-3\"/></svg>"
+  }
+]

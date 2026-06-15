@@ -4,7 +4,11 @@
     "term": "Passenger Type Code",
     "term_ko": "여객 유형 코드 (PTC)",
     "abbreviation": "PTC",
-    "aliases": ["PTC", "Passenger Type", "Pax Type Code"],
+    "aliases": [
+      "PTC",
+      "Passenger Type",
+      "Pax Type Code"
+    ],
     "category": "customer",
     "conceptType": "code",
     "status": "active",
@@ -15,26 +19,61 @@
     "standardBody": "ATPCO",
     "providerTerms": [],
     "relationships": [
-      { "type": "related", "targetTerm": "Fare Basis Code" },
-      { "type": "related", "targetTerm": "ATPCO" },
-      { "type": "related", "targetTerm": "RBD" }
+      {
+        "type": "related",
+        "targetTerm": "Fare Basis Code"
+      },
+      {
+        "type": "related",
+        "targetTerm": "ATPCO"
+      },
+      {
+        "type": "related",
+        "targetTerm": "RBD"
+      }
     ],
     "distinctions": [
-      { "targetTerm": "RBD", "explanation": "PTC classifies who the traveler is for fare eligibility; RBD is the booking class controlling seat inventory and class of service.", "explanation_ko": "PTC는 운임 자격을 위해 여행자가 누구인지를 분류하고, RBD는 좌석 재고와 운송 등급을 제어하는 예약 등급이다." },
-      { "targetTerm": "Fare Basis Code", "explanation": "A PTC is an input that restricts which Fare Basis Codes a passenger can use; the Fare Basis Code identifies the specific priced fare.", "explanation_ko": "PTC는 승객이 사용할 수 있는 Fare Basis Code를 제한하는 입력값이고, Fare Basis Code는 가격이 산정된 특정 운임을 식별한다." }
+      {
+        "targetTerm": "RBD",
+        "explanation": "PTC classifies who the traveler is for fare eligibility; RBD is the booking class controlling seat inventory and class of service.",
+        "explanation_ko": "PTC는 운임 자격을 위해 여행자가 누구인지를 분류하고, RBD는 좌석 재고와 운송 등급을 제어하는 예약 등급이다."
+      },
+      {
+        "targetTerm": "Fare Basis Code",
+        "explanation": "A PTC is an input that restricts which Fare Basis Codes a passenger can use; the Fare Basis Code identifies the specific priced fare.",
+        "explanation_ko": "PTC는 승객이 사용할 수 있는 Fare Basis Code를 제한하는 입력값이고, Fare Basis Code는 가격이 산정된 특정 운임을 식별한다."
+      }
     ],
     "sources": [
-      { "name": "ATPCO Passenger Type Codes", "org": "ATPCO", "version": "", "section": "", "url": "" },
-      { "name": "ATPCO Automated Rules (Category 1 — Eligibility)", "org": "ATPCO", "version": "", "section": "", "url": "" }
+      {
+        "name": "ATPCO Passenger Type Codes",
+        "org": "ATPCO",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "ATPCO Automated Rules (Category 1 — Eligibility)",
+        "org": "ATPCO",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
     ],
-    "lastReviewed": "2026-06-15"
+    "lastReviewed": "2026-06-15",
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"17\" cy=\"15\" r=\"6\"/><path d=\"M7 39c0-6 5-10 10-10s10 4 10 10\"/><path d=\"M30 16h8a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3h-8z\"/><circle cx=\"35\" cy=\"23\" r=\"1.5\" fill=\"currentColor\"/></svg>"
   },
   {
     "id": "frequent-flyer-program",
     "term": "Frequent Flyer Program",
     "term_ko": "상용 고객 우대 프로그램 (FFP)",
     "abbreviation": "FFP",
-    "aliases": ["FFP", "Loyalty Program", "Mileage Program", "Frequent Traveler Program"],
+    "aliases": [
+      "FFP",
+      "Loyalty Program",
+      "Mileage Program",
+      "Frequent Traveler Program"
+    ],
     "category": "customer",
     "conceptType": "business-term",
     "status": "active",
@@ -45,26 +84,59 @@
     "standardBody": "",
     "providerTerms": [],
     "relationships": [
-      { "type": "related", "targetTerm": "Frequent Flyer Number" },
-      { "type": "related", "targetTerm": "Loyalty Tier Status" },
-      { "type": "related", "targetTerm": "Customer Profile" },
-      { "type": "related", "targetTerm": "SSR" }
+      {
+        "type": "related",
+        "targetTerm": "Frequent Flyer Number"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Loyalty Tier Status"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Customer Profile"
+      },
+      {
+        "type": "related",
+        "targetTerm": "SSR"
+      }
     ],
     "distinctions": [
-      { "targetTerm": "Frequent Flyer Number", "explanation": "The Frequent Flyer Program is the loyalty scheme itself; the Frequent Flyer Number is the unique member identifier within that program.", "explanation_ko": "FFP는 로열티 제도 그 자체이고, Frequent Flyer Number는 해당 프로그램 내 고유한 회원 식별자이다." },
-      { "targetTerm": "Loyalty Tier Status", "explanation": "The program defines the rules and benefits; the tier status is an individual member's earned standing inside the program.", "explanation_ko": "프로그램은 규정과 혜택을 정의하고, 등급 상태는 프로그램 안에서 개별 회원이 획득한 위상이다." }
+      {
+        "targetTerm": "Frequent Flyer Number",
+        "explanation": "The Frequent Flyer Program is the loyalty scheme itself; the Frequent Flyer Number is the unique member identifier within that program.",
+        "explanation_ko": "FFP는 로열티 제도 그 자체이고, Frequent Flyer Number는 해당 프로그램 내 고유한 회원 식별자이다."
+      },
+      {
+        "targetTerm": "Loyalty Tier Status",
+        "explanation": "The program defines the rules and benefits; the tier status is an individual member's earned standing inside the program.",
+        "explanation_ko": "프로그램은 규정과 혜택을 정의하고, 등급 상태는 프로그램 안에서 개별 회원이 획득한 위상이다."
+      }
     ],
     "sources": [
-      { "name": "Airline Industry Reservations Interline Message Procedures — Passenger (AIRIMP), FQTV SSR", "org": "IATA", "version": "", "section": "", "url": "" }
+      {
+        "name": "Airline Industry Reservations Interline Message Procedures — Passenger (AIRIMP), FQTV SSR",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
     ],
-    "lastReviewed": "2026-06-15"
+    "lastReviewed": "2026-06-15",
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 7l3.5 7.5L35 16l-5.5 5.5L31 29l-7-3.8L17 29l1.5-7.5L13 16l7.5-1.5z\"/><path d=\"M38 31c4 4 4 9 0 13M10 31c-4 4-4 9 0 13\"/></svg>"
   },
   {
     "id": "frequent-flyer-number",
     "term": "Frequent Flyer Number",
     "term_ko": "상용 고객 번호 (FFN)",
     "abbreviation": "FFN",
-    "aliases": ["FFN", "FQTV Number", "Loyalty Number", "Membership Number", "Frequent Traveler Number"],
+    "aliases": [
+      "FFN",
+      "FQTV Number",
+      "Loyalty Number",
+      "Membership Number",
+      "Frequent Traveler Number"
+    ],
     "category": "customer",
     "conceptType": "code",
     "status": "active",
@@ -75,26 +147,56 @@
     "standardBody": "IATA",
     "providerTerms": [],
     "relationships": [
-      { "type": "child", "targetTerm": "Frequent Flyer Program" },
-      { "type": "related", "targetTerm": "SSR" },
-      { "type": "related", "targetTerm": "Customer Profile" },
-      { "type": "related", "targetTerm": "Loyalty Tier Status" }
+      {
+        "type": "child",
+        "targetTerm": "Frequent Flyer Program"
+      },
+      {
+        "type": "related",
+        "targetTerm": "SSR"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Customer Profile"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Loyalty Tier Status"
+      }
     ],
     "distinctions": [
-      { "targetTerm": "Frequent Flyer Program", "explanation": "The number is the member's account ID; the program is the scheme that issues and governs that account.", "explanation_ko": "번호는 회원의 계정 ID이고, 프로그램은 그 계정을 발급하고 관리하는 제도이다." },
-      { "targetTerm": "SSR", "explanation": "The Frequent Flyer Number is the data value; the FQTV SSR is the message element that carries it into a PNR.", "explanation_ko": "FFN은 데이터 값이고, FQTV SSR은 그 값을 PNR에 전달하는 메시지 요소이다." }
+      {
+        "targetTerm": "Frequent Flyer Program",
+        "explanation": "The number is the member's account ID; the program is the scheme that issues and governs that account.",
+        "explanation_ko": "번호는 회원의 계정 ID이고, 프로그램은 그 계정을 발급하고 관리하는 제도이다."
+      },
+      {
+        "targetTerm": "SSR",
+        "explanation": "The Frequent Flyer Number is the data value; the FQTV SSR is the message element that carries it into a PNR.",
+        "explanation_ko": "FFN은 데이터 값이고, FQTV SSR은 그 값을 PNR에 전달하는 메시지 요소이다."
+      }
     ],
     "sources": [
-      { "name": "Airline Industry Reservations Interline Message Procedures — Passenger (AIRIMP), FQTV SSR", "org": "IATA", "version": "", "section": "", "url": "" }
+      {
+        "name": "Airline Industry Reservations Interline Message Procedures — Passenger (AIRIMP), FQTV SSR",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
     ],
-    "lastReviewed": "2026-06-15"
+    "lastReviewed": "2026-06-15",
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"13\" width=\"36\" height=\"22\" rx=\"3\"/><path d=\"M6 21h36\"/><path d=\"M13 28h6M24 28h4M32 28h4\"/></svg>"
   },
   {
     "id": "iata-one-id",
     "term": "IATA One ID",
     "term_ko": "IATA One ID (디지털 신원)",
     "abbreviation": "",
-    "aliases": ["One ID", "IATA Digital Identity (One ID)"],
+    "aliases": [
+      "One ID",
+      "IATA Digital Identity (One ID)"
+    ],
     "category": "customer",
     "conceptType": "standard-term",
     "status": "active",
@@ -105,26 +207,61 @@
     "standardBody": "IATA",
     "providerTerms": [],
     "relationships": [
-      { "type": "related", "targetTerm": "Customer Profile" },
-      { "type": "related", "targetTerm": "GDPR Consent" },
-      { "type": "related", "targetTerm": "Secure Flight" }
+      {
+        "type": "related",
+        "targetTerm": "Customer Profile"
+      },
+      {
+        "type": "related",
+        "targetTerm": "GDPR Consent"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Secure Flight"
+      }
     ],
     "distinctions": [
-      { "targetTerm": "Secure Flight", "explanation": "One ID is an industry digital-identity and biometric framework for seamless travel; Secure Flight is a US TSA watch-list prescreening program with mandated data fields.", "explanation_ko": "One ID는 매끄러운 여행을 위한 업계의 디지털 신원·생체 인식 프레임워크이고, Secure Flight는 데이터 필드가 의무화된 미국 TSA의 감시 명단 사전 심사 프로그램이다." },
-      { "targetTerm": "Customer Profile", "explanation": "One ID is a verified, biometric digital identity used at airport touchpoints; a Customer Profile is a stored set of traveler data and preferences in a CRS/booking system.", "explanation_ko": "One ID는 공항 접점에서 사용되는 검증된 생체 디지털 신원이고, Customer Profile은 CRS/예약 시스템에 저장된 여행자 데이터와 선호도의 집합이다." }
+      {
+        "targetTerm": "Secure Flight",
+        "explanation": "One ID is an industry digital-identity and biometric framework for seamless travel; Secure Flight is a US TSA watch-list prescreening program with mandated data fields.",
+        "explanation_ko": "One ID는 매끄러운 여행을 위한 업계의 디지털 신원·생체 인식 프레임워크이고, Secure Flight는 데이터 필드가 의무화된 미국 TSA의 감시 명단 사전 심사 프로그램이다."
+      },
+      {
+        "targetTerm": "Customer Profile",
+        "explanation": "One ID is a verified, biometric digital identity used at airport touchpoints; a Customer Profile is a stored set of traveler data and preferences in a CRS/booking system.",
+        "explanation_ko": "One ID는 공항 접점에서 사용되는 검증된 생체 디지털 신원이고, Customer Profile은 CRS/예약 시스템에 저장된 여행자 데이터와 선호도의 집합이다."
+      }
     ],
     "sources": [
-      { "name": "One ID program page", "org": "IATA", "version": "", "section": "", "url": "https://www.iata.org/en/programs/passenger/one-id/" },
-      { "name": "Fact Sheet — One ID", "org": "IATA", "version": "", "section": "", "url": "https://www.iata.org/en/iata-repository/pressroom/fact-sheets/fact-sheet-one-id/" }
+      {
+        "name": "One ID program page",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": "https://www.iata.org/en/programs/passenger/one-id/"
+      },
+      {
+        "name": "Fact Sheet — One ID",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": "https://www.iata.org/en/iata-repository/pressroom/fact-sheets/fact-sheet-one-id/"
+      }
     ],
-    "lastReviewed": "2026-06-15"
+    "lastReviewed": "2026-06-15",
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"10\" width=\"32\" height=\"28\" rx=\"3\"/><circle cx=\"19\" cy=\"21\" r=\"4\"/><path d=\"M13 32c0-4 3-6 6-6s6 2 6 6\"/><path d=\"M30 19h6M30 24h6M30 29h4\"/></svg>"
   },
   {
     "id": "customer-profile",
     "term": "Customer Profile",
     "term_ko": "고객 프로필",
     "abbreviation": "",
-    "aliases": ["Traveler Profile", "Passenger Profile", "Guest Profile", "Profile"],
+    "aliases": [
+      "Traveler Profile",
+      "Passenger Profile",
+      "Guest Profile",
+      "Profile"
+    ],
     "category": "customer",
     "conceptType": "business-term",
     "status": "active",
@@ -135,27 +272,62 @@
     "standardBody": "",
     "providerTerms": [],
     "relationships": [
-      { "type": "related", "targetTerm": "PNR" },
-      { "type": "related", "targetTerm": "Frequent Flyer Number" },
-      { "type": "related", "targetTerm": "GDPR Consent" },
-      { "type": "related", "targetTerm": "IATA One ID" },
-      { "type": "related", "targetTerm": "PMS" }
+      {
+        "type": "related",
+        "targetTerm": "PNR"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Frequent Flyer Number"
+      },
+      {
+        "type": "related",
+        "targetTerm": "GDPR Consent"
+      },
+      {
+        "type": "related",
+        "targetTerm": "IATA One ID"
+      },
+      {
+        "type": "related",
+        "targetTerm": "PMS"
+      }
     ],
     "distinctions": [
-      { "targetTerm": "PNR", "explanation": "A Customer Profile is persistent traveler master data; a PNR is a single trip's reservation record that may be populated from a profile.", "explanation_ko": "Customer Profile은 지속적으로 유지되는 여행자 마스터 데이터이고, PNR은 프로필로부터 채워질 수 있는 단일 여정의 예약 레코드이다." },
-      { "targetTerm": "IATA One ID", "explanation": "A Customer Profile is stored, self-asserted account data; One ID is a verified biometric digital identity used for authentication.", "explanation_ko": "Customer Profile은 본인이 입력해 저장한 계정 데이터이고, One ID는 인증에 사용되는 검증된 생체 디지털 신원이다." }
+      {
+        "targetTerm": "PNR",
+        "explanation": "A Customer Profile is persistent traveler master data; a PNR is a single trip's reservation record that may be populated from a profile.",
+        "explanation_ko": "Customer Profile은 지속적으로 유지되는 여행자 마스터 데이터이고, PNR은 프로필로부터 채워질 수 있는 단일 여정의 예약 레코드이다."
+      },
+      {
+        "targetTerm": "IATA One ID",
+        "explanation": "A Customer Profile is stored, self-asserted account data; One ID is a verified biometric digital identity used for authentication.",
+        "explanation_ko": "Customer Profile은 본인이 입력해 저장한 계정 데이터이고, One ID는 인증에 사용되는 검증된 생체 디지털 신원이다."
+      }
     ],
     "sources": [
-      { "name": "OpenTravel Specification (Profile messages)", "org": "OpenTravel Alliance", "version": "", "section": "", "url": "" }
+      {
+        "name": "OpenTravel Specification (Profile messages)",
+        "org": "OpenTravel Alliance",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
     ],
-    "lastReviewed": "2026-06-15"
+    "lastReviewed": "2026-06-15",
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"18\"/><circle cx=\"24\" cy=\"19\" r=\"6\"/><path d=\"M13 38c0-6 5-10 11-10s11 4 11 10\"/></svg>"
   },
   {
     "id": "loyalty-tier-status",
     "term": "Loyalty Tier Status",
     "term_ko": "로열티 등급 상태 (우수 등급)",
     "abbreviation": "",
-    "aliases": ["Elite Status", "Tier Status", "Membership Tier", "Frequent Flyer Tier"],
+    "aliases": [
+      "Elite Status",
+      "Tier Status",
+      "Membership Tier",
+      "Frequent Flyer Tier"
+    ],
     "category": "customer",
     "conceptType": "business-term",
     "status": "active",
@@ -166,26 +338,60 @@
     "standardBody": "",
     "providerTerms": [],
     "relationships": [
-      { "type": "child", "targetTerm": "Frequent Flyer Program" },
-      { "type": "related", "targetTerm": "Frequent Flyer Number" },
-      { "type": "related", "targetTerm": "Customer Profile" }
+      {
+        "type": "child",
+        "targetTerm": "Frequent Flyer Program"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Frequent Flyer Number"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Customer Profile"
+      }
     ],
     "distinctions": [
-      { "targetTerm": "Frequent Flyer Program", "explanation": "Tier status is one member's earned standing; the program is the overall scheme that defines the tiers.", "explanation_ko": "등급 상태는 한 회원이 획득한 위상이고, 프로그램은 그 등급들을 정의하는 전체 제도이다." },
-      { "targetTerm": "Frequent Flyer Number", "explanation": "The number identifies the account; the tier status is the benefit level attached to that account.", "explanation_ko": "번호는 계정을 식별하고, 등급 상태는 그 계정에 부여된 혜택 수준이다." }
+      {
+        "targetTerm": "Frequent Flyer Program",
+        "explanation": "Tier status is one member's earned standing; the program is the overall scheme that defines the tiers.",
+        "explanation_ko": "등급 상태는 한 회원이 획득한 위상이고, 프로그램은 그 등급들을 정의하는 전체 제도이다."
+      },
+      {
+        "targetTerm": "Frequent Flyer Number",
+        "explanation": "The number identifies the account; the tier status is the benefit level attached to that account.",
+        "explanation_ko": "번호는 계정을 식별하고, 등급 상태는 그 계정에 부여된 혜택 수준이다."
+      }
     ],
     "sources": [
-      { "name": "Star Alliance tier recognition (program documentation)", "org": "Star Alliance", "version": "", "section": "", "url": "" },
-      { "name": "oneworld tier recognition (program documentation)", "org": "oneworld", "version": "", "section": "", "url": "" }
+      {
+        "name": "Star Alliance tier recognition (program documentation)",
+        "org": "Star Alliance",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "oneworld tier recognition (program documentation)",
+        "org": "oneworld",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
     ],
-    "lastReviewed": "2026-06-15"
+    "lastReviewed": "2026-06-15",
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 6l3 6 6 1-4.5 4.5L29.5 24 24 21l-5.5 3 1-6.5L15 13l6-1z\"/><rect x=\"18\" y=\"28\" width=\"12\" height=\"14\"/><rect x=\"6\" y=\"33\" width=\"12\" height=\"9\"/><rect x=\"30\" y=\"33\" width=\"12\" height=\"9\"/></svg>"
   },
   {
     "id": "name-change",
     "term": "Name Change",
     "term_ko": "이름 변경",
     "abbreviation": "",
-    "aliases": ["Name Correction", "Passenger Name Change", "Name Adjustment"],
+    "aliases": [
+      "Name Correction",
+      "Passenger Name Change",
+      "Name Adjustment"
+    ],
     "category": "customer",
     "conceptType": "process",
     "status": "active",
@@ -196,25 +402,53 @@
     "standardBody": "",
     "providerTerms": [],
     "relationships": [
-      { "type": "related", "targetTerm": "PNR" },
-      { "type": "related", "targetTerm": "Reissue" },
-      { "type": "related", "targetTerm": "E-ticket" },
-      { "type": "related", "targetTerm": "Secure Flight" }
+      {
+        "type": "related",
+        "targetTerm": "PNR"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Reissue"
+      },
+      {
+        "type": "related",
+        "targetTerm": "E-ticket"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Secure Flight"
+      }
     ],
     "distinctions": [
-      { "targetTerm": "Reissue", "explanation": "A name change is a data correction that may require ticket action; a reissue is the broader ticketing transaction (often triggered by such changes) that produces a new e-ticket.", "explanation_ko": "이름 변경은 항공권 조치가 필요할 수 있는 데이터 정정이고, 재발행(Reissue)은 이러한 변경으로 흔히 유발되어 새 전자 항공권을 생성하는 보다 포괄적인 발권 거래이다." }
+      {
+        "targetTerm": "Reissue",
+        "explanation": "A name change is a data correction that may require ticket action; a reissue is the broader ticketing transaction (often triggered by such changes) that produces a new e-ticket.",
+        "explanation_ko": "이름 변경은 항공권 조치가 필요할 수 있는 데이터 정정이고, 재발행(Reissue)은 이러한 변경으로 흔히 유발되어 새 전자 항공권을 생성하는 보다 포괄적인 발권 거래이다."
+      }
     ],
     "sources": [
-      { "name": "ATPCO Automated Rules (fare rule conditions)", "org": "ATPCO", "version": "", "section": "", "url": "" }
+      {
+        "name": "ATPCO Automated Rules (fare rule conditions)",
+        "org": "ATPCO",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
     ],
-    "lastReviewed": "2026-06-15"
+    "lastReviewed": "2026-06-15",
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"15\" cy=\"16\" r=\"6\"/><path d=\"M5 38c0-6 4-10 10-10 2 0 4 .5 5.5 1.5\"/><path d=\"M39 26l4 4-11 11-5 1 1-5z\"/></svg>"
   },
   {
     "id": "prm",
     "term": "PRM",
     "term_ko": "거동 불편 승객 (PRM)",
     "abbreviation": "PRM",
-    "aliases": ["Passenger with Reduced Mobility", "Person with Reduced Mobility", "Passengers with Reduced Mobility", "Disabled passenger"],
+    "aliases": [
+      "Passenger with Reduced Mobility",
+      "Person with Reduced Mobility",
+      "Passengers with Reduced Mobility",
+      "Disabled passenger"
+    ],
     "category": "customer",
     "conceptType": "business-term",
     "status": "active",
@@ -225,25 +459,53 @@
     "standardBody": "IATA",
     "providerTerms": [],
     "relationships": [
-      { "type": "related", "targetTerm": "SSR" },
-      { "type": "related", "targetTerm": "OSI" },
-      { "type": "related", "targetTerm": "PNR" }
+      {
+        "type": "related",
+        "targetTerm": "SSR"
+      },
+      {
+        "type": "related",
+        "targetTerm": "OSI"
+      },
+      {
+        "type": "related",
+        "targetTerm": "PNR"
+      }
     ],
     "distinctions": [
-      { "targetTerm": "SSR", "explanation": "PRM is the traveler category/need; SSR codes (e.g. WCHR, BLND) are the standardized messages used to request the corresponding assistance.", "explanation_ko": "PRM은 여행자 범주/요구 사항이고, SSR 코드(예: WCHR, BLND)는 해당 지원을 요청하는 데 사용되는 표준화된 메시지이다." },
-      { "targetTerm": "OSI", "explanation": "PRM assistance requires action via an actionable SSR; OSI carries purely informational, non-actionable remarks.", "explanation_ko": "PRM 지원은 조치가 필요한 SSR을 통한 처리가 요구되고, OSI는 순수하게 정보성이며 조치가 필요 없는 비고를 담는다." }
+      {
+        "targetTerm": "SSR",
+        "explanation": "PRM is the traveler category/need; SSR codes (e.g. WCHR, BLND) are the standardized messages used to request the corresponding assistance.",
+        "explanation_ko": "PRM은 여행자 범주/요구 사항이고, SSR 코드(예: WCHR, BLND)는 해당 지원을 요청하는 데 사용되는 표준화된 메시지이다."
+      },
+      {
+        "targetTerm": "OSI",
+        "explanation": "PRM assistance requires action via an actionable SSR; OSI carries purely informational, non-actionable remarks.",
+        "explanation_ko": "PRM 지원은 조치가 필요한 SSR을 통한 처리가 요구되고, OSI는 순수하게 정보성이며 조치가 필요 없는 비고를 담는다."
+      }
     ],
     "sources": [
-      { "name": "Passenger Services Conference Resolutions Manual (SSR codes)", "org": "IATA", "version": "", "section": "", "url": "" }
+      {
+        "name": "Passenger Services Conference Resolutions Manual (SSR codes)",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
     ],
-    "lastReviewed": "2026-06-15"
+    "lastReviewed": "2026-06-15",
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"22\" cy=\"10\" r=\"4\"/><path d=\"M22 16v12h10\"/><path d=\"M32 42l-4-14\"/><circle cx=\"23\" cy=\"33\" r=\"10\"/></svg>"
   },
   {
     "id": "secure-flight",
     "term": "Secure Flight",
     "term_ko": "Secure Flight (미국 TSA 사전 심사)",
     "abbreviation": "SFPD",
-    "aliases": ["Secure Flight Passenger Data", "SFPD", "Secure Flight Program"],
+    "aliases": [
+      "Secure Flight Passenger Data",
+      "SFPD",
+      "Secure Flight Program"
+    ],
     "category": "customer",
     "conceptType": "process",
     "status": "active",
@@ -254,26 +516,60 @@
     "standardBody": "",
     "providerTerms": [],
     "relationships": [
-      { "type": "related", "targetTerm": "SSR" },
-      { "type": "related", "targetTerm": "Customer Profile" },
-      { "type": "related", "targetTerm": "Name Change" }
+      {
+        "type": "related",
+        "targetTerm": "SSR"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Customer Profile"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Name Change"
+      }
     ],
     "distinctions": [
-      { "targetTerm": "IATA One ID", "explanation": "Secure Flight is a mandatory US government watch-list prescreening program; One ID is a voluntary industry digital-identity/biometric framework for seamless travel.", "explanation_ko": "Secure Flight는 의무적인 미국 정부의 감시 명단 사전 심사 프로그램이고, One ID는 매끄러운 여행을 위한 자발적인 업계의 디지털 신원·생체 인식 프레임워크이다." },
-      { "targetTerm": "Name Change", "explanation": "Secure Flight requires the booked name to match the government ID, which is the common driver of permitted name corrections.", "explanation_ko": "Secure Flight는 예약된 이름이 정부 발급 신분증과 일치하도록 요구하며, 이것이 허용되는 이름 정정의 흔한 유발 요인이다." }
+      {
+        "targetTerm": "IATA One ID",
+        "explanation": "Secure Flight is a mandatory US government watch-list prescreening program; One ID is a voluntary industry digital-identity/biometric framework for seamless travel.",
+        "explanation_ko": "Secure Flight는 의무적인 미국 정부의 감시 명단 사전 심사 프로그램이고, One ID는 매끄러운 여행을 위한 자발적인 업계의 디지털 신원·생체 인식 프레임워크이다."
+      },
+      {
+        "targetTerm": "Name Change",
+        "explanation": "Secure Flight requires the booked name to match the government ID, which is the common driver of permitted name corrections.",
+        "explanation_ko": "Secure Flight는 예약된 이름이 정부 발급 신분증과 일치하도록 요구하며, 이것이 허용되는 이름 정정의 흔한 유발 요인이다."
+      }
     ],
     "sources": [
-      { "name": "49 CFR Part 1560 — Secure Flight Program", "org": "TSA", "version": "", "section": "", "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-XII/subchapter-C/part-1560" },
-      { "name": "Secure Flight Program (Federal Register)", "org": "TSA", "version": "", "section": "", "url": "https://www.federalregister.gov/documents/2008/10/28/E8-25432/secure-flight-program" }
+      {
+        "name": "49 CFR Part 1560 — Secure Flight Program",
+        "org": "TSA",
+        "version": "",
+        "section": "",
+        "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-XII/subchapter-C/part-1560"
+      },
+      {
+        "name": "Secure Flight Program (Federal Register)",
+        "org": "TSA",
+        "version": "",
+        "section": "",
+        "url": "https://www.federalregister.gov/documents/2008/10/28/E8-25432/secure-flight-program"
+      }
     ],
-    "lastReviewed": "2026-06-15"
+    "lastReviewed": "2026-06-15",
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 5l15 5v10c0 11-7 18-15 23-8-5-15-12-15-23V10z\"/><path d=\"M24 14l9 3v6c0 6.5-4 11-9 14-5-3-9-7.5-9-14v-6z\" stroke-width=\"0\"/><path d=\"M28 19l-9 9-4.5-4.5\" stroke-width=\"2.5\"/></svg>"
   },
   {
     "id": "gdpr-consent",
     "term": "GDPR Consent",
     "term_ko": "GDPR 동의 (개인정보 처리 동의)",
     "abbreviation": "",
-    "aliases": ["Data Protection Consent", "Privacy Consent", "GDPR Data Consent"],
+    "aliases": [
+      "Data Protection Consent",
+      "Privacy Consent",
+      "GDPR Data Consent"
+    ],
     "category": "customer",
     "conceptType": "business-term",
     "status": "active",
@@ -284,16 +580,599 @@
     "standardBody": "",
     "providerTerms": [],
     "relationships": [
-      { "type": "related", "targetTerm": "Customer Profile" },
-      { "type": "related", "targetTerm": "IATA One ID" },
-      { "type": "related", "targetTerm": "Frequent Flyer Program" }
+      {
+        "type": "related",
+        "targetTerm": "Customer Profile"
+      },
+      {
+        "type": "related",
+        "targetTerm": "IATA One ID"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Frequent Flyer Program"
+      }
     ],
     "distinctions": [
-      { "targetTerm": "Secure Flight", "explanation": "GDPR Consent is an EU privacy lawful basis for processing personal data; Secure Flight is a US security program that processes data under legal obligation, not consent.", "explanation_ko": "GDPR 동의는 개인정보 처리를 위한 EU 프라이버시상의 적법 근거이고, Secure Flight는 동의가 아닌 법적 의무에 따라 데이터를 처리하는 미국의 보안 프로그램이다." }
+      {
+        "targetTerm": "Secure Flight",
+        "explanation": "GDPR Consent is an EU privacy lawful basis for processing personal data; Secure Flight is a US security program that processes data under legal obligation, not consent.",
+        "explanation_ko": "GDPR 동의는 개인정보 처리를 위한 EU 프라이버시상의 적법 근거이고, Secure Flight는 동의가 아닌 법적 의무에 따라 데이터를 처리하는 미국의 보안 프로그램이다."
+      }
     ],
     "sources": [
-      { "name": "General Data Protection Regulation (EU) 2016/679", "org": "EU", "version": "", "section": "Art. 4(11), Art. 6, Art. 7", "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj" }
+      {
+        "name": "General Data Protection Regulation (EU) 2016/679",
+        "org": "EU",
+        "version": "",
+        "section": "Art. 4(11), Art. 6, Art. 7",
+        "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj"
+      }
     ],
-    "lastReviewed": "2026-06-15"
+    "lastReviewed": "2026-06-15",
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 5l15 5v11c0 11-7 17-15 22-8-5-15-11-15-22V10z\"/><rect x=\"18\" y=\"21\" width=\"12\" height=\"9\" rx=\"1.5\"/><path d=\"M21 21v-3a3 3 0 0 1 6 0v3\"/></svg>"
+  },
+  {
+    "id": "known-traveler-number",
+    "term": "Known Traveler Number",
+    "abbreviation": "KTN",
+    "aliases": [
+      "KTN",
+      "Trusted Traveler ID",
+      "PASS ID"
+    ],
+    "category": "customer",
+    "conceptType": "code",
+    "status": "active",
+    "definition": "A Known Traveler Number (KTN) is a unique identifier issued by the U.S. Transportation Security Administration (TSA) or U.S. Customs and Border Protection (CBP) to travelers approved for a trusted traveler program such as TSA PreCheck, Global Entry, NEXUS, or SENTRI. When entered into an airline reservation, it allows the traveler's eligibility for expedited screening to be vetted through the TSA Secure Flight program and reflected on the boarding pass.",
+    "longDef": "The KTN is stored in the passenger's reservation and passed by the carrier to TSA via the Secure Flight watch-list matching process. For travelers approved through the TSA PreCheck Application Program, the KTN is typically 9 or 10 characters and may combine letters and digits (often prefixed TT, TE, or AC depending on the enrollment provider). For Global Entry, NEXUS, and SENTRI members, the KTN is the CBP-assigned PASS ID, a nine-digit number. The KTN is distinct from a Redress Number: the KTN grants access to expedited screening for low-risk vetted travelers, whereas a Redress Number resolves recurring misidentification problems. In a GDS/PNR context the KTN is generally transmitted to the operating carrier via the Secure Flight SSR (DOCO/Secure Flight passenger data fields) rather than stored only as a free-text remark.",
+    "standardBody": "TSA (U.S. Department of Homeland Security)",
+    "term_ko": "KTN(Known Traveler Number, 신뢰여행자번호)",
+    "definition_ko": "KTN(Known Traveler Number)은 TSA PreCheck, Global Entry, NEXUS, SENTRI 같은 신뢰여행자 프로그램에 승인된 여행자에게 미국 교통보안청(TSA) 또는 세관국경보호청(CBP)이 부여하는 고유 식별번호다. 항공 예약에 입력하면 해당 여행자의 신속 보안검색 자격이 Secure Flight 절차를 통해 확인되어 탑승권에 PreCheck 표시로 반영된다.",
+    "longDef_ko": "KTN은 승객 예약(PNR)에 저장되어 Secure Flight 대조 절차를 통해 항공사가 TSA로 전송한다. TSA PreCheck Application Program 승인자의 KTN은 보통 9~10자리이며 문자와 숫자가 섞일 수 있고(등록 사업자에 따라 TT, TE, AC 등으로 시작), Global Entry/NEXUS/SENTRI 회원의 KTN은 CBP가 부여한 9자리 PASS ID다. KTN은 Redress Number와 다르다. KTN은 저위험으로 사전 심사된 여행자에게 신속 검색 자격을 주는 번호이고, Redress Number는 반복되는 오인 식별 문제를 해결하기 위한 번호다. GDS/PNR에서 KTN은 보통 단순 메모가 아니라 Secure Flight 승객정보(DOCO 등) 항목을 통해 운항 항공사로 전달된다.",
+    "providerTerms": [
+      {
+        "provider": "TSA",
+        "term": "TSA PreCheck",
+        "context": "Expedited screening program whose approval results in issuance of a KTN.",
+        "context_ko": "승인 시 KTN이 발급되는 신속 보안검색 프로그램.",
+        "relationship": "related"
+      },
+      {
+        "provider": "CBP",
+        "term": "PASS ID",
+        "context": "The nine-digit CBP membership number that serves as the KTN for Global Entry, NEXUS and SENTRI members.",
+        "context_ko": "Global Entry/NEXUS/SENTRI 회원에게 KTN 역할을 하는 9자리 CBP 회원번호.",
+        "relationship": "same"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Secure Flight"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Customer Profile"
+      },
+      {
+        "type": "related",
+        "targetTerm": "PNR"
+      },
+      {
+        "type": "contrasts",
+        "targetTerm": "Redress Number"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Redress Number",
+        "explanation": "A KTN grants pre-vetted travelers access to expedited screening, while a Redress Number is issued to travelers who experienced repeated screening difficulties due to misidentification; the two programs are separate and a traveler may hold neither, either, or both.",
+        "explanation_ko": "KTN은 사전 심사된 여행자에게 신속 검색 자격을 주는 번호이고, Redress Number는 오인 식별로 반복적인 검색 문제를 겪은 여행자에게 발급되는 번호다. 두 프로그램은 서로 별개이며 여행자는 둘 다, 하나만, 또는 둘 다 없을 수 있다."
+      },
+      {
+        "targetTerm": "Secure Flight",
+        "explanation": "Secure Flight is the TSA watch-list matching process; the KTN is the data element a traveler supplies so that Secure Flight can confirm trusted-traveler eligibility.",
+        "explanation_ko": "Secure Flight는 TSA의 감시목록 대조 절차이고, KTN은 그 절차가 신뢰여행자 자격을 확인할 수 있도록 여행자가 제공하는 데이터 요소다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "TSA",
+        "name": "What is a Known Traveler Number (KTN)? - Frequently Asked Questions",
+        "version": "",
+        "section": "",
+        "url": "https://www.tsa.gov/travel/frequently-asked-questions/what-known-traveler-number-ktn"
+      },
+      {
+        "org": "TSA",
+        "name": "TSA PreCheck FAQ",
+        "version": "",
+        "section": "",
+        "url": "https://www.tsa.gov/precheck/faq"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"12\" width=\"36\" height=\"24\" rx=\"3\"/><circle cx=\"16\" cy=\"22\" r=\"4\"/><path d=\"M10 32c1-3 4-5 6-5s5 2 6 5\"/><path d=\"M28 20h10\"/><path d=\"M28 26h8\"/><path d=\"M20 16l2 2 3-4\"/></svg>"
+  },
+  {
+    "id": "redress-number",
+    "term": "Redress Number",
+    "abbreviation": "",
+    "aliases": [
+      "DHS TRIP Redress Control Number",
+      "Redress Control Number"
+    ],
+    "category": "customer",
+    "conceptType": "code",
+    "status": "active",
+    "definition": "A Redress Number is a unique identifier issued by the U.S. Department of Homeland Security through the DHS Traveler Redress Inquiry Program (DHS TRIP) to travelers who have repeatedly experienced screening difficulties, such as being misidentified as a person on a watch list. When entered into a reservation, it helps Secure Flight differentiate the traveler from similarly named individuals and reduce false matches.",
+    "longDef": "Travelers apply through DHS TRIP after recurring problems such as denied or delayed boarding, repeated additional screening, or being told their name resembles one on a government watch list. The resulting Redress Control Number is added to the airline reservation (and may be stored in a customer profile) and is transmitted to TSA via Secure Flight to improve identity resolution. The Redress program is administratively separate from trusted-traveler programs; a Redress Number does not confer expedited screening and is unrelated to a Known Traveler Number.",
+    "standardBody": "U.S. Department of Homeland Security (DHS TRIP)",
+    "term_ko": "Redress Number(DHS TRIP 구제번호)",
+    "definition_ko": "Redress Number는 감시목록 인물로 오인되는 등 보안검색에서 반복적으로 어려움을 겪은 여행자에게 미국 국토안보부(DHS)가 DHS TRIP(여행자 구제 문의 프로그램)을 통해 발급하는 고유 식별번호다. 예약에 입력하면 Secure Flight가 동명이인과 해당 여행자를 구분해 오인 매칭을 줄이는 데 도움이 된다.",
+    "longDef_ko": "여행자는 탑승 거부·지연, 반복적인 추가 검색, 또는 자신의 이름이 정부 감시목록의 이름과 유사하다는 통보 같은 문제가 반복될 때 DHS TRIP에 신청한다. 발급된 Redress Control Number는 항공 예약에 입력되고(고객 프로필에도 저장될 수 있음) Secure Flight를 통해 TSA로 전송되어 신원 식별 정확도를 높인다. 구제 프로그램은 신뢰여행자 프로그램과 행정적으로 별개이며, Redress Number는 신속 검색 자격을 주지 않고 KTN과도 무관하다.",
+    "providerTerms": [
+      {
+        "provider": "DHS",
+        "term": "DHS TRIP",
+        "context": "The Traveler Redress Inquiry Program that issues Redress Numbers.",
+        "context_ko": "Redress Number를 발급하는 여행자 구제 문의 프로그램.",
+        "relationship": "broader"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Secure Flight"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Customer Profile"
+      },
+      {
+        "type": "related",
+        "targetTerm": "PNR"
+      },
+      {
+        "type": "contrasts",
+        "targetTerm": "Known Traveler Number"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Known Traveler Number",
+        "explanation": "A Redress Number resolves recurring misidentification and does not provide any screening benefit, whereas a Known Traveler Number grants access to expedited screening; they are separate, unrelated identifiers.",
+        "explanation_ko": "Redress Number는 반복되는 오인 식별을 해소하기 위한 번호로 검색 혜택을 주지 않는 반면, KTN은 신속 검색 자격을 부여한다. 둘은 서로 별개이며 무관한 식별번호다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "U.S. Department of Homeland Security",
+        "name": "DHS TRIP - Frequently Asked Questions",
+        "version": "",
+        "section": "",
+        "url": "https://trip.dhs.gov/s/faq-page"
+      },
+      {
+        "org": "TSA",
+        "name": "Secure Flight Program",
+        "version": "",
+        "section": "",
+        "url": "https://www.tsa.gov/travel/security-screening/secure-flight"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"16\" cy=\"16\" r=\"6\"/><path d=\"M8 36c0-5 4-8 8-8s8 3 8 8\"/><path d=\"M30 18l12 12\"/><path d=\"M42 18L30 30\"/><path d=\"M28 8h12\"/></svg>"
+  },
+  {
+    "id": "unaccompanied-minor",
+    "term": "Unaccompanied Minor",
+    "abbreviation": "UMNR",
+    "aliases": [
+      "UMNR",
+      "UM",
+      "Unaccompanied Minor Service"
+    ],
+    "category": "customer",
+    "conceptType": "code",
+    "status": "active",
+    "definition": "An Unaccompanied Minor (UMNR) is a child travelling by air without an accompanying parent, legal guardian, or responsible adult aged 18 or over, for whom the carrier provides a supervised escort service from departure check-in through to handover to an authorized adult at the destination. UMNR is also the IATA Special Service Request (SSR) code used to advise carriers that a passenger is an unaccompanied minor.",
+    "longDef": "Eligible age ranges and whether the service is mandatory or optional vary by airline, but commonly fall between 5 and 17 years, often with sub-brackets (e.g., 5-7, 8-11, 12-17) that determine fees and service levels. In the reservation, the requirement is conveyed via the UMNR SSR, typically with a free-text element indicating the child's age (for example UM08 for an eight-year-old); the related PADIS-defined code PDUM denotes the chargeable/paid unaccompanied-minor service. Carriers usually also collect the names and contact details of the adults dropping off and collecting the child, sometimes via OSI or contact-detail elements. The service requires a documented handover and is closely tied to a Passenger Type Code identifying the traveler as a child.",
+    "standardBody": "IATA (Passenger Services Conference Resolutions / PADIS)",
+    "term_ko": "비동반 소아(Unaccompanied Minor, UMNR)",
+    "definition_ko": "Unaccompanied Minor(UMNR)는 부모, 법적 보호자 또는 만 18세 이상 책임 동반자 없이 혼자 항공 여행하는 어린이로, 항공사가 출발 체크인부터 도착지에서 지정된 성인에게 인계할 때까지 직원이 동반·감독하는 서비스를 제공하는 대상이다. UMNR은 승객이 비동반 소아임을 항공사에 알리는 IATA SSR(특별서비스요청) 코드이기도 하다.",
+    "longDef_ko": "대상 연령과 서비스의 의무/선택 여부는 항공사마다 다르지만 보통 5~17세 범위이며, 흔히 5-7세, 8-11세, 12-17세 같은 세부 구간으로 나뉘어 요금과 서비스 수준이 정해진다. 예약에서는 UMNR SSR로 요구사항을 전달하며 보통 어린이 나이를 나타내는 자유텍스트(예: 8세는 UM08)를 함께 입력한다. PADIS에 정의된 관련 코드 PDUM은 유료 비동반 소아 서비스를 의미한다. 항공사는 보통 아이를 배웅·인수하는 성인의 이름과 연락처도 함께 수집하며(OSI나 연락처 항목 사용), 서비스에는 문서화된 인계 절차가 따른다. 이 서비스는 승객을 어린이로 식별하는 Passenger Type Code와 밀접하게 연결된다.",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "SSR"
+      },
+      {
+        "type": "related",
+        "targetTerm": "OSI"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Passenger Type Code"
+      },
+      {
+        "type": "related",
+        "targetTerm": "PRM"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "PRM",
+        "explanation": "An Unaccompanied Minor is a child needing supervised escort due to age, signalled by the UMNR SSR, whereas PRM (Passenger with Reduced Mobility) covers assistance needs arising from disability or mobility limitation, signalled by codes such as WCHR; a passenger could in principle require both.",
+        "explanation_ko": "Unaccompanied Minor는 연령 때문에 동반 감독이 필요한 어린이로 UMNR SSR로 표시되는 반면, PRM(거동 불편 승객)은 장애나 이동 제약으로 인한 지원 필요를 WCHR 등의 코드로 표시한다. 한 승객이 원칙적으로 둘 다 필요할 수 있다."
+      },
+      {
+        "targetTerm": "Passenger Type Code",
+        "explanation": "A Passenger Type Code (e.g., CHD) classifies the traveler for pricing/fare purposes, while UMNR is a service request that the child must be escorted; the two are complementary and often both present in a booking.",
+        "explanation_ko": "Passenger Type Code(예: CHD)는 운임·가격 목적의 승객 분류이고, UMNR은 그 어린이를 동반 감독해야 한다는 서비스 요청이다. 둘은 상호 보완적이며 한 예약에 함께 존재하는 경우가 많다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "IATA",
+        "name": "IATA Codeset Directory / Passenger Services Conference Resolutions Manual (SSR codes)",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "org": "Wikipedia",
+        "name": "Unaccompanied minor (passenger)",
+        "version": "",
+        "section": "",
+        "url": "https://en.wikipedia.org/wiki/Unaccompanied_minor_(passenger)"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"20\" cy=\"13\" r=\"5\"/><path d=\"M20 18v14\"/><path d=\"M12 24h16\"/><path d=\"M20 32l-5 8\"/><path d=\"M20 32l5 8\"/><path d=\"M30 10h12\"/><path d=\"M36 6l6 4-6 4\"/></svg>"
+  },
+  {
+    "id": "mileage-accrual",
+    "term": "Mileage Accrual",
+    "abbreviation": "",
+    "aliases": [
+      "Mileage Earning",
+      "Miles Accrual",
+      "Points Accrual",
+      "Earning"
+    ],
+    "category": "customer",
+    "conceptType": "process",
+    "status": "active",
+    "definition": "Mileage accrual is the process by which a frequent flyer program member earns and accumulates miles or points into their loyalty account. Miles are typically credited for flown segments (calculated by distance flown or by fare paid), and through partner activity such as co-branded credit card spend, hotel stays, car rentals, and retail partners.",
+    "longDef": "Accrual rules determine the earning basis: distance-based programs credit miles per mile flown adjusted by a fare-class multiplier, while revenue-based programs credit points as a multiple of the eligible fare paid, often tied to the passenger's loyalty tier. Accrual is recorded against the member's Frequent Flyer Number and may post immediately or after the flight is flown. Accrued balances are the asset that members later draw down through award redemption. Some programs distinguish redeemable miles (spent on awards) from qualifying/status miles (used to attain or retain tier status), so a given activity may accrue one, the other, or both.",
+    "standardBody": "",
+    "term_ko": "마일리지 적립(Mileage Accrual)",
+    "definition_ko": "마일리지 적립(Mileage Accrual)은 상용고객우대(FFP) 회원이 자신의 로열티 계정에 마일 또는 포인트를 적립·누적하는 과정이다. 일반적으로 탑승한 구간(비행 거리 또는 지불 운임 기준 산정)에 대해 마일이 적립되며, 제휴 신용카드 사용, 호텔 숙박, 렌터카, 제휴 가맹점 같은 파트너 활동을 통해서도 적립된다.",
+    "longDef_ko": "적립 규칙이 적립 기준을 정한다. 거리 기반 프로그램은 운임 등급 배수를 반영해 비행 거리당 마일을 적립하고, 매출 기반 프로그램은 회원 등급과 연동해 적격 운임의 일정 배수로 포인트를 적립한다. 적립은 회원의 Frequent Flyer Number에 기록되며 즉시 또는 탑승 후에 반영될 수 있다. 적립된 잔액은 회원이 이후 award redemption(보상 사용)을 통해 사용하는 자산이다. 일부 프로그램은 보상에 쓰는 적립 마일과 등급 달성·유지에 쓰는 자격(등급) 마일을 구분하므로, 하나의 활동이 둘 중 하나만 또는 둘 다 적립할 수 있다.",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Frequent Flyer Program"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Frequent Flyer Number"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Loyalty Tier Status"
+      },
+      {
+        "type": "contrasts",
+        "targetTerm": "Award Redemption"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Award Redemption",
+        "explanation": "Mileage accrual is the earning side of a loyalty account (miles flowing in), whereas award redemption is the spending side (miles flowing out for flights, upgrades, or other rewards).",
+        "explanation_ko": "Mileage accrual은 로열티 계정의 적립(마일이 들어오는) 측면이고, award redemption은 마일을 항공권·업그레이드 등 보상에 쓰는(마일이 빠져나가는) 측면이다."
+      },
+      {
+        "targetTerm": "Loyalty Tier Status",
+        "explanation": "Redeemable miles accrue as spendable currency, while tier/qualifying miles accrue toward earning or retaining status; both can be earned simultaneously but serve different purposes.",
+        "explanation_ko": "적립(사용 가능) 마일은 사용 가능한 통화로 쌓이고, 등급(자격) 마일은 등급 달성·유지를 위해 쌓인다. 둘은 동시에 적립될 수 있지만 목적이 다르다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "Navan",
+        "name": "What are Frequent Flyer Miles? How They Work",
+        "version": "",
+        "section": "",
+        "url": "https://navan.com/resources/glossary/what-is-frequent-flyer-miles"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 38h36\"/><rect x=\"9\" y=\"28\" width=\"6\" height=\"10\"/><rect x=\"21\" y=\"20\" width=\"6\" height=\"18\"/><rect x=\"33\" y=\"12\" width=\"6\" height=\"26\"/><path d=\"M8 22l10-8 8 4 12-12\"/></svg>"
+  },
+  {
+    "id": "award-redemption",
+    "term": "Award Redemption",
+    "abbreviation": "",
+    "aliases": [
+      "Redemption",
+      "Award Booking",
+      "Reward Redemption",
+      "Mileage Redemption"
+    ],
+    "category": "customer",
+    "conceptType": "process",
+    "status": "active",
+    "definition": "Award redemption is the process by which a loyalty program member exchanges accrued miles or points for a reward, most commonly an award flight or cabin upgrade, but also hotel nights, car rentals, or merchandise. The miles required may be set by a fixed award chart keyed to route and cabin, or by dynamic pricing that varies with demand.",
+    "longDef": "When a member redeems for air travel, the program debits the required miles from the account, allocates the seat from a controlled award inventory, and issues a ticket (often with taxes, fees, and carrier-imposed surcharges payable separately). Award inventory is managed through the carrier's revenue management system and may be released into specific award booking classes. Redemptions can also be made on partner airlines within an alliance or bilateral agreement. Award redemption is the spending counterpart to mileage accrual: it draws down the redeemable balance built up through earning.",
+    "standardBody": "",
+    "term_ko": "보상 사용/award redemption(마일 사용)",
+    "definition_ko": "Award redemption은 로열티 프로그램 회원이 적립한 마일 또는 포인트를 보상으로 교환하는 과정으로, 가장 흔히 보너스 항공권이나 좌석 업그레이드가 있으며 호텔 숙박, 렌터카, 상품으로도 교환할 수 있다. 필요한 마일은 노선·좌석 등급별 고정 보상 차트로 정해지거나 수요에 따라 변동하는 동적 가격으로 정해진다.",
+    "longDef_ko": "회원이 항공 여행으로 사용하면 프로그램은 계정에서 필요한 마일을 차감하고 통제된 보상 좌석 재고에서 좌석을 배정한 뒤 항공권을 발권한다(세금·수수료·유류할증료 등은 별도 결제하는 경우가 많다). 보상 좌석 재고는 항공사 수익관리 시스템으로 관리되며 특정 보상 예약 클래스로 풀릴 수 있다. 동맹체나 양자 협정 내 제휴 항공사에서도 사용할 수 있다. Award redemption은 mileage accrual의 사용 측면으로, 적립으로 쌓인 사용 가능 잔액을 차감한다.",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Frequent Flyer Program"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Frequent Flyer Number"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Availability"
+      },
+      {
+        "type": "related",
+        "targetTerm": "RBD"
+      },
+      {
+        "type": "contrasts",
+        "targetTerm": "Mileage Accrual"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Mileage Accrual",
+        "explanation": "Award redemption spends the loyalty balance to obtain a reward, whereas mileage accrual earns and adds to that balance; the two are opposite flows in the same account.",
+        "explanation_ko": "Award redemption은 보상을 얻기 위해 로열티 잔액을 사용하는 것이고, mileage accrual은 그 잔액을 적립·증가시키는 것이다. 둘은 같은 계정에서 반대 방향의 흐름이다."
+      },
+      {
+        "targetTerm": "Companion",
+        "explanation": "An award redemption is paid for entirely with miles/points, whereas a companion benefit (e.g., a companion fare) typically discounts or waives the fare for a second paying-style ticket and is not itself a miles redemption.",
+        "explanation_ko": "Award redemption은 전적으로 마일/포인트로 결제하는 반면, companion 혜택(예: companion fare)은 보통 두 번째 동반자 항공권의 운임을 할인·면제하는 것으로 그 자체가 마일 사용은 아니다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "Navan",
+        "name": "What are Frequent Flyer Miles? How They Work",
+        "version": "",
+        "section": "",
+        "url": "https://navan.com/resources/glossary/what-is-frequent-flyer-miles"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"16\" cy=\"16\" r=\"9\"/><path d=\"M16 11l1.6 3.3 3.6.5-2.6 2.5.6 3.6-3.2-1.7-3.2 1.7.6-3.6-2.6-2.5 3.6-.5z\"/><path d=\"M26 26l12 12\"/><path d=\"M38 31v7h-7\"/></svg>"
+  },
+  {
+    "id": "companion",
+    "term": "Companion",
+    "abbreviation": "",
+    "aliases": [
+      "Companion Fare",
+      "Companion Pass",
+      "Companion Ticket",
+      "Companion Certificate"
+    ],
+    "category": "customer",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "In loyalty and customer terms, a companion is a second guest who travels together with a member on the same itinerary, often under a companion benefit such as a companion fare, companion pass, or companion certificate that lets the guest fly free or at a steep discount (typically paying only applicable taxes, fees, and surcharges). Such benefits are offered as loyalty perks or co-branded credit card rewards.",
+    "longDef": "Companion benefits take several forms: a companion fare or certificate offering a deeply discounted or near-free second ticket, usually once per eligibility period; a companion pass allowing a designated companion to be added repeatedly over a period. The companion generally must be booked on the same flights as the primary member, and the benefit is conditioned on the member purchasing or holding a qualifying revenue ticket. Brand names vary by carrier (for example, the British Airways 'Travel Together Ticket'). The companion is recorded in the same booking and may be linked to the primary traveler in their customer/loyalty profile.",
+    "standardBody": "",
+    "term_ko": "동반자(Companion / Companion Fare)",
+    "definition_ko": "로열티·고객 관점에서 companion은 회원과 같은 일정으로 함께 여행하는 두 번째 동반 게스트로, 흔히 companion fare(동반자 운임), companion pass, companion certificate 같은 동반자 혜택을 통해 게스트가 무료 또는 큰 할인(대개 세금·수수료·할증료만 부담)으로 탑승한다. 이러한 혜택은 로열티 특전이나 제휴 신용카드 보상으로 제공된다.",
+    "longDef_ko": "동반자 혜택은 여러 형태가 있다. 보통 자격 기간당 1회, 큰 할인 또는 거의 무료인 두 번째 항공권을 주는 companion fare/certificate가 있고, 일정 기간 동안 지정 동반자를 반복해서 추가할 수 있는 companion pass가 있다. 동반자는 일반적으로 주 회원과 같은 항공편으로 예약되어야 하며, 혜택은 회원이 적격 유상 항공권을 구매·보유하는 것을 조건으로 한다. 명칭은 항공사마다 다르다(예: British Airways의 'Travel Together Ticket'). 동반자는 같은 예약에 기록되며 고객/로열티 프로필에서 주 여행자와 연결될 수 있다.",
+    "providerTerms": [
+      {
+        "provider": "British Airways",
+        "term": "Travel Together Ticket",
+        "context": "British Airways' branded companion benefit that provides a second seat of equal value for taxes, fees, and carrier charges only.",
+        "context_ko": "동일 가치의 두 번째 좌석을 세금·수수료·항공사 부과금만으로 제공하는 British Airways의 동반자 혜택 브랜드.",
+        "relationship": "narrower"
+      },
+      {
+        "provider": "Southwest Airlines",
+        "term": "Companion Pass",
+        "context": "Southwest Rapid Rewards benefit letting a designated companion fly with the member for taxes and fees on paid and award travel during the qualifying period.",
+        "context_ko": "자격 기간 동안 지정 동반자가 유상·보상 여행 모두에서 세금·수수료만으로 함께 탑승하게 해주는 Southwest Rapid Rewards 혜택.",
+        "relationship": "narrower"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Frequent Flyer Program"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Loyalty Tier Status"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Customer Profile"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Passenger Type Code"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Award Redemption",
+        "explanation": "A companion benefit discounts or waives the fare of a second ticket tied to a member's paid travel, while award redemption pays for a reward entirely with accrued miles or points; the two are distinct mechanisms though both are loyalty perks.",
+        "explanation_ko": "Companion 혜택은 회원의 유상 여행에 연결된 두 번째 항공권의 운임을 할인·면제하는 것이고, award redemption은 적립한 마일·포인트만으로 보상 비용을 전액 결제하는 것이다. 둘 다 로열티 특전이지만 작동 방식이 다르다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "American Express",
+        "name": "Your Guide to Airline Companion Tickets",
+        "version": "",
+        "section": "",
+        "url": "https://www.americanexpress.com/en-us/credit-cards/credit-intel/free-companion-ticket/"
+      },
+      {
+        "org": "Southwest Airlines",
+        "name": "Companion Pass - Rapid Rewards",
+        "version": "",
+        "section": "",
+        "url": "https://www.southwest.com/rapid-rewards/tiers/companion-pass/"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"17\" cy=\"15\" r=\"5\"/><circle cx=\"32\" cy=\"17\" r=\"4\"/><path d=\"M8 38c0-6 4-10 9-10s9 4 9 10\"/><path d=\"M28 38c0-5 3-8 7-8 3 0 5 2 6 5\"/></svg>"
+  },
+  {
+    "id": "traveler-preference",
+    "term": "Traveler Preference",
+    "abbreviation": "",
+    "aliases": [
+      "Travel Preference",
+      "Guest Preference",
+      "Passenger Preference"
+    ],
+    "category": "customer",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "A traveler preference is a stored, non-mandatory attribute describing how a traveler prefers to be served, such as seat choice (aisle/window), special meal, room type, bedding, cabin, language, or preferred suppliers. Preferences are held in a customer or guest profile and applied to bookings to personalize the experience, distinct from regulatory or safety requirements.",
+    "longDef": "Preferences are captured in customer profiles in a GDS, airline CRS, or hotel PMS/CRM and may be transmitted into bookings, for instance an aisle-seat preference, a vegetarian meal, or a high-floor non-smoking room. In airline distribution, comfort or service preferences such as seating and meals are often realized through Special Service Requests (SSR) or seat requests, while non-actionable information may be carried as OSI. The OpenTravel Alliance and HTNG define profile and preference data structures that allow preferences to be exchanged between systems. Preferences are advisory and subject to availability, in contrast to a PRM assistance need or a Secure Flight data requirement, which are obligations rather than wishes.",
+    "standardBody": "OpenTravel Alliance",
+    "term_ko": "여행자 선호(Traveler Preference)",
+    "definition_ko": "Traveler Preference(여행자 선호)는 좌석 선택(통로/창측), 특별식, 객실 유형, 침구, 좌석 등급, 언어, 선호 공급사 등 여행자가 어떻게 서비스받기를 원하는지를 기술하는, 저장된 비필수 속성이다. 선호는 고객 또는 게스트 프로필에 보관되며 예약에 반영되어 경험을 개인화하는데, 규제나 안전상의 요구사항과는 구별된다.",
+    "longDef_ko": "선호는 GDS, 항공사 CRS, 호텔 PMS/CRM의 고객 프로필에 수집되어 예약으로 전달될 수 있다(예: 통로 좌석 선호, 채식, 고층·금연 객실). 항공 유통에서 좌석·기내식 같은 편의/서비스 선호는 흔히 SSR(특별서비스요청)이나 좌석 요청으로 구현되며, 조치가 필요 없는 정보는 OSI로 전달될 수 있다. OpenTravel Alliance와 HTNG는 시스템 간 선호를 교환할 수 있도록 프로필·선호 데이터 구조를 정의한다. 선호는 권고적이며 가용성에 따라 달라진다는 점에서, 의무에 해당하는 PRM 지원 필요나 Secure Flight 데이터 요구와 대비된다.",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "child",
+        "targetTerm": "Customer Profile"
+      },
+      {
+        "type": "related",
+        "targetTerm": "SSR"
+      },
+      {
+        "type": "related",
+        "targetTerm": "OSI"
+      },
+      {
+        "type": "related",
+        "targetTerm": "OpenTravel Alliance"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Room Type"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "SSR",
+        "explanation": "A traveler preference is stored profile data describing a wish, while an SSR is the actionable message that conveys a specific request to a carrier within a booking; preferences are often the source that drives creation of SSRs but are not themselves a transmitted request until applied.",
+        "explanation_ko": "Traveler preference는 바람을 기술한 저장 프로필 데이터이고, SSR은 예약 내에서 특정 요청을 항공사에 전달하는 실행 가능한 메시지다. 선호는 흔히 SSR 생성을 유발하는 원천이지만, 적용되기 전까지는 그 자체가 전송된 요청은 아니다."
+      },
+      {
+        "targetTerm": "PRM",
+        "explanation": "A traveler preference is advisory and best-effort (e.g., a window seat), whereas a PRM assistance need is a service obligation the carrier must fulfill; they are governed by different rules and priorities.",
+        "explanation_ko": "Traveler preference는 권고적이고 최선노력 대상(예: 창측 좌석)인 반면, PRM 지원 필요는 항공사가 반드시 이행해야 하는 서비스 의무다. 둘은 적용 규칙과 우선순위가 다르다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "OpenTravel Alliance",
+        "name": "OpenTravel Specifications (Profile / Preferences messages)",
+        "version": "",
+        "section": "",
+        "url": "https://opentravel.org/"
+      },
+      {
+        "org": "HTNG (Hospitality Technology Next Generation)",
+        "name": "HTNG Customer Profile / Preferences specifications",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"15\" r=\"6\"/><path d=\"M12 38c0-7 5-12 12-12s12 5 12 12\"/><path d=\"M33 9l1.4 2.9 3.1.4-2.3 2.1.6 3.1-2.8-1.5-2.8 1.5.6-3.1-2.3-2.1 3.1-.4z\"/></svg>"
+  },
+  {
+    "id": "corporate-profile",
+    "term": "Corporate Profile",
+    "abbreviation": "",
+    "aliases": [
+      "Company Profile",
+      "Account Profile",
+      "Corporate Account Profile"
+    ],
+    "category": "customer",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "A corporate profile is a stored record in a GDS, agency mid-office, or travel management system that holds an organization's travel data, including negotiated/contracted fares and rates, travel policy rules, billing and cost-center information, and default booking parameters. It governs how bookings for that company's travelers are priced and processed, and is typically linked to individual traveler profiles within the account.",
+    "longDef": "In GDS systems (e.g., Amadeus, Sabre, Travelport), profiles are commonly organized hierarchically, with a company/corporate profile holding account-level data such as negotiated airline and hotel rates, form-of-payment and billing instructions, approval and policy rules, and reporting attributes, and individual traveler profiles inheriting from it. The corporate profile is the mechanism by which contracted corporate fares and preferred-supplier programs are automatically applied during shopping and booking. It supports managed travel by enforcing policy and capturing data for duty-of-care and expense reporting. It is distinct from an individual Customer Profile, which holds personal traveler data and preferences.",
+    "standardBody": "",
+    "term_ko": "기업 프로필(Corporate Profile)",
+    "definition_ko": "Corporate Profile(기업 프로필)은 GDS, 여행사 미드오피스, 또는 출장관리 시스템에 저장된 기업의 여행 데이터 기록으로, 협상(계약) 운임·요율, 출장 정책 규칙, 청구·코스트센터 정보, 기본 예약 파라미터 등을 담는다. 해당 기업 여행자의 예약이 어떻게 가격 책정·처리되는지를 규율하며, 보통 그 계정 내 개별 여행자 프로필과 연결된다.",
+    "longDef_ko": "GDS(예: Amadeus, Sabre, Travelport)에서 프로필은 흔히 계층 구조로 구성되며, 회사/기업 프로필이 협상된 항공·호텔 요율, 결제수단·청구 지시, 승인·정책 규칙, 리포팅 속성 같은 계정 단위 데이터를 보유하고 개별 여행자 프로필이 이를 상속한다. 기업 프로필은 계약된 기업 운임과 우선 공급사 프로그램이 조회·예약 과정에서 자동 적용되게 하는 수단이다. 정책을 강제하고 의무관리(duty of care)·경비 보고용 데이터를 수집하여 관리형 출장(managed travel)을 지원한다. 개인 여행자 데이터와 선호를 담는 개별 Customer Profile과는 구별된다.",
+    "providerTerms": [
+      {
+        "provider": "Amadeus",
+        "term": "Amadeus Customer Profiles (company / traveller profiles)",
+        "context": "Hierarchical profile structure in which a company profile holds account-level data and traveller profiles inherit from it.",
+        "context_ko": "회사 프로필이 계정 단위 데이터를 보유하고 여행자 프로필이 이를 상속하는 계층형 프로필 구조.",
+        "relationship": "related"
+      },
+      {
+        "provider": "Sabre",
+        "term": "Sabre Profiles (Travel Journey Record / agency profiles)",
+        "context": "Stores corporate account and traveler data including negotiated rates and policy used during booking.",
+        "context_ko": "협상 요율과 정책 등 기업 계정·여행자 데이터를 저장해 예약 시 사용.",
+        "relationship": "related"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Customer Profile"
+      },
+      {
+        "type": "related",
+        "targetTerm": "GDS"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Traveler Preference"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Fare Basis Code"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Customer Profile",
+        "explanation": "A Customer Profile holds an individual traveler's personal data, identifiers, and preferences, whereas a Corporate Profile holds organization-level data such as negotiated fares, billing, and policy; in managed travel a traveler profile is typically nested under and inherits from the corporate profile.",
+        "explanation_ko": "Customer Profile은 개별 여행자의 개인 데이터·식별자·선호를 담고, Corporate Profile은 협상 운임·청구·정책 같은 조직 단위 데이터를 담는다. 관리형 출장에서는 여행자 프로필이 보통 기업 프로필 하위에 속해 이를 상속한다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "Navan",
+        "name": "What Is GDS (Global Distribution System)? Guide",
+        "version": "",
+        "section": "",
+        "url": "https://navan.com/resources/glossary/gds-global-distribution-system"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"10\" width=\"20\" height=\"30\" rx=\"2\"/><path d=\"M28 18h12v22H28\"/><path d=\"M13 16h4\"/><path d=\"M13 22h4\"/><path d=\"M13 28h4\"/><path d=\"M33 24h3\"/><path d=\"M33 30h3\"/><path d=\"M8 40h36\"/></svg>"
   }
 ]

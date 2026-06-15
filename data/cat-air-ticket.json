@@ -4,7 +4,11 @@
     "term": "E-ticket",
     "term_ko": "전자항공권 (E-ticket)",
     "abbreviation": "ET",
-    "aliases": ["Electronic Ticket", "ETKT", "Electronic Ticketing"],
+    "aliases": [
+      "Electronic Ticket",
+      "ETKT",
+      "Electronic Ticketing"
+    ],
     "category": "air-ticket",
     "conceptType": "document",
     "status": "active",
@@ -15,29 +19,72 @@
     "standardBody": "IATA",
     "providerTerms": [],
     "relationships": [
-      {"type": "parent", "targetTerm": "Flight Coupon"},
-      {"type": "related", "targetTerm": "EMD"},
-      {"type": "related", "targetTerm": "Validating Carrier"},
-      {"type": "related", "targetTerm": "BSP"},
-      {"type": "related", "targetTerm": "PNR"}
+      {
+        "type": "parent",
+        "targetTerm": "Flight Coupon"
+      },
+      {
+        "type": "related",
+        "targetTerm": "EMD"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Validating Carrier"
+      },
+      {
+        "type": "related",
+        "targetTerm": "BSP"
+      },
+      {
+        "type": "related",
+        "targetTerm": "PNR"
+      }
     ],
     "distinctions": [
-      {"targetTerm": "EMD", "explanation": "E-ticket documents flight transportation; EMD documents ancillary services, fees, and non-air charges.", "explanation_ko": "전자항공권은 항공 운송을 증빙하고, EMD는 부가 서비스, 수수료 및 비항공 요금을 증빙한다."},
-      {"targetTerm": "PNR", "explanation": "PNR is the reservation record; the e-ticket is the issued transport document that fulfills it.", "explanation_ko": "PNR은 예약 기록이며, 전자항공권은 이를 이행하기 위해 발권된 운송 서류이다."},
-      {"targetTerm": "Flight Coupon", "explanation": "A flight coupon is one redeemable component within an e-ticket; a single e-ticket may hold up to four coupons.", "explanation_ko": "Flight Coupon은 전자항공권 내에서 사용 가능한 하나의 구성 요소이며, 단일 전자항공권은 최대 4개의 쿠폰을 보유할 수 있다."}
+      {
+        "targetTerm": "EMD",
+        "explanation": "E-ticket documents flight transportation; EMD documents ancillary services, fees, and non-air charges.",
+        "explanation_ko": "전자항공권은 항공 운송을 증빙하고, EMD는 부가 서비스, 수수료 및 비항공 요금을 증빙한다."
+      },
+      {
+        "targetTerm": "PNR",
+        "explanation": "PNR is the reservation record; the e-ticket is the issued transport document that fulfills it.",
+        "explanation_ko": "PNR은 예약 기록이며, 전자항공권은 이를 이행하기 위해 발권된 운송 서류이다."
+      },
+      {
+        "targetTerm": "Flight Coupon",
+        "explanation": "A flight coupon is one redeemable component within an e-ticket; a single e-ticket may hold up to four coupons.",
+        "explanation_ko": "Flight Coupon은 전자항공권 내에서 사용 가능한 하나의 구성 요소이며, 단일 전자항공권은 최대 4개의 쿠폰을 보유할 수 있다."
+      }
     ],
     "sources": [
-      {"name": "Electronic Ticketing", "org": "IATA", "version": "", "section": "", "url": ""},
-      {"name": "Passenger Services Conference Resolutions Manual (PSCRM)", "org": "IATA", "version": "", "section": "", "url": ""}
+      {
+        "name": "Electronic Ticketing",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Passenger Services Conference Resolutions Manual (PSCRM)",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
     ],
-    "lastReviewed": "2026-06-15"
+    "lastReviewed": "2026-06-15",
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"14\" width=\"36\" height=\"20\" rx=\"3\"/><path d=\"M22 14v20\"/><path d=\"M22 19v2M22 25v2M22 31v0\"/><path d=\"M28 21h8M28 27h6\"/><path d=\"M11 24h6\"/></svg>"
   },
   {
     "id": "flight-coupon",
     "term": "Flight Coupon",
     "term_ko": "비행 쿠폰 (Flight Coupon)",
     "abbreviation": "",
-    "aliases": ["Coupon", "Electronic Flight Coupon"],
+    "aliases": [
+      "Coupon",
+      "Electronic Flight Coupon"
+    ],
     "category": "air-ticket",
     "conceptType": "document",
     "status": "active",
@@ -48,26 +95,57 @@
     "standardBody": "IATA",
     "providerTerms": [],
     "relationships": [
-      {"type": "child", "targetTerm": "E-ticket"},
-      {"type": "related", "targetTerm": "Segment"},
-      {"type": "related", "targetTerm": "Reissue"},
-      {"type": "related", "targetTerm": "Refund"}
+      {
+        "type": "child",
+        "targetTerm": "E-ticket"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Segment"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Reissue"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Refund"
+      }
     ],
     "distinctions": [
-      {"targetTerm": "Segment", "explanation": "A segment is the reservation/operational unit of travel; a flight coupon is the corresponding revenue/entitlement portion of the ticket.", "explanation_ko": "Segment는 여행의 예약/운항 단위이며, Flight Coupon은 이에 대응하는 항공권의 수익/권리 부분이다."},
-      {"targetTerm": "E-ticket", "explanation": "The e-ticket is the whole document; a flight coupon is one of its (up to four) usable parts.", "explanation_ko": "전자항공권은 서류 전체이며, Flight Coupon은 그 안에서 사용 가능한 (최대 4개의) 부분 중 하나이다."}
+      {
+        "targetTerm": "Segment",
+        "explanation": "A segment is the reservation/operational unit of travel; a flight coupon is the corresponding revenue/entitlement portion of the ticket.",
+        "explanation_ko": "Segment는 여행의 예약/운항 단위이며, Flight Coupon은 이에 대응하는 항공권의 수익/권리 부분이다."
+      },
+      {
+        "targetTerm": "E-ticket",
+        "explanation": "The e-ticket is the whole document; a flight coupon is one of its (up to four) usable parts.",
+        "explanation_ko": "전자항공권은 서류 전체이며, Flight Coupon은 그 안에서 사용 가능한 (최대 4개의) 부분 중 하나이다."
+      }
     ],
     "sources": [
-      {"name": "Passenger Services Conference Resolutions Manual (PSCRM)", "org": "IATA", "version": "", "section": "", "url": ""}
+      {
+        "name": "Passenger Services Conference Resolutions Manual (PSCRM)",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
     ],
-    "lastReviewed": "2026-06-15"
+    "lastReviewed": "2026-06-15",
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M7 16h34v6a3 3 0 000 6v6H7v-6a3 3 0 000-6z\"/><path d=\"M20 16v3M20 24v3M20 29v3\"/><path d=\"M27 22l4 4 8-9\"/></svg>"
   },
   {
     "id": "emd",
     "term": "EMD",
     "term_ko": "전자 기타 서류 (EMD)",
     "abbreviation": "EMD",
-    "aliases": ["Electronic Miscellaneous Document", "EMD-A", "EMD-S"],
+    "aliases": [
+      "Electronic Miscellaneous Document",
+      "EMD-A",
+      "EMD-S"
+    ],
     "category": "air-ticket",
     "conceptType": "document",
     "status": "active",
@@ -78,27 +156,64 @@
     "standardBody": "IATA",
     "providerTerms": [],
     "relationships": [
-      {"type": "related", "targetTerm": "E-ticket"},
-      {"type": "related", "targetTerm": "Ancillary Service"},
-      {"type": "related", "targetTerm": "BSP"},
-      {"type": "related", "targetTerm": "Refund"}
+      {
+        "type": "related",
+        "targetTerm": "E-ticket"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Ancillary Service"
+      },
+      {
+        "type": "related",
+        "targetTerm": "BSP"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Refund"
+      }
     ],
     "distinctions": [
-      {"targetTerm": "E-ticket", "explanation": "E-ticket documents flight carriage; EMD documents ancillary/non-flight charges and fees.", "explanation_ko": "전자항공권은 항공 운송을 증빙하고, EMD는 부가/비항공 요금 및 수수료를 증빙한다."},
-      {"targetTerm": "Ancillary Service", "explanation": "Ancillary Service is the product sold (e.g., a paid bag); the EMD is the document that fulfills and settles it.", "explanation_ko": "Ancillary Service는 판매되는 상품(예: 유료 수하물)이며, EMD는 이를 이행하고 정산하는 서류이다."}
+      {
+        "targetTerm": "E-ticket",
+        "explanation": "E-ticket documents flight carriage; EMD documents ancillary/non-flight charges and fees.",
+        "explanation_ko": "전자항공권은 항공 운송을 증빙하고, EMD는 부가/비항공 요금 및 수수료를 증빙한다."
+      },
+      {
+        "targetTerm": "Ancillary Service",
+        "explanation": "Ancillary Service is the product sold (e.g., a paid bag); the EMD is the document that fulfills and settles it.",
+        "explanation_ko": "Ancillary Service는 판매되는 상품(예: 유료 수하물)이며, EMD는 이를 이행하고 정산하는 서류이다."
+      }
     ],
     "sources": [
-      {"name": "Electronic Miscellaneous Document (EMD)", "org": "IATA", "version": "", "section": "", "url": ""},
-      {"name": "Passenger Services Conference Resolutions Manual (PSCRM)", "org": "IATA", "version": "", "section": "", "url": ""}
+      {
+        "name": "Electronic Miscellaneous Document (EMD)",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Passenger Services Conference Resolutions Manual (PSCRM)",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
     ],
-    "lastReviewed": "2026-06-15"
+    "lastReviewed": "2026-06-15",
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"10\" width=\"32\" height=\"28\" rx=\"3\"/><path d=\"M8 18h32\"/><path d=\"M14 25h8M14 30h12\"/><circle cx=\"31\" cy=\"29\" r=\"4\"/><path d=\"M31 27v4M29.5 28.5h3\"/></svg>"
   },
   {
     "id": "reissue",
     "term": "Reissue",
     "term_ko": "재발행 (Reissue)",
     "abbreviation": "",
-    "aliases": ["Exchange", "Ticket Exchange", "Reissuance"],
+    "aliases": [
+      "Exchange",
+      "Ticket Exchange",
+      "Reissuance"
+    ],
     "category": "air-ticket",
     "conceptType": "process",
     "status": "active",
@@ -109,29 +224,70 @@
     "standardBody": "IATA",
     "providerTerms": [],
     "relationships": [
-      {"type": "related", "targetTerm": "E-ticket"},
-      {"type": "related", "targetTerm": "Flight Coupon"},
-      {"type": "related", "targetTerm": "Refund"},
-      {"type": "related", "targetTerm": "Void"},
-      {"type": "contrasts", "targetTerm": "Involuntary Reissue"},
-      {"type": "related", "targetTerm": "Fare Basis Code"}
+      {
+        "type": "related",
+        "targetTerm": "E-ticket"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Flight Coupon"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Refund"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Void"
+      },
+      {
+        "type": "contrasts",
+        "targetTerm": "Involuntary Reissue"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Fare Basis Code"
+      }
     ],
     "distinctions": [
-      {"targetTerm": "Involuntary Reissue", "explanation": "Voluntary reissue is passenger-requested and subject to fare-rule penalties; involuntary reissue results from airline-caused changes and typically waives penalties.", "explanation_ko": "자발적 재발행은 승객 요청에 의한 것으로 운임 규정상의 위약금이 적용되며, 비자발적 재발행은 항공사 사유에 의한 변경에서 비롯되어 일반적으로 위약금이 면제된다."},
-      {"targetTerm": "Refund", "explanation": "Reissue exchanges the ticket for new travel; refund returns the ticket's value rather than re-issuing transportation.", "explanation_ko": "재발행은 항공권을 새로운 여행으로 교환하며, 환불은 운송을 재발행하는 대신 항공권의 가치를 반환한다."},
-      {"targetTerm": "Void", "explanation": "Void cancels an issuance within the same sales period leaving no reportable sale; reissue creates a new document and marks the old coupons as exchanged.", "explanation_ko": "Void는 동일한 판매 기간 내에 발권을 취소하여 보고할 판매 내역을 남기지 않으며, 재발행은 새 서류를 생성하고 기존 쿠폰을 교환됨(exchanged)으로 표시한다."}
+      {
+        "targetTerm": "Involuntary Reissue",
+        "explanation": "Voluntary reissue is passenger-requested and subject to fare-rule penalties; involuntary reissue results from airline-caused changes and typically waives penalties.",
+        "explanation_ko": "자발적 재발행은 승객 요청에 의한 것으로 운임 규정상의 위약금이 적용되며, 비자발적 재발행은 항공사 사유에 의한 변경에서 비롯되어 일반적으로 위약금이 면제된다."
+      },
+      {
+        "targetTerm": "Refund",
+        "explanation": "Reissue exchanges the ticket for new travel; refund returns the ticket's value rather than re-issuing transportation.",
+        "explanation_ko": "재발행은 항공권을 새로운 여행으로 교환하며, 환불은 운송을 재발행하는 대신 항공권의 가치를 반환한다."
+      },
+      {
+        "targetTerm": "Void",
+        "explanation": "Void cancels an issuance within the same sales period leaving no reportable sale; reissue creates a new document and marks the old coupons as exchanged.",
+        "explanation_ko": "Void는 동일한 판매 기간 내에 발권을 취소하여 보고할 판매 내역을 남기지 않으며, 재발행은 새 서류를 생성하고 기존 쿠폰을 교환됨(exchanged)으로 표시한다."
+      }
     ],
     "sources": [
-      {"name": "Passenger Services Conference Resolutions Manual (PSCRM)", "org": "IATA", "version": "", "section": "", "url": ""}
+      {
+        "name": "Passenger Services Conference Resolutions Manual (PSCRM)",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
     ],
-    "lastReviewed": "2026-06-15"
+    "lastReviewed": "2026-06-15",
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"12\" width=\"28\" height=\"18\" rx=\"3\"/><path d=\"M16 18h10M16 23h6\"/><path d=\"M38 38a14 14 0 01-22-3\"/><path d=\"M16 41v-6h6\"/><path d=\"M10 33a14 14 0 0122 3\"/><path d=\"M32 30v6h-6\"/></svg>"
   },
   {
     "id": "involuntary-reissue",
     "term": "Involuntary Reissue",
     "term_ko": "비자발적 재발행 (Involuntary Reissue)",
     "abbreviation": "",
-    "aliases": ["Involuntary Exchange", "INVOL Reissue", "Involuntary Rerouting"],
+    "aliases": [
+      "Involuntary Exchange",
+      "INVOL Reissue",
+      "Involuntary Rerouting"
+    ],
     "category": "air-ticket",
     "conceptType": "process",
     "status": "active",
@@ -142,27 +298,60 @@
     "standardBody": "IATA",
     "providerTerms": [],
     "relationships": [
-      {"type": "contrasts", "targetTerm": "Reissue"},
-      {"type": "related", "targetTerm": "Schedule Change"},
-      {"type": "related", "targetTerm": "IROPS"},
-      {"type": "related", "targetTerm": "Refund"},
-      {"type": "related", "targetTerm": "E-ticket"}
+      {
+        "type": "contrasts",
+        "targetTerm": "Reissue"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Schedule Change"
+      },
+      {
+        "type": "related",
+        "targetTerm": "IROPS"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Refund"
+      },
+      {
+        "type": "related",
+        "targetTerm": "E-ticket"
+      }
     ],
     "distinctions": [
-      {"targetTerm": "Reissue", "explanation": "A (voluntary) reissue is passenger-initiated with penalties per fare rules; an involuntary reissue is airline-caused and normally penalty-free.", "explanation_ko": "(자발적) 재발행은 승객이 주도하며 운임 규정에 따른 위약금이 적용되고, 비자발적 재발행은 항공사 사유에 의한 것으로 통상 위약금이 없다."},
-      {"targetTerm": "Schedule Change", "explanation": "Schedule Change is the trigger event in the schedule; involuntary reissue is the ticketing action taken to reaccommodate the passenger.", "explanation_ko": "Schedule Change는 스케줄상의 유발 사건이며, 비자발적 재발행은 승객을 재배정하기 위해 취하는 발권 조치이다."}
+      {
+        "targetTerm": "Reissue",
+        "explanation": "A (voluntary) reissue is passenger-initiated with penalties per fare rules; an involuntary reissue is airline-caused and normally penalty-free.",
+        "explanation_ko": "(자발적) 재발행은 승객이 주도하며 운임 규정에 따른 위약금이 적용되고, 비자발적 재발행은 항공사 사유에 의한 것으로 통상 위약금이 없다."
+      },
+      {
+        "targetTerm": "Schedule Change",
+        "explanation": "Schedule Change is the trigger event in the schedule; involuntary reissue is the ticketing action taken to reaccommodate the passenger.",
+        "explanation_ko": "Schedule Change는 스케줄상의 유발 사건이며, 비자발적 재발행은 승객을 재배정하기 위해 취하는 발권 조치이다."
+      }
     ],
     "sources": [
-      {"name": "Passenger Services Conference Resolutions Manual (PSCRM)", "org": "IATA", "version": "", "section": "", "url": ""}
+      {
+        "name": "Passenger Services Conference Resolutions Manual (PSCRM)",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
     ],
-    "lastReviewed": "2026-06-15"
+    "lastReviewed": "2026-06-15",
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"12\" width=\"24\" height=\"16\" rx=\"3\"/><path d=\"M11 18h8M11 22h5\"/><path d=\"M33 35a8 8 0 01-12-2\"/><path d=\"M21 39v-5h5\"/><circle cx=\"36\" cy=\"16\" r=\"7\"/><path d=\"M36 13v3M36 19v.01\"/></svg>"
   },
   {
     "id": "refund",
     "term": "Refund",
     "term_ko": "환불 (Refund)",
     "abbreviation": "",
-    "aliases": ["Ticket Refund", "Refund Application"],
+    "aliases": [
+      "Ticket Refund",
+      "Refund Application"
+    ],
     "category": "air-ticket",
     "conceptType": "process",
     "status": "active",
@@ -173,31 +362,81 @@
     "standardBody": "IATA",
     "providerTerms": [],
     "relationships": [
-      {"type": "related", "targetTerm": "E-ticket"},
-      {"type": "related", "targetTerm": "EMD"},
-      {"type": "related", "targetTerm": "Flight Coupon"},
-      {"type": "contrasts", "targetTerm": "Void"},
-      {"type": "contrasts", "targetTerm": "Reissue"},
-      {"type": "related", "targetTerm": "BSP"},
-      {"type": "related", "targetTerm": "ARC"}
+      {
+        "type": "related",
+        "targetTerm": "E-ticket"
+      },
+      {
+        "type": "related",
+        "targetTerm": "EMD"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Flight Coupon"
+      },
+      {
+        "type": "contrasts",
+        "targetTerm": "Void"
+      },
+      {
+        "type": "contrasts",
+        "targetTerm": "Reissue"
+      },
+      {
+        "type": "related",
+        "targetTerm": "BSP"
+      },
+      {
+        "type": "related",
+        "targetTerm": "ARC"
+      }
     ],
     "distinctions": [
-      {"targetTerm": "Void", "explanation": "Void cancels an issuance within the same sales period at zero cost; a refund returns value after the sales/void window, typically with applicable penalties.", "explanation_ko": "Void는 동일한 판매 기간 내에 무비용으로 발권을 취소하며, 환불은 판매/Void 기한 이후에 가치를 반환하되 통상 적용 가능한 위약금이 따른다."},
-      {"targetTerm": "Reissue", "explanation": "Refund returns value to the customer; reissue exchanges the ticket for new transportation.", "explanation_ko": "환불은 고객에게 가치를 반환하며, 재발행은 항공권을 새로운 운송으로 교환한다."},
-      {"targetTerm": "Chargeback", "explanation": "A refund is a merchant-initiated return of funds; a chargeback is a cardholder-initiated dispute forced through the card network.", "explanation_ko": "환불은 가맹점이 주도하는 자금 반환이며, 지불 거절(chargeback)은 카드 소지자가 주도하여 카드 네트워크를 통해 강제되는 분쟁이다."}
+      {
+        "targetTerm": "Void",
+        "explanation": "Void cancels an issuance within the same sales period at zero cost; a refund returns value after the sales/void window, typically with applicable penalties.",
+        "explanation_ko": "Void는 동일한 판매 기간 내에 무비용으로 발권을 취소하며, 환불은 판매/Void 기한 이후에 가치를 반환하되 통상 적용 가능한 위약금이 따른다."
+      },
+      {
+        "targetTerm": "Reissue",
+        "explanation": "Refund returns value to the customer; reissue exchanges the ticket for new transportation.",
+        "explanation_ko": "환불은 고객에게 가치를 반환하며, 재발행은 항공권을 새로운 운송으로 교환한다."
+      },
+      {
+        "targetTerm": "Chargeback",
+        "explanation": "A refund is a merchant-initiated return of funds; a chargeback is a cardholder-initiated dispute forced through the card network.",
+        "explanation_ko": "환불은 가맹점이 주도하는 자금 반환이며, 지불 거절(chargeback)은 카드 소지자가 주도하여 카드 네트워크를 통해 강제되는 분쟁이다."
+      }
     ],
     "sources": [
-      {"name": "Passenger Services Conference Resolutions Manual (PSCRM)", "org": "IATA", "version": "", "section": "", "url": ""},
-      {"name": "BSP Refund procedures", "org": "IATA", "version": "", "section": "", "url": ""}
+      {
+        "name": "Passenger Services Conference Resolutions Manual (PSCRM)",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "BSP Refund procedures",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
     ],
-    "lastReviewed": "2026-06-15"
+    "lastReviewed": "2026-06-15",
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"16\" width=\"30\" height=\"20\" rx=\"3\"/><path d=\"M6 22h30\"/><path d=\"M40 14a10 10 0 11-3 14\"/><path d=\"M37 28v-5h5\"/></svg>"
   },
   {
     "id": "void",
     "term": "Void",
     "term_ko": "보이드/발권 취소 (Void)",
     "abbreviation": "",
-    "aliases": ["Voiding", "Same-Day Void", "Ticket Void"],
+    "aliases": [
+      "Voiding",
+      "Same-Day Void",
+      "Ticket Void"
+    ],
     "category": "air-ticket",
     "conceptType": "process",
     "status": "active",
@@ -208,27 +447,62 @@
     "standardBody": "IATA",
     "providerTerms": [],
     "relationships": [
-      {"type": "related", "targetTerm": "E-ticket"},
-      {"type": "related", "targetTerm": "EMD"},
-      {"type": "contrasts", "targetTerm": "Refund"},
-      {"type": "related", "targetTerm": "BSP"},
-      {"type": "related", "targetTerm": "ARC"}
+      {
+        "type": "related",
+        "targetTerm": "E-ticket"
+      },
+      {
+        "type": "related",
+        "targetTerm": "EMD"
+      },
+      {
+        "type": "contrasts",
+        "targetTerm": "Refund"
+      },
+      {
+        "type": "related",
+        "targetTerm": "BSP"
+      },
+      {
+        "type": "related",
+        "targetTerm": "ARC"
+      }
     ],
     "distinctions": [
-      {"targetTerm": "Refund", "explanation": "Void reverses an issuance within the same sales period so it is never billed; refund returns value after the document has been reported/settled.", "explanation_ko": "Void는 동일한 판매 기간 내에 발권을 되돌려 청구되지 않게 하며, 환불은 서류가 보고/정산된 이후에 가치를 반환한다."},
-      {"targetTerm": "Reissue", "explanation": "Void nullifies the document entirely; reissue keeps the value and exchanges it for a new document.", "explanation_ko": "Void는 서류를 완전히 무효화하며, 재발행은 가치를 유지하면서 새 서류로 교환한다."}
+      {
+        "targetTerm": "Refund",
+        "explanation": "Void reverses an issuance within the same sales period so it is never billed; refund returns value after the document has been reported/settled.",
+        "explanation_ko": "Void는 동일한 판매 기간 내에 발권을 되돌려 청구되지 않게 하며, 환불은 서류가 보고/정산된 이후에 가치를 반환한다."
+      },
+      {
+        "targetTerm": "Reissue",
+        "explanation": "Void nullifies the document entirely; reissue keeps the value and exchanges it for a new document.",
+        "explanation_ko": "Void는 서류를 완전히 무효화하며, 재발행은 가치를 유지하면서 새 서류로 교환한다."
+      }
     ],
     "sources": [
-      {"name": "BSP / ARC sales reporting and void procedures", "org": "IATA", "version": "", "section": "", "url": ""}
+      {
+        "name": "BSP / ARC sales reporting and void procedures",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
     ],
-    "lastReviewed": "2026-06-15"
+    "lastReviewed": "2026-06-15",
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"9\" y=\"10\" width=\"26\" height=\"22\" rx=\"3\"/><path d=\"M15 17h14M15 22h10\"/><circle cx=\"31\" cy=\"32\" r=\"9\"/><path d=\"M25 26l12 12\"/></svg>"
   },
   {
     "id": "ticketing-time-limit",
     "term": "Ticketing Time Limit",
     "term_ko": "발권 시한 (TTL)",
     "abbreviation": "TTL",
-    "aliases": ["Time Limit", "Time to Ticket", "Last Ticketing Date", "TTL"],
+    "aliases": [
+      "Time Limit",
+      "Time to Ticket",
+      "Last Ticketing Date",
+      "TTL"
+    ],
     "category": "air-ticket",
     "conceptType": "business-term",
     "status": "active",
@@ -239,27 +513,63 @@
     "standardBody": "ATPCO",
     "providerTerms": [],
     "relationships": [
-      {"type": "related", "targetTerm": "PNR"},
-      {"type": "related", "targetTerm": "E-ticket"},
-      {"type": "related", "targetTerm": "Queue"},
-      {"type": "related", "targetTerm": "Fare Basis Code"},
-      {"type": "related", "targetTerm": "ATPCO"}
+      {
+        "type": "related",
+        "targetTerm": "PNR"
+      },
+      {
+        "type": "related",
+        "targetTerm": "E-ticket"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Queue"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Fare Basis Code"
+      },
+      {
+        "type": "related",
+        "targetTerm": "ATPCO"
+      }
     ],
     "distinctions": [
-      {"targetTerm": "Queue", "explanation": "A queue is the GDS workflow bucket where pending-ticketing PNRs are placed; the ticketing time limit is the deadline itself.", "explanation_ko": "큐(queue)는 발권 대기 중인 PNR이 배치되는 GDS 업무 처리 버킷이며, 발권 시한은 기한 그 자체이다."}
+      {
+        "targetTerm": "Queue",
+        "explanation": "A queue is the GDS workflow bucket where pending-ticketing PNRs are placed; the ticketing time limit is the deadline itself.",
+        "explanation_ko": "큐(queue)는 발권 대기 중인 PNR이 배치되는 GDS 업무 처리 버킷이며, 발권 시한은 기한 그 자체이다."
+      }
     ],
     "sources": [
-      {"name": "ATPCO Fare Rules — Category 5 (Advance Reservations/Ticketing)", "org": "ATPCO", "version": "", "section": "", "url": ""},
-      {"name": "Passenger Services Conference Resolutions Manual (PSCRM)", "org": "IATA", "version": "", "section": "", "url": ""}
+      {
+        "name": "ATPCO Fare Rules — Category 5 (Advance Reservations/Ticketing)",
+        "org": "ATPCO",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Passenger Services Conference Resolutions Manual (PSCRM)",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
     ],
-    "lastReviewed": "2026-06-15"
+    "lastReviewed": "2026-06-15",
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"12\" width=\"24\" height=\"16\" rx=\"3\"/><path d=\"M11 18h8M11 22h5\"/><circle cx=\"34\" cy=\"32\" r=\"9\"/><path d=\"M34 27v5l3 3\"/></svg>"
   },
   {
     "id": "validating-carrier",
     "term": "Validating Carrier",
     "term_ko": "발권 항공사 (Validating Carrier)",
     "abbreviation": "",
-    "aliases": ["Plating Carrier", "Ticketing Carrier", "Issuing Carrier"],
+    "aliases": [
+      "Plating Carrier",
+      "Ticketing Carrier",
+      "Issuing Carrier"
+    ],
     "category": "air-ticket",
     "conceptType": "role",
     "status": "active",
@@ -270,27 +580,62 @@
     "standardBody": "IATA",
     "providerTerms": [],
     "relationships": [
-      {"type": "related", "targetTerm": "E-ticket"},
-      {"type": "related", "targetTerm": "Interline"},
-      {"type": "related", "targetTerm": "Proration"},
-      {"type": "related", "targetTerm": "BSP"},
-      {"type": "related", "targetTerm": "Airline Designator"}
+      {
+        "type": "related",
+        "targetTerm": "E-ticket"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Interline"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Proration"
+      },
+      {
+        "type": "related",
+        "targetTerm": "BSP"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Airline Designator"
+      }
     ],
     "distinctions": [
-      {"targetTerm": "Marketing Carrier", "explanation": "The validating carrier owns the ticket's financial settlement; the marketing carrier is the airline selling the flight under its own code.", "explanation_ko": "발권 항공사는 항공권의 재무 정산을 소유하며, 마케팅 항공사(Marketing Carrier)는 자사 코드로 해당 항공편을 판매하는 항공사이다."},
-      {"targetTerm": "Operating Carrier", "explanation": "The validating carrier plates and settles the ticket and may not fly any segment; the operating carrier physically performs the flight.", "explanation_ko": "발권 항공사는 항공권을 발권(plate)하고 정산하며 어떤 구간도 운항하지 않을 수 있고, 운항 항공사(Operating Carrier)는 실제로 항공편을 수행한다."}
+      {
+        "targetTerm": "Marketing Carrier",
+        "explanation": "The validating carrier owns the ticket's financial settlement; the marketing carrier is the airline selling the flight under its own code.",
+        "explanation_ko": "발권 항공사는 항공권의 재무 정산을 소유하며, 마케팅 항공사(Marketing Carrier)는 자사 코드로 해당 항공편을 판매하는 항공사이다."
+      },
+      {
+        "targetTerm": "Operating Carrier",
+        "explanation": "The validating carrier plates and settles the ticket and may not fly any segment; the operating carrier physically performs the flight.",
+        "explanation_ko": "발권 항공사는 항공권을 발권(plate)하고 정산하며 어떤 구간도 운항하지 않을 수 있고, 운항 항공사(Operating Carrier)는 실제로 항공편을 수행한다."
+      }
     ],
     "sources": [
-      {"name": "Passenger Services Conference Resolutions Manual (PSCRM)", "org": "IATA", "version": "", "section": "", "url": ""}
+      {
+        "name": "Passenger Services Conference Resolutions Manual (PSCRM)",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
     ],
-    "lastReviewed": "2026-06-15"
+    "lastReviewed": "2026-06-15",
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M23 6l13 5v8c0 8-5 13-13 16-8-3-13-8-13-16v-8z\"/><path d=\"M17 19l4 4 9-9\"/></svg>"
   },
   {
     "id": "ancillary-service",
     "term": "Ancillary Service",
     "term_ko": "부가 서비스 (Ancillary Service)",
     "abbreviation": "",
-    "aliases": ["Ancillary", "Ancillaries", "Add-on Service", "Optional Service"],
+    "aliases": [
+      "Ancillary",
+      "Ancillaries",
+      "Add-on Service",
+      "Optional Service"
+    ],
     "category": "air-ticket",
     "conceptType": "business-term",
     "status": "active",
@@ -301,20 +646,657 @@
     "standardBody": "ATPCO",
     "providerTerms": [],
     "relationships": [
-      {"type": "related", "targetTerm": "EMD"},
-      {"type": "related", "targetTerm": "NDC"},
-      {"type": "related", "targetTerm": "Offer"},
-      {"type": "related", "targetTerm": "ATPCO"},
-      {"type": "related", "targetTerm": "Fare Family"}
+      {
+        "type": "related",
+        "targetTerm": "EMD"
+      },
+      {
+        "type": "related",
+        "targetTerm": "NDC"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Offer"
+      },
+      {
+        "type": "related",
+        "targetTerm": "ATPCO"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Fare Family"
+      }
     ],
     "distinctions": [
-      {"targetTerm": "EMD", "explanation": "Ancillary Service is the product offered/sold; the EMD is the document that issues and settles it.", "explanation_ko": "Ancillary Service는 제공/판매되는 상품이며, EMD는 이를 발행하고 정산하는 서류이다."},
-      {"targetTerm": "Fare Family", "explanation": "A fare family bundles fare attributes and included benefits into branded fares; ancillary services are the unbundled add-ons sold separately.", "explanation_ko": "Fare Family는 운임 속성과 포함 혜택을 브랜드 운임으로 묶은 것이며, 부가 서비스는 별도로 판매되는 언번들된 추가 상품이다."}
+      {
+        "targetTerm": "EMD",
+        "explanation": "Ancillary Service is the product offered/sold; the EMD is the document that issues and settles it.",
+        "explanation_ko": "Ancillary Service는 제공/판매되는 상품이며, EMD는 이를 발행하고 정산하는 서류이다."
+      },
+      {
+        "targetTerm": "Fare Family",
+        "explanation": "A fare family bundles fare attributes and included benefits into branded fares; ancillary services are the unbundled add-ons sold separately.",
+        "explanation_ko": "Fare Family는 운임 속성과 포함 혜택을 브랜드 운임으로 묶은 것이며, 부가 서비스는 별도로 판매되는 언번들된 추가 상품이다."
+      }
     ],
     "sources": [
-      {"name": "ATPCO Optional Services data", "org": "ATPCO", "version": "", "section": "", "url": ""},
-      {"name": "New Distribution Capability (NDC)", "org": "IATA", "version": "", "section": "", "url": ""}
+      {
+        "name": "ATPCO Optional Services data",
+        "org": "ATPCO",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "New Distribution Capability (NDC)",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
     ],
-    "lastReviewed": "2026-06-15"
+    "lastReviewed": "2026-06-15",
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 8l3 12 12 3-12 3-3 12-3-12-12-3 12-3z\"/><path d=\"M11 10v4M9 12h4\"/><path d=\"M38 34v4M36 36h4\"/></svg>"
+  },
+  {
+    "id": "mco-miscellaneous-charges-order",
+    "term": "MCO (Miscellaneous Charges Order)",
+    "abbreviation": "MCO",
+    "aliases": [
+      "Miscellaneous Charges Order",
+      "Miscellaneous Charge Order",
+      "MPD (Multi-Purpose Document)"
+    ],
+    "category": "air-ticket",
+    "conceptType": "document",
+    "status": "deprecated",
+    "definition": "A Miscellaneous Charges Order (MCO) is an accountable traffic document used to record the prepayment or collection of charges that are not for the carriage of a passenger on a specific flight coupon, such as residual value from an exchange, deposits, additional collections, or non-flight services. Historically issued on paper, the MCO has been largely superseded by the Electronic Miscellaneous Document (EMD), which performs the same functions electronically.",
+    "longDef": "The MCO (and the related Multi-Purpose Document, MPD) was a standard accountable document in the BSP/ARC settlement environment used to collect value not tied to a specific flight coupon: residual amounts left over when a non-refundable ticket of higher value was exchanged for a lower-value ticket, additional fare collections, deposits, taxes, fees, excess baggage, and similar miscellaneous services. With the industry mandate to move to electronic documents, the MCO and MPD were replaced by the Electronic Miscellaneous Document (EMD), which exists in two forms (EMD-S standalone and EMD-A associated to a flight coupon). The term MCO still appears in legacy documentation, residual-value workflows, and some carrier policies as a synonym for the standalone EMD function.",
+    "standardBody": "IATA",
+    "term_ko": "MCO (Miscellaneous Charges Order, 기타 비용 청구서)",
+    "definition_ko": "MCO(Miscellaneous Charges Order)는 특정 항공편 쿠폰의 운송이 아닌 비용(교환 시 발생한 잔여 가치, 보증금, 추가 징수액, 비항공 서비스 등)을 선결제하거나 징수하기 위해 발행하는 정산 가능 여행 서류이다. 과거에는 종이로 발행되었으나, 동일한 기능을 전자적으로 수행하는 EMD(Electronic Miscellaneous Document)로 대부분 대체되었다.",
+    "longDef_ko": "MCO(및 관련 문서인 MPD, Multi-Purpose Document)는 BSP/ARC 정산 환경에서 특정 항공편 쿠폰과 연결되지 않은 가치를 징수하는 데 사용된 표준 정산 가능 서류였다. 고액의 비환불 항공권을 더 낮은 가치의 항공권으로 교환할 때 남는 잔여 금액(residual value), 추가 운임 징수, 보증금, 세금·요금, 초과 수하물, 기타 부대 서비스 등을 담았다. 전자 서류 전환 의무화에 따라 MCO와 MPD는 EMD로 대체되었으며, EMD는 EMD-S(독립형)와 EMD-A(항공권 쿠폰 연결형) 두 가지 형태로 존재한다. 'MCO'라는 용어는 여전히 레거시 문서, 잔여 가치 처리 흐름, 일부 항공사 정책에서 독립형 EMD 기능을 가리키는 동의어로 남아 있다.",
+    "providerTerms": [
+      {
+        "provider": "Travelport",
+        "term": "EMD",
+        "context": "Travelport documents EMDs as the electronic replacement for MCO, MPD, and other miscellaneous paper documents.",
+        "context_ko": "Travelport는 EMD를 MCO, MPD 및 기타 종이 기타 서류를 대체하는 전자 문서로 설명한다.",
+        "relationship": "broader"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "replaces",
+        "targetTerm": "EMD"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Residual Value"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Reissue"
+      },
+      {
+        "type": "related",
+        "targetTerm": "BSP"
+      },
+      {
+        "type": "related",
+        "targetTerm": "ARC"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "EMD",
+        "explanation": "The EMD is the electronic successor to the MCO; the MCO was the paper document, while the EMD is the IATA-standard electronic equivalent (EMD-S / EMD-A) that has largely replaced it.",
+        "explanation_ko": "EMD는 MCO의 전자식 후속 문서이다. MCO는 종이 서류였고, EMD는 이를 대부분 대체한 IATA 표준 전자 문서(EMD-S / EMD-A)이다."
+      },
+      {
+        "targetTerm": "E-ticket",
+        "explanation": "An e-ticket records the carriage of a passenger on flight coupons; an MCO/EMD records non-flight value such as fees, deposits, or residual amounts.",
+        "explanation_ko": "E-ticket은 항공편 쿠폰상의 여객 운송을 기록하지만, MCO/EMD는 수수료, 보증금, 잔여 금액 등 비항공 가치를 기록한다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "IATA",
+        "name": "Ticketing Handbook",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "org": "Travelport",
+        "name": "EMDs (Electronic Miscellaneous Documents) Support",
+        "version": "",
+        "section": "",
+        "url": "https://support.travelport.com/webhelp/Smartpoint1G1V/Content/Air/EMD/EMD.htm"
+      },
+      {
+        "org": "ARC",
+        "name": "Electronic Miscellaneous Document (EMD)",
+        "version": "",
+        "section": "",
+        "url": "https://www2.arccorp.com/support-training/electronic-miscellaneous-document/"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"9\" y=\"7\" width=\"30\" height=\"34\" rx=\"3\"/><line x1=\"15\" y1=\"15\" x2=\"33\" y2=\"15\"/><line x1=\"15\" y1=\"21\" x2=\"33\" y2=\"21\"/><line x1=\"15\" y1=\"27\" x2=\"26\" y2=\"27\"/><path d=\"M22 33h12\"/><path d=\"M29 30l3 3-3 3\"/></svg>"
+  },
+  {
+    "id": "exchange",
+    "term": "Exchange",
+    "abbreviation": "",
+    "aliases": [
+      "Ticket Exchange",
+      "Exchange/Reissue"
+    ],
+    "category": "air-ticket",
+    "conceptType": "process",
+    "status": "active",
+    "definition": "An exchange is the process of surrendering an existing ticket (or EMD) and applying its value toward a new ticket that reflects a changed itinerary, fare, cabin, or routing, with any fare difference, taxes, and penalties collected or refunded as applicable. In GDS and BSP/ARC workflows the exchange is the financial and document transaction that drives a reissue.",
+    "longDef": "An exchange uses the value of one or more original documents as full or partial payment for a newly issued document. It is required when the change goes beyond a simple revalidation (date/flight/time only) — for example a change of routing, origin/destination, cabin, or fare basis — because such changes invoke a new fare calculation. The exchange transaction determines the additional collection (ADC) when the new ticket is more expensive, or produces a residual value (refundable or forfeited per fare rules) when it is cheaper, plus any applicable change penalty and tax differences. In practice 'exchange' and 'reissue' are used together (often 'exchange/reissue'): the exchange is the value-and-payment side of the transaction and the reissue is the production of the replacement document.",
+    "standardBody": "IATA",
+    "term_ko": "Exchange (항공권 교환)",
+    "definition_ko": "Exchange(교환)는 기존 항공권(또는 EMD)을 반납하고 그 가치를 변경된 여정·운임·좌석 등급·여정 경로가 반영된 새 항공권에 적용하는 절차이며, 운임 차액·세금·위약금을 상황에 따라 추가 징수하거나 환불한다. GDS 및 BSP/ARC 흐름에서 교환은 재발행(reissue)을 유발하는 재무·서류 거래이다.",
+    "longDef_ko": "Exchange는 하나 이상의 원본 서류의 가치를 새로 발행되는 서류의 전부 또는 일부 결제 수단으로 사용한다. 단순 revalidation(날짜·항공편·시간만 변경)을 넘어서는 변경(여정 경로, 출발·도착지, 좌석 등급, fare basis 변경 등)에서 필요하며, 이러한 변경은 새로운 운임 계산을 유발하기 때문이다. 교환 거래는 새 항공권이 더 비쌀 때의 추가 징수액(ADC, Additional Collection)을 결정하거나, 더 쌀 때는 잔여 가치(residual value, 운임 규정에 따라 환불 또는 소멸)를 산출하며, 적용되는 변경 위약금과 세금 차액도 처리한다. 실무에서 'exchange'와 'reissue'는 흔히 함께('exchange/reissue') 쓰인다. 교환은 거래의 가치·결제 측면이고, 재발행은 대체 서류의 생성 측면이다.",
+    "providerTerms": [
+      {
+        "provider": "Travelport",
+        "term": "Exchange",
+        "context": "Travelport's Exchange, Refund, and Void guide treats exchange as the transaction that applies the value of an existing ticket toward a reissued ticket.",
+        "context_ko": "Travelport의 Exchange/Refund/Void 가이드는 교환을 기존 항공권의 가치를 재발행 항공권에 적용하는 거래로 다룬다.",
+        "relationship": "same"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Reissue"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Residual Value"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Penalty Fee"
+      },
+      {
+        "type": "related",
+        "targetTerm": "EMD"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Refund"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Fare Component"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Reissue",
+        "explanation": "Exchange is the value/payment transaction (surrendering old value, collecting difference or generating residual); reissue is the issuance of the replacement document. They typically occur together, but a reissue can also follow an involuntary change without a passenger-initiated exchange.",
+        "explanation_ko": "Exchange는 가치·결제 거래(기존 가치 반납, 차액 징수 또는 잔여 가치 발생)이고, reissue는 대체 서류의 발행이다. 보통 함께 일어나지만, 재발행은 승객이 시작하지 않은 비자발적 변경에 따라 이루어질 수도 있다."
+      },
+      {
+        "targetTerm": "Refund",
+        "explanation": "An exchange applies the document's value to a new document; a refund returns the value (less penalties) as money to the form of payment. An exchange may produce a residual value that is then either refunded or forfeited.",
+        "explanation_ko": "Exchange는 서류 가치를 새 서류에 적용하지만, Refund는 가치를(위약금 제외) 결제 수단으로 돌려준다. 교환은 잔여 가치를 발생시킬 수 있으며, 이는 이후 환불되거나 소멸된다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "IATA",
+        "name": "Ticketing Handbook",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "org": "Travelport",
+        "name": "Exchange, Refund, and Void Guide",
+        "version": "",
+        "section": "",
+        "url": "https://support.travelport.com/webhelp/JSONAPIs/Airv11/Content/Air11/General/ExchangeRefundGuide.htm"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 17h20\"/><path d=\"M27 12l5 5-5 5\"/><path d=\"M36 31H16\"/><path d=\"M21 26l-5 5 5 5\"/></svg>"
+  },
+  {
+    "id": "agency-debit-memo-adm",
+    "term": "Agency Debit Memo (ADM)",
+    "abbreviation": "ADM",
+    "aliases": [
+      "Agency Debit Memo",
+      "Debit Memo"
+    ],
+    "category": "air-ticket",
+    "conceptType": "document",
+    "status": "active",
+    "definition": "An Agency Debit Memo (ADM) is an accounting notice issued by an airline to a travel agent to claim an amount owed in connection with the issuance and use of standard traffic documents — for example incorrect fares, taxes, commission, fees, or fare rule violations. ADMs are processed through the BSP (typically via BSPlink) under IATA Passenger Agency Conference rules.",
+    "longDef": "The ADM is the recognized mechanism by which a BSP airline collects post-sale adjustments from an accredited agent for discrepancies on tickets and other accountable documents the agent issued. Common causes include underpaid fares or taxes, incorrect commission claims, fare rule or fare basis misuse, and ticketing errors. Under the IATA Passenger Agency Conference framework, an ADM must reference the document and reason, and the agent is generally given a dispute window (commonly 14–15 days in BSPlink) before the amount is debited through the BSP settlement; airlines are expected to respond to disputes within a defined period. The mirror-image credit document is the Agency Credit Memo (ACM), which an airline issues when it owes the agent.",
+    "standardBody": "IATA",
+    "term_ko": "ADM (Agency Debit Memo, 대리점 차변 통지서)",
+    "definition_ko": "ADM(Agency Debit Memo)은 항공사가 여행사(대리점)에게 표준 여행 서류의 발권·사용과 관련해 받아야 할 금액(잘못된 운임·세금·커미션·수수료, 운임 규정 위반 등)을 청구하기 위해 발행하는 회계 통지서이다. ADM은 IATA 여객대리점회의(Passenger Agency Conference) 규정에 따라 BSP(일반적으로 BSPlink)를 통해 처리된다.",
+    "longDef_ko": "ADM은 BSP 항공사가 대리점이 발행한 항공권 및 기타 정산 가능 서류상의 불일치에 대해 인가 대리점으로부터 사후 조정 금액을 징수하는 공인 수단이다. 흔한 사유로는 운임·세금 과소 징수, 잘못된 커미션 청구, 운임 규정·fare basis 오용, 발권 오류 등이 있다. IATA 여객대리점회의 체계상 ADM은 대상 서류와 사유를 명시해야 하며, BSP 정산을 통해 금액이 차감되기 전에 대리점에게 보통 BSPlink 기준 14~15일의 이의 제기 기간이 주어진다. 항공사는 정해진 기간 내에 이의에 응답해야 한다. 반대로 항공사가 대리점에 지급해야 할 때 발행하는 대칭 문서는 ACM(Agency Credit Memo, 대리점 대변 통지서)이다.",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "BSP"
+      },
+      {
+        "type": "related",
+        "targetTerm": "ARC"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Fare Basis Code"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Reissue"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Validating Carrier"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Refund",
+        "explanation": "A refund returns value to a customer for an unused or partially used ticket; an ADM is a back-office claim from the airline against the agent for a billing discrepancy, settled through the BSP rather than to a passenger.",
+        "explanation_ko": "Refund는 미사용·부분 사용 항공권에 대해 고객에게 가치를 돌려주지만, ADM은 청구 불일치에 대해 항공사가 대리점을 상대로 제기하는 후선 업무 청구로, 승객이 아니라 BSP를 통해 정산된다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "IATA",
+        "name": "ADM Management & Reduction",
+        "version": "",
+        "section": "",
+        "url": "https://www.iata.org/whatwedo/airline-distribution/Pages/adm.aspx"
+      },
+      {
+        "org": "IATA",
+        "name": "Passenger Agency Conference Resolutions Manual",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"8\" width=\"28\" height=\"32\" rx=\"3\"/><line x1=\"16\" y1=\"16\" x2=\"32\" y2=\"16\"/><line x1=\"16\" y1=\"22\" x2=\"32\" y2=\"22\"/><circle cx=\"24\" cy=\"31\" r=\"5\"/><line x1=\"21\" y1=\"31\" x2=\"27\" y2=\"31\"/></svg>"
+  },
+  {
+    "id": "residual-value",
+    "term": "Residual Value",
+    "abbreviation": "",
+    "aliases": [
+      "Residual Amount",
+      "Leftover Value"
+    ],
+    "category": "air-ticket",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "Residual value is the amount left over when a ticket (or EMD) is exchanged for a new document of lower total value, after deducting any applicable penalties and fare differences. Depending on the fare rules and document type, the residual may be refunded, retained as a credit on a standalone EMD/MCO, or forfeited.",
+    "longDef": "Residual value arises in exchange transactions: when the value of the surrendered document exceeds the price of the new ticket plus penalties and taxes, the surplus is the residual. For refundable fares the residual is typically returned to the form of payment, while for non-refundable fares it is often forfeited or held as a non-refundable credit. When the residual must be preserved rather than refunded, it is commonly issued on a standalone EMD (EMD-S) or, historically, an MCO, which records the leftover value for future use within the original ticket's validity and rules. GDS pricing must match the residual value against the reissue pricing record for the exchange to complete.",
+    "standardBody": "IATA",
+    "term_ko": "Residual Value (잔여 가치)",
+    "definition_ko": "Residual Value(잔여 가치)는 항공권(또는 EMD)을 총 가치가 더 낮은 새 서류로 교환할 때, 해당 위약금과 운임 차액을 공제하고 남는 금액이다. 운임 규정과 서류 종류에 따라 잔여 가치는 환불되거나, 독립형 EMD/MCO에 크레딧으로 보존되거나, 소멸될 수 있다.",
+    "longDef_ko": "Residual value는 교환 거래에서 발생한다. 반납한 서류의 가치가 새 항공권 가격에 위약금·세금을 더한 금액을 초과하면 그 잉여분이 잔여 가치이다. 환불 가능 운임의 경우 잔여 가치는 보통 결제 수단으로 반환되지만, 비환불 운임의 경우 흔히 소멸되거나 비환불 크레딧으로 보존된다. 잔여 가치를 환불하지 않고 보존해야 할 때는 일반적으로 독립형 EMD(EMD-S) 또는 과거에는 MCO에 발행하여, 원본 항공권의 유효기간과 규정 범위 내에서 향후 사용을 위해 남은 가치를 기록한다. 교환을 완료하려면 GDS 가격 산출 시 잔여 가치가 재발행 가격 산출 레코드와 일치해야 한다.",
+    "providerTerms": [
+      {
+        "provider": "Amadeus",
+        "term": "Residual value EMD",
+        "context": "Amadeus describes a standalone EMD issued for residual value resulting from the exchange of a non-refundable old document of higher value than the new document.",
+        "context_ko": "Amadeus는 새 서류보다 가치가 높은 비환불 원본 서류를 교환할 때 발생하는 잔여 가치에 대해 독립형 EMD를 발행하는 것으로 설명한다.",
+        "relationship": "narrower"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Exchange"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Reissue"
+      },
+      {
+        "type": "related",
+        "targetTerm": "EMD"
+      },
+      {
+        "type": "related",
+        "targetTerm": "MCO (Miscellaneous Charges Order)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Refund"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Penalty Fee"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Refund",
+        "explanation": "A refund is the return of value to the passenger; residual value is the leftover surplus from an exchange that may or may not be refundable — it can instead be forfeited or carried on an EMD/MCO.",
+        "explanation_ko": "Refund는 승객에게 가치를 반환하는 것이고, residual value는 교환에서 남은 잉여분으로 환불될 수도 아닐 수도 있다. 환불 대신 소멸되거나 EMD/MCO에 보존될 수 있다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "Amadeus",
+        "name": "EMD: Frequently Asked Questions",
+        "version": "",
+        "section": "",
+        "url": "https://servicehub.amadeus.com/c/portal/view-solution/837116/en_US/emd-frequently-asked-questions"
+      },
+      {
+        "org": "IATA",
+        "name": "Ticketing Handbook",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"15\"/><path d=\"M24 9a15 15 0 0 1 13 7.5L24 24z\" fill=\"currentColor\" stroke=\"none\"/><path d=\"M19 26h10\"/><path d=\"M24 21v3\"/><path d=\"M21 30h6\"/></svg>"
+  },
+  {
+    "id": "conjunction-ticket",
+    "term": "Conjunction Ticket",
+    "abbreviation": "",
+    "aliases": [
+      "Conjunction Tickets",
+      "Conjunctive Ticket"
+    ],
+    "category": "air-ticket",
+    "conceptType": "document",
+    "status": "active",
+    "definition": "A conjunction ticket is a set of two or more tickets issued together and cross-referenced to a passenger, which together constitute a single contract of carriage. They are used when an itinerary requires more flight coupons than a single ticket can hold (traditionally a maximum of four coupons per ticket).",
+    "longDef": "Because a single airline ticket can carry only a limited number of flight coupons (historically four), an itinerary with more segments is documented across multiple tickets issued in conjunction with one another. These tickets are numbered consecutively and cross-referenced (each shows the others' numbers) so that, although physically separate documents, they are treated as one ticket and one contract of carriage for fare, validity, and rule purposes. In e-ticketing the conjunction relationship is recorded in the ticket data so the linked coupons are processed, exchanged, and refunded together.",
+    "standardBody": "IATA",
+    "term_ko": "Conjunction Ticket (연결 항공권)",
+    "definition_ko": "Conjunction Ticket(연결 항공권)은 한 승객에게 함께 발행되어 상호 참조되는 둘 이상의 항공권 묶음으로, 이들이 합쳐져 하나의 운송 계약을 구성한다. 단일 항공권이 담을 수 있는 항공편 쿠폰 수(전통적으로 항공권당 최대 4매)를 초과하는 여정일 때 사용된다.",
+    "longDef_ko": "단일 항공권은 제한된 수의 항공편 쿠폰(과거 기준 4매)만 담을 수 있으므로, 그보다 많은 구간을 가진 여정은 서로 연결(in conjunction)되어 발행된 여러 항공권에 걸쳐 기록된다. 이 항공권들은 연속 번호가 매겨지고 상호 참조(각 항공권에 다른 항공권의 번호가 표시)되어, 물리적으로는 별개 서류이지만 운임·유효기간·규정 목적상 하나의 항공권이자 하나의 운송 계약으로 취급된다. 전자 발권에서는 연결 관계가 항공권 데이터에 기록되어 연결된 쿠폰들이 함께 처리·교환·환불된다.",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "E-ticket"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Flight Coupon"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Reissue"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Journey"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Fare Component"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Flight Coupon",
+        "explanation": "A flight coupon is one segment-level portion of a single ticket; a conjunction ticket is a grouping of multiple whole tickets, used when an itinerary needs more coupons than one ticket can hold.",
+        "explanation_ko": "Flight Coupon은 단일 항공권 내의 구간 단위 부분이고, conjunction ticket은 여러 항공권 전체를 묶은 것으로, 여정이 한 항공권에 담을 수 있는 쿠폰 수를 초과할 때 사용된다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "IATA",
+        "name": "Ticketing Handbook",
+        "version": "",
+        "section": "",
+        "url": "https://www.iata.org/en/publications/manuals/ticketing-handbook/"
+      },
+      {
+        "org": "IATA",
+        "name": "Conditions of Contract and Other Important Notices",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"7\" y=\"13\" width=\"22\" height=\"15\" rx=\"2\"/><rect x=\"19\" y=\"20\" width=\"22\" height=\"15\" rx=\"2\"/><path d=\"M24 20v8\"/><path d=\"M13 20h5\"/><path d=\"M30 27h5\"/></svg>"
+  },
+  {
+    "id": "penalty-fee",
+    "term": "Penalty Fee",
+    "abbreviation": "",
+    "aliases": [
+      "Change Fee",
+      "Cancellation Penalty",
+      "Change Penalty"
+    ],
+    "category": "air-ticket",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "A penalty fee is a charge imposed under a fare's rules when a ticket is changed (reissued/exchanged) or cancelled/refunded, over and above any fare difference and taxes. The applicable penalties and conditions are defined in the fare rule, traditionally ATPCO Category 16 (Penalties) and, for automated processing, Category 31 (Voluntary Changes) and Category 33 (Voluntary Refunds).",
+    "longDef": "Penalty fees express the cost a passenger incurs to modify or cancel a purchased ticket, as set by the fare's filed rules. In the ATPCO fare-rule structure, Category 16 (Penalties) carries the textual terms describing change and refund penalties, while automated change and refund processing is driven by Category 31 (Voluntary Changes) and Category 33 (Voluntary Refunds). Penalty amounts can be fixed, per-direction, per fare component, or percentage-based, and may differ for changes versus cancellations and by fare family or cabin. In an exchange, the penalty is collected alongside any additional fare collection and tax difference; in a refund, the penalty is deducted from the amount returned. Penalty fees are distinct from carrier service fees and from agency-imposed service charges.",
+    "standardBody": "ATPCO",
+    "term_ko": "Penalty Fee (위약금)",
+    "definition_ko": "Penalty Fee(위약금)는 운임 규정에 따라 항공권을 변경(재발행/교환)하거나 취소/환불할 때, 운임 차액 및 세금과 별도로 부과되는 비용이다. 적용 위약금과 조건은 운임 규정에 정의되며, 전통적으로 ATPCO Category 16(Penalties), 그리고 자동 처리의 경우 Category 31(자발적 변경)과 Category 33(자발적 환불)에 담긴다.",
+    "longDef_ko": "Penalty fee는 구매한 항공권을 변경하거나 취소할 때 승객이 부담하는 비용으로, 운임의 등록 규정에 따라 정해진다. ATPCO 운임 규정 구조에서 Category 16(Penalties)은 변경·환불 위약금을 기술하는 텍스트 조건을 담고, 자동 변경·환불 처리는 Category 31(자발적 변경)과 Category 33(자발적 환불)이 구동한다. 위약금 금액은 정액, 방향별, fare component별, 또는 비율 기반일 수 있으며, 변경과 취소에 따라, fare family나 좌석 등급에 따라 다를 수 있다. 교환 시에는 추가 운임 징수액 및 세금 차액과 함께 위약금이 징수되고, 환불 시에는 반환 금액에서 차감된다. 위약금은 항공사 서비스 수수료나 대리점 부과 서비스 차지와는 구별된다.",
+    "providerTerms": [
+      {
+        "provider": "ATPCO",
+        "term": "Category 16 (Penalties)",
+        "context": "ATPCO Category 16 describes penalties and charges for ticket changes and refunds; automated processing uses Category 31 (changes) and Category 33 (refunds).",
+        "context_ko": "ATPCO Category 16은 항공권 변경·환불에 대한 위약금과 비용을 기술하며, 자동 처리에는 Category 31(변경)과 Category 33(환불)이 사용된다.",
+        "relationship": "narrower"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "ATPCO"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Reissue"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Exchange"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Refund"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Fare Basis Code"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Fare Family"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Residual Value",
+        "explanation": "A penalty fee is a charge deducted during a change or refund; residual value is the surplus that may remain after the penalty and fare difference are applied in an exchange.",
+        "explanation_ko": "Penalty fee는 변경·환불 시 차감되는 비용이고, residual value는 교환에서 위약금과 운임 차액을 적용한 뒤 남을 수 있는 잉여분이다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "ATPCO",
+        "name": "What are ATPCO fare rules categories?",
+        "version": "",
+        "section": "Category 16 / 31 / 33",
+        "url": "https://atpco.net/single-blog/what-are-atpco-fare-rules-categories/"
+      },
+      {
+        "org": "Travelport",
+        "name": "Fare Rules Guide",
+        "version": "",
+        "section": "",
+        "url": "https://support.travelport.com/webhelp/JSONAPIs/Airv11/Content/Air11/Price/FareRulesGuide.htm"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"15\"/><line x1=\"24\" y1=\"16\" x2=\"24\" y2=\"26\"/><circle cx=\"24\" cy=\"31\" r=\"0.5\" fill=\"currentColor\"/><line x1=\"24\" y1=\"31\" x2=\"24\" y2=\"31\"/></svg>"
+  },
+  {
+    "id": "open-ticket",
+    "term": "Open Ticket",
+    "abbreviation": "",
+    "aliases": [
+      "Open-Dated Ticket",
+      "Open Date Ticket"
+    ],
+    "category": "air-ticket",
+    "conceptType": "document",
+    "status": "active",
+    "definition": "An open ticket is a ticket on which one or more flight coupons have no fixed flight, date, or time — the coupon is issued with an OPEN status and the travel date is confirmed later, within the ticket's validity period and subject to fare rules and availability. It is most often used for the return portion of a journey.",
+    "longDef": "On an open ticket, the open coupon carries no specific flight number or date (status OPEN), and the passenger fixes the date later by making a reservation, after which the coupon is revalidated or reissued to the confirmed flight. The ticket remains usable within its validity period (commonly up to one year from issue or first travel), and changes may incur fare differences, penalties, or seasonal/RBD adjustments per the fare rules. Open tickets are far less common in modern revenue ticketing — many carriers now use date-changeable flexible fares instead — but the open coupon concept persists for certain fare types, interline situations, and disruption handling.",
+    "standardBody": "IATA",
+    "term_ko": "Open Ticket (오픈 티켓 / 미확정 항공권)",
+    "definition_ko": "Open Ticket(오픈 티켓)은 하나 이상의 항공편 쿠폰에 확정된 항공편·날짜·시간이 없는 항공권으로, 해당 쿠폰은 OPEN 상태로 발행되며 여행 날짜는 항공권 유효기간 내에서 운임 규정과 좌석 가용성에 따라 추후 확정된다. 주로 여정의 귀국 구간에 사용된다.",
+    "longDef_ko": "Open Ticket에서 오픈 쿠폰은 특정 항공편 번호나 날짜를 담지 않으며(상태 OPEN), 승객은 추후 예약을 통해 날짜를 확정하고, 이후 해당 쿠폰은 확정된 항공편에 맞춰 revalidation 또는 reissue된다. 항공권은 유효기간(보통 발행일 또는 최초 여행일로부터 1년 이내) 내에서 사용 가능하며, 변경 시 운임 차액, 위약금, 또는 운임 규정에 따른 시즌/RBD 조정이 발생할 수 있다. 오픈 티켓은 현대 수익 발권에서는 훨씬 드물어졌고 많은 항공사가 날짜 변경 가능한 유연 운임으로 대체했으나, 오픈 쿠폰 개념은 특정 운임 유형, 인터라인 상황, 운항 차질 처리 등에서 여전히 존속한다.",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Coupon Status"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Flight Coupon"
+      },
+      {
+        "type": "related",
+        "targetTerm": "E-ticket"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Ticketing Time Limit"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Reissue"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Coupon Status",
+        "explanation": "Coupon status is the lifecycle state of any flight coupon (e.g. OPEN FOR USE, FLOWN, USED); an open ticket is specifically a ticket whose coupon(s) remain in the OPEN status with no fixed flight or date.",
+        "explanation_ko": "Coupon status는 모든 항공편 쿠폰의 생애주기 상태(예: OPEN FOR USE, FLOWN, USED)이고, open ticket은 특히 쿠폰이 확정된 항공편·날짜 없이 OPEN 상태에 머무는 항공권을 말한다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "IATA",
+        "name": "Ticketing Handbook",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "org": "AltexSoft",
+        "name": "Open ticket (Travel Glossary)",
+        "version": "",
+        "section": "",
+        "url": "https://www.altexsoft.com/glossary/open-ticket/"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M7 16h26v16H7z\"/><path d=\"M33 16l8 8-8 8\"/><line x1=\"13\" y1=\"22\" x2=\"24\" y2=\"22\"/><line x1=\"13\" y1=\"27\" x2=\"20\" y2=\"27\"/></svg>"
+  },
+  {
+    "id": "coupon-status",
+    "term": "Coupon Status",
+    "abbreviation": "",
+    "aliases": [
+      "Coupon Status Code",
+      "E-ticket Coupon Status",
+      "Flight Coupon Status"
+    ],
+    "category": "air-ticket",
+    "conceptType": "code",
+    "status": "active",
+    "definition": "Coupon status is the lifecycle state of an individual electronic ticket flight coupon, indicating where it is in the issue-to-use process — for example Open for Use, Airport Control, Checked In, Boarded/Lifted, Flown/Used, Exchanged/Reissued, Refunded, Void, or Suspended. The status governs what actions (use, exchange, refund, void, revalidation) are permitted on that coupon.",
+    "longDef": "Each flight coupon on an e-ticket carries a status that changes as the coupon moves through its lifecycle, kept in sync between the validating/operating carrier's e-ticket database and the GDS/agent record. Common statuses include Open for Use (O — valid and unused), Airport Control (the coupon is under departure-control), Checked In, Boarded/Lifted, Flown/Used (F — travel completed), Exchanged/Reissued (E — value moved to a new document), Refunded, Void, Suspended, and Printed. The current status determines permissible processing: only coupons in eligible states (e.g. Open for Use) can be voided, exchanged, revalidated, or refunded, while statuses such as Exchanged, Refunded, Flown, or Void preclude reuse. Carriers and GDSs implement these codes per the relevant IATA e-ticketing resolutions, though display mnemonics vary by system.",
+    "standardBody": "IATA",
+    "term_ko": "Coupon Status (쿠폰 상태)",
+    "definition_ko": "Coupon Status(쿠폰 상태)는 개별 전자 항공권 항공편 쿠폰의 생애주기 상태로, 발행에서 사용까지의 과정 중 쿠폰이 어디에 있는지를 나타낸다(예: Open for Use, Airport Control, Checked In, Boarded/Lifted, Flown/Used, Exchanged/Reissued, Refunded, Void, Suspended). 이 상태에 따라 해당 쿠폰에 허용되는 행위(사용, 교환, 환불, 보이드, revalidation)가 결정된다.",
+    "longDef_ko": "전자 항공권의 각 항공편 쿠폰은 생애주기를 거치며 변하는 상태를 가지며, 이는 validating/operating 항공사의 전자 항공권 데이터베이스와 GDS/대리점 기록 간에 동기화된다. 흔한 상태로는 Open for Use(O — 유효하며 미사용), Airport Control(출발 통제 하에 있음), Checked In, Boarded/Lifted, Flown/Used(F — 여행 완료), Exchanged/Reissued(E — 가치가 새 서류로 이동), Refunded, Void, Suspended, Printed 등이 있다. 현재 상태는 허용되는 처리를 결정한다. Open for Use 등 적격 상태의 쿠폰만 보이드·교환·revalidation·환불이 가능하며, Exchanged·Refunded·Flown·Void 같은 상태는 재사용을 불가능하게 한다. 항공사와 GDS는 관련 IATA 전자 발권 규정에 따라 이 코드를 구현하지만, 표시 약어(mnemonic)는 시스템마다 다르다.",
+    "providerTerms": [
+      {
+        "provider": "Amadeus",
+        "term": "E-ticket coupon status codes",
+        "context": "Amadeus publishes cryptic coupon status codes such as O (Open for use), F (Flown/used), and E (Exchanged) in the e-ticket record.",
+        "context_ko": "Amadeus는 전자 항공권 기록에 O(Open for use), F(Flown/used), E(Exchanged) 등의 크립틱 쿠폰 상태 코드를 게시한다.",
+        "relationship": "same"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Flight Coupon"
+      },
+      {
+        "type": "related",
+        "targetTerm": "E-ticket"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Void"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Reissue"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Refund"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Open Ticket"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Flight Coupon",
+        "explanation": "The flight coupon is the segment-level portion of a ticket; coupon status is the state attribute attached to that coupon describing its position in the lifecycle.",
+        "explanation_ko": "Flight coupon은 항공권의 구간 단위 부분이고, coupon status는 그 쿠폰에 부여되어 생애주기상 위치를 기술하는 상태 속성이다."
+      },
+      {
+        "targetTerm": "Void",
+        "explanation": "Void is one specific coupon/ticket status (cancellation of issuance, typically same-day); coupon status is the broader set of all possible lifecycle states a coupon can hold.",
+        "explanation_ko": "Void는 특정한 하나의 쿠폰/항공권 상태(발행 취소, 보통 당일)이고, coupon status는 쿠폰이 가질 수 있는 모든 생애주기 상태의 더 넓은 집합이다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "Amadeus",
+        "name": "How to understand e-ticket coupon status codes (Cryptic)",
+        "version": "",
+        "section": "",
+        "url": "https://servicehub.amadeus.com/c/portal/view-solution/879101/how-to-understand-e-ticket-coupon-status-codes-cryptic-"
+      },
+      {
+        "org": "IATA",
+        "name": "Ticketing Handbook",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"12\" width=\"32\" height=\"24\" rx=\"3\"/><path d=\"M14 24l4 4 8-8\"/><circle cx=\"32\" cy=\"24\" r=\"3\"/></svg>"
   }
 ]

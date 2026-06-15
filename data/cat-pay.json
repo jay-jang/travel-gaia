@@ -3,7 +3,10 @@
     "id": "bsp",
     "term": "BSP",
     "abbreviation": "BSP",
-    "aliases": ["Billing and Settlement Plan", "Bank Settlement Plan"],
+    "aliases": [
+      "Billing and Settlement Plan",
+      "Bank Settlement Plan"
+    ],
     "category": "pay",
     "conceptType": "standard-term",
     "status": "active",
@@ -15,26 +18,65 @@
     "standardBody": "IATA",
     "providerTerms": [],
     "relationships": [
-      {"type": "contrasts", "targetTerm": "ARC"},
-      {"type": "related", "targetTerm": "IATA EasyPay"},
-      {"type": "related", "targetTerm": "Validating Carrier"},
-      {"type": "related", "targetTerm": "E-ticket"},
-      {"type": "related", "targetTerm": "EMD"}
+      {
+        "type": "contrasts",
+        "targetTerm": "ARC"
+      },
+      {
+        "type": "related",
+        "targetTerm": "IATA EasyPay"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Validating Carrier"
+      },
+      {
+        "type": "related",
+        "targetTerm": "E-ticket"
+      },
+      {
+        "type": "related",
+        "targetTerm": "EMD"
+      }
     ],
     "distinctions": [
-      {"targetTerm": "ARC", "explanation": "ARC is the equivalent agent-airline settlement system for the United States, while BSP covers most other markets worldwide.", "explanation_ko": "ARC는 미국용 여행사-항공사 정산 시스템에 해당하며, BSP는 그 외 전 세계 대부분의 시장을 담당한다."},
-      {"targetTerm": "IATA Clearing House", "explanation": "BSP settles agent-to-airline sales; the IATA Clearing House settles airline-to-airline (interline) accounts.", "explanation_ko": "BSP는 여행사-항공사 간 판매를 정산하고, IATA Clearing House는 항공사 간(인터라인) 계정을 정산한다."}
+      {
+        "targetTerm": "ARC",
+        "explanation": "ARC is the equivalent agent-airline settlement system for the United States, while BSP covers most other markets worldwide.",
+        "explanation_ko": "ARC는 미국용 여행사-항공사 정산 시스템에 해당하며, BSP는 그 외 전 세계 대부분의 시장을 담당한다."
+      },
+      {
+        "targetTerm": "IATA Clearing House",
+        "explanation": "BSP settles agent-to-airline sales; the IATA Clearing House settles airline-to-airline (interline) accounts.",
+        "explanation_ko": "BSP는 여행사-항공사 간 판매를 정산하고, IATA Clearing House는 항공사 간(인터라인) 계정을 정산한다."
+      }
     ],
     "sources": [
-      {"name": "Billing and Settlement Plan (BSP)", "org": "IATA", "version": "", "section": "", "url": "https://www.iata.org/en/services/finance/bsp/"},
-      {"name": "BSP Manual for Agents (NewGen ISS Edition)", "org": "IATA", "version": "", "section": "", "url": "https://www.iata.org/contentassets/bfacf03f8e914960898e262df2777352/bsp-manual-for-agents.pdf"}
-    ]
+      {
+        "name": "Billing and Settlement Plan (BSP)",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": "https://www.iata.org/en/services/finance/bsp/"
+      },
+      {
+        "name": "BSP Manual for Agents (NewGen ISS Edition)",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": "https://www.iata.org/contentassets/bfacf03f8e914960898e262df2777352/bsp-manual-for-agents.pdf"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"6\"/><circle cx=\"9\" cy=\"10\" r=\"3\"/><circle cx=\"39\" cy=\"10\" r=\"3\"/><circle cx=\"9\" cy=\"38\" r=\"3\"/><circle cx=\"39\" cy=\"38\" r=\"3\"/><line x1=\"11\" y1=\"12\" x2=\"19\" y2=\"20\"/><line x1=\"37\" y1=\"12\" x2=\"29\" y2=\"20\"/><line x1=\"11\" y1=\"36\" x2=\"19\" y2=\"28\"/><line x1=\"37\" y1=\"36\" x2=\"29\" y2=\"28\"/></svg>"
   },
   {
     "id": "arc",
     "term": "ARC",
     "abbreviation": "ARC",
-    "aliases": ["Airlines Reporting Corporation", "Airline Reporting Corporation"],
+    "aliases": [
+      "Airlines Reporting Corporation",
+      "Airline Reporting Corporation"
+    ],
     "category": "pay",
     "conceptType": "provider-term",
     "status": "active",
@@ -46,25 +88,61 @@
     "standardBody": "",
     "providerTerms": [],
     "relationships": [
-      {"type": "contrasts", "targetTerm": "BSP"},
-      {"type": "related", "targetTerm": "E-ticket"},
-      {"type": "related", "targetTerm": "Validating Carrier"},
-      {"type": "related", "targetTerm": "Pseudo City Code"}
+      {
+        "type": "contrasts",
+        "targetTerm": "BSP"
+      },
+      {
+        "type": "related",
+        "targetTerm": "E-ticket"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Validating Carrier"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Pseudo City Code"
+      }
     ],
     "distinctions": [
-      {"targetTerm": "BSP", "explanation": "ARC is the US agent-airline settlement system; BSP is IATA's equivalent for most non-US markets.", "explanation_ko": "ARC는 미국의 여행사-항공사 정산 시스템이며, BSP는 미국 외 대부분의 시장을 위한 IATA의 등가 시스템이다."},
-      {"targetTerm": "IATA Clearing House", "explanation": "ARC settles US agent-to-airline sales; the IATA Clearing House settles interline (airline-to-airline) accounts.", "explanation_ko": "ARC는 미국 여행사-항공사 간 판매를 정산하고, IATA Clearing House는 인터라인(항공사 간) 계정을 정산한다."}
+      {
+        "targetTerm": "BSP",
+        "explanation": "ARC is the US agent-airline settlement system; BSP is IATA's equivalent for most non-US markets.",
+        "explanation_ko": "ARC는 미국의 여행사-항공사 정산 시스템이며, BSP는 미국 외 대부분의 시장을 위한 IATA의 등가 시스템이다."
+      },
+      {
+        "targetTerm": "IATA Clearing House",
+        "explanation": "ARC settles US agent-to-airline sales; the IATA Clearing House settles interline (airline-to-airline) accounts.",
+        "explanation_ko": "ARC는 미국 여행사-항공사 간 판매를 정산하고, IATA Clearing House는 인터라인(항공사 간) 계정을 정산한다."
+      }
     ],
     "sources": [
-      {"name": "Airlines Reporting Corporation", "org": "ARC", "version": "", "section": "", "url": "https://www2.arccorp.com/"},
-      {"name": "Interactive Agent Reporting (IAR)", "org": "ARC", "version": "", "section": "", "url": "https://www2.arccorp.com/products-participation/travel-agencies/agency-participation/participation-products/interactive-agent-reporting-iar"}
-    ]
+      {
+        "name": "Airlines Reporting Corporation",
+        "org": "ARC",
+        "version": "",
+        "section": "",
+        "url": "https://www2.arccorp.com/"
+      },
+      {
+        "name": "Interactive Agent Reporting (IAR)",
+        "org": "ARC",
+        "version": "",
+        "section": "",
+        "url": "https://www2.arccorp.com/products-participation/travel-agencies/agency-participation/participation-products/interactive-agent-reporting-iar"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 6h17l7 7v29H12z\"/><path d=\"M28 6v8h8\"/><path d=\"M17 24a7 7 0 0 1 14 0\"/><line x1=\"17\" y1=\"33\" x2=\"31\" y2=\"33\"/></svg>"
   },
   {
     "id": "iata-clearing-house",
     "term": "IATA Clearing House",
     "abbreviation": "ICH",
-    "aliases": ["ICH", "IATA Clearing House (ICH)"],
+    "aliases": [
+      "ICH",
+      "IATA Clearing House (ICH)"
+    ],
     "category": "pay",
     "conceptType": "provider-term",
     "status": "active",
@@ -76,26 +154,66 @@
     "standardBody": "IATA",
     "providerTerms": [],
     "relationships": [
-      {"type": "related", "targetTerm": "Interline"},
-      {"type": "related", "targetTerm": "Proration"},
-      {"type": "related", "targetTerm": "SPA (Special Prorate Agreement)"},
-      {"type": "related", "targetTerm": "MITA"},
-      {"type": "contrasts", "targetTerm": "BSP"}
+      {
+        "type": "related",
+        "targetTerm": "Interline"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Proration"
+      },
+      {
+        "type": "related",
+        "targetTerm": "SPA (Special Prorate Agreement)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "MITA"
+      },
+      {
+        "type": "contrasts",
+        "targetTerm": "BSP"
+      }
     ],
     "distinctions": [
-      {"targetTerm": "BSP", "explanation": "ICH settles airline-to-airline (interline) accounts; BSP settles agent-to-airline sales.", "explanation_ko": "ICH는 항공사 간(인터라인) 계정을 정산하고, BSP는 여행사-항공사 간 판매를 정산한다."},
-      {"targetTerm": "ARC", "explanation": "ICH handles interline settlement globally; ARC handles US agent-to-airline settlement.", "explanation_ko": "ICH는 전 세계 인터라인 정산을 처리하고, ARC는 미국의 여행사-항공사 정산을 처리한다."}
+      {
+        "targetTerm": "BSP",
+        "explanation": "ICH settles airline-to-airline (interline) accounts; BSP settles agent-to-airline sales.",
+        "explanation_ko": "ICH는 항공사 간(인터라인) 계정을 정산하고, BSP는 여행사-항공사 간 판매를 정산한다."
+      },
+      {
+        "targetTerm": "ARC",
+        "explanation": "ICH handles interline settlement globally; ARC handles US agent-to-airline settlement.",
+        "explanation_ko": "ICH는 전 세계 인터라인 정산을 처리하고, ARC는 미국의 여행사-항공사 정산을 처리한다."
+      }
     ],
     "sources": [
-      {"name": "IATA Clearing House (ICH)", "org": "IATA", "version": "", "section": "", "url": "https://www.iata.org/en/services/finance/clearinghouse/"},
-      {"name": "IATA Clearing House (ICH) FAQs", "org": "IATA", "version": "", "section": "", "url": "https://www.iata.org/en/services/finance/clearinghouse/faqs/"}
-    ]
+      {
+        "name": "IATA Clearing House (ICH)",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": "https://www.iata.org/en/services/finance/clearinghouse/"
+      },
+      {
+        "name": "IATA Clearing House (ICH) FAQs",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": "https://www.iata.org/en/services/finance/clearinghouse/faqs/"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 20 24 8l18 12\"/><line x1=\"9\" y1=\"20\" x2=\"9\" y2=\"38\"/><line x1=\"39\" y1=\"20\" x2=\"39\" y2=\"38\"/><line x1=\"17\" y1=\"22\" x2=\"17\" y2=\"36\"/><line x1=\"31\" y1=\"22\" x2=\"31\" y2=\"36\"/><line x1=\"5\" y1=\"42\" x2=\"43\" y2=\"42\"/></svg>"
   },
   {
     "id": "vcc",
     "term": "VCC",
     "abbreviation": "VCC",
-    "aliases": ["Virtual Credit Card", "Virtual Card", "Virtual Card Number"],
+    "aliases": [
+      "Virtual Credit Card",
+      "Virtual Card",
+      "Virtual Card Number"
+    ],
     "category": "pay",
     "conceptType": "business-term",
     "status": "active",
@@ -107,25 +225,60 @@
     "standardBody": "",
     "providerTerms": [],
     "relationships": [
-      {"type": "related", "targetTerm": "Merchant Model"},
-      {"type": "related", "targetTerm": "Bedbank"},
-      {"type": "related", "targetTerm": "Net Rate"},
-      {"type": "related", "targetTerm": "Chargeback"},
-      {"type": "related", "targetTerm": "OTA (Online Travel Agency)"}
+      {
+        "type": "related",
+        "targetTerm": "Merchant Model"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Bedbank"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Net Rate"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Chargeback"
+      },
+      {
+        "type": "related",
+        "targetTerm": "OTA (Online Travel Agency)"
+      }
     ],
     "distinctions": [
-      {"targetTerm": "IATA EasyPay", "explanation": "IATA EasyPay is an IATA e-wallet exclusive to BSP ticket issuance, whereas a VCC is a general card-rail instrument used for many supplier payments.", "explanation_ko": "IATA EasyPay는 BSP 항공권 발권 전용 IATA 전자지갑인 반면, VCC는 다양한 공급업체 결제에 사용되는 범용 카드 결제망 수단이다."}
+      {
+        "targetTerm": "IATA EasyPay",
+        "explanation": "IATA EasyPay is an IATA e-wallet exclusive to BSP ticket issuance, whereas a VCC is a general card-rail instrument used for many supplier payments.",
+        "explanation_ko": "IATA EasyPay는 BSP 항공권 발권 전용 IATA 전자지갑인 반면, VCC는 다양한 공급업체 결제에 사용되는 범용 카드 결제망 수단이다."
+      }
     ],
     "sources": [
-      {"name": "Virtual Credit Cards in Travel: How to Secure B2B Payments", "org": "AltexSoft", "version": "", "section": "", "url": "https://www.altexsoft.com/blog/virtual-credit-cards-travel/"},
-      {"name": "Using Virtual Credit Cards for Travel Agency Payments", "org": "J.P. Morgan", "version": "", "section": "", "url": "https://www.jpmorgan.com/insights/treasury/cards-expense-management/using-virtual-credit-cards-for-travel-agency-payments"}
-    ]
+      {
+        "name": "Virtual Credit Cards in Travel: How to Secure B2B Payments",
+        "org": "AltexSoft",
+        "version": "",
+        "section": "",
+        "url": "https://www.altexsoft.com/blog/virtual-credit-cards-travel/"
+      },
+      {
+        "name": "Using Virtual Credit Cards for Travel Agency Payments",
+        "org": "J.P. Morgan",
+        "version": "",
+        "section": "",
+        "url": "https://www.jpmorgan.com/insights/treasury/cards-expense-management/using-virtual-credit-cards-for-travel-agency-payments"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"13\" width=\"30\" height=\"22\" rx=\"3\"/><line x1=\"6\" y1=\"21\" x2=\"36\" y2=\"21\"/><line x1=\"11\" y1=\"28\" x2=\"18\" y2=\"28\"/><path d=\"M40 18a6 6 0 0 1 0 12\"/><path d=\"M40 23a2 2 0 0 1 0 2\"/></svg>"
   },
   {
     "id": "merchant-of-record",
     "term": "Merchant of Record",
     "abbreviation": "MoR",
-    "aliases": ["MoR", "Merchant on Record"],
+    "aliases": [
+      "MoR",
+      "Merchant on Record"
+    ],
     "category": "pay",
     "conceptType": "role",
     "status": "active",
@@ -137,25 +290,61 @@
     "standardBody": "",
     "providerTerms": [],
     "relationships": [
-      {"type": "related", "targetTerm": "Agency Model"},
-      {"type": "related", "targetTerm": "Merchant Model"},
-      {"type": "related", "targetTerm": "Chargeback"},
-      {"type": "related", "targetTerm": "OTA (Online Travel Agency)"}
+      {
+        "type": "related",
+        "targetTerm": "Agency Model"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Merchant Model"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Chargeback"
+      },
+      {
+        "type": "related",
+        "targetTerm": "OTA (Online Travel Agency)"
+      }
     ],
     "distinctions": [
-      {"targetTerm": "Agency Model", "explanation": "In the agency model the supplier is the Merchant of Record; the role describes who bears payment responsibility, not the commercial model itself.", "explanation_ko": "에이전시 모델에서는 공급업체가 Merchant of Record이다. 이 역할은 상업적 모델 자체가 아니라 결제 책임을 누가 지는지를 나타낸다."},
-      {"targetTerm": "Merchant Model", "explanation": "In the merchant model the intermediary becomes the Merchant of Record and shows on the cardholder's statement.", "explanation_ko": "머천트 모델에서는 중개업체가 Merchant of Record가 되어 카드 소지자의 명세서에 표시된다."}
+      {
+        "targetTerm": "Agency Model",
+        "explanation": "In the agency model the supplier is the Merchant of Record; the role describes who bears payment responsibility, not the commercial model itself.",
+        "explanation_ko": "에이전시 모델에서는 공급업체가 Merchant of Record이다. 이 역할은 상업적 모델 자체가 아니라 결제 책임을 누가 지는지를 나타낸다."
+      },
+      {
+        "targetTerm": "Merchant Model",
+        "explanation": "In the merchant model the intermediary becomes the Merchant of Record and shows on the cardholder's statement.",
+        "explanation_ko": "머천트 모델에서는 중개업체가 Merchant of Record가 되어 카드 소지자의 명세서에 표시된다."
+      }
     ],
     "sources": [
-      {"name": "Merchant of Record in Travel: OTA's Guide to Owning the Payment Flow", "org": "AltexSoft", "version": "", "section": "", "url": "https://www.altexsoft.com/blog/merchant-of-record-in-travel/"},
-      {"name": "Merchant model vs. agency model: A guide for business success", "org": "WEX Inc.", "version": "", "section": "", "url": "https://www.wexinc.com/resources/blog/merchant-vs-agency-model-travel-payments/"}
-    ]
+      {
+        "name": "Merchant of Record in Travel: OTA's Guide to Owning the Payment Flow",
+        "org": "AltexSoft",
+        "version": "",
+        "section": "",
+        "url": "https://www.altexsoft.com/blog/merchant-of-record-in-travel/"
+      },
+      {
+        "name": "Merchant model vs. agency model: A guide for business success",
+        "org": "WEX Inc.",
+        "version": "",
+        "section": "",
+        "url": "https://www.wexinc.com/resources/blog/merchant-vs-agency-model-travel-payments/"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 18 11 9h26l3 9\"/><path d=\"M8 18a4 4 0 0 0 8 0 4 4 0 0 0 8 0 4 4 0 0 0 8 0 4 4 0 0 0 8 0\"/><path d=\"M11 21v18h26V21\"/><path d=\"M19 30l3 3 6-6\"/></svg>"
   },
   {
     "id": "agency-model",
     "term": "Agency Model",
     "abbreviation": "",
-    "aliases": ["Retail Model", "Pass-through Model"],
+    "aliases": [
+      "Retail Model",
+      "Pass-through Model"
+    ],
     "category": "pay",
     "conceptType": "business-term",
     "status": "active",
@@ -167,25 +356,61 @@
     "standardBody": "",
     "providerTerms": [],
     "relationships": [
-      {"type": "contrasts", "targetTerm": "Merchant Model"},
-      {"type": "related", "targetTerm": "Merchant of Record"},
-      {"type": "related", "targetTerm": "Commissionable Rate"},
-      {"type": "related", "targetTerm": "OTA (Online Travel Agency)"}
+      {
+        "type": "contrasts",
+        "targetTerm": "Merchant Model"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Merchant of Record"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Commissionable Rate"
+      },
+      {
+        "type": "related",
+        "targetTerm": "OTA (Online Travel Agency)"
+      }
     ],
     "distinctions": [
-      {"targetTerm": "Merchant Model", "explanation": "Under the agency model the supplier sets the price and is Merchant of Record; under the merchant model the intermediary does.", "explanation_ko": "에이전시 모델에서는 공급업체가 가격을 책정하고 Merchant of Record가 되며, 머천트 모델에서는 중개업체가 그 역할을 한다."},
-      {"targetTerm": "Commissionable Rate", "explanation": "Commissionable rates are the typical pricing basis for the agency model, where the agency earns commission rather than a markup.", "explanation_ko": "커미셔너블 요금(commissionable rate)은 여행사가 마크업이 아닌 수수료를 받는 에이전시 모델의 전형적인 가격 기준이다."}
+      {
+        "targetTerm": "Merchant Model",
+        "explanation": "Under the agency model the supplier sets the price and is Merchant of Record; under the merchant model the intermediary does.",
+        "explanation_ko": "에이전시 모델에서는 공급업체가 가격을 책정하고 Merchant of Record가 되며, 머천트 모델에서는 중개업체가 그 역할을 한다."
+      },
+      {
+        "targetTerm": "Commissionable Rate",
+        "explanation": "Commissionable rates are the typical pricing basis for the agency model, where the agency earns commission rather than a markup.",
+        "explanation_ko": "커미셔너블 요금(commissionable rate)은 여행사가 마크업이 아닌 수수료를 받는 에이전시 모델의 전형적인 가격 기준이다."
+      }
     ],
     "sources": [
-      {"name": "Agency Model in Travel: Payment Flows and Revenue Streams", "org": "AltexSoft", "version": "", "section": "", "url": "https://www.altexsoft.com/blog/agency-model/"},
-      {"name": "Merchant model vs. agency model: A guide for business success", "org": "WEX Inc.", "version": "", "section": "", "url": "https://www.wexinc.com/resources/blog/merchant-vs-agency-model-travel-payments/"}
-    ]
+      {
+        "name": "Agency Model in Travel: Payment Flows and Revenue Streams",
+        "org": "AltexSoft",
+        "version": "",
+        "section": "",
+        "url": "https://www.altexsoft.com/blog/agency-model/"
+      },
+      {
+        "name": "Merchant model vs. agency model: A guide for business success",
+        "org": "WEX Inc.",
+        "version": "",
+        "section": "",
+        "url": "https://www.wexinc.com/resources/blog/merchant-vs-agency-model-travel-payments/"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"14\" r=\"6\"/><path d=\"M14 40a10 10 0 0 1 20 0\"/><path d=\"M8 22h6\"/><path d=\"M34 22h6\"/><path d=\"M11 19l-3 3 3 3\"/><path d=\"M37 19l3 3-3 3\"/></svg>"
   },
   {
     "id": "merchant-model",
     "term": "Merchant Model",
     "abbreviation": "",
-    "aliases": ["Merchant of Record Model", "Net Rate Model"],
+    "aliases": [
+      "Merchant of Record Model",
+      "Net Rate Model"
+    ],
     "category": "pay",
     "conceptType": "business-term",
     "status": "active",
@@ -197,26 +422,67 @@
     "standardBody": "",
     "providerTerms": [],
     "relationships": [
-      {"type": "contrasts", "targetTerm": "Agency Model"},
-      {"type": "related", "targetTerm": "Merchant of Record"},
-      {"type": "related", "targetTerm": "Net Rate"},
-      {"type": "related", "targetTerm": "VCC"},
-      {"type": "related", "targetTerm": "OTA (Online Travel Agency)"}
+      {
+        "type": "contrasts",
+        "targetTerm": "Agency Model"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Merchant of Record"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Net Rate"
+      },
+      {
+        "type": "related",
+        "targetTerm": "VCC"
+      },
+      {
+        "type": "related",
+        "targetTerm": "OTA (Online Travel Agency)"
+      }
     ],
     "distinctions": [
-      {"targetTerm": "Agency Model", "explanation": "Under the merchant model the intermediary sets the price and is Merchant of Record; under the agency model the supplier does.", "explanation_ko": "머천트 모델에서는 중개업체가 가격을 책정하고 Merchant of Record가 되며, 에이전시 모델에서는 공급업체가 그 역할을 한다."},
-      {"targetTerm": "Net Rate", "explanation": "Net rates are the wholesale buying price the intermediary marks up under the merchant model.", "explanation_ko": "넷 요금(net rate)은 머천트 모델에서 중개업체가 마크업을 적용하는 도매 매입가다."}
+      {
+        "targetTerm": "Agency Model",
+        "explanation": "Under the merchant model the intermediary sets the price and is Merchant of Record; under the agency model the supplier does.",
+        "explanation_ko": "머천트 모델에서는 중개업체가 가격을 책정하고 Merchant of Record가 되며, 에이전시 모델에서는 공급업체가 그 역할을 한다."
+      },
+      {
+        "targetTerm": "Net Rate",
+        "explanation": "Net rates are the wholesale buying price the intermediary marks up under the merchant model.",
+        "explanation_ko": "넷 요금(net rate)은 머천트 모델에서 중개업체가 마크업을 적용하는 도매 매입가다."
+      }
     ],
     "sources": [
-      {"name": "Merchant model vs. agency model: A guide for business success", "org": "WEX Inc.", "version": "", "section": "", "url": "https://www.wexinc.com/resources/blog/merchant-vs-agency-model-travel-payments/"},
-      {"name": "Merchant of Record in Travel: OTA's Guide to Owning the Payment Flow", "org": "AltexSoft", "version": "", "section": "", "url": "https://www.altexsoft.com/blog/merchant-of-record-in-travel/"}
-    ]
+      {
+        "name": "Merchant model vs. agency model: A guide for business success",
+        "org": "WEX Inc.",
+        "version": "",
+        "section": "",
+        "url": "https://www.wexinc.com/resources/blog/merchant-vs-agency-model-travel-payments/"
+      },
+      {
+        "name": "Merchant of Record in Travel: OTA's Guide to Owning the Payment Flow",
+        "org": "AltexSoft",
+        "version": "",
+        "section": "",
+        "url": "https://www.altexsoft.com/blog/merchant-of-record-in-travel/"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 18 11 9h26l3 9\"/><path d=\"M8 18a4 4 0 0 0 8 0 4 4 0 0 0 8 0 4 4 0 0 0 8 0 4 4 0 0 0 8 0\"/><path d=\"M11 21v18h26V21\"/><path d=\"M21 39v-9h6v9\"/></svg>"
   },
   {
     "id": "3-d-secure",
     "term": "3-D Secure",
     "abbreviation": "3DS",
-    "aliases": ["3DS", "Three-Domain Secure", "EMV 3-D Secure", "EMV 3DS"],
+    "aliases": [
+      "3DS",
+      "Three-Domain Secure",
+      "EMV 3-D Secure",
+      "EMV 3DS"
+    ],
     "category": "pay",
     "conceptType": "standard-term",
     "status": "active",
@@ -227,26 +493,61 @@
     "longDef_ko": "이 명칭은 관련된 세 개의 도메인을 가리킨다. 발급사(카드 소지자) 도메인, 매입사(가맹점) 도메인, 상호 운용성 도메인이다. 3DS2는 위험 데이터를 활용한 무마찰(frictionless) 흐름과 챌린지 흐름(일회용 비밀번호, 생체인증)을 모두 지원하며, EU/영국에서 CNP(비대면) 거래에 대한 PSD2 SCA를 충족하는 주요 메커니즘이다. 여행 업계에서는 중개업체가 Merchant of Record로서 온라인으로 카드 소지자의 결제를 수납하는 모든 경우에 관련된다.",
     "standardBody": "EMVCo",
     "providerTerms": [
-      {"provider": "EMVCo", "term": "EMV 3-D Secure", "context": "EMVCo specifies and manages the EMV 3DS protocol", "context_ko": "EMVCo가 EMV 3DS 프로토콜을 규정하고 관리한다", "relationship": "same"}
+      {
+        "provider": "EMVCo",
+        "term": "EMV 3-D Secure",
+        "context": "EMVCo specifies and manages the EMV 3DS protocol",
+        "context_ko": "EMVCo가 EMV 3DS 프로토콜을 규정하고 관리한다",
+        "relationship": "same"
+      }
     ],
     "relationships": [
-      {"type": "related", "targetTerm": "Chargeback"},
-      {"type": "related", "targetTerm": "Merchant of Record"},
-      {"type": "related", "targetTerm": "VCC"}
+      {
+        "type": "related",
+        "targetTerm": "Chargeback"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Merchant of Record"
+      },
+      {
+        "type": "related",
+        "targetTerm": "VCC"
+      }
     ],
     "distinctions": [
-      {"targetTerm": "Chargeback", "explanation": "3-D Secure authenticates the cardholder up front and can shift fraud liability, whereas a chargeback is a post-transaction dispute reversal.", "explanation_ko": "3-D Secure는 거래 전에 카드 소지자를 인증하여 사기 책임을 전환할 수 있는 반면, 차지백은 거래 후 분쟁에 따른 거래 취소다."}
+      {
+        "targetTerm": "Chargeback",
+        "explanation": "3-D Secure authenticates the cardholder up front and can shift fraud liability, whereas a chargeback is a post-transaction dispute reversal.",
+        "explanation_ko": "3-D Secure는 거래 전에 카드 소지자를 인증하여 사기 책임을 전환할 수 있는 반면, 차지백은 거래 후 분쟁에 따른 거래 취소다."
+      }
     ],
     "sources": [
-      {"name": "EMV 3-D Secure", "org": "EMVCo", "version": "", "section": "", "url": "https://www.emvco.com/emv-technologies/3-d-secure/"},
-      {"name": "EMVCo explains how EMV 3DS helps meet PSD2 requirements for strong customer authentication", "org": "NFCW", "version": "", "section": "", "url": "https://www.nfcw.com/2020/09/09/367797/emvco-explains-how-emv-3ds-helps-meet-psd2-requirements-for-strong-customer-authentication/"}
-    ]
+      {
+        "name": "EMV 3-D Secure",
+        "org": "EMVCo",
+        "version": "",
+        "section": "",
+        "url": "https://www.emvco.com/emv-technologies/3-d-secure/"
+      },
+      {
+        "name": "EMVCo explains how EMV 3DS helps meet PSD2 requirements for strong customer authentication",
+        "org": "NFCW",
+        "version": "",
+        "section": "",
+        "url": "https://www.nfcw.com/2020/09/09/367797/emvco-explains-how-emv-3ds-helps-meet-psd2-requirements-for-strong-customer-authentication/"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 5 9 11v11c0 9 6 16 15 21 9-5 15-12 15-21V11z\"/><path d=\"M17 24l5 5 9-10\"/></svg>"
   },
   {
     "id": "chargeback",
     "term": "Chargeback",
     "abbreviation": "",
-    "aliases": ["Payment Dispute", "Card Dispute"],
+    "aliases": [
+      "Payment Dispute",
+      "Card Dispute"
+    ],
     "category": "pay",
     "conceptType": "process",
     "status": "active",
@@ -258,25 +559,62 @@
     "standardBody": "",
     "providerTerms": [],
     "relationships": [
-      {"type": "related", "targetTerm": "Merchant of Record"},
-      {"type": "related", "targetTerm": "3-D Secure"},
-      {"type": "related", "targetTerm": "Refund"},
-      {"type": "related", "targetTerm": "VCC"}
+      {
+        "type": "related",
+        "targetTerm": "Merchant of Record"
+      },
+      {
+        "type": "related",
+        "targetTerm": "3-D Secure"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Refund"
+      },
+      {
+        "type": "related",
+        "targetTerm": "VCC"
+      }
     ],
     "distinctions": [
-      {"targetTerm": "Refund", "explanation": "A refund is voluntarily issued by the merchant, whereas a chargeback is a forced reversal initiated by the cardholder's issuer through the card network.", "explanation_ko": "환불은 가맹점이 자발적으로 처리하는 반면, 차지백은 카드 소지자의 발급사가 카드망을 통해 개시하는 강제적 거래 취소다."},
-      {"targetTerm": "3-D Secure", "explanation": "A chargeback is a post-transaction dispute; 3-D Secure is pre-transaction authentication that can reduce fraud chargeback liability.", "explanation_ko": "차지백은 거래 후 분쟁이고, 3-D Secure는 사기성 차지백 책임을 줄일 수 있는 거래 전 인증이다."}
+      {
+        "targetTerm": "Refund",
+        "explanation": "A refund is voluntarily issued by the merchant, whereas a chargeback is a forced reversal initiated by the cardholder's issuer through the card network.",
+        "explanation_ko": "환불은 가맹점이 자발적으로 처리하는 반면, 차지백은 카드 소지자의 발급사가 카드망을 통해 개시하는 강제적 거래 취소다."
+      },
+      {
+        "targetTerm": "3-D Secure",
+        "explanation": "A chargeback is a post-transaction dispute; 3-D Secure is pre-transaction authentication that can reduce fraud chargeback liability.",
+        "explanation_ko": "차지백은 거래 후 분쟁이고, 3-D Secure는 사기성 차지백 책임을 줄일 수 있는 거래 전 인증이다."
+      }
     ],
     "sources": [
-      {"name": "EMV 3-D Secure", "org": "EMVCo", "version": "", "section": "", "url": "https://www.emvco.com/emv-technologies/3-d-secure/"},
-      {"name": "Merchant of Record in Travel: OTA's Guide to Owning the Payment Flow", "org": "AltexSoft", "version": "", "section": "", "url": "https://www.altexsoft.com/blog/merchant-of-record-in-travel/"}
-    ]
+      {
+        "name": "EMV 3-D Secure",
+        "org": "EMVCo",
+        "version": "",
+        "section": "",
+        "url": "https://www.emvco.com/emv-technologies/3-d-secure/"
+      },
+      {
+        "name": "Merchant of Record in Travel: OTA's Guide to Owning the Payment Flow",
+        "org": "AltexSoft",
+        "version": "",
+        "section": "",
+        "url": "https://www.altexsoft.com/blog/merchant-of-record-in-travel/"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"14\" width=\"36\" height=\"24\" rx=\"3\"/><line x1=\"6\" y1=\"21\" x2=\"42\" y2=\"21\"/><path d=\"M30 31a6 6 0 1 0-2-5\"/><path d=\"M26 24l2 3 3-2\"/></svg>"
   },
   {
     "id": "iata-easypay",
     "term": "IATA EasyPay",
     "abbreviation": "",
-    "aliases": ["IATA EasyPay", "IEP", "IATA Easy Pay"],
+    "aliases": [
+      "IATA EasyPay",
+      "IEP",
+      "IATA Easy Pay"
+    ],
     "category": "pay",
     "conceptType": "provider-term",
     "status": "active",
@@ -288,18 +626,535 @@
     "standardBody": "IATA",
     "providerTerms": [],
     "relationships": [
-      {"type": "parent", "targetTerm": "BSP"},
-      {"type": "related", "targetTerm": "E-ticket"},
-      {"type": "related", "targetTerm": "EMD"},
-      {"type": "related", "targetTerm": "GDS"}
+      {
+        "type": "parent",
+        "targetTerm": "BSP"
+      },
+      {
+        "type": "related",
+        "targetTerm": "E-ticket"
+      },
+      {
+        "type": "related",
+        "targetTerm": "EMD"
+      },
+      {
+        "type": "related",
+        "targetTerm": "GDS"
+      }
     ],
     "distinctions": [
-      {"targetTerm": "VCC", "explanation": "IATA EasyPay is an IATA-operated e-wallet limited to BSP ticket issuance, while a VCC is a general card-rail instrument usable for many supplier payments.", "explanation_ko": "IATA EasyPay는 BSP 항공권 발권에 한정된 IATA 운영 전자지갑인 반면, VCC는 다양한 공급업체 결제에 사용할 수 있는 범용 카드 결제망 수단이다."},
-      {"targetTerm": "Chargeback", "explanation": "IATA EasyPay carries no chargeback risk for airlines because funds are pre-funded and blocked at issuance, unlike card payments.", "explanation_ko": "IATA EasyPay는 카드 결제와 달리 자금이 사전 충전되고 발권 시 보류되므로 항공사에 차지백 위험이 없다."}
+      {
+        "targetTerm": "VCC",
+        "explanation": "IATA EasyPay is an IATA-operated e-wallet limited to BSP ticket issuance, while a VCC is a general card-rail instrument usable for many supplier payments.",
+        "explanation_ko": "IATA EasyPay는 BSP 항공권 발권에 한정된 IATA 운영 전자지갑인 반면, VCC는 다양한 공급업체 결제에 사용할 수 있는 범용 카드 결제망 수단이다."
+      },
+      {
+        "targetTerm": "Chargeback",
+        "explanation": "IATA EasyPay carries no chargeback risk for airlines because funds are pre-funded and blocked at issuance, unlike card payments.",
+        "explanation_ko": "IATA EasyPay는 카드 결제와 달리 자금이 사전 충전되고 발권 시 보류되므로 항공사에 차지백 위험이 없다."
+      }
     ],
     "sources": [
-      {"name": "IATA EASY PAY", "org": "IATA", "version": "", "section": "", "url": "https://www.iata.org/en/services/finance/iata-easy-pay/"},
-      {"name": "IATA EasyPay | NewGen ISS", "org": "IATA", "version": "", "section": "", "url": "https://newgeniss.iata.org/airlines/iata-easy-pay/"}
-    ]
+      {
+        "name": "IATA EASY PAY",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": "https://www.iata.org/en/services/finance/iata-easy-pay/"
+      },
+      {
+        "name": "IATA EasyPay | NewGen ISS",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": "https://newgeniss.iata.org/airlines/iata-easy-pay/"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 14h30a4 4 0 0 1 4 4v18a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4V14a3 3 0 0 1 3-3h25\"/><path d=\"M34 24h8v8h-8a4 4 0 0 1 0-8z\"/><path d=\"M18 23l-4 6h6l-4 6\"/></svg>"
+  },
+  {
+    "id": "pci-dss",
+    "term": "PCI DSS",
+    "abbreviation": "PCI DSS",
+    "aliases": [
+      "Payment Card Industry Data Security Standard"
+    ],
+    "category": "pay",
+    "conceptType": "standard",
+    "status": "active",
+    "definition": "The Payment Card Industry Data Security Standard is a set of security requirements maintained by the PCI Security Standards Council that all entities storing, processing, or transmitting cardholder data must meet to protect that data. It defines controls across areas such as network security, encryption, access control, monitoring, and vulnerability management.",
+    "longDef": "PCI DSS applies to merchants, acquirers, processors, and service providers that handle payment card data, and compliance is enforced contractually by the card networks (Visa, Mastercard, American Express, Discover, JCB) rather than by law. The current version is v4.0.1, published in June 2024, which became the only supported version after v3.2.1 and then v4.0 were retired (v4.0.1 is the sole supported release as of 1 January 2025). It organizes requirements into 12 high-level requirements grouped under six control objectives, with validation performed via a Report on Compliance (ROC) or Self-Assessment Questionnaire (SAQ) depending on the entity's transaction volume and processing model. Travel sellers (airlines, OTAs, hotels) that capture card data fall in scope, and approaches such as tokenization and outsourcing to a Merchant of Record are used to reduce PCI scope.",
+    "standardBody": "PCI Security Standards Council (PCI SSC)",
+    "term_ko": "PCI DSS (지불카드 산업 데이터 보안 표준)",
+    "definition_ko": "PCI DSS는 카드 소지자 데이터를 저장·처리·전송하는 모든 주체가 준수해야 하는, PCI Security Standards Council이 관리하는 보안 요구사항 집합이다. 네트워크 보안, 암호화, 접근 통제, 모니터링, 취약점 관리 등 영역의 통제 항목을 정의한다.",
+    "longDef_ko": "PCI DSS는 카드 결제 데이터를 다루는 가맹점·매입사(Acquirer)·프로세서·서비스 제공자에게 적용되며, 법률이 아니라 카드 네트워크(Visa, Mastercard, American Express 등)와의 계약으로 강제된다. 현재 버전은 2024년 6월에 발표된 v4.0.1이며, v3.2.1과 v4.0이 차례로 폐기된 뒤 2025년 1월 1일부터 유일하게 지원되는 버전이다. 6개 통제 목표 아래 12개 상위 요구사항으로 구성되며, 처리 거래량과 방식에 따라 ROC(Report on Compliance) 또는 SAQ(Self-Assessment Questionnaire)로 검증한다. 카드 데이터를 받는 항공사·OTA·호텔 등 여행 판매자도 적용 대상이며, Tokenization이나 Merchant of Record 위탁 등으로 PCI 적용 범위(scope)를 줄인다.",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Tokenization"
+      },
+      {
+        "type": "related",
+        "targetTerm": "3-D Secure"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Merchant of Record"
+      },
+      {
+        "type": "related",
+        "targetTerm": "VCC"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "3-D Secure",
+        "explanation": "PCI DSS is a broad data-security compliance standard for protecting stored and transmitted cardholder data, while 3-D Secure is a specific cardholder authentication protocol applied at the moment of an e-commerce transaction.",
+        "explanation_ko": "PCI DSS는 저장·전송되는 카드 데이터를 보호하는 광범위한 데이터 보안 준수 표준이고, 3-D Secure는 전자상거래 거래 시점에 적용되는 특정 카드 소지자 인증 프로토콜이다."
+      },
+      {
+        "targetTerm": "Tokenization",
+        "explanation": "PCI DSS is the obligation; tokenization is one technical method used to reduce the systems in scope for that obligation by removing raw PANs.",
+        "explanation_ko": "PCI DSS는 준수 의무이고, Tokenization은 원본 PAN을 제거해 그 의무의 적용 범위를 줄이는 데 쓰이는 기술적 수단 중 하나다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "PCI Security Standards Council",
+        "name": "Payment Card Industry Data Security Standard (PCI DSS)",
+        "version": "4.0.1",
+        "section": "",
+        "url": "https://www.pcisecuritystandards.org/"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 5l14 5v9c0 9-6 16-14 19-8-3-14-10-14-19v-9z\"/><rect x=\"17\" y=\"22\" width=\"14\" height=\"10\" rx=\"1.5\"/><path d=\"M20 22v-3a4 4 0 0 1 8 0v3\"/></svg>"
+  },
+  {
+    "id": "strong-customer-authentication",
+    "term": "Strong Customer Authentication",
+    "abbreviation": "SCA",
+    "aliases": [
+      "SCA",
+      "Strong Customer Authentication (PSD2)"
+    ],
+    "category": "pay",
+    "conceptType": "standard-term",
+    "status": "active",
+    "definition": "Strong Customer Authentication is a regulatory requirement under the EU Revised Payment Services Directive (PSD2) that electronic payments be authenticated using at least two independent factors drawn from knowledge, possession, and inherence. It is intended to reduce fraud in card-not-present and online banking transactions.",
+    "longDef": "SCA is mandated by PSD2 and detailed in the European Banking Authority's Regulatory Technical Standards (RTS) on strong customer authentication and common and secure communication. The two factors must come from at least two of three independent categories: something the customer knows (e.g., a password or PIN), something the customer has (e.g., a phone or token), and something the customer is (e.g., a biometric). For online card payments, SCA is most commonly delivered through the 3-D Secure protocol. The RTS defines exemptions where SCA need not be applied, including low-value transactions, transaction risk analysis (TRA) by the acquirer or issuer, recurring payments of a fixed amount, merchant-initiated transactions, and trusted-beneficiary whitelisting. SCA applies where both the payer's and the payee's payment service providers are within the European Economic Area, which affects how cross-border travel bookings are processed.",
+    "standardBody": "European Banking Authority (EBA) / European Union (PSD2)",
+    "term_ko": "강력한 고객 인증 (Strong Customer Authentication, SCA)",
+    "definition_ko": "SCA는 EU 개정 지급결제서비스지침(PSD2)에 따른 규제 요건으로, 전자 결제를 지식·소유·고유성 요소 중 서로 독립적인 두 가지 이상의 요소로 인증하도록 요구한다. 카드 비대면(CNP) 및 온라인 뱅킹 거래의 사기를 줄이는 것을 목적으로 한다.",
+    "longDef_ko": "SCA는 PSD2에 의해 의무화되며, 유럽은행감독청(EBA)의 강력한 고객 인증 및 안전한 통신에 관한 기술표준(RTS)에 상세히 규정된다. 두 인증 요소는 고객이 아는 것(비밀번호·PIN), 가진 것(휴대폰·토큰), 본인 자체인 것(생체정보)이라는 세 독립 범주 중 둘 이상에서 와야 한다. 온라인 카드 결제에서는 주로 3-D Secure 프로토콜로 구현된다. RTS는 SCA 면제(exemption) 사례도 정의하는데, 소액 거래, 매입사·발급사의 거래 위험 분석(TRA), 정액 정기 결제, 가맹점 개시 거래(MIT), 신뢰 수취인 화이트리스트 등이 있다. SCA는 지급인과 수취인의 결제서비스 제공자가 모두 유럽경제지역(EEA) 내에 있을 때 적용되어 국경 간 여행 예약 처리 방식에 영향을 준다.",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "3-D Secure"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Chargeback"
+      },
+      {
+        "type": "related",
+        "targetTerm": "PCI DSS"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "3-D Secure",
+        "explanation": "SCA is the regulatory requirement (the 'what' and 'why'); 3-D Secure is a technical authentication protocol commonly used to satisfy SCA for online card payments (the 'how').",
+        "explanation_ko": "SCA는 규제 요건(무엇을·왜)이고, 3-D Secure는 온라인 카드 결제에서 SCA를 충족하기 위해 흔히 쓰이는 기술적 인증 프로토콜(어떻게)이다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "European Banking Authority",
+        "name": "Regulatory Technical Standards on strong customer authentication and common and secure communication under PSD2",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "org": "European Union",
+        "name": "Revised Payment Services Directive (PSD2)",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"9\" y=\"20\" width=\"30\" height=\"20\" rx=\"2.5\"/><path d=\"M16 20v-5a8 8 0 0 1 16 0v5\"/><circle cx=\"24\" cy=\"29\" r=\"2.5\"/><path d=\"M24 31.5V35\"/></svg>"
+  },
+  {
+    "id": "form-of-payment",
+    "term": "Form of Payment",
+    "abbreviation": "FOP",
+    "aliases": [
+      "FOP",
+      "Form of Payment (FOP)"
+    ],
+    "category": "pay",
+    "conceptType": "standard-term",
+    "status": "active",
+    "definition": "Form of Payment (FOP) is the method by which a travel transaction is paid, recorded on a ticket, EMD, or order, such as cash, credit card, customer card, or miscellaneous charge order. In airline ticketing the FOP is stored as a coded element and drives how the sale is reported and settled.",
+    "longDef": "Form of Payment is a core element of an airline ticket and EMD, identifying how the customer paid so that the transaction can be correctly reported through BSP or ARC and settled with the validating carrier. Common FOP types include cash (CA), credit card (CC) with the card type and masked number, and miscellaneous forms such as IATA EasyPay or government transportation requests. The FOP affects merchant fees, chargeback exposure, and whether funds flow through an agency settlement system versus the airline's own merchant acquiring. In NDC and ONE Order flows, payment details are carried in the order rather than only on a paper or e-ticket coupon, and a single order may combine multiple forms of payment.",
+    "standardBody": "IATA",
+    "term_ko": "지불수단 (Form of Payment, FOP)",
+    "definition_ko": "Form of Payment(FOP)은 항공권, EMD 또는 주문(order)에 기록되는 여행 거래의 결제 방법으로, 현금·신용카드·고객카드·MCO 등이 있다. 항공 발권에서 FOP는 코드화된 요소로 저장되어 판매가 보고·정산되는 방식을 결정한다.",
+    "longDef_ko": "Form of Payment은 항공권과 EMD의 핵심 요소로, 고객이 어떻게 결제했는지를 식별해 거래가 BSP 또는 ARC를 통해 올바르게 보고되고 Validating Carrier와 정산되도록 한다. 일반적인 FOP 유형으로는 현금(CA), 카드종류와 마스킹된 번호를 포함한 신용카드(CC), IATA EasyPay나 정부 운송 요청서 같은 기타 형태가 있다. FOP는 가맹점 수수료, Chargeback 위험, 자금이 여행사 정산 시스템을 거치는지 항공사 자체 매입(acquiring)을 거치는지에 영향을 준다. NDC 및 ONE Order 흐름에서는 결제 정보가 종이·e-ticket 쿠폰뿐 아니라 주문 안에 담기며, 하나의 주문에 여러 지불수단이 결합될 수 있다.",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "E-ticket"
+      },
+      {
+        "type": "related",
+        "targetTerm": "EMD"
+      },
+      {
+        "type": "related",
+        "targetTerm": "BSP"
+      },
+      {
+        "type": "related",
+        "targetTerm": "ARC"
+      },
+      {
+        "type": "related",
+        "targetTerm": "IATA EasyPay"
+      },
+      {
+        "type": "related",
+        "targetTerm": "ONE Order"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "VCC",
+        "explanation": "A VCC is one specific instrument that can be used as a form of payment, whereas Form of Payment is the general ticketing element that records whichever instrument or method was used.",
+        "explanation_ko": "VCC는 지불수단으로 사용될 수 있는 하나의 특정 결제 수단인 반면, Form of Payment은 어떤 수단·방법이 사용되었든 그것을 기록하는 일반적인 발권 요소다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "IATA",
+        "name": "Passenger Services Conference Resolutions Manual (PSCRM)",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"13\" width=\"28\" height=\"18\" rx=\"2.5\"/><line x1=\"6\" y1=\"19\" x2=\"34\" y2=\"19\"/><line x1=\"11\" y1=\"26\" x2=\"18\" y2=\"26\"/><circle cx=\"34\" cy=\"32\" r=\"7\"/><path d=\"M34 28.5v3.5l2.5 1.5\"/></svg>"
+  },
+  {
+    "id": "remittance",
+    "term": "Remittance",
+    "abbreviation": "",
+    "aliases": [
+      "agent remittance"
+    ],
+    "category": "pay",
+    "conceptType": "process",
+    "status": "active",
+    "definition": "In airline distribution settlement, remittance is the transfer of funds collected by a travel agent for ticket sales to the airlines, made through a clearing system such as BSP or ARC after deduction of agreed commissions. Remittance occurs on a defined billing and settlement schedule by remittance period.",
+    "longDef": "Under the agency model, an accredited travel agent sells tickets on behalf of airlines, collects payment from passengers, retains any commission, and remits the net proceeds to the carriers through the local BSP (IATA Billing and Settlement Plan) or, in the United States, through ARC. The reporting and settlement calendar defines remittance periods and a remittance date by which the agent's bank account is debited (or the agent must have paid) for the amounts billed. Cash and certain customer-card sales flow through this remittance process, while credit-card sales using the airline's own merchant facility are typically settled directly with the card acquirer rather than remitted by the agent. IATA EasyPay and similar facilities change the cash-flow timing by funding sales on a transaction basis. Failure to remit on time can trigger default action and withdrawal of ticketing authority.",
+    "standardBody": "IATA",
+    "term_ko": "송금/정산납입 (Remittance)",
+    "definition_ko": "항공 유통 정산에서 remittance(송금/정산납입)는 여행사가 항공권 판매로 수금한 자금을 합의된 수수료를 공제한 뒤 BSP나 ARC 같은 청산 시스템을 통해 항공사에 이전하는 것을 말한다. 송금은 정해진 청구·정산 일정에 따라 송금 기간(remittance period)별로 이루어진다.",
+    "longDef_ko": "여행사 모델(Agency Model)에서 인가받은 여행사는 항공사를 대신해 항공권을 판매하고 승객으로부터 대금을 수금한 뒤, 수수료를 보유하고 순수익을 현지 BSP(IATA Billing and Settlement Plan) 또는 미국의 경우 ARC를 통해 항공사에 송금한다. 보고·정산 달력은 송금 기간과, 청구된 금액에 대해 여행사 은행 계좌가 출금되는(또는 여행사가 납입을 완료해야 하는) 송금일(remittance date)을 정의한다. 현금 및 일부 고객카드 판매는 이 송금 절차를 거치지만, 항공사 자체 가맹 설비를 사용하는 카드 판매는 보통 여행사 송금이 아니라 카드 매입사(Acquirer)와 직접 정산된다. IATA EasyPay 등은 거래 단위로 판매를 자금화해 현금 흐름 시점을 바꾼다. 기한 내 송금하지 않으면 디폴트 조치와 발권 권한 박탈로 이어질 수 있다.",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "BSP"
+      },
+      {
+        "type": "related",
+        "targetTerm": "ARC"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Agency Model"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Settlement Cycle"
+      },
+      {
+        "type": "related",
+        "targetTerm": "IATA EasyPay"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "BSP",
+        "explanation": "BSP is the clearing system and accounting infrastructure that handles agent-airline billing; remittance is the actual transfer of collected funds processed through that system.",
+        "explanation_ko": "BSP는 여행사-항공사 청구를 처리하는 청산 시스템·회계 인프라이고, remittance는 그 시스템을 통해 처리되는, 수금한 자금의 실제 이전 행위다."
+      },
+      {
+        "targetTerm": "Settlement Cycle",
+        "explanation": "The settlement cycle defines the timing and periodicity; remittance is the funding act that the agent performs within that cycle.",
+        "explanation_ko": "정산 주기(Settlement Cycle)는 시점과 주기를 정의하고, remittance는 그 주기 안에서 여행사가 수행하는 자금 납입 행위다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "IATA",
+        "name": "Passenger Agency Conference Resolutions (BSP / Billing and Settlement Plan)",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"11\" cy=\"24\" r=\"6\"/><circle cx=\"37\" cy=\"24\" r=\"6\"/><path d=\"M18 21h12\"/><path d=\"M27 18l3 3-3 3\"/><path d=\"M30 30H18\"/><path d=\"M21 33l-3-3 3-3\"/></svg>"
+  },
+  {
+    "id": "tokenization",
+    "term": "Tokenization",
+    "abbreviation": "",
+    "aliases": [
+      "payment tokenization",
+      "EMV payment tokenisation",
+      "network tokenization"
+    ],
+    "category": "pay",
+    "conceptType": "standard-term",
+    "status": "active",
+    "definition": "Tokenization is the replacement of a sensitive card Primary Account Number (PAN) with a non-sensitive surrogate value, the token, that can be used in place of the PAN within a defined domain. Payment tokens are issued and mapped back to the PAN by a Token Service Provider, reducing the exposure and PCI scope of merchants that store card-on-file credentials.",
+    "longDef": "Payment tokenization is standardized by EMVCo through the EMV Payment Tokenisation Specification, which defines roles including the Token Service Provider (TSP), which generates and de-tokenizes payment tokens, and the Token Requestor (such as a merchant, wallet provider, or issuer) that requests tokens. Tokens can carry usage restrictions (domain controls) limiting them to a specific merchant, channel, or device, so a stolen token is far less useful than a raw PAN. Network tokenization, offered by the card schemes, keeps card-on-file credentials current as cards are reissued, improving authorization rates for recurring travel charges. Tokenization is distinct from end-to-end encryption: the token is a different value substituted for the PAN, whereas encryption transforms the PAN reversibly with a key. In travel, OTAs, airlines, and hotels use tokenization to store guest and traveler card credentials securely and to pass payment data to a Merchant of Record or acquirer without exposing the underlying PAN.",
+    "standardBody": "EMVCo",
+    "term_ko": "토큰화 (Tokenization)",
+    "definition_ko": "Tokenization(토큰화)은 민감한 카드 기본계좌번호(PAN)를, 정의된 도메인 안에서 PAN 대신 사용할 수 있는 비민감 대체값인 토큰(token)으로 교체하는 것이다. 결제 토큰은 Token Service Provider가 발급하고 PAN으로 다시 매핑하며, 카드 정보를 보관하는(card-on-file) 가맹점의 노출과 PCI 적용 범위를 줄여준다.",
+    "longDef_ko": "결제 토큰화는 EMVCo의 EMV Payment Tokenisation Specification으로 표준화되어 있으며, 결제 토큰을 생성·역토큰화하는 Token Service Provider(TSP)와 토큰을 요청하는 Token Requestor(가맹점·지갑 제공자·발급사 등)의 역할을 정의한다. 토큰에는 특정 가맹점·채널·기기로 사용을 제한하는 도메인 통제(domain controls)를 부여할 수 있어, 탈취되어도 원본 PAN보다 훨씬 쓸모가 적다. 카드 네트워크가 제공하는 네트워크 토큰화는 카드가 재발급되어도 card-on-file 자격증명을 최신으로 유지해, 정기적 여행 청구의 승인율을 높인다. 토큰화는 종단간 암호화와 다른데, 토큰은 PAN을 대체한 별개의 값인 반면 암호화는 키로 PAN을 가역적으로 변환한 것이다. 여행 분야에서 OTA·항공사·호텔은 토큰화로 투숙객·여행자 카드 정보를 안전하게 보관하고, 원본 PAN을 노출하지 않은 채 Merchant of Record나 Acquirer에 결제 데이터를 전달한다.",
+    "providerTerms": [
+      {
+        "provider": "Visa / Mastercard",
+        "term": "Network Token",
+        "context": "Scheme-level tokenization that replaces a card-on-file PAN with a network-issued token kept current across reissuance.",
+        "context_ko": "card-on-file PAN을 네트워크 발급 토큰으로 대체하고 카드 재발급 시에도 최신으로 유지하는 카드 네트워크 차원의 토큰화.",
+        "relationship": "narrower"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "PCI DSS"
+      },
+      {
+        "type": "related",
+        "targetTerm": "VCC"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Merchant of Record"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Acquirer"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "VCC",
+        "explanation": "A VCC is a real, spendable virtual card number generated for a specific payment (often B2B supplier settlement), while a token is a non-spendable surrogate that maps back to an existing underlying card PAN.",
+        "explanation_ko": "VCC는 특정 결제(흔히 B2B 공급사 정산)를 위해 생성된 실제 사용 가능한 가상 카드 번호인 반면, 토큰은 기존 기초 카드 PAN으로 다시 매핑되는 사용 불가한 대체값이다."
+      },
+      {
+        "targetTerm": "PCI DSS",
+        "explanation": "Tokenization is a technique; PCI DSS is the compliance standard whose scope tokenization helps reduce by removing PANs from merchant systems.",
+        "explanation_ko": "토큰화는 기법이고, PCI DSS는 준수 표준이며, 토큰화는 가맹점 시스템에서 PAN을 제거해 그 적용 범위를 줄이는 데 기여한다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "EMVCo",
+        "name": "EMV Payment Tokenisation Specification – Technical Framework",
+        "version": "",
+        "section": "",
+        "url": "https://www.emvco.com/emv-technologies/payment-tokenisation/"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"15\" width=\"16\" height=\"11\" rx=\"2\"/><path d=\"M9 22h7\"/><path d=\"M24 23h6\"/><path d=\"M27 20l3 3-3 3\"/><rect x=\"30\" y=\"15\" width=\"12\" height=\"11\" rx=\"2\"/><circle cx=\"36\" cy=\"20.5\" r=\"2\"/><path d=\"M14 33v3M24 33v3M34 33v3\"/></svg>"
+  },
+  {
+    "id": "acquirer",
+    "term": "Acquirer",
+    "abbreviation": "",
+    "aliases": [
+      "acquiring bank",
+      "merchant acquirer",
+      "acquiring institution"
+    ],
+    "category": "pay",
+    "conceptType": "role",
+    "status": "active",
+    "definition": "An acquirer (acquiring bank) is the financial institution that holds a merchant's account, processes card payments on its behalf, and routes transactions through the card networks to the issuing banks. The acquirer credits the merchant for sales, manages chargebacks, and is responsible to the card schemes for the merchant's activity.",
+    "longDef": "In the four-party card model, the acquirer sits between the merchant and the card network, opposite the issuer (the cardholder's bank). The acquirer (or a payment processor acting for it) submits authorization and clearing messages, receives funds via interchange and network settlement, deducts the merchant discount rate and fees, and pays the net amount to the merchant. The acquirer also underwrites and assumes settlement risk for the merchant, handles chargeback processing, and enforces card-scheme rules including PCI DSS. In travel, an airline operating under the merchant model uses its own or a contracted acquirer to settle card sales directly, whereas agency-model sales are remitted through BSP or ARC instead; a Merchant of Record often interposes its own acquiring relationship so individual suppliers do not each need one.",
+    "standardBody": "",
+    "term_ko": "매입사 (Acquirer / 매입은행)",
+    "definition_ko": "Acquirer(매입사/매입은행)는 가맹점 계좌를 보유하고 가맹점을 대신해 카드 결제를 처리하며, 거래를 카드 네트워크를 거쳐 발급은행으로 라우팅하는 금융기관이다. 매입사는 판매 대금을 가맹점에 입금하고 Chargeback을 관리하며, 가맹점 활동에 대해 카드 네트워크에 책임을 진다.",
+    "longDef_ko": "4자 카드 모델에서 매입사는 가맹점과 카드 네트워크 사이에 위치하며, 카드 소지자의 은행인 발급사(issuer)의 반대편에 있다. 매입사(또는 그를 대신하는 결제 프로세서)는 승인·청산 메시지를 전송하고, 인터체인지(Interchange)와 네트워크 정산을 통해 자금을 받아 가맹점 할인율(merchant discount rate)과 수수료를 공제한 뒤 순액을 가맹점에 지급한다. 또한 가맹점을 심사하고 정산 위험을 부담하며, Chargeback 처리와 PCI DSS 등 카드 네트워크 규칙 준수를 집행한다. 여행 분야에서 Merchant Model로 운영하는 항공사는 자체 또는 계약된 매입사를 통해 카드 판매를 직접 정산하지만, Agency Model 판매는 대신 BSP나 ARC를 통해 송금된다. Merchant of Record는 흔히 자체 매입 관계를 끼워 넣어 개별 공급사가 각각 매입사를 둘 필요가 없게 한다.",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Interchange Fee"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Chargeback"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Merchant of Record"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Merchant Model"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Settlement Cycle"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Merchant of Record",
+        "explanation": "The acquirer is the bank that processes and settles card transactions; the Merchant of Record is the legal seller responsible to the cardholder for the sale, which contracts with an acquirer but is not itself one.",
+        "explanation_ko": "Acquirer는 카드 거래를 처리·정산하는 은행이고, Merchant of Record는 판매에 대해 카드 소지자에게 책임지는 법적 판매자로서 매입사와 계약하지만 그 자신이 매입사는 아니다."
+      },
+      {
+        "targetTerm": "IATA Clearing House",
+        "explanation": "The acquirer settles consumer card payments between merchants and issuers via the card networks, whereas the IATA Clearing House settles obligations between airlines and other industry members.",
+        "explanation_ko": "Acquirer는 카드 네트워크를 통해 가맹점과 발급사 간 소비자 카드 결제를 정산하는 반면, IATA Clearing House는 항공사 등 업계 회원 간 채무를 정산한다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "EMVCo",
+        "name": "EMVCo Terminology / Book of Glossary",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 6l16 7v3H8v-3z\"/><line x1=\"12\" y1=\"19\" x2=\"12\" y2=\"34\"/><line x1=\"20\" y1=\"19\" x2=\"20\" y2=\"34\"/><line x1=\"28\" y1=\"19\" x2=\"28\" y2=\"34\"/><line x1=\"36\" y1=\"19\" x2=\"36\" y2=\"34\"/><line x1=\"8\" y1=\"38\" x2=\"40\" y2=\"38\"/></svg>"
+  },
+  {
+    "id": "interchange-fee",
+    "term": "Interchange Fee",
+    "abbreviation": "",
+    "aliases": [
+      "interchange",
+      "interchange rate"
+    ],
+    "category": "pay",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "An interchange fee is a fee paid by the merchant's acquirer to the cardholder's issuing bank on each card transaction, set by the card networks and not directly negotiable by merchants. It is the largest component of the cost of accepting card payments and is typically a percentage of the transaction plus a fixed amount.",
+    "longDef": "Interchange fees are established by the card networks (Visa, Mastercard, and others) and flow from the acquirer to the issuer to compensate the issuer for funding, fraud, and operational costs. Although the merchant does not pay interchange directly, it is passed through within the merchant discount rate the acquirer charges, alongside network assessments and acquirer markup. Interchange rates vary by card type (consumer vs. commercial, debit vs. credit, rewards), channel (card-present vs. card-not-present), merchant category, and region; many jurisdictions, including the EU under the Interchange Fee Regulation, cap consumer card interchange. For travel merchants, card-not-present and cross-border bookings often attract higher interchange, and the use of virtual cards (VCC) for supplier settlement has its own interchange economics that influence acceptance.",
+    "standardBody": "",
+    "term_ko": "인터체인지 수수료 (Interchange Fee)",
+    "definition_ko": "Interchange Fee(인터체인지 수수료)는 카드 거래마다 가맹점의 매입사(Acquirer)가 카드 소지자의 발급은행에 지급하는 수수료로, 카드 네트워크가 정하며 가맹점이 직접 협상할 수 없다. 카드 수납 비용의 가장 큰 구성 요소이며, 보통 거래액의 일정 비율에 고정 금액을 더한 형태다.",
+    "longDef_ko": "인터체인지 수수료는 카드 네트워크(Visa, Mastercard 등)가 정하며, 매입사에서 발급사로 흘러 발급사의 자금조달·사기·운영 비용을 보전한다. 가맹점이 인터체인지를 직접 내지는 않지만, 매입사가 부과하는 가맹점 할인율(merchant discount rate) 안에 네트워크 분담금과 매입사 마진과 함께 전가된다. 인터체인지 요율은 카드 유형(소비자/법인, 직불/신용, 리워드), 채널(대면/비대면), 가맹점 업종, 지역에 따라 다르며, EU의 Interchange Fee Regulation 등 많은 지역이 소비자 카드 인터체인지에 상한을 둔다. 여행 가맹점의 경우 비대면(CNP) 및 국경 간 예약은 흔히 높은 인터체인지가 적용되고, 공급사 정산용 가상카드(VCC) 사용은 수납에 영향을 주는 별도의 인터체인지 경제구조를 가진다.",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Acquirer"
+      },
+      {
+        "type": "related",
+        "targetTerm": "VCC"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Chargeback"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Chargeback",
+        "explanation": "Interchange is a per-transaction cost paid to the issuer for processing a card payment, whereas a chargeback is a reversal of a transaction initiated by the cardholder or issuer; they are unrelated mechanisms though both flow through the acquirer.",
+        "explanation_ko": "인터체인지는 카드 결제 처리 대가로 발급사에 지급하는 거래당 비용인 반면, Chargeback은 카드 소지자나 발급사가 개시하는 거래 취소(반환)다. 둘 다 매입사를 거치지만 서로 다른 별개의 메커니즘이다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "Mastercard",
+        "name": "Merchant Interchange Rates",
+        "version": "",
+        "section": "",
+        "url": "https://www.mastercard.com/us/en/business/support/merchant-interchange-rates.html"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"7\" y=\"14\" width=\"24\" height=\"15\" rx=\"2\"/><line x1=\"7\" y1=\"19\" x2=\"31\" y2=\"19\"/><circle cx=\"36\" cy=\"32\" r=\"7\"/><path d=\"M36 29v3l2 1.5\"/><path d=\"M33.5 30.5v-2h2\"/></svg>"
+  },
+  {
+    "id": "settlement-cycle",
+    "term": "Settlement Cycle",
+    "abbreviation": "",
+    "aliases": [
+      "settlement period",
+      "billing and settlement cycle"
+    ],
+    "category": "pay",
+    "conceptType": "process",
+    "status": "active",
+    "definition": "A settlement cycle is the defined recurring period over which transactions are accumulated, billed, netted, and the resulting funds transferred between parties. In airline distribution it governs how sales reported through BSP or ARC are billed to agents and paid to airlines on a fixed calendar.",
+    "longDef": "In agency settlement, the BSP and ARC publish a reporting and remittance calendar that divides each month into settlement (billing) periods; sales and refunds in a period are netted, billed to agents, and the net amount is settled by direct debit on the remittance date, with funds then disbursed to the participating airlines. In card payments, the settlement cycle is the schedule on which the acquirer batches authorized transactions, the networks clear and net them between acquirers and issuers, and funds reach the merchant (often T+1 to T+3 business days depending on the acquirer and card type). The IATA Clearing House operates its own settlement calendar for interline and other inter-airline obligations. Settlement frequency and timing directly affect a travel business's working capital and exposure to counterparty default.",
+    "standardBody": "IATA",
+    "term_ko": "정산 주기 (Settlement Cycle)",
+    "definition_ko": "Settlement Cycle(정산 주기)는 거래가 누적·청구·상계되고 그 결과 자금이 당사자 간에 이전되는, 정해진 반복 기간이다. 항공 유통에서는 BSP나 ARC를 통해 보고된 판매가 고정된 달력에 따라 여행사에 청구되고 항공사에 지급되는 방식을 규율한다.",
+    "longDef_ko": "여행사 정산에서 BSP와 ARC는 매월을 여러 정산(청구) 기간으로 나누는 보고·송금 달력을 공표한다. 한 기간의 판매와 환불은 상계되어 여행사에 청구되고, 순액은 송금일(remittance date)에 자동이체로 정산되며, 이후 자금이 참여 항공사에 배분된다. 카드 결제에서 정산 주기는 매입사(Acquirer)가 승인 거래를 배치 처리하고, 네트워크가 매입사와 발급사 간에 청산·상계하며, 자금이 가맹점에 도달하는 일정으로, 매입사와 카드 유형에 따라 보통 영업일 기준 T+1~T+3이다. IATA Clearing House는 Interline 등 항공사 간 채무에 대해 자체 정산 달력을 운영한다. 정산 빈도와 시점은 여행 사업자의 운전자본과 거래상대방 부도 노출에 직접적인 영향을 준다.",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Remittance"
+      },
+      {
+        "type": "related",
+        "targetTerm": "BSP"
+      },
+      {
+        "type": "related",
+        "targetTerm": "ARC"
+      },
+      {
+        "type": "related",
+        "targetTerm": "IATA Clearing House"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Acquirer"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Remittance",
+        "explanation": "The settlement cycle is the calendar and periodicity that determines when funds move; remittance is the specific funding event (agent paying the net amount) that takes place within that cycle.",
+        "explanation_ko": "Settlement Cycle은 자금이 언제 이동하는지를 정하는 달력·주기이고, Remittance는 그 주기 안에서 일어나는 구체적 자금 납입 사건(여행사가 순액을 납부하는 것)이다."
+      },
+      {
+        "targetTerm": "IATA Clearing House",
+        "explanation": "The IATA Clearing House is an institution that nets and settles inter-airline accounts; a settlement cycle is the timing structure on which it and other settlement systems operate.",
+        "explanation_ko": "IATA Clearing House는 항공사 간 계정을 상계·정산하는 기관이고, Settlement Cycle은 그 기관과 다른 정산 시스템이 작동하는 시점 구조다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "IATA",
+        "name": "BSP Reporting and Remittance Calendar / Passenger Agency Conference Resolutions",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M38 16a16 16 0 1 0 4 14\"/><path d=\"M38 8v8h-8\"/><circle cx=\"24\" cy=\"24\" r=\"3.5\"/><path d=\"M24 16v3M24 29v3\"/></svg>"
   }
 ]

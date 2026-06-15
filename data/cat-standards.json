@@ -4,7 +4,10 @@
     "term": "GDS",
     "term_ko": "글로벌 유통 시스템(GDS)",
     "abbreviation": "GDS",
-    "aliases": ["Global Distribution System", "Computer Reservation System (legacy)"],
+    "aliases": [
+      "Global Distribution System",
+      "Computer Reservation System (legacy)"
+    ],
     "category": "standards",
     "conceptType": "provider-term",
     "status": "active",
@@ -14,35 +17,98 @@
     "longDef_ko": "GDS는 1960~70년대 항공사 소유의 예약 시스템(CRS)에서 발전했다. 전통적으로 EDIFACT와 자체 메시징, ATPCO에 등록된 운임에 의존하며, 예약을 PNR에 보관하고 BSP/ARC를 통해 발권한다. NDC와 직접 연결(direct connect) API가 점차 기존 GDS 유통을 보완하거나 우회하고 있다.",
     "standardBody": "",
     "providerTerms": [
-      {"provider": "Amadeus", "term": "Amadeus GDS", "context": "One of the three major global GDS platforms", "context_ko": "3대 글로벌 GDS 플랫폼 중 하나", "relationship": "narrower"},
-      {"provider": "Sabre", "term": "Sabre GDS", "context": "Major global GDS platform", "context_ko": "주요 글로벌 GDS 플랫폼", "relationship": "narrower"},
-      {"provider": "Travelport", "term": "Galileo / Apollo / Worldspan", "context": "Travelport's GDS platforms", "context_ko": "Travelport의 GDS 플랫폼", "relationship": "narrower"}
+      {
+        "provider": "Amadeus",
+        "term": "Amadeus GDS",
+        "context": "One of the three major global GDS platforms",
+        "context_ko": "3대 글로벌 GDS 플랫폼 중 하나",
+        "relationship": "narrower"
+      },
+      {
+        "provider": "Sabre",
+        "term": "Sabre GDS",
+        "context": "Major global GDS platform",
+        "context_ko": "주요 글로벌 GDS 플랫폼",
+        "relationship": "narrower"
+      },
+      {
+        "provider": "Travelport",
+        "term": "Galileo / Apollo / Worldspan",
+        "context": "Travelport's GDS platforms",
+        "context_ko": "Travelport의 GDS 플랫폼",
+        "relationship": "narrower"
+      }
     ],
     "relationships": [
-      {"type": "related", "targetTerm": "NDC"},
-      {"type": "related", "targetTerm": "OTA (Online Travel Agency)"},
-      {"type": "related", "targetTerm": "PNR"},
-      {"type": "related", "targetTerm": "ATPCO"},
-      {"type": "related", "targetTerm": "Pseudo City Code"},
-      {"type": "related", "targetTerm": "BSP"}
+      {
+        "type": "related",
+        "targetTerm": "NDC"
+      },
+      {
+        "type": "related",
+        "targetTerm": "OTA (Online Travel Agency)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "PNR"
+      },
+      {
+        "type": "related",
+        "targetTerm": "ATPCO"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Pseudo City Code"
+      },
+      {
+        "type": "related",
+        "targetTerm": "BSP"
+      }
     ],
     "distinctions": [
-      {"targetTerm": "NDC", "explanation": "GDS is the distribution platform/intermediary; NDC is an XML messaging standard that changes how content (including via GDS) is shopped and sold.", "explanation_ko": "GDS는 유통 플랫폼이자 중개자이고, NDC는 콘텐츠를 조회하고 판매하는 방식을 바꾸는 XML 메시징 표준이다(GDS를 통한 콘텐츠도 포함)."},
-      {"targetTerm": "OTA (Online Travel Agency)", "explanation": "A GDS distributes supplier content to sellers; an OTA is a seller that consumes GDS (or direct) content to sell to consumers.", "explanation_ko": "GDS는 공급사 콘텐츠를 판매자에게 유통하고, OTA는 GDS(또는 직접 연결) 콘텐츠를 받아 소비자에게 판매하는 판매자이다."},
-      {"targetTerm": "CRS", "explanation": "GDS aggregates multiple suppliers across the industry; a CRS is a single carrier's or hotel's own reservation system.", "explanation_ko": "GDS는 업계 전반의 여러 공급사를 통합하고, CRS는 개별 항공사 또는 호텔 자체의 예약 시스템이다."}
+      {
+        "targetTerm": "NDC",
+        "explanation": "GDS is the distribution platform/intermediary; NDC is an XML messaging standard that changes how content (including via GDS) is shopped and sold.",
+        "explanation_ko": "GDS는 유통 플랫폼이자 중개자이고, NDC는 콘텐츠를 조회하고 판매하는 방식을 바꾸는 XML 메시징 표준이다(GDS를 통한 콘텐츠도 포함)."
+      },
+      {
+        "targetTerm": "OTA (Online Travel Agency)",
+        "explanation": "A GDS distributes supplier content to sellers; an OTA is a seller that consumes GDS (or direct) content to sell to consumers.",
+        "explanation_ko": "GDS는 공급사 콘텐츠를 판매자에게 유통하고, OTA는 GDS(또는 직접 연결) 콘텐츠를 받아 소비자에게 판매하는 판매자이다."
+      },
+      {
+        "targetTerm": "CRS",
+        "explanation": "GDS aggregates multiple suppliers across the industry; a CRS is a single carrier's or hotel's own reservation system.",
+        "explanation_ko": "GDS는 업계 전반의 여러 공급사를 통합하고, CRS는 개별 항공사 또는 호텔 자체의 예약 시스템이다."
+      }
     ],
     "sources": [
-      {"name": "Airline Distribution overview", "org": "IATA", "version": "", "section": "", "url": ""},
-      {"name": "Global Distribution System", "org": "Amadeus / Sabre / Travelport documentation", "version": "", "section": "", "url": ""}
+      {
+        "name": "Airline Distribution overview",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Global Distribution System",
+        "org": "Amadeus / Sabre / Travelport documentation",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
     ],
-    "lastReviewed": "2026-06-15"
+    "lastReviewed": "2026-06-15",
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"10\"/><path d=\"M14 24h20M24 14v20\"/><path d=\"M18 17a14 14 0 0 0 0 14M30 17a14 14 0 0 1 0 14\"/><path d=\"M24 24L10 38M24 24l14-14M24 24L10 10M24 24l14 14\"/><circle cx=\"10\" cy=\"10\" r=\"2\"/><circle cx=\"38\" cy=\"10\" r=\"2\"/><circle cx=\"10\" cy=\"38\" r=\"2\"/><circle cx=\"38\" cy=\"38\" r=\"2\"/></svg>"
   },
   {
     "id": "ndc",
     "term": "NDC",
     "term_ko": "신유통역량(NDC)",
     "abbreviation": "NDC",
-    "aliases": ["New Distribution Capability"],
+    "aliases": [
+      "New Distribution Capability"
+    ],
     "category": "standards",
     "conceptType": "standard",
     "status": "active",
@@ -53,31 +119,80 @@
     "standardBody": "IATA",
     "providerTerms": [],
     "relationships": [
-      {"type": "related", "targetTerm": "GDS"},
-      {"type": "related", "targetTerm": "Offer"},
-      {"type": "related", "targetTerm": "Order"},
-      {"type": "related", "targetTerm": "ONE Order"},
-      {"type": "related", "targetTerm": "Ancillary Service"},
-      {"type": "related", "targetTerm": "Fare Family"},
-      {"type": "contrasts", "targetTerm": "OpenTravel Alliance"}
+      {
+        "type": "related",
+        "targetTerm": "GDS"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Offer"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Order"
+      },
+      {
+        "type": "related",
+        "targetTerm": "ONE Order"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Ancillary Service"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Fare Family"
+      },
+      {
+        "type": "contrasts",
+        "targetTerm": "OpenTravel Alliance"
+      }
     ],
     "distinctions": [
-      {"targetTerm": "GDS", "explanation": "NDC is a messaging standard for distributing content; a GDS is a distribution platform that may carry NDC or legacy content.", "explanation_ko": "NDC는 콘텐츠를 유통하기 위한 메시징 표준이고, GDS는 NDC 콘텐츠나 레거시 콘텐츠를 실어 나를 수 있는 유통 플랫폼이다."},
-      {"targetTerm": "OpenTravel Alliance", "explanation": "NDC is IATA's air-distribution XML standard; OpenTravel is a separate, broader cross-sector travel XML schema body.", "explanation_ko": "NDC는 IATA의 항공 유통 XML 표준이고, OpenTravel은 이와 별개로 여러 산업 분야를 아우르는 더 광범위한 여행 XML 스키마 단체이다."},
-      {"targetTerm": "ONE Order", "explanation": "NDC standardizes shopping/booking offers and orders; ONE Order standardizes the single customer order record that replaces PNR/e-ticket/EMD.", "explanation_ko": "NDC는 조회/예약 단계의 오퍼와 주문을 표준화하고, ONE Order는 PNR/e-ticket/EMD를 대체하는 단일 고객 주문 기록을 표준화한다."}
+      {
+        "targetTerm": "GDS",
+        "explanation": "NDC is a messaging standard for distributing content; a GDS is a distribution platform that may carry NDC or legacy content.",
+        "explanation_ko": "NDC는 콘텐츠를 유통하기 위한 메시징 표준이고, GDS는 NDC 콘텐츠나 레거시 콘텐츠를 실어 나를 수 있는 유통 플랫폼이다."
+      },
+      {
+        "targetTerm": "OpenTravel Alliance",
+        "explanation": "NDC is IATA's air-distribution XML standard; OpenTravel is a separate, broader cross-sector travel XML schema body.",
+        "explanation_ko": "NDC는 IATA의 항공 유통 XML 표준이고, OpenTravel은 이와 별개로 여러 산업 분야를 아우르는 더 광범위한 여행 XML 스키마 단체이다."
+      },
+      {
+        "targetTerm": "ONE Order",
+        "explanation": "NDC standardizes shopping/booking offers and orders; ONE Order standardizes the single customer order record that replaces PNR/e-ticket/EMD.",
+        "explanation_ko": "NDC는 조회/예약 단계의 오퍼와 주문을 표준화하고, ONE Order는 PNR/e-ticket/EMD를 대체하는 단일 고객 주문 기록을 표준화한다."
+      }
     ],
     "sources": [
-      {"name": "New Distribution Capability (NDC)", "org": "IATA", "version": "", "section": "", "url": ""},
-      {"name": "NDC Standards / Passenger Standards Conference", "org": "IATA", "version": "", "section": "", "url": ""}
+      {
+        "name": "New Distribution Capability (NDC)",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "NDC Standards / Passenger Standards Conference",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
     ],
-    "lastReviewed": "2026-06-15"
+    "lastReviewed": "2026-06-15",
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"10\" width=\"32\" height=\"24\" rx=\"3\"/><path d=\"M8 18h32\"/><circle cx=\"12\" cy=\"14\" r=\"0.5\" fill=\"currentColor\"/><path d=\"M14 26h8M14 30h12\"/><path d=\"M30 24l5 4-5 4\"/><path d=\"M18 38h12M24 34v4\"/></svg>"
   },
   {
     "id": "offer",
     "term": "Offer",
     "term_ko": "오퍼(Offer)",
     "abbreviation": "",
-    "aliases": ["Air Offer", "NDC Offer"],
+    "aliases": [
+      "Air Offer",
+      "NDC Offer"
+    ],
     "category": "standards",
     "conceptType": "standard-term",
     "status": "active",
@@ -88,28 +203,68 @@
     "standardBody": "IATA",
     "providerTerms": [],
     "relationships": [
-      {"type": "related", "targetTerm": "Order"},
-      {"type": "related", "targetTerm": "NDC"},
-      {"type": "related", "targetTerm": "ONE Order"},
-      {"type": "related", "targetTerm": "Availability"},
-      {"type": "related", "targetTerm": "Ancillary Service"}
+      {
+        "type": "related",
+        "targetTerm": "Order"
+      },
+      {
+        "type": "related",
+        "targetTerm": "NDC"
+      },
+      {
+        "type": "related",
+        "targetTerm": "ONE Order"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Availability"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Ancillary Service"
+      }
     ],
     "distinctions": [
-      {"targetTerm": "Order", "explanation": "An Offer is a non-binding priced proposal before purchase; an Order is the committed record created when the customer accepts an Offer.", "explanation_ko": "오퍼는 구매 이전의 구속력 없는 가격 제안이고, 주문은 고객이 오퍼를 수락할 때 생성되는 확정 기록이다."},
-      {"targetTerm": "Availability", "explanation": "Availability indicates whether seats/classes are sellable; an Offer is a constructed, priced bundle proposal built on top of availability.", "explanation_ko": "가용성(Availability)은 좌석/등급의 판매 가능 여부를 나타내고, 오퍼는 그 가용성을 토대로 구성하여 가격을 책정한 묶음 제안이다."}
+      {
+        "targetTerm": "Order",
+        "explanation": "An Offer is a non-binding priced proposal before purchase; an Order is the committed record created when the customer accepts an Offer.",
+        "explanation_ko": "오퍼는 구매 이전의 구속력 없는 가격 제안이고, 주문은 고객이 오퍼를 수락할 때 생성되는 확정 기록이다."
+      },
+      {
+        "targetTerm": "Availability",
+        "explanation": "Availability indicates whether seats/classes are sellable; an Offer is a constructed, priced bundle proposal built on top of availability.",
+        "explanation_ko": "가용성(Availability)은 좌석/등급의 판매 가능 여부를 나타내고, 오퍼는 그 가용성을 토대로 구성하여 가격을 책정한 묶음 제안이다."
+      }
     ],
     "sources": [
-      {"name": "Offer and Order (Airline Retailing)", "org": "IATA", "version": "", "section": "", "url": ""},
-      {"name": "NDC Standards", "org": "IATA", "version": "", "section": "", "url": ""}
+      {
+        "name": "Offer and Order (Airline Retailing)",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "NDC Standards",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
     ],
-    "lastReviewed": "2026-06-15"
+    "lastReviewed": "2026-06-15",
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 8l9 5v10c0 7-5 12-9 13-4-1-9-6-9-13V13z\"/><path d=\"M20 23l3 3 6-7\"/><circle cx=\"36\" cy=\"36\" r=\"7\"/><path d=\"M33 36l2 2 4-4\"/></svg>"
   },
   {
     "id": "order",
     "term": "Order",
     "term_ko": "주문(Order)",
     "abbreviation": "",
-    "aliases": ["Air Order", "NDC Order", "Customer Order"],
+    "aliases": [
+      "Air Order",
+      "NDC Order",
+      "Customer Order"
+    ],
     "category": "standards",
     "conceptType": "standard-term",
     "status": "active",
@@ -120,30 +275,76 @@
     "standardBody": "IATA",
     "providerTerms": [],
     "relationships": [
-      {"type": "related", "targetTerm": "Offer"},
-      {"type": "related", "targetTerm": "NDC"},
-      {"type": "related", "targetTerm": "ONE Order"},
-      {"type": "related", "targetTerm": "PNR"},
-      {"type": "related", "targetTerm": "E-ticket"},
-      {"type": "related", "targetTerm": "EMD"}
+      {
+        "type": "related",
+        "targetTerm": "Offer"
+      },
+      {
+        "type": "related",
+        "targetTerm": "NDC"
+      },
+      {
+        "type": "related",
+        "targetTerm": "ONE Order"
+      },
+      {
+        "type": "related",
+        "targetTerm": "PNR"
+      },
+      {
+        "type": "related",
+        "targetTerm": "E-ticket"
+      },
+      {
+        "type": "related",
+        "targetTerm": "EMD"
+      }
     ],
     "distinctions": [
-      {"targetTerm": "Offer", "explanation": "An Order is the committed purchase record; an Offer is the priced proposal the customer accepts to create the Order.", "explanation_ko": "주문은 확정된 구매 기록이고, 오퍼는 고객이 수락하여 주문을 생성하는 가격이 책정된 제안이다."},
-      {"targetTerm": "PNR", "explanation": "An Order is the modern single sales/fulfillment record intended to replace the legacy PNR plus separate e-ticket/EMD documents.", "explanation_ko": "주문은 레거시 PNR과 별도의 e-ticket/EMD 문서를 대체하기 위한 현대적 단일 판매/이행 기록이다."},
-      {"targetTerm": "ONE Order", "explanation": "Order is the data object; ONE Order is the IATA standard/initiative defining and promoting that single Order record.", "explanation_ko": "Order는 데이터 객체이고, ONE Order는 그 단일 주문 기록을 정의하고 확산시키는 IATA 표준이자 이니셔티브이다."}
+      {
+        "targetTerm": "Offer",
+        "explanation": "An Order is the committed purchase record; an Offer is the priced proposal the customer accepts to create the Order.",
+        "explanation_ko": "주문은 확정된 구매 기록이고, 오퍼는 고객이 수락하여 주문을 생성하는 가격이 책정된 제안이다."
+      },
+      {
+        "targetTerm": "PNR",
+        "explanation": "An Order is the modern single sales/fulfillment record intended to replace the legacy PNR plus separate e-ticket/EMD documents.",
+        "explanation_ko": "주문은 레거시 PNR과 별도의 e-ticket/EMD 문서를 대체하기 위한 현대적 단일 판매/이행 기록이다."
+      },
+      {
+        "targetTerm": "ONE Order",
+        "explanation": "Order is the data object; ONE Order is the IATA standard/initiative defining and promoting that single Order record.",
+        "explanation_ko": "Order는 데이터 객체이고, ONE Order는 그 단일 주문 기록을 정의하고 확산시키는 IATA 표준이자 이니셔티브이다."
+      }
     ],
     "sources": [
-      {"name": "Offer and Order (Airline Retailing)", "org": "IATA", "version": "", "section": "", "url": ""},
-      {"name": "ONE Order", "org": "IATA", "version": "", "section": "", "url": ""}
+      {
+        "name": "Offer and Order (Airline Retailing)",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "ONE Order",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
     ],
-    "lastReviewed": "2026-06-15"
+    "lastReviewed": "2026-06-15",
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 6h18l8 8v28a2 2 0 0 1-2 2H12a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z\"/><path d=\"M30 6v8h8\"/><path d=\"M16 22l2 2 3-3\"/><path d=\"M25 23h8\"/><path d=\"M16 30l2 2 3-3\"/><path d=\"M25 31h8\"/></svg>"
   },
   {
     "id": "ota-online-travel-agency",
     "term": "OTA (Online Travel Agency)",
     "term_ko": "온라인 여행사(OTA)",
     "abbreviation": "OTA",
-    "aliases": ["Online Travel Agency", "Online Travel Agent"],
+    "aliases": [
+      "Online Travel Agency",
+      "Online Travel Agent"
+    ],
     "category": "standards",
     "conceptType": "business-term",
     "status": "active",
@@ -154,30 +355,74 @@
     "standardBody": "",
     "providerTerms": [],
     "relationships": [
-      {"type": "related", "targetTerm": "GDS"},
-      {"type": "related", "targetTerm": "Metasearch"},
-      {"type": "related", "targetTerm": "Aggregator"},
-      {"type": "related", "targetTerm": "Bedbank"},
-      {"type": "related", "targetTerm": "Merchant Model"},
-      {"type": "related", "targetTerm": "Agency Model"},
-      {"type": "related", "targetTerm": "Merchant of Record"}
+      {
+        "type": "related",
+        "targetTerm": "GDS"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Metasearch"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Aggregator"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Bedbank"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Merchant Model"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Agency Model"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Merchant of Record"
+      }
     ],
     "distinctions": [
-      {"targetTerm": "OpenTravel Alliance", "explanation": "This OTA is an online travel retailer (agency); the identically abbreviated OpenTravel Alliance is an XML messaging standards body — entirely unrelated.", "explanation_ko": "여기서 OTA는 온라인 여행 소매업체(여행사)이고, 동일하게 약칭되는 OpenTravel Alliance는 XML 메시징 표준 단체로 전혀 관련이 없다."},
-      {"targetTerm": "Metasearch", "explanation": "An OTA sells and processes the booking itself; a metasearch only compares prices and refers the user to an OTA or supplier to book.", "explanation_ko": "OTA는 예약을 직접 판매하고 처리하며, 메타서치는 가격만 비교하고 예약을 위해 사용자를 OTA나 공급사로 연결한다."},
-      {"targetTerm": "GDS", "explanation": "An OTA is a consumer-facing seller; a GDS is the wholesale distribution platform that supplies content to sellers.", "explanation_ko": "OTA는 소비자 대상 판매자이고, GDS는 판매자에게 콘텐츠를 공급하는 도매 유통 플랫폼이다."}
+      {
+        "targetTerm": "OpenTravel Alliance",
+        "explanation": "This OTA is an online travel retailer (agency); the identically abbreviated OpenTravel Alliance is an XML messaging standards body — entirely unrelated.",
+        "explanation_ko": "여기서 OTA는 온라인 여행 소매업체(여행사)이고, 동일하게 약칭되는 OpenTravel Alliance는 XML 메시징 표준 단체로 전혀 관련이 없다."
+      },
+      {
+        "targetTerm": "Metasearch",
+        "explanation": "An OTA sells and processes the booking itself; a metasearch only compares prices and refers the user to an OTA or supplier to book.",
+        "explanation_ko": "OTA는 예약을 직접 판매하고 처리하며, 메타서치는 가격만 비교하고 예약을 위해 사용자를 OTA나 공급사로 연결한다."
+      },
+      {
+        "targetTerm": "GDS",
+        "explanation": "An OTA is a consumer-facing seller; a GDS is the wholesale distribution platform that supplies content to sellers.",
+        "explanation_ko": "OTA는 소비자 대상 판매자이고, GDS는 판매자에게 콘텐츠를 공급하는 도매 유통 플랫폼이다."
+      }
     ],
     "sources": [
-      {"name": "Online Travel Agency (industry definition)", "org": "Phocuswright / industry usage", "version": "", "section": "", "url": ""}
+      {
+        "name": "Online Travel Agency (industry definition)",
+        "org": "Phocuswright / industry usage",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
     ],
-    "lastReviewed": "2026-06-15"
+    "lastReviewed": "2026-06-15",
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"10\" width=\"32\" height=\"24\" rx=\"2\"/><path d=\"M8 16h32\"/><path d=\"M18 42h12M24 34v8\"/><path d=\"M28 20l-7 3 1 4M21 23l3 3\"/><circle cx=\"29\" cy=\"21\" r=\"1\" fill=\"currentColor\"/></svg>"
   },
   {
     "id": "opentravel-alliance",
     "term": "OpenTravel Alliance",
     "term_ko": "OpenTravel Alliance(오픈트래블 얼라이언스)",
     "abbreviation": "OTA",
-    "aliases": ["OpenTravel", "OTA Specification", "OpenTravel Alliance Message Specification"],
+    "aliases": [
+      "OpenTravel",
+      "OTA Specification",
+      "OpenTravel Alliance Message Specification"
+    ],
     "category": "standards",
     "conceptType": "standard",
     "status": "active",
@@ -188,28 +433,65 @@
     "standardBody": "OpenTravel",
     "providerTerms": [],
     "relationships": [
-      {"type": "related", "targetTerm": "HTNG"},
-      {"type": "related", "targetTerm": "NDC"},
-      {"type": "related", "targetTerm": "ARI"},
-      {"type": "related", "targetTerm": "Channel Manager"},
-      {"type": "related", "targetTerm": "CRS"}
+      {
+        "type": "related",
+        "targetTerm": "HTNG"
+      },
+      {
+        "type": "related",
+        "targetTerm": "NDC"
+      },
+      {
+        "type": "related",
+        "targetTerm": "ARI"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Channel Manager"
+      },
+      {
+        "type": "related",
+        "targetTerm": "CRS"
+      }
     ],
     "distinctions": [
-      {"targetTerm": "OTA (Online Travel Agency)", "explanation": "OpenTravel Alliance is an XML standards body (its messages are abbreviated 'OTA'); an Online Travel Agency is a consumer-facing travel retailer — same abbreviation, unrelated concepts.", "explanation_ko": "OpenTravel Alliance는 XML 표준 단체(그 메시지가 'OTA'로 약칭됨)이고, 온라인 여행사는 소비자 대상 여행 소매업체이다. 약어는 같지만 서로 무관한 개념이다."},
-      {"targetTerm": "HTNG", "explanation": "OpenTravel maintains general cross-sector travel XML message specifications; HTNG focuses on hospitality technology interoperability standards and frameworks.", "explanation_ko": "OpenTravel은 분야를 아우르는 일반적인 여행 XML 메시지 명세를 유지하고, HTNG는 호스피탈리티 기술 상호운용성 표준과 프레임워크에 집중한다."},
-      {"targetTerm": "NDC", "explanation": "OpenTravel is a broad multi-sector travel XML standard; NDC is IATA's air-specific distribution XML standard.", "explanation_ko": "OpenTravel은 여러 분야를 아우르는 광범위한 여행 XML 표준이고, NDC는 IATA의 항공 전용 유통 XML 표준이다."}
+      {
+        "targetTerm": "OTA (Online Travel Agency)",
+        "explanation": "OpenTravel Alliance is an XML standards body (its messages are abbreviated 'OTA'); an Online Travel Agency is a consumer-facing travel retailer — same abbreviation, unrelated concepts.",
+        "explanation_ko": "OpenTravel Alliance는 XML 표준 단체(그 메시지가 'OTA'로 약칭됨)이고, 온라인 여행사는 소비자 대상 여행 소매업체이다. 약어는 같지만 서로 무관한 개념이다."
+      },
+      {
+        "targetTerm": "HTNG",
+        "explanation": "OpenTravel maintains general cross-sector travel XML message specifications; HTNG focuses on hospitality technology interoperability standards and frameworks.",
+        "explanation_ko": "OpenTravel은 분야를 아우르는 일반적인 여행 XML 메시지 명세를 유지하고, HTNG는 호스피탈리티 기술 상호운용성 표준과 프레임워크에 집중한다."
+      },
+      {
+        "targetTerm": "NDC",
+        "explanation": "OpenTravel is a broad multi-sector travel XML standard; NDC is IATA's air-specific distribution XML standard.",
+        "explanation_ko": "OpenTravel은 여러 분야를 아우르는 광범위한 여행 XML 표준이고, NDC는 IATA의 항공 전용 유통 XML 표준이다."
+      }
     ],
     "sources": [
-      {"name": "OpenTravel Specifications", "org": "OpenTravel Alliance", "version": "", "section": "", "url": ""}
+      {
+        "name": "OpenTravel Specifications",
+        "org": "OpenTravel Alliance",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
     ],
-    "lastReviewed": "2026-06-15"
+    "lastReviewed": "2026-06-15",
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"16\"/><path d=\"M8 24h32\"/><path d=\"M24 8c5 4 5 28 0 32M24 8c-5 4-5 28 0 32\"/><path d=\"M15 25l4-4 3 3 5-6 4 4\"/></svg>"
   },
   {
     "id": "htng",
     "term": "HTNG",
     "term_ko": "호스피탈리티 기술 차세대 협회(HTNG)",
     "abbreviation": "HTNG",
-    "aliases": ["Hospitality Technology Next Generation", "HTNG (now part of AHLA)"],
+    "aliases": [
+      "Hospitality Technology Next Generation",
+      "HTNG (now part of AHLA)"
+    ],
     "category": "standards",
     "conceptType": "standard",
     "status": "active",
@@ -220,25 +502,52 @@
     "standardBody": "HTNG",
     "providerTerms": [],
     "relationships": [
-      {"type": "related", "targetTerm": "OpenTravel Alliance"},
-      {"type": "related", "targetTerm": "PMS"},
-      {"type": "related", "targetTerm": "CRS"},
-      {"type": "related", "targetTerm": "Channel Manager"}
+      {
+        "type": "related",
+        "targetTerm": "OpenTravel Alliance"
+      },
+      {
+        "type": "related",
+        "targetTerm": "PMS"
+      },
+      {
+        "type": "related",
+        "targetTerm": "CRS"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Channel Manager"
+      }
     ],
     "distinctions": [
-      {"targetTerm": "OpenTravel Alliance", "explanation": "HTNG focuses on hospitality-system interoperability standards/frameworks; OpenTravel maintains the broader cross-sector travel XML message vocabulary HTNG often builds upon.", "explanation_ko": "HTNG은 호스피탈리티 시스템 상호운용성 표준과 프레임워크에 집중하고, OpenTravel은 HTNG이 흔히 기반으로 삼는 더 광범위한 범산업 여행 XML 메시지 어휘를 유지한다."}
+      {
+        "targetTerm": "OpenTravel Alliance",
+        "explanation": "HTNG focuses on hospitality-system interoperability standards/frameworks; OpenTravel maintains the broader cross-sector travel XML message vocabulary HTNG often builds upon.",
+        "explanation_ko": "HTNG은 호스피탈리티 시스템 상호운용성 표준과 프레임워크에 집중하고, OpenTravel은 HTNG이 흔히 기반으로 삼는 더 광범위한 범산업 여행 XML 메시지 어휘를 유지한다."
+      }
     ],
     "sources": [
-      {"name": "HTNG Standards and Specifications", "org": "HTNG (AHLA)", "version": "", "section": "", "url": ""}
+      {
+        "name": "HTNG Standards and Specifications",
+        "org": "HTNG (AHLA)",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
     ],
-    "lastReviewed": "2026-06-15"
+    "lastReviewed": "2026-06-15",
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 40V14l16-6 16 6v26\"/><path d=\"M4 40h40\"/><path d=\"M14 40v-8h6v8M28 40v-8h6v8\"/><path d=\"M16 20h2M22 20h2M28 20h2M16 25h2M22 25h2M28 25h2\"/></svg>"
   },
   {
     "id": "metasearch",
     "term": "Metasearch",
     "term_ko": "메타서치(가격 비교 검색)",
     "abbreviation": "",
-    "aliases": ["Metasearch Engine", "Travel Metasearch", "Price Comparison Engine"],
+    "aliases": [
+      "Metasearch Engine",
+      "Travel Metasearch",
+      "Price Comparison Engine"
+    ],
     "category": "standards",
     "conceptType": "business-term",
     "status": "active",
@@ -249,25 +558,53 @@
     "standardBody": "",
     "providerTerms": [],
     "relationships": [
-      {"type": "related", "targetTerm": "OTA (Online Travel Agency)"},
-      {"type": "related", "targetTerm": "Aggregator"},
-      {"type": "related", "targetTerm": "GDS"}
+      {
+        "type": "related",
+        "targetTerm": "OTA (Online Travel Agency)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Aggregator"
+      },
+      {
+        "type": "related",
+        "targetTerm": "GDS"
+      }
     ],
     "distinctions": [
-      {"targetTerm": "OTA (Online Travel Agency)", "explanation": "Metasearch compares prices and refers out; an OTA actually sells and processes the booking.", "explanation_ko": "메타서치는 가격을 비교하고 외부로 연결하며, OTA는 실제로 예약을 판매하고 처리한다."},
-      {"targetTerm": "Aggregator", "explanation": "Metasearch is a consumer-facing comparison/referral product; an aggregator is a back-end content consolidator that pools supplier inventory for resellers.", "explanation_ko": "메타서치는 소비자 대상 비교/연결 서비스이고, 애그리게이터는 재판매자를 위해 공급사 재고를 모으는 백엔드 콘텐츠 통합자이다."}
+      {
+        "targetTerm": "OTA (Online Travel Agency)",
+        "explanation": "Metasearch compares prices and refers out; an OTA actually sells and processes the booking.",
+        "explanation_ko": "메타서치는 가격을 비교하고 외부로 연결하며, OTA는 실제로 예약을 판매하고 처리한다."
+      },
+      {
+        "targetTerm": "Aggregator",
+        "explanation": "Metasearch is a consumer-facing comparison/referral product; an aggregator is a back-end content consolidator that pools supplier inventory for resellers.",
+        "explanation_ko": "메타서치는 소비자 대상 비교/연결 서비스이고, 애그리게이터는 재판매자를 위해 공급사 재고를 모으는 백엔드 콘텐츠 통합자이다."
+      }
     ],
     "sources": [
-      {"name": "Travel Metasearch (industry definition)", "org": "Phocuswright / industry usage", "version": "", "section": "", "url": ""}
+      {
+        "name": "Travel Metasearch (industry definition)",
+        "org": "Phocuswright / industry usage",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
     ],
-    "lastReviewed": "2026-06-15"
+    "lastReviewed": "2026-06-15",
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"21\" cy=\"21\" r=\"12\"/><path d=\"M30 30l8 8\"/><path d=\"M14 18h14M14 24h10\"/><path d=\"M27 27l3 3 3-3\" transform=\"translate(-3 -9)\"/><path d=\"M22 14l3 3 3-3\"/></svg>"
   },
   {
     "id": "aggregator",
     "term": "Aggregator",
     "term_ko": "애그리게이터(콘텐츠 통합자)",
     "abbreviation": "",
-    "aliases": ["Content Aggregator", "Inventory Aggregator", "Travel Aggregator"],
+    "aliases": [
+      "Content Aggregator",
+      "Inventory Aggregator",
+      "Travel Aggregator"
+    ],
     "category": "standards",
     "conceptType": "business-term",
     "status": "active",
@@ -278,28 +615,65 @@
     "standardBody": "",
     "providerTerms": [],
     "relationships": [
-      {"type": "related", "targetTerm": "OTA (Online Travel Agency)"},
-      {"type": "related", "targetTerm": "Metasearch"},
-      {"type": "related", "targetTerm": "GDS"},
-      {"type": "related", "targetTerm": "Bedbank"},
-      {"type": "related", "targetTerm": "NDC"}
+      {
+        "type": "related",
+        "targetTerm": "OTA (Online Travel Agency)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Metasearch"
+      },
+      {
+        "type": "related",
+        "targetTerm": "GDS"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Bedbank"
+      },
+      {
+        "type": "related",
+        "targetTerm": "NDC"
+      }
     ],
     "distinctions": [
-      {"targetTerm": "Metasearch", "explanation": "An aggregator pools supplier content into a feed/API for resellers (back-end); metasearch is a consumer-facing price-comparison and referral product.", "explanation_ko": "애그리게이터는 공급사 콘텐츠를 모아 재판매자를 위한 피드/API로 제공하는 백엔드이고, 메타서치는 소비자 대상 가격 비교 및 연결 서비스이다."},
-      {"targetTerm": "GDS", "explanation": "A GDS is a large, established global aggregation platform with ticketing/settlement; 'aggregator' is a broader term for any supplier-content consolidator, including bedbanks and NDC hubs.", "explanation_ko": "GDS는 발권/정산 기능을 갖춘 대규모의 확립된 글로벌 통합 플랫폼이고, '애그리게이터'는 베드뱅크와 NDC 허브를 포함해 공급사 콘텐츠를 통합하는 모든 주체를 아우르는 더 넓은 용어이다."},
-      {"targetTerm": "Bedbank", "explanation": "A bedbank is a specific hotel-inventory aggregator selling net rates wholesale; aggregator is the general category.", "explanation_ko": "베드뱅크는 순요금(net rate)을 도매로 판매하는 특정 호텔 재고 애그리게이터이고, 애그리게이터는 그 상위의 일반 범주이다."}
+      {
+        "targetTerm": "Metasearch",
+        "explanation": "An aggregator pools supplier content into a feed/API for resellers (back-end); metasearch is a consumer-facing price-comparison and referral product.",
+        "explanation_ko": "애그리게이터는 공급사 콘텐츠를 모아 재판매자를 위한 피드/API로 제공하는 백엔드이고, 메타서치는 소비자 대상 가격 비교 및 연결 서비스이다."
+      },
+      {
+        "targetTerm": "GDS",
+        "explanation": "A GDS is a large, established global aggregation platform with ticketing/settlement; 'aggregator' is a broader term for any supplier-content consolidator, including bedbanks and NDC hubs.",
+        "explanation_ko": "GDS는 발권/정산 기능을 갖춘 대규모의 확립된 글로벌 통합 플랫폼이고, '애그리게이터'는 베드뱅크와 NDC 허브를 포함해 공급사 콘텐츠를 통합하는 모든 주체를 아우르는 더 넓은 용어이다."
+      },
+      {
+        "targetTerm": "Bedbank",
+        "explanation": "A bedbank is a specific hotel-inventory aggregator selling net rates wholesale; aggregator is the general category.",
+        "explanation_ko": "베드뱅크는 순요금(net rate)을 도매로 판매하는 특정 호텔 재고 애그리게이터이고, 애그리게이터는 그 상위의 일반 범주이다."
+      }
     ],
     "sources": [
-      {"name": "Travel content aggregation (industry definition)", "org": "Phocuswright / industry usage", "version": "", "section": "", "url": ""}
+      {
+        "name": "Travel content aggregation (industry definition)",
+        "org": "Phocuswright / industry usage",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
     ],
-    "lastReviewed": "2026-06-15"
+    "lastReviewed": "2026-06-15",
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"10\" r=\"4\"/><circle cx=\"10\" cy=\"24\" r=\"4\"/><circle cx=\"10\" cy=\"38\" r=\"4\"/><circle cx=\"38\" cy=\"24\" r=\"5\"/><path d=\"M14 11l8 8M14 24h10M14 37l8-8\"/><path d=\"M26 24l8 0\"/></svg>"
   },
   {
     "id": "one-order",
     "term": "ONE Order",
     "term_ko": "ONE Order(원 오더)",
     "abbreviation": "",
-    "aliases": ["ONE Order", "IATA ONE Order"],
+    "aliases": [
+      "ONE Order",
+      "IATA ONE Order"
+    ],
     "category": "standards",
     "conceptType": "standard",
     "status": "active",
@@ -310,22 +684,653 @@
     "standardBody": "IATA",
     "providerTerms": [],
     "relationships": [
-      {"type": "related", "targetTerm": "NDC"},
-      {"type": "related", "targetTerm": "Order"},
-      {"type": "related", "targetTerm": "Offer"},
-      {"type": "replaces", "targetTerm": "PNR"},
-      {"type": "replaces", "targetTerm": "E-ticket"},
-      {"type": "replaces", "targetTerm": "EMD"}
+      {
+        "type": "related",
+        "targetTerm": "NDC"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Order"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Offer"
+      },
+      {
+        "type": "replaces",
+        "targetTerm": "PNR"
+      },
+      {
+        "type": "replaces",
+        "targetTerm": "E-ticket"
+      },
+      {
+        "type": "replaces",
+        "targetTerm": "EMD"
+      }
     ],
     "distinctions": [
-      {"targetTerm": "NDC", "explanation": "ONE Order standardizes the single post-sale Order record and its management; NDC standardizes the shopping/offer and booking messaging that creates it.", "explanation_ko": "ONE Order는 판매 이후의 단일 주문 기록과 그 관리를 표준화하고, NDC는 그것을 생성하는 조회/오퍼 및 예약 메시징을 표준화한다."},
-      {"targetTerm": "Order", "explanation": "ONE Order is the IATA standard/initiative; Order is the underlying single-record data object it defines and promotes.", "explanation_ko": "ONE Order는 IATA 표준이자 이니셔티브이고, Order는 그것이 정의하고 확산시키는 기반 단일 기록 데이터 객체이다."},
-      {"targetTerm": "E-ticket", "explanation": "ONE Order's single Order record is designed to replace document-based e-tickets (and EMDs) with order-level accounting and fulfillment.", "explanation_ko": "ONE Order의 단일 주문 기록은 주문 단위의 회계와 이행을 통해 문서 기반 e-ticket(및 EMD)을 대체하도록 설계되었다."}
+      {
+        "targetTerm": "NDC",
+        "explanation": "ONE Order standardizes the single post-sale Order record and its management; NDC standardizes the shopping/offer and booking messaging that creates it.",
+        "explanation_ko": "ONE Order는 판매 이후의 단일 주문 기록과 그 관리를 표준화하고, NDC는 그것을 생성하는 조회/오퍼 및 예약 메시징을 표준화한다."
+      },
+      {
+        "targetTerm": "Order",
+        "explanation": "ONE Order is the IATA standard/initiative; Order is the underlying single-record data object it defines and promotes.",
+        "explanation_ko": "ONE Order는 IATA 표준이자 이니셔티브이고, Order는 그것이 정의하고 확산시키는 기반 단일 기록 데이터 객체이다."
+      },
+      {
+        "targetTerm": "E-ticket",
+        "explanation": "ONE Order's single Order record is designed to replace document-based e-tickets (and EMDs) with order-level accounting and fulfillment.",
+        "explanation_ko": "ONE Order의 단일 주문 기록은 주문 단위의 회계와 이행을 통해 문서 기반 e-ticket(및 EMD)을 대체하도록 설계되었다."
+      }
     ],
     "sources": [
-      {"name": "ONE Order", "org": "IATA", "version": "", "section": "", "url": ""},
-      {"name": "ONE Order Standards", "org": "IATA", "version": "", "section": "", "url": ""}
+      {
+        "name": "ONE Order",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "ONE Order Standards",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
     ],
-    "lastReviewed": "2026-06-15"
+    "lastReviewed": "2026-06-15",
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"15\"/><path d=\"M20 16h6a4 4 0 0 1 0 8h-6zM20 16v16M20 24h3l4 8\"/><path d=\"M14 13l3-3 3 3\"/></svg>"
+  },
+  {
+    "id": "edifact",
+    "term": "EDIFACT",
+    "term_ko": "EDIFACT(전자 데이터 교환 표준)",
+    "abbreviation": "EDIFACT",
+    "aliases": [
+      "UN/EDIFACT",
+      "Electronic Data Interchange for Administration, Commerce and Transport",
+      "PADIS EDIFACT"
+    ],
+    "category": "standards",
+    "conceptType": "standard",
+    "status": "active",
+    "definition": "EDIFACT (Electronic Data Interchange for Administration, Commerce and Transport) is a United Nations-developed international standard for structured, machine-to-machine electronic data interchange. In air travel its IATA profile (PADIS) is the long-standing messaging format used between airline Passenger Service Systems and GDSs for availability, booking, fares, and ticketing.",
+    "definition_ko": "EDIFACT(Electronic Data Interchange for Administration, Commerce and Transport)는 구조화된 기계 대 기계 전자 데이터 교환을 위해 UN이 개발한 국제 표준이다. 항공 여행에서는 그 IATA 프로파일인 PADIS가 항공사 여객 서비스 시스템(PSS)과 GDS 사이에서 가용성, 예약, 운임, 발권 정보를 주고받는 데 오랫동안 쓰여 온 메시징 형식이다.",
+    "longDef": "Developed under the UN in the 1980s for an era of expensive, low-bandwidth links, EDIFACT uses a compact, segment- and element-based text syntax. IATA maintains the air-industry application as PADIS (Passenger and Airport Data Interchange Standards), which exists in both EDIFACT and XML syntaxes. Classic GDS distribution and most full-service-carrier PSS integrations still rely heavily on EDIFACT, which IATA's NDC and the broader move to XML/JSON REST APIs increasingly supplement rather than fully replace.",
+    "longDef_ko": "EDIFACT는 회선 비용이 비싸고 대역폭이 낮던 시대를 위해 1980년대 UN 주도로 개발되었으며, 세그먼트와 요소 기반의 간결한 텍스트 구문을 사용한다. IATA는 항공 산업용 적용으로 PADIS(Passenger and Airport Data Interchange Standards)를 유지하며, 이는 EDIFACT와 XML 두 구문으로 존재한다. 전통적인 GDS 유통과 대부분의 풀서비스 항공사 PSS 연동은 여전히 EDIFACT에 크게 의존하며, IATA의 NDC와 XML/JSON REST API로의 전반적 전환이 이를 완전히 대체하기보다 점차 보완하고 있다.",
+    "standardBody": "UN/CEFACT; IATA (PADIS profile)",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "GDS"
+      },
+      {
+        "type": "contrasts",
+        "targetTerm": "NDC"
+      },
+      {
+        "type": "contrasts",
+        "targetTerm": "REST API"
+      },
+      {
+        "type": "related",
+        "targetTerm": "PNR"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Availability"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "NDC",
+        "explanation": "EDIFACT is the legacy compact-text EDI standard underpinning classic GDS/PSS messaging; NDC is IATA's modern XML (increasingly JSON/REST) standard designed to express rich, personalized offers EDIFACT cannot fully convey.",
+        "explanation_ko": "EDIFACT는 기존 GDS/PSS 메시징을 떠받치는 레거시 압축 텍스트 EDI 표준이고, NDC는 EDIFACT로는 충분히 표현할 수 없는 풍부하고 개인화된 오퍼를 담기 위해 설계된 IATA의 현대적 XML(점차 JSON/REST) 표준이다."
+      },
+      {
+        "targetTerm": "REST API",
+        "explanation": "EDIFACT is a batch/message-oriented EDI syntax over legacy transports; a REST API is a modern web-service style using HTTP with JSON/XML payloads.",
+        "explanation_ko": "EDIFACT는 레거시 전송 위에서 동작하는 배치/메시지 지향 EDI 구문이고, REST API는 HTTP와 JSON/XML 페이로드를 사용하는 현대적 웹 서비스 방식이다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "UN/CEFACT",
+        "name": "UN/EDIFACT standard",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "org": "IATA",
+        "name": "Passenger and Airport Data Interchange Standards (PADIS)",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"4\" y=\"10\" width=\"14\" height=\"28\" rx=\"2\"/><rect x=\"30\" y=\"10\" width=\"14\" height=\"28\" rx=\"2\"/><line x1=\"18\" y1=\"18\" x2=\"30\" y2=\"18\"/><line x1=\"18\" y1=\"24\" x2=\"30\" y2=\"24\"/><line x1=\"18\" y1=\"30\" x2=\"30\" y2=\"30\"/><path d=\"M26 21l4 3-4 3\"/><line x1=\"8\" y1=\"16\" x2=\"14\" y2=\"16\"/><line x1=\"8\" y1=\"22\" x2=\"14\" y2=\"22\"/></svg>"
+  },
+  {
+    "id": "rest-api",
+    "term": "REST API",
+    "term_ko": "REST API(REST 방식 API)",
+    "abbreviation": "API",
+    "aliases": [
+      "RESTful API",
+      "Representational State Transfer API",
+      "JSON API"
+    ],
+    "category": "standards",
+    "conceptType": "standard-term",
+    "status": "active",
+    "definition": "A REST API is a web-service interface built on the Representational State Transfer architectural style, using standard HTTP methods and verbs against resource URLs, typically with JSON payloads. In travel distribution it is the modern integration style used by airline, hotel, and aggregator APIs, increasingly including IATA NDC delivered as JSON/REST.",
+    "definition_ko": "REST API는 Representational State Transfer 아키텍처 스타일을 기반으로 한 웹 서비스 인터페이스로, 리소스 URL에 대해 표준 HTTP 메서드와 동사를 사용하며 보통 JSON 페이로드를 주고받는다. 여행 유통에서는 항공사·호텔·애그리게이터 API가 사용하는 현대적 연동 방식이며, JSON/REST로 제공되는 IATA NDC도 점차 이에 포함된다.",
+    "longDef": "REST contrasts with older SOAP/XML web services and with batch EDI such as EDIFACT. Travel REST APIs are commonly described with OpenAPI (Swagger) specifications, enabling auto-generated client libraries and easier developer onboarding. Major GDSs and airlines now expose REST/JSON Offer and Order APIs alongside legacy SOAP and EDIFACT channels, reflecting the industry's broader shift toward lightweight, web-native integration.",
+    "longDef_ko": "REST는 더 오래된 SOAP/XML 웹 서비스 및 EDIFACT 같은 배치 EDI와 대비된다. 여행 REST API는 흔히 OpenAPI(Swagger) 명세로 기술되어 클라이언트 라이브러리 자동 생성과 개발자 온보딩을 쉽게 한다. 주요 GDS와 항공사는 이제 레거시 SOAP·EDIFACT 채널과 함께 REST/JSON 기반 Offer 및 Order API를 제공하며, 이는 가볍고 웹 친화적인 연동으로 향하는 산업 전반의 전환을 반영한다.",
+    "standardBody": "",
+    "providerTerms": [
+      {
+        "provider": "IATA",
+        "term": "NDC JSON/REST APIs",
+        "context": "IATA's NDC standard is increasingly delivered via REST/JSON in addition to SOAP/XML",
+        "context_ko": "IATA의 NDC 표준이 SOAP/XML에 더해 점차 REST/JSON으로 제공됨",
+        "relationship": "related"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "contrasts",
+        "targetTerm": "EDIFACT"
+      },
+      {
+        "type": "related",
+        "targetTerm": "NDC"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Shopping API"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Direct Connect"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Aggregator"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "EDIFACT",
+        "explanation": "A REST API is a modern HTTP/JSON web-service style; EDIFACT is a legacy compact-text EDI syntax used in classic GDS/PSS messaging.",
+        "explanation_ko": "REST API는 현대적 HTTP/JSON 웹 서비스 방식이고, EDIFACT는 기존 GDS/PSS 메시징에 쓰이는 레거시 압축 텍스트 EDI 구문이다."
+      },
+      {
+        "targetTerm": "NDC",
+        "explanation": "REST is a transport/architectural style; NDC is a domain data standard whose messages may be carried over SOAP/XML or REST/JSON.",
+        "explanation_ko": "REST는 전송/아키텍처 스타일이고, NDC는 그 메시지를 SOAP/XML 또는 REST/JSON으로 실어 나를 수 있는 도메인 데이터 표준이다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "IETF / W3C",
+        "name": "REST architectural style (HTTP)",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "org": "OpenAPI Initiative",
+        "name": "OpenAPI Specification",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"24\" r=\"5\"/><circle cx=\"38\" cy=\"14\" r=\"5\"/><circle cx=\"38\" cy=\"34\" r=\"5\"/><line x1=\"15\" y1=\"24\" x2=\"33\" y2=\"16\"/><line x1=\"15\" y1=\"24\" x2=\"33\" y2=\"32\"/><path d=\"M22 6l3 3-3 3\"/><path d=\"M19 9h6\"/></svg>"
+  },
+  {
+    "id": "direct-connect",
+    "term": "Direct Connect",
+    "term_ko": "다이렉트 커넥트(직접 연결)",
+    "abbreviation": "",
+    "aliases": [
+      "Direct Connection",
+      "Airline Direct Connect",
+      "Supplier Direct Connect"
+    ],
+    "category": "standards",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "A Direct Connect is a dedicated API integration linking a buyer's booking platform (OTA, TMC, corporate tool, or agency system) directly to an airline's or other supplier's reservation system, bypassing or supplementing the GDS. It enables real-time access to the supplier's own content, often including NDC offers and ancillaries.",
+    "definition_ko": "다이렉트 커넥트(Direct Connect)는 구매자의 예약 플랫폼(OTA, TMC, 기업 출장 도구, 여행사 시스템)을 항공사 등 공급사의 예약 시스템에 직접 연결하는 전용 API 연동으로, GDS를 우회하거나 보완한다. 공급사 자체 콘텐츠(흔히 NDC 오퍼와 부가 서비스 포함)에 실시간으로 접근할 수 있게 한다.",
+    "longDef": "Direct Connects can be implemented over NDC-compliant APIs, proprietary supplier APIs, or even legacy ATPCO/EDIFACT interfaces. Airlines use them to reduce GDS distribution costs, control merchandising, and personalize offers, while large corporate accounts and aggregators use them for richer or differentiated content. Maintaining many point-to-point Direct Connects is integration-heavy, which is why aggregators and GDS NDC programs exist to consolidate them.",
+    "longDef_ko": "다이렉트 커넥트는 NDC 호환 API, 공급사 자체 API, 또는 레거시 ATPCO/EDIFACT 인터페이스로도 구현될 수 있다. 항공사는 이를 통해 GDS 유통 비용을 줄이고 머천다이징을 통제하며 오퍼를 개인화하고, 대형 기업 계정과 애그리게이터는 더 풍부하거나 차별화된 콘텐츠를 얻기 위해 사용한다. 다수의 일대일 다이렉트 커넥트를 유지하는 것은 연동 부담이 크므로, 이를 통합하기 위해 애그리게이터와 GDS의 NDC 프로그램이 존재한다.",
+    "standardBody": "",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "NDC"
+      },
+      {
+        "type": "related",
+        "targetTerm": "GDS"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Aggregator"
+      },
+      {
+        "type": "related",
+        "targetTerm": "REST API"
+      },
+      {
+        "type": "related",
+        "targetTerm": "OTA (Online Travel Agency)"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "GDS",
+        "explanation": "A Direct Connect is a point-to-point link straight to one supplier; a GDS is a shared intermediary aggregating many suppliers for many sellers.",
+        "explanation_ko": "다이렉트 커넥트는 한 공급사로 직접 이어지는 일대일 연결이고, GDS는 여러 공급사를 여러 판매자에게 통합해 주는 공용 중개자이다."
+      },
+      {
+        "targetTerm": "Aggregator",
+        "explanation": "A Direct Connect is the seller's own integration to a single supplier; an aggregator offers one connection that consolidates many suppliers' direct connects on the seller's behalf.",
+        "explanation_ko": "다이렉트 커넥트는 판매자가 단일 공급사와 직접 맺는 연동이고, 애그리게이터는 여러 공급사의 직접 연결을 판매자 대신 하나로 통합해 제공한다."
+      },
+      {
+        "targetTerm": "NDC",
+        "explanation": "Direct Connect is a distribution arrangement (who connects to whom); NDC is a messaging standard that a Direct Connect may (but need not) use.",
+        "explanation_ko": "다이렉트 커넥트는 누가 누구와 연결되는지에 관한 유통 방식이고, NDC는 다이렉트 커넥트가 사용할 수도(반드시는 아님) 있는 메시징 표준이다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "IATA",
+        "name": "Airline Distribution / NDC overview",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "org": "Industry usage",
+        "name": "Direct connect (travel distribution definition)",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"4\" y=\"18\" width=\"12\" height=\"12\" rx=\"2\"/><rect x=\"32\" y=\"18\" width=\"12\" height=\"12\" rx=\"2\"/><line x1=\"16\" y1=\"24\" x2=\"32\" y2=\"24\"/><circle cx=\"24\" cy=\"24\" r=\"2.5\" fill=\"currentColor\"/></svg>"
+  },
+  {
+    "id": "dynamic-packaging",
+    "term": "Dynamic Packaging",
+    "term_ko": "다이내믹 패키징(동적 여행 묶음)",
+    "abbreviation": "",
+    "aliases": [
+      "Dynamic Package",
+      "Dynamic Bundling",
+      "Build-Your-Own-Package"
+    ],
+    "category": "standards",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "Dynamic packaging is the real-time assembly of individual travel components (such as flights, accommodation, car rental, and activities) into a single customized package at the moment of booking, presented and sold at one combined price. Prices and availability are drawn live from supplier inventory rather than from pre-built tour products.",
+    "definition_ko": "다이내믹 패키징(dynamic packaging)은 항공편, 숙박, 렌터카, 액티비티 등 개별 여행 구성요소를 예약 시점에 실시간으로 하나의 맞춤 패키지로 조합하여 하나의 합산 가격으로 제시·판매하는 것이다. 가격과 가용성은 미리 만들어 둔 패키지 상품이 아니라 공급사 재고에서 실시간으로 가져온다.",
+    "longDef": "A booking engine calls multiple supplier APIs simultaneously, retrieving live component prices and combining them, often into an opaque single price that hides individual fares; this lets sellers discount bundles without disturbing published rates. Dynamic packaging underpins much modern OTA and tour-operator retailing and depends on aggregated, real-time content from GDSs, bedbanks, and direct/NDC connections. Regulatory regimes (e.g. the EU Package Travel Directive) may treat such combinations as packages with associated consumer protections.",
+    "longDef_ko": "예약 엔진은 여러 공급사 API를 동시에 호출하여 실시간 구성요소 가격을 가져와 조합하며, 흔히 개별 운임을 감추는 불투명(opaque) 단일 가격으로 묶는다. 이를 통해 판매자는 공시 요금을 흔들지 않고 묶음 상품을 할인할 수 있다. 다이내믹 패키징은 현대 OTA와 투어 오퍼레이터 리테일링의 상당 부분을 떠받치며, GDS·베드뱅크·직접/NDC 연결에서 오는 통합된 실시간 콘텐츠에 의존한다. 일부 규제(예: EU 패키지여행 지침)는 이러한 조합을 소비자 보호가 따르는 패키지로 취급할 수 있다.",
+    "standardBody": "",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "OTA (Online Travel Agency)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Aggregator"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Bedbank"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Availability"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Net Rate"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Offer",
+        "explanation": "Dynamic packaging is a retailing technique of bundling multiple suppliers' components at one price; an NDC Offer is a single airline's standardized priced proposal that may itself include a bundle of that airline's products.",
+        "explanation_ko": "다이내믹 패키징은 여러 공급사의 구성요소를 하나의 가격으로 묶는 리테일링 기법이고, NDC 오퍼는 한 항공사의 표준화된 가격 제안으로 그 항공사의 상품 묶음을 포함할 수 있다."
+      },
+      {
+        "targetTerm": "Aggregator",
+        "explanation": "An aggregator supplies the consolidated multi-supplier content; dynamic packaging is what a seller does with that content to build and price a combined trip.",
+        "explanation_ko": "애그리게이터는 여러 공급사의 통합 콘텐츠를 공급하고, 다이내믹 패키징은 판매자가 그 콘텐츠로 결합된 여정을 구성하고 가격을 매기는 행위이다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "Industry usage",
+        "name": "Dynamic packaging (travel distribution definition)",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"16\" y=\"22\" width=\"16\" height=\"16\" rx=\"2\"/><path d=\"M16 27h16\"/><path d=\"M24 22v16\"/><path d=\"M9 10l5 6\"/><path d=\"M39 10l-5 6\"/><circle cx=\"7\" cy=\"8\" r=\"2.5\"/><circle cx=\"41\" cy=\"8\" r=\"2.5\"/><path d=\"M24 4v12\"/><circle cx=\"24\" cy=\"4\" r=\"1.5\" fill=\"currentColor\"/></svg>"
+  },
+  {
+    "id": "offer-management-system",
+    "term": "Offer Management System",
+    "term_ko": "오퍼 관리 시스템(Offer Management System)",
+    "abbreviation": "OMS",
+    "aliases": [
+      "Offer Management System (OMS)",
+      "OfMS",
+      "Offer Engine"
+    ],
+    "category": "standards",
+    "conceptType": "system",
+    "status": "active",
+    "definition": "An Offer Management System is the airline-retailing platform that constructs, prices, and manages Offers in response to shopping requests, dynamically bundling flights, ancillaries, and third-party products with conditions and validity. It is the 'shop' side counterpart to the Order Management System in IATA's Offer and Order model.",
+    "definition_ko": "오퍼 관리 시스템(Offer Management System)은 조회 요청에 대응하여 오퍼(Offer)를 구성·가격책정·관리하는 항공 리테일링 플랫폼으로, 항공편·부가 서비스·제3자 상품을 조건과 유효기간과 함께 동적으로 묶는다. IATA의 Offer and Order 모델에서 주문 관리 시스템(Order Management System)에 대응하는 '조회(shop)' 측 시스템이다.",
+    "longDef": "Often abbreviated OMS (or labelled the 'Offer' half of a combined Offer & Order Management System), it owns offer creation, dynamic pricing/dynamic offers, eligibility, personalization, and merchandising logic, typically feeding NDC AirShopping/OfferPrice responses. When a customer accepts an Offer, control passes to the Order Management System, which creates and services the resulting Order. The two together replace fragmented legacy pricing, availability, and PNR/ticketing functions in modern airline retailing.",
+    "longDef_ko": "흔히 OMS로 약칭되거나 통합 Offer & Order Management System의 'Offer' 절반으로 불리며, 오퍼 생성, 동적 가격/동적 오퍼, 자격 판단, 개인화, 머천다이징 로직을 담당하고 보통 NDC AirShopping/OfferPrice 응답을 만들어 낸다. 고객이 오퍼를 수락하면 제어권이 주문 관리 시스템으로 넘어가 결과 주문(Order)을 생성·서비스한다. 두 시스템이 함께 현대 항공 리테일링에서 분산된 레거시 가격·가용성·PNR/발권 기능을 대체한다.",
+    "standardBody": "",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Offer"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Order Management System (OMS)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "NDC"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Shopping API"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Ancillary Service"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Order Management System (OMS)",
+        "explanation": "An Offer Management System builds and prices Offers in the shopping phase; an Order Management System creates, holds, and services the Order after the customer buys. The 'OMS' abbreviation is shared and often refers to a combined Offer & Order platform.",
+        "explanation_ko": "오퍼 관리 시스템은 조회 단계에서 오퍼를 구성·가격책정하고, 주문 관리 시스템은 고객 구매 이후 주문을 생성·보관·서비스한다. 'OMS' 약어는 둘이 공유하며 흔히 통합 Offer & Order 플랫폼을 가리킨다."
+      },
+      {
+        "targetTerm": "Offer",
+        "explanation": "The Offer is the data object (the priced proposal); the Offer Management System is the platform that produces and governs Offers.",
+        "explanation_ko": "Offer는 데이터 객체(가격이 매겨진 제안)이고, 오퍼 관리 시스템은 그 오퍼를 만들어 내고 관리하는 플랫폼이다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "IATA",
+        "name": "Airline Retailing - Order and Offer Management",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "org": "IATA",
+        "name": "Distribution with Offers and Orders (NDC)",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"8\" width=\"32\" height=\"32\" rx=\"3\"/><path d=\"M14 18h12\"/><path d=\"M14 24h20\"/><path d=\"M14 30h16\"/><path d=\"M30 14l4 4 6-7\" stroke-width=\"2.5\"/></svg>"
+  },
+  {
+    "id": "order-management-system-oms",
+    "term": "Order Management System (OMS)",
+    "term_ko": "주문 관리 시스템(Order Management System, OMS)",
+    "abbreviation": "OMS",
+    "aliases": [
+      "Order Management System",
+      "Airline OMS",
+      "Offer and Order Management System"
+    ],
+    "category": "standards",
+    "conceptType": "system",
+    "status": "active",
+    "definition": "An Order Management System is the airline-retailing platform that creates, stores, and services the customer Order across its lifecycle, acting as the single source of truth for all purchased air and non-air products, payments, fulfillment, and changes. It is the 'order' side counterpart to the Offer Management System and the operational foundation of IATA's ONE Order.",
+    "definition_ko": "주문 관리 시스템(Order Management System)은 고객 주문(Order)을 전체 주기에 걸쳐 생성·저장·서비스하는 항공 리테일링 플랫폼으로, 구매한 모든 항공/비항공 상품, 결제, 이행, 변경에 대한 단일 진실 공급원(single source of truth) 역할을 한다. 오퍼 관리 시스템에 대응하는 '주문(order)' 측 시스템이며 IATA ONE Order의 운영 기반이다.",
+    "longDef": "Supported by IATA's ONE Order initiative, an OMS provides a unified, single-record view of an Order and every change to it, handling payment, fulfillment, delivery, servicing, and order-level accounting. It is designed to consolidate and eventually replace the legacy PNR, e-ticket, and EMD constructs and their document-based settlement. Vendors and airlines frequently market a combined 'Offer & Order Management System', so 'OMS' may denote the order half or the whole platform depending on context.",
+    "longDef_ko": "IATA의 ONE Order 이니셔티브가 뒷받침하는 OMS는 주문과 그에 대한 모든 변경에 대해 통합된 단일 기록 관점을 제공하며, 결제·이행·전달·서비스·주문 단위 회계를 처리한다. 레거시 PNR, e-ticket, EMD 구조와 문서 기반 정산을 통합하고 궁극적으로 대체하도록 설계되었다. 벤더와 항공사는 흔히 통합 'Offer & Order Management System'으로 마케팅하므로, 'OMS'는 맥락에 따라 주문 절반 또는 전체 플랫폼을 가리킬 수 있다.",
+    "standardBody": "",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Order"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Offer Management System"
+      },
+      {
+        "type": "related",
+        "targetTerm": "ONE Order"
+      },
+      {
+        "type": "related",
+        "targetTerm": "NDC"
+      },
+      {
+        "type": "related",
+        "targetTerm": "PNR"
+      },
+      {
+        "type": "related",
+        "targetTerm": "EMD"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Offer Management System",
+        "explanation": "The Order Management System owns the post-sale Order (creation, servicing, accounting); the Offer Management System owns pre-sale Offer construction and pricing. Both are commonly bundled as one 'Offer & Order' platform.",
+        "explanation_ko": "주문 관리 시스템은 판매 이후의 주문(생성·서비스·회계)을 담당하고, 오퍼 관리 시스템은 판매 이전의 오퍼 구성과 가격책정을 담당한다. 둘은 흔히 하나의 'Offer & Order' 플랫폼으로 묶여 제공된다."
+      },
+      {
+        "targetTerm": "ONE Order",
+        "explanation": "ONE Order is the IATA standard/initiative defining the single Order record and its messages; an Order Management System is the platform that implements and operates it.",
+        "explanation_ko": "ONE Order는 단일 주문 기록과 그 메시지를 정의하는 IATA 표준·이니셔티브이고, 주문 관리 시스템은 그것을 구현·운영하는 플랫폼이다."
+      },
+      {
+        "targetTerm": "PNR",
+        "explanation": "An OMS centers on the modern single Order record; the PNR is the legacy reservation construct an OMS aims to consolidate and replace.",
+        "explanation_ko": "OMS는 현대적 단일 주문 기록을 중심에 두고, PNR은 OMS가 통합·대체하려는 레거시 예약 구조이다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "IATA",
+        "name": "Airline Retailing - Order and Offer Management",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "org": "IATA",
+        "name": "ONE Order",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 14h28l-3 24a2 2 0 0 1-2 2H15a2 2 0 0 1-2-2z\"/><path d=\"M17 14a7 7 0 0 1 14 0\"/><path d=\"M19 26l3 3 6-6\"/></svg>"
+  },
+  {
+    "id": "airline-retailing-maturity-arm",
+    "term": "Airline Retailing Maturity (ARM)",
+    "term_ko": "항공 리테일링 성숙도 지수(ARM index)",
+    "abbreviation": "ARM",
+    "aliases": [
+      "ARM index",
+      "Airline Retailing Maturity index",
+      "IATA ARM"
+    ],
+    "category": "standards",
+    "conceptType": "metric",
+    "status": "active",
+    "definition": "The Airline Retailing Maturity (ARM) index is an IATA framework that measures how far airlines and their partners have progressed toward a world of 100% Offers and Orders. Introduced in 2021, it consolidates and replaces IATA's earlier NDC and ONE Order certification registries with a single maturity assessment.",
+    "definition_ko": "항공 리테일링 성숙도(Airline Retailing Maturity, ARM) 지수는 항공사와 그 파트너가 100% Offer 및 Order 세계로 얼마나 나아갔는지를 측정하는 IATA 프레임워크이다. 2021년 도입되었으며, 이전의 NDC 및 ONE Order 인증 등록제를 단일 성숙도 평가로 통합·대체한다.",
+    "longDef": "The ARM index is organized around pillars including Capabilities Verification (a registry of proven technical abilities to shop, order, pay, settle, account, and set up, expressed in business rather than technical language), Partnerships Deployment (how effectively airlines and sellers scale across the value chain), and the Value Capture Compass (an airline-only ~50-question self-assessment across eight value drivers). Airlines completing the assessment receive a numbered score out of 100 representing their retailing maturity and strategy, enabling benchmarking against peers.",
+    "longDef_ko": "ARM 지수는 Capabilities Verification(조회·주문·결제·정산·회계·셋업 능력을 기술 용어가 아닌 업무 언어로 표현한, 검증된 기술 역량 등록제), Partnerships Deployment(항공사와 판매자가 가치사슬 전반으로 얼마나 효과적으로 확장하는지), Value Capture Compass(항공사 전용으로 8개 가치 동인을 다루는 약 50문항 자가평가) 등의 기둥(pillar)으로 구성된다. 평가를 완료한 항공사는 리테일링 성숙도와 전략을 나타내는 100점 만점의 점수를 받아 동종 업계와 벤치마킹할 수 있다.",
+    "standardBody": "IATA",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "NDC"
+      },
+      {
+        "type": "related",
+        "targetTerm": "ONE Order"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Offer"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Order"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "NDC",
+        "explanation": "ARM is a maturity measurement and registry of an organization's retailing progress; NDC is the underlying XML distribution standard whose adoption ARM helps assess.",
+        "explanation_ko": "ARM은 조직의 리테일링 진척도를 측정하고 등록하는 성숙도 지표이고, NDC는 ARM이 그 채택 정도를 평가하는 데 쓰이는 기반 XML 유통 표준이다."
+      },
+      {
+        "targetTerm": "ONE Order",
+        "explanation": "ARM is the assessment/registry framework (which replaced the separate NDC and ONE Order certification registries); ONE Order is one of the standards whose maturity ARM measures.",
+        "explanation_ko": "ARM은 (별도의 NDC·ONE Order 인증 등록제를 대체한) 평가·등록 프레임워크이고, ONE Order는 ARM이 성숙도를 측정하는 대상 표준 중 하나이다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "IATA",
+        "name": "The Airline Retailing Maturity index (ARM index) Factsheet",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "org": "IATA",
+        "name": "Airline Retailing",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><line x1=\"8\" y1=\"40\" x2=\"40\" y2=\"40\"/><rect x=\"10\" y=\"28\" width=\"7\" height=\"12\"/><rect x=\"20\" y=\"20\" width=\"7\" height=\"20\"/><rect x=\"30\" y=\"12\" width=\"7\" height=\"28\"/><path d=\"M10 24l11-9 8 4 9-11\"/></svg>"
+  },
+  {
+    "id": "shopping-api",
+    "term": "Shopping API",
+    "term_ko": "쇼핑 API(조회 API)",
+    "abbreviation": "",
+    "aliases": [
+      "Air Shopping API",
+      "AirShopping",
+      "Search API",
+      "Shopping Service"
+    ],
+    "category": "standards",
+    "conceptType": "standard-term",
+    "status": "active",
+    "definition": "A Shopping API is the distribution interface a travel seller calls to search a supplier's products and receive priced offers in response to trip criteria such as origin, destination, dates, and passengers. In IATA NDC the canonical example is the AirShopping message (IATA_AirShoppingRQ/RS), which returns flight offers with fares, branded options, and ancillaries.",
+    "definition_ko": "쇼핑 API(Shopping API)는 여행 판매자가 출발지·도착지·날짜·승객 등 여정 조건에 대해 공급사의 상품을 검색하고 가격이 매겨진 오퍼를 응답으로 받기 위해 호출하는 유통 인터페이스이다. IATA NDC에서 대표적인 예는 AirShopping 메시지(IATA_AirShoppingRQ/RS)로, 운임·브랜디드 옵션·부가 서비스를 포함한 항공 오퍼를 반환한다.",
+    "longDef": "The shopping step is the entry point of the Offer and Order flow: a seller submits a request (e.g. IATA_AirShoppingRQ) and the supplier's Offer engine returns a response (IATA_AirShoppingRS) of priced availability offers, often supporting anonymous or personalized, attribute, affinity, and calendar/date-range shopping with media at offer level. Selected offers are then re-priced (e.g. OfferPrice) and committed via OrderCreate. Shopping APIs are exposed over SOAP/XML and increasingly REST/JSON, and also exist outside NDC for hotels and other content.",
+    "longDef_ko": "조회(shopping) 단계는 Offer and Order 흐름의 진입점이다. 판매자가 요청(예: IATA_AirShoppingRQ)을 보내면 공급사의 오퍼 엔진이 가격이 매겨진 가용성 오퍼들의 응답(IATA_AirShoppingRS)을 반환하며, 익명 또는 개인화된 조회, 속성(attribute)·친화도(affinity)·달력/기간 조회, 오퍼 단위 미디어 등을 지원하는 경우가 많다. 선택된 오퍼는 이후 재가격책정(예: OfferPrice)되고 OrderCreate로 확정된다. 쇼핑 API는 SOAP/XML 및 점차 REST/JSON으로 제공되며, NDC 밖에서도 호텔 등 다른 콘텐츠를 위해 존재한다.",
+    "standardBody": "IATA (NDC AirShopping)",
+    "providerTerms": [
+      {
+        "provider": "IATA",
+        "term": "AirShopping (IATA_AirShoppingRQ / IATA_AirShoppingRS)",
+        "context": "The NDC shopping message pair that returns priced flight offers",
+        "context_ko": "가격이 매겨진 항공 오퍼를 반환하는 NDC 조회 메시지 쌍",
+        "relationship": "narrower"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "NDC"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Offer"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Offer Management System"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Availability"
+      },
+      {
+        "type": "related",
+        "targetTerm": "REST API"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Availability",
+        "explanation": "Availability indicates whether seats/classes are sellable; a Shopping API returns constructed, priced Offers built on top of that availability.",
+        "explanation_ko": "가용성(Availability)은 좌석/등급의 판매 가능 여부를 나타내고, 쇼핑 API는 그 가용성을 토대로 구성하여 가격을 매긴 오퍼를 반환한다."
+      },
+      {
+        "targetTerm": "Offer",
+        "explanation": "An Offer is the priced proposal object; the Shopping API is the request/response interface used to obtain Offers during search.",
+        "explanation_ko": "Offer는 가격이 매겨진 제안 객체이고, 쇼핑 API는 검색 중 오퍼를 얻기 위해 사용하는 요청/응답 인터페이스이다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "IATA",
+        "name": "NDC Standards (AirShopping message)",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "org": "ATPCO",
+        "name": "NDC Solutions - AirShopping API",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"21\" cy=\"21\" r=\"12\"/><line x1=\"30\" y1=\"30\" x2=\"40\" y2=\"40\"/><path d=\"M15 21h12\"/><path d=\"M27 21l-4-4\"/><path d=\"M27 21l-4 4\"/></svg>"
   }
 ]

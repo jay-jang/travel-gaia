@@ -4,7 +4,11 @@
     "term": "Availability",
     "term_ko": "좌석 가용성",
     "abbreviation": "",
-    "aliases": ["Seat Availability", "Air Availability", "AVS"],
+    "aliases": [
+      "Seat Availability",
+      "Air Availability",
+      "AVS"
+    ],
     "category": "air-shop",
     "conceptType": "business-term",
     "status": "active",
@@ -14,31 +18,84 @@
     "longDef_ko": "Availability는 가용성 요청에 대한 응답으로 반환되며, RBD별 숫자 값(예: F4 J9 Y9 B7)으로 표현된다. 여기서 숫자는 해당 등급에서 추가로 판매 가능한 좌석 수를 나타낸다. 항공사는 정적 캐시(AVS 기반), 재고 시스템과의 실시간 연동, 또는 결합 구간(married-segment) 로직을 함께 반영하는 동적/심리스(seamless) 가용성 방식을 통해 가용성을 반환할 수 있다. Availability는 재고(inventory) 및 스케줄과 구별된다. 스케줄이 항공편의 운항 여부를 정의하는 반면, 가용성은 현재 등급별로 좌석을 판매할 수 있는지 그리고 몇 석을 판매할 수 있는지를 정의한다.",
     "standardBody": "IATA",
     "providerTerms": [
-      {"provider": "Amadeus", "term": "Air Availability / Schedule and Availability", "context": "Amadeus distinguishes neutral, schedule, and seamless (carrier-linked) availability displays.", "context_ko": "Amadeus는 중립(neutral), 스케줄, 심리스(항공사 연동) 가용성 조회를 구분한다.", "relationship": "same"},
-      {"provider": "Sabre", "term": "Air Availability / Bargain Finder Max", "context": "Sabre returns class-by-class seat availability in availability and shopping responses.", "context_ko": "Sabre는 가용성 및 쇼핑 응답에서 등급별 좌석 가용성을 반환한다.", "relationship": "same"}
+      {
+        "provider": "Amadeus",
+        "term": "Air Availability / Schedule and Availability",
+        "context": "Amadeus distinguishes neutral, schedule, and seamless (carrier-linked) availability displays.",
+        "context_ko": "Amadeus는 중립(neutral), 스케줄, 심리스(항공사 연동) 가용성 조회를 구분한다.",
+        "relationship": "same"
+      },
+      {
+        "provider": "Sabre",
+        "term": "Air Availability / Bargain Finder Max",
+        "context": "Sabre returns class-by-class seat availability in availability and shopping responses.",
+        "context_ko": "Sabre는 가용성 및 쇼핑 응답에서 등급별 좌석 가용성을 반환한다.",
+        "relationship": "same"
+      }
     ],
     "relationships": [
-      {"type": "related", "targetTerm": "RBD"},
-      {"type": "related", "targetTerm": "Origin & Destination"},
-      {"type": "related", "targetTerm": "Married Segment"},
-      {"type": "related", "targetTerm": "Overbooking"},
-      {"type": "related", "targetTerm": "Schedule Change"}
+      {
+        "type": "related",
+        "targetTerm": "RBD"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Origin & Destination"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Married Segment"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Overbooking"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Schedule Change"
+      }
     ],
     "distinctions": [
-      {"targetTerm": "RBD", "explanation": "RBD is the class code; availability is the number of seats sellable in that RBD.", "explanation_ko": "RBD는 등급 코드이고, 가용성은 해당 RBD에서 판매 가능한 좌석 수이다."},
-      {"targetTerm": "Overbooking", "explanation": "Overbooking can make availability exceed physical capacity by selling above the seat count.", "explanation_ko": "Overbooking은 실제 좌석 수를 초과해 판매함으로써 가용성이 물리적 좌석 수를 넘어서게 만들 수 있다."}
+      {
+        "targetTerm": "RBD",
+        "explanation": "RBD is the class code; availability is the number of seats sellable in that RBD.",
+        "explanation_ko": "RBD는 등급 코드이고, 가용성은 해당 RBD에서 판매 가능한 좌석 수이다."
+      },
+      {
+        "targetTerm": "Overbooking",
+        "explanation": "Overbooking can make availability exceed physical capacity by selling above the seat count.",
+        "explanation_ko": "Overbooking은 실제 좌석 수를 초과해 판매함으로써 가용성이 물리적 좌석 수를 넘어서게 만들 수 있다."
+      }
     ],
     "sources": [
-      {"name": "AIRIMP (ATA/IATA Reservations Interline Message Procedures)", "org": "IATA", "version": "", "section": "", "url": ""},
-      {"name": "Amadeus Air documentation — Availability", "org": "Amadeus", "version": "", "section": "", "url": ""}
-    ]
+      {
+        "name": "AIRIMP (ATA/IATA Reservations Interline Message Procedures)",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Amadeus Air documentation — Availability",
+        "org": "Amadeus",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"7\" y=\"9\" width=\"34\" height=\"30\" rx=\"3\"/><line x1=\"7\" y1=\"17\" x2=\"41\" y2=\"17\"/><line x1=\"15\" y1=\"6\" x2=\"15\" y2=\"12\"/><line x1=\"33\" y1=\"6\" x2=\"33\" y2=\"12\"/><path d=\"M16 28l5 5 11-11\"/></svg>"
   },
   {
     "id": "rbd",
     "term": "RBD",
     "term_ko": "예약 등급 지정자 (RBD)",
     "abbreviation": "RBD",
-    "aliases": ["Reservation Booking Designator", "Booking Class", "Booking Code", "Class of Service"],
+    "aliases": [
+      "Reservation Booking Designator",
+      "Booking Class",
+      "Booking Code",
+      "Class of Service"
+    ],
     "category": "air-shop",
     "conceptType": "code",
     "status": "active",
@@ -48,30 +105,78 @@
     "longDef_ko": "RBD는 한 글자의 알파벳 문자(예: F, J, Y, B, M, Q)로, 항공사가 수익 관리를 위해 하나의 객실 등급을 여러 가격대의 재고 버킷으로 세분화하는 데 사용한다. 운임 기준 코드(fare basis code)는 RBD를 주요/예약 코드로 참조하며, 가용성은 RBD별로 공시된다. 일반적으로 하나의 물리적 객실 등급 안에 여러 RBD가 존재하여, 항공사는 동일한 객실을 서로 다른 운임 수준으로 판매하고 각 가격대에 배정되는 좌석 수를 제어할 수 있다.",
     "standardBody": "IATA",
     "providerTerms": [
-      {"provider": "Sabre", "term": "Class of Service / Booking Class", "context": "Sabre refers to the single-letter inventory code as the class of service.", "context_ko": "Sabre는 한 글자 재고 코드를 class of service(서비스 등급)로 지칭한다.", "relationship": "same"},
-      {"provider": "Amadeus", "term": "Booking Class", "context": "Amadeus uses booking class for the RBD letter controlling inventory.", "context_ko": "Amadeus는 재고를 제어하는 RBD 문자를 booking class(예약 등급)로 칭한다.", "relationship": "same"}
+      {
+        "provider": "Sabre",
+        "term": "Class of Service / Booking Class",
+        "context": "Sabre refers to the single-letter inventory code as the class of service.",
+        "context_ko": "Sabre는 한 글자 재고 코드를 class of service(서비스 등급)로 지칭한다.",
+        "relationship": "same"
+      },
+      {
+        "provider": "Amadeus",
+        "term": "Booking Class",
+        "context": "Amadeus uses booking class for the RBD letter controlling inventory.",
+        "context_ko": "Amadeus는 재고를 제어하는 RBD 문자를 booking class(예약 등급)로 칭한다.",
+        "relationship": "same"
+      }
     ],
     "relationships": [
-      {"type": "related", "targetTerm": "Availability"},
-      {"type": "related", "targetTerm": "Fare Basis Code"},
-      {"type": "related", "targetTerm": "Fare Family"},
-      {"type": "related", "targetTerm": "Passenger Type Code"}
+      {
+        "type": "related",
+        "targetTerm": "Availability"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Fare Basis Code"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Fare Family"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Passenger Type Code"
+      }
     ],
     "distinctions": [
-      {"targetTerm": "Fare Basis Code", "explanation": "The RBD is the single booking-class letter; the fare basis code is the longer alphanumeric string identifying the full fare, usually starting with the RBD.", "explanation_ko": "RBD는 한 글자의 예약 등급 문자이고, 운임 기준 코드는 전체 운임을 식별하는 더 긴 영숫자 문자열로 보통 해당 RBD로 시작한다."},
-      {"targetTerm": "Availability", "explanation": "RBD is the class identifier; availability is the seat count sellable in that RBD.", "explanation_ko": "RBD는 등급 식별자이고, 가용성은 해당 RBD에서 판매 가능한 좌석 수이다."}
+      {
+        "targetTerm": "Fare Basis Code",
+        "explanation": "The RBD is the single booking-class letter; the fare basis code is the longer alphanumeric string identifying the full fare, usually starting with the RBD.",
+        "explanation_ko": "RBD는 한 글자의 예약 등급 문자이고, 운임 기준 코드는 전체 운임을 식별하는 더 긴 영숫자 문자열로 보통 해당 RBD로 시작한다."
+      },
+      {
+        "targetTerm": "Availability",
+        "explanation": "RBD is the class identifier; availability is the seat count sellable in that RBD.",
+        "explanation_ko": "RBD는 등급 식별자이고, 가용성은 해당 RBD에서 판매 가능한 좌석 수이다."
+      }
     ],
     "sources": [
-      {"name": "AIRIMP (ATA/IATA Reservations Interline Message Procedures)", "org": "IATA", "version": "", "section": "", "url": ""},
-      {"name": "ATPCO Fares data documentation", "org": "ATPCO", "version": "", "section": "", "url": ""}
-    ]
+      {
+        "name": "AIRIMP (ATA/IATA Reservations Interline Message Procedures)",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "ATPCO Fares data documentation",
+        "org": "ATPCO",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14 30V18a3 3 0 016 0v9h8a3 3 0 013 3v6\"/><path d=\"M14 33h17\"/><path d=\"M14 30h-2a2 2 0 00-2 2v6\"/><circle cx=\"34\" cy=\"15\" r=\"7\"/><path d=\"M32 18v-6h2.5a1.5 1.5 0 010 3H32m2 0l2.5 3\"/></svg>"
   },
   {
     "id": "fare-basis-code",
     "term": "Fare Basis Code",
     "term_ko": "운임 기준 코드",
     "abbreviation": "",
-    "aliases": ["Fare Basis", "FBC"],
+    "aliases": [
+      "Fare Basis",
+      "FBC"
+    ],
     "category": "air-shop",
     "conceptType": "code",
     "status": "active",
@@ -81,30 +186,76 @@
     "longDef_ko": "운임 기준 코드는 산출된 운임을 항공사가 신고한 운임 및 규정 레코드와 연결하는, 사람이 읽을 수 있는 키이다. 첫 글자는 보통 주요 예약 코드(RBD)이며, 그 뒤에 운임 유형 문자, 항공권 지정자(슬래시 이후), 시즌 표시자, 요일/시간 코드 등의 한정자가 따라온다(예: YLXAP, BHE7, QW14). 동일한 RBD라도 서로 다른 운임과 조건을 나타내는 여러 운임 기준 코드를 가질 수 있다. 운임 기준 코드는 항공사가 신고하고 ATPCO를 통해 배포되며, 항공권의 운임 산출(fare construction) 부분에 인쇄된다.",
     "standardBody": "ATPCO",
     "providerTerms": [
-      {"provider": "ATPCO", "term": "Fare Class Code / Fare Basis", "context": "ATPCO fares records carry the fare class and rules that produce the fare basis.", "context_ko": "ATPCO의 운임 레코드는 운임 기준을 생성하는 운임 등급(fare class)과 규정을 담고 있다.", "relationship": "same"}
+      {
+        "provider": "ATPCO",
+        "term": "Fare Class Code / Fare Basis",
+        "context": "ATPCO fares records carry the fare class and rules that produce the fare basis.",
+        "context_ko": "ATPCO의 운임 레코드는 운임 기준을 생성하는 운임 등급(fare class)과 규정을 담고 있다.",
+        "relationship": "same"
+      }
     ],
     "relationships": [
-      {"type": "related", "targetTerm": "RBD"},
-      {"type": "related", "targetTerm": "Fare Component"},
-      {"type": "related", "targetTerm": "Fare Family"},
-      {"type": "related", "targetTerm": "ATPCO"},
-      {"type": "related", "targetTerm": "Passenger Type Code"}
+      {
+        "type": "related",
+        "targetTerm": "RBD"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Fare Component"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Fare Family"
+      },
+      {
+        "type": "related",
+        "targetTerm": "ATPCO"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Passenger Type Code"
+      }
     ],
     "distinctions": [
-      {"targetTerm": "RBD", "explanation": "The RBD is a single booking-class letter; the fare basis code is the full alphanumeric fare identifier that usually starts with that letter.", "explanation_ko": "RBD는 한 글자의 예약 등급 문자이고, 운임 기준 코드는 보통 그 문자로 시작하는 전체 영숫자 운임 식별자이다."},
-      {"targetTerm": "Fare Family", "explanation": "A fare basis identifies one specific filed fare; a fare family is a marketing bundle that may span multiple fare basis codes.", "explanation_ko": "운임 기준은 신고된 하나의 특정 운임을 식별하고, 운임 패밀리(fare family)는 여러 운임 기준 코드에 걸칠 수 있는 마케팅 묶음이다."}
+      {
+        "targetTerm": "RBD",
+        "explanation": "The RBD is a single booking-class letter; the fare basis code is the full alphanumeric fare identifier that usually starts with that letter.",
+        "explanation_ko": "RBD는 한 글자의 예약 등급 문자이고, 운임 기준 코드는 보통 그 문자로 시작하는 전체 영숫자 운임 식별자이다."
+      },
+      {
+        "targetTerm": "Fare Family",
+        "explanation": "A fare basis identifies one specific filed fare; a fare family is a marketing bundle that may span multiple fare basis codes.",
+        "explanation_ko": "운임 기준은 신고된 하나의 특정 운임을 식별하고, 운임 패밀리(fare family)는 여러 운임 기준 코드에 걸칠 수 있는 마케팅 묶음이다."
+      }
     ],
     "sources": [
-      {"name": "ATPCO Fares and Rules data documentation", "org": "ATPCO", "version": "", "section": "", "url": ""},
-      {"name": "IATA Ticketing Handbook / fare construction", "org": "IATA", "version": "", "section": "", "url": ""}
-    ]
+      {
+        "name": "ATPCO Fares and Rules data documentation",
+        "org": "ATPCO",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "IATA Ticketing Handbook / fare construction",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M23 7H10a3 3 0 00-3 3v13a3 3 0 00.9 2.1l15 15a3 3 0 004.2 0l11-11a3 3 0 000-4.2l-15-15A3 3 0 0023 7z\"/><circle cx=\"16\" cy=\"16\" r=\"2.5\"/><line x1=\"21\" y1=\"27\" x2=\"27\" y2=\"33\"/><line x1=\"26\" y1=\"22\" x2=\"32\" y2=\"28\"/></svg>"
   },
   {
     "id": "fare-family",
     "term": "Fare Family",
     "term_ko": "운임 패밀리 (브랜드 운임)",
     "abbreviation": "",
-    "aliases": ["Branded Fare", "Fare Brand", "Branded Fares"],
+    "aliases": [
+      "Branded Fare",
+      "Fare Brand",
+      "Branded Fares"
+    ],
     "category": "air-shop",
     "conceptType": "business-term",
     "status": "active",
@@ -114,31 +265,83 @@
     "longDef_ko": "브랜드 운임(branded fares)이라고도 불리는 운임 패밀리는 항공사가 운임에 포함 사항과 제약 사항을 부여하여 이름이 붙은 등급(tier)으로 표시하는 항공 리테일링 구조이다. ATPCO의 Branded Fares 상품은 브랜드와 그 속성을 신고하는 핵심 산업 메커니즘으로, GDS, NDC 오퍼, 항공사 자사 웹사이트(airline.com)가 이를 일관되게 표시할 수 있게 한다. 운임 패밀리는 특정 운임 기준 코드와 RBD로 매핑되는 상위 수준의 묶음으로, 예약 퍼널 전반에서 상위 등급 판매(upsell)를 가능하게 한다.",
     "standardBody": "ATPCO",
     "providerTerms": [
-      {"provider": "ATPCO", "term": "Branded Fares", "context": "ATPCO Branded Fares lets carriers file brand names and attributes for fare families.", "context_ko": "ATPCO Branded Fares는 항공사가 운임 패밀리의 브랜드 이름과 속성을 신고할 수 있게 한다.", "relationship": "same"},
-      {"provider": "Amadeus", "term": "Fare Families / Branded Fares", "context": "Amadeus markets the grouping of fares with attributes as Fare Families.", "context_ko": "Amadeus는 속성이 결합된 운임 묶음을 Fare Families로 명명해 제공한다.", "relationship": "same"}
+      {
+        "provider": "ATPCO",
+        "term": "Branded Fares",
+        "context": "ATPCO Branded Fares lets carriers file brand names and attributes for fare families.",
+        "context_ko": "ATPCO Branded Fares는 항공사가 운임 패밀리의 브랜드 이름과 속성을 신고할 수 있게 한다.",
+        "relationship": "same"
+      },
+      {
+        "provider": "Amadeus",
+        "term": "Fare Families / Branded Fares",
+        "context": "Amadeus markets the grouping of fares with attributes as Fare Families.",
+        "context_ko": "Amadeus는 속성이 결합된 운임 묶음을 Fare Families로 명명해 제공한다.",
+        "relationship": "same"
+      }
     ],
     "relationships": [
-      {"type": "related", "targetTerm": "Fare Basis Code"},
-      {"type": "related", "targetTerm": "RBD"},
-      {"type": "related", "targetTerm": "Ancillary Service"},
-      {"type": "related", "targetTerm": "Offer"},
-      {"type": "related", "targetTerm": "ATPCO"}
+      {
+        "type": "related",
+        "targetTerm": "Fare Basis Code"
+      },
+      {
+        "type": "related",
+        "targetTerm": "RBD"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Ancillary Service"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Offer"
+      },
+      {
+        "type": "related",
+        "targetTerm": "ATPCO"
+      }
     ],
     "distinctions": [
-      {"targetTerm": "Fare Basis Code", "explanation": "A fare family is a branded bundle spanning fares; a fare basis code identifies one specific underlying fare.", "explanation_ko": "운임 패밀리는 여러 운임에 걸친 브랜드 묶음이고, 운임 기준 코드는 하나의 특정 기초 운임을 식별한다."},
-      {"targetTerm": "Ancillary Service", "explanation": "Ancillaries are individual extras; a fare family bundles selected ancillaries and conditions into a branded tier.", "explanation_ko": "부가 서비스는 개별 추가 항목이고, 운임 패밀리는 선택된 부가 서비스와 조건을 하나의 브랜드 등급으로 묶는다."}
+      {
+        "targetTerm": "Fare Basis Code",
+        "explanation": "A fare family is a branded bundle spanning fares; a fare basis code identifies one specific underlying fare.",
+        "explanation_ko": "운임 패밀리는 여러 운임에 걸친 브랜드 묶음이고, 운임 기준 코드는 하나의 특정 기초 운임을 식별한다."
+      },
+      {
+        "targetTerm": "Ancillary Service",
+        "explanation": "Ancillaries are individual extras; a fare family bundles selected ancillaries and conditions into a branded tier.",
+        "explanation_ko": "부가 서비스는 개별 추가 항목이고, 운임 패밀리는 선택된 부가 서비스와 조건을 하나의 브랜드 등급으로 묶는다."
+      }
     ],
     "sources": [
-      {"name": "ATPCO Branded Fares documentation", "org": "ATPCO", "version": "", "section": "", "url": ""},
-      {"name": "Amadeus Fare Families / Branded Fares documentation", "org": "Amadeus", "version": "", "section": "", "url": ""}
-    ]
+      {
+        "name": "ATPCO Branded Fares documentation",
+        "org": "ATPCO",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Amadeus Fare Families / Branded Fares documentation",
+        "org": "Amadeus",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"10\" width=\"32\" height=\"7\" rx=\"2\"/><rect x=\"11\" y=\"21\" width=\"26\" height=\"7\" rx=\"2\"/><rect x=\"14\" y=\"32\" width=\"20\" height=\"7\" rx=\"2\"/></svg>"
   },
   {
     "id": "origin-destination",
     "term": "Origin & Destination",
     "term_ko": "출발지 및 도착지 (O&D)",
     "abbreviation": "O&D",
-    "aliases": ["Origin and Destination", "O&D", "OnD"],
+    "aliases": [
+      "Origin and Destination",
+      "O&D",
+      "OnD"
+    ],
     "category": "air-shop",
     "conceptType": "business-term",
     "status": "active",
@@ -148,31 +351,79 @@
     "longDef_ko": "O&D 기반 운임 산정 및 재고 관리는 실제 출발지와 실제 도착지 사이의 전체 시장을 최적화 단위로 취급한다. 따라서 BOS-ORD-LAX 연결 여정은 두 개의 개별 구간이 아니라 BOS-LAX라는 하나의 O&D로 관리된다. O&D 기반 가용성(흔히 결합 구간 로직과 결합됨)을 통해 항공사는 동일 구간이라도 통과 승객과 로컬 승객에게 서로 다른 등급 가용성을 제공할 수 있다. 이 개념은 운임 산정의 기반이 되며, 여기서 여정은 각각 O&D로 정의되는 운임 컴포넌트로 분할된다.",
     "standardBody": "IATA",
     "providerTerms": [
-      {"provider": "Sabre", "term": "O&D / Origin and Destination", "context": "Sabre availability and revenue-management documentation uses O&D as the market unit.", "context_ko": "Sabre의 가용성 및 수익 관리 문서는 O&D를 시장 단위로 사용한다.", "relationship": "same"}
+      {
+        "provider": "Sabre",
+        "term": "O&D / Origin and Destination",
+        "context": "Sabre availability and revenue-management documentation uses O&D as the market unit.",
+        "context_ko": "Sabre의 가용성 및 수익 관리 문서는 O&D를 시장 단위로 사용한다.",
+        "relationship": "same"
+      }
     ],
     "relationships": [
-      {"type": "related", "targetTerm": "Journey"},
-      {"type": "related", "targetTerm": "Fare Component"},
-      {"type": "related", "targetTerm": "Availability"},
-      {"type": "related", "targetTerm": "Married Segment"},
-      {"type": "related", "targetTerm": "Segment"},
-      {"type": "related", "targetTerm": "Leg"}
+      {
+        "type": "related",
+        "targetTerm": "Journey"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Fare Component"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Availability"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Married Segment"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Segment"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Leg"
+      }
     ],
     "distinctions": [
-      {"targetTerm": "Leg", "explanation": "A leg is a single nonstop flight operation; an O&D is the full market between true origin and destination, possibly spanning multiple legs.", "explanation_ko": "레그(leg)는 하나의 직항 비행 운항이고, O&D는 실제 출발지와 도착지 사이의 전체 시장으로 여러 레그에 걸칠 수 있다."},
-      {"targetTerm": "Journey", "explanation": "A journey is the passenger's entire travel arc; an O&D is a directional point-pair, and a round trip contains two O&Ds.", "explanation_ko": "여정(journey)은 승객의 전체 여행 흐름이고, O&D는 방향성을 가진 지점 쌍이며, 왕복 여행은 두 개의 O&D를 포함한다."}
+      {
+        "targetTerm": "Leg",
+        "explanation": "A leg is a single nonstop flight operation; an O&D is the full market between true origin and destination, possibly spanning multiple legs.",
+        "explanation_ko": "레그(leg)는 하나의 직항 비행 운항이고, O&D는 실제 출발지와 도착지 사이의 전체 시장으로 여러 레그에 걸칠 수 있다."
+      },
+      {
+        "targetTerm": "Journey",
+        "explanation": "A journey is the passenger's entire travel arc; an O&D is a directional point-pair, and a round trip contains two O&Ds.",
+        "explanation_ko": "여정(journey)은 승객의 전체 여행 흐름이고, O&D는 방향성을 가진 지점 쌍이며, 왕복 여행은 두 개의 O&D를 포함한다."
+      }
     ],
     "sources": [
-      {"name": "IATA fare construction / pricing principles", "org": "IATA", "version": "", "section": "", "url": ""},
-      {"name": "Airline revenue management literature on O&D control", "org": "", "version": "", "section": "", "url": ""}
-    ]
+      {
+        "name": "IATA fare construction / pricing principles",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Airline revenue management literature on O&D control",
+        "org": "",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"34\" r=\"4\"/><path d=\"M16 32c8-2 12-6 16-16\"/><path d=\"M34 11l3 1 1 3\"/><path d=\"M33 8a4 4 0 11-1 8 4 4 0 011-8z\"/></svg>"
   },
   {
     "id": "journey",
     "term": "Journey",
     "term_ko": "여정",
     "abbreviation": "",
-    "aliases": ["Itinerary", "Travel Journey"],
+    "aliases": [
+      "Itinerary",
+      "Travel Journey"
+    ],
     "category": "air-shop",
     "conceptType": "business-term",
     "status": "active",
@@ -183,27 +434,65 @@
     "standardBody": "IATA",
     "providerTerms": [],
     "relationships": [
-      {"type": "related", "targetTerm": "Origin & Destination"},
-      {"type": "related", "targetTerm": "Fare Component"},
-      {"type": "related", "targetTerm": "Segment"},
-      {"type": "related", "targetTerm": "Offer"},
-      {"type": "related", "targetTerm": "Order"}
+      {
+        "type": "related",
+        "targetTerm": "Origin & Destination"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Fare Component"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Segment"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Offer"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Order"
+      }
     ],
     "distinctions": [
-      {"targetTerm": "Origin & Destination", "explanation": "A journey is the whole trip; an O&D is a single directional point-pair, and a journey may contain several O&Ds.", "explanation_ko": "여정은 전체 여행이고, O&D는 방향성을 가진 하나의 지점 쌍이며, 한 여정은 여러 O&D를 포함할 수 있다."},
-      {"targetTerm": "Segment", "explanation": "A segment is one priced/booked flight portion within a journey; the journey is the full set of segments end to end.", "explanation_ko": "세그먼트는 여정 내에서 가격이 매겨지거나 예약된 하나의 비행 구간이고, 여정은 처음부터 끝까지의 전체 세그먼트 집합이다."}
+      {
+        "targetTerm": "Origin & Destination",
+        "explanation": "A journey is the whole trip; an O&D is a single directional point-pair, and a journey may contain several O&Ds.",
+        "explanation_ko": "여정은 전체 여행이고, O&D는 방향성을 가진 하나의 지점 쌍이며, 한 여정은 여러 O&D를 포함할 수 있다."
+      },
+      {
+        "targetTerm": "Segment",
+        "explanation": "A segment is one priced/booked flight portion within a journey; the journey is the full set of segments end to end.",
+        "explanation_ko": "세그먼트는 여정 내에서 가격이 매겨지거나 예약된 하나의 비행 구간이고, 여정은 처음부터 끝까지의 전체 세그먼트 집합이다."
+      }
     ],
     "sources": [
-      {"name": "IATA NDC / Offer and Order management standards", "org": "IATA", "version": "", "section": "", "url": ""},
-      {"name": "IATA fare construction principles", "org": "IATA", "version": "", "section": "", "url": ""}
-    ]
+      {
+        "name": "IATA NDC / Offer and Order management standards",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "IATA fare construction principles",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 12h9a5 5 0 010 10H16a5 5 0 000 10h12\"/><circle cx=\"10\" cy=\"12\" r=\"3\"/><circle cx=\"38\" cy=\"32\" r=\"3\"/><circle cx=\"24\" cy=\"22\" r=\"2\"/></svg>"
   },
   {
     "id": "fare-component",
     "term": "Fare Component",
     "term_ko": "운임 컴포넌트",
     "abbreviation": "",
-    "aliases": ["Pricing Unit Component"],
+    "aliases": [
+      "Pricing Unit Component"
+    ],
     "category": "air-shop",
     "conceptType": "business-term",
     "status": "active",
@@ -213,30 +502,75 @@
     "longDef_ko": "운임 산정에서 여정은 운임 분기점을 기준으로 운임 컴포넌트로 분할되며, 각 컴포넌트는 하나의 O&D로 정의되고 하나의 운임 기준 코드, 하나의 운임 규정 집합, 그리고 (국제선의 경우) 하나의 NUC 금액을 갖는다. 여러 운임 컴포넌트는 가격 산정 단위(pricing unit, 예: 왕복 또는 일주 여행 가격 산정 단위)로 묶이며, 여기서 최소 체류 기간, 결합 가능성(combinability), 통과 운임(through-fare) 검증과 같은 규정이 적용된다. 각 운임 컴포넌트는 그 사이에 운임 분기가 발생하지 않는 경우 여러 비행 세그먼트에 걸칠 수 있다.",
     "standardBody": "IATA",
     "providerTerms": [
-      {"provider": "ATPCO", "term": "Fare Component (in fare construction)", "context": "ATPCO rules apply at the fare-component level during automated pricing.", "context_ko": "ATPCO 규정은 자동 운임 산정 과정에서 운임 컴포넌트 단위로 적용된다.", "relationship": "same"}
+      {
+        "provider": "ATPCO",
+        "term": "Fare Component (in fare construction)",
+        "context": "ATPCO rules apply at the fare-component level during automated pricing.",
+        "context_ko": "ATPCO 규정은 자동 운임 산정 과정에서 운임 컴포넌트 단위로 적용된다.",
+        "relationship": "same"
+      }
     ],
     "relationships": [
-      {"type": "related", "targetTerm": "Fare Basis Code"},
-      {"type": "related", "targetTerm": "Origin & Destination"},
-      {"type": "related", "targetTerm": "Journey"},
-      {"type": "related", "targetTerm": "NUC"},
-      {"type": "related", "targetTerm": "ATPCO"}
+      {
+        "type": "related",
+        "targetTerm": "Fare Basis Code"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Origin & Destination"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Journey"
+      },
+      {
+        "type": "related",
+        "targetTerm": "NUC"
+      },
+      {
+        "type": "related",
+        "targetTerm": "ATPCO"
+      }
     ],
     "distinctions": [
-      {"targetTerm": "Segment", "explanation": "A segment is one booked flight portion; a fare component is a priced span bounded by fare breaks and may cover several segments.", "explanation_ko": "세그먼트는 예약된 하나의 비행 구간이고, 운임 컴포넌트는 운임 분기로 경계가 정해진 가격 산정 구간으로 여러 세그먼트를 포함할 수 있다."},
-      {"targetTerm": "Origin & Destination", "explanation": "An O&D is a market point-pair; a fare component is the priced unit defined over an O&D with one fare and rule set.", "explanation_ko": "O&D는 시장의 지점 쌍이고, 운임 컴포넌트는 하나의 운임과 규정 집합을 갖고 O&D 단위로 정의되는 가격 산정 단위이다."}
+      {
+        "targetTerm": "Segment",
+        "explanation": "A segment is one booked flight portion; a fare component is a priced span bounded by fare breaks and may cover several segments.",
+        "explanation_ko": "세그먼트는 예약된 하나의 비행 구간이고, 운임 컴포넌트는 운임 분기로 경계가 정해진 가격 산정 구간으로 여러 세그먼트를 포함할 수 있다."
+      },
+      {
+        "targetTerm": "Origin & Destination",
+        "explanation": "An O&D is a market point-pair; a fare component is the priced unit defined over an O&D with one fare and rule set.",
+        "explanation_ko": "O&D는 시장의 지점 쌍이고, 운임 컴포넌트는 하나의 운임과 규정 집합을 갖고 O&D 단위로 정의되는 가격 산정 단위이다."
+      }
     ],
     "sources": [
-      {"name": "IATA fare construction principles / Ticketing Handbook", "org": "IATA", "version": "", "section": "", "url": ""},
-      {"name": "ATPCO Automated Rules documentation", "org": "ATPCO", "version": "", "section": "", "url": ""}
-    ]
+      {
+        "name": "IATA fare construction principles / Ticketing Handbook",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "ATPCO Automated Rules documentation",
+        "org": "ATPCO",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"11\" cy=\"24\" r=\"3\"/><circle cx=\"37\" cy=\"24\" r=\"3\"/><line x1=\"14\" y1=\"24\" x2=\"34\" y2=\"24\"/><rect x=\"19\" y=\"30\" width=\"10\" height=\"10\" rx=\"2\"/><path d=\"M24 30v-8\"/></svg>"
   },
   {
     "id": "atpco",
     "term": "ATPCO",
     "term_ko": "ATPCO (항공 운임 공시 회사)",
     "abbreviation": "ATPCO",
-    "aliases": ["Airline Tariff Publishing Company", "ATPCO Inc."],
+    "aliases": [
+      "Airline Tariff Publishing Company",
+      "ATPCO Inc."
+    ],
     "category": "air-shop",
     "conceptType": "provider-term",
     "status": "active",
@@ -247,26 +581,58 @@
     "standardBody": "ATPCO",
     "providerTerms": [],
     "relationships": [
-      {"type": "related", "targetTerm": "Fare Basis Code"},
-      {"type": "related", "targetTerm": "Fare Family"},
-      {"type": "related", "targetTerm": "Fare Component"},
-      {"type": "related", "targetTerm": "GDS"},
-      {"type": "related", "targetTerm": "NDC"}
+      {
+        "type": "related",
+        "targetTerm": "Fare Basis Code"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Fare Family"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Fare Component"
+      },
+      {
+        "type": "related",
+        "targetTerm": "GDS"
+      },
+      {
+        "type": "related",
+        "targetTerm": "NDC"
+      }
     ],
     "distinctions": [
-      {"targetTerm": "GDS", "explanation": "ATPCO supplies and processes fare/rule data; a GDS distributes inventory and bookings and consumes ATPCO data for pricing.", "explanation_ko": "ATPCO는 운임/규정 데이터를 공급하고 처리하며, GDS는 재고와 예약을 유통하고 가격 산정을 위해 ATPCO 데이터를 소비한다."},
-      {"targetTerm": "Fare Basis Code", "explanation": "ATPCO is the organization/data source; the fare basis code is one data element it distributes.", "explanation_ko": "ATPCO는 기관이자 데이터 출처이고, 운임 기준 코드는 ATPCO가 배포하는 하나의 데이터 요소이다."}
+      {
+        "targetTerm": "GDS",
+        "explanation": "ATPCO supplies and processes fare/rule data; a GDS distributes inventory and bookings and consumes ATPCO data for pricing.",
+        "explanation_ko": "ATPCO는 운임/규정 데이터를 공급하고 처리하며, GDS는 재고와 예약을 유통하고 가격 산정을 위해 ATPCO 데이터를 소비한다."
+      },
+      {
+        "targetTerm": "Fare Basis Code",
+        "explanation": "ATPCO is the organization/data source; the fare basis code is one data element it distributes.",
+        "explanation_ko": "ATPCO는 기관이자 데이터 출처이고, 운임 기준 코드는 ATPCO가 배포하는 하나의 데이터 요소이다."
+      }
     ],
     "sources": [
-      {"name": "ATPCO corporate and product documentation", "org": "ATPCO", "version": "", "section": "", "url": "https://www.atpco.net/"}
-    ]
+      {
+        "name": "ATPCO corporate and product documentation",
+        "org": "ATPCO",
+        "version": "",
+        "section": "",
+        "url": "https://www.atpco.net/"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><ellipse cx=\"24\" cy=\"12\" rx=\"13\" ry=\"5\"/><path d=\"M11 12v10c0 2.8 5.8 5 13 5s13-2.2 13-5V12\"/><path d=\"M11 22v10c0 2.8 5.8 5 13 5s13-2.2 13-5V22\"/></svg>"
   },
   {
     "id": "nuc",
     "term": "NUC",
     "term_ko": "중립 산정 단위 (NUC)",
     "abbreviation": "NUC",
-    "aliases": ["Neutral Unit of Construction"],
+    "aliases": [
+      "Neutral Unit of Construction"
+    ],
     "category": "air-shop",
     "conceptType": "standard-term",
     "status": "active",
@@ -277,26 +643,62 @@
     "standardBody": "IATA",
     "providerTerms": [],
     "relationships": [
-      {"type": "related", "targetTerm": "Fare Component"},
-      {"type": "related", "targetTerm": "ISO 4217 Currency Code"},
-      {"type": "related", "targetTerm": "Proration"},
-      {"type": "related", "targetTerm": "E-ticket"}
+      {
+        "type": "related",
+        "targetTerm": "Fare Component"
+      },
+      {
+        "type": "related",
+        "targetTerm": "ISO 4217 Currency Code"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Proration"
+      },
+      {
+        "type": "related",
+        "targetTerm": "E-ticket"
+      }
     ],
     "distinctions": [
-      {"targetTerm": "ISO 4217 Currency Code", "explanation": "ISO 4217 codes name real local currencies; the NUC is a neutral construction unit, not a tradeable currency.", "explanation_ko": "ISO 4217 코드는 실제 현지 통화를 지칭하고, NUC는 거래 가능한 통화가 아니라 중립적인 산정 단위이다."},
-      {"targetTerm": "Proration", "explanation": "NUC is the unit for building a fare; proration uses fare values to split revenue among carriers on a ticket.", "explanation_ko": "NUC는 운임을 구성하기 위한 단위이고, 정산 배분(proration)은 운임 가치를 사용해 한 항공권의 수익을 항공사 간에 분배한다."}
+      {
+        "targetTerm": "ISO 4217 Currency Code",
+        "explanation": "ISO 4217 codes name real local currencies; the NUC is a neutral construction unit, not a tradeable currency.",
+        "explanation_ko": "ISO 4217 코드는 실제 현지 통화를 지칭하고, NUC는 거래 가능한 통화가 아니라 중립적인 산정 단위이다."
+      },
+      {
+        "targetTerm": "Proration",
+        "explanation": "NUC is the unit for building a fare; proration uses fare values to split revenue among carriers on a ticket.",
+        "explanation_ko": "NUC는 운임을 구성하기 위한 단위이고, 정산 배분(proration)은 운임 가치를 사용해 한 항공권의 수익을 항공사 간에 분배한다."
+      }
     ],
     "sources": [
-      {"name": "IATA fare construction / Ticketing Handbook (NUC and ROE)", "org": "IATA", "version": "", "section": "", "url": ""},
-      {"name": "IATA Passenger Tariff / fare construction rules", "org": "IATA", "version": "", "section": "", "url": ""}
-    ]
+      {
+        "name": "IATA fare construction / Ticketing Handbook (NUC and ROE)",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "IATA Passenger Tariff / fare construction rules",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"15\"/><path d=\"M24 14v20\"/><path d=\"M19 19h7a3 3 0 010 6h-7\"/><path d=\"M30 28l-6-6\"/></svg>"
   },
   {
     "id": "overbooking",
     "term": "Overbooking",
     "term_ko": "초과 예약 (오버부킹)",
     "abbreviation": "",
-    "aliases": ["Oversell", "Overselling"],
+    "aliases": [
+      "Oversell",
+      "Overselling"
+    ],
     "category": "air-shop",
     "conceptType": "business-term",
     "status": "active",
@@ -307,19 +709,607 @@
     "standardBody": "",
     "providerTerms": [],
     "relationships": [
-      {"type": "related", "targetTerm": "Availability"},
-      {"type": "related", "targetTerm": "Involuntary Reissue"},
-      {"type": "related", "targetTerm": "IROPS"},
-      {"type": "related", "targetTerm": "RBD"}
+      {
+        "type": "related",
+        "targetTerm": "Availability"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Involuntary Reissue"
+      },
+      {
+        "type": "related",
+        "targetTerm": "IROPS"
+      },
+      {
+        "type": "related",
+        "targetTerm": "RBD"
+      }
     ],
     "distinctions": [
-      {"targetTerm": "Availability", "explanation": "Availability is the seats currently sellable; overbooking is the policy that can push that count above physical capacity.", "explanation_ko": "가용성은 현재 판매 가능한 좌석이고, 초과 예약은 그 수를 물리적 수용 능력 이상으로 끌어올릴 수 있는 정책이다."},
-      {"targetTerm": "Free Sale", "explanation": "Free sale lets a seller book without real-time confirmation; overbooking is the carrier intentionally selling beyond capacity.", "explanation_ko": "프리세일(free sale)은 판매자가 실시간 확인 없이 예약할 수 있게 하는 것이고, 초과 예약은 항공사가 수용 능력을 넘어 의도적으로 판매하는 것이다."}
+      {
+        "targetTerm": "Availability",
+        "explanation": "Availability is the seats currently sellable; overbooking is the policy that can push that count above physical capacity.",
+        "explanation_ko": "가용성은 현재 판매 가능한 좌석이고, 초과 예약은 그 수를 물리적 수용 능력 이상으로 끌어올릴 수 있는 정책이다."
+      },
+      {
+        "targetTerm": "Free Sale",
+        "explanation": "Free sale lets a seller book without real-time confirmation; overbooking is the carrier intentionally selling beyond capacity.",
+        "explanation_ko": "프리세일(free sale)은 판매자가 실시간 확인 없이 예약할 수 있게 하는 것이고, 초과 예약은 항공사가 수용 능력을 넘어 의도적으로 판매하는 것이다."
+      }
     ],
     "sources": [
-      {"name": "Airline revenue management literature on overbooking and denied boarding", "org": "", "version": "", "section": "", "url": ""},
-      {"name": "US DOT oversales / denied boarding compensation rules", "org": "US DOT", "version": "", "section": "", "url": ""},
-      {"name": "EU air passenger rights regulation (denied boarding compensation)", "org": "European Union", "version": "", "section": "", "url": ""}
-    ]
+      {
+        "name": "Airline revenue management literature on overbooking and denied boarding",
+        "org": "",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "US DOT oversales / denied boarding compensation rules",
+        "org": "US DOT",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "EU air passenger rights regulation (denied boarding compensation)",
+        "org": "European Union",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"16\" cy=\"15\" r=\"5\"/><path d=\"M8 34v-2a8 8 0 0116 0v2z\"/><circle cx=\"33\" cy=\"17\" r=\"4\"/><path d=\"M27 34v-1a6 6 0 0112 0v1z\"/></svg>"
+  },
+  {
+    "id": "fare-rule",
+    "term": "Fare Rule",
+    "abbreviation": "",
+    "aliases": [
+      "Fare Rules",
+      "Tariff Rule",
+      "Rule Record"
+    ],
+    "category": "air-shop",
+    "conceptType": "standard-term",
+    "status": "active",
+    "definition": "A Fare Rule is the set of conditions and restrictions that govern when and how a published fare may be sold, ticketed, and used. In ATPCO fare filing, these conditions are organized into numbered categories (e.g., advance purchase, minimum/maximum stay, seasonality, penalties) that attach to a fare via Category 0 (Rule Application) and its footnotes.",
+    "longDef": "Fare Rules are filed by carriers (typically through ATPCO) alongside the fare amount and are evaluated during pricing to determine fare eligibility for a given itinerary, date, passenger, and point of sale. ATPCO structures rule provisions into discrete categories: well-known examples include Category 1 (Eligibility), Category 3 (Seasonality), Category 4 (Flight Application), Category 5 (Advance Reservation/Ticketing), Category 6 (Minimum Stay), Category 7 (Maximum Stay), Category 8 (Stopovers), Category 9 (Transfers), Category 14 (Travel Dates), Category 15 (Sales Restrictions), Category 16 (Penalties), and Category 25 (Fare By Rule). A pricing engine matches the applicable rule data against each Fare Component before the fare can be applied, so a low fare that fails any rule provision is rejected in favor of a higher qualifying fare.",
+    "standardBody": "ATPCO",
+    "term_ko": "운임 규정 (Fare Rule)",
+    "definition_ko": "Fare Rule은 공시 운임을 언제, 어떻게 판매·발권·사용할 수 있는지를 규정하는 조건과 제약의 집합이다. ATPCO 운임 파일링에서는 이 조건들이 사전구매, 최소/최대 체류, 시즌, 페널티 등 번호가 매겨진 카테고리(Category)로 구조화되어 운임에 연결된다.",
+    "longDef_ko": "Fare Rule은 운임 금액과 함께 항공사가 (주로 ATPCO를 통해) 파일링하며, pricing 단계에서 특정 여정·날짜·승객·판매지점에 대한 운임 적용 가능 여부를 판단하는 데 평가된다. ATPCO는 규정 조항을 개별 카테고리로 구조화하는데, 대표적으로 Category 1(Eligibility), 3(Seasonality), 4(Flight Application), 5(Advance Reservation/Ticketing), 6(Minimum Stay), 7(Maximum Stay), 8(Stopovers), 9(Transfers), 14(Travel Dates), 15(Sales Restrictions), 16(Penalties), 25(Fare By Rule) 등이 있다. pricing 엔진은 각 Fare Component에 적용 가능한 규정 데이터를 대조하여 운임 적용 여부를 결정하며, 규정 조항을 하나라도 충족하지 못하는 저렴한 운임은 거절되고 조건을 만족하는 상위 운임이 적용된다.",
+    "providerTerms": [
+      {
+        "provider": "ATPCO",
+        "term": "Rule Category",
+        "context": "ATPCO numbers rule provisions into categories (Cat 1-50) that compose a fare rule.",
+        "context_ko": "ATPCO는 운임 규정 조항을 카테고리(Cat 1-50) 번호로 구조화하여 fare rule을 구성한다.",
+        "relationship": "narrower"
+      },
+      {
+        "provider": "Travelport",
+        "term": "Fare Rules / Record 0",
+        "context": "GDS displays ATPCO-filed rule provisions to agents under fare rule retrieval entries.",
+        "context_ko": "GDS는 ATPCO에 파일링된 규정 조항을 운임 규정 조회 항목으로 상담원에게 표시한다.",
+        "relationship": "same"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Fare Basis Code"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Fare Component"
+      },
+      {
+        "type": "related",
+        "targetTerm": "ATPCO"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Fare Family"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Fare Basis Code",
+        "explanation": "The Fare Basis Code is the alphanumeric label identifying a specific fare; the Fare Rule is the body of conditions that the fare (and its basis code) must satisfy to be applied.",
+        "explanation_ko": "Fare Basis Code는 특정 운임을 식별하는 영숫자 코드이며, Fare Rule은 그 운임(및 basis code)이 적용되기 위해 충족해야 하는 조건의 본문이다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "ATPCO",
+        "name": "What are ATPCO fare rules categories?",
+        "version": "",
+        "section": "Fare rule categories",
+        "url": "https://atpco.net/single-blog/what-are-atpco-fare-rules-categories/"
+      },
+      {
+        "org": "Travelport",
+        "name": "Fare Rules Guide",
+        "version": "",
+        "section": "Fare rule categories",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"6\" width=\"28\" height=\"36\" rx=\"3\"/><line x1=\"16\" y1=\"15\" x2=\"32\" y2=\"15\"/><line x1=\"16\" y1=\"22\" x2=\"32\" y2=\"22\"/><line x1=\"16\" y1=\"29\" x2=\"26\" y2=\"29\"/><path d=\"M28 34l3 3 6-6\"/></svg>"
+  },
+  {
+    "id": "class-of-service",
+    "term": "Class of Service",
+    "abbreviation": "CoS",
+    "aliases": [
+      "Service Class",
+      "Booking Class",
+      "Class of Travel"
+    ],
+    "category": "air-shop",
+    "conceptType": "standard-term",
+    "status": "active",
+    "definition": "Class of Service is the single-letter code identifying the booking inventory class (Reservation Booking Designator) into which a seat is sold, indicating the fare/inventory bucket within a cabin rather than the physical cabin itself. It determines fare eligibility, mileage earning, upgrade, and change/refund conditions associated with the booking.",
+    "longDef": "In airline distribution the term Class of Service is commonly used interchangeably with booking class or RBD: each cabin (Economy, Premium Economy, Business, First) contains multiple lettered classes (e.g., Y, B, M, Q in Economy) that share the same physical seat but carry different fares and conditions. The class of service booked is recorded at the segment level of a PNR and drives downstream pricing, ticketing, and revenue accounting. Usage is overloaded in the industry: some contexts use Class of Service to mean the marketing cabin (Economy vs. Business), so the term is best disambiguated as cabin (physical product) versus booking class/RBD (inventory bucket).",
+    "standardBody": "IATA",
+    "term_ko": "서비스 등급 (Class of Service)",
+    "definition_ko": "Class of Service는 좌석이 판매되는 예약 인벤토리 클래스(RBD, 예약 부킹 지정자)를 식별하는 한 글자 코드로, 물리적 객실 자체가 아니라 객실 내의 운임/인벤토리 버킷을 나타낸다. 운임 적용 가능 여부, 마일리지 적립, 업그레이드, 변경/환불 조건을 결정한다.",
+    "longDef_ko": "항공 유통에서 Class of Service는 흔히 booking class 또는 RBD와 혼용된다. 각 객실(Economy, Premium Economy, Business, First)에는 동일한 물리적 좌석을 공유하지만 운임과 조건이 다른 여러 문자 클래스(예: Economy의 Y, B, M, Q)가 존재한다. 예약된 class of service는 PNR의 segment 단위에 기록되며 이후의 pricing, 발권, 수입 정산을 좌우한다. 업계에서 의미가 중첩되어 사용되는데, 일부 맥락에서는 Class of Service를 마케팅 객실(Economy 대 Business)을 뜻하는 데 쓰므로, 객실(물리적 상품) 대 booking class/RBD(인벤토리 버킷)로 구분하는 것이 명확하다.",
+    "providerTerms": [
+      {
+        "provider": "Travelport",
+        "term": "Booking Class / RBD (Record 6)",
+        "context": "GDS maps each fare to one or more booking-class letters via Record 6 RBD data.",
+        "context_ko": "GDS는 Record 6 RBD 데이터를 통해 각 운임을 하나 이상의 booking class 문자에 매핑한다.",
+        "relationship": "same"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "RBD"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Availability"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Fare Basis Code"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Segment"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "RBD",
+        "explanation": "RBD (Reservation Booking Designator) is the formal name for the inventory class code; Class of Service is the more colloquial term for the same concept, though it is sometimes loosely used to mean the marketing cabin.",
+        "explanation_ko": "RBD(Reservation Booking Designator)는 인벤토리 클래스 코드의 공식 명칭이며, Class of Service는 동일 개념을 가리키는 더 구어적 표현이다. 다만 때때로 마케팅 객실을 뜻하는 의미로 느슨하게 쓰이기도 한다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "Travelport",
+        "name": "Booking Class & Cabin (RBD) - Record 6",
+        "version": "",
+        "section": "RBD / Booking Class",
+        "url": ""
+      },
+      {
+        "org": "IATA",
+        "name": "Passenger Fares and Ticketing",
+        "version": "",
+        "section": "Booking class / class of service",
+        "url": "https://www.iata.org/en/training/subject-areas/fares-ticketing-courses/"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"14\" width=\"32\" height=\"20\" rx=\"4\"/><line x1=\"8\" y1=\"24\" x2=\"40\" y2=\"24\"/><line x1=\"20\" y1=\"14\" x2=\"20\" y2=\"34\"/><line x1=\"30\" y1=\"14\" x2=\"30\" y2=\"34\"/><circle cx=\"14\" cy=\"19\" r=\"1.2\" fill=\"currentColor\"/></svg>"
+  },
+  {
+    "id": "revenue-management",
+    "term": "Revenue Management",
+    "abbreviation": "RM",
+    "aliases": [
+      "Yield Management",
+      "Inventory Management"
+    ],
+    "category": "air-shop",
+    "conceptType": "process",
+    "status": "active",
+    "definition": "Revenue Management is the airline discipline of dynamically controlling seat availability and pricing across booking classes to maximize total revenue for each flight. It forecasts demand by class and applies seat-allocation controls (e.g., booking limits, nesting, bid prices) so that higher-yield demand is not displaced by early low-fare bookings.",
+    "longDef": "Revenue Management (historically called Yield Management) emerged after US deregulation as carriers learned to segment perishable seat inventory by willingness to pay. An RM system forecasts demand for each Reservation Booking Designator (RBD) on a flight or origin-and-destination (O&D) market, then sets availability controls that open or close classes over time. Leg-based and O&D (network) RM approaches use techniques such as Expected Marginal Seat Revenue (EMSR), virtual nesting, and bid-price thresholds. RM is tightly coupled with pricing (which sets the fare ladder) and overbooking (which compensates for no-shows), and increasingly with dynamic and continuous pricing that blur the line between fixed fare buckets and demand-driven prices.",
+    "standardBody": "",
+    "term_ko": "수익 관리 (Revenue Management)",
+    "definition_ko": "Revenue Management는 항공편별 총수익을 극대화하기 위해 booking class 전반의 좌석 가용성과 가격을 동적으로 통제하는 항공사 업무 영역이다. 클래스별 수요를 예측하고 좌석 배분 통제(예약 한도, 네스팅, bid price 등)를 적용하여, 수익성 높은 수요가 조기 저가 예약에 밀려나지 않도록 한다.",
+    "longDef_ko": "Revenue Management(과거 Yield Management로 불림)는 미국 규제 완화 이후 항공사가 지불 의향에 따라 소멸성 좌석 인벤토리를 세분화하는 법을 익히면서 등장했다. RM 시스템은 항공편 또는 O&D(출발지·목적지) 시장에서 각 RBD에 대한 수요를 예측한 뒤, 시간에 따라 클래스를 열고 닫는 가용성 통제를 설정한다. 구간(leg) 기반과 O&D(네트워크) 기반 RM 방식은 EMSR(Expected Marginal Seat Revenue), 가상 네스팅, bid-price 임계값 같은 기법을 사용한다. RM은 운임 사다리를 설정하는 pricing 및 no-show를 보완하는 overbooking과 긴밀히 연결되며, 고정 운임 버킷과 수요 기반 가격의 경계를 흐리는 dynamic/continuous pricing과도 점점 더 결합된다.",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Availability"
+      },
+      {
+        "type": "related",
+        "targetTerm": "RBD"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Overbooking"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Origin & Destination"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Continuous Pricing"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Continuous Pricing",
+        "explanation": "Revenue Management is the broader discipline of demand forecasting and inventory control; Continuous Pricing is one modern pricing technique that lets RM offer prices across a continuous range rather than fixed fare buckets.",
+        "explanation_ko": "Revenue Management는 수요 예측과 인벤토리 통제를 아우르는 더 넓은 영역이며, Continuous Pricing은 RM이 고정 운임 버킷 대신 연속적 범위로 가격을 제시할 수 있게 하는 현대적 가격 책정 기법 중 하나다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "OAG",
+        "name": "The Story of Airline Pricing Strategies",
+        "version": "",
+        "section": "Revenue/yield management",
+        "url": "https://www.oag.com/blog/the-story-of-airline-pricing-strategies"
+      },
+      {
+        "org": "ATPCO",
+        "name": "What are dynamic offers?",
+        "version": "",
+        "section": "Revenue management and pricing",
+        "url": "https://atpco.net/single-blog/what-are-dynamic-offers/"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 38h32\"/><path d=\"M8 38V10\"/><rect x=\"13\" y=\"26\" width=\"5\" height=\"12\"/><rect x=\"22\" y=\"18\" width=\"5\" height=\"20\"/><rect x=\"31\" y=\"12\" width=\"5\" height=\"26\"/><path d=\"M12 20l6-6 5 4 9-9\"/></svg>"
+  },
+  {
+    "id": "fare-construction",
+    "term": "Fare Construction",
+    "abbreviation": "",
+    "aliases": [
+      "Fare Calculation",
+      "Pricing"
+    ],
+    "category": "air-shop",
+    "conceptType": "process",
+    "status": "active",
+    "definition": "Fare Construction is the standardized process of calculating the total fare for an itinerary by breaking it into fare components and pricing units, applying published or constructed fares in Neutral Units of Construction (NUC), validating fare rules, and converting the total to the local currency of the country of commencement. It produces the fare calculation line shown on a ticket.",
+    "longDef": "Under IATA fare construction principles, a journey is divided into pricing units, each comprising one or more fare components (a fare plus the flights it covers). Fares are published in local currency with an equivalent NUC amount; all construction arithmetic is performed in NUC so that fares in different currencies can be added, then the NUC total is converted to the currency of commencement using the IATA Rate of Exchange (ROE). Construction may use published through-fares, or constructed fares built from add-ons (e.g., a domestic add-on plus an international fare). Mileage-based checks (Maximum Permitted Mileage versus Ticketed Point Mileage, with mileage surcharges) and routing-based validity, together with minimum-fare checks, ensure the constructed amount is valid. Modern pricing engines automate this, but the underlying NUC/ROE framework persists alongside ATPCO-filed fares.",
+    "standardBody": "IATA",
+    "term_ko": "운임 산출 (Fare Construction)",
+    "definition_ko": "Fare Construction은 여정의 총운임을 산출하는 표준화된 과정으로, 여정을 fare component와 pricing unit으로 나누고, 공시 또는 구성(constructed) 운임을 NUC(Neutral Unit of Construction) 단위로 적용하며, fare rule을 검증한 뒤 총액을 여행 개시국 통화로 환산한다. 그 결과로 항공권에 표시되는 운임 계산식(fare calculation line)이 생성된다.",
+    "longDef_ko": "IATA 운임 산출 원칙에 따라 여정은 여러 pricing unit으로 나뉘고, 각 pricing unit은 하나 이상의 fare component(운임과 그 운임이 적용되는 비행 구간)로 구성된다. 운임은 현지 통화와 그에 상응하는 NUC 금액으로 공시되며, 서로 다른 통화의 운임을 합산할 수 있도록 모든 산출 연산은 NUC로 수행한 뒤, IATA Rate of Exchange(ROE)를 사용해 NUC 합계를 개시국 통화로 환산한다. 산출에는 공시 through-fare를 쓰거나, add-on으로 조합한 constructed fare(예: 국내 add-on + 국제 운임)를 쓸 수 있다. 마일리지 기반 점검(Maximum Permitted Mileage 대 Ticketed Point Mileage, 마일리지 할증 포함)과 routing 기반 유효성, 그리고 최저운임 점검을 통해 산출 금액의 유효성을 확보한다. 현대 pricing 엔진이 이를 자동화하지만, ATPCO 파일링 운임과 함께 NUC/ROE 체계는 여전히 유지된다.",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "child",
+        "targetTerm": "Fare Component"
+      },
+      {
+        "type": "child",
+        "targetTerm": "Pricing Unit"
+      },
+      {
+        "type": "related",
+        "targetTerm": "NUC"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Fare Rule"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Journey"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Fare Component",
+        "explanation": "A Fare Component is one building block (a single fare and its flights); Fare Construction is the overall process that assembles and validates components and pricing units into a total fare.",
+        "explanation_ko": "Fare Component는 하나의 구성 요소(단일 운임과 그 비행 구간)이며, Fare Construction은 component와 pricing unit을 조합·검증하여 총운임을 만드는 전체 과정이다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "IATA",
+        "name": "Fundamental Skills in Journey Pricing and Ticketing",
+        "version": "",
+        "section": "Fare construction",
+        "url": "https://www.iata.org/en/training/courses/journey-pricing-ticketing/tttg14/en/"
+      },
+      {
+        "org": "IATA",
+        "name": "IATA Rates of Exchange",
+        "version": "",
+        "section": "NUC and ROE",
+        "url": "https://www.iata.org/en/publications/manuals/iata-rates-of-exchange/"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"7\" y=\"20\" width=\"10\" height=\"10\" rx=\"1.5\"/><rect x=\"31\" y=\"20\" width=\"10\" height=\"10\" rx=\"1.5\"/><line x1=\"17\" y1=\"25\" x2=\"22\" y2=\"25\"/><line x1=\"26\" y1=\"25\" x2=\"31\" y2=\"25\"/><path d=\"M22 25l2-2 2 2-2 2z\"/><line x1=\"12\" y1=\"20\" x2=\"12\" y2=\"14\"/><line x1=\"36\" y1=\"20\" x2=\"36\" y2=\"14\"/></svg>"
+  },
+  {
+    "id": "pricing-unit",
+    "term": "Pricing Unit",
+    "abbreviation": "PU",
+    "aliases": [
+      "Priceable Unit",
+      "Priceable-Unit"
+    ],
+    "category": "air-shop",
+    "conceptType": "standard-term",
+    "status": "active",
+    "definition": "A Pricing Unit is a journey or portion of a journey that is priced as a single entity, made up of one or more fare components. It has a defined unit origin (its starting point) and unit destination, and its type (one-way, round trip, circle trip, open jaw) governs which fare-construction checks and rules apply.",
+    "longDef": "In IATA/ATPCO fare construction, fare components are grouped into pricing units (also called priceable units) before fares are validated and combined. Each pricing unit is classified by type, for example one-way (OW), round trip (RT), circle trip (CT), or open jaw, and this type determines minimum-fare checks (such as Circle Trip Minimum or Higher Intermediate Point checks), combinability rules, and stopover/transfer counting. The total fare for a journey is the sum of its pricing units, each constructed and rule-checked independently before aggregation. Distinguishing the pricing unit from the fare component is essential because some rule provisions (e.g., minimum stay, combinations) apply at the pricing-unit level rather than the individual component level.",
+    "standardBody": "IATA",
+    "term_ko": "프라이싱 유닛 (Pricing Unit)",
+    "definition_ko": "Pricing Unit은 하나의 단위로 운임이 책정되는 여정 또는 여정의 일부로, 하나 이상의 fare component로 구성된다. 정해진 unit origin(시작점)과 unit destination(끝점)을 가지며, 그 유형(편도, 왕복, circle trip, open jaw)에 따라 적용되는 운임 산출 점검과 규정이 달라진다.",
+    "longDef_ko": "IATA/ATPCO 운임 산출에서 fare component는 운임이 검증·결합되기 전에 pricing unit(priceable unit이라고도 함)으로 묶인다. 각 pricing unit은 편도(OW), 왕복(RT), circle trip(CT), open jaw 등 유형으로 분류되며, 이 유형은 최저운임 점검(Circle Trip Minimum, Higher Intermediate Point 점검 등), 결합(combinability) 규정, stopover/transfer 계산 방식을 결정한다. 여정의 총운임은 각 pricing unit의 합이며, 각 unit은 합산 전에 독립적으로 산출·규정 점검된다. 일부 규정 조항(예: 최소 체류, 결합)은 개별 component가 아니라 pricing unit 단위로 적용되므로 pricing unit과 fare component를 구분하는 것이 필수적이다.",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "parent",
+        "targetTerm": "Fare Component"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Fare Construction"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Journey"
+      },
+      {
+        "type": "related",
+        "targetTerm": "NUC"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Fare Component",
+        "explanation": "A Fare Component is a single fare and the flights it covers; a Pricing Unit groups one or more fare components into the entity that is actually priced and rule-checked together.",
+        "explanation_ko": "Fare Component는 단일 운임과 그 운임이 적용되는 비행 구간이고, Pricing Unit은 하나 이상의 fare component를 묶어 실제로 함께 가격이 책정되고 규정이 점검되는 단위다."
+      },
+      {
+        "targetTerm": "Journey",
+        "explanation": "A Journey is the whole travel from start to end; a Pricing Unit is a sub-portion of the journey priced as one entity, and a journey may contain several pricing units.",
+        "explanation_ko": "Journey는 시작부터 끝까지의 전체 여행이고, Pricing Unit은 한 단위로 가격이 책정되는 여정의 하위 부분이며, 한 journey는 여러 pricing unit을 포함할 수 있다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "IATA",
+        "name": "Fundamental Skills in Journey Pricing and Ticketing",
+        "version": "",
+        "section": "Pricing units",
+        "url": "https://www.iata.org/en/training/courses/journey-pricing-ticketing/tttg14/en/"
+      },
+      {
+        "org": "IATA",
+        "name": "Passenger Fares and Ticketing - Advanced",
+        "version": "",
+        "section": "Pricing unit construction",
+        "url": "https://www.iata.org/en/training/courses/passenger-fares-advanced/talf24/en/"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"9\" y=\"13\" width=\"30\" height=\"22\" rx=\"3\"/><line x1=\"19\" y1=\"13\" x2=\"19\" y2=\"35\" stroke-dasharray=\"3 3\"/><circle cx=\"14\" cy=\"24\" r=\"2\"/><circle cx=\"29\" cy=\"24\" r=\"2\"/><line x1=\"23\" y1=\"24\" x2=\"34\" y2=\"24\"/></svg>"
+  },
+  {
+    "id": "tax-yq-yr",
+    "term": "Tax (YQ/YR)",
+    "abbreviation": "YQ/YR",
+    "aliases": [
+      "Carrier-Imposed Surcharge",
+      "Carrier-Imposed Fee",
+      "YQ",
+      "YR",
+      "Fuel Surcharge"
+    ],
+    "category": "air-shop",
+    "conceptType": "code",
+    "status": "active",
+    "definition": "YQ and YR are tax/fee codes carried in the tax box of a ticket that represent carrier-imposed surcharges (commonly described historically as fuel or insurance surcharges) rather than government or airport taxes. They are set by the airline, filed and collected like taxes through ATPCO/IATA tax data, but are airline revenue.",
+    "longDef": "Although they occupy tax fields and use ISO-style two-letter tax codes, YQ and YR are commercial charges levied by the marketing or operating carrier, not statutory taxes imposed by a government or airport authority. The split between YQ and YR is largely conventional and carrier-specific; both function identically as carrier-imposed surcharges. Originally introduced to recover volatile jet-fuel costs, many carriers later relabeled them simply as carrier-imposed international surcharges decoupled from actual fuel prices. Because they are technically taxes/fees rather than fare, YQ/YR amounts are often what makes 'free' award redemptions still cost cash, and they are handled separately from the base fare in fare construction and refunds.",
+    "standardBody": "IATA",
+    "term_ko": "YQ/YR 세금·요금 (Tax/Surcharge)",
+    "definition_ko": "YQ와 YR은 항공권 세금란에 기재되는 세금/요금 코드로, 정부나 공항이 부과하는 세금이 아니라 항공사가 부과하는 carrier-imposed surcharge(역사적으로 흔히 유류 또는 보험 할증료로 표현됨)를 나타낸다. 항공사가 금액을 정하고 ATPCO/IATA tax 데이터를 통해 세금처럼 파일링·징수하지만, 실제로는 항공사 수입이다.",
+    "longDef_ko": "세금 필드를 차지하고 ISO식 두 글자 tax code를 사용하지만, YQ와 YR은 정부나 공항 당국이 부과하는 법정 세금이 아니라 marketing 또는 operating carrier가 부과하는 상업적 요금이다. YQ와 YR의 구분은 대체로 관행적이고 항공사별로 다르며, 둘 다 carrier-imposed surcharge로서 동일하게 기능한다. 본래 변동성이 큰 항공유 비용을 회수하기 위해 도입되었으나, 이후 많은 항공사가 실제 유가와 무관하게 단순히 carrier-imposed international surcharge로 명칭을 바꾸었다. 기술적으로 운임이 아닌 세금/요금이므로, YQ/YR 금액은 '무료' 마일리지 보상 발권에서도 현금 비용이 발생하는 주된 이유가 되며, fare construction과 환불에서 기본 운임과 별도로 처리된다.",
+    "providerTerms": [
+      {
+        "provider": "Travelport",
+        "term": "YQ-YR",
+        "context": "Travelport documents YQ/YR as carrier-imposed surcharges shown in the tax portion of a fare.",
+        "context_ko": "Travelport는 YQ/YR을 운임의 세금 부분에 표시되는 carrier-imposed surcharge로 문서화한다.",
+        "relationship": "same"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Surcharge"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Fare Construction"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Fare Component"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Refund"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Surcharge",
+        "explanation": "A Surcharge in fare construction (e.g., a mileage or peak-day surcharge) increases the fare amount itself; YQ/YR are carrier-imposed amounts carried in the tax box separate from the base fare, even though both are airline-set add-ons.",
+        "explanation_ko": "Fare construction의 Surcharge(예: 마일리지·성수기 할증)는 운임 금액 자체를 증가시키는 반면, YQ/YR은 기본 운임과 분리되어 세금란에 기재되는 carrier-imposed 금액이다. 둘 다 항공사가 정하는 추가 금액이라는 점은 같다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "Travelport",
+        "name": "YQ-YR Support article",
+        "version": "",
+        "section": "Carrier-imposed surcharges",
+        "url": "https://support.travelport.com/webhelp/FaresAndPricing/Content/YQ-YR.htm"
+      },
+      {
+        "org": "IATA",
+        "name": "Passenger Fares and Ticketing",
+        "version": "",
+        "section": "Taxes, fees and charges",
+        "url": "https://www.iata.org/en/training/subject-areas/fares-ticketing-courses/"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 6l16 8v6c0 11-7 18-16 22C15 38 8 31 8 20v-6z\"/><path d=\"M20 23l3 3 6-7\"/></svg>"
+  },
+  {
+    "id": "surcharge",
+    "term": "Surcharge",
+    "abbreviation": "",
+    "aliases": [
+      "Fare Surcharge",
+      "Q Surcharge"
+    ],
+    "category": "air-shop",
+    "conceptType": "standard-term",
+    "status": "active",
+    "definition": "A Surcharge is an additional amount added to the base fare during fare construction under specific rule conditions, such as a mileage surcharge for exceeding Maximum Permitted Mileage, a peak/seasonal or day-of-week surcharge, or a fare-rule-filed Q surcharge. It increases the fare component amount and is expressed in the same construction units (NUC) as the fare.",
+    "longDef": "Surcharges in airline fare construction are governed by fare rules and the mileage system. A mileage surcharge (e.g., 5M, 10M, 15M, 20M, 25M) is applied as a percentage uplift when an itinerary's Ticketed Point Mileage exceeds the Maximum Permitted Mileage within published tolerances. Rule-based surcharges (often filed under ATPCO Category 12, Surcharges, and historically labeled with a 'Q' such as Q-surcharges) add fixed or percentage amounts for conditions like specific flights, dates, or directions of travel. Unlike YQ/YR carrier-imposed amounts that sit in the tax box, fare-construction surcharges are part of the fare itself and therefore affect commissions, proration, and minimum-fare checks.",
+    "standardBody": "ATPCO",
+    "term_ko": "할증료 (Surcharge)",
+    "definition_ko": "Surcharge는 특정 규정 조건에 따라 fare construction 과정에서 기본 운임에 더해지는 추가 금액으로, Maximum Permitted Mileage 초과에 대한 마일리지 할증, 성수기/시즌/요일 할증, 또는 fare rule에 파일링된 Q surcharge 등이 있다. fare component 금액을 증가시키며 운임과 동일한 산출 단위(NUC)로 표시된다.",
+    "longDef_ko": "항공 운임 산출에서 surcharge는 fare rule과 마일리지 시스템에 의해 규율된다. 마일리지 할증(예: 5M, 10M, 15M, 20M, 25M)은 여정의 Ticketed Point Mileage가 공시된 허용 범위 내에서 Maximum Permitted Mileage를 초과할 때 백분율 가산으로 적용된다. 규정 기반 할증(흔히 ATPCO Category 12 Surcharges로 파일링되며, 역사적으로 'Q'를 붙인 Q-surcharge로 표기됨)은 특정 항공편, 날짜, 여행 방향 같은 조건에 대해 정액 또는 정률 금액을 더한다. 세금란에 위치하는 YQ/YR carrier-imposed 금액과 달리, fare-construction surcharge는 운임 자체의 일부이므로 커미션, proration, 최저운임 점검에 영향을 미친다.",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Fare Construction"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Fare Component"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Fare Rule"
+      },
+      {
+        "type": "related",
+        "targetTerm": "NUC"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Tax (YQ/YR)",
+        "explanation": "YQ/YR are carrier-imposed amounts carried in the ticket's tax box, separate from the fare; a fare-construction Surcharge is added into the fare amount itself and is treated as fare for commission and proration.",
+        "explanation_ko": "YQ/YR은 운임과 분리되어 항공권 세금란에 기재되는 carrier-imposed 금액이고, fare-construction Surcharge는 운임 금액 자체에 가산되어 커미션과 proration에서 운임으로 취급된다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "ATPCO",
+        "name": "ATPCO Fare Rules Categories",
+        "version": "",
+        "section": "Category 12 Surcharges",
+        "url": "https://atpco.net/single-blog/what-are-atpco-fare-rules-categories/"
+      },
+      {
+        "org": "IATA",
+        "name": "Fundamental Skills in Journey Pricing and Ticketing",
+        "version": "",
+        "section": "Mileage surcharges",
+        "url": "https://www.iata.org/en/training/courses/journey-pricing-ticketing/tttg14/en/"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><line x1=\"24\" y1=\"10\" x2=\"24\" y2=\"38\"/><line x1=\"14\" y1=\"24\" x2=\"34\" y2=\"24\"/><circle cx=\"24\" cy=\"24\" r=\"16\"/></svg>"
+  },
+  {
+    "id": "continuous-pricing",
+    "term": "Continuous Pricing",
+    "abbreviation": "",
+    "aliases": [
+      "Total Dynamic Pricing",
+      "Continuous Fares"
+    ],
+    "category": "air-shop",
+    "conceptType": "process",
+    "status": "active",
+    "definition": "Continuous Pricing is a revenue-management and pricing technique in which an airline generates fares in real time across a continuous price range, rather than being limited to a fixed set of pre-filed fare buckets (booking classes). It lets carriers offer any price within defined minimum and maximum bounds based on demand, willingness to pay, and context.",
+    "longDef": "Traditional airline pricing pre-distributes a discrete set of fares mapped to a limited number of booking classes (commonly described as around 26 class buckets) per flight, each with filed rules. Continuous Pricing removes the constraint that an offered price must equal one of those pre-filed points: the revenue-management system computes prices anywhere along a continuous interval, allowing finer matching of price to demand and reducing the 'gaps' between adjacent fare buckets. ATPCO and carriers position continuous pricing as a step within dynamic offer creation and modern airline retailing, often delivered through richer optimization in the RM/offer engine and increasingly via NDC where the airline returns calculated prices rather than only catalog fares. It is closely related to, but narrower than, dynamic pricing, which can also vary bundles and ancillaries, not just the base fare.",
+    "standardBody": "",
+    "term_ko": "연속 가격 책정 (Continuous Pricing)",
+    "definition_ko": "Continuous Pricing은 항공사가 사전 파일링된 고정된 운임 버킷(booking class) 집합에 국한되지 않고, 연속적인 가격 범위 안에서 실시간으로 운임을 생성하는 revenue management 및 pricing 기법이다. 정해진 최소·최대 한도 내에서 수요, 지불 의향, 맥락에 따라 어떤 가격이든 제시할 수 있게 한다.",
+    "longDef_ko": "전통적 항공 가격 책정은 항공편마다 제한된 수의 booking class(흔히 약 26개 클래스 버킷으로 설명됨)에 매핑된 이산적 운임 집합을 사전 배포하며, 각각에 규정이 파일링되어 있다. Continuous Pricing은 제시 가격이 사전 파일링된 가격 지점 중 하나여야 한다는 제약을 제거한다. revenue management 시스템이 연속 구간상의 어떤 가격이든 산출하여 가격을 수요에 더 정밀하게 맞추고 인접 운임 버킷 사이의 '간격'을 줄인다. ATPCO와 항공사들은 continuous pricing을 dynamic offer 생성과 현대 항공 리테일링의 한 단계로 위치시키며, 주로 RM/offer 엔진의 고도화된 최적화로 구현되고, 항공사가 카탈로그 운임만이 아니라 산출된 가격을 반환하는 NDC를 통해 점점 더 제공된다. base fare뿐 아니라 번들과 부가서비스까지 변동시킬 수 있는 dynamic pricing과 밀접하지만 그보다 좁은 개념이다.",
+    "providerTerms": [
+      {
+        "provider": "ATPCO",
+        "term": "Dynamic Offers / Continuous Pricing",
+        "context": "ATPCO frames continuous pricing as part of its dynamic offer creation capabilities for airline retailing.",
+        "context_ko": "ATPCO는 continuous pricing을 항공 리테일링을 위한 dynamic offer 생성 역량의 일부로 위치시킨다.",
+        "relationship": "related"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Revenue Management"
+      },
+      {
+        "type": "related",
+        "targetTerm": "RBD"
+      },
+      {
+        "type": "related",
+        "targetTerm": "NDC"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Offer"
+      },
+      {
+        "type": "contrasts",
+        "targetTerm": "Fare Basis Code"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "RBD",
+        "explanation": "RBDs are the fixed booking-class buckets that traditional pricing maps fares to; Continuous Pricing is designed to break free of that finite bucket structure by pricing along a continuous range.",
+        "explanation_ko": "RBD는 전통적 가격 책정이 운임을 매핑하는 고정된 booking class 버킷이고, Continuous Pricing은 연속적 범위로 가격을 책정함으로써 그 유한한 버킷 구조에서 벗어나도록 설계되었다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "ATPCO",
+        "name": "What are dynamic offers?",
+        "version": "",
+        "section": "Continuous / dynamic pricing",
+        "url": "https://atpco.net/single-blog/what-are-dynamic-offers/"
+      },
+      {
+        "org": "Business Travel News",
+        "name": "Airline Continuous Pricing, Explained",
+        "version": "",
+        "section": "Continuous pricing",
+        "url": "https://www.businesstravelnews.com/Procurement/Airline-Continuous-Pricing-Explained"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 34c5 0 6-18 11-18s6 12 11 12 6-16 11-16\"/><line x1=\"6\" y1=\"40\" x2=\"42\" y2=\"40\"/><circle cx=\"17\" cy=\"16\" r=\"1.5\" fill=\"currentColor\"/><circle cx=\"28\" cy=\"28\" r=\"1.5\" fill=\"currentColor\"/></svg>"
   }
 ]

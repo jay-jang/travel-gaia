@@ -83,11 +83,26 @@ const glossary = {
 };
 writeFileSync(join(DATA,'glossary.json'), JSON.stringify(glossary,null,2));
 
+// ---- embed display fonts (base64 woff2, keeps single-file/offline) ----
+const FONTS = [
+  { file:'arch800.woff2', family:'Archivo', weight:800 },
+  { file:'sg700.woff2',   family:'Space Grotesk', weight:700 },
+  { file:'sg500.woff2',   family:'Space Grotesk', weight:500 },
+];
+let fontCss = '';
+for (const f of FONTS) {
+  try { const b64 = readFileSync(join(ROOT,'build','fonts',f.file)).toString('base64');
+    fontCss += `@font-face{font-family:'${f.family}';font-style:normal;font-weight:${f.weight};font-display:swap;src:url(data:font/woff2;base64,${b64}) format('woff2')}\n`;
+  } catch { console.error(`WARN: font ${f.file} missing, skipped`); }
+}
+
 // ---- inline into template -> index.html ----
 const tpl = readFileSync(join(ROOT,'build','template.html'),'utf8');
 const json = JSON.stringify(glossary).replace(/</g,'\\u003c');   // safe inside <script>
 if (!tpl.includes('__GLOSSARY_DATA__')) { console.error('ERROR: template missing __GLOSSARY_DATA__ marker'); process.exit(1); }
-writeFileSync(join(ROOT,'index.html'), tpl.replace('__GLOSSARY_DATA__', json));
+const html = tpl.replace('/*__FONTS__*/', fontCss).replace('__GLOSSARY_DATA__', json);
+writeFileSync(join(ROOT,'index.html'), html);
+const fontKB = (fontCss.length/1024).toFixed(0);
 
 // ---- report ----
 const perCat = CATEGORIES.map(c => `  ${c.id}: ${entries.filter(e=>e.category===c.id).length}`).join('\n');
@@ -100,6 +115,7 @@ console.log(`unresolved cross-refs: ${unresolved.length}${unresolved.length?'\n 
 console.log(`entries missing sources: ${missingSource.length}${missingSource.length?' ['+missingSource.join(', ')+']':''}`);
 console.log(`bad category: ${badCat.length}${badCat.length?' ['+badCat.join(', ')+']':''}`);
 console.log(`bad status: ${badStatus.length}${badStatus.length?' ['+badStatus.join(', ')+']':''}`);
-const total = JSON.stringify(glossary).length;
-console.log(`index.html data payload: ${(total/1024).toFixed(1)} KB`);
+const withIcon = entries.filter(e => e.icon && /<svg/i.test(e.icon)).length;
+console.log(`entries with SVG icon: ${withIcon}/${entries.length}`);
+console.log(`embedded fonts: ${fontKB} KB | index.html total: ${(html.length/1024).toFixed(0)} KB | data: ${(JSON.stringify(glossary).length/1024).toFixed(1)} KB`);
 console.log(`OK -> index.html, data/glossary.json\n`);
