@@ -1,0 +1,309 @@
+[
+  {
+    "id": "crs",
+    "term": "CRS",
+    "term_ko": "중앙 예약 시스템(CRS)",
+    "abbreviation": "CRS",
+    "aliases": ["Central Reservation System", "Central Reservations System", "Hotel CRS"],
+    "category": "hotel-dist",
+    "conceptType": "acronym",
+    "status": "active",
+    "definition": "A Central Reservation System is the hotel-side system that stores and distributes room inventory, rates, and availability across multiple channels and that captures and manages reservations centrally. It acts as the single source of truth for sellable inventory and rate plans pushed out to the brand website, GDS, OTAs, and other channels.",
+    "definition_ko": "중앙 예약 시스템(CRS)은 객실 인벤토리, 요금, 가용성을 여러 채널에 걸쳐 저장·분배하고 예약을 중앙에서 수집·관리하는 호텔 측 시스템이다. 브랜드 웹사이트, GDS, OTA 및 기타 채널로 송출되는 판매 가능 인벤토리와 요금제의 단일 진실 공급원(single source of truth) 역할을 한다.",
+    "longDef": "A hotel CRS centralizes ARI (availability, rates, inventory) for one or many properties and connects upstream to demand channels (brand.com booking engine, GDS, OTAs, metasearch) and downstream to property systems. It differs from a PMS, which runs the on-property operations; bookings typically flow CRS -> PMS for fulfillment. Distribution to many online channels is often handled together with or via a Channel Manager.",
+    "longDef_ko": "호텔 CRS는 하나 또는 여러 객실의 ARI(가용성, 요금, 인벤토리)를 중앙화하며, 상류로는 수요 채널(브랜드 닷컴 예약 엔진, GDS, OTA, 메타서치)과, 하류로는 자산 운영 시스템과 연결된다. 이는 현장 운영을 담당하는 PMS와 구별되며, 예약은 일반적으로 CRS에서 PMS로 흘러 이행(fulfillment)된다. 다수의 온라인 채널로의 분배는 흔히 채널 매니저(Channel Manager)와 함께 또는 이를 통해 처리된다.",
+    "standardBody": "",
+    "providerTerms": [],
+    "relationships": [
+      {"type": "related", "targetTerm": "PMS"},
+      {"type": "related", "targetTerm": "Channel Manager"},
+      {"type": "related", "targetTerm": "ARI"},
+      {"type": "related", "targetTerm": "GDS"},
+      {"type": "related", "targetTerm": "Rate Plan"},
+      {"type": "related", "targetTerm": "Allotment"}
+    ],
+    "distinctions": [
+      {"targetTerm": "PMS", "explanation": "CRS manages distribution and central reservations; PMS manages on-property operations like check-in, folios, and housekeeping.", "explanation_ko": "CRS는 분배와 중앙 예약을 관리하고, PMS는 체크인, 폴리오(folio), 하우스키핑 같은 현장 운영을 관리한다."},
+      {"targetTerm": "Channel Manager", "explanation": "CRS is the central inventory/reservation hub; a Channel Manager is the connectivity layer that syncs ARI to many online channels (sometimes a CRS feature, sometimes a separate product).", "explanation_ko": "CRS는 중앙 인벤토리/예약 허브이고, 채널 매니저는 ARI를 다수의 온라인 채널로 동기화하는 연결 계층이다(CRS의 기능일 때도 있고 별도 제품일 때도 있다)."}
+    ],
+    "sources": [
+      {"name": "HTNG interface specifications", "org": "HTNG", "version": "", "section": "", "url": ""},
+      {"name": "OpenTravel Specification", "org": "OpenTravel Alliance", "version": "", "section": "", "url": ""}
+    ]
+  },
+  {
+    "id": "pms",
+    "term": "PMS",
+    "term_ko": "자산 관리 시스템(PMS)",
+    "abbreviation": "PMS",
+    "aliases": ["Property Management System", "Hotel Property Management System"],
+    "category": "hotel-dist",
+    "conceptType": "acronym",
+    "status": "active",
+    "definition": "A Property Management System is the operational software used at an individual hotel property to manage front-office and back-office functions such as reservations, check-in/check-out, room assignment, guest folios, housekeeping status, and night audit. It is the system of record for the on-property guest stay and billing.",
+    "definition_ko": "자산 관리 시스템(PMS)은 개별 호텔 자산에서 예약, 체크인/체크아웃, 객실 배정, 고객 폴리오(folio), 하우스키핑 상태, 야간 감사(night audit) 등 프런트오피스 및 백오피스 기능을 관리하는 운영 소프트웨어다. 현장 투숙과 청구에 대한 기록 시스템(system of record)이다.",
+    "longDef": "The PMS handles the operational lifecycle of a stay at the property level, including guest profiles, folio/charges, and room status. It commonly integrates with a CRS (for centralized distribution and incoming reservations) and downstream point-of-sale, payment, and door-lock systems. Reservations created in distribution channels typically arrive in the PMS via the CRS or a two-way interface.",
+    "longDef_ko": "PMS는 고객 프로필, 폴리오/요금, 객실 상태 등 자산 단위에서 투숙의 운영 생애주기를 처리한다. 일반적으로 CRS(중앙 분배 및 유입 예약용)와, 하류의 POS, 결제, 도어록 시스템과 통합된다. 분배 채널에서 생성된 예약은 보통 CRS 또는 양방향 인터페이스를 통해 PMS로 전달된다.",
+    "standardBody": "",
+    "providerTerms": [],
+    "relationships": [
+      {"type": "related", "targetTerm": "CRS"},
+      {"type": "related", "targetTerm": "Channel Manager"},
+      {"type": "related", "targetTerm": "Room Type"},
+      {"type": "related", "targetTerm": "Customer Profile"}
+    ],
+    "distinctions": [
+      {"targetTerm": "CRS", "explanation": "PMS runs property operations and is the system of record for the stay; CRS centralizes inventory/rates and distributes them across channels.", "explanation_ko": "PMS는 자산 운영을 수행하며 투숙에 대한 기록 시스템이고, CRS는 인벤토리/요금을 중앙화하여 여러 채널에 분배한다."}
+    ],
+    "sources": [
+      {"name": "HTNG interface specifications", "org": "HTNG", "version": "", "section": "", "url": ""},
+      {"name": "OpenTravel Specification", "org": "OpenTravel Alliance", "version": "", "section": "", "url": ""}
+    ]
+  },
+  {
+    "id": "channel-manager",
+    "term": "Channel Manager",
+    "term_ko": "채널 매니저",
+    "abbreviation": "",
+    "aliases": ["Channel Management System", "Channel Management Software"],
+    "category": "hotel-dist",
+    "conceptType": "provider-term",
+    "status": "active",
+    "definition": "A Channel Manager is a software service that synchronizes a hotel's availability, rates, and inventory (ARI) across multiple online distribution channels from a single point, and collects reservations back from those channels. Its core purpose is to keep inventory consistent and reduce overbooking and rate disparity across OTAs, the brand site, GDS, and metasearch.",
+    "definition_ko": "채널 매니저는 호텔의 가용성, 요금, 인벤토리(ARI)를 단일 지점에서 여러 온라인 분배 채널에 걸쳐 동기화하고 해당 채널로부터 예약을 다시 수집하는 소프트웨어 서비스다. 핵심 목적은 인벤토리를 일관되게 유지하고 OTA, 브랜드 사이트, GDS, 메타서치 전반의 오버부킹과 요금 불일치(rate disparity)를 줄이는 것이다.",
+    "longDef": "The Channel Manager is the connectivity/middleware layer between a hotel's inventory source (PMS or CRS) and many demand channels. It pushes ARI updates outward and pulls bookings inward, typically using two-way (pooled) inventory so a sale on one channel decrements availability everywhere. It is closely associated with maintaining Rate Parity and is sometimes bundled inside a CRS rather than sold standalone.",
+    "longDef_ko": "채널 매니저는 호텔의 인벤토리 소스(PMS 또는 CRS)와 다수의 수요 채널 사이를 잇는 연결/미들웨어 계층이다. ARI 업데이트를 외부로 푸시하고 예약을 내부로 끌어오며, 일반적으로 양방향(풀링) 인벤토리를 사용하여 한 채널에서의 판매가 모든 곳의 가용성을 차감하도록 한다. 요금 패리티(Rate Parity) 유지와 밀접하게 연관되며, 독립 제품으로 판매되기보다 CRS 내부에 번들로 포함되는 경우도 있다.",
+    "standardBody": "",
+    "providerTerms": [],
+    "relationships": [
+      {"type": "related", "targetTerm": "CRS"},
+      {"type": "related", "targetTerm": "PMS"},
+      {"type": "related", "targetTerm": "ARI"},
+      {"type": "related", "targetTerm": "Rate Parity"},
+      {"type": "related", "targetTerm": "OTA (Online Travel Agency)"},
+      {"type": "related", "targetTerm": "Allotment"}
+    ],
+    "distinctions": [
+      {"targetTerm": "CRS", "explanation": "A Channel Manager is the distribution/connectivity layer that syncs ARI to channels; a CRS is the central inventory and reservation repository (which may include channel management).", "explanation_ko": "채널 매니저는 ARI를 채널로 동기화하는 분배/연결 계층이고, CRS는 중앙 인벤토리 및 예약 저장소다(채널 관리 기능을 포함할 수도 있다)."},
+      {"targetTerm": "ARI", "explanation": "ARI is the data (availability, rates, inventory) being synchronized; the Channel Manager is the tool that synchronizes it.", "explanation_ko": "ARI는 동기화되는 데이터(가용성, 요금, 인벤토리)이고, 채널 매니저는 그것을 동기화하는 도구다."}
+    ],
+    "sources": [
+      {"name": "OpenTravel Specification", "org": "OpenTravel Alliance", "version": "", "section": "", "url": ""},
+      {"name": "HTNG interface specifications", "org": "HTNG", "version": "", "section": "", "url": ""}
+    ]
+  },
+  {
+    "id": "ari",
+    "term": "ARI",
+    "term_ko": "가용성·요금·인벤토리(ARI)",
+    "abbreviation": "ARI",
+    "aliases": ["Availability, Rates and Inventory", "Availability Rates Inventory"],
+    "category": "hotel-dist",
+    "conceptType": "acronym",
+    "status": "active",
+    "definition": "ARI stands for Availability, Rates, and Inventory — the core set of data a hotel distributes to sales channels: which dates/room types are available, at what prices, and how many units remain. Keeping ARI synchronized and accurate across channels is the central function of hotel distribution.",
+    "definition_ko": "ARI는 Availability(가용성), Rates(요금), Inventory(인벤토리)의 약어로, 호텔이 판매 채널에 분배하는 핵심 데이터 묶음을 가리킨다. 즉 어떤 날짜/객실 유형이 판매 가능한지, 어떤 가격인지, 몇 개의 객실이 남아 있는지를 의미한다. ARI를 채널 전반에 걸쳐 동기화하고 정확하게 유지하는 것이 호텔 분배의 핵심 기능이다.",
+    "longDef": "ARI is the data payload exchanged between a hotel's inventory source (CRS/PMS) and its channels via a Channel Manager. It is commonly transmitted using standardized messages that update availability counts, rate values, and restrictions such as length-of-stay or stop-sell. Inconsistent ARI leads to overbooking or rate parity breaches.",
+    "longDef_ko": "ARI는 호텔의 인벤토리 소스(CRS/PMS)와 채널 사이에 채널 매니저를 통해 교환되는 데이터 페이로드다. 일반적으로 가용성 수량, 요금 값, 그리고 최소 숙박일수(length-of-stay)나 판매 중지(stop-sell) 같은 제약 조건을 갱신하는 표준화된 메시지로 전송된다. ARI가 일관되지 않으면 오버부킹이나 요금 패리티 위반으로 이어진다.",
+    "standardBody": "OpenTravel",
+    "providerTerms": [],
+    "relationships": [
+      {"type": "related", "targetTerm": "Channel Manager"},
+      {"type": "related", "targetTerm": "CRS"},
+      {"type": "related", "targetTerm": "Availability"},
+      {"type": "related", "targetTerm": "Rate Plan"},
+      {"type": "related", "targetTerm": "Allotment"},
+      {"type": "related", "targetTerm": "Rate Parity"},
+      {"type": "related", "targetTerm": "Length of Stay"}
+    ],
+    "distinctions": [
+      {"targetTerm": "Channel Manager", "explanation": "ARI is the availability/rate/inventory data; the Channel Manager is the system that distributes and synchronizes that data.", "explanation_ko": "ARI는 가용성/요금/인벤토리 데이터이고, 채널 매니저는 그 데이터를 분배하고 동기화하는 시스템이다."},
+      {"targetTerm": "Availability", "explanation": "Availability is just the 'A' (whether a room can be sold for given dates); ARI bundles availability together with rates and inventory counts.", "explanation_ko": "Availability(가용성)는 ARI 중 'A'(특정 날짜에 객실을 판매할 수 있는지 여부)만을 가리키며, ARI는 가용성을 요금 및 인벤토리 수량과 함께 묶은 개념이다."}
+    ],
+    "sources": [
+      {"name": "OpenTravel Specification", "org": "OpenTravel Alliance", "version": "", "section": "", "url": ""},
+      {"name": "HTNG interface specifications", "org": "HTNG", "version": "", "section": "", "url": ""}
+    ]
+  },
+  {
+    "id": "bedbank",
+    "term": "Bedbank",
+    "term_ko": "베드뱅크(객실 도매업체)",
+    "abbreviation": "",
+    "aliases": ["Bed Bank", "Bedbanks", "Wholesaler (hotel)", "Hotel Wholesaler"],
+    "category": "hotel-dist",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "A bedbank is a B2B hotel wholesaler/aggregator that contracts room inventory from hotels (usually at net, non-commissionable rates) and resells it to travel sellers such as OTAs, tour operators, and travel agencies, typically via API. Bedbanks act as intermediaries between hotel supply and downstream distributors rather than selling directly to the public.",
+    "definition_ko": "베드뱅크는 호텔로부터 객실 인벤토리를 (대개 순(net) 요금, 즉 비커미션 요금으로) 계약해 OTA, 투어 오퍼레이터, 여행사 같은 여행 판매자에게 주로 API를 통해 재판매하는 B2B 호텔 도매업체/애그리게이터다. 베드뱅크는 일반 대중에게 직접 판매하기보다 호텔 공급과 하류 분배자 사이의 중개자 역할을 한다.",
+    "longDef": "Bedbanks aggregate inventory and net rates from many hotels and offer them to B2B buyers, who add their own markup before selling to travelers. Because they generally deal in Net Rates, the buyer's margin comes from marking up rather than receiving a commission. Bedbanks are a major source of opaque/packaged hotel supply and a common cause of rate parity disputes when net rates leak into public channels. Examples in the industry include Hotelbeds and similar wholesalers.",
+    "longDef_ko": "베드뱅크는 여러 호텔로부터 인벤토리와 순(net) 요금을 집약해 B2B 구매자에게 제공하며, 구매자는 여행자에게 판매하기 전 자체 마진을 붙인다. 일반적으로 순 요금(Net Rate)을 다루기 때문에 구매자의 마진은 커미션이 아니라 마크업에서 발생한다. 베드뱅크는 불투명/패키지 호텔 공급의 주요 원천이며, 순 요금이 공개 채널로 유출될 때 요금 패리티 분쟁의 흔한 원인이 된다. 업계의 예로는 Hotelbeds와 유사한 도매업체들이 있다.",
+    "standardBody": "",
+    "providerTerms": [
+      {"provider": "Hotelbeds", "term": "Bedbank", "context": "Hotelbeds is a global B2B hotel bedbank/wholesaler distributing net inventory to travel sellers via API, a representative example of the bedbank model.", "context_ko": "Hotelbeds는 순(net) 인벤토리를 API를 통해 여행 판매자에게 분배하는 글로벌 B2B 호텔 베드뱅크/도매업체로, 베드뱅크 모델의 대표적인 예다.", "relationship": "example"}
+    ],
+    "relationships": [
+      {"type": "related", "targetTerm": "Net Rate"},
+      {"type": "related", "targetTerm": "Commissionable Rate"},
+      {"type": "related", "targetTerm": "Allotment"},
+      {"type": "related", "targetTerm": "Rate Parity"},
+      {"type": "related", "targetTerm": "OTA (Online Travel Agency)"},
+      {"type": "related", "targetTerm": "Aggregator"}
+    ],
+    "distinctions": [
+      {"targetTerm": "OTA (Online Travel Agency)", "explanation": "A bedbank is a B2B wholesaler selling to other travel sellers; an OTA sells hotel rooms directly to the traveling public.", "explanation_ko": "베드뱅크는 다른 여행 판매자에게 판매하는 B2B 도매업체이고, OTA는 여행하는 일반 대중에게 직접 객실을 판매한다."},
+      {"targetTerm": "Net Rate", "explanation": "A bedbank is the business intermediary; the Net Rate is the wholesale price model bedbanks typically contract and resell on.", "explanation_ko": "베드뱅크는 사업적 중개자이고, 순 요금(Net Rate)은 베드뱅크가 일반적으로 계약하고 재판매하는 기반이 되는 도매 가격 모델이다."}
+    ],
+    "sources": [
+      {"name": "Hotel distribution and wholesaler industry references", "org": "", "version": "", "section": "", "url": ""}
+    ]
+  },
+  {
+    "id": "net-rate",
+    "term": "Net Rate",
+    "term_ko": "순 요금(Net Rate, 도매 요금)",
+    "abbreviation": "",
+    "aliases": ["Wholesale Rate", "Nett Rate", "Net Price"],
+    "category": "hotel-dist",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "A net rate is a wholesale, non-commissionable room rate that a hotel contracts to a reseller (such as a bedbank, tour operator, or OTA under the merchant model). The reseller adds its own markup to reach the price shown to the traveler, so its margin is the difference between the selling price and the net rate rather than a commission.",
+    "definition_ko": "순 요금(Net Rate)은 호텔이 재판매업체(베드뱅크, 투어 오퍼레이터, 또는 머천트 모델 하의 OTA 등)에 계약하는 도매·비커미션 객실 요금이다. 재판매업체는 자체 마크업을 붙여 여행자에게 보이는 가격을 산정하므로, 그 마진은 커미션이 아니라 판매 가격과 순 요금의 차액이다.",
+    "longDef": "Net rates are the basis of the merchant/wholesale distribution model: the hotel receives the agreed net amount and the intermediary keeps any markup. This contrasts with the agency/commissionable model, where the guest pays the hotel's published rate and the agent earns a percentage commission. Net rates are central to bedbanks and packaged/opaque inventory, and their leakage into public channels is a frequent rate parity concern.",
+    "longDef_ko": "순 요금은 머천트/도매 분배 모델의 기반이다. 호텔은 합의된 순 금액을 받고 중개자는 마크업을 모두 가져간다. 이는 고객이 호텔의 공시 요금을 지불하고 대리점이 일정 비율의 커미션을 받는 에이전시/커미션 모델과 대비된다. 순 요금은 베드뱅크와 패키지/불투명 인벤토리의 핵심이며, 그것이 공개 채널로 유출되는 것은 빈번한 요금 패리티 우려 사항이다.",
+    "standardBody": "",
+    "providerTerms": [],
+    "relationships": [
+      {"type": "contrasts", "targetTerm": "Commissionable Rate"},
+      {"type": "related", "targetTerm": "Bedbank"},
+      {"type": "related", "targetTerm": "Merchant Model"},
+      {"type": "related", "targetTerm": "Rate Plan"},
+      {"type": "related", "targetTerm": "Rate Parity"},
+      {"type": "related", "targetTerm": "BAR"}
+    ],
+    "distinctions": [
+      {"targetTerm": "Commissionable Rate", "explanation": "A net rate is non-commissionable (margin via markup); a commissionable rate pays the seller a percentage commission on the published price.", "explanation_ko": "순 요금은 비커미션 요금이며(마진은 마크업으로 발생), 커미션 요금은 판매자에게 공시 가격에 대한 일정 비율의 커미션을 지급한다."},
+      {"targetTerm": "Merchant Model", "explanation": "Net rate is the contracted wholesale price; the merchant model is the broader payment/distribution arrangement in which net rates are typically used.", "explanation_ko": "순 요금은 계약된 도매 가격이고, 머천트 모델은 순 요금이 일반적으로 사용되는 더 넓은 결제/분배 체계다."}
+    ],
+    "sources": [
+      {"name": "Hotel distribution rate model industry references", "org": "", "version": "", "section": "", "url": ""}
+    ]
+  },
+  {
+    "id": "commissionable-rate",
+    "term": "Commissionable Rate",
+    "term_ko": "커미션 요금(commissionable rate)",
+    "abbreviation": "",
+    "aliases": ["Retail Rate (commissionable)", "Gross Rate"],
+    "category": "hotel-dist",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "A commissionable rate is a published room rate on which the hotel pays the booking travel agent or distributor a commission (a percentage of the room revenue) for the sale. The guest is typically charged the hotel's rate and the agent is paid commission afterward, characteristic of the agency distribution model.",
+    "definition_ko": "커미션 요금은 호텔이 판매에 대해 예약을 발생시킨 여행사나 분배자에게 커미션(객실 매출의 일정 비율)을 지급하는 공시 객실 요금이다. 일반적으로 고객은 호텔 요금을 청구받고 대리점은 이후에 커미션을 지급받으며, 이는 에이전시 분배 모델의 특징이다.",
+    "longDef": "Under the commissionable/agency model, the traveler pays the hotel (often at check-out) and the agent earns a contracted commission (a percentage of room revenue, which varies by agreement). This contrasts with the merchant/net-rate model where the intermediary marks up a net rate and there is no separate commission. GDS bookings are a classic channel for commissionable rates.",
+    "longDef_ko": "커미션/에이전시 모델에서는 여행자가 (흔히 체크아웃 시) 호텔에 지불하고, 대리점은 계약된 커미션(객실 매출의 일정 비율로, 계약에 따라 다름)을 받는다. 이는 중개자가 순 요금에 마크업을 붙이고 별도의 커미션이 없는 머천트/순 요금 모델과 대비된다. GDS 예약은 커미션 요금의 대표적인 채널이다.",
+    "standardBody": "",
+    "providerTerms": [],
+    "relationships": [
+      {"type": "contrasts", "targetTerm": "Net Rate"},
+      {"type": "related", "targetTerm": "Agency Model"},
+      {"type": "related", "targetTerm": "GDS"},
+      {"type": "related", "targetTerm": "Rate Plan"},
+      {"type": "related", "targetTerm": "BAR"}
+    ],
+    "distinctions": [
+      {"targetTerm": "Net Rate", "explanation": "A commissionable rate pays the seller a commission on the published price; a net rate is wholesale and non-commissionable with margin from markup.", "explanation_ko": "커미션 요금은 판매자에게 공시 가격에 대한 커미션을 지급하고, 순 요금은 도매·비커미션 요금으로 마진이 마크업에서 발생한다."},
+      {"targetTerm": "Agency Model", "explanation": "Commissionable rate is the priced product; the agency model is the broader settlement model in which the hotel collects from the guest and pays commission.", "explanation_ko": "커미션 요금은 가격이 책정된 상품이고, 에이전시 모델은 호텔이 고객으로부터 대금을 수취하고 커미션을 지급하는 더 넓은 정산 모델이다."}
+    ],
+    "sources": [
+      {"name": "Hotel distribution rate model industry references", "org": "", "version": "", "section": "", "url": ""}
+    ]
+  },
+  {
+    "id": "cancellation-policy",
+    "term": "Cancellation Policy",
+    "term_ko": "취소 정책",
+    "abbreviation": "",
+    "aliases": ["Cancel Policy", "Cancellation Terms", "Cancellation Penalty Policy"],
+    "category": "hotel-dist",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "A cancellation policy defines the conditions, deadlines, and penalties that apply when a guest cancels or modifies a hotel reservation, such as a free-cancellation cutoff time/date and the fee (for example, the first night or the full stay) charged for a late or no-show cancellation. It is attached to a rate plan and disclosed at booking.",
+    "definition_ko": "취소 정책은 고객이 호텔 예약을 취소하거나 변경할 때 적용되는 조건, 기한, 위약금을 정의한다. 예를 들어 무료 취소 마감 시각/날짜와, 지연 취소나 노쇼(no-show) 시 부과되는 요금(예: 첫날 숙박료 또는 전체 숙박료) 등이 이에 해당한다. 취소 정책은 요금제에 연결되며 예약 시 고지된다.",
+    "longDef": "Cancellation policies are typically expressed as a deadline relative to arrival (e.g., free until 24/48/72 hours before check-in) plus a penalty amount or formula if cancelled after the deadline or in non-refundable rates. In distribution standards they are carried as structured policy/penalty elements alongside the rate so channels can display and enforce them. A cancellation policy governs what happens when a booking is cancelled, which is distinct from a guarantee policy that governs how the booking is secured/held.",
+    "longDef_ko": "취소 정책은 일반적으로 도착 기준 상대적 기한(예: 체크인 24/48/72시간 전까지 무료)과, 기한 이후 취소하거나 환불 불가 요금일 경우의 위약금 금액 또는 산정식으로 표현된다. 분배 표준에서는 채널이 이를 표시하고 시행할 수 있도록 요금과 함께 구조화된 정책/위약금 요소로 전달된다. 취소 정책은 예약이 취소될 때 어떻게 되는지를 규율하며, 이는 예약을 어떻게 확보·보장하는지를 규율하는 개런티 정책(guarantee policy)과 구별된다.",
+    "standardBody": "OpenTravel",
+    "providerTerms": [],
+    "relationships": [
+      {"type": "related", "targetTerm": "Guarantee Policy"},
+      {"type": "related", "targetTerm": "Rate Plan"},
+      {"type": "related", "targetTerm": "VCC"},
+      {"type": "related", "targetTerm": "Chargeback"}
+    ],
+    "distinctions": [
+      {"targetTerm": "Guarantee Policy", "explanation": "A cancellation policy sets the penalties/deadlines for cancelling; a guarantee policy sets how the reservation is secured and held (e.g., credit card or deposit).", "explanation_ko": "취소 정책은 취소에 대한 위약금/기한을 정하고, 개런티 정책은 예약을 어떻게 확보하고 보장하는지를(예: 신용카드 또는 보증금) 정한다."}
+    ],
+    "sources": [
+      {"name": "OpenTravel Specification", "org": "OpenTravel Alliance", "version": "", "section": "", "url": ""}
+    ]
+  },
+  {
+    "id": "guarantee-policy",
+    "term": "Guarantee Policy",
+    "term_ko": "개런티 정책(예약 보장 정책)",
+    "abbreviation": "",
+    "aliases": ["Reservation Guarantee", "Booking Guarantee", "Deposit/Guarantee Policy"],
+    "category": "hotel-dist",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "A guarantee policy defines how a hotel reservation must be secured so the room is held for the guest, for example by credit card guarantee, advance deposit, prepayment, or company/travel-agent guarantee. It determines what is required at booking and the hotel's recourse (such as charging a no-show fee) if the guest does not arrive.",
+    "definition_ko": "개런티 정책은 객실이 고객을 위해 유지되도록 호텔 예약을 어떻게 확보해야 하는지를 정의한다. 예를 들어 신용카드 보증, 사전 보증금, 선결제, 또는 회사/여행사 보증 등이 있다. 예약 시 무엇이 요구되는지, 그리고 고객이 도착하지 않을 경우 호텔의 구제 수단(예: 노쇼 요금 청구)을 결정한다.",
+    "longDef": "Guarantee types commonly include credit-card guarantee (room held all night, no-show charge applies), deposit/prepayment guarantee, and 'hold until' (e.g., 6 PM) arrangements where an unguaranteed room may be released. In distribution standards the guarantee requirement is carried as a structured element of the rate/reservation. The guarantee policy governs securing and holding the booking, which is distinct from the cancellation policy that governs penalties when the booking is cancelled.",
+    "longDef_ko": "개런티 유형에는 일반적으로 신용카드 보증(객실을 밤새 유지하며 노쇼 요금 부과), 보증금/선결제 보증, 그리고 보장되지 않은 객실이 해제될 수 있는 '특정 시각까지 보류'(예: 오후 6시) 방식이 포함된다. 분배 표준에서는 개런티 요구사항이 요금/예약의 구조화된 요소로 전달된다. 개런티 정책은 예약의 확보와 보장을 규율하며, 이는 예약 취소 시의 위약금을 규율하는 취소 정책과 구별된다.",
+    "standardBody": "OpenTravel",
+    "providerTerms": [],
+    "relationships": [
+      {"type": "related", "targetTerm": "Cancellation Policy"},
+      {"type": "related", "targetTerm": "Rate Plan"},
+      {"type": "related", "targetTerm": "VCC"},
+      {"type": "related", "targetTerm": "3-D Secure"},
+      {"type": "related", "targetTerm": "Overbooking"}
+    ],
+    "distinctions": [
+      {"targetTerm": "Cancellation Policy", "explanation": "A guarantee policy defines how a booking is secured/held and no-show recourse; a cancellation policy defines deadlines and penalties for cancelling.", "explanation_ko": "개런티 정책은 예약을 어떻게 확보·보장하는지와 노쇼 구제 수단을 정의하고, 취소 정책은 취소에 대한 기한과 위약금을 정의한다."}
+    ],
+    "sources": [
+      {"name": "OpenTravel Specification", "org": "OpenTravel Alliance", "version": "", "section": "", "url": ""}
+    ]
+  },
+  {
+    "id": "free-sale",
+    "term": "Free Sale",
+    "term_ko": "프리세일(free sale)",
+    "abbreviation": "",
+    "aliases": ["Freesale", "Free Sell", "Sell Free", "Free Sale Inventory"],
+    "category": "hotel-dist",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "Free sale is a distribution arrangement in which a channel may confirm hotel bookings without checking a specific live allotment for each request, typically up to an agreed limit and subject to release/stop-sell conditions. The hotel commits to honor confirmed free-sale bookings, relying on the seller to respect stop-sell signals rather than on real-time allocation checks.",
+    "definition_ko": "프리세일(free sale)은 채널이 각 요청마다 특정 실시간 할당량(allotment)을 확인하지 않고도 호텔 예약을 확정할 수 있게 하는 분배 방식으로, 일반적으로 합의된 한도까지 적용되며 해제/판매 중지(stop-sell) 조건의 적용을 받는다. 호텔은 확정된 프리세일 예약을 이행할 것을 약속하며, 실시간 할당 확인이 아니라 판매자가 판매 중지 신호를 준수하는 것에 의존한다.",
+    "longDef": "Free sale (or 'sell free') lets a channel sell rooms on the assumption that availability exists, often governed by a free-sale limit and a stop-sell/close-out mechanism the hotel triggers when it wants to stop receiving bookings. It contrasts with allotment-based selling, where the channel can only sell from a finite pre-allocated block, and with fully dynamic two-way (pooled) availability. Free sale increases conversion and reduces missed bookings but carries overbooking risk if stop-sell is not applied promptly.",
+    "longDef_ko": "프리세일('sell free')은 채널이 가용성이 존재한다는 가정 하에 객실을 판매하도록 허용하며, 흔히 프리세일 한도와, 호텔이 예약 수신을 중단하고자 할 때 발동하는 판매 중지(stop-sell)/마감(close-out) 메커니즘에 의해 규율된다. 이는 채널이 사전 할당된 유한한 블록에서만 판매할 수 있는 할당량 기반 판매, 그리고 완전 동적 양방향(풀링) 가용성과 대비된다. 프리세일은 전환율을 높이고 놓친 예약을 줄이지만, 판매 중지가 신속히 적용되지 않으면 오버부킹 위험을 수반한다.",
+    "standardBody": "OpenTravel",
+    "providerTerms": [],
+    "relationships": [
+      {"type": "contrasts", "targetTerm": "Allotment"},
+      {"type": "related", "targetTerm": "Availability"},
+      {"type": "related", "targetTerm": "ARI"},
+      {"type": "related", "targetTerm": "Channel Manager"},
+      {"type": "related", "targetTerm": "Overbooking"}
+    ],
+    "distinctions": [
+      {"targetTerm": "Allotment", "explanation": "Free sale lets a channel confirm bookings without checking a finite block (subject to stop-sell); an allotment is a fixed pre-allocated number of rooms a channel may sell.", "explanation_ko": "프리세일은 채널이 유한한 블록을 확인하지 않고도 예약을 확정할 수 있게 하지만(판매 중지의 적용을 받음), 할당량(allotment)은 채널이 판매할 수 있도록 사전에 할당된 고정 객실 수다."},
+      {"targetTerm": "Overbooking", "explanation": "Free sale is a selling mechanism that can lead to overbooking if stop-sell is delayed; overbooking is the resulting state of having sold more rooms than available.", "explanation_ko": "프리세일은 판매 중지가 지연되면 오버부킹으로 이어질 수 있는 판매 메커니즘이고, 오버부킹은 가용 객실보다 많은 객실을 판매한 결과 상태다."}
+    ],
+    "sources": [
+      {"name": "OpenTravel Specification", "org": "OpenTravel Alliance", "version": "", "section": "", "url": ""}
+    ]
+  }
+]

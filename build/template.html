@@ -1,0 +1,1319 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Travel Gaia — 여행 산업 용어 백과사전</title>
+<meta name="description" content="여행 산업(항공·호텔·유통·정산·표준)의 용어를 공급자/표준 간 통일한 standalone 백과사전. 한/영 지원, 관계 Knowledge Graph 포함.">
+<style>
+:root {
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --surface-2: #f1f5f9;
+  --border: #e2e8f0;
+  --text: #0f172a;
+  --muted: #475569;
+  --faint: #94a3b8;
+  --accent: #2563eb;
+  --accent-weak: #eff6ff;
+  --accent-2: #0d9488;
+  --warn: #d97706;
+  --warn-weak: #fffbeb;
+  --danger: #dc2626;
+  --shadow: 0 1px 3px rgba(15,23,42,0.03), 0 4px 6px -1px rgba(15,23,42,0.05), 0 10px 15px -3px rgba(15,23,42,0.08);
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
+  --side: 300px;
+  --maxw: 900px;
+}
+[data-theme="dark"] {
+  --bg: #090d16;
+  --surface: #111726;
+  --surface-2: #1b2336;
+  --border: #263147;
+  --text: #f8fafc;
+  --muted: #94a3b8;
+  --faint: #5f7596;
+  --accent: #3b82f6;
+  --accent-weak: #14223f;
+  --accent-2: #14b8a6;
+  --warn: #f59e0b;
+  --warn-weak: #2e1f0b;
+  --danger: #ef4444;
+  --shadow: 0 4px 6px -1px rgba(0,0,0,0.3), 0 2px 4px -2px rgba(0,0,0,0.3), 0 20px 25px -5px rgba(0,0,0,0.5);
+}
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+code, kbd {
+  font-family: var(--mono);
+  font-size: .88em;
+  background: var(--surface-2);
+  color: var(--text);
+  padding: .2em .4em;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+}
+
+/* Layout */
+header.top {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 60px;
+  padding: 0 24px;
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 1.15rem;
+  letter-spacing: -.03em;
+  white-space: nowrap;
+  color: var(--text);
+  cursor: pointer;
+  user-select: none;
+}
+.brand .globe {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background: radial-gradient(circle at 30% 25%, #60a5fa, var(--accent));
+  box-shadow: 0 0 12px rgba(37,99,235,0.25);
+  font-size: 16px;
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.brand:hover .globe {
+  transform: scale(1.1) rotate(12deg);
+}
+.brand small {
+  display: block;
+  font-weight: 600;
+  color: var(--faint);
+  font-size: .7rem;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  margin-top: 1px;
+}
+.searchwrap {
+  flex: 1;
+  max-width: 480px;
+  position: relative;
+  margin-left: 12px;
+}
+#q {
+  width: 100%;
+  padding: 10px 42px 10px 42px;
+  border: 1px solid var(--border);
+  border-radius: 9999px;
+  background: var(--surface-2);
+  color: var(--text);
+  font-size: .92rem;
+  font-weight: 500;
+  outline: none;
+  transition: all .2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+#q:focus {
+  border-color: var(--accent);
+  background: var(--surface);
+  box-shadow: 0 0 0 3px var(--accent-weak);
+}
+.searchwrap .mag {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--faint);
+  font-size: 15px;
+  pointer-events: none;
+}
+.searchwrap .hint {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--faint);
+  font-size: .72rem;
+  font-weight: 600;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 6px;
+  padding: 2px 6px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.03);
+  pointer-events: none;
+}
+.tbtn {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  height: 40px;
+  min-width: 40px;
+  padding: 0 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+  transition: all .2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.tbtn:hover {
+  border-color: var(--faint);
+  background: var(--surface-2);
+  transform: translateY(-1px);
+}
+.tbtn:active {
+  transform: translateY(0);
+}
+.actions {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.menu-toggle {
+  display: none;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+  transition: all .2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-toggle:hover {
+  border-color: var(--faint);
+  background: var(--surface-2);
+}
+
+.shell {
+  display: grid;
+  grid-template-columns: var(--side) 1fr;
+  align-items: start;
+}
+aside.nav {
+  position: sticky;
+  top: 60px;
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+  border-right: 1px solid var(--border);
+  background: var(--surface);
+  padding: 24px 16px;
+}
+aside .nav-title {
+  font-size: .75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--faint);
+  margin: 24px 12px 8px;
+}
+aside .nav-title:first-of-type {
+  margin-top: 4px;
+}
+.cat-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 12px;
+  border-radius: 10px;
+  color: var(--text);
+  cursor: pointer;
+  font-size: .9rem;
+  font-weight: 500;
+  transition: all .2s ease;
+}
+.cat-link:hover {
+  background: var(--surface-2);
+  text-decoration: none;
+  color: var(--accent);
+}
+.cat-link.active {
+  background: var(--accent-weak);
+  color: var(--accent);
+  font-weight: 600;
+}
+.cat-link .cnt {
+  font-size: .75rem;
+  font-weight: 600;
+  color: var(--muted);
+  background: var(--surface-2);
+  border-radius: 9999px;
+  padding: 2px 8px;
+  min-width: 28px;
+  text-align: center;
+  transition: all .2s ease;
+}
+.cat-link.active .cnt {
+  background: var(--surface);
+  color: var(--accent);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+}
+.cat-link .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex: none;
+}
+
+main {
+  min-width: 0;
+  padding: 40px clamp(20px, 5vw, 64px) 120px;
+  max-width: calc(var(--maxw) + 96px);
+  margin: 0 auto;
+  width: 100%;
+}
+.scrim {
+  display: none;
+}
+
+/* Home view components */
+.hero {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: var(--shadow);
+  margin-bottom: 32px;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, var(--accent-weak) 0%, transparent 70%);
+  pointer-events: none;
+  opacity: 0.7;
+}
+.hero h1, .hero p, .hero .stats, .hero .cta-graph {
+  position: relative;
+  z-index: 1;
+}
+.hero h1 {
+  margin: 0 0 12px;
+  font-size: 2.25rem;
+  font-weight: 800;
+  letter-spacing: -.04em;
+  line-height: 1.25;
+  background: linear-gradient(135deg, var(--text) 30%, var(--accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero p {
+  margin: 0 0 24px;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 24px;
+}
+.stat {
+  flex: 1;
+  min-width: 140px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 16px 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.01);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.stat:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+.stat b {
+  display: block;
+  font-size: 1.85rem;
+  font-weight: 800;
+  letter-spacing: -.03em;
+  color: var(--accent);
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+.stat span {
+  color: var(--muted);
+  font-size: .85rem;
+  font-weight: 600;
+}
+.sec-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 40px 0 16px;
+  letter-spacing: -.02em;
+  color: var(--text);
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.01), var(--shadow);
+  transition: transform .25s cubic-bezier(0.4, 0, 0.2, 1), border-color .2s ease, box-shadow .25s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+  box-shadow: 0 12px 24px -10px rgba(0,0,0,0.08), var(--shadow);
+  text-decoration: none;
+}
+.card .ct {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--text);
+}
+.card .cd {
+  color: var(--muted);
+  font-size: .875rem;
+  margin-top: 8px;
+  line-height: 1.5;
+}
+.card .cn {
+  color: var(--faint);
+  font-size: .78rem;
+  margin-top: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.cta-graph {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 12px;
+  padding: 12px 20px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(37,99,235,0.2);
+  transition: all .2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.cta-graph:hover {
+  text-decoration: none;
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(37,99,235,0.3);
+}
+.conflict {
+  background: var(--warn-weak);
+  border: 1px solid rgba(217, 119, 6, 0.15);
+  border-left: 4px solid var(--warn);
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  font-size: .95rem;
+  line-height: 1.6;
+}
+.conflict b {
+  color: var(--warn);
+  font-weight: 700;
+}
+.disclaimer {
+  max-width: var(--maxw);
+  margin: 32px auto 0;
+  color: var(--faint);
+  font-size: .78rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Category list view / Term list view */
+.crumbs {
+  font-size: .875rem;
+  color: var(--muted);
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+.crumbs a {
+  color: var(--muted);
+  transition: color .2s ease;
+}
+.crumbs a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+.termlist {
+  display: grid;
+  gap: 12px;
+}
+.tl-item {
+  display: block;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px 22px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.01);
+  transition: all .2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.tl-item:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+.tl-item .h {
+  font-weight: 700;
+  color: var(--text);
+  font-size: 1.15rem;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+.tl-item .abbr {
+  color: var(--faint);
+  font-weight: 600;
+  font-size: .8em;
+  margin-left: 4px;
+}
+.tl-item .d {
+  color: var(--muted);
+  font-size: .9rem;
+  margin-top: 6px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.5;
+}
+
+/* Term Detail View */
+article {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: clamp(24px, 4vw, 48px);
+  box-shadow: var(--shadow);
+}
+article h1 {
+  margin: 0 0 8px;
+  font-size: 2.25rem;
+  letter-spacing: -.04em;
+  line-height: 1.25;
+  font-weight: 800;
+  color: var(--text);
+}
+.term-sub {
+  color: var(--muted);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 4px 0 0;
+}
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0 12px;
+}
+.badge {
+  font-size: .78rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--muted);
+  display: inline-flex;
+  align-items: center;
+}
+.badge.cat {
+  background: var(--accent-weak);
+  color: var(--accent);
+  border-color: transparent;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+.badge.cat:hover {
+  filter: brightness(0.96);
+  transform: translateY(-1px);
+}
+.badge.st-active {
+  color: var(--accent-2);
+  background: color-mix(in srgb, var(--accent-2) 10%, transparent);
+  border-color: transparent;
+}
+.badge.st-deprecated {
+  color: var(--danger);
+  background: color-mix(in srgb, var(--danger) 10%, transparent);
+  border-color: transparent;
+}
+.badge.st-ambiguous {
+  color: var(--warn);
+  background: color-mix(in srgb, var(--warn) 10%, transparent);
+  border-color: transparent;
+}
+.lead {
+  font-size: 1.125rem;
+  margin: 24px 0;
+  color: var(--text);
+  line-height: 1.7;
+}
+.field {
+  margin-top: 32px;
+}
+.field h3 {
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--faint);
+  margin: 0 0 14px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 8px;
+  font-weight: 700;
+}
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.chip {
+  font-size: .85rem;
+  font-weight: 500;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 4px 10px;
+  color: var(--muted);
+}
+table.pt {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: .9rem;
+  margin-top: 8px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+table.pt th, table.pt td {
+  text-align: left;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+table.pt tr:last-child th, table.pt tr:last-child td {
+  border-bottom: none;
+}
+table.pt th {
+  color: var(--faint);
+  font-size: .75rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  background: var(--surface-2);
+  font-weight: 700;
+}
+table.pt td.prov {
+  font-weight: 700;
+  white-space: nowrap;
+  color: var(--text);
+}
+table.pt code {
+  white-space: nowrap;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 2px 6px;
+}
+.rel-group {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.rel-group .rl {
+  font-size: .75rem;
+  color: var(--faint);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  margin-right: 8px;
+  font-weight: 700;
+}
+.rel-link {
+  display: inline-flex;
+  align-items: center;
+  background: var(--accent-weak);
+  color: var(--accent);
+  border-radius: 8px;
+  padding: 4px 12px;
+  margin: 2px 4px 2px 0;
+  font-size: .875rem;
+  font-weight: 600;
+  transition: all .15s ease;
+}
+.rel-link:hover {
+  text-decoration: none;
+  filter: brightness(0.95);
+  transform: translateY(-1px);
+}
+.rel-dead {
+  display: inline-flex;
+  align-items: center;
+  background: var(--surface-2);
+  color: var(--muted);
+  border-radius: 8px;
+  padding: 4px 12px;
+  margin: 2px 4px 2px 0;
+  font-size: .875rem;
+  font-weight: 500;
+}
+.dist {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent-2);
+  border-radius: 12px;
+  padding: 14px 18px;
+  margin-bottom: 12px;
+  font-size: .95rem;
+  line-height: 1.5;
+  color: var(--text);
+}
+.dist b a {
+  color: var(--accent);
+  font-weight: 700;
+}
+ul.src {
+  margin: 0;
+  padding-left: 20px;
+  font-size: .9rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+ul.src li {
+  margin: 6px 0;
+}
+.notes {
+  background: var(--surface-2);
+  border-left: 4px solid var(--accent);
+  border-radius: 0 12px 12px 0;
+  padding: 14px 18px;
+  font-size: .95rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.rel-meta {
+  margin-top: 36px;
+  color: var(--faint);
+  font-size: .8rem;
+  border-top: 1px solid var(--border);
+  padding-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Search results and mark highlight */
+.searchmeta {
+  color: var(--muted);
+  font-size: .9rem;
+  margin-bottom: 16px;
+}
+mark {
+  background: rgba(251, 191, 36, 0.2);
+  color: var(--warn);
+  padding: 1px 4px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+.empty {
+  color: var(--muted);
+  text-align: center;
+  padding: 80px 20px;
+  font-size: 1.1rem;
+}
+footer {
+  color: var(--faint);
+  font-size: .8rem;
+  text-align: center;
+  padding: 32px 24px;
+  border-top: 1px solid var(--border);
+  margin-top: 48px;
+}
+
+/* Knowledge Graph */
+.graph-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.kg-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0 16px;
+}
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: .8rem;
+  font-weight: 600;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 9999px;
+  padding: 6px 14px;
+  cursor: pointer;
+  user-select: none;
+  transition: all .2s ease;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+}
+.legend-item:hover {
+  border-color: var(--faint);
+  background: var(--surface-2);
+  transform: translateY(-1px);
+}
+.legend-item .ld {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.legend-item.off {
+  opacity: .4;
+  text-decoration: line-through;
+}
+.graph-wrap {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+#kg {
+  display: block;
+  width: 100%;
+  touch-action: none;
+  cursor: grab;
+  background: var(--bg);
+}
+#kg:active {
+  cursor: grabbing;
+}
+.kg-tip {
+  position: absolute;
+  pointer-events: none;
+  background: var(--text);
+  color: var(--surface);
+  font-size: .8rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 8px;
+  opacity: 0;
+  transform: translate(-50%, -130%);
+  transition: opacity .15s, transform .15s;
+  white-space: nowrap;
+  z-index: 50;
+  max-width: 280px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border: 1px solid var(--border);
+}
+.kg-foot {
+  color: var(--faint);
+  font-size: .8rem;
+  margin-top: 12px;
+  font-weight: 500;
+}
+
+/* Responsive & Mobile slide menu */
+@media (max-width: 880px) {
+  :root {
+    --side: 0px;
+  }
+  .menu-toggle {
+    display: flex;
+    order: -1;
+  }
+  aside.nav {
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 280px;
+    height: calc(100vh - 60px);
+    z-index: 25;
+    transform: translateX(-100%);
+    transition: transform .25s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: var(--shadow);
+    border-right: 1px solid var(--border);
+  }
+  body.nav-open aside.nav {
+    transform: translateX(0);
+  }
+  .shell {
+    grid-template-columns: 1fr;
+  }
+  .searchwrap .hint {
+    display: none;
+  }
+  .brand small {
+    display: none;
+  }
+  .scrim {
+    display: none;
+    position: fixed;
+    inset: 60px 0 0 0;
+    background: rgba(15, 23, 42, 0.4);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    z-index: 24;
+  }
+  body.nav-open .scrim {
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <button class="menu-toggle" id="menuBtn" aria-label="menu">☰</button>
+  <a class="brand" href="#/" aria-label="Travel Gaia">
+    <span class="globe">🌐</span>
+    <span>Travel Gaia<small id="brandSub">여행 산업 용어 백과사전</small></span>
+  </a>
+  <div class="searchwrap" role="search">
+    <span class="mag" aria-hidden="true">🔎</span>
+    <input id="q" type="search" placeholder="용어 검색…" aria-label="search" autocomplete="off">
+    <span class="hint">/</span>
+  </div>
+  <div class="actions">
+    <button class="tbtn" id="langBtn" title="한국어 / English">KO</button>
+    <button class="tbtn" id="themeBtn" aria-label="theme" title="light/dark">◐</button>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="nav" id="sidebar" aria-label="nav"></aside>
+  <div class="scrim" id="scrim"></div>
+  <main id="main" tabindex="-1"></main>
+</div>
+
+<script id="glossary-data" type="application/json">__GLOSSARY_DATA__</script>
+<script>
+"use strict";
+(function(){
+  const RAW = JSON.parse(document.getElementById('glossary-data').textContent);
+  const META = RAW.meta||{}, CATS = RAW.categories||[], ENTRIES = RAW.entries||[];
+  const byId = new Map(ENTRIES.map(e=>[e.id,e]));
+  const catById = new Map(CATS.map(c=>[c.id,c]));
+  const entriesByCat = new Map(CATS.map(c=>[c.id,[]]));
+  ENTRIES.forEach(e=>{ (entriesByCat.get(e.category)||entriesByCat.set(e.category,[]).get(e.category)).push(e); });
+  entriesByCat.forEach(arr=>arr.sort((a,b)=>a.term.localeCompare(b.term)));
+
+  const esc = s => String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const $ = sel => document.querySelector(sel);
+  const main = $('#main');
+
+  /* ---------- i18n ---------- */
+  let LANG = 'ko';
+  try{ const s=localStorage.getItem('tg-lang'); if(s==='ko'||s==='en') LANG=s; }catch(_){}
+  const T = {
+    ko:{ sub:'여행 산업 용어 백과사전', searchPh:'용어 검색 (예: PNR, RBD, codeshare, 운임)…',
+      enc:'백과사전', home:'🏠 홈', cats:'카테고리', graph:'🕸 관계 그래프',
+      heroT:'여행 산업 용어, 하나의 사전으로',
+      heroB:'항공·호텔·유통·정산·표준에 흩어진 용어를 <b>공급자/표준 간 통일</b>해 정리한 백과사전입니다. 같은 개념의 서로 다른 이름(예: Amadeus vs Sabre)을 한자리에서 비교하세요.',
+      sTerms:'표제어', sCats:'카테고리', sProv:'공급자/표준', sSrc:'출처 인용',
+      confT:'⚠️ 헷갈리기 쉬운 용어 (용어 통일 포인트)', secCats:'카테고리', openGraph:'용어 관계 그래프 열기 →',
+      terms:n=>`${n}개 표제어`, home2:'홈', search:'검색',
+      fAlias:'다른 표기 · 동의어', fProv:'공급자/표준별 대응어', fRel:'관련 용어', fDist:'혼동 주의 (구분)', fNotes:'편집 노트', fSrc:'출처',
+      thProv:'공급자·표준', thTerm:'용어', thRel:'관계', thCtx:'설명',
+      mId:'ID', mCat:'카테고리', mRev:'검토일',
+      results:(q,n)=>`"<b>${esc(q)}</b>" 검색 결과 <b>${n}</b>건`, noRes:'결과가 없습니다. 다른 키워드(약어/영문/한글)를 시도해 보세요.',
+      notFound:'표제어를 찾을 수 없습니다', toHome:'홈으로',
+      disc:`정의는 공개 산업 표준(IATA·ATPCO·OpenTravel·HTNG·ISO 등) 및 공급자 문서를 근거로 한 편집 요약이며, 중요한 의사결정 전 1차 출처로 검증하시기 바랍니다. 마지막 갱신: ${esc(META.generatedAt||'')}.`,
+      gTitle:'용어 관계 그래프', gNodes:'노드', gEdges:'관계',
+      gHint:'노드를 드래그해 정리하고, 클릭하면 해당 용어로 이동합니다. 아래 카테고리 범례를 눌러 필터링하세요. <b>실선</b>=관련 용어, <span style="color:var(--warn)">점선</span>=혼동 주의.',
+      RLAB:{sameAs:'같음',broader:'상위 개념',narrower:'하위 개념',parent:'부모',child:'자식',related:'관련',conflicts:'충돌',replaces:'대체',contrasts:'대비'},
+      ST:{active:'활성',deprecated:'폐지/레거시',ambiguous:'중의적'},
+      CT:{acronym:'약어',"standard-term":'표준 용어',standard:'표준',"business-term":'업무 용어',"provider-term":'공급자 용어',code:'코드',metric:'지표',process:'프로세스',role:'역할',document:'문서'},
+      PR:{same:'같음',narrower:'하위',broader:'상위',related:'관련',conflicting:'충돌'} },
+    en:{ sub:'Travel-Industry Terminology', searchPh:'Search terms (e.g., PNR, RBD, codeshare, fare)…',
+      enc:'Encyclopedia', home:'🏠 Home', cats:'Categories', graph:'🕸 Knowledge Graph',
+      heroT:'Travel-industry terms, unified in one reference',
+      heroB:'An encyclopedia that <b>unifies terminology across providers and standards</b> spread over air, hotel, distribution, settlement and specs. Compare the different names for one concept (e.g. Amadeus vs Sabre) in one place.',
+      sTerms:'Terms', sCats:'Categories', sProv:'Providers/Standards', sSrc:'Source citations',
+      confT:'⚠️ Easily-confused terms (term-unification points)', secCats:'Categories', openGraph:'Open the term knowledge graph →',
+      terms:n=>`${n} terms`, home2:'Home', search:'Search',
+      fAlias:'Aliases & variants', fProv:'Provider / standard equivalents', fRel:'Related terms', fDist:'Distinctions (do not confuse)', fNotes:"Editor's note", fSrc:'Sources',
+      thProv:'Provider · Standard', thTerm:'Term', thRel:'Relation', thCtx:'Note',
+      mId:'ID', mCat:'Category', mRev:'Reviewed',
+      results:(q,n)=>`<b>${n}</b> result(s) for "<b>${esc(q)}</b>"`, noRes:'No results. Try another keyword (abbreviation / English / Korean).',
+      notFound:'Term not found', toHome:'Back to home',
+      disc:`Definitions are editorial summaries grounded in public industry standards (IATA, ATPCO, OpenTravel, HTNG, ISO, etc.) and provider docs; verify against primary sources before critical decisions. Last updated: ${esc(META.generatedAt||'')}.`,
+      gTitle:'Term Knowledge Graph', gNodes:'nodes', gEdges:'links',
+      gHint:'Drag nodes to arrange; click a node to open that term. Toggle a category in the legend below to filter. <b>Solid</b> = related, <span style="color:var(--warn)">dashed</span> = distinction.',
+      RLAB:{sameAs:'Same as',broader:'Broader',narrower:'Narrower',parent:'Parent',child:'Child',related:'Related',conflicts:'Conflicts',replaces:'Replaces',contrasts:'Contrasts'},
+      ST:{active:'Active',deprecated:'Deprecated',ambiguous:'Ambiguous'},
+      CT:{acronym:'Acronym',"standard-term":'Standard term',standard:'Standard',"business-term":'Business term',"provider-term":'Provider term',code:'Code',metric:'Metric',process:'Process',role:'Role',document:'Document'},
+      PR:{same:'Same',narrower:'Narrower',broader:'Broader',related:'Related',conflicting:'Conflicting'} },
+  };
+  const t = k => (T[LANG] && T[LANG][k]!==undefined) ? T[LANG][k] : T.en[k];
+  // localized entry field: prefer _ko in ko mode, fallback to base
+  const Lf = (e,f) => { if(LANG==='ko'){ const v=e[f+'_ko']; if(v&&String(v).trim()) return v; } return e[f]||''; };
+  const catName = c => LANG==='ko' ? (c.short||c.title) : c.title;
+  const catDesc = c => LANG==='ko' ? (c.desc||'') : (c.desc_en||c.desc||'');
+
+  /* ---------- search index ---------- */
+  const FIELDW = {term:10, abbr:9, alias:6, prov:5, cat:2, def:1};
+  const idx = ENTRIES.map(e=>{
+    const fields=[]; const push=(t,w)=>{ if(t) fields.push({t:String(t).toLowerCase(),w}); };
+    push(e.term,FIELDW.term); push(e.term_ko,FIELDW.term); push(e.abbreviation,FIELDW.abbr);
+    (e.aliases||[]).forEach(a=>push(a,FIELDW.alias));
+    (e.providerTerms||[]).forEach(p=>push(p.term,FIELDW.prov));
+    const c=catById.get(e.category)||{}; push(c.title,FIELDW.cat); push(c.short,FIELDW.cat);
+    push(e.definition,FIELDW.def); push(e.definition_ko,FIELDW.def);
+    return {e, fields, term:e.term.toLowerCase(), abbr:(e.abbreviation||'').toLowerCase()};
+  });
+  function search(qraw){
+    const q=qraw.trim().toLowerCase(); if(!q) return [];
+    const toks=q.split(/[^a-z0-9가-힣]+/i).filter(Boolean); const out=[];
+    for(const row of idx){
+      let score=0;
+      if(row.term===q) score+=100; if(row.abbr&&row.abbr===q) score+=90; if(row.term.startsWith(q)) score+=40;
+      for(const tok of toks){ let best=0;
+        for(const f of row.fields){ if(f.t===tok) best=Math.max(best,f.w*3);
+          else if(f.t.startsWith(tok)) best=Math.max(best,f.w*2); else if(f.t.includes(tok)) best=Math.max(best,f.w); }
+        if(best===0){ score=-1; break; } score+=best; }
+      if(score>0) out.push({e:row.e,score});
+    }
+    out.sort((a,b)=> b.score-a.score || a.e.term.localeCompare(b.e.term));
+    return out.slice(0,40);
+  }
+  const hl=(text,q)=>{ if(!q) return esc(text);
+    const toks=q.trim().toLowerCase().split(/[^a-z0-9가-힣]+/i).filter(Boolean); let s=esc(text);
+    toks.forEach(tk=>{ if(tk.length<2) return; s=s.replace(new RegExp('('+tk.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','ig'),'<mark>$1</mark>'); });
+    return s; };
+
+  /* ---------- sidebar ---------- */
+  function renderSidebar(activeCat){
+    const dot=c=>`<span class="dot" style="background:${c.color||'var(--accent)'}"></span>`;
+    const hash=location.hash;
+    let h=`<div class="nav-title">${esc(t('enc'))}</div>
+      <a class="cat-link${(hash==='#/'||!hash)?' active':''}" href="#/">${t('home')}</a>
+      <a class="cat-link${hash.startsWith('#/graph')?' active':''}" href="#/graph">${t('graph')}</a>
+      <div class="nav-title">${esc(t('cats'))} (${CATS.length})</div>`;
+    CATS.forEach(c=>{ const n=(entriesByCat.get(c.id)||[]).length;
+      h+=`<a class="cat-link${c.id===activeCat?' active':''}" href="#/category/${c.id}">
+        <span>${dot(c)} ${esc(catName(c))}</span><span class="cnt">${n}</span></a>`; });
+    $('#sidebar').innerHTML=h;
+  }
+
+  /* ---------- renderers ---------- */
+  function statusBadge(s){ if(!s) return ''; return `<span class="badge st-${s}">● ${esc((t('ST')[s])||s)}</span>`; }
+
+  function renderHome(){
+    const provSet=new Set(); ENTRIES.forEach(e=>(e.providerTerms||[]).forEach(p=>p.provider&&provSet.add(p.provider)));
+    const srcCount=ENTRIES.reduce((a,e)=>a+((e.sources||[]).length),0);
+    const conflicts=ENTRIES.filter(e=> e.status==='ambiguous' || (e.distinctions&&e.distinctions.length))
+      .sort((a,b)=>(b.distinctions?b.distinctions.length:0)-(a.distinctions?a.distinctions.length:0)).slice(0,4);
+    let h=`<section class="hero">
+      <h1>${esc(t('heroT'))}</h1><p>${t('heroB')}</p>
+      <div class="stats">
+        <div class="stat"><b>${ENTRIES.length}</b><span>${esc(t('sTerms'))}</span></div>
+        <div class="stat"><b>${CATS.length}</b><span>${esc(t('sCats'))}</span></div>
+        <div class="stat"><b>${provSet.size}</b><span>${esc(t('sProv'))}</span></div>
+        <div class="stat"><b>${srcCount}</b><span>${esc(t('sSrc'))}</span></div>
+      </div>
+      <a class="cta-graph" href="#/graph">🕸 ${esc(t('openGraph'))}</a></section>`;
+    if(conflicts.length){ h+=`<div class="sec-title">${esc(t('confT'))}</div>`;
+      conflicts.forEach(e=>{ const d=(e.distinctions&&e.distinctions[0]);
+        h+=`<a class="conflict" href="#/term/${e.id}" style="display:block">
+          <b>${esc(e.term)}</b> — ${esc(Lf(e,'definition')).slice(0,120)}…
+          ${d?`<div style="margin-top:5px;color:var(--muted)">vs <b>${esc(d.targetTerm)}</b>: ${esc((LANG==='ko'&&d.explanation_ko)||d.explanation)}</div>`:''}</a>`; }); }
+    h+=`<div class="sec-title">${esc(t('secCats'))}</div><div class="cards">`;
+    CATS.forEach(c=>{ const n=(entriesByCat.get(c.id)||[]).length;
+      h+=`<a class="card" href="#/category/${c.id}">
+        <div class="ct"><span class="dot" style="background:${c.color||'var(--accent)'};width:10px;height:10px;border-radius:50%;display:inline-block"></span> ${esc(catName(c))}</div>
+        <div class="cd">${esc(catDesc(c))}</div><div class="cn">${esc(t('terms')(n))}</div></a>`; });
+    h+=`</div><p class="disclaimer">${t('disc')}</p>`;
+    main.innerHTML=h; renderSidebar(null);
+  }
+
+  function renderCategory(id){
+    const c=catById.get(id); if(!c) return renderHome();
+    const list=entriesByCat.get(id)||[];
+    let h=`<div class="crumbs"><a href="#/">${esc(t('home2'))}</a> › ${esc(catName(c))}</div>
+      <div class="sec-title" style="margin-top:0">${esc(catName(c))} <span style="color:var(--faint);font-weight:400">(${list.length})</span></div>
+      <p style="color:var(--muted);margin-top:-4px">${esc(catDesc(c))}</p><div class="termlist">`;
+    list.forEach(e=>{ const sub=LANG==='ko'&&e.term_ko&&e.term_ko!==e.term?` <span class="abbr">· ${esc(e.term_ko)}</span>`:'';
+      h+=`<a class="tl-item" href="#/term/${e.id}"><div class="h">${esc(e.term)}${sub}</div>
+        <div class="d">${esc(Lf(e,'definition'))}</div></a>`; });
+    h+=`</div>`; main.innerHTML=h; renderSidebar(id); main.focus();
+  }
+
+  function linkTerm(targetId,label){
+    if(targetId&&byId.has(targetId)){ const e=byId.get(targetId);
+      const lab=label||(LANG==='ko'&&e.term_ko?e.term:e.term); return `<a class="rel-link" href="#/term/${targetId}">${esc(lab)}</a>`; }
+    return `<span class="rel-dead">${esc(label)}</span>`;
+  }
+
+  function renderTerm(id){
+    const e=byId.get(id); if(!e) return renderNotFound(id);
+    const c=catById.get(e.category)||{title:e.category};
+    const sub=LANG==='ko'&&e.term_ko&&e.term_ko!==e.term?`<div class="term-sub">${esc(e.term_ko)}</div>`:'';
+    let h=`<div class="crumbs"><a href="#/">${esc(t('home2'))}</a> › <a href="#/category/${e.category}">${esc(catName(c))}</a></div>`;
+    h+=`<article><h1>${esc(e.term)}</h1>${sub}
+      <div class="badges">
+        <span class="badge cat" onclick="location.hash='#/category/${e.category}'">${esc(catName(c))}</span>
+        ${e.conceptType?`<span class="badge">${esc((t('CT')[e.conceptType])||e.conceptType)}</span>`:''}
+        ${statusBadge(e.status)}
+        ${e.standardBody?`<span class="badge">📐 ${esc(e.standardBody)}</span>`:''}
+      </div>
+      <p class="lead">${esc(Lf(e,'definition'))}</p>`;
+    if(Lf(e,'longDef')) h+=`<p>${esc(Lf(e,'longDef'))}</p>`;
+    if(e.aliases&&e.aliases.length)
+      h+=`<div class="field"><h3>${esc(t('fAlias'))}</h3><div class="chips">${e.aliases.map(a=>`<span class="chip">${esc(a)}</span>`).join('')}</div></div>`;
+    if(e.providerTerms&&e.providerTerms.length){
+      h+=`<div class="field"><h3>${esc(t('fProv'))}</h3><table class="pt"><thead><tr><th>${esc(t('thProv'))}</th><th>${esc(t('thTerm'))}</th><th>${esc(t('thRel'))}</th><th>${esc(t('thCtx'))}</th></tr></thead><tbody>`;
+      e.providerTerms.forEach(p=>{ const ctx=(LANG==='ko'&&p.context_ko)||p.context||'';
+        h+=`<tr><td class="prov">${esc(p.provider)}</td><td><code>${esc(p.term)}</code></td><td>${esc((t('PR')[p.relationship])||p.relationship||'')}</td><td>${esc(ctx)}</td></tr>`; });
+      h+=`</tbody></table></div>`;
+    }
+    if(e.relationships&&e.relationships.length){
+      const RLAB=t('RLAB'); const groups={};
+      e.relationships.forEach(r=>{ (groups[r.type]=groups[r.type]||[]).push(r); });
+      h+=`<div class="field"><h3>${esc(t('fRel'))}</h3>`;
+      Object.keys(groups).forEach(ty=>{ h+=`<div class="rel-group"><span class="rl">${esc(RLAB[ty]||ty)}</span>`;
+        groups[ty].forEach(r=> h+=linkTerm(r.targetId,r.targetTerm)); h+=`</div>`; });
+      h+=`</div>`;
+    }
+    if(e.distinctions&&e.distinctions.length){
+      h+=`<div class="field"><h3>${esc(t('fDist'))}</h3>`;
+      e.distinctions.forEach(d=>{ const ex=(LANG==='ko'&&d.explanation_ko)||d.explanation;
+        h+=`<div class="dist"><b>${esc(e.term)}</b> vs <b>${linkTerm(d.targetId,d.targetTerm)}</b> — ${esc(ex)}</div>`; });
+      h+=`</div>`;
+    }
+    if(Lf(e,'notes')) h+=`<div class="field"><h3>${esc(t('fNotes'))}</h3><div class="notes">${esc(Lf(e,'notes'))}</div></div>`;
+    if(e.sources&&e.sources.length){
+      h+=`<div class="field"><h3>${esc(t('fSrc'))}</h3><ul class="src">`;
+      e.sources.forEach(s=>{ const bits=[s.org,s.name,s.version,s.section].filter(Boolean).map(esc).join(' · ');
+        h+=`<li>${s.url?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${bits}</a>`:bits}</li>`; });
+      h+=`</ul></div>`;
+    }
+    h+=`<div class="rel-meta">${esc(t('mId'))} <code>${esc(e.id)}</code> · ${esc(t('mCat'))} ${esc(catName(c))}${e.lastReviewed?` · ${esc(t('mRev'))} ${esc(e.lastReviewed)}`:''}</div></article>`;
+    main.innerHTML=h; renderSidebar(e.category); main.focus(); document.title=`${e.term} — Travel Gaia`;
+  }
+
+  function renderNotFound(id){
+    main.innerHTML=`<div class="empty"><h2>${esc(t('notFound'))}</h2><p><code>${esc(id)}</code></p><p><a href="#/">${esc(t('toHome'))}</a></p></div>`;
+    renderSidebar(null);
+  }
+
+  function renderSearch(q){
+    const res=search(q);
+    let h=`<div class="crumbs"><a href="#/">${esc(t('home2'))}</a> › ${esc(t('search'))}</div>
+      <div class="searchmeta">${t('results')(q,res.length)}</div>`;
+    if(!res.length){ h+=`<div class="empty">${esc(t('noRes'))}</div>`; }
+    else{ h+=`<div class="termlist">`;
+      res.forEach(({e})=>{ const c=catById.get(e.category)||{};
+        const sub=LANG==='ko'&&e.term_ko&&e.term_ko!==e.term?` <span class="abbr">· ${hl(e.term_ko,q)}</span>`:'';
+        h+=`<a class="tl-item" href="#/term/${e.id}"><div class="h">${hl(e.term,q)}${sub}</div>
+          <div class="d">${hl(Lf(e,'definition'),q)}</div>
+          <div class="cn" style="color:var(--faint);font-size:.74rem;margin-top:6px">${esc(catName(c))}</div></a>`; });
+      h+=`</div>`; }
+    main.innerHTML=h; renderSidebar(null);
+  }
+
+  /* ---------- knowledge graph ---------- */
+  let kgRAF=null;
+  function stopGraph(){ if(kgRAF){ cancelAnimationFrame(kgRAF); kgRAF=null; } }
+
+  function renderGraph(){
+    const catColor=id=>(catById.get(id)||{}).color||'#888';
+    const nodes=ENTRIES.map(e=>({id:e.id,e,cat:e.category,x:0,y:0,vx:0,vy:0,deg:0}));
+    const nById=new Map(nodes.map(n=>[n.id,n]));
+    const seen=new Set(), edges=[];
+    const addE=(a,b,kind)=>{ if(!a||!b||a===b) return; const k=[a,b].sort().join('|'); if(seen.has(k)) return; seen.add(k); edges.push({a,b,kind}); };
+    ENTRIES.forEach(e=>{
+      (e.relationships||[]).forEach(r=>{ if(r.targetId&&nById.has(r.targetId)) addE(e.id,r.targetId,'rel'); });
+      (e.distinctions||[]).forEach(d=>{ if(d.targetId&&nById.has(d.targetId)) addE(e.id,d.targetId,'dist'); });
+    });
+    edges.forEach(ed=>{ nById.get(ed.a).deg++; nById.get(ed.b).deg++; });
+    const ci=new Map(CATS.map((c,i)=>[c.id,i]));
+    nodes.forEach((n,i)=>{ const ang=(ci.get(n.cat)||0)/CATS.length*2*Math.PI;
+      n.x=Math.cos(ang)*200+((i*53)%80-40); n.y=Math.sin(ang)*200+((i*31)%80-40); });
+
+    const legend=CATS.map(c=>`<span class="legend-item" data-cat="${c.id}"><span class="ld" style="background:${c.color}"></span>${esc(catName(c))}</span>`).join('');
+    main.innerHTML=`<div class="crumbs"><a href="#/">${esc(t('home2'))}</a> › ${esc(t('gTitle'))}</div>
+      <div class="graph-head"><div class="sec-title" style="margin:0">${esc(t('gTitle'))}</div>
+        <div style="color:var(--faint);font-size:.82rem">${nodes.length} ${esc(t('gNodes'))} · ${edges.length} ${esc(t('gEdges'))}</div></div>
+      <p style="color:var(--muted);font-size:.86rem;margin:0 0 6px">${t('gHint')}</p>
+      <div class="kg-legend" id="kgLegend">${legend}</div>
+      <div class="graph-wrap"><canvas id="kg"></canvas><div class="kg-tip" id="kgTip"></div></div>`;
+    renderSidebar(null);
+
+    const wrap=$('.graph-wrap'), canvas=$('#kg'), ctx=canvas.getContext('2d'), tip=$('#kgTip');
+    const active=new Set(CATS.map(c=>c.id));
+    let W=0,H=0,dpr=Math.min(window.devicePixelRatio||1,2);
+    function resize(){ W=wrap.clientWidth; H=Math.max(420,Math.min(680,Math.round(window.innerHeight*0.66)));
+      canvas.style.height=H+'px'; canvas.width=W*dpr; canvas.height=H*dpr; ctx.setTransform(dpr,0,0,dpr,0,0); }
+    resize();
+    const cx=()=>W/2, cy=()=>H/2;
+    let hover=null, drag=null, dragMoved=false, downXY=null;
+
+    function isActive(n){ return active.has(n.cat); }
+    function nodeR(n){ return 4+Math.sqrt(n.deg)*1.7; }
+    function step(){
+      const A=nodes.filter(isActive);
+      for(let i=0;i<A.length;i++){ const a=A[i];
+        for(let j=i+1;j<A.length;j++){ const b=A[j];
+          let dx=a.x-b.x, dy=a.y-b.y, d2=dx*dx+dy*dy+0.01; const f=1400/d2;
+          const d=Math.sqrt(d2); dx/=d; dy/=d; a.vx+=dx*f; a.vy+=dy*f; b.vx-=dx*f; b.vy-=dy*f; } }
+      edges.forEach(ed=>{ const a=nById.get(ed.a), b=nById.get(ed.b); if(!isActive(a)||!isActive(b)) return;
+        let dx=b.x-a.x, dy=b.y-a.y, d=Math.sqrt(dx*dx+dy*dy)+0.01; const f=(d-78)*0.012; dx/=d; dy/=d;
+        a.vx+=dx*f; a.vy+=dy*f; b.vx-=dx*f; b.vy-=dy*f; });
+      A.forEach(n=>{ n.vx+=-n.x*0.0025; n.vy+=-n.y*0.0025;
+        if(n===drag) return; n.vx*=0.86; n.vy*=0.86; n.x+=n.vx; n.y+=n.vy;
+        const m=24, rx=W/2-m, ry=H/2-m; if(n.x<-rx){n.x=-rx;n.vx*=-.4} if(n.x>rx){n.x=rx;n.vx*=-.4}
+        if(n.y<-ry){n.y=-ry;n.vy*=-.4} if(n.y>ry){n.y=ry;n.vy*=-.4} });
+    }
+    const nbr=new Map(); edges.forEach(ed=>{ (nbr.get(ed.a)||nbr.set(ed.a,new Set()).get(ed.a)).add(ed.b);
+      (nbr.get(ed.b)||nbr.set(ed.b,new Set()).get(ed.b)).add(ed.a); });
+    function draw(){
+      ctx.clearRect(0,0,W,H); const ox=cx(), oy=cy();
+      const dark=document.documentElement.dataset.theme==='dark';
+      edges.forEach(ed=>{ const a=nById.get(ed.a), b=nById.get(ed.b); if(!isActive(a)||!isActive(b)) return;
+        const hot=hover&&(ed.a===hover.id||ed.b===hover.id);
+        ctx.beginPath(); ctx.moveTo(a.x+ox,a.y+oy); ctx.lineTo(b.x+ox,b.y+oy);
+        if(ed.kind==='dist'){ ctx.setLineDash([4,4]); ctx.strokeStyle=hot?'#d97706':(dark?'rgba(224,160,96,.5)':'rgba(181,86,15,.42)'); }
+        else { ctx.setLineDash([]); ctx.strokeStyle=hot?(dark?'rgba(120,170,255,.9)':'rgba(31,111,235,.75)'):(dark?'rgba(120,140,170,.18)':'rgba(60,80,120,.16)'); }
+        ctx.lineWidth=hot?1.6:1; ctx.stroke(); });
+      ctx.setLineDash([]);
+      nodes.forEach(n=>{ if(!isActive(n)) return;
+        const dim=hover&&n!==hover&&!(nbr.get(hover.id)&&nbr.get(hover.id).has(n.id));
+        ctx.globalAlpha=dim?0.22:1; ctx.beginPath(); ctx.arc(n.x+ox,n.y+oy,nodeR(n),0,7); ctx.fillStyle=catColor(n.cat);
+        ctx.fill(); if(n===hover){ ctx.lineWidth=2; ctx.strokeStyle=dark?'#fff':'#1c2230'; ctx.stroke(); }
+        ctx.globalAlpha=1; });
+      // labels: hovered + neighbors, plus high-degree
+      ctx.font='11px '+getComputedStyle(document.body).fontFamily; ctx.textAlign='center';
+      const showLabel=n=> (hover&&(n===hover||(nbr.get(hover.id)&&nbr.get(hover.id).has(n.id)))) || (!hover&&n.deg>=5);
+      nodes.forEach(n=>{ if(!isActive(n)||!showLabel(n)) return;
+        const lab=n.e.term;
+        const x=n.x+ox, y=n.y+oy-nodeR(n)-4; ctx.fillStyle=dark?'rgba(22,27,34,.85)':'rgba(255,255,255,.85)';
+        const w=ctx.measureText(lab).width+8; ctx.fillRect(x-w/2,y-12,w,14);
+        ctx.fillStyle=dark?'#e6edf3':'#1c2230'; ctx.fillText(lab,x,y); });
+    }
+    function loop(){ step(); draw(); kgRAF=requestAnimationFrame(loop); }
+    loop();
+
+    function pick(mx,my){ const ox=cx(),oy=cy(); let best=null,bd=1e9;
+      nodes.forEach(n=>{ if(!isActive(n)) return; const dx=mx-(n.x+ox),dy=my-(n.y+oy),d=dx*dx+dy*dy;
+        const r=nodeR(n)+6; if(d<r*r&&d<bd){bd=d;best=n;} }); return best; }
+    function relPos(ev){ const r=canvas.getBoundingClientRect(); const cl=ev.touches?ev.touches[0]:ev;
+      return {x:cl.clientX-r.left, y:cl.clientY-r.top}; }
+    function onMove(ev){ const p=relPos(ev);
+      if(drag){ drag.x=p.x-cx(); drag.y=p.y-cy(); drag.vx=drag.vy=0; dragMoved=true; ev.preventDefault?.(); return; }
+      const n=pick(p.x,p.y); hover=n; if(n){ const nm=LANG==='ko'&&n.e.term_ko&&n.e.term_ko!==n.e.term?`${n.e.term} · ${n.e.term_ko}`:n.e.term;
+        tip.innerHTML=`${esc(nm)} <span style="opacity:.7">— ${esc(catName(catById.get(n.cat)||{}))}</span>`;
+        tip.style.left=(n.x+cx())+'px'; tip.style.top=(n.y+cy())+'px'; tip.style.opacity=1; canvas.style.cursor='pointer'; }
+      else { tip.style.opacity=0; canvas.style.cursor='grab'; } }
+    function onDown(ev){ const p=relPos(ev); const n=pick(p.x,p.y); downXY=p; dragMoved=false; if(n){ drag=n; } }
+    function onUp(ev){ if(drag&&!dragMoved){ location.hash='#/term/'+drag.id; } drag=null; }
+    canvas.addEventListener('mousemove',onMove); canvas.addEventListener('mousedown',onDown);
+    window.addEventListener('mouseup',onUp);
+    canvas.addEventListener('touchstart',onDown,{passive:true}); canvas.addEventListener('touchmove',onMove,{passive:false}); canvas.addEventListener('touchend',onUp);
+    $('#kgLegend').addEventListener('click',e=>{ const el=e.target.closest('.legend-item'); if(!el) return;
+      const id=el.dataset.cat; if(active.has(id)){active.delete(id);el.classList.add('off');} else {active.add(id);el.classList.remove('off');} });
+    const onResize=()=>resize(); window.addEventListener('resize',onResize);
+  }
+
+  /* ---------- router ---------- */
+  function route(){
+    stopGraph(); const hash=location.hash||'#/'; closeNav();
+    if(hash==='#/graph'){ document.title='Knowledge Graph — Travel Gaia'; if($('#q'))$('#q').value=''; return renderGraph(); }
+    const m=hash.match(/^#\/(term|category|q)\/(.+)$/);
+    if(!m||hash==='#/'){ document.title='Travel Gaia — 여행 산업 용어 백과사전'; if($('#q'))$('#q').value=''; return renderHome(); }
+    const kind=m[1], dec=decodeURIComponent(m[2]);
+    if(kind==='term') return renderTerm(dec);
+    if(kind==='category') return renderCategory(dec);
+    if(kind==='q'){ if($('#q'))$('#q').value=dec; return renderSearch(dec); }
+    renderHome();
+  }
+  window.addEventListener('hashchange',route);
+
+  /* ---------- search box ---------- */
+  let tmr=null;
+  $('#q').addEventListener('input',e=>{ clearTimeout(tmr); const v=e.target.value;
+    tmr=setTimeout(()=>{ if(v.trim()) location.hash='#/q/'+encodeURIComponent(v.trim());
+      else if(location.hash.startsWith('#/q/')) location.hash='#/'; },180); });
+  document.addEventListener('keydown',e=>{ if(e.key==='/'&&document.activeElement!==$('#q')){ e.preventDefault(); $('#q').focus(); }
+    if(e.key==='Escape'&&document.activeElement===$('#q')){ $('#q').blur(); } });
+
+  /* ---------- language ---------- */
+  function applyStaticI18n(){ document.documentElement.lang=LANG; $('#brandSub').textContent=t('sub');
+    $('#q').placeholder=t('searchPh'); $('#langBtn').textContent=LANG==='ko'?'EN':'KO'; }
+  $('#langBtn').addEventListener('click',()=>{ LANG=LANG==='ko'?'en':'ko'; try{localStorage.setItem('tg-lang',LANG);}catch(_){}
+    applyStaticI18n(); route(); });
+
+  /* ---------- theme & nav ---------- */
+  const themeBtn=$('#themeBtn');
+  function applyTheme(th){ document.documentElement.dataset.theme=th; try{localStorage.setItem('tg-theme',th);}catch(_){} }
+  themeBtn.addEventListener('click',()=>applyTheme(document.documentElement.dataset.theme==='dark'?'light':'dark'));
+  try{ const saved=localStorage.getItem('tg-theme'); applyTheme(saved||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')); }catch(_){ applyTheme('light'); }
+  function openNav(){ document.body.classList.add('nav-open'); }
+  function closeNav(){ document.body.classList.remove('nav-open'); }
+  $('#menuBtn').addEventListener('click',openNav); $('#scrim').addEventListener('click',closeNav);
+
+  applyStaticI18n();
+  route();
+})();
+</script>
+</body>
+</html>

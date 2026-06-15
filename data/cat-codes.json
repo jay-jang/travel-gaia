@@ -1,0 +1,297 @@
+[
+  {
+    "id": "iata-code",
+    "term": "IATA Code",
+    "term_ko": "IATA 코드",
+    "abbreviation": "IATA",
+    "aliases": ["IATA Two-Letter Code", "IATA Designator", "IATA Location Identifier"],
+    "category": "codes",
+    "conceptType": "code",
+    "status": "ambiguous",
+    "definition": "An umbrella term for the various short codes assigned and administered by the International Air Transport Association (IATA), most commonly the 3-letter airport/city location code and the 2-character airline designator. The exact meaning depends on context (airport, airline, or other IATA-managed code).",
+    "definition_ko": "국제항공운송협회(IATA)가 부여하고 관리하는 다양한 단축 코드를 포괄적으로 일컫는 용어로, 가장 흔하게는 3자리 공항/도시 위치 코드와 2자리 항공사 지정 코드를 가리킨다. 정확한 의미는 문맥(공항, 항공사, 또는 IATA가 관리하는 기타 코드)에 따라 달라진다.",
+    "longDef": "Because IATA maintains several distinct coding schemes, 'IATA Code' is context-dependent: a 3-letter IATA location code identifies an airport or city served by air transport, while a 2-character IATA airline designator identifies an air carrier. IATA codes are optimized for commercial and consumer-facing use (tickets, schedules, displays) and are not globally unique in the way ICAO codes are. The term is widely used loosely, so precise documentation should specify which IATA code is meant.",
+    "longDef_ko": "IATA는 여러 개의 별개 코드 체계를 운영하기 때문에 'IATA 코드'라는 표현은 문맥에 따라 달라진다. 3자리 IATA 위치 코드는 항공 운송이 이루어지는 공항이나 도시를 식별하고, 2자리 IATA 항공사 지정 코드는 항공 운송 사업자를 식별한다. IATA 코드는 상업 및 소비자 대상 용도(항공권, 스케줄, 표시 화면)에 최적화되어 있으며, ICAO 코드처럼 전 세계적으로 고유하지는 않다. 이 용어는 폭넓고 느슨하게 사용되므로, 정확성을 요하는 문서에서는 어떤 IATA 코드를 의미하는지 명시해야 한다.",
+    "standardBody": "IATA",
+    "providerTerms": [],
+    "relationships": [
+      {"type": "related", "targetTerm": "ICAO Code"},
+      {"type": "broader", "targetTerm": "Airport Code"},
+      {"type": "broader", "targetTerm": "Airline Designator"},
+      {"type": "broader", "targetTerm": "City Code"}
+    ],
+    "distinctions": [
+      {"targetTerm": "ICAO Code", "explanation": "IATA codes are short commercial codes (3-letter airport, 2-char airline); ICAO codes are longer (4-letter airport, 3-letter airline) and globally unique for operational/ATC use.", "explanation_ko": "IATA 코드는 짧은 상업용 코드(3자리 공항, 2자리 항공사)인 반면, ICAO 코드는 더 길고(4자리 공항, 3자리 항공사) 운항/항공교통관제(ATC) 용도로 전 세계적으로 고유하다."}
+    ],
+    "sources": [
+      {"name": "IATA Airline and Airport Code Search", "org": "IATA", "version": "", "section": "", "url": "https://www.iata.org/en/publications/directories/code-search/"}
+    ],
+    "lastReviewed": "2026-06-15"
+  },
+  {
+    "id": "icao-code",
+    "term": "ICAO Code",
+    "term_ko": "ICAO 코드",
+    "abbreviation": "ICAO",
+    "aliases": ["ICAO Location Indicator", "ICAO Designator", "ICAO Airport Code", "ICAO Airline Designator"],
+    "category": "codes",
+    "conceptType": "code",
+    "status": "ambiguous",
+    "definition": "An umbrella term for codes assigned by the International Civil Aviation Organization (ICAO), principally the 4-letter location indicator for airports/aerodromes and the 3-letter airline designator. ICAO codes are used primarily for air traffic control, flight planning, and operational communications.",
+    "definition_ko": "국제민간항공기구(ICAO)가 부여하는 코드를 포괄적으로 일컫는 용어로, 주로 공항/비행장을 위한 4자리 위치 지시자와 3자리 항공사 지정 코드를 가리킨다. ICAO 코드는 주로 항공교통관제, 비행 계획, 운항 통신에 사용된다.",
+    "longDef": "ICAO 4-letter location indicators are structured regionally: the first one or two letters denote a region and country (e.g., 'K' for the contiguous USA, 'EG' for the UK), making them globally unique. ICAO 3-letter airline designators are paired with a telephony/call sign for radio communication. Unlike IATA codes, ICAO codes cover aerodromes that have no commercial air service and are oriented toward operations rather than ticketing or consumer display.",
+    "longDef_ko": "ICAO의 4자리 위치 지시자는 지역별로 구조화되어 있다. 첫 한두 글자가 지역과 국가를 나타내며(예: 미국 본토는 'K', 영국은 'EG'), 이로써 전 세계적으로 고유성을 갖는다. ICAO의 3자리 항공사 지정 코드는 무선 통신을 위한 전화 호출 부호(콜사인)와 짝을 이룬다. IATA 코드와 달리 ICAO 코드는 상업 항공 서비스가 없는 비행장까지 포괄하며, 발권이나 소비자 대상 표시보다 운항에 초점이 맞춰져 있다.",
+    "standardBody": "ICAO",
+    "providerTerms": [],
+    "relationships": [
+      {"type": "related", "targetTerm": "IATA Code"},
+      {"type": "related", "targetTerm": "Airport Code"},
+      {"type": "related", "targetTerm": "Airline Designator"}
+    ],
+    "distinctions": [
+      {"targetTerm": "IATA Code", "explanation": "ICAO codes are 4-letter (airport) / 3-letter (airline), globally unique and operations-focused; IATA codes are shorter and used for commercial booking and display.", "explanation_ko": "ICAO 코드는 4자리(공항)/3자리(항공사)로 전 세계적으로 고유하며 운항 중심인 반면, IATA 코드는 더 짧고 상업적 예약 및 표시에 사용된다."}
+    ],
+    "sources": [
+      {"name": "Doc 7910 — Location Indicators", "org": "ICAO", "version": "", "section": "", "url": "https://store.icao.int/en/location-indicators-doc-7910"},
+      {"name": "Doc 8585 — Designators for Aircraft Operating Agencies, Aeronautical Authorities and Services", "org": "ICAO", "version": "", "section": "", "url": "https://www.icao.int/operational-safety/Designators-and-indicators"}
+    ],
+    "lastReviewed": "2026-06-15"
+  },
+  {
+    "id": "airport-code",
+    "term": "Airport Code",
+    "term_ko": "공항 코드",
+    "abbreviation": "",
+    "aliases": ["Airport Identifier", "IATA Airport Code", "ICAO Airport Code", "Aerodrome Code"],
+    "category": "codes",
+    "conceptType": "code",
+    "status": "active",
+    "definition": "A short alphabetic code identifying an airport. The 3-letter IATA airport code (e.g., JFK, LHR) is used for tickets, baggage tags, and schedules, while the 4-letter ICAO location indicator (e.g., KJFK, EGLL) is used for operations and air traffic control.",
+    "definition_ko": "공항을 식별하는 짧은 알파벳 코드. 3자리 IATA 공항 코드(예: JFK, LHR)는 항공권, 수하물 태그, 스케줄에 사용되고, 4자리 ICAO 위치 지시자(예: KJFK, EGLL)는 운항 및 항공교통관제에 사용된다.",
+    "longDef": "IATA airport codes are 3 letters and are unique across the IATA system but are assigned for airports with commercial service. ICAO airport codes are 4 letters, regionally structured, and assigned to a much broader set of aerodromes. A single metropolitan area may have multiple airports with distinct airport codes that roll up to a shared city code (e.g., JFK, LGA, EWR under NYC).",
+    "longDef_ko": "IATA 공항 코드는 3자리로 IATA 체계 내에서 고유하지만, 상업 운항이 있는 공항에만 부여된다. ICAO 공항 코드는 4자리로 지역별로 구조화되어 있으며 훨씬 더 광범위한 비행장에 부여된다. 하나의 대도시권에 여러 공항이 있을 수 있으며, 각각 별개의 공항 코드를 가지면서 하나의 공통 도시 코드로 묶일 수 있다(예: JFK, LGA, EWR가 NYC로 묶임).",
+    "standardBody": "IATA",
+    "providerTerms": [],
+    "relationships": [
+      {"type": "narrower", "targetTerm": "IATA Code"},
+      {"type": "related", "targetTerm": "ICAO Code"},
+      {"type": "related", "targetTerm": "City Code"},
+      {"type": "related", "targetTerm": "Origin & Destination"}
+    ],
+    "distinctions": [
+      {"targetTerm": "City Code", "explanation": "An airport code identifies a single airport, whereas a city code identifies a metropolitan area that may aggregate several airports.", "explanation_ko": "공항 코드는 단일 공항을 식별하는 반면, 도시 코드는 여러 공항을 묶을 수 있는 대도시권을 식별한다."}
+    ],
+    "sources": [
+      {"name": "IATA Airline and Airport Code Search", "org": "IATA", "version": "", "section": "", "url": "https://www.iata.org/en/publications/directories/code-search/"},
+      {"name": "Doc 7910 — Location Indicators", "org": "ICAO", "version": "", "section": "", "url": "https://store.icao.int/en/location-indicators-doc-7910"}
+    ],
+    "lastReviewed": "2026-06-15"
+  },
+  {
+    "id": "airline-designator",
+    "term": "Airline Designator",
+    "term_ko": "항공사 지정 코드",
+    "abbreviation": "",
+    "aliases": ["Airline Code", "Carrier Code", "IATA Airline Designator", "Two-Letter Airline Code", "Marketing Carrier Code"],
+    "category": "codes",
+    "conceptType": "code",
+    "status": "active",
+    "definition": "A code identifying an airline. The 2-character IATA airline designator (e.g., AA, BA, LH) is used in reservations, ticketing, and flight numbers, while the 3-letter ICAO airline designator (e.g., AAL, BAW, DLH) is used operationally and is paired with a radio call sign.",
+    "definition_ko": "항공사를 식별하는 코드. 2자리 IATA 항공사 지정 코드(예: AA, BA, LH)는 예약, 발권, 편명에 사용되고, 3자리 ICAO 항공사 지정 코드(예: AAL, BAW, DLH)는 운항에 사용되며 무선 호출 부호(콜사인)와 짝을 이룬다.",
+    "longDef": "IATA airline designators are two characters (alphabetic or alphanumeric) and form the prefix of a flight number (e.g., 'AA100'). Because the 2-character space is limited, IATA also issues controlled-duplicate and numeric/alpha-numeric designators. ICAO 3-letter designators are unique and accompanied by a telephony designator (call sign) for ATC. The marketing carrier designator on a ticket may differ from the operating carrier designator under codeshare arrangements.",
+    "longDef_ko": "IATA 항공사 지정 코드는 2자리(알파벳 또는 영숫자 혼합)이며 편명의 접두어를 이룬다(예: 'AA100'). 2자리 공간이 제한적이기 때문에 IATA는 통제된 중복(controlled-duplicate) 코드와 숫자/영숫자 혼합 코드도 발급한다. ICAO의 3자리 지정 코드는 고유하며 ATC를 위한 전화 호출 부호(콜사인)를 동반한다. 공동운항(codeshare) 약정에서는 항공권에 표시되는 마케팅 항공사 지정 코드가 실제 운항 항공사 지정 코드와 다를 수 있다.",
+    "standardBody": "IATA",
+    "providerTerms": [],
+    "relationships": [
+      {"type": "narrower", "targetTerm": "IATA Code"},
+      {"type": "related", "targetTerm": "ICAO Code"},
+      {"type": "related", "targetTerm": "Marketing Carrier"},
+      {"type": "related", "targetTerm": "Operating Carrier"},
+      {"type": "related", "targetTerm": "Validating Carrier"}
+    ],
+    "distinctions": [
+      {"targetTerm": "ICAO Code", "explanation": "The IATA airline designator is 2 characters for commercial use; the ICAO airline designator is 3 letters with a call sign for operational/ATC use.", "explanation_ko": "IATA 항공사 지정 코드는 상업적 용도의 2자리이고, ICAO 항공사 지정 코드는 운항/ATC 용도의 3자리로 콜사인을 동반한다."}
+    ],
+    "sources": [
+      {"name": "IATA Airline and Airport Code Search", "org": "IATA", "version": "", "section": "", "url": "https://www.iata.org/en/publications/directories/code-search/"},
+      {"name": "Doc 8585 — Designators for Aircraft Operating Agencies, Aeronautical Authorities and Services", "org": "ICAO", "version": "", "section": "", "url": "https://www.icao.int/operational-safety/Designators-and-indicators"}
+    ],
+    "lastReviewed": "2026-06-15"
+  },
+  {
+    "id": "city-code",
+    "term": "City Code",
+    "term_ko": "도시 코드",
+    "abbreviation": "",
+    "aliases": ["IATA City Code", "Metropolitan Area Code", "Multi-Airport City Code"],
+    "category": "codes",
+    "conceptType": "code",
+    "status": "active",
+    "definition": "A 3-letter IATA code identifying a city or metropolitan area served by air transport (e.g., NYC, LON, TYO). When a city has multiple airports, the city code aggregates them so a search on the city code returns options across all served airports.",
+    "definition_ko": "항공 운송이 이루어지는 도시 또는 대도시권을 식별하는 3자리 IATA 코드(예: NYC, LON, TYO). 한 도시에 여러 공항이 있는 경우 도시 코드가 이를 통합하므로, 도시 코드로 검색하면 운항하는 모든 공항의 옵션이 함께 조회된다.",
+    "longDef": "City codes are part of the IATA location coding system and are sometimes identical to the airport code when a city has a single primary airport (e.g., a code can serve as both city and airport identifier). For multi-airport cities the city code is distinct (e.g., LON for London covers LHR, LGW, STN, LCY, LTN, SEN). In schedule and shopping systems, an origin/destination expressed as a city code expands to all underlying airports.",
+    "longDef_ko": "도시 코드는 IATA 위치 코드 체계의 일부이며, 도시에 주요 공항이 하나뿐인 경우 공항 코드와 동일할 수 있다(즉, 하나의 코드가 도시 식별자와 공항 식별자 역할을 동시에 할 수 있다). 다공항 도시의 경우 도시 코드는 별개로 존재한다(예: 런던의 LON은 LHR, LGW, STN, LCY, LTN, SEN을 포괄한다). 스케줄 및 조회(shopping) 시스템에서 도시 코드로 표현된 출발지/도착지는 그에 속한 모든 공항으로 확장된다.",
+    "standardBody": "IATA",
+    "providerTerms": [],
+    "relationships": [
+      {"type": "narrower", "targetTerm": "IATA Code"},
+      {"type": "related", "targetTerm": "Airport Code"},
+      {"type": "related", "targetTerm": "Origin & Destination"}
+    ],
+    "distinctions": [
+      {"targetTerm": "Airport Code", "explanation": "A city code denotes a metropolitan area (possibly several airports); an airport code denotes one specific airport.", "explanation_ko": "도시 코드는 (여러 공항을 포함할 수 있는) 대도시권을 나타내고, 공항 코드는 하나의 특정 공항을 나타낸다."}
+    ],
+    "sources": [
+      {"name": "IATA Airline and Airport Code Search", "org": "IATA", "version": "", "section": "", "url": "https://www.iata.org/en/publications/directories/code-search/"}
+    ],
+    "lastReviewed": "2026-06-15"
+  },
+  {
+    "id": "pseudo-city-code",
+    "term": "Pseudo City Code",
+    "term_ko": "의사 도시 코드(PCC)",
+    "abbreviation": "PCC",
+    "aliases": ["Office ID", "OID", "Subscriber ID", "Agency Pseudo City Code"],
+    "category": "codes",
+    "conceptType": "code",
+    "status": "active",
+    "definition": "An alphanumeric identifier assigned by a GDS/CRS to a subscriber such as a travel agency or corporate travel department, used to associate bookings with the agency, access private (negotiated) fares, and control privileges. Despite the name it does not identify a geographic city.",
+    "definition_ko": "GDS/CRS가 여행사나 기업 출장 부서 같은 가입자에게 부여하는 영숫자 식별자로, 예약을 해당 여행사와 연결하고, 비공개(협상) 운임에 접근하며, 권한을 통제하는 데 사용된다. 명칭과 달리 지리적 도시를 식별하지 않는다.",
+    "longDef": "A PCC scopes ownership and visibility of PNRs/bookings within a GDS: agents normally can only access reservations created under their own PCC. It also governs entitlements such as agency-specific negotiated (private) fares, queues, and ticketing authority. Format and length vary by vendor (Sabre/Travelport typically 3-4 characters; Amadeus uses a longer Office ID of up to nine characters), and across systems the concept is variously called Pseudo City Code, Office ID, or Subscriber ID.",
+    "longDef_ko": "PCC는 GDS 내에서 PNR/예약의 소유권과 가시성을 한정한다. 대개 직원은 자신의 PCC로 생성된 예약만 접근할 수 있다. 또한 여행사별 협상(비공개) 운임, 큐(queue), 발권 권한 같은 권한을 관리한다. 형식과 길이는 사업자별로 다르며(Sabre/Travelport는 일반적으로 3~4자리, Amadeus는 최대 9자리의 더 긴 Office ID를 사용), 시스템에 따라 이 개념은 Pseudo City Code, Office ID, Subscriber ID 등으로 다양하게 불린다.",
+    "standardBody": "",
+    "providerTerms": [
+      {"provider": "Amadeus", "term": "Office ID", "context": "Amadeus identifier for an agency/office, analogous to a PCC", "context_ko": "여행사/사무소를 식별하는 Amadeus의 식별자로 PCC에 해당한다", "relationship": "same"},
+      {"provider": "Sabre", "term": "Pseudo City Code (PCC)", "context": "Sabre agency identifier scoping bookings and fares", "context_ko": "예약과 운임의 범위를 한정하는 Sabre의 여행사 식별자", "relationship": "same"},
+      {"provider": "Travelport", "term": "Pseudo City Code (PCC)", "context": "Travelport agency/office identifier", "context_ko": "Travelport의 여행사/사무소 식별자", "relationship": "same"}
+    ],
+    "relationships": [
+      {"type": "related", "targetTerm": "GDS"},
+      {"type": "related", "targetTerm": "CRS"},
+      {"type": "related", "targetTerm": "PNR"},
+      {"type": "related", "targetTerm": "Queue"},
+      {"type": "related", "targetTerm": "OTA (Online Travel Agency)"}
+    ],
+    "distinctions": [
+      {"targetTerm": "City Code", "explanation": "A City Code is an IATA geographic metro-area code; a Pseudo City Code identifies a GDS subscriber/agency and is not geographic despite the name.", "explanation_ko": "도시 코드는 IATA의 지리적 대도시권 코드인 반면, 의사 도시 코드(PCC)는 GDS 가입자/여행사를 식별하며 명칭과 달리 지리적 의미가 없다."}
+    ],
+    "sources": [
+      {"name": "Pseudo city code", "org": "Wikipedia", "version": "", "section": "", "url": "https://en.wikipedia.org/wiki/Pseudo_city_code"}
+    ],
+    "lastReviewed": "2026-06-15"
+  },
+  {
+    "id": "un-locode",
+    "term": "UN/LOCODE",
+    "term_ko": "UN/LOCODE (유엔 무역·운송 위치 코드)",
+    "abbreviation": "UN/LOCODE",
+    "aliases": ["United Nations Code for Trade and Transport Locations", "UN Location Code", "LOCODE"],
+    "category": "codes",
+    "conceptType": "code",
+    "status": "active",
+    "definition": "The United Nations Code for Trade and Transport Locations: a 5-character code identifying locations (ports, airports, inland terminals, and other places of relevance to trade and transport) used in international logistics. The first two letters are the ISO 3166 country code and the remaining three identify the location within that country.",
+    "definition_ko": "유엔 무역·운송 위치 코드(United Nations Code for Trade and Transport Locations). 국제 물류에서 사용되는 5자리 코드로, 무역과 운송에 관련된 위치(항만, 공항, 내륙 터미널 및 기타 장소)를 식별한다. 앞 두 글자는 ISO 3166 국가 코드이고, 나머지 세 글자는 해당 국가 내의 위치를 식별한다.",
+    "longDef": "UN/LOCODE is maintained by UNECE and covers seaports, road and rail terminals, airports, postal exchange offices, and other transport-relevant locations. The structure CC + LLL (e.g., USNYC for New York, USA; DEHAM for Hamburg, Germany) reuses ISO 3166-1 alpha-2 for the country segment. It is heavily used in maritime, freight, and supply-chain systems and is broader in scope than aviation-only codes.",
+    "longDef_ko": "UN/LOCODE는 UNECE가 관리하며 해항, 도로·철도 터미널, 공항, 우편 교환소 및 기타 운송 관련 위치를 포괄한다. CC + LLL 구조(예: 미국 뉴욕은 USNYC, 독일 함부르크는 DEHAM)로 국가 부분에는 ISO 3166-1 alpha-2를 재사용한다. 해운, 화물, 공급망 시스템에서 폭넓게 사용되며, 항공 전용 코드보다 적용 범위가 넓다.",
+    "standardBody": "UNECE",
+    "providerTerms": [],
+    "relationships": [
+      {"type": "related", "targetTerm": "ISO 3166 Country Code"},
+      {"type": "related", "targetTerm": "Airport Code"},
+      {"type": "related", "targetTerm": "City Code"}
+    ],
+    "distinctions": [
+      {"targetTerm": "Airport Code", "explanation": "UN/LOCODE is a 5-character trade/transport location code (CC+LLL) covering ports, terminals and airports; an airport code is an aviation-specific IATA/ICAO identifier.", "explanation_ko": "UN/LOCODE는 항만, 터미널, 공항을 포괄하는 5자리 무역/운송 위치 코드(CC+LLL)인 반면, 공항 코드는 항공 전용 IATA/ICAO 식별자이다."}
+    ],
+    "sources": [
+      {"name": "UN/LOCODE Code List by Country and Territory", "org": "UNECE", "version": "", "section": "", "url": "https://unece.org/trade/cefact/unlocode-code-list-country-and-territory"}
+    ],
+    "lastReviewed": "2026-06-15"
+  },
+  {
+    "id": "iso-4217-currency-code",
+    "term": "ISO 4217 Currency Code",
+    "term_ko": "ISO 4217 통화 코드",
+    "abbreviation": "ISO 4217",
+    "aliases": ["Currency Code", "ISO Currency Code", "Three-Letter Currency Code"],
+    "category": "codes",
+    "conceptType": "code",
+    "status": "active",
+    "definition": "The international standard defining three-letter alphabetic codes (and corresponding numeric codes) for currencies, e.g., USD, EUR, GBP, JPY. It is used throughout travel pricing, ticketing, and settlement to unambiguously denote the currency of an amount.",
+    "definition_ko": "통화에 대한 3자리 알파벳 코드(및 그에 대응하는 숫자 코드)를 정의하는 국제 표준(예: USD, EUR, GBP, JPY). 여행 가격 산정, 발권, 정산 전반에서 금액의 통화를 명확하게 나타내는 데 사용된다.",
+    "longDef": "ISO 4217 alphabetic codes are typically formed from the ISO 3166 country code plus a letter for the currency name (e.g., US + D = USD). The standard also defines the minor unit (number of decimal places) for each currency. In airline pricing, fares are filed and converted between currencies and the neutral NUC; the local currency on a ticket is expressed using an ISO 4217 code.",
+    "longDef_ko": "ISO 4217 알파벳 코드는 일반적으로 ISO 3166 국가 코드에 통화 명칭의 한 글자를 더해 구성된다(예: US + D = USD). 이 표준은 또한 각 통화의 최소 단위(소수점 자릿수)도 정의한다. 항공 가격 산정에서 운임은 여러 통화와 중립 단위인 NUC 사이에서 신고·환산되며, 항공권상의 현지 통화는 ISO 4217 코드로 표현된다.",
+    "standardBody": "ISO",
+    "providerTerms": [],
+    "relationships": [
+      {"type": "related", "targetTerm": "ISO 3166 Country Code"},
+      {"type": "related", "targetTerm": "NUC"},
+      {"type": "related", "targetTerm": "BSP"}
+    ],
+    "distinctions": [
+      {"targetTerm": "NUC", "explanation": "ISO 4217 codes denote real-world currencies; NUC is a fare-construction neutral unit used internally to convert fares between currencies, not an ISO 4217 currency.", "explanation_ko": "ISO 4217 코드는 실제 통화를 나타내는 반면, NUC는 운임을 통화 간에 환산하기 위해 내부적으로 사용되는 운임 산정용 중립 단위이며 ISO 4217 통화가 아니다."}
+    ],
+    "sources": [
+      {"name": "ISO 4217 Currency codes", "org": "ISO", "version": "", "section": "", "url": "https://www.iso.org/iso-4217-currency-codes.html"}
+    ],
+    "lastReviewed": "2026-06-15"
+  },
+  {
+    "id": "iso-3166-country-code",
+    "term": "ISO 3166 Country Code",
+    "term_ko": "ISO 3166 국가 코드",
+    "abbreviation": "ISO 3166",
+    "aliases": ["Country Code", "ISO Country Code", "Alpha-2 Country Code", "Alpha-3 Country Code", "ISO 3166-1"],
+    "category": "codes",
+    "conceptType": "code",
+    "status": "active",
+    "definition": "The international standard defining codes for countries and their subdivisions. ISO 3166-1 provides two-letter (alpha-2, e.g., US, GB, DE), three-letter (alpha-3, e.g., USA, GBR, DEU), and three-digit numeric codes for countries and territories.",
+    "definition_ko": "국가와 그 하위 지역에 대한 코드를 정의하는 국제 표준. ISO 3166-1은 국가 및 영토에 대해 2자리(alpha-2, 예: US, GB, DE), 3자리(alpha-3, 예: USA, GBR, DEU), 그리고 3자리 숫자 코드를 제공한다.",
+    "longDef": "ISO 3166-1 alpha-2 codes are the most widely used in travel and IT (also the basis for country-code top-level domains and the country segment of UN/LOCODE). ISO 3166-2 covers principal subdivisions (states, provinces, regions). Country codes appear throughout travel data for nationality, country of residence, point of sale, tax/visa rules, and address handling.",
+    "longDef_ko": "ISO 3166-1 alpha-2 코드는 여행 및 IT 분야에서 가장 널리 사용된다(국가 코드 최상위 도메인과 UN/LOCODE의 국가 부분의 기준이기도 하다). ISO 3166-2는 주요 하위 지역(주, 도, 지역)을 다룬다. 국가 코드는 국적, 거주 국가, 판매 지점(POS), 세금/비자 규정, 주소 처리 등 여행 데이터 전반에 등장한다.",
+    "standardBody": "ISO",
+    "providerTerms": [],
+    "relationships": [
+      {"type": "related", "targetTerm": "ISO 4217 Currency Code"},
+      {"type": "related", "targetTerm": "UN/LOCODE"},
+      {"type": "related", "targetTerm": "Secure Flight"}
+    ],
+    "distinctions": [
+      {"targetTerm": "UN/LOCODE", "explanation": "ISO 3166 identifies a whole country (2/3-letter); UN/LOCODE identifies a specific location within a country and embeds the ISO 3166 alpha-2 as its first two characters.", "explanation_ko": "ISO 3166은 국가 전체를 식별하는(2/3자리) 코드인 반면, UN/LOCODE는 국가 내의 특정 위치를 식별하며 앞 두 글자에 ISO 3166 alpha-2를 포함한다."}
+    ],
+    "sources": [
+      {"name": "ISO 3166 Country Codes", "org": "ISO", "version": "", "section": "", "url": "https://www.iso.org/iso-3166-country-codes.html"}
+    ],
+    "lastReviewed": "2026-06-15"
+  },
+  {
+    "id": "chain-code",
+    "term": "Chain Code",
+    "term_ko": "체인 코드",
+    "abbreviation": "",
+    "aliases": ["Hotel Chain Code", "GDS Chain Code", "Two-Letter Chain Code"],
+    "category": "codes",
+    "conceptType": "code",
+    "status": "active",
+    "definition": "A two-letter code used in GDSs and hotel distribution to identify the hotel chain, brand, or representation/distribution company to which a property belongs (e.g., MC for Marriott Hotels, HI for Hilton). A property is identified by its chain code plus a property/hotel ID, and the exact codes can vary by GDS.",
+    "definition_ko": "GDS 및 호텔 유통에서 해당 숙소가 속한 호텔 체인, 브랜드, 또는 대리/유통 회사를 식별하는 데 사용되는 2자리 코드(예: 메리어트 호텔은 MC, 힐튼은 HI). 숙소는 체인 코드와 숙소/호텔 ID의 조합으로 식별되며, 정확한 코드는 GDS마다 다를 수 있다.",
+    "longDef": "Chain codes group hotels under a common brand, parent company, or third-party representation/distribution provider (such as a bedbank or rep firm), and they drive how rates and inventory are loaded and surfaced in the GDS. Independent hotels are often distributed under the chain code of a representation company rather than a true brand. The chain code combined with the GDS property code uniquely addresses a hotel for shopping and booking. Specific two-letter codes are not globally standardized and may differ between GDSs.",
+    "longDef_ko": "체인 코드는 공통 브랜드, 모기업, 또는 제3자 대리/유통 사업자(베드뱅크나 대리 회사 등) 아래로 호텔을 묶으며, 이를 통해 요금과 재고가 GDS에 등록되고 노출되는 방식이 결정된다. 독립 호텔은 실제 브랜드가 아니라 대리 회사의 체인 코드로 유통되는 경우가 많다. 체인 코드와 GDS 숙소 코드를 결합하면 조회 및 예약을 위해 호텔을 고유하게 지정할 수 있다. 구체적인 2자리 코드는 전 세계적으로 표준화되어 있지 않으며 GDS마다 다를 수 있다.",
+    "standardBody": "",
+    "providerTerms": [],
+    "relationships": [
+      {"type": "related", "targetTerm": "GDS"},
+      {"type": "related", "targetTerm": "CRS"},
+      {"type": "related", "targetTerm": "Room Type"},
+      {"type": "related", "targetTerm": "Rate Plan"}
+    ],
+    "distinctions": [
+      {"targetTerm": "Airline Designator", "explanation": "A chain code (2 letters) identifies a hotel chain/brand in distribution; an airline designator (2 characters) identifies an air carrier — different domains despite both being short codes.", "explanation_ko": "체인 코드(2자리)는 유통에서 호텔 체인/브랜드를 식별하고, 항공사 지정 코드(2자리)는 항공 운송 사업자를 식별한다. 둘 다 짧은 코드이지만 서로 다른 영역에 속한다."}
+    ],
+    "sources": [
+      {"name": "20 GDS Words and Meanings", "org": "OpenHotel", "version": "", "section": "", "url": "https://openhotel.com/blog/news-and-articles-for-hotels/post.cfm/post/6034/20-gds-words-and-meanings"},
+      {"name": "GDS Chain Codes", "org": "Marriott", "version": "", "section": "", "url": "https://www.travelagents.marriott.com/travelagents/GDSResInfo.mi"}
+    ],
+    "lastReviewed": "2026-06-15"
+  }
+]

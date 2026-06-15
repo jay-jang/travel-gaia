@@ -1,0 +1,305 @@
+[
+  {
+    "id": "codeshare",
+    "term": "Codeshare",
+    "term_ko": "공동운항",
+    "abbreviation": "",
+    "aliases": ["Code Share", "Code-share Agreement", "Codeshare Flight"],
+    "category": "air-partner",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "A commercial arrangement in which an airline (the marketing carrier) sells seats under its own airline designator and flight number on a flight that is physically operated by a different airline (the operating carrier). A single physical flight can therefore be sold under multiple flight numbers belonging to different carriers.",
+    "definition_ko": "한 항공사(판매 항공사)가 실제로는 다른 항공사(운항 항공사)가 운항하는 항공편에 대해 자사의 항공사 지정자 코드와 편명으로 좌석을 판매하는 상업적 협정. 따라서 하나의 실제 항공편이 서로 다른 항공사에 속한 여러 편명으로 판매될 수 있다.",
+    "longDef": "Codeshare agreements let an airline extend its network and offer connectivity beyond the routes it operates itself, while presenting a seamless single-carrier appearance to the customer. Common models include free-flow/free-sale (the marketing carrier sells from the operating carrier's inventory in real time), block-space (the marketing carrier purchases a fixed block of seats), and capacity-purchase arrangements. Regulators commonly require disclosure to the passenger of the actual operating carrier at the time of sale.",
+    "longDef_ko": "공동운항 협정을 통해 항공사는 자사가 직접 운항하지 않는 노선까지 네트워크를 확장하고 연결편을 제공하면서도, 고객에게는 단일 항공사를 이용하는 듯한 매끄러운 경험을 제공할 수 있다. 대표적인 형태로는 free-flow/free-sale(판매 항공사가 운항 항공사의 좌석 재고에서 실시간으로 판매), block-space(판매 항공사가 고정된 좌석 블록을 매입), capacity-purchase 협정 등이 있다. 규제 당국은 일반적으로 판매 시점에 실제 운항 항공사를 승객에게 고지하도록 요구한다.",
+    "standardBody": "IATA",
+    "providerTerms": [],
+    "relationships": [
+      {"type": "related", "targetTerm": "Marketing Carrier"},
+      {"type": "related", "targetTerm": "Operating Carrier"},
+      {"type": "related", "targetTerm": "Interline"},
+      {"type": "related", "targetTerm": "Airline Designator"},
+      {"type": "related", "targetTerm": "Validating Carrier"}
+    ],
+    "distinctions": [
+      {"targetTerm": "Interline", "explanation": "Codeshare puts the marketing carrier's own code on another carrier's flight; interline is acceptance of another carrier's ticket without the marketing carrier's code on the flight.", "explanation_ko": "공동운항은 판매 항공사의 코드를 다른 항공사의 항공편에 부여하는 것이고, 인터라인은 해당 항공편에 판매 항공사의 코드를 붙이지 않은 채 다른 항공사의 항공권을 인수하는 것이다."},
+      {"targetTerm": "Operating Carrier", "explanation": "Codeshare is the agreement/arrangement, while the operating carrier is the airline actually flying the aircraft.", "explanation_ko": "공동운항은 협정 또는 협약을 가리키는 반면, 운항 항공사는 실제로 항공기를 운항하는 항공사를 가리킨다."}
+    ],
+    "sources": [
+      {"name": "Standard Schedules Information Manual (SSIM)", "org": "IATA", "version": "", "section": "", "url": ""},
+      {"name": "DOT rules on disclosure of code-share arrangements", "org": "U.S. Department of Transportation", "version": "", "section": "", "url": ""}
+    ]
+  },
+  {
+    "id": "interline",
+    "term": "Interline",
+    "term_ko": "인터라인(연계 운송)",
+    "abbreviation": "",
+    "aliases": ["Interline Agreement", "Interlining", "Interline Traffic Agreement"],
+    "category": "air-partner",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "A commercial agreement between two or more airlines to handle passengers, baggage, and tickets traveling on itineraries that involve more than one carrier, allowing one airline to issue a ticket and have it accepted for travel on another. Unlike codeshare, each flight is sold and flown under the operating carrier's own designator.",
+    "definition_ko": "둘 이상의 항공사가 한 개 이상의 항공사가 관여하는 여정에서 승객, 수하물, 항공권을 처리하기 위해 맺는 상업적 협정으로, 한 항공사가 발권한 항공권을 다른 항공사가 운송에 인수할 수 있도록 한다. 공동운항과 달리 각 항공편은 운항 항공사 자체의 지정자 코드로 판매되고 운항된다.",
+    "longDef": "Interline agreements enable through-ticketing, mutual ticket acceptance, baggage through-checking, and revenue settlement between carriers without any sharing of flight codes. They underpin multi-carrier journeys and are typically settled financially through the IATA Clearing House and via proration based on the Multilateral Interline Traffic Agreements (MITA) or bilateral Special Prorate Agreements (SPA).",
+    "longDef_ko": "인터라인 협정은 편명 공유 없이도 항공사 간 일관 발권(through-ticketing), 상호 항공권 인수, 수하물 일관 위탁(through-checking), 수익 정산을 가능하게 한다. 이는 여러 항공사가 관여하는 여정의 기반이 되며, 일반적으로 IATA Clearing House를 통해, 그리고 MITA(Multilateral Interline Traffic Agreements)나 양자 간 SPA(Special Prorate Agreement)에 기반한 프로레이션을 통해 재무적으로 정산된다.",
+    "standardBody": "IATA",
+    "providerTerms": [],
+    "relationships": [
+      {"type": "related", "targetTerm": "Codeshare"},
+      {"type": "related", "targetTerm": "MITA"},
+      {"type": "related", "targetTerm": "SPA (Special Prorate Agreement)"},
+      {"type": "related", "targetTerm": "Proration"},
+      {"type": "related", "targetTerm": "IATA Clearing House"},
+      {"type": "related", "targetTerm": "Validating Carrier"}
+    ],
+    "distinctions": [
+      {"targetTerm": "Codeshare", "explanation": "Interline involves no sharing of flight codes; codeshare specifically places the marketing carrier's designator on the operating carrier's flight.", "explanation_ko": "인터라인은 편명 공유를 수반하지 않으며, 공동운항은 구체적으로 판매 항공사의 지정자 코드를 운항 항공사의 항공편에 부여한다."},
+      {"targetTerm": "MITA", "explanation": "MITA is the multilateral framework that establishes the standard interline relationship; interline is the broader concept of cross-carrier ticket and baggage acceptance.", "explanation_ko": "MITA는 표준 인터라인 관계를 수립하는 다자간 체계이고, 인터라인은 항공사 간 항공권 및 수하물 인수를 포괄하는 더 넓은 개념이다."}
+    ],
+    "sources": [
+      {"name": "Multilateral Interline Traffic Agreements (MITA)", "org": "IATA", "version": "", "section": "", "url": ""},
+      {"name": "Revenue Accounting Manual (RAM)", "org": "IATA", "version": "", "section": "", "url": ""}
+    ]
+  },
+  {
+    "id": "marketing-carrier",
+    "term": "Marketing Carrier",
+    "term_ko": "판매 항공사(마케팅 캐리어)",
+    "abbreviation": "",
+    "aliases": ["Marketing Airline", "Selling Carrier"],
+    "category": "air-partner",
+    "conceptType": "role",
+    "status": "active",
+    "definition": "The airline whose designator code and flight number appear on a ticket or in a reservation for a given flight, and which markets and sells that flight to the customer. On a codeshare flight the marketing carrier may differ from the airline that physically operates the flight.",
+    "definition_ko": "특정 항공편에 대해 항공권이나 예약에 자사의 지정자 코드와 편명이 표시되며, 해당 항공편을 고객에게 마케팅하고 판매하는 항공사. 공동운항편에서는 판매 항공사가 실제로 항공편을 운항하는 항공사와 다를 수 있다.",
+    "longDef": "In a codeshare relationship the marketing carrier is the airline placing its code on the flight, regardless of who operates the aircraft. The marketing carrier's flight number is what the passenger sees at booking, and disclosure rules require informing the passenger of the underlying operating carrier. The marketing carrier is distinct from the validating carrier, which is the carrier whose stock and accounting are used to issue the ticket.",
+    "longDef_ko": "공동운항 관계에서 판매 항공사는 누가 항공기를 운항하는지와 무관하게 자사의 코드를 항공편에 부여하는 항공사다. 승객이 예약 시 보게 되는 것은 판매 항공사의 편명이며, 고지 규정에 따라 그 기반이 되는 운항 항공사를 승객에게 알려야 한다. 판매 항공사는 발권 항공사(validating carrier), 즉 항공권 발권에 그 항공권 양식과 회계가 사용되는 항공사와는 구별된다.",
+    "standardBody": "IATA",
+    "providerTerms": [],
+    "relationships": [
+      {"type": "related", "targetTerm": "Operating Carrier"},
+      {"type": "related", "targetTerm": "Codeshare"},
+      {"type": "related", "targetTerm": "Airline Designator"},
+      {"type": "related", "targetTerm": "Validating Carrier"}
+    ],
+    "distinctions": [
+      {"targetTerm": "Operating Carrier", "explanation": "The marketing carrier sells the flight under its code; the operating carrier physically flies the aircraft.", "explanation_ko": "판매 항공사는 자사의 코드로 항공편을 판매하고, 운항 항공사는 실제로 항공기를 운항한다."},
+      {"targetTerm": "Validating Carrier", "explanation": "The marketing carrier owns the flight code shown to the passenger; the validating carrier is the airline on whose document/stock the ticket is issued and settled.", "explanation_ko": "판매 항공사는 승객에게 표시되는 편명 코드를 보유하고, 발권 항공사는 그 항공권 서류/양식을 사용해 항공권이 발권되고 정산되는 항공사다."}
+    ],
+    "sources": [
+      {"name": "Standard Schedules Information Manual (SSIM)", "org": "IATA", "version": "", "section": "", "url": ""},
+      {"name": "DOT rules on disclosure of code-share arrangements", "org": "U.S. Department of Transportation", "version": "", "section": "", "url": ""}
+    ]
+  },
+  {
+    "id": "operating-carrier",
+    "term": "Operating Carrier",
+    "term_ko": "운항 항공사(오퍼레이팅 캐리어)",
+    "abbreviation": "",
+    "aliases": ["Operating Airline"],
+    "category": "air-partner",
+    "conceptType": "role",
+    "status": "active",
+    "definition": "The airline that physically operates a flight, providing the aircraft, crew, and operational control, regardless of which carriers' codes are sold on it. On a codeshare flight there is one operating carrier but potentially several marketing carriers.",
+    "definition_ko": "어떤 항공사의 코드가 판매되든 관계없이 항공기, 승무원, 운항 통제를 제공하여 실제로 항공편을 운항하는 항공사. 공동운항편에서는 운항 항공사는 하나이지만 판매 항공사는 여럿일 수 있다.",
+    "longDef": "The operating carrier holds operational responsibility for the flight, including safety, schedule, and ground handling. Passenger disclosure regulations require that travelers be informed of the operating carrier when it differs from the marketing carrier whose code they booked. In reservation and schedule data the operating carrier is identified separately from the marketing carrier, so selling systems can show both the code sold and the airline actually flying.",
+    "longDef_ko": "운항 항공사는 안전, 스케줄, 지상 조업을 포함한 항공편의 운항 책임을 진다. 승객 고지 규정은 승객이 예약한 코드의 판매 항공사와 운항 항공사가 다를 경우 운항 항공사를 승객에게 알리도록 요구한다. 예약 및 스케줄 데이터에서 운항 항공사는 판매 항공사와 별도로 식별되어, 판매 시스템이 판매된 코드와 실제로 운항하는 항공사를 모두 표시할 수 있다.",
+    "standardBody": "IATA",
+    "providerTerms": [],
+    "relationships": [
+      {"type": "related", "targetTerm": "Marketing Carrier"},
+      {"type": "related", "targetTerm": "Codeshare"},
+      {"type": "related", "targetTerm": "Airline Designator"}
+    ],
+    "distinctions": [
+      {"targetTerm": "Marketing Carrier", "explanation": "The operating carrier flies the aircraft; the marketing carrier sells the flight under its own code and number.", "explanation_ko": "운항 항공사는 항공기를 운항하고, 판매 항공사는 자사의 코드와 편명으로 항공편을 판매한다."},
+      {"targetTerm": "Codeshare", "explanation": "Operating carrier is a role on a specific flight; codeshare is the commercial arrangement that creates the distinction between operating and marketing carriers.", "explanation_ko": "운항 항공사는 특정 항공편에서의 역할이고, 공동운항은 운항 항공사와 판매 항공사의 구분을 만들어내는 상업적 협정이다."}
+    ],
+    "sources": [
+      {"name": "Standard Schedules Information Manual (SSIM)", "org": "IATA", "version": "", "section": "", "url": ""},
+      {"name": "DOT rules on disclosure of code-share arrangements", "org": "U.S. Department of Transportation", "version": "", "section": "", "url": ""}
+    ]
+  },
+  {
+    "id": "spa-special-prorate-agreement",
+    "term": "SPA (Special Prorate Agreement)",
+    "term_ko": "SPA(특별 운임 배분 협정)",
+    "abbreviation": "SPA",
+    "aliases": ["Special Prorate Agreement", "Special Pro-rate Agreement"],
+    "category": "air-partner",
+    "conceptType": "document",
+    "status": "active",
+    "definition": "A bilateral agreement between two airlines that establishes special, negotiated proration values (the share of fare each carrier receives) for interline traffic carried on agreed routes, overriding the standard multilateral prorate values. SPAs enable carriers to offer competitive through-fares on multi-carrier itineraries.",
+    "definition_ko": "두 항공사 간에 합의된 노선에서 운송되는 인터라인 운송에 대해 표준 다자간 프로레이트 값을 대체하는 특별하고 협상된 프로레이션 값(각 항공사가 받는 운임 배분 몫)을 설정하는 양자 간 협정. SPA를 통해 항공사는 여러 항공사가 관여하는 여정에서 경쟁력 있는 일관 운임(through-fare)을 제공할 수 있다.",
+    "longDef": "Where the default multilateral proration would not yield commercially attractive revenue splits, carriers sign SPAs specifying fixed amounts, percentages, or special prorate factors for defined origin-destination pairs and fare types. SPAs are central to alliance and partner pricing, allowing the construction of competitive interline and codeshare through-fares. Settlement of the resulting amounts typically flows through the IATA Clearing House.",
+    "longDef_ko": "기본 다자간 프로레이션으로는 상업적으로 매력적인 수익 배분이 나오지 않는 경우, 항공사는 특정 출발지-목적지 쌍과 운임 유형에 대해 고정 금액, 비율 또는 특별 프로레이트 계수를 명시한 SPA를 체결한다. SPA는 동맹 및 파트너 운임 책정의 핵심으로, 경쟁력 있는 인터라인 및 공동운항 일관 운임을 구성할 수 있게 한다. 그 결과로 발생하는 금액의 정산은 일반적으로 IATA Clearing House를 통해 이루어진다.",
+    "standardBody": "IATA",
+    "providerTerms": [],
+    "relationships": [
+      {"type": "related", "targetTerm": "Proration"},
+      {"type": "related", "targetTerm": "Interline"},
+      {"type": "related", "targetTerm": "MITA"},
+      {"type": "related", "targetTerm": "IATA Clearing House"},
+      {"type": "related", "targetTerm": "Fare Component"}
+    ],
+    "distinctions": [
+      {"targetTerm": "Proration", "explanation": "Proration is the general process of splitting a fare among carriers; an SPA is a specific bilateral agreement that sets special values used in that process.", "explanation_ko": "프로레이션은 운임을 항공사 간에 분배하는 일반적인 과정이고, SPA는 그 과정에서 사용되는 특별 값을 설정하는 구체적인 양자 간 협정이다."},
+      {"targetTerm": "MITA", "explanation": "MITA provides the standard multilateral interline/prorate framework, whereas an SPA is a bilateral override with negotiated values between two carriers.", "explanation_ko": "MITA는 표준 다자간 인터라인/프로레이트 체계를 제공하는 반면, SPA는 두 항공사 간에 협상된 값으로 이를 대체하는 양자 간 협정이다."}
+    ],
+    "sources": [
+      {"name": "Prorate Manual — Passenger (PMP)", "org": "IATA", "version": "", "section": "", "url": ""},
+      {"name": "Revenue Accounting Manual (RAM)", "org": "IATA", "version": "", "section": "", "url": ""}
+    ]
+  },
+  {
+    "id": "mita",
+    "term": "MITA",
+    "term_ko": "MITA(다자간 인터라인 운송 협정)",
+    "abbreviation": "MITA",
+    "aliases": ["Multilateral Interline Traffic Agreement", "Multilateral Interline Traffic Agreements", "IATA MITA"],
+    "category": "air-partner",
+    "conceptType": "document",
+    "status": "active",
+    "definition": "The IATA Multilateral Interline Traffic Agreements, a standardized framework that lets participating airlines (and accredited agents) accept each other's traffic documents and through-check passengers and baggage under common terms. Joining MITA establishes default interline relationships with other signatories rather than requiring individual bilateral agreements.",
+    "definition_ko": "IATA의 다자간 인터라인 운송 협정으로, 참여 항공사(및 인가 대리점)가 공통 조건 하에 서로의 운송 서류를 인수하고 승객과 수하물을 일관 위탁할 수 있도록 하는 표준화된 체계다. MITA에 가입하면 개별 양자 협정을 맺을 필요 없이 다른 서명 당사자들과 기본 인터라인 관계가 성립된다.",
+    "longDef": "MITA covers passenger and/or cargo interlining and defines the standard conditions under which carriers honor one another's tickets and handle baggage and settlement. Participation is recorded so trading partners know who interlines with whom; carriers can be MITA participants for passenger, cargo, or both. MITA provides the baseline relationship over which carriers may layer bilateral Special Prorate Agreements and codeshare deals.",
+    "longDef_ko": "MITA는 여객 및/또는 화물 인터라인을 포괄하며, 항공사가 서로의 항공권을 인정하고 수하물과 정산을 처리하는 표준 조건을 정의한다. 어느 항공사가 누구와 인터라인하는지 거래 파트너가 알 수 있도록 참여 여부가 기록되며, 항공사는 여객, 화물 또는 둘 다에 대해 MITA 참여자가 될 수 있다. MITA는 항공사가 그 위에 양자 간 SPA와 공동운항 거래를 추가로 얹을 수 있는 기준 관계를 제공한다.",
+    "standardBody": "IATA",
+    "providerTerms": [],
+    "relationships": [
+      {"type": "related", "targetTerm": "Interline"},
+      {"type": "related", "targetTerm": "SPA (Special Prorate Agreement)"},
+      {"type": "related", "targetTerm": "Proration"},
+      {"type": "related", "targetTerm": "IATA Clearing House"}
+    ],
+    "distinctions": [
+      {"targetTerm": "Interline", "explanation": "Interline is the general practice of cross-carrier ticket/baggage acceptance; MITA is the specific IATA multilateral agreement that standardizes it among signatories.", "explanation_ko": "인터라인은 항공사 간 항공권/수하물 인수의 일반적인 관행이고, MITA는 서명 당사자들 사이에서 이를 표준화하는 구체적인 IATA 다자간 협정이다."},
+      {"targetTerm": "SPA (Special Prorate Agreement)", "explanation": "MITA is multilateral and sets the standard relationship; an SPA is bilateral and sets negotiated special prorate values between two carriers.", "explanation_ko": "MITA는 다자간 협정으로 표준 관계를 설정하고, SPA는 양자 간 협정으로 두 항공사 사이의 협상된 특별 프로레이트 값을 설정한다."}
+    ],
+    "sources": [
+      {"name": "Multilateral Interline Traffic Agreements (MITA)", "org": "IATA", "version": "", "section": "", "url": ""}
+    ]
+  },
+  {
+    "id": "proration",
+    "term": "Proration",
+    "term_ko": "프로레이션(운임 배분)",
+    "abbreviation": "",
+    "aliases": ["Prorate", "Prorating", "Fare Proration", "Pro-ration"],
+    "category": "air-partner",
+    "conceptType": "process",
+    "status": "active",
+    "definition": "The process of dividing the total fare of an interline or multi-carrier ticket among the participating carriers to determine how much revenue each is owed for the portion it carries. Proration uses standardized prorate factors or negotiated special prorate agreements to allocate the fare across fare components and flight coupons.",
+    "definition_ko": "인터라인 또는 다중 항공사 항공권의 총 운임을 참여 항공사 간에 나누어, 각 항공사가 자신이 운송한 구간에 대해 받을 수익이 얼마인지 산정하는 과정. 프로레이션은 표준화된 프로레이트 계수 또는 협상된 특별 운임 배분 협정을 사용하여 운임을 운임 구성요소(fare component)와 비행 쿠폰(flight coupon) 전반에 걸쳐 배분한다.",
+    "longDef": "Proration translates a single through-fare into per-carrier revenue shares used for interline billing and settlement. The default method applies standard prorate factors (often distance/mileage-based weighting) to each segment, but carriers may override these with Special Prorate Agreements (SPAs) for specified markets. The resulting amounts are then billed and cleared, commonly through the IATA Clearing House, as part of revenue accounting.",
+    "longDef_ko": "프로레이션은 단일 일관 운임(through-fare)을 인터라인 청구 및 정산에 사용되는 항공사별 수익 배분 몫으로 변환한다. 기본 방식은 각 구간에 표준 프로레이트 계수(흔히 거리/마일리지 기반 가중치)를 적용하지만, 항공사는 특정 시장에 대해 SPA(Special Prorate Agreement)로 이를 대체할 수 있다. 그 결과로 산출된 금액은 수익 회계의 일부로 청구되고, 일반적으로 IATA Clearing House를 통해 정산된다.",
+    "standardBody": "IATA",
+    "providerTerms": [],
+    "relationships": [
+      {"type": "related", "targetTerm": "SPA (Special Prorate Agreement)"},
+      {"type": "related", "targetTerm": "Interline"},
+      {"type": "related", "targetTerm": "MITA"},
+      {"type": "related", "targetTerm": "IATA Clearing House"},
+      {"type": "related", "targetTerm": "Fare Component"},
+      {"type": "related", "targetTerm": "Flight Coupon"}
+    ],
+    "distinctions": [
+      {"targetTerm": "SPA (Special Prorate Agreement)", "explanation": "Proration is the general allocation process; an SPA is a specific bilateral agreement supplying special values used in that process.", "explanation_ko": "프로레이션은 일반적인 배분 과정이고, SPA는 그 과정에서 사용되는 특별 값을 제공하는 구체적인 양자 간 협정이다."},
+      {"targetTerm": "Fare Component", "explanation": "A fare component is a priced portion of an itinerary; proration is the act of splitting that fare's value among the carriers operating it.", "explanation_ko": "운임 구성요소(fare component)는 여정에서 운임이 책정된 일부 구간이고, 프로레이션은 그 운임 값을 해당 구간을 운항하는 항공사들 간에 나누는 행위다."}
+    ],
+    "sources": [
+      {"name": "Prorate Manual — Passenger (PMP)", "org": "IATA", "version": "", "section": "", "url": ""},
+      {"name": "Revenue Accounting Manual (RAM)", "org": "IATA", "version": "", "section": "", "url": ""}
+    ]
+  },
+  {
+    "id": "slot",
+    "term": "Slot",
+    "term_ko": "슬롯(공항 운항 시간대)",
+    "abbreviation": "",
+    "aliases": ["Airport Slot", "Takeoff/Landing Slot", "Coordination Slot"],
+    "category": "air-partner",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "A permission allocated to an airline to operate an aircraft arrival or departure at a specific date and time at a capacity-constrained (coordinated) airport. Slots are required to schedule flights at congested airports and are administered under coordination rules such as the Worldwide Airport Slot Guidelines (WASG).",
+    "definition_ko": "수용 능력이 제한된(조정 대상) 공항에서 특정 날짜와 시간에 항공기의 도착 또는 출발을 운항할 수 있도록 항공사에 배정되는 허가. 슬롯은 혼잡 공항에서 항공편 스케줄을 편성하는 데 필요하며, WASG(Worldwide Airport Slot Guidelines)와 같은 조정 규칙에 따라 운영된다.",
+    "longDef": "At Level 3 (fully coordinated) airports, a slot coordinator allocates slots based on rules covering historic precedence (\"grandfather rights\"), the 80/20 use-it-or-lose-it utilization requirement, new-entrant priorities, and slot pools. Slots are distinct from the flight schedule itself: a carrier must hold the necessary slots before it can publish and operate a schedule. Slots may be exchanged or transferred under applicable rules and are commercially valuable at the most congested airports.",
+    "longDef_ko": "레벨 3(완전 조정 대상) 공항에서는 슬롯 조정관이 과거 운항 실적에 따른 우선권(\"grandfather rights\"), 80/20 사용하지 않으면 상실(use-it-or-lose-it) 활용 요건, 신규 진입자 우선권, 슬롯 풀을 다루는 규칙에 따라 슬롯을 배정한다. 슬롯은 항공편 스케줄 자체와는 구별되며, 항공사는 스케줄을 게시하고 운항하기 전에 필요한 슬롯을 보유해야 한다. 슬롯은 해당 규칙에 따라 교환되거나 양도될 수 있으며, 가장 혼잡한 공항에서는 상업적으로 가치가 높다.",
+    "standardBody": "IATA",
+    "providerTerms": [],
+    "relationships": [
+      {"type": "related", "targetTerm": "Schedule Change"},
+      {"type": "related", "targetTerm": "Airport Code"}
+    ],
+    "distinctions": [
+      {"targetTerm": "Schedule Change", "explanation": "A slot is the right to use the airport at a given time; a schedule change is an alteration to a published flight's timing or routing, which may require obtaining or returning slots.", "explanation_ko": "슬롯은 특정 시간에 공항을 사용할 권리이고, 스케줄 변경은 게시된 항공편의 시간이나 노선을 변경하는 것으로, 슬롯의 취득이나 반납이 필요할 수 있다."}
+    ],
+    "sources": [
+      {"name": "Worldwide Airport Slot Guidelines (WASG)", "org": "IATA / ACI / WWACG", "version": "", "section": "", "url": ""}
+    ]
+  },
+  {
+    "id": "schedule-change",
+    "term": "Schedule Change",
+    "term_ko": "스케줄 변경(운항 일정 변경)",
+    "abbreviation": "",
+    "aliases": ["Schedule Adjustment", "Schedule Change Notification", "Time Change"],
+    "category": "air-partner",
+    "conceptType": "process",
+    "status": "active",
+    "definition": "A change made by an airline to a previously published flight schedule, such as a revised departure or arrival time, equipment change, flight number change, or flight cancellation, that affects already-booked passengers. Schedule changes are distributed to selling systems and require reaccommodation or notification of affected bookings.",
+    "definition_ko": "항공사가 이미 예약한 승객에게 영향을 미치는, 이전에 게시된 항공편 스케줄에 가하는 변경으로, 출발 또는 도착 시간 변경, 기재(equipment) 변경, 편명 변경, 항공편 취소 등이 이에 해당한다. 스케줄 변경은 판매 시스템에 배포되며, 영향을 받는 예약에 대해 재수용(reaccommodation)이나 통지가 필요하다.",
+    "longDef": "Schedule changes are communicated via standardized schedule messaging (for example SSIM-based SSM and ASM formats) and propagate to GDSs and airline reservation systems, often landing affected PNRs on queues for agent or automated action. Depending on the magnitude of the change and fare conditions, passengers may be entitled to rebooking, involuntary reissue, or refund. Schedule changes differ from same-day operational disruptions, which fall under irregular operations (IROPS).",
+    "longDef_ko": "스케줄 변경은 표준화된 스케줄 메시지(예: SSIM 기반 SSM 및 ASM 포맷)를 통해 전달되며, GDS와 항공사 예약 시스템으로 전파되어 영향을 받는 PNR이 상담원 또는 자동 처리를 위해 큐(queue)에 올라오는 경우가 많다. 변경의 정도와 운임 조건에 따라 승객은 재예약, 비자발적 재발권(involuntary reissue) 또는 환불을 받을 권리가 있을 수 있다. 스케줄 변경은 당일 운영 중단과는 다르며, 당일 중단은 비정상 운항(IROPS)에 해당한다.",
+    "standardBody": "IATA",
+    "providerTerms": [],
+    "relationships": [
+      {"type": "related", "targetTerm": "IROPS"},
+      {"type": "related", "targetTerm": "Queue"},
+      {"type": "related", "targetTerm": "Involuntary Reissue"},
+      {"type": "related", "targetTerm": "Refund"},
+      {"type": "related", "targetTerm": "PNR"},
+      {"type": "related", "targetTerm": "Slot"}
+    ],
+    "distinctions": [
+      {"targetTerm": "IROPS", "explanation": "Schedule change is a planned amendment to the published schedule communicated in advance; IROPS is unplanned day-of-operations disruption (delays, cancellations, diversions).", "explanation_ko": "스케줄 변경은 사전에 통지되는, 게시된 스케줄에 대한 계획된 수정이고, IROPS는 계획되지 않은 당일 운영 중단(지연, 취소, 회항)이다."},
+      {"targetTerm": "Involuntary Reissue", "explanation": "Schedule change is the triggering event; involuntary reissue is the resulting ticket action to reaccommodate the passenger at no additional fare.", "explanation_ko": "스케줄 변경은 촉발 사건이고, 비자발적 재발권은 추가 운임 없이 승객을 재수용하기 위해 그 결과로 이루어지는 항공권 처리다."}
+    ],
+    "sources": [
+      {"name": "Standard Schedules Information Manual (SSIM)", "org": "IATA", "version": "", "section": "", "url": ""}
+    ]
+  },
+  {
+    "id": "irops",
+    "term": "IROPS",
+    "term_ko": "IROPS(비정상 운항)",
+    "abbreviation": "IROPS",
+    "aliases": ["Irregular Operations", "IRROPS", "Irregular Ops"],
+    "category": "air-partner",
+    "conceptType": "process",
+    "status": "active",
+    "definition": "Irregular Operations: the handling of unplanned disruptions to flight operations such as delays, cancellations, diversions, and missed connections, and the associated reaccommodation of affected passengers, baggage, and crew. IROPS processes restore travelers to their itineraries through rebooking, involuntary reissue, refunds, and care obligations.",
+    "definition_ko": "비정상 운항(Irregular Operations): 지연, 취소, 회항, 연결편 놓침과 같은 계획되지 않은 항공 운항 중단의 처리와 그에 따른 승객, 수하물, 승무원의 재수용. IROPS 프로세스는 재예약, 비자발적 재발권, 환불, 돌봄(care) 의무를 통해 여행객을 원래의 여정으로 복귀시킨다.",
+    "longDef": "IROPS encompasses both the operational recovery (returning the schedule to normal) and the passenger-service response triggered by day-of disruptions. Reaccommodation may use the disrupting carrier's own flights or, under interline and codeshare agreements, partner carriers' flights, supported by interline e-ticketing and involuntary reissue rules. IROPS is distinct from a planned schedule change because it concerns real-time, unforeseen events rather than advance schedule amendments.",
+    "longDef_ko": "IROPS는 운영 복구(스케줄을 정상으로 되돌리는 것)와 당일 중단으로 촉발된 승객 서비스 대응을 모두 포괄한다. 재수용은 중단을 겪은 항공사 자체 항공편을 이용하거나, 인터라인 및 공동운항 협정에 따라 인터라인 e-티켓팅과 비자발적 재발권 규칙의 지원을 받아 파트너 항공사의 항공편을 이용할 수 있다. IROPS는 사전 스케줄 수정이 아니라 실시간의 예기치 못한 사건을 다루므로 계획된 스케줄 변경과 구별된다.",
+    "standardBody": "IATA",
+    "providerTerms": [],
+    "relationships": [
+      {"type": "related", "targetTerm": "Schedule Change"},
+      {"type": "related", "targetTerm": "Involuntary Reissue"},
+      {"type": "related", "targetTerm": "Refund"},
+      {"type": "related", "targetTerm": "Interline"},
+      {"type": "related", "targetTerm": "Queue"},
+      {"type": "related", "targetTerm": "MCT"}
+    ],
+    "distinctions": [
+      {"targetTerm": "Schedule Change", "explanation": "IROPS is unplanned, day-of operational disruption; a schedule change is a planned amendment to the published schedule communicated in advance.", "explanation_ko": "IROPS는 계획되지 않은 당일 운영 중단이고, 스케줄 변경은 사전에 통지되는, 게시된 스케줄에 대한 계획된 수정이다."},
+      {"targetTerm": "Involuntary Reissue", "explanation": "IROPS is the disruption scenario; involuntary reissue is one of the ticketing actions used to reaccommodate passengers during IROPS.", "explanation_ko": "IROPS는 중단 상황이고, 비자발적 재발권은 IROPS 동안 승객을 재수용하기 위해 사용되는 발권 처리 중 하나다."}
+    ],
+    "sources": [
+      {"name": "Passenger Services Conference Resolutions Manual (PSCRM) — interline reaccommodation", "org": "IATA", "version": "", "section": "", "url": ""},
+      {"name": "A4A IROPS / contingency planning guidance", "org": "Airlines for America (A4A)", "version": "", "section": "", "url": ""}
+    ]
+  }
+]

@@ -1,0 +1,21 @@
+[쟁점1 결론] 카테고리 최종 목록: Air Operations & Reservation / Air Shopping, Pricing & Availability / Air Ticketing & Orders / Hotel Inventory & Rates / Hotel Distribution & Booking / Payments & Settlement / Identifiers & Codes / Customer, Loyalty & Profiles / Messaging, APIs & Standards / Provider & Channel Terminology
+
+[쟁점2 결론] 검색 방식: 의존성 없는 자체 가중치 검색(term/name/aliases/providerTerms/category/source별 점수 + 간단한 prefix/substring 매칭) (standalone 단일 파일과 단순성이 최우선이므로 fuzzy 라이브러리 임베드는 MVP 이후로 미룬다)
+
+[쟁점3 결론] 최종 스키마: 필드 = 설명 (줄단위)  
+id = hash route와 내부 참조에 쓰는 안정적인 kebab-case 식별자  
+term = 대표 표제어  
+aliases = 약어, 동의어, 철자 변형 목록  
+category = 위 최종 카테고리 중 하나  
+definition = 짧고 검증 가능한 정의  
+conceptType = acronym / standard-term / business-term / provider-term / code 중 하나  
+status = active / deprecated / ambiguous 중 하나  
+standardBody = OpenTravel, IATA, ISO 등 해당 용어의 기준 기관 또는 출처 성격  
+source = 출처 객체 목록; name, url, version, clause 포함  
+providerTerms = 공급자별 용어 객체 목록; provider, term, context, relationship 포함  
+relationships = 관련 entry 연결; sameAs, broader, narrower, parent, children, related, conflicts 포함  
+distinctions = 혼동하기 쉬운 용어와의 차이점 목록  
+notes = 구현상 주의나 예외 설명  
+lastReviewed = 마지막 검토일 YYYY-MM-DD
+
+[한줄 총평] MVP는 카테고리는 10개로 충분히 나누고, 검색은 직접 구현하며, 스키마는 출처 검증과 혼동 방지에 필요한 필드만 남긴다.

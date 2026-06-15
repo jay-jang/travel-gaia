@@ -1,0 +1,293 @@
+[
+  {
+    "id": "rate-plan",
+    "term": "Rate Plan",
+    "term_ko": "요금제(Rate Plan)",
+    "abbreviation": "",
+    "aliases": ["Rate Code", "Rate Type", "Tariff"],
+    "category": "hotel-rate",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "A named, sellable pricing offer attached to one or more room types that defines the price and the commercial conditions under which a room is sold, such as inclusions, cancellation rules, payment terms, and eligibility. Examples include a Best Available Rate, an advance-purchase non-refundable rate, or a corporate negotiated rate.",
+    "definition_ko": "하나 이상의 객실 유형에 연결되어 객실이 판매되는 가격과 상업적 조건(포함 항목, 취소 규정, 결제 조건, 적용 대상 등)을 정의하는 명명된 판매용 가격 상품이다. BAR(Best Available Rate), 사전 구매형 환불 불가 요금, 기업 협상 요금 등이 그 예이다.",
+    "longDef": "A rate plan bundles a price (or pricing logic) together with rules and restrictions: board basis, cancellation/guarantee policy, minimum/maximum length of stay, advance booking and stay-date windows, market segment or qualification (e.g. corporate, member, opaque), and whether the rate is commissionable or net. In a CRS/PMS a rate plan is identified by a rate code and mapped to room types and date ranges; the same physical room can be sold under many rate plans at different prices and conditions.",
+    "longDef_ko": "요금제는 가격(또는 가격 산정 로직)을 식사 조건, 취소/보증 정책, 최소/최대 숙박일수, 사전 예약 및 투숙일 기간, 시장 세그먼트나 자격 조건(예: 기업, 회원, 비공개), 수수료 지급 여부 또는 net 여부 등의 규칙·제약과 함께 묶은 것이다. CRS/PMS에서 요금제는 rate code로 식별되며 객실 유형과 날짜 범위에 매핑된다. 동일한 실제 객실이라도 여러 요금제 아래 서로 다른 가격과 조건으로 판매될 수 있다.",
+    "standardBody": "OpenTravel Alliance",
+    "providerTerms": [],
+    "relationships": [
+      {"type": "related", "targetTerm": "Room Type"},
+      {"type": "related", "targetTerm": "Board Basis"},
+      {"type": "narrower", "targetTerm": "BAR"},
+      {"type": "related", "targetTerm": "Cancellation Policy"},
+      {"type": "related", "targetTerm": "Net Rate"},
+      {"type": "related", "targetTerm": "Commissionable Rate"},
+      {"type": "related", "targetTerm": "ARI"},
+      {"type": "related", "targetTerm": "Length of Stay"}
+    ],
+    "distinctions": [
+      {"targetTerm": "Room Type", "explanation": "A rate plan is the price/conditions; a room type is the physical product being priced — the same room type is sold under many rate plans.", "explanation_ko": "요금제는 가격·조건을 의미하고, 객실 유형은 가격이 매겨지는 실제 상품을 의미한다. 동일한 객실 유형이 여러 요금제 아래 판매된다."},
+      {"targetTerm": "BAR", "explanation": "BAR is one specific kind of rate plan (the best unrestricted publicly available one), whereas Rate Plan is the general concept covering all offer types.", "explanation_ko": "BAR은 요금제의 한 특정 유형(제약 없이 일반에 공개되는 최저 요금)인 반면, 요금제는 모든 상품 유형을 아우르는 일반 개념이다."}
+    ],
+    "sources": [
+      {"name": "OpenTravel Specification (Hotel messages, RatePlan)", "org": "OpenTravel Alliance", "version": "", "section": "", "url": ""},
+      {"name": "HTNG distribution and messaging specifications", "org": "HTNG", "version": "", "section": "", "url": ""}
+    ]
+  },
+  {
+    "id": "room-type",
+    "term": "Room Type",
+    "term_ko": "객실 유형(Room Type)",
+    "abbreviation": "",
+    "aliases": ["Room Category", "Accommodation Type", "Room Class"],
+    "category": "hotel-rate",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "A category of bookable accommodation defined by its physical and product attributes — such as bed configuration, size, view, floor, and amenities — that groups individual rooms a hotel sells as interchangeable inventory. Examples include Standard Double, Deluxe King, and Junior Suite.",
+    "definition_ko": "침대 구성, 면적, 전망, 층, 편의시설 등 물리적·상품적 속성으로 정의되는 예약 가능한 숙박 범주로, 호텔이 상호 교환 가능한 재고로 판매하는 개별 객실들을 묶은 것이다. 스탠다드 더블, 디럭스 킹, 주니어 스위트 등이 그 예이다.",
+    "longDef": "Room types are the inventory unit hoteliers count and sell; availability and allotments are tracked per room type and date. Each room type is identified by a room type code in the CRS/PMS and is combined with one or more rate plans to produce sellable offers. The room-type-and-rate-plan combination is what is ultimately distributed as a sellable product.",
+    "longDef_ko": "객실 유형은 호텔이 집계하고 판매하는 재고 단위로, 가용 객실과 allotment는 객실 유형 및 날짜별로 관리된다. 각 객실 유형은 CRS/PMS에서 room type code로 식별되며, 하나 이상의 요금제와 결합되어 판매 가능한 상품을 만든다. 궁극적으로 유통되는 판매 상품은 이 객실 유형과 요금제의 조합이다.",
+    "standardBody": "OpenTravel Alliance",
+    "providerTerms": [],
+    "relationships": [
+      {"type": "related", "targetTerm": "Rate Plan"},
+      {"type": "related", "targetTerm": "Occupancy"},
+      {"type": "related", "targetTerm": "Allotment"},
+      {"type": "related", "targetTerm": "ARI"}
+    ],
+    "distinctions": [
+      {"targetTerm": "Rate Plan", "explanation": "Room type is the physical product (the room); rate plan is the price and conditions under which that room is sold.", "explanation_ko": "객실 유형은 실제 상품(객실)을 의미하고, 요금제는 그 객실이 판매되는 가격과 조건을 의미한다."},
+      {"targetTerm": "Occupancy", "explanation": "Room type describes the room's attributes; occupancy describes how many guests stay in it, which can affect the applicable price.", "explanation_ko": "객실 유형은 객실의 속성을 설명하고, 투숙 인원(occupancy)은 몇 명의 투숙객이 머무는지를 설명하며 이는 적용 가격에 영향을 줄 수 있다."}
+    ],
+    "sources": [
+      {"name": "OpenTravel Specification (Hotel messages, RoomType / RoomStay)", "org": "OpenTravel Alliance", "version": "", "section": "", "url": ""},
+      {"name": "HTNG messaging specifications", "org": "HTNG", "version": "", "section": "", "url": ""}
+    ]
+  },
+  {
+    "id": "board-basis",
+    "term": "Board Basis",
+    "term_ko": "식사 조건(Board Basis)",
+    "abbreviation": "",
+    "aliases": ["Meal Plan", "Board Type", "Board"],
+    "category": "hotel-rate",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "The meals included in a hotel rate, expressed as a standardized code such as Room Only (RO), Bed & Breakfast (BB), Half Board (HB), Full Board (FB), or All-Inclusive (AI). It is a key inclusion attribute of a rate plan that affects price and guest expectations.",
+    "definition_ko": "호텔 요금에 포함되는 식사로, Room Only(RO), Bed & Breakfast(BB), Half Board(HB), Full Board(FB), All-Inclusive(AI) 등 표준화된 코드로 표현된다. 가격과 투숙객의 기대에 영향을 미치는 요금제의 핵심 포함 속성이다.",
+    "longDef": "Board basis communicates which meals are part of the rate: RO/EP (Room Only / European Plan) means no meals; BB/CP (Bed & Breakfast / Continental Plan) includes breakfast; HB/MAP (Half Board / Modified American Plan) typically includes breakfast and dinner; FB/AP (Full Board / American Plan) includes three meals; AI (All-Inclusive) adds meals, snacks and usually drinks. Codes and exact inclusions vary by hotel, chain, and distribution channel, so board basis is normally carried as a coded attribute on the rate plan in CRS/GDS and OpenTravel messages.",
+    "longDef_ko": "식사 조건은 어떤 식사가 요금에 포함되는지를 전달한다. RO/EP(Room Only / European Plan)는 식사 미포함, BB/CP(Bed & Breakfast / Continental Plan)는 조식 포함, HB/MAP(Half Board / Modified American Plan)는 일반적으로 조식과 석식 포함, FB/AP(Full Board / American Plan)는 세 끼 포함, AI(All-Inclusive)는 식사·간식과 보통 음료까지 추가된다. 코드와 정확한 포함 내역은 호텔, 체인, 유통 채널에 따라 다르므로, 식사 조건은 보통 CRS/GDS 및 OpenTravel 메시지에서 요금제의 코드화된 속성으로 전달된다.",
+    "standardBody": "OpenTravel Alliance",
+    "providerTerms": [],
+    "relationships": [
+      {"type": "related", "targetTerm": "Rate Plan"},
+      {"type": "related", "targetTerm": "Room Type"}
+    ],
+    "distinctions": [
+      {"targetTerm": "Rate Plan", "explanation": "Board basis is one inclusion attribute carried within a rate plan; a rate plan also defines price, cancellation, and other conditions beyond meals.", "explanation_ko": "식사 조건은 요금제에 포함된 하나의 포함 속성이다. 요금제는 식사 외에도 가격, 취소 규정 등 여러 조건을 함께 정의한다."}
+    ],
+    "sources": [
+      {"name": "OpenTravel Specification (Hotel meal plan / meal codes)", "org": "OpenTravel Alliance", "version": "", "section": "", "url": ""}
+    ]
+  },
+  {
+    "id": "occupancy",
+    "term": "Occupancy",
+    "term_ko": "투숙(Occupancy) / 객실 점유",
+    "abbreviation": "",
+    "aliases": ["Occupancy Rate", "Number of Guests", "Pax Occupancy"],
+    "category": "hotel-rate",
+    "conceptType": "business-term",
+    "status": "ambiguous",
+    "definition": "In hotel inventory and rates, occupancy has two common meanings: (1) the number and composition of guests assigned to a room (e.g. single, double, or 2 adults + 1 child), which can drive occupancy-based pricing; and (2) occupancy rate, the operational metric of rooms sold divided by rooms available over a period.",
+    "definition_ko": "호텔 재고 및 요금에서 occupancy는 두 가지 일반적인 의미를 가진다. (1) 객실에 배정된 투숙객의 수와 구성(예: 싱글, 더블, 또는 성인 2명 + 아동 1명)으로, occupancy 기반 가격 산정에 영향을 줄 수 있다. (2) 객실 점유율(occupancy rate)로, 일정 기간 동안 판매된 객실 수를 가용 객실 수로 나눈 운영 지표이다.",
+    "longDef": "As a pricing/inventory attribute, occupancy specifies how many adults and children occupy a room and is used to apply per-person or occupancy-based rates and to validate that a booking fits a room type's maximum occupancy. As a performance metric, Occupancy Rate = Rooms Sold / Rooms Available, expressed as a percentage, and combines with ADR to derive RevPAR (RevPAR = ADR x Occupancy Rate). The intended sense is usually clear from context, but the term is genuinely overloaded.",
+    "longDef_ko": "가격/재고 속성으로서 occupancy는 객실에 성인과 아동이 각각 몇 명 투숙하는지를 명시하며, 1인당 요금이나 occupancy 기반 요금을 적용하고 예약이 객실 유형의 최대 수용 인원에 맞는지 검증하는 데 사용된다. 성과 지표로서 객실 점유율은 판매 객실 수 / 가용 객실 수이며 백분율로 표현되고, ADR과 결합해 RevPAR을 산출한다(RevPAR = ADR x 객실 점유율). 의도된 의미는 보통 맥락에서 명확하지만, 이 용어는 실제로 여러 의미가 중첩되어 있다.",
+    "standardBody": "",
+    "providerTerms": [],
+    "relationships": [
+      {"type": "related", "targetTerm": "Room Type"},
+      {"type": "related", "targetTerm": "ADR"},
+      {"type": "related", "targetTerm": "RevPAR"}
+    ],
+    "distinctions": [
+      {"targetTerm": "RevPAR", "explanation": "Occupancy rate is one factor (rooms sold vs available); RevPAR is revenue per available room and equals ADR multiplied by occupancy rate.", "explanation_ko": "객실 점유율은 하나의 요소(판매 객실 대 가용 객실)이며, RevPAR은 가용 객실당 매출로 ADR에 객실 점유율을 곱한 값과 같다."},
+      {"targetTerm": "ADR", "explanation": "ADR measures average price per occupied room; occupancy rate measures how full the hotel is — the two are independent inputs to RevPAR.", "explanation_ko": "ADR은 판매된 객실당 평균 가격을 측정하고, 객실 점유율은 호텔이 얼마나 찼는지를 측정한다. 둘은 RevPAR에 독립적으로 입력되는 요소이다."}
+    ],
+    "sources": [
+      {"name": "Uniform System of Accounts for the Lodging Industry (USALI)", "org": "AHLA / HFTP", "version": "", "section": "", "url": ""},
+      {"name": "STR lodging performance metric definitions", "org": "STR (CoStar)", "version": "", "section": "", "url": ""}
+    ]
+  },
+  {
+    "id": "adr",
+    "term": "ADR",
+    "term_ko": "객실 평균 단가(ADR, Average Daily Rate)",
+    "abbreviation": "ADR",
+    "aliases": ["Average Daily Rate", "Average Room Rate", "ARR"],
+    "category": "hotel-rate",
+    "conceptType": "metric",
+    "status": "active",
+    "definition": "Average Daily Rate is a core lodging performance metric equal to total room revenue divided by the number of rooms sold (occupied) over a given period. It measures the average price actually realized per occupied room and excludes complimentary and house-use rooms.",
+    "definition_ko": "ADR(Average Daily Rate)은 일정 기간의 총 객실 매출을 판매된(투숙된) 객실 수로 나눈 값과 같은 핵심 숙박 성과 지표이다. 투숙 객실당 실제 실현된 평균 가격을 측정하며, 무료 제공 객실과 자체 사용 객실은 제외한다.",
+    "longDef": "ADR = Room Revenue / Rooms Sold. It captures rate performance independent of how full the property is, so it is typically read alongside occupancy rate and RevPAR. ADR normally counts only revenue-generating occupied rooms (excluding complimentary rooms), and definitions follow industry-standard accounting such as USALI and STR's metric conventions to keep comparisons consistent across properties.",
+    "longDef_ko": "ADR = 객실 매출 / 판매 객실 수. 숙소가 얼마나 찼는지와 무관하게 요금 성과를 포착하므로, 보통 객실 점유율 및 RevPAR과 함께 본다. ADR은 일반적으로 매출이 발생한 투숙 객실만 집계하며(무료 객실 제외), 정의는 USALI나 STR의 지표 관행과 같은 업계 표준 회계를 따라 숙소 간 비교의 일관성을 유지한다.",
+    "standardBody": "",
+    "providerTerms": [],
+    "relationships": [
+      {"type": "related", "targetTerm": "RevPAR"},
+      {"type": "related", "targetTerm": "Occupancy"},
+      {"type": "related", "targetTerm": "BAR"}
+    ],
+    "distinctions": [
+      {"targetTerm": "RevPAR", "explanation": "ADR divides revenue by rooms sold (occupied), while RevPAR divides revenue by rooms available, so RevPAR reflects both rate and occupancy.", "explanation_ko": "ADR은 매출을 판매된(투숙된) 객실 수로 나누는 반면 RevPAR은 매출을 가용 객실 수로 나누므로, RevPAR은 요금과 점유율을 모두 반영한다."},
+      {"targetTerm": "BAR", "explanation": "ADR is a realized average measured after the fact; BAR is a forward-looking published selling rate, not an average outcome.", "explanation_ko": "ADR은 사후에 측정된 실현 평균이고, BAR은 미래 지향적으로 게시된 판매 요금일 뿐 평균 결과가 아니다."}
+    ],
+    "sources": [
+      {"name": "STR lodging performance metric definitions", "org": "STR (CoStar)", "version": "", "section": "", "url": ""},
+      {"name": "Uniform System of Accounts for the Lodging Industry (USALI)", "org": "AHLA / HFTP", "version": "", "section": "", "url": ""}
+    ]
+  },
+  {
+    "id": "revpar",
+    "term": "RevPAR",
+    "term_ko": "가용 객실당 매출(RevPAR, Revenue Per Available Room)",
+    "abbreviation": "RevPAR",
+    "aliases": ["Revenue Per Available Room"],
+    "category": "hotel-rate",
+    "conceptType": "metric",
+    "status": "active",
+    "definition": "Revenue Per Available Room is a lodging performance metric equal to total room revenue divided by the number of available rooms over a period, equivalently ADR multiplied by occupancy rate. It combines pricing and occupancy into a single measure of how effectively a property monetizes its room inventory.",
+    "definition_ko": "RevPAR(Revenue Per Available Room)은 일정 기간의 총 객실 매출을 가용 객실 수로 나눈 값과 같은 숙박 성과 지표로, ADR에 객실 점유율을 곱한 값과 동일하다. 가격과 점유율을 하나의 지표로 결합해 숙소가 객실 재고를 얼마나 효과적으로 수익화하는지를 측정한다.",
+    "longDef": "RevPAR = Room Revenue / Rooms Available = ADR x Occupancy Rate. Because it uses available rooms (not just sold rooms) as the denominator, RevPAR reflects both rate achievement and how full the hotel is, making it the headline metric for comparing properties and tracking revenue management performance. A related metric, TRevPAR (Total Revenue Per Available Room), extends the numerator to all revenue (F&B, spa, etc.), and GOPPAR measures gross operating profit per available room.",
+    "longDef_ko": "RevPAR = 객실 매출 / 가용 객실 수 = ADR x 객실 점유율. 분모로 판매 객실이 아닌 가용 객실을 사용하므로, RevPAR은 요금 달성도와 호텔이 얼마나 찼는지를 모두 반영하여 숙소 비교와 수익 관리 성과 추적의 대표 지표가 된다. 관련 지표로 TRevPAR(Total Revenue Per Available Room)은 분자를 모든 매출(F&B, 스파 등)로 확장하며, GOPPAR은 가용 객실당 총영업이익을 측정한다.",
+    "standardBody": "",
+    "providerTerms": [],
+    "relationships": [
+      {"type": "related", "targetTerm": "ADR"},
+      {"type": "related", "targetTerm": "Occupancy"}
+    ],
+    "distinctions": [
+      {"targetTerm": "ADR", "explanation": "RevPAR uses available rooms as the denominator and blends in occupancy; ADR uses only sold rooms and isolates price.", "explanation_ko": "RevPAR은 가용 객실을 분모로 사용해 점유율을 함께 반영하고, ADR은 판매 객실만 사용해 가격만 분리해 본다."},
+      {"targetTerm": "Occupancy", "explanation": "Occupancy rate is one of the two inputs to RevPAR (RevPAR = ADR x occupancy rate); on its own it ignores the rate achieved.", "explanation_ko": "객실 점유율은 RevPAR의 두 입력값 중 하나이며(RevPAR = ADR x 객실 점유율), 그 자체만으로는 달성된 요금을 반영하지 못한다."}
+    ],
+    "sources": [
+      {"name": "STR lodging performance metric definitions", "org": "STR (CoStar)", "version": "", "section": "", "url": ""},
+      {"name": "Uniform System of Accounts for the Lodging Industry (USALI)", "org": "AHLA / HFTP", "version": "", "section": "", "url": ""}
+    ]
+  },
+  {
+    "id": "bar",
+    "term": "BAR",
+    "term_ko": "최우량 가용 요금(BAR, Best Available Rate)",
+    "abbreviation": "BAR",
+    "aliases": ["Best Available Rate", "Best Available Retail Rate", "Best Unrestricted Rate"],
+    "category": "hotel-rate",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "Best Available Rate is the lowest publicly available, unrestricted retail rate a hotel offers for a given room type and date to the general public, with no advance-purchase or non-refundable restrictions. It is the benchmark or 'rack-replacement' rate that revenue management adjusts dynamically by date.",
+    "definition_ko": "BAR(Best Available Rate)은 호텔이 특정 객실 유형과 날짜에 대해 일반 대중에게 제공하는, 사전 구매나 환불 불가 제약이 없는 공개된 최저 무제약 소매 요금이다. 수익 관리 부서가 날짜별로 동적으로 조정하는 기준 요금, 즉 정찰가(rack rate)를 대체하는 요금이다.",
+    "longDef": "BAR is the reference public rate against which other rate plans (advance purchase, packages, corporate, member rates) are positioned, and it is often the rate to which rate parity commitments apply across distribution channels. BAR is typically dynamic, changing day-to-day with demand, and may be tiered (e.g. BAR1, BAR2) or layered with length-of-stay variants. It is a type of rate plan, not a performance average.",
+    "longDef_ko": "BAR은 다른 요금제(사전 구매, 패키지, 기업, 회원 요금)가 그에 맞춰 포지셔닝되는 기준 공개 요금이며, 유통 채널 전반에 걸친 rate parity 약정이 적용되는 요금인 경우가 많다. BAR은 보통 수요에 따라 매일 변하는 동적 요금이며, 등급화되거나(예: BAR1, BAR2) 숙박일수 변형과 함께 계층화될 수 있다. 이는 성과 평균이 아니라 요금제의 한 유형이다.",
+    "standardBody": "",
+    "providerTerms": [],
+    "relationships": [
+      {"type": "broader", "targetTerm": "Rate Plan"},
+      {"type": "related", "targetTerm": "Rate Parity"},
+      {"type": "related", "targetTerm": "ADR"}
+    ],
+    "distinctions": [
+      {"targetTerm": "Rate Plan", "explanation": "BAR is one specific kind of rate plan (the best unrestricted public one); Rate Plan is the general category covering all offers.", "explanation_ko": "BAR은 요금제의 한 특정 유형(제약 없는 최저 공개 요금)이고, 요금제는 모든 상품을 아우르는 일반 범주이다."},
+      {"targetTerm": "Rate Parity", "explanation": "BAR is the rate itself; rate parity is the policy that this rate be consistent across channels.", "explanation_ko": "BAR은 요금 그 자체이고, rate parity는 이 요금이 채널 전반에서 일관되게 유지되도록 하는 정책이다."},
+      {"targetTerm": "ADR", "explanation": "BAR is a published forward selling price; ADR is a realized average of prices actually achieved.", "explanation_ko": "BAR은 게시된 미래 판매 가격이고, ADR은 실제로 달성된 가격의 실현 평균이다."}
+    ],
+    "sources": [
+      {"name": "Industry revenue management and hotel distribution commentary on Best Available Rate", "org": "", "version": "", "section": "", "url": ""}
+    ]
+  },
+  {
+    "id": "allotment",
+    "term": "Allotment",
+    "term_ko": "객실 할당량(Allotment)",
+    "abbreviation": "",
+    "aliases": ["Room Allocation", "Inventory Allocation", "Contracted Allotment"],
+    "category": "hotel-rate",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "A block of room inventory that a hotel pre-assigns to a specific distribution partner, channel, group, or contract for a defined period, allowing that partner to sell those rooms up to the allotted quantity without checking real-time availability for each booking. Unsold rooms are typically released back to the hotel by a contracted release (cut-off) date.",
+    "definition_ko": "호텔이 특정 유통 파트너, 채널, 단체, 계약에 일정 기간 동안 미리 배정하는 객실 재고 블록으로, 해당 파트너가 예약마다 실시간 가용 여부를 확인하지 않고도 할당된 수량까지 객실을 판매할 수 있게 한다. 판매되지 않은 객실은 보통 계약상 반환(cut-off) 일자에 호텔로 반환된다.",
+    "longDef": "Allotments are central to contracted distribution (tour operators, bedbanks, group blocks, corporate accounts). They are governed by terms such as the allotment size per date, the release period, and whether sales are on allotment, on request, or free sale. When a partner can sell beyond or without a fixed allotment subject to availability, the arrangement is often called free sale. Allotment management is handled in CRS/PMS and channel managers via ARI updates.",
+    "longDef_ko": "Allotment는 계약 기반 유통(투어 오퍼레이터, 베드뱅크, 단체 블록, 기업 계정)의 핵심이다. 날짜별 할당 규모, 반환 기간, 판매 방식이 allotment 기반인지 요청형(on request)인지 free sale인지 등의 조건으로 관리된다. 파트너가 고정 할당량을 초과하거나 고정 할당량 없이 가용 여부에 따라 판매할 수 있는 경우, 이를 흔히 free sale이라 부른다. Allotment 관리는 ARI 업데이트를 통해 CRS/PMS와 채널 매니저에서 처리된다.",
+    "standardBody": "",
+    "providerTerms": [],
+    "relationships": [
+      {"type": "related", "targetTerm": "Free Sale"},
+      {"type": "related", "targetTerm": "Bedbank"},
+      {"type": "related", "targetTerm": "ARI"},
+      {"type": "related", "targetTerm": "Room Type"},
+      {"type": "related", "targetTerm": "Channel Manager"}
+    ],
+    "distinctions": [
+      {"targetTerm": "Free Sale", "explanation": "An allotment is a fixed pre-assigned block with a release date; free sale lets a partner sell without a fixed block, relying on real-time availability.", "explanation_ko": "Allotment는 반환 일자가 있는 고정 사전 배정 블록이고, free sale은 고정 블록 없이 실시간 가용 여부에 의존해 파트너가 판매하도록 한다."}
+    ],
+    "sources": [
+      {"name": "OpenTravel Specification (Hotel inventory and allocation messages)", "org": "OpenTravel Alliance", "version": "", "section": "", "url": ""},
+      {"name": "HTNG inventory distribution specifications", "org": "HTNG", "version": "", "section": "", "url": ""}
+    ]
+  },
+  {
+    "id": "rate-parity",
+    "term": "Rate Parity",
+    "term_ko": "요금 동등성(Rate Parity)",
+    "abbreviation": "",
+    "aliases": ["Price Parity", "Rate Parity Agreement", "Most Favoured Nation (rate clause)"],
+    "category": "hotel-rate",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "Rate parity is the practice or contractual commitment of maintaining consistent rates (and often availability/conditions) for the same room type and dates across distribution channels, so that, for example, an OTA does not show a different public rate than the hotel's own website. It is frequently enforced through parity clauses in distribution contracts.",
+    "definition_ko": "Rate parity는 동일한 객실 유형과 날짜에 대해 유통 채널 전반에서 일관된 요금(그리고 흔히 가용 여부·조건)을 유지하는 관행 또는 계약상 약정으로, 예를 들어 OTA가 호텔 자체 웹사이트와 다른 공개 요금을 표시하지 않도록 한다. 유통 계약의 parity 조항을 통해 시행되는 경우가 많다.",
+    "longDef": "Rate parity typically applies to public/BAR-type rates and aims to prevent channel undercutting. Clauses range from 'wide parity' (parity required across all channels including direct) to 'narrow parity' (parity only relative to the hotel's own direct channels). Such clauses have faced regulatory and competition-law scrutiny in several jurisdictions, leading to restrictions or bans on wide parity, so the term's applicability varies by market.",
+    "longDef_ko": "Rate parity는 일반적으로 공개 요금/BAR 유형 요금에 적용되며 채널 간 가격 후려치기를 방지하는 것을 목표로 한다. 조항은 '광의 parity'(직판을 포함한 모든 채널에서 동등성 요구)부터 '협의 parity'(호텔 자체 직판 채널에 대해서만 동등성 요구)까지 다양하다. 이러한 조항은 여러 관할권에서 규제 및 경쟁법상 검토를 받아 광의 parity에 대한 제한이나 금지로 이어졌으므로, 이 용어의 적용 가능성은 시장마다 다르다.",
+    "standardBody": "",
+    "providerTerms": [],
+    "relationships": [
+      {"type": "related", "targetTerm": "BAR"},
+      {"type": "related", "targetTerm": "OTA (Online Travel Agency)"},
+      {"type": "related", "targetTerm": "Rate Plan"},
+      {"type": "related", "targetTerm": "Channel Manager"}
+    ],
+    "distinctions": [
+      {"targetTerm": "BAR", "explanation": "BAR is the actual best public rate; rate parity is the policy that this rate stays consistent across channels.", "explanation_ko": "BAR은 실제 최저 공개 요금이고, rate parity는 이 요금이 채널 전반에서 일관되게 유지되도록 하는 정책이다."}
+    ],
+    "sources": [
+      {"name": "Industry distribution and competition-law commentary on hotel rate parity", "org": "", "version": "", "section": "", "url": ""}
+    ]
+  },
+  {
+    "id": "length-of-stay",
+    "term": "Length of Stay",
+    "term_ko": "숙박일수(LOS, Length of Stay)",
+    "abbreviation": "LOS",
+    "aliases": ["LOS", "Stay Length", "Minimum Length of Stay", "Maximum Length of Stay"],
+    "category": "hotel-rate",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "Length of Stay is the number of nights of a hotel booking, and as a rate control it refers to restrictions tied to that duration — most commonly Minimum Length of Stay (MinLOS) and Maximum Length of Stay (MaxLOS) — used to qualify or block availability for a rate plan on specific dates. Related controls include length-of-stay-based pricing and arrival-day restrictions.",
+    "definition_ko": "LOS(Length of Stay)는 호텔 예약의 숙박 일수를 의미하며, 요금 통제 수단으로서는 그 기간에 연동된 제약(가장 흔히 최소 숙박일수(MinLOS)와 최대 숙박일수(MaxLOS))을 가리킨다. 이는 특정 날짜에 요금제의 가용 여부를 한정하거나 차단하는 데 사용된다. 관련 통제로는 숙박일수 기반 가격 산정과 도착일 제약이 있다.",
+    "longDef": "Revenue managers use LOS restrictions to shape demand: a MinLOS requires guests to book at least N nights to be eligible (or to receive a rate) on a given arrival date, while MaxLOS caps the bookable duration. Variants include MinLOS Through and Closed to Arrival (CTA) / Closed to Departure (CTD), which interact with stay-through logic. LOS controls are distributed as restriction attributes alongside rates and availability in CRS, channel managers, and ARI/OpenTravel messages.",
+    "longDef_ko": "수익 관리자는 수요를 조정하기 위해 LOS 제약을 사용한다. MinLOS는 특정 도착일에 자격을 얻거나(또는 해당 요금을 받기) 위해 투숙객이 최소 N박을 예약하도록 요구하고, MaxLOS는 예약 가능한 기간에 상한을 둔다. 변형으로는 stay-through 로직과 상호작용하는 MinLOS Through, Closed to Arrival(CTA) / Closed to Departure(CTD)가 있다. LOS 통제는 CRS, 채널 매니저, ARI/OpenTravel 메시지에서 요금 및 가용 정보와 함께 제약 속성으로 유통된다.",
+    "standardBody": "OpenTravel Alliance",
+    "providerTerms": [],
+    "relationships": [
+      {"type": "related", "targetTerm": "Rate Plan"},
+      {"type": "related", "targetTerm": "ARI"},
+      {"type": "related", "targetTerm": "BAR"}
+    ],
+    "distinctions": [
+      {"targetTerm": "Rate Plan", "explanation": "Length of Stay is a restriction/control that can gate a rate plan; the rate plan is the broader offer that the LOS rule conditions.", "explanation_ko": "숙박일수는 요금제를 제한할 수 있는 제약/통제이고, 요금제는 LOS 규칙이 조건을 거는 더 넓은 범위의 상품이다."}
+    ],
+    "sources": [
+      {"name": "OpenTravel Specification (Hotel availability and restriction messages, length of stay)", "org": "OpenTravel Alliance", "version": "", "section": "", "url": ""},
+      {"name": "HTNG ARI messaging specifications", "org": "HTNG", "version": "", "section": "", "url": ""}
+    ]
+  }
+]

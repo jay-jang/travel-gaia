@@ -1,0 +1,17 @@
+```
+[쟁점1 결론] 카테고리 최종 목록: Air-Operations & Reservation, Air-Shopping & Pricing, Hotel-Inventory & Rates, Hotel-Distribution & Booking, Identifiers & Codes, Payments & Settlement, Order & Post-Booking, Industry Standards, General Travel & Tour (총 9개)
+[쟁점2 결론] 검색 방식: 네이티브 JS 기반의 가중치 토큰 매칭 직접 구현 (이유: 의존성 0 및 단일 파일 배포 제약을 완벽히 준수하고, MVP 스케일의 용어 수(90개 이하)에서는 외부 라이브러리 없이 수십 줄의 간단한 JS 코드로도 충분히 빠르고 가벼운 fuzzy 효과를 낼 수 있기 때문)
+[쟁점3 결론] 최종 스키마: 필드 = 설명
+- id = 용어 고유 식별자 (kebab-case)
+- term = 표준 용어명
+- abbreviation = 약어 (선택 사항)
+- definition = 용어의 상세 정의
+- category = 쟁점1에서 확정된 카테고리 중 하나
+- conceptType = 개념의 성격 분류 (Business / Technical / Standard)
+- status = 용어의 현재 상태 (active / deprecated / ambiguous)
+- providerTerms = 외부/파트너사 대응어 목록 (객체 배열: term, context, relationship)
+- relationships = 내부 용어 간 관계 정의 목록 (객체 배열: type, targetId)
+- sources = 출처 정보 (객체 배열: sourceBody, version, section)
+- lastReviewed = 최종 검토일 (YYYY-MM-DD)
+[한줄 총평] 극단적인 단순성과 Standalone 배포라는 제약 속에서 핵심 데이터 구조를 정교화하여, 유지보수가 쉬우면서도 강력한 도메인 사전을 구축할 수 있게 되었습니다.
+```

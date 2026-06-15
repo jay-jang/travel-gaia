@@ -1,0 +1,206 @@
+1. **도메인 커버리지 비평**
+
+전체 방향은 좋지만 “여행 데이터 레퍼런스”라면 현재 분류는 항공 중심이고, 유통/숙박/정산은 조금 얇습니다.
+
+보완할 영역:
+
+- **Air-Operations / Schedule**
+  - flight, leg, segment, married segment, connection, MCT, schedule change, disruption, irregular operation, operating carrier, marketing carrier
+  - `leg/segment`는 Air-Interlining보다 여기 또는 Air-Reservation 쪽이 더 자연스럽습니다.
+
+- **Availability / Inventory**
+  - availability, inventory, allotment, class status, waitlist, overbooking, married availability
+  - 항공 fare와 reservation 사이의 핵심 중간 계층입니다.
+
+- **Shopping / Pricing**
+  - offer, itinerary, journey, origin-destination, fare component, tax, surcharge, validating carrier, pricing unit
+  - NDC와 기존 GDS 모두를 연결하는 핵심 영역입니다.
+
+- **Order / Post-booking**
+  - order, booking, cancellation, refund, exchange, reissue, void, split PNR, name change
+  - NDC/ONE Order와 기존 PNR/e-ticket 세계를 비교하려면 별도 축이 필요합니다.
+
+- **Hotel-Distribution**
+  - CRS, PMS, RMS, channel manager, rate plan, room type, room rate, restriction, cancellation policy, guarantee policy
+  - Hotel 안에 다 넣기보다 `Hotel Inventory`, `Hotel Rate`, `Hotel Distribution` 정도로 나누는 편이 좋습니다.
+
+- **Payments / Settlement**
+  - payment method, merchant of record, agency model, merchant model, virtual card, chargeback, refund, reconciliation
+  - BSP/ARC만 있으면 항공 정산에 치우칩니다.
+
+- **Identifiers / Codes**
+  - IATA, ICAO, UN/LOCODE, ISO country/currency/language, hotel ID, property ID, chain code, pseudo city code
+  - Air-Codes보다 범용 `Identifiers & Codes`가 좋습니다.
+
+합치거나 조정할 것:
+
+- `Air-Codes`는 항공만이 아니라 전체 산업 코드 체계로 확장 권장.
+- `Ancillary/Other`는 너무 넓습니다. `Ancillary`, `Ground Transport`, `Insurance`, `Cruise/Rail` 등으로 분리하거나 MVP에서는 Ancillary만 남기는 게 낫습니다.
+- `Distribution`의 OTA는 혼동 위험이 큽니다. `OTA = Online Travel Agency`와 `OpenTravel Alliance = OTA spec`은 반드시 별도 표제어로 분리해야 합니다.
+
+---
+
+2. **데이터 모델 개선점**
+
+현재 모델은 시작점으로 충분하지만, “동의어”와 “공급자별 의미 차이”를 더 엄격히 분리하는 게 중요합니다.
+
+권장 구조:
+
+```js
+{
+  id,
+  canonicalTerm,
+  category,
+  status: "active | deprecated | ambiguous",
+  shortDef,
+  longDef,
+  conceptType: "entity | process | code | document | role | metric",
+
+  aliases: [
+    { term, type: "synonym | abbreviation | legacy | spelling", locale, note }
+  ],
+
+  providerTerms: [
+    {
+      provider: "IATA",
+      term: "Order",
+      sourceRef: "IATA NDC 21.3",
+      relationship: "same | narrower | broader | related | conflicting",
+      note
+    }
+  ],
+
+  distinctions: [
+    {
+      from: "segment",
+      to: "leg",
+      explanation: "..."
+    }
+  ],
+
+  related: [
+    { id, relation: "see_also | part_of | replaces | contrasts_with | used_in" }
+  ],
+
+  sources: [
+    { title, organization, version, url, section, confidence }
+  ],
+
+  lastReviewed,
+  reviewer
+}
+```
+
+핵심 개선점:
+
+- `aliases`는 단순 별칭만.
+- `providerTerms`는 “같은 말”이라고 단정하지 말고 `same/narrower/broader/conflicting` 관계를 둬야 합니다.
+- `source`는 문자열 하나보다 배열이 낫습니다.
+- `related`도 단순 id 배열보다 관계 타입이 있어야 wiki 품질이 올라갑니다.
+- `status`가 필요합니다. 여행 용어는 deprecated/legacy 표현이 많습니다.
+- `distinctions`가 중요합니다. 이 서비스의 가치가 “정의”보다 “헷갈리는 개념 구분”에 있기 때문입니다.
+
+---
+
+3. **Standalone 단일 HTML 접근의 함정과 권고**
+
+단일 HTML은 MVP와 배포성 면에서 매우 좋습니다. 다만 아래를 조심해야 합니다.
+
+- **파일 크기**
+  - 수천 개 표제어까지는 문제 없습니다.
+  - 이미지/대형 원문/긴 spec 발췌를 넣으면 급격히 무거워집니다.
+  - 권고: JSON은 압축 가능한 구조로 두고, 원문 전문은 넣지 말고 요약+출처 링크만 둡니다.
+
+- **검색 UX**
+  - 단순 substring 검색은 금방 한계가 옵니다.
+  - 권고: term, alias, provider term, category, shortDef에 가중치를 둔 검색 인덱스를 빌드 시 생성해 HTML 안에 포함.
+  - 오타 대응까지 원하면 Fuse.js 같은 라이브러리가 편하지만, “의존성 0”이면 간단한 token index를 직접 구현.
+
+- **접근성**
+  - 좌측 네비/본문 구조는 키보드 탐색, heading 구조, focus 상태가 중요합니다.
+  - 권고: URL hash 기반 라우팅, `<main>`, `<nav>`, `<article>`, heading 계층, 검색 input label 제공.
+
+- **오프라인 동작**
+  - 외부 CDN, 웹폰트, remote image를 쓰면 안 됩니다.
+  - 권고: CSS/JS/JSON 모두 인라인. 복사 배포 가능한 진짜 단일 파일 유지.
+
+- **버전 관리**
+  - HTML만 있으면 데이터 diff가 어렵습니다.
+  - 권고: 소스는 `terms/*.json` 또는 `terms.yaml`로 관리하고, 배포물만 `index.html`로 빌드.
+
+- **확장성**
+  - 단일 HTML은 읽기 전용 wiki에는 적합합니다.
+  - 편집/검수/승인 workflow까지 넣을 생각이면 별도 authoring pipeline이 필요합니다.
+
+---
+
+4. **반드시 포함할 핵심 표제어 20개**
+
+1. PNR  
+2. Segment  
+3. Leg  
+4. Journey  
+5. Origin-Destination  
+6. Booking Class / RBD  
+7. Fare Basis  
+8. Fare Family / Branded Fare  
+9. Ticket  
+10. E-ticket Coupon  
+11. EMD  
+12. Reissue  
+13. Refund  
+14. Codeshare  
+15. Interline  
+16. NDC Offer  
+17. NDC Order  
+18. OTA  
+19. Rate Plan  
+20. Room Type  
+
+추가 후보로는 `BSP`, `ARC`, `SSR`, `OSI`, `APIS`, `MCT`, `Availability`, `Inventory`, `BAR`, `RevPAR`, `Channel Manager`, `Merchant of Record`가 중요합니다.
+
+---
+
+5. **정확성 리스크 줄이는 방법**
+
+가장 중요한 원칙은 “LLM이 정의를 생성하지 않고, 출처 기반 초안을 정리하게 하는 것”입니다.
+
+권고:
+
+- **출처 필수화**
+  - 모든 entry는 최소 1개 이상의 공식/준공식 source 필요.
+  - 예: IATA, ATPCO, OpenTravel, Amadeus/Sabre/Travelport docs, Booking.com/Expedia partner docs.
+
+- **source confidence 등급**
+  - `official_standard`
+  - `provider_doc`
+  - `industry_glossary`
+  - `secondary_article`
+  - `internal_interpretation`
+
+- **정의와 해석 분리**
+  - `definition`: 출처 기반 설명
+  - `notes`: 편집자의 해석
+  - `providerDifferences`: 공급자별 차이
+  - 이렇게 나누면 환각과 해석을 구분할 수 있습니다.
+
+- **충돌을 숨기지 않기**
+  - 같은 용어가 업체마다 다르면 하나로 억지 통일하지 말고 “충돌/범위 차이”로 기록해야 합니다.
+  - 특히 `booking`, `order`, `segment`, `room type`, `rate plan`, `OTA`는 충돌 가능성이 큽니다.
+
+- **리뷰 workflow**
+  - `draft -> reviewed -> approved -> deprecated`
+  - 각 entry에 `reviewer`, `lastReviewed`, `sourceVersion` 저장.
+
+- **LLM 사용 방식 제한**
+  - 허용: 요약, 비교표 생성, 중복 후보 탐지, 누락 표제어 추천
+  - 금지: 출처 없는 정의 생성, spec section 번호 상상, provider 용어 임의 매핑
+
+- **검증용 테스트**
+  - 모든 `related` id 존재 확인
+  - 모든 entry에 source 존재 확인
+  - provider term의 relationship 필수 확인
+  - deprecated term은 replacement 필요
+  - 동일 alias가 여러 canonical term에 붙으면 ambiguity 리포트 생성
+
+결론적으로, 제안한 설계는 MVP로 타당합니다. 다만 핵심 가치는 “용어 사전”보다 “공급자/표준 간 개념 매핑과 충돌 관리”에 있으므로, 데이터 모델에서 `same/narrower/broader/conflicting` 관계와 source/version 관리를 반드시 넣는 쪽을 권합니다.
