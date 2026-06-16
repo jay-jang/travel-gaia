@@ -1298,5 +1298,480 @@
       }
     ],
     "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"12\" width=\"32\" height=\"24\" rx=\"3\"/><path d=\"M14 24l4 4 8-8\"/><circle cx=\"32\" cy=\"24\" r=\"3\"/></svg>"
+  },
+  {
+    "id": "rfic-rfisc",
+    "term": "Reason for Issuance Code / Sub Code (RFIC / RFISC)",
+    "term_ko": "발행 사유 코드/세부 코드 (RFIC / RFISC)",
+    "abbreviation": "RFIC / RFISC",
+    "aliases": [
+      "Reason for Issuance Code",
+      "Reason for Issuance Sub Code",
+      "RFIC",
+      "RFISC",
+      "Optional Services Industry Sub Code"
+    ],
+    "category": "air-ticket",
+    "conceptType": "code",
+    "status": "active",
+    "definition": "Every EMD carries a one-character IATA Reason for Issuance Code (RFIC, groups A-G) that classifies the broad nature of the charge, plus a three-character Reason for Issuance Sub Code (RFISC) identifying the exact service. Together this code pair drives ancillary classification, fulfilment, settlement, and revenue accounting for non-flight charges.",
+    "definition_ko": "모든 EMD는 요금의 큰 분류를 나타내는 1자리 IATA 발행 사유 코드(RFIC, A~G 그룹)와 정확한 서비스를 식별하는 3자리 발행 사유 세부 코드(RFISC)를 함께 가진다. 이 코드 쌍은 부가 서비스의 분류, 이행, 정산 및 수익 회계를 결정한다.",
+    "longDef": "The RFIC is a single-byte code grouping the reason for issuing an EMD into broad industry categories - commonly A Air Transportation, B Surface Transportation / Non Air Services, C Baggage, D Financial Impact (e.g., booking/change fees, refundable balance), E Airport Services, F Merchandise, and G In-flight Services. Within each group, the RFISC is a three-character code naming the specific optional service. RFISC values are governed by ATPCO, which publishes the Optional Services Industry Sub Codes that any organization may use, while carriers may also file their own carrier-specific sub codes; certain industry-reserved sub codes (the 98x/99x range) are defined under IATA Passenger Services Conference resolutions (Resolution 722f). The RFIC/RFISC pair is what lets a paid bag, a seat, or a service fee be machine-classified and correctly settled through BSP/ARC, making it foundational to ancillary distribution under NDC and EMD processing.",
+    "longDef_ko": "RFIC는 EMD 발행 사유를 큰 산업 분류로 묶는 1바이트 코드로, 일반적으로 A 항공 운송, B 지상 운송/비항공 서비스, C 수하물, D 재무적 영향(예: 예약/변경 수수료, 환불 가능 잔액), E 공항 서비스, F 상품, G 기내 서비스로 구성된다. 각 그룹 내에서 RFISC는 특정 선택 서비스를 명명하는 3자리 코드이다. RFISC 값은 ATPCO가 관장하며, 누구나 사용할 수 있는 Optional Services Industry Sub Codes를 발행하는 한편 항공사는 자체 코드를 신고할 수도 있다. 일부 산업 예약 세부 코드(98x/99x 대역)는 IATA 여객서비스회의(PSC) 결의(Resolution 722f)로 정의된다. RFIC/RFISC 쌍은 유료 수하물, 좌석, 서비스 수수료가 기계적으로 분류되어 BSP/ARC를 통해 올바르게 정산되도록 하므로, NDC 환경의 부가 서비스 유통과 EMD 처리의 토대가 된다.",
+    "standardBody": "ATPCO",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "EMD"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Ancillary Service"
+      },
+      {
+        "type": "related",
+        "targetTerm": "ATPCO"
+      },
+      {
+        "type": "related",
+        "targetTerm": "NDC"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "EMD",
+        "explanation": "The EMD is the accountable document; the RFIC/RFISC is the code carried on the EMD that says which service it pays for and how it should be classified and settled.",
+        "explanation_ko": "EMD는 정산 가능한 서류이고, RFIC/RFISC는 그 EMD에 실려 어떤 서비스에 대한 것인지와 분류·정산 방식을 알려주는 코드이다."
+      },
+      {
+        "targetTerm": "Ancillary Service",
+        "explanation": "Ancillary Service is the product offered to the passenger; RFISC is the standardized code that names that product for distribution and accounting systems.",
+        "explanation_ko": "Ancillary Service는 승객에게 제공되는 상품이고, RFISC는 유통·회계 시스템에서 그 상품을 명명하는 표준 코드이다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "ATPCO",
+        "name": "Optional Services Industry Sub Codes",
+        "version": "",
+        "section": "",
+        "url": "https://www.atpco.net/resource/optional-services-industry-sub-codes"
+      },
+      {
+        "org": "ARC",
+        "name": "Electronic Miscellaneous Document (EMD) - RFIC/RFISC usage",
+        "version": "",
+        "section": "",
+        "url": "https://www2.arccorp.com/support-training/electronic-miscellaneous-document/"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"7\" y=\"14\" width=\"12\" height=\"20\" rx=\"2\"/><path d=\"M11 20h4M11 24h4M11 28h4\"/><rect x=\"29\" y=\"14\" width=\"12\" height=\"20\" rx=\"2\"/><path d=\"M33 20h4M33 24h4M33 28h4\"/><path d=\"M19 24h10\"/><circle cx=\"24\" cy=\"24\" r=\"1.5\" fill=\"currentColor\"/></svg>"
+  },
+  {
+    "id": "voluntary-changes-atpco-category-31",
+    "term": "Voluntary Changes (ATPCO Category 31)",
+    "term_ko": "자발적 변경 (ATPCO Category 31)",
+    "abbreviation": "Cat 31",
+    "aliases": [
+      "Category 31",
+      "Cat 31",
+      "ATPCO Category 31",
+      "Voluntary Changes"
+    ],
+    "category": "air-ticket",
+    "conceptType": "standard",
+    "status": "active",
+    "definition": "ATPCO Fare Rule Category 31 is the machine-readable rule set defining the conditions and applicable charges under which voluntary ticket changes are permitted. It is the data foundation enabling automated reissue and exchange of tickets across GDS and carrier systems.",
+    "definition_ko": "ATPCO 운임 규정 Category 31은 자발적 항공권 변경이 허용되는 조건과 적용 요금을 정의하는 기계 판독 가능 규정 집합이다. GDS 및 항공사 시스템 전반에서 자동화된 재발권·교환을 가능하게 하는 데이터 토대이다.",
+    "longDef": "Category 31 codes, for a given fare, whether voluntary changes are permitted, the change/penalty charges, the data needed to recalculate fare differences (additional collection or residual value), permitted itinerary changes, and the repricing method to apply. Automated exchange products (e.g., Sabre Automated Exchanges, Amadeus Ticket Changer, Travelport Automated Exchanges) read Category 31 to compute and guarantee a reissue without manual intervention; carriers may file waivers in Category 31 to authorize guaranteed automated transactions. Industry automation remains incomplete in part because of missing Category 31 data or undefined rules for reissuing taxes and fees. It is the standard underpinning the Reissue and Exchange concepts.",
+    "longDef_ko": "Category 31은 특정 운임에 대해 자발적 변경 허용 여부, 변경/위약 요금, 운임 차액(추가 징수 또는 잔여 가치) 재계산에 필요한 데이터, 허용되는 여정 변경, 적용할 재가격 산정 방식을 코드화한다. 자동 교환 제품(예: Sabre Automated Exchanges, Amadeus Ticket Changer, Travelport Automated Exchanges)은 Category 31을 읽어 수작업 없이 재발권을 계산하고 보장한다. 항공사는 Category 31에 면제(waiver)를 신고하여 보장된 자동 거래를 승인할 수 있다. 세금·수수료 재발권 규칙이 정의되지 않았거나 Category 31 데이터가 누락되어 산업 자동화는 여전히 불완전하다. 이는 Reissue 및 Exchange 개념을 뒷받침하는 표준이다.",
+    "standardBody": "ATPCO",
+    "providerTerms": [
+      {
+        "provider": "Amadeus",
+        "term": "Amadeus Ticket Changer (ATC)",
+        "context": "ATC Reissue computes automated voluntary reissues using ATPCO Category 31 rules.",
+        "context_ko": "ATC Reissue는 ATPCO Category 31 규정을 사용해 자동 자발적 재발권을 계산한다.",
+        "relationship": "related"
+      },
+      {
+        "provider": "Sabre",
+        "term": "Automated Exchanges",
+        "context": "Sabre Automated Exchanges reads Category 31 (and Cat 33 for refunds) to guarantee exchange transactions where waivers are filed.",
+        "context_ko": "Sabre Automated Exchanges는 면제가 신고된 경우 교환 거래를 보장하기 위해 Category 31(환불은 Cat 33)을 읽는다.",
+        "relationship": "related"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "ATPCO"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Reissue"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Exchange"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Fare Rule"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Voluntary Refunds (ATPCO Category 33)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Penalty Fee"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Voluntary Refunds (ATPCO Category 33)",
+        "explanation": "Category 31 governs voluntary changes (reissue/exchange of the ticket); Category 33 governs voluntary refunds (returning value). They are sibling automated categories with separate data and waivers.",
+        "explanation_ko": "Category 31은 자발적 변경(항공권 재발권/교환)을, Category 33은 자발적 환불(가치 반환)을 관장한다. 둘은 데이터와 면제가 분리된 형제 자동화 카테고리이다."
+      },
+      {
+        "targetTerm": "Reissue",
+        "explanation": "Reissue is the operational process of producing a new ticket; Category 31 is the underlying ATPCO rule data that tells systems whether and how that reissue may be priced.",
+        "explanation_ko": "Reissue는 새 항공권을 만들어내는 운영 절차이고, Category 31은 그 재발권이 가능한지와 어떻게 가격을 산정할지를 시스템에 알려주는 ATPCO 규정 데이터이다."
+      },
+      {
+        "targetTerm": "Involuntary Reissue",
+        "explanation": "Category 31 covers voluntary changes initiated by the passenger; involuntary reissues caused by airline schedule changes or IROPS are handled under separate policies and waivers, not Cat 31's voluntary penalty conditions.",
+        "explanation_ko": "Category 31은 승객이 시작한 자발적 변경을 다룬다. 항공사 스케줄 변경이나 IROPS로 인한 비자발적 재발권은 Cat 31의 자발적 위약 조건이 아니라 별도 정책·면제로 처리된다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "ATPCO",
+        "name": "What are ATPCO fare rules categories? (Cat 31 Voluntary Changes)",
+        "version": "",
+        "section": "",
+        "url": "https://atpco.net/single-blog/what-are-atpco-fare-rules-categories/"
+      },
+      {
+        "org": "Amadeus",
+        "name": "Amadeus Ticket Changer - automated voluntary reissue",
+        "version": "",
+        "section": "",
+        "url": "https://amadeus.com/documents/en/travel-industry/sales-sheet/amadeus-ticket-changer.pdf"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"8\" width=\"24\" height=\"32\" rx=\"3\"/><path d=\"M16 16h12M16 21h8\"/><path d=\"M37 26a6 6 0 0 0-10-3l-2 2\"/><polyline points=\"25 21 25 25 29 25\"/><path d=\"M27 34a6 6 0 0 0 10-3l2-2\"/><polyline points=\"39 31 39 27 35 27\"/></svg>"
+  },
+  {
+    "id": "voluntary-refunds-atpco-category-33",
+    "term": "Voluntary Refunds (ATPCO Category 33)",
+    "term_ko": "자발적 환불 (ATPCO Category 33)",
+    "abbreviation": "Cat 33",
+    "aliases": [
+      "Category 33",
+      "Cat 33",
+      "ATPCO Category 33",
+      "Voluntary Refunds"
+    ],
+    "category": "air-ticket",
+    "conceptType": "standard",
+    "status": "active",
+    "definition": "ATPCO Fare Rule Category 33 is the machine-readable rule set defining the conditions and applicable charges under which voluntary refunds of a ticket are permitted. It powers GDS and carrier automated refund products by letting systems compute refundable amounts and penalties without manual handling.",
+    "definition_ko": "ATPCO 운임 규정 Category 33은 항공권의 자발적 환불이 허용되는 조건과 적용 요금을 정의하는 기계 판독 가능 규정 집합이다. 시스템이 수작업 없이 환불 가능 금액과 위약금을 계산하게 하여 GDS 및 항공사 자동 환불 제품을 구동한다.",
+    "longDef": "Category 33 communicates, for a given fare, whether a full or partial voluntary refund is permitted, the cancellation/refund penalties, and the conditions for returning value to the passenger; the coded restrictions apply to the base fare, with taxes and fees handled separately. Automated refund products read Category 33 to determine and guarantee refund outcomes; carriers may file waivers in Category 33 (and General Rule 0) to authorize guaranteed automated refunds. Like Category 31, gaps in Category 33 data are a major reason refund automation is incomplete in some markets. It is the authoritative standard underpinning the generic Refund concept for voluntary cases.",
+    "longDef_ko": "Category 33은 특정 운임에 대해 전액 또는 부분 자발적 환불 허용 여부, 취소/환불 위약금, 승객에게 가치를 반환하는 조건을 전달한다. 코드화된 제한은 기본 운임에 적용되며 세금·수수료는 별도로 처리된다. 자동 환불 제품은 Category 33을 읽어 환불 결과를 결정하고 보장한다. 항공사는 Category 33(및 General Rule 0)에 면제를 신고하여 보장된 자동 환불을 승인할 수 있다. Category 31과 마찬가지로 Category 33 데이터의 공백은 일부 시장에서 환불 자동화가 불완전한 주요 원인이다. 자발적 환불에 대한 일반 Refund 개념을 뒷받침하는 권위 있는 표준이다.",
+    "standardBody": "ATPCO",
+    "providerTerms": [
+      {
+        "provider": "Sabre",
+        "term": "Automated Refunds",
+        "context": "Sabre Automated Refunds uses ATPCO Category 33 (with waivers in Category 33/General Rule 0) to guarantee refund transactions.",
+        "context_ko": "Sabre Automated Refunds는 ATPCO Category 33(Category 33/General Rule 0의 면제 포함)을 사용해 환불 거래를 보장한다.",
+        "relationship": "related"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "ATPCO"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Refund"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Fare Rule"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Voluntary Changes (ATPCO Category 31)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Penalty Fee"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Voluntary Changes (ATPCO Category 31)",
+        "explanation": "Category 33 governs voluntary refunds (returning value and cancelling travel); Category 31 governs voluntary changes (reissuing the ticket for new travel). They are separate sibling categories.",
+        "explanation_ko": "Category 33은 자발적 환불(가치 반환 및 여행 취소)을, Category 31은 자발적 변경(새 여행을 위한 재발권)을 관장한다. 둘은 분리된 형제 카테고리이다."
+      },
+      {
+        "targetTerm": "Refund",
+        "explanation": "Refund is the outcome of returning value to the passenger; Category 33 is the ATPCO rule data that machine-determines whether and how much of a voluntary refund is due.",
+        "explanation_ko": "Refund는 승객에게 가치를 반환하는 결과이고, Category 33은 자발적 환불이 가능한지와 금액을 기계적으로 결정하는 ATPCO 규정 데이터이다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "ATPCO",
+        "name": "What are ATPCO fare rules categories? (Cat 33 Voluntary Refunds)",
+        "version": "",
+        "section": "",
+        "url": "https://atpco.net/single-blog/what-are-atpco-fare-rules-categories/"
+      },
+      {
+        "org": "American Airlines",
+        "name": "ATPCO General Rule 0 - waivers filed in Cat 31/Cat 33",
+        "version": "",
+        "section": "",
+        "url": "https://saleslink.aa.com/en-US/resources/html/atpco-rule-0.html"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"8\" width=\"24\" height=\"32\" rx=\"3\"/><path d=\"M16 16h12M16 21h8\"/><path d=\"M37 30a6 6 0 1 1-2-4.6\"/><polyline points=\"37 24 37 28 33 28\"/><path d=\"M24 30v6M21.5 33.5l2.5 2.5 2.5-2.5\"/></svg>"
+  },
+  {
+    "id": "agency-credit-memo-acm",
+    "term": "Agency Credit Memo (ACM)",
+    "term_ko": "ACM (Agency Credit Memo, 대리점 대변 통지서)",
+    "abbreviation": "ACM",
+    "aliases": [
+      "Agency Credit Memo",
+      "Credit Memo"
+    ],
+    "category": "air-ticket",
+    "conceptType": "document",
+    "status": "active",
+    "definition": "An Agency Credit Memo (ACM) is the accounting notice an airline issues to credit a travel agent - for example to return over-collected fares, taxes, or commission, to process a passenger refund, or to resolve a successfully disputed Agency Debit Memo (ADM). It is processed through the BSP/ARC settlement systems as the mirror image of the ADM.",
+    "definition_ko": "ACM(Agency Credit Memo)은 항공사가 여행사(대리점)에게 대변(크레딧)을 제공하기 위해 발행하는 회계 통지서로, 과다 징수된 운임·세금·커미션 반환, 승객 환불 처리, 또는 이의가 인정된 ADM(Agency Debit Memo)의 해소 등에 사용된다. ADM의 대칭 문서로서 BSP/ARC 정산 시스템을 통해 처리된다.",
+    "longDef": "Whereas an ADM debits an agent for amounts owed to the airline, an ACM credits the agent for amounts the airline owes - commonly when commission was under-claimed, a fare or tax was over-collected, or a refund must be passed back to the agent for the passenger. ACMs are issued and settled through the BSP (via BSPlink) or ARC alongside ADMs under the IATA Passenger Agency Conference framework. A common use is the resolution path for a disputed ADM: when an agent successfully disputes an ADM, the airline cancels or offsets it by issuing an ACM.",
+    "longDef_ko": "ADM이 항공사에 지급해야 할 금액에 대해 대리점에 차변을 거는 것이라면, ACM은 항공사가 대리점에 지급해야 할 금액에 대해 대변을 제공한다. 커미션 과소 청구, 운임·세금 과다 징수, 또는 승객을 위한 환불을 대리점에 되돌려야 하는 경우가 흔하다. ACM은 IATA 여객대리점회의 체계 하에서 ADM과 함께 BSP(BSPlink 경유) 또는 ARC를 통해 발행·정산된다. 흔한 용도는 이의가 제기된 ADM의 해소 경로로, 대리점이 ADM 이의를 성공적으로 제기하면 항공사가 ACM을 발행하여 이를 취소하거나 상계한다.",
+    "standardBody": "IATA",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Agency Debit Memo (ADM)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "BSP"
+      },
+      {
+        "type": "related",
+        "targetTerm": "ARC"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Refund"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Remittance"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Agency Debit Memo (ADM)",
+        "explanation": "An ADM debits the agent for money owed to the airline; the ACM is its mirror image, crediting the agent for money the airline owes - and is the standard way a disputed ADM is resolved.",
+        "explanation_ko": "ADM은 항공사에 지급할 금액을 대리점에 차변으로 청구하고, ACM은 그 대칭으로 항공사가 지급할 금액을 대리점에 대변으로 제공하며, 이의가 인정된 ADM을 해소하는 표준 방식이다."
+      },
+      {
+        "targetTerm": "Refund",
+        "explanation": "A refund returns value for an unused ticket; an ACM is the back-office BSP/ARC credit document between airline and agent, which may be the vehicle for passing a refund or correction back to the agent.",
+        "explanation_ko": "Refund는 미사용 항공권의 가치를 돌려주는 것이고, ACM은 항공사와 대리점 사이의 후선 업무 BSP/ARC 대변 문서로, 환불이나 정정을 대리점에 전달하는 수단이 될 수 있다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "ANA",
+        "name": "Agency Debit Memo (ADM) / Agency Credit Memo (ACM) Policy",
+        "version": "",
+        "section": "",
+        "url": "https://www.ana.co.jp/businesspartners/en/admacm-policy/"
+      },
+      {
+        "org": "IATA",
+        "name": "Passenger Agency Conference Resolutions Manual",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"8\" width=\"28\" height=\"32\" rx=\"3\"/><line x1=\"16\" y1=\"16\" x2=\"32\" y2=\"16\"/><line x1=\"16\" y1=\"22\" x2=\"32\" y2=\"22\"/><circle cx=\"24\" cy=\"31\" r=\"5\"/><line x1=\"24\" y1=\"28\" x2=\"24\" y2=\"34\"/><line x1=\"21\" y1=\"31\" x2=\"27\" y2=\"31\"/></svg>"
+  },
+  {
+    "id": "interline-electronic-ticket-iet",
+    "term": "Interline Electronic Ticket (IET)",
+    "term_ko": "인터라인 전자항공권 (IET)",
+    "abbreviation": "IET",
+    "aliases": [
+      "Interline E-ticket",
+      "Interline Electronic Ticketing",
+      "IET"
+    ],
+    "category": "air-ticket",
+    "conceptType": "document",
+    "status": "active",
+    "definition": "An Interline Electronic Ticket (IET) is an IATA-standard electronic ticket whose coupons span the flights of two or more carriers, enabled by interline e-ticketing agreements between those carriers. It lets multiple airlines' segments sit on a single ticket and underpins interline coupon proration and settlement.",
+    "definition_ko": "Interline Electronic Ticket(IET)은 쿠폰이 둘 이상 항공사의 항공편에 걸쳐 있는 IATA 표준 전자항공권으로, 해당 항공사 간 인터라인 전자발권 협정에 의해 가능해진다. 여러 항공사의 구간을 하나의 항공권에 담을 수 있게 하며 인터라인 쿠폰 안분(proration)과 정산의 토대가 된다.",
+    "longDef": "Interline electronic ticketing requires that the validating/issuing carrier and each operating carrier have an active interline e-ticketing relationship - established by being a party to the IATA Multilateral Interline Traffic Agreement (MITA) and concurring with the other party, or via a bilateral interline traffic agreement; IATA publishes the parties that issue and accept each other's electronic tickets (including through MITA and Bilateral Interline E-Ticketing Agreements, BIETA). On an IET, each flight coupon names the operating carrier, allowing the journey to be flown across airlines and the revenue to be apportioned among them through proration and cleared via the IATA Clearing House. It contrasts with a single-carrier e-ticket where every coupon is on the validating carrier.",
+    "longDef_ko": "인터라인 전자발권은 발권/검증 항공사와 각 운항 항공사가 활성화된 인터라인 전자발권 관계를 가져야 하며, 이는 IATA 다자간 인터라인 운송 협정(MITA)의 당사자가 되어 상대방과 동의(concur)하거나 양자 인터라인 운송 협정을 통해 성립한다. IATA는 서로의 전자항공권을 발행·수용하는 당사자 목록을(MITA 및 양자 인터라인 전자발권 협정 BIETA 포함) 공시한다. IET에서는 각 Flight Coupon이 운항 항공사를 명시하여 여정이 여러 항공사에 걸쳐 운항되고, 그 수익이 proration을 통해 항공사 간에 배분되어 IATA Clearing House를 통해 청산된다. 모든 쿠폰이 검증 항공사에 속하는 단일 항공사 전자항공권과 대비된다.",
+    "standardBody": "IATA",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "E-ticket"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Interline"
+      },
+      {
+        "type": "related",
+        "targetTerm": "MITA"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Proration"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Validating Carrier"
+      },
+      {
+        "type": "related",
+        "targetTerm": "IATA Clearing House"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "E-ticket",
+        "explanation": "A plain e-ticket may have all coupons on one carrier; an IET is specifically an e-ticket whose coupons span multiple carriers and therefore requires interline e-ticketing agreements and proration.",
+        "explanation_ko": "일반 E-ticket은 모든 쿠폰이 한 항공사에 속할 수 있지만, IET은 쿠폰이 여러 항공사에 걸쳐 있는 전자항공권으로 인터라인 전자발권 협정과 proration을 필요로 한다."
+      },
+      {
+        "targetTerm": "MITA",
+        "explanation": "MITA is the multilateral agreement that makes interline e-ticketing possible; the IET is the actual ticket document issued under such agreements.",
+        "explanation_ko": "MITA는 인터라인 전자발권을 가능하게 하는 다자간 협정이고, IET은 그러한 협정 하에서 실제로 발행되는 항공권 서류이다."
+      },
+      {
+        "targetTerm": "Codeshare",
+        "explanation": "Codeshare is a commercial arrangement to sell another carrier's flight under one's own code; an IET is the ticketing/document layer that may carry segments across carriers regardless of whether they are codeshare.",
+        "explanation_ko": "Codeshare는 자사 코드로 타사 항공편을 판매하는 상업적 약정이고, IET은 코드셰어 여부와 무관하게 여러 항공사 구간을 담을 수 있는 발권/서류 계층이다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "IATA",
+        "name": "Multilateral & Bilateral Interline Traffic Agreements (MITA & BIETA)",
+        "version": "",
+        "section": "",
+        "url": "https://www.iata.org/en/publications/manuals/multilateral-interline-traffic-agreements/"
+      },
+      {
+        "org": "IATA",
+        "name": "Important changes to Multilateral Interline Traffic Agreements (MITA) - Interline E-ticketing FAQ",
+        "version": "",
+        "section": "",
+        "url": "https://www.iata.org/contentassets/e7a533819be440edbb1e49da96e0f2a8/webinar-important-changes-mita-faq.pdf"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"14\" width=\"36\" height=\"20\" rx=\"3\"/><line x1=\"24\" y1=\"14\" x2=\"24\" y2=\"34\" stroke-dasharray=\"3 3\"/><path d=\"M11 22l6 2-6 2v-1l3-1-3-1z\" fill=\"currentColor\" stroke=\"none\"/><path d=\"M31 22l6 2-6 2v-1l3-1-3-1z\" fill=\"currentColor\" stroke=\"none\"/><path d=\"M13 30h8M27 30h8\"/></svg>"
+  },
+  {
+    "id": "additional-collection-adc",
+    "term": "Additional Collection (ADC)",
+    "term_ko": "추가 징수 (ADC)",
+    "abbreviation": "ADC",
+    "aliases": [
+      "Add Collect",
+      "Additional Collection",
+      "ADC",
+      "NOADC"
+    ],
+    "category": "air-ticket",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "Additional Collection (ADC) is the difference-in-fare-and-tax amount collected from the passenger when a ticket is reissued or exchanged for a higher-value itinerary. When the new itinerary is equal or lower in value so that nothing is due, the transaction is shown as NOADC (no additional collection).",
+    "definition_ko": "Additional Collection(ADC)은 항공권이 더 높은 가치의 여정으로 재발권·교환될 때 승객으로부터 징수하는 운임·세금 차액이다. 새 여정의 가치가 같거나 낮아 징수할 금액이 없으면 거래는 NOADC(no additional collection, 추가 징수 없음)로 표시된다.",
+    "longDef": "In an exchange/reissue, systems compare the value of the original ticket against the new fare plus any applicable change penalty and tax differences. If the new total exceeds the original, the shortfall is the additional collection (ADC, also called add collect) charged to the passenger's form of payment; if the new total is zero against the credit, it is recorded as NOADC. ADC is the central output of every fare-difference exchange and the complement to Residual Value, which is what remains when the new document is worth less than the original.",
+    "longDef_ko": "교환/재발권에서 시스템은 원 항공권의 가치를 새 운임에 적용 가능한 변경 위약금과 세금 차액을 더한 값과 비교한다. 새 합계가 원 합계를 초과하면 그 부족분이 승객의 결제 수단에 청구되는 추가 징수액(ADC, add collect)이다. 크레딧 대비 새 합계가 0이면 NOADC로 기록된다. ADC는 모든 운임 차액 교환의 핵심 산출물이며, 새 서류가 원본보다 가치가 낮을 때 남는 Residual Value의 보완 개념이다.",
+    "standardBody": "",
+    "providerTerms": [
+      {
+        "provider": "Travelport",
+        "term": "Exchange Ticket with Add Collect",
+        "context": "Smartpoint's Ticket Assistant exchanges tickets with add collect by comparing the original ticket value to the stored fare and charging the difference.",
+        "context_ko": "Smartpoint의 Ticket Assistant는 원 항공권 가치를 저장 운임과 비교하여 차액을 청구하는 add collect 교환을 수행한다.",
+        "relationship": "same"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Reissue"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Exchange"
+      },
+      {
+        "type": "contrasts",
+        "targetTerm": "Residual Value"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Penalty Fee"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Form of Payment"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Residual Value",
+        "explanation": "ADC is collected when the new itinerary is worth more than the original (passenger pays the difference); Residual Value arises when the new itinerary is worth less (value is left over). They are the two opposite outcomes of an exchange.",
+        "explanation_ko": "ADC는 새 여정이 원본보다 가치가 높을 때 징수된다(승객이 차액을 지불). Residual Value는 새 여정이 더 낮을 때 가치가 남는 경우이다. 둘은 교환의 상반된 두 결과이다."
+      },
+      {
+        "targetTerm": "Penalty Fee",
+        "explanation": "A penalty fee is the change/cancellation charge defined by the fare rule; the ADC is the total amount actually collected, which typically includes the fare and tax difference plus that penalty.",
+        "explanation_ko": "Penalty Fee는 운임 규정이 정한 변경/취소 수수료이고, ADC는 실제로 징수되는 총액으로 보통 운임·세금 차액에 그 위약금을 더한 값이다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "Travelport",
+        "name": "Assisted Ticketing: Exchanging Tickets with Add Collect (ARC)",
+        "version": "",
+        "section": "",
+        "url": "https://support.travelport.com/webhelp/Smartpoint1G1V/Content/Air/Ticketing/TicketAssistant/TicketAssistant_VolChange_ExchTkt-AddCollect-ARC.htm"
+      },
+      {
+        "org": "Amadeus",
+        "name": "How to exchange an e-ticket (manual reissue) - NO ADC",
+        "version": "",
+        "section": "",
+        "url": "https://servicehub.amadeus.com/c/portal/view-solution/856106/"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"12\" width=\"20\" height=\"14\" rx=\"2\"/><path d=\"M12 19h12\"/><circle cx=\"34\" cy=\"30\" r=\"9\"/><path d=\"M34 26v8M30 30h8\"/></svg>"
   }
 ]

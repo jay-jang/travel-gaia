@@ -1174,5 +1174,491 @@
       }
     ],
     "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"10\" width=\"20\" height=\"30\" rx=\"2\"/><path d=\"M28 18h12v22H28\"/><path d=\"M13 16h4\"/><path d=\"M13 22h4\"/><path d=\"M13 28h4\"/><path d=\"M33 24h3\"/><path d=\"M33 30h3\"/><path d=\"M8 40h36\"/></svg>"
+  },
+  {
+    "id": "customer-data-platform",
+    "term": "Customer Data Platform",
+    "term_ko": "고객 데이터 플랫폼 (CDP)",
+    "abbreviation": "CDP",
+    "aliases": [
+      "CDP",
+      "Customer Data Platform (CDP)"
+    ],
+    "category": "customer",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "Packaged software that ingests and unifies first-party customer data from disparate operational systems — booking engines, PMS/CRS, loyalty, web/app, and marketing channels — into persistent, individual-level profiles that other systems can query for personalization. In travel retailing it powers real-time offers, segmentation, and consistent recognition of a traveler across touchpoints.",
+    "definition_ko": "예약 엔진, PMS/CRS, 로열티, 웹/앱, 마케팅 채널 등 서로 분리된 운영 시스템에서 1차(first-party) 고객 데이터를 수집·통합하여, 다른 시스템이 개인화를 위해 조회할 수 있는 지속적이고 개인 단위의 프로필로 만드는 패키지형 소프트웨어이다. 여행 리테일링에서는 실시간 제안(Offer), 세분화, 그리고 여러 접점에 걸친 일관된 여행자 인식을 구동한다.",
+    "longDef": "A CDP differs from a generic CRM or data warehouse by being purpose-built to resolve identity and assemble a unified profile from many sources, then activate that profile to downstream channels in real time. Airlines and hotels increasingly position a CDP at the center of their retailing stack so that an Offer Management System and personalization engines can act on a complete, consented view of the customer. The unified profile a CDP produces is typically realized as a Single Customer View, and CDPs must operate within consent rules captured by a Consent Management Platform. \"Composable\" CDPs implement the same capabilities directly over a cloud data warehouse rather than as a separate datastore.",
+    "longDef_ko": "CDP는 단순한 CRM이나 데이터 웨어하우스와 달리, 여러 출처로부터 신원을 해소(identity resolution)하고 통합 프로필을 구성한 뒤 이를 실시간으로 하위 채널에 활성화하도록 특화 설계된 점이 다르다. 항공사와 호텔은 CDP를 리테일링 스택의 중심에 두어, Offer Management System과 개인화 엔진이 동의를 받은 완전한 고객 뷰를 기반으로 작동하게 한다. CDP가 만들어내는 통합 프로필은 보통 Single Customer View로 구현되며, CDP는 Consent Management Platform이 수집한 동의 규칙 안에서 운영되어야 한다. '컴포저블(composable)' CDP는 별도 저장소가 아니라 클라우드 데이터 웨어하우스 위에서 동일한 기능을 직접 구현한다.",
+    "standardBody": "",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Customer Profile"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Single Customer View"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Offer"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Customer Profile",
+        "explanation": "A Customer Profile is the stored record of one traveler's data and preferences in a single system; a CDP is the platform that unifies many such records and source systems into one persistent profile and activates it to other channels.",
+        "explanation_ko": "Customer Profile은 한 시스템 내에 저장된 한 여행자의 데이터·선호도 기록이고, CDP는 그런 다수의 기록과 원천 시스템을 하나의 지속적 프로필로 통합하여 다른 채널로 활성화하는 플랫폼이다."
+      },
+      {
+        "targetTerm": "Single Customer View",
+        "explanation": "A Single Customer View is the unified golden-record output; a CDP is the software that produces and maintains that view and pushes it to operational systems.",
+        "explanation_ko": "Single Customer View는 통합된 골든 레코드라는 결과물이고, CDP는 그 뷰를 생성·유지하며 운영 시스템으로 전달하는 소프트웨어이다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "CDP for Travel and Hospitality",
+        "org": "Industry vendor guidance",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Composable CDPs for Travel: Personalizing Guest Experiences with AI",
+        "org": "Industry vendor guidance",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Iberia Powers Next-Level Airline Customer Experience with Real-Time Data and AI",
+        "org": "Iberia / vendor case study",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"10\" r=\"4\"/><circle cx=\"10\" cy=\"24\" r=\"4\"/><circle cx=\"10\" cy=\"38\" r=\"4\"/><path d=\"M14 10h8l6 14M14 24h14M14 38h8l6-14\"/><circle cx=\"34\" cy=\"24\" r=\"7\"/><path d=\"M31 24l2 2 4-4\"/></svg>"
+  },
+  {
+    "id": "single-customer-view",
+    "term": "Single Customer View",
+    "term_ko": "단일 고객 뷰 (SCV)",
+    "abbreviation": "SCV",
+    "aliases": [
+      "SCV",
+      "Single Customer View (SCV)",
+      "Golden Record",
+      "360-Degree Customer View"
+    ],
+    "category": "customer",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "A single, deduplicated, authoritative record per customer — the 'golden record' — assembled by matching and merging data about the same individual across every system a travel brand operates. It is the foundational deliverable of identity resolution and the unifying output a Customer Data Platform is built to produce.",
+    "definition_ko": "여행 브랜드가 운영하는 모든 시스템에 흩어진 동일 인물의 데이터를 매칭·병합하여 만든, 고객당 단일하고 중복이 제거된 권위 있는 레코드, 즉 '골든 레코드(golden record)'이다. 신원 해소(identity resolution)의 핵심 산출물이며, Customer Data Platform이 생성하도록 만들어진 통합 결과물이다.",
+    "longDef": "Building an SCV requires identity resolution: deterministic and/or probabilistic matching that links fragments such as bookings, loyalty accounts, web sessions, and contact details to one person despite varying email addresses, name spellings, or device identifiers. The resulting golden record reconciles conflicting attributes into a trusted set of values and survives across the brand's channels. An SCV is broader than a per-system Customer Profile because it spans all sources, and it is the data artifact that personalization, RFM Segmentation, and loyalty recognition all read from.",
+    "longDef_ko": "SCV 구축에는 신원 해소가 필요하다. 이메일 주소, 이름 표기, 기기 식별자가 달라도 예약, 로열티 계정, 웹 세션, 연락처 같은 조각들을 한 사람으로 연결하는 결정론적(deterministic) 및/또는 확률론적(probabilistic) 매칭이다. 그 결과 만들어진 골든 레코드는 상충하는 속성들을 신뢰할 수 있는 값으로 조정하며 브랜드의 모든 채널에 걸쳐 유지된다. SCV는 모든 출처를 아우르므로 시스템별 Customer Profile보다 넓으며, 개인화·RFM Segmentation·로열티 인식이 모두 참조하는 데이터 산출물이다.",
+    "standardBody": "",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Customer Data Platform"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Customer Profile"
+      },
+      {
+        "type": "related",
+        "targetTerm": "RFM Segmentation"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Customer Profile",
+        "explanation": "A Customer Profile is one system's stored view of a traveler and may be duplicated or partial; the Single Customer View is the de-duplicated golden record consolidating all such profiles into one authoritative identity.",
+        "explanation_ko": "Customer Profile은 한 시스템이 저장한 여행자 뷰로 중복되거나 일부일 수 있고, Single Customer View는 그런 모든 프로필을 하나의 권위 있는 신원으로 통합한 중복 제거된 골든 레코드이다."
+      },
+      {
+        "targetTerm": "Customer Data Platform",
+        "explanation": "The SCV is the unified record (the 'what'); the CDP is the software that creates and activates it (the 'how').",
+        "explanation_ko": "SCV는 통합된 레코드(무엇)이고, CDP는 그것을 생성·활성화하는 소프트웨어(어떻게)이다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Single Customer View (SCV): What It Is & How to Build One",
+        "org": "Industry vendor guidance",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "What is Identity Resolution?",
+        "org": "Industry vendor guidance",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"15\" cy=\"15\" r=\"6\"/><circle cx=\"33\" cy=\"15\" r=\"6\"/><path d=\"M15 21c-4 0-8 3-8 8M33 21c4 0 8 3 8 8\"/><circle cx=\"24\" cy=\"34\" r=\"8\"/><path d=\"M20.5 34l2.5 2.5 4.5-5\"/></svg>"
+  },
+  {
+    "id": "status-match",
+    "term": "Status Match",
+    "term_ko": "스테이터스 매치 (등급 매칭)",
+    "abbreviation": "",
+    "aliases": [
+      "Status Match",
+      "Tier Match",
+      "Status Challenge"
+    ],
+    "category": "customer",
+    "conceptType": "process",
+    "status": "active",
+    "definition": "A loyalty-acquisition mechanism in which an airline or hotel program grants a member of a competing program an equivalent elite tier, on proof of their existing status, in order to win the customer's business. Matches are frequently time-limited and may convert into a 'status challenge' requiring qualifying activity to retain the tier.",
+    "definition_ko": "항공사나 호텔 프로그램이 고객을 유치하기 위해, 경쟁 프로그램 회원이 기존 등급을 증빙하면 그에 상응하는 우수(elite) 등급을 부여하는 로열티 획득 메커니즘이다. 매치는 흔히 기간이 제한되며, 등급 유지를 위해 자격 산정 활동을 요구하는 '스테이터스 챌린지(status challenge)'로 전환될 수 있다.",
+    "longDef": "Status matches are a widely used competitive practice across airline and hotel loyalty programs: a member submits evidence of their tier in a rival program (membership card, statement, or screenshot), and the receiving program issues a comparable Loyalty Tier Status immediately or after a short verification. Many programs pair the match with a challenge, granting provisional status that becomes permanent only if the member completes a defined number of stays, flights, or qualifying spend within a window. Status matches affect tier standing only; they do not transfer redeemable points or miles between programs, which is the domain of a Transfer Partner relationship.",
+    "longDef_ko": "스테이터스 매치는 항공·호텔 로열티 프로그램 전반에서 널리 쓰이는 경쟁 관행이다. 회원이 경쟁 프로그램에서의 등급 증빙(회원 카드, 명세서, 스크린샷)을 제출하면, 받는 프로그램이 즉시 또는 짧은 검증을 거쳐 상응하는 Loyalty Tier Status를 부여한다. 많은 프로그램은 매치에 챌린지를 결합하여, 정해진 기간 내에 일정 횟수의 숙박·탑승 또는 자격 지출을 완료해야만 영구화되는 잠정 등급을 부여한다. 스테이터스 매치는 등급 위상에만 영향을 주며, 프로그램 간 사용 가능한 포인트·마일을 이전하지는 않는다. 그것은 Transfer Partner 관계의 영역이다.",
+    "standardBody": "",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Loyalty Tier Status"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Frequent Flyer Program"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Transfer Partner"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Loyalty Tier Status",
+        "explanation": "Loyalty Tier Status is the earned standing within one program; a Status Match is the acquisition mechanism by which a rival program grants an equivalent tier without the usual qualifying activity.",
+        "explanation_ko": "Loyalty Tier Status는 한 프로그램 내에서 획득한 위상이고, Status Match는 경쟁 프로그램이 통상적 자격 산정 활동 없이 상응 등급을 부여하는 획득 메커니즘이다."
+      },
+      {
+        "targetTerm": "Transfer Partner",
+        "explanation": "A Status Match moves elite tier recognition between programs; a Transfer Partner relationship moves redeemable points/miles between programs at a defined ratio.",
+        "explanation_ko": "Status Match는 우수 등급 인정을 프로그램 간에 이동시키고, Transfer Partner 관계는 사용 가능한 포인트·마일을 정해진 비율로 프로그램 간에 이동시킨다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Looking for an airline status match? Our guide in 2026",
+        "org": "Travel loyalty media",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Hotel Loyalty Program Status Matches & Challenges [2026 Guide]",
+        "org": "Travel loyalty media",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Elite Status with WorldHotels Rewards (Status Match)",
+        "org": "WorldHotels Rewards",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M13 9l3 5 5 1-4 4 1 5-5-3-5 3 1-5-4-4 5-1z\"/><path d=\"M35 9l3 5 5 1-4 4 1 5-5-3\"/><path d=\"M20 28h8M20 28l3-3M28 28l-3 3\"/><path d=\"M28 37h-8M28 37l-3 3M20 37l3-3\"/></svg>"
+  },
+  {
+    "id": "transfer-partner",
+    "term": "Transfer Partner",
+    "term_ko": "포인트 전환 파트너 (Transfer Partner)",
+    "abbreviation": "",
+    "aliases": [
+      "Transfer Partner",
+      "Points Transfer Partner",
+      "Airline Transfer Partner"
+    ],
+    "category": "customer",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "A loyalty or financial program with which a points/miles currency holder has an affiliation allowing balances to be moved into the partner's program at a defined transfer ratio. Bank/credit-card rewards programs, airline frequent-flyer programs, and hotel programs link as transfer partners to make their currencies interchangeable.",
+    "definition_ko": "포인트·마일 통화 보유자가 정해진 전환 비율로 잔액을 상대 프로그램으로 이동시킬 수 있도록 제휴 관계를 맺은 로열티 또는 금융 프로그램이다. 은행/신용카드 리워드 프로그램, 항공사 FFP, 호텔 프로그램이 서로 transfer partner로 연결되어 각자의 통화를 호환 가능하게 만든다.",
+    "longDef": "Transfer partnerships are the core plumbing of coalition loyalty and transferable-points strategies: a member converts a flexible bank-points balance into airline miles or hotel points, often at 1:1 but sometimes at less favorable ratios, and occasionally with transfer bonuses. Transfers are typically one-directional (e.g. cards to airlines, not back) and may take minutes to days to post. This convertibility increases the redemption value and Mileage Accrual paths available to a member, while the unredeemed balances and projected transfers feed into a program's Breakage and liability estimates. Transfer relationships move spendable currency, distinct from a Status Match, which moves only tier recognition.",
+    "longDef_ko": "전환 파트너십은 연합(coalition) 로열티와 전환 가능 포인트 전략의 핵심 배관이다. 회원은 유연한 은행 포인트 잔액을 항공 마일이나 호텔 포인트로 전환하는데, 흔히 1:1이지만 더 불리한 비율일 때도 있고 때때로 전환 보너스가 붙는다. 전환은 보통 단방향(예: 카드→항공, 역방향 불가)이며 적립까지 수 분에서 수 일이 걸릴 수 있다. 이 호환성은 회원이 이용할 수 있는 상환 가치와 Mileage Accrual 경로를 늘리며, 미상환 잔액과 예상 전환은 프로그램의 Breakage 및 부채 추정에 반영된다. 전환 관계는 사용 가능한 통화를 이동시키므로, 등급 인정만 이동시키는 Status Match와 구별된다.",
+    "standardBody": "",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Frequent Flyer Program"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Mileage Accrual"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Award Redemption"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Status Match"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Breakage"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Mileage Accrual",
+        "explanation": "Mileage Accrual is earning miles from a member's own flying or spend; a transfer from a Transfer Partner adds miles by converting a balance held in a different program's currency.",
+        "explanation_ko": "Mileage Accrual은 회원 자신의 탑승·지출로 마일을 적립하는 것이고, Transfer Partner로부터의 전환은 다른 프로그램 통화로 보유한 잔액을 변환하여 마일을 더하는 것이다."
+      },
+      {
+        "targetTerm": "Status Match",
+        "explanation": "A Transfer Partner moves redeemable points/miles between programs; a Status Match moves elite tier recognition, not currency.",
+        "explanation_ko": "Transfer Partner는 상환 가능한 포인트·마일을 프로그램 간에 이동시키고, Status Match는 통화가 아니라 우수 등급 인정을 이동시킨다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Credit card transfer partners: Guide to transferring points and miles to airlines and hotels",
+        "org": "The Points Guy",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Why all travelers should earn transferable credit card points",
+        "org": "The Points Guy",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Credit Card Transfer Partners At a Glance",
+        "org": "NerdWallet",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"13\" cy=\"14\" r=\"7\"/><circle cx=\"35\" cy=\"34\" r=\"7\"/><path d=\"M22 14h13l-3-3M22 14h13l-3 3\"/><path d=\"M26 34H13l3-3M26 34H13l3 3\"/></svg>"
+  },
+  {
+    "id": "breakage",
+    "term": "Breakage",
+    "term_ko": "브레이키지 (미상환 추정분)",
+    "abbreviation": "",
+    "aliases": [
+      "Breakage",
+      "Loyalty Breakage",
+      "Points Breakage",
+      "Spoilage"
+    ],
+    "category": "customer",
+    "conceptType": "metric",
+    "status": "active",
+    "definition": "The estimated proportion of loyalty points or miles issued to members that the program expects will never be redeemed. Breakage is a central input to loyalty-program liability accounting, because only the points expected to be redeemed need be recognized as a deferred obligation.",
+    "definition_ko": "회원에게 발행된 로열티 포인트·마일 중 결코 상환되지 않을 것으로 프로그램이 예상하는 비율의 추정치이다. 상환될 것으로 예상되는 포인트만 이연 의무로 인식하면 되므로, 브레이키지는 로열티 프로그램 부채 회계의 핵심 입력값이다.",
+    "longDef": "Under revenue-recognition standards (IFRS 15 and ASC 606), points awarded with a sale are a separate performance obligation, and a portion of consideration is deferred until the points are redeemed or expire. The expected breakage rate lets the issuer recognize the value of points it does not expect to be redeemed in proportion to the pattern of actual redemptions, rather than holding the full liability. Estimating breakage relies on historical redemption behavior, expiry policies, and member tier mix, and is periodically re-estimated; transfers in from a Transfer Partner and changes in redemption demand can shift it. Breakage is a financial/actuarial estimate distinct from the operational acts of Mileage Accrual and Award Redemption.",
+    "longDef_ko": "수익 인식 기준(IFRS 15 및 ASC 606)에 따라, 판매와 함께 부여된 포인트는 별도의 수행 의무(performance obligation)이며, 거래 대가의 일부는 포인트가 상환되거나 소멸될 때까지 이연된다. 예상 브레이키지율을 이용하면 발행자는 상환되지 않을 것으로 예상하는 포인트의 가치를, 전체 부채를 계속 보유하는 대신 실제 상환 패턴에 비례하여 인식할 수 있다. 브레이키지 추정은 과거 상환 행태, 소멸 정책, 회원 등급 구성에 의존하며 주기적으로 재추정된다. Transfer Partner로부터의 유입과 상환 수요 변화가 이를 이동시킬 수 있다. 브레이키지는 Mileage Accrual·Award Redemption이라는 운영 행위와 구별되는 재무·계리적 추정치이다.",
+    "standardBody": "",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Mileage Accrual"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Award Redemption"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Frequent Flyer Program"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Transfer Partner"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Award Redemption",
+        "explanation": "Award Redemption is the act of a member spending points for a reward; Breakage is the accounting estimate of the points that will never be redeemed at all.",
+        "explanation_ko": "Award Redemption은 회원이 포인트를 보상으로 사용하는 행위이고, Breakage는 결코 상환되지 않을 포인트에 대한 회계 추정치이다."
+      },
+      {
+        "targetTerm": "Mileage Accrual",
+        "explanation": "Mileage Accrual increases a member's balance and the program's liability; Breakage reduces the recognized liability by the share of that balance expected to expire unused.",
+        "explanation_ko": "Mileage Accrual은 회원 잔액과 프로그램 부채를 늘리고, Breakage는 미사용 소멸이 예상되는 잔액 비율만큼 인식 부채를 줄인다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "A Professional's Guide to Loyalty Program Liability",
+        "org": "Loyalty/accounting advisory",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "What CFOs Need to Know About Loyalty Program Liability in 2026",
+        "org": "Loyalty/accounting advisory",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Revenue from Contracts with Customers (IFRS 15) / Revenue from Contracts with Customers (ASC 606)",
+        "org": "IASB / FASB",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"15\"/><path d=\"M24 9v6M24 33v6M9 24h6M33 24h6\"/><path d=\"M18 18l5 6-5 6M30 18l-2 6 2 6\" stroke-dasharray=\"3 3\"/></svg>"
+  },
+  {
+    "id": "digital-travel-credential",
+    "term": "Digital Travel Credential",
+    "term_ko": "디지털 여행 자격증명 (DTC)",
+    "abbreviation": "DTC",
+    "aliases": [
+      "DTC",
+      "Digital Travel Credential (DTC)"
+    ],
+    "category": "customer",
+    "conceptType": "standard",
+    "status": "active",
+    "definition": "An ICAO specification for a cryptographically secured digital representation of a traveler's passport, allowing the credential to be derived from and bound to an electronic Machine Readable Travel Document. ICAO defines three types reflecting how the digital credential relates to the physical passport and where it is stored.",
+    "definition_ko": "여행자 여권을 암호학적으로 보호된 디지털 형태로 표현하기 위한 ICAO 규격으로, 전자 기계판독여행문서(eMRTD)로부터 자격증명을 도출하고 그에 결속(bind)할 수 있게 한다. ICAO는 디지털 자격증명이 실물 여권과 어떻게 관계되고 어디에 저장되는지에 따라 세 가지 유형(Type 1~3)을 정의한다.",
+    "longDef": "The DTC is intended to provide a trustworthy digital companion to, and eventually a substitution for, presenting a physical passport, underpinning the identity and biometric layer of seamless travel. Per ICAO's High-Level Guidance, every DTC comprises a Virtual Component (DTC-VC, the cryptographically signed digital representation of the passport data) and a Physical Component (DTC-PC, a carrier and authenticator for the DTC-VC). ICAO defines three non-hierarchical types: Type 1 (DTC-1), where the DTC-VC is derived from an existing eMRTD chip and that eMRTD itself serves as the DTC-PC, so the physical passport must accompany travel; Type 2 (DTC-2), where the issuing authority creates a DTC-PC on a chosen form factor (e.g., a contactless smart card or mobile phone) and links it to the DTC-VC, while the holder still carries an underlying eMRTD as back-up; and Type 3 (DTC-3), an authority-issued credential created without any underlying eMRTD book, considered by some States as an emergency travel document. A DTC is an authoritative government-grade identity document specification, distinct from IATA One ID, which is an airline-industry framework for the airport journey that can consume verified identity.",
+    "longDef_ko": "DTC는 실물 여권 제시를 대체(궁극적으로) 또는 보완하는 신뢰할 수 있는 디지털 수단을 제공하여, 매끄러운 여행의 신원·생체 계층을 뒷받침하기 위한 것이다. ICAO의 고위급 지침에 따르면 모든 DTC는 가상 구성요소(DTC-VC, 여권 데이터를 암호학적으로 서명한 디지털 표현)와 물리 구성요소(DTC-PC, DTC-VC의 운반체이자 인증 수단)로 이루어진다. ICAO는 위계가 없는 세 가지 유형을 정의한다. Type 1(DTC-1)은 DTC-VC가 기존 eMRTD 칩에서 도출되고 그 eMRTD 자체가 DTC-PC 역할을 하여 실물 여권을 휴대해야 하는 형태, Type 2(DTC-2)는 발급 기관이 선택한 매체(예: 비접촉 스마트카드 또는 휴대폰)에 DTC-PC를 생성하여 DTC-VC와 결속하되 소지자가 예비용으로 eMRTD를 함께 소지하는 형태, Type 3(DTC-3)은 eMRTD 책자 없이 기관이 발급하는 자격증명으로 일부 국가가 긴급여행증명서 용도로 검토 중인 형태이다. DTC는 정부급의 권위 있는 신원 문서 규격으로, 검증된 신원을 신뢰 기반으로 활용할 수 있는 공항 여정용 항공업계 프레임워크인 IATA One ID와 구별된다.",
+    "standardBody": "ICAO",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "IATA One ID"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Known Traveler Number"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Secure Flight"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "IATA One ID",
+        "explanation": "A DTC is ICAO's government-grade digital passport credential and the trusted identity source; IATA One ID is an airline-industry framework for a document-free airport journey that can rely on such a credential.",
+        "explanation_ko": "DTC는 ICAO의 정부급 디지털 여권 자격증명이자 신뢰할 수 있는 신원 원천이고, IATA One ID는 그러한 자격증명을 신뢰 기반으로 활용할 수 있는, 서류 없는 공항 여정을 위한 항공업계 프레임워크이다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "High-Level Guidance: Explaining the ICAO Digital Travel Credential (Version 1.0, June 2024)",
+        "org": "ICAO",
+        "version": "1.0",
+        "section": "3.2 ICAO DTC Types",
+        "url": "https://www.icao.int/sites/default/files/TRIP/Publications/High-Level-Guidance-explaining-ICAO-DTC.pdf"
+      },
+      {
+        "name": "Digital Travel Credentials (DTC)",
+        "org": "ICAO",
+        "version": "",
+        "section": "",
+        "url": "https://www.icao.int/sites/default/files/TRIP/Publications/Digital-Travel-Credentials-DTC.pdf"
+      },
+      {
+        "name": "Digital travel credentials: Unlocking the future of borderless identity",
+        "org": "ICAO Uniting Aviation",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"11\" y=\"6\" width=\"26\" height=\"36\" rx=\"3\"/><circle cx=\"24\" cy=\"18\" r=\"5\"/><path d=\"M17 31c0-4 3-6 7-6s7 2 7 6\"/><path d=\"M30 9l2 2 3-3\"/></svg>"
+  },
+  {
+    "id": "rfm-segmentation",
+    "term": "RFM Segmentation",
+    "term_ko": "RFM 세분화 (최근성-빈도-금액)",
+    "abbreviation": "RFM",
+    "aliases": [
+      "RFM",
+      "RFM Analysis",
+      "RFM Model",
+      "Recency Frequency Monetary"
+    ],
+    "category": "customer",
+    "conceptType": "metric",
+    "status": "active",
+    "definition": "A quantitative customer-segmentation method that scores each traveler on three behavioral dimensions — Recency (how recently they transacted), Frequency (how often), and Monetary value (how much they spend) — and groups them by the combined score. Airlines and hotels use RFM to target offers and to approximate customer lifetime value.",
+    "definition_ko": "각 여행자를 세 가지 행동 차원, 즉 최근성(Recency, 얼마나 최근에 거래했는가), 빈도(Frequency, 얼마나 자주), 금액(Monetary, 얼마나 지출하는가)으로 점수화하고 합산 점수로 묶는 정량적 고객 세분화 기법이다. 항공사와 호텔은 RFM을 활용해 제안을 타깃팅하고 고객생애가치(CLV)를 근사한다.",
+    "longDef": "Each customer is assigned a score (often 1-5) on Recency, Frequency, and Monetary value, and the combination defines segments such as champions, loyal, at-risk, or lapsed travelers. Because the inputs are simple transactional facts, RFM is computationally cheap yet effective for prioritizing marketing spend, designing retention campaigns, and estimating the value of travelers who purchase ancillary services. RFM is most powerful when run over a unified profile such as a Single Customer View, and its segments are frequently activated through a Customer Data Platform. It is a behavioral analytics technique, distinct from Loyalty Tier Status, which is a program-defined standing rather than an analytic score.",
+    "longDef_ko": "각 고객에게 최근성·빈도·금액에 대해 점수(흔히 1~5)를 부여하고, 그 조합으로 챔피언, 충성, 이탈 위험, 휴면 여행자 같은 세그먼트를 정의한다. 입력값이 단순한 거래 사실이므로 RFM은 계산 비용이 낮으면서도, 마케팅 예산 우선순위 결정, 유지(retention) 캠페인 설계, 부가 서비스를 구매하는 여행자의 가치 추정에 효과적이다. RFM은 Single Customer View 같은 통합 프로필 위에서 수행될 때 가장 강력하며, 그 세그먼트는 흔히 Customer Data Platform을 통해 활성화된다. 이는 행동 분석 기법으로, 분석 점수가 아니라 프로그램이 정의하는 위상인 Loyalty Tier Status와는 구별된다.",
+    "standardBody": "",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Single Customer View"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Customer Data Platform"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Customer Profile"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Loyalty Tier Status",
+        "explanation": "Loyalty Tier Status is a program-defined standing a member earns through qualifying activity; RFM Segmentation is an internal analytic score a brand computes to group travelers by behavior, invisible to the customer.",
+        "explanation_ko": "Loyalty Tier Status는 회원이 자격 산정 활동으로 획득하는 프로그램 정의 위상이고, RFM Segmentation은 브랜드가 여행자를 행동별로 묶기 위해 계산하는 내부 분석 점수로 고객에게는 보이지 않는다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "RFM Segmentation, Analysis & Model Marketing",
+        "org": "Marketing analytics reference",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Estimating travellers' value when purchasing auxiliary services in the airline industry based on the RFM model",
+        "org": "Academic research",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "What is RFM Analysis for Customer Segmentation & How Does it Work?",
+        "org": "Marketing analytics reference",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M7 41V7\"/><path d=\"M7 41h34\"/><rect x=\"13\" y=\"28\" width=\"6\" height=\"9\"/><rect x=\"23\" y=\"20\" width=\"6\" height=\"17\"/><rect x=\"33\" y=\"12\" width=\"6\" height=\"25\"/></svg>"
   }
 ]

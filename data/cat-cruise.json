@@ -1,0 +1,867 @@
+[
+  {
+    "id": "cabin-category",
+    "term": "Cabin Category",
+    "term_ko": "선실 카테고리(Cabin Category)",
+    "abbreviation": "",
+    "aliases": [
+      "Stateroom Category",
+      "Cabin Grade",
+      "Stateroom Grade",
+      "Cabin Class"
+    ],
+    "category": "cruise",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "The graded class of stateroom that forms the fundamental unit of cruise inventory and pricing. Cruise fares are quoted per person against a category — broadly interior, oceanview, balcony, and suite, each split into numbered or lettered sub-grades by deck, location, and size — so the category is the cruise analogue of a hotel Room Type and the anchor of every cruise booking.",
+    "definition_ko": "크루즈 재고와 가격 책정의 기본 단위가 되는 등급화된 선실 분류이다. 크루즈 운임은 카테고리를 기준으로 1인당 책정되며, 크게 내측(interior)·해측(oceanview)·발코니(balcony)·스위트(suite)로 나뉘고 각 등급은 갑판 위치·구역·크기에 따라 숫자나 알파벳 하위 등급으로 다시 세분된다. 따라서 cabin category는 호텔의 Room Type에 해당하는 개념이자 모든 크루즈 예약의 기준점이다.",
+    "longDef": "A cruise line publishes a category ladder: a small number of meta-categories (interior, oceanview, balcony, suite, plus specialty tiers such as concierge or ship-within-a-ship suites) each divided into many fare-graded sub-categories that differ by deck, midship-versus-forward location, square footage, obstructed view, and connecting-cabin status. Inventory is held and sold at the sub-category level, and the per-person double-occupancy fare attaches to it. Distribution systems and the OpenTravel cruise message set express availability, pricing, and holds against these category codes, and a Guarantee (GTY) booking sells a guaranteed minimum category without a specific cabin number.",
+    "longDef_ko": "크루즈 선사는 카테고리 사다리를 공표한다. 즉 소수의 상위 카테고리(내측·해측·발코니·스위트, 그리고 컨시어지나 ship-within-a-ship 스위트 같은 특수 등급)를 두고, 각 카테고리를 갑판, 선체 중앙 대 선수 위치, 면적, 시야 차단 여부, 연결 선실 여부에 따라 다수의 운임 등급 하위 카테고리로 나눈다. 재고는 하위 카테고리 단위로 보유·판매되며 1인당 2인 기준 운임이 여기에 연결된다. 유통 시스템과 OpenTravel 크루즈 메시지 셋은 이 카테고리 코드를 기준으로 가용성·가격·홀드를 표현하며, Guarantee(GTY) 예약은 특정 선실 번호 없이 보장 최저 카테고리를 판매한다.",
+    "standardBody": "OpenTravel Alliance",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "sameAs",
+        "targetTerm": "Room Type"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Guarantee Cabin (GTY)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Single Supplement"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Availability"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Revenue Management"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Room Type",
+        "explanation": "Cabin Category is the cruise term for the same concept as a hotel Room Type — a graded physical product against which a rate is quoted — but cruise categories are typically far more numerous and finely graded (often dozens of sub-categories) and are priced per person on double occupancy rather than per room.",
+        "explanation_ko": "Cabin Category는 호텔의 Room Type과 동일한 개념(요금이 매겨지는 등급화된 실제 상품)에 대한 크루즈 용어이지만, 크루즈 카테고리는 보통 훨씬 더 많고 세밀하게 등급화되며(흔히 수십 개의 하위 카테고리) 객실당이 아니라 2인 기준 1인당으로 가격이 책정된다."
+      },
+      {
+        "targetTerm": "Guarantee Cabin (GTY)",
+        "explanation": "A cabin category is the named grade itself; a Guarantee (GTY) is a booking method that locks a guaranteed minimum category while deferring assignment of the specific cabin within or above it.",
+        "explanation_ko": "cabin category는 명명된 등급 자체이고, Guarantee(GTY)는 보장 최저 카테고리를 확정하되 그 안 또는 그 이상에서 특정 선실 배정을 나중으로 미루는 예약 방식이다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Cruising Terms (cruise glossary)",
+        "org": "Cruise industry",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "OpenTravel Specification (cruise message set: cabin category availability and pricing)",
+        "org": "OpenTravel Alliance",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Room Types & Included Amenities (cruise FAQ)",
+        "org": "Cruise industry",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"10\" width=\"32\" height=\"28\" rx=\"2\"/><line x1=\"8\" y1=\"24\" x2=\"40\" y2=\"24\"/><line x1=\"24\" y1=\"10\" x2=\"24\" y2=\"38\"/><circle cx=\"16\" cy=\"17\" r=\"2.5\"/><circle cx=\"32\" cy=\"17\" r=\"2.5\"/></svg>"
+  },
+  {
+    "id": "guarantee-cabin-gty",
+    "term": "Guarantee Cabin (GTY)",
+    "term_ko": "개런티 선실(Guarantee Cabin, GTY)",
+    "abbreviation": "GTY",
+    "aliases": [
+      "Guarantee Stateroom",
+      "GTY Cabin",
+      "Guaranteed Cabin",
+      "Category Guarantee"
+    ],
+    "category": "cruise",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "A booking method in which the guest is sold a guaranteed minimum cabin category at a discounted fare while the cruise line retains the right to assign the specific cabin number — at or above the booked category — later, sometimes not until shortly before sailing. It is a cruise inventory and yield mechanism with no direct hotel equivalent.",
+    "definition_ko": "선객이 할인 운임으로 보장 최저 선실 카테고리를 구매하되, 크루즈 선사가 그 카테고리 이상에서 특정 선실 번호를 나중에(때로는 출항 직전까지) 배정할 권리를 갖는 예약 방식이다. 호텔에는 직접적인 대응 개념이 없는 크루즈 특유의 재고·수익 관리 메커니즘이다.",
+    "longDef": "With a guarantee, the guest agrees to a category (e.g. 'balcony guarantee') rather than a chosen cabin; the line confirms that they will receive a stateroom of at least that category, and may upgrade the assignment to fill the ship optimally. This lets the cruise line manage occupancy and yield by retaining flexible inventory, often in exchange for a lower fare, and it shifts how distribution systems hold and confirm bookings: the reservation is firm at the category level while the cabin number stays open until assignment. Trade-offs for the guest include no cabin choice, possible less-desirable locations, and limited ability to change.",
+    "longDef_ko": "개런티 예약에서 선객은 특정 선실이 아니라 카테고리(예: 'balcony guarantee')에 동의한다. 선사는 최소 그 카테고리 이상의 선실을 제공할 것을 확정하며, 선박을 최적으로 채우기 위해 배정을 상위 등급으로 업그레이드할 수 있다. 이를 통해 선사는 유연한 재고를 보유하며 점유율과 수익을 관리하고, 보통 그 대가로 더 낮은 운임을 제공한다. 이는 유통 시스템이 예약을 보유·확정하는 방식도 바꾼다. 예약은 카테고리 수준에서 확정되지만 선실 번호는 배정 전까지 열려 있다. 선객 입장의 절충은 선실 선택 불가, 덜 선호되는 위치 가능성, 변경 제약 등이다.",
+    "standardBody": "",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Cabin Category"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Revenue Management"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Availability"
+      },
+      {
+        "type": "contrasts",
+        "targetTerm": "Run of House (ROH)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Overbooking"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Run of House (ROH)",
+        "explanation": "A hotel ROH rate assigns any room of a single standard type at the hotel's discretion; a cruise GTY guarantees a graded minimum category and may be upgraded above it, and is the closest cruise parallel to ROH but operates across a finer category ladder.",
+        "explanation_ko": "호텔의 ROH 요금은 호텔 재량으로 단일 표준 유형의 아무 객실이나 배정하는 반면, 크루즈 GTY는 등급화된 최저 카테고리를 보장하고 그 이상으로 업그레이드될 수 있다. ROH에 가장 가까운 크루즈 대응 개념이지만 더 세밀한 카테고리 사다리 위에서 작동한다."
+      },
+      {
+        "targetTerm": "Cabin Category",
+        "explanation": "The cabin category is the graded product; a guarantee is a way of buying into a category without selecting the specific cabin, deferring assignment to the line.",
+        "explanation_ko": "cabin category는 등급화된 상품이고, 개런티는 특정 선실을 선택하지 않은 채 카테고리에 들어가 배정을 선사에 맡기는 구매 방식이다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "What is a guarantee stateroom and how does it work?",
+        "org": "Royal Caribbean International",
+        "version": "",
+        "section": "FAQ",
+        "url": "https://www.royalcaribbean.com/faq/questions/what-is-a-guarantee-stateroom"
+      },
+      {
+        "name": "What is a \"Guarantee\" (GTY) Stateroom or Cabin on a Cruise?",
+        "org": "CruiseExperts",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"12\" width=\"28\" height=\"24\" rx=\"2\"/><path d=\"M19 24l4 4 7-8\"/><line x1=\"10\" y1=\"18\" x2=\"38\" y2=\"18\"/></svg>"
+  },
+  {
+    "id": "single-supplement",
+    "term": "Single Supplement",
+    "term_ko": "싱글 서플먼트(Single Supplement, 1인 추가요금)",
+    "abbreviation": "",
+    "aliases": [
+      "Solo Supplement",
+      "Single Occupancy Supplement",
+      "Solo Traveler Surcharge"
+    ],
+    "category": "cruise",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "The extra fee charged to a solo guest who occupies a cabin priced on double occupancy, compensating the cruise line for the second fare it would otherwise collect. On cruises it commonly runs from about 25% to 100% of the per-person fare, but can reach 150%-200% (so a solo guest may pay well above twice the advertised per-person price), and it is a foundational cruise pricing rule.",
+    "definition_ko": "2인 기준으로 가격이 책정된 선실을 혼자 사용하는 선객에게 부과되는 추가 요금으로, 선사가 받지 못하게 되는 두 번째 운임을 보전하는 성격이다. 크루즈에서는 보통 1인당 운임의 약 25%에서 100% 사이이지만, 150%~200%에 이르기도 한다(따라서 1인 선객은 광고된 1인당 가격의 두 배를 넘게 지불할 수도 있다). 크루즈 가격 책정의 근간이 되는 규칙이다.",
+    "longDef": "Because cruise fares are advertised per person assuming two guests share a cabin (double occupancy), a single occupant leaves the line short of the second person's fare. The single supplement recovers some or all of that gap: a 100% supplement means the solo guest effectively pays both per-person fares (the full cabin price), and many cruise lines charge supplements of 150%-200%, pushing the solo cost above the two-person cabin total. Lower supplements (or occasional waived/reduced offers and dedicated solo studio cabins) are used as a yield lever to fill demand. The mechanism is why cruise yield management differs structurally from air and hotel pricing, where solo occupancy is the norm rather than a surcharged exception.",
+    "longDef_ko": "크루즈 운임은 두 명이 선실을 공유한다는 가정(2인 기준) 아래 1인당으로 광고되므로, 1인이 점유하면 선사는 두 번째 사람의 운임만큼 손해를 본다. 싱글 서플먼트는 그 차액의 일부 또는 전부를 회수한다. 100% 서플먼트는 1인 선객이 사실상 두 사람 몫의 운임(선실 전체 가격)을 내는 것이고, 많은 선사는 150%~200%의 서플먼트를 부과해 1인 비용이 2인 선실 총액을 넘게 만들기도 한다. 더 낮은 서플먼트(또는 가끔의 면제·할인 프로모션과 전용 solo studio 선실)는 수요를 채우기 위한 수익 관리 수단으로 쓰인다. 이 메커니즘 때문에 크루즈 수익 관리는 1인 투숙이 예외적 할증이 아니라 표준인 항공·호텔 가격 책정과 구조적으로 다르다.",
+    "standardBody": "",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Cabin Category"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Revenue Management"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Surcharge"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Occupancy"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Occupancy",
+        "explanation": "Hotel 'Occupancy' is a performance metric (the ratio of sold to available rooms); a cruise single supplement is a per-booking surcharge tied to double-occupancy pricing — the same root word, but one measures sales and the other prices a sale.",
+        "explanation_ko": "호텔의 'Occupancy(점유율)'는 성과 지표(판매 객실 대 가용 객실 비율)이고, 크루즈의 싱글 서플먼트는 2인 기준 가격 책정에 연동된 예약별 할증료이다. 어원은 같지만 하나는 판매를 측정하고 다른 하나는 판매 가격을 매긴다."
+      },
+      {
+        "targetTerm": "Surcharge",
+        "explanation": "A single supplement is a specific kind of fare surcharge applied because of solo occupancy, distinct from generic fuel, tax, or fee surcharges; it is calculated as a percentage of the per-person cruise fare.",
+        "explanation_ko": "싱글 서플먼트는 1인 점유 때문에 적용되는 특정 종류의 운임 할증으로, 일반적인 유류·세금·수수료 할증과 구별되며 1인당 크루즈 운임의 일정 비율로 산정된다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "A Guide to Single Supplements on Cruise Ships",
+        "org": "Cruise Critic",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Single supplement",
+        "org": "Wikipedia",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"15\" r=\"6\"/><path d=\"M14 38c0-6 4.5-10 10-10s10 4 10 10\"/><line x1=\"36\" y1=\"12\" x2=\"42\" y2=\"12\"/><line x1=\"39\" y1=\"9\" x2=\"39\" y2=\"15\"/></svg>"
+  },
+  {
+    "id": "non-commissionable-fare-ncf",
+    "term": "Non-Commissionable Fare (NCF)",
+    "term_ko": "비수수료 운임(Non-Commissionable Fare, NCF)",
+    "abbreviation": "NCF",
+    "aliases": [
+      "Non-Commissionable Fees",
+      "Non-Commissionable Charges",
+      "NCFs"
+    ],
+    "category": "cruise",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "The portion of a cruise fare — port charges, government fees, and other pass-through costs the line designates as non-commissionable — on which travel advisors earn no commission. Because commission is paid only on the remaining 'commissionable' fare, NCFs directly determine agency economics and how cruise prices are itemized to consumers.",
+    "definition_ko": "크루즈 운임 중 항만 사용료, 정부 부과금, 그 밖에 선사가 비수수료로 지정한 통과성 비용 등 여행 어드바이저가 수수료를 받지 못하는 부분이다. 수수료는 나머지 '수수료 대상(commissionable)' 운임에 대해서만 지급되므로, NCF는 대리점 수익 구조와 소비자에게 크루즈 가격을 항목화하는 방식을 직접 좌우한다.",
+    "longDef": "Cruise lines split the total fare into a commissionable component and the NCF; advisors are paid their commission rate only on the former, so a high NCF can sharply cut effective earnings even when the headline commission percentage looks generous. The exact contents of NCFs (port dues, piloting, immigration, waste, administrative fees) and their disclosure have long been criticized as opaque. Policies vary and are shifting: some lines (e.g. Viking, American Cruise Lines) pay commission on port charges, and Norwegian Cruise Line announced the permanent elimination of NCFs — effective for bookings made from 26 December 2025 and applying to all sailings departing on or after 1 May 2026 — paying advisors on the full fare excluding only mandatory government taxes and fees.",
+    "longDef_ko": "크루즈 선사는 총 운임을 수수료 대상 부분과 NCF로 나누며, 어드바이저는 전자에 대해서만 수수료율을 적용받는다. 따라서 NCF가 크면 표면 수수료율이 후해 보여도 실효 수익이 크게 깎일 수 있다. NCF에 무엇이 들어가는지(항만세, 도선료, 출입국, 폐기물, 행정 수수료)와 그 공시 방식은 오랫동안 불투명하다는 비판을 받아왔다. 정책은 선사마다 다르고 변화 중이다. 일부 선사(예: Viking, American Cruise Lines)는 항만 사용료에도 수수료를 지급하며, Norwegian Cruise Line은 NCF를 영구 폐지한다고 발표했다. 이는 2025년 12월 26일 이후 예약분부터 적용되며, 2026년 5월 1일 이후 출발하는 모든 항해가 대상으로, 의무적 정부 세금·수수료만 제외한 전체 운임에 대해 어드바이저에게 수수료를 지급한다.",
+    "standardBody": "",
+    "providerTerms": [
+      {
+        "provider": "Norwegian Cruise Line",
+        "term": "Elimination of NCFs",
+        "context": "NCL permanently eliminated NCFs, making the full fare (excluding mandatory government taxes and fees) commissionable; effective for bookings made from 26 December 2025 and applying to sailings departing on or after 1 May 2026. (An earlier 2022 program first paid commission on NCFs for bookings outside the 120-day window.)",
+        "context_ko": "NCL은 NCF를 영구 폐지하여 의무적 정부 세금·수수료를 제외한 전체 운임을 수수료 대상으로 전환했다. 2025년 12월 26일 이후 예약분부터 적용되며 2026년 5월 1일 이후 출발 항해가 대상이다. (앞서 2022년 프로그램에서는 120일 창 밖 예약에 한해 NCF에 수수료를 지급하기 시작했다.)",
+        "relationship": "related"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "contrasts",
+        "targetTerm": "Commissionable Rate"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Net Rate"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Distribution Cost"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Cabin Category"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Commissionable Rate",
+        "explanation": "A commissionable rate is the part of the fare on which the advisor does earn commission; the NCF is the carved-out remainder on which they earn nothing — together they make up the total cruise price.",
+        "explanation_ko": "commissionable rate는 어드바이저가 실제로 수수료를 받는 운임 부분이고, NCF는 수수료를 전혀 받지 못하도록 떼어낸 나머지이다. 둘을 합치면 총 크루즈 가격이 된다."
+      },
+      {
+        "targetTerm": "Tax (YQ/YR)",
+        "explanation": "Airline YQ/YR carrier-imposed charges are a fare-construction tax/surcharge concept in ATPCO filings; cruise NCFs are a commercial commission-exclusion concept — both reduce what reaches the seller, but NCF is defined by commissionability, not by tax codes.",
+        "explanation_ko": "항공의 YQ/YR 항공사 부과 요금은 ATPCO 등록상의 운임 구성 세금/할증 개념이고, 크루즈 NCF는 상업적 수수료 제외 개념이다. 둘 다 판매자에게 돌아가는 몫을 줄이지만 NCF는 세금 코드가 아니라 수수료 지급 가능 여부로 정의된다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Norwegian Cruise Line to pay travel agent partners commission on non-commissionable fares",
+        "org": "Norwegian Cruise Line",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "NCL's NCF Commission Program FAQs",
+        "org": "Norwegian Cruise Line",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Cruise Analysis: NCF Policies As Clear As Mud",
+        "org": "Travel Market Report",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Norwegian Cruise Line Eliminates All Non-Commissionable Fares for Travel Advisors",
+        "org": "TravelPulse",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"15\"/><path d=\"M24 16v16M20 20h6a3 3 0 0 1 0 6h-5M21 26l6 6\"/><line x1=\"12\" y1=\"36\" x2=\"36\" y2=\"12\"/></svg>"
+  },
+  {
+    "id": "cruise-only-fare",
+    "term": "Cruise-Only Fare",
+    "term_ko": "크루즈 온리 운임(Cruise-Only Fare)",
+    "abbreviation": "",
+    "aliases": [
+      "Cruise Fare",
+      "Cruise-Only Rate"
+    ],
+    "category": "cruise",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "The baseline cruise product and rate covering the voyage itself — cabin, standard dining, and included onboard entertainment — but excluding airfare, transfers, shore excursions, gratuities, and most beverages. It is the most basic fare type quoted across GDS and cruise booking engines, against which packages and add-ons are built.",
+    "definition_ko": "항해 자체를 포함하는 가장 기본적인 크루즈 상품이자 요금으로, 선실·기본 식사·포함된 선내 엔터테인먼트는 담되 항공권·이동(transfer)·기항지 투어·팁(gratuity)·대부분의 음료는 제외한다. GDS와 크루즈 예약 엔진에서 제시되는 가장 기본적인 운임 유형이며, 패키지와 부가 상품은 이 운임 위에 구성된다.",
+    "longDef": "A cruise-only fare prices the core inclusions a cruise has historically bundled — accommodation in a chosen cabin category, main dining-room and buffet meals, and standard ship entertainment and facilities — while leaving discretionary and third-party costs unbundled. It is distinguished from 'cruise plus air' or fully packaged fares that add flights and transfers, and it sits before non-commissionable fares, taxes, gratuities, and ancillaries are layered on. As the lowest common denominator across distribution channels, it is the figure most often advertised per person on double occupancy.",
+    "longDef_ko": "크루즈 온리 운임은 크루즈가 전통적으로 묶어 온 핵심 포함 항목, 즉 선택한 선실 카테고리의 숙박, 메인 다이닝룸·뷔페 식사, 표준 선내 엔터테인먼트·시설을 가격에 담되, 선택적 비용과 제3자 비용은 분리해 둔다. 항공편과 이동을 더한 'cruise plus air' 또는 완전 패키지 운임과 구별되며, 비수수료 운임·세금·팁·부가 상품이 얹히기 전 단계에 위치한다. 유통 채널 전반의 최소 공통 기준이므로 흔히 2인 기준 1인당으로 광고되는 금액이다.",
+    "standardBody": "",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Cabin Category"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Non-Commissionable Fare (NCF)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Shore Excursion"
+      },
+      {
+        "type": "contrasts",
+        "targetTerm": "Dynamic Packaging"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Onboard Credit (OBC)"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Board Basis",
+        "explanation": "Hotel Board Basis grades what meals are included (room only to all-inclusive); a cruise-only fare already bundles standard meals, so the cruise concept brackets the whole voyage rather than only the meal plan.",
+        "explanation_ko": "호텔의 Board Basis는 포함되는 식사 범위(room only부터 all-inclusive까지)를 구분하는 반면, 크루즈 온리 운임은 기본 식사를 이미 포함하므로 크루즈 개념은 식사 계획만이 아니라 항해 전체를 묶는다."
+      },
+      {
+        "targetTerm": "Dynamic Packaging",
+        "explanation": "A cruise-only fare is the unbundled core; dynamic packaging combines that fare with flights, transfers, and excursions into a single dynamically priced product.",
+        "explanation_ko": "크루즈 온리 운임은 분리된 핵심 상품이고, dynamic packaging은 그 운임을 항공편·이동·투어와 결합해 동적으로 가격이 매겨지는 단일 상품으로 만든다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Cruise-Only Rates",
+        "org": "Celebrity Cruises",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "What Does Cruise-Only Mean?",
+        "org": "Sail Away Magazine",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 30h32l-4 8H12z\"/><path d=\"M14 30V18h14l6 6h6\"/><line x1=\"20\" y1=\"18\" x2=\"20\" y2=\"12\"/><line x1=\"24\" y1=\"24\" x2=\"24\" y2=\"30\"/></svg>"
+  },
+  {
+    "id": "port-of-call",
+    "term": "Port of Call",
+    "term_ko": "기항지(Port of Call)",
+    "abbreviation": "",
+    "aliases": [
+      "Port Call",
+      "Calling Port",
+      "Stop"
+    ],
+    "category": "cruise",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "An intermediate destination on a cruise itinerary where the ship docks alongside or anchors offshore so guests can go ashore and explore, as distinct from the embarkation and disembarkation ports that begin and end the voyage. Ports of call are the anchor for shore-excursion sales and the core building block of cruise itinerary modeling.",
+    "definition_ko": "크루즈 일정상의 중간 목적지로, 선박이 부두에 접안하거나 외해에 정박해 선객이 하선하여 둘러볼 수 있게 하는 곳이다. 항해를 시작·종료하는 승선·하선 항구와 구별된다. 기항지는 기항지 투어(shore excursion) 판매의 기준점이자 크루즈 일정 모델링의 핵심 구성 요소이다.",
+    "longDef": "Each port of call carries an arrival and departure time, a tendering-versus-docking status, and a set of bookable shore excursions; together the sequence of ports defines the itinerary and its marketing identity (e.g. a Western Caribbean or Norwegian Fjords cruise). The OpenTravel cruise message set represents itineraries as ordered sequences of ports with embark/debark and call times, and distribution and onboard systems sell excursions and plan logistics against each call. A 'sea day' is an itinerary day with no port of call.",
+    "longDef_ko": "각 기항지는 도착·출발 시각, 텐더(소형선) 이용 여부 대 접안 여부, 그리고 예약 가능한 기항지 투어 세트를 갖는다. 이 항구들의 순서가 모여 일정과 그 마케팅 정체성(예: 서부 카리브해 또는 노르웨이 피오르 크루즈)을 정의한다. OpenTravel 크루즈 메시지 셋은 일정을 승하선·기항 시각을 포함한 항구의 순서 있는 나열로 표현하며, 유통·선내 시스템은 각 기항을 기준으로 투어를 판매하고 물류를 계획한다. 기항지가 없는 일정 날은 'sea day(항해일)'이다.",
+    "standardBody": "OpenTravel Alliance",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Shore Excursion"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Embarkation"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Itinerary"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Repositioning Cruise"
+      },
+      {
+        "type": "related",
+        "targetTerm": "UN/LOCODE"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Embarkation",
+        "explanation": "Embarkation is specifically the boarding event at the voyage's starting (home) port; a port of call is an intermediate stop where guests go ashore and return, not where the cruise begins or ends.",
+        "explanation_ko": "Embarkation은 구체적으로 항해 출발(모항) 항구에서의 승선 행위이고, port of call은 선객이 하선했다가 돌아오는 중간 기항지로 크루즈가 시작되거나 끝나는 곳이 아니다."
+      },
+      {
+        "targetTerm": "Itinerary",
+        "explanation": "The itinerary is the full ordered plan of the voyage; a port of call is one stop within it, alongside sea days and the turnaround ports.",
+        "explanation_ko": "Itinerary는 항해의 전체 순서 계획이고, port of call은 그 안의 한 기항지로 항해일과 회항(turnaround) 항구와 함께 구성된다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Everything You Need to Know About Shore Excursions",
+        "org": "Cruise industry",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Cruising Terms (cruise glossary)",
+        "org": "Cruise industry",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "OpenTravel Specification (cruise itinerary messages)",
+        "org": "OpenTravel Alliance",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"18\" r=\"6\"/><path d=\"M24 24v14\"/><path d=\"M16 32a8 6 0 0 0 16 0\"/><line x1=\"18\" y1=\"30\" x2=\"30\" y2=\"30\"/></svg>"
+  },
+  {
+    "id": "embarkation",
+    "term": "Embarkation",
+    "term_ko": "승선(Embarkation)",
+    "abbreviation": "",
+    "aliases": [
+      "Boarding",
+      "Embarkation Day",
+      "Check-in"
+    ],
+    "category": "cruise",
+    "conceptType": "process",
+    "status": "active",
+    "definition": "The boarding and check-in process at the start of a cruise, when passengers board the ship at the home port, complete security and document checks, and are registered for the voyage. Its counterpart is disembarkation at the end of the cruise, and together they bracket the turnaround day on which one sailing ends and the next begins.",
+    "definition_ko": "크루즈 시작 시점의 승선·체크인 과정으로, 선객이 모항에서 선박에 탑승하여 보안·서류 확인을 마치고 항해에 등록되는 절차이다. 항해 종료 시점의 하선(disembarkation)이 그 짝이며, 둘은 한 항차가 끝나고 다음 항차가 시작되는 회항일(turnaround day)을 양끝에서 감싼다.",
+    "longDef": "Embarkation is a foundational operational and distribution milestone: it governs the turnaround-day logistics of disembarking one set of guests and embarking the next within hours, drives the collection of Advance Passenger Information System (APIS) and immigration manifests, and triggers the safety obligations of the voyage, including the SOLAS muster drill that must occur before or immediately on departure. Booking and check-in systems capture embarkation date, port, time window, and required identity and health documents; the OpenTravel cruise message set expresses embark/debark times as part of the sailing definition.",
+    "longDef_ko": "Embarkation은 운영·유통상의 근간이 되는 이정표이다. 한 무리의 선객을 하선시키고 몇 시간 내에 다음 무리를 승선시키는 회항일 물류를 좌우하고, 사전입국정보시스템(APIS)과 출입국 명부 수집을 추동하며, SOLAS 비상소집훈련(muster drill)을 포함한 항해의 안전 의무를 발동시킨다. 이 훈련은 출항 전 또는 출항 즉시 이루어져야 한다. 예약·체크인 시스템은 승선 날짜·항구·시간대와 필요한 신원·건강 서류를 수집하며, OpenTravel 크루즈 메시지 셋은 승선/하선 시각을 항차 정의의 일부로 표현한다.",
+    "standardBody": "OpenTravel Alliance",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Muster Drill"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Port of Call"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Itinerary"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Repositioning Cruise"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Port of Call",
+        "explanation": "Embarkation happens once, at the home port that opens the voyage; ports of call are the intermediate stops where guests go ashore and reboard the same ship without checking in anew.",
+        "explanation_ko": "Embarkation은 항해를 여는 모항에서 한 번 일어나고, port of call은 선객이 하선했다가 새로 체크인하지 않고 같은 선박에 다시 오르는 중간 기항지이다."
+      },
+      {
+        "targetTerm": "Muster Drill",
+        "explanation": "Embarkation is the overall boarding/check-in process; the muster drill is one mandatory safety step within it that SOLAS requires before or at departure.",
+        "explanation_ko": "Embarkation은 전체 승선·체크인 과정이고, muster drill은 그 안에서 SOLAS가 출항 전 또는 출항 시점에 요구하는 의무 안전 절차 하나이다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Glossary of Shipboard Terms",
+        "org": "Cruise industry",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "OpenTravel Specification (cruise message set: embark/debark times)",
+        "org": "OpenTravel Alliance",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 34h32l-3 6H11z\"/><path d=\"M14 34V22h12l5 5h5\"/><path d=\"M22 16l4-4 4 4M26 12v14\"/></svg>"
+  },
+  {
+    "id": "shore-excursion",
+    "term": "Shore Excursion",
+    "term_ko": "기항지 투어(Shore Excursion)",
+    "abbreviation": "",
+    "aliases": [
+      "Shorex",
+      "Excursion",
+      "Port Tour",
+      "Shore Tour"
+    ],
+    "category": "cruise",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "An escorted or independent tour or activity sold for a port of call, taking guests ashore for sightseeing, adventure, or cultural experiences and returning them before the ship sails. It is the primary ancillary product of the cruise business and an explicitly standardized component of the OpenTravel cruise message set.",
+    "definition_ko": "기항지를 위해 판매되는 가이드 동반 또는 자유 형태의 투어·액티비티로, 선객을 하선시켜 관광·모험·문화 체험을 제공한 뒤 선박 출항 전에 복귀시킨다. 크루즈 사업의 핵심 부가(ancillary) 상품이며, OpenTravel 크루즈 메시지 셋에 명시적으로 표준화된 구성 요소이다.",
+    "longDef": "Shore excursions are central to cruise ancillary revenue and distribution: cruise lines curate and resell tours (often through local operators), guaranteeing return to the ship for line-booked tours, while guests may alternatively buy independent excursions. Each excursion attaches to a specific port of call with capacity, timing, difficulty, and price, and is bookable pre-cruise online, via travel advisors, or onboard at the shore-excursion desk. The OpenTravel cruise specification models shore excursions as a discrete, exchangeable message component so they can be shopped, priced, and confirmed through distribution channels.",
+    "longDef_ko": "기항지 투어는 크루즈 부가 수익과 유통의 중심이다. 선사는 (흔히 현지 운영사를 통해) 투어를 큐레이션·재판매하며, 선사 예약 투어에 대해서는 선박 복귀를 보장한다. 선객은 대안으로 독립 투어를 구매할 수도 있다. 각 투어는 특정 기항지에 정원·시간·난이도·가격과 함께 연결되며, 출항 전 온라인, 여행 어드바이저를 통해, 또는 선상의 shore-excursion 데스크에서 예약할 수 있다. OpenTravel 크루즈 사양은 기항지 투어를 별개의 교환 가능한 메시지 구성 요소로 모델링하여 유통 채널을 통해 쇼핑·가격 책정·확정될 수 있게 한다.",
+    "standardBody": "OpenTravel Alliance",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Port of Call"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Ancillary Service"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Cruise-Only Fare"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Itinerary"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Ancillary Service",
+        "explanation": "In airline distribution an Ancillary Service is any extra sold beyond the seat (bags, seats, meals); a shore excursion is the cruise industry's flagship ancillary, but it is specifically tied to a port of call rather than to a flight segment.",
+        "explanation_ko": "항공 유통에서 Ancillary Service는 좌석 외에 판매되는 모든 부가(수하물·좌석·기내식)이고, 기항지 투어는 크루즈 산업의 대표 부가 상품이지만 항공 구간이 아니라 특정 기항지에 연결된다는 점이 특징이다."
+      },
+      {
+        "targetTerm": "Port of Call",
+        "explanation": "A port of call is the destination stop itself; a shore excursion is a product sold against that stop — one port can offer many excursions, and a guest can visit a port with no excursion at all.",
+        "explanation_ko": "port of call은 목적지 기항 자체이고, 기항지 투어는 그 기항을 대상으로 판매되는 상품이다. 한 항구가 여러 투어를 제공할 수 있고, 선객은 투어 없이 항구를 방문할 수도 있다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "OpenTravel Specification (cruise message set: shore excursions)",
+        "org": "OpenTravel Alliance",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Everything You Need to Know About Shore Excursions",
+        "org": "Cruise industry",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 36h36\"/><path d=\"M10 36l6-16 14 4-4 12\"/><circle cx=\"30\" cy=\"14\" r=\"4\"/><path d=\"M16 20l8-6\"/></svg>"
+  },
+  {
+    "id": "open-seating-dining",
+    "term": "Open Seating Dining",
+    "term_ko": "오픈 시팅 다이닝(Open Seating Dining)",
+    "abbreviation": "",
+    "aliases": [
+      "Open Dining",
+      "Flexible Dining",
+      "Anytime Dining",
+      "Freestyle Dining",
+      "My Time Dining"
+    ],
+    "category": "cruise",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "A flexible cruise dining model in which guests dine at any time within open hours and are not assigned a fixed table or seating time, branded variously as Norwegian Freestyle, Royal Caribbean My Time, and Carnival Anytime Dining. It contrasts with traditional fixed early/late seating and is a bookable dining attribute represented in the OpenTravel cruise dining-arrangement messages.",
+    "definition_ko": "선객이 개방 시간 내 원하는 때에 식사하고 고정된 테이블이나 식사 시간을 배정받지 않는 유연한 크루즈 다이닝 방식으로, Norwegian Freestyle, Royal Caribbean My Time, Carnival Anytime Dining 등으로 브랜드화되어 있다. 전통적인 고정 1부/2부(early/late) 시팅과 대비되며, OpenTravel 크루즈 dining-arrangement 메시지에 표현되는 예약 가능한 다이닝 속성이다.",
+    "longDef": "Traditional cruise dining assigns each guest a fixed dinner seating (typically an early/main or late/second seating) at the same table and table-mates each night. Open seating instead lets guests choose when and with whom to dine within the dining room's open hours, sometimes with optional reservations to manage flow. The choice is a bookable arrangement captured at reservation time, affecting capacity planning and the dining-room operation, and the OpenTravel cruise specification carries dining-arrangement preferences (fixed seating, seating time, table size, open/flexible) as part of the booking message so they can be requested and confirmed through distribution.",
+    "longDef_ko": "전통적 크루즈 다이닝은 각 선객에게 고정된 저녁 시팅(보통 1부/메인 또는 2부/late 시팅)을 같은 테이블·동석자와 함께 매일 배정한다. 오픈 시팅은 대신 선객이 다이닝룸 개방 시간 내에서 언제, 누구와 식사할지 고를 수 있게 하며, 흐름 관리를 위해 선택적 예약을 두기도 한다. 이 선택은 예약 시점에 포착되는 예약 가능한 배정으로, 정원 계획과 다이닝룸 운영에 영향을 준다. OpenTravel 크루즈 사양은 다이닝 배정 선호(고정 시팅, 시팅 시간, 테이블 크기, 개방/유연)를 예약 메시지의 일부로 담아 유통을 통해 요청·확정될 수 있게 한다.",
+    "standardBody": "OpenTravel Alliance",
+    "providerTerms": [
+      {
+        "provider": "Norwegian Cruise Line",
+        "term": "Freestyle Dining",
+        "context": "NCL's brand for open, flexible dining with no fixed seating",
+        "context_ko": "고정 시팅 없는 개방형 유연 다이닝에 대한 NCL의 브랜드명",
+        "relationship": "narrower"
+      },
+      {
+        "provider": "Royal Caribbean",
+        "term": "My Time Dining",
+        "context": "Royal Caribbean's flexible main-dining-room option as an alternative to fixed seating",
+        "context_ko": "고정 시팅의 대안으로 제공되는 Royal Caribbean의 유연 메인 다이닝 옵션",
+        "relationship": "narrower"
+      },
+      {
+        "provider": "Carnival Cruise Line",
+        "term": "Anytime Dining",
+        "context": "Carnival's flexible dining option allowing guests to dine within open hours",
+        "context_ko": "선객이 개방 시간 내에 식사할 수 있게 하는 Carnival의 유연 다이닝 옵션",
+        "relationship": "narrower"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Meal Code"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Embarkation"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Meal Code",
+        "explanation": "An airline/GDS Meal Code identifies the type of meal served on a flight; open seating dining is a cruise dining-arrangement attribute about when and how guests dine, not a coded meal-content selection.",
+        "explanation_ko": "항공/GDS의 Meal Code는 항공편에서 제공되는 기내식 유형을 식별하고, 오픈 시팅 다이닝은 선객이 언제·어떻게 식사하는지에 관한 크루즈 다이닝 배정 속성으로 코드화된 식사 내용 선택이 아니다."
+      },
+      {
+        "targetTerm": "Board Basis",
+        "explanation": "Hotel Board Basis defines which meals are included in the rate; open seating dining assumes meals are included and instead defines the seating arrangement (flexible versus fixed times and tables).",
+        "explanation_ko": "호텔 Board Basis는 요금에 어떤 식사가 포함되는지를 정의하고, 오픈 시팅 다이닝은 식사 포함을 전제한 채 시팅 방식(유연 대 고정 시간·테이블)을 정의한다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "OpenTravel Specification (cruise message set: dining arrangements)",
+        "org": "OpenTravel Alliance",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Cruise Ship Dining: Traditional vs Open Seating",
+        "org": "Cruise industry",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Flexible Versus Traditional Dining",
+        "org": "Cruise industry",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14 8v12a3 3 0 0 0 6 0V8M17 8v32\"/><path d=\"M31 8c-3 0-5 4-5 9s2 7 5 7M31 8v32\"/><circle cx=\"24\" cy=\"24\" r=\"21\" opacity=\"0\"/></svg>"
+  },
+  {
+    "id": "repositioning-cruise",
+    "term": "Repositioning Cruise",
+    "term_ko": "리포지셔닝 크루즈(Repositioning Cruise)",
+    "abbreviation": "",
+    "aliases": [
+      "Repo Cruise",
+      "Repositioning Sailing",
+      "One-Way Cruise"
+    ],
+    "category": "cruise",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "A one-way voyage whose embarkation and disembarkation ports differ, run to relocate a ship between seasonal deployment regions (for example trans-Atlantic between the Caribbean and the Mediterranean, or between Alaska and the Caribbean). Because the ship must move anyway, these sailings are sold as a distinct, heavily discounted and widely distributed fare product.",
+    "definition_ko": "승선 항구와 하선 항구가 서로 다른 편도 항해로, 선박을 계절별 배치 지역 사이로 이동시키기 위해 운항한다(예: 카리브해와 지중해 사이 대서양 횡단, 또는 알래스카와 카리브해 사이). 어차피 선박을 이동시켜야 하므로, 이 항차는 별개의 대폭 할인되고 널리 유통되는 운임 상품으로 판매된다.",
+    "longDef": "Cruise lines deploy ships seasonally (e.g. Alaska in summer, Caribbean in winter) and must reposition the vessel between regions; rather than sail empty, they sell the relocation as a longer, often port-light itinerary with many sea days at attractive per-night pricing. As a one-way itinerary the embarkation and disembarkation ports differ, which complicates flights and transfers and raises distinct visa, customs, and Advance Passenger Information (APIS) compliance considerations because guests begin and end in different countries. Repositioning sailings are a foundational deployment concept that drives a recognizable fare product across distribution channels.",
+    "longDef_ko": "크루즈 선사는 선박을 계절별로 배치하며(예: 여름엔 알래스카, 겨울엔 카리브해) 지역 간에 선박을 재배치해야 한다. 빈 배로 항해하기보다 그 이동을 항해일이 많은 더 긴, 흔히 기항지가 적은 일정으로 매력적인 1박당 가격에 판매한다. 편도 일정이므로 승선·하선 항구가 다르며, 이는 항공편과 이동을 복잡하게 하고 선객이 서로 다른 나라에서 시작·종료하기 때문에 별도의 비자·세관·사전입국정보(APIS) 준수 고려를 높인다. 리포지셔닝 항차는 유통 채널 전반에서 식별 가능한 운임 상품을 만들어 내는 근간적 배치 개념이다.",
+    "standardBody": "",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Embarkation"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Port of Call"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Itinerary"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Revenue Management"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Itinerary",
+        "explanation": "An itinerary is any planned sequence of ports; a repositioning cruise is a specific kind of itinerary defined by different start and end ports because the ship is being moved between regions.",
+        "explanation_ko": "Itinerary는 계획된 항구의 순서 일반을 뜻하고, 리포지셔닝 크루즈는 선박을 지역 간 이동시키느라 출발·종료 항구가 다른 특정 종류의 일정이다."
+      },
+      {
+        "targetTerm": "Origin & Destination",
+        "explanation": "In air pricing Origin & Destination frames a journey's true endpoints for fare construction; a repositioning cruise is the maritime analogue of a genuinely different-origin/different-destination journey, contrasting with the round-trip itineraries that dominate cruise.",
+        "explanation_ko": "항공 가격 책정에서 Origin & Destination은 운임 구성을 위해 여정의 실제 출발·도착점을 규정하고, 리포지셔닝 크루즈는 출발지와 도착지가 실제로 다른 여정의 해상 대응 개념으로 크루즈에서 주류인 왕복 일정과 대비된다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Repositioning cruise",
+        "org": "Wikipedia",
+        "version": "",
+        "section": "",
+        "url": "https://en.wikipedia.org/wiki/Repositioning_cruise"
+      },
+      {
+        "name": "What Are Repositioning Cruises and Why Take One?",
+        "org": "Cruise Critic",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"34\" r=\"3\"/><circle cx=\"36\" cy=\"14\" r=\"3\"/><path d=\"M14 32C22 24 26 22 34 16\"/><path d=\"M30 14h6v6\"/></svg>"
+  },
+  {
+    "id": "onboard-credit-obc",
+    "term": "Onboard Credit (OBC)",
+    "term_ko": "선상 크레딧(Onboard Credit, OBC)",
+    "abbreviation": "OBC",
+    "aliases": [
+      "Shipboard Credit",
+      "Onboard Spending Credit",
+      "Ship Board Credit"
+    ],
+    "category": "cruise",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "Spendable credit applied to a guest's shipboard account (typically per cabin) that can be used for onboard purchases such as drinks, specialty dining, the spa, shore excursions, and gift-shop items. Offered by cruise lines, travel agencies, and credit cards, it is the most common cruise booking incentive and a commercial lever distinct from a fare discount.",
+    "definition_ko": "선객의 선상 계정에 적립되는(보통 선실당) 사용 가능한 크레딧으로, 음료·스페셜티 다이닝·스파·기항지 투어·기념품점 구매 등 선내 결제에 쓸 수 있다. 크루즈 선사, 여행사, 신용카드가 제공하며, 가장 흔한 크루즈 예약 인센티브이자 운임 할인과 구별되는 상업적 수단이다.",
+    "longDef": "Onboard credit is a marketing and distribution lever rather than a price cut: the headline fare is unchanged, but the guest receives a balance to spend onboard, which protects the line's published pricing and rate parity while still incentivizing the booking and stimulating high-margin onboard spend. OBC can originate from the cruise line (promotions, loyalty, compensation for itinerary changes), from travel advisors who rebate part of their commission, or from co-branded cards. It is usually applied per stateroom, may be use-it-or-lose-it by the end of the voyage, and can be refundable or non-refundable depending on its source.",
+    "longDef_ko": "선상 크레딧은 가격 인하가 아니라 마케팅·유통 수단이다. 표면 운임은 그대로 두되 선객은 선내에서 쓸 수 있는 잔액을 받는다. 이는 선사의 공표 가격과 rate parity를 보호하면서도 예약을 유도하고 마진 높은 선내 지출을 자극한다. OBC는 선사(프로모션, 로열티, 일정 변경 보상), 자기 수수료 일부를 환급하는 여행 어드바이저, 또는 제휴 카드에서 나올 수 있다. 보통 선실당 적용되며 항해 종료까지 쓰지 않으면 소멸할 수 있고, 출처에 따라 환불 가능하거나 불가능할 수 있다.",
+    "standardBody": "",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Cruise-Only Fare"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Rate Parity"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Shore Excursion"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Non-Commissionable Fare (NCF)"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Rate Parity",
+        "explanation": "Onboard credit is a way to sweeten a booking without breaking rate parity — the advertised fare stays identical across channels while value is added through spendable credit rather than a lower price.",
+        "explanation_ko": "선상 크레딧은 rate parity를 깨지 않으면서 예약을 더 매력적으로 만드는 방법이다. 광고 운임은 채널 전반에서 동일하게 유지되고, 가치는 더 낮은 가격이 아니라 사용 가능한 크레딧으로 더해진다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Onboard credit on cruises: How to get it and use it",
+        "org": "Cruise industry",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "What is Onboard Credit (OBC)?",
+        "org": "Cruise industry",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"14\" width=\"36\" height=\"22\" rx=\"3\"/><line x1=\"6\" y1=\"22\" x2=\"42\" y2=\"22\"/><circle cx=\"31\" cy=\"30\" r=\"3\"/><line x1=\"12\" y1=\"30\" x2=\"20\" y2=\"30\"/></svg>"
+  },
+  {
+    "id": "muster-drill",
+    "term": "Muster Drill",
+    "term_ko": "비상소집훈련(Muster Drill)",
+    "abbreviation": "",
+    "aliases": [
+      "Safety Drill",
+      "Lifeboat Drill",
+      "Emergency Drill",
+      "Boat Drill",
+      "Muster"
+    ],
+    "category": "cruise",
+    "conceptType": "regulation",
+    "status": "active",
+    "definition": "The mandatory pre-departure safety assembly that every embarking passenger must complete, in which guests learn their muster (assembly) station and emergency procedures. Required under SOLAS Chapter III, it was tightened after the 2012 Costa Concordia disaster to occur before or immediately upon departure for newly embarked passengers, effective 1 January 2015.",
+    "definition_ko": "승선하는 모든 선객이 반드시 완료해야 하는 출항 전 안전 소집으로, 선객이 자신의 비상소집(집결) 위치와 비상 절차를 익히는 절차이다. SOLAS 제3장(Chapter III)에 따라 의무화되어 있으며, 2012년 Costa Concordia 참사 이후 새로 승선한 선객에 대해 출항 전 또는 출항 즉시 실시하도록 강화되어 2015년 1월 1일부로 발효되었다.",
+    "longDef": "SOLAS regulation III/19 governs emergency training and drills; following the Costa Concordia grounding, IMO amended the regulation (via resolution MSC.350(92)) so that the passenger muster drill must take place before departure, or immediately upon departure, rather than within 24 hours of embarkation as previously permitted — entering into force 1 January 2015. Operationally the drill is a foundational embarkation-process step that booking and check-in systems must prompt, enforce, and record (often now partly digital with in-person station check-in), since a ship cannot safely sail until newly boarded guests have mustered.",
+    "longDef_ko": "SOLAS 규정 III/19는 비상 훈련과 소집을 규율한다. Costa Concordia 좌초 이후 IMO는 (결의 MSC.350(92)을 통해) 이 규정을 개정하여, 종전에 허용되던 승선 후 24시간 이내가 아니라 출항 전 또는 출항 즉시 선객 비상소집훈련을 실시하도록 했으며, 2015년 1월 1일 발효되었다. 운영상 이 훈련은 예약·체크인 시스템이 안내·강제·기록해야 하는(이제는 흔히 부분 디지털화되고 대면 집결지 체크인을 병행하는) 근간적 승선 절차 단계이다. 새로 승선한 선객이 소집을 마치기 전에는 선박이 안전하게 출항할 수 없기 때문이다.",
+    "standardBody": "International Maritime Organization (IMO)",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Embarkation"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Port of Call"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Embarkation",
+        "explanation": "Embarkation is the full boarding/check-in process; the muster drill is one mandatory, SOLAS-regulated safety step within it that must be completed before the ship departs.",
+        "explanation_ko": "Embarkation은 전체 승선·체크인 과정이고, muster drill은 그 안에서 선박 출항 전에 반드시 완료해야 하는, SOLAS가 규율하는 의무 안전 절차 하나이다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Cruise ship passenger drill requirements come into force on 1 January 2015",
+        "org": "International Maritime Organization (IMO)",
+        "version": "SOLAS reg. III/19 (amended by MSC.350(92))",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "What is a muster drill? (cruise FAQ)",
+        "org": "Cruise industry",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"15\"/><circle cx=\"24\" cy=\"24\" r=\"6\"/><line x1=\"24\" y1=\"9\" x2=\"24\" y2=\"15\"/><line x1=\"24\" y1=\"33\" x2=\"24\" y2=\"39\"/><line x1=\"9\" y1=\"24\" x2=\"15\" y2=\"24\"/><line x1=\"33\" y1=\"24\" x2=\"39\" y2=\"24\"/></svg>"
+  }
+]

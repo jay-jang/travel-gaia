@@ -1222,5 +1222,406 @@
       }
     ],
     "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14 16 a14 14 0 1 1 -3 12\"/><polyline points=\"14 8 14 16 22 16\"/><circle cx=\"24\" cy=\"24\" r=\"3\" fill=\"currentColor\" stroke=\"none\"/><line x1=\"24\" y1=\"24\" x2=\"33\" y2=\"19\"/></svg>"
+  },
+  {
+    "id": "capacity-purchase-agreement",
+    "term": "Capacity Purchase Agreement",
+    "term_ko": "캐퍼시티 구매 협정(CPA)",
+    "abbreviation": "CPA",
+    "aliases": [
+      "CPA",
+      "Capacity Purchase Agreement",
+      "Capacity-Purchase Agreement",
+      "Fee-per-Departure Agreement"
+    ],
+    "category": "air-partner",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "A partner arrangement in which a regional or operating carrier flies aircraft and crew on behalf of a mainline airline for a fixed fee (typically per block hour or per departure), while the mainline controls the schedule, fares, inventory, and revenue and markets the flights entirely under its own brand and flight numbers. The mainline bears the commercial revenue risk and the regional carrier is paid a contracted amount largely independent of how many seats are sold.",
+    "definition_ko": "지선(regional) 또는 운항 항공사가 메인라인(mainline) 항공사를 대신해 항공기와 승무원을 운항하고 고정 수수료(일반적으로 블록 아워당 또는 출발편당)를 받는 파트너 협정으로, 메인라인이 스케줄·운임·좌석 재고·수익을 통제하며 전적으로 자사 브랜드와 편명으로 항공편을 마케팅한다. 메인라인이 상업적 수익 위험을 부담하고, 지선 항공사는 좌석 판매량과 대체로 무관하게 계약된 금액을 지급받는다.",
+    "longDef": "Under a capacity purchase agreement (CPA, also called a fee-per-departure contract) the mainline carrier purchases the regional partner's capacity outright: the mainline sets the routes, times, and fares, takes all ticket revenue, and pays the regional a fixed fee plus pass-through costs (such as fuel), insulating the regional from demand risk. Flights are sold under the mainline's designator and brand (e.g., a mainline 'Express'/'Connection' product), so passengers usually perceive a single carrier even though a separate certificated airline operates the aircraft. CPAs underpin the bulk of US regional flying. They differ from a block space agreement (where a marketing carrier buys only a fixed block of seats on an otherwise independently sold flight) and from a wet lease/ACMI (where an aircraft with crew is leased, but typically without the mainline assuming full network, pricing, and revenue control of the operation).",
+    "longDef_ko": "캐퍼시티 구매 협정(CPA, fee-per-departure 계약이라고도 함)에서 메인라인 항공사는 지선 파트너의 공급력을 전부 매입한다. 메인라인이 노선·시각·운임을 정하고 모든 항공권 수익을 가져가며, 지선에는 고정 수수료에 연료 등 전가(pass-through) 비용을 더해 지급하여 지선을 수요 위험으로부터 차단한다. 항공편은 메인라인의 지정자 코드와 브랜드(예: 메인라인의 'Express'/'Connection' 상품)로 판매되므로, 별도의 인가를 받은 항공사가 항공기를 운항하더라도 승객은 대개 단일 항공사로 인식한다. CPA는 미국 지선 운항의 대부분을 떠받친다. 이는 (판매 항공사가 별도로 독립 판매되는 항공편의 고정 좌석 블록만 매입하는) 블록 스페이스 협정이나, (승무원 포함 항공기를 임차하지만 메인라인이 네트워크·가격·수익 전반의 통제권을 인수하지는 않는 것이 일반적인) 웻 리스/ACMI와 구별된다.",
+    "standardBody": "",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Block Space Agreement"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Wet Lease"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Codeshare"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Marketing Carrier"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Operating Carrier"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Revenue Management"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Block Space Agreement",
+        "explanation": "In a block space agreement the marketing carrier buys only a fixed block of seats on a flight the operating carrier otherwise sells and controls; in a CPA the mainline buys the entire capacity of the flight and holds all schedule, pricing, inventory, and revenue control.",
+        "explanation_ko": "블록 스페이스 협정에서는 판매 항공사가 운항 항공사가 별도로 판매·통제하는 항공편의 고정 좌석 블록만 매입하지만, CPA에서는 메인라인이 항공편의 전체 공급력을 매입하고 스케줄·가격·재고·수익 통제권을 모두 보유한다."
+      },
+      {
+        "targetTerm": "Wet Lease",
+        "explanation": "A wet lease/ACMI provides aircraft, crew, maintenance, and insurance per block hour; a CPA is a longer-term commercial framework where the regional flies entirely under the mainline's brand and revenue control, not just supplying lift.",
+        "explanation_ko": "웻 리스/ACMI는 블록 아워당 항공기·승무원·정비·보험을 제공하는 것이고, CPA는 지선이 단순히 공급력만 제공하는 것이 아니라 전적으로 메인라인의 브랜드와 수익 통제 하에 운항하는 더 장기적인 상업적 체계다."
+      },
+      {
+        "targetTerm": "Codeshare",
+        "explanation": "A codeshare places one carrier's code on another's independently operated and sold flight; under a CPA the regional has effectively no independent commercial existence on the route—the mainline controls everything and bears the revenue risk.",
+        "explanation_ko": "공동운항은 한 항공사의 코드를 다른 항공사가 독립적으로 운항·판매하는 항공편에 부여하는 것이고, CPA에서는 지선이 해당 노선에서 사실상 독립적인 상업적 존재가 없으며 메인라인이 모든 것을 통제하고 수익 위험을 부담한다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "What Are Capacity Purchase Agreements In Aviation?",
+        "org": "Simple Flying",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Flight schedules under partnership: the effects of capacity purchase agreements on airline schedule buffers",
+        "org": "Journal of Air Transport Management",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 22l13-3 6-8 3 1-3 8 9-2 3-3 2 1-1 5\"/><rect x=\"30\" y=\"30\" width=\"14\" height=\"12\" rx=\"2\"/><path d=\"M34 30v-3a3 3 0 0 1 6 0v3\"/><path d=\"M37 34v4\"/></svg>"
+  },
+  {
+    "id": "interline-electronic-ticketing",
+    "term": "Interline Electronic Ticketing",
+    "term_ko": "인터라인 전자항공권(IET)",
+    "abbreviation": "IET",
+    "aliases": [
+      "IET",
+      "Interline Electronic Ticketing",
+      "Interline E-ticketing",
+      "Interline E-Ticket",
+      "IeT"
+    ],
+    "category": "air-partner",
+    "conceptType": "standard",
+    "status": "active",
+    "definition": "The capability for two airlines to issue, exchange, and accept each other's electronic ticket coupons on a single itinerary, governed by IATA's e-ticketing standards (notably Resolution 722f). IET lets a passenger hold one electronic ticket whose coupons span multiple carriers, and it is the technical prerequisite for modern interline travel and for re-accommodating passengers onto partner airlines during disruptions.",
+    "definition_ko": "두 항공사가 하나의 여정에서 서로의 전자항공권 쿠폰을 발행·교환·인수할 수 있는 기능으로, IATA의 e-ticketing 표준(특히 Resolution 722f)에 따라 규율된다. IET를 통해 승객은 여러 항공사를 가로지르는 쿠폰을 가진 하나의 전자항공권을 보유할 수 있으며, 이는 현대적 인터라인 여행과 운항 중단 시 파트너 항공사로의 승객 재수용을 위한 기술적 전제 조건이다.",
+    "longDef": "Interline electronic ticketing (IET) replaced the paper interline ticket: instead of physically endorsing a coupon to another carrier, the validating carrier issues an electronic ticket whose coupons can be 'owned' and used on a partner airline, with the two carriers' systems exchanging coupon status and settlement data. Carriers must build a bilateral IET link (typically a Bilateral Interline E-ticketing Agreement, BIETA) on top of their interline traffic agreement before they can interline electronically. IET is what makes through-checking, online coupon status updates, and—critically—real-time involuntary re-accommodation onto a partner during IROPS possible. It is settled financially through interline billing and the IATA Clearing House and underlies the standard interline framework alongside MITA/BIETA.",
+    "longDef_ko": "인터라인 전자항공권(IET)은 종이 인터라인 항공권을 대체했다. 쿠폰을 물리적으로 다른 항공사에 배서(endorse)하는 대신, 발권 항공사(validating carrier)가 전자항공권을 발행하면 그 쿠폰을 파트너 항공사가 '소유'하고 사용할 수 있으며, 두 항공사의 시스템이 쿠폰 상태와 정산 데이터를 교환한다. 항공사가 전자적으로 인터라인하려면 인터라인 운송 협정 위에 양자 IET 링크(일반적으로 BIETA, Bilateral Interline E-ticketing Agreement)를 구축해야 한다. IET는 일관 위탁(through-checking), 실시간 쿠폰 상태 갱신, 그리고 결정적으로 IROPS 중 파트너로의 실시간 비자발적 재수용을 가능하게 한다. 그 결과는 인터라인 청구와 IATA Clearing House를 통해 재무적으로 정산되며, MITA/BIETA와 함께 표준 인터라인 체계의 기반을 이룬다.",
+    "standardBody": "IATA",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Interline"
+      },
+      {
+        "type": "related",
+        "targetTerm": "MITA"
+      },
+      {
+        "type": "related",
+        "targetTerm": "E-ticket"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Flight Coupon"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Re-accommodation"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Validating Carrier"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Interline",
+        "explanation": "Interline is the commercial agreement to accept another carrier's ticket; IET is the specific electronic-ticketing capability that makes that acceptance work on e-tickets rather than paper coupons.",
+        "explanation_ko": "인터라인은 다른 항공사의 항공권을 인수하기로 하는 상업적 협정이고, IET는 그 인수를 종이 쿠폰이 아닌 전자항공권으로 작동하게 하는 구체적인 전자발권 기능이다."
+      },
+      {
+        "targetTerm": "MITA",
+        "explanation": "MITA establishes the standard multilateral interline relationship; IET is the technical e-ticketing layer (and BIETA the bilateral link) that two MITA carriers must implement to exchange electronic coupons.",
+        "explanation_ko": "MITA는 표준 다자간 인터라인 관계를 수립하고, IET는 두 MITA 항공사가 전자 쿠폰을 교환하기 위해 구현해야 하는 기술적 전자발권 계층(그리고 BIETA는 그 양자 링크)이다."
+      },
+      {
+        "targetTerm": "E-ticket",
+        "explanation": "An e-ticket is the electronic record of a single carrier's ticket; IET extends that concept so coupons on one electronic ticket can span and be honored by multiple interlining carriers.",
+        "explanation_ko": "전자항공권은 단일 항공사 항공권의 전자 기록이고, IET는 그 개념을 확장하여 하나의 전자항공권상의 쿠폰이 여러 인터라인 항공사를 가로질러 인정될 수 있도록 한다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Multilateral & Bilateral Interline Traffic Agreements (MITA & BIETA) — interline e-ticketing",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Passenger Services Conference Resolutions Manual (PSCRM), Resolution 722f (Electronic Ticketing)",
+        "org": "IATA",
+        "version": "",
+        "section": "Resolution 722f",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"14\" width=\"20\" height=\"14\" rx=\"2\"/><path d=\"M6 19h20\"/><path d=\"M10 24h6\"/><rect x=\"24\" y=\"22\" width=\"18\" height=\"14\" rx=\"2\"/><path d=\"M24 27h18\"/><path d=\"M28 32h6\"/><path d=\"M26 18l4 4-4 4\" /></svg>"
+  },
+  {
+    "id": "antitrust-immunity",
+    "term": "Antitrust Immunity",
+    "term_ko": "반독점 면제(ATI)",
+    "abbreviation": "ATI",
+    "aliases": [
+      "ATI",
+      "Antitrust Immunity",
+      "Anti-trust Immunity",
+      "Immunised Joint Venture",
+      "Immunized Alliance"
+    ],
+    "category": "air-partner",
+    "conceptType": "regulation",
+    "status": "active",
+    "definition": "A regulatory grant—issued in the US by the Department of Transportation (DOT), with equivalents from other competition authorities—that legally exempts cooperating airlines from antitrust/competition law for specified conduct, allowing them to coordinate fares, capacity, scheduling, and to share revenue or profit on defined markets. ATI is the governance prerequisite that makes a metal-neutral joint venture lawful.",
+    "definition_ko": "미국에서는 교통부(DOT)가, 다른 나라에서는 그에 상응하는 경쟁 당국이 부여하는 규제상의 허가로, 협력하는 항공사를 특정 행위에 대해 반독점/경쟁법으로부터 합법적으로 면제하여 운임·공급(capacity)·스케줄을 조율하고 정해진 시장에서 수익 또는 이익을 공유할 수 있게 한다. ATI는 metal-neutral 조인트 벤처를 합법화하는 거버넌스 전제 조건이다.",
+    "longDef": "Without antitrust immunity, airlines coordinating prices, capacity, and revenue—the essence of a deep joint venture—would risk violating competition law. ATI is granted after a regulator (e.g., the US DOT) finds the cooperation is in the public interest and not substantially anticompetitive, often subject to conditions such as slot remedies, carve-outs of certain city-pairs, or periodic review. An ATI grant typically authorizes a specific set of carriers over a specific geography (e.g., transatlantic), and it is what permits the partners to pool and re-divide revenue and behave commercially as one carrier on those routes. ATI governs the lawfulness of coordination; metal neutrality describes the economic design (indifference to whose aircraft flies the passenger) that immunized JVs adopt.",
+    "longDef_ko": "반독점 면제가 없으면, 깊은 수준의 조인트 벤처의 본질인 가격·공급·수익 조율은 경쟁법 위반 위험을 안게 된다. ATI는 규제 당국(예: 미국 DOT)이 해당 협력이 공익에 부합하며 경쟁을 실질적으로 저해하지 않는다고 판단한 후 부여되며, 흔히 슬롯 시정조치, 특정 도시 쌍의 면제 대상 제외(carve-out), 정기 재검토 같은 조건이 따른다. ATI 부여는 일반적으로 특정 지역(예: 대서양 횡단)에 대해 특정 항공사 집합을 인가하며, 이는 파트너들이 수익을 통합·재분배하고 그 노선에서 단일 항공사처럼 상업적으로 행동할 수 있게 하는 근거다. ATI는 조율의 합법성을 규율하고, metal neutrality는 면제받은 JV가 채택하는 경제적 설계(승객이 누구의 항공기를 이용하는지에 대한 무차별)를 가리킨다.",
+    "standardBody": "",
+    "providerTerms": [
+      {
+        "provider": "U.S. Department of Transportation",
+        "term": "Antitrust immunity",
+        "context": "The US DOT grants antitrust immunity to international airline alliances and joint ventures after a public-interest review.",
+        "context_ko": "미국 DOT는 공익 심사를 거쳐 국제 항공 동맹 및 조인트 벤처에 반독점 면제를 부여한다.",
+        "relationship": "same"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Joint Venture"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Airline Alliance"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Metal Neutrality"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Slot"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Metal Neutrality",
+        "explanation": "Antitrust immunity is the regulatory permission that makes deep coordination legal; metal neutrality is the economic principle of the resulting joint venture (partners indifferent to whose aircraft a passenger flies because revenue/profit is pooled).",
+        "explanation_ko": "반독점 면제는 깊은 조율을 합법화하는 규제상의 허가이고, metal neutrality는 그 결과로 만들어지는 조인트 벤처의 경제적 원리(수익/이익이 통합되어 승객이 누구의 항공기를 이용하든 파트너들이 무차별)다."
+      },
+      {
+        "targetTerm": "Joint Venture",
+        "explanation": "A joint venture is the commercial cooperation itself; antitrust immunity is the regulatory grant that legally permits the JV's fare, capacity, and revenue coordination.",
+        "explanation_ko": "조인트 벤처는 상업적 협력 그 자체이고, 반독점 면제는 그 JV의 운임·공급·수익 조율을 합법적으로 허용하는 규제상의 부여다."
+      },
+      {
+        "targetTerm": "Airline Alliance",
+        "explanation": "Alliance membership is broad cooperation that generally does not require immunity; antitrust immunity is needed specifically when partners go further and coordinate pricing/capacity and share revenue on defined markets.",
+        "explanation_ko": "동맹 가입은 일반적으로 면제가 필요 없는 광범위한 협력이고, 반독점 면제는 파트너들이 한 걸음 더 나아가 정해진 시장에서 가격/공급을 조율하고 수익을 공유할 때 구체적으로 필요하다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "International Air Alliances: Greater Transparency Needed on DOT's Efforts to Monitor the Effects of Antitrust Immunity (GAO-19-237)",
+        "org": "U.S. Government Accountability Office",
+        "version": "",
+        "section": "",
+        "url": "https://www.gao.gov/products/gao-19-237"
+      },
+      {
+        "name": "Antitrust immunity for international airline alliances and joint ventures (alliance/codeshare oversight)",
+        "org": "U.S. Department of Transportation",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 5l15 6v9c0 10-7 16-15 19-8-3-15-9-15-19v-9z\"/><path d=\"M17 24l5 5 9-11\"/></svg>"
+  },
+  {
+    "id": "metal-neutrality",
+    "term": "Metal Neutrality",
+    "term_ko": "메탈 뉴트럴리티(metal neutrality)",
+    "abbreviation": "",
+    "aliases": [
+      "Metal-Neutral",
+      "Metal Neutral",
+      "Metal Neutrality",
+      "Metal-Neutral Joint Venture"
+    ],
+    "category": "air-partner",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "The joint-venture principle—formalized in US DOT analysis—under which partner airlines are economically indifferent to which carrier's aircraft (its 'metal') actually flies a given passenger, because revenue or profit on the covered markets is pooled and shared. Metal neutrality removes each partner's incentive to favor its own flights, so the JV can be optimized as if it were a single carrier.",
+    "definition_ko": "미국 DOT의 분석에서 공식화된 조인트 벤처 원리로, 대상 시장의 수익 또는 이익이 통합·공유되기 때문에 파트너 항공사들이 특정 승객을 실제로 어느 항공사의 항공기('metal', 기재)가 운송하는지에 대해 경제적으로 무차별해지는 것을 말한다. metal neutrality는 각 파트너가 자사 항공편을 우대할 유인을 제거하여, JV를 마치 단일 항공사처럼 최적화할 수 있게 한다.",
+    "longDef": "In a metal-neutral joint venture the partners pool the revenue (or profit) of the in-scope markets and divide it by an agreed formula, so an extra passenger carried generates the same economic outcome for each partner regardless of which airline operates the flight. This alignment lets the JV jointly plan schedules, set fares, and allocate capacity to maximize the combined result rather than any one carrier's bookings, and it is the defining feature that distinguishes a true joint venture from a looser codeshare or alliance. Metal neutrality is the economic design; it is typically enabled by a grant of antitrust immunity, which provides the legal permission for the underlying fare, capacity, and revenue coordination.",
+    "longDef_ko": "metal-neutral 조인트 벤처에서 파트너들은 적용 대상 시장의 수익(또는 이익)을 통합하여 합의된 산식으로 분배하므로, 한 명의 승객을 더 운송했을 때 어느 항공사가 그 항공편을 운항하든 각 파트너에게 동일한 경제적 결과가 발생한다. 이러한 정렬(alignment)은 JV가 어느 한 항공사의 예약이 아니라 통합 성과를 극대화하도록 스케줄을 공동 계획하고 운임을 설정하며 공급을 배분할 수 있게 하며, 이는 진정한 조인트 벤처를 느슨한 공동운항이나 동맹과 구별 짓는 정의적 특징이다. metal neutrality는 경제적 설계이며, 일반적으로 그 기반이 되는 운임·공급·수익 조율에 대한 법적 허가를 제공하는 반독점 면제 부여를 통해 가능해진다.",
+    "standardBody": "",
+    "providerTerms": [
+      {
+        "provider": "U.S. Department of Transportation",
+        "term": "Metal neutrality",
+        "context": "The US DOT characterizes immunized joint ventures as 'metal neutral' when partners are economically indifferent to which carrier operates a flight because revenue/profit is shared.",
+        "context_ko": "미국 DOT는 수익/이익이 공유되어 어느 항공사가 항공편을 운항하든 파트너들이 경제적으로 무차별할 때, 면제받은 조인트 벤처를 'metal neutral'로 규정한다.",
+        "relationship": "same"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Joint Venture"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Antitrust Immunity"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Airline Alliance"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Proration"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Antitrust Immunity",
+        "explanation": "Metal neutrality is the economic outcome (pooled revenue makes partners indifferent to whose aircraft flies the passenger); antitrust immunity is the regulatory grant that legally permits the coordination needed to achieve it.",
+        "explanation_ko": "metal neutrality는 경제적 결과(수익 통합으로 파트너들이 누구의 항공기가 승객을 운송하든 무차별해짐)이고, 반독점 면제는 이를 달성하는 데 필요한 조율을 합법적으로 허용하는 규제상의 부여다."
+      },
+      {
+        "targetTerm": "Joint Venture",
+        "explanation": "A joint venture is the overall cooperation structure; metal neutrality is the specific revenue/profit-pooling property that makes a JV behave like a single carrier rather than two competing ones.",
+        "explanation_ko": "조인트 벤처는 전체 협력 구조이고, metal neutrality는 JV가 경쟁하는 두 항공사가 아니라 단일 항공사처럼 행동하게 만드는 구체적인 수익/이익 통합 속성이다."
+      },
+      {
+        "targetTerm": "Codeshare",
+        "explanation": "A codeshare can still leave each carrier favoring its own flights for its own revenue; metal neutrality removes that incentive entirely by pooling the economic result across partners.",
+        "explanation_ko": "공동운항에서는 각 항공사가 자사 수익을 위해 여전히 자사 항공편을 우대할 수 있지만, metal neutrality는 파트너 전반에 걸쳐 경제적 결과를 통합하여 그 유인을 완전히 제거한다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Antitrust Immunity and International Airline Alliances",
+        "org": "U.S. Department of Justice, Antitrust Division",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Joint ventures help airlines deliver choice to consumers (metal neutrality explained)",
+        "org": "IATA",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 6v6M24 36v6\"/><polygon points=\"24 12 30 18 24 24 18 18\"/><path d=\"M10 30l6-3 4 5-6 3z\" fill=\"currentColor\" stroke=\"none\"/><path d=\"M38 30l-6-3-4 5 6 3z\" fill=\"currentColor\" stroke=\"none\"/><path d=\"M14 24h-6M40 24h-6\"/></svg>"
+  },
+  {
+    "id": "standard-schedules-message",
+    "term": "Standard Schedules Message",
+    "term_ko": "표준 스케줄 메시지(SSM)",
+    "abbreviation": "SSM",
+    "aliases": [
+      "SSM",
+      "Standard Schedules Message",
+      "Standard Schedule Message"
+    ],
+    "category": "air-partner",
+    "conceptType": "standard",
+    "status": "active",
+    "definition": "The IATA-standard message format (defined in the Standard Schedules Information Manual, SSIM Chapter 4) by which an airline distributes permanent flight-schedule creations, changes, and cancellations to GDSs, partners, and other recipients. The SSM communicates the carrier's regular operating program; its companion, the Ad-hoc Schedule Message (ASM, SSIM Chapter 5), handles short-term, flight-specific or irregular adjustments.",
+    "definition_ko": "항공사가 영구적인 항공편 스케줄의 생성·변경·취소를 GDS, 파트너 및 기타 수신자에게 배포하는 IATA 표준 메시지 포맷(SSIM 제4장에서 정의). SSM은 항공사의 정규 운항 프로그램을 전달하며, 그 짝이 되는 임시 스케줄 메시지(ASM, SSIM 제5장)는 단기적이고 특정 항공편 단위이거나 비정기적인 조정을 처리한다.",
+    "longDef": "The Standard Schedules Message (SSM) is the operational mechanism behind schedule changes: airlines send SSM actions—such as NEW (create a flight), CNL (cancel), TIM (time change), EQT (equipment change), RPL (replace), and SKD (schedule period)—in the standardized SSIM structure so that downstream systems can update their flight databases consistently. SSMs carry recurring, dated schedule periods, whereas the Ad-hoc Schedule Message (ASM) is used for individual flight legs and last-minute changes closer to departure. Together SSM/ASM are how published schedules propagate to GDSs and reservation systems, and they are the source of the schedule-change notifications that drive PNR queueing, involuntary reissue, and re-accommodation.",
+    "longDef_ko": "표준 스케줄 메시지(SSM)는 스케줄 변경의 운영적 메커니즘이다. 항공사는 NEW(항공편 생성), CNL(취소), TIM(시간 변경), EQT(기재 변경), RPL(대체), SKD(스케줄 기간) 같은 SSM 액션을 표준화된 SSIM 구조로 전송하여, 하류(downstream) 시스템이 자신의 항공편 데이터베이스를 일관되게 갱신할 수 있게 한다. SSM은 반복적이고 기간이 지정된 스케줄을 전달하는 반면, 임시 스케줄 메시지(ASM)는 개별 항공편 구간(leg)과 출발에 임박한 막판 변경에 사용된다. SSM/ASM은 함께 게시된 스케줄이 GDS와 예약 시스템으로 전파되는 방식이며, PNR 큐잉, 비자발적 재발권, 재수용을 유발하는 스케줄 변경 통지의 원천이다.",
+    "standardBody": "IATA",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Schedule Change"
+      },
+      {
+        "type": "related",
+        "targetTerm": "GDS"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Flight Number"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Codeshare"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Queue"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Aircraft Type Code"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Schedule Change",
+        "explanation": "A schedule change is the business event of altering a published flight; the SSM is the standardized IATA message format that actually carries that creation, change, or cancellation to GDSs and partners.",
+        "explanation_ko": "스케줄 변경은 게시된 항공편을 변경하는 비즈니스 사건이고, SSM은 그 생성·변경·취소를 실제로 GDS와 파트너에게 전달하는 표준화된 IATA 메시지 포맷이다."
+      },
+      {
+        "targetTerm": "Codeshare",
+        "explanation": "SSM is the messaging that distributes schedules (and can convey codeshare/operating-carrier data per SSIM); a codeshare is the commercial arrangement whose marketing and operating flight data those messages communicate.",
+        "explanation_ko": "SSM은 스케줄을 배포하는 메시징(SSIM에 따라 공동운항/운항 항공사 데이터를 전달할 수 있음)이고, 공동운항은 그 메시지가 전달하는 판매·운항 항공편 데이터의 기반이 되는 상업적 협정이다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Standard Schedules Information Manual (SSIM), Chapter 4 — Standard Schedules Message (SSM)",
+        "org": "IATA",
+        "version": "",
+        "section": "Chapter 4",
+        "url": ""
+      },
+      {
+        "name": "Standard Schedules Information Manual (SSIM), Chapter 5 — Ad-hoc Schedule Message (ASM)",
+        "org": "IATA",
+        "version": "",
+        "section": "Chapter 5",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 12h32a2 2 0 0 1 2 2v18a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V14a2 2 0 0 1 2-2z\"/><path d=\"M6 15l18 11 18-11\"/><path d=\"M14 38l5-5M34 38l-5-5\"/></svg>"
   }
 ]

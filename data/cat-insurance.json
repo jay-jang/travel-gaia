@@ -1,0 +1,765 @@
+[
+  {
+    "id": "trip-cancellation",
+    "term": "Trip Cancellation",
+    "abbreviation": "",
+    "aliases": [
+      "Trip Cancellation Insurance",
+      "Trip Cancellation Coverage"
+    ],
+    "category": "insurance",
+    "conceptType": "standard-term",
+    "status": "active",
+    "definition": "Trip cancellation is the dominant travel-insurance benefit, reimbursing a traveler's prepaid, non-refundable trip costs when a trip is cancelled before departure for a reason named as covered in the policy (such as illness, injury, death, or another listed event). It is the foundational pre-departure coverage and, together with trip interruption, makes up the largest share of the US travel-insurance market.",
+    "term_ko": "여행 취소 보장(Trip Cancellation)",
+    "definition_ko": "Trip Cancellation(여행 취소)은 여행 출발 전에 약관이 보장 사유로 명시한 이유(질병, 상해, 사망 등 열거된 사고)로 여행을 취소할 때 선결제한 환불 불가 비용을 보상하는, 여행자보험의 핵심 보장이다. 출발 전 단계의 기본 보장이며, 여행 중단 보장과 함께 미국 여행보험 시장에서 가장 큰 비중을 차지한다.",
+    "longDef": "Trip cancellation pays only for named perils — the policy lists covered reasons (illness/injury of the traveler, a traveling companion or a family member; death; jury duty; severe weather; carrier disruption; and similar events), so a cancellation for an unlisted reason is not reimbursed unless a Cancel For Any Reason upgrade is added. Because the benefit settles before any travel occurs, it covers prepaid non-refundable amounts such as airfare, hotel deposits, tours and cruises. Trip-cost protection (trip cancellation together with trip interruption) is the largest line in the US travel-insurance market, accounting for over two-thirds of industry revenue, and trip cancellation is generally regarded as the dominant single benefit within it.",
+    "longDef_ko": "Trip Cancellation은 열거 위험(named perils)만 보상한다. 약관이 보장 사유(본인·동반자·가족의 질병/상해, 사망, 배심원 의무, 악천후, 운송사 운항 차질 등)를 열거하므로, 목록에 없는 사유로 취소하면 Cancel For Any Reason 특약을 추가하지 않는 한 보상되지 않는다. 여행이 시작되기 전에 정산되므로 항공료, 호텔 예약금, 투어, 크루즈 등 선결제한 환불 불가 금액을 보장한다. 미국 여행보험 시장에서 여행비용 보장(취소와 중단을 합한 것)이 가장 큰 비중을 차지하며 업계 매출의 3분의 2를 넘고, 그중 취소가 일반적으로 가장 핵심적인 단일 보장으로 여겨진다.",
+    "standardBody": "",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "contrasts",
+        "targetTerm": "Trip Interruption"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Cancel For Any Reason (CFAR)"
+      },
+      {
+        "type": "child",
+        "targetTerm": "Comprehensive Travel Insurance"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Pre-Existing Condition Waiver"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Cancellation Policy"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Non-Refundable Rate"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Trip Interruption",
+        "explanation": "Trip cancellation applies before departure (the trip never starts); trip interruption applies after departure (the trip is cut short mid-journey).",
+        "explanation_ko": "Trip Cancellation은 출발 전(여행이 시작되지 않음)에 적용되고, Trip Interruption은 출발 후(여행 도중 중단)에 적용된다."
+      },
+      {
+        "targetTerm": "Cancel For Any Reason (CFAR)",
+        "explanation": "Standard trip cancellation pays 100% for listed reasons only; CFAR is an optional upgrade that pays a partial amount (typically 50-75%) for reasons not otherwise covered.",
+        "explanation_ko": "기본 Trip Cancellation은 열거 사유에 대해 100%를 지급하지만, CFAR은 보장 외 사유에 대해 부분(통상 50~75%)을 지급하는 선택 특약이다."
+      },
+      {
+        "targetTerm": "Cancellation Policy",
+        "explanation": "A cancellation policy is the supplier's own refund/penalty rules for a booking; trip cancellation insurance is a third-party indemnity that reimburses the traveler for amounts those rules make non-refundable.",
+        "explanation_ko": "Cancellation Policy는 예약에 대한 공급자 자체의 환불/위약 규정이고, Trip Cancellation 보험은 그 규정상 환불 불가가 된 금액을 여행자에게 보상하는 제3자 손해보전이다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "What Is Trip Cancellation Insurance? Coverage Explained",
+        "org": "Squaremouth",
+        "version": "",
+        "section": "",
+        "url": "https://www.squaremouth.com/travel-insurance-benefits/trip-cancellation"
+      },
+      {
+        "name": "Travel Insurance in the US - Industry Analysis",
+        "org": "IBISWorld",
+        "version": "",
+        "section": "",
+        "url": "https://www.ibisworld.com/united-states/industry/travel-insurance/4771/"
+      },
+      {
+        "name": "How the Travel Insurance Industry Works",
+        "org": "Investopedia",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"9\" y=\"8\" width=\"30\" height=\"32\" rx=\"3\"/><line x1=\"15\" y1=\"16\" x2=\"33\" y2=\"16\"/><line x1=\"15\" y1=\"22\" x2=\"27\" y2=\"22\"/><line x1=\"15\" y1=\"28\" x2=\"24\" y2=\"28\"/><line x1=\"28\" y1=\"28\" x2=\"40\" y2=\"40\"/><line x1=\"40\" y1=\"28\" x2=\"28\" y2=\"40\"/></svg>"
+  },
+  {
+    "id": "trip-interruption",
+    "term": "Trip Interruption",
+    "abbreviation": "",
+    "aliases": [
+      "Trip Interruption Insurance",
+      "Trip Interruption Coverage"
+    ],
+    "category": "insurance",
+    "conceptType": "standard-term",
+    "status": "active",
+    "definition": "Trip interruption is the post-departure counterpart to trip cancellation, reimbursing the unused non-refundable portion of a trip plus the cost of returning home early (or rejoining the itinerary) when a trip already underway is cut short for a covered reason. Benefit limits are commonly set above 100% of trip cost (often up to 150%) to absorb unplanned return transportation.",
+    "term_ko": "여행 중단 보장(Trip Interruption)",
+    "definition_ko": "Trip Interruption(여행 중단)은 Trip Cancellation에 대응하는 출발 후 보장으로, 이미 시작된 여행이 보장 사유로 단축될 때 사용하지 못한 환불 불가 금액과 조기 귀국(또는 일정 복귀) 비용을 보상한다. 예기치 못한 귀국 운송비를 흡수하기 위해 보장 한도가 여행비용의 100%를 넘는 경우(흔히 최대 150%)가 많다.",
+    "longDef": "Like trip cancellation, interruption is a named-peril benefit and reimburses only for covered reasons (illness, injury or death of the traveler/companion/family member; severe weather; a strike or carrier disruption; certain emergencies at home). It typically reimburses (1) the prepaid non-refundable cost of the unused days and (2) the additional, often last-minute, transportation needed to get home or back on itinerary — which is why limits frequently exceed the insured trip cost. The pair 'cancellation/interruption' constitutes the trip-cost core of a comprehensive plan.",
+    "longDef_ko": "Trip Cancellation과 마찬가지로 Trip Interruption도 열거 위험 보장이며 보장 사유(본인·동반자·가족의 질병/상해/사망, 악천후, 파업이나 운송 차질, 자택의 특정 비상상황 등)에 대해서만 보상한다. 일반적으로 (1) 사용하지 못한 일수의 선결제 환불 불가 비용과 (2) 귀국 또는 일정 복귀를 위한 추가적·긴급 운송비를 보상하며, 이 때문에 한도가 부보 여행비용을 초과하는 경우가 많다. '취소/중단' 한 쌍이 종합 보험의 여행비용 핵심을 이룬다.",
+    "standardBody": "",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "contrasts",
+        "targetTerm": "Trip Cancellation"
+      },
+      {
+        "type": "child",
+        "targetTerm": "Comprehensive Travel Insurance"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Cancel For Any Reason (CFAR)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Emergency Medical Evacuation"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Trip Cancellation",
+        "explanation": "Cancellation triggers before the trip begins and covers prepaid costs; interruption triggers after the trip has begun and adds the cost of cutting the trip short and returning home.",
+        "explanation_ko": "Cancellation은 여행 시작 전에 발동되어 선결제 비용을 보장하고, Interruption은 여행 시작 후에 발동되어 여행 단축과 귀국 비용을 추가로 보장한다."
+      },
+      {
+        "targetTerm": "Emergency Medical Evacuation",
+        "explanation": "Trip interruption reimburses lost trip cost and ordinary return transport for any covered reason; medical evacuation specifically pays the cost of medically necessary transport to an adequate facility when a traveler is too ill or injured to travel normally.",
+        "explanation_ko": "Trip Interruption은 모든 보장 사유에 대해 손실된 여행비용과 일반 귀국 운송비를 보상하고, Emergency Medical Evacuation은 여행자가 정상적으로 이동할 수 없을 때 적절한 시설로의 의료상 필요 이송 비용을 별도로 지급한다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Trip Interruption Insurance: Coverage, Cost, & Plans",
+        "org": "Squaremouth",
+        "version": "",
+        "section": "",
+        "url": "https://www.squaremouth.com/travel-insurance-benefits/trip-interruption"
+      },
+      {
+        "name": "Travel insurance for trip cancellation, interruption, and more",
+        "org": "Allianz Travel Insurance",
+        "version": "",
+        "section": "",
+        "url": "https://www.allianztravelinsurance.com/"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"6,30 16,30 20,18 26,38 30,30 42,30\"/><line x1=\"24\" y1=\"6\" x2=\"24\" y2=\"6\"/><path d=\"M34 8 a10 10 0 1 1 -8 4\"/><line x1=\"34\" y1=\"4\" x2=\"34\" y2=\"12\"/><line x1=\"34\" y1=\"12\" x2=\"40\" y2=\"12\"/></svg>"
+  },
+  {
+    "id": "cancel-for-any-reason-cfar",
+    "term": "Cancel For Any Reason (CFAR)",
+    "abbreviation": "CFAR",
+    "aliases": [
+      "Cancel For Any Reason",
+      "CFAR Coverage",
+      "CFAR Upgrade"
+    ],
+    "category": "insurance",
+    "conceptType": "standard-term",
+    "status": "active",
+    "definition": "Cancel For Any Reason (CFAR) is an optional travel-insurance upgrade that lets a traveler cancel for reasons not named in the base policy and still recover part of their prepaid costs, typically 50-75% of the insured trip cost. It is a flexibility product sold both as an insurance rider and, in merchant/fintech form, as a non-insurance cancellation benefit.",
+    "term_ko": "사유 불문 취소 특약(CFAR)",
+    "definition_ko": "Cancel For Any Reason(CFAR, 사유 불문 취소)은 기본 약관에 열거되지 않은 사유로도 취소하고 선결제 비용의 일부(보통 부보 여행비용의 50~75%)를 돌려받을 수 있게 해주는 여행보험 선택 특약이다. 보험 특약으로도, 머천트/핀테크 형태의 비보험 취소 혜택으로도 판매되는 '유연성' 상품이다.",
+    "longDef": "CFAR removes the named-peril restriction of standard trip cancellation but does so with strict conditions: it must usually be purchased within a short window of the initial trip deposit (commonly 10-21 days), it requires insuring 100% of prepaid non-refundable trip cost, the trip must typically be cancelled at least 48-72 hours before departure, and it reimburses only a partial percentage (50% or 75%). Because it is the only way to recover money for unlisted reasons (fear of travel, change of plans), it is a signature add-on; merchant-of-record platforms sell a functionally similar 'CFAR' as an ancillary refund product outside insurance regulation.",
+    "longDef_ko": "CFAR은 기본 Trip Cancellation의 열거 위험 제한을 없애지만 엄격한 조건이 따른다. 보통 최초 예약금 결제 후 짧은 기간(흔히 10~21일) 내에 가입해야 하고, 환불 불가 선결제 비용의 100%를 부보해야 하며, 통상 출발 48~72시간 전까지 취소해야 하고, 일부 비율(50% 또는 75%)만 보상한다. 열거되지 않은 사유(여행 불안, 단순 변심)로 돈을 돌려받을 수 있는 유일한 방법이어서 대표적인 추가 특약이며, Merchant of Record 플랫폼은 기능적으로 유사한 'CFAR'을 보험 규제 밖의 부가 환불 상품으로 판매한다.",
+    "standardBody": "",
+    "providerTerms": [
+      {
+        "provider": "Hopper (HTS)",
+        "term": "Cancel For Any Reason",
+        "context": "Hopper sells a merchant CFAR product where the platform itself refunds the booking rather than an insurer paying a claim.",
+        "context_ko": "Hopper는 보험사가 클레임을 지급하는 대신 플랫폼 자체가 예약을 환불하는 머천트형 CFAR 상품을 판매한다.",
+        "relationship": "narrower"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Trip Cancellation"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Comprehensive Travel Insurance"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Merchant Cancellation Protection"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Cancellation Fee Waiver"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Trip Cancellation",
+        "explanation": "Base trip cancellation pays 100% but only for named reasons; CFAR pays a partial percentage (50-75%) for any reason, and exists only as a paid upgrade on top of cancellation coverage.",
+        "explanation_ko": "기본 Trip Cancellation은 열거 사유에 대해 100%를 지급하고, CFAR은 사유 불문으로 일부(50~75%)를 지급하며 취소 보장 위에 얹는 유료 특약으로만 존재한다."
+      },
+      {
+        "targetTerm": "Merchant Cancellation Protection",
+        "explanation": "Insurance CFAR is a regulated insurer-paid benefit; a merchant 'Cancel For Any Reason' is a platform's own ancillary refund product that sidesteps insurance regulation despite the similar name.",
+        "explanation_ko": "보험 CFAR은 규제 대상이며 보험사가 지급하는 보장이고, 머천트형 'Cancel For Any Reason'은 이름은 비슷해도 보험 규제를 우회하는 플랫폼 자체의 부가 환불 상품이다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Insurance Topics: Travel Insurance",
+        "org": "NAIC",
+        "version": "",
+        "section": "",
+        "url": "https://content.naic.org/insurance-topics/travel-insurance"
+      },
+      {
+        "name": "Cancel for Any Reason (CFAR) Trip Insurance",
+        "org": "Progressive",
+        "version": "",
+        "section": "",
+        "url": "https://www.progressive.com/answers/cancel-for-any-reason-travel-insurance/"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M38 24 a14 14 0 1 1 -4.1 -9.9\"/><polyline points=\"38,8 38,16 30,16\"/><line x1=\"18\" y1=\"19\" x2=\"30\" y2=\"31\"/><line x1=\"30\" y1=\"19\" x2=\"18\" y2=\"31\"/></svg>"
+  },
+  {
+    "id": "emergency-medical-evacuation",
+    "term": "Emergency Medical Evacuation",
+    "abbreviation": "",
+    "aliases": [
+      "Medical Evacuation",
+      "Medevac",
+      "Emergency Evacuation"
+    ],
+    "category": "insurance",
+    "conceptType": "standard-term",
+    "status": "active",
+    "definition": "Emergency medical evacuation is a high-severity travel-medical benefit that pays for medically necessary transport — by air ambulance, ground ambulance, or commercial medical escort — to the nearest facility able to provide adequate care when a traveler cannot be safely treated where they are. Its high cost (frequently tens to hundreds of thousands of dollars) makes it a primary driver of insurers' 24/7 assistance networks.",
+    "term_ko": "긴급 의료 후송(Emergency Medical Evacuation)",
+    "definition_ko": "Emergency Medical Evacuation(긴급 의료 후송)은 여행자가 현 위치에서 안전하게 치료받을 수 없을 때 의료상 필요한 이송(항공 앰뷸런스, 지상 앰뷸런스, 의료 동승 등)을 통해 적절한 치료가 가능한 가장 가까운 시설로 옮기는 비용을 지급하는, 중대 사고 대비 여행의료 보장이다. 비용이 매우 커(수만~수십만 달러) 보험사의 24시간 어시스턴스 네트워크의 주요 동인이 된다.",
+    "longDef": "Evacuation is triggered by medical necessity, not the traveler's preference, and is coordinated by the insurer's assistance provider, which determines the appropriate facility ('nearest adequate facility') and arranges transport. Recommended limits are commonly $100,000 or higher because remote-location or cross-border air-ambulance transport can reach $150,000-$200,000+. The benefit is central to travel medical and comprehensive plans and is often paired with repatriation of remains as a single 'evacuation & repatriation' line.",
+    "longDef_ko": "후송은 여행자의 선호가 아니라 의료적 필요에 의해 발동되며, 보험사의 어시스턴스 제공자가 적절한 시설('가장 가까운 적정 시설')을 판단하고 이송을 주선한다. 권장 한도는 흔히 10만 달러 이상인데, 오지나 국경 간 항공 앰뷸런스 이송은 15만~20만 달러를 넘을 수 있기 때문이다. 이 보장은 여행의료·종합 보험의 핵심이며, Repatriation of Remains와 묶여 'evacuation & repatriation' 한 항목으로 제공되는 경우가 많다.",
+    "standardBody": "",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Repatriation of Remains"
+      },
+      {
+        "type": "child",
+        "targetTerm": "Travel Medical Insurance"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Comprehensive Travel Insurance"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Repatriation of Remains",
+        "explanation": "Medical evacuation transports a living, ill or injured traveler to care; repatriation of remains returns a deceased traveler's body home. They are distinct benefits often listed together.",
+        "explanation_ko": "Medical Evacuation은 생존한 환자/부상자를 치료지로 이송하고, Repatriation of Remains는 사망한 여행자의 시신을 본국으로 송환한다. 함께 나열되는 경우가 많지만 별개의 보장이다."
+      },
+      {
+        "targetTerm": "Travel Medical Insurance",
+        "explanation": "Travel medical insurance covers in-place emergency treatment costs (hospital, doctor, dental); medical evacuation covers the transport to reach adequate care, a separate and far larger exposure.",
+        "explanation_ko": "Travel Medical Insurance는 현지에서의 응급 진료비(병원, 의사, 치과)를 보장하고, Medical Evacuation은 적절한 치료에 도달하기 위한 이송 비용을 보장하는 별개의, 훨씬 큰 위험이다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Medical Evacuation Insurance (Medevac): Coverage Explained",
+        "org": "Squaremouth",
+        "version": "",
+        "section": "",
+        "url": "https://www.squaremouth.com/travel-insurance-benefits/medical-evacuation-and-repatriation"
+      },
+      {
+        "name": "How the Travel Insurance Industry Works",
+        "org": "Investopedia",
+        "version": "",
+        "section": "",
+        "url": "https://www.investopedia.com/articles/personal-finance/050815/how-travel-insurance-industry-works.asp"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 30 L20 30 L26 22 L40 22 a4 4 0 0 1 0 8 L14 30 Z\"/><line x1=\"10\" y1=\"36\" x2=\"34\" y2=\"36\"/><line x1=\"30\" y1=\"13\" x2=\"30\" y2=\"19\"/><line x1=\"27\" y1=\"16\" x2=\"33\" y2=\"16\"/></svg>"
+  },
+  {
+    "id": "repatriation-of-remains",
+    "term": "Repatriation of Remains",
+    "abbreviation": "",
+    "aliases": [
+      "Return of Remains",
+      "Return of Mortal Remains",
+      "Repatriation"
+    ],
+    "category": "insurance",
+    "conceptType": "standard-term",
+    "status": "active",
+    "definition": "Repatriation of remains is a standard travel-medical benefit that arranges and pays the cost of returning a deceased traveler's body (or, in some plans, their ashes) to their home country or place of burial. It is a defining component of international travel medical plans and is distinct from medical evacuation, which transports living travelers.",
+    "term_ko": "유해 송환(Repatriation of Remains)",
+    "definition_ko": "Repatriation of Remains(유해 송환)는 사망한 여행자의 시신(일부 약관은 유골)을 본국 또는 매장지로 돌려보내는 비용을 주선하고 지급하는 표준 여행의료 보장이다. 국제 여행의료 보험의 핵심 구성 요소이며, 생존 여행자를 이송하는 Medical Evacuation과는 구분된다.",
+    "longDef": "Returning remains across borders involves substantial cost and logistics — local authority documentation, mortuary preparation, an approved transport container, and international shipping — and the benefit covers these arrangements through the insurer's assistance network. Per-event limits are commonly set separately (often roughly $10,000-$25,000), reflecting typical costs that range from a few thousand dollars to over $25,000. It is almost always offered alongside emergency medical evacuation in travel medical and comprehensive plans.",
+    "longDef_ko": "국경을 넘는 유해 송환은 현지 당국 서류, 시신 안치 처리, 승인된 운송 용기, 국제 운송 등 상당한 비용과 절차가 따르며, 이 보장은 보험사의 어시스턴스 네트워크를 통해 그러한 절차를 처리한다. 사고당 한도는 보통 별도로 설정되며(흔히 약 1만~2.5만 달러), 수천 달러에서 2.5만 달러를 넘는 실제 비용 범위를 반영한다. 여행의료·종합 보험에서 거의 항상 Emergency Medical Evacuation과 함께 제공된다.",
+    "standardBody": "",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Emergency Medical Evacuation"
+      },
+      {
+        "type": "child",
+        "targetTerm": "Travel Medical Insurance"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Comprehensive Travel Insurance"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Emergency Medical Evacuation",
+        "explanation": "Evacuation moves a living, ill or injured traveler to adequate care; repatriation of remains returns a deceased traveler home. The two are complementary but separately defined benefits.",
+        "explanation_ko": "Evacuation은 생존한 환자/부상자를 적절한 치료지로 옮기고, Repatriation of Remains는 사망한 여행자를 본국으로 송환한다. 상호 보완적이지만 별도로 정의된 보장이다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Travel Insurance for Emergency Evacuation and Repatriation",
+        "org": "Squaremouth",
+        "version": "",
+        "section": "",
+        "url": "https://www.squaremouth.com/travel-insurance-benefits/medical-evacuation-and-repatriation"
+      },
+      {
+        "name": "Medical Evacuation & Repatriation Insurance Benefits",
+        "org": "InsureMyTrip",
+        "version": "",
+        "section": "",
+        "url": "https://www.insuremytrip.com/travel-insurance-plans/evacuation/"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"17\"/><path d=\"M7 24 h34\"/><path d=\"M24 7 a26 26 0 0 1 0 34 a26 26 0 0 1 0 -34\"/><polyline points=\"30,18 24,12 18,18\"/></svg>"
+  },
+  {
+    "id": "travel-medical-insurance",
+    "term": "Travel Medical Insurance",
+    "abbreviation": "",
+    "aliases": [
+      "Travel Health Insurance",
+      "Travel Medical Coverage",
+      "Medical Travel Insurance"
+    ],
+    "category": "insurance",
+    "conceptType": "standard-term",
+    "status": "active",
+    "definition": "Travel medical insurance is a travel-insurance product class that covers emergency medical and dental costs incurred while traveling, filling gaps left by a traveler's domestic health plan abroad. It is distinct from trip-cost (cancellation) coverage and is one of the core coverage types in the travel-insurance market.",
+    "term_ko": "여행의료보험(Travel Medical Insurance)",
+    "definition_ko": "Travel Medical Insurance(여행의료보험)는 여행 중 발생한 응급 의료·치과 비용을 보장하여 자국 건강보험이 해외에서 비워두는 공백을 메우는 여행보험 상품군이다. 여행비용(취소) 보장과는 구분되며, 여행보험 시장의 핵심 보장 유형 중 하나다.",
+    "longDef": "Travel medical plans focus on health events during the trip: emergency hospitalization, physician and dental treatment, prescriptions, and often the evacuation/repatriation benefits. They are bought heavily by international travelers, expatriates and visitors whose home health insurance does not travel with them, and can be issued as standalone medical-only policies (common for inbound and long-stay travelers) or bundled inside a comprehensive plan. Coverage typically interacts with the pre-existing condition exclusion and its waiver, and may be written as primary or secondary to other health coverage.",
+    "longDef_ko": "여행의료 보험은 여행 중 건강 사고에 초점을 둔다. 응급 입원, 의사·치과 진료, 처방약, 그리고 흔히 후송/송환 보장을 포함한다. 자국 건강보험이 함께 따라오지 않는 국제 여행자, 주재원, 방문객이 많이 가입하며, 단독 의료 전용 보험(인바운드·장기 체류자에게 흔함)으로 또는 종합 보험 내에 묶여 발행될 수 있다. 보장은 일반적으로 기왕증 면책과 그 면제(waiver)와 연동되며, 다른 건강보험에 대해 primary 또는 secondary로 설계될 수 있다.",
+    "standardBody": "",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "parent",
+        "targetTerm": "Emergency Medical Evacuation"
+      },
+      {
+        "type": "parent",
+        "targetTerm": "Repatriation of Remains"
+      },
+      {
+        "type": "contrasts",
+        "targetTerm": "Trip Cancellation"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Comprehensive Travel Insurance"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Pre-Existing Condition Waiver"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Trip Cancellation",
+        "explanation": "Trip cancellation reimburses lost prepaid trip cost when plans fall through; travel medical insurance pays for healthcare received while traveling. They cover entirely different exposures and are often sold separately.",
+        "explanation_ko": "Trip Cancellation은 계획이 무산될 때 손실된 선결제 여행비용을 보상하고, Travel Medical Insurance는 여행 중 받은 의료를 보장한다. 서로 전혀 다른 위험을 다루며 별도로 판매되는 경우가 많다."
+      },
+      {
+        "targetTerm": "Comprehensive Travel Insurance",
+        "explanation": "A comprehensive plan bundles medical coverage with cancellation, delay and baggage benefits; standalone travel medical insurance covers only the health/evacuation exposure.",
+        "explanation_ko": "종합 보험은 의료 보장을 취소·지연·수하물 보장과 묶지만, 단독 Travel Medical Insurance는 건강/후송 위험만 보장한다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Travel Medical Insurance Plans",
+        "org": "InsureMyTrip",
+        "version": "",
+        "section": "",
+        "url": "https://www.insuremytrip.com/travel-insurance-plans/travel-medical/"
+      },
+      {
+        "name": "How Travel Medical Insurance Works",
+        "org": "NerdWallet",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Emergency Medical Insurance: Coverage Details",
+        "org": "Squaremouth",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 41 C10 31 6 22 6 16 a9 9 0 0 1 18 -3 a9 9 0 0 1 18 3 c0 6 -4 15 -18 25 Z\"/><line x1=\"24\" y1=\"19\" x2=\"24\" y2=\"29\"/><line x1=\"19\" y1=\"24\" x2=\"29\" y2=\"24\"/></svg>"
+  },
+  {
+    "id": "comprehensive-travel-insurance",
+    "term": "Comprehensive Travel Insurance",
+    "abbreviation": "",
+    "aliases": [
+      "Comprehensive Plan",
+      "Package Travel Insurance",
+      "Single-Trip Comprehensive Plan"
+    ],
+    "category": "insurance",
+    "conceptType": "standard-term",
+    "status": "active",
+    "definition": "Comprehensive travel insurance is the bundled single-trip product class that combines trip cancellation and interruption, travel delay, baggage, emergency medical and evacuation benefits into one plan. It is the default offering most consumers buy and serves as the umbrella to which optional riders (such as CFAR or a pre-existing condition waiver) attach.",
+    "term_ko": "종합 여행보험(Comprehensive Travel Insurance)",
+    "definition_ko": "Comprehensive Travel Insurance(종합 여행보험)는 여행 취소·중단, 여행 지연, 수하물, 응급 의료·후송 보장을 하나의 단일 여행 상품으로 묶은 패키지 상품군이다. 대다수 소비자가 구매하는 기본 상품이며, CFAR이나 기왕증 면제 같은 선택 특약이 붙는 우산 역할을 한다.",
+    "longDef": "Rather than buying separate trip-cancellation and travel-medical policies, most leisure travelers buy a single comprehensive plan whose benefit schedule lists each coverage with its own limit. The trip-cost benefits (cancellation/interruption) are the headline and largest premium component, with delay, baggage, medical and evacuation rounding out the package; optional upgrades — Cancel For Any Reason, Interruption For Any Reason, a pre-existing condition waiver, rental-car or adventure add-ons — extend it. Comprehensive plans are typically single-trip, with annual multi-trip variants for frequent travelers.",
+    "longDef_ko": "대부분의 레저 여행자는 취소 보험과 여행의료 보험을 따로 사는 대신, 각 보장과 한도를 보장 명세표에 나열한 하나의 종합 보험을 구매한다. 여행비용 보장(취소/중단)이 대표 항목이자 최대 보험료 구성요소이며, 지연·수하물·의료·후송이 패키지를 완성한다. 선택 특약 — Cancel For Any Reason, Interruption For Any Reason, 기왕증 면제, 렌터카·액티비티 추가 — 으로 확장된다. 종합 보험은 보통 단일 여행용이며, 빈번한 여행자를 위한 연간 다회 여행 상품도 있다.",
+    "standardBody": "",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "parent",
+        "targetTerm": "Trip Cancellation"
+      },
+      {
+        "type": "parent",
+        "targetTerm": "Trip Interruption"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Travel Medical Insurance"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Cancel For Any Reason (CFAR)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Emergency Medical Evacuation"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Pre-Existing Condition Waiver"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Travel Medical Insurance",
+        "explanation": "Travel medical insurance is one benefit (healthcare abroad) sold standalone; comprehensive insurance bundles that medical benefit together with cancellation, delay and baggage in a single plan.",
+        "explanation_ko": "Travel Medical Insurance는 단독으로 판매되는 하나의 보장(해외 의료)이고, Comprehensive Insurance는 그 의료 보장을 취소·지연·수하물과 함께 하나의 상품으로 묶는다."
+      },
+      {
+        "targetTerm": "Merchant Cancellation Protection",
+        "explanation": "A comprehensive plan is a regulated multi-benefit insurance contract; merchant cancellation protection is a single-purpose, non-insurance refund product offered by the booking platform itself.",
+        "explanation_ko": "종합 보험은 규제 대상의 다중 보장 보험 계약이고, Merchant Cancellation Protection은 예약 플랫폼 자체가 제공하는 단일 목적의 비보험 환불 상품이다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Comprehensive Travel Insurance Plans Quick Overview",
+        "org": "InsureMyTrip",
+        "version": "",
+        "section": "",
+        "url": "https://www.insuremytrip.com/travel-insurance-plans/comprehensive/"
+      },
+      {
+        "name": "Comprehensive Travel Insurance: Plans & Prices",
+        "org": "Squaremouth",
+        "version": "",
+        "section": "",
+        "url": "https://www.squaremouth.com/plans/comprehensive"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 5 L40 11 V24 c0 11 -8 16 -16 19 c-8 -3 -16 -8 -16 -19 V11 Z\"/><polyline points=\"17,24 22,29 32,17\"/></svg>"
+  },
+  {
+    "id": "pre-existing-condition-waiver",
+    "term": "Pre-Existing Condition Waiver",
+    "abbreviation": "",
+    "aliases": [
+      "Pre-Existing Conditions Waiver",
+      "Pre-Existing Medical Condition Waiver",
+      "Existing Medical Condition Waiver"
+    ],
+    "category": "insurance",
+    "conceptType": "standard-term",
+    "status": "active",
+    "definition": "A pre-existing condition waiver is a time-sensitive benefit that removes the policy's default exclusion of pre-existing medical conditions, so claims arising from a stable prior condition become eligible. It must usually be obtained by buying the policy within a short window of the initial trip deposit (commonly about 14-21 days) and meeting requirements such as insuring full trip cost and being medically able to travel at purchase.",
+    "term_ko": "기왕증 면제(Pre-Existing Condition Waiver)",
+    "definition_ko": "Pre-Existing Condition Waiver(기왕증 면제)는 약관이 기본적으로 두는 기왕증(기존 병력) 면책을 제거하여, 안정된 기존 질환에서 비롯된 클레임도 보장 대상이 되게 하는 기한 의존적 혜택이다. 보통 최초 예약금 결제 후 짧은 기간(흔히 약 14~21일) 내에 보험에 가입하고, 전체 여행비용 부보 및 가입 시점에 여행 가능한 건강 상태 같은 요건을 충족해야 얻을 수 있다.",
+    "longDef": "By default, travel insurance excludes losses tied to conditions that existed during a defined look-back period before the policy effective date. A waiver lifts that exclusion, which is pivotal because pre-existing conditions are a common cause of both cancellation (e.g. a flare-up forcing cancellation) and medical claims. Eligibility hinges on the early-purchase window relative to initial deposit and on insuring 100% of prepaid non-refundable trip cost; the waiver does not change the look-back period itself, it removes the exclusion the look-back defines.",
+    "longDef_ko": "기본적으로 여행보험은 보험 개시일 이전의 정해진 look-back 기간 동안 존재했던 질환과 관련된 손실을 면책한다. Waiver는 그 면책을 해제하는데, 기왕증이 취소(예: 증상 악화로 인한 취소)와 의료 클레임 모두의 흔한 원인이므로 매우 중요하다. 자격은 최초 예약금 대비 조기 가입 기간과 환불 불가 선결제 여행비용 100% 부보 여부에 달려 있다. Waiver는 look-back 기간 자체를 바꾸지 않고, look-back이 정의하는 면책을 제거한다.",
+    "standardBody": "",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Travel Medical Insurance"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Trip Cancellation"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Comprehensive Travel Insurance"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Cancel For Any Reason (CFAR)",
+        "explanation": "Both are early-purchase upgrades, but a pre-existing condition waiver makes covered-reason claims from a prior medical condition eligible, whereas CFAR lets you cancel for reasons the policy does not cover at all (for a partial refund).",
+        "explanation_ko": "둘 다 조기 가입 특약이지만, 기왕증 면제는 기존 질환으로 인한 '보장 사유' 클레임을 보장 대상으로 만들고, CFAR은 약관이 아예 보장하지 않는 사유로 (부분 환불을 받고) 취소할 수 있게 한다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Travel Insurance Pre-Existing Conditions Coverage: Waivers & Eligibility",
+        "org": "Squaremouth",
+        "version": "",
+        "section": "",
+        "url": "https://www.squaremouth.com/travel-insurance-benefits/pre-existing-condition"
+      },
+      {
+        "name": "Pre-Existing Conditions & Travel Medical Insurance Plans",
+        "org": "InsureMyTrip",
+        "version": "",
+        "section": "",
+        "url": "https://www.insuremytrip.com/travel-insurance-plans-coverages/pre-existing-conditions/"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"14\" width=\"22\" height=\"28\" rx=\"3\"/><polyline points=\"16,22 20,22 22,18 26,30 28,24 32,24\"/><circle cx=\"33\" cy=\"12\" r=\"7\"/><line x1=\"33\" y1=\"9\" x2=\"33\" y2=\"15\"/><line x1=\"30\" y1=\"12\" x2=\"36\" y2=\"12\"/></svg>"
+  },
+  {
+    "id": "limited-lines-travel-insurance-producer",
+    "term": "Limited Lines Travel Insurance Producer",
+    "abbreviation": "",
+    "aliases": [
+      "Limited Lines Travel Insurance License",
+      "Travel Insurance Producer",
+      "Limited Lines Producer"
+    ],
+    "category": "insurance",
+    "conceptType": "regulation",
+    "status": "active",
+    "definition": "A limited lines travel insurance producer is a licensing construct in the NAIC Travel Insurance Model Act (#632) that authorizes a person or business to sell travel insurance. It enables travel retailers — airlines, online travel agencies, and travel agents — to offer and sell travel insurance at the point of sale under the supervision of a licensed limited lines travel insurance producer, without each retail employee holding a full producer license.",
+    "term_ko": "제한종목 여행보험 모집인(Limited Lines Travel Insurance Producer)",
+    "definition_ko": "Limited Lines Travel Insurance Producer(제한종목 여행보험 모집인)는 NAIC 여행보험 모델법(Travel Insurance Model Act, #632)상 여행보험을 판매할 수 있도록 개인 또는 사업자에게 부여하는 면허 체계다. 이를 통해 항공사, OTA, 여행사 등 여행 소매업자가 정식 모집인 면허를 가진 limited lines travel insurance producer의 감독 하에, 각 소매 직원이 개별 면허를 보유하지 않고도 판매 시점에 여행보험을 제공·판매할 수 있다.",
+    "longDef": "The Model Act ties point-of-sale distribution to a single supervising licensee: the limited lines travel insurance producer is responsible for the travel insurance activities of the 'travel retailers' it authorizes (including their compliance, training, and use of approved materials). This is the regulatory mechanism behind embedded, point-of-sale travel insurance — the reason an OTA or airline checkout can offer a policy as an add-on. Many states implement it by reference to NAIC Uniform Licensing Standards or pre-existing limited-lines producer laws.",
+    "longDef_ko": "모델법은 판매 시점 유통을 단일 감독 면허자에게 연결한다. limited lines travel insurance producer는 자신이 승인한 '여행 소매업자(travel retailer)'의 여행보험 활동(컴플라이언스, 교육, 승인된 자료 사용 등)에 책임을 진다. 이것이 임베디드 판매 시점 여행보험의 규제 메커니즘으로, OTA나 항공사 결제 화면이 보험을 부가 상품으로 제안할 수 있는 근거다. 여러 주는 NAIC 통일 면허 기준이나 기존 제한종목 모집인 법을 참조하는 방식으로 이를 시행한다.",
+    "standardBody": "NAIC",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Cancellation Fee Waiver"
+      },
+      {
+        "type": "related",
+        "targetTerm": "OTA (Online Travel Agency)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Merchant Cancellation Protection"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "OTA (Online Travel Agency)",
+        "explanation": "An OTA is the travel retailer selling the trip; to sell insurance alongside it the OTA acts under a limited lines travel insurance producer's authorization, which is the licensing role rather than the retailer itself.",
+        "explanation_ko": "OTA는 여행을 판매하는 소매업자이고, 그와 함께 보험을 팔려면 OTA가 limited lines travel insurance producer의 승인 하에 활동한다. 이는 소매업자 자체가 아니라 면허 역할을 가리킨다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Travel Insurance Model Act (#632)",
+        "org": "NAIC",
+        "version": "",
+        "section": "",
+        "url": "https://content.naic.org/sites/default/files/model-law-632.pdf"
+      },
+      {
+        "name": "Insurance Topics: Travel Insurance",
+        "org": "NAIC",
+        "version": "",
+        "section": "",
+        "url": "https://content.naic.org/insurance-topics/travel-insurance"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"7\" y=\"11\" width=\"34\" height=\"26\" rx=\"3\"/><circle cx=\"17\" cy=\"22\" r=\"4\"/><path d=\"M12 32 a5 5 0 0 1 10 0\"/><line x1=\"27\" y1=\"19\" x2=\"36\" y2=\"19\"/><line x1=\"27\" y1=\"25\" x2=\"36\" y2=\"25\"/><line x1=\"27\" y1=\"31\" x2=\"33\" y2=\"31\"/></svg>"
+  },
+  {
+    "id": "cancellation-fee-waiver",
+    "term": "Cancellation Fee Waiver",
+    "abbreviation": "",
+    "aliases": [
+      "Cancellation Waiver",
+      "Cancellation Penalty Waiver",
+      "Trip Cancellation Waiver"
+    ],
+    "category": "insurance",
+    "conceptType": "regulation",
+    "status": "active",
+    "definition": "A cancellation fee waiver is a non-insurance product defined in the NAIC Travel Insurance Model Act (#632): a contractual agreement between a supplier of travel services and its customer to waive some or all of the supplier's non-refundable cancellation fee provisions, with or without regard to the reason for the cancellation or the form of reimbursement. Because the supplier is forgiving its own fee rather than indemnifying a third party, the Act expressly states it is not insurance, and the Act's requirements do not apply to it except as expressly provided.",
+    "term_ko": "취소 수수료 면제(Cancellation Fee Waiver)",
+    "definition_ko": "Cancellation Fee Waiver(취소 수수료 면제)는 NAIC 여행보험 모델법(#632)이 정의한 비보험 상품이다. 여행 서비스 공급자와 고객 간의 계약상 합의로, 취소 사유나 환급 형태와 관계없이 공급자가 자신의 환불 불가 취소 수수료의 전부 또는 일부를 면제하는 것이다. 공급자가 제3자에게 손해를 보전하는 것이 아니라 자신의 수수료를 면제하는 것이므로, 모델법은 이것이 보험이 아니라고 명시하며, 명시적으로 규정한 경우를 제외하고는 모델법의 요건이 적용되지 않는다.",
+    "longDef": "The Model Act treats cancellation fee waivers (along with travel assistance services) as outside the definition of travel insurance: the Act 'does not apply' to them. The distinction is structural — in insurance, a third-party insurer indemnifies the traveler's loss; in a cancellation fee waiver, the supplier simply agrees not to charge its own penalty. This regulatory line is the basis for distinguishing merchant or supplier 'protection' offerings from true insurance, and it shapes how products are filed, who may sell them, and what disclosures apply.",
+    "longDef_ko": "모델법은 취소 수수료 면제를 (travel assistance services와 함께) 여행보험 정의 밖에 두며, 모델법이 그것들에 '적용되지 않는다'고 규정한다. 차이는 구조적이다. 보험에서는 제3자 보험사가 여행자의 손실을 보전하지만, cancellation fee waiver에서는 공급자가 단지 자신의 위약금을 부과하지 않기로 동의할 뿐이다. 이 규제상 경계는 머천트·공급자의 '보호(protection)' 상품을 진짜 보험과 구분하는 근거이며, 상품 신고 방식, 판매 주체, 적용되는 공시 사항을 좌우한다.",
+    "standardBody": "NAIC",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "contrasts",
+        "targetTerm": "Trip Cancellation"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Limited Lines Travel Insurance Producer"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Merchant Cancellation Protection"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Cancellation Policy"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Trip Cancellation",
+        "explanation": "Trip cancellation is insurance: a third-party insurer reimburses the traveler's loss for covered reasons. A cancellation fee waiver is the supplier itself agreeing not to charge its penalty — expressly not insurance under the Model Act.",
+        "explanation_ko": "Trip Cancellation은 보험으로, 제3자 보험사가 보장 사유에 대해 여행자의 손실을 보상한다. Cancellation Fee Waiver는 공급자 자신이 위약금을 부과하지 않기로 동의하는 것으로, 모델법상 명시적으로 보험이 아니다."
+      },
+      {
+        "targetTerm": "Merchant Cancellation Protection",
+        "explanation": "A cancellation fee waiver is the supplier waiving its own fee on its own bookings; merchant cancellation protection is a separate platform (merchant of record) refunding a booking and absorbing third-party supplier fees as an ancillary.",
+        "explanation_ko": "Cancellation Fee Waiver는 공급자가 자신의 예약에 대한 자신의 수수료를 면제하는 것이고, Merchant Cancellation Protection은 별도 플랫폼(merchant of record)이 예약을 환불하고 제3자 공급자 수수료를 부가 상품으로 흡수하는 것이다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Travel Insurance Model Act (#632)",
+        "org": "NAIC",
+        "version": "",
+        "section": "",
+        "url": "https://content.naic.org/sites/default/files/model-law-632.pdf"
+      },
+      {
+        "name": "Insurance Topics: Travel Insurance",
+        "org": "NAIC",
+        "version": "",
+        "section": "",
+        "url": "https://content.naic.org/insurance-topics/travel-insurance"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 14 L26 14 L38 26 L26 38 L8 38 Z\"/><line x1=\"15\" y1=\"22\" x2=\"27\" y2=\"30\"/><line x1=\"27\" y1=\"22\" x2=\"15\" y2=\"30\"/><line x1=\"34\" y1=\"10\" x2=\"40\" y2=\"10\"/><line x1=\"37\" y1=\"7\" x2=\"37\" y2=\"13\"/></svg>"
+  },
+  {
+    "id": "merchant-cancellation-protection",
+    "term": "Merchant Cancellation Protection",
+    "abbreviation": "",
+    "aliases": [
+      "Merchant Cancellation Product",
+      "Fintech Cancellation Protection",
+      "Cancel For Any Reason (Merchant)"
+    ],
+    "category": "insurance",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "Merchant cancellation protection is the fintech/merchant-of-record alternative to travel insurance, in which the booking platform itself refunds the traveler and absorbs the supplier's cancellation fees as an ancillary product, rather than an insurer paying a claim. Because the platform is forgiving or self-funding the cost rather than indemnifying as a third-party insurer, these products sit outside insurance regulation.",
+    "term_ko": "머천트 취소 보호(Merchant Cancellation Protection)",
+    "definition_ko": "Merchant Cancellation Protection(머천트 취소 보호)은 여행보험의 핀테크/merchant-of-record 대안으로, 보험사가 클레임을 지급하는 대신 예약 플랫폼 자체가 여행자에게 환불하고 공급자의 취소 수수료를 부가 상품으로 흡수하는 방식이다. 플랫폼이 제3자 보험사로서 손해를 보전하는 것이 아니라 비용을 자가 부담·면제하므로, 이러한 상품은 보험 규제 밖에 있다.",
+    "longDef": "Travel fintechs popularized this model — for example Hopper's HTS sells a 'Cancel For Any Reason' product for flights and hotels in which Hopper, acting as merchant of record, refunds the booking and eats the supplier penalty rather than placing the risk with a licensed insurer. Functionally it resembles a CFAR rider, but structurally it is an ancillary merchant offering (akin to the NAIC's cancellation fee waiver concept) that does not require an insurance filing or producer license. The model is attractive to platforms because it monetizes flexibility while keeping the product, data and customer relationship in-house.",
+    "longDef_ko": "여행 핀테크들이 이 모델을 대중화했다. 예컨대 Hopper의 HTS는 항공·호텔에 대해 'Cancel For Any Reason' 상품을 판매하는데, Hopper가 merchant of record로서 위험을 면허 보험사에 넘기지 않고 직접 예약을 환불하고 공급자 위약금을 부담한다. 기능적으로는 CFAR 특약과 유사하지만, 구조적으로는 보험 신고나 모집인 면허가 필요 없는 부가 머천트 상품(NAIC의 cancellation fee waiver 개념과 유사)이다. 유연성을 수익화하면서 상품·데이터·고객 관계를 내부에 유지할 수 있어 플랫폼에 매력적이다.",
+    "standardBody": "",
+    "providerTerms": [
+      {
+        "provider": "Hopper (HTS)",
+        "term": "Cancel For Any Reason for Hotels",
+        "context": "Hopper Technology Solutions offers merchant CFAR/price-freeze fintech products where Hopper as merchant of record absorbs supplier fees.",
+        "context_ko": "Hopper Technology Solutions는 Hopper가 merchant of record로서 공급자 수수료를 흡수하는 머천트 CFAR/가격 동결 핀테크 상품을 제공한다.",
+        "relationship": "narrower"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "contrasts",
+        "targetTerm": "Cancel For Any Reason (CFAR)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Cancellation Fee Waiver"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Merchant of Record"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Ancillary Service"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Refund"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Cancel For Any Reason (CFAR)",
+        "explanation": "Insurance CFAR transfers the risk to a licensed insurer that pays a claim under a regulated policy; merchant cancellation protection keeps the cost with the booking platform, which self-funds the refund as an ancillary outside insurance regulation.",
+        "explanation_ko": "보험 CFAR은 규제 약관 하에 클레임을 지급하는 면허 보험사에 위험을 이전하고, Merchant Cancellation Protection은 비용을 예약 플랫폼에 두어 플랫폼이 보험 규제 밖에서 부가 상품으로 환불을 자가 부담한다."
+      },
+      {
+        "targetTerm": "Cancellation Fee Waiver",
+        "explanation": "Both are non-insurance flexibility products, but a cancellation fee waiver is a supplier waiving the penalty on its own bookings, while merchant cancellation protection is a third-party platform (merchant of record) refunding bookings made through it.",
+        "explanation_ko": "둘 다 비보험 유연성 상품이지만, Cancellation Fee Waiver는 공급자가 자신의 예약에 대한 위약금을 면제하는 것이고, Merchant Cancellation Protection은 제3자 플랫폼(merchant of record)이 자사를 통한 예약을 환불하는 것이다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "Hopper Technology Solutions (HTS)",
+        "name": "Cancel for Any Reason for Hotels",
+        "version": "",
+        "section": "",
+        "url": "https://hts.hopper.com/products/cancel-for-any-reason-for-hotels"
+      },
+      {
+        "org": "NAIC",
+        "name": "Travel Insurance (Insurance Topics) — cancellation fee waivers as non-insurance products",
+        "version": "",
+        "section": "",
+        "url": "https://content.naic.org/insurance-topics/travel-insurance"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M9 16 L9 36 a3 3 0 0 0 3 3 L36 39 a3 3 0 0 0 3 -3 L39 16\"/><path d=\"M6 12 L42 12 L39 16 L9 16 Z\"/><path d=\"M28 26 a4 4 0 1 1 -3.5 -4\"/><polyline points=\"28,20 28,24 24,24\"/></svg>"
+  }
+]

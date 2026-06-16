@@ -1442,5 +1442,784 @@
     ],
     "lastReviewed": "2026-06-15",
     "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 12h32M8 24h12m16 0h4M8 36h32\"/><path d=\"M28 20l4 4-4 4\"/><circle cx=\"24\" cy=\"24\" r=\"2\"/></svg>"
+  },
+  {
+    "id": "airline-industry-data-model-aidm",
+    "term": "Airline Industry Data Model (AIDM)",
+    "term_ko": "항공산업 데이터 모델(AIDM)",
+    "abbreviation": "AIDM",
+    "aliases": [
+      "AIDM",
+      "IATA Airline Industry Data Model"
+    ],
+    "category": "standards",
+    "conceptType": "standard",
+    "status": "active",
+    "definition": "The Airline Industry Data Model is IATA's single shared repository of industry-agreed vocabulary, data definitions, and their relationships, together with related business requirements. Message-development projects draw on this common model so that interoperable messaging standards such as NDC/EDIST, ONE Order, and PADIS messages are generated faster and with greater semantic consistency.",
+    "definition_ko": "AIDM은 산업이 합의한 어휘, 데이터 정의, 그 상호 관계와 관련 비즈니스 요구사항을 담은 IATA의 단일 공유 저장소이다. 메시지 개발 프로젝트는 이 공통 모델을 활용하여 NDC/EDIST, ONE Order, PADIS 메시지 같은 상호운용 가능한 메시징 표준을 더 빠르고 의미적으로 일관되게 생성한다.",
+    "longDef": "First released in early 2016, the AIDM is intended to become a single point of access for structured airline-domain information, letting each project reuse models already developed by other standards groups rather than redefining concepts. NDC versions from 18.x onward were reorganized to align with the AIDM, making it the underlying blueprint from which the offer-and-order schema family is derived. It is maintained under IATA's Passenger Standards Conference governance.",
+    "longDef_ko": "2016년 초에 처음 공개된 AIDM은 항공 도메인의 구조화된 정보에 대한 단일 접근 지점이 되는 것을 목표로 하며, 각 프로젝트가 개념을 새로 정의하는 대신 다른 표준 그룹이 이미 개발한 모델을 재사용할 수 있게 한다. NDC 18.x 이후 버전은 AIDM에 맞추어 재구성되어, AIDM은 offer-and-order 스키마 계열이 도출되는 기반 청사진이 되었다. IATA 여객표준회의(Passenger Standards Conference) 거버넌스 아래 유지된다.",
+    "standardBody": "IATA",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "NDC"
+      },
+      {
+        "type": "related",
+        "targetTerm": "ONE Order"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Enhanced and Simplified Distribution (EDIST)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Passenger and Airport Data Interchange Standards (PADIS)"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "NDC",
+        "explanation": "AIDM is the shared underlying data model/repository of agreed concepts; NDC is one messaging standard generated from and aligned to that model.",
+        "explanation_ko": "AIDM은 합의된 개념을 담은 공유 기반 데이터 모델/저장소이고, NDC는 그 모델로부터 생성되어 정렬된 하나의 메시징 표준이다."
+      },
+      {
+        "targetTerm": "Enhanced and Simplified Distribution (EDIST)",
+        "explanation": "AIDM defines the vocabulary and relationships; EDIST is the concrete XML message schema family derived from the AIDM concepts.",
+        "explanation_ko": "AIDM은 어휘와 관계를 정의하고, EDIST는 그 AIDM 개념으로부터 도출된 구체적인 XML 메시지 스키마 계열이다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "IATA",
+        "name": "Airline Industry Data Model (AIDM)",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "org": "IATA",
+        "name": "AIDM Implementation Guide / About the AIDM Repository",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><ellipse cx=\"24\" cy=\"12\" rx=\"14\" ry=\"5\"/><path d=\"M10 12v24c0 2.8 6.3 5 14 5s14-2.2 14-5V12\"/><path d=\"M10 24c0 2.8 6.3 5 14 5s14-2.2 14-5\"/><circle cx=\"24\" cy=\"12\" r=\"1.5\" fill=\"currentColor\"/></svg>"
+  },
+  {
+    "id": "settlement-with-orders-swo",
+    "term": "Settlement with Orders (SwO)",
+    "term_ko": "주문 기반 정산(Settlement with Orders, SwO)",
+    "abbreviation": "SwO",
+    "aliases": [
+      "SwO",
+      "Settlement with Orders"
+    ],
+    "category": "standards",
+    "conceptType": "standard",
+    "status": "active",
+    "definition": "Settlement with Orders is an IATA program and lean XML data-exchange standard for settling the funds owed between airlines and sellers directly from order data, using the existing BSP agency framework. It completes the offer-and-order value chain after NDC and ONE Order by removing dependence on ticket-based settlement, and it is also applicable to ticketless carriers.",
+    "definition_ko": "Settlement with Orders(SwO)는 기존 BSP 대리점 프레임워크를 활용하여 주문 데이터로부터 항공사와 판매자 간 채권·채무를 직접 정산하기 위한 IATA 프로그램이자 간결한(lean) XML 데이터 교환 표준이다. 항공권 기반 정산에 대한 의존을 없앰으로써 NDC와 ONE Order 이후 offer-and-order 가치사슬을 완성하며, 무발권(ticketless) 항공사에도 적용된다.",
+    "longDef": "Built on a sales agreement and commitment to pay between two parties, SwO lets funds clearing be triggered by a simple clearance request carrying minimal data, avoiding the complexity of ticket/coupon-based reconciliation. Together with NDC (shopping and ordering) and ONE Order (order management and accounting), SwO gives airlines and sellers a full order-based framework spanning distribution through settlement of payables and receivables.",
+    "longDef_ko": "두 당사자 간 판매 합의와 지급 약정을 토대로, SwO는 최소한의 데이터만 담은 단순한 정산 요청으로 자금 청산을 개시할 수 있게 하여 항공권/쿠폰 기반 대사(reconciliation)의 복잡성을 없앤다. NDC(조회·주문)와 ONE Order(주문 관리·회계)와 함께, SwO는 항공사와 판매자에게 유통부터 채권·채무 정산까지 아우르는 완전한 주문 기반 프레임워크를 제공한다.",
+    "standardBody": "IATA",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "ONE Order"
+      },
+      {
+        "type": "related",
+        "targetTerm": "NDC"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Order"
+      },
+      {
+        "type": "related",
+        "targetTerm": "BSP"
+      },
+      {
+        "type": "contrasts",
+        "targetTerm": "BSP"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "BSP",
+        "explanation": "BSP is the established neutral billing-and-settlement clearing system built around tickets/documents; SwO is the newer order-based settlement standard that clears funds from order data within that same BSP framework.",
+        "explanation_ko": "BSP는 항공권/문서를 중심으로 구축된 확립된 중립 청산 시스템이고, SwO는 동일한 BSP 프레임워크 안에서 주문 데이터로부터 자금을 청산하는 더 새로운 주문 기반 정산 표준이다."
+      },
+      {
+        "targetTerm": "ONE Order",
+        "explanation": "ONE Order standardizes the single order record and its management/accounting; SwO standardizes the inter-party financial settlement of the funds arising from those orders.",
+        "explanation_ko": "ONE Order는 단일 주문 기록과 그 관리·회계를 표준화하고, SwO는 그 주문에서 발생하는 자금의 당사자 간 재무 정산을 표준화한다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "IATA",
+        "name": "Settlement with Orders (SwO)",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "org": "IATA",
+        "name": "Fact Sheet - Distribution with Offers and Orders",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"10\"/><path d=\"M24 18v12M21 21h4a2 2 0 0 1 0 4h-2a2 2 0 0 0 0 4h4\"/><path d=\"M8 14l5-3 5 3M40 34l-5 3-5-3\"/><path d=\"M13 11v9M35 37v-9\"/></svg>"
+  },
+  {
+    "id": "opentravel-2-0-object-model",
+    "term": "OpenTravel 2.0 Object Model",
+    "term_ko": "OpenTravel 2.0 오브젝트 모델",
+    "abbreviation": "OTA 2.0",
+    "aliases": [
+      "OTA 2.0",
+      "OpenTravel 2.0",
+      "OpenTravel Object Model",
+      "2.0 Object Model"
+    ],
+    "category": "standards",
+    "conceptType": "standard",
+    "status": "active",
+    "definition": "The OpenTravel 2.0 Object Model is the next-generation, object-oriented specification from the OpenTravel Alliance whose objects can be exchanged as JSON or XML and consumed via REST. Unlike the message-centric legacy 1.x XML message set, it is a fundamental redesign that shifts the focus from on-the-wire messages to reusable business objects, adding lightweight JSON/REST messaging across air, hotel, car, and other travel verticals.",
+    "definition_ko": "OpenTravel 2.0 오브젝트 모델은 OpenTravel Alliance의 차세대 객체지향 명세로, 그 객체를 JSON 또는 XML로 교환하고 REST로 사용할 수 있다. 메시지 중심이던 레거시 1.x XML 메시지 집합과 달리, 온더와이어 메시지에서 재사용 가능한 비즈니스 객체로 초점을 옮긴 근본적 재설계이며, 항공·호텔·렌터카 등 여러 여행 분야에 걸쳐 가벼운 JSON/REST 메시징을 더한다.",
+    "longDef": "By incorporating JSON and REST, 2.0 reduces message weight and improves mobile and app compatibility compared with the verbose 1.x XML schemas. It is designed in tiered detail levels so developers can target anything from lightweight mobile widgets to full-featured integrations, and it can emit XML, JSON, WSDL, and OpenAPI (Swagger) outputs. Schemas are produced from the model using the OpenTravel Model-Development Environment (OTM-DE) tooling.",
+    "longDef_ko": "JSON과 REST를 도입함으로써 2.0은 장황한 1.x XML 스키마에 비해 메시지 크기를 줄이고 모바일·앱 호환성을 높인다. 단계적 상세 수준으로 설계되어 개발자는 가벼운 모바일 위젯부터 완전한 기능의 연동까지 목표로 삼을 수 있으며, XML, JSON, WSDL, OpenAPI(Swagger) 출력을 생성할 수 있다. 스키마는 OpenTravel Model-Development Environment(OTM-DE) 도구를 통해 이 모델로부터 산출된다.",
+    "standardBody": "OpenTravel",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "parent",
+        "targetTerm": "OpenTravel Alliance"
+      },
+      {
+        "type": "related",
+        "targetTerm": "REST API"
+      },
+      {
+        "type": "related",
+        "targetTerm": "NDC"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "OpenTravel Alliance",
+        "explanation": "The OpenTravel Alliance is the standards organization; the 2.0 Object Model is the specific next-generation object-oriented specification that body publishes, succeeding its legacy 1.x XML message set.",
+        "explanation_ko": "OpenTravel Alliance는 표준 단체이고, 2.0 오브젝트 모델은 그 단체가 발행하는 구체적인 차세대 객체지향 명세로, 레거시 1.x XML 메시지 집합을 잇는다."
+      },
+      {
+        "targetTerm": "NDC",
+        "explanation": "OpenTravel 2.0 is a broad multi-sector travel object model; NDC is IATA's air-specific offer-and-order distribution standard.",
+        "explanation_ko": "OpenTravel 2.0은 여러 분야를 아우르는 광범위한 여행 오브젝트 모델이고, NDC는 IATA의 항공 전용 offer-and-order 유통 표준이다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "OpenTravel Alliance",
+        "name": "About 2.0 Object Model",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "org": "OpenTravel Alliance",
+        "name": "Releases 2018A 2.0 Object Model Publication for Hospitality",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 6l16 9v18l-16 9-16-9V15z\"/><path d=\"M8 15l16 9 16-9M24 24v18\"/><path d=\"M16 19.5l16 9\"/></svg>"
+  },
+  {
+    "id": "passenger-and-airport-data-interchange-standards-padis",
+    "term": "Passenger and Airport Data Interchange Standards (PADIS)",
+    "term_ko": "여객·공항 데이터 교환 표준(PADIS)",
+    "abbreviation": "PADIS",
+    "aliases": [
+      "PADIS",
+      "PADIS Board",
+      "Passenger and Airport Data Interchange Standards"
+    ],
+    "category": "standards",
+    "conceptType": "standard",
+    "status": "active",
+    "definition": "PADIS is the IATA governance body and standards set that develops and maintains the EDI message standards for passenger travel and airport passenger-service activities, published in both EDIFACT and XML syntaxes. The PADIS Board, now under the Passenger Standards Conference, owns and version-controls these schemas, including the NDC/EDIST XML messages.",
+    "definition_ko": "PADIS는 여객 여행과 공항 여객 서비스 활동을 위한 EDI 메시지 표준을 개발·유지하는 IATA 거버넌스 기구이자 표준 집합으로, EDIFACT와 XML 두 구문으로 발행된다. 현재 여객표준회의(Passenger Standards Conference) 산하에 있는 PADIS Board가 NDC/EDIST XML 메시지를 포함한 이 스키마들을 소유하고 버전을 관리한다.",
+    "longDef": "Governed historically under Passenger Services Conference Resolution 783, the PADIS Board is composed of airline representatives and is supported by committees and expert working groups that oversee communications-protocol interoperability and semantic consistency across IATA standards. PADIS is the standards-authority layer that explains how airline distribution and data-interchange schemas — from legacy EDIFACT reservations and PNRGOV messages to the EDIST XML implementing NDC — are agreed, governed, and versioned.",
+    "longDef_ko": "역사적으로 여객서비스회의 결의 783(Passenger Services Conference Resolution 783) 아래 운영되어 온 PADIS Board는 항공사 대표들로 구성되며, 위원회와 전문 작업그룹의 지원을 받아 통신 프로토콜 상호운용성과 IATA 표준 전반의 의미적 일관성을 감독한다. PADIS는 레거시 EDIFACT 예약 및 PNRGOV 메시지부터 NDC를 구현하는 EDIST XML에 이르기까지 항공 유통·데이터 교환 스키마가 어떻게 합의·관리·버전 관리되는지를 설명하는 표준 권한 계층이다.",
+    "standardBody": "IATA",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "EDIFACT"
+      },
+      {
+        "type": "parent",
+        "targetTerm": "Enhanced and Simplified Distribution (EDIST)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "NDC"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Airline Industry Data Model (AIDM)"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "EDIFACT",
+        "explanation": "EDIFACT is the UN-origin EDI syntax; PADIS is the IATA body and air-industry standards set (in both EDIFACT and XML syntaxes) that governs how those messages are defined for passenger and airport use.",
+        "explanation_ko": "EDIFACT는 UN에서 유래한 EDI 구문이고, PADIS는 그 메시지가 여객·공항 용도로 어떻게 정의되는지를 관장하는 IATA 기구이자 항공 산업 표준 집합(EDIFACT와 XML 두 구문)이다."
+      },
+      {
+        "targetTerm": "Enhanced and Simplified Distribution (EDIST)",
+        "explanation": "PADIS is the governance/authority publishing and versioning schemas; EDIST is the specific NDC XML message family published under PADIS governance.",
+        "explanation_ko": "PADIS는 스키마를 발행·버전 관리하는 거버넌스/권한 기구이고, EDIST는 PADIS 거버넌스 아래 발행되는 구체적인 NDC XML 메시지 계열이다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "IATA",
+        "name": "Passenger Standards Conference (PSC)",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "org": "IATA",
+        "name": "PADIS XML Implementation Guide",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"10\" width=\"36\" height=\"28\" rx=\"3\"/><path d=\"M6 18h36\"/><path d=\"M11 14h.01M15 14h.01\"/><path d=\"M12 26h10M12 31h14\"/><path d=\"M30 24l5 4-5 4\"/></svg>"
+  },
+  {
+    "id": "enhanced-and-simplified-distribution-edist",
+    "term": "Enhanced and Simplified Distribution (EDIST)",
+    "term_ko": "강화·단순화 유통 메시지(EDIST)",
+    "abbreviation": "EDIST",
+    "aliases": [
+      "EDIST",
+      "Enhanced and Simplified Distribution",
+      "NDC EDIST",
+      "EDIST XML"
+    ],
+    "category": "standards",
+    "conceptType": "standard",
+    "status": "active",
+    "definition": "Enhanced and Simplified Distribution is the formal IATA name for the family of XML messages that implement NDC and ONE Order, such as AirShopping, OfferPrice, OrderCreate, and OrderRetrieve. The term distinguishes the concrete message schema itself from the NDC program and brand.",
+    "definition_ko": "Enhanced and Simplified Distribution(EDIST)는 AirShopping, OfferPrice, OrderCreate, OrderRetrieve 등 NDC와 ONE Order를 구현하는 XML 메시지 계열에 대한 IATA의 공식 명칭이다. 이 용어는 구체적인 메시지 스키마 자체를 NDC 프로그램·브랜드와 구분한다.",
+    "longDef": "Enhanced Distribution messages cover shopping, ordering, and managing offers and orders (with or without tickets), while Simplified Distribution messages cover orders without tickets, servicing, accounting, payment, and refund (the ONE Order side). EDIST schemas are published under PADIS governance (PSC Resolution 783) following the PADIS publication procedures and release calendar, and are aligned to the AIDM.",
+    "longDef_ko": "Enhanced Distribution 메시지는 (항공권 유무와 무관하게) 오퍼와 주문의 조회·주문·관리를 다루고, Simplified Distribution 메시지는 항공권 없는 주문, 서비싱, 회계, 결제, 환불(ONE Order 측면)을 다룬다. EDIST 스키마는 PADIS 거버넌스(PSC 결의 783)와 PADIS 발행 절차·릴리스 일정에 따라 발행되며 AIDM에 정렬된다.",
+    "standardBody": "IATA",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "child",
+        "targetTerm": "Passenger and Airport Data Interchange Standards (PADIS)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "NDC"
+      },
+      {
+        "type": "related",
+        "targetTerm": "ONE Order"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Airline Industry Data Model (AIDM)"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "NDC",
+        "explanation": "NDC is the IATA program/brand and capability concept; EDIST is the formal name of the actual XML message schemas (AirShopping, OrderCreate, etc.) that implement NDC and ONE Order.",
+        "explanation_ko": "NDC는 IATA의 프로그램·브랜드이자 역량 개념이고, EDIST는 NDC와 ONE Order를 실제로 구현하는 XML 메시지 스키마(AirShopping, OrderCreate 등)의 공식 명칭이다."
+      },
+      {
+        "targetTerm": "EDIFACT",
+        "explanation": "EDIST is the modern XML message family for offers and orders; EDIFACT is the legacy compact-text EDI syntax for classic reservations/ticketing messaging.",
+        "explanation_ko": "EDIST는 오퍼와 주문을 위한 현대적 XML 메시지 계열이고, EDIFACT는 전통적 예약/발권 메시징을 위한 레거시 압축 텍스트 EDI 구문이다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "IATA",
+        "name": "Enhanced and Simplified Distribution Implementation Guide",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "org": "IATA",
+        "name": "Distribution with Offers & Orders (NDC)",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M16 8H10a2 2 0 0 0-2 2v28a2 2 0 0 0 2 2h28a2 2 0 0 0 2-2v-6\"/><path d=\"M18 22l-4 4 4 4M30 22l4 4-4 4M26 20l-4 12\"/><path d=\"M30 8h10v10\"/><path d=\"M40 8L28 20\"/></svg>"
+  },
+  {
+    "id": "ndc-capable",
+    "term": "NDC Capable",
+    "term_ko": "NDC Capable(NDC 대응 IT 사업자)",
+    "abbreviation": "",
+    "aliases": [
+      "NDC-Capable",
+      "NDC Capable IT Provider"
+    ],
+    "category": "standards",
+    "conceptType": "standard-term",
+    "status": "ambiguous",
+    "definition": "NDC Capable was the IATA designation for IT providers whose products implement NDC message schemas, as distinct from NDC Certified, which applied to airlines, travel sellers, and aggregators that operate those messages. It clarified vendor conformance (the technology supplier) versus operator conformance (the entity transacting).",
+    "definition_ko": "NDC Capable은 NDC 메시지 스키마를 구현하는 IT 사업자(제품 공급자)에 부여하던 IATA 지정으로, 그 메시지를 실제로 운용하는 항공사·여행 판매자·애그리게이터에 적용되던 NDC Certified와 구분되었다. 이는 기술 공급자의 적합성(벤더 적합성)과 거래 주체의 적합성(운영자 적합성)을 구분해 주었다.",
+    "longDef": "Under the legacy NDC Registration and Certification Program, designations included XML-Capable, NDC-Capable (for IT providers), and NDC-Certified (for airlines, sellers, and aggregators), each evaluated at compliance levels 2 to 4 against specified NDC message sets (Level 1 was retired) and renewable annually. The certification levels and the separate NDC registry were sunset at the end of October 2022 in favor of the Airline Retailing Maturity (ARM) index, which lists proven capabilities without the level designations; the underlying capable-versus-certified distinction nonetheless remains useful for understanding vendor versus operator conformance.",
+    "longDef_ko": "레거시 NDC 등록·인증 프로그램에서 지정은 XML-Capable, NDC-Capable(IT 사업자용), NDC-Certified(항공사·판매자·애그리게이터용)로 나뉘었고, 각각 지정 메시지 집합에 대해 2~4 레벨의 적합성을 가졌으며(레벨 1은 폐지됨) 매년 갱신해야 했다. 인증 레벨과 별도의 NDC 레지스트리는 2022년 10월말 폐지되어, 레벨 지정 없이 입증된 역량을 나열하는 Airline Retailing Maturity(ARM) index로 대체되었다. 그럼에도 capable 대 certified의 기저 구분은 벤더와 운영자의 적합성을 이해하는 데 여전히 유용하다.",
+    "standardBody": "IATA",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "NDC"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Airline Retailing Maturity (ARM)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Aggregator"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Airline Retailing Maturity (ARM)",
+        "explanation": "NDC Capable/Certified were the old level-based certification designations; the ARM index replaced them, listing proven shop/order/pay/settle capabilities without level labels.",
+        "explanation_ko": "NDC Capable/Certified는 과거의 레벨 기반 인증 지정이었고, ARM index가 이를 대체하여 레벨 표시 없이 입증된 shop/order/pay/settle 역량을 나열한다."
+      },
+      {
+        "targetTerm": "NDC",
+        "explanation": "NDC is the distribution standard itself; NDC Capable is a conformance designation about whether a given IT provider's product implements that standard.",
+        "explanation_ko": "NDC는 유통 표준 자체이고, NDC Capable은 특정 IT 사업자의 제품이 그 표준을 구현하는지에 관한 적합성 지정이다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "IATA",
+        "name": "Guide to the NDC Registration and Certification Program",
+        "version": "",
+        "section": "",
+        "url": "https://www.iata.org/contentassets/a0767ce7996445a3bc4cacd812e37ce4/guide-ndc-registration-certification-program.pdf"
+      },
+      {
+        "org": "Travel Weekly",
+        "name": "IATA replacing current NDC certification process",
+        "version": "",
+        "section": "",
+        "url": "https://www.travelweekly.com/Travel-News/Airline-News/IATA-replacing-current-NDC-certification-process"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"8\" width=\"28\" height=\"32\" rx=\"3\"/><path d=\"M16 16h16M16 22h10\"/><path d=\"M16 30l3 3 7-7\"/><circle cx=\"32\" cy=\"31\" r=\"5\"/><path d=\"M32 36v3l-2-1.5L28 39\"/></svg>"
+  },
+  {
+    "id": "standard-retailer-and-supplier-interline-agreement-srsia",
+    "term": "Standard Retailer and Supplier Interline Agreement (SRSIA)",
+    "term_ko": "표준 리테일러·공급사 인터라인 협정(SRSIA)",
+    "abbreviation": "SRSIA",
+    "aliases": [
+      "SRSIA",
+      "Standard Retailer and Supplier Interline Agreement"
+    ],
+    "category": "standards",
+    "conceptType": "document",
+    "status": "active",
+    "definition": "The SRSIA is IATA's standard template interline agreement for the offer-and-order world, defining the obligations of a Retailer airline and a Supplier airline for sales, electronic interactions, and liability around Offers and Orders. It is the legal foundation for offer-and-order interlining and is intended as a modern complement to MITA-style ticket-based interline.",
+    "definition_ko": "SRSIA는 offer-and-order 세계를 위한 IATA의 표준 템플릿 인터라인 협정으로, Offer와 Order를 둘러싼 판매·전자적 상호작용·책임에 관해 Retailer(리테일러) 항공사와 Supplier(공급사) 항공사의 의무를 정의한다. offer-and-order 인터라인의 법적 기반이며, MITA식 항공권 기반 인터라인을 현대적으로 보완하는 것을 목표로 한다.",
+    "longDef": "The SRSIA main agreement is complemented by annexes from which parties select options to fit their business needs. Importantly, it is not a multilateral agreement but a standardized template/starting point for a bilateral agreement, and it exists in parallel to the existing Multilateral Interline Traffic Agreement (MITA) — using the SRSIA does not automatically replace a party's MITA relationship. It is designed for an environment where the Retailer airline controls the construction of Offers, including interline and intermodal itineraries.",
+    "longDef_ko": "SRSIA 본 협정은 당사자가 비즈니스 요구에 맞게 옵션을 선택하는 부속서(annex)로 보완된다. 중요한 점은, 이는 다자(multilateral) 협정이 아니라 양자 협정을 위한 표준화된 템플릿/출발점이며, 기존 다자간 인터라인 운송 협정(MITA)과 병행하여 존재한다는 것이다. 즉 SRSIA를 사용한다고 해서 당사자의 기존 MITA 관계가 자동으로 대체되지는 않는다. SRSIA는 Retailer 항공사가 인터라인·복합운송 여정을 포함한 Offer 구성을 통제하는 환경을 위해 설계되었다.",
+    "standardBody": "IATA",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "MITA"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Interline"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Offer"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Order"
+      },
+      {
+        "type": "contrasts",
+        "targetTerm": "MITA"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "MITA",
+        "explanation": "MITA is the established multilateral ticket/document-based interline traffic agreement; SRSIA is a bilateral template agreement for offer-and-order interlining that runs in parallel to (rather than automatically replacing) MITA.",
+        "explanation_ko": "MITA는 확립된 다자간 항공권/문서 기반 인터라인 운송 협정이고, SRSIA는 offer-and-order 인터라인을 위한 양자 템플릿 협정으로 MITA를 자동으로 대체하지 않고 병행하여 운영된다."
+      },
+      {
+        "targetTerm": "Interline",
+        "explanation": "Interline is the general practice of carriers honoring each other's transport; SRSIA is the specific standard legal agreement that frames interline obligations in the offer-and-order model.",
+        "explanation_ko": "인터라인은 항공사들이 서로의 운송을 인정하는 일반적 관행이고, SRSIA는 offer-and-order 모델에서 인터라인 의무를 규정하는 구체적인 표준 법적 협정이다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "IATA",
+        "name": "Standard Retailer Supplier Interline Agreement (SRSIA) Overview and Positioning Paper",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "org": "IATA",
+        "name": "Interlining with Offers & Orders",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14 6h14l6 6v30a2 2 0 0 1-2 2H14a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z\"/><path d=\"M28 6v6h6\"/><circle cx=\"19\" cy=\"26\" r=\"3\"/><circle cx=\"29\" cy=\"26\" r=\"3\"/><path d=\"M22 26h4\"/><path d=\"M17 34h14\"/></svg>"
+  },
+  {
+    "id": "ndc-exchange",
+    "term": "NDC Exchange",
+    "term_ko": "NDC Exchange(NDC 익스체인지)",
+    "abbreviation": "",
+    "aliases": [
+      "NDC Exchange",
+      "ATPCO NDC Exchange"
+    ],
+    "category": "standards",
+    "conceptType": "provider-term",
+    "status": "active",
+    "definition": "NDC Exchange is an industry-owned hub/marketplace, developed by ATPCO with SITA, that connects airlines and travel sellers to exchange offers and orders through a single API. Its message hub normalizes differing NDC schema versions in real time and can translate non-NDC formats such as OpenTravel (OTA) XML, lowering the barrier to NDC adoption.",
+    "definition_ko": "NDC Exchange는 ATPCO가 SITA와 함께 개발한 산업 소유 허브/마켓플레이스로, 단일 API를 통해 항공사와 여행 판매자가 오퍼와 주문을 교환하도록 연결한다. 그 메시지 허브는 서로 다른 NDC 스키마 버전을 실시간으로 정규화하고 OpenTravel(OTA) XML 같은 비(非)NDC 형식도 변환할 수 있어 NDC 도입 장벽을 낮춘다.",
+    "longDef": "Being format- and version-agnostic, NDC Exchange lets a carrier or aggregator connect once regardless of the schema version each counterparty supports, with the hub handling normalization and routing. Early participants include ARC for settlement support and Routehappy by ATPCO for rich-content merchandising, positioning NDC Exchange as a connectivity adapter and hybrid distribution layer in the modern airline retailing ecosystem.",
+    "longDef_ko": "형식과 버전에 구애받지 않으므로, NDC Exchange는 항공사나 애그리게이터가 각 상대방이 지원하는 스키마 버전과 무관하게 한 번만 연결하면 되도록 하며, 허브가 정규화와 라우팅을 처리한다. 초기 참여자로 정산 지원을 맡은 ARC와 리치 콘텐츠 머천다이징을 제공하는 Routehappy by ATPCO가 있어, NDC Exchange는 현대 항공 리테일링 생태계에서 연결 어댑터이자 하이브리드 유통 계층으로 자리한다.",
+    "standardBody": "",
+    "providerTerms": [
+      {
+        "provider": "ATPCO",
+        "term": "NDC Exchange",
+        "context": "ATPCO (with SITA) developed and operates NDC Exchange as an industry-owned hub for offers, orders, and rich content",
+        "context_ko": "ATPCO(및 SITA)가 오퍼·주문·리치 콘텐츠를 위한 산업 소유 허브로 NDC Exchange를 개발·운영함",
+        "relationship": "same"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "NDC"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Aggregator"
+      },
+      {
+        "type": "related",
+        "targetTerm": "ATPCO"
+      },
+      {
+        "type": "related",
+        "targetTerm": "GDS Bypass"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Aggregator",
+        "explanation": "An aggregator is the general category of supplier-content consolidator; NDC Exchange is a specific ATPCO/SITA industry hub that also normalizes and translates NDC and OTA schema versions between parties.",
+        "explanation_ko": "애그리게이터는 공급사 콘텐츠 통합자를 아우르는 일반 범주이고, NDC Exchange는 당사자 간 NDC·OTA 스키마 버전을 정규화·변환하기도 하는 특정 ATPCO/SITA 산업 허브이다."
+      },
+      {
+        "targetTerm": "NDC",
+        "explanation": "NDC is the messaging standard; NDC Exchange is a connectivity platform/marketplace that carries, normalizes, and translates NDC (and other) messages between airlines and sellers.",
+        "explanation_ko": "NDC는 메시징 표준이고, NDC Exchange는 항공사와 판매자 사이에서 NDC(및 기타) 메시지를 실어 나르고 정규화·변환하는 연결 플랫폼/마켓플레이스이다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "ATPCO",
+        "name": "Routehappy by ATPCO announces integration of rich content into NDC Exchange",
+        "version": "",
+        "section": "",
+        "url": "https://atpco.net/single-press/routehappy-by-atpco-announces-integration-of-rich-content-into-ndc-exchange/"
+      },
+      {
+        "org": "ATPCO",
+        "name": "Get Connected. Get Noticed. Stay Happy. (Routehappy + NDC Exchange)",
+        "version": "",
+        "section": "",
+        "url": "https://info.atpco.net/atpco-routehappy-ndc-exchange"
+      },
+      {
+        "org": "ATPCO",
+        "name": "ATPCO and SITA Collaborate to Build NDC Exchange to Overcome Barriers to NDC Adoption",
+        "version": "",
+        "section": "",
+        "url": "https://atpco.net/single-press/atpco-and-sita-collaborate-to-build-ndc-exchange-to-overcome-barriers-to-ndc-adoption/"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"6\"/><circle cx=\"8\" cy=\"12\" r=\"3\"/><circle cx=\"40\" cy=\"12\" r=\"3\"/><circle cx=\"8\" cy=\"36\" r=\"3\"/><circle cx=\"40\" cy=\"36\" r=\"3\"/><path d=\"M11 13l8 6M37 13l-8 6M11 35l8-6M37 35l-8-6\"/></svg>"
+  },
+  {
+    "id": "type-b-messaging",
+    "term": "Type B Messaging",
+    "term_ko": "Type B 메시징(타입 B 텔레타이프 메시지)",
+    "abbreviation": "",
+    "aliases": [
+      "Type B",
+      "Type B Message",
+      "TTY messaging",
+      "Airline teletype message"
+    ],
+    "category": "standards",
+    "conceptType": "standard",
+    "status": "active",
+    "definition": "Type B Messaging is the legacy store-and-forward teletype (TTY) message format used by airlines and the wider air-travel industry to exchange booking, reservations, and operational messages over private SITA and ARINC networks (and AFTN). Dating to the early 1960s, it remains a baseline transport that newer XML/REST distribution is gradually replacing.",
+    "definition_ko": "Type B 메시징은 항공사와 항공 여행 업계 전반이 SITA·ARINC 사설망(및 AFTN)을 통해 예약·운영 메시지를 교환하는 데 쓰는 레거시 저장-후-전달(store-and-forward) 텔레타이프(TTY) 메시지 형식이다. 1960년대 초로 거슬러 올라가며, 더 새로운 XML/REST 유통이 점차 대체해 가는 기반 전송 수단으로 남아 있다.",
+    "longDef": "Type B is prized for its security, reliability, high availability, and assured delivery with tracing, but is deliberately constrained (typically up to 60 lines of 63 characters with a limited character set). It is carried over private SITA/ARINC networks, increasingly via modern protocols such as MATIP and MQ over TCP/IP. Distinct from interactive Type A (query/response) traffic, Type B underpins decades of legacy reservations and operational processes that NDC and REST APIs are slowly succeeding.",
+    "longDef_ko": "Type B는 보안성, 신뢰성, 높은 가용성, 추적이 가능한 보장 전달로 높이 평가되지만, 의도적으로 제약되어 있다(보통 한 줄 63자, 최대 60줄, 제한된 문자 집합). SITA/ARINC 사설망을 통해 전달되며 점차 TCP/IP 위의 MATIP, MQ 같은 현대적 프로토콜을 사용한다. 대화형 Type A(질의/응답) 트래픽과 구별되며, Type B는 NDC와 REST API가 서서히 대체해 가고 있는 수십 년간의 레거시 예약·운영 프로세스를 떠받친다.",
+    "standardBody": "IATA",
+    "providerTerms": [
+      {
+        "provider": "SITA",
+        "term": "SITA Type B / Messaging network",
+        "context": "SITA operates one of the two principal private networks carrying airline Type B teletype messages",
+        "context_ko": "SITA는 항공 Type B 텔레타이프 메시지를 실어 나르는 두 주요 사설망 중 하나를 운영함",
+        "relationship": "related"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "EDIFACT"
+      },
+      {
+        "type": "contrasts",
+        "targetTerm": "NDC"
+      },
+      {
+        "type": "contrasts",
+        "targetTerm": "REST API"
+      },
+      {
+        "type": "related",
+        "targetTerm": "PNR"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "EDIFACT",
+        "explanation": "Type B is a teletype (TTY) message transport format over SITA/ARINC; EDIFACT is a structured EDI syntax. They are different layers — EDI content can be conveyed, but Type B is fundamentally the legacy teletype messaging medium, not an EDI grammar.",
+        "explanation_ko": "Type B는 SITA/ARINC 위의 텔레타이프(TTY) 메시지 전송 형식이고, EDIFACT는 구조화된 EDI 구문이다. 둘은 서로 다른 계층으로, EDI 내용을 실어 나를 수는 있으나 Type B는 본질적으로 EDI 문법이 아니라 레거시 텔레타이프 메시징 매체이다."
+      },
+      {
+        "targetTerm": "REST API",
+        "explanation": "Type B is constrained legacy TTY messaging over private aviation networks; a REST API is modern HTTP/JSON web-service integration that is gradually replacing such legacy transports.",
+        "explanation_ko": "Type B는 항공 사설망 위에서 동작하는 제약된 레거시 TTY 메시징이고, REST API는 그런 레거시 전송을 점차 대체하는 현대적 HTTP/JSON 웹 서비스 연동이다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "IATA",
+        "name": "Type B Messaging Whitepaper",
+        "version": "v2.1",
+        "section": "",
+        "url": ""
+      },
+      {
+        "org": "Wikipedia",
+        "name": "Airline teletype system",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"20\" width=\"36\" height=\"18\" rx=\"2\"/><path d=\"M12 20v-6a4 4 0 0 1 4-4h16a4 4 0 0 1 4 4v6\"/><path d=\"M12 27h.01M17 27h.01M22 27h.01M27 27h.01M32 27h.01M36 27h.01\"/><path d=\"M14 32h20\"/></svg>"
+  },
+  {
+    "id": "passenger-service-system-pss",
+    "term": "Passenger Service System (PSS)",
+    "term_ko": "여객 서비스 시스템(PSS)",
+    "abbreviation": "PSS",
+    "aliases": [
+      "PSS",
+      "Passenger Service System"
+    ],
+    "category": "standards",
+    "conceptType": "provider-term",
+    "status": "active",
+    "definition": "A Passenger Service System is the core airline platform that manages passenger-facing operations, typically comprising a reservations system, an inventory/availability system, and a departure control system (DCS). It is the legacy architectural backbone against which modern offer and order management systems are defined and which they aim to replace.",
+    "definition_ko": "여객 서비스 시스템(PSS)은 여객 관련 운영을 관리하는 항공사의 핵심 플랫폼으로, 보통 예약 시스템, 재고/가용성 시스템, 출발 통제 시스템(DCS)으로 구성된다. 현대적 offer·order 관리 시스템이 정의되는 기준이 되는 레거시 아키텍처의 근간이며, 그러한 시스템이 대체하고자 하는 대상이다.",
+    "longDef": "The reservations component holds schedules, fares, and PNRs and issues tickets; the inventory component controls seat availability and fare classes (RBDs); and the DCS handles check-in, baggage, and boarding. Full-service carriers run complex suites such as Amadeus Altea or SabreSonic, while many low-cost carriers use streamlined ticketless platforms. As airlines transition to IATA's offer-and-order retailing, Offer Management Systems and Order Management Systems progressively take over functions traditionally locked inside the PSS.",
+    "longDef_ko": "예약 구성요소는 스케줄·운임·PNR을 보유하고 항공권을 발행하며, 재고 구성요소는 좌석 가용성과 운임 등급(RBD)을 통제하고, DCS는 체크인·수하물·탑승을 처리한다. 풀서비스 항공사는 Amadeus Altea나 SabreSonic 같은 복합 스위트를 운용하고, 많은 저비용 항공사는 간소화된 무발권 플랫폼을 사용한다. 항공사가 IATA의 offer-and-order 리테일링으로 전환함에 따라, Offer Management System과 Order Management System이 전통적으로 PSS 내부에 갇혀 있던 기능을 점진적으로 넘겨받는다.",
+    "standardBody": "",
+    "providerTerms": [
+      {
+        "provider": "Amadeus",
+        "term": "Altea",
+        "context": "Amadeus's full-service-carrier PSS suite",
+        "context_ko": "Amadeus의 풀서비스 항공사 PSS 스위트",
+        "relationship": "narrower"
+      },
+      {
+        "provider": "Sabre",
+        "term": "SabreSonic",
+        "context": "Sabre's passenger service system for airlines",
+        "context_ko": "Sabre의 항공사용 여객 서비스 시스템",
+        "relationship": "narrower"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Order Management System (OMS)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Offer Management System"
+      },
+      {
+        "type": "related",
+        "targetTerm": "CRS"
+      },
+      {
+        "type": "related",
+        "targetTerm": "PNR"
+      },
+      {
+        "type": "related",
+        "targetTerm": "RBD"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "CRS",
+        "explanation": "A CRS (reservations system) is one component within a PSS; the PSS is the broader platform that also includes inventory and departure control alongside reservations.",
+        "explanation_ko": "CRS(예약 시스템)는 PSS 안의 한 구성요소이고, PSS는 예약과 함께 재고와 출발 통제까지 포함하는 더 넓은 플랫폼이다."
+      },
+      {
+        "targetTerm": "Order Management System (OMS)",
+        "explanation": "The PSS is the legacy PNR/ticket-centric platform; an OMS is the modern order-centric system that progressively replaces PSS functions in offer-and-order retailing.",
+        "explanation_ko": "PSS는 PNR/항공권 중심의 레거시 플랫폼이고, OMS는 offer-and-order 리테일링에서 PSS 기능을 점진적으로 대체하는 현대적 주문 중심 시스템이다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "IATA",
+        "name": "Offers and Orders Transformation Strategic Partnerships Program",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "org": "Wikipedia",
+        "name": "Passenger service system",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"8\" width=\"32\" height=\"10\" rx=\"2\"/><rect x=\"8\" y=\"20\" width=\"32\" height=\"10\" rx=\"2\"/><rect x=\"8\" y=\"32\" width=\"32\" height=\"8\" rx=\"2\"/><path d=\"M13 13h.01M13 25h.01M13 36h.01\"/><path d=\"M18 13h14M18 25h14M18 36h10\"/></svg>"
+  },
+  {
+    "id": "dynamic-offer",
+    "term": "Dynamic Offer",
+    "term_ko": "다이내믹 오퍼(Dynamic Offer)",
+    "abbreviation": "",
+    "aliases": [
+      "Dynamic Offers",
+      "Dynamic Offer Creation"
+    ],
+    "category": "standards",
+    "conceptType": "standard-term",
+    "status": "active",
+    "definition": "A Dynamic Offer is IATA's defined airline-retailing capability in which an Offer is generated in real time within the offer-creation step by combining dynamic pricing, continuous pricing, and dynamic bundling, based on the shopping context. It enables airlines to adapt product and price to each request rather than relying solely on pre-filed fares.",
+    "definition_ko": "다이내믹 오퍼(Dynamic Offer)는 조회(shopping) 맥락을 토대로 동적 가격 책정(dynamic pricing), 연속 가격 책정(continuous pricing), 동적 번들링(dynamic bundling)을 결합하여 오퍼 생성 단계에서 실시간으로 오퍼를 만들어 내는, IATA가 정의한 항공 리테일링 역량이다. 사전 등록된 운임에만 의존하지 않고 항공사가 각 요청에 맞춰 상품과 가격을 조정할 수 있게 한다.",
+    "longDef": "Dynamic pricing prices an offer from contextual signals (length of stay, time to departure, day of travel, competition, remaining capacity); continuous pricing extends this to effectively unlimited, granular price points beyond fixed fare ladders; and dynamic bundling assembles products and services on the fly per request and context. Dynamic Offers leverage NDC and direct-sales shopping workflows and require significant change to legacy pricing, distribution, accounting, and reporting systems. It is distinct from generic dynamic packaging of multi-supplier travel components.",
+    "longDef_ko": "동적 가격 책정은 맥락 신호(체류 기간, 출발까지의 시간, 여행 요일, 경쟁, 잔여 좌석)로부터 오퍼 가격을 책정하고, 연속 가격 책정은 이를 고정된 운임 사다리를 넘어 사실상 무제한의 세밀한 가격대로 확장하며, 동적 번들링은 요청과 맥락에 따라 상품·서비스를 즉석에서 구성한다. 다이내믹 오퍼는 NDC와 직판 조회 워크플로를 활용하며 레거시 가격·유통·회계·리포팅 시스템에 상당한 변화를 요구한다. 여러 공급사의 여행 구성요소를 묶는 일반적 동적 패키징(dynamic packaging)과는 구별된다.",
+    "standardBody": "IATA",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Offer"
+      },
+      {
+        "type": "related",
+        "targetTerm": "NDC"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Continuous Pricing"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Offer Management System"
+      },
+      {
+        "type": "contrasts",
+        "targetTerm": "Dynamic Packaging"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Dynamic Packaging",
+        "explanation": "Dynamic packaging assembles multi-supplier travel components (flight + hotel + car) into a consumer package; a Dynamic Offer is the airline-side real-time creation of a priced, bundled air offer within IATA's offer-creation step.",
+        "explanation_ko": "동적 패키징은 여러 공급사의 여행 구성요소(항공편+호텔+렌터카)를 소비자 패키지로 묶는 것이고, 다이내믹 오퍼는 IATA의 오퍼 생성 단계에서 항공사 측이 가격이 책정된 묶음 항공 오퍼를 실시간으로 만들어 내는 것이다."
+      },
+      {
+        "targetTerm": "Continuous Pricing",
+        "explanation": "Continuous pricing is one of the three component capabilities of a Dynamic Offer; a Dynamic Offer is the broader capability combining continuous pricing with dynamic pricing and dynamic bundling.",
+        "explanation_ko": "연속 가격 책정은 다이내믹 오퍼를 이루는 세 가지 구성 역량 중 하나이고, 다이내믹 오퍼는 연속 가격 책정을 동적 가격 책정·동적 번들링과 결합한 더 넓은 역량이다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "IATA",
+        "name": "Dynamic Offers - Airline Retailing",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "org": "IATA",
+        "name": "Dynamic Offers: the road to Customer Centric Airline Retailing",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 34l8-10 7 6 9-14 8 6\"/><path d=\"M40 22v8M40 22h-8\"/><path d=\"M6 40h36\"/><circle cx=\"16\" cy=\"24\" r=\"1.5\" fill=\"currentColor\"/><circle cx=\"23\" cy=\"30\" r=\"1.5\" fill=\"currentColor\"/><circle cx=\"32\" cy=\"16\" r=\"1.5\" fill=\"currentColor\"/></svg>"
   }
 ]

@@ -1177,5 +1177,396 @@
       }
     ],
     "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 43c8-9 13-16 13-23a13 13 0 10-26 0c0 7 5 14 13 23z\"/><path d=\"M19 22l4-7 4 7M20.5 19.5h5\"/></svg>"
+  },
+  {
+    "id": "tids-code",
+    "term": "TIDS Code",
+    "term_ko": "TIDS 코드 (여행산업 식별자 서비스 코드)",
+    "abbreviation": "TIDS",
+    "aliases": [
+      "Travel Industry Designator Service Code",
+      "TIDS Numeric Code",
+      "IATA TIDS"
+    ],
+    "category": "codes",
+    "conceptType": "code",
+    "status": "active",
+    "definition": "An IATA-issued numeric identifier from the Travel Industry Designator Service (TIDS) that lets non-accredited sales intermediaries (such as tour operators, travel advisors and other points of sale) be uniquely recognized by airlines, hotels, car rental firms and other suppliers in electronic reservation systems. It is distinct from the IATA Number, which is issued only to financially accredited agencies.",
+    "definition_ko": "IATA의 여행산업 식별자 서비스(Travel Industry Designator Service, TIDS)에서 발급하는 숫자 식별자로, 비공인(non-accredited) 판매 중개인(투어 오퍼레이터, 여행 어드바이저, 기타 판매 지점 등)이 전자 예약 시스템에서 항공사·호텔·렌터카·기타 공급자에게 고유하게 식별되도록 한다. 재정적으로 공인된 대리점에만 발급되는 IATA Number와는 구별된다.",
+    "longDef": "TIDS was created so that travel businesses that are not IATA-accredited (and therefore cannot ticket through the BSP or hold an IATA Number) still have a single, globally recognized identity in supplier and GDS bookings. The TIDS Numeric Code is used in the booking/PNR rather than as a settlement credential: it identifies who made the sale for reporting, commission and tracking purposes, but it does not by itself confer ticketing authority or access to IATA settlement. Suppliers use TIDS codes to identify non-accredited points of sale, while accredited agencies that already have an IATA Number may also register TIDS codes to identify individual non-accredited sub-locations.",
+    "longDef_ko": "TIDS는 IATA 공인을 받지 않아 BSP를 통한 발권이나 IATA Number 보유가 불가능한 여행 사업체도 공급자·GDS 예약에서 전 세계적으로 통용되는 단일 식별자를 갖도록 만들어졌다. TIDS Numeric Code는 정산 자격 증명이 아니라 예약/PNR 안에서 사용되어, 누가 판매를 일으켰는지를 보고·커미션·추적 목적으로 식별한다. 다만 그 자체로 발권 권한이나 IATA 정산 접근권을 부여하지는 않는다. 공급자는 비공인 판매 지점을 식별하기 위해 TIDS 코드를 사용하며, 이미 IATA Number를 보유한 공인 대리점도 개별 비공인 하위 지점을 식별하기 위해 TIDS 코드를 추가로 등록할 수 있다.",
+    "standardBody": "IATA",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "contrasts",
+        "targetTerm": "IATA Number"
+      },
+      {
+        "type": "related",
+        "targetTerm": "OTA (Online Travel Agency)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "GDS"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Pseudo City Code"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "IATA Number",
+        "explanation": "An IATA Number is issued only to financially accredited agencies and grants ticketing/BSP settlement authority; a TIDS code merely identifies a non-accredited point of sale for recognition, reporting and commission, with no settlement rights.",
+        "explanation_ko": "IATA Number는 재정 공인을 받은 대리점에만 발급되어 발권·BSP 정산 권한을 부여하는 반면, TIDS 코드는 비공인 판매 지점을 인식·보고·커미션 목적으로 식별만 할 뿐 정산 권한이 없다."
+      },
+      {
+        "targetTerm": "Pseudo City Code",
+        "explanation": "A Pseudo City Code identifies an agency office within a specific GDS host; a TIDS code is an IATA-wide identity recognized across suppliers and systems regardless of GDS.",
+        "explanation_ko": "Pseudo City Code는 특정 GDS 호스트 내부에서 대리점 사무소를 식별하는 반면, TIDS 코드는 GDS와 무관하게 여러 공급자·시스템에 걸쳐 통용되는 IATA 차원의 식별자다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "IATA",
+        "name": "Travel Industry Designator Service (TIDS)",
+        "version": "",
+        "section": "",
+        "url": "https://www.iata.org/en/services/travel-agency-program/tids/"
+      },
+      {
+        "org": "IATA",
+        "name": "TIDS - Frequently Asked Questions",
+        "version": "",
+        "section": "",
+        "url": "https://www.iata.org/en/services/travel-agency-program/tids/faq/"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"12\" width=\"32\" height=\"24\" rx=\"3\"/><circle cx=\"18\" cy=\"22\" r=\"4\"/><path d=\"M13 31c1-3 3-4 5-4s4 1 5 4\"/><path d=\"M28 20h8M28 25h8M28 30h5\"/></svg>"
+  },
+  {
+    "id": "air-waybill-number",
+    "term": "Air Waybill Number",
+    "term_ko": "항공화물운송장 번호 (Air Waybill Number)",
+    "abbreviation": "AWB",
+    "aliases": [
+      "AWB Number",
+      "Air Waybill Reference",
+      "Master Air Waybill Number"
+    ],
+    "category": "codes",
+    "conceptType": "code",
+    "status": "active",
+    "definition": "The air-cargo equivalent of a ticket number: an 11-digit identifier in which the first 3 digits (the prefix, assigned by IATA) identify the carrier and the remaining 8 digits form a serial that uniquely tracks the consignment. The serial's final digit is a modulo-7 check digit. It is the central reference for air freight distribution, tracking and billing.",
+    "definition_ko": "여객 항공권 번호에 해당하는 항공화물의 식별자로, 11자리 번호이며 앞 3자리(IATA가 배정하는 prefix)는 운송 항공사를 식별하고 나머지 8자리는 해당 화물(consignment)을 고유하게 추적하는 일련번호다. 일련번호의 마지막 자리는 modulo-7 검증 숫자(check digit)다. 항공화물의 유통·추적·정산의 중심 참조번호 역할을 한다.",
+    "longDef": "An AWB number is typically written as prefix-serial (for example 176-12345675). The 3-digit prefix is the IATA-assigned numeric airline prefix tied to the issuing/operating carrier; the 8-digit serial consists of a 7-digit running number plus a single check digit equal to the running number modulo 7. A Master Air Waybill (MAWB) covers the consignment between carriers, while House Air Waybills (HAWB) issued by freight forwarders sit beneath it for individual shippers. The number drives e-freight / e-AWB electronic messaging, customs filing, status milestones and revenue accounting across the air-cargo supply chain.",
+    "longDef_ko": "AWB 번호는 보통 prefix-serial 형식으로 표기된다(예: 176-12345675). 앞 3자리 prefix는 발행/운송 항공사에 연결된 IATA 배정 숫자 prefix이며, 8자리 일련번호는 7자리 순차번호와 그 순차번호를 7로 나눈 나머지(modulo 7)인 1자리 check digit으로 구성된다. Master Air Waybill(MAWB)은 항공사 간 화물 전체를 포괄하고, 포워더가 발행하는 House Air Waybill(HAWB)이 그 아래에서 개별 화주를 담당한다. 이 번호는 항공화물 공급망 전반의 e-freight / e-AWB 전자 메시징, 세관 신고, 상태 마일스톤, 수익 회계의 기준이 된다.",
+    "standardBody": "IATA",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "contrasts",
+        "targetTerm": "Ticket Number"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Airline Accounting Code"
+      },
+      {
+        "type": "related",
+        "targetTerm": "EDIFACT"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Ticket Number",
+        "explanation": "A ticket number identifies a passenger document and embeds the 3-digit airline accounting (numeric) code; an AWB number identifies a cargo consignment and embeds the 3-digit IATA airline prefix, with a modulo-7 check digit on the serial.",
+        "explanation_ko": "Ticket Number는 여객 발권 문서를 식별하며 3자리 항공사 회계(숫자) 코드를 포함하는 반면, AWB 번호는 화물 consignment를 식별하며 3자리 IATA 항공사 prefix를 포함하고 일련번호에 modulo-7 check digit을 둔다."
+      },
+      {
+        "targetTerm": "Airline Accounting Code",
+        "explanation": "The 3-digit airline accounting code is the numeric carrier code used in passenger ticket numbers; the AWB 3-digit prefix is the analogous numeric carrier identifier used in cargo, and the two numbering schemes are administered separately though both by IATA.",
+        "explanation_ko": "3자리 항공사 회계 코드는 여객 항공권 번호에 쓰이는 숫자 항공사 코드이고, AWB 3자리 prefix는 화물에서 쓰이는 유사한 숫자 항공사 식별자다. 두 체계 모두 IATA가 관리하지만 별개로 운영된다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "IATA",
+        "name": "e-freight / e-AWB",
+        "version": "",
+        "section": "",
+        "url": "https://www.iata.org/en/programs/cargo/e/"
+      },
+      {
+        "org": "Wikipedia",
+        "name": "Air waybill",
+        "version": "",
+        "section": "",
+        "url": "https://en.wikipedia.org/wiki/Air_waybill"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"8\" width=\"28\" height=\"32\" rx=\"2\"/><path d=\"M16 16h16M16 22h16M16 28h10\"/><path d=\"M30 34l4 4 8-8\"/></svg>"
+  },
+  {
+    "id": "sita-teletype-address",
+    "term": "SITA Teletype Address",
+    "term_ko": "SITA 텔레타이프 주소 (SITA Teletype Address)",
+    "abbreviation": "",
+    "aliases": [
+      "IATA Teletype Address",
+      "Type B Address",
+      "SITA Address",
+      "7-character teletype address"
+    ],
+    "category": "codes",
+    "conceptType": "code",
+    "status": "active",
+    "definition": "A 7-character addressing scheme used to route IATA Type B teletype (and EDIFACT) messages between airline and airport systems. It is formed of a 3-letter IATA location code, a 2-letter department/function indicator and a 2-character airline designator (for example JFKRMBA), giving each operational mailbox a unique address on the SITA messaging network.",
+    "definition_ko": "항공사와 공항 시스템 사이에서 IATA Type B 텔레타이프(및 EDIFACT) 메시지를 라우팅하는 데 사용되는 7자리 주소 체계다. 3자리 IATA 위치 코드, 2자리 부서/기능 지시자, 2자리 항공사 지정 코드(예: JFKRMBA)로 구성되어, SITA 메시징 네트워크 상의 각 운영용 메일박스에 고유 주소를 부여한다.",
+    "longDef": "The address structure is AAABBCC: AAA is the 3-letter IATA city/airport code identifying the location, BB is a function/department code (such as RM for reservations or KK for departure control), and CC is the 2-character IATA airline designator. The scheme is the addressing layer of IATA Type B messaging and is most commonly carried over the SITA network (and historically ARINC); it is distinct from the 8-character AFTN aeronautical address used for air-traffic-service messages. These addresses underpin operational messages such as PNR, ticketing, baggage and movement (MVT) traffic exchanged between carriers and ground systems.",
+    "longDef_ko": "주소 구조는 AAABBCC다. AAA는 위치를 식별하는 3자리 IATA 도시/공항 코드, BB는 기능/부서 코드(예: 예약은 RM, 출발 통제는 KK 등), CC는 2자리 IATA 항공사 지정 코드다. 이 체계는 IATA Type B 메시징의 주소 계층으로, 주로 SITA 네트워크(역사적으로는 ARINC 포함)를 통해 전송되며, 항공교통업무 메시지에 쓰이는 8자리 AFTN 항공 주소와는 구별된다. 이 주소는 항공사와 지상 시스템 사이에 오가는 PNR, 발권, 수하물, 운항(MVT) 등 운영 메시지의 기반이 된다.",
+    "standardBody": "IATA",
+    "providerTerms": [
+      {
+        "provider": "SITA",
+        "term": "SITA Type B Messaging",
+        "context": "SITA operates the global network that most commonly transports IATA Type B messages addressed with these 7-character codes.",
+        "context_ko": "SITA는 이 7자리 주소로 지정된 IATA Type B 메시지를 가장 흔히 전송하는 글로벌 네트워크를 운영한다.",
+        "relationship": "related"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "EDIFACT"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Airport Code"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Airline Designator"
+      },
+      {
+        "type": "related",
+        "targetTerm": "PNR"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Airport Code",
+        "explanation": "An airport code is just the 3-letter location component; a SITA teletype address embeds that code as its first three characters but adds a 2-letter department and a 2-character airline designator to form a complete 7-character routing address.",
+        "explanation_ko": "공항 코드는 3자리 위치 요소일 뿐이지만, SITA 텔레타이프 주소는 그 코드를 앞 3자리로 포함하면서 2자리 부서 코드와 2자리 항공사 지정 코드를 더해 완전한 7자리 라우팅 주소를 만든다."
+      },
+      {
+        "targetTerm": "EDIFACT",
+        "explanation": "EDIFACT (Type A) is a structured message syntax for transactional messaging; the SITA teletype address is the routing/addressing layer for Type B free-format teletype traffic, though the same 7-character addresses are also used to carry EDIFACT over Type B.",
+        "explanation_ko": "EDIFACT(Type A)는 거래성 메시징을 위한 구조화된 메시지 구문인 반면, SITA 텔레타이프 주소는 Type B 자유형식 텔레타이프 트래픽의 라우팅/주소 계층이다. 다만 동일한 7자리 주소가 Type B를 통해 EDIFACT를 전송하는 데에도 사용된다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "Wikipedia",
+        "name": "Airline teletype system",
+        "version": "",
+        "section": "",
+        "url": "https://en.wikipedia.org/wiki/Airline_teletype_system"
+      },
+      {
+        "org": "SITA",
+        "name": "Type B Messaging",
+        "version": "",
+        "section": "",
+        "url": "https://www.sita.aero/"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"14\" width=\"36\" height=\"22\" rx=\"2\"/><path d=\"M6 18l18 11 18-11\"/><path d=\"M14 40h20\"/><path d=\"M24 36v4\"/></svg>"
+  },
+  {
+    "id": "iata-delay-codes",
+    "term": "IATA Delay Codes",
+    "term_ko": "IATA 지연 코드 (IATA Delay Codes)",
+    "abbreviation": "",
+    "aliases": [
+      "Standard IATA Delay Codes",
+      "AHM 730 Delay Codes",
+      "Delay Codes"
+    ],
+    "category": "codes",
+    "conceptType": "code",
+    "status": "active",
+    "definition": "The standardized two-character delay-reason codes defined in IATA's Airport Handling Manual chapter AHM 730, used to record and report the primary cause of a flight delay. They are the de-facto global standard for coding on-time-performance data and the delay fields of aircraft movement (MVT) messages.",
+    "definition_ko": "IATA의 공항 핸들링 매뉴얼(Airport Handling Manual) AHM 730에 정의된 표준 2자리 지연 사유 코드로, 항공편 지연의 주요 원인을 기록·보고하는 데 사용된다. 정시운항(OTP) 데이터 코딩과 항공기 운항(MVT) 메시지의 지연 필드에 대한 사실상의 글로벌 표준이다.",
+    "longDef": "AHM 730 defines roughly 100 numeric codes (00-99) grouped into categories such as passenger and baggage handling, cargo and mail, aircraft and ramp handling, technical/aircraft equipment, damage/EDP failures, flight operations and crewing, weather, airport/governmental authorities (including ATFM restrictions), reactionary (knock-on) delays and miscellaneous causes. Two-letter alphabetic equivalents exist, but movement-message standards (such as AHM 780 MVT) specify the numeric form. By giving every airline and ground handler a common vocabulary, the codes make delay statistics, punctuality reporting and root-cause analysis comparable across carriers and airports.",
+    "longDef_ko": "AHM 730은 약 100개의 숫자 코드(00-99)를 정의하며, 이는 여객·수하물 처리, 화물·우편, 항공기·램프 처리, 기술/기재 결함, 손상·전산(EDP) 장애, 운항·승무, 기상, 공항/정부 당국(ATFM 제한 포함), 연쇄(reactionary) 지연, 기타 사유 등의 범주로 분류된다. 2자리 알파벳 등가 코드도 존재하지만 운항 메시지 표준(예: AHM 780 MVT)은 숫자 형식을 규정한다. 모든 항공사와 지상조업사에 공통 어휘를 제공함으로써, 이 코드는 지연 통계·정시성 보고·근본원인 분석을 항공사와 공항 전반에 걸쳐 비교 가능하게 만든다.",
+    "standardBody": "IATA",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "IROPS"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Schedule Change"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Flight Number"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "IROPS",
+        "explanation": "IROPS describes the operational situation of irregular operations (delays, cancellations, diversions); IATA delay codes are the standardized two-character labels that classify why a specific delay occurred within that situation.",
+        "explanation_ko": "IROPS는 비정상 운항(지연·결항·회항)이라는 운영 상황 자체를 가리키는 반면, IATA 지연 코드는 그 상황 안에서 특정 지연이 왜 발생했는지를 분류하는 표준 2자리 라벨이다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "IATA",
+        "name": "Airport Handling Manual (AHM), Standard IATA Delay Codes",
+        "version": "",
+        "section": "AHM 730",
+        "url": "https://www.iata.org/en/publications/store/airport-handling-manual/"
+      },
+      {
+        "org": "Wikipedia",
+        "name": "IATA delay codes",
+        "version": "",
+        "section": "",
+        "url": "https://en.wikipedia.org/wiki/IATA_delay_codes"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"15\"/><path d=\"M24 15v9l6 4\"/><path d=\"M37 11l3-3M11 11L8 8\"/></svg>"
+  },
+  {
+    "id": "iso-3166-2-subdivision-code",
+    "term": "ISO 3166-2 Subdivision Code",
+    "term_ko": "ISO 3166-2 행정구역 코드 (ISO 3166-2 Subdivision Code)",
+    "abbreviation": "ISO 3166-2",
+    "aliases": [
+      "Country Subdivision Code",
+      "ISO 3166-2 Code",
+      "Region Code"
+    ],
+    "category": "codes",
+    "conceptType": "standard",
+    "status": "active",
+    "definition": "The ISO standard for coding the principal subdivisions (states, provinces, regions, etc.) of countries listed in ISO 3166-1. Each code is the alpha-2 country code, a hyphen, and up to three alphanumeric characters (for example US-NY for New York), and is widely used in postal addresses and tax/regulatory geography.",
+    "definition_ko": "ISO 3166-1에 등재된 국가의 주요 행정구역(주, 도, 지역 등)을 코딩하는 ISO 표준이다. 각 코드는 alpha-2 국가 코드, 하이픈, 그리고 최대 3자리 영숫자 문자로 구성된다(예: 뉴욕은 US-NY). 우편 주소와 세무·규제 지리 정보에 폭넓게 사용된다.",
+    "longDef": "ISO 3166-2 builds directly on the alpha-2 country codes of ISO 3166-1: the subdivision element after the hyphen is one to three alphabetic and/or numeric characters, usually drawn from coding systems already in use within the country. It is the de-facto reference for representing states, provinces, prefectures, cantons and similar units in structured data, and is reused by other systems (for example UN/LOCODE adopts ISO 3166-2 for its subdivision field). Because subdivisions change, codes are versioned by the ISO 3166 Maintenance Agency through dated editions and online amendment newsletters.",
+    "longDef_ko": "ISO 3166-2는 ISO 3166-1의 alpha-2 국가 코드를 직접 기반으로 한다. 하이픈 뒤의 행정구역 요소는 1~3자리의 알파벳 및/또는 숫자 문자이며, 보통 해당 국가에서 이미 사용 중인 코딩 체계에서 가져온다. 구조화된 데이터에서 주·도·현·칸톤 등 행정 단위를 표현하는 사실상의 기준이며, 다른 체계에서도 재사용된다(예: UN/LOCODE는 행정구역 필드에 ISO 3166-2를 채택). 행정구역은 변경되므로, 코드는 ISO 3166 유지관리기관(Maintenance Agency)이 발행하는 날짜별 판본과 온라인 개정 뉴스레터를 통해 버전 관리된다.",
+    "standardBody": "ISO",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "ISO 3166 Country Code"
+      },
+      {
+        "type": "related",
+        "targetTerm": "UN/LOCODE"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "ISO 3166 Country Code",
+        "explanation": "ISO 3166-1 codes identify whole countries (e.g. US); ISO 3166-2 codes identify subdivisions within a country (e.g. US-NY) by prefixing the country code and adding up to three characters.",
+        "explanation_ko": "ISO 3166-1 코드는 국가 전체를 식별하지만(예: US), ISO 3166-2 코드는 국가 코드를 앞에 붙이고 최대 3자리를 더해 국가 내부의 행정구역을 식별한다(예: US-NY)."
+      },
+      {
+        "targetTerm": "UN/LOCODE",
+        "explanation": "UN/LOCODE identifies specific trade/transport locations (ports, terminals, towns) within a country; ISO 3166-2 identifies the administrative subdivision a location sits in, and UN/LOCODE actually uses ISO 3166-2 codes for its subdivision element.",
+        "explanation_ko": "UN/LOCODE는 국가 내 특정 무역·운송 지점(항만, 터미널, 도시)을 식별하는 반면, ISO 3166-2는 그 지점이 속한 행정구역을 식별한다. 실제로 UN/LOCODE는 행정구역 요소에 ISO 3166-2 코드를 사용한다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "ISO",
+        "name": "ISO 3166-2 Codes for the representation of names of countries and their subdivisions — Part 2: Country subdivision code",
+        "version": "2020",
+        "section": "",
+        "url": "https://www.iso.org/standard/72483.html"
+      },
+      {
+        "org": "ISO",
+        "name": "ISO 3166 Country Codes",
+        "version": "",
+        "section": "",
+        "url": "https://www.iso.org/iso-3166-country-codes.html"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 10l32 0 0 28-32 0z\"/><path d=\"M24 10v28M8 24h16\"/><path d=\"M30 17l7 0 0 7-7 0z\"/></svg>"
+  },
+  {
+    "id": "iata-traffic-conference-area",
+    "term": "IATA Traffic Conference Area",
+    "term_ko": "IATA 운수회의 지역 (IATA Traffic Conference Area)",
+    "abbreviation": "TC",
+    "aliases": [
+      "Traffic Conference Area",
+      "IATA Area",
+      "TC1/TC2/TC3",
+      "Tariff Conference Area"
+    ],
+    "category": "codes",
+    "conceptType": "code",
+    "status": "active",
+    "definition": "IATA's division of the world into three geographic areas — TC1, TC2 and TC3 — that form the backbone for international fare construction, mileage and tariff rules. TC1 covers the Americas (Western Hemisphere); TC2 covers Europe, Africa and the Middle East; TC3 covers Asia, Australasia and the Pacific.",
+    "definition_ko": "IATA가 전 세계를 세 개의 지리적 지역(TC1, TC2, TC3)으로 나눈 구분으로, 국제 운임 산출(fare construction)·마일리지·요율(tariff) 규칙의 기본 골격을 이룬다. TC1은 미주(서반구), TC2는 유럽·아프리카·중동, TC3은 아시아·오세아니아·태평양을 포괄한다.",
+    "longDef": "The three areas (also called Areas 1, 2 and 3) are the geographic foundation of the IATA fare and tariff system. TC1 is the Western Hemisphere (North, Central and South America, plus the Caribbean and adjacent islands); TC2 spans Europe, Africa, the Middle East and the part of Asia roughly west of and including Iran/the Urals; TC3 covers the rest of Asia, the Indian sub-continent's eastern reaches, Australasia and the Pacific islands. Together with global indicators (two-letter routing codes) they determine which fare-construction rules, mileage allowances and through-fare provisions apply to an itinerary based on the areas it travels to, from and via.",
+    "longDef_ko": "세 지역(Area 1, 2, 3으로도 불림)은 IATA 운임·요율 체계의 지리적 토대다. TC1은 서반구(북·중·남미와 카리브 및 인접 도서)이고, TC2는 유럽·아프리카·중동과 대략 이란/우랄 이서(以西)를 포함한 아시아 일부를 아우르며, TC3은 그 나머지 아시아, 오세아니아, 태평양 도서를 포괄한다. 이 지역 구분은 글로벌 인디케이터(2자리 라우팅 코드)와 함께, 여정이 어느 지역으로·에서·경유하는지에 따라 어떤 운임 산출 규칙·마일리지 허용량·통과운임(through-fare) 규정이 적용되는지를 결정한다.",
+    "standardBody": "IATA",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Fare Construction"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Through Fare"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Origin & Destination"
+      },
+      {
+        "type": "related",
+        "targetTerm": "NUC"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Fare Construction",
+        "explanation": "Fare construction is the process of building an international fare from components and mileage; the IATA Traffic Conference Area is the geographic framework that process relies on to select the applicable rules and routing logic.",
+        "explanation_ko": "Fare Construction은 구성요소와 마일리지로부터 국제 운임을 산출하는 과정인 반면, IATA 운수회의 지역은 그 과정이 적용 규칙과 라우팅 논리를 선택하기 위해 의존하는 지리적 틀이다."
+      },
+      {
+        "targetTerm": "ISO 3166 Country Code",
+        "explanation": "ISO 3166 codes identify individual countries; IATA Traffic Conference Areas group whole continents into three macro-regions purpose-built for airfare and tariff rules, not for general country identification.",
+        "explanation_ko": "ISO 3166 코드는 개별 국가를 식별하는 반면, IATA 운수회의 지역은 항공 운임·요율 규칙을 위해 대륙 전체를 세 개의 거시 지역으로 묶은 것으로 일반적인 국가 식별 용도가 아니다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "Travelport",
+        "name": "Areas and Zones",
+        "version": "",
+        "section": "",
+        "url": "https://support.travelport.com/webhelp/Content_Optimizer_Air/Content/Zones_Areas.htm"
+      },
+      {
+        "org": "Qantas",
+        "name": "IATA Traffic Conference Areas (AgencyConnect)",
+        "version": "",
+        "section": "",
+        "url": "https://www.qantas.com/agencyconnect/gb/en/policy-and-guidelines/clue-cards-and-quick-reference-guides/iata-traffic-conference-areas.html"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"17\"/><path d=\"M24 7v34\"/><path d=\"M9 18c5 3 10 3 15 0s10-3 15 0M9 30c5-3 10-3 15 0s10 3 15 0\"/></svg>"
   }
 ]

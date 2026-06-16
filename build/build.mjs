@@ -20,6 +20,12 @@ const CATEGORIES = [
   { id:'codes',       short:'식별자·코드',    title:'Identifiers & Codes',                     color:'#5b6678', desc:'IATA/ICAO·통화/국가(ISO)·PCC 등 산업 식별 체계.', desc_en:'IATA/ICAO, ISO currency/country, PCC — industry identifier systems.' },
   { id:'customer',    short:'고객·로열티',    title:'Customer, Loyalty & Profiles',            color:'#0e8a8a', desc:'승객유형코드·FFP·One ID 등 고객/프로파일 개념.', desc_en:'Passenger type codes, FFP, One ID — customer & profile concepts.' },
   { id:'standards',   short:'유통표준·API',   title:'Distribution Standards & APIs',           color:'#444c5e', desc:'GDS·NDC·OpenTravel·HTNG 등 유통 표준과 API.', desc_en:'GDS, NDC, OpenTravel, HTNG — distribution standards & APIs.' },
+  { id:'car',         short:'렌터카·모빌리티', title:'Car Rental & Mobility',                   color:'#d6336c', desc:'렌터카 요율·보장(CDW/LDW)·예약 등 차량 대여와 모빌리티.', desc_en:'Rental rates, CDW/LDW coverage, bookings — car rental & mobility.' },
+  { id:'rail',        short:'철도·복합운송',   title:'Rail & Multimodal',                       color:'#5f3dc4', desc:'OSDM·운임·복합운송 등 철도 유통 개념.', desc_en:'OSDM, fares, multimodal — rail distribution concepts.' },
+  { id:'cruise',      short:'크루즈·해상',     title:'Cruise & Sea',                            color:'#1098ad', desc:'선실 등급·GRT·기항지 등 크루즈 유통.', desc_en:'Cabin categories, GRT, ports of call — cruise distribution.' },
+  { id:'insurance',   short:'여행보험·보호',   title:'Travel Insurance & Protection',           color:'#2b8a3e', desc:'여행자보험·CFAR·취소보호 등 보호 상품.', desc_en:'Travel insurance, CFAR, cancellation protection — ancillary protection.' },
+  { id:'disruption',  short:'운항중단·승객권리', title:'Disruption & Passenger Rights',         color:'#c92a2a', desc:'EU261·DOT 환불규정·초과예약 보상 등 승객 권리.', desc_en:'EU261, DOT refund rules, denied-boarding compensation — passenger rights.' },
+  { id:'sustainability', short:'지속가능성·배출', title:'Sustainability & Emissions',           color:'#66a80f', desc:'SAF·CORSIA·탄소배출 산정 등 지속가능 항공.', desc_en:'SAF, CORSIA, emissions accounting — sustainable travel.' },
 ];
 const catIds = new Set(CATEGORIES.map(c => c.id));
 

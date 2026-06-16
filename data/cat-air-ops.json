@@ -1293,5 +1293,492 @@
       }
     ],
     "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"11\" cy=\"24\" r=\"3\"/><circle cx=\"37\" cy=\"24\" r=\"3\"/><path d=\"M15 24h4M22 24h4M29 24h4\"/><path d=\"M37 14v-3M37 37v-3\"/></svg>"
+  },
+  {
+    "id": "airimp",
+    "term": "AIRIMP",
+    "abbreviation": "AIRIMP",
+    "aliases": [
+      "ATA/IATA Reservations Interline Message Procedures",
+      "A4A/IATA Reservations Interline Message Procedures",
+      "Airline Industry Reservations Interline Message Procedures",
+      "Reservations Interline Message Procedures - Passenger"
+    ],
+    "category": "air-ops",
+    "conceptType": "standard",
+    "status": "active",
+    "definition": "AIRIMP (Airline Industry Reservations Interline Message Procedures) is the multilateral industry standard, published by IATA together with Airlines for America (A4A), that defines the formats and procedural rules for passenger reservation interline messages exchanged between airline, GDS and CRS systems. It is the agreed reference governing how PNR data, SSR, OSI, availability and sell/reply messages are structured and transmitted between reservation systems.",
+    "definition_ko": "AIRIMP(Airline Industry Reservations Interline Message Procedures)은 IATA가 Airlines for America(A4A)와 함께 발행하는 다자간 업계 표준으로, 항공사·GDS·CRS 시스템 사이에서 교환되는 여객 예약 interline 메시지의 형식과 절차 규칙을 정의한다. PNR 데이터, SSR, OSI, 좌석 가용성, sell/reply 메시지가 예약 시스템 간에 어떻게 구조화되고 전송되는지를 규율하는 합의된 기준 문서다.",
+    "term_ko": "예약 interline 메시지 절차 표준(AIRIMP)",
+    "longDef": "AIRIMP is maintained through IATA's Passenger Services Conference and is the sole agreed reference source for interline passenger reservation messaging, used across millions of daily transactions between travel agency, airline and airline-to-airline systems. It standardizes the teletype-style message identifiers, mandatory and optional data items, action and advice (status) codes, and the circumstances under which each reservation message type may be sent. Because it defines the common grammar of interline reservations, AIRIMP is effectively the rulebook behind PNR, SSR and OSI exchange; it is published in successive editions (the 50th Edition is dated 2026) and complements the Reservations Handbook and PADIS message standards.",
+    "longDef_ko": "AIRIMP은 IATA의 Passenger Services Conference를 통해 유지되며, 여행사·항공사 시스템 및 항공사 간 시스템에서 매일 수백만 건의 거래에 사용되는, interline 여객 예약 메시징의 유일한 합의 기준 문서다. 텔레타이프 형식의 메시지 식별자, 필수·선택 데이터 항목, action 및 advice(status) 코드, 그리고 각 예약 메시지 유형을 전송할 수 있는 상황을 표준화한다. interline 예약의 공통 문법을 정의하기에 AIRIMP은 사실상 PNR, SSR, OSI 교환의 규칙서이며, 판(edition)을 거듭하여 발행된다(50th Edition은 2026년판). Reservations Handbook 및 PADIS 메시지 표준을 보완한다.",
+    "standardBody": "IATA",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "PNR"
+      },
+      {
+        "type": "related",
+        "targetTerm": "SSR"
+      },
+      {
+        "type": "related",
+        "targetTerm": "OSI"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Type B Message"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Interline"
+      },
+      {
+        "type": "related",
+        "targetTerm": "EDIFACT"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Type B Message",
+        "explanation": "AIRIMP defines the procedural rules and content/format of interline reservation messages, whereas Type B is the underlying teletype transport format that physically carries many of those messages over the SITA/ARINC networks.",
+        "explanation_ko": "AIRIMP은 interline 예약 메시지의 절차 규칙과 내용/형식을 정의하는 반면, Type B는 그 메시지 상당수를 SITA/ARINC 네트워크 위로 실제 운반하는 기저 텔레타이프 전송 형식이다."
+      },
+      {
+        "targetTerm": "EDIFACT",
+        "explanation": "AIRIMP is the reservations-specific procedural standard for interline messaging; EDIFACT is a general UN syntax for electronic data interchange used (via IATA PADIS) for many message types beyond reservations.",
+        "explanation_ko": "AIRIMP은 interline 메시징에 특화된 예약 절차 표준이고, EDIFACT는 (IATA PADIS를 통해) 예약 외 다양한 메시지 유형에도 쓰이는 전자 데이터 교환용 범용 UN 구문 체계다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "IATA",
+        "name": "Airline Industry Reservations Interline Message Procedures - Passenger (AIRIMP)",
+        "version": "50th Edition (2026)",
+        "section": "",
+        "url": "https://www.iata.org/en/publications/manuals/airline-industry-reservations-interline-message-procedures-airimp/"
+      },
+      {
+        "org": "IATA",
+        "name": "AIRIMP Table of Contents",
+        "version": "",
+        "section": "",
+        "url": "https://www.iata.org/contentassets/c3c225d5a07249fd8f1447669ce27cdb/airimp-table-of-contents.pdf"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"7\" width=\"32\" height=\"34\" rx=\"3\"/><line x1=\"14\" y1=\"15\" x2=\"34\" y2=\"15\"/><line x1=\"14\" y1=\"22\" x2=\"34\" y2=\"22\"/><line x1=\"14\" y1=\"29\" x2=\"28\" y2=\"29\"/><path d=\"M30 33 33 36 38 30\"/></svg>"
+  },
+  {
+    "id": "type-b-message",
+    "term": "Type B Message",
+    "abbreviation": "Type B",
+    "aliases": [
+      "Type B",
+      "TTY Message",
+      "Teletype Message",
+      "Type B Messaging"
+    ],
+    "category": "air-ops",
+    "conceptType": "standard-term",
+    "status": "active",
+    "definition": "A Type B message is the airline industry's teletype (TTY) message format, carried over the SITA and ARINC networks, used to exchange structured operational and reservation data between airline, airport, reservation and departure-control systems. Originating in the 1960s from teletype technology, it remains the transport layer for a large share of passenger-handling traffic, including messages such as PNL/ADL.",
+    "definition_ko": "Type B 메시지는 SITA 및 ARINC 네트워크를 통해 운반되는 항공업계의 텔레타이프(TTY) 메시지 형식으로, 항공사·공항·예약·출발 통제(DCS) 시스템 간에 정형화된 운영·예약 데이터를 교환하는 데 사용된다. 1960년대 텔레타이프 기술에서 비롯되었으며, PNL/ADL 같은 메시지를 포함해 여객 처리 트래픽의 상당 부분을 운반하는 전송 계층으로 여전히 쓰인다.",
+    "term_ko": "Type B 메시지(텔레타이프 메시지)",
+    "longDef": "Type B is a store-and-forward messaging format with a defined address/header structure, message identifiers and a constrained line/character layout (traditionally limited line widths). Data-transfer activity related to passenger handling accounts for roughly 90% of Type B usage, covering reservation, departure-control and airport applications such as passenger lists (PNL/ADL), schedule messages (SSM/ASM), and government reporting flows (API/PNRGOV) where applicable. Although newer XML and IP-based alternatives (e.g. Type X) exist, Type B remains widely deployed because of its ubiquity and interoperability; carriers exchange it through providers such as SITA (SITATEX) and ARINC.",
+    "longDef_ko": "Type B는 정의된 주소/헤더 구조, 메시지 식별자, 제한된 행/문자 레이아웃(전통적으로 제한된 행 길이)을 갖는 store-and-forward 메시징 형식이다. 여객 처리 관련 데이터 전송이 Type B 사용의 약 90%를 차지하며, 승객 명단(PNL/ADL), 스케줄 메시지(SSM/ASM), 해당되는 경우 정부 보고 흐름(API/PNRGOV) 등 예약·출발 통제·공항 애플리케이션을 포괄한다. 더 새로운 XML 및 IP 기반 대안(예: Type X)이 존재하지만, 보편성과 상호운용성 덕분에 Type B는 여전히 널리 사용되며, 항공사는 SITA(SITATEX)와 ARINC 같은 제공자를 통해 이를 교환한다.",
+    "standardBody": "IATA",
+    "providerTerms": [
+      {
+        "provider": "SITA",
+        "term": "SITATEX / Type B",
+        "context": "SITA carries Type B (and Type X) messages between airline and airport systems over its network",
+        "context_ko": "SITA는 자사 네트워크를 통해 항공사·공항 시스템 간에 Type B(및 Type X) 메시지를 운반한다",
+        "relationship": "related"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "AIRIMP"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Passenger Name List / Additions and Deletions List (PNL/ADL)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Departure Control System (DCS)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Schedule Change"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Secure Flight"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "EDIFACT",
+        "explanation": "Type B is the legacy teletype transport format with a constrained free-text line layout; EDIFACT is a structured, segment-based interchange syntax used by IATA PADIS for messages such as PNRGOV and electronic ticketing.",
+        "explanation_ko": "Type B는 제한된 자유 텍스트 행 레이아웃을 가진 레거시 텔레타이프 전송 형식이고, EDIFACT는 PNRGOV·전자 발권 등에 IATA PADIS가 사용하는 정형 segment 기반 교환 구문이다."
+      },
+      {
+        "targetTerm": "AIRIMP",
+        "explanation": "Type B is the physical message format/transport, while AIRIMP is the procedural standard that specifies what a given reservation message must contain and when it may be sent.",
+        "explanation_ko": "Type B는 물리적 메시지 형식/전송 수단이고, AIRIMP은 특정 예약 메시지가 무엇을 담아야 하며 언제 전송될 수 있는지를 규정하는 절차 표준이다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "IATA",
+        "name": "Type B Messaging Whitepaper",
+        "version": "v2.1 (14 June 2024)",
+        "section": "",
+        "url": "https://www.iata.org/contentassets/badbfd2d36a74f12b021c9dd899ecbad/type_b_messaging_whitepaper_v2dot1_14_june_2024.pdf"
+      },
+      {
+        "org": "SITA",
+        "name": "SITATEX / Type B and Type X messaging services",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"16\" width=\"36\" height=\"22\" rx=\"2\"/><path d=\"M12 16 V11 a3 3 0 0 1 3 -3 h18 a3 3 0 0 1 3 3 V16\"/><line x1=\"12\" y1=\"24\" x2=\"30\" y2=\"24\"/><line x1=\"12\" y1=\"30\" x2=\"24\" y2=\"30\"/><circle cx=\"35\" cy=\"28\" r=\"1\" fill=\"currentColor\"/></svg>"
+  },
+  {
+    "id": "pnl-adl",
+    "term": "Passenger Name List / Additions and Deletions List (PNL/ADL)",
+    "abbreviation": "PNL/ADL",
+    "aliases": [
+      "PNL",
+      "ADL",
+      "Passenger Name List",
+      "Addition and Deletion List",
+      "Additions/Deletions List"
+    ],
+    "category": "air-ops",
+    "conceptType": "standard-term",
+    "status": "active",
+    "definition": "PNL (Passenger Name List) and ADL (Addition and Deletion List) are the standard messages by which a reservation/inventory system delivers the booked passenger list for a flight to the Departure Control System (DCS). The PNL is the initial complete list sent ahead of a flight; ADLs are subsequent incremental messages conveying additions, deletions and changes until check-in opens.",
+    "definition_ko": "PNL(Passenger Name List)과 ADL(Addition and Deletion List)은 예약/재고 시스템이 특정 항공편의 예약 승객 명단을 출발 통제 시스템(DCS)에 전달하는 표준 메시지다. PNL은 항공편 출발에 앞서 보내는 최초의 완전한 명단이며, ADL은 체크인 개시 전까지 추가·삭제·변경을 전달하는 후속 증분 메시지다.",
+    "term_ko": "승객 명단/증감 명단(PNL/ADL)",
+    "longDef": "The PNL/ADL flow is the precise handoff from the reservation domain to the airport departure-control domain. A reservation system generates a PNL at a defined time before departure containing booked names, status, SSR/seat/special-handling data and class breakdown; as the booking situation evolves, one or more ADLs are transmitted to keep the DCS synchronized without resending the whole list. The messages are typically carried as Type B and follow IATA passenger standards (PNL/ADL are specified in Recommended Practice 1708, documented in the Passenger Services Conference Resolution Manual / PSCRM, formerly the Passenger Standards Conference Manual / PSCM). They are the operational backbone of the reservation-to-check-in boundary, and a missing or out-of-sync PNL/ADL is a common cause of check-in discrepancies.",
+    "longDef_ko": "PNL/ADL 흐름은 예약 영역에서 공항 출발 통제 영역으로의 정확한 인계 지점이다. 예약 시스템은 출발 전 정해진 시점에 예약된 이름, 상태, SSR/좌석/특별 처리 데이터, 등급 구성을 담은 PNL을 생성하고, 예약 상황이 변하면 전체 명단을 재전송하지 않고도 DCS를 동기화하기 위해 하나 이상의 ADL을 전송한다. 이 메시지들은 보통 Type B로 운반되며 IATA 여객 표준을 따른다(PNL/ADL은 Recommended Practice 1708에 규정되어 있으며, 여객 서비스 회의 결의 매뉴얼(PSCRM, 과거 명칭 Passenger Standards Conference Manual / PSCM)에 문서화되어 있다). 예약-체크인 경계의 운영상 근간이며, PNL/ADL이 누락되거나 비동기화되는 것은 체크인 불일치의 흔한 원인이다.",
+    "standardBody": "IATA",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Departure Control System (DCS)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Type B Message"
+      },
+      {
+        "type": "related",
+        "targetTerm": "PNR"
+      },
+      {
+        "type": "related",
+        "targetTerm": "SSR"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Secure Flight"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "PNR",
+        "explanation": "A PNR is the booking record held in the reservation system for one party; PNL/ADL are flight-level messages that consolidate and push all booked passengers (and subsequent changes) for a flight from the reservation system into the DCS.",
+        "explanation_ko": "PNR은 예약 시스템이 한 일행에 대해 보유하는 예약 기록이고, PNL/ADL은 한 항공편의 모든 예약 승객(및 이후 변경)을 예약 시스템에서 DCS로 통합·전달하는 항공편 단위 메시지다."
+      },
+      {
+        "targetTerm": "Departure Control System (DCS)",
+        "explanation": "PNL/ADL are the inbound messages that feed passenger data into the DCS; the DCS is the receiving system that performs check-in, boarding and load control using that data.",
+        "explanation_ko": "PNL/ADL은 승객 데이터를 DCS로 공급하는 인바운드 메시지이고, DCS는 그 데이터를 사용해 체크인·탑승·탑재 통제를 수행하는 수신 시스템이다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "IATA",
+        "name": "Passenger Services Conference Resolution Manual (PSCRM) - Recommended Practice 1708 (PNL/ADL)",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "org": "InteliSys Aviation",
+        "name": "How to manually send PNL/ADL",
+        "version": "",
+        "section": "",
+        "url": "https://intelisysaviation.atlassian.net/wiki/spaces/SDD/pages/1414234147/How+to+manually+send+PNL+ADL"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"6\" width=\"28\" height=\"36\" rx=\"3\"/><line x1=\"15\" y1=\"14\" x2=\"27\" y2=\"14\"/><line x1=\"15\" y1=\"21\" x2=\"27\" y2=\"21\"/><line x1=\"15\" y1=\"28\" x2=\"24\" y2=\"28\"/><path d=\"M31 25 V33 M27 29 H35\"/><path d=\"M27 36 H35\"/></svg>"
+  },
+  {
+    "id": "departure-control-system-dcs",
+    "term": "Departure Control System (DCS)",
+    "abbreviation": "DCS",
+    "aliases": [
+      "DCS",
+      "Departure Control System"
+    ],
+    "category": "air-ops",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "A Departure Control System (DCS) is the airport-side operational system that manages passenger check-in, baggage acceptance, boarding and aircraft load control. It is the counterpart to the reservation system: it receives booked passenger data (via PNL/ADL), assigns seats and bags, produces boarding passes, and controls the boarding and weight-and-balance process at departure.",
+    "definition_ko": "DCS(Departure Control System, 출발 통제 시스템)는 승객 체크인, 수하물 접수, 탑승, 항공기 탑재(load control)를 관리하는 공항 측 운영 시스템이다. 예약 시스템의 짝이 되는 시스템으로, 예약 승객 데이터를 (PNL/ADL을 통해) 수신하여 좌석과 수하물을 배정하고, 탑승권을 생성하며, 출발 시점의 탑승 및 중량·평형(weight-and-balance) 과정을 통제한다.",
+    "term_ko": "출발 통제 시스템(DCS)",
+    "longDef": "The DCS automates an airline's airport handling and typically spans three areas: flight preparation (aircraft/seat configuration, check-in readiness), check-in (counter, web, kiosk and mobile, mostly using e-tickets), and boarding/load control (document and security checks, gate boarding, and weight-and-balance for safe dispatch). It marks the boundary between the reservation world (where the PNR and ticket live) and the airport operational world: the reservation system pushes the passenger list and changes via PNL/ADL, after which the DCS owns the passenger from check-in through boarding. DCS platforms are offered by suppliers such as Amadeus, Sabre and SITA, and some carriers run in-house systems.",
+    "longDef_ko": "DCS는 항공사의 공항 핸들링을 자동화하며 보통 세 영역에 걸친다: 항공편 준비(항공기/좌석 구성, 체크인 준비), 체크인(카운터·웹·키오스크·모바일, 주로 e-ticket 사용), 탑승/탑재 통제(서류·보안 점검, 게이트 탑승, 안전 운항을 위한 중량·평형). 예약 세계(PNR과 항공권이 존재)와 공항 운영 세계의 경계를 이루며, 예약 시스템이 PNL/ADL로 승객 명단과 변경을 밀어 넣은 뒤부터는 DCS가 체크인부터 탑승까지 승객을 관장한다. DCS 플랫폼은 Amadeus, Sabre, SITA 등이 제공하며 일부 항공사는 자체 시스템을 운영한다.",
+    "standardBody": "",
+    "providerTerms": [
+      {
+        "provider": "Amadeus",
+        "term": "Altea Departure Control",
+        "context": "Amadeus provides DCS solutions covering check-in, boarding and load control",
+        "context_ko": "Amadeus는 체크인·탑승·탑재 통제를 아우르는 DCS 솔루션을 제공한다",
+        "relationship": "narrower"
+      },
+      {
+        "provider": "SITA",
+        "term": "SITA Departure Control Services",
+        "context": "SITA offers a shared departure-control platform used by many airlines",
+        "context_ko": "SITA는 다수 항공사가 사용하는 공유형 출발 통제 플랫폼을 제공한다",
+        "relationship": "narrower"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Passenger Name List / Additions and Deletions List (PNL/ADL)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Type B Message"
+      },
+      {
+        "type": "related",
+        "targetTerm": "CRS"
+      },
+      {
+        "type": "related",
+        "targetTerm": "E-ticket"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Secure Flight"
+      },
+      {
+        "type": "related",
+        "targetTerm": "No-Show"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "CRS",
+        "explanation": "A CRS/reservation system holds the booking and inventory before travel; the DCS takes over at the airport for check-in, boarding and load control, receiving its passenger data from the reservation system via PNL/ADL.",
+        "explanation_ko": "CRS/예약 시스템은 여행 전 예약과 재고를 보유하고, DCS는 공항에서 체크인·탑승·탑재 통제를 인계받아 PNL/ADL을 통해 예약 시스템으로부터 승객 데이터를 수신한다."
+      },
+      {
+        "targetTerm": "PMS",
+        "explanation": "Both are operational back-office systems, but a DCS handles airline airport departure operations whereas a PMS (Property Management System) runs hotel front-desk and operational functions.",
+        "explanation_ko": "둘 다 운영 백오피스 시스템이지만, DCS는 항공사 공항 출발 운영을 처리하고 PMS(Property Management System)는 호텔 프런트데스크 및 운영 기능을 담당한다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "Amadeus",
+        "name": "Departure Control System (DCS) - Travel Glossary",
+        "version": "",
+        "section": "",
+        "url": "https://amadeus.com/en/travel-glossary/departure-control-system"
+      },
+      {
+        "org": "Wikipedia",
+        "name": "Departure control system",
+        "version": "",
+        "section": "",
+        "url": "https://en.wikipedia.org/wiki/Departure_control_system"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"7\" y=\"10\" width=\"18\" height=\"14\" rx=\"2\"/><line x1=\"11\" y1=\"15\" x2=\"21\" y2=\"15\"/><line x1=\"11\" y1=\"19\" x2=\"18\" y2=\"19\"/><path d=\"M28 17 H40 M40 17 L36 13 M40 17 L36 21\"/><path d=\"M16 28 C24 38 32 38 40 32\"/><path d=\"M35 30 L41 31 L39 37\"/></svg>"
+  },
+  {
+    "id": "pnr-history",
+    "term": "PNR History",
+    "abbreviation": "",
+    "aliases": [
+      "Booking History",
+      "PNR Audit Trail",
+      "History Element",
+      "Reservation History"
+    ],
+    "category": "air-ops",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "PNR History is the audit trail within a Passenger Name Record that records every creation, addition, change and deletion made to the booking, including who made it, what was changed, and when. It is an append-only log that preserves the prior state of elements so the full evolution of the booking can be reconstructed.",
+    "definition_ko": "PNR History는 PNR(Passenger Name Record) 내의 감사 추적(audit trail)으로, 예약에 가해진 모든 생성·추가·변경·삭제를 누가, 무엇을, 언제 했는지와 함께 기록한다. 요소의 이전 상태를 보존하는 추가 전용(append-only) 로그여서 예약의 전체 변경 이력을 재구성할 수 있다.",
+    "term_ko": "PNR 변경 이력(PNR History)",
+    "longDef": "Each time an element of a PNR is added, modified or cancelled, the system writes a history entry stamped with the office/agent (tied to the Received From source), the action, and a timestamp, while retaining the old value. History is consulted to resolve disputes such as Agency Debit Memos (ADMs), to trace fraud or unauthorized changes, and to reconstruct what happened across a split, merge, reissue or schedule-change re-accommodation. Because it is governed by passenger-data retention rules, history is retained for a defined period; the cryptic command to display it differs by GDS (for example, Amadeus RH and Sabre history displays).",
+    "longDef_ko": "PNR의 요소가 추가·변경·취소될 때마다 시스템은 office/agent(Received From 출처와 연결), 동작, 타임스탬프가 찍힌 이력 항목을 기록하면서 이전 값을 보존한다. 이력은 Agency Debit Memo(ADM) 같은 분쟁 해결, 사기 또는 무단 변경 추적, split·merge·재발행·스케줄 변경 재배정 전반에서 무슨 일이 있었는지 재구성하는 데 참조된다. 여객 데이터 보존 규칙의 적용을 받아 정해진 기간 동안 보관되며, 이를 표시하는 cryptic 명령은 GDS마다 다르다(예: Amadeus는 RH, Sabre는 history 표시).",
+    "standardBody": "IATA",
+    "providerTerms": [
+      {
+        "provider": "Amadeus",
+        "term": "History (RH)",
+        "context": "Amadeus displays the chronological change log of a PNR with the RH command",
+        "context_ko": "Amadeus는 RH 명령으로 PNR의 시간순 변경 로그를 표시한다",
+        "relationship": "same"
+      },
+      {
+        "provider": "Sabre",
+        "term": "PNR History",
+        "context": "Sabre retains a history of all changes to a PNR for retrieval",
+        "context_ko": "Sabre는 조회를 위해 PNR의 모든 변경 이력을 보관한다",
+        "relationship": "same"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "PNR"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Received From Element (RF)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Split PNR"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Agency Debit Memo (ADM)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Schedule Change"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Received From Element (RF)",
+        "explanation": "The Received From element names the source authorizing a given change at the moment it is made; PNR History is the cumulative, time-stamped log of all such changes (each typically anchored by a Received From entry) over the life of the booking.",
+        "explanation_ko": "Received From 요소는 특정 변경이 이루어지는 시점에 그것을 승인한 출처를 명시하고, PNR History는 예약의 생애에 걸친 그러한 모든 변경(각각 보통 Received From 항목으로 고정됨)의 누적·타임스탬프 로그다."
+      },
+      {
+        "targetTerm": "Record Locator",
+        "explanation": "A Record Locator is the short key used to retrieve a booking; PNR History is the internal change log of that booking, not an identifier.",
+        "explanation_ko": "Record Locator는 예약을 조회하는 짧은 key이고, PNR History는 그 예약의 내부 변경 로그이지 식별자가 아니다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "IATA",
+        "name": "Passenger Services Conference Resolutions Manual (PSCRM)",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "org": "Amadeus",
+        "name": "Amadeus Service Hub - PNR History (RH)",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 9 a15 15 0 1 1 -14 10\"/><polyline points=\"7,11 10,19 18,17\"/><polyline points=\"24,16 24,24 30,28\"/></svg>"
+  },
+  {
+    "id": "received-from-element-rf",
+    "term": "Received From Element (RF)",
+    "abbreviation": "RF",
+    "aliases": [
+      "Received From",
+      "RF Element",
+      "Received-From Field"
+    ],
+    "category": "air-ops",
+    "conceptType": "standard-term",
+    "status": "active",
+    "definition": "The Received From (RF) element is one of the mandatory PNR elements (the 'R' in the PRINT set: Phone, Received-from, Itinerary, Name, Ticketing) that records the source authorizing the creation or modification of the booking, such as the passenger or a named agent. It establishes accountability for each change and is captured into the PNR history.",
+    "definition_ko": "Received From(RF, 접수처) 요소는 PNR 필수 요소 중 하나(PRINT 세트의 'R': Phone, Received-from, Itinerary, Name, Ticketing)로, 예약의 생성 또는 변경을 승인한 출처(예: 승객 또는 특정 담당자)를 기록한다. 각 변경에 대한 책임 소재를 확립하며 PNR history에 기록된다.",
+    "term_ko": "접수처 요소(Received From, RF)",
+    "longDef": "Per IATA passenger-reservation standards, every PNR must contain five mandatory elements commonly memorized as PRINT, and the Received From element identifies who instructed the action (for example 'P' for passenger, or an agent/caller name). It anchors the booking's accountability chain: each time a change is made, the agent enters a Received From value, which is then stamped into PNR history alongside the office and timestamp. This makes RF essential for audit, dispute resolution (e.g. ADM defence) and security, and it is required before a PNR can be committed/end-transacted in most reservation systems.",
+    "longDef_ko": "IATA 여객 예약 표준에 따라 모든 PNR은 흔히 PRINT로 암기되는 다섯 가지 필수 요소를 포함해야 하며, Received From 요소는 조치를 지시한 주체를 식별한다(예: 승객이면 'P', 또는 담당자/요청자 이름). 예약의 책임 사슬을 고정하여, 변경이 있을 때마다 담당자가 Received From 값을 입력하고 이는 office 및 타임스탬프와 함께 PNR history에 기록된다. 따라서 RF는 감사, 분쟁 해결(예: ADM 방어), 보안에 필수적이며, 대부분의 예약 시스템에서 PNR을 확정/end-transact하기 전에 요구된다.",
+    "standardBody": "IATA",
+    "providerTerms": [
+      {
+        "provider": "Amadeus",
+        "term": "Received From (RF)",
+        "context": "Amadeus requires an RF entry identifying who requested the change before saving the PNR",
+        "context_ko": "Amadeus는 PNR 저장 전에 변경을 요청한 주체를 식별하는 RF 입력을 요구한다",
+        "relationship": "same"
+      },
+      {
+        "provider": "Sabre",
+        "term": "Received From (6 entry)",
+        "context": "Sabre captures the received-from field as a mandatory step before ending the transaction",
+        "context_ko": "Sabre는 트랜잭션 종료 전 필수 단계로 received-from 필드를 수집한다",
+        "relationship": "same"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "child",
+        "targetTerm": "PNR"
+      },
+      {
+        "type": "related",
+        "targetTerm": "PNR History"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Itinerary"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Agency Debit Memo (ADM)"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "OSI",
+        "explanation": "The Received From element is a mandatory internal PNR field recording who authorized a change; an OSI is an optional informational message sent to carriers and is unrelated to change accountability.",
+        "explanation_ko": "Received From 요소는 누가 변경을 승인했는지 기록하는 필수 내부 PNR 필드이고, OSI는 항공사에 보내는 선택적 정보성 메시지로 변경 책임과는 무관하다."
+      },
+      {
+        "targetTerm": "PNR History",
+        "explanation": "Received From is the single field entered for one action naming its source; PNR History is the accumulated log into which each Received From value, with office and timestamp, is recorded over time.",
+        "explanation_ko": "Received From은 한 동작에 대해 그 출처를 명시하며 입력하는 단일 필드이고, PNR History는 각 Received From 값이 office·타임스탬프와 함께 시간에 걸쳐 기록되는 누적 로그다."
+      }
+    ],
+    "sources": [
+      {
+        "org": "IATA",
+        "name": "Passenger Services Conference Resolutions Manual (PSCRM)",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "org": "Sabre",
+        "name": "Sabre - PNR Mandatory Elements (PRINT / Received From)",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"16\" r=\"7\"/><path d=\"M12 38 a12 12 0 0 1 24 0\"/><polyline points=\"30,30 35,35 42,26\"/></svg>"
   }
 ]

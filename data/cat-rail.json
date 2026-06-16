@@ -1,0 +1,857 @@
+[
+  {
+    "id": "osdm",
+    "term": "OSDM",
+    "term_ko": "개방형 판매·유통 모델(OSDM)",
+    "abbreviation": "OSDM",
+    "aliases": [
+      "Open Sales and Distribution Model"
+    ],
+    "category": "rail",
+    "conceptType": "standard",
+    "status": "active",
+    "definition": "The Open Sales and Distribution Model is a UIC-backed open standard that defines a modern API and data model for rail offer, booking, fulfillment, and after-sales across carriers and distributors. It is intended to be the foundational, interoperable standard for rail (and increasingly multimodal) distribution, playing a role analogous to NDC and the Offer/Order model in air.",
+    "definition_ko": "OSDM(Open Sales and Distribution Model)은 UIC가 후원하는 개방형 표준으로, 여러 철도 운영사와 유통사를 가로질러 오퍼(offer), 예약, 발권(fulfillment), 사후 처리(after-sales)를 위한 현대적 API와 데이터 모델을 정의한다. 철도(및 점차 복합운송) 유통의 기반이 되는 상호운용 표준을 지향하며, 항공의 NDC 및 Offer/Order 모델에 대응하는 역할을 한다.",
+    "longDef": "OSDM is published under the UIC International Railway Solution series (IRS 90918-10) and structures an offer into separable offer parts — admissions, reservations, and ancillaries. It standardizes the full retail lifecycle (search/offer, booking, fulfillment, after-sales) so that allocating systems, distributors, and retailers can exchange rail products without bilateral, proprietary integrations. OSDM is explicitly designed to sell trains 'and other modes,' positioning it as a multimodal distribution standard rather than a purely rail-internal protocol.",
+    "longDef_ko": "OSDM은 UIC의 국제철도해법(IRS) 시리즈(IRS 90918-10)로 발행되며, 하나의 오퍼를 분리 가능한 오퍼 파트(offer part) — admission, reservation, ancillary — 로 구조화한다. 검색/오퍼, 예약, 발권, 사후 처리에 이르는 리테일 전 생애주기를 표준화하여, 배분 시스템·유통사·리테일러가 일대일 독점 연동 없이 철도 상품을 교환할 수 있게 한다. OSDM은 명시적으로 열차 '및 다른 교통수단'을 함께 판매하도록 설계되어, 순수 철도 내부 프로토콜이 아니라 복합운송 유통 표준으로 자리매김한다.",
+    "standardBody": "UIC",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "NDC"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Offer"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Order"
+      },
+      {
+        "type": "child",
+        "targetTerm": "Admission"
+      },
+      {
+        "type": "child",
+        "targetTerm": "Seat Reservation"
+      },
+      {
+        "type": "child",
+        "targetTerm": "Fulfillment (Rail)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Standard International Passenger Tariff (TCV)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "TAP TSI"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Multimodal Transport"
+      },
+      {
+        "type": "related",
+        "targetTerm": "REST API"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "NDC",
+        "explanation": "OSDM is the UIC open standard for rail (and multimodal) offer/booking/fulfillment; NDC is IATA's equivalent XML standard for air. They are sibling distribution standards in different modes, sharing an offer/order philosophy.",
+        "explanation_ko": "OSDM은 철도(및 복합운송)의 오퍼/예약/발권을 위한 UIC 개방형 표준이고, NDC는 항공의 동등한 XML 표준(IATA)이다. 서로 다른 교통수단에 속한 자매 유통 표준으로, offer/order 철학을 공유한다."
+      },
+      {
+        "targetTerm": "TAP TSI",
+        "explanation": "OSDM is a voluntary open API/data-model standard for commercial distribution; TAP TSI is the EU legal regulation mandating interoperable interfaces. OSDM is one concrete way to implement the retail interfaces that TAP TSI prescribes.",
+        "explanation_ko": "OSDM은 상업적 유통을 위한 자발적 개방형 API/데이터 모델 표준이고, TAP TSI는 상호운용 인터페이스를 의무화하는 EU 법규다. OSDM은 TAP TSI가 규정하는 리테일 인터페이스를 구현하는 하나의 구체적 방식이다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Open Sales and Distribution Model (OSDM) project",
+        "org": "UIC",
+        "version": "IRS 90918-10",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "What is OSDM? (Passenger Department factsheet)",
+        "org": "UIC",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"10\" width=\"28\" height=\"22\" rx=\"3\"/><path d=\"M10 20h28\"/><circle cx=\"16\" cy=\"15\" r=\"1.5\" fill=\"currentColor\"/><circle cx=\"21\" cy=\"15\" r=\"1.5\" fill=\"currentColor\"/><path d=\"M16 38l-3 4M32 38l3 4M14 32v6M34 32v6\"/><path d=\"M19 26h10\"/></svg>"
+  },
+  {
+    "id": "admission",
+    "term": "Admission",
+    "term_ko": "운송 권리(Admission)",
+    "abbreviation": "",
+    "aliases": [
+      "Admission (OSDM)",
+      "Travel Admission"
+    ],
+    "category": "rail",
+    "conceptType": "standard-term",
+    "status": "active",
+    "definition": "In OSDM an admission is the core offer part that grants the right to travel on a train — the 'ticket' proper, expressed as a transport entitlement. It is held distinct from a seat reservation and from ancillaries, making the admission the rail analogue of the basic carriage right.",
+    "definition_ko": "OSDM에서 admission은 열차로 여행할 권리를 부여하는 핵심 오퍼 파트, 즉 '승차권' 본체로서 운송 권리(entitlement)로 표현된다. 좌석 예약(seat reservation) 및 부가서비스(ancillary)와 별개로 다루어지며, admission은 기본 운송권에 해당하는 철도 개념이다.",
+    "longDef": "OSDM separates an offer into admissions, reservations, and ancillaries. The admission represents the contractual right to be carried (often valid for a fare range, route, or validity period) and can exist without a bound seat — for example on non-reservation services or with a separately purchased reservation. This separation is what lets rail sell open or flexible entitlements independent of any specific train or place.",
+    "longDef_ko": "OSDM은 오퍼를 admission, reservation, ancillary로 분리한다. admission은 운송될 계약상 권리(흔히 특정 운임 범위·경로·유효기간에 대해 유효)를 나타내며 좌석이 묶이지 않은 채 존재할 수 있다 — 예컨대 예약이 필요 없는 열차나 좌석 예약을 별도로 구매하는 경우다. 이 분리 덕분에 철도는 특정 열차나 좌석과 무관하게 개방형·유연 운송권을 판매할 수 있다.",
+    "standardBody": "UIC",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "parent",
+        "targetTerm": "OSDM"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Seat Reservation"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Non-integrated Reservation Ticket (NRT)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Integrated Reservation Ticket (IRT)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Ancillary Service"
+      },
+      {
+        "type": "contrasts",
+        "targetTerm": "E-ticket"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Seat Reservation",
+        "explanation": "The admission is the right to travel (the ticket); the seat reservation binds a specific place on a specific train. On many services you hold an admission with no reservation, or buy them separately.",
+        "explanation_ko": "admission은 여행할 권리(승차권)이고, seat reservation은 특정 열차의 특정 좌석을 지정한다. 많은 노선에서는 예약 없이 admission만 보유하거나, 둘을 따로 구매한다."
+      },
+      {
+        "targetTerm": "E-ticket",
+        "explanation": "Admission is the abstract entitlement in the OSDM offer; an air E-ticket is the issued fulfillment document. In rail the issued document is the fulfillment, not the admission itself.",
+        "explanation_ko": "admission은 OSDM 오퍼 안의 추상적 권리이고, 항공의 E-ticket은 발행된 발권 문서다. 철도에서 발행 문서는 fulfillment이며 admission 자체가 아니다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "OSDM Models — offer parts: admissions, reservations, ancillaries",
+        "org": "UIC",
+        "version": "",
+        "section": "",
+        "url": "https://osdm.io/spec/models/"
+      },
+      {
+        "name": "OSDM Offer structure (admissions / reservations / ancillaries)",
+        "org": "UIC",
+        "version": "",
+        "section": "",
+        "url": "https://osdm.io/spec/offer-structure/"
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 16h32a2 2 0 0 1 2 2v4a3 3 0 0 0 0 6v4a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-4a3 3 0 0 0 0-6v-4a2 2 0 0 1 2-2z\"/><path d=\"M28 16v18\" stroke-dasharray=\"2 3\"/><path d=\"M13 24h9\"/></svg>"
+  },
+  {
+    "id": "seat-reservation",
+    "term": "Seat Reservation",
+    "term_ko": "좌석 예약(Seat Reservation)",
+    "abbreviation": "",
+    "aliases": [
+      "Reservation (OSDM)",
+      "Place Reservation"
+    ],
+    "category": "rail",
+    "conceptType": "standard-term",
+    "status": "active",
+    "definition": "A seat reservation is a reservation bound to a specific train and place, which may be compulsory, optional, or impossible depending on the service type. In OSDM it is a separate offer part from the admission, so the admission-versus-reservation split is a core rail-distribution concept.",
+    "definition_ko": "seat reservation은 특정 열차와 좌석에 묶인 예약으로, 노선 유형에 따라 의무(compulsory)·선택(optional)·불가(impossible)일 수 있다. OSDM에서 admission과 별개의 오퍼 파트이므로, admission과 reservation의 분리는 철도 유통의 핵심 개념이다.",
+    "longDef": "Reservation requirements vary by service: high-speed and yield-managed trains often make reservations compulsory and integral, regional services frequently make them impossible, and many intercity services make them optional. OSDM models the reservation distinctly from the admission so that systems can express 'ticket only,' 'reservation only,' or bundled products, and so reservations can be added, changed, or cancelled independently in after-sales.",
+    "longDef_ko": "예약 요건은 노선별로 다르다 — 고속·수익관리 열차는 흔히 예약을 의무·일체형으로 두고, 지역 열차는 예약이 불가한 경우가 많으며, 많은 도시간 열차는 선택 사항으로 둔다. OSDM은 reservation을 admission과 구별해 모델링하여 '승차권만', '예약만', 또는 묶음 상품을 표현할 수 있게 하고, 사후 처리에서 예약을 독립적으로 추가·변경·취소할 수 있게 한다.",
+    "standardBody": "UIC",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "parent",
+        "targetTerm": "OSDM"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Admission"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Integrated Reservation Ticket (IRT)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Non-integrated Reservation Ticket (NRT)"
+      },
+      {
+        "type": "contrasts",
+        "targetTerm": "Seat Map"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Admission",
+        "explanation": "The seat reservation reserves a specific place on a specific train; the admission is the underlying right to travel. A reservation alone does not grant carriage without an admission.",
+        "explanation_ko": "seat reservation은 특정 열차의 특정 좌석을 잡는 것이고, admission은 여행할 기본 권리다. 예약만으로는 admission 없이 운송 권리가 생기지 않는다."
+      },
+      {
+        "targetTerm": "Seat Map",
+        "explanation": "A seat map is the visual layout used to select a place; a seat reservation is the resulting bound entitlement to that place on a given train.",
+        "explanation_ko": "seat map은 좌석을 고르는 시각적 배치도이고, seat reservation은 그 결과로 특정 열차의 좌석에 묶인 권리다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "OSDM Models — Reservations (seat/accommodation bound to specific trains)",
+        "org": "UIC",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "What's the difference between tickets and seat reservations?",
+        "org": "Rail operator guidance",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M16 14v14a3 3 0 0 0 3 3h11\"/><path d=\"M16 28h14v8\"/><path d=\"M16 14h-3M30 36v2\"/><path d=\"M30 22l4-4 3 3-4 4z\"/><path d=\"M37 21l-3 9-4 1 1-4z\"/></svg>"
+  },
+  {
+    "id": "non-integrated-reservation-ticket-nrt",
+    "term": "Non-integrated Reservation Ticket (NRT)",
+    "term_ko": "비통합 예약권(NRT)",
+    "abbreviation": "NRT",
+    "aliases": [
+      "Non-Integrated Reservation Ticket",
+      "NRT ticket"
+    ],
+    "category": "rail",
+    "conceptType": "standard-term",
+    "status": "active",
+    "definition": "An NRT is a UIC ticket type in which the travel entitlement (admission) and any seat reservation are sold separately — an open ticket plus an optional reservation. It is one of the UIC commercial ticket categories built around the separation of fare/admission from reservation in international rail.",
+    "definition_ko": "NRT(Non-integrated Reservation Ticket)는 운송 권리(admission)와 좌석 예약을 별도로 판매하는 UIC 승차권 유형으로, 개방형 승차권에 선택적 예약을 더한 형태다. 국제 철도에서 운임·운송 권리와 예약을 분리하는 방식을 따르는 UIC 상업 승차권 분류 중 하나다.",
+    "longDef": "Under UIC's commercial framework, NRT tickets are governed by the Special Conditions of International Carriage for NRT (SCIC-NRT). Because the admission is decoupled from the reservation, NRT supports flexible, route-based or open tickets that are not tied to a single train, with reservations added only where a service requires or offers them. NRT contrasts with IRT, where the reservation is integral to the product.",
+    "longDef_ko": "UIC 상업 체계에서 NRT 승차권은 NRT 국제운송 특별조건(SCIC-NRT)의 적용을 받는다. admission이 예약과 분리되어 있어, NRT는 단일 열차에 묶이지 않는 유연한 경로 기반·개방형 승차권을 지원하며, 노선이 요구하거나 제공하는 경우에만 예약을 추가한다. NRT는 예약이 상품에 일체화된 IRT와 대비된다.",
+    "standardBody": "UIC",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "contrasts",
+        "targetTerm": "Integrated Reservation Ticket (IRT)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Admission"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Standard International Passenger Tariff (TCV)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "OSDM"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Integrated Reservation Ticket (IRT)",
+        "explanation": "In NRT the ticket and reservation are separate products that can be bought independently; in IRT the reservation is inseparable from the ticket as one product.",
+        "explanation_ko": "NRT는 승차권과 예약이 독립적으로 구매 가능한 별개 상품이고, IRT는 예약이 승차권과 분리될 수 없는 단일 상품이다."
+      },
+      {
+        "targetTerm": "Open Ticket",
+        "explanation": "An NRT is the rail commercial category enabling open, train-independent entitlements; an air Open Ticket is a single coupon left open as to date/flight. The NRT abbreviation also differs from air usage (it is not 'Normal Round Trip').",
+        "explanation_ko": "NRT는 열차에 묶이지 않는 개방형 권리를 가능케 하는 철도 상업 분류이고, 항공의 Open Ticket은 날짜/편을 비워둔 단일 쿠폰이다. 또한 NRT 약어는 항공의 용법('Normal Round Trip')과 다르다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "NRT (Non-Integrated Reservation Tickets) working group",
+        "org": "UIC",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Special Conditions of International Carriage for NRT (SCIC-NRT)",
+        "org": "UIC",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"18\" width=\"15\" height=\"12\" rx=\"2\"/><rect x=\"27\" y=\"18\" width=\"15\" height=\"12\" rx=\"2\"/><path d=\"M21 24h6\" stroke-dasharray=\"2 3\"/><path d=\"M10 24h7M31 24h7\"/></svg>"
+  },
+  {
+    "id": "integrated-reservation-ticket-irt",
+    "term": "Integrated Reservation Ticket (IRT)",
+    "term_ko": "통합 예약권(IRT)",
+    "abbreviation": "IRT",
+    "aliases": [
+      "Integrated Reservation Ticket",
+      "IRT ticket"
+    ],
+    "category": "rail",
+    "conceptType": "standard-term",
+    "status": "active",
+    "definition": "An IRT is a UIC ticket type in which the seat reservation is integral to the ticket, forming one inseparable product. It is typical of high-speed and yield-managed trains and is the rail counterpart to the NRT.",
+    "definition_ko": "IRT(Integrated Reservation Ticket)는 좌석 예약이 승차권에 일체화되어 분리할 수 없는 단일 상품을 이루는 UIC 승차권 유형이다. 고속·수익관리 열차에서 일반적이며 NRT에 대응되는 철도 개념이다.",
+    "longDef": "With IRT, the admission and reservation are sold together as a single yield-managed product, so the fare is tied to a specific train and place — much like an airline-style booking class. This bundling is essential for operators that apply revenue management and capacity control to individual departures, and it stands in contrast to the NRT model where ticket and reservation are separable.",
+    "longDef_ko": "IRT에서는 admission과 reservation이 하나의 수익관리 상품으로 함께 판매되어, 운임이 특정 열차와 좌석에 묶인다 — 항공의 예약 클래스(booking class)와 유사하다. 이러한 묶음 판매는 개별 출발편에 수익관리와 좌석 통제를 적용하는 운영사에 필수적이며, 승차권과 예약이 분리되는 NRT 모델과 대비된다.",
+    "standardBody": "UIC",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "contrasts",
+        "targetTerm": "Non-integrated Reservation Ticket (NRT)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Seat Reservation"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Revenue Management"
+      },
+      {
+        "type": "related",
+        "targetTerm": "OSDM"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Non-integrated Reservation Ticket (NRT)",
+        "explanation": "IRT bundles the reservation into the ticket as one inseparable product; NRT keeps the entitlement and reservation as separate, independently sellable parts.",
+        "explanation_ko": "IRT는 예약을 승차권에 묶어 분리 불가한 단일 상품으로 만들고, NRT는 권리와 예약을 별개로 독립 판매 가능한 파트로 둔다."
+      },
+      {
+        "targetTerm": "Revenue Management",
+        "explanation": "Revenue Management is the pricing/inventory discipline; IRT is the rail ticket form that bundles ticket and reservation so that per-departure revenue management can be applied.",
+        "explanation_ko": "Revenue Management는 가격·재고 관리 기법이고, IRT는 출발편 단위 수익관리를 적용할 수 있도록 승차권과 예약을 묶은 철도 승차권 형태다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "NRT, IRT and NT commercial groups meeting (definitions)",
+        "org": "UIC",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Passenger Services Group (IRT/NRT subgroups)",
+        "org": "UIC",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"9\" y=\"16\" width=\"30\" height=\"16\" rx=\"2\"/><path d=\"M28 16v16\"/><path d=\"M14 24h9\"/><path d=\"M31 20v8h5v-8z\"/></svg>"
+  },
+  {
+    "id": "fulfillment-rail",
+    "term": "Fulfillment (Rail)",
+    "term_ko": "철도 발권·이행(Fulfillment)",
+    "abbreviation": "",
+    "aliases": [
+      "OSDM Fulfillment",
+      "Rail Fulfillment",
+      "Fulfilment"
+    ],
+    "category": "rail",
+    "conceptType": "standard-term",
+    "status": "active",
+    "definition": "In OSDM, fulfillment is the realized travel document or entitlement that results from a confirmed booking — the rail equivalent of issuing a usable ticket. It is a core lifecycle object that links the abstract offer/booking to a controllable, validatable ticket.",
+    "definition_ko": "OSDM에서 fulfillment는 확정된 예약으로부터 실체화된 여행 문서 또는 권리, 즉 사용 가능한 승차권을 발행하는 것에 해당하는 철도 개념이다. 추상적인 오퍼/예약을 통제·검표 가능한 승차권으로 연결하는 핵심 생애주기 객체다.",
+    "longDef": "Fulfillment defines how a confirmed booking becomes a controllable ticket, typically carrying a control number and a barcode (such as the UIC Flexible Content Barcode) so that on-board or gate validation can verify the contract without a central PNR lookup. OSDM models fulfillment distinctly so that after-sales actions (refund, exchange, partial cancellation) can reference and re-issue the realized document. TAP TSI similarly treats fulfillment as one of the standardized rail interfaces alongside timetables, tariffs, and reservations.",
+    "longDef_ko": "fulfillment은 확정된 예약이 통제 가능한 승차권이 되는 방식을 정의하며, 일반적으로 control number와 바코드(예: UIC Flexible Content Barcode)를 담아 중앙 PNR 조회 없이 차내·게이트 검표로 계약을 검증할 수 있게 한다. OSDM은 fulfillment을 별개로 모델링하여 사후 처리(환불, 변경, 부분 취소)가 실체화된 문서를 참조하고 재발행할 수 있게 한다. TAP TSI 또한 fulfillment을 시각표·운임·예약과 더불어 표준화된 철도 인터페이스의 하나로 다룬다.",
+    "standardBody": "UIC",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "parent",
+        "targetTerm": "OSDM"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Flexible Content Barcode (FCB)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Admission"
+      },
+      {
+        "type": "related",
+        "targetTerm": "TAP TSI"
+      },
+      {
+        "type": "contrasts",
+        "targetTerm": "E-ticket"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Reissue"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "E-ticket",
+        "explanation": "Rail fulfillment is the OSDM concept of realizing a controllable ticket from a booking; the air E-ticket is one specific issued document. Rail fulfillment commonly relies on a barcode/control number rather than a GDS-style ticket coupon.",
+        "explanation_ko": "철도 fulfillment은 예약으로부터 통제 가능한 승차권을 실체화하는 OSDM 개념이고, 항공의 E-ticket은 발행된 특정 문서다. 철도 fulfillment은 GDS식 발권 쿠폰보다 바코드/control number에 의존하는 경우가 많다."
+      },
+      {
+        "targetTerm": "Flexible Content Barcode (FCB)",
+        "explanation": "FCB is the barcode technology that carries the contract; fulfillment is the broader lifecycle step of producing and controlling the travel document, which may use FCB.",
+        "explanation_ko": "FCB는 계약을 담는 바코드 기술이고, fulfillment은 여행 문서를 생성·통제하는 더 넓은 생애주기 단계로 FCB를 사용할 수 있다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "OSDM Models — Fulfillment (control number, ticketing/validation)",
+        "org": "UIC",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Telematics Applications for Passenger Service TSI (timetables, tariffs, reservations, fulfillment)",
+        "org": "European Union / ERA",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"10\" width=\"24\" height=\"30\" rx=\"2\"/><path d=\"M16 18h12M16 24h12M16 30h7\"/><path d=\"M28 36l4 4 8-9\"/></svg>"
+  },
+  {
+    "id": "flexible-content-barcode-fcb",
+    "term": "Flexible Content Barcode (FCB)",
+    "term_ko": "유연 콘텐츠 바코드(FCB)",
+    "abbreviation": "FCB",
+    "aliases": [
+      "Flexible Content Barcode",
+      "UIC barcode (FCB)"
+    ],
+    "category": "rail",
+    "conceptType": "standard",
+    "status": "active",
+    "definition": "The Flexible Content Barcode is the current UIC barcode standard (IRS 90918-9; ERA TAP TSI Technical Document B.12) that uses an asymmetrically signed Aztec barcode to carry the rail transport contract. It is the enabling technology for paperless, PNR-less rail tickets that can be controlled on plain paper or a screen.",
+    "definition_ko": "Flexible Content Barcode(FCB)는 현행 UIC 바코드 표준(IRS 90918-9; ERA TAP TSI 기술문서 B.12)으로, 비대칭 전자서명된 Aztec 바코드를 사용해 철도 운송 계약을 담는다. 일반 용지나 화면에서 검표 가능한 무지(paperless)·무(無)PNR 철도 승차권을 가능케 하는 기반 기술이다.",
+    "longDef": "FCB encodes the contract data and an asymmetric digital signature so that any inspecting party with the issuer's public key can validate authenticity offline, without querying a central reservation system. As the successor to earlier fixed-layout UIC barcode standards, FCB supports flexible record structures for varied products (admissions, reservations, passes). It underpins 'print at home' and mobile tickets and is referenced by OSDM fulfillment and by TAP TSI Technical Document B.12.",
+    "longDef_ko": "FCB는 계약 데이터와 비대칭 디지털 서명을 인코딩하여, 발행자의 공개키를 가진 검표 주체가 중앙 예약 시스템을 조회하지 않고도 오프라인에서 진위를 검증할 수 있게 한다. 고정 레이아웃의 구형 UIC 바코드 표준을 잇는 후속 표준으로, 다양한 상품(admission, reservation, 패스)에 대한 유연한 레코드 구조를 지원한다. '집에서 인쇄'·모바일 승차권을 뒷받침하며, OSDM fulfillment과 TAP TSI 기술문서 B.12에서 참조된다.",
+    "standardBody": "UIC",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Fulfillment (Rail)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "OSDM"
+      },
+      {
+        "type": "related",
+        "targetTerm": "TAP TSI"
+      },
+      {
+        "type": "contrasts",
+        "targetTerm": "E-ticket"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Fulfillment (Rail)",
+        "explanation": "FCB is the signed-barcode container technology; fulfillment is the lifecycle step of issuing and controlling the ticket, which typically embeds an FCB.",
+        "explanation_ko": "FCB는 서명된 바코드 컨테이너 기술이고, fulfillment은 승차권을 발행·통제하는 생애주기 단계로 보통 FCB를 내장한다."
+      },
+      {
+        "targetTerm": "E-ticket",
+        "explanation": "FCB is a self-validating, offline-checkable rail barcode; an air E-ticket is a coupon record held in a host system and validated against it. FCB enables PNR-less control, unlike GDS/host-dependent e-tickets.",
+        "explanation_ko": "FCB는 오프라인 검증이 가능한 자체 검증형 철도 바코드이고, 항공 E-ticket은 호스트 시스템에 보관된 쿠폰 기록을 대조해 검증한다. FCB는 GDS/호스트 의존 e-ticket과 달리 무PNR 검표를 가능케 한다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "FCB: Flexible Content Barcode (factsheet)",
+        "org": "UIC",
+        "version": "IRS 90918-9",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "TAP TSI Technical Document B.12",
+        "org": "European Union Agency for Railways (ERA)",
+        "version": "",
+        "section": "B.12",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 12v24M15 12v24M20 12v24M25 12v24M30 12v24M35 12v24M38 12v24\" stroke-width=\"1.6\"/><path d=\"M28 30l3 3 6-7\"/></svg>"
+  },
+  {
+    "id": "standard-international-passenger-tariff-tcv",
+    "term": "Standard International Passenger Tariff (TCV)",
+    "term_ko": "표준 국제 여객 운임(TCV)",
+    "abbreviation": "TCV",
+    "aliases": [
+      "TCV",
+      "Tarif Commun International pour le transport des Voyageurs",
+      "Common International Tariff"
+    ],
+    "category": "rail",
+    "conceptType": "standard-term",
+    "status": "active",
+    "definition": "The TCV is the UIC common international passenger tariff (Tarif Commun International pour le transport des Voyageurs) governing through fares for cross-border, non-reservation rail journeys. It is the historical basis of international through-fare construction, increasingly distributed via OSDM.",
+    "definition_ko": "TCV(Tarif Commun International pour le transport des Voyageurs, 표준 국제여객운임)는 국경을 넘는 비예약 철도 여정의 통과운임(through fare)을 규율하는 UIC 공통 국제운임이다. 국제 통과운임 산정의 역사적 기반이며, 점차 OSDM을 통해 유통되고 있다.",
+    "longDef": "TCV provides a standardized set of point-to-point through fares between participating railways so that a single cross-border journey can be priced and ticketed across networks, typically on non-reservation (NRT-style) services. It functions much like an internationally agreed fare basis for rail, and its through fares are now exposed through modern distribution standards such as OSDM alongside operators' commercial fares.",
+    "longDef_ko": "TCV는 참여 철도사 간 표준화된 지점간 통과운임 집합을 제공하여, 국경을 넘는 단일 여정을 여러 망에 걸쳐 가격 산정·발권할 수 있게 하며, 보통 비예약(NRT 방식) 노선에 적용된다. 철도판 국제 합의 운임 기준(fare basis)처럼 작동하며, 그 통과운임은 이제 운영사 상업운임과 더불어 OSDM 같은 현대 유통 표준을 통해 노출된다.",
+    "standardBody": "UIC",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Non-integrated Reservation Ticket (NRT)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "OSDM"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Through Fare"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Fare Construction"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Through Fare",
+        "explanation": "A through fare is the general concept of a single fare across a multi-segment journey; TCV is the specific UIC tariff framework that defines such through fares for international rail.",
+        "explanation_ko": "through fare는 여러 구간 여정을 하나의 운임으로 묶는 일반 개념이고, TCV는 국제 철도에서 그러한 통과운임을 정의하는 구체적인 UIC 운임 체계다."
+      },
+      {
+        "targetTerm": "Fare Construction",
+        "explanation": "Fare construction is the air discipline of building a fare from components/NUC; TCV is rail's pre-built common international tariff used as the basis for cross-border fares.",
+        "explanation_ko": "fare construction은 구성요소/NUC로 운임을 조립하는 항공 기법이고, TCV는 국경 간 운임의 기준으로 쓰이는 사전 구축된 철도 공통 국제운임이다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Passenger Services Group / international tariffs (TCV, PRIFIS, OSDM)",
+        "org": "UIC",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Products — tariff information (TCV)",
+        "org": "UIC",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"16\"/><path d=\"M8 24h32\"/><path d=\"M24 8a22 22 0 0 1 0 32M24 8a22 22 0 0 0 0 32\"/><circle cx=\"14\" cy=\"15\" r=\"2\" fill=\"currentColor\"/><circle cx=\"34\" cy=\"33\" r=\"2\" fill=\"currentColor\"/></svg>"
+  },
+  {
+    "id": "interrail-pass",
+    "term": "Interrail Pass",
+    "term_ko": "인터레일 패스(Interrail Pass)",
+    "abbreviation": "",
+    "aliases": [
+      "Interrail",
+      "Interrail Global Pass"
+    ],
+    "category": "rail",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "The Interrail Pass is the flagship European rail pass for residents of Europe, granting flexible multi-country train travel for a chosen number of travel days. It is a foundational non-point-to-point rail product, with seat reservations often sold separately, that distribution systems must support.",
+    "definition_ko": "Interrail Pass는 유럽 거주자를 위한 대표적 유럽 철도 패스로, 선택한 여행 일수 동안 여러 나라에서 유연하게 열차 여행을 할 수 있게 한다. 좌석 예약을 흔히 별도로 판매하는, 지점간(point-to-point)이 아닌 기반 철도 상품으로, 유통 시스템이 지원해야 한다.",
+    "longDef": "Interrail is sold as a Global Pass (covering most participating countries) in Flexi variants (a number of travel days within a period) or Continuous variants (unlimited travel for a continuous period), as well as single-country passes. The pass conveys the admission to travel but, on reservation-compulsory services such as high-speed and night trains, requires separately purchased seat reservations. As a non-route-specific entitlement it stresses distribution models that assume fixed origin-destination fares.",
+    "longDef_ko": "Interrail은 대부분의 참여국을 포함하는 Global Pass로 판매되며, 일정 기간 내 여행 일수를 쓰는 Flexi형, 연속 기간 무제한 이용하는 Continuous형, 그리고 단일 국가 패스 형태가 있다. 패스는 여행할 admission을 부여하지만, 고속·야간열차처럼 예약이 의무인 노선에서는 별도로 구매하는 좌석 예약이 필요하다. 경로 비특정 권리이므로, 고정 출발-도착 운임을 전제하는 유통 모델에 부담을 준다.",
+    "standardBody": "",
+    "providerTerms": [
+      {
+        "provider": "Eurail B.V.",
+        "term": "Interrail Global Pass",
+        "context": "Operator of the Interrail and Eurail pass products",
+        "context_ko": "Interrail 및 Eurail 패스 상품의 운영 주체",
+        "relationship": "same"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Eurail Pass"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Seat Reservation"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Admission"
+      },
+      {
+        "type": "related",
+        "targetTerm": "OSDM"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Eurail Pass",
+        "explanation": "Interrail and Eurail are near-identical products differing by eligibility: Interrail is for European residents, Eurail for non-European residents.",
+        "explanation_ko": "Interrail과 Eurail은 거의 동일한 상품으로 자격 요건만 다르다 — Interrail은 유럽 거주자용, Eurail은 비유럽 거주자용이다."
+      },
+      {
+        "targetTerm": "Seat Reservation",
+        "explanation": "The pass grants the right to travel (admission); seat reservations for compulsory-reservation trains are a separate purchase on top of the pass.",
+        "explanation_ko": "패스는 여행할 권리(admission)를 부여하고, 예약 의무 열차의 좌석 예약은 패스에 더해 별도로 구매한다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "What is Interrail / how to use your pass",
+        "org": "Eurail B.V. (Interrail.eu)",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Global Pass (Flexi vs Continuous)",
+        "org": "Eurail B.V. (Interrail.eu)",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"7\" y=\"14\" width=\"34\" height=\"20\" rx=\"3\"/><circle cx=\"16\" cy=\"24\" r=\"4\"/><path d=\"M25 21h11M25 27h8\"/><path d=\"M11 38l3 3M37 38l-3 3\"/></svg>"
+  },
+  {
+    "id": "eurail-pass",
+    "term": "Eurail Pass",
+    "term_ko": "유레일 패스(Eurail Pass)",
+    "abbreviation": "",
+    "aliases": [
+      "Eurail",
+      "Eurail Global Pass"
+    ],
+    "category": "rail",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "The Eurail Pass is the multi-country European rail pass for non-European residents — the international-market counterpart of Interrail. It is a core rail-distribution product sold worldwide through travel agents and OTAs.",
+    "definition_ko": "Eurail Pass는 비유럽 거주자를 위한 다국가 유럽 철도 패스로, Interrail의 국제 시장용 대응 상품이다. 전 세계에서 여행사와 OTA를 통해 판매되는 핵심 철도 유통 상품이다.",
+    "longDef": "Eurail mirrors Interrail in structure — Global Pass and single-country passes in Flexi and Continuous variants — but is restricted by eligibility to travelers who reside outside Europe. As a flexible, non-route-specific entitlement it is widely retailed by international agents and online travel agencies, and like Interrail it requires separately bought seat reservations on reservation-compulsory services.",
+    "longDef_ko": "Eurail은 구조상 Interrail을 그대로 따른다 — Flexi·Continuous형의 Global Pass와 단일 국가 패스 — 다만 유럽 외 거주 여행자에게만 자격이 한정된다. 경로 비특정의 유연한 권리로서 국제 여행사와 온라인 여행사(OTA)를 통해 널리 판매되며, Interrail과 마찬가지로 예약 의무 노선에서는 별도 구매한 좌석 예약이 필요하다.",
+    "standardBody": "",
+    "providerTerms": [
+      {
+        "provider": "Eurail B.V.",
+        "term": "Eurail Global Pass",
+        "context": "Operator and brand for the non-European-resident pass",
+        "context_ko": "비유럽 거주자용 패스의 운영사이자 브랜드",
+        "relationship": "same"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "Interrail Pass"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Seat Reservation"
+      },
+      {
+        "type": "related",
+        "targetTerm": "OTA (Online Travel Agency)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Admission"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Interrail Pass",
+        "explanation": "Eurail and Interrail are functionally the same product line; Eurail is for non-European residents while Interrail is for European residents.",
+        "explanation_ko": "Eurail과 Interrail은 기능적으로 같은 상품군이며, Eurail은 비유럽 거주자용, Interrail은 유럽 거주자용이다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Eurail Global Pass",
+        "org": "Eurail B.V. (Eurail.com)",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Interrail Global Pass / Eurail (resident eligibility)",
+        "org": "Eurail B.V.",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"7\" y=\"14\" width=\"34\" height=\"20\" rx=\"3\"/><circle cx=\"16\" cy=\"24\" r=\"4\"/><path d=\"M25 21h11M25 27h8\"/><circle cx=\"34\" cy=\"24\" r=\"6\" stroke-dasharray=\"2 2\"/></svg>"
+  },
+  {
+    "id": "multimodal-transport",
+    "term": "Multimodal Transport",
+    "term_ko": "복합운송(Multimodal Transport)",
+    "abbreviation": "",
+    "aliases": [
+      "Multimodal Travel",
+      "Multi-modal Transport"
+    ],
+    "category": "rail",
+    "conceptType": "business-term",
+    "status": "active",
+    "definition": "Multimodal transport is the combination of two or more modes — such as rail, bus, air, and micromobility — within a single journey or travel offer. OSDM is explicitly designed to sell trains 'and other modes,' making multimodal the organizing concept of rail distribution beyond a single carrier or mode.",
+    "definition_ko": "Multimodal transport(복합운송)는 단일 여정 또는 여행 오퍼 안에서 철도·버스·항공·마이크로모빌리티 등 둘 이상의 교통수단을 결합하는 것이다. OSDM은 명시적으로 열차 '및 다른 교통수단'을 함께 판매하도록 설계되어, 복합운송을 단일 운영사·단일 수단을 넘어선 철도 유통의 조직 개념으로 만든다.",
+    "longDef": "Multimodal transport treats a trip as a chain of segments potentially spanning different modes and operators, requiring distribution standards to combine offers, fares, and fulfillment across them. It is sometimes distinguished from 'intermodal': in the conventional convention, multimodal denotes several modes covered by a single ticket (passengers) or single contract with one carrier liable for the whole journey (freight), whereas intermodal denotes several modes where each carrier issues its own ticket/contract. In practice, especially in passenger and Mobility-as-a-Service contexts, the two terms are often used interchangeably to describe trips not confined to one mode. Multimodal is the commercial frame that connects rail standards like OSDM to broader Mobility-as-a-Service offerings.",
+    "longDef_ko": "복합운송은 여정을 서로 다른 수단과 운영사를 아우를 수 있는 구간들의 연쇄로 보며, 유통 표준이 이들 전반에 걸쳐 오퍼·운임·발권을 결합하도록 요구한다. 때로 'intermodal(연계운송)'과 구분되는데, 통상적 구분에 따르면 multimodal은 여러 수단을 하나의 승차권(여객) 또는 한 운송인이 전 구간 책임을 지는 단일 계약(화물)으로 묶는 것을 가리키고, intermodal은 여러 수단을 이용하되 각 운송인이 자기 승차권/계약을 발행하는 것을 가리킨다. 다만 실무에서는, 특히 여객 및 MaaS 맥락에서 두 용어가 단일 수단에 국한되지 않는 여정을 가리키는 말로 흔히 혼용된다. multimodal은 OSDM 같은 철도 표준을 더 넓은 MaaS 제공물과 잇는 상업적 틀이다.",
+    "standardBody": "",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "OSDM"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Journey"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Dynamic Packaging"
+      },
+      {
+        "type": "contrasts",
+        "targetTerm": "Through Fare"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "Journey",
+        "explanation": "A Journey (in air pricing) is the routing structure of one trip, typically single-mode; multimodal transport explicitly spans multiple modes and operators, and is the organizing concept for the Rail & Multimodal category.",
+        "explanation_ko": "항공 가격 산정의 Journey는 보통 단일 수단인 한 여정의 라우팅 구조이고, multimodal transport는 명시적으로 여러 수단과 운영사를 아우르며 Rail & Multimodal 카테고리의 조직 개념이다."
+      },
+      {
+        "targetTerm": "Dynamic Packaging",
+        "explanation": "Dynamic packaging bundles travel products (e.g., flight + hotel) into one purchase; multimodal transport specifically chains transport modes into one journey, which packaging may or may not do.",
+        "explanation_ko": "dynamic packaging은 여행 상품(예: 항공+호텔)을 하나의 구매로 묶는 것이고, multimodal transport는 구체적으로 교통수단을 하나의 여정으로 연결하는 것으로 패키징이 반드시 이를 포함하지는 않는다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Multimodal vs intermodal (Mobility as a Service explainer)",
+        "org": "Industry MaaS literature",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Open Sales and Distribution Model (trains and other modes)",
+        "org": "UIC",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"10\" width=\"14\" height=\"10\" rx=\"2\"/><path d=\"M8 20l-1 3M18 20l1 3\"/><path d=\"M30 12l8 0 3 6v6h-11z\"/><circle cx=\"33\" cy=\"30\" r=\"3\"/><path d=\"M13 28v8M13 36l-3 3M13 36l3 3M13 28l-4 2M13 28l4 2\"/></svg>"
+  },
+  {
+    "id": "tap-tsi",
+    "term": "TAP TSI",
+    "term_ko": "여객 텔레매틱스 상호운용 기술사양(TAP TSI)",
+    "abbreviation": "TAP TSI",
+    "aliases": [
+      "Telematics Applications for Passengers Technical Specification for Interoperability",
+      "TAP-TSI"
+    ],
+    "category": "rail",
+    "conceptType": "regulation",
+    "status": "deprecated",
+    "definition": "TAP TSI is the EU Technical Specification for Interoperability for Telematics Applications for Passengers, originally adopted as Commission Regulation (EU) No 454/2011, prescribing standardized interfaces between rail actors for timetables, tariffs, reservations, and fulfillment. It was the legal and technical backbone of interoperable rail ticketing and distribution in Europe until February 2026, when Reg (EU) No 454/2011 was repealed and merged with the freight TAF TSI into the consolidated 'TSI Telematics' (Commission Implementing Regulation (EU) 2026/253).",
+    "definition_ko": "TAP TSI(여객 텔레매틱스 응용 상호운용 기술사양)는 시각표·운임·예약·발권에 대해 철도 주체 간 표준 인터페이스를 규정하는 EU 기술사양으로, 본래 EU 규정(Regulation (EU) No 454/2011)으로 채택되었다. 유럽에서 상호운용 가능한 철도 발권·유통의 법적·기술적 근간이었으나, 2026년 2월 해당 규정이 폐지되고 화물용 TAF TSI와 통합되어 단일 'TSI Telematics'(Commission Implementing Regulation (EU) 2026/253)로 대체되었다.",
+    "longDef": "Adopted under EU railway interoperability legislation as Regulation (EU) No 454/2011, TAP TSI defined the data and message interfaces that railway undertakings, infrastructure managers, ticket vendors, and other actors must use, with detailed Technical Documents (e.g., timetable, tariff, reservation, and the barcode specification TD B.12 for the Flexible Content Barcode). It did not itself dictate commercial products but mandated interoperable exchange; modern open standards such as OSDM provide concrete implementations of the retail interfaces it required. On 6 February 2026, Reg (EU) No 454/2011 was repealed and consolidated with the freight TAF TSI into the single 'TSI Telematics' under Commission Implementing Regulation (EU) 2026/253; the TAP TSI body of work (technical documents, retail/distribution interfaces) carries forward within that framework.",
+    "longDef_ko": "EU 철도 상호운용 법제 하에서 Regulation (EU) No 454/2011로 채택된 TAP TSI는 철도사업자·인프라관리자·승차권 판매자 등 주체들이 사용해야 하는 데이터·메시지 인터페이스를 정의하며, 상세 기술문서(예: 시각표·운임·예약 및 Flexible Content Barcode 바코드 사양인 TD B.12)를 두었다. 상업 상품 자체를 규정하지는 않고 상호운용 교환을 의무화하였으며, OSDM 같은 현대 개방형 표준이 그것이 요구하는 리테일 인터페이스의 구체적 구현을 제공한다. 2026년 2월 6일 Reg (EU) No 454/2011은 폐지되어 화물용 TAF TSI와 함께 단일 'TSI Telematics'(Commission Implementing Regulation (EU) 2026/253)로 통합되었으며, TAP TSI의 기술문서·리테일/유통 인터페이스 체계는 그 틀 안에서 계승된다.",
+    "standardBody": "European Union / ERA",
+    "providerTerms": [],
+    "relationships": [
+      {
+        "type": "related",
+        "targetTerm": "OSDM"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Flexible Content Barcode (FCB)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Fulfillment (Rail)"
+      },
+      {
+        "type": "related",
+        "targetTerm": "Standard International Passenger Tariff (TCV)"
+      }
+    ],
+    "distinctions": [
+      {
+        "targetTerm": "OSDM",
+        "explanation": "TAP TSI is the binding EU regulation mandating interoperable rail interfaces; OSDM is a voluntary open API/data-model standard that can implement TAP TSI's retail/distribution requirements.",
+        "explanation_ko": "TAP TSI는 상호운용 철도 인터페이스를 의무화하는 구속력 있는 EU 규정이고, OSDM은 TAP TSI의 리테일/유통 요구사항을 구현할 수 있는 자발적 개방형 API/데이터 모델 표준이다."
+      },
+      {
+        "targetTerm": "Flexible Content Barcode (FCB)",
+        "explanation": "TAP TSI is the overarching regulation; FCB is one specific technical artifact (the barcode standard, referenced as TD B.12) that helps satisfy its fulfillment/control requirements.",
+        "explanation_ko": "TAP TSI는 포괄적 규정이고, FCB는 그 발권/검표 요구를 충족하는 데 기여하는 구체적 기술 산물(TD B.12로 참조되는 바코드 표준)이다."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Telematics Applications for Passenger Service TSI",
+        "org": "European Union Agency for Railways (ERA)",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Commission Regulation (EU) No 454/2011 (TAP TSI)",
+        "org": "European Union",
+        "version": "",
+        "section": "",
+        "url": ""
+      },
+      {
+        "name": "Commission Implementing Regulation (EU) 2026/253 (TSI Telematics, repealing 454/2011)",
+        "org": "European Union",
+        "version": "",
+        "section": "",
+        "url": ""
+      }
+    ],
+    "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"15\"/><path d=\"M24 9v30M9 24h30\"/><path d=\"M24 9a20 20 0 0 1 0 30M24 9a20 20 0 0 0 0 30\"/><rect x=\"20\" y=\"20\" width=\"8\" height=\"8\" rx=\"1\"/></svg>"
+  }
+]
