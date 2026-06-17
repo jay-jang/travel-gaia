@@ -48,7 +48,8 @@ travel-gaia/
 │   ├── build.mjs             # okf/ 로드→교차참조 해석→검증→index.html 생성
 │   ├── to-okf.mjs            # 마이그레이션: glossary.json→okf/ 변환
 │   ├── okf-validate.mjs      # OKF 적합성 + 라운드트립 검증
-│   └── verify-ui.mjs         # jsdom UI 테스트
+│   ├── verify-ui.mjs         # jsdom UI 테스트
+│   └── vendor/d3.min.js      # d3 v7.8.5 — 빌드 시 index.html에 인라인(그래프 오프라인 유지)
 ├── serve.py                  # no-cache 데모 서버(터널용)
 ├── DESIGN.md · notes/ · mock/ # 설계 기록, 자문 로그, UI 목업
 └── README.md

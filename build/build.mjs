@@ -104,7 +104,21 @@ for (const f of FONTS) {
 const tpl = readFileSync(join(ROOT,'build','template.html'),'utf8');
 const json = JSON.stringify(glossary).replace(/</g,'\\u003c');   // safe inside <script>
 if (!tpl.includes('__GLOSSARY_DATA__')) { console.error('ERROR: template missing __GLOSSARY_DATA__ marker'); process.exit(1); }
-const html = tpl.replace('/*__FONTS__*/', fontCss).replace('__GLOSSARY_DATA__', json);
+// NB: use function replacers so '$' in the inlined payloads is NOT treated as a
+// String.replace special pattern ($&, $`, $', $1 …). Minified d3/JSON contain '$'.
+let html = tpl.replace('/*__FONTS__*/', () => fontCss).replace('__GLOSSARY_DATA__', () => json);
+
+// ---- inline d3 so the single-file artifact stays offline / zero-dependency (graph uses D3) ----
+const D3_CDN = '<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>';
+let d3KB = 0, d3inlined = false;
+if (html.includes(D3_CDN)) {
+  try {
+    const d3src = readFileSync(join(ROOT,'build','vendor','d3.min.js'),'utf8').replace(/<\/script>/gi,'<\\/script>');
+    html = html.replace(D3_CDN, () => `<script>/* d3 v7.8.5 — vendored & inlined for offline single-file */\n${d3src}\n</script>`);
+    d3KB = (d3src.length/1024).toFixed(0); d3inlined = true;
+  } catch { console.error('WARN: build/vendor/d3.min.js missing — graph will require network (CDN d3). Run: npm i d3@7.8.5 --no-save && cp node_modules/d3/dist/d3.min.js build/vendor/d3.min.js'); }
+}
+const remoteScripts = (html.match(/<script[^>]+src=["']https?:/gi)||[]).length;
 writeFileSync(join(ROOT,'index.html'), html);
 const fontKB = (fontCss.length/1024).toFixed(0);
 
@@ -123,4 +137,5 @@ console.log(`bad status: ${badStatus.length}${badStatus.length?' ['+badStatus.jo
 const withIcon = entries.filter(e => e.icon && /<svg/i.test(e.icon)).length;
 console.log(`entries with SVG icon: ${withIcon}/${entries.length}`);
 console.log(`embedded fonts: ${fontKB} KB | index.html total: ${(html.length/1024).toFixed(0)} KB | data: ${(JSON.stringify(glossary).length/1024).toFixed(1)} KB`);
+console.log(`d3: ${d3inlined?`inlined ${d3KB} KB (offline)`:'NOT inlined (CDN)'} | remote <script src>: ${remoteScripts}${remoteScripts?' ⚠ NOT offline':' (offline OK)'}`);
 console.log(`OK -> index.html, data/glossary.json\n`);
