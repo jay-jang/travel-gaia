@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Travel Gaia — 여행 산업 용어 백과사전</title>
 <meta name="description" content="여행 산업(항공·호텔·유통·정산·표준)의 용어를 공급자/표준 간 통일한 standalone 백과사전. 한/영, 용어별 일러스트, 관계 그래프, 전체 색인.">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
 <style>
 /*__FONTS__*/
 :root{
@@ -255,6 +256,226 @@ footer{color:var(--faint);font-family:var(--sans);font-size:.76rem;text-align:ce
 .dir-terms a:hover{color:var(--accent)}
 .dir-terms .sep{color:var(--faint);margin:0 6px}
 .dir-terms .more{color:var(--accent);font-family:var(--mono);font-size:.74rem}
+
+/* Dashboard layout styles */
+.graph-dashboard {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - var(--hh));
+  overflow: hidden;
+  display: flex;
+}
+.graph-container {
+  flex: 1;
+  position: relative;
+  background: var(--surface);
+  height: 100%;
+}
+#kg-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+/* Floating graph control buttons */
+.graph-controls {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 10;
+}
+.ctrl-btn {
+  width: 40px;
+  height: 40px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: var(--r);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.ctrl-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Sliding Side Drawer Styles */
+.drawer {
+  position: fixed;
+  top: var(--hh);
+  right: 0;
+  width: 480px;
+  max-width: calc(100vw - var(--side));
+  height: calc(100vh - var(--hh));
+  background: var(--surface);
+  border-left: 1px solid var(--border);
+  box-shadow: -4px 0 24px rgba(0, 0, 0, 0.08);
+  transform: translateX(100%);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+}
+.drawer.open {
+  transform: translateX(0);
+}
+.drawer-header {
+  padding: 24px;
+  border-bottom: 1px solid var(--rule);
+  position: relative;
+}
+.drawer-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: 0;
+  font-size: 28px;
+  color: var(--muted);
+  cursor: pointer;
+  line-height: 1;
+}
+.drawer-close:hover {
+  color: var(--accent);
+}
+.drawer-title-area h2 {
+  font-family: var(--serif);
+  font-size: 1.6rem;
+  margin: 0 0 4px;
+  color: var(--text);
+}
+.drawer-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px;
+}
+.drawer-section {
+  margin-bottom: 28px;
+}
+.drawer-section h3 {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  margin: 0 0 10px;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 4px;
+}
+.def-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 8px;
+}
+.def-header h3 {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin: 0;
+}
+.drawer-footer {
+  padding: 14px 24px;
+  background: var(--surface-2);
+  border-top: 1px solid var(--rule);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--faint);
+}
+
+/* SVG D3 Graph Visuals */
+.link {
+  transition: stroke 0.15s, stroke-opacity 0.15s;
+}
+.link.cat-to-parent {
+  stroke-opacity: 0.6;
+  stroke-width: 1.5px;
+}
+.link.parent-to-child {
+  stroke-opacity: 0.4;
+  stroke-width: 1.2px;
+  stroke-dasharray: 3,3;
+}
+.link.relational {
+  stroke: #888;
+  stroke-opacity: 0.15;
+  stroke-width: 1px;
+}
+.link.dimmed {
+  stroke-opacity: 0.03 !important;
+}
+.node-group {
+  cursor: grab;
+  transition: opacity 0.15s;
+}
+.node-group:active {
+  cursor: grabbing;
+}
+.node-group circle {
+  stroke: var(--surface);
+  stroke-width: 1.5px;
+  transition: r 0.2s, stroke-width 0.2s, stroke 0.2s;
+}
+.node-group:hover circle,
+.node-group.focused circle {
+  stroke: var(--text);
+  stroke-width: 2.5px;
+}
+.node-group:focus {
+  outline: none;
+}
+.node-group:focus circle {
+  stroke: var(--accent);
+  stroke-width: 3.5px;
+}
+.node-group text {
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 600;
+  paint-order: stroke;
+  stroke: var(--surface);
+  stroke-width: 3px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: var(--text);
+  pointer-events: none;
+  text-anchor: middle;
+}
+.node-group.dimmed {
+  opacity: 0.15;
+}
+.node-group.highlighted circle {
+  stroke: var(--text);
+  stroke-width: 3px;
+}
+
+/* Custom styles for progressive hybrid graph */
+.node-group.category-node text {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.node-group.parent-term-node text {
+  font-size: 11px;
+  font-weight: 600;
+}
+.node-group.child-term-node text {
+  font-size: 10px;
+  font-weight: 400;
+}
+.node-group.category-node:hover circle,
+.node-group.category-node.focused circle {
+  stroke: #800020;
+  stroke-width: 4px;
+}
 </style>
 </head>
 <body>
@@ -276,6 +497,44 @@ footer{color:var(--faint);font-family:var(--sans);font-size:.76rem;text-align:ce
   <aside class="nav" id="sidebar" aria-label="nav"></aside>
   <div class="scrim" id="scrim"></div>
   <main id="main" tabindex="-1"></main>
+  
+  <!-- Graph Dashboard -->
+  <div id="graph-dashboard" class="graph-dashboard" style="display: none;">
+    <div class="graph-container">
+      <div class="graph-header-overlay" style="position: absolute; top: 16px; left: 16px; right: 16px; z-index: 10; pointer-events: none;">
+        <div class="kg-legend" id="kgLegend" style="pointer-events: auto; margin: 0; display: flex; flex-wrap: wrap; gap: 6px;"></div>
+      </div>
+      <svg id="kg-svg">
+        <g class="zoom-container">
+          <g class="links-group"></g>
+          <g class="nodes-group"></g>
+        </g>
+      </svg>
+      <div class="graph-controls">
+        <button class="ctrl-btn" id="zoom-in" title="Zoom In">+</button>
+        <button class="ctrl-btn" id="zoom-out" title="Zoom Out">−</button>
+        <button class="ctrl-btn" id="zoom-fit" title="Fit Content">⛶</button>
+      </div>
+      <div class="kg-tip" id="kgTip"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Sliding Side Drawer -->
+<div id="drawer" class="drawer">
+  <div class="drawer-header">
+    <button class="drawer-close" id="drawerClose" aria-label="Close drawer">&times;</button>
+    <div class="drawer-title-area">
+      <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+        <h2 id="drawerTitle" style="margin:0;"></h2>
+        <button class="tbtn" id="drawerLangBtn" style="margin-left:12px; flex-shrink:0;">KO</button>
+      </div>
+      <div id="drawerSub" class="term-sub" style="margin-top:4px;"></div>
+      <div class="badges" id="drawerBadges" style="margin-top:8px;"></div>
+    </div>
+  </div>
+  <div class="drawer-body" id="drawerBody"></div>
+  <div class="drawer-footer" id="drawerFooter"></div>
 </div>
 
 <script id="glossary-data" type="application/json">__GLOSSARY_DATA__</script>
@@ -941,174 +1200,934 @@ footer{color:var(--faint);font-family:var(--sans);font-size:.76rem;text-align:ce
   }
 
   /* knowledge graph */
-  let kgRAF=null; function stopGraph(){ if(kgRAF){ cancelAnimationFrame(kgRAF); kgRAF=null; } }
-  function renderGraph(){
-    const catColor=id=>(catById.get(id)||{}).color||'#888';
-    const nodes=ENTRIES.map(e=>({id:e.id,e,cat:e.category,x:0,y:0,vx:0,vy:0,deg:0}));
-    const nById=new Map(nodes.map(n=>[n.id,n])); const seen=new Set(), edges=[];
-    const addE=(a,b,kind)=>{ if(!a||!b||a===b) return; const k=[a,b].sort().join('|'); if(seen.has(k)) return; seen.add(k); edges.push({a,b,kind}); };
-    ENTRIES.forEach(e=>{ (e.relationships||[]).forEach(r=>{ if(r.targetId&&nById.has(r.targetId)) addE(e.id,r.targetId,'rel'); });
-      (e.distinctions||[]).forEach(d=>{ if(d.targetId&&nById.has(d.targetId)) addE(e.id,d.targetId,'dist'); }); });
-    edges.forEach(ed=>{ nById.get(ed.a).deg++; nById.get(ed.b).deg++; });
-    const ci=new Map(CATS.map((c,i)=>[c.id,i]));
-    nodes.forEach((n,i)=>{ const ang=(ci.get(n.cat)||0)/CATS.length*2*Math.PI; n.x=Math.cos(ang)*220+((i*53)%90-45); n.y=Math.sin(ang)*220+((i*31)%90-45); });
+  let simulation;
+  let allNodes = [];
+  let allLinks = [];
+  let activeCategories = new Set(CATS.map(c => c.id));
+  let linkSelection, nodeSelection;
+  let zoom, svg, zoomContainer;
+  let activeTermId = null;
+  const nbr = new Map();
 
-    // Determine starting root node
-    const hash = location.hash || '#/';
-    let rootId = null;
-    const qIdx = hash.indexOf('?');
-    if (qIdx !== -1) {
-      const qStr = hash.slice(qIdx + 1);
-      const pairs = qStr.split('&');
-      pairs.forEach(p => {
-        const parts = p.split('=');
-        if (parts.length === 2) {
-          const key = decodeURIComponent(parts[0]);
-          const val = decodeURIComponent(parts[1]);
-          if (key === 'focus' || key === 'root') {
-            rootId = val.trim().toLowerCase();
+  let expandedNodeIds = new Set();
+  const parentsOfChild = new Map();
+  const hasChildrenSet = new Set();
+  const isChildSet = new Set();
+  let graphLinks = [];
+
+  function stopGraph(){
+    if (simulation) {
+      simulation.stop();
+    }
+  }
+
+  const catColor = id => (catById.get(id) || {}).color || '#888';
+  const isNeighbor = (a, b) => nbr.has(a) && nbr.get(a).has(b);
+
+  function findParentNode(d) {
+    if (d.id.startsWith('cat-')) return null;
+    if (d.isParentTerm) {
+      return allNodes.find(n => n.id === 'cat-' + d.category);
+    } else {
+      const parents = parentsOfChild.get(d.id) || new Set();
+      // find a parent that is visible
+      const visibleParent = allNodes.find(n => parents.has(n.id) && window.kgVisibleNodeIds && window.kgVisibleNodeIds.has(n.id));
+      if (visibleParent) return visibleParent;
+      const anyParent = allNodes.find(n => parents.has(n.id));
+      if (anyParent) return anyParent;
+      return allNodes.find(n => n.id === 'cat-' + d.category);
+    }
+  }
+
+  function ensureTermVisible(termId) {
+    const termNode = allNodes.find(n => n.id === termId);
+    if (!termNode || termNode.isCategoryNode) return;
+    
+    // Expand the Category node
+    expandedNodeIds.add('cat-' + termNode.category);
+    
+    // If it's a Child term, expand all of its parents in the category
+    if (termNode.isChildTerm) {
+      const parents = parentsOfChild.get(termId) || new Set();
+      parents.forEach(pId => {
+        expandedNodeIds.add(pId);
+      });
+    }
+  }
+
+  function initGraph() {
+    if (window.kgInitialized) return;
+    window.kgInitialized = true;
+
+    // Render the legend
+    const legendContainer = document.getElementById("kgLegend");
+    legendContainer.innerHTML = CATS.map(c => `
+      <span class="legend-item" data-cat="${c.id}">
+        <span class="ld" style="background:${c.color}"></span>
+        ${esc(catName(c))}
+      </span>
+    `).join('');
+
+    legendContainer.addEventListener('click', e => {
+      const el = e.target.closest('.legend-item');
+      if (!el) return;
+      const catId = el.dataset.cat;
+      if (activeCategories.has(catId)) {
+        activeCategories.delete(catId);
+      } else {
+        activeCategories.add(catId);
+      }
+      updateLegendUI();
+      updateGraphDataset();
+    });
+
+    // Initialize D3 zoom
+    svg = d3.select("#kg-svg");
+    zoomContainer = svg.select(".zoom-container");
+    zoom = d3.zoom()
+      .scaleExtent([0.1, 4.0])
+      .on("zoom", (event) => {
+        zoomContainer.attr("transform", event.transform);
+      });
+    svg.call(zoom);
+
+    // Zoom controls
+    d3.select("#zoom-in").on("click", () => {
+      svg.transition().duration(250).call(zoom.scaleBy, 1.3);
+    });
+    d3.select("#zoom-out").on("click", () => {
+      svg.transition().duration(250).call(zoom.scaleBy, 1 / 1.3);
+    });
+    d3.select("#zoom-fit").on("click", () => {
+      zoomFit();
+    });
+
+    // Setup Drawer listeners
+    document.getElementById("drawerClose").addEventListener("click", () => {
+      location.hash = "#/graph";
+    });
+    document.getElementById("drawerLangBtn").addEventListener("click", () => {
+      LANG = LANG === 'ko' ? 'en' : 'ko';
+      try { localStorage.setItem('tg-lang', LANG); } catch(_) {}
+      applyStaticI18n();
+      if (activeTermId) {
+        updateDrawer(activeTermId);
+      }
+    });
+
+    // Compute degrees
+    const nodeDegrees = new Map(ENTRIES.map(e => [e.id, 0]));
+    ENTRIES.forEach(e => {
+      if (e.relationships) {
+        e.relationships.forEach(r => {
+          if (r.targetId && byId.has(r.targetId)) {
+            nodeDegrees.set(e.id, nodeDegrees.get(e.id) + 1);
+            nodeDegrees.set(r.targetId, nodeDegrees.get(r.targetId) + 1);
           }
-        }
-      });
-    }
+        });
+      }
+      if (e.distinctions) {
+        e.distinctions.forEach(d => {
+          if (d.targetId && byId.has(d.targetId)) {
+            nodeDegrees.set(e.id, nodeDegrees.get(e.id) + 1);
+            nodeDegrees.set(d.targetId, nodeDegrees.get(d.targetId) + 1);
+          }
+        });
+      }
+    });
 
-    let rootNode = null;
-    if (rootId) {
-      rootNode = nById.get(rootId);
-    }
-    if (!rootNode) {
-      let maxDeg = -1;
-      nodes.forEach(n => {
-        if (n.deg > maxDeg) {
-          maxDeg = n.deg;
-          rootNode = n;
-        }
-      });
-    }
+    // Programmatically classify terms within each category
+    parentsOfChild.clear();
+    isChildSet.clear();
+    hasChildrenSet.clear();
 
+    ENTRIES.forEach(e => {
+      if (e.relationships) {
+        e.relationships.forEach(r => {
+          if (r.targetId && byId.has(r.targetId)) {
+            const target = byId.get(r.targetId);
+            if (target.category === e.category) {
+              if (r.type === 'parent' || r.type === 'broader') {
+                isChildSet.add(e.id);
+                if (!parentsOfChild.has(e.id)) parentsOfChild.set(e.id, new Set());
+                parentsOfChild.get(e.id).add(target.id);
+                hasChildrenSet.add(target.id);
+              } else if (r.type === 'child' || r.type === 'narrower') {
+                isChildSet.add(target.id);
+                if (!parentsOfChild.has(target.id)) parentsOfChild.set(target.id, new Set());
+                parentsOfChild.get(target.id).add(e.id);
+                hasChildrenSet.add(e.id);
+              }
+            }
+          }
+        });
+      }
+    });
+
+    // Initialize nodes (Category Nodes + Term Nodes)
+    const categoryNodes = CATS.map((c, i) => {
+      const ang = i / CATS.length * 2 * Math.PI;
+      return {
+        id: 'cat-' + c.id,
+        term: c.title.toUpperCase(),
+        term_ko: c.short.toUpperCase(),
+        category: c.id,
+        isCategoryNode: true,
+        degree: 1,
+        x: Math.cos(ang) * 250 + 400,
+        y: Math.sin(ang) * 250 + 300
+      };
+    });
+
+    const termNodes = ENTRIES.map((e, i) => {
+      const isParent = !isChildSet.has(e.id);
+      const catIdx = CATS.findIndex(c => c.id === e.category);
+      const ang = (catIdx >= 0 ? catIdx : 0) / CATS.length * 2 * Math.PI;
+      return {
+        id: e.id,
+        term: e.term,
+        term_ko: e.term_ko,
+        category: e.category,
+        conceptType: e.conceptType,
+        status: e.status,
+        degree: nodeDegrees.get(e.id) || 0,
+        isParentTerm: isParent,
+        isChildTerm: !isParent,
+        x: Math.cos(ang) * 250 + 400 + (Math.random() - 0.5) * 20,
+        y: Math.sin(ang) * 250 + 300 + (Math.random() - 0.5) * 20
+      };
+    });
+
+    allNodes = [...categoryNodes, ...termNodes];
+
+    // Initialize links
+    const catToParentLinks = [];
+    const parentToChildLinks = [];
+    const relationalLinks = [];
+    const seenLinks = new Set();
+
+    termNodes.forEach(n => {
+      if (n.isParentTerm) {
+        catToParentLinks.push({
+          source: 'cat-' + n.category,
+          target: n.id,
+          type: 'cat-to-parent',
+          category: n.category
+        });
+      }
+    });
+
+    termNodes.forEach(n => {
+      if (n.isChildTerm) {
+        const parents = parentsOfChild.get(n.id) || new Set();
+        parents.forEach(pId => {
+          parentToChildLinks.push({
+            source: pId,
+            target: n.id,
+            type: 'parent-to-child',
+            category: n.category
+          });
+        });
+      }
+    });
+
+    ENTRIES.forEach(e => {
+      if (e.relationships) {
+        e.relationships.forEach(r => {
+          if (r.targetId && byId.has(r.targetId)) {
+            const target = byId.get(r.targetId);
+            const isParentChildSameCat = (target.category === e.category) && 
+              ((r.type === 'parent' || r.type === 'broader' || r.type === 'child' || r.type === 'narrower'));
+            if (!isParentChildSameCat) {
+              const k = [e.id, r.targetId].sort().join('|');
+              if (!seenLinks.has(k)) {
+                seenLinks.add(k);
+                relationalLinks.push({
+                  source: e.id,
+                  target: r.targetId,
+                  type: 'relational'
+                });
+              }
+            }
+          }
+        });
+      }
+      if (e.distinctions) {
+        e.distinctions.forEach(d => {
+          if (d.targetId && byId.has(d.targetId)) {
+            const k = [e.id, d.targetId].sort().join('|');
+            if (!seenLinks.has(k)) {
+              seenLinks.add(k);
+              relationalLinks.push({
+                source: e.id,
+                target: d.targetId,
+                type: 'relational'
+              });
+            }
+          }
+        });
+      }
+    });
+
+    graphLinks = [...catToParentLinks, ...parentToChildLinks, ...relationalLinks];
+
+    // Build nbr map
+    nbr.clear();
+    graphLinks.forEach(l => {
+      const sId = typeof l.source === 'object' ? l.source.id : l.source;
+      const tId = typeof l.target === 'object' ? l.target.id : l.target;
+      if (!nbr.has(sId)) nbr.set(sId, new Set());
+      if (!nbr.has(tId)) nbr.set(tId, new Set());
+      nbr.get(sId).add(tId);
+      nbr.get(tId).add(sId);
+    });
+
+    // Initialize D3 force simulation
+    const w = 800;
+    const h = 600;
+    simulation = d3.forceSimulation()
+      .force("link", d3.forceLink().id(d => d.id)
+        .distance(d => {
+          if (d.type === 'cat-to-parent') return 140;
+          if (d.type === 'parent-to-child') return 70;
+          return 100;
+        })
+        .strength(0.8)
+      )
+      .force("charge", d3.forceManyBody().strength(d => {
+        if (d.isCategoryNode) return -450;
+        if (d.isParentTerm) return -200;
+        return -80;
+      }))
+      .force("center", d3.forceCenter(w / 2, h / 2))
+      .force("collide", d3.forceCollide(d => {
+        if (d.isCategoryNode) return 45;
+        if (d.isParentTerm) return 30;
+        return 20;
+      }))
+      .force("category-attract", alpha => {
+        categoryNodes.forEach((node, i) => {
+          const ang = i / CATS.length * 2 * Math.PI;
+          const targetX = Math.cos(ang) * 250 + w / 2;
+          const targetY = Math.sin(ang) * 250 + h / 2;
+          node.vx += (targetX - node.x) * 0.1 * alpha;
+          node.vy += (targetY - node.y) * 0.1 * alpha;
+        });
+      })
+      .on("tick", ticked);
+
+    // Click trigger function globally exposed
+    window.kgClickNode = function(nodeId) {
+      const d = allNodes.find(n => n.id === nodeId);
+      if (!d) return;
+
+      if (d.isCategoryNode) {
+        // Toggle: collapse if already expanded (including all child terms)
+        if (expandedNodeIds.has(d.id)) {
+          expandedNodeIds.delete(d.id);
+          // Collapse all child term expansions within this category
+          allNodes.forEach(n => {
+            if (n.category === d.category && n.isParentTerm) {
+              expandedNodeIds.delete(n.id);
+            }
+          });
+        } else {
+          expandedNodeIds.add(d.id);
+        }
+        updateGraphDataset();
+      } else if (d.isParentTerm) {
+        if (hasChildrenSet.has(d.id)) {
+          // This parent has child terms: toggle expand/collapse children
+          if (expandedNodeIds.has(d.id)) {
+            expandedNodeIds.delete(d.id);
+          } else {
+            expandedNodeIds.add(d.id);
+          }
+          updateGraphDataset();
+          // Also open drawer for this term
+          updateDrawer(d.id);
+        } else {
+          // Leaf parent (no children): just open the drawer
+          updateDrawer(d.id);
+        }
+      } else {
+        // Child term: open the drawer
+        updateDrawer(d.id);
+      }
+    };
+
+    // Initial dataset bind
+    updateLegendUI();
+    updateGraphDataset();
+  }
+
+  function recalculateVisibility() {
+    const visibleNodes = [];
     const visibleNodeIds = new Set();
-    const expandedNodeIds = new Set();
-    if (rootNode) {
-      rootNode.x = 0;
-      rootNode.y = 0;
-      rootNode.vx = 0;
-      rootNode.vy = 0;
-      visibleNodeIds.add(rootNode.id);
-    }
-    window.kgVisibleNodeIds = visibleNodeIds;
 
-    const legend=CATS.map(c=>`<span class="legend-item" data-cat="${c.id}"><span class="ld" style="background:${c.color}"></span>${esc(catName(c))}</span>`).join('');
-    main.innerHTML=`<div class="crumbs"><a href="#/">${esc(t('home2'))}</a> › ${esc(t('gTitle'))}</div>
-      <div class="graph-head"><div class="sec-title" style="margin:0">🕸 ${esc(t('gTitle'))}</div><div style="color:var(--faint);font-size:.82rem">${nodes.length} ${esc(t('gNodes'))} · ${edges.length} ${esc(t('gEdges'))}</div></div>
-      <p style="color:var(--muted);font-size:.86rem;margin:0 0 6px">${t('gHint')}</p><div class="kg-legend" id="kgLegend">${legend}</div>
-      <div class="graph-wrap"><canvas id="kg"></canvas><div class="kg-tip" id="kgTip"></div></div>`;
-    renderSidebar(null);
-    const wrap=$('.graph-wrap'), canvas=$('#kg'), ctx=canvas.getContext('2d'), tip=$('#kgTip');
-    const active=new Set(CATS.map(c=>c.id)); let W=0,H=0,dpr=Math.min(window.devicePixelRatio||1,2);
-    function resize(){ W=wrap.clientWidth; H=Math.max(440,Math.min(720,Math.round(window.innerHeight*0.7))); canvas.style.height=H+'px'; canvas.width=W*dpr; canvas.height=H*dpr; ctx.setTransform(dpr,0,0,dpr,0,0); }
-    resize(); const cx=()=>W/2, cy=()=>H/2; let hover=null, drag=null, dragMoved=false;
-    const isActive=n=>visibleNodeIds.has(n.id) && active.has(n.cat); const nodeR=n=>4+Math.sqrt(n.deg)*1.7;
-    function step(){ const A=nodes.filter(isActive);
-      for(let i=0;i<A.length;i++){ const a=A[i]; for(let j=i+1;j<A.length;j++){ const b=A[j];
-        let dx=a.x-b.x,dy=a.y-b.y,d2=dx*dx+dy*dy+0.01; const f=1500/d2; const d=Math.sqrt(d2); dx/=d; dy/=d; a.vx+=dx*f; a.vy+=dy*f; b.vx-=dx*f; b.vy-=dy*f; } }
-      edges.forEach(ed=>{ const a=nById.get(ed.a),b=nById.get(ed.b); if(!isActive(a)||!isActive(b)) return;
-        let dx=b.x-a.x,dy=b.y-a.y,d=Math.sqrt(dx*dx+dy*dy)+0.01; const f=(d-82)*0.012; dx/=d; dy/=d; a.vx+=dx*f; a.vy+=dy*f; b.vx-=dx*f; b.vy-=dy*f; });
-      A.forEach(n=>{ n.vx+=-n.x*0.0026; n.vy+=-n.y*0.0026; if(n===drag) return; n.vx*=0.86; n.vy*=0.86; n.x+=n.vx; n.y+=n.vy;
-        const m=24,rx=W/2-m,ry=H/2-m; if(n.x<-rx){n.x=-rx;n.vx*=-.4} if(n.x>rx){n.x=rx;n.vx*=-.4} if(n.y<-ry){n.y=-ry;n.vy*=-.4} if(n.y>ry){n.y=ry;n.vy*=-.4} }); }
-    const nbr=new Map(); edges.forEach(ed=>{ (nbr.get(ed.a)||nbr.set(ed.a,new Set()).get(ed.a)).add(ed.b); (nbr.get(ed.b)||nbr.set(ed.b,new Set()).get(ed.b)).add(ed.a); });
-
-    const hasHiddenNeighbors = (nodeId) => {
-      const neighbors = nbr.get(nodeId);
-      if (!neighbors) return false;
-      for (const neighborId of neighbors) {
-        if (!visibleNodeIds.has(neighborId)) return true;
+    const isNodeVisible = d => {
+      if (d.isCategoryNode) {
+        return activeCategories.has(d.category);
+      }
+      if (d.isParentTerm) {
+        const catNodeId = 'cat-' + d.category;
+        return activeCategories.has(d.category) && expandedNodeIds.has(catNodeId);
+      }
+      if (d.isChildTerm) {
+        const parents = parentsOfChild.get(d.id) || new Set();
+        const hasVisibleExpandedParent = Array.from(parents).some(pId => {
+          const pNode = byId.get(pId);
+          return pNode && activeCategories.has(pNode.category) && expandedNodeIds.has(pNode.id);
+        });
+        return hasVisibleExpandedParent;
       }
       return false;
     };
 
-    function getNeighbors1and2(nodeId) {
-      const neighbors = new Set();
-      const d1 = nbr.get(nodeId);
-      if (d1) {
-        d1.forEach(id1 => {
-          neighbors.add(id1);
-          const d2 = nbr.get(id1);
-          if (d2) {
-            d2.forEach(id2 => {
-              neighbors.add(id2);
-            });
-          }
-        });
+    allNodes.forEach(n => {
+      if (isNodeVisible(n)) {
+        visibleNodes.push(n);
+        visibleNodeIds.add(n.id);
       }
-      return neighbors;
-    }
+    });
 
-    function draw(){ ctx.clearRect(0,0,W,H); const ox=cx(),oy=cy(); const dark=document.documentElement.dataset.theme==='dark';
-      edges.forEach(ed=>{ const a=nById.get(ed.a),b=nById.get(ed.b); if(!isActive(a)||!isActive(b)) return; const hot=hover&&(ed.a===hover.id||ed.b===hover.id);
-        ctx.beginPath(); ctx.moveTo(a.x+ox,a.y+oy); ctx.lineTo(b.x+ox,b.y+oy);
-        if(ed.kind==='dist'){ ctx.setLineDash([4,4]); ctx.strokeStyle=hot?'#ff2d8e':(dark?'rgba(255,95,166,.5)':'rgba(217,115,13,.4)'); } else { ctx.setLineDash([]); ctx.strokeStyle=hot?(dark?'rgba(139,107,255,.9)':'rgba(79,43,255,.7)'):(dark?'rgba(120,140,180,.16)':'rgba(80,60,140,.14)'); }
-        ctx.lineWidth=hot?1.8:1; ctx.stroke(); }); ctx.setLineDash([]);
-      nodes.forEach(n=>{ if(!isActive(n)) return; const dim=hover&&n!==hover&&!(nbr.get(hover.id)&&nbr.get(hover.id).has(n.id));
-        ctx.globalAlpha=dim?0.2:1;
-        if(hasHiddenNeighbors(n.id)){
-          ctx.beginPath(); ctx.arc(n.x+ox,n.y+oy,nodeR(n)+4,0,2*Math.PI);
-          ctx.strokeStyle=catColor(n.cat); ctx.lineWidth=1.5; ctx.setLineDash([3,3]); ctx.stroke(); ctx.setLineDash([]);
-        }
-        ctx.beginPath(); ctx.arc(n.x+ox,n.y+oy,nodeR(n),0,7); ctx.fillStyle=catColor(n.cat); ctx.fill();
-        if(n===hover){ ctx.lineWidth=2.5; ctx.strokeStyle=dark?'#fff':'#0b1020'; ctx.stroke(); } ctx.globalAlpha=1; });
-      ctx.font='600 11px '+getComputedStyle(document.body).fontFamily; ctx.textAlign='center';
-      const showLabel=n=> (hover&&(n===hover||(nbr.get(hover.id)&&nbr.get(hover.id).has(n.id)))) || (!hover&&n.deg>=5);
-      nodes.forEach(n=>{ if(!isActive(n)||!showLabel(n)) return; const x=n.x+ox,y=n.y+oy-nodeR(n)-5; const lab=n.e.term;
-        ctx.fillStyle=dark?'rgba(15,19,34,.9)':'rgba(255,255,255,.9)'; const w=ctx.measureText(lab).width+8; ctx.fillRect(x-w/2,y-12,w,15);
-        ctx.fillStyle=dark?'#f3f5ff':'#0b1020'; ctx.fillText(lab,x,y); }); }
-    function loop(){ step(); draw(); kgRAF=requestAnimationFrame(loop); } loop();
-    function pick(mx,my){ const ox=cx(),oy=cy(); let best=null,bd=1e9; nodes.forEach(n=>{ if(!isActive(n)) return; const dx=mx-(n.x+ox),dy=my-(n.y+oy),d=dx*dx+dy*dy; const r=nodeR(n)+6; if(d<r*r&&d<bd){bd=d;best=n;} }); return best; }
-    function rel(ev){ const r=canvas.getBoundingClientRect(); const cl=ev.touches?ev.touches[0]:ev; return {x:cl.clientX-r.left,y:cl.clientY-r.top}; }
-    function onMove(ev){ const p=rel(ev); if(drag){ drag.x=p.x-cx(); drag.y=p.y-cy(); drag.vx=drag.vy=0; dragMoved=true; ev.preventDefault&&ev.preventDefault(); return; }
-      const n=pick(p.x,p.y); hover=n; if(n){ const nm=LANG==='ko'&&n.e.term_ko&&n.e.term_ko!==n.e.term?`${n.e.term} · ${n.e.term_ko}`:n.e.term;
-        tip.innerHTML=`${esc(nm)} <span style="opacity:.7">— ${esc(catName(catById.get(n.cat)||{}))}</span>`; tip.style.left=(n.x+cx())+'px'; tip.style.top=(n.y+cy())+'px'; tip.style.opacity=1; canvas.style.cursor='pointer'; }
-      else { tip.style.opacity=0; canvas.style.cursor='grab'; } }
-    function onDown(ev){ const p=rel(ev); drag=pick(p.x,p.y); dragMoved=false; }
-    function onUp(){
-      if(drag&&!dragMoved){
-        const clickedNodeId=drag.id;
-        if(hasHiddenNeighbors(clickedNodeId)){
-          const neighbors=getNeighbors1and2(clickedNodeId);
-          neighbors.forEach(id=>{
-            if(!visibleNodeIds.has(id)){
-              const n=nById.get(id);
-              if(n){
-                const dx=(Math.random()-0.5)*10;
-                const dy=(Math.random()-0.5)*10;
-                n.x=drag.x+dx; n.y=drag.y+dy;
-                n.vx=(Math.random()-0.5)*2; n.vy=(Math.random()-0.5)*2;
+    window.kgVisibleNodeIds = visibleNodeIds;
+    return { visibleNodes, visibleNodeIds };
+  }
+
+  function updateLegendUI() {
+    document.querySelectorAll(".legend-item").forEach(el => {
+      const catId = el.dataset.cat;
+      if (activeCategories.has(catId)) {
+        el.classList.remove("off");
+      } else {
+        el.classList.add("off");
+      }
+    });
+  }
+
+  function updateGraphDataset() {
+    const { visibleNodes: filteredNodes, visibleNodeIds: filteredNodeIds } = recalculateVisibility();
+
+    const filteredLinks = graphLinks.map(l => {
+      const sId = typeof l.source === 'object' ? l.source.id : l.source;
+      const tId = typeof l.target === 'object' ? l.target.id : l.target;
+      return { source: sId, target: tId, type: l.type, category: l.category };
+    }).filter(l => filteredNodeIds.has(l.source) && filteredNodeIds.has(l.target));
+
+    simulation.nodes(filteredNodes);
+    simulation.force("link").links(filteredLinks);
+    simulation.alpha(0.3).restart();
+
+    linkSelection = svg.select(".links-group")
+      .selectAll("line")
+      .data(filteredLinks, d => `${typeof d.source === 'object' ? d.source.id : d.source}-${typeof d.target === 'object' ? d.target.id : d.target}`)
+      .join(
+        enter => enter.append("line")
+          .attr("class", d => {
+            if (d.type === 'cat-to-parent') return 'link cat-to-parent';
+            if (d.type === 'parent-to-child') return 'link parent-to-child';
+            return 'link relational';
+          })
+          .style("stroke", d => {
+            if (d.type === 'cat-to-parent' || d.type === 'parent-to-child') {
+              return catColor(d.category);
+            }
+            return '#888';
+          }),
+        update => update
+          .attr("class", d => {
+            if (d.type === 'cat-to-parent') return 'link cat-to-parent';
+            if (d.type === 'parent-to-child') return 'link parent-to-child';
+            return 'link relational';
+          })
+          .style("stroke", d => {
+            if (d.type === 'cat-to-parent' || d.type === 'parent-to-child') {
+              return catColor(d.category);
+            }
+            return '#888';
+          }),
+        exit => exit.remove()
+      );
+
+    nodeSelection = svg.select(".nodes-group")
+      .selectAll(".node-group")
+      .data(filteredNodes, d => d.id)
+      .join(
+        enter => {
+          const g = enter.append("g")
+            .attr("class", d => {
+              let cls = "node-group";
+              if (d.isCategoryNode) cls += " category-node";
+              if (d.isParentTerm) cls += " parent-term-node";
+              if (d.isChildTerm) cls += " child-term-node";
+              return cls;
+            })
+            .attr("tabindex", "0")
+            .attr("role", "button")
+            .attr("aria-label", d => d.term)
+            .each(d => {
+              const parent = findParentNode(d);
+              if (parent) {
+                d.x = parent.x;
+                d.y = parent.y;
+                d.vx = 0;
+                d.vy = 0;
               }
-              visibleNodeIds.add(id);
+            })
+            .attr("transform", d => `translate(${d.x},${d.y})`)
+            .style("opacity", 0)
+            .call(d3.drag()
+              .on("start", dragstarted)
+              .on("drag", dragged)
+              .on("end", dragended)
+            );
+
+          g.append("circle")
+            .attr("r", d => d.isCategoryNode ? 20 : (d.isParentTerm ? 14 : 8))
+            .attr("fill", d => d.isCategoryNode ? catColor(d.category) : (d.isParentTerm ? "#ffffff" : catColor(d.category)))
+            .attr("fill-opacity", d => d.isChildTerm ? 0.6 : 1.0)
+            .attr("stroke", d => d.isCategoryNode ? "#800020" : catColor(d.category))
+            .attr("stroke-width", d => d.isCategoryNode ? 3 : (d.isParentTerm ? 3 : 1));
+
+          // Draw an outer ring for parent nodes that have children
+          g.filter(d => d.isParentTerm && hasChildrenSet.has(d.id))
+            .append("circle")
+            .attr("class", "outer-ring")
+            .attr("r", 18)
+            .attr("fill", "none")
+            .attr("stroke", d => catColor(d.category))
+            .attr("stroke-width", 1.2)
+            .attr("stroke-dasharray", "3,3");
+
+          g.append("text")
+            .attr("dy", d => -(d.isCategoryNode ? 24 : (d.isParentTerm ? 18 : 12)))
+            .style("font-weight", d => d.isCategoryNode ? "700" : (d.isParentTerm ? "600" : "400"))
+            .style("text-transform", d => d.isCategoryNode ? "uppercase" : "none")
+            .text(d => {
+              let txt = LANG === 'ko' && d.term_ko ? d.term_ko : d.term;
+              return d.isCategoryNode ? txt.toUpperCase() : txt;
+            });
+
+          g.on("click", (event, d) => {
+            if (window.kgClickNode) window.kgClickNode(d.id);
+          });
+
+          g.on("keydown", (event, d) => {
+            if (event.key === 'Enter' || event.key === ' ') {
+              event.preventDefault();
+              if (window.kgClickNode) window.kgClickNode(d.id);
             }
           });
-          expandedNodeIds.add(clickedNodeId);
-        } else {
-          location.hash='#/term/'+clickedNodeId;
+
+          g.on("mouseover", (event, d) => {
+            const tip = d3.select("#kgTip");
+            if (d.isCategoryNode) {
+              const c = catById.get(d.category) || {};
+              const nameStr = catName(c);
+              const descStr = LANG === 'ko' ? (c.desc || c.desc_en) : c.desc_en;
+              tip.html(`<b>${esc(nameStr.toUpperCase())}</b> <span style="opacity:.7">— ${esc(descStr)}</span>`);
+              tip.style("opacity", 1);
+            } else {
+              const nm = LANG === 'ko' && d.term_ko && d.term_ko !== d.term ? `${d.term} · ${d.term_ko}` : d.term;
+              tip.html(`${esc(nm)} <span style="opacity:.7">— ${esc(catName(catById.get(d.category) || {}))}</span>`);
+              tip.style("opacity", 1);
+            }
+            
+            d3.selectAll(".node-group").classed("dimmed", n => n.id !== d.id && !isNeighbor(d.id, n.id));
+            d3.selectAll(".link").classed("dimmed", l => {
+              const sId = typeof l.source === 'object' ? l.source.id : l.source;
+              const tId = typeof l.target === 'object' ? l.target.id : l.target;
+              return sId !== d.id && tId !== d.id;
+            });
+          });
+
+          g.on("mousemove", (event) => {
+            const container = document.querySelector(".graph-container");
+            if (!container) return;
+            const rect = container.getBoundingClientRect();
+            const tip = d3.select("#kgTip");
+            tip.style("left", (event.clientX - rect.left) + "px")
+               .style("top", (event.clientY - rect.top - 28) + "px");
+          });
+
+          g.on("mouseout", () => {
+            d3.select("#kgTip").style("opacity", 0);
+            d3.selectAll(".node-group").classed("dimmed", false);
+            d3.selectAll(".link").classed("dimmed", false);
+          });
+
+          g.transition().duration(400).style("opacity", 1);
+          return g;
+        },
+        update => {
+          update.select("circle")
+            .attr("fill", d => d.isCategoryNode ? catColor(d.category) : (d.isParentTerm ? "#ffffff" : catColor(d.category)))
+            .attr("fill-opacity", d => d.isChildTerm ? 0.6 : 1.0)
+            .attr("stroke", d => d.isCategoryNode ? "#800020" : catColor(d.category))
+            .attr("stroke-width", d => d.isCategoryNode ? 3 : (d.isParentTerm ? 3 : 1));
+          
+          update.select("text")
+            .attr("dy", d => -(d.isCategoryNode ? 24 : (d.isParentTerm ? 18 : 12)))
+            .style("font-weight", d => d.isCategoryNode ? "700" : (d.isParentTerm ? "600" : "400"))
+            .style("text-transform", d => d.isCategoryNode ? "uppercase" : "none")
+            .text(d => {
+              let txt = LANG === 'ko' && d.term_ko ? d.term_ko : d.term;
+              return d.isCategoryNode ? txt.toUpperCase() : txt;
+            });
+          return update;
+        },
+        exit => {
+          exit.transition().duration(400)
+            .style("opacity", 0)
+            .attr("transform", d => {
+              const parent = findParentNode(d);
+              return `translate(${parent ? parent.x : d.x}, ${parent ? parent.y : d.y})`;
+            })
+            .remove();
         }
-      }
-      drag=null;
+      );
+  }
+
+  function dragstarted(event, d) {
+    if (!event.active) simulation.alphaTarget(0.3).restart();
+    d.fx = d.x;
+    d.fy = d.y;
+  }
+
+  function dragged(event, d) {
+    d.fx = event.x;
+    d.fy = event.y;
+  }
+
+  function dragended(event, d) {
+    if (!event.active) simulation.alphaTarget(0);
+    d.fx = null;
+    d.fy = null;
+  }
+
+  function ticked() {
+    if (linkSelection) {
+      linkSelection
+        .attr("x1", d => d.source.x)
+        .attr("y1", d => d.source.y)
+        .attr("x2", d => d.target.x)
+        .attr("y2", d => d.target.y);
     }
-    canvas.addEventListener('mousemove',onMove); canvas.addEventListener('mousedown',onDown); window.addEventListener('mouseup',onUp);
-    canvas.addEventListener('touchstart',onDown,{passive:true}); canvas.addEventListener('touchmove',onMove,{passive:false}); canvas.addEventListener('touchend',onUp);
-    $('#kgLegend').addEventListener('click',e=>{ const el=e.target.closest('.legend-item'); if(!el) return; const id=el.dataset.cat; if(active.has(id)){active.delete(id);el.classList.add('off');} else {active.add(id);el.classList.remove('off');} });
-    window.addEventListener('resize',resize);
+    if (nodeSelection) {
+      nodeSelection
+        .attr("transform", d => `translate(${d.x},${d.y})`);
+    }
+  }
+
+  function zoomFit() {
+    if (!svg) return;
+    const parent = svg.node();
+    const w = parent.clientWidth || 800;
+    const h = parent.clientHeight || 600;
+
+    const activeNodes = allNodes.filter(n => window.kgVisibleNodeIds && window.kgVisibleNodeIds.has(n.id));
+    if (activeNodes.length === 0) return;
+
+    let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
+    activeNodes.forEach(n => {
+      if (n.x < minX) minX = n.x;
+      if (n.x > maxX) maxX = n.x;
+      if (n.y < minY) minY = n.y;
+      if (n.y > maxY) maxY = n.y;
+    });
+
+    const width = maxX - minX + 80;
+    const height = maxY - minY + 80;
+    const midX = (minX + maxX) / 2;
+    const midY = (minY + maxY) / 2;
+
+    const scale = Math.min(4.0, Math.max(0.15, 0.85 / Math.max(width / w, height / h)));
+    const tx = w / 2 - scale * midX;
+    const ty = h / 2 - scale * midY;
+
+    svg.transition().duration(750).call(
+      zoom.transform,
+      d3.zoomIdentity.translate(tx, ty).scale(scale)
+    );
+  }
+
+  function centerOnNode(id) {
+    const targetNode = allNodes.find(n => n.id === id);
+    if (targetNode) {
+      if (!activeCategories.has(targetNode.category)) {
+        activeCategories.add(targetNode.category);
+        updateLegendUI();
+      }
+      ensureTermVisible(id);
+      updateGraphDataset();
+
+      const parent = svg.node();
+      const w = parent.clientWidth || 800;
+      const h = parent.clientHeight || 600;
+      const scale = 1.6;
+      const tx = w / 2 - targetNode.x * scale;
+      const ty = h / 2 - targetNode.y * scale;
+
+      svg.transition().duration(750).call(
+        zoom.transform,
+        d3.zoomIdentity.translate(tx, ty).scale(scale)
+      );
+
+      d3.selectAll(".node-group").classed("focused", d => d.id === id);
+    }
+  }
+
+  function closeDrawer() {
+    const drawer = document.getElementById("drawer");
+    if (drawer) {
+      drawer.classList.remove("open");
+    }
+    activeTermId = null;
+    d3.selectAll(".node-group").classed("focused", false);
+  }
+
+  function updateDrawer(id) {
+    const e = byId.get(id);
+    if (!e) {
+      closeDrawer();
+      return;
+    }
+
+    activeTermId = id;
+    const drawer = document.getElementById("drawer");
+    drawer.classList.add("open");
+
+    const c = catById.get(e.category) || { title: e.category };
+
+    document.getElementById("drawerTitle").textContent = e.term;
+    const subEl = document.getElementById("drawerSub");
+    if (LANG === 'ko' && e.term_ko && e.term_ko !== e.term) {
+      subEl.style.display = "block";
+      subEl.textContent = e.term_ko;
+    } else {
+      subEl.style.display = "none";
+    }
+
+    document.getElementById("drawerLangBtn").textContent = LANG === 'ko' ? 'EN' : 'KO';
+
+    const badgesEl = document.getElementById("drawerBadges");
+    let badgeHtml = `<span class="badge cat" style="color:${c.color}; border-color:${c.color};" onclick="location.hash='#/category/${e.category}'">${esc(catName(c))}</span>`;
+    if (e.conceptType) {
+      badgeHtml += ` <span class="badge">${esc((t('CT')[e.conceptType]) || e.conceptType)}</span>`;
+    }
+    badgeHtml += ` ${statusBadge(e.status)}`;
+    if (e.standardBody) {
+      badgeHtml += ` <span class="badge">${esc(e.standardBody)}</span>`;
+    }
+    badgesEl.innerHTML = badgeHtml;
+
+    const bodyEl = document.getElementById("drawerBody");
+    let bodyHtml = `
+      <div class="drawer-section">
+        <p class="lead" style="font-size:1.1rem; line-height:1.5; color:var(--text);">${esc(Lf(e, 'definition'))}</p>
+        ${Lf(e, 'longDef') ? `<p style="font-size:0.95rem; line-height:1.5; color:var(--text); margin-top:12px;">${esc(Lf(e, 'longDef'))}</p>` : ''}
+      </div>
+    `;
+
+    if (e.aliases && e.aliases.length) {
+      bodyHtml += `
+        <div class="drawer-section">
+          <h3>${esc(t('fAlias'))}</h3>
+          <div class="chips">${e.aliases.map(a => `<span class="chip">${esc(a)}</span>`).join('')}</div>
+        </div>
+      `;
+    }
+
+    if (e.providerTerms && e.providerTerms.length) {
+      bodyHtml += `
+        <div class="drawer-section">
+          <h3>${esc(t('fProv'))}</h3>
+          <table class="pt">
+            <thead>
+              <tr>
+                <th>${esc(t('thProv'))}</th>
+                <th>${esc(t('thTerm'))}</th>
+                <th>${esc(t('thRel'))}</th>
+                <th>${esc(t('thCtx'))}</th>
+              </tr>
+            </thead>
+            <tbody>
+      `;
+      e.providerTerms.forEach(p => {
+        const ctx = (LANG === 'ko' && p.context_ko) || p.context || '';
+        bodyHtml += `
+          <tr>
+            <td class="prov">${esc(p.provider)}</td>
+            <td><code>${esc(p.term)}</code></td>
+            <td>${esc((t('PR')[p.relationship]) || p.relationship || '')}</td>
+            <td>${esc(ctx)}</td>
+          </tr>
+        `;
+      });
+      bodyHtml += `
+            </tbody>
+          </table>
+        </div>
+      `;
+    }
+
+    if (e.relationships && e.relationships.length) {
+      const RLAB = t('RLAB');
+      const groups = {};
+      e.relationships.forEach(r => {
+        (groups[r.type] = groups[r.type] || []).push(r);
+      });
+
+      bodyHtml += `
+        <div class="drawer-section">
+          <h3>${esc(t('fRel'))}</h3>
+      `;
+      Object.keys(groups).forEach(ty => {
+        bodyHtml += `
+          <div class="rel-group">
+            <span class="rl" style="font-size:0.65rem; color:var(--faint); font-weight:700; text-transform:uppercase; display:block; margin-bottom:2px;">${esc(RLAB[ty] || ty)}</span>
+            ${groups[ty].map(r => linkTerm(r.targetId, r.targetTerm)).join(' ')}
+          </div>
+        `;
+      });
+      bodyHtml += `</div>`;
+    }
+
+    if (e.distinctions && e.distinctions.length) {
+      bodyHtml += `
+        <div class="drawer-section">
+          <h3>${esc(t('fDist'))}</h3>
+      `;
+      e.distinctions.forEach(d => {
+        const ex = (LANG === 'ko' && d.explanation_ko) || d.explanation;
+        bodyHtml += `
+          <div class="dist" style="padding:8px 0; border-top:1px solid var(--rule);">
+            <b>${linkTerm(d.targetId, d.targetTerm)}</b>
+            <div style="margin-top:4px; font-size:0.85rem; color:var(--muted);">${esc(ex)}</div>
+          </div>
+        `;
+      });
+      bodyHtml += `</div>`;
+    }
+
+    if (Lf(e, 'notes')) {
+      bodyHtml += `
+        <div class="drawer-section">
+          <h3>${esc(t('fNotes'))}</h3>
+          <div class="notes" style="background:var(--surface-2); border-left:3px solid var(--accent); padding:10px 12px; font-size:0.92rem; color:var(--muted);">${esc(Lf(e, 'notes'))}</div>
+        </div>
+      `;
+    }
+
+    if (e.sources && e.sources.length) {
+      bodyHtml += `
+        <div class="drawer-section">
+          <h3>${esc(t('fSrc'))}</h3>
+          <ul class="src" style="margin:0; padding-left:16px; font-size:0.85rem; color:var(--muted);">
+      `;
+      e.sources.forEach(s => {
+        const bits = [s.org, s.name, s.version, s.section].filter(Boolean).map(esc).join(' · ');
+        bodyHtml += `<li>${s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${bits}</a>` : bits}</li>`;
+      });
+      bodyHtml += `
+          </ul>
+        </div>
+      `;
+    }
+
+    bodyEl.innerHTML = bodyHtml;
+
+    const footerEl = document.getElementById("drawerFooter");
+    footerEl.innerHTML = `
+      ${esc(t('mId'))} <code>${esc(e.id)}</code> · ${esc(t('mCat'))} ${esc(catName(c))}${e.lastReviewed ? ` · ${esc(t('mRev'))} ${esc(e.lastReviewed)}` : ''}
+    `;
+  }
+
+  function showGraphDashboard(show) {
+    const gd = document.getElementById("graph-dashboard");
+    const mainEl = document.getElementById("main");
+    if (show) {
+      gd.style.display = "flex";
+      mainEl.style.display = "none";
+    } else {
+      gd.style.display = "none";
+      mainEl.style.display = "block";
+      closeDrawer();
+    }
+  }
+
+  function handleSearchHighlight(query) {
+    const q = query.trim().toLowerCase();
+    if (!q) {
+      d3.selectAll(".node-group").classed("dimmed", false).classed("highlighted", false);
+      d3.selectAll(".link").classed("dimmed", false);
+      return;
+    }
+
+    const results = search(q);
+    const matchedIds = new Set(results.map(r => r.e.id));
+
+    d3.selectAll(".node-group")
+      .classed("dimmed", d => matchedIds.size > 0 && !matchedIds.has(d.id))
+      .classed("highlighted", d => matchedIds.has(d.id));
+
+    d3.selectAll(".link")
+      .classed("dimmed", d => {
+        const sId = typeof d.source === 'object' ? d.source.id : d.source;
+        const tId = typeof d.target === 'object' ? d.target.id : d.target;
+        return matchedIds.size > 0 && (!matchedIds.has(sId) || !matchedIds.has(tId));
+      });
+  }
+
+  function renderGraphDashboard(focusTermId, filterCatId) {
+    renderSidebar(filterCatId || null);
+    initGraph();
+
+    if (filterCatId) {
+      activeCategories.clear();
+      activeCategories.add(filterCatId);
+      updateLegendUI();
+      updateGraphDataset();
+      closeDrawer();
+      setTimeout(zoomFit, 50);
+    } else if (focusTermId) {
+      activeTermId = focusTermId;
+      updateDrawer(focusTermId);
+      setTimeout(() => centerOnNode(focusTermId), 50);
+    } else {
+      activeTermId = null;
+      closeDrawer();
+      handleSearchHighlight('');
+      if (activeCategories.size < CATS.length) {
+        CATS.forEach(c => activeCategories.add(c.id));
+        updateLegendUI();
+        updateGraphDataset();
+      }
+      setTimeout(zoomFit, 50);
+    }
   }
 
   /* router */
   function dispatch(){ const hash=location.hash||'#/';
-    if(hash==='#/index'||hash.startsWith('#/index')){ document.title='Index — Travel Gaia'; if($('#q'))$('#q').value=''; return renderIndex(); }
-    if(hash==='#/graph'||hash.startsWith('#/graph?')){ document.title='Knowledge Graph — Travel Gaia'; if($('#q'))$('#q').value=''; return renderGraph(); }
-    if(hash==='#/classroom'||hash.startsWith('#/classroom')){ document.title='Classroom — Travel Gaia'; if($('#q'))$('#q').value=''; return renderClassroom(); }
+    if(hash==='#/index'||hash.startsWith('#/index')){ showGraphDashboard(false); document.title='Index — Travel Gaia'; if($('#q'))$('#q').value=''; return renderIndex(); }
+    if(hash==='#/classroom'||hash.startsWith('#/classroom')){ showGraphDashboard(false); document.title='Classroom — Travel Gaia'; if($('#q'))$('#q').value=''; return renderClassroom(); }
+    if(hash==='#/graph'||hash.startsWith('#/graph?')){ showGraphDashboard(true); document.title='Knowledge Graph — Travel Gaia'; if($('#q'))$('#q').value=''; return renderGraphDashboard(); }
     const m=hash.match(/^#\/(term|category|q)\/(.+)$/);
-    if(!m||hash==='#/'){ document.title='Travel Gaia — 여행 산업 용어 백과사전'; if($('#q'))$('#q').value=''; return renderHome(); }
+    if(!m||hash==='#/'){ showGraphDashboard(true); document.title='Travel Gaia — 여행 산업 용어 백과사전'; if($('#q'))$('#q').value=''; return renderGraphDashboard(); }
     const kind=m[1], dec=decodeURIComponent(m[2]);
-    if(kind==='term') return renderTerm(dec); if(kind==='category') return renderCategory(dec);
-    if(kind==='q'){ if($('#q'))$('#q').value=dec; return renderSearch(dec); } renderHome(); }
+    if(kind==='term') { showGraphDashboard(true); return renderGraphDashboard(dec); }
+    if(kind==='category') { showGraphDashboard(true); return renderGraphDashboard(null, dec); }
+    if(kind==='q'){
+      if($('#q'))$('#q').value=dec;
+      showGraphDashboard(true);
+      renderGraphDashboard();
+      handleSearchHighlight(dec);
+      return;
+    }
+    showGraphDashboard(true);
+    renderGraphDashboard();
+  }
   let _routed=false;
   function route(){ stopGraph(); stopClassroom(); closeNav(); const go=()=>dispatch();
     if(_routed && document.startViewTransition && !location.hash.startsWith('#/graph') && !location.hash.startsWith('#/classroom')){ document.startViewTransition(go); } else go(); _routed=true; }
@@ -1121,7 +2140,27 @@ footer{color:var(--faint);font-family:var(--sans);font-size:.76rem;text-align:ce
   document.addEventListener('keydown',e=>{ if(e.key==='/'&&document.activeElement!==$('#q')){ e.preventDefault(); $('#q').focus(); } if(e.key==='Escape'&&document.activeElement===$('#q')){ $('#q').blur(); } });
 
   /* language */
-  function applyStaticI18n(){ document.documentElement.lang=LANG; $('#brandSub').textContent=t('sub'); $('#q').placeholder=t('searchPh'); $('#langBtn').textContent=LANG==='ko'?'EN':'KO'; }
+  function updateGraphLanguage() {
+    if (!window.kgInitialized) return;
+    const legendContainer = document.getElementById("kgLegend");
+    if (legendContainer) {
+      legendContainer.innerHTML = CATS.map(c => `
+        <span class="legend-item" data-cat="${c.id}">
+          <span class="ld" style="background:${c.color}"></span>
+          ${esc(catName(c))}
+        </span>
+      `).join('');
+      updateLegendUI();
+    }
+    if (nodeSelection) {
+      nodeSelection.select("text").text(d => {
+        let txt = LANG === 'ko' && d.term_ko ? d.term_ko : d.term;
+        return d.isCategoryNode ? txt.toUpperCase() : txt;
+      });
+    }
+  }
+
+  function applyStaticI18n(){ document.documentElement.lang=LANG; $('#brandSub').textContent=t('sub'); $('#q').placeholder=t('searchPh'); $('#langBtn').textContent=LANG==='ko'?'EN':'KO'; updateGraphLanguage(); }
   $('#langBtn').addEventListener('click',()=>{ LANG=LANG==='ko'?'en':'ko'; try{localStorage.setItem('tg-lang',LANG);}catch(_){} applyStaticI18n(); route(); });
 
   /* theme & nav */
