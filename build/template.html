@@ -242,6 +242,19 @@ footer{color:var(--faint);font-family:var(--sans);font-size:.76rem;text-align:ce
   .scrim{display:none;position:fixed;inset:var(--hh) 0 0 0;background:rgba(0,0,0,.35);z-index:34}
   body.nav-open .scrim{display:block}
 }
+/* home directory v2 (sample terms) */
+.card{cursor:default;padding-bottom:16px}
+.card:hover{background:none}
+.card .ct{display:flex;align-items:center;gap:9px;text-decoration:none;font-family:var(--serif);font-weight:600;font-size:1.05rem;color:var(--text)}
+.card .ct:hover{color:var(--accent);text-decoration:none}
+.card .ct .dot{width:9px;height:9px;border-radius:0;flex:none}
+.card .ct .cn{margin-left:auto;margin-top:0;font-family:var(--mono);font-size:.74rem;font-weight:500;color:var(--faint)}
+.card .cd{margin-top:6px;font-size:.83rem}
+.dir-terms{font-size:.86rem;margin-top:9px;line-height:1.7}
+.dir-terms a{color:var(--text)}
+.dir-terms a:hover{color:var(--accent)}
+.dir-terms .sep{color:var(--faint);margin:0 6px}
+.dir-terms .more{color:var(--accent);font-family:var(--mono);font-size:.74rem}
 </style>
 </head>
 <body>
@@ -389,10 +402,13 @@ footer{color:var(--faint);font-family:var(--sans);font-size:.76rem;text-align:ce
         h+=`<a class="conflict" href="#/term/${e.id}"><b>${esc(e.term)}</b> — ${esc(Lf(e,'definition')).slice(0,120)}…
           ${d?`<div style="margin-top:5px;color:var(--muted)">vs <b>${esc(d.targetTerm)}</b>: ${esc((LANG==='ko'&&d.explanation_ko)||d.explanation)}</div>`:''}</a>`; }); }
     h+=`<div class="sec-title">${esc(t('secCats'))}</div><div class="cards">`;
-    CATS.forEach(c=>{ const n=(entriesByCat.get(c.id)||[]).length;
-      h+=`<a class="card" href="#/category/${c.id}" style="--cc:${c.color}">
-        <div class="ct"><span class="dot" style="background:${c.color};width:11px;height:11px;border-radius:4px;display:inline-block"></span> ${esc(catName(c))}</div>
-        <div class="cd">${esc(catDesc(c))}</div><div class="cn">${esc(t('terms')(n))}</div></a>`; });
+    CATS.forEach(c=>{ const list=(entriesByCat.get(c.id)||[]); const n=list.length;
+      const samples=list.slice(0,4).map(e=>`<a href="#/term/${e.id}">${esc(e.term)}</a>`).join('<span class="sep">·</span>');
+      h+=`<div class="card" style="--cc:${c.color}">
+        <a class="ct" href="#/category/${c.id}"><span class="dot" style="background:${c.color}"></span> ${esc(catName(c))}<span class="cn">${n}</span></a>
+        <div class="cd">${esc(catDesc(c))}</div>
+        <div class="dir-terms">${samples}${n>4?`<span class="sep">·</span><a class="more" href="#/category/${c.id}">+${n-4}</a>`:''}</div>
+      </div>`; });
     h+=`</div><p class="disclaimer">${t('disc')}</p>`;
     main.innerHTML=h; renderSidebar(null);
   }
