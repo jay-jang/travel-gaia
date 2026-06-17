@@ -222,9 +222,56 @@ mark{background:var(--accent-weak);color:var(--accent);padding:0 1px;border-radi
 .classroom-btn:disabled{opacity:0.4;cursor:not-allowed}
 .classroom-btn-primary{background:var(--accent);color:var(--paper);border-color:var(--accent)}
 .classroom-btn-primary:hover:not(:disabled){background:var(--text);border-color:var(--text)}
-.classroom-btn-secondary:hover:not(:disabled){border-color:var(--accent);color:var(--accent)}
 .classroom-right{position:relative;flex:1;background:var(--paper);display:flex;align-items:center;justify-content:center}
-#classroomCanvas{display:block;width:100%;height:100%;min-height:380px}
+svg#classroomSvg {
+  width: 100%;
+  height: 100%;
+  background: var(--paper);
+}
+svg#classroomSvg .node-group {
+  cursor: pointer;
+}
+svg#classroomSvg .node-group text {
+  font-family: var(--sans);
+  pointer-events: none;
+  user-select: none;
+}
+.classroom-verticals {
+  display: flex;
+  gap: 4px;
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 8px;
+}
+.classroom-verticals .classroom-tab {
+  flex: 1;
+  padding: 8px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.classroom-verticals .classroom-tab.active {
+  background: var(--accent);
+  color: var(--paper);
+  border-color: var(--accent);
+}
+.quiz-box {
+  transition: opacity 0.3s ease;
+}
+.quiz-box button.classroom-btn {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  width: 100%;
+  border-radius: 4px;
+  transition: all 0.15s ease;
+}
+.quiz-box button.classroom-btn:hover {
+  background: var(--surface-2);
+  border-color: var(--accent);
+}
 
 footer{color:var(--faint);font-family:var(--sans);font-size:.76rem;text-align:center;padding:24px;border-top:1px solid var(--rule);margin-top:30px}
 
@@ -577,7 +624,15 @@ footer{color:var(--faint);font-family:var(--sans);font-size:.76rem;text-align:ce
       CT:{acronym:'약어',"standard-term":'표준 용어',standard:'표준',"business-term":'업무 용어',"provider-term":'공급자 용어',code:'코드',metric:'지표',process:'프로세스',role:'역할',document:'문서'},
       PR:{same:'같음',narrower:'하위',broader:'상위',related:'관련',conflicting:'충돌'},
       classroom:'🏫 클래스룸', classroomPh:'클래스 선택 및 학습 진행',
-      btnBack:'이전 단계', btnNext:'다음 단계', btnFinish:'학습 완료', btnRestart:'다시 학습' },
+      btnBack:'이전 단계', btnNext:'다음 단계', btnFinish:'학습 완료', btnRestart:'다시 학습',
+      verticalAir:'항공 (Air)',
+      verticalHotel:'호텔 (Hotel)',
+      verticalCruise:'크루즈 (Cruise)',
+      verticalCommon:'공통/규격 (Common)',
+      levelBasic:'기본 과정 (Basic)',
+      levelAdvanced:'심화 과정 (Advanced)',
+      quizCorrect:'정답입니다! 🎉',
+      quizIncorrect:'오답입니다. 다시 한 번 생각해보세요.' },
     en:{ sub:'Travel-Industry Terminology', searchPh:'Search terms (e.g., PNR, RBD, codeshare, fare)…',
       enc:'Encyclopedia', home:'🏠 Home', cats:'Categories', graph:'🕸 Knowledge Graph', index:'📇 Full Index',
       heroT:'Travel-industry terms, unified in one reference', heroB:'An encyclopedia that <b>unifies terminology across providers and standards</b> spread over air, hotel, distribution, settlement and specs. Compare names for one concept, and explore with per-term illustrations, a knowledge graph, and a full index.',
@@ -598,7 +653,15 @@ footer{color:var(--faint);font-family:var(--sans);font-size:.76rem;text-align:ce
       CT:{acronym:'Acronym',"standard-term":'Standard term',standard:'Standard',"business-term":'Business term',"provider-term":'Provider term',code:'Code',metric:'Metric',process:'Process',role:'Role',document:'Document'},
       PR:{same:'Same',narrower:'Narrower',broader:'Broader',related:'Related',conflicting:'Conflicting'},
       classroom:'🏫 Classroom', classroomPh:'Select a class and track your progress',
-      btnBack:'Back', btnNext:'Next Step', btnFinish:'Finish', btnRestart:'Restart' },
+      btnBack:'Back', btnNext:'Next Step', btnFinish:'Finish', btnRestart:'Restart',
+      verticalAir:'Air',
+      verticalHotel:'Hotel',
+      verticalCruise:'Cruise',
+      verticalCommon:'Common & Standards',
+      levelBasic:'Basic Level',
+      levelAdvanced:'Advanced Level',
+      quizCorrect:'Correct! 🎉',
+      quizIncorrect:'Incorrect. Please try again.' },
   };
   const t = k => (T[LANG] && T[LANG][k]!==undefined) ? T[LANG][k] : T.en[k];
   const Lf = (e,f) => { if(LANG==='ko'){ const v=e[f+'_ko']; if(v&&String(v).trim()) return v; } return e[f]||''; };
@@ -762,9 +825,6 @@ footer{color:var(--faint);font-family:var(--sans);font-size:.76rem;text-align:ce
   }
 
   /* educational classroom */
-  let classroomClassId = 'class101';
-  let classroomStep = 0;
-  let classroomFinished = false;
   let classroomRAF = null;
   let classroomResizeFn = null;
 
@@ -774,429 +834,1407 @@ footer{color:var(--faint);font-family:var(--sans);font-size:.76rem;text-align:ce
   }
 
   const CLASSES = [
+    // ==================== AIR VERTICAL ====================
     {
-      id: 'class101',
+      id: 'air_basic',
+      vertical: 'air',
+      level: 'basic',
       title: {
-        ko: 'Class 101: GDS 기반 전통적 항공 유통 (Basic)',
-        en: 'Class 101: Traditional GDS-based Distribution (Basic)'
+        ko: '항공 기초: GDS 기반 예약/발권 흐름',
+        en: 'Air Basic: GDS Booking & Ticketing Flow'
       },
       nodes: [
-        { id: 'crs', label: 'CRS', x: 0.15, y: 0.5, cat: 'air-ops' },
-        { id: 'gds', label: 'GDS', x: 0.35, y: 0.5, cat: 'standards' },
-        { id: 'bsp', label: 'BSP', x: 0.55, y: 0.4, cat: 'pay' },
-        { id: 'arc', label: 'ARC', x: 0.55, y: 0.6, cat: 'pay' },
-        { id: 'ota', label: 'OTA', x: 0.75, y: 0.5, cat: 'hotel-dist' },
-        { id: 'customer', label: { ko: '고객', en: 'Customer' }, x: 0.9, y: 0.5, cat: 'customer' }
+        { id: 'customer', label: { ko: '고객', en: 'Customer' }, x: 0.1, y: 0.5, cat: 'customer' },
+        { id: 'ota', label: 'OTA / Agent', x: 0.3, y: 0.5, cat: 'hotel-dist' },
+        { id: 'gds', label: 'GDS', x: 0.5, y: 0.3, cat: 'standards' },
+        { id: 'crs', label: 'Airline CRS', x: 0.7, y: 0.5, cat: 'air-ops' },
+        { id: 'settlement', label: 'BSP / ARC', x: 0.5, y: 0.7, cat: 'pay' }
       ],
       connections: [
         { from: 'customer', to: 'ota' },
         { from: 'ota', to: 'gds' },
         { from: 'gds', to: 'crs' },
-        { from: 'gds', to: 'bsp' },
-        { from: 'gds', to: 'arc' },
-        { from: 'crs', to: 'bsp' },
-        { from: 'crs', to: 'arc' },
-        { from: 'ota', to: 'bsp' },
-        { from: 'ota', to: 'arc' }
+        { from: 'ota', to: 'settlement' },
+        { from: 'crs', to: 'settlement' }
       ],
       steps: [
         {
           narration: {
-            ko: '고객이 Online Travel Agency(OTA)에서 항공권을 검색합니다. 검색 요청은 GDS를 거쳐 항공사의 CRS로 전달되어 실시간 가용성과 운임 정보를 조회합니다.',
-            en: 'The customer searches for flights on an OTA. The search request is routed through the GDS to query real-time availability and fares from the airline\'s CRS.'
+            ko: '1단계: 고객이 OTA에서 항공권을 조회합니다. OTA는 GDS를 거쳐 항공사 CRS로부터 운임과 실시간 좌석을 수신합니다.',
+            en: 'Step 1: The customer searches for flights on an OTA. The OTA queries availability from the GDS, which routes to the Airline CRS.'
           },
           activeNodes: ['customer', 'ota', 'gds', 'crs'],
           activeConnections: [
             { from: 'customer', to: 'ota' },
             { from: 'ota', to: 'gds' },
             { from: 'gds', to: 'crs' }
-          ]
+          ],
+          quiz: {
+            question: {
+              ko: '항공사 입장에서 좌석 판매 가능 여부를 실시간으로 관리하는 시스템은 무엇인가요?',
+              en: 'Which system manages seat inventory in real-time from the airline\'s perspective?'
+            },
+            options: [
+              { ko: 'OTA', en: 'OTA' },
+              { ko: 'CRS', en: 'CRS' },
+              { ko: 'BSP', en: 'BSP' }
+            ],
+            correctIndex: 1,
+            explanation: {
+              ko: 'CRS(Computer Reservation System)는 항공사가 자사 좌석 정보와 운임을 통제 및 저장하는 코어 시스템입니다.',
+              en: 'CRS (Computer Reservation System) is the airline\'s core database containing schedules, availability, and fares.'
+            }
+          }
         },
         {
           narration: {
-            ko: '여정과 운임을 확정한 후 예약을 생성합니다. GDS와 CRS 간에 PNR(Passenger Name Record)이 생성 및 동기화되며 예약번호가 부여됩니다.',
-            en: 'After selecting the itinerary and fare, a booking is made. A PNR (Passenger Name Record) is created and synchronized between GDS and CRS, returning a booking reference.'
+            ko: '2단계: 여행 일정을 선택하고 예약을 확정합니다. GDS와 CRS가 통신하여 PNR(예약기록)을 상호 생성합니다.',
+            en: 'Step 2: The customer confirms the booking. The GDS and CRS communicate to generate and sync the PNR.'
           },
           activeNodes: ['ota', 'gds', 'crs'],
           activeConnections: [
             { from: 'ota', to: 'gds' },
             { from: 'gds', to: 'crs' }
-          ]
+          ],
+          quiz: {
+            question: {
+              ko: '예약 확정 시 생성되는 승객 예약 번호가 들어있는 레코드는?',
+              en: 'What is the record created during booking confirmation containing passenger itinerary details?'
+            },
+            options: [
+              { ko: 'BSP', en: 'BSP' },
+              { ko: 'PNR', en: 'PNR' },
+              { ko: 'VCC', en: 'VCC' }
+            ],
+            correctIndex: 1,
+            explanation: {
+              ko: 'PNR(Passenger Name Record)은 예약 완료 시 발행되는 고유 식별 레코드입니다.',
+              en: 'PNR (Passenger Name Record) is the primary record documenting a booking in the GDS/CRS.'
+            }
+          }
         },
         {
           narration: {
-            ko: '결제가 진행되면 BSP(국제선 정산) 또는 ARC(미국 국내선 정산) 시스템을 통해 여행사와 항공사 간 정산 및 승인 절차가 진행됩니다.',
-            en: 'Once payment is processed, financial settlement begins between the agency and the airline via BSP (for international) or ARC (for US domestic) systems.'
+            ko: '3단계: 결제가 발생하면 BSP(국제선) 또는 ARC(미국 국내선)를 통해 승인 및 대금 정산이 개시됩니다.',
+            en: 'Step 3: When payment is authorized, settlement begins between the agent and airline via BSP/ARC.'
           },
-          activeNodes: ['ota', 'gds', 'crs', 'bsp', 'arc'],
+          activeNodes: ['ota', 'settlement', 'crs'],
           activeConnections: [
-            { from: 'ota', to: 'bsp' },
-            { from: 'ota', to: 'arc' },
-            { from: 'crs', to: 'bsp' },
-            { from: 'crs', to: 'arc' }
-          ]
+            { from: 'ota', to: 'settlement' },
+            { from: 'crs', to: 'settlement' }
+          ],
+          quiz: {
+            question: {
+              ko: '여행사 판매 대금을 항공사별로 정산하여 배분하는 IATA 산하 대금 정산 제도는?',
+              en: 'What is the IATA-sponsored billing and settlement system that aggregates agency payments to airlines?'
+            },
+            options: [
+              { ko: 'BSP', en: 'BSP' },
+              { ko: 'NDC', en: 'NDC' },
+              { ko: 'PMS', en: 'PMS' }
+            ],
+            correctIndex: 0,
+            explanation: {
+              ko: 'BSP(Billing and Settlement Plan)는 IATA 대리점과 항공사 간의 일괄 은행 송금/정산 시스템입니다.',
+              en: 'BSP (Billing and Settlement Plan) acts as the clearing house for payments between IATA travel agents and airlines.'
+            }
+          }
         },
         {
           narration: {
-            ko: '정산 승인이 완료되면 CRS에서 전자 항공권(e-Ticket)이 발행되며, 발권 정보가 GDS를 거쳐 OTA를 통해 고객에게 전달됩니다.',
-            en: 'Upon settlement authorization, the e-Ticket is issued by the CRS and routed through the GDS and OTA to the customer.'
+            ko: '4단계: 결제 정산 승인 후 항공사는 e-Ticket(전자 항공권) 번호를 발행하여 OTA를 통해 고객에게 전달합니다.',
+            en: 'Step 4: After payment authorization, the airline issues e-Ticket numbers routed to the customer via OTA.'
           },
           activeNodes: ['crs', 'gds', 'ota', 'customer'],
           activeConnections: [
             { from: 'crs', to: 'gds' },
             { from: 'gds', to: 'ota' },
             { from: 'ota', to: 'customer' }
-          ]
-        },
-        {
-          narration: {
-            ko: '기본 학습 완료! 전통적 유통 방식은 GDS가 핵심 중개 역할을 수행하고 BSP/ARC가 일괄 정산을 제공하여 다대다(N:N) 관계의 효율성을 보장합니다.',
-            en: 'Basic learning complete! Traditional distribution features GDS as the central intermediary and BSP/ARC providing aggregated settlement to enable efficient N:N relationships.'
-          },
-          activeNodes: ['customer', 'ota', 'gds', 'bsp', 'arc', 'crs'],
-          activeConnections: []
+          ],
+          quiz: {
+            question: {
+              ko: '발권이 성공적으로 완료되었음을 증명하는 13자리 숫자로 구성된 표준 문서는?',
+              en: 'What is the standard 13-digit document that confirms the successful issuance of flight tickets?'
+            },
+            options: [
+              { ko: 'PNR', en: 'PNR' },
+              { ko: 'e-Ticket', en: 'e-Ticket' },
+              { ko: 'MCO', en: 'MCO' }
+            ],
+            correctIndex: 1,
+            explanation: {
+              ko: 'e-Ticket(전자 항공권)은 실제 탑승 권한을 나타내는 표준 디지털 계약증서입니다.',
+              en: 'e-Ticket is the digital document containing flight coupon statuses linked directly to the PNR.'
+            }
+          }
         }
       ]
     },
     {
-      id: 'class201',
+      id: 'air_advanced',
+      vertical: 'air',
+      level: 'advanced',
       title: {
-        ko: 'Class 201: NDC & ONE Order 기반 현대적 유통 (NDC/Modern)',
-        en: 'Class 201: Modern NDC & ONE Order Distribution (NDC/Modern)'
+        ko: '항공 심화: NDC & ONE Order 현대적 유통',
+        en: 'Air Advanced: NDC & ONE Order Distribution'
       },
       nodes: [
-        { id: 'crs', label: 'CRS', x: 0.15, y: 0.5, cat: 'air-ops' },
-        { id: 'ndc', label: 'NDC API', x: 0.35, y: 0.5, cat: 'standards' },
-        { id: 'settlement', label: { ko: '직접 정산/VCC', en: 'Direct Sett. / VCC' }, x: 0.55, y: 0.4, cat: 'pay' },
-        { id: 'bsp', label: 'BSP/ARC', x: 0.55, y: 0.6, cat: 'pay' },
-        { id: 'ota', label: { ko: '현대적 대리점', en: 'Modern Agent' }, x: 0.75, y: 0.5, cat: 'hotel-dist' },
-        { id: 'customer', label: { ko: '고객', en: 'Customer' }, x: 0.9, y: 0.5, cat: 'customer' }
+        { id: 'customer', label: { ko: '고객', en: 'Customer' }, x: 0.1, y: 0.5, cat: 'customer' },
+        { id: 'aggregator', label: { ko: '애그리게이터', en: 'Aggregator' }, x: 0.35, y: 0.5, cat: 'standards' },
+        { id: 'ndc', label: 'NDC API', x: 0.55, y: 0.3, cat: 'standards' },
+        { id: 'oms', label: 'Airline OMS', x: 0.75, y: 0.5, cat: 'air-ticket' },
+        { id: 'direct_pay', label: { ko: '직접 결제 (VCC)', en: 'Direct Pay (VCC)' }, x: 0.55, y: 0.7, cat: 'pay' }
       ],
       connections: [
-        { from: 'customer', to: 'ota' },
-        { from: 'ota', to: 'ndc' },
-        { from: 'ndc', to: 'crs' },
-        { from: 'ota', to: 'settlement' },
-        { from: 'ota', to: 'bsp' },
-        { from: 'crs', to: 'settlement' },
-        { from: 'crs', to: 'bsp' }
+        { from: 'customer', to: 'aggregator' },
+        { from: 'aggregator', to: 'ndc' },
+        { from: 'ndc', to: 'oms' },
+        { from: 'aggregator', to: 'direct_pay' },
+        { from: 'oms', to: 'direct_pay' }
       ],
       steps: [
         {
           narration: {
-            ko: '고객이 검색할 때 항공사가 NDC API를 통해 실시간으로 개인화된 제안(Offer)을 직접 구성하여 에이전트에게 전송합니다.',
-            en: 'When the customer searches, the airline directly constructs a personalized Offer in real time via its NDC API and sends it to the agent.'
+            ko: '1단계: 고객이 상품을 조회하면, 항공사는 NDC API를 통해 자사 시스템에서 생성한 실시간 개인화 상품(Offer)을 애그리게이터에 직접 제공합니다.',
+            en: 'Step 1: When a customer searches, the airline builds personalized offers dynamically and returns them via the NDC API.'
           },
-          activeNodes: ['customer', 'ota', 'ndc', 'crs'],
+          activeNodes: ['customer', 'aggregator', 'ndc', 'oms'],
+          activeConnections: [
+            { from: 'customer', to: 'aggregator' },
+            { from: 'aggregator', to: 'ndc' },
+            { from: 'ndc', to: 'oms' }
+          ],
+          quiz: {
+            question: {
+              ko: 'NDC 환경에서 운임 산출 및 상품 제공 주체는 누구인가요?',
+              en: 'Who owns offer creation and pricing control in an NDC model?'
+            },
+            options: [
+              { ko: 'GDS', en: 'GDS' },
+              { ko: '항공사 (OMS)', en: 'Airline (OMS)' },
+              { ko: '여행사 (OTA)', en: 'Travel Agent (OTA)' }
+            ],
+            correctIndex: 1,
+            explanation: {
+              ko: 'NDC 모델에서는 항공사가 가격 결정과 상품 구성 제어권을 가져옵니다.',
+              en: 'Under NDC, airlines construct dynamic offers on their own retail servers rather than pre-publishing to GDS.'
+            }
+          }
+        },
+        {
+          narration: {
+            ko: '2단계: 상품 예약 신청 시 기존의 PNR, e-Ticket, EMD를 대체하는 하나의 단일 문서인 ONE Order가 OMS에 생성됩니다.',
+            en: 'Step 2: When booking, a single ONE Order replaces separate PNR, e-Ticket, and EMD documents in the OMS.'
+          },
+          activeNodes: ['aggregator', 'ndc', 'oms'],
+          activeConnections: [
+            { from: 'aggregator', to: 'ndc' },
+            { from: 'ndc', to: 'oms' }
+          ],
+          quiz: {
+            question: {
+              ko: 'ONE Order 규격에서 통합 관리되는 고유한 고객 구매 식별 기준은?',
+              en: 'What is the unified record identifier in the ONE Order framework?'
+            },
+            options: [
+              { ko: 'Order ID', en: 'Order ID' },
+              { ko: 'Ticket Number', en: 'Ticket Number' },
+              { ko: 'PNR Locator', en: 'PNR Locator' }
+            ],
+            correctIndex: 0,
+            explanation: {
+              ko: 'ONE Order는 기존 PNR과 항공권을 단일 Order ID와 객체로 통합하여 관리합니다.',
+              en: 'ONE Order consolidates ticketing and ancillary records into a single transaction document under an Order ID.'
+            }
+          }
+        },
+        {
+          narration: {
+            ko: '3단계: 결제 처리 시, 가상신용카드(VCC)나 핀테크 계좌이체 등을 활용하여 BSP를 거치지 않고 항공사에 직접 결제 및 정산(Direct Settlement)을 진행합니다.',
+            en: 'Step 3: During payment, Direct Settlement (e.g. VCC) bypasses traditional BSP routing for instant merchant processing.'
+          },
+          activeNodes: ['aggregator', 'direct_pay', 'oms'],
+          activeConnections: [
+            { from: 'aggregator', to: 'direct_pay' },
+            { from: 'oms', to: 'direct_pay' }
+          ],
+          quiz: {
+            question: {
+              ko: '유통 단계 수수료 절감을 위해 대리점이 항공사 결제 시 사용하는 일회성 가상 결제 수단은?',
+              en: 'What unique payment method is generated by agents for instant booking-level settlement?'
+            },
+            options: [
+              { ko: 'DCC', en: 'DCC' },
+              { ko: 'VCC', en: 'VCC' },
+              { ko: 'BSP Draft', en: 'BSP Draft' }
+            ],
+            correctIndex: 1,
+            explanation: {
+              ko: 'VCC(Virtual Credit Card)는 각 주문 건마다 전용 한도와 기간을 설정해 생성하는 일회성 가상 카드 번호입니다.',
+              en: 'VCCs (Virtual Credit Cards) allow automated, single-use payment routing between distributors and operators.'
+            }
+          }
+        },
+        {
+          narration: {
+            ko: '4단계: 결제 완료 후 부가 서비스 구매나 일정 변경 등 사후 관리(Servicing)가 NDC API를 통해 실시간으로 단일 Order에 즉각 갱신 및 처리됩니다.',
+            en: 'Step 4: Post-booking changes and ancillary upsells are synced instantly to the single Order via NDC API.'
+          },
+          activeNodes: ['customer', 'aggregator', 'ndc', 'oms'],
+          activeConnections: [
+            { from: 'customer', to: 'aggregator' },
+            { from: 'aggregator', to: 'ndc' },
+            { from: 'ndc', to: 'oms' }
+          ],
+          quiz: {
+            question: {
+              ko: 'ONE Order가 제공하는 주요 관리상 장점은 무엇인가요?',
+              en: 'What is the primary servicing advantage of ONE Order?'
+            },
+            options: [
+              { ko: '티켓 번호와 PNR 데이터 불일치 해소', en: 'Elimination of PNR and Ticket out-of-sync states' },
+              { ko: '체크인 프로세스의 완전 오프라인화', en: 'Fully offline passenger check-ins' },
+              { ko: '환불 수수료 부과 기능의 폐지', en: 'Abolition of change fee penalties' }
+            ],
+            correctIndex: 0,
+            explanation: {
+              ko: 'ONE Order는 항공사 항공권 번호와 PNR 상태의 데이터 정합성 불일치를 원천 차단합니다.',
+              en: 'ONE Order provides a single source of truth, removing synchronization issues between PNRs, e-Tickets, and EMDs.'
+            }
+          }
+        }
+      ]
+    },
+
+    // ==================== HOTEL VERTICAL ====================
+    {
+      id: 'hotel_basic',
+      vertical: 'hotel',
+      level: 'basic',
+      title: {
+        ko: '호텔 기초: OTA 유통 및 예약 흐름',
+        en: 'Hotel Basic: OTA Distribution & Booking Flow'
+      },
+      nodes: [
+        { id: 'guest', label: { ko: '투숙객', en: 'Guest' }, x: 0.15, y: 0.5, cat: 'customer' },
+        { id: 'ota', label: 'OTA', x: 0.4, y: 0.5, cat: 'hotel-dist' },
+        { id: 'bedbank', label: { ko: '도매업체 (Bedbank)', en: 'Bedbank / Wholesaler' }, x: 0.65, y: 0.3, cat: 'hotel-dist' },
+        { id: 'pms', label: 'Hotel PMS', x: 0.85, y: 0.5, cat: 'hotel-rate' }
+      ],
+      connections: [
+        { from: 'guest', to: 'ota' },
+        { from: 'ota', to: 'bedbank' },
+        { from: 'bedbank', to: 'pms' },
+        { from: 'ota', to: 'pms' }
+      ],
+      steps: [
+        {
+          narration: {
+            ko: '1단계: OTA가 Bedbank/도매업체를 통해 도매 요율이 책정된 객실 재고(Inventory)를 수집하여 상품 카탈로그를 빌드합니다.',
+            en: 'Step 1: The OTA aggregates rooms and wholesale rates through a Bedbank to populate its lodging catalog.'
+          },
+          activeNodes: ['ota', 'bedbank'],
+          activeConnections: [
+            { from: 'ota', to: 'bedbank' }
+          ],
+          quiz: {
+            question: {
+              ko: '대량의 호텔 객실을 확보하여 OTA 및 타 대리점에 B2B 공급을 중개하는 유통 사업자를 무엇이라 부르나요?',
+              en: 'What business acts as a B2B intermediary distributing hotel inventories in bulk to OTAs?'
+            },
+            options: [
+              { ko: 'Bedbank', en: 'Bedbank' },
+              { ko: 'Channel Manager', en: 'Channel Manager' },
+              { ko: 'PMS', en: 'PMS' }
+            ],
+            correctIndex: 0,
+            explanation: {
+              ko: '베드뱅크(Bedbank)는 호텔과 여행사 간의 대표적인 B2B 도매 유통업체입니다.',
+              en: 'A Bedbank (like Hotelbeds) is a wholesaler acquiring blocks of rooms and retailing them to agents.'
+            }
+          }
+        },
+        {
+          narration: {
+            ko: '2단계: 투숙객이 방을 예약하면 OTA는 예약을 확정하고 Bedbank에 거래 내역을 전송합니다.',
+            en: 'Step 2: The guest reserves a room. The OTA confirms the booking and transmits details to the Bedbank.'
+          },
+          activeNodes: ['guest', 'ota', 'bedbank'],
+          activeConnections: [
+            { from: 'guest', to: 'ota' },
+            { from: 'ota', to: 'bedbank' }
+          ],
+          quiz: {
+            question: {
+              ko: '호텔 객실을 식별할 때, 침대 크기나 조식 포함 여부 등을 묶은 분류 체계를 무엇이라 하나요?',
+              en: 'What identifier groups structural features (e.g. bed sizes, view, cancellation terms) of a hotel offer?'
+            },
+            options: [
+              { ko: 'Rate Plan', en: 'Rate Plan' },
+              { ko: 'Room Type', en: 'Room Type' },
+              { ko: 'Folio', en: 'Folio' }
+            ],
+            correctIndex: 0,
+            explanation: {
+              ko: '레이트 플랜(Rate Plan)은 룸 타입에 취소 정책, 식사 여부, 가격 세부 규정을 연결한 복합 분류 체계입니다.',
+              en: 'A Rate Plan coordinates a Room Type with cancellation policies, meal inclusions, and price grids.'
+            }
+          }
+        },
+        {
+          narration: {
+            ko: '3단계: OTA 또는 Bedbank는 투숙 확인 서류인 바우처(Voucher)를 발행하고 결제를 진행합니다.',
+            en: 'Step 3: The OTA issues a hotel voucher representing paid lodging to the guest.'
+          },
+          activeNodes: ['guest', 'ota'],
+          activeConnections: [
+            { from: 'guest', to: 'ota' }
+          ],
+          quiz: {
+            question: {
+              ko: '고객이 OTA에 직접 지불하고 체크아웃 시 현장 지불을 하지 않는 대리점 판매 비즈니스 모델은?',
+              en: 'Which hotel booking business model involves the traveler paying the distributor directly at the booking time?'
+            },
+            options: [
+              { ko: 'Agency Model', en: 'Agency Model' },
+              { ko: 'Merchant Model', en: 'Merchant Model' },
+              { ko: 'GDS Direct Model', en: 'GDS Direct Model' }
+            ],
+            correctIndex: 1,
+            explanation: {
+              ko: '머천트 모델(Merchant Model)에서는 고객이 여행사에 전액 선결제하며, 여행사가 호텔 정산을 진행합니다.',
+              en: 'In the Merchant Model, the OTA is the Merchant of Record, collecting funds and paying the hotel later.'
+            }
+          }
+        },
+        {
+          narration: {
+            ko: '4단계: 투숙객이 체크인 시 바우처를 호텔 PMS(객실 관리 시스템)에 등록하고 최종 대금 정산이 마무리됩니다.',
+            en: 'Step 4: The guest checks in, presenting the voucher to match reservation records in the PMS.'
+          },
+          activeNodes: ['guest', 'pms', 'bedbank'],
+          activeConnections: [
+            { from: 'guest', to: 'pms' },
+            { from: 'bedbank', to: 'pms' }
+          ],
+          quiz: {
+            question: {
+              ko: '호텔 현장에서 투숙객 배정, 청소 상태, 청구서 정산을 관리하는 중앙 시스템은?',
+              en: 'What software runs a hotel\'s front desk, handling check-ins, room assignment, and local invoicing?'
+            },
+            options: [
+              { ko: 'PMS', en: 'PMS' },
+              { ko: 'CRS', en: 'CRS' },
+              { ko: 'OTA', en: 'OTA' }
+            ],
+            correctIndex: 0,
+            explanation: {
+              ko: 'PMS(Property Management System)는 프론트 데스크 및 현장 객실 관리를 총괄하는 소프트웨어입니다.',
+              en: 'PMS (Property Management System) coordinates physical inventory allocation and local billing records.'
+            }
+          }
+        }
+      ]
+    },
+    {
+      id: 'hotel_advanced',
+      vertical: 'hotel',
+      level: 'advanced',
+      title: {
+        ko: '호텔 심화: 채널 매니저(CM) 및 PMS 연동 흐름',
+        en: 'Hotel Advanced: Channel Manager & PMS Integration'
+      },
+      nodes: [
+        { id: 'guest', label: { ko: '투숙객', en: 'Guest' }, x: 0.1, y: 0.5, cat: 'customer' },
+        { id: 'ota', label: 'OTA', x: 0.32, y: 0.5, cat: 'hotel-dist' },
+        { id: 'cm', label: { ko: '채널 매니저', en: 'Channel Mgr (CM)' }, x: 0.54, y: 0.3, cat: 'hotel-dist' },
+        { id: 'pms', label: 'Hotel PMS', x: 0.76, y: 0.5, cat: 'hotel-rate' },
+        { id: 'pg', label: { ko: '결제 대행 (PG)', en: 'PG / Settlement' }, x: 0.54, y: 0.7, cat: 'pay' }
+      ],
+      connections: [
+        { from: 'guest', to: 'ota' },
+        { from: 'ota', to: 'cm' },
+        { from: 'cm', to: 'pms' },
+        { from: 'ota', to: 'pg' },
+        { from: 'pms', to: 'pg' }
+      ],
+      steps: [
+        {
+          narration: {
+            ko: '1단계: 호텔 PMS의 방 가용성(Inventory) 및 요금(Rates) 변동 정보가 채널 매니저(CM)를 통해 실시간으로 수많은 OTA에 동시 업데이트됩니다.',
+            en: 'Step 1: Hotel room rates and inventory changes in the PMS are synced instantly across multiple OTAs via the Channel Manager.'
+          },
+          activeNodes: ['pms', 'cm', 'ota'],
+          activeConnections: [
+            { from: 'cm', to: 'pms' },
+            { from: 'ota', to: 'cm' }
+          ],
+          quiz: {
+            question: {
+              ko: '호텔 요금과 잔여 객실 수량을 여러 온라인 채널에 실시간으로 중개해 오버부킹을 예방하는 도구는?',
+              en: 'Which middleware broadcasts hotel inventory modifications to all connected booking sites to block overbooking?'
+            },
+            options: [
+              { ko: 'CRS', en: 'CRS' },
+              { ko: 'PMS', en: 'PMS' },
+              { ko: 'Channel Manager (CM)', en: 'Channel Manager (CM)' }
+            ],
+            correctIndex: 2,
+            explanation: {
+              ko: '채널 매니저(CM)는 온·오프라인 대리점 간 객실 인벤토리를 충돌 없이 실시간 중개 및 동기화합니다.',
+              en: 'Channel Managers integrate PMS availability data directly with multi-platform OTA APIs.'
+            }
+          }
+        },
+        {
+          narration: {
+            ko: '2단계: 투숙객이 OTA에서 예약을 체결하면 예약 정보가 CM API를 통해 즉시 PMS로 전달됩니다.',
+            en: 'Step 2: A guest makes a booking on an OTA. The reservation data routes immediately to the PMS via the CM API.'
+          },
+          activeNodes: ['guest', 'ota', 'cm', 'pms'],
+          activeConnections: [
+            { from: 'guest', to: 'ota' },
+            { from: 'ota', to: 'cm' },
+            { from: 'cm', to: 'pms' }
+          ],
+          quiz: {
+            question: {
+              ko: '호텔 유통에서 PMS와 OTA 간의 통신 표준을 정비하고 XML/JSON 형식을 지원하는 글로벌 표준 단체는?',
+              en: 'Which standards organization creates XML/JSON API messaging specifications for hospitality integration?'
+            },
+            options: [
+              { ko: 'IATA', en: 'IATA' },
+              { ko: 'HTNG (OpenTravel)', en: 'HTNG (OpenTravel)' },
+              { ko: 'ATPCO', en: 'ATPCO' }
+            ],
+            correctIndex: 1,
+            explanation: {
+              ko: 'HTNG(Hospitality Technology Next Generation)는 호텔 업계 표준 사양과 시스템 API 연동 프로토콜을 관장합니다.',
+              en: 'HTNG (now under AHLA/OpenTravel alliance) guides system inter-compatibility specifications for hotels.'
+            }
+          }
+        },
+        {
+          narration: {
+            ko: '3단계: PMS는 CM으로부터 수신한 예약 건에 기초하여 실제 하우스키핑 상태를 고려하여 객실을 자동 배정(Auto-allocation)합니다.',
+            en: 'Step 3: The PMS auto-allocates an available room number matching the booked category criteria.'
+          },
+          activeNodes: ['pms'],
+          activeConnections: [],
+          quiz: {
+            question: {
+              ko: '객실 점유율, 일일 평균 요금(ADR), 가용 객실당 수익(RevPAR)을 직접 집계하는 중심지는?',
+              en: 'Where are operational metrics like occupancy rate, ADR, and RevPAR aggregated?'
+            },
+            options: [
+              { ko: 'OTA', en: 'OTA' },
+              { ko: 'PMS', en: 'PMS' },
+              { ko: 'Clearinghouse', en: 'Clearinghouse' }
+            ],
+            correctIndex: 1,
+            explanation: {
+              ko: 'ADR(Average Daily Rate) 및 RevPAR(Revenue Per Available Room) 등의 지표는 PMS에 기록된 판매 성과를 근거로 집계됩니다.',
+              en: 'Hotel KPIs (Occupancy, ADR, RevPAR) are computed from real-time and historical transactions in the PMS.'
+            }
+          }
+        },
+        {
+          narration: {
+            ko: '4단계: 결제 게이트웨이(PG)를 연동하여 OTA가 발행한 가상카드(VCC) 또는 고객 실물 신용카드를 즉각 청구 및 대조 정산합니다.',
+            en: 'Step 4: The Payment Gateway verifies and settles the OTA-generated VCC or guest payment card directly into the PMS ledger.'
+          },
+          activeNodes: ['pms', 'pg', 'ota'],
+          activeConnections: [
+            { from: 'ota', to: 'pg' },
+            { from: 'pms', to: 'pg' }
+          ],
+          quiz: {
+            question: {
+              ko: '호텔이 OTA 예약의 결제를 진행할 때 카드 도용이나 노쇼(No-Show) 손실을 보전하기 위해 설정하는 예약 보증 상태를 일컫는 용어는?',
+              en: 'What process holds credit card details or virtual authorization to guarantee booking payout in case of a no-show?'
+            },
+            options: [
+              { ko: 'Voucher', en: 'Voucher' },
+              { ko: 'Pre-authorization', en: 'Pre-authorization' },
+              { ko: 'Direct Settlement', en: 'Direct Settlement' }
+            ],
+            correctIndex: 1,
+            explanation: {
+              ko: '신용카드 가승인(Pre-authorization)은 예약 보증을 위해 일정 금액 청구 자격을 사전에 잠금해두는 프로세스입니다.',
+              en: 'Pre-authorization verifies the card limit and holds funds to guarantee settlement validity.'
+            }
+          }
+        }
+      ]
+    },
+
+    // ==================== CRUISE VERTICAL ====================
+    {
+      id: 'cruise_basic',
+      vertical: 'cruise',
+      level: 'basic',
+      title: {
+        ko: '크루즈 기초: 선실 및 레이트 코드 예약 흐름',
+        en: 'Cruise Basic: Cabin & Rate Code Booking Flow'
+      },
+      nodes: [
+        { id: 'passenger', label: { ko: '승객', en: 'Passenger' }, x: 0.15, y: 0.5, cat: 'customer' },
+        { id: 'agency', label: { ko: '여행사', en: 'Agency' }, x: 0.4, y: 0.5, cat: 'hotel-dist' },
+        { id: 'wholesaler', label: { ko: '도매상', en: 'Wholesaler' }, x: 0.65, y: 0.3, cat: 'hotel-dist' },
+        { id: 'cruise_engine', label: { ko: '크루즈 엔진', en: 'Cruise Engine' }, x: 0.85, y: 0.5, cat: 'cruise' }
+      ],
+      connections: [
+        { from: 'passenger', to: 'agency' },
+        { from: 'agency', to: 'wholesaler' },
+        { from: 'wholesaler', to: 'cruise_engine' },
+        { from: 'agency', to: 'cruise_engine' }
+      ],
+      steps: [
+        {
+          narration: {
+            ko: '1단계: 여행사가 크루즈 예약 엔진에서 특정 선박, 여정 및 선실 카테고리(발코니, 스위트 등)의 가용성을 확인합니다.',
+            en: 'Step 1: The travel agent searches the booking system to match cruise itineraries and cabin categories.'
+          },
+          activeNodes: ['agency', 'cruise_engine'],
+          activeConnections: [
+            { from: 'agency', to: 'cruise_engine' }
+          ],
+          quiz: {
+            question: {
+              ko: '크루즈선의 물리적 크기를 정량적으로 측정할 때 사용되는 단위는?',
+              en: 'Which measurement represents the overall internal volume of a cruise ship?'
+            },
+            options: [
+              { ko: 'GRT (Gross Registered Tonnage)', en: 'GRT (Gross Registered Tonnage)' },
+              { ko: 'RBD', en: 'RBD' },
+              { ko: 'PCC', en: 'PCC' }
+            ],
+            correctIndex: 0,
+            explanation: {
+              ko: '총톤수(GRT, Gross Registered Tonnage)는 선박 내부의 부피를 100세제곱피트당 1톤으로 계산한 선박 크기 표준입니다.',
+              en: 'GRT measures total internal space of a vessel, used commonly as the primary cruise scale index.'
+            }
+          }
+        },
+        {
+          narration: {
+            ko: '2단계: 예약 시 승객의 조건에 대응하는 특수 레이트 코드(프로모션, 지역 할인, 시니어 등)를 적용하여 정가보다 저렴한 요율을 산출합니다.',
+            en: 'Step 2: The system applies specific Rate Codes (e.g. resident, military, senior) to filter pricing packages.'
+          },
+          activeNodes: ['passenger', 'agency', 'cruise_engine'],
+          activeConnections: [
+            { from: 'passenger', to: 'agency' },
+            { from: 'agency', to: 'cruise_engine' }
+          ],
+          quiz: {
+            question: {
+              ko: '특정 프로모션 요금, 단체 할인 또는 특정 거주민 가격 혜택을 매칭하기 위해 크루즈 예약에 입력하는 요금 지시 코드는?',
+              en: 'What identifier applies targeted promotions or discounts to a cruise reservation?'
+            },
+            options: [
+              { ko: 'Rate Code', en: 'Rate Code' },
+              { ko: 'Booking Class', en: 'Booking Class' },
+              { ko: 'Fare Basis', en: 'Fare Basis' }
+            ],
+            correctIndex: 0,
+            explanation: {
+              ko: '레이트 코드(Rate Code)는 프로모션 혜택, 단체가, 지역 주민 요금 등을 관리하는 식별 약어입니다.',
+              en: 'Rate Codes map specific user demographics or marketing campaigns to discount cruise price tiers.'
+            }
+          }
+        },
+        {
+          narration: {
+            ko: '3단계: 적합한 요금을 선택한 뒤 특정 선실(Cabin)을 가예약(Holding) 상태로 확보하고 기한 내 계약금(Deposit)을 납부하여 확정합니다.',
+            en: 'Step 3: The agent places a temporary hold on the selected cabin and processes a deposit to secure the reservation.'
+          },
+          activeNodes: ['passenger', 'agency', 'wholesaler', 'cruise_engine'],
+          activeConnections: [
+            { from: 'passenger', to: 'agency' },
+            { from: 'agency', to: 'wholesaler' },
+            { from: 'wholesaler', to: 'cruise_engine' }
+          ],
+          quiz: {
+            question: {
+              ko: '크루즈선에서 승객이 머무는 개별 침실을 지칭하는 용어는?',
+              en: 'What is the industry term for an individual guest bedroom or suite on a cruise ship?'
+            },
+            options: [
+              { ko: 'Stateroom / Cabin', en: 'Stateroom / Cabin' },
+              { ko: 'Villa', en: 'Villa' },
+              { ko: 'Rate Plan', en: 'Rate Plan' }
+            ],
+            correctIndex: 0,
+            explanation: {
+              ko: '선실(Cabin 또는 Stateroom)은 승객이 이용하는 등급별 크루즈 침실 공간입니다.',
+              en: 'A Cabin or Stateroom is the allocated guest sleeping compartment onboard.'
+            }
+          }
+        },
+        {
+          narration: {
+            ko: '4단계: 메인 여정 확정 이후 기항지 관광(Shore Excursion)을 예약 옵션으로 추가하여 크루즈 예약 레코드에 연동합니다.',
+            en: 'Step 4: The passenger chooses and adds optional shore excursions to complement their cruise itinerary.'
+          },
+          activeNodes: ['passenger', 'agency', 'cruise_engine'],
+          activeConnections: [
+            { from: 'passenger', to: 'agency' },
+            { from: 'agency', to: 'cruise_engine' }
+          ],
+          quiz: {
+            question: {
+              ko: '크루즈선이 중간 정박하는 항구에서 이루어지는 하선 관광 프로그램을 지칭하는 명칭은?',
+              en: 'What term defines land-based sightseeing programs or tours organized at cruise transit ports?'
+            },
+            options: [
+              { ko: 'Shore Excursion', en: 'Shore Excursion' },
+              { ko: 'Port of Call', en: 'Port of Call' },
+              { ko: 'Segment', en: 'Segment' }
+            ],
+            correctIndex: 0,
+            explanation: {
+              ko: '기항지 관광(Shore Excursion)은 정박 항구(Port of Call)에서 운영하는 전용 지상 가이드 관광 패키지입니다.',
+              en: 'Shore Excursions are optional port-side activities purchased as package add-ons.'
+            }
+          }
+        }
+      ]
+    },
+    {
+      id: 'cruise_advanced',
+      vertical: 'cruise',
+      level: 'advanced',
+      title: {
+        ko: '크루즈 심화: 기항지 프로그램 연동 및 다자간 정산 흐름',
+        en: 'Cruise Advanced: Shore Excursion Integration & Settlement'
+      },
+      nodes: [
+        { id: 'agency', label: { ko: '판매 대리점', en: 'Selling Agency' }, x: 0.1, y: 0.5, cat: 'hotel-dist' },
+        { id: 'wholesaler', label: { ko: '도매 파트너', en: 'Wholesaler' }, x: 0.32, y: 0.5, cat: 'hotel-dist' },
+        { id: 'oms', label: 'Cruise OMS', x: 0.54, y: 0.3, cat: 'cruise' },
+        { id: 'excursion_op', label: { ko: '기항지 로컬 업체', en: 'Excursion Operator' }, x: 0.76, y: 0.5, cat: 'cruise' },
+        { id: 'clearinghouse', label: { ko: '정산소', en: 'Clearinghouse' }, x: 0.54, y: 0.7, cat: 'pay' }
+      ],
+      connections: [
+        { from: 'agency', to: 'wholesaler' },
+        { from: 'wholesaler', to: 'oms' },
+        { from: 'oms', to: 'excursion_op' },
+        { from: 'wholesaler', to: 'clearinghouse' },
+        { from: 'oms', to: 'clearinghouse' },
+        { from: 'excursion_op', to: 'clearinghouse' }
+      ],
+      steps: [
+        {
+          narration: {
+            ko: '1단계: 기항지 로컬 관광 운영사(Excursion Operator)가 제공하는 예약 가능 상태가 실시간 API 커넥션으로 크루즈 라인 OMS와 연동됩니다.',
+            en: 'Step 1: Local Shore Excursion Operators sync tour availability and bookings via real-time APIs to the Cruise Line OMS.'
+          },
+          activeNodes: ['excursion_op', 'oms'],
+          activeConnections: [
+            { from: 'oms', to: 'excursion_op' }
+          ],
+          quiz: {
+            question: {
+              ko: '크루즈 정박 항구에서 외곽 가이드를 중개하는 현지 업체의 비즈니스적 역할은?',
+              en: 'What is the role of local vendors offering destination tours to cruise lines?'
+            },
+            options: [
+              { ko: 'Excursion Operator', en: 'Excursion Operator' },
+              { ko: 'Consolidator', en: 'Consolidator' },
+              { ko: 'BSP', en: 'BSP' }
+            ],
+            correctIndex: 0,
+            explanation: {
+              ko: '기항지 현지 업체(Excursion Operator)는 해당 선박 정박 시간대에 맞춰 육상 액티비티를 독점 제공하는 공급자입니다.',
+              en: 'Excursion Operators run the physical onshore activities and feed bookings via local systems.'
+            }
+          }
+        },
+        {
+          narration: {
+            ko: '2단계: 여행사(Agency)가 B2B 도매 협력사(Wholesaler) 시스템을 활용해 크루즈 선실과 연계 기항지 투어를 하나의 묶음 패키지로 주문 신청합니다.',
+            en: 'Step 2: The Agency bundles cruise staterooms and shore tours into one single reservation via a wholesale platform.'
+          },
+          activeNodes: ['agency', 'wholesaler', 'oms'],
+          activeConnections: [
+            { from: 'agency', to: 'wholesaler' },
+            { from: 'wholesaler', to: 'oms' }
+          ],
+          quiz: {
+            question: {
+              ko: '크루즈선이 중간에 승객을 위해 일시적으로 정박하는 항구를 칭하는 지리적 용어는?',
+              en: 'What is the maritime travel term for intermediate transit stops along a cruise route?'
+            },
+            options: [
+              { ko: 'Port of Call', en: 'Port of Call' },
+              { ko: 'Home Port', en: 'Home Port' },
+              { ko: 'Hub Port', en: 'Hub Port' }
+            ],
+            correctIndex: 0,
+            explanation: {
+              ko: '기항지(Port of Call)는 여정 도중 관광을 위해 잠시 들르는 정박 항만을 가리킵니다.',
+              en: 'A Port of Call is a scheduled stopover port where excursions occur, distinct from the embarkation Home Port.'
+            }
+          }
+        },
+        {
+          narration: {
+            ko: '3단계: 결제가 수금되면 결제 게이트웨이가 개입하여 크루즈 라인 대금과 현지 투어 대금의 정산 비중을 분리 계산합니다.',
+            en: 'Step 3: When booking payment is collected, settlement criteria split transaction funds between the operator and local vendors.'
+          },
+          activeNodes: ['wholesaler', 'clearinghouse', 'oms', 'excursion_op'],
+          activeConnections: [
+            { from: 'wholesaler', to: 'clearinghouse' },
+            { from: 'oms', to: 'clearinghouse' },
+            { from: 'excursion_op', to: 'clearinghouse' }
+          ],
+          quiz: {
+            question: {
+              ko: '여러 공급처 상품이 복합 결제될 때, 대리 지불 계약 조건에 입각해 정산액을 쪼개어 자동 전송하는 핀테크 기능을 일컫는 단어는?',
+              en: 'What mechanism routes portions of a unified customer payment to different downstream vendors dynamically?'
+            },
+            options: [
+              { ko: 'Split Payment', en: 'Split Payment' },
+              { ko: 'Voucher Credit', en: 'Voucher Credit' },
+              { ko: 'DCC Settlement', en: 'DCC Settlement' }
+            ],
+            correctIndex: 0,
+            explanation: {
+              ko: '분할 결제(Split Payment)는 단일 결제 거래를 여러 공급 파트너의 몫으로 나누어 정산 정산하는 금융 연동 방식입니다.',
+              en: 'Split Payment handles automated revenue disbursement among multiple operational partners.'
+            }
+          }
+        },
+        {
+          narration: {
+            ko: '4단계: 기항지 관광 실행 완료 후, 정산소(Clearinghouse)가 도매상 및 판매 대리점에 약정된 판매 대행 수수료(Commission)를 계산하여 입금 처리합니다.',
+            en: 'Step 4: Once excursions complete, the Clearinghouse distributes accrued commission splits to the wholesaler and booking agency.'
+          },
+          activeNodes: ['clearinghouse', 'wholesaler', 'agency'],
+          activeConnections: [
+            { from: 'wholesaler', to: 'clearinghouse' }
+          ],
+          quiz: {
+            question: {
+              ko: '정산소가 최종 수금액에서 여행사 몫으로 배분하는 거래 기여 보상금 성격의 수익은 무엇인가요?',
+              en: 'What is the financial return distributed by operators or clearers to agencies as selling incentive?'
+            },
+            options: [
+              { ko: 'Markup', en: 'Markup' },
+              { ko: 'Commission', en: 'Commission' },
+              { ko: 'Net Rate', en: 'Net Rate' }
+            ],
+            correctIndex: 1,
+            explanation: {
+              ko: '판매 수수료(Commission)는 소매 판매 대행에 대응하여 공급자나 정산 대행사가 대리점에 지급하는 비율제 보상입니다.',
+              en: 'Commission is the percent-based distribution payment rewarded for driving merchant volume.'
+            }
+          }
+        }
+      ]
+    },
+
+    // ==================== COMMON VERTICAL ====================
+    {
+      id: 'common_basic',
+      vertical: 'common',
+      level: 'basic',
+      title: {
+        ko: '공통/표준 기초: 데이터 규격(EDIFACT/JSON) 및 식별자 흐름',
+        en: 'Common Basic: Data Standards & Identifiers Flow'
+      },
+      nodes: [
+        { id: 'agent', label: { ko: '대리점 단말', en: 'Agent Terminal' }, x: 0.15, y: 0.5, cat: 'hotel-dist' },
+        { id: 'middleware', label: { ko: '데이터 변환기', en: 'Middleware' }, x: 0.4, y: 0.5, cat: 'standards' },
+        { id: 'gds', label: 'GDS / Core', x: 0.65, y: 0.3, cat: 'standards' },
+        { id: 'registry', label: { ko: 'IATA 식별자 센터', en: 'IATA Registry' }, x: 0.85, y: 0.5, cat: 'codes' }
+      ],
+      connections: [
+        { from: 'agent', to: 'middleware' },
+        { from: 'middleware', to: 'gds' },
+        { from: 'gds', to: 'registry' }
+      ],
+      steps: [
+        {
+          narration: {
+            ko: '1단계: 여행사 단말에서 최신 웹 표준인 JSON 형식의 검색 요건 데이터가 발송되어 내부 미들웨어에 전달됩니다.',
+            en: 'Step 1: The travel terminal initiates a search query outputted in modern web-standard JSON format.'
+          },
+          activeNodes: ['agent', 'middleware'],
+          activeConnections: [
+            { from: 'agent', to: 'middleware' }
+          ],
+          quiz: {
+            question: {
+              ko: '최근 웹 API에서 주로 쓰이는 가볍고 읽기 편한 텍스트 기반의 데이터 교환 포맷은?',
+              en: 'Which lightweight, human-readable data format is standard in modern web APIs?'
+            },
+            options: [
+              { ko: 'XML', en: 'XML' },
+              { ko: 'JSON', en: 'JSON' },
+              { ko: 'EDIFACT', en: 'EDIFACT' }
+            ],
+            correctIndex: 1,
+            explanation: {
+              ko: 'JSON(JavaScript Object Notation)은 경량 구조화 데이터를 주고받을 때 널리 쓰이는 표준 텍스트 규격입니다.',
+              en: 'JSON is key-value formatted syntax dominant in modern HTTP REST API communication.'
+            }
+          }
+        },
+        {
+          narration: {
+            ko: '2단계: 데이터 변환기(Middleware)는 가벼운 JSON 형태의 메시지를 전통적 호스트 연동 규격인 UN/EDIFACT 포맷으로 변환(Translation)합니다.',
+            en: 'Step 2: The Middleware translates the web JSON structure into the UN/EDIFACT format for GDS mainframe ingestion.'
+          },
+          activeNodes: ['middleware', 'gds'],
+          activeConnections: [
+            { from: 'middleware', to: 'gds' }
+          ],
+          quiz: {
+            question: {
+              ko: '레거시 항공 예약 및 GDS 전문 전송에 수십 년간 널리 사용되어 온 구조화 데이터 국제 표준 전송 규격은?',
+              en: 'What international legacy syntax governs EDI transactions across shipping and air distribution systems?'
+            },
+            options: [
+              { ko: 'UN/EDIFACT', en: 'UN/EDIFACT' },
+              { ko: 'JSON', en: 'JSON' },
+              { ko: 'HTML5', en: 'HTML5' }
+            ],
+            correctIndex: 0,
+            explanation: {
+              ko: 'EDIFACT(Electronic Data Interchange for Administration, Commerce and Transport)는 레거시 유통 통신의 표준 포맷입니다.',
+              en: 'UN/EDIFACT is the traditional structured syntax used in CRS and GDS terminal communication.'
+            }
+          }
+        },
+        {
+          narration: {
+            ko: '3단계: GDS는 송신처의 식별 정보인 PCC(Pseudo City Code) 및 IATA 대리점 식별 코드를 검증하여 거래 권한을 확인합니다.',
+            en: 'Step 3: The GDS authenticates the agent using unique ID registers including PCC and IATA numeric codes.'
+          },
+          activeNodes: ['gds', 'registry'],
+          activeConnections: [
+            { from: 'gds', to: 'registry' }
+          ],
+          quiz: {
+            question: {
+              ko: 'GDS 시스템 내부에서 특정 여행사 사무실의 단말기 그룹과 권한 범위를 식별하는 3~8글자의 식별 코드는?',
+              en: 'What 3-to-8 alphanumeric identifier defines an agency location and credentials inside a GDS host?'
+            },
+            options: [
+              { ko: 'PCC (Pseudo City Code)', en: 'PCC (Pseudo City Code)' },
+              { ko: 'IATA Numeric Code', en: 'IATA Numeric Code' },
+              { ko: 'ISO Country Code', en: 'ISO Country Code' }
+            ],
+            correctIndex: 0,
+            explanation: {
+              ko: 'PCC(Pseudo City Code)는 GDS가 특정 대리점 사무실 위치 및 보유 단말기의 보안 환경을 제어하기 위해 할당하는 고유 기호입니다.',
+              en: 'PCC identifies the specific agency office branch config set in GDS terminal profiles.'
+            }
+          }
+        },
+        {
+          narration: {
+            ko: '4단계: 검증이 끝나면 표준 IATA/ICAO 3레터 공항 코드와 통화 단위 코드(ISO 4217) 데이터를 대입해 정식 규격 전문으로 거래를 요청합니다.',
+            en: 'Step 4: Transactions execute validating airport codes and ISO currency codes across registry files.'
+          },
+          activeNodes: ['registry', 'gds', 'middleware', 'agent'],
+          activeConnections: [
+            { from: 'gds', to: 'registry' },
+            { from: 'middleware', to: 'gds' },
+            { from: 'agent', to: 'middleware' }
+          ],
+          quiz: {
+            question: {
+              ko: 'IATA 공항 코드와 ICAO 공항 코드의 길이는 각각 몇 글자일까요?',
+              en: 'What are the character lengths of IATA and ICAO airport codes respectively?'
+            },
+            options: [
+              { ko: 'IATA: 3글자, ICAO: 4글자', en: 'IATA: 3 letters, ICAO: 4 letters' },
+              { ko: 'IATA: 4글자, ICAO: 3글자', en: 'IATA: 4 letters, ICAO: 3 letters' },
+              { ko: 'IATA: 2글자, ICAO: 3글자', en: 'IATA: 2 letters, ICAO: 3 letters' }
+            ],
+            correctIndex: 0,
+            explanation: {
+              ko: 'IATA는 3자리(예: ICN), ICAO는 4자리(예: RKSI) 표준 도시/공항 약어 식별자를 운용합니다.',
+              en: 'IATA codes are 3-letter passenger identifiers, while ICAO codes are 4-letter operational routing tags.'
+            }
+          }
+        }
+      ]
+    },
+    {
+      id: 'common_advanced',
+      vertical: 'common',
+      level: 'advanced',
+      title: {
+        ko: '공통/표준 심화: 다국어 통화 결제 및 DCC 정산 흐름',
+        en: 'Common Advanced: Foreign Currency Settlement & DCC Flow'
+      },
+      nodes: [
+        { id: 'customer', label: { ko: '카드 고객', en: 'Cardholder' }, x: 0.1, y: 0.5, cat: 'customer' },
+        { id: 'ota', label: { ko: '가맹점 (OTA)', en: 'Merchant (OTA)' }, x: 0.32, y: 0.5, cat: 'hotel-dist' },
+        { id: 'pg', label: { ko: 'PG 대행사', en: 'Payment Gateway' }, x: 0.54, y: 0.3, cat: 'pay' },
+        { id: 'network', label: { ko: '카드 브랜드사', en: 'Card Network' }, x: 0.76, y: 0.5, cat: 'pay' },
+        { id: 'acquirer', label: { ko: '매입 은행', en: 'Acquiring Bank' }, x: 0.54, y: 0.7, cat: 'pay' }
+      ],
+      connections: [
+        { from: 'customer', to: 'ota' },
+        { from: 'ota', to: 'pg' },
+        { from: 'pg', to: 'network' },
+        { from: 'pg', to: 'acquirer' },
+        { from: 'acquirer', to: 'network' }
+      ],
+      steps: [
+        {
+          narration: {
+            ko: '1단계: 가맹점(OTA)은 다국어 가격 표시 API를 통해 고객 국적을 고려하여 자국 통화 결제 가격을 제공합니다.',
+            en: 'Step 1: The Merchant platform presents pricing in multiple international currencies utilizing live exchange rate feeds.'
+          },
+          activeNodes: ['customer', 'ota'],
+          activeConnections: [
+            { from: 'customer', to: 'ota' }
+          ],
+          quiz: {
+            question: {
+              ko: 'ISO 4217 표준 통화 코드 규격에 따른 한국 원화와 미국 달러의 고유 식별 명칭은?',
+              en: 'What are the 3-letter ISO 4217 currency identifiers for South Korean Won and United States Dollar?'
+            },
+            options: [
+              { ko: 'KRW / USD', en: 'KRW / USD' },
+              { ko: 'KOR / USA', en: 'KOR / USA' },
+              { ko: 'WON / DOL', en: 'WON / DOL' }
+            ],
+            correctIndex: 0,
+            explanation: {
+              ko: 'ISO 4217은 통화 거래 시 통용되는 공식 3자리 코드 표기(예: KRW, USD, EUR) 표준입니다.',
+              en: 'ISO 4217 specifies standard 3-character alphabetic codes to represent global currencies.'
+            }
+          }
+        },
+        {
+          narration: {
+            ko: '2단계: 결제 요청 시 PG(결제대행사)가 개입하여 고객에게 현지 현찰 가격에 환전 수수료가 포함된 자국 통화 결제(DCC) 옵션을 제안합니다.',
+            en: 'Step 2: The PG presents a Dynamic Currency Conversion (DCC) option, displaying checkout pricing in the cardholder\'s home currency.'
+          },
+          activeNodes: ['customer', 'ota', 'pg'],
           activeConnections: [
             { from: 'customer', to: 'ota' },
-            { from: 'ota', to: 'ndc' },
-            { from: 'ndc', to: 'crs' }
-          ]
+            { from: 'ota', to: 'pg' }
+          ],
+          quiz: {
+            question: {
+              ko: '해외 결제 시 가맹점이 실시간 환율을 반영해 고객의 카드 발행 국가 통화로 즉시 변환하여 결제금액을 고정하는 서비스는?',
+              en: 'What card payment feature lets international travelers lock in prices using their card\'s billing currency?'
+            },
+            options: [
+              { ko: 'DCC (Dynamic Currency Conversion)', en: 'DCC (Dynamic Currency Conversion)' },
+              { ko: 'Direct Settlement', en: 'Direct Settlement' },
+              { ko: 'VCC Autocharge', en: 'VCC Autocharge' }
+            ],
+            correctIndex: 0,
+            explanation: {
+              ko: 'DCC(Dynamic Currency Conversion, 자국통화결제)는 가맹점에서 거래 통화를 카드 소지자 통화로 즉시 전환 및 고정하는 유료 서비스입니다.',
+              en: 'DCC converts foreign transaction costs to cardholder billing currency at the point of sale.'
+            }
+          }
         },
         {
           narration: {
-            ko: '고객이 상품을 선택하면 기존 PNR/e-Ticket 대신 단일 주문 문서인 ONE Order(Order)가 생성되어 항공사 시스템에 직접 등록됩니다.',
-            en: 'Upon product selection, a single consolidated ONE Order (Order) is created and stored in the airline system, replacing legacy PNRs and e-Tickets.'
+            ko: '3단계: 카드 소지자가 서명하면 거래 데이터가 카드 네트워크사(Network)와 매입 은행(Acquiring Bank)을 타며 원화 청구와 현지 대금 정산이 승인됩니다.',
+            en: 'Step 3: Upon approval, the transaction routes through the Card Network to clear exchange liabilities with the Acquiring Bank.'
           },
-          activeNodes: ['ota', 'ndc', 'crs'],
+          activeNodes: ['pg', 'acquirer', 'network'],
           activeConnections: [
-            { from: 'ota', to: 'ndc' },
-            { from: 'ndc', to: 'crs' }
-          ]
+            { from: 'pg', to: 'acquirer' },
+            { from: 'acquirer', to: 'network' }
+          ],
+          quiz: {
+            question: {
+              ko: '가맹점과 계약하여 카드 결제 거래를 승인 대행하고 실물 매입을 처리하는 금융 기관은?',
+              en: 'Which institution contracts with merchants to authorize transactions and manage clearing files?'
+            },
+            options: [
+              { ko: 'Acquiring Bank (매입사)', en: 'Acquiring Bank (Acquirer)' },
+              { ko: 'Issuing Bank (발급사)', en: 'Issuing Bank (Issuer)' },
+              { ko: 'Clearinghouse', en: 'Clearinghouse' }
+            ],
+            correctIndex: 0,
+            explanation: {
+              ko: '매입 은행(Acquirer)은 가맹점의 계좌를 개설하고 카드 거래 전표를 브랜드사(Visa/Mastercard)로 넘겨 결제 대금을 받아 주는 금융사입니다.',
+              en: 'The Acquiring Bank captures transactions from the merchant and manages processing routing.'
+            }
+          }
         },
         {
           narration: {
-            ko: '결제 시 BSP/ARC 외에도 가상신용카드(VCC)나 핀테크 간편결제를 이용하여 항공사로 직접 정산(Direct Settlement)할 수 있습니다.',
-            en: 'During payment, direct settlement to the airline is possible using Virtual Credit Cards (VCC) or fintech solutions, alongside BSP/ARC.'
+            ko: '4단계: 결제 정산이 완료되면 가맹점 계좌 통화로 실시간 수수료가 배분 정산되어 OTA에 입금 지급 처리됩니다.',
+            en: 'Step 4: Once transaction balances are audited, the funds are paid out to the Merchant in their default bank currency.'
           },
-          activeNodes: ['ota', 'settlement', 'bsp', 'crs'],
+          activeNodes: ['network', 'acquirer', 'pg', 'ota'],
           activeConnections: [
-            { from: 'ota', to: 'settlement' },
-            { from: 'ota', to: 'bsp' },
-            { from: 'crs', to: 'settlement' },
-            { from: 'crs', to: 'bsp' }
-          ]
-        },
-        {
-          narration: {
-            ko: '부가서비스(Ancillaries) 구매 및 일정 변경 등 주문의 사후 관리(Servicing)가 NDC API를 통해 실시간으로 주문(Order)에 반영됩니다.',
-            en: 'Post-booking servicing, such as purchasing ancillaries or changing schedules, is handled in real time via NDC API and directly updated in the Order.'
-          },
-          activeNodes: ['customer', 'ota', 'ndc', 'crs'],
-          activeConnections: [
-            { from: 'customer', to: 'ota' },
-            { from: 'ota', to: 'ndc' },
-            { from: 'ndc', to: 'crs' }
-          ]
-        },
-        {
-          narration: {
-            ko: '현대적 유통 학습 완료! NDC와 ONE Order는 항공사가 직접 제품 구성 및 고객 관계를 제어하고, 유통 단계를 간소화하며 비용을 대폭 절감합니다.',
-            en: 'Modern distribution learning complete! NDC and ONE Order enable airlines to directly control offers and customer relationships, streamlining distribution and cutting costs.'
-          },
-          activeNodes: ['customer', 'ota', 'ndc', 'settlement', 'bsp', 'crs'],
-          activeConnections: []
+            { from: 'network', to: 'acquirer' },
+            { from: 'acquirer', to: 'pg' },
+            { from: 'pg', to: 'ota' }
+          ],
+          quiz: {
+            question: {
+              ko: '카드사 매입 정산 주기에서 국제 표준 거래 송신 포맷으로 금융 업계 전반에 합의된 ISO 메시지 규격은?',
+              en: 'What international ISO standard dictates transaction messaging formats between banking switches?'
+            },
+            options: [
+              { ko: 'ISO 20022 / ISO 8583', en: 'ISO 20022 / ISO 8583' },
+              { ko: 'ISO 9001', en: 'ISO 9001' },
+              { ko: 'EDIFACT Standard', en: 'EDIFACT Standard' }
+            ],
+            correctIndex: 0,
+            explanation: {
+              ko: '금융 통신 표준인 ISO 8583 및 ISO 20022는 세계 은행망 카드 대금 정산 전문 포맷의 표준입니다.',
+              en: 'ISO 8583 (cards) and ISO 20022 (banking messages) establish schemas for financial data exchange.'
+            }
+          }
         }
       ]
     }
   ];
 
-  function renderClassroom(){
+  window.CLASSES = CLASSES;
+
+  function renderClassroom() {
     stopClassroom();
     stopGraph();
 
-    main.innerHTML = `<div class="crumbs"><a href="#/">${esc(t('home2'))}</a> › ${esc(t('classroom'))}</div>
+    // Draw wrapper layout with vertical tabs, level selectors, narration & quiz box
+    main.innerHTML = `
+      <div class="crumbs"><a href="#/">${esc(t('home2'))}</a> › ${esc(t('classroom'))}</div>
       <div class="sec-title" style="margin-top:0">${esc(t('classroom'))}</div>
       <p style="color:var(--muted);margin:-6px 0 14px">${esc(t('classroomPh'))}</p>
       
       <div class="classroom-wrap">
         <div class="classroom-left">
-          <div class="classroom-tabs">
-            <button class="classroom-tab ${classroomClassId==='class101'?'active':''}" data-class="class101">Class 101</button>
-            <button class="classroom-tab ${classroomClassId==='class201'?'active':''}" data-class="class201">Class 201</button>
+          <!-- Vertical Tabs -->
+          <div class="classroom-verticals" id="classVerticalTabs">
+            <button class="classroom-tab active" data-vertical="air">${esc(t('verticalAir'))}</button>
+            <button class="classroom-tab" data-vertical="hotel">${esc(t('verticalHotel'))}</button>
+            <button class="classroom-tab" data-vertical="cruise">${esc(t('verticalCruise'))}</button>
+            <button class="classroom-tab" data-vertical="common">${esc(t('verticalCommon'))}</button>
           </div>
+          <!-- Level Toggles -->
+          <div class="classroom-levels" id="classLevelToggles" style="display:flex; gap:10px; margin-top:10px;">
+            <button class="classroom-btn active" data-level="basic" style="flex:1;">${esc(t('levelBasic'))}</button>
+            <button class="classroom-btn" data-level="advanced" style="flex:1;">${esc(t('levelAdvanced'))}</button>
+          </div>
+          
           <div class="classroom-content">
             <h3 class="classroom-title" id="classTitle"></h3>
             <div class="classroom-step-count" id="classStepCount"></div>
             <div class="classroom-narration" id="classNarration"></div>
+            
+            <!-- Interactive Quiz Component -->
+            <div id="classroomQuiz" class="quiz-box" style="display:none; border:1px solid var(--border); padding:12px; margin-top:12px; background:var(--surface-2); border-radius:4px;">
+              <div class="quiz-question" id="quizQuestion" style="font-weight:600; margin-bottom:8px;"></div>
+              <div class="quiz-options" id="quizOptions" style="display:flex; flex-direction:column; gap:6px;"></div>
+              <div class="quiz-feedback" id="quizFeedback" style="margin-top:10px; font-weight:600; font-size:0.9rem; display:none;"></div>
+            </div>
           </div>
-          <div class="classroom-controls">
+          
+          <div class="classroom-controls" style="margin-top:auto;">
             <button class="classroom-btn classroom-btn-secondary" id="classBtnBack">${esc(t('btnBack'))}</button>
             <button class="classroom-btn classroom-btn-primary" id="classBtnNext">${esc(t('btnNext'))}</button>
           </div>
         </div>
-        <div class="classroom-right">
-          <canvas id="classroomCanvas"></canvas>
+        
+        <div class="classroom-right" style="position:relative; flex:1; background:var(--paper); min-height:400px; display:flex; align-items:center; justify-content:center;">
+          <!-- Standard Responsive SVG Container -->
+          <svg id="classroomSvg" viewBox="0 0 800 500" width="100%" height="100%" style="display:block; overflow:visible;">
+            <defs>
+              <!-- High quality CSS drop shadow glow for active nodes -->
+              <filter id="svgGlow" x="-30%" y="-30%" width="160%" height="160%">
+                <feGaussianBlur stdDeviation="8" result="blur" />
+                <feComposite in="SourceGraphic" in2="blur" operator="over" />
+              </filter>
+            </defs>
+            <g id="svgConnections"></g>
+            <g id="svgFlowParticles"></g>
+            <g id="svgNodes"></g>
+          </svg>
         </div>
-      </div>`;
+      </div>
+    `;
 
     renderSidebar(null);
 
-    const canvas = $('#classroomCanvas'), ctx = canvas.getContext('2d');
+    // Application logic state
+    let currentVertical = 'air';
+    let currentLevel = 'basic';
+    let currentStep = 0;
+    let quizAnsweredCorrectly = false;
+
     const catColor = id => (catById.get(id)||{}).color || '#888';
-    let W = 0, H = 0, dpr = Math.min(window.devicePixelRatio||1, 2);
-    let particleT = 0;
 
-    function resize(){
-      const rightPanel = $('.classroom-right');
-      if(!rightPanel) return;
-      W = rightPanel.clientWidth;
-      H = Math.max(400, Math.min(600, Math.round(window.innerHeight * 0.6)));
-      canvas.style.height = H + 'px';
-      canvas.style.width = '100%';
-      canvas.width = W * dpr;
-      canvas.height = H * dpr;
-      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    // Render nodes and connections to SVG
+    function updateSVG() {
+      const cls = CLASSES.find(c => c.vertical === currentVertical && c.level === currentLevel);
+      if (!cls) return;
+
+      const step = cls.steps[currentStep];
+      const activeNodes = step.activeNodes || [];
+      const activeConns = step.activeConnections || [];
+
+      const nodeG = document.getElementById('svgNodes');
+      const connG = document.getElementById('svgConnections');
+      const particleG = document.getElementById('svgFlowParticles');
+
+      if (!nodeG || !connG || !particleG) return;
+
+      nodeG.innerHTML = '';
+      connG.innerHTML = '';
+      particleG.innerHTML = '';
+
+      const width = 800;
+      const height = 500;
+
+      // Helper mapping coordinate ratio to container pixels
+      const getCoords = (nodeId) => {
+        const node = cls.nodes.find(n => n.id === nodeId);
+        return node ? { x: node.x * width, y: node.y * height, cat: node.cat } : { x: 0, y: 0, cat: '' };
+      };
+
+      // 1. Draw connection lines
+      cls.connections.forEach((conn) => {
+        const p1 = getCoords(conn.from);
+        const p2 = getCoords(conn.to);
+        const isActive = activeConns.some(ac => 
+          (ac.from === conn.from && ac.to === conn.to) || (ac.from === conn.to && ac.to === conn.from)
+        );
+
+        const color = isActive ? catColor(p1.cat) : (document.documentElement.dataset.theme === 'dark' ? '#262d47' : '#e3e6f0');
+        const opacity = isActive ? '1.0' : '0.15';
+        const strokeWidth = isActive ? '3' : '1.5';
+
+        // Base path
+        const line = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+        line.setAttribute('id', `p_${conn.from}_${conn.to}`);
+        line.setAttribute('d', `M ${p1.x} ${p1.y} L ${p2.x} ${p2.y}`);
+        line.setAttribute('stroke', color);
+        line.setAttribute('stroke-width', strokeWidth);
+        line.setAttribute('opacity', opacity);
+        line.setAttribute('fill', 'none');
+        connG.appendChild(line);
+
+        // 2. Draw animated flow particles using SMIL <animateMotion>
+        if (isActive) {
+          const flowId = `path_${conn.from}_${conn.to}`;
+          const directionPath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+          directionPath.setAttribute('id', flowId);
+          // Ensure path follows the correct direction from activeConnections definition
+          const flowDir = activeConns.find(ac => ac.from === conn.from && ac.to === conn.to);
+          const start = flowDir ? p1 : p2;
+          const end = flowDir ? p2 : p1;
+          directionPath.setAttribute('d', `M ${start.x} ${start.y} L ${end.x} ${end.y}`);
+          directionPath.setAttribute('fill', 'none');
+          directionPath.setAttribute('stroke', 'none');
+          particleG.appendChild(directionPath);
+
+          // Particle circle animating along the path
+          const particle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+          particle.setAttribute('r', '5');
+          particle.setAttribute('fill', '#ffffff');
+          particle.setAttribute('filter', 'url(#svgGlow)');
+
+          const animate = document.createElementNS('http://www.w3.org/2000/svg', 'animateMotion');
+          animate.setAttribute('dur', '1.8s');
+          animate.setAttribute('repeatCount', 'indefinite');
+          
+          const mpath = document.createElementNS('http://www.w3.org/2000/svg', 'mpath');
+          mpath.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', `#${flowId}`);
+          
+          animate.appendChild(mpath);
+          particle.appendChild(animate);
+          particleG.appendChild(particle);
+        }
+      });
+
+      // 3. Draw Nodes
+      cls.nodes.forEach(node => {
+        const cx = node.x * width;
+        const cy = node.y * height;
+        const color = catColor(node.cat);
+        const isActive = activeNodes.includes(node.id);
+
+        const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+        g.setAttribute('class', `node-group ${isActive ? 'active' : 'inactive'}`);
+        g.setAttribute('transform', `translate(${cx}, ${cy})`);
+        g.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+        if (!isActive) g.style.opacity = '0.2';
+
+        // Base circle
+        const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+        circle.setAttribute('r', isActive ? '24' : '18');
+        circle.setAttribute('fill', color);
+        if (isActive) {
+          circle.setAttribute('stroke', '#ffffff');
+          circle.setAttribute('stroke-width', '2.5');
+          circle.setAttribute('filter', 'url(#svgGlow)');
+        }
+        g.appendChild(circle);
+
+        // Label text inside circle (Abbr or first char)
+        const textAbbr = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+        const labelStr = typeof node.label === 'object' ? (node.label[LANG] || node.label.en) : node.label;
+        textAbbr.textContent = labelStr.substring(0, 4);
+        textAbbr.setAttribute('text-anchor', 'middle');
+        textAbbr.setAttribute('y', '5');
+        textAbbr.setAttribute('fill', '#ffffff');
+        textAbbr.setAttribute('font-size', '10');
+        textAbbr.setAttribute('font-weight', '700');
+        g.appendChild(textAbbr);
+
+        // Description text below circle
+        const textLabel = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+        textLabel.textContent = labelStr;
+        textLabel.setAttribute('text-anchor', 'middle');
+        textLabel.setAttribute('y', isActive ? '42' : '34');
+        textLabel.setAttribute('fill', document.documentElement.dataset.theme === 'dark' ? '#f3f5ff' : '#0b1020');
+        textLabel.setAttribute('font-size', '12');
+        textLabel.setAttribute('font-weight', isActive ? '700' : '500');
+        g.appendChild(textLabel);
+
+        nodeG.appendChild(g);
+      });
     }
-    resize();
-    classroomResizeFn = resize;
-    window.addEventListener('resize', classroomResizeFn);
 
-    function updateClassroomStep(){
-      const cls = CLASSES.find(c => c.id === classroomClassId);
-      if(!cls) return;
+    // Define step and interactive quiz update logic
+    function updateClassroomStep() {
+      const cls = CLASSES.find(c => c.vertical === currentVertical && c.level === currentLevel);
+      if (!cls) return;
 
-      const titleText = cls.title[LANG] || cls.title.en;
-      $('#classTitle').textContent = titleText;
+      const step = cls.steps[currentStep];
+      const totalSteps = cls.steps.length;
 
-      const stepNum = classroomStep + 1;
-      const countText = LANG === 'ko' ? `단계 ${stepNum} / 5` : `Step ${stepNum} / 5`;
-      $('#classStepCount').textContent = countText;
+      // Title and Narration text updates
+      document.getElementById('classTitle').textContent = cls.title[LANG] || cls.title.en;
+      document.getElementById('classStepCount').textContent = LANG === 'ko' 
+        ? `단계 ${currentStep + 1} / ${totalSteps}` 
+        : `Step ${currentStep + 1} / ${totalSteps}`;
+      document.getElementById('classNarration').textContent = step.narration[LANG] || step.narration.en;
 
-      if(classroomFinished){
-        $('#classNarration').textContent = LANG === 'ko' 
-          ? '축하합니다! 학습을 완료하셨습니다. 다시 학습 버튼을 누르면 처음부터 다시 진행할 수 있습니다.'
-          : 'Congratulations! You have completed the learning module. Click Restart to start over.';
+      // Quiz Box rendering logic
+      const quizBox = document.getElementById('classroomQuiz');
+      const btnNext = document.getElementById('classBtnNext');
+
+      if (step.quiz) {
+        quizBox.style.display = 'block';
+        document.getElementById('quizQuestion').textContent = step.quiz.question[LANG] || step.quiz.question.en;
+        
+        const optionsContainer = document.getElementById('quizOptions');
+        optionsContainer.innerHTML = '';
+        
+        const feedback = document.getElementById('quizFeedback');
+        feedback.style.display = 'none';
+
+        step.quiz.options.forEach((opt, index) => {
+          const optionLabel = opt[LANG] || opt.en;
+          const optBtn = document.createElement('button');
+          optBtn.className = 'classroom-btn';
+          optBtn.style.textAlign = 'left';
+          optBtn.style.padding = '8px';
+          optBtn.style.width = '100%';
+          optBtn.textContent = optionLabel;
+
+          optBtn.addEventListener('click', () => {
+            // Verify correctness
+            if (index === step.quiz.correctIndex) {
+              optBtn.style.borderColor = 'green';
+              optBtn.style.color = 'green';
+              feedback.style.display = 'block';
+              feedback.style.color = 'green';
+              feedback.innerHTML = `${t('quizCorrect')} <br><span style="font-weight:400;color:var(--text);">${step.quiz.explanation[LANG] || step.quiz.explanation.en}</span>`;
+              quizAnsweredCorrectly = true;
+              btnNext.disabled = false;
+            } else {
+              optBtn.style.borderColor = 'red';
+              optBtn.style.color = 'red';
+              feedback.style.display = 'block';
+              feedback.style.color = 'red';
+              feedback.textContent = t('quizIncorrect');
+              quizAnsweredCorrectly = false;
+              btnNext.disabled = true;
+            }
+          });
+          optionsContainer.appendChild(optBtn);
+        });
+
+        // Gated navigation constraint: user must answer correct to click next
+        btnNext.disabled = !quizAnsweredCorrectly;
       } else {
-        const step = cls.steps[classroomStep];
-        $('#classNarration').textContent = step.narration[LANG] || step.narration.en;
+        quizBox.style.display = 'none';
+        btnNext.disabled = false;
       }
 
-      // Update buttons
-      const btnBack = $('#classBtnBack');
-      btnBack.disabled = classroomStep === 0;
-
-      const btnNext = $('#classBtnNext');
-      if(classroomStep < 4){
+      // Controls update
+      document.getElementById('classBtnBack').disabled = currentStep === 0;
+      if (currentStep === totalSteps - 1) {
+        btnNext.textContent = t('btnFinish');
+      } else {
         btnNext.textContent = t('btnNext');
-      } else {
-        btnNext.textContent = classroomFinished ? t('btnRestart') : t('btnFinish');
       }
+
+      updateSVG();
     }
 
-    // Attach listeners
-    $('.classroom-tabs').addEventListener('click', e => {
-      const btn = e.target.closest('.classroom-tab');
-      if(!btn) return;
-      const cid = btn.dataset.class;
-      if(cid && cid !== classroomClassId){
-        classroomClassId = cid;
-        classroomStep = 0;
-        classroomFinished = false;
-        document.querySelectorAll('.classroom-tab').forEach(t => t.classList.toggle('active', t.dataset.class === cid));
+    // Attach Event Handlers
+    document.getElementById('classVerticalTabs').addEventListener('click', ev => {
+      const tab = ev.target.closest('button[data-vertical]');
+      if (!tab) return;
+      document.querySelectorAll('#classVerticalTabs button').forEach(b => b.classList.remove('active'));
+      tab.classList.add('active');
+      currentVertical = tab.dataset.vertical;
+      currentStep = 0;
+      quizAnsweredCorrectly = false;
+      updateClassroomStep();
+    });
+
+    document.getElementById('classLevelToggles').addEventListener('click', ev => {
+      const toggle = ev.target.closest('button[data-level]');
+      if (!toggle) return;
+      document.querySelectorAll('#classLevelToggles button').forEach(b => b.classList.remove('active'));
+      toggle.classList.add('active');
+      currentLevel = toggle.dataset.level;
+      currentStep = 0;
+      quizAnsweredCorrectly = false;
+      updateClassroomStep();
+    });
+
+    document.getElementById('classBtnBack').addEventListener('click', () => {
+      if (currentStep > 0) {
+        currentStep--;
+        quizAnsweredCorrectly = true; // allow returning back without re-evaluating
         updateClassroomStep();
       }
     });
 
-    $('#classBtnBack').addEventListener('click', () => {
-      if(classroomFinished){
-        classroomFinished = false;
-      } else if(classroomStep > 0){
-        classroomStep--;
-      }
-      updateClassroomStep();
-    });
+    document.getElementById('classBtnNext').addEventListener('click', () => {
+      const cls = CLASSES.find(c => c.vertical === currentVertical && c.level === currentLevel);
+      if (!cls) return;
 
-    $('#classBtnNext').addEventListener('click', () => {
-      if(classroomStep < 4){
-        classroomStep++;
+      if (currentStep < cls.steps.length - 1) {
+        currentStep++;
+        quizAnsweredCorrectly = false;
+        updateClassroomStep();
       } else {
-        if(!classroomFinished){
-          classroomFinished = true;
-        } else {
-          classroomFinished = false;
-          classroomStep = 0;
+        // Completed last step: prompt restart or route redirection
+        if (typeof alert !== 'undefined') {
+          alert(LANG === 'ko' ? '학습을 모두 완료했습니다!' : 'Course finished successfully!');
         }
+        currentStep = 0;
+        quizAnsweredCorrectly = false;
+        updateClassroomStep();
       }
-      updateClassroomStep();
     });
 
-    function draw(){
-      ctx.clearRect(0, 0, W, H);
-      const dark = document.documentElement.dataset.theme === 'dark';
-      const cls = CLASSES.find(c => c.id === classroomClassId);
-      if(!cls) return;
-
-      const step = cls.steps[classroomStep];
-      if(!step) return;
-
-      // Active vs Inactive state
-      const activeNodes = classroomFinished ? cls.nodes.map(n => n.id) : step.activeNodes;
-      const activeConns = classroomFinished ? [] : (step.activeConnections || []);
-
-      const nodes = cls.nodes.map(n => {
-        return {
-          ...n,
-          px: n.x * W,
-          py: n.y * H,
-          isActive: activeNodes.includes(n.id)
-        };
-      });
-      const nodeMap = new Map(nodes.map(n => [n.id, n]));
-
-      // 1. Draw connections
-      cls.connections.forEach(conn => {
-        const n1 = nodeMap.get(conn.from);
-        const n2 = nodeMap.get(conn.to);
-        if(!n1 || !n2) return;
-
-        const isActiveConn = activeConns.some(ac => 
-          (ac.from === conn.from && ac.to === conn.to) || (ac.from === conn.to && ac.to === conn.from)
-        );
-
-        ctx.beginPath();
-        ctx.moveTo(n1.px, n1.py);
-        ctx.lineTo(n2.px, n2.py);
-
-        ctx.save();
-        if(isActiveConn){
-          ctx.strokeStyle = catColor(n1.cat);
-          ctx.lineWidth = 3;
-          ctx.globalAlpha = 1.0;
-          ctx.shadowBlur = 8;
-          ctx.shadowColor = catColor(n1.cat);
-        } else {
-          ctx.strokeStyle = dark ? '#262d47' : '#e3e6f0';
-          ctx.lineWidth = 1.5;
-          ctx.globalAlpha = 0.2;
-          ctx.shadowBlur = 0;
-        }
-        ctx.stroke();
-        ctx.restore();
-      });
-
-      // 2. Draw active connections particles
-      if(activeConns.length > 0){
-        activeConns.forEach(ac => {
-          const n1 = nodeMap.get(ac.from);
-          const n2 = nodeMap.get(ac.to);
-          if(!n1 || !n2) return;
-
-          const color = catColor(n1.cat);
-          const numParticles = 3;
-          for(let i=0; i<numParticles; i++){
-            const tVal = (particleT + i / numParticles) % 1.0;
-            const px = n1.px * (1 - tVal) + n2.px * tVal;
-            const py = n1.py * (1 - tVal) + n2.py * tVal;
-
-            ctx.save();
-            ctx.beginPath();
-            ctx.arc(px, py, 4.5, 0, 2*Math.PI);
-            ctx.fillStyle = '#ffffff';
-            ctx.shadowBlur = 8;
-            ctx.shadowColor = color;
-            ctx.fill();
-            ctx.restore();
-          }
-        });
-      }
-
-      // 3. Draw nodes
-      nodes.forEach(n => {
-        const color = catColor(n.cat);
-        const radius = n.isActive ? 22 : 16;
-
-        ctx.save();
-        if(n.isActive){
-          ctx.globalAlpha = 1.0;
-          ctx.shadowBlur = 12;
-          ctx.shadowColor = color;
-        } else {
-          ctx.globalAlpha = 0.2;
-          ctx.shadowBlur = 0;
-        }
-
-        ctx.beginPath();
-        ctx.arc(n.px, n.py, radius, 0, 2*Math.PI);
-        ctx.fillStyle = color;
-        ctx.fill();
-
-        if(n.isActive){
-          ctx.strokeStyle = dark ? '#ffffff' : '#0b1020';
-          ctx.lineWidth = 2.5;
-          ctx.stroke();
-        }
-        ctx.restore();
-
-        // Label below
-        ctx.save();
-        if(n.isActive){
-          ctx.globalAlpha = 1.0;
-          ctx.fillStyle = dark ? '#f3f5ff' : '#0b1020';
-          ctx.font = '700 13px ' + getComputedStyle(document.body).fontFamily;
-        } else {
-          ctx.globalAlpha = 0.3;
-          ctx.fillStyle = dark ? '#a3acca' : '#535d77';
-          ctx.font = '500 12px ' + getComputedStyle(document.body).fontFamily;
-        }
-        ctx.textAlign = 'center';
-        ctx.textBaseline = 'middle';
-
-        const labelText = typeof n.label === 'object' ? (LANG === 'ko' ? n.label.ko : n.label.en) : n.label;
-        ctx.fillText(labelText, n.px, n.py + radius + 16);
-        ctx.restore();
-      });
-    }
-
-    function loop(){
-      particleT = (particleT + 0.006) % 1.0;
-      draw();
-      classroomRAF = requestAnimationFrame(loop);
-    }
-
+    // Run initialization
     updateClassroomStep();
-    loop();
   }
 
   /* knowledge graph */
@@ -1734,8 +2772,8 @@ footer{color:var(--faint);font-family:var(--sans);font-size:.76rem;text-align:ce
               tip.style("opacity", 1);
             }
             
-            d3.selectAll(".node-group").classed("dimmed", n => n.id !== d.id && !isNeighbor(d.id, n.id));
-            d3.selectAll(".link").classed("dimmed", l => {
+            d3.selectAll("#kg-svg .node-group").classed("dimmed", n => n.id !== d.id && !isNeighbor(d.id, n.id));
+            d3.selectAll("#kg-svg .link").classed("dimmed", l => {
               const sId = typeof l.source === 'object' ? l.source.id : l.source;
               const tId = typeof l.target === 'object' ? l.target.id : l.target;
               return sId !== d.id && tId !== d.id;
@@ -1753,8 +2791,8 @@ footer{color:var(--faint);font-family:var(--sans);font-size:.76rem;text-align:ce
 
           g.on("mouseout", () => {
             d3.select("#kgTip").style("opacity", 0);
-            d3.selectAll(".node-group").classed("dimmed", false);
-            d3.selectAll(".link").classed("dimmed", false);
+            d3.selectAll("#kg-svg .node-group").classed("dimmed", false);
+            d3.selectAll("#kg-svg .link").classed("dimmed", false);
           });
 
           g.transition().duration(400).style("opacity", 1);
@@ -1874,7 +2912,7 @@ footer{color:var(--faint);font-family:var(--sans);font-size:.76rem;text-align:ce
         d3.zoomIdentity.translate(tx, ty).scale(scale)
       );
 
-      d3.selectAll(".node-group").classed("focused", d => d.id === id);
+      d3.selectAll("#kg-svg .node-group").classed("focused", d => d.id === id);
     }
   }
 
@@ -1884,7 +2922,7 @@ footer{color:var(--faint);font-family:var(--sans);font-size:.76rem;text-align:ce
       drawer.classList.remove("open");
     }
     activeTermId = null;
-    d3.selectAll(".node-group").classed("focused", false);
+    d3.selectAll("#kg-svg .node-group").classed("focused", false);
   }
 
   function updateDrawer(id) {
@@ -2060,19 +3098,19 @@ footer{color:var(--faint);font-family:var(--sans);font-size:.76rem;text-align:ce
   function handleSearchHighlight(query) {
     const q = query.trim().toLowerCase();
     if (!q) {
-      d3.selectAll(".node-group").classed("dimmed", false).classed("highlighted", false);
-      d3.selectAll(".link").classed("dimmed", false);
+      d3.selectAll("#kg-svg .node-group").classed("dimmed", false).classed("highlighted", false);
+      d3.selectAll("#kg-svg .link").classed("dimmed", false);
       return;
     }
 
     const results = search(q);
     const matchedIds = new Set(results.map(r => r.e.id));
 
-    d3.selectAll(".node-group")
+    d3.selectAll("#kg-svg .node-group")
       .classed("dimmed", d => matchedIds.size > 0 && !matchedIds.has(d.id))
       .classed("highlighted", d => matchedIds.has(d.id));
 
-    d3.selectAll(".link")
+    d3.selectAll("#kg-svg .link")
       .classed("dimmed", d => {
         const sId = typeof d.source === 'object' ? d.source.id : d.source;
         const tId = typeof d.target === 'object' ? d.target.id : d.target;

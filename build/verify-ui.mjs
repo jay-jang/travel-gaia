@@ -359,7 +359,7 @@ const { window } = dom;
 const { document } = window;
 
 // 3. Test route registrations and classroom UI elements
-await runAsyncTest('Classroom Route Registry and UI Elements', async () => {
+await runAsyncTest('Classroom SVG Layout and Interactive Quiz Elements', async () => {
   // Trigger hash change to #/classroom
   window.location.hash = '#/classroom';
   await new Promise(resolve => setTimeout(resolve, 200));
@@ -370,38 +370,70 @@ await runAsyncTest('Classroom Route Registry and UI Elements', async () => {
     throw new Error('Classroom layout wrapper (.classroom-wrap) not found in the DOM.');
   }
 
-  // Assert classroom title exists
-  const title = document.querySelector('#classTitle');
-  if (!title) {
-    throw new Error('Classroom title element (#classTitle) not found.');
-  }
-  if (!title.textContent.includes('Class 101')) {
-    throw new Error(`Expected classroom title to contain "Class 101", but got: "${title.textContent}"`);
+  // Verify existence of 4 Vertical tabs
+  const vertTabs = document.querySelectorAll('#classVerticalTabs .classroom-tab');
+  if (vertTabs.length !== 4) {
+    throw new Error(`Expected 4 vertical tabs, found: ${vertTabs.length}`);
   }
 
-  // Assert step count exists
-  const stepCount = document.querySelector('#classStepCount');
-  if (!stepCount) {
-    throw new Error('Classroom step count element (#classStepCount) not found.');
-  }
-  if (!stepCount.textContent) {
-    throw new Error('Classroom step count text is empty.');
+  // Verify existence of 2 Level selector toggles
+  const levelBtns = document.querySelectorAll('#classLevelToggles button');
+  if (levelBtns.length !== 2) {
+    throw new Error(`Expected 2 level selectors, found: ${levelBtns.length}`);
   }
 
-  // Assert tabs exist
-  const tabs = document.querySelectorAll('.classroom-tab');
-  if (tabs.length === 0) {
-    throw new Error('Classroom selection tabs (.classroom-tab) not found.');
-  }
-  if (tabs.length < 2) {
-    throw new Error(`Expected at least 2 classroom tabs, found: ${tabs.length}`);
+  // Verify that standard SVG container mounts correctly
+  const svg = document.querySelector('#classroomSvg');
+  if (!svg) {
+    throw new Error('SVG container (#classroomSvg) is missing.');
   }
 
-  // Assert navigation buttons exist
-  const btnBack = document.querySelector('#classBtnBack');
+  // Test interaction: Click Hotel vertical & verify node rendering
+  const hotelTab = Array.from(vertTabs).find(b => b.textContent.includes('Hotel') || b.dataset.vertical === 'hotel');
+  if (hotelTab) {
+    hotelTab.click();
+    await new Promise(resolve => setTimeout(resolve, 50));
+    
+    // Hotel Basic has 4 nodes (Guest, OTA, Bedbank, PMS)
+    const nodes = document.querySelectorAll('#classroomSvg .node-group');
+    if (nodes.length !== 4) {
+      throw new Error(`Expected 4 nodes for Hotel Basic flow, found: ${nodes.length}`);
+    }
+  } else {
+    throw new Error('Hotel vertical tab not found.');
+  }
+
+  // Verify gated navigation (Quiz validation checks)
   const btnNext = document.querySelector('#classBtnNext');
-  if (!btnBack || !btnNext) {
-    throw new Error('Classroom navigation buttons (#classBtnBack or #classBtnNext) not found.');
+  const quizBox = document.querySelector('#classroomQuiz');
+  
+  if (quizBox && quizBox.style.display !== 'none') {
+    // Assert next button is disabled on active quiz stage
+    if (!btnNext.disabled) {
+      throw new Error('Next button must be disabled until the active step quiz is answered correctly.');
+    }
+
+    // Trigger correct option click (find correct option based on correctIndex)
+    if (!window.CLASSES) {
+      throw new Error('window.CLASSES is not defined.');
+    }
+    const activeStep = window.CLASSES.find(c => c.vertical === 'hotel' && c.level === 'basic').steps[0];
+    const optionBtns = document.querySelectorAll('#quizOptions button');
+    const correctBtn = optionBtns[activeStep.quiz.correctIndex];
+    
+    if (correctBtn) {
+      correctBtn.click();
+      await new Promise(resolve => setTimeout(resolve, 50));
+
+      // Assert next button is now enabled
+      if (btnNext.disabled) {
+        throw new Error('Next button was not unlocked after selecting the correct answer.');
+      }
+    } else {
+      throw new Error('Correct quiz button not found.');
+    }
+  } else {
+    throw new Error('Quiz box is missing or not visible.');
   }
 });
 

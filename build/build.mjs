@@ -30,6 +30,25 @@ const CATEGORIES = [
 ];
 const catIds = new Set(CATEGORIES.map(c => c.id));
 
+// ---- verticals (big groupings); the categories above are their subcategories ----
+const VERTICALS = [
+  { id:'air',     short:'항공',      title:'Air',              color:'#1f6feb', desc:'항공 예약·운임·발권·공동운항.', desc_en:'Airline reservation, shopping, ticketing & inter-carrier.' },
+  { id:'lodging', short:'숙박',      title:'Lodging',          color:'#c0623d', desc:'호텔 재고·요금·유통.', desc_en:'Hotel inventory, rates & distribution.' },
+  { id:'ground',  short:'지상교통',  title:'Ground Transport', color:'#5f3dc4', desc:'렌터카·철도·복합운송.', desc_en:'Car rental, rail & multimodal ground transport.' },
+  { id:'cruise',  short:'크루즈',    title:'Cruise',           color:'#1098ad', desc:'크루즈 상품·선실·해상 유통.', desc_en:'Cruise products, cabins & sea-travel distribution.' },
+  { id:'common',  short:'산업 공통', title:'Cross-Industry',   color:'#444c5e', desc:'결제·식별자·표준·고객·규제 등 공통.', desc_en:'Payments, identifiers, standards, customer & regulation — shared.' },
+];
+const CAT_VERTICAL = {
+  'air-ops':'air','air-shop':'air','air-ticket':'air','air-partner':'air',
+  'hotel-rate':'lodging','hotel-dist':'lodging',
+  'car':'ground','rail':'ground',
+  'cruise':'cruise',
+  'pay':'common','codes':'common','customer':'common','standards':'common','insurance':'common','disruption':'common','sustainability':'common',
+};
+const vertOf = catId => CAT_VERTICAL[catId] || 'common';
+// annotate category metadata with its vertical
+for (const c of CATEGORIES) c.vertical = vertOf(c.id);
+
 const REL_TYPES = new Set(['sameAs','broader','narrower','parent','child','related','conflicts','replaces','contrasts']);
 const norm = s => String(s||'').toLowerCase().replace(/\s+/g,' ').trim();
 
@@ -70,6 +89,7 @@ const resolveRef = (ref, fromId) => {
 };
 for (const e of entries) {
   e.lastReviewed = e.lastReviewed || TODAY;
+  e.vertical = e.vertical || vertOf(e.category);   // ensure every entry carries its vertical
   if (!catIds.has(e.category)) badCat.push(`${e.id} (category=${e.category})`);
   if (e.status && !['active','deprecated','ambiguous'].includes(e.status)) badStatus.push(`${e.id} (status=${e.status})`);
   if (!e.sources || !e.sources.length) missingSource.push(e.id);
@@ -82,7 +102,8 @@ entries.sort((a,b) => a.term.localeCompare(b.term));
 // ---- assemble glossary + write ----
 const glossary = {
   meta: { name:'Travel Gaia', tagline:'여행 산업 용어 백과사전', generatedAt:TODAY,
-          entryCount:entries.length, categoryCount:CATEGORIES.length },
+          entryCount:entries.length, categoryCount:CATEGORIES.length, verticalCount:VERTICALS.length },
+  verticals: VERTICALS,
   categories: CATEGORIES,
   entries,
 };

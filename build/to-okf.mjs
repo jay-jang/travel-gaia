@@ -19,8 +19,28 @@ const catById = new Map(CATS.map(c => [c.id, c]));
 const idToCat = new Map(ENTRIES.map(e => [e.id, e.category]));
 const catName = c => (c && (c.title || c.short || c.id)) || '';
 const okfType = ct => String(ct || 'reference').split(/[-_\s]+/).map(w => w ? w[0].toUpperCase() + w.slice(1) : w).join(' ');
-// bundle-relative path to a concept by id
-const linkTo = (id) => { const cat = idToCat.get(id); return cat ? `/${cat}/${id}.md` : null; };
+
+// ---- verticals (big groupings) -> the 16 categories are their subcategories ----
+const VERTICALS = [
+  { id: 'air',     short: '항공',      title: 'Air',              desc_en: 'Airline reservation, shopping, ticketing and inter-carrier concepts.' },
+  { id: 'lodging', short: '숙박',      title: 'Lodging',          desc_en: 'Hotel inventory, rates and distribution.' },
+  { id: 'ground',  short: '지상교통',  title: 'Ground Transport', desc_en: 'Car rental, rail and multimodal ground transport.' },
+  { id: 'cruise',  short: '크루즈',    title: 'Cruise',           desc_en: 'Cruise products, cabins and sea-travel distribution.' },
+  { id: 'common',  short: '산업 공통', title: 'Cross-Industry',   desc_en: 'Payments, identifiers, standards, customer, regulation — shared across verticals.' },
+];
+const CAT_VERTICAL = {
+  'air-ops': 'air', 'air-shop': 'air', 'air-ticket': 'air', 'air-partner': 'air',
+  'hotel-rate': 'lodging', 'hotel-dist': 'lodging',
+  'car': 'ground', 'rail': 'ground',
+  'cruise': 'cruise',
+  'pay': 'common', 'codes': 'common', 'customer': 'common', 'standards': 'common',
+  'insurance': 'common', 'disruption': 'common', 'sustainability': 'common',
+};
+const vertOf = catId => CAT_VERTICAL[catId] || 'common';
+const vertById = new Map(VERTICALS.map(v => [v.id, v]));
+
+// bundle-relative path to a concept by id: /<vertical>/<category>/<id>.md
+const linkTo = (id) => { const cat = idToCat.get(id); return cat ? `/${vertOf(cat)}/${cat}/${id}.md` : null; };
 const esc = s => String(s == null ? '' : s);
 
 // ---- (re)create bundle dir ----
@@ -88,6 +108,7 @@ function conceptFrontmatter(e) {
     timestamp: `${(e.lastReviewed || TODAY)}T00:00:00Z`,
     // --- lossless extensions ---
     id: e.id,
+    vertical: vertOf(e.category),
     category: e.category,
     conceptType: e.conceptType || '',
     status: e.status || 'active',
@@ -107,33 +128,53 @@ function conceptFrontmatter(e) {
   return fm;
 }
 
-// ---- write concept files + per-category index ----
+// ---- write concept files + per-subcategory index, grouped by vertical ----
+// catsByVertical preserves CATS order within each vertical
+const catsByVertical = new Map(VERTICALS.map(v => [v.id, []]));
+for (const c of CATS) { const v = vertOf(c.id); (catsByVertical.get(v) || catsByVertical.set(v, []).get(v)).push(c); }
+
 for (const c of CATS) {
   const list = (entriesByCat.get(c.id) || []).slice().sort((a, b) => a.term.localeCompare(b.term));
   if (!list.length) continue;
-  mkdirSync(join(OKF, c.id), { recursive: true });
+  const v = vertOf(c.id);
+  const dir = join(OKF, v, c.id);
+  mkdirSync(dir, { recursive: true });
   for (const e of list) {
     const md = matter.stringify('\n' + conceptBody(e), conceptFrontmatter(e), { lineWidth: -1 });
-    writeFileSync(join(OKF, c.id, `${e.id}.md`), md);
+    writeFileSync(join(dir, `${e.id}.md`), md);
     fileCount++;
   }
-  // category index.md (reserved file: no frontmatter)
+  // subcategory index.md (reserved file: no frontmatter)
   const idx = [`# ${catName(c)}`, '', esc(c.desc_en || c.desc || '').trim(), ''];
   for (const e of list) idx.push(`* [${esc(e.term)}](${e.id}.md) - ${esc(e.definition).split(/(?<=\.)\s/)[0].slice(0, 140)}`);
-  writeFileSync(join(OKF, c.id, 'index.md'), idx.join('\n') + '\n');
+  writeFileSync(join(dir, 'index.md'), idx.join('\n') + '\n');
+}
+
+// ---- per-vertical index.md (lists its subcategories) ----
+for (const v of VERTICALS) {
+  const cats = (catsByVertical.get(v.id) || []).filter(c => (entriesByCat.get(c.id) || []).length);
+  if (!cats.length) continue;
+  const vidx = [`# ${v.title} — ${v.short}`, '', esc(v.desc_en || ''), '', '# Subcategories', ''];
+  for (const c of cats) {
+    const n = (entriesByCat.get(c.id) || []).length;
+    vidx.push(`* [${catName(c)}](${c.id}/) - ${esc(c.desc_en || c.desc || '')} (${n})`);
+  }
+  writeFileSync(join(OKF, v.id, 'index.md'), vidx.join('\n') + '\n');
 }
 
 // ---- root index.md (only place an index.md may carry frontmatter: okf_version) ----
 const rootIdx = [
   '---', 'okf_version: "0.1"', '---', '',
   `# ${esc(META.name || 'Travel Gaia')} — Knowledge Bundle`, '',
-  esc(META.tagline || '') + `  (${ENTRIES.length} concepts · ${CATS.length} categories · bilingual KO/EN)`, '',
-  'A cross-provider travel-industry terminology catalog as an OKF v0.1 bundle: each concept is one markdown file with YAML frontmatter; relationships and distinctions are bundle-relative cross-links.', '',
-  '# Categories', '',
+  esc(META.tagline || '') + `  (${ENTRIES.length} concepts · ${VERTICALS.length} verticals · ${CATS.length} subcategories · bilingual KO/EN)`, '',
+  'A cross-provider travel-industry terminology catalog as an OKF v0.1 bundle, organized as **verticals → subcategories → concepts**. Each concept is one markdown file with YAML frontmatter; relationships and distinctions are bundle-relative cross-links.', '',
+  '# Verticals', '',
 ];
-for (const c of CATS) {
-  const n = (entriesByCat.get(c.id) || []).length; if (!n) continue;
-  rootIdx.push(`* [${catName(c)}](${c.id}/) - ${esc(c.desc_en || c.desc || '')} (${n})`);
+for (const v of VERTICALS) {
+  const cats = (catsByVertical.get(v.id) || []).filter(c => (entriesByCat.get(c.id) || []).length);
+  if (!cats.length) continue;
+  const n = cats.reduce((a, c) => a + (entriesByCat.get(c.id) || []).length, 0);
+  rootIdx.push(`* [${v.title} — ${v.short}](${v.id}/) - ${esc(v.desc_en || '')} (${cats.length} subcategories, ${n} concepts)`);
 }
 writeFileSync(join(OKF, 'index.md'), rootIdx.join('\n') + '\n');
 
@@ -141,10 +182,10 @@ writeFileSync(join(OKF, 'index.md'), rootIdx.join('\n') + '\n');
 const log = [
   '# Travel Gaia — Update Log', '',
   `## ${TODAY}`,
-  `* **Re-architecture**: Restructured the catalog into an OKF v0.1 knowledge bundle (${fileCount} concept files across ${CATS.length} categories). \`build/build.mjs\` now consumes \`okf/\` as the source of truth.`,
+  `* **Restructure**: Reorganized the bundle into ${VERTICALS.length} verticals → ${CATS.length} subcategories → ${fileCount} concepts (okf/<vertical>/<subcategory>/<id>.md). Added a \`vertical\` field to every concept.`,
   '',
 ];
 writeFileSync(join(OKF, 'log.md'), log.join('\n') + '\n');
 
-console.log(`OKF bundle written -> okf/`);
-console.log(`concept files: ${fileCount} | categories: ${CATS.filter(c => (entriesByCat.get(c.id) || []).length).length} | + index.md (root + per-cat) + log.md`);
+console.log(`OKF bundle written -> okf/  (verticals -> subcategories -> concepts)`);
+console.log(`verticals: ${VERTICALS.length} | subcategories: ${CATS.filter(c => (entriesByCat.get(c.id) || []).length).length} | concepts: ${fileCount} | + index.md (root + per-vertical + per-subcategory) + log.md`);
