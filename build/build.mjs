@@ -91,9 +91,8 @@ writeFileSync(join(DATA,'glossary.json'), JSON.stringify(glossary,null,2));
 
 // ---- embed display fonts (base64 woff2, keeps single-file/offline) ----
 const FONTS = [
-  { file:'arch800.woff2', family:'Archivo', weight:800 },
-  { file:'sg700.woff2',   family:'Space Grotesk', weight:700 },
-  { file:'sg500.woff2',   family:'Space Grotesk', weight:500 },
+  { file:'ss4-400.woff2', family:'Source Serif 4', weight:400 },
+  { file:'ss4-600.woff2', family:'Source Serif 4', weight:600 },
 ];
 let fontCss = '';
 for (const f of FONTS) {

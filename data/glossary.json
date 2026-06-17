@@ -2,7 +2,7 @@
   "meta": {
     "name": "Travel Gaia",
     "tagline": "여행 산업 용어 백과사전",
-    "generatedAt": "2026-06-16",
+    "generatedAt": "2026-06-17",
     "entryCount": 327,
     "categoryCount": 16
   },
@@ -207,7 +207,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 5 9 11v11c0 9 6 16 15 21 9-5 15-12 15-21V11z\"/><path d=\"M17 24l5 5 9-10\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "acquirer",
@@ -279,7 +279,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 6l16 7v3H8v-3z\"/><line x1=\"12\" y1=\"19\" x2=\"12\" y2=\"34\"/><line x1=\"20\" y1=\"19\" x2=\"20\" y2=\"34\"/><line x1=\"28\" y1=\"19\" x2=\"28\" y2=\"34\"/><line x1=\"36\" y1=\"19\" x2=\"36\" y2=\"34\"/><line x1=\"8\" y1=\"38\" x2=\"40\" y2=\"38\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "acriss-code",
@@ -353,7 +353,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M7 30l3-9a4 4 0 0 1 4-3h20a4 4 0 0 1 4 3l3 9\"/><path d=\"M5 30h38v6a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2v-1H12v1a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2z\"/><circle cx=\"13\" cy=\"30\" r=\"2\"/><circle cx=\"35\" cy=\"30\" r=\"2\"/><path d=\"M19 12h10M19 8h6\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "add-on",
@@ -441,7 +441,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"20\" width=\"12\" height=\"8\" rx=\"1.5\"/><line x1=\"24\" y1=\"24\" x2=\"32\" y2=\"24\"/><line x1=\"28\" y1=\"20\" x2=\"28\" y2=\"28\"/><rect x=\"34\" y=\"20\" width=\"8\" height=\"8\" rx=\"1.5\" stroke-dasharray=\"3 2\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "additional-collection-adc",
@@ -529,7 +529,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"12\" width=\"20\" height=\"14\" rx=\"2\"/><path d=\"M12 19h12\"/><circle cx=\"34\" cy=\"30\" r=\"9\"/><path d=\"M34 26v8M30 30h8\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "admission",
@@ -612,7 +612,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 16h32a2 2 0 0 1 2 2v4a3 3 0 0 0 0 6v4a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-4a3 3 0 0 0 0-6v-4a2 2 0 0 1 2-2z\"/><path d=\"M28 16v18\" stroke-dasharray=\"2 3\"/><path d=\"M13 24h9\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "adr",
@@ -681,7 +681,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"10\" width=\"32\" height=\"30\" rx=\"3\"/><line x1=\"8\" y1=\"18\" x2=\"40\" y2=\"18\"/><line x1=\"16\" y1=\"8\" x2=\"16\" y2=\"14\"/><line x1=\"32\" y1=\"8\" x2=\"32\" y2=\"14\"/><path d=\"M27 24h-5a2.5 2.5 0 0 0 0 5h4a2.5 2.5 0 0 1 0 5h-6\"/><line x1=\"24\" y1=\"22\" x2=\"24\" y2=\"36\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "agency-credit-memo-acm",
@@ -759,7 +759,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"8\" width=\"28\" height=\"32\" rx=\"3\"/><line x1=\"16\" y1=\"16\" x2=\"32\" y2=\"16\"/><line x1=\"16\" y1=\"22\" x2=\"32\" y2=\"22\"/><circle cx=\"24\" cy=\"31\" r=\"5\"/><line x1=\"24\" y1=\"28\" x2=\"24\" y2=\"34\"/><line x1=\"21\" y1=\"31\" x2=\"27\" y2=\"31\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "agency-debit-memo-adm",
@@ -831,7 +831,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"8\" width=\"28\" height=\"32\" rx=\"3\"/><line x1=\"16\" y1=\"16\" x2=\"32\" y2=\"16\"/><line x1=\"16\" y1=\"22\" x2=\"32\" y2=\"22\"/><circle cx=\"24\" cy=\"31\" r=\"5\"/><line x1=\"21\" y1=\"31\" x2=\"27\" y2=\"31\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "agency-model",
@@ -904,7 +904,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"14\" r=\"6\"/><path d=\"M14 40a10 10 0 0 1 20 0\"/><path d=\"M8 22h6\"/><path d=\"M34 22h6\"/><path d=\"M11 19l-3 3 3 3\"/><path d=\"M37 19l3 3-3 3\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "aggregator",
@@ -1056,7 +1056,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"8\" width=\"28\" height=\"32\" rx=\"2\"/><path d=\"M16 16h16M16 22h16M16 28h10\"/><path d=\"M30 34l4 4 8-8\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "aircraft-type-code",
@@ -1141,7 +1141,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 6c2.5 0 3.5 4 3.5 9v6l13 8v3l-13-4v7l4 3v2l-7.5-2L17 50v-2l4-3v-7l-13 4v-3l13-8v-6c0-5 1-9 3-9z\" transform=\"translate(0 -4)\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "airimp",
@@ -1226,7 +1226,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"7\" width=\"32\" height=\"34\" rx=\"3\"/><line x1=\"14\" y1=\"15\" x2=\"34\" y2=\"15\"/><line x1=\"14\" y1=\"22\" x2=\"34\" y2=\"22\"/><line x1=\"14\" y1=\"29\" x2=\"28\" y2=\"29\"/><path d=\"M30 33 33 36 38 30\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "airline-accounting-code",
@@ -1301,7 +1301,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"7\" y=\"16\" width=\"34\" height=\"16\" rx=\"3\"/><path d=\"M14 22v4M14 22h2M14 26h2M14 24h2\"/><path d=\"M22 22v4M26 22v4M22 22h4M22 24h4\"/><path d=\"M31 22v4M35 22v4M31 22h4\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "airline-alliance",
@@ -1394,7 +1394,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"14\" r=\"5\"/><circle cx=\"36\" cy=\"14\" r=\"5\"/><circle cx=\"24\" cy=\"34\" r=\"5\"/><line x1=\"16\" y1=\"16\" x2=\"32\" y2=\"16\"/><line x1=\"14\" y1=\"18\" x2=\"21\" y2=\"31\"/><line x1=\"34\" y1=\"18\" x2=\"27\" y2=\"31\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "airline-designator",
@@ -1542,7 +1542,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><ellipse cx=\"24\" cy=\"12\" rx=\"14\" ry=\"5\"/><path d=\"M10 12v24c0 2.8 6.3 5 14 5s14-2.2 14-5V12\"/><path d=\"M10 24c0 2.8 6.3 5 14 5s14-2.2 14-5\"/><circle cx=\"24\" cy=\"12\" r=\"1.5\" fill=\"currentColor\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "airline-retailing-maturity-arm",
@@ -1616,7 +1616,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><line x1=\"8\" y1=\"40\" x2=\"40\" y2=\"40\"/><rect x=\"10\" y=\"28\" width=\"7\" height=\"12\"/><rect x=\"20\" y=\"20\" width=\"7\" height=\"20\"/><rect x=\"30\" y=\"12\" width=\"7\" height=\"28\"/><path d=\"M10 24l11-9 8 4 9-11\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "airport-code",
@@ -1758,7 +1758,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"7\" y=\"8\" width=\"14\" height=\"14\" rx=\"2\"/><rect x=\"27\" y=\"8\" width=\"14\" height=\"14\" rx=\"2\"/><rect x=\"7\" y=\"28\" width=\"14\" height=\"14\" rx=\"2\"/><rect x=\"27\" y=\"28\" width=\"14\" height=\"14\" rx=\"2\" fill=\"currentColor\" stroke=\"none\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "ancillary-service",
@@ -1928,7 +1928,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 5l15 6v9c0 10-7 16-15 19-8-3-15-9-15-19v-9z\"/><path d=\"M17 24l5 5 9-11\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "arc",
@@ -2001,7 +2001,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 6h17l7 7v29H12z\"/><path d=\"M28 6v8h8\"/><path d=\"M17 24a7 7 0 0 1 14 0\"/><line x1=\"17\" y1=\"33\" x2=\"31\" y2=\"33\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "ari",
@@ -2089,7 +2089,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"9\" width=\"28\" height=\"28\" rx=\"2\"/><path d=\"M6 17h28M14 9V5M26 9V5\"/><path d=\"M12 23h2M19 23h2M12 30h2\"/><circle cx=\"36\" cy=\"32\" r=\"8\"/><path d=\"M33 32l2 2 4-4\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "arnk",
@@ -2179,7 +2179,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"8\" cy=\"24\" r=\"3\"/><circle cx=\"40\" cy=\"24\" r=\"3\"/><line x1=\"13\" y1=\"24\" x2=\"19\" y2=\"24\"/><line x1=\"29\" y1=\"24\" x2=\"35\" y2=\"24\"/><path d=\"M21 19 L27 29 M27 19 L21 29\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "atpco",
@@ -2250,7 +2250,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><ellipse cx=\"24\" cy=\"12\" rx=\"13\" ry=\"5\"/><path d=\"M11 12v10c0 2.8 5.8 5 13 5s13-2.2 13-5V12\"/><path d=\"M11 22v10c0 2.8 5.8 5 13 5s13-2.2 13-5V22\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "authorization-hold",
@@ -2330,7 +2330,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"14\" width=\"28\" height=\"18\" rx=\"3\"/><line x1=\"6\" y1=\"20\" x2=\"34\" y2=\"20\"/><rect x=\"30\" y=\"26\" width=\"12\" height=\"9\" rx=\"1.5\"/><path d=\"M33 26v-2a3 3 0 0 1 6 0v2\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "automatic-refund-rule",
@@ -2399,7 +2399,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 20a14 14 0 1 1-2 10\"/><polyline points=\"12,10 12,20 22,20\"/><circle cx=\"30\" cy=\"30\" r=\"7\"/><path d=\"M30 26v8M28 28.5c.5-.7 1.2-1 2-1 1.2 0 2 .6 2 1.6 0 2.2-4 1.3-4 3.5 0 1.1.9 1.7 2 1.7.9 0 1.6-.4 2-1\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "availability",
@@ -2493,7 +2493,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"7\" y=\"9\" width=\"34\" height=\"30\" rx=\"3\"/><line x1=\"7\" y1=\"17\" x2=\"41\" y2=\"17\"/><line x1=\"15\" y1=\"6\" x2=\"15\" y2=\"12\"/><line x1=\"33\" y1=\"6\" x2=\"33\" y2=\"12\"/><path d=\"M16 28l5 5 11-11\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "award-redemption",
@@ -2566,7 +2566,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"16\" cy=\"16\" r=\"9\"/><path d=\"M16 11l1.6 3.3 3.6.5-2.6 2.5.6 3.6-3.2-1.7-3.2 1.7.6-3.6-2.6-2.5 3.6-.5z\"/><path d=\"M26 26l12 12\"/><path d=\"M38 31v7h-7\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "bar",
@@ -2634,7 +2634,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M22 8l-13 13a3 3 0 0 0 0 4l14 14a3 3 0 0 0 4 0l13-13V12a4 4 0 0 0-4-4z\"/><circle cx=\"32\" cy=\"16\" r=\"2.5\"/><path d=\"M20 22l4 1 1 4 4-7z\" fill=\"currentColor\" stroke=\"none\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "bedbank",
@@ -2720,7 +2720,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 14l19-7 19 7\"/><path d=\"M7 14v14M41 14v14M16 16v12M24 16v12M32 16v12\"/><path d=\"M5 32h38v6H5z\"/><path d=\"M5 38l-1 4h40l-1-4\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "bid-price",
@@ -2799,7 +2799,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><line x1=\"8\" y1=\"28\" x2=\"40\" y2=\"28\" stroke-dasharray=\"3 3\"/><path d=\"M14 36V24\"/><path d=\"M24 36V18\"/><path d=\"M34 36V28\"/><path d=\"M11 22h6M21 16h6\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "billboard-effect",
@@ -2877,7 +2877,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"7\" y=\"8\" width=\"34\" height=\"18\" rx=\"2\"/><path d=\"M14 26v14M34 26v14\"/><path d=\"M13 15h12M13 19h8\"/><path d=\"M30 13l5 4-5 4\"/><path d=\"M35 17h-8\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "block-space-agreement",
@@ -2950,7 +2950,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"10\" width=\"32\" height=\"28\" rx=\"2\"/><line x1=\"8\" y1=\"24\" x2=\"40\" y2=\"24\"/><line x1=\"24\" y1=\"10\" x2=\"24\" y2=\"38\"/><rect x=\"10\" y=\"12\" width=\"12\" height=\"10\" fill=\"currentColor\" stroke=\"none\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "board-basis",
@@ -3001,7 +3001,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"26\" r=\"13\"/><circle cx=\"24\" cy=\"26\" r=\"6\"/><line x1=\"9\" y1=\"10\" x2=\"9\" y2=\"20\"/><line x1=\"6\" y1=\"10\" x2=\"6\" y2=\"15\"/><line x1=\"12\" y1=\"10\" x2=\"12\" y2=\"15\"/><path d=\"M9 15v-5\"/><path d=\"M40 10c-2 0-3 3-3 6s1 4 3 4v10\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "booking-engine",
@@ -3086,7 +3086,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"7\" y=\"9\" width=\"34\" height=\"26\" rx=\"2\"/><line x1=\"7\" y1=\"16\" x2=\"41\" y2=\"16\"/><line x1=\"18\" y1=\"39\" x2=\"30\" y2=\"39\"/><line x1=\"24\" y1=\"35\" x2=\"24\" y2=\"39\"/><rect x=\"13\" y=\"21\" width=\"9\" height=\"8\" rx=\"1\"/><path d=\"M27 23h8M27 27h6\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "booking-limit",
@@ -3165,7 +3165,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"12\" width=\"28\" height=\"24\" rx=\"3\"/><line x1=\"10\" y1=\"27\" x2=\"38\" y2=\"27\"/><path d=\"M14 31h4M22 31h4M30 31h4\"/><path d=\"M15 19l3 3 6-6\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "booking-status-code",
@@ -3254,7 +3254,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"7\" y=\"13\" width=\"34\" height=\"22\" rx=\"3\"/><path d=\"M13 24h5l3 5 4-10 3 5h7\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "breakage",
@@ -3336,7 +3336,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"15\"/><path d=\"M24 9v6M24 33v6M9 24h6M33 24h6\"/><path d=\"M18 18l5 6-5 6M30 18l-2 6 2 6\" stroke-dasharray=\"3 3\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "bsp",
@@ -3414,7 +3414,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"6\"/><circle cx=\"9\" cy=\"10\" r=\"3\"/><circle cx=\"39\" cy=\"10\" r=\"3\"/><circle cx=\"9\" cy=\"38\" r=\"3\"/><circle cx=\"39\" cy=\"38\" r=\"3\"/><line x1=\"11\" y1=\"12\" x2=\"19\" y2=\"20\"/><line x1=\"37\" y1=\"12\" x2=\"29\" y2=\"20\"/><line x1=\"11\" y1=\"36\" x2=\"19\" y2=\"28\"/><line x1=\"37\" y1=\"36\" x2=\"29\" y2=\"28\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "cabin-category",
@@ -3501,7 +3501,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"10\" width=\"32\" height=\"28\" rx=\"2\"/><line x1=\"8\" y1=\"24\" x2=\"40\" y2=\"24\"/><line x1=\"24\" y1=\"10\" x2=\"24\" y2=\"38\"/><circle cx=\"16\" cy=\"17\" r=\"2.5\"/><circle cx=\"32\" cy=\"17\" r=\"2.5\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "cancel-for-any-reason-cfar",
@@ -3583,7 +3583,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M38 24 a14 14 0 1 1 -4.1 -9.9\"/><polyline points=\"38,8 38,16 30,16\"/><line x1=\"18\" y1=\"19\" x2=\"30\" y2=\"31\"/><line x1=\"30\" y1=\"19\" x2=\"18\" y2=\"31\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "cancellation-fee-waiver",
@@ -3657,7 +3657,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 14 L26 14 L38 26 L26 38 L8 38 Z\"/><line x1=\"15\" y1=\"22\" x2=\"27\" y2=\"30\"/><line x1=\"27\" y1=\"22\" x2=\"15\" y2=\"30\"/><line x1=\"34\" y1=\"10\" x2=\"40\" y2=\"10\"/><line x1=\"37\" y1=\"7\" x2=\"37\" y2=\"13\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "cancellation-policy",
@@ -3718,7 +3718,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 4h16l8 8v14\"/><path d=\"M12 4a2 2 0 00-2 2v36a2 2 0 002 2h12\"/><path d=\"M28 4v8h8\"/><path d=\"M16 18h12M16 24h8\"/><circle cx=\"34\" cy=\"35\" r=\"8\"/><path d=\"M31 32l6 6M37 32l-6 6\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "capacity-purchase-agreement",
@@ -3809,7 +3809,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 22l13-3 6-8 3 1-3 8 9-2 3-3 2 1-1 5\"/><rect x=\"30\" y=\"30\" width=\"14\" height=\"12\" rx=\"2\"/><path d=\"M34 30v-3a3 3 0 0 1 6 0v3\"/><path d=\"M37 34v4\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "car-class",
@@ -3878,7 +3878,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 26l2-6a3 3 0 0 1 3-2h12a3 3 0 0 1 3 2l2 6\"/><path d=\"M4 26h26v4a1.5 1.5 0 0 1-1.5 1.5h-2A1.5 1.5 0 0 1 25 30H9a1.5 1.5 0 0 1-1.5 1.5h-2A1.5 1.5 0 0 1 4 30z\"/><circle cx=\"10\" cy=\"26\" r=\"1.6\"/><circle cx=\"24\" cy=\"26\" r=\"1.6\"/><path d=\"M34 20h8M34 28h8M34 36h8M37 20v16\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "cass",
@@ -3966,7 +3966,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 18 24 10l16 8v12L24 38 8 30z\"/><path d=\"M8 18l16 8 16-8\"/><line x1=\"24\" y1=\"26\" x2=\"24\" y2=\"38\"/><path d=\"M16 14v6\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "chain-code",
@@ -4122,7 +4122,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"18\" y=\"18\" width=\"12\" height=\"12\" rx=\"2\"/><rect x=\"4\" y=\"6\" width=\"10\" height=\"7\" rx=\"1.5\"/><rect x=\"34\" y=\"6\" width=\"10\" height=\"7\" rx=\"1.5\"/><rect x=\"4\" y=\"35\" width=\"10\" height=\"7\" rx=\"1.5\"/><rect x=\"34\" y=\"35\" width=\"10\" height=\"7\" rx=\"1.5\"/><path d=\"M18 21l-7-5M30 21l7-5M18 27l-7 5M30 27l7 5\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "chargeback",
@@ -4195,7 +4195,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"14\" width=\"36\" height=\"24\" rx=\"3\"/><line x1=\"6\" y1=\"21\" x2=\"42\" y2=\"21\"/><path d=\"M30 31a6 6 0 1 0-2-5\"/><path d=\"M26 24l2 3 3-2\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "chargeback-reason-code",
@@ -4277,7 +4277,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"7\" y=\"12\" width=\"34\" height=\"24\" rx=\"3\"/><line x1=\"7\" y1=\"19\" x2=\"41\" y2=\"19\"/><path d=\"M13 27h6\"/><path d=\"M13 31h10\"/><circle cx=\"32\" cy=\"29\" r=\"2\"/><path d=\"M32 25.5V27\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "city-code",
@@ -4413,7 +4413,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"10\" width=\"32\" height=\"28\" rx=\"3\"/><path d=\"M18 30l4-12 4 12M19.3 26h5.4\"/><path d=\"M30 18h3a3 3 0 010 6h-3v6\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "class-of-service",
@@ -4489,7 +4489,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"14\" width=\"32\" height=\"20\" rx=\"4\"/><line x1=\"8\" y1=\"24\" x2=\"40\" y2=\"24\"/><line x1=\"20\" y1=\"14\" x2=\"20\" y2=\"34\"/><line x1=\"30\" y1=\"14\" x2=\"30\" y2=\"34\"/><circle cx=\"14\" cy=\"19\" r=\"1.2\" fill=\"currentColor\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "closed-to-arrival-cta",
@@ -4570,7 +4570,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 24h22\"/><polyline points=\"20 16 28 24 20 32\"/><circle cx=\"38\" cy=\"24\" r=\"8\"/><line x1=\"32.5\" y1=\"18.5\" x2=\"43.5\" y2=\"29.5\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "codeshare",
@@ -4649,7 +4649,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 18l8-2 4-6 3 1-2 7 7-1 3-3 2 1-1 5\"/><path d=\"M42 30l-8 2-4 6-3-1 2-7-7 1-3 3-2-1 1-5\"/><line x1=\"24\" y1=\"22\" x2=\"24\" y2=\"26\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "collision-damage-waiver",
@@ -4718,7 +4718,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 5l15 5v10c0 9-6 16-15 19-9-3-15-10-15-19V10z\"/><path d=\"M16 26l3-6 3 4 3-7 3 9\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "commissionable-rate",
@@ -4789,7 +4789,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M25 5H11a2 2 0 00-2 2v14l18 18a2 2 0 002.8 0l11.4-11.4a2 2 0 000-2.8L25 5z\"/><circle cx=\"16\" cy=\"12\" r=\"2\" fill=\"currentColor\" stroke=\"none\"/><circle cx=\"19\" cy=\"24\" r=\"2.5\"/><circle cx=\"30\" cy=\"35\" r=\"2.5\"/><path d=\"M31 22L18 37\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "companion",
@@ -4873,7 +4873,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"17\" cy=\"15\" r=\"5\"/><circle cx=\"32\" cy=\"17\" r=\"4\"/><path d=\"M8 38c0-6 4-10 9-10s9 4 9 10\"/><path d=\"M28 38c0-5 3-8 7-8 3 0 5 2 6 5\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "comprehensive-travel-insurance",
@@ -4957,7 +4957,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 5 L40 11 V24 c0 11 -8 16 -16 19 c-8 -3 -16 -8 -16 -19 V11 Z\"/><polyline points=\"17,24 22,29 32,17\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "conjunction-ticket",
@@ -5029,7 +5029,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"7\" y=\"13\" width=\"22\" height=\"15\" rx=\"2\"/><rect x=\"19\" y=\"20\" width=\"22\" height=\"15\" rx=\"2\"/><path d=\"M24 20v8\"/><path d=\"M13 20h5\"/><path d=\"M30 27h5\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "connection",
@@ -5107,7 +5107,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"8\" cy=\"12\" r=\"3\"/><circle cx=\"24\" cy=\"24\" r=\"4\"/><circle cx=\"40\" cy=\"36\" r=\"3\"/><line x1=\"10.5\" y1=\"13.8\" x2=\"21\" y2=\"21.5\"/><line x1=\"27\" y1=\"26.5\" x2=\"37.5\" y2=\"34.2\"/><path d=\"M24 20 a4 4 0 0 1 0 8\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "continuous-pricing",
@@ -5187,7 +5187,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 34c5 0 6-18 11-18s6 12 11 12 6-16 11-16\"/><line x1=\"6\" y1=\"40\" x2=\"42\" y2=\"40\"/><circle cx=\"17\" cy=\"16\" r=\"1.5\" fill=\"currentColor\"/><circle cx=\"28\" cy=\"28\" r=\"1.5\" fill=\"currentColor\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "contrail-non-co2-effects",
@@ -5257,7 +5257,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M30 10l4 4-9 6 1 9-3 2-3-7-7-3 2-3 9 1 6-9z\"/><path d=\"M6 38c3-2 5-2 8 0s5 2 8 0 5-2 8 0 5 2 8 0\"/><path d=\"M8 32c2-1.5 4-1.5 6 0s4 1.5 6 0\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "corporate-profile",
@@ -5333,7 +5333,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"10\" width=\"20\" height=\"30\" rx=\"2\"/><path d=\"M28 18h12v22H28\"/><path d=\"M13 16h4\"/><path d=\"M13 22h4\"/><path d=\"M13 28h4\"/><path d=\"M33 24h3\"/><path d=\"M33 30h3\"/><path d=\"M8 40h36\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "corporate-rate",
@@ -5411,7 +5411,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"10\" width=\"22\" height=\"30\" rx=\"2\"/><path d=\"M30 18h10v22H30\"/><path d=\"M14 16h6M14 22h6M14 28h6M35 24h2M35 30h2\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "corsia",
@@ -5489,7 +5489,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"16\"/><path d=\"M8 24h32M24 8a22 22 0 0 1 0 32M24 8a22 22 0 0 0 0 32\"/><path d=\"M30 12l-6-3-6 3\"/><path d=\"M18 30l3 3 8-9\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "corsia-eligible-emissions-unit-eeu",
@@ -5566,7 +5566,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"13\"/><path d=\"M28 19a6 6 0 1 0 0 10\"/><path d=\"M19 24h-5M9 21l-3 3 3 3\"/><path d=\"M36 14l4-4M40 10h-4M40 10v4\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "cost-per-acquisition",
@@ -5669,7 +5669,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 14a4 4 0 014-4h24a4 4 0 014 4v16a4 4 0 01-4 4H22l-8 7v-7h-2a4 4 0 01-4-4z\"/><path d=\"M19 24l3 3 8-9\"/><circle cx=\"33\" cy=\"34\" r=\"1\" fill=\"currentColor\" stroke=\"none\" opacity=\"0\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "coupon-status",
@@ -5761,7 +5761,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"12\" width=\"32\" height=\"24\" rx=\"3\"/><path d=\"M14 24l4 4 8-8\"/><circle cx=\"32\" cy=\"24\" r=\"3\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "crs",
@@ -5845,7 +5845,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"6\"/><circle cx=\"24\" cy=\"8\" r=\"3\"/><circle cx=\"24\" cy=\"40\" r=\"3\"/><circle cx=\"8\" cy=\"16\" r=\"3\"/><circle cx=\"40\" cy=\"16\" r=\"3\"/><circle cx=\"8\" cy=\"32\" r=\"3\"/><circle cx=\"40\" cy=\"32\" r=\"3\"/><path d=\"M24 11v7M24 30v7M11 17l8 4M37 17l-8 4M11 31l8-4M37 31l-8-4\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "cruise-only-fare",
@@ -5923,7 +5923,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 30h32l-4 8H12z\"/><path d=\"M14 30V18h14l6 6h6\"/><line x1=\"20\" y1=\"18\" x2=\"20\" y2=\"12\"/><line x1=\"24\" y1=\"24\" x2=\"24\" y2=\"30\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "customer-data-platform",
@@ -5998,7 +5998,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"10\" r=\"4\"/><circle cx=\"10\" cy=\"24\" r=\"4\"/><circle cx=\"10\" cy=\"38\" r=\"4\"/><path d=\"M14 10h8l6 14M14 24h14M14 38h8l6-14\"/><circle cx=\"34\" cy=\"24\" r=\"7\"/><path d=\"M31 24l2 2 4-4\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "customer-profile",
@@ -6165,7 +6165,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><ellipse cx=\"24\" cy=\"11\" rx=\"14\" ry=\"5\"/><path d=\"M10 11v12c0 2.8 6.3 5 14 5s14-2.2 14-5V11\"/><path d=\"M10 23v12c0 2.8 6.3 5 14 5s14-2.2 14-5V23\"/><path d=\"M19 30l3 3 6-6\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "denied-boarding-compensation",
@@ -6244,7 +6244,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"13\"/><path d=\"M24 16v16\"/><path d=\"M27.5 19.5c-1-1.2-2.4-1.5-3.7-1.5-2 0-3.6 1-3.6 2.8 0 3.8 7.6 2.2 7.6 6 0 1.9-1.7 2.9-3.8 2.9-1.6 0-3.1-.6-4-1.7\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "departure-control-system-dcs",
@@ -6342,7 +6342,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"7\" y=\"10\" width=\"18\" height=\"14\" rx=\"2\"/><line x1=\"11\" y1=\"15\" x2=\"21\" y2=\"15\"/><line x1=\"11\" y1=\"19\" x2=\"18\" y2=\"19\"/><path d=\"M28 17 H40 M40 17 L36 13 M40 17 L36 21\"/><path d=\"M16 28 C24 38 32 38 40 32\"/><path d=\"M35 30 L41 31 L39 37\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "derived-rate",
@@ -6442,7 +6442,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"18\" y=\"6\" width=\"12\" height=\"10\" rx=\"2\"/><path d=\"M24 16v8M24 24H12v6M24 24h12v6\"/><rect x=\"6\" y=\"30\" width=\"12\" height=\"10\" rx=\"2\"/><rect x=\"30\" y=\"30\" width=\"12\" height=\"10\" rx=\"2\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "digital-travel-credential",
@@ -6511,7 +6511,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"11\" y=\"6\" width=\"26\" height=\"36\" rx=\"3\"/><circle cx=\"24\" cy=\"18\" r=\"5\"/><path d=\"M17 31c0-4 3-6 7-6s7 2 7 6\"/><path d=\"M30 9l2 2 3-3\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "direct-booking",
@@ -6595,7 +6595,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"24\" r=\"5\"/><path d=\"M6 38c0-4 3-6 6-6s6 2 6 6\"/><rect x=\"28\" y=\"12\" width=\"16\" height=\"24\" rx=\"2\"/><line x1=\"32\" y1=\"18\" x2=\"40\" y2=\"18\"/><line x1=\"32\" y1=\"24\" x2=\"40\" y2=\"24\"/><line x1=\"19\" y1=\"24\" x2=\"28\" y2=\"24\"/><path d=\"M25 21l3 3-3 3\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "direct-connect",
@@ -6680,7 +6680,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"4\" y=\"18\" width=\"12\" height=\"12\" rx=\"2\"/><rect x=\"32\" y=\"18\" width=\"12\" height=\"12\" rx=\"2\"/><line x1=\"16\" y1=\"24\" x2=\"32\" y2=\"24\"/><circle cx=\"24\" cy=\"24\" r=\"2.5\" fill=\"currentColor\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "distribution-cost",
@@ -6759,7 +6759,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"16\"/><path d=\"M28 18c-1.5-2-9-2.5-9 1.5 0 4 9 2.5 9 6.5 0 4-7.5 3.5-9 1.5\"/><line x1=\"24\" y1=\"13\" x2=\"24\" y2=\"16\"/><line x1=\"24\" y1=\"32\" x2=\"24\" y2=\"35\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "dynamic-currency-conversion-dcc",
@@ -6834,7 +6834,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 16h22\"/><path d=\"M26 10l6 6-6 6\"/><path d=\"M38 32H16\"/><path d=\"M22 26l-6 6 6 6\"/><circle cx=\"13\" cy=\"13\" r=\"3\"/><circle cx=\"35\" cy=\"35\" r=\"3\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "dynamic-offer",
@@ -6912,7 +6912,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 34l8-10 7 6 9-14 8 6\"/><path d=\"M40 22v8M40 22h-8\"/><path d=\"M6 40h36\"/><circle cx=\"16\" cy=\"24\" r=\"1.5\" fill=\"currentColor\"/><circle cx=\"23\" cy=\"30\" r=\"1.5\" fill=\"currentColor\"/><circle cx=\"32\" cy=\"16\" r=\"1.5\" fill=\"currentColor\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "dynamic-packaging",
@@ -6984,7 +6984,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"16\" y=\"22\" width=\"16\" height=\"16\" rx=\"2\"/><path d=\"M16 27h16\"/><path d=\"M24 22v16\"/><path d=\"M9 10l5 6\"/><path d=\"M39 10l-5 6\"/><circle cx=\"7\" cy=\"8\" r=\"2.5\"/><circle cx=\"41\" cy=\"8\" r=\"2.5\"/><path d=\"M24 4v12\"/><circle cx=\"24\" cy=\"4\" r=\"1.5\" fill=\"currentColor\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "dynamic-pricing",
@@ -7075,7 +7075,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 34l8-9 7 6 11-15\"/><polyline points=\"26 16 38 16 38 28\"/><path d=\"M6 40h36\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "e-ticket",
@@ -7239,7 +7239,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"4\" y=\"10\" width=\"14\" height=\"28\" rx=\"2\"/><rect x=\"30\" y=\"10\" width=\"14\" height=\"28\" rx=\"2\"/><line x1=\"18\" y1=\"18\" x2=\"30\" y2=\"18\"/><line x1=\"18\" y1=\"24\" x2=\"30\" y2=\"24\"/><line x1=\"18\" y1=\"30\" x2=\"30\" y2=\"30\"/><path d=\"M26 21l4 3-4 3\"/><line x1=\"8\" y1=\"16\" x2=\"14\" y2=\"16\"/><line x1=\"8\" y1=\"22\" x2=\"14\" y2=\"22\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "embarkation",
@@ -7313,7 +7313,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 34h32l-3 6H11z\"/><path d=\"M14 34V22h12l5 5h5\"/><path d=\"M22 16l4-4 4 4M26 12v14\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "emd",
@@ -7456,7 +7456,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 30 L20 30 L26 22 L40 22 a4 4 0 0 1 0 8 L14 30 Z\"/><line x1=\"10\" y1=\"36\" x2=\"34\" y2=\"36\"/><line x1=\"30\" y1=\"13\" x2=\"30\" y2=\"19\"/><line x1=\"27\" y1=\"16\" x2=\"33\" y2=\"16\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "enhanced-and-simplified-distribution-edist",
@@ -7531,7 +7531,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M16 8H10a2 2 0 0 0-2 2v28a2 2 0 0 0 2 2h28a2 2 0 0 0 2-2v-6\"/><path d=\"M18 22l-4 4 4 4M30 22l4 4-4 4M26 20l-4 12\"/><path d=\"M30 8h10v10\"/><path d=\"M40 8L28 20\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "eu-allowance-eua",
@@ -7597,7 +7597,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"14\" width=\"30\" height=\"20\" rx=\"3\"/><circle cx=\"21\" cy=\"24\" r=\"5\"/><path d=\"M21 21v6M19 22h3a1.5 1.5 0 0 1 0 3h-2\"/><path d=\"M36 19a5 5 0 0 1 0 10\"/><path d=\"M12 14v-2M30 14v-2\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "eu-emissions-trading-system-eu-ets",
@@ -7667,7 +7667,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"10\" r=\"2\" fill=\"currentColor\"/><circle cx=\"31\" cy=\"12\" r=\"2\" fill=\"currentColor\"/><circle cx=\"17\" cy=\"12\" r=\"2\" fill=\"currentColor\"/><circle cx=\"24\" cy=\"17\" r=\"2\" fill=\"currentColor\"/><path d=\"M10 40V30M19 40V26M28 40V30M37 40V24\"/><path d=\"M8 40h32\"/><path d=\"M10 30l9-4 9 4 9-6\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "eu-regulation-261-2004",
@@ -7748,7 +7748,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"15\"/><circle cx=\"24\" cy=\"13\" r=\"1.5\" fill=\"currentColor\" stroke=\"none\"/><circle cx=\"24\" cy=\"35\" r=\"1.5\" fill=\"currentColor\" stroke=\"none\"/><circle cx=\"13\" cy=\"24\" r=\"1.5\" fill=\"currentColor\" stroke=\"none\"/><circle cx=\"35\" cy=\"24\" r=\"1.5\" fill=\"currentColor\" stroke=\"none\"/><circle cx=\"16.2\" cy=\"16.2\" r=\"1.5\" fill=\"currentColor\" stroke=\"none\"/><circle cx=\"31.8\" cy=\"31.8\" r=\"1.5\" fill=\"currentColor\" stroke=\"none\"/><circle cx=\"16.2\" cy=\"31.8\" r=\"1.5\" fill=\"currentColor\" stroke=\"none\"/><circle cx=\"31.8\" cy=\"16.2\" r=\"1.5\" fill=\"currentColor\" stroke=\"none\"/><path d=\"M20 24l3 3 6-7\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "eurail-pass",
@@ -7823,7 +7823,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"7\" y=\"14\" width=\"34\" height=\"20\" rx=\"3\"/><circle cx=\"16\" cy=\"24\" r=\"4\"/><path d=\"M25 21h11M25 27h8\"/><circle cx=\"34\" cy=\"24\" r=\"6\" stroke-dasharray=\"2 2\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "exchange",
@@ -7914,7 +7914,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 17h20\"/><path d=\"M27 12l5 5-5 5\"/><path d=\"M36 31H16\"/><path d=\"M21 26l-5 5 5 5\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "extraordinary-circumstances",
@@ -7982,7 +7982,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14 28a7 7 0 0 1 1-14 9 9 0 0 1 17 2 6 6 0 0 1 1 12z\"/><path d=\"M18 34l-2 5M26 34l-2 5M34 34l-2 5\"/><path d=\"M30 30l-2 4 4-1-2 5\" stroke=\"currentColor\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "fare-basis-code",
@@ -8068,7 +8068,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M23 7H10a3 3 0 00-3 3v13a3 3 0 00.9 2.1l15 15a3 3 0 004.2 0l11-11a3 3 0 000-4.2l-15-15A3 3 0 0023 7z\"/><circle cx=\"16\" cy=\"16\" r=\"2.5\"/><line x1=\"21\" y1=\"27\" x2=\"27\" y2=\"33\"/><line x1=\"26\" y1=\"22\" x2=\"32\" y2=\"28\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "fare-component",
@@ -8153,7 +8153,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"11\" cy=\"24\" r=\"3\"/><circle cx=\"37\" cy=\"24\" r=\"3\"/><line x1=\"14\" y1=\"24\" x2=\"34\" y2=\"24\"/><rect x=\"19\" y=\"30\" width=\"10\" height=\"10\" rx=\"2\"/><path d=\"M24 30v-8\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "fare-construction",
@@ -8225,7 +8225,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"7\" y=\"20\" width=\"10\" height=\"10\" rx=\"1.5\"/><rect x=\"31\" y=\"20\" width=\"10\" height=\"10\" rx=\"1.5\"/><line x1=\"17\" y1=\"25\" x2=\"22\" y2=\"25\"/><line x1=\"26\" y1=\"25\" x2=\"31\" y2=\"25\"/><path d=\"M22 25l2-2 2 2-2 2z\"/><line x1=\"12\" y1=\"20\" x2=\"12\" y2=\"14\"/><line x1=\"36\" y1=\"20\" x2=\"36\" y2=\"14\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "fare-family",
@@ -8319,7 +8319,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"10\" width=\"32\" height=\"7\" rx=\"2\"/><rect x=\"11\" y=\"21\" width=\"26\" height=\"7\" rx=\"2\"/><rect x=\"14\" y=\"32\" width=\"20\" height=\"7\" rx=\"2\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "fare-rule",
@@ -8402,7 +8402,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"6\" width=\"28\" height=\"36\" rx=\"3\"/><line x1=\"16\" y1=\"15\" x2=\"32\" y2=\"15\"/><line x1=\"16\" y1=\"22\" x2=\"32\" y2=\"22\"/><line x1=\"16\" y1=\"29\" x2=\"26\" y2=\"29\"/><path d=\"M28 34l3 3 6-6\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "flexible-content-barcode-fcb",
@@ -8475,7 +8475,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 12v24M15 12v24M20 12v24M25 12v24M30 12v24M35 12v24M38 12v24\" stroke-width=\"1.6\"/><path d=\"M28 30l3 3 6-7\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "flight-coupon",
@@ -8615,7 +8615,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 12h22l12 12-12 12H6z\"/><circle cx=\"12\" cy=\"18\" r=\"1.5\" fill=\"currentColor\"/><path d=\"M30 22l-6 4 6 4\" transform=\"translate(-8 -2)\"/><path d=\"M16 24h12M16 24l5-3M16 24l5 3\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "flight-number",
@@ -8693,7 +8693,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M9 27l30-9c2-.6 4 .4 4 2s-1.7 3-3.5 3.6L13 32l-4 6-3-1 2-7-6-1 2-2 5 1z\"/><path d=\"M22 28l4 8\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "form-of-payment",
@@ -8763,7 +8763,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"13\" width=\"28\" height=\"18\" rx=\"2.5\"/><line x1=\"6\" y1=\"19\" x2=\"34\" y2=\"19\"/><line x1=\"11\" y1=\"26\" x2=\"18\" y2=\"26\"/><circle cx=\"34\" cy=\"32\" r=\"7\"/><path d=\"M34 28.5v3.5l2.5 1.5\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "free-sale",
@@ -8836,7 +8836,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 30v-6a3 3 0 013-3h26a6 6 0 016 6v9\"/><path d=\"M5 30h36M5 30v6M41 36v3M5 36v3\"/><path d=\"M11 21v-4a2 2 0 012-2h6a2 2 0 012 2v4M23 21v-4a2 2 0 012-2h6a2 2 0 012 2v4\"/><path d=\"M33 9l3 3-3 3M36 12h-9\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "frequent-flyer-number",
@@ -9033,7 +9033,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 40V12a4 4 0 0 1 4-4h12a4 4 0 0 1 4 4v28\"/><path d=\"M8 40h24\"/><path d=\"M14 14h12v8H14z\"/><path d=\"M30 18l5 4v12a3 3 0 0 0 6 0V16l-5-5\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "fulfillment-rail",
@@ -9117,7 +9117,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"10\" width=\"24\" height=\"30\" rx=\"2\"/><path d=\"M16 18h12M16 24h12M16 30h7\"/><path d=\"M28 36l4 4 8-9\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "gdpr-consent",
@@ -9451,7 +9451,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"16\" y=\"14\" width=\"16\" height=\"28\" rx=\"2\"/><path d=\"M20 14v-3a3 3 0 0 1 3-3h2a3 3 0 0 1 3 3v3\"/><path d=\"M16 22h16\"/><path d=\"M38 10l-7 7-3-3\"/><path d=\"M22 30h4M22 35h4\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "giata-id",
@@ -9551,7 +9551,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"22\" r=\"6\"/><circle cx=\"24\" cy=\"22\" r=\"1.5\" fill=\"currentColor\" stroke=\"none\"/><path d=\"M9 14h6M9 22h4M9 30h6M33 14h6M35 22h4M33 30h6\"/><path d=\"M15 14l3 5M15 30l3-5M33 14l-3 5M33 30l-3-5\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "group-pnr",
@@ -9627,7 +9627,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"17\" cy=\"16\" r=\"5\"/><circle cx=\"31\" cy=\"16\" r=\"5\"/><path d=\"M9 34c0-5 3.5-8 8-8s8 3 8 8\"/><path d=\"M23 34c0-5 3.5-8 8-8s8 3 8 8\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "guarantee-cabin-gty",
@@ -9707,7 +9707,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"12\" width=\"28\" height=\"24\" rx=\"2\"/><path d=\"M19 24l4 4 7-8\"/><line x1=\"10\" y1=\"18\" x2=\"38\" y2=\"18\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "guarantee-policy",
@@ -9773,7 +9773,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 4l16 6v10c0 11-7 18-16 22-9-4-16-11-16-22V10l16-6z\"/><path d=\"M17 23l5 5 9-10\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "hedna",
@@ -9858,7 +9858,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"12\" r=\"5\"/><circle cx=\"10\" cy=\"34\" r=\"5\"/><circle cx=\"38\" cy=\"34\" r=\"5\"/><path d=\"M24 17v6M22 25l-9 6M26 25l9 6\"/><path d=\"M15 34h18\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "hotel-switch",
@@ -9958,7 +9958,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"18\" y=\"19\" width=\"12\" height=\"10\" rx=\"2\"/><line x1=\"6\" y1=\"12\" x2=\"18\" y2=\"21\"/><line x1=\"6\" y1=\"24\" x2=\"18\" y2=\"24\"/><line x1=\"6\" y1=\"36\" x2=\"18\" y2=\"27\"/><line x1=\"42\" y1=\"12\" x2=\"30\" y2=\"21\"/><line x1=\"42\" y1=\"24\" x2=\"30\" y2=\"24\"/><line x1=\"42\" y1=\"36\" x2=\"30\" y2=\"27\"/><circle cx=\"6\" cy=\"12\" r=\"2\"/><circle cx=\"6\" cy=\"24\" r=\"2\"/><circle cx=\"6\" cy=\"36\" r=\"2\"/><circle cx=\"42\" cy=\"12\" r=\"2\"/><circle cx=\"42\" cy=\"24\" r=\"2\"/><circle cx=\"42\" cy=\"36\" r=\"2\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "htng",
@@ -10084,7 +10084,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"4\" fill=\"currentColor\" stroke=\"none\"/><line x1=\"24\" y1=\"24\" x2=\"24\" y2=\"7\"/><line x1=\"24\" y1=\"24\" x2=\"40\" y2=\"15\"/><line x1=\"24\" y1=\"24\" x2=\"41\" y2=\"31\"/><line x1=\"24\" y1=\"24\" x2=\"31\" y2=\"40\"/><line x1=\"24\" y1=\"24\" x2=\"14\" y2=\"39\"/><line x1=\"24\" y1=\"24\" x2=\"7\" y2=\"30\"/><line x1=\"24\" y1=\"24\" x2=\"8\" y2=\"15\"/><circle cx=\"24\" cy=\"7\" r=\"2\"/><circle cx=\"40\" cy=\"15\" r=\"2\"/><circle cx=\"41\" cy=\"31\" r=\"2\"/><circle cx=\"31\" cy=\"40\" r=\"2\"/><circle cx=\"14\" cy=\"39\" r=\"2\"/><circle cx=\"7\" cy=\"30\" r=\"2\"/><circle cx=\"8\" cy=\"15\" r=\"2\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "iata-clearing-house",
@@ -10162,7 +10162,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 20 24 8l18 12\"/><line x1=\"9\" y1=\"20\" x2=\"9\" y2=\"38\"/><line x1=\"39\" y1=\"20\" x2=\"39\" y2=\"38\"/><line x1=\"17\" y1=\"22\" x2=\"17\" y2=\"36\"/><line x1=\"31\" y1=\"22\" x2=\"31\" y2=\"36\"/><line x1=\"5\" y1=\"42\" x2=\"43\" y2=\"42\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "iata-co2-connect",
@@ -10230,7 +10230,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 24a18 18 0 0 1 36 0\"/><path d=\"M24 24l9-6\"/><circle cx=\"24\" cy=\"24\" r=\"2.5\" fill=\"currentColor\"/><path d=\"M10 24h-3M41 24h-3M24 9V6\"/><path d=\"M14 36a8 8 0 0 0 0 4M20 38h8\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "iata-code",
@@ -10354,7 +10354,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"15\"/><path d=\"M24 15v9l6 4\"/><path d=\"M37 11l3-3M11 11L8 8\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "iata-easypay",
@@ -10428,7 +10428,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 14h30a4 4 0 0 1 4 4v18a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4V14a3 3 0 0 1 3-3h25\"/><path d=\"M34 24h8v8h-8a4 4 0 0 1 0-8z\"/><path d=\"M18 23l-4 6h6l-4 6\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "iata-number",
@@ -10503,7 +10503,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"9\" y=\"8\" width=\"30\" height=\"32\" rx=\"3\"/><circle cx=\"24\" cy=\"19\" r=\"4\"/><path d=\"M17 32c0-4 3.5-6 7-6s7 2 7 6\"/><path d=\"M14 12h4M30 12h4\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "iata-one-id",
@@ -10646,7 +10646,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"17\"/><path d=\"M24 7v34\"/><path d=\"M9 18c5 3 10 3 15 0s10-3 15 0M9 30c5-3 10-3 15 0s10 3 15 0\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "icao-carbon-emissions-calculator-icec",
@@ -10720,7 +10720,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"12\" y=\"6\" width=\"24\" height=\"36\" rx=\"3\"/><rect x=\"17\" y=\"11\" width=\"14\" height=\"7\" rx=\"1\"/><path d=\"M17 24h3M24 24h3M31 24h0M17 30h3M24 30h3M31 30h0M17 36h3M24 36h3\"/><path d=\"M40 14l-6 4 6 4\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "icao-code",
@@ -10857,7 +10857,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"9\" y=\"16\" width=\"30\" height=\"16\" rx=\"2\"/><path d=\"M28 16v16\"/><path d=\"M14 24h9\"/><path d=\"M31 20v8h5v-8z\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "interchange-fee",
@@ -10912,7 +10912,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"7\" y=\"14\" width=\"24\" height=\"15\" rx=\"2\"/><line x1=\"7\" y1=\"19\" x2=\"31\" y2=\"19\"/><circle cx=\"36\" cy=\"32\" r=\"7\"/><path d=\"M36 29v3l2 1.5\"/><path d=\"M33.5 30.5v-2h2\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "interline",
@@ -10996,7 +10996,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"11\" cy=\"24\" r=\"5\"/><circle cx=\"37\" cy=\"24\" r=\"5\"/><path d=\"M16 24h16\"/><path d=\"M28 20l4 4-4 4\"/><path d=\"M20 28l-4-4 4-4\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "interline-electronic-ticket-iet",
@@ -11086,7 +11086,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"14\" width=\"36\" height=\"20\" rx=\"3\"/><line x1=\"24\" y1=\"14\" x2=\"24\" y2=\"34\" stroke-dasharray=\"3 3\"/><path d=\"M11 22l6 2-6 2v-1l3-1-3-1z\" fill=\"currentColor\" stroke=\"none\"/><path d=\"M31 22l6 2-6 2v-1l3-1-3-1z\" fill=\"currentColor\" stroke=\"none\"/><path d=\"M13 30h8M27 30h8\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "interline-electronic-ticketing",
@@ -11178,7 +11178,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"14\" width=\"20\" height=\"14\" rx=\"2\"/><path d=\"M6 19h20\"/><path d=\"M10 24h6\"/><rect x=\"24\" y=\"22\" width=\"18\" height=\"14\" rx=\"2\"/><path d=\"M24 27h18\"/><path d=\"M28 32h6\"/><path d=\"M26 18l4 4-4 4\" /></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "interrail-pass",
@@ -11259,7 +11259,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"7\" y=\"14\" width=\"34\" height=\"20\" rx=\"3\"/><circle cx=\"16\" cy=\"24\" r=\"4\"/><path d=\"M25 21h11M25 27h8\"/><path d=\"M11 38l3 3M37 38l-3 3\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "involuntary-denied-boarding",
@@ -11334,7 +11334,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"18\" cy=\"14\" r=\"5\"/><path d=\"M10 38v-6a8 8 0 0 1 16 0v6\"/><rect x=\"30\" y=\"16\" width=\"12\" height=\"16\" rx=\"1\"/><path d=\"M30 22h12\"/><path d=\"M33 28l6-6M39 28l-6-6\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "involuntary-reissue",
@@ -11490,7 +11490,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 8l16 30H8z\"/><line x1=\"24\" y1=\"18\" x2=\"24\" y2=\"28\"/><circle cx=\"24\" cy=\"33\" r=\"0.5\" fill=\"currentColor\"/><path d=\"M14 14l-4-4M34 14l4-4\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "iso-3166-country-code",
@@ -11612,7 +11612,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 10l32 0 0 28-32 0z\"/><path d=\"M24 10v28M8 24h16\"/><path d=\"M30 17l7 0 0 7-7 0z\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "iso-4217-currency-code",
@@ -11740,7 +11740,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"11\" y=\"7\" width=\"26\" height=\"34\" rx=\"3\"/><circle cx=\"18\" cy=\"15\" r=\"1.6\" fill=\"currentColor\" stroke=\"none\"/><circle cx=\"18\" cy=\"24\" r=\"1.6\" fill=\"currentColor\" stroke=\"none\"/><circle cx=\"18\" cy=\"33\" r=\"1.6\" fill=\"currentColor\" stroke=\"none\"/><path d=\"M24 15h7M24 24h7M24 33h7\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "joint-venture",
@@ -11808,7 +11808,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"18\" cy=\"24\" r=\"10\"/><circle cx=\"30\" cy=\"24\" r=\"10\"/><path d=\"M24 16.5 a10 10 0 0 1 0 15 a10 10 0 0 1 0 -15z\" fill=\"currentColor\" stroke=\"none\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "journey",
@@ -11886,7 +11886,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 12h9a5 5 0 010 10H16a5 5 0 000 10h12\"/><circle cx=\"10\" cy=\"12\" r=\"3\"/><circle cx=\"38\" cy=\"32\" r=\"3\"/><circle cx=\"24\" cy=\"22\" r=\"2\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "known-traveler-number",
@@ -11975,7 +11975,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"12\" width=\"36\" height=\"24\" rx=\"3\"/><circle cx=\"16\" cy=\"22\" r=\"4\"/><path d=\"M10 32c1-3 4-5 6-5s5 2 6 5\"/><path d=\"M28 20h10\"/><path d=\"M28 26h8\"/><path d=\"M20 16l2 2 3-4\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "last-room-availability",
@@ -12060,7 +12060,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"12\" width=\"9\" height=\"9\" rx=\"1\"/><rect x=\"20\" y=\"12\" width=\"9\" height=\"9\" rx=\"1\"/><rect x=\"32\" y=\"12\" width=\"9\" height=\"9\" rx=\"1\"/><path d=\"M10 17l1.5 1.5L14 15M22 17l1.5 1.5L26 15\"/><path d=\"M32 12l9 9M41 12l-9 9\"/><path d=\"M14 38l4-6 4 4 5-8 4 5\" /><circle cx=\"36.5\" cy=\"16.5\" r=\"6.5\" opacity=\"0\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "last-room-availability-lra",
@@ -12151,7 +12151,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 22V14a2 2 0 0 1 2-2h28a2 2 0 0 1 2 2v8\"/><path d=\"M8 22h32v12H8z\"/><path d=\"M14 22v-4a2 2 0 0 1 2-2h6v8\"/><path d=\"M34 28l3 3 5-6\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "leg",
@@ -12201,7 +12201,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><line x1=\"6\" y1=\"40\" x2=\"42\" y2=\"40\"/><path d=\"M9 36 C16 16 32 16 39 24\"/><path d=\"M33 12 L41 20 L32 24\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "length-of-stay",
@@ -12265,7 +12265,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"7\" y=\"10\" width=\"34\" height=\"30\" rx=\"3\"/><line x1=\"7\" y1=\"18\" x2=\"41\" y2=\"18\"/><line x1=\"15\" y1=\"7\" x2=\"15\" y2=\"13\"/><line x1=\"33\" y1=\"7\" x2=\"33\" y2=\"13\"/><path d=\"M15 25h2v9\"/><path d=\"M33 29a4.5 4.5 0 1 1-5-5 5.5 5.5 0 0 0 5 5z\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "limited-lines-travel-insurance-producer",
@@ -12328,7 +12328,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"7\" y=\"11\" width=\"34\" height=\"26\" rx=\"3\"/><circle cx=\"17\" cy=\"22\" r=\"4\"/><path d=\"M12 32 a5 5 0 0 1 10 0\"/><line x1=\"27\" y1=\"19\" x2=\"36\" y2=\"19\"/><line x1=\"27\" y1=\"25\" x2=\"36\" y2=\"25\"/><line x1=\"27\" y1=\"31\" x2=\"33\" y2=\"31\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "loss-damage-waiver",
@@ -12397,7 +12397,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 5l15 5v10c0 9-6 16-15 19-9-3-15-10-15-19V10z\"/><path d=\"M16 25l4 4 9-9\"/><circle cx=\"24\" cy=\"21\" r=\"1\" fill=\"currentColor\" stroke=\"none\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "loyalty-tier-status",
@@ -12540,7 +12540,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 14h22l8 8-8 8H10z\"/><path d=\"M16 22h12\"/><path d=\"M16 26h8\"/><path d=\"M40 30l4 3-4 3v-2h-3v-2h3z\" fill=\"currentColor\" stroke=\"none\"/><path d=\"M37 34c4 4 9 4 9 4\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "married-segment",
@@ -12608,7 +12608,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"18\" cy=\"24\" r=\"9\"/><circle cx=\"30\" cy=\"24\" r=\"9\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "maximum-permitted-mileage",
@@ -12687,7 +12687,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"11\" cy=\"35\" r=\"3\"/><circle cx=\"37\" cy=\"13\" r=\"3\"/><path d=\"M13 33C20 30 18 20 26 17\" stroke-dasharray=\"4 3\"/><path d=\"M14 33l24-16\"/><path d=\"M34 11l3 2 1 3\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "mco-miscellaneous-charges-order",
@@ -12781,7 +12781,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"9\" y=\"7\" width=\"30\" height=\"34\" rx=\"3\"/><line x1=\"15\" y1=\"15\" x2=\"33\" y2=\"15\"/><line x1=\"15\" y1=\"21\" x2=\"33\" y2=\"21\"/><line x1=\"15\" y1=\"27\" x2=\"26\" y2=\"27\"/><path d=\"M22 33h12\"/><path d=\"M29 30l3 3-3 3\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "mct",
@@ -12841,7 +12841,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"27\" r=\"13\"/><polyline points=\"24,20 24,27 29,30\"/><path d=\"M9 9 H17 M17 9 L14 6 M17 9 L14 12\"/><path d=\"M39 14 H31 M31 14 L34 11 M31 14 L34 17\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "meal-code",
@@ -12924,7 +12924,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14 6v14a3 3 0 006 0V6M17 6v34\"/><path d=\"M32 6c-3 0-5 4-5 10s2 8 5 8v16\"/><circle cx=\"24\" cy=\"24\" r=\"21\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "merchant-cancellation-protection",
@@ -13011,7 +13011,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M9 16 L9 36 a3 3 0 0 0 3 3 L36 39 a3 3 0 0 0 3 -3 L39 16\"/><path d=\"M6 12 L42 12 L39 16 L9 16 Z\"/><path d=\"M28 26 a4 4 0 1 1 -3.5 -4\"/><polyline points=\"28,20 28,24 24,24\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "merchant-model",
@@ -13089,7 +13089,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 18 11 9h26l3 9\"/><path d=\"M8 18a4 4 0 0 0 8 0 4 4 0 0 0 8 0 4 4 0 0 0 8 0 4 4 0 0 0 8 0\"/><path d=\"M11 21v18h26V21\"/><path d=\"M21 39v-9h6v9\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "merchant-of-record",
@@ -13162,7 +13162,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 18 11 9h26l3 9\"/><path d=\"M8 18a4 4 0 0 0 8 0 4 4 0 0 0 8 0 4 4 0 0 0 8 0 4 4 0 0 0 8 0\"/><path d=\"M11 21v18h26V21\"/><path d=\"M19 30l3 3 6-6\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "metal-neutrality",
@@ -13251,7 +13251,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 6v6M24 36v6\"/><polygon points=\"24 12 30 18 24 24 18 18\"/><path d=\"M10 30l6-3 4 5-6 3z\" fill=\"currentColor\" stroke=\"none\"/><path d=\"M38 30l-6-3-4 5 6 3z\" fill=\"currentColor\" stroke=\"none\"/><path d=\"M14 24h-6M40 24h-6\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "metasearch",
@@ -13381,7 +13381,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 38h36\"/><rect x=\"9\" y=\"28\" width=\"6\" height=\"10\"/><rect x=\"21\" y=\"20\" width=\"6\" height=\"18\"/><rect x=\"33\" y=\"12\" width=\"6\" height=\"26\"/><path d=\"M8 22l10-8 8 4 12-12\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "minimum-length-of-stay-mlos",
@@ -13469,7 +13469,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 14h32M8 24h32M8 34h32\"/><circle cx=\"14\" cy=\"14\" r=\"2.5\" fill=\"currentColor\"/><circle cx=\"22\" cy=\"24\" r=\"2.5\" fill=\"currentColor\"/><path d=\"M30 30l4 4 6-8\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "mita",
@@ -13536,7 +13536,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"16\"/><path d=\"M16 24a8 16 0 0 1 16 0\"/><path d=\"M16 24a8 16 0 0 0 16 0\"/><line x1=\"24\" y1=\"8\" x2=\"24\" y2=\"40\"/><path d=\"M9 19h30M9 29h30\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "montreal-convention-1999",
@@ -13600,7 +13600,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 6l16 6v9c0 11-7 18-16 21-9-3-16-10-16-21v-9z\"/><path d=\"M17 23l5 5 9-11\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "multimodal-transport",
@@ -13673,7 +13673,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"10\" width=\"14\" height=\"10\" rx=\"2\"/><path d=\"M8 20l-1 3M18 20l1 3\"/><path d=\"M30 12l8 0 3 6v6h-11z\"/><circle cx=\"33\" cy=\"30\" r=\"3\"/><path d=\"M13 28v8M13 36l-3 3M13 36l3 3M13 28l-4 2M13 28l4 2\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "muster-drill",
@@ -13733,7 +13733,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"15\"/><circle cx=\"24\" cy=\"24\" r=\"6\"/><line x1=\"24\" y1=\"9\" x2=\"24\" y2=\"15\"/><line x1=\"24\" y1=\"33\" x2=\"24\" y2=\"39\"/><line x1=\"9\" y1=\"24\" x2=\"15\" y2=\"24\"/><line x1=\"33\" y1=\"24\" x2=\"39\" y2=\"24\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "name-change",
@@ -13971,7 +13971,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"8\" width=\"28\" height=\"32\" rx=\"3\"/><path d=\"M16 16h16M16 22h10\"/><path d=\"M16 30l3 3 7-7\"/><circle cx=\"32\" cy=\"31\" r=\"5\"/><path d=\"M32 36v3l-2-1.5L28 39\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "ndc-exchange",
@@ -14059,7 +14059,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"6\"/><circle cx=\"8\" cy=\"12\" r=\"3\"/><circle cx=\"40\" cy=\"12\" r=\"3\"/><circle cx=\"8\" cy=\"36\" r=\"3\"/><circle cx=\"40\" cy=\"36\" r=\"3\"/><path d=\"M11 13l8 6M37 13l-8 6M11 35l8-6M37 35l-8-6\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "negotiated-fare",
@@ -14155,7 +14155,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14 10h20a2 2 0 012 2v26l-5-3-4 3-4-3-4 3-4-3-5 3V12a2 2 0 012-2z\"/><line x1=\"18\" y1=\"18\" x2=\"30\" y2=\"18\"/><line x1=\"18\" y1=\"24\" x2=\"26\" y2=\"24\"/><circle cx=\"31\" cy=\"25\" r=\"4\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "net-rate",
@@ -14232,7 +14232,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M25 5H11a2 2 0 00-2 2v14l18 18a2 2 0 002.8 0l11.4-11.4a2 2 0 000-2.8L25 5z\"/><circle cx=\"16\" cy=\"12\" r=\"2\" fill=\"currentColor\" stroke=\"none\"/><path d=\"M19 27l10 10M29 27L19 37\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "no-show",
@@ -14310,7 +14310,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"19\" cy=\"15\" r=\"5\"/><path d=\"M10 34c0-6 4-10 9-10 2 0 4 .6 5.5 1.6\"/><circle cx=\"34\" cy=\"32\" r=\"9\"/><line x1=\"28\" y1=\"26\" x2=\"40\" y2=\"38\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "non-commissionable-fare-ncf",
@@ -14406,7 +14406,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"15\"/><path d=\"M24 16v16M20 20h6a3 3 0 0 1 0 6h-5M21 26l6 6\"/><line x1=\"12\" y1=\"36\" x2=\"36\" y2=\"12\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "non-integrated-reservation-ticket-nrt",
@@ -14479,7 +14479,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"18\" width=\"15\" height=\"12\" rx=\"2\"/><rect x=\"27\" y=\"18\" width=\"15\" height=\"12\" rx=\"2\"/><path d=\"M21 24h6\" stroke-dasharray=\"2 3\"/><path d=\"M10 24h7M31 24h7\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "non-last-room-availability-nlra",
@@ -14560,7 +14560,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 22V14a2 2 0 0 1 2-2h28a2 2 0 0 1 2 2v8\"/><path d=\"M8 22h32v12H8z\"/><path d=\"M14 22v-4a2 2 0 0 1 2-2h6v8\"/><line x1=\"32\" y1=\"26\" x2=\"42\" y2=\"36\"/><line x1=\"42\" y1=\"26\" x2=\"32\" y2=\"36\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "non-refundable-rate",
@@ -14633,7 +14633,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"15\"/><path d=\"M24 15v10l5 3\"/><path d=\"M14 14l20 20\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "nuc",
@@ -14705,7 +14705,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"15\"/><path d=\"M24 14v20\"/><path d=\"M19 19h7a3 3 0 010 6h-7\"/><path d=\"M30 28l-6-6\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "occupancy",
@@ -14774,7 +14774,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"17\" cy=\"16\" r=\"5\"/><path d=\"M8 36v-2a9 9 0 0 1 18 0v2\"/><circle cx=\"33\" cy=\"18\" r=\"4\"/><path d=\"M28 36v-2a7 7 0 0 1 13-3\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "offer",
@@ -14931,7 +14931,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"8\" width=\"32\" height=\"32\" rx=\"3\"/><path d=\"M14 18h12\"/><path d=\"M14 24h20\"/><path d=\"M14 30h16\"/><path d=\"M30 14l4 4 6-7\" stroke-width=\"2.5\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "onboard-credit-obc",
@@ -14999,7 +14999,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"14\" width=\"36\" height=\"22\" rx=\"3\"/><line x1=\"6\" y1=\"22\" x2=\"42\" y2=\"22\"/><circle cx=\"31\" cy=\"30\" r=\"3\"/><line x1=\"12\" y1=\"30\" x2=\"20\" y2=\"30\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "one-order",
@@ -15170,7 +15170,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"11\" cy=\"36\" r=\"3\"/><path d=\"M11 33V14a4 4 0 0 1 4-4h14\"/><path d=\"M37 12l5 4-5 4\"/><path d=\"M42 16H29\"/><path d=\"M37 36a3 3 0 1 0 6 0 3 3 0 0 0-6 0z\"/><path d=\"M40 33V24\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "opaque-inventory",
@@ -15265,7 +15265,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 40V18l10-7 10 7v22\"/><path d=\"M6 40h26\"/><path d=\"M13 24h3M21 24h3M13 31h3M21 31h3\"/><circle cx=\"36\" cy=\"30\" r=\"8\"/><path d=\"M36 25v6M33 28h6\" opacity=\"0\"/><path d=\"M31 30c2-3 8-3 10 0-2 3-8 3-10 0z\"/><circle cx=\"36\" cy=\"30\" r=\"1.6\" fill=\"currentColor\" stroke=\"none\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "open-pricing",
@@ -15357,7 +15357,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"24\" r=\"4\"/><circle cx=\"38\" cy=\"12\" r=\"4\"/><circle cx=\"38\" cy=\"24\" r=\"4\"/><circle cx=\"38\" cy=\"36\" r=\"4\"/><path d=\"M14 24l20-9M14 24h20M14 24l20 9\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "open-seating-dining",
@@ -15452,7 +15452,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14 8v12a3 3 0 0 0 6 0V8M17 8v32\"/><path d=\"M31 8c-3 0-5 4-5 9s2 7 5 7M31 8v32\"/><circle cx=\"24\" cy=\"24\" r=\"21\" opacity=\"0\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "open-segment",
@@ -15534,7 +15534,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"11\" cy=\"24\" r=\"3\"/><circle cx=\"37\" cy=\"24\" r=\"3\"/><path d=\"M15 24h4M22 24h4M29 24h4\"/><path d=\"M37 14v-3M37 37v-3\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "open-ticket",
@@ -15606,7 +15606,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M7 16h26v16H7z\"/><path d=\"M33 16l8 8-8 8\"/><line x1=\"13\" y1=\"22\" x2=\"24\" y2=\"22\"/><line x1=\"13\" y1=\"27\" x2=\"20\" y2=\"27\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "opentravel-2-0-object-model",
@@ -15676,7 +15676,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 6l16 9v18l-16 9-16-9V15z\"/><path d=\"M8 15l16 9 16-9M24 24v18\"/><path d=\"M16 19.5l16 9\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "opentravel-alliance",
@@ -15821,7 +15821,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 26l14-3 6-9 3 1-3 9 9-2 3-3 3 1-2 5\"/><circle cx=\"38\" cy=\"36\" r=\"7\"/><path d=\"M38 32v4l3 2\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "optional-services",
@@ -15922,7 +15922,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"9\" y=\"15\" width=\"30\" height=\"22\" rx=\"3\"/><path d=\"M18 15v-3a6 6 0 0112 0v3\"/><line x1=\"16\" y1=\"24\" x2=\"32\" y2=\"24\"/><path d=\"M27 21l3 3-3 3\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "order",
@@ -16102,7 +16102,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 14h28l-3 24a2 2 0 0 1-2 2H15a2 2 0 0 1-2-2z\"/><path d=\"M17 14a7 7 0 0 1 14 0\"/><path d=\"M19 26l3 3 6-6\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "origin-destination",
@@ -16194,7 +16194,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"34\" r=\"4\"/><path d=\"M16 32c8-2 12-6 16-16\"/><path d=\"M34 11l3 1 1 3\"/><path d=\"M33 8a4 4 0 11-1 8 4 4 0 011-8z\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "origin-destination-control",
@@ -16282,7 +16282,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"9\" cy=\"24\" r=\"3\"/><circle cx=\"24\" cy=\"11\" r=\"3\"/><circle cx=\"24\" cy=\"37\" r=\"3\"/><circle cx=\"39\" cy=\"24\" r=\"3\"/><path d=\"M12 24h24\"/><path d=\"M11 22l11-9M37 22L26 13M11 26l11 9M37 26L26 35\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "osdm",
@@ -16384,7 +16384,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"10\" width=\"28\" height=\"22\" rx=\"3\"/><path d=\"M10 20h28\"/><circle cx=\"16\" cy=\"15\" r=\"1.5\" fill=\"currentColor\"/><circle cx=\"21\" cy=\"15\" r=\"1.5\" fill=\"currentColor\"/><path d=\"M16 38l-3 4M32 38l3 4M14 32v6M34 32v6\"/><path d=\"M19 26h10\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "osi",
@@ -16441,7 +16441,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"17\"/><line x1=\"24\" y1=\"22\" x2=\"24\" y2=\"33\"/><circle cx=\"24\" cy=\"16\" r=\"0.5\" fill=\"currentColor\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "ota-online-travel-agency",
@@ -16608,7 +16608,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"16\" cy=\"15\" r=\"5\"/><path d=\"M8 34v-2a8 8 0 0116 0v2z\"/><circle cx=\"33\" cy=\"17\" r=\"4\"/><path d=\"M27 34v-1a6 6 0 0112 0v1z\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "package-rate",
@@ -16675,7 +16675,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 18l16-8 16 8-16 8z\"/><path d=\"M8 18v14l16 8 16-8V18\"/><path d=\"M24 26v14M16 14l16 8\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "passenger-and-airport-data-interchange-standards-padis",
@@ -16749,7 +16749,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"10\" width=\"36\" height=\"28\" rx=\"3\"/><path d=\"M6 18h36\"/><path d=\"M11 14h.01M15 14h.01\"/><path d=\"M12 26h10M12 31h14\"/><path d=\"M30 24l5 4-5 4\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "pnl-adl",
@@ -16830,7 +16830,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"6\" width=\"28\" height=\"36\" rx=\"3\"/><line x1=\"15\" y1=\"14\" x2=\"27\" y2=\"14\"/><line x1=\"15\" y1=\"21\" x2=\"27\" y2=\"21\"/><line x1=\"15\" y1=\"28\" x2=\"24\" y2=\"28\"/><path d=\"M31 25 V33 M27 29 H35\"/><path d=\"M27 36 H35\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "passenger-service-system-pss",
@@ -16923,7 +16923,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"8\" width=\"32\" height=\"10\" rx=\"2\"/><rect x=\"8\" y=\"20\" width=\"32\" height=\"10\" rx=\"2\"/><rect x=\"8\" y=\"32\" width=\"32\" height=\"8\" rx=\"2\"/><path d=\"M13 13h.01M13 25h.01M13 36h.01\"/><path d=\"M18 13h14M18 25h14M18 36h10\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "passenger-type-code",
@@ -17081,7 +17081,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"34\" r=\"3.5\"/><circle cx=\"38\" cy=\"14\" r=\"3.5\"/><line x1=\"13\" y1=\"31\" x2=\"35.4\" y2=\"16.6\" stroke-dasharray=\"1 5\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "pci-dss",
@@ -17146,7 +17146,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 5l14 5v9c0 9-6 16-14 19-8-3-14-10-14-19v-9z\"/><rect x=\"17\" y=\"22\" width=\"14\" height=\"10\" rx=\"1.5\"/><path d=\"M20 22v-3a4 4 0 0 1 8 0v3\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "penalty-fee",
@@ -17232,7 +17232,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"15\"/><line x1=\"24\" y1=\"16\" x2=\"24\" y2=\"26\"/><circle cx=\"24\" cy=\"31\" r=\"0.5\" fill=\"currentColor\"/><line x1=\"24\" y1=\"31\" x2=\"24\" y2=\"31\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "pms",
@@ -17299,7 +17299,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 42V14l12-6 12 6v28\"/><path d=\"M8 42h32\"/><path d=\"M14 22h4M22 22h4M14 30h4M22 30h4\"/><circle cx=\"36\" cy=\"34\" r=\"6\"/><path d=\"M36 30v-2M36 40v-2M40.2 31.8l-1.4 1.4M33.2 38.6l-1.4-1.4M42 34h-2M32 34h-2M40.2 38.6l-1.4-1.4M33.2 31.8l-1.4 1.4\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "pnr",
@@ -17399,7 +17399,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"11\" y=\"6\" width=\"26\" height=\"36\" rx=\"3\"/><line x1=\"16\" y1=\"14\" x2=\"32\" y2=\"14\"/><line x1=\"16\" y1=\"20\" x2=\"32\" y2=\"20\"/><line x1=\"16\" y1=\"26\" x2=\"28\" y2=\"26\"/><circle cx=\"29\" cy=\"34\" r=\"4.5\"/><path d=\"M32.2 37.2 35 40\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "pnr-history",
@@ -17494,7 +17494,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 9 a15 15 0 1 1 -14 10\"/><polyline points=\"7,11 10,19 18,17\"/><polyline points=\"24,16 24,24 30,28\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "port-of-call",
@@ -17580,7 +17580,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"18\" r=\"6\"/><path d=\"M24 24v14\"/><path d=\"M16 32a8 6 0 0 0 16 0\"/><line x1=\"18\" y1=\"30\" x2=\"30\" y2=\"30\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "pre-existing-condition-waiver",
@@ -17643,7 +17643,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"14\" width=\"22\" height=\"28\" rx=\"3\"/><polyline points=\"16,22 20,22 22,18 26,30 28,24 32,24\"/><circle cx=\"33\" cy=\"12\" r=\"7\"/><line x1=\"33\" y1=\"9\" x2=\"33\" y2=\"15\"/><line x1=\"30\" y1=\"12\" x2=\"36\" y2=\"12\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "pricing-unit",
@@ -17716,7 +17716,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"9\" y=\"13\" width=\"30\" height=\"22\" rx=\"3\"/><line x1=\"19\" y1=\"13\" x2=\"19\" y2=\"35\" stroke-dasharray=\"3 3\"/><circle cx=\"14\" cy=\"24\" r=\"2\"/><circle cx=\"29\" cy=\"24\" r=\"2\"/><line x1=\"23\" y1=\"24\" x2=\"34\" y2=\"24\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "private-label-chain-code",
@@ -17799,7 +17799,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 22L22 6a2 2 0 012.8 0L42 23a2 2 0 010 2.8L26 42a2 2 0 01-2.8 0L6 25z\"/><circle cx=\"16\" cy=\"16\" r=\"2.5\"/><path d=\"M22 22h8M22 27h6\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "prm",
@@ -17934,7 +17934,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14 16h16a2 2 0 0 1 2 2v22H12V18a2 2 0 0 1 2-2z\"/><path d=\"M18 16v-3a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v3\"/><path d=\"M17 24h10M17 30h7\"/><circle cx=\"34\" cy=\"30\" r=\"6\"/><path d=\"M34 27v3M34 33v.5\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "property-mapping",
@@ -18012,7 +18012,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"5\" y=\"14\" width=\"14\" height=\"20\" rx=\"2\"/><line x1=\"9\" y1=\"19\" x2=\"15\" y2=\"19\"/><line x1=\"9\" y1=\"24\" x2=\"15\" y2=\"24\"/><rect x=\"29\" y=\"14\" width=\"14\" height=\"20\" rx=\"2\"/><line x1=\"33\" y1=\"19\" x2=\"39\" y2=\"19\"/><line x1=\"33\" y1=\"24\" x2=\"39\" y2=\"24\"/><path d=\"M19 24h4l2-3 2 6 1-3h1\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "proration",
@@ -18097,7 +18097,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"15\"/><path d=\"M24 9v15l11 7\"/><path d=\"M24 24L13 16\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "protection-level",
@@ -18176,7 +18176,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 6l14 6v9c0 9-6 15-14 19-8-4-14-10-14-19v-9z\"/><rect x=\"19\" y=\"20\" width=\"10\" height=\"8\" rx=\"1.5\"/><path d=\"M21 20v-3a3 3 0 016 0v3\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "pseudo-city-code",
@@ -18348,7 +18348,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"9\" cy=\"12\" r=\"2\"/><circle cx=\"9\" cy=\"24\" r=\"2\"/><circle cx=\"9\" cy=\"36\" r=\"2\"/><line x1=\"17\" y1=\"12\" x2=\"40\" y2=\"12\"/><line x1=\"17\" y1=\"24\" x2=\"40\" y2=\"24\"/><line x1=\"17\" y1=\"36\" x2=\"40\" y2=\"36\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "rack-rate",
@@ -18440,7 +18440,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"8\" width=\"28\" height=\"32\" rx=\"2\"/><line x1=\"16\" y1=\"16\" x2=\"32\" y2=\"16\"/><line x1=\"16\" y1=\"24\" x2=\"32\" y2=\"24\"/><line x1=\"16\" y1=\"32\" x2=\"26\" y2=\"32\"/><path d=\"M30 32l4 4 6-7\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "rate-access-code",
@@ -18525,7 +18525,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"22\" width=\"28\" height=\"18\" rx=\"2\"/><path d=\"M16 22v-6a8 8 0 0116 0v6\"/><circle cx=\"24\" cy=\"30\" r=\"2.5\"/><path d=\"M24 32.5V36\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "rate-code",
@@ -18612,7 +18612,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"12\" width=\"36\" height=\"24\" rx=\"3\"/><path d=\"M14 22h8M14 28h12\"/><circle cx=\"32\" cy=\"24\" r=\"3\"/><path d=\"M32 21v-3M32 30v-2\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "rate-leakage",
@@ -18697,7 +18697,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 8h20l-4 14h6L16 42l4-16h-8z\" opacity=\"0\"/><path d=\"M14 8h16a2 2 0 012 2v6a6 6 0 01-6 6h-2v6\"/><path d=\"M14 8a2 2 0 00-2 2v6a6 6 0 006 6\"/><circle cx=\"30\" cy=\"36\" r=\"4\"/><path d=\"M30 30c2 3 4 4 4 6a4 4 0 11-8 0c0-2 2-3 4-6z\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "rate-parity",
@@ -18758,7 +18758,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 8v30\"/><path d=\"M14 38h20\"/><path d=\"M10 14h28\"/><path d=\"M10 14l-5 9a5 5 0 0 0 10 0z\"/><path d=\"M38 14l-5 9a5 5 0 0 0 10 0z\"/><circle cx=\"24\" cy=\"10\" r=\"2\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "rate-parity-clause",
@@ -18852,7 +18852,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 6v30\"/><path d=\"M12 14h24\"/><path d=\"M12 14l-6 11h12z\"/><path d=\"M36 14l-6 11h12z\"/><path d=\"M6 25a6 6 0 0012 0M30 25a6 6 0 0012 0\"/><path d=\"M16 40h16\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "rate-plan",
@@ -18946,7 +18946,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"6\" width=\"28\" height=\"36\" rx=\"3\"/><line x1=\"16\" y1=\"15\" x2=\"32\" y2=\"15\"/><line x1=\"16\" y1=\"22\" x2=\"28\" y2=\"22\"/><path d=\"M19 31h7a3 3 0 0 1 0 6h-5l3 3\"/><line x1=\"22\" y1=\"28\" x2=\"22\" y2=\"40\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "rate-shopping",
@@ -19038,7 +19038,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"21\" cy=\"21\" r=\"12\"/><line x1=\"30\" y1=\"30\" x2=\"40\" y2=\"40\"/><line x1=\"16\" y1=\"24\" x2=\"16\" y2=\"18\"/><line x1=\"21\" y1=\"24\" x2=\"21\" y2=\"15\"/><line x1=\"26\" y1=\"24\" x2=\"26\" y2=\"20\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "rbd",
@@ -19128,7 +19128,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14 30V18a3 3 0 016 0v9h8a3 3 0 013 3v6\"/><path d=\"M14 33h17\"/><path d=\"M14 30h-2a2 2 0 00-2 2v6\"/><circle cx=\"34\" cy=\"15\" r=\"7\"/><path d=\"M32 18v-6h2.5a1.5 1.5 0 010 3H32m2 0l2.5 3\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "re-accommodation",
@@ -19219,7 +19219,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14 16 a14 14 0 1 1 -3 12\"/><polyline points=\"14 8 14 16 22 16\"/><circle cx=\"24\" cy=\"24\" r=\"3\" fill=\"currentColor\" stroke=\"none\"/><line x1=\"24\" y1=\"24\" x2=\"33\" y2=\"19\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "rfic-rfisc",
@@ -19295,7 +19295,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"7\" y=\"14\" width=\"12\" height=\"20\" rx=\"2\"/><path d=\"M11 20h4M11 24h4M11 28h4\"/><rect x=\"29\" y=\"14\" width=\"12\" height=\"20\" rx=\"2\"/><path d=\"M33 20h4M33 24h4M33 28h4\"/><path d=\"M19 24h10\"/><circle cx=\"24\" cy=\"24\" r=\"1.5\" fill=\"currentColor\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "received-from-element-rf",
@@ -19384,7 +19384,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"16\" r=\"7\"/><path d=\"M12 38 a12 12 0 0 1 24 0\"/><polyline points=\"30,30 35,35 42,26\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "record-locator",
@@ -19471,7 +19471,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"7\" y=\"14\" width=\"34\" height=\"20\" rx=\"3\"/><path d=\"M14 22h6M14 28h12M28 22h6\"/><circle cx=\"33\" cy=\"28\" r=\"3.5\"/><path d=\"M35.5 30.5 39 34\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "redress-number",
@@ -19546,7 +19546,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"16\" cy=\"16\" r=\"6\"/><path d=\"M8 36c0-5 4-8 8-8s8 3 8 8\"/><path d=\"M30 18l12 12\"/><path d=\"M42 18L30 30\"/><path d=\"M28 8h12\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "refueleu-aviation",
@@ -19615,7 +19615,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"15\" r=\"2\" fill=\"currentColor\"/><circle cx=\"31\" cy=\"17\" r=\"2\" fill=\"currentColor\"/><circle cx=\"17\" cy=\"17\" r=\"2\" fill=\"currentColor\"/><path d=\"M18 8h8\"/><path d=\"M14 26h20l-2 14a2 2 0 0 1-2 2H18a2 2 0 0 1-2-2z\"/><path d=\"M14 26l3-6h14l3 6\"/><path d=\"M21 33c2 2 2 3 0 5M27 33c2 2 2 3 0 5\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "refund",
@@ -19860,7 +19860,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"7\" y=\"10\" width=\"34\" height=\"30\" rx=\"3\"/><path d=\"M7 18h34M16 7v6M32 7v6\"/><path d=\"M19 30l5 5 9-11\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "remittance",
@@ -19930,7 +19930,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"11\" cy=\"24\" r=\"6\"/><circle cx=\"37\" cy=\"24\" r=\"6\"/><path d=\"M18 21h12\"/><path d=\"M27 18l3 3-3 3\"/><path d=\"M30 30H18\"/><path d=\"M21 33l-3-3 3-3\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "remittance-holding-capacity-rhc",
@@ -20008,7 +20008,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 7a17 17 0 1 0 17 17\"/><path d=\"M24 24V9\"/><path d=\"M24 24l11-7\"/><circle cx=\"24\" cy=\"24\" r=\"2.5\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "rental-agreement",
@@ -20070,7 +20070,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 5h16l8 8v22a3 3 0 0 1-3 3H12a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3z\"/><path d=\"M28 5v8h8\"/><path d=\"M15 21h14M15 27h14\"/><path d=\"M15 33c3-3 5 0 7-1\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "repatriation-of-remains",
@@ -20133,7 +20133,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"17\"/><path d=\"M7 24 h34\"/><path d=\"M24 7 a26 26 0 0 1 0 34 a26 26 0 0 1 0 -34\"/><polyline points=\"30,18 24,12 18,18\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "repositioning-cruise",
@@ -20207,7 +20207,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"34\" r=\"3\"/><circle cx=\"36\" cy=\"14\" r=\"3\"/><path d=\"M14 32C22 24 26 22 34 16\"/><path d=\"M30 14h6v6\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "residual-value",
@@ -20292,7 +20292,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"15\"/><path d=\"M24 9a15 15 0 0 1 13 7.5L24 24z\" fill=\"currentColor\" stroke=\"none\"/><path d=\"M19 26h10\"/><path d=\"M24 21v3\"/><path d=\"M21 30h6\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "rest-api",
@@ -20379,7 +20379,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"24\" r=\"5\"/><circle cx=\"38\" cy=\"14\" r=\"5\"/><circle cx=\"38\" cy=\"34\" r=\"5\"/><line x1=\"15\" y1=\"24\" x2=\"33\" y2=\"16\"/><line x1=\"15\" y1=\"24\" x2=\"33\" y2=\"32\"/><path d=\"M22 6l3 3-3 3\"/><path d=\"M19 9h6\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "revenue-management",
@@ -20451,7 +20451,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 38h32\"/><path d=\"M8 38V10\"/><rect x=\"13\" y=\"26\" width=\"5\" height=\"12\"/><rect x=\"22\" y=\"18\" width=\"5\" height=\"20\"/><rect x=\"31\" y=\"12\" width=\"5\" height=\"26\"/><path d=\"M12 20l6-6 5 4 9-9\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "revpar",
@@ -20513,7 +20513,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 40V8\"/><path d=\"M6 40h36\"/><rect x=\"12\" y=\"28\" width=\"6\" height=\"10\"/><rect x=\"21\" y=\"20\" width=\"6\" height=\"18\"/><rect x=\"30\" y=\"12\" width=\"6\" height=\"26\"/><path d=\"M12 22l9-8 6 4 9-10\"/><path d=\"M30 8h6v6\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "rfm-segmentation",
@@ -20584,7 +20584,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M7 41V7\"/><path d=\"M7 41h34\"/><rect x=\"13\" y=\"28\" width=\"6\" height=\"9\"/><rect x=\"23\" y=\"20\" width=\"6\" height=\"17\"/><rect x=\"33\" y=\"12\" width=\"6\" height=\"25\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "right-to-care",
@@ -20665,7 +20665,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 40C12 32 6 25 6 17a9 9 0 0 1 18-3 9 9 0 0 1 18 3c0 8-6 15-18 23z\"/><path d=\"M16 22h5l2-4 3 8 2-4h4\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "room-type",
@@ -20739,7 +20739,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 18v18\"/><path d=\"M6 24h36v12\"/><path d=\"M42 30v6\"/><path d=\"M6 24v-6h22a8 8 0 0 1 8 8\"/><path d=\"M12 22a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "run-of-house-roh",
@@ -20806,7 +20806,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 22L24 8l18 14\"/><path d=\"M10 20v18h28V20\"/><path d=\"M19 38v-9h10v9\"/><path d=\"M22 26h.01\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "schedule-change",
@@ -20883,7 +20883,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"10\" width=\"26\" height=\"26\" rx=\"2\"/><path d=\"M8 17h26M14 7v6M28 7v6\"/><circle cx=\"36\" cy=\"34\" r=\"8\"/><path d=\"M36 30v4l3 2\"/><path d=\"M30 30l-2-2v3h3\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "seat-map",
@@ -20972,7 +20972,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M16 11c-3 5-3 26 0 30M32 11c3 5 3 26 0 30\"/><rect x=\"19\" y=\"15\" width=\"4\" height=\"4\" rx=\"1\"/><rect x=\"25\" y=\"15\" width=\"4\" height=\"4\" rx=\"1\"/><rect x=\"19\" y=\"22\" width=\"4\" height=\"4\" rx=\"1\"/><rect x=\"25\" y=\"22\" width=\"4\" height=\"4\" rx=\"1\"/><rect x=\"19\" y=\"29\" width=\"4\" height=\"4\" rx=\"1\"/><rect x=\"25\" y=\"29\" width=\"4\" height=\"4\" rx=\"1\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "seat-reservation",
@@ -21050,7 +21050,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M16 14v14a3 3 0 0 0 3 3h11\"/><path d=\"M16 28h14v8\"/><path d=\"M16 14h-3M30 36v2\"/><path d=\"M30 22l4-4 3 3-4 4z\"/><path d=\"M37 21l-3 9-4 1 1-4z\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "secure-flight",
@@ -21202,7 +21202,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"34\" r=\"3.5\"/><circle cx=\"38\" cy=\"14\" r=\"3.5\"/><line x1=\"12.6\" y1=\"31.4\" x2=\"35.4\" y2=\"16.6\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "settlement-cycle",
@@ -21273,7 +21273,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M38 16a16 16 0 1 0 4 14\"/><path d=\"M38 8v8h-8\"/><circle cx=\"24\" cy=\"24\" r=\"3.5\"/><path d=\"M24 16v3M24 29v3\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "settlement-with-orders-swo",
@@ -21351,7 +21351,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"10\"/><path d=\"M24 18v12M21 21h4a2 2 0 0 1 0 4h-2a2 2 0 0 0 0 4h4\"/><path d=\"M8 14l5-3 5 3M40 34l-5 3-5-3\"/><path d=\"M13 11v9M35 37v-9\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "shopping-api",
@@ -21439,7 +21439,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"21\" cy=\"21\" r=\"12\"/><line x1=\"30\" y1=\"30\" x2=\"40\" y2=\"40\"/><path d=\"M15 21h12\"/><path d=\"M27 21l-4-4\"/><path d=\"M27 21l-4 4\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "shore-excursion",
@@ -21514,7 +21514,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 36h36\"/><path d=\"M10 36l6-16 14 4-4 12\"/><circle cx=\"30\" cy=\"14\" r=\"4\"/><path d=\"M16 20l8-6\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "simplified-invoicing-and-settlement-sis",
@@ -21602,7 +21602,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M13 6h16l8 8v28H13z\"/><path d=\"M29 6v8h8\"/><line x1=\"18\" y1=\"22\" x2=\"32\" y2=\"22\"/><line x1=\"18\" y1=\"28\" x2=\"32\" y2=\"28\"/><line x1=\"18\" y1=\"34\" x2=\"26\" y2=\"34\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "single-customer-view",
@@ -21672,7 +21672,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"15\" cy=\"15\" r=\"6\"/><circle cx=\"33\" cy=\"15\" r=\"6\"/><path d=\"M15 21c-4 0-8 3-8 8M33 21c4 0 8 3 8 8\"/><circle cx=\"24\" cy=\"34\" r=\"8\"/><path d=\"M20.5 34l2.5 2.5 4.5-5\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "single-supplement",
@@ -21746,7 +21746,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"15\" r=\"6\"/><path d=\"M14 38c0-6 4.5-10 10-10s10 4 10 10\"/><line x1=\"36\" y1=\"12\" x2=\"42\" y2=\"12\"/><line x1=\"39\" y1=\"9\" x2=\"39\" y2=\"15\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "sipp-code",
@@ -21809,7 +21809,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"14\" width=\"36\" height=\"20\" rx=\"3\"/><path d=\"M13 20v8M13 20h4a2.5 2.5 0 0 1 0 5h-4M23 20a2.5 2.5 0 0 0 0 5h2a2.5 2.5 0 0 1 0 5h-4\"/><path d=\"M33 20v8M37 20v8\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "sita-teletype-address",
@@ -21892,7 +21892,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"14\" width=\"36\" height=\"22\" rx=\"2\"/><path d=\"M6 18l18 11 18-11\"/><path d=\"M14 40h20\"/><path d=\"M24 36v4\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "slot",
@@ -21943,7 +21943,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"16\"/><path d=\"M24 14v10l7 4\"/><path d=\"M24 8v3M24 37v3M8 24h3M37 24h3\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "spa-special-prorate-agreement",
@@ -22021,7 +22021,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"9\" y=\"8\" width=\"22\" height=\"30\" rx=\"2\"/><path d=\"M14 16h12M14 21h12M14 26h7\"/><path d=\"M28 32l5 5 10-10\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "split-pnr",
@@ -22105,7 +22105,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 24h8\"/><path d=\"M18 24 28 14h10\"/><path d=\"M18 24 28 34h10\"/><circle cx=\"10\" cy=\"24\" r=\"3\"/><circle cx=\"40\" cy=\"14\" r=\"3\"/><circle cx=\"40\" cy=\"34\" r=\"3\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "ssr",
@@ -22177,7 +22177,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 7 L29 18 L41 19.5 L32 28 L34.5 40 L24 34 L13.5 40 L16 28 L7 19.5 L19 18 Z\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "standard-international-passenger-tariff-tcv",
@@ -22251,7 +22251,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"16\"/><path d=\"M8 24h32\"/><path d=\"M24 8a22 22 0 0 1 0 32M24 8a22 22 0 0 0 0 32\"/><circle cx=\"14\" cy=\"15\" r=\"2\" fill=\"currentColor\"/><circle cx=\"34\" cy=\"33\" r=\"2\" fill=\"currentColor\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "standard-retailer-and-supplier-interline-agreement-srsia",
@@ -22329,7 +22329,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14 6h14l6 6v30a2 2 0 0 1-2 2H14a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z\"/><path d=\"M28 6v6h6\"/><circle cx=\"19\" cy=\"26\" r=\"3\"/><circle cx=\"29\" cy=\"26\" r=\"3\"/><path d=\"M22 26h4\"/><path d=\"M17 34h14\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "standard-schedules-message",
@@ -22413,7 +22413,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 12h32a2 2 0 0 1 2 2v18a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V14a2 2 0 0 1 2-2z\"/><path d=\"M6 15l18 11 18-11\"/><path d=\"M14 38l5-5M34 38l-5-5\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "station-code",
@@ -22480,7 +22480,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 43c8-9 13-16 13-23a13 13 0 10-26 0c0 7 5 14 13 23z\"/><path d=\"M19 22l4-7 4 7M20.5 19.5h5\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "status-match",
@@ -22556,7 +22556,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M13 9l3 5 5 1-4 4 1 5-5-3-5 3 1-5-4-4 5-1z\"/><path d=\"M35 9l3 5 5 1-4 4 1 5-5-3\"/><path d=\"M20 28h8M20 28l3-3M28 28l-3 3\"/><path d=\"M28 37h-8M28 37l-3 3M20 37l3-3\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "stop-sell",
@@ -22649,7 +22649,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"16\"/><path d=\"M13 13l22 22\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "strong-customer-authentication",
@@ -22711,7 +22711,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"9\" y=\"20\" width=\"30\" height=\"20\" rx=\"2.5\"/><path d=\"M16 20v-5a8 8 0 0 1 16 0v5\"/><circle cx=\"24\" cy=\"29\" r=\"2.5\"/><path d=\"M24 31.5V35\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "supplemental-liability-insurance",
@@ -22782,7 +22782,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 6l14 5v9c0 8-5 15-14 18-9-3-14-10-14-18v-9z\"/><circle cx=\"24\" cy=\"19\" r=\"3\"/><path d=\"M17 32a7 7 0 0 1 14 0\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "surcharge",
@@ -22849,7 +22849,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><line x1=\"24\" y1=\"10\" x2=\"24\" y2=\"38\"/><line x1=\"14\" y1=\"24\" x2=\"34\" y2=\"24\"/><circle cx=\"24\" cy=\"24\" r=\"16\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "sustainable-aviation-fuel-saf",
@@ -22928,7 +22928,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M16 8h12a2 2 0 0 1 2 2v30a4 4 0 0 1-4 4h-8a4 4 0 0 1-4-4V10a2 2 0 0 1 2-2z\"/><path d=\"M16 16h14M20 6v2M26 6v2\"/><path d=\"M24 22c3 3 4 5 4 8a4 4 0 0 1-8 0c0-3 1-5 4-8z\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "tap-tsi",
@@ -23008,7 +23008,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"15\"/><path d=\"M24 9v30M9 24h30\"/><path d=\"M24 9a20 20 0 0 1 0 30M24 9a20 20 0 0 0 0 30\"/><rect x=\"20\" y=\"20\" width=\"8\" height=\"8\" rx=\"1\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "tarmac-delay-rule",
@@ -23072,7 +23072,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 30l14-2 6-9 3 1-2 8 7-1 5 4-30 5-5-3z\"/><line x1=\"6\" y1=\"38\" x2=\"40\" y2=\"38\"/><circle cx=\"34\" cy=\"14\" r=\"6\"/><path d=\"M34 11v3l2 2\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "tax-yq-yr",
@@ -23150,7 +23150,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 6l16 8v6c0 11-7 18-16 22C15 38 8 31 8 20v-6z\"/><path d=\"M20 23l3 3 6-7\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "through-fare",
@@ -23234,7 +23234,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"8\" cy=\"34\" r=\"3\"/><circle cx=\"24\" cy=\"34\" r=\"3\"/><circle cx=\"40\" cy=\"34\" r=\"3\"/><line x1=\"11\" y1=\"34\" x2=\"21\" y2=\"34\"/><line x1=\"27\" y1=\"34\" x2=\"37\" y2=\"34\"/><path d=\"M8 22 q16 -16 32 0\"/><line x1=\"8\" y1=\"22\" x2=\"8\" y2=\"18\"/><line x1=\"40\" y1=\"22\" x2=\"40\" y2=\"18\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "ticket-number",
@@ -23324,7 +23324,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 14h36v8a3 3 0 000 6v6H6v-6a3 3 0 000-6z\"/><path d=\"M24 14v26\" stroke-dasharray=\"2 3\"/><path d=\"M11 22h7M11 27h5\"/><path d=\"M30 22h7M30 27h7M30 32h4\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "ticketed-point-mileage",
@@ -23402,7 +23402,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"11\" cy=\"24\" r=\"3\"/><circle cx=\"37\" cy=\"24\" r=\"3\"/><line x1=\"14\" y1=\"24\" x2=\"34\" y2=\"24\"/><line x1=\"19\" y1=\"21\" x2=\"19\" y2=\"27\"/><line x1=\"24\" y1=\"20\" x2=\"24\" y2=\"28\"/><line x1=\"29\" y1=\"21\" x2=\"29\" y2=\"27\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "ticketing-time-limit",
@@ -23550,7 +23550,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"12\" width=\"32\" height=\"24\" rx=\"3\"/><circle cx=\"18\" cy=\"22\" r=\"4\"/><path d=\"M13 31c1-3 3-4 5-4s4 1 5 4\"/><path d=\"M28 20h8M28 25h8M28 30h5\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "time-and-mileage",
@@ -23633,7 +23633,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"18\"/><path d=\"M24 24l8-5\"/><path d=\"M14 24a10 10 0 0 1 20 0\"/><path d=\"M14 24h2M32 24h2M24 14v2\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "tokenization",
@@ -23708,7 +23708,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"15\" width=\"16\" height=\"11\" rx=\"2\"/><path d=\"M9 22h7\"/><path d=\"M24 23h6\"/><path d=\"M27 20l3 3-3 3\"/><rect x=\"30\" y=\"15\" width=\"12\" height=\"11\" rx=\"2\"/><circle cx=\"36\" cy=\"20.5\" r=\"2\"/><path d=\"M14 33v3M24 33v3M34 33v3\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "transfer-partner",
@@ -23794,7 +23794,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"13\" cy=\"14\" r=\"7\"/><circle cx=\"35\" cy=\"34\" r=\"7\"/><path d=\"M22 14h13l-3-3M22 14h13l-3 3\"/><path d=\"M26 34H13l3-3M26 34H13l3 3\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "transparency-in-payments-tip",
@@ -23880,7 +23880,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 24s7-12 20-12 20 12 20 12-7 12-20 12S4 24 4 24z\"/><circle cx=\"24\" cy=\"24\" r=\"6\"/><rect x=\"31\" y=\"30\" width=\"12\" height=\"9\" rx=\"2\"/><line x1=\"31\" y1=\"34\" x2=\"43\" y2=\"34\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "travel-medical-insurance",
@@ -23966,7 +23966,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 41 C10 31 6 22 6 16 a9 9 0 0 1 18 -3 a9 9 0 0 1 18 3 c0 6 -4 15 -18 25 Z\"/><line x1=\"24\" y1=\"19\" x2=\"24\" y2=\"29\"/><line x1=\"19\" y1=\"24\" x2=\"29\" y2=\"24\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "traveler-preference",
@@ -24045,7 +24045,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"15\" r=\"6\"/><path d=\"M12 38c0-7 5-12 12-12s12 5 12 12\"/><path d=\"M33 9l1.4 2.9 3.1.4-2.3 2.1.6 3.1-2.8-1.5-2.8 1.5.6-3.1-2.3-2.1 3.1-.4z\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "trip-cancellation",
@@ -24141,7 +24141,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"9\" y=\"8\" width=\"30\" height=\"32\" rx=\"3\"/><line x1=\"15\" y1=\"16\" x2=\"33\" y2=\"16\"/><line x1=\"15\" y1=\"22\" x2=\"27\" y2=\"22\"/><line x1=\"15\" y1=\"28\" x2=\"24\" y2=\"28\"/><line x1=\"28\" y1=\"28\" x2=\"40\" y2=\"40\"/><line x1=\"40\" y1=\"28\" x2=\"28\" y2=\"40\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "trip-interruption",
@@ -24214,7 +24214,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"6,30 16,30 20,18 26,38 30,30 42,30\"/><line x1=\"24\" y1=\"6\" x2=\"24\" y2=\"6\"/><path d=\"M34 8 a10 10 0 1 1 -8 4\"/><line x1=\"34\" y1=\"4\" x2=\"34\" y2=\"12\"/><line x1=\"34\" y1=\"12\" x2=\"40\" y2=\"12\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "two-way-xml",
@@ -24298,7 +24298,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 18h28\"/><path d=\"M31 13l5 5-5 5\"/><path d=\"M40 30H12\"/><path d=\"M17 25l-5 5 5 5\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "type-b-message",
@@ -24386,7 +24386,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"16\" width=\"36\" height=\"22\" rx=\"2\"/><path d=\"M12 16 V11 a3 3 0 0 1 3 -3 h18 a3 3 0 0 1 3 3 V16\"/><line x1=\"12\" y1=\"24\" x2=\"30\" y2=\"24\"/><line x1=\"12\" y1=\"30\" x2=\"24\" y2=\"30\"/><circle cx=\"35\" cy=\"28\" r=\"1\" fill=\"currentColor\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "type-b-messaging",
@@ -24469,7 +24469,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"20\" width=\"36\" height=\"18\" rx=\"2\"/><path d=\"M12 20v-6a4 4 0 0 1 4-4h16a4 4 0 0 1 4 4v6\"/><path d=\"M12 27h.01M17 27h.01M22 27h.01M27 27h.01M32 27h.01M36 27h.01\"/><path d=\"M14 32h20\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "uatp",
@@ -24548,7 +24548,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"14\" width=\"36\" height=\"22\" rx=\"3\"/><line x1=\"6\" y1=\"21\" x2=\"42\" y2=\"21\"/><path d=\"M14 30l5-5 4 3 6-7\"/><path d=\"M29 21l3-3 3 3\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "uk-regulation-261",
@@ -24617,7 +24617,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"15\"/><path d=\"M9 24h30M24 9v30\"/><path d=\"M13 13l22 22M35 13L13 35\"/><circle cx=\"24\" cy=\"24\" r=\"6\" fill=\"none\"/><circle cx=\"24\" cy=\"24\" r=\"2\" fill=\"currentColor\" stroke=\"none\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "un-locode",
@@ -24747,7 +24747,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"20\" cy=\"13\" r=\"5\"/><path d=\"M20 18v14\"/><path d=\"M12 24h16\"/><path d=\"M20 32l-5 8\"/><path d=\"M20 32l5 8\"/><path d=\"M30 10h12\"/><path d=\"M36 6l6 4-6 4\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "unlimited-mileage",
@@ -24810,7 +24810,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 30a6 6 0 1 1 6 6c-4 0-6-4-8-6-2-2-4-6-8-6a6 6 0 1 0 6 6\"/><path d=\"M38 18a6 6 0 1 0-6-6c0 4 4 6 6 8 2 2 6 4 6 8a6 6 0 1 1-6-6\" transform=\"translate(0 0)\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "validating-carrier",
@@ -24955,7 +24955,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"13\" width=\"30\" height=\"22\" rx=\"3\"/><line x1=\"6\" y1=\"21\" x2=\"36\" y2=\"21\"/><line x1=\"11\" y1=\"28\" x2=\"18\" y2=\"28\"/><path d=\"M40 18a6 6 0 0 1 0 12\"/><path d=\"M40 23a2 2 0 0 1 0 2\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "void",
@@ -25133,7 +25133,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"8\" width=\"24\" height=\"32\" rx=\"3\"/><path d=\"M16 16h12M16 21h8\"/><path d=\"M37 26a6 6 0 0 0-10-3l-2 2\"/><polyline points=\"25 21 25 25 29 25\"/><path d=\"M27 34a6 6 0 0 0 10-3l2-2\"/><polyline points=\"39 31 39 27 35 27\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "voluntary-denied-boarding",
@@ -25197,7 +25197,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"18\" cy=\"14\" r=\"5\"/><path d=\"M10 38v-6a8 8 0 0 1 16 0v6\"/><path d=\"M28 16l4 4 8-9\"/><path d=\"M30 30h12M30 34h8\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "voluntary-refunds-atpco-category-33",
@@ -25285,7 +25285,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"8\" width=\"24\" height=\"32\" rx=\"3\"/><path d=\"M16 16h12M16 21h8\"/><path d=\"M37 30a6 6 0 1 1-2-4.6\"/><polyline points=\"37 24 37 28 33 28\"/><path d=\"M24 30v6M21.5 33.5l2.5 2.5 2.5-2.5\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "waitlist",
@@ -25366,7 +25366,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M16 8h16M16 40h16\"/><path d=\"M18 8c0 8 12 10 12 16s-12 8-12 16\"/><path d=\"M30 8c0 8-12 10-12 16s12 8 12 16\"/><path d=\"M21 36h6\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "wet-lease",
@@ -25433,7 +25433,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 24 L26 20 L40 8 L34 24 L40 40 L26 28 Z\"/><path d=\"M4 34 q6 4 12 0 q6 -4 12 0 q6 4 12 0\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "worldtracer",
@@ -25504,7 +25504,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"16\"/><ellipse cx=\"24\" cy=\"24\" rx=\"7\" ry=\"16\"/><path d=\"M8 24h32M11 15h26M11 33h26\"/><circle cx=\"33\" cy=\"31\" r=\"5\"/><path d=\"M37 35l4 4\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     },
     {
       "id": "young-driver-surcharge",
@@ -25556,7 +25556,7 @@
         }
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"16\"/><circle cx=\"24\" cy=\"24\" r=\"6\"/><path d=\"M24 8v6M24 34v6M8 24h6M34 24h6\"/><path d=\"M24 18v6l4 2\"/></svg>",
-      "lastReviewed": "2026-06-16"
+      "lastReviewed": "2026-06-17"
     }
   ]
 }

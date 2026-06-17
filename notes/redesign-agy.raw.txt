@@ -1,0 +1,160 @@
+I will list the contents of the `/home/ubuntu/workspace/travel-gaia` directory to understand the structure of the Travel Gaia project.
+I will view `DESIGN.md` to understand the current design choices, architecture, and components of Travel Gaia.
+I will list the contents of the `notes` directory to examine the existing design discussion files and previous draft designs.
+I will read the contents of `notes/redesign-brief.md` to see if there is any existing redesign work or brief there.
+I will list the contents of the `build` directory to see how the template and other build assets are structured.
+I will run a grep search in `build/template.html` for `<style>` to locate the existing CSS styles.
+I will view the beginning of `build/template.html` to examine the structure, CSS variables, and layout of the template.
+I will search for `render` inside `build/template.html` to see the logic for routing and rendering different views.
+I will list the files in the `data` directory to see the raw terminology JSON files.
+제시해주신 요구사항과 제약을 바탕으로, **Travel Gaia**의 신뢰도를 높이고 교차 참조 탐색에 최적화된 전면 UI 재설계 proposal을 작성하였습니다.
+
+이 제안은 기존 [DESIGN.md](file:///home/ubuntu/workspace/travel-gaia/DESIGN.md)의 데이터 모델과 라우팅 요구사항을 유지하면서, [build/template.html](file:///home/ubuntu/workspace/travel-gaia/build/template.html) 내의 구조적 스타일 마크업과 CSS 변수를 완전히 쇄신하는 방향으로 구성되었습니다.
+
+---
+
+### [CONCEPT]
+학술적 에디토리얼 레이아웃과 동적 네비게이션이 결합된 **"Stacked Editorial Folio (슬라이딩 에디토리얼 폴리오)"**. Tufte식 사이드노트의 정교한 타이포그래피 규칙과 Matuschak식 수평 적층형 카드의 직관적인 맥락 유지를 융합하여, 여행 산업 용어의 교차 매핑과 미세한 차이(distinctions)를 흐름의 단절 없이 탐색하게 합니다.
+
+### [VISUAL SYSTEM]
+* **폰트 페어링**:
+  * 표제어 및 본문(Serif): **Lora** (Base64 WOFF2 임베드 가능, 약 35KB). 클래식하고 권위 있는 사전 느낌 전달.
+  * 메타데이터 및 유틸리티 UI(Grotesk/Sans-serif): **Inter** 또는 시스템 폰트(`system-ui`). 현대적이고 가독성이 뛰어난 네오-그로테스크 스타일.
+  * 코드 및 표준 식별자(Mono): **JetBrains Mono** 또는 `ui-monospace`.
+* **팔레트 (Hex 6개)**:
+  * 배경: `#FBFBF9` (Warm Paper - 종이 질감의 차분한 백그라운드)
+  * 전경/카드: `#FFFFFF` (Pure White)
+  * 텍스트 주입력: `#111215` (Ink Black - 깊은 묵색)
+  * 보조/사이드노트: `#62666E` (Slate Grey)
+  * 하일라인 규칙선: `#E8E6E0` (Hairline Neutral)
+  * 카테고리/강조 악센트: `#2E5B82` (Ocean Navy - 채도가 낮고 정돈된 어조의 대표색, 16개 카테고리별로 채도를 낮춘 조화로운 뮤트 톤 컬러 매핑)
+* **밀도**: 정보 밀도가 높은 사전식 조밀도(Compact density). 불필요한 공백을 줄이고 표와 리스트의 가독성을 최대로 높임.
+* **보더/그림자 철학**:
+  * 그림자 완전 제거 (`box-shadow: none`).
+  * 경계는 오직 1px의 실선 규칙(`border: 1px solid var(--border-hairline)`)과 배경색의 대비로만 구분. 둥근 모서리는 극소화(2px 또는 직각)하여 에디토리얼 서적의 인상 부여.
+* **모션 철학**:
+  * 장식적 애니메이션 전면 배제.
+  * 오직 Matuschak식 stacked panel이 우측에서 부드럽게 미끄러져 들어오는 슬라이딩 트랜지션(`transform: translateX()`, `cubic-bezier(0.16, 1, 0.3, 1)`)과 활성화 상태의 미세한 불투명도 페이드만 허용.
+
+### [IA & NAV]
+* **텍스트 내비게이션 모델**:
+  * 고정된 2-Tier 레이아웃. 좌측 슬림형 사이드바(메인 카테고리 16개 및 [index.html](file:///home/ubuntu/workspace/travel-gaia/index.html)의 기본 메뉴들인 색인, 그래프, 검색 등)와 우측의 가변 수평 스택 영역으로 구성.
+* **지식DB 브라우징 방식**:
+  * **Matuschak stacked pages**: 표제어 링크(예: PNR)를 클릭하면 현재 페이지가 전환되지 않고, 우측에 새로운 독립 칼럼 패널이 슬라이드 오버되어 나란히 배치됩니다. 연속 클릭 시 칼럼이 계속 우측에 쌓여, 사용자는 이전 맥락(예: `PNR` $\rightarrow$ `Segment` $\rightarrow$ `Leg`)을 좌우 스크롤로 한눈에 역추적하며 교차 분석할 수 있습니다. 각 칼럼 상단에는 개별 [Close/Fold] 컨트롤 제공.
+* **그래픽 내비게이션 접근**:
+  * **콘텐츠 통합형 마진 맵 (Contextual Sidenote Links)**: 용어 상세 설명 옆 Tufte식 우측 마진 영역에 동의어 매핑, 혼동 쌍(distinctions) 및 교차 관계 용어를 시각적으로 배치.
+  * **시그니처 미니 그래프 (Local Graph Mini-map)**: 개별 용어 스택 패널 최하단에 해당 용어를 중심으로 한 1-hop 관계만 선형으로 렌더링하는 초경량 미니 그래프(Canvas 기반)를 내장하여 탐색을 유도.
+
+### [KEY SCREENS]
+* **홈/디렉터리 (Home/Directory)**:
+  * 그라데이션이 사라진 깔끔한 미색 지면에, 단정한 Lora 폰트로 쓰여진 타이틀과 미니멀한 검색 창 배치. 하단부는 16개 카테고리를 가로형 그리드가 아닌 얇은 선(hairline)으로 구분된 다단 신문 레이아웃(Multi-column table) 형식으로 정리하여 학술적 목차 형태로 시각화.
+* **표제어 상세 (Term Detail Panel)**:
+  * 본문 중심의 좌우 분할 구조.
+  * 좌측(본문 65%): 단정한 세리프 서체의 대형 용어명, 핵심 정의(lead), 그리고 공급자(Amadeus, Sabre 등)별 교차 동의어 매핑 표.
+  * 우측(Tufte 마진 노트 35%): `distinctions`와 `relationships`를 본문 단락의 줄 위치에 맞추어 주석 형태로 배치.
+* **카테고리 (Category)**:
+  * 각 카테고리의 하위 용어들을 사전식 인덱스 테이블(tabular list)로 정렬. 한/영 표기와 핵심 식별자를 열(column)로 정교하게 정리하고, 불필요한 라인아트 카드를 걷어낸 초간결 리스트 뷰.
+* **그래프 (Knowledge Graph)**:
+  * 지하철 노선도나 고전적 청사진(Blueprint) 스타일의 Canvas 뷰. 네온 톤을 제거하고 다크/라이트 테마에 맞춘 차분한 모노톤의 노드와 가느다란 점선/실선 연결망. 호버 시 툴팁 대신 하단 고정 정보 바(Info Bar)에 세리프 폰트로 핵심 정의와 관계를 고밀도로 표기.
+* **색인 (Index)**:
+  * 종이 사전의 맨 뒷장 색인 페이지처럼, 컴팩트한 다단(Multi-column) 가나다/A-Z 인덱스 그리드. 가독성 높은 그로테스크 폰트를 사용하여 한 화면에 수백 개의 표제어가 책의 색인처럼 단정하게 펼쳐짐.
+
+### [ANTI-AI]
+* 채도 높은 보라/자홍 3색 그라데이션 대신, 온화한 미색 페이퍼 톤과 먹색 타이포그래피의 대비를 사용하여 시각적 피로를 없애고 권위를 확보합니다.
+* 공중에 떠 있는 둥근 카드와 블러 헤더를 전면 제거하고, 1px 헤어라인 격자 구조를 채택하여 정보의 경계를 명확하고 단단하게 규정합니다.
+* 화면 전환을 무조건적인 페이지 리셋 대신 Matuschak식 가로 적층 패널로 처리하여, 자동 생성된 템플릿 느낌을 완전히 지우고 연구용 레퍼런스 가이드를 사용하는 듯한 프로페셔널한 경험을 줍니다.
+
+### [HTML/CSS]
+* **CSS 변수 토큰**:
+  ```css
+  :root {
+    --bg-paper: #FBFBF9;
+    --bg-surface: #FFFFFF;
+    --border-hairline: #E8E6E0;
+    --text-primary: #111215;
+    --text-muted: #62666E;
+    --font-serif: 'Lora', 'Georgia', serif;
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+    --panel-width: 480px;
+    --header-height: 56px;
+  }
+  [data-theme="dark"] {
+    --bg-paper: #0D0E12;
+    --bg-surface: #15171E;
+    --border-hairline: #292D3A;
+    --text-primary: #F3F4F6;
+    --text-muted: #A0A5B0;
+  }
+  ```
+* **핵심 레이아웃 (Matuschak Stack Container)**:
+  ```css
+  .stack-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    align-items: stretch;
+    height: calc(100vh - var(--header-height));
+    background: var(--bg-paper);
+    padding: 0;
+  }
+  .stack-panel {
+    flex: 0 0 var(--panel-width);
+    border-right: 1px solid var(--border-hairline);
+    background: var(--bg-surface);
+    overflow-y: auto;
+    position: relative;
+    box-sizing: border-box;
+  }
+  ```
+* **시그니처 CSS 규칙**:
+  ```css
+  /* Tufte-style Margin Note (데스크톱 뷰 기준) */
+  .tufte-margin-note {
+    float: right;
+    clear: right;
+    margin-right: -40%;
+    width: 35%;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    color: var(--text-muted);
+    border-left: 1px solid var(--border-hairline);
+    padding-left: 12px;
+    position: relative;
+  }
+  /* Editorial Data Table */
+  .editorial-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+  }
+  .editorial-table th {
+    font-family: var(--font-sans);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    border-bottom: 2px solid var(--border-hairline);
+    padding: 6px 8px;
+    text-align: left;
+  }
+  .editorial-table td {
+    font-family: var(--font-serif);
+    font-size: 0.88rem;
+    border-bottom: 1px solid var(--border-hairline);
+    padding: 8px;
+  }
+  ```
+
+### [RISKS]
+* **DOM 노드 관리 및 성능 (DOM node count in single-file)**:
+  * 사용자가 링크를 타고 여러 표제어를 연속 클릭하여 Matuschak 패널이 수십 개 이상 가로로 적층될 경우, 단일 [index.html](file:///home/ubuntu/workspace/travel-gaia/index.html) 내의 DOM 요소가 과도하게 늘어나 브라우저 렌더링 병목 및 메모리 누수가 발생할 수 있습니다. 닫힌 패널의 DOM을 완벽히 소멸(garbage collect)시키는 정밀한 스크립트 제어가 필요합니다.
+* **수평 스크롤 내비게이션 피로도 (Horizontal Navigation UX)**:
+  * 데스크톱 일반 마우스 환경에서는 수평 스크롤이 자연스럽지 않아 가로로 누적되는 레이아웃 탐색 시 피로감을 느낄 수 있습니다. 이를 해결하기 위해 트랙패드/터치 동작이 없는 기기 사용자를 위한 스택 내비게이션 컨트롤러(예: 스택 상단부의 전체 히스토리 점프 링크, 가로 스크롤 좌우 이동 퀵 버튼)를 직접 마크업으로 추가하는 공수가 수반됩니다.
+
+---
+**작업 요약:**
+* 기존 SaaS 랜딩 템플릿 톤의 비주얼 구성을 전면 배제하는 **Stacked Editorial Folio** 디자인 메타포를 수립했습니다.
+* Tufte 스타일 에디토리얼 레이아웃과 Matuschak식의 stacked panel 가로 적층 방식을 결합한 IA 및 NAV 모델을 구상했습니다.
+* 1px 헤어라인, 모노톤 컬러 팔레트, 세리프 폰트 페어링 중심의 구체적인 CSS 토큰과 구조를 도출했습니다.
+* 단일 파일 오프라인 제약 속에서 예상되는 성능 및 UX 리스크에 대한 실효적인 대응 전략을 명시했습니다.

@@ -1,0 +1,282 @@
+Reading additional input from stdin...
+OpenAI Codex v0.140.0
+--------
+workdir: /home/ubuntu/workspace/travel-gaia
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: workspace-write [workdir, /tmp, $TMPDIR]
+reasoning effort: medium
+reasoning summaries: none
+session id: 019ed2da-d944-7de3-935d-7104e9eacd09
+--------
+user
+# Travel Gaia — 전면 UI 재설계 자문 브리프 (Round 1)
+
+너는 시니어 프로덕트/비주얼 디자이너다. 아래 제품의 UI를 **전면 재설계**하는 제안을 달라.
+
+## 제품
+**Travel Gaia** = 여행 산업 용어 백과사전. 항공/호텔/유통/정산/표준 등 **공급자·표준별로 다른 이름을 통일**하는 레퍼런스 위키. 가치의 핵심은 단순 정의가 아니라 **교차 동의어 매핑 + 혼동되는 쌍의 구분(distinctions)**.
+- 현재 **327개 표제어 / 16개 카테고리**, 전부 **한/영 양국어**, 항목마다 정의·확장정의·관계(related/broader/narrower/...)·distinctions·출처(sources)·라인아트 **SVG 아이콘** 보유.
+- 라우트: 홈, 카테고리, 표제어 상세(`#/term/<id>`), 지식그래프(`#/graph`), 전체 색인(`#/index`, A–Z/카테고리별), 클래스룸(학습 흐름), 검색.
+
+## 절대 제약 (이걸 깨면 안 됨)
+1. **단일 `index.html` 파일, 외부 의존성 0, 완전 오프라인**(더블클릭 동작). CSS/JS/JSON/폰트(base64) 전부 인라인. **CDN·외부폰트·외부이미지 금지.**
+2. 데이터는 빌드시 인라인되는 JSON. 위 데이터 모델/라우트는 유지.
+3. 한/영 토글, 다크모드 토글 유지.
+
+## 문제 (왜 재설계하나)
+현재 UI가 **"AI가 자동 생성한 SaaS 랜딩" 티가 강하다**: 보라→자홍 3색 그라데이션 히어로, Space Grotesk 거대 디스플레이 폰트, 글래스모피즘 블러 헤더, 빛나는 그라데이션 로고, 전부 둥근 모서리(14px)+그림자 카드, 숫자 카운트업 애니메이션. 진부하고 신뢰감이 떨어진다.
+
+## 목표
+- **"AI 티"를 없애고** 진짜 편집물/레퍼런스북 같은 **권위 있고 차분한** 인상.
+- 방대한 **지식 DB를 쉽게 탐색·검색**. 텍스트 내비게이션은 물론 **그래픽(시각적) 내비게이션**으로도 쉽게 돌아다닐 수 있어야 함.
+- 전체를 다 재설계.
+
+## 참고 레퍼런스 (인터넷 조사 결과 — 이 방향성 참고)
+- **Tufte CSS / Edward Tufte handouts**: 정교하게 짜인 타이포그래피, 본문 옆 **사이드노트(margin notes)**, 본문과 그래픽의 긴밀한 통합, 극도의 절제. → 권위 있는 레퍼런스 느낌.
+- **Andy Matuschak's notes (notes.andymatuschak.org)**: **stacked pages/columns** — 링크를 클릭하면 새 칼럼이 우측에 쌓여 **맥락을 잃지 않고** 연결을 따라감. atomic·concept-centric·densely linked. → 교차참조 많은 우리 데이터에 매우 적합한 "그래픽적" 탐색.
+- **Distill.pub / Stanford Encyclopedia of Philosophy**: 매우 평이하지만 권위 있는 상호링크 레퍼런스.
+- **Linear 헬프센터**: zero-distraction, 콘텐츠 우선, doc형 사이드바.
+- **에디토리얼 디자인 정설(2025)**: "**editorial serif + neat grotesque sans**" 조합이 콘텐츠+유틸리티 UI에 적합. 모노크롬/절제 팔레트, 타이포 주도 위계, 의도적 그리드, 세리프=권위/신뢰. 헤어라인(rule) 위주, 카드+그림자 남발 지양.
+- 지식그래프 UI 정설: 개념 목록 + 시각 그래프 + 컨트롤, 노드는 타입별 색, 호버시 상세, 그래프 언어 없이 multi-hop 탐색.
+
+## 산출물 형식 (반드시 아래 섹션 순서·라벨로, 간결하게)
+```
+[CONCEPT] 한 줄 디자인 컨셉/메타포
+[VISUAL SYSTEM] 폰트 페어링(구체 폰트명, 임베드 가능한 것), 팔레트(hex 몇 개), 밀도, 보더/그림자 철학, 모션 철학
+[IA & NAV] 텍스트 내비게이션 모델 + 지식DB 브라우징 방식 + 그래픽 내비게이션 접근(구체적으로)
+[KEY SCREENS] 홈/디렉터리, 표제어 상세, 카테고리, 그래프, 색인 — 각 레이아웃을 말로 묘사
+[ANTI-AI] 왜 이 안이 진부한 AI룩을 피하는지 2~3줄
+[HTML/CSS] 구체 토큰: CSS 변수(색/타이포/간격), 핵심 레이아웃(grid), 시그니처 CSS 규칙 3~5개
+[RISKS] 단일파일·오프라인 제약하 최대 리스크/트레이드오프
+```
+결론 지향. 일반론 말고 **이 제품에 특정된** 구체안으로.
+warning: Codex's Linux sandbox uses bubblewrap and needs access to create user namespaces.
+codex
+[CONCEPT] 항공·호텔 표준을 대조해 읽는 “편집된 용어 도감”: 책의 권위 + 링크드 노트의 다중 칼럼 탐색.
+
+[VISUAL SYSTEM]  
+폰트 페어링: 본문/표제 `Source Serif 4`, UI/검색/라벨 `Inter` 또는 `Noto Sans KR`. 한글 품질까지 우선하면 `Noto Serif KR + Noto Sans KR`; 용량 우선이면 시스템 폰트 스택 + 일부 웨이트만 base64 임베드.  
+팔레트: `#F7F4EE` paper, `#1E1D1A` ink, `#6F6A5F` muted text, `#D8D0C2` rule, `#8A4B2A` airline/accent, `#2F6F73` hotel/standard accent, dark `#171716`, `#E8E0D3`.  
+밀도: 넓은 히어로보다 조밀한 레퍼런스 밀도. 12컬럼 그리드, 본문 680px, 사이드노트 260px, 우측 stacked pane 360~420px.  
+보더/그림자 철학: 그림자 거의 금지. 1px hairline, inset rule, section dividers. 카드 대신 “문단 블록/표/목차/주석” 구조. radius 2~6px.  
+모션 철학: 카운트업·글로우 금지. 칼럼 push, 검색 결과 highlight, 그래프 focus transition만 120~180ms로 절제.
+
+[IA & NAV]  
+상단 내비게이션은 `Directory / Graph / Index / Classroom / Search`의 문서형 탭. 홈은 랜딩이 아니라 바로 “용어 디렉터리”로 시작한다.  
+기본 브라우징은 3분할: 좌측 카테고리·표준 필터, 중앙 용어 목록/본문, 우측 맥락 패널. 사용자가 related/broader/narrower/synonym/distinction 링크를 누르면 우측에 새 term pane이 쌓이고, 다시 누르면 추가 칼럼으로 확장된다.  
+그래픽 내비게이션은 별도 장식이 아니라 “관계 지도”다. 상세 페이지마다 미니 ego graph를 두고, 전체 Graph는 좌측 개념 목록 + 중앙 SVG/canvas force-like map + 우측 선택 노드 dossier. 노드는 `term/category/source/standard/distinction` 타입별 색상과 선 스타일로 구분한다.
+
+[KEY SCREENS]  
+홈/디렉터리: 첫 화면 상단에 작은 masthead와 검색창, 바로 아래에 `327 terms / 16 categories / bilingual` 메타라인. 왼쪽에는 카테고리와 공급자·표준 필터, 중앙에는 알파벳/한글 초성별 용어 목록, 오른쪽에는 “최근 탐색 스택”과 “혼동 많은 쌍” 목록. 히어로 대신 레퍼런스 데스크.  
+
+표제어 상세: 제목은 serif 대형, 바로 아래 영문/국문명·카테고리·동의어 칩. 본문은 정의, 확장 정의, usage notes, distinctions 순서. 우측 margin note에는 출처, related/broader/narrower, SVG 아이콘, 마지막 업데이트. distinctions는 표 형태로 `A / B / 구분 기준 / 실무상 혼동 지점`을 보여준다.  
+
+카테고리: 카테고리별 “chapter opening”처럼 구성. 상단에 짧은 편집자식 설명, 하단에 하위 군집별 용어 목록. 각 군집 옆에는 작은 관계 지도 sparkline을 붙여 이 카테고리가 다른 표준과 어디서 연결되는지 보인다.  
+
+그래프: 화면 전체를 작업 도구처럼 쓴다. 좌측 검색·필터·관계 타입 토글, 중앙 그래프, 우측 선택 노드 상세. hover는 label과 immediate neighbors만 강조, click은 stacked pane으로 상세를 연다. multi-hop 탐색은 breadcrumb가 아니라 “opened columns”로 보존한다.  
+
+색인: A-Z, 한글 초성, 카테고리, 관계 타입별 보기 전환. 각 행은 `대표명 / 영문명 / 동의어 수 / distinction 수 / 카테고리`를 조밀하게 보여주는 색인표. 모바일에서는 alphabet rail + sticky search.
+
+[ANTI-AI]  
+보라 그라데이션, glass blur, 둥근 SaaS 카드, 과장된 숫자 애니메이션을 모두 제거한다. 시각적 인상은 “생성형 랜딩”이 아니라 오래 쓰는 전문 참고서, 주석 달린 표준 문서, 편집된 위키에 가깝다. 그래픽 요소도 장식이 아니라 관계 탐색 기능으로만 존재한다.
+
+[HTML/CSS]  
+```css
+:root {
+  --paper: #f7f4ee;
+  --ink: #1e1d1a;
+  --muted: #6f6a5f;
+  --rule: #d8d0c2;
+  --accent-air: #8a4b2a;
+  --accent-hotel: #2f6f73;
+  --accent-std: #4f5f7a;
+
+  --font-serif: "Source Serif 4", "Noto Serif KR", Georgia, serif;
+  --font-sans: "Inter", "Noto Sans KR", system-ui, sans-serif;
+
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-6: 24px;
+  --s-8: 32px;
+  --measure: 68ch;
+}
+```
+
+핵심 레이아웃:
+```css
+.app-shell {
+  display: grid;
+  grid-template-columns: 248px minmax(520px, 760px) minmax(320px, 1fr);
+  min-height: 100vh;
+}
+
+.term-layout {
+  display: grid;
+  grid-template-columns: minmax(0, var(--measure)) 260px;
+  column-gap: var(--s-8);
+}
+
+.stack {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(360px, 420px);
+  overflow-x: auto;
+}
+```
+
+시그니처 규칙:
+```css
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+
+.article h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: 600;
+  line-height: 1.02;
+}
+
+.rule-block {
+  border-top: 1px solid var(--rule);
+  padding-top: var(--s-4);
+}
+
+.sidenote {
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--muted);
+  border-left: 1px solid var(--rule);
+  padding-left: var(--s-4);
+}
+
+.term-link:hover {
+  background: color-mix(in srgb, var(--accent-std) 12%, transparent);
+  text-decoration-thickness: 1px;
+}
+```
+
+[RISKS]  
+가장 큰 리스크는 폰트 용량이다. 한/영 양국어 전체 품질을 위해 Noto 계열을 base64로 넣으면 단일 HTML이 무거워진다. 해결은 시스템 폰트 우선, 필요한 웨이트만 subset 임베드.  
+두 번째는 stacked columns와 graph가 모바일에서 복잡해지는 점이다. 모바일은 칼럼을 가로 스크롤 작업대가 아니라 bottom sheet/detail stack으로 바꿔야 한다.  
+세 번째는 SVG 그래프 성능이다. 327개 용어는 가능하지만 관계선이 많으면 초기 렌더가 무거울 수 있어, 기본은 ego graph와 필터링된 relation view로 시작하는 편이 안전하다.
+tokens used
+5,647
+[CONCEPT] 항공·호텔 표준을 대조해 읽는 “편집된 용어 도감”: 책의 권위 + 링크드 노트의 다중 칼럼 탐색.
+
+[VISUAL SYSTEM]  
+폰트 페어링: 본문/표제 `Source Serif 4`, UI/검색/라벨 `Inter` 또는 `Noto Sans KR`. 한글 품질까지 우선하면 `Noto Serif KR + Noto Sans KR`; 용량 우선이면 시스템 폰트 스택 + 일부 웨이트만 base64 임베드.  
+팔레트: `#F7F4EE` paper, `#1E1D1A` ink, `#6F6A5F` muted text, `#D8D0C2` rule, `#8A4B2A` airline/accent, `#2F6F73` hotel/standard accent, dark `#171716`, `#E8E0D3`.  
+밀도: 넓은 히어로보다 조밀한 레퍼런스 밀도. 12컬럼 그리드, 본문 680px, 사이드노트 260px, 우측 stacked pane 360~420px.  
+보더/그림자 철학: 그림자 거의 금지. 1px hairline, inset rule, section dividers. 카드 대신 “문단 블록/표/목차/주석” 구조. radius 2~6px.  
+모션 철학: 카운트업·글로우 금지. 칼럼 push, 검색 결과 highlight, 그래프 focus transition만 120~180ms로 절제.
+
+[IA & NAV]  
+상단 내비게이션은 `Directory / Graph / Index / Classroom / Search`의 문서형 탭. 홈은 랜딩이 아니라 바로 “용어 디렉터리”로 시작한다.  
+기본 브라우징은 3분할: 좌측 카테고리·표준 필터, 중앙 용어 목록/본문, 우측 맥락 패널. 사용자가 related/broader/narrower/synonym/distinction 링크를 누르면 우측에 새 term pane이 쌓이고, 다시 누르면 추가 칼럼으로 확장된다.  
+그래픽 내비게이션은 별도 장식이 아니라 “관계 지도”다. 상세 페이지마다 미니 ego graph를 두고, 전체 Graph는 좌측 개념 목록 + 중앙 SVG/canvas force-like map + 우측 선택 노드 dossier. 노드는 `term/category/source/standard/distinction` 타입별 색상과 선 스타일로 구분한다.
+
+[KEY SCREENS]  
+홈/디렉터리: 첫 화면 상단에 작은 masthead와 검색창, 바로 아래에 `327 terms / 16 categories / bilingual` 메타라인. 왼쪽에는 카테고리와 공급자·표준 필터, 중앙에는 알파벳/한글 초성별 용어 목록, 오른쪽에는 “최근 탐색 스택”과 “혼동 많은 쌍” 목록. 히어로 대신 레퍼런스 데스크.  
+
+표제어 상세: 제목은 serif 대형, 바로 아래 영문/국문명·카테고리·동의어 칩. 본문은 정의, 확장 정의, usage notes, distinctions 순서. 우측 margin note에는 출처, related/broader/narrower, SVG 아이콘, 마지막 업데이트. distinctions는 표 형태로 `A / B / 구분 기준 / 실무상 혼동 지점`을 보여준다.  
+
+카테고리: 카테고리별 “chapter opening”처럼 구성. 상단에 짧은 편집자식 설명, 하단에 하위 군집별 용어 목록. 각 군집 옆에는 작은 관계 지도 sparkline을 붙여 이 카테고리가 다른 표준과 어디서 연결되는지 보인다.  
+
+그래프: 화면 전체를 작업 도구처럼 쓴다. 좌측 검색·필터·관계 타입 토글, 중앙 그래프, 우측 선택 노드 상세. hover는 label과 immediate neighbors만 강조, click은 stacked pane으로 상세를 연다. multi-hop 탐색은 breadcrumb가 아니라 “opened columns”로 보존한다.  
+
+색인: A-Z, 한글 초성, 카테고리, 관계 타입별 보기 전환. 각 행은 `대표명 / 영문명 / 동의어 수 / distinction 수 / 카테고리`를 조밀하게 보여주는 색인표. 모바일에서는 alphabet rail + sticky search.
+
+[ANTI-AI]  
+보라 그라데이션, glass blur, 둥근 SaaS 카드, 과장된 숫자 애니메이션을 모두 제거한다. 시각적 인상은 “생성형 랜딩”이 아니라 오래 쓰는 전문 참고서, 주석 달린 표준 문서, 편집된 위키에 가깝다. 그래픽 요소도 장식이 아니라 관계 탐색 기능으로만 존재한다.
+
+[HTML/CSS]  
+```css
+:root {
+  --paper: #f7f4ee;
+  --ink: #1e1d1a;
+  --muted: #6f6a5f;
+  --rule: #d8d0c2;
+  --accent-air: #8a4b2a;
+  --accent-hotel: #2f6f73;
+  --accent-std: #4f5f7a;
+
+  --font-serif: "Source Serif 4", "Noto Serif KR", Georgia, serif;
+  --font-sans: "Inter", "Noto Sans KR", system-ui, sans-serif;
+
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-6: 24px;
+  --s-8: 32px;
+  --measure: 68ch;
+}
+```
+
+핵심 레이아웃:
+```css
+.app-shell {
+  display: grid;
+  grid-template-columns: 248px minmax(520px, 760px) minmax(320px, 1fr);
+  min-height: 100vh;
+}
+
+.term-layout {
+  display: grid;
+  grid-template-columns: minmax(0, var(--measure)) 260px;
+  column-gap: var(--s-8);
+}
+
+.stack {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(360px, 420px);
+  overflow-x: auto;
+}
+```
+
+시그니처 규칙:
+```css
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+
+.article h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: 600;
+  line-height: 1.02;
+}
+
+.rule-block {
+  border-top: 1px solid var(--rule);
+  padding-top: var(--s-4);
+}
+
+.sidenote {
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--muted);
+  border-left: 1px solid var(--rule);
+  padding-left: var(--s-4);
+}
+
+.term-link:hover {
+  background: color-mix(in srgb, var(--accent-std) 12%, transparent);
+  text-decoration-thickness: 1px;
+}
+```
+
+[RISKS]  
+가장 큰 리스크는 폰트 용량이다. 한/영 양국어 전체 품질을 위해 Noto 계열을 base64로 넣으면 단일 HTML이 무거워진다. 해결은 시스템 폰트 우선, 필요한 웨이트만 subset 임베드.  
+두 번째는 stacked columns와 graph가 모바일에서 복잡해지는 점이다. 모바일은 칼럼을 가로 스크롤 작업대가 아니라 bottom sheet/detail stack으로 바꿔야 한다.  
+세 번째는 SVG 그래프 성능이다. 327개 용어는 가능하지만 관계선이 많으면 초기 렌더가 무거울 수 있어, 기본은 ego graph와 필터링된 relation view로 시작하는 편이 안전하다.

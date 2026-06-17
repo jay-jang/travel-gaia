@@ -1,0 +1,374 @@
+Reading additional input from stdin...
+OpenAI Codex v0.140.0
+--------
+workdir: /home/ubuntu/workspace/travel-gaia
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: workspace-write [workdir, /tmp, $TMPDIR]
+reasoning effort: medium
+reasoning summaries: none
+session id: 019ed2de-6091-7102-bbbd-d225dba58db0
+--------
+user
+# Travel Gaia 재설계 — Round 2 상호 비평·수렴
+
+라운드1에서 세 자문가(claude code, codex, agy)가 Travel Gaia UI 전면 재설계안을 냈고, **거의 수렴**했다. 아래 합의는 재론하지 말고, **쟁점 6개**에 대해 다른 안을 비평한 뒤 **최종 합의안**을 내라. 제약은 동일(단일 index.html·0의존성·오프라인·327용어/16카테고리·한영·다크모드).
+
+## 이미 합의된 것 (재론 불필요)
+- 종이+잉크 에디토리얼 팔레트, 소수 뮤트 악센트, 카테고리색은 스와치/키라인만(큰 채움 금지)
+- 에디토리얼 세리프 + 중립 산세리프 + 모노
+- 헤어라인 괘선, 그림자 없음, radius 0~2px, 장식적 모션 없음
+- **Matuschak 스택 칼럼**(링크 클릭→우측 패널 적층)으로 교차참조 탐색
+- **Tufte 우측 마진 사이드노트**(related/distinctions/sources)
+- 표제어별 **로컬 ego 미니그래프** + 전체 그래프는 조용한 모노톤 아틀라스
+- 색인/카테고리=책형 조밀 표 리스트, **distinctions를 표로** 노출
+
+## 세 안 요약과 쟁점
+- **쟁점1 세리프**: claude=Newsreader / codex=Source Serif 4 / agy=Lora(~35KB woff2). 오프라인 임베드+권위+소자(작은 글씨) 가독+한글 폴백 조화를 기준으로 **하나로**.
+- **쟁점2 악센트**: claude=단일 oxblood(#7a2520) / codex=도메인별 다중(air #8a4b2a·hotel #2f6f73·std) / agy=단일 navy(#2E5B82)+카테고리 뮤트. **하나로**.
+- **쟁점3 기본 브라우징 레이아웃**: codex=3분할(좌 필터/중 목록·본문/우 맥락) 기본 / claude·agy=2단(좌 사이드바 + 우 스택영역). 데스크톱 디폴트를 **하나로**.
+- **쟁점4 모션 허용범위**: claude·codex=절제(push, 120~180ms) / agy=슬라이드인 트랜지션+패널별 close/fold 컨트롤. 어디까지 허용?
+- **쟁점5 그래프 인터랙션**: hover peek(claude) vs 우측 dossier 패널(codex) vs 하단 고정 인포바(agy); 미니그래프 inline-SVG vs canvas. **하나로**.
+- **쟁점6 실무 리스크 완화**: (a) 스택 패널 다수시 DOM/메모리(agy 지적: 닫힌 패널 GC, 깊이 캡?) (b) 데스크톱 가로스크롤 피로(agy: 점프/스크롤 버튼) (c) 폰트 용량(codex/claude) (d) 한글 폰트(claude: 시스템 폴백). 각 항목 **채택 완화책 1줄**.
+
+## 출력 형식 (반드시 이대로)
+```
+[쟁점1] 세리프: <하나> — 이유 1줄
+[쟁점2] 악센트: <하나> — 이유 1줄
+[쟁점3] 기본 레이아웃: <하나> — 이유 1줄
+[쟁점4] 모션: <범위> — 이유 1줄
+[쟁점5] 그래프: <하나> + 미니그래프 <하나> — 이유 1줄
+[쟁점6] 리스크: (a)..(b)..(c)..(d).. 각 1줄
+[한줄 총평] 이 제품에 최선인 단일 방향
+```
+
+# 다른 두 안의 라운드1 전문(참고):
+## codex 안:
+codex
+[CONCEPT] 항공·호텔 표준을 대조해 읽는 “편집된 용어 도감”: 책의 권위 + 링크드 노트의 다중 칼럼 탐색.
+
+[VISUAL SYSTEM]  
+폰트 페어링: 본문/표제 `Source Serif 4`, UI/검색/라벨 `Inter` 또는 `Noto Sans KR`. 한글 품질까지 우선하면 `Noto Serif KR + Noto Sans KR`; 용량 우선이면 시스템 폰트 스택 + 일부 웨이트만 base64 임베드.  
+팔레트: `#F7F4EE` paper, `#1E1D1A` ink, `#6F6A5F` muted text, `#D8D0C2` rule, `#8A4B2A` airline/accent, `#2F6F73` hotel/standard accent, dark `#171716`, `#E8E0D3`.  
+밀도: 넓은 히어로보다 조밀한 레퍼런스 밀도. 12컬럼 그리드, 본문 680px, 사이드노트 260px, 우측 stacked pane 360~420px.  
+보더/그림자 철학: 그림자 거의 금지. 1px hairline, inset rule, section dividers. 카드 대신 “문단 블록/표/목차/주석” 구조. radius 2~6px.  
+모션 철학: 카운트업·글로우 금지. 칼럼 push, 검색 결과 highlight, 그래프 focus transition만 120~180ms로 절제.
+
+[IA & NAV]  
+상단 내비게이션은 `Directory / Graph / Index / Classroom / Search`의 문서형 탭. 홈은 랜딩이 아니라 바로 “용어 디렉터리”로 시작한다.  
+기본 브라우징은 3분할: 좌측 카테고리·표준 필터, 중앙 용어 목록/본문, 우측 맥락 패널. 사용자가 related/broader/narrower/synonym/distinction 링크를 누르면 우측에 새 term pane이 쌓이고, 다시 누르면 추가 칼럼으로 확장된다.  
+그래픽 내비게이션은 별도 장식이 아니라 “관계 지도”다. 상세 페이지마다 미니 ego graph를 두고, 전체 Graph는 좌측 개념 목록 + 중앙 SVG/canvas force-like map + 우측 선택 노드 dossier. 노드는 `term/category/source/standard/distinction` 타입별 색상과 선 스타일로 구분한다.
+
+[KEY SCREENS]  
+홈/디렉터리: 첫 화면 상단에 작은 masthead와 검색창, 바로 아래에 `327 terms / 16 categories / bilingual` 메타라인. 왼쪽에는 카테고리와 공급자·표준 필터, 중앙에는 알파벳/한글 초성별 용어 목록, 오른쪽에는 “최근 탐색 스택”과 “혼동 많은 쌍” 목록. 히어로 대신 레퍼런스 데스크.  
+
+표제어 상세: 제목은 serif 대형, 바로 아래 영문/국문명·카테고리·동의어 칩. 본문은 정의, 확장 정의, usage notes, distinctions 순서. 우측 margin note에는 출처, related/broader/narrower, SVG 아이콘, 마지막 업데이트. distinctions는 표 형태로 `A / B / 구분 기준 / 실무상 혼동 지점`을 보여준다.  
+
+카테고리: 카테고리별 “chapter opening”처럼 구성. 상단에 짧은 편집자식 설명, 하단에 하위 군집별 용어 목록. 각 군집 옆에는 작은 관계 지도 sparkline을 붙여 이 카테고리가 다른 표준과 어디서 연결되는지 보인다.  
+
+그래프: 화면 전체를 작업 도구처럼 쓴다. 좌측 검색·필터·관계 타입 토글, 중앙 그래프, 우측 선택 노드 상세. hover는 label과 immediate neighbors만 강조, click은 stacked pane으로 상세를 연다. multi-hop 탐색은 breadcrumb가 아니라 “opened columns”로 보존한다.  
+
+색인: A-Z, 한글 초성, 카테고리, 관계 타입별 보기 전환. 각 행은 `대표명 / 영문명 / 동의어 수 / distinction 수 / 카테고리`를 조밀하게 보여주는 색인표. 모바일에서는 alphabet rail + sticky search.
+
+[ANTI-AI]  
+보라 그라데이션, glass blur, 둥근 SaaS 카드, 과장된 숫자 애니메이션을 모두 제거한다. 시각적 인상은 “생성형 랜딩”이 아니라 오래 쓰는 전문 참고서, 주석 달린 표준 문서, 편집된 위키에 가깝다. 그래픽 요소도 장식이 아니라 관계 탐색 기능으로만 존재한다.
+
+[HTML/CSS]  
+```css
+:root {
+  --paper: #f7f4ee;
+  --ink: #1e1d1a;
+  --muted: #6f6a5f;
+  --rule: #d8d0c2;
+  --accent-air: #8a4b2a;
+  --accent-hotel: #2f6f73;
+  --accent-std: #4f5f7a;
+
+  --font-serif: "Source Serif 4", "Noto Serif KR", Georgia, serif;
+  --font-sans: "Inter", "Noto Sans KR", system-ui, sans-serif;
+
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-6: 24px;
+  --s-8: 32px;
+  --measure: 68ch;
+}
+```
+
+핵심 레이아웃:
+```css
+.app-shell {
+  display: grid;
+  grid-template-columns: 248px minmax(520px, 760px) minmax(320px, 1fr);
+  min-height: 100vh;
+}
+
+.term-layout {
+  display: grid;
+  grid-template-columns: minmax(0, var(--measure)) 260px;
+  column-gap: var(--s-8);
+}
+
+.stack {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(360px, 420px);
+  overflow-x: auto;
+}
+```
+
+시그니처 규칙:
+```css
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+
+.article h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: 600;
+  line-height: 1.02;
+}
+
+.rule-block {
+  border-top: 1px solid var(--rule);
+  padding-top: var(--s-4);
+}
+
+.sidenote {
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--muted);
+  border-left: 1px solid var(--rule);
+  padding-left: var(--s-4);
+}
+
+.term-link:hover {
+  background: color-mix(in srgb, var(--accent-std) 12%, transparent);
+  text-decoration-thickness: 1px;
+}
+```
+
+[RISKS]  
+가장 큰 리스크는 폰트 용량이다. 한/영 양국어 전체 품질을 위해 Noto 계열을 base64로 넣으면 단일 HTML이 무거워진다. 해결은 시스템 폰트 우선, 필요한 웨이트만 subset 임베드.  
+두 번째는 stacked columns와 graph가 모바일에서 복잡해지는 점이다. 모바일은 칼럼을 가로 스크롤 작업대가 아니라 bottom sheet/detail stack으로 바꿔야 한다.  
+세 번째는 SVG 그래프 성능이다. 327개 용어는 가능하지만 관계선이 많으면 초기 렌더가 무거울 수 있어, 기본은 ego graph와 필터링된 relation view로 시작하는 편이 안전하다.
+tokens used
+## agy 안:
+### [CONCEPT]
+학술적 에디토리얼 레이아웃과 동적 네비게이션이 결합된 **"Stacked Editorial Folio (슬라이딩 에디토리얼 폴리오)"**. Tufte식 사이드노트의 정교한 타이포그래피 규칙과 Matuschak식 수평 적층형 카드의 직관적인 맥락 유지를 융합하여, 여행 산업 용어의 교차 매핑과 미세한 차이(distinctions)를 흐름의 단절 없이 탐색하게 합니다.
+
+### [VISUAL SYSTEM]
+* **폰트 페어링**:
+  * 표제어 및 본문(Serif): **Lora** (Base64 WOFF2 임베드 가능, 약 35KB). 클래식하고 권위 있는 사전 느낌 전달.
+  * 메타데이터 및 유틸리티 UI(Grotesk/Sans-serif): **Inter** 또는 시스템 폰트(`system-ui`). 현대적이고 가독성이 뛰어난 네오-그로테스크 스타일.
+  * 코드 및 표준 식별자(Mono): **JetBrains Mono** 또는 `ui-monospace`.
+* **팔레트 (Hex 6개)**:
+  * 배경: `#FBFBF9` (Warm Paper - 종이 질감의 차분한 백그라운드)
+  * 전경/카드: `#FFFFFF` (Pure White)
+  * 텍스트 주입력: `#111215` (Ink Black - 깊은 묵색)
+  * 보조/사이드노트: `#62666E` (Slate Grey)
+  * 하일라인 규칙선: `#E8E6E0` (Hairline Neutral)
+  * 카테고리/강조 악센트: `#2E5B82` (Ocean Navy - 채도가 낮고 정돈된 어조의 대표색, 16개 카테고리별로 채도를 낮춘 조화로운 뮤트 톤 컬러 매핑)
+* **밀도**: 정보 밀도가 높은 사전식 조밀도(Compact density). 불필요한 공백을 줄이고 표와 리스트의 가독성을 최대로 높임.
+* **보더/그림자 철학**:
+  * 그림자 완전 제거 (`box-shadow: none`).
+  * 경계는 오직 1px의 실선 규칙(`border: 1px solid var(--border-hairline)`)과 배경색의 대비로만 구분. 둥근 모서리는 극소화(2px 또는 직각)하여 에디토리얼 서적의 인상 부여.
+* **모션 철학**:
+  * 장식적 애니메이션 전면 배제.
+  * 오직 Matuschak식 stacked panel이 우측에서 부드럽게 미끄러져 들어오는 슬라이딩 트랜지션(`transform: translateX()`, `cubic-bezier(0.16, 1, 0.3, 1)`)과 활성화 상태의 미세한 불투명도 페이드만 허용.
+
+### [IA & NAV]
+* **텍스트 내비게이션 모델**:
+  * 고정된 2-Tier 레이아웃. 좌측 슬림형 사이드바(메인 카테고리 16개 및 [index.html](file:///home/ubuntu/workspace/travel-gaia/index.html)의 기본 메뉴들인 색인, 그래프, 검색 등)와 우측의 가변 수평 스택 영역으로 구성.
+* **지식DB 브라우징 방식**:
+  * **Matuschak stacked pages**: 표제어 링크(예: PNR)를 클릭하면 현재 페이지가 전환되지 않고, 우측에 새로운 독립 칼럼 패널이 슬라이드 오버되어 나란히 배치됩니다. 연속 클릭 시 칼럼이 계속 우측에 쌓여, 사용자는 이전 맥락(예: `PNR` $\rightarrow$ `Segment` $\rightarrow$ `Leg`)을 좌우 스크롤로 한눈에 역추적하며 교차 분석할 수 있습니다. 각 칼럼 상단에는 개별 [Close/Fold] 컨트롤 제공.
+* **그래픽 내비게이션 접근**:
+  * **콘텐츠 통합형 마진 맵 (Contextual Sidenote Links)**: 용어 상세 설명 옆 Tufte식 우측 마진 영역에 동의어 매핑, 혼동 쌍(distinctions) 및 교차 관계 용어를 시각적으로 배치.
+  * **시그니처 미니 그래프 (Local Graph Mini-map)**: 개별 용어 스택 패널 최하단에 해당 용어를 중심으로 한 1-hop 관계만 선형으로 렌더링하는 초경량 미니 그래프(Canvas 기반)를 내장하여 탐색을 유도.
+
+### [KEY SCREENS]
+* **홈/디렉터리 (Home/Directory)**:
+  * 그라데이션이 사라진 깔끔한 미색 지면에, 단정한 Lora 폰트로 쓰여진 타이틀과 미니멀한 검색 창 배치. 하단부는 16개 카테고리를 가로형 그리드가 아닌 얇은 선(hairline)으로 구분된 다단 신문 레이아웃(Multi-column table) 형식으로 정리하여 학술적 목차 형태로 시각화.
+* **표제어 상세 (Term Detail Panel)**:
+  * 본문 중심의 좌우 분할 구조.
+  * 좌측(본문 65%): 단정한 세리프 서체의 대형 용어명, 핵심 정의(lead), 그리고 공급자(Amadeus, Sabre 등)별 교차 동의어 매핑 표.
+  * 우측(Tufte 마진 노트 35%): `distinctions`와 `relationships`를 본문 단락의 줄 위치에 맞추어 주석 형태로 배치.
+* **카테고리 (Category)**:
+  * 각 카테고리의 하위 용어들을 사전식 인덱스 테이블(tabular list)로 정렬. 한/영 표기와 핵심 식별자를 열(column)로 정교하게 정리하고, 불필요한 라인아트 카드를 걷어낸 초간결 리스트 뷰.
+* **그래프 (Knowledge Graph)**:
+  * 지하철 노선도나 고전적 청사진(Blueprint) 스타일의 Canvas 뷰. 네온 톤을 제거하고 다크/라이트 테마에 맞춘 차분한 모노톤의 노드와 가느다란 점선/실선 연결망. 호버 시 툴팁 대신 하단 고정 정보 바(Info Bar)에 세리프 폰트로 핵심 정의와 관계를 고밀도로 표기.
+* **색인 (Index)**:
+  * 종이 사전의 맨 뒷장 색인 페이지처럼, 컴팩트한 다단(Multi-column) 가나다/A-Z 인덱스 그리드. 가독성 높은 그로테스크 폰트를 사용하여 한 화면에 수백 개의 표제어가 책의 색인처럼 단정하게 펼쳐짐.
+
+### [ANTI-AI]
+* 채도 높은 보라/자홍 3색 그라데이션 대신, 온화한 미색 페이퍼 톤과 먹색 타이포그래피의 대비를 사용하여 시각적 피로를 없애고 권위를 확보합니다.
+* 공중에 떠 있는 둥근 카드와 블러 헤더를 전면 제거하고, 1px 헤어라인 격자 구조를 채택하여 정보의 경계를 명확하고 단단하게 규정합니다.
+* 화면 전환을 무조건적인 페이지 리셋 대신 Matuschak식 가로 적층 패널로 처리하여, 자동 생성된 템플릿 느낌을 완전히 지우고 연구용 레퍼런스 가이드를 사용하는 듯한 프로페셔널한 경험을 줍니다.
+
+### [HTML/CSS]
+* **CSS 변수 토큰**:
+  ```css
+  :root {
+    --bg-paper: #FBFBF9;
+    --bg-surface: #FFFFFF;
+    --border-hairline: #E8E6E0;
+    --text-primary: #111215;
+    --text-muted: #62666E;
+    --font-serif: 'Lora', 'Georgia', serif;
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+    --panel-width: 480px;
+    --header-height: 56px;
+  }
+  [data-theme="dark"] {
+    --bg-paper: #0D0E12;
+    --bg-surface: #15171E;
+    --border-hairline: #292D3A;
+    --text-primary: #F3F4F6;
+    --text-muted: #A0A5B0;
+  }
+  ```
+* **핵심 레이아웃 (Matuschak Stack Container)**:
+  ```css
+  .stack-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    align-items: stretch;
+    height: calc(100vh - var(--header-height));
+    background: var(--bg-paper);
+    padding: 0;
+  }
+  .stack-panel {
+    flex: 0 0 var(--panel-width);
+    border-right: 1px solid var(--border-hairline);
+    background: var(--bg-surface);
+    overflow-y: auto;
+    position: relative;
+    box-sizing: border-box;
+  }
+  ```
+* **시그니처 CSS 규칙**:
+  ```css
+  /* Tufte-style Margin Note (데스크톱 뷰 기준) */
+  .tufte-margin-note {
+    float: right;
+    clear: right;
+    margin-right: -40%;
+    width: 35%;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    color: var(--text-muted);
+    border-left: 1px solid var(--border-hairline);
+    padding-left: 12px;
+    position: relative;
+  }
+  /* Editorial Data Table */
+  .editorial-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+  }
+  .editorial-table th {
+    font-family: var(--font-sans);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    border-bottom: 2px solid var(--border-hairline);
+    padding: 6px 8px;
+    text-align: left;
+  }
+  .editorial-table td {
+    font-family: var(--font-serif);
+    font-size: 0.88rem;
+    border-bottom: 1px solid var(--border-hairline);
+    padding: 8px;
+  }
+  ```
+
+### [RISKS]
+* **DOM 노드 관리 및 성능 (DOM node count in single-file)**:
+  * 사용자가 링크를 타고 여러 표제어를 연속 클릭하여 Matuschak 패널이 수십 개 이상 가로로 적층될 경우, 단일 [index.html](file:///home/ubuntu/workspace/travel-gaia/index.html) 내의 DOM 요소가 과도하게 늘어나 브라우저 렌더링 병목 및 메모리 누수가 발생할 수 있습니다. 닫힌 패널의 DOM을 완벽히 소멸(garbage collect)시키는 정밀한 스크립트 제어가 필요합니다.
+* **수평 스크롤 내비게이션 피로도 (Horizontal Navigation UX)**:
+  * 데스크톱 일반 마우스 환경에서는 수평 스크롤이 자연스럽지 않아 가로로 누적되는 레이아웃 탐색 시 피로감을 느낄 수 있습니다. 이를 해결하기 위해 트랙패드/터치 동작이 없는 기기 사용자를 위한 스택 내비게이션 컨트롤러(예: 스택 상단부의 전체 히스토리 점프 링크, 가로 스크롤 좌우 이동 퀵 버튼)를 직접 마크업으로 추가하는 공수가 수반됩니다.
+
+---
+**작업 요약:**
+## claude 안:
+# Travel Gaia — 재설계 제안 (claude code)
+
+[CONCEPT]
+"여행 산업 편람(field manual)" — 인쇄된 용어사전/연감의 권위와 밀도를 화면으로. 장식이 아니라 **활자와 괘선(rule)**이 구조를 만들고, 교차참조는 **여백 사이드노트**와 **스택 칼럼**으로 공간적으로 탐색한다.
+
+[VISUAL SYSTEM]
+- 폰트: **Newsreader**(에디토리얼 세리프 — 표제/본문, 신문 같은 권위) + **IBM Plex Sans**(UI·라벨·짧은 정의, "엔지니어링 레퍼런스" 톤, 진부하지 않음) + **IBM Plex Mono**(코드: IATA/RBD/ISO 등 다수). 셋 다 OFL·임베드 가능. 한글은 시스템 폰트(Apple SD Gothic/Malgun/Noto KR) 폴백 — 라틴 디스플레이만 base64 임베드.
+- 팔레트: **종이+잉크**. light: paper `#f7f4ec`(따뜻한 미색, 차가운 회청 탈피), ink `#1b1a16`, muted `#5c574d`, rule `#ddd6c6`, accent **oxblood `#7a2520`**(링크/활성에만 극소량). dark: bg `#14130f`, ink `#ece7d8`. 16개 카테고리색은 **8px 키라인/스와치**로만, 채움 금지.
+- 밀도: 높음(정보 우선). 보더/그림자: **1px 헤어라인 괘선만**, 드롭섀도·둥근카드 없음(radius 0~2px). 모션: 거의 0(120ms 페이드만, 카운트업·리프트 없음).
+
+[IA & NAV]
+- 텍스트: 좌측 상시 **디렉터리 사이드바**=16카테고리 목차(개수 표시)+그래프/색인/클래스룸. 상단 **검색**(`/`로 포커스, 커맨드팔레트식). 브레드크럼.
+- 브라우징: **색인(Index)**을 1급 디렉터리로 승격 — 책 색인처럼 A–Z/카테고리별 조밀 활자 리스트(표제어+KO+카테고리 스와치+점선 leader). 카테고리 페이지=조밀 정의 리스트.
+- **그래픽 내비게이션(차별점) 3층**:
+  1) **스택 칼럼(Matuschak)**: 교차참조 클릭 → 우측에 새 칼럼이 쌓여 맥락 유지한 채 연결을 따라감. 시그니처 인터랙션.
+  2) **여백 사이드노트(Tufte)**: 표제어 페이지의 related/distinctions/sources를 우측 여백 노트로.
+  3) **지식 아틀라스**: 그래프를 모노크롬 "별자리/지도"로 재설계(노드=차수 크기, 카테고리=소색, 호버=정의 미리보기, 클릭=스택). + 표제어 페이지에 **로컬 미니맵**(해당 용어+직접연결)을 인라인 도식으로.
+
+[KEY SCREENS]
+- 홈/디렉터리: 히어로 없음. **마스트헤드**(세리프 제목+한 줄 목적+굵은 괘선) → **디렉터리**(16카테고리 2~3단 활자 목차, 각 카테고리에 KO·개수·샘플 3개) → "혼동 쌍(distinctions)" 섹션(우리만의 가치)을 활자 리스트로 → 최근/주요 표제어 칼럼. 연감을 펼친 느낌.
+- 표제어: 세리프 표제+KO 부제+카테고리 키라인+status. 2단: 본문=정의/확장/공급자 등가(테이블)/예시, 우여백=related·distinctions("혼동주의")·sources·미니맵. related 클릭→칼럼 스택.
+- 카테고리: 조밀 정의 리스트(표제어—짧은 정의), 카테고리 헤더(색 키라인+설명).
+- 그래프: 풀블리드 조용한 아틀라스, 좌레일=개념목록/범례 필터, 모노 노드+헤어라인 엣지(실선=related/점선=distinction), 호버 미리보기, 클릭=측면 스택.
+- 색인: 책형 색인, A–Z 점프바(mono), 2~3단, 표제어+KO+스와치+점선 leader.
+
+[ANTI-AI]
+그라데이션·글래스·거대 디스플레이·카운트업·섀도 필카드 전부 제거. 권위는 진짜 에디토리얼 세리프+헤어라인 괘선+종이 팔레트+조밀한 활자 위계에서 나온다 — 인쇄 레퍼런스북의 언어로, 템플릿형 AI SaaS와 정반대. 스택칼럼+사이드노트는 기성품이 아닌 맞춤 인터랙션.
+
+[HTML/CSS]
+```
+--paper:#f7f4ec; --ink:#1b1a16; --muted:#5c574d; --rule:#ddd6c6; --accent:#7a2520;
+--serif:'Newsreader',Georgia,'Apple SD Gothic Neo','Malgun Gothic',serif;
+--sans:'IBM Plex Sans',system-ui,'Apple SD Gothic Neo',sans-serif;
+--mono:'IBM Plex Mono',ui-monospace,monospace;
+--measure:68ch;
+```
+- 마스트헤드: `.masthead{border-bottom:2px solid var(--ink)}` + small-caps eyebrow.
+- 사이드노트: `.sidenote{float:right;clear:right;width:14rem;margin-right:-15.5rem;font:.82rem/1.5 var(--sans);color:var(--muted)}`
+- 스택: `.stack{display:flex;overflow-x:auto;scroll-snap-type:x mandatory} .col{flex:0 0 min(46rem,92vw);scroll-snap-align:start;border-right:1px solid var(--rule)}`
+- 키라인: `.term-head{border-left:6px solid var(--cc)}`
+- baseline: `:root{--r:0} .card,.btn{border-radius:var(--r)} a{color:var(--accent);text-underline-offset:2px}`
+
+[RISKS]
+- **한글 폰트**: 오프라인 임베드시 KR 웹폰트는 용량 폭증 → 라틴 디스플레이만 임베드, KO는 시스템 폴백(현재 빌드도 동일 전략). 최대 트레이드오프.
+- 스택 칼럼/사이드노트는 좁은 화면에서 단일 칼럼·인라인 토글로 축소 필요(반응형 복잡도).
+- 조밀 활자는 가독성 튜닝 필요(line-height/measure).
+warning: Codex's Linux sandbox uses bubblewrap and needs access to create user namespaces.
+codex
+[쟁점1] 세리프: Source Serif 4 — Newsreader보다 소자 본문이 안정적이고 Lora보다 표준 문서/편람의 권위감이 강하며, 라틴 subset 임베드+한글 시스템 폴백 조합이 가장 무난하다.  
+[쟁점2] 악센트: 단일 oxblood `#7a2520` — 다중 악센트는 카테고리 스와치와 충돌하고 navy는 너무 일반적이라, 링크/활성에만 쓰는 단일 편집색이 가장 절제된다.  
+[쟁점3] 기본 레이아웃: 2단 좌 사이드바 + 우 스택영역 — 3분할은 사이드노트/스택과 역할이 겹쳐 폭을 낭비하므로, 기본은 책 목차+가로 원고대 구조가 맞다.  
+[쟁점4] 모션: 스택 push/scroll focus/hover fade만 120~160ms, `prefers-reduced-motion` 즉시 반영 — 기능적 위치 변화만 허용하고 슬라이드 쇼처럼 보이는 패널 연출은 제외한다.  
+[쟁점5] 그래프: 우측 dossier 패널 + 미니그래프 inline-SVG — 하단 바보다 비교·읽기가 지속되고 hover peek보다 정보량을 담으며, 미니그래프는 SVG가 선명하고 접근성/오프라인 구현이 쉽다.  
+[쟁점6] 리스크: (a) 열린 스택은 8개 내외로 캡하고 닫힌 패널 DOM은 즉시 제거, 히스토리는 JSON 상태만 보존한다.  
+[쟁점6] 리스크: (b) 상단 스택 점프 레일, 이전/다음 버튼, `scroll-snap`, 키보드 좌우 이동을 제공한다.  
+[쟁점6] 리스크: (c) Source Serif 4 라틴 subset regular/semibold만 임베드하고 sans/mono는 시스템 스택을 우선한다.  
+[쟁점6] 리스크: (d) 한글은 `Apple SD Gothic Neo`, `Malgun Gothic`, `Noto Sans KR`, `Noto Serif KR` 시스템 폴백으로 두고 행간/자간만 별도 튜닝한다.  
+[한줄 총평] Travel Gaia는 화려한 지식 그래프 앱이 아니라, 종이 편람의 밀도 위에 스택 탐색과 주석을 얹은 오프라인 전문 용어 아틀라스로 가야 한다.
+tokens used
+10,390
+[쟁점1] 세리프: Source Serif 4 — Newsreader보다 소자 본문이 안정적이고 Lora보다 표준 문서/편람의 권위감이 강하며, 라틴 subset 임베드+한글 시스템 폴백 조합이 가장 무난하다.  
+[쟁점2] 악센트: 단일 oxblood `#7a2520` — 다중 악센트는 카테고리 스와치와 충돌하고 navy는 너무 일반적이라, 링크/활성에만 쓰는 단일 편집색이 가장 절제된다.  
+[쟁점3] 기본 레이아웃: 2단 좌 사이드바 + 우 스택영역 — 3분할은 사이드노트/스택과 역할이 겹쳐 폭을 낭비하므로, 기본은 책 목차+가로 원고대 구조가 맞다.  
+[쟁점4] 모션: 스택 push/scroll focus/hover fade만 120~160ms, `prefers-reduced-motion` 즉시 반영 — 기능적 위치 변화만 허용하고 슬라이드 쇼처럼 보이는 패널 연출은 제외한다.  
+[쟁점5] 그래프: 우측 dossier 패널 + 미니그래프 inline-SVG — 하단 바보다 비교·읽기가 지속되고 hover peek보다 정보량을 담으며, 미니그래프는 SVG가 선명하고 접근성/오프라인 구현이 쉽다.  
+[쟁점6] 리스크: (a) 열린 스택은 8개 내외로 캡하고 닫힌 패널 DOM은 즉시 제거, 히스토리는 JSON 상태만 보존한다.  
+[쟁점6] 리스크: (b) 상단 스택 점프 레일, 이전/다음 버튼, `scroll-snap`, 키보드 좌우 이동을 제공한다.  
+[쟁점6] 리스크: (c) Source Serif 4 라틴 subset regular/semibold만 임베드하고 sans/mono는 시스템 스택을 우선한다.  
+[쟁점6] 리스크: (d) 한글은 `Apple SD Gothic Neo`, `Malgun Gothic`, `Noto Sans KR`, `Noto Serif KR` 시스템 폴백으로 두고 행간/자간만 별도 튜닝한다.  
+[한줄 총평] Travel Gaia는 화려한 지식 그래프 앱이 아니라, 종이 편람의 밀도 위에 스택 탐색과 주석을 얹은 오프라인 전문 용어 아틀라스로 가야 한다.

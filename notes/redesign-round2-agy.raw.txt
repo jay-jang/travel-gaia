@@ -1,0 +1,15 @@
+I will explore the workspace first to understand the context of the project.
+I will view the contents of [DESIGN.md](file:///home/ubuntu/workspace/travel-gaia/DESIGN.md) to see if there is any critical design history or notes that will help me address the issues accurately.
+I will list the contents of the `notes` directory to examine the debate text and notes from Round 1 and Round 2.
+I will view [redesign-round2-brief.md](file:///home/ubuntu/workspace/travel-gaia/notes/redesign-round2-brief.md) to understand the brief for this round of decisions.
+I will view [round2-discussion.md](file:///home/ubuntu/workspace/travel-gaia/notes/round2-discussion.md) to review the notes from the round 2 discussion.
+I will view [round2-agy.txt](file:///home/ubuntu/workspace/travel-gaia/notes/round2-agy.txt) to read agy's perspective in Round 2.
+I will view [round2-codex.txt](file:///home/ubuntu/workspace/travel-gaia/notes/round2-codex.txt) to read codex's perspective in Round 2.
+I will view [redesign-claude.md](file:///home/ubuntu/workspace/travel-gaia/notes/redesign-claude.md) to understand Claude's design proposal in detail.
+[쟁점1] 세리프: Lora — 화면 가독성이 뛰어나며 경량 서브셋(~35KB) 구성이 쉽고, 한글 시스템 세리프(바탕/명조)와의 x-height 조화가 가장 안정적임
+[쟁점2] 악센트: 단일 oxblood(#7a2520) — "종이+잉크" 연감 콘셉트의 학술적이고 고전적인 권위를 유지하면서도 지적인 긴장감을 주는 최선의 단색임
+[쟁점3] 기본 레이아웃: 2단(좌 사이드바 + 우 스택영역) — Matuschak 스택 칼럼이 가로로 점증하는 구조에서 좌측 탐색 축을 고정해 주고 시각적 복잡도를 최소화함
+[쟁점4] 모션: 150ms 내외의 slide-in/out 트랜지션 및 close 컨트롤만 허용 — 스택 칼럼의 가로식 진입/퇴장이라는 공간 정보만 제공하고, 인쇄 사전 감각을 흩뜨리는 fold 등의 장식 모션은 배제함
+[쟁점5] 그래프: hover peek (클릭 시 스택 칼럼 추가) + 미니그래프 inline-SVG — 그래프 탐색 결과를 기존 스택 칼럼 흐름으로 통합해 일관성을 높이고, 좁은 개별 영역 내 미니그래프는 canvas보다 CSS 통제가 쉬운 inline-SVG가 적합함
+[쟁점6] 리스크: (a) 화면에서 닫힌 패널은 DOM에서 즉시 제거하고 최대 스택 깊이를 4개로 제한함 (b) 스택 헤더 상단에 각 패널로 즉시 스크롤을 이동시키는 퀵 점프 내비게이터 버튼을 제공함 (c) 영문 Lora만 경량 서브셋 woff2 파일로 base64 인라인 임베드함 (d) 한글은 시스템 세리프(명조/바탕) 및 산세리프(고딕) 폴백 스택을 정교하게 설정하여 용량 증가를 0으로 유지함
+[한줄 총평] 종이 연감의 엄격한 에디토리얼 타이포그래피와 공간 기반 가로 스택 탐색이 완성도 높게 결합된 도메인 데이터 편람
