@@ -1,0 +1,76 @@
+---
+type: Business Term
+title: Customer Data Platform
+description: 'Packaged software that ingests and unifies first-party customer data from disparate operational systems — booking engines, PMS/CRS, loyalty, web/app, and marketing channels — into persistent, individual-level profiles that other systems can query for personalization. In travel retailing it powers real-time offers, segmentation, and consistent recognition of a traveler across touchpoints.'
+tags:
+  - customer
+  - active
+timestamp: '2026-06-17T00:00:00Z'
+id: customer-data-platform
+category: customer
+conceptType: business-term
+status: active
+abbreviation: CDP
+term_ko: 고객 데이터 플랫폼 (CDP)
+definition_ko: '예약 엔진, PMS/CRS, 로열티, 웹/앱, 마케팅 채널 등 서로 분리된 운영 시스템에서 1차(first-party) 고객 데이터를 수집·통합하여, 다른 시스템이 개인화를 위해 조회할 수 있는 지속적이고 개인 단위의 프로필로 만드는 패키지형 소프트웨어이다. 여행 리테일링에서는 실시간 제안(Offer), 세분화, 그리고 여러 접점에 걸친 일관된 여행자 인식을 구동한다.'
+longDef: 'A CDP differs from a generic CRM or data warehouse by being purpose-built to resolve identity and assemble a unified profile from many sources, then activate that profile to downstream channels in real time. Airlines and hotels increasingly position a CDP at the center of their retailing stack so that an Offer Management System and personalization engines can act on a complete, consented view of the customer. The unified profile a CDP produces is typically realized as a Single Customer View, and CDPs must operate within consent rules captured by a Consent Management Platform. "Composable" CDPs implement the same capabilities directly over a cloud data warehouse rather than as a separate datastore.'
+longDef_ko: 'CDP는 단순한 CRM이나 데이터 웨어하우스와 달리, 여러 출처로부터 신원을 해소(identity resolution)하고 통합 프로필을 구성한 뒤 이를 실시간으로 하위 채널에 활성화하도록 특화 설계된 점이 다르다. 항공사와 호텔은 CDP를 리테일링 스택의 중심에 두어, Offer Management System과 개인화 엔진이 동의를 받은 완전한 고객 뷰를 기반으로 작동하게 한다. CDP가 만들어내는 통합 프로필은 보통 Single Customer View로 구현되며, CDP는 Consent Management Platform이 수집한 동의 규칙 안에서 운영되어야 한다. ''컴포저블(composable)'' CDP는 별도 저장소가 아니라 클라우드 데이터 웨어하우스 위에서 동일한 기능을 직접 구현한다.'
+aliases:
+  - CDP
+  - Customer Data Platform (CDP)
+relationships:
+  - type: related
+    targetTerm: Customer Profile
+  - type: related
+    targetTerm: Single Customer View
+  - type: related
+    targetTerm: Offer
+distinctions:
+  - targetTerm: Customer Profile
+    explanation: A Customer Profile is the stored record of one traveler's data and preferences in a single system; a CDP is the platform that unifies many such records and source systems into one persistent profile and activates it to other channels.
+    explanation_ko: 'Customer Profile은 한 시스템 내에 저장된 한 여행자의 데이터·선호도 기록이고, CDP는 그런 다수의 기록과 원천 시스템을 하나의 지속적 프로필로 통합하여 다른 채널로 활성화하는 플랫폼이다.'
+  - targetTerm: Single Customer View
+    explanation: A Single Customer View is the unified golden-record output; a CDP is the software that produces and maintains that view and pushes it to operational systems.
+    explanation_ko: 'Single Customer View는 통합된 골든 레코드라는 결과물이고, CDP는 그 뷰를 생성·유지하며 운영 시스템으로 전달하는 소프트웨어이다.'
+sources:
+  - name: CDP for Travel and Hospitality
+    org: Industry vendor guidance
+    version: ''
+    section: ''
+    url: ''
+  - name: 'Composable CDPs for Travel: Personalizing Guest Experiences with AI'
+    org: Industry vendor guidance
+    version: ''
+    section: ''
+    url: ''
+  - name: Iberia Powers Next-Level Airline Customer Experience with Real-Time Data and AI
+    org: Iberia / vendor case study
+    version: ''
+    section: ''
+    url: ''
+icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="4"/><circle cx="10" cy="24" r="4"/><circle cx="10" cy="38" r="4"/><path d="M14 10h8l6 14M14 24h14M14 38h8l6-14"/><circle cx="34" cy="24" r="7"/><path d="M31 24l2 2 4-4"/></svg>
+---
+
+> Packaged software that ingests and unifies first-party customer data from disparate operational systems — booking engines, PMS/CRS, loyalty, web/app, and marketing channels — into persistent, individual-level profiles that other systems can query for personalization. In travel retailing it powers real-time offers, segmentation, and consistent recognition of a traveler across touchpoints.
+
+A CDP differs from a generic CRM or data warehouse by being purpose-built to resolve identity and assemble a unified profile from many sources, then activate that profile to downstream channels in real time. Airlines and hotels increasingly position a CDP at the center of their retailing stack so that an Offer Management System and personalization engines can act on a complete, consented view of the customer. The unified profile a CDP produces is typically realized as a Single Customer View, and CDPs must operate within consent rules captured by a Consent Management Platform. "Composable" CDPs implement the same capabilities directly over a cloud data warehouse rather than as a separate datastore.
+
+**한국어 / Korean** — **고객 데이터 플랫폼 (CDP)** — 예약 엔진, PMS/CRS, 로열티, 웹/앱, 마케팅 채널 등 서로 분리된 운영 시스템에서 1차(first-party) 고객 데이터를 수집·통합하여, 다른 시스템이 개인화를 위해 조회할 수 있는 지속적이고 개인 단위의 프로필로 만드는 패키지형 소프트웨어이다. 여행 리테일링에서는 실시간 제안(Offer), 세분화, 그리고 여러 접점에 걸친 일관된 여행자 인식을 구동한다.
+
+CDP는 단순한 CRM이나 데이터 웨어하우스와 달리, 여러 출처로부터 신원을 해소(identity resolution)하고 통합 프로필을 구성한 뒤 이를 실시간으로 하위 채널에 활성화하도록 특화 설계된 점이 다르다. 항공사와 호텔은 CDP를 리테일링 스택의 중심에 두어, Offer Management System과 개인화 엔진이 동의를 받은 완전한 고객 뷰를 기반으로 작동하게 한다. CDP가 만들어내는 통합 프로필은 보통 Single Customer View로 구현되며, CDP는 Consent Management Platform이 수집한 동의 규칙 안에서 운영되어야 한다. '컴포저블(composable)' CDP는 별도 저장소가 아니라 클라우드 데이터 웨어하우스 위에서 동일한 기능을 직접 구현한다.
+
+**Aliases:** `CDP`, `Customer Data Platform (CDP)`
+
+# Related
+- [Customer Profile](/customer/customer-profile.md) — related
+- [Single Customer View](/customer/single-customer-view.md) — related
+- [Offer](/standards/offer.md) — related
+
+# Distinctions
+- **Customer Data Platform** vs [Customer Profile](/customer/customer-profile.md) — A Customer Profile is the stored record of one traveler's data and preferences in a single system; a CDP is the platform that unifies many such records and source systems into one persistent profile and activates it to other channels.
+- **Customer Data Platform** vs [Single Customer View](/customer/single-customer-view.md) — A Single Customer View is the unified golden-record output; a CDP is the software that produces and maintains that view and pushes it to operational systems.
+
+# Citations
+[1] Industry vendor guidance — CDP for Travel and Hospitality
+[2] Industry vendor guidance — Composable CDPs for Travel: Personalizing Guest Experiences with AI
+[3] Iberia / vendor case study — Iberia Powers Next-Level Airline Customer Experience with Real-Time Data and AI

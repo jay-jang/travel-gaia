@@ -1,0 +1,82 @@
+---
+type: Standard Term
+title: Two-Way XML
+description: 'Two-way XML is a bidirectional connectivity model in which a hotel system and a distribution channel exchange ARI updates outbound and receive reservation, modification, and cancellation messages inbound over the same XML interface — typically using OpenTravel/HTNG message schemas. The ''two-way'' contrast is with one-way connections that only push availability and rates without automatically pulling bookings back.'
+tags:
+  - hotel-dist
+  - active
+  - OpenTravel Alliance
+timestamp: '2026-06-17T00:00:00Z'
+id: two-way-xml
+category: hotel-dist
+conceptType: standard-term
+status: active
+abbreviation: 2-Way XML
+term_ko: 양방향 XML (Two-Way XML)
+definition_ko: '양방향 XML은 호텔 시스템과 유통 채널이 동일한 XML 인터페이스를 통해 ARI 업데이트를 외부로 보내고 예약·변경·취소 메시지를 내부로 받는 양방향 연동 모델로, 보통 OpenTravel/HTNG 메시지 스키마를 사용한다. ''양방향''이라는 표현은 가용성·요금만 push하고 예약을 자동으로 가져오지 않는 단방향(one-way) 연결과 대비된다.'
+longDef: 'In hotel distribution, connectivity is described by directionality. A one-way connection sends rates and inventory out to a channel but requires bookings to be retrieved manually or via a separate process. A two-way XML connection automates both directions: ARI updates flow from the CRS/PMS/channel manager to the channel, and the channel returns booking, amendment, and cancellation notifications that are written straight back into the hotel system — reducing manual re-keying, overbookings, and rate errors. The XML payloads are commonly based on OpenTravel Alliance specifications (e.g. the OTA_Hotel* messages) and HTNG implementation profiles, which standardize the request/response structures used across switches, channel managers, OTAs, and GDSs.'
+longDef_ko: '호텔 유통에서 연동은 방향성으로 설명된다. 단방향 연결은 요금·재고를 채널로 내보내지만 예약은 수작업이나 별도 프로세스로 가져와야 한다. 양방향 XML 연결은 두 방향을 모두 자동화한다. ARI 업데이트가 CRS/PMS/채널 매니저에서 채널로 흐르고, 채널은 예약·수정·취소 알림을 호텔 시스템에 바로 기록되도록 반환한다. 이로써 수기 재입력, 오버부킹, 요금 오류가 줄어든다. XML 페이로드는 흔히 OpenTravel Alliance 사양(예: OTA_Hotel* 메시지)과 HTNG 구현 프로파일에 기반하며, 이는 스위치·채널 매니저·OTA·GDS 전반에서 사용되는 요청/응답 구조를 표준화한다.'
+standardBody: OpenTravel Alliance
+aliases:
+  - Two-Way Connectivity
+  - 2-Way Connection
+  - Bidirectional XML
+relationships:
+  - type: related
+    targetTerm: ARI
+  - type: related
+    targetTerm: Channel Manager
+  - type: related
+    targetTerm: Hotel Switch
+  - type: related
+    targetTerm: OpenTravel Alliance
+  - type: related
+    targetTerm: HTNG
+  - type: contrasts
+    targetTerm: Free Sale
+distinctions:
+  - targetTerm: ARI
+    explanation: ARI is the availability/rate/inventory content being exchanged; two-way XML is the bidirectional transport/protocol model over which ARI flows out and reservations flow back.
+    explanation_ko: 'ARI는 교환되는 가용성·요금·재고 콘텐츠이고, 양방향 XML은 그 ARI가 나가고 예약이 돌아오는 양방향 전송/프로토콜 모델이다.'
+  - targetTerm: Free Sale
+    explanation: 'Free sale lets a channel sell rooms without checking live availability per request (sell-and-report), whereas two-way XML emphasizes real-time bidirectional confirmation of availability and bookings.'
+    explanation_ko: 'Free sale는 채널이 요청마다 실시간 가용성을 확인하지 않고 객실을 판매하게 하는 방식(sell-and-report)인 반면, 양방향 XML은 가용성과 예약의 실시간 양방향 확인을 강조한다.'
+sources:
+  - org: OpenTravel Alliance
+    name: OpenTravel Hotel Messaging Specifications
+    version: ''
+    section: ''
+    url: 'https://opentravel.org/'
+  - org: AltexSoft
+    name: 'Hotel Tech Specifications by HTNG, OpenTravel, and HEDNA'
+    version: ''
+    section: ''
+    url: 'https://www.altexsoft.com/blog/hotel-tech-specifications-htng-opentravel/'
+icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M8 18h28"/><path d="M31 13l5 5-5 5"/><path d="M40 30H12"/><path d="M17 25l-5 5 5 5"/></svg>
+---
+
+> Two-way XML is a bidirectional connectivity model in which a hotel system and a distribution channel exchange ARI updates outbound and receive reservation, modification, and cancellation messages inbound over the same XML interface — typically using OpenTravel/HTNG message schemas. The 'two-way' contrast is with one-way connections that only push availability and rates without automatically pulling bookings back.
+
+In hotel distribution, connectivity is described by directionality. A one-way connection sends rates and inventory out to a channel but requires bookings to be retrieved manually or via a separate process. A two-way XML connection automates both directions: ARI updates flow from the CRS/PMS/channel manager to the channel, and the channel returns booking, amendment, and cancellation notifications that are written straight back into the hotel system — reducing manual re-keying, overbookings, and rate errors. The XML payloads are commonly based on OpenTravel Alliance specifications (e.g. the OTA_Hotel* messages) and HTNG implementation profiles, which standardize the request/response structures used across switches, channel managers, OTAs, and GDSs.
+
+**한국어 / Korean** — **양방향 XML (Two-Way XML)** — 양방향 XML은 호텔 시스템과 유통 채널이 동일한 XML 인터페이스를 통해 ARI 업데이트를 외부로 보내고 예약·변경·취소 메시지를 내부로 받는 양방향 연동 모델로, 보통 OpenTravel/HTNG 메시지 스키마를 사용한다. '양방향'이라는 표현은 가용성·요금만 push하고 예약을 자동으로 가져오지 않는 단방향(one-way) 연결과 대비된다.
+
+호텔 유통에서 연동은 방향성으로 설명된다. 단방향 연결은 요금·재고를 채널로 내보내지만 예약은 수작업이나 별도 프로세스로 가져와야 한다. 양방향 XML 연결은 두 방향을 모두 자동화한다. ARI 업데이트가 CRS/PMS/채널 매니저에서 채널로 흐르고, 채널은 예약·수정·취소 알림을 호텔 시스템에 바로 기록되도록 반환한다. 이로써 수기 재입력, 오버부킹, 요금 오류가 줄어든다. XML 페이로드는 흔히 OpenTravel Alliance 사양(예: OTA_Hotel* 메시지)과 HTNG 구현 프로파일에 기반하며, 이는 스위치·채널 매니저·OTA·GDS 전반에서 사용되는 요청/응답 구조를 표준화한다.
+
+**Aliases:** `Two-Way Connectivity`, `2-Way Connection`, `Bidirectional XML`
+
+# Related
+- [ARI](/hotel-dist/ari.md) — related
+- [Channel Manager](/hotel-dist/channel-manager.md) — related
+- [Hotel Switch](/hotel-dist/hotel-switch.md) — related
+- [OpenTravel Alliance](/standards/opentravel-alliance.md) — related
+- [HTNG](/standards/htng.md) — related
+- [Free Sale](/hotel-dist/free-sale.md) — contrasts
+
+# Distinctions
+- **Two-Way XML** vs [ARI](/hotel-dist/ari.md) — ARI is the availability/rate/inventory content being exchanged; two-way XML is the bidirectional transport/protocol model over which ARI flows out and reservations flow back.
+- **Two-Way XML** vs [Free Sale](/hotel-dist/free-sale.md) — Free sale lets a channel sell rooms without checking live availability per request (sell-and-report), whereas two-way XML emphasizes real-time bidirectional confirmation of availability and bookings.
+
+# Citations
+[1] [OpenTravel Alliance — OpenTravel Hotel Messaging Specifications](https://opentravel.org/)
+[2] [AltexSoft — Hotel Tech Specifications by HTNG, OpenTravel, and HEDNA](https://www.altexsoft.com/blog/hotel-tech-specifications-htng-opentravel/)

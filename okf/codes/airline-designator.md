@@ -1,0 +1,76 @@
+---
+type: Code
+title: Airline Designator
+description: 'A code identifying an airline. The 2-character IATA airline designator (e.g., AA, BA, LH) is used in reservations, ticketing, and flight numbers, while the 3-letter ICAO airline designator (e.g., AAL, BAW, DLH) is used operationally and is paired with a radio call sign.'
+tags:
+  - codes
+  - active
+  - IATA
+timestamp: '2026-06-15T00:00:00Z'
+id: airline-designator
+category: codes
+conceptType: code
+status: active
+term_ko: 항공사 지정 코드
+definition_ko: '항공사를 식별하는 코드. 2자리 IATA 항공사 지정 코드(예: AA, BA, LH)는 예약, 발권, 편명에 사용되고, 3자리 ICAO 항공사 지정 코드(예: AAL, BAW, DLH)는 운항에 사용되며 무선 호출 부호(콜사인)와 짝을 이룬다.'
+longDef: 'IATA airline designators are two characters (alphabetic or alphanumeric) and form the prefix of a flight number (e.g., ''AA100''). Because the 2-character space is limited, IATA also issues controlled-duplicate and numeric/alpha-numeric designators. ICAO 3-letter designators are unique and accompanied by a telephony designator (call sign) for ATC. The marketing carrier designator on a ticket may differ from the operating carrier designator under codeshare arrangements.'
+longDef_ko: 'IATA 항공사 지정 코드는 2자리(알파벳 또는 영숫자 혼합)이며 편명의 접두어를 이룬다(예: ''AA100''). 2자리 공간이 제한적이기 때문에 IATA는 통제된 중복(controlled-duplicate) 코드와 숫자/영숫자 혼합 코드도 발급한다. ICAO의 3자리 지정 코드는 고유하며 ATC를 위한 전화 호출 부호(콜사인)를 동반한다. 공동운항(codeshare) 약정에서는 항공권에 표시되는 마케팅 항공사 지정 코드가 실제 운항 항공사 지정 코드와 다를 수 있다.'
+standardBody: IATA
+aliases:
+  - Airline Code
+  - Carrier Code
+  - IATA Airline Designator
+  - Two-Letter Airline Code
+  - Marketing Carrier Code
+relationships:
+  - type: narrower
+    targetTerm: IATA Code
+  - type: related
+    targetTerm: ICAO Code
+  - type: related
+    targetTerm: Marketing Carrier
+  - type: related
+    targetTerm: Operating Carrier
+  - type: related
+    targetTerm: Validating Carrier
+distinctions:
+  - targetTerm: ICAO Code
+    explanation: The IATA airline designator is 2 characters for commercial use; the ICAO airline designator is 3 letters with a call sign for operational/ATC use.
+    explanation_ko: 'IATA 항공사 지정 코드는 상업적 용도의 2자리이고, ICAO 항공사 지정 코드는 운항/ATC 용도의 3자리로 콜사인을 동반한다.'
+sources:
+  - name: IATA Airline and Airport Code Search
+    org: IATA
+    version: ''
+    section: ''
+    url: 'https://www.iata.org/en/publications/directories/code-search/'
+  - name: 'Doc 8585 — Designators for Aircraft Operating Agencies, Aeronautical Authorities and Services'
+    org: ICAO
+    version: ''
+    section: ''
+    url: 'https://www.icao.int/operational-safety/Designators-and-indicators'
+icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14h22a6 6 0 0 1 0 12H10z"/><path d="M32 14l8-4M32 26l8 4"/><path d="M15 20h2M21 20h2"/></svg>
+---
+
+> A code identifying an airline. The 2-character IATA airline designator (e.g., AA, BA, LH) is used in reservations, ticketing, and flight numbers, while the 3-letter ICAO airline designator (e.g., AAL, BAW, DLH) is used operationally and is paired with a radio call sign.
+
+IATA airline designators are two characters (alphabetic or alphanumeric) and form the prefix of a flight number (e.g., 'AA100'). Because the 2-character space is limited, IATA also issues controlled-duplicate and numeric/alpha-numeric designators. ICAO 3-letter designators are unique and accompanied by a telephony designator (call sign) for ATC. The marketing carrier designator on a ticket may differ from the operating carrier designator under codeshare arrangements.
+
+**한국어 / Korean** — **항공사 지정 코드** — 항공사를 식별하는 코드. 2자리 IATA 항공사 지정 코드(예: AA, BA, LH)는 예약, 발권, 편명에 사용되고, 3자리 ICAO 항공사 지정 코드(예: AAL, BAW, DLH)는 운항에 사용되며 무선 호출 부호(콜사인)와 짝을 이룬다.
+
+IATA 항공사 지정 코드는 2자리(알파벳 또는 영숫자 혼합)이며 편명의 접두어를 이룬다(예: 'AA100'). 2자리 공간이 제한적이기 때문에 IATA는 통제된 중복(controlled-duplicate) 코드와 숫자/영숫자 혼합 코드도 발급한다. ICAO의 3자리 지정 코드는 고유하며 ATC를 위한 전화 호출 부호(콜사인)를 동반한다. 공동운항(codeshare) 약정에서는 항공권에 표시되는 마케팅 항공사 지정 코드가 실제 운항 항공사 지정 코드와 다를 수 있다.
+
+**Aliases:** `Airline Code`, `Carrier Code`, `IATA Airline Designator`, `Two-Letter Airline Code`, `Marketing Carrier Code`
+
+# Related
+- [IATA Code](/codes/iata-code.md) — narrower
+- [ICAO Code](/codes/icao-code.md) — related
+- [Marketing Carrier](/air-partner/marketing-carrier.md) — related
+- [Operating Carrier](/air-partner/operating-carrier.md) — related
+- [Validating Carrier](/air-ticket/validating-carrier.md) — related
+
+# Distinctions
+- **Airline Designator** vs [ICAO Code](/codes/icao-code.md) — The IATA airline designator is 2 characters for commercial use; the ICAO airline designator is 3 letters with a call sign for operational/ATC use.
+
+# Citations
+[1] [IATA — IATA Airline and Airport Code Search](https://www.iata.org/en/publications/directories/code-search/)
+[2] [ICAO — Doc 8585 — Designators for Aircraft Operating Agencies, Aeronautical Authorities and Services](https://www.icao.int/operational-safety/Designators-and-indicators)

@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "gray-matter": "^4.0.3",
     "jsdom": "^29.1.1"
   }
 }

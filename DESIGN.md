@@ -144,3 +144,19 @@ claude code / codex(gpt-5.5) / agy 3자 라운드1 제안 → 라운드2 상호 
 - 한글은 시스템 폴백(Apple SD Gothic Neo / Malgun Gothic / Noto KR) — KR 폰트 용량 추가 0.
 
 **총평(수렴)**: 화려한 그래프 앱이 아니라, 종이 편람의 밀도 위에 스택 탐색·주석을 얹은 오프라인 전문 용어 아틀라스.
+
+---
+
+# 데이터 아키텍처 재설계 — OKF v0.1 (2026-06-17)
+
+데이터 정본을 **OKF(Open Knowledge Format) v0.1 Knowledge Bundle**(`okf/`)로 전환. 빌드는 번들 소비자.
+참조: https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md
+
+- **번들 구조**: `okf/<category>/<id>.md` = 개념 1개. `okf/index.md`(루트, `okf_version: "0.1"`) + 카테고리별 `index.md` + `okf/log.md`.
+- **개념 파일**: frontmatter = OKF 표준(`type`(필수, conceptType→Title Case) / `title`(=term) / `description`(=definition) / `tags`([category,status,standardBody]) / `timestamp`(=lastReviewed ISO)) + **무손실 확장키**(id·category·conceptType·status·abbreviation·term_ko·definition_ko·longDef(_ko)·standardBody·aliases·providerTerms·relationships[{type,targetTerm}]·distinctions[{targetTerm,explanation,explanation_ko}]·sources·icon). body = 사람이 읽는 마크다운(정의 blockquote·KO·공급자 표·`# Related` 번들상대 링크·`# Distinctions`·`# Citations`).
+- **빌드 파이프라인**: `build/okf-load.mjs`(frontmatter→entry, build·검증 공용) → `build/build.mjs`가 `okf/` 로드 → 교차참조 해석(targetTerm→id) → 검증 → 폰트 임베드 → `template.html` 인라인 → `index.html`. 산출물 shape 불변이라 UI/라우트/테스트 그대로.
+- **변환·검증**: `build/to-okf.mjs`(glossary.json→okf/ 1회 마이그레이션). `build/okf-validate.mjs`(적합성: 모든 비예약 .md의 frontmatter·비어있지 않은 type + glossary 대비 327개 무손실 라운드트립). 결과: 적합성 0 이슈, 327개 전 필드(아이콘·양국어·관계·구분·출처) 동일.
+- **레거시 은퇴**: `data/cat-*.json` 제거(okf/가 단일 정본; git 이력 보존). 콘텐츠 편집은 이제 `okf/<cat>/<id>.md` 직접 수정.
+- **의존성**: 빌드타임 `gray-matter`(frontmatter 파서) 추가. 런타임 산출물(index.html)은 여전히 데이터 인라인.
+
+주의: 별도 커밋 `a07acca`(사용자)가 그래프를 **D3.js(CDN)** 기반으로 교체 → 오프라인/단일파일 원칙과 상충(네트워크 필요). OKF 재설계와는 직교적이며 건드리지 않음(별도 결정 필요).

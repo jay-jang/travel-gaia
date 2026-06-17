@@ -1,0 +1,74 @@
+---
+type: Business Term
+title: Connection
+description: 'A point in an itinerary where a passenger changes from one flight to another to continue toward the final destination, as opposed to a nonstop or direct journey. A valid connection requires at least the minimum connecting time (MCT) at the connecting airport between the arriving and departing flights.'
+tags:
+  - air-partner
+  - active
+timestamp: '2026-06-17T00:00:00Z'
+id: connection
+category: air-partner
+conceptType: business-term
+status: active
+term_ko: 연결편(커넥션)
+definition_ko: '직항(nonstop)이나 직행(direct) 여정과 달리, 승객이 최종 목적지로 계속 가기 위해 한 항공편에서 다른 항공편으로 갈아타는 여정상의 지점. 유효한 연결은 도착 항공편과 출발 항공편 사이에 연결 공항에서 최소한 최소 연결 시간(MCT) 이상을 필요로 한다.'
+longDef: 'Connections may be "online" (both flights on the same carrier) or "interline"/"codeshare" (different carriers), the latter relying on interline or codeshare agreements for through-ticketing and baggage handling. Connection points are reflected in the itinerary as separate segments rather than a stopover when the change is treated as transit; whether two segments are a connection or a stopover depends on the time and fare rules. The MCT defines the shortest legal gap, and connecting traffic is what hub-and-spoke networks are built to generate. A through fare typically prices the connecting journey as one product.'
+longDef_ko: '연결은 "online"(두 항공편이 같은 항공사)일 수도, "interline"/"codeshare"(서로 다른 항공사)일 수도 있으며, 후자는 일관 발권과 수하물 처리를 위해 인터라인 또는 공동운항 협정에 의존한다. 갈아타기가 통과(transit)로 취급되면 연결 지점은 스톱오버(stopover)가 아니라 별개의 세그먼트(segment)로 여정에 반영되며, 두 세그먼트가 연결인지 스톱오버인지는 시간과 운임 규정에 따라 달라진다. MCT는 법적으로 허용되는 최소 간격을 정의하고, 연결 운송은 허브 앤 스포크 네트워크가 만들어내도록 설계된 대상이다. 일관 운임은 일반적으로 연결 여정을 하나의 상품으로 책정한다.'
+aliases:
+  - Connecting Flight
+  - Connecting Itinerary
+  - Online Connection
+  - Interline Connection
+relationships:
+  - type: related
+    targetTerm: MCT
+  - type: related
+    targetTerm: Segment
+  - type: related
+    targetTerm: Married Segment
+  - type: related
+    targetTerm: Hub-and-Spoke
+  - type: related
+    targetTerm: Through Fare
+  - type: related
+    targetTerm: Interline
+distinctions:
+  - targetTerm: MCT
+    explanation: A connection is the act of changing flights toward a destination; MCT is the minimum time that must elapse at the connecting airport for that connection to be considered valid.
+    explanation_ko: 'connection은 목적지를 향해 항공편을 갈아타는 행위이고, MCT는 그 연결이 유효하다고 인정되기 위해 연결 공항에서 경과해야 하는 최소 시간이다.'
+  - targetTerm: Segment
+    explanation: A segment is a single marketed flight portion of an itinerary; a connection is the relationship between two consecutive segments where the passenger transfers between flights.
+    explanation_ko: '세그먼트는 여정에서 판매되는 단일 항공편 부분이고, connection은 승객이 두 항공편 사이를 환승하는, 연속된 두 세그먼트 간의 관계다.'
+sources:
+  - name: Standard Schedules Information Manual (SSIM)
+    org: IATA
+    version: ''
+    section: ''
+    url: ''
+icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="12" r="3"/><circle cx="24" cy="24" r="4"/><circle cx="40" cy="36" r="3"/><line x1="10.5" y1="13.8" x2="21" y2="21.5"/><line x1="27" y1="26.5" x2="37.5" y2="34.2"/><path d="M24 20 a4 4 0 0 1 0 8"/></svg>
+---
+
+> A point in an itinerary where a passenger changes from one flight to another to continue toward the final destination, as opposed to a nonstop or direct journey. A valid connection requires at least the minimum connecting time (MCT) at the connecting airport between the arriving and departing flights.
+
+Connections may be "online" (both flights on the same carrier) or "interline"/"codeshare" (different carriers), the latter relying on interline or codeshare agreements for through-ticketing and baggage handling. Connection points are reflected in the itinerary as separate segments rather than a stopover when the change is treated as transit; whether two segments are a connection or a stopover depends on the time and fare rules. The MCT defines the shortest legal gap, and connecting traffic is what hub-and-spoke networks are built to generate. A through fare typically prices the connecting journey as one product.
+
+**한국어 / Korean** — **연결편(커넥션)** — 직항(nonstop)이나 직행(direct) 여정과 달리, 승객이 최종 목적지로 계속 가기 위해 한 항공편에서 다른 항공편으로 갈아타는 여정상의 지점. 유효한 연결은 도착 항공편과 출발 항공편 사이에 연결 공항에서 최소한 최소 연결 시간(MCT) 이상을 필요로 한다.
+
+연결은 "online"(두 항공편이 같은 항공사)일 수도, "interline"/"codeshare"(서로 다른 항공사)일 수도 있으며, 후자는 일관 발권과 수하물 처리를 위해 인터라인 또는 공동운항 협정에 의존한다. 갈아타기가 통과(transit)로 취급되면 연결 지점은 스톱오버(stopover)가 아니라 별개의 세그먼트(segment)로 여정에 반영되며, 두 세그먼트가 연결인지 스톱오버인지는 시간과 운임 규정에 따라 달라진다. MCT는 법적으로 허용되는 최소 간격을 정의하고, 연결 운송은 허브 앤 스포크 네트워크가 만들어내도록 설계된 대상이다. 일관 운임은 일반적으로 연결 여정을 하나의 상품으로 책정한다.
+
+**Aliases:** `Connecting Flight`, `Connecting Itinerary`, `Online Connection`, `Interline Connection`
+
+# Related
+- [MCT](/air-ops/mct.md) — related
+- [Segment](/air-ops/segment.md) — related
+- [Married Segment](/air-ops/married-segment.md) — related
+- [Hub-and-Spoke](/air-partner/hub-and-spoke.md) — related
+- [Through Fare](/air-partner/through-fare.md) — related
+- [Interline](/air-partner/interline.md) — related
+
+# Distinctions
+- **Connection** vs [MCT](/air-ops/mct.md) — A connection is the act of changing flights toward a destination; MCT is the minimum time that must elapse at the connecting airport for that connection to be considered valid.
+- **Connection** vs [Segment](/air-ops/segment.md) — A segment is a single marketed flight portion of an itinerary; a connection is the relationship between two consecutive segments where the passenger transfers between flights.
+
+# Citations
+[1] IATA — Standard Schedules Information Manual (SSIM)

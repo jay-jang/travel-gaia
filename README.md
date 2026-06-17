@@ -24,25 +24,41 @@
 Air(운영·예약 / 운임·재고 / 발권·주문 / 공동운항·연계), Hotel(재고·요금 / 유통·예약),
 Payments & Settlement, Identifiers & Codes, Customer·Loyalty, Distribution Standards & APIs.
 
-## 구조
+## 구조 (OKF 아키텍처)
+
+데이터 정본은 **OKF v0.1 Knowledge Bundle**(`okf/`)입니다 — 개념 1개 = 마크다운 파일 1개
+(YAML frontmatter + body). 빌드가 이 번들을 **소비(consume)**해 단일 `index.html`로 컴파일합니다.
+콘텐츠 추가·수정은 `okf/<category>/<concept>.md` 를 직접 편집합니다.
+
 ```
 travel-gaia/
-├── index.html                # ★ 산출물: standalone 백과사전(데이터 인라인 임베드)
+├── index.html                # ★ 산출물: standalone 백과사전(OKF 번들 컴파일, 데이터 인라인)
+├── okf/                       # ★ 데이터 정본: OKF v0.1 Knowledge Bundle
+│   ├── index.md              #   루트 목차 (okf_version: "0.1")
+│   ├── log.md                #   변경 이력
+│   └── <category>/           #   카테고리 디렉터리 (standards/, air-ops/, …)
+│       ├── index.md          #     카테고리 목차(progressive disclosure)
+│       └── <concept>.md      #     개념=파일: frontmatter(type/title/description/tags/timestamp
+│                             #     + 무손실 확장키) + body(정의·표·번들상대 링크·# Citations)
 ├── data/
-│   ├── cat-*.json            # 카테고리별 소스 데이터(생성 파이프라인 산출)
-│   └── glossary.json         # 병합·교차참조 해석된 전체 데이터
+│   └── glossary.json         # 빌드 산출물(okf/ 로드→병합·교차참조 해석)
 ├── build/
-│   ├── template.html         # HTML/CSS/JS 템플릿(i18n 토글 + Knowledge Graph 포함)
-│   ├── build.mjs             # 병합→교차참조 해석→검증→index.html 생성
-│   ├── content-workflow.mjs  # 콘텐츠 생성 워크플로(author→adversarial verify)
-│   └── translate-workflow.mjs # 한국어 번역 워크플로(_ko 필드 추가)
-├── DESIGN.md                 # 설계·의사결정 기록(codex↔agy 자문/토론 결론)
-├── notes/                    # 자문/토론 원본 로그
+│   ├── template.html         # HTML/CSS/JS 템플릿(편집형 UI + D3 Knowledge Graph)
+│   ├── okf-load.mjs          # OKF 번들 로더(frontmatter→entries) — build·검증 공용
+│   ├── build.mjs             # okf/ 로드→교차참조 해석→검증→index.html 생성
+│   ├── to-okf.mjs            # 마이그레이션: glossary.json→okf/ 변환
+│   ├── okf-validate.mjs      # OKF 적합성 + 라운드트립 검증
+│   └── verify-ui.mjs         # jsdom UI 테스트
+├── serve.py                  # no-cache 데모 서버(터널용)
+├── DESIGN.md · notes/ · mock/ # 설계 기록, 자문 로그, UI 목업
 └── README.md
 ```
 
+> 데이터 모델은 [Open Knowledge Format (OKF) v0.1](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md)
+> 을 따릅니다. 적합성·무손실 라운드트립은 `node build/okf-validate.mjs` 로 검증합니다.
+
 ## 재빌드
-데이터(`data/cat-*.json`)나 템플릿을 수정한 뒤:
+OKF 번들(`okf/**/*.md`)이나 템플릿을 수정한 뒤:
 ```bash
 node build/build.mjs
 ```

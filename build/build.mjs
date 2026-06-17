@@ -1,8 +1,9 @@
 #!/usr/bin/env node
-// Travel Gaia build: merge data/cat-*.json -> resolve cross-refs -> validate -> inline into index.html
-import { readFileSync, writeFileSync, readdirSync } from 'node:fs';
+// Travel Gaia build: load OKF bundle (okf/) -> resolve cross-refs -> validate -> inline into index.html
+import { readFileSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
+import { loadOkf } from './okf-load.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const DATA = join(ROOT, 'data');
@@ -32,20 +33,18 @@ const catIds = new Set(CATEGORIES.map(c => c.id));
 const REL_TYPES = new Set(['sameAs','broader','narrower','parent','child','related','conflicts','replaces','contrasts']);
 const norm = s => String(s||'').toLowerCase().replace(/\s+/g,' ').trim();
 
-// ---- load category data files ----
-const files = readdirSync(DATA).filter(f => /^cat-.*\.json$/.test(f)).sort();
-if (!files.length) { console.error('ERROR: no data/cat-*.json found. Run the content workflow first.'); process.exit(1); }
-
-let entries = [];
-const fileReport = [];
-for (const f of files) {
-  let parsed;
-  try { parsed = JSON.parse(readFileSync(join(DATA, f), 'utf8')); }
-  catch (e) { console.error(`ERROR: ${f} is not valid JSON: ${e.message}`); process.exit(1); }
-  const arr = Array.isArray(parsed) ? parsed : (parsed.entries || []);
-  fileReport.push(`  ${f}: ${arr.length}`);
-  entries.push(...arr);
-}
+// ---- load the OKF knowledge bundle (okf/ is the source of truth) ----
+const OKF = join(ROOT, 'okf');
+let loaded;
+try { loaded = loadOkf(OKF); }
+catch (e) { console.error(`ERROR: cannot read OKF bundle at okf/: ${e.message}\nRun "node build/to-okf.mjs" to (re)generate it from data/glossary.json.`); process.exit(1); }
+if (!loaded.entries.length) { console.error('ERROR: no concept files found under okf/.'); process.exit(1); }
+let entries = loaded.entries;
+const okfIssues = loaded.issues;       // OKF conformance problems (non-empty type, parseable frontmatter)
+const byCatCount = {};
+entries.forEach(e => { byCatCount[e.category] = (byCatCount[e.category] || 0) + 1; });
+const fileReport = [`  okf/: ${loaded.files.length} concept files`].concat(
+  CATEGORIES.filter(c => byCatCount[c.id]).map(c => `    ${c.id}: ${byCatCount[c.id]}`));
 
 // ---- dedupe by id ----
 const seen = new Map(); const dups = [];
@@ -115,6 +114,7 @@ console.log(`\n=== Travel Gaia build report (${TODAY}) ===`);
 console.log(`files:\n${fileReport.join('\n')}`);
 console.log(`entries: ${entries.length}  |  categories: ${CATEGORIES.length}`);
 console.log(`per category:\n${perCat}`);
+console.log(`OKF conformance issues: ${okfIssues.length}${okfIssues.length?'\n  '+okfIssues.slice(0,10).join('\n  '):''}`);
 console.log(`duplicate ids dropped: ${dups.length}${dups.length?' ['+[...new Set(dups)].join(', ')+']':''}`);
 console.log(`unresolved cross-refs: ${unresolved.length}${unresolved.length?'\n  '+unresolved.join('\n  '):''}`);
 console.log(`entries missing sources: ${missingSource.length}${missingSource.length?' ['+missingSource.join(', ')+']':''}`);
