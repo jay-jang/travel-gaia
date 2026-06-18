@@ -2,13 +2,18 @@
 
 Passenger type codes, FFP, One ID — customer & profile concepts.
 
+* [Advance Passenger Information System](advance-passenger-information-system.md) - A border-control process in which a carrier transmits a defined set of each traveler's identity and travel-document data — typically full na
 * [Award Redemption](award-redemption.md) - Award redemption is the process by which a loyalty program member exchanges accrued miles or points for a reward, most commonly an award fli
 * [Breakage](breakage.md) - The estimated proportion of loyalty points or miles issued to members that the program expects will never be redeemed.
+* [CCPA/CPRA Consumer Privacy Rights](ccpa-cpra-consumer-privacy-rights.md) - The set of consumer rights under California's Consumer Privacy Act, as amended by the California Privacy Rights Act, that governs how a busi
+* [Co-branded Credit Card](co-branded-credit-card.md) - A payment card issued by a bank in partnership with a travel loyalty program (airline or hotel), branded jointly so that cardholder spend ea
 * [Companion](companion.md) - In loyalty and customer terms, a companion is a second guest who travels together with a member on the same itinerary, often under a compani
 * [Corporate Profile](corporate-profile.md) - A corporate profile is a stored record in a GDS, agency mid-office, or travel management system that holds an organization's travel data, in
 * [Customer Data Platform](customer-data-platform.md) - Packaged software that ingests and unifies first-party customer data from disparate operational systems — booking engines, PMS/CRS, loyalty,
 * [Customer Profile](customer-profile.md) - A stored, reusable record of a traveler's identity data, contact details, documents, preferences and loyalty memberships maintained in a res
 * [Digital Travel Credential](digital-travel-credential.md) - An ICAO specification for a cryptographically secured digital representation of a traveler's passport, allowing the credential to be derived
+* [Elite Qualifying Metric](elite-qualifying-metric.md) - The qualifying currency a frequent flyer program counts to determine whether a member earns or retains elite (loyalty tier) status during a 
+* [EU PNR Directive](eu-pnr-directive.md) - Directive (EU) 2016/681 requires air carriers operating international flights to and from the EU to transfer Passenger Name Record (PNR) dat
 * [Frequent Flyer Number](frequent-flyer-number.md) - The unique account identifier assigned to a member of a Frequent Flyer Program, used to accrue and redeem miles and to attach loyalty benefi
 * [Frequent Flyer Program](frequent-flyer-program.md) - An airline loyalty program in which members accrue points or miles for flights and partner activity and redeem them for awards, upgrades and
 * [GDPR Consent](gdpr-consent.md) - Under the EU General Data Protection Regulation (GDPR), the freely given, specific, informed and unambiguous indication by which a data subj

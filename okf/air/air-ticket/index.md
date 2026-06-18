@@ -10,6 +10,7 @@ E-tickets, EMD, reissue/refund and the Order domain.
 * [Coupon Status](coupon-status.md) - Coupon status is the lifecycle state of an individual electronic ticket flight coupon, indicating where it is in the issue-to-use process — 
 * [E-ticket](e-ticket.md) - An electronic record of a passenger's transportation entitlement held in the issuing/validating carrier's (or BSP) database, identified by a
 * [EMD](emd.md) - An IATA-standard electronic document used to issue, account for, and settle ancillary services, fees, and other non-flight charges (e.g., ba
+* [Endorsements / Restrictions Box](endorsements-restrictions-box.md) - The Endorsements / Restrictions box is the ticket field that records carrier comments and fare restrictions governing how a coupon may be us
 * [Exchange](exchange.md) - An exchange is the process of surrendering an existing ticket (or EMD) and applying its value toward a new ticket that reflects a changed it
 * [Flight Coupon](flight-coupon.md) - The portion of an e-ticket that corresponds to a single flight segment and represents the passenger's entitlement to be carried on that spec
 * [Interline Electronic Ticket (IET)](interline-electronic-ticket-iet.md) - An Interline Electronic Ticket (IET) is an IATA-standard electronic ticket whose coupons span the flights of two or more carriers, enabled b
@@ -21,7 +22,10 @@ E-tickets, EMD, reissue/refund and the Order domain.
 * [Refund](refund.md) - The return of all or part of a ticket's or EMD's value to the passenger or form of payment for unused or partially used coupons.
 * [Reissue](reissue.md) - The process of exchanging an existing ticket for a new one to reflect a change in itinerary, fare, or travel dates, computing any additional
 * [Residual Value](residual-value.md) - Residual value is the amount left over when a ticket (or EMD) is exchanged for a new document of lower total value, after deducting any appl
+* [Standard Traffic Document (STD)](standard-traffic-document-std.md) - Standard Traffic Document (STD) is the IATA collective name for the neutral, accountable documents issued by accredited agents from controll
 * [Ticketing Time Limit](ticketing-time-limit.md) - The deadline by which a booked reservation must be ticketed (paid and issued) or the airline may automatically cancel the held space.
+* [Tour Code](tour-code.md) - A Tour Code is a ticketing-field identifier that links a ticket to a contracted fare agreement — typically a net/negotiated fare or a bulk (
+* [Transitional Stored Ticket (TST)](transitional-stored-ticket-tst.md) - A Transitional Stored Ticket (TST) is the pricing-and-ticketing record attached to a PNR that holds all fare, tax, and fare-calculation data
 * [Validating Carrier](validating-carrier.md) - The airline whose accounting code (the first three digits of the ticket number) appears on the ticket and which is responsible for the finan
 * [Void](void.md) - The cancellation of a newly issued ticket or EMD within the permitted void window (typically the same sales day, before the BSP/ARC sales re
 * [Voluntary Changes (ATPCO Category 31)](voluntary-changes-atpco-category-31.md) - ATPCO Fare Rule Category 31 is the machine-readable rule set defining the conditions and applicable charges under which voluntary ticket cha

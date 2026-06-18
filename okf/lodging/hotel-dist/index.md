@@ -9,6 +9,7 @@ CRS/PMS, channel managers, bedbanks — hotel distribution.
 * [Cancellation Policy](cancellation-policy.md) - A cancellation policy defines the conditions, deadlines, and penalties that apply when a guest cancels or modifies a hotel reservation, such
 * [Channel Manager](channel-manager.md) - A Channel Manager is a software service that synchronizes a hotel's availability, rates, and inventory (ARI) across multiple online distribu
 * [Commissionable Rate](commissionable-rate.md) - A commissionable rate is a published room rate on which the hotel pays the booking travel agent or distributor a commission (a percentage of
+* [Connectivity Partner Program](connectivity-partner-program.md) - A Connectivity Partner Program is an OTA-run certification and tiering scheme that qualifies and ranks the technology providers—channel mana
 * [Cost Per Acquisition (CPA)](cost-per-acquisition.md) - In hotel metasearch, Cost Per Acquisition (CPA) is a performance billing model where the advertiser (hotel or OTA) pays only when a referral
 * [CRS](crs.md) - A Central Reservation System is the hotel-side system that stores and distributes room inventory, rates, and availability across multiple ch
 * [Direct Booking](direct-booking.md) - A direct booking is a reservation made by the guest through the hotel's own channels — its website and booking engine, brand.com, mobile app
@@ -17,7 +18,9 @@ CRS/PMS, channel managers, bedbanks — hotel distribution.
 * [GIATA ID](giata-id.md) - A GIATA ID is a unique property identifier assigned by GIATA's Multicodes service that maps a single physical hotel to the many different co
 * [Guarantee Policy](guarantee-policy.md) - A guarantee policy defines how a hotel reservation must be secured so the room is held for the guest, for example by credit card guarantee, 
 * [HEDNA](hedna.md) - HEDNA (Hotel Electronic Distribution Network Association) is a not-for-profit trade association, founded in 1991, dedicated to advancing hot
+* [Hotel Representation Company](hotel-representation-company.md) - A hotel representation company is a third party that gives independent hotels GDS and OTA distribution reach—plus voice, sales, and marketin
 * [Hotel Switch](hotel-switch.md) - A hotel switch is a technical pass-through intermediary that connects a hotel's CRS or PMS to many distribution channels (GDSs, OTAs, wholes
+* [Internet Distribution System (IDS)](internet-distribution-system.md) - An Internet Distribution System (IDS) is the category of online, non-GDS electronic channels through which a hotel's rooms are sold over the
 * [Last Room Availability](last-room-availability.md) - Last Room Availability (LRA) is a negotiated-rate attribute, common in corporate and GDS distribution, guaranteeing that the contracted rate
 * [Net Rate](net-rate.md) - A net rate is a wholesale, non-commissionable room rate that a hotel contracts to a reseller (such as a bedbank, tour operator, or OTA under
 * [No-Show](no-show.md) - A no-show is a confirmed reservation where the guest neither arrives nor cancels by the hotel's check-in/cancellation deadline.
@@ -29,4 +32,6 @@ CRS/PMS, channel managers, bedbanks — hotel distribution.
 * [Rate Leakage](rate-leakage.md) - Rate leakage is the loss of pricing control and parity that occurs when contracted net/wholesale rates 'leak' from bedbanks or wholesalers o
 * [Rate Parity Clause](rate-parity-clause.md) - A rate parity clause is a contractual most-favoured-nation provision an OTA imposes on a hotel, requiring the hotel not to offer lower price
 * [Rate Shopping](rate-shopping.md) - Rate shopping is the practice of systematically collecting and comparing room rates and availability — for a hotel's own property, its compe
+* [Reservation Notification Message (OTA_HotelResNotif)](reservation-notification-message.md) - The Reservation Notification Message (OTA_HotelResNotif) is the OpenTravel-standard XML message pair that pushes a new, modified, or cancell
+* [Single Image Inventory](single-image-inventory.md) - Single Image Inventory is a hotel distribution architecture in which one shared pool of availability and rates is held centrally and offered
 * [Two-Way XML](two-way-xml.md) - Two-way XML is a bidirectional connectivity model in which a hotel system and a distribution channel exchange ARI updates outbound and recei

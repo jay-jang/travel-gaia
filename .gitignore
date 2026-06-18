@@ -4,3 +4,4 @@ node_modules/
 *.log
 .gemini/
 build/*.raw.json
+build/base-glossary-327.json

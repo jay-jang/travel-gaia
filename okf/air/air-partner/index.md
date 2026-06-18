@@ -8,7 +8,9 @@ Codeshare, interline, marketing/operating carriers — airline partnerships.
 * [Capacity Purchase Agreement](capacity-purchase-agreement.md) - A partner arrangement in which a regional or operating carrier flies aircraft and crew on behalf of a mainline airline for a fixed fee (typi
 * [Codeshare](codeshare.md) - A commercial arrangement in which an airline (the marketing carrier) sells seats under its own airline designator and flight number on a fli
 * [Connection](connection.md) - A point in an itinerary where a passenger changes from one flight to another to continue toward the final destination, as opposed to a nonst
+* [Free-Flow Codeshare](free-flow-codeshare.md) - A codeshare type in which the marketing carrier sells seats on the operating carrier's flight against the operating carrier's real-time avai
 * [Hub-and-Spoke](hub-and-spoke.md) - A network design in which an airline routes most traffic through one or more central hub airports, where passengers from many origin (spoke)
+* [Inter-Airline Through Check-In (IATCI)](inter-airline-through-check-in-iatci.md) - An industry standard and the message exchange behind it — coordinated with IATA's Passenger and Airport Data Interchange Standards (PADIS) a
 * [Interline](interline.md) - A commercial agreement between two or more airlines to handle passengers, baggage, and tickets traveling on itineraries that involve more th
 * [Interline Electronic Ticketing](interline-electronic-ticketing.md) - The capability for two airlines to issue, exchange, and accept each other's electronic ticket coupons on a single itinerary, governed by IAT
 * [IROPS](irops.md) - Irregular Operations: the handling of unplanned disruptions to flight operations such as delays, cancellations, diversions, and missed conne
@@ -16,6 +18,7 @@ Codeshare, interline, marketing/operating carriers — airline partnerships.
 * [Marketing Carrier](marketing-carrier.md) - The airline whose designator code and flight number appear on a ticket or in a reservation for a given flight, and which markets and sells t
 * [Metal Neutrality](metal-neutrality.md) - The joint-venture principle—formalized in US DOT analysis—under which partner airlines are economically indifferent to which carrier's aircr
 * [MITA](mita.md) - The IATA Multilateral Interline Traffic Agreements, a standardized framework that lets participating airlines (and accredited agents) accept
+* [Most Significant Carrier (MSC)](most-significant-carrier-msc.md) - An IATA Resolution 302 concept that determines which single carrier's checked-baggage allowance and excess-baggage charges apply to an entir
 * [Operating Carrier](operating-carrier.md) - The airline that physically operates a flight, providing the aircraft, crew, and operational control, regardless of which carriers' codes ar
 * [Proration](proration.md) - The process of dividing the total fare of an interline or multi-carrier ticket among the participating carriers to determine how much revenu
 * [Re-accommodation](re-accommodation.md) - The process of rebooking passengers from a disrupted or changed flight onto alternative transportation to get them to their destination, usi

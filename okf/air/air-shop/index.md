@@ -5,10 +5,12 @@ RBD, fare basis, availability — air shopping & pricing concepts.
 * [Add-on](add-on.md) - An add-on (also called an arbitrary or proportional fare) is an amount combined with a published international fare to construct an unpublis
 * [ATPCO](atpco.md) - ATPCO (Airline Tariff Publishing Company) is the airline-owned organization that collects, processes, and distributes the world's airfares, 
 * [Availability](availability.md) - Availability is the count of bookable seats an airline is willing to sell on a given flight, displayed per booking class (RBD) for a specifi
+* [Availability Status (AVS)](availability-status.md) - Availability Status (AVS) is a teletype message, in AIRIMP/Type B format, by which an airline advises other airlines, GDSs, and reservation 
 * [Bid Price](bid-price.md) - A bid price is a revenue-management control representing the minimum acceptable revenue (the opportunity cost, or marginal value, of the nex
 * [Booking Limit](booking-limit.md) - A booking limit is the maximum number of seats a revenue-management system will sell in a given fare class or inventory bucket on a flight.
 * [Class of Service](class-of-service.md) - Class of Service is the single-letter code identifying the booking inventory class (Reservation Booking Designator) into which a seat is sol
 * [Continuous Pricing](continuous-pricing.md) - Continuous Pricing is a revenue-management and pricing technique in which an airline generates fares in real time across a continuous price 
+* [Expected Marginal Seat Revenue (EMSR)](expected-marginal-seat-revenue.md) - Expected Marginal Seat Revenue (EMSR) is the heuristic method used to compute protection levels and booking limits for nested fare classes b
 * [Fare Basis Code](fare-basis-code.md) - A fare basis code is an alphanumeric string that uniquely identifies a specific fare and its associated rules within a market.
 * [Fare Component](fare-component.md) - A fare component is the portion of an itinerary covered by a single fare, running from one fare-break point to the next and governed by one 
 * [Fare Construction](fare-construction.md) - Fare Construction is the standardized process of calculating the total fare for an itinerary by breaking it into fare components and pricing
@@ -26,6 +28,9 @@ RBD, fare basis, availability — air shopping & pricing concepts.
 * [Protection Level](protection-level.md) - A protection level is the number of seats a revenue-management system reserves (protects) for higher-value fare classes so they are not sold
 * [RBD](rbd.md) - An RBD (Reservation Booking Designator) is a single-letter code that identifies the booking class in which a seat is sold and inventory is c
 * [Revenue Management](revenue-management.md) - Revenue Management is the airline discipline of dynamically controlling seat availability and pricing across booking classes to maximize tot
+* [Routing](routing.md) - Routing is a fare-construction method in which a published fare is valid only when travel follows one of a defined list of approved paths (s
+* [Spill and Spoilage](spill-and-spoilage.md) - Spill and spoilage are the paired error metrics revenue management trades off against each other: spill is high-yield demand turned away bec
 * [Surcharge](surcharge.md) - A Surcharge is an additional amount added to the base fare during fare construction under specific rule conditions, such as a mileage surcha
 * [Tax (YQ/YR)](tax-yq-yr.md) - YQ and YR are tax/fee codes carried in the tax box of a ticket that represent carrier-imposed surcharges (commonly described historically as
 * [Ticketed Point Mileage (TPM)](ticketed-point-mileage.md) - Ticketed Point Mileage (TPM) is the distance covered by a single flight coupon between two consecutive ticketed points, published by IATA an
+* [Virtual Nesting](virtual-nesting.md) - Virtual Nesting is a network revenue-management control that maps each origin-destination (O&D) itinerary and fare-class product into a smal

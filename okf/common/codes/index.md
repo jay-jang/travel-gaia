@@ -3,6 +3,7 @@
 IATA/ICAO, ISO currency/country, PCC — industry identifier systems.
 
 * [Air Waybill Number](air-waybill-number.md) - The air-cargo equivalent of a ticket number: an 11-digit identifier in which the first 3 digits (the prefix, assigned by IATA) identify the 
+* [Aircraft Registration](aircraft-registration.md) - The unique alphanumeric mark assigned to an individual airframe, comprising a nationality mark (prefix indicating the State of Registry) and
 * [Aircraft Type Code](aircraft-type-code.md) - A short code identifying the type/variant of aircraft operating a flight.
 * [Airline Accounting Code](airline-accounting-code.md) - A three-digit numeric code assigned by IATA to identify an airline in traffic documents and settlement.
 * [Airline Designator](airline-designator.md) - A code identifying an airline.
@@ -19,9 +20,12 @@ IATA/ICAO, ISO currency/country, PCC — industry identifier systems.
 * [ISO 3166 Country Code](iso-3166-country-code.md) - The international standard defining codes for countries and their subdivisions.
 * [ISO 3166-2 Subdivision Code](iso-3166-2-subdivision-code.md) - The ISO standard for coding the principal subdivisions (states, provinces, regions, etc.) of countries listed in ISO 3166-1.
 * [ISO 4217 Currency Code](iso-4217-currency-code.md) - The international standard defining three-letter alphabetic codes (and corresponding numeric codes) for currencies, e.g., USD, EUR, GBP, JPY
+* [License Plate Number](license-plate-number.md) - The 10-digit unique identifier printed on a checked-bag tag (in both human-readable text and barcode form) used to track a piece of baggage 
 * [Meal Code](meal-code.md) - A standardized four-letter IATA code identifying a special or dietary in-flight meal, such as VGML (vegetarian), KSML (kosher), MOML (Muslim
 * [Pseudo City Code](pseudo-city-code.md) - An alphanumeric identifier assigned by a GDS/CRS to a subscriber such as a travel agency or corporate travel department, used to associate b
+* [Service Type Code](service-type-code.md) - A single-character IATA SSIM code (defined in Appendix C of the Standard Schedules Information Manual) that classifies each flight or flight
 * [SITA Teletype Address](sita-teletype-address.md) - A 7-character addressing scheme used to route IATA Type B teletype (and EDIFACT) messages between airline and airport systems.
+* [Standard Carrier Alpha Code](standard-carrier-alpha-code.md) - A unique two-to-four-letter code assigned by the National Motor Freight Traffic Association (NMFTA) to identify a transportation company.
 * [Station Code](station-code.md) - An operational term for the 3-letter IATA location code used to identify the airport or city where an airline maintains a presence (a 'stati
 * [Ticket Number](ticket-number.md) - The 13-digit number that uniquely identifies an airline ticket/transport document.
 * [TIDS Code](tids-code.md) - An IATA-issued numeric identifier from the Travel Industry Designator Service (TIDS) that lets non-accredited sales intermediaries (such as 
