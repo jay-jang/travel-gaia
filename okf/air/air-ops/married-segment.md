@@ -20,7 +20,7 @@ aliases:
   - Married Segment Logic
   - Segment Marriage
 relationships:
-  - type: related
+  - type: broader
     targetTerm: Segment
   - type: related
     targetTerm: Availability
@@ -32,12 +32,15 @@ distinctions:
   - targetTerm: Passive Segment
     explanation: 'A married segment is a live, inventory-controlled connection sold as a unit, whereas a passive segment is an informational segment that does not draw on the operating carrier''s inventory.'
     explanation_ko: 'married segment는 하나의 단위로 판매되는, 재고 통제를 받는 실시간 연결편인 반면, passive segment는 운항 항공사의 재고를 차감하지 않는 정보성 segment다.'
+  - targetTerm: Origin & Destination Control (O&D Control)
+    explanation: A married segment is the booking-side rule that ties connecting segments so they cannot be split; O&D control is the RM rationale that produces and prices those itinerary-level availabilities.
+    explanation_ko: 'Married segment는 연결 세그먼트를 묶어 분리하지 못하게 하는 booking 측 규칙이고, O&D control은 그러한 여정 단위 availability를 산출하고 가격책정하는 RM 논리이다.'
 sources:
   - name: Passenger Services Conference Resolutions Manual (PSCRM)
     org: IATA
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
   - name: Amadeus Functional Documentation — Availability and Married Segment Logic
     org: Amadeus
     version: ''
@@ -57,14 +60,15 @@ Carriers use married-segment logic so that availability returned for a connectio
 **Aliases:** `Married Segments`, `Married Segment Logic`, `Segment Marriage`
 
 # Related
-- [Segment](/air/air-ops/segment.md) — related
+- [Segment](/air/air-ops/segment.md) — broader
 - [Availability](/air/air-shop/availability.md) — related
 - [Origin & Destination](/air/air-shop/origin-destination.md) — related
 - [RBD](/air/air-shop/rbd.md) — related
 
 # Distinctions
 - **Married Segment** vs [Passive Segment](/air/air-ops/passive-segment.md) — A married segment is a live, inventory-controlled connection sold as a unit, whereas a passive segment is an informational segment that does not draw on the operating carrier's inventory.
+- **Married Segment** vs [Origin & Destination Control (O&D Control)](/air/air-shop/origin-destination-control.md) — A married segment is the booking-side rule that ties connecting segments so they cannot be split; O&D control is the RM rationale that produces and prices those itinerary-level availabilities.
 
 # Citations
-[1] IATA — Passenger Services Conference Resolutions Manual (PSCRM)
+[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
 [2] Amadeus — Amadeus Functional Documentation — Availability and Married Segment Logic

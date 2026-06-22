@@ -25,11 +25,11 @@ aliases:
 relationships:
   - type: parent
     targetTerm: EU Regulation 261/2004
-  - type: related
+  - type: contrasts
     targetTerm: Right to Care
   - type: related
     targetTerm: Re-accommodation
-  - type: related
+  - type: contrasts
     targetTerm: Refund
   - type: related
     targetTerm: Denied Boarding Compensation
@@ -48,12 +48,12 @@ sources:
     name: 'Regulation (EC) No 261/2004, Article 8 — Right to reimbursement or re-routing'
     version: '2004'
     section: Article 8
-    url: ''
+    url: 'https://eur-lex.europa.eu/eli/reg/2004/261/oj/eng'
   - org: UK Civil Aviation Authority
     name: Re-routing in accordance with Article 8 of Regulation (EU) 261/2004
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.caa.co.uk/our-work/publications/documents/content/cap2155/'
 icon: '<svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="24" r="3"/><circle cx="38" cy="12" r="3"/><circle cx="38" cy="36" r="3"/><path d="M13 24h8c3 0 4-2 6-5l4-6"/><path d="M13 24h8c3 0 4 2 6 5l4 6"/><polyline points="32,11 35,12 34,15"/><polyline points="32,37 35,36 34,33"/></svg>'
 ---
 
@@ -69,9 +69,9 @@ Article 8(1)은 운항 항공사가 제공해야 하는 상호 배타적 3개 �
 
 # Related
 - [EU Regulation 261/2004](/common/disruption/eu-regulation-261-2004.md) — parent
-- [Right to Care](/common/disruption/right-to-care.md) — related
+- [Right to Care](/common/disruption/right-to-care.md) — contrasts
 - [Re-accommodation](/air/air-partner/re-accommodation.md) — related
-- [Refund](/air/air-ticket/refund.md) — related
+- [Refund](/air/air-ticket/refund.md) — contrasts
 - [Denied Boarding Compensation](/common/disruption/denied-boarding-compensation.md) — related
 
 # Distinctions
@@ -80,5 +80,5 @@ Article 8(1)은 운항 항공사가 제공해야 하는 상호 배타적 3개 �
 - **Right to Re-routing** vs [Refund](/air/air-ticket/refund.md) — Reimbursement is one of the two branches of the Article 8 choice; the Right to Re-routing is the broader entitlement framing reimbursement and re-routing as alternatives the passenger selects between.
 
 # Citations
-[1] European Union — Regulation (EC) No 261/2004, Article 8 — Right to reimbursement or re-routing — 2004 — Article 8
-[2] UK Civil Aviation Authority — Re-routing in accordance with Article 8 of Regulation (EU) 261/2004
+[1] [European Union — Regulation (EC) No 261/2004, Article 8 — Right to reimbursement or re-routing — 2004 — Article 8](https://eur-lex.europa.eu/eli/reg/2004/261/oj/eng)
+[2] [UK Civil Aviation Authority — Re-routing in accordance with Article 8 of Regulation (EU) 261/2004](https://www.caa.co.uk/our-work/publications/documents/content/cap2155/)

@@ -43,6 +43,9 @@ distinctions:
   - targetTerm: Chain Code
     explanation: A chain code is the general 2-character GDS code that groups properties under a brand or representation entity; a private label chain code specifically denotes an independent hotel/group obtaining its OWN dedicated code rather than sitting under a representation company's shared code.
     explanation_ko: 'Chain code는 프로퍼티를 브랜드나 대표 주체로 묶는 일반적 2자리 GDS 코드이고, 프라이빗 라벨 체인 코드는 독립 호텔/그룹이 대표 회사의 공유 코드 아래 있지 않고 자체 전용 코드를 확보하는 것을 특정한다.'
+  - targetTerm: Hotel Representation Company
+    explanation: A private-label chain code is the GDS identifier a property is sold under; a representation company is the firm that provides and operates that code (and broader services) for the property.
+    explanation_ko: '프라이빗 라벨 chain code는 호텔이 판매되는 GDS 식별자이고, 대표 판매 회사는 그 코드(및 더 넓은 서비스)를 호텔에 제공·운영하는 회사다.'
 sources:
   - org: PR Newswire
     name: Sabre Hospitality Solutions Launches Private Label Chain Code for Park Hotel Group
@@ -82,6 +85,7 @@ Independent hotels usually reach the GDS through a hotel representation company,
 
 # Distinctions
 - **Private Label Chain Code** vs [Chain Code](/common/codes/chain-code.md) — A chain code is the general 2-character GDS code that groups properties under a brand or representation entity; a private label chain code specifically denotes an independent hotel/group obtaining its OWN dedicated code rather than sitting under a representation company's shared code.
+- **Private Label Chain Code** vs [Hotel Representation Company](/lodging/hotel-dist/hotel-representation-company.md) — A private-label chain code is the GDS identifier a property is sold under; a representation company is the firm that provides and operates that code (and broader services) for the property.
 
 # Citations
 [1] [PR Newswire — Sabre Hospitality Solutions Launches Private Label Chain Code for Park Hotel Group](https://www.prnewswire.com/news-releases/sabre-hospitality-solutions-launches-private-label-chain-code-for-park-hotel-group-188191421.html)

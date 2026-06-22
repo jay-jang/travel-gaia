@@ -26,9 +26,9 @@ relationships:
     targetTerm: Collision Damage Waiver
   - type: related
     targetTerm: Excess
-  - type: related
+  - type: parent
     targetTerm: Rental Agreement
-  - type: related
+  - type: contrasts
     targetTerm: Residual Value
 distinctions:
   - targetTerm: Loss Damage Waiver
@@ -42,12 +42,12 @@ sources:
     name: Subrogating Rental Car Company Physical Damage and Loss-of-Use Claims
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.mwl-law.com/resources/rental-car-company-physical-damage-and-loss-of-use-claims/'
   - org: Claims Journal
     name: Subrogating Rental Car Physical Damage and Loss of Use Claims
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.claimsjournal.com/columns/road-to-recovery/2020/05/13/297034.htm'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 32h26l-3-9a3 3 0 0 0-3-2H12a3 3 0 0 0-3 2z"/><circle cx="14" cy="35" r="3"/><circle cx="28" cy="35" r="3"/><circle cx="35" cy="16" r="9"/><path d="M35 12v4l2 2"/></svg>
 ---
 
@@ -65,13 +65,13 @@ When a rental vehicle is damaged, the company's claim against the responsible pa
 - [Loss Damage Waiver](/ground/car/loss-damage-waiver.md) — related
 - [Collision Damage Waiver](/ground/car/collision-damage-waiver.md) — related
 - [Excess](/ground/car/excess.md) — related
-- [Rental Agreement](/ground/car/rental-agreement.md) — related
-- [Residual Value](/air/air-ticket/residual-value.md) — related
+- [Rental Agreement](/ground/car/rental-agreement.md) — parent
+- [Residual Value](/air/air-ticket/residual-value.md) — contrasts
 
 # Distinctions
 - **Loss of Use** vs [Loss Damage Waiver](/ground/car/loss-damage-waiver.md) — Loss of use is a charge the company tries to collect for downtime; LDW is the product that, when purchased, typically waives the renter's exposure to loss of use (and theft) on top of collision damage.
 - **Loss of Use** vs [Residual Value](/air/air-ticket/residual-value.md) — Residual value is the vehicle's expected worth at the end of its fleet life; loss of use is short-term lost rental income during repair, not a measure of the asset's depreciated value.
 
 # Citations
-[1] Matthiesen, Wickert & Lehrer (MWL Law) — Subrogating Rental Car Company Physical Damage and Loss-of-Use Claims
-[2] Claims Journal — Subrogating Rental Car Physical Damage and Loss of Use Claims
+[1] [Matthiesen, Wickert & Lehrer (MWL Law) — Subrogating Rental Car Company Physical Damage and Loss-of-Use Claims](https://www.mwl-law.com/resources/rental-car-company-physical-damage-and-loss-of-use-claims/)
+[2] [Claims Journal — Subrogating Rental Car Physical Damage and Loss of Use Claims](https://www.claimsjournal.com/columns/road-to-recovery/2020/05/13/297034.htm)

@@ -43,17 +43,29 @@ distinctions:
   - targetTerm: Origin & Destination
     explanation: An O&D is a market point-pair; a fare component is the priced unit defined over an O&D with one fare and rule set.
     explanation_ko: 'O&D는 시장의 지점 쌍이고, 운임 컴포넌트는 하나의 운임과 규정 집합을 갖고 O&D 단위로 정의되는 가격 산정 단위이다.'
+  - targetTerm: Fare Construction
+    explanation: A Fare Component is one building block (a single fare and its flights); Fare Construction is the overall process that assembles and validates components and pricing units into a total fare.
+    explanation_ko: 'Fare Component는 하나의 구성 요소(단일 운임과 그 비행 구간)이며, Fare Construction은 component와 pricing unit을 조합·검증하여 총운임을 만드는 전체 과정이다.'
+  - targetTerm: Pricing Unit
+    explanation: A Fare Component is a single fare and the flights it covers; a Pricing Unit groups one or more fare components into the entity that is actually priced and rule-checked together.
+    explanation_ko: 'Fare Component는 단일 운임과 그 운임이 적용되는 비행 구간이고, Pricing Unit은 하나 이상의 fare component를 묶어 실제로 함께 가격이 책정되고 규정이 점검되는 단위다.'
+  - targetTerm: Proration
+    explanation: A fare component is a priced portion of an itinerary; proration is the act of splitting that fare's value among the carriers operating it.
+    explanation_ko: '운임 구성요소(fare component)는 여정에서 운임이 책정된 일부 구간이고, 프로레이션은 그 운임 값을 해당 구간을 운항하는 항공사들 간에 나누는 행위다.'
+  - targetTerm: Through Fare
+    explanation: A fare component is the priced portion of an itinerary to which a fare applies; a through fare is a fare type that prices an origin-to-destination component as one continuous fare across intermediate points.
+    explanation_ko: '운임 구성요소는 운임이 적용되는 여정의 일부 구간이고, 일관 운임은 중간 지점들을 가로질러 출발지-목적지 구성요소를 하나의 연속 운임으로 책정하는 운임 유형이다.'
 sources:
   - name: IATA fare construction principles / Ticketing Handbook
     org: IATA
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/ticketing-handbook/'
   - name: ATPCO Automated Rules documentation
     org: ATPCO
     version: ''
     section: ''
-    url: ''
+    url: 'https://atpco.net/standards/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="24" r="3"/><circle cx="37" cy="24" r="3"/><line x1="14" y1="24" x2="34" y2="24"/><rect x="19" y="30" width="10" height="10" rx="2"/><path d="M24 30v-8"/></svg>
 ---
 
@@ -83,7 +95,11 @@ In fare construction, an itinerary is divided at fare-break points into fare com
 # Distinctions
 - **Fare Component** vs [Segment](/air/air-ops/segment.md) — A segment is one booked flight portion; a fare component is a priced span bounded by fare breaks and may cover several segments.
 - **Fare Component** vs [Origin & Destination](/air/air-shop/origin-destination.md) — An O&D is a market point-pair; a fare component is the priced unit defined over an O&D with one fare and rule set.
+- **Fare Component** vs [Fare Construction](/air/air-shop/fare-construction.md) — A Fare Component is one building block (a single fare and its flights); Fare Construction is the overall process that assembles and validates components and pricing units into a total fare.
+- **Fare Component** vs [Pricing Unit](/air/air-shop/pricing-unit.md) — A Fare Component is a single fare and the flights it covers; a Pricing Unit groups one or more fare components into the entity that is actually priced and rule-checked together.
+- **Fare Component** vs [Proration](/air/air-partner/proration.md) — A fare component is a priced portion of an itinerary; proration is the act of splitting that fare's value among the carriers operating it.
+- **Fare Component** vs [Through Fare](/air/air-partner/through-fare.md) — A fare component is the priced portion of an itinerary to which a fare applies; a through fare is a fare type that prices an origin-to-destination component as one continuous fare across intermediate points.
 
 # Citations
-[1] IATA — IATA fare construction principles / Ticketing Handbook
-[2] ATPCO — ATPCO Automated Rules documentation
+[1] [IATA — IATA fare construction principles / Ticketing Handbook](https://www.iata.org/en/publications/manuals/ticketing-handbook/)
+[2] [ATPCO — ATPCO Automated Rules documentation](https://atpco.net/standards/)

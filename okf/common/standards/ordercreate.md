@@ -45,12 +45,12 @@ sources:
     name: Distribution with Offers and Orders (NDC) Fact Sheet
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/iata-repository/pressroom/fact-sheets/fact-sheet-ndc/'
   - org: IATA
     name: Enhanced and Simplified Distribution Implementation Guide
     version: ''
     section: ''
-    url: ''
+    url: 'https://guides.developer.iata.org/docs/21-1_ImplementationGuide.pdf'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="7" width="24" height="30" rx="3"/><path d="M15 15h12M15 21h12M15 27h7"/><circle cx="33" cy="33" r="9"/><path d="M33 29v8M29 33h8"/></svg>
 ---
 
@@ -77,5 +77,5 @@ OrderCreate는 OfferPrice가 반환한 OfferID를 참조하고 승객 상세정�
 - **OrderCreate** vs [PNR](/air/air-ops/pnr.md) — A PNR is the legacy reservation record split from the ticket; OrderCreate produces a single NDC Order that unifies booking, ancillaries and (with ONE Order) accountable documents.
 
 # Citations
-[1] IATA — Distribution with Offers and Orders (NDC) Fact Sheet
-[2] IATA — Enhanced and Simplified Distribution Implementation Guide
+[1] [IATA — Distribution with Offers and Orders (NDC) Fact Sheet](https://www.iata.org/en/iata-repository/pressroom/fact-sheets/fact-sheet-ndc/)
+[2] [IATA — Enhanced and Simplified Distribution Implementation Guide](https://guides.developer.iata.org/docs/21-1_ImplementationGuide.pdf)

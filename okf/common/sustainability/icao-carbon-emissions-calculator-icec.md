@@ -23,13 +23,13 @@ aliases:
   - ICEC
   - ICAO Carbon Calculator
 relationships:
-  - type: related
+  - type: contrasts
     targetTerm: IATA CO2 Connect
   - type: related
     targetTerm: CORSIA (Carbon Offsetting and Reduction Scheme for International Aviation)
   - type: related
     targetTerm: GHG Protocol Scope 3 (Business Travel)
-  - type: related
+  - type: contrasts
     targetTerm: Flight Emissions Label (FEL)
 distinctions:
   - targetTerm: IATA CO2 Connect
@@ -43,12 +43,12 @@ sources:
     name: ICAO Carbon Emissions Calculator (ICEC)
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.icao.int/environmental-protection/environmental-tools/icec'
   - org: ICAO
     name: ICAO Carbon Emissions Calculator Methodology
     version: v13.1 (Aug 2024)
     section: ''
-    url: ''
+    url: 'https://icec.icao.int/Documents/Methodology%20ICAO%20Carbon%20Emissions%20Calculator_v13_Final.pdf'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="6" width="24" height="36" rx="3"/><rect x="17" y="11" width="14" height="7" rx="1"/><path d="M17 24h3M24 24h3M31 24h0M17 30h3M24 30h3M31 30h0M17 36h3M24 36h3"/><path d="M40 14l-6 4 6 4"/></svg>
 ---
 
@@ -63,15 +63,15 @@ ICEC 방법론은 공항 간 대권거리(Great Circle Distance)를 사용해 �
 **Aliases:** `ICAO Carbon Emissions Calculator`, `ICEC`, `ICAO Carbon Calculator`
 
 # Related
-- [IATA CO2 Connect](/common/sustainability/iata-co2-connect.md) — related
+- [IATA CO2 Connect](/common/sustainability/iata-co2-connect.md) — contrasts
 - [CORSIA (Carbon Offsetting and Reduction Scheme for International Aviation)](/common/sustainability/corsia.md) — related
 - [GHG Protocol Scope 3 (Business Travel)](/common/sustainability/ghg-protocol-scope-3-business-travel.md) — related
-- [Flight Emissions Label (FEL)](/common/sustainability/flight-emissions-label-fel.md) — related
+- [Flight Emissions Label (FEL)](/common/sustainability/flight-emissions-label-fel.md) — contrasts
 
 # Distinctions
 - **ICAO Carbon Emissions Calculator (ICEC)** vs [IATA CO2 Connect](/common/sustainability/iata-co2-connect.md) — ICEC is ICAO's open methodology built on modelled, globally harmonized average data per route/aircraft; IATA CO2 Connect is an industry calculator built on participating airlines' actual fuel-burn data, so per-flight results can differ.
 - **ICAO Carbon Emissions Calculator (ICEC)** vs [Flight Emissions Label (FEL)](/common/sustainability/flight-emissions-label-fel.md) — ICEC is a methodology to estimate emissions; the FEL is an EU labelling scheme that surfaces verified per-flight emissions to passengers at booking.
 
 # Citations
-[1] ICAO — ICAO Carbon Emissions Calculator (ICEC)
-[2] ICAO — ICAO Carbon Emissions Calculator Methodology — v13.1 (Aug 2024)
+[1] [ICAO — ICAO Carbon Emissions Calculator (ICEC)](https://www.icao.int/environmental-protection/environmental-tools/icec)
+[2] [ICAO — ICAO Carbon Emissions Calculator Methodology — v13.1 (Aug 2024)](https://icec.icao.int/Documents/Methodology%20ICAO%20Carbon%20Emissions%20Calculator_v13_Final.pdf)

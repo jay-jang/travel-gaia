@@ -48,17 +48,20 @@ distinctions:
   - targetTerm: TAP TSI
     explanation: OSDM is a voluntary open API/data-model standard for commercial distribution; TAP TSI is the EU legal regulation mandating interoperable interfaces. OSDM is one concrete way to implement the retail interfaces that TAP TSI prescribes.
     explanation_ko: 'OSDM은 상업적 유통을 위한 자발적 개방형 API/데이터 모델 표준이고, TAP TSI는 상호운용 인터페이스를 의무화하는 EU 법규다. OSDM은 TAP TSI가 규정하는 리테일 인터페이스를 구현하는 하나의 구체적 방식이다.'
+  - targetTerm: MERITS
+    explanation: 'MERITS supplies the integrated timetable and station data (the schedule layer); OSDM is the distribution standard for offering, booking and fulfilling rail products. MERITS feeds the schedule/offer input that an OSDM-based sales flow builds offers on top of — data source versus distribution API.'
+    explanation_ko: 'MERITS는 통합 시각표·역 데이터(스케줄 레이어)를 공급하고, OSDM은 철도 상품을 오퍼·예약·발권하는 유통 표준이다. MERITS는 OSDM 기반 판매 흐름이 오퍼를 구성하는 스케줄/오퍼 입력을 공급한다 — 데이터 원천 대 유통 API의 관계다.'
 sources:
   - name: Open Sales and Distribution Model (OSDM) project
     org: UIC
     version: IRS 90918-10
     section: ''
-    url: ''
+    url: 'https://uic.org/projects-99/osdm'
   - name: What is OSDM? (Passenger Department factsheet)
     org: UIC
     version: ''
     section: ''
-    url: ''
+    url: 'https://uic.org/IMG/pdf/uic-passenger-open-sales-and-distribution-model.pdf'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="10" width="28" height="22" rx="3"/><path d="M10 20h28"/><circle cx="16" cy="15" r="1.5" fill="currentColor"/><circle cx="21" cy="15" r="1.5" fill="currentColor"/><path d="M16 38l-3 4M32 38l3 4M14 32v6M34 32v6"/><path d="M19 26h10"/></svg>
 ---
 
@@ -87,7 +90,8 @@ OSDM은 UIC의 국제철도해법(IRS) 시리즈(IRS 90918-10)로 발행되며, 
 # Distinctions
 - **OSDM** vs [NDC](/common/standards/ndc.md) — OSDM is the UIC open standard for rail (and multimodal) offer/booking/fulfillment; NDC is IATA's equivalent XML standard for air. They are sibling distribution standards in different modes, sharing an offer/order philosophy.
 - **OSDM** vs [TAP TSI](/ground/rail/tap-tsi.md) — OSDM is a voluntary open API/data-model standard for commercial distribution; TAP TSI is the EU legal regulation mandating interoperable interfaces. OSDM is one concrete way to implement the retail interfaces that TAP TSI prescribes.
+- **OSDM** vs [MERITS](/ground/rail/merits.md) — MERITS supplies the integrated timetable and station data (the schedule layer); OSDM is the distribution standard for offering, booking and fulfilling rail products. MERITS feeds the schedule/offer input that an OSDM-based sales flow builds offers on top of — data source versus distribution API.
 
 # Citations
-[1] UIC — Open Sales and Distribution Model (OSDM) project — IRS 90918-10
-[2] UIC — What is OSDM? (Passenger Department factsheet)
+[1] [UIC — Open Sales and Distribution Model (OSDM) project — IRS 90918-10](https://uic.org/projects-99/osdm)
+[2] [UIC — What is OSDM? (Passenger Department factsheet)](https://uic.org/IMG/pdf/uic-passenger-open-sales-and-distribution-model.pdf)

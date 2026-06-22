@@ -1,0 +1,112 @@
+Reading additional input from stdin...
+OpenAI Codex v0.140.0
+--------
+workdir: /home/ubuntu/workspace/travel-gaia
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: workspace-write [workdir, /tmp, $TMPDIR]
+reasoning effort: medium
+reasoning summaries: none
+session id: 019ede0c-c824-7303-8e6b-931976512cdd
+--------
+user
+# Travel Gaia — 추가 개선점 도출 자문
+
+너는 시니어 프로덕트 엔지니어다. 아래 제품의 **다음 단계 개선점**을 도출해 달라. 칭찬 말고, 구체적이고 실행 가능한 개선안만.
+
+## 제품
+**Travel Gaia** = 여행 산업(항공·호텔·렌터카·철도·크루즈·결제·표준 등) **용어 백과사전**. 공급자/표준마다 다른 이름을 통일하고(교차 동의어 매핑), 혼동되는 쌍을 구분(distinctions)하는 것이 핵심 가치.
+
+## 현재 상태 (이미 구현됨 — 중복 제안 금지)
+- **데이터**: 407개 표제어. 데이터 정본은 **OKF(Open Knowledge Format) v0.1 Knowledge Bundle**(`okf/<vertical>/<subcategory>/<id>.md`, frontmatter+마크다운 body, 번들상대 교차링크). 빌드(`build/build.mjs`)가 이를 소비해 단일 `index.html`로 컴파일. `okf-validate.mjs`로 적합성+무손실 라운드트립 검증.
+- **구조**: 5개 vertical(air/lodging/ground/cruise/common) → 16개 세분류 → 표제어. 각 표제어: 한/영 정의·확장정의·관계(related/broader/...)·distinctions·출처(sources)·라인아트 SVG 아이콘.
+- **UI(단일 HTML, 의존성 0, 오프라인)**: 편집형(종이+잉크, Source Serif 4) 디자인. **D3.js 계층형 지식그래프**(카테고리→부모→자식, 클릭 확장/축소, d3 인라인 임베드). 표제어 페이지(Tufte 사이드노트+로컬 ego 미니맵). 전체 색인(A-Z/카테고리). **클래스룸**(vertical 기반 SVG 인터랙티브 학습). 토큰 검색. KO/EN 토글, 다크모드.
+- 빌드/검증: `verify-ui.mjs`(jsdom UI 테스트) 통과.
+
+## 절대 제약 (유지)
+- 단일 `index.html`, 외부 의존성 0, 완전 오프라인(더블클릭 동작). 빌드시 폰트/d3/데이터 전부 인라인.
+- OKF를 데이터 정본으로 유지. 한/영 양국어. 환각 금지(출처 기반).
+
+## 요청
+이 제품을 **레퍼런스로서 더 신뢰받고 더 잘 쓰이게** 만들 **개선점 8~12개**를 도출하라. 다양한 축을 고려: 콘텐츠 정확성/커버리지, 검색·탐색(텍스트+그래픽), 정보구조, 신뢰성(출처·검증), 접근성, 성능(단일파일 크기), OKF 포맷의 추가 활용(소비/교환), 양국어 품질, 유지보수(콘텐츠 워크플로우), 데이터 모델 확장.
+
+## 출력 형식 (반드시 이대로, 간결하게)
+```
+[우선순위 표] 각 줄: 제목 | 임팩트(상/중/하) | 난이도(상/중/하) | 한 줄 설명
+[상세] 상위 5개 각각: 무엇을·왜·어떻게(이 제품의 파일/구조에 맞춘 구체안 1~3줄)
+[한 줄 총평] 다음에 딱 하나만 한다면 무엇을, 왜
+```
+일반론 말고 **이 제품에 특정된** 구체안으로.
+warning: Codex's Linux sandbox uses bubblewrap and needs access to create user namespaces.
+codex
+현재 설명과 실제 저장소 구조가 맞는지 빠르게 확인해서, 이미 들어간 기능을 다시 제안하지 않도록 하겠습니다. 특히 OKF 스키마, 빌드 산출물, UI 테스트 범위를 먼저 보겠습니다.
+codex
+터미널 샌드박스가 `bwrap` 네트워크 네임스페이스 설정에서 바로 실패해 파일 확인은 진행되지 않았습니다. 주어진 구현 범위를 기준으로, 중복 가능성이 낮고 OKF/단일 HTML 제약에 맞는 개선안만 추리겠습니다.
+codex
+[우선순위 표]  
+출처 신뢰도 레이어 | 상 | 중 | 각 용어의 `sources`를 단순 목록에서 권위도·최신성·적용 범위가 보이는 검증 정보로 격상  
+용어 충돌 매트릭스 | 상 | 중 | 공급자/표준별 명칭 차이를 한눈에 비교하는 핵심 레퍼런스 뷰 추가  
+검색 랭킹 고도화 | 상 | 중 | 토큰 검색을 동의어·약어·vertical·오타·KO/EN 혼합 질의 중심으로 개선  
+Distinction QA 강화 | 상 | 중 | 혼동쌍 누락·비대칭·근거 부족을 검증하는 OKF 품질 게이트 추가  
+OKF 내보내기 패키지 | 상 | 하 | 단일 HTML 안에 JSON/CSV/RDF-lite 다운로드를 인라인 제공해 교환 가능성 확보  
+커버리지 갭 리포트 | 중 | 중 | vertical/subcategory별 밀도, 출처 부족, 관계 고립 노드를 빌드 산출물로 표시  
+양국어 용어 품질 필드 | 중 | 중 | 직역/업계관용/표준역 여부를 구분해 KO/EN 신뢰도 향상  
+그래프 탐색 필터 | 중 | 중 | D3 그래프에 relation type, source authority, vertical, confusion density 필터 추가  
+접근성 패스 | 중 | 하 | 그래프·클래스룸 SVG에 키보드 탐색, ARIA label, reduced motion 대응 추가  
+단일파일 크기 예산 | 중 | 중 | 폰트·D3·아이콘·데이터 크기 예산을 빌드에서 실패 조건으로 관리  
+콘텐츠 변경 워크플로우 | 중 | 중 | 신규 용어 PR 템플릿, 출처 체크리스트, 자동 diff 리포트 추가  
+데이터 모델 버전 확장 | 중 | 중 | OKF v0.2 후보로 `aliasesByProvider`, `jurisdiction`, `validity`, `evidence` 추가  
+
+[상세]  
+출처 신뢰도 레이어:  
+`okf/<vertical>/<subcategory>/<id>.md` frontmatter의 `sources`에 `type`, `publisher`, `date`, `scope`, `authority`를 추가하고, `build/build.mjs`에서 표제어 페이지에 “근거 수준”을 표시한다. 레퍼런스 제품은 정의 자체보다 “왜 이 정의를 믿어도 되는가”가 차별점이므로, 출처 없는 정의·오래된 출처·벤더 문서 의존을 빌드 경고로 만든다.
+
+용어 충돌 매트릭스:  
+현재 핵심 가치인 교차 동의어 매핑을 별도 뷰로 끌어올린다. `aliasesByProvider` 또는 기존 관계 데이터를 사용해 Amadeus/Sabre/NDC/OTA/호텔 PMS/결제 표준 등 공급자 축과 표제어 축의 표를 만들고, 같은 개념·부분 겹침·다른 개념을 색/기호로 구분한다.
+
+검색 랭킹 고도화:  
+단순 토큰 검색 위에 `title`, `aliases`, `provider names`, `distinctions`, `sources`별 가중치를 둔다. 예: “PNR vs booking reference”, “rate plan”, “fare basis” 같은 혼합 질의에서 정확 표제어, 혼동쌍, 약어를 우선 노출하도록 빌드 시 작은 인라인 검색 인덱스를 생성한다.
+
+Distinction QA 강화:  
+`distinctions`가 있는 용어는 상대 용어에도 역방향 구분이 있는지, 같은 출처 또는 충분한 설명이 있는지 `okf-validate.mjs`에 검증을 추가한다. 혼동쌍은 제품의 핵심 가치이므로 “A vs B는 있는데 B vs A가 없음”, “설명은 있으나 출처 없음”을 실패 또는 경고로 관리한다.
+
+OKF 내보내기 패키지:  
+단일 `index.html` 안에 빌드된 OKF bundle, normalized JSON, CSV glossary, relation edge list를 압축 문자열로 인라인하고 다운로드 버튼을 제공한다. 오프라인 제약은 유지하면서, 다른 팀이 사전·그래프·교육자료·LLM RAG에 재사용할 수 있는 교환 포맷이 된다.
+
+[한 줄 총평]  
+다음에 딱 하나만 한다면 **출처 신뢰도 레이어**를 하겠다. 이 제품이 “멋진 사전”이 아니라 “업무에 인용 가능한 레퍼런스”로 인정받는 기준이기 때문이다.
+tokens used
+5,557
+[우선순위 표]  
+출처 신뢰도 레이어 | 상 | 중 | 각 용어의 `sources`를 단순 목록에서 권위도·최신성·적용 범위가 보이는 검증 정보로 격상  
+용어 충돌 매트릭스 | 상 | 중 | 공급자/표준별 명칭 차이를 한눈에 비교하는 핵심 레퍼런스 뷰 추가  
+검색 랭킹 고도화 | 상 | 중 | 토큰 검색을 동의어·약어·vertical·오타·KO/EN 혼합 질의 중심으로 개선  
+Distinction QA 강화 | 상 | 중 | 혼동쌍 누락·비대칭·근거 부족을 검증하는 OKF 품질 게이트 추가  
+OKF 내보내기 패키지 | 상 | 하 | 단일 HTML 안에 JSON/CSV/RDF-lite 다운로드를 인라인 제공해 교환 가능성 확보  
+커버리지 갭 리포트 | 중 | 중 | vertical/subcategory별 밀도, 출처 부족, 관계 고립 노드를 빌드 산출물로 표시  
+양국어 용어 품질 필드 | 중 | 중 | 직역/업계관용/표준역 여부를 구분해 KO/EN 신뢰도 향상  
+그래프 탐색 필터 | 중 | 중 | D3 그래프에 relation type, source authority, vertical, confusion density 필터 추가  
+접근성 패스 | 중 | 하 | 그래프·클래스룸 SVG에 키보드 탐색, ARIA label, reduced motion 대응 추가  
+단일파일 크기 예산 | 중 | 중 | 폰트·D3·아이콘·데이터 크기 예산을 빌드에서 실패 조건으로 관리  
+콘텐츠 변경 워크플로우 | 중 | 중 | 신규 용어 PR 템플릿, 출처 체크리스트, 자동 diff 리포트 추가  
+데이터 모델 버전 확장 | 중 | 중 | OKF v0.2 후보로 `aliasesByProvider`, `jurisdiction`, `validity`, `evidence` 추가  
+
+[상세]  
+출처 신뢰도 레이어:  
+`okf/<vertical>/<subcategory>/<id>.md` frontmatter의 `sources`에 `type`, `publisher`, `date`, `scope`, `authority`를 추가하고, `build/build.mjs`에서 표제어 페이지에 “근거 수준”을 표시한다. 레퍼런스 제품은 정의 자체보다 “왜 이 정의를 믿어도 되는가”가 차별점이므로, 출처 없는 정의·오래된 출처·벤더 문서 의존을 빌드 경고로 만든다.
+
+용어 충돌 매트릭스:  
+현재 핵심 가치인 교차 동의어 매핑을 별도 뷰로 끌어올린다. `aliasesByProvider` 또는 기존 관계 데이터를 사용해 Amadeus/Sabre/NDC/OTA/호텔 PMS/결제 표준 등 공급자 축과 표제어 축의 표를 만들고, 같은 개념·부분 겹침·다른 개념을 색/기호로 구분한다.
+
+검색 랭킹 고도화:  
+단순 토큰 검색 위에 `title`, `aliases`, `provider names`, `distinctions`, `sources`별 가중치를 둔다. 예: “PNR vs booking reference”, “rate plan”, “fare basis” 같은 혼합 질의에서 정확 표제어, 혼동쌍, 약어를 우선 노출하도록 빌드 시 작은 인라인 검색 인덱스를 생성한다.
+
+Distinction QA 강화:  
+`distinctions`가 있는 용어는 상대 용어에도 역방향 구분이 있는지, 같은 출처 또는 충분한 설명이 있는지 `okf-validate.mjs`에 검증을 추가한다. 혼동쌍은 제품의 핵심 가치이므로 “A vs B는 있는데 B vs A가 없음”, “설명은 있으나 출처 없음”을 실패 또는 경고로 관리한다.
+
+OKF 내보내기 패키지:  
+단일 `index.html` 안에 빌드된 OKF bundle, normalized JSON, CSV glossary, relation edge list를 압축 문자열로 인라인하고 다운로드 버튼을 제공한다. 오프라인 제약은 유지하면서, 다른 팀이 사전·그래프·교육자료·LLM RAG에 재사용할 수 있는 교환 포맷이 된다.
+
+[한 줄 총평]  
+다음에 딱 하나만 한다면 **출처 신뢰도 레이어**를 하겠다. 이 제품이 “멋진 사전”이 아니라 “업무에 인용 가능한 레퍼런스”로 인정받는 기준이기 때문이다.

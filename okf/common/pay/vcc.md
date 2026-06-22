@@ -35,6 +35,15 @@ distinctions:
   - targetTerm: IATA EasyPay
     explanation: 'IATA EasyPay is an IATA e-wallet exclusive to BSP ticket issuance, whereas a VCC is a general card-rail instrument used for many supplier payments.'
     explanation_ko: 'IATA EasyPay는 BSP 항공권 발권 전용 IATA 전자지갑인 반면, VCC는 다양한 공급업체 결제에 사용되는 범용 카드 결제망 수단이다.'
+  - targetTerm: Form of Payment
+    explanation: 'A VCC is one specific instrument that can be used as a form of payment, whereas Form of Payment is the general ticketing element that records whichever instrument or method was used.'
+    explanation_ko: 'VCC는 지불수단으로 사용될 수 있는 하나의 특정 결제 수단인 반면, Form of Payment은 어떤 수단·방법이 사용되었든 그것을 기록하는 일반적인 발권 요소다.'
+  - targetTerm: Tokenization
+    explanation: 'A VCC is a real, spendable virtual card number generated for a specific payment (often B2B supplier settlement), while a token is a non-spendable surrogate that maps back to an existing underlying card PAN.'
+    explanation_ko: 'VCC는 특정 결제(흔히 B2B 공급사 정산)를 위해 생성된 실제 사용 가능한 가상 카드 번호인 반면, 토큰은 기존 기초 카드 PAN으로 다시 매핑되는 사용 불가한 대체값이다.'
+  - targetTerm: UATP
+    explanation: 'UATP is a closed-loop, airline-owned payment network with its own card accounts, whereas a VCC is a single-use or restricted number running over the open Visa/Mastercard card rails.'
+    explanation_ko: 'UATP는 자체 카드 계정을 가진 폐쇄형 항공사 소유 결제망인 반면, VCC는 개방형 Visa/Mastercard 카드 결제망 위에서 동작하는 일회용 또는 제한된 번호다.'
 sources:
   - name: 'Virtual Credit Cards in Travel: How to Secure B2B Payments'
     org: AltexSoft
@@ -68,6 +77,9 @@ In travel, an agency, OTA, or bedbank funds a VCC and supplies its number to a s
 
 # Distinctions
 - **VCC** vs [IATA EasyPay](/common/pay/iata-easypay.md) — IATA EasyPay is an IATA e-wallet exclusive to BSP ticket issuance, whereas a VCC is a general card-rail instrument used for many supplier payments.
+- **VCC** vs [Form of Payment](/common/pay/form-of-payment.md) — A VCC is one specific instrument that can be used as a form of payment, whereas Form of Payment is the general ticketing element that records whichever instrument or method was used.
+- **VCC** vs [Tokenization](/common/pay/tokenization.md) — A VCC is a real, spendable virtual card number generated for a specific payment (often B2B supplier settlement), while a token is a non-spendable surrogate that maps back to an existing underlying card PAN.
+- **VCC** vs [UATP](/common/pay/uatp.md) — UATP is a closed-loop, airline-owned payment network with its own card accounts, whereas a VCC is a single-use or restricted number running over the open Visa/Mastercard card rails.
 
 # Citations
 [1] [AltexSoft — Virtual Credit Cards in Travel: How to Secure B2B Payments](https://www.altexsoft.com/blog/virtual-credit-cards-travel/)

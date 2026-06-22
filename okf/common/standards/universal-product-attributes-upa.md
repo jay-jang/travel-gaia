@@ -53,12 +53,12 @@ sources:
     name: ATPCO Acquires Rich Content Provider Routehappy
     version: ''
     section: ''
-    url: ''
+    url: 'https://atpco.net/single-press/airline-data-platform-atpco-acquires-rich-content-provider-routehappy/'
   - org: ATPCO / Routehappy
     name: Routehappy Universal Product Attributes (UPAs)
     version: ''
     section: ''
-    url: ''
+    url: 'https://atpco.net/routehappy/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="10" width="28" height="22" rx="3"/><circle cx="15" cy="18" r="3"/><path d="M7 28l8-7 6 5 5-4 9 8"/><path d="M30 38l4 3v-9"/><path d="M40 38l-4 3"/></svg>
 ---
 
@@ -91,5 +91,5 @@ UPA는 항공사가 작성하고 ATPCO의 Routehappy 플랫폼이 정규화한 �
 - **Universal Product Attributes (UPA)** vs [ATPCO](/air/air-shop/atpco.md) — ATPCO is the standards/data company (and Routehappy's owner); UPA is one specific content standard it distributes, focused on product experience attributes.
 
 # Citations
-[1] ATPCO — ATPCO Acquires Rich Content Provider Routehappy
-[2] ATPCO / Routehappy — Routehappy Universal Product Attributes (UPAs)
+[1] [ATPCO — ATPCO Acquires Rich Content Provider Routehappy](https://atpco.net/single-press/airline-data-platform-atpco-acquires-rich-content-provider-routehappy/)
+[2] [ATPCO / Routehappy — Routehappy Universal Product Attributes (UPAs)](https://atpco.net/routehappy/)

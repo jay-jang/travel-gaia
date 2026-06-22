@@ -25,9 +25,9 @@ aliases:
 relationships:
   - type: child
     targetTerm: ReFuelEU Aviation
-  - type: related
+  - type: contrasts
     targetTerm: IATA CO2 Connect
-  - type: related
+  - type: contrasts
     targetTerm: ICAO Carbon Emissions Calculator (ICEC)
   - type: related
     targetTerm: Sustainable Aviation Fuel (SAF)
@@ -38,17 +38,20 @@ distinctions:
   - targetTerm: ReFuelEU Aviation
     explanation: ReFuelEU Aviation is the parent regulation mandating SAF blending; the FEL is the specific labelling scheme created under its Article 14.
     explanation_ko: 'ReFuelEU Aviation은 SAF 혼합을 의무화하는 모(母) 규정이고, FEL은 그 제14조에 따라 만들어진 구체적 라벨링 제도이다.'
+  - targetTerm: ICAO Carbon Emissions Calculator (ICEC)
+    explanation: ICEC is a methodology to estimate emissions; the FEL is an EU labelling scheme that surfaces verified per-flight emissions to passengers at booking.
+    explanation_ko: 'ICEC는 배출량을 추정하는 방법론이고, FEL은 검증된 항공편별 배출량을 예약 시점에 승객에게 표시하는 EU 라벨링 제도이다.'
 sources:
   - org: EASA
     name: EU Flight Emissions Label (FEL)
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.easa.europa.eu/en/domains/environment/eu-flight-emissions-label-fel'
   - org: European Commission
     name: The EU Flight Emissions Label takes a flight forward with first airlines committing to the scheme
     version: ''
     section: ''
-    url: ''
+    url: 'https://transport.ec.europa.eu/news-events/news/eu-flight-emissions-label-takes-flight-forward-first-airlines-committing-scheme-2025-07-11_en'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12h22l12 12-12 12H6z"/><circle cx="12" cy="18" r="1.5" fill="currentColor"/><path d="M30 22l-6 4 6 4" transform="translate(-8 -2)"/><path d="M16 24h12M16 24l5-3M16 24l5 3"/></svg>
 ---
 
@@ -64,14 +67,15 @@ Airlines volunteer to participate, reporting operational data (fuel burn, passen
 
 # Related
 - [ReFuelEU Aviation](/common/sustainability/refueleu-aviation.md) — child
-- [IATA CO2 Connect](/common/sustainability/iata-co2-connect.md) — related
-- [ICAO Carbon Emissions Calculator (ICEC)](/common/sustainability/icao-carbon-emissions-calculator-icec.md) — related
+- [IATA CO2 Connect](/common/sustainability/iata-co2-connect.md) — contrasts
+- [ICAO Carbon Emissions Calculator (ICEC)](/common/sustainability/icao-carbon-emissions-calculator-icec.md) — contrasts
 - [Sustainable Aviation Fuel (SAF)](/common/sustainability/sustainable-aviation-fuel-saf.md) — related
 
 # Distinctions
 - **Flight Emissions Label (FEL)** vs [IATA CO2 Connect](/common/sustainability/iata-co2-connect.md) — The FEL is an EU regulatory labelling/display scheme producing an official verified label per flight; IATA CO2 Connect is an industry calculator/methodology that estimates emissions but is not itself a regulatory label.
 - **Flight Emissions Label (FEL)** vs [ReFuelEU Aviation](/common/sustainability/refueleu-aviation.md) — ReFuelEU Aviation is the parent regulation mandating SAF blending; the FEL is the specific labelling scheme created under its Article 14.
+- **Flight Emissions Label (FEL)** vs [ICAO Carbon Emissions Calculator (ICEC)](/common/sustainability/icao-carbon-emissions-calculator-icec.md) — ICEC is a methodology to estimate emissions; the FEL is an EU labelling scheme that surfaces verified per-flight emissions to passengers at booking.
 
 # Citations
-[1] EASA — EU Flight Emissions Label (FEL)
-[2] European Commission — The EU Flight Emissions Label takes a flight forward with first airlines committing to the scheme
+[1] [EASA — EU Flight Emissions Label (FEL)](https://www.easa.europa.eu/en/domains/environment/eu-flight-emissions-label-fel)
+[2] [European Commission — The EU Flight Emissions Label takes a flight forward with first airlines committing to the scheme](https://transport.ec.europa.eu/news-events/news/eu-flight-emissions-label-takes-flight-forward-first-airlines-committing-scheme-2025-07-11_en)

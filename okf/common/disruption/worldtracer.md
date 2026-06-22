@@ -41,12 +41,12 @@ sources:
     org: SITA
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.sita.aero/solutions/sita-at-airports/sita-baggage-management/worldtracer/'
   - name: WorldTracer Baggage Self-Service
     org: SITA
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.sita.aero/solutions/sita-at-airports/sita-baggage-management/worldtracer/sita-worldtracer-baggage-self-service/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="16"/><ellipse cx="24" cy="24" rx="7" ry="16"/><path d="M8 24h32M11 15h26M11 33h26"/><circle cx="33" cy="31" r="5"/><path d="M37 35l4 4"/></svg>
 ---
 
@@ -75,5 +75,5 @@ Launched in 1991, WorldTracer maintains a centralized shared database in which a
 - **WorldTracer** vs [Property Irregularity Report](/common/disruption/property-irregularity-report.md) — A PIR is the document/reference reporting that a bag is mishandled; WorldTracer is the SITA platform that stores that file and runs the global search-and-match to recover the bag.
 
 # Citations
-[1] SITA — WorldTracer — global baggage tracing and reconciliation
-[2] SITA — WorldTracer Baggage Self-Service
+[1] [SITA — WorldTracer — global baggage tracing and reconciliation](https://www.sita.aero/solutions/sita-at-airports/sita-baggage-management/worldtracer/)
+[2] [SITA — WorldTracer Baggage Self-Service](https://www.sita.aero/solutions/sita-at-airports/sita-baggage-management/worldtracer/sita-worldtracer-baggage-self-service/)

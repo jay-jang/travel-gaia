@@ -24,11 +24,11 @@ aliases:
   - VDB
   - Voluntary Bumping
 relationships:
-  - type: related
+  - type: contrasts
     targetTerm: Involuntary Denied Boarding
   - type: related
     targetTerm: Denied Boarding Compensation
-  - type: related
+  - type: broader
     targetTerm: Overbooking
 distinctions:
   - targetTerm: Involuntary Denied Boarding
@@ -39,12 +39,12 @@ sources:
     org: US Department of Transportation
     version: ''
     section: 250.2b
-    url: ''
+    url: 'https://www.ecfr.gov/current/title-14/chapter-II/subchapter-A/part-250/section-250.2b'
   - name: Bumping & Oversales — Aviation Consumer Protection
     org: US Department of Transportation
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.transportation.gov/individuals/aviation-consumer-protection/bumping-oversales'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="14" r="5"/><path d="M10 38v-6a8 8 0 0 1 16 0v6"/><path d="M28 16l4 4 8-9"/><path d="M30 30h12M30 34h8"/></svg>
 ---
 
@@ -59,13 +59,13 @@ icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none
 **Aliases:** `Voluntary Denied Boarding`, `Volunteering`, `VDB`, `Voluntary Bumping`
 
 # Related
-- [Involuntary Denied Boarding](/common/disruption/involuntary-denied-boarding.md) — related
+- [Involuntary Denied Boarding](/common/disruption/involuntary-denied-boarding.md) — contrasts
 - [Denied Boarding Compensation](/common/disruption/denied-boarding-compensation.md) — related
-- [Overbooking](/air/air-shop/overbooking.md) — related
+- [Overbooking](/air/air-shop/overbooking.md) — broader
 
 # Distinctions
 - **Voluntary Denied Boarding** vs [Involuntary Denied Boarding](/common/disruption/involuntary-denied-boarding.md) — VDB is a consensual, negotiated arrangement with no regulated compensation floor; IDB is forced and carries statutory minimum compensation under 14 CFR 250.5.
 
 # Citations
-[1] US Department of Transportation — 14 CFR 250.2b — Carriers to request volunteers for denied boarding — 250.2b
-[2] US Department of Transportation — Bumping & Oversales — Aviation Consumer Protection
+[1] [US Department of Transportation — 14 CFR 250.2b — Carriers to request volunteers for denied boarding — 250.2b](https://www.ecfr.gov/current/title-14/chapter-II/subchapter-A/part-250/section-250.2b)
+[2] [US Department of Transportation — Bumping & Oversales — Aviation Consumer Protection](https://www.transportation.gov/individuals/aviation-consumer-protection/bumping-oversales)

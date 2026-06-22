@@ -49,12 +49,12 @@ sources:
     name: Type B Messaging Whitepaper
     version: v2.1
     section: ''
-    url: ''
+    url: 'https://www.iata.org/contentassets/badbfd2d36a74f12b021c9dd899ecbad/type_b_messaging_whitepaper_v2dot1_14_june_2024.pdf'
   - org: Wikipedia
     name: Airline teletype system
     version: ''
     section: ''
-    url: ''
+    url: 'https://en.wikipedia.org/wiki/Airline_teletype_system'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="20" width="36" height="18" rx="2"/><path d="M12 20v-6a4 4 0 0 1 4-4h16a4 4 0 0 1 4 4v6"/><path d="M12 27h.01M17 27h.01M22 27h.01M27 27h.01M32 27h.01M36 27h.01"/><path d="M14 32h20"/></svg>
 ---
 
@@ -85,5 +85,5 @@ Type B는 보안성, 신뢰성, 높은 가용성, 추적이 가능한 보장 전
 - **Type B Messaging** vs [REST API](/common/standards/rest-api.md) — Type B is constrained legacy TTY messaging over private aviation networks; a REST API is modern HTTP/JSON web-service integration that is gradually replacing such legacy transports.
 
 # Citations
-[1] IATA — Type B Messaging Whitepaper — v2.1
-[2] Wikipedia — Airline teletype system
+[1] [IATA — Type B Messaging Whitepaper — v2.1](https://www.iata.org/contentassets/badbfd2d36a74f12b021c9dd899ecbad/type_b_messaging_whitepaper_v2dot1_14_june_2024.pdf)
+[2] [Wikipedia — Airline teletype system](https://en.wikipedia.org/wiki/Airline_teletype_system)

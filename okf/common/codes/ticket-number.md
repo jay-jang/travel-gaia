@@ -44,12 +44,18 @@ distinctions:
   - targetTerm: Airline Accounting Code
     explanation: The accounting code is only the first 3 digits identifying the airline; the ticket number is the full 13-digit document number that contains it.
     explanation_ko: '정산 코드는 항공사를 식별하는 앞 3자리에 불과하고, 항공권 번호는 그것을 포함하는 13자리 전체 서류 번호이다.'
+  - targetTerm: Air Waybill Number
+    explanation: 'A ticket number identifies a passenger document and embeds the 3-digit airline accounting (numeric) code; an AWB number identifies a cargo consignment and embeds the 3-digit IATA airline prefix, with a modulo-7 check digit on the serial.'
+    explanation_ko: 'Ticket Number는 여객 발권 문서를 식별하며 3자리 항공사 회계(숫자) 코드를 포함하는 반면, AWB 번호는 화물 consignment를 식별하며 3자리 IATA 항공사 prefix를 포함하고 일련번호에 modulo-7 check digit을 둔다.'
+  - targetTerm: License Plate Number
+    explanation: A ticket number identifies the passenger's transportation document; the LPN identifies the physical bag and is recorded against the passenger's record but is not the ticket.
+    explanation_ko: '항공권 번호(ticket number)는 승객의 운송 문서를 식별하지만, LPN은 물리적 수하물을 식별하며 승객 기록에 연결되어 기록될 뿐 항공권 자체는 아니다.'
 sources:
   - org: IATA
     name: Passenger Services Conference Resolutions Manual (PSCRM) — electronic ticket / document numbering
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
   - org: AltexSoft
     name: IATA Numbers and Codes Explained
     version: ''
@@ -80,7 +86,9 @@ Each flight coupon of an e-ticket is addressed by the document number plus a cou
 # Distinctions
 - **Ticket Number** vs [PNR](/air/air-ops/pnr.md) — A PNR locator references the whole reservation (which may hold several passengers and tickets); a ticket number references a single passenger's transport document of 13 digits.
 - **Ticket Number** vs [Airline Accounting Code](/common/codes/airline-accounting-code.md) — The accounting code is only the first 3 digits identifying the airline; the ticket number is the full 13-digit document number that contains it.
+- **Ticket Number** vs [Air Waybill Number](/common/codes/air-waybill-number.md) — A ticket number identifies a passenger document and embeds the 3-digit airline accounting (numeric) code; an AWB number identifies a cargo consignment and embeds the 3-digit IATA airline prefix, with a modulo-7 check digit on the serial.
+- **Ticket Number** vs [License Plate Number](/common/codes/license-plate-number.md) — A ticket number identifies the passenger's transportation document; the LPN identifies the physical bag and is recorded against the passenger's record but is not the ticket.
 
 # Citations
-[1] IATA — Passenger Services Conference Resolutions Manual (PSCRM) — electronic ticket / document numbering
+[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM) — electronic ticket / document numbering](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
 [2] [AltexSoft — IATA Numbers and Codes Explained](https://www.altexsoft.com/blog/iata-numbers-codes/)

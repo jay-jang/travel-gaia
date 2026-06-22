@@ -24,7 +24,7 @@ aliases:
   - Ticketing Prefix
   - Airline Code Number
 relationships:
-  - type: related
+  - type: contrasts
     targetTerm: Airline Designator
   - type: related
     targetTerm: E-ticket
@@ -38,12 +38,21 @@ distinctions:
   - targetTerm: Airline Designator
     explanation: 'The accounting code is a 3-digit numeric airline identifier used in ticket/document numbers and settlement; the airline designator is the 2-character alphanumeric code (e.g., AA) used in reservations and flight numbers.'
     explanation_ko: '정산 코드는 항공권/서류 번호와 정산에 쓰이는 3자리 숫자 항공사 식별자이고, 항공사 지정 코드는 예약과 편명에 쓰이는 2자리 영숫자 코드(예: AA)이다.'
+  - targetTerm: Air Waybill Number
+    explanation: 'The 3-digit airline accounting code is the numeric carrier code used in passenger ticket numbers; the AWB 3-digit prefix is the analogous numeric carrier identifier used in cargo, and the two numbering schemes are administered separately though both by IATA.'
+    explanation_ko: '3자리 항공사 회계 코드는 여객 항공권 번호에 쓰이는 숫자 항공사 코드이고, AWB 3자리 prefix는 화물에서 쓰이는 유사한 숫자 항공사 식별자다. 두 체계 모두 IATA가 관리하지만 별개로 운영된다.'
+  - targetTerm: Flight Number
+    explanation: A flight number labels a flight on a route/date; the accounting code is the 3-digit airline identifier on the ticket number and is unrelated to any particular flight.
+    explanation_ko: '편명은 노선·날짜상의 항공편을 가리키고, 정산 코드는 항공권 번호상의 3자리 항공사 식별자로 특정 항공편과 무관하다.'
+  - targetTerm: Ticket Number
+    explanation: The accounting code is only the first 3 digits identifying the airline; the ticket number is the full 13-digit document number that contains it.
+    explanation_ko: '정산 코드는 항공사를 식별하는 앞 3자리에 불과하고, 항공권 번호는 그것을 포함하는 13자리 전체 서류 번호이다.'
 sources:
   - org: IATA
     name: Airline Coding Directory
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/store/publications/manuals-standards-and-regulations/airline-coding-directory-acd__acd/'
   - org: AltexSoft
     name: IATA Numbers and Codes Explained
     version: ''
@@ -63,7 +72,7 @@ The accounting code applies to passenger operations; a parallel three-digit pref
 **Aliases:** `Airline Numeric Code`, `Three-Digit Airline Code`, `Airline Prefix Code`, `Ticketing Prefix`, `Airline Code Number`
 
 # Related
-- [Airline Designator](/common/codes/airline-designator.md) — related
+- [Airline Designator](/common/codes/airline-designator.md) — contrasts
 - [E-ticket](/air/air-ticket/e-ticket.md) — related
 - [BSP](/common/pay/bsp.md) — related
 - [ARC](/common/pay/arc.md) — related
@@ -71,7 +80,10 @@ The accounting code applies to passenger operations; a parallel three-digit pref
 
 # Distinctions
 - **Airline Accounting Code** vs [Airline Designator](/common/codes/airline-designator.md) — The accounting code is a 3-digit numeric airline identifier used in ticket/document numbers and settlement; the airline designator is the 2-character alphanumeric code (e.g., AA) used in reservations and flight numbers.
+- **Airline Accounting Code** vs [Air Waybill Number](/common/codes/air-waybill-number.md) — The 3-digit airline accounting code is the numeric carrier code used in passenger ticket numbers; the AWB 3-digit prefix is the analogous numeric carrier identifier used in cargo, and the two numbering schemes are administered separately though both by IATA.
+- **Airline Accounting Code** vs [Flight Number](/common/codes/flight-number.md) — A flight number labels a flight on a route/date; the accounting code is the 3-digit airline identifier on the ticket number and is unrelated to any particular flight.
+- **Airline Accounting Code** vs [Ticket Number](/common/codes/ticket-number.md) — The accounting code is only the first 3 digits identifying the airline; the ticket number is the full 13-digit document number that contains it.
 
 # Citations
-[1] IATA — Airline Coding Directory
+[1] [IATA — Airline Coding Directory](https://www.iata.org/en/store/publications/manuals-standards-and-regulations/airline-coding-directory-acd__acd/)
 [2] [AltexSoft — IATA Numbers and Codes Explained](https://www.altexsoft.com/blog/iata-numbers-codes/)

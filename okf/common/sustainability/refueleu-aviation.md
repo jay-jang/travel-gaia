@@ -22,7 +22,7 @@ aliases:
   - Regulation (EU) 2023/2405
   - ReFuelEU
 relationships:
-  - type: related
+  - type: broader
     targetTerm: Sustainable Aviation Fuel (SAF)
   - type: related
     targetTerm: Flight Emissions Label (FEL)
@@ -35,17 +35,20 @@ distinctions:
   - targetTerm: EU Emissions Trading System (EU ETS)
     explanation: ReFuelEU Aviation is a supply-side fuel mandate forcing SAF into the fuel mix; the EU ETS is a demand-side carbon-pricing scheme requiring allowances for emissions — complementary EU instruments.
     explanation_ko: 'ReFuelEU Aviation은 SAF를 연료 구성에 강제하는 공급측 연료 의무이고, EU ETS는 배출에 대해 배출권을 요구하는 수요측 탄소가격제로, 서로 보완적인 EU 수단이다.'
+  - targetTerm: Flight Emissions Label (FEL)
+    explanation: ReFuelEU Aviation is the parent regulation mandating SAF blending; the FEL is the specific labelling scheme created under its Article 14.
+    explanation_ko: 'ReFuelEU Aviation은 SAF 혼합을 의무화하는 모(母) 규정이고, FEL은 그 제14조에 따라 만들어진 구체적 라벨링 제도이다.'
 sources:
   - org: European Commission
     name: ReFuelEU Aviation press release IP/23/2389
     version: ''
     section: ''
-    url: ''
+    url: 'https://ec.europa.eu/commission/presscorner/detail/en/ip_23_2389'
   - org: EUR-Lex / EASA
     name: ReFuelEU Aviation (Regulation (EU) 2023/2405)
     version: ''
     section: ''
-    url: ''
+    url: 'https://eur-lex.europa.eu/eli/reg/2023/2405/oj/eng'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="15" r="2" fill="currentColor"/><circle cx="31" cy="17" r="2" fill="currentColor"/><circle cx="17" cy="17" r="2" fill="currentColor"/><path d="M18 8h8"/><path d="M14 26h20l-2 14a2 2 0 0 1-2 2H18a2 2 0 0 1-2-2z"/><path d="M14 26l3-6h14l3 6"/><path d="M21 33c2 2 2 3 0 5M27 33c2 2 2 3 0 5"/></svg>
 ---
 
@@ -60,14 +63,15 @@ The regulation entered into force in 2023 and applies from January 2025. Its ble
 **Aliases:** `ReFuelEU Aviation`, `Regulation (EU) 2023/2405`, `ReFuelEU`
 
 # Related
-- [Sustainable Aviation Fuel (SAF)](/common/sustainability/sustainable-aviation-fuel-saf.md) — related
+- [Sustainable Aviation Fuel (SAF)](/common/sustainability/sustainable-aviation-fuel-saf.md) — broader
 - [Flight Emissions Label (FEL)](/common/sustainability/flight-emissions-label-fel.md) — related
 - [EU Emissions Trading System (EU ETS)](/common/sustainability/eu-emissions-trading-system-eu-ets.md) — related
 
 # Distinctions
 - **ReFuelEU Aviation** vs [Sustainable Aviation Fuel (SAF)](/common/sustainability/sustainable-aviation-fuel-saf.md) — SAF is the physical fuel; ReFuelEU Aviation is the regulation that legally mandates how much SAF must be blended at EU airports.
 - **ReFuelEU Aviation** vs [EU Emissions Trading System (EU ETS)](/common/sustainability/eu-emissions-trading-system-eu-ets.md) — ReFuelEU Aviation is a supply-side fuel mandate forcing SAF into the fuel mix; the EU ETS is a demand-side carbon-pricing scheme requiring allowances for emissions — complementary EU instruments.
+- **ReFuelEU Aviation** vs [Flight Emissions Label (FEL)](/common/sustainability/flight-emissions-label-fel.md) — ReFuelEU Aviation is the parent regulation mandating SAF blending; the FEL is the specific labelling scheme created under its Article 14.
 
 # Citations
-[1] European Commission — ReFuelEU Aviation press release IP/23/2389
-[2] EUR-Lex / EASA — ReFuelEU Aviation (Regulation (EU) 2023/2405)
+[1] [European Commission — ReFuelEU Aviation press release IP/23/2389](https://ec.europa.eu/commission/presscorner/detail/en/ip_23_2389)
+[2] [EUR-Lex / EASA — ReFuelEU Aviation (Regulation (EU) 2023/2405)](https://eur-lex.europa.eu/eli/reg/2023/2405/oj/eng)

@@ -34,17 +34,20 @@ distinctions:
   - targetTerm: Rate Plan
     explanation: Length of Stay is a restriction/control that can gate a rate plan; the rate plan is the broader offer that the LOS rule conditions.
     explanation_ko: '숙박일수는 요금제를 제한할 수 있는 제약/통제이고, 요금제는 LOS 규칙이 조건을 거는 더 넓은 범위의 상품이다.'
+  - targetTerm: Minimum Length of Stay (MLOS)
+    explanation: Length of Stay is the general concept of how many nights a stay spans; MLOS is a specific restriction that enforces a minimum number of those nights as a booking condition for given dates.
+    explanation_ko: 'Length of Stay는 투숙이 몇 박인지를 가리키는 일반 개념이고, MLOS는 특정 날짜의 예약 조건으로 그 박수의 최소값을 강제하는 구체적 제약이다.'
 sources:
   - name: 'OpenTravel Specification (Hotel availability and restriction messages, length of stay)'
     org: OpenTravel Alliance
     version: ''
     section: ''
-    url: ''
+    url: 'https://opentravel.org/download-specs/'
   - name: HTNG ARI messaging specifications
     org: HTNG
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.ahla.com/htng-technical-specifications'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="10" width="34" height="30" rx="3"/><line x1="7" y1="18" x2="41" y2="18"/><line x1="15" y1="7" x2="15" y2="13"/><line x1="33" y1="7" x2="33" y2="13"/><path d="M15 25h2v9"/><path d="M33 29a4.5 4.5 0 1 1-5-5 5.5 5.5 0 0 0 5 5z"/></svg>
 ---
 
@@ -65,7 +68,8 @@ Revenue managers use LOS restrictions to shape demand: a MinLOS requires guests 
 
 # Distinctions
 - **Length of Stay** vs [Rate Plan](/lodging/hotel-rate/rate-plan.md) — Length of Stay is a restriction/control that can gate a rate plan; the rate plan is the broader offer that the LOS rule conditions.
+- **Length of Stay** vs [Minimum Length of Stay (MLOS)](/lodging/hotel-rate/minimum-length-of-stay-mlos.md) — Length of Stay is the general concept of how many nights a stay spans; MLOS is a specific restriction that enforces a minimum number of those nights as a booking condition for given dates.
 
 # Citations
-[1] OpenTravel Alliance — OpenTravel Specification (Hotel availability and restriction messages, length of stay)
-[2] HTNG — HTNG ARI messaging specifications
+[1] [OpenTravel Alliance — OpenTravel Specification (Hotel availability and restriction messages, length of stay)](https://opentravel.org/download-specs/)
+[2] [HTNG — HTNG ARI messaging specifications](https://www.ahla.com/htng-technical-specifications)

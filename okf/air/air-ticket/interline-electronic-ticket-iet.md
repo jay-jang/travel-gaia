@@ -23,7 +23,7 @@ aliases:
   - Interline Electronic Ticketing
   - IET
 relationships:
-  - type: related
+  - type: broader
     targetTerm: E-ticket
   - type: related
     targetTerm: Interline
@@ -70,7 +70,7 @@ Interline electronic ticketing requires that the validating/issuing carrier and 
 **Aliases:** `Interline E-ticket`, `Interline Electronic Ticketing`, `IET`
 
 # Related
-- [E-ticket](/air/air-ticket/e-ticket.md) — related
+- [E-ticket](/air/air-ticket/e-ticket.md) — broader
 - [Interline](/air/air-partner/interline.md) — related
 - [MITA](/air/air-partner/mita.md) — related
 - [Proration](/air/air-partner/proration.md) — related

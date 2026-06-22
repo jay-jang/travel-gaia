@@ -22,9 +22,9 @@ aliases:
 relationships:
   - type: child
     targetTerm: Rate Plan
-  - type: related
+  - type: contrasts
     targetTerm: BAR
-  - type: related
+  - type: contrasts
     targetTerm: Net Rate
   - type: related
     targetTerm: Allotment
@@ -36,6 +36,21 @@ distinctions:
   - targetTerm: BAR
     explanation: 'BAR (Best Available Rate) is a public, openly bookable rate that fluctuates with demand; a Corporate Rate is a confidential negotiated rate restricted to a contracted company and typically static for the contract term, often guaranteed under LRA.'
     explanation_ko: 'BAR(Best Available Rate)는 수요에 따라 변동하는 공개·자유예약 요금이지만, Corporate Rate는 계약 기업에 한정된 기밀 협정 요금으로 계약 기간 동안 통상 고정이며 흔히 LRA로 보장된다.'
+  - targetTerm: Last Room Availability
+    explanation: A corporate rate is the negotiated price itself; LRA/NLRA is an attribute attached to that rate specifying whether it must remain bookable down to the last available room.
+    explanation_ko: 'Corporate rate는 협상된 가격 그 자체이고, LRA/NLRA는 그 요금이 마지막 가용 객실까지 예약 가능해야 하는지를 규정하는 속성이다.'
+  - targetTerm: Non-Last Room Availability (NLRA)
+    explanation: A corporate rate is the negotiated price itself; NLRA is one of two availability conditions (alongside LRA) attached to that price specifying when it can be booked.
+    explanation_ko: 'Corporate Rate는 협정 가격 그 자체이고, NLRA는 그 가격이 언제 예약될 수 있는지를 규정하는 (LRA와 함께) 두 가용성 조건 중 하나다.'
+  - targetTerm: Rack Rate
+    explanation: A corporate rate is a confidential negotiated discount typically expressed relative to rack or BAR; rack rate is the public undiscounted reference it is discounted from.
+    explanation_ko: 'Corporate Rate는 보통 rack 또는 BAR 대비로 표현되는 기밀 협정 할인이고, Rack Rate는 그것이 할인되는 기준이 되는 공개 무할인 기준가다.'
+  - targetTerm: Rate Access Code (RAC)
+    explanation: A corporate rate is the negotiated price/product; the RAC is the access code an agency keys in to retrieve and sell that corporate rate in the GDS.
+    explanation_ko: 'Corporate rate는 협상된 가격/상품이고, RAC는 여행사가 GDS에서 그 corporate rate를 조회·판매하기 위해 입력하는 접근 코드다.'
+  - targetTerm: Rate Qualifier
+    explanation: A corporate rate is the negotiated price/program itself; the corporate-discount qualifier (CD) is merely the code entered into the GDS to make that corporate rate return in availability.
+    explanation_ko: 'Corporate rate는 협상된 가격·프로그램 그 자체이고, 법인 할인 한정자(CD)는 그 corporate rate가 조회에 나오도록 GDS에 입력하는 코드일 뿐이다.'
 sources:
   - org: American Express Global Business Travel
     name: Hotel Lingo 101 (corporate / LRA)
@@ -62,14 +77,19 @@ Corporate Rate는 보통 연례 RFP 절차에서 설정되며, 계약 기업의 
 
 # Related
 - [Rate Plan](/lodging/hotel-rate/rate-plan.md) — child
-- [BAR](/lodging/hotel-rate/bar.md) — related
-- [Net Rate](/lodging/hotel-dist/net-rate.md) — related
+- [BAR](/lodging/hotel-rate/bar.md) — contrasts
+- [Net Rate](/lodging/hotel-dist/net-rate.md) — contrasts
 - [Allotment](/lodging/hotel-rate/allotment.md) — related
 - [GDS](/common/standards/gds.md) — related
 - [Rate Parity](/lodging/hotel-rate/rate-parity.md) — related
 
 # Distinctions
 - **Corporate Rate** vs [BAR](/lodging/hotel-rate/bar.md) — BAR (Best Available Rate) is a public, openly bookable rate that fluctuates with demand; a Corporate Rate is a confidential negotiated rate restricted to a contracted company and typically static for the contract term, often guaranteed under LRA.
+- **Corporate Rate** vs [Last Room Availability](/lodging/hotel-dist/last-room-availability.md) — A corporate rate is the negotiated price itself; LRA/NLRA is an attribute attached to that rate specifying whether it must remain bookable down to the last available room.
+- **Corporate Rate** vs [Non-Last Room Availability (NLRA)](/lodging/hotel-rate/non-last-room-availability-nlra.md) — A corporate rate is the negotiated price itself; NLRA is one of two availability conditions (alongside LRA) attached to that price specifying when it can be booked.
+- **Corporate Rate** vs [Rack Rate](/lodging/hotel-rate/rack-rate.md) — A corporate rate is a confidential negotiated discount typically expressed relative to rack or BAR; rack rate is the public undiscounted reference it is discounted from.
+- **Corporate Rate** vs [Rate Access Code (RAC)](/lodging/hotel-dist/rate-access-code.md) — A corporate rate is the negotiated price/product; the RAC is the access code an agency keys in to retrieve and sell that corporate rate in the GDS.
+- **Corporate Rate** vs [Rate Qualifier](/ground/car/rate-qualifier.md) — A corporate rate is the negotiated price/program itself; the corporate-discount qualifier (CD) is merely the code entered into the GDS to make that corporate rate return in availability.
 
 # Citations
 [1] [American Express Global Business Travel — Hotel Lingo 101 (corporate / LRA)](https://www.amexglobalbusinesstravel.com/the-atlas/hotel-lingo-101/)

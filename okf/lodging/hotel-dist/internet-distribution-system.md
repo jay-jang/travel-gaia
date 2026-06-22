@@ -28,7 +28,7 @@ providerTerms:
     context_ko: 'Xotels 용어집은 IDS를 호텔 예약을 제공하는 인터넷 포털로 정의하고, 인터넷 및 기타 비-GDS 전자 유통 채널인 ADS의 동의어로 사용한다.'
     relationship: same
 relationships:
-  - type: related
+  - type: contrasts
     targetTerm: GDS
   - type: narrower
     targetTerm: OTA (Online Travel Agency)
@@ -84,7 +84,7 @@ IDS는 전통적 GDS 외부에서 호텔 인벤토리를 일반 대중에게 분
 | Xotels | `IDS — Internet Distribution System` | same | Xotels' glossary defines IDS as internet portals offering hotel reservations and uses it as a synonym for ADS, the internet and other non-GDS electronic channels of hotel distribution. |
 
 # Related
-- [GDS](/common/standards/gds.md) — related
+- [GDS](/common/standards/gds.md) — contrasts
 - [OTA (Online Travel Agency)](/common/standards/ota-online-travel-agency.md) — narrower
 - [Metasearch](/common/standards/metasearch.md) — related
 - [Channel Manager](/lodging/hotel-dist/channel-manager.md) — related

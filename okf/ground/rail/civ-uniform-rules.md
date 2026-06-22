@@ -23,9 +23,9 @@ aliases:
   - COTIF Appendix A
   - Uniform Rules concerning the Contract for International Carriage of Passengers and Luggage by Rail
 relationships:
-  - type: related
+  - type: contrasts
     targetTerm: Montreal Convention 1999
-  - type: related
+  - type: contrasts
     targetTerm: EU Regulation 261/2004
   - type: parent
     targetTerm: Rail Passenger Rights Regulation (EU) 2021/782
@@ -47,12 +47,12 @@ sources:
     name: 'COTIF 1999 — Appendix A: Uniform Rules concerning the Contract of International Carriage of Passengers by Rail (CIV)'
     version: '1999'
     section: Appendix A
-    url: ''
+    url: 'https://otif.org/en/?page_id=172'
   - org: CIT (International Rail Transport Committee)
     name: Railway Contract Law — CIV / CIM
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.cit-rail.org/en/rail-transport-law/cotif/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 6h14l8 8v28H14z"/><path d="M28 6v8h8"/><path d="M19 24h12M19 30h12M19 36h8"/><circle cx="32" cy="19" r="2.5"/></svg>
 ---
 
@@ -67,8 +67,8 @@ CIV(Règles uniformes concernant le Contrat de transport international ferroviai
 **Aliases:** `CIV Uniform Rules`, `COTIF Appendix A`, `Uniform Rules concerning the Contract for International Carriage of Passengers and Luggage by Rail`
 
 # Related
-- [Montreal Convention 1999](/common/disruption/montreal-convention-1999.md) — related
-- [EU Regulation 261/2004](/common/disruption/eu-regulation-261-2004.md) — related
+- [Montreal Convention 1999](/common/disruption/montreal-convention-1999.md) — contrasts
+- [EU Regulation 261/2004](/common/disruption/eu-regulation-261-2004.md) — contrasts
 - [Rail Passenger Rights Regulation (EU) 2021/782](/ground/rail/rail-passenger-rights-regulation-eu-2021-782.md) — parent
 - [General Conditions of Carriage for Rail Passengers (GCC-CIV/PRR)](/ground/rail/general-conditions-of-carriage-for-rail-passengers-gcc-civ-prr.md) — parent
 - [Special Conditions of International Carriage (SCIC)](/ground/rail/special-conditions-of-international-carriage-scic.md) — related
@@ -79,5 +79,5 @@ CIV(Règles uniformes concernant le Contrat de transport international ferroviai
 - **CIV (Uniform Rules concerning the Contract of International Carriage of Passengers by Rail)** vs [Rail Passenger Rights Regulation (EU) 2021/782](/ground/rail/rail-passenger-rights-regulation-eu-2021-782.md) — CIV is the international COTIF treaty law defining the carriage contract and liability; Regulation (EU) 2021/782 is EU-specific legislation on passenger rights that incorporates CIV liability rules and adds compensation thresholds, assistance and PRM rights. CIV is the broader treaty foundation; the 2021/782 PRR is the EU regulatory overlay.
 
 # Citations
-[1] OTIF — COTIF 1999 — Appendix A: Uniform Rules concerning the Contract of International Carriage of Passengers by Rail (CIV) — 1999 — Appendix A
-[2] CIT (International Rail Transport Committee) — Railway Contract Law — CIV / CIM
+[1] [OTIF — COTIF 1999 — Appendix A: Uniform Rules concerning the Contract of International Carriage of Passengers by Rail (CIV) — 1999 — Appendix A](https://otif.org/en/?page_id=172)
+[2] [CIT (International Rail Transport Committee) — Railway Contract Law — CIV / CIM](https://www.cit-rail.org/en/rail-transport-law/cotif/)

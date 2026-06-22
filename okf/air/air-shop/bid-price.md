@@ -22,9 +22,9 @@ aliases:
 relationships:
   - type: broader
     targetTerm: Revenue Management
-  - type: related
+  - type: contrasts
     targetTerm: Booking Limit
-  - type: related
+  - type: contrasts
     targetTerm: Protection Level
   - type: related
     targetTerm: Origin & Destination Control (O&D Control)
@@ -37,6 +37,18 @@ distinctions:
   - targetTerm: Revenue Management
     explanation: Revenue Management is the overall discipline; the bid price is one specific control mechanism it uses to accept or reject bookings.
     explanation_ko: 'Revenue Management는 전체 업무 영역이고, bid price는 그 영역이 예약을 수락·거절하는 데 사용하는 하나의 구체적 통제 메커니즘이다.'
+  - targetTerm: Expected Marginal Seat Revenue (EMSR)
+    explanation: EMSR is a leg- and class-based heuristic that sets fixed protection levels per class boundary; bid-price control instead stores a continuous value threshold per unit of capacity and scales to network/O&D decisions where EMSR's fixed class allocations do not.
+    explanation_ko: 'EMSR은 클래스 경계마다 고정된 protection level을 설정하는 leg·클래스 기반 휴리스틱이고, bid-price 통제는 대신 capacity 단위마다 연속적 값 임계치를 저장하여 EMSR의 고정 클래스 배분으로는 다루기 어려운 네트워크/O&D 의사결정에 확장된다.'
+  - targetTerm: Hurdle Rate
+    explanation: 'Bid price is the general revenue-management threshold (the marginal value / opportunity cost of the last unit of capacity) that originated in airline and network RM; the hurdle rate is the same idea applied to a hotel room-night and expressed as a minimum acceptable room rate. In hotel systems the two are often used interchangeably, with the bid-price value commonly surfaced as the Last Room Value (LRV) from which the rate hurdle is derived.'
+    explanation_ko: 'Bid price는 마지막 용량 단위의 한계 가치(기회비용)를 나타내는 레비뉴 매니지먼트의 일반적 임계값으로 항공·네트워크 RM에서 비롯되었고, 허들 레이트는 같은 개념을 호텔 객실-박에 적용해 최저 수용 요금으로 표현한 것이다. 호텔 시스템에서는 둘이 사실상 혼용되며, bid-price 값이 흔히 Last Room Value(LRV)로 표시되고 그로부터 레이트 허들이 도출된다.'
+  - targetTerm: Net Yield
+    explanation: Bid Price is a revenue-management control — the marginal value threshold an availability request must clear — used to decide whether to sell. Net Yield is an ex-post performance result measuring realized net revenue per APCD. One steers the booking decision; the other scores how well pricing performed.
+    explanation_ko: 'Bid Price는 수익관리 통제 장치로, 가용성 요청이 넘어야 하는 한계 가치 임계값이며 판매 여부를 결정하는 데 쓰인다. Net Yield는 사후 성과 결과로, 실현된 APCD당 순수익을 측정한다. 하나는 예약 결정을 조정하고, 다른 하나는 가격 성과를 평가한다.'
+  - targetTerm: Virtual Nesting
+    explanation: 'Both are network RM controls, but virtual nesting keeps discrete nested buckets and booking limits per leg, whereas bid-price control replaces buckets with a continuous value threshold an itinerary''s fare must clear across all its legs.'
+    explanation_ko: '둘 다 네트워크 RM 통제이지만, virtual nesting은 leg별로 이산적인 nested 버킷과 booking limit을 유지하는 반면, bid-price 통제는 버킷을 여정의 운임이 모든 leg에 걸쳐 넘어야 하는 연속적 값 임계치로 대체한다.'
 sources:
   - org: INFORMS
     name: 'Talluri, van Ryzin, Karaesmen & Vulcano, ''Revenue Management: Models and Methods'', Proceedings of the 2009 Winter Simulation Conference'
@@ -63,14 +75,18 @@ Bid-price 통제는 클래스 단위 booking limit의 대안이다. 운임 클�
 
 # Related
 - [Revenue Management](/air/air-shop/revenue-management.md) — broader
-- [Booking Limit](/air/air-shop/booking-limit.md) — related
-- [Protection Level](/air/air-shop/protection-level.md) — related
+- [Booking Limit](/air/air-shop/booking-limit.md) — contrasts
+- [Protection Level](/air/air-shop/protection-level.md) — contrasts
 - [Origin & Destination Control (O&D Control)](/air/air-shop/origin-destination-control.md) — related
 - [Availability](/air/air-shop/availability.md) — related
 
 # Distinctions
 - **Bid Price** vs [Booking Limit](/air/air-shop/booking-limit.md) — A booking limit caps the number of seats sellable in a class; a bid price is a value threshold a fare must beat. They are two interchangeable ways to express the same seat-allocation control, but bid-price control scales naturally to network/O&D decisions where class limits do not.
 - **Bid Price** vs [Revenue Management](/air/air-shop/revenue-management.md) — Revenue Management is the overall discipline; the bid price is one specific control mechanism it uses to accept or reject bookings.
+- **Bid Price** vs [Expected Marginal Seat Revenue (EMSR)](/air/air-shop/expected-marginal-seat-revenue.md) — EMSR is a leg- and class-based heuristic that sets fixed protection levels per class boundary; bid-price control instead stores a continuous value threshold per unit of capacity and scales to network/O&D decisions where EMSR's fixed class allocations do not.
+- **Bid Price** vs [Hurdle Rate](/lodging/hotel-rate/hurdle-rate.md) — Bid price is the general revenue-management threshold (the marginal value / opportunity cost of the last unit of capacity) that originated in airline and network RM; the hurdle rate is the same idea applied to a hotel room-night and expressed as a minimum acceptable room rate. In hotel systems the two are often used interchangeably, with the bid-price value commonly surfaced as the Last Room Value (LRV) from which the rate hurdle is derived.
+- **Bid Price** vs [Net Yield](/cruise/cruise/net-yield.md) — Bid Price is a revenue-management control — the marginal value threshold an availability request must clear — used to decide whether to sell. Net Yield is an ex-post performance result measuring realized net revenue per APCD. One steers the booking decision; the other scores how well pricing performed.
+- **Bid Price** vs [Virtual Nesting](/air/air-shop/virtual-nesting.md) — Both are network RM controls, but virtual nesting keeps discrete nested buckets and booking limits per leg, whereas bid-price control replaces buckets with a continuous value threshold an itinerary's fare must clear across all its legs.
 
 # Citations
 [1] [INFORMS — Talluri, van Ryzin, Karaesmen & Vulcano, 'Revenue Management: Models and Methods', Proceedings of the 2009 Winter Simulation Conference — Bid-price control](https://www.informs-sim.org/wsc09papers/013.pdf)

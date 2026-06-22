@@ -42,12 +42,12 @@ sources:
     name: About 2.0 Object Model
     version: ''
     section: ''
-    url: ''
+    url: 'https://opentravel.org/news/2018a-2-0-object-model/'
   - org: OpenTravel Alliance
     name: Releases 2018A 2.0 Object Model Publication for Hospitality
     version: ''
     section: ''
-    url: ''
+    url: 'https://opentravel.org/news/opentravel-alliance-releases-2018a-2-0-object-model-publication-for-hospitality/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6l16 9v18l-16 9-16-9V15z"/><path d="M8 15l16 9 16-9M24 24v18"/><path d="M16 19.5l16 9"/></svg>
 ---
 
@@ -71,5 +71,5 @@ JSON과 REST를 도입함으로써 2.0은 장황한 1.x XML 스키마에 비해 
 - **OpenTravel 2.0 Object Model** vs [NDC](/common/standards/ndc.md) — OpenTravel 2.0 is a broad multi-sector travel object model; NDC is IATA's air-specific offer-and-order distribution standard.
 
 # Citations
-[1] OpenTravel Alliance — About 2.0 Object Model
-[2] OpenTravel Alliance — Releases 2018A 2.0 Object Model Publication for Hospitality
+[1] [OpenTravel Alliance — About 2.0 Object Model](https://opentravel.org/news/2018a-2-0-object-model/)
+[2] [OpenTravel Alliance — Releases 2018A 2.0 Object Model Publication for Hospitality](https://opentravel.org/news/opentravel-alliance-releases-2018a-2-0-object-model-publication-for-hospitality/)

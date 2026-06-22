@@ -24,7 +24,7 @@ aliases:
   - Boat Drill
   - Muster
 relationships:
-  - type: related
+  - type: broader
     targetTerm: Embarkation
   - type: related
     targetTerm: Port of Call
@@ -37,7 +37,7 @@ sources:
     org: International Maritime Organization (IMO)
     version: SOLAS reg. III/19 (amended by MSC.350(92))
     section: ''
-    url: ''
+    url: 'https://www.imo.org/en/MediaCentre/PressBriefings/Pages/45-SOLAS-eif-.aspx'
   - name: What is a muster drill? (cruise FAQ)
     org: Cruise industry
     version: ''
@@ -57,12 +57,12 @@ SOLAS 규정 III/19는 비상 훈련과 소집을 규율한다. Costa Concordia 
 **Aliases:** `Safety Drill`, `Lifeboat Drill`, `Emergency Drill`, `Boat Drill`, `Muster`
 
 # Related
-- [Embarkation](/cruise/cruise/embarkation.md) — related
+- [Embarkation](/cruise/cruise/embarkation.md) — broader
 - [Port of Call](/cruise/cruise/port-of-call.md) — related
 
 # Distinctions
 - **Muster Drill** vs [Embarkation](/cruise/cruise/embarkation.md) — Embarkation is the full boarding/check-in process; the muster drill is one mandatory, SOLAS-regulated safety step within it that must be completed before the ship departs.
 
 # Citations
-[1] International Maritime Organization (IMO) — Cruise ship passenger drill requirements come into force on 1 January 2015 — SOLAS reg. III/19 (amended by MSC.350(92))
+[1] [International Maritime Organization (IMO) — Cruise ship passenger drill requirements come into force on 1 January 2015 — SOLAS reg. III/19 (amended by MSC.350(92))](https://www.imo.org/en/MediaCentre/PressBriefings/Pages/45-SOLAS-eif-.aspx)
 [2] Cruise industry — What is a muster drill? (cruise FAQ)

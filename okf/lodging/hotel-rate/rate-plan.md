@@ -24,15 +24,15 @@ aliases:
 relationships:
   - type: related
     targetTerm: Room Type
-  - type: related
+  - type: narrower
     targetTerm: Board Basis
   - type: narrower
     targetTerm: BAR
   - type: related
     targetTerm: Cancellation Policy
-  - type: related
+  - type: narrower
     targetTerm: Net Rate
-  - type: related
+  - type: narrower
     targetTerm: Commissionable Rate
   - type: related
     targetTerm: ARI
@@ -45,17 +45,32 @@ distinctions:
   - targetTerm: BAR
     explanation: 'BAR is one specific kind of rate plan (the best unrestricted publicly available one), whereas Rate Plan is the general concept covering all offer types.'
     explanation_ko: 'BAR은 요금제의 한 특정 유형(제약 없이 일반에 공개되는 최저 요금)인 반면, 요금제는 모든 상품 유형을 아우르는 일반 개념이다.'
+  - targetTerm: Board Basis
+    explanation: 'Board basis is one inclusion attribute carried within a rate plan; a rate plan also defines price, cancellation, and other conditions beyond meals.'
+    explanation_ko: '식사 조건은 요금제에 포함된 하나의 포함 속성이다. 요금제는 식사 외에도 가격, 취소 규정 등 여러 조건을 함께 정의한다.'
+  - targetTerm: Derived Rate
+    explanation: 'Every derived rate is a rate plan, but a derived rate is specifically one whose values are computed from a parent rate; a standalone (master) rate plan holds its own independently maintained values.'
+    explanation_ko: '모든 Derived Rate는 요금제이지만, Derived Rate는 특히 모 요금으로부터 값이 계산되는 요금제다. 독립형(master) 요금제는 자체적으로 별도 관리되는 값을 가진다.'
+  - targetTerm: Length of Stay
+    explanation: Length of Stay is a restriction/control that can gate a rate plan; the rate plan is the broader offer that the LOS rule conditions.
+    explanation_ko: '숙박일수는 요금제를 제한할 수 있는 제약/통제이고, 요금제는 LOS 규칙이 조건을 거는 더 넓은 범위의 상품이다.'
+  - targetTerm: Rate Code
+    explanation: 'Rate Plan is the conceptual commercial product (e.g. Best Available Rate, room-only); Rate Code is the system identifier that implements and labels that product so it can be loaded, sold and exchanged electronically.'
+    explanation_ko: 'Rate Plan은 개념적 상품(예: BAR, 객실 단독)이고, Rate Code는 그 상품을 시스템에 적재·판매·전자교환할 수 있도록 구현하고 라벨링하는 식별자다.'
+  - targetTerm: Rate Fence
+    explanation: 'A rate plan is the sellable, named price product a guest books; rate fences are the eligibility rules and restrictions that differentiate one rate plan (or tier) from another.'
+    explanation_ko: '레이트 플랜은 고객이 실제 예약하는 이름이 붙은 판매 가능한 가격 상품이고, 레이트 펜스는 한 레이트 플랜(또는 단계)을 다른 것과 구분 짓는 자격 규칙과 제약이다.'
 sources:
   - name: 'OpenTravel Specification (Hotel messages, RatePlan)'
     org: OpenTravel Alliance
     version: ''
     section: ''
-    url: ''
+    url: 'https://opentravel.org/download-specs/'
   - name: HTNG distribution and messaging specifications
     org: HTNG
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.ahla.com/htng-technical-specifications'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="6" width="28" height="36" rx="3"/><line x1="16" y1="15" x2="32" y2="15"/><line x1="16" y1="22" x2="28" y2="22"/><path d="M19 31h7a3 3 0 0 1 0 6h-5l3 3"/><line x1="22" y1="28" x2="22" y2="40"/></svg>
 ---
 
@@ -71,18 +86,23 @@ A rate plan bundles a price (or pricing logic) together with rules and restricti
 
 # Related
 - [Room Type](/lodging/hotel-rate/room-type.md) — related
-- [Board Basis](/lodging/hotel-rate/board-basis.md) — related
+- [Board Basis](/lodging/hotel-rate/board-basis.md) — narrower
 - [BAR](/lodging/hotel-rate/bar.md) — narrower
 - [Cancellation Policy](/lodging/hotel-dist/cancellation-policy.md) — related
-- [Net Rate](/lodging/hotel-dist/net-rate.md) — related
-- [Commissionable Rate](/lodging/hotel-dist/commissionable-rate.md) — related
+- [Net Rate](/lodging/hotel-dist/net-rate.md) — narrower
+- [Commissionable Rate](/lodging/hotel-dist/commissionable-rate.md) — narrower
 - [ARI](/lodging/hotel-dist/ari.md) — related
 - [Length of Stay](/lodging/hotel-rate/length-of-stay.md) — related
 
 # Distinctions
 - **Rate Plan** vs [Room Type](/lodging/hotel-rate/room-type.md) — A rate plan is the price/conditions; a room type is the physical product being priced — the same room type is sold under many rate plans.
 - **Rate Plan** vs [BAR](/lodging/hotel-rate/bar.md) — BAR is one specific kind of rate plan (the best unrestricted publicly available one), whereas Rate Plan is the general concept covering all offer types.
+- **Rate Plan** vs [Board Basis](/lodging/hotel-rate/board-basis.md) — Board basis is one inclusion attribute carried within a rate plan; a rate plan also defines price, cancellation, and other conditions beyond meals.
+- **Rate Plan** vs [Derived Rate](/lodging/hotel-rate/derived-rate.md) — Every derived rate is a rate plan, but a derived rate is specifically one whose values are computed from a parent rate; a standalone (master) rate plan holds its own independently maintained values.
+- **Rate Plan** vs [Length of Stay](/lodging/hotel-rate/length-of-stay.md) — Length of Stay is a restriction/control that can gate a rate plan; the rate plan is the broader offer that the LOS rule conditions.
+- **Rate Plan** vs [Rate Code](/lodging/hotel-rate/rate-code.md) — Rate Plan is the conceptual commercial product (e.g. Best Available Rate, room-only); Rate Code is the system identifier that implements and labels that product so it can be loaded, sold and exchanged electronically.
+- **Rate Plan** vs [Rate Fence](/lodging/hotel-rate/rate-fence.md) — A rate plan is the sellable, named price product a guest books; rate fences are the eligibility rules and restrictions that differentiate one rate plan (or tier) from another.
 
 # Citations
-[1] OpenTravel Alliance — OpenTravel Specification (Hotel messages, RatePlan)
-[2] HTNG — HTNG distribution and messaging specifications
+[1] [OpenTravel Alliance — OpenTravel Specification (Hotel messages, RatePlan)](https://opentravel.org/download-specs/)
+[2] [HTNG — HTNG distribution and messaging specifications](https://www.ahla.com/htng-technical-specifications)

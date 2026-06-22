@@ -34,7 +34,7 @@ providerTerms:
     context_ko: Sabre는 조회를 위해 PNR의 모든 변경 이력을 보관한다
     relationship: same
 relationships:
-  - type: related
+  - type: parent
     targetTerm: PNR
   - type: related
     targetTerm: Received From Element (RF)
@@ -56,12 +56,12 @@ sources:
     name: Passenger Services Conference Resolutions Manual (PSCRM)
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
   - org: Amadeus
     name: Amadeus Service Hub - PNR History (RH)
     version: ''
     section: ''
-    url: ''
+    url: 'https://amadeus.com/en/blog/articles/amadeus-tip-display-the-pnr-history'
 icon: '<svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 9 a15 15 0 1 1 -14 10"/><polyline points="7,11 10,19 18,17"/><polyline points="24,16 24,24 30,28"/></svg>'
 ---
 
@@ -83,7 +83,7 @@ PNR의 요소가 추가·변경·취소될 때마다 시스템은 office/agent(R
 | Sabre | `PNR History` | same | Sabre retains a history of all changes to a PNR for retrieval |
 
 # Related
-- [PNR](/air/air-ops/pnr.md) — related
+- [PNR](/air/air-ops/pnr.md) — parent
 - [Received From Element (RF)](/air/air-ops/received-from-element-rf.md) — related
 - [Split PNR](/air/air-ops/split-pnr.md) — related
 - [Agency Debit Memo (ADM)](/air/air-ticket/agency-debit-memo-adm.md) — related
@@ -94,5 +94,5 @@ PNR의 요소가 추가·변경·취소될 때마다 시스템은 office/agent(R
 - **PNR History** vs [Record Locator](/air/air-ops/record-locator.md) — A Record Locator is the short key used to retrieve a booking; PNR History is the internal change log of that booking, not an identifier.
 
 # Citations
-[1] IATA — Passenger Services Conference Resolutions Manual (PSCRM)
-[2] Amadeus — Amadeus Service Hub - PNR History (RH)
+[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
+[2] [Amadeus — Amadeus Service Hub - PNR History (RH)](https://amadeus.com/en/blog/articles/amadeus-tip-display-the-pnr-history)

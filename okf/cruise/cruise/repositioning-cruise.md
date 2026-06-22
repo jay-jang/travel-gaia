@@ -45,7 +45,7 @@ sources:
     org: Cruise Critic
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.cruisecritic.com/articles/what-are-repositioning-cruises-and-why-should-i-take-one'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="34" r="3"/><circle cx="36" cy="14" r="3"/><path d="M14 32C22 24 26 22 34 16"/><path d="M30 14h6v6"/></svg>
 ---
 
@@ -71,4 +71,4 @@ Cruise lines deploy ships seasonally (e.g. Alaska in summer, Caribbean in winter
 
 # Citations
 [1] [Wikipedia — Repositioning cruise](https://en.wikipedia.org/wiki/Repositioning_cruise)
-[2] Cruise Critic — What Are Repositioning Cruises and Why Take One?
+[2] [Cruise Critic — What Are Repositioning Cruises and Why Take One?](https://www.cruisecritic.com/articles/what-are-repositioning-cruises-and-why-should-i-take-one)

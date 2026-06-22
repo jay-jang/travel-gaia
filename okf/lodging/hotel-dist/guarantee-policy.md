@@ -36,12 +36,15 @@ distinctions:
   - targetTerm: Cancellation Policy
     explanation: A guarantee policy defines how a booking is secured/held and no-show recourse; a cancellation policy defines deadlines and penalties for cancelling.
     explanation_ko: '개런티 정책은 예약을 어떻게 확보·보장하는지와 노쇼 구제 수단을 정의하고, 취소 정책은 취소에 대한 기한과 위약금을 정의한다.'
+  - targetTerm: Authorization Hold
+    explanation: A guarantee policy is the hotel's contractual rule on holding a booking and charging for no-shows; an authorization hold is the payment-rail mechanism often used to enforce or secure that guarantee.
+    explanation_ko: '보증 정책(Guarantee Policy)은 예약 보장과 노쇼 청구에 관한 호텔의 계약 규칙이고, 승인 보류는 그 보증을 집행하거나 확보하는 데 흔히 사용되는 결제망 메커니즘이다.'
 sources:
   - name: OpenTravel Specification
     org: OpenTravel Alliance
     version: ''
     section: ''
-    url: ''
+    url: 'https://opentravel.org/download-specs/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4l16 6v10c0 11-7 18-16 22-9-4-16-11-16-22V10l16-6z"/><path d="M17 23l5 5 9-10"/></svg>
 ---
 
@@ -64,6 +67,7 @@ Guarantee types commonly include credit-card guarantee (room held all night, no-
 
 # Distinctions
 - **Guarantee Policy** vs [Cancellation Policy](/lodging/hotel-dist/cancellation-policy.md) — A guarantee policy defines how a booking is secured/held and no-show recourse; a cancellation policy defines deadlines and penalties for cancelling.
+- **Guarantee Policy** vs [Authorization Hold](/common/pay/authorization-hold.md) — A guarantee policy is the hotel's contractual rule on holding a booking and charging for no-shows; an authorization hold is the payment-rail mechanism often used to enforce or secure that guarantee.
 
 # Citations
-[1] OpenTravel Alliance — OpenTravel Specification
+[1] [OpenTravel Alliance — OpenTravel Specification](https://opentravel.org/download-specs/)

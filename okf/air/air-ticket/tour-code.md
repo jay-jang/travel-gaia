@@ -48,12 +48,12 @@ sources:
     name: 'Universal API: Net Remittance Ticketing Modifiers (Tour Code, BT, IT)'
     version: ''
     section: ''
-    url: ''
+    url: 'https://support.travelport.com/webhelp/uapi/Content/Air/Air_Ticketing/Net_Remittance_Ticketing_Modifiers.htm'
   - org: Travelport
     name: 'Assisted Ticketing: Voluntary Changes for IT/BT Fares'
     version: ''
     section: ''
-    url: ''
+    url: 'https://support.travelport.com/webhelp/smartpoint1g1v/content/Air/Ticketing/TicketAssistant/TicketAssistant_VolChange-ItBt-Refund.htm'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="14" width="28" height="20" rx="3"/><path d="M19 14v-3a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v3"/><path d="M16 22h6M16 27h10"/><circle cx="31" cy="24" r="3"/></svg>
 ---
 
@@ -85,5 +85,5 @@ Issued by the airline, the tour code represents a commercial agreement between t
 - **Tour Code** vs [Net Rate](/lodging/hotel-dist/net-rate.md) — Net Rate is the confidential cost the agency pays the carrier; the tour code (and the masked BT/IT display) is the ticketing mechanism that references the net agreement without printing the actual net amount on the customer's ticket.
 
 # Citations
-[1] Travelport — Universal API: Net Remittance Ticketing Modifiers (Tour Code, BT, IT)
-[2] Travelport — Assisted Ticketing: Voluntary Changes for IT/BT Fares
+[1] [Travelport — Universal API: Net Remittance Ticketing Modifiers (Tour Code, BT, IT)](https://support.travelport.com/webhelp/uapi/Content/Air/Air_Ticketing/Net_Remittance_Ticketing_Modifiers.htm)
+[2] [Travelport — Assisted Ticketing: Voluntary Changes for IT/BT Fares](https://support.travelport.com/webhelp/smartpoint1g1v/content/Air/Ticketing/TicketAssistant/TicketAssistant_VolChange-ItBt-Refund.htm)

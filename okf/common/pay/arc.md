@@ -35,6 +35,12 @@ distinctions:
   - targetTerm: IATA Clearing House
     explanation: ARC settles US agent-to-airline sales; the IATA Clearing House settles interline (airline-to-airline) accounts.
     explanation_ko: 'ARC는 미국 여행사-항공사 간 판매를 정산하고, IATA Clearing House는 인터라인(항공사 간) 계정을 정산한다.'
+  - targetTerm: IATA Number
+    explanation: 'ARC is the U.S. settlement/accreditation body; the IATA Number is the IATA-assigned accreditation code used for BSP markets, though IATAN and ARC share location numbering.'
+    explanation_ko: 'ARC는 미국의 정산·인가 기관이고, IATA 번호는 BSP 시장에서 사용되는 IATA 부여 인가 코드이다. 다만 IATAN과 ARC는 위치 번호 체계를 공유한다.'
+  - targetTerm: Interactive Agent Reporting
+    explanation: ARC is the US settlement company itself; IAR is the specific electronic reporting and settlement application ARC operates through which agencies file their weekly sales reports.
+    explanation_ko: 'ARC는 미국의 정산 회사 자체이고, IAR는 대리점이 주간 판매 보고서를 제출하는, ARC가 운영하는 구체적 전자 보고·정산 애플리케이션이다.'
 sources:
   - name: Airlines Reporting Corporation
     org: ARC
@@ -68,6 +74,8 @@ ARC는 미국 여행사 인증을 규율하는 Industry Agents' Handbook(IAH)을
 # Distinctions
 - **ARC** vs [BSP](/common/pay/bsp.md) — ARC is the US agent-airline settlement system; BSP is IATA's equivalent for most non-US markets.
 - **ARC** vs [IATA Clearing House](/common/pay/iata-clearing-house.md) — ARC settles US agent-to-airline sales; the IATA Clearing House settles interline (airline-to-airline) accounts.
+- **ARC** vs [IATA Number](/common/codes/iata-number.md) — ARC is the U.S. settlement/accreditation body; the IATA Number is the IATA-assigned accreditation code used for BSP markets, though IATAN and ARC share location numbering.
+- **ARC** vs [Interactive Agent Reporting](/common/pay/interactive-agent-reporting.md) — ARC is the US settlement company itself; IAR is the specific electronic reporting and settlement application ARC operates through which agencies file their weekly sales reports.
 
 # Citations
 [1] [ARC — Airlines Reporting Corporation](https://www2.arccorp.com/)

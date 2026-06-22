@@ -26,9 +26,9 @@ providerTerms:
     context_ko: '실적 용어에서 APCD당 Net Revenues로 정의되며, Net Revenues는 총수익에서 커미션, 운송 및 기타 비용, 선상 및 기타 비용을 차감한 값이다. 가격 성과를 가장 잘 나타내는 지표로 설명된다.'
     relationship: same
 relationships:
-  - type: related
+  - type: broader
     targetTerm: Available Passenger Cruise Days (APCD)
-  - type: related
+  - type: contrasts
     targetTerm: RevPAR
   - type: related
     targetTerm: Bid Price
@@ -50,7 +50,7 @@ sources:
     name: Quarterly Earnings Release — Terminology (Net Revenues and Net Yields; Net Yields = Net Revenue per APCD)
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.prnewswire.com/news-releases/royal-caribbean-group-reports-2025-results-issues-2026-guidance-302673898.html'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="7 34 20 22 27 28 41 13"/><polyline points="33 13 41 13 41 21"/><line x1="7" y1="40" x2="41" y2="40"/><line x1="7" y1="40" x2="7" y2="10"/></svg>
 ---
 
@@ -71,8 +71,8 @@ Cruise lines manage pricing day to day on Net Yield because it reflects cruise r
 | Royal Caribbean Cruises Ltd. | `Net Yields` | same | Defined in earnings terminology as Net Revenues per APCD, where Net Revenues equal total revenues less commissions, transportation and other expenses and onboard and other expenses; described as the most relevant measure of pricing performance. |
 
 # Related
-- [Available Passenger Cruise Days (APCD)](/cruise/cruise/available-passenger-cruise-days-apcd.md) — related
-- [RevPAR](/lodging/hotel-rate/revpar.md) — related
+- [Available Passenger Cruise Days (APCD)](/cruise/cruise/available-passenger-cruise-days-apcd.md) — broader
+- [RevPAR](/lodging/hotel-rate/revpar.md) — contrasts
 - [Bid Price](/air/air-shop/bid-price.md) — related
 - [Revenue Management](/air/air-shop/revenue-management.md) — related
 - [Non-Commissionable Fare (NCF)](/cruise/cruise/non-commissionable-fare-ncf.md) — related
@@ -83,4 +83,4 @@ Cruise lines manage pricing day to day on Net Yield because it reflects cruise r
 - **Net Yield** vs [Bid Price](/air/air-shop/bid-price.md) — Bid Price is a revenue-management control — the marginal value threshold an availability request must clear — used to decide whether to sell. Net Yield is an ex-post performance result measuring realized net revenue per APCD. One steers the booking decision; the other scores how well pricing performed.
 
 # Citations
-[1] Royal Caribbean Cruises Ltd. — Quarterly Earnings Release — Terminology (Net Revenues and Net Yields; Net Yields = Net Revenue per APCD)
+[1] [Royal Caribbean Cruises Ltd. — Quarterly Earnings Release — Terminology (Net Revenues and Net Yields; Net Yields = Net Revenue per APCD)](https://www.prnewswire.com/news-releases/royal-caribbean-group-reports-2025-results-issues-2026-guidance-302673898.html)

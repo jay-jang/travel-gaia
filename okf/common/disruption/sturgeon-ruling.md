@@ -23,7 +23,7 @@ aliases:
   - Sturgeon v Condor
   - Joined Cases C-402/07 and C-432/07
 relationships:
-  - type: related
+  - type: broader
     targetTerm: EU Regulation 261/2004
   - type: related
     targetTerm: Extraordinary Circumstances
@@ -43,12 +43,12 @@ sources:
     name: Judgment in Joined Cases C-402/07 and C-432/07 (Sturgeon v Condor; Böck and Lepuschitz v Air France)
     version: '2009'
     section: ''
-    url: ''
+    url: 'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62007CJ0402'
   - org: Court of Justice of the European Union
     name: 'CJEU confirms Sturgeon: compensation due also for delayed flights (Nelson / TUI Travel)'
     version: '2012'
     section: ''
-    url: ''
+    url: 'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62010CJ0581'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="24" y1="6" x2="24" y2="12"/><line x1="10" y1="14" x2="38" y2="14"/><path d="M10 14l-5 11h10z"/><path d="M38 14l-5 11h10z"/><path d="M5 25a5 5 0 0 0 10 0"/><path d="M33 25a5 5 0 0 0 10 0"/><line x1="24" y1="12" x2="24" y2="38"/><line x1="16" y1="40" x2="32" y2="40"/></svg>
 ---
 
@@ -63,7 +63,7 @@ Decided on 19 November 2009 by the Fourth Chamber, the ruling reasoned from the 
 **Aliases:** `Sturgeon Ruling`, `Sturgeon judgment`, `Sturgeon v Condor`, `Joined Cases C-402/07 and C-432/07`
 
 # Related
-- [EU Regulation 261/2004](/common/disruption/eu-regulation-261-2004.md) — related
+- [EU Regulation 261/2004](/common/disruption/eu-regulation-261-2004.md) — broader
 - [Extraordinary Circumstances](/common/disruption/extraordinary-circumstances.md) — related
 - [Denied Boarding Compensation](/common/disruption/denied-boarding-compensation.md) — related
 - [National Enforcement Body (NEB)](/common/disruption/national-enforcement-body-neb.md) — related
@@ -73,5 +73,5 @@ Decided on 19 November 2009 by the Fourth Chamber, the ruling reasoned from the 
 - **Sturgeon Ruling** vs [Extraordinary Circumstances](/common/disruption/extraordinary-circumstances.md) — Extraordinary circumstances is the carrier's statutory defence; the Sturgeon Ruling defines when compensation is owed in the first place (the three-hour delay threshold), and that compensation is then defeasible by proving extraordinary circumstances.
 
 # Citations
-[1] Court of Justice of the European Union — Judgment in Joined Cases C-402/07 and C-432/07 (Sturgeon v Condor; Böck and Lepuschitz v Air France) — 2009
-[2] Court of Justice of the European Union — CJEU confirms Sturgeon: compensation due also for delayed flights (Nelson / TUI Travel) — 2012
+[1] [Court of Justice of the European Union — Judgment in Joined Cases C-402/07 and C-432/07 (Sturgeon v Condor; Böck and Lepuschitz v Air France) — 2009](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62007CJ0402)
+[2] [Court of Justice of the European Union — CJEU confirms Sturgeon: compensation due also for delayed flights (Nelson / TUI Travel) — 2012](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62010CJ0581)

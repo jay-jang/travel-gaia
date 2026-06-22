@@ -25,7 +25,7 @@ providerTerms:
     context_ko: Interrail 및 Eurail 패스 상품의 운영 주체
     relationship: same
 relationships:
-  - type: related
+  - type: contrasts
     targetTerm: Eurail Pass
   - type: related
     targetTerm: Seat Reservation
@@ -45,12 +45,12 @@ sources:
     org: Eurail B.V. (Interrail.eu)
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.interrail.eu/en/interrail-passes/what-is-interrail/how-use-your-interrail-pass'
   - name: Global Pass (Flexi vs Continuous)
     org: Eurail B.V. (Interrail.eu)
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.interrail.com/en/interrail-passes/global-pass'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="14" width="34" height="20" rx="3"/><circle cx="16" cy="24" r="4"/><path d="M25 21h11M25 27h8"/><path d="M11 38l3 3M37 38l-3 3"/></svg>
 ---
 
@@ -71,7 +71,7 @@ Interrail은 대부분의 참여국을 포함하는 Global Pass로 판매되며,
 | Eurail B.V. | `Interrail Global Pass` | same | Operator of the Interrail and Eurail pass products |
 
 # Related
-- [Eurail Pass](/ground/rail/eurail-pass.md) — related
+- [Eurail Pass](/ground/rail/eurail-pass.md) — contrasts
 - [Seat Reservation](/ground/rail/seat-reservation.md) — related
 - [Admission](/ground/rail/admission.md) — related
 - [OSDM](/ground/rail/osdm.md) — related
@@ -81,5 +81,5 @@ Interrail은 대부분의 참여국을 포함하는 Global Pass로 판매되며,
 - **Interrail Pass** vs [Seat Reservation](/ground/rail/seat-reservation.md) — The pass grants the right to travel (admission); seat reservations for compulsory-reservation trains are a separate purchase on top of the pass.
 
 # Citations
-[1] Eurail B.V. (Interrail.eu) — What is Interrail / how to use your pass
-[2] Eurail B.V. (Interrail.eu) — Global Pass (Flexi vs Continuous)
+[1] [Eurail B.V. (Interrail.eu) — What is Interrail / how to use your pass](https://www.interrail.eu/en/interrail-passes/what-is-interrail/how-use-your-interrail-pass)
+[2] [Eurail B.V. (Interrail.eu) — Global Pass (Flexi vs Continuous)](https://www.interrail.com/en/interrail-passes/global-pass)

@@ -55,7 +55,7 @@ sources:
     org: ATPCO
     version: ''
     section: ''
-    url: ''
+    url: 'https://atpco.net/branded-fares/'
   - name: Amadeus Fare Families / Branded Fares documentation
     org: Amadeus
     version: ''
@@ -93,5 +93,5 @@ Fare families, also called branded fares, are the airline retailing construct in
 - **Fare Family** vs [Ancillary Service](/air/air-ticket/ancillary-service.md) — Ancillaries are individual extras; a fare family bundles selected ancillaries and conditions into a branded tier.
 
 # Citations
-[1] ATPCO — ATPCO Branded Fares documentation
+[1] [ATPCO — ATPCO Branded Fares documentation](https://atpco.net/branded-fares/)
 [2] Amadeus — Amadeus Fare Families / Branded Fares documentation

@@ -26,7 +26,7 @@ providerTerms:
     context_ko: '항공사와 routing만 있고 편명/날짜가 없는 항공 segment로, 보통 PNR에 확약 segment가 최소 1개 필요.'
     relationship: same
 relationships:
-  - type: related
+  - type: broader
     targetTerm: Segment
   - type: related
     targetTerm: ARNK
@@ -46,12 +46,12 @@ sources:
     name: Passenger Services Conference Resolutions Manual (PSCRM)
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
   - org: Travelport
     name: Travelport+ (Galileo) Format Guide
     version: ''
     section: ''
-    url: ''
+    url: 'https://support.travelport.com/webhelp/Formats/Content/Resources/MiniGuide/FormatsMiniGuidev2.pdf'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="24" r="3"/><circle cx="37" cy="24" r="3"/><path d="M15 24h4M22 24h4M29 24h4"/><path d="M37 14v-3M37 37v-3"/></svg>
 ---
 
@@ -72,7 +72,7 @@ Open segment는 미래 구간의 날짜가 미정일 때 여정 연속성과 항
 | GDS (industry) | `Open segment` | same | Air segment booked with carrier and routing but no flight/date; typically requires at least one confirmed segment in the PNR. |
 
 # Related
-- [Segment](/air/air-ops/segment.md) — related
+- [Segment](/air/air-ops/segment.md) — broader
 - [ARNK](/air/air-ops/arnk.md) — related
 - [Flight Coupon](/air/air-ticket/flight-coupon.md) — related
 - [Booking Status Code](/air/air-ops/booking-status-code.md) — related
@@ -82,5 +82,5 @@ Open segment는 미래 구간의 날짜가 미정일 때 여정 연속성과 항
 - **Open Segment** vs [Passive Segment](/air/air-ops/passive-segment.md) — A Passive Segment is a non-active segment created to mirror a booking confirmed elsewhere (e.g., for ticketing), holding no live inventory; an Open Segment is undated and unconfirmed by design rather than a copy of an external confirmation.
 
 # Citations
-[1] IATA — Passenger Services Conference Resolutions Manual (PSCRM)
-[2] Travelport — Travelport+ (Galileo) Format Guide
+[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
+[2] [Travelport — Travelport+ (Galileo) Format Guide](https://support.travelport.com/webhelp/Formats/Content/Resources/MiniGuide/FormatsMiniGuidev2.pdf)

@@ -38,17 +38,20 @@ distinctions:
   - targetTerm: ONE Order
     explanation: ARM is the assessment/registry framework (which replaced the separate NDC and ONE Order certification registries); ONE Order is one of the standards whose maturity ARM measures.
     explanation_ko: 'ARM은 (별도의 NDC·ONE Order 인증 등록제를 대체한) 평가·등록 프레임워크이고, ONE Order는 ARM이 성숙도를 측정하는 대상 표준 중 하나이다.'
+  - targetTerm: NDC Capable
+    explanation: 'NDC Capable/Certified were the old level-based certification designations; the ARM index replaced them, listing proven shop/order/pay/settle capabilities without level labels.'
+    explanation_ko: 'NDC Capable/Certified는 과거의 레벨 기반 인증 지정이었고, ARM index가 이를 대체하여 레벨 표시 없이 입증된 shop/order/pay/settle 역량을 나열한다.'
 sources:
   - org: IATA
     name: The Airline Retailing Maturity index (ARM index) Factsheet
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/contentassets/6de4dce5f38b45ce82b0db42acd23d1c/iata-arm-index-factsheet.pdf'
   - org: IATA
     name: Airline Retailing
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/programs/airline-distribution/retailing/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="40" x2="40" y2="40"/><rect x="10" y="28" width="7" height="12"/><rect x="20" y="20" width="7" height="20"/><rect x="30" y="12" width="7" height="28"/><path d="M10 24l11-9 8 4 9-11"/></svg>
 ---
 
@@ -71,7 +74,8 @@ ARM 지수는 Capabilities Verification(조회·주문·결제·정산·회계·
 # Distinctions
 - **Airline Retailing Maturity (ARM)** vs [NDC](/common/standards/ndc.md) — ARM is a maturity measurement and registry of an organization's retailing progress; NDC is the underlying XML distribution standard whose adoption ARM helps assess.
 - **Airline Retailing Maturity (ARM)** vs [ONE Order](/common/standards/one-order.md) — ARM is the assessment/registry framework (which replaced the separate NDC and ONE Order certification registries); ONE Order is one of the standards whose maturity ARM measures.
+- **Airline Retailing Maturity (ARM)** vs [NDC Capable](/common/standards/ndc-capable.md) — NDC Capable/Certified were the old level-based certification designations; the ARM index replaced them, listing proven shop/order/pay/settle capabilities without level labels.
 
 # Citations
-[1] IATA — The Airline Retailing Maturity index (ARM index) Factsheet
-[2] IATA — Airline Retailing
+[1] [IATA — The Airline Retailing Maturity index (ARM index) Factsheet](https://www.iata.org/contentassets/6de4dce5f38b45ce82b0db42acd23d1c/iata-arm-index-factsheet.pdf)
+[2] [IATA — Airline Retailing](https://www.iata.org/en/programs/airline-distribution/retailing/)

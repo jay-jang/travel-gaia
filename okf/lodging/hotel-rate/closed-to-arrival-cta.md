@@ -21,9 +21,9 @@ aliases:
   - Close to Arrival
   - No Arrivals
 relationships:
-  - type: related
+  - type: contrasts
     targetTerm: Minimum Length of Stay (MLOS)
-  - type: related
+  - type: broader
     targetTerm: Length of Stay
   - type: related
     targetTerm: Stop Sell
@@ -66,8 +66,8 @@ CTA는 고수요 날짜에 적용되는 yield 도구로, 더 길고 수익성 �
 **Aliases:** `Closed to Arrival`, `Close to Arrival`, `No Arrivals`
 
 # Related
-- [Minimum Length of Stay (MLOS)](/lodging/hotel-rate/minimum-length-of-stay-mlos.md) — related
-- [Length of Stay](/lodging/hotel-rate/length-of-stay.md) — related
+- [Minimum Length of Stay (MLOS)](/lodging/hotel-rate/minimum-length-of-stay-mlos.md) — contrasts
+- [Length of Stay](/lodging/hotel-rate/length-of-stay.md) — broader
 - [Stop Sell](/lodging/hotel-rate/stop-sell.md) — related
 - [Availability](/air/air-shop/availability.md) — related
 

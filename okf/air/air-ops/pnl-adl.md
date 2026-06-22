@@ -47,7 +47,7 @@ sources:
     name: Passenger Services Conference Resolution Manual (PSCRM) - Recommended Practice 1708 (PNL/ADL)
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
   - org: InteliSys Aviation
     name: How to manually send PNL/ADL
     version: ''
@@ -78,5 +78,5 @@ PNL/ADL 흐름은 예약 영역에서 공항 출발 통제 영역으로의 정�
 - **Passenger Name List / Additions and Deletions List (PNL/ADL)** vs [Departure Control System (DCS)](/air/air-ops/departure-control-system-dcs.md) — PNL/ADL are the inbound messages that feed passenger data into the DCS; the DCS is the receiving system that performs check-in, boarding and load control using that data.
 
 # Citations
-[1] IATA — Passenger Services Conference Resolution Manual (PSCRM) - Recommended Practice 1708 (PNL/ADL)
+[1] [IATA — Passenger Services Conference Resolution Manual (PSCRM) - Recommended Practice 1708 (PNL/ADL)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
 [2] [InteliSys Aviation — How to manually send PNL/ADL](https://intelisysaviation.atlassian.net/wiki/spaces/SDD/pages/1414234147/How+to+manually+send+PNL+ADL)

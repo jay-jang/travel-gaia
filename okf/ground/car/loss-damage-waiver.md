@@ -23,9 +23,9 @@ aliases:
 relationships:
   - type: broader
     targetTerm: Collision Damage Waiver
-  - type: related
+  - type: contrasts
     targetTerm: Supplemental Liability Insurance
-  - type: related
+  - type: parent
     targetTerm: Rental Agreement
 distinctions:
   - targetTerm: Collision Damage Waiver
@@ -34,17 +34,20 @@ distinctions:
   - targetTerm: Supplemental Liability Insurance
     explanation: LDW (a waiver) covers loss of or damage to the rented vehicle; SLI is insurance covering the renter's liability to third parties for injury and property damage.
     explanation_ko: 'LDW(면책)는 대여 차량의 분실·손해를 보장하고, SLI는 제3자에 대한 상해·재물 손해에 관한 이용자의 배상책임을 보장하는 보험이다.'
+  - targetTerm: Loss of Use
+    explanation: 'Loss of use is a charge the company tries to collect for downtime; LDW is the product that, when purchased, typically waives the renter''s exposure to loss of use (and theft) on top of collision damage.'
+    explanation_ko: 'Loss of use는 회사가 휴차 기간에 대해 받아 내려는 청구이고, LDW는 가입 시 충돌 손해에 더해 이용자의 휴차 손실(및 도난) 부담을 통상 면제해 주는 상품이다.'
 sources:
   - org: ''
     name: What Is the Difference Between CDW and LDW?
     version: ''
     section: ''
-    url: ''
+    url: 'https://wallethub.com/answers/ci/ldw-vs-cdw-2140752380/'
   - org: ''
     name: 'What is a Loss Damage Waiver (LDW), and What Does It Cover?'
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.finalrentals.com/blog/single/what-is-a-loss-damage-waiver-ldw'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5l15 5v10c0 9-6 16-15 19-9-3-15-10-15-19V10z"/><path d="M16 25l4 4 9-9"/><circle cx="24" cy="21" r="1" fill="currentColor" stroke="none"/></svg>
 ---
 
@@ -60,13 +63,14 @@ LDW는 충돌 손해 면책에 도난 보호를 결합하고, 흔히 휴차 손�
 
 # Related
 - [Collision Damage Waiver](/ground/car/collision-damage-waiver.md) — broader
-- [Supplemental Liability Insurance](/ground/car/supplemental-liability-insurance.md) — related
-- [Rental Agreement](/ground/car/rental-agreement.md) — related
+- [Supplemental Liability Insurance](/ground/car/supplemental-liability-insurance.md) — contrasts
+- [Rental Agreement](/ground/car/rental-agreement.md) — parent
 
 # Distinctions
 - **Loss Damage Waiver** vs [Collision Damage Waiver](/ground/car/collision-damage-waiver.md) — LDW adds theft protection (and usually loss-of-use) on top of the collision-only coverage of CDW, making it the broader waiver; in the US it is now the standard product sold.
 - **Loss Damage Waiver** vs [Supplemental Liability Insurance](/ground/car/supplemental-liability-insurance.md) — LDW (a waiver) covers loss of or damage to the rented vehicle; SLI is insurance covering the renter's liability to third parties for injury and property damage.
+- **Loss Damage Waiver** vs [Loss of Use](/ground/car/loss-of-use.md) — Loss of use is a charge the company tries to collect for downtime; LDW is the product that, when purchased, typically waives the renter's exposure to loss of use (and theft) on top of collision damage.
 
 # Citations
-[1] What Is the Difference Between CDW and LDW?
-[2] What is a Loss Damage Waiver (LDW), and What Does It Cover?
+[1] [What Is the Difference Between CDW and LDW?](https://wallethub.com/answers/ci/ldw-vs-cdw-2140752380/)
+[2] [What is a Loss Damage Waiver (LDW), and What Does It Cover?](https://www.finalrentals.com/blog/single/what-is-a-loss-damage-waiver-ldw)

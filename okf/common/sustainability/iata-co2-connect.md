@@ -21,9 +21,9 @@ aliases:
   - IATA CO2 Connect
   - CO2 Connect
 relationships:
-  - type: related
+  - type: contrasts
     targetTerm: ICAO Carbon Emissions Calculator (ICEC)
-  - type: related
+  - type: contrasts
     targetTerm: Flight Emissions Label (FEL)
   - type: related
     targetTerm: GHG Protocol Scope 3 (Business Travel)
@@ -34,17 +34,20 @@ distinctions:
   - targetTerm: Flight Emissions Label (FEL)
     explanation: IATA CO2 Connect is a calculator/methodology that produces emissions figures; the FEL is the EU regulatory labelling scheme that displays officially verified per-flight emissions.
     explanation_ko: 'IATA CO2 Connect은 배출 수치를 산출하는 계산기이자 방법론이고, FEL은 공식 검증된 항공편별 배출량을 표시하는 EU 규제 라벨링 제도이다.'
+  - targetTerm: GHG Protocol Scope 3 (Business Travel)
+    explanation: Scope 3 Category 6 defines what corporate travel emissions to account for and how to report them; IATA CO2 Connect is one data source/calculator that can supply the per-flight figures used in that accounting.
+    explanation_ko: 'Scope 3 카테고리 6은 어떤 출장 배출을 회계 대상으로 하고 어떻게 보고할지를 정의하고, IATA CO2 Connect은 그 회계에 쓰이는 항공편별 수치를 제공할 수 있는 데이터 출처/계산기 중 하나이다.'
 sources:
   - org: IATA
     name: IATA CO2 Connect
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/services/data/environment-sustainability/co2-connect/'
   - org: IATA
     name: Passenger CO2 Calculation Methodology (Recommended Practice 1726)
     version: RP 1726
     section: ''
-    url: ''
+    url: 'https://www.iata.org/contentassets/139d686fa8f34c4ba7a41f7ba3e026e7/iata-rp-1726_passenger-co2.pdf'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 24a18 18 0 0 1 36 0"/><path d="M24 24l9-6"/><circle cx="24" cy="24" r="2.5" fill="currentColor"/><path d="M10 24h-3M41 24h-3M24 9V6"/><path d="M14 36a8 8 0 0 0 0 4M20 38h8"/></svg>
 ---
 
@@ -59,14 +62,15 @@ Developed with an airline working group and validated with aircraft manufacturer
 **Aliases:** `IATA CO2 Connect`, `CO2 Connect`
 
 # Related
-- [ICAO Carbon Emissions Calculator (ICEC)](/common/sustainability/icao-carbon-emissions-calculator-icec.md) — related
-- [Flight Emissions Label (FEL)](/common/sustainability/flight-emissions-label-fel.md) — related
+- [ICAO Carbon Emissions Calculator (ICEC)](/common/sustainability/icao-carbon-emissions-calculator-icec.md) — contrasts
+- [Flight Emissions Label (FEL)](/common/sustainability/flight-emissions-label-fel.md) — contrasts
 - [GHG Protocol Scope 3 (Business Travel)](/common/sustainability/ghg-protocol-scope-3-business-travel.md) — related
 
 # Distinctions
 - **IATA CO2 Connect** vs [ICAO Carbon Emissions Calculator (ICEC)](/common/sustainability/icao-carbon-emissions-calculator-icec.md) — IATA CO2 Connect uses participating airlines' actual fuel-burn data under RP 1726; ICEC is ICAO's open, modelled distance-based methodology using globally harmonized averages — they can yield different figures for the same flight.
 - **IATA CO2 Connect** vs [Flight Emissions Label (FEL)](/common/sustainability/flight-emissions-label-fel.md) — IATA CO2 Connect is a calculator/methodology that produces emissions figures; the FEL is the EU regulatory labelling scheme that displays officially verified per-flight emissions.
+- **IATA CO2 Connect** vs [GHG Protocol Scope 3 (Business Travel)](/common/sustainability/ghg-protocol-scope-3-business-travel.md) — Scope 3 Category 6 defines what corporate travel emissions to account for and how to report them; IATA CO2 Connect is one data source/calculator that can supply the per-flight figures used in that accounting.
 
 # Citations
-[1] IATA — IATA CO2 Connect
-[2] IATA — Passenger CO2 Calculation Methodology (Recommended Practice 1726) — RP 1726
+[1] [IATA — IATA CO2 Connect](https://www.iata.org/en/services/data/environment-sustainability/co2-connect/)
+[2] [IATA — Passenger CO2 Calculation Methodology (Recommended Practice 1726) — RP 1726](https://www.iata.org/contentassets/139d686fa8f34c4ba7a41f7ba3e026e7/iata-rp-1726_passenger-co2.pdf)

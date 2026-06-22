@@ -48,17 +48,20 @@ distinctions:
   - targetTerm: PNR
     explanation: 'The PNR is the full reservation data record (names, segments, contacts, SSRs); the Record Locator is merely the short key used to retrieve that record. One trip can have several locators pointing to copies of essentially the same PNR data.'
     explanation_ko: 'PNR은 이름, segment, 연락처, SSR 등 예약 데이터 전체 레코드이고, Record Locator는 그 레코드를 조회하는 짧은 key일 뿐이다. 한 여정에 여러 locator가 사실상 같은 PNR 데이터 사본을 가리킬 수 있다.'
+  - targetTerm: PNR History
+    explanation: 'A Record Locator is the short key used to retrieve a booking; PNR History is the internal change log of that booking, not an identifier.'
+    explanation_ko: 'Record Locator는 예약을 조회하는 짧은 key이고, PNR History는 그 예약의 내부 변경 로그이지 식별자가 아니다.'
 sources:
   - org: IATA
     name: Passenger Services Conference Resolutions Manual (PSCRM)
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
   - org: Travelport
     name: Travelport+ (Galileo) Format Guide
     version: ''
     section: ''
-    url: ''
+    url: 'https://support.travelport.com/webhelp/Formats/Content/Resources/MiniGuide/FormatsMiniGuidev2.pdf'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="14" width="34" height="20" rx="3"/><path d="M14 22h6M14 28h12M28 22h6"/><circle cx="33" cy="28" r="3.5"/><path d="M35.5 30.5 39 34"/></svg>
 ---
 
@@ -87,7 +90,8 @@ Each reservation system that holds a copy of a booking generates its own Record 
 
 # Distinctions
 - **Record Locator** vs [PNR](/air/air-ops/pnr.md) — The PNR is the full reservation data record (names, segments, contacts, SSRs); the Record Locator is merely the short key used to retrieve that record. One trip can have several locators pointing to copies of essentially the same PNR data.
+- **Record Locator** vs [PNR History](/air/air-ops/pnr-history.md) — A Record Locator is the short key used to retrieve a booking; PNR History is the internal change log of that booking, not an identifier.
 
 # Citations
-[1] IATA — Passenger Services Conference Resolutions Manual (PSCRM)
-[2] Travelport — Travelport+ (Galileo) Format Guide
+[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
+[2] [Travelport — Travelport+ (Galileo) Format Guide](https://support.travelport.com/webhelp/Formats/Content/Resources/MiniGuide/FormatsMiniGuidev2.pdf)

@@ -22,7 +22,7 @@ aliases:
   - SCA
   - Strong Customer Authentication (PSD2)
 relationships:
-  - type: related
+  - type: contrasts
     targetTerm: 3-D Secure
   - type: related
     targetTerm: Chargeback
@@ -32,17 +32,20 @@ distinctions:
   - targetTerm: 3-D Secure
     explanation: SCA is the regulatory requirement (the 'what' and 'why'); 3-D Secure is a technical authentication protocol commonly used to satisfy SCA for online card payments (the 'how').
     explanation_ko: 'SCA는 규제 요건(무엇을·왜)이고, 3-D Secure는 온라인 카드 결제에서 SCA를 충족하기 위해 흔히 쓰이는 기술적 인증 프로토콜(어떻게)이다.'
+  - targetTerm: Transparency in Payments (TIP)
+    explanation: SCA is an EU regulatory authentication requirement protecting consumers; TIP is an IATA industry framework controlling airline card acceptance in the BSP agency channel. They address different aspects of payment.
+    explanation_ko: 'SCA는 소비자를 보호하는 EU 규제 인증 요건이고, TIP는 BSP 여행사 채널에서 항공사의 카드 수용을 통제하는 IATA 업계 프레임워크다. 둘은 결제의 서로 다른 측면을 다룬다.'
 sources:
   - org: European Banking Authority
     name: Regulatory Technical Standards on strong customer authentication and common and secure communication under PSD2
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.eba.europa.eu/regulation-and-policy/payment-services-and-electronic-money/regulatory-technical-standards-on-strong-customer-authentication-and-secure-communication-under-psd2'
   - org: European Union
     name: Revised Payment Services Directive (PSD2)
     version: ''
     section: ''
-    url: ''
+    url: 'https://eur-lex.europa.eu/eli/dir/2015/2366/oj/eng'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="20" width="30" height="20" rx="2.5"/><path d="M16 20v-5a8 8 0 0 1 16 0v5"/><circle cx="24" cy="29" r="2.5"/><path d="M24 31.5V35"/></svg>
 ---
 
@@ -57,13 +60,14 @@ SCA는 PSD2에 의해 의무화되며, 유럽은행감독청(EBA)의 강력한 �
 **Aliases:** `SCA`, `Strong Customer Authentication (PSD2)`
 
 # Related
-- [3-D Secure](/common/pay/3-d-secure.md) — related
+- [3-D Secure](/common/pay/3-d-secure.md) — contrasts
 - [Chargeback](/common/pay/chargeback.md) — related
 - [PCI DSS](/common/pay/pci-dss.md) — related
 
 # Distinctions
 - **Strong Customer Authentication** vs [3-D Secure](/common/pay/3-d-secure.md) — SCA is the regulatory requirement (the 'what' and 'why'); 3-D Secure is a technical authentication protocol commonly used to satisfy SCA for online card payments (the 'how').
+- **Strong Customer Authentication** vs [Transparency in Payments (TIP)](/common/pay/transparency-in-payments-tip.md) — SCA is an EU regulatory authentication requirement protecting consumers; TIP is an IATA industry framework controlling airline card acceptance in the BSP agency channel. They address different aspects of payment.
 
 # Citations
-[1] European Banking Authority — Regulatory Technical Standards on strong customer authentication and common and secure communication under PSD2
-[2] European Union — Revised Payment Services Directive (PSD2)
+[1] [European Banking Authority — Regulatory Technical Standards on strong customer authentication and common and secure communication under PSD2](https://www.eba.europa.eu/regulation-and-policy/payment-services-and-electronic-money/regulatory-technical-standards-on-strong-customer-authentication-and-secure-communication-under-psd2)
+[2] [European Union — Revised Payment Services Directive (PSD2)](https://eur-lex.europa.eu/eli/dir/2015/2366/oj/eng)

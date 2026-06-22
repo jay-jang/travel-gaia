@@ -22,9 +22,9 @@ aliases:
 relationships:
   - type: broader
     targetTerm: Revenue Management
-  - type: related
+  - type: contrasts
     targetTerm: Protection Level
-  - type: related
+  - type: contrasts
     targetTerm: Bid Price
   - type: related
     targetTerm: Availability
@@ -37,6 +37,9 @@ distinctions:
   - targetTerm: Availability
     explanation: Availability is what the seller sees per class at query time; the booking limit is the internal control whose remaining headroom produces that availability.
     explanation_ko: 'Availability는 조회 시점에 판매자가 클래스별로 보는 값이고, booking limit은 그 잔여 여유분이 해당 availability를 만들어내는 내부 통제값이다.'
+  - targetTerm: Bid Price
+    explanation: 'A booking limit caps the number of seats sellable in a class; a bid price is a value threshold a fare must beat. They are two interchangeable ways to express the same seat-allocation control, but bid-price control scales naturally to network/O&D decisions where class limits do not.'
+    explanation_ko: 'Booking limit은 한 클래스에서 판매 가능한 좌석 수의 상한이고, bid price는 운임이 넘어야 하는 값 임계치이다. 둘은 동일한 좌석 배분 통제를 표현하는 상호 교환 가능한 방식이지만, bid-price 통제는 클래스 한도로는 다루기 어려운 네트워크/O&D 의사결정에 자연스럽게 확장된다.'
 sources:
   - org: MIT OpenCourseWare
     name: '16.75J Airline Management - Introduction to Revenue Management (MIT ICAT, Belobaba)'
@@ -63,14 +66,15 @@ Booking limit은 일반적으로 nesting(네스팅)된다. 즉 낮은 가치 클
 
 # Related
 - [Revenue Management](/air/air-shop/revenue-management.md) — broader
-- [Protection Level](/air/air-shop/protection-level.md) — related
-- [Bid Price](/air/air-shop/bid-price.md) — related
+- [Protection Level](/air/air-shop/protection-level.md) — contrasts
+- [Bid Price](/air/air-shop/bid-price.md) — contrasts
 - [Availability](/air/air-shop/availability.md) — related
 - [RBD](/air/air-shop/rbd.md) — related
 
 # Distinctions
 - **Booking Limit** vs [Protection Level](/air/air-shop/protection-level.md) — A protection level is the number of seats reserved for higher-value classes; a booking limit is the maximum a class may sell. In a nested two-class scheme they are complementary: the lower class's booking limit equals capacity minus the higher class's protection level.
 - **Booking Limit** vs [Availability](/air/air-shop/availability.md) — Availability is what the seller sees per class at query time; the booking limit is the internal control whose remaining headroom produces that availability.
+- **Booking Limit** vs [Bid Price](/air/air-shop/bid-price.md) — A booking limit caps the number of seats sellable in a class; a bid price is a value threshold a fare must beat. They are two interchangeable ways to express the same seat-allocation control, but bid-price control scales naturally to network/O&D decisions where class limits do not.
 
 # Citations
 [1] [MIT OpenCourseWare — 16.75J Airline Management - Introduction to Revenue Management (MIT ICAT, Belobaba) — Booking limits and nested seat inventory control](https://ocw.mit.edu/courses/16-75j-airline-management-spring-2006/2e0689d14860f52fbd0ea84a07d48048_lect18.pdf)

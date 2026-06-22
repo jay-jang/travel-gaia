@@ -32,7 +32,7 @@ providerTerms:
 relationships:
   - type: contrasts
     targetTerm: BSP
-  - type: related
+  - type: contrasts
     targetTerm: IATA Clearing House
   - type: related
     targetTerm: Simplified Invoicing and Settlement (SIS)
@@ -79,7 +79,7 @@ IATA Settlement Systems(ISS) 하에서 운영되는 CASS는 개별 항공사-포
 
 # Related
 - [BSP](/common/pay/bsp.md) — contrasts
-- [IATA Clearing House](/common/pay/iata-clearing-house.md) — related
+- [IATA Clearing House](/common/pay/iata-clearing-house.md) — contrasts
 - [Simplified Invoicing and Settlement (SIS)](/common/pay/simplified-invoicing-and-settlement-sis.md) — related
 - [Settlement Cycle](/common/pay/settlement-cycle.md) — related
 - [Remittance](/common/pay/remittance.md) — related

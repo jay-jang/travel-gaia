@@ -34,12 +34,15 @@ distinctions:
   - targetTerm: OpenTravel Alliance
     explanation: HTNG focuses on hospitality-system interoperability standards/frameworks; OpenTravel maintains the broader cross-sector travel XML message vocabulary HTNG often builds upon.
     explanation_ko: 'HTNG은 호스피탈리티 시스템 상호운용성 표준과 프레임워크에 집중하고, OpenTravel은 HTNG이 흔히 기반으로 삼는 더 광범위한 범산업 여행 XML 메시지 어휘를 유지한다.'
+  - targetTerm: HEDNA
+    explanation: 'HTNG focuses on hospitality technology interoperability specifications among hotel systems; HEDNA focuses specifically on the electronic distribution side and the distribution-partner community, though the two collaborate (e.g. on OPA).'
+    explanation_ko: 'HTNG은 호텔 시스템 간 호스피탈리티 기술 상호운용 사양에 초점을 두고, HEDNA는 전자 유통 측면과 유통 파트너 커뮤니티에 특화되어 있으나 양자는 (예: OPA에서) 협력한다.'
 sources:
   - name: HTNG Standards and Specifications
     org: HTNG (AHLA)
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.ahla.com/htng'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M8 40V14l16-6 16 6v26"/><path d="M4 40h40"/><path d="M14 40v-8h6v8M28 40v-8h6v8"/><path d="M16 20h2M22 20h2M28 20h2M16 25h2M22 25h2M28 25h2"/></svg>
 ---
 
@@ -61,6 +64,7 @@ HTNG은 호텔 시스템(예: PMS, CRS, 채널 매니저, 객실 내 기술) 간
 
 # Distinctions
 - **HTNG** vs [OpenTravel Alliance](/common/standards/opentravel-alliance.md) — HTNG focuses on hospitality-system interoperability standards/frameworks; OpenTravel maintains the broader cross-sector travel XML message vocabulary HTNG often builds upon.
+- **HTNG** vs [HEDNA](/lodging/hotel-dist/hedna.md) — HTNG focuses on hospitality technology interoperability specifications among hotel systems; HEDNA focuses specifically on the electronic distribution side and the distribution-partner community, though the two collaborate (e.g. on OPA).
 
 # Citations
-[1] HTNG (AHLA) — HTNG Standards and Specifications
+[1] [HTNG (AHLA) — HTNG Standards and Specifications](https://www.ahla.com/htng)

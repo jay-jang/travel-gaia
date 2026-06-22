@@ -22,16 +22,19 @@ aliases:
   - Supplemental Liability Protection
   - Additional Liability Insurance
 relationships:
-  - type: related
+  - type: contrasts
     targetTerm: Loss Damage Waiver
-  - type: related
+  - type: contrasts
     targetTerm: Collision Damage Waiver
-  - type: related
+  - type: parent
     targetTerm: Rental Agreement
 distinctions:
   - targetTerm: Loss Damage Waiver
     explanation: SLI covers the renter's liability for injury/property damage to third parties; LDW (and CDW) cover loss of or damage to the rented vehicle itself. They protect against opposite sides of an incident.
     explanation_ko: 'SLI는 제3자에 대한 상해·재물 손해에 관한 이용자의 배상책임을 보장하고, LDW(및 CDW)는 대여 차량 자체의 분실·손해를 보장한다. 사고의 서로 반대편을 보호한다.'
+  - targetTerm: Collision Damage Waiver
+    explanation: CDW (a waiver) addresses damage to the rented vehicle itself; SLI is true insurance covering the renter's legal liability for third-party injury and property damage to others.
+    explanation_ko: 'CDW(면책)는 대여 차량 자체의 손해를 다루고, SLI는 제3자에 대한 신체 상해 및 재물 손해에 대한 이용자의 법적 배상책임을 보장하는 실제 보험이다.'
 sources:
   - org: Alamo Rent A Car
     name: Supplement Liability Insurance (SLI)
@@ -62,12 +65,13 @@ SLI는 공급사가 의무적으로 보유해야 하는 기본 법정 최저 한
 **Aliases:** `Supplemental Liability Insurance`, `SLI`, `Supplemental Liability Protection`, `Additional Liability Insurance`
 
 # Related
-- [Loss Damage Waiver](/ground/car/loss-damage-waiver.md) — related
-- [Collision Damage Waiver](/ground/car/collision-damage-waiver.md) — related
-- [Rental Agreement](/ground/car/rental-agreement.md) — related
+- [Loss Damage Waiver](/ground/car/loss-damage-waiver.md) — contrasts
+- [Collision Damage Waiver](/ground/car/collision-damage-waiver.md) — contrasts
+- [Rental Agreement](/ground/car/rental-agreement.md) — parent
 
 # Distinctions
 - **Supplemental Liability Insurance** vs [Loss Damage Waiver](/ground/car/loss-damage-waiver.md) — SLI covers the renter's liability for injury/property damage to third parties; LDW (and CDW) cover loss of or damage to the rented vehicle itself. They protect against opposite sides of an incident.
+- **Supplemental Liability Insurance** vs [Collision Damage Waiver](/ground/car/collision-damage-waiver.md) — CDW (a waiver) addresses damage to the rented vehicle itself; SLI is true insurance covering the renter's legal liability for third-party injury and property damage to others.
 
 # Citations
 [1] [Alamo Rent A Car — Supplement Liability Insurance (SLI) — Insurance Coverage Options FAQ](https://www.alamo.com/en/customer-support/car-rental-faqs/insurance-coverage-options/supplement-liability-insurance.html)

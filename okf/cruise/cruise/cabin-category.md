@@ -25,11 +25,11 @@ aliases:
 relationships:
   - type: sameAs
     targetTerm: Room Type
-  - type: related
+  - type: narrower
     targetTerm: Guarantee Cabin (GTY)
   - type: related
     targetTerm: Single Supplement
-  - type: related
+  - type: contrasts
     targetTerm: Availability
   - type: related
     targetTerm: Revenue Management
@@ -50,7 +50,7 @@ sources:
     org: OpenTravel Alliance
     version: ''
     section: ''
-    url: ''
+    url: 'https://opentravel.org/download-specs/'
   - name: Room Types & Included Amenities (cruise FAQ)
     org: Cruise industry
     version: ''
@@ -71,9 +71,9 @@ A cruise line publishes a category ladder: a small number of meta-categories (in
 
 # Related
 - [Room Type](/lodging/hotel-rate/room-type.md) — sameAs
-- [Guarantee Cabin (GTY)](/cruise/cruise/guarantee-cabin-gty.md) — related
+- [Guarantee Cabin (GTY)](/cruise/cruise/guarantee-cabin-gty.md) — narrower
 - [Single Supplement](/cruise/cruise/single-supplement.md) — related
-- [Availability](/air/air-shop/availability.md) — related
+- [Availability](/air/air-shop/availability.md) — contrasts
 - [Revenue Management](/air/air-shop/revenue-management.md) — related
 
 # Distinctions
@@ -82,5 +82,5 @@ A cruise line publishes a category ladder: a small number of meta-categories (in
 
 # Citations
 [1] Cruise industry — Cruising Terms (cruise glossary)
-[2] OpenTravel Alliance — OpenTravel Specification (cruise message set: cabin category availability and pricing)
+[2] [OpenTravel Alliance — OpenTravel Specification (cruise message set: cabin category availability and pricing)](https://opentravel.org/download-specs/)
 [3] Cruise industry — Room Types & Included Amenities (cruise FAQ)

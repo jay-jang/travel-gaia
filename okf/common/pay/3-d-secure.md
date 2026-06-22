@@ -30,7 +30,7 @@ providerTerms:
     context_ko: EMVCo가 EMV 3DS 프로토콜을 규정하고 관리한다
     relationship: same
 relationships:
-  - type: related
+  - type: contrasts
     targetTerm: Chargeback
   - type: related
     targetTerm: Merchant of Record
@@ -40,6 +40,15 @@ distinctions:
   - targetTerm: Chargeback
     explanation: '3-D Secure authenticates the cardholder up front and can shift fraud liability, whereas a chargeback is a post-transaction dispute reversal.'
     explanation_ko: '3-D Secure는 거래 전에 카드 소지자를 인증하여 사기 책임을 전환할 수 있는 반면, 차지백은 거래 후 분쟁에 따른 거래 취소다.'
+  - targetTerm: IATA Pay
+    explanation: '3-D Secure is a card authentication layer; IATA Pay is not a card method at all and instead relies on the customer''s bank authentication under open-banking rules, so 3DS does not apply to it.'
+    explanation_ko: '3-D Secure는 카드 인증 계층이지만, IATA Pay는 애초에 카드 방식이 아니며 오픈뱅킹 규칙 하에서 고객 은행의 인증에 의존하므로 3DS가 적용되지 않는다.'
+  - targetTerm: PCI DSS
+    explanation: 'PCI DSS is a broad data-security compliance standard for protecting stored and transmitted cardholder data, while 3-D Secure is a specific cardholder authentication protocol applied at the moment of an e-commerce transaction.'
+    explanation_ko: 'PCI DSS는 저장·전송되는 카드 데이터를 보호하는 광범위한 데이터 보안 준수 표준이고, 3-D Secure는 전자상거래 거래 시점에 적용되는 특정 카드 소지자 인증 프로토콜이다.'
+  - targetTerm: Strong Customer Authentication
+    explanation: SCA is the regulatory requirement (the 'what' and 'why'); 3-D Secure is a technical authentication protocol commonly used to satisfy SCA for online card payments (the 'how').
+    explanation_ko: 'SCA는 규제 요건(무엇을·왜)이고, 3-D Secure는 온라인 카드 결제에서 SCA를 충족하기 위해 흔히 쓰이는 기술적 인증 프로토콜(어떻게)이다.'
 sources:
   - name: EMV 3-D Secure
     org: EMVCo
@@ -71,12 +80,15 @@ The name refers to the three domains involved: the issuer (cardholder) domain, t
 | EMVCo | `EMV 3-D Secure` | same | EMVCo specifies and manages the EMV 3DS protocol |
 
 # Related
-- [Chargeback](/common/pay/chargeback.md) — related
+- [Chargeback](/common/pay/chargeback.md) — contrasts
 - [Merchant of Record](/common/pay/merchant-of-record.md) — related
 - [VCC](/common/pay/vcc.md) — related
 
 # Distinctions
 - **3-D Secure** vs [Chargeback](/common/pay/chargeback.md) — 3-D Secure authenticates the cardholder up front and can shift fraud liability, whereas a chargeback is a post-transaction dispute reversal.
+- **3-D Secure** vs [IATA Pay](/common/pay/iata-pay.md) — 3-D Secure is a card authentication layer; IATA Pay is not a card method at all and instead relies on the customer's bank authentication under open-banking rules, so 3DS does not apply to it.
+- **3-D Secure** vs [PCI DSS](/common/pay/pci-dss.md) — PCI DSS is a broad data-security compliance standard for protecting stored and transmitted cardholder data, while 3-D Secure is a specific cardholder authentication protocol applied at the moment of an e-commerce transaction.
+- **3-D Secure** vs [Strong Customer Authentication](/common/pay/strong-customer-authentication.md) — SCA is the regulatory requirement (the 'what' and 'why'); 3-D Secure is a technical authentication protocol commonly used to satisfy SCA for online card payments (the 'how').
 
 # Citations
 [1] [EMVCo — EMV 3-D Secure](https://www.emvco.com/emv-technologies/3-d-secure/)

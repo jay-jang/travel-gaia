@@ -40,17 +40,29 @@ distinctions:
   - targetTerm: ReFuelEU Aviation
     explanation: SAF is the fuel itself; ReFuelEU Aviation is the EU regulation that legally mandates minimum SAF blending shares for fuel supplied at EU airports.
     explanation_ko: 'SAF는 연료 자체이고, ReFuelEU Aviation은 EU 공항에 공급되는 연료의 최소 SAF 혼합 비율을 법적으로 의무화하는 EU 규정이다.'
+  - targetTerm: Contrail (Non-CO2 Effects)
+    explanation: 'Contrails are a non-CO2 warming effect; SAF mainly targets CO2/lifecycle emissions, though its lower aromatics/soot content is also studied for reducing contrail formation — they address different but overlapping climate impacts.'
+    explanation_ko: '비행운은 비-CO2 가온 효과이고, SAF는 주로 CO2/전 주기 배출을 겨냥하지만 낮은 방향족·매연(soot) 함량이 비행운 형성 감소 측면에서도 연구되고 있어, 서로 다르되 겹치는 기후 영향을 다룬다.'
+  - targetTerm: CORSIA Eligible Fuel (CEF)
+    explanation: SAF is the broad fuel concept; CORSIA Eligible Fuel is the specific ICAO category (CORSIA SAF plus fossil-based LCAF) that has been certified against the CORSIA Sustainability Criteria for use in the scheme.
+    explanation_ko: 'SAF는 넓은 연료 개념이고, CORSIA Eligible Fuel은 CORSIA 지속가능성 기준에 따라 인증되어 제도에 사용 가능한 ICAO의 특정 범주(CORSIA SAF + 화석 기반 LCAF)다.'
+  - targetTerm: Fuel Supplement
+    explanation: 'SAF (and related fuel-cost or fee mechanisms) is an aviation decarbonization fuel whose cost may be passed to passengers; the cruise fuel supplement is purely a fossil-fuel cost-recovery surcharge with no emissions-reduction purpose, triggered by crude-oil price rather than fuel sustainability.'
+    explanation_ko: 'SAF(및 관련 연료비·요금 메커니즘)는 항공 탈탄소 연료로 그 비용이 승객에게 전가될 수 있는 반면, 크루즈 fuel supplement는 배출 저감 목적이 없는 순수 화석연료 원가 회수성 할증료로 연료 지속가능성이 아니라 원유 가격에 의해 발동된다.'
+  - targetTerm: Well-to-Wake (WtW)
+    explanation: SAF is the physical fuel; Well-to-Wake is the life-cycle accounting boundary used to measure and certify how much GHG that fuel actually saves versus fossil kerosene.
+    explanation_ko: 'SAF는 물리적 연료 자체이고, Well-to-Wake는 그 연료가 화석 등유 대비 실제로 얼마나 GHG를 줄이는지 측정·인증하는 데 쓰이는 전 주기 회계 경계다.'
 sources:
   - org: IATA
     name: Sustainable Aviation Fuel (SAF)
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/programs/sustainability/sustainable-aviation-fuel-saf/'
   - org: ICAO
     name: Sustainable Aviation Fuels (SAF)
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.icao.int/SAF'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8h12a2 2 0 0 1 2 2v30a4 4 0 0 1-4 4h-8a4 4 0 0 1-4-4V10a2 2 0 0 1 2-2z"/><path d="M16 16h14M20 6v2M26 6v2"/><path d="M24 22c3 3 4 5 4 8a4 4 0 0 1-8 0c0-3 1-5 4-8z"/></svg>
 ---
 
@@ -74,7 +86,11 @@ As a drop-in fuel, SAF uses existing aircraft, engines, and airport infrastructu
 # Distinctions
 - **Sustainable Aviation Fuel (SAF)** vs [CORSIA Eligible Emissions Unit (EEU)](/common/sustainability/corsia-eligible-emissions-unit-eeu.md) — SAF is a physical lower-carbon fuel that reduces emissions at the source (an in-sector reduction); an Emissions Unit is a purchased carbon credit that offsets emissions made elsewhere (out-of-sector).
 - **Sustainable Aviation Fuel (SAF)** vs [ReFuelEU Aviation](/common/sustainability/refueleu-aviation.md) — SAF is the fuel itself; ReFuelEU Aviation is the EU regulation that legally mandates minimum SAF blending shares for fuel supplied at EU airports.
+- **Sustainable Aviation Fuel (SAF)** vs [Contrail (Non-CO2 Effects)](/common/sustainability/contrail-non-co2-effects.md) — Contrails are a non-CO2 warming effect; SAF mainly targets CO2/lifecycle emissions, though its lower aromatics/soot content is also studied for reducing contrail formation — they address different but overlapping climate impacts.
+- **Sustainable Aviation Fuel (SAF)** vs [CORSIA Eligible Fuel (CEF)](/common/sustainability/corsia-eligible-fuel-cef.md) — SAF is the broad fuel concept; CORSIA Eligible Fuel is the specific ICAO category (CORSIA SAF plus fossil-based LCAF) that has been certified against the CORSIA Sustainability Criteria for use in the scheme.
+- **Sustainable Aviation Fuel (SAF)** vs [Fuel Supplement](/cruise/cruise/fuel-supplement.md) — SAF (and related fuel-cost or fee mechanisms) is an aviation decarbonization fuel whose cost may be passed to passengers; the cruise fuel supplement is purely a fossil-fuel cost-recovery surcharge with no emissions-reduction purpose, triggered by crude-oil price rather than fuel sustainability.
+- **Sustainable Aviation Fuel (SAF)** vs [Well-to-Wake (WtW)](/common/sustainability/well-to-wake-wtw.md) — SAF is the physical fuel; Well-to-Wake is the life-cycle accounting boundary used to measure and certify how much GHG that fuel actually saves versus fossil kerosene.
 
 # Citations
-[1] IATA — Sustainable Aviation Fuel (SAF)
-[2] ICAO — Sustainable Aviation Fuels (SAF)
+[1] [IATA — Sustainable Aviation Fuel (SAF)](https://www.iata.org/en/programs/sustainability/sustainable-aviation-fuel-saf/)
+[2] [ICAO — Sustainable Aviation Fuels (SAF)](https://www.icao.int/SAF)

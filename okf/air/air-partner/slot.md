@@ -30,12 +30,15 @@ distinctions:
   - targetTerm: Schedule Change
     explanation: 'A slot is the right to use the airport at a given time; a schedule change is an alteration to a published flight''s timing or routing, which may require obtaining or returning slots.'
     explanation_ko: '슬롯은 특정 시간에 공항을 사용할 권리이고, 스케줄 변경은 게시된 항공편의 시간이나 노선을 변경하는 것으로, 슬롯의 취득이나 반납이 필요할 수 있다.'
+  - targetTerm: MCT
+    explanation: 'MCT is the minimum passenger/baggage transfer time governing connection legality, whereas a slot is an allocated airport authorization to use runway/terminal capacity at a specific time.'
+    explanation_ko: 'MCT는 연결 적법성을 좌우하는 승객/수하물의 최소 환승 시간인 반면, slot은 특정 시각에 활주로/터미널 용량을 사용하도록 배정된 공항 허가다.'
 sources:
   - name: Worldwide Airport Slot Guidelines (WASG)
     org: IATA / ACI / WWACG
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/programs/ops-infra/slots/slot-guidelines/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="16"/><path d="M24 14v10l7 4"/><path d="M24 8v3M24 37v3M8 24h3M37 24h3"/></svg>
 ---
 
@@ -55,6 +58,7 @@ At Level 3 (fully coordinated) airports, a slot coordinator allocates slots base
 
 # Distinctions
 - **Slot** vs [Schedule Change](/air/air-partner/schedule-change.md) — A slot is the right to use the airport at a given time; a schedule change is an alteration to a published flight's timing or routing, which may require obtaining or returning slots.
+- **Slot** vs [MCT](/air/air-ops/mct.md) — MCT is the minimum passenger/baggage transfer time governing connection legality, whereas a slot is an allocated airport authorization to use runway/terminal capacity at a specific time.
 
 # Citations
-[1] IATA / ACI / WWACG — Worldwide Airport Slot Guidelines (WASG)
+[1] [IATA / ACI / WWACG — Worldwide Airport Slot Guidelines (WASG)](https://www.iata.org/en/programs/ops-infra/slots/slot-guidelines/)

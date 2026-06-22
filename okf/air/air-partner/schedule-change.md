@@ -41,12 +41,21 @@ distinctions:
   - targetTerm: Involuntary Reissue
     explanation: Schedule change is the triggering event; involuntary reissue is the resulting ticket action to reaccommodate the passenger at no additional fare.
     explanation_ko: '스케줄 변경은 촉발 사건이고, 비자발적 재발권은 추가 운임 없이 승객을 재수용하기 위해 그 결과로 이루어지는 항공권 처리다.'
+  - targetTerm: OrderChangeNotification (OCN)
+    explanation: A schedule change is the operational event (the flight time/routing changed); OCN is the NDC message that notifies the seller that the Order was affected by such an event.
+    explanation_ko: '스케줄 변경은 운영상의 사건(항공편 시각/경로가 바뀜)이고, OCN은 그 사건으로 Order가 영향받았음을 판매자에게 알리는 NDC 메시지이다.'
+  - targetTerm: Slot
+    explanation: 'A slot is the right to use the airport at a given time; a schedule change is an alteration to a published flight''s timing or routing, which may require obtaining or returning slots.'
+    explanation_ko: '슬롯은 특정 시간에 공항을 사용할 권리이고, 스케줄 변경은 게시된 항공편의 시간이나 노선을 변경하는 것으로, 슬롯의 취득이나 반납이 필요할 수 있다.'
+  - targetTerm: Standard Schedules Message
+    explanation: 'A schedule change is the business event of altering a published flight; the SSM is the standardized IATA message format that actually carries that creation, change, or cancellation to GDSs and partners.'
+    explanation_ko: '스케줄 변경은 게시된 항공편을 변경하는 비즈니스 사건이고, SSM은 그 생성·변경·취소를 실제로 GDS와 파트너에게 전달하는 표준화된 IATA 메시지 포맷이다.'
 sources:
   - name: Standard Schedules Information Manual (SSIM)
     org: IATA
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/standard-schedules-information/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="10" width="26" height="26" rx="2"/><path d="M8 17h26M14 7v6M28 7v6"/><circle cx="36" cy="34" r="8"/><path d="M36 30v4l3 2"/><path d="M30 30l-2-2v3h3"/></svg>
 ---
 
@@ -71,6 +80,9 @@ Schedule changes are communicated via standardized schedule messaging (for examp
 # Distinctions
 - **Schedule Change** vs [IROPS](/air/air-partner/irops.md) — Schedule change is a planned amendment to the published schedule communicated in advance; IROPS is unplanned day-of-operations disruption (delays, cancellations, diversions).
 - **Schedule Change** vs [Involuntary Reissue](/air/air-ticket/involuntary-reissue.md) — Schedule change is the triggering event; involuntary reissue is the resulting ticket action to reaccommodate the passenger at no additional fare.
+- **Schedule Change** vs [OrderChangeNotification (OCN)](/common/standards/orderchangenotification-ocn.md) — A schedule change is the operational event (the flight time/routing changed); OCN is the NDC message that notifies the seller that the Order was affected by such an event.
+- **Schedule Change** vs [Slot](/air/air-partner/slot.md) — A slot is the right to use the airport at a given time; a schedule change is an alteration to a published flight's timing or routing, which may require obtaining or returning slots.
+- **Schedule Change** vs [Standard Schedules Message](/air/air-partner/standard-schedules-message.md) — A schedule change is the business event of altering a published flight; the SSM is the standardized IATA message format that actually carries that creation, change, or cancellation to GDSs and partners.
 
 # Citations
-[1] IATA — Standard Schedules Information Manual (SSIM)
+[1] [IATA — Standard Schedules Information Manual (SSIM)](https://www.iata.org/en/publications/manuals/standard-schedules-information/)

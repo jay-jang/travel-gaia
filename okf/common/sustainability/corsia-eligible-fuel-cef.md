@@ -23,7 +23,7 @@ aliases:
   - CORSIA Eligible Fuels
   - CEF
 relationships:
-  - type: related
+  - type: broader
     targetTerm: Sustainable Aviation Fuel (SAF)
   - type: parent
     targetTerm: CORSIA (Carbon Offsetting and Reduction Scheme for International Aviation)
@@ -43,12 +43,12 @@ sources:
     name: CORSIA Eligible Fuels
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.icao.int/CORSIA/corsia-eligible-fuels'
   - org: ICAO
     name: Carbon Offsetting and Reduction Scheme for International Aviation (CORSIA)
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.icao.int/CORSIA'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M17 7h11a2 2 0 0 1 2 2v28a4 4 0 0 1-4 4h-7a4 4 0 0 1-4-4V9a2 2 0 0 1 2-2z"/><path d="M15 16h15M20 5v2M27 5v2"/><circle cx="22" cy="28" r="6"/><path d="M25 25a4 4 0 1 0 0 6"/></svg>
 ---
 
@@ -63,7 +63,7 @@ CORSIA에서 운영자의 상쇄 의무는 제도 기준선을 초과하는 배�
 **Aliases:** `CORSIA Eligible Fuel`, `CORSIA Eligible Fuels`, `CEF`
 
 # Related
-- [Sustainable Aviation Fuel (SAF)](/common/sustainability/sustainable-aviation-fuel-saf.md) — related
+- [Sustainable Aviation Fuel (SAF)](/common/sustainability/sustainable-aviation-fuel-saf.md) — broader
 - [CORSIA (Carbon Offsetting and Reduction Scheme for International Aviation)](/common/sustainability/corsia.md) — parent
 - [CORSIA Eligible Emissions Unit (EEU)](/common/sustainability/corsia-eligible-emissions-unit-eeu.md) — related
 - [Well-to-Wake (WtW)](/common/sustainability/well-to-wake-wtw.md) — related
@@ -73,5 +73,5 @@ CORSIA에서 운영자의 상쇄 의무는 제도 기준선을 초과하는 배�
 - **CORSIA Eligible Fuel (CEF)** vs [Sustainable Aviation Fuel (SAF)](/common/sustainability/sustainable-aviation-fuel-saf.md) — SAF is the broad fuel concept; CORSIA Eligible Fuel is the specific ICAO category (CORSIA SAF plus fossil-based LCAF) that has been certified against the CORSIA Sustainability Criteria for use in the scheme.
 
 # Citations
-[1] ICAO — CORSIA Eligible Fuels
-[2] ICAO — Carbon Offsetting and Reduction Scheme for International Aviation (CORSIA)
+[1] [ICAO — CORSIA Eligible Fuels](https://www.icao.int/CORSIA/corsia-eligible-fuels)
+[2] [ICAO — Carbon Offsetting and Reduction Scheme for International Aviation (CORSIA)](https://www.icao.int/CORSIA)

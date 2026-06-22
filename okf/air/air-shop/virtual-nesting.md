@@ -22,7 +22,7 @@ aliases:
 relationships:
   - type: broader
     targetTerm: Origin & Destination Control (O&D Control)
-  - type: related
+  - type: contrasts
     targetTerm: Bid Price
   - type: related
     targetTerm: Booking Limit
@@ -44,12 +44,12 @@ sources:
     name: 'van Ryzin & Vulcano, ''Simulation-Based Optimization of Virtual Nesting Controls for Network Revenue Management'', Operations Research 56(4), 865-880, 2008'
     version: ''
     section: ''
-    url: ''
+    url: 'https://doi.org/10.1287/opre.1080.0550'
   - org: Springer
     name: 'Talluri & van Ryzin, ''The Theory and Practice of Revenue Management'' (2004), Ch. on network capacity control / virtual nesting'
     version: ''
     section: ''
-    url: ''
+    url: 'https://link.springer.com/book/10.1007/b139000'
   - org: SSRN
     name: 'Nesting Booking Limits in Revenue Management: The Good, the Bad and the Ugly (Jean Michel Chapuis, 2008)'
     version: ''
@@ -70,7 +70,7 @@ American Airlines에서 도입된 virtual nesting(인덱싱 또는 매핑 방식
 
 # Related
 - [Origin & Destination Control (O&D Control)](/air/air-shop/origin-destination-control.md) — broader
-- [Bid Price](/air/air-shop/bid-price.md) — related
+- [Bid Price](/air/air-shop/bid-price.md) — contrasts
 - [Booking Limit](/air/air-shop/booking-limit.md) — related
 - [Protection Level](/air/air-shop/protection-level.md) — related
 - [Expected Marginal Seat Revenue (EMSR)](/air/air-shop/expected-marginal-seat-revenue.md) — related
@@ -81,6 +81,6 @@ American Airlines에서 도입된 virtual nesting(인덱싱 또는 매핑 방식
 - **Virtual Nesting** vs [Bid Price](/air/air-shop/bid-price.md) — Both are network RM controls, but virtual nesting keeps discrete nested buckets and booking limits per leg, whereas bid-price control replaces buckets with a continuous value threshold an itinerary's fare must clear across all its legs.
 
 # Citations
-[1] INFORMS / Operations Research — van Ryzin & Vulcano, 'Simulation-Based Optimization of Virtual Nesting Controls for Network Revenue Management', Operations Research 56(4), 865-880, 2008
-[2] Springer — Talluri & van Ryzin, 'The Theory and Practice of Revenue Management' (2004), Ch. on network capacity control / virtual nesting
+[1] [INFORMS / Operations Research — van Ryzin & Vulcano, 'Simulation-Based Optimization of Virtual Nesting Controls for Network Revenue Management', Operations Research 56(4), 865-880, 2008](https://doi.org/10.1287/opre.1080.0550)
+[2] [Springer — Talluri & van Ryzin, 'The Theory and Practice of Revenue Management' (2004), Ch. on network capacity control / virtual nesting](https://link.springer.com/book/10.1007/b139000)
 [3] [SSRN — Nesting Booking Limits in Revenue Management: The Good, the Bad and the Ugly (Jean Michel Chapuis, 2008)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1124707)

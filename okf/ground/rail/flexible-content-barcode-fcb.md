@@ -26,7 +26,7 @@ relationships:
     targetTerm: Fulfillment (Rail)
   - type: related
     targetTerm: OSDM
-  - type: related
+  - type: broader
     targetTerm: TAP TSI
   - type: contrasts
     targetTerm: E-ticket
@@ -37,17 +37,20 @@ distinctions:
   - targetTerm: E-ticket
     explanation: 'FCB is a self-validating, offline-checkable rail barcode; an air E-ticket is a coupon record held in a host system and validated against it. FCB enables PNR-less control, unlike GDS/host-dependent e-tickets.'
     explanation_ko: 'FCB는 오프라인 검증이 가능한 자체 검증형 철도 바코드이고, 항공 E-ticket은 호스트 시스템에 보관된 쿠폰 기록을 대조해 검증한다. FCB는 GDS/호스트 의존 e-ticket과 달리 무PNR 검표를 가능케 한다.'
+  - targetTerm: TAP TSI
+    explanation: 'TAP TSI is the overarching regulation; FCB is one specific technical artifact (the barcode standard, referenced as TD B.12) that helps satisfy its fulfillment/control requirements.'
+    explanation_ko: 'TAP TSI는 포괄적 규정이고, FCB는 그 발권/검표 요구를 충족하는 데 기여하는 구체적 기술 산물(TD B.12로 참조되는 바코드 표준)이다.'
 sources:
   - name: 'FCB: Flexible Content Barcode (factsheet)'
     org: UIC
     version: IRS 90918-9
     section: ''
-    url: ''
+    url: 'https://uic.org/passenger/passenger-services-group/article/fcb-flexible-content-barcode'
   - name: TAP TSI Technical Document B.12
     org: European Union Agency for Railways (ERA)
     version: ''
     section: B.12
-    url: ''
+    url: 'https://www.era.europa.eu/system/files/2022-10/Recommendation%20on%20TAP%20TSI%20Revision%20-%20Technical%20Document%20-%20B12.pdf'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M10 12v24M15 12v24M20 12v24M25 12v24M30 12v24M35 12v24M38 12v24" stroke-width="1.6"/><path d="M28 30l3 3 6-7"/></svg>
 ---
 
@@ -64,13 +67,14 @@ FCB는 계약 데이터와 비대칭 디지털 서명을 인코딩하여, 발행
 # Related
 - [Fulfillment (Rail)](/ground/rail/fulfillment-rail.md) — related
 - [OSDM](/ground/rail/osdm.md) — related
-- [TAP TSI](/ground/rail/tap-tsi.md) — related
+- [TAP TSI](/ground/rail/tap-tsi.md) — broader
 - [E-ticket](/air/air-ticket/e-ticket.md) — contrasts
 
 # Distinctions
 - **Flexible Content Barcode (FCB)** vs [Fulfillment (Rail)](/ground/rail/fulfillment-rail.md) — FCB is the signed-barcode container technology; fulfillment is the lifecycle step of issuing and controlling the ticket, which typically embeds an FCB.
 - **Flexible Content Barcode (FCB)** vs [E-ticket](/air/air-ticket/e-ticket.md) — FCB is a self-validating, offline-checkable rail barcode; an air E-ticket is a coupon record held in a host system and validated against it. FCB enables PNR-less control, unlike GDS/host-dependent e-tickets.
+- **Flexible Content Barcode (FCB)** vs [TAP TSI](/ground/rail/tap-tsi.md) — TAP TSI is the overarching regulation; FCB is one specific technical artifact (the barcode standard, referenced as TD B.12) that helps satisfy its fulfillment/control requirements.
 
 # Citations
-[1] UIC — FCB: Flexible Content Barcode (factsheet) — IRS 90918-9
-[2] European Union Agency for Railways (ERA) — TAP TSI Technical Document B.12 — B.12
+[1] [UIC — FCB: Flexible Content Barcode (factsheet) — IRS 90918-9](https://uic.org/passenger/passenger-services-group/article/fcb-flexible-content-barcode)
+[2] [European Union Agency for Railways (ERA) — TAP TSI Technical Document B.12 — B.12](https://www.era.europa.eu/system/files/2022-10/Recommendation%20on%20TAP%20TSI%20Revision%20-%20Technical%20Document%20-%20B12.pdf)

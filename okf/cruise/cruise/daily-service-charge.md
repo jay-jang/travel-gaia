@@ -37,9 +37,9 @@ relationships:
     targetTerm: Onboard Credit (OBC)
   - type: related
     targetTerm: Cruise-Only Fare
-  - type: related
+  - type: contrasts
     targetTerm: Surcharge
-  - type: related
+  - type: contrasts
     targetTerm: Ancillary Service
   - type: related
     targetTerm: Non-Commissionable Fare (NCF)
@@ -87,8 +87,8 @@ Mainstream ocean lines levy a fixed daily service charge per guest (children usu
 # Related
 - [Onboard Credit (OBC)](/cruise/cruise/onboard-credit-obc.md) — contrasts
 - [Cruise-Only Fare](/cruise/cruise/cruise-only-fare.md) — related
-- [Surcharge](/air/air-shop/surcharge.md) — related
-- [Ancillary Service](/air/air-ticket/ancillary-service.md) — related
+- [Surcharge](/air/air-shop/surcharge.md) — contrasts
+- [Ancillary Service](/air/air-ticket/ancillary-service.md) — contrasts
 - [Non-Commissionable Fare (NCF)](/cruise/cruise/non-commissionable-fare-ncf.md) — related
 
 # Distinctions

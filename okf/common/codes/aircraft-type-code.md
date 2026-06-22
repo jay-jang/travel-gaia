@@ -30,9 +30,9 @@ providerTerms:
     context_ko: OAG 스케줄 데이터는 IATA(3자리)·ICAO(4자리) 장비 코드와 OAG 권장 기종을 함께 제공한다
     relationship: related
 relationships:
-  - type: related
+  - type: broader
     targetTerm: IATA Code
-  - type: related
+  - type: broader
     targetTerm: ICAO Code
   - type: related
     targetTerm: Flight Number
@@ -42,12 +42,18 @@ distinctions:
   - targetTerm: ICAO Code
     explanation: 'The IATA aircraft type code is 3 characters for commercial/schedule use; the ICAO aircraft type designator is up to 4 characters for ATC and flight planning, reflecting performance rather than commercial differences.'
     explanation_ko: 'IATA 항공기 기종 코드는 상업·스케줄 용도의 3자리이고, ICAO 항공기 기종 지정 코드는 ATC·비행 계획용의 최대 4자리로 상업적 차이가 아니라 성능 차이를 반영한다.'
+  - targetTerm: Aircraft Registration
+    explanation: 'An aircraft type code names a class/variant of aircraft (e.g., 738 / B738 for a 737-800); the aircraft registration names one specific airframe of that type (e.g., G-EUYA). Type is shared by many aircraft; the registration is unique to one.'
+    explanation_ko: '항공기 기종 코드는 항공기의 부류/형식(예: 737-800에 대한 738 / B738)을 가리키지만, 항공기 등록기호는 그 기종에 속한 하나의 특정 기체(예: G-EUYA)를 가리킨다. 기종은 여러 항공기가 공유하지만, 등록기호는 한 대에만 고유하다.'
+  - targetTerm: Service Type Code
+    explanation: 'The aircraft type code says which equipment operates the leg; the Service Type Code says the commercial nature of the operation, independent of the aircraft used.'
+    explanation_ko: '항공기 기종 코드는 해당 구간을 어떤 장비가 운항하는지를 나타내고, 서비스 유형 코드는 사용 항공기와 무관하게 그 운항의 상업적 성격을 나타낸다.'
 sources:
   - org: IATA
     name: Standard Schedules Information Manual (SSIM)
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/standard-schedules-information/'
   - org: OAG
     name: 'Master Data: Equipment Data Fields Explained'
     version: ''
@@ -78,15 +84,17 @@ IATA 항공기 기종 지정 코드는 3자리이며, 스케줄·표시 화면·
 | OAG | `Equipment / Aircraft Type` | related | OAG schedule data carries IATA (3-char) and ICAO (4-char) equipment codes plus an OAG recommended type |
 
 # Related
-- [IATA Code](/common/codes/iata-code.md) — related
-- [ICAO Code](/common/codes/icao-code.md) — related
+- [IATA Code](/common/codes/iata-code.md) — broader
+- [ICAO Code](/common/codes/icao-code.md) — broader
 - [Flight Number](/common/codes/flight-number.md) — related
 - [Operating Carrier](/air/air-partner/operating-carrier.md) — related
 
 # Distinctions
 - **Aircraft Type Code** vs [ICAO Code](/common/codes/icao-code.md) — The IATA aircraft type code is 3 characters for commercial/schedule use; the ICAO aircraft type designator is up to 4 characters for ATC and flight planning, reflecting performance rather than commercial differences.
+- **Aircraft Type Code** vs [Aircraft Registration](/common/codes/aircraft-registration.md) — An aircraft type code names a class/variant of aircraft (e.g., 738 / B738 for a 737-800); the aircraft registration names one specific airframe of that type (e.g., G-EUYA). Type is shared by many aircraft; the registration is unique to one.
+- **Aircraft Type Code** vs [Service Type Code](/common/codes/service-type-code.md) — The aircraft type code says which equipment operates the leg; the Service Type Code says the commercial nature of the operation, independent of the aircraft used.
 
 # Citations
-[1] IATA — Standard Schedules Information Manual (SSIM)
+[1] [IATA — Standard Schedules Information Manual (SSIM)](https://www.iata.org/en/publications/manuals/standard-schedules-information/)
 [2] [OAG — Master Data: Equipment Data Fields Explained](https://knowledge.oag.com/docs/master-data-equipment-data-fields-explained)
 [3] [Wikipedia — List of aircraft type designators](https://en.wikipedia.org/wiki/List_of_aircraft_type_designators)

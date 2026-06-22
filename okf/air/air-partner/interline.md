@@ -22,9 +22,9 @@ aliases:
   - Interlining
   - Interline Traffic Agreement
 relationships:
-  - type: related
+  - type: contrasts
     targetTerm: Codeshare
-  - type: related
+  - type: narrower
     targetTerm: MITA
   - type: related
     targetTerm: SPA (Special Prorate Agreement)
@@ -41,17 +41,26 @@ distinctions:
   - targetTerm: MITA
     explanation: MITA is the multilateral framework that establishes the standard interline relationship; interline is the broader concept of cross-carrier ticket and baggage acceptance.
     explanation_ko: 'MITA는 표준 인터라인 관계를 수립하는 다자간 체계이고, 인터라인은 항공사 간 항공권 및 수하물 인수를 포괄하는 더 넓은 개념이다.'
+  - targetTerm: Inter-Airline Through Check-In (IATCI)
+    explanation: 'An interline agreement is the commercial arrangement letting carriers ticket and carry passengers across an itinerary; IATCI is the operational check-in standard that, on top of that relationship, lets the passenger and bags be checked in once for the whole journey.'
+    explanation_ko: '인터라인 협정은 항공사들이 여정 전체에 걸쳐 발권·운송하도록 하는 상업적 협정이고, IATCI는 그 관계 위에서 승객과 수하물을 여정 전체에 대해 한 번에 체크인하게 하는 운영상의 체크인 표준이다.'
+  - targetTerm: Interline Electronic Ticketing
+    explanation: Interline is the commercial agreement to accept another carrier's ticket; IET is the specific electronic-ticketing capability that makes that acceptance work on e-tickets rather than paper coupons.
+    explanation_ko: '인터라인은 다른 항공사의 항공권을 인수하기로 하는 상업적 협정이고, IET는 그 인수를 종이 쿠폰이 아닌 전자항공권으로 작동하게 하는 구체적인 전자발권 기능이다.'
+  - targetTerm: Standard Retailer and Supplier Interline Agreement (SRSIA)
+    explanation: Interline is the general practice of carriers honoring each other's transport; SRSIA is the specific standard legal agreement that frames interline obligations in the offer-and-order model.
+    explanation_ko: '인터라인은 항공사들이 서로의 운송을 인정하는 일반적 관행이고, SRSIA는 offer-and-order 모델에서 인터라인 의무를 규정하는 구체적인 표준 법적 협정이다.'
 sources:
   - name: Multilateral Interline Traffic Agreements (MITA)
     org: IATA
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/multilateral-interline-traffic-agreements/'
   - name: Revenue Accounting Manual (RAM)
     org: IATA
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/revenue-accounting-manual/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="24" r="5"/><circle cx="37" cy="24" r="5"/><path d="M16 24h16"/><path d="M28 20l4 4-4 4"/><path d="M20 28l-4-4 4-4"/></svg>
 ---
 
@@ -66,8 +75,8 @@ Interline agreements enable through-ticketing, mutual ticket acceptance, baggage
 **Aliases:** `Interline Agreement`, `Interlining`, `Interline Traffic Agreement`
 
 # Related
-- [Codeshare](/air/air-partner/codeshare.md) — related
-- [MITA](/air/air-partner/mita.md) — related
+- [Codeshare](/air/air-partner/codeshare.md) — contrasts
+- [MITA](/air/air-partner/mita.md) — narrower
 - [SPA (Special Prorate Agreement)](/air/air-partner/spa-special-prorate-agreement.md) — related
 - [Proration](/air/air-partner/proration.md) — related
 - [IATA Clearing House](/common/pay/iata-clearing-house.md) — related
@@ -76,7 +85,10 @@ Interline agreements enable through-ticketing, mutual ticket acceptance, baggage
 # Distinctions
 - **Interline** vs [Codeshare](/air/air-partner/codeshare.md) — Interline involves no sharing of flight codes; codeshare specifically places the marketing carrier's designator on the operating carrier's flight.
 - **Interline** vs [MITA](/air/air-partner/mita.md) — MITA is the multilateral framework that establishes the standard interline relationship; interline is the broader concept of cross-carrier ticket and baggage acceptance.
+- **Interline** vs [Inter-Airline Through Check-In (IATCI)](/air/air-partner/inter-airline-through-check-in-iatci.md) — An interline agreement is the commercial arrangement letting carriers ticket and carry passengers across an itinerary; IATCI is the operational check-in standard that, on top of that relationship, lets the passenger and bags be checked in once for the whole journey.
+- **Interline** vs [Interline Electronic Ticketing](/air/air-partner/interline-electronic-ticketing.md) — Interline is the commercial agreement to accept another carrier's ticket; IET is the specific electronic-ticketing capability that makes that acceptance work on e-tickets rather than paper coupons.
+- **Interline** vs [Standard Retailer and Supplier Interline Agreement (SRSIA)](/common/standards/standard-retailer-and-supplier-interline-agreement-srsia.md) — Interline is the general practice of carriers honoring each other's transport; SRSIA is the specific standard legal agreement that frames interline obligations in the offer-and-order model.
 
 # Citations
-[1] IATA — Multilateral Interline Traffic Agreements (MITA)
-[2] IATA — Revenue Accounting Manual (RAM)
+[1] [IATA — Multilateral Interline Traffic Agreements (MITA)](https://www.iata.org/en/publications/manuals/multilateral-interline-traffic-agreements/)
+[2] [IATA — Revenue Accounting Manual (RAM)](https://www.iata.org/en/publications/manuals/revenue-accounting-manual/)

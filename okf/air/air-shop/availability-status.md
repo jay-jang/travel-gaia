@@ -26,9 +26,9 @@ aliases:
 relationships:
   - type: related
     targetTerm: Availability
-  - type: related
+  - type: broader
     targetTerm: AIRIMP
-  - type: related
+  - type: broader
     targetTerm: Type B Message
   - type: related
     targetTerm: GDS
@@ -46,10 +46,13 @@ distinctions:
 sources:
   - org: IATA
     name: AIRIMP (Airline Industry Reservations Interline Message Procedures)
+    url: 'https://www.iata.org/en/publications/manuals/airline-industry-reservations-interline-message-procedures-airimp/'
   - org: Travelport
     name: Air Pricing with Inventory Options – AVS/NAVS (Numeric AVS) availability
+    url: 'https://support.travelport.com/webhelp/uapi/Content/Air/Air_Pricing/Air_Pricing_with_Inventory_Options.htm'
   - org: Amadeus
     name: Numeric Availability (NAVS) for Airlines
+    url: 'https://amadeus.com/en/portfolio/airlines/numeric-availability'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="12" width="24" height="18" rx="3"/><path d="M6 17l12 7 12-7"/><circle cx="36" cy="32" r="8"/><path d="M33 32l2.5 2.5L40 30"/></svg>
 ---
 
@@ -65,8 +68,8 @@ AVS는 실시간 direct-access 및 seamless availability 이전의 레거시 ava
 
 # Related
 - [Availability](/air/air-shop/availability.md) — related
-- [AIRIMP](/air/air-ops/airimp.md) — related
-- [Type B Message](/air/air-ops/type-b-message.md) — related
+- [AIRIMP](/air/air-ops/airimp.md) — broader
+- [Type B Message](/air/air-ops/type-b-message.md) — broader
 - [GDS](/common/standards/gds.md) — related
 - [Free Sale](/lodging/hotel-dist/free-sale.md) — related
 - [RBD](/air/air-shop/rbd.md) — related
@@ -76,6 +79,6 @@ AVS는 실시간 direct-access 및 seamless availability 이전의 레거시 ava
 - **Availability Status (AVS)** vs [Free Sale](/lodging/hotel-dist/free-sale.md) — Free sale lets a partner sell a flight/class up to an agreed level without checking the controlling carrier each time; AVS is the status-message stream that tells that partner when a class has closed and free sale must stop. They are complementary parts of the same status-driven distribution model.
 
 # Citations
-[1] IATA — AIRIMP (Airline Industry Reservations Interline Message Procedures)
-[2] Travelport — Air Pricing with Inventory Options – AVS/NAVS (Numeric AVS) availability
-[3] Amadeus — Numeric Availability (NAVS) for Airlines
+[1] [IATA — AIRIMP (Airline Industry Reservations Interline Message Procedures)](https://www.iata.org/en/publications/manuals/airline-industry-reservations-interline-message-procedures-airimp/)
+[2] [Travelport — Air Pricing with Inventory Options – AVS/NAVS (Numeric AVS) availability](https://support.travelport.com/webhelp/uapi/Content/Air/Air_Pricing/Air_Pricing_with_Inventory_Options.htm)
+[3] [Amadeus — Numeric Availability (NAVS) for Airlines](https://amadeus.com/en/portfolio/airlines/numeric-availability)

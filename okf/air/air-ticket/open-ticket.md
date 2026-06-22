@@ -35,12 +35,15 @@ distinctions:
   - targetTerm: Coupon Status
     explanation: 'Coupon status is the lifecycle state of any flight coupon (e.g. OPEN FOR USE, FLOWN, USED); an open ticket is specifically a ticket whose coupon(s) remain in the OPEN status with no fixed flight or date.'
     explanation_ko: 'Coupon status는 모든 항공편 쿠폰의 생애주기 상태(예: OPEN FOR USE, FLOWN, USED)이고, open ticket은 특히 쿠폰이 확정된 항공편·날짜 없이 OPEN 상태에 머무는 항공권을 말한다.'
+  - targetTerm: Non-integrated Reservation Ticket (NRT)
+    explanation: 'An NRT is the rail commercial category enabling open, train-independent entitlements; an air Open Ticket is a single coupon left open as to date/flight. The NRT abbreviation also differs from air usage (it is not ''Normal Round Trip'').'
+    explanation_ko: 'NRT는 열차에 묶이지 않는 개방형 권리를 가능케 하는 철도 상업 분류이고, 항공의 Open Ticket은 날짜/편을 비워둔 단일 쿠폰이다. 또한 NRT 약어는 항공의 용법(''Normal Round Trip'')과 다르다.'
 sources:
   - org: IATA
     name: Ticketing Handbook
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/ticketing-handbook/'
   - org: AltexSoft
     name: Open ticket (Travel Glossary)
     version: ''
@@ -68,7 +71,8 @@ Open Ticket에서 오픈 쿠폰은 특정 항공편 번호나 날짜를 담지 �
 
 # Distinctions
 - **Open Ticket** vs [Coupon Status](/air/air-ticket/coupon-status.md) — Coupon status is the lifecycle state of any flight coupon (e.g. OPEN FOR USE, FLOWN, USED); an open ticket is specifically a ticket whose coupon(s) remain in the OPEN status with no fixed flight or date.
+- **Open Ticket** vs [Non-integrated Reservation Ticket (NRT)](/ground/rail/non-integrated-reservation-ticket-nrt.md) — An NRT is the rail commercial category enabling open, train-independent entitlements; an air Open Ticket is a single coupon left open as to date/flight. The NRT abbreviation also differs from air usage (it is not 'Normal Round Trip').
 
 # Citations
-[1] IATA — Ticketing Handbook
+[1] [IATA — Ticketing Handbook](https://www.iata.org/en/publications/manuals/ticketing-handbook/)
 [2] [AltexSoft — Open ticket (Travel Glossary)](https://www.altexsoft.com/glossary/open-ticket/)

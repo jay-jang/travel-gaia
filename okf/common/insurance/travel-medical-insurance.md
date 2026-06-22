@@ -26,7 +26,7 @@ relationships:
     targetTerm: Repatriation of Remains
   - type: contrasts
     targetTerm: Trip Cancellation
-  - type: related
+  - type: child
     targetTerm: Comprehensive Travel Insurance
   - type: related
     targetTerm: Pre-Existing Condition Waiver
@@ -37,6 +37,9 @@ distinctions:
   - targetTerm: Comprehensive Travel Insurance
     explanation: 'A comprehensive plan bundles medical coverage with cancellation, delay and baggage benefits; standalone travel medical insurance covers only the health/evacuation exposure.'
     explanation_ko: '종합 보험은 의료 보장을 취소·지연·수하물 보장과 묶지만, 단독 Travel Medical Insurance는 건강/후송 위험만 보장한다.'
+  - targetTerm: Emergency Medical Evacuation
+    explanation: 'Travel medical insurance covers in-place emergency treatment costs (hospital, doctor, dental); medical evacuation covers the transport to reach adequate care, a separate and far larger exposure.'
+    explanation_ko: 'Travel Medical Insurance는 현지에서의 응급 진료비(병원, 의사, 치과)를 보장하고, Medical Evacuation은 적절한 치료에 도달하기 위한 이송 비용을 보장하는 별개의, 훨씬 큰 위험이다.'
 sources:
   - name: Travel Medical Insurance Plans
     org: InsureMyTrip
@@ -47,12 +50,12 @@ sources:
     org: NerdWallet
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.nerdwallet.com/travel/learn/travel-medical-insurance-emergency-coverage-travel-internationally'
   - name: 'Emergency Medical Insurance: Coverage Details'
     org: Squaremouth
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.squaremouth.com/travel-insurance-benefits/emergency-medical'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 41 C10 31 6 22 6 16 a9 9 0 0 1 18 -3 a9 9 0 0 1 18 3 c0 6 -4 15 -18 25 Z"/><line x1="24" y1="19" x2="24" y2="29"/><line x1="19" y1="24" x2="29" y2="24"/></svg>
 ---
 
@@ -70,14 +73,15 @@ Travel medical plans focus on health events during the trip: emergency hospitali
 - [Emergency Medical Evacuation](/common/insurance/emergency-medical-evacuation.md) — parent
 - [Repatriation of Remains](/common/insurance/repatriation-of-remains.md) — parent
 - [Trip Cancellation](/common/insurance/trip-cancellation.md) — contrasts
-- [Comprehensive Travel Insurance](/common/insurance/comprehensive-travel-insurance.md) — related
+- [Comprehensive Travel Insurance](/common/insurance/comprehensive-travel-insurance.md) — child
 - [Pre-Existing Condition Waiver](/common/insurance/pre-existing-condition-waiver.md) — related
 
 # Distinctions
 - **Travel Medical Insurance** vs [Trip Cancellation](/common/insurance/trip-cancellation.md) — Trip cancellation reimburses lost prepaid trip cost when plans fall through; travel medical insurance pays for healthcare received while traveling. They cover entirely different exposures and are often sold separately.
 - **Travel Medical Insurance** vs [Comprehensive Travel Insurance](/common/insurance/comprehensive-travel-insurance.md) — A comprehensive plan bundles medical coverage with cancellation, delay and baggage benefits; standalone travel medical insurance covers only the health/evacuation exposure.
+- **Travel Medical Insurance** vs [Emergency Medical Evacuation](/common/insurance/emergency-medical-evacuation.md) — Travel medical insurance covers in-place emergency treatment costs (hospital, doctor, dental); medical evacuation covers the transport to reach adequate care, a separate and far larger exposure.
 
 # Citations
 [1] [InsureMyTrip — Travel Medical Insurance Plans](https://www.insuremytrip.com/travel-insurance-plans/travel-medical/)
-[2] NerdWallet — How Travel Medical Insurance Works
-[3] Squaremouth — Emergency Medical Insurance: Coverage Details
+[2] [NerdWallet — How Travel Medical Insurance Works](https://www.nerdwallet.com/travel/learn/travel-medical-insurance-emergency-coverage-travel-internationally)
+[3] [Squaremouth — Emergency Medical Insurance: Coverage Details](https://www.squaremouth.com/travel-insurance-benefits/emergency-medical)

@@ -22,11 +22,11 @@ aliases:
 relationships:
   - type: child
     targetTerm: Rate Plan
-  - type: related
+  - type: contrasts
     targetTerm: BAR
   - type: related
     targetTerm: Dynamic Pricing
-  - type: related
+  - type: contrasts
     targetTerm: ADR
   - type: related
     targetTerm: PMS
@@ -71,9 +71,9 @@ Historically the rack rate was literally the rate posted on the room rack at the
 
 # Related
 - [Rate Plan](/lodging/hotel-rate/rate-plan.md) — child
-- [BAR](/lodging/hotel-rate/bar.md) — related
+- [BAR](/lodging/hotel-rate/bar.md) — contrasts
 - [Dynamic Pricing](/lodging/hotel-rate/dynamic-pricing.md) — related
-- [ADR](/lodging/hotel-rate/adr.md) — related
+- [ADR](/lodging/hotel-rate/adr.md) — contrasts
 - [PMS](/lodging/hotel-dist/pms.md) — related
 
 # Distinctions

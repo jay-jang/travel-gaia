@@ -40,7 +40,7 @@ providerTerms:
     context_ko: 선객이 개방 시간 내에 식사할 수 있게 하는 Carnival의 유연 다이닝 옵션
     relationship: narrower
 relationships:
-  - type: related
+  - type: contrasts
     targetTerm: Meal Code
   - type: related
     targetTerm: Embarkation
@@ -56,7 +56,7 @@ sources:
     org: OpenTravel Alliance
     version: ''
     section: ''
-    url: ''
+    url: 'https://opentravel.org/download-specs/'
   - name: 'Cruise Ship Dining: Traditional vs Open Seating'
     org: Cruise industry
     version: ''
@@ -89,7 +89,7 @@ Traditional cruise dining assigns each guest a fixed dinner seating (typically a
 | Carnival Cruise Line | `Anytime Dining` | narrower | Carnival's flexible dining option allowing guests to dine within open hours |
 
 # Related
-- [Meal Code](/common/codes/meal-code.md) — related
+- [Meal Code](/common/codes/meal-code.md) — contrasts
 - [Embarkation](/cruise/cruise/embarkation.md) — related
 
 # Distinctions
@@ -97,6 +97,6 @@ Traditional cruise dining assigns each guest a fixed dinner seating (typically a
 - **Open Seating Dining** vs [Board Basis](/lodging/hotel-rate/board-basis.md) — Hotel Board Basis defines which meals are included in the rate; open seating dining assumes meals are included and instead defines the seating arrangement (flexible versus fixed times and tables).
 
 # Citations
-[1] OpenTravel Alliance — OpenTravel Specification (cruise message set: dining arrangements)
+[1] [OpenTravel Alliance — OpenTravel Specification (cruise message set: dining arrangements)](https://opentravel.org/download-specs/)
 [2] Cruise industry — Cruise Ship Dining: Traditional vs Open Seating
 [3] Cruise industry — Flexible Versus Traditional Dining

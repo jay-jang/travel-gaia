@@ -50,6 +50,9 @@ distinctions:
   - targetTerm: PMS
     explanation: 'Both are operational back-office systems, but a DCS handles airline airport departure operations whereas a PMS (Property Management System) runs hotel front-desk and operational functions.'
     explanation_ko: '둘 다 운영 백오피스 시스템이지만, DCS는 항공사 공항 출발 운영을 처리하고 PMS(Property Management System)는 호텔 프런트데스크 및 운영 기능을 담당한다.'
+  - targetTerm: Passenger Name List / Additions and Deletions List (PNL/ADL)
+    explanation: 'PNL/ADL are the inbound messages that feed passenger data into the DCS; the DCS is the receiving system that performs check-in, boarding and load control using that data.'
+    explanation_ko: 'PNL/ADL은 승객 데이터를 DCS로 공급하는 인바운드 메시지이고, DCS는 그 데이터를 사용해 체크인·탑승·탑재 통제를 수행하는 수신 시스템이다.'
 sources:
   - org: Amadeus
     name: Departure Control System (DCS) - Travel Glossary
@@ -92,6 +95,7 @@ DCS는 항공사의 공항 핸들링을 자동화하며 보통 세 영역에 걸
 # Distinctions
 - **Departure Control System (DCS)** vs [CRS](/lodging/hotel-dist/crs.md) — A CRS/reservation system holds the booking and inventory before travel; the DCS takes over at the airport for check-in, boarding and load control, receiving its passenger data from the reservation system via PNL/ADL.
 - **Departure Control System (DCS)** vs [PMS](/lodging/hotel-dist/pms.md) — Both are operational back-office systems, but a DCS handles airline airport departure operations whereas a PMS (Property Management System) runs hotel front-desk and operational functions.
+- **Departure Control System (DCS)** vs [Passenger Name List / Additions and Deletions List (PNL/ADL)](/air/air-ops/pnl-adl.md) — PNL/ADL are the inbound messages that feed passenger data into the DCS; the DCS is the receiving system that performs check-in, boarding and load control using that data.
 
 # Citations
 [1] [Amadeus — Departure Control System (DCS) - Travel Glossary](https://amadeus.com/en/travel-glossary/departure-control-system)

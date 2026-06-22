@@ -22,9 +22,9 @@ aliases:
   - Book & Claim
   - Book-and-Claim
 relationships:
-  - type: related
+  - type: contrasts
     targetTerm: Mass Balance (MB)
-  - type: related
+  - type: broader
     targetTerm: Sustainable Aviation Fuel (SAF)
   - type: related
     targetTerm: GHG Protocol Scope 3 (Business Travel)
@@ -40,12 +40,12 @@ sources:
     name: SAF accounting based on robust chain-of-custody approaches (Policy Paper)
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/contentassets/d13875e9ed784f75bac90f000760e998/saf-accounting-policy-paper_20230905_final.pdf'
   - org: ICAO
     name: ACT-SAF Series 6 – SAF accounting and book-and-claim systems
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.icao.int/sites/default/files/environmental-protection/Documents/ACT-SAF/ACT-SAF-Series-6-SAF-accounting-and-book-and-claim-systems.pdf'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M8 12a4 4 0 0 1 4-4h9v28h-9a4 4 0 0 0-4 4z"/><path d="M40 12a4 4 0 0 0-4-4h-9v28h9a4 4 0 0 1 4 4z"/><path d="M30 22l4 4 8-9"/></svg>
 ---
 
@@ -60,8 +60,8 @@ SAF는 희소하고 운송 비용이 비싸 제한된 수의 공항에서만 급
 **Aliases:** `Book and Claim`, `Book & Claim`, `Book-and-Claim`
 
 # Related
-- [Mass Balance (MB)](/common/sustainability/mass-balance-mb.md) — related
-- [Sustainable Aviation Fuel (SAF)](/common/sustainability/sustainable-aviation-fuel-saf.md) — related
+- [Mass Balance (MB)](/common/sustainability/mass-balance-mb.md) — contrasts
+- [Sustainable Aviation Fuel (SAF)](/common/sustainability/sustainable-aviation-fuel-saf.md) — broader
 - [GHG Protocol Scope 3 (Business Travel)](/common/sustainability/ghg-protocol-scope-3-business-travel.md) — related
 
 # Distinctions
@@ -69,5 +69,5 @@ SAF는 희소하고 운송 비용이 비싸 제한된 수의 공항에서만 급
 - **Book and Claim** vs [CORSIA Eligible Emissions Unit (EEU)](/common/sustainability/corsia-eligible-emissions-unit-eeu.md) — Book and Claim transfers an in-sector SAF reduction benefit (the fuel really replaced fossil kerosene somewhere); an Emissions Unit is an out-of-sector offset credit from a separate carbon-reduction project — different instruments.
 
 # Citations
-[1] IATA — SAF accounting based on robust chain-of-custody approaches (Policy Paper)
-[2] ICAO — ACT-SAF Series 6 – SAF accounting and book-and-claim systems
+[1] [IATA — SAF accounting based on robust chain-of-custody approaches (Policy Paper)](https://www.iata.org/contentassets/d13875e9ed784f75bac90f000760e998/saf-accounting-policy-paper_20230905_final.pdf)
+[2] [ICAO — ACT-SAF Series 6 – SAF accounting and book-and-claim systems](https://www.icao.int/sites/default/files/environmental-protection/Documents/ACT-SAF/ACT-SAF-Series-6-SAF-accounting-and-book-and-claim-systems.pdf)

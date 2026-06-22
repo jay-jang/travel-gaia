@@ -24,11 +24,11 @@ aliases:
   - Involuntary Bumping
   - IDB
 relationships:
-  - type: related
+  - type: contrasts
     targetTerm: Voluntary Denied Boarding
   - type: parent
     targetTerm: Denied Boarding Compensation
-  - type: related
+  - type: broader
     targetTerm: Overbooking
   - type: related
     targetTerm: Re-accommodation
@@ -44,12 +44,12 @@ sources:
     org: US Department of Transportation
     version: ''
     section: Part 250
-    url: ''
+    url: 'https://www.ecfr.gov/current/title-14/chapter-II/subchapter-A/part-250'
   - name: Periodic Revisions to Denied Boarding Compensation and Domestic Baggage Liability Limits (Federal Register)
     org: US Department of Transportation
     version: '2024'
     section: ''
-    url: ''
+    url: 'https://www.federalregister.gov/documents/2024/10/24/2024-23588/periodic-revisions-to-denied-boarding-compensation-and-domestic-baggage-liability-limits'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="14" r="5"/><path d="M10 38v-6a8 8 0 0 1 16 0v6"/><rect x="30" y="16" width="12" height="16" rx="1"/><path d="M30 22h12"/><path d="M33 28l6-6M39 28l-6-6"/></svg>
 ---
 
@@ -64,9 +64,9 @@ Part 250은 항공사가 먼저 자원자(VDB)를 모집하도록 요구하며, 
 **Aliases:** `Involuntary Denied Boarding`, `Bumping`, `Involuntary Bumping`, `IDB`
 
 # Related
-- [Voluntary Denied Boarding](/common/disruption/voluntary-denied-boarding.md) — related
+- [Voluntary Denied Boarding](/common/disruption/voluntary-denied-boarding.md) — contrasts
 - [Denied Boarding Compensation](/common/disruption/denied-boarding-compensation.md) — parent
-- [Overbooking](/air/air-shop/overbooking.md) — related
+- [Overbooking](/air/air-shop/overbooking.md) — broader
 - [Re-accommodation](/air/air-partner/re-accommodation.md) — related
 
 # Distinctions
@@ -74,5 +74,5 @@ Part 250은 항공사가 먼저 자원자(VDB)를 모집하도록 요구하며, 
 - **Involuntary Denied Boarding** vs [Overbooking](/air/air-shop/overbooking.md) — Overbooking is the revenue-management practice of selling more seats than exist; IDB is the regulated event that may follow when overbooking results in an oversale at the gate.
 
 # Citations
-[1] US Department of Transportation — 14 CFR Part 250 — Oversales — Part 250
-[2] US Department of Transportation — Periodic Revisions to Denied Boarding Compensation and Domestic Baggage Liability Limits (Federal Register) — 2024
+[1] [US Department of Transportation — 14 CFR Part 250 — Oversales — Part 250](https://www.ecfr.gov/current/title-14/chapter-II/subchapter-A/part-250)
+[2] [US Department of Transportation — Periodic Revisions to Denied Boarding Compensation and Domestic Baggage Liability Limits (Federal Register) — 2024](https://www.federalregister.gov/documents/2024/10/24/2024-23588/periodic-revisions-to-denied-boarding-compensation-and-domestic-baggage-liability-limits)

@@ -29,7 +29,7 @@ providerTerms:
     context_ko: ATPCO는 pricing 엔진이 공시 운임과 결합하는 add-on(arbitrary/proportional) 금액을 파일링한다.
     relationship: same
 relationships:
-  - type: related
+  - type: broader
     targetTerm: Fare Construction
   - type: related
     targetTerm: Fare Component
@@ -56,7 +56,7 @@ sources:
     name: 'FareManager (constructed fares: add-ons and arbitraries)'
     version: ''
     section: ''
-    url: ''
+    url: 'https://atpco.net/atpco-faremanager/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="20" width="12" height="8" rx="1.5"/><line x1="24" y1="24" x2="32" y2="24"/><line x1="28" y1="20" x2="28" y2="28"/><rect x="34" y="20" width="8" height="8" rx="1.5" stroke-dasharray="3 2"/></svg>
 ---
 
@@ -77,7 +77,7 @@ Add-on은 gateway 사이에 공시된 운임에 proportional 금액을 더해 �
 | ATPCO | `Add-ons / Arbitraries (Constructed Fares)` | same | ATPCO files add-on (arbitrary/proportional) amounts that pricing engines combine with published fares. |
 
 # Related
-- [Fare Construction](/air/air-shop/fare-construction.md) — related
+- [Fare Construction](/air/air-shop/fare-construction.md) — broader
 - [Fare Component](/air/air-shop/fare-component.md) — related
 - [ATPCO](/air/air-shop/atpco.md) — related
 - [NUC](/air/air-shop/nuc.md) — related
@@ -89,4 +89,4 @@ Add-on은 gateway 사이에 공시된 운임에 proportional 금액을 더해 �
 
 # Citations
 [1] [ATPCO — Airline Industry Glossary (add-on / arbitrary / proportional fare)](https://www.atpco.net/resources/glossary)
-[2] ATPCO — FareManager (constructed fares: add-ons and arbitraries)
+[2] [ATPCO — FareManager (constructed fares: add-ons and arbitraries)](https://atpco.net/atpco-faremanager/)

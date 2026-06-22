@@ -45,6 +45,9 @@ distinctions:
   - targetTerm: BAR
     explanation: BAR is the best available rate a hotel publishes; rate shopping is the process of observing BAR (and other rates) across the comp set and channels to inform how BAR should be set.
     explanation_ko: 'BAR는 호텔이 게시하는 최적 가용 요금이고, 요금 쇼핑은 comp set과 채널 전반에서 BAR(및 기타 요금)를 관측하여 BAR를 어떻게 설정할지 판단하는 과정이다.'
+  - targetTerm: Rate Leakage
+    explanation: Rate shopping is the monitoring activity that systematically compares a hotel's rates across channels; rate leakage is the problem it is often deployed to detect — unauthorized below-direct rates surfacing on public channels.
+    explanation_ko: 'Rate shopping은 채널 전반의 호텔 요금을 체계적으로 비교하는 모니터링 활동이고, 요금 누출은 그것이 흔히 탐지하려는 문제, 즉 직접 요금 이하의 무단 요금이 공개 채널에 나타나는 현상이다.'
 sources:
   - org: AltexSoft
     name: Hotel Rate Shopping and Rate Intelligence for Revenue Management
@@ -86,6 +89,7 @@ Rate shopping supports two related goals. First, competitive intelligence: track
 # Distinctions
 - **Rate Shopping** vs [Rate Parity](/lodging/hotel-rate/rate-parity.md) — Rate parity is the policy of keeping a hotel's rate consistent across channels; rate shopping is the monitoring activity that detects whether parity is actually being maintained.
 - **Rate Shopping** vs [BAR](/lodging/hotel-rate/bar.md) — BAR is the best available rate a hotel publishes; rate shopping is the process of observing BAR (and other rates) across the comp set and channels to inform how BAR should be set.
+- **Rate Shopping** vs [Rate Leakage](/lodging/hotel-dist/rate-leakage.md) — Rate shopping is the monitoring activity that systematically compares a hotel's rates across channels; rate leakage is the problem it is often deployed to detect — unauthorized below-direct rates surfacing on public channels.
 
 # Citations
 [1] [AltexSoft — Hotel Rate Shopping and Rate Intelligence for Revenue Management](https://www.altexsoft.com/blog/hotel-rate-shopping/)

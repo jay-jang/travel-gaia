@@ -20,11 +20,11 @@ aliases:
   - Return of Mortal Remains
   - Repatriation
 relationships:
-  - type: related
+  - type: contrasts
     targetTerm: Emergency Medical Evacuation
   - type: child
     targetTerm: Travel Medical Insurance
-  - type: related
+  - type: child
     targetTerm: Comprehensive Travel Insurance
 distinctions:
   - targetTerm: Emergency Medical Evacuation
@@ -55,9 +55,9 @@ Returning remains across borders involves substantial cost and logistics — loc
 **Aliases:** `Return of Remains`, `Return of Mortal Remains`, `Repatriation`
 
 # Related
-- [Emergency Medical Evacuation](/common/insurance/emergency-medical-evacuation.md) — related
+- [Emergency Medical Evacuation](/common/insurance/emergency-medical-evacuation.md) — contrasts
 - [Travel Medical Insurance](/common/insurance/travel-medical-insurance.md) — child
-- [Comprehensive Travel Insurance](/common/insurance/comprehensive-travel-insurance.md) — related
+- [Comprehensive Travel Insurance](/common/insurance/comprehensive-travel-insurance.md) — child
 
 # Distinctions
 - **Repatriation of Remains** vs [Emergency Medical Evacuation](/common/insurance/emergency-medical-evacuation.md) — Evacuation moves a living, ill or injured traveler to adequate care; repatriation of remains returns a deceased traveler home. The two are complementary but separately defined benefits.

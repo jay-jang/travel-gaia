@@ -20,7 +20,7 @@ aliases:
   - Run of the House
   - Run-of-House Rate
 relationships:
-  - type: related
+  - type: contrasts
     targetTerm: Room Type
   - type: related
     targetTerm: Rate Plan
@@ -32,6 +32,12 @@ distinctions:
   - targetTerm: Room Type
     explanation: 'A Room Type booking guarantees a specific product category and its attributes; an ROH booking guarantees only a room within the property, with the actual type assigned by the hotel at check-in based on availability.'
     explanation_ko: 'Room Type 예약은 특정 상품 등급과 속성을 보장하지만, ROH 예약은 호텔 내 객실만을 보장하며 실제 타입은 가용성에 따라 체크인 시 호텔이 배정한다.'
+  - targetTerm: Group Block
+    explanation: 'Run of House is a rate basis assigning whatever standard room is available, while a group block is an inventory hold; a block can itself be sold on an ROH basis.'
+    explanation_ko: 'Run of House는 가용한 표준 객실을 임의 배정하는 요금 방식이고, 그룹 블록은 재고를 잡아두는 것이다. 블록 자체가 ROH 방식으로 판매될 수도 있다.'
+  - targetTerm: Guarantee Cabin (GTY)
+    explanation: 'A hotel ROH rate assigns any room of a single standard type at the hotel''s discretion; a cruise GTY guarantees a graded minimum category and may be upgraded above it, and is the closest cruise parallel to ROH but operates across a finer category ladder.'
+    explanation_ko: '호텔의 ROH 요금은 호텔 재량으로 단일 표준 유형의 아무 객실이나 배정하는 반면, 크루즈 GTY는 등급화된 최저 카테고리를 보장하고 그 이상으로 업그레이드될 수 있다. ROH에 가장 가까운 크루즈 대응 개념이지만 더 세밀한 카테고리 사다리 위에서 작동한다.'
 sources:
   - org: BCD Travel
     name: Travel Glossary — Run-of-the-house (ROH)
@@ -57,13 +63,15 @@ ROH에서는 특정 객실 타입이 아니라 호텔 전반을 대상으로 예
 **Aliases:** `Run of the House`, `Run-of-House Rate`
 
 # Related
-- [Room Type](/lodging/hotel-rate/room-type.md) — related
+- [Room Type](/lodging/hotel-rate/room-type.md) — contrasts
 - [Rate Plan](/lodging/hotel-rate/rate-plan.md) — related
 - [Allotment](/lodging/hotel-rate/allotment.md) — related
 - [Room Type](/lodging/hotel-rate/room-type.md) — contrasts
 
 # Distinctions
 - **Run of House (ROH)** vs [Room Type](/lodging/hotel-rate/room-type.md) — A Room Type booking guarantees a specific product category and its attributes; an ROH booking guarantees only a room within the property, with the actual type assigned by the hotel at check-in based on availability.
+- **Run of House (ROH)** vs [Group Block](/lodging/hotel-rate/group-block.md) — Run of House is a rate basis assigning whatever standard room is available, while a group block is an inventory hold; a block can itself be sold on an ROH basis.
+- **Run of House (ROH)** vs [Guarantee Cabin (GTY)](/cruise/cruise/guarantee-cabin-gty.md) — A hotel ROH rate assigns any room of a single standard type at the hotel's discretion; a cruise GTY guarantees a graded minimum category and may be upgraded above it, and is the closest cruise parallel to ROH but operates across a finer category ladder.
 
 # Citations
 [1] [BCD Travel — Travel Glossary — Run-of-the-house (ROH)](https://www.bcdtravel.com/glossary/run-of-the-house-roh/)

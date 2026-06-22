@@ -24,16 +24,25 @@ aliases:
   - ICAO Airport Code
   - ICAO Airline Designator
 relationships:
-  - type: related
+  - type: contrasts
     targetTerm: IATA Code
-  - type: related
+  - type: narrower
     targetTerm: Airport Code
-  - type: related
+  - type: narrower
     targetTerm: Airline Designator
 distinctions:
   - targetTerm: IATA Code
     explanation: 'ICAO codes are 4-letter (airport) / 3-letter (airline), globally unique and operations-focused; IATA codes are shorter and used for commercial booking and display.'
     explanation_ko: 'ICAO 코드는 4자리(공항)/3자리(항공사)로 전 세계적으로 고유하며 운항 중심인 반면, IATA 코드는 더 짧고 상업적 예약 및 표시에 사용된다.'
+  - targetTerm: Aircraft Registration
+    explanation: The ICAO 24-bit aircraft address (used by Mode S / ADS-B transponders) is a separate hardware identifier; the registration is the human-readable Annex 7 mark on the airframe. The two are mapped to each other but are not the same value.
+    explanation_ko: '(Mode S / ADS-B 트랜스폰더가 쓰는) ICAO 24비트 항공기 주소는 별개의 하드웨어 식별자이고, 등록기호는 기체에 표기되는 Annex 7의 사람이 읽을 수 있는 기호다. 둘은 서로 매핑되지만 같은 값은 아니다.'
+  - targetTerm: Aircraft Type Code
+    explanation: 'The IATA aircraft type code is 3 characters for commercial/schedule use; the ICAO aircraft type designator is up to 4 characters for ATC and flight planning, reflecting performance rather than commercial differences.'
+    explanation_ko: 'IATA 항공기 기종 코드는 상업·스케줄 용도의 3자리이고, ICAO 항공기 기종 지정 코드는 ATC·비행 계획용의 최대 4자리로 상업적 차이가 아니라 성능 차이를 반영한다.'
+  - targetTerm: Airline Designator
+    explanation: The IATA airline designator is 2 characters for commercial use; the ICAO airline designator is 3 letters with a call sign for operational/ATC use.
+    explanation_ko: 'IATA 항공사 지정 코드는 상업적 용도의 2자리이고, ICAO 항공사 지정 코드는 운항/ATC 용도의 3자리로 콜사인을 동반한다.'
 sources:
   - name: Doc 7910 — Location Indicators
     org: ICAO
@@ -59,12 +68,15 @@ ICAO의 4자리 위치 지시자는 지역별로 구조화되어 있다. 첫 한
 **Aliases:** `ICAO Location Indicator`, `ICAO Designator`, `ICAO Airport Code`, `ICAO Airline Designator`
 
 # Related
-- [IATA Code](/common/codes/iata-code.md) — related
-- [Airport Code](/common/codes/airport-code.md) — related
-- [Airline Designator](/common/codes/airline-designator.md) — related
+- [IATA Code](/common/codes/iata-code.md) — contrasts
+- [Airport Code](/common/codes/airport-code.md) — narrower
+- [Airline Designator](/common/codes/airline-designator.md) — narrower
 
 # Distinctions
 - **ICAO Code** vs [IATA Code](/common/codes/iata-code.md) — ICAO codes are 4-letter (airport) / 3-letter (airline), globally unique and operations-focused; IATA codes are shorter and used for commercial booking and display.
+- **ICAO Code** vs [Aircraft Registration](/common/codes/aircraft-registration.md) — The ICAO 24-bit aircraft address (used by Mode S / ADS-B transponders) is a separate hardware identifier; the registration is the human-readable Annex 7 mark on the airframe. The two are mapped to each other but are not the same value.
+- **ICAO Code** vs [Aircraft Type Code](/common/codes/aircraft-type-code.md) — The IATA aircraft type code is 3 characters for commercial/schedule use; the ICAO aircraft type designator is up to 4 characters for ATC and flight planning, reflecting performance rather than commercial differences.
+- **ICAO Code** vs [Airline Designator](/common/codes/airline-designator.md) — The IATA airline designator is 2 characters for commercial use; the ICAO airline designator is 3 letters with a call sign for operational/ATC use.
 
 # Citations
 [1] [ICAO — Doc 7910 — Location Indicators](https://store.icao.int/en/location-indicators-doc-7910)

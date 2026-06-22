@@ -39,6 +39,15 @@ distinctions:
   - targetTerm: Merchant Model
     explanation: Net rate is the contracted wholesale price; the merchant model is the broader payment/distribution arrangement in which net rates are typically used.
     explanation_ko: '순 요금은 계약된 도매 가격이고, 머천트 모델은 순 요금이 일반적으로 사용되는 더 넓은 결제/분배 체계다.'
+  - targetTerm: Bedbank
+    explanation: A bedbank is the business intermediary; the Net Rate is the wholesale price model bedbanks typically contract and resell on.
+    explanation_ko: '베드뱅크는 사업적 중개자이고, 순 요금(Net Rate)은 베드뱅크가 일반적으로 계약하고 재판매하는 기반이 되는 도매 가격 모델이다.'
+  - targetTerm: Rate Leakage
+    explanation: A net rate is the legitimate wholesale price contracted for B2B resale; rate leakage is what happens when that net rate is improperly exposed on public retail channels below the hotel's direct price.
+    explanation_ko: 'Net rate는 B2B 재판매용으로 계약된 정당한 도매 가격이고, 요금 누출은 그 net rate가 호텔 직접 가격 이하로 공개 소매 채널에 부적절하게 노출될 때 일어나는 현상이다.'
+  - targetTerm: Tour Code
+    explanation: Net Rate is the confidential cost the agency pays the carrier; the tour code (and the masked BT/IT display) is the ticketing mechanism that references the net agreement without printing the actual net amount on the customer's ticket.
+    explanation_ko: 'Net Rate는 대리점이 항공사에 지불하는 기밀 원가이고, tour code(및 가려진 BT/IT 표시)는 고객 항공권에 실제 net 금액을 인쇄하지 않으면서 net 합의를 참조하는 발권 메커니즘이다.'
 sources:
   - name: Hotel distribution rate model industry references
     org: ''
@@ -69,6 +78,9 @@ Net rates are the basis of the merchant/wholesale distribution model: the hotel 
 # Distinctions
 - **Net Rate** vs [Commissionable Rate](/lodging/hotel-dist/commissionable-rate.md) — A net rate is non-commissionable (margin via markup); a commissionable rate pays the seller a percentage commission on the published price.
 - **Net Rate** vs [Merchant Model](/common/pay/merchant-model.md) — Net rate is the contracted wholesale price; the merchant model is the broader payment/distribution arrangement in which net rates are typically used.
+- **Net Rate** vs [Bedbank](/lodging/hotel-dist/bedbank.md) — A bedbank is the business intermediary; the Net Rate is the wholesale price model bedbanks typically contract and resell on.
+- **Net Rate** vs [Rate Leakage](/lodging/hotel-dist/rate-leakage.md) — A net rate is the legitimate wholesale price contracted for B2B resale; rate leakage is what happens when that net rate is improperly exposed on public retail channels below the hotel's direct price.
+- **Net Rate** vs [Tour Code](/air/air-ticket/tour-code.md) — Net Rate is the confidential cost the agency pays the carrier; the tour code (and the masked BT/IT display) is the ticketing mechanism that references the net agreement without printing the actual net amount on the customer's ticket.
 
 # Citations
 [1] Hotel distribution rate model industry references

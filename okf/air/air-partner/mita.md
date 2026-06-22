@@ -23,7 +23,7 @@ aliases:
   - Multilateral Interline Traffic Agreements
   - IATA MITA
 relationships:
-  - type: related
+  - type: broader
     targetTerm: Interline
   - type: related
     targetTerm: SPA (Special Prorate Agreement)
@@ -38,12 +38,21 @@ distinctions:
   - targetTerm: SPA (Special Prorate Agreement)
     explanation: MITA is multilateral and sets the standard relationship; an SPA is bilateral and sets negotiated special prorate values between two carriers.
     explanation_ko: 'MITA는 다자간 협정으로 표준 관계를 설정하고, SPA는 양자 간 협정으로 두 항공사 사이의 협상된 특별 프로레이트 값을 설정한다.'
+  - targetTerm: Interline Electronic Ticket (IET)
+    explanation: MITA is the multilateral agreement that makes interline e-ticketing possible; the IET is the actual ticket document issued under such agreements.
+    explanation_ko: 'MITA는 인터라인 전자발권을 가능하게 하는 다자간 협정이고, IET은 그러한 협정 하에서 실제로 발행되는 항공권 서류이다.'
+  - targetTerm: Interline Electronic Ticketing
+    explanation: MITA establishes the standard multilateral interline relationship; IET is the technical e-ticketing layer (and BIETA the bilateral link) that two MITA carriers must implement to exchange electronic coupons.
+    explanation_ko: 'MITA는 표준 다자간 인터라인 관계를 수립하고, IET는 두 MITA 항공사가 전자 쿠폰을 교환하기 위해 구현해야 하는 기술적 전자발권 계층(그리고 BIETA는 그 양자 링크)이다.'
+  - targetTerm: Standard Retailer and Supplier Interline Agreement (SRSIA)
+    explanation: MITA is the established multilateral ticket/document-based interline traffic agreement; SRSIA is a bilateral template agreement for offer-and-order interlining that runs in parallel to (rather than automatically replacing) MITA.
+    explanation_ko: 'MITA는 확립된 다자간 항공권/문서 기반 인터라인 운송 협정이고, SRSIA는 offer-and-order 인터라인을 위한 양자 템플릿 협정으로 MITA를 자동으로 대체하지 않고 병행하여 운영된다.'
 sources:
   - name: Multilateral Interline Traffic Agreements (MITA)
     org: IATA
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/multilateral-interline-traffic-agreements/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="16"/><path d="M16 24a8 16 0 0 1 16 0"/><path d="M16 24a8 16 0 0 0 16 0"/><line x1="24" y1="8" x2="24" y2="40"/><path d="M9 19h30M9 29h30"/></svg>
 ---
 
@@ -58,7 +67,7 @@ MITA는 여객 및/또는 화물 인터라인을 포괄하며, 항공사가 서�
 **Aliases:** `Multilateral Interline Traffic Agreement`, `Multilateral Interline Traffic Agreements`, `IATA MITA`
 
 # Related
-- [Interline](/air/air-partner/interline.md) — related
+- [Interline](/air/air-partner/interline.md) — broader
 - [SPA (Special Prorate Agreement)](/air/air-partner/spa-special-prorate-agreement.md) — related
 - [Proration](/air/air-partner/proration.md) — related
 - [IATA Clearing House](/common/pay/iata-clearing-house.md) — related
@@ -66,6 +75,9 @@ MITA는 여객 및/또는 화물 인터라인을 포괄하며, 항공사가 서�
 # Distinctions
 - **MITA** vs [Interline](/air/air-partner/interline.md) — Interline is the general practice of cross-carrier ticket/baggage acceptance; MITA is the specific IATA multilateral agreement that standardizes it among signatories.
 - **MITA** vs [SPA (Special Prorate Agreement)](/air/air-partner/spa-special-prorate-agreement.md) — MITA is multilateral and sets the standard relationship; an SPA is bilateral and sets negotiated special prorate values between two carriers.
+- **MITA** vs [Interline Electronic Ticket (IET)](/air/air-ticket/interline-electronic-ticket-iet.md) — MITA is the multilateral agreement that makes interline e-ticketing possible; the IET is the actual ticket document issued under such agreements.
+- **MITA** vs [Interline Electronic Ticketing](/air/air-partner/interline-electronic-ticketing.md) — MITA establishes the standard multilateral interline relationship; IET is the technical e-ticketing layer (and BIETA the bilateral link) that two MITA carriers must implement to exchange electronic coupons.
+- **MITA** vs [Standard Retailer and Supplier Interline Agreement (SRSIA)](/common/standards/standard-retailer-and-supplier-interline-agreement-srsia.md) — MITA is the established multilateral ticket/document-based interline traffic agreement; SRSIA is a bilateral template agreement for offer-and-order interlining that runs in parallel to (rather than automatically replacing) MITA.
 
 # Citations
-[1] IATA — Multilateral Interline Traffic Agreements (MITA)
+[1] [IATA — Multilateral Interline Traffic Agreements (MITA)](https://www.iata.org/en/publications/manuals/multilateral-interline-traffic-agreements/)

@@ -40,11 +40,11 @@ relationships:
     targetTerm: Cancellation Policy
   - type: related
     targetTerm: Cancellation Fee Waiver
-  - type: related
+  - type: contrasts
     targetTerm: Refund
   - type: related
     targetTerm: Cruise-Only Fare
-  - type: related
+  - type: contrasts
     targetTerm: Onboard Credit (OBC)
 distinctions:
   - targetTerm: EMD
@@ -92,9 +92,9 @@ Future Cruise Credits are central to cruise cancellation, rebooking and retentio
 - [MCO (Miscellaneous Charges Order)](/air/air-ticket/mco-miscellaneous-charges-order.md) — contrasts
 - [Cancellation Policy](/lodging/hotel-dist/cancellation-policy.md) — related
 - [Cancellation Fee Waiver](/common/insurance/cancellation-fee-waiver.md) — related
-- [Refund](/air/air-ticket/refund.md) — related
+- [Refund](/air/air-ticket/refund.md) — contrasts
 - [Cruise-Only Fare](/cruise/cruise/cruise-only-fare.md) — related
-- [Onboard Credit (OBC)](/cruise/cruise/onboard-credit-obc.md) — related
+- [Onboard Credit (OBC)](/cruise/cruise/onboard-credit-obc.md) — contrasts
 
 # Distinctions
 - **Future Cruise Credit (FCC)** vs [EMD](/air/air-ticket/emd.md) — An EMD is an IATA accountable document settled through BSP/ARC that holds value for airline ancillaries or residual ticket value and is interline-recognized; an FCC is a single-brand cruise promotional credit with no industry settlement, redeemable only against that line's future sailings and not convertible to cash.

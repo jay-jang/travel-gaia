@@ -40,17 +40,20 @@ distinctions:
   - targetTerm: WorldTracer
     explanation: The PIR is the report/reference documenting a baggage irregularity; WorldTracer is the SITA system that registers PIR files and performs the global search-and-match for the missing bag.
     explanation_ko: 'PIR은 수하물 이상을 기록하는 보고서·참조번호이고, WorldTracer는 PIR 파일을 등록하고 분실 수하물에 대한 전 세계 검색·매칭을 수행하는 SITA 시스템이다.'
+  - targetTerm: Baggage Delay
+    explanation: 'A Property Irregularity Report (PIR) is the carrier''s mishandled-baggage record filed at the airport; it is the documentation a traveler uses to substantiate a baggage delay insurance claim, not the insurance benefit itself.'
+    explanation_ko: 'Property Irregularity Report(PIR)는 공항에서 작성하는 운송인의 수하물 사고 기록으로, baggage delay 보험 클레임을 입증하는 증빙 서류이지 보장 자체가 아니다.'
 sources:
   - org: IATA
     name: Baggage Standards / RP 1743e Baggage Irregularity Report (Passenger Services Conference Resolutions Manual)
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
   - org: SITA
     name: WorldTracer baggage management
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.sita.aero/solutions/sita-at-airports/sita-baggage-management/worldtracer/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 16h16a2 2 0 0 1 2 2v22H12V18a2 2 0 0 1 2-2z"/><path d="M18 16v-3a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v3"/><path d="M17 24h10M17 30h7"/><circle cx="34" cy="30" r="6"/><path d="M34 27v3M34 33v.5"/></svg>
 ---
 
@@ -77,7 +80,8 @@ PIR(승객에게는 흔히 'PIR 번호' 또는 파일 참조번호로, 보통 st
 
 # Distinctions
 - **Property Irregularity Report** vs [WorldTracer](/common/disruption/worldtracer.md) — The PIR is the report/reference documenting a baggage irregularity; WorldTracer is the SITA system that registers PIR files and performs the global search-and-match for the missing bag.
+- **Property Irregularity Report** vs [Baggage Delay](/common/insurance/baggage-delay.md) — A Property Irregularity Report (PIR) is the carrier's mishandled-baggage record filed at the airport; it is the documentation a traveler uses to substantiate a baggage delay insurance claim, not the insurance benefit itself.
 
 # Citations
-[1] IATA — Baggage Standards / RP 1743e Baggage Irregularity Report (Passenger Services Conference Resolutions Manual)
-[2] SITA — WorldTracer baggage management
+[1] [IATA — Baggage Standards / RP 1743e Baggage Irregularity Report (Passenger Services Conference Resolutions Manual)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
+[2] [SITA — WorldTracer baggage management](https://www.sita.aero/solutions/sita-at-airports/sita-baggage-management/worldtracer/)

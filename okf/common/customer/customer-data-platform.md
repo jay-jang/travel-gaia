@@ -22,7 +22,7 @@ aliases:
 relationships:
   - type: related
     targetTerm: Customer Profile
-  - type: related
+  - type: narrower
     targetTerm: Single Customer View
   - type: related
     targetTerm: Offer
@@ -38,17 +38,17 @@ sources:
     org: Industry vendor guidance
     version: ''
     section: ''
-    url: ''
+    url: 'https://cdp.com/articles/cdp-for-travel/'
   - name: 'Composable CDPs for Travel: Personalizing Guest Experiences with AI'
     org: Industry vendor guidance
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.snowflake.com/en/blog/composable-cdp-travel-hospitality/'
   - name: Iberia Powers Next-Level Airline Customer Experience with Real-Time Data and AI
     org: Iberia / vendor case study
     version: ''
     section: ''
-    url: ''
+    url: 'https://tealium.com/blog/customer-experience/iberia-next-level-airline-customer-experience/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="4"/><circle cx="10" cy="24" r="4"/><circle cx="10" cy="38" r="4"/><path d="M14 10h8l6 14M14 24h14M14 38h8l6-14"/><circle cx="34" cy="24" r="7"/><path d="M31 24l2 2 4-4"/></svg>
 ---
 
@@ -64,7 +64,7 @@ CDP는 단순한 CRM이나 데이터 웨어하우스와 달리, 여러 출처로
 
 # Related
 - [Customer Profile](/common/customer/customer-profile.md) — related
-- [Single Customer View](/common/customer/single-customer-view.md) — related
+- [Single Customer View](/common/customer/single-customer-view.md) — narrower
 - [Offer](/common/standards/offer.md) — related
 
 # Distinctions
@@ -72,6 +72,6 @@ CDP는 단순한 CRM이나 데이터 웨어하우스와 달리, 여러 출처로
 - **Customer Data Platform** vs [Single Customer View](/common/customer/single-customer-view.md) — A Single Customer View is the unified golden-record output; a CDP is the software that produces and maintains that view and pushes it to operational systems.
 
 # Citations
-[1] Industry vendor guidance — CDP for Travel and Hospitality
-[2] Industry vendor guidance — Composable CDPs for Travel: Personalizing Guest Experiences with AI
-[3] Iberia / vendor case study — Iberia Powers Next-Level Airline Customer Experience with Real-Time Data and AI
+[1] [Industry vendor guidance — CDP for Travel and Hospitality](https://cdp.com/articles/cdp-for-travel/)
+[2] [Industry vendor guidance — Composable CDPs for Travel: Personalizing Guest Experiences with AI](https://www.snowflake.com/en/blog/composable-cdp-travel-hospitality/)
+[3] [Iberia / vendor case study — Iberia Powers Next-Level Airline Customer Experience with Real-Time Data and AI](https://tealium.com/blog/customer-experience/iberia-next-level-airline-customer-experience/)

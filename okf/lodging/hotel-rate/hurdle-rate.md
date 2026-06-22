@@ -22,7 +22,7 @@ aliases:
 relationships:
   - type: contrasts
     targetTerm: Bid Price
-  - type: related
+  - type: broader
     targetTerm: Revenue Management
   - type: related
     targetTerm: BAR
@@ -37,6 +37,9 @@ distinctions:
   - targetTerm: BAR
     explanation: 'BAR is the published best rate offered to guests; the hurdle rate is the internal cost-of-displacement floor used to decide whether to sell at all, and it may sit below or above the published BAR depending on demand.'
     explanation_ko: 'BAR은 고객에게 게시되는 최선 요금이고, 허들 레이트는 애초에 판매할지 여부를 결정하는 내부 기회비용 하한선으로, 수요에 따라 게시된 BAR보다 낮거나 높을 수 있다.'
+  - targetTerm: Displacement Analysis
+    explanation: The hurdle rate is the per-room-night threshold an RMS applies to individual rate decisions; displacement analysis is the broader process that uses those forecasts and hurdles to evaluate an entire group request against displaced transient business.
+    explanation_ko: '허들 레이트는 RMS가 개별 요금 결정에 적용하는 객실-박 단위 임계값이고, displacement analysis는 그 예측과 허들을 활용해 전체 그룹 요청을 밀려나는 transient 사업과 비교 평가하는 더 넓은 프로세스다.'
 sources:
   - org: Xotels
     name: Rate Hurdle Definition / Meaning (Glossary)
@@ -63,7 +66,7 @@ Also called the rate hurdle or, conceptually, the last room value, the hurdle ra
 
 # Related
 - [Bid Price](/air/air-shop/bid-price.md) — contrasts
-- [Revenue Management](/air/air-shop/revenue-management.md) — related
+- [Revenue Management](/air/air-shop/revenue-management.md) — broader
 - [BAR](/lodging/hotel-rate/bar.md) — related
 - [Booking Limit](/air/air-shop/booking-limit.md) — related
 - [Displacement Analysis](/lodging/hotel-rate/displacement-analysis.md) — related
@@ -71,6 +74,7 @@ Also called the rate hurdle or, conceptually, the last room value, the hurdle ra
 # Distinctions
 - **Hurdle Rate** vs [Bid Price](/air/air-shop/bid-price.md) — Bid price is the general revenue-management threshold (the marginal value / opportunity cost of the last unit of capacity) that originated in airline and network RM; the hurdle rate is the same idea applied to a hotel room-night and expressed as a minimum acceptable room rate. In hotel systems the two are often used interchangeably, with the bid-price value commonly surfaced as the Last Room Value (LRV) from which the rate hurdle is derived.
 - **Hurdle Rate** vs [BAR](/lodging/hotel-rate/bar.md) — BAR is the published best rate offered to guests; the hurdle rate is the internal cost-of-displacement floor used to decide whether to sell at all, and it may sit below or above the published BAR depending on demand.
+- **Hurdle Rate** vs [Displacement Analysis](/lodging/hotel-rate/displacement-analysis.md) — The hurdle rate is the per-room-night threshold an RMS applies to individual rate decisions; displacement analysis is the broader process that uses those forecasts and hurdles to evaluate an entire group request against displaced transient business.
 
 # Citations
 [1] [Xotels — Rate Hurdle Definition / Meaning (Glossary)](https://www.xotels.com/en/glossary/rate-hurdle)

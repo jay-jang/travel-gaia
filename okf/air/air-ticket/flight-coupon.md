@@ -36,12 +36,18 @@ distinctions:
   - targetTerm: E-ticket
     explanation: The e-ticket is the whole document; a flight coupon is one of its (up to four) usable parts.
     explanation_ko: '전자항공권은 서류 전체이며, Flight Coupon은 그 안에서 사용 가능한 (최대 4개의) 부분 중 하나이다.'
+  - targetTerm: Conjunction Ticket
+    explanation: 'A flight coupon is one segment-level portion of a single ticket; a conjunction ticket is a grouping of multiple whole tickets, used when an itinerary needs more coupons than one ticket can hold.'
+    explanation_ko: 'Flight Coupon은 단일 항공권 내의 구간 단위 부분이고, conjunction ticket은 여러 항공권 전체를 묶은 것으로, 여정이 한 항공권에 담을 수 있는 쿠폰 수를 초과할 때 사용된다.'
+  - targetTerm: Coupon Status
+    explanation: The flight coupon is the segment-level portion of a ticket; coupon status is the state attribute attached to that coupon describing its position in the lifecycle.
+    explanation_ko: 'Flight coupon은 항공권의 구간 단위 부분이고, coupon status는 그 쿠폰에 부여되어 생애주기상 위치를 기술하는 상태 속성이다.'
 sources:
   - name: Passenger Services Conference Resolutions Manual (PSCRM)
     org: IATA
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M7 16h34v6a3 3 0 000 6v6H7v-6a3 3 0 000-6z"/><path d="M20 16v3M20 24v3M20 29v3"/><path d="M27 22l4 4 8-9"/></svg>
 ---
 
@@ -64,6 +70,8 @@ A single ticket may contain up to four flight coupons; itineraries with more seg
 # Distinctions
 - **Flight Coupon** vs [Segment](/air/air-ops/segment.md) — A segment is the reservation/operational unit of travel; a flight coupon is the corresponding revenue/entitlement portion of the ticket.
 - **Flight Coupon** vs [E-ticket](/air/air-ticket/e-ticket.md) — The e-ticket is the whole document; a flight coupon is one of its (up to four) usable parts.
+- **Flight Coupon** vs [Conjunction Ticket](/air/air-ticket/conjunction-ticket.md) — A flight coupon is one segment-level portion of a single ticket; a conjunction ticket is a grouping of multiple whole tickets, used when an itinerary needs more coupons than one ticket can hold.
+- **Flight Coupon** vs [Coupon Status](/air/air-ticket/coupon-status.md) — The flight coupon is the segment-level portion of a ticket; coupon status is the state attribute attached to that coupon describing its position in the lifecycle.
 
 # Citations
-[1] IATA — Passenger Services Conference Resolutions Manual (PSCRM)
+[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)

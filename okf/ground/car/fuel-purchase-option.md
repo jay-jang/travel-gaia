@@ -23,7 +23,7 @@ aliases:
   - Prepaid Fuel
   - Fuel Service Option
 relationships:
-  - type: related
+  - type: parent
     targetTerm: Rental Agreement
   - type: related
     targetTerm: Time and Mileage
@@ -36,12 +36,12 @@ sources:
     name: Car Rental and Mobility Tech Glossary — Fuel purchase option (FPO)
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.carrentalgateway.com/glossary/fuel-purchase-option/'
   - org: ''
     name: Fuel Policies for Car Rentals — Full Tank vs. Prepay Explained
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.finalrentals.com/blog/single/fuel-policies-for-car-rentals'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M10 40V12a4 4 0 0 1 4-4h12a4 4 0 0 1 4 4v28"/><path d="M8 40h24"/><path d="M14 14h12v8H14z"/><path d="M30 18l5 4v12a3 3 0 0 0 6 0V16l-5-5"/></svg>
 ---
 
@@ -56,12 +56,12 @@ Common fuel policies include: full-to-full (the renter receives a full tank and 
 **Aliases:** `Fuel Purchase Option`, `FPO`, `Fuel Policy`, `Prepaid Fuel`, `Fuel Service Option`
 
 # Related
-- [Rental Agreement](/ground/car/rental-agreement.md) — related
+- [Rental Agreement](/ground/car/rental-agreement.md) — parent
 - [Time and Mileage](/ground/car/time-and-mileage.md) — related
 
 # Distinctions
 - **Fuel Purchase Option** vs [Time and Mileage](/ground/car/time-and-mileage.md) — FPO prices fuel (how the tank is billed); time and mileage prices the rental duration and distance driven. Both are line items in the total, but they bill entirely different things.
 
 # Citations
-[1] Car Rental and Mobility Tech Glossary — Fuel purchase option (FPO)
-[2] Fuel Policies for Car Rentals — Full Tank vs. Prepay Explained
+[1] [Car Rental and Mobility Tech Glossary — Fuel purchase option (FPO)](https://www.carrentalgateway.com/glossary/fuel-purchase-option/)
+[2] [Fuel Policies for Car Rentals — Full Tank vs. Prepay Explained](https://www.finalrentals.com/blog/single/fuel-policies-for-car-rentals)

@@ -34,17 +34,20 @@ distinctions:
   - targetTerm: Sustainable Aviation Fuel (SAF)
     explanation: 'Contrails are a non-CO2 warming effect; SAF mainly targets CO2/lifecycle emissions, though its lower aromatics/soot content is also studied for reducing contrail formation — they address different but overlapping climate impacts.'
     explanation_ko: '비행운은 비-CO2 가온 효과이고, SAF는 주로 CO2/전 주기 배출을 겨냥하지만 낮은 방향족·매연(soot) 함량이 비행운 형성 감소 측면에서도 연구되고 있어, 서로 다르되 겹치는 기후 영향을 다룬다.'
+  - targetTerm: Well-to-Wake (WtW)
+    explanation: Well-to-Wake covers CO2 (and other GHGs) across the fuel's life cycle; contrails are a non-CO2 in-flight warming effect from the engine exhaust that WtW fuel LCA does not capture.
+    explanation_ko: 'Well-to-Wake는 연료 전 주기에 걸친 CO2(및 기타 GHG)를 다루지만, 비행운(contrail)은 엔진 배기에서 발생하는 비-CO2 비행 중 온난화 효과로 WtW 연료 LCA가 포착하지 않는다.'
 sources:
   - org: IATA
     name: Aviation contrails and their climate effect
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/contentassets/726b8a2559ad48fe9decb6f2534549a6/aviation-contrails-climate-impact-report.pdf'
   - org: EASA
     name: Updated analysis of the non-CO2 effects of aviation
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.easa.europa.eu/sites/default/files/dfu/201119_report_com_ep_council_updated_analysis_non_co2_climate_impacts_aviation.pdf'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M30 10l4 4-9 6 1 9-3 2-3-7-7-3 2-3 9 1 6-9z"/><path d="M6 38c3-2 5-2 8 0s5 2 8 0 5-2 8 0 5 2 8 0"/><path d="M8 32c2-1.5 4-1.5 6 0s4 1.5 6 0"/></svg>
 ---
 
@@ -66,7 +69,8 @@ Scientific assessments estimate that non-CO2 effects (contrail cirrus, NOx, part
 # Distinctions
 - **Contrail (Non-CO2 Effects)** vs [GHG Protocol Scope 3 (Business Travel)](/common/sustainability/ghg-protocol-scope-3-business-travel.md) — Non-CO2 contrail forcing is a physical climate effect; the GHG Protocol references it only as an optional radiative-forcing multiplier that companies may apply (and must disclose) when accounting for air travel emissions.
 - **Contrail (Non-CO2 Effects)** vs [Sustainable Aviation Fuel (SAF)](/common/sustainability/sustainable-aviation-fuel-saf.md) — Contrails are a non-CO2 warming effect; SAF mainly targets CO2/lifecycle emissions, though its lower aromatics/soot content is also studied for reducing contrail formation — they address different but overlapping climate impacts.
+- **Contrail (Non-CO2 Effects)** vs [Well-to-Wake (WtW)](/common/sustainability/well-to-wake-wtw.md) — Well-to-Wake covers CO2 (and other GHGs) across the fuel's life cycle; contrails are a non-CO2 in-flight warming effect from the engine exhaust that WtW fuel LCA does not capture.
 
 # Citations
-[1] IATA — Aviation contrails and their climate effect
-[2] EASA — Updated analysis of the non-CO2 effects of aviation
+[1] [IATA — Aviation contrails and their climate effect](https://www.iata.org/contentassets/726b8a2559ad48fe9decb6f2534549a6/aviation-contrails-climate-impact-report.pdf)
+[2] [EASA — Updated analysis of the non-CO2 effects of aviation](https://www.easa.europa.eu/sites/default/files/dfu/201119_report_com_ep_council_updated_analysis_non_co2_climate_impacts_aviation.pdf)

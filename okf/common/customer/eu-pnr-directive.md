@@ -24,11 +24,11 @@ aliases:
 relationships:
   - type: related
     targetTerm: PNR
-  - type: related
+  - type: contrasts
     targetTerm: Advance Passenger Information System
   - type: related
     targetTerm: GDPR Consent
-  - type: related
+  - type: contrasts
     targetTerm: Secure Flight
 distinctions:
   - targetTerm: PNR
@@ -58,9 +58,9 @@ Each EU member state establishes a Passenger Information Unit responsible for co
 
 # Related
 - [PNR](/air/air-ops/pnr.md) — related
-- [Advance Passenger Information System](/common/customer/advance-passenger-information-system.md) — related
+- [Advance Passenger Information System](/common/customer/advance-passenger-information-system.md) — contrasts
 - [GDPR Consent](/common/customer/gdpr-consent.md) — related
-- [Secure Flight](/common/customer/secure-flight.md) — related
+- [Secure Flight](/common/customer/secure-flight.md) — contrasts
 
 # Distinctions
 - **EU PNR Directive** vs [PNR](/air/air-ops/pnr.md) — The PNR is the reservation data record built and held in the carrier's booking system; the EU PNR Directive is the law obliging carriers to transfer that record's data to government Passenger Information Units for security purposes.

@@ -22,9 +22,9 @@ aliases:
 relationships:
   - type: broader
     targetTerm: Revenue Management
-  - type: related
+  - type: contrasts
     targetTerm: Booking Limit
-  - type: related
+  - type: contrasts
     targetTerm: Bid Price
   - type: related
     targetTerm: Availability
@@ -37,12 +37,18 @@ distinctions:
   - targetTerm: Overbooking
     explanation: Protection levels allocate real capacity among fare classes; overbooking authorizes selling beyond physical capacity to offset no-shows. They are distinct RM controls that operate together.
     explanation_ko: 'Protection level은 실제 capacity를 운임 클래스 간에 배분하고, overbooking은 no-show를 상쇄하기 위해 물리적 capacity를 넘는 판매를 승인한다. 함께 작동하는 별개의 RM 통제이다.'
+  - targetTerm: Expected Marginal Seat Revenue (EMSR)
+    explanation: 'A protection level is the quantity of seats reserved for higher classes; EMSR is the computational method that calculates that quantity. EMSR produces protection levels (and hence booking limits), it is not itself the reservation.'
+    explanation_ko: 'Protection level은 상위 클래스를 위해 예약된 좌석의 수량이고, EMSR은 그 수량을 산출하는 계산 방법이다. EMSR은 protection level(따라서 booking limit)을 만들어내는 것이지, 그 자체가 예약은 아니다.'
+  - targetTerm: Spill and Spoilage
+    explanation: A protection level is the control quantity that is set; spill and spoilage are the realized error outcomes of having set it too low (spill of high-yield demand) or too high (spoilage of empty seats).
+    explanation_ko: 'Protection level은 설정되는 통제 수량이고, spill과 spoilage는 그것을 너무 낮게(고수익 수요의 spill) 또는 너무 높게(빈 좌석의 spoilage) 설정한 데서 실현되는 오류 결과이다.'
 sources:
   - org: MIT
     name: Airline Revenue Management I (protection levels and EMSR)
     version: ''
     section: EMSR / protection levels
-    url: ''
+    url: 'https://ocw.mit.edu/courses/16-75j-airline-management-spring-2006/'
   - org: INFORMS
     name: 'Revenue Management: Models and Methods'
     version: ''
@@ -63,15 +69,17 @@ Protection level은 향후의 더 높은 수익 예약을 위해 좌석을 얼�
 
 # Related
 - [Revenue Management](/air/air-shop/revenue-management.md) — broader
-- [Booking Limit](/air/air-shop/booking-limit.md) — related
-- [Bid Price](/air/air-shop/bid-price.md) — related
+- [Booking Limit](/air/air-shop/booking-limit.md) — contrasts
+- [Bid Price](/air/air-shop/bid-price.md) — contrasts
 - [Availability](/air/air-shop/availability.md) — related
 - [RBD](/air/air-shop/rbd.md) — related
 
 # Distinctions
 - **Protection Level** vs [Booking Limit](/air/air-shop/booking-limit.md) — A protection level reserves seats for higher classes; a booking limit caps what a class may sell. They are two sides of the same nested control: lower-class booking limit = capacity minus the higher classes' protection level.
 - **Protection Level** vs [Overbooking](/air/air-shop/overbooking.md) — Protection levels allocate real capacity among fare classes; overbooking authorizes selling beyond physical capacity to offset no-shows. They are distinct RM controls that operate together.
+- **Protection Level** vs [Expected Marginal Seat Revenue (EMSR)](/air/air-shop/expected-marginal-seat-revenue.md) — A protection level is the quantity of seats reserved for higher classes; EMSR is the computational method that calculates that quantity. EMSR produces protection levels (and hence booking limits), it is not itself the reservation.
+- **Protection Level** vs [Spill and Spoilage](/air/air-shop/spill-and-spoilage.md) — A protection level is the control quantity that is set; spill and spoilage are the realized error outcomes of having set it too low (spill of high-yield demand) or too high (spoilage of empty seats).
 
 # Citations
-[1] MIT — Airline Revenue Management I (protection levels and EMSR) — EMSR / protection levels
+[1] [MIT — Airline Revenue Management I (protection levels and EMSR) — EMSR / protection levels](https://ocw.mit.edu/courses/16-75j-airline-management-spring-2006/)
 [2] [INFORMS — Revenue Management: Models and Methods — Protection levels](https://www.informs-sim.org/wsc09papers/013.pdf)

@@ -35,9 +35,9 @@ relationships:
     targetTerm: ARI
   - type: related
     targetTerm: Channel Manager
-  - type: related
+  - type: contrasts
     targetTerm: Overbooking
-  - type: related
+  - type: contrasts
     targetTerm: Minimum Length of Stay (MLOS)
   - type: contrasts
     targetTerm: Free Sale
@@ -48,12 +48,21 @@ distinctions:
   - targetTerm: Minimum Length of Stay (MLOS)
     explanation: MLOS conditionally blocks only stays shorter than a threshold; Stop Sell unconditionally blocks all new bookings for the affected dates and products.
     explanation_ko: 'MLOS는 기준 미만 투숙만 조건부로 차단하지만, Stop Sell은 해당 날짜·상품의 모든 신규 예약을 무조건 차단한다.'
+  - targetTerm: Closed to Arrival (CTA)
+    explanation: A stop sell closes a date to all sale entirely; CTA closes only new arrivals on that date while still allowing through-stays and (unlike stop sell) does not block bookings that merely span the date.
+    explanation_ko: 'Stop Sell은 해당 날짜를 모든 판매에 대해 완전히 닫고, CTA는 그 날짜의 신규 도착만 막을 뿐 through-stay는 허용하며 (stop sell과 달리) 단순히 그 날짜를 걸쳐 지나가는 예약은 막지 않는다.'
+  - targetTerm: Last Room Availability
+    explanation: 'A stop sell closes a rate or room type entirely; LRA is the guarantee that the negotiated rate will NOT be stopped/closed out as long as the room type is sellable, whereas NLRA permits exactly such selective close-outs.'
+    explanation_ko: 'Stop sell은 요금이나 객실 유형을 완전히 닫는 것이고, LRA는 객실 유형이 판매 가능한 한 협상 요금이 중단/마감되지 않도록 하는 보장이며, NLRA는 바로 그런 선택적 마감을 허용한다.'
+  - targetTerm: Last Room Availability (LRA)
+    explanation: 'A stop sell closes a rate or room from sale; an LRA guarantee specifically restrains the hotel from applying a stop sell to the negotiated rate while inventory remains, whereas NLRA permits exactly that.'
+    explanation_ko: 'Stop Sell은 요금·객실을 판매 중지시키고, LRA 보장은 재고가 남아 있는 동안 호텔이 협정 요금에 stop sell을 적용하지 못하도록 특별히 제한한다. NLRA는 바로 그것을 허용한다.'
 sources:
   - org: OpenTravel Alliance
     name: OTA_HotelAvailNotifRQ (RestrictionStatus / Status=Close)
     version: ''
     section: ''
-    url: ''
+    url: 'https://opentravel.org/download-specs/'
   - org: SiteMinder
     name: pmsXchange — Availability and Restrictions
     version: ''
@@ -82,14 +91,17 @@ Stop Sell은 OpenTravel ARI 메시지로 교환되는 핵심 availability 제약
 - [Availability](/air/air-shop/availability.md) — related
 - [ARI](/lodging/hotel-dist/ari.md) — related
 - [Channel Manager](/lodging/hotel-dist/channel-manager.md) — related
-- [Overbooking](/air/air-shop/overbooking.md) — related
-- [Minimum Length of Stay (MLOS)](/lodging/hotel-rate/minimum-length-of-stay-mlos.md) — related
+- [Overbooking](/air/air-shop/overbooking.md) — contrasts
+- [Minimum Length of Stay (MLOS)](/lodging/hotel-rate/minimum-length-of-stay-mlos.md) — contrasts
 - [Free Sale](/lodging/hotel-dist/free-sale.md) — contrasts
 
 # Distinctions
 - **Stop Sell** vs [Free Sale](/lodging/hotel-dist/free-sale.md) — Free Sale lets a channel keep selling a product without confirming real-time inventory; Stop Sell is the opposite action, forcibly closing sales for the dates and products it covers regardless of inventory.
 - **Stop Sell** vs [Minimum Length of Stay (MLOS)](/lodging/hotel-rate/minimum-length-of-stay-mlos.md) — MLOS conditionally blocks only stays shorter than a threshold; Stop Sell unconditionally blocks all new bookings for the affected dates and products.
+- **Stop Sell** vs [Closed to Arrival (CTA)](/lodging/hotel-rate/closed-to-arrival-cta.md) — A stop sell closes a date to all sale entirely; CTA closes only new arrivals on that date while still allowing through-stays and (unlike stop sell) does not block bookings that merely span the date.
+- **Stop Sell** vs [Last Room Availability](/lodging/hotel-dist/last-room-availability.md) — A stop sell closes a rate or room type entirely; LRA is the guarantee that the negotiated rate will NOT be stopped/closed out as long as the room type is sellable, whereas NLRA permits exactly such selective close-outs.
+- **Stop Sell** vs [Last Room Availability (LRA)](/lodging/hotel-rate/last-room-availability-lra.md) — A stop sell closes a rate or room from sale; an LRA guarantee specifically restrains the hotel from applying a stop sell to the negotiated rate while inventory remains, whereas NLRA permits exactly that.
 
 # Citations
-[1] OpenTravel Alliance — OTA_HotelAvailNotifRQ (RestrictionStatus / Status=Close)
+[1] [OpenTravel Alliance — OTA_HotelAvailNotifRQ (RestrictionStatus / Status=Close)](https://opentravel.org/download-specs/)
 [2] [SiteMinder — pmsXchange — Availability and Restrictions](https://developer.siteminder.com/siteminder-apis/pms-rms/introduction/pmsxchange/api-reference/availability-and-restrictions)

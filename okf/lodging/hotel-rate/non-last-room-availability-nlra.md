@@ -27,7 +27,7 @@ relationships:
     targetTerm: Last Room Availability (LRA)
   - type: related
     targetTerm: Stop Sell
-  - type: related
+  - type: contrasts
     targetTerm: BAR
 distinctions:
   - targetTerm: Last Room Availability (LRA)
@@ -69,7 +69,7 @@ NLRA 약정에서는 협정 요금이 호텔 재량으로 제공된다. 재고�
 - [Corporate Rate](/lodging/hotel-rate/corporate-rate.md) — related
 - [Last Room Availability (LRA)](/lodging/hotel-rate/last-room-availability-lra.md) — contrasts
 - [Stop Sell](/lodging/hotel-rate/stop-sell.md) — related
-- [BAR](/lodging/hotel-rate/bar.md) — related
+- [BAR](/lodging/hotel-rate/bar.md) — contrasts
 
 # Distinctions
 - **Non-Last Room Availability (NLRA)** vs [Last Room Availability (LRA)](/lodging/hotel-rate/last-room-availability-lra.md) — NLRA lets the hotel close the negotiated rate at will during high demand; LRA forbids that, guaranteeing the rate to the last sellable room. They are the two opposing access modes for the same negotiated rate.

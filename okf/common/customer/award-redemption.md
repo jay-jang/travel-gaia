@@ -21,7 +21,7 @@ aliases:
   - Reward Redemption
   - Mileage Redemption
 relationships:
-  - type: related
+  - type: broader
     targetTerm: Frequent Flyer Program
   - type: related
     targetTerm: Frequent Flyer Number
@@ -38,6 +38,9 @@ distinctions:
   - targetTerm: Companion
     explanation: 'An award redemption is paid for entirely with miles/points, whereas a companion benefit (e.g., a companion fare) typically discounts or waives the fare for a second paying-style ticket and is not itself a miles redemption.'
     explanation_ko: 'Award redemption은 전적으로 마일/포인트로 결제하는 반면, companion 혜택(예: companion fare)은 보통 두 번째 동반자 항공권의 운임을 할인·면제하는 것으로 그 자체가 마일 사용은 아니다.'
+  - targetTerm: Breakage
+    explanation: Award Redemption is the act of a member spending points for a reward; Breakage is the accounting estimate of the points that will never be redeemed at all.
+    explanation_ko: 'Award Redemption은 회원이 포인트를 보상으로 사용하는 행위이고, Breakage는 결코 상환되지 않을 포인트에 대한 회계 추정치이다.'
 sources:
   - org: Navan
     name: What are Frequent Flyer Miles? How They Work
@@ -58,7 +61,7 @@ When a member redeems for air travel, the program debits the required miles from
 **Aliases:** `Redemption`, `Award Booking`, `Reward Redemption`, `Mileage Redemption`
 
 # Related
-- [Frequent Flyer Program](/common/customer/frequent-flyer-program.md) — related
+- [Frequent Flyer Program](/common/customer/frequent-flyer-program.md) — broader
 - [Frequent Flyer Number](/common/customer/frequent-flyer-number.md) — related
 - [Availability](/air/air-shop/availability.md) — related
 - [RBD](/air/air-shop/rbd.md) — related
@@ -67,6 +70,7 @@ When a member redeems for air travel, the program debits the required miles from
 # Distinctions
 - **Award Redemption** vs [Mileage Accrual](/common/customer/mileage-accrual.md) — Award redemption spends the loyalty balance to obtain a reward, whereas mileage accrual earns and adds to that balance; the two are opposite flows in the same account.
 - **Award Redemption** vs [Companion](/common/customer/companion.md) — An award redemption is paid for entirely with miles/points, whereas a companion benefit (e.g., a companion fare) typically discounts or waives the fare for a second paying-style ticket and is not itself a miles redemption.
+- **Award Redemption** vs [Breakage](/common/customer/breakage.md) — Award Redemption is the act of a member spending points for a reward; Breakage is the accounting estimate of the points that will never be redeemed at all.
 
 # Citations
 [1] [Navan — What are Frequent Flyer Miles? How They Work](https://navan.com/resources/glossary/what-is-frequent-flyer-miles)

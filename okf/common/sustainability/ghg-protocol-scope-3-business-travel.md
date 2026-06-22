@@ -37,17 +37,20 @@ distinctions:
   - targetTerm: IATA CO2 Connect
     explanation: Scope 3 Category 6 defines what corporate travel emissions to account for and how to report them; IATA CO2 Connect is one data source/calculator that can supply the per-flight figures used in that accounting.
     explanation_ko: 'Scope 3 카테고리 6은 어떤 출장 배출을 회계 대상으로 하고 어떻게 보고할지를 정의하고, IATA CO2 Connect은 그 회계에 쓰이는 항공편별 수치를 제공할 수 있는 데이터 출처/계산기 중 하나이다.'
+  - targetTerm: Contrail (Non-CO2 Effects)
+    explanation: Non-CO2 contrail forcing is a physical climate effect; the GHG Protocol references it only as an optional radiative-forcing multiplier that companies may apply (and must disclose) when accounting for air travel emissions.
+    explanation_ko: '비-CO2 비행운 강제력은 물리적 기후 효과이고, GHG 프로토콜은 이를 기업이 항공 출장 배출을 회계할 때 적용할 수 있는(그리고 공개해야 하는) 선택적 복사강제력 승수로만 참조한다.'
 sources:
   - org: GHG Protocol (WRI/WBCSD)
     name: Corporate Value Chain (Scope 3) Accounting and Reporting Standard
     version: ''
     section: Category 6
-    url: ''
+    url: 'https://ghgprotocol.org/sites/default/files/standards/Corporate-Value-Chain-Accounting-Reporing-Standard_041613_2.pdf'
   - org: GHG Protocol
     name: Technical Guidance for Calculating Scope 3 Emissions – Category 6 (Business Travel)
     version: ''
     section: Chapter 6
-    url: ''
+    url: 'https://ghgprotocol.org/sites/default/files/2022-12/Chapter6.pdf'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="16" y="14" width="16" height="28" rx="2"/><path d="M20 14v-3a3 3 0 0 1 3-3h2a3 3 0 0 1 3 3v3"/><path d="M16 22h16"/><path d="M38 10l-7 7-3-3"/><path d="M22 30h4M22 35h4"/></svg>
 ---
 
@@ -70,7 +73,8 @@ Category 6 covers business travel but excludes employee commuting (Category 7). 
 # Distinctions
 - **GHG Protocol Scope 3 (Business Travel)** vs [CORSIA (Carbon Offsetting and Reduction Scheme for International Aviation)](/common/sustainability/corsia.md) — Scope 3 Category 6 is a corporate carbon-accounting standard for the buyer/traveler's own value-chain inventory; CORSIA is an operator-side regulatory offsetting obligation on airlines — different parties and purposes.
 - **GHG Protocol Scope 3 (Business Travel)** vs [IATA CO2 Connect](/common/sustainability/iata-co2-connect.md) — Scope 3 Category 6 defines what corporate travel emissions to account for and how to report them; IATA CO2 Connect is one data source/calculator that can supply the per-flight figures used in that accounting.
+- **GHG Protocol Scope 3 (Business Travel)** vs [Contrail (Non-CO2 Effects)](/common/sustainability/contrail-non-co2-effects.md) — Non-CO2 contrail forcing is a physical climate effect; the GHG Protocol references it only as an optional radiative-forcing multiplier that companies may apply (and must disclose) when accounting for air travel emissions.
 
 # Citations
-[1] GHG Protocol (WRI/WBCSD) — Corporate Value Chain (Scope 3) Accounting and Reporting Standard — Category 6
-[2] GHG Protocol — Technical Guidance for Calculating Scope 3 Emissions – Category 6 (Business Travel) — Chapter 6
+[1] [GHG Protocol (WRI/WBCSD) — Corporate Value Chain (Scope 3) Accounting and Reporting Standard — Category 6](https://ghgprotocol.org/sites/default/files/standards/Corporate-Value-Chain-Accounting-Reporing-Standard_041613_2.pdf)
+[2] [GHG Protocol — Technical Guidance for Calculating Scope 3 Emissions – Category 6 (Business Travel) — Chapter 6](https://ghgprotocol.org/sites/default/files/2022-12/Chapter6.pdf)

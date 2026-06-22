@@ -35,7 +35,7 @@ providerTerms:
 relationships:
   - type: contrasts
     targetTerm: Standard International Passenger Tariff (TCV)
-  - type: related
+  - type: contrasts
     targetTerm: Montreal Convention 1999
   - type: related
     targetTerm: Cancellation Policy
@@ -85,7 +85,7 @@ Issued per booking (often titled 'Cruise/Cruisetour Ticket Contract' or 'Passage
 
 # Related
 - [Standard International Passenger Tariff (TCV)](/ground/rail/standard-international-passenger-tariff-tcv.md) — contrasts
-- [Montreal Convention 1999](/common/disruption/montreal-convention-1999.md) — related
+- [Montreal Convention 1999](/common/disruption/montreal-convention-1999.md) — contrasts
 - [Cancellation Policy](/lodging/hotel-dist/cancellation-policy.md) — related
 - [Fuel Supplement](/cruise/cruise/fuel-supplement.md) — related
 - [Cruise-Only Fare](/cruise/cruise/cruise-only-fare.md) — related

@@ -53,12 +53,12 @@ sources:
     name: Standard Schedules Information Manual (SSIM)
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/standard-schedules-information/'
   - org: OAG
     name: Data Transfer to OAG using SSM & ASM Updating
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.oag.com/hubfs/Inbound-Services/Data-Transfer-to-OAG-using-SSM-and-ASM-Updating.pdf'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="7" width="30" height="34" rx="2"/><line x1="14" y1="15" x2="34" y2="15"/><line x1="14" y1="22" x2="28" y2="22"/><line x1="14" y1="29" x2="31" y2="29"/><path d="M30 35l3-7 3 7"/><path d="M31.5 32h3"/></svg>
 ---
 
@@ -91,5 +91,5 @@ SSIM은 batch 파일 포맷(한 시즌 전체 스케줄을 전송하는 SSIM 레
 - **Standard Schedules Information Manual (SSIM)** vs [Availability Status Message (AVS)](/air/air-ops/availability-status-message-avs.md) — SSIM standards govern the schedule (which flights operate, when, with what aircraft); AVS messages govern the bookable seat status on those flights. Schedule data is the layer beneath availability.
 
 # Citations
-[1] IATA — Standard Schedules Information Manual (SSIM)
-[2] OAG — Data Transfer to OAG using SSM & ASM Updating
+[1] [IATA — Standard Schedules Information Manual (SSIM)](https://www.iata.org/en/publications/manuals/standard-schedules-information/)
+[2] [OAG — Data Transfer to OAG using SSM & ASM Updating](https://www.oag.com/hubfs/Inbound-Services/Data-Transfer-to-OAG-using-SSM-and-ASM-Updating.pdf)

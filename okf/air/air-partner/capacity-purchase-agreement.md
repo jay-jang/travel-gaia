@@ -22,9 +22,9 @@ aliases:
   - Capacity-Purchase Agreement
   - Fee-per-Departure Agreement
 relationships:
-  - type: related
+  - type: contrasts
     targetTerm: Block Space Agreement
-  - type: related
+  - type: contrasts
     targetTerm: Wet Lease
   - type: related
     targetTerm: Codeshare
@@ -49,12 +49,12 @@ sources:
     org: Simple Flying
     version: ''
     section: ''
-    url: ''
+    url: 'https://simpleflying.com/capacity-purchase-agreements-guide/'
   - name: 'Flight schedules under partnership: the effects of capacity purchase agreements on airline schedule buffers'
     org: Journal of Air Transport Management
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.sciencedirect.com/science/article/abs/pii/S0969699725001395'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22l13-3 6-8 3 1-3 8 9-2 3-3 2 1-1 5"/><rect x="30" y="30" width="14" height="12" rx="2"/><path d="M34 30v-3a3 3 0 0 1 6 0v3"/><path d="M37 34v4"/></svg>
 ---
 
@@ -69,8 +69,8 @@ Under a capacity purchase agreement (CPA, also called a fee-per-departure contra
 **Aliases:** `CPA`, `Capacity Purchase Agreement`, `Capacity-Purchase Agreement`, `Fee-per-Departure Agreement`
 
 # Related
-- [Block Space Agreement](/air/air-partner/block-space-agreement.md) — related
-- [Wet Lease](/air/air-partner/wet-lease.md) — related
+- [Block Space Agreement](/air/air-partner/block-space-agreement.md) — contrasts
+- [Wet Lease](/air/air-partner/wet-lease.md) — contrasts
 - [Codeshare](/air/air-partner/codeshare.md) — related
 - [Marketing Carrier](/air/air-partner/marketing-carrier.md) — related
 - [Operating Carrier](/air/air-partner/operating-carrier.md) — related
@@ -82,5 +82,5 @@ Under a capacity purchase agreement (CPA, also called a fee-per-departure contra
 - **Capacity Purchase Agreement** vs [Codeshare](/air/air-partner/codeshare.md) — A codeshare places one carrier's code on another's independently operated and sold flight; under a CPA the regional has effectively no independent commercial existence on the route—the mainline controls everything and bears the revenue risk.
 
 # Citations
-[1] Simple Flying — What Are Capacity Purchase Agreements In Aviation?
-[2] Journal of Air Transport Management — Flight schedules under partnership: the effects of capacity purchase agreements on airline schedule buffers
+[1] [Simple Flying — What Are Capacity Purchase Agreements In Aviation?](https://simpleflying.com/capacity-purchase-agreements-guide/)
+[2] [Journal of Air Transport Management — Flight schedules under partnership: the effects of capacity purchase agreements on airline schedule buffers](https://www.sciencedirect.com/science/article/abs/pii/S0969699725001395)

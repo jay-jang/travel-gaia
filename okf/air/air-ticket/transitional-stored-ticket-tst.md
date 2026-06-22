@@ -26,7 +26,7 @@ providerTerms:
     context_ko: 'Amadeus는 TST를 PNR에 연결된 운임 레코드의 명칭으로 사용하며, 크립틱 명령(예: TQT)으로 표시·수정하고 e-ticket 발행에 사용한다. 하위 유형으로 AST(Automatic Stored Ticket)와 MST(Manual Stored Ticket)가 있다.'
     relationship: same
 relationships:
-  - type: related
+  - type: broader
     targetTerm: PNR
   - type: related
     targetTerm: E-ticket
@@ -48,12 +48,12 @@ sources:
     name: Understanding Transitional Stored Tickets (TST) (Cryptic and Graphic)
     version: ''
     section: ''
-    url: ''
+    url: 'https://servicehub.amadeus.com/c/portal/view-solution/780102/understanding-transitional-stored-tickets-tst-cryptic-and-graphic-'
   - org: Amadeus
     name: How to display a TST and a TST history (Cryptic)
     version: ''
     section: ''
-    url: ''
+    url: 'https://servicehub.amadeus.com/c/portal/view-solution/820197/how-to-display-a-tst-and-a-tst-history-cryptic-'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="9" width="26" height="22" rx="3"/><path d="M7 16h26"/><path d="M12 22h10M12 26h7"/><path d="M29 24l5 5 8-8"/></svg>
 ---
 
@@ -74,7 +74,7 @@ TST는 운임계산과 서류 발행 사이에 위치하는 GDS/PSS 구성요소
 | Amadeus | `Transitional Stored Ticket (TST)` | same | Amadeus uses TST as the named pricing record attached to the PNR, displayed/edited cryptically (e.g., TQT) and used to issue e-tickets; subtypes Automatic Stored Ticket (AST) and Manual Stored Ticket (MST). |
 
 # Related
-- [PNR](/air/air-ops/pnr.md) — related
+- [PNR](/air/air-ops/pnr.md) — broader
 - [E-ticket](/air/air-ticket/e-ticket.md) — related
 - [Fare Construction](/air/air-shop/fare-construction.md) — related
 - [Validating Carrier](/air/air-ticket/validating-carrier.md) — related
@@ -85,5 +85,5 @@ TST는 운임계산과 서류 발행 사이에 위치하는 GDS/PSS 구성요소
 - **Transitional Stored Ticket (TST)** vs [PNR](/air/air-ops/pnr.md) — The PNR holds the itinerary, passenger and contact data; the TST is a separate record attached to that PNR that holds the priced fare/tax/fare-calculation data needed to ticket it.
 
 # Citations
-[1] Amadeus — Understanding Transitional Stored Tickets (TST) (Cryptic and Graphic)
-[2] Amadeus — How to display a TST and a TST history (Cryptic)
+[1] [Amadeus — Understanding Transitional Stored Tickets (TST) (Cryptic and Graphic)](https://servicehub.amadeus.com/c/portal/view-solution/780102/understanding-transitional-stored-tickets-tst-cryptic-and-graphic-)
+[2] [Amadeus — How to display a TST and a TST history (Cryptic)](https://servicehub.amadeus.com/c/portal/view-solution/820197/how-to-display-a-tst-and-a-tst-history-cryptic-)

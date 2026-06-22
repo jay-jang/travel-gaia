@@ -44,12 +44,12 @@ sources:
     name: Settlement with Orders (SwO)
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/programs/airline-distribution/retailing/settlement-orders-swo/'
   - org: IATA
     name: Fact Sheet - Distribution with Offers and Orders
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/iata-repository/pressroom/fact-sheets/fact-sheet-ndc/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="10"/><path d="M24 18v12M21 21h4a2 2 0 0 1 0 4h-2a2 2 0 0 0 0 4h4"/><path d="M8 14l5-3 5 3M40 34l-5 3-5-3"/><path d="M13 11v9M35 37v-9"/></svg>
 ---
 
@@ -75,5 +75,5 @@ Built on a sales agreement and commitment to pay between two parties, SwO lets f
 - **Settlement with Orders (SwO)** vs [ONE Order](/common/standards/one-order.md) — ONE Order standardizes the single order record and its management/accounting; SwO standardizes the inter-party financial settlement of the funds arising from those orders.
 
 # Citations
-[1] IATA — Settlement with Orders (SwO)
-[2] IATA — Fact Sheet - Distribution with Offers and Orders
+[1] [IATA — Settlement with Orders (SwO)](https://www.iata.org/en/programs/airline-distribution/retailing/settlement-orders-swo/)
+[2] [IATA — Fact Sheet - Distribution with Offers and Orders](https://www.iata.org/en/iata-repository/pressroom/fact-sheets/fact-sheet-ndc/)

@@ -32,7 +32,7 @@ relationships:
     targetTerm: Surcharge
   - type: related
     targetTerm: Time and Mileage
-  - type: related
+  - type: parent
     targetTerm: Rental Agreement
 distinctions:
   - targetTerm: Surcharge
@@ -74,7 +74,7 @@ Airports charge on-airport (and often off-airport but airport-serving) car-renta
 # Related
 - [Surcharge](/air/air-shop/surcharge.md) — broader
 - [Time and Mileage](/ground/car/time-and-mileage.md) — related
-- [Rental Agreement](/ground/car/rental-agreement.md) — related
+- [Rental Agreement](/ground/car/rental-agreement.md) — parent
 
 # Distinctions
 - **Concession Recovery Fee** vs [Surcharge](/air/air-shop/surcharge.md) — A surcharge is the generic category of any added charge; the concession recovery fee is a specific, named airport pass-through recovering the operator's airport concession costs.

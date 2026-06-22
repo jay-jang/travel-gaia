@@ -26,7 +26,7 @@ aliases:
 relationships:
   - type: narrower
     targetTerm: IATA Code
-  - type: related
+  - type: broader
     targetTerm: ICAO Code
   - type: related
     targetTerm: Marketing Carrier
@@ -38,6 +38,18 @@ distinctions:
   - targetTerm: ICAO Code
     explanation: The IATA airline designator is 2 characters for commercial use; the ICAO airline designator is 3 letters with a call sign for operational/ATC use.
     explanation_ko: 'IATA 항공사 지정 코드는 상업적 용도의 2자리이고, ICAO 항공사 지정 코드는 운항/ATC 용도의 3자리로 콜사인을 동반한다.'
+  - targetTerm: Airline Accounting Code
+    explanation: 'The accounting code is a 3-digit numeric airline identifier used in ticket/document numbers and settlement; the airline designator is the 2-character alphanumeric code (e.g., AA) used in reservations and flight numbers.'
+    explanation_ko: '정산 코드는 항공권/서류 번호와 정산에 쓰이는 3자리 숫자 항공사 식별자이고, 항공사 지정 코드는 예약과 편명에 쓰이는 2자리 영숫자 코드(예: AA)이다.'
+  - targetTerm: Chain Code
+    explanation: A chain code (2 letters) identifies a hotel chain/brand in distribution; an airline designator (2 characters) identifies an air carrier — different domains despite both being short codes.
+    explanation_ko: '체인 코드(2자리)는 유통에서 호텔 체인/브랜드를 식별하고, 항공사 지정 코드(2자리)는 항공 운송 사업자를 식별한다. 둘 다 짧은 코드이지만 서로 다른 영역에 속한다.'
+  - targetTerm: RICS Code (Company Code)
+    explanation: 'The RICS code is the four-digit numeric identifier for a railway undertaking or distributor in rail data exchange; an airline designator is the two-character IATA code identifying an airline. Both identify the carrier/actor in their mode''s distribution and messaging, but RICS is rail-specific and numeric while the designator is air-specific and alphanumeric.'
+    explanation_ko: 'RICS 코드는 철도 데이터 교환에서 철도사업자·유통사를 식별하는 4자리 숫자 식별자이고, airline designator는 항공사를 식별하는 2자 IATA 코드다. 둘 다 각 교통수단의 유통·메시징에서 운송인/주체를 식별하지만, RICS는 철도 고유의 숫자 코드, designator는 항공 고유의 영숫자 코드다.'
+  - targetTerm: Standard Carrier Alpha Code
+    explanation: 'An IATA/ICAO airline designator identifies an air carrier for passenger and cargo aviation; the SCAC identifies a surface/ocean carrier (motor, rail, water) for freight EDI and customs. They name carriers in different transport modes and are issued by different bodies (IATA/ICAO vs. NMFTA).'
+    explanation_ko: 'IATA/ICAO 항공사 지정 코드는 여객·화물 항공의 항공 운송사를 식별하지만, SCAC는 화물 EDI·세관용으로 지상/해상 운송사(도로·철도·해상)를 식별한다. 서로 다른 운송 수단의 운송사를 지칭하며 발급 기관도 다르다(IATA/ICAO 대 NMFTA).'
 sources:
   - name: IATA Airline and Airport Code Search
     org: IATA
@@ -64,13 +76,17 @@ IATA 항공사 지정 코드는 2자리(알파벳 또는 영숫자 혼합)이며
 
 # Related
 - [IATA Code](/common/codes/iata-code.md) — narrower
-- [ICAO Code](/common/codes/icao-code.md) — related
+- [ICAO Code](/common/codes/icao-code.md) — broader
 - [Marketing Carrier](/air/air-partner/marketing-carrier.md) — related
 - [Operating Carrier](/air/air-partner/operating-carrier.md) — related
 - [Validating Carrier](/air/air-ticket/validating-carrier.md) — related
 
 # Distinctions
 - **Airline Designator** vs [ICAO Code](/common/codes/icao-code.md) — The IATA airline designator is 2 characters for commercial use; the ICAO airline designator is 3 letters with a call sign for operational/ATC use.
+- **Airline Designator** vs [Airline Accounting Code](/common/codes/airline-accounting-code.md) — The accounting code is a 3-digit numeric airline identifier used in ticket/document numbers and settlement; the airline designator is the 2-character alphanumeric code (e.g., AA) used in reservations and flight numbers.
+- **Airline Designator** vs [Chain Code](/common/codes/chain-code.md) — A chain code (2 letters) identifies a hotel chain/brand in distribution; an airline designator (2 characters) identifies an air carrier — different domains despite both being short codes.
+- **Airline Designator** vs [RICS Code (Company Code)](/ground/rail/rics-code.md) — The RICS code is the four-digit numeric identifier for a railway undertaking or distributor in rail data exchange; an airline designator is the two-character IATA code identifying an airline. Both identify the carrier/actor in their mode's distribution and messaging, but RICS is rail-specific and numeric while the designator is air-specific and alphanumeric.
+- **Airline Designator** vs [Standard Carrier Alpha Code](/common/codes/standard-carrier-alpha-code.md) — An IATA/ICAO airline designator identifies an air carrier for passenger and cargo aviation; the SCAC identifies a surface/ocean carrier (motor, rail, water) for freight EDI and customs. They name carriers in different transport modes and are issued by different bodies (IATA/ICAO vs. NMFTA).
 
 # Citations
 [1] [IATA — IATA Airline and Airport Code Search](https://www.iata.org/en/publications/directories/code-search/)

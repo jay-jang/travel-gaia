@@ -44,6 +44,9 @@ distinctions:
   - targetTerm: Residual Value
     explanation: A penalty fee is a charge deducted during a change or refund; residual value is the surplus that may remain after the penalty and fare difference are applied in an exchange.
     explanation_ko: 'Penalty fee는 변경·환불 시 차감되는 비용이고, residual value는 교환에서 위약금과 운임 차액을 적용한 뒤 남을 수 있는 잉여분이다.'
+  - targetTerm: Additional Collection (ADC)
+    explanation: 'A penalty fee is the change/cancellation charge defined by the fare rule; the ADC is the total amount actually collected, which typically includes the fare and tax difference plus that penalty.'
+    explanation_ko: 'Penalty Fee는 운임 규정이 정한 변경/취소 수수료이고, ADC는 실제로 징수되는 총액으로 보통 운임·세금 차액에 그 위약금을 더한 값이다.'
 sources:
   - org: ATPCO
     name: What are ATPCO fare rules categories?
@@ -84,6 +87,7 @@ Penalty fee는 구매한 항공권을 변경하거나 취소할 때 승객이 �
 
 # Distinctions
 - **Penalty Fee** vs [Residual Value](/air/air-ticket/residual-value.md) — A penalty fee is a charge deducted during a change or refund; residual value is the surplus that may remain after the penalty and fare difference are applied in an exchange.
+- **Penalty Fee** vs [Additional Collection (ADC)](/air/air-ticket/additional-collection-adc.md) — A penalty fee is the change/cancellation charge defined by the fare rule; the ADC is the total amount actually collected, which typically includes the fare and tax difference plus that penalty.
 
 # Citations
 [1] [ATPCO — What are ATPCO fare rules categories? — Category 16 / 31 / 33](https://atpco.net/single-blog/what-are-atpco-fare-rules-categories/)

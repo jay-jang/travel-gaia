@@ -30,6 +30,9 @@ distinctions:
   - targetTerm: Secure Flight
     explanation: 'GDPR Consent is an EU privacy lawful basis for processing personal data; Secure Flight is a US security program that processes data under legal obligation, not consent.'
     explanation_ko: 'GDPR 동의는 개인정보 처리를 위한 EU 프라이버시상의 적법 근거이고, Secure Flight는 동의가 아닌 법적 의무에 따라 데이터를 처리하는 미국의 보안 프로그램이다.'
+  - targetTerm: CCPA/CPRA Consumer Privacy Rights
+    explanation: 'CCPA/CPRA is built on an opt-out model where processing is generally allowed unless the consumer objects; GDPR Consent is an opt-in lawful basis where the data subject must affirmatively agree before processing. CCPA/CPRA is US state law for California residents, whereas GDPR applies to EU personal data.'
+    explanation_ko: 'CCPA/CPRA는 소비자가 거부하지 않는 한 처리가 일반적으로 허용되는 opt-out 모델에 기반하고, GDPR Consent는 정보 주체가 처리 전에 적극적으로 동의해야 하는 opt-in 적법 근거이다. CCPA/CPRA는 캘리포니아 거주자에 대한 미국 주법이고, GDPR은 EU 개인정보에 적용된다.'
 sources:
   - name: General Data Protection Regulation (EU) 2016/679
     org: EU
@@ -56,6 +59,7 @@ In travel, GDPR Consent commonly applies to marketing communications, profiling,
 
 # Distinctions
 - **GDPR Consent** vs [Secure Flight](/common/customer/secure-flight.md) — GDPR Consent is an EU privacy lawful basis for processing personal data; Secure Flight is a US security program that processes data under legal obligation, not consent.
+- **GDPR Consent** vs [CCPA/CPRA Consumer Privacy Rights](/common/customer/ccpa-cpra-consumer-privacy-rights.md) — CCPA/CPRA is built on an opt-out model where processing is generally allowed unless the consumer objects; GDPR Consent is an opt-in lawful basis where the data subject must affirmatively agree before processing. CCPA/CPRA is US state law for California residents, whereas GDPR applies to EU personal data.
 
 # Citations
 [1] [EU — General Data Protection Regulation (EU) 2016/679 — Art. 4(11), Art. 6, Art. 7](https://eur-lex.europa.eu/eli/reg/2016/679/oj)

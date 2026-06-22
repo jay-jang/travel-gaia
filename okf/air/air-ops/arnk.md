@@ -33,7 +33,7 @@ providerTerms:
     context_ko: Amadeus는 도착지 미상 지상 구간을 나타내기 위해 ARNK를 사용한다
     relationship: same
 relationships:
-  - type: related
+  - type: contrasts
     targetTerm: Segment
   - type: related
     targetTerm: Passive Segment
@@ -48,12 +48,15 @@ distinctions:
   - targetTerm: Leg
     explanation: 'ARNK is a non-flown placeholder bridging a surface break, while a leg is an actual physical flown hop of an aircraft.'
     explanation_ko: 'ARNK는 지상 구간 단절을 연결하는 비운항 자리표시자인 반면, leg은 항공기의 실제 물리적 운항 구간이다.'
+  - targetTerm: Open Segment
+    explanation: ARNK marks a non-air ('arrival unknown') surface gap so the itinerary's continuity is acknowledged; an Open Segment is an actual air sector the passenger intends to fly but without a fixed date/flight yet. ARNK is never flown; an open segment is meant to be confirmed and flown.
+    explanation_ko: 'ARNK는 비항공(''arrival unknown'') surface 구간을 표시해 여정 연속성을 인정하는 것이고, Open Segment는 승객이 실제로 비행할 의도가 있으나 아직 날짜/편명이 없는 항공 구간이다. ARNK는 결코 비행하지 않지만 open segment는 확약 후 비행하기로 한 구간이다.'
 sources:
   - name: Sabre Format Finder — ARNK
     org: Sabre
     version: ''
     section: ''
-    url: ''
+    url: 'https://developer.sabre.com/docs/soap_apis/management/itinerary/Add_Arrival_Unknown_Segment'
   - name: Amadeus Functional Documentation — Itinerary Elements
     org: Amadeus
     version: ''
@@ -80,7 +83,7 @@ ARNK 요소는 승객이 한 도시로 입국하여 다른 도시에서 출발�
 | Amadeus | `ARNK` | same | Amadeus uses ARNK to denote an arrival-unknown surface sector |
 
 # Related
-- [Segment](/air/air-ops/segment.md) — related
+- [Segment](/air/air-ops/segment.md) — contrasts
 - [Passive Segment](/air/air-ops/passive-segment.md) — related
 - [Journey](/air/air-shop/journey.md) — related
 - [Origin & Destination](/air/air-shop/origin-destination.md) — related
@@ -88,7 +91,8 @@ ARNK 요소는 승객이 한 도시로 입국하여 다른 도시에서 출발�
 # Distinctions
 - **ARNK** vs [Passive Segment](/air/air-ops/passive-segment.md) — ARNK marks a surface (non-flown) gap with no flight at all, whereas a passive segment is an informational air segment for a flight confirmed outside the active inventory.
 - **ARNK** vs [Leg](/air/air-ops/leg.md) — ARNK is a non-flown placeholder bridging a surface break, while a leg is an actual physical flown hop of an aircraft.
+- **ARNK** vs [Open Segment](/air/air-ops/open-segment.md) — ARNK marks a non-air ('arrival unknown') surface gap so the itinerary's continuity is acknowledged; an Open Segment is an actual air sector the passenger intends to fly but without a fixed date/flight yet. ARNK is never flown; an open segment is meant to be confirmed and flown.
 
 # Citations
-[1] Sabre — Sabre Format Finder — ARNK
+[1] [Sabre — Sabre Format Finder — ARNK](https://developer.sabre.com/docs/soap_apis/management/itinerary/Add_Arrival_Unknown_Segment)
 [2] Amadeus — Amadeus Functional Documentation — Itinerary Elements

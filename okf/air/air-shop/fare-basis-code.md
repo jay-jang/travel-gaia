@@ -44,17 +44,35 @@ distinctions:
   - targetTerm: Fare Family
     explanation: A fare basis identifies one specific filed fare; a fare family is a marketing bundle that may span multiple fare basis codes.
     explanation_ko: '운임 기준은 신고된 하나의 특정 운임을 식별하고, 운임 패밀리(fare family)는 여러 운임 기준 코드에 걸칠 수 있는 마케팅 묶음이다.'
+  - targetTerm: Add-on
+    explanation: A fare basis code identifies a complete published fare; an add-on is a proportional amount that cannot stand alone and must be combined with such a published fare to form a constructed fare.
+    explanation_ko: 'Fare basis code는 완전한 공시 운임을 식별하고, add-on은 단독으로 성립할 수 없으며 constructed fare를 만들기 위해 그러한 공시 운임과 결합되어야 하는 proportional 금액이다.'
+  - targetTerm: ATPCO
+    explanation: ATPCO is the organization/data source; the fare basis code is one data element it distributes.
+    explanation_ko: 'ATPCO는 기관이자 데이터 출처이고, 운임 기준 코드는 ATPCO가 배포하는 하나의 데이터 요소이다.'
+  - targetTerm: Class Code
+    explanation: The class code is one letter (the booking bucket); a fare basis code is a longer alphanumeric string whose first character is usually the class code and which encodes the full fare and its conditions.
+    explanation_ko: '클래스 코드는 한 글자(예약 버킷)이고, 운임 기준 코드는 첫 글자가 보통 클래스 코드이며 전체 운임과 그 조건을 인코딩한 더 긴 영숫자 문자열이다.'
+  - targetTerm: Fare Rule
+    explanation: The Fare Basis Code is the alphanumeric label identifying a specific fare; the Fare Rule is the body of conditions that the fare (and its basis code) must satisfy to be applied.
+    explanation_ko: 'Fare Basis Code는 특정 운임을 식별하는 영숫자 코드이며, Fare Rule은 그 운임(및 basis code)이 적용되기 위해 충족해야 하는 조건의 본문이다.'
+  - targetTerm: Negotiated Fare
+    explanation: 'A fare basis code labels any fare, public or private; Negotiated Fare specifically denotes a privately filed Category 35 fare restricted to authorized sellers, often invisible in neutral public displays.'
+    explanation_ko: 'Fare basis code는 public이든 private이든 모든 운임에 붙는 라벨이고, Negotiated Fare는 특히 인가된 판매자에게만 제한되어 파일링된 Category 35 private 운임을 가리키며 중립 public 조회에서는 보이지 않는 경우가 많다.'
+  - targetTerm: Passenger Type Code
+    explanation: A PTC is an input that restricts which Fare Basis Codes a passenger can use; the Fare Basis Code identifies the specific priced fare.
+    explanation_ko: 'PTC는 승객이 사용할 수 있는 Fare Basis Code를 제한하는 입력값이고, Fare Basis Code는 가격이 산정된 특정 운임을 식별한다.'
 sources:
   - name: ATPCO Fares and Rules data documentation
     org: ATPCO
     version: ''
     section: ''
-    url: ''
+    url: 'https://atpco.net/standards/'
   - name: IATA Ticketing Handbook / fare construction
     org: IATA
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/ticketing-handbook/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7H10a3 3 0 00-3 3v13a3 3 0 00.9 2.1l15 15a3 3 0 004.2 0l11-11a3 3 0 000-4.2l-15-15A3 3 0 0023 7z"/><circle cx="16" cy="16" r="2.5"/><line x1="21" y1="27" x2="27" y2="33"/><line x1="26" y1="22" x2="32" y2="28"/></svg>
 ---
 
@@ -84,7 +102,13 @@ The fare basis code is the human-readable key that ties a priced fare to its fil
 # Distinctions
 - **Fare Basis Code** vs [RBD](/air/air-shop/rbd.md) — The RBD is a single booking-class letter; the fare basis code is the full alphanumeric fare identifier that usually starts with that letter.
 - **Fare Basis Code** vs [Fare Family](/air/air-shop/fare-family.md) — A fare basis identifies one specific filed fare; a fare family is a marketing bundle that may span multiple fare basis codes.
+- **Fare Basis Code** vs [Add-on](/air/air-shop/add-on.md) — A fare basis code identifies a complete published fare; an add-on is a proportional amount that cannot stand alone and must be combined with such a published fare to form a constructed fare.
+- **Fare Basis Code** vs [ATPCO](/air/air-shop/atpco.md) — ATPCO is the organization/data source; the fare basis code is one data element it distributes.
+- **Fare Basis Code** vs [Class Code](/common/codes/class-code.md) — The class code is one letter (the booking bucket); a fare basis code is a longer alphanumeric string whose first character is usually the class code and which encodes the full fare and its conditions.
+- **Fare Basis Code** vs [Fare Rule](/air/air-shop/fare-rule.md) — The Fare Basis Code is the alphanumeric label identifying a specific fare; the Fare Rule is the body of conditions that the fare (and its basis code) must satisfy to be applied.
+- **Fare Basis Code** vs [Negotiated Fare](/air/air-shop/negotiated-fare.md) — A fare basis code labels any fare, public or private; Negotiated Fare specifically denotes a privately filed Category 35 fare restricted to authorized sellers, often invisible in neutral public displays.
+- **Fare Basis Code** vs [Passenger Type Code](/common/customer/passenger-type-code.md) — A PTC is an input that restricts which Fare Basis Codes a passenger can use; the Fare Basis Code identifies the specific priced fare.
 
 # Citations
-[1] ATPCO — ATPCO Fares and Rules data documentation
-[2] IATA — IATA Ticketing Handbook / fare construction
+[1] [ATPCO — ATPCO Fares and Rules data documentation](https://atpco.net/standards/)
+[2] [IATA — IATA Ticketing Handbook / fare construction](https://www.iata.org/en/publications/manuals/ticketing-handbook/)

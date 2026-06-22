@@ -30,7 +30,7 @@ providerTerms:
 relationships:
   - type: related
     targetTerm: PCI DSS
-  - type: related
+  - type: contrasts
     targetTerm: VCC
   - type: related
     targetTerm: Merchant of Record
@@ -70,7 +70,7 @@ Payment tokenization is standardized by EMVCo through the EMV Payment Tokenisati
 
 # Related
 - [PCI DSS](/common/pay/pci-dss.md) — related
-- [VCC](/common/pay/vcc.md) — related
+- [VCC](/common/pay/vcc.md) — contrasts
 - [Merchant of Record](/common/pay/merchant-of-record.md) — related
 - [Acquirer](/common/pay/acquirer.md) — related
 

@@ -40,17 +40,29 @@ distinctions:
   - targetTerm: Fare Family
     explanation: A fare family bundles fare attributes and included benefits into branded fares; ancillary services are the unbundled add-ons sold separately.
     explanation_ko: 'Fare Family는 운임 속성과 포함 혜택을 브랜드 운임으로 묶은 것이며, 부가 서비스는 별도로 판매되는 언번들된 추가 상품이다.'
+  - targetTerm: Optional Services
+    explanation: 'Ancillary Service is the generic, ticketing-side concept of any extra a passenger buys; Optional Services is ATPCO''s specific shop/pricing product and data structure (with RFISC sub-codes) that prices and distributes those ancillaries.'
+    explanation_ko: 'Ancillary Service는 승객이 구매하는 모든 추가 항목을 가리키는 ticketing 측의 일반 개념이고, Optional Services는 그 부가 서비스를 가격책정·배포하는 ATPCO의 구체적 shop/pricing 상품이자 데이터 구조(RFISC sub-code 포함)이다.'
+  - targetTerm: Reason for Issuance Code / Sub Code (RFIC / RFISC)
+    explanation: Ancillary Service is the product offered to the passenger; RFISC is the standardized code that names that product for distribution and accounting systems.
+    explanation_ko: 'Ancillary Service는 승객에게 제공되는 상품이고, RFISC는 유통·회계 시스템에서 그 상품을 명명하는 표준 코드이다.'
+  - targetTerm: Shore Excursion
+    explanation: 'In airline distribution an Ancillary Service is any extra sold beyond the seat (bags, seats, meals); a shore excursion is the cruise industry''s flagship ancillary, but it is specifically tied to a port of call rather than to a flight segment.'
+    explanation_ko: '항공 유통에서 Ancillary Service는 좌석 외에 판매되는 모든 부가(수하물·좌석·기내식)이고, 기항지 투어는 크루즈 산업의 대표 부가 상품이지만 항공 구간이 아니라 특정 기항지에 연결된다는 점이 특징이다.'
+  - targetTerm: Universal Product Attributes (UPA)
+    explanation: 'An ancillary service is a sellable add-on product (e.g., a paid bag); a UPA is descriptive rich content that merchandises/explains products and attributes—it does not itself price or sell the item.'
+    explanation_ko: '부가서비스(ancillary service)는 판매 가능한 추가 상품(예: 유료 수하물)이고, UPA는 상품·속성을 머천다이징/설명하는 서술형 리치 콘텐츠로, 그 자체가 항목의 가격을 매기거나 판매하지는 않는다.'
 sources:
   - name: ATPCO Optional Services data
     org: ATPCO
     version: ''
     section: ''
-    url: ''
+    url: 'https://atpco.net/ancillaries/'
   - name: New Distribution Capability (NDC)
     org: IATA
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/programs/airline-distribution/retailing/ndc/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 8l3 12 12 3-12 3-3 12-3-12-12-3 12-3z"/><path d="M11 10v4M9 12h4"/><path d="M38 34v4M36 36h4"/></svg>
 ---
 
@@ -74,7 +86,11 @@ Ancillary services are commonly divided into a-la-carte items (purchasable optio
 # Distinctions
 - **Ancillary Service** vs [EMD](/air/air-ticket/emd.md) — Ancillary Service is the product offered/sold; the EMD is the document that issues and settles it.
 - **Ancillary Service** vs [Fare Family](/air/air-shop/fare-family.md) — A fare family bundles fare attributes and included benefits into branded fares; ancillary services are the unbundled add-ons sold separately.
+- **Ancillary Service** vs [Optional Services](/air/air-shop/optional-services.md) — Ancillary Service is the generic, ticketing-side concept of any extra a passenger buys; Optional Services is ATPCO's specific shop/pricing product and data structure (with RFISC sub-codes) that prices and distributes those ancillaries.
+- **Ancillary Service** vs [Reason for Issuance Code / Sub Code (RFIC / RFISC)](/air/air-ticket/rfic-rfisc.md) — Ancillary Service is the product offered to the passenger; RFISC is the standardized code that names that product for distribution and accounting systems.
+- **Ancillary Service** vs [Shore Excursion](/cruise/cruise/shore-excursion.md) — In airline distribution an Ancillary Service is any extra sold beyond the seat (bags, seats, meals); a shore excursion is the cruise industry's flagship ancillary, but it is specifically tied to a port of call rather than to a flight segment.
+- **Ancillary Service** vs [Universal Product Attributes (UPA)](/common/standards/universal-product-attributes-upa.md) — An ancillary service is a sellable add-on product (e.g., a paid bag); a UPA is descriptive rich content that merchandises/explains products and attributes—it does not itself price or sell the item.
 
 # Citations
-[1] ATPCO — ATPCO Optional Services data
-[2] IATA — New Distribution Capability (NDC)
+[1] [ATPCO — ATPCO Optional Services data](https://atpco.net/ancillaries/)
+[2] [IATA — New Distribution Capability (NDC)](https://www.iata.org/en/programs/airline-distribution/retailing/ndc/)

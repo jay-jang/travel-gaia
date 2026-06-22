@@ -44,6 +44,9 @@ distinctions:
   - targetTerm: Rate Plan
     explanation: 'Rate Plan is the conceptual commercial product (e.g. Best Available Rate, room-only); Rate Code is the system identifier that implements and labels that product so it can be loaded, sold and exchanged electronically.'
     explanation_ko: 'Rate Plan은 개념적 상품(예: BAR, 객실 단독)이고, Rate Code는 그 상품을 시스템에 적재·판매·전자교환할 수 있도록 구현하고 라벨링하는 식별자다.'
+  - targetTerm: Rate Access Code (RAC)
+    explanation: A rate code names/identifies a rate plan within a system; a Rate Access Code is specifically the credential that gates visibility of a confidential negotiated rate in the GDS so only authorized agencies can view and book it.
+    explanation_ko: 'Rate code는 시스템 내에서 요금제를 명명/식별하는 코드이고, Rate Access Code는 GDS에서 비공개 협상 요금의 가시성을 통제하여 권한 있는 여행사만 조회·예약하게 하는 자격 증명이다.'
 sources:
   - org: Oracle
     name: OPERA Cloud / OPERA 5 Help — Rate Codes
@@ -54,7 +57,7 @@ sources:
     name: OpenTravel Hotel Specification (RatePlanCode)
     version: ''
     section: ''
-    url: ''
+    url: 'https://opentravel.org/download-specs/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="12" width="36" height="24" rx="3"/><path d="M14 22h8M14 28h12"/><circle cx="32" cy="24" r="3"/><path d="M32 21v-3M32 30v-2"/></svg>
 ---
 
@@ -84,7 +87,8 @@ Oracle OPERA 같은 PMS에서 Rate Code는 예약 및 수익관리 프로세스�
 
 # Distinctions
 - **Rate Code** vs [Rate Plan](/lodging/hotel-rate/rate-plan.md) — Rate Plan is the conceptual commercial product (e.g. Best Available Rate, room-only); Rate Code is the system identifier that implements and labels that product so it can be loaded, sold and exchanged electronically.
+- **Rate Code** vs [Rate Access Code (RAC)](/lodging/hotel-dist/rate-access-code.md) — A rate code names/identifies a rate plan within a system; a Rate Access Code is specifically the credential that gates visibility of a confidential negotiated rate in the GDS so only authorized agencies can view and book it.
 
 # Citations
 [1] [Oracle — OPERA Cloud / OPERA 5 Help — Rate Codes — Rate Management](https://docs.oracle.com/cd/E98457_01/opera_5_6_core_help/rate_codes.htm)
-[2] OpenTravel Alliance — OpenTravel Hotel Specification (RatePlanCode)
+[2] [OpenTravel Alliance — OpenTravel Hotel Specification (RatePlanCode)](https://opentravel.org/download-specs/)

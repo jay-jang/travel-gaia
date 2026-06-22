@@ -47,17 +47,26 @@ distinctions:
   - targetTerm: E-ticket
     explanation: ONE Order's single Order record is designed to replace document-based e-tickets (and EMDs) with order-level accounting and fulfillment.
     explanation_ko: ONE Order의 단일 주문 기록은 주문 단위의 회계와 이행을 통해 문서 기반 e-ticket(및 EMD)을 대체하도록 설계되었다.
+  - targetTerm: Airline Retailing Maturity (ARM)
+    explanation: ARM is the assessment/registry framework (which replaced the separate NDC and ONE Order certification registries); ONE Order is one of the standards whose maturity ARM measures.
+    explanation_ko: 'ARM은 (별도의 NDC·ONE Order 인증 등록제를 대체한) 평가·등록 프레임워크이고, ONE Order는 ARM이 성숙도를 측정하는 대상 표준 중 하나이다.'
+  - targetTerm: Order Management System (OMS)
+    explanation: ONE Order is the IATA standard/initiative defining the single Order record and its messages; an Order Management System is the platform that implements and operates it.
+    explanation_ko: 'ONE Order는 단일 주문 기록과 그 메시지를 정의하는 IATA 표준·이니셔티브이고, 주문 관리 시스템은 그것을 구현·운영하는 플랫폼이다.'
+  - targetTerm: Settlement with Orders (SwO)
+    explanation: ONE Order standardizes the single order record and its management/accounting; SwO standardizes the inter-party financial settlement of the funds arising from those orders.
+    explanation_ko: 'ONE Order는 단일 주문 기록과 그 관리·회계를 표준화하고, SwO는 그 주문에서 발생하는 자금의 당사자 간 재무 정산을 표준화한다.'
 sources:
   - name: ONE Order
     org: IATA
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/programs/airline-distribution/retailing/one-order/'
   - name: ONE Order Standards
     org: IATA
     version: ''
     section: ''
-    url: ''
+    url: 'https://developer.iata.org/en/one-order/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="15"/><path d="M20 16h6a4 4 0 0 1 0 8h-6zM20 16v16M20 24h3l4 8"/><path d="M14 13l3-3 3 3"/></svg>
 ---
 
@@ -85,7 +94,10 @@ Complementing NDC (which standardizes Offer creation and shopping/booking), ONE 
 - **ONE Order** vs [NDC](/common/standards/ndc.md) — ONE Order standardizes the single post-sale Order record and its management; NDC standardizes the shopping/offer and booking messaging that creates it.
 - **ONE Order** vs [Order](/common/standards/order.md) — ONE Order is the IATA standard/initiative; Order is the underlying single-record data object it defines and promotes.
 - **ONE Order** vs [E-ticket](/air/air-ticket/e-ticket.md) — ONE Order's single Order record is designed to replace document-based e-tickets (and EMDs) with order-level accounting and fulfillment.
+- **ONE Order** vs [Airline Retailing Maturity (ARM)](/common/standards/airline-retailing-maturity-arm.md) — ARM is the assessment/registry framework (which replaced the separate NDC and ONE Order certification registries); ONE Order is one of the standards whose maturity ARM measures.
+- **ONE Order** vs [Order Management System (OMS)](/common/standards/order-management-system-oms.md) — ONE Order is the IATA standard/initiative defining the single Order record and its messages; an Order Management System is the platform that implements and operates it.
+- **ONE Order** vs [Settlement with Orders (SwO)](/common/standards/settlement-with-orders-swo.md) — ONE Order standardizes the single order record and its management/accounting; SwO standardizes the inter-party financial settlement of the funds arising from those orders.
 
 # Citations
-[1] IATA — ONE Order
-[2] IATA — ONE Order Standards
+[1] [IATA — ONE Order](https://www.iata.org/en/programs/airline-distribution/retailing/one-order/)
+[2] [IATA — ONE Order Standards](https://developer.iata.org/en/one-order/)

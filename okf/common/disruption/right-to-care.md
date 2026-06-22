@@ -41,17 +41,23 @@ distinctions:
   - targetTerm: Denied Boarding Compensation
     explanation: 'Care covers in-kind assistance (meals, hotels, transport) during the wait; DBC is a separate fixed cash sum for involuntary bumping, payable in addition to care.'
     explanation_ko: 'Care는 대기 중 현물 지원(식사·호텔·교통)을 다루고, DBC는 비자발적 bumping에 대한 별도의 정액 현금으로 care에 추가로 지급된다.'
+  - targetTerm: Right to Re-routing
+    explanation: 'The Right to Care (Article 9) covers meals, refreshments, hotel and communications during the wait; the Right to Re-routing (Article 8) covers getting the passenger to the destination or refunding the fare. Both are owed in parallel and neither substitutes for the other.'
+    explanation_ko: 'Right to Care(Article 9)는 대기 중 식사·다과·호텔·통신을 다루고, Right to Re-routing(Article 8)은 승객을 목적지에 도달시키거나 항공권을 환불하는 것을 다룬다. 둘은 병행하여 부여되며 어느 하나가 다른 하나를 대체하지 않는다.'
+  - targetTerm: Trip Delay
+    explanation: Right to Care (EU/UK 261) is the carrier's legal duty to provide meals and accommodation during disruption; trip delay is the traveler's own insurance benefit. Insurance delay coverage is typically secondary to — and net of — what the carrier must supply.
+    explanation_ko: 'Right to Care(EU/UK 261)는 운항 차질 시 운송인이 식사·숙박을 제공할 법적 의무이고, Trip Delay는 여행자 본인의 보험 보장이다. 보험의 지연 보장은 통상 운송인이 제공해야 하는 것에 대해 2차적이며 그 차액만 보상한다.'
 sources:
   - name: 'Regulation (EC) No 261/2004, Article 9 — Right to care'
     org: European Union
     version: ''
     section: Article 9
-    url: ''
+    url: 'https://eur-lex.europa.eu/eli/reg/2004/261/oj/eng'
   - name: Air passenger rights
     org: Your Europe (European Commission)
     version: ''
     section: ''
-    url: ''
+    url: 'https://europa.eu/youreurope/citizens/travel/passenger-rights/air/index_en.htm'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 40C12 32 6 25 6 17a9 9 0 0 1 18-3 9 9 0 0 1 18 3c0 8-6 15-18 23z"/><path d="M16 22h5l2-4 3 8 2-4h4"/></svg>
 ---
 
@@ -75,7 +81,9 @@ Article 9에 따라 care 의무는 일정 기준을 충족하는 지연(거리 �
 # Distinctions
 - **Right to Care** vs [Extraordinary Circumstances](/common/disruption/extraordinary-circumstances.md) — Extraordinary circumstances exempt the airline from fixed monetary compensation, but they do NOT exempt it from the right to care, which must still be provided.
 - **Right to Care** vs [Denied Boarding Compensation](/common/disruption/denied-boarding-compensation.md) — Care covers in-kind assistance (meals, hotels, transport) during the wait; DBC is a separate fixed cash sum for involuntary bumping, payable in addition to care.
+- **Right to Care** vs [Right to Re-routing](/common/disruption/right-to-re-routing.md) — The Right to Care (Article 9) covers meals, refreshments, hotel and communications during the wait; the Right to Re-routing (Article 8) covers getting the passenger to the destination or refunding the fare. Both are owed in parallel and neither substitutes for the other.
+- **Right to Care** vs [Trip Delay](/common/insurance/trip-delay.md) — Right to Care (EU/UK 261) is the carrier's legal duty to provide meals and accommodation during disruption; trip delay is the traveler's own insurance benefit. Insurance delay coverage is typically secondary to — and net of — what the carrier must supply.
 
 # Citations
-[1] European Union — Regulation (EC) No 261/2004, Article 9 — Right to care — Article 9
-[2] Your Europe (European Commission) — Air passenger rights
+[1] [European Union — Regulation (EC) No 261/2004, Article 9 — Right to care — Article 9](https://eur-lex.europa.eu/eli/reg/2004/261/oj/eng)
+[2] [Your Europe (European Commission) — Air passenger rights](https://europa.eu/youreurope/citizens/travel/passenger-rights/air/index_en.htm)

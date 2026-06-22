@@ -43,6 +43,12 @@ distinctions:
   - targetTerm: Surcharge
     explanation: 'A Surcharge in fare construction (e.g., a mileage or peak-day surcharge) increases the fare amount itself; YQ/YR are carrier-imposed amounts carried in the tax box separate from the base fare, even though both are airline-set add-ons.'
     explanation_ko: 'Fare construction의 Surcharge(예: 마일리지·성수기 할증)는 운임 금액 자체를 증가시키는 반면, YQ/YR은 기본 운임과 분리되어 세금란에 기재되는 carrier-imposed 금액이다. 둘 다 항공사가 정하는 추가 금액이라는 점은 같다.'
+  - targetTerm: Fuel Supplement
+    explanation: 'YQ/YR are airline-filed carrier-imposed fee/surcharge codes carried in the fare construction and ticketed at sale; a cruise fuel supplement is a contractually reserved, oil-price-triggered charge that can be levied separately from (and even after) the fare quote, and is not part of any filed tariff code system.'
+    explanation_ko: 'YQ/YR은 항공사가 신고한 운송인 부과 요금/할증료 코드로 운임 산출에 포함되어 판매 시 발권된다. 크루즈 fuel supplement는 계약상 유보된 유가 트리거 기반 요금으로, 운임 견적과 별개로(심지어 견적 후에도) 부과될 수 있고 어떤 신고 운임 코드 체계의 일부도 아니다.'
+  - targetTerm: Non-Commissionable Fare (NCF)
+    explanation: 'Airline YQ/YR carrier-imposed charges are a fare-construction tax/surcharge concept in ATPCO filings; cruise NCFs are a commercial commission-exclusion concept — both reduce what reaches the seller, but NCF is defined by commissionability, not by tax codes.'
+    explanation_ko: '항공의 YQ/YR 항공사 부과 요금은 ATPCO 등록상의 운임 구성 세금/할증 개념이고, 크루즈 NCF는 상업적 수수료 제외 개념이다. 둘 다 판매자에게 돌아가는 몫을 줄이지만 NCF는 세금 코드가 아니라 수수료 지급 가능 여부로 정의된다.'
 sources:
   - org: Travelport
     name: YQ-YR Support article
@@ -81,6 +87,8 @@ Although they occupy tax fields and use ISO-style two-letter tax codes, YQ and Y
 
 # Distinctions
 - **Tax (YQ/YR)** vs [Surcharge](/air/air-shop/surcharge.md) — A Surcharge in fare construction (e.g., a mileage or peak-day surcharge) increases the fare amount itself; YQ/YR are carrier-imposed amounts carried in the tax box separate from the base fare, even though both are airline-set add-ons.
+- **Tax (YQ/YR)** vs [Fuel Supplement](/cruise/cruise/fuel-supplement.md) — YQ/YR are airline-filed carrier-imposed fee/surcharge codes carried in the fare construction and ticketed at sale; a cruise fuel supplement is a contractually reserved, oil-price-triggered charge that can be levied separately from (and even after) the fare quote, and is not part of any filed tariff code system.
+- **Tax (YQ/YR)** vs [Non-Commissionable Fare (NCF)](/cruise/cruise/non-commissionable-fare-ncf.md) — Airline YQ/YR carrier-imposed charges are a fare-construction tax/surcharge concept in ATPCO filings; cruise NCFs are a commercial commission-exclusion concept — both reduce what reaches the seller, but NCF is defined by commissionability, not by tax codes.
 
 # Citations
 [1] [Travelport — YQ-YR Support article — Carrier-imposed surcharges](https://support.travelport.com/webhelp/FaresAndPricing/Content/YQ-YR.htm)

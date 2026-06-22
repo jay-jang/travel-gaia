@@ -28,7 +28,7 @@ relationships:
     targetTerm: Flight Coupon
   - type: related
     targetTerm: Refund
-  - type: related
+  - type: contrasts
     targetTerm: Void
   - type: contrasts
     targetTerm: Involuntary Reissue
@@ -44,12 +44,24 @@ distinctions:
   - targetTerm: Void
     explanation: Void cancels an issuance within the same sales period leaving no reportable sale; reissue creates a new document and marks the old coupons as exchanged.
     explanation_ko: 'Void는 동일한 판매 기간 내에 발권을 취소하여 보고할 판매 내역을 남기지 않으며, 재발행은 새 서류를 생성하고 기존 쿠폰을 교환됨(exchanged)으로 표시한다.'
+  - targetTerm: Endorsements / Restrictions Box
+    explanation: 'Reissue is the act of issuing a replacement ticket; endorsement/restriction codes (e.g., NON-ENDORSABLE) constrain whether and onto which carrier a coupon may be reissued or accepted.'
+    explanation_ko: 'Reissue는 대체 항공권을 발행하는 행위이고, endorsement/restriction 코드(예: NON-ENDORSABLE)는 쿠폰을 reissue하거나 어느 항공사가 인수할 수 있는지를 제약한다.'
+  - targetTerm: Exchange
+    explanation: 'Exchange is the value/payment transaction (surrendering old value, collecting difference or generating residual); reissue is the issuance of the replacement document. They typically occur together, but a reissue can also follow an involuntary change without a passenger-initiated exchange.'
+    explanation_ko: 'Exchange는 가치·결제 거래(기존 가치 반납, 차액 징수 또는 잔여 가치 발생)이고, reissue는 대체 서류의 발행이다. 보통 함께 일어나지만, 재발행은 승객이 시작하지 않은 비자발적 변경에 따라 이루어질 수도 있다.'
+  - targetTerm: Name Change
+    explanation: A name change is a data correction that may require ticket action; a reissue is the broader ticketing transaction (often triggered by such changes) that produces a new e-ticket.
+    explanation_ko: '이름 변경은 항공권 조치가 필요할 수 있는 데이터 정정이고, 재발행(Reissue)은 이러한 변경으로 흔히 유발되어 새 전자 항공권을 생성하는 보다 포괄적인 발권 거래이다.'
+  - targetTerm: Voluntary Changes (ATPCO Category 31)
+    explanation: Reissue is the operational process of producing a new ticket; Category 31 is the underlying ATPCO rule data that tells systems whether and how that reissue may be priced.
+    explanation_ko: 'Reissue는 새 항공권을 만들어내는 운영 절차이고, Category 31은 그 재발권이 가능한지와 어떻게 가격을 산정할지를 시스템에 알려주는 ATPCO 규정 데이터이다.'
 sources:
   - name: Passenger Services Conference Resolutions Manual (PSCRM)
     org: IATA
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="12" width="28" height="18" rx="3"/><path d="M16 18h10M16 23h6"/><path d="M38 38a14 14 0 01-22-3"/><path d="M16 41v-6h6"/><path d="M10 33a14 14 0 0122 3"/><path d="M32 30v6h-6"/></svg>
 ---
 
@@ -67,7 +79,7 @@ A voluntary reissue is initiated at the passenger's request (e.g., a date or rou
 - [E-ticket](/air/air-ticket/e-ticket.md) — related
 - [Flight Coupon](/air/air-ticket/flight-coupon.md) — related
 - [Refund](/air/air-ticket/refund.md) — related
-- [Void](/air/air-ticket/void.md) — related
+- [Void](/air/air-ticket/void.md) — contrasts
 - [Involuntary Reissue](/air/air-ticket/involuntary-reissue.md) — contrasts
 - [Fare Basis Code](/air/air-shop/fare-basis-code.md) — related
 
@@ -75,6 +87,10 @@ A voluntary reissue is initiated at the passenger's request (e.g., a date or rou
 - **Reissue** vs [Involuntary Reissue](/air/air-ticket/involuntary-reissue.md) — Voluntary reissue is passenger-requested and subject to fare-rule penalties; involuntary reissue results from airline-caused changes and typically waives penalties.
 - **Reissue** vs [Refund](/air/air-ticket/refund.md) — Reissue exchanges the ticket for new travel; refund returns the ticket's value rather than re-issuing transportation.
 - **Reissue** vs [Void](/air/air-ticket/void.md) — Void cancels an issuance within the same sales period leaving no reportable sale; reissue creates a new document and marks the old coupons as exchanged.
+- **Reissue** vs [Endorsements / Restrictions Box](/air/air-ticket/endorsements-restrictions-box.md) — Reissue is the act of issuing a replacement ticket; endorsement/restriction codes (e.g., NON-ENDORSABLE) constrain whether and onto which carrier a coupon may be reissued or accepted.
+- **Reissue** vs [Exchange](/air/air-ticket/exchange.md) — Exchange is the value/payment transaction (surrendering old value, collecting difference or generating residual); reissue is the issuance of the replacement document. They typically occur together, but a reissue can also follow an involuntary change without a passenger-initiated exchange.
+- **Reissue** vs [Name Change](/common/customer/name-change.md) — A name change is a data correction that may require ticket action; a reissue is the broader ticketing transaction (often triggered by such changes) that produces a new e-ticket.
+- **Reissue** vs [Voluntary Changes (ATPCO Category 31)](/air/air-ticket/voluntary-changes-atpco-category-31.md) — Reissue is the operational process of producing a new ticket; Category 31 is the underlying ATPCO rule data that tells systems whether and how that reissue may be priced.
 
 # Citations
-[1] IATA — Passenger Services Conference Resolutions Manual (PSCRM)
+[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)

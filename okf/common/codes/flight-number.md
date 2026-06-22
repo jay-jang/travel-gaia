@@ -38,12 +38,18 @@ distinctions:
   - targetTerm: Airline Accounting Code
     explanation: A flight number labels a flight on a route/date; the accounting code is the 3-digit airline identifier on the ticket number and is unrelated to any particular flight.
     explanation_ko: '편명은 노선·날짜상의 항공편을 가리키고, 정산 코드는 항공권 번호상의 3자리 항공사 식별자로 특정 항공편과 무관하다.'
+  - targetTerm: Aircraft Registration
+    explanation: A flight number is a commercial service identifier reused daily; the aircraft registration identifies the physical aircraft that happens to operate that flight on a given day.
+    explanation_ko: '편명은 매일 재사용되는 상업 서비스 식별자이고, 항공기 등록기호는 특정 날짜에 그 항공편을 운항하는 물리적 항공기를 식별한다.'
+  - targetTerm: Service Type Code
+    explanation: 'A flight number identifies a specific commercial flight (carrier + numeric); the Service Type Code is a separate one-character attribute on the same leg that says what kind of service it is (passenger, cargo, charter, ferry, etc.).'
+    explanation_ko: '편명(flight number)은 특정 상업 항공편(항공사 + 숫자)을 식별하지만, 서비스 유형 코드는 같은 구간에 붙는 별도의 1자리 속성으로 그 운항이 어떤 종류의 서비스(여객·화물·전세·페리 등)인지를 나타낸다.'
 sources:
   - org: IATA
     name: Standard Schedules Information Manual (SSIM)
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/standard-schedules-information/'
   - org: Wikipedia
     name: Flight number
     version: ''
@@ -72,7 +78,9 @@ The numeric portion is limited to four digits. Many carriers follow conventions 
 # Distinctions
 - **Flight Number** vs [Segment](/air/air-ops/segment.md) — A flight number identifies a scheduled flight; a segment is the booked flight number plus a specific date and origin/destination held in a PNR.
 - **Flight Number** vs [Airline Accounting Code](/common/codes/airline-accounting-code.md) — A flight number labels a flight on a route/date; the accounting code is the 3-digit airline identifier on the ticket number and is unrelated to any particular flight.
+- **Flight Number** vs [Aircraft Registration](/common/codes/aircraft-registration.md) — A flight number is a commercial service identifier reused daily; the aircraft registration identifies the physical aircraft that happens to operate that flight on a given day.
+- **Flight Number** vs [Service Type Code](/common/codes/service-type-code.md) — A flight number identifies a specific commercial flight (carrier + numeric); the Service Type Code is a separate one-character attribute on the same leg that says what kind of service it is (passenger, cargo, charter, ferry, etc.).
 
 # Citations
-[1] IATA — Standard Schedules Information Manual (SSIM)
+[1] [IATA — Standard Schedules Information Manual (SSIM)](https://www.iata.org/en/publications/manuals/standard-schedules-information/)
 [2] [Wikipedia — Flight number](https://en.wikipedia.org/wiki/Flight_number)

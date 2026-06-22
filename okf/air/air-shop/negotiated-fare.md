@@ -52,6 +52,9 @@ distinctions:
   - targetTerm: Fare Basis Code
     explanation: 'A fare basis code labels any fare, public or private; Negotiated Fare specifically denotes a privately filed Category 35 fare restricted to authorized sellers, often invisible in neutral public displays.'
     explanation_ko: 'Fare basis code는 public이든 private이든 모든 운임에 붙는 라벨이고, Negotiated Fare는 특히 인가된 판매자에게만 제한되어 파일링된 Category 35 private 운임을 가리키며 중립 public 조회에서는 보이지 않는 경우가 많다.'
+  - targetTerm: Tour Code
+    explanation: A negotiated fare is the discounted/contracted fare itself; the tour code is the identifier written into the ticket that ties that specific issuance back to the negotiated agreement for settlement and audit.
+    explanation_ko: 'Negotiated Fare는 할인된/계약된 운임 자체이고, tour code는 그 특정 발권을 정산·감사를 위해 협상된 합의에 연결시키기 위해 항공권에 기재되는 식별자이다.'
 sources:
   - org: Travelport
     name: Cat35 - Negotiated Fares (Support)
@@ -93,6 +96,7 @@ Category 35는 항공사가 인가된 판매자에게만 제한된 운임을 파
 # Distinctions
 - **Negotiated Fare** vs [Fare Rule](/air/air-shop/fare-rule.md) — Fare Rule is the general framework of numbered ATPCO categories; Negotiated Fare is the specific construct governed by one of them (Category 35), covering private/contract fares and their ticketing security.
 - **Negotiated Fare** vs [Fare Basis Code](/air/air-shop/fare-basis-code.md) — A fare basis code labels any fare, public or private; Negotiated Fare specifically denotes a privately filed Category 35 fare restricted to authorized sellers, often invisible in neutral public displays.
+- **Negotiated Fare** vs [Tour Code](/air/air-ticket/tour-code.md) — A negotiated fare is the discounted/contracted fare itself; the tour code is the identifier written into the ticket that ties that specific issuance back to the negotiated agreement for settlement and audit.
 
 # Citations
 [1] [Travelport — Cat35 - Negotiated Fares (Support) — Category 35](https://support.travelport.com/webhelp/FaresAndPricing/Content/Cat35%20-%20Negotiated%20Fares.htm)

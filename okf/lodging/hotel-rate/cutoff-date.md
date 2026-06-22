@@ -20,7 +20,7 @@ aliases:
   - Block Cutoff
   - Release Date (group)
 relationships:
-  - type: related
+  - type: parent
     targetTerm: Group Block
   - type: contrasts
     targetTerm: Release Period
@@ -60,7 +60,7 @@ The cutoff date is the central inventory-control lever of a group room block agr
 **Aliases:** `Cut-off Date`, `Block Cutoff`, `Release Date (group)`
 
 # Related
-- [Group Block](/lodging/hotel-rate/group-block.md) — related
+- [Group Block](/lodging/hotel-rate/group-block.md) — parent
 - [Release Period](/lodging/hotel-rate/release-period.md) — contrasts
 - [Allotment](/lodging/hotel-rate/allotment.md) — related
 

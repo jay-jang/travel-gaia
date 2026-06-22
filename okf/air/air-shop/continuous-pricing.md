@@ -25,7 +25,7 @@ providerTerms:
     context_ko: ATPCO는 continuous pricing을 항공 리테일링을 위한 dynamic offer 생성 역량의 일부로 위치시킨다.
     relationship: related
 relationships:
-  - type: related
+  - type: broader
     targetTerm: Revenue Management
   - type: related
     targetTerm: RBD
@@ -39,6 +39,15 @@ distinctions:
   - targetTerm: RBD
     explanation: RBDs are the fixed booking-class buckets that traditional pricing maps fares to; Continuous Pricing is designed to break free of that finite bucket structure by pricing along a continuous range.
     explanation_ko: 'RBD는 전통적 가격 책정이 운임을 매핑하는 고정된 booking class 버킷이고, Continuous Pricing은 연속적 범위로 가격을 책정함으로써 그 유한한 버킷 구조에서 벗어나도록 설계되었다.'
+  - targetTerm: Dynamic Offer
+    explanation: Continuous pricing is one of the three component capabilities of a Dynamic Offer; a Dynamic Offer is the broader capability combining continuous pricing with dynamic pricing and dynamic bundling.
+    explanation_ko: '연속 가격 책정은 다이내믹 오퍼를 이루는 세 가지 구성 역량 중 하나이고, 다이내믹 오퍼는 연속 가격 책정을 동적 가격 책정·동적 번들링과 결합한 더 넓은 역량이다.'
+  - targetTerm: Dynamic Pricing
+    explanation: Continuous pricing is the airline-side concept of pricing off a fare continuum rather than fixed RBD buckets; dynamic pricing is the hotel-side practice of moving rates by date. They are analogous disciplines in different verticals.
+    explanation_ko: 'Continuous Pricing은 고정 RBD 버킷 대신 운임 연속선상에서 가격을 책정하는 항공 측 개념이고, Dynamic Pricing은 날짜별로 요금을 움직이는 호텔 측 관행이다. 서로 다른 산업군의 유사 기법이다.'
+  - targetTerm: Revenue Management
+    explanation: Revenue Management is the broader discipline of demand forecasting and inventory control; Continuous Pricing is one modern pricing technique that lets RM offer prices across a continuous range rather than fixed fare buckets.
+    explanation_ko: 'Revenue Management는 수요 예측과 인벤토리 통제를 아우르는 더 넓은 영역이며, Continuous Pricing은 RM이 고정 운임 버킷 대신 연속적 범위로 가격을 제시할 수 있게 하는 현대적 가격 책정 기법 중 하나다.'
 sources:
   - org: ATPCO
     name: What are dynamic offers?
@@ -70,7 +79,7 @@ Traditional airline pricing pre-distributes a discrete set of fares mapped to a 
 | ATPCO | `Dynamic Offers / Continuous Pricing` | related | ATPCO frames continuous pricing as part of its dynamic offer creation capabilities for airline retailing. |
 
 # Related
-- [Revenue Management](/air/air-shop/revenue-management.md) — related
+- [Revenue Management](/air/air-shop/revenue-management.md) — broader
 - [RBD](/air/air-shop/rbd.md) — related
 - [NDC](/common/standards/ndc.md) — related
 - [Offer](/common/standards/offer.md) — related
@@ -78,6 +87,9 @@ Traditional airline pricing pre-distributes a discrete set of fares mapped to a 
 
 # Distinctions
 - **Continuous Pricing** vs [RBD](/air/air-shop/rbd.md) — RBDs are the fixed booking-class buckets that traditional pricing maps fares to; Continuous Pricing is designed to break free of that finite bucket structure by pricing along a continuous range.
+- **Continuous Pricing** vs [Dynamic Offer](/common/standards/dynamic-offer.md) — Continuous pricing is one of the three component capabilities of a Dynamic Offer; a Dynamic Offer is the broader capability combining continuous pricing with dynamic pricing and dynamic bundling.
+- **Continuous Pricing** vs [Dynamic Pricing](/lodging/hotel-rate/dynamic-pricing.md) — Continuous pricing is the airline-side concept of pricing off a fare continuum rather than fixed RBD buckets; dynamic pricing is the hotel-side practice of moving rates by date. They are analogous disciplines in different verticals.
+- **Continuous Pricing** vs [Revenue Management](/air/air-shop/revenue-management.md) — Revenue Management is the broader discipline of demand forecasting and inventory control; Continuous Pricing is one modern pricing technique that lets RM offer prices across a continuous range rather than fixed fare buckets.
 
 # Citations
 [1] [ATPCO — What are dynamic offers? — Continuous / dynamic pricing](https://atpco.net/single-blog/what-are-dynamic-offers/)

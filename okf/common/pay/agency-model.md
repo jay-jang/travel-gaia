@@ -21,7 +21,7 @@ aliases:
 relationships:
   - type: contrasts
     targetTerm: Merchant Model
-  - type: related
+  - type: contrasts
     targetTerm: Merchant of Record
   - type: related
     targetTerm: Commissionable Rate
@@ -34,6 +34,9 @@ distinctions:
   - targetTerm: Commissionable Rate
     explanation: 'Commissionable rates are the typical pricing basis for the agency model, where the agency earns commission rather than a markup.'
     explanation_ko: 커미셔너블 요금(commissionable rate)은 여행사가 마크업이 아닌 수수료를 받는 에이전시 모델의 전형적인 가격 기준이다.
+  - targetTerm: Merchant of Record
+    explanation: 'In the agency model the supplier is the Merchant of Record; the role describes who bears payment responsibility, not the commercial model itself.'
+    explanation_ko: 에이전시 모델에서는 공급업체가 Merchant of Record이다. 이 역할은 상업적 모델 자체가 아니라 결제 책임을 누가 지는지를 나타낸다.
 sources:
   - name: 'Agency Model in Travel: Payment Flows and Revenue Streams'
     org: AltexSoft
@@ -60,13 +63,14 @@ In the agency model the supplier owns the customer-facing price and the payment 
 
 # Related
 - [Merchant Model](/common/pay/merchant-model.md) — contrasts
-- [Merchant of Record](/common/pay/merchant-of-record.md) — related
+- [Merchant of Record](/common/pay/merchant-of-record.md) — contrasts
 - [Commissionable Rate](/lodging/hotel-dist/commissionable-rate.md) — related
 - [OTA (Online Travel Agency)](/common/standards/ota-online-travel-agency.md) — related
 
 # Distinctions
 - **Agency Model** vs [Merchant Model](/common/pay/merchant-model.md) — Under the agency model the supplier sets the price and is Merchant of Record; under the merchant model the intermediary does.
 - **Agency Model** vs [Commissionable Rate](/lodging/hotel-dist/commissionable-rate.md) — Commissionable rates are the typical pricing basis for the agency model, where the agency earns commission rather than a markup.
+- **Agency Model** vs [Merchant of Record](/common/pay/merchant-of-record.md) — In the agency model the supplier is the Merchant of Record; the role describes who bears payment responsibility, not the commercial model itself.
 
 # Citations
 [1] [AltexSoft — Agency Model in Travel: Payment Flows and Revenue Streams](https://www.altexsoft.com/blog/agency-model/)

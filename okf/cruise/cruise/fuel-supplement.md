@@ -33,7 +33,7 @@ providerTerms:
 relationships:
   - type: contrasts
     targetTerm: Tax (YQ/YR)
-  - type: related
+  - type: broader
     targetTerm: Surcharge
   - type: related
     targetTerm: Guest Ticket Contract
@@ -63,7 +63,7 @@ sources:
     name: 'Explained: What Is a ''Fuel Supplement'' on a Cruise? — trigger price and right to impose on paid bookings'
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.cruisehive.com/two-cruise-lines-introduce-fuel-surcharges-could-more-follow/203270'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6c6 8 9 13 9 19a9 9 0 0 1-18 0c0-6 3-11 9-19z"/><path d="M20 27a4 4 0 0 0 8 0c0-3-4-6-4-6s-4 3-4 6z"/><polyline points="30 40 36 34 42 40"/><line x1="36" y1="34" x2="36" y2="44"/></svg>
 ---
 
@@ -86,7 +86,7 @@ Cruise passage contracts typically contain a clause letting the carrier add a fu
 
 # Related
 - [Tax (YQ/YR)](/air/air-shop/tax-yq-yr.md) — contrasts
-- [Surcharge](/air/air-shop/surcharge.md) — related
+- [Surcharge](/air/air-shop/surcharge.md) — broader
 - [Guest Ticket Contract](/cruise/cruise/guest-ticket-contract.md) — related
 - [Fuel Purchase Option](/ground/car/fuel-purchase-option.md) — related
 - [Sustainable Aviation Fuel (SAF)](/common/sustainability/sustainable-aviation-fuel-saf.md) — related
@@ -99,4 +99,4 @@ Cruise passage contracts typically contain a clause letting the carrier add a fu
 
 # Citations
 [1] [AffordableTours.com — Cruise Fuel Surcharge Policies (per-passenger-per-day caps and NYMEX trigger)](https://www.affordabletours.com/cruises/search/fuelsurcharges/)
-[2] Cruise Hive / industry reporting — Explained: What Is a 'Fuel Supplement' on a Cruise? — trigger price and right to impose on paid bookings
+[2] [Cruise Hive / industry reporting — Explained: What Is a 'Fuel Supplement' on a Cruise? — trigger price and right to impose on paid bookings](https://www.cruisehive.com/two-cruise-lines-introduce-fuel-surcharges-could-more-follow/203270)

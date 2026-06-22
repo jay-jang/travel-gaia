@@ -37,12 +37,15 @@ distinctions:
   - targetTerm: Settlement Cycle
     explanation: The settlement cycle defines the timing and periodicity; remittance is the funding act that the agent performs within that cycle.
     explanation_ko: '정산 주기(Settlement Cycle)는 시점과 주기를 정의하고, remittance는 그 주기 안에서 여행사가 수행하는 자금 납입 행위다.'
+  - targetTerm: Remittance Holding Capacity (RHC)
+    explanation: Remittance is the act of transferring collected funds to airlines; RHC is the ceiling on how much cash sales may remain unremitted before cash is blocked.
+    explanation_ko: 'Remittance는 수금한 자금을 항공사에 이전하는 행위이고, RHC는 현금이 차단되기 전까지 미송금 상태로 남을 수 있는 현금 판매의 상한이다.'
 sources:
   - org: IATA
     name: Passenger Agency Conference Resolutions (BSP / Billing and Settlement Plan)
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/passenger-agency-conference-resolutions-manual/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="24" r="6"/><circle cx="37" cy="24" r="6"/><path d="M18 21h12"/><path d="M27 18l3 3-3 3"/><path d="M30 30H18"/><path d="M21 33l-3-3 3-3"/></svg>
 ---
 
@@ -66,6 +69,7 @@ Under the agency model, an accredited travel agent sells tickets on behalf of ai
 # Distinctions
 - **Remittance** vs [BSP](/common/pay/bsp.md) — BSP is the clearing system and accounting infrastructure that handles agent-airline billing; remittance is the actual transfer of collected funds processed through that system.
 - **Remittance** vs [Settlement Cycle](/common/pay/settlement-cycle.md) — The settlement cycle defines the timing and periodicity; remittance is the funding act that the agent performs within that cycle.
+- **Remittance** vs [Remittance Holding Capacity (RHC)](/common/pay/remittance-holding-capacity-rhc.md) — Remittance is the act of transferring collected funds to airlines; RHC is the ceiling on how much cash sales may remain unremitted before cash is blocked.
 
 # Citations
-[1] IATA — Passenger Agency Conference Resolutions (BSP / Billing and Settlement Plan)
+[1] [IATA — Passenger Agency Conference Resolutions (BSP / Billing and Settlement Plan)](https://www.iata.org/en/publications/manuals/passenger-agency-conference-resolutions-manual/)

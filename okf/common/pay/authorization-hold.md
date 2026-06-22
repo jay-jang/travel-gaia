@@ -21,11 +21,11 @@ aliases:
   - auth hold
   - card hold
 relationships:
-  - type: related
+  - type: contrasts
     targetTerm: Settlement Cycle
   - type: related
     targetTerm: Acquirer
-  - type: related
+  - type: contrasts
     targetTerm: Guarantee Policy
   - type: related
     targetTerm: No-Show
@@ -38,6 +38,9 @@ distinctions:
   - targetTerm: Guarantee Policy
     explanation: A guarantee policy is the hotel's contractual rule on holding a booking and charging for no-shows; an authorization hold is the payment-rail mechanism often used to enforce or secure that guarantee.
     explanation_ko: '보증 정책(Guarantee Policy)은 예약 보장과 노쇼 청구에 관한 호텔의 계약 규칙이고, 승인 보류는 그 보증을 집행하거나 확보하는 데 흔히 사용되는 결제망 메커니즘이다.'
+  - targetTerm: Excess
+    explanation: An authorization hold is the temporary card block taken as a deposit; the excess is the underlying contractual liability cap that determines how large that hold may be and how much can ultimately be charged for damage.
+    explanation_ko: 'Authorization hold(승인 보류)는 보증금으로 잡는 일시적 카드 가승인이고, excess는 그 가승인 한도와 손해 시 최종 청구 가능 금액을 결정하는 근거가 되는 계약상 책임 상한이다.'
 sources:
   - org: Adyen
     name: Pre-authorisation and authorisation adjustment
@@ -63,15 +66,16 @@ The authorize/capture/settle lifecycle lets travel merchants reserve funds at ch
 **Aliases:** `pre-authorization`, `preauthorization`, `auth hold`, `card hold`
 
 # Related
-- [Settlement Cycle](/common/pay/settlement-cycle.md) — related
+- [Settlement Cycle](/common/pay/settlement-cycle.md) — contrasts
 - [Acquirer](/common/pay/acquirer.md) — related
-- [Guarantee Policy](/lodging/hotel-dist/guarantee-policy.md) — related
+- [Guarantee Policy](/lodging/hotel-dist/guarantee-policy.md) — contrasts
 - [No-Show](/lodging/hotel-dist/no-show.md) — related
 - [Merchant of Record](/common/pay/merchant-of-record.md) — related
 
 # Distinctions
 - **Authorization Hold** vs [Settlement Cycle](/common/pay/settlement-cycle.md) — An authorization hold reserves funds before any charge is captured; the settlement cycle is the later timetable on which captured transactions are cleared and funds actually move.
 - **Authorization Hold** vs [Guarantee Policy](/lodging/hotel-dist/guarantee-policy.md) — A guarantee policy is the hotel's contractual rule on holding a booking and charging for no-shows; an authorization hold is the payment-rail mechanism often used to enforce or secure that guarantee.
+- **Authorization Hold** vs [Excess](/ground/car/excess.md) — An authorization hold is the temporary card block taken as a deposit; the excess is the underlying contractual liability cap that determines how large that hold may be and how much can ultimately be charged for damage.
 
 # Citations
 [1] [Adyen — Pre-authorisation and authorisation adjustment](https://docs.adyen.com/point-of-sale/pre-authorisation)

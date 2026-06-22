@@ -20,7 +20,7 @@ aliases:
   - Travel Metasearch
   - Price Comparison Engine
 relationships:
-  - type: related
+  - type: contrasts
     targetTerm: OTA (Online Travel Agency)
   - type: related
     targetTerm: Aggregator
@@ -33,6 +33,12 @@ distinctions:
   - targetTerm: Aggregator
     explanation: Metasearch is a consumer-facing comparison/referral product; an aggregator is a back-end content consolidator that pools supplier inventory for resellers.
     explanation_ko: '메타서치는 소비자 대상 비교/연결 서비스이고, 애그리게이터는 재판매자를 위해 공급사 재고를 모으는 백엔드 콘텐츠 통합자이다.'
+  - targetTerm: Cost Per Acquisition (CPA)
+    explanation: Metasearch is the channel that aggregates and compares rates; CPA is one of the monetization/billing models (versus CPC) by which that metasearch channel charges advertisers.
+    explanation_ko: 'Metasearch는 요금을 집약·비교하는 채널이고, CPA는 그 메타서치 채널이 광고주에게 과금하는 수익화/과금 모델(CPC와 대비) 중 하나다.'
+  - targetTerm: Internet Distribution System (IDS)
+    explanation: 'Metasearch sites aggregate and compare rates and refer the booking elsewhere; IDS channels (OTAs, portals) are where the room is actually sold online.'
+    explanation_ko: 'Metasearch 사이트는 요금을 집계·비교하고 예약을 다른 곳으로 보내며, IDS 채널(OTA, 포털)은 실제로 객실이 온라인에서 판매되는 곳이다.'
 sources:
   - name: Travel Metasearch (industry definition)
     org: Phocuswright / industry usage
@@ -53,13 +59,15 @@ Metasearch typically monetizes via referral fees, cost-per-click, or commission 
 **Aliases:** `Metasearch Engine`, `Travel Metasearch`, `Price Comparison Engine`
 
 # Related
-- [OTA (Online Travel Agency)](/common/standards/ota-online-travel-agency.md) — related
+- [OTA (Online Travel Agency)](/common/standards/ota-online-travel-agency.md) — contrasts
 - [Aggregator](/common/standards/aggregator.md) — related
 - [GDS](/common/standards/gds.md) — related
 
 # Distinctions
 - **Metasearch** vs [OTA (Online Travel Agency)](/common/standards/ota-online-travel-agency.md) — Metasearch compares prices and refers out; an OTA actually sells and processes the booking.
 - **Metasearch** vs [Aggregator](/common/standards/aggregator.md) — Metasearch is a consumer-facing comparison/referral product; an aggregator is a back-end content consolidator that pools supplier inventory for resellers.
+- **Metasearch** vs [Cost Per Acquisition (CPA)](/lodging/hotel-dist/cost-per-acquisition.md) — Metasearch is the channel that aggregates and compares rates; CPA is one of the monetization/billing models (versus CPC) by which that metasearch channel charges advertisers.
+- **Metasearch** vs [Internet Distribution System (IDS)](/lodging/hotel-dist/internet-distribution-system.md) — Metasearch sites aggregate and compare rates and refer the booking elsewhere; IDS channels (OTAs, portals) are where the room is actually sold online.
 
 # Citations
 [1] Phocuswright / industry usage — Travel Metasearch (industry definition)

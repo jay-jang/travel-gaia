@@ -48,17 +48,20 @@ distinctions:
   - targetTerm: Booking Status Code
     explanation: 'A Booking Status Code (e.g. HK, SS, UC) describes the state of one segment inside a specific PNR; an AVS describes, at the inventory level, whether a class on a flight is open or closed for everyone. AVS feeds the availability display that a sell then acts against.'
     explanation_ko: 'Booking Status Code(예: HK, SS, UC)는 특정 PNR 내 한 segment의 상태를 나타내고, AVS는 inventory 차원에서 어떤 flight의 class가 모두에게 open인지 closed인지를 나타낸다. AVS는 availability 화면을 채우고, sell은 그 화면에 대해 작동한다.'
+  - targetTerm: Standard Schedules Information Manual (SSIM)
+    explanation: 'SSIM standards govern the schedule (which flights operate, when, with what aircraft); AVS messages govern the bookable seat status on those flights. Schedule data is the layer beneath availability.'
+    explanation_ko: 'SSIM 표준은 스케줄(어떤 flight가 언제 어떤 aircraft로 운항하는지)을 규율하고, AVS 메시지는 그 flight들의 판매 가능 좌석 상태를 규율한다. 스케줄 데이터는 availability 아래 계층이다.'
 sources:
   - org: IATA
     name: Airline Industry Reservations Interline Message Procedures (AIRIMP)
     version: ''
     section: Availability Status Messages
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/airline-industry-reservations-interline-message-procedures-airimp/'
   - org: AeroCRS / GO7
     name: AVS Recap (PSS Support)
     version: ''
     section: ''
-    url: ''
+    url: 'https://support.aerocrs.com/hc/en-us/articles/360035474011-AVS-Recap'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="10" width="36" height="28" rx="3"/><path d="M6 18h36"/><circle cx="15" cy="28" r="4"/><path d="M13.5 28l1.2 1.2 2.3-2.6"/><line x1="24" y1="26" x2="36" y2="26"/><line x1="24" y1="31" x2="32" y2="31"/></svg>
 ---
 
@@ -89,7 +92,8 @@ AVS('availability status') 방식에서 항공사 inventory 시스템은 availab
 # Distinctions
 - **Availability Status Message (AVS)** vs [Standard Schedules Message](/air/air-partner/standard-schedules-message.md) — An SSM distributes the existence and timing of flights (schedule creates, changes, cancellations); an AVS distributes the bookable seat status of those flights by class. Schedule first, then availability on it.
 - **Availability Status Message (AVS)** vs [Booking Status Code](/air/air-ops/booking-status-code.md) — A Booking Status Code (e.g. HK, SS, UC) describes the state of one segment inside a specific PNR; an AVS describes, at the inventory level, whether a class on a flight is open or closed for everyone. AVS feeds the availability display that a sell then acts against.
+- **Availability Status Message (AVS)** vs [Standard Schedules Information Manual (SSIM)](/air/air-ops/standard-schedules-information-manual-ssim.md) — SSIM standards govern the schedule (which flights operate, when, with what aircraft); AVS messages govern the bookable seat status on those flights. Schedule data is the layer beneath availability.
 
 # Citations
-[1] IATA — Airline Industry Reservations Interline Message Procedures (AIRIMP) — Availability Status Messages
-[2] AeroCRS / GO7 — AVS Recap (PSS Support)
+[1] [IATA — Airline Industry Reservations Interline Message Procedures (AIRIMP) — Availability Status Messages](https://www.iata.org/en/publications/manuals/airline-industry-reservations-interline-message-procedures-airimp/)
+[2] [AeroCRS / GO7 — AVS Recap (PSS Support)](https://support.aerocrs.com/hc/en-us/articles/360035474011-AVS-Recap)

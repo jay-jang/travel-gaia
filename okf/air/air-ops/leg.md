@@ -29,12 +29,18 @@ distinctions:
   - targetTerm: Segment
     explanation: 'A leg is one physical takeoff-to-landing hop, while a segment is the sold/marketed flight under one flight number that may span several legs.'
     explanation_ko: 'leg은 하나의 물리적 이착륙 구간인 반면, segment는 여러 leg에 걸칠 수 있는, 하나의 편명으로 판매·마케팅되는 항공편이다.'
+  - targetTerm: ARNK
+    explanation: 'ARNK is a non-flown placeholder bridging a surface break, while a leg is an actual physical flown hop of an aircraft.'
+    explanation_ko: 'ARNK는 지상 구간 단절을 연결하는 비운항 자리표시자인 반면, leg은 항공기의 실제 물리적 운항 구간이다.'
+  - targetTerm: Origin & Destination
+    explanation: 'A leg is a single nonstop flight operation; an O&D is the full market between true origin and destination, possibly spanning multiple legs.'
+    explanation_ko: '레그(leg)는 하나의 직항 비행 운항이고, O&D는 실제 출발지와 도착지 사이의 전체 시장으로 여러 레그에 걸칠 수 있다.'
 sources:
   - name: Standard Schedules Information Manual (SSIM)
     org: IATA
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/standard-schedules-information/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="40" x2="42" y2="40"/><path d="M9 36 C16 16 32 16 39 24"/><path d="M33 12 L41 20 L32 24"/></svg>
 ---
 
@@ -54,6 +60,8 @@ leg은 항공기 노선의 운영상 실제를 나타내며, 스케줄 데이터
 
 # Distinctions
 - **Leg** vs [Segment](/air/air-ops/segment.md) — A leg is one physical takeoff-to-landing hop, while a segment is the sold/marketed flight under one flight number that may span several legs.
+- **Leg** vs [ARNK](/air/air-ops/arnk.md) — ARNK is a non-flown placeholder bridging a surface break, while a leg is an actual physical flown hop of an aircraft.
+- **Leg** vs [Origin & Destination](/air/air-shop/origin-destination.md) — A leg is a single nonstop flight operation; an O&D is the full market between true origin and destination, possibly spanning multiple legs.
 
 # Citations
-[1] IATA — Standard Schedules Information Manual (SSIM)
+[1] [IATA — Standard Schedules Information Manual (SSIM)](https://www.iata.org/en/publications/manuals/standard-schedules-information/)

@@ -26,7 +26,7 @@ relationships:
     targetTerm: Cancellation Policy
   - type: related
     targetTerm: Guarantee Policy
-  - type: related
+  - type: contrasts
     targetTerm: BAR
   - type: related
     targetTerm: Rate Parity
@@ -62,7 +62,7 @@ Non-refundable rates are frequently distributed as advance-purchase products: th
 - [Rate Plan](/lodging/hotel-rate/rate-plan.md) — child
 - [Cancellation Policy](/lodging/hotel-dist/cancellation-policy.md) — related
 - [Guarantee Policy](/lodging/hotel-dist/guarantee-policy.md) — related
-- [BAR](/lodging/hotel-rate/bar.md) — related
+- [BAR](/lodging/hotel-rate/bar.md) — contrasts
 - [Rate Parity](/lodging/hotel-rate/rate-parity.md) — related
 
 # Distinctions

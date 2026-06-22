@@ -38,6 +38,9 @@ distinctions:
   - targetTerm: ARI
     explanation: ARI is the availability/rate/inventory data exchanged between systems; property mapping is the prerequisite that ensures each ARI message is attributed to the correct property and product on the receiving side.
     explanation_ko: 'ARI는 시스템 간에 교환되는 가용성·요금·재고 데이터이고, 프로퍼티 매핑은 각 ARI 메시지가 수신 측에서 올바른 호텔·상품에 귀속되도록 보장하는 선행 조건이다.'
+  - targetTerm: GIATA ID
+    explanation: 'Property mapping is the general process of matching a hotel and its products to another system''s identifiers; the GIATA ID is the concrete, cross-industry identifier (and reference dataset) that operationalizes that mapping at scale so all parties share one code.'
+    explanation_ko: 'Property mapping은 호텔과 그 상품을 다른 시스템의 식별자에 일치시키는 일반적 프로세스이고, GIATA ID는 그 매핑을 산업 규모로 구현하여 모든 당사자가 하나의 코드를 공유하게 하는 구체적인 범산업 식별자(및 참조 데이터셋)다.'
 sources:
   - org: AltexSoft
     name: 'Hotel Tech Specifications by HTNG, OpenTravel, and HEDNA'
@@ -72,6 +75,7 @@ Because each distribution platform assigns its own identifiers, a single physica
 
 # Distinctions
 - **Property Mapping** vs [ARI](/lodging/hotel-dist/ari.md) — ARI is the availability/rate/inventory data exchanged between systems; property mapping is the prerequisite that ensures each ARI message is attributed to the correct property and product on the receiving side.
+- **Property Mapping** vs [GIATA ID](/lodging/hotel-dist/giata-id.md) — Property mapping is the general process of matching a hotel and its products to another system's identifiers; the GIATA ID is the concrete, cross-industry identifier (and reference dataset) that operationalizes that mapping at scale so all parties share one code.
 
 # Citations
 [1] [AltexSoft — Hotel Tech Specifications by HTNG, OpenTravel, and HEDNA — Property Identification](https://www.altexsoft.com/blog/hotel-tech-specifications-htng-opentravel/)

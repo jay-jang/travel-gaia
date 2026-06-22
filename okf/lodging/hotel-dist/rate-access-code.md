@@ -41,6 +41,9 @@ distinctions:
   - targetTerm: Corporate Rate
     explanation: A corporate rate is the negotiated price/product; the RAC is the access code an agency keys in to retrieve and sell that corporate rate in the GDS.
     explanation_ko: 'Corporate rate는 협상된 가격/상품이고, RAC는 여행사가 GDS에서 그 corporate rate를 조회·판매하기 위해 입력하는 접근 코드다.'
+  - targetTerm: Rate Qualifier
+    explanation: 'A Rate Access Code (RAC) identifies a specific filed rate plan to retrieve; a rate qualifier is the entitlement input (corporate ID, promo code, one-way) that the system uses to decide which rates the booking may see at all.'
+    explanation_ko: 'Rate Access Code(RAC)는 조회할 특정 등록 요율 플랜을 식별하는 코드이고, rate qualifier는 시스템이 해당 예약이 어떤 요율을 볼 자격이 있는지 판단하는 데 쓰는 자격 입력(법인 ID, 프로모션 코드, 편도)이다.'
 sources:
   - org: SaaS4Hotels
     name: GDS — Negotiated Rate Loading Map & Rate Access Codes
@@ -76,6 +79,7 @@ Negotiated hotel rates — corporate, consortia, or other confidential rates —
 # Distinctions
 - **Rate Access Code (RAC)** vs [Rate Code](/lodging/hotel-rate/rate-code.md) — A rate code names/identifies a rate plan within a system; a Rate Access Code is specifically the credential that gates visibility of a confidential negotiated rate in the GDS so only authorized agencies can view and book it.
 - **Rate Access Code (RAC)** vs [Corporate Rate](/lodging/hotel-rate/corporate-rate.md) — A corporate rate is the negotiated price/product; the RAC is the access code an agency keys in to retrieve and sell that corporate rate in the GDS.
+- **Rate Access Code (RAC)** vs [Rate Qualifier](/ground/car/rate-qualifier.md) — A Rate Access Code (RAC) identifies a specific filed rate plan to retrieve; a rate qualifier is the entitlement input (corporate ID, promo code, one-way) that the system uses to decide which rates the booking may see at all.
 
 # Citations
 [1] [SaaS4Hotels — GDS — Negotiated Rate Loading Map & Rate Access Codes](https://www.saas4h.com/global-distribution-system-gds/negotiated-rate-loading-map-rate-access-codes)

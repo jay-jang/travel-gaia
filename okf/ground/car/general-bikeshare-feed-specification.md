@@ -41,12 +41,12 @@ sources:
     name: General Bikeshare Feed Specification — gbfs.org documentation/FAQ
     version: ''
     section: ''
-    url: ''
+    url: 'https://gbfs.org/documentation/faq/'
   - org: MobilityData
     name: MobilityData/gbfs — standardized data feed for shared mobility (GitHub)
     version: ''
     section: ''
-    url: ''
+    url: 'https://github.com/MobilityData/gbfs'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="34" r="7"/><circle cx="36" cy="34" r="7"/><path d="M12 34l8-14h10M20 20l8 14M30 20h5M27 20l-2-5"/><path d="M6 8a18 18 0 0 1 8 8M6 14a10 10 0 0 1 4 4"/></svg>
 ---
 
@@ -74,5 +74,5 @@ GBFS 피드는 여러 JSON 파일로 구성되며, 각 파일은 시스템 정�
 - **General Bikeshare Feed Specification** vs [Mobility as a Service](/ground/car/mobility-as-a-service.md) — GBFS is a machine-to-machine data feed of live availability; MaaS is the end-user service concept that consumes GBFS (and other) feeds to plan, book and pay for journeys.
 
 # Citations
-[1] MobilityData — General Bikeshare Feed Specification — gbfs.org documentation/FAQ
-[2] MobilityData — MobilityData/gbfs — standardized data feed for shared mobility (GitHub)
+[1] [MobilityData — General Bikeshare Feed Specification — gbfs.org documentation/FAQ](https://gbfs.org/documentation/faq/)
+[2] [MobilityData — MobilityData/gbfs — standardized data feed for shared mobility (GitHub)](https://github.com/MobilityData/gbfs)

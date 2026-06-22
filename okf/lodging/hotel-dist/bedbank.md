@@ -37,7 +37,7 @@ relationships:
     targetTerm: Rate Parity
   - type: related
     targetTerm: OTA (Online Travel Agency)
-  - type: related
+  - type: broader
     targetTerm: Aggregator
 distinctions:
   - targetTerm: OTA (Online Travel Agency)
@@ -46,6 +46,18 @@ distinctions:
   - targetTerm: Net Rate
     explanation: A bedbank is the business intermediary; the Net Rate is the wholesale price model bedbanks typically contract and resell on.
     explanation_ko: '베드뱅크는 사업적 중개자이고, 순 요금(Net Rate)은 베드뱅크가 일반적으로 계약하고 재판매하는 기반이 되는 도매 가격 모델이다.'
+  - targetTerm: Aggregator
+    explanation: A bedbank is a specific hotel-inventory aggregator selling net rates wholesale; aggregator is the general category.
+    explanation_ko: '베드뱅크는 순요금(net rate)을 도매로 판매하는 특정 호텔 재고 애그리게이터이고, 애그리게이터는 그 상위의 일반 범주이다.'
+  - targetTerm: Hotel Representation Company
+    explanation: A bedbank is a B2B wholesaler that buys net inventory and resells it to travel sellers; a representation company does not buy the rooms—it distributes the hotel's own inventory through the GDS/OTAs under its chain code and brand.
+    explanation_ko: 'Bedbank는 순(net) 인벤토리를 사들여 여행 판매자에게 재판매하는 B2B 도매업체이고, 대표 판매 회사는 객실을 사들이지 않고 자사 chain code와 브랜드로 호텔 자체 인벤토리를 GDS/OTA를 통해 분배한다.'
+  - targetTerm: Hotel Switch
+    explanation: 'A bedbank buys and resells hotel inventory at net rates, taking a commercial position; a switch never owns inventory or sets prices and only transports messages.'
+    explanation_ko: 'Bedbank은 net rate로 호텔 재고를 사들여 재판매하며 상업적 포지션을 취하지만, 스위치는 재고를 보유하거나 가격을 설정하지 않고 메시지만 전달한다.'
+  - targetTerm: Opaque Inventory
+    explanation: A bedbank is a B2B wholesaler that supplies net inventory to resellers; opaque inventory is a B2C selling model (often fed partly by such net/distressed stock) defined by hiding the property identity from the consumer until purchase.
+    explanation_ko: 'Bedbank은 재판매업체에 net 인벤토리를 공급하는 B2B 도매업체이고, 오페이크 인벤토리는 (일부는 그러한 net/처분 재고로 채워지는) B2C 판매 모델로 구매 전까지 프로퍼티 신원을 소비자에게 숨기는 것이 특징이다.'
 sources:
   - name: Hotel distribution and wholesaler industry references
     org: ''
@@ -77,11 +89,15 @@ Bedbanks aggregate inventory and net rates from many hotels and offer them to B2
 - [Allotment](/lodging/hotel-rate/allotment.md) — related
 - [Rate Parity](/lodging/hotel-rate/rate-parity.md) — related
 - [OTA (Online Travel Agency)](/common/standards/ota-online-travel-agency.md) — related
-- [Aggregator](/common/standards/aggregator.md) — related
+- [Aggregator](/common/standards/aggregator.md) — broader
 
 # Distinctions
 - **Bedbank** vs [OTA (Online Travel Agency)](/common/standards/ota-online-travel-agency.md) — A bedbank is a B2B wholesaler selling to other travel sellers; an OTA sells hotel rooms directly to the traveling public.
 - **Bedbank** vs [Net Rate](/lodging/hotel-dist/net-rate.md) — A bedbank is the business intermediary; the Net Rate is the wholesale price model bedbanks typically contract and resell on.
+- **Bedbank** vs [Aggregator](/common/standards/aggregator.md) — A bedbank is a specific hotel-inventory aggregator selling net rates wholesale; aggregator is the general category.
+- **Bedbank** vs [Hotel Representation Company](/lodging/hotel-dist/hotel-representation-company.md) — A bedbank is a B2B wholesaler that buys net inventory and resells it to travel sellers; a representation company does not buy the rooms—it distributes the hotel's own inventory through the GDS/OTAs under its chain code and brand.
+- **Bedbank** vs [Hotel Switch](/lodging/hotel-dist/hotel-switch.md) — A bedbank buys and resells hotel inventory at net rates, taking a commercial position; a switch never owns inventory or sets prices and only transports messages.
+- **Bedbank** vs [Opaque Inventory](/lodging/hotel-dist/opaque-inventory.md) — A bedbank is a B2B wholesaler that supplies net inventory to resellers; opaque inventory is a B2C selling model (often fed partly by such net/distressed stock) defined by hiding the property identity from the consumer until purchase.
 
 # Citations
 [1] Hotel distribution and wholesaler industry references

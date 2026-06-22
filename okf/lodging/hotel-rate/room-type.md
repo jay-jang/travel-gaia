@@ -37,17 +37,23 @@ distinctions:
   - targetTerm: Occupancy
     explanation: 'Room type describes the room''s attributes; occupancy describes how many guests stay in it, which can affect the applicable price.'
     explanation_ko: '객실 유형은 객실의 속성을 설명하고, 투숙 인원(occupancy)은 몇 명의 투숙객이 머무는지를 설명하며 이는 적용 가격에 영향을 줄 수 있다.'
+  - targetTerm: Cabin Category
+    explanation: Cabin Category is the cruise term for the same concept as a hotel Room Type — a graded physical product against which a rate is quoted — but cruise categories are typically far more numerous and finely graded (often dozens of sub-categories) and are priced per person on double occupancy rather than per room.
+    explanation_ko: 'Cabin Category는 호텔의 Room Type과 동일한 개념(요금이 매겨지는 등급화된 실제 상품)에 대한 크루즈 용어이지만, 크루즈 카테고리는 보통 훨씬 더 많고 세밀하게 등급화되며(흔히 수십 개의 하위 카테고리) 객실당이 아니라 2인 기준 1인당으로 가격이 책정된다.'
+  - targetTerm: Run of House (ROH)
+    explanation: 'A Room Type booking guarantees a specific product category and its attributes; an ROH booking guarantees only a room within the property, with the actual type assigned by the hotel at check-in based on availability.'
+    explanation_ko: 'Room Type 예약은 특정 상품 등급과 속성을 보장하지만, ROH 예약은 호텔 내 객실만을 보장하며 실제 타입은 가용성에 따라 체크인 시 호텔이 배정한다.'
 sources:
   - name: 'OpenTravel Specification (Hotel messages, RoomType / RoomStay)'
     org: OpenTravel Alliance
     version: ''
     section: ''
-    url: ''
+    url: 'https://opentravel.org/download-specs/'
   - name: HTNG messaging specifications
     org: HTNG
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.ahla.com/htng-technical-specifications'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18v18"/><path d="M6 24h36v12"/><path d="M42 30v6"/><path d="M6 24v-6h22a8 8 0 0 1 8 8"/><path d="M12 22a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3"/></svg>
 ---
 
@@ -70,7 +76,9 @@ Room types are the inventory unit hoteliers count and sell; availability and all
 # Distinctions
 - **Room Type** vs [Rate Plan](/lodging/hotel-rate/rate-plan.md) — Room type is the physical product (the room); rate plan is the price and conditions under which that room is sold.
 - **Room Type** vs [Occupancy](/lodging/hotel-rate/occupancy.md) — Room type describes the room's attributes; occupancy describes how many guests stay in it, which can affect the applicable price.
+- **Room Type** vs [Cabin Category](/cruise/cruise/cabin-category.md) — Cabin Category is the cruise term for the same concept as a hotel Room Type — a graded physical product against which a rate is quoted — but cruise categories are typically far more numerous and finely graded (often dozens of sub-categories) and are priced per person on double occupancy rather than per room.
+- **Room Type** vs [Run of House (ROH)](/lodging/hotel-rate/run-of-house-roh.md) — A Room Type booking guarantees a specific product category and its attributes; an ROH booking guarantees only a room within the property, with the actual type assigned by the hotel at check-in based on availability.
 
 # Citations
-[1] OpenTravel Alliance — OpenTravel Specification (Hotel messages, RoomType / RoomStay)
-[2] HTNG — HTNG messaging specifications
+[1] [OpenTravel Alliance — OpenTravel Specification (Hotel messages, RoomType / RoomStay)](https://opentravel.org/download-specs/)
+[2] [HTNG — HTNG messaging specifications](https://www.ahla.com/htng-technical-specifications)

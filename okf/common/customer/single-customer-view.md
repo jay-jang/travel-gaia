@@ -24,7 +24,7 @@ aliases:
 relationships:
   - type: related
     targetTerm: Customer Data Platform
-  - type: related
+  - type: broader
     targetTerm: Customer Profile
   - type: related
     targetTerm: RFM Segmentation
@@ -40,12 +40,12 @@ sources:
     org: Industry vendor guidance
     version: ''
     section: ''
-    url: ''
+    url: 'https://cdp.com/glossary/single-customer-view-scv/'
   - name: What is Identity Resolution?
     org: Industry vendor guidance
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.salesforce.com/marketing/data/customer-identity-resolution/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="15" cy="15" r="6"/><circle cx="33" cy="15" r="6"/><path d="M15 21c-4 0-8 3-8 8M33 21c4 0 8 3 8 8"/><circle cx="24" cy="34" r="8"/><path d="M20.5 34l2.5 2.5 4.5-5"/></svg>
 ---
 
@@ -61,7 +61,7 @@ SCV 구축에는 신원 해소가 필요하다. 이메일 주소, 이름 표기,
 
 # Related
 - [Customer Data Platform](/common/customer/customer-data-platform.md) — related
-- [Customer Profile](/common/customer/customer-profile.md) — related
+- [Customer Profile](/common/customer/customer-profile.md) — broader
 - [RFM Segmentation](/common/customer/rfm-segmentation.md) — related
 
 # Distinctions
@@ -69,5 +69,5 @@ SCV 구축에는 신원 해소가 필요하다. 이메일 주소, 이름 표기,
 - **Single Customer View** vs [Customer Data Platform](/common/customer/customer-data-platform.md) — The SCV is the unified record (the 'what'); the CDP is the software that creates and activates it (the 'how').
 
 # Citations
-[1] Industry vendor guidance — Single Customer View (SCV): What It Is & How to Build One
-[2] Industry vendor guidance — What is Identity Resolution?
+[1] [Industry vendor guidance — Single Customer View (SCV): What It Is & How to Build One](https://cdp.com/glossary/single-customer-view-scv/)
+[2] [Industry vendor guidance — What is Identity Resolution?](https://www.salesforce.com/marketing/data/customer-identity-resolution/)

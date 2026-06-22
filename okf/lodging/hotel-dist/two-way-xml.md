@@ -42,6 +42,12 @@ distinctions:
   - targetTerm: Free Sale
     explanation: 'Free sale lets a channel sell rooms without checking live availability per request (sell-and-report), whereas two-way XML emphasizes real-time bidirectional confirmation of availability and bookings.'
     explanation_ko: 'Free sale는 채널이 요청마다 실시간 가용성을 확인하지 않고 객실을 판매하게 하는 방식(sell-and-report)인 반면, 양방향 XML은 가용성과 예약의 실시간 양방향 확인을 강조한다.'
+  - targetTerm: Connectivity Partner Program
+    explanation: Two-Way XML is the technical two-direction data exchange between systems; the Connectivity Partner Program is the commercial certification governing which providers are approved to use an OTA's connectivity APIs and at what tier.
+    explanation_ko: 'Two-Way XML은 시스템 간 양방향 데이터 교환이라는 기술이고, Connectivity Partner Program은 어떤 제공업체가 어떤 등급으로 OTA의 연결 API 사용을 승인받는지를 규율하는 상업적 인증이다.'
+  - targetTerm: Reservation Notification Message (OTA_HotelResNotif)
+    explanation: Two-Way XML is the general concept of bidirectional XML data exchange between distribution systems; OTA_HotelResNotif is one specific OpenTravel message—the reservation-push leg—that implements part of that two-way flow.
+    explanation_ko: 'Two-Way XML은 유통 시스템 간 양방향 XML 데이터 교환이라는 일반 개념이고, OTA_HotelResNotif는 그 양방향 흐름의 일부(예약 푸시 구간)를 구현하는 구체적인 OpenTravel 메시지 하나다.'
 sources:
   - org: OpenTravel Alliance
     name: OpenTravel Hotel Messaging Specifications
@@ -77,6 +83,8 @@ In hotel distribution, connectivity is described by directionality. A one-way co
 # Distinctions
 - **Two-Way XML** vs [ARI](/lodging/hotel-dist/ari.md) — ARI is the availability/rate/inventory content being exchanged; two-way XML is the bidirectional transport/protocol model over which ARI flows out and reservations flow back.
 - **Two-Way XML** vs [Free Sale](/lodging/hotel-dist/free-sale.md) — Free sale lets a channel sell rooms without checking live availability per request (sell-and-report), whereas two-way XML emphasizes real-time bidirectional confirmation of availability and bookings.
+- **Two-Way XML** vs [Connectivity Partner Program](/lodging/hotel-dist/connectivity-partner-program.md) — Two-Way XML is the technical two-direction data exchange between systems; the Connectivity Partner Program is the commercial certification governing which providers are approved to use an OTA's connectivity APIs and at what tier.
+- **Two-Way XML** vs [Reservation Notification Message (OTA_HotelResNotif)](/lodging/hotel-dist/reservation-notification-message.md) — Two-Way XML is the general concept of bidirectional XML data exchange between distribution systems; OTA_HotelResNotif is one specific OpenTravel message—the reservation-push leg—that implements part of that two-way flow.
 
 # Citations
 [1] [OpenTravel Alliance — OpenTravel Hotel Messaging Specifications](https://opentravel.org/)

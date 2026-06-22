@@ -26,7 +26,7 @@ providerTerms:
     context_ko: 좌석 수를 보유하며 element 0과 NM 수로 미배정 이름을 관리하는 PNR.
     relationship: same
 relationships:
-  - type: related
+  - type: broader
     targetTerm: PNR
   - type: related
     targetTerm: Split PNR
@@ -38,6 +38,9 @@ distinctions:
   - targetTerm: Allotment
     explanation: An Allotment is a pre-negotiated block of inventory a carrier or supplier grants a distributor to sell; a Group PNR is a specific reservation record holding seats for one identified travelling group. A group booking may draw on an allotment but is not the same as the allotment agreement.
     explanation_ko: 'Allotment는 항공사·공급자가 판매자에게 사전 협상으로 부여한 inventory block이고, Group PNR은 식별된 한 단체를 위해 좌석을 보유한 구체적 예약 레코드다. 단체 예약이 allotment를 사용할 수 있지만 allotment 계약 자체와는 다르다.'
+  - targetTerm: Split PNR
+    explanation: 'Splitting a PNR creates a new separate record for some passengers; a Group PNR is a single record holding many passengers under shared inventory. Splitting is often the action applied to part of a group, not the group structure itself.'
+    explanation_ko: 'Split PNR은 일부 승객을 위한 새 분리 레코드를 만드는 작업이고, Group PNR은 공유 inventory 아래 다수 승객을 담는 하나의 레코드다. split은 흔히 group의 일부에 적용하는 동작이지 group 구조 자체가 아니다.'
 sources:
   - org: Amadeus
     name: Amadeus Groups User Guide
@@ -48,7 +51,7 @@ sources:
     name: Passenger Services Conference Resolutions Manual (PSCRM)
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="17" cy="16" r="5"/><circle cx="31" cy="16" r="5"/><path d="M9 34c0-5 3.5-8 8-8s8 3 8 8"/><path d="M23 34c0-5 3.5-8 8-8s8 3 8 8"/></svg>
 ---
 
@@ -69,14 +72,15 @@ Group bookings are governed by negotiated group fares and carrier group policies
 | Amadeus | `Group PNR` | same | PNR holding a number of seats with unassigned names tracked by element 0 and NM count. |
 
 # Related
-- [PNR](/air/air-ops/pnr.md) — related
+- [PNR](/air/air-ops/pnr.md) — broader
 - [Split PNR](/air/air-ops/split-pnr.md) — related
 - [Availability](/air/air-shop/availability.md) — related
 - [Allotment](/lodging/hotel-rate/allotment.md) — related
 
 # Distinctions
 - **Group PNR** vs [Allotment](/lodging/hotel-rate/allotment.md) — An Allotment is a pre-negotiated block of inventory a carrier or supplier grants a distributor to sell; a Group PNR is a specific reservation record holding seats for one identified travelling group. A group booking may draw on an allotment but is not the same as the allotment agreement.
+- **Group PNR** vs [Split PNR](/air/air-ops/split-pnr.md) — Splitting a PNR creates a new separate record for some passengers; a Group PNR is a single record holding many passengers under shared inventory. Splitting is often the action applied to part of a group, not the group structure itself.
 
 # Citations
 [1] Amadeus — Amadeus Groups User Guide
-[2] IATA — Passenger Services Conference Resolutions Manual (PSCRM)
+[2] [IATA — Passenger Services Conference Resolutions Manual (PSCRM)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)

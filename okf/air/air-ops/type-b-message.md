@@ -57,7 +57,7 @@ sources:
     name: SITATEX / Type B and Type X messaging services
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.sita.aero/solutions/sita-communications-and-data-exchange/sita-messaging/sitatex/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="16" width="36" height="22" rx="2"/><path d="M12 16 V11 a3 3 0 0 1 3 -3 h18 a3 3 0 0 1 3 3 V16"/><line x1="12" y1="24" x2="30" y2="24"/><line x1="12" y1="30" x2="24" y2="30"/><circle cx="35" cy="28" r="1" fill="currentColor"/></svg>
 ---
 
@@ -90,4 +90,4 @@ Type B는 정의된 주소/헤더 구조, 메시지 식별자, 제한된 행/문
 
 # Citations
 [1] [IATA — Type B Messaging Whitepaper — v2.1 (14 June 2024)](https://www.iata.org/contentassets/badbfd2d36a74f12b021c9dd899ecbad/type_b_messaging_whitepaper_v2dot1_14_june_2024.pdf)
-[2] SITA — SITATEX / Type B and Type X messaging services
+[2] [SITA — SITATEX / Type B and Type X messaging services](https://www.sita.aero/solutions/sita-communications-and-data-exchange/sita-messaging/sitatex/)

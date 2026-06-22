@@ -33,6 +33,21 @@ distinctions:
   - targetTerm: Tax (YQ/YR)
     explanation: 'YQ/YR are carrier-imposed amounts carried in the ticket''s tax box, separate from the fare; a fare-construction Surcharge is added into the fare amount itself and is treated as fare for commission and proration.'
     explanation_ko: 'YQ/YR은 운임과 분리되어 항공권 세금란에 기재되는 carrier-imposed 금액이고, fare-construction Surcharge는 운임 금액 자체에 가산되어 커미션과 proration에서 운임으로 취급된다.'
+  - targetTerm: Concession Recovery Fee
+    explanation: 'A surcharge is the generic category of any added charge; the concession recovery fee is a specific, named airport pass-through recovering the operator''s airport concession costs.'
+    explanation_ko: 'Surcharge(부가요금)는 추가 부과 항목 전반을 가리키는 일반 범주이고, concession recovery fee는 사업자의 공항 영업권 비용을 회수하는, 특정하게 명명된 공항 전가 항목이다.'
+  - targetTerm: Daily Service Charge
+    explanation: 'A surcharge (or a cruise fuel supplement) is a cost-recovery add-on tied to the fare; the daily service charge is a per-guest-per-day gratuity that funds crew compensation rather than recovering an operating cost, and is conventionally adjustable by the guest at guest relations, which a true surcharge is not.'
+    explanation_ko: '할증료(또는 크루즈 fuel supplement)는 운임에 연동된 원가 회수성 가산금인 반면, 일일 서비스 차지는 운영 원가 회수가 아니라 승무원 보상을 충당하는 1인당·1일당 봉사료이며 관행상 guest relations에서 승객이 조정할 수 있는데, 본래의 할증료는 그렇지 않다.'
+  - targetTerm: Fuel Supplement
+    explanation: 'A surcharge is the general category of a fare-add cost-recovery amount; the cruise fuel supplement is a specific, contractually conditional surcharge keyed to an oil-price trigger and capped per guest per day, with the unusual feature that it can apply to fully paid bookings.'
+    explanation_ko: '할증료는 운임에 더해지는 원가 회수성 금액의 일반 범주이고, 크루즈 fuel supplement는 유가 트리거에 연동되고 승객당·일당 상한이 있는 계약상 조건부 할증료로, 전액 지불된 예약에도 적용될 수 있다는 특이점이 있다.'
+  - targetTerm: Maximum Permitted Mileage (MPM)
+    explanation: MPM is the distance threshold; the mileage surcharge is the percentage uplift to the fare that results when summed TPMs exceed the MPM.
+    explanation_ko: 'MPM은 거리 임계값이고, 마일리지 surcharge는 TPM 합계가 MPM을 초과할 때 운임에 가산되는 백분율 할증이다.'
+  - targetTerm: Single Supplement
+    explanation: 'A single supplement is a specific kind of fare surcharge applied because of solo occupancy, distinct from generic fuel, tax, or fee surcharges; it is calculated as a percentage of the per-person cruise fare.'
+    explanation_ko: '싱글 서플먼트는 1인 점유 때문에 적용되는 특정 종류의 운임 할증으로, 일반적인 유류·세금·수수료 할증과 구별되며 1인당 크루즈 운임의 일정 비율로 산정된다.'
 sources:
   - org: ATPCO
     name: ATPCO Fare Rules Categories
@@ -65,6 +80,11 @@ Surcharges in airline fare construction are governed by fare rules and the milea
 
 # Distinctions
 - **Surcharge** vs [Tax (YQ/YR)](/air/air-shop/tax-yq-yr.md) — YQ/YR are carrier-imposed amounts carried in the ticket's tax box, separate from the fare; a fare-construction Surcharge is added into the fare amount itself and is treated as fare for commission and proration.
+- **Surcharge** vs [Concession Recovery Fee](/ground/car/concession-recovery-fee.md) — A surcharge is the generic category of any added charge; the concession recovery fee is a specific, named airport pass-through recovering the operator's airport concession costs.
+- **Surcharge** vs [Daily Service Charge](/cruise/cruise/daily-service-charge.md) — A surcharge (or a cruise fuel supplement) is a cost-recovery add-on tied to the fare; the daily service charge is a per-guest-per-day gratuity that funds crew compensation rather than recovering an operating cost, and is conventionally adjustable by the guest at guest relations, which a true surcharge is not.
+- **Surcharge** vs [Fuel Supplement](/cruise/cruise/fuel-supplement.md) — A surcharge is the general category of a fare-add cost-recovery amount; the cruise fuel supplement is a specific, contractually conditional surcharge keyed to an oil-price trigger and capped per guest per day, with the unusual feature that it can apply to fully paid bookings.
+- **Surcharge** vs [Maximum Permitted Mileage (MPM)](/air/air-shop/maximum-permitted-mileage.md) — MPM is the distance threshold; the mileage surcharge is the percentage uplift to the fare that results when summed TPMs exceed the MPM.
+- **Surcharge** vs [Single Supplement](/cruise/cruise/single-supplement.md) — A single supplement is a specific kind of fare surcharge applied because of solo occupancy, distinct from generic fuel, tax, or fee surcharges; it is calculated as a percentage of the per-person cruise fare.
 
 # Citations
 [1] [ATPCO — ATPCO Fare Rules Categories — Category 12 Surcharges](https://atpco.net/single-blog/what-are-atpco-fare-rules-categories/)

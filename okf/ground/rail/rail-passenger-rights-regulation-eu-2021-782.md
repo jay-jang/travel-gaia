@@ -47,17 +47,20 @@ distinctions:
   - targetTerm: CIV (Uniform Rules concerning the Contract of International Carriage of Passengers by Rail)
     explanation: PRR (2021/782) is EU regulation creating passenger-facing rights and compensation; CIV is the underlying COTIF treaty law defining the carriage contract and carrier liability that PRR incorporates. PRR is the EU statutory layer on top of the CIV convention foundation.
     explanation_ko: 'PRR(2021/782)은 여객을 향한 권리·보상을 만드는 EU 규정이고, CIV는 PRR이 수용하는 운송계약·운송인 책임을 정하는 기저 COTIF 조약법이다. PRR은 CIV 협약 기반 위의 EU 법률 레이어다.'
+  - targetTerm: General Conditions of Carriage for Rail Passengers (GCC-CIV/PRR)
+    explanation: 'Regulation (EU) 2021/782 is binding EU law setting passenger rights; the GCC-CIV/PRR is the CIT-drafted contractual document that carriers voluntarily adopt to implement those rights (and CIV obligations) in actual ticket terms. One is statute, the other is the contractual T&C that operationalises it.'
+    explanation_ko: '규정 (EU) 2021/782은 여객권리를 정하는 구속력 있는 EU 법이고, GCC-CIV/PRR는 운송인이 그 권리(및 CIV 의무)를 실제 승차권 조건으로 구현하기 위해 자발적으로 채택하는 CIT 작성 계약 문서다. 하나는 법령, 다른 하나는 그것을 운영하는 계약 약관이다.'
 sources:
   - org: European Union
     name: Regulation (EU) 2021/782 on rail passengers' rights and obligations
     version: 2021/782
     section: ''
-    url: ''
+    url: 'https://eur-lex.europa.eu/eli/reg/2021/782/oj/eng'
   - org: European Commission
     name: Rail passenger rights — Mobility and Transport
     version: ''
     section: ''
-    url: ''
+    url: 'https://transport.ec.europa.eu/transport-themes/passenger-rights/rail-passenger-rights_en'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="16"/><circle cx="24" cy="14" r="2" fill="currentColor"/><path d="M24 14v0M16 24c0-3 3-5 8-5s8 2 8 5"/><path d="M18 33l3-7M30 33l-3-7"/><path d="M24 8v3M24 37v3M8 24h3M37 24h3"/></svg>
 ---
 
@@ -84,7 +87,8 @@ Regulation (EU) 2021/782 modernised and recast the previous rail passenger right
 # Distinctions
 - **Rail Passenger Rights Regulation (EU) 2021/782** vs [EU Regulation 261/2004](/common/disruption/eu-regulation-261-2004.md) — Regulation (EU) 2021/782 governs rail passenger rights (delay compensation as a percentage of the fare, re-routing, care, PRM and through-ticket rules); EU 261/2004 is the parallel regulation for air passengers (cancellation/long-delay/denied-boarding compensation in fixed euro amounts). They are mode-specific siblings — rail versus air — with different compensation mechanics.
 - **Rail Passenger Rights Regulation (EU) 2021/782** vs [CIV (Uniform Rules concerning the Contract of International Carriage of Passengers by Rail)](/ground/rail/civ-uniform-rules.md) — PRR (2021/782) is EU regulation creating passenger-facing rights and compensation; CIV is the underlying COTIF treaty law defining the carriage contract and carrier liability that PRR incorporates. PRR is the EU statutory layer on top of the CIV convention foundation.
+- **Rail Passenger Rights Regulation (EU) 2021/782** vs [General Conditions of Carriage for Rail Passengers (GCC-CIV/PRR)](/ground/rail/general-conditions-of-carriage-for-rail-passengers-gcc-civ-prr.md) — Regulation (EU) 2021/782 is binding EU law setting passenger rights; the GCC-CIV/PRR is the CIT-drafted contractual document that carriers voluntarily adopt to implement those rights (and CIV obligations) in actual ticket terms. One is statute, the other is the contractual T&C that operationalises it.
 
 # Citations
-[1] European Union — Regulation (EU) 2021/782 on rail passengers' rights and obligations — 2021/782
-[2] European Commission — Rail passenger rights — Mobility and Transport
+[1] [European Union — Regulation (EU) 2021/782 on rail passengers' rights and obligations — 2021/782](https://eur-lex.europa.eu/eli/reg/2021/782/oj/eng)
+[2] [European Commission — Rail passenger rights — Mobility and Transport](https://transport.ec.europa.eu/transport-themes/passenger-rights/rail-passenger-rights_en)

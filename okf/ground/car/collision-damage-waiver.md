@@ -23,9 +23,9 @@ aliases:
 relationships:
   - type: narrower
     targetTerm: Loss Damage Waiver
-  - type: related
+  - type: contrasts
     targetTerm: Supplemental Liability Insurance
-  - type: related
+  - type: parent
     targetTerm: Rental Agreement
 distinctions:
   - targetTerm: Loss Damage Waiver
@@ -34,17 +34,20 @@ distinctions:
   - targetTerm: Supplemental Liability Insurance
     explanation: CDW (a waiver) addresses damage to the rented vehicle itself; SLI is true insurance covering the renter's legal liability for third-party injury and property damage to others.
     explanation_ko: 'CDW(면책)는 대여 차량 자체의 손해를 다루고, SLI는 제3자에 대한 신체 상해 및 재물 손해에 대한 이용자의 법적 배상책임을 보장하는 실제 보험이다.'
+  - targetTerm: Excess
+    explanation: 'CDW is the waiver itself — the supplier''s contractual promise not to pursue the renter for covered collision damage; the excess is the carve-out from that waiver, i.e. the amount the renter still owes despite holding CDW.'
+    explanation_ko: 'CDW는 면책 그 자체로, 면책 대상 충돌 손해에 대해 이용자에게 청구하지 않겠다는 공급사의 계약상 약속이다. excess는 그 면책에서 떼어 낸 예외, 즉 CDW가 있어도 이용자가 여전히 부담하는 금액이다.'
 sources:
   - org: ''
     name: Rental Car Loss Damage Waiver (CDW Insurance) explained
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.avis.com/en/help/usa-faqs/cdw-insurance'
   - org: ''
     name: What Is a Collision Damage Waiver & Is It Worth It?
     version: ''
     section: ''
-    url: ''
+    url: 'https://wallethub.com/edu/ci/collision-damage-waiver/8822'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5l15 5v10c0 9-6 16-15 19-9-3-15-10-15-19V10z"/><path d="M16 26l3-6 3 4 3-7 3 9"/></svg>
 ---
 
@@ -60,13 +63,14 @@ CDW는 보험이 아니라 계약상 면책이므로, 공급사는 면책 대상
 
 # Related
 - [Loss Damage Waiver](/ground/car/loss-damage-waiver.md) — narrower
-- [Supplemental Liability Insurance](/ground/car/supplemental-liability-insurance.md) — related
-- [Rental Agreement](/ground/car/rental-agreement.md) — related
+- [Supplemental Liability Insurance](/ground/car/supplemental-liability-insurance.md) — contrasts
+- [Rental Agreement](/ground/car/rental-agreement.md) — parent
 
 # Distinctions
 - **Collision Damage Waiver** vs [Loss Damage Waiver](/ground/car/loss-damage-waiver.md) — CDW waives liability for collision/accident damage to the vehicle only; LDW is broader, typically adding theft protection and loss-of-use on top. In the US, LDW is now the standard product sold.
 - **Collision Damage Waiver** vs [Supplemental Liability Insurance](/ground/car/supplemental-liability-insurance.md) — CDW (a waiver) addresses damage to the rented vehicle itself; SLI is true insurance covering the renter's legal liability for third-party injury and property damage to others.
+- **Collision Damage Waiver** vs [Excess](/ground/car/excess.md) — CDW is the waiver itself — the supplier's contractual promise not to pursue the renter for covered collision damage; the excess is the carve-out from that waiver, i.e. the amount the renter still owes despite holding CDW.
 
 # Citations
-[1] Rental Car Loss Damage Waiver (CDW Insurance) explained
-[2] What Is a Collision Damage Waiver & Is It Worth It?
+[1] [Rental Car Loss Damage Waiver (CDW Insurance) explained](https://www.avis.com/en/help/usa-faqs/cdw-insurance)
+[2] [What Is a Collision Damage Waiver & Is It Worth It?](https://wallethub.com/edu/ci/collision-damage-waiver/8822)

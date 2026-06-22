@@ -51,7 +51,7 @@ sources:
     name: Ticketing Handbook
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/ticketing-handbook/'
   - org: Travelport
     name: EMDs (Electronic Miscellaneous Documents) Support
     version: ''
@@ -93,6 +93,6 @@ MCO(및 관련 문서인 MPD, Multi-Purpose Document)는 BSP/ARC 정산 환경�
 - **MCO (Miscellaneous Charges Order)** vs [E-ticket](/air/air-ticket/e-ticket.md) — An e-ticket records the carriage of a passenger on flight coupons; an MCO/EMD records non-flight value such as fees, deposits, or residual amounts.
 
 # Citations
-[1] IATA — Ticketing Handbook
+[1] [IATA — Ticketing Handbook](https://www.iata.org/en/publications/manuals/ticketing-handbook/)
 [2] [Travelport — EMDs (Electronic Miscellaneous Documents) Support](https://support.travelport.com/webhelp/Smartpoint1G1V/Content/Air/EMD/EMD.htm)
 [3] [ARC — Electronic Miscellaneous Document (EMD)](https://www2.arccorp.com/support-training/electronic-miscellaneous-document/)

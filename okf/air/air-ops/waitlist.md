@@ -45,7 +45,7 @@ sources:
     name: Passenger Services Conference Resolutions Manual (PSCRM)
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
   - org: Travelport
     name: Smartpoint Cloud Help — Waitlist flights
     version: ''
@@ -81,5 +81,5 @@ Waitlist는 마감되거나 만석인 클래스에 sell을 요청할 수 있게 
 - **Waitlist** vs [Overbooking](/air/air-shop/overbooking.md) — Overbooking is the carrier deliberately confirming more bookings than seats to offset no-shows; a Waitlist holds unconfirmed requests awaiting space. Waitlisted passengers are not confirmed, whereas overbooked passengers hold confirmed status that may exceed capacity.
 
 # Citations
-[1] IATA — Passenger Services Conference Resolutions Manual (PSCRM)
+[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
 [2] Travelport — Smartpoint Cloud Help — Waitlist flights

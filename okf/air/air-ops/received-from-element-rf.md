@@ -54,7 +54,7 @@ sources:
     name: Passenger Services Conference Resolutions Manual (PSCRM)
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
   - org: Sabre
     name: Sabre - PNR Mandatory Elements (PRINT / Received From)
     version: ''
@@ -91,5 +91,5 @@ IATA 여객 예약 표준에 따라 모든 PNR은 흔히 PRINT로 암기되는 �
 - **Received From Element (RF)** vs [PNR History](/air/air-ops/pnr-history.md) — Received From is the single field entered for one action naming its source; PNR History is the accumulated log into which each Received From value, with office and timestamp, is recorded over time.
 
 # Citations
-[1] IATA — Passenger Services Conference Resolutions Manual (PSCRM)
+[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
 [2] Sabre — Sabre - PNR Mandatory Elements (PRINT / Received From)

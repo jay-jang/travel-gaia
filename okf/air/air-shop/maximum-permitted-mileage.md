@@ -23,7 +23,7 @@ aliases:
   - MPM
   - Max Permitted Mileage
 relationships:
-  - type: related
+  - type: contrasts
     targetTerm: Ticketed Point Mileage (TPM)
   - type: related
     targetTerm: Fare Construction
@@ -40,6 +40,9 @@ distinctions:
   - targetTerm: Surcharge
     explanation: MPM is the distance threshold; the mileage surcharge is the percentage uplift to the fare that results when summed TPMs exceed the MPM.
     explanation_ko: 'MPM은 거리 임계값이고, 마일리지 surcharge는 TPM 합계가 MPM을 초과할 때 운임에 가산되는 백분율 할증이다.'
+  - targetTerm: Routing
+    explanation: 'MPM validates a fare by distance: any path within the permitted mileage qualifies (with surcharges for excess). A routing validates a fare by an explicit approved path list, with no distance check or mileage surcharge. They are the two mutually exclusive ways a given fare is checked for itinerary validity.'
+    explanation_ko: 'MPM은 운임을 거리로 검증한다. 허용 mileage 안의 모든 경로가 자격을 얻는다(초과 시 surcharge). Routing은 운임을 명시적 승인 경로 목록으로 검증하며, 거리 검사나 mileage surcharge가 없다. 둘은 특정 운임의 여정 유효성을 검사하는 상호 배타적인 두 방식이다.'
 sources:
   - org: IATA
     name: Maximum Permitted Mileage Manual (MPM)
@@ -65,7 +68,7 @@ MPM은 Resolution 011 하의 IATA Mileage Suite의 일부이며, 국제선 운�
 **Aliases:** `Maximum Permitted Mileage`, `MPM`, `Max Permitted Mileage`
 
 # Related
-- [Ticketed Point Mileage (TPM)](/air/air-shop/ticketed-point-mileage.md) — related
+- [Ticketed Point Mileage (TPM)](/air/air-shop/ticketed-point-mileage.md) — contrasts
 - [Fare Construction](/air/air-shop/fare-construction.md) — related
 - [Surcharge](/air/air-shop/surcharge.md) — related
 - [Fare Component](/air/air-shop/fare-component.md) — related
@@ -74,6 +77,7 @@ MPM은 Resolution 011 하의 IATA Mileage Suite의 일부이며, 국제선 운�
 # Distinctions
 - **Maximum Permitted Mileage (MPM)** vs [Ticketed Point Mileage (TPM)](/air/air-shop/ticketed-point-mileage.md) — TPM is the actual flown distance of a single flight coupon; MPM is the maximum allowable distance for a through-fare's O&D. Construction compares the summed TPMs against the MPM to decide whether a mileage surcharge applies.
 - **Maximum Permitted Mileage (MPM)** vs [Surcharge](/air/air-shop/surcharge.md) — MPM is the distance threshold; the mileage surcharge is the percentage uplift to the fare that results when summed TPMs exceed the MPM.
+- **Maximum Permitted Mileage (MPM)** vs [Routing](/air/air-shop/routing.md) — MPM validates a fare by distance: any path within the permitted mileage qualifies (with surcharges for excess). A routing validates a fare by an explicit approved path list, with no distance check or mileage surcharge. They are the two mutually exclusive ways a given fare is checked for itinerary validity.
 
 # Citations
 [1] [IATA — Maximum Permitted Mileage Manual (MPM)](https://www.iata.org/en/publications/manuals/mileage/mileage-manual-mpm/)

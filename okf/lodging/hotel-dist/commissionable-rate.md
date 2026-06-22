@@ -36,6 +36,12 @@ distinctions:
   - targetTerm: Agency Model
     explanation: Commissionable rate is the priced product; the agency model is the broader settlement model in which the hotel collects from the guest and pays commission.
     explanation_ko: '커미션 요금은 가격이 책정된 상품이고, 에이전시 모델은 호텔이 고객으로부터 대금을 수취하고 커미션을 지급하는 더 넓은 정산 모델이다.'
+  - targetTerm: Distribution Cost
+    explanation: A commissionable rate is the specific rate type on which a fixed agency commission is paid; distribution cost is the broader total-cost metric aggregating commissions plus all other channel fees and indirect costs.
+    explanation_ko: 'Commissionable rate는 고정 대리점 수수료가 지급되는 특정 요금 유형이고, 유통 비용은 수수료에 더해 모든 기타 채널 수수료와 간접 비용까지 합산한 더 넓은 총비용 지표다.'
+  - targetTerm: Non-Commissionable Fare (NCF)
+    explanation: A commissionable rate is the part of the fare on which the advisor does earn commission; the NCF is the carved-out remainder on which they earn nothing — together they make up the total cruise price.
+    explanation_ko: 'commissionable rate는 어드바이저가 실제로 수수료를 받는 운임 부분이고, NCF는 수수료를 전혀 받지 못하도록 떼어낸 나머지이다. 둘을 합치면 총 크루즈 가격이 된다.'
 sources:
   - name: Hotel distribution rate model industry references
     org: ''
@@ -65,6 +71,8 @@ Under the commissionable/agency model, the traveler pays the hotel (often at che
 # Distinctions
 - **Commissionable Rate** vs [Net Rate](/lodging/hotel-dist/net-rate.md) — A commissionable rate pays the seller a commission on the published price; a net rate is wholesale and non-commissionable with margin from markup.
 - **Commissionable Rate** vs [Agency Model](/common/pay/agency-model.md) — Commissionable rate is the priced product; the agency model is the broader settlement model in which the hotel collects from the guest and pays commission.
+- **Commissionable Rate** vs [Distribution Cost](/lodging/hotel-dist/distribution-cost.md) — A commissionable rate is the specific rate type on which a fixed agency commission is paid; distribution cost is the broader total-cost metric aggregating commissions plus all other channel fees and indirect costs.
+- **Commissionable Rate** vs [Non-Commissionable Fare (NCF)](/cruise/cruise/non-commissionable-fare-ncf.md) — A commissionable rate is the part of the fare on which the advisor does earn commission; the NCF is the carved-out remainder on which they earn nothing — together they make up the total cruise price.
 
 # Citations
 [1] Hotel distribution rate model industry references

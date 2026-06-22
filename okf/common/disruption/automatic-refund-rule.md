@@ -22,9 +22,9 @@ aliases:
   - DOT Refund Rule
   - Automatic Refunds of Airline Tickets and Ancillary Service Fees
 relationships:
-  - type: related
+  - type: broader
     targetTerm: Refund
-  - type: related
+  - type: contrasts
     targetTerm: Tarmac Delay Rule
   - type: related
     targetTerm: IROPS
@@ -40,12 +40,12 @@ sources:
     org: US Department of Transportation
     version: '2024'
     section: ''
-    url: ''
+    url: 'https://www.transportation.gov/airconsumer/refundsfinalruleapril2024'
   - name: Refunds and Other Consumer Protections (2024 FAA Reauthorization Act)
     org: US Department of Transportation
     version: '2024'
     section: ''
-    url: ''
+    url: 'https://www.federalregister.gov/documents/2024/08/12/2024-17602/refunds-and-other-consumer-protections-2024-faa-reauthorization'
 icon: '<svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20a14 14 0 1 1-2 10"/><polyline points="12,10 12,20 22,20"/><circle cx="30" cy="30" r="7"/><path d="M30 26v8M28 28.5c.5-.7 1.2-1 2-1 1.2 0 2 .6 2 1.6 0 2.2-4 1.3-4 3.5 0 1.1.9 1.7 2 1.7.9 0 1.6-.4 2-1"/></svg>'
 ---
 
@@ -60,8 +60,8 @@ The rule, finalized in 2024, defines a 'significant change' for the first time, 
 **Aliases:** `Automatic Refund Rule`, `DOT Refund Rule`, `Automatic Refunds of Airline Tickets and Ancillary Service Fees`
 
 # Related
-- [Refund](/air/air-ticket/refund.md) — related
-- [Tarmac Delay Rule](/common/disruption/tarmac-delay-rule.md) — related
+- [Refund](/air/air-ticket/refund.md) — broader
+- [Tarmac Delay Rule](/common/disruption/tarmac-delay-rule.md) — contrasts
 - [IROPS](/air/air-partner/irops.md) — related
 
 # Distinctions
@@ -69,5 +69,5 @@ The rule, finalized in 2024, defines a 'significant change' for the first time, 
 - **Automatic Refund Rule** vs [Refund](/air/air-ticket/refund.md) — Refund is the generic return of unused ticket value; the Automatic Refund Rule is the specific US regulation dictating that such refunds be automatic, in cash/original form, and within set deadlines.
 
 # Citations
-[1] US Department of Transportation — Final Rule Requiring Automatic Refunds of Airline Tickets and Ancillary Service Fees — 2024
-[2] US Department of Transportation — Refunds and Other Consumer Protections (2024 FAA Reauthorization Act) — 2024
+[1] [US Department of Transportation — Final Rule Requiring Automatic Refunds of Airline Tickets and Ancillary Service Fees — 2024](https://www.transportation.gov/airconsumer/refundsfinalruleapril2024)
+[2] [US Department of Transportation — Refunds and Other Consumer Protections (2024 FAA Reauthorization Act) — 2024](https://www.federalregister.gov/documents/2024/08/12/2024-17602/refunds-and-other-consumer-protections-2024-faa-reauthorization)

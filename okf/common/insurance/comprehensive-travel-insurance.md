@@ -24,13 +24,13 @@ relationships:
     targetTerm: Trip Cancellation
   - type: parent
     targetTerm: Trip Interruption
-  - type: related
+  - type: parent
     targetTerm: Travel Medical Insurance
-  - type: related
+  - type: parent
     targetTerm: Cancel For Any Reason (CFAR)
-  - type: related
+  - type: parent
     targetTerm: Emergency Medical Evacuation
-  - type: related
+  - type: parent
     targetTerm: Pre-Existing Condition Waiver
 distinctions:
   - targetTerm: Travel Medical Insurance
@@ -66,10 +66,10 @@ Rather than buying separate trip-cancellation and travel-medical policies, most 
 # Related
 - [Trip Cancellation](/common/insurance/trip-cancellation.md) — parent
 - [Trip Interruption](/common/insurance/trip-interruption.md) — parent
-- [Travel Medical Insurance](/common/insurance/travel-medical-insurance.md) — related
-- [Cancel For Any Reason (CFAR)](/common/insurance/cancel-for-any-reason-cfar.md) — related
-- [Emergency Medical Evacuation](/common/insurance/emergency-medical-evacuation.md) — related
-- [Pre-Existing Condition Waiver](/common/insurance/pre-existing-condition-waiver.md) — related
+- [Travel Medical Insurance](/common/insurance/travel-medical-insurance.md) — parent
+- [Cancel For Any Reason (CFAR)](/common/insurance/cancel-for-any-reason-cfar.md) — parent
+- [Emergency Medical Evacuation](/common/insurance/emergency-medical-evacuation.md) — parent
+- [Pre-Existing Condition Waiver](/common/insurance/pre-existing-condition-waiver.md) — parent
 
 # Distinctions
 - **Comprehensive Travel Insurance** vs [Travel Medical Insurance](/common/insurance/travel-medical-insurance.md) — Travel medical insurance is one benefit (healthcare abroad) sold standalone; comprehensive insurance bundles that medical benefit together with cancellation, delay and baggage in a single plan.

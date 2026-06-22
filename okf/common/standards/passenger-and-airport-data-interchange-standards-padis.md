@@ -38,6 +38,9 @@ distinctions:
   - targetTerm: Enhanced and Simplified Distribution (EDIST)
     explanation: PADIS is the governance/authority publishing and versioning schemas; EDIST is the specific NDC XML message family published under PADIS governance.
     explanation_ko: 'PADIS는 스키마를 발행·버전 관리하는 거버넌스/권한 기구이고, EDIST는 PADIS 거버넌스 아래 발행되는 구체적인 NDC XML 메시지 계열이다.'
+  - targetTerm: PADIS Codeset Directory
+    explanation: PADIS is the overall IATA standards programme and board for passenger/airport data interchange; the Codeset Directory is one specific deliverable within it—the catalogue of standardized code values.
+    explanation_ko: 'PADIS는 여객·공항 데이터 교환을 위한 IATA 표준 프로그램·위원회 전반을 가리키고, Codeset Directory는 그 안의 특정 산출물, 즉 표준 코드값 목록(카탈로그)이다.'
 sources:
   - org: IATA
     name: Passenger Standards Conference (PSC)
@@ -71,6 +74,7 @@ Governed historically under Passenger Services Conference Resolution 783, the PA
 # Distinctions
 - **Passenger and Airport Data Interchange Standards (PADIS)** vs [EDIFACT](/common/standards/edifact.md) — EDIFACT is the UN-origin EDI syntax; PADIS is the IATA body and air-industry standards set (in both EDIFACT and XML syntaxes) that governs how those messages are defined for passenger and airport use.
 - **Passenger and Airport Data Interchange Standards (PADIS)** vs [Enhanced and Simplified Distribution (EDIST)](/common/standards/enhanced-and-simplified-distribution-edist.md) — PADIS is the governance/authority publishing and versioning schemas; EDIST is the specific NDC XML message family published under PADIS governance.
+- **Passenger and Airport Data Interchange Standards (PADIS)** vs [PADIS Codeset Directory](/common/standards/padis-codeset-directory.md) — PADIS is the overall IATA standards programme and board for passenger/airport data interchange; the Codeset Directory is one specific deliverable within it—the catalogue of standardized code values.
 
 # Citations
 [1] IATA — Passenger Standards Conference (PSC)

@@ -40,12 +40,18 @@ distinctions:
   - targetTerm: Segment
     explanation: A segment is a single marketed flight portion of an itinerary; a connection is the relationship between two consecutive segments where the passenger transfers between flights.
     explanation_ko: '세그먼트는 여정에서 판매되는 단일 항공편 부분이고, connection은 승객이 두 항공편 사이를 환승하는, 연속된 두 세그먼트 간의 관계다.'
+  - targetTerm: Hub-and-Spoke
+    explanation: 'Hub-and-spoke is the overall network strategy of funneling traffic through hubs; a connection is the individual passenger event of changing flights, which the hub model is designed to generate efficiently.'
+    explanation_ko: '허브 앤 스포크는 운송을 허브로 모으는 전체 네트워크 전략이고, connection은 항공편을 갈아타는 개별 승객 단위의 사건으로, 허브 모델은 이를 효율적으로 만들어내도록 설계된다.'
+  - targetTerm: Missed Connection
+    explanation: A Connection is the operational/scheduling fact of changing between segments of a journey; Missed Connection is the insurance benefit that pays catch-up costs when a delay breaks that connection.
+    explanation_ko: 'Connection은 여정의 구간을 갈아타는 운항·스케줄상의 사실이고, Missed Connection은 지연으로 그 연결이 깨졌을 때 따라잡기 비용을 지급하는 보험 보장이다.'
 sources:
   - name: Standard Schedules Information Manual (SSIM)
     org: IATA
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/standard-schedules-information/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="12" r="3"/><circle cx="24" cy="24" r="4"/><circle cx="40" cy="36" r="3"/><line x1="10.5" y1="13.8" x2="21" y2="21.5"/><line x1="27" y1="26.5" x2="37.5" y2="34.2"/><path d="M24 20 a4 4 0 0 1 0 8"/></svg>
 ---
 
@@ -70,6 +76,8 @@ Connections may be "online" (both flights on the same carrier) or "interline"/"c
 # Distinctions
 - **Connection** vs [MCT](/air/air-ops/mct.md) — A connection is the act of changing flights toward a destination; MCT is the minimum time that must elapse at the connecting airport for that connection to be considered valid.
 - **Connection** vs [Segment](/air/air-ops/segment.md) — A segment is a single marketed flight portion of an itinerary; a connection is the relationship between two consecutive segments where the passenger transfers between flights.
+- **Connection** vs [Hub-and-Spoke](/air/air-partner/hub-and-spoke.md) — Hub-and-spoke is the overall network strategy of funneling traffic through hubs; a connection is the individual passenger event of changing flights, which the hub model is designed to generate efficiently.
+- **Connection** vs [Missed Connection](/common/insurance/missed-connection.md) — A Connection is the operational/scheduling fact of changing between segments of a journey; Missed Connection is the insurance benefit that pays catch-up costs when a delay breaks that connection.
 
 # Citations
-[1] IATA — Standard Schedules Information Manual (SSIM)
+[1] [IATA — Standard Schedules Information Manual (SSIM)](https://www.iata.org/en/publications/manuals/standard-schedules-information/)

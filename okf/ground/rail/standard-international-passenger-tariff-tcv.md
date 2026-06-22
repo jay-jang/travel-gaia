@@ -38,17 +38,20 @@ distinctions:
   - targetTerm: Fare Construction
     explanation: Fare construction is the air discipline of building a fare from components/NUC; TCV is rail's pre-built common international tariff used as the basis for cross-border fares.
     explanation_ko: 'fare construction은 구성요소/NUC로 운임을 조립하는 항공 기법이고, TCV는 국경 간 운임의 기준으로 쓰이는 사전 구축된 철도 공통 국제운임이다.'
+  - targetTerm: Special Conditions of International Carriage (SCIC)
+    explanation: 'The TCV is the tariff defining international fares and the prices/conditions of carriage; SCIC are the special carriage conditions governing how a given international ticket type is used, interrupted and refunded. TCV is fare/price-centric; SCIC is carriage-conditions-centric, applied per ticket product.'
+    explanation_ko: 'TCV는 국제 운임과 운송의 가격·조건을 정하는 운임이고, SCIC는 특정 국제 승차권 유형의 사용·중단·환불 방식을 규율하는 특별운송조건이다. TCV는 운임/가격 중심, SCIC는 승차권 상품별로 적용되는 운송조건 중심이다.'
 sources:
   - name: 'Passenger Services Group / international tariffs (TCV, PRIFIS, OSDM)'
     org: UIC
     version: ''
     section: ''
-    url: ''
+    url: 'https://uic.org/passenger/passenger-services-group/'
   - name: Products — tariff information (TCV)
     org: UIC
     version: ''
     section: ''
-    url: ''
+    url: 'https://shop.uic.org/en/7-10-international-tariffs-compilation-application'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="16"/><path d="M8 24h32"/><path d="M24 8a22 22 0 0 1 0 32M24 8a22 22 0 0 0 0 32"/><circle cx="14" cy="15" r="2" fill="currentColor"/><circle cx="34" cy="33" r="2" fill="currentColor"/></svg>
 ---
 
@@ -71,7 +74,8 @@ TCV는 참여 철도사 간 표준화된 지점간 통과운임 집합을 제공
 # Distinctions
 - **Standard International Passenger Tariff (TCV)** vs [Through Fare](/air/air-partner/through-fare.md) — A through fare is the general concept of a single fare across a multi-segment journey; TCV is the specific UIC tariff framework that defines such through fares for international rail.
 - **Standard International Passenger Tariff (TCV)** vs [Fare Construction](/air/air-shop/fare-construction.md) — Fare construction is the air discipline of building a fare from components/NUC; TCV is rail's pre-built common international tariff used as the basis for cross-border fares.
+- **Standard International Passenger Tariff (TCV)** vs [Special Conditions of International Carriage (SCIC)](/ground/rail/special-conditions-of-international-carriage-scic.md) — The TCV is the tariff defining international fares and the prices/conditions of carriage; SCIC are the special carriage conditions governing how a given international ticket type is used, interrupted and refunded. TCV is fare/price-centric; SCIC is carriage-conditions-centric, applied per ticket product.
 
 # Citations
-[1] UIC — Passenger Services Group / international tariffs (TCV, PRIFIS, OSDM)
-[2] UIC — Products — tariff information (TCV)
+[1] [UIC — Passenger Services Group / international tariffs (TCV, PRIFIS, OSDM)](https://uic.org/passenger/passenger-services-group/)
+[2] [UIC — Products — tariff information (TCV)](https://shop.uic.org/en/7-10-international-tariffs-compilation-application)

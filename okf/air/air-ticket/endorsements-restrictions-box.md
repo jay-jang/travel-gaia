@@ -35,7 +35,7 @@ relationships:
     targetTerm: Interline
   - type: related
     targetTerm: Fare Rule
-  - type: related
+  - type: parent
     targetTerm: E-ticket
 distinctions:
   - targetTerm: Fare Rule
@@ -49,12 +49,12 @@ sources:
     name: 'Glossary: Non-endorsable'
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.bcdtravel.com/glossary/non-endorsable/'
   - org: Amadeus
     name: Working with the endorsement (FE) element
     version: ''
     section: ''
-    url: ''
+    url: 'https://servicehub.amadeus.com/c/portal/view-solution/875231/working-with-the-endorsement-fe-element'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="12" width="36" height="24" rx="3"/><path d="M11 19h14M11 24h10"/><path d="M27 31l4 4 9-11"/><path d="M14 35l20-23"/></svg>
 ---
 
@@ -79,12 +79,12 @@ On legacy paper tickets this was a physical box in the upper area of the documen
 - [Reissue](/air/air-ticket/reissue.md) — related
 - [Interline](/air/air-partner/interline.md) — related
 - [Fare Rule](/air/air-shop/fare-rule.md) — related
-- [E-ticket](/air/air-ticket/e-ticket.md) — related
+- [E-ticket](/air/air-ticket/e-ticket.md) — parent
 
 # Distinctions
 - **Endorsements / Restrictions Box** vs [Fare Rule](/air/air-shop/fare-rule.md) — The fare rule is the underlying ATPCO-filed condition (e.g., the fare is non-endorsable); the endorsement box is where the resulting restriction is written onto the actual ticket so that accepting/reissuing carriers see and enforce it.
 - **Endorsements / Restrictions Box** vs [Reissue](/air/air-ticket/reissue.md) — Reissue is the act of issuing a replacement ticket; endorsement/restriction codes (e.g., NON-ENDORSABLE) constrain whether and onto which carrier a coupon may be reissued or accepted.
 
 # Citations
-[1] BCD Travel — Glossary: Non-endorsable
-[2] Amadeus — Working with the endorsement (FE) element
+[1] [BCD Travel — Glossary: Non-endorsable](https://www.bcdtravel.com/glossary/non-endorsable/)
+[2] [Amadeus — Working with the endorsement (FE) element](https://servicehub.amadeus.com/c/portal/view-solution/875231/working-with-the-endorsement-fe-element)

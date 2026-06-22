@@ -40,6 +40,9 @@ distinctions:
   - targetTerm: NDC
     explanation: Direct Connect is a distribution arrangement (who connects to whom); NDC is a messaging standard that a Direct Connect may (but need not) use.
     explanation_ko: '다이렉트 커넥트는 누가 누구와 연결되는지에 관한 유통 방식이고, NDC는 다이렉트 커넥트가 사용할 수도(반드시는 아님) 있는 메시징 표준이다.'
+  - targetTerm: GDS Bypass
+    explanation: Direct Connect is the technical API link; GDS Bypass is the business strategy that utilizes it.
+    explanation_ko: 'Direct Connect는 기술적인 API 연결 방식이고, GDS 우회는 이를 활용한 비즈니스 전략이다.'
 sources:
   - org: IATA
     name: Airline Distribution / NDC overview
@@ -75,6 +78,7 @@ Direct Connects can be implemented over NDC-compliant APIs, proprietary supplier
 - **Direct Connect** vs [GDS](/common/standards/gds.md) — A Direct Connect is a point-to-point link straight to one supplier; a GDS is a shared intermediary aggregating many suppliers for many sellers.
 - **Direct Connect** vs [Aggregator](/common/standards/aggregator.md) — A Direct Connect is the seller's own integration to a single supplier; an aggregator offers one connection that consolidates many suppliers' direct connects on the seller's behalf.
 - **Direct Connect** vs [NDC](/common/standards/ndc.md) — Direct Connect is a distribution arrangement (who connects to whom); NDC is a messaging standard that a Direct Connect may (but need not) use.
+- **Direct Connect** vs [GDS Bypass](/common/standards/gds-bypass.md) — Direct Connect is the technical API link; GDS Bypass is the business strategy that utilizes it.
 
 # Citations
 [1] IATA — Airline Distribution / NDC overview

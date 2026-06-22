@@ -37,6 +37,12 @@ distinctions:
   - targetTerm: Commissionable Rate
     explanation: A commissionable rate is the specific rate type on which a fixed agency commission is paid; distribution cost is the broader total-cost metric aggregating commissions plus all other channel fees and indirect costs.
     explanation_ko: 'Commissionable rate는 고정 대리점 수수료가 지급되는 특정 요금 유형이고, 유통 비용은 수수료에 더해 모든 기타 채널 수수료와 간접 비용까지 합산한 더 넓은 총비용 지표다.'
+  - targetTerm: Billboard Effect
+    explanation: Distribution cost measures what each channel costs to acquire a booking; the billboard effect argues that an OTA's true value (and thus net cost) must also credit the incremental direct bookings its visibility generates.
+    explanation_ko: '유통 비용은 각 채널이 예약을 획득하는 데 드는 비용을 측정하고, 빌보드 효과는 OTA의 진정한 가치(따라서 net 비용)가 그 가시성이 유발하는 추가 다이렉트 부킹까지 반영해야 한다고 본다.'
+  - targetTerm: Cost Per Acquisition (CPA)
+    explanation: Distribution cost is the total acquisition cost across all channels; CPA is one specific metasearch billing model (pay-per-stay/conversion) that contributes to — and is a way of controlling — that cost.
+    explanation_ko: '유통 비용은 전 채널에 걸친 총 획득 비용이고, CPA는 그 비용에 기여하면서 이를 통제하는 한 가지 구체적 메타서치 과금 모델(투숙/전환당 지불)이다.'
 sources:
   - org: Cloudbeds
     name: A Guide to OTA Commission Rates
@@ -71,6 +77,8 @@ Distribution cost reframes channel choice around net contribution rather than he
 
 # Distinctions
 - **Distribution Cost** vs [Commissionable Rate](/lodging/hotel-dist/commissionable-rate.md) — A commissionable rate is the specific rate type on which a fixed agency commission is paid; distribution cost is the broader total-cost metric aggregating commissions plus all other channel fees and indirect costs.
+- **Distribution Cost** vs [Billboard Effect](/lodging/hotel-dist/billboard-effect.md) — Distribution cost measures what each channel costs to acquire a booking; the billboard effect argues that an OTA's true value (and thus net cost) must also credit the incremental direct bookings its visibility generates.
+- **Distribution Cost** vs [Cost Per Acquisition (CPA)](/lodging/hotel-dist/cost-per-acquisition.md) — Distribution cost is the total acquisition cost across all channels; CPA is one specific metasearch billing model (pay-per-stay/conversion) that contributes to — and is a way of controlling — that cost.
 
 # Citations
 [1] [Cloudbeds — A Guide to OTA Commission Rates](https://www.cloudbeds.com/online-travel-agencies/commissions/)

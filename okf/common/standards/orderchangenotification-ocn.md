@@ -46,7 +46,7 @@ sources:
     name: Enhanced and Simplified Distribution Implementation Guide (OrderChangeNotification message)
     version: ''
     section: ''
-    url: ''
+    url: 'https://guides.developer.iata.org/docs/21-1_ImplementationGuide.pdf'
   - org: IATA
     name: NDC Technical FAQ (Disruption Notifications)
     version: ''
@@ -78,5 +78,5 @@ Unlike most NDC messages, which are triggered by a seller request, OCN is sent p
 - **OrderChangeNotification (OCN)** vs [Order](/common/standards/order.md) — The Order is the record being changed; OCN is the asynchronous notification about a change to that Order, not the Order itself.
 
 # Citations
-[1] IATA — Enhanced and Simplified Distribution Implementation Guide (OrderChangeNotification message)
+[1] [IATA — Enhanced and Simplified Distribution Implementation Guide (OrderChangeNotification message)](https://guides.developer.iata.org/docs/21-1_ImplementationGuide.pdf)
 [2] IATA — NDC Technical FAQ (Disruption Notifications)

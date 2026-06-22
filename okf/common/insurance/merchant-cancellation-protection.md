@@ -28,9 +28,9 @@ providerTerms:
 relationships:
   - type: contrasts
     targetTerm: Cancel For Any Reason (CFAR)
-  - type: related
+  - type: contrasts
     targetTerm: Cancellation Fee Waiver
-  - type: related
+  - type: broader
     targetTerm: Merchant of Record
   - type: related
     targetTerm: Ancillary Service
@@ -43,6 +43,9 @@ distinctions:
   - targetTerm: Cancellation Fee Waiver
     explanation: 'Both are non-insurance flexibility products, but a cancellation fee waiver is a supplier waiving the penalty on its own bookings, while merchant cancellation protection is a third-party platform (merchant of record) refunding bookings made through it.'
     explanation_ko: '둘 다 비보험 유연성 상품이지만, Cancellation Fee Waiver는 공급자가 자신의 예약에 대한 위약금을 면제하는 것이고, Merchant Cancellation Protection은 제3자 플랫폼(merchant of record)이 자사를 통한 예약을 환불하는 것이다.'
+  - targetTerm: Comprehensive Travel Insurance
+    explanation: 'A comprehensive plan is a regulated multi-benefit insurance contract; merchant cancellation protection is a single-purpose, non-insurance refund product offered by the booking platform itself.'
+    explanation_ko: '종합 보험은 규제 대상의 다중 보장 보험 계약이고, Merchant Cancellation Protection은 예약 플랫폼 자체가 제공하는 단일 목적의 비보험 환불 상품이다.'
 sources:
   - org: Hopper Technology Solutions (HTS)
     name: Cancel for Any Reason for Hotels
@@ -75,14 +78,15 @@ Travel fintechs popularized this model — for example Hopper's HTS sells a 'Can
 
 # Related
 - [Cancel For Any Reason (CFAR)](/common/insurance/cancel-for-any-reason-cfar.md) — contrasts
-- [Cancellation Fee Waiver](/common/insurance/cancellation-fee-waiver.md) — related
-- [Merchant of Record](/common/pay/merchant-of-record.md) — related
+- [Cancellation Fee Waiver](/common/insurance/cancellation-fee-waiver.md) — contrasts
+- [Merchant of Record](/common/pay/merchant-of-record.md) — broader
 - [Ancillary Service](/air/air-ticket/ancillary-service.md) — related
 - [Refund](/air/air-ticket/refund.md) — related
 
 # Distinctions
 - **Merchant Cancellation Protection** vs [Cancel For Any Reason (CFAR)](/common/insurance/cancel-for-any-reason-cfar.md) — Insurance CFAR transfers the risk to a licensed insurer that pays a claim under a regulated policy; merchant cancellation protection keeps the cost with the booking platform, which self-funds the refund as an ancillary outside insurance regulation.
 - **Merchant Cancellation Protection** vs [Cancellation Fee Waiver](/common/insurance/cancellation-fee-waiver.md) — Both are non-insurance flexibility products, but a cancellation fee waiver is a supplier waiving the penalty on its own bookings, while merchant cancellation protection is a third-party platform (merchant of record) refunding bookings made through it.
+- **Merchant Cancellation Protection** vs [Comprehensive Travel Insurance](/common/insurance/comprehensive-travel-insurance.md) — A comprehensive plan is a regulated multi-benefit insurance contract; merchant cancellation protection is a single-purpose, non-insurance refund product offered by the booking platform itself.
 
 # Citations
 [1] [Hopper Technology Solutions (HTS) — Cancel for Any Reason for Hotels](https://hts.hopper.com/products/cancel-for-any-reason-for-hotels)

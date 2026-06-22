@@ -33,7 +33,7 @@ providerTerms:
 relationships:
   - type: related
     targetTerm: Corporate Rate
-  - type: related
+  - type: narrower
     targetTerm: Rate Access Code (RAC)
   - type: related
     targetTerm: Availability
@@ -58,7 +58,7 @@ sources:
     name: 'Galileo Formats Guide for Cars (car availability qualifiers, CAL)'
     version: ''
     section: ''
-    url: ''
+    url: 'https://support.travelport.com/webhelp/Formats/Content/Car/CarAvail.htm'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="20" cy="20" r="11"/><line x1="28" y1="28" x2="40" y2="40"/><path d="M15 20h10M20 15v10"/></svg>
 ---
 
@@ -81,7 +81,7 @@ GDS의 렌터카 요율은 단일하지 않다. 동일한 차종·지점이라�
 
 # Related
 - [Corporate Rate](/lodging/hotel-rate/corporate-rate.md) — related
-- [Rate Access Code (RAC)](/lodging/hotel-dist/rate-access-code.md) — related
+- [Rate Access Code (RAC)](/lodging/hotel-dist/rate-access-code.md) — narrower
 - [Availability](/air/air-shop/availability.md) — related
 - [ACRISS Code](/ground/car/acriss-code.md) — related
 - [One-Way Drop Fee](/ground/car/one-way-drop-fee.md) — related
@@ -92,4 +92,4 @@ GDS의 렌터카 요율은 단일하지 않다. 동일한 차종·지점이라�
 
 # Citations
 [1] [Budget Car Rental — Travel Agents GDS Reservation Tools — Galileo](https://www.budget.com/en/programs/travel-agent/gds-reservation-tools)
-[2] Travelport — Galileo Formats Guide for Cars (car availability qualifiers, CAL)
+[2] [Travelport — Galileo Formats Guide for Cars (car availability qualifiers, CAL)](https://support.travelport.com/webhelp/Formats/Content/Car/CarAvail.htm)

@@ -22,9 +22,9 @@ aliases:
   - Mileage Program
   - Frequent Traveler Program
 relationships:
-  - type: related
+  - type: narrower
     targetTerm: Frequent Flyer Number
-  - type: related
+  - type: narrower
     targetTerm: Loyalty Tier Status
   - type: related
     targetTerm: Customer Profile
@@ -57,8 +57,8 @@ FFP는 항공업계의 핵심 고객 유지 수단이다. 회원은 비행 거�
 **Aliases:** `FFP`, `Loyalty Program`, `Mileage Program`, `Frequent Traveler Program`
 
 # Related
-- [Frequent Flyer Number](/common/customer/frequent-flyer-number.md) — related
-- [Loyalty Tier Status](/common/customer/loyalty-tier-status.md) — related
+- [Frequent Flyer Number](/common/customer/frequent-flyer-number.md) — narrower
+- [Loyalty Tier Status](/common/customer/loyalty-tier-status.md) — narrower
 - [Customer Profile](/common/customer/customer-profile.md) — related
 - [SSR](/air/air-ops/ssr.md) — related
 

@@ -22,9 +22,9 @@ aliases:
 relationships:
   - type: related
     targetTerm: Room Type
-  - type: related
+  - type: contrasts
     targetTerm: ADR
-  - type: related
+  - type: contrasts
     targetTerm: RevPAR
 distinctions:
   - targetTerm: RevPAR
@@ -33,17 +33,26 @@ distinctions:
   - targetTerm: ADR
     explanation: ADR measures average price per occupied room; occupancy rate measures how full the hotel is — the two are independent inputs to RevPAR.
     explanation_ko: 'ADR은 판매된 객실당 평균 가격을 측정하고, 객실 점유율은 호텔이 얼마나 찼는지를 측정한다. 둘은 RevPAR에 독립적으로 입력되는 요소이다.'
+  - targetTerm: Available Passenger Cruise Days (APCD)
+    explanation: 'APCD is a fixed capacity measure (cabins available x 2 x days), whereas Occupancy is the utilization ratio computed against it (passenger cruise days / APCD). Because APCD assumes double occupancy, occupancy routinely exceeds 100% when cabins carry a third or fourth guest.'
+    explanation_ko: 'APCD는 고정된 공급량 지표(이용 가능 선실 x 2 x 일수)인 반면, Occupancy는 그에 대비한 이용률(passenger cruise days / APCD)이다. APCD가 2인 점유를 가정하므로, 선실에 셋째·넷째 승객이 탑승하면 occupancy가 일상적으로 100%를 초과한다.'
+  - targetTerm: Room Type
+    explanation: 'Room type describes the room''s attributes; occupancy describes how many guests stay in it, which can affect the applicable price.'
+    explanation_ko: '객실 유형은 객실의 속성을 설명하고, 투숙 인원(occupancy)은 몇 명의 투숙객이 머무는지를 설명하며 이는 적용 가격에 영향을 줄 수 있다.'
+  - targetTerm: Single Supplement
+    explanation: 'Hotel ''Occupancy'' is a performance metric (the ratio of sold to available rooms); a cruise single supplement is a per-booking surcharge tied to double-occupancy pricing — the same root word, but one measures sales and the other prices a sale.'
+    explanation_ko: '호텔의 ''Occupancy(점유율)''는 성과 지표(판매 객실 대 가용 객실 비율)이고, 크루즈의 싱글 서플먼트는 2인 기준 가격 책정에 연동된 예약별 할증료이다. 어원은 같지만 하나는 판매를 측정하고 다른 하나는 판매 가격을 매긴다.'
 sources:
   - name: Uniform System of Accounts for the Lodging Industry (USALI)
     org: AHLA / HFTP
     version: ''
     section: ''
-    url: ''
+    url: 'https://usali.hftp.org/'
   - name: STR lodging performance metric definitions
     org: STR (CoStar)
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.costar.com/products/str-benchmark/resources/glossary'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="17" cy="16" r="5"/><path d="M8 36v-2a9 9 0 0 1 18 0v2"/><circle cx="33" cy="18" r="4"/><path d="M28 36v-2a7 7 0 0 1 13-3"/></svg>
 ---
 
@@ -59,13 +68,16 @@ As a pricing/inventory attribute, occupancy specifies how many adults and childr
 
 # Related
 - [Room Type](/lodging/hotel-rate/room-type.md) — related
-- [ADR](/lodging/hotel-rate/adr.md) — related
-- [RevPAR](/lodging/hotel-rate/revpar.md) — related
+- [ADR](/lodging/hotel-rate/adr.md) — contrasts
+- [RevPAR](/lodging/hotel-rate/revpar.md) — contrasts
 
 # Distinctions
 - **Occupancy** vs [RevPAR](/lodging/hotel-rate/revpar.md) — Occupancy rate is one factor (rooms sold vs available); RevPAR is revenue per available room and equals ADR multiplied by occupancy rate.
 - **Occupancy** vs [ADR](/lodging/hotel-rate/adr.md) — ADR measures average price per occupied room; occupancy rate measures how full the hotel is — the two are independent inputs to RevPAR.
+- **Occupancy** vs [Available Passenger Cruise Days (APCD)](/cruise/cruise/available-passenger-cruise-days-apcd.md) — APCD is a fixed capacity measure (cabins available x 2 x days), whereas Occupancy is the utilization ratio computed against it (passenger cruise days / APCD). Because APCD assumes double occupancy, occupancy routinely exceeds 100% when cabins carry a third or fourth guest.
+- **Occupancy** vs [Room Type](/lodging/hotel-rate/room-type.md) — Room type describes the room's attributes; occupancy describes how many guests stay in it, which can affect the applicable price.
+- **Occupancy** vs [Single Supplement](/cruise/cruise/single-supplement.md) — Hotel 'Occupancy' is a performance metric (the ratio of sold to available rooms); a cruise single supplement is a per-booking surcharge tied to double-occupancy pricing — the same root word, but one measures sales and the other prices a sale.
 
 # Citations
-[1] AHLA / HFTP — Uniform System of Accounts for the Lodging Industry (USALI)
-[2] STR (CoStar) — STR lodging performance metric definitions
+[1] [AHLA / HFTP — Uniform System of Accounts for the Lodging Industry (USALI)](https://usali.hftp.org/)
+[2] [STR (CoStar) — STR lodging performance metric definitions](https://www.costar.com/products/str-benchmark/resources/glossary)

@@ -39,12 +39,21 @@ distinctions:
   - targetTerm: Schedule Change
     explanation: Schedule Change is the trigger event in the schedule; involuntary reissue is the ticketing action taken to reaccommodate the passenger.
     explanation_ko: 'Schedule Change는 스케줄상의 유발 사건이며, 비자발적 재발행은 승객을 재배정하기 위해 취하는 발권 조치이다.'
+  - targetTerm: IROPS
+    explanation: IROPS is the disruption scenario; involuntary reissue is one of the ticketing actions used to reaccommodate passengers during IROPS.
+    explanation_ko: 'IROPS는 중단 상황이고, 비자발적 재발권은 IROPS 동안 승객을 재수용하기 위해 사용되는 발권 처리 중 하나다.'
+  - targetTerm: Re-accommodation
+    explanation: Re-accommodation is the end-to-end rebooking process; involuntary reissue is the ticketing transaction that documents the new itinerary at no additional collection.
+    explanation_ko: '재수용은 처음부터 끝까지의 재예약 과정이고, 비자발적 재발권은 추가 징수 없이 새 여정을 문서화하는 발권 거래다.'
+  - targetTerm: Voluntary Changes (ATPCO Category 31)
+    explanation: 'Category 31 covers voluntary changes initiated by the passenger; involuntary reissues caused by airline schedule changes or IROPS are handled under separate policies and waivers, not Cat 31''s voluntary penalty conditions.'
+    explanation_ko: Category 31은 승객이 시작한 자발적 변경을 다룬다. 항공사 스케줄 변경이나 IROPS로 인한 비자발적 재발권은 Cat 31의 자발적 위약 조건이 아니라 별도 정책·면제로 처리된다.
 sources:
   - name: Passenger Services Conference Resolutions Manual (PSCRM)
     org: IATA
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="12" width="24" height="16" rx="3"/><path d="M11 18h8M11 22h5"/><path d="M33 35a8 8 0 01-12-2"/><path d="M21 39v-5h5"/><circle cx="36" cy="16" r="7"/><path d="M36 13v3M36 19v.01"/></svg>
 ---
 
@@ -68,6 +77,9 @@ Involuntary reissue is governed by carrier involuntary rerouting/reaccommodation
 # Distinctions
 - **Involuntary Reissue** vs [Reissue](/air/air-ticket/reissue.md) — A (voluntary) reissue is passenger-initiated with penalties per fare rules; an involuntary reissue is airline-caused and normally penalty-free.
 - **Involuntary Reissue** vs [Schedule Change](/air/air-partner/schedule-change.md) — Schedule Change is the trigger event in the schedule; involuntary reissue is the ticketing action taken to reaccommodate the passenger.
+- **Involuntary Reissue** vs [IROPS](/air/air-partner/irops.md) — IROPS is the disruption scenario; involuntary reissue is one of the ticketing actions used to reaccommodate passengers during IROPS.
+- **Involuntary Reissue** vs [Re-accommodation](/air/air-partner/re-accommodation.md) — Re-accommodation is the end-to-end rebooking process; involuntary reissue is the ticketing transaction that documents the new itinerary at no additional collection.
+- **Involuntary Reissue** vs [Voluntary Changes (ATPCO Category 31)](/air/air-ticket/voluntary-changes-atpco-category-31.md) — Category 31 covers voluntary changes initiated by the passenger; involuntary reissues caused by airline schedule changes or IROPS are handled under separate policies and waivers, not Cat 31's voluntary penalty conditions.
 
 # Citations
-[1] IATA — Passenger Services Conference Resolutions Manual (PSCRM)
+[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)

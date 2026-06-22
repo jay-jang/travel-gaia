@@ -38,17 +38,26 @@ distinctions:
   - targetTerm: Segment
     explanation: A segment is one priced/booked flight portion within a journey; the journey is the full set of segments end to end.
     explanation_ko: '세그먼트는 여정 내에서 가격이 매겨지거나 예약된 하나의 비행 구간이고, 여정은 처음부터 끝까지의 전체 세그먼트 집합이다.'
+  - targetTerm: Itinerary
+    explanation: 'A Journey is the fare/pricing concept describing the overall trip (e.g., one-way, round-trip, open-jaw) used in fare construction; the Itinerary is the concrete ordered list of booked segments. One itinerary realizes a journey but adds specific flights, dates and times.'
+    explanation_ko: 'Journey는 운임 산출에서 쓰는 전체 여행의 운임 개념(편도, 왕복, open-jaw 등)이고, Itinerary는 예약된 segment의 구체적 순서 목록이다. 하나의 itinerary가 journey를 실현하되 구체적 편명·날짜·시간을 더한다.'
+  - targetTerm: Multimodal Transport
+    explanation: 'A Journey (in air pricing) is the routing structure of one trip, typically single-mode; multimodal transport explicitly spans multiple modes and operators, and is the organizing concept for the Rail & Multimodal category.'
+    explanation_ko: '항공 가격 산정의 Journey는 보통 단일 수단인 한 여정의 라우팅 구조이고, multimodal transport는 명시적으로 여러 수단과 운영사를 아우르며 Rail & Multimodal 카테고리의 조직 개념이다.'
+  - targetTerm: Pricing Unit
+    explanation: 'A Journey is the whole travel from start to end; a Pricing Unit is a sub-portion of the journey priced as one entity, and a journey may contain several pricing units.'
+    explanation_ko: 'Journey는 시작부터 끝까지의 전체 여행이고, Pricing Unit은 한 단위로 가격이 책정되는 여정의 하위 부분이며, 한 journey는 여러 pricing unit을 포함할 수 있다.'
 sources:
   - name: IATA NDC / Offer and Order management standards
     org: IATA
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/programs/airline-distribution/retailing/ndc/'
   - name: IATA fare construction principles
     org: IATA
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/ticketing-handbook/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M10 12h9a5 5 0 010 10H16a5 5 0 000 10h12"/><circle cx="10" cy="12" r="3"/><circle cx="38" cy="32" r="3"/><circle cx="24" cy="22" r="2"/></svg>
 ---
 
@@ -72,7 +81,10 @@ A journey encompasses one or more O&Ds: a one-way journey is a single O&D, a rou
 # Distinctions
 - **Journey** vs [Origin & Destination](/air/air-shop/origin-destination.md) — A journey is the whole trip; an O&D is a single directional point-pair, and a journey may contain several O&Ds.
 - **Journey** vs [Segment](/air/air-ops/segment.md) — A segment is one priced/booked flight portion within a journey; the journey is the full set of segments end to end.
+- **Journey** vs [Itinerary](/air/air-ops/itinerary.md) — A Journey is the fare/pricing concept describing the overall trip (e.g., one-way, round-trip, open-jaw) used in fare construction; the Itinerary is the concrete ordered list of booked segments. One itinerary realizes a journey but adds specific flights, dates and times.
+- **Journey** vs [Multimodal Transport](/ground/rail/multimodal-transport.md) — A Journey (in air pricing) is the routing structure of one trip, typically single-mode; multimodal transport explicitly spans multiple modes and operators, and is the organizing concept for the Rail & Multimodal category.
+- **Journey** vs [Pricing Unit](/air/air-shop/pricing-unit.md) — A Journey is the whole travel from start to end; a Pricing Unit is a sub-portion of the journey priced as one entity, and a journey may contain several pricing units.
 
 # Citations
-[1] IATA — IATA NDC / Offer and Order management standards
-[2] IATA — IATA fare construction principles
+[1] [IATA — IATA NDC / Offer and Order management standards](https://www.iata.org/en/programs/airline-distribution/retailing/ndc/)
+[2] [IATA — IATA fare construction principles](https://www.iata.org/en/publications/manuals/ticketing-handbook/)

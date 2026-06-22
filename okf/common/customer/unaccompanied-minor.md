@@ -27,7 +27,7 @@ relationships:
     targetTerm: SSR
   - type: related
     targetTerm: OSI
-  - type: related
+  - type: broader
     targetTerm: Passenger Type Code
   - type: related
     targetTerm: PRM
@@ -65,7 +65,7 @@ Eligible age ranges and whether the service is mandatory or optional vary by air
 # Related
 - [SSR](/air/air-ops/ssr.md) — related
 - [OSI](/air/air-ops/osi.md) — related
-- [Passenger Type Code](/common/customer/passenger-type-code.md) — related
+- [Passenger Type Code](/common/customer/passenger-type-code.md) — broader
 - [PRM](/common/customer/prm.md) — related
 
 # Distinctions

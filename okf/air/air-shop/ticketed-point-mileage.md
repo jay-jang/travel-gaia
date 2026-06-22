@@ -22,7 +22,7 @@ aliases:
   - Ticketed Point Mileage
   - TPM
 relationships:
-  - type: related
+  - type: contrasts
     targetTerm: Maximum Permitted Mileage (MPM)
   - type: related
     targetTerm: Fare Construction
@@ -64,7 +64,7 @@ TPM은 Resolution 011 하의 IATA Mileage Suite에 공시되며, TPM Manual에�
 **Aliases:** `Ticketed Point Mileage`, `TPM`
 
 # Related
-- [Maximum Permitted Mileage (MPM)](/air/air-shop/maximum-permitted-mileage.md) — related
+- [Maximum Permitted Mileage (MPM)](/air/air-shop/maximum-permitted-mileage.md) — contrasts
 - [Fare Construction](/air/air-shop/fare-construction.md) — related
 - [Proration](/air/air-partner/proration.md) — related
 - [Flight Coupon](/air/air-ticket/flight-coupon.md) — related

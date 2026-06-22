@@ -30,9 +30,9 @@ providerTerms:
 relationships:
   - type: parent
     targetTerm: AIRIMP
-  - type: related
+  - type: contrasts
     targetTerm: Action Code
-  - type: related
+  - type: broader
     targetTerm: Booking Status Code
   - type: related
     targetTerm: PNR History
@@ -50,12 +50,12 @@ sources:
     name: Airline Industry Reservations Interline Message Procedures (AIRIMP)
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/airline-industry-reservations-interline-message-procedures-airimp/'
   - org: Travelport
     name: Universal API — Air Status Codes
     version: ''
     section: ''
-    url: ''
+    url: 'https://support.travelport.com/webhelp/uapi/Content/Air/Shared_Air_Topics/PNR_Status_Codes.htm'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="35" cy="24" r="5"/><line x1="30" y1="24" x2="14" y2="24"/><polyline points="20 18 14 24 20 30"/><path d="M10 14v20"/></svg>
 ---
 
@@ -77,8 +77,8 @@ Advice code는 AIRIMP의 action/advice 루프를 닫는다: seller가 action cod
 
 # Related
 - [AIRIMP](/air/air-ops/airimp.md) — parent
-- [Action Code](/air/air-ops/action-code.md) — related
-- [Booking Status Code](/air/air-ops/booking-status-code.md) — related
+- [Action Code](/air/air-ops/action-code.md) — contrasts
+- [Booking Status Code](/air/air-ops/booking-status-code.md) — broader
 - [PNR History](/air/air-ops/pnr-history.md) — related
 - [Waitlist](/air/air-ops/waitlist.md) — related
 
@@ -87,5 +87,5 @@ Advice code는 AIRIMP의 action/advice 루프를 닫는다: seller가 action cod
 - **Advice Code** vs [Booking Status Code](/air/air-ops/booking-status-code.md) — Advice codes are transient reply codes that resolve into a holding Booking Status Code (e.g. KK becomes HK) and then drop to PNR history; the Booking Status Code is the persistent state the segment holds afterward.
 
 # Citations
-[1] IATA — Airline Industry Reservations Interline Message Procedures (AIRIMP)
-[2] Travelport — Universal API — Air Status Codes
+[1] [IATA — Airline Industry Reservations Interline Message Procedures (AIRIMP)](https://www.iata.org/en/publications/manuals/airline-industry-reservations-interline-message-procedures-airimp/)
+[2] [Travelport — Universal API — Air Status Codes](https://support.travelport.com/webhelp/uapi/Content/Air/Shared_Air_Topics/PNR_Status_Codes.htm)

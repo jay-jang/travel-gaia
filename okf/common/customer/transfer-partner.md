@@ -20,7 +20,7 @@ aliases:
   - Points Transfer Partner
   - Airline Transfer Partner
 relationships:
-  - type: related
+  - type: broader
     targetTerm: Frequent Flyer Program
   - type: related
     targetTerm: Mileage Accrual
@@ -37,22 +37,25 @@ distinctions:
   - targetTerm: Status Match
     explanation: 'A Transfer Partner moves redeemable points/miles between programs; a Status Match moves elite tier recognition, not currency.'
     explanation_ko: 'Transfer Partner는 상환 가능한 포인트·마일을 프로그램 간에 이동시키고, Status Match는 통화가 아니라 우수 등급 인정을 이동시킨다.'
+  - targetTerm: Co-branded Credit Card
+    explanation: 'A co-branded credit card is a single card tied to one program where spend earns that program''s currency directly; a transfer partner is a relationship that lets points move between a flexible bank currency and a loyalty program. Many cards are both branded co-brands and feed transferable points, but the two concepts describe different mechanics.'
+    explanation_ko: 'Co-branded credit card는 하나의 프로그램에 연계된 단일 카드로 지출이 그 프로그램의 통화로 직접 적립되고, transfer partner는 유연한 은행 통화와 로열티 프로그램 사이에서 포인트를 이동시키는 관계이다. 많은 카드가 co-brand이면서 동시에 전환 가능 포인트를 제공하지만, 두 개념은 서로 다른 메커니즘을 설명한다.'
 sources:
   - name: 'Credit card transfer partners: Guide to transferring points and miles to airlines and hotels'
     org: The Points Guy
     version: ''
     section: ''
-    url: ''
+    url: 'https://thepointsguy.com/credit-cards/credit-card-transfer-partners/'
   - name: Why all travelers should earn transferable credit card points
     org: The Points Guy
     version: ''
     section: ''
-    url: ''
+    url: 'https://thepointsguy.com/loyalty-programs/a-guide-to-earning-transferable-points/'
   - name: Credit Card Transfer Partners At a Glance
     org: NerdWallet
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.nerdwallet.com/travel/learn/heres-how-you-can-transfer-your-points-from-any-major-credit-card-issuer'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="13" cy="14" r="7"/><circle cx="35" cy="34" r="7"/><path d="M22 14h13l-3-3M22 14h13l-3 3"/><path d="M26 34H13l3-3M26 34H13l3 3"/></svg>
 ---
 
@@ -67,7 +70,7 @@ Transfer partnerships are the core plumbing of coalition loyalty and transferabl
 **Aliases:** `Transfer Partner`, `Points Transfer Partner`, `Airline Transfer Partner`
 
 # Related
-- [Frequent Flyer Program](/common/customer/frequent-flyer-program.md) — related
+- [Frequent Flyer Program](/common/customer/frequent-flyer-program.md) — broader
 - [Mileage Accrual](/common/customer/mileage-accrual.md) — related
 - [Award Redemption](/common/customer/award-redemption.md) — related
 - [Status Match](/common/customer/status-match.md) — related
@@ -76,8 +79,9 @@ Transfer partnerships are the core plumbing of coalition loyalty and transferabl
 # Distinctions
 - **Transfer Partner** vs [Mileage Accrual](/common/customer/mileage-accrual.md) — Mileage Accrual is earning miles from a member's own flying or spend; a transfer from a Transfer Partner adds miles by converting a balance held in a different program's currency.
 - **Transfer Partner** vs [Status Match](/common/customer/status-match.md) — A Transfer Partner moves redeemable points/miles between programs; a Status Match moves elite tier recognition, not currency.
+- **Transfer Partner** vs [Co-branded Credit Card](/common/customer/co-branded-credit-card.md) — A co-branded credit card is a single card tied to one program where spend earns that program's currency directly; a transfer partner is a relationship that lets points move between a flexible bank currency and a loyalty program. Many cards are both branded co-brands and feed transferable points, but the two concepts describe different mechanics.
 
 # Citations
-[1] The Points Guy — Credit card transfer partners: Guide to transferring points and miles to airlines and hotels
-[2] The Points Guy — Why all travelers should earn transferable credit card points
-[3] NerdWallet — Credit Card Transfer Partners At a Glance
+[1] [The Points Guy — Credit card transfer partners: Guide to transferring points and miles to airlines and hotels](https://thepointsguy.com/credit-cards/credit-card-transfer-partners/)
+[2] [The Points Guy — Why all travelers should earn transferable credit card points](https://thepointsguy.com/loyalty-programs/a-guide-to-earning-transferable-points/)
+[3] [NerdWallet — Credit Card Transfer Partners At a Glance](https://www.nerdwallet.com/travel/learn/heres-how-you-can-transfer-your-points-from-any-major-credit-card-issuer)

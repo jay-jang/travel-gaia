@@ -24,7 +24,7 @@ relationships:
     targetTerm: Cabin Category
   - type: related
     targetTerm: Revenue Management
-  - type: related
+  - type: broader
     targetTerm: Surcharge
   - type: related
     targetTerm: Occupancy
@@ -35,17 +35,20 @@ distinctions:
   - targetTerm: Surcharge
     explanation: 'A single supplement is a specific kind of fare surcharge applied because of solo occupancy, distinct from generic fuel, tax, or fee surcharges; it is calculated as a percentage of the per-person cruise fare.'
     explanation_ko: '싱글 서플먼트는 1인 점유 때문에 적용되는 특정 종류의 운임 할증으로, 일반적인 유류·세금·수수료 할증과 구별되며 1인당 크루즈 운임의 일정 비율로 산정된다.'
+  - targetTerm: Tour Conductor Credit (TC)
+    explanation: A Single Supplement is a surcharge a solo guest pays to cover the unsold second berth in a double-occupancy cabin; a TC credit is the inverse incentive — the line gives back the value of one berth per eight cabins to reward group volume rather than charging for an empty one.
+    explanation_ko: 'Single Supplement은 2인 1실 선실에서 팔리지 않은 둘째 침대를 메우기 위해 1인 승객이 내는 할증이고, TC 크레딧은 그 반대 인센티브다. 빈 침대에 요금을 매기는 대신, 선사가 단체 물량을 보상하기 위해 선실 8개당 침대 1개의 가치를 돌려준다.'
 sources:
   - name: A Guide to Single Supplements on Cruise Ships
     org: Cruise Critic
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.cruisecritic.com/articles/what-is-a-single-supplement-on-a-cruise'
   - name: Single supplement
     org: Wikipedia
     version: ''
     section: ''
-    url: ''
+    url: 'https://en.wikipedia.org/wiki/Single_supplement'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="15" r="6"/><path d="M14 38c0-6 4.5-10 10-10s10 4 10 10"/><line x1="36" y1="12" x2="42" y2="12"/><line x1="39" y1="9" x2="39" y2="15"/></svg>
 ---
 
@@ -62,13 +65,14 @@ Because cruise fares are advertised per person assuming two guests share a cabin
 # Related
 - [Cabin Category](/cruise/cruise/cabin-category.md) — related
 - [Revenue Management](/air/air-shop/revenue-management.md) — related
-- [Surcharge](/air/air-shop/surcharge.md) — related
+- [Surcharge](/air/air-shop/surcharge.md) — broader
 - [Occupancy](/lodging/hotel-rate/occupancy.md) — related
 
 # Distinctions
 - **Single Supplement** vs [Occupancy](/lodging/hotel-rate/occupancy.md) — Hotel 'Occupancy' is a performance metric (the ratio of sold to available rooms); a cruise single supplement is a per-booking surcharge tied to double-occupancy pricing — the same root word, but one measures sales and the other prices a sale.
 - **Single Supplement** vs [Surcharge](/air/air-shop/surcharge.md) — A single supplement is a specific kind of fare surcharge applied because of solo occupancy, distinct from generic fuel, tax, or fee surcharges; it is calculated as a percentage of the per-person cruise fare.
+- **Single Supplement** vs [Tour Conductor Credit (TC)](/cruise/cruise/tour-conductor-credit-tc.md) — A Single Supplement is a surcharge a solo guest pays to cover the unsold second berth in a double-occupancy cabin; a TC credit is the inverse incentive — the line gives back the value of one berth per eight cabins to reward group volume rather than charging for an empty one.
 
 # Citations
-[1] Cruise Critic — A Guide to Single Supplements on Cruise Ships
-[2] Wikipedia — Single supplement
+[1] [Cruise Critic — A Guide to Single Supplements on Cruise Ships](https://www.cruisecritic.com/articles/what-is-a-single-supplement-on-a-cruise)
+[2] [Wikipedia — Single supplement](https://en.wikipedia.org/wiki/Single_supplement)

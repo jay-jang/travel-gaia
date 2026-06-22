@@ -23,16 +23,22 @@ aliases:
   - UN Location Code
   - LOCODE
 relationships:
-  - type: related
+  - type: broader
     targetTerm: ISO 3166 Country Code
-  - type: related
+  - type: contrasts
     targetTerm: Airport Code
-  - type: related
+  - type: contrasts
     targetTerm: City Code
 distinctions:
   - targetTerm: Airport Code
     explanation: 'UN/LOCODE is a 5-character trade/transport location code (CC+LLL) covering ports, terminals and airports; an airport code is an aviation-specific IATA/ICAO identifier.'
     explanation_ko: 'UN/LOCODE는 항만, 터미널, 공항을 포괄하는 5자리 무역/운송 위치 코드(CC+LLL)인 반면, 공항 코드는 항공 전용 IATA/ICAO 식별자이다.'
+  - targetTerm: ISO 3166 Country Code
+    explanation: ISO 3166 identifies a whole country (2/3-letter); UN/LOCODE identifies a specific location within a country and embeds the ISO 3166 alpha-2 as its first two characters.
+    explanation_ko: 'ISO 3166은 국가 전체를 식별하는(2/3자리) 코드인 반면, UN/LOCODE는 국가 내의 특정 위치를 식별하며 앞 두 글자에 ISO 3166 alpha-2를 포함한다.'
+  - targetTerm: ISO 3166-2 Subdivision Code
+    explanation: 'UN/LOCODE identifies specific trade/transport locations (ports, terminals, towns) within a country; ISO 3166-2 identifies the administrative subdivision a location sits in, and UN/LOCODE actually uses ISO 3166-2 codes for its subdivision element.'
+    explanation_ko: 'UN/LOCODE는 국가 내 특정 무역·운송 지점(항만, 터미널, 도시)을 식별하는 반면, ISO 3166-2는 그 지점이 속한 행정구역을 식별한다. 실제로 UN/LOCODE는 행정구역 요소에 ISO 3166-2 코드를 사용한다.'
 sources:
   - name: UN/LOCODE Code List by Country and Territory
     org: UNECE
@@ -53,12 +59,14 @@ UN/LOCODE는 UNECE가 관리하며 해항, 도로·철도 터미널, 공항, 우
 **Aliases:** `United Nations Code for Trade and Transport Locations`, `UN Location Code`, `LOCODE`
 
 # Related
-- [ISO 3166 Country Code](/common/codes/iso-3166-country-code.md) — related
-- [Airport Code](/common/codes/airport-code.md) — related
-- [City Code](/common/codes/city-code.md) — related
+- [ISO 3166 Country Code](/common/codes/iso-3166-country-code.md) — broader
+- [Airport Code](/common/codes/airport-code.md) — contrasts
+- [City Code](/common/codes/city-code.md) — contrasts
 
 # Distinctions
 - **UN/LOCODE** vs [Airport Code](/common/codes/airport-code.md) — UN/LOCODE is a 5-character trade/transport location code (CC+LLL) covering ports, terminals and airports; an airport code is an aviation-specific IATA/ICAO identifier.
+- **UN/LOCODE** vs [ISO 3166 Country Code](/common/codes/iso-3166-country-code.md) — ISO 3166 identifies a whole country (2/3-letter); UN/LOCODE identifies a specific location within a country and embeds the ISO 3166 alpha-2 as its first two characters.
+- **UN/LOCODE** vs [ISO 3166-2 Subdivision Code](/common/codes/iso-3166-2-subdivision-code.md) — UN/LOCODE identifies specific trade/transport locations (ports, terminals, towns) within a country; ISO 3166-2 identifies the administrative subdivision a location sits in, and UN/LOCODE actually uses ISO 3166-2 codes for its subdivision element.
 
 # Citations
 [1] [UNECE — UN/LOCODE Code List by Country and Territory](https://unece.org/trade/cefact/unlocode-code-list-country-and-territory)

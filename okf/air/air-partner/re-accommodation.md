@@ -45,17 +45,20 @@ distinctions:
   - targetTerm: Involuntary Reissue
     explanation: Re-accommodation is the end-to-end rebooking process; involuntary reissue is the ticketing transaction that documents the new itinerary at no additional collection.
     explanation_ko: '재수용은 처음부터 끝까지의 재예약 과정이고, 비자발적 재발권은 추가 징수 없이 새 여정을 문서화하는 발권 거래다.'
+  - targetTerm: Right to Re-routing
+    explanation: 'Re-accommodation is the generic, carrier-driven operational act of placing a disrupted passenger on alternative transport; the Right to Re-routing is the specific EU261 Article 8 legal entitlement that makes re-routing a passenger-chosen alternative to reimbursement and obliges comparable transport conditions to the final destination.'
+    explanation_ko: 'Re-accommodation은 disruption을 겪은 승객을 대체 운송에 배정하는 항공사 주도의 일반 운영 행위이고, Right to Re-routing은 재경로를 환불에 대한 승객 선택형 대안으로 만들고 최종 목적지까지 비교 가능한 운송 조건을 의무화하는 EU261 Article 8의 구체적 법적 권리이다.'
 sources:
   - name: Interline Considerations on Irregular Operations (IROPs) — guidance document
     org: IATA
     version: '2020'
     section: ''
-    url: ''
+    url: 'https://www.iata.org/contentassets/e7a533819be440edbb1e49da96e0f2a8/guidance-document-interline-irops_25june2020.pdf'
   - name: 'Passenger Services Conference Resolutions Manual (PSCRM), Resolution 766 (Interline Passenger Reservation Procedures)'
     org: IATA
     version: ''
     section: Resolution 766
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 16 a14 14 0 1 1 -3 12"/><polyline points="14 8 14 16 22 16"/><circle cx="24" cy="24" r="3" fill="currentColor" stroke="none"/><line x1="24" y1="24" x2="33" y2="19"/></svg>
 ---
 
@@ -81,7 +84,8 @@ Re-accommodation (also called reprotection or protection) covers identifying aff
 # Distinctions
 - **Re-accommodation** vs [IROPS](/air/air-partner/irops.md) — IROPS is the disruption scenario (delays, cancellations, diversions); re-accommodation is the specific passenger-rebooking process used to recover travelers during IROPS or after a schedule change.
 - **Re-accommodation** vs [Involuntary Reissue](/air/air-ticket/involuntary-reissue.md) — Re-accommodation is the end-to-end rebooking process; involuntary reissue is the ticketing transaction that documents the new itinerary at no additional collection.
+- **Re-accommodation** vs [Right to Re-routing](/common/disruption/right-to-re-routing.md) — Re-accommodation is the generic, carrier-driven operational act of placing a disrupted passenger on alternative transport; the Right to Re-routing is the specific EU261 Article 8 legal entitlement that makes re-routing a passenger-chosen alternative to reimbursement and obliges comparable transport conditions to the final destination.
 
 # Citations
-[1] IATA — Interline Considerations on Irregular Operations (IROPs) — guidance document — 2020
-[2] IATA — Passenger Services Conference Resolutions Manual (PSCRM), Resolution 766 (Interline Passenger Reservation Procedures) — Resolution 766
+[1] [IATA — Interline Considerations on Irregular Operations (IROPs) — guidance document — 2020](https://www.iata.org/contentassets/e7a533819be440edbb1e49da96e0f2a8/guidance-document-interline-irops_25june2020.pdf)
+[2] [IATA — Passenger Services Conference Resolutions Manual (PSCRM), Resolution 766 (Interline Passenger Reservation Procedures) — Resolution 766](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)

@@ -47,5 +47,29 @@ if (existsSync(join(ROOT, 'data', 'glossary.json'))) {
   else console.log(`OK: all ${orig.size} entries round-trip identically (term/defs/KO/aliases/providerTerms/relationships/distinctions/sources/icon)`);
 }
 
+// ---- content-health (informational; does not fail the build) ----
+console.log(`\n=== content health (WARN, non-fatal) ===`);
+{
+  const norm2 = s => String(s || '').toLowerCase().replace(/\s+/g, ' ').trim();
+  const idByTerm = new Map(); for (const e of entries) { const n = norm2(e.term); if (n && !idByTerm.has(n)) idByTerm.set(n, e.id); (e.aliases || []).forEach(a => { const k = norm2(a); if (k && !idByTerm.has(k)) idByTerm.set(k, e.id); }); if (e.abbreviation) { const k = norm2(e.abbreviation); if (k && !idByTerm.has(k)) idByTerm.set(k, e.id); } }
+  const byId = new Map(entries.map(e => [e.id, e]));
+  let cites = 0, citesUrl = 0, noSrc = 0, withProv = 0, rels = 0, relRelated = 0;
+  const distPairs = new Set();
+  for (const e of entries) {
+    if (!(e.sources || []).length) noSrc++;
+    (e.sources || []).forEach(s => { cites++; if (s.url && String(s.url).trim()) citesUrl++; });
+    if ((e.providerTerms || []).length) withProv++;
+    (e.relationships || []).forEach(r => { rels++; if (r.type === 'related') relRelated++; });
+    (e.distinctions || []).forEach(d => { const t = (d.targetId && byId.has(d.targetId)) ? d.targetId : idByTerm.get(norm2(d.targetTerm)); if (t && t !== e.id) distPairs.add(e.id + '>' + t); });
+  }
+  let oneway = 0; for (const k of distPairs) { const [a, b] = k.split('>'); if (!distPairs.has(b + '>' + a)) oneway++; }
+  const pct = (a, b) => b ? Math.round(100 * a / b) + '%' : '-';
+  console.log(`  citations: ${cites} | with URL: ${citesUrl} (${pct(citesUrl, cites)})${cites - citesUrl ? `  ⚠ ${cites - citesUrl} without URL` : ''}`);
+  console.log(`  entries without any source: ${noSrc}`);
+  console.log(`  entries with providerTerms: ${withProv}/${entries.length} (${pct(withProv, entries.length)})`);
+  console.log(`  relationships: ${rels} | type=related: ${relRelated} (${pct(relRelated, rels)})`);
+  console.log(`  distinction directed links: ${distPairs.size} | one-way (no reverse): ${oneway}${oneway ? '  ⚠' : ' ✓'}`);
+}
+
 console.log(`\n${fail ? 'FAIL (' + fail + ' problem groups)' : 'ALL OKF CHECKS PASSED'}`);
 process.exit(fail ? 1 : 0);

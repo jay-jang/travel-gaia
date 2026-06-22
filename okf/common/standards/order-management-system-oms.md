@@ -23,7 +23,7 @@ aliases:
 relationships:
   - type: related
     targetTerm: Order
-  - type: related
+  - type: contrasts
     targetTerm: Offer Management System
   - type: related
     targetTerm: ONE Order
@@ -43,17 +43,20 @@ distinctions:
   - targetTerm: PNR
     explanation: An OMS centers on the modern single Order record; the PNR is the legacy reservation construct an OMS aims to consolidate and replace.
     explanation_ko: 'OMS는 현대적 단일 주문 기록을 중심에 두고, PNR은 OMS가 통합·대체하려는 레거시 예약 구조이다.'
+  - targetTerm: Passenger Service System (PSS)
+    explanation: The PSS is the legacy PNR/ticket-centric platform; an OMS is the modern order-centric system that progressively replaces PSS functions in offer-and-order retailing.
+    explanation_ko: 'PSS는 PNR/항공권 중심의 레거시 플랫폼이고, OMS는 offer-and-order 리테일링에서 PSS 기능을 점진적으로 대체하는 현대적 주문 중심 시스템이다.'
 sources:
   - org: IATA
     name: Airline Retailing - Order and Offer Management
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/services/consulting/airlines/airline-retailing-order-and-offer-management/'
   - org: IATA
     name: ONE Order
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/programs/airline-distribution/retailing/one-order/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14h28l-3 24a2 2 0 0 1-2 2H15a2 2 0 0 1-2-2z"/><path d="M17 14a7 7 0 0 1 14 0"/><path d="M19 26l3 3 6-6"/></svg>
 ---
 
@@ -69,7 +72,7 @@ IATA의 ONE Order 이니셔티브가 뒷받침하는 OMS는 주문과 그에 대
 
 # Related
 - [Order](/common/standards/order.md) — related
-- [Offer Management System](/common/standards/offer-management-system.md) — related
+- [Offer Management System](/common/standards/offer-management-system.md) — contrasts
 - [ONE Order](/common/standards/one-order.md) — related
 - [NDC](/common/standards/ndc.md) — related
 - [PNR](/air/air-ops/pnr.md) — related
@@ -79,7 +82,8 @@ IATA의 ONE Order 이니셔티브가 뒷받침하는 OMS는 주문과 그에 대
 - **Order Management System (OMS)** vs [Offer Management System](/common/standards/offer-management-system.md) — The Order Management System owns the post-sale Order (creation, servicing, accounting); the Offer Management System owns pre-sale Offer construction and pricing. Both are commonly bundled as one 'Offer & Order' platform.
 - **Order Management System (OMS)** vs [ONE Order](/common/standards/one-order.md) — ONE Order is the IATA standard/initiative defining the single Order record and its messages; an Order Management System is the platform that implements and operates it.
 - **Order Management System (OMS)** vs [PNR](/air/air-ops/pnr.md) — An OMS centers on the modern single Order record; the PNR is the legacy reservation construct an OMS aims to consolidate and replace.
+- **Order Management System (OMS)** vs [Passenger Service System (PSS)](/common/standards/passenger-service-system-pss.md) — The PSS is the legacy PNR/ticket-centric platform; an OMS is the modern order-centric system that progressively replaces PSS functions in offer-and-order retailing.
 
 # Citations
-[1] IATA — Airline Retailing - Order and Offer Management
-[2] IATA — ONE Order
+[1] [IATA — Airline Retailing - Order and Offer Management](https://www.iata.org/en/services/consulting/airlines/airline-retailing-order-and-offer-management/)
+[2] [IATA — ONE Order](https://www.iata.org/en/programs/airline-distribution/retailing/one-order/)

@@ -38,12 +38,12 @@ sources:
     name: ACRISS / SIPP Codes reference
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.acriss.org/car-codes/'
   - org: ''
     name: Travel industry FAQs — SIPP codes in the car rental industry
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.carrentalgateway.com/glossary/sipp-codes-in-car-rental/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="14" width="36" height="20" rx="3"/><path d="M13 20v8M13 20h4a2.5 2.5 0 0 1 0 5h-4M23 20a2.5 2.5 0 0 0 0 5h2a2.5 2.5 0 0 1 0 5h-4"/><path d="M33 20v8M37 20v8"/></svg>
 ---
 
@@ -66,5 +66,5 @@ SIPP 코드는 ACRISS 코드와 동일한 네 자리 구조(등급, 차종, 변�
 - **SIPP Code** vs [ACRISS Code](/ground/car/acriss-code.md) — Same four-letter code, two names: SIPP is the older interline-era label still common in North America, while ACRISS is the current standard whose association formally maintains and expands the value sets.
 
 # Citations
-[1] ACRISS (Association of Car Rental Industry Systems Standards) — ACRISS / SIPP Codes reference
-[2] Travel industry FAQs — SIPP codes in the car rental industry
+[1] [ACRISS (Association of Car Rental Industry Systems Standards) — ACRISS / SIPP Codes reference](https://www.acriss.org/car-codes/)
+[2] [Travel industry FAQs — SIPP codes in the car rental industry](https://www.carrentalgateway.com/glossary/sipp-codes-in-car-rental/)

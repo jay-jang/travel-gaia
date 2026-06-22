@@ -31,7 +31,7 @@ providerTerms:
     context_ko: 협상 요율과 정책 등 기업 계정·여행자 데이터를 저장해 예약 시 사용.
     relationship: related
 relationships:
-  - type: related
+  - type: contrasts
     targetTerm: Customer Profile
   - type: related
     targetTerm: GDS
@@ -70,7 +70,7 @@ GDS(예: Amadeus, Sabre, Travelport)에서 프로필은 흔히 계층 구조로 
 | Sabre | `Sabre Profiles (Travel Journey Record / agency profiles)` | related | Stores corporate account and traveler data including negotiated rates and policy used during booking. |
 
 # Related
-- [Customer Profile](/common/customer/customer-profile.md) — related
+- [Customer Profile](/common/customer/customer-profile.md) — contrasts
 - [GDS](/common/standards/gds.md) — related
 - [Traveler Preference](/common/customer/traveler-preference.md) — related
 - [Fare Basis Code](/air/air-shop/fare-basis-code.md) — related

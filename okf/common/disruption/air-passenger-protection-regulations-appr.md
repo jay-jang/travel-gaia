@@ -23,13 +23,13 @@ aliases:
   - APPR
   - SOR/2019-150
 relationships:
-  - type: related
+  - type: contrasts
     targetTerm: EU Regulation 261/2004
-  - type: related
+  - type: contrasts
     targetTerm: UK Regulation 261
-  - type: related
+  - type: contrasts
     targetTerm: Automatic Refund Rule
-  - type: related
+  - type: contrasts
     targetTerm: Tarmac Delay Rule
   - type: related
     targetTerm: Denied Boarding Compensation
@@ -45,12 +45,12 @@ sources:
     name: 'Flight Delays and Cancellations: A Guide (Air Passenger Protection Regulations)'
     version: ''
     section: ''
-    url: ''
+    url: 'https://otc-cta.gc.ca/eng/publication/flight-delays-and-cancellations-a-guide'
   - org: Government of Canada
     name: Air Passenger Protection Regulations (SOR/2019-150)
     version: '2019'
     section: ''
-    url: ''
+    url: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2019-150/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6c5 4 8 9 8 16 0 9-4 15-8 20-4-5-8-11-8-20 0-7 3-12 8-16z"/><line x1="16" y1="16" x2="32" y2="16"/><path d="M21 27l2.5 2.5L29 24"/></svg>
 ---
 
@@ -65,10 +65,10 @@ Brought into force in two phases in 2019 (15 July: communication, denied boardin
 **Aliases:** `Air Passenger Protection Regulations`, `APPR`, `SOR/2019-150`
 
 # Related
-- [EU Regulation 261/2004](/common/disruption/eu-regulation-261-2004.md) — related
-- [UK Regulation 261](/common/disruption/uk-regulation-261.md) — related
-- [Automatic Refund Rule](/common/disruption/automatic-refund-rule.md) — related
-- [Tarmac Delay Rule](/common/disruption/tarmac-delay-rule.md) — related
+- [EU Regulation 261/2004](/common/disruption/eu-regulation-261-2004.md) — contrasts
+- [UK Regulation 261](/common/disruption/uk-regulation-261.md) — contrasts
+- [Automatic Refund Rule](/common/disruption/automatic-refund-rule.md) — contrasts
+- [Tarmac Delay Rule](/common/disruption/tarmac-delay-rule.md) — contrasts
 - [Denied Boarding Compensation](/common/disruption/denied-boarding-compensation.md) — related
 
 # Distinctions
@@ -76,5 +76,5 @@ Brought into force in two phases in 2019 (15 July: communication, denied boardin
 - **Air Passenger Protection Regulations (APPR)** vs [Tarmac Delay Rule](/common/disruption/tarmac-delay-rule.md) — The US Tarmac Delay Rule is a single DOT standard on extended tarmac delays; APPR is a comprehensive Canadian framework that includes its own tarmac-delay standard alongside delay/cancellation compensation, denied boarding and baggage obligations.
 
 # Citations
-[1] Canadian Transportation Agency — Flight Delays and Cancellations: A Guide (Air Passenger Protection Regulations)
-[2] Government of Canada — Air Passenger Protection Regulations (SOR/2019-150) — 2019
+[1] [Canadian Transportation Agency — Flight Delays and Cancellations: A Guide (Air Passenger Protection Regulations)](https://otc-cta.gc.ca/eng/publication/flight-delays-and-cancellations-a-guide)
+[2] [Government of Canada — Air Passenger Protection Regulations (SOR/2019-150) — 2019](https://laws-lois.justice.gc.ca/eng/regulations/SOR-2019-150/)

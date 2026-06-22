@@ -37,6 +37,12 @@ distinctions:
   - targetTerm: OSI
     explanation: 'PRM assistance requires action via an actionable SSR; OSI carries purely informational, non-actionable remarks.'
     explanation_ko: 'PRM 지원은 조치가 필요한 SSR을 통한 처리가 요구되고, OSI는 순수하게 정보성이며 조치가 필요 없는 비고를 담는다.'
+  - targetTerm: Traveler Preference
+    explanation: 'A traveler preference is advisory and best-effort (e.g., a window seat), whereas a PRM assistance need is a service obligation the carrier must fulfill; they are governed by different rules and priorities.'
+    explanation_ko: 'Traveler preference는 권고적이고 최선노력 대상(예: 창측 좌석)인 반면, PRM 지원 필요는 항공사가 반드시 이행해야 하는 서비스 의무다. 둘은 적용 규칙과 우선순위가 다르다.'
+  - targetTerm: Unaccompanied Minor
+    explanation: 'An Unaccompanied Minor is a child needing supervised escort due to age, signalled by the UMNR SSR, whereas PRM (Passenger with Reduced Mobility) covers assistance needs arising from disability or mobility limitation, signalled by codes such as WCHR; a passenger could in principle require both.'
+    explanation_ko: 'Unaccompanied Minor는 연령 때문에 동반 감독이 필요한 어린이로 UMNR SSR로 표시되는 반면, PRM(거동 불편 승객)은 장애나 이동 제약으로 인한 지원 필요를 WCHR 등의 코드로 표시한다. 한 승객이 원칙적으로 둘 다 필요할 수 있다.'
 sources:
   - name: Passenger Services Conference Resolutions Manual (SSR codes)
     org: IATA
@@ -64,6 +70,8 @@ PRM은 지원이 필요한 여행자를 포괄하는 상위 개념이며, 구체
 # Distinctions
 - **PRM** vs [SSR](/air/air-ops/ssr.md) — PRM is the traveler category/need; SSR codes (e.g. WCHR, BLND) are the standardized messages used to request the corresponding assistance.
 - **PRM** vs [OSI](/air/air-ops/osi.md) — PRM assistance requires action via an actionable SSR; OSI carries purely informational, non-actionable remarks.
+- **PRM** vs [Traveler Preference](/common/customer/traveler-preference.md) — A traveler preference is advisory and best-effort (e.g., a window seat), whereas a PRM assistance need is a service obligation the carrier must fulfill; they are governed by different rules and priorities.
+- **PRM** vs [Unaccompanied Minor](/common/customer/unaccompanied-minor.md) — An Unaccompanied Minor is a child needing supervised escort due to age, signalled by the UMNR SSR, whereas PRM (Passenger with Reduced Mobility) covers assistance needs arising from disability or mobility limitation, signalled by codes such as WCHR; a passenger could in principle require both.
 
 # Citations
 [1] IATA — Passenger Services Conference Resolutions Manual (SSR codes)

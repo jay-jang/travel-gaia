@@ -46,12 +46,12 @@ sources:
     org: UIC
     version: ''
     section: ''
-    url: ''
+    url: 'https://osdm.io/spec/models/'
   - name: 'Telematics Applications for Passenger Service TSI (timetables, tariffs, reservations, fulfillment)'
     org: European Union / ERA
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.era.europa.eu/domains/registers/tap_en'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="10" width="24" height="30" rx="2"/><path d="M16 18h12M16 24h12M16 30h7"/><path d="M28 36l4 4 8-9"/></svg>
 ---
 
@@ -78,5 +78,5 @@ fulfillment은 확정된 예약이 통제 가능한 승차권이 되는 방식�
 - **Fulfillment (Rail)** vs [Flexible Content Barcode (FCB)](/ground/rail/flexible-content-barcode-fcb.md) — FCB is the barcode technology that carries the contract; fulfillment is the broader lifecycle step of producing and controlling the travel document, which may use FCB.
 
 # Citations
-[1] UIC — OSDM Models — Fulfillment (control number, ticketing/validation)
-[2] European Union / ERA — Telematics Applications for Passenger Service TSI (timetables, tariffs, reservations, fulfillment)
+[1] [UIC — OSDM Models — Fulfillment (control number, ticketing/validation)](https://osdm.io/spec/models/)
+[2] [European Union / ERA — Telematics Applications for Passenger Service TSI (timetables, tariffs, reservations, fulfillment)](https://www.era.europa.eu/domains/registers/tap_en)

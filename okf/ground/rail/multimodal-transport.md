@@ -34,6 +34,9 @@ distinctions:
   - targetTerm: Dynamic Packaging
     explanation: 'Dynamic packaging bundles travel products (e.g., flight + hotel) into one purchase; multimodal transport specifically chains transport modes into one journey, which packaging may or may not do.'
     explanation_ko: 'dynamic packaging은 여행 상품(예: 항공+호텔)을 하나의 구매로 묶는 것이고, multimodal transport는 구체적으로 교통수단을 하나의 여정으로 연결하는 것으로 패키징이 반드시 이를 포함하지는 않는다.'
+  - targetTerm: Mobility as a Service
+    explanation: 'Multimodal transport describes a journey physically using more than one mode; MaaS is the digital integration layer that aggregates, plans, books and pays for those modes through one offer — a commercial/technical concept, not just the physical use of several modes.'
+    explanation_ko: 'Multimodal transport(복합운송)는 물리적으로 둘 이상의 수단을 사용하는 여정을 가리키고, MaaS는 그 수단들을 하나의 제공으로 묶어 통합·계획·예약·결제하는 디지털 통합 계층으로, 단순히 여러 수단을 물리적으로 사용하는 것이 아니라 상업·기술적 개념이다.'
 sources:
   - name: Multimodal vs intermodal (Mobility as a Service explainer)
     org: Industry MaaS literature
@@ -44,7 +47,7 @@ sources:
     org: UIC
     version: ''
     section: ''
-    url: ''
+    url: 'https://uic.org/projects-99/osdm'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="10" width="14" height="10" rx="2"/><path d="M8 20l-1 3M18 20l1 3"/><path d="M30 12l8 0 3 6v6h-11z"/><circle cx="33" cy="30" r="3"/><path d="M13 28v8M13 36l-3 3M13 36l3 3M13 28l-4 2M13 28l4 2"/></svg>
 ---
 
@@ -67,7 +70,8 @@ Multimodal transport treats a trip as a chain of segments potentially spanning d
 # Distinctions
 - **Multimodal Transport** vs [Journey](/air/air-shop/journey.md) — A Journey (in air pricing) is the routing structure of one trip, typically single-mode; multimodal transport explicitly spans multiple modes and operators, and is the organizing concept for the Rail & Multimodal category.
 - **Multimodal Transport** vs [Dynamic Packaging](/common/standards/dynamic-packaging.md) — Dynamic packaging bundles travel products (e.g., flight + hotel) into one purchase; multimodal transport specifically chains transport modes into one journey, which packaging may or may not do.
+- **Multimodal Transport** vs [Mobility as a Service](/ground/car/mobility-as-a-service.md) — Multimodal transport describes a journey physically using more than one mode; MaaS is the digital integration layer that aggregates, plans, books and pays for those modes through one offer — a commercial/technical concept, not just the physical use of several modes.
 
 # Citations
 [1] Industry MaaS literature — Multimodal vs intermodal (Mobility as a Service explainer)
-[2] UIC — Open Sales and Distribution Model (trains and other modes)
+[2] [UIC — Open Sales and Distribution Model (trains and other modes)](https://uic.org/projects-99/osdm)

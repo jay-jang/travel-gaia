@@ -22,7 +22,7 @@ aliases:
   - Agency Credit Memo
   - Credit Memo
 relationships:
-  - type: related
+  - type: contrasts
     targetTerm: Agency Debit Memo (ADM)
   - type: related
     targetTerm: BSP
@@ -49,7 +49,7 @@ sources:
     name: Passenger Agency Conference Resolutions Manual
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/passenger-agency-conference-resolutions-manual/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="8" width="28" height="32" rx="3"/><line x1="16" y1="16" x2="32" y2="16"/><line x1="16" y1="22" x2="32" y2="22"/><circle cx="24" cy="31" r="5"/><line x1="24" y1="28" x2="24" y2="34"/><line x1="21" y1="31" x2="27" y2="31"/></svg>
 ---
 
@@ -64,7 +64,7 @@ ADM이 항공사에 지급해야 할 금액에 대해 대리점에 차변을 거
 **Aliases:** `Agency Credit Memo`, `Credit Memo`
 
 # Related
-- [Agency Debit Memo (ADM)](/air/air-ticket/agency-debit-memo-adm.md) — related
+- [Agency Debit Memo (ADM)](/air/air-ticket/agency-debit-memo-adm.md) — contrasts
 - [BSP](/common/pay/bsp.md) — related
 - [ARC](/common/pay/arc.md) — related
 - [Refund](/air/air-ticket/refund.md) — related
@@ -76,4 +76,4 @@ ADM이 항공사에 지급해야 할 금액에 대해 대리점에 차변을 거
 
 # Citations
 [1] [ANA — Agency Debit Memo (ADM) / Agency Credit Memo (ACM) Policy](https://www.ana.co.jp/businesspartners/en/admacm-policy/)
-[2] IATA — Passenger Agency Conference Resolutions Manual
+[2] [IATA — Passenger Agency Conference Resolutions Manual](https://www.iata.org/en/publications/manuals/passenger-agency-conference-resolutions-manual/)

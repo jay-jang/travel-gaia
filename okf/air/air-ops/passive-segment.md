@@ -31,7 +31,7 @@ providerTerms:
     context_ko: Amadeus는 외부에서 확약된 좌석의 발권을 위해 passive segment를 지원한다
     relationship: same
 relationships:
-  - type: related
+  - type: broader
     targetTerm: Segment
   - type: related
     targetTerm: ARNK
@@ -46,12 +46,15 @@ distinctions:
   - targetTerm: Married Segment
     explanation: 'A passive segment holds no live inventory, while married segments are active inventory-controlled connections sold and managed as a unit.'
     explanation_ko: 'passive segment는 실시간 재고를 점유하지 않는 반면, married segment는 하나의 단위로 판매·관리되는, 재고 통제를 받는 능동 연결편이다.'
+  - targetTerm: Open Segment
+    explanation: 'A Passive Segment is a non-active segment created to mirror a booking confirmed elsewhere (e.g., for ticketing), holding no live inventory; an Open Segment is undated and unconfirmed by design rather than a copy of an external confirmation.'
+    explanation_ko: 'Passive Segment는 다른 곳에서 확약된 예약을 (예: 발권 목적으로) 반영하려 만든 비활성 segment로 실제 inventory를 보유하지 않는다. Open Segment는 외부 확약의 사본이 아니라 본래 날짜 없이 미확약 상태로 설계된 구간이다.'
 sources:
   - name: Sabre Format Finder — Passive Segments
     org: Sabre
     version: ''
     section: ''
-    url: ''
+    url: 'https://developer.sabre.com/docs/soap_apis/management/itinerary/Add_Passive_Segment'
   - name: Amadeus Functional Documentation — Passive Segments
     org: Amadeus
     version: ''
@@ -78,7 +81,7 @@ passive segment는 일반적으로 passive 상태 코드로 생성되어, 좌석
 | Amadeus | `Passive Segment` | same | Amadeus supports passive segments for ticketing of externally confirmed space |
 
 # Related
-- [Segment](/air/air-ops/segment.md) — related
+- [Segment](/air/air-ops/segment.md) — broader
 - [ARNK](/air/air-ops/arnk.md) — related
 - [PNR](/air/air-ops/pnr.md) — related
 - [Ticketing Time Limit](/air/air-ticket/ticketing-time-limit.md) — related
@@ -86,7 +89,8 @@ passive segment는 일반적으로 passive 상태 코드로 생성되어, 좌석
 # Distinctions
 - **Passive Segment** vs [ARNK](/air/air-ops/arnk.md) — A passive segment is an informational air segment that does not access inventory, whereas ARNK is a non-air placeholder marking a surface (non-flown) gap in the itinerary.
 - **Passive Segment** vs [Married Segment](/air/air-ops/married-segment.md) — A passive segment holds no live inventory, while married segments are active inventory-controlled connections sold and managed as a unit.
+- **Passive Segment** vs [Open Segment](/air/air-ops/open-segment.md) — A Passive Segment is a non-active segment created to mirror a booking confirmed elsewhere (e.g., for ticketing), holding no live inventory; an Open Segment is undated and unconfirmed by design rather than a copy of an external confirmation.
 
 # Citations
-[1] Sabre — Sabre Format Finder — Passive Segments
+[1] [Sabre — Sabre Format Finder — Passive Segments](https://developer.sabre.com/docs/soap_apis/management/itinerary/Add_Passive_Segment)
 [2] Amadeus — Amadeus Functional Documentation — Passive Segments

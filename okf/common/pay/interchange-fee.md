@@ -23,12 +23,18 @@ relationships:
     targetTerm: Acquirer
   - type: related
     targetTerm: VCC
-  - type: related
+  - type: contrasts
     targetTerm: Chargeback
 distinctions:
   - targetTerm: Chargeback
     explanation: 'Interchange is a per-transaction cost paid to the issuer for processing a card payment, whereas a chargeback is a reversal of a transaction initiated by the cardholder or issuer; they are unrelated mechanisms though both flow through the acquirer.'
     explanation_ko: '인터체인지는 카드 결제 처리 대가로 발급사에 지급하는 거래당 비용인 반면, Chargeback은 카드 소지자나 발급사가 개시하는 거래 취소(반환)다. 둘 다 매입사를 거치지만 서로 다른 별개의 메커니즘이다.'
+  - targetTerm: Card Scheme
+    explanation: The interchange fee is the per-transaction fee the acquirer pays the issuer; the card scheme is the body that sets those interchange rates rather than being the fee itself.
+    explanation_ko: '인터체인지 수수료는 매입사가 발급사에 지급하는 거래별 수수료이고, 카드 스킴은 그 수수료 자체가 아니라 인터체인지 요율을 책정하는 주체다.'
+  - targetTerm: UATP
+    explanation: 'Commercial card sales incur interchange paid to issuers; UATP, being industry-owned, largely avoids that cost structure, which is its core value proposition.'
+    explanation_ko: '상용 카드 판매는 발급사에 지급하는 인터체인지가 발생하지만, 업계 소유인 UATP는 그러한 비용 구조를 대부분 피하며 이것이 핵심 가치 제안이다.'
 sources:
   - org: Mastercard
     name: Merchant Interchange Rates
@@ -51,10 +57,12 @@ Interchange fees are established by the card networks (Visa, Mastercard, and oth
 # Related
 - [Acquirer](/common/pay/acquirer.md) — related
 - [VCC](/common/pay/vcc.md) — related
-- [Chargeback](/common/pay/chargeback.md) — related
+- [Chargeback](/common/pay/chargeback.md) — contrasts
 
 # Distinctions
 - **Interchange Fee** vs [Chargeback](/common/pay/chargeback.md) — Interchange is a per-transaction cost paid to the issuer for processing a card payment, whereas a chargeback is a reversal of a transaction initiated by the cardholder or issuer; they are unrelated mechanisms though both flow through the acquirer.
+- **Interchange Fee** vs [Card Scheme](/common/pay/card-scheme.md) — The interchange fee is the per-transaction fee the acquirer pays the issuer; the card scheme is the body that sets those interchange rates rather than being the fee itself.
+- **Interchange Fee** vs [UATP](/common/pay/uatp.md) — Commercial card sales incur interchange paid to issuers; UATP, being industry-owned, largely avoids that cost structure, which is its core value proposition.
 
 # Citations
 [1] [Mastercard — Merchant Interchange Rates](https://www.mastercard.com/us/en/business/support/merchant-interchange-rates.html)

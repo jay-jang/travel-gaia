@@ -24,11 +24,11 @@ aliases:
   - Retained EU261
   - UK APR
 relationships:
-  - type: related
+  - type: replaces
     targetTerm: EU Regulation 261/2004
-  - type: related
+  - type: narrower
     targetTerm: Extraordinary Circumstances
-  - type: related
+  - type: narrower
     targetTerm: Right to Care
   - type: related
     targetTerm: Denied Boarding Compensation
@@ -36,17 +36,20 @@ distinctions:
   - targetTerm: EU Regulation 261/2004
     explanation: 'Same origin and structure, but UK261 is a separate legal instrument enforced by the UK CAA and paid in GBP; post-2021 CJEU rulings are not automatically binding on UK261.'
     explanation_ko: '기원과 구조는 같으나 UK261은 영국 CAA가 집행하고 GBP로 지급되는 별개의 법령이며, 2021년 이후 CJEU 판결은 UK261에 자동으로 구속력을 갖지 않는다.'
+  - targetTerm: National Enforcement Body (NEB)
+    explanation: 'After Brexit the UK retained an equivalent regime with the Civil Aviation Authority acting as its enforcement body; an EU NEB enforces EU261, while the CAA enforces the UK-retained version for UK-departing and UK-bound flights.'
+    explanation_ko: '브렉시트 이후 영국은 영국 민간항공청(CAA)을 집행기관으로 하는 동등 규제를 유지했다. EU NEB는 EU261을 집행하고, CAA는 영국발·영국행 항공편에 대해 영국이 유지한 버전을 집행한다.'
 sources:
   - name: UK air passenger rights after Brexit
     org: UK Civil Aviation Authority
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.caa.co.uk/air-passengers/travel-problems-and-rights/travel-complaints/consumer-protection-law/'
   - name: Regulation (EC) No 261/2004 (as retained in UK law)
     org: UK Government (legislation.gov.uk)
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.legislation.gov.uk/eur/2004/261/contents'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="15"/><path d="M9 24h30M24 9v30"/><path d="M13 13l22 22M35 13L13 35"/><circle cx="24" cy="24" r="6" fill="none"/><circle cx="24" cy="24" r="2" fill="currentColor" stroke="none"/></svg>
 ---
 
@@ -61,14 +64,15 @@ When the UK left the EU, EU261 was incorporated into UK law via EU Exit regulati
 **Aliases:** `UK261`, `The Air Passenger Rights and Air Travel Organisers' Licensing (Amendment) (EU Exit) Regulations 2019`, `Retained EU261`, `UK APR`
 
 # Related
-- [EU Regulation 261/2004](/common/disruption/eu-regulation-261-2004.md) — related
-- [Extraordinary Circumstances](/common/disruption/extraordinary-circumstances.md) — related
-- [Right to Care](/common/disruption/right-to-care.md) — related
+- [EU Regulation 261/2004](/common/disruption/eu-regulation-261-2004.md) — replaces
+- [Extraordinary Circumstances](/common/disruption/extraordinary-circumstances.md) — narrower
+- [Right to Care](/common/disruption/right-to-care.md) — narrower
 - [Denied Boarding Compensation](/common/disruption/denied-boarding-compensation.md) — related
 
 # Distinctions
 - **UK Regulation 261** vs [EU Regulation 261/2004](/common/disruption/eu-regulation-261-2004.md) — Same origin and structure, but UK261 is a separate legal instrument enforced by the UK CAA and paid in GBP; post-2021 CJEU rulings are not automatically binding on UK261.
+- **UK Regulation 261** vs [National Enforcement Body (NEB)](/common/disruption/national-enforcement-body-neb.md) — After Brexit the UK retained an equivalent regime with the Civil Aviation Authority acting as its enforcement body; an EU NEB enforces EU261, while the CAA enforces the UK-retained version for UK-departing and UK-bound flights.
 
 # Citations
-[1] UK Civil Aviation Authority — UK air passenger rights after Brexit
-[2] UK Government (legislation.gov.uk) — Regulation (EC) No 261/2004 (as retained in UK law)
+[1] [UK Civil Aviation Authority — UK air passenger rights after Brexit](https://www.caa.co.uk/air-passengers/travel-problems-and-rights/travel-complaints/consumer-protection-law/)
+[2] [UK Government (legislation.gov.uk) — Regulation (EC) No 261/2004 (as retained in UK law)](https://www.legislation.gov.uk/eur/2004/261/contents)

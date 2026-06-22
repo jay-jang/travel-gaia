@@ -45,12 +45,15 @@ distinctions:
   - targetTerm: SSR
     explanation: 'SSR is the general mechanism for special service requests in a PNR; a meal code is a specific 4-letter value (e.g., VGML) carried within a meal SSR.'
     explanation_ko: 'SSR은 PNR 내 특별 서비스 요청을 위한 일반적 수단이고, 기내식 코드는 식사 SSR에 담기는 구체적 4자리 값(예: VGML)이다.'
+  - targetTerm: Open Seating Dining
+    explanation: 'An airline/GDS Meal Code identifies the type of meal served on a flight; open seating dining is a cruise dining-arrangement attribute about when and how guests dine, not a coded meal-content selection.'
+    explanation_ko: '항공/GDS의 Meal Code는 항공편에서 제공되는 기내식 유형을 식별하고, 오픈 시팅 다이닝은 선객이 언제·어떻게 식사하는지에 관한 크루즈 다이닝 배정 속성으로 코드화된 식사 내용 선택이 아니다.'
 sources:
   - org: IATA
     name: Passenger Services Conference Resolutions Manual (PSCRM) — special meal codes
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
   - org: Travelport
     name: SSR Codes for Meals and Special Services
     version: ''
@@ -84,7 +87,8 @@ IATA는 항공사·GDS·케이터링 업체 간에 언어와 무관하게 요청
 
 # Distinctions
 - **Meal Code** vs [SSR](/air/air-ops/ssr.md) — SSR is the general mechanism for special service requests in a PNR; a meal code is a specific 4-letter value (e.g., VGML) carried within a meal SSR.
+- **Meal Code** vs [Open Seating Dining](/cruise/cruise/open-seating-dining.md) — An airline/GDS Meal Code identifies the type of meal served on a flight; open seating dining is a cruise dining-arrangement attribute about when and how guests dine, not a coded meal-content selection.
 
 # Citations
-[1] IATA — Passenger Services Conference Resolutions Manual (PSCRM) — special meal codes
+[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM) — special meal codes](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
 [2] [Travelport — SSR Codes for Meals and Special Services](https://support.travelport.com/webhelp/GWS/Content/XML_Select_Web_Service/Codes/ssr_codes.htm)

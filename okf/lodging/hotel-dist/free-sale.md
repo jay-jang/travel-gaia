@@ -40,12 +40,21 @@ distinctions:
   - targetTerm: Overbooking
     explanation: Free sale is a selling mechanism that can lead to overbooking if stop-sell is delayed; overbooking is the resulting state of having sold more rooms than available.
     explanation_ko: '프리세일은 판매 중지가 지연되면 오버부킹으로 이어질 수 있는 판매 메커니즘이고, 오버부킹은 가용 객실보다 많은 객실을 판매한 결과 상태다.'
+  - targetTerm: Availability Status (AVS)
+    explanation: Free sale lets a partner sell a flight/class up to an agreed level without checking the controlling carrier each time; AVS is the status-message stream that tells that partner when a class has closed and free sale must stop. They are complementary parts of the same status-driven distribution model.
+    explanation_ko: 'Free sale은 파트너가 매번 통제 운송사를 확인하지 않고 합의된 수준까지 항공편/클래스를 판매하도록 허용하고, AVS는 그 파트너에게 클래스가 닫혀 free sale을 중단해야 할 때를 알려주는 상태 메시지 스트림이다. 둘은 동일한 상태 기반 배포 모델의 상호 보완적 부분이다.'
+  - targetTerm: Stop Sell
+    explanation: 'Free Sale lets a channel keep selling a product without confirming real-time inventory; Stop Sell is the opposite action, forcibly closing sales for the dates and products it covers regardless of inventory.'
+    explanation_ko: 'Free Sale는 실시간 재고 확인 없이 채널이 상품을 계속 판매하도록 허용하지만, Stop Sell은 그 반대로 해당 날짜·상품의 판매를 재고와 무관하게 강제로 마감한다.'
+  - targetTerm: Two-Way XML
+    explanation: 'Free sale lets a channel sell rooms without checking live availability per request (sell-and-report), whereas two-way XML emphasizes real-time bidirectional confirmation of availability and bookings.'
+    explanation_ko: 'Free sale는 채널이 요청마다 실시간 가용성을 확인하지 않고 객실을 판매하게 하는 방식(sell-and-report)인 반면, 양방향 XML은 가용성과 예약의 실시간 양방향 확인을 강조한다.'
 sources:
   - name: OpenTravel Specification
     org: OpenTravel Alliance
     version: ''
     section: ''
-    url: ''
+    url: 'https://opentravel.org/download-specs/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M5 30v-6a3 3 0 013-3h26a6 6 0 016 6v9"/><path d="M5 30h36M5 30v6M41 36v3M5 36v3"/><path d="M11 21v-4a2 2 0 012-2h6a2 2 0 012 2v4M23 21v-4a2 2 0 012-2h6a2 2 0 012 2v4"/><path d="M33 9l3 3-3 3M36 12h-9"/></svg>
 ---
 
@@ -69,6 +78,9 @@ Free sale (or 'sell free') lets a channel sell rooms on the assumption that avai
 # Distinctions
 - **Free Sale** vs [Allotment](/lodging/hotel-rate/allotment.md) — Free sale lets a channel confirm bookings without checking a finite block (subject to stop-sell); an allotment is a fixed pre-allocated number of rooms a channel may sell.
 - **Free Sale** vs [Overbooking](/air/air-shop/overbooking.md) — Free sale is a selling mechanism that can lead to overbooking if stop-sell is delayed; overbooking is the resulting state of having sold more rooms than available.
+- **Free Sale** vs [Availability Status (AVS)](/air/air-shop/availability-status.md) — Free sale lets a partner sell a flight/class up to an agreed level without checking the controlling carrier each time; AVS is the status-message stream that tells that partner when a class has closed and free sale must stop. They are complementary parts of the same status-driven distribution model.
+- **Free Sale** vs [Stop Sell](/lodging/hotel-rate/stop-sell.md) — Free Sale lets a channel keep selling a product without confirming real-time inventory; Stop Sell is the opposite action, forcibly closing sales for the dates and products it covers regardless of inventory.
+- **Free Sale** vs [Two-Way XML](/lodging/hotel-dist/two-way-xml.md) — Free sale lets a channel sell rooms without checking live availability per request (sell-and-report), whereas two-way XML emphasizes real-time bidirectional confirmation of availability and bookings.
 
 # Citations
-[1] OpenTravel Alliance — OpenTravel Specification
+[1] [OpenTravel Alliance — OpenTravel Specification](https://opentravel.org/download-specs/)

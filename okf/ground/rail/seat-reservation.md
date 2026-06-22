@@ -23,7 +23,7 @@ aliases:
 relationships:
   - type: parent
     targetTerm: OSDM
-  - type: related
+  - type: contrasts
     targetTerm: Admission
   - type: related
     targetTerm: Integrated Reservation Ticket (IRT)
@@ -38,12 +38,15 @@ distinctions:
   - targetTerm: Seat Map
     explanation: A seat map is the visual layout used to select a place; a seat reservation is the resulting bound entitlement to that place on a given train.
     explanation_ko: 'seat map은 좌석을 고르는 시각적 배치도이고, seat reservation은 그 결과로 특정 열차의 좌석에 묶인 권리다.'
+  - targetTerm: Interrail Pass
+    explanation: The pass grants the right to travel (admission); seat reservations for compulsory-reservation trains are a separate purchase on top of the pass.
+    explanation_ko: '패스는 여행할 권리(admission)를 부여하고, 예약 의무 열차의 좌석 예약은 패스에 더해 별도로 구매한다.'
 sources:
   - name: OSDM Models — Reservations (seat/accommodation bound to specific trains)
     org: UIC
     version: ''
     section: ''
-    url: ''
+    url: 'https://osdm.io/spec/models/'
   - name: What's the difference between tickets and seat reservations?
     org: Rail operator guidance
     version: ''
@@ -64,7 +67,7 @@ Reservation requirements vary by service: high-speed and yield-managed trains of
 
 # Related
 - [OSDM](/ground/rail/osdm.md) — parent
-- [Admission](/ground/rail/admission.md) — related
+- [Admission](/ground/rail/admission.md) — contrasts
 - [Integrated Reservation Ticket (IRT)](/ground/rail/integrated-reservation-ticket-irt.md) — related
 - [Non-integrated Reservation Ticket (NRT)](/ground/rail/non-integrated-reservation-ticket-nrt.md) — related
 - [Seat Map](/air/air-ops/seat-map.md) — contrasts
@@ -72,7 +75,8 @@ Reservation requirements vary by service: high-speed and yield-managed trains of
 # Distinctions
 - **Seat Reservation** vs [Admission](/ground/rail/admission.md) — The seat reservation reserves a specific place on a specific train; the admission is the underlying right to travel. A reservation alone does not grant carriage without an admission.
 - **Seat Reservation** vs [Seat Map](/air/air-ops/seat-map.md) — A seat map is the visual layout used to select a place; a seat reservation is the resulting bound entitlement to that place on a given train.
+- **Seat Reservation** vs [Interrail Pass](/ground/rail/interrail-pass.md) — The pass grants the right to travel (admission); seat reservations for compulsory-reservation trains are a separate purchase on top of the pass.
 
 # Citations
-[1] UIC — OSDM Models — Reservations (seat/accommodation bound to specific trains)
+[1] [UIC — OSDM Models — Reservations (seat/accommodation bound to specific trains)](https://osdm.io/spec/models/)
 [2] Rail operator guidance — What's the difference between tickets and seat reservations?

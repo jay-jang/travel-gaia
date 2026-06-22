@@ -26,7 +26,7 @@ relationships:
     targetTerm: Time and Mileage
   - type: related
     targetTerm: Young Driver Surcharge
-  - type: related
+  - type: parent
     targetTerm: Rental Agreement
 distinctions:
   - targetTerm: Time and Mileage
@@ -64,7 +64,7 @@ Drop fees vary widely by the pickup/drop-off pair, distance, demand direction, a
 # Related
 - [Time and Mileage](/ground/car/time-and-mileage.md) — related
 - [Young Driver Surcharge](/ground/car/young-driver-surcharge.md) — related
-- [Rental Agreement](/ground/car/rental-agreement.md) — related
+- [Rental Agreement](/ground/car/rental-agreement.md) — parent
 
 # Distinctions
 - **One-Way Drop Fee** vs [Time and Mileage](/ground/car/time-and-mileage.md) — A one-way drop fee charges for returning the car to a different location (repositioning cost); time and mileage charges for rental duration and distance. A one-way rental can incur both.

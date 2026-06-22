@@ -40,6 +40,9 @@ distinctions:
   - targetTerm: SSR
     explanation: The Frequent Flyer Number is the data value; the FQTV SSR is the message element that carries it into a PNR.
     explanation_ko: 'FFN은 데이터 값이고, FQTV SSR은 그 값을 PNR에 전달하는 메시지 요소이다.'
+  - targetTerm: Loyalty Tier Status
+    explanation: The number identifies the account; the tier status is the benefit level attached to that account.
+    explanation_ko: '번호는 계정을 식별하고, 등급 상태는 그 계정에 부여된 혜택 수준이다.'
 sources:
   - name: 'Airline Industry Reservations Interline Message Procedures — Passenger (AIRIMP), FQTV SSR'
     org: IATA
@@ -68,6 +71,7 @@ FFN은 특정 프로그램 내의 특정 회원 계정을 식별하며, 동일�
 # Distinctions
 - **Frequent Flyer Number** vs [Frequent Flyer Program](/common/customer/frequent-flyer-program.md) — The number is the member's account ID; the program is the scheme that issues and governs that account.
 - **Frequent Flyer Number** vs [SSR](/air/air-ops/ssr.md) — The Frequent Flyer Number is the data value; the FQTV SSR is the message element that carries it into a PNR.
+- **Frequent Flyer Number** vs [Loyalty Tier Status](/common/customer/loyalty-tier-status.md) — The number identifies the account; the tier status is the benefit level attached to that account.
 
 # Citations
 [1] IATA — Airline Industry Reservations Interline Message Procedures — Passenger (AIRIMP), FQTV SSR

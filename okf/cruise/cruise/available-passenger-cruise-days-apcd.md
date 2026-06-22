@@ -32,11 +32,11 @@ providerTerms:
     context_ko: Carnival은 동일 공급량 개념을 ALBD라는 명칭으로 보고한다 — 이용 가능한 하부 침대 수에 크루즈 일수를 곱한 값.
     relationship: same
 relationships:
-  - type: related
+  - type: narrower
     targetTerm: Net Yield
-  - type: related
+  - type: contrasts
     targetTerm: RevPAR
-  - type: related
+  - type: contrasts
     targetTerm: ADR
   - type: related
     targetTerm: Revenue Management
@@ -56,7 +56,7 @@ sources:
     name: 'Earnings Release / SEC Filing — Terminology: Available Passenger Cruise Days (APCD)'
     version: ''
     section: Terminology / Selected Operating Data footnotes
-    url: ''
+    url: 'https://www.prnewswire.com/news-releases/royal-caribbean-group-reports-2025-results-issues-2026-guidance-302673898.html'
   - org: Cruise Lines International Association (CLIA)
     name: Cruise Industry Terminology — capacity (double occupancy per cabin x cruise days)
     version: ''
@@ -83,9 +83,9 @@ Cruise lines report APCD as their fundamental capacity figure in SEC filings and
 | Carnival Corporation | `Available Lower Berth Days (ALBD)` | same | Carnival reports the same capacity concept under the label ALBD — lower berths available multiplied by the number of cruise days. |
 
 # Related
-- [Net Yield](/cruise/cruise/net-yield.md) — related
-- [RevPAR](/lodging/hotel-rate/revpar.md) — related
-- [ADR](/lodging/hotel-rate/adr.md) — related
+- [Net Yield](/cruise/cruise/net-yield.md) — narrower
+- [RevPAR](/lodging/hotel-rate/revpar.md) — contrasts
+- [ADR](/lodging/hotel-rate/adr.md) — contrasts
 - [Revenue Management](/air/air-shop/revenue-management.md) — related
 - [Occupancy](/lodging/hotel-rate/occupancy.md) — related
 - [Cabin Category](/cruise/cruise/cabin-category.md) — related
@@ -95,5 +95,5 @@ Cruise lines report APCD as their fundamental capacity figure in SEC filings and
 - **Available Passenger Cruise Days (APCD)** vs [RevPAR](/lodging/hotel-rate/revpar.md) — RevPAR normalizes hotel revenue per available room; APCD normalizes cruise capacity per available lower-berth-day (two berths per cabin). The cruise yield equivalent of RevPAR is Net Yield, which is net revenue per APCD rather than per room.
 
 # Citations
-[1] Royal Caribbean Cruises Ltd. — Earnings Release / SEC Filing — Terminology: Available Passenger Cruise Days (APCD) — Terminology / Selected Operating Data footnotes
+[1] [Royal Caribbean Cruises Ltd. — Earnings Release / SEC Filing — Terminology: Available Passenger Cruise Days (APCD) — Terminology / Selected Operating Data footnotes](https://www.prnewswire.com/news-releases/royal-caribbean-group-reports-2025-results-issues-2026-guidance-302673898.html)
 [2] [Cruise Lines International Association (CLIA) — Cruise Industry Terminology — capacity (double occupancy per cabin x cruise days) — Terminology](https://cruising.org/about-cruise-industry/terminology)

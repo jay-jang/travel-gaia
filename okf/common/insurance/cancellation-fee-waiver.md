@@ -26,7 +26,7 @@ relationships:
     targetTerm: Trip Cancellation
   - type: related
     targetTerm: Limited Lines Travel Insurance Producer
-  - type: related
+  - type: contrasts
     targetTerm: Merchant Cancellation Protection
   - type: related
     targetTerm: Cancellation Policy
@@ -64,7 +64,7 @@ The Model Act treats cancellation fee waivers (along with travel assistance serv
 # Related
 - [Trip Cancellation](/common/insurance/trip-cancellation.md) — contrasts
 - [Limited Lines Travel Insurance Producer](/common/insurance/limited-lines-travel-insurance-producer.md) — related
-- [Merchant Cancellation Protection](/common/insurance/merchant-cancellation-protection.md) — related
+- [Merchant Cancellation Protection](/common/insurance/merchant-cancellation-protection.md) — contrasts
 - [Cancellation Policy](/lodging/hotel-dist/cancellation-policy.md) — related
 
 # Distinctions

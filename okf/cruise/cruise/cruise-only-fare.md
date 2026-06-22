@@ -41,12 +41,12 @@ sources:
     org: Celebrity Cruises
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.celebritycruises.com/cruise-fare-options/cruise-only-rates'
   - name: What Does Cruise-Only Mean?
     org: Sail Away Magazine
     version: ''
     section: ''
-    url: ''
+    url: 'https://sailawaymagazine.com/what-does-cruise-only-mean/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M8 30h32l-4 8H12z"/><path d="M14 30V18h14l6 6h6"/><line x1="20" y1="18" x2="20" y2="12"/><line x1="24" y1="24" x2="24" y2="30"/></svg>
 ---
 
@@ -72,5 +72,5 @@ A cruise-only fare prices the core inclusions a cruise has historically bundled 
 - **Cruise-Only Fare** vs [Dynamic Packaging](/common/standards/dynamic-packaging.md) — A cruise-only fare is the unbundled core; dynamic packaging combines that fare with flights, transfers, and excursions into a single dynamically priced product.
 
 # Citations
-[1] Celebrity Cruises — Cruise-Only Rates
-[2] Sail Away Magazine — What Does Cruise-Only Mean?
+[1] [Celebrity Cruises — Cruise-Only Rates](https://www.celebritycruises.com/cruise-fare-options/cruise-only-rates)
+[2] [Sail Away Magazine — What Does Cruise-Only Mean?](https://sailawaymagazine.com/what-does-cruise-only-mean/)

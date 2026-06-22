@@ -21,7 +21,7 @@ aliases:
 relationships:
   - type: related
     targetTerm: BAR
-  - type: related
+  - type: broader
     targetTerm: Revenue Management
   - type: related
     targetTerm: Rate Shopping
@@ -44,17 +44,17 @@ sources:
     name: 'Hotel dynamic pricing: Complete guide with examples'
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.siteminder.com/r/hotel-dynamic-pricing/'
   - org: Cvent / Hospitality Net
     name: 'Hotel Dynamic Pricing: The Complete Guide for Hoteliers'
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.cvent.com/en/blog/hospitality/hotel-dynamic-pricing-complete-guide'
   - org: 'International Journal of Hospitality Management (Talon-Ballestero, Nieto-Garcia & Gonzalez-Serrano)'
     name: 'The wheel of dynamic pricing: Towards open pricing and one to one pricing in hotel revenue management'
     version: 'Vol. 102, 2022, 103184'
     section: ''
-    url: ''
+    url: 'https://www.sciencedirect.com/science/article/pii/S0278431922000469'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 34l8-9 7 6 11-15"/><polyline points="26 16 38 16 38 28"/><path d="M6 40h36"/></svg>
 ---
 
@@ -70,7 +70,7 @@ Dynamic Pricing은 BAR 같은 게시 요금의 일별 변동을 만들어 내는
 
 # Related
 - [BAR](/lodging/hotel-rate/bar.md) — related
-- [Revenue Management](/air/air-shop/revenue-management.md) — related
+- [Revenue Management](/air/air-shop/revenue-management.md) — broader
 - [Rate Shopping](/lodging/hotel-dist/rate-shopping.md) — related
 - [Open Pricing](/lodging/hotel-rate/open-pricing.md) — narrower
 - [ADR](/lodging/hotel-rate/adr.md) — related
@@ -81,6 +81,6 @@ Dynamic Pricing은 BAR 같은 게시 요금의 일별 변동을 만들어 내는
 - **Dynamic Pricing** vs [Continuous Pricing](/air/air-shop/continuous-pricing.md) — Continuous pricing is the airline-side concept of pricing off a fare continuum rather than fixed RBD buckets; dynamic pricing is the hotel-side practice of moving rates by date. They are analogous disciplines in different verticals.
 
 # Citations
-[1] SiteMinder — Hotel dynamic pricing: Complete guide with examples
-[2] Cvent / Hospitality Net — Hotel Dynamic Pricing: The Complete Guide for Hoteliers
-[3] International Journal of Hospitality Management (Talon-Ballestero, Nieto-Garcia & Gonzalez-Serrano) — The wheel of dynamic pricing: Towards open pricing and one to one pricing in hotel revenue management — Vol. 102, 2022, 103184
+[1] [SiteMinder — Hotel dynamic pricing: Complete guide with examples](https://www.siteminder.com/r/hotel-dynamic-pricing/)
+[2] [Cvent / Hospitality Net — Hotel Dynamic Pricing: The Complete Guide for Hoteliers](https://www.cvent.com/en/blog/hospitality/hotel-dynamic-pricing-complete-guide)
+[3] [International Journal of Hospitality Management (Talon-Ballestero, Nieto-Garcia & Gonzalez-Serrano) — The wheel of dynamic pricing: Towards open pricing and one to one pricing in hotel revenue management — Vol. 102, 2022, 103184](https://www.sciencedirect.com/science/article/pii/S0278431922000469)

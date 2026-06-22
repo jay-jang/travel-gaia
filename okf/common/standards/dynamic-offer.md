@@ -43,12 +43,12 @@ sources:
     name: Dynamic Offers - Airline Retailing
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/programs/airline-distribution/retailing/dynamic-offers/'
   - org: IATA
     name: 'Dynamic Offers: the road to Customer Centric Airline Retailing'
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/contentassets/0688c780d9ad4a4fadb461b479d64e0d/dynamic-pricing_continuous-pricing_dynamic-bundling.pdf'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M8 34l8-10 7 6 9-14 8 6"/><path d="M40 22v8M40 22h-8"/><path d="M6 40h36"/><circle cx="16" cy="24" r="1.5" fill="currentColor"/><circle cx="23" cy="30" r="1.5" fill="currentColor"/><circle cx="32" cy="16" r="1.5" fill="currentColor"/></svg>
 ---
 
@@ -74,5 +74,5 @@ Dynamic pricing prices an offer from contextual signals (length of stay, time to
 - **Dynamic Offer** vs [Continuous Pricing](/air/air-shop/continuous-pricing.md) — Continuous pricing is one of the three component capabilities of a Dynamic Offer; a Dynamic Offer is the broader capability combining continuous pricing with dynamic pricing and dynamic bundling.
 
 # Citations
-[1] IATA — Dynamic Offers - Airline Retailing
-[2] IATA — Dynamic Offers: the road to Customer Centric Airline Retailing
+[1] [IATA — Dynamic Offers - Airline Retailing](https://www.iata.org/en/programs/airline-distribution/retailing/dynamic-offers/)
+[2] [IATA — Dynamic Offers: the road to Customer Centric Airline Retailing](https://www.iata.org/contentassets/0688c780d9ad4a4fadb461b479d64e0d/dynamic-pricing_continuous-pricing_dynamic-bundling.pdf)

@@ -26,9 +26,9 @@ aliases:
 relationships:
   - type: child
     targetTerm: Passenger and Airport Data Interchange Standards (PADIS)
-  - type: related
+  - type: broader
     targetTerm: NDC
-  - type: related
+  - type: broader
     targetTerm: ONE Order
   - type: related
     targetTerm: Airline Industry Data Model (AIDM)
@@ -39,17 +39,26 @@ distinctions:
   - targetTerm: EDIFACT
     explanation: EDIST is the modern XML message family for offers and orders; EDIFACT is the legacy compact-text EDI syntax for classic reservations/ticketing messaging.
     explanation_ko: 'EDIST는 오퍼와 주문을 위한 현대적 XML 메시지 계열이고, EDIFACT는 전통적 예약/발권 메시징을 위한 레거시 압축 텍스트 EDI 구문이다.'
+  - targetTerm: Airline Industry Data Model (AIDM)
+    explanation: AIDM defines the vocabulary and relationships; EDIST is the concrete XML message schema family derived from the AIDM concepts.
+    explanation_ko: 'AIDM은 어휘와 관계를 정의하고, EDIST는 그 AIDM 개념으로부터 도출된 구체적인 XML 메시지 스키마 계열이다.'
+  - targetTerm: IATA Resolution 787
+    explanation: EDIST is the IATA programme/governance umbrella that evolves the NDC and ONE Order standards under Resolution 787; Resolution 787 is the originating resolution that created the NDC standard.
+    explanation_ko: 'EDIST는 Resolution 787 하에서 NDC와 ONE Order 표준을 발전시키는 IATA 프로그램/거버넌스 우산이고, Resolution 787은 NDC 표준을 만든 발원 결의이다.'
+  - targetTerm: Passenger and Airport Data Interchange Standards (PADIS)
+    explanation: PADIS is the governance/authority publishing and versioning schemas; EDIST is the specific NDC XML message family published under PADIS governance.
+    explanation_ko: 'PADIS는 스키마를 발행·버전 관리하는 거버넌스/권한 기구이고, EDIST는 PADIS 거버넌스 아래 발행되는 구체적인 NDC XML 메시지 계열이다.'
 sources:
   - org: IATA
     name: Enhanced and Simplified Distribution Implementation Guide
     version: ''
     section: ''
-    url: ''
+    url: 'https://guides.developer.iata.org/docs/21-1_ImplementationGuide.pdf'
   - org: IATA
     name: Distribution with Offers & Orders (NDC)
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/programs/airline-distribution/retailing/ndc/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8H10a2 2 0 0 0-2 2v28a2 2 0 0 0 2 2h28a2 2 0 0 0 2-2v-6"/><path d="M18 22l-4 4 4 4M30 22l4 4-4 4M26 20l-4 12"/><path d="M30 8h10v10"/><path d="M40 8L28 20"/></svg>
 ---
 
@@ -65,14 +74,17 @@ Enhanced Distribution 메시지는 (항공권 유무와 무관하게) 오퍼와 
 
 # Related
 - [Passenger and Airport Data Interchange Standards (PADIS)](/common/standards/passenger-and-airport-data-interchange-standards-padis.md) — child
-- [NDC](/common/standards/ndc.md) — related
-- [ONE Order](/common/standards/one-order.md) — related
+- [NDC](/common/standards/ndc.md) — broader
+- [ONE Order](/common/standards/one-order.md) — broader
 - [Airline Industry Data Model (AIDM)](/common/standards/airline-industry-data-model-aidm.md) — related
 
 # Distinctions
 - **Enhanced and Simplified Distribution (EDIST)** vs [NDC](/common/standards/ndc.md) — NDC is the IATA program/brand and capability concept; EDIST is the formal name of the actual XML message schemas (AirShopping, OrderCreate, etc.) that implement NDC and ONE Order.
 - **Enhanced and Simplified Distribution (EDIST)** vs [EDIFACT](/common/standards/edifact.md) — EDIST is the modern XML message family for offers and orders; EDIFACT is the legacy compact-text EDI syntax for classic reservations/ticketing messaging.
+- **Enhanced and Simplified Distribution (EDIST)** vs [Airline Industry Data Model (AIDM)](/common/standards/airline-industry-data-model-aidm.md) — AIDM defines the vocabulary and relationships; EDIST is the concrete XML message schema family derived from the AIDM concepts.
+- **Enhanced and Simplified Distribution (EDIST)** vs [IATA Resolution 787](/common/standards/iata-resolution-787.md) — EDIST is the IATA programme/governance umbrella that evolves the NDC and ONE Order standards under Resolution 787; Resolution 787 is the originating resolution that created the NDC standard.
+- **Enhanced and Simplified Distribution (EDIST)** vs [Passenger and Airport Data Interchange Standards (PADIS)](/common/standards/passenger-and-airport-data-interchange-standards-padis.md) — PADIS is the governance/authority publishing and versioning schemas; EDIST is the specific NDC XML message family published under PADIS governance.
 
 # Citations
-[1] IATA — Enhanced and Simplified Distribution Implementation Guide
-[2] IATA — Distribution with Offers & Orders (NDC)
+[1] [IATA — Enhanced and Simplified Distribution Implementation Guide](https://guides.developer.iata.org/docs/21-1_ImplementationGuide.pdf)
+[2] [IATA — Distribution with Offers & Orders (NDC)](https://www.iata.org/en/programs/airline-distribution/retailing/ndc/)

@@ -44,12 +44,18 @@ distinctions:
   - targetTerm: Fare Component
     explanation: A fare component is the priced portion of an itinerary to which a fare applies; a through fare is a fare type that prices an origin-to-destination component as one continuous fare across intermediate points.
     explanation_ko: '운임 구성요소는 운임이 적용되는 여정의 일부 구간이고, 일관 운임은 중간 지점들을 가로질러 출발지-목적지 구성요소를 하나의 연속 운임으로 책정하는 운임 유형이다.'
+  - targetTerm: Routing
+    explanation: A through fare is the single fare covering the whole origin-destination journey; routing is the rule set that determines which physical paths that through fare may be applied over.
+    explanation_ko: 'Through fare는 전체 출발지-목적지 여정을 포괄하는 단일 운임이고, routing은 그 through fare가 어떤 물리적 경로에 적용될 수 있는지를 결정하는 규정 집합이다.'
+  - targetTerm: Standard International Passenger Tariff (TCV)
+    explanation: A through fare is the general concept of a single fare across a multi-segment journey; TCV is the specific UIC tariff framework that defines such through fares for international rail.
+    explanation_ko: 'through fare는 여러 구간 여정을 하나의 운임으로 묶는 일반 개념이고, TCV는 국제 철도에서 그러한 통과운임을 정의하는 구체적인 UIC 운임 체계다.'
 sources:
   - name: Airline industry glossary — Through fare
     org: ATPCO
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.atpco.net/resources/glossary/t'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="34" r="3"/><circle cx="24" cy="34" r="3"/><circle cx="40" cy="34" r="3"/><line x1="11" y1="34" x2="21" y2="34"/><line x1="27" y1="34" x2="37" y2="34"/><path d="M8 22 q16 -16 32 0"/><line x1="8" y1="22" x2="8" y2="18"/><line x1="40" y1="22" x2="40" y2="18"/></svg>
 ---
 
@@ -80,6 +86,8 @@ Through fares are central to multi-segment and multi-carrier pricing: a fare com
 # Distinctions
 - **Through Fare** vs [Proration](/air/air-partner/proration.md) — A through fare is the single end-to-end price charged to the passenger; proration is the back-office process of splitting that fare's revenue among the carriers that operated the journey.
 - **Through Fare** vs [Fare Component](/air/air-shop/fare-component.md) — A fare component is the priced portion of an itinerary to which a fare applies; a through fare is a fare type that prices an origin-to-destination component as one continuous fare across intermediate points.
+- **Through Fare** vs [Routing](/air/air-shop/routing.md) — A through fare is the single fare covering the whole origin-destination journey; routing is the rule set that determines which physical paths that through fare may be applied over.
+- **Through Fare** vs [Standard International Passenger Tariff (TCV)](/ground/rail/standard-international-passenger-tariff-tcv.md) — A through fare is the general concept of a single fare across a multi-segment journey; TCV is the specific UIC tariff framework that defines such through fares for international rail.
 
 # Citations
-[1] ATPCO — Airline industry glossary — Through fare
+[1] [ATPCO — Airline industry glossary — Through fare](https://www.atpco.net/resources/glossary/t)

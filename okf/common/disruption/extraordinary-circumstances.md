@@ -22,7 +22,7 @@ aliases:
   - Exceptional Circumstances
   - Article 5(3) defence
 relationships:
-  - type: related
+  - type: broader
     targetTerm: EU Regulation 261/2004
   - type: related
     targetTerm: UK Regulation 261
@@ -34,17 +34,20 @@ distinctions:
   - targetTerm: Right to Care
     explanation: 'Extraordinary circumstances remove the duty to pay fixed compensation only; the right to care (meals, hotels, transport) remains fully owed regardless of the defence.'
     explanation_ko: 'Extraordinary circumstances는 정액 보상 지급 의무만 제거하며, right to care(식사·호텔·교통)는 항변과 무관하게 온전히 유지된다.'
+  - targetTerm: Sturgeon Ruling
+    explanation: 'Extraordinary circumstances is the carrier''s statutory defence; the Sturgeon Ruling defines when compensation is owed in the first place (the three-hour delay threshold), and that compensation is then defeasible by proving extraordinary circumstances.'
+    explanation_ko: 'Extraordinary circumstances는 항공사의 법정 면책 사유이고, Sturgeon Ruling은 애초에 보상 의무가 발생하는 시점(3시간 지연 기준선)을 정의하며, 그 보상은 비상 상황 입증으로 번복될 수 있다.'
 sources:
   - name: 'Regulation (EC) No 261/2004, Article 5(3)'
     org: European Union
     version: ''
     section: Article 5(3)
-    url: ''
+    url: 'https://eur-lex.europa.eu/eli/reg/2004/261/oj/eng'
   - name: Air Passenger Rights — European Case Law (CJEU judgements summary)
     org: Court of Justice of the European Union
     version: ''
     section: ''
-    url: ''
+    url: 'https://transport.ec.europa.eu/system/files/2022-03/2022-summary-of-the-most-relevant-cjeu-judgements.pdf'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 28a7 7 0 0 1 1-14 9 9 0 0 1 17 2 6 6 0 0 1 1 12z"/><path d="M18 34l-2 5M26 34l-2 5M34 34l-2 5"/><path d="M30 30l-2 4 4-1-2 5" stroke="currentColor"/></svg>
 ---
 
@@ -59,14 +62,15 @@ CJEU 판결은 어떤 사건이 해당하는지 명확히 해 왔다. 일반적�
 **Aliases:** `Extraordinary Circumstances`, `Exceptional Circumstances`, `Article 5(3) defence`
 
 # Related
-- [EU Regulation 261/2004](/common/disruption/eu-regulation-261-2004.md) — related
+- [EU Regulation 261/2004](/common/disruption/eu-regulation-261-2004.md) — broader
 - [UK Regulation 261](/common/disruption/uk-regulation-261.md) — related
 - [Right to Care](/common/disruption/right-to-care.md) — related
 - [Denied Boarding Compensation](/common/disruption/denied-boarding-compensation.md) — related
 
 # Distinctions
 - **Extraordinary Circumstances** vs [Right to Care](/common/disruption/right-to-care.md) — Extraordinary circumstances remove the duty to pay fixed compensation only; the right to care (meals, hotels, transport) remains fully owed regardless of the defence.
+- **Extraordinary Circumstances** vs [Sturgeon Ruling](/common/disruption/sturgeon-ruling.md) — Extraordinary circumstances is the carrier's statutory defence; the Sturgeon Ruling defines when compensation is owed in the first place (the three-hour delay threshold), and that compensation is then defeasible by proving extraordinary circumstances.
 
 # Citations
-[1] European Union — Regulation (EC) No 261/2004, Article 5(3) — Article 5(3)
-[2] Court of Justice of the European Union — Air Passenger Rights — European Case Law (CJEU judgements summary)
+[1] [European Union — Regulation (EC) No 261/2004, Article 5(3) — Article 5(3)](https://eur-lex.europa.eu/eli/reg/2004/261/oj/eng)
+[2] [Court of Justice of the European Union — Air Passenger Rights — European Case Law (CJEU judgements summary)](https://transport.ec.europa.eu/system/files/2022-03/2022-summary-of-the-most-relevant-cjeu-judgements.pdf)

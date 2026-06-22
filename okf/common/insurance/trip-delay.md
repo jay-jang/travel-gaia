@@ -20,13 +20,13 @@ aliases:
   - Trip Delay Benefit
   - Trip Delay Reimbursement
 relationships:
-  - type: related
+  - type: child
     targetTerm: Comprehensive Travel Insurance
-  - type: related
+  - type: contrasts
     targetTerm: Trip Interruption
-  - type: related
+  - type: contrasts
     targetTerm: Missed Connection
-  - type: related
+  - type: contrasts
     targetTerm: Baggage Delay
   - type: contrasts
     targetTerm: Right to Care
@@ -40,6 +40,9 @@ distinctions:
   - targetTerm: Missed Connection
     explanation: 'Trip delay pays for waiting in place during a delay; missed connection pays the catch-up costs when that delay causes you to miss a connecting flight, cruise, or tour departure.'
     explanation_ko: 'Trip Delay는 지연 중 그 자리에서 대기하는 비용을 보상하고, Missed Connection은 그 지연으로 연결편 항공·크루즈·투어 출발을 놓쳤을 때 따라잡기 위한 비용을 보상한다.'
+  - targetTerm: Baggage Delay
+    explanation: 'Baggage delay reimburses essential purchases while your checked bags are missing; trip delay reimburses meals, lodging, and local transport while you yourself are stranded by a common-carrier delay. The two are separate benefits triggered by different events.'
+    explanation_ko: 'Baggage Delay는 위탁 수하물이 도착하지 않는 동안 필수품 구입비를 보상하고, Trip Delay는 본인이 운송인 지연으로 발이 묶인 동안 식비·숙박·현지 교통비를 보상한다. 서로 다른 사건으로 발동되는 별개의 보장이다.'
 sources:
   - org: Squaremouth
     name: 'Trip Delay Insurance: Coverage Details & Plans'
@@ -65,16 +68,17 @@ Coverage activates after a stated minimum delay (commonly 6 or 12 hours, sometim
 **Aliases:** `Travel Delay`, `Trip Delay Benefit`, `Trip Delay Reimbursement`
 
 # Related
-- [Comprehensive Travel Insurance](/common/insurance/comprehensive-travel-insurance.md) — related
-- [Trip Interruption](/common/insurance/trip-interruption.md) — related
-- [Missed Connection](/common/insurance/missed-connection.md) — related
-- [Baggage Delay](/common/insurance/baggage-delay.md) — related
+- [Comprehensive Travel Insurance](/common/insurance/comprehensive-travel-insurance.md) — child
+- [Trip Interruption](/common/insurance/trip-interruption.md) — contrasts
+- [Missed Connection](/common/insurance/missed-connection.md) — contrasts
+- [Baggage Delay](/common/insurance/baggage-delay.md) — contrasts
 - [Right to Care](/common/disruption/right-to-care.md) — contrasts
 
 # Distinctions
 - **Trip Delay** vs [Trip Interruption](/common/insurance/trip-interruption.md) — Trip delay covers short-term incidental costs (meals, a hotel night) while you wait out a delay and then continue; trip interruption covers the unused trip cost and return transport when a covered event forces you to cut the trip short. Delay assumes you eventually proceed; interruption assumes you do not.
 - **Trip Delay** vs [Right to Care](/common/disruption/right-to-care.md) — Right to Care (EU/UK 261) is the carrier's legal duty to provide meals and accommodation during disruption; trip delay is the traveler's own insurance benefit. Insurance delay coverage is typically secondary to — and net of — what the carrier must supply.
 - **Trip Delay** vs [Missed Connection](/common/insurance/missed-connection.md) — Trip delay pays for waiting in place during a delay; missed connection pays the catch-up costs when that delay causes you to miss a connecting flight, cruise, or tour departure.
+- **Trip Delay** vs [Baggage Delay](/common/insurance/baggage-delay.md) — Baggage delay reimburses essential purchases while your checked bags are missing; trip delay reimburses meals, lodging, and local transport while you yourself are stranded by a common-carrier delay. The two are separate benefits triggered by different events.
 
 # Citations
 [1] [Squaremouth — Trip Delay Insurance: Coverage Details & Plans](https://www.squaremouth.com/travel-insurance-benefits/travel-delay)

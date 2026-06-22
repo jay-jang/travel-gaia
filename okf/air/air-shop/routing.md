@@ -53,12 +53,12 @@ sources:
     name: ATPCO Routings - fare-construction data
     version: ''
     section: Routings
-    url: ''
+    url: 'https://atpco.net/atpco-faremanager/'
   - org: IATA
     name: 'IATA fare construction: Mileage System and Routing System'
     version: ''
     section: Routing system
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/ticketing-handbook/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="12" r="3"/><circle cx="24" cy="30" r="3"/><circle cx="39" cy="14" r="3"/><path d="M11 14l11 14M27 28l11-12"/><path d="M9 16v18a3 3 0 003 3h27" stroke-dasharray="3 3"/></svg>
 ---
 
@@ -91,5 +91,5 @@ Mileage system에서는 through fare가, 합산한 Ticketed Point Mileage(TPM)�
 - **Routing** vs [Through Fare](/air/air-partner/through-fare.md) — A through fare is the single fare covering the whole origin-destination journey; routing is the rule set that determines which physical paths that through fare may be applied over.
 
 # Citations
-[1] ATPCO — ATPCO Routings - fare-construction data — Routings
-[2] IATA — IATA fare construction: Mileage System and Routing System — Routing system
+[1] [ATPCO — ATPCO Routings - fare-construction data — Routings](https://atpco.net/atpco-faremanager/)
+[2] [IATA — IATA fare construction: Mileage System and Routing System — Routing system](https://www.iata.org/en/publications/manuals/ticketing-handbook/)

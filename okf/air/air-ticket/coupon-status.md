@@ -28,7 +28,7 @@ providerTerms:
     context_ko: 'Amadeus는 전자 항공권 기록에 O(Open for use), F(Flown/used), E(Exchanged) 등의 크립틱 쿠폰 상태 코드를 게시한다.'
     relationship: same
 relationships:
-  - type: related
+  - type: broader
     targetTerm: Flight Coupon
   - type: related
     targetTerm: E-ticket
@@ -47,6 +47,9 @@ distinctions:
   - targetTerm: Void
     explanation: 'Void is one specific coupon/ticket status (cancellation of issuance, typically same-day); coupon status is the broader set of all possible lifecycle states a coupon can hold.'
     explanation_ko: 'Void는 특정한 하나의 쿠폰/항공권 상태(발행 취소, 보통 당일)이고, coupon status는 쿠폰이 가질 수 있는 모든 생애주기 상태의 더 넓은 집합이다.'
+  - targetTerm: Open Ticket
+    explanation: 'Coupon status is the lifecycle state of any flight coupon (e.g. OPEN FOR USE, FLOWN, USED); an open ticket is specifically a ticket whose coupon(s) remain in the OPEN status with no fixed flight or date.'
+    explanation_ko: 'Coupon status는 모든 항공편 쿠폰의 생애주기 상태(예: OPEN FOR USE, FLOWN, USED)이고, open ticket은 특히 쿠폰이 확정된 항공편·날짜 없이 OPEN 상태에 머무는 항공권을 말한다.'
 sources:
   - org: Amadeus
     name: How to understand e-ticket coupon status codes (Cryptic)
@@ -57,7 +60,7 @@ sources:
     name: Ticketing Handbook
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/ticketing-handbook/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="12" width="32" height="24" rx="3"/><path d="M14 24l4 4 8-8"/><circle cx="32" cy="24" r="3"/></svg>
 ---
 
@@ -78,7 +81,7 @@ Each flight coupon on an e-ticket carries a status that changes as the coupon mo
 | Amadeus | `E-ticket coupon status codes` | same | Amadeus publishes cryptic coupon status codes such as O (Open for use), F (Flown/used), and E (Exchanged) in the e-ticket record. |
 
 # Related
-- [Flight Coupon](/air/air-ticket/flight-coupon.md) — related
+- [Flight Coupon](/air/air-ticket/flight-coupon.md) — broader
 - [E-ticket](/air/air-ticket/e-ticket.md) — related
 - [Void](/air/air-ticket/void.md) — related
 - [Reissue](/air/air-ticket/reissue.md) — related
@@ -88,7 +91,8 @@ Each flight coupon on an e-ticket carries a status that changes as the coupon mo
 # Distinctions
 - **Coupon Status** vs [Flight Coupon](/air/air-ticket/flight-coupon.md) — The flight coupon is the segment-level portion of a ticket; coupon status is the state attribute attached to that coupon describing its position in the lifecycle.
 - **Coupon Status** vs [Void](/air/air-ticket/void.md) — Void is one specific coupon/ticket status (cancellation of issuance, typically same-day); coupon status is the broader set of all possible lifecycle states a coupon can hold.
+- **Coupon Status** vs [Open Ticket](/air/air-ticket/open-ticket.md) — Coupon status is the lifecycle state of any flight coupon (e.g. OPEN FOR USE, FLOWN, USED); an open ticket is specifically a ticket whose coupon(s) remain in the OPEN status with no fixed flight or date.
 
 # Citations
 [1] [Amadeus — How to understand e-ticket coupon status codes (Cryptic)](https://servicehub.amadeus.com/c/portal/view-solution/879101/how-to-understand-e-ticket-coupon-status-codes-cryptic-)
-[2] IATA — Ticketing Handbook
+[2] [IATA — Ticketing Handbook](https://www.iata.org/en/publications/manuals/ticketing-handbook/)

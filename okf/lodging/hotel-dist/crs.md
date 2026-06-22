@@ -40,17 +40,35 @@ distinctions:
   - targetTerm: Channel Manager
     explanation: 'CRS is the central inventory/reservation hub; a Channel Manager is the connectivity layer that syncs ARI to many online channels (sometimes a CRS feature, sometimes a separate product).'
     explanation_ko: 'CRS는 중앙 인벤토리/예약 허브이고, 채널 매니저는 ARI를 다수의 온라인 채널로 동기화하는 연결 계층이다(CRS의 기능일 때도 있고 별도 제품일 때도 있다).'
+  - targetTerm: Booking Engine
+    explanation: The CRS is the central system that holds and distributes a hotel's inventory and rates across all channels; the booking engine is the guest-facing front end of the direct channel that queries the CRS and creates direct reservations.
+    explanation_ko: 'CRS는 호텔의 재고·요금을 보유하고 전 채널에 유통하는 중앙 시스템이고, 부킹 엔진은 CRS를 조회하여 직접 예약을 생성하는 직접 채널의 고객 대면 프런트엔드다.'
+  - targetTerm: Departure Control System (DCS)
+    explanation: 'A CRS/reservation system holds the booking and inventory before travel; the DCS takes over at the airport for check-in, boarding and load control, receiving its passenger data from the reservation system via PNL/ADL.'
+    explanation_ko: 'CRS/예약 시스템은 여행 전 예약과 재고를 보유하고, DCS는 공항에서 체크인·탑승·탑재 통제를 인계받아 PNL/ADL을 통해 예약 시스템으로부터 승객 데이터를 수신한다.'
+  - targetTerm: GDS
+    explanation: GDS aggregates multiple suppliers across the industry; a CRS is a single carrier's or hotel's own reservation system.
+    explanation_ko: 'GDS는 업계 전반의 여러 공급사를 통합하고, CRS는 개별 항공사 또는 호텔 자체의 예약 시스템이다.'
+  - targetTerm: Hotel Representation Company
+    explanation: 'A CRS is the technology that stores and distributes a hotel''s inventory; a representation company is the commercial intermediary that signs up independents, gives them a chain code, and sells/markets them—often on top of a CRS.'
+    explanation_ko: 'CRS는 호텔의 인벤토리를 저장·분배하는 기술이고, 대표 판매 회사는 독립 호텔을 모집해 chain code를 부여하고 판매·마케팅하는 상업적 중개자로, 흔히 CRS 위에서 운영된다.'
+  - targetTerm: Passenger Service System (PSS)
+    explanation: A CRS (reservations system) is one component within a PSS; the PSS is the broader platform that also includes inventory and departure control alongside reservations.
+    explanation_ko: 'CRS(예약 시스템)는 PSS 안의 한 구성요소이고, PSS는 예약과 함께 재고와 출발 통제까지 포함하는 더 넓은 플랫폼이다.'
+  - targetTerm: Single Image Inventory
+    explanation: A CRS is the central reservation system (the software/platform); Single Image Inventory is the architectural principle—one shared availability pool fed to all channels—that a CRS implements.
+    explanation_ko: 'CRS는 중앙 예약 시스템(소프트웨어/플랫폼)이고, Single Image Inventory는 하나의 공유 가용성 풀을 모든 채널에 공급하는 아키텍처 원칙으로, CRS가 이를 구현한다.'
 sources:
   - name: HTNG interface specifications
     org: HTNG
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.ahla.com/htng-technical-specifications'
   - name: OpenTravel Specification
     org: OpenTravel Alliance
     version: ''
     section: ''
-    url: ''
+    url: 'https://opentravel.org/download-specs/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="6"/><circle cx="24" cy="8" r="3"/><circle cx="24" cy="40" r="3"/><circle cx="8" cy="16" r="3"/><circle cx="40" cy="16" r="3"/><circle cx="8" cy="32" r="3"/><circle cx="40" cy="32" r="3"/><path d="M24 11v7M24 30v7M11 17l8 4M37 17l-8 4M11 31l8-4M37 31l-8-4"/></svg>
 ---
 
@@ -75,7 +93,13 @@ A hotel CRS centralizes ARI (availability, rates, inventory) for one or many pro
 # Distinctions
 - **CRS** vs [PMS](/lodging/hotel-dist/pms.md) — CRS manages distribution and central reservations; PMS manages on-property operations like check-in, folios, and housekeeping.
 - **CRS** vs [Channel Manager](/lodging/hotel-dist/channel-manager.md) — CRS is the central inventory/reservation hub; a Channel Manager is the connectivity layer that syncs ARI to many online channels (sometimes a CRS feature, sometimes a separate product).
+- **CRS** vs [Booking Engine](/lodging/hotel-dist/booking-engine.md) — The CRS is the central system that holds and distributes a hotel's inventory and rates across all channels; the booking engine is the guest-facing front end of the direct channel that queries the CRS and creates direct reservations.
+- **CRS** vs [Departure Control System (DCS)](/air/air-ops/departure-control-system-dcs.md) — A CRS/reservation system holds the booking and inventory before travel; the DCS takes over at the airport for check-in, boarding and load control, receiving its passenger data from the reservation system via PNL/ADL.
+- **CRS** vs [GDS](/common/standards/gds.md) — GDS aggregates multiple suppliers across the industry; a CRS is a single carrier's or hotel's own reservation system.
+- **CRS** vs [Hotel Representation Company](/lodging/hotel-dist/hotel-representation-company.md) — A CRS is the technology that stores and distributes a hotel's inventory; a representation company is the commercial intermediary that signs up independents, gives them a chain code, and sells/markets them—often on top of a CRS.
+- **CRS** vs [Passenger Service System (PSS)](/common/standards/passenger-service-system-pss.md) — A CRS (reservations system) is one component within a PSS; the PSS is the broader platform that also includes inventory and departure control alongside reservations.
+- **CRS** vs [Single Image Inventory](/lodging/hotel-dist/single-image-inventory.md) — A CRS is the central reservation system (the software/platform); Single Image Inventory is the architectural principle—one shared availability pool fed to all channels—that a CRS implements.
 
 # Citations
-[1] HTNG — HTNG interface specifications
-[2] OpenTravel Alliance — OpenTravel Specification
+[1] [HTNG — HTNG interface specifications](https://www.ahla.com/htng-technical-specifications)
+[2] [OpenTravel Alliance — OpenTravel Specification](https://opentravel.org/download-specs/)

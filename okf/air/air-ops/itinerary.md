@@ -20,13 +20,13 @@ aliases:
   - Itinerary Receipt
   - Trip Itinerary
 relationships:
-  - type: related
+  - type: parent
     targetTerm: PNR
   - type: broader
     targetTerm: Segment
   - type: related
     targetTerm: Journey
-  - type: related
+  - type: narrower
     targetTerm: ARNK
   - type: related
     targetTerm: E-ticket
@@ -37,12 +37,18 @@ distinctions:
   - targetTerm: E-ticket
     explanation: 'The e-ticket is the electronic record of the contract of carriage and coupons; the Itinerary/Receipt is the human-readable summary issued alongside it. They are related documents, not the same artifact.'
     explanation_ko: 'E-ticket은 운송계약과 coupon의 전자 기록이고, Itinerary/Receipt는 그와 함께 발행되는 사람이 읽을 수 있는 요약본이다. 관련 문서이지 동일한 산출물은 아니다.'
+  - targetTerm: Port of Call
+    explanation: 'The itinerary is the full ordered plan of the voyage; a port of call is one stop within it, alongside sea days and the turnaround ports.'
+    explanation_ko: 'Itinerary는 항해의 전체 순서 계획이고, port of call은 그 안의 한 기항지로 항해일과 회항(turnaround) 항구와 함께 구성된다.'
+  - targetTerm: Repositioning Cruise
+    explanation: An itinerary is any planned sequence of ports; a repositioning cruise is a specific kind of itinerary defined by different start and end ports because the ship is being moved between regions.
+    explanation_ko: 'Itinerary는 계획된 항구의 순서 일반을 뜻하고, 리포지셔닝 크루즈는 선박을 지역 간 이동시키느라 출발·종료 항구가 다른 특정 종류의 일정이다.'
 sources:
   - org: IATA
     name: Passenger Services Conference Resolutions Manual (PSCRM)
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="11" y="7" width="26" height="34" rx="3"/><circle cx="18" cy="15" r="1.6" fill="currentColor" stroke="none"/><circle cx="18" cy="24" r="1.6" fill="currentColor" stroke="none"/><circle cx="18" cy="33" r="1.6" fill="currentColor" stroke="none"/><path d="M24 15h7M24 24h7M24 33h7"/></svg>
 ---
 
@@ -57,15 +63,17 @@ PNR 안에서 itinerary는 항공 Segment(및 그 Leg), ARNK surface 구간, 환
 **Aliases:** `Travel Itinerary`, `Itinerary Receipt`, `Trip Itinerary`
 
 # Related
-- [PNR](/air/air-ops/pnr.md) — related
+- [PNR](/air/air-ops/pnr.md) — parent
 - [Segment](/air/air-ops/segment.md) — broader
 - [Journey](/air/air-shop/journey.md) — related
-- [ARNK](/air/air-ops/arnk.md) — related
+- [ARNK](/air/air-ops/arnk.md) — narrower
 - [E-ticket](/air/air-ticket/e-ticket.md) — related
 
 # Distinctions
 - **Itinerary** vs [Journey](/air/air-shop/journey.md) — A Journey is the fare/pricing concept describing the overall trip (e.g., one-way, round-trip, open-jaw) used in fare construction; the Itinerary is the concrete ordered list of booked segments. One itinerary realizes a journey but adds specific flights, dates and times.
 - **Itinerary** vs [E-ticket](/air/air-ticket/e-ticket.md) — The e-ticket is the electronic record of the contract of carriage and coupons; the Itinerary/Receipt is the human-readable summary issued alongside it. They are related documents, not the same artifact.
+- **Itinerary** vs [Port of Call](/cruise/cruise/port-of-call.md) — The itinerary is the full ordered plan of the voyage; a port of call is one stop within it, alongside sea days and the turnaround ports.
+- **Itinerary** vs [Repositioning Cruise](/cruise/cruise/repositioning-cruise.md) — An itinerary is any planned sequence of ports; a repositioning cruise is a specific kind of itinerary defined by different start and end ports because the ship is being moved between regions.
 
 # Citations
-[1] IATA — Passenger Services Conference Resolutions Manual (PSCRM)
+[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)

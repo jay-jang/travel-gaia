@@ -26,7 +26,7 @@ relationships:
     targetTerm: Operating Carrier
   - type: related
     targetTerm: Marketing Carrier
-  - type: related
+  - type: contrasts
     targetTerm: Codeshare
   - type: related
     targetTerm: IROPS
@@ -37,12 +37,15 @@ distinctions:
   - targetTerm: Operating Carrier
     explanation: A wet lease is the contractual arrangement; in it the lessor is the operating carrier (holding the AOC and operational control) while the lessee markets the flight.
     explanation_ko: '웻 리스는 계약상의 협정이며, 그 안에서 임대인이 (AOC와 운항 통제권을 보유한) 운항 항공사이고 임차인이 항공편을 판매한다.'
+  - targetTerm: Capacity Purchase Agreement
+    explanation: 'A wet lease/ACMI provides aircraft, crew, maintenance, and insurance per block hour; a CPA is a longer-term commercial framework where the regional flies entirely under the mainline''s brand and revenue control, not just supplying lift.'
+    explanation_ko: '웻 리스/ACMI는 블록 아워당 항공기·승무원·정비·보험을 제공하는 것이고, CPA는 지선이 단순히 공급력만 제공하는 것이 아니라 전적으로 메인라인의 브랜드와 수익 통제 하에 운항하는 더 장기적인 상업적 체계다.'
 sources:
   - name: 'Convention on International Civil Aviation (Chicago Convention), Article 83 bis on lease/charter/interchange of aircraft'
     org: ICAO
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.icao.int/sites/default/files/2024-12/7300_cons.pdf'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 24 L26 20 L40 8 L34 24 L40 40 L26 28 Z"/><path d="M4 34 q6 4 12 0 q6 -4 12 0 q6 4 12 0"/></svg>
 ---
 
@@ -59,12 +62,13 @@ Wet lease is also known as ACMI for the four elements the lessor supplies: Aircr
 # Related
 - [Operating Carrier](/air/air-partner/operating-carrier.md) — related
 - [Marketing Carrier](/air/air-partner/marketing-carrier.md) — related
-- [Codeshare](/air/air-partner/codeshare.md) — related
+- [Codeshare](/air/air-partner/codeshare.md) — contrasts
 - [IROPS](/air/air-partner/irops.md) — related
 
 # Distinctions
 - **Wet Lease** vs [Codeshare](/air/air-partner/codeshare.md) — In a wet lease one airline's aircraft and crew physically operate the flight under the lessee's flight number, with the lessor holding the AOC; a codeshare shares flight codes between two carriers that each operate under their own AOC.
 - **Wet Lease** vs [Operating Carrier](/air/air-partner/operating-carrier.md) — A wet lease is the contractual arrangement; in it the lessor is the operating carrier (holding the AOC and operational control) while the lessee markets the flight.
+- **Wet Lease** vs [Capacity Purchase Agreement](/air/air-partner/capacity-purchase-agreement.md) — A wet lease/ACMI provides aircraft, crew, maintenance, and insurance per block hour; a CPA is a longer-term commercial framework where the regional flies entirely under the mainline's brand and revenue control, not just supplying lift.
 
 # Citations
-[1] ICAO — Convention on International Civil Aviation (Chicago Convention), Article 83 bis on lease/charter/interchange of aircraft
+[1] [ICAO — Convention on International Civil Aviation (Chicago Convention), Article 83 bis on lease/charter/interchange of aircraft](https://www.icao.int/sites/default/files/2024-12/7300_cons.pdf)

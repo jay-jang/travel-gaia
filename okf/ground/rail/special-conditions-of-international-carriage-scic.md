@@ -29,7 +29,7 @@ relationships:
     targetTerm: Non-integrated Reservation Ticket (NRT)
   - type: related
     targetTerm: Integrated Reservation Ticket (IRT)
-  - type: related
+  - type: broader
     targetTerm: General Conditions of Carriage for Rail Passengers (GCC-CIV/PRR)
   - type: related
     targetTerm: Standard International Passenger Tariff (TCV)
@@ -49,12 +49,12 @@ sources:
     name: Special Conditions of International Carriage (SCIC) — international tariffs compilation
     version: ''
     section: ''
-    url: ''
+    url: 'https://shop.uic.org/en/special-conditions-of-international-carriage-scic'
   - org: CIT (International Rail Transport Committee)
     name: Special Conditions of International Carriage (SCIC) — NRT / IRT / NT / RPT
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.cit-rail.org/media/files/public/CIT-Info_EN/2013/SCIC-NRT_09.12.2012_en.pdf'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="18" height="24" rx="2"/><path d="M14 16h8M14 21h8M14 26h5"/><rect x="23" y="17" width="16" height="22" rx="2" fill="none"/><path d="M28 24h6M28 29h6M28 34h4"/></svg>
 ---
 
@@ -71,7 +71,7 @@ SCIC 문서는 국제 운임 편람에 발행되어 특정 국제 승차권 상�
 # Related
 - [Non-integrated Reservation Ticket (NRT)](/ground/rail/non-integrated-reservation-ticket-nrt.md) — related
 - [Integrated Reservation Ticket (IRT)](/ground/rail/integrated-reservation-ticket-irt.md) — related
-- [General Conditions of Carriage for Rail Passengers (GCC-CIV/PRR)](/ground/rail/general-conditions-of-carriage-for-rail-passengers-gcc-civ-prr.md) — related
+- [General Conditions of Carriage for Rail Passengers (GCC-CIV/PRR)](/ground/rail/general-conditions-of-carriage-for-rail-passengers-gcc-civ-prr.md) — broader
 - [Standard International Passenger Tariff (TCV)](/ground/rail/standard-international-passenger-tariff-tcv.md) — related
 - [CIV (Uniform Rules concerning the Contract of International Carriage of Passengers by Rail)](/ground/rail/civ-uniform-rules.md) — child
 - [Rail Passenger Rights Regulation (EU) 2021/782](/ground/rail/rail-passenger-rights-regulation-eu-2021-782.md) — related
@@ -81,5 +81,5 @@ SCIC 문서는 국제 운임 편람에 발행되어 특정 국제 승차권 상�
 - **Special Conditions of International Carriage (SCIC)** vs [Standard International Passenger Tariff (TCV)](/ground/rail/standard-international-passenger-tariff-tcv.md) — The TCV is the tariff defining international fares and the prices/conditions of carriage; SCIC are the special carriage conditions governing how a given international ticket type is used, interrupted and refunded. TCV is fare/price-centric; SCIC is carriage-conditions-centric, applied per ticket product.
 
 # Citations
-[1] UIC — Special Conditions of International Carriage (SCIC) — international tariffs compilation
-[2] CIT (International Rail Transport Committee) — Special Conditions of International Carriage (SCIC) — NRT / IRT / NT / RPT
+[1] [UIC — Special Conditions of International Carriage (SCIC) — international tariffs compilation](https://shop.uic.org/en/special-conditions-of-international-carriage-scic)
+[2] [CIT (International Rail Transport Committee) — Special Conditions of International Carriage (SCIC) — NRT / IRT / NT / RPT](https://www.cit-rail.org/media/files/public/CIT-Info_EN/2013/SCIC-NRT_09.12.2012_en.pdf)

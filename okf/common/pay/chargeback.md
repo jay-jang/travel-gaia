@@ -21,9 +21,9 @@ aliases:
 relationships:
   - type: related
     targetTerm: Merchant of Record
-  - type: related
+  - type: contrasts
     targetTerm: 3-D Secure
-  - type: related
+  - type: contrasts
     targetTerm: Refund
   - type: related
     targetTerm: VCC
@@ -34,6 +34,15 @@ distinctions:
   - targetTerm: 3-D Secure
     explanation: A chargeback is a post-transaction dispute; 3-D Secure is pre-transaction authentication that can reduce fraud chargeback liability.
     explanation_ko: '차지백은 거래 후 분쟁이고, 3-D Secure는 사기성 차지백 책임을 줄일 수 있는 거래 전 인증이다.'
+  - targetTerm: Chargeback Reason Code
+    explanation: A chargeback is the dispute and forced reversal itself; the reason code is the standardized label that classifies that dispute and sets the evidence rules and deadlines.
+    explanation_ko: 'Chargeback은 분쟁과 강제적 거래 취소 자체이고, 사유 코드는 그 분쟁을 분류하고 증빙 규칙과 기한을 정하는 표준화된 라벨이다.'
+  - targetTerm: IATA EasyPay
+    explanation: 'IATA EasyPay carries no chargeback risk for airlines because funds are pre-funded and blocked at issuance, unlike card payments.'
+    explanation_ko: IATA EasyPay는 카드 결제와 달리 자금이 사전 충전되고 발권 시 보류되므로 항공사에 차지백 위험이 없다.
+  - targetTerm: Interchange Fee
+    explanation: 'Interchange is a per-transaction cost paid to the issuer for processing a card payment, whereas a chargeback is a reversal of a transaction initiated by the cardholder or issuer; they are unrelated mechanisms though both flow through the acquirer.'
+    explanation_ko: '인터체인지는 카드 결제 처리 대가로 발급사에 지급하는 거래당 비용인 반면, Chargeback은 카드 소지자나 발급사가 개시하는 거래 취소(반환)다. 둘 다 매입사를 거치지만 서로 다른 별개의 메커니즘이다.'
 sources:
   - name: EMV 3-D Secure
     org: EMVCo
@@ -60,13 +69,16 @@ Chargebacks follow card scheme rules (e.g. Visa, Mastercard) with defined reason
 
 # Related
 - [Merchant of Record](/common/pay/merchant-of-record.md) — related
-- [3-D Secure](/common/pay/3-d-secure.md) — related
-- [Refund](/air/air-ticket/refund.md) — related
+- [3-D Secure](/common/pay/3-d-secure.md) — contrasts
+- [Refund](/air/air-ticket/refund.md) — contrasts
 - [VCC](/common/pay/vcc.md) — related
 
 # Distinctions
 - **Chargeback** vs [Refund](/air/air-ticket/refund.md) — A refund is voluntarily issued by the merchant, whereas a chargeback is a forced reversal initiated by the cardholder's issuer through the card network.
 - **Chargeback** vs [3-D Secure](/common/pay/3-d-secure.md) — A chargeback is a post-transaction dispute; 3-D Secure is pre-transaction authentication that can reduce fraud chargeback liability.
+- **Chargeback** vs [Chargeback Reason Code](/common/pay/chargeback-reason-code.md) — A chargeback is the dispute and forced reversal itself; the reason code is the standardized label that classifies that dispute and sets the evidence rules and deadlines.
+- **Chargeback** vs [IATA EasyPay](/common/pay/iata-easypay.md) — IATA EasyPay carries no chargeback risk for airlines because funds are pre-funded and blocked at issuance, unlike card payments.
+- **Chargeback** vs [Interchange Fee](/common/pay/interchange-fee.md) — Interchange is a per-transaction cost paid to the issuer for processing a card payment, whereas a chargeback is a reversal of a transaction initiated by the cardholder or issuer; they are unrelated mechanisms though both flow through the acquirer.
 
 # Citations
 [1] [EMVCo — EMV 3-D Secure](https://www.emvco.com/emv-technologies/3-d-secure/)

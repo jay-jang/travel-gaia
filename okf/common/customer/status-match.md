@@ -22,7 +22,7 @@ aliases:
 relationships:
   - type: related
     targetTerm: Loyalty Tier Status
-  - type: related
+  - type: broader
     targetTerm: Frequent Flyer Program
   - type: related
     targetTerm: Transfer Partner
@@ -38,17 +38,17 @@ sources:
     org: Travel loyalty media
     version: ''
     section: ''
-    url: ''
+    url: 'https://thepointsguy.com/loyalty-programs/airline-status-matches-challenges/'
   - name: 'Hotel Loyalty Program Status Matches & Challenges [2026 Guide]'
     org: Travel loyalty media
     version: ''
     section: ''
-    url: ''
+    url: 'https://upgradedpoints.com/travel/hotels/hotel-status-matches-challenges/'
   - name: Elite Status with WorldHotels Rewards (Status Match)
     org: WorldHotels Rewards
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.worldhotels.com/content/luxury-hotels/en_US/rewards/status-match.html'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M13 9l3 5 5 1-4 4 1 5-5-3-5 3 1-5-4-4 5-1z"/><path d="M35 9l3 5 5 1-4 4 1 5-5-3"/><path d="M20 28h8M20 28l3-3M28 28l-3 3"/><path d="M28 37h-8M28 37l-3 3M20 37l3-3"/></svg>
 ---
 
@@ -64,7 +64,7 @@ Status matches are a widely used competitive practice across airline and hotel l
 
 # Related
 - [Loyalty Tier Status](/common/customer/loyalty-tier-status.md) — related
-- [Frequent Flyer Program](/common/customer/frequent-flyer-program.md) — related
+- [Frequent Flyer Program](/common/customer/frequent-flyer-program.md) — broader
 - [Transfer Partner](/common/customer/transfer-partner.md) — related
 
 # Distinctions
@@ -72,6 +72,6 @@ Status matches are a widely used competitive practice across airline and hotel l
 - **Status Match** vs [Transfer Partner](/common/customer/transfer-partner.md) — A Status Match moves elite tier recognition between programs; a Transfer Partner relationship moves redeemable points/miles between programs at a defined ratio.
 
 # Citations
-[1] Travel loyalty media — Looking for an airline status match? Our guide in 2026
-[2] Travel loyalty media — Hotel Loyalty Program Status Matches & Challenges [2026 Guide]
-[3] WorldHotels Rewards — Elite Status with WorldHotels Rewards (Status Match)
+[1] [Travel loyalty media — Looking for an airline status match? Our guide in 2026](https://thepointsguy.com/loyalty-programs/airline-status-matches-challenges/)
+[2] [Travel loyalty media — Hotel Loyalty Program Status Matches & Challenges [2026 Guide]](https://upgradedpoints.com/travel/hotels/hotel-status-matches-challenges/)
+[3] [WorldHotels Rewards — Elite Status with WorldHotels Rewards (Status Match)](https://www.worldhotels.com/content/luxury-hotels/en_US/rewards/status-match.html)

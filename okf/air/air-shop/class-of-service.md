@@ -29,7 +29,7 @@ providerTerms:
     context_ko: GDS는 Record 6 RBD 데이터를 통해 각 운임을 하나 이상의 booking class 문자에 매핑한다.
     relationship: same
 relationships:
-  - type: related
+  - type: sameAs
     targetTerm: RBD
   - type: related
     targetTerm: Availability
@@ -46,7 +46,7 @@ sources:
     name: Booking Class & Cabin (RBD) - Record 6
     version: ''
     section: RBD / Booking Class
-    url: ''
+    url: 'https://support.travelport.com/webhelp/faresandpricingagencyhelp/Content/Booking%20Class%20RBD%20(Record%206).htm'
   - org: IATA
     name: Passenger Fares and Ticketing
     version: ''
@@ -72,7 +72,7 @@ In airline distribution the term Class of Service is commonly used interchangeab
 | Travelport | `Booking Class / RBD (Record 6)` | same | GDS maps each fare to one or more booking-class letters via Record 6 RBD data. |
 
 # Related
-- [RBD](/air/air-shop/rbd.md) — related
+- [RBD](/air/air-shop/rbd.md) — sameAs
 - [Availability](/air/air-shop/availability.md) — related
 - [Fare Basis Code](/air/air-shop/fare-basis-code.md) — related
 - [Segment](/air/air-ops/segment.md) — related
@@ -81,5 +81,5 @@ In airline distribution the term Class of Service is commonly used interchangeab
 - **Class of Service** vs [RBD](/air/air-shop/rbd.md) — RBD (Reservation Booking Designator) is the formal name for the inventory class code; Class of Service is the more colloquial term for the same concept, though it is sometimes loosely used to mean the marketing cabin.
 
 # Citations
-[1] Travelport — Booking Class & Cabin (RBD) - Record 6 — RBD / Booking Class
+[1] [Travelport — Booking Class & Cabin (RBD) - Record 6 — RBD / Booking Class](https://support.travelport.com/webhelp/faresandpricingagencyhelp/Content/Booking%20Class%20RBD%20(Record%206).htm)
 [2] [IATA — Passenger Fares and Ticketing — Booking class / class of service](https://www.iata.org/en/training/subject-areas/fares-ticketing-courses/)

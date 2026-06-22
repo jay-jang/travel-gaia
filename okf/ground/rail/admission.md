@@ -23,7 +23,7 @@ aliases:
 relationships:
   - type: parent
     targetTerm: OSDM
-  - type: related
+  - type: contrasts
     targetTerm: Seat Reservation
   - type: related
     targetTerm: Non-integrated Reservation Ticket (NRT)
@@ -66,7 +66,7 @@ OSDM은 오퍼를 admission, reservation, ancillary로 분리한다. admission�
 
 # Related
 - [OSDM](/ground/rail/osdm.md) — parent
-- [Seat Reservation](/ground/rail/seat-reservation.md) — related
+- [Seat Reservation](/ground/rail/seat-reservation.md) — contrasts
 - [Non-integrated Reservation Ticket (NRT)](/ground/rail/non-integrated-reservation-ticket-nrt.md) — related
 - [Integrated Reservation Ticket (IRT)](/ground/rail/integrated-reservation-ticket-irt.md) — related
 - [Ancillary Service](/air/air-ticket/ancillary-service.md) — related

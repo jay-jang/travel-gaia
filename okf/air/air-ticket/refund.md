@@ -45,17 +45,44 @@ distinctions:
   - targetTerm: Chargeback
     explanation: A refund is a merchant-initiated return of funds; a chargeback is a cardholder-initiated dispute forced through the card network.
     explanation_ko: '환불은 가맹점이 주도하는 자금 반환이며, 지불 거절(chargeback)은 카드 소지자가 주도하여 카드 네트워크를 통해 강제되는 분쟁이다.'
+  - targetTerm: Agency Credit Memo (ACM)
+    explanation: 'A refund returns value for an unused ticket; an ACM is the back-office BSP/ARC credit document between airline and agent, which may be the vehicle for passing a refund or correction back to the agent.'
+    explanation_ko: 'Refund는 미사용 항공권의 가치를 돌려주는 것이고, ACM은 항공사와 대리점 사이의 후선 업무 BSP/ARC 대변 문서로, 환불이나 정정을 대리점에 전달하는 수단이 될 수 있다.'
+  - targetTerm: Agency Debit Memo (ADM)
+    explanation: 'A refund returns value to a customer for an unused or partially used ticket; an ADM is a back-office claim from the airline against the agent for a billing discrepancy, settled through the BSP rather than to a passenger.'
+    explanation_ko: 'Refund는 미사용·부분 사용 항공권에 대해 고객에게 가치를 돌려주지만, ADM은 청구 불일치에 대해 항공사가 대리점을 상대로 제기하는 후선 업무 청구로, 승객이 아니라 BSP를 통해 정산된다.'
+  - targetTerm: Automatic Refund Rule
+    explanation: 'Refund is the generic return of unused ticket value; the Automatic Refund Rule is the specific US regulation dictating that such refunds be automatic, in cash/original form, and within set deadlines.'
+    explanation_ko: 'Refund는 미사용 항공권 가치를 반환하는 일반 개념이고, Automatic Refund Rule은 그러한 환불을 자동으로, 현금/원래 수단으로, 정해진 기한 내에 하도록 규정하는 구체적 미국 규정이다.'
+  - targetTerm: Denied Boarding Compensation
+    explanation: A refund returns the unused ticket value; DBC is a separate penalty paid on top of (or alongside re-routing of) the passenger regardless of any refund.
+    explanation_ko: 'Refund는 미사용 항공권 가치를 반환하는 것이고, DBC는 환불 여부와 무관하게 승객에게 추가로(또는 re-routing과 함께) 지급되는 별도의 보상이다.'
+  - targetTerm: Exchange
+    explanation: An exchange applies the document's value to a new document; a refund returns the value (less penalties) as money to the form of payment. An exchange may produce a residual value that is then either refunded or forfeited.
+    explanation_ko: 'Exchange는 서류 가치를 새 서류에 적용하지만, Refund는 가치를(위약금 제외) 결제 수단으로 돌려준다. 교환은 잔여 가치를 발생시킬 수 있으며, 이는 이후 환불되거나 소멸된다.'
+  - targetTerm: Future Cruise Credit (FCC)
+    explanation: 'A refund returns money to the original form of payment; an FCC deliberately substitutes a brand-locked, time-limited credit for that cash, keeping the value inside the cruise line. Many flexible programs offer an FCC of equal or greater value in lieu of a cash refund.'
+    explanation_ko: '환불은 원결제 수단으로 돈을 돌려주는 것이지만, FCC는 그 현금을 브랜드에 묶인 기한부 크레딧으로 의도적으로 대체해 가치를 선사 내부에 유지한다. 많은 유연 프로그램이 현금 환불 대신 동등하거나 더 큰 가치의 FCC를 제공한다.'
+  - targetTerm: Residual Value
+    explanation: A refund is the return of value to the passenger; residual value is the leftover surplus from an exchange that may or may not be refundable — it can instead be forfeited or carried on an EMD/MCO.
+    explanation_ko: 'Refund는 승객에게 가치를 반환하는 것이고, residual value는 교환에서 남은 잉여분으로 환불될 수도 아닐 수도 있다. 환불 대신 소멸되거나 EMD/MCO에 보존될 수 있다.'
+  - targetTerm: Right to Re-routing
+    explanation: Reimbursement is one of the two branches of the Article 8 choice; the Right to Re-routing is the broader entitlement framing reimbursement and re-routing as alternatives the passenger selects between.
+    explanation_ko: '환불(reimbursement)은 Article 8 선택지의 두 갈래 중 하나이고, Right to Re-routing은 환불과 재경로를 승객이 선택하는 대안으로 묶는 상위 권리이다.'
+  - targetTerm: Voluntary Refunds (ATPCO Category 33)
+    explanation: Refund is the outcome of returning value to the passenger; Category 33 is the ATPCO rule data that machine-determines whether and how much of a voluntary refund is due.
+    explanation_ko: 'Refund는 승객에게 가치를 반환하는 결과이고, Category 33은 자발적 환불이 가능한지와 금액을 기계적으로 결정하는 ATPCO 규정 데이터이다.'
 sources:
   - name: Passenger Services Conference Resolutions Manual (PSCRM)
     org: IATA
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
   - name: BSP Refund procedures
     org: IATA
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/services/finance/bsp/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="16" width="30" height="20" rx="3"/><path d="M6 22h30"/><path d="M40 14a10 10 0 11-3 14"/><path d="M37 28v-5h5"/></svg>
 ---
 
@@ -82,7 +109,16 @@ Refunds are categorized as voluntary (passenger-initiated, subject to refundabil
 - **Refund** vs [Void](/air/air-ticket/void.md) — Void cancels an issuance within the same sales period at zero cost; a refund returns value after the sales/void window, typically with applicable penalties.
 - **Refund** vs [Reissue](/air/air-ticket/reissue.md) — Refund returns value to the customer; reissue exchanges the ticket for new transportation.
 - **Refund** vs [Chargeback](/common/pay/chargeback.md) — A refund is a merchant-initiated return of funds; a chargeback is a cardholder-initiated dispute forced through the card network.
+- **Refund** vs [Agency Credit Memo (ACM)](/air/air-ticket/agency-credit-memo-acm.md) — A refund returns value for an unused ticket; an ACM is the back-office BSP/ARC credit document between airline and agent, which may be the vehicle for passing a refund or correction back to the agent.
+- **Refund** vs [Agency Debit Memo (ADM)](/air/air-ticket/agency-debit-memo-adm.md) — A refund returns value to a customer for an unused or partially used ticket; an ADM is a back-office claim from the airline against the agent for a billing discrepancy, settled through the BSP rather than to a passenger.
+- **Refund** vs [Automatic Refund Rule](/common/disruption/automatic-refund-rule.md) — Refund is the generic return of unused ticket value; the Automatic Refund Rule is the specific US regulation dictating that such refunds be automatic, in cash/original form, and within set deadlines.
+- **Refund** vs [Denied Boarding Compensation](/common/disruption/denied-boarding-compensation.md) — A refund returns the unused ticket value; DBC is a separate penalty paid on top of (or alongside re-routing of) the passenger regardless of any refund.
+- **Refund** vs [Exchange](/air/air-ticket/exchange.md) — An exchange applies the document's value to a new document; a refund returns the value (less penalties) as money to the form of payment. An exchange may produce a residual value that is then either refunded or forfeited.
+- **Refund** vs [Future Cruise Credit (FCC)](/cruise/cruise/future-cruise-credit-fcc.md) — A refund returns money to the original form of payment; an FCC deliberately substitutes a brand-locked, time-limited credit for that cash, keeping the value inside the cruise line. Many flexible programs offer an FCC of equal or greater value in lieu of a cash refund.
+- **Refund** vs [Residual Value](/air/air-ticket/residual-value.md) — A refund is the return of value to the passenger; residual value is the leftover surplus from an exchange that may or may not be refundable — it can instead be forfeited or carried on an EMD/MCO.
+- **Refund** vs [Right to Re-routing](/common/disruption/right-to-re-routing.md) — Reimbursement is one of the two branches of the Article 8 choice; the Right to Re-routing is the broader entitlement framing reimbursement and re-routing as alternatives the passenger selects between.
+- **Refund** vs [Voluntary Refunds (ATPCO Category 33)](/air/air-ticket/voluntary-refunds-atpco-category-33.md) — Refund is the outcome of returning value to the passenger; Category 33 is the ATPCO rule data that machine-determines whether and how much of a voluntary refund is due.
 
 # Citations
-[1] IATA — Passenger Services Conference Resolutions Manual (PSCRM)
-[2] IATA — BSP Refund procedures
+[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
+[2] [IATA — BSP Refund procedures](https://www.iata.org/en/services/finance/bsp/)

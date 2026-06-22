@@ -42,12 +42,12 @@ sources:
     name: Airline Industry Data Model (AIDM)
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/aidm/'
   - org: IATA
     name: AIDM Implementation Guide / About the AIDM Repository
     version: ''
     section: ''
-    url: ''
+    url: 'https://guides.developer.iata.org/docs/21-4_ImplementationGuide.pdf'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="24" cy="12" rx="14" ry="5"/><path d="M10 12v24c0 2.8 6.3 5 14 5s14-2.2 14-5V12"/><path d="M10 24c0 2.8 6.3 5 14 5s14-2.2 14-5"/><circle cx="24" cy="12" r="1.5" fill="currentColor"/></svg>
 ---
 
@@ -72,5 +72,5 @@ First released in early 2016, the AIDM is intended to become a single point of a
 - **Airline Industry Data Model (AIDM)** vs [Enhanced and Simplified Distribution (EDIST)](/common/standards/enhanced-and-simplified-distribution-edist.md) — AIDM defines the vocabulary and relationships; EDIST is the concrete XML message schema family derived from the AIDM concepts.
 
 # Citations
-[1] IATA — Airline Industry Data Model (AIDM)
-[2] IATA — AIDM Implementation Guide / About the AIDM Repository
+[1] [IATA — Airline Industry Data Model (AIDM)](https://www.iata.org/aidm/)
+[2] [IATA — AIDM Implementation Guide / About the AIDM Repository](https://guides.developer.iata.org/docs/21-4_ImplementationGuide.pdf)

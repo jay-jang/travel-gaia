@@ -30,7 +30,7 @@ relationships:
     targetTerm: BSP
   - type: related
     targetTerm: ARC
-  - type: related
+  - type: narrower
     targetTerm: IATA EasyPay
   - type: related
     targetTerm: ONE Order
@@ -38,12 +38,15 @@ distinctions:
   - targetTerm: VCC
     explanation: 'A VCC is one specific instrument that can be used as a form of payment, whereas Form of Payment is the general ticketing element that records whichever instrument or method was used.'
     explanation_ko: 'VCC는 지불수단으로 사용될 수 있는 하나의 특정 결제 수단인 반면, Form of Payment은 어떤 수단·방법이 사용되었든 그것을 기록하는 일반적인 발권 요소다.'
+  - targetTerm: Transparency in Payments (TIP)
+    explanation: Form of Payment is the ticketing element recording how a sale was paid; TIP is the policy framework governing which forms of payment an airline will accept through the agency channel.
+    explanation_ko: 'Form of Payment은 판매가 어떻게 결제되었는지를 기록하는 발권 요소이고, TIP는 항공사가 여행사 채널을 통해 어떤 지불수단을 수용할지 규율하는 정책 프레임워크다.'
 sources:
   - org: IATA
     name: Passenger Services Conference Resolutions Manual (PSCRM)
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="13" width="28" height="18" rx="2.5"/><line x1="6" y1="19" x2="34" y2="19"/><line x1="11" y1="26" x2="18" y2="26"/><circle cx="34" cy="32" r="7"/><path d="M34 28.5v3.5l2.5 1.5"/></svg>
 ---
 
@@ -62,11 +65,12 @@ Form of Payment은 항공권과 EMD의 핵심 요소로, 고객이 어떻게 결
 - [EMD](/air/air-ticket/emd.md) — related
 - [BSP](/common/pay/bsp.md) — related
 - [ARC](/common/pay/arc.md) — related
-- [IATA EasyPay](/common/pay/iata-easypay.md) — related
+- [IATA EasyPay](/common/pay/iata-easypay.md) — narrower
 - [ONE Order](/common/standards/one-order.md) — related
 
 # Distinctions
 - **Form of Payment** vs [VCC](/common/pay/vcc.md) — A VCC is one specific instrument that can be used as a form of payment, whereas Form of Payment is the general ticketing element that records whichever instrument or method was used.
+- **Form of Payment** vs [Transparency in Payments (TIP)](/common/pay/transparency-in-payments-tip.md) — Form of Payment is the ticketing element recording how a sale was paid; TIP is the policy framework governing which forms of payment an airline will accept through the agency channel.
 
 # Citations
-[1] IATA — Passenger Services Conference Resolutions Manual (PSCRM)
+[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)

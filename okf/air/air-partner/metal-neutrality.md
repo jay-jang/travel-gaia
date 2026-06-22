@@ -27,7 +27,7 @@ providerTerms:
     context_ko: '미국 DOT는 수익/이익이 공유되어 어느 항공사가 항공편을 운항하든 파트너들이 경제적으로 무차별할 때, 면제받은 조인트 벤처를 ''metal neutral''로 규정한다.'
     relationship: same
 relationships:
-  - type: related
+  - type: broader
     targetTerm: Joint Venture
   - type: related
     targetTerm: Antitrust Immunity
@@ -50,12 +50,12 @@ sources:
     org: 'U.S. Department of Justice, Antitrust Division'
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.justice.gov/atr/antitrust-immunity-and-international-airline-alliances'
   - name: Joint ventures help airlines deliver choice to consumers (metal neutrality explained)
     org: IATA
     version: ''
     section: ''
-    url: ''
+    url: 'https://airlines.iata.org/2016/08/05/strategizing-success'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6v6M24 36v6"/><polygon points="24 12 30 18 24 24 18 18"/><path d="M10 30l6-3 4 5-6 3z" fill="currentColor" stroke="none"/><path d="M38 30l-6-3-4 5 6 3z" fill="currentColor" stroke="none"/><path d="M14 24h-6M40 24h-6"/></svg>
 ---
 
@@ -76,7 +76,7 @@ metal-neutral 조인트 벤처에서 파트너들은 적용 대상 시장의 수
 | U.S. Department of Transportation | `Metal neutrality` | same | The US DOT characterizes immunized joint ventures as 'metal neutral' when partners are economically indifferent to which carrier operates a flight because revenue/profit is shared. |
 
 # Related
-- [Joint Venture](/air/air-partner/joint-venture.md) — related
+- [Joint Venture](/air/air-partner/joint-venture.md) — broader
 - [Antitrust Immunity](/air/air-partner/antitrust-immunity.md) — related
 - [Airline Alliance](/air/air-partner/airline-alliance.md) — related
 - [Proration](/air/air-partner/proration.md) — related
@@ -87,5 +87,5 @@ metal-neutral 조인트 벤처에서 파트너들은 적용 대상 시장의 수
 - **Metal Neutrality** vs [Codeshare](/air/air-partner/codeshare.md) — A codeshare can still leave each carrier favoring its own flights for its own revenue; metal neutrality removes that incentive entirely by pooling the economic result across partners.
 
 # Citations
-[1] U.S. Department of Justice, Antitrust Division — Antitrust Immunity and International Airline Alliances
-[2] IATA — Joint ventures help airlines deliver choice to consumers (metal neutrality explained)
+[1] [U.S. Department of Justice, Antitrust Division — Antitrust Immunity and International Airline Alliances](https://www.justice.gov/atr/antitrust-immunity-and-international-airline-alliances)
+[2] [IATA — Joint ventures help airlines deliver choice to consumers (metal neutrality explained)](https://airlines.iata.org/2016/08/05/strategizing-success)

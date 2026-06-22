@@ -22,7 +22,7 @@ aliases:
   - Airport Station Code
   - Outstation Code
 relationships:
-  - type: related
+  - type: contrasts
     targetTerm: Airport Code
   - type: related
     targetTerm: City Code
@@ -37,6 +37,9 @@ distinctions:
   - targetTerm: City Code
     explanation: 'A station code may resolve to a single airport or, loosely, a metro area; a city code specifically denotes the metropolitan area aggregating multiple airports.'
     explanation_ko: '스테이션 코드는 단일 공항으로 해석되거나 느슨하게 대도시권을 가리킬 수 있고, 도시 코드는 여러 공항을 묶는 대도시권을 명확히 지칭한다.'
+  - targetTerm: RICS Code (Company Code)
+    explanation: 'RICS identifies the company (an organisation such as a railway undertaking or distributor); a station/location code identifies a physical point such as a station. RICS is a company identifier, not a place identifier — the rail place identifier is the UIC location code held in the CRD/ENEE.'
+    explanation_ko: 'RICS는 회사(철도사업자·유통사 같은 조직)를 식별하고, station/location code는 역과 같은 물리적 지점을 식별한다. RICS는 장소가 아니라 회사 식별자이며, 철도의 장소 식별자는 CRD/ENEE에 담긴 UIC location code다.'
 sources:
   - org: IATA
     name: IATA Location Codes (fact sheet)
@@ -57,7 +60,7 @@ icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none
 **Aliases:** `Station`, `Airport Station Code`, `Outstation Code`
 
 # Related
-- [Airport Code](/common/codes/airport-code.md) — related
+- [Airport Code](/common/codes/airport-code.md) — contrasts
 - [City Code](/common/codes/city-code.md) — related
 - [IATA Code](/common/codes/iata-code.md) — related
 - [IROPS](/air/air-partner/irops.md) — related
@@ -65,6 +68,7 @@ icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none
 # Distinctions
 - **Station Code** vs [Airport Code](/common/codes/airport-code.md) — A station code is the same IATA location code used operationally to mean an airline's location/presence; 'airport code' names the code itself as the identifier of an airport regardless of operational use.
 - **Station Code** vs [City Code](/common/codes/city-code.md) — A station code may resolve to a single airport or, loosely, a metro area; a city code specifically denotes the metropolitan area aggregating multiple airports.
+- **Station Code** vs [RICS Code (Company Code)](/ground/rail/rics-code.md) — RICS identifies the company (an organisation such as a railway undertaking or distributor); a station/location code identifies a physical point such as a station. RICS is a company identifier, not a place identifier — the rail place identifier is the UIC location code held in the CRD/ENEE.
 
 # Citations
 [1] [IATA — IATA Location Codes (fact sheet)](https://www.iata.org/en/iata-repository/pressroom/fact-sheets/fact-sheet-iata-location-codes/)

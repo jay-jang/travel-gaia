@@ -40,17 +40,29 @@ distinctions:
   - targetTerm: ARI
     explanation: 'ARI is the data (availability, rates, inventory) being synchronized; the Channel Manager is the tool that synchronizes it.'
     explanation_ko: 'ARI는 동기화되는 데이터(가용성, 요금, 인벤토리)이고, 채널 매니저는 그것을 동기화하는 도구다.'
+  - targetTerm: Booking Engine
+    explanation: 'A channel manager distributes ARI outbound to many third-party channels; the booking engine sells inbound on the hotel''s own direct channel. They are complementary, not the same.'
+    explanation_ko: '채널 매니저는 ARI를 다수의 제3자 채널로 외부 유통하고, 부킹 엔진은 호텔 자체 직접 채널에서 판매를 받아들인다. 둘은 상호 보완적이며 동일하지 않다.'
+  - targetTerm: Connectivity Partner Program
+    explanation: A channel manager is the software that connects a hotel to OTAs; the Connectivity Partner Program is the OTA's certification/tiering scheme that qualifies and ranks such software.
+    explanation_ko: 'Channel Manager는 호텔을 OTA에 연결하는 소프트웨어이고, Connectivity Partner Program은 그러한 소프트웨어를 자격 검증하고 등급을 매기는 OTA의 인증·등급 체계다.'
+  - targetTerm: Hotel Switch
+    explanation: A channel manager is the hotel-side tool a single property uses to manage its rates and inventory across channels; a switch is the neutral many-to-many routing layer that connects CRS/PMS systems to large distribution networks. Channel managers often connect to channels via switches.
+    explanation_ko: '채널 매니저는 개별 호텔이 채널 전반에 걸쳐 요금·재고를 관리하는 호텔 측 도구이고, 스위치는 CRS/PMS를 대규모 유통망에 연결하는 중립적 다대다 라우팅 계층이다. 채널 매니저는 종종 스위치를 통해 채널에 연결된다.'
+  - targetTerm: Single Image Inventory
+    explanation: A channel manager distributes and synchronizes inventory across channels and can also work with per-channel allotments; Single Image Inventory specifically means there is only one undivided pool that all channels share.
+    explanation_ko: 'Channel Manager는 인벤토리를 여러 채널에 분배·동기화하며 채널별 할당과도 함께 작동할 수 있지만, Single Image Inventory는 모든 채널이 공유하는 분할되지 않은 단일 풀만 존재함을 구체적으로 의미한다.'
 sources:
   - name: OpenTravel Specification
     org: OpenTravel Alliance
     version: ''
     section: ''
-    url: ''
+    url: 'https://opentravel.org/download-specs/'
   - name: HTNG interface specifications
     org: HTNG
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.ahla.com/htng-technical-specifications'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="18" y="18" width="12" height="12" rx="2"/><rect x="4" y="6" width="10" height="7" rx="1.5"/><rect x="34" y="6" width="10" height="7" rx="1.5"/><rect x="4" y="35" width="10" height="7" rx="1.5"/><rect x="34" y="35" width="10" height="7" rx="1.5"/><path d="M18 21l-7-5M30 21l7-5M18 27l-7 5M30 27l7 5"/></svg>
 ---
 
@@ -76,7 +88,11 @@ The Channel Manager is the connectivity/middleware layer between a hotel's inven
 # Distinctions
 - **Channel Manager** vs [CRS](/lodging/hotel-dist/crs.md) — A Channel Manager is the distribution/connectivity layer that syncs ARI to channels; a CRS is the central inventory and reservation repository (which may include channel management).
 - **Channel Manager** vs [ARI](/lodging/hotel-dist/ari.md) — ARI is the data (availability, rates, inventory) being synchronized; the Channel Manager is the tool that synchronizes it.
+- **Channel Manager** vs [Booking Engine](/lodging/hotel-dist/booking-engine.md) — A channel manager distributes ARI outbound to many third-party channels; the booking engine sells inbound on the hotel's own direct channel. They are complementary, not the same.
+- **Channel Manager** vs [Connectivity Partner Program](/lodging/hotel-dist/connectivity-partner-program.md) — A channel manager is the software that connects a hotel to OTAs; the Connectivity Partner Program is the OTA's certification/tiering scheme that qualifies and ranks such software.
+- **Channel Manager** vs [Hotel Switch](/lodging/hotel-dist/hotel-switch.md) — A channel manager is the hotel-side tool a single property uses to manage its rates and inventory across channels; a switch is the neutral many-to-many routing layer that connects CRS/PMS systems to large distribution networks. Channel managers often connect to channels via switches.
+- **Channel Manager** vs [Single Image Inventory](/lodging/hotel-dist/single-image-inventory.md) — A channel manager distributes and synchronizes inventory across channels and can also work with per-channel allotments; Single Image Inventory specifically means there is only one undivided pool that all channels share.
 
 # Citations
-[1] OpenTravel Alliance — OpenTravel Specification
-[2] HTNG — HTNG interface specifications
+[1] [OpenTravel Alliance — OpenTravel Specification](https://opentravel.org/download-specs/)
+[2] [HTNG — HTNG interface specifications](https://www.ahla.com/htng-technical-specifications)

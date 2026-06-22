@@ -23,7 +23,7 @@ aliases:
   - ISO 3166-2 Code
   - Region Code
 relationships:
-  - type: related
+  - type: broader
     targetTerm: ISO 3166 Country Code
   - type: related
     targetTerm: UN/LOCODE
@@ -59,7 +59,7 @@ ISO 3166-2는 ISO 3166-1의 alpha-2 국가 코드를 직접 기반으로 한다.
 **Aliases:** `Country Subdivision Code`, `ISO 3166-2 Code`, `Region Code`
 
 # Related
-- [ISO 3166 Country Code](/common/codes/iso-3166-country-code.md) — related
+- [ISO 3166 Country Code](/common/codes/iso-3166-country-code.md) — broader
 - [UN/LOCODE](/common/codes/un-locode.md) — related
 
 # Distinctions

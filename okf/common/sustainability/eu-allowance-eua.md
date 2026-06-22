@@ -27,7 +27,7 @@ aliases:
 relationships:
   - type: parent
     targetTerm: EU Emissions Trading System (EU ETS)
-  - type: related
+  - type: contrasts
     targetTerm: CORSIA Eligible Emissions Unit (EEU)
 distinctions:
   - targetTerm: CORSIA Eligible Emissions Unit (EEU)
@@ -41,12 +41,12 @@ sources:
     name: EU Emissions Trading System (EU ETS) — allowances
     version: ''
     section: ''
-    url: ''
+    url: 'https://climate.ec.europa.eu/eu-action/carbon-markets/about-eu-ets_en'
   - org: EASA
     name: EU Emissions Trading System
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.easa.europa.eu/en/domains/environment/eaer/market-based-measures/eu-emissions-trading-system'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="14" width="30" height="20" rx="3"/><circle cx="21" cy="24" r="5"/><path d="M21 21v6M19 22h3a1.5 1.5 0 0 1 0 3h-2"/><path d="M36 19a5 5 0 0 1 0 10"/><path d="M12 14v-2M30 14v-2"/></svg>
 ---
 
@@ -62,12 +62,12 @@ EUA는 EU 탄소가격제의 핵심 의무이행 수단이다. 가격은 공급(
 
 # Related
 - [EU Emissions Trading System (EU ETS)](/common/sustainability/eu-emissions-trading-system-eu-ets.md) — parent
-- [CORSIA Eligible Emissions Unit (EEU)](/common/sustainability/corsia-eligible-emissions-unit-eeu.md) — related
+- [CORSIA Eligible Emissions Unit (EEU)](/common/sustainability/corsia-eligible-emissions-unit-eeu.md) — contrasts
 
 # Distinctions
 - **EU Allowance (EUA)** vs [CORSIA Eligible Emissions Unit (EEU)](/common/sustainability/corsia-eligible-emissions-unit-eeu.md) — An EUA is a cap-based permit to emit one tonne under the EU ETS, surrendered for intra-EEA flights; a CORSIA Emissions Unit is a project-based offset credit cancelled under CORSIA for international flights.
 - **EU Allowance (EUA)** vs [EU Emissions Trading System (EU ETS)](/common/sustainability/eu-emissions-trading-system-eu-ets.md) — The EUA is the unit/instrument; the EU ETS is the scheme that issues, caps, and requires the surrender of those units.
 
 # Citations
-[1] European Commission — EU Emissions Trading System (EU ETS) — allowances
-[2] EASA — EU Emissions Trading System
+[1] [European Commission — EU Emissions Trading System (EU ETS) — allowances](https://climate.ec.europa.eu/eu-action/carbon-markets/about-eu-ets_en)
+[2] [EASA — EU Emissions Trading System](https://www.easa.europa.eu/en/domains/environment/eaer/market-based-measures/eu-emissions-trading-system)

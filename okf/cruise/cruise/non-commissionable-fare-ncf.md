@@ -29,7 +29,7 @@ providerTerms:
 relationships:
   - type: contrasts
     targetTerm: Commissionable Rate
-  - type: related
+  - type: contrasts
     targetTerm: Net Rate
   - type: related
     targetTerm: Distribution Cost
@@ -42,27 +42,30 @@ distinctions:
   - targetTerm: Tax (YQ/YR)
     explanation: 'Airline YQ/YR carrier-imposed charges are a fare-construction tax/surcharge concept in ATPCO filings; cruise NCFs are a commercial commission-exclusion concept — both reduce what reaches the seller, but NCF is defined by commissionability, not by tax codes.'
     explanation_ko: '항공의 YQ/YR 항공사 부과 요금은 ATPCO 등록상의 운임 구성 세금/할증 개념이고, 크루즈 NCF는 상업적 수수료 제외 개념이다. 둘 다 판매자에게 돌아가는 몫을 줄이지만 NCF는 세금 코드가 아니라 수수료 지급 가능 여부로 정의된다.'
+  - targetTerm: Daily Service Charge
+    explanation: 'Both are non-fare amounts in a cruise quote, but NCF is the portion of the cruise price on which the line pays no agency commission, whereas the daily service charge is a separate gratuity collected from the guest for the crew and is not part of the fare at all.'
+    explanation_ko: '둘 다 크루즈 견적의 운임 외 금액이지만, NCF는 선사가 여행사 커미션을 지급하지 않는 크루즈 가격의 일부인 반면, 일일 서비스 차지는 승무원을 위해 승객에게서 징수하는 별도 봉사료로 운임의 일부가 전혀 아니다.'
 sources:
   - name: Norwegian Cruise Line to pay travel agent partners commission on non-commissionable fares
     org: Norwegian Cruise Line
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.ncl.com/newsroom/norwegian-cruise-line-to-pay-travel-agent-partners-commission-on-non-commissionable-fares'
   - name: NCL's NCF Commission Program FAQs
     org: Norwegian Cruise Line
     version: ''
     section: ''
-    url: ''
+    url: 'https://go.pardot.com/l/162131/2022-10-24/n7dbxj'
   - name: 'Cruise Analysis: NCF Policies As Clear As Mud'
     org: Travel Market Report
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.travelmarketreport.com/cruises/articles/cruise-analysis-ncf-policies-as-clear-as-mud'
   - name: Norwegian Cruise Line Eliminates All Non-Commissionable Fares for Travel Advisors
     org: TravelPulse
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.travelpulse.com/news/cruise/norwegian-cruise-line-eliminates-all-non-commissionable-fares-for-travel-advisors'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="15"/><path d="M24 16v16M20 20h6a3 3 0 0 1 0 6h-5M21 26l6 6"/><line x1="12" y1="36" x2="36" y2="12"/></svg>
 ---
 
@@ -84,16 +87,17 @@ Cruise lines split the total fare into a commissionable component and the NCF; a
 
 # Related
 - [Commissionable Rate](/lodging/hotel-dist/commissionable-rate.md) — contrasts
-- [Net Rate](/lodging/hotel-dist/net-rate.md) — related
+- [Net Rate](/lodging/hotel-dist/net-rate.md) — contrasts
 - [Distribution Cost](/lodging/hotel-dist/distribution-cost.md) — related
 - [Cabin Category](/cruise/cruise/cabin-category.md) — related
 
 # Distinctions
 - **Non-Commissionable Fare (NCF)** vs [Commissionable Rate](/lodging/hotel-dist/commissionable-rate.md) — A commissionable rate is the part of the fare on which the advisor does earn commission; the NCF is the carved-out remainder on which they earn nothing — together they make up the total cruise price.
 - **Non-Commissionable Fare (NCF)** vs [Tax (YQ/YR)](/air/air-shop/tax-yq-yr.md) — Airline YQ/YR carrier-imposed charges are a fare-construction tax/surcharge concept in ATPCO filings; cruise NCFs are a commercial commission-exclusion concept — both reduce what reaches the seller, but NCF is defined by commissionability, not by tax codes.
+- **Non-Commissionable Fare (NCF)** vs [Daily Service Charge](/cruise/cruise/daily-service-charge.md) — Both are non-fare amounts in a cruise quote, but NCF is the portion of the cruise price on which the line pays no agency commission, whereas the daily service charge is a separate gratuity collected from the guest for the crew and is not part of the fare at all.
 
 # Citations
-[1] Norwegian Cruise Line — Norwegian Cruise Line to pay travel agent partners commission on non-commissionable fares
-[2] Norwegian Cruise Line — NCL's NCF Commission Program FAQs
-[3] Travel Market Report — Cruise Analysis: NCF Policies As Clear As Mud
-[4] TravelPulse — Norwegian Cruise Line Eliminates All Non-Commissionable Fares for Travel Advisors
+[1] [Norwegian Cruise Line — Norwegian Cruise Line to pay travel agent partners commission on non-commissionable fares](https://www.ncl.com/newsroom/norwegian-cruise-line-to-pay-travel-agent-partners-commission-on-non-commissionable-fares)
+[2] [Norwegian Cruise Line — NCL's NCF Commission Program FAQs](https://go.pardot.com/l/162131/2022-10-24/n7dbxj)
+[3] [Travel Market Report — Cruise Analysis: NCF Policies As Clear As Mud](https://www.travelmarketreport.com/cruises/articles/cruise-analysis-ncf-policies-as-clear-as-mud)
+[4] [TravelPulse — Norwegian Cruise Line Eliminates All Non-Commissionable Fares for Travel Advisors](https://www.travelpulse.com/news/cruise/norwegian-cruise-line-eliminates-all-non-commissionable-fares-for-travel-advisors)

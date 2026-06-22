@@ -42,12 +42,18 @@ distinctions:
   - targetTerm: Involuntary Reissue
     explanation: IROPS is the disruption scenario; involuntary reissue is one of the ticketing actions used to reaccommodate passengers during IROPS.
     explanation_ko: 'IROPS는 중단 상황이고, 비자발적 재발권은 IROPS 동안 승객을 재수용하기 위해 사용되는 발권 처리 중 하나다.'
+  - targetTerm: IATA Delay Codes
+    explanation: 'IROPS describes the operational situation of irregular operations (delays, cancellations, diversions); IATA delay codes are the standardized two-character labels that classify why a specific delay occurred within that situation.'
+    explanation_ko: 'IROPS는 비정상 운항(지연·결항·회항)이라는 운영 상황 자체를 가리키는 반면, IATA 지연 코드는 그 상황 안에서 특정 지연이 왜 발생했는지를 분류하는 표준 2자리 라벨이다.'
+  - targetTerm: Re-accommodation
+    explanation: 'IROPS is the disruption scenario (delays, cancellations, diversions); re-accommodation is the specific passenger-rebooking process used to recover travelers during IROPS or after a schedule change.'
+    explanation_ko: 'IROPS는 중단 상황(지연, 취소, 회항)이고, 재수용은 IROPS 동안 또는 스케줄 변경 이후 여행객을 복구하기 위해 사용되는 구체적인 승객 재예약 과정이다.'
 sources:
   - name: Passenger Services Conference Resolutions Manual (PSCRM) — interline reaccommodation
     org: IATA
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
   - name: A4A IROPS / contingency planning guidance
     org: Airlines for America (A4A)
     version: ''
@@ -77,7 +83,9 @@ IROPS는 운영 복구(스케줄을 정상으로 되돌리는 것)와 당일 중
 # Distinctions
 - **IROPS** vs [Schedule Change](/air/air-partner/schedule-change.md) — IROPS is unplanned, day-of operational disruption; a schedule change is a planned amendment to the published schedule communicated in advance.
 - **IROPS** vs [Involuntary Reissue](/air/air-ticket/involuntary-reissue.md) — IROPS is the disruption scenario; involuntary reissue is one of the ticketing actions used to reaccommodate passengers during IROPS.
+- **IROPS** vs [IATA Delay Codes](/common/codes/iata-delay-codes.md) — IROPS describes the operational situation of irregular operations (delays, cancellations, diversions); IATA delay codes are the standardized two-character labels that classify why a specific delay occurred within that situation.
+- **IROPS** vs [Re-accommodation](/air/air-partner/re-accommodation.md) — IROPS is the disruption scenario (delays, cancellations, diversions); re-accommodation is the specific passenger-rebooking process used to recover travelers during IROPS or after a schedule change.
 
 # Citations
-[1] IATA — Passenger Services Conference Resolutions Manual (PSCRM) — interline reaccommodation
+[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM) — interline reaccommodation](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
 [2] Airlines for America (A4A) — A4A IROPS / contingency planning guidance

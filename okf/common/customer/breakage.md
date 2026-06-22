@@ -21,11 +21,11 @@ aliases:
   - Points Breakage
   - Spoilage
 relationships:
-  - type: related
+  - type: contrasts
     targetTerm: Mileage Accrual
-  - type: related
+  - type: contrasts
     targetTerm: Award Redemption
-  - type: related
+  - type: broader
     targetTerm: Frequent Flyer Program
   - type: related
     targetTerm: Transfer Partner
@@ -41,17 +41,17 @@ sources:
     org: Loyalty/accounting advisory
     version: ''
     section: ''
-    url: ''
+    url: 'https://thewisemarketer.com/a-professionals-guide-to-loyalty-program-liability/'
   - name: What CFOs Need to Know About Loyalty Program Liability in 2026
     org: Loyalty/accounting advisory
     version: ''
     section: ''
-    url: ''
+    url: 'https://blog.brandmovers.com/what-cfos-need-to-know-about-loyalty-program-liability-in-2026'
   - name: Revenue from Contracts with Customers (IFRS 15) / Revenue from Contracts with Customers (ASC 606)
     org: IASB / FASB
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.ifrs.org/issued-standards/list-of-standards/ifrs-15-revenue-from-contracts-with-customers/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="15"/><path d="M24 9v6M24 33v6M9 24h6M33 24h6"/><path d="M18 18l5 6-5 6M30 18l-2 6 2 6" stroke-dasharray="3 3"/></svg>
 ---
 
@@ -66,9 +66,9 @@ Under revenue-recognition standards (IFRS 15 and ASC 606), points awarded with a
 **Aliases:** `Breakage`, `Loyalty Breakage`, `Points Breakage`, `Spoilage`
 
 # Related
-- [Mileage Accrual](/common/customer/mileage-accrual.md) — related
-- [Award Redemption](/common/customer/award-redemption.md) — related
-- [Frequent Flyer Program](/common/customer/frequent-flyer-program.md) — related
+- [Mileage Accrual](/common/customer/mileage-accrual.md) — contrasts
+- [Award Redemption](/common/customer/award-redemption.md) — contrasts
+- [Frequent Flyer Program](/common/customer/frequent-flyer-program.md) — broader
 - [Transfer Partner](/common/customer/transfer-partner.md) — related
 
 # Distinctions
@@ -76,6 +76,6 @@ Under revenue-recognition standards (IFRS 15 and ASC 606), points awarded with a
 - **Breakage** vs [Mileage Accrual](/common/customer/mileage-accrual.md) — Mileage Accrual increases a member's balance and the program's liability; Breakage reduces the recognized liability by the share of that balance expected to expire unused.
 
 # Citations
-[1] Loyalty/accounting advisory — A Professional's Guide to Loyalty Program Liability
-[2] Loyalty/accounting advisory — What CFOs Need to Know About Loyalty Program Liability in 2026
-[3] IASB / FASB — Revenue from Contracts with Customers (IFRS 15) / Revenue from Contracts with Customers (ASC 606)
+[1] [Loyalty/accounting advisory — A Professional's Guide to Loyalty Program Liability](https://thewisemarketer.com/a-professionals-guide-to-loyalty-program-liability/)
+[2] [Loyalty/accounting advisory — What CFOs Need to Know About Loyalty Program Liability in 2026](https://blog.brandmovers.com/what-cfos-need-to-know-about-loyalty-program-liability-in-2026)
+[3] [IASB / FASB — Revenue from Contracts with Customers (IFRS 15) / Revenue from Contracts with Customers (ASC 606)](https://www.ifrs.org/issued-standards/list-of-standards/ifrs-15-revenue-from-contracts-with-customers/)

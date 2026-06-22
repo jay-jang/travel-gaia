@@ -20,9 +20,9 @@ aliases:
   - MoR
   - Merchant on Record
 relationships:
-  - type: related
+  - type: contrasts
     targetTerm: Agency Model
-  - type: related
+  - type: contrasts
     targetTerm: Merchant Model
   - type: related
     targetTerm: Chargeback
@@ -35,6 +35,9 @@ distinctions:
   - targetTerm: Merchant Model
     explanation: In the merchant model the intermediary becomes the Merchant of Record and shows on the cardholder's statement.
     explanation_ko: 머천트 모델에서는 중개업체가 Merchant of Record가 되어 카드 소지자의 명세서에 표시된다.
+  - targetTerm: Acquirer
+    explanation: 'The acquirer is the bank that processes and settles card transactions; the Merchant of Record is the legal seller responsible to the cardholder for the sale, which contracts with an acquirer but is not itself one.'
+    explanation_ko: 'Acquirer는 카드 거래를 처리·정산하는 은행이고, Merchant of Record는 판매에 대해 카드 소지자에게 책임지는 법적 판매자로서 매입사와 계약하지만 그 자신이 매입사는 아니다.'
 sources:
   - name: 'Merchant of Record in Travel: OTA''s Guide to Owning the Payment Flow'
     org: AltexSoft
@@ -60,14 +63,15 @@ Whether the supplier or the intermediary is the MoR depends on the distribution 
 **Aliases:** `MoR`, `Merchant on Record`
 
 # Related
-- [Agency Model](/common/pay/agency-model.md) — related
-- [Merchant Model](/common/pay/merchant-model.md) — related
+- [Agency Model](/common/pay/agency-model.md) — contrasts
+- [Merchant Model](/common/pay/merchant-model.md) — contrasts
 - [Chargeback](/common/pay/chargeback.md) — related
 - [OTA (Online Travel Agency)](/common/standards/ota-online-travel-agency.md) — related
 
 # Distinctions
 - **Merchant of Record** vs [Agency Model](/common/pay/agency-model.md) — In the agency model the supplier is the Merchant of Record; the role describes who bears payment responsibility, not the commercial model itself.
 - **Merchant of Record** vs [Merchant Model](/common/pay/merchant-model.md) — In the merchant model the intermediary becomes the Merchant of Record and shows on the cardholder's statement.
+- **Merchant of Record** vs [Acquirer](/common/pay/acquirer.md) — The acquirer is the bank that processes and settles card transactions; the Merchant of Record is the legal seller responsible to the cardholder for the sale, which contracts with an acquirer but is not itself one.
 
 # Citations
 [1] [AltexSoft — Merchant of Record in Travel: OTA's Guide to Owning the Payment Flow](https://www.altexsoft.com/blog/merchant-of-record-in-travel/)

@@ -24,7 +24,7 @@ aliases:
   - API data
   - APIS data
 relationships:
-  - type: related
+  - type: contrasts
     targetTerm: Secure Flight
   - type: related
     targetTerm: PNR
@@ -39,6 +39,9 @@ distinctions:
   - targetTerm: Secure Flight
     explanation: APIS is the international WCO/IATA/ICAO advance-passenger-data process used by many states for border and customs control; Secure Flight is the specific US TSA watch-list prescreening program with its own SFPD data set.
     explanation_ko: 'APIS는 여러 국가가 국경·세관 통제에 사용하는 국제 WCO/IATA/ICAO 사전 승객 데이터 절차이고, Secure Flight는 자체 SFPD 데이터 항목을 쓰는 미국 TSA의 감시 명단 사전 심사 프로그램이다.'
+  - targetTerm: EU PNR Directive
+    explanation: The EU PNR Directive transfers reservation-derived PNR data for terrorism and serious-crime purposes; APIS transfers passport-derived identity data for border and customs control. The two are separate carrier-to-government streams with different data sets and purposes.
+    explanation_ko: 'EU PNR Directive는 테러·중대 범죄 목적으로 예약에서 파생된 PNR 데이터를 전송하고, APIS는 국경·세관 통제를 위해 passport에서 추출된 신원 데이터를 전송한다. 둘은 데이터 항목과 목적이 다른 별개의 운송인-정부 데이터 흐름이다.'
 sources:
   - org: WCO / IATA / ICAO
     name: Guidelines on Advance Passenger Information (API)
@@ -64,7 +67,7 @@ API 데이터는 보통 체크인 시 여행자 passport의 기계판독영역(M
 **Aliases:** `Advance Passenger Information`, `API`, `API data`, `APIS data`
 
 # Related
-- [Secure Flight](/common/customer/secure-flight.md) — related
+- [Secure Flight](/common/customer/secure-flight.md) — contrasts
 - [PNR](/air/air-ops/pnr.md) — related
 - [Digital Travel Credential](/common/customer/digital-travel-credential.md) — related
 - [Customer Profile](/common/customer/customer-profile.md) — related
@@ -72,6 +75,7 @@ API 데이터는 보통 체크인 시 여행자 passport의 기계판독영역(M
 # Distinctions
 - **Advance Passenger Information System** vs [PNR](/air/air-ops/pnr.md) — APIS transmits verified identity and travel-document data drawn from the passport at check-in for border control; a PNR is the reservation record built by the booking system. APIS and PNR are the two distinct carrier-to-government data streams.
 - **Advance Passenger Information System** vs [Secure Flight](/common/customer/secure-flight.md) — APIS is the international WCO/IATA/ICAO advance-passenger-data process used by many states for border and customs control; Secure Flight is the specific US TSA watch-list prescreening program with its own SFPD data set.
+- **Advance Passenger Information System** vs [EU PNR Directive](/common/customer/eu-pnr-directive.md) — The EU PNR Directive transfers reservation-derived PNR data for terrorism and serious-crime purposes; APIS transfers passport-derived identity data for border and customs control. The two are separate carrier-to-government streams with different data sets and purposes.
 
 # Citations
 [1] [WCO / IATA / ICAO — Guidelines on Advance Passenger Information (API) — 2014](https://www.iata.org/contentassets/18a5fdb2dc144d619a8c10dc1472ae80/api-guidelines-main-text_2014.pdf)

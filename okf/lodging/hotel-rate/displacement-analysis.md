@@ -21,7 +21,7 @@ aliases:
 relationships:
   - type: related
     targetTerm: Group Block
-  - type: related
+  - type: broader
     targetTerm: Revenue Management
   - type: related
     targetTerm: Hurdle Rate
@@ -67,7 +67,7 @@ Displacement analysis는 제한된 재고를 그룹 수요와 일반(transient) 
 
 # Related
 - [Group Block](/lodging/hotel-rate/group-block.md) — related
-- [Revenue Management](/air/air-shop/revenue-management.md) — related
+- [Revenue Management](/air/air-shop/revenue-management.md) — broader
 - [Hurdle Rate](/lodging/hotel-rate/hurdle-rate.md) — related
 - [RevPAR](/lodging/hotel-rate/revpar.md) — related
 - [Overbooking](/air/air-shop/overbooking.md) — related

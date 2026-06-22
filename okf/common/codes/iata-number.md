@@ -38,6 +38,9 @@ distinctions:
   - targetTerm: ARC
     explanation: 'ARC is the U.S. settlement/accreditation body; the IATA Number is the IATA-assigned accreditation code used for BSP markets, though IATAN and ARC share location numbering.'
     explanation_ko: 'ARC는 미국의 정산·인가 기관이고, IATA 번호는 BSP 시장에서 사용되는 IATA 부여 인가 코드이다. 다만 IATAN과 ARC는 위치 번호 체계를 공유한다.'
+  - targetTerm: TIDS Code
+    explanation: 'An IATA Number is issued only to financially accredited agencies and grants ticketing/BSP settlement authority; a TIDS code merely identifies a non-accredited point of sale for recognition, reporting and commission, with no settlement rights.'
+    explanation_ko: 'IATA Number는 재정 공인을 받은 대리점에만 발급되어 발권·BSP 정산 권한을 부여하는 반면, TIDS 코드는 비공인 판매 지점을 인식·보고·커미션 목적으로 식별만 할 뿐 정산 권한이 없다.'
 sources:
   - org: IATA
     name: Travel Agent Accreditation
@@ -71,6 +74,7 @@ IATA 번호(IATA Numeric Code)는 보고, 수수료 추적, BSP 정산에 사용
 # Distinctions
 - **IATA Number** vs [Pseudo City Code](/common/codes/pseudo-city-code.md) — An IATA Number is the agency's industry accreditation/settlement identifier (7-8 digits); a Pseudo City Code / Office ID is a GDS-internal subscriber identifier scoping bookings, fares, and privileges within one GDS.
 - **IATA Number** vs [ARC](/common/pay/arc.md) — ARC is the U.S. settlement/accreditation body; the IATA Number is the IATA-assigned accreditation code used for BSP markets, though IATAN and ARC share location numbering.
+- **IATA Number** vs [TIDS Code](/common/codes/tids-code.md) — An IATA Number is issued only to financially accredited agencies and grants ticketing/BSP settlement authority; a TIDS code merely identifies a non-accredited point of sale for recognition, reporting and commission, with no settlement rights.
 
 # Citations
 [1] [IATA — Travel Agent Accreditation](https://www.iata.org/en/services/travel-agency-program/accreditation-travel/)

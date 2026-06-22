@@ -25,7 +25,7 @@ aliases:
 relationships:
   - type: contrasts
     targetTerm: Ticket Number
-  - type: related
+  - type: contrasts
     targetTerm: Airline Accounting Code
   - type: related
     targetTerm: EDIFACT
@@ -36,6 +36,12 @@ distinctions:
   - targetTerm: Airline Accounting Code
     explanation: 'The 3-digit airline accounting code is the numeric carrier code used in passenger ticket numbers; the AWB 3-digit prefix is the analogous numeric carrier identifier used in cargo, and the two numbering schemes are administered separately though both by IATA.'
     explanation_ko: '3자리 항공사 회계 코드는 여객 항공권 번호에 쓰이는 숫자 항공사 코드이고, AWB 3자리 prefix는 화물에서 쓰이는 유사한 숫자 항공사 식별자다. 두 체계 모두 IATA가 관리하지만 별개로 운영된다.'
+  - targetTerm: License Plate Number
+    explanation: 'An Air Waybill Number identifies a cargo shipment contract; the License Plate Number identifies an individual piece of passenger checked baggage for Resolution 753 tracking — different documents, different domains, different number formats.'
+    explanation_ko: 'Air Waybill Number는 항공 화물 운송 계약(shipment)을 식별하지만, License Plate Number는 Resolution 753 추적을 위해 위탁 여객 수하물 한 개를 식별한다 — 서로 다른 문서, 다른 영역, 다른 번호 체계다.'
+  - targetTerm: Standard Carrier Alpha Code
+    explanation: An Air Waybill Number identifies a single air cargo shipment; the SCAC identifies the carrier company itself and may appear on many shipping documents regardless of mode.
+    explanation_ko: 'Air Waybill Number는 단일 항공 화물 선적을 식별하지만, SCAC는 운송 회사 자체를 식별하며 운송 수단과 무관하게 여러 선적 문서에 나타날 수 있다.'
 sources:
   - org: IATA
     name: e-freight / e-AWB
@@ -62,12 +68,14 @@ AWB 번호는 보통 prefix-serial 형식으로 표기된다(예: 176-12345675).
 
 # Related
 - [Ticket Number](/common/codes/ticket-number.md) — contrasts
-- [Airline Accounting Code](/common/codes/airline-accounting-code.md) — related
+- [Airline Accounting Code](/common/codes/airline-accounting-code.md) — contrasts
 - [EDIFACT](/common/standards/edifact.md) — related
 
 # Distinctions
 - **Air Waybill Number** vs [Ticket Number](/common/codes/ticket-number.md) — A ticket number identifies a passenger document and embeds the 3-digit airline accounting (numeric) code; an AWB number identifies a cargo consignment and embeds the 3-digit IATA airline prefix, with a modulo-7 check digit on the serial.
 - **Air Waybill Number** vs [Airline Accounting Code](/common/codes/airline-accounting-code.md) — The 3-digit airline accounting code is the numeric carrier code used in passenger ticket numbers; the AWB 3-digit prefix is the analogous numeric carrier identifier used in cargo, and the two numbering schemes are administered separately though both by IATA.
+- **Air Waybill Number** vs [License Plate Number](/common/codes/license-plate-number.md) — An Air Waybill Number identifies a cargo shipment contract; the License Plate Number identifies an individual piece of passenger checked baggage for Resolution 753 tracking — different documents, different domains, different number formats.
+- **Air Waybill Number** vs [Standard Carrier Alpha Code](/common/codes/standard-carrier-alpha-code.md) — An Air Waybill Number identifies a single air cargo shipment; the SCAC identifies the carrier company itself and may appear on many shipping documents regardless of mode.
 
 # Citations
 [1] [IATA — e-freight / e-AWB](https://www.iata.org/en/programs/cargo/e/)

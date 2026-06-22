@@ -25,7 +25,7 @@ aliases:
 relationships:
   - type: sameAs
     targetTerm: RBD
-  - type: related
+  - type: contrasts
     targetTerm: Fare Basis Code
   - type: related
     targetTerm: Availability
@@ -45,7 +45,7 @@ sources:
     name: Reservations Booking Designators (RBD) standard
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
   - org: Travelport
     name: Booking Class & Cabin (RBD)
     version: ''
@@ -66,7 +66,7 @@ Class codes are not standardized across carriers: the same letter can mean diffe
 
 # Related
 - [RBD](/air/air-shop/rbd.md) — sameAs
-- [Fare Basis Code](/air/air-shop/fare-basis-code.md) — related
+- [Fare Basis Code](/air/air-shop/fare-basis-code.md) — contrasts
 - [Availability](/air/air-shop/availability.md) — related
 - [Fare Family](/air/air-shop/fare-family.md) — related
 - [Segment](/air/air-ops/segment.md) — related
@@ -76,5 +76,5 @@ Class codes are not standardized across carriers: the same letter can mean diffe
 - **Class Code** vs [Fare Basis Code](/air/air-shop/fare-basis-code.md) — The class code is one letter (the booking bucket); a fare basis code is a longer alphanumeric string whose first character is usually the class code and which encodes the full fare and its conditions.
 
 # Citations
-[1] IATA — Reservations Booking Designators (RBD) standard
+[1] [IATA — Reservations Booking Designators (RBD) standard](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
 [2] [Travelport — Booking Class & Cabin (RBD)](https://support.travelport.com/webhelp/faresandpricingagencyhelp/Content/Booking%20Class%20RBD%20(Record%206).htm)

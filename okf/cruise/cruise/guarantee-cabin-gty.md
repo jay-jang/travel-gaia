@@ -22,7 +22,7 @@ aliases:
   - Guaranteed Cabin
   - Category Guarantee
 relationships:
-  - type: related
+  - type: broader
     targetTerm: Cabin Category
   - type: related
     targetTerm: Revenue Management
@@ -49,7 +49,7 @@ sources:
     org: CruiseExperts
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.cruiseexperts.com/news/2015/09/29/what-is-a-guarantee-gty-stateroom-or-cabin-on-a-cruise/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="12" width="28" height="24" rx="2"/><path d="M19 24l4 4 7-8"/><line x1="10" y1="18" x2="38" y2="18"/></svg>
 ---
 
@@ -64,7 +64,7 @@ With a guarantee, the guest agrees to a category (e.g. 'balcony guarantee') rath
 **Aliases:** `Guarantee Stateroom`, `GTY Cabin`, `Guaranteed Cabin`, `Category Guarantee`
 
 # Related
-- [Cabin Category](/cruise/cruise/cabin-category.md) — related
+- [Cabin Category](/cruise/cruise/cabin-category.md) — broader
 - [Revenue Management](/air/air-shop/revenue-management.md) — related
 - [Availability](/air/air-shop/availability.md) — related
 - [Run of House (ROH)](/lodging/hotel-rate/run-of-house-roh.md) — contrasts
@@ -76,4 +76,4 @@ With a guarantee, the guest agrees to a category (e.g. 'balcony guarantee') rath
 
 # Citations
 [1] [Royal Caribbean International — What is a guarantee stateroom and how does it work? — FAQ](https://www.royalcaribbean.com/faq/questions/what-is-a-guarantee-stateroom)
-[2] CruiseExperts — What is a "Guarantee" (GTY) Stateroom or Cabin on a Cruise?
+[2] [CruiseExperts — What is a "Guarantee" (GTY) Stateroom or Cabin on a Cruise?](https://www.cruiseexperts.com/news/2015/09/29/what-is-a-guarantee-gty-stateroom-or-cabin-on-a-cruise/)

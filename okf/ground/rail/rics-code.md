@@ -54,17 +54,17 @@ sources:
     name: Company Codes (RICS)
     version: ''
     section: ''
-    url: ''
+    url: 'https://uic.org/support-activities/it/rics'
   - org: UIC
     name: List of numeric codes for railway companies (RICS Code)
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.uic.org/IMG/pdf/codification_4n_20151221.pdf'
   - org: ERA (European Union Agency for Railways)
     name: Organisation Code Register (OCR)
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.era.europa.eu/domains/registers/ocr_en'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="14" width="32" height="20" rx="3"/><path d="M14 22h4M14 26h7M22 22h4M28 22h6M28 26h4"/><path d="M19 34v4M29 34v4"/></svg>
 ---
 
@@ -97,6 +97,6 @@ RICS 회사코드는 UIC(코드 담당 부서를 통해)가 배정·관리하며
 - **RICS Code (Company Code)** vs [Station Code](/common/codes/station-code.md) — RICS identifies the company (an organisation such as a railway undertaking or distributor); a station/location code identifies a physical point such as a station. RICS is a company identifier, not a place identifier — the rail place identifier is the UIC location code held in the CRD/ENEE.
 
 # Citations
-[1] UIC — Company Codes (RICS)
-[2] UIC — List of numeric codes for railway companies (RICS Code)
-[3] ERA (European Union Agency for Railways) — Organisation Code Register (OCR)
+[1] [UIC — Company Codes (RICS)](https://uic.org/support-activities/it/rics)
+[2] [UIC — List of numeric codes for railway companies (RICS Code)](https://www.uic.org/IMG/pdf/codification_4n_20151221.pdf)
+[3] [ERA (European Union Agency for Railways) — Organisation Code Register (OCR)](https://www.era.europa.eu/domains/registers/ocr_en)

@@ -46,17 +46,26 @@ distinctions:
   - targetTerm: RBD
     explanation: An RBD (booking/class code) is a single-letter inventory class that prices and allocates the fare; a Booking Status Code is a two-letter code describing the reservation state of a segment regardless of which RBD it is booked in.
     explanation_ko: 'RBD(예약 클래스 코드)는 운임을 매기고 배정하는 1자리 inventory 클래스이고, Booking Status Code는 어떤 RBD로 예약됐든 segment의 예약 상태를 나타내는 2자리 코드다.'
+  - targetTerm: Action Code
+    explanation: 'A Booking Status Code is often used as the umbrella term for the two-letter codes; the action code is specifically the request-side subset and the holding code (HK, HL) is what remains in the PNR after the action/advice exchange completes.'
+    explanation_ko: 'Booking Status Code는 2자리 코드 전체를 가리키는 상위 용어로 자주 쓰이며, action code는 그중 요청 측 하위집합이고, holding code(HK, HL)는 action/advice 교환이 끝난 뒤 PNR에 남는 것이다.'
+  - targetTerm: Advice Code
+    explanation: Advice codes are transient reply codes that resolve into a holding Booking Status Code (e.g. KK becomes HK) and then drop to PNR history; the Booking Status Code is the persistent state the segment holds afterward.
+    explanation_ko: 'advice code는 보유 Booking Status Code로 정리되는 일시적 회신 코드이고(예: KK는 HK로), 이후 PNR history로 떨어진다. Booking Status Code는 그 뒤 segment가 유지하는 지속 상태다.'
+  - targetTerm: Availability Status Message (AVS)
+    explanation: 'A Booking Status Code (e.g. HK, SS, UC) describes the state of one segment inside a specific PNR; an AVS describes, at the inventory level, whether a class on a flight is open or closed for everyone. AVS feeds the availability display that a sell then acts against.'
+    explanation_ko: 'Booking Status Code(예: HK, SS, UC)는 특정 PNR 내 한 segment의 상태를 나타내고, AVS는 inventory 차원에서 어떤 flight의 class가 모두에게 open인지 closed인지를 나타낸다. AVS는 availability 화면을 채우고, sell은 그 화면에 대해 작동한다.'
 sources:
   - org: IATA
     name: Passenger Services Conference Resolutions Manual (PSCRM) / AIRIMP
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
   - org: Travelport
     name: Universal API — Air Status Codes
     version: ''
     section: ''
-    url: ''
+    url: 'https://support.travelport.com/webhelp/uapi/Content/Air/Shared_Air_Topics/PNR_Status_Codes.htm'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="13" width="34" height="22" rx="3"/><path d="M13 24h5l3 5 4-10 3 5h7"/></svg>
 ---
 
@@ -86,7 +95,10 @@ status 코드는 판매·메시징 시 쓰는 action/request 코드(예: NN need
 
 # Distinctions
 - **Booking Status Code** vs [RBD](/air/air-shop/rbd.md) — An RBD (booking/class code) is a single-letter inventory class that prices and allocates the fare; a Booking Status Code is a two-letter code describing the reservation state of a segment regardless of which RBD it is booked in.
+- **Booking Status Code** vs [Action Code](/air/air-ops/action-code.md) — A Booking Status Code is often used as the umbrella term for the two-letter codes; the action code is specifically the request-side subset and the holding code (HK, HL) is what remains in the PNR after the action/advice exchange completes.
+- **Booking Status Code** vs [Advice Code](/air/air-ops/advice-code.md) — Advice codes are transient reply codes that resolve into a holding Booking Status Code (e.g. KK becomes HK) and then drop to PNR history; the Booking Status Code is the persistent state the segment holds afterward.
+- **Booking Status Code** vs [Availability Status Message (AVS)](/air/air-ops/availability-status-message-avs.md) — A Booking Status Code (e.g. HK, SS, UC) describes the state of one segment inside a specific PNR; an AVS describes, at the inventory level, whether a class on a flight is open or closed for everyone. AVS feeds the availability display that a sell then acts against.
 
 # Citations
-[1] IATA — Passenger Services Conference Resolutions Manual (PSCRM) / AIRIMP
-[2] Travelport — Universal API — Air Status Codes
+[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM) / AIRIMP](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
+[2] [Travelport — Universal API — Air Status Codes](https://support.travelport.com/webhelp/uapi/Content/Air/Shared_Air_Topics/PNR_Status_Codes.htm)

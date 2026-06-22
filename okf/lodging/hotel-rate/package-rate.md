@@ -25,12 +25,15 @@ relationships:
     targetTerm: Board Basis
   - type: related
     targetTerm: Rate Code
-  - type: related
+  - type: contrasts
     targetTerm: BAR
 distinctions:
   - targetTerm: Board Basis
     explanation: 'Board Basis describes only the meal component included in a rate (room-only, B&B, half-board, etc.); a Package Rate is broader, bundling any combination of services and amenities, of which meals are just one possible element.'
     explanation_ko: 'Board Basis는 요금에 포함된 식사 구성요소(객실 단독, B&B, 하프보드 등)만을 가리키지만, Package Rate는 식사를 포함한 임의의 서비스·편의시설 조합을 묶는 더 넓은 개념이다.'
+  - targetTerm: Derived Rate
+    explanation: 'A package rate bundles room with extras (meals, parking) and may itself be derived from a base room rate; a derived rate refers narrowly to the price-linkage mechanism, regardless of whether any package components are bundled.'
+    explanation_ko: 'Package Rate는 객실에 부가서비스(식사·주차)를 묶은 것으로 기준 객실 요금에서 파생될 수도 있고, Derived Rate는 패키지 구성 여부와 무관하게 가격 연동 메커니즘 자체를 좁게 가리킨다.'
 sources:
   - org: Xotels
     name: Revenue Management Glossary — Package Rate
@@ -59,10 +62,11 @@ Package rates are built by attaching package elements to a rate code, giving the
 - [Rate Plan](/lodging/hotel-rate/rate-plan.md) — child
 - [Board Basis](/lodging/hotel-rate/board-basis.md) — related
 - [Rate Code](/lodging/hotel-rate/rate-code.md) — related
-- [BAR](/lodging/hotel-rate/bar.md) — related
+- [BAR](/lodging/hotel-rate/bar.md) — contrasts
 
 # Distinctions
 - **Package Rate** vs [Board Basis](/lodging/hotel-rate/board-basis.md) — Board Basis describes only the meal component included in a rate (room-only, B&B, half-board, etc.); a Package Rate is broader, bundling any combination of services and amenities, of which meals are just one possible element.
+- **Package Rate** vs [Derived Rate](/lodging/hotel-rate/derived-rate.md) — A package rate bundles room with extras (meals, parking) and may itself be derived from a base room rate; a derived rate refers narrowly to the price-linkage mechanism, regardless of whether any package components are bundled.
 
 # Citations
 [1] [Xotels — Revenue Management Glossary — Package Rate](https://www.xotels.com/en/glossary/package-rate)

@@ -39,6 +39,9 @@ distinctions:
   - targetTerm: Booking Engine
     explanation: 'The booking engine is the software tool that processes a direct online reservation; direct booking is the resulting transaction/channel concept, of which the booking engine is the primary enabler.'
     explanation_ko: 'Booking engine은 온라인 직접 예약을 처리하는 소프트웨어 도구이고, 다이렉트 부킹은 그 결과로 발생하는 거래/채널 개념으로 booking engine이 이를 가능하게 하는 핵심 수단이다.'
+  - targetTerm: Billboard Effect
+    explanation: A direct booking is the transaction made on the hotel's own channel; the billboard effect is the causal phenomenon explaining why OTA visibility increases the number of those direct bookings.
+    explanation_ko: '다이렉트 부킹은 호텔 자체 채널에서 이뤄지는 거래이고, 빌보드 효과는 OTA 가시성이 그 다이렉트 부킹 수를 왜 증가시키는지를 설명하는 인과적 현상이다.'
 sources:
   - org: RateGain
     name: 'Hotel Direct Booking vs OTA: Why the Best Strategy Uses Both'
@@ -74,6 +77,7 @@ Direct booking is the counterpart to indirect (third-party) distribution. Its co
 # Distinctions
 - **Direct Booking** vs [OTA (Online Travel Agency)](/common/standards/ota-online-travel-agency.md) — An OTA is a third-party intermediary that sells the hotel's rooms for a commission and typically owns the guest relationship; a direct booking is made through the hotel's own channels with no intermediary, keeping the guest data and avoiding commission.
 - **Direct Booking** vs [Booking Engine](/lodging/hotel-dist/booking-engine.md) — The booking engine is the software tool that processes a direct online reservation; direct booking is the resulting transaction/channel concept, of which the booking engine is the primary enabler.
+- **Direct Booking** vs [Billboard Effect](/lodging/hotel-dist/billboard-effect.md) — A direct booking is the transaction made on the hotel's own channel; the billboard effect is the causal phenomenon explaining why OTA visibility increases the number of those direct bookings.
 
 # Citations
 [1] [RateGain — Hotel Direct Booking vs OTA: Why the Best Strategy Uses Both](https://rategain.com/blog/hotel-direct-booking-vs-ota/)

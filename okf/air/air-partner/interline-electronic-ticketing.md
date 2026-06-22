@@ -52,12 +52,12 @@ sources:
     org: IATA
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/multilateral-interline-traffic-agreements/'
   - name: 'Passenger Services Conference Resolutions Manual (PSCRM), Resolution 722f (Electronic Ticketing)'
     org: IATA
     version: ''
     section: Resolution 722f
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="14" width="20" height="14" rx="2"/><path d="M6 19h20"/><path d="M10 24h6"/><rect x="24" y="22" width="18" height="14" rx="2"/><path d="M24 27h18"/><path d="M28 32h6"/><path d="M26 18l4 4-4 4" /></svg>
 ---
 
@@ -85,5 +85,5 @@ Interline electronic ticketing (IET) replaced the paper interline ticket: instea
 - **Interline Electronic Ticketing** vs [E-ticket](/air/air-ticket/e-ticket.md) — An e-ticket is the electronic record of a single carrier's ticket; IET extends that concept so coupons on one electronic ticket can span and be honored by multiple interlining carriers.
 
 # Citations
-[1] IATA — Multilateral & Bilateral Interline Traffic Agreements (MITA & BIETA) — interline e-ticketing
-[2] IATA — Passenger Services Conference Resolutions Manual (PSCRM), Resolution 722f (Electronic Ticketing) — Resolution 722f
+[1] [IATA — Multilateral & Bilateral Interline Traffic Agreements (MITA & BIETA) — interline e-ticketing](https://www.iata.org/en/publications/manuals/multilateral-interline-traffic-agreements/)
+[2] [IATA — Passenger Services Conference Resolutions Manual (PSCRM), Resolution 722f (Electronic Ticketing) — Resolution 722f](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)

@@ -43,12 +43,12 @@ sources:
     org: ATPCO
     version: ''
     section: ''
-    url: ''
+    url: 'https://atpco.net/single-blog/what-are-atpco-fare-rules-categories/'
   - name: Passenger Services Conference Resolutions Manual (PSCRM)
     org: IATA
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="12" width="24" height="16" rx="3"/><path d="M11 18h8M11 22h5"/><circle cx="34" cy="32" r="9"/><path d="M34 27v5l3 3"/></svg>
 ---
 
@@ -73,5 +73,5 @@ Ticketing time limits arise from two main sources: carrier/GDS-imposed limits ma
 - **Ticketing Time Limit** vs [Queue](/air/air-ops/queue.md) — A queue is the GDS workflow bucket where pending-ticketing PNRs are placed; the ticketing time limit is the deadline itself.
 
 # Citations
-[1] ATPCO — ATPCO Fare Rules — Category 5 (Advance Reservations/Ticketing)
-[2] IATA — Passenger Services Conference Resolutions Manual (PSCRM)
+[1] [ATPCO — ATPCO Fare Rules — Category 5 (Advance Reservations/Ticketing)](https://atpco.net/single-blog/what-are-atpco-fare-rules-categories/)
+[2] [IATA — Passenger Services Conference Resolutions Manual (PSCRM)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)

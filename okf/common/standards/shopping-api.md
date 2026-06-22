@@ -46,17 +46,20 @@ distinctions:
   - targetTerm: Offer
     explanation: An Offer is the priced proposal object; the Shopping API is the request/response interface used to obtain Offers during search.
     explanation_ko: 'Offer는 가격이 매겨진 제안 객체이고, 쇼핑 API는 검색 중 오퍼를 얻기 위해 사용하는 요청/응답 인터페이스이다.'
+  - targetTerm: AirShopping
+    explanation: 'Shopping API is the generic concept of any programmatic shopping interface; AirShopping is the specific, standardized NDC message that implements air shopping within IATA''s schema set.'
+    explanation_ko: 'Shopping API는 모든 프로그래밍 방식 쇼핑 인터페이스를 가리키는 일반 개념이고, AirShopping은 IATA 스키마 집합 안에서 항공 쇼핑을 구현하는 특정 표준 NDC 메시지이다.'
 sources:
   - org: IATA
     name: NDC Standards (AirShopping message)
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/programs/airline-distribution/retailing/ndc/'
   - org: ATPCO
     name: NDC Solutions - AirShopping API
     version: ''
     section: ''
-    url: ''
+    url: 'https://devportal.atpco.net/ndc-solutions/default/airshopping-request'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="21" cy="21" r="12"/><line x1="30" y1="30" x2="40" y2="40"/><path d="M15 21h12"/><path d="M27 21l-4-4"/><path d="M27 21l-4 4"/></svg>
 ---
 
@@ -86,7 +89,8 @@ The shopping step is the entry point of the Offer and Order flow: a seller submi
 # Distinctions
 - **Shopping API** vs [Availability](/air/air-shop/availability.md) — Availability indicates whether seats/classes are sellable; a Shopping API returns constructed, priced Offers built on top of that availability.
 - **Shopping API** vs [Offer](/common/standards/offer.md) — An Offer is the priced proposal object; the Shopping API is the request/response interface used to obtain Offers during search.
+- **Shopping API** vs [AirShopping](/common/standards/airshopping.md) — Shopping API is the generic concept of any programmatic shopping interface; AirShopping is the specific, standardized NDC message that implements air shopping within IATA's schema set.
 
 # Citations
-[1] IATA — NDC Standards (AirShopping message)
-[2] ATPCO — NDC Solutions - AirShopping API
+[1] [IATA — NDC Standards (AirShopping message)](https://www.iata.org/en/programs/airline-distribution/retailing/ndc/)
+[2] [ATPCO — NDC Solutions - AirShopping API](https://devportal.atpco.net/ndc-solutions/default/airshopping-request)

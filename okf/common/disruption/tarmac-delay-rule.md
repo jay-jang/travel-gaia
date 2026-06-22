@@ -25,25 +25,28 @@ aliases:
 relationships:
   - type: related
     targetTerm: IROPS
-  - type: related
+  - type: contrasts
     targetTerm: Right to Care
-  - type: related
+  - type: contrasts
     targetTerm: Automatic Refund Rule
 distinctions:
   - targetTerm: EU Regulation 261/2004
     explanation: 'The tarmac delay rule governs on-aircraft conditions and deplaning during ground delays with per-passenger fines; EU261 governs cash compensation and care for denied boarding, cancellation, and long delay. They are separate jurisdictions and remedies.'
     explanation_ko: 'Tarmac delay rule은 지상 지연 중 기내 환경과 하기를 규율하며 승객 1인당 과징금이 따르고, EU261은 탑승 거부·취소·장시간 지연에 대한 현금 보상과 care를 규율한다. 서로 다른 관할과 구제 수단이다.'
+  - targetTerm: Air Passenger Protection Regulations (APPR)
+    explanation: 'The US Tarmac Delay Rule is a single DOT standard on extended tarmac delays; APPR is a comprehensive Canadian framework that includes its own tarmac-delay standard alongside delay/cancellation compensation, denied boarding and baggage obligations.'
+    explanation_ko: '미국 Tarmac Delay Rule은 장시간 활주로 지연에 관한 단일 DOT 표준이고, APPR은 자체 활주로 지연 표준에 더해 지연·취소 보상, 탑승거부, 수하물 의무까지 포괄하는 종합 캐나다 체계이다.'
 sources:
   - name: 14 CFR 259.4 — Contingency Plan for Lengthy Tarmac Delays
     org: US Department of Transportation
     version: ''
     section: '259.4'
-    url: ''
+    url: 'https://www.ecfr.gov/current/title-14/chapter-II/subchapter-A/part-259/section-259.4'
   - name: Tarmac Delay Rule (Federal Register)
     org: US Department of Transportation
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.federalregister.gov/documents/2021/05/03/2021-08850/tarmac-delay-rule'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 30l14-2 6-9 3 1-2 8 7-1 5 4-30 5-5-3z"/><line x1="6" y1="38" x2="40" y2="38"/><circle cx="34" cy="14" r="6"/><path d="M34 11v3l2 2"/></svg>
 ---
 
@@ -59,12 +62,13 @@ Under 14 CFR 259.4, carriers must adopt a Contingency Plan for Lengthy Tarmac De
 
 # Related
 - [IROPS](/air/air-partner/irops.md) — related
-- [Right to Care](/common/disruption/right-to-care.md) — related
-- [Automatic Refund Rule](/common/disruption/automatic-refund-rule.md) — related
+- [Right to Care](/common/disruption/right-to-care.md) — contrasts
+- [Automatic Refund Rule](/common/disruption/automatic-refund-rule.md) — contrasts
 
 # Distinctions
 - **Tarmac Delay Rule** vs [EU Regulation 261/2004](/common/disruption/eu-regulation-261-2004.md) — The tarmac delay rule governs on-aircraft conditions and deplaning during ground delays with per-passenger fines; EU261 governs cash compensation and care for denied boarding, cancellation, and long delay. They are separate jurisdictions and remedies.
+- **Tarmac Delay Rule** vs [Air Passenger Protection Regulations (APPR)](/common/disruption/air-passenger-protection-regulations-appr.md) — The US Tarmac Delay Rule is a single DOT standard on extended tarmac delays; APPR is a comprehensive Canadian framework that includes its own tarmac-delay standard alongside delay/cancellation compensation, denied boarding and baggage obligations.
 
 # Citations
-[1] US Department of Transportation — 14 CFR 259.4 — Contingency Plan for Lengthy Tarmac Delays — 259.4
-[2] US Department of Transportation — Tarmac Delay Rule (Federal Register)
+[1] [US Department of Transportation — 14 CFR 259.4 — Contingency Plan for Lengthy Tarmac Delays — 259.4](https://www.ecfr.gov/current/title-14/chapter-II/subchapter-A/part-259/section-259.4)
+[2] [US Department of Transportation — Tarmac Delay Rule (Federal Register)](https://www.federalregister.gov/documents/2021/05/03/2021-08850/tarmac-delay-rule)

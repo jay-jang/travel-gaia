@@ -22,9 +22,9 @@ aliases:
   - Embarkation Day
   - Check-in
 relationships:
-  - type: related
+  - type: narrower
     targetTerm: Muster Drill
-  - type: related
+  - type: contrasts
     targetTerm: Port of Call
   - type: related
     targetTerm: Itinerary
@@ -62,8 +62,8 @@ Embarkation은 운영·유통상의 근간이 되는 이정표이다. 한 무리
 **Aliases:** `Boarding`, `Embarkation Day`, `Check-in`
 
 # Related
-- [Muster Drill](/cruise/cruise/muster-drill.md) — related
-- [Port of Call](/cruise/cruise/port-of-call.md) — related
+- [Muster Drill](/cruise/cruise/muster-drill.md) — narrower
+- [Port of Call](/cruise/cruise/port-of-call.md) — contrasts
 - [Itinerary](/air/air-ops/itinerary.md) — related
 - [Repositioning Cruise](/cruise/cruise/repositioning-cruise.md) — related
 

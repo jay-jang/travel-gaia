@@ -20,7 +20,7 @@ aliases:
   - Missed Connection Benefit
   - Missed Departure
 relationships:
-  - type: related
+  - type: contrasts
     targetTerm: Trip Delay
   - type: related
     targetTerm: Connection
@@ -28,7 +28,7 @@ relationships:
     targetTerm: Embarkation
   - type: related
     targetTerm: Port of Call
-  - type: related
+  - type: child
     targetTerm: Comprehensive Travel Insurance
 distinctions:
   - targetTerm: Connection
@@ -65,11 +65,11 @@ Coverage typically requires a common-carrier delay of a minimum number of hours 
 **Aliases:** `Missed Connection Coverage`, `Missed Connection Benefit`, `Missed Departure`
 
 # Related
-- [Trip Delay](/common/insurance/trip-delay.md) — related
+- [Trip Delay](/common/insurance/trip-delay.md) — contrasts
 - [Connection](/air/air-partner/connection.md) — related
 - [Embarkation](/cruise/cruise/embarkation.md) — related
 - [Port of Call](/cruise/cruise/port-of-call.md) — related
-- [Comprehensive Travel Insurance](/common/insurance/comprehensive-travel-insurance.md) — related
+- [Comprehensive Travel Insurance](/common/insurance/comprehensive-travel-insurance.md) — child
 
 # Distinctions
 - **Missed Connection** vs [Connection](/air/air-partner/connection.md) — A Connection is the operational/scheduling fact of changing between segments of a journey; Missed Connection is the insurance benefit that pays catch-up costs when a delay breaks that connection.

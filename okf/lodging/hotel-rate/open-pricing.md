@@ -26,7 +26,7 @@ providerTerms:
 relationships:
   - type: broader
     targetTerm: Dynamic Pricing
-  - type: related
+  - type: replaces
     targetTerm: BAR
   - type: related
     targetTerm: Revenue Management
@@ -41,22 +41,28 @@ distinctions:
   - targetTerm: Derived Rate
     explanation: 'A derived rate is mechanically tied to a parent rate by a fixed percentage or amount; open pricing is the opposite philosophy, removing those rigid linkages so each rate is yielded independently.'
     explanation_ko: 'Derived Rate는 고정 비율·금액으로 모(parent) 요금에 기계적으로 연동되지만, Open Pricing은 그 경직된 연결을 제거해 각 요금을 독립적으로 yield하는 반대 철학이다.'
+  - targetTerm: Dynamic Pricing
+    explanation: 'Open pricing is a specific dynamic-pricing methodology in which every segment, channel, and room type is priced independently rather than as a fixed discount off one BAR base. All open pricing is dynamic, but not all dynamic pricing is open pricing.'
+    explanation_ko: 'Open Pricing은 모든 세그먼트·채널·객실 유형을 하나의 BAR 기준에서의 고정 할인이 아니라 독립적으로 가격 책정하는 특정 동적 가격 책정 방법론이다. 모든 Open Pricing은 동적이지만, 모든 Dynamic Pricing이 Open Pricing은 아니다.'
+  - targetTerm: Rate Fence
+    explanation: Open Pricing sets each rate plan and segment price independently rather than as fixed offsets; rate fences are the restrictions that keep those independently priced tiers from leaking into one another.
+    explanation_ko: 'Open Pricing은 각 레이트 플랜·세그먼트 가격을 고정 차이가 아니라 독립적으로 설정하는 방식이고, 레이트 펜스는 그렇게 독립적으로 매겨진 단계들이 서로 새지 않도록 막는 제약이다.'
 sources:
   - org: ''
     name: 'Beyond BAR: the power of Open Pricing'
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.hospitalitynet.org/opinion/4126278.html'
   - org: Duetto
     name: Open Pricing Strategy for Hotel Revenue Management
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.duettocloud.com/en-us/library/drive-profits-with-an-open-pricing-strategy-duetto'
   - org: ''
     name: 'Beyond BAR: the power of Open Pricing (André Santos)'
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.duettocloud.com/library/beyond-bar-the-power-of-open-pricing'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="24" r="4"/><circle cx="38" cy="12" r="4"/><circle cx="38" cy="24" r="4"/><circle cx="38" cy="36" r="4"/><path d="M14 24l20-9M14 24h20M14 24l20 9"/></svg>
 ---
 
@@ -78,7 +84,7 @@ Open Pricing은 모든 요금제가 하나의 기준 요금에서의 고정 오�
 
 # Related
 - [Dynamic Pricing](/lodging/hotel-rate/dynamic-pricing.md) — broader
-- [BAR](/lodging/hotel-rate/bar.md) — related
+- [BAR](/lodging/hotel-rate/bar.md) — replaces
 - [Revenue Management](/air/air-shop/revenue-management.md) — related
 - [Rate Parity](/lodging/hotel-rate/rate-parity.md) — related
 - [Derived Rate](/lodging/hotel-rate/derived-rate.md) — contrasts
@@ -86,8 +92,10 @@ Open Pricing은 모든 요금제가 하나의 기준 요금에서의 고정 오�
 # Distinctions
 - **Open Pricing** vs [BAR](/lodging/hotel-rate/bar.md) — BAR is a single anchor public rate from which other plans are traditionally derived; open pricing deliberately breaks that lockstep so each plan can move on its own. Open pricing is in effect a way of pricing beyond a fixed BAR ladder.
 - **Open Pricing** vs [Derived Rate](/lodging/hotel-rate/derived-rate.md) — A derived rate is mechanically tied to a parent rate by a fixed percentage or amount; open pricing is the opposite philosophy, removing those rigid linkages so each rate is yielded independently.
+- **Open Pricing** vs [Dynamic Pricing](/lodging/hotel-rate/dynamic-pricing.md) — Open pricing is a specific dynamic-pricing methodology in which every segment, channel, and room type is priced independently rather than as a fixed discount off one BAR base. All open pricing is dynamic, but not all dynamic pricing is open pricing.
+- **Open Pricing** vs [Rate Fence](/lodging/hotel-rate/rate-fence.md) — Open Pricing sets each rate plan and segment price independently rather than as fixed offsets; rate fences are the restrictions that keep those independently priced tiers from leaking into one another.
 
 # Citations
-[1] Beyond BAR: the power of Open Pricing
-[2] Duetto — Open Pricing Strategy for Hotel Revenue Management
-[3] Beyond BAR: the power of Open Pricing (André Santos)
+[1] [Beyond BAR: the power of Open Pricing](https://www.hospitalitynet.org/opinion/4126278.html)
+[2] [Duetto — Open Pricing Strategy for Hotel Revenue Management](https://www.duettocloud.com/en-us/library/drive-profits-with-an-open-pricing-strategy-duetto)
+[3] [Beyond BAR: the power of Open Pricing (André Santos)](https://www.duettocloud.com/library/beyond-bar-the-power-of-open-pricing)

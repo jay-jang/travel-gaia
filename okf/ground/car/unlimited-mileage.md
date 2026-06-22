@@ -20,7 +20,7 @@ aliases:
   - Unlimited Kilometres
   - Unlimited Miles
 relationships:
-  - type: related
+  - type: broader
     targetTerm: Time and Mileage
   - type: related
     targetTerm: Car Class
@@ -35,12 +35,12 @@ sources:
     name: Your Guide to Unlimited Mileage Car Rentals
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.citi.com/travel/travel-guide/car-rental-tips/unlimited-mileage-car-rentals'
   - org: ''
     name: Understanding Mileage Limits When Renting a Car / Mileage Limitations
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.booking.com/guides/article/cars/understanding-mileage-limits-when-renting-a-car.html'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M10 30a6 6 0 1 1 6 6c-4 0-6-4-8-6-2-2-4-6-8-6a6 6 0 1 0 6 6"/><path d="M38 18a6 6 0 1 0-6-6c0 4 4 6 6 8 2 2 6 4 6 8a6 6 0 1 1-6-6" transform="translate(0 0)"/></svg>
 ---
 
@@ -55,7 +55,7 @@ Unlimited mileage removes the distance variable from the price, so the quote dep
 **Aliases:** `Unlimited Mileage`, `Unlimited Kilometres`, `Unlimited Miles`
 
 # Related
-- [Time and Mileage](/ground/car/time-and-mileage.md) — related
+- [Time and Mileage](/ground/car/time-and-mileage.md) — broader
 - [Car Class](/ground/car/car-class.md) — related
 - [One-Way Drop Fee](/ground/car/one-way-drop-fee.md) — related
 
@@ -63,5 +63,5 @@ Unlimited mileage removes the distance variable from the price, so the quote dep
 - **Unlimited Mileage** vs [Time and Mileage](/ground/car/time-and-mileage.md) — Unlimited Mileage is one value of the mileage component within the broader Time and Mileage rate structure — the case where the allowance is uncapped and no per-mile excess applies.
 
 # Citations
-[1] Your Guide to Unlimited Mileage Car Rentals
-[2] Understanding Mileage Limits When Renting a Car / Mileage Limitations
+[1] [Your Guide to Unlimited Mileage Car Rentals](https://www.citi.com/travel/travel-guide/car-rental-tips/unlimited-mileage-car-rentals)
+[2] [Understanding Mileage Limits When Renting a Car / Mileage Limitations](https://www.booking.com/guides/article/cars/understanding-mileage-limits-when-renting-a-car.html)

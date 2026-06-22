@@ -34,9 +34,9 @@ relationships:
     targetTerm: ATPCO
   - type: related
     targetTerm: Refund
-  - type: related
+  - type: broader
     targetTerm: Fare Rule
-  - type: related
+  - type: contrasts
     targetTerm: Voluntary Changes (ATPCO Category 31)
   - type: related
     targetTerm: Penalty Fee
@@ -80,8 +80,8 @@ Category 33은 특정 운임에 대해 전액 또는 부분 자발적 환불 허
 # Related
 - [ATPCO](/air/air-shop/atpco.md) — related
 - [Refund](/air/air-ticket/refund.md) — related
-- [Fare Rule](/air/air-shop/fare-rule.md) — related
-- [Voluntary Changes (ATPCO Category 31)](/air/air-ticket/voluntary-changes-atpco-category-31.md) — related
+- [Fare Rule](/air/air-shop/fare-rule.md) — broader
+- [Voluntary Changes (ATPCO Category 31)](/air/air-ticket/voluntary-changes-atpco-category-31.md) — contrasts
 - [Penalty Fee](/air/air-ticket/penalty-fee.md) — related
 
 # Distinctions

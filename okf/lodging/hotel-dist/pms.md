@@ -32,17 +32,20 @@ distinctions:
   - targetTerm: CRS
     explanation: PMS runs property operations and is the system of record for the stay; CRS centralizes inventory/rates and distributes them across channels.
     explanation_ko: 'PMS는 자산 운영을 수행하며 투숙에 대한 기록 시스템이고, CRS는 인벤토리/요금을 중앙화하여 여러 채널에 분배한다.'
+  - targetTerm: Departure Control System (DCS)
+    explanation: 'Both are operational back-office systems, but a DCS handles airline airport departure operations whereas a PMS (Property Management System) runs hotel front-desk and operational functions.'
+    explanation_ko: '둘 다 운영 백오피스 시스템이지만, DCS는 항공사 공항 출발 운영을 처리하고 PMS(Property Management System)는 호텔 프런트데스크 및 운영 기능을 담당한다.'
 sources:
   - name: HTNG interface specifications
     org: HTNG
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.ahla.com/htng-technical-specifications'
   - name: OpenTravel Specification
     org: OpenTravel Alliance
     version: ''
     section: ''
-    url: ''
+    url: 'https://opentravel.org/download-specs/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M8 42V14l12-6 12 6v28"/><path d="M8 42h32"/><path d="M14 22h4M22 22h4M14 30h4M22 30h4"/><circle cx="36" cy="34" r="6"/><path d="M36 30v-2M36 40v-2M40.2 31.8l-1.4 1.4M33.2 38.6l-1.4-1.4M42 34h-2M32 34h-2M40.2 38.6l-1.4-1.4M33.2 31.8l-1.4 1.4"/></svg>
 ---
 
@@ -64,7 +67,8 @@ PMS는 고객 프로필, 폴리오/요금, 객실 상태 등 자산 단위에서
 
 # Distinctions
 - **PMS** vs [CRS](/lodging/hotel-dist/crs.md) — PMS runs property operations and is the system of record for the stay; CRS centralizes inventory/rates and distributes them across channels.
+- **PMS** vs [Departure Control System (DCS)](/air/air-ops/departure-control-system-dcs.md) — Both are operational back-office systems, but a DCS handles airline airport departure operations whereas a PMS (Property Management System) runs hotel front-desk and operational functions.
 
 # Citations
-[1] HTNG — HTNG interface specifications
-[2] OpenTravel Alliance — OpenTravel Specification
+[1] [HTNG — HTNG interface specifications](https://www.ahla.com/htng-technical-specifications)
+[2] [OpenTravel Alliance — OpenTravel Specification](https://opentravel.org/download-specs/)

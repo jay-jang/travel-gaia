@@ -21,16 +21,20 @@ aliases:
   - Under-25 Fee
   - Youthful Driver Surcharge
 relationships:
-  - type: related
+  - type: parent
     targetTerm: Rental Agreement
   - type: related
     targetTerm: One-Way Drop Fee
+distinctions:
+  - targetTerm: Concession Recovery Fee
+    explanation: A young-driver surcharge is a risk-based fee tied to the renter's age; the concession recovery fee is a cost pass-through tied to the airport location and applies regardless of who is renting.
+    explanation_ko: 'Young driver surcharge(영 드라이버 할증)는 이용자 연령에 연동된 위험 기반 수수료이고, concession recovery fee는 공항 지점에 연동된 비용 전가 항목으로 누가 빌리든 무관하게 적용된다.'
 sources:
   - org: SIXT
     name: Young Driver Car Rental — Car rentals under 25 with SIXT USA
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.sixt.com/rental-guide/young-driver/'
   - org: ''
     name: What minimum age and under-25 fees apply when you hire a rental car
     version: ''
@@ -50,9 +54,12 @@ Suppliers set a minimum rental age and an age band (typically up to but not incl
 **Aliases:** `Underage Driver Fee`, `Young Renter Fee`, `Under-25 Fee`, `Youthful Driver Surcharge`
 
 # Related
-- [Rental Agreement](/ground/car/rental-agreement.md) — related
+- [Rental Agreement](/ground/car/rental-agreement.md) — parent
 - [One-Way Drop Fee](/ground/car/one-way-drop-fee.md) — related
 
+# Distinctions
+- **Young Driver Surcharge** vs [Concession Recovery Fee](/ground/car/concession-recovery-fee.md) — A young-driver surcharge is a risk-based fee tied to the renter's age; the concession recovery fee is a cost pass-through tied to the airport location and applies regardless of who is renting.
+
 # Citations
-[1] SIXT — Young Driver Car Rental — Car rentals under 25 with SIXT USA
+[1] [SIXT — Young Driver Car Rental — Car rentals under 25 with SIXT USA](https://www.sixt.com/rental-guide/young-driver/)
 [2] What minimum age and under-25 fees apply when you hire a rental car

@@ -24,9 +24,9 @@ aliases:
   - MB
   - Mass Balance Chain of Custody
 relationships:
-  - type: related
+  - type: contrasts
     targetTerm: Book and Claim
-  - type: related
+  - type: broader
     targetTerm: Sustainable Aviation Fuel (SAF)
   - type: related
     targetTerm: CORSIA (Carbon Offsetting and Reduction Scheme for International Aviation)
@@ -41,12 +41,12 @@ sources:
     name: Sustainable Aviation Fuel (SAF) Accounting and Reporting Methodology
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/contentassets/d13875e9ed784f75bac90f000760e998/iata-sustainable-aviation-fuel-saf-accounting--reporting-methodology.pdf'
   - org: IATA
     name: SAF accounting based on robust chain-of-custody approaches (Policy Paper)
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/contentassets/d13875e9ed784f75bac90f000760e998/saf-accounting-policy-paper_20230905_final.pdf'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6v6M24 12 12 18M24 12l12 6"/><path d="M12 18 7 30h10z"/><path d="M36 18 31 30h10z"/><path d="M7 30a5 5 0 0 0 10 0M31 30a5 5 0 0 0 10 0"/><path d="M16 42h16M24 12v30"/></svg>
 ---
 
@@ -61,8 +61,8 @@ SAF는 화석 제트연료와 동일한 인프라에 혼합·저장되므로 개
 **Aliases:** `Mass Balance`, `Mass Balance Approach`, `MB`, `Mass Balance Chain of Custody`
 
 # Related
-- [Book and Claim](/common/sustainability/book-and-claim.md) — related
-- [Sustainable Aviation Fuel (SAF)](/common/sustainability/sustainable-aviation-fuel-saf.md) — related
+- [Book and Claim](/common/sustainability/book-and-claim.md) — contrasts
+- [Sustainable Aviation Fuel (SAF)](/common/sustainability/sustainable-aviation-fuel-saf.md) — broader
 - [CORSIA (Carbon Offsetting and Reduction Scheme for International Aviation)](/common/sustainability/corsia.md) — related
 - [ReFuelEU Aviation](/common/sustainability/refueleu-aviation.md) — related
 
@@ -70,5 +70,5 @@ SAF는 화석 제트연료와 동일한 인프라에 혼합·저장되므로 개
 - **Mass Balance (MB)** vs [Book and Claim](/common/sustainability/book-and-claim.md) — Mass Balance keeps the sustainability attribute tied to the same physical logistics system the fuel flows through; Book and Claim fully decouples the attribute so a buyer can claim it without any physical connection to the uplift airport.
 
 # Citations
-[1] IATA — Sustainable Aviation Fuel (SAF) Accounting and Reporting Methodology
-[2] IATA — SAF accounting based on robust chain-of-custody approaches (Policy Paper)
+[1] [IATA — Sustainable Aviation Fuel (SAF) Accounting and Reporting Methodology](https://www.iata.org/contentassets/d13875e9ed784f75bac90f000760e998/iata-sustainable-aviation-fuel-saf-accounting--reporting-methodology.pdf)
+[2] [IATA — SAF accounting based on robust chain-of-custody approaches (Policy Paper)](https://www.iata.org/contentassets/d13875e9ed784f75bac90f000760e998/saf-accounting-policy-paper_20230905_final.pdf)

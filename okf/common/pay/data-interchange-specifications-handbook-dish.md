@@ -51,6 +51,9 @@ distinctions:
   - targetTerm: Simplified Invoicing and Settlement (SIS)
     explanation: 'DISH governs agent-to-airline BSP reporting/hand-off files, while SIS standardizes airline-to-airline and supplier interline e-invoices for the clearing house; different settlement domains.'
     explanation_ko: 'DISH는 여행사-항공사 BSP 보고/hand-off 파일을 규율하고, SIS는 정산소를 위한 항공사 간·공급자 인터라인 전자 인보이스를 표준화한다. 서로 다른 정산 영역이다.'
+  - targetTerm: HOT File
+    explanation: DISH is the specification that defines the record formats; the HOT file is one concrete output (airline-bound settlement data) produced in that DISH format.
+    explanation_ko: 'DISH는 레코드 형식을 정의하는 사양이고, HOT 파일은 그 DISH 형식으로 산출되는 구체적 출력(항공사 방향 정산 데이터) 중 하나다.'
 sources:
   - org: IATA
     name: BSP Data Interchange Specifications Handbook (DISH)
@@ -92,6 +95,7 @@ DISH는 전 세계 BSP 비즈니스 파트너 간 일관되고 고품질의 데�
 # Distinctions
 - **Data Interchange Specifications Handbook (DISH)** vs [BSP](/common/pay/bsp.md) — BSP is the settlement system and institution; DISH is the technical data standard defining the file formats (RET/HOT) that BSP, GDSs and airlines exchange to operate it.
 - **Data Interchange Specifications Handbook (DISH)** vs [Simplified Invoicing and Settlement (SIS)](/common/pay/simplified-invoicing-and-settlement-sis.md) — DISH governs agent-to-airline BSP reporting/hand-off files, while SIS standardizes airline-to-airline and supplier interline e-invoices for the clearing house; different settlement domains.
+- **Data Interchange Specifications Handbook (DISH)** vs [HOT File](/common/pay/hot-file.md) — DISH is the specification that defines the record formats; the HOT file is one concrete output (airline-bound settlement data) produced in that DISH format.
 
 # Citations
 [1] [IATA — BSP Data Interchange Specifications Handbook (DISH)](https://www.iata.org/en/publications/bspdish/)

@@ -34,7 +34,7 @@ relationships:
     targetTerm: Exchange
   - type: contrasts
     targetTerm: Residual Value
-  - type: related
+  - type: contrasts
     targetTerm: Penalty Fee
   - type: related
     targetTerm: Form of Payment
@@ -79,7 +79,7 @@ In an exchange/reissue, systems compare the value of the original ticket against
 - [Reissue](/air/air-ticket/reissue.md) — related
 - [Exchange](/air/air-ticket/exchange.md) — related
 - [Residual Value](/air/air-ticket/residual-value.md) — contrasts
-- [Penalty Fee](/air/air-ticket/penalty-fee.md) — related
+- [Penalty Fee](/air/air-ticket/penalty-fee.md) — contrasts
 - [Form of Payment](/common/pay/form-of-payment.md) — related
 
 # Distinctions

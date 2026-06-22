@@ -44,12 +44,12 @@ sources:
     name: Standard Retailer Supplier Interline Agreement (SRSIA) Overview and Positioning Paper
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/contentassets/4d183e7074f14a1abba291d68784aec6/srsia_overview-and-positioning-paper_25march2022.pdf'
   - org: IATA
     name: Interlining with Offers & Orders
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/programs/airline-distribution/retailing/future-of-interline/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 6h14l6 6v30a2 2 0 0 1-2 2H14a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/><path d="M28 6v6h6"/><circle cx="19" cy="26" r="3"/><circle cx="29" cy="26" r="3"/><path d="M22 26h4"/><path d="M17 34h14"/></svg>
 ---
 
@@ -75,5 +75,5 @@ SRSIA 본 협정은 당사자가 비즈니스 요구에 맞게 옵션을 선택�
 - **Standard Retailer and Supplier Interline Agreement (SRSIA)** vs [Interline](/air/air-partner/interline.md) — Interline is the general practice of carriers honoring each other's transport; SRSIA is the specific standard legal agreement that frames interline obligations in the offer-and-order model.
 
 # Citations
-[1] IATA — Standard Retailer Supplier Interline Agreement (SRSIA) Overview and Positioning Paper
-[2] IATA — Interlining with Offers & Orders
+[1] [IATA — Standard Retailer Supplier Interline Agreement (SRSIA) Overview and Positioning Paper](https://www.iata.org/contentassets/4d183e7074f14a1abba291d68784aec6/srsia_overview-and-positioning-paper_25march2022.pdf)
+[2] [IATA — Interlining with Offers & Orders](https://www.iata.org/en/programs/airline-distribution/retailing/future-of-interline/)

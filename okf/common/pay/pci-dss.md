@@ -23,7 +23,7 @@ aliases:
 relationships:
   - type: related
     targetTerm: Tokenization
-  - type: related
+  - type: contrasts
     targetTerm: 3-D Secure
   - type: related
     targetTerm: Merchant of Record
@@ -57,7 +57,7 @@ PCI DSS는 카드 결제 데이터를 다루는 가맹점·매입사(Acquirer)·
 
 # Related
 - [Tokenization](/common/pay/tokenization.md) — related
-- [3-D Secure](/common/pay/3-d-secure.md) — related
+- [3-D Secure](/common/pay/3-d-secure.md) — contrasts
 - [Merchant of Record](/common/pay/merchant-of-record.md) — related
 - [VCC](/common/pay/vcc.md) — related
 

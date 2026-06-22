@@ -24,7 +24,7 @@ relationships:
     targetTerm: Interchange Fee
   - type: related
     targetTerm: Chargeback
-  - type: related
+  - type: contrasts
     targetTerm: Merchant of Record
   - type: related
     targetTerm: Merchant Model
@@ -37,6 +37,9 @@ distinctions:
   - targetTerm: IATA Clearing House
     explanation: 'The acquirer settles consumer card payments between merchants and issuers via the card networks, whereas the IATA Clearing House settles obligations between airlines and other industry members.'
     explanation_ko: 'Acquirer는 카드 네트워크를 통해 가맹점과 발급사 간 소비자 카드 결제를 정산하는 반면, IATA Clearing House는 항공사 등 업계 회원 간 채무를 정산한다.'
+  - targetTerm: Card Scheme
+    explanation: The acquirer is the merchant's bank that processes transactions and settles funds to the merchant; the card scheme is the network above it that sets the rules and interchange the acquirer must follow.
+    explanation_ko: '매입사(acquirer)는 거래를 처리하고 가맹점에 자금을 정산하는 가맹점의 은행이고, 카드 스킴은 그 위에서 매입사가 따라야 할 규칙과 인터체인지를 정하는 네트워크다.'
 sources:
   - org: EMVCo
     name: EMVCo Terminology / Book of Glossary
@@ -59,13 +62,14 @@ In the four-party card model, the acquirer sits between the merchant and the car
 # Related
 - [Interchange Fee](/common/pay/interchange-fee.md) — related
 - [Chargeback](/common/pay/chargeback.md) — related
-- [Merchant of Record](/common/pay/merchant-of-record.md) — related
+- [Merchant of Record](/common/pay/merchant-of-record.md) — contrasts
 - [Merchant Model](/common/pay/merchant-model.md) — related
 - [Settlement Cycle](/common/pay/settlement-cycle.md) — related
 
 # Distinctions
 - **Acquirer** vs [Merchant of Record](/common/pay/merchant-of-record.md) — The acquirer is the bank that processes and settles card transactions; the Merchant of Record is the legal seller responsible to the cardholder for the sale, which contracts with an acquirer but is not itself one.
 - **Acquirer** vs [IATA Clearing House](/common/pay/iata-clearing-house.md) — The acquirer settles consumer card payments between merchants and issuers via the card networks, whereas the IATA Clearing House settles obligations between airlines and other industry members.
+- **Acquirer** vs [Card Scheme](/common/pay/card-scheme.md) — The acquirer is the merchant's bank that processes transactions and settles funds to the merchant; the card scheme is the network above it that sets the rules and interchange the acquirer must follow.
 
 # Citations
 [1] EMVCo — EMVCo Terminology / Book of Glossary

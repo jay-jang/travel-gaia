@@ -44,12 +44,12 @@ sources:
     name: Air Transport & Travel Industry Functional and Business Principles — PNRGOV
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.wcoomd.org/-/media/wco/public/global/pdf/topics/facilitation/instruments-and-tools/tools/api-guidelines-and-pnr-doc/pnrgov-principles-17-1.pdf?la=en'
   - org: WCO / IATA / ICAO
     name: API Guidelines & PNR Reporting Standards (PNRGOV Working Group)
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.wcoomd.org/en/topics/facilitation/instrument-and-tools/tools/api-pnr.aspx'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="11" width="18" height="24" rx="2"/><line x1="11" y1="17" x2="21" y2="17"/><line x1="11" y1="22" x2="18" y2="22"/><path d="M25 23h12"/><polyline points="33 19 37 23 33 27"/><path d="M41 14l-3 1v6c0 3 1.5 4.5 3 5.5 1.5-1 3-2.5 3-5.5v-6z"/></svg>
 ---
 
@@ -75,5 +75,5 @@ PNRGOV는 항공사가 법적으로 PNR 데이터를 요구하는 정부 당국�
 - **PNRGOV** vs [PNR](/air/air-ops/pnr.md) — A PNR is the reservation record itself held in the airline/GDS system; PNRGOV is the standardized message that extracts and transmits that record to government border agencies.
 
 # Citations
-[1] IATA — Air Transport & Travel Industry Functional and Business Principles — PNRGOV
-[2] WCO / IATA / ICAO — API Guidelines & PNR Reporting Standards (PNRGOV Working Group)
+[1] [IATA — Air Transport & Travel Industry Functional and Business Principles — PNRGOV](https://www.wcoomd.org/-/media/wco/public/global/pdf/topics/facilitation/instruments-and-tools/tools/api-guidelines-and-pnr-doc/pnrgov-principles-17-1.pdf?la=en)
+[2] [WCO / IATA / ICAO — API Guidelines & PNR Reporting Standards (PNRGOV Working Group)](https://www.wcoomd.org/en/topics/facilitation/instrument-and-tools/tools/api-pnr.aspx)

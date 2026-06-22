@@ -43,12 +43,18 @@ distinctions:
   - targetTerm: NDC
     explanation: OpenTravel is a broad multi-sector travel XML standard; NDC is IATA's air-specific distribution XML standard.
     explanation_ko: 'OpenTravel은 여러 분야를 아우르는 광범위한 여행 XML 표준이고, NDC는 IATA의 항공 전용 유통 XML 표준이다.'
+  - targetTerm: HEDNA
+    explanation: 'OpenTravel authors detailed XML messaging specifications used to exchange ARI and reservations; HEDNA is a distribution trade body that convenes the community and publishes distribution best practice, partnering with OpenTravel (and HTNG) on shared standards such as the Open Payments Alliance.'
+    explanation_ko: 'OpenTravel은 ARI·예약 교환에 쓰이는 상세 XML 메시징 사양을 집필하고, HEDNA는 커뮤니티를 소집하고 유통 모범사례를 발간하는 유통 업계 기구로 OpenTravel(및 HTNG)과 Open Payments Alliance 같은 공동 표준에서 협력한다.'
+  - targetTerm: OpenTravel 2.0 Object Model
+    explanation: 'The OpenTravel Alliance is the standards organization; the 2.0 Object Model is the specific next-generation object-oriented specification that body publishes, succeeding its legacy 1.x XML message set.'
+    explanation_ko: 'OpenTravel Alliance는 표준 단체이고, 2.0 오브젝트 모델은 그 단체가 발행하는 구체적인 차세대 객체지향 명세로, 레거시 1.x XML 메시지 집합을 잇는다.'
 sources:
   - name: OpenTravel Specifications
     org: OpenTravel Alliance
     version: ''
     section: ''
-    url: ''
+    url: 'https://opentravel.org/Specifications/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="16"/><path d="M8 24h32"/><path d="M24 8c5 4 5 28 0 32M24 8c-5 4-5 28 0 32"/><path d="M15 25l4-4 3 3 5-6 4 4"/></svg>
 ---
 
@@ -73,6 +79,8 @@ OpenTravel은 호텔 및 항공 유통 연동에 널리 쓰이는 표준화된 �
 - **OpenTravel Alliance** vs [OTA (Online Travel Agency)](/common/standards/ota-online-travel-agency.md) — OpenTravel Alliance is an XML standards body (its messages are abbreviated 'OTA'); an Online Travel Agency is a consumer-facing travel retailer — same abbreviation, unrelated concepts.
 - **OpenTravel Alliance** vs [HTNG](/common/standards/htng.md) — OpenTravel maintains general cross-sector travel XML message specifications; HTNG focuses on hospitality technology interoperability standards and frameworks.
 - **OpenTravel Alliance** vs [NDC](/common/standards/ndc.md) — OpenTravel is a broad multi-sector travel XML standard; NDC is IATA's air-specific distribution XML standard.
+- **OpenTravel Alliance** vs [HEDNA](/lodging/hotel-dist/hedna.md) — OpenTravel authors detailed XML messaging specifications used to exchange ARI and reservations; HEDNA is a distribution trade body that convenes the community and publishes distribution best practice, partnering with OpenTravel (and HTNG) on shared standards such as the Open Payments Alliance.
+- **OpenTravel Alliance** vs [OpenTravel 2.0 Object Model](/common/standards/opentravel-2-0-object-model.md) — The OpenTravel Alliance is the standards organization; the 2.0 Object Model is the specific next-generation object-oriented specification that body publishes, succeeding its legacy 1.x XML message set.
 
 # Citations
-[1] OpenTravel Alliance — OpenTravel Specifications
+[1] [OpenTravel Alliance — OpenTravel Specifications](https://opentravel.org/Specifications/)

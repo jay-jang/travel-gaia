@@ -26,7 +26,7 @@ providerTerms:
     context_ko: 발급사와 매입사 사이의 규칙·스위칭·인터체인지를 운영하는 은행 간 네트워크
     relationship: same
 relationships:
-  - type: related
+  - type: contrasts
     targetTerm: Acquirer
   - type: parent
     targetTerm: Interchange Fee
@@ -74,7 +74,7 @@ In the four-party (four-corner) model the card scheme sits between the issuer (t
 | Visa / Mastercard | `Card Network / Scheme` | same | The interbank network operating the rules, switching and interchange between issuers and acquirers |
 
 # Related
-- [Acquirer](/common/pay/acquirer.md) — related
+- [Acquirer](/common/pay/acquirer.md) — contrasts
 - [Interchange Fee](/common/pay/interchange-fee.md) — parent
 - [Chargeback](/common/pay/chargeback.md) — related
 - [3-D Secure](/common/pay/3-d-secure.md) — related

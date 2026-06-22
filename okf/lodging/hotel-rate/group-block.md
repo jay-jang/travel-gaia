@@ -20,9 +20,9 @@ aliases:
   - Block
   - Group Room Block
 relationships:
-  - type: related
+  - type: contrasts
     targetTerm: Allotment
-  - type: related
+  - type: child
     targetTerm: Cutoff Date
   - type: related
     targetTerm: Displacement Analysis
@@ -35,6 +35,9 @@ distinctions:
   - targetTerm: Run of House (ROH)
     explanation: 'Run of House is a rate basis assigning whatever standard room is available, while a group block is an inventory hold; a block can itself be sold on an ROH basis.'
     explanation_ko: 'Run of House는 가용한 표준 객실을 임의 배정하는 요금 방식이고, 그룹 블록은 재고를 잡아두는 것이다. 블록 자체가 ROH 방식으로 판매될 수도 있다.'
+  - targetTerm: Displacement Analysis
+    explanation: A group block is the inventory unit being requested; displacement analysis is the calculation that decides whether and on what terms to commit that block.
+    explanation_ko: '그룹 블록은 요청되는 재고 단위이고, displacement analysis는 그 블록을 약정할지와 어떤 조건으로 할지를 결정하는 계산이다.'
 sources:
   - org: Industry reference
     name: Hotel Revenue Management Glossary & Terms (Group Block / Room Block)
@@ -60,14 +63,15 @@ The group block is the foundational unit of group sales and group inventory mana
 **Aliases:** `Room Block`, `Block`, `Group Room Block`
 
 # Related
-- [Allotment](/lodging/hotel-rate/allotment.md) — related
-- [Cutoff Date](/lodging/hotel-rate/cutoff-date.md) — related
+- [Allotment](/lodging/hotel-rate/allotment.md) — contrasts
+- [Cutoff Date](/lodging/hotel-rate/cutoff-date.md) — child
 - [Displacement Analysis](/lodging/hotel-rate/displacement-analysis.md) — related
 - [Corporate Rate](/lodging/hotel-rate/corporate-rate.md) — related
 
 # Distinctions
 - **Group Block** vs [Allotment](/lodging/hotel-rate/allotment.md) — An allotment is a recurring inventory of rooms allocated to a distribution partner (e.g., a tour operator or OTA) to sell over time, whereas a group block is held for one specific group or event and date span and is released at a cutoff.
 - **Group Block** vs [Run of House (ROH)](/lodging/hotel-rate/run-of-house-roh.md) — Run of House is a rate basis assigning whatever standard room is available, while a group block is an inventory hold; a block can itself be sold on an ROH basis.
+- **Group Block** vs [Displacement Analysis](/lodging/hotel-rate/displacement-analysis.md) — A group block is the inventory unit being requested; displacement analysis is the calculation that decides whether and on what terms to commit that block.
 
 # Citations
 [1] Industry reference — Hotel Revenue Management Glossary & Terms (Group Block / Room Block)

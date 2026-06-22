@@ -38,12 +38,18 @@ distinctions:
   - targetTerm: IATA Clearing House
     explanation: The IATA Clearing House is an institution that nets and settles inter-airline accounts; a settlement cycle is the timing structure on which it and other settlement systems operate.
     explanation_ko: 'IATA Clearing House는 항공사 간 계정을 상계·정산하는 기관이고, Settlement Cycle은 그 기관과 다른 정산 시스템이 작동하는 시점 구조다.'
+  - targetTerm: Authorization Hold
+    explanation: An authorization hold reserves funds before any charge is captured; the settlement cycle is the later timetable on which captured transactions are cleared and funds actually move.
+    explanation_ko: '승인 보류는 어떤 청구도 확정되기 전에 자금을 예약하는 것이고, 정산 주기는 확정된 거래가 청산되고 자금이 실제로 이동하는 이후의 시간표다.'
+  - targetTerm: Remittance Holding Capacity (RHC)
+    explanation: 'The settlement cycle sets when funds move; RHC limits how much risk can accumulate within that cycle, throttling cash sales in real time when breached.'
+    explanation_ko: '정산 주기(Settlement Cycle)는 자금이 언제 이동하는지를 정하고, RHC는 그 주기 내에 누적될 수 있는 위험의 양을 제한하여 초과 시 실시간으로 현금 판매를 조절한다.'
 sources:
   - org: IATA
     name: BSP Reporting and Remittance Calendar / Passenger Agency Conference Resolutions
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/services/finance/bsp/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M38 16a16 16 0 1 0 4 14"/><path d="M38 8v8h-8"/><circle cx="24" cy="24" r="3.5"/><path d="M24 16v3M24 29v3"/></svg>
 ---
 
@@ -67,6 +73,8 @@ In agency settlement, the BSP and ARC publish a reporting and remittance calenda
 # Distinctions
 - **Settlement Cycle** vs [Remittance](/common/pay/remittance.md) — The settlement cycle is the calendar and periodicity that determines when funds move; remittance is the specific funding event (agent paying the net amount) that takes place within that cycle.
 - **Settlement Cycle** vs [IATA Clearing House](/common/pay/iata-clearing-house.md) — The IATA Clearing House is an institution that nets and settles inter-airline accounts; a settlement cycle is the timing structure on which it and other settlement systems operate.
+- **Settlement Cycle** vs [Authorization Hold](/common/pay/authorization-hold.md) — An authorization hold reserves funds before any charge is captured; the settlement cycle is the later timetable on which captured transactions are cleared and funds actually move.
+- **Settlement Cycle** vs [Remittance Holding Capacity (RHC)](/common/pay/remittance-holding-capacity-rhc.md) — The settlement cycle sets when funds move; RHC limits how much risk can accumulate within that cycle, throttling cash sales in real time when breached.
 
 # Citations
-[1] IATA — BSP Reporting and Remittance Calendar / Passenger Agency Conference Resolutions
+[1] [IATA — BSP Reporting and Remittance Calendar / Passenger Agency Conference Resolutions](https://www.iata.org/en/services/finance/bsp/)

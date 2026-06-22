@@ -34,6 +34,18 @@ distinctions:
   - targetTerm: Name Change
     explanation: 'Secure Flight requires the booked name to match the government ID, which is the common driver of permitted name corrections.'
     explanation_ko: 'Secure Flight는 예약된 이름이 정부 발급 신분증과 일치하도록 요구하며, 이것이 허용되는 이름 정정의 흔한 유발 요인이다.'
+  - targetTerm: Advance Passenger Information System
+    explanation: APIS is the international WCO/IATA/ICAO advance-passenger-data process used by many states for border and customs control; Secure Flight is the specific US TSA watch-list prescreening program with its own SFPD data set.
+    explanation_ko: 'APIS는 여러 국가가 국경·세관 통제에 사용하는 국제 WCO/IATA/ICAO 사전 승객 데이터 절차이고, Secure Flight는 자체 SFPD 데이터 항목을 쓰는 미국 TSA의 감시 명단 사전 심사 프로그램이다.'
+  - targetTerm: GDPR Consent
+    explanation: 'GDPR Consent is an EU privacy lawful basis for processing personal data; Secure Flight is a US security program that processes data under legal obligation, not consent.'
+    explanation_ko: 'GDPR 동의는 개인정보 처리를 위한 EU 프라이버시상의 적법 근거이고, Secure Flight는 동의가 아닌 법적 의무에 따라 데이터를 처리하는 미국의 보안 프로그램이다.'
+  - targetTerm: Known Traveler Number
+    explanation: Secure Flight is the TSA watch-list matching process; the KTN is the data element a traveler supplies so that Secure Flight can confirm trusted-traveler eligibility.
+    explanation_ko: 'Secure Flight는 TSA의 감시목록 대조 절차이고, KTN은 그 절차가 신뢰여행자 자격을 확인할 수 있도록 여행자가 제공하는 데이터 요소다.'
+  - targetTerm: PNRGOV
+    explanation: 'Secure Flight is the US TSA-specific prescreening program (collecting SFPD); PNRGOV is the generic international standard message for sending the full PNR to any state''s authority that mandates PNR reporting. Secure Flight data is a narrower, watch-list-focused dataset.'
+    explanation_ko: 'Secure Flight는 미국 TSA 전용의 사전심사 프로그램(SFPD 수집)이고, PNRGOV는 PNR 보고를 의무화한 어느 국가 당국에든 전체 PNR을 보내는 일반 국제 표준 메시지다. Secure Flight 데이터는 watch-list 중심의 더 좁은 데이터셋이다.'
 sources:
   - name: 49 CFR Part 1560 — Secure Flight Program
     org: TSA
@@ -66,6 +78,10 @@ Secure Flight는 미국으로/미국에서/미국 상공을 지나거나 미국 
 # Distinctions
 - **Secure Flight** vs [IATA One ID](/common/customer/iata-one-id.md) — Secure Flight is a mandatory US government watch-list prescreening program; One ID is a voluntary industry digital-identity/biometric framework for seamless travel.
 - **Secure Flight** vs [Name Change](/common/customer/name-change.md) — Secure Flight requires the booked name to match the government ID, which is the common driver of permitted name corrections.
+- **Secure Flight** vs [Advance Passenger Information System](/common/customer/advance-passenger-information-system.md) — APIS is the international WCO/IATA/ICAO advance-passenger-data process used by many states for border and customs control; Secure Flight is the specific US TSA watch-list prescreening program with its own SFPD data set.
+- **Secure Flight** vs [GDPR Consent](/common/customer/gdpr-consent.md) — GDPR Consent is an EU privacy lawful basis for processing personal data; Secure Flight is a US security program that processes data under legal obligation, not consent.
+- **Secure Flight** vs [Known Traveler Number](/common/customer/known-traveler-number.md) — Secure Flight is the TSA watch-list matching process; the KTN is the data element a traveler supplies so that Secure Flight can confirm trusted-traveler eligibility.
+- **Secure Flight** vs [PNRGOV](/air/air-ops/pnrgov.md) — Secure Flight is the US TSA-specific prescreening program (collecting SFPD); PNRGOV is the generic international standard message for sending the full PNR to any state's authority that mandates PNR reporting. Secure Flight data is a narrower, watch-list-focused dataset.
 
 # Citations
 [1] [TSA — 49 CFR Part 1560 — Secure Flight Program](https://www.ecfr.gov/current/title-49/subtitle-B/chapter-XII/subchapter-C/part-1560)

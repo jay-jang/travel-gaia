@@ -22,11 +22,11 @@ aliases:
   - Special Prorate Agreement
   - Special Pro-rate Agreement
 relationships:
-  - type: related
+  - type: broader
     targetTerm: Proration
   - type: related
     targetTerm: Interline
-  - type: related
+  - type: contrasts
     targetTerm: MITA
   - type: related
     targetTerm: IATA Clearing House
@@ -44,12 +44,12 @@ sources:
     org: IATA
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/services/finance/prorate-manuals/'
   - name: Revenue Accounting Manual (RAM)
     org: IATA
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/revenue-accounting-manual/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="8" width="22" height="30" rx="2"/><path d="M14 16h12M14 21h12M14 26h7"/><path d="M28 32l5 5 10-10"/></svg>
 ---
 
@@ -64,9 +64,9 @@ Where the default multilateral proration would not yield commercially attractive
 **Aliases:** `Special Prorate Agreement`, `Special Pro-rate Agreement`
 
 # Related
-- [Proration](/air/air-partner/proration.md) — related
+- [Proration](/air/air-partner/proration.md) — broader
 - [Interline](/air/air-partner/interline.md) — related
-- [MITA](/air/air-partner/mita.md) — related
+- [MITA](/air/air-partner/mita.md) — contrasts
 - [IATA Clearing House](/common/pay/iata-clearing-house.md) — related
 - [Fare Component](/air/air-shop/fare-component.md) — related
 
@@ -75,5 +75,5 @@ Where the default multilateral proration would not yield commercially attractive
 - **SPA (Special Prorate Agreement)** vs [MITA](/air/air-partner/mita.md) — MITA provides the standard multilateral interline/prorate framework, whereas an SPA is a bilateral override with negotiated values between two carriers.
 
 # Citations
-[1] IATA — Prorate Manual — Passenger (PMP)
-[2] IATA — Revenue Accounting Manual (RAM)
+[1] [IATA — Prorate Manual — Passenger (PMP)](https://www.iata.org/en/services/finance/prorate-manuals/)
+[2] [IATA — Revenue Accounting Manual (RAM)](https://www.iata.org/en/publications/manuals/revenue-accounting-manual/)

@@ -24,23 +24,23 @@ aliases:
 relationships:
   - type: related
     targetTerm: Car Class
-  - type: related
+  - type: child
     targetTerm: Time and Mileage
-  - type: related
+  - type: child
     targetTerm: Fuel Purchase Option
-  - type: related
+  - type: child
     targetTerm: Collision Damage Waiver
 sources:
   - org: ''
     name: What Is a Car Rental Agreement? How It Works / Rental Car Agreement Definition
     version: ''
     section: ''
-    url: ''
+    url: 'https://navan.com/resources/glossary/car-rental-agreement'
   - org: U.S. General Services Administration
     name: 'U.S. Government Rental Car Agreement #5'
     version: ''
     section: ''
-    url: ''
+    url: 'https://media.defense.gov/2024/Mar/07/2003408482/-1/-1/0/USG_RENTAL_CAR_AGREEMENT_5.PDF'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5h16l8 8v22a3 3 0 0 1-3 3H12a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3z"/><path d="M28 5v8h8"/><path d="M15 21h14M15 27h14"/><path d="M15 33c3-3 5 0 7-1"/></svg>
 ---
 
@@ -56,10 +56,10 @@ RA는 예약을 집행 가능한 계약으로 전환한다. 배정 차량(흔히
 
 # Related
 - [Car Class](/ground/car/car-class.md) — related
-- [Time and Mileage](/ground/car/time-and-mileage.md) — related
-- [Fuel Purchase Option](/ground/car/fuel-purchase-option.md) — related
-- [Collision Damage Waiver](/ground/car/collision-damage-waiver.md) — related
+- [Time and Mileage](/ground/car/time-and-mileage.md) — child
+- [Fuel Purchase Option](/ground/car/fuel-purchase-option.md) — child
+- [Collision Damage Waiver](/ground/car/collision-damage-waiver.md) — child
 
 # Citations
-[1] What Is a Car Rental Agreement? How It Works / Rental Car Agreement Definition
-[2] U.S. General Services Administration — U.S. Government Rental Car Agreement #5
+[1] [What Is a Car Rental Agreement? How It Works / Rental Car Agreement Definition](https://navan.com/resources/glossary/car-rental-agreement)
+[2] [U.S. General Services Administration — U.S. Government Rental Car Agreement #5](https://media.defense.gov/2024/Mar/07/2003408482/-1/-1/0/USG_RENTAL_CAR_AGREEMENT_5.PDF)

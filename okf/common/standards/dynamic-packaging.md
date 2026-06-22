@@ -37,6 +37,18 @@ distinctions:
   - targetTerm: Aggregator
     explanation: An aggregator supplies the consolidated multi-supplier content; dynamic packaging is what a seller does with that content to build and price a combined trip.
     explanation_ko: '애그리게이터는 여러 공급사의 통합 콘텐츠를 공급하고, 다이내믹 패키징은 판매자가 그 콘텐츠로 결합된 여정을 구성하고 가격을 매기는 행위이다.'
+  - targetTerm: Cruise-Only Fare
+    explanation: 'A cruise-only fare is the unbundled core; dynamic packaging combines that fare with flights, transfers, and excursions into a single dynamically priced product.'
+    explanation_ko: '크루즈 온리 운임은 분리된 핵심 상품이고, dynamic packaging은 그 운임을 항공편·이동·투어와 결합해 동적으로 가격이 매겨지는 단일 상품으로 만든다.'
+  - targetTerm: Dynamic Offer
+    explanation: 'Dynamic packaging assembles multi-supplier travel components (flight + hotel + car) into a consumer package; a Dynamic Offer is the airline-side real-time creation of a priced, bundled air offer within IATA''s offer-creation step.'
+    explanation_ko: '동적 패키징은 여러 공급사의 여행 구성요소(항공편+호텔+렌터카)를 소비자 패키지로 묶는 것이고, 다이내믹 오퍼는 IATA의 오퍼 생성 단계에서 항공사 측이 가격이 책정된 묶음 항공 오퍼를 실시간으로 만들어 내는 것이다.'
+  - targetTerm: Fly-Cruise
+    explanation: 'Dynamic packaging assembles independent components (flight + hotel/cruise) priced together at booking by an intermediary; a fly-cruise air program is the cruise line''s own bundling of flights with the cruise whose defining value is a sailing-guarantee — the line re-accommodates the guest through flight disruptions to protect the embarkation, a commitment generic dynamic packaging does not make.'
+    explanation_ko: 'Dynamic packaging은 중개자가 예약 시 함께 가격을 매기는 독립 구성요소(항공 + 호텔/크루즈)를 조립하는 것이고, fly-cruise 항공 프로그램은 크루즈 선사가 직접 항공편을 크루즈와 묶는 것으로 그 정의적 가치는 출항 보장이다. 선사가 항공편 차질을 거쳐 승객을 재배정해 승선을 보호하는데, 이는 일반적 dynamic packaging이 하지 않는 약속이다.'
+  - targetTerm: Multimodal Transport
+    explanation: 'Dynamic packaging bundles travel products (e.g., flight + hotel) into one purchase; multimodal transport specifically chains transport modes into one journey, which packaging may or may not do.'
+    explanation_ko: 'dynamic packaging은 여행 상품(예: 항공+호텔)을 하나의 구매로 묶는 것이고, multimodal transport는 구체적으로 교통수단을 하나의 여정으로 연결하는 것으로 패키징이 반드시 이를 포함하지는 않는다.'
 sources:
   - org: Industry usage
     name: Dynamic packaging (travel distribution definition)
@@ -66,6 +78,10 @@ A booking engine calls multiple supplier APIs simultaneously, retrieving live co
 # Distinctions
 - **Dynamic Packaging** vs [Offer](/common/standards/offer.md) — Dynamic packaging is a retailing technique of bundling multiple suppliers' components at one price; an NDC Offer is a single airline's standardized priced proposal that may itself include a bundle of that airline's products.
 - **Dynamic Packaging** vs [Aggregator](/common/standards/aggregator.md) — An aggregator supplies the consolidated multi-supplier content; dynamic packaging is what a seller does with that content to build and price a combined trip.
+- **Dynamic Packaging** vs [Cruise-Only Fare](/cruise/cruise/cruise-only-fare.md) — A cruise-only fare is the unbundled core; dynamic packaging combines that fare with flights, transfers, and excursions into a single dynamically priced product.
+- **Dynamic Packaging** vs [Dynamic Offer](/common/standards/dynamic-offer.md) — Dynamic packaging assembles multi-supplier travel components (flight + hotel + car) into a consumer package; a Dynamic Offer is the airline-side real-time creation of a priced, bundled air offer within IATA's offer-creation step.
+- **Dynamic Packaging** vs [Fly-Cruise](/cruise/cruise/fly-cruise.md) — Dynamic packaging assembles independent components (flight + hotel/cruise) priced together at booking by an intermediary; a fly-cruise air program is the cruise line's own bundling of flights with the cruise whose defining value is a sailing-guarantee — the line re-accommodates the guest through flight disruptions to protect the embarkation, a commitment generic dynamic packaging does not make.
+- **Dynamic Packaging** vs [Multimodal Transport](/ground/rail/multimodal-transport.md) — Dynamic packaging bundles travel products (e.g., flight + hotel) into one purchase; multimodal transport specifically chains transport modes into one journey, which packaging may or may not do.
 
 # Citations
 [1] Industry usage — Dynamic packaging (travel distribution definition)

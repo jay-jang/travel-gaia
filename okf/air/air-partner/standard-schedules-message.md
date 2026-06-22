@@ -42,17 +42,26 @@ distinctions:
   - targetTerm: Codeshare
     explanation: SSM is the messaging that distributes schedules (and can convey codeshare/operating-carrier data per SSIM); a codeshare is the commercial arrangement whose marketing and operating flight data those messages communicate.
     explanation_ko: 'SSM은 스케줄을 배포하는 메시징(SSIM에 따라 공동운항/운항 항공사 데이터를 전달할 수 있음)이고, 공동운항은 그 메시지가 전달하는 판매·운항 항공편 데이터의 기반이 되는 상업적 협정이다.'
+  - targetTerm: Availability Status Message (AVS)
+    explanation: 'An SSM distributes the existence and timing of flights (schedule creates, changes, cancellations); an AVS distributes the bookable seat status of those flights by class. Schedule first, then availability on it.'
+    explanation_ko: 'SSM은 flight의 존재와 시각(스케줄 생성·변경·취소)을 배포하고, AVS는 그 flight들의 class별 판매 가능 좌석 상태를 배포한다. 스케줄이 먼저, 그 위의 availability가 그 다음이다.'
+  - targetTerm: MERITS
+    explanation: 'MERITS is a UIC integrated rail timetable database exchanged via EDIFACT SKDUPD/TSDUPD messages; the Standard Schedules Message (SSIM) is the IATA standard for exchanging airline schedule data. Both convey schedules, but MERITS is the rail-mode integrated timetable store while SSIM is the air-mode schedule message format.'
+    explanation_ko: 'MERITS는 EDIFACT SKDUPD/TSDUPD 메시지로 교환되는 UIC 통합 철도 시각표 데이터베이스이고, Standard Schedules Message(SSIM)는 항공 스케줄 데이터를 교환하는 IATA 표준이다. 둘 다 스케줄을 전달하지만, MERITS는 철도 통합 시각표 저장소, SSIM은 항공 스케줄 메시지 형식이다.'
+  - targetTerm: Standard Schedules Information Manual (SSIM)
+    explanation: 'The SSM is one message type defined within the SSIM; the SSIM is the full manual and file-format standard that defines the SSM, the ASM, the batch SSIM file and all the supporting code conventions.'
+    explanation_ko: 'SSM은 SSIM 안에서 정의된 하나의 메시지 타입이고, SSIM은 SSM·ASM·batch SSIM 파일과 그 모든 보조 코드 관례를 정의하는 전체 매뉴얼이자 파일 포맷 표준이다.'
 sources:
   - name: 'Standard Schedules Information Manual (SSIM), Chapter 4 — Standard Schedules Message (SSM)'
     org: IATA
     version: ''
     section: Chapter 4
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/standard-schedules-information/'
   - name: 'Standard Schedules Information Manual (SSIM), Chapter 5 — Ad-hoc Schedule Message (ASM)'
     org: IATA
     version: ''
     section: Chapter 5
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/standard-schedules-information/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M8 12h32a2 2 0 0 1 2 2v18a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V14a2 2 0 0 1 2-2z"/><path d="M6 15l18 11 18-11"/><path d="M14 38l5-5M34 38l-5-5"/></svg>
 ---
 
@@ -77,7 +86,10 @@ The Standard Schedules Message (SSM) is the operational mechanism behind schedul
 # Distinctions
 - **Standard Schedules Message** vs [Schedule Change](/air/air-partner/schedule-change.md) — A schedule change is the business event of altering a published flight; the SSM is the standardized IATA message format that actually carries that creation, change, or cancellation to GDSs and partners.
 - **Standard Schedules Message** vs [Codeshare](/air/air-partner/codeshare.md) — SSM is the messaging that distributes schedules (and can convey codeshare/operating-carrier data per SSIM); a codeshare is the commercial arrangement whose marketing and operating flight data those messages communicate.
+- **Standard Schedules Message** vs [Availability Status Message (AVS)](/air/air-ops/availability-status-message-avs.md) — An SSM distributes the existence and timing of flights (schedule creates, changes, cancellations); an AVS distributes the bookable seat status of those flights by class. Schedule first, then availability on it.
+- **Standard Schedules Message** vs [MERITS](/ground/rail/merits.md) — MERITS is a UIC integrated rail timetable database exchanged via EDIFACT SKDUPD/TSDUPD messages; the Standard Schedules Message (SSIM) is the IATA standard for exchanging airline schedule data. Both convey schedules, but MERITS is the rail-mode integrated timetable store while SSIM is the air-mode schedule message format.
+- **Standard Schedules Message** vs [Standard Schedules Information Manual (SSIM)](/air/air-ops/standard-schedules-information-manual-ssim.md) — The SSM is one message type defined within the SSIM; the SSIM is the full manual and file-format standard that defines the SSM, the ASM, the batch SSIM file and all the supporting code conventions.
 
 # Citations
-[1] IATA — Standard Schedules Information Manual (SSIM), Chapter 4 — Standard Schedules Message (SSM) — Chapter 4
-[2] IATA — Standard Schedules Information Manual (SSIM), Chapter 5 — Ad-hoc Schedule Message (ASM) — Chapter 5
+[1] [IATA — Standard Schedules Information Manual (SSIM), Chapter 4 — Standard Schedules Message (SSM) — Chapter 4](https://www.iata.org/en/publications/manuals/standard-schedules-information/)
+[2] [IATA — Standard Schedules Information Manual (SSIM), Chapter 5 — Ad-hoc Schedule Message (ASM) — Chapter 5](https://www.iata.org/en/publications/manuals/standard-schedules-information/)

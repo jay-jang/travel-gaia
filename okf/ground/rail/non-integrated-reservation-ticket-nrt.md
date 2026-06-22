@@ -42,12 +42,12 @@ sources:
     org: UIC
     version: ''
     section: ''
-    url: ''
+    url: 'https://uic.org/com/enews/nr/620/article/the-nrt-non-integrated-reservation-tickets-irt-and-nt-commercial-groups-met-in'
   - name: Special Conditions of International Carriage for NRT (SCIC-NRT)
     org: UIC
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.cit-rail.org/media/files/public/CIT-Info_EN/2013/SCIC-NRT_09.12.2012_en.pdf'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="18" width="15" height="12" rx="2"/><rect x="27" y="18" width="15" height="12" rx="2"/><path d="M21 24h6" stroke-dasharray="2 3"/><path d="M10 24h7M31 24h7"/></svg>
 ---
 
@@ -72,5 +72,5 @@ UIC 상업 체계에서 NRT 승차권은 NRT 국제운송 특별조건(SCIC-NRT)
 - **Non-integrated Reservation Ticket (NRT)** vs [Open Ticket](/air/air-ticket/open-ticket.md) — An NRT is the rail commercial category enabling open, train-independent entitlements; an air Open Ticket is a single coupon left open as to date/flight. The NRT abbreviation also differs from air usage (it is not 'Normal Round Trip').
 
 # Citations
-[1] UIC — NRT (Non-Integrated Reservation Tickets) working group
-[2] UIC — Special Conditions of International Carriage for NRT (SCIC-NRT)
+[1] [UIC — NRT (Non-Integrated Reservation Tickets) working group](https://uic.org/com/enews/nr/620/article/the-nrt-non-integrated-reservation-tickets-irt-and-nt-commercial-groups-met-in)
+[2] [UIC — Special Conditions of International Carriage for NRT (SCIC-NRT)](https://www.cit-rail.org/media/files/public/CIT-Info_EN/2013/SCIC-NRT_09.12.2012_en.pdf)

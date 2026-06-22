@@ -25,7 +25,7 @@ providerTerms:
     context_ko: 비유럽 거주자용 패스의 운영사이자 브랜드
     relationship: same
 relationships:
-  - type: related
+  - type: contrasts
     targetTerm: Interrail Pass
   - type: related
     targetTerm: Seat Reservation
@@ -42,12 +42,12 @@ sources:
     org: Eurail B.V. (Eurail.com)
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.eurail.com/en/eurail-passes/global-pass'
   - name: Interrail Global Pass / Eurail (resident eligibility)
     org: Eurail B.V.
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.interrail.com/en/interrail-passes/global-pass'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="14" width="34" height="20" rx="3"/><circle cx="16" cy="24" r="4"/><path d="M25 21h11M25 27h8"/><circle cx="34" cy="24" r="6" stroke-dasharray="2 2"/></svg>
 ---
 
@@ -68,7 +68,7 @@ Eurail은 구조상 Interrail을 그대로 따른다 — Flexi·Continuous형의
 | Eurail B.V. | `Eurail Global Pass` | same | Operator and brand for the non-European-resident pass |
 
 # Related
-- [Interrail Pass](/ground/rail/interrail-pass.md) — related
+- [Interrail Pass](/ground/rail/interrail-pass.md) — contrasts
 - [Seat Reservation](/ground/rail/seat-reservation.md) — related
 - [OTA (Online Travel Agency)](/common/standards/ota-online-travel-agency.md) — related
 - [Admission](/ground/rail/admission.md) — related
@@ -77,5 +77,5 @@ Eurail은 구조상 Interrail을 그대로 따른다 — Flexi·Continuous형의
 - **Eurail Pass** vs [Interrail Pass](/ground/rail/interrail-pass.md) — Eurail and Interrail are functionally the same product line; Eurail is for non-European residents while Interrail is for European residents.
 
 # Citations
-[1] Eurail B.V. (Eurail.com) — Eurail Global Pass
-[2] Eurail B.V. — Interrail Global Pass / Eurail (resident eligibility)
+[1] [Eurail B.V. (Eurail.com) — Eurail Global Pass](https://www.eurail.com/en/eurail-passes/global-pass)
+[2] [Eurail B.V. — Interrail Global Pass / Eurail (resident eligibility)](https://www.interrail.com/en/interrail-passes/global-pass)

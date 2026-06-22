@@ -25,7 +25,7 @@ relationships:
     targetTerm: NDC
   - type: related
     targetTerm: Offer
-  - type: related
+  - type: broader
     targetTerm: Shopping API
   - type: related
     targetTerm: Dynamic Offer
@@ -45,12 +45,12 @@ sources:
     name: Distribution with Offers and Orders (NDC) Fact Sheet
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/iata-repository/pressroom/fact-sheets/fact-sheet-ndc/'
   - org: IATA
     name: NDC Implementation Guide / AirShopping message
     version: ''
     section: ''
-    url: ''
+    url: 'https://guides.developer.iata.org/docs/21-1_ImplementationGuide.pdf'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="19" cy="19" r="11"/><path d="M27 27l10 10"/><path d="M14 16h10M14 20h7M14 24h9"/></svg>
 ---
 
@@ -67,7 +67,7 @@ AirShopping은 특정(날짜·구간 지정) 쇼핑과 유연(익명·캘린더/
 # Related
 - [NDC](/common/standards/ndc.md) — child
 - [Offer](/common/standards/offer.md) — related
-- [Shopping API](/common/standards/shopping-api.md) — related
+- [Shopping API](/common/standards/shopping-api.md) — broader
 - [Dynamic Offer](/common/standards/dynamic-offer.md) — related
 - [Order](/common/standards/order.md) — related
 - [Offer Management System](/common/standards/offer-management-system.md) — related
@@ -77,5 +77,5 @@ AirShopping은 특정(날짜·구간 지정) 쇼핑과 유연(익명·캘린더/
 - **AirShopping** vs [Offer](/common/standards/offer.md) — An Offer is the data object (the airline's priced product proposal); AirShopping is the request/response message that produces a list of Offers.
 
 # Citations
-[1] IATA — Distribution with Offers and Orders (NDC) Fact Sheet
-[2] IATA — NDC Implementation Guide / AirShopping message
+[1] [IATA — Distribution with Offers and Orders (NDC) Fact Sheet](https://www.iata.org/en/iata-repository/pressroom/fact-sheets/fact-sheet-ndc/)
+[2] [IATA — NDC Implementation Guide / AirShopping message](https://guides.developer.iata.org/docs/21-1_ImplementationGuide.pdf)

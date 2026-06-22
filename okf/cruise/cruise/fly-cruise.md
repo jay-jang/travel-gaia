@@ -32,7 +32,7 @@ providerTerms:
     context_ko: '크루즈와 묶인 유연·제한 항공 운임을 제공하고 항공편 보호 지원을 갖춘 Princess의 항공 프로그램으로, fly-cruise의 한 구현이다.'
     relationship: narrower
 relationships:
-  - type: related
+  - type: broader
     targetTerm: Dynamic Packaging
   - type: related
     targetTerm: Package Rate
@@ -80,7 +80,7 @@ Fly-cruise is a major cruise distribution channel because most ocean cruises emb
 | Princess Cruises | `EZair` | narrower | Princess's flight program offering flexible and restricted airfares bundled with the cruise, with flight protection support; a fly-cruise implementation. |
 
 # Related
-- [Dynamic Packaging](/common/standards/dynamic-packaging.md) — related
+- [Dynamic Packaging](/common/standards/dynamic-packaging.md) — broader
 - [Package Rate](/lodging/hotel-rate/package-rate.md) — related
 - [IROPS](/air/air-partner/irops.md) — related
 - [Re-accommodation](/air/air-partner/re-accommodation.md) — related

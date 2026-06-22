@@ -33,7 +33,7 @@ relationships:
     targetTerm: CORSIA (Carbon Offsetting and Reduction Scheme for International Aviation)
   - type: related
     targetTerm: Sustainable Aviation Fuel (SAF)
-  - type: related
+  - type: contrasts
     targetTerm: EU Allowance (EUA)
 distinctions:
   - targetTerm: EU Allowance (EUA)
@@ -42,6 +42,15 @@ distinctions:
   - targetTerm: Sustainable Aviation Fuel (SAF)
     explanation: An Emissions Unit offsets emissions made elsewhere (out-of-sector); SAF reduces the airline's own emissions at the source (in-sector) and lowers how many units must be cancelled.
     explanation_ko: '배출권(EEU)은 다른 곳에서 발생한 배출을 상쇄(부문 외)하고, SAF는 항공사의 자체 배출을 원천에서 줄여(부문 내) 소각해야 할 배출권 수를 낮춘다.'
+  - targetTerm: Book and Claim
+    explanation: Book and Claim transfers an in-sector SAF reduction benefit (the fuel really replaced fossil kerosene somewhere); an Emissions Unit is an out-of-sector offset credit from a separate carbon-reduction project — different instruments.
+    explanation_ko: 'Book and Claim은 부문 내(in-sector) SAF 감축 편익(연료가 실제로 어딘가에서 화석 등유를 대체함)을 이전하지만, EEU는 별개의 탄소감축 프로젝트에서 나온 부문 외(out-of-sector) 상쇄 배출권으로, 서로 다른 수단이다.'
+  - targetTerm: CORSIA (Carbon Offsetting and Reduction Scheme for International Aviation)
+    explanation: CORSIA is the scheme that creates the offsetting obligation; the CORSIA Eligible Emissions Unit is the specific carbon credit operators cancel to meet that obligation.
+    explanation_ko: 'CORSIA는 상쇄 의무를 만들어 내는 제도 자체이고, CORSIA 적격 배출권(EEU)은 그 의무를 이행하기 위해 운영자가 소각하는 구체적 탄소 배출권이다.'
+  - targetTerm: CORSIA Eligible Fuel (CEF)
+    explanation: A CORSIA Eligible Fuel is a physical lower-carbon fuel that reduces emissions at the source and thereby shrinks the offsetting requirement; a CORSIA Eligible Emissions Unit is a carbon credit purchased to offset the emissions that remain — a fuel versus a credit.
+    explanation_ko: 'CORSIA Eligible Fuel은 원천에서 배출을 줄여 상쇄 의무를 축소시키는 물리적 저탄소 연료이고, CORSIA Eligible Emissions Unit(EEU)은 남은 배출을 상쇄하기 위해 구매하는 탄소 배출권이다 — 연료 대 배출권의 차이다.'
 sources:
   - org: ICAO
     name: CORSIA Eligible Emissions Units
@@ -75,11 +84,14 @@ ICAO 기술자문기구(TAB)는 탄소크레딧 프로그램과 그들이 발행
 # Related
 - [CORSIA (Carbon Offsetting and Reduction Scheme for International Aviation)](/common/sustainability/corsia.md) — parent
 - [Sustainable Aviation Fuel (SAF)](/common/sustainability/sustainable-aviation-fuel-saf.md) — related
-- [EU Allowance (EUA)](/common/sustainability/eu-allowance-eua.md) — related
+- [EU Allowance (EUA)](/common/sustainability/eu-allowance-eua.md) — contrasts
 
 # Distinctions
 - **CORSIA Eligible Emissions Unit (EEU)** vs [EU Allowance (EUA)](/common/sustainability/eu-allowance-eua.md) — An Emissions Unit is a project-based offset credit (a reduction/removal achieved by a project) cancelled under CORSIA; an EU Allowance is a permit to emit issued under the EU ETS cap and surrendered there — different instruments under different schemes.
 - **CORSIA Eligible Emissions Unit (EEU)** vs [Sustainable Aviation Fuel (SAF)](/common/sustainability/sustainable-aviation-fuel-saf.md) — An Emissions Unit offsets emissions made elsewhere (out-of-sector); SAF reduces the airline's own emissions at the source (in-sector) and lowers how many units must be cancelled.
+- **CORSIA Eligible Emissions Unit (EEU)** vs [Book and Claim](/common/sustainability/book-and-claim.md) — Book and Claim transfers an in-sector SAF reduction benefit (the fuel really replaced fossil kerosene somewhere); an Emissions Unit is an out-of-sector offset credit from a separate carbon-reduction project — different instruments.
+- **CORSIA Eligible Emissions Unit (EEU)** vs [CORSIA (Carbon Offsetting and Reduction Scheme for International Aviation)](/common/sustainability/corsia.md) — CORSIA is the scheme that creates the offsetting obligation; the CORSIA Eligible Emissions Unit is the specific carbon credit operators cancel to meet that obligation.
+- **CORSIA Eligible Emissions Unit (EEU)** vs [CORSIA Eligible Fuel (CEF)](/common/sustainability/corsia-eligible-fuel-cef.md) — A CORSIA Eligible Fuel is a physical lower-carbon fuel that reduces emissions at the source and thereby shrinks the offsetting requirement; a CORSIA Eligible Emissions Unit is a carbon credit purchased to offset the emissions that remain — a fuel versus a credit.
 
 # Citations
 [1] [ICAO — CORSIA Eligible Emissions Units](https://www.icao.int/CORSIA/corsia-eligible-emissions-units)

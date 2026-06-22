@@ -32,12 +32,15 @@ distinctions:
   - targetTerm: Reissue
     explanation: A name change is a data correction that may require ticket action; a reissue is the broader ticketing transaction (often triggered by such changes) that produces a new e-ticket.
     explanation_ko: '이름 변경은 항공권 조치가 필요할 수 있는 데이터 정정이고, 재발행(Reissue)은 이러한 변경으로 흔히 유발되어 새 전자 항공권을 생성하는 보다 포괄적인 발권 거래이다.'
+  - targetTerm: Secure Flight
+    explanation: 'Secure Flight requires the booked name to match the government ID, which is the common driver of permitted name corrections.'
+    explanation_ko: 'Secure Flight는 예약된 이름이 정부 발급 신분증과 일치하도록 요구하며, 이것이 허용되는 이름 정정의 흔한 유발 요인이다.'
 sources:
   - name: ATPCO Automated Rules (fare rule conditions)
     org: ATPCO
     version: ''
     section: ''
-    url: ''
+    url: 'https://atpco.net/single-blog/what-are-atpco-fare-rules-categories/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="15" cy="16" r="6"/><path d="M5 38c0-6 4-10 10-10 2 0 4 .5 5.5 1.5"/><path d="M39 26l4 4-11 11-5 1 1-5z"/></svg>
 ---
 
@@ -59,6 +62,7 @@ Carriers distinguish between a name correction (fixing typos, transposed letters
 
 # Distinctions
 - **Name Change** vs [Reissue](/air/air-ticket/reissue.md) — A name change is a data correction that may require ticket action; a reissue is the broader ticketing transaction (often triggered by such changes) that produces a new e-ticket.
+- **Name Change** vs [Secure Flight](/common/customer/secure-flight.md) — Secure Flight requires the booked name to match the government ID, which is the common driver of permitted name corrections.
 
 # Citations
-[1] ATPCO — ATPCO Automated Rules (fare rule conditions)
+[1] [ATPCO — ATPCO Automated Rules (fare rule conditions)](https://atpco.net/single-blog/what-are-atpco-fare-rules-categories/)

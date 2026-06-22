@@ -27,7 +27,7 @@ relationships:
     targetTerm: Fare Basis Code
   - type: related
     targetTerm: ATPCO
-  - type: related
+  - type: contrasts
     targetTerm: RBD
 distinctions:
   - targetTerm: RBD
@@ -36,6 +36,9 @@ distinctions:
   - targetTerm: Fare Basis Code
     explanation: A PTC is an input that restricts which Fare Basis Codes a passenger can use; the Fare Basis Code identifies the specific priced fare.
     explanation_ko: 'PTC는 승객이 사용할 수 있는 Fare Basis Code를 제한하는 입력값이고, Fare Basis Code는 가격이 산정된 특정 운임을 식별한다.'
+  - targetTerm: Unaccompanied Minor
+    explanation: 'A Passenger Type Code (e.g., CHD) classifies the traveler for pricing/fare purposes, while UMNR is a service request that the child must be escorted; the two are complementary and often both present in a booking.'
+    explanation_ko: 'Passenger Type Code(예: CHD)는 운임·가격 목적의 승객 분류이고, UMNR은 그 어린이를 동반 감독해야 한다는 서비스 요청이다. 둘은 상호 보완적이며 한 예약에 함께 존재하는 경우가 많다.'
 sources:
   - name: ATPCO Passenger Type Codes
     org: ATPCO
@@ -46,7 +49,7 @@ sources:
     org: ATPCO
     version: ''
     section: ''
-    url: ''
+    url: 'https://atpco.net/single-blog/what-are-atpco-fare-rules-categories/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="17" cy="15" r="6"/><path d="M7 39c0-6 5-10 10-10s10 4 10 10"/><path d="M30 16h8a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3h-8z"/><circle cx="35" cy="23" r="1.5" fill="currentColor"/></svg>
 ---
 
@@ -63,12 +66,13 @@ PTC는 여행자가 어떤 운임에 자격이 있는지를 결정한다. 대표
 # Related
 - [Fare Basis Code](/air/air-shop/fare-basis-code.md) — related
 - [ATPCO](/air/air-shop/atpco.md) — related
-- [RBD](/air/air-shop/rbd.md) — related
+- [RBD](/air/air-shop/rbd.md) — contrasts
 
 # Distinctions
 - **Passenger Type Code** vs [RBD](/air/air-shop/rbd.md) — PTC classifies who the traveler is for fare eligibility; RBD is the booking class controlling seat inventory and class of service.
 - **Passenger Type Code** vs [Fare Basis Code](/air/air-shop/fare-basis-code.md) — A PTC is an input that restricts which Fare Basis Codes a passenger can use; the Fare Basis Code identifies the specific priced fare.
+- **Passenger Type Code** vs [Unaccompanied Minor](/common/customer/unaccompanied-minor.md) — A Passenger Type Code (e.g., CHD) classifies the traveler for pricing/fare purposes, while UMNR is a service request that the child must be escorted; the two are complementary and often both present in a booking.
 
 # Citations
 [1] ATPCO — ATPCO Passenger Type Codes
-[2] ATPCO — ATPCO Automated Rules (Category 1 — Eligibility)
+[2] [ATPCO — ATPCO Automated Rules (Category 1 — Eligibility)](https://atpco.net/single-blog/what-are-atpco-fare-rules-categories/)

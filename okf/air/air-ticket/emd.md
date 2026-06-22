@@ -23,7 +23,7 @@ aliases:
   - EMD-A
   - EMD-S
 relationships:
-  - type: related
+  - type: contrasts
     targetTerm: E-ticket
   - type: related
     targetTerm: Ancillary Service
@@ -38,17 +38,29 @@ distinctions:
   - targetTerm: Ancillary Service
     explanation: 'Ancillary Service is the product sold (e.g., a paid bag); the EMD is the document that fulfills and settles it.'
     explanation_ko: 'Ancillary Service는 판매되는 상품(예: 유료 수하물)이며, EMD는 이를 이행하고 정산하는 서류이다.'
+  - targetTerm: Future Cruise Credit (FCC)
+    explanation: 'An EMD is an IATA accountable document settled through BSP/ARC that holds value for airline ancillaries or residual ticket value and is interline-recognized; an FCC is a single-brand cruise promotional credit with no industry settlement, redeemable only against that line''s future sailings and not convertible to cash.'
+    explanation_ko: 'EMD는 BSP/ARC를 통해 정산되는 IATA 회계 문서로 항공 부가서비스나 잔여 티켓 가치를 담고 인터라인으로 인정되는 반면, FCC는 산업 정산이 없는 단일 브랜드 크루즈 프로모션 크레딧으로 해당 선사의 향후 출항에만 사용 가능하고 현금 전환은 불가하다.'
+  - targetTerm: MCO (Miscellaneous Charges Order)
+    explanation: 'The EMD is the electronic successor to the MCO; the MCO was the paper document, while the EMD is the IATA-standard electronic equivalent (EMD-S / EMD-A) that has largely replaced it.'
+    explanation_ko: 'EMD는 MCO의 전자식 후속 문서이다. MCO는 종이 서류였고, EMD는 이를 대부분 대체한 IATA 표준 전자 문서(EMD-S / EMD-A)이다.'
+  - targetTerm: Optional Services
+    explanation: Optional Services is the filed data that prices an ancillary at shop time; the EMD is the document issued afterward to fulfill and account for the purchased service.
+    explanation_ko: 'Optional Services는 shop 시점에 부가 서비스 가격을 산출하는 파일링 데이터이고, EMD는 그 후 구매된 서비스를 이행·정산하기 위해 발행되는 문서이다.'
+  - targetTerm: Reason for Issuance Code / Sub Code (RFIC / RFISC)
+    explanation: The EMD is the accountable document; the RFIC/RFISC is the code carried on the EMD that says which service it pays for and how it should be classified and settled.
+    explanation_ko: 'EMD는 정산 가능한 서류이고, RFIC/RFISC는 그 EMD에 실려 어떤 서비스에 대한 것인지와 분류·정산 방식을 알려주는 코드이다.'
 sources:
   - name: Electronic Miscellaneous Document (EMD)
     org: IATA
     version: ''
     section: ''
-    url: ''
+    url: 'https://portal.iata.org/faq/s/article/What-is-an-Electronic-Miscellaneous-Document-EMD-1415811054748'
   - name: Passenger Services Conference Resolutions Manual (PSCRM)
     org: IATA
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="10" width="32" height="28" rx="3"/><path d="M8 18h32"/><path d="M14 25h8M14 30h12"/><circle cx="31" cy="29" r="4"/><path d="M31 27v4M29.5 28.5h3"/></svg>
 ---
 
@@ -63,7 +75,7 @@ There are two principal types: EMD-A (Associated), which is linked to one or mor
 **Aliases:** `Electronic Miscellaneous Document`, `EMD-A`, `EMD-S`
 
 # Related
-- [E-ticket](/air/air-ticket/e-ticket.md) — related
+- [E-ticket](/air/air-ticket/e-ticket.md) — contrasts
 - [Ancillary Service](/air/air-ticket/ancillary-service.md) — related
 - [BSP](/common/pay/bsp.md) — related
 - [Refund](/air/air-ticket/refund.md) — related
@@ -71,7 +83,11 @@ There are two principal types: EMD-A (Associated), which is linked to one or mor
 # Distinctions
 - **EMD** vs [E-ticket](/air/air-ticket/e-ticket.md) — E-ticket documents flight carriage; EMD documents ancillary/non-flight charges and fees.
 - **EMD** vs [Ancillary Service](/air/air-ticket/ancillary-service.md) — Ancillary Service is the product sold (e.g., a paid bag); the EMD is the document that fulfills and settles it.
+- **EMD** vs [Future Cruise Credit (FCC)](/cruise/cruise/future-cruise-credit-fcc.md) — An EMD is an IATA accountable document settled through BSP/ARC that holds value for airline ancillaries or residual ticket value and is interline-recognized; an FCC is a single-brand cruise promotional credit with no industry settlement, redeemable only against that line's future sailings and not convertible to cash.
+- **EMD** vs [MCO (Miscellaneous Charges Order)](/air/air-ticket/mco-miscellaneous-charges-order.md) — The EMD is the electronic successor to the MCO; the MCO was the paper document, while the EMD is the IATA-standard electronic equivalent (EMD-S / EMD-A) that has largely replaced it.
+- **EMD** vs [Optional Services](/air/air-shop/optional-services.md) — Optional Services is the filed data that prices an ancillary at shop time; the EMD is the document issued afterward to fulfill and account for the purchased service.
+- **EMD** vs [Reason for Issuance Code / Sub Code (RFIC / RFISC)](/air/air-ticket/rfic-rfisc.md) — The EMD is the accountable document; the RFIC/RFISC is the code carried on the EMD that says which service it pays for and how it should be classified and settled.
 
 # Citations
-[1] IATA — Electronic Miscellaneous Document (EMD)
-[2] IATA — Passenger Services Conference Resolutions Manual (PSCRM)
+[1] [IATA — Electronic Miscellaneous Document (EMD)](https://portal.iata.org/faq/s/article/What-is-an-Electronic-Miscellaneous-Document-EMD-1415811054748)
+[2] [IATA — Passenger Services Conference Resolutions Manual (PSCRM)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)

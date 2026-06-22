@@ -57,7 +57,7 @@ sources:
     org: U.S. Department of Transportation
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.transportation.gov/policy/aviation-policy/competition-data-analysis/alliance-codeshares'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5l15 6v9c0 10-7 16-15 19-8-3-15-9-15-19v-9z"/><path d="M17 24l5 5 9-11"/></svg>
 ---
 
@@ -90,4 +90,4 @@ Without antitrust immunity, airlines coordinating prices, capacity, and revenue�
 
 # Citations
 [1] [U.S. Government Accountability Office — International Air Alliances: Greater Transparency Needed on DOT's Efforts to Monitor the Effects of Antitrust Immunity (GAO-19-237)](https://www.gao.gov/products/gao-19-237)
-[2] U.S. Department of Transportation — Antitrust immunity for international airline alliances and joint ventures (alliance/codeshare oversight)
+[2] [U.S. Department of Transportation — Antitrust immunity for international airline alliances and joint ventures (alliance/codeshare oversight)](https://www.transportation.gov/policy/aviation-policy/competition-data-analysis/alliance-codeshares)

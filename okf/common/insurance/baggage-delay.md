@@ -20,13 +20,13 @@ aliases:
   - Delayed Baggage Benefit
   - Luggage Delay
 relationships:
-  - type: related
+  - type: child
     targetTerm: Comprehensive Travel Insurance
   - type: related
     targetTerm: WorldTracer
   - type: related
     targetTerm: Property Irregularity Report
-  - type: related
+  - type: contrasts
     targetTerm: Trip Delay
 distinctions:
   - targetTerm: Trip Delay
@@ -60,10 +60,10 @@ The benefit begins once a stated waiting period elapses (commonly 6, 12, or 24 h
 **Aliases:** `Baggage Delay Coverage`, `Delayed Baggage Benefit`, `Luggage Delay`
 
 # Related
-- [Comprehensive Travel Insurance](/common/insurance/comprehensive-travel-insurance.md) — related
+- [Comprehensive Travel Insurance](/common/insurance/comprehensive-travel-insurance.md) — child
 - [WorldTracer](/common/disruption/worldtracer.md) — related
 - [Property Irregularity Report](/common/disruption/property-irregularity-report.md) — related
-- [Trip Delay](/common/insurance/trip-delay.md) — related
+- [Trip Delay](/common/insurance/trip-delay.md) — contrasts
 
 # Distinctions
 - **Baggage Delay** vs [Trip Delay](/common/insurance/trip-delay.md) — Baggage delay reimburses essential purchases while your checked bags are missing; trip delay reimburses meals, lodging, and local transport while you yourself are stranded by a common-carrier delay. The two are separate benefits triggered by different events.

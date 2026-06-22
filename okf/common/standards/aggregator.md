@@ -42,6 +42,15 @@ distinctions:
   - targetTerm: Bedbank
     explanation: A bedbank is a specific hotel-inventory aggregator selling net rates wholesale; aggregator is the general category.
     explanation_ko: '베드뱅크는 순요금(net rate)을 도매로 판매하는 특정 호텔 재고 애그리게이터이고, 애그리게이터는 그 상위의 일반 범주이다.'
+  - targetTerm: Direct Connect
+    explanation: A Direct Connect is the seller's own integration to a single supplier; an aggregator offers one connection that consolidates many suppliers' direct connects on the seller's behalf.
+    explanation_ko: '다이렉트 커넥트는 판매자가 단일 공급사와 직접 맺는 연동이고, 애그리게이터는 여러 공급사의 직접 연결을 판매자 대신 하나로 통합해 제공한다.'
+  - targetTerm: Dynamic Packaging
+    explanation: An aggregator supplies the consolidated multi-supplier content; dynamic packaging is what a seller does with that content to build and price a combined trip.
+    explanation_ko: '애그리게이터는 여러 공급사의 통합 콘텐츠를 공급하고, 다이내믹 패키징은 판매자가 그 콘텐츠로 결합된 여정을 구성하고 가격을 매기는 행위이다.'
+  - targetTerm: NDC Exchange
+    explanation: An aggregator is the general category of supplier-content consolidator; NDC Exchange is a specific ATPCO/SITA industry hub that also normalizes and translates NDC and OTA schema versions between parties.
+    explanation_ko: '애그리게이터는 공급사 콘텐츠 통합자를 아우르는 일반 범주이고, NDC Exchange는 당사자 간 NDC·OTA 스키마 버전을 정규화·변환하기도 하는 특정 ATPCO/SITA 산업 허브이다.'
 sources:
   - name: Travel content aggregation (industry definition)
     org: Phocuswright / industry usage
@@ -73,6 +82,9 @@ Aggregators reduce integration overhead by giving sellers one connection to reac
 - **Aggregator** vs [Metasearch](/common/standards/metasearch.md) — An aggregator pools supplier content into a feed/API for resellers (back-end); metasearch is a consumer-facing price-comparison and referral product.
 - **Aggregator** vs [GDS](/common/standards/gds.md) — A GDS is a large, established global aggregation platform with ticketing/settlement; 'aggregator' is a broader term for any supplier-content consolidator, including bedbanks and NDC hubs.
 - **Aggregator** vs [Bedbank](/lodging/hotel-dist/bedbank.md) — A bedbank is a specific hotel-inventory aggregator selling net rates wholesale; aggregator is the general category.
+- **Aggregator** vs [Direct Connect](/common/standards/direct-connect.md) — A Direct Connect is the seller's own integration to a single supplier; an aggregator offers one connection that consolidates many suppliers' direct connects on the seller's behalf.
+- **Aggregator** vs [Dynamic Packaging](/common/standards/dynamic-packaging.md) — An aggregator supplies the consolidated multi-supplier content; dynamic packaging is what a seller does with that content to build and price a combined trip.
+- **Aggregator** vs [NDC Exchange](/common/standards/ndc-exchange.md) — An aggregator is the general category of supplier-content consolidator; NDC Exchange is a specific ATPCO/SITA industry hub that also normalizes and translates NDC and OTA schema versions between parties.
 
 # Citations
 [1] Phocuswright / industry usage — Travel content aggregation (industry definition)

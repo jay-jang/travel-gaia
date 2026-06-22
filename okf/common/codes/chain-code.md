@@ -32,6 +32,12 @@ distinctions:
   - targetTerm: Airline Designator
     explanation: A chain code (2 letters) identifies a hotel chain/brand in distribution; an airline designator (2 characters) identifies an air carrier — different domains despite both being short codes.
     explanation_ko: '체인 코드(2자리)는 유통에서 호텔 체인/브랜드를 식별하고, 항공사 지정 코드(2자리)는 항공 운송 사업자를 식별한다. 둘 다 짧은 코드이지만 서로 다른 영역에 속한다.'
+  - targetTerm: GIATA ID
+    explanation: 'A chain code identifies the brand/representation entity a property sells under (a 2-character GDS code); a GIATA ID uniquely identifies the individual physical property itself across all suppliers, regardless of chain.'
+    explanation_ko: 'Chain code는 프로퍼티가 판매되는 브랜드/대표 주체를 식별하는 2자리 GDS 코드이고, GIATA ID는 체인과 무관하게 모든 공급자에 걸쳐 개별 실제 프로퍼티 자체를 고유하게 식별한다.'
+  - targetTerm: Private Label Chain Code
+    explanation: A chain code is the general 2-character GDS code that groups properties under a brand or representation entity; a private label chain code specifically denotes an independent hotel/group obtaining its OWN dedicated code rather than sitting under a representation company's shared code.
+    explanation_ko: 'Chain code는 프로퍼티를 브랜드나 대표 주체로 묶는 일반적 2자리 GDS 코드이고, 프라이빗 라벨 체인 코드는 독립 호텔/그룹이 대표 회사의 공유 코드 아래 있지 않고 자체 전용 코드를 확보하는 것을 특정한다.'
 sources:
   - name: 20 GDS Words and Meanings
     org: OpenHotel
@@ -64,6 +70,8 @@ Chain codes group hotels under a common brand, parent company, or third-party re
 
 # Distinctions
 - **Chain Code** vs [Airline Designator](/common/codes/airline-designator.md) — A chain code (2 letters) identifies a hotel chain/brand in distribution; an airline designator (2 characters) identifies an air carrier — different domains despite both being short codes.
+- **Chain Code** vs [GIATA ID](/lodging/hotel-dist/giata-id.md) — A chain code identifies the brand/representation entity a property sells under (a 2-character GDS code); a GIATA ID uniquely identifies the individual physical property itself across all suppliers, regardless of chain.
+- **Chain Code** vs [Private Label Chain Code](/lodging/hotel-dist/private-label-chain-code.md) — A chain code is the general 2-character GDS code that groups properties under a brand or representation entity; a private label chain code specifically denotes an independent hotel/group obtaining its OWN dedicated code rather than sitting under a representation company's shared code.
 
 # Citations
 [1] [OpenHotel — 20 GDS Words and Meanings](https://openhotel.com/blog/news-and-articles-for-hotels/post.cfm/post/6034/20-gds-words-and-meanings)

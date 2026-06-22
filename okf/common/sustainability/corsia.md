@@ -22,11 +22,11 @@ aliases:
   - Carbon Offsetting and Reduction Scheme for International Aviation
   - ICAO CORSIA
 relationships:
-  - type: related
+  - type: narrower
     targetTerm: CORSIA Eligible Emissions Unit (EEU)
   - type: related
     targetTerm: Sustainable Aviation Fuel (SAF)
-  - type: related
+  - type: contrasts
     targetTerm: EU Emissions Trading System (EU ETS)
   - type: related
     targetTerm: ICAO Carbon Emissions Calculator (ICEC)
@@ -39,17 +39,23 @@ distinctions:
   - targetTerm: CORSIA Eligible Emissions Unit (EEU)
     explanation: CORSIA is the scheme that creates the offsetting obligation; the CORSIA Eligible Emissions Unit is the specific carbon credit operators cancel to meet that obligation.
     explanation_ko: 'CORSIA는 상쇄 의무를 만들어 내는 제도 자체이고, CORSIA 적격 배출권(EEU)은 그 의무를 이행하기 위해 운영자가 소각하는 구체적 탄소 배출권이다.'
+  - targetTerm: Fly Net Zero 2050
+    explanation: Fly Net Zero 2050 is a voluntary industry pledge by IATA airlines setting a 2050 net-zero target; CORSIA is ICAO's binding intergovernmental scheme that obliges operators to offset growth in international emissions above a baseline — an aspirational commitment versus a compliance mechanism.
+    explanation_ko: 'Fly Net Zero 2050은 2050년 넷제로 목표를 정한 IATA 항공사들의 자발적 산업 서약이고, CORSIA는 운영자가 기준선을 초과하는 국제 배출 증가분을 상쇄하도록 의무화하는 ICAO의 구속력 있는 정부 간 제도다 — 열망적 약속 대 의무 이행 메커니즘의 차이다.'
+  - targetTerm: GHG Protocol Scope 3 (Business Travel)
+    explanation: Scope 3 Category 6 is a corporate carbon-accounting standard for the buyer/traveler's own value-chain inventory; CORSIA is an operator-side regulatory offsetting obligation on airlines — different parties and purposes.
+    explanation_ko: 'Scope 3 카테고리 6은 구매자/여행자 측의 가치사슬 인벤토리를 위한 기업 탄소회계 표준이고, CORSIA는 항공사에 부과되는 운영자 측 규제 상쇄 의무로, 적용 주체와 목적이 다르다.'
 sources:
   - org: ICAO
     name: Carbon Offsetting and Reduction Scheme for International Aviation (CORSIA) FAQs
     version: Apr 2024
     section: ''
-    url: ''
+    url: 'https://www.icao.int/sites/default/files/environmental-protection/CORSIA/CORSIA_FAQs_Apr2024.pdf'
   - org: IATA
     name: Offsetting CO2 Emissions with CORSIA
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/programs/sustainability/corsia/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="16"/><path d="M8 24h32M24 8a22 22 0 0 1 0 32M24 8a22 22 0 0 0 0 32"/><path d="M30 12l-6-3-6 3"/><path d="M18 30l3 3 8-9"/></svg>
 ---
 
@@ -64,16 +70,18 @@ CORSIA는 단계적으로 시행된다. 자발적 참여인 시범단계(2021-20
 **Aliases:** `Carbon Offsetting and Reduction Scheme for International Aviation`, `ICAO CORSIA`
 
 # Related
-- [CORSIA Eligible Emissions Unit (EEU)](/common/sustainability/corsia-eligible-emissions-unit-eeu.md) — related
+- [CORSIA Eligible Emissions Unit (EEU)](/common/sustainability/corsia-eligible-emissions-unit-eeu.md) — narrower
 - [Sustainable Aviation Fuel (SAF)](/common/sustainability/sustainable-aviation-fuel-saf.md) — related
-- [EU Emissions Trading System (EU ETS)](/common/sustainability/eu-emissions-trading-system-eu-ets.md) — related
+- [EU Emissions Trading System (EU ETS)](/common/sustainability/eu-emissions-trading-system-eu-ets.md) — contrasts
 - [ICAO Carbon Emissions Calculator (ICEC)](/common/sustainability/icao-carbon-emissions-calculator-icec.md) — related
 - [ICAO Code](/common/codes/icao-code.md) — related
 
 # Distinctions
 - **CORSIA (Carbon Offsetting and Reduction Scheme for International Aviation)** vs [EU Emissions Trading System (EU ETS)](/common/sustainability/eu-emissions-trading-system-eu-ets.md) — CORSIA is ICAO's global offsetting scheme for international flights based on buying/cancelling offset credits; the EU ETS is a regional cap-and-trade scheme covering intra-EEA flights where operators surrender allowances.
 - **CORSIA (Carbon Offsetting and Reduction Scheme for International Aviation)** vs [CORSIA Eligible Emissions Unit (EEU)](/common/sustainability/corsia-eligible-emissions-unit-eeu.md) — CORSIA is the scheme that creates the offsetting obligation; the CORSIA Eligible Emissions Unit is the specific carbon credit operators cancel to meet that obligation.
+- **CORSIA (Carbon Offsetting and Reduction Scheme for International Aviation)** vs [Fly Net Zero 2050](/common/sustainability/fly-net-zero-2050.md) — Fly Net Zero 2050 is a voluntary industry pledge by IATA airlines setting a 2050 net-zero target; CORSIA is ICAO's binding intergovernmental scheme that obliges operators to offset growth in international emissions above a baseline — an aspirational commitment versus a compliance mechanism.
+- **CORSIA (Carbon Offsetting and Reduction Scheme for International Aviation)** vs [GHG Protocol Scope 3 (Business Travel)](/common/sustainability/ghg-protocol-scope-3-business-travel.md) — Scope 3 Category 6 is a corporate carbon-accounting standard for the buyer/traveler's own value-chain inventory; CORSIA is an operator-side regulatory offsetting obligation on airlines — different parties and purposes.
 
 # Citations
-[1] ICAO — Carbon Offsetting and Reduction Scheme for International Aviation (CORSIA) FAQs — Apr 2024
-[2] IATA — Offsetting CO2 Emissions with CORSIA
+[1] [ICAO — Carbon Offsetting and Reduction Scheme for International Aviation (CORSIA) FAQs — Apr 2024](https://www.icao.int/sites/default/files/environmental-protection/CORSIA/CORSIA_FAQs_Apr2024.pdf)
+[2] [IATA — Offsetting CO2 Emissions with CORSIA](https://www.iata.org/en/programs/sustainability/corsia/)

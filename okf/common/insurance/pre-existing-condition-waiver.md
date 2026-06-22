@@ -24,7 +24,7 @@ relationships:
     targetTerm: Travel Medical Insurance
   - type: related
     targetTerm: Trip Cancellation
-  - type: related
+  - type: child
     targetTerm: Comprehensive Travel Insurance
 distinctions:
   - targetTerm: Cancel For Any Reason (CFAR)
@@ -57,7 +57,7 @@ By default, travel insurance excludes losses tied to conditions that existed dur
 # Related
 - [Travel Medical Insurance](/common/insurance/travel-medical-insurance.md) — related
 - [Trip Cancellation](/common/insurance/trip-cancellation.md) — related
-- [Comprehensive Travel Insurance](/common/insurance/comprehensive-travel-insurance.md) — related
+- [Comprehensive Travel Insurance](/common/insurance/comprehensive-travel-insurance.md) — child
 
 # Distinctions
 - **Pre-Existing Condition Waiver** vs [Cancel For Any Reason (CFAR)](/common/insurance/cancel-for-any-reason-cfar.md) — Both are early-purchase upgrades, but a pre-existing condition waiver makes covered-reason claims from a prior medical condition eligible, whereas CFAR lets you cancel for reasons the policy does not cover at all (for a partial refund).

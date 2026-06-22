@@ -24,9 +24,9 @@ aliases:
   - European Union Emissions Trading System
   - ETS
 relationships:
-  - type: related
+  - type: narrower
     targetTerm: EU Allowance (EUA)
-  - type: related
+  - type: contrasts
     targetTerm: CORSIA (Carbon Offsetting and Reduction Scheme for International Aviation)
   - type: related
     targetTerm: ReFuelEU Aviation
@@ -37,17 +37,20 @@ distinctions:
   - targetTerm: EU Allowance (EUA)
     explanation: The EU ETS is the scheme/market; the EU Allowance is the tradable unit (one tonne of CO2e) that the scheme issues and that operators surrender.
     explanation_ko: 'EU ETS는 제도이자 시장이고, EU Allowance(EUA)는 그 제도가 발행하고 운영자가 제출하는 거래 가능한 단위(CO2e 1톤)이다.'
+  - targetTerm: ReFuelEU Aviation
+    explanation: ReFuelEU Aviation is a supply-side fuel mandate forcing SAF into the fuel mix; the EU ETS is a demand-side carbon-pricing scheme requiring allowances for emissions — complementary EU instruments.
+    explanation_ko: 'ReFuelEU Aviation은 SAF를 연료 구성에 강제하는 공급측 연료 의무이고, EU ETS는 배출에 대해 배출권을 요구하는 수요측 탄소가격제로, 서로 보완적인 EU 수단이다.'
 sources:
   - org: EASA
     name: EU Emissions Trading System
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.easa.europa.eu/en/domains/environment/eaer/market-based-measures/eu-emissions-trading-system'
   - org: European Commission
     name: Reducing emissions from aviation
     version: ''
     section: ''
-    url: ''
+    url: 'https://climate.ec.europa.eu/eu-action/transport-decarbonisation/reducing-emissions-aviation_en'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="10" r="2" fill="currentColor"/><circle cx="31" cy="12" r="2" fill="currentColor"/><circle cx="17" cy="12" r="2" fill="currentColor"/><circle cx="24" cy="17" r="2" fill="currentColor"/><path d="M10 40V30M19 40V26M28 40V30M37 40V24"/><path d="M8 40h32"/><path d="M10 30l9-4 9 4 9-6"/></svg>
 ---
 
@@ -62,14 +65,15 @@ EU ETS에서는 점차 감소하는 배출 상한(cap)이 전체 배출권 물�
 **Aliases:** `EU Emissions Trading System`, `EU ETS`, `European Union Emissions Trading System`, `ETS`
 
 # Related
-- [EU Allowance (EUA)](/common/sustainability/eu-allowance-eua.md) — related
-- [CORSIA (Carbon Offsetting and Reduction Scheme for International Aviation)](/common/sustainability/corsia.md) — related
+- [EU Allowance (EUA)](/common/sustainability/eu-allowance-eua.md) — narrower
+- [CORSIA (Carbon Offsetting and Reduction Scheme for International Aviation)](/common/sustainability/corsia.md) — contrasts
 - [ReFuelEU Aviation](/common/sustainability/refueleu-aviation.md) — related
 
 # Distinctions
 - **EU Emissions Trading System (EU ETS)** vs [CORSIA (Carbon Offsetting and Reduction Scheme for International Aviation)](/common/sustainability/corsia.md) — The EU ETS is a regional cap-and-trade scheme covering intra-EEA flights where operators surrender allowances; CORSIA is ICAO's global offsetting scheme for international flights where operators cancel offset credits.
 - **EU Emissions Trading System (EU ETS)** vs [EU Allowance (EUA)](/common/sustainability/eu-allowance-eua.md) — The EU ETS is the scheme/market; the EU Allowance is the tradable unit (one tonne of CO2e) that the scheme issues and that operators surrender.
+- **EU Emissions Trading System (EU ETS)** vs [ReFuelEU Aviation](/common/sustainability/refueleu-aviation.md) — ReFuelEU Aviation is a supply-side fuel mandate forcing SAF into the fuel mix; the EU ETS is a demand-side carbon-pricing scheme requiring allowances for emissions — complementary EU instruments.
 
 # Citations
-[1] EASA — EU Emissions Trading System
-[2] European Commission — Reducing emissions from aviation
+[1] [EASA — EU Emissions Trading System](https://www.easa.europa.eu/en/domains/environment/eaer/market-based-measures/eu-emissions-trading-system)
+[2] [European Commission — Reducing emissions from aviation](https://climate.ec.europa.eu/eu-action/transport-decarbonisation/reducing-emissions-aviation_en)

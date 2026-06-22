@@ -23,7 +23,7 @@ aliases:
   - NEB
   - National Enforcement Bodies
 relationships:
-  - type: related
+  - type: broader
     targetTerm: EU Regulation 261/2004
   - type: related
     targetTerm: UK Regulation 261
@@ -43,12 +43,12 @@ sources:
     name: National enforcement bodies (NEB) — Mobility and Transport
     version: ''
     section: ''
-    url: ''
+    url: 'https://transport.ec.europa.eu/transport-themes/passenger-rights/national-enforcement-bodies-neb_en'
   - org: European Union
     name: 'Regulation (EC) No 261/2004, Article 16 — Infringements / enforcement'
     version: '2004'
     section: Article 16
-    url: ''
+    url: 'https://eur-lex.europa.eu/eli/reg/2004/261/oj/eng'
 icon: '<svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="42" x2="40" y2="42"/><line x1="24" y1="8" x2="24" y2="12"/><circle cx="24" cy="7" r="1.5" fill="currentColor"/><line x1="12" y1="12" x2="36" y2="12"/><polyline points="13,20 13,36"/><polyline points="21,20 21,36"/><polyline points="27,20 27,36"/><polyline points="35,20 35,36"/><line x1="10" y1="20" x2="38" y2="20"/></svg>'
 ---
 
@@ -63,7 +63,7 @@ Article 16에 따라 각 회원국은 자국 공항에서 출발하는 항공편
 **Aliases:** `National Enforcement Body`, `NEB`, `National Enforcement Bodies`
 
 # Related
-- [EU Regulation 261/2004](/common/disruption/eu-regulation-261-2004.md) — related
+- [EU Regulation 261/2004](/common/disruption/eu-regulation-261-2004.md) — broader
 - [UK Regulation 261](/common/disruption/uk-regulation-261.md) — related
 - [Denied Boarding Compensation](/common/disruption/denied-boarding-compensation.md) — related
 - [Sturgeon Ruling](/common/disruption/sturgeon-ruling.md) — related
@@ -73,5 +73,5 @@ Article 16에 따라 각 회원국은 자국 공항에서 출발하는 항공편
 - **National Enforcement Body (NEB)** vs [UK Regulation 261](/common/disruption/uk-regulation-261.md) — After Brexit the UK retained an equivalent regime with the Civil Aviation Authority acting as its enforcement body; an EU NEB enforces EU261, while the CAA enforces the UK-retained version for UK-departing and UK-bound flights.
 
 # Citations
-[1] European Commission — National enforcement bodies (NEB) — Mobility and Transport
-[2] European Union — Regulation (EC) No 261/2004, Article 16 — Infringements / enforcement — 2004 — Article 16
+[1] [European Commission — National enforcement bodies (NEB) — Mobility and Transport](https://transport.ec.europa.eu/transport-themes/passenger-rights/national-enforcement-bodies-neb_en)
+[2] [European Union — Regulation (EC) No 261/2004, Article 16 — Infringements / enforcement — 2004 — Article 16](https://eur-lex.europa.eu/eli/reg/2004/261/oj/eng)

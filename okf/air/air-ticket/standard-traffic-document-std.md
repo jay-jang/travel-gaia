@@ -47,12 +47,12 @@ sources:
     name: BSP Manual for Agents (Standard Traffic Documents / accountable documents)
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/contentassets/bfacf03f8e914960898e262df2777352/bsp-manual-for-agents.pdf'
   - org: IATA
     name: BSP Standard Documents and Procedures (training course)
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/training/pages/bsp/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M18 7h14l8 8v22a3 3 0 0 1-3 3H18a3 3 0 0 1-3-3V10a3 3 0 0 1 3-3z"/><path d="M32 7v8h8"/><path d="M9 14v27a3 3 0 0 0 3 3h21"/><path d="M21 24h12M21 30h8"/></svg>
 ---
 
@@ -79,5 +79,5 @@ STD는 대리점 발권의 기저에 있는 서류 통제(document-control) 기�
 - **Standard Traffic Document (STD)** vs [E-ticket](/air/air-ticket/e-ticket.md) — An e-ticket is one type of STD (the neutral electronic ticket). STD is the broader document-control category that also covers EMDs/virtual MPDs and refund vouchers issued from the same controlled, neutral stock.
 
 # Citations
-[1] IATA — BSP Manual for Agents (Standard Traffic Documents / accountable documents)
-[2] IATA — BSP Standard Documents and Procedures (training course)
+[1] [IATA — BSP Manual for Agents (Standard Traffic Documents / accountable documents)](https://www.iata.org/contentassets/bfacf03f8e914960898e262df2777352/bsp-manual-for-agents.pdf)
+[2] [IATA — BSP Standard Documents and Procedures (training course)](https://www.iata.org/en/training/pages/bsp/)

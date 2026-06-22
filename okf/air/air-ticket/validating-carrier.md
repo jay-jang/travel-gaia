@@ -39,12 +39,15 @@ distinctions:
   - targetTerm: Operating Carrier
     explanation: The validating carrier plates and settles the ticket and may not fly any segment; the operating carrier physically performs the flight.
     explanation_ko: '발권 항공사는 항공권을 발권(plate)하고 정산하며 어떤 구간도 운항하지 않을 수 있고, 운항 항공사(Operating Carrier)는 실제로 항공편을 수행한다.'
+  - targetTerm: Most Significant Carrier (MSC)
+    explanation: The validating carrier is the airline whose ticket stock/accounting governs how a ticket is issued and settled; the MSC governs only which baggage allowance and charges apply to a through-checked portion — they are independent and need not be the same airline.
+    explanation_ko: 'Validating carrier는 항공권이 어떻게 발권·정산되는지를 규율하는, 항공권 스톡·회계의 주체인 항공사이고, MSC는 통과 수속 구간에 어떤 수하물 허용량과 요금이 적용되는지만을 규율한다 — 둘은 독립적이며 동일 항공사일 필요가 없다.'
 sources:
   - name: Passenger Services Conference Resolutions Manual (PSCRM)
     org: IATA
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M23 6l13 5v8c0 8-5 13-13 16-8-3-13-8-13-16v-8z"/><path d="M17 19l4 4 9-9"/></svg>
 ---
 
@@ -68,6 +71,7 @@ The validating (or plating) carrier need not operate any of the flights on the t
 # Distinctions
 - **Validating Carrier** vs [Marketing Carrier](/air/air-partner/marketing-carrier.md) — The validating carrier owns the ticket's financial settlement; the marketing carrier is the airline selling the flight under its own code.
 - **Validating Carrier** vs [Operating Carrier](/air/air-partner/operating-carrier.md) — The validating carrier plates and settles the ticket and may not fly any segment; the operating carrier physically performs the flight.
+- **Validating Carrier** vs [Most Significant Carrier (MSC)](/air/air-partner/most-significant-carrier-msc.md) — The validating carrier is the airline whose ticket stock/accounting governs how a ticket is issued and settled; the MSC governs only which baggage allowance and charges apply to a through-checked portion — they are independent and need not be the same airline.
 
 # Citations
-[1] IATA — Passenger Services Conference Resolutions Manual (PSCRM)
+[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)

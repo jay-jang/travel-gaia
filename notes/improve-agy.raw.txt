@@ -1,0 +1,59 @@
+먼저 실제 코드베이스를 살펴보겠습니다.
+이제 OKF 샘플 파일 몇 개와 파일 크기 현황을 확인합니다.
+충분한 데이터를 확보했습니다. 이제 분석 결과를 아티팩트로 작성합니다.
+코드베이스 직접 분석 결과(`glossary.json` 커버리지 수치, `template.html` 검색·그래프 로직, OKF 파일구조, 빌드 파이프라인 전체)를 기반으로 12개 개선안을 도출했습니다.
+
+---
+
+## 우선순위 표
+
+| # | 제목 | 임팩트 | 난이도 | 한 줄 설명 |
+|---|------|--------|--------|------------|
+| 1 | **출처 URL 공백 해소** | 상 | 하 | 802개 citations 중 356개(44%)만 URL 존재 — 신뢰성의 핵심 공백 |
+| 2 | **공급자 매핑 커버리지 확대** | 상 | 중 | 407개 중 285개(70%)에 `providerTerms` 없음 — 핵심 가치 훼손 |
+| 3 | **fuzzy/한글 음차 검색** | 상 | 중 | 현 검색은 token-prefix 매칭만 — "피엔알"로 PNR 못 찾음 |
+| 4 | **`related` 과포화 정제** | 상 | 중 | 1,877 관계 중 1,703개(91%)가 `related` — 그래프 정보밀도 낭비 |
+| 5 | **OKF → JSON-LD export** | 중 | 중 | `DefinedTerm` Schema.org로 변환, RAG 소스·기계독해·SEO 동시 획득 |
+| 6 | **distinctions 양방향 대칭** | 중 | 하 | 746쌍이 단방향만 있어 역방향 탐색 시 누락 |
+| 7 | **OKF log.md 자동 갱신** | 중 | 하 | 빌드 시 변경된 OKF 파일 목록 자동 기록 |
+| 8 | **ARIA 누락 보완** | 중 | 하 | 그래프 SVG·사이드드로어에 `aria-live`, `aria-expanded` 미적용 |
+| 9 | **클래스룸 Ground vertical** | 중 | 중 | 렌터카·철도 클래스 미구현 — 구조와 불일치 |
+| 10 | **한국어 정의 품질 검증** | 중 | 중 | KO 정의가 EN 직역 수준인지 vs 맥락화인지 체계적 검증 없음 |
+| 11 | **`lastReviewed` 만료 경고** | 하 | 하 | 빌드 시 12개월 미갱신 표제어 자동 리포트 |
+| 12 | **gzip/압축 제공 힌트** | 하 | 하 | 2.3 MB 파일 — `serve.py`에 gzip 응답 추가로 체감 로드 70% 단축 |
+
+---
+
+## 상위 5개 상세
+
+### 1. 출처 URL 공백 해소
+**실측**: 802 citations 중 356개(44%)만 `url` 필드 존재. `renderTerm()` 코드(L789)에서 `s.url`이 없으면 클릭 불가 텍스트만 출력됨.
+- `build/verify-only-workflow.mjs`의 verify 패스에서 `isReal:true`이면 sources[].url 공백 시 `issues`에 강제 추가.
+- `okf-validate.mjs`에 "url 미기입 WARN" 규칙 추가(현재 round-trip 검증만 있음).
+
+### 2. 공급자 매핑 커버리지
+**실측**: 407개 중 122개만 providerTerms 있고, 있어도 평균 1.5개 공급자. 제품 핵심 가치(`교차 동의어 매핑`)가 70% 미구현 상태.
+- `ENTRY.required`에 providerTerms를 준-필수로 승격, verify 조건에 "air-ops·hotel-dist 카테고리는 GDS 3개 이상" 기준 추가.
+- `okf-validate.mjs`에 카테고리별 providerTerms 커버리지 리포트 줄 추가.
+
+### 3. Fuzzy/한글 음차 검색
+**실측**: `template.html` L685-693 검색 로직이 `startsWith`/`includes` 뿐. "피엔알"→PNR 불가, 오타("avaliability") 결과 없음.
+- 한글→영문 음차 테이블(30~50쌍: 피엔알→PNR, 지디에스→GDS 등)을 `search()` 함수 내에 인라인 추가, 외부 의존성 0 유지.
+- Levenshtein 1 이하 후보를 score 페널티(-3)와 함께 결과 포함(경량 구현, 기존 `idx` 배열 재사용).
+
+### 4. `related` 과포화 정제
+**실측**: `build.mjs` L96 `(r.type='related')` fallback으로 미지정 관계가 전부 `related`로 수렴. 그래프에서 `relational` 링크는 `stroke-opacity:0.15`로 거의 비가시.
+- `research-expand-workflow.mjs` 관계 타입을 `enum: ['broader','narrower','parent','child','sameAs','contrasts','replaces']`로 제한(`related` 제거).
+- `build/relabel-xrefs.mjs` 배치 스크립트 추가로 기존 `related` 엣지 재분류.
+
+### 5. OKF → JSON-LD Export
+**실측**: `okf-load.mjs`가 구조화 배열 반환하지만 `index.html` 단일 소비만. `data/glossary.json`이 이미 완성된 구조.
+- `build/okf-to-jsonld.mjs` 신규 추가(~60줄): `entries.map(e => ({ "@type":"DefinedTerm", name:e.term, alternateName:e.aliases, description:e.definition, ... }))` → `data/glossary.jsonld`.
+- `template.html`에 `<script type="application/ld+json">__JSONLD_DATA__</script>` 마커 삽입, 빌드 시 인라인.
+
+---
+
+## 한 줄 총평
+
+> **지금 하나만 한다면: 출처 URL 공백 해소 (난이도 하, 임팩트 상).**
+> 레퍼런스 제품의 신뢰성은 "1차 출처로 한 클릭" 여부가 기준인데 현재 56%가 dead-text다. validate 규칙 추가 + LLM 보강 1-pass로 즉각 해결 가능하고, citations 섹션 절반이 live-link로 전환되는 체감 효과가 가장 크다.

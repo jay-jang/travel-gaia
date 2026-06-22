@@ -33,6 +33,15 @@ distinctions:
   - targetTerm: Rate Parity
     explanation: Onboard credit is a way to sweeten a booking without breaking rate parity — the advertised fare stays identical across channels while value is added through spendable credit rather than a lower price.
     explanation_ko: '선상 크레딧은 rate parity를 깨지 않으면서 예약을 더 매력적으로 만드는 방법이다. 광고 운임은 채널 전반에서 동일하게 유지되고, 가치는 더 낮은 가격이 아니라 사용 가능한 크레딧으로 더해진다.'
+  - targetTerm: Daily Service Charge
+    explanation: OBC is a credit toward onboard spend that benefits the guest; the daily service charge is a debit posted against the same onboard folio. OBC can in fact offset the daily service charge when it posts to the account.
+    explanation_ko: 'OBC는 승객에게 이득이 되는 선상 지출용 크레딧이고, 일일 서비스 차지는 같은 선상 folio에 부과되는 차변(debit)이다. 실제로 OBC가 계정에 적립되면 일일 서비스 차지를 상쇄할 수 있다.'
+  - targetTerm: Future Cruise Credit (FCC)
+    explanation: An OBC can only be spent onboard during a sailing and expires at the end of that cruise; an FCC is applied against the fare of a future booking before sailing. OBC reduces onboard spend; FCC reduces the cost of the next cruise itself.
+    explanation_ko: 'OBC는 출항 중 선상에서만 사용 가능하고 해당 크루즈 종료 시 소멸하는 반면, FCC는 출항 전 향후 예약의 운임에 적용된다. OBC는 선상 지출을 줄여주고, FCC는 다음 크루즈 자체의 비용을 낮춰준다.'
+  - targetTerm: Tour Conductor Credit (TC)
+    explanation: 'An OBC is a spending credit redeemable only against onboard purchases for an individual booking; a TC credit is a group-level free-berth entitlement earned by booking volume that can be taken as a comp berth, agency profit, or a reduction in the group fare. OBC rewards a guest''s onboard spend potential; TC rewards the agent''s group production.'
+    explanation_ko: 'OBC는 개별 예약 건에 대해 선상 구매에만 사용할 수 있는 지출 크레딧인 반면, TC 크레딧은 예약 물량으로 적립되는 단체 단위 무료 침대 권리로 무료 침대·여행사 수익·단체 운임 인하로 활용할 수 있다. OBC는 승객의 선상 지출 잠재력에 대한 보상이고, TC는 여행사의 단체 생산 실적에 대한 보상이다.'
 sources:
   - name: 'Onboard credit on cruises: How to get it and use it'
     org: Cruise industry
@@ -65,6 +74,9 @@ Onboard credit is a marketing and distribution lever rather than a price cut: th
 
 # Distinctions
 - **Onboard Credit (OBC)** vs [Rate Parity](/lodging/hotel-rate/rate-parity.md) — Onboard credit is a way to sweeten a booking without breaking rate parity — the advertised fare stays identical across channels while value is added through spendable credit rather than a lower price.
+- **Onboard Credit (OBC)** vs [Daily Service Charge](/cruise/cruise/daily-service-charge.md) — OBC is a credit toward onboard spend that benefits the guest; the daily service charge is a debit posted against the same onboard folio. OBC can in fact offset the daily service charge when it posts to the account.
+- **Onboard Credit (OBC)** vs [Future Cruise Credit (FCC)](/cruise/cruise/future-cruise-credit-fcc.md) — An OBC can only be spent onboard during a sailing and expires at the end of that cruise; an FCC is applied against the fare of a future booking before sailing. OBC reduces onboard spend; FCC reduces the cost of the next cruise itself.
+- **Onboard Credit (OBC)** vs [Tour Conductor Credit (TC)](/cruise/cruise/tour-conductor-credit-tc.md) — An OBC is a spending credit redeemable only against onboard purchases for an individual booking; a TC credit is a group-level free-berth entitlement earned by booking volume that can be taken as a comp berth, agency profit, or a reduction in the group fare. OBC rewards a guest's onboard spend potential; TC rewards the agent's group production.
 
 # Citations
 [1] Cruise industry — Onboard credit on cruises: How to get it and use it

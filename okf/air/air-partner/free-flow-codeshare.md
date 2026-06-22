@@ -24,9 +24,9 @@ relationships:
     targetTerm: Codeshare
   - type: contrasts
     targetTerm: Block Space Agreement
-  - type: related
+  - type: contrasts
     targetTerm: Marketing Carrier
-  - type: related
+  - type: contrasts
     targetTerm: Operating Carrier
   - type: related
     targetTerm: Availability
@@ -66,8 +66,8 @@ Under a free-flow (also called free-sale) codeshare, the marketing carrier does 
 # Related
 - [Codeshare](/air/air-partner/codeshare.md) — parent
 - [Block Space Agreement](/air/air-partner/block-space-agreement.md) — contrasts
-- [Marketing Carrier](/air/air-partner/marketing-carrier.md) — related
-- [Operating Carrier](/air/air-partner/operating-carrier.md) — related
+- [Marketing Carrier](/air/air-partner/marketing-carrier.md) — contrasts
+- [Operating Carrier](/air/air-partner/operating-carrier.md) — contrasts
 - [Availability](/air/air-shop/availability.md) — related
 - [Free Sale](/lodging/hotel-dist/free-sale.md) — related
 

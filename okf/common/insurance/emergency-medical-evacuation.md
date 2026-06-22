@@ -20,11 +20,11 @@ aliases:
   - Medevac
   - Emergency Evacuation
 relationships:
-  - type: related
+  - type: contrasts
     targetTerm: Repatriation of Remains
   - type: child
     targetTerm: Travel Medical Insurance
-  - type: related
+  - type: child
     targetTerm: Comprehensive Travel Insurance
 distinctions:
   - targetTerm: Repatriation of Remains
@@ -33,6 +33,9 @@ distinctions:
   - targetTerm: Travel Medical Insurance
     explanation: 'Travel medical insurance covers in-place emergency treatment costs (hospital, doctor, dental); medical evacuation covers the transport to reach adequate care, a separate and far larger exposure.'
     explanation_ko: 'Travel Medical Insurance는 현지에서의 응급 진료비(병원, 의사, 치과)를 보장하고, Medical Evacuation은 적절한 치료에 도달하기 위한 이송 비용을 보장하는 별개의, 훨씬 큰 위험이다.'
+  - targetTerm: Trip Interruption
+    explanation: Trip interruption reimburses lost trip cost and ordinary return transport for any covered reason; medical evacuation specifically pays the cost of medically necessary transport to an adequate facility when a traveler is too ill or injured to travel normally.
+    explanation_ko: 'Trip Interruption은 모든 보장 사유에 대해 손실된 여행비용과 일반 귀국 운송비를 보상하고, Emergency Medical Evacuation은 여행자가 정상적으로 이동할 수 없을 때 적절한 시설로의 의료상 필요 이송 비용을 별도로 지급한다.'
 sources:
   - name: 'Medical Evacuation Insurance (Medevac): Coverage Explained'
     org: Squaremouth
@@ -58,13 +61,14 @@ Evacuation is triggered by medical necessity, not the traveler's preference, and
 **Aliases:** `Medical Evacuation`, `Medevac`, `Emergency Evacuation`
 
 # Related
-- [Repatriation of Remains](/common/insurance/repatriation-of-remains.md) — related
+- [Repatriation of Remains](/common/insurance/repatriation-of-remains.md) — contrasts
 - [Travel Medical Insurance](/common/insurance/travel-medical-insurance.md) — child
-- [Comprehensive Travel Insurance](/common/insurance/comprehensive-travel-insurance.md) — related
+- [Comprehensive Travel Insurance](/common/insurance/comprehensive-travel-insurance.md) — child
 
 # Distinctions
 - **Emergency Medical Evacuation** vs [Repatriation of Remains](/common/insurance/repatriation-of-remains.md) — Medical evacuation transports a living, ill or injured traveler to care; repatriation of remains returns a deceased traveler's body home. They are distinct benefits often listed together.
 - **Emergency Medical Evacuation** vs [Travel Medical Insurance](/common/insurance/travel-medical-insurance.md) — Travel medical insurance covers in-place emergency treatment costs (hospital, doctor, dental); medical evacuation covers the transport to reach adequate care, a separate and far larger exposure.
+- **Emergency Medical Evacuation** vs [Trip Interruption](/common/insurance/trip-interruption.md) — Trip interruption reimburses lost trip cost and ordinary return transport for any covered reason; medical evacuation specifically pays the cost of medically necessary transport to an adequate facility when a traveler is too ill or injured to travel normally.
 
 # Citations
 [1] [Squaremouth — Medical Evacuation Insurance (Medevac): Coverage Explained](https://www.squaremouth.com/travel-insurance-benefits/medical-evacuation-and-repatriation)

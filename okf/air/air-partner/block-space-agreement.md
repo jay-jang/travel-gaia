@@ -22,11 +22,11 @@ aliases:
   - BSA
   - Blocked Space Agreement
 relationships:
-  - type: related
+  - type: broader
     targetTerm: Codeshare
-  - type: related
+  - type: contrasts
     targetTerm: Marketing Carrier
-  - type: related
+  - type: contrasts
     targetTerm: Operating Carrier
   - type: related
     targetTerm: Availability
@@ -39,12 +39,18 @@ distinctions:
   - targetTerm: Allotment
     explanation: An allotment is a contracted inventory block (common in hotels and tour operators); a block space agreement is the airline analogue for seats on a partner's flight under a codeshare.
     explanation_ko: 'Allotment는 (호텔·여행사에서 흔한) 계약된 재고 블록이고, 블록 스페이스 협정은 공동운항 하에서 파트너 항공편의 좌석에 대한 항공사판 유사 개념이다.'
+  - targetTerm: Capacity Purchase Agreement
+    explanation: 'In a block space agreement the marketing carrier buys only a fixed block of seats on a flight the operating carrier otherwise sells and controls; in a CPA the mainline buys the entire capacity of the flight and holds all schedule, pricing, inventory, and revenue control.'
+    explanation_ko: '블록 스페이스 협정에서는 판매 항공사가 운항 항공사가 별도로 판매·통제하는 항공편의 고정 좌석 블록만 매입하지만, CPA에서는 메인라인이 항공편의 전체 공급력을 매입하고 스케줄·가격·재고·수익 통제권을 모두 보유한다.'
+  - targetTerm: Free-Flow Codeshare
+    explanation: 'In a block space agreement the marketing carrier pre-purchases a fixed block of seats and controls/prices them, bearing the sell-through risk; in a free-flow codeshare no seats are pre-allocated and the marketing carrier sells only against the operating carrier''s live availability, leaving inventory control and empty-seat risk with the operating carrier.'
+    explanation_ko: '블록 스페이스 협정에서는 마케팅사가 고정 좌석 블록을 선구매해 직접 통제·가격 책정하며 판매 소진 위험을 부담하지만, 프리플로 공동운항에서는 사전 할당 좌석이 없고 마케팅사가 운항사의 실시간 가용성에 기반해서만 판매하므로 재고 통제권과 빈 좌석 위험은 운항사에 남는다.'
 sources:
   - name: 'Airline Codeshares: An Insider''s Guide'
     org: OAG
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.oag.com/blog/airline-codeshares-an-insiders-guide'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="10" width="32" height="28" rx="2"/><line x1="8" y1="24" x2="40" y2="24"/><line x1="24" y1="10" x2="24" y2="38"/><rect x="10" y="12" width="12" height="10" fill="currentColor" stroke="none"/></svg>
 ---
 
@@ -59,15 +65,17 @@ Under a block space agreement the operating carrier sets aside an agreed number 
 **Aliases:** `Block Space`, `Block-Space Codeshare`, `BSA`, `Blocked Space Agreement`
 
 # Related
-- [Codeshare](/air/air-partner/codeshare.md) — related
-- [Marketing Carrier](/air/air-partner/marketing-carrier.md) — related
-- [Operating Carrier](/air/air-partner/operating-carrier.md) — related
+- [Codeshare](/air/air-partner/codeshare.md) — broader
+- [Marketing Carrier](/air/air-partner/marketing-carrier.md) — contrasts
+- [Operating Carrier](/air/air-partner/operating-carrier.md) — contrasts
 - [Availability](/air/air-shop/availability.md) — related
 - [Allotment](/lodging/hotel-rate/allotment.md) — related
 
 # Distinctions
 - **Block Space Agreement** vs [Codeshare](/air/air-partner/codeshare.md) — Block space is one model of codeshare in which seats are pre-purchased as a fixed block; the broader codeshare concept also includes free-flow/free-sale selling from the operating carrier's live inventory.
 - **Block Space Agreement** vs [Allotment](/lodging/hotel-rate/allotment.md) — An allotment is a contracted inventory block (common in hotels and tour operators); a block space agreement is the airline analogue for seats on a partner's flight under a codeshare.
+- **Block Space Agreement** vs [Capacity Purchase Agreement](/air/air-partner/capacity-purchase-agreement.md) — In a block space agreement the marketing carrier buys only a fixed block of seats on a flight the operating carrier otherwise sells and controls; in a CPA the mainline buys the entire capacity of the flight and holds all schedule, pricing, inventory, and revenue control.
+- **Block Space Agreement** vs [Free-Flow Codeshare](/air/air-partner/free-flow-codeshare.md) — In a block space agreement the marketing carrier pre-purchases a fixed block of seats and controls/prices them, bearing the sell-through risk; in a free-flow codeshare no seats are pre-allocated and the marketing carrier sells only against the operating carrier's live availability, leaving inventory control and empty-seat risk with the operating carrier.
 
 # Citations
-[1] OAG — Airline Codeshares: An Insider's Guide
+[1] [OAG — Airline Codeshares: An Insider's Guide](https://www.oag.com/blog/airline-codeshares-an-insiders-guide)

@@ -23,9 +23,9 @@ aliases:
   - Port Tour
   - Shore Tour
 relationships:
-  - type: related
+  - type: broader
     targetTerm: Port of Call
-  - type: related
+  - type: contrasts
     targetTerm: Ancillary Service
   - type: related
     targetTerm: Cruise-Only Fare
@@ -43,7 +43,7 @@ sources:
     org: OpenTravel Alliance
     version: ''
     section: ''
-    url: ''
+    url: 'https://opentravel.org/download-specs/'
   - name: Everything You Need to Know About Shore Excursions
     org: Cruise industry
     version: ''
@@ -63,8 +63,8 @@ Shore excursions are central to cruise ancillary revenue and distribution: cruis
 **Aliases:** `Shorex`, `Excursion`, `Port Tour`, `Shore Tour`
 
 # Related
-- [Port of Call](/cruise/cruise/port-of-call.md) — related
-- [Ancillary Service](/air/air-ticket/ancillary-service.md) — related
+- [Port of Call](/cruise/cruise/port-of-call.md) — broader
+- [Ancillary Service](/air/air-ticket/ancillary-service.md) — contrasts
 - [Cruise-Only Fare](/cruise/cruise/cruise-only-fare.md) — related
 - [Itinerary](/air/air-ops/itinerary.md) — related
 
@@ -73,5 +73,5 @@ Shore excursions are central to cruise ancillary revenue and distribution: cruis
 - **Shore Excursion** vs [Port of Call](/cruise/cruise/port-of-call.md) — A port of call is the destination stop itself; a shore excursion is a product sold against that stop — one port can offer many excursions, and a guest can visit a port with no excursion at all.
 
 # Citations
-[1] OpenTravel Alliance — OpenTravel Specification (cruise message set: shore excursions)
+[1] [OpenTravel Alliance — OpenTravel Specification (cruise message set: shore excursions)](https://opentravel.org/download-specs/)
 [2] Cruise industry — Everything You Need to Know About Shore Excursions

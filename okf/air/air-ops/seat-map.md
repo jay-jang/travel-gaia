@@ -48,17 +48,20 @@ distinctions:
   - targetTerm: Availability
     explanation: Availability tells whether seats can be sold in a given booking class (RBD) at the flight/cabin level; a Seat Map shows the physical layout and which individual seats are open for assignment. Availability drives selling; seat map drives seat selection.
     explanation_ko: 'Availability는 특정 예약 클래스(RBD)에서 항공편/cabin 단위로 좌석 판매 가능 여부를 알려주고, Seat Map은 물리적 배치와 어떤 개별 좌석을 배정할 수 있는지를 보여준다. availability는 판매를, seat map은 좌석 선택을 좌우한다.'
+  - targetTerm: Seat Reservation
+    explanation: A seat map is the visual layout used to select a place; a seat reservation is the resulting bound entitlement to that place on a given train.
+    explanation_ko: 'seat map은 좌석을 고르는 시각적 배치도이고, seat reservation은 그 결과로 특정 열차의 좌석에 묶인 권리다.'
 sources:
   - org: OpenTravel Alliance
     name: OpenTravel Specifications — OTA_AirSeatMapRQ/RS
     version: ''
     section: ''
-    url: ''
+    url: 'https://opentravel.org/download-specs/'
   - org: IATA
     name: NDC Implementation Guide — SeatAvailability
     version: ''
     section: ''
-    url: ''
+    url: 'https://guides.developer.iata.org/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 11c-3 5-3 26 0 30M32 11c3 5 3 26 0 30"/><rect x="19" y="15" width="4" height="4" rx="1"/><rect x="25" y="15" width="4" height="4" rx="1"/><rect x="19" y="22" width="4" height="4" rx="1"/><rect x="25" y="22" width="4" height="4" rx="1"/><rect x="19" y="29" width="4" height="4" rx="1"/><rect x="25" y="29" width="4" height="4" rx="1"/></svg>
 ---
 
@@ -88,7 +91,8 @@ Seat Map은 표준 메시지로 교환된다. OpenTravel의 OTA_AirSeatMapRQ/RS 
 
 # Distinctions
 - **Seat Map** vs [Availability](/air/air-shop/availability.md) — Availability tells whether seats can be sold in a given booking class (RBD) at the flight/cabin level; a Seat Map shows the physical layout and which individual seats are open for assignment. Availability drives selling; seat map drives seat selection.
+- **Seat Map** vs [Seat Reservation](/ground/rail/seat-reservation.md) — A seat map is the visual layout used to select a place; a seat reservation is the resulting bound entitlement to that place on a given train.
 
 # Citations
-[1] OpenTravel Alliance — OpenTravel Specifications — OTA_AirSeatMapRQ/RS
-[2] IATA — NDC Implementation Guide — SeatAvailability
+[1] [OpenTravel Alliance — OpenTravel Specifications — OTA_AirSeatMapRQ/RS](https://opentravel.org/download-specs/)
+[2] [IATA — NDC Implementation Guide — SeatAvailability](https://guides.developer.iata.org/)

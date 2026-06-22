@@ -22,9 +22,9 @@ aliases:
   - Calling Port
   - Stop
 relationships:
-  - type: related
+  - type: narrower
     targetTerm: Shore Excursion
-  - type: related
+  - type: contrasts
     targetTerm: Embarkation
   - type: related
     targetTerm: Itinerary
@@ -39,6 +39,9 @@ distinctions:
   - targetTerm: Itinerary
     explanation: 'The itinerary is the full ordered plan of the voyage; a port of call is one stop within it, alongside sea days and the turnaround ports.'
     explanation_ko: 'Itinerary는 항해의 전체 순서 계획이고, port of call은 그 안의 한 기항지로 항해일과 회항(turnaround) 항구와 함께 구성된다.'
+  - targetTerm: Shore Excursion
+    explanation: 'A port of call is the destination stop itself; a shore excursion is a product sold against that stop — one port can offer many excursions, and a guest can visit a port with no excursion at all.'
+    explanation_ko: 'port of call은 목적지 기항 자체이고, 기항지 투어는 그 기항을 대상으로 판매되는 상품이다. 한 항구가 여러 투어를 제공할 수 있고, 선객은 투어 없이 항구를 방문할 수도 있다.'
 sources:
   - name: Everything You Need to Know About Shore Excursions
     org: Cruise industry
@@ -54,7 +57,7 @@ sources:
     org: OpenTravel Alliance
     version: ''
     section: ''
-    url: ''
+    url: 'https://opentravel.org/download-specs/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="18" r="6"/><path d="M24 24v14"/><path d="M16 32a8 6 0 0 0 16 0"/><line x1="18" y1="30" x2="30" y2="30"/></svg>
 ---
 
@@ -69,8 +72,8 @@ Each port of call carries an arrival and departure time, a tendering-versus-dock
 **Aliases:** `Port Call`, `Calling Port`, `Stop`
 
 # Related
-- [Shore Excursion](/cruise/cruise/shore-excursion.md) — related
-- [Embarkation](/cruise/cruise/embarkation.md) — related
+- [Shore Excursion](/cruise/cruise/shore-excursion.md) — narrower
+- [Embarkation](/cruise/cruise/embarkation.md) — contrasts
 - [Itinerary](/air/air-ops/itinerary.md) — related
 - [Repositioning Cruise](/cruise/cruise/repositioning-cruise.md) — related
 - [UN/LOCODE](/common/codes/un-locode.md) — related
@@ -78,8 +81,9 @@ Each port of call carries an arrival and departure time, a tendering-versus-dock
 # Distinctions
 - **Port of Call** vs [Embarkation](/cruise/cruise/embarkation.md) — Embarkation is specifically the boarding event at the voyage's starting (home) port; a port of call is an intermediate stop where guests go ashore and return, not where the cruise begins or ends.
 - **Port of Call** vs [Itinerary](/air/air-ops/itinerary.md) — The itinerary is the full ordered plan of the voyage; a port of call is one stop within it, alongside sea days and the turnaround ports.
+- **Port of Call** vs [Shore Excursion](/cruise/cruise/shore-excursion.md) — A port of call is the destination stop itself; a shore excursion is a product sold against that stop — one port can offer many excursions, and a guest can visit a port with no excursion at all.
 
 # Citations
 [1] Cruise industry — Everything You Need to Know About Shore Excursions
 [2] Cruise industry — Cruising Terms (cruise glossary)
-[3] OpenTravel Alliance — OpenTravel Specification (cruise itinerary messages)
+[3] [OpenTravel Alliance — OpenTravel Specification (cruise itinerary messages)](https://opentravel.org/download-specs/)

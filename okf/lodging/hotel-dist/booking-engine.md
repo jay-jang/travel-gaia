@@ -41,6 +41,9 @@ distinctions:
   - targetTerm: Channel Manager
     explanation: 'A channel manager distributes ARI outbound to many third-party channels; the booking engine sells inbound on the hotel''s own direct channel. They are complementary, not the same.'
     explanation_ko: '채널 매니저는 ARI를 다수의 제3자 채널로 외부 유통하고, 부킹 엔진은 호텔 자체 직접 채널에서 판매를 받아들인다. 둘은 상호 보완적이며 동일하지 않다.'
+  - targetTerm: Direct Booking
+    explanation: 'The booking engine is the software tool that processes a direct online reservation; direct booking is the resulting transaction/channel concept, of which the booking engine is the primary enabler.'
+    explanation_ko: 'Booking engine은 온라인 직접 예약을 처리하는 소프트웨어 도구이고, 다이렉트 부킹은 그 결과로 발생하는 거래/채널 개념으로 booking engine이 이를 가능하게 하는 핵심 수단이다.'
 sources:
   - org: AltexSoft
     name: Booking engine — Glossary
@@ -76,6 +79,7 @@ The booking engine sits between the guest-facing interface and back-end inventor
 # Distinctions
 - **Booking Engine** vs [CRS](/lodging/hotel-dist/crs.md) — The CRS is the central system that holds and distributes a hotel's inventory and rates across all channels; the booking engine is the guest-facing front end of the direct channel that queries the CRS and creates direct reservations.
 - **Booking Engine** vs [Channel Manager](/lodging/hotel-dist/channel-manager.md) — A channel manager distributes ARI outbound to many third-party channels; the booking engine sells inbound on the hotel's own direct channel. They are complementary, not the same.
+- **Booking Engine** vs [Direct Booking](/lodging/hotel-dist/direct-booking.md) — The booking engine is the software tool that processes a direct online reservation; direct booking is the resulting transaction/channel concept, of which the booking engine is the primary enabler.
 
 # Citations
 [1] [AltexSoft — Booking engine — Glossary](https://www.altexsoft.com/glossary/booking-engine/)

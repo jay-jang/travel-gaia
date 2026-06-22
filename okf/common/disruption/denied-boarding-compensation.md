@@ -45,12 +45,12 @@ sources:
     org: US Department of Transportation
     version: ''
     section: '250.5'
-    url: ''
+    url: 'https://www.ecfr.gov/current/title-14/chapter-II/subchapter-A/part-250/section-250.5'
   - name: Periodic Revisions to Denied Boarding Compensation and Domestic Baggage Liability Limits (Federal Register)
     org: US Department of Transportation
     version: '2024'
     section: ''
-    url: ''
+    url: 'https://www.federalregister.gov/documents/2024/10/24/2024-23588/periodic-revisions-to-denied-boarding-compensation-and-domestic-baggage-liability-limits'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="13"/><path d="M24 16v16"/><path d="M27.5 19.5c-1-1.2-2.4-1.5-3.7-1.5-2 0-3.6 1-3.6 2.8 0 3.8 7.6 2.2 7.6 6 0 1.9-1.7 2.9-3.8 2.9-1.6 0-3.1-.6-4-1.7"/></svg>
 ---
 
@@ -76,5 +76,5 @@ In the US, 14 CFR 250.5 sets DBC at 200% of the one-way fare (capped at USD 1,07
 - **Denied Boarding Compensation** vs [Refund](/air/air-ticket/refund.md) — A refund returns the unused ticket value; DBC is a separate penalty paid on top of (or alongside re-routing of) the passenger regardless of any refund.
 
 # Citations
-[1] US Department of Transportation — 14 CFR 250.5 — Amount of denied boarding compensation for passengers denied boarding involuntarily — 250.5
-[2] US Department of Transportation — Periodic Revisions to Denied Boarding Compensation and Domestic Baggage Liability Limits (Federal Register) — 2024
+[1] [US Department of Transportation — 14 CFR 250.5 — Amount of denied boarding compensation for passengers denied boarding involuntarily — 250.5](https://www.ecfr.gov/current/title-14/chapter-II/subchapter-A/part-250/section-250.5)
+[2] [US Department of Transportation — Periodic Revisions to Denied Boarding Compensation and Domestic Baggage Liability Limits (Federal Register) — 2024](https://www.federalregister.gov/documents/2024/10/24/2024-23588/periodic-revisions-to-denied-boarding-compensation-and-domestic-baggage-liability-limits)

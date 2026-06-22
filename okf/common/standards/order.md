@@ -22,17 +22,17 @@ aliases:
   - NDC Order
   - Customer Order
 relationships:
-  - type: related
+  - type: contrasts
     targetTerm: Offer
   - type: related
     targetTerm: NDC
   - type: related
     targetTerm: ONE Order
-  - type: related
+  - type: replaces
     targetTerm: PNR
-  - type: related
+  - type: replaces
     targetTerm: E-ticket
-  - type: related
+  - type: replaces
     targetTerm: EMD
 distinctions:
   - targetTerm: Offer
@@ -44,17 +44,23 @@ distinctions:
   - targetTerm: ONE Order
     explanation: Order is the data object; ONE Order is the IATA standard/initiative defining and promoting that single Order record.
     explanation_ko: 'Order는 데이터 객체이고, ONE Order는 그 단일 주문 기록을 정의하고 확산시키는 IATA 표준이자 이니셔티브이다.'
+  - targetTerm: OrderChangeNotification (OCN)
+    explanation: 'The Order is the record being changed; OCN is the asynchronous notification about a change to that Order, not the Order itself.'
+    explanation_ko: 'Order는 변경 대상인 레코드이고, OCN은 그 Order의 변경을 알리는 비동기 알림이지 Order 자체가 아니다.'
+  - targetTerm: OrderCreate
+    explanation: 'An Order is the resulting record (the booked product, payment and service state); OrderCreate is the transaction that creates it.'
+    explanation_ko: 'Order는 결과물인 레코드(예약된 상품·결제·서비스 상태)이고, OrderCreate는 그것을 생성하는 트랜잭션이다.'
 sources:
   - name: Offer and Order (Airline Retailing)
     org: IATA
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/services/consulting/airlines/airline-retailing-order-and-offer-management/'
   - name: ONE Order
     org: IATA
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/programs/airline-distribution/retailing/one-order/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6h18l8 8v28a2 2 0 0 1-2 2H12a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/><path d="M30 6v8h8"/><path d="M16 22l2 2 3-3"/><path d="M25 23h8"/><path d="M16 30l2 2 3-3"/><path d="M25 31h8"/></svg>
 ---
 
@@ -69,18 +75,20 @@ The Order is the central data object in NDC OrderCreate/OrderManagement and is t
 **Aliases:** `Air Order`, `NDC Order`, `Customer Order`
 
 # Related
-- [Offer](/common/standards/offer.md) — related
+- [Offer](/common/standards/offer.md) — contrasts
 - [NDC](/common/standards/ndc.md) — related
 - [ONE Order](/common/standards/one-order.md) — related
-- [PNR](/air/air-ops/pnr.md) — related
-- [E-ticket](/air/air-ticket/e-ticket.md) — related
-- [EMD](/air/air-ticket/emd.md) — related
+- [PNR](/air/air-ops/pnr.md) — replaces
+- [E-ticket](/air/air-ticket/e-ticket.md) — replaces
+- [EMD](/air/air-ticket/emd.md) — replaces
 
 # Distinctions
 - **Order** vs [Offer](/common/standards/offer.md) — An Order is the committed purchase record; an Offer is the priced proposal the customer accepts to create the Order.
 - **Order** vs [PNR](/air/air-ops/pnr.md) — An Order is the modern single sales/fulfillment record intended to replace the legacy PNR plus separate e-ticket/EMD documents.
 - **Order** vs [ONE Order](/common/standards/one-order.md) — Order is the data object; ONE Order is the IATA standard/initiative defining and promoting that single Order record.
+- **Order** vs [OrderChangeNotification (OCN)](/common/standards/orderchangenotification-ocn.md) — The Order is the record being changed; OCN is the asynchronous notification about a change to that Order, not the Order itself.
+- **Order** vs [OrderCreate](/common/standards/ordercreate.md) — An Order is the resulting record (the booked product, payment and service state); OrderCreate is the transaction that creates it.
 
 # Citations
-[1] IATA — Offer and Order (Airline Retailing)
-[2] IATA — ONE Order
+[1] [IATA — Offer and Order (Airline Retailing)](https://www.iata.org/en/services/consulting/airlines/airline-retailing-order-and-offer-management/)
+[2] [IATA — ONE Order](https://www.iata.org/en/programs/airline-distribution/retailing/one-order/)

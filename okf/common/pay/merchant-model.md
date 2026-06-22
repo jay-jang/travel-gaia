@@ -21,7 +21,7 @@ aliases:
 relationships:
   - type: contrasts
     targetTerm: Agency Model
-  - type: related
+  - type: contrasts
     targetTerm: Merchant of Record
   - type: related
     targetTerm: Net Rate
@@ -36,6 +36,9 @@ distinctions:
   - targetTerm: Net Rate
     explanation: Net rates are the wholesale buying price the intermediary marks up under the merchant model.
     explanation_ko: 넷 요금(net rate)은 머천트 모델에서 중개업체가 마크업을 적용하는 도매 매입가다.
+  - targetTerm: Merchant of Record
+    explanation: In the merchant model the intermediary becomes the Merchant of Record and shows on the cardholder's statement.
+    explanation_ko: 머천트 모델에서는 중개업체가 Merchant of Record가 되어 카드 소지자의 명세서에 표시된다.
 sources:
   - name: 'Merchant model vs. agency model: A guide for business success'
     org: WEX Inc.
@@ -62,7 +65,7 @@ OTA가 호텔 재고에 널리 사용하는 머천트 모델은 중개업체에 
 
 # Related
 - [Agency Model](/common/pay/agency-model.md) — contrasts
-- [Merchant of Record](/common/pay/merchant-of-record.md) — related
+- [Merchant of Record](/common/pay/merchant-of-record.md) — contrasts
 - [Net Rate](/lodging/hotel-dist/net-rate.md) — related
 - [VCC](/common/pay/vcc.md) — related
 - [OTA (Online Travel Agency)](/common/standards/ota-online-travel-agency.md) — related
@@ -70,6 +73,7 @@ OTA가 호텔 재고에 널리 사용하는 머천트 모델은 중개업체에 
 # Distinctions
 - **Merchant Model** vs [Agency Model](/common/pay/agency-model.md) — Under the merchant model the intermediary sets the price and is Merchant of Record; under the agency model the supplier does.
 - **Merchant Model** vs [Net Rate](/lodging/hotel-dist/net-rate.md) — Net rates are the wholesale buying price the intermediary marks up under the merchant model.
+- **Merchant Model** vs [Merchant of Record](/common/pay/merchant-of-record.md) — In the merchant model the intermediary becomes the Merchant of Record and shows on the cardholder's statement.
 
 # Citations
 [1] [WEX Inc. — Merchant model vs. agency model: A guide for business success](https://www.wexinc.com/resources/blog/merchant-vs-agency-model-travel-payments/)

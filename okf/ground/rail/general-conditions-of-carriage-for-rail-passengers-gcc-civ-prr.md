@@ -33,7 +33,7 @@ relationships:
     targetTerm: CIV (Uniform Rules concerning the Contract of International Carriage of Passengers by Rail)
   - type: related
     targetTerm: Rail Passenger Rights Regulation (EU) 2021/782
-  - type: related
+  - type: narrower
     targetTerm: Special Conditions of International Carriage (SCIC)
   - type: related
     targetTerm: Standard International Passenger Tariff (TCV)
@@ -53,12 +53,12 @@ sources:
     name: General Conditions of Carriage for Rail Passengers (GCC-CIV/PRR)
     version: edition 14 December 2025
     section: ''
-    url: ''
+    url: 'https://www.cit-rail.org/secure-media/files/civ-products-dezemebr-2024/gcc_civprr_2025-12-14_en_accessible_signed.pdf?cid=438003'
   - org: CIT (International Rail Transport Committee)
     name: GCC-CIV/PRR — purpose and participating undertakings
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.cit-rail.org/en/passenger-traffic/products/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="11" y="7" width="22" height="30" rx="2"/><path d="M16 14h12M16 20h12M16 26h8"/><path d="M27 31l4 4 7-8"/></svg>
 ---
 
@@ -81,7 +81,7 @@ CIT가 작성·관리하고 회원 운송사업자에게 적용을 권고하는 
 # Related
 - [CIV (Uniform Rules concerning the Contract of International Carriage of Passengers by Rail)](/ground/rail/civ-uniform-rules.md) — child
 - [Rail Passenger Rights Regulation (EU) 2021/782](/ground/rail/rail-passenger-rights-regulation-eu-2021-782.md) — related
-- [Special Conditions of International Carriage (SCIC)](/ground/rail/special-conditions-of-international-carriage-scic.md) — related
+- [Special Conditions of International Carriage (SCIC)](/ground/rail/special-conditions-of-international-carriage-scic.md) — narrower
 - [Standard International Passenger Tariff (TCV)](/ground/rail/standard-international-passenger-tariff-tcv.md) — related
 - [Eurail Pass](/ground/rail/eurail-pass.md) — related
 - [Cancellation Policy](/lodging/hotel-dist/cancellation-policy.md) — related
@@ -91,5 +91,5 @@ CIT가 작성·관리하고 회원 운송사업자에게 적용을 권고하는 
 - **General Conditions of Carriage for Rail Passengers (GCC-CIV/PRR)** vs [Rail Passenger Rights Regulation (EU) 2021/782](/ground/rail/rail-passenger-rights-regulation-eu-2021-782.md) — Regulation (EU) 2021/782 is binding EU law setting passenger rights; the GCC-CIV/PRR is the CIT-drafted contractual document that carriers voluntarily adopt to implement those rights (and CIV obligations) in actual ticket terms. One is statute, the other is the contractual T&C that operationalises it.
 
 # Citations
-[1] CIT (International Rail Transport Committee) — General Conditions of Carriage for Rail Passengers (GCC-CIV/PRR) — edition 14 December 2025
-[2] CIT (International Rail Transport Committee) — GCC-CIV/PRR — purpose and participating undertakings
+[1] [CIT (International Rail Transport Committee) — General Conditions of Carriage for Rail Passengers (GCC-CIV/PRR) — edition 14 December 2025](https://www.cit-rail.org/secure-media/files/civ-products-dezemebr-2024/gcc_civprr_2025-12-14_en_accessible_signed.pdf?cid=438003)
+[2] [CIT (International Rail Transport Committee) — GCC-CIV/PRR — purpose and participating undertakings](https://www.cit-rail.org/en/passenger-traffic/products/)

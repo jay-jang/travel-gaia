@@ -23,7 +23,7 @@ aliases:
 relationships:
   - type: related
     targetTerm: Offer
-  - type: related
+  - type: contrasts
     targetTerm: Order Management System (OMS)
   - type: related
     targetTerm: NDC
@@ -43,12 +43,12 @@ sources:
     name: Airline Retailing - Order and Offer Management
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/services/consulting/airlines/airline-retailing-order-and-offer-management/'
   - org: IATA
     name: Distribution with Offers and Orders (NDC)
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/programs/airline-distribution/retailing/ndc/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="32" height="32" rx="3"/><path d="M14 18h12"/><path d="M14 24h20"/><path d="M14 30h16"/><path d="M30 14l4 4 6-7" stroke-width="2.5"/></svg>
 ---
 
@@ -64,7 +64,7 @@ Often abbreviated OMS (or labelled the 'Offer' half of a combined Offer & Order 
 
 # Related
 - [Offer](/common/standards/offer.md) — related
-- [Order Management System (OMS)](/common/standards/order-management-system-oms.md) — related
+- [Order Management System (OMS)](/common/standards/order-management-system-oms.md) — contrasts
 - [NDC](/common/standards/ndc.md) — related
 - [Shopping API](/common/standards/shopping-api.md) — related
 - [Ancillary Service](/air/air-ticket/ancillary-service.md) — related
@@ -74,5 +74,5 @@ Often abbreviated OMS (or labelled the 'Offer' half of a combined Offer & Order 
 - **Offer Management System** vs [Offer](/common/standards/offer.md) — The Offer is the data object (the priced proposal); the Offer Management System is the platform that produces and governs Offers.
 
 # Citations
-[1] IATA — Airline Retailing - Order and Offer Management
-[2] IATA — Distribution with Offers and Orders (NDC)
+[1] [IATA — Airline Retailing - Order and Offer Management](https://www.iata.org/en/services/consulting/airlines/airline-retailing-order-and-offer-management/)
+[2] [IATA — Distribution with Offers and Orders (NDC)](https://www.iata.org/en/programs/airline-distribution/retailing/ndc/)

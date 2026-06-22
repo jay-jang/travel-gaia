@@ -39,7 +39,7 @@ sources:
     org: IATA / ACI / WWACG
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/programs/ops-infra/slots/slot-guidelines/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="4" fill="currentColor" stroke="none"/><line x1="24" y1="24" x2="24" y2="7"/><line x1="24" y1="24" x2="40" y2="15"/><line x1="24" y1="24" x2="41" y2="31"/><line x1="24" y1="24" x2="31" y2="40"/><line x1="24" y1="24" x2="14" y2="39"/><line x1="24" y1="24" x2="7" y2="30"/><line x1="24" y1="24" x2="8" y2="15"/><circle cx="24" cy="7" r="2"/><circle cx="40" cy="15" r="2"/><circle cx="41" cy="31" r="2"/><circle cx="31" cy="40" r="2"/><circle cx="14" cy="39" r="2"/><circle cx="7" cy="30" r="2"/><circle cx="8" cy="15" r="2"/></svg>
 ---
 
@@ -64,4 +64,4 @@ In a hub-and-spoke network, flights are timed into connecting "banks" or "waves"
 - **Hub-and-Spoke** vs [Connection](/air/air-partner/connection.md) — Hub-and-spoke is the overall network strategy of funneling traffic through hubs; a connection is the individual passenger event of changing flights, which the hub model is designed to generate efficiently.
 
 # Citations
-[1] IATA / ACI / WWACG — Worldwide Airport Slot Guidelines (WASG)
+[1] [IATA / ACI / WWACG — Worldwide Airport Slot Guidelines (WASG)](https://www.iata.org/en/programs/ops-infra/slots/slot-guidelines/)

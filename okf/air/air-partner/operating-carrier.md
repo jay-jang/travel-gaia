@@ -20,7 +20,7 @@ standardBody: IATA
 aliases:
   - Operating Airline
 relationships:
-  - type: related
+  - type: contrasts
     targetTerm: Marketing Carrier
   - type: related
     targetTerm: Codeshare
@@ -33,17 +33,23 @@ distinctions:
   - targetTerm: Codeshare
     explanation: Operating carrier is a role on a specific flight; codeshare is the commercial arrangement that creates the distinction between operating and marketing carriers.
     explanation_ko: '운항 항공사는 특정 항공편에서의 역할이고, 공동운항은 운항 항공사와 판매 항공사의 구분을 만들어내는 상업적 협정이다.'
+  - targetTerm: Validating Carrier
+    explanation: The validating carrier plates and settles the ticket and may not fly any segment; the operating carrier physically performs the flight.
+    explanation_ko: '발권 항공사는 항공권을 발권(plate)하고 정산하며 어떤 구간도 운항하지 않을 수 있고, 운항 항공사(Operating Carrier)는 실제로 항공편을 수행한다.'
+  - targetTerm: Wet Lease
+    explanation: A wet lease is the contractual arrangement; in it the lessor is the operating carrier (holding the AOC and operational control) while the lessee markets the flight.
+    explanation_ko: '웻 리스는 계약상의 협정이며, 그 안에서 임대인이 (AOC와 운항 통제권을 보유한) 운항 항공사이고 임차인이 항공편을 판매한다.'
 sources:
   - name: Standard Schedules Information Manual (SSIM)
     org: IATA
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iata.org/en/publications/manuals/standard-schedules-information/'
   - name: DOT rules on disclosure of code-share arrangements
     org: U.S. Department of Transportation
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.transportation.gov/airconsumer/codeshare-disclosure'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 26l14-3 6-9 3 1-3 9 9-2 3-3 3 1-2 5"/><circle cx="38" cy="36" r="7"/><path d="M38 32v4l3 2"/></svg>
 ---
 
@@ -58,14 +64,16 @@ The operating carrier holds operational responsibility for the flight, including
 **Aliases:** `Operating Airline`
 
 # Related
-- [Marketing Carrier](/air/air-partner/marketing-carrier.md) — related
+- [Marketing Carrier](/air/air-partner/marketing-carrier.md) — contrasts
 - [Codeshare](/air/air-partner/codeshare.md) — related
 - [Airline Designator](/common/codes/airline-designator.md) — related
 
 # Distinctions
 - **Operating Carrier** vs [Marketing Carrier](/air/air-partner/marketing-carrier.md) — The operating carrier flies the aircraft; the marketing carrier sells the flight under its own code and number.
 - **Operating Carrier** vs [Codeshare](/air/air-partner/codeshare.md) — Operating carrier is a role on a specific flight; codeshare is the commercial arrangement that creates the distinction between operating and marketing carriers.
+- **Operating Carrier** vs [Validating Carrier](/air/air-ticket/validating-carrier.md) — The validating carrier plates and settles the ticket and may not fly any segment; the operating carrier physically performs the flight.
+- **Operating Carrier** vs [Wet Lease](/air/air-partner/wet-lease.md) — A wet lease is the contractual arrangement; in it the lessor is the operating carrier (holding the AOC and operational control) while the lessee markets the flight.
 
 # Citations
-[1] IATA — Standard Schedules Information Manual (SSIM)
-[2] U.S. Department of Transportation — DOT rules on disclosure of code-share arrangements
+[1] [IATA — Standard Schedules Information Manual (SSIM)](https://www.iata.org/en/publications/manuals/standard-schedules-information/)
+[2] [U.S. Department of Transportation — DOT rules on disclosure of code-share arrangements](https://www.transportation.gov/airconsumer/codeshare-disclosure)

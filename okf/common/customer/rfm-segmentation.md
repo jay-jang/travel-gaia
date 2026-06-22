@@ -37,17 +37,17 @@ sources:
     org: Marketing analytics reference
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.optimove.com/resources/learning-center/rfm-segmentation'
   - name: Estimating travellers' value when purchasing auxiliary services in the airline industry based on the RFM model
     org: Academic research
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.sciencedirect.com/science/article/abs/pii/S0969698923001807'
   - name: What is RFM Analysis for Customer Segmentation & How Does it Work?
     org: Marketing analytics reference
     version: ''
     section: ''
-    url: ''
+    url: 'https://netcorecloud.com/blog/rfm-analysis-customer-segmentation/'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M7 41V7"/><path d="M7 41h34"/><rect x="13" y="28" width="6" height="9"/><rect x="23" y="20" width="6" height="17"/><rect x="33" y="12" width="6" height="25"/></svg>
 ---
 
@@ -70,6 +70,6 @@ Each customer is assigned a score (often 1-5) on Recency, Frequency, and Monetar
 - **RFM Segmentation** vs [Loyalty Tier Status](/common/customer/loyalty-tier-status.md) — Loyalty Tier Status is a program-defined standing a member earns through qualifying activity; RFM Segmentation is an internal analytic score a brand computes to group travelers by behavior, invisible to the customer.
 
 # Citations
-[1] Marketing analytics reference — RFM Segmentation, Analysis & Model Marketing
-[2] Academic research — Estimating travellers' value when purchasing auxiliary services in the airline industry based on the RFM model
-[3] Marketing analytics reference — What is RFM Analysis for Customer Segmentation & How Does it Work?
+[1] [Marketing analytics reference — RFM Segmentation, Analysis & Model Marketing](https://www.optimove.com/resources/learning-center/rfm-segmentation)
+[2] [Academic research — Estimating travellers' value when purchasing auxiliary services in the airline industry based on the RFM model](https://www.sciencedirect.com/science/article/abs/pii/S0969698923001807)
+[3] [Marketing analytics reference — What is RFM Analysis for Customer Segmentation & How Does it Work?](https://netcorecloud.com/blog/rfm-analysis-customer-segmentation/)

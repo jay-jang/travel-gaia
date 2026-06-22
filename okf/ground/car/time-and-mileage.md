@@ -21,7 +21,7 @@ aliases:
   - Time and Kilometre
   - Time and Distance
 relationships:
-  - type: related
+  - type: narrower
     targetTerm: Unlimited Mileage
   - type: related
     targetTerm: Car Class
@@ -33,6 +33,12 @@ distinctions:
   - targetTerm: Unlimited Mileage
     explanation: 'Time and Mileage is the overall rate structure (time charge plus a mileage allowance); Unlimited Mileage is the specific case of that structure where the mileage allowance is uncapped, so no per-mile excess applies.'
     explanation_ko: 'Time and Mileage는 전체 요금 구조(시간 요금 + 주행거리 허용량)이고, Unlimited Mileage는 그 구조에서 주행거리 허용량에 상한이 없어 마일당 초과 요금이 발생하지 않는 특정 사례다.'
+  - targetTerm: Fuel Purchase Option
+    explanation: 'FPO prices fuel (how the tank is billed); time and mileage prices the rental duration and distance driven. Both are line items in the total, but they bill entirely different things.'
+    explanation_ko: 'FPO는 연료(탱크를 어떻게 청구하는지)에 가격을 매기고, time and mileage는 대여 기간과 주행 거리에 가격을 매긴다. 둘 다 총액의 항목이지만 청구 대상이 완전히 다르다.'
+  - targetTerm: One-Way Drop Fee
+    explanation: A one-way drop fee charges for returning the car to a different location (repositioning cost); time and mileage charges for rental duration and distance. A one-way rental can incur both.
+    explanation_ko: '편도 반납 수수료는 차량을 다른 위치에 반납하는 것(재배치 비용)에 부과하고, time and mileage는 대여 기간과 거리에 부과한다. 편도 대여는 둘 다 발생할 수 있다.'
 sources:
   - org: Budget Rent a Car
     name: Rental Car Glossary — Time and Mileage
@@ -68,13 +74,15 @@ time-and-mileage 요금에서 이용자는 대여 기간에 대해 지불하고,
 **Aliases:** `Time and Mileage`, `T&M`, `Time and Kilometre`, `Time and Distance`
 
 # Related
-- [Unlimited Mileage](/ground/car/unlimited-mileage.md) — related
+- [Unlimited Mileage](/ground/car/unlimited-mileage.md) — narrower
 - [Car Class](/ground/car/car-class.md) — related
 - [One-Way Drop Fee](/ground/car/one-way-drop-fee.md) — related
 - [Fuel Purchase Option](/ground/car/fuel-purchase-option.md) — related
 
 # Distinctions
 - **Time and Mileage** vs [Unlimited Mileage](/ground/car/unlimited-mileage.md) — Time and Mileage is the overall rate structure (time charge plus a mileage allowance); Unlimited Mileage is the specific case of that structure where the mileage allowance is uncapped, so no per-mile excess applies.
+- **Time and Mileage** vs [Fuel Purchase Option](/ground/car/fuel-purchase-option.md) — FPO prices fuel (how the tank is billed); time and mileage prices the rental duration and distance driven. Both are line items in the total, but they bill entirely different things.
+- **Time and Mileage** vs [One-Way Drop Fee](/ground/car/one-way-drop-fee.md) — A one-way drop fee charges for returning the car to a different location (repositioning cost); time and mileage charges for rental duration and distance. A one-way rental can incur both.
 
 # Citations
 [1] [Budget Rent a Car — Rental Car Glossary — Time and Mileage — Glossary](https://www.budget.com/en/customer-care/faqs/global/glossary)

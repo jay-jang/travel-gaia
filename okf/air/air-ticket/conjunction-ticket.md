@@ -21,9 +21,9 @@ aliases:
   - Conjunction Tickets
   - Conjunctive Ticket
 relationships:
-  - type: related
+  - type: broader
     targetTerm: E-ticket
-  - type: related
+  - type: child
     targetTerm: Flight Coupon
   - type: related
     targetTerm: Reissue
@@ -45,7 +45,7 @@ sources:
     name: Conditions of Contract and Other Important Notices
     version: ''
     section: ''
-    url: ''
+    url: 'https://www.iatatravelcentre.com/tickets.htm'
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="13" width="22" height="15" rx="2"/><rect x="19" y="20" width="22" height="15" rx="2"/><path d="M24 20v8"/><path d="M13 20h5"/><path d="M30 27h5"/></svg>
 ---
 
@@ -60,8 +60,8 @@ Because a single airline ticket can carry only a limited number of flight coupon
 **Aliases:** `Conjunction Tickets`, `Conjunctive Ticket`
 
 # Related
-- [E-ticket](/air/air-ticket/e-ticket.md) — related
-- [Flight Coupon](/air/air-ticket/flight-coupon.md) — related
+- [E-ticket](/air/air-ticket/e-ticket.md) — broader
+- [Flight Coupon](/air/air-ticket/flight-coupon.md) — child
 - [Reissue](/air/air-ticket/reissue.md) — related
 - [Journey](/air/air-shop/journey.md) — related
 - [Fare Component](/air/air-shop/fare-component.md) — related
@@ -71,4 +71,4 @@ Because a single airline ticket can carry only a limited number of flight coupon
 
 # Citations
 [1] [IATA — Ticketing Handbook](https://www.iata.org/en/publications/manuals/ticketing-handbook/)
-[2] IATA — Conditions of Contract and Other Important Notices
+[2] [IATA — Conditions of Contract and Other Important Notices](https://www.iatatravelcentre.com/tickets.htm)

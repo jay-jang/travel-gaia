@@ -41,11 +41,11 @@ providerTerms:
     context_ko: United Premier 등급을 위한 지출 기반 자격 지표.
     relationship: narrower
 relationships:
-  - type: related
+  - type: broader
     targetTerm: Loyalty Tier Status
   - type: related
     targetTerm: Mileage Accrual
-  - type: related
+  - type: broader
     targetTerm: Frequent Flyer Program
   - type: related
     targetTerm: Co-branded Credit Card
@@ -89,9 +89,9 @@ Elite qualifying metric은 사용 가능한 적립 마일과 의도적으로 구
 | United MileagePlus | `Premier Qualifying Points (PQP)` | narrower | Spend-based qualifying metric for United Premier status. |
 
 # Related
-- [Loyalty Tier Status](/common/customer/loyalty-tier-status.md) — related
+- [Loyalty Tier Status](/common/customer/loyalty-tier-status.md) — broader
 - [Mileage Accrual](/common/customer/mileage-accrual.md) — related
-- [Frequent Flyer Program](/common/customer/frequent-flyer-program.md) — related
+- [Frequent Flyer Program](/common/customer/frequent-flyer-program.md) — broader
 - [Co-branded Credit Card](/common/customer/co-branded-credit-card.md) — related
 
 # Distinctions
