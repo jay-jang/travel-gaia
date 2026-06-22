@@ -129,6 +129,24 @@ if (!tpl.includes('__GLOSSARY_DATA__')) { console.error('ERROR: template missing
 // String.replace special pattern ($&, $`, $', $1 …). Minified d3/JSON contain '$'.
 let html = tpl.replace('/*__FONTS__*/', () => fontCss).replace('__GLOSSARY_DATA__', () => json);
 
+// ---- inline JSON-LD (schema.org DefinedTermSet) for SEO / RAG / interop ----
+let jsonldKB = 0;
+if (tpl.includes('__JSONLD__')) {
+  const setId = 'https://travel-gaia/#termset';
+  const jsonld = {
+    '@context': 'https://schema.org', '@type': 'DefinedTermSet', '@id': setId,
+    name: glossary.meta.name, inLanguage: ['en', 'ko'],
+    hasDefinedTerm: entries.map(e => {
+      const dt = { '@type': 'DefinedTerm', '@id': `#/term/${e.id}`, termCode: e.id, name: e.term, description: e.definition, inDefinedTermSet: setId };
+      if (e.aliases && e.aliases.length) dt.alternateName = e.aliases;
+      return dt;
+    }),
+  };
+  const ld = JSON.stringify(jsonld).replace(/</g, '\\u003c');
+  html = html.replace('__JSONLD__', () => ld);
+  jsonldKB = (ld.length / 1024).toFixed(0);
+}
+
 // ---- inline d3 so the single-file artifact stays offline / zero-dependency (graph uses D3) ----
 const D3_CDN = '<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>';
 let d3KB = 0, d3inlined = false;
@@ -158,5 +176,5 @@ console.log(`bad status: ${badStatus.length}${badStatus.length?' ['+badStatus.jo
 const withIcon = entries.filter(e => e.icon && /<svg/i.test(e.icon)).length;
 console.log(`entries with SVG icon: ${withIcon}/${entries.length}`);
 console.log(`embedded fonts: ${fontKB} KB | index.html total: ${(html.length/1024).toFixed(0)} KB | data: ${(JSON.stringify(glossary).length/1024).toFixed(1)} KB`);
-console.log(`d3: ${d3inlined?`inlined ${d3KB} KB (offline)`:'NOT inlined (CDN)'} | remote <script src>: ${remoteScripts}${remoteScripts?' ⚠ NOT offline':' (offline OK)'}`);
+console.log(`d3: ${d3inlined?`inlined ${d3KB} KB (offline)`:'NOT inlined (CDN)'} | remote <script src>: ${remoteScripts}${remoteScripts?' ⚠ NOT offline':' (offline OK)'} | JSON-LD: ${jsonldKB} KB`);
 console.log(`OK -> index.html, data/glossary.json\n`);
