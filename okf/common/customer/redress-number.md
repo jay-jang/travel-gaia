@@ -26,6 +26,11 @@ providerTerms:
     context: The Traveler Redress Inquiry Program that issues Redress Numbers.
     context_ko: Redress Number를 발급하는 여행자 구제 문의 프로그램.
     relationship: broader
+  - provider: IATA / GDS
+    term: SSR DOCO (Redress)
+    context: In reservations the redress number is entered as an SSR DOCO element associated to the passenger name (not the segment) for transmission to TSA Secure Flight
+    context_ko: 예약에서 Redress 번호는 TSA Secure Flight 전송을 위해 승객명에 연결된 SSR DOCO 요소로 입력된다(구간이 아닌 승객 단위)
+    relationship: related
 relationships:
   - type: related
     targetTerm: Secure Flight
@@ -68,6 +73,7 @@ Travelers apply through DHS TRIP after recurring problems such as denied or dela
 | Provider | Term | Relationship | Context |
 | --- | --- | --- | --- |
 | DHS | `DHS TRIP` | broader | The Traveler Redress Inquiry Program that issues Redress Numbers. |
+| IATA / GDS | `SSR DOCO (Redress)` | related | In reservations the redress number is entered as an SSR DOCO element associated to the passenger name (not the segment) for transmission to TSA Secure Flight |
 
 # Related
 - [Secure Flight](/common/customer/secure-flight.md) — related

@@ -22,6 +22,12 @@ aliases:
   - Document Number
   - Airline Ticket Number
   - Electronic Ticket Number
+providerTerms:
+  - provider: Amadeus
+    term: FA element / Document Number
+    context: In an Amadeus PNR the issued e-ticket number is stored in the automated FA element as the 'document number' (3-digit carrier code + serial).
+    context_ko: Amadeus PNR에서 발권된 e-티켓 번호는 자동 FA 요소에 'document number'(3자리 항공사 코드+일련번호)로 저장된다.
+    relationship: same
 relationships:
   - type: related
     targetTerm: E-ticket
@@ -73,6 +79,12 @@ Each flight coupon of an e-ticket is addressed by the document number plus a cou
 전자항공권의 각 비행 쿠폰(flight coupon)은 서류 번호에 쿠폰 번호(1~4)를 더해 지정된다. 여정에 한 서류가 허용하는 쿠폰보다 많은 쿠폰이 필요하면, 연결권(conjunction ticket)이 연속된 일련번호 범위를 공유한다. 예약 전체를 가리키는 PNR 예약번호나 노선·날짜를 가리키는 편명과 달리, 항공권 번호는 한 승객이 구매한 서류 하나를 가리키며 환불·재발행·취소(void)·교환과 BSP/ARC 정산에 사용된다. 앞 세 자리는 검증 항공사(validating carrier)를 식별하는 항공사 정산 코드이다.
 
 **Aliases:** `E-Ticket Number`, `Document Number`, `Airline Ticket Number`, `Electronic Ticket Number`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Amadeus | `FA element / Document Number` | same | In an Amadeus PNR the issued e-ticket number is stored in the automated FA element as the 'document number' (3-digit carrier code + serial). |
 
 # Related
 - [E-ticket](/air/air-ticket/e-ticket.md) — related

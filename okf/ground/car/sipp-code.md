@@ -22,6 +22,17 @@ aliases:
   - Standard Interline Passenger Procedure code
   - SIP Code
   - Car Type Code
+providerTerms:
+  - provider: GDS (legacy / IATA)
+    term: SIPP code
+    context: 'Standard Interline Passenger Procedure code, the original airline-booking-system four-letter classification that GDSs adopted and ACRISS later expanded and now maintains.'
+    context_ko: 'Standard Interline Passenger Procedure 코드로, 항공 예약 시스템에서 출발한 네 자리 분류를 GDS가 채택했고 이후 ACRISS가 확장·관리한다.'
+    relationship: same
+  - provider: ACRA (American Car Rental Association)
+    term: SIP code
+    context: ACRA refers to the same four-character vehicle classification as the ACRISS/SIP code in its US industry guidance.
+    context_ko: ACRA는 미국 업계 가이드에서 동일한 네 자리 차량 분류를 ACRISS/SIP 코드로 부른다.
+    relationship: same
 relationships:
   - type: sameAs
     targetTerm: ACRISS Code
@@ -56,6 +67,13 @@ SIPP codes share the same four-position structure as ACRISS codes — Category, 
 SIPP 코드는 ACRISS 코드와 동일한 네 자리 구조(등급, 차종, 변속기·구동, 연료·에어컨)를 공유하며, 일상적인 GDS·여행사 사용에서 'SIPP 코드'와 'ACRISS 코드'는 동일한 네 글자 차량 식별자를 가리킨다. 차이는 주로 역사적·지역적인 것으로, SIPP는 여객 절차에서 물려받은 인터라인 시대의 원래 명칭이고 ACRISS는 값 집합을 공식화·확장한 현대의 관장 표준이다. ACRISS 명칭을 채택하지 않은 구형 GDS 렌터카 화면, 계약, 문서를 읽으려면 SIPP라는 명칭을 이해하는 것이 중요하다.
 
 **Aliases:** `Standard Interline Passenger Procedure code`, `SIP Code`, `Car Type Code`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| GDS (legacy / IATA) | `SIPP code` | same | Standard Interline Passenger Procedure code, the original airline-booking-system four-letter classification that GDSs adopted and ACRISS later expanded and now maintains. |
+| ACRA (American Car Rental Association) | `SIP code` | same | ACRA refers to the same four-character vehicle classification as the ACRISS/SIP code in its US industry guidance. |
 
 # Related
 - [ACRISS Code](/ground/car/acriss-code.md) — sameAs

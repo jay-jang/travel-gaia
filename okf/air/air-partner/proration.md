@@ -22,6 +22,12 @@ aliases:
   - Prorating
   - Fare Proration
   - Pro-ration
+providerTerms:
+  - provider: IATA
+    term: Prorate Manual Passenger (PMP) / Multilateral Prorate Agreement-Passenger (MPA-P)
+    context: 'IATA publishes the Prorate Manual Passenger quarterly, containing the Multilateral Prorate Agreement (MPA-P) rules and prorate factors used to divide interline and codeshare fares among carriers in revenue accounting.'
+    context_ko: 'IATA는 분기별로 여객 프로레이트 매뉴얼(PMP)을 발행하며, 여기에는 수익 정산에서 인터라인·공동운항 운임을 항공사 간에 분배하는 데 쓰이는 다자간 프로레이트 협정(MPA-P) 규칙과 프로레이트 팩터가 담겨 있다.'
+    relationship: same
 relationships:
   - type: narrower
     targetTerm: SPA (Special Prorate Agreement)
@@ -74,6 +80,12 @@ Proration translates a single through-fare into per-carrier revenue shares used 
 프로레이션은 단일 일관 운임(through-fare)을 인터라인 청구 및 정산에 사용되는 항공사별 수익 배분 몫으로 변환한다. 기본 방식은 각 구간에 표준 프로레이트 계수(흔히 거리/마일리지 기반 가중치)를 적용하지만, 항공사는 특정 시장에 대해 SPA(Special Prorate Agreement)로 이를 대체할 수 있다. 그 결과로 산출된 금액은 수익 회계의 일부로 청구되고, 일반적으로 IATA Clearing House를 통해 정산된다.
 
 **Aliases:** `Prorate`, `Prorating`, `Fare Proration`, `Pro-ration`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| IATA | `Prorate Manual Passenger (PMP) / Multilateral Prorate Agreement-Passenger (MPA-P)` | same | IATA publishes the Prorate Manual Passenger quarterly, containing the Multilateral Prorate Agreement (MPA-P) rules and prorate factors used to divide interline and codeshare fares among carriers in revenue accounting. |
 
 # Related
 - [SPA (Special Prorate Agreement)](/air/air-partner/spa-special-prorate-agreement.md) — narrower

@@ -21,6 +21,17 @@ standardBody: IATA
 aliases:
   - Agency Credit Memo
   - Credit Memo
+providerTerms:
+  - provider: NDC/IATA
+    term: ACM via BSPlink
+    context: 'Airlines issue Agency Credit Memos to BSP-accredited agents through IATA''s BSPlink portal, where agents view and the amounts settle through the Billing and Settlement Plan.'
+    context_ko: '항공사는 IATA BSPlink 포털을 통해 BSP 인증 대리점에 ACM을 발행하며, 대리점이 조회하고 금액은 BSP 정산으로 처리된다.'
+    relationship: same
+  - provider: Sabre
+    term: ARC Memo Manager (ACM)
+    context: 'For US (ARC) agents, credit memos from airlines are managed through ARC Memo Manager rather than BSPlink.'
+    context_ko: 미국(ARC) 대리점의 경우 항공사의 크레딧 메모를 BSPlink 대신 ARC Memo Manager로 관리한다.
+    relationship: same
 relationships:
   - type: contrasts
     targetTerm: Agency Debit Memo (ADM)
@@ -62,6 +73,13 @@ Whereas an ADM debits an agent for amounts owed to the airline, an ACM credits t
 ADM이 항공사에 지급해야 할 금액에 대해 대리점에 차변을 거는 것이라면, ACM은 항공사가 대리점에 지급해야 할 금액에 대해 대변을 제공한다. 커미션 과소 청구, 운임·세금 과다 징수, 또는 승객을 위한 환불을 대리점에 되돌려야 하는 경우가 흔하다. ACM은 IATA 여객대리점회의 체계 하에서 ADM과 함께 BSP(BSPlink 경유) 또는 ARC를 통해 발행·정산된다. 흔한 용도는 이의가 제기된 ADM의 해소 경로로, 대리점이 ADM 이의를 성공적으로 제기하면 항공사가 ACM을 발행하여 이를 취소하거나 상계한다.
 
 **Aliases:** `Agency Credit Memo`, `Credit Memo`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| NDC/IATA | `ACM via BSPlink` | same | Airlines issue Agency Credit Memos to BSP-accredited agents through IATA's BSPlink portal, where agents view and the amounts settle through the Billing and Settlement Plan. |
+| Sabre | `ARC Memo Manager (ACM)` | same | For US (ARC) agents, credit memos from airlines are managed through ARC Memo Manager rather than BSPlink. |
 
 # Related
 - [Agency Debit Memo (ADM)](/air/air-ticket/agency-debit-memo-adm.md) — contrasts

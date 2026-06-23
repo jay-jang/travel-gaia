@@ -21,6 +21,12 @@ aliases:
   - Airport Slot
   - Takeoff/Landing Slot
   - Coordination Slot
+providerTerms:
+  - provider: IATA
+    term: Worldwide Airport Slot Guidelines (WASG)
+    context: 'The WASG—jointly published by IATA, ACI World, and WWACG via the Worldwide Airport Slot Board—is the global standard governing how slots are allocated and managed at coordinated (capacity-constrained) airports.'
+    context_ko: 'WASG는 IATA·ACI World·WWACG가 세계 공항 슬롯 위원회(WASB)를 통해 공동 발행하는 표준으로, 조정(용량 제약) 공항에서 슬롯이 배정·관리되는 방식을 규율하는 글로벌 기준이다.'
+    relationship: same
 relationships:
   - type: related
     targetTerm: Schedule Change
@@ -51,6 +57,12 @@ At Level 3 (fully coordinated) airports, a slot coordinator allocates slots base
 레벨 3(완전 조정 대상) 공항에서는 슬롯 조정관이 과거 운항 실적에 따른 우선권("grandfather rights"), 80/20 사용하지 않으면 상실(use-it-or-lose-it) 활용 요건, 신규 진입자 우선권, 슬롯 풀을 다루는 규칙에 따라 슬롯을 배정한다. 슬롯은 항공편 스케줄 자체와는 구별되며, 항공사는 스케줄을 게시하고 운항하기 전에 필요한 슬롯을 보유해야 한다. 슬롯은 해당 규칙에 따라 교환되거나 양도될 수 있으며, 가장 혼잡한 공항에서는 상업적으로 가치가 높다.
 
 **Aliases:** `Airport Slot`, `Takeoff/Landing Slot`, `Coordination Slot`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| IATA | `Worldwide Airport Slot Guidelines (WASG)` | same | The WASG—jointly published by IATA, ACI World, and WWACG via the Worldwide Airport Slot Board—is the global standard governing how slots are allocated and managed at coordinated (capacity-constrained) airports. |
 
 # Related
 - [Schedule Change](/air/air-partner/schedule-change.md) — related

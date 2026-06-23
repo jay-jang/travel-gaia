@@ -25,6 +25,16 @@ providerTerms:
     context: PNR holding a number of seats with unassigned names tracked by element 0 and NM count.
     context_ko: 좌석 수를 보유하며 element 0과 NM 수로 미배정 이름을 관리하는 PNR.
     relationship: same
+  - provider: Sabre
+    term: Group PNR (group name field / 0 group seats)
+    context: 'Sabre holds a group block under a single PNR with a group name field and a numeric seat count, names added later via NM entries.'
+    context_ko: 'Sabre는 group name 필드와 좌석 수를 가진 단일 PNR로 group block을 보유하며, 이름은 이후 NM 엔트리로 추가한다.'
+    relationship: same
+  - provider: NDC/IATA
+    term: Group Order / BookaGroup (group request)
+    context: 'In NDC group flows (e.g. Lufthansa Group BookaGroup), a group request is created and later converted to an Order, replacing the classic group PNR block.'
+    context_ko: 'NDC group flow(예: Lufthansa Group BookaGroup)에서는 group 요청을 생성한 뒤 Order로 전환하여 기존 group PNR block을 대체한다.'
+    relationship: related
 relationships:
   - type: broader
     targetTerm: PNR
@@ -70,6 +80,8 @@ Group bookings are governed by negotiated group fares and carrier group policies
 | Provider | Term | Relationship | Context |
 | --- | --- | --- | --- |
 | Amadeus | `Group PNR` | same | PNR holding a number of seats with unassigned names tracked by element 0 and NM count. |
+| Sabre | `Group PNR (group name field / 0 group seats)` | same | Sabre holds a group block under a single PNR with a group name field and a numeric seat count, names added later via NM entries. |
+| NDC/IATA | `Group Order / BookaGroup (group request)` | related | In NDC group flows (e.g. Lufthansa Group BookaGroup), a group request is created and later converted to an Order, replacing the classic group PNR block. |
 
 # Related
 - [PNR](/air/air-ops/pnr.md) — broader

@@ -20,6 +20,12 @@ longDef_ko: '국제선 여정은 여러 현지 통화로 공시된 운임을 거
 standardBody: IATA
 aliases:
   - Neutral Unit of Construction
+providerTerms:
+  - provider: NDC/IATA
+    term: FCU (Fare Construction Unit)
+    context: 'FCU was IATA''s earlier currency-neutral fare-construction unit, superseded by NUC on 1 July 1989; NUC values are built using the IATA Rate of Exchange (IROE).'
+    context_ko: 'FCU는 IATA의 이전 통화중립 운임구성 단위로 1989년 7월 1일 NUC로 대체되었으며, NUC 값은 IATA 환율(IROE)로 산출된다.'
+    relationship: related
 relationships:
   - type: related
     targetTerm: Fare Component
@@ -59,6 +65,12 @@ Because an international journey can traverse fares published in multiple local 
 국제선 여정은 여러 현지 통화로 공시된 운임을 거칠 수 있으므로, NUC는 운임 컴포넌트를 결합하고 운임 단계(fare ladder)와 대조할 수 있도록 단일 누적 단위를 제공한다. 각 통화에는 현지 통화를 NUC로 환산하거나 그 반대로 환산하는 데 사용되는 IATA 공시 환산율(ROE)이 있으며, NUC 합계는 산정 종료 시점에 다시 판매/현지 통화로 환산된다. NUC는 마일리지 및 노선 기반의 IATA 국제선 운임 산정의 핵심이며, 항공권의 선형 운임 계산(linear fare calculation)에 표시된다.
 
 **Aliases:** `Neutral Unit of Construction`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| NDC/IATA | `FCU (Fare Construction Unit)` | related | FCU was IATA's earlier currency-neutral fare-construction unit, superseded by NUC on 1 July 1989; NUC values are built using the IATA Rate of Exchange (IROE). |
 
 # Related
 - [Fare Component](/air/air-shop/fare-component.md) — related

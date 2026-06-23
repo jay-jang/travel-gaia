@@ -21,6 +21,12 @@ aliases:
   - Interline Agreement
   - Interlining
   - Interline Traffic Agreement
+providerTerms:
+  - provider: IATA
+    term: Multilateral Interline Traffic Agreement (MITA)
+    context: IATA's MITA is the standardized multilateral framework under which participating airlines accept each other's traffic documents and through-check passengers and baggage; the MITA manual lists all passenger and cargo participants.
+    context_ko: 'IATA의 MITA는 참여 항공사가 서로의 운송 서류를 인수하고 승객·수하물을 연계 체크인하는 표준 다자간 프레임워크이며, MITA 매뉴얼은 모든 여객·화물 참여 항공사를 수록한다.'
+    relationship: narrower
 relationships:
   - type: contrasts
     targetTerm: Codeshare
@@ -73,6 +79,12 @@ Interline agreements enable through-ticketing, mutual ticket acceptance, baggage
 인터라인 협정은 편명 공유 없이도 항공사 간 일관 발권(through-ticketing), 상호 항공권 인수, 수하물 일관 위탁(through-checking), 수익 정산을 가능하게 한다. 이는 여러 항공사가 관여하는 여정의 기반이 되며, 일반적으로 IATA Clearing House를 통해, 그리고 MITA(Multilateral Interline Traffic Agreements)나 양자 간 SPA(Special Prorate Agreement)에 기반한 프로레이션을 통해 재무적으로 정산된다.
 
 **Aliases:** `Interline Agreement`, `Interlining`, `Interline Traffic Agreement`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| IATA | `Multilateral Interline Traffic Agreement (MITA)` | narrower | IATA's MITA is the standardized multilateral framework under which participating airlines accept each other's traffic documents and through-check passengers and baggage; the MITA manual lists all passenger and cargo participants. |
 
 # Related
 - [Codeshare](/air/air-partner/codeshare.md) — contrasts

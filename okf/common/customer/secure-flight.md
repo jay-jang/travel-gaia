@@ -20,6 +20,22 @@ aliases:
   - Secure Flight Passenger Data
   - SFPD
   - Secure Flight Program
+providerTerms:
+  - provider: TSA
+    term: SFPD (Secure Flight Passenger Data)
+    context: 'TSA names the mandatory data set (full name, DOB, gender, plus KTN/Redress) collected for watch-list matching as Secure Flight Passenger Data'
+    context_ko: TSA는 감시명단 대조를 위해 수집하는 필수 데이터셋(성명·생년월일·성별 및 KTN/Redress)을 SFPD라 부른다
+    relationship: narrower
+  - provider: IATA
+    term: SSR DOCS / DOCO
+    context: Carriers transmit SFPD to TSA using the existing IATA SSR DOCS (identity) and SSR DOCO (KTN/Redress) PNR elements
+    context_ko: 항공사는 기존 IATA SSR DOCS(신원)와 SSR DOCO(KTN/Redress) PNR 요소를 이용해 SFPD를 TSA에 전송한다
+    relationship: related
+  - provider: Amadeus
+    term: SSR ADPI
+    context: Amadeus added the SSR ADPI element so airlines can request the passenger details needed when SFPD/APIS data is missing from the booking source
+    context_ko: Amadeus는 예약 출처에 SFPD/APIS 데이터가 없을 때 항공사가 필요한 승객정보를 요청하도록 SSR ADPI 요소를 추가했다
+    relationship: related
 relationships:
   - type: related
     targetTerm: SSR
@@ -69,6 +85,14 @@ Secure Flight transfers watch-list matching from individual carriers to the TSA 
 Secure Flight는 미국으로/미국에서/미국 상공을 지나거나 미국 내를 운항하는 항공편의 오인 식별을 줄이고 보안을 강화하기 위해 감시 명단 대조 업무를 개별 항공사에서 TSA로 이관한다. SFPD는 발권 시 또는 그 이전에 제공되어야 하며, Known Traveler Number는 TSA PreCheck 신속 심사를 지원하고, (DHS TRIP 프로그램에서 발급하는) Redress Number는 과거에 잘못 식별되었던 여행자를 돕는다. 해당 데이터는 DOCS/Secure Flight SSR 요소를 통해 예약에 담긴다. 이는 마케팅이나 신원 편의 프레임워크가 아니라 규제상의 보안 프로그램이다.
 
 **Aliases:** `Secure Flight Passenger Data`, `SFPD`, `Secure Flight Program`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| TSA | `SFPD (Secure Flight Passenger Data)` | narrower | TSA names the mandatory data set (full name, DOB, gender, plus KTN/Redress) collected for watch-list matching as Secure Flight Passenger Data |
+| IATA | `SSR DOCS / DOCO` | related | Carriers transmit SFPD to TSA using the existing IATA SSR DOCS (identity) and SSR DOCO (KTN/Redress) PNR elements |
+| Amadeus | `SSR ADPI` | related | Amadeus added the SSR ADPI element so airlines can request the passenger details needed when SFPD/APIS data is missing from the booking source |
 
 # Related
 - [SSR](/air/air-ops/ssr.md) — related

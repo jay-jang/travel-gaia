@@ -19,6 +19,22 @@ longDef_ko: 'CDP는 단순한 CRM이나 데이터 웨어하우스와 달리, 여
 aliases:
   - CDP
   - Customer Data Platform (CDP)
+providerTerms:
+  - provider: Salesforce
+    term: Data Cloud
+    context: 'Salesforce markets its CDP as Data Cloud, unifying customer data across its Marketing/Sales/Service/Commerce clouds into real-time profiles'
+    context_ko: Salesforce는 자사 CDP를 Data Cloud로 출시하며 Marketing/Sales/Service/Commerce 전반의 고객 데이터를 실시간 프로파일로 통합한다
+    relationship: same
+  - provider: Adobe
+    term: Real-Time CDP
+    context: 'Adobe''s CDP product, Real-Time CDP, ingests streaming data to build real-time customer profiles for B2C experiences'
+    context_ko: Adobe의 CDP 제품 Real-Time CDP는 스트리밍 데이터를 수집해 B2C 경험용 실시간 고객 프로파일을 구성한다
+    relationship: same
+  - provider: Twilio
+    term: Segment
+    context: Twilio Segment is a developer-oriented CDP known for broad source/destination integrations feeding unified profiles
+    context_ko: Twilio Segment는 폭넓은 소스/대상 연동으로 통합 프로파일을 공급하는 개발자 지향 CDP다
+    relationship: same
 relationships:
   - type: related
     targetTerm: Customer Profile
@@ -61,6 +77,14 @@ A CDP differs from a generic CRM or data warehouse by being purpose-built to res
 CDP는 단순한 CRM이나 데이터 웨어하우스와 달리, 여러 출처로부터 신원을 해소(identity resolution)하고 통합 프로필을 구성한 뒤 이를 실시간으로 하위 채널에 활성화하도록 특화 설계된 점이 다르다. 항공사와 호텔은 CDP를 리테일링 스택의 중심에 두어, Offer Management System과 개인화 엔진이 동의를 받은 완전한 고객 뷰를 기반으로 작동하게 한다. CDP가 만들어내는 통합 프로필은 보통 Single Customer View로 구현되며, CDP는 Consent Management Platform이 수집한 동의 규칙 안에서 운영되어야 한다. '컴포저블(composable)' CDP는 별도 저장소가 아니라 클라우드 데이터 웨어하우스 위에서 동일한 기능을 직접 구현한다.
 
 **Aliases:** `CDP`, `Customer Data Platform (CDP)`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Salesforce | `Data Cloud` | same | Salesforce markets its CDP as Data Cloud, unifying customer data across its Marketing/Sales/Service/Commerce clouds into real-time profiles |
+| Adobe | `Real-Time CDP` | same | Adobe's CDP product, Real-Time CDP, ingests streaming data to build real-time customer profiles for B2C experiences |
+| Twilio | `Segment` | same | Twilio Segment is a developer-oriented CDP known for broad source/destination integrations feeding unified profiles |
 
 # Related
 - [Customer Profile](/common/customer/customer-profile.md) — related

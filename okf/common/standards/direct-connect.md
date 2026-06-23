@@ -19,6 +19,17 @@ aliases:
   - Direct Connection
   - Airline Direct Connect
   - Supplier Direct Connect
+providerTerms:
+  - provider: Travelport
+    term: Travelport NDC / Rich Content and Branding direct content
+    context: Travelport delivers airline-direct NDC content to sellers as an alternative to a carrier-built bespoke Direct Connect
+    context_ko: Travelport는 항공사가 직접 구축한 맞춤 Direct Connect 대안으로 항공사 직접 NDC 콘텐츠를 판매자에게 전달함
+    relationship: related
+  - provider: NDC/IATA
+    term: NDC API direct connection
+    context: 'A carrier''s NDC API is the modern standardized form of an airline Direct Connect, replacing proprietary point-to-point integrations'
+    context_ko: 항공사의 NDC API는 독자적 점대점 연동을 대체하는 항공사 Direct Connect의 현대적 표준화 형태
+    relationship: related
 relationships:
   - type: related
     targetTerm: NDC
@@ -66,6 +77,13 @@ Direct Connects can be implemented over NDC-compliant APIs, proprietary supplier
 다이렉트 커넥트는 NDC 호환 API, 공급사 자체 API, 또는 레거시 ATPCO/EDIFACT 인터페이스로도 구현될 수 있다. 항공사는 이를 통해 GDS 유통 비용을 줄이고 머천다이징을 통제하며 오퍼를 개인화하고, 대형 기업 계정과 애그리게이터는 더 풍부하거나 차별화된 콘텐츠를 얻기 위해 사용한다. 다수의 일대일 다이렉트 커넥트를 유지하는 것은 연동 부담이 크므로, 이를 통합하기 위해 애그리게이터와 GDS의 NDC 프로그램이 존재한다.
 
 **Aliases:** `Direct Connection`, `Airline Direct Connect`, `Supplier Direct Connect`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Travelport | `Travelport NDC / Rich Content and Branding direct content` | related | Travelport delivers airline-direct NDC content to sellers as an alternative to a carrier-built bespoke Direct Connect |
+| NDC/IATA | `NDC API direct connection` | related | A carrier's NDC API is the modern standardized form of an airline Direct Connect, replacing proprietary point-to-point integrations |
 
 # Related
 - [NDC](/common/standards/ndc.md) — related

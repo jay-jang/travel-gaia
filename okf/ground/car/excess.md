@@ -20,6 +20,12 @@ aliases:
   - Damage Excess
   - Insurance Excess
   - Rental Excess
+providerTerms:
+  - provider: US/Canada rental market
+    term: Deductible
+    context: US car rental paperwork uses 'deductible' for the renter's capped liability amount that UK/European agreements call the 'excess'.
+    context_ko: '미국 렌터카 서류는 영국·유럽에서 ''excess''라 부르는, 렌터의 상한 책임금액을 ''deductible''로 표기한다.'
+    relationship: same
 relationships:
   - type: related
     targetTerm: Collision Damage Waiver
@@ -64,6 +70,12 @@ In UK and European car hire, a damage waiver (CDW) and theft protection are usua
 영국·유럽 렌터카에서는 충돌 손해 면책(CDW, Collision Damage Waiver)과 도난 보호가 기본 요율에 포함되는 경우가 많지만, 이것이 이용자의 책임을 0으로 줄여 주지는 않는다. 즉, 통상 약 EUR 100에서 EUR 2,000 이상에 이르는 면제 불가 자기부담금(excess)이 손해·도난 사고 건마다 남아 있다. excess는 보통 카운터에서 보증금의 일부로 이용자 신용카드에 가승인(hold)으로 잡히며, 차량이 손상된 채 반납되면 청구되거나 차감된다. 이용자는 카운터에서 렌터카 회사의 자기부담금 경감 상품(예: Super CDW / Excess Waiver)을 구매하거나, 자신이 부담한 excess를 보전해 주는 별도의 제3자 'car hire excess insurance'에 가입해 excess를 줄이거나 없앨 수 있다. 북미 계약에서는 동일한 금액을 deductible(공제액)이라 부른다.
 
 **Aliases:** `Excess`, `Damage Excess`, `Insurance Excess`, `Rental Excess`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| US/Canada rental market | `Deductible` | same | US car rental paperwork uses 'deductible' for the renter's capped liability amount that UK/European agreements call the 'excess'. |
 
 # Related
 - [Collision Damage Waiver](/ground/car/collision-damage-waiver.md) — related

@@ -19,6 +19,17 @@ longDef_ko: 'OTA는 에이전시(수수료) 모델과 머천트(merchant) 모델
 aliases:
   - Online Travel Agency
   - Online Travel Agent
+providerTerms:
+  - provider: Booking.com
+    term: Booking.com
+    context: Major OTA aggregating and selling accommodation and other travel products to consumers
+    context_ko: 숙박 등 여행 상품을 소비자에게 통합·판매하는 주요 OTA
+    relationship: narrower
+  - provider: Expedia
+    term: Expedia Group
+    context: 'Major OTA selling flights, hotels, packages and activities sourced from multiple suppliers'
+    context_ko: 여러 공급자로부터 소싱한 항공·호텔·패키지·액티비티를 판매하는 주요 OTA
+    relationship: narrower
 relationships:
   - type: related
     targetTerm: GDS
@@ -74,6 +85,13 @@ OTAs operate under various commercial models including the agency (commissionabl
 OTA는 에이전시(수수료) 모델과 머천트(merchant) 모델 등 다양한 상업 모델로 운영되며 등록 판매자(merchant of record) 역할을 하기도 한다. 거래를 직접 완료하지 않고 사용자를 예약 사이트로 연결해 주는 메타서치 사이트와는 구별된다. 참고: 'OTA'라는 약어는 별개로 OpenTravel Alliance XML 표준을 가리키기도 하며, 이는 무관한 개념이다.
 
 **Aliases:** `Online Travel Agency`, `Online Travel Agent`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Booking.com | `Booking.com` | narrower | Major OTA aggregating and selling accommodation and other travel products to consumers |
+| Expedia | `Expedia Group` | narrower | Major OTA selling flights, hotels, packages and activities sourced from multiple suppliers |
 
 # Related
 - [GDS](/common/standards/gds.md) — related

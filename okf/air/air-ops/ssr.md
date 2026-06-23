@@ -21,6 +21,17 @@ standardBody: IATA
 aliases:
   - Special Service Request
   - Special Service Requirement
+providerTerms:
+  - provider: Amadeus
+    term: SR element (SR <code> <airline>)
+    context: 'Amadeus enters an SSR as an SR element with a four-letter SSR code (e.g. SR WCHR) addressed to a carrier, which is queued back when the carrier responds.'
+    context_ko: 'Amadeus는 SSR을 carrier 대상의 4자리 SSR code를 가진 SR element(예: SR WCHR)로 입력하며, 항공사 응답 시 PNR이 queue로 회송된다.'
+    relationship: same
+  - provider: Sabre
+    term: 3<SSR code> entry (e.g. 3WCHR / SSR formats)
+    context: 'Sabre adds SSRs via the 3-prefixed special-service entries carrying the IATA SSR code, carrier and passenger association.'
+    context_ko: 'Sabre는 IATA SSR code, carrier, 승객 연결을 담은 3-접두 special-service 엔트리로 SSR을 추가한다.'
+    relationship: same
 relationships:
   - type: contrasts
     targetTerm: OSI
@@ -71,6 +82,13 @@ SSRs follow the IATA PADIS/PSCRM standard format and four-letter code set (e.g.,
 SSR은 IATA PADIS/PSCRM 표준 형식과 4자리 코드 체계(예: WCHR 휠체어, VGML 채식 기내식, UMNR 비동반 소아, DOCS 여권/Secure Flight 데이터)를 따른다. SSR은 조치 지향적이므로 영향을 받는 각 항공사에 전송되어 확인되며, 이는 순수 정보성 메시지와 구별되는 점이다. SSR은 접근성(PRM) 처리, 규제 데이터 전송, 부가 서비스 요청에 핵심적이다.
 
 **Aliases:** `Special Service Request`, `Special Service Requirement`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Amadeus | `SR element (SR <code> <airline>)` | same | Amadeus enters an SSR as an SR element with a four-letter SSR code (e.g. SR WCHR) addressed to a carrier, which is queued back when the carrier responds. |
+| Sabre | `3<SSR code> entry (e.g. 3WCHR / SSR formats)` | same | Sabre adds SSRs via the 3-prefixed special-service entries carrying the IATA SSR code, carrier and passenger association. |
 
 # Related
 - [OSI](/air/air-ops/osi.md) — contrasts

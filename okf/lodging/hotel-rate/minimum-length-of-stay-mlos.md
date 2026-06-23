@@ -29,6 +29,16 @@ providerTerms:
     context: 'In OTA_HotelAvailNotifRQ, MLOS is set via a LengthOfStay element with MinMaxMessageType="SetMinLOS" and a Time attribute for the minimum nights.'
     context_ko: OTA_HotelAvailNotifRQ에서 MLOS는 MinMaxMessageType="SetMinLOS"와 최소 박수 Time 속성을 가진 LengthOfStay 요소로 설정된다.
     relationship: same
+  - provider: Booking.com
+    term: Minimum stay (SetMinLOS)
+    context: Booking.com connectivity sets a minimum-stay restriction so a reservation must cover at least N nights on the affected dates.
+    context_ko: Booking.com 커넥티비티는 해당 일자에 최소 N박을 충족해야 예약되도록 minimum-stay 제한을 설정한다.
+    relationship: same
+  - provider: Expedia
+    term: Minimum Length of Stay (Availability & Rates API)
+    context: Expedia partners must support setting minimum length-of-stay restrictions for a single date or date range as a property-level setting.
+    context_ko: Expedia 파트너는 단일 일자 또는 기간에 대한 최소 숙박 제한을 property 레벨 설정으로 지원해야 한다.
+    relationship: same
 relationships:
   - type: child
     targetTerm: Length of Stay
@@ -79,6 +89,8 @@ MLOS는 OpenTravel ARI 메시지로 유통되는 표준 length-of-stay 제약 �
 | Provider | Term | Relationship | Context |
 | --- | --- | --- | --- |
 | OpenTravel Alliance | `LengthOfStay MinMaxMessageType="SetMinLOS"` | same | In OTA_HotelAvailNotifRQ, MLOS is set via a LengthOfStay element with MinMaxMessageType="SetMinLOS" and a Time attribute for the minimum nights. |
+| Booking.com | `Minimum stay (SetMinLOS)` | same | Booking.com connectivity sets a minimum-stay restriction so a reservation must cover at least N nights on the affected dates. |
+| Expedia | `Minimum Length of Stay (Availability & Rates API)` | same | Expedia partners must support setting minimum length-of-stay restrictions for a single date or date range as a property-level setting. |
 
 # Related
 - [Length of Stay](/lodging/hotel-rate/length-of-stay.md) — child

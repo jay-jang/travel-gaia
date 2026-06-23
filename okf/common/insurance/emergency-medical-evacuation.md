@@ -19,6 +19,12 @@ aliases:
   - Medical Evacuation
   - Medevac
   - Emergency Evacuation
+providerTerms:
+  - provider: Allianz Partners
+    term: Emergency Medical Transportation
+    context: 'Allianz''s benefit name for medically necessary emergency transport (air/ground ambulance, escort) to an appropriate facility and, when stable, transport home; broader than evacuation-only since it also funds the supervised trip home.'
+    context_ko: 'Allianz가 의료적으로 필요한 응급 이송(항공/지상 구급차, 동반 에스코트)을 적절한 의료기관으로, 상태가 안정되면 귀가 이송까지 포함하는 베네핏 명칭. 감독 하의 귀가 이송까지 포함하므로 ''후송''만보다 다소 넓다.'
+    relationship: broader
 relationships:
   - type: contrasts
     targetTerm: Repatriation of Remains
@@ -59,6 +65,12 @@ Evacuation is triggered by medical necessity, not the traveler's preference, and
 후송은 여행자의 선호가 아니라 의료적 필요에 의해 발동되며, 보험사의 어시스턴스 제공자가 적절한 시설('가장 가까운 적정 시설')을 판단하고 이송을 주선한다. 권장 한도는 흔히 10만 달러 이상인데, 오지나 국경 간 항공 앰뷸런스 이송은 15만~20만 달러를 넘을 수 있기 때문이다. 이 보장은 여행의료·종합 보험의 핵심이며, Repatriation of Remains와 묶여 'evacuation & repatriation' 한 항목으로 제공되는 경우가 많다.
 
 **Aliases:** `Medical Evacuation`, `Medevac`, `Emergency Evacuation`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Allianz Partners | `Emergency Medical Transportation` | broader | Allianz's benefit name for medically necessary emergency transport (air/ground ambulance, escort) to an appropriate facility and, when stable, transport home; broader than evacuation-only since it also funds the supervised trip home. |
 
 # Related
 - [Repatriation of Remains](/common/insurance/repatriation-of-remains.md) — contrasts

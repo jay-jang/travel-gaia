@@ -21,6 +21,22 @@ aliases:
   - Hotel Mapping
   - Room & Rate Mapping
   - Content Mapping
+providerTerms:
+  - provider: GIATA
+    term: MultiCodes (incl. Room Type Mapping)
+    context: GIATA MultiCodes maps a property's many supplier/GDS/OTA codes to one GIATA-ID and offers Room Type Mapping (RTM) to align room types across systems via NLP.
+    context_ko: 'GIATA MultiCodes는 한 숙소의 여러 공급자/GDS/OTA 코드를 하나의 GIATA-ID로 매핑하고, NLP를 통해 시스템 간 객실 유형을 정렬하는 Room Type Mapping(RTM)을 제공한다.'
+    relationship: same
+  - provider: Vervotech
+    term: Vervotech Mapping (Hotel + Room Mapping)
+    context: Vervotech is an ML-based hotel and room mapping SaaS that unifies property and room-type identifiers across 600+ suppliers.
+    context_ko: Vervotech은 600개 이상 공급자 전반의 숙소·객실 유형 식별자를 통합하는 ML 기반 호텔·객실 매핑 SaaS다.
+    relationship: same
+  - provider: Gimmonix
+    term: Mapping.Works
+    context: Gimmonix's Mapping.Works is a fully automated cloud hotel-mapping solution focused on data accuracy.
+    context_ko: Gimmonix의 Mapping.Works는 데이터 정확도에 중점을 둔 완전 자동화 클라우드 호텔 매핑 솔루션이다.
+    relationship: same
 relationships:
   - type: related
     targetTerm: Hotel Switch
@@ -64,6 +80,14 @@ Because each distribution platform assigns its own identifiers, a single physica
 각 유통 플랫폼이 자체 식별자를 부여하기 때문에, 하나의 실제 호텔이 시스템마다 서로 다른 property ID로 나타나고 'Deluxe King, 조식 포함' 상품도 채널마다 다른 객실 유형·요금 플랜 코드를 가질 수 있다. 프로퍼티 매핑(및 더 세밀한 객실·요금 매핑)은 이 대응 관계를 설정하여, 들어오는 가용성 요청이나 예약이 올바른 호텔과 상품으로 라우팅되게 한다. 매핑은 수작업, 규칙 기반, 또는 이름·주소·좌표·등급 등 속성을 활용한 머신러닝 보조 방식으로 이뤄진다. 잘못된 매핑은 엉뚱한 상품으로 판매, 요금 불일치, parity 위반, 오버부킹 등 유통 오류의 흔한 원인이다. OpenTravel/HTNG 메시징에서 매핑된 프로퍼티 식별자는 OTA_Hotel* 요청에 사용되는 hotelCode(및 chainCode)다.
 
 **Aliases:** `Hotel Mapping`, `Room & Rate Mapping`, `Content Mapping`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| GIATA | `MultiCodes (incl. Room Type Mapping)` | same | GIATA MultiCodes maps a property's many supplier/GDS/OTA codes to one GIATA-ID and offers Room Type Mapping (RTM) to align room types across systems via NLP. |
+| Vervotech | `Vervotech Mapping (Hotel + Room Mapping)` | same | Vervotech is an ML-based hotel and room mapping SaaS that unifies property and room-type identifiers across 600+ suppliers. |
+| Gimmonix | `Mapping.Works` | same | Gimmonix's Mapping.Works is a fully automated cloud hotel-mapping solution focused on data accuracy. |
 
 # Related
 - [Hotel Switch](/lodging/hotel-dist/hotel-switch.md) — related

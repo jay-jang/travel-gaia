@@ -21,6 +21,17 @@ aliases:
   - Block-Space Codeshare
   - BSA
   - Blocked Space Agreement
+providerTerms:
+  - provider: Amadeus
+    term: 'Leased block / block-space indicator (":")'
+    context: 'In Amadeus availability displays a colon marks a leased-block codeshare where both operating and marketing carriers sell from the same aircraft, each holding a portion of the seat inventory under their own code and flight number.'
+    context_ko: '아마데우스 가용성 화면에서 콜론(:)은 운항 항공사와 판매 항공사가 동일 항공기에서 각자 코드·편명으로 좌석을 판매하며 각각 좌석 재고의 일부를 보유하는 리스드 블록(블록 스페이스) 공동운항을 표시한다.'
+    relationship: same
+  - provider: IATA
+    term: Block-space codeshare (SSIM)
+    context: SSIM/codeshare data distinguishes block-space arrangements (fixed seat allotment) from free-flow codeshare via the operating-carrier and codeshare data elements distributed to GDSs and partners.
+    context_ko: IATA SSIM 및 공동운항 데이터는 GDS·파트너에 배포되는 운항 항공사·공동운항 데이터 요소를 통해 블록 스페이스 방식(고정 좌석 할당)을 프리플로 공동운항과 구분한다.
+    relationship: narrower
 relationships:
   - type: broader
     targetTerm: Codeshare
@@ -63,6 +74,13 @@ Under a block space agreement the operating carrier sets aside an agreed number 
 블록 스페이스 협정에서 운항 항공사는 합의된 수의 좌석을 떼어내며, 이 좌석은 자사 재고에서 제외되어 미판매분이 반환될 때까지 판매 항공사가 관리한다. 대표적인 변형으로는 좌석의 판매 여부와 관계없이 판매 항공사가 매입을 약정하고 대금을 지급하는 "hard block"(위험이 가장 크지만 가격 조건이 가장 좋음)과, 마감 시한 전에 미판매 좌석을 운항 항공사로 반환할 수 있는 "soft block"이 있다. 블록 스페이스는 같은 동맹에 속하지 않은 항공사 간 시장 접근에 자주 사용되며, 고정 좌석 약정이 없는 free-sale 공동운항과 대비된다.
 
 **Aliases:** `Block Space`, `Block-Space Codeshare`, `BSA`, `Blocked Space Agreement`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Amadeus | `Leased block / block-space indicator (":")` | same | In Amadeus availability displays a colon marks a leased-block codeshare where both operating and marketing carriers sell from the same aircraft, each holding a portion of the seat inventory under their own code and flight number. |
+| IATA | `Block-space codeshare (SSIM)` | narrower | SSIM/codeshare data distinguishes block-space arrangements (fixed seat allotment) from free-flow codeshare via the operating-carrier and codeshare data elements distributed to GDSs and partners. |
 
 # Related
 - [Codeshare](/air/air-partner/codeshare.md) — broader

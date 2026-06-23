@@ -21,6 +21,17 @@ standardBody: UIC
 aliases:
   - Non-Integrated Reservation Ticket
   - NRT ticket
+providerTerms:
+  - provider: OSDM (UIC IRS 90918-10)
+    term: Separate AdmissionOfferPart + optional ReservationOfferPart
+    context: 'OSDM represents an NRT as an open admission sold as its own AdmissionOfferPart with an optional, separately purchasable ReservationOfferPart — the structural split that defines a non-integrated ticket.'
+    context_ko: 'OSDM은 NRT를 자체 AdmissionOfferPart로 판매되는 오픈 어드미션에 선택적·별도 구매 ReservationOfferPart가 붙는 구조로 표현하며, 이 분리가 비통합권의 정의다.'
+    relationship: related
+  - provider: 'UIC / ERA TAP TSI (TD B.1, PRIFIS/UIC-DRTF)'
+    term: 'NRT tariff (Leaflet 108-1, stored in PRIFIS → UIC-DRTF)'
+    context: 'NRT fares are the non-yielded through fares historically governed by UIC Leaflet 108-1 and distributed via PRIFIS (Price and Fare Information Storage), now the UIC Database for Rail Tariffs and Fares; TAP TSI TD B.1 standardizes their exchange.'
+    context_ko: 'NRT 운임은 역사적으로 UIC Leaflet 108-1이 규정하고 PRIFIS(Price and Fare Information Storage, 현 UIC-DRTF)로 배포된 비수익관리 통과운임이며, TAP TSI TD B.1이 그 교환을 표준화한다.'
+    relationship: related
 relationships:
   - type: contrasts
     targetTerm: Integrated Reservation Ticket (IRT)
@@ -60,6 +71,13 @@ Under UIC's commercial framework, NRT tickets are governed by the Special Condit
 UIC 상업 체계에서 NRT 승차권은 NRT 국제운송 특별조건(SCIC-NRT)의 적용을 받는다. admission이 예약과 분리되어 있어, NRT는 단일 열차에 묶이지 않는 유연한 경로 기반·개방형 승차권을 지원하며, 노선이 요구하거나 제공하는 경우에만 예약을 추가한다. NRT는 예약이 상품에 일체화된 IRT와 대비된다.
 
 **Aliases:** `Non-Integrated Reservation Ticket`, `NRT ticket`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| OSDM (UIC IRS 90918-10) | `Separate AdmissionOfferPart + optional ReservationOfferPart` | related | OSDM represents an NRT as an open admission sold as its own AdmissionOfferPart with an optional, separately purchasable ReservationOfferPart — the structural split that defines a non-integrated ticket. |
+| UIC / ERA TAP TSI (TD B.1, PRIFIS/UIC-DRTF) | `NRT tariff (Leaflet 108-1, stored in PRIFIS → UIC-DRTF)` | related | NRT fares are the non-yielded through fares historically governed by UIC Leaflet 108-1 and distributed via PRIFIS (Price and Fare Information Storage), now the UIC Database for Rail Tariffs and Fares; TAP TSI TD B.1 standardizes their exchange. |
 
 # Related
 - [Integrated Reservation Ticket (IRT)](/ground/rail/integrated-reservation-ticket-irt.md) — contrasts

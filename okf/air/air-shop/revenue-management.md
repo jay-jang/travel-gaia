@@ -19,6 +19,12 @@ longDef_ko: 'Revenue Management(과거 Yield Management로 불림)는 미국 규
 aliases:
   - Yield Management
   - Inventory Management
+providerTerms:
+  - provider: PROS
+    term: PROS Airline Revenue Management (RM Advantage / Essentials)
+    context: 'PROS is a leading commercial airline RM vendor whose products apply demand forecasting, network optimization and leg optimization to set class availability and bid prices.'
+    context_ko: 'PROS는 대표적 상용 항공 RM 공급사로, 수요예측·네트워크 최적화·레그 최적화를 적용해 클래스 가용성과 bid price를 설정하는 제품을 제공한다.'
+    relationship: related
 relationships:
   - type: related
     targetTerm: Availability
@@ -66,6 +72,12 @@ Revenue Management (historically called Yield Management) emerged after US dereg
 Revenue Management(과거 Yield Management로 불림)는 미국 규제 완화 이후 항공사가 지불 의향에 따라 소멸성 좌석 인벤토리를 세분화하는 법을 익히면서 등장했다. RM 시스템은 항공편 또는 O&D(출발지·목적지) 시장에서 각 RBD에 대한 수요를 예측한 뒤, 시간에 따라 클래스를 열고 닫는 가용성 통제를 설정한다. 구간(leg) 기반과 O&D(네트워크) 기반 RM 방식은 EMSR(Expected Marginal Seat Revenue), 가상 네스팅, bid-price 임계값 같은 기법을 사용한다. RM은 운임 사다리를 설정하는 pricing 및 no-show를 보완하는 overbooking과 긴밀히 연결되며, 고정 운임 버킷과 수요 기반 가격의 경계를 흐리는 dynamic/continuous pricing과도 점점 더 결합된다.
 
 **Aliases:** `Yield Management`, `Inventory Management`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| PROS | `PROS Airline Revenue Management (RM Advantage / Essentials)` | related | PROS is a leading commercial airline RM vendor whose products apply demand forecasting, network optimization and leg optimization to set class availability and bid prices. |
 
 # Related
 - [Availability](/air/air-shop/availability.md) — related

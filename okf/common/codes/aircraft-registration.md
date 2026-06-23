@@ -23,6 +23,17 @@ aliases:
   - Nationality and Registration Marks
   - Reg
   - Aircraft Tail Number
+providerTerms:
+  - provider: Industry / OAG / Cirium
+    term: Tail number
+    context: 'Common operational and fleet-tracking term for the same airframe registration mark (e.g., N12345, G-XWBA).'
+    context_ko: '동일한 기체 등록부호를 가리키는 운항·기단 추적 현장 용어(예: N12345, G-XWBA).'
+    relationship: same
+  - provider: ICAO Annex 7
+    term: Nationality mark + registration mark
+    context: 'ICAO-defined structure: a nationality/common mark (State of Registry prefix) followed by the registration mark, typically hyphen-separated.'
+    context_ko: 'ICAO가 정의한 구조로, 국적/공통 부호(등록국 프리픽스) 뒤에 등록부호가 오며 보통 하이픈으로 구분된다.'
+    relationship: broader
 relationships:
   - type: related
     targetTerm: Aircraft Type Code
@@ -65,6 +76,13 @@ Under ICAO Annex 7, the nationality mark is drawn from the radio call-sign serie
 ICAO Annex 7에 따라 국적기호는 ITU가 각 국가에 배정한 무선 호출부호 계열에서 정해지며, 등록기호 앞에 온다(대부분의 국가는 하이픈으로 구분하나, 미국은 'N' 뒤에 하이픈 없이 등록기호가 바로 이어진다). 등록기호는 노선·항공편·운항사가 아니라 기체 자체에 결속된다. 한 항공기는 동시에 한 관할권에서 하나의 등록기호만 가지지만, 매각·이전 시 다른 국가의 새 prefix로 재등록될 수 있다. 스케줄·운영·추적에서 등록기호는 특정 구간(leg)에 배정된 정확한 항공기를 짚어내며, 그래서 (기종 부류를 나타내는) 항공기 기종 코드나 (자격을 갖춘 어떤 기체든 운항할 수 있는 상업 서비스인) 편명과는 구별된다.
 
 **Aliases:** `Tail Number`, `Registration Mark`, `Nationality and Registration Marks`, `Reg`, `Aircraft Tail Number`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Industry / OAG / Cirium | `Tail number` | same | Common operational and fleet-tracking term for the same airframe registration mark (e.g., N12345, G-XWBA). |
+| ICAO Annex 7 | `Nationality mark + registration mark` | broader | ICAO-defined structure: a nationality/common mark (State of Registry prefix) followed by the registration mark, typically hyphen-separated. |
 
 # Related
 - [Aircraft Type Code](/common/codes/aircraft-type-code.md) — related

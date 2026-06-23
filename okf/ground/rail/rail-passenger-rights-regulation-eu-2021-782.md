@@ -23,6 +23,12 @@ aliases:
   - EU Rail Passenger Rights Regulation
   - Rail PRR
   - PRR (rail)
+providerTerms:
+  - provider: EU (Regulation (EC) 261/2004)
+    term: Air Passenger Rights Regulation (EC) 261/2004
+    context: 'The air-mode counterpart is Regulation (EC) 261/2004; both grant delay/cancellation rights but differ sharply — rail compensates from a 60-minute delay at 25%/50% of the fare, air from 3 hours at fixed EUR 250-600 amounts.'
+    context_ko: '항공 모드 대응 법령은 Regulation (EC) 261/2004이다. 둘 다 지연·취소 권리를 부여하나 기준이 크게 다르다 — 철도는 60분 지연부터 운임의 25%/50%, 항공은 3시간부터 거리별 고정 250~600유로다.'
+    relationship: related
 relationships:
   - type: related
     targetTerm: EU Regulation 261/2004
@@ -73,6 +79,12 @@ Regulation (EU) 2021/782 modernised and recast the previous rail passenger right
 규정 (EU) 2021/782은 종전 철도 여객권리 체계(Reg (EC) No 1371/2007)를 현대화·개편(recast)한 것이다. 운임 대비 최소 지연보상 비율(60~119분 지연 25%, 120분 이상 지연 50%), 환급 또는 동등한 조건의 대체경로 권리, 돌봄 권리(식사·다과·숙박), 통과 승차권 의무 — 특히 한 철도사업자가 한 거래로 판매한 승차권은 연계보호 의무를 발생시키는 통과 승차권으로 취급 — 를 정한다. 정의된 특별한 상황(extraordinary circumstances)에서의 보상 면제(force majeure)를 도입하고, 장애인·이동약자(PRM)의 권리와 무료 지원을 강화하며, 자전거 운송도 다룬다. COTIF/CIV 책임체계 위에서 작동하며, 운송인이 적용하는 운영 계약조건(GCC-CIV/PRR)과 국제 특별조건(SCIC)이 그 요구사항을 구현·참조한다.
 
 **Aliases:** `Regulation (EU) 2021/782`, `EU Rail Passenger Rights Regulation`, `Rail PRR`, `PRR (rail)`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| EU (Regulation (EC) 261/2004) | `Air Passenger Rights Regulation (EC) 261/2004` | related | The air-mode counterpart is Regulation (EC) 261/2004; both grant delay/cancellation rights but differ sharply — rail compensates from a 60-minute delay at 25%/50% of the fare, air from 3 hours at fixed EUR 250-600 amounts. |
 
 # Related
 - [EU Regulation 261/2004](/common/disruption/eu-regulation-261-2004.md) — related

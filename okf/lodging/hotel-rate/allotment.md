@@ -19,6 +19,17 @@ aliases:
   - Room Allocation
   - Inventory Allocation
   - Contracted Allotment
+providerTerms:
+  - provider: Oracle OPERA
+    term: Block / Allocation (Allotment)
+    context: OPERA holds rooms out of house inventory as a block allocation that a partner or group draws down (picks up) until cutoff.
+    context_ko: OPERA는 파트너·그룹이 cutoff까지 pickup하는 block allocation으로 객실을 house inventory에서 떼어 보유한다.
+    relationship: same
+  - provider: Sabre Hospitality
+    term: Allotment (SynXis ARI inventory)
+    context: SynXis CRS distributes allotment inventory to channels and decrements it as the partner sells against the allocated block.
+    context_ko: SynXis CRS는 allotment 재고를 채널에 배포하고 파트너가 할당 블록을 판매하면 차감한다.
+    relationship: same
 relationships:
   - type: contrasts
     targetTerm: Free Sale
@@ -75,6 +86,13 @@ Allotments are central to contracted distribution (tour operators, bedbanks, gro
 Allotment는 계약 기반 유통(투어 오퍼레이터, 베드뱅크, 단체 블록, 기업 계정)의 핵심이다. 날짜별 할당 규모, 반환 기간, 판매 방식이 allotment 기반인지 요청형(on request)인지 free sale인지 등의 조건으로 관리된다. 파트너가 고정 할당량을 초과하거나 고정 할당량 없이 가용 여부에 따라 판매할 수 있는 경우, 이를 흔히 free sale이라 부른다. Allotment 관리는 ARI 업데이트를 통해 CRS/PMS와 채널 매니저에서 처리된다.
 
 **Aliases:** `Room Allocation`, `Inventory Allocation`, `Contracted Allotment`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Oracle OPERA | `Block / Allocation (Allotment)` | same | OPERA holds rooms out of house inventory as a block allocation that a partner or group draws down (picks up) until cutoff. |
+| Sabre Hospitality | `Allotment (SynXis ARI inventory)` | same | SynXis CRS distributes allotment inventory to channels and decrements it as the partner sells against the allocated block. |
 
 # Related
 - [Free Sale](/lodging/hotel-dist/free-sale.md) — contrasts

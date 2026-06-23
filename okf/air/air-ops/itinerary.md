@@ -19,6 +19,12 @@ aliases:
   - Travel Itinerary
   - Itinerary Receipt
   - Trip Itinerary
+providerTerms:
+  - provider: NDC/IATA
+    term: Order / OrderItem (flight services)
+    context: 'In NDC an itinerary is expressed as an Order composed of OrderItems whose services map to passenger-per-segment deliverables, replacing the PNR itinerary segments.'
+    context_ko: 'NDC에서 itinerary는 OrderItem들로 구성된 Order로 표현되며, 그 서비스는 승객×segment 단위 deliverable에 매핑되어 PNR의 itinerary segment를 대체한다.'
+    relationship: related
 relationships:
   - type: parent
     targetTerm: PNR
@@ -61,6 +67,12 @@ Within a PNR the itinerary holds the air Segments (and their Legs), any ARNK sur
 PNR 안에서 itinerary는 항공 Segment(및 그 Leg), ARNK surface 구간, 환승점을 시간 순서로 담으며, Origin & Destination과 journey 단위의 운임 산출 기반이 된다. 결합된 Itinerary/Receipt 문서(전자항공권의 경우 e-ticket Itinerary/Receipt)는 승객이 소지·제시하는 것으로 편명, 항공사, 시간, 운임/발권 상세, 조건을 나열한다. itinerary segment의 순서와 연속성은 발권 유효성과 최소 연결시간(MCT) 점검에 중요하다.
 
 **Aliases:** `Travel Itinerary`, `Itinerary Receipt`, `Trip Itinerary`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| NDC/IATA | `Order / OrderItem (flight services)` | related | In NDC an itinerary is expressed as an Order composed of OrderItems whose services map to passenger-per-segment deliverables, replacing the PNR itinerary segments. |
 
 # Related
 - [PNR](/air/air-ops/pnr.md) — parent

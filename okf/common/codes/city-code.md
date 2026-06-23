@@ -21,6 +21,12 @@ aliases:
   - IATA City Code
   - Metropolitan Area Code
   - Multi-Airport City Code
+providerTerms:
+  - provider: IATA
+    term: Metropolitan area code
+    context: 'IATA term for a multi-airport city code (e.g., NYC, LON, TYO) that aggregates the airports serving a metro area in schedules and availability.'
+    context_ko: '여러 공항을 가진 도시 코드(예: NYC, LON, TYO)를 가리키는 IATA 용어로, 스케줄·좌석조회에서 대도시권 공항들을 묶는다.'
+    relationship: same
 relationships:
   - type: narrower
     targetTerm: IATA Code
@@ -56,6 +62,12 @@ City codes are part of the IATA location coding system and are sometimes identic
 도시 코드는 IATA 위치 코드 체계의 일부이며, 도시에 주요 공항이 하나뿐인 경우 공항 코드와 동일할 수 있다(즉, 하나의 코드가 도시 식별자와 공항 식별자 역할을 동시에 할 수 있다). 다공항 도시의 경우 도시 코드는 별개로 존재한다(예: 런던의 LON은 LHR, LGW, STN, LCY, LTN, SEN을 포괄한다). 스케줄 및 조회(shopping) 시스템에서 도시 코드로 표현된 출발지/도착지는 그에 속한 모든 공항으로 확장된다.
 
 **Aliases:** `IATA City Code`, `Metropolitan Area Code`, `Multi-Airport City Code`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| IATA | `Metropolitan area code` | same | IATA term for a multi-airport city code (e.g., NYC, LON, TYO) that aggregates the airports serving a metro area in schedules and availability. |
 
 # Related
 - [IATA Code](/common/codes/iata-code.md) — narrower

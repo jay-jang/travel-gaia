@@ -22,6 +22,17 @@ aliases:
   - Booking Class Code
   - Class of Service
   - Class of Booking
+providerTerms:
+  - provider: IATA/ATPCO
+    term: RBD (Reservation Booking Designator)
+    context: Standard term for the single-letter booking class recorded on the segment; carried in fare and availability data.
+    context_ko: '세그먼트에 기록되는 단일 문자 예약 클래스를 가리키는 표준 용어로, 운임·좌석조회 데이터에 담긴다.'
+    relationship: same
+  - provider: NDC/IATA
+    term: ResBookDesigCode
+    context: 'NDC schema element carrying the booking-class (RBD) letter for a segment, including the operating carrier''s RBD when different.'
+    context_ko: '세그먼트의 예약 클래스(RBD) 문자를 담는 NDC 스키마 요소로, 운항사 RBD가 다를 경우 그것도 포함한다.'
+    relationship: same
 relationships:
   - type: sameAs
     targetTerm: RBD
@@ -63,6 +74,13 @@ Class codes are not standardized across carriers: the same letter can mean diffe
 클래스 코드는 항공사 간에 표준화되어 있지 않다. 같은 문자가 항공사마다 다른 객실이나 운임 수준을 의미할 수 있으며, 각 항공사는 자사의 클래스 코드를 객실(First/Business/Premium Economy/Economy)과 운임 기준 코드(fare basis code)에 매핑한다. Y, J/C, F는 각각 정규 운임 이코노미·비즈니스·퍼스트의 흔한 관례이다. 좌석 가용성(availability)과 가격 산정에서 클래스 코드는 항공사가 수요에 따라 열고 닫는 버킷이며, 예약된 값은 보통 운임 기준 코드의 첫 글자와 일치한다. 예약·발권된 서류 관점에서 본 RBD와 동일한 개념이다.
 
 **Aliases:** `Booking Class`, `Booking Class Code`, `Class of Service`, `Class of Booking`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| IATA/ATPCO | `RBD (Reservation Booking Designator)` | same | Standard term for the single-letter booking class recorded on the segment; carried in fare and availability data. |
+| NDC/IATA | `ResBookDesigCode` | same | NDC schema element carrying the booking-class (RBD) letter for a segment, including the operating carrier's RBD when different. |
 
 # Related
 - [RBD](/air/air-shop/rbd.md) — sameAs

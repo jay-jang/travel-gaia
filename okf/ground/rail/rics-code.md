@@ -29,6 +29,16 @@ providerTerms:
     context: 'ERA''s Organisation Code Register assigns each entity a code; for companies holding a UIC RICS code, ERA allocates an Organisation Code with the same value.'
     context_ko: 'ERA의 조직코드등록부(OCR)는 각 주체에 코드를 배정하며, UIC RICS 코드를 보유한 회사에는 동일 값의 Organisation Code를 배정한다.'
     relationship: related
+  - provider: UIC
+    term: Company Code (RICS Code)
+    context: 'UIC''s own primary name for this identifier is ''Company Code'', with RICS (Railway Interchange Coding System) as the expansion; from 1 Jan 2026 UIC manages only non-EU country codes while ERA handles EU countries.'
+    context_ko: 'UIC가 쓰는 이 식별자의 주 명칭은 ''Company Code''이며 RICS(Railway Interchange Coding System)는 그 확장형이다. 2026년 1월 1일부터 UIC는 비EU 국가 코드만, ERA가 EU 국가를 관리한다.'
+    relationship: same
+  - provider: IATA / ICAO (air)
+    term: IATA airline designator / ICAO airline code
+    context: The air-industry analogue for uniquely identifying a carrier is the 2-letter IATA airline designator and 3-letter ICAO code; the RICS code is the rail counterpart but uses a 4-digit numeric scheme.
+    context_ko: 항공 산업에서 운송인을 고유 식별하는 대응물은 2자리 IATA 항공사 지정코드와 3자리 ICAO 코드다. RICS 코드는 철도 측 대응물이나 4자리 숫자 체계를 쓴다.
+    relationship: related
 relationships:
   - type: related
     targetTerm: Airline Designator
@@ -83,6 +93,8 @@ RICS 회사코드는 UIC(코드 담당 부서를 통해)가 배정·관리하며
 | Provider | Term | Relationship | Context |
 | --- | --- | --- | --- |
 | ERA (EU Agency for Railways) | `Organisation Code (OCR)` | related | ERA's Organisation Code Register assigns each entity a code; for companies holding a UIC RICS code, ERA allocates an Organisation Code with the same value. |
+| UIC | `Company Code (RICS Code)` | same | UIC's own primary name for this identifier is 'Company Code', with RICS (Railway Interchange Coding System) as the expansion; from 1 Jan 2026 UIC manages only non-EU country codes while ERA handles EU countries. |
+| IATA / ICAO (air) | `IATA airline designator / ICAO airline code` | related | The air-industry analogue for uniquely identifying a carrier is the 2-letter IATA airline designator and 3-letter ICAO code; the RICS code is the rail counterpart but uses a 4-digit numeric scheme. |
 
 # Related
 - [Airline Designator](/common/codes/airline-designator.md) — related

@@ -26,6 +26,11 @@ providerTerms:
     context: 'Hotelbeds is a global B2B hotel bedbank/wholesaler distributing net inventory to travel sellers via API, a representative example of the bedbank model.'
     context_ko: 'Hotelbeds는 순(net) 인벤토리를 API를 통해 여행 판매자에게 분배하는 글로벌 B2B 호텔 베드뱅크/도매업체로, 베드뱅크 모델의 대표적인 예다.'
     relationship: example
+  - provider: Expedia Group
+    term: EPS Rapid (Partner Collect / net rate)
+    context: 'Expedia Partner Solutions'' Rapid API resells Expedia''s contracted hotel inventory at net rates to third-party sellers, functioning as a bedbank-style wholesale source alongside its retail OTA.'
+    context_ko: 'Expedia Partner Solutions의 Rapid API는 Expedia가 계약한 호텔 재고를 제3자 판매자에게 net 요금으로 재판매하며, 소매 OTA와 함께 베드뱅크형 도매 공급원 역할을 한다.'
+    relationship: related
 relationships:
   - type: related
     targetTerm: Net Rate
@@ -82,6 +87,7 @@ Bedbanks aggregate inventory and net rates from many hotels and offer them to B2
 | Provider | Term | Relationship | Context |
 | --- | --- | --- | --- |
 | Hotelbeds | `Bedbank` | example | Hotelbeds is a global B2B hotel bedbank/wholesaler distributing net inventory to travel sellers via API, a representative example of the bedbank model. |
+| Expedia Group | `EPS Rapid (Partner Collect / net rate)` | related | Expedia Partner Solutions' Rapid API resells Expedia's contracted hotel inventory at net rates to third-party sellers, functioning as a bedbank-style wholesale source alongside its retail OTA. |
 
 # Related
 - [Net Rate](/lodging/hotel-dist/net-rate.md) — related

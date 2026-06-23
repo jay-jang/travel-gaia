@@ -22,6 +22,22 @@ aliases:
   - PTC
   - Passenger Type
   - Pax Type Code
+providerTerms:
+  - provider: ATPCO
+    term: PTC
+    context: 'ATPCO maintains the master Passenger Type Code table (ADT, CNN/CHD, INF, YTH, etc.) used industry-wide to drive fare eligibility and discounts'
+    context_ko: 'ATPCO가 운임 적격성·할인을 구동하는 업계 표준 승객유형코드 테이블(ADT, CNN/CHD, INF, YTH 등)을 관리한다'
+    relationship: same
+  - provider: NDC/IATA
+    term: PTC (PassengerType)
+    context: NDC offer/order messages carry the ATPCO PTC in the PassengerType element to price and break down fares per passenger category
+    context_ko: NDC 오퍼/오더 메시지는 PassengerType 요소에 ATPCO PTC를 실어 승객 범주별로 운임을 산출·분해한다
+    relationship: same
+  - provider: Travelport
+    term: Passenger Type Code (PTC)
+    context: Travelport Universal API/GWS uses the same 3-letter PTC values to drive air pricing by passenger type
+    context_ko: Travelport Universal API/GWS는 동일한 3자리 PTC 값으로 승객유형별 항공 운임 산출을 구동한다
+    relationship: same
 relationships:
   - type: related
     targetTerm: Fare Basis Code
@@ -62,6 +78,14 @@ Passenger Type Codes drive which fares a traveler qualifies for. Common examples
 PTC는 여행자가 어떤 운임에 자격이 있는지를 결정한다. 대표적인 예로 ADT(성인), CHD/CNN(소아), INF(좌석 비점유 유아), SRC(시니어), YTH(청소년)가 있으며, MIL(군인)이나 학생 유형 같은 특수 코드도 있다. 운임 규정(Category 1, Eligibility)은 특정 Fare Basis Code를 하나 이상의 PTC로 제한하며, 쇼핑 시 요청된 PTC에 따라 어떤 운임이 반환되고 어떻게 가격이 산정되는지가 결정된다. PTC는 자격이 누구에게 있는지가 아니라 좌석 재고와 운송 등급을 제어하는 RBD와는 구별된다.
 
 **Aliases:** `PTC`, `Passenger Type`, `Pax Type Code`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| ATPCO | `PTC` | same | ATPCO maintains the master Passenger Type Code table (ADT, CNN/CHD, INF, YTH, etc.) used industry-wide to drive fare eligibility and discounts |
+| NDC/IATA | `PTC (PassengerType)` | same | NDC offer/order messages carry the ATPCO PTC in the PassengerType element to price and break down fares per passenger category |
+| Travelport | `Passenger Type Code (PTC)` | same | Travelport Universal API/GWS uses the same 3-letter PTC values to drive air pricing by passenger type |
 
 # Related
 - [Fare Basis Code](/air/air-shop/fare-basis-code.md) — related

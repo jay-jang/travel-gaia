@@ -19,6 +19,12 @@ aliases:
   - Occupancy Rate
   - Number of Guests
   - Pax Occupancy
+providerTerms:
+  - provider: OpenTravel
+    term: GuestCounts (occupancy-based pricing)
+    context: OTA messages carry occupancy as GuestCount elements (AgeQualifyingCode for adults/children) that drive occupancy-based rate amounts.
+    context_ko: OTA 메시지는 점유를 GuestCount 요소(성인·아동 AgeQualifyingCode)로 전달하며 이는 점유 기반 요금을 결정한다.
+    relationship: related
 relationships:
   - type: related
     targetTerm: Room Type
@@ -65,6 +71,12 @@ As a pricing/inventory attribute, occupancy specifies how many adults and childr
 가격/재고 속성으로서 occupancy는 객실에 성인과 아동이 각각 몇 명 투숙하는지를 명시하며, 1인당 요금이나 occupancy 기반 요금을 적용하고 예약이 객실 유형의 최대 수용 인원에 맞는지 검증하는 데 사용된다. 성과 지표로서 객실 점유율은 판매 객실 수 / 가용 객실 수이며 백분율로 표현되고, ADR과 결합해 RevPAR을 산출한다(RevPAR = ADR x 객실 점유율). 의도된 의미는 보통 맥락에서 명확하지만, 이 용어는 실제로 여러 의미가 중첩되어 있다.
 
 **Aliases:** `Occupancy Rate`, `Number of Guests`, `Pax Occupancy`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| OpenTravel | `GuestCounts (occupancy-based pricing)` | related | OTA messages carry occupancy as GuestCount elements (AgeQualifyingCode for adults/children) that drive occupancy-based rate amounts. |
 
 # Related
 - [Room Type](/lodging/hotel-rate/room-type.md) — related

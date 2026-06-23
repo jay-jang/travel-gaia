@@ -21,6 +21,17 @@ aliases:
   - Travel Preference
   - Guest Preference
   - Passenger Preference
+providerTerms:
+  - provider: Oracle OPERA (PMS)
+    term: Preferences
+    context: 'OPERA stores non-mandatory guest Preferences (room type, bedding, floor, smoking, etc.) on the profile and applies them to reservations'
+    context_ko: OPERA는 프로파일에 비강제 게스트 선호(객실유형·침구·층·흡연 등)를 저장하고 예약에 적용한다
+    relationship: same
+  - provider: Amadeus
+    term: SSR / OSI preference elements
+    context: 'In air bookings stored preferences surface as SSR elements (seat, special meal) and OSI free-text, attached to the passenger in the PNR'
+    context_ko: 항공 예약에서 저장된 선호는 PNR의 승객에 부착되는 SSR 요소(좌석·특별기내식)와 OSI 자유텍스트로 표현된다
+    relationship: related
 relationships:
   - type: child
     targetTerm: Customer Profile
@@ -62,6 +73,13 @@ Preferences are captured in customer profiles in a GDS, airline CRS, or hotel PM
 선호는 GDS, 항공사 CRS, 호텔 PMS/CRM의 고객 프로필에 수집되어 예약으로 전달될 수 있다(예: 통로 좌석 선호, 채식, 고층·금연 객실). 항공 유통에서 좌석·기내식 같은 편의/서비스 선호는 흔히 SSR(특별서비스요청)이나 좌석 요청으로 구현되며, 조치가 필요 없는 정보는 OSI로 전달될 수 있다. OpenTravel Alliance와 HTNG는 시스템 간 선호를 교환할 수 있도록 프로필·선호 데이터 구조를 정의한다. 선호는 권고적이며 가용성에 따라 달라진다는 점에서, 의무에 해당하는 PRM 지원 필요나 Secure Flight 데이터 요구와 대비된다.
 
 **Aliases:** `Travel Preference`, `Guest Preference`, `Passenger Preference`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Oracle OPERA (PMS) | `Preferences` | same | OPERA stores non-mandatory guest Preferences (room type, bedding, floor, smoking, etc.) on the profile and applies them to reservations |
+| Amadeus | `SSR / OSI preference elements` | related | In air bookings stored preferences surface as SSR elements (seat, special meal) and OSI free-text, attached to the passenger in the PNR |
 
 # Related
 - [Customer Profile](/common/customer/customer-profile.md) — child

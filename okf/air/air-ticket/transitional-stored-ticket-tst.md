@@ -25,6 +25,16 @@ providerTerms:
     context: 'Amadeus uses TST as the named pricing record attached to the PNR, displayed/edited cryptically (e.g., TQT) and used to issue e-tickets; subtypes Automatic Stored Ticket (AST) and Manual Stored Ticket (MST).'
     context_ko: 'Amadeus는 TST를 PNR에 연결된 운임 레코드의 명칭으로 사용하며, 크립틱 명령(예: TQT)으로 표시·수정하고 e-ticket 발행에 사용한다. 하위 유형으로 AST(Automatic Stored Ticket)와 MST(Manual Stored Ticket)가 있다.'
     relationship: same
+  - provider: Sabre
+    term: Price Quote (PQ) Record
+    context: 'Sabre stores the priced fare, tax, and fare-construction data for ticketing in a Price Quote (PQ) record attached to the PNR (up to 99 per PNR) — the functional equivalent of the Amadeus TST as the source for issuing the e-ticket.'
+    context_ko: 'Sabre는 발권용 운임·세금·운임구성 데이터를 PNR에 첨부된 Price Quote(PQ) 레코드(PNR당 최대 99개)에 저장하며, 이는 전자항공권 발행 소스로서 Amadeus TST의 기능적 대응물이다.'
+    relationship: same
+  - provider: Travelport
+    term: Filed Fare (Stored Fare)
+    context: 'Travelport (Galileo/Apollo/Worldspan) holds the priced fare-and-tax data for ticketing as a Filed Fare (stored fare) on the PNR/booking file, from which tickets are issued.'
+    context_ko: 'Travelport(Galileo/Apollo/Worldspan)는 발권용 운임·세금 데이터를 PNR/예약 파일의 Filed Fare(저장 운임)로 보관하며, 이로부터 항공권을 발행한다.'
+    relationship: same
 relationships:
   - type: broader
     targetTerm: PNR
@@ -72,6 +82,8 @@ TST는 운임계산과 서류 발행 사이에 위치하는 GDS/PSS 구성요소
 | Provider | Term | Relationship | Context |
 | --- | --- | --- | --- |
 | Amadeus | `Transitional Stored Ticket (TST)` | same | Amadeus uses TST as the named pricing record attached to the PNR, displayed/edited cryptically (e.g., TQT) and used to issue e-tickets; subtypes Automatic Stored Ticket (AST) and Manual Stored Ticket (MST). |
+| Sabre | `Price Quote (PQ) Record` | same | Sabre stores the priced fare, tax, and fare-construction data for ticketing in a Price Quote (PQ) record attached to the PNR (up to 99 per PNR) — the functional equivalent of the Amadeus TST as the source for issuing the e-ticket. |
+| Travelport | `Filed Fare (Stored Fare)` | same | Travelport (Galileo/Apollo/Worldspan) holds the priced fare-and-tax data for ticketing as a Filed Fare (stored fare) on the PNR/booking file, from which tickets are issued. |
 
 # Related
 - [PNR](/air/air-ops/pnr.md) — broader

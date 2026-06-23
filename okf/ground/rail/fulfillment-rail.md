@@ -21,6 +21,22 @@ aliases:
   - OSDM Fulfillment
   - Rail Fulfillment
   - Fulfilment
+providerTerms:
+  - provider: OSDM (UIC IRS 90918-10)
+    term: Fulfillment
+    context: 'OSDM names the realized travel document object exactly ''Fulfillment'' — described in the model as what ''could once have been called tickets'', the proof-of-purchase produced from a confirmed Booking.'
+    context_ko: 'OSDM은 실현된 여행 문서 객체를 정확히 ''Fulfillment''로 명명하며, 모델에서 ''한때 티켓이라 불렸던 것''으로 설명되는, 확정된 Booking으로부터 생성되는 구매 증빙이다.'
+    relationship: same
+  - provider: UIC ticket layouts (IRS 90918-8)
+    term: RCT2 / RCCST / A4RT (secured-paper & mobile layouts)
+    context: 'Where the fulfillment is a printable document, UIC IRS 90918-8 defines the layouts it is rendered into — RCT2 and RCCST on secured paper and A4RT on blank paper or a mobile screen.'
+    context_ko: '이행물(fulfillment)이 출력 문서일 때, UIC IRS 90918-8은 그 렌더링 레이아웃을 정의한다 — 보안용지의 RCT2·RCCST, 백지/모바일 화면의 A4RT.'
+    relationship: narrower
+  - provider: IATA (ONE Order / EMD)
+    term: ONE Order document / EMD / e-ticket
+    context: 'The air-side analogue of the issued, usable travel document is the e-ticket or Electronic Miscellaneous Document under ONE Order; it serves the same fulfillment role but is a different standard and data structure.'
+    context_ko: '발권되어 사용 가능한 여행 문서의 항공 측 대응물은 ONE Order 하의 e-ticket 또는 EMD(전자 부가 문서)로, 동일한 이행 역할을 하지만 표준·데이터 구조는 다르다.'
+    relationship: related
 relationships:
   - type: parent
     targetTerm: OSDM
@@ -64,6 +80,14 @@ Fulfillment defines how a confirmed booking becomes a controllable ticket, typic
 fulfillment은 확정된 예약이 통제 가능한 승차권이 되는 방식을 정의하며, 일반적으로 control number와 바코드(예: UIC Flexible Content Barcode)를 담아 중앙 PNR 조회 없이 차내·게이트 검표로 계약을 검증할 수 있게 한다. OSDM은 fulfillment을 별개로 모델링하여 사후 처리(환불, 변경, 부분 취소)가 실체화된 문서를 참조하고 재발행할 수 있게 한다. TAP TSI 또한 fulfillment을 시각표·운임·예약과 더불어 표준화된 철도 인터페이스의 하나로 다룬다.
 
 **Aliases:** `OSDM Fulfillment`, `Rail Fulfillment`, `Fulfilment`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| OSDM (UIC IRS 90918-10) | `Fulfillment` | same | OSDM names the realized travel document object exactly 'Fulfillment' — described in the model as what 'could once have been called tickets', the proof-of-purchase produced from a confirmed Booking. |
+| UIC ticket layouts (IRS 90918-8) | `RCT2 / RCCST / A4RT (secured-paper & mobile layouts)` | narrower | Where the fulfillment is a printable document, UIC IRS 90918-8 defines the layouts it is rendered into — RCT2 and RCCST on secured paper and A4RT on blank paper or a mobile screen. |
+| IATA (ONE Order / EMD) | `ONE Order document / EMD / e-ticket` | related | The air-side analogue of the issued, usable travel document is the e-ticket or Electronic Miscellaneous Document under ONE Order; it serves the same fulfillment role but is a different standard and data structure. |
 
 # Related
 - [OSDM](/ground/rail/osdm.md) — parent

@@ -23,6 +23,12 @@ aliases:
   - Airline Prefix Code
   - Ticketing Prefix
   - Airline Code Number
+providerTerms:
+  - provider: IATA Cargo
+    term: Airline prefix code
+    context: 'The same 3-digit numeric assigned by IATA, called the ''prefix code'' on the cargo side where it forms the first 3 digits of the AWB number.'
+    context_ko: 'IATA가 부여하는 동일한 3자리 숫자로, 화물 측에서는 ''prefix code''라 불리며 AWB 번호의 앞 3자리를 구성한다.'
+    relationship: same
 relationships:
   - type: contrasts
     targetTerm: Airline Designator
@@ -70,6 +76,12 @@ The accounting code applies to passenger operations; a parallel three-digit pref
 정산 코드(accounting code)는 여객 운송에 적용되며, 화물에는 별도의 3자리 prefix code가 적용된다. 여객과 화물을 모두 운영하는 항공사는 두 용도에 같은 번호를 보유할 수 있으나, 각 코드는 별도로 신청해야 한다. 이 코드는 BSP·ARC 정산에 사용되는 항공권/서류 번호의 접두부를 이루므로, 보고·프로레이션(proration)·인터라인 정산에서 발권/검증 항공사를 식별한다. 순수하게 숫자 3자리이므로, 편명과 예약에 쓰이는 2자리 IATA 항공사 지정 코드(예: AA)와는 구별된다.
 
 **Aliases:** `Airline Numeric Code`, `Three-Digit Airline Code`, `Airline Prefix Code`, `Ticketing Prefix`, `Airline Code Number`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| IATA Cargo | `Airline prefix code` | same | The same 3-digit numeric assigned by IATA, called the 'prefix code' on the cargo side where it forms the first 3 digits of the AWB number. |
 
 # Related
 - [Airline Designator](/common/codes/airline-designator.md) — contrasts

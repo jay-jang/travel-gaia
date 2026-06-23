@@ -19,6 +19,12 @@ aliases:
   - Room Block
   - Block
   - Group Room Block
+providerTerms:
+  - provider: Oracle OPERA
+    term: Business Block (Blocks)
+    context: 'OPERA manages group inventory as a Business Block with a rooms grid, contracted rate, pickup, and cutoff per room type/date.'
+    context_ko: OPERA는 그룹 재고를 객실 그리드·계약요금·pickup·룸타입별 cutoff을 갖는 Business Block으로 관리한다.
+    relationship: same
 relationships:
   - type: contrasts
     targetTerm: Allotment
@@ -61,6 +67,12 @@ The group block is the foundational unit of group sales and group inventory mana
 그룹 블록은 그룹 영업과 그룹 재고 관리의 기본 단위다. 영업 계약은 야간별 객실 수, 그룹 요금(group rate), 컷오프 날짜(cutoff date), 미달/최소 픽업(attrition) 조항, 그리고 미예약 객실을 워시(wash)하거나 반환하는 방식을 명시한다. 레비뉴 매니저는 블록 규모 대비 실제 예약된 픽업(pick-up)을 모니터링해 수요를 예측하고, 워시 팩터(wash factor)를 적용해 블록 중 노쇼로 빠질 비율을 추정하며, displacement analysis를 통해 블록을 수용·축소할지 결정한다. 행사일이 가까워지면 블록은 '컷(cut)'되거나 워시될 수 있고, 컷오프 시점에 남은 객실은 일반(transient) 가용 재고로 반환된다.
 
 **Aliases:** `Room Block`, `Block`, `Group Room Block`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Oracle OPERA | `Business Block (Blocks)` | same | OPERA manages group inventory as a Business Block with a rooms grid, contracted rate, pickup, and cutoff per room type/date. |
 
 # Related
 - [Allotment](/lodging/hotel-rate/allotment.md) — contrasts

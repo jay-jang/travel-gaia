@@ -21,6 +21,22 @@ aliases:
   - Rate Code
   - Rate Type
   - Tariff
+providerTerms:
+  - provider: OpenTravel / HTNG
+    term: RatePlan / RatePlanCode
+    context: 'OTA messages identify a sellable pricing offer via RatePlanCandidate/RatePlan elements carrying a RatePlanCode, mapped between PMS, CRS and channels.'
+    context_ko: OTA 메시지는 RatePlanCode를 담은 RatePlanCandidate/RatePlan 요소로 판매 가능한 요금 오퍼를 식별하며 PMS·CRS·채널 간 매핑된다.
+    relationship: same
+  - provider: Oracle OPERA
+    term: Rate Code
+    context: 'OPERA represents a rate plan as a Rate Code defining prices per room type over a date range/season plus rules, the core of its yield and reservation processes.'
+    context_ko: OPERA는 요금제를 룸타입별·시즌별 가격과 규칙을 정의하는 Rate Code로 표현하며 이는 yield·예약 프로세스의 핵심이다.
+    relationship: same
+  - provider: Amadeus
+    term: Rate Type / rate type code
+    context: 'Amadeus Hospitality defines rate plans as rate types with unique 8-character codes, groupings, rules and restrictions for different bookers and markets.'
+    context_ko: Amadeus Hospitality는 요금제를 8자 고유 코드·그룹·규칙·제한을 가진 rate type으로 정의하며 booker·시장별로 구성한다.
+    relationship: same
 relationships:
   - type: related
     targetTerm: Room Type
@@ -83,6 +99,14 @@ A rate plan bundles a price (or pricing logic) together with rules and restricti
 요금제는 가격(또는 가격 산정 로직)을 식사 조건, 취소/보증 정책, 최소/최대 숙박일수, 사전 예약 및 투숙일 기간, 시장 세그먼트나 자격 조건(예: 기업, 회원, 비공개), 수수료 지급 여부 또는 net 여부 등의 규칙·제약과 함께 묶은 것이다. CRS/PMS에서 요금제는 rate code로 식별되며 객실 유형과 날짜 범위에 매핑된다. 동일한 실제 객실이라도 여러 요금제 아래 서로 다른 가격과 조건으로 판매될 수 있다.
 
 **Aliases:** `Rate Code`, `Rate Type`, `Tariff`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| OpenTravel / HTNG | `RatePlan / RatePlanCode` | same | OTA messages identify a sellable pricing offer via RatePlanCandidate/RatePlan elements carrying a RatePlanCode, mapped between PMS, CRS and channels. |
+| Oracle OPERA | `Rate Code` | same | OPERA represents a rate plan as a Rate Code defining prices per room type over a date range/season plus rules, the core of its yield and reservation processes. |
+| Amadeus | `Rate Type / rate type code` | same | Amadeus Hospitality defines rate plans as rate types with unique 8-character codes, groupings, rules and restrictions for different bookers and markets. |
 
 # Related
 - [Room Type](/lodging/hotel-rate/room-type.md) — related

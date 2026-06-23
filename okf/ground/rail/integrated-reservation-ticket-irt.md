@@ -21,6 +21,17 @@ standardBody: UIC
 aliases:
   - Integrated Reservation Ticket
   - IRT ticket
+providerTerms:
+  - provider: OSDM (UIC IRS 90918-10)
+    term: Offer where Admission bundles a mandatory Reservation
+    context: 'OSDM expresses an IRT as an offer in which the AdmissionOfferPart includes a compulsory ReservationOfferPart (typical of yield-managed high-speed trains such as Eurostar), rather than as a distinct ticket type code.'
+    context_ko: 'OSDM은 IRT를 별도 티켓 유형 코드가 아니라, AdmissionOfferPart에 필수 ReservationOfferPart가 결합된 오퍼로 표현한다(Eurostar 등 수익관리 고속열차에 일반적).'
+    relationship: related
+  - provider: ERA TAP TSI (TD B.2)
+    term: IRT tariff / fare data exchange
+    context: ERA TAP TSI Technical Document B.2 standardizes how RUs make available tariff and fare information for Tickets with Integrated Reservation (IRT) for international and foreign sales.
+    context_ko: ERA TAP TSI 기술문서 B.2는 철도사업자가 국제·외국 판매용 통합예약권(IRT)의 운임·요금 정보를 제공하는 방식을 표준화한다.
+    relationship: related
 relationships:
   - type: contrasts
     targetTerm: Non-integrated Reservation Ticket (NRT)
@@ -60,6 +71,13 @@ With IRT, the admission and reservation are sold together as a single yield-mana
 IRT에서는 admission과 reservation이 하나의 수익관리 상품으로 함께 판매되어, 운임이 특정 열차와 좌석에 묶인다 — 항공의 예약 클래스(booking class)와 유사하다. 이러한 묶음 판매는 개별 출발편에 수익관리와 좌석 통제를 적용하는 운영사에 필수적이며, 승차권과 예약이 분리되는 NRT 모델과 대비된다.
 
 **Aliases:** `Integrated Reservation Ticket`, `IRT ticket`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| OSDM (UIC IRS 90918-10) | `Offer where Admission bundles a mandatory Reservation` | related | OSDM expresses an IRT as an offer in which the AdmissionOfferPart includes a compulsory ReservationOfferPart (typical of yield-managed high-speed trains such as Eurostar), rather than as a distinct ticket type code. |
+| ERA TAP TSI (TD B.2) | `IRT tariff / fare data exchange` | related | ERA TAP TSI Technical Document B.2 standardizes how RUs make available tariff and fare information for Tickets with Integrated Reservation (IRT) for international and foreign sales. |
 
 # Related
 - [Non-integrated Reservation Ticket (NRT)](/ground/rail/non-integrated-reservation-ticket-nrt.md) — contrasts

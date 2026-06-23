@@ -21,6 +21,22 @@ standardBody: UIC
 aliases:
   - Flexible Content Barcode
   - UIC barcode (FCB)
+providerTerms:
+  - provider: UIC (IRS 90918-9 / GitHub UIC-barcode)
+    term: 'FCB (IRS 90918-9, uicRailTicketData ASN.1)'
+    context: 'The formal UIC designation is the IRS 90918-9 ''Flexible Content Barcode'', defined via the uicRailTicketData ASN.1 schema in the UIC-barcode reference implementation; FCB/TLB use a variable-field, variable-size encoding.'
+    context_ko: 'UIC 공식 명칭은 IRS 90918-9 ''Flexible Content Barcode''이며, UIC-barcode 레퍼런스 구현의 uicRailTicketData ASN.1 스키마로 정의된다(FCB/TLB는 가변 필드·가변 크기 인코딩).'
+    relationship: same
+  - provider: UIC (legacy Leaflet 918-2 / 918-3)
+    term: SSB / ELB / TLB
+    context: 'The predecessor UIC barcode formats carry the same rail contract but with different, mostly fixed-field encodings: SSB (Small Structured Barcode, ''AZTEC V2'' in 918-2V3), ELB (Element List Barcode, PDF417, used by SNCF), and TLB (Ticket Layout Barcode, ''DST barcode'' in 918-3) — all now superseded by FCB.'
+    context_ko: '선행 UIC 바코드 포맷들은 동일한 철도 계약을 담되 대부분 고정 필드 방식으로 인코딩한다: SSB(Small Structured Barcode, 918-2V3의 ''AZTEC V2''), ELB(Element List Barcode, PDF417, SNCF 사용), TLB(Ticket Layout Barcode, 918-3의 ''DST barcode''). 모두 FCB로 대체됨.'
+    relationship: narrower
+  - provider: ERA TAP TSI (TD B.12)
+    term: TAP TSI Technical Document B.12 (2D barcode security)
+    context: 'ERA TAP TSI TD B.12 is the EU regulatory document that mandates the 2D Aztec barcode and its asymmetric signing for rail ticketing, paired with TD B.11 (layout); it is the regulatory carrier of the FCB standard.'
+    context_ko: 'ERA TAP TSI TD B.12는 철도 발권용 2D Aztec 바코드와 비대칭 서명을 규정하는 EU 규제 문서로, 레이아웃을 다루는 TD B.11과 짝을 이루며 FCB 표준의 규제적 근거다.'
+    relationship: related
 relationships:
   - type: related
     targetTerm: Fulfillment (Rail)
@@ -63,6 +79,14 @@ FCB encodes the contract data and an asymmetric digital signature so that any in
 FCB는 계약 데이터와 비대칭 디지털 서명을 인코딩하여, 발행자의 공개키를 가진 검표 주체가 중앙 예약 시스템을 조회하지 않고도 오프라인에서 진위를 검증할 수 있게 한다. 고정 레이아웃의 구형 UIC 바코드 표준을 잇는 후속 표준으로, 다양한 상품(admission, reservation, 패스)에 대한 유연한 레코드 구조를 지원한다. '집에서 인쇄'·모바일 승차권을 뒷받침하며, OSDM fulfillment과 TAP TSI 기술문서 B.12에서 참조된다.
 
 **Aliases:** `Flexible Content Barcode`, `UIC barcode (FCB)`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| UIC (IRS 90918-9 / GitHub UIC-barcode) | `FCB (IRS 90918-9, uicRailTicketData ASN.1)` | same | The formal UIC designation is the IRS 90918-9 'Flexible Content Barcode', defined via the uicRailTicketData ASN.1 schema in the UIC-barcode reference implementation; FCB/TLB use a variable-field, variable-size encoding. |
+| UIC (legacy Leaflet 918-2 / 918-3) | `SSB / ELB / TLB` | narrower | The predecessor UIC barcode formats carry the same rail contract but with different, mostly fixed-field encodings: SSB (Small Structured Barcode, 'AZTEC V2' in 918-2V3), ELB (Element List Barcode, PDF417, used by SNCF), and TLB (Ticket Layout Barcode, 'DST barcode' in 918-3) — all now superseded by FCB. |
+| ERA TAP TSI (TD B.12) | `TAP TSI Technical Document B.12 (2D barcode security)` | related | ERA TAP TSI TD B.12 is the EU regulatory document that mandates the 2D Aztec barcode and its asymmetric signing for rail ticketing, paired with TD B.11 (layout); it is the regulatory carrier of the FCB standard. |
 
 # Related
 - [Fulfillment (Rail)](/ground/rail/fulfillment-rail.md) — related

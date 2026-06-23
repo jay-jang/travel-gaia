@@ -29,6 +29,31 @@ providerTerms:
     context: EMVCo specifies and manages the EMV 3DS protocol
     context_ko: EMVCo가 EMV 3DS 프로토콜을 규정하고 관리한다
     relationship: same
+  - provider: Visa
+    term: Visa Secure (formerly Verified by Visa)
+    context: Visa's brand implementation of the EMV 3-D Secure protocol for authenticating card-not-present transactions on Visa cards.
+    context_ko: Visa 카드의 비대면 거래를 인증하기 위한 EMV 3-D Secure 프로토콜의 Visa 브랜드 구현체(구 Verified by Visa).
+    relationship: narrower
+  - provider: Mastercard
+    term: Mastercard Identity Check (formerly SecureCode)
+    context: Mastercard's brand of EMV 3-D Secure cardholder authentication for online Mastercard payments.
+    context_ko: 온라인 Mastercard 결제를 위한 카드소지자 인증 EMV 3-D Secure의 Mastercard 브랜드(구 SecureCode).
+    relationship: narrower
+  - provider: American Express
+    term: American Express SafeKey
+    context: Amex's branded implementation of 3-D Secure used to authenticate Amex card-not-present transactions.
+    context_ko: Amex 카드의 비대면 거래 인증에 쓰이는 Amex 브랜드의 3-D Secure 구현체.
+    relationship: narrower
+  - provider: JCB
+    term: J/Secure
+    context: JCB's branded 3-D Secure authentication program for JCB card online payments.
+    context_ko: JCB 카드 온라인 결제를 위한 JCB 브랜드의 3-D Secure 인증 프로그램.
+    relationship: narrower
+  - provider: Discover
+    term: ProtectBuy
+    context: Discover's branded implementation of the 3-D Secure protocol.
+    context_ko: Discover의 3-D Secure 프로토콜 브랜드 구현체.
+    relationship: narrower
 relationships:
   - type: contrasts
     targetTerm: Chargeback
@@ -78,6 +103,11 @@ The name refers to the three domains involved: the issuer (cardholder) domain, t
 | Provider | Term | Relationship | Context |
 | --- | --- | --- | --- |
 | EMVCo | `EMV 3-D Secure` | same | EMVCo specifies and manages the EMV 3DS protocol |
+| Visa | `Visa Secure (formerly Verified by Visa)` | narrower | Visa's brand implementation of the EMV 3-D Secure protocol for authenticating card-not-present transactions on Visa cards. |
+| Mastercard | `Mastercard Identity Check (formerly SecureCode)` | narrower | Mastercard's brand of EMV 3-D Secure cardholder authentication for online Mastercard payments. |
+| American Express | `American Express SafeKey` | narrower | Amex's branded implementation of 3-D Secure used to authenticate Amex card-not-present transactions. |
+| JCB | `J/Secure` | narrower | JCB's branded 3-D Secure authentication program for JCB card online payments. |
+| Discover | `ProtectBuy` | narrower | Discover's branded implementation of the 3-D Secure protocol. |
 
 # Related
 - [Chargeback](/common/pay/chargeback.md) — contrasts

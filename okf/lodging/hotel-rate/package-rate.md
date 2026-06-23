@@ -18,6 +18,12 @@ longDef_ko: '패키지 요금은 rate code에 패키지 구성요소(package ele
 aliases:
   - Package Plan
   - Bundled Rate
+providerTerms:
+  - provider: Oracle OPERA
+    term: Package / Package element (rate code)
+    context: 'OPERA builds package rates by attaching package elements (breakfast, parking, etc.) to a rate code, posting and allocating the bundled value automatically.'
+    context_ko: OPERA는 요금코드에 package element(조식·주차 등)를 붙여 패키지 요금을 구성하고 묶음 가치를 자동 포스팅·배분한다.
+    relationship: same
 relationships:
   - type: child
     targetTerm: Rate Plan
@@ -57,6 +63,12 @@ Package rates are built by attaching package elements to a rate code, giving the
 패키지 요금은 rate code에 패키지 구성요소(package element)를 연결해 투숙객에게 정의된 entitlement 묶음을 제공함으로써 구성된다. 단순한 객실+조식 패키지부터, 객실 요금에 식사·음료·부대 액티비티까지 포함하는 올인클루시브 플랜까지 범위가 넓다. 구성요소마다 매출·세무 처리가 다르므로 PMS/CRS는 통상 객실 매출과 비객실 구성요소로 금액을 배분한다. OpenTravel 유통에서는 상품별 금액이 rate-amount 메시지(예: OTA_HotelRateAmountNotifRQ)로 전달된다. 묶인 구성요소가 식사 플랜일 때는 Board Basis와 관련되지만, 비식음료 서비스도 포함할 수 있어 더 넓은 개념이다.
 
 **Aliases:** `Package Plan`, `Bundled Rate`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Oracle OPERA | `Package / Package element (rate code)` | same | OPERA builds package rates by attaching package elements (breakfast, parking, etc.) to a rate code, posting and allocating the bundled value automatically. |
 
 # Related
 - [Rate Plan](/lodging/hotel-rate/rate-plan.md) — child

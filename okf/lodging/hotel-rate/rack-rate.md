@@ -19,6 +19,12 @@ aliases:
   - Rack
   - Published Rate
   - Standard Rate
+providerTerms:
+  - provider: Oracle OPERA
+    term: RACK rate code
+    context: OPERA conventionally uses a RACK rate code as the property's highest published reference rate from which other rate codes discount.
+    context_ko: OPERA는 관례적으로 RACK 요금코드를 다른 요금코드가 할인의 기준으로 삼는 최고 공시 기준요금으로 사용한다.
+    relationship: same
 relationships:
   - type: child
     targetTerm: Rate Plan
@@ -68,6 +74,12 @@ Historically the rack rate was literally the rate posted on the room rack at the
 역사적으로 rack rate는 말 그대로 프런트 데스크의 객실 랙(rack)에 게시되고 브로슈어·요금표(tariff)에 인쇄되던 요금으로, 호텔이 할인 전에 청구할 수 있는 최대치를 나타냈다. 실제로 그 가격을 낸 고객은 거의 없었으며, 기업·단체·패키지·프로모션 할인이 그에 대해 표현되는 상한이자 일부 관할권에서는 법적으로 게시되는 최대치로 기능했다. 수익 관리와 dynamic pricing의 부상으로 실무 기준점은 정적 rack rate에서 날짜별로 움직이는 수요 기반 BAR로 옮겨갔고, 이제 rack rate는 라이브 판매 요금이라기보다 높은 기준점, 워크인 폴백 견적, 비교 기준선으로 주로 남아 있다. 여전히 많은 PMS·CRS 시스템에 마스터 공개 요금으로 적재된다.
 
 **Aliases:** `Rack`, `Published Rate`, `Standard Rate`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Oracle OPERA | `RACK rate code` | same | OPERA conventionally uses a RACK rate code as the property's highest published reference rate from which other rate codes discount. |
 
 # Related
 - [Rate Plan](/lodging/hotel-rate/rate-plan.md) — child

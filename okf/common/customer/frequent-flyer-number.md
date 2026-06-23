@@ -24,6 +24,17 @@ aliases:
   - Loyalty Number
   - Membership Number
   - Frequent Traveler Number
+providerTerms:
+  - provider: Amadeus
+    term: SSR FQTV (FFA entry)
+    context: 'Amadeus stores the FF number in an SSR FQTV element, created per accruing airline; the FFA cryptic entry auto-populates it (e.g. FFACX-1234567890,CX/P1)'
+    context_ko: Amadeus는 적립 항공사별로 생성되는 SSR FQTV 요소에 FF 번호를 저장하며 FFA 크립틱 엔트리로 자동 입력한다
+    relationship: same
+  - provider: Sabre
+    term: FF (FFCX entry)
+    context: 'Sabre uses its own cryptic format for the same SSR FQTV element, e.g. FFCX1234567890/CX-1.1'
+    context_ko: 'Sabre는 동일한 SSR FQTV 요소에 자체 크립틱 포맷(예: FFCX1234567890/CX-1.1)을 사용한다'
+    relationship: same
 relationships:
   - type: child
     targetTerm: Frequent Flyer Program
@@ -61,6 +72,13 @@ A Frequent Flyer Number identifies a specific member account within a specific p
 FFN은 특정 프로그램 내의 특정 회원 계정을 식별하며, 동일한 사람이 서로 다른 항공사에 여러 개의 번호를 보유할 수 있다. FQTV Special Service Request를 통해 PNR에 추가되면 시스템은 프로그램(항공사 식별 코드)과 회원 번호를 기록하여 마일리지가 정확히 적립되고 등급 혜택(우선권, 수하물, 라운지, 업그레이드)이 적용되도록 한다. 번호는 계정 고유값이므로 연관된 프로그램 식별자 없이는 의미가 없다.
 
 **Aliases:** `FFN`, `FQTV Number`, `Loyalty Number`, `Membership Number`, `Frequent Traveler Number`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Amadeus | `SSR FQTV (FFA entry)` | same | Amadeus stores the FF number in an SSR FQTV element, created per accruing airline; the FFA cryptic entry auto-populates it (e.g. FFACX-1234567890,CX/P1) |
+| Sabre | `FF (FFCX entry)` | same | Sabre uses its own cryptic format for the same SSR FQTV element, e.g. FFCX1234567890/CX-1.1 |
 
 # Related
 - [Frequent Flyer Program](/common/customer/frequent-flyer-program.md) — child

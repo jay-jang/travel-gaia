@@ -21,6 +21,12 @@ aliases:
   - Booking Segment
   - Flight Segment
   - Air Segment
+providerTerms:
+  - provider: NDC/IATA
+    term: Flight Segment / Service (in OrderItem)
+    context: 'NDC retains the flight segment as a routing unit, but the commercial unit becomes the per-passenger-per-segment Service inside an OrderItem rather than a sold segment in a PNR.'
+    context_ko: 'NDC는 flight segment를 routing 단위로 유지하되, 상업 단위는 PNR의 판매 segment 대신 OrderItem 내 승객×segment 단위 Service가 된다.'
+    relationship: related
 relationships:
   - type: parent
     targetTerm: Leg
@@ -78,6 +84,12 @@ A segment corresponds to a flight number and a booking class (RBD) from origin t
 segment는 판매를 위해 제공되는 출발지에서 도착지까지의 편명과 예약 등급(RBD)에 대응한다. 편명 변경 없이 중간 기착하는 직항편은 하나의 segment이지만 두 개의 leg이다. segment는 좌석 가용성 조회, 운임 구성 요소(fare component) 구성, 항공권 쿠폰의 기준이 되며, 발권된 각 segment는 일반적으로 하나의 flight coupon에 대응한다.
 
 **Aliases:** `Booking Segment`, `Flight Segment`, `Air Segment`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| NDC/IATA | `Flight Segment / Service (in OrderItem)` | related | NDC retains the flight segment as a routing unit, but the commercial unit becomes the per-passenger-per-segment Service inside an OrderItem rather than a sold segment in a PNR. |
 
 # Related
 - [Leg](/air/air-ops/leg.md) — parent

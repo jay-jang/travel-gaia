@@ -20,6 +20,12 @@ aliases:
   - Connecting Itinerary
   - Online Connection
   - Interline Connection
+providerTerms:
+  - provider: IATA
+    term: 'Minimum Connecting Time (MCT, SSIM Chapter 8)'
+    context: IATA SSIM Chapter 8 defines the MCT standard—the shortest interval to transfer a passenger and bags between flights at a point—which GDSs apply to determine whether a connection is bookable as a valid connection.
+    context_ko: 'IATA SSIM 8장은 한 지점에서 승객과 수하물을 항공편 간 환승하는 데 필요한 최소 시간(MCT) 표준을 정의하며, GDS는 이를 적용해 해당 연결이 유효한 연결편으로 예약 가능한지 판단한다.'
+    relationship: related
 relationships:
   - type: related
     targetTerm: MCT
@@ -64,6 +70,12 @@ Connections may be "online" (both flights on the same carrier) or "interline"/"c
 연결은 "online"(두 항공편이 같은 항공사)일 수도, "interline"/"codeshare"(서로 다른 항공사)일 수도 있으며, 후자는 일관 발권과 수하물 처리를 위해 인터라인 또는 공동운항 협정에 의존한다. 갈아타기가 통과(transit)로 취급되면 연결 지점은 스톱오버(stopover)가 아니라 별개의 세그먼트(segment)로 여정에 반영되며, 두 세그먼트가 연결인지 스톱오버인지는 시간과 운임 규정에 따라 달라진다. MCT는 법적으로 허용되는 최소 간격을 정의하고, 연결 운송은 허브 앤 스포크 네트워크가 만들어내도록 설계된 대상이다. 일관 운임은 일반적으로 연결 여정을 하나의 상품으로 책정한다.
 
 **Aliases:** `Connecting Flight`, `Connecting Itinerary`, `Online Connection`, `Interline Connection`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| IATA | `Minimum Connecting Time (MCT, SSIM Chapter 8)` | related | IATA SSIM Chapter 8 defines the MCT standard—the shortest interval to transfer a passenger and bags between flights at a point—which GDSs apply to determine whether a connection is bookable as a valid connection. |
 
 # Related
 - [MCT](/air/air-ops/mct.md) — related

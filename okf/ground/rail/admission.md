@@ -20,6 +20,22 @@ standardBody: UIC
 aliases:
   - Admission (OSDM)
   - Travel Admission
+providerTerms:
+  - provider: OSDM (UIC IRS 90918-10)
+    term: AdmissionOfferPart / Admission
+    context: 'OSDM names the travel-right offer part ''AdmissionOfferPart'' at offer stage, becoming ''Admission'' inside a booked offer; this is the exact object that grants the entitlement to travel on a train, held separately from ReservationOfferPart and AncillaryOfferPart.'
+    context_ko: 'OSDM은 열차 탑승 권리를 부여하는 오퍼 파트를 ''AdmissionOfferPart''(예약 확정 시 ''Admission'')로 명명하며, 좌석예약(ReservationOfferPart)·부가서비스(AncillaryOfferPart)와 분리해 모델링한다.'
+    relationship: same
+  - provider: TAP TSI (ERA TD B.1)
+    term: NRT tariff / admission-only fare data
+    context: 'ERA TAP TSI Technical Document B.1 standardizes the exchange of Non-Reservation-Ticket (NRT) tariff and fare data for international sales — i.e. fares for the admission alone, sold independently of any reservation.'
+    context_ko: 'ERA TAP TSI 기술문서 B.1은 국제 판매용 비예약권(NRT) 운임 데이터 교환을 표준화하며, 이는 좌석예약과 분리되어 단독 판매되는 어드미션(승차권 본체)에 대한 운임이다.'
+    relationship: related
+  - provider: NDC / IATA (Offers & Orders)
+    term: OfferItem (flight / fare offer item)
+    context: 'In air retailing the closest structural analogue is the NDC OfferItem carrying the flight/fare entitlement; unlike OSDM it does not cleanly separate a transport entitlement from a reservation, so the mapping is conceptual rather than identical.'
+    context_ko: '항공 리테일링에서 가장 가까운 구조적 대응물은 운임·여정 권리를 담는 NDC OfferItem이나, OSDM처럼 운송 권리와 좌석예약을 명확히 분리하지 않으므로 동일이 아닌 개념적 대응이다.'
+    relationship: related
 relationships:
   - type: parent
     targetTerm: OSDM
@@ -63,6 +79,14 @@ OSDM separates an offer into admissions, reservations, and ancillaries. The admi
 OSDM은 오퍼를 admission, reservation, ancillary로 분리한다. admission은 운송될 계약상 권리(흔히 특정 운임 범위·경로·유효기간에 대해 유효)를 나타내며 좌석이 묶이지 않은 채 존재할 수 있다 — 예컨대 예약이 필요 없는 열차나 좌석 예약을 별도로 구매하는 경우다. 이 분리 덕분에 철도는 특정 열차나 좌석과 무관하게 개방형·유연 운송권을 판매할 수 있다.
 
 **Aliases:** `Admission (OSDM)`, `Travel Admission`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| OSDM (UIC IRS 90918-10) | `AdmissionOfferPart / Admission` | same | OSDM names the travel-right offer part 'AdmissionOfferPart' at offer stage, becoming 'Admission' inside a booked offer; this is the exact object that grants the entitlement to travel on a train, held separately from ReservationOfferPart and AncillaryOfferPart. |
+| TAP TSI (ERA TD B.1) | `NRT tariff / admission-only fare data` | related | ERA TAP TSI Technical Document B.1 standardizes the exchange of Non-Reservation-Ticket (NRT) tariff and fare data for international sales — i.e. fares for the admission alone, sold independently of any reservation. |
+| NDC / IATA (Offers & Orders) | `OfferItem (flight / fare offer item)` | related | In air retailing the closest structural analogue is the NDC OfferItem carrying the flight/fare entitlement; unlike OSDM it does not cleanly separate a transport entitlement from a reservation, so the mapping is conceptual rather than identical. |
 
 # Related
 - [OSDM](/ground/rail/osdm.md) — parent

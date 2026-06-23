@@ -20,6 +20,12 @@ standardBody: IATA
 aliases:
   - settlement period
   - billing and settlement cycle
+providerTerms:
+  - provider: IATA
+    term: Settlement with Orders (SwO)
+    context: 'IATA order-based settlement that triggers BSP money collection via a simple agent-airline request, extending settlement to ticketless NDC/ONE Order carriers.'
+    context_ko: '간단한 대리점-항공사 요청으로 BSP 자금 수금을 개시하는 IATA의 오더 기반 정산으로, 티켓리스 NDC/ONE Order 항공사까지 정산을 확장한다.'
+    relationship: related
 relationships:
   - type: related
     targetTerm: Remittance
@@ -62,6 +68,12 @@ In agency settlement, the BSP and ARC publish a reporting and remittance calenda
 여행사 정산에서 BSP와 ARC는 매월을 여러 정산(청구) 기간으로 나누는 보고·송금 달력을 공표한다. 한 기간의 판매와 환불은 상계되어 여행사에 청구되고, 순액은 송금일(remittance date)에 자동이체로 정산되며, 이후 자금이 참여 항공사에 배분된다. 카드 결제에서 정산 주기는 매입사(Acquirer)가 승인 거래를 배치 처리하고, 네트워크가 매입사와 발급사 간에 청산·상계하며, 자금이 가맹점에 도달하는 일정으로, 매입사와 카드 유형에 따라 보통 영업일 기준 T+1~T+3이다. IATA Clearing House는 Interline 등 항공사 간 채무에 대해 자체 정산 달력을 운영한다. 정산 빈도와 시점은 여행 사업자의 운전자본과 거래상대방 부도 노출에 직접적인 영향을 준다.
 
 **Aliases:** `settlement period`, `billing and settlement cycle`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| IATA | `Settlement with Orders (SwO)` | related | IATA order-based settlement that triggers BSP money collection via a simple agent-airline request, extending settlement to ticketless NDC/ONE Order carriers. |
 
 # Related
 - [Remittance](/common/pay/remittance.md) — related

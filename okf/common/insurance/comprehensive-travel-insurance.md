@@ -19,6 +19,17 @@ aliases:
   - Comprehensive Plan
   - Package Travel Insurance
   - Single-Trip Comprehensive Plan
+providerTerms:
+  - provider: OpenTravel (OTA)
+    term: OTA_InsuranceQuoteRQ / OTA_InsurancePlanSearchRQ
+    context: 'OpenTravel''s standardized XML message pair used by sellers to search for and quote a travel insurance plan; the InsurancePlan it returns is typically a bundled comprehensive plan covering cancellation, baggage, delay and medical.'
+    context_ko: 'OpenTravel의 표준 XML 메시지 쌍으로, 판매자가 여행보험 플랜을 검색하고 견적을 받을 때 사용한다. 반환되는 InsurancePlan은 보통 취소·수하물·지연·의료를 묶은 종합형 플랜이다.'
+    relationship: related
+  - provider: Amadeus
+    term: Amadeus Insurance
+    context: Amadeus's GDS-integrated insurance cross-sell module that distributes bundled travel insurance plans to agencies and airlines as a booking ancillary.
+    context_ko: 'Amadeus의 GDS 통합 보험 크로스셀 모듈로, 종합 여행보험 플랜을 예약 부가상품으로 여행사·항공사에 유통한다.'
+    relationship: related
 relationships:
   - type: parent
     targetTerm: Trip Cancellation
@@ -62,6 +73,13 @@ Rather than buying separate trip-cancellation and travel-medical policies, most 
 대부분의 레저 여행자는 취소 보험과 여행의료 보험을 따로 사는 대신, 각 보장과 한도를 보장 명세표에 나열한 하나의 종합 보험을 구매한다. 여행비용 보장(취소/중단)이 대표 항목이자 최대 보험료 구성요소이며, 지연·수하물·의료·후송이 패키지를 완성한다. 선택 특약 — Cancel For Any Reason, Interruption For Any Reason, 기왕증 면제, 렌터카·액티비티 추가 — 으로 확장된다. 종합 보험은 보통 단일 여행용이며, 빈번한 여행자를 위한 연간 다회 여행 상품도 있다.
 
 **Aliases:** `Comprehensive Plan`, `Package Travel Insurance`, `Single-Trip Comprehensive Plan`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| OpenTravel (OTA) | `OTA_InsuranceQuoteRQ / OTA_InsurancePlanSearchRQ` | related | OpenTravel's standardized XML message pair used by sellers to search for and quote a travel insurance plan; the InsurancePlan it returns is typically a bundled comprehensive plan covering cancellation, baggage, delay and medical. |
+| Amadeus | `Amadeus Insurance` | related | Amadeus's GDS-integrated insurance cross-sell module that distributes bundled travel insurance plans to agencies and airlines as a booking ancillary. |
 
 # Related
 - [Trip Cancellation](/common/insurance/trip-cancellation.md) — parent

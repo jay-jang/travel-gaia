@@ -20,6 +20,22 @@ aliases:
   - Order Management System
   - Airline OMS
   - Offer and Order Management System
+providerTerms:
+  - provider: Amadeus
+    term: Amadeus Nevio Order Management System
+    context: Amadeus Nevio's OMS creates and services the single customer Order with ONE Order capabilities
+    context_ko: ONE Order 역량으로 단일 고객 주문을 생성·서비스하는 Amadeus Nevio의 OMS
+    relationship: narrower
+  - provider: Sabre
+    term: Sabre Mosaic (Order Management)
+    context: Sabre Mosaic's order-management layer maintains the order as source of truth across its lifecycle
+    context_ko: 주문 수명주기 전반에서 주문을 신뢰 원천으로 유지하는 Sabre Mosaic의 주문 관리 계층
+    relationship: narrower
+  - provider: Accelya
+    term: Accelya FLX ONE
+    context: PSS-neutral OMS that can sit atop an existing PSS to deliver ONE Order servicing
+    context_ko: 기존 PSS 위에 얹어 ONE Order 서비스를 제공할 수 있는 PSS 중립 OMS
+    relationship: narrower
 relationships:
   - type: related
     targetTerm: Order
@@ -69,6 +85,14 @@ Supported by IATA's ONE Order initiative, an OMS provides a unified, single-reco
 IATA의 ONE Order 이니셔티브가 뒷받침하는 OMS는 주문과 그에 대한 모든 변경에 대해 통합된 단일 기록 관점을 제공하며, 결제·이행·전달·서비스·주문 단위 회계를 처리한다. 레거시 PNR, e-ticket, EMD 구조와 문서 기반 정산을 통합하고 궁극적으로 대체하도록 설계되었다. 벤더와 항공사는 흔히 통합 'Offer & Order Management System'으로 마케팅하므로, 'OMS'는 맥락에 따라 주문 절반 또는 전체 플랫폼을 가리킬 수 있다.
 
 **Aliases:** `Order Management System`, `Airline OMS`, `Offer and Order Management System`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Amadeus | `Amadeus Nevio Order Management System` | narrower | Amadeus Nevio's OMS creates and services the single customer Order with ONE Order capabilities |
+| Sabre | `Sabre Mosaic (Order Management)` | narrower | Sabre Mosaic's order-management layer maintains the order as source of truth across its lifecycle |
+| Accelya | `Accelya FLX ONE` | narrower | PSS-neutral OMS that can sit atop an existing PSS to deliver ONE Order servicing |
 
 # Related
 - [Order](/common/standards/order.md) — related

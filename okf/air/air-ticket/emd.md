@@ -22,6 +22,17 @@ aliases:
   - Electronic Miscellaneous Document
   - EMD-A
   - EMD-S
+providerTerms:
+  - provider: NDC/IATA
+    term: EMD-A / EMD-S (Resolution 725f)
+    context: 'IATA Resolution 725f defines two EMD types: EMD-Associated (EMD-A), automatically linked to a flight coupon of an e-ticket, and EMD-Standalone (EMD-S), issued for non-flight items such as residual value or deposits.'
+    context_ko: 'IATA Resolution 725f는 두 가지 EMD 유형을 정의한다: 전자항공권의 비행 쿠폰에 자동 연결되는 EMD-Associated(EMD-A)와, 잔여가치·예치금 등 비(非)비행 항목용으로 발행되는 EMD-Standalone(EMD-S).'
+    relationship: narrower
+  - provider: NDC/IATA
+    term: V-EMD (BSPlink)
+    context: 'Within IATA BSP processing, the EMD is handled and settled as the electronic document that replaced legacy paper miscellaneous documents (MCO/MPD) for BSP-accredited agents.'
+    context_ko: IATA BSP 처리에서 EMD는 BSP 인증 대리점의 기존 종이 기타서류(MCO/MPD)를 대체한 전자서류로 처리·정산된다.
+    relationship: same
 relationships:
   - type: contrasts
     targetTerm: E-ticket
@@ -73,6 +84,13 @@ There are two principal types: EMD-A (Associated), which is linked to one or mor
 두 가지 주요 유형이 있다. EMD-A(Associated)는 전자항공권의 하나 이상의 Flight Coupon에 연결되며 일반적으로 특정 항공편에 묶인 서비스(예: 유료 좌석 또는 추가 수하물)에 대해 발행된다. EMD-S(Standalone)는 Flight Coupon에 연결되지 않으며 잔여 가치, 예치금 또는 특정 구간에 묶이지 않은 서비스에 사용된다. 전자항공권과 마찬가지로 EMD는 항공사 회계 코드를 포함한 13자리 서류 번호를 가지며 쿠폰 상태를 보유한다. EMD 도입은 BSP/ARC를 통한 부가 서비스 유통 및 정산의 완전 자동화를 위한 전제 조건이다.
 
 **Aliases:** `Electronic Miscellaneous Document`, `EMD-A`, `EMD-S`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| NDC/IATA | `EMD-A / EMD-S (Resolution 725f)` | narrower | IATA Resolution 725f defines two EMD types: EMD-Associated (EMD-A), automatically linked to a flight coupon of an e-ticket, and EMD-Standalone (EMD-S), issued for non-flight items such as residual value or deposits. |
+| NDC/IATA | `V-EMD (BSPlink)` | same | Within IATA BSP processing, the EMD is handled and settled as the electronic document that replaced legacy paper miscellaneous documents (MCO/MPD) for BSP-accredited agents. |
 
 # Related
 - [E-ticket](/air/air-ticket/e-ticket.md) — contrasts

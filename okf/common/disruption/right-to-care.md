@@ -23,6 +23,12 @@ aliases:
   - Care Entitlement
   - Article 9 Care
   - Right to Assistance
+providerTerms:
+  - provider: Amadeus
+    term: Airline Disruption Management / Passenger Recovery (passenger care)
+    context: 'Amadeus''s disruption-management suite operationalizes duty-of-care during IROPS, rebooking passengers and arranging care such as conveniently located hotels, alongside meal/voucher and refund-in-voucher options through partners.'
+    context_ko: 'Amadeus의 운항차질 관리 제품군으로, IROPS 중 보호의무(duty of care)를 실무화해 승객을 재예약하고 인접 호텔 등 케어를 수배하며, 파트너를 통한 식사·바우처 및 바우처 환불 옵션을 제공한다.'
+    relationship: related
 relationships:
   - type: child
     targetTerm: EU Regulation 261/2004
@@ -70,6 +76,12 @@ Under Article 9, care obligations are triggered by qualifying delays (with thres
 Article 9에 따라 care 의무는 일정 기준을 충족하는 지연(거리 구간별로 기준 상승)과 취소에 의해 발동되며, 항공사는 과실 여부와 무관하게 능동적으로 이를 제공해야 한다. 이 때문에 정액 보상 권리를 소멸시키는 extraordinary-circumstances 항변에도 care는 존속한다. 화산재나 악천후로 항공편이 운항 중단되어도 승객은 여전히 호텔과 식사를 받는다. 이 의무는 흔히 항공사의 duty of care로 불리며, 캐나다 APPR 등 다른 제도에도 유사한 care 의무가 존재한다. Care는 환불·re-routing 권리 및 denied boarding compensation과 구별되며 그에 추가로 제공된다.
 
 **Aliases:** `Right to Care`, `Duty of Care`, `Care Entitlement`, `Article 9 Care`, `Right to Assistance`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Amadeus | `Airline Disruption Management / Passenger Recovery (passenger care)` | related | Amadeus's disruption-management suite operationalizes duty-of-care during IROPS, rebooking passengers and arranging care such as conveniently located hotels, alongside meal/voucher and refund-in-voucher options through partners. |
 
 # Related
 - [EU Regulation 261/2004](/common/disruption/eu-regulation-261-2004.md) — child

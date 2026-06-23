@@ -20,6 +20,22 @@ aliases:
   - Closed to Arrival
   - Close to Arrival
   - No Arrivals
+providerTerms:
+  - provider: OpenTravel / HTNG
+    term: RestrictionStatus Restriction="Arrival" Status="Close"
+    context: 'In OTA_HotelAvailNotifRQ ARI sync, CTA is expressed as a RestrictionStatus element with Restriction="Arrival" and Status="Close".'
+    context_ko: 'OTA_HotelAvailNotifRQ ARI 동기화에서 CTA는 Restriction="Arrival", Status="Close"인 RestrictionStatus 요소로 표현된다.'
+    relationship: same
+  - provider: Booking.com
+    term: Closed to Arrival restriction
+    context: Booking.com connectivity sets a Closed-to-Arrival restriction so reservations cannot check in on the affected date while stays through it remain allowed.
+    context_ko: 'Booking.com 커넥티비티는 해당 일자에 체크인할 수 없도록 Closed-to-Arrival 제한을 설정하고, 그 날을 통과하는 숙박은 허용한다.'
+    relationship: same
+  - provider: Expedia
+    term: Closed to Arrival (Availability & Rates API)
+    context: Expedia's Availability and Rates API requires partners to support closed-to-arrival restrictions for a single date or date range.
+    context_ko: Expedia의 Availability and Rates API는 파트너가 단일 일자 또는 기간에 대한 closed-to-arrival 제한을 지원하도록 요구한다.
+    relationship: same
 relationships:
   - type: contrasts
     targetTerm: Minimum Length of Stay (MLOS)
@@ -64,6 +80,14 @@ CTA is a yield tool applied to high-demand dates to stop short stays from consum
 CTA는 고수요 날짜에 적용되는 yield 도구로, 더 길고 수익성 높은 예약의 일부로만 팔고 싶은 밤(night)을 짧은 숙박이 소진하는 것을 막는다. 예를 들어 매진 이벤트 날짜의 전날 밤에 CTA를 걸면 고객은 단일 피크 야간만 체크인하는 대신 더 일찍 도착해 여러 박을 머물러야 한다. 도착만 막기 때문에 기존 숙박을 내보내거나 단축하지 않으며, CTA 날짜 이전에 도착해 그 날짜를 거쳐 머무는 예약은 영향을 받지 않는다. CTA는 보통 요금제·객실 유형별로 설정되어 연동(채널 매니저·CRS·GDS)을 통해 가용성 제약으로 유통된다. CTD의 도착 측 거울상이며, 피크 주변 예약 곡선을 형성하기 위해 MLOS와 자주 결합된다.
 
 **Aliases:** `Closed to Arrival`, `Close to Arrival`, `No Arrivals`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| OpenTravel / HTNG | `RestrictionStatus Restriction="Arrival" Status="Close"` | same | In OTA_HotelAvailNotifRQ ARI sync, CTA is expressed as a RestrictionStatus element with Restriction="Arrival" and Status="Close". |
+| Booking.com | `Closed to Arrival restriction` | same | Booking.com connectivity sets a Closed-to-Arrival restriction so reservations cannot check in on the affected date while stays through it remain allowed. |
+| Expedia | `Closed to Arrival (Availability & Rates API)` | same | Expedia's Availability and Rates API requires partners to support closed-to-arrival restrictions for a single date or date range. |
 
 # Related
 - [Minimum Length of Stay (MLOS)](/lodging/hotel-rate/minimum-length-of-stay-mlos.md) — contrasts

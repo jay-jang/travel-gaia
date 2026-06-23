@@ -22,6 +22,22 @@ aliases:
   - Two-Way Connectivity
   - 2-Way Connection
   - Bidirectional XML
+providerTerms:
+  - provider: HTNG
+    term: Web Services Framework (WSF) / 2-Way XML Interface
+    context: 'HTNG standardized two-way XML connectivity through its Web Services Framework, registering vendor 2-Way XML interfaces that exchange ARI outbound and reservations inbound.'
+    context_ko: 'HTNG은 Web Services Framework를 통해 양방향 XML 연결을 표준화했으며, ARI를 아웃바운드로 보내고 예약을 인바운드로 받는 벤더 2-Way XML 인터페이스를 등록한다.'
+    relationship: same
+  - provider: OpenTravel/Booking.com
+    term: OTA_HotelResNotifRQ (inbound reservation push)
+    context: The inbound half of two-way XML is realized as the OpenTravel HotelResNotif message that pushes new/modify/cancel reservations back to the hotel system.
+    context_ko: 양방향 XML의 인바운드 절반은 신규/변경/취소 예약을 호텔 시스템으로 되돌려 푸시하는 OpenTravel HotelResNotif 메시지로 구현된다.
+    relationship: narrower
+  - provider: MICROS (Oracle)
+    term: MICROS-Fidelio Exchange
+    context: MICROS introduced an early two-way XML interface (MICROS-Fidelio Exchange) delivering single image inventory between central and property systems.
+    context_ko: MICROS는 중앙과 숙소 시스템 간 단일 이미지 재고를 제공하는 초기 양방향 XML 인터페이스(MICROS-Fidelio Exchange)를 도입했다.
+    relationship: related
 relationships:
   - type: related
     targetTerm: ARI
@@ -71,6 +87,14 @@ In hotel distribution, connectivity is described by directionality. A one-way co
 호텔 유통에서 연동은 방향성으로 설명된다. 단방향 연결은 요금·재고를 채널로 내보내지만 예약은 수작업이나 별도 프로세스로 가져와야 한다. 양방향 XML 연결은 두 방향을 모두 자동화한다. ARI 업데이트가 CRS/PMS/채널 매니저에서 채널로 흐르고, 채널은 예약·수정·취소 알림을 호텔 시스템에 바로 기록되도록 반환한다. 이로써 수기 재입력, 오버부킹, 요금 오류가 줄어든다. XML 페이로드는 흔히 OpenTravel Alliance 사양(예: OTA_Hotel* 메시지)과 HTNG 구현 프로파일에 기반하며, 이는 스위치·채널 매니저·OTA·GDS 전반에서 사용되는 요청/응답 구조를 표준화한다.
 
 **Aliases:** `Two-Way Connectivity`, `2-Way Connection`, `Bidirectional XML`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| HTNG | `Web Services Framework (WSF) / 2-Way XML Interface` | same | HTNG standardized two-way XML connectivity through its Web Services Framework, registering vendor 2-Way XML interfaces that exchange ARI outbound and reservations inbound. |
+| OpenTravel/Booking.com | `OTA_HotelResNotifRQ (inbound reservation push)` | narrower | The inbound half of two-way XML is realized as the OpenTravel HotelResNotif message that pushes new/modify/cancel reservations back to the hotel system. |
+| MICROS (Oracle) | `MICROS-Fidelio Exchange` | related | MICROS introduced an early two-way XML interface (MICROS-Fidelio Exchange) delivering single image inventory between central and property systems. |
 
 # Related
 - [ARI](/lodging/hotel-dist/ari.md) — related

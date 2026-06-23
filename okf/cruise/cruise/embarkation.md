@@ -21,6 +21,12 @@ aliases:
   - Boarding
   - Embarkation Day
   - Check-in
+providerTerms:
+  - provider: Princess Cruises
+    term: OceanReady / Green Lane
+    context: 'Princess digitizes embarkation via the MedallionClass app: guests who complete all OceanReady checklist steps and ship their Medallion earn ''Green Lane'' status for expedited, document-validated boarding.'
+    context_ko: 프린세스는 메달리언클래스 앱으로 승선을 디지털화한다. OceanReady 체크리스트를 모두 마치고 메달리언을 배송받은 승객은 'Green Lane' 자격을 얻어 서류 검증 후 신속 승선한다.
+    relationship: narrower
 relationships:
   - type: narrower
     targetTerm: Muster Drill
@@ -60,6 +66,12 @@ Embarkation is a foundational operational and distribution milestone: it governs
 Embarkation은 운영·유통상의 근간이 되는 이정표이다. 한 무리의 선객을 하선시키고 몇 시간 내에 다음 무리를 승선시키는 회항일 물류를 좌우하고, 사전입국정보시스템(APIS)과 출입국 명부 수집을 추동하며, SOLAS 비상소집훈련(muster drill)을 포함한 항해의 안전 의무를 발동시킨다. 이 훈련은 출항 전 또는 출항 즉시 이루어져야 한다. 예약·체크인 시스템은 승선 날짜·항구·시간대와 필요한 신원·건강 서류를 수집하며, OpenTravel 크루즈 메시지 셋은 승선/하선 시각을 항차 정의의 일부로 표현한다.
 
 **Aliases:** `Boarding`, `Embarkation Day`, `Check-in`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Princess Cruises | `OceanReady / Green Lane` | narrower | Princess digitizes embarkation via the MedallionClass app: guests who complete all OceanReady checklist steps and ship their Medallion earn 'Green Lane' status for expedited, document-validated boarding. |
 
 # Related
 - [Muster Drill](/cruise/cruise/muster-drill.md) — narrower

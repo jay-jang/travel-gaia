@@ -20,6 +20,27 @@ standardBody: IATA
 aliases:
   - OrderCreate/OrderView
   - OrderCreateRQ/RS
+providerTerms:
+  - provider: NDC/IATA
+    term: IATA_OrderCreateRQ / IATA_OrderViewRS (21.3+)
+    context: From NDC 21.3 the OrderCreate request and its OrderView response carry the IATA_ prefix; OrderViewRS returns the booked order
+    context_ko: 'NDC 21.3부터 OrderCreate 요청과 OrderView 응답이 IATA_ 접두사를 가지며, OrderViewRS가 예약된 주문을 반환함'
+    relationship: same
+  - provider: Sabre
+    term: NDC IT OrderCreate
+    context: Sabre's NDC IT OrderCreate API converts a selected priced offer into a confirmed NDC order
+    context_ko: 선택된 가격 오퍼를 확정 NDC 주문으로 전환하는 Sabre의 NDC IT OrderCreate API
+    relationship: same
+  - provider: ATPCO
+    term: OrderCreate (returns OrderViewRS)
+    context: ATPCO's NDC OrderCreate API returns an OrderViewRS representing the created order
+    context_ko: 생성된 주문을 나타내는 OrderViewRS를 반환하는 ATPCO의 NDC OrderCreate API
+    relationship: same
+  - provider: Travelport
+    term: Reservation (Book) workflow
+    context: Travelport's JSON NDC flow creates the order via its booking/reservation endpoints after offer pricing
+    context_ko: 오퍼 가격 산정 후 예약 엔드포인트로 주문을 생성하는 Travelport JSON NDC 흐름
+    relationship: related
 relationships:
   - type: child
     targetTerm: NDC
@@ -63,6 +84,15 @@ OrderCreate references the OfferID(s) returned by OfferPrice, supplies passenger
 OrderCreate는 OfferPrice가 반환한 OfferID를 참조하고 승객 상세정보와 지불수단(form of payment)을 제공하여, 항공사의 주문 관리 시스템(OMS)이 고유한 OrderID를 가진 Order를 생성하도록 지시한다. 응답(OrderView)은 주문 상태, 주문 항목, 가격, 발행 문서를 반영한다. OrderCreate는 EDIFACT/GDS의 sell 및 PNR 생성 단계를 잇는 NDC 후계자이지만, 별도의 PNR과 티켓 레코드 대신 항공편과 부가 콘텐츠를 함께 담는 단일 Order 객체를 생성하여 ONE Order와 정합을 이룬다.
 
 **Aliases:** `OrderCreate/OrderView`, `OrderCreateRQ/RS`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| NDC/IATA | `IATA_OrderCreateRQ / IATA_OrderViewRS (21.3+)` | same | From NDC 21.3 the OrderCreate request and its OrderView response carry the IATA_ prefix; OrderViewRS returns the booked order |
+| Sabre | `NDC IT OrderCreate` | same | Sabre's NDC IT OrderCreate API converts a selected priced offer into a confirmed NDC order |
+| ATPCO | `OrderCreate (returns OrderViewRS)` | same | ATPCO's NDC OrderCreate API returns an OrderViewRS representing the created order |
+| Travelport | `Reservation (Book) workflow` | related | Travelport's JSON NDC flow creates the order via its booking/reservation endpoints after offer pricing |
 
 # Related
 - [NDC](/common/standards/ndc.md) — child

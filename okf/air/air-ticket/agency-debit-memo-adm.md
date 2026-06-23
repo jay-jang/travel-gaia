@@ -21,6 +21,17 @@ standardBody: IATA
 aliases:
   - Agency Debit Memo
   - Debit Memo
+providerTerms:
+  - provider: NDC/IATA
+    term: ADM via BSPlink
+    context: 'Airlines issue Agency Debit Memos to BSP-accredited agents through IATA''s BSPlink, which is also the channel through which agents must dispute an ADM within the dispute period.'
+    context_ko: '항공사는 IATA BSPlink를 통해 BSP 인증 대리점에 ADM을 발행하며, 대리점은 이의제기 기간 내에 BSPlink를 통해 ADM에 이의를 제기해야 한다.'
+    relationship: same
+  - provider: Sabre
+    term: ARC Memo Manager (ADM)
+    context: 'For US (ARC) travel agents, airline debit memos are issued and disputed through ARC Memo Manager instead of IATA BSPlink.'
+    context_ko: 미국(ARC) 여행 대리점의 경우 항공사 ADM이 IATA BSPlink 대신 ARC Memo Manager로 발행·분쟁 처리된다.
+    relationship: same
 relationships:
   - type: related
     targetTerm: BSP
@@ -62,6 +73,13 @@ The ADM is the recognized mechanism by which a BSP airline collects post-sale ad
 ADM은 BSP 항공사가 대리점이 발행한 항공권 및 기타 정산 가능 서류상의 불일치에 대해 인가 대리점으로부터 사후 조정 금액을 징수하는 공인 수단이다. 흔한 사유로는 운임·세금 과소 징수, 잘못된 커미션 청구, 운임 규정·fare basis 오용, 발권 오류 등이 있다. IATA 여객대리점회의 체계상 ADM은 대상 서류와 사유를 명시해야 하며, BSP 정산을 통해 금액이 차감되기 전에 대리점에게 보통 BSPlink 기준 14~15일의 이의 제기 기간이 주어진다. 항공사는 정해진 기간 내에 이의에 응답해야 한다. 반대로 항공사가 대리점에 지급해야 할 때 발행하는 대칭 문서는 ACM(Agency Credit Memo, 대리점 대변 통지서)이다.
 
 **Aliases:** `Agency Debit Memo`, `Debit Memo`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| NDC/IATA | `ADM via BSPlink` | same | Airlines issue Agency Debit Memos to BSP-accredited agents through IATA's BSPlink, which is also the channel through which agents must dispute an ADM within the dispute period. |
+| Sabre | `ARC Memo Manager (ADM)` | same | For US (ARC) travel agents, airline debit memos are issued and disputed through ARC Memo Manager instead of IATA BSPlink. |
 
 # Related
 - [BSP](/common/pay/bsp.md) — related

@@ -19,6 +19,27 @@ aliases:
   - Metasearch Engine
   - Travel Metasearch
   - Price Comparison Engine
+providerTerms:
+  - provider: Google
+    term: Google Flights / Google Hotel Ads
+    context: Google's flight and hotel metasearch surfaces compare prices across OTAs and suppliers and refer users out to book
+    context_ko: Google의 항공·호텔 메타서치 화면이 OTA·공급자 간 가격을 비교하고 사용자를 예약 사이트로 연결함
+    relationship: narrower
+  - provider: Kayak
+    term: KAYAK (with Hacker Fares)
+    context: Flight/hotel metasearch engine; Hacker Fares combine two one-ways from different carriers when cheaper than a round-trip
+    context_ko: 항공·호텔 메타서치 엔진; Hacker Fares는 왕복보다 저렴할 때 서로 다른 항공사의 편도 두 개를 결합함
+    relationship: narrower
+  - provider: Skyscanner
+    term: Skyscanner (Everywhere search)
+    context: Flight metasearch with an 'Everywhere' destination search revealing the cheapest places to fly
+    context_ko: 가장 저렴한 목적지를 보여주는 'Everywhere' 검색을 가진 항공 메타서치
+    relationship: narrower
+  - provider: Trivago
+    term: Trivago
+    context: Hotel-focused metasearch comparing room rates across booking sources and referring out to book
+    context_ko: 예약 소스 간 객실 요금을 비교하고 예약 사이트로 연결하는 호텔 중심 메타서치
+    relationship: narrower
 relationships:
   - type: contrasts
     targetTerm: OTA (Online Travel Agency)
@@ -57,6 +78,15 @@ Metasearch typically monetizes via referral fees, cost-per-click, or commission 
 메타서치는 일반적으로 거래를 직접 처리하기보다 추천 수수료, 클릭당 비용(CPC), 커미션을 통해 수익을 올리지만, 일부는 '북 온 메타서치(book-on-metasearch)' 방식의 중개 예약을 운영하기도 한다. 고객 거래를 완료하고 소유하는 OTA와는 구별된다.
 
 **Aliases:** `Metasearch Engine`, `Travel Metasearch`, `Price Comparison Engine`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Google | `Google Flights / Google Hotel Ads` | narrower | Google's flight and hotel metasearch surfaces compare prices across OTAs and suppliers and refer users out to book |
+| Kayak | `KAYAK (with Hacker Fares)` | narrower | Flight/hotel metasearch engine; Hacker Fares combine two one-ways from different carriers when cheaper than a round-trip |
+| Skyscanner | `Skyscanner (Everywhere search)` | narrower | Flight metasearch with an 'Everywhere' destination search revealing the cheapest places to fly |
+| Trivago | `Trivago` | narrower | Hotel-focused metasearch comparing room rates across booking sources and referring out to book |
 
 # Related
 - [OTA (Online Travel Agency)](/common/standards/ota-online-travel-agency.md) — contrasts

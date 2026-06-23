@@ -20,6 +20,22 @@ aliases:
   - Passenger Profile
   - Guest Profile
   - Profile
+providerTerms:
+  - provider: Oracle OPERA (PMS)
+    term: Profile (Guest Profile)
+    context: 'OPERA stores guest/company/agent Profiles holding identity, address, preferences, memberships and stay history, shareable across properties in a chain'
+    context_ko: OPERA는 신원·주소·선호·멤버십·투숙이력을 담은 게스트/회사/에이전트 프로파일을 저장하며 체인 내 호텔 간 공유한다
+    relationship: same
+  - provider: Sabre Hospitality (SynXis)
+    term: Guest Profile
+    context: SynXis Profile Management APIs synchronise Guest/Booker/Company profiles from a CRM into the platform for use in reservations and delivery to PMS/CRM
+    context_ko: SynXis 프로파일 관리 API는 CRM의 Guest/Booker/Company 프로파일을 플랫폼에 동기화해 예약 및 PMS/CRM 전달에 사용한다
+    relationship: same
+  - provider: Amadeus
+    term: Profile (PNR Profile)
+    context: 'Amadeus Profiles store reusable traveller/company data (names, FF, payment, preferences) that can be applied when building a PNR'
+    context_ko: Amadeus 프로파일은 PNR 작성 시 적용할 수 있는 재사용 가능한 여행자/회사 데이터(성명·FF·결제·선호)를 저장한다
+    relationship: same
 relationships:
   - type: contrasts
     targetTerm: PNR
@@ -68,6 +84,14 @@ Customer Profiles aggregate attributes such as name, date of birth, contact info
 Customer Profile은 이름, 생년월일, 연락처, 여행 서류 및 APIS/Secure Flight 데이터, 좌석 및 기내식 선호도, 상용 고객 번호, 결제 수단, 법인/대행사 연계 정보 같은 속성을 통합한다. 항공사 시스템에서는 개인 프로필 또는 법인 프로필일 수 있으며, 호텔에서는 PMS/CRS의 게스트 프로필이 이에 해당한다. 프로필은 GDPR Consent 같은 데이터 보호 의무의 적용을 받으며, 점차 검증된 디지털 신원(IATA One ID)에 연결되고 있다.
 
 **Aliases:** `Traveler Profile`, `Passenger Profile`, `Guest Profile`, `Profile`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Oracle OPERA (PMS) | `Profile (Guest Profile)` | same | OPERA stores guest/company/agent Profiles holding identity, address, preferences, memberships and stay history, shareable across properties in a chain |
+| Sabre Hospitality (SynXis) | `Guest Profile` | same | SynXis Profile Management APIs synchronise Guest/Booker/Company profiles from a CRM into the platform for use in reservations and delivery to PMS/CRM |
+| Amadeus | `Profile (PNR Profile)` | same | Amadeus Profiles store reusable traveller/company data (names, FF, payment, preferences) that can be applied when building a PNR |
 
 # Related
 - [PNR](/air/air-ops/pnr.md) — contrasts

@@ -20,6 +20,12 @@ standardBody: IATA
 aliases:
   - Itinerary
   - Travel Journey
+providerTerms:
+  - provider: NDC/IATA
+    term: OriginDestination
+    context: 'In NDC AirShopping the requested journey leg is the OriginDestination element (departure/arrival airport, date) against which priced Offers are returned.'
+    context_ko: 'NDC AirShopping에서 요청 여정 구간은 OriginDestination 요소(출발/도착 공항, 날짜)로 표현되며 이에 대해 가격이 매겨진 Offer가 반환된다.'
+    relationship: related
 relationships:
   - type: related
     targetTerm: Origin & Destination
@@ -70,6 +76,12 @@ A journey encompasses one or more O&Ds: a one-way journey is a single O&D, a rou
 여정은 하나 이상의 O&D를 포함한다. 편도 여정은 하나의 O&D이고, 왕복은 일반적으로 두 개의 O&D이며, 다구간(multi-city) 여행은 여러 개로 구성된다. 운임 산정 시 여정은 각각 O&D 단위로 가격이 매겨지는 운임 컴포넌트로 분해된 뒤 합산된다. NDC 쇼핑에서는 여정(또는 origin-destination 요청)이 오퍼와 주문이 생성되는 대상 여행을 정의한다. 여정은 세그먼트와 레그를 여행자의 전체 여행 관점으로 집계한다.
 
 **Aliases:** `Itinerary`, `Travel Journey`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| NDC/IATA | `OriginDestination` | related | In NDC AirShopping the requested journey leg is the OriginDestination element (departure/arrival airport, date) against which priced Offers are returned. |
 
 # Related
 - [Origin & Destination](/air/air-shop/origin-destination.md) — related

@@ -21,6 +21,22 @@ standardBody: UIC
 aliases:
   - Multiple East-West Railways Integrated Timetable Storage
   - MERITS database
+providerTerms:
+  - provider: CEN (NeTEx / Transmodel)
+    term: NeTEx Part 2 timetable exchange
+    context: NeTEx (the CEN/Transmodel-based EU timetable exchange standard) is the modern format counterpart to MERITS for stop and timetable data; MERITS data has been formally mapped to NeTEx Part 2.
+    context_ko: 'NeTEx(CEN/Transmodel 기반 EU 시각표 교환 표준)는 정류장·시각표 데이터에 대한 MERITS의 현대적 포맷 대응물이며, MERITS 데이터는 NeTEx Part 2로 공식 매핑되었다.'
+    relationship: related
+  - provider: MobilityData (GTFS)
+    term: GTFS Schedule
+    context: GTFS Schedule is the de-facto global feed format for the same timetable/stop content MERITS consolidates for European railways; it is simpler and routing-app oriented rather than full network modelling.
+    context_ko: 'GTFS Schedule은 MERITS가 유럽 철도용으로 통합하는 시각표·정류장 데이터와 동일한 내용을 담는 사실상의 글로벌 피드 포맷으로, 전체 네트워크 모델링보다 단순하고 경로탐색 앱 지향적이다.'
+    relationship: related
+  - provider: ERA TAP TSI (TD B.4)
+    term: Timetable data exchange (TD B.4)
+    context: ERA TAP TSI Technical Document B.4 is the EU regulatory specification for exchanging timetable data between rail actors — the regulated channel for the same timetable content MERITS stores.
+    context_ko: 'ERA TAP TSI 기술문서 B.4는 철도 주체 간 시각표 데이터 교환을 위한 EU 규제 명세로, MERITS가 저장하는 시각표 데이터의 규제 채널이다.'
+    relationship: related
 relationships:
   - type: related
     targetTerm: EDIFACT
@@ -64,6 +80,14 @@ MERITS (Multiple East-West Railways Integrated Timetable Storage) integrates the
 MERITS(Multiple East-West Railways Integrated Timetable Storage)는 유럽 및 일부 비유럽 국가의 수백 개 철도사업자 시각표를 통합하여, 열차 시각표와 연계 버스·선박 서비스, 그리고 좌표·서비스 속성 같은 역 데이터를 함께 담는다. 단일 교환 형식은 EDIFACT로, SKDUPD 메시지는 시각표 데이터를, TSDUPD 메시지는 역·위치 데이터를 전달한다. MERITS는 일반 소비자용 제품이 아니라 철도 회사·데이터 통합사를 위한 인프라로, UIC는 제3자 접근(예: 라이선스형 시각표·역 데이터)을 제공하고 MERITS EDIFACT 파일을 CSV로 변환하는 오픈소스 도구를 제공한다. 통합 시각표 원천으로서 여정 검색을 뒷받침하고 OSDM 같은 유통 표준의 오퍼/가용성 단계에 공급되며, 시각표가 참조하는 주체·지점을 식별하는 회사코드(RICS)·위치코드(CRD/ENEE)를 보완한다.
 
 **Aliases:** `Multiple East-West Railways Integrated Timetable Storage`, `MERITS database`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| CEN (NeTEx / Transmodel) | `NeTEx Part 2 timetable exchange` | related | NeTEx (the CEN/Transmodel-based EU timetable exchange standard) is the modern format counterpart to MERITS for stop and timetable data; MERITS data has been formally mapped to NeTEx Part 2. |
+| MobilityData (GTFS) | `GTFS Schedule` | related | GTFS Schedule is the de-facto global feed format for the same timetable/stop content MERITS consolidates for European railways; it is simpler and routing-app oriented rather than full network modelling. |
+| ERA TAP TSI (TD B.4) | `Timetable data exchange (TD B.4)` | related | ERA TAP TSI Technical Document B.4 is the EU regulatory specification for exchanging timetable data between rail actors — the regulated channel for the same timetable content MERITS stores. |
 
 # Related
 - [EDIFACT](/common/standards/edifact.md) — related

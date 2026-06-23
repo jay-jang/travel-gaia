@@ -19,6 +19,17 @@ aliases:
   - Negotiated Rate
   - Corporate Negotiated Rate
   - Company Rate
+providerTerms:
+  - provider: Oracle OPERA
+    term: Negotiated rate code (corporate)
+    context: 'OPERA stores a corporate rate as a negotiated rate code linked to a company/agent profile, often configured as a discount off a BAR/DBAR base rate.'
+    context_ko: 'OPERA는 corporate 요금을 회사·에이전트 프로파일에 연결된 negotiated 요금코드로 저장하며, 보통 BAR/DBAR 기준요금에서 할인하도록 구성한다.'
+    relationship: same
+  - provider: Sabre Hospitality
+    term: Negotiated rate (GDS corporate rate)
+    context: 'SynXis loads corporate rates as negotiated GDS rates accessed via a corporate/rate access code, subject to negotiated-rate audits.'
+    context_ko: SynXis는 corporate 요금을 corporate/rate access 코드로 접근하는 negotiated GDS 요금으로 로딩하며 negotiated-rate audit 대상이 된다.
+    relationship: same
 relationships:
   - type: child
     targetTerm: Rate Plan
@@ -74,6 +85,13 @@ Corporate rates are normally set during an annual RFP cycle and loaded as confid
 Corporate Rate는 보통 연례 RFP 절차에서 설정되며, 계약 기업의 여행사·출장자만 조회·예약할 수 있는 기밀(confidential)·채널 제한 요금으로 적재된다. GDS 유통에서는 보안 요금에 접근할 수 있는 여행사를 통제하는 rate access code(보통 3자리 식별자)로 보호되며, 이는 BAR·정부 요금 같은 공개 요금과 구별된다. 핵심 계약 변수는 LRA로, LRA가 적용되는 corporate rate는 판매 가능한 객실이 한 개라도 남아 있는 한 협정가가 보장되어야 하지만, 비LRA 요금은 수익 임계치 도달 시 마감될 수 있다. Corporate Rate는 컨소시아 요금 등 다른 협정·기밀 요금과 형제 관계이며, 객실 블록이 함께 계약될 때 Allotment와 밀접하게 관련된다.
 
 **Aliases:** `Negotiated Rate`, `Corporate Negotiated Rate`, `Company Rate`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Oracle OPERA | `Negotiated rate code (corporate)` | same | OPERA stores a corporate rate as a negotiated rate code linked to a company/agent profile, often configured as a discount off a BAR/DBAR base rate. |
+| Sabre Hospitality | `Negotiated rate (GDS corporate rate)` | same | SynXis loads corporate rates as negotiated GDS rates accessed via a corporate/rate access code, subject to negotiated-rate audits. |
 
 # Related
 - [Rate Plan](/lodging/hotel-rate/rate-plan.md) — child

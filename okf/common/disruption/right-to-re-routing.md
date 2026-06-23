@@ -22,6 +22,27 @@ aliases:
   - Right to Rerouting
   - Re-routing (EU261 Article 8)
   - Article 8 Re-routing
+providerTerms:
+  - provider: ATPCO
+    term: Category 31 (Voluntary Changes) / involuntary reissue handling
+    context: 'ATPCO fare-rule category that machine-encodes the reissue/exchange conditions airlines file; when a disruption forces re-routing, systems use airline-filed Cat 31 (with Cat 16 penalties historically) to auto-build the involuntary reissue without recomputing fare.'
+    context_ko: 항공사가 신고하는 재발행/변경 조건을 기계 판독 가능하게 코드화한 ATPCO 운임규정 카테고리. 운항 차질로 인한 재라우팅 시 시스템이 항공사가 신고한 Cat 31(과거에는 Cat 16 페널티)을 사용해 운임 재계산 없이 비자발 재발행을 자동 생성한다.
+    relationship: related
+  - provider: Amadeus
+    term: Amadeus Ticket Changer Involuntary (FXI) / Passenger Recovery & Self-Service Reaccommodation
+    context: Amadeus's involuntary reissue product (cryptic entry FXI) automatically prepares the e-ticket reissue for an involuntary rerouting after a disruption or schedule change; Passenger Recovery and Self-Service Reaccommodation rebook disrupted passengers onto alternative flights per business rules.
+    context_ko: 'Amadeus의 비자발 재발행 제품(크립틱 명령어 FXI)으로, 운항 차질·스케줄 변경 후 비자발 재라우팅에 대한 e-티켓 재발행을 자동 준비한다. Passenger Recovery 및 Self-Service Reaccommodation은 업무규칙에 따라 차질 승객을 대체편으로 재예약한다.'
+    relationship: related
+  - provider: Sabre
+    term: 'Involuntary Reissue / Automated Exchange (Reroute, Schedule Change, No Coupon)'
+    context: 'Sabre''s order-management exchange tooling handles involuntary reissues for irregular operations, with explicit Reroute, Schedule Change, and No Coupon involuntary types, auto-calculating collections/refunds using airline-filed rules.'
+    context_ko: 'Sabre의 주문관리 교환 도구로, 비정상 운항에 대한 비자발 재발행을 처리하며 Reroute·Schedule Change·No Coupon 비자발 유형을 명시적으로 지원하고 항공사 신고 규정으로 추징/환불을 자동 계산한다.'
+    relationship: related
+  - provider: NDC/IATA
+    term: AIRIMP re-accommodation (action code NI) / IROPS interline re-accommodation
+    context: 'IATA''s interline IROPS guidance specifies re-accommodation messaging via AIRIMP, using reservations action code NI to request inventory from the new operating carrier when re-routing a disrupted passenger onto a partner airline.'
+    context_ko: 'IATA의 인터라인 IROPS 지침은 AIRIMP를 통한 재수용(re-accommodation) 메시징을 규정하며, 차질 승객을 파트너 항공사로 재라우팅할 때 예약 액션코드 NI로 새 운항 항공사에 좌석 재고를 요청한다.'
+    relationship: narrower
 relationships:
   - type: parent
     targetTerm: EU Regulation 261/2004
@@ -66,6 +87,15 @@ Article 8(1) sets out three mutually exclusive options the operating air carrier
 Article 8(1)은 운항 항공사가 제공해야 하는 상호 배타적 3개 선택지를 규정한다: (a) 미탑승 구간(및 운항 목적이 사라진 경우 탑승 완료 구간 포함) 항공권 전액을 7일 이내 환불하고, 필요 시 최초 출발지로의 귀환편 제공; (b) 비교 가능한 운송 조건 하에 최종 목적지까지 가장 빠른 기회에 재경로; (c) 좌석 여유에 따라 승객이 편한 추후 일자에 최종 목적지까지 재경로. 선택권은 승객에게 있으므로, 환불 제안 없이 일방적으로 재예약하는 항공사는 이 조항을 위반할 수 있다. 동일 도시·지역을 운항하는 대체 공항으로 재경로하는 경우 후속 이동 비용은 항공사가 부담한다. 이 권리는 Article 7에 따른 정액 보상과는 별개로, 그에 더하여 적용된다.
 
 **Aliases:** `Right to Re-routing`, `Right to Rerouting`, `Re-routing (EU261 Article 8)`, `Article 8 Re-routing`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| ATPCO | `Category 31 (Voluntary Changes) / involuntary reissue handling` | related | ATPCO fare-rule category that machine-encodes the reissue/exchange conditions airlines file; when a disruption forces re-routing, systems use airline-filed Cat 31 (with Cat 16 penalties historically) to auto-build the involuntary reissue without recomputing fare. |
+| Amadeus | `Amadeus Ticket Changer Involuntary (FXI) / Passenger Recovery & Self-Service Reaccommodation` | related | Amadeus's involuntary reissue product (cryptic entry FXI) automatically prepares the e-ticket reissue for an involuntary rerouting after a disruption or schedule change; Passenger Recovery and Self-Service Reaccommodation rebook disrupted passengers onto alternative flights per business rules. |
+| Sabre | `Involuntary Reissue / Automated Exchange (Reroute, Schedule Change, No Coupon)` | related | Sabre's order-management exchange tooling handles involuntary reissues for irregular operations, with explicit Reroute, Schedule Change, and No Coupon involuntary types, auto-calculating collections/refunds using airline-filed rules. |
+| NDC/IATA | `AIRIMP re-accommodation (action code NI) / IROPS interline re-accommodation` | narrower | IATA's interline IROPS guidance specifies re-accommodation messaging via AIRIMP, using reservations action code NI to request inventory from the new operating carrier when re-routing a disrupted passenger onto a partner airline. |
 
 # Related
 - [EU Regulation 261/2004](/common/disruption/eu-regulation-261-2004.md) — parent

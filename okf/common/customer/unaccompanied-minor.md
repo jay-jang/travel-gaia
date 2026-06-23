@@ -22,6 +22,12 @@ aliases:
   - UMNR
   - UM
   - Unaccompanied Minor Service
+providerTerms:
+  - provider: IATA
+    term: SSR UMNR
+    context: 'The IATA/airline SSR UMNR code books and communicates the supervised unaccompanied-minor escort service, typically with the child''s age appended'
+    context_ko: IATA/항공사 SSR UMNR 코드는 보호자 동반 없는 미성년자 에스코트 서비스를 예약·전달하며 보통 아동 나이가 부기된다
+    relationship: same
 relationships:
   - type: related
     targetTerm: SSR
@@ -61,6 +67,12 @@ Eligible age ranges and whether the service is mandatory or optional vary by air
 대상 연령과 서비스의 의무/선택 여부는 항공사마다 다르지만 보통 5~17세 범위이며, 흔히 5-7세, 8-11세, 12-17세 같은 세부 구간으로 나뉘어 요금과 서비스 수준이 정해진다. 예약에서는 UMNR SSR로 요구사항을 전달하며 보통 어린이 나이를 나타내는 자유텍스트(예: 8세는 UM08)를 함께 입력한다. PADIS에 정의된 관련 코드 PDUM은 유료 비동반 소아 서비스를 의미한다. 항공사는 보통 아이를 배웅·인수하는 성인의 이름과 연락처도 함께 수집하며(OSI나 연락처 항목 사용), 서비스에는 문서화된 인계 절차가 따른다. 이 서비스는 승객을 어린이로 식별하는 Passenger Type Code와 밀접하게 연결된다.
 
 **Aliases:** `UMNR`, `UM`, `Unaccompanied Minor Service`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| IATA | `SSR UMNR` | same | The IATA/airline SSR UMNR code books and communicates the supervised unaccompanied-minor escort service, typically with the child's age appended |
 
 # Related
 - [SSR](/air/air-ops/ssr.md) — related

@@ -23,6 +23,17 @@ aliases:
   - Stay Length
   - Minimum Length of Stay
   - Maximum Length of Stay
+providerTerms:
+  - provider: OpenTravel / HTNG
+    term: LengthsOfStay MinMaxMessageType="SetMinLOS" / "SetMaxLOS"
+    context: OTA ARI sync expresses LOS controls via LengthOfStay elements with MinMaxMessageType SetMinLOS/SetMaxLOS (and SetForwardMinStay/SetForwardMaxStay for arrival-based).
+    context_ko: OTA ARI 동기화는 LengthOfStay 요소의 MinMaxMessageType SetMinLOS/SetMaxLOS(도착 기준은 SetForwardMinStay/SetForwardMaxStay)로 LOS 제어를 표현한다.
+    relationship: same
+  - provider: Booking.com
+    term: Min/Max stay (arrival / through)
+    context: 'Booking.com distinguishes max stay arrival (applies to check-in date only) and max stay through (applies to all nights), plus minimum stay restrictions.'
+    context_ko: Booking.com은 max stay arrival(체크인 일자에만 적용)과 max stay through(모든 숙박일에 적용)를 구분하고 최소 숙박 제한도 둔다.
+    relationship: same
 relationships:
   - type: related
     targetTerm: Rate Plan
@@ -60,6 +71,13 @@ Revenue managers use LOS restrictions to shape demand: a MinLOS requires guests 
 수익 관리자는 수요를 조정하기 위해 LOS 제약을 사용한다. MinLOS는 특정 도착일에 자격을 얻거나(또는 해당 요금을 받기) 위해 투숙객이 최소 N박을 예약하도록 요구하고, MaxLOS는 예약 가능한 기간에 상한을 둔다. 변형으로는 stay-through 로직과 상호작용하는 MinLOS Through, Closed to Arrival(CTA) / Closed to Departure(CTD)가 있다. LOS 통제는 CRS, 채널 매니저, ARI/OpenTravel 메시지에서 요금 및 가용 정보와 함께 제약 속성으로 유통된다.
 
 **Aliases:** `LOS`, `Stay Length`, `Minimum Length of Stay`, `Maximum Length of Stay`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| OpenTravel / HTNG | `LengthsOfStay MinMaxMessageType="SetMinLOS" / "SetMaxLOS"` | same | OTA ARI sync expresses LOS controls via LengthOfStay elements with MinMaxMessageType SetMinLOS/SetMaxLOS (and SetForwardMinStay/SetForwardMaxStay for arrival-based). |
+| Booking.com | `Min/Max stay (arrival / through)` | same | Booking.com distinguishes max stay arrival (applies to check-in date only) and max stay through (applies to all nights), plus minimum stay restrictions. |
 
 # Related
 - [Rate Plan](/lodging/hotel-rate/rate-plan.md) — related

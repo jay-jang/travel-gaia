@@ -21,6 +21,17 @@ aliases:
   - Involuntary Exchange
   - INVOL Reissue
   - Involuntary Rerouting
+providerTerms:
+  - provider: Amadeus
+    term: ATC Involuntary Reissue (FXI)
+    context: 'Amadeus handles carrier-caused reissues through Amadeus Ticket Changer using the involuntary pricing entry FXI, which applies involuntary rules so change penalties and fare differences are waived.'
+    context_ko: 'Amadeus는 항공사 귀책 재발행을 Amadeus Ticket Changer의 비자발적 산정 입력 FXI로 처리하며, 비자발 규정을 적용해 변경 페널티와 운임차액을 면제한다.'
+    relationship: same
+  - provider: ATPCO
+    term: Involuntary handling (vs Category 31)
+    context: 'ATPCO Category 31 governs voluntary changes; involuntary (carrier-caused) reissues fall outside its charges, instead following carrier involuntary policy/IATA Resolution 735d re-routing where penalties are waived.'
+    context_ko: 'ATPCO Category 31은 자발적 변경을 규율하며, 비자발적(항공사 귀책) 재발행은 그 요금 적용 대상이 아니라 항공사 비자발 정책/IATA Resolution 735d 재여정 규정을 따라 페널티가 면제된다.'
+    relationship: related
 relationships:
   - type: contrasts
     targetTerm: Reissue
@@ -66,6 +77,13 @@ Involuntary reissue is governed by carrier involuntary rerouting/reaccommodation
 비자발적 재발행은 항공사의 비자발적 재배정/재수용 정책 및 정시 운항 실패와 스케줄 불규칙성을 다루는 IATA 규정에 따른다. 새 항공권은 일반적으로 비자발적 성격을 증빙하기 위해 배서되며(흔히 INVOL과 같은 표기 및 운항 차질 사유에 대한 참조 포함), 동일하거나 유사한 서비스로 재배정되는 경우 추가 징수 없이 재발행된다. 이는 변경이 승객으로부터 비롯되고 운임 규정상의 위약금이 적용되는 자발적 재발행과 구별된다.
 
 **Aliases:** `Involuntary Exchange`, `INVOL Reissue`, `Involuntary Rerouting`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Amadeus | `ATC Involuntary Reissue (FXI)` | same | Amadeus handles carrier-caused reissues through Amadeus Ticket Changer using the involuntary pricing entry FXI, which applies involuntary rules so change penalties and fare differences are waived. |
+| ATPCO | `Involuntary handling (vs Category 31)` | related | ATPCO Category 31 governs voluntary changes; involuntary (carrier-caused) reissues fall outside its charges, instead following carrier involuntary policy/IATA Resolution 735d re-routing where penalties are waived. |
 
 # Related
 - [Reissue](/air/air-ticket/reissue.md) — contrasts

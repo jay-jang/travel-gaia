@@ -19,6 +19,12 @@ aliases:
   - Advance Purchase Rate
   - Prepaid Rate
   - Non-Refundable Booking
+providerTerms:
+  - provider: Booking.com
+    term: Non-refundable rate plan / policy
+    context: 'Booking.com offers non-refundable rate plans where the guest prepays and forfeits the amount on cancellation, configured via the rate plan''s cancellation policy.'
+    context_ko: Booking.com은 게스트가 선결제하고 취소 시 환불받지 못하는 non-refundable 요금제를 요금제 취소정책으로 구성해 제공한다.
+    relationship: same
 relationships:
   - type: child
     targetTerm: Rate Plan
@@ -57,6 +63,12 @@ Non-refundable rates are frequently distributed as advance-purchase products: th
 환불 불가 요금은 흔히 사전구매(advance purchase) 상품으로 유통된다. 고객은 예약 시점에 전액을 결제하고 변경·취소가 허용되지 않거나 선결제 금액을 포기해야만 가능하다. 이는 통상 도착 약 24~48시간 전까지 무료 취소를 허용하는 유연·취소가능 요금과 유연성 스펙트럼의 정반대에 위치한다. 조건은 요금제의 Cancellation Policy 및 선결제 규칙에 의해 규율되며, 할인은 고객이 그 위험을 감수하는 데 대한 대가다. 환불 불가는 여러 상품(BAR, 패키지, corporate)에 부착될 수 있는 요금 속성이며, 채널 간 rate-parity 약정과 일관되게 제시되어야 한다.
 
 **Aliases:** `Advance Purchase Rate`, `Prepaid Rate`, `Non-Refundable Booking`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Booking.com | `Non-refundable rate plan / policy` | same | Booking.com offers non-refundable rate plans where the guest prepays and forfeits the amount on cancellation, configured via the rate plan's cancellation policy. |
 
 # Related
 - [Rate Plan](/lodging/hotel-rate/rate-plan.md) — child

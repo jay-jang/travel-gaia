@@ -23,6 +23,17 @@ aliases:
   - Mass Balance Approach
   - MB
   - Mass Balance Chain of Custody
+providerTerms:
+  - provider: ISCC
+    term: ISCC EU / ISCC CORSIA mass balance (System Doc 203 Chain of Custody)
+    context: 'ISCC certification scheme implementing the mass-balance chain of custody, with attributes evidenced by a Proof of Sustainability (PoS)'
+    context_ko: 지속가능성증명서(PoS)로 속성을 입증하며 mass-balance 보관연속성을 구현하는 ISCC 인증 스킴(System Doc 203)
+    relationship: narrower
+  - provider: RSB
+    term: RSB EU RED / RSB CORSIA mass balance (Proof of Sustainability)
+    context: 'RSB certification scheme operating mass-balance custody, the default chain-of-custody model under EU RED, evidenced by a PoS'
+    context_ko: EU RED의 기본 보관연속성 모델인 mass-balance를 운영하고 PoS로 입증하는 RSB 인증 스킴
+    relationship: narrower
 relationships:
   - type: contrasts
     targetTerm: Book and Claim
@@ -59,6 +70,13 @@ Because SAF is blended and stored in the same infrastructure as fossil jet fuel,
 SAF는 화석 제트연료와 동일한 인프라에 혼합·저장되므로 개별 분자를 특정 구매자에게 추적할 수 없다. Mass Balance는 정해진 정산 기간 동안 시스템에 투입된 인증 물량과 산출물에 행정적으로 배정된 지속가능성 속성 물량이 일치하도록 요구하여 이를 조정하고 이중계상을 방지한다. ISCC, RSB 등 인증 체계가 mass-balance 관리를 운영하며, EU(ReFuelEU Aviation)와 ICAO(CORSIA)를 포함한 규제기관이 의무 이행 보고에 이를 요구한다. Mass Balance는 인증서를 연료와 동일한 물류 시스템에 물리적으로 연결된 상태로 유지한다는 점에서, 완전히 분리되는 Book and Claim과 대비된다.
 
 **Aliases:** `Mass Balance`, `Mass Balance Approach`, `MB`, `Mass Balance Chain of Custody`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| ISCC | `ISCC EU / ISCC CORSIA mass balance (System Doc 203 Chain of Custody)` | narrower | ISCC certification scheme implementing the mass-balance chain of custody, with attributes evidenced by a Proof of Sustainability (PoS) |
+| RSB | `RSB EU RED / RSB CORSIA mass balance (Proof of Sustainability)` | narrower | RSB certification scheme operating mass-balance custody, the default chain-of-custody model under EU RED, evidenced by a PoS |
 
 # Related
 - [Book and Claim](/common/sustainability/book-and-claim.md) — contrasts

@@ -22,6 +22,17 @@ aliases:
   - TCV
   - Tarif Commun International pour le transport des Voyageurs
   - Common International Tariff
+providerTerms:
+  - provider: UIC (PRIFIS → UIC-DRTF)
+    term: PRIFIS / UIC Database for Rail Tariffs and Fares (UIC-DRTF)
+    context: 'TCV through-fare/NRT tariff data is the content historically stored and distributed via UIC''s PRIFIS (Price and Fare Information Storage), redesigned in 2019 and now the UIC Database for Rail Tariffs and Fares feeding OSDM.'
+    context_ko: 'TCV 통과운임·NRT 운임 데이터는 역사적으로 UIC PRIFIS(Price and Fare Information Storage)로 저장·배포된 내용으로, 2019년 재설계되어 현재 OSDM에 공급되는 UIC-DRTF가 되었다.'
+    relationship: related
+  - provider: IATA (PTCCM)
+    term: Passenger Tariffs Conference Composite Manual (PTCCM)
+    context: 'The air-industry analogue for a common international fare/tariff framework is IATA''s PTCCM governing passenger tariff resolutions; like the TCV it standardizes cross-carrier fare definitions, but for air.'
+    context_ko: 공통 국제 운임 체계의 항공 측 대응물은 여객 운임 결의를 규율하는 IATA PTCCM이다. TCV처럼 운송인 간 운임 정의를 표준화하나 대상은 항공이다.
+    relationship: related
 relationships:
   - type: related
     targetTerm: Non-integrated Reservation Ticket (NRT)
@@ -64,6 +75,13 @@ TCV provides a standardized set of point-to-point through fares between particip
 TCV는 참여 철도사 간 표준화된 지점간 통과운임 집합을 제공하여, 국경을 넘는 단일 여정을 여러 망에 걸쳐 가격 산정·발권할 수 있게 하며, 보통 비예약(NRT 방식) 노선에 적용된다. 철도판 국제 합의 운임 기준(fare basis)처럼 작동하며, 그 통과운임은 이제 운영사 상업운임과 더불어 OSDM 같은 현대 유통 표준을 통해 노출된다.
 
 **Aliases:** `TCV`, `Tarif Commun International pour le transport des Voyageurs`, `Common International Tariff`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| UIC (PRIFIS → UIC-DRTF) | `PRIFIS / UIC Database for Rail Tariffs and Fares (UIC-DRTF)` | related | TCV through-fare/NRT tariff data is the content historically stored and distributed via UIC's PRIFIS (Price and Fare Information Storage), redesigned in 2019 and now the UIC Database for Rail Tariffs and Fares feeding OSDM. |
+| IATA (PTCCM) | `Passenger Tariffs Conference Composite Manual (PTCCM)` | related | The air-industry analogue for a common international fare/tariff framework is IATA's PTCCM governing passenger tariff resolutions; like the TCV it standardizes cross-carrier fare definitions, but for air. |
 
 # Related
 - [Non-integrated Reservation Ticket (NRT)](/ground/rail/non-integrated-reservation-ticket-nrt.md) — related

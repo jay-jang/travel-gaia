@@ -19,6 +19,12 @@ aliases:
   - Wholesale Rate
   - Nett Rate
   - Net Price
+providerTerms:
+  - provider: Expedia Group
+    term: Partner Collect / net rate
+    context: 'In Expedia''s Partner Collect model the seller pays Expedia the net rate, bills the guest, and keeps the markup — Expedia''s name for the wholesale net-rate arrangement.'
+    context_ko: Expedia의 Partner Collect 모델에서 판매자는 Expedia에 net 요금을 지불하고 게스트에게 청구하며 마크업을 가져간다. 도매 net 요금 방식을 가리키는 Expedia의 명칭이다.
+    relationship: same
 relationships:
   - type: contrasts
     targetTerm: Commissionable Rate
@@ -66,6 +72,12 @@ Net rates are the basis of the merchant/wholesale distribution model: the hotel 
 순 요금은 머천트/도매 분배 모델의 기반이다. 호텔은 합의된 순 금액을 받고 중개자는 마크업을 모두 가져간다. 이는 고객이 호텔의 공시 요금을 지불하고 대리점이 일정 비율의 커미션을 받는 에이전시/커미션 모델과 대비된다. 순 요금은 베드뱅크와 패키지/불투명 인벤토리의 핵심이며, 그것이 공개 채널로 유출되는 것은 빈번한 요금 패리티 우려 사항이다.
 
 **Aliases:** `Wholesale Rate`, `Nett Rate`, `Net Price`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Expedia Group | `Partner Collect / net rate` | same | In Expedia's Partner Collect model the seller pays Expedia the net rate, bills the guest, and keeps the markup — Expedia's name for the wholesale net-rate arrangement. |
 
 # Related
 - [Commissionable Rate](/lodging/hotel-dist/commissionable-rate.md) — contrasts

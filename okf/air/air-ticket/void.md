@@ -21,6 +21,17 @@ aliases:
   - Voiding
   - Same-Day Void
   - Ticket Void
+providerTerms:
+  - provider: Amadeus
+    term: TRDC (formerly TWX)
+    context: 'Amadeus voids a newly issued e-ticket or EMD within the same sales day using the TRDC transaction, which replaced the older TWX void entry effective January 2014.'
+    context_ko: 'Amadeus는 새로 발행한 전자항공권/EMD를 동일 판매일 내에 TRDC 트랜잭션으로 보이드하며, 이는 2014년 1월부로 기존 TWX 보이드 입력을 대체했다.'
+    relationship: same
+  - provider: Sabre
+    term: WV (Void)
+    context: 'Sabre voids a ticket or exchange with the WV command referencing the item number from the *T document list; when an exchange is voided, the original coupon status returns to REAC (reactivated).'
+    context_ko: 'Sabre는 *T 서류 목록의 항목 번호를 참조하는 WV 명령으로 항공권/교환을 보이드하며, 교환을 보이드하면 원본 쿠폰 상태가 REAC(재활성화)로 되돌아간다.'
+    relationship: same
 relationships:
   - type: related
     targetTerm: E-ticket
@@ -60,6 +71,13 @@ Voiding removes the transaction from the agent's sales report before it is bille
 Void 처리는 BSP/ARC를 통해 청구되기 전에 대리점의 판매 보고서에서 거래를 제거하므로, 환불 거래나 위약금 없이 잘못되었거나 원치 않는 발권을 되돌리는 가장 깔끔한 방법이다. Void 기한은 현지 BSP/ARC 판매 보고 기간(일반적으로 발행 당일이며 보고 기간 마감에 따름)에 의해 제한된다. 기한이 지나면 되돌리기는 대신 환불로 처리해야 한다. Void는 사용되지 않은 서류에만 적용된다.
 
 **Aliases:** `Voiding`, `Same-Day Void`, `Ticket Void`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Amadeus | `TRDC (formerly TWX)` | same | Amadeus voids a newly issued e-ticket or EMD within the same sales day using the TRDC transaction, which replaced the older TWX void entry effective January 2014. |
+| Sabre | `WV (Void)` | same | Sabre voids a ticket or exchange with the WV command referencing the item number from the *T document list; when an exchange is voided, the original coupon status returns to REAC (reactivated). |
 
 # Related
 - [E-ticket](/air/air-ticket/e-ticket.md) — related

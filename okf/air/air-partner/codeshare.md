@@ -21,6 +21,22 @@ aliases:
   - Code Share
   - Code-share Agreement
   - Codeshare Flight
+providerTerms:
+  - provider: IATA
+    term: Codeshare data element (SSIM DEI 50)
+    context: 'In the IATA Standard Schedules Information Manual, codeshare status on a flight is signaled by the presence of DEI 50, with the operating carrier carried in related data elements, and distributed to GDSs and partners.'
+    context_ko: 'IATA 표준 스케줄 정보 매뉴얼(SSIM)에서 항공편의 공동운항 여부는 DEI 50의 존재로 표시되며, 운항 항공사는 관련 데이터 요소에 담겨 GDS·파트너에 배포된다.'
+    relationship: same
+  - provider: NDC/IATA
+    term: OperatingCarrier / MarketingCarrier
+    context: 'In NDC AirShopping/Offer-Order messages each flight segment carries both a MarketingCarrier.AirlineID (the selling carrier''s code) and an OperatingCarrier.AirlineID, making the codeshare relationship explicit for disclosure.'
+    context_ko: 'NDC의 AirShopping/Offer-Order 메시지에서 각 항공 구간은 MarketingCarrier.AirlineID(판매 항공사 코드)와 OperatingCarrier.AirlineID를 함께 담아, 고지를 위해 공동운항 관계를 명시적으로 나타낸다.'
+    relationship: same
+  - provider: Amadeus
+    term: 'Code-share availability indicator ("*" wet-lease, ":" leased block)'
+    context: Amadeus cryptic availability marks code-share flights with indicators—an asterisk for wet-lease code-share (only the marketing carrier sells) and a colon for leased-block code-share—next to the availability line.
+    context_ko: '아마데우스 크립틱 가용성은 공동운항 항공편을 가용성 라인 옆 기호로 표시한다 — 별표(*)는 웻 리스 공동운항(판매 항공사만 판매), 콜론(:)은 리스드 블록 공동운항을 나타낸다.'
+    relationship: related
 relationships:
   - type: parent
     targetTerm: Marketing Carrier
@@ -89,6 +105,14 @@ Codeshare agreements let an airline extend its network and offer connectivity be
 공동운항 협정을 통해 항공사는 자사가 직접 운항하지 않는 노선까지 네트워크를 확장하고 연결편을 제공하면서도, 고객에게는 단일 항공사를 이용하는 듯한 매끄러운 경험을 제공할 수 있다. 대표적인 형태로는 free-flow/free-sale(판매 항공사가 운항 항공사의 좌석 재고에서 실시간으로 판매), block-space(판매 항공사가 고정된 좌석 블록을 매입), capacity-purchase 협정 등이 있다. 규제 당국은 일반적으로 판매 시점에 실제 운항 항공사를 승객에게 고지하도록 요구한다.
 
 **Aliases:** `Code Share`, `Code-share Agreement`, `Codeshare Flight`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| IATA | `Codeshare data element (SSIM DEI 50)` | same | In the IATA Standard Schedules Information Manual, codeshare status on a flight is signaled by the presence of DEI 50, with the operating carrier carried in related data elements, and distributed to GDSs and partners. |
+| NDC/IATA | `OperatingCarrier / MarketingCarrier` | same | In NDC AirShopping/Offer-Order messages each flight segment carries both a MarketingCarrier.AirlineID (the selling carrier's code) and an OperatingCarrier.AirlineID, making the codeshare relationship explicit for disclosure. |
+| Amadeus | `Code-share availability indicator ("*" wet-lease, ":" leased block)` | related | Amadeus cryptic availability marks code-share flights with indicators—an asterisk for wet-lease code-share (only the marketing carrier sells) and a colon for leased-block code-share—next to the availability line. |
 
 # Related
 - [Marketing Carrier](/air/air-partner/marketing-carrier.md) — parent

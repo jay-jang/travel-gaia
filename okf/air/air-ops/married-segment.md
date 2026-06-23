@@ -19,6 +19,17 @@ aliases:
   - Married Segments
   - Married Segment Logic
   - Segment Marriage
+providerTerms:
+  - provider: Amadeus
+    term: Married Segment Control
+    context: Amadeus offers Married Segment Control as an inventory product letting carriers marry connecting/codeshare segments so they must be sold and cancelled as a unit.
+    context_ko: Amadeus는 항공사가 connecting/codeshare segment를 묶어 단위로만 판매·취소되게 하는 inventory 제품으로 Married Segment Control을 제공한다.
+    relationship: same
+  - provider: ATPCO
+    term: Married Segment / O&D control logic
+    context: Carriers file fares to ATPCO while applying married-segment and origin-destination control so connecting availability differs from segment-by-segment availability.
+    context_ko: '항공사는 ATPCO에 운임을 신고하면서 married-segment 및 origin-destination control을 적용해, 연결 availability가 segment 단위 availability와 달라지게 한다.'
+    relationship: related
 relationships:
   - type: broader
     targetTerm: Segment
@@ -58,6 +69,13 @@ Carriers use married-segment logic so that availability returned for a connectio
 항공사는 연결편(출발지에서 도착지)에 반환되는 가용성이 각 지점 간 leg의 독립적인 가용성이 아니라 항공사의 O&D 수익 관리(revenue management) 결정을 반영하도록 married-segment 로직을 사용한다. 하나의 married segment를 취소하거나 분리하려는 시도, 또는 통과 여정(through journey)에 대해서만 제공되는 등급으로 별도 예약하려는 시도는 호스트 재고 시스템에 의해 거부된다. 이는 O&D 통제를 강제하고 'cross-class' 또는 married-segment 남용을 제한하는 핵심 메커니즘이다.
 
 **Aliases:** `Married Segments`, `Married Segment Logic`, `Segment Marriage`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Amadeus | `Married Segment Control` | same | Amadeus offers Married Segment Control as an inventory product letting carriers marry connecting/codeshare segments so they must be sold and cancelled as a unit. |
+| ATPCO | `Married Segment / O&D control logic` | related | Carriers file fares to ATPCO while applying married-segment and origin-destination control so connecting availability differs from segment-by-segment availability. |
 
 # Related
 - [Segment](/air/air-ops/segment.md) — broader

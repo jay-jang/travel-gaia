@@ -21,6 +21,12 @@ aliases:
   - SLI
   - Supplemental Liability Protection
   - Additional Liability Insurance
+providerTerms:
+  - provider: OpenTravel (OTA)
+    term: VCT code (Third-Party Liability / SLI)
+    context: OTA's Vehicle Coverage Type list includes third-party liability coverage codes under which supplemental liability insurance is carried in vehicle messages.
+    context_ko: 'OTA의 Vehicle Coverage Type 리스트는 third-party liability 보장 코드를 포함하며, 그 아래에 보완 책임보험(SLI)이 차량 메시지에 실린다.'
+    relationship: same
 relationships:
   - type: contrasts
     targetTerm: Loss Damage Waiver
@@ -63,6 +69,12 @@ SLI provides liability protection above the basic statutory minimum that supplie
 SLI는 공급사가 의무적으로 보유해야 하는 기본 법정 최저 한도를 넘는 배상책임 보호를 제공하며, 통상 제3자가 입은 상해·재물 손해에 대한 합산 단일 한도를 정해진 상한까지 높인다. 이는 (흔히 보험사가 인수하는) 실제 보험이며, LDW·SLI·PAI·PEC의 네 가지 표준 렌터카 보호 상품 중 하나다. SLI는 (대여 차량을 다루는) 손해 면책 및 (이용자 측 탑승자를 보장하는) PAI와 구별되며, 이미 충분한 개인 자동차보험이나 우산형 배상책임 보험을 보유한 이용자는 거절할 수 있다.
 
 **Aliases:** `Supplemental Liability Insurance`, `SLI`, `Supplemental Liability Protection`, `Additional Liability Insurance`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| OpenTravel (OTA) | `VCT code (Third-Party Liability / SLI)` | same | OTA's Vehicle Coverage Type list includes third-party liability coverage codes under which supplemental liability insurance is carried in vehicle messages. |
 
 # Related
 - [Loss Damage Waiver](/ground/car/loss-damage-waiver.md) — contrasts

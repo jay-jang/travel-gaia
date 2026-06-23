@@ -20,6 +20,17 @@ aliases:
   - Car Category
   - Vehicle Class
   - Car Type Group
+providerTerms:
+  - provider: Amadeus
+    term: Car type / pseudo code
+    context: Amadeus expresses the sellable car grouping through ACRISS car type codes plus pseudo codes that map predefined groups of vehicles a supplier sells together.
+    context_ko: 'Amadeus는 판매 가능한 차량 그룹을 ACRISS car type code와, 공급자가 묶어 파는 사전 정의 그룹을 매핑하는 pseudo code로 표현한다.'
+    relationship: related
+  - provider: OpenTravel (OTA)
+    term: VehAvailRate / Vehicle
+    context: In OTA's OTA_VehAvailRate messages the priced sellable unit is the Vehicle (carrying its ACRISS code) against which rates are returned.
+    context_ko: OTA의 OTA_VehAvailRate 메시지에서 가격이 매겨지는 판매 단위는 (ACRISS 코드를 지닌) Vehicle이며 이에 대해 요금이 반환된다.
+    relationship: related
 relationships:
   - type: related
     targetTerm: ACRISS Code
@@ -56,6 +67,13 @@ Renters book a class, not a specific car: a reservation for an 'Intermediate' or
 렌터카 이용자는 특정 차량이 아니라 등급을 예약한다. 'Intermediate'나 'Compact' 등급 예약은 해당 그룹의 차량(또는 업그레이드)을 보장하며, 이용자에게는 'or similar'로 안내된다. 각 등급은 하나 이상의 ACRISS 코드에 매핑되며, 공급사가 time-and-mileage 요금을 적재하고 가용성을 설정하며 부가요금을 적용하는 기준 레벨이다. 공급사 간 및 GDS/OTA 비교는 기저의 ACRISS 코드로 등급을 정렬하는 데 의존하므로, 차량 등급은 표준화된 차량 코드와 판매용 요금 사이에 위치한다.
 
 **Aliases:** `Car Group`, `Car Category`, `Vehicle Class`, `Car Type Group`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Amadeus | `Car type / pseudo code` | related | Amadeus expresses the sellable car grouping through ACRISS car type codes plus pseudo codes that map predefined groups of vehicles a supplier sells together. |
+| OpenTravel (OTA) | `VehAvailRate / Vehicle` | related | In OTA's OTA_VehAvailRate messages the priced sellable unit is the Vehicle (carrying its ACRISS code) against which rates are returned. |
 
 # Related
 - [ACRISS Code](/ground/car/acriss-code.md) — related

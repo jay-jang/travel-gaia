@@ -21,6 +21,17 @@ aliases:
   - GTY Cabin
   - Guaranteed Cabin
   - Category Guarantee
+providerTerms:
+  - provider: Disney Cruise Line
+    term: IGT / OGT / VGT (Inside / Oceanview / Verandah Guarantee)
+    context: 'Disney sells guarantee fares as the discounted IGT, OGT and VGT booking codes — guaranteed minimum category with line-assigned cabin, sold non-refundable with full payment at booking and no changes.'
+    context_ko: '디즈니는 보증 운임을 할인 코드 IGT·OGT·VGT로 판매한다. 최소 카테고리를 보장하되 객실은 선사가 배정하며, 환불 불가·예약 시 전액 결제·변경 불가 조건이다.'
+    relationship: same
+  - provider: Celebrity Cruises
+    term: Guarantee stateroom (Inside/Ocean View/Veranda Guarantee)
+    context: 'Celebrity offers a lower ''guarantee'' rate per broad category where the specific veranda/ocean-view/inside stateroom is assigned by the line at check-in, possibly anywhere on the ship.'
+    context_ko: '셀러브리티는 대분류별로 더 낮은 ''보증'' 요금을 제공하며, 구체적 베란다·오션뷰·인사이드 객실은 선사가 체크인 시 배의 임의 위치로 배정한다.'
+    relationship: same
 relationships:
   - type: broader
     targetTerm: Cabin Category
@@ -62,6 +73,13 @@ With a guarantee, the guest agrees to a category (e.g. 'balcony guarantee') rath
 개런티 예약에서 선객은 특정 선실이 아니라 카테고리(예: 'balcony guarantee')에 동의한다. 선사는 최소 그 카테고리 이상의 선실을 제공할 것을 확정하며, 선박을 최적으로 채우기 위해 배정을 상위 등급으로 업그레이드할 수 있다. 이를 통해 선사는 유연한 재고를 보유하며 점유율과 수익을 관리하고, 보통 그 대가로 더 낮은 운임을 제공한다. 이는 유통 시스템이 예약을 보유·확정하는 방식도 바꾼다. 예약은 카테고리 수준에서 확정되지만 선실 번호는 배정 전까지 열려 있다. 선객 입장의 절충은 선실 선택 불가, 덜 선호되는 위치 가능성, 변경 제약 등이다.
 
 **Aliases:** `Guarantee Stateroom`, `GTY Cabin`, `Guaranteed Cabin`, `Category Guarantee`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Disney Cruise Line | `IGT / OGT / VGT (Inside / Oceanview / Verandah Guarantee)` | same | Disney sells guarantee fares as the discounted IGT, OGT and VGT booking codes — guaranteed minimum category with line-assigned cabin, sold non-refundable with full payment at booking and no changes. |
+| Celebrity Cruises | `Guarantee stateroom (Inside/Ocean View/Veranda Guarantee)` | same | Celebrity offers a lower 'guarantee' rate per broad category where the specific veranda/ocean-view/inside stateroom is assigned by the line at check-in, possibly anywhere on the ship. |
 
 # Related
 - [Cabin Category](/cruise/cruise/cabin-category.md) — broader

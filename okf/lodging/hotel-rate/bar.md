@@ -20,6 +20,17 @@ aliases:
   - Best Available Rate
   - Best Available Retail Rate
   - Best Unrestricted Rate
+providerTerms:
+  - provider: Oracle OPERA
+    term: Best Available Rate (BAR) / Dynamic BAR (DBAR)
+    context: 'OPERA configures BAR by Day, BAR by LOS and Best BAR by Day, returning the lowest available rate code per room type; negotiated rates can be based on a DBAR rate code.'
+    context_ko: 'OPERA는 BAR by Day, BAR by LOS, Best BAR by Day로 구성해 룸타입별 최저 요금코드를 반환하며, 협상 요금을 DBAR 요금코드에 연동할 수 있다.'
+    relationship: same
+  - provider: Sabre Hospitality
+    term: BAR (SynXis CRS rate)
+    context: 'SynXis CRS publishes BAR as the benchmark public rate distributed across GDS, OTA and direct channels.'
+    context_ko: SynXis CRS는 BAR을 GDS·OTA·다이렉트 채널에 배포되는 기준 공개 요금으로 게시한다.
+    relationship: same
 relationships:
   - type: broader
     targetTerm: Rate Plan
@@ -76,6 +87,13 @@ BAR is the reference public rate against which other rate plans (advance purchas
 BAR은 다른 요금제(사전 구매, 패키지, 기업, 회원 요금)가 그에 맞춰 포지셔닝되는 기준 공개 요금이며, 유통 채널 전반에 걸친 rate parity 약정이 적용되는 요금인 경우가 많다. BAR은 보통 수요에 따라 매일 변하는 동적 요금이며, 등급화되거나(예: BAR1, BAR2) 숙박일수 변형과 함께 계층화될 수 있다. 이는 성과 평균이 아니라 요금제의 한 유형이다.
 
 **Aliases:** `Best Available Rate`, `Best Available Retail Rate`, `Best Unrestricted Rate`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Oracle OPERA | `Best Available Rate (BAR) / Dynamic BAR (DBAR)` | same | OPERA configures BAR by Day, BAR by LOS and Best BAR by Day, returning the lowest available rate code per room type; negotiated rates can be based on a DBAR rate code. |
+| Sabre Hospitality | `BAR (SynXis CRS rate)` | same | SynXis CRS publishes BAR as the benchmark public rate distributed across GDS, OTA and direct channels. |
 
 # Related
 - [Rate Plan](/lodging/hotel-rate/rate-plan.md) — broader

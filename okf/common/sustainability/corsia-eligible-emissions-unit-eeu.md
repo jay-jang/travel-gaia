@@ -28,6 +28,26 @@ providerTerms:
     context: VCS-issued credit type assessed by ICAO's TAB for CORSIA eligibility
     context_ko: ICAO TAB가 CORSIA 적격성을 평가하는 VCS 발행 배출권 유형
     relationship: narrower
+  - provider: Gold Standard
+    term: Verified Emission Reduction (VER)
+    context: Gold Standard-issued credit type approved by ICAO's TAB as a CORSIA Eligible Emissions Unit
+    context_ko: ICAO TAB가 CORSIA 적격 배출 단위로 승인한 Gold Standard 발행 배출권 유형(VER)
+    relationship: narrower
+  - provider: ACR
+    term: Emission Reduction Ton (ERT)
+    context: American Carbon Registry credit unit (one tonne CO2) eligible to meet CORSIA offsetting requirements
+    context_ko: 'CORSIA 상쇄 요건 충족에 적격인 American Carbon Registry 배출권 단위(1톤 CO2, ERT)'
+    relationship: narrower
+  - provider: Climate Action Reserve
+    term: Climate Reserve Tonne (CRT)
+    context: Climate Action Reserve credit unit approved by ICAO as a CORSIA Eligible Emissions Unit
+    context_ko: ICAO가 CORSIA 적격 배출 단위로 승인한 Climate Action Reserve 배출권 단위(CRT)
+    relationship: narrower
+  - provider: ART / TREES
+    term: TREES Credit
+    context: Architecture for REDD+ Transactions jurisdictional REDD+ credit approved by ICAO Council for CORSIA
+    context_ko: ICAO 이사회가 CORSIA용으로 승인한 ART의 관할권 단위 REDD+ 배출권(TREES Credit)
+    relationship: narrower
 relationships:
   - type: parent
     targetTerm: CORSIA (Carbon Offsetting and Reduction Scheme for International Aviation)
@@ -80,6 +100,10 @@ ICAO 기술자문기구(TAB)는 탄소크레딧 프로그램과 그들이 발행
 | Provider | Term | Relationship | Context |
 | --- | --- | --- | --- |
 | Verra | `Verified Carbon Unit (VCU)` | narrower | VCS-issued credit type assessed by ICAO's TAB for CORSIA eligibility |
+| Gold Standard | `Verified Emission Reduction (VER)` | narrower | Gold Standard-issued credit type approved by ICAO's TAB as a CORSIA Eligible Emissions Unit |
+| ACR | `Emission Reduction Ton (ERT)` | narrower | American Carbon Registry credit unit (one tonne CO2) eligible to meet CORSIA offsetting requirements |
+| Climate Action Reserve | `Climate Reserve Tonne (CRT)` | narrower | Climate Action Reserve credit unit approved by ICAO as a CORSIA Eligible Emissions Unit |
+| ART / TREES | `TREES Credit` | narrower | Architecture for REDD+ Transactions jurisdictional REDD+ credit approved by ICAO Council for CORSIA |
 
 # Related
 - [CORSIA (Carbon Offsetting and Reduction Scheme for International Aviation)](/common/sustainability/corsia.md) — parent

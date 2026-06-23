@@ -21,6 +21,22 @@ standardBody: IATA
 aliases:
   - Minimum Connecting Time
   - Minimum Connect Time
+providerTerms:
+  - provider: OAG
+    term: Minimum Connection Times (MCT) database
+    context: 'OAG aggregates and distributes 157,000+ industry MCTs in IATA SSIM Chapter 8 format, used by shopping/availability engines to validate legal connections.'
+    context_ko: 'OAG는 IATA SSIM 8장 포맷으로 15만7천여 개 산업 MCT를 집계·배포하며, shopping/availability 엔진이 적법 연결을 검증하는 데 쓰인다.'
+    relationship: same
+  - provider: Cirium
+    term: Minimum Connect Time data
+    context: Cirium supplies MCT reference data (domestic/international permutations per station) consumed by airline and OTA connection-building logic.
+    context_ko: 'Cirium은 station별 국내/국제 조합의 MCT 참조 데이터를 제공하며, 항공사·OTA의 연결 구성 로직이 소비한다.'
+    relationship: same
+  - provider: IATA
+    term: SSIM Chapter 8 — MCT
+    context: 'IATA SSIM Chapter 8 defines the presentation, application and transfer format for Minimum Connecting Time data.'
+    context_ko: IATA SSIM 8장은 Minimum Connecting Time 데이터의 표현·적용·전송 포맷을 정의한다.
+    relationship: broader
 relationships:
   - type: related
     targetTerm: Segment
@@ -58,6 +74,14 @@ MCT values are published by airports and carriers and aggregated by IATA in stan
 MCT 값은 공항과 항공사가 공시하고 IATA가 표준 참조 데이터로 집계하며, 예약/가용성 시스템은 연결편을 제공하기 전에 해당 연결이 정상적인지 검증하는 데 이를 사용한다. 국내-국내, 국내-국제, 국제-국제, 그리고 online(자사) 연결과 interline 연결과 같은 조합에 각각 다른 MCT가 적용된다. 적용 MCT보다 짧은 연결은 일반적으로 예약 시스템에 의해 비정상 연결(illegal connection)로 거부된다.
 
 **Aliases:** `Minimum Connecting Time`, `Minimum Connect Time`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| OAG | `Minimum Connection Times (MCT) database` | same | OAG aggregates and distributes 157,000+ industry MCTs in IATA SSIM Chapter 8 format, used by shopping/availability engines to validate legal connections. |
+| Cirium | `Minimum Connect Time data` | same | Cirium supplies MCT reference data (domestic/international permutations per station) consumed by airline and OTA connection-building logic. |
+| IATA | `SSIM Chapter 8 — MCT` | broader | IATA SSIM Chapter 8 defines the presentation, application and transfer format for Minimum Connecting Time data. |
 
 # Related
 - [Segment](/air/air-ops/segment.md) — related

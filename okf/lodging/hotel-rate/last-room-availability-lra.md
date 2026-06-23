@@ -19,6 +19,12 @@ longDef_ko: 'LRA 약정에서 호텔은 해당 객실 유형이 실제로 매진
 aliases:
   - Last Room Availability
   - LRA Rate
+providerTerms:
+  - provider: Sabre Hospitality
+    term: Last Room Availability (LRA)
+    context: 'In SynXis/GDS distribution, an LRA negotiated rate stays bookable as long as any eligible room is for sale; consortia and corporate programs typically mandate LRA.'
+    context_ko: 'SynXis/GDS 유통에서 LRA 협상 요금은 해당 객실이 하나라도 판매 중이면 예약 가능하며, 컨소시아·corporate 프로그램이 보통 LRA를 요구한다.'
+    relationship: same
 relationships:
   - type: related
     targetTerm: Corporate Rate
@@ -68,6 +74,12 @@ Under an LRA agreement the hotel commits that the negotiated rate will be offere
 LRA 약정에서 호텔은 해당 객실 유형이 실제로 매진될 때까지 협정 요금을 제공할 것을 약속하므로, 계약 기업의 출장자는 수요와 무관하게 항상 자신의 요금을 확보할 수 있다. LRA 요금은 GDS seamless(직접 양방향) 연동을 통해 유통되어 여행사나 셀프부킹툴이 보안 요금의 가용성을 실시간으로 볼 수 있다. LRA는 출장자가 고수요 날짜에 협정 가격에서 배제될 위험을 없애기 때문에 기업 호텔 계약에서 단일 조항으로 가장 가치가 높다고 평가되며, 그 대가로 호텔은 보통 NLRA 요금보다 높은 요율이나 강한 물량 약정을 요구한다. 통상 별도의 요금제가 아니라 corporate·consortia 요금에 부여되는 플래그(flag)다.
 
 **Aliases:** `Last Room Availability`, `LRA Rate`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Sabre Hospitality | `Last Room Availability (LRA)` | same | In SynXis/GDS distribution, an LRA negotiated rate stays bookable as long as any eligible room is for sale; consortia and corporate programs typically mandate LRA. |
 
 # Related
 - [Corporate Rate](/lodging/hotel-rate/corporate-rate.md) — related

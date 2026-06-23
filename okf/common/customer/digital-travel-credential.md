@@ -21,6 +21,17 @@ standardBody: ICAO
 aliases:
   - DTC
   - Digital Travel Credential (DTC)
+providerTerms:
+  - provider: ICAO
+    term: DTC-VC (Virtual Component)
+    context: ICAO names the cryptographically secured digital identity file derived from the eMRTD the DTC Virtual Component
+    context_ko: ICAO는 eMRTD에서 파생된 암호학적으로 보호되는 디지털 신원 파일을 DTC 가상 구성요소(DTC-VC)라 부른다
+    relationship: narrower
+  - provider: ICAO
+    term: DTC-PC (Physical Component)
+    context: ICAO names the medium that stores and is cryptographically bound to the DTC-VC the DTC Physical Component
+    context_ko: ICAO는 DTC-VC를 저장하고 암호학적으로 결합되는 매체를 DTC 물리 구성요소(DTC-PC)라 부른다
+    relationship: narrower
 relationships:
   - type: related
     targetTerm: IATA One ID
@@ -60,6 +71,13 @@ The DTC is intended to provide a trustworthy digital companion to, and eventuall
 DTC는 실물 여권 제시를 대체(궁극적으로) 또는 보완하는 신뢰할 수 있는 디지털 수단을 제공하여, 매끄러운 여행의 신원·생체 계층을 뒷받침하기 위한 것이다. ICAO의 고위급 지침에 따르면 모든 DTC는 가상 구성요소(DTC-VC, 여권 데이터를 암호학적으로 서명한 디지털 표현)와 물리 구성요소(DTC-PC, DTC-VC의 운반체이자 인증 수단)로 이루어진다. ICAO는 위계가 없는 세 가지 유형을 정의한다. Type 1(DTC-1)은 DTC-VC가 기존 eMRTD 칩에서 도출되고 그 eMRTD 자체가 DTC-PC 역할을 하여 실물 여권을 휴대해야 하는 형태, Type 2(DTC-2)는 발급 기관이 선택한 매체(예: 비접촉 스마트카드 또는 휴대폰)에 DTC-PC를 생성하여 DTC-VC와 결속하되 소지자가 예비용으로 eMRTD를 함께 소지하는 형태, Type 3(DTC-3)은 eMRTD 책자 없이 기관이 발급하는 자격증명으로 일부 국가가 긴급여행증명서 용도로 검토 중인 형태이다. DTC는 정부급의 권위 있는 신원 문서 규격으로, 검증된 신원을 신뢰 기반으로 활용할 수 있는 공항 여정용 항공업계 프레임워크인 IATA One ID와 구별된다.
 
 **Aliases:** `DTC`, `Digital Travel Credential (DTC)`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| ICAO | `DTC-VC (Virtual Component)` | narrower | ICAO names the cryptographically secured digital identity file derived from the eMRTD the DTC Virtual Component |
+| ICAO | `DTC-PC (Physical Component)` | narrower | ICAO names the medium that stores and is cryptographically bound to the DTC-VC the DTC Physical Component |
 
 # Related
 - [IATA One ID](/common/customer/iata-one-id.md) — related

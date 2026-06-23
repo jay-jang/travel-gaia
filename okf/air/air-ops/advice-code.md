@@ -27,6 +27,16 @@ providerTerms:
     context: 'Universal API documents advice/reply codes such as KK, KL, UC, US, UU returned by the carrier to an action request.'
     context_ko: 'Universal API는 항공사가 action 요청에 반환하는 KK, KL, UC, US, UU 같은 advice/reply 코드를 문서화한다.'
     relationship: same
+  - provider: Amadeus
+    term: 'Advice/Status code (KK, KL, UC, US, UU, HX, NO)'
+    context: 'Amadeus PNRs surface carrier replies as two-letter advice/status codes (KK confirmed, UC unable, US waitlisted) returned after an action request.'
+    context_ko: 'Amadeus PNR은 action 요청 후 반환되는 항공사 회신을 2자리 advice/status code(KK 확약, UC 불가, US waitlist)로 표시한다.'
+    relationship: same
+  - provider: Sabre
+    term: 'Status code (advice) — KK, KL, UC, US, UU, HX'
+    context: 'Sabre displays the carrier''s response codes (e.g. KK, UC) in the segment status field after processing a sell or waitlist request.'
+    context_ko: 'Sabre는 판매/waitlist 요청 처리 후 항공사의 응답 코드(예: KK, UC)를 segment status 필드에 표시한다.'
+    relationship: same
 relationships:
   - type: parent
     targetTerm: AIRIMP
@@ -74,6 +84,8 @@ Advice code는 AIRIMP의 action/advice 루프를 닫는다: seller가 action cod
 | Provider | Term | Relationship | Context |
 | --- | --- | --- | --- |
 | Travelport | `Air Status Codes (advice codes)` | same | Universal API documents advice/reply codes such as KK, KL, UC, US, UU returned by the carrier to an action request. |
+| Amadeus | `Advice/Status code (KK, KL, UC, US, UU, HX, NO)` | same | Amadeus PNRs surface carrier replies as two-letter advice/status codes (KK confirmed, UC unable, US waitlisted) returned after an action request. |
+| Sabre | `Status code (advice) — KK, KL, UC, US, UU, HX` | same | Sabre displays the carrier's response codes (e.g. KK, UC) in the segment status field after processing a sell or waitlist request. |
 
 # Related
 - [AIRIMP](/air/air-ops/airimp.md) — parent

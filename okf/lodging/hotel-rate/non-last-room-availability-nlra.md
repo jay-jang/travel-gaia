@@ -20,6 +20,12 @@ aliases:
   - Non-Last Room Availability
   - Non-LRA
   - NLRA Rate
+providerTerms:
+  - provider: Sabre Hospitality
+    term: Non-Last Room Availability (NLRA / non-LRA)
+    context: 'In SynXis/GDS distribution, an NLRA negotiated rate is offered at the property''s discretion and may be closed during peak periods to yield higher rates.'
+    context_ko: SynXis/GDS 유통에서 NLRA 협상 요금은 property 재량으로 제공되며 성수기에 닫아 더 높은 요금을 받을 수 있다.
+    relationship: same
 relationships:
   - type: related
     targetTerm: Corporate Rate
@@ -64,6 +70,12 @@ With an NLRA agreement the negotiated rate is available at the hotel's discretio
 NLRA 약정에서는 협정 요금이 호텔 재량으로 제공된다. 재고가 빠듯해지거나 수요가 급증하면 호텔은 해당 요금을 닫고 남은 객실을 더 높은 공개·BAR 가격으로 판매해 yield를 보호할 수 있다. NLRA는 마지막 객실 보장이 없으므로 호텔은 LRA보다 낮은 표시 요금을 제시할 수 있으며, 그래서 NLRA는 중간 물량의 기업·컨소시엄·TMC 프로그램에서 더 흔하고 저렴한 방식이다. LRA와 NLRA 중 무엇을 택할지는 연례 호텔 RFP의 핵심 협상 지렛대로, 구매자는 매진 날짜의 접근 보장 때문에 LRA를 선호하고 호텔은 수익 관리 통제권 유지를 위해 NLRA를 선호한다. LRA와 마찬가지로 NLRA도 보통 독립 요금제가 아니라 협정 요금의 속성으로 표현된다.
 
 **Aliases:** `Non-Last Room Availability`, `Non-LRA`, `NLRA Rate`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Sabre Hospitality | `Non-Last Room Availability (NLRA / non-LRA)` | same | In SynXis/GDS distribution, an NLRA negotiated rate is offered at the property's discretion and may be closed during peak periods to yield higher rates. |
 
 # Related
 - [Corporate Rate](/lodging/hotel-rate/corporate-rate.md) — related

@@ -20,6 +20,12 @@ standardBody: IATA
 aliases:
   - Marketing Airline
   - Selling Carrier
+providerTerms:
+  - provider: NDC/IATA
+    term: MarketingCarrier.AirlineID
+    context: 'In NDC messages the marketing carrier is represented by the MarketingCarrier element (AirlineID), the code under which the segment is sold, distinct from the OperatingCarrier element on each flight segment.'
+    context_ko: 'NDC 메시지에서 판매 항공사는 MarketingCarrier 요소(AirlineID)로 표현되며, 이는 구간이 판매되는 코드로서 각 항공 구간의 OperatingCarrier 요소와 구별된다.'
+    relationship: same
 relationships:
   - type: contrasts
     targetTerm: Operating Carrier
@@ -62,6 +68,12 @@ In a codeshare relationship the marketing carrier is the airline placing its cod
 공동운항 관계에서 판매 항공사는 누가 항공기를 운항하는지와 무관하게 자사의 코드를 항공편에 부여하는 항공사다. 승객이 예약 시 보게 되는 것은 판매 항공사의 편명이며, 고지 규정에 따라 그 기반이 되는 운항 항공사를 승객에게 알려야 한다. 판매 항공사는 발권 항공사(validating carrier), 즉 항공권 발권에 그 항공권 양식과 회계가 사용되는 항공사와는 구별된다.
 
 **Aliases:** `Marketing Airline`, `Selling Carrier`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| NDC/IATA | `MarketingCarrier.AirlineID` | same | In NDC messages the marketing carrier is represented by the MarketingCarrier element (AirlineID), the code under which the segment is sold, distinct from the OperatingCarrier element on each flight segment. |
 
 # Related
 - [Operating Carrier](/air/air-partner/operating-carrier.md) — contrasts

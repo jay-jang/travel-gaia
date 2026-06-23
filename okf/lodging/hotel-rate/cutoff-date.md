@@ -19,6 +19,12 @@ aliases:
   - Cut-off Date
   - Block Cutoff
   - Release Date (group)
+providerTerms:
+  - provider: Oracle OPERA
+    term: Block Cutoff (cutoff date / cutoff days)
+    context: OPERA's Block Cutoff releases unpicked-up rooms held in a block allocation on or before the cutoff date set on the block header or per room type/date.
+    context_ko: OPERA의 Block Cutoff은 블록 헤더 또는 룸타입·일자별로 설정한 cutoff 일자 이전에 pickup되지 않은 블록 객실을 반환한다.
+    relationship: same
 relationships:
   - type: parent
     targetTerm: Group Block
@@ -58,6 +64,12 @@ The cutoff date is the central inventory-control lever of a group room block agr
 컷오프 날짜는 그룹 객실 블록 계약의 핵심 재고 통제 수단으로, 보통 도착 며칠~몇 주 전으로 설정된다. 그룹이 픽업하지 않은 객실을 호텔이 회수해 일반(transient) 또는 다른 그룹 수요에 재판매할 수 있게 하여 호텔의 위험 노출을 제한한다. 흔히 attrition·wash 조항과 함께 쓰이며, 컷오프 이전에 워시 팩터로 블록을 줄이고 attrition 조항이 최종 픽업 미달 시 위약 책임을 규정한다. 컷오프가 너무 늦으면 미판매 재고가 묶이고, 너무 이르면 실제 참석자가 협상 요금을 받지 못할 수 있다.
 
 **Aliases:** `Cut-off Date`, `Block Cutoff`, `Release Date (group)`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Oracle OPERA | `Block Cutoff (cutoff date / cutoff days)` | same | OPERA's Block Cutoff releases unpicked-up rooms held in a block allocation on or before the cutoff date set on the block header or per room type/date. |
 
 # Related
 - [Group Block](/lodging/hotel-rate/group-block.md) — parent

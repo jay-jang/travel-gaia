@@ -27,6 +27,11 @@ providerTerms:
     context: 'Amadeus publishes cryptic coupon status codes such as O (Open for use), F (Flown/used), and E (Exchanged) in the e-ticket record.'
     context_ko: 'Amadeus는 전자 항공권 기록에 O(Open for use), F(Flown/used), E(Exchanged) 등의 크립틱 쿠폰 상태 코드를 게시한다.'
     relationship: same
+  - provider: NDC/IATA
+    term: CouponInfo/Status (TicketDocInfo)
+    context: 'In NDC OrderViewRS, each flight/value coupon''s lifecycle state is exposed in the TicketDocument''s CouponInfo/Status element (e.g., ''E'' for Exchanged/reissued), letting NDC agents see open, flown, refunded, or voided states.'
+    context_ko: 'NDC OrderViewRS에서 각 비행/가치 쿠폰의 상태는 TicketDocument의 CouponInfo/Status 요소(예: 교환/재발행 시 ''E'')로 노출되어, NDC 대리점이 open·flown·refunded·voided 상태를 확인할 수 있다.'
+    relationship: same
 relationships:
   - type: broader
     targetTerm: Flight Coupon
@@ -79,6 +84,7 @@ Each flight coupon on an e-ticket carries a status that changes as the coupon mo
 | Provider | Term | Relationship | Context |
 | --- | --- | --- | --- |
 | Amadeus | `E-ticket coupon status codes` | same | Amadeus publishes cryptic coupon status codes such as O (Open for use), F (Flown/used), and E (Exchanged) in the e-ticket record. |
+| NDC/IATA | `CouponInfo/Status (TicketDocInfo)` | same | In NDC OrderViewRS, each flight/value coupon's lifecycle state is exposed in the TicketDocument's CouponInfo/Status element (e.g., 'E' for Exchanged/reissued), letting NDC agents see open, flown, refunded, or voided states. |
 
 # Related
 - [Flight Coupon](/air/air-ticket/flight-coupon.md) — broader

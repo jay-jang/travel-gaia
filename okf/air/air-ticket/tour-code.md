@@ -25,6 +25,11 @@ providerTerms:
     context: Amadeus captures the tour code in the FT element of the PNR; codes beginning with BT or IT are limited to 14 characters and drive the masked BT/IT fare display on the ticket.
     context_ko: 'Amadeus는 tour code를 PNR의 FT element에 담는다. BT 또는 IT로 시작하는 코드는 14자로 제한되며, 항공권의 가려진 BT/IT 운임 표시를 제어한다.'
     relationship: narrower
+  - provider: Travelport
+    term: Tour Code (TC) / BT / IT modifier
+    context: 'In Travelport (Galileo/Apollo/Worldspan), the Tour Code is added to the filed fare as a TC modifier, with BT (bulk) or IT (inclusive tour) indicators printed in the ticket''s fare/tour-code area for net and bulk fares.'
+    context_ko: 'Travelport(Galileo/Apollo/Worldspan)에서 Tour Code는 filed fare에 TC 수정자로 추가되며, 네트/벌크 운임의 경우 BT(벌크) 또는 IT(포괄여행) 표시가 항공권 운임/투어코드 영역에 인쇄된다.'
+    relationship: same
 relationships:
   - type: related
     targetTerm: Negotiated Fare
@@ -72,6 +77,7 @@ Issued by the airline, the tour code represents a commercial agreement between t
 | Provider | Term | Relationship | Context |
 | --- | --- | --- | --- |
 | Amadeus | `Tour code (FT) element` | narrower | Amadeus captures the tour code in the FT element of the PNR; codes beginning with BT or IT are limited to 14 characters and drive the masked BT/IT fare display on the ticket. |
+| Travelport | `Tour Code (TC) / BT / IT modifier` | same | In Travelport (Galileo/Apollo/Worldspan), the Tour Code is added to the filed fare as a TC modifier, with BT (bulk) or IT (inclusive tour) indicators printed in the ticket's fare/tour-code area for net and bulk fares. |
 
 # Related
 - [Negotiated Fare](/air/air-shop/negotiated-fare.md) — related

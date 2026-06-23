@@ -20,6 +20,17 @@ aliases:
   - Central Reservation System
   - Central Reservations System
   - Hotel CRS
+providerTerms:
+  - provider: Sabre Hospitality
+    term: SynXis Central Reservations
+    context: 'SynXis CR is Sabre Hospitality''s hotel CRS that holds central inventory/rates and distributes ARI plus receives reservations across GDS, OTA, and brand.com channels.'
+    context_ko: 'SynXis CR은 Sabre Hospitality의 호텔 CRS로, 중앙 재고/요금을 보유하고 ARI를 배포하며 GDS·OTA·브랜드닷컴 채널 전반에서 예약을 수신한다.'
+    relationship: same
+  - provider: OpenTravel/HTNG
+    term: OTA_HotelResNotifRQ (CRS reservation delivery)
+    context: Standards bodies define CRS-to-PMS reservation delivery via the OpenTravel/HTNG HotelResNotif message that pushes new/modify/cancel bookings from the central system.
+    context_ko: 표준 단체들은 중앙 시스템에서 신규/변경/취소 예약을 푸시하는 OpenTravel/HTNG HotelResNotif 메시지를 통해 CRS-PMS 간 예약 전달을 정의한다.
+    relationship: related
 relationships:
   - type: related
     targetTerm: PMS
@@ -81,6 +92,13 @@ A hotel CRS centralizes ARI (availability, rates, inventory) for one or many pro
 호텔 CRS는 하나 또는 여러 객실의 ARI(가용성, 요금, 인벤토리)를 중앙화하며, 상류로는 수요 채널(브랜드 닷컴 예약 엔진, GDS, OTA, 메타서치)과, 하류로는 자산 운영 시스템과 연결된다. 이는 현장 운영을 담당하는 PMS와 구별되며, 예약은 일반적으로 CRS에서 PMS로 흘러 이행(fulfillment)된다. 다수의 온라인 채널로의 분배는 흔히 채널 매니저(Channel Manager)와 함께 또는 이를 통해 처리된다.
 
 **Aliases:** `Central Reservation System`, `Central Reservations System`, `Hotel CRS`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Sabre Hospitality | `SynXis Central Reservations` | same | SynXis CR is Sabre Hospitality's hotel CRS that holds central inventory/rates and distributes ARI plus receives reservations across GDS, OTA, and brand.com channels. |
+| OpenTravel/HTNG | `OTA_HotelResNotifRQ (CRS reservation delivery)` | related | Standards bodies define CRS-to-PMS reservation delivery via the OpenTravel/HTNG HotelResNotif message that pushes new/modify/cancel bookings from the central system. |
 
 # Related
 - [PMS](/lodging/hotel-dist/pms.md) — related

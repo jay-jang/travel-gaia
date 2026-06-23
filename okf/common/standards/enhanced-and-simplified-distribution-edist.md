@@ -23,6 +23,17 @@ aliases:
   - Enhanced and Simplified Distribution
   - NDC EDIST
   - EDIST XML
+providerTerms:
+  - provider: Sabre
+    term: Sabre NDC IT (NDC-IT) message suite
+    context: 'Sabre implements the EDIST/NDC message family (AirShopping, OfferPrice, OrderCreate, etc.) through its NDC IT APIs'
+    context_ko: Sabre는 NDC IT API를 통해 EDIST/NDC 메시지 패밀리(AirShopping·OfferPrice·OrderCreate 등)를 구현함
+    relationship: narrower
+  - provider: ATPCO
+    term: ATPCO NDC Solutions (OrderViewRS/OrderCreate)
+    context: ATPCO's NDC developer APIs implement the EDIST message schemas for offers and orders
+    context_ko: ATPCO의 NDC 개발자 API가 오퍼·주문용 EDIST 메시지 스키마를 구현함
+    relationship: narrower
 relationships:
   - type: child
     targetTerm: Passenger and Airport Data Interchange Standards (PADIS)
@@ -71,6 +82,13 @@ Enhanced Distribution messages cover shopping, ordering, and managing offers and
 Enhanced Distribution 메시지는 (항공권 유무와 무관하게) 오퍼와 주문의 조회·주문·관리를 다루고, Simplified Distribution 메시지는 항공권 없는 주문, 서비싱, 회계, 결제, 환불(ONE Order 측면)을 다룬다. EDIST 스키마는 PADIS 거버넌스(PSC 결의 783)와 PADIS 발행 절차·릴리스 일정에 따라 발행되며 AIDM에 정렬된다.
 
 **Aliases:** `EDIST`, `Enhanced and Simplified Distribution`, `NDC EDIST`, `EDIST XML`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Sabre | `Sabre NDC IT (NDC-IT) message suite` | narrower | Sabre implements the EDIST/NDC message family (AirShopping, OfferPrice, OrderCreate, etc.) through its NDC IT APIs |
+| ATPCO | `ATPCO NDC Solutions (OrderViewRS/OrderCreate)` | narrower | ATPCO's NDC developer APIs implement the EDIST message schemas for offers and orders |
 
 # Related
 - [Passenger and Airport Data Interchange Standards (PADIS)](/common/standards/passenger-and-airport-data-interchange-standards-padis.md) — child

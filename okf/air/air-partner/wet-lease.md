@@ -21,6 +21,17 @@ aliases:
   - ACMI Lease
   - ACMI
   - Wet Leasing
+providerTerms:
+  - provider: IATA
+    term: ACMI lease
+    context: 'Industry term for a wet lease: the lessor provides Aircraft, Crew, Maintenance, and Insurance (ACMI) and operates under its own AOC, with the lessee paying typically per block hour operated.'
+    context_ko: '웻 리스의 업계 용어: 임대인이 항공기(Aircraft)·승무원(Crew)·정비(Maintenance)·보험(Insurance), 즉 ACMI를 제공하고 자사 AOC로 운항하며, 임차인은 통상 운항 블록 아워당 비용을 지불한다.'
+    relationship: same
+  - provider: EASA
+    term: Wet lease-in (ORO.AOC.110)
+    context: 'Under EASA rules (e.g., ORO.AOC.110) a wet lease-in must be approved by the relevant national aviation authority, and the lessee''s compliance function oversees the lessor''s AOC, crew qualifications, insurance, and maintenance approvals.'
+    context_ko: 'EASA 규정(예: ORO.AOC.110)에 따라 웻 리스-인은 관할 국가항공당국의 승인을 받아야 하며, 임차인의 준법 기능이 임대인의 AOC·승무원 자격·보험·정비 승인을 감독한다.'
+    relationship: related
 relationships:
   - type: related
     targetTerm: Operating Carrier
@@ -58,6 +69,13 @@ Wet lease is also known as ACMI for the four elements the lessor supplies: Aircr
 웻 리스는 임대인이 공급하는 네 가지 요소, 즉 항공기(Aircraft), 승무원(Crew), 정비(Maintenance), 보험(Insurance)을 따서 ACMI라고도 한다. 임대인이 AOC와 운항 통제권을 보유하므로 여객 관점에서는 임대인이 운항 항공사이며, 임차인은 해당 항공편이 그 코드로 판매되는 판매 항공사 역할을 한다. 웻 리스는 임시 공급력 추가, 계절 성수기 대응, 운항 정지된 항공기 대체, 노선의 신속한 개설 등에 사용된다. 이는 임대인이 항공기만 제공하고 임차인이 자체 승무원·정비·보험을 갖추어 자사 AOC 하에 운항하는 드라이 리스(dry lease)와 대비된다.
 
 **Aliases:** `ACMI Lease`, `ACMI`, `Wet Leasing`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| IATA | `ACMI lease` | same | Industry term for a wet lease: the lessor provides Aircraft, Crew, Maintenance, and Insurance (ACMI) and operates under its own AOC, with the lessee paying typically per block hour operated. |
+| EASA | `Wet lease-in (ORO.AOC.110)` | related | Under EASA rules (e.g., ORO.AOC.110) a wet lease-in must be approved by the relevant national aviation authority, and the lessee's compliance function oversees the lessor's AOC, crew qualifications, insurance, and maintenance approvals. |
 
 # Related
 - [Operating Carrier](/air/air-partner/operating-carrier.md) — related

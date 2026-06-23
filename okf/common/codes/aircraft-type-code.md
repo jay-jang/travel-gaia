@@ -29,6 +29,16 @@ providerTerms:
     context: OAG schedule data carries IATA (3-char) and ICAO (4-char) equipment codes plus an OAG recommended type
     context_ko: OAG 스케줄 데이터는 IATA(3자리)·ICAO(4자리) 장비 코드와 OAG 권장 기종을 함께 제공한다
     relationship: related
+  - provider: IATA
+    term: IATA aircraft type designator (3-char)
+    context: '3-character commercial code reflecting marketable variant (e.g., 738, 388); used in schedules, GDS availability and ticketing.'
+    context_ko: '판매 가능한 형식 변형을 반영하는 3자리 상업용 코드(예: 738, 388)로 스케줄·GDS 좌석조회·발권에 사용된다.'
+    relationship: narrower
+  - provider: ICAO (Doc 8643)
+    term: ICAO aircraft type designator (2-4 char)
+    context: 'Technical designator from ICAO Doc 8643 (e.g., B738, A388) used in flight plans and ATC rather than commercial distribution.'
+    context_ko: 'ICAO Doc 8643의 기술 지정자(예: B738, A388)로 상업 유통이 아닌 비행계획·ATC에 사용된다.'
+    relationship: related
 relationships:
   - type: broader
     targetTerm: IATA Code
@@ -82,6 +92,8 @@ IATA 항공기 기종 지정 코드는 3자리이며, 스케줄·표시 화면·
 | Provider | Term | Relationship | Context |
 | --- | --- | --- | --- |
 | OAG | `Equipment / Aircraft Type` | related | OAG schedule data carries IATA (3-char) and ICAO (4-char) equipment codes plus an OAG recommended type |
+| IATA | `IATA aircraft type designator (3-char)` | narrower | 3-character commercial code reflecting marketable variant (e.g., 738, 388); used in schedules, GDS availability and ticketing. |
+| ICAO (Doc 8643) | `ICAO aircraft type designator (2-4 char)` | related | Technical designator from ICAO Doc 8643 (e.g., B738, A388) used in flight plans and ATC rather than commercial distribution. |
 
 # Related
 - [IATA Code](/common/codes/iata-code.md) — broader

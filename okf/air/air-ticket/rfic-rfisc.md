@@ -24,6 +24,12 @@ aliases:
   - RFIC
   - RFISC
   - Optional Services Industry Sub Code
+providerTerms:
+  - provider: ATPCO
+    term: Optional Services Industry Sub Codes
+    context: ATPCO is the official source that publishes and maintains the Optional Services industry sub codes (RFISC) that qualify each service within its RFIC group; sub codes 98x/99x are reserved per IATA Resolution 722f.
+    context_ko: 'ATPCO는 RFIC 그룹 내 각 서비스를 한정하는 Optional Services 산업 서브코드(RFISC)를 발행·관리하는 공식 소스이며, 98x/99x 서브코드는 IATA Resolution 722f에 따라 예약(reserved)되어 있다.'
+    relationship: same
 relationships:
   - type: related
     targetTerm: EMD
@@ -63,6 +69,12 @@ The RFIC is a single-byte code grouping the reason for issuing an EMD into broad
 RFIC는 EMD 발행 사유를 큰 산업 분류로 묶는 1바이트 코드로, 일반적으로 A 항공 운송, B 지상 운송/비항공 서비스, C 수하물, D 재무적 영향(예: 예약/변경 수수료, 환불 가능 잔액), E 공항 서비스, F 상품, G 기내 서비스로 구성된다. 각 그룹 내에서 RFISC는 특정 선택 서비스를 명명하는 3자리 코드이다. RFISC 값은 ATPCO가 관장하며, 누구나 사용할 수 있는 Optional Services Industry Sub Codes를 발행하는 한편 항공사는 자체 코드를 신고할 수도 있다. 일부 산업 예약 세부 코드(98x/99x 대역)는 IATA 여객서비스회의(PSC) 결의(Resolution 722f)로 정의된다. RFIC/RFISC 쌍은 유료 수하물, 좌석, 서비스 수수료가 기계적으로 분류되어 BSP/ARC를 통해 올바르게 정산되도록 하므로, NDC 환경의 부가 서비스 유통과 EMD 처리의 토대가 된다.
 
 **Aliases:** `Reason for Issuance Code`, `Reason for Issuance Sub Code`, `RFIC`, `RFISC`, `Optional Services Industry Sub Code`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| ATPCO | `Optional Services Industry Sub Codes` | same | ATPCO is the official source that publishes and maintains the Optional Services industry sub codes (RFISC) that qualify each service within its RFIC group; sub codes 98x/99x are reserved per IATA Resolution 722f. |
 
 # Related
 - [EMD](/air/air-ticket/emd.md) — related

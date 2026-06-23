@@ -19,6 +19,27 @@ aliases:
   - Content Aggregator
   - Inventory Aggregator
   - Travel Aggregator
+providerTerms:
+  - provider: NDC/IATA
+    term: NDC aggregator
+    context: 'In NDC distribution, aggregators consolidate many airlines'' NDC connections into a single API so travel sellers integrate once instead of carrier-by-carrier'
+    context_ko: NDC 유통에서 애그리게이터는 여러 항공사의 NDC 연결을 단일 API로 통합해 여행 판매자가 항공사별로 연결하지 않고 한 번만 연동하도록 함
+    relationship: narrower
+  - provider: Duffel
+    term: Duffel (NDC aggregator/API)
+    context: Pure-play NDC aggregator providing a single API over many airlines' NDC content for travel sellers
+    context_ko: 여러 항공사 NDC 콘텐츠를 단일 API로 제공하는 전문 NDC 애그리게이터
+    relationship: narrower
+  - provider: Travelfusion
+    term: Travelfusion
+    context: Long-established aggregator consolidating LCC and NDC supplier content into one connection
+    context_ko: LCC 및 NDC 공급자 콘텐츠를 하나의 연결로 통합하는 오래된 애그리게이터
+    relationship: narrower
+  - provider: Verteil / AirGateway
+    term: 'Verteil, AirGateway'
+    context: NDC aggregator technology providers that normalize content and sit between airlines and travel sellers
+    context_ko: 콘텐츠를 정규화하여 항공사와 여행 판매자 사이에 위치하는 NDC 애그리게이터 기술 제공자
+    relationship: narrower
 relationships:
   - type: related
     targetTerm: GDS Bypass
@@ -69,6 +90,15 @@ Aggregators reduce integration overhead by giving sellers one connection to reac
 애그리게이터는 판매자에게 단일 연결로 여러 공급사에 도달할 수 있게 하여 연동 부담을 줄이며, 서로 다른 형식(EDIFACT, NDC, OpenTravel, 자체 API)을 하나의 통합 인터페이스로 정규화한다. 호텔 베드뱅크가 대표적인 애그리게이터 유형이며, NDC 애그리게이터는 여러 항공사의 NDC 연결을 여행 판매자를 위해 통합한다.
 
 **Aliases:** `Content Aggregator`, `Inventory Aggregator`, `Travel Aggregator`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| NDC/IATA | `NDC aggregator` | narrower | In NDC distribution, aggregators consolidate many airlines' NDC connections into a single API so travel sellers integrate once instead of carrier-by-carrier |
+| Duffel | `Duffel (NDC aggregator/API)` | narrower | Pure-play NDC aggregator providing a single API over many airlines' NDC content for travel sellers |
+| Travelfusion | `Travelfusion` | narrower | Long-established aggregator consolidating LCC and NDC supplier content into one connection |
+| Verteil / AirGateway | `Verteil, AirGateway` | narrower | NDC aggregator technology providers that normalize content and sit between airlines and travel sellers |
 
 # Related
 - [GDS Bypass](/common/standards/gds-bypass.md) — related

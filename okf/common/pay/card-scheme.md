@@ -25,6 +25,11 @@ providerTerms:
     context: 'The interbank network operating the rules, switching and interchange between issuers and acquirers'
     context_ko: 발급사와 매입사 사이의 규칙·스위칭·인터체인지를 운영하는 은행 간 네트워크
     relationship: same
+  - provider: American Express
+    term: American Express (closed-loop network)
+    context: 'Unlike Visa/Mastercard''s four-party model, Amex traditionally operates a closed-loop scheme acting as both issuer and acquirer.'
+    context_ko: Visa/Mastercard의 4당사자 모델과 달리 Amex는 전통적으로 발급사이자 매입사 역할을 동시에 하는 폐쇄형(closed-loop) 스킴으로 운영된다.
+    relationship: narrower
 relationships:
   - type: contrasts
     targetTerm: Acquirer
@@ -72,6 +77,7 @@ In the four-party (four-corner) model the card scheme sits between the issuer (t
 | Provider | Term | Relationship | Context |
 | --- | --- | --- | --- |
 | Visa / Mastercard | `Card Network / Scheme` | same | The interbank network operating the rules, switching and interchange between issuers and acquirers |
+| American Express | `American Express (closed-loop network)` | narrower | Unlike Visa/Mastercard's four-party model, Amex traditionally operates a closed-loop scheme acting as both issuer and acquirer. |
 
 # Related
 - [Acquirer](/common/pay/acquirer.md) — contrasts

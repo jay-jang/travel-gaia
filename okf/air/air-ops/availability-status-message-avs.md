@@ -28,6 +28,11 @@ providerTerms:
     context: 'Carriers participate with a GDS at an AVS (cached, status-message-driven) level or at higher real-time levels such as direct access or last-seat availability.'
     context_ko: 항공사는 GDS와 AVS(캐시·status 메시지 기반) 수준 또는 direct access·last-seat availability 같은 상위 실시간 수준으로 participation한다.
     relationship: related
+  - provider: Travelport
+    term: AVS / NAVS (Numeric AVS)
+    context: 'Carriers push AVS and Numeric AVS (NAVS) messages 24/7 to Travelport, which populate its in-house AVS/NAVS availability database used when direct-access is unavailable.'
+    context_ko: '항공사는 AVS와 Numeric AVS(NAVS) 메시지를 24/7로 Travelport에 push하며, 이는 direct-access가 없을 때 사용되는 자체 AVS/NAVS availability DB를 채운다.'
+    relationship: narrower
 relationships:
   - type: parent
     targetTerm: AIRIMP
@@ -80,6 +85,7 @@ AVS('availability status') 방식에서 항공사 inventory 시스템은 availab
 | Provider | Term | Relationship | Context |
 | --- | --- | --- | --- |
 | GDS (industry) | `AVS / non-AVS participation` | related | Carriers participate with a GDS at an AVS (cached, status-message-driven) level or at higher real-time levels such as direct access or last-seat availability. |
+| Travelport | `AVS / NAVS (Numeric AVS)` | narrower | Carriers push AVS and Numeric AVS (NAVS) messages 24/7 to Travelport, which populate its in-house AVS/NAVS availability database used when direct-access is unavailable. |
 
 # Related
 - [AIRIMP](/air/air-ops/airimp.md) — parent

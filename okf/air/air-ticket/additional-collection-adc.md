@@ -27,6 +27,16 @@ providerTerms:
     context: Smartpoint's Ticket Assistant exchanges tickets with add collect by comparing the original ticket value to the stored fare and charging the difference.
     context_ko: Smartpoint의 Ticket Assistant는 원 항공권 가치를 저장 운임과 비교하여 차액을 청구하는 add collect 교환을 수행한다.
     relationship: same
+  - provider: Sabre
+    term: Add Collect (ADC) / Additional Collection
+    context: 'In a Sabre WETR exchange/reissue, the system computes the ''Add Collect'' (also shown as ADC) due from the passenger when the new itinerary is higher in value; a ''NO ADC'' indicator means nothing is due.'
+    context_ko: 'Sabre WETR 교환/재발행 시 새 여정 가치가 더 높을 때 승객에게 청구하는 추가징수액을 ''Add Collect(ADC)''로 계산하며, ''NO ADC'' 표시는 추가징수 없음을 의미한다.'
+    relationship: same
+  - provider: Amadeus
+    term: Additional Collection (ATC Reissue)
+    context: 'Amadeus Ticket Changer (ATC) automatically calculates the additional collection of fare, tax, and penalty during a reissue (TTP/EXCH); a positive balance is collected via the updated form of payment.'
+    context_ko: 'Amadeus Ticket Changer(ATC)가 재발행(TTP/EXCH) 시 운임·세금·페널티의 추가징수액을 자동 계산하며, 양(+)의 잔액은 갱신된 지불수단으로 징수한다.'
+    relationship: same
 relationships:
   - type: related
     targetTerm: Reissue
@@ -74,6 +84,8 @@ In an exchange/reissue, systems compare the value of the original ticket against
 | Provider | Term | Relationship | Context |
 | --- | --- | --- | --- |
 | Travelport | `Exchange Ticket with Add Collect` | same | Smartpoint's Ticket Assistant exchanges tickets with add collect by comparing the original ticket value to the stored fare and charging the difference. |
+| Sabre | `Add Collect (ADC) / Additional Collection` | same | In a Sabre WETR exchange/reissue, the system computes the 'Add Collect' (also shown as ADC) due from the passenger when the new itinerary is higher in value; a 'NO ADC' indicator means nothing is due. |
+| Amadeus | `Additional Collection (ATC Reissue)` | same | Amadeus Ticket Changer (ATC) automatically calculates the additional collection of fare, tax, and penalty during a reissue (TTP/EXCH); a positive balance is collected via the updated form of payment. |
 
 # Related
 - [Reissue](/air/air-ticket/reissue.md) — related

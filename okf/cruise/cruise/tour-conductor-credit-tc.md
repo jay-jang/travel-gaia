@@ -28,6 +28,11 @@ providerTerms:
     context: 'For 2018+ group sailings the TC credit value is calculated on the average cruise fare of all stateroom categories booked in the group, replacing the prior predominant-category method; one TC is earned per eight cabins.'
     context_ko: '2018년 이후 단체 출항부터 TC 크레딧 가치는 단체에 예약된 전 선실 카테고리의 평균 크루즈 운임으로 산정하며, 이는 종전 다수 카테고리 방식을 대체한다. 선실 8개당 TC 1개를 적립한다.'
     relationship: same
+  - provider: Carnival Cruise Line
+    term: Tour Conductor credit / free berth (1 per 15) + Group Amenity Points
+    context: 'Carnival awards one free berth (tour conductor) per 15 full-fare lower berths — i.e. the 16th guest sails free — calculated on the group''s average fare, and lets Group Amenity Points accelerate the ratio or convert to perks/OBC.'
+    context_ko: '카니발은 정상 운임 로어버스 15개당 무료 버스(투어 컨덕터) 1개를 부여해 16번째 승객이 무료 탑승하며, 그룹 평균 운임으로 계산하고 Group Amenity Points로 비율을 가속하거나 혜택·OBC로 전환할 수 있다.'
+    relationship: same
 relationships:
   - type: parent
     targetTerm: Group PNR
@@ -75,6 +80,7 @@ Tour Conductor Credits are unique to cruise (and packaged tour) group sales and 
 | Provider | Term | Relationship | Context |
 | --- | --- | --- | --- |
 | Royal Caribbean Cruises Ltd. | `Tour Conductor (TC) Credit` | same | For 2018+ group sailings the TC credit value is calculated on the average cruise fare of all stateroom categories booked in the group, replacing the prior predominant-category method; one TC is earned per eight cabins. |
+| Carnival Cruise Line | `Tour Conductor credit / free berth (1 per 15) + Group Amenity Points` | same | Carnival awards one free berth (tour conductor) per 15 full-fare lower berths — i.e. the 16th guest sails free — calculated on the group's average fare, and lets Group Amenity Points accelerate the ratio or convert to perks/OBC. |
 
 # Related
 - [Group PNR](/air/air-ops/group-pnr.md) — parent

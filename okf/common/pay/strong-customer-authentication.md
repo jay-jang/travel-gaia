@@ -21,6 +21,12 @@ standardBody: European Banking Authority (EBA) / European Union (PSD2)
 aliases:
   - SCA
   - Strong Customer Authentication (PSD2)
+providerTerms:
+  - provider: Reserve Bank of India (RBI)
+    term: Additional Factor of Authentication (AFA)
+    context: 'India''s RBI-mandated two-factor authentication for digital payments; the non-EU counterpart to PSD2 SCA, requiring at least one dynamic factor.'
+    context_ko: '디지털 결제에 대한 인도 RBI 의무 2요소 인증으로, 최소 하나의 동적 요소를 요구하는 PSD2 SCA의 비EU 대응 규제.'
+    relationship: related
 relationships:
   - type: contrasts
     targetTerm: 3-D Secure
@@ -58,6 +64,12 @@ SCA is mandated by PSD2 and detailed in the European Banking Authority's Regulat
 SCA는 PSD2에 의해 의무화되며, 유럽은행감독청(EBA)의 강력한 고객 인증 및 안전한 통신에 관한 기술표준(RTS)에 상세히 규정된다. 두 인증 요소는 고객이 아는 것(비밀번호·PIN), 가진 것(휴대폰·토큰), 본인 자체인 것(생체정보)이라는 세 독립 범주 중 둘 이상에서 와야 한다. 온라인 카드 결제에서는 주로 3-D Secure 프로토콜로 구현된다. RTS는 SCA 면제(exemption) 사례도 정의하는데, 소액 거래, 매입사·발급사의 거래 위험 분석(TRA), 정액 정기 결제, 가맹점 개시 거래(MIT), 신뢰 수취인 화이트리스트 등이 있다. SCA는 지급인과 수취인의 결제서비스 제공자가 모두 유럽경제지역(EEA) 내에 있을 때 적용되어 국경 간 여행 예약 처리 방식에 영향을 준다.
 
 **Aliases:** `SCA`, `Strong Customer Authentication (PSD2)`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Reserve Bank of India (RBI) | `Additional Factor of Authentication (AFA)` | related | India's RBI-mandated two-factor authentication for digital payments; the non-EU counterpart to PSD2 SCA, requiring at least one dynamic factor. |
 
 # Related
 - [3-D Secure](/common/pay/3-d-secure.md) — contrasts

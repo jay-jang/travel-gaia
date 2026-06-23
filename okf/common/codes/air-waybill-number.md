@@ -22,6 +22,22 @@ aliases:
   - AWB Number
   - Air Waybill Reference
   - Master Air Waybill Number
+providerTerms:
+  - provider: IATA Cargo
+    term: Master Air Waybill (MAWB) number
+    context: The 11-digit AWB number issued by the carrier covering a consolidated shipment; carries the airline 3-digit prefix and 8-digit serial.
+    context_ko: '항공사가 발행하는 11자리 AWB 번호로, 통합 화물 전체를 포괄하며 항공사 3자리 프리픽스와 8자리 일련번호로 구성된다.'
+    relationship: narrower
+  - provider: IATA Cargo
+    term: House Air Waybill (HAWB) number
+    context: Forwarder-assigned waybill number for an individual shipment within a consolidation; references the parent MAWB but is not airline-prefixed.
+    context_ko: '포워더가 통합화물 내 개별 화물에 부여하는 운송장 번호로, 모(母) MAWB을 참조하지만 항공사 프리픽스 형식은 아니다.'
+    relationship: narrower
+  - provider: IATA
+    term: e-AWB
+    context: The electronic air waybill under IATA Resolution 672; same 11-digit numbering used as the key for a paperless contract of carriage.
+    context_ko: 'IATA Resolution 672에 따른 전자 항공운송장으로, 동일한 11자리 번호를 무서류 운송계약의 키로 사용한다.'
+    relationship: same
 relationships:
   - type: contrasts
     targetTerm: Ticket Number
@@ -65,6 +81,14 @@ An AWB number is typically written as prefix-serial (for example 176-12345675). 
 AWB 번호는 보통 prefix-serial 형식으로 표기된다(예: 176-12345675). 앞 3자리 prefix는 발행/운송 항공사에 연결된 IATA 배정 숫자 prefix이며, 8자리 일련번호는 7자리 순차번호와 그 순차번호를 7로 나눈 나머지(modulo 7)인 1자리 check digit으로 구성된다. Master Air Waybill(MAWB)은 항공사 간 화물 전체를 포괄하고, 포워더가 발행하는 House Air Waybill(HAWB)이 그 아래에서 개별 화주를 담당한다. 이 번호는 항공화물 공급망 전반의 e-freight / e-AWB 전자 메시징, 세관 신고, 상태 마일스톤, 수익 회계의 기준이 된다.
 
 **Aliases:** `AWB Number`, `Air Waybill Reference`, `Master Air Waybill Number`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| IATA Cargo | `Master Air Waybill (MAWB) number` | narrower | The 11-digit AWB number issued by the carrier covering a consolidated shipment; carries the airline 3-digit prefix and 8-digit serial. |
+| IATA Cargo | `House Air Waybill (HAWB) number` | narrower | Forwarder-assigned waybill number for an individual shipment within a consolidation; references the parent MAWB but is not airline-prefixed. |
+| IATA | `e-AWB` | same | The electronic air waybill under IATA Resolution 672; same 11-digit numbering used as the key for a paperless contract of carriage. |
 
 # Related
 - [Ticket Number](/common/codes/ticket-number.md) — contrasts

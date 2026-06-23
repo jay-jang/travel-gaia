@@ -19,6 +19,12 @@ aliases:
   - Solo Supplement
   - Single Occupancy Supplement
   - Solo Traveler Surcharge
+providerTerms:
+  - provider: Norwegian Cruise Line (NCL)
+    term: Studio / Solo Staterooms
+    context: 'NCL pioneered purpose-built single-occupancy ''Studio'' (and Solo) staterooms always priced for one guest, eliminating the single supplement and adding private Studio Lounge access — the opposite mechanism to a supplement.'
+    context_ko: NCL은 1인 전용으로 설계해 항상 1인 요금만 매기는 'Studio'(및 Solo) 객실을 선도적으로 도입해 싱글 서플먼트를 없애고 전용 스튜디오 라운지 이용을 제공한다. 서플먼트와 반대되는 방식이다.
+    relationship: related
 relationships:
   - type: related
     targetTerm: Cabin Category
@@ -61,6 +67,12 @@ Because cruise fares are advertised per person assuming two guests share a cabin
 크루즈 운임은 두 명이 선실을 공유한다는 가정(2인 기준) 아래 1인당으로 광고되므로, 1인이 점유하면 선사는 두 번째 사람의 운임만큼 손해를 본다. 싱글 서플먼트는 그 차액의 일부 또는 전부를 회수한다. 100% 서플먼트는 1인 선객이 사실상 두 사람 몫의 운임(선실 전체 가격)을 내는 것이고, 많은 선사는 150%~200%의 서플먼트를 부과해 1인 비용이 2인 선실 총액을 넘게 만들기도 한다. 더 낮은 서플먼트(또는 가끔의 면제·할인 프로모션과 전용 solo studio 선실)는 수요를 채우기 위한 수익 관리 수단으로 쓰인다. 이 메커니즘 때문에 크루즈 수익 관리는 1인 투숙이 예외적 할증이 아니라 표준인 항공·호텔 가격 책정과 구조적으로 다르다.
 
 **Aliases:** `Solo Supplement`, `Single Occupancy Supplement`, `Solo Traveler Surcharge`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Norwegian Cruise Line (NCL) | `Studio / Solo Staterooms` | related | NCL pioneered purpose-built single-occupancy 'Studio' (and Solo) staterooms always priced for one guest, eliminating the single supplement and adding private Studio Lounge access — the opposite mechanism to a supplement. |
 
 # Related
 - [Cabin Category](/cruise/cruise/cabin-category.md) — related

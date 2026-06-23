@@ -20,6 +20,17 @@ aliases:
   - Shipboard Credit
   - Onboard Spending Credit
   - Ship Board Credit
+providerTerms:
+  - provider: Carnival Cruise Line
+    term: Cruise Cash
+    context: 'Carnival''s ''Cruise Cash'' is guest-purchased prepaid spending money loaded to the onboard account in $25–$100 denominations for specific areas (bar, casino, etc.); functionally OBC but bought rather than granted as a perk.'
+    context_ko: 카니발의 'Cruise Cash'는 승객이 25~100달러 단위로 선구매해 온보드 계정에 충전하는 선불 지출금으로 특정 구역(바·카지노 등)에 쓴다. 기능상 OBC이지만 혜택 제공이 아닌 구매 방식이다.
+    relationship: related
+  - provider: Industry (generic)
+    term: Shipboard Credit (SBC)
+    context: Many lines and travel advisors label the same spendable account credit 'shipboard credit' (SBC) interchangeably with onboard credit (OBC).
+    context_ko: 다수 선사·여행 어드바이저는 동일한 지출 가능 계정 크레딧을 온보드 크레딧(OBC)과 호환되게 'shipboard credit(SBC)'으로 표기한다.
+    relationship: same
 relationships:
   - type: related
     targetTerm: Cruise-Only Fare
@@ -65,6 +76,13 @@ Onboard credit is a marketing and distribution lever rather than a price cut: th
 선상 크레딧은 가격 인하가 아니라 마케팅·유통 수단이다. 표면 운임은 그대로 두되 선객은 선내에서 쓸 수 있는 잔액을 받는다. 이는 선사의 공표 가격과 rate parity를 보호하면서도 예약을 유도하고 마진 높은 선내 지출을 자극한다. OBC는 선사(프로모션, 로열티, 일정 변경 보상), 자기 수수료 일부를 환급하는 여행 어드바이저, 또는 제휴 카드에서 나올 수 있다. 보통 선실당 적용되며 항해 종료까지 쓰지 않으면 소멸할 수 있고, 출처에 따라 환불 가능하거나 불가능할 수 있다.
 
 **Aliases:** `Shipboard Credit`, `Onboard Spending Credit`, `Ship Board Credit`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Carnival Cruise Line | `Cruise Cash` | related | Carnival's 'Cruise Cash' is guest-purchased prepaid spending money loaded to the onboard account in $25–$100 denominations for specific areas (bar, casino, etc.); functionally OBC but bought rather than granted as a perk. |
+| Industry (generic) | `Shipboard Credit (SBC)` | same | Many lines and travel advisors label the same spendable account credit 'shipboard credit' (SBC) interchangeably with onboard credit (OBC). |
 
 # Related
 - [Cruise-Only Fare](/cruise/cruise/cruise-only-fare.md) — related

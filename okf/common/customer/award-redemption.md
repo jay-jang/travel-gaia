@@ -20,6 +20,17 @@ aliases:
   - Award Booking
   - Reward Redemption
   - Mileage Redemption
+providerTerms:
+  - provider: Amadeus
+    term: SSR FQTR (FFR entry)
+    context: 'In Amadeus a redemption booking is flagged by the SSR FQTR element (created via the FFR transaction), signalling the passenger is redeeming miles/points'
+    context_ko: Amadeus에서 보상 예약은 FFR 트랜잭션으로 생성되는 SSR FQTR 요소로 표시되어 승객이 마일/포인트를 사용함을 알린다
+    relationship: narrower
+  - provider: Amadeus
+    term: SSR FQTU (FFU entry)
+    context: A redemption specifically for a cabin upgrade is carried in the SSR FQTU element (FFU transaction) in Amadeus
+    context_ko: 좌석 업그레이드를 위한 보상은 Amadeus에서 SSR FQTU 요소(FFU 트랜잭션)로 처리된다
+    relationship: narrower
 relationships:
   - type: broader
     targetTerm: Frequent Flyer Program
@@ -59,6 +70,13 @@ When a member redeems for air travel, the program debits the required miles from
 회원이 항공 여행으로 사용하면 프로그램은 계정에서 필요한 마일을 차감하고 통제된 보상 좌석 재고에서 좌석을 배정한 뒤 항공권을 발권한다(세금·수수료·유류할증료 등은 별도 결제하는 경우가 많다). 보상 좌석 재고는 항공사 수익관리 시스템으로 관리되며 특정 보상 예약 클래스로 풀릴 수 있다. 동맹체나 양자 협정 내 제휴 항공사에서도 사용할 수 있다. Award redemption은 mileage accrual의 사용 측면으로, 적립으로 쌓인 사용 가능 잔액을 차감한다.
 
 **Aliases:** `Redemption`, `Award Booking`, `Reward Redemption`, `Mileage Redemption`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Amadeus | `SSR FQTR (FFR entry)` | narrower | In Amadeus a redemption booking is flagged by the SSR FQTR element (created via the FFR transaction), signalling the passenger is redeeming miles/points |
+| Amadeus | `SSR FQTU (FFU entry)` | narrower | A redemption specifically for a cabin upgrade is carried in the SSR FQTU element (FFU transaction) in Amadeus |
 
 # Related
 - [Frequent Flyer Program](/common/customer/frequent-flyer-program.md) — broader

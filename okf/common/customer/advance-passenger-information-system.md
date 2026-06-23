@@ -23,6 +23,22 @@ aliases:
   - API
   - API data
   - APIS data
+providerTerms:
+  - provider: IATA
+    term: SSR DOCS / DOCO / DOCA
+    context: 'IATA Resolution 760a defines the SSR DOCS (passport/travel-document), DOCO (visa/other docs) and DOCA (address) elements carriers use in the PNR to capture and transmit API data'
+    context_ko: 'IATA 결의 760a가 PNR에서 API 데이터를 수집·전송하는 SSR DOCS(여권), DOCO(비자), DOCA(주소) 요소를 정의한다'
+    relationship: narrower
+  - provider: WCO/IATA/ICAO
+    term: PAXLST (UN/EDIFACT)
+    context: The WCO/IATA/ICAO API Guidelines specify the UN/EDIFACT PAXLST passenger-list message as the standard format for transmitting API data to border authorities
+    context_ko: WCO/IATA/ICAO API 지침이 국경당국에 API 데이터를 전송하는 표준 포맷으로 UN/EDIFACT PAXLST 승객명단 메시지를 규정한다
+    relationship: related
+  - provider: US CBP
+    term: APIS
+    context: 'US Customs and Border Protection operates the implementation under the name APIS, the data-interchange system receiving passport and flight data from carriers'
+    context_ko: 미국 CBP는 항공사로부터 여권·항공편 데이터를 수신하는 이 구현을 APIS라는 명칭으로 운영한다
+    relationship: same
 relationships:
   - type: contrasts
     targetTerm: Secure Flight
@@ -65,6 +81,14 @@ API data is normally captured from the machine-readable zone of the traveler's p
 API 데이터는 보통 체크인 시 여행자 passport의 기계판독영역(MRZ)에서 추출되어 정부 시스템으로 전송되며, 이를 통해 국경·세관 당국이 입국 승객을 사전 처리하고 위험을 평가할 수 있다. 상호작용형(interactive API, iAPI)에서는 탑승 전 당국이 탑승 가능/불가(또는 지시) 응답을 거의 실시간으로 운송인에게 회신할 수 있다. APIS는 운송인-정부 간 두 가지 주요 승객 데이터 흐름 중 하나이며, 다른 하나는 Passenger Name Record(PNR) 데이터이다. 여행자 데이터 절차로서 customer profile 및 보안 식별자에 보관된 동일한 신원 속성을 활용하지만, 마케팅·로열티 기능이 아니라 규제상의 운송인 의무이다.
 
 **Aliases:** `Advance Passenger Information`, `API`, `API data`, `APIS data`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| IATA | `SSR DOCS / DOCO / DOCA` | narrower | IATA Resolution 760a defines the SSR DOCS (passport/travel-document), DOCO (visa/other docs) and DOCA (address) elements carriers use in the PNR to capture and transmit API data |
+| WCO/IATA/ICAO | `PAXLST (UN/EDIFACT)` | related | The WCO/IATA/ICAO API Guidelines specify the UN/EDIFACT PAXLST passenger-list message as the standard format for transmitting API data to border authorities |
+| US CBP | `APIS` | same | US Customs and Border Protection operates the implementation under the name APIS, the data-interchange system receiving passport and flight data from carriers |
 
 # Related
 - [Secure Flight](/common/customer/secure-flight.md) — contrasts

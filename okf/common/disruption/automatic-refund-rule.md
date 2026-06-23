@@ -21,6 +21,17 @@ aliases:
   - Automatic Refund Rule
   - DOT Refund Rule
   - Automatic Refunds of Airline Tickets and Ancillary Service Fees
+providerTerms:
+  - provider: ATPCO
+    term: Category 33 (Voluntary Refunds) / involuntary refund handling
+    context: ATPCO fare-rule category encoding the conditions and charges for refunds; airline-filed Cat 33 lets GDS/airline systems instantly audit penalties and compute the refund amount that a cancellation/significant-change refund (mandated by the DOT rule) is executed against.
+    context_ko: '환불 조건과 수수료를 코드화한 ATPCO 운임규정 카테고리. 항공사가 신고한 Cat 33을 통해 GDS/항공사 시스템이 페널티를 즉시 감사하고, (DOT 규칙이 의무화한) 취소·중대변경 환불이 실제로 정산되는 금액을 계산한다.'
+    relationship: related
+  - provider: Sabre
+    term: Automated Exchange and Refund
+    context: 'Sabre order-management product that automates ticket exchanges, reissues, and refunds during irregular operations using airline-filed rules (e.g., Category 33) to instantly audit penalties and process the refund, including involuntary cancellations.'
+    context_ko: '비정상 운항 시 항공사 신고 규정(예: Category 33)으로 페널티를 즉시 감사하고 비자발 취소를 포함한 티켓 교환·재발행·환불을 자동화하는 Sabre 주문관리 제품.'
+    relationship: related
 relationships:
   - type: broader
     targetTerm: Refund
@@ -58,6 +69,13 @@ The rule, finalized in 2024, defines a 'significant change' for the first time, 
 2024년에 확정된 이 규정은 처음으로 '중대한 변경(significant change)'을 정의하며, 국내선 3시간·국제선 6시간 초과 출발·도착 시각 변경, 출발·도착 공항 변경, 연결편 추가, 좌석 등급 하향, 장애 승객의 접근성을 저해하는 연결편 등을 포함한다. 환불은 (요청 없이) 자동으로, 현금 또는 원래 지불 수단(마일 포함)으로, 신속하게(신용카드 결제는 7영업일, 그 외 지불 수단은 20일 이내) 이루어져야 한다. 또한 미제공 부가 서비스(유료 Wi-Fi, 좌석 지정 등)에 대한 환불도 포함하며, 2024년 FAA 재승인법으로 강화되었다. 승객이 명시적으로 바우처를 선택하지 않는 한, 이 규정은 바우처를 기본 구제 수단에서 대체한다.
 
 **Aliases:** `Automatic Refund Rule`, `DOT Refund Rule`, `Automatic Refunds of Airline Tickets and Ancillary Service Fees`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| ATPCO | `Category 33 (Voluntary Refunds) / involuntary refund handling` | related | ATPCO fare-rule category encoding the conditions and charges for refunds; airline-filed Cat 33 lets GDS/airline systems instantly audit penalties and compute the refund amount that a cancellation/significant-change refund (mandated by the DOT rule) is executed against. |
+| Sabre | `Automated Exchange and Refund` | related | Sabre order-management product that automates ticket exchanges, reissues, and refunds during irregular operations using airline-filed rules (e.g., Category 33) to instantly audit penalties and process the refund, including involuntary cancellations. |
 
 # Related
 - [Refund](/air/air-ticket/refund.md) — broader

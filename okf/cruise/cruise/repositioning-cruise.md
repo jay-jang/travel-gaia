@@ -19,6 +19,17 @@ aliases:
   - Repo Cruise
   - Repositioning Sailing
   - One-Way Cruise
+providerTerms:
+  - provider: Cunard Line
+    term: Transatlantic Crossing
+    context: Cunard markets its scheduled one-way Queen Mary 2 ocean-liner 'Crossing' as a distinct formal product; it overlaps with repositioning but is a recurring branded service rather than a seasonal relocation sailing.
+    context_ko: 큐나드는 정기 편도 퀸메리2 오션라이너 'Crossing'을 별도의 격식 있는 상품으로 마케팅한다. 리포지셔닝과 겹치지만 계절성 이동 항해가 아닌 반복 운영 브랜드 서비스다.
+    relationship: related
+  - provider: Holland America Line
+    term: Transatlantic / Grand Voyage
+    context: 'HAL groups one-way relocation sailings under ''Transatlantic'' crossings and longer ''Grand Voyages'', the latter being extended multi-region itineraries broader than a simple repositioning leg.'
+    context_ko: 'HAL은 편도 이동 항해를 ''Transatlantic'' 크로싱과 더 긴 ''Grand Voyages''로 묶으며, 후자는 단순 리포지셔닝 구간보다 넓은 장기 다지역 일정이다.'
+    relationship: related
 relationships:
   - type: related
     targetTerm: Embarkation
@@ -58,6 +69,13 @@ Cruise lines deploy ships seasonally (e.g. Alaska in summer, Caribbean in winter
 크루즈 선사는 선박을 계절별로 배치하며(예: 여름엔 알래스카, 겨울엔 카리브해) 지역 간에 선박을 재배치해야 한다. 빈 배로 항해하기보다 그 이동을 항해일이 많은 더 긴, 흔히 기항지가 적은 일정으로 매력적인 1박당 가격에 판매한다. 편도 일정이므로 승선·하선 항구가 다르며, 이는 항공편과 이동을 복잡하게 하고 선객이 서로 다른 나라에서 시작·종료하기 때문에 별도의 비자·세관·사전입국정보(APIS) 준수 고려를 높인다. 리포지셔닝 항차는 유통 채널 전반에서 식별 가능한 운임 상품을 만들어 내는 근간적 배치 개념이다.
 
 **Aliases:** `Repo Cruise`, `Repositioning Sailing`, `One-Way Cruise`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Cunard Line | `Transatlantic Crossing` | related | Cunard markets its scheduled one-way Queen Mary 2 ocean-liner 'Crossing' as a distinct formal product; it overlaps with repositioning but is a recurring branded service rather than a seasonal relocation sailing. |
+| Holland America Line | `Transatlantic / Grand Voyage` | related | HAL groups one-way relocation sailings under 'Transatlantic' crossings and longer 'Grand Voyages', the latter being extended multi-region itineraries broader than a simple repositioning leg. |
 
 # Related
 - [Embarkation](/cruise/cruise/embarkation.md) — related

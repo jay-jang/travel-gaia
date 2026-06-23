@@ -20,6 +20,27 @@ aliases:
   - Offer Management System (OMS)
   - OfMS
   - Offer Engine
+providerTerms:
+  - provider: Amadeus
+    term: Amadeus Nevio
+    context: Amadeus's offer-and-order platform that constructs and prices dynamic offers for airline retailing
+    context_ko: 항공 리테일링용 동적 오퍼를 구성·가격 산정하는 Amadeus의 오퍼·주문 플랫폼
+    relationship: narrower
+  - provider: Sabre
+    term: Sabre Mosaic (Offer Management)
+    context: Sabre Mosaic's offer-management suite builds and personalizes offers with a real-time pricing engine
+    context_ko: 실시간 가격 엔진으로 오퍼를 구성·개인화하는 Sabre Mosaic의 오퍼 관리 스위트
+    relationship: narrower
+  - provider: PROS
+    term: PROS (offer/pricing engine)
+    context: PSS-neutral offer and dynamic-pricing engine used by airlines to generate offers
+    context_ko: 항공사가 오퍼 생성에 사용하는 PSS 중립 오퍼·동적 가격 엔진
+    relationship: narrower
+  - provider: Datalex
+    term: Datalex (Retailaer)
+    context: PSS-neutral airline retailing/offer platform constructing dynamic offers
+    context_ko: 동적 오퍼를 구성하는 PSS 중립 항공 리테일링·오퍼 플랫폼
+    relationship: narrower
 relationships:
   - type: related
     targetTerm: Offer
@@ -61,6 +82,15 @@ Often abbreviated OMS (or labelled the 'Offer' half of a combined Offer & Order 
 흔히 OMS로 약칭되거나 통합 Offer & Order Management System의 'Offer' 절반으로 불리며, 오퍼 생성, 동적 가격/동적 오퍼, 자격 판단, 개인화, 머천다이징 로직을 담당하고 보통 NDC AirShopping/OfferPrice 응답을 만들어 낸다. 고객이 오퍼를 수락하면 제어권이 주문 관리 시스템으로 넘어가 결과 주문(Order)을 생성·서비스한다. 두 시스템이 함께 현대 항공 리테일링에서 분산된 레거시 가격·가용성·PNR/발권 기능을 대체한다.
 
 **Aliases:** `Offer Management System (OMS)`, `OfMS`, `Offer Engine`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Amadeus | `Amadeus Nevio` | narrower | Amadeus's offer-and-order platform that constructs and prices dynamic offers for airline retailing |
+| Sabre | `Sabre Mosaic (Offer Management)` | narrower | Sabre Mosaic's offer-management suite builds and personalizes offers with a real-time pricing engine |
+| PROS | `PROS (offer/pricing engine)` | narrower | PSS-neutral offer and dynamic-pricing engine used by airlines to generate offers |
+| Datalex | `Datalex (Retailaer)` | narrower | PSS-neutral airline retailing/offer platform constructing dynamic offers |
 
 # Related
 - [Offer](/common/standards/offer.md) — related

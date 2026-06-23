@@ -20,6 +20,17 @@ standardBody: IATA
 aliases:
   - Ticket Refund
   - Refund Application
+providerTerms:
+  - provider: Amadeus
+    term: ATC Refund (TRF / TRFP)
+    context: 'Amadeus processes automated refunds through Amadeus Ticket Changer Refund, where the pricing engine calculates the refundable amount (TRF to display/redisplay, TRFP to process, TRFU to update).'
+    context_ko: 'Amadeus는 Amadeus Ticket Changer Refund로 자동 환불을 처리하며, 가격 엔진이 환불 가능액을 계산한다(TRF 표시/재표시, TRFP 처리, TRFU 갱신).'
+    relationship: same
+  - provider: Sabre
+    term: WETRR / RFND
+    context: 'Sabre processes refunds via the automated refund flow (WETRR) or RFND, and also offers the Quick Refunds and Exchanges (QREX) tool; cancel-refund must be done by midnight on the processing day.'
+    context_ko: Sabre는 자동 환불 흐름(WETRR) 또는 RFND로 환불을 처리하며 Quick Refunds and Exchanges(QREX) 도구도 제공한다. 환불 취소는 처리 당일 자정까지 가능하다.
+    relationship: same
 relationships:
   - type: related
     targetTerm: E-ticket
@@ -95,6 +106,13 @@ Refunds are categorized as voluntary (passenger-initiated, subject to refundabil
 환불은 자발적 환불(승객 주도이며 운임 규정상의 환불 가능 여부 및 취소 위약금 적용)과 비자발적 환불(항공사 사유에 의한 결항/운항 실패로, 일반적으로 전액이며 위약금 없음)로 구분된다. 환불된 쿠폰은 가치가 재사용되지 못하도록 REFUNDED 상태로 설정되며, 미사용 세금/수수료는 관할 지역에 따라 환불 불가 운임에서도 환불될 수 있다. BSP/ARC 판매의 경우 환불은 정산 시스템을 통해 처리되어 대리점 청구액과 상계된다.
 
 **Aliases:** `Ticket Refund`, `Refund Application`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Amadeus | `ATC Refund (TRF / TRFP)` | same | Amadeus processes automated refunds through Amadeus Ticket Changer Refund, where the pricing engine calculates the refundable amount (TRF to display/redisplay, TRFP to process, TRFU to update). |
+| Sabre | `WETRR / RFND` | same | Sabre processes refunds via the automated refund flow (WETRR) or RFND, and also offers the Quick Refunds and Exchanges (QREX) tool; cancel-refund must be done by midnight on the processing day. |
 
 # Related
 - [E-ticket](/air/air-ticket/e-ticket.md) — related

@@ -24,6 +24,12 @@ aliases:
   - Interline E-ticketing
   - Interline E-Ticket
   - IeT
+providerTerms:
+  - provider: IATA
+    term: Interline e-ticketing (Resolution 722f)
+    context: 'IATA Resolution 722f governs the EDIFACT interline electronic ticketing standard that lets two airlines issue, exchange, and accept each other''s e-ticket coupons on a single itinerary.'
+    context_ko: IATA Resolution 722f는 두 항공사가 단일 여정에서 서로의 전자항공권 쿠폰을 발권·교환·인수할 수 있게 하는 EDIFACT 인터라인 전자발권 표준을 규정한다.
+    relationship: same
 relationships:
   - type: related
     targetTerm: Interline
@@ -70,6 +76,12 @@ Interline electronic ticketing (IET) replaced the paper interline ticket: instea
 인터라인 전자항공권(IET)은 종이 인터라인 항공권을 대체했다. 쿠폰을 물리적으로 다른 항공사에 배서(endorse)하는 대신, 발권 항공사(validating carrier)가 전자항공권을 발행하면 그 쿠폰을 파트너 항공사가 '소유'하고 사용할 수 있으며, 두 항공사의 시스템이 쿠폰 상태와 정산 데이터를 교환한다. 항공사가 전자적으로 인터라인하려면 인터라인 운송 협정 위에 양자 IET 링크(일반적으로 BIETA, Bilateral Interline E-ticketing Agreement)를 구축해야 한다. IET는 일관 위탁(through-checking), 실시간 쿠폰 상태 갱신, 그리고 결정적으로 IROPS 중 파트너로의 실시간 비자발적 재수용을 가능하게 한다. 그 결과는 인터라인 청구와 IATA Clearing House를 통해 재무적으로 정산되며, MITA/BIETA와 함께 표준 인터라인 체계의 기반을 이룬다.
 
 **Aliases:** `IET`, `Interline Electronic Ticketing`, `Interline E-ticketing`, `Interline E-Ticket`, `IeT`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| IATA | `Interline e-ticketing (Resolution 722f)` | same | IATA Resolution 722f governs the EDIFACT interline electronic ticketing standard that lets two airlines issue, exchange, and accept each other's e-ticket coupons on a single itinerary. |
 
 # Related
 - [Interline](/air/air-partner/interline.md) — related

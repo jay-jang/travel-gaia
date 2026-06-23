@@ -28,6 +28,16 @@ providerTerms:
     context: 'In OTA_HotelAvailNotifRQ a stop sell is sent as RestrictionStatus with Status="Close", independent of MinLOS/CTA/CTD restrictions.'
     context_ko: OTA_HotelAvailNotifRQ에서 stop sell은 Status="Close"인 RestrictionStatus로 전송되며 MinLOS/CTA/CTD 제약과 독립적이다.
     relationship: same
+  - provider: Oracle OPERA
+    term: Close (rate/room restriction)
+    context: 'OPERA closes a rate code and/or room type for dates via rate strategy/availability restrictions, preventing sale regardless of physical inventory.'
+    context_ko: OPERA는 rate strategy/availability 제한으로 일자별 요금코드·룸타입을 Close해 물리 재고와 무관하게 판매를 막는다.
+    relationship: same
+  - provider: Booking.com
+    term: Closed restriction (Status="Close")
+    context: Booking.com applies a Closed restriction at rate-plan level so reservations can't be created for that date across the channel.
+    context_ko: Booking.com은 요금제 레벨에 Closed 제한을 적용해 해당 일자에 채널 전반에서 예약 생성을 막는다.
+    relationship: same
 relationships:
   - type: related
     targetTerm: Availability
@@ -86,6 +96,8 @@ Stop Sell은 OpenTravel ARI 메시지로 교환되는 핵심 availability 제약
 | Provider | Term | Relationship | Context |
 | --- | --- | --- | --- |
 | OpenTravel Alliance | `RestrictionStatus Status="Close"` | same | In OTA_HotelAvailNotifRQ a stop sell is sent as RestrictionStatus with Status="Close", independent of MinLOS/CTA/CTD restrictions. |
+| Oracle OPERA | `Close (rate/room restriction)` | same | OPERA closes a rate code and/or room type for dates via rate strategy/availability restrictions, preventing sale regardless of physical inventory. |
+| Booking.com | `Closed restriction (Status="Close")` | same | Booking.com applies a Closed restriction at rate-plan level so reservations can't be created for that date across the channel. |
 
 # Related
 - [Availability](/air/air-shop/availability.md) — related

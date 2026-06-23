@@ -19,6 +19,12 @@ aliases:
   - Booking Limits
   - Authorization Level
   - AU
+providerTerms:
+  - provider: PROS
+    term: Authorized Units (AU) / Authorization level
+    context: Network RM systems express the per-class sell ceiling as the Authorization (AU) level; advanced bid-price and AU control drive seat-availability decisions per departure.
+    context_ko: '네트워크 RM 시스템은 클래스별 판매 상한을 Authorization(AU) 레벨로 표현하며, 고도화된 bid price·AU 제어가 출발편별 좌석 가용성 결정을 이끈다.'
+    relationship: related
 relationships:
   - type: broader
     targetTerm: Revenue Management
@@ -63,6 +69,12 @@ Booking limits are typically nested: the limit for a lower-value class is constr
 Booking limit은 일반적으로 nesting(네스팅)된다. 즉 낮은 가치 클래스의 한도는 그 클래스를 판매해도 상위 가치 클래스를 위해 protect된 좌석을 소비하지 않도록 제약된다. 표준 nested 구조에서 최상위 클래스는 전체 객실(또는 해당 풀)에 접근할 수 있는 반면, 각 하위 클래스는 객실 총량에서 상위 클래스들의 protection level을 뺀 값으로 제한된다. 예약이 누적되고 예측이 갱신되면 revenue management 시스템은 이 한도를 올리거나 내려 시간에 따라 클래스를 열고 닫는다. 잔여 booking limit이 0에 도달하면 클래스가 닫히며, 이는 판매자에게 해당 RBD에 availability가 없는 것으로 나타난다.
 
 **Aliases:** `Booking Limits`, `Authorization Level`, `AU`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| PROS | `Authorized Units (AU) / Authorization level` | related | Network RM systems express the per-class sell ceiling as the Authorization (AU) level; advanced bid-price and AU control drive seat-availability decisions per departure. |
 
 # Related
 - [Revenue Management](/air/air-shop/revenue-management.md) — broader

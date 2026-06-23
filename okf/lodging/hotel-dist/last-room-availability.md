@@ -21,6 +21,12 @@ aliases:
   - Last Room Availability Rate
   - Non-LRA
   - NLRA
+providerTerms:
+  - provider: GDS / corporate RFP (GBTA)
+    term: LRA vs NLRA (Non-Last Room Availability)
+    context: 'In GDS/corporate distribution the negotiated-rate attribute is expressed as LRA or its opposite NLRA, where NLRA lets the hotel block the negotiated rate during peak demand; GBTA guidance treats LRA as a costed contract concession.'
+    context_ko: 'GDS/기업 유통에서 협상 요금 속성은 LRA 또는 그 반대인 NLRA로 표현되며, NLRA는 호텔이 성수기에 협상 요금을 차단할 수 있게 한다. GBTA 지침은 LRA를 비용이 드는 계약 양보로 본다.'
+    relationship: related
 relationships:
   - type: related
     targetTerm: Corporate Rate
@@ -64,6 +70,12 @@ LRA is a control on how a negotiated/corporate rate behaves against availability
 LRA는 협상/기업 요금이 가용성에 대해 어떻게 동작하는지를 통제한다. LRA에서는 계약된 객실 유형이 조금이라도 판매 가능한 한 협상 요금이 반드시 제공되어야 하므로, 성수기에 기업 출장자가 마감당해 더 높은 워크업(walk-up) 요금으로 내몰리는 것을 막는다. NLRA에서는 호텔이 고수요 일자에 협상 요금을 차단하면서도 공개 요금으로는 재고를 열어두는 yield 관리를 할 수 있다. 따라서 LRA는 기업 구매자에게는 가치 있고 호텔 수익 관리에는 부담이 되어 협상 포인트가 된다. 업계 지침은 다소 작은 할인을 감수하더라도 거래량 상위 프로퍼티에 LRA를 확보할 것을 권한다. GDS에서 LRA 대 NLRA는 협상 요금의 규칙 일부로 rate access code와 함께 로딩된다.
 
 **Aliases:** `LRA`, `Last Room Availability Rate`, `Non-LRA`, `NLRA`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| GDS / corporate RFP (GBTA) | `LRA vs NLRA (Non-Last Room Availability)` | related | In GDS/corporate distribution the negotiated-rate attribute is expressed as LRA or its opposite NLRA, where NLRA lets the hotel block the negotiated rate during peak demand; GBTA guidance treats LRA as a costed contract concession. |
 
 # Related
 - [Corporate Rate](/lodging/hotel-rate/corporate-rate.md) — related

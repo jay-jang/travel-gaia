@@ -18,6 +18,17 @@ longDef_ko: '크루즈 온리 운임은 크루즈가 전통적으로 묶어 온 
 aliases:
   - Cruise Fare
   - Cruise-Only Rate
+providerTerms:
+  - provider: Holland America Line
+    term: Cruise Fare (base) vs. Have It All
+    context: 'HAL markets the bare voyage rate as its base Cruise Fare, contrasted with the bundled ''Have It All'' fare that adds drinks, Wi-Fi, specialty dining and a shore-excursion credit — i.e. cruise-only is the un-bundled tier.'
+    context_ko: 'HAL은 순수 항해 요금을 기본 ''Cruise Fare''로 판매하며, 음료·와이파이·스페셜티 다이닝·기항지 투어 크레딧을 묶은 ''Have It All'' 요금과 대비한다. 즉 크루즈온리는 번들이 빠진 등급이다.'
+    relationship: same
+  - provider: Princess Cruises
+    term: Princess Standard fare (vs. Princess Plus / Princess Premier)
+    context: 'Princess sells a base ''Standard'' cruise fare that can be upgraded to Plus or Premier packages bundling Wi-Fi, drinks and gratuities; the Standard tier is the cruise-only baseline.'
+    context_ko: '프린세스는 기본 ''Standard'' 크루즈 운임을 판매하고 이를 와이파이·음료·팁을 묶은 Plus 또는 Premier 패키지로 업그레이드할 수 있으며, Standard 등급이 크루즈온리 기준선이다.'
+    relationship: same
 relationships:
   - type: related
     targetTerm: Cabin Category
@@ -59,6 +70,13 @@ A cruise-only fare prices the core inclusions a cruise has historically bundled 
 크루즈 온리 운임은 크루즈가 전통적으로 묶어 온 핵심 포함 항목, 즉 선택한 선실 카테고리의 숙박, 메인 다이닝룸·뷔페 식사, 표준 선내 엔터테인먼트·시설을 가격에 담되, 선택적 비용과 제3자 비용은 분리해 둔다. 항공편과 이동을 더한 'cruise plus air' 또는 완전 패키지 운임과 구별되며, 비수수료 운임·세금·팁·부가 상품이 얹히기 전 단계에 위치한다. 유통 채널 전반의 최소 공통 기준이므로 흔히 2인 기준 1인당으로 광고되는 금액이다.
 
 **Aliases:** `Cruise Fare`, `Cruise-Only Rate`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Holland America Line | `Cruise Fare (base) vs. Have It All` | same | HAL markets the bare voyage rate as its base Cruise Fare, contrasted with the bundled 'Have It All' fare that adds drinks, Wi-Fi, specialty dining and a shore-excursion credit — i.e. cruise-only is the un-bundled tier. |
+| Princess Cruises | `Princess Standard fare (vs. Princess Plus / Princess Premier)` | same | Princess sells a base 'Standard' cruise fare that can be upgraded to Plus or Premier packages bundling Wi-Fi, drinks and gratuities; the Standard tier is the cruise-only baseline. |
 
 # Related
 - [Cabin Category](/cruise/cruise/cabin-category.md) — related

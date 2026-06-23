@@ -30,6 +30,21 @@ providerTerms:
     context: SITA offers a shared departure-control platform used by many airlines
     context_ko: SITA는 다수 항공사가 사용하는 공유형 출발 통제 플랫폼을 제공한다
     relationship: narrower
+  - provider: Amadeus
+    term: Altéa Departure Control
+    context: 'Amadeus Altéa Departure Control (Customer Management / Flight Management) is the market-leading new-generation DCS handling check-in, seating and boarding.'
+    context_ko: 'Amadeus Altéa Departure Control(Customer Management / Flight Management)은 check-in, 좌석, boarding을 처리하는 시장 선도 신세대 DCS다.'
+    relationship: same
+  - provider: Sabre
+    term: Sabre Departure Control
+    context: 'Sabre''s Departure Control suite provides airport check-in, boarding and load-control functions linked to the reservation/inventory host.'
+    context_ko: 'Sabre의 Departure Control 제품군은 예약/inventory host와 연동된 공항 check-in, boarding, load control 기능을 제공한다.'
+    relationship: same
+  - provider: Hitit
+    term: Crane DCS
+    context: 'Hitit''s Crane DCS is a web-based real-time DCS for passenger handling and load control, deployable standalone with any reservation system.'
+    context_ko: 'Hitit의 Crane DCS는 승객 핸들링과 load control을 위한 웹 기반 실시간 DCS로, 어떤 예약 시스템과도 독립 배포 가능하다.'
+    relationship: same
 relationships:
   - type: related
     targetTerm: Passenger Name List / Additions and Deletions List (PNL/ADL)
@@ -83,6 +98,9 @@ DCS는 항공사의 공항 핸들링을 자동화하며 보통 세 영역에 걸
 | --- | --- | --- | --- |
 | Amadeus | `Altea Departure Control` | narrower | Amadeus provides DCS solutions covering check-in, boarding and load control |
 | SITA | `SITA Departure Control Services` | narrower | SITA offers a shared departure-control platform used by many airlines |
+| Amadeus | `Altéa Departure Control` | same | Amadeus Altéa Departure Control (Customer Management / Flight Management) is the market-leading new-generation DCS handling check-in, seating and boarding. |
+| Sabre | `Sabre Departure Control` | same | Sabre's Departure Control suite provides airport check-in, boarding and load-control functions linked to the reservation/inventory host. |
+| Hitit | `Crane DCS` | same | Hitit's Crane DCS is a web-based real-time DCS for passenger handling and load control, deployable standalone with any reservation system. |
 
 # Related
 - [Passenger Name List / Additions and Deletions List (PNL/ADL)](/air/air-ops/pnl-adl.md) — related

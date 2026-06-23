@@ -33,6 +33,21 @@ providerTerms:
     context: Universal API/JSON service returning aircraft seat maps for booking and seat assignment.
     context_ko: 예약 및 좌석 배정을 위해 항공기 seat map을 반환하는 Universal API/JSON 서비스.
     relationship: related
+  - provider: Amadeus
+    term: SeatMap Display / NDC SeatAvailability
+    context: 'Amadeus exposes seat maps via the SeatMap Display API and, in NDC, SeatAvailabilityRQ/RS returning cabin layout, availability and integrated seat fees.'
+    context_ko: 'Amadeus는 SeatMap Display API로, NDC에서는 SeatAvailabilityRQ/RS로 cabin layout, availability, 통합 좌석 요금을 반환하며 seat map을 제공한다.'
+    relationship: same
+  - provider: Sabre
+    term: Get Seats / Seat Map API
+    context: 'Sabre''s Get Seats (Seat Map) API returns the flight seat map with seat locations, facilities, chargeable/non-chargeable status, availability and pricing.'
+    context_ko: 'Sabre의 Get Seats(Seat Map) API는 좌석 위치, 시설, 유료/무료 상태, availability, 가격을 포함한 flight seat map을 반환한다.'
+    relationship: same
+  - provider: NDC/IATA
+    term: SeatAvailabilityRS
+    context: 'NDC SeatAvailabilityRS returns the data to construct a seat map on an offer or order, with integrated premium-seat fees and media content.'
+    context_ko: 'NDC SeatAvailabilityRS는 offer 또는 order에 대한 seat map 구성 데이터를 반환하며, premium 좌석 요금과 media content가 통합된다.'
+    relationship: same
 relationships:
   - type: related
     targetTerm: Segment
@@ -81,6 +96,9 @@ Seat Map은 표준 메시지로 교환된다. OpenTravel의 OTA_AirSeatMapRQ/RS 
 | --- | --- | --- | --- |
 | OpenTravel Alliance | `OTA_AirSeatMapRQ / OTA_AirSeatMapRS` | same | XML request/response messages carrying cabin seat layout and availability per segment. |
 | Travelport | `Seat Map API` | related | Universal API/JSON service returning aircraft seat maps for booking and seat assignment. |
+| Amadeus | `SeatMap Display / NDC SeatAvailability` | same | Amadeus exposes seat maps via the SeatMap Display API and, in NDC, SeatAvailabilityRQ/RS returning cabin layout, availability and integrated seat fees. |
+| Sabre | `Get Seats / Seat Map API` | same | Sabre's Get Seats (Seat Map) API returns the flight seat map with seat locations, facilities, chargeable/non-chargeable status, availability and pricing. |
+| NDC/IATA | `SeatAvailabilityRS` | same | NDC SeatAvailabilityRS returns the data to construct a seat map on an offer or order, with integrated premium-seat fees and media content. |
 
 # Related
 - [Segment](/air/air-ops/segment.md) — related

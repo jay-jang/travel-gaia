@@ -23,6 +23,17 @@ aliases:
   - Person with Reduced Mobility
   - Passengers with Reduced Mobility
   - Disabled passenger
+providerTerms:
+  - provider: IATA
+    term: SSR WCHR / WCHS / WCHC
+    context: 'IATA defines graded wheelchair SSR codes — WCHR (ramp), WCHS (steps), WCHC (cabin/fully immobile) — to communicate the level of mobility assistance required'
+    context_ko: IATA는 필요한 이동지원 수준을 전달하기 위해 휠체어 SSR 코드 WCHR(램프)·WCHS(계단)·WCHC(기내/완전 부동)를 등급별로 정의한다
+    relationship: narrower
+  - provider: IATA
+    term: SSR DPNA
+    context: 'IATA SSR DPNA flags a disabled passenger needing assistance for intellectual, developmental or hidden/cognitive disabilities'
+    context_ko: IATA SSR DPNA는 지적·발달 또는 비가시적/인지 장애로 지원이 필요한 승객을 표시한다
+    relationship: narrower
 relationships:
   - type: related
     targetTerm: SSR
@@ -61,6 +72,13 @@ PRM is an umbrella concept covering travelers requiring assistance; specific nee
 PRM은 지원이 필요한 여행자를 포괄하는 상위 개념이며, 구체적인 요구 사항은 WCHR(램프까지 휠체어), WCHS(계단까지), WCHC(좌석까지), BLND(시각장애), DEAF(청각장애), DPNA(지적/발달 장애) 같은 SSR 코드로 부호화된다. 이러한 요청은 공항과 항공사가 휠체어, 동행 안내, 기타 편의를 준비하도록 보장하며, 접근성 규정(예: 유럽의 EC Regulation 1107/2006, 미국의 Air Carrier Access Act)의 적용을 받는다. PRM 처리는 일반적인 OSI 정보성 메시지와 구별되는 서비스 의무이다.
 
 **Aliases:** `Passenger with Reduced Mobility`, `Person with Reduced Mobility`, `Passengers with Reduced Mobility`, `Disabled passenger`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| IATA | `SSR WCHR / WCHS / WCHC` | narrower | IATA defines graded wheelchair SSR codes — WCHR (ramp), WCHS (steps), WCHC (cabin/fully immobile) — to communicate the level of mobility assistance required |
+| IATA | `SSR DPNA` | narrower | IATA SSR DPNA flags a disabled passenger needing assistance for intellectual, developmental or hidden/cognitive disabilities |
 
 # Related
 - [SSR](/air/air-ops/ssr.md) — related

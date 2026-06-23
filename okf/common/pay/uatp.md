@@ -20,6 +20,17 @@ aliases:
   - Universal Air Travel Plan
   - Air Travel Card
   - UATP card
+providerTerms:
+  - provider: AirPlus International
+    term: AirPlus (UATP-issued / Mastercard)
+    context: Lufthansa-group B2B travel-payment brand issuing UATP-based corporate accounts and virtual cards for business travel.
+    context_ko: 출장용 UATP 기반 법인 계정과 가상카드를 발급하는 루프트한자 그룹 B2B 출장 결제 브랜드.
+    relationship: narrower
+  - provider: GDS ticketing (Amadeus/Sabre/Travelport)
+    term: FOP card type TP
+    context: UATP appears in GDS/BSP ticketing as form-of-payment card type code TP; not supported by NDC airlines as a FOP at present.
+    context_ko: 'UATP는 GDS/BSP 발권에서 지불수단 카드유형 코드 TP로 나타나며, 현재 NDC 항공사에서는 지불수단으로 미지원.'
+    relationship: related
 relationships:
   - type: related
     targetTerm: Form of Payment
@@ -61,6 +72,13 @@ UATP, the world's oldest payment scheme, is privately owned and operated by the 
 세계에서 가장 오래된 결제 스킴인 UATP는 글로벌 항공 업계가 사적으로 소유·운영하며, 소비자가 직접 접하는 일은 드문 압도적으로 B2B 성격의 수단이다. 기업과 여행사는 UATP 계정을 직접 청구(direct billing), 통합 보고, 더 낮은 비용의 항공·여행 지출 정산에 사용하며, 발급 항공사는 기업 물량을 확보·유지하는 데에도 활용한다. 항공사 소유이므로 UATP는 Visa/Mastercard 수용에 따르는 인터체인지·스킴 비용 상당 부분을 피할 수 있어, 항공사가 이를 선호 지불수단으로 적극 권장하는 이유가 된다. UATP 거래는 IATA의 SIS를 통해 청구·정산될 수 있으며, 기록된 지불수단으로서 다른 FOP 유형처럼 BSP/ARC 및 항공사 회계를 거친다.
 
 **Aliases:** `Universal Air Travel Plan`, `Air Travel Card`, `UATP card`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| AirPlus International | `AirPlus (UATP-issued / Mastercard)` | narrower | Lufthansa-group B2B travel-payment brand issuing UATP-based corporate accounts and virtual cards for business travel. |
+| GDS ticketing (Amadeus/Sabre/Travelport) | `FOP card type TP` | related | UATP appears in GDS/BSP ticketing as form-of-payment card type code TP; not supported by NDC airlines as a FOP at present. |
 
 # Related
 - [Form of Payment](/common/pay/form-of-payment.md) — related

@@ -22,6 +22,12 @@ aliases:
   - Free Sell
   - Sell Free
   - Free Sale Inventory
+providerTerms:
+  - provider: OpenTravel/Booking.com
+    term: 'OTA_HotelAvailNotifRQ (open/close status, no per-request allotment check)'
+    context: 'Free sale is expressed in the OpenTravel availability message as an open booking status without a live per-request inventory check, gated by stop-sell/close restrictions rather than a specific allotment.'
+    context_ko: '프리세일은 OpenTravel 가용성 메시지에서 요청별 실시간 재고 확인 없이 열린 예약 상태로 표현되며, 특정 할당이 아닌 stop-sell/close 제한으로 통제된다.'
+    relationship: related
 relationships:
   - type: contrasts
     targetTerm: Allotment
@@ -67,6 +73,12 @@ Free sale (or 'sell free') lets a channel sell rooms on the assumption that avai
 프리세일('sell free')은 채널이 가용성이 존재한다는 가정 하에 객실을 판매하도록 허용하며, 흔히 프리세일 한도와, 호텔이 예약 수신을 중단하고자 할 때 발동하는 판매 중지(stop-sell)/마감(close-out) 메커니즘에 의해 규율된다. 이는 채널이 사전 할당된 유한한 블록에서만 판매할 수 있는 할당량 기반 판매, 그리고 완전 동적 양방향(풀링) 가용성과 대비된다. 프리세일은 전환율을 높이고 놓친 예약을 줄이지만, 판매 중지가 신속히 적용되지 않으면 오버부킹 위험을 수반한다.
 
 **Aliases:** `Freesale`, `Free Sell`, `Sell Free`, `Free Sale Inventory`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| OpenTravel/Booking.com | `OTA_HotelAvailNotifRQ (open/close status, no per-request allotment check)` | related | Free sale is expressed in the OpenTravel availability message as an open booking status without a live per-request inventory check, gated by stop-sell/close restrictions rather than a specific allotment. |
 
 # Related
 - [Allotment](/lodging/hotel-rate/allotment.md) — contrasts

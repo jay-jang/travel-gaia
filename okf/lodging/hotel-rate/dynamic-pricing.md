@@ -18,6 +18,12 @@ longDef_ko: 'Dynamic Pricing은 BAR 같은 게시 요금의 일별 변동을 만
 aliases:
   - Demand-Based Pricing
   - Yield Pricing
+providerTerms:
+  - provider: Oracle OPERA
+    term: Dynamic BAR Base Rate (DBAR)
+    context: 'OPERA implements dynamic pricing via Dynamic BAR base rates that move by day, with negotiated rate codes deriving from the DBAR level.'
+    context_ko: OPERA는 일자별로 변동하는 Dynamic BAR 기준요금으로 동적 가격을 구현하며 협상 요금코드가 DBAR 수준에서 파생된다.
+    relationship: narrower
 relationships:
   - type: related
     targetTerm: BAR
@@ -67,6 +73,12 @@ Dynamic pricing is the engine that produces the day-to-day movement of published
 Dynamic Pricing은 BAR 같은 게시 요금의 일별 변동을 만들어 내는 엔진으로, BAR 값 자체가 해당 날짜에 대한 동적 가격 책정 결정의 산출물이다. 과거 및 확정(on-the-books) 데이터, 수요 예측, 전년 동일 시점 대비 예약 속도, 경쟁사 rate shopping 피드, 그리고 가격 규칙 또는 자동화된 수익 관리 시스템을 활용해 객실 유형·날짜별 최적 요금을 설정한다. 동적 가격 책정은 장기간에 대해 요금을 미리 설정하고 거의 변경하지 않는 정적·계절 가격 책정과 대비된다. 이는 open pricing(세그먼트·채널별로 독립적으로 yield하도록 동적 가격 책정을 확장한 방법론)이나 항공의 continuous pricing 같은 구체적 방법론의 기반이지만 그보다 더 넓은 개념이다.
 
 **Aliases:** `Demand-Based Pricing`, `Yield Pricing`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Oracle OPERA | `Dynamic BAR Base Rate (DBAR)` | narrower | OPERA implements dynamic pricing via Dynamic BAR base rates that move by day, with negotiated rate codes deriving from the DBAR level. |
 
 # Related
 - [BAR](/lodging/hotel-rate/bar.md) — related

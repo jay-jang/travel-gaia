@@ -20,6 +20,17 @@ aliases:
   - preauthorization
   - auth hold
   - card hold
+providerTerms:
+  - provider: Adyen
+    term: Pre-authorisation / authorisation adjustment
+    context: Adyen's term for an authorization that verifies funds without debiting and can later be increased or decreased before capture; final authorisation is the non-adjustable variant.
+    context_ko: 차감 없이 자금을 확인하고 캡처 전 증감 조정이 가능한 인증을 가리키는 Adyen 용어. 조정 불가형은 final authorisation.
+    relationship: same
+  - provider: Stripe
+    term: Uncaptured PaymentIntent (capture_method=manual)
+    context: Stripe holds funds with a manual-capture PaymentIntent that stays in the uncaptured state until captured or it expires.
+    context_ko: '수동 캡처 PaymentIntent로 자금을 잡아두며, 캡처되거나 만료될 때까지 uncaptured 상태로 유지하는 Stripe 방식.'
+    relationship: same
 relationships:
   - type: contrasts
     targetTerm: Settlement Cycle
@@ -64,6 +75,13 @@ The authorize/capture/settle lifecycle lets travel merchants reserve funds at ch
 승인/확정/정산 생애주기는 여행 가맹점이 체크인이나 픽업 시 자금을 예약하고 체크아웃이나 반납 시 최종 금액으로 조정할 수 있게 한다. 호텔은 보통 예상 객실 요금·세금·수수료에 미니바·주차·손상에 대비한 부대 비용 완충액을 더해 보류하고, 렌터카 업체는 연료·연체 반납·초과 주행에 대한 보류를 추가한다. 카드 스킴 규칙은 보류 금액, 승인 조정(authorization adjustment), 사용되지 않은 보류가 자동 해제 전까지 유지될 수 있는 기간(흔히 수일이며 네트워크·카드 유형·발급사에 따라 다름)을 규율한다. 가맹점은 사전승인 확정(prior-authorization capture)으로 거래를 완료하며, 자금은 정산 시점에 이동한다. 보류 금액이 최종 청구액을 초과할 수 있으므로, 돈이 실제로 이동하지 않았더라도 보류는 여행객의 가용 신용에 실질적인 영향을 준다.
 
 **Aliases:** `pre-authorization`, `preauthorization`, `auth hold`, `card hold`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Adyen | `Pre-authorisation / authorisation adjustment` | same | Adyen's term for an authorization that verifies funds without debiting and can later be increased or decreased before capture; final authorisation is the non-adjustable variant. |
+| Stripe | `Uncaptured PaymentIntent (capture_method=manual)` | same | Stripe holds funds with a manual-capture PaymentIntent that stays in the uncaptured state until captured or it expires. |
 
 # Related
 - [Settlement Cycle](/common/pay/settlement-cycle.md) — contrasts

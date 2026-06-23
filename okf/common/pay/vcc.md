@@ -20,6 +20,27 @@ aliases:
   - Virtual Credit Card
   - Virtual Card
   - Virtual Card Number
+providerTerms:
+  - provider: WEX / eNett
+    term: WEX virtual cards
+    context: Large-scale VCC issuer (Visa/Mastercard) for travel B2B used by major OTAs such as Booking.com and Expedia; absorbed eNett.
+    context_ko: Booking.com·Expedia 등 대형 OTA가 쓰는 트래블 B2B용 대규모 VCC 발급사(Visa/Mastercard). eNett을 흡수.
+    relationship: narrower
+  - provider: Conferma Pay
+    term: Conferma virtual cards
+    context: 'VCC orchestration platform connecting TMCs, GDSs and booking tools to 50+ issuing banks rather than issuing cards itself.'
+    context_ko: 직접 발급하지 않고 TMC·GDS·예약툴을 50여 개 발급은행과 연결하는 VCC 오케스트레이션 플랫폼.
+    relationship: related
+  - provider: Amadeus
+    term: Outpayce B2B Wallet
+    context: Amadeus payments arm embedding virtual-card issuance and B2B payment into the GDS and booking flow.
+    context_ko: 가상카드 발급과 B2B 결제를 GDS·예약 흐름에 내장하는 Amadeus 결제 부문.
+    relationship: related
+  - provider: AirPlus International
+    term: AirPlus Virtual Cards
+    context: Single-use/limited-use virtual card numbers for centrally billed business-travel expenses.
+    context_ko: 중앙 청구 출장 경비를 위한 일회성/제한사용 가상카드 번호.
+    relationship: narrower
 relationships:
   - type: related
     targetTerm: Merchant Model
@@ -67,6 +88,15 @@ In travel, an agency, OTA, or bedbank funds a VCC and supplies its number to a s
 여행 업계에서는 여행사, OTA 또는 베드뱅크가 VCC에 자금을 충전하고 그 번호를 공급업체(호텔, 항공사, 투어 오퍼레이터)에 제공하여 특정 예약을 결제한다. 일회용 VCC는 거래마다 생성되는 반면, 등록형(lodged) 카드는 일정 기간 반복 사용할 수 있다. 카드 브랜드와 BIN 선택은 승인율과 인터체인지를 최적화하도록 조정할 수 있다. VCC는 표준 카드 결제망을 통해 처리되므로 차지백(chargeback) 및 3-D Secure 규칙의 적용을 받는다.
 
 **Aliases:** `Virtual Credit Card`, `Virtual Card`, `Virtual Card Number`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| WEX / eNett | `WEX virtual cards` | narrower | Large-scale VCC issuer (Visa/Mastercard) for travel B2B used by major OTAs such as Booking.com and Expedia; absorbed eNett. |
+| Conferma Pay | `Conferma virtual cards` | related | VCC orchestration platform connecting TMCs, GDSs and booking tools to 50+ issuing banks rather than issuing cards itself. |
+| Amadeus | `Outpayce B2B Wallet` | related | Amadeus payments arm embedding virtual-card issuance and B2B payment into the GDS and booking flow. |
+| AirPlus International | `AirPlus Virtual Cards` | narrower | Single-use/limited-use virtual card numbers for centrally billed business-travel expenses. |
 
 # Related
 - [Merchant Model](/common/pay/merchant-model.md) — related

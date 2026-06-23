@@ -2,7 +2,7 @@
   "meta": {
     "name": "Travel Gaia",
     "tagline": "여행 산업 용어 백과사전",
-    "generatedAt": "2026-06-22",
+    "generatedAt": "2026-06-23",
     "entryCount": 407,
     "categoryCount": 16,
     "verticalCount": 5
@@ -221,6 +221,41 @@
           "context": "EMVCo specifies and manages the EMV 3DS protocol",
           "context_ko": "EMVCo가 EMV 3DS 프로토콜을 규정하고 관리한다",
           "relationship": "same"
+        },
+        {
+          "provider": "Visa",
+          "term": "Visa Secure (formerly Verified by Visa)",
+          "context": "Visa's brand implementation of the EMV 3-D Secure protocol for authenticating card-not-present transactions on Visa cards.",
+          "context_ko": "Visa 카드의 비대면 거래를 인증하기 위한 EMV 3-D Secure 프로토콜의 Visa 브랜드 구현체(구 Verified by Visa).",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "Mastercard",
+          "term": "Mastercard Identity Check (formerly SecureCode)",
+          "context": "Mastercard's brand of EMV 3-D Secure cardholder authentication for online Mastercard payments.",
+          "context_ko": "온라인 Mastercard 결제를 위한 카드소지자 인증 EMV 3-D Secure의 Mastercard 브랜드(구 SecureCode).",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "American Express",
+          "term": "American Express SafeKey",
+          "context": "Amex's branded implementation of 3-D Secure used to authenticate Amex card-not-present transactions.",
+          "context_ko": "Amex 카드의 비대면 거래 인증에 쓰이는 Amex 브랜드의 3-D Secure 구현체.",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "JCB",
+          "term": "J/Secure",
+          "context": "JCB's branded 3-D Secure authentication program for JCB card online payments.",
+          "context_ko": "JCB 카드 온라인 결제를 위한 JCB 브랜드의 3-D Secure 인증 프로그램.",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "Discover",
+          "term": "ProtectBuy",
+          "context": "Discover's branded implementation of the 3-D Secure protocol.",
+          "context_ko": "Discover의 3-D Secure 프로토콜 브랜드 구현체.",
+          "relationship": "narrower"
         }
       ],
       "relationships": [
@@ -380,6 +415,29 @@
         "ACRISS Vehicle Code",
         "Car Type Code"
       ],
+      "providerTerms": [
+        {
+          "provider": "Sabre",
+          "term": "Vehicle Type Code",
+          "context": "Sabre's car booking entries and APIs use the four-character ACRISS code as the vehicle type code (e.g. ECMR) to request and classify rental cars.",
+          "context_ko": "Sabre의 car 예약 엔트리와 API에서는 네 자리 ACRISS 코드를 차량 유형 코드(예: ECMR)로 사용해 렌터카를 조회·분류한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Amadeus",
+          "term": "Car type code (ACRISS)",
+          "context": "Amadeus Cars uses standard ACRISS four-character car type codes (alongside pseudo codes for predefined vehicle groups), filtered via the /VT- option.",
+          "context_ko": "Amadeus Cars는 표준 ACRISS 네 자리 car type code를 사용하며(사전 정의 그룹용 pseudo code 병행), /VT- 옵션으로 필터링한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "OpenTravel (OTA)",
+          "term": "VehicleCategory / VehType (Code='ACRISS')",
+          "context": "OpenTravel vehicle messages carry the ACRISS classification in the Vehicle element so brokers and suppliers exchange car type consistently.",
+          "context_ko": "OpenTravel 차량 메시지는 Vehicle 요소에 ACRISS 분류를 실어 브로커·공급자 간 차량 유형을 일관되게 교환한다.",
+          "relationship": "same"
+        }
+      ],
       "relationships": [
         {
           "type": "sameAs",
@@ -459,6 +517,20 @@
           "term": "Air Status Codes (action codes)",
           "context": "Universal API documents action/request codes such as NN, SS, DK, HN, LL sent to request space.",
           "context_ko": "Universal API는 space 요청에 보내는 NN, SS, DK, HN, LL 같은 action/request 코드를 문서화한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Amadeus",
+          "term": "Action/Status code (NN, SS, DK, HN, LL)",
+          "context": "Amadeus segment-sell cryptic entries (e.g. SS, NN) carry the AIRIMP action code that requests space on the marketing carrier.",
+          "context_ko": "Amadeus의 segment 판매 cryptic 엔트리(예: SS, NN)는 marketing carrier에 space를 요청하는 AIRIMP action code를 담는다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Sabre",
+          "term": "Status code (action) — NN, SS, DK, HN, LL",
+          "context": "Sabre sell/segment formats transmit the same two-letter action codes to request action from the carrier before an advice code is returned.",
+          "context_ko": "Sabre의 판매/segment 포맷은 advice code가 반환되기 전 항공사에 조치를 요청하는 동일한 2자리 action code를 전송한다.",
           "relationship": "same"
         }
       ],
@@ -636,6 +708,20 @@
           "context": "Smartpoint's Ticket Assistant exchanges tickets with add collect by comparing the original ticket value to the stored fare and charging the difference.",
           "context_ko": "Smartpoint의 Ticket Assistant는 원 항공권 가치를 저장 운임과 비교하여 차액을 청구하는 add collect 교환을 수행한다.",
           "relationship": "same"
+        },
+        {
+          "provider": "Sabre",
+          "term": "Add Collect (ADC) / Additional Collection",
+          "context": "In a Sabre WETR exchange/reissue, the system computes the 'Add Collect' (also shown as ADC) due from the passenger when the new itinerary is higher in value; a 'NO ADC' indicator means nothing is due.",
+          "context_ko": "Sabre WETR 교환/재발행 시 새 여정 가치가 더 높을 때 승객에게 청구하는 추가징수액을 'Add Collect(ADC)'로 계산하며, 'NO ADC' 표시는 추가징수 없음을 의미한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Amadeus",
+          "term": "Additional Collection (ATC Reissue)",
+          "context": "Amadeus Ticket Changer (ATC) automatically calculates the additional collection of fare, tax, and penalty during a reissue (TTP/EXCH); a positive balance is collected via the updated form of payment.",
+          "context_ko": "Amadeus Ticket Changer(ATC)가 재발행(TTP/EXCH) 시 운임·세금·페널티의 추가징수액을 자동 계산하며, 양(+)의 잔액은 갱신된 지불수단으로 징수한다.",
+          "relationship": "same"
         }
       ],
       "relationships": [
@@ -714,6 +800,29 @@
       "aliases": [
         "Admission (OSDM)",
         "Travel Admission"
+      ],
+      "providerTerms": [
+        {
+          "provider": "OSDM (UIC IRS 90918-10)",
+          "term": "AdmissionOfferPart / Admission",
+          "context": "OSDM names the travel-right offer part 'AdmissionOfferPart' at offer stage, becoming 'Admission' inside a booked offer; this is the exact object that grants the entitlement to travel on a train, held separately from ReservationOfferPart and AncillaryOfferPart.",
+          "context_ko": "OSDM은 열차 탑승 권리를 부여하는 오퍼 파트를 'AdmissionOfferPart'(예약 확정 시 'Admission')로 명명하며, 좌석예약(ReservationOfferPart)·부가서비스(AncillaryOfferPart)와 분리해 모델링한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "TAP TSI (ERA TD B.1)",
+          "term": "NRT tariff / admission-only fare data",
+          "context": "ERA TAP TSI Technical Document B.1 standardizes the exchange of Non-Reservation-Ticket (NRT) tariff and fare data for international sales — i.e. fares for the admission alone, sold independently of any reservation.",
+          "context_ko": "ERA TAP TSI 기술문서 B.1은 국제 판매용 비예약권(NRT) 운임 데이터 교환을 표준화하며, 이는 좌석예약과 분리되어 단독 판매되는 어드미션(승차권 본체)에 대한 운임이다.",
+          "relationship": "related"
+        },
+        {
+          "provider": "NDC / IATA (Offers & Orders)",
+          "term": "OfferItem (flight / fare offer item)",
+          "context": "In air retailing the closest structural analogue is the NDC OfferItem carrying the flight/fare entitlement; unlike OSDM it does not cleanly separate a transport entitlement from a reservation, so the mapping is conceptual rather than identical.",
+          "context_ko": "항공 리테일링에서 가장 가까운 구조적 대응물은 운임·여정 권리를 담는 NDC OfferItem이나, OSDM처럼 운송 권리와 좌석예약을 명확히 분리하지 않으므로 동일이 아닌 개념적 대응이다.",
+          "relationship": "related"
+        }
       ],
       "relationships": [
         {
@@ -880,6 +989,29 @@
         "API data",
         "APIS data"
       ],
+      "providerTerms": [
+        {
+          "provider": "IATA",
+          "term": "SSR DOCS / DOCO / DOCA",
+          "context": "IATA Resolution 760a defines the SSR DOCS (passport/travel-document), DOCO (visa/other docs) and DOCA (address) elements carriers use in the PNR to capture and transmit API data",
+          "context_ko": "IATA 결의 760a가 PNR에서 API 데이터를 수집·전송하는 SSR DOCS(여권), DOCO(비자), DOCA(주소) 요소를 정의한다",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "WCO/IATA/ICAO",
+          "term": "PAXLST (UN/EDIFACT)",
+          "context": "The WCO/IATA/ICAO API Guidelines specify the UN/EDIFACT PAXLST passenger-list message as the standard format for transmitting API data to border authorities",
+          "context_ko": "WCO/IATA/ICAO API 지침이 국경당국에 API 데이터를 전송하는 표준 포맷으로 UN/EDIFACT PAXLST 승객명단 메시지를 규정한다",
+          "relationship": "related"
+        },
+        {
+          "provider": "US CBP",
+          "term": "APIS",
+          "context": "US Customs and Border Protection operates the implementation under the name APIS, the data-interchange system receiving passport and flight data from carriers",
+          "context_ko": "미국 CBP는 항공사로부터 여권·항공편 데이터를 수신하는 이 구현을 APIS라는 명칭으로 운영한다",
+          "relationship": "same"
+        }
+      ],
       "relationships": [
         {
           "type": "contrasts",
@@ -966,6 +1098,20 @@
           "context": "Universal API documents advice/reply codes such as KK, KL, UC, US, UU returned by the carrier to an action request.",
           "context_ko": "Universal API는 항공사가 action 요청에 반환하는 KK, KL, UC, US, UU 같은 advice/reply 코드를 문서화한다.",
           "relationship": "same"
+        },
+        {
+          "provider": "Amadeus",
+          "term": "Advice/Status code (KK, KL, UC, US, UU, HX, NO)",
+          "context": "Amadeus PNRs surface carrier replies as two-letter advice/status codes (KK confirmed, UC unable, US waitlisted) returned after an action request.",
+          "context_ko": "Amadeus PNR은 action 요청 후 반환되는 항공사 회신을 2자리 advice/status code(KK 확약, UC 불가, US waitlist)로 표시한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Sabre",
+          "term": "Status code (advice) — KK, KL, UC, US, UU, HX",
+          "context": "Sabre displays the carrier's response codes (e.g. KK, UC) in the segment status field after processing a sell or waitlist request.",
+          "context_ko": "Sabre는 판매/waitlist 요청 처리 후 항공사의 응답 코드(예: KK, UC)를 segment status 필드에 표시한다.",
+          "relationship": "same"
         }
       ],
       "relationships": [
@@ -1046,6 +1192,22 @@
         "Agency Credit Memo",
         "Credit Memo"
       ],
+      "providerTerms": [
+        {
+          "provider": "NDC/IATA",
+          "term": "ACM via BSPlink",
+          "context": "Airlines issue Agency Credit Memos to BSP-accredited agents through IATA's BSPlink portal, where agents view and the amounts settle through the Billing and Settlement Plan.",
+          "context_ko": "항공사는 IATA BSPlink 포털을 통해 BSP 인증 대리점에 ACM을 발행하며, 대리점이 조회하고 금액은 BSP 정산으로 처리된다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Sabre",
+          "term": "ARC Memo Manager (ACM)",
+          "context": "For US (ARC) agents, credit memos from airlines are managed through ARC Memo Manager rather than BSPlink.",
+          "context_ko": "미국(ARC) 대리점의 경우 항공사의 크레딧 메모를 BSPlink 대신 ARC Memo Manager로 관리한다.",
+          "relationship": "same"
+        }
+      ],
       "relationships": [
         {
           "type": "contrasts",
@@ -1123,6 +1285,22 @@
       "aliases": [
         "Agency Debit Memo",
         "Debit Memo"
+      ],
+      "providerTerms": [
+        {
+          "provider": "NDC/IATA",
+          "term": "ADM via BSPlink",
+          "context": "Airlines issue Agency Debit Memos to BSP-accredited agents through IATA's BSPlink, which is also the channel through which agents must dispute an ADM within the dispute period.",
+          "context_ko": "항공사는 IATA BSPlink를 통해 BSP 인증 대리점에 ADM을 발행하며, 대리점은 이의제기 기간 내에 BSPlink를 통해 ADM에 이의를 제기해야 한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Sabre",
+          "term": "ARC Memo Manager (ADM)",
+          "context": "For US (ARC) travel agents, airline debit memos are issued and disputed through ARC Memo Manager instead of IATA BSPlink.",
+          "context_ko": "미국(ARC) 여행 대리점의 경우 항공사 ADM이 IATA BSPlink 대신 ARC Memo Manager로 발행·분쟁 처리된다.",
+          "relationship": "same"
+        }
       ],
       "relationships": [
         {
@@ -1277,6 +1455,36 @@
         "Content Aggregator",
         "Inventory Aggregator",
         "Travel Aggregator"
+      ],
+      "providerTerms": [
+        {
+          "provider": "NDC/IATA",
+          "term": "NDC aggregator",
+          "context": "In NDC distribution, aggregators consolidate many airlines' NDC connections into a single API so travel sellers integrate once instead of carrier-by-carrier",
+          "context_ko": "NDC 유통에서 애그리게이터는 여러 항공사의 NDC 연결을 단일 API로 통합해 여행 판매자가 항공사별로 연결하지 않고 한 번만 연동하도록 함",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "Duffel",
+          "term": "Duffel (NDC aggregator/API)",
+          "context": "Pure-play NDC aggregator providing a single API over many airlines' NDC content for travel sellers",
+          "context_ko": "여러 항공사 NDC 콘텐츠를 단일 API로 제공하는 전문 NDC 애그리게이터",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "Travelfusion",
+          "term": "Travelfusion",
+          "context": "Long-established aggregator consolidating LCC and NDC supplier content into one connection",
+          "context_ko": "LCC 및 NDC 공급자 콘텐츠를 하나의 연결로 통합하는 오래된 애그리게이터",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "Verteil / AirGateway",
+          "term": "Verteil, AirGateway",
+          "context": "NDC aggregator technology providers that normalize content and sit between airlines and travel sellers",
+          "context_ko": "콘텐츠를 정규화하여 항공사와 여행 판매자 사이에 위치하는 NDC 애그리게이터 기술 제공자",
+          "relationship": "narrower"
+        }
       ],
       "relationships": [
         {
@@ -1458,6 +1666,29 @@
         "Air Waybill Reference",
         "Master Air Waybill Number"
       ],
+      "providerTerms": [
+        {
+          "provider": "IATA Cargo",
+          "term": "Master Air Waybill (MAWB) number",
+          "context": "The 11-digit AWB number issued by the carrier covering a consolidated shipment; carries the airline 3-digit prefix and 8-digit serial.",
+          "context_ko": "항공사가 발행하는 11자리 AWB 번호로, 통합 화물 전체를 포괄하며 항공사 3자리 프리픽스와 8자리 일련번호로 구성된다.",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "IATA Cargo",
+          "term": "House Air Waybill (HAWB) number",
+          "context": "Forwarder-assigned waybill number for an individual shipment within a consolidation; references the parent MAWB but is not airline-prefixed.",
+          "context_ko": "포워더가 통합화물 내 개별 화물에 부여하는 운송장 번호로, 모(母) MAWB을 참조하지만 항공사 프리픽스 형식은 아니다.",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "IATA",
+          "term": "e-AWB",
+          "context": "The electronic air waybill under IATA Resolution 672; same 11-digit numbering used as the key for a paperless contract of carriage.",
+          "context_ko": "IATA Resolution 672에 따른 전자 항공운송장으로, 동일한 11자리 번호를 무서류 운송계약의 키로 사용한다.",
+          "relationship": "same"
+        }
+      ],
       "relationships": [
         {
           "type": "contrasts",
@@ -1539,6 +1770,22 @@
         "Nationality and Registration Marks",
         "Reg",
         "Aircraft Tail Number"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Industry / OAG / Cirium",
+          "term": "Tail number",
+          "context": "Common operational and fleet-tracking term for the same airframe registration mark (e.g., N12345, G-XWBA).",
+          "context_ko": "동일한 기체 등록부호를 가리키는 운항·기단 추적 현장 용어(예: N12345, G-XWBA).",
+          "relationship": "same"
+        },
+        {
+          "provider": "ICAO Annex 7",
+          "term": "Nationality mark + registration mark",
+          "context": "ICAO-defined structure: a nationality/common mark (State of Registry prefix) followed by the registration mark, typically hyphen-separated.",
+          "context_ko": "ICAO가 정의한 구조로, 국적/공통 부호(등록국 프리픽스) 뒤에 등록부호가 오며 보통 하이픈으로 구분된다.",
+          "relationship": "broader"
+        }
       ],
       "relationships": [
         {
@@ -1627,6 +1874,20 @@
           "term": "Equipment / Aircraft Type",
           "context": "OAG schedule data carries IATA (3-char) and ICAO (4-char) equipment codes plus an OAG recommended type",
           "context_ko": "OAG 스케줄 데이터는 IATA(3자리)·ICAO(4자리) 장비 코드와 OAG 권장 기종을 함께 제공한다",
+          "relationship": "related"
+        },
+        {
+          "provider": "IATA",
+          "term": "IATA aircraft type designator (3-char)",
+          "context": "3-character commercial code reflecting marketable variant (e.g., 738, 388); used in schedules, GDS availability and ticketing.",
+          "context_ko": "판매 가능한 형식 변형을 반영하는 3자리 상업용 코드(예: 738, 388)로 스케줄·GDS 좌석조회·발권에 사용된다.",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "ICAO (Doc 8643)",
+          "term": "ICAO aircraft type designator (2-4 char)",
+          "context": "Technical designator from ICAO Doc 8643 (e.g., B738, A388) used in flight plans and ATC rather than commercial distribution.",
+          "context_ko": "ICAO Doc 8643의 기술 지정자(예: B738, A388)로 상업 유통이 아닌 비행계획·ATC에 사용된다.",
           "relationship": "related"
         }
       ],
@@ -1802,6 +2063,15 @@
         "Airline Prefix Code",
         "Ticketing Prefix",
         "Airline Code Number"
+      ],
+      "providerTerms": [
+        {
+          "provider": "IATA Cargo",
+          "term": "Airline prefix code",
+          "context": "The same 3-digit numeric assigned by IATA, called the 'prefix code' on the cargo side where it forms the first 3 digits of the AWB number.",
+          "context_ko": "IATA가 부여하는 동일한 3자리 숫자로, 화물 측에서는 'prefix code'라 불리며 AWB 번호의 앞 3자리를 구성한다.",
+          "relationship": "same"
+        }
       ],
       "relationships": [
         {
@@ -1992,6 +2262,22 @@
         "IATA Airline Designator",
         "Two-Letter Airline Code",
         "Marketing Carrier Code"
+      ],
+      "providerTerms": [
+        {
+          "provider": "NDC/IATA",
+          "term": "AirlineID",
+          "context": "NDC schema element carrying the carrier code (IATA 2-char per Resolution 762, or ICAO 3-letter) for marketing/operating carrier.",
+          "context_ko": "NDC 스키마 요소로, 마케팅/운항 항공사의 항공사 코드(Resolution 762에 따른 IATA 2자리 또는 ICAO 3자리)를 담는다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "ICAO (Doc 8585)",
+          "term": "ICAO three-letter designator",
+          "context": "3-letter airline designator from ICAO Doc 8585 (e.g., AAL, BAW, DLH) used in ATC, flight plans and telephony, distinct from the IATA 2-char code.",
+          "context_ko": "ICAO Doc 8585의 3자리 항공사 지정자(예: AAL, BAW, DLH)로 ATC·비행계획·통신에 사용되며 IATA 2자리 코드와 구별된다.",
+          "relationship": "related"
+        }
       ],
       "relationships": [
         {
@@ -2327,6 +2613,36 @@
         "AirShopping Request/Response",
         "AirShoppingRQ/RS"
       ],
+      "providerTerms": [
+        {
+          "provider": "NDC/IATA",
+          "term": "IATA_AirShoppingRQ / IATA_AirShoppingRS (21.3+)",
+          "context": "From NDC 21.3, the AirShopping message schemas carry the IATA_ prefix under the AIDM-aligned naming convention",
+          "context_ko": "NDC 21.3부터 AirShopping 메시지 스키마는 AIDM 정렬 명명 규칙에 따라 IATA_ 접두사를 가짐",
+          "relationship": "same"
+        },
+        {
+          "provider": "Sabre",
+          "term": "NDC IT AirShopping / Bargain Finder Max (BFM)",
+          "context": "Sabre exposes NDC AirShopping via its NDC IT API, while Bargain Finder Max is the unified shop endpoint blending ATPCO, NDC and LCC content (being succeeded by Sabre Flight Shop)",
+          "context_ko": "Sabre는 NDC IT API로 NDC AirShopping을 제공하며, Bargain Finder Max는 ATPCO·NDC·LCC 콘텐츠를 통합하는 조회 엔드포인트(Sabre Flight Shop으로 대체 중)",
+          "relationship": "related"
+        },
+        {
+          "provider": "Travelport",
+          "term": "CatalogProductOfferings (Search API)",
+          "context": "Travelport's JSON Air API uses CatalogProductOfferingsRequest/Response for shopping; the contentSourceList toggles GDS vs NDC content",
+          "context_ko": "Travelport JSON Air API는 조회에 CatalogProductOfferingsRequest/Response를 사용하며 contentSourceList로 GDS·NDC 콘텐츠를 전환함",
+          "relationship": "related"
+        },
+        {
+          "provider": "OpenTravel",
+          "term": "OTA_AirLowFareSearchRQ / OTA_AirAvailRQ",
+          "context": "Legacy OpenTravel air shopping/availability messages that predate and parallel the NDC AirShopping offer flow",
+          "context_ko": "NDC AirShopping 오퍼 흐름에 앞서며 병행하는 레거시 OpenTravel 항공 조회·가용성 메시지",
+          "relationship": "related"
+        }
+      ],
       "relationships": [
         {
           "type": "child",
@@ -2408,6 +2724,22 @@
         "Room Allocation",
         "Inventory Allocation",
         "Contracted Allotment"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Oracle OPERA",
+          "term": "Block / Allocation (Allotment)",
+          "context": "OPERA holds rooms out of house inventory as a block allocation that a partner or group draws down (picks up) until cutoff.",
+          "context_ko": "OPERA는 파트너·그룹이 cutoff까지 pickup하는 block allocation으로 객실을 house inventory에서 떼어 보유한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Sabre Hospitality",
+          "term": "Allotment (SynXis ARI inventory)",
+          "context": "SynXis CRS distributes allotment inventory to channels and decrements it as the partner sells against the allocated block.",
+          "context_ko": "SynXis CRS는 allotment 재고를 채널에 배포하고 파트너가 할당 블록을 판매하면 차감한다.",
+          "relationship": "same"
+        }
       ],
       "relationships": [
         {
@@ -2517,6 +2849,22 @@
         "Ancillaries",
         "Add-on Service",
         "Optional Service"
+      ],
+      "providerTerms": [
+        {
+          "provider": "ATPCO",
+          "term": "Optional Services (Category 5 / Industry Sub Codes)",
+          "context": "ATPCO files and standardizes chargeable ancillaries as 'Optional Services', each identified by an industry sub code (RFISC) within an RFIC group; this is the pricing source for baggage, seats, and similar fees.",
+          "context_ko": "ATPCO는 유료 부가서비스를 'Optional Services'로 표준화·등록하며, 각 항목은 RFIC 그룹 내 산업 서브코드(RFISC)로 식별된다. 수하물·좌석 등 요금의 가격 산정 소스다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "NDC/IATA",
+          "term": "Service (ServiceList / a-la-carte Offer)",
+          "context": "In NDC, ancillaries are returned as 'Services' via the ServiceList message and sold as OfferItems/OrderItems alongside flights, rather than as separately priced ATPCO optional-service records.",
+          "context_ko": "NDC에서는 부가서비스가 ServiceList 메시지를 통해 'Service'로 반환되어 항공편과 함께 OfferItem/OrderItem으로 판매되며, 별도 가격의 ATPCO Optional Service 레코드 방식과 다르다.",
+          "relationship": "same"
+        }
       ],
       "relationships": [
         {
@@ -2794,6 +3142,29 @@
         "Availability, Rates and Inventory",
         "Availability Rates Inventory"
       ],
+      "providerTerms": [
+        {
+          "provider": "OpenTravel/IATA",
+          "term": "OTA_HotelAvailNotifRQ / OTA_HotelRateAmountNotifRQ / OTA_HotelInvCountNotifRQ",
+          "context": "The OpenTravel ARI message set splits ARI into three core push messages: availability/restrictions, rate amounts, and physical inventory counts (plus a transaction message), the de facto standard for hotel-to-channel ARI sync.",
+          "context_ko": "OpenTravel의 ARI 메시지 세트는 ARI를 가용성/제한, 요금액, 물리적 객실 재고 카운트의 세 가지 푸시 메시지(및 트랜잭션 메시지)로 나누며, 호텔-채널 간 ARI 동기화의 사실상 표준이다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Booking.com",
+          "term": "OTA_HotelAvailNotif / OTA_HotelRateAmountNotif (Connectivity APIs)",
+          "context": "Booking.com's Connectivity APIs implement the OpenTravel ARI messages to create/update inventory, restrictions, and rates for connected properties.",
+          "context_ko": "Booking.com의 Connectivity API는 연결된 숙소의 재고·제한·요금을 생성/수정하기 위해 OpenTravel ARI 메시지를 구현한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Expedia Group",
+          "term": "Availability & Rate APIs (Rapid / EQC)",
+          "context": "Expedia Group's supply-side Availability & Rate APIs are the channel through which properties push ARI to the Expedia marketplace.",
+          "context_ko": "Expedia Group의 공급자측 Availability & Rate API는 숙소가 Expedia 마켓플레이스에 ARI를 전송하는 채널이다.",
+          "relationship": "related"
+        }
+      ],
       "relationships": [
         {
           "type": "related",
@@ -2914,6 +3285,20 @@
           "term": "ARNK",
           "context": "Amadeus uses ARNK to denote an arrival-unknown surface sector",
           "context_ko": "Amadeus는 도착지 미상 지상 구간을 나타내기 위해 ARNK를 사용한다",
+          "relationship": "same"
+        },
+        {
+          "provider": "Amadeus",
+          "term": "ARNK / SP (arrival unknown surface segment)",
+          "context": "Amadeus enters an Arrival Unknown (ARNK) segment to preserve itinerary continuity across a surface gap between two air segments.",
+          "context_ko": "Amadeus는 두 항공 segment 사이의 surface gap에서 itinerary 연속성을 유지하기 위해 Arrival Unknown(ARNK) segment를 입력한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Travelport",
+          "term": "ARNK (Arrival Unknown) segment",
+          "context": "Travelport Universal API and cryptic formats insert an ARNK segment to flag an accepted lack of continuity in low-fare shopping and availability.",
+          "context_ko": "Travelport Universal API와 cryptic 포맷은 low-fare shopping/availability에서 수용된 연속성 결여를 표시하기 위해 ARNK segment를 삽입한다.",
           "relationship": "same"
         }
       ],
@@ -3073,6 +3458,22 @@
         "auth hold",
         "card hold"
       ],
+      "providerTerms": [
+        {
+          "provider": "Adyen",
+          "term": "Pre-authorisation / authorisation adjustment",
+          "context": "Adyen's term for an authorization that verifies funds without debiting and can later be increased or decreased before capture; final authorisation is the non-adjustable variant.",
+          "context_ko": "차감 없이 자금을 확인하고 캡처 전 증감 조정이 가능한 인증을 가리키는 Adyen 용어. 조정 불가형은 final authorisation.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Stripe",
+          "term": "Uncaptured PaymentIntent (capture_method=manual)",
+          "context": "Stripe holds funds with a manual-capture PaymentIntent that stays in the uncaptured state until captured or it expires.",
+          "context_ko": "수동 캡처 PaymentIntent로 자금을 잡아두며, 캡처되거나 만료될 때까지 uncaptured 상태로 유지하는 Stripe 방식.",
+          "relationship": "same"
+        }
+      ],
       "relationships": [
         {
           "type": "contrasts",
@@ -3156,6 +3557,22 @@
         "Automatic Refund Rule",
         "DOT Refund Rule",
         "Automatic Refunds of Airline Tickets and Ancillary Service Fees"
+      ],
+      "providerTerms": [
+        {
+          "provider": "ATPCO",
+          "term": "Category 33 (Voluntary Refunds) / involuntary refund handling",
+          "context": "ATPCO fare-rule category encoding the conditions and charges for refunds; airline-filed Cat 33 lets GDS/airline systems instantly audit penalties and compute the refund amount that a cancellation/significant-change refund (mandated by the DOT rule) is executed against.",
+          "context_ko": "환불 조건과 수수료를 코드화한 ATPCO 운임규정 카테고리. 항공사가 신고한 Cat 33을 통해 GDS/항공사 시스템이 페널티를 즉시 감사하고, (DOT 규칙이 의무화한) 취소·중대변경 환불이 실제로 정산되는 금액을 계산한다.",
+          "relationship": "related"
+        },
+        {
+          "provider": "Sabre",
+          "term": "Automated Exchange and Refund",
+          "context": "Sabre order-management product that automates ticket exchanges, reissues, and refunds during irregular operations using airline-filed rules (e.g., Category 33) to instantly audit penalties and process the refund, including involuntary cancellations.",
+          "context_ko": "비정상 운항 시 항공사 신고 규정(예: Category 33)으로 페널티를 즉시 감사하고 비자발 취소를 포함한 티켓 교환·재발행·환불을 자동화하는 Sabre 주문관리 제품.",
+          "relationship": "related"
+        }
       ],
       "relationships": [
         {
@@ -3449,6 +3866,13 @@
           "context": "Carriers participate with a GDS at an AVS (cached, status-message-driven) level or at higher real-time levels such as direct access or last-seat availability.",
           "context_ko": "항공사는 GDS와 AVS(캐시·status 메시지 기반) 수준 또는 direct access·last-seat availability 같은 상위 실시간 수준으로 participation한다.",
           "relationship": "related"
+        },
+        {
+          "provider": "Travelport",
+          "term": "AVS / NAVS (Numeric AVS)",
+          "context": "Carriers push AVS and Numeric AVS (NAVS) messages 24/7 to Travelport, which populate its in-house AVS/NAVS availability database used when direct-access is unavailable.",
+          "context_ko": "항공사는 AVS와 Numeric AVS(NAVS) 메시지를 24/7로 Travelport에 push하며, 이는 direct-access가 없을 때 사용되는 자체 AVS/NAVS availability DB를 채운다.",
+          "relationship": "narrower"
         }
       ],
       "relationships": [
@@ -3639,6 +4063,22 @@
         "Reward Redemption",
         "Mileage Redemption"
       ],
+      "providerTerms": [
+        {
+          "provider": "Amadeus",
+          "term": "SSR FQTR (FFR entry)",
+          "context": "In Amadeus a redemption booking is flagged by the SSR FQTR element (created via the FFR transaction), signalling the passenger is redeeming miles/points",
+          "context_ko": "Amadeus에서 보상 예약은 FFR 트랜잭션으로 생성되는 SSR FQTR 요소로 표시되어 승객이 마일/포인트를 사용함을 알린다",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "Amadeus",
+          "term": "SSR FQTU (FFU entry)",
+          "context": "A redemption specifically for a cabin upgrade is carried in the SSR FQTU element (FFU transaction) in Amadeus",
+          "context_ko": "좌석 업그레이드를 위한 보상은 Amadeus에서 SSR FQTU 요소(FFU 트랜잭션)로 처리된다",
+          "relationship": "narrower"
+        }
+      ],
       "relationships": [
         {
           "type": "broader",
@@ -3788,6 +4228,22 @@
         "Best Available Retail Rate",
         "Best Unrestricted Rate"
       ],
+      "providerTerms": [
+        {
+          "provider": "Oracle OPERA",
+          "term": "Best Available Rate (BAR) / Dynamic BAR (DBAR)",
+          "context": "OPERA configures BAR by Day, BAR by LOS and Best BAR by Day, returning the lowest available rate code per room type; negotiated rates can be based on a DBAR rate code.",
+          "context_ko": "OPERA는 BAR by Day, BAR by LOS, Best BAR by Day로 구성해 룸타입별 최저 요금코드를 반환하며, 협상 요금을 DBAR 요금코드에 연동할 수 있다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Sabre Hospitality",
+          "term": "BAR (SynXis CRS rate)",
+          "context": "SynXis CRS publishes BAR as the benchmark public rate distributed across GDS, OTA and direct channels.",
+          "context_ko": "SynXis CRS는 BAR을 GDS·OTA·다이렉트 채널에 배포되는 기준 공개 요금으로 게시한다.",
+          "relationship": "same"
+        }
+      ],
       "relationships": [
         {
           "type": "broader",
@@ -3904,6 +4360,13 @@
           "context": "Hotelbeds is a global B2B hotel bedbank/wholesaler distributing net inventory to travel sellers via API, a representative example of the bedbank model.",
           "context_ko": "Hotelbeds는 순(net) 인벤토리를 API를 통해 여행 판매자에게 분배하는 글로벌 B2B 호텔 베드뱅크/도매업체로, 베드뱅크 모델의 대표적인 예다.",
           "relationship": "example"
+        },
+        {
+          "provider": "Expedia Group",
+          "term": "EPS Rapid (Partner Collect / net rate)",
+          "context": "Expedia Partner Solutions' Rapid API resells Expedia's contracted hotel inventory at net rates to third-party sellers, functioning as a bedbank-style wholesale source alongside its retail OTA.",
+          "context_ko": "Expedia Partner Solutions의 Rapid API는 Expedia가 계약한 호텔 재고를 제3자 판매자에게 net 요금으로 재판매하며, 소매 OTA와 함께 베드뱅크형 도매 공급원 역할을 한다.",
+          "relationship": "related"
         }
       ],
       "relationships": [
@@ -4004,6 +4467,15 @@
         "Bid-Price Control",
         "Displacement Cost",
         "Opportunity Cost Threshold"
+      ],
+      "providerTerms": [
+        {
+          "provider": "PROS",
+          "term": "Bid price (deterministic / heuristic)",
+          "context": "In PROS RM bid prices are the leg optimization output; the heuristic bid price uses EMSR-derived displacement cost while the deterministic bid price uses LP shadow prices.",
+          "context_ko": "PROS RM에서 bid price는 레그 최적화 산출물로, heuristic bid price는 EMSR 기반 displacement cost를, deterministic bid price는 LP shadow price를 사용한다.",
+          "relationship": "same"
+        }
       ],
       "relationships": [
         {
@@ -4184,6 +4656,22 @@
         "BSA",
         "Blocked Space Agreement"
       ],
+      "providerTerms": [
+        {
+          "provider": "Amadeus",
+          "term": "Leased block / block-space indicator (\":\")",
+          "context": "In Amadeus availability displays a colon marks a leased-block codeshare where both operating and marketing carriers sell from the same aircraft, each holding a portion of the seat inventory under their own code and flight number.",
+          "context_ko": "아마데우스 가용성 화면에서 콜론(:)은 운항 항공사와 판매 항공사가 동일 항공기에서 각자 코드·편명으로 좌석을 판매하며 각각 좌석 재고의 일부를 보유하는 리스드 블록(블록 스페이스) 공동운항을 표시한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "IATA",
+          "term": "Block-space codeshare (SSIM)",
+          "context": "SSIM/codeshare data distinguishes block-space arrangements (fixed seat allotment) from free-flow codeshare via the operating-carrier and codeshare data elements distributed to GDSs and partners.",
+          "context_ko": "IATA SSIM 및 공동운항 데이터는 GDS·파트너에 배포되는 운항 항공사·공동운항 데이터 요소를 통해 블록 스페이스 방식(고정 좌석 할당)을 프리플로 공동운항과 구분한다.",
+          "relationship": "narrower"
+        }
+      ],
       "relationships": [
         {
           "type": "broader",
@@ -4334,6 +4822,36 @@
         "Book and Claim",
         "Book & Claim",
         "Book-and-Claim"
+      ],
+      "providerTerms": [
+        {
+          "provider": "RSB",
+          "term": "Book & Claim Unit (BCU)",
+          "context": "Roundtable on Sustainable Biomaterials' registered, certified attribute unit decoupled from physical SAF on its RSB Book & Claim Registry",
+          "context_ko": "RSB Book & Claim 레지스트리에서 물리적 SAF와 분리해 등록·인증하는 속성 단위(BCU)",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "RMI / SABA",
+          "term": "Sustainable Aviation Fuel Certificate (SAFc)",
+          "context": "Book-and-claim certificate (and SAFc Registry built with Energy Web) representing the environmental attributes of one tonne of neat SAF for Scope 1/Scope 3 claims",
+          "context_ko": "Energy Web와 구축한 SAFc 레지스트리에서 1톤 순수 SAF의 환경 속성을 나타내는 book-and-claim 인증서(Scope1/Scope3 주장용)",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "Shell",
+          "term": "Avelia",
+          "context": "Shell/Accenture/Amex GBT blockchain book-and-claim platform issuing SAF attribute certificates for Shell-traded volumes",
+          "context_ko": "Shell·Accenture·Amex GBT가 만든 블록체인 book-and-claim 플랫폼으로 Shell 거래량의 SAF 속성 인증서를 발행",
+          "relationship": "related"
+        },
+        {
+          "provider": "IATA",
+          "term": "SAF Registry (CADO)",
+          "context": "IATA's airline-operator-oriented Global SAF Registry/CADO system that records SAF volumes and attributes to enable book-and-claim accounting",
+          "context_ko": "항공사 운영자 관점에서 SAF 물량·속성을 기록해 book-and-claim 회계를 가능케 하는 IATA Global SAF Registry/CADO 시스템",
+          "relationship": "related"
+        }
       ],
       "relationships": [
         {
@@ -4491,6 +5009,15 @@
         "Booking Limits",
         "Authorization Level",
         "AU"
+      ],
+      "providerTerms": [
+        {
+          "provider": "PROS",
+          "term": "Authorized Units (AU) / Authorization level",
+          "context": "Network RM systems express the per-class sell ceiling as the Authorization (AU) level; advanced bid-price and AU control drive seat-availability decisions per departure.",
+          "context_ko": "네트워크 RM 시스템은 클래스별 판매 상한을 Authorization(AU) 레벨로 표현하며, 고도화된 bid price·AU 제어가 출발편별 좌석 가용성 결정을 이끈다.",
+          "relationship": "related"
+        }
       ],
       "relationships": [
         {
@@ -4894,6 +5421,22 @@
         "Cabin Grade",
         "Stateroom Grade",
         "Cabin Class"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Royal Caribbean International",
+          "term": "Stateroom category code (e.g. 4B, 6D, 8M, IX, SB)",
+          "context": "Royal Caribbean prices each cabin against an alphanumeric subcategory code layered on the four broad types (Interior/Oceanview/Balcony/Suite), encoding deck, location and view obstruction within a fare tier.",
+          "context_ko": "로열캐리비안은 인테리어/오션뷰/발코니/스위트 4대 유형 위에 4B, 6D, 8M 같은 영숫자 서브카테고리 코드를 두어 갑판·위치·시야 가림 여부와 운임 등급을 표현한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Celebrity Cruises",
+          "term": "Stateroom category (Interior / Ocean View / Veranda / Concierge Class / AquaClass / Suite, lettered codes)",
+          "context": "Celebrity grades inventory into six broad classes, each subdivided by lettered category codes that drive the per-person fare and onboard perks (e.g. Concierge Class, AquaClass as priced sub-tiers).",
+          "context_ko": "셀러브리티는 재고를 6개 대분류로 나누고 각 분류를 알파벳 카테고리 코드로 세분해 1인당 운임과 온보드 혜택(예: 컨시어지 클래스, 아쿠아 클래스 등 가격 세부 등급)을 결정한다.",
+          "relationship": "same"
+        }
       ],
       "relationships": [
         {
@@ -5321,6 +5864,22 @@
         "Vehicle Class",
         "Car Type Group"
       ],
+      "providerTerms": [
+        {
+          "provider": "Amadeus",
+          "term": "Car type / pseudo code",
+          "context": "Amadeus expresses the sellable car grouping through ACRISS car type codes plus pseudo codes that map predefined groups of vehicles a supplier sells together.",
+          "context_ko": "Amadeus는 판매 가능한 차량 그룹을 ACRISS car type code와, 공급자가 묶어 파는 사전 정의 그룹을 매핑하는 pseudo code로 표현한다.",
+          "relationship": "related"
+        },
+        {
+          "provider": "OpenTravel (OTA)",
+          "term": "VehAvailRate / Vehicle",
+          "context": "In OTA's OTA_VehAvailRate messages the priced sellable unit is the Vehicle (carrying its ACRISS code) against which rates are returned.",
+          "context_ko": "OTA의 OTA_VehAvailRate 메시지에서 가격이 매겨지는 판매 단위는 (ACRISS 코드를 지닌) Vehicle이며 이에 대해 요금이 반환된다.",
+          "relationship": "related"
+        }
+      ],
       "relationships": [
         {
           "type": "related",
@@ -5394,6 +5953,13 @@
           "context": "The interbank network operating the rules, switching and interchange between issuers and acquirers",
           "context_ko": "발급사와 매입사 사이의 규칙·스위칭·인터체인지를 운영하는 은행 간 네트워크",
           "relationship": "same"
+        },
+        {
+          "provider": "American Express",
+          "term": "American Express (closed-loop network)",
+          "context": "Unlike Visa/Mastercard's four-party model, Amex traditionally operates a closed-loop scheme acting as both issuer and acquirer.",
+          "context_ko": "Visa/Mastercard의 4당사자 모델과 달리 Amex는 전통적으로 발급사이자 매입사 역할을 동시에 하는 폐쇄형(closed-loop) 스킴으로 운영된다.",
+          "relationship": "narrower"
         }
       ],
       "relationships": [
@@ -5653,6 +6219,22 @@
         "GDS Chain Code",
         "Two-Letter Chain Code"
       ],
+      "providerTerms": [
+        {
+          "provider": "GDS (Amadeus/Sabre/Travelport)",
+          "term": "Two-letter chain code + GDS property code",
+          "context": "In GDS hotel distribution the 2-letter chain code prefixes a GDS-specific property code; each GDS holds a different property code for the same hotel.",
+          "context_ko": "GDS 호텔 유통에서 2자리 체인 코드는 GDS별 프로퍼티 코드 앞에 붙으며, 같은 호텔이라도 GDS마다 프로퍼티 코드가 다르다.",
+          "relationship": "broader"
+        },
+        {
+          "provider": "OpenTravel (OTA)",
+          "term": "ChainCode / BrandCode",
+          "context": "OpenTravel/HTNG attributes on PropertyInfo identifying the chain and brand (e.g., ChainCode STARWOOD, BrandCode WESTIN) in hotel reservation messages.",
+          "context_ko": "OpenTravel/HTNG의 PropertyInfo 속성으로 체인·브랜드를 식별한다(예: ChainCode STARWOOD, BrandCode WESTIN). 호텔 예약 메시지에 사용.",
+          "relationship": "same"
+        }
+      ],
       "relationships": [
         {
           "type": "related",
@@ -5840,6 +6422,29 @@
         "Payment Dispute",
         "Card Dispute"
       ],
+      "providerTerms": [
+        {
+          "provider": "Visa (Verifi)",
+          "term": "Verifi RDR (Rapid Dispute Resolution)",
+          "context": "Visa-only automated pre-dispute resolution that auto-refunds qualifying transactions by merchant rules before a chargeback is filed.",
+          "context_ko": "Visa 전용 자동 사전분쟁 해결 도구로, 가맹점 규칙에 따라 적격 거래를 차지백 발생 전 자동 환불한다.",
+          "relationship": "related"
+        },
+        {
+          "provider": "Mastercard (Ethoca)",
+          "term": "Ethoca Alerts",
+          "context": "Mastercard's real-time issuer fraud/dispute notifications letting merchants refund before a Mastercard chargeback is filed.",
+          "context_ko": "Mastercard 측 실시간 발급사 사기/분쟁 알림으로, 차지백 접수 전에 가맹점이 환불하도록 한다.",
+          "relationship": "related"
+        },
+        {
+          "provider": "Visa",
+          "term": "Compelling Evidence 3.0 (Reason Code 10.4)",
+          "context": "Visa evidence standard letting merchants reverse or prevent card-absent fraud chargebacks by matching prior undisputed transactions.",
+          "context_ko": "이전 미분쟁 거래와 매칭해 비대면 사기 차지백을 역전·예방하게 하는 Visa의 증빙 기준(사유코드 10.4).",
+          "relationship": "related"
+        }
+      ],
       "relationships": [
         {
           "type": "related",
@@ -6012,6 +6617,15 @@
         "Metropolitan Area Code",
         "Multi-Airport City Code"
       ],
+      "providerTerms": [
+        {
+          "provider": "IATA",
+          "term": "Metropolitan area code",
+          "context": "IATA term for a multi-airport city code (e.g., NYC, LON, TYO) that aggregates the airports serving a metro area in schedules and availability.",
+          "context_ko": "여러 공항을 가진 도시 코드(예: NYC, LON, TYO)를 가리키는 IATA 용어로, 스케줄·좌석조회에서 대도시권 공항들을 묶는다.",
+          "relationship": "same"
+        }
+      ],
       "relationships": [
         {
           "type": "narrower",
@@ -6164,6 +6778,22 @@
         "Class of Service",
         "Class of Booking"
       ],
+      "providerTerms": [
+        {
+          "provider": "IATA/ATPCO",
+          "term": "RBD (Reservation Booking Designator)",
+          "context": "Standard term for the single-letter booking class recorded on the segment; carried in fare and availability data.",
+          "context_ko": "세그먼트에 기록되는 단일 문자 예약 클래스를 가리키는 표준 용어로, 운임·좌석조회 데이터에 담긴다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "NDC/IATA",
+          "term": "ResBookDesigCode",
+          "context": "NDC schema element carrying the booking-class (RBD) letter for a segment, including the operating carrier's RBD when different.",
+          "context_ko": "세그먼트의 예약 클래스(RBD) 문자를 담는 NDC 스키마 요소로, 운항사 RBD가 다를 경우 그것도 포함한다.",
+          "relationship": "same"
+        }
+      ],
       "relationships": [
         {
           "type": "sameAs",
@@ -6250,6 +6880,27 @@
           "context": "GDS maps each fare to one or more booking-class letters via Record 6 RBD data.",
           "context_ko": "GDS는 Record 6 RBD 데이터를 통해 각 운임을 하나 이상의 booking class 문자에 매핑한다.",
           "relationship": "same"
+        },
+        {
+          "provider": "Amadeus",
+          "term": "Booking class / RBD",
+          "context": "In Amadeus the single-letter inventory code is the booking class (Reservation Booking Designator); the system accepts one character when selling a class of service.",
+          "context_ko": "Amadeus에서는 단일 문자 인벤토리 코드를 booking class(RBD)라 부르며, 클래스 판매 시 한 글자를 입력한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Sabre",
+          "term": "Booking class / RBD",
+          "context": "Sabre also refers to the inventory-class letter as the booking class or RBD used to sell and price a seat.",
+          "context_ko": "Sabre 역시 인벤토리 클래스 문자를 좌석 판매·운임계산에 쓰는 booking class(RBD)로 부른다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "NDC/IATA",
+          "term": "RBD (Reservation Booking Designator)",
+          "context": "IATA standardizes the one-letter code as the RBD; values (Y, J, M, K, etc.) are carrier-defined and not standardized across airlines.",
+          "context_ko": "IATA는 한 글자 코드를 RBD로 표준화하며, 값(Y, J, M, K 등)은 항공사별로 정의되어 항공사 간 통일되지 않는다.",
+          "relationship": "same"
         }
       ],
       "relationships": [
@@ -6318,6 +6969,29 @@
         "Closed to Arrival",
         "Close to Arrival",
         "No Arrivals"
+      ],
+      "providerTerms": [
+        {
+          "provider": "OpenTravel / HTNG",
+          "term": "RestrictionStatus Restriction=\"Arrival\" Status=\"Close\"",
+          "context": "In OTA_HotelAvailNotifRQ ARI sync, CTA is expressed as a RestrictionStatus element with Restriction=\"Arrival\" and Status=\"Close\".",
+          "context_ko": "OTA_HotelAvailNotifRQ ARI 동기화에서 CTA는 Restriction=\"Arrival\", Status=\"Close\"인 RestrictionStatus 요소로 표현된다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Booking.com",
+          "term": "Closed to Arrival restriction",
+          "context": "Booking.com connectivity sets a Closed-to-Arrival restriction so reservations cannot check in on the affected date while stays through it remain allowed.",
+          "context_ko": "Booking.com 커넥티비티는 해당 일자에 체크인할 수 없도록 Closed-to-Arrival 제한을 설정하고, 그 날을 통과하는 숙박은 허용한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Expedia",
+          "term": "Closed to Arrival (Availability & Rates API)",
+          "context": "Expedia's Availability and Rates API requires partners to support closed-to-arrival restrictions for a single date or date range.",
+          "context_ko": "Expedia의 Availability and Rates API는 파트너가 단일 일자 또는 기간에 대한 closed-to-arrival 제한을 지원하도록 요구한다.",
+          "relationship": "same"
+        }
       ],
       "relationships": [
         {
@@ -6485,6 +7159,29 @@
         "Code-share Agreement",
         "Codeshare Flight"
       ],
+      "providerTerms": [
+        {
+          "provider": "IATA",
+          "term": "Codeshare data element (SSIM DEI 50)",
+          "context": "In the IATA Standard Schedules Information Manual, codeshare status on a flight is signaled by the presence of DEI 50, with the operating carrier carried in related data elements, and distributed to GDSs and partners.",
+          "context_ko": "IATA 표준 스케줄 정보 매뉴얼(SSIM)에서 항공편의 공동운항 여부는 DEI 50의 존재로 표시되며, 운항 항공사는 관련 데이터 요소에 담겨 GDS·파트너에 배포된다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "NDC/IATA",
+          "term": "OperatingCarrier / MarketingCarrier",
+          "context": "In NDC AirShopping/Offer-Order messages each flight segment carries both a MarketingCarrier.AirlineID (the selling carrier's code) and an OperatingCarrier.AirlineID, making the codeshare relationship explicit for disclosure.",
+          "context_ko": "NDC의 AirShopping/Offer-Order 메시지에서 각 항공 구간은 MarketingCarrier.AirlineID(판매 항공사 코드)와 OperatingCarrier.AirlineID를 함께 담아, 고지를 위해 공동운항 관계를 명시적으로 나타낸다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Amadeus",
+          "term": "Code-share availability indicator (\"*\" wet-lease, \":\" leased block)",
+          "context": "Amadeus cryptic availability marks code-share flights with indicators—an asterisk for wet-lease code-share (only the marketing carrier sells) and a colon for leased-block code-share—next to the availability line.",
+          "context_ko": "아마데우스 크립틱 가용성은 공동운항 항공편을 가용성 라인 옆 기호로 표시한다 — 별표(*)는 웻 리스 공동운항(판매 항공사만 판매), 콜론(:)은 리스드 블록 공동운항을 나타낸다.",
+          "relationship": "related"
+        }
+      ],
       "relationships": [
         {
           "type": "parent",
@@ -6616,6 +7313,22 @@
         "Collision Damage Waiver",
         "Damage Waiver",
         "CDW"
+      ],
+      "providerTerms": [
+        {
+          "provider": "US/Canada rental market",
+          "term": "Loss Damage Waiver (LDW)",
+          "context": "In the US and Canada the collision damage waiver is generally branded and sold as Loss Damage Waiver (LDW), which also bundles theft.",
+          "context_ko": "미국·캐나다 렌터카 시장에서는 collision damage waiver를 보통 Loss Damage Waiver(LDW)로 명명·판매하며 도난까지 포함한다.",
+          "relationship": "broader"
+        },
+        {
+          "provider": "OpenTravel (OTA)",
+          "term": "VCT code 'CDW'",
+          "context": "OTA's Vehicle Coverage Type (VCT) code list assigns CDW its own coverage code so suppliers and brokers exchange the waiver consistently in vehicle messages.",
+          "context_ko": "OTA의 Vehicle Coverage Type(VCT) 코드 리스트는 CDW에 별도 보장 코드를 부여해 차량 메시지에서 공급자·브로커가 일관되게 교환한다.",
+          "relationship": "same"
+        }
       ],
       "relationships": [
         {
@@ -6854,6 +7567,22 @@
         "Package Travel Insurance",
         "Single-Trip Comprehensive Plan"
       ],
+      "providerTerms": [
+        {
+          "provider": "OpenTravel (OTA)",
+          "term": "OTA_InsuranceQuoteRQ / OTA_InsurancePlanSearchRQ",
+          "context": "OpenTravel's standardized XML message pair used by sellers to search for and quote a travel insurance plan; the InsurancePlan it returns is typically a bundled comprehensive plan covering cancellation, baggage, delay and medical.",
+          "context_ko": "OpenTravel의 표준 XML 메시지 쌍으로, 판매자가 여행보험 플랜을 검색하고 견적을 받을 때 사용한다. 반환되는 InsurancePlan은 보통 취소·수하물·지연·의료를 묶은 종합형 플랜이다.",
+          "relationship": "related"
+        },
+        {
+          "provider": "Amadeus",
+          "term": "Amadeus Insurance",
+          "context": "Amadeus's GDS-integrated insurance cross-sell module that distributes bundled travel insurance plans to agencies and airlines as a booking ancillary.",
+          "context_ko": "Amadeus의 GDS 통합 보험 크로스셀 모듈로, 종합 여행보험 플랜을 예약 부가상품으로 여행사·항공사에 유통한다.",
+          "relationship": "related"
+        }
+      ],
       "relationships": [
         {
           "type": "parent",
@@ -7085,6 +7814,15 @@
         "Connecting Itinerary",
         "Online Connection",
         "Interline Connection"
+      ],
+      "providerTerms": [
+        {
+          "provider": "IATA",
+          "term": "Minimum Connecting Time (MCT, SSIM Chapter 8)",
+          "context": "IATA SSIM Chapter 8 defines the MCT standard—the shortest interval to transfer a passenger and bags between flights at a point—which GDSs apply to determine whether a connection is bookable as a valid connection.",
+          "context_ko": "IATA SSIM 8장은 한 지점에서 승객과 수하물을 항공편 간 환승하는 데 필요한 최소 시간(MCT) 표준을 정의하며, GDS는 이를 적용해 해당 연결이 유효한 연결편으로 예약 가능한지 판단한다.",
+          "relationship": "related"
+        }
       ],
       "relationships": [
         {
@@ -7372,6 +8110,29 @@
         "Non-CO2 Effects",
         "Non-CO2 Climate Effects of Aviation"
       ],
+      "providerTerms": [
+        {
+          "provider": "Breakthrough Energy",
+          "term": "Contrails.org / contrail management",
+          "context": "Breakthrough Energy platform coordinating contrail science, open models and avoidance trials to mitigate non-CO2 warming",
+          "context_ko": "비-CO2 온난화 완화를 위해 컨트레일 과학·오픈 모델·회피 시험을 조율하는 Breakthrough Energy 플랫폼",
+          "relationship": "related"
+        },
+        {
+          "provider": "Google Research",
+          "term": "Contrail forecast / contrail risk maps",
+          "context": "AI satellite-based prediction of ice-supersaturated regions producing contrail risk maps used to re-route flights and avoid persistent contrails",
+          "context_ko": "얼음 과포화 영역을 AI·위성으로 예측해 컨트레일 위험 지도를 만들어 항로 재설정으로 지속성 컨트레일을 회피",
+          "relationship": "related"
+        },
+        {
+          "provider": "EUROCONTROL",
+          "term": "MUAC contrail avoidance trial",
+          "context": "Maastricht Upper Area Control trial adjusting altitudes via ATC to avoid forming climate-warming contrails",
+          "context_ko": "관제(ATC)로 고도를 조정해 기후 온난화 컨트레일 형성을 회피하는 Maastricht Upper Area Control 시험",
+          "relationship": "related"
+        }
+      ],
       "relationships": [
         {
           "type": "related",
@@ -7519,6 +8280,22 @@
         "Negotiated Rate",
         "Corporate Negotiated Rate",
         "Company Rate"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Oracle OPERA",
+          "term": "Negotiated rate code (corporate)",
+          "context": "OPERA stores a corporate rate as a negotiated rate code linked to a company/agent profile, often configured as a discount off a BAR/DBAR base rate.",
+          "context_ko": "OPERA는 corporate 요금을 회사·에이전트 프로파일에 연결된 negotiated 요금코드로 저장하며, 보통 BAR/DBAR 기준요금에서 할인하도록 구성한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Sabre Hospitality",
+          "term": "Negotiated rate (GDS corporate rate)",
+          "context": "SynXis loads corporate rates as negotiated GDS rates accessed via a corporate/rate access code, subject to negotiated-rate audits.",
+          "context_ko": "SynXis는 corporate 요금을 corporate/rate access 코드로 접근하는 negotiated GDS 요금으로 로딩하며 negotiated-rate audit 대상이 된다.",
+          "relationship": "same"
+        }
       ],
       "relationships": [
         {
@@ -7724,6 +8501,34 @@
           "term": "Verified Carbon Unit (VCU)",
           "context": "VCS-issued credit type assessed by ICAO's TAB for CORSIA eligibility",
           "context_ko": "ICAO TAB가 CORSIA 적격성을 평가하는 VCS 발행 배출권 유형",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "Gold Standard",
+          "term": "Verified Emission Reduction (VER)",
+          "context": "Gold Standard-issued credit type approved by ICAO's TAB as a CORSIA Eligible Emissions Unit",
+          "context_ko": "ICAO TAB가 CORSIA 적격 배출 단위로 승인한 Gold Standard 발행 배출권 유형(VER)",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "ACR",
+          "term": "Emission Reduction Ton (ERT)",
+          "context": "American Carbon Registry credit unit (one tonne CO2) eligible to meet CORSIA offsetting requirements",
+          "context_ko": "CORSIA 상쇄 요건 충족에 적격인 American Carbon Registry 배출권 단위(1톤 CO2, ERT)",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "Climate Action Reserve",
+          "term": "Climate Reserve Tonne (CRT)",
+          "context": "Climate Action Reserve credit unit approved by ICAO as a CORSIA Eligible Emissions Unit",
+          "context_ko": "ICAO가 CORSIA 적격 배출 단위로 승인한 Climate Action Reserve 배출권 단위(CRT)",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "ART / TREES",
+          "term": "TREES Credit",
+          "context": "Architecture for REDD+ Transactions jurisdictional REDD+ credit approved by ICAO Council for CORSIA",
+          "context_ko": "ICAO 이사회가 CORSIA용으로 승인한 ART의 관할권 단위 REDD+ 배출권(TREES Credit)",
           "relationship": "narrower"
         }
       ],
@@ -7997,6 +8802,13 @@
           "context": "Amadeus publishes cryptic coupon status codes such as O (Open for use), F (Flown/used), and E (Exchanged) in the e-ticket record.",
           "context_ko": "Amadeus는 전자 항공권 기록에 O(Open for use), F(Flown/used), E(Exchanged) 등의 크립틱 쿠폰 상태 코드를 게시한다.",
           "relationship": "same"
+        },
+        {
+          "provider": "NDC/IATA",
+          "term": "CouponInfo/Status (TicketDocInfo)",
+          "context": "In NDC OrderViewRS, each flight/value coupon's lifecycle state is exposed in the TicketDocument's CouponInfo/Status element (e.g., 'E' for Exchanged/reissued), letting NDC agents see open, flown, refunded, or voided states.",
+          "context_ko": "NDC OrderViewRS에서 각 비행/가치 쿠폰의 상태는 TicketDocument의 CouponInfo/Status 요소(예: 교환/재발행 시 'E')로 노출되어, NDC 대리점이 open·flown·refunded·voided 상태를 확인할 수 있다.",
+          "relationship": "same"
         }
       ],
       "relationships": [
@@ -8087,6 +8899,22 @@
         "Central Reservation System",
         "Central Reservations System",
         "Hotel CRS"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Sabre Hospitality",
+          "term": "SynXis Central Reservations",
+          "context": "SynXis CR is Sabre Hospitality's hotel CRS that holds central inventory/rates and distributes ARI plus receives reservations across GDS, OTA, and brand.com channels.",
+          "context_ko": "SynXis CR은 Sabre Hospitality의 호텔 CRS로, 중앙 재고/요금을 보유하고 ARI를 배포하며 GDS·OTA·브랜드닷컴 채널 전반에서 예약을 수신한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "OpenTravel/HTNG",
+          "term": "OTA_HotelResNotifRQ (CRS reservation delivery)",
+          "context": "Standards bodies define CRS-to-PMS reservation delivery via the OpenTravel/HTNG HotelResNotif message that pushes new/modify/cancel bookings from the central system.",
+          "context_ko": "표준 단체들은 중앙 시스템에서 신규/변경/취소 예약을 푸시하는 OpenTravel/HTNG HotelResNotif 메시지를 통해 CRS-PMS 간 예약 전달을 정의한다.",
+          "relationship": "related"
+        }
       ],
       "relationships": [
         {
@@ -8205,6 +9033,22 @@
         "Cruise Fare",
         "Cruise-Only Rate"
       ],
+      "providerTerms": [
+        {
+          "provider": "Holland America Line",
+          "term": "Cruise Fare (base) vs. Have It All",
+          "context": "HAL markets the bare voyage rate as its base Cruise Fare, contrasted with the bundled 'Have It All' fare that adds drinks, Wi-Fi, specialty dining and a shore-excursion credit — i.e. cruise-only is the un-bundled tier.",
+          "context_ko": "HAL은 순수 항해 요금을 기본 'Cruise Fare'로 판매하며, 음료·와이파이·스페셜티 다이닝·기항지 투어 크레딧을 묶은 'Have It All' 요금과 대비한다. 즉 크루즈온리는 번들이 빠진 등급이다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Princess Cruises",
+          "term": "Princess Standard fare (vs. Princess Plus / Princess Premier)",
+          "context": "Princess sells a base 'Standard' cruise fare that can be upgraded to Plus or Premier packages bundling Wi-Fi, drinks and gratuities; the Standard tier is the cruise-only baseline.",
+          "context_ko": "프린세스는 기본 'Standard' 크루즈 운임을 판매하고 이를 와이파이·음료·팁을 묶은 Plus 또는 Premier 패키지로 업그레이드할 수 있으며, Standard 등급이 크루즈온리 기준선이다.",
+          "relationship": "same"
+        }
+      ],
       "relationships": [
         {
           "type": "related",
@@ -8282,6 +9126,29 @@
         "CDP",
         "Customer Data Platform (CDP)"
       ],
+      "providerTerms": [
+        {
+          "provider": "Salesforce",
+          "term": "Data Cloud",
+          "context": "Salesforce markets its CDP as Data Cloud, unifying customer data across its Marketing/Sales/Service/Commerce clouds into real-time profiles",
+          "context_ko": "Salesforce는 자사 CDP를 Data Cloud로 출시하며 Marketing/Sales/Service/Commerce 전반의 고객 데이터를 실시간 프로파일로 통합한다",
+          "relationship": "same"
+        },
+        {
+          "provider": "Adobe",
+          "term": "Real-Time CDP",
+          "context": "Adobe's CDP product, Real-Time CDP, ingests streaming data to build real-time customer profiles for B2C experiences",
+          "context_ko": "Adobe의 CDP 제품 Real-Time CDP는 스트리밍 데이터를 수집해 B2C 경험용 실시간 고객 프로파일을 구성한다",
+          "relationship": "same"
+        },
+        {
+          "provider": "Twilio",
+          "term": "Segment",
+          "context": "Twilio Segment is a developer-oriented CDP known for broad source/destination integrations feeding unified profiles",
+          "context_ko": "Twilio Segment는 폭넓은 소스/대상 연동으로 통합 프로파일을 공급하는 개발자 지향 CDP다",
+          "relationship": "same"
+        }
+      ],
       "relationships": [
         {
           "type": "related",
@@ -8356,6 +9223,29 @@
         "Passenger Profile",
         "Guest Profile",
         "Profile"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Oracle OPERA (PMS)",
+          "term": "Profile (Guest Profile)",
+          "context": "OPERA stores guest/company/agent Profiles holding identity, address, preferences, memberships and stay history, shareable across properties in a chain",
+          "context_ko": "OPERA는 신원·주소·선호·멤버십·투숙이력을 담은 게스트/회사/에이전트 프로파일을 저장하며 체인 내 호텔 간 공유한다",
+          "relationship": "same"
+        },
+        {
+          "provider": "Sabre Hospitality (SynXis)",
+          "term": "Guest Profile",
+          "context": "SynXis Profile Management APIs synchronise Guest/Booker/Company profiles from a CRM into the platform for use in reservations and delivery to PMS/CRM",
+          "context_ko": "SynXis 프로파일 관리 API는 CRM의 Guest/Booker/Company 프로파일을 플랫폼에 동기화해 예약 및 PMS/CRM 전달에 사용한다",
+          "relationship": "same"
+        },
+        {
+          "provider": "Amadeus",
+          "term": "Profile (PNR Profile)",
+          "context": "Amadeus Profiles store reusable traveller/company data (names, FF, payment, preferences) that can be applied when building a PNR",
+          "context_ko": "Amadeus 프로파일은 PNR 작성 시 적용할 수 있는 재사용 가능한 여행자/회사 데이터(성명·FF·결제·선호)를 저장한다",
+          "relationship": "same"
+        }
       ],
       "relationships": [
         {
@@ -8450,6 +9340,15 @@
         "Cut-off Date",
         "Block Cutoff",
         "Release Date (group)"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Oracle OPERA",
+          "term": "Block Cutoff (cutoff date / cutoff days)",
+          "context": "OPERA's Block Cutoff releases unpicked-up rooms held in a block allocation on or before the cutoff date set on the block header or per room type/date.",
+          "context_ko": "OPERA의 Block Cutoff은 블록 헤더 또는 룸타입·일자별로 설정한 cutoff 일자 이전에 pickup되지 않은 블록 객실을 반환한다.",
+          "relationship": "same"
+        }
       ],
       "relationships": [
         {
@@ -8814,6 +9713,27 @@
           "context": "SITA offers a shared departure-control platform used by many airlines",
           "context_ko": "SITA는 다수 항공사가 사용하는 공유형 출발 통제 플랫폼을 제공한다",
           "relationship": "narrower"
+        },
+        {
+          "provider": "Amadeus",
+          "term": "Altéa Departure Control",
+          "context": "Amadeus Altéa Departure Control (Customer Management / Flight Management) is the market-leading new-generation DCS handling check-in, seating and boarding.",
+          "context_ko": "Amadeus Altéa Departure Control(Customer Management / Flight Management)은 check-in, 좌석, boarding을 처리하는 시장 선도 신세대 DCS다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Sabre",
+          "term": "Sabre Departure Control",
+          "context": "Sabre's Departure Control suite provides airport check-in, boarding and load-control functions linked to the reservation/inventory host.",
+          "context_ko": "Sabre의 Departure Control 제품군은 예약/inventory host와 연동된 공항 check-in, boarding, load control 기능을 제공한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Hitit",
+          "term": "Crane DCS",
+          "context": "Hitit's Crane DCS is a web-based real-time DCS for passenger handling and load control, deployable standalone with any reservation system.",
+          "context_ko": "Hitit의 Crane DCS는 승객 핸들링과 load control을 위한 웹 기반 실시간 DCS로, 어떤 예약 시스템과도 독립 배포 가능하다.",
+          "relationship": "same"
         }
       ],
       "relationships": [
@@ -9011,6 +9931,22 @@
         "DTC",
         "Digital Travel Credential (DTC)"
       ],
+      "providerTerms": [
+        {
+          "provider": "ICAO",
+          "term": "DTC-VC (Virtual Component)",
+          "context": "ICAO names the cryptographically secured digital identity file derived from the eMRTD the DTC Virtual Component",
+          "context_ko": "ICAO는 eMRTD에서 파생된 암호학적으로 보호되는 디지털 신원 파일을 DTC 가상 구성요소(DTC-VC)라 부른다",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "ICAO",
+          "term": "DTC-PC (Physical Component)",
+          "context": "ICAO names the medium that stores and is cryptographically bound to the DTC-VC the DTC Physical Component",
+          "context_ko": "ICAO는 DTC-VC를 저장하고 암호학적으로 결합되는 매체를 DTC 물리 구성요소(DTC-PC)라 부른다",
+          "relationship": "narrower"
+        }
+      ],
       "relationships": [
         {
           "type": "related",
@@ -9166,6 +10102,22 @@
         "Direct Connection",
         "Airline Direct Connect",
         "Supplier Direct Connect"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Travelport",
+          "term": "Travelport NDC / Rich Content and Branding direct content",
+          "context": "Travelport delivers airline-direct NDC content to sellers as an alternative to a carrier-built bespoke Direct Connect",
+          "context_ko": "Travelport는 항공사가 직접 구축한 맞춤 Direct Connect 대안으로 항공사 직접 NDC 콘텐츠를 판매자에게 전달함",
+          "relationship": "related"
+        },
+        {
+          "provider": "NDC/IATA",
+          "term": "NDC API direct connection",
+          "context": "A carrier's NDC API is the modern standardized form of an airline Direct Connect, replacing proprietary point-to-point integrations",
+          "context_ko": "항공사의 NDC API는 독자적 점대점 연동을 대체하는 항공사 Direct Connect의 현대적 표준화 형태",
+          "relationship": "related"
+        }
       ],
       "relationships": [
         {
@@ -9435,6 +10387,27 @@
           "context": "Scheme requirement that the cardholder must affirmatively opt into DCC and may decline to pay in local currency.",
           "context_ko": "카드 소지자가 DCC를 적극적으로 선택해야 하며 현지 통화 결제를 위해 거절할 수 있다는 스킴 요건.",
           "relationship": "related"
+        },
+        {
+          "provider": "Fexco",
+          "term": "Fexco DCC",
+          "context": "Major third-party DCC technology and FX-rate provider pre-integrated with acquirers and PSPs at POS and e-commerce.",
+          "context_ko": "POS·전자상거래에서 매입사·PSP와 사전 통합된 주요 제3자 DCC 기술 및 환율 제공업체.",
+          "relationship": "related"
+        },
+        {
+          "provider": "Global Blue",
+          "term": "Global Blue DCC / Currency Choice",
+          "context": "DCC rate-and-technology provider, well known in travel retail, offering cardholders home-currency payment at checkout.",
+          "context_ko": "트래블 리테일에서 잘 알려진 DCC 환율·기술 제공업체로, 결제 시 카드소지자에게 자국 통화 결제를 제공한다.",
+          "relationship": "related"
+        },
+        {
+          "provider": "Planet",
+          "term": "Planet (proprietary DCC)",
+          "context": "Acquirer/payments group offering an in-house DCC solution widely deployed in hospitality and retail.",
+          "context_ko": "호스피탈리티·리테일에 널리 배포된 자체 DCC 솔루션을 제공하는 매입/결제 그룹.",
+          "relationship": "related"
         }
       ],
       "relationships": [
@@ -9673,6 +10646,15 @@
         "Demand-Based Pricing",
         "Yield Pricing"
       ],
+      "providerTerms": [
+        {
+          "provider": "Oracle OPERA",
+          "term": "Dynamic BAR Base Rate (DBAR)",
+          "context": "OPERA implements dynamic pricing via Dynamic BAR base rates that move by day, with negotiated rate codes deriving from the DBAR level.",
+          "context_ko": "OPERA는 일자별로 변동하는 Dynamic BAR 기준요금으로 동적 가격을 구현하며 협상 요금코드가 DBAR 수준에서 파생된다.",
+          "relationship": "narrower"
+        }
+      ],
       "relationships": [
         {
           "type": "related",
@@ -9764,6 +10746,15 @@
         "Electronic Ticket",
         "ETKT",
         "Electronic Ticketing"
+      ],
+      "providerTerms": [
+        {
+          "provider": "NDC/IATA",
+          "term": "TicketDocument (TicketDocInfo)",
+          "context": "In an NDC order, the electronic ticket is represented by the TicketDocument element inside TicketDocInfo of OrderViewRS, carrying the 13-digit ticket number, coupons, and statuses; under ONE Order it is being consolidated into the single Order record.",
+          "context_ko": "NDC 주문에서 전자항공권은 OrderViewRS의 TicketDocInfo 내 TicketDocument 요소로 표현되어 13자리 항공권번호·쿠폰·상태를 담으며, ONE Order에서는 단일 Order 레코드로 통합되고 있다.",
+          "relationship": "same"
+        }
       ],
       "relationships": [
         {
@@ -9909,6 +10900,22 @@
         "UN/EDIFACT",
         "Electronic Data Interchange for Administration, Commerce and Transport",
         "PADIS EDIFACT"
+      ],
+      "providerTerms": [
+        {
+          "provider": "NDC/IATA",
+          "term": "EDIST (NDC XML)",
+          "context": "IATA's Enhanced and Simplified Distribution XML messages are the modern successor to EDIFACT for airline shopping and ordering",
+          "context_ko": "IATA의 EDIST XML 메시지는 항공 조회·주문에서 EDIFACT를 잇는 현대적 후속 표준",
+          "relationship": "related"
+        },
+        {
+          "provider": "IATA PADIS",
+          "term": "PADIS EDIFACT message directory",
+          "context": "IATA PADIS governs and publishes the EDIFACT passenger-travel message standards (Type A interactive messaging)",
+          "context_ko": "IATA PADIS가 EDIFACT 여객 여행 메시지 표준(Type A 대화형 메시징)을 관리·발행함",
+          "relationship": "broader"
+        }
       ],
       "relationships": [
         {
@@ -10130,6 +11137,15 @@
         "Embarkation Day",
         "Check-in"
       ],
+      "providerTerms": [
+        {
+          "provider": "Princess Cruises",
+          "term": "OceanReady / Green Lane",
+          "context": "Princess digitizes embarkation via the MedallionClass app: guests who complete all OceanReady checklist steps and ship their Medallion earn 'Green Lane' status for expedited, document-validated boarding.",
+          "context_ko": "프린세스는 메달리언클래스 앱으로 승선을 디지털화한다. OceanReady 체크리스트를 모두 마치고 메달리언을 배송받은 승객은 'Green Lane' 자격을 얻어 서류 검증 후 신속 승선한다.",
+          "relationship": "narrower"
+        }
+      ],
       "relationships": [
         {
           "type": "narrower",
@@ -10203,6 +11219,22 @@
         "Electronic Miscellaneous Document",
         "EMD-A",
         "EMD-S"
+      ],
+      "providerTerms": [
+        {
+          "provider": "NDC/IATA",
+          "term": "EMD-A / EMD-S (Resolution 725f)",
+          "context": "IATA Resolution 725f defines two EMD types: EMD-Associated (EMD-A), automatically linked to a flight coupon of an e-ticket, and EMD-Standalone (EMD-S), issued for non-flight items such as residual value or deposits.",
+          "context_ko": "IATA Resolution 725f는 두 가지 EMD 유형을 정의한다: 전자항공권의 비행 쿠폰에 자동 연결되는 EMD-Associated(EMD-A)와, 잔여가치·예치금 등 비(非)비행 항목용으로 발행되는 EMD-Standalone(EMD-S).",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "NDC/IATA",
+          "term": "V-EMD (BSPlink)",
+          "context": "Within IATA BSP processing, the EMD is handled and settled as the electronic document that replaced legacy paper miscellaneous documents (MCO/MPD) for BSP-accredited agents.",
+          "context_ko": "IATA BSP 처리에서 EMD는 BSP 인증 대리점의 기존 종이 기타서류(MCO/MPD)를 대체한 전자서류로 처리·정산된다.",
+          "relationship": "same"
+        }
       ],
       "relationships": [
         {
@@ -10299,6 +11331,15 @@
         "Medical Evacuation",
         "Medevac",
         "Emergency Evacuation"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Allianz Partners",
+          "term": "Emergency Medical Transportation",
+          "context": "Allianz's benefit name for medically necessary emergency transport (air/ground ambulance, escort) to an appropriate facility and, when stable, transport home; broader than evacuation-only since it also funds the supervised trip home.",
+          "context_ko": "Allianz가 의료적으로 필요한 응급 이송(항공/지상 구급차, 동반 에스코트)을 적절한 의료기관으로, 상태가 안정되면 귀가 이송까지 포함하는 베네핏 명칭. 감독 하의 귀가 이송까지 포함하므로 '후송'만보다 다소 넓다.",
+          "relationship": "broader"
+        }
       ],
       "relationships": [
         {
@@ -10462,6 +11503,22 @@
         "Enhanced and Simplified Distribution",
         "NDC EDIST",
         "EDIST XML"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Sabre",
+          "term": "Sabre NDC IT (NDC-IT) message suite",
+          "context": "Sabre implements the EDIST/NDC message family (AirShopping, OfferPrice, OrderCreate, etc.) through its NDC IT APIs",
+          "context_ko": "Sabre는 NDC IT API를 통해 EDIST/NDC 메시지 패밀리(AirShopping·OfferPrice·OrderCreate 등)를 구현함",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "ATPCO",
+          "term": "ATPCO NDC Solutions (OrderViewRS/OrderCreate)",
+          "context": "ATPCO's NDC developer APIs implement the EDIST message schemas for offers and orders",
+          "context_ko": "ATPCO의 NDC 개발자 API가 오퍼·주문용 EDIST 메시지 스키마를 구현함",
+          "relationship": "narrower"
+        }
       ],
       "relationships": [
         {
@@ -10953,6 +12010,15 @@
         "Insurance Excess",
         "Rental Excess"
       ],
+      "providerTerms": [
+        {
+          "provider": "US/Canada rental market",
+          "term": "Deductible",
+          "context": "US car rental paperwork uses 'deductible' for the renter's capped liability amount that UK/European agreements call the 'excess'.",
+          "context_ko": "미국 렌터카 서류는 영국·유럽에서 'excess'라 부르는, 렌터의 상한 책임금액을 'deductible'로 표기한다.",
+          "relationship": "same"
+        }
+      ],
       "relationships": [
         {
           "type": "related",
@@ -11038,6 +12104,20 @@
           "term": "Exchange",
           "context": "Travelport's Exchange, Refund, and Void guide treats exchange as the transaction that applies the value of an existing ticket toward a reissued ticket.",
           "context_ko": "Travelport의 Exchange/Refund/Void 가이드는 교환을 기존 항공권의 가치를 재발행 항공권에 적용하는 거래로 다룬다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Amadeus",
+          "term": "ATC Reissue (Amadeus Ticket Changer)",
+          "context": "Amadeus performs ticket exchanges through Amadeus Ticket Changer (ATC), which reprices the changed itinerary and produces the reissued document with additional collection or residual in a single transaction (TTP/EXCH).",
+          "context_ko": "Amadeus는 Amadeus Ticket Changer(ATC)로 항공권 교환을 수행하며, 변경된 여정을 재산정해 추가징수 또는 잔여가치를 단일 트랜잭션(TTP/EXCH)에서 재발행 서류로 생성한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Sabre",
+          "term": "WETR (Ticket Exchange/Reissue)",
+          "context": "Sabre initiates a ticket exchange with the WETR command against a ticket number; the priced result is stored as a Price Quote Reissue Record (PQR) before the new document is issued.",
+          "context_ko": "Sabre는 항공권 번호에 대해 WETR 명령으로 교환을 시작하며, 산정 결과는 새 서류 발행 전에 Price Quote Reissue Record(PQR)로 저장된다.",
           "relationship": "same"
         }
       ],
@@ -11512,6 +12592,22 @@
         "Fare Calculation",
         "Pricing"
       ],
+      "providerTerms": [
+        {
+          "provider": "Travelport",
+          "term": "Linear Fare / Stored Linear Fare Quote (*LF)",
+          "context": "In Apollo/Galileo the constructed fare result is shown as the (Stored) Linear Fare Quote (*LF), carrying the fare-break points, NUC amounts, surcharges and rates of exchange.",
+          "context_ko": "Apollo/Galileo에서는 운임계산 결과를 (Stored) Linear Fare Quote(*LF)로 표시하며, 운임분기점·NUC 금액·서차지·환율을 담는다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Amadeus",
+          "term": "Fare calculation line",
+          "context": "Amadeus presents the constructed fare as the fare calculation line, listing each fare element, pricing unit, surcharges, global indicator, NUC total and conversion.",
+          "context_ko": "Amadeus는 운임계산 결과를 fare calculation line으로 표시하며, 각 운임요소·pricing unit·서차지·글로벌 인디케이터·NUC 합계·환산을 나열한다.",
+          "relationship": "same"
+        }
+      ],
       "relationships": [
         {
           "type": "child",
@@ -11791,6 +12887,29 @@
         "Flexible Content Barcode",
         "UIC barcode (FCB)"
       ],
+      "providerTerms": [
+        {
+          "provider": "UIC (IRS 90918-9 / GitHub UIC-barcode)",
+          "term": "FCB (IRS 90918-9, uicRailTicketData ASN.1)",
+          "context": "The formal UIC designation is the IRS 90918-9 'Flexible Content Barcode', defined via the uicRailTicketData ASN.1 schema in the UIC-barcode reference implementation; FCB/TLB use a variable-field, variable-size encoding.",
+          "context_ko": "UIC 공식 명칭은 IRS 90918-9 'Flexible Content Barcode'이며, UIC-barcode 레퍼런스 구현의 uicRailTicketData ASN.1 스키마로 정의된다(FCB/TLB는 가변 필드·가변 크기 인코딩).",
+          "relationship": "same"
+        },
+        {
+          "provider": "UIC (legacy Leaflet 918-2 / 918-3)",
+          "term": "SSB / ELB / TLB",
+          "context": "The predecessor UIC barcode formats carry the same rail contract but with different, mostly fixed-field encodings: SSB (Small Structured Barcode, 'AZTEC V2' in 918-2V3), ELB (Element List Barcode, PDF417, used by SNCF), and TLB (Ticket Layout Barcode, 'DST barcode' in 918-3) — all now superseded by FCB.",
+          "context_ko": "선행 UIC 바코드 포맷들은 동일한 철도 계약을 담되 대부분 고정 필드 방식으로 인코딩한다: SSB(Small Structured Barcode, 918-2V3의 'AZTEC V2'), ELB(Element List Barcode, PDF417, SNCF 사용), TLB(Ticket Layout Barcode, 918-3의 'DST barcode'). 모두 FCB로 대체됨.",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "ERA TAP TSI (TD B.12)",
+          "term": "TAP TSI Technical Document B.12 (2D barcode security)",
+          "context": "ERA TAP TSI TD B.12 is the EU regulatory document that mandates the 2D Aztec barcode and its asymmetric signing for rail ticketing, paired with TD B.11 (layout); it is the regulatory carrier of the FCB standard.",
+          "context_ko": "ERA TAP TSI TD B.12는 철도 발권용 2D Aztec 바코드와 비대칭 서명을 규정하는 EU 규제 문서로, 레이아웃을 다루는 TD B.11과 짝을 이루며 FCB 표준의 규제적 근거다.",
+          "relationship": "related"
+        }
+      ],
       "relationships": [
         {
           "type": "related",
@@ -12025,6 +13144,15 @@
       "aliases": [
         "Flight Designator",
         "Flight Identifier"
+      ],
+      "providerTerms": [
+        {
+          "provider": "NDC/IATA",
+          "term": "MarketingCarrier/FlightNumber",
+          "context": "NDC schema element holding the marketing flight number; a parallel OperatingCarrier/FlightNumber carries the operating carrier's prime flight number.",
+          "context_ko": "마케팅 편명을 담는 NDC 스키마 요소로, 별도의 OperatingCarrier/FlightNumber는 운항사의 주(prime) 편명을 담는다.",
+          "relationship": "same"
+        }
       ],
       "relationships": [
         {
@@ -12277,6 +13405,22 @@
         "FOP",
         "Form of Payment (FOP)"
       ],
+      "providerTerms": [
+        {
+          "provider": "Amadeus",
+          "term": "FP element (FPCASH, FPCCVI...)",
+          "context": "Amadeus cryptic command storing the form of payment in the PNR/ticket, e.g. FPCASH or FPCCVI<card>; FPO holds the original FOP for reissues.",
+          "context_ko": "PNR/티켓에 지불수단을 저장하는 Amadeus 크립틱 명령(FPCASH, FPCCVI 등). 재발행 원지불수단은 FPO 요소.",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "Sabre",
+          "term": "Form of Payment (*FOP) / 5- entry",
+          "context": "Sabre's FOP wallet functionality for entering and referencing card and other payment types in the PNR.",
+          "context_ko": "PNR에 카드 및 기타 지불수단을 입력·참조하는 Sabre의 FOP 월렛 기능.",
+          "relationship": "narrower"
+        }
+      ],
       "relationships": [
         {
           "type": "related",
@@ -12427,6 +13571,15 @@
         "Sell Free",
         "Free Sale Inventory"
       ],
+      "providerTerms": [
+        {
+          "provider": "OpenTravel/Booking.com",
+          "term": "OTA_HotelAvailNotifRQ (open/close status, no per-request allotment check)",
+          "context": "Free sale is expressed in the OpenTravel availability message as an open booking status without a live per-request inventory check, gated by stop-sell/close restrictions rather than a specific allotment.",
+          "context_ko": "프리세일은 OpenTravel 가용성 메시지에서 요청별 실시간 재고 확인 없이 열린 예약 상태로 표현되며, 특정 할당이 아닌 stop-sell/close 제한으로 통제된다.",
+          "relationship": "related"
+        }
+      ],
       "relationships": [
         {
           "type": "contrasts",
@@ -12515,6 +13668,15 @@
         "Free Sale Codeshare",
         "Free-Flow Agreement"
       ],
+      "providerTerms": [
+        {
+          "provider": "Amadeus",
+          "term": "Free-sale code-share",
+          "context": "Amadeus and GDS usage refers to free-flow codeshare as free-sale, where the marketing carrier sells against the operating carrier's real-time availability rather than from a pre-allocated leased block.",
+          "context_ko": "아마데우스 및 GDS 관행에서 프리플로 공동운항은 free-sale로 불리며, 판매 항공사가 사전 할당된 리스드 블록이 아니라 운항 항공사의 실시간 가용성에 기반해 판매한다.",
+          "relationship": "same"
+        }
+      ],
       "relationships": [
         {
           "type": "parent",
@@ -12600,6 +13762,22 @@
         "Loyalty Number",
         "Membership Number",
         "Frequent Traveler Number"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Amadeus",
+          "term": "SSR FQTV (FFA entry)",
+          "context": "Amadeus stores the FF number in an SSR FQTV element, created per accruing airline; the FFA cryptic entry auto-populates it (e.g. FFACX-1234567890,CX/P1)",
+          "context_ko": "Amadeus는 적립 항공사별로 생성되는 SSR FQTV 요소에 FF 번호를 저장하며 FFA 크립틱 엔트리로 자동 입력한다",
+          "relationship": "same"
+        },
+        {
+          "provider": "Sabre",
+          "term": "FF (FFCX entry)",
+          "context": "Sabre uses its own cryptic format for the same SSR FQTV element, e.g. FFCX1234567890/CX-1.1",
+          "context_ko": "Sabre는 동일한 SSR FQTV 요소에 자체 크립틱 포맷(예: FFCX1234567890/CX-1.1)을 사용한다",
+          "relationship": "same"
+        }
       ],
       "relationships": [
         {
@@ -12902,6 +14080,29 @@
         "OSDM Fulfillment",
         "Rail Fulfillment",
         "Fulfilment"
+      ],
+      "providerTerms": [
+        {
+          "provider": "OSDM (UIC IRS 90918-10)",
+          "term": "Fulfillment",
+          "context": "OSDM names the realized travel document object exactly 'Fulfillment' — described in the model as what 'could once have been called tickets', the proof-of-purchase produced from a confirmed Booking.",
+          "context_ko": "OSDM은 실현된 여행 문서 객체를 정확히 'Fulfillment'로 명명하며, 모델에서 '한때 티켓이라 불렸던 것'으로 설명되는, 확정된 Booking으로부터 생성되는 구매 증빙이다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "UIC ticket layouts (IRS 90918-8)",
+          "term": "RCT2 / RCCST / A4RT (secured-paper & mobile layouts)",
+          "context": "Where the fulfillment is a printable document, UIC IRS 90918-8 defines the layouts it is rendered into — RCT2 and RCCST on secured paper and A4RT on blank paper or a mobile screen.",
+          "context_ko": "이행물(fulfillment)이 출력 문서일 때, UIC IRS 90918-8은 그 렌더링 레이아웃을 정의한다 — 보안용지의 RCT2·RCCST, 백지/모바일 화면의 A4RT.",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "IATA (ONE Order / EMD)",
+          "term": "ONE Order document / EMD / e-ticket",
+          "context": "The air-side analogue of the issued, usable travel document is the e-ticket or Electronic Miscellaneous Document under ONE Order; it serves the same fulfillment role but is a different standard and data structure.",
+          "context_ko": "발권되어 사용 가능한 여행 문서의 항공 측 대응물은 ONE Order 하의 e-ticket 또는 EMD(전자 부가 문서)로, 동일한 이행 역할을 하지만 표준·데이터 구조는 다르다.",
+          "relationship": "related"
+        }
       ],
       "relationships": [
         {
@@ -13396,6 +14597,20 @@
           "context": "MobilityData governs the specification (handed over from NABSA in 2019) that standardizes real-time shared-mobility availability feeds",
           "context_ko": "MobilityData가 (2019년 NABSA로부터 이관받아) 공유 모빌리티의 실시간 가용성 피드를 표준화하는 이 명세를 관리한다",
           "relationship": "same"
+        },
+        {
+          "provider": "OpenMobility Foundation",
+          "term": "MDS (Mobility Data Specification)",
+          "context": "MDS is the parallel open standard for regulated shared vehicles enabling agency-operator two-way communication; complementary to GBFS's public real-time availability feed.",
+          "context_ko": "MDS는 규제 대상 공유 차량을 위한 병행 공개 표준으로 기관-사업자 양방향 통신을 가능하게 하며, GBFS의 공개 실시간 가용성 피드를 보완한다.",
+          "relationship": "related"
+        },
+        {
+          "provider": "TOMP-API (MaaS Alliance)",
+          "term": "TOMP-API",
+          "context": "Transport Operator to Mobility Provider API builds on GBFS/NeTEx but moves up to the full MaaS journey (booking, execution, payment) rather than just availability.",
+          "context_ko": "Transport Operator to Mobility Provider API는 GBFS/NeTEx 위에서 단순 가용성을 넘어 예약·이용·결제 등 전체 MaaS 여정을 다룬다.",
+          "relationship": "broader"
         }
       ],
       "relationships": [
@@ -13635,6 +14850,13 @@
           "context": "GIATA's hotel mapping and de-duplication product that assigns the GIATA ID and maps supplier codes from GDSs, OTAs, tour operators, and bedbanks to it.",
           "context_ko": "GIATA ID를 부여하고 GDS·OTA·투어 오퍼레이터·Bedbank의 공급자 코드를 여기에 매핑하는 GIATA의 호텔 매핑·중복 제거 제품.",
           "relationship": "same"
+        },
+        {
+          "provider": "Vervotech",
+          "term": "VervotechId",
+          "context": "Vervotech assigns its own master property identifier (VervotechId) that, like a GIATA ID, links duplicate property records across suppliers.",
+          "context_ko": "Vervotech은 GIATA ID처럼 공급자 전반의 중복 숙소 레코드를 연결하는 자체 마스터 숙소 식별자(VervotechId)를 부여한다.",
+          "relationship": "same"
         }
       ],
       "relationships": [
@@ -13726,6 +14948,15 @@
         "Block",
         "Group Room Block"
       ],
+      "providerTerms": [
+        {
+          "provider": "Oracle OPERA",
+          "term": "Business Block (Blocks)",
+          "context": "OPERA manages group inventory as a Business Block with a rooms grid, contracted rate, pickup, and cutoff per room type/date.",
+          "context_ko": "OPERA는 그룹 재고를 객실 그리드·계약요금·pickup·룸타입별 cutoff을 갖는 Business Block으로 관리한다.",
+          "relationship": "same"
+        }
+      ],
       "relationships": [
         {
           "type": "contrasts",
@@ -13811,6 +15042,20 @@
           "context": "PNR holding a number of seats with unassigned names tracked by element 0 and NM count.",
           "context_ko": "좌석 수를 보유하며 element 0과 NM 수로 미배정 이름을 관리하는 PNR.",
           "relationship": "same"
+        },
+        {
+          "provider": "Sabre",
+          "term": "Group PNR (group name field / 0 group seats)",
+          "context": "Sabre holds a group block under a single PNR with a group name field and a numeric seat count, names added later via NM entries.",
+          "context_ko": "Sabre는 group name 필드와 좌석 수를 가진 단일 PNR로 group block을 보유하며, 이름은 이후 NM 엔트리로 추가한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "NDC/IATA",
+          "term": "Group Order / BookaGroup (group request)",
+          "context": "In NDC group flows (e.g. Lufthansa Group BookaGroup), a group request is created and later converted to an Order, replacing the classic group PNR block.",
+          "context_ko": "NDC group flow(예: Lufthansa Group BookaGroup)에서는 group 요청을 생성한 뒤 Order로 전환하여 기존 group PNR block을 대체한다.",
+          "relationship": "related"
         }
       ],
       "relationships": [
@@ -13886,6 +15131,22 @@
         "GTY Cabin",
         "Guaranteed Cabin",
         "Category Guarantee"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Disney Cruise Line",
+          "term": "IGT / OGT / VGT (Inside / Oceanview / Verandah Guarantee)",
+          "context": "Disney sells guarantee fares as the discounted IGT, OGT and VGT booking codes — guaranteed minimum category with line-assigned cabin, sold non-refundable with full payment at booking and no changes.",
+          "context_ko": "디즈니는 보증 운임을 할인 코드 IGT·OGT·VGT로 판매한다. 최소 카테고리를 보장하되 객실은 선사가 배정하며, 환불 불가·예약 시 전액 결제·변경 불가 조건이다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Celebrity Cruises",
+          "term": "Guarantee stateroom (Inside/Ocean View/Veranda Guarantee)",
+          "context": "Celebrity offers a lower 'guarantee' rate per broad category where the specific veranda/ocean-view/inside stateroom is assigned by the line at check-in, possibly anywhere on the ship.",
+          "context_ko": "셀러브리티는 대분류별로 더 낮은 '보증' 요금을 제공하며, 구체적 베란다·오션뷰·인사이드 객실은 선사가 체크인 시 배의 임의 위치로 배정한다.",
+          "relationship": "same"
+        }
       ],
       "relationships": [
         {
@@ -14831,6 +16092,22 @@
         "IATA CO2 Connect",
         "CO2 Connect"
       ],
+      "providerTerms": [
+        {
+          "provider": "Google / Travalyst",
+          "term": "Travel Impact Model (TIM)",
+          "context": "Open per-passenger flight CO2e methodology (EEA Tier 3 based, well-to-wake) shown via Travalyst in Google Flights, Skyscanner, Booking.com, Expedia and Sabre",
+          "context_ko": "EEA Tier3 기반 well-to-wake 승객당 항공 CO2e 산정 모델로, Travalyst를 통해 Google Flights·Skyscanner·Booking.com·Expedia·Sabre에 표시",
+          "relationship": "related"
+        },
+        {
+          "provider": "Amadeus",
+          "term": "Travel Impact Suite (TIM integration)",
+          "context": "Amadeus suite integrating Travalyst's Travel Impact Model to surface per-passenger flight emissions in distribution",
+          "context_ko": "유통 단계에서 승객당 항공 배출량을 표시하기 위해 Travalyst의 Travel Impact Model을 통합한 Amadeus 솔루션 묶음",
+          "relationship": "related"
+        }
+      ],
       "relationships": [
         {
           "type": "contrasts",
@@ -14965,6 +16242,15 @@
         "Standard IATA Delay Codes",
         "AHM 730 Delay Codes",
         "Delay Codes"
+      ],
+      "providerTerms": [
+        {
+          "provider": "IATA (AHM 731)",
+          "term": "Sub-delay codes",
+          "context": "AHM 731 extension adding a granular sub-code beneath the AHM 730 two-character delay code to capture finer root-cause detail.",
+          "context_ko": "AHM 730의 2자리 지연 코드 아래에 세분화된 하위 코드를 더하는 AHM 731 확장으로, 보다 정밀한 근본 원인을 기록한다.",
+          "relationship": "narrower"
+        }
       ],
       "relationships": [
         {
@@ -15506,6 +16792,22 @@
         "ICEC",
         "ICAO Carbon Calculator"
       ],
+      "providerTerms": [
+        {
+          "provider": "Google / Travalyst",
+          "term": "Travel Impact Model (TIM)",
+          "context": "Alternative per-passenger flight CO2e estimator using aircraft type, cabin, load factor and well-to-wake life cycle rather than ICEC's distance-based averages",
+          "context_ko": "ICEC의 거리 기반 평균 대신 기종·좌석등급·탑승률·well-to-wake 전과정을 쓰는 대안적 승객당 항공 CO2e 추정 모델",
+          "relationship": "related"
+        },
+        {
+          "provider": "EUROCONTROL",
+          "term": "Flight emission approximator",
+          "context": "EUROCONTROL's flight carbon emission approximator, an alternative tool benchmarked against ICAO ICEC",
+          "context_ko": "ICAO ICEC와 비교 평가되는 EUROCONTROL의 대안적 항공 탄소배출 근사 도구",
+          "relationship": "related"
+        }
+      ],
       "relationships": [
         {
           "type": "contrasts",
@@ -15661,6 +16963,22 @@
         "Integrated Reservation Ticket",
         "IRT ticket"
       ],
+      "providerTerms": [
+        {
+          "provider": "OSDM (UIC IRS 90918-10)",
+          "term": "Offer where Admission bundles a mandatory Reservation",
+          "context": "OSDM expresses an IRT as an offer in which the AdmissionOfferPart includes a compulsory ReservationOfferPart (typical of yield-managed high-speed trains such as Eurostar), rather than as a distinct ticket type code.",
+          "context_ko": "OSDM은 IRT를 별도 티켓 유형 코드가 아니라, AdmissionOfferPart에 필수 ReservationOfferPart가 결합된 오퍼로 표현한다(Eurostar 등 수익관리 고속열차에 일반적).",
+          "relationship": "related"
+        },
+        {
+          "provider": "ERA TAP TSI (TD B.2)",
+          "term": "IRT tariff / fare data exchange",
+          "context": "ERA TAP TSI Technical Document B.2 standardizes how RUs make available tariff and fare information for Tickets with Integrated Reservation (IRT) for international and foreign sales.",
+          "context_ko": "ERA TAP TSI 기술문서 B.2는 철도사업자가 국제·외국 판매용 통합예약권(IRT)의 운임·요금 정보를 제공하는 방식을 표준화한다.",
+          "relationship": "related"
+        }
+      ],
       "relationships": [
         {
           "type": "contrasts",
@@ -15734,6 +17052,15 @@
         "IATCI",
         "Interairline Through Check-In",
         "Through Check-In"
+      ],
+      "providerTerms": [
+        {
+          "provider": "IATA",
+          "term": "PADIS EDIFACT IATCI messages (Scenario 1 / Scenario 2)",
+          "context": "IATCI is realized through IATA PADIS EDIFACT message standards—Scenario 1 (Inter-Airline Through Check-In) and Scenario 2 (Inter-Airline Local Check-In and Flight Management)—maintained with the IATCI Group.",
+          "context_ko": "IATCI는 IATCI 그룹과 함께 유지되는 IATA PADIS EDIFACT 메시지 표준 — 시나리오 1(항공사 간 연계 체크인)과 시나리오 2(항공사 간 로컬 체크인 및 항공편 관리) — 을 통해 구현된다.",
+          "relationship": "same"
+        }
       ],
       "relationships": [
         {
@@ -15964,6 +17291,15 @@
         "Interlining",
         "Interline Traffic Agreement"
       ],
+      "providerTerms": [
+        {
+          "provider": "IATA",
+          "term": "Multilateral Interline Traffic Agreement (MITA)",
+          "context": "IATA's MITA is the standardized multilateral framework under which participating airlines accept each other's traffic documents and through-check passengers and baggage; the MITA manual lists all passenger and cargo participants.",
+          "context_ko": "IATA의 MITA는 참여 항공사가 서로의 운송 서류를 인수하고 승객·수하물을 연계 체크인하는 표준 다자간 프레임워크이며, MITA 매뉴얼은 모든 여객·화물 참여 항공사를 수록한다.",
+          "relationship": "narrower"
+        }
+      ],
       "relationships": [
         {
           "type": "contrasts",
@@ -16157,6 +17493,15 @@
         "Interline E-ticketing",
         "Interline E-Ticket",
         "IeT"
+      ],
+      "providerTerms": [
+        {
+          "provider": "IATA",
+          "term": "Interline e-ticketing (Resolution 722f)",
+          "context": "IATA Resolution 722f governs the EDIFACT interline electronic ticketing standard that lets two airlines issue, exchange, and accept each other's e-ticket coupons on a single itinerary.",
+          "context_ko": "IATA Resolution 722f는 두 항공사가 단일 여정에서 서로의 전자항공권 쿠폰을 발권·교환·인수할 수 있게 하는 EDIFACT 인터라인 전자발권 표준을 규정한다.",
+          "relationship": "same"
+        }
       ],
       "relationships": [
         {
@@ -16502,6 +17847,22 @@
         "Involuntary Exchange",
         "INVOL Reissue",
         "Involuntary Rerouting"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Amadeus",
+          "term": "ATC Involuntary Reissue (FXI)",
+          "context": "Amadeus handles carrier-caused reissues through Amadeus Ticket Changer using the involuntary pricing entry FXI, which applies involuntary rules so change penalties and fare differences are waived.",
+          "context_ko": "Amadeus는 항공사 귀책 재발행을 Amadeus Ticket Changer의 비자발적 산정 입력 FXI로 처리하며, 비자발 규정을 적용해 변경 페널티와 운임차액을 면제한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "ATPCO",
+          "term": "Involuntary handling (vs Category 31)",
+          "context": "ATPCO Category 31 governs voluntary changes; involuntary (carrier-caused) reissues fall outside its charges, instead following carrier involuntary policy/IATA Resolution 735d re-routing where penalties are waived.",
+          "context_ko": "ATPCO Category 31은 자발적 변경을 규율하며, 비자발적(항공사 귀책) 재발행은 그 요금 적용 대상이 아니라 항공사 비자발 정책/IATA Resolution 735d 재여정 규정을 따라 페널티가 면제된다.",
+          "relationship": "related"
+        }
       ],
       "relationships": [
         {
@@ -16883,6 +18244,15 @@
         "Itinerary Receipt",
         "Trip Itinerary"
       ],
+      "providerTerms": [
+        {
+          "provider": "NDC/IATA",
+          "term": "Order / OrderItem (flight services)",
+          "context": "In NDC an itinerary is expressed as an Order composed of OrderItems whose services map to passenger-per-segment deliverables, replacing the PNR itinerary segments.",
+          "context_ko": "NDC에서 itinerary는 OrderItem들로 구성된 Order로 표현되며, 그 서비스는 승객×segment 단위 deliverable에 매핑되어 PNR의 itinerary segment를 대체한다.",
+          "relationship": "related"
+        }
+      ],
       "relationships": [
         {
           "type": "parent",
@@ -17043,6 +18413,15 @@
       "aliases": [
         "Itinerary",
         "Travel Journey"
+      ],
+      "providerTerms": [
+        {
+          "provider": "NDC/IATA",
+          "term": "OriginDestination",
+          "context": "In NDC AirShopping the requested journey leg is the OriginDestination element (departure/arrival airport, date) against which priced Offers are returned.",
+          "context_ko": "NDC AirShopping에서 요청 여정 구간은 OriginDestination 요소(출발/도착 공항, 날짜)로 표현되며 이에 대해 가격이 매겨진 Offer가 반환된다.",
+          "relationship": "related"
+        }
       ],
       "relationships": [
         {
@@ -17231,6 +18610,15 @@
         "Non-LRA",
         "NLRA"
       ],
+      "providerTerms": [
+        {
+          "provider": "GDS / corporate RFP (GBTA)",
+          "term": "LRA vs NLRA (Non-Last Room Availability)",
+          "context": "In GDS/corporate distribution the negotiated-rate attribute is expressed as LRA or its opposite NLRA, where NLRA lets the hotel block the negotiated rate during peak demand; GBTA guidance treats LRA as a costed contract concession.",
+          "context_ko": "GDS/기업 유통에서 협상 요금 속성은 LRA 또는 그 반대인 NLRA로 표현되며, NLRA는 호텔이 성수기에 협상 요금을 차단할 수 있게 한다. GBTA 지침은 LRA를 비용이 드는 계약 양보로 본다.",
+          "relationship": "related"
+        }
+      ],
       "relationships": [
         {
           "type": "related",
@@ -17312,6 +18700,15 @@
       "aliases": [
         "Last Room Availability",
         "LRA Rate"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Sabre Hospitality",
+          "term": "Last Room Availability (LRA)",
+          "context": "In SynXis/GDS distribution, an LRA negotiated rate stays bookable as long as any eligible room is for sale; consortia and corporate programs typically mandate LRA.",
+          "context_ko": "SynXis/GDS 유통에서 LRA 협상 요금은 해당 객실이 하나라도 판매 중이면 예약 가능하며, 컨소시아·corporate 프로그램이 보통 LRA를 요구한다.",
+          "relationship": "same"
+        }
       ],
       "relationships": [
         {
@@ -17466,6 +18863,22 @@
         "Stay Length",
         "Minimum Length of Stay",
         "Maximum Length of Stay"
+      ],
+      "providerTerms": [
+        {
+          "provider": "OpenTravel / HTNG",
+          "term": "LengthsOfStay MinMaxMessageType=\"SetMinLOS\" / \"SetMaxLOS\"",
+          "context": "OTA ARI sync expresses LOS controls via LengthOfStay elements with MinMaxMessageType SetMinLOS/SetMaxLOS (and SetForwardMinStay/SetForwardMaxStay for arrival-based).",
+          "context_ko": "OTA ARI 동기화는 LengthOfStay 요소의 MinMaxMessageType SetMinLOS/SetMaxLOS(도착 기준은 SetForwardMinStay/SetForwardMaxStay)로 LOS 제어를 표현한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Booking.com",
+          "term": "Min/Max stay (arrival / through)",
+          "context": "Booking.com distinguishes max stay arrival (applies to check-in date only) and max stay through (applies to all nights), plus minimum stay restrictions.",
+          "context_ko": "Booking.com은 max stay arrival(체크인 일자에만 적용)과 max stay through(모든 숙박일에 적용)를 구분하고 최소 숙박 제한도 둔다.",
+          "relationship": "same"
+        }
       ],
       "relationships": [
         {
@@ -17672,6 +19085,22 @@
         "Loss Damage Waiver",
         "LDW",
         "Loss/Damage Waiver"
+      ],
+      "providerTerms": [
+        {
+          "provider": "UK/Europe rental market",
+          "term": "Collision Damage Waiver (CDW)",
+          "context": "Outside North America the same broader waiver is typically marketed as CDW, usually included in the base rate but subject to an excess.",
+          "context_ko": "북미 외 지역에서는 동일한 광의의 waiver를 보통 CDW로 판매하며, 대개 기본요금에 포함되되 excess가 적용된다.",
+          "relationship": "related"
+        },
+        {
+          "provider": "OpenTravel (OTA)",
+          "term": "VCT code 'LDW'",
+          "context": "OTA's VCT coverage code list carries LDW as a distinct coverage type for vehicle availability and rate messages.",
+          "context_ko": "OTA의 VCT 보장 코드 리스트는 차량 가용성·요금 메시지를 위해 LDW를 별도 보장 유형으로 담는다.",
+          "relationship": "same"
+        }
       ],
       "relationships": [
         {
@@ -17915,6 +19344,15 @@
         "Marketing Airline",
         "Selling Carrier"
       ],
+      "providerTerms": [
+        {
+          "provider": "NDC/IATA",
+          "term": "MarketingCarrier.AirlineID",
+          "context": "In NDC messages the marketing carrier is represented by the MarketingCarrier element (AirlineID), the code under which the segment is sold, distinct from the OperatingCarrier element on each flight segment.",
+          "context_ko": "NDC 메시지에서 판매 항공사는 MarketingCarrier 요소(AirlineID)로 표현되며, 이는 구간이 판매되는 코드로서 각 항공 구간의 OperatingCarrier 요소와 구별된다.",
+          "relationship": "same"
+        }
+      ],
       "relationships": [
         {
           "type": "contrasts",
@@ -17993,6 +19431,22 @@
         "Married Segment Logic",
         "Segment Marriage"
       ],
+      "providerTerms": [
+        {
+          "provider": "Amadeus",
+          "term": "Married Segment Control",
+          "context": "Amadeus offers Married Segment Control as an inventory product letting carriers marry connecting/codeshare segments so they must be sold and cancelled as a unit.",
+          "context_ko": "Amadeus는 항공사가 connecting/codeshare segment를 묶어 단위로만 판매·취소되게 하는 inventory 제품으로 Married Segment Control을 제공한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "ATPCO",
+          "term": "Married Segment / O&D control logic",
+          "context": "Carriers file fares to ATPCO while applying married-segment and origin-destination control so connecting availability differs from segment-by-segment availability.",
+          "context_ko": "항공사는 ATPCO에 운임을 신고하면서 married-segment 및 origin-destination control을 적용해, 연결 availability가 segment 단위 availability와 달라지게 한다.",
+          "relationship": "related"
+        }
+      ],
       "relationships": [
         {
           "type": "broader",
@@ -18067,6 +19521,22 @@
         "Mass Balance Approach",
         "MB",
         "Mass Balance Chain of Custody"
+      ],
+      "providerTerms": [
+        {
+          "provider": "ISCC",
+          "term": "ISCC EU / ISCC CORSIA mass balance (System Doc 203 Chain of Custody)",
+          "context": "ISCC certification scheme implementing the mass-balance chain of custody, with attributes evidenced by a Proof of Sustainability (PoS)",
+          "context_ko": "지속가능성증명서(PoS)로 속성을 입증하며 mass-balance 보관연속성을 구현하는 ISCC 인증 스킴(System Doc 203)",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "RSB",
+          "term": "RSB EU RED / RSB CORSIA mass balance (Proof of Sustainability)",
+          "context": "RSB certification scheme operating mass-balance custody, the default chain-of-custody model under EU RED, evidenced by a PoS",
+          "context_ko": "EU RED의 기본 보관연속성 모델인 mass-balance를 운영하고 PoS로 입증하는 RSB 인증 스킴",
+          "relationship": "narrower"
+        }
       ],
       "relationships": [
         {
@@ -18228,6 +19698,20 @@
           "context": "Travelport documents EMDs as the electronic replacement for MCO, MPD, and other miscellaneous paper documents.",
           "context_ko": "Travelport는 EMD를 MCO, MPD 및 기타 종이 기타 서류를 대체하는 전자 문서로 설명한다.",
           "relationship": "broader"
+        },
+        {
+          "provider": "NDC/IATA",
+          "term": "EMD-S (MCO replacement)",
+          "context": "IATA replaced the paper MCO with the electronic EMD; the Standalone EMD (EMD-S) is the modern accountable document used to collect non-flight charges, residual value, and deposits that the MCO formerly recorded.",
+          "context_ko": "IATA는 종이 MCO를 전자 EMD로 대체했으며, Standalone EMD(EMD-S)가 MCO가 기록하던 비(非)비행 요금·잔여가치·예치금을 징수하는 현대식 회계 서류다.",
+          "relationship": "broader"
+        },
+        {
+          "provider": "NDC/IATA",
+          "term": "vMCO / V-MPD (BSPlink)",
+          "context": "Where legacy MCO/MPD documents still appear in IATA BSP processing, they are handled as virtual documents (vMCO / V-MPD) in BSPlink alongside the EMD that superseded them.",
+          "context_ko": "IATA BSP 처리에서 기존 MCO/MPD 서류가 남아 있는 경우 BSPlink에서 가상 서류(vMCO / V-MPD)로 처리되며, 이를 대체한 EMD와 함께 관리된다.",
+          "relationship": "related"
         }
       ],
       "relationships": [
@@ -18314,6 +19798,29 @@
       "aliases": [
         "Minimum Connecting Time",
         "Minimum Connect Time"
+      ],
+      "providerTerms": [
+        {
+          "provider": "OAG",
+          "term": "Minimum Connection Times (MCT) database",
+          "context": "OAG aggregates and distributes 157,000+ industry MCTs in IATA SSIM Chapter 8 format, used by shopping/availability engines to validate legal connections.",
+          "context_ko": "OAG는 IATA SSIM 8장 포맷으로 15만7천여 개 산업 MCT를 집계·배포하며, shopping/availability 엔진이 적법 연결을 검증하는 데 쓰인다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Cirium",
+          "term": "Minimum Connect Time data",
+          "context": "Cirium supplies MCT reference data (domestic/international permutations per station) consumed by airline and OTA connection-building logic.",
+          "context_ko": "Cirium은 station별 국내/국제 조합의 MCT 참조 데이터를 제공하며, 항공사·OTA의 연결 구성 로직이 소비한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "IATA",
+          "term": "SSIM Chapter 8 — MCT",
+          "context": "IATA SSIM Chapter 8 defines the presentation, application and transfer format for Minimum Connecting Time data.",
+          "context_ko": "IATA SSIM 8장은 Minimum Connecting Time 데이터의 표현·적용·전송 포맷을 정의한다.",
+          "relationship": "broader"
+        }
       ],
       "relationships": [
         {
@@ -18728,6 +20235,29 @@
         "Multiple East-West Railways Integrated Timetable Storage",
         "MERITS database"
       ],
+      "providerTerms": [
+        {
+          "provider": "CEN (NeTEx / Transmodel)",
+          "term": "NeTEx Part 2 timetable exchange",
+          "context": "NeTEx (the CEN/Transmodel-based EU timetable exchange standard) is the modern format counterpart to MERITS for stop and timetable data; MERITS data has been formally mapped to NeTEx Part 2.",
+          "context_ko": "NeTEx(CEN/Transmodel 기반 EU 시각표 교환 표준)는 정류장·시각표 데이터에 대한 MERITS의 현대적 포맷 대응물이며, MERITS 데이터는 NeTEx Part 2로 공식 매핑되었다.",
+          "relationship": "related"
+        },
+        {
+          "provider": "MobilityData (GTFS)",
+          "term": "GTFS Schedule",
+          "context": "GTFS Schedule is the de-facto global feed format for the same timetable/stop content MERITS consolidates for European railways; it is simpler and routing-app oriented rather than full network modelling.",
+          "context_ko": "GTFS Schedule은 MERITS가 유럽 철도용으로 통합하는 시각표·정류장 데이터와 동일한 내용을 담는 사실상의 글로벌 피드 포맷으로, 전체 네트워크 모델링보다 단순하고 경로탐색 앱 지향적이다.",
+          "relationship": "related"
+        },
+        {
+          "provider": "ERA TAP TSI (TD B.4)",
+          "term": "Timetable data exchange (TD B.4)",
+          "context": "ERA TAP TSI Technical Document B.4 is the EU regulatory specification for exchanging timetable data between rail actors — the regulated channel for the same timetable content MERITS stores.",
+          "context_ko": "ERA TAP TSI 기술문서 B.4는 철도 주체 간 시각표 데이터 교환을 위한 EU 규제 명세로, MERITS가 저장하는 시각표 데이터의 규제 채널이다.",
+          "relationship": "related"
+        }
+      ],
       "relationships": [
         {
           "type": "related",
@@ -18898,6 +20428,36 @@
         "Travel Metasearch",
         "Price Comparison Engine"
       ],
+      "providerTerms": [
+        {
+          "provider": "Google",
+          "term": "Google Flights / Google Hotel Ads",
+          "context": "Google's flight and hotel metasearch surfaces compare prices across OTAs and suppliers and refer users out to book",
+          "context_ko": "Google의 항공·호텔 메타서치 화면이 OTA·공급자 간 가격을 비교하고 사용자를 예약 사이트로 연결함",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "Kayak",
+          "term": "KAYAK (with Hacker Fares)",
+          "context": "Flight/hotel metasearch engine; Hacker Fares combine two one-ways from different carriers when cheaper than a round-trip",
+          "context_ko": "항공·호텔 메타서치 엔진; Hacker Fares는 왕복보다 저렴할 때 서로 다른 항공사의 편도 두 개를 결합함",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "Skyscanner",
+          "term": "Skyscanner (Everywhere search)",
+          "context": "Flight metasearch with an 'Everywhere' destination search revealing the cheapest places to fly",
+          "context_ko": "가장 저렴한 목적지를 보여주는 'Everywhere' 검색을 가진 항공 메타서치",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "Trivago",
+          "term": "Trivago",
+          "context": "Hotel-focused metasearch comparing room rates across booking sources and referring out to book",
+          "context_ko": "예약 소스 간 객실 요금을 비교하고 예약 사이트로 연결하는 호텔 중심 메타서치",
+          "relationship": "narrower"
+        }
+      ],
       "relationships": [
         {
           "type": "contrasts",
@@ -18970,6 +20530,15 @@
         "Miles Accrual",
         "Points Accrual",
         "Earning"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Amadeus",
+          "term": "SSR FQTV",
+          "context": "The SSR FQTV element flags that a passenger will accrue miles on the flown segment(s), the GDS mechanism that drives mileage crediting",
+          "context_ko": "SSR FQTV 요소는 승객이 탑승 구간에 대해 마일을 적립함을 표시하며 마일 적립을 구동하는 GDS 메커니즘이다",
+          "relationship": "related"
+        }
       ],
       "relationships": [
         {
@@ -19069,6 +20638,20 @@
           "term": "LengthOfStay MinMaxMessageType=\"SetMinLOS\"",
           "context": "In OTA_HotelAvailNotifRQ, MLOS is set via a LengthOfStay element with MinMaxMessageType=\"SetMinLOS\" and a Time attribute for the minimum nights.",
           "context_ko": "OTA_HotelAvailNotifRQ에서 MLOS는 MinMaxMessageType=\"SetMinLOS\"와 최소 박수 Time 속성을 가진 LengthOfStay 요소로 설정된다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Booking.com",
+          "term": "Minimum stay (SetMinLOS)",
+          "context": "Booking.com connectivity sets a minimum-stay restriction so a reservation must cover at least N nights on the affected dates.",
+          "context_ko": "Booking.com 커넥티비티는 해당 일자에 최소 N박을 충족해야 예약되도록 minimum-stay 제한을 설정한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Expedia",
+          "term": "Minimum Length of Stay (Availability & Rates API)",
+          "context": "Expedia partners must support setting minimum length-of-stay restrictions for a single date or date range as a property-level setting.",
+          "context_ko": "Expedia 파트너는 단일 일자 또는 기간에 대한 최소 숙박 제한을 property 레벨 설정으로 지원해야 한다.",
           "relationship": "same"
         }
       ],
@@ -19325,6 +20908,15 @@
         "MaaS",
         "Transportation as a Service"
       ],
+      "providerTerms": [
+        {
+          "provider": "TOMP-API (MaaS Alliance)",
+          "term": "TOMP-API",
+          "context": "The standardized technical interface between MaaS providers and transport operators covering the full user journey including booking, trip execution and payments.",
+          "context_ko": "MaaS 제공자와 운송 사업자 간 표준 기술 인터페이스로, 예약·이용·결제를 포함한 전체 사용자 여정을 다룬다.",
+          "relationship": "related"
+        }
+      ],
       "relationships": [
         {
           "type": "contrasts",
@@ -19469,6 +21061,15 @@
         "MSC",
         "Most Significant Carrier rule"
       ],
+      "providerTerms": [
+        {
+          "provider": "IATA",
+          "term": "Most Significant Carrier (Resolution 302)",
+          "context": "IATA Resolution 302 (effective 1 April 2011) defines the MSC methodology that selects, by a geographical process, which single carrier's checked-baggage allowance and charges apply across a through-checked interline or codeshare portion.",
+          "context_ko": "IATA Resolution 302(2011년 4월 1일 발효)는 연계 수하물 처리되는 인터라인·공동운항 구간 전체에 어느 단일 항공사의 위탁수하물 허용량과 요금이 적용되는지를 지리적 절차로 선정하는 MSC 방식을 정의한다.",
+          "relationship": "same"
+        }
+      ],
       "relationships": [
         {
           "type": "related",
@@ -19557,6 +21158,22 @@
         "Multimodal Travel",
         "Multi-modal Transport"
       ],
+      "providerTerms": [
+        {
+          "provider": "CEN (Transmodel / NeTEx / SIRI)",
+          "term": "Transmodel multimodal data model (NeTEx static, SIRI real-time)",
+          "context": "Transmodel is the EU reference data model explicitly designed for multimodality (scheduled, flexible, vehicle-sharing, taxi), implemented as NeTEx for planned data and SIRI for real-time; CER/UITP position OSDM and Transmodel as two complementary multimodal solutions.",
+          "context_ko": "Transmodel은 다중 모드(정기·유연·차량공유·택시)를 위해 명시적으로 설계된 EU 참조 데이터 모델로, 정적 데이터는 NeTEx, 실시간은 SIRI로 구현된다. CER/UITP는 OSDM과 Transmodel을 상호보완적 멀티모달 솔루션으로 규정한다.",
+          "relationship": "related"
+        },
+        {
+          "provider": "Transmodel (OJP)",
+          "term": "Open Journey Planner (OJP)",
+          "context": "OJP is the Transmodel-based API for cross-operator, multimodal journey planning — the distributed query layer that stitches modes together, complementing OSDM's sales/booking role.",
+          "context_ko": "OJP는 운영사 간·다중 모드 여정 계획을 위한 Transmodel 기반 API로, 모드를 연결하는 분산 질의 계층이며 OSDM의 판매·예약 역할을 보완한다.",
+          "relationship": "related"
+        }
+      ],
       "relationships": [
         {
           "type": "related",
@@ -19637,6 +21254,29 @@
         "Emergency Drill",
         "Boat Drill",
         "Muster"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Royal Caribbean International",
+          "term": "Muster 2.0 / eMuster",
+          "context": "Royal Caribbean's trademarked 'Muster 2.0' (powered by eMuster) replaces the mass assembly with a hybrid drill completed on the app or stateroom TV plus an individual check-in at the assigned station; RCL patented the distributed-muster method.",
+          "context_ko": "로열캐리비안의 상표 'Muster 2.0'(eMuster 기반)은 대규모 집합 대신 앱·객실 TV로 일부를 완료하고 지정 스테이션에서 개별 체크인하는 하이브리드 방식이며, RCL은 분산 머스터 방식을 특허 출원했다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Carnival Cruise Line",
+          "term": "Muster 2.0 (via Carnival HUB app)",
+          "context": "Carnival runs an equivalent electronic muster where guests review safety information on the Carnival HUB app or in-cabin TV, then visit their muster station individually at their own pace.",
+          "context_ko": "카니발은 동등한 전자 머스터를 운영하며, 승객은 Carnival HUB 앱이나 객실 TV로 안전 정보를 확인한 뒤 각자 자기 페이스로 머스터 스테이션을 방문한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Princess Cruises",
+          "term": "MedallionClass muster (app-based safety process)",
+          "context": "Princess delivers the SOLAS muster via the MedallionClass app with a step-by-step safety and life-jacket guide, letting guests muster on their own terms and cut embarkation-day time.",
+          "context_ko": "프린세스는 메달리언클래스 앱으로 SOLAS 머스터를 제공하며, 단계별 안전·구명조끼 안내로 승객이 자기 시간에 머스터를 완료해 승선일 시간을 단축한다.",
+          "relationship": "same"
+        }
       ],
       "relationships": [
         {
@@ -19832,6 +21472,29 @@
       "standardBody": "IATA",
       "aliases": [
         "New Distribution Capability"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Amadeus",
+          "term": "Amadeus NDC (NDC-X program)",
+          "context": "Amadeus is an IATA-certified NDC system provider for airlines and sellers, with the broadest NDC airline network among GDSs",
+          "context_ko": "Amadeus는 항공사·판매자용 IATA 인증 NDC 시스템 제공자로, GDS 중 가장 넓은 NDC 항공사 네트워크를 보유",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "Sabre",
+          "term": "Sabre NDC (Beyond NDC)",
+          "context": "Sabre is certified as an NDC system provider for both airlines and sellers and aggregates multiple carriers' NDC content",
+          "context_ko": "Sabre는 항공사·판매자 양측의 NDC 시스템 제공자로 인증되어 여러 항공사 NDC 콘텐츠를 통합함",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "Travelport",
+          "term": "Travelport NDC (seller-side)",
+          "context": "Travelport offers NDC-enabled retailing on the seller side and was the first GDS to reach IATA NDC Level 3 certification",
+          "context_ko": "Travelport는 판매자 측 NDC 리테일링을 제공하며 IATA NDC 레벨 3 인증에 처음 도달한 GDS",
+          "relationship": "narrower"
+        }
       ],
       "relationships": [
         {
@@ -20263,6 +21926,15 @@
         "Wholesale Rate",
         "Nett Rate",
         "Net Price"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Expedia Group",
+          "term": "Partner Collect / net rate",
+          "context": "In Expedia's Partner Collect model the seller pays Expedia the net rate, bills the guest, and keeps the markup — Expedia's name for the wholesale net-rate arrangement.",
+          "context_ko": "Expedia의 Partner Collect 모델에서 판매자는 Expedia에 net 요금을 지불하고 게스트에게 청구하며 마크업을 가져간다. 도매 net 요금 방식을 가리키는 Expedia의 명칭이다.",
+          "relationship": "same"
+        }
       ],
       "relationships": [
         {
@@ -20713,6 +22385,22 @@
         "Non-Integrated Reservation Ticket",
         "NRT ticket"
       ],
+      "providerTerms": [
+        {
+          "provider": "OSDM (UIC IRS 90918-10)",
+          "term": "Separate AdmissionOfferPart + optional ReservationOfferPart",
+          "context": "OSDM represents an NRT as an open admission sold as its own AdmissionOfferPart with an optional, separately purchasable ReservationOfferPart — the structural split that defines a non-integrated ticket.",
+          "context_ko": "OSDM은 NRT를 자체 AdmissionOfferPart로 판매되는 오픈 어드미션에 선택적·별도 구매 ReservationOfferPart가 붙는 구조로 표현하며, 이 분리가 비통합권의 정의다.",
+          "relationship": "related"
+        },
+        {
+          "provider": "UIC / ERA TAP TSI (TD B.1, PRIFIS/UIC-DRTF)",
+          "term": "NRT tariff (Leaflet 108-1, stored in PRIFIS → UIC-DRTF)",
+          "context": "NRT fares are the non-yielded through fares historically governed by UIC Leaflet 108-1 and distributed via PRIFIS (Price and Fare Information Storage), now the UIC Database for Rail Tariffs and Fares; TAP TSI TD B.1 standardizes their exchange.",
+          "context_ko": "NRT 운임은 역사적으로 UIC Leaflet 108-1이 규정하고 PRIFIS(Price and Fare Information Storage, 현 UIC-DRTF)로 배포된 비수익관리 통과운임이며, TAP TSI TD B.1이 그 교환을 표준화한다.",
+          "relationship": "related"
+        }
+      ],
       "relationships": [
         {
           "type": "contrasts",
@@ -20785,6 +22473,15 @@
         "Non-Last Room Availability",
         "Non-LRA",
         "NLRA Rate"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Sabre Hospitality",
+          "term": "Non-Last Room Availability (NLRA / non-LRA)",
+          "context": "In SynXis/GDS distribution, an NLRA negotiated rate is offered at the property's discretion and may be closed during peak periods to yield higher rates.",
+          "context_ko": "SynXis/GDS 유통에서 NLRA 협상 요금은 property 재량으로 제공되며 성수기에 닫아 더 높은 요금을 받을 수 있다.",
+          "relationship": "same"
+        }
       ],
       "relationships": [
         {
@@ -20865,6 +22562,15 @@
         "Prepaid Rate",
         "Non-Refundable Booking"
       ],
+      "providerTerms": [
+        {
+          "provider": "Booking.com",
+          "term": "Non-refundable rate plan / policy",
+          "context": "Booking.com offers non-refundable rate plans where the guest prepays and forfeits the amount on cancellation, configured via the rate plan's cancellation policy.",
+          "context_ko": "Booking.com은 게스트가 선결제하고 취소 시 환불받지 못하는 non-refundable 요금제를 요금제 취소정책으로 구성해 제공한다.",
+          "relationship": "same"
+        }
+      ],
       "relationships": [
         {
           "type": "child",
@@ -20935,6 +22641,15 @@
       "standardBody": "IATA",
       "aliases": [
         "Neutral Unit of Construction"
+      ],
+      "providerTerms": [
+        {
+          "provider": "NDC/IATA",
+          "term": "FCU (Fare Construction Unit)",
+          "context": "FCU was IATA's earlier currency-neutral fare-construction unit, superseded by NUC on 1 July 1989; NUC values are built using the IATA Rate of Exchange (IROE).",
+          "context_ko": "FCU는 IATA의 이전 통화중립 운임구성 단위로 1989년 7월 1일 NUC로 대체되었으며, NUC 값은 IATA 환율(IROE)로 산출된다.",
+          "relationship": "related"
+        }
       ],
       "relationships": [
         {
@@ -21007,6 +22722,15 @@
         "Occupancy Rate",
         "Number of Guests",
         "Pax Occupancy"
+      ],
+      "providerTerms": [
+        {
+          "provider": "OpenTravel",
+          "term": "GuestCounts (occupancy-based pricing)",
+          "context": "OTA messages carry occupancy as GuestCount elements (AgeQualifyingCode for adults/children) that drive occupancy-based rate amounts.",
+          "context_ko": "OTA 메시지는 점유를 GuestCount 요소(성인·아동 AgeQualifyingCode)로 전달하며 이는 점유 기반 요금을 결정한다.",
+          "relationship": "related"
+        }
       ],
       "relationships": [
         {
@@ -21195,6 +22919,36 @@
         "OfMS",
         "Offer Engine"
       ],
+      "providerTerms": [
+        {
+          "provider": "Amadeus",
+          "term": "Amadeus Nevio",
+          "context": "Amadeus's offer-and-order platform that constructs and prices dynamic offers for airline retailing",
+          "context_ko": "항공 리테일링용 동적 오퍼를 구성·가격 산정하는 Amadeus의 오퍼·주문 플랫폼",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "Sabre",
+          "term": "Sabre Mosaic (Offer Management)",
+          "context": "Sabre Mosaic's offer-management suite builds and personalizes offers with a real-time pricing engine",
+          "context_ko": "실시간 가격 엔진으로 오퍼를 구성·개인화하는 Sabre Mosaic의 오퍼 관리 스위트",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "PROS",
+          "term": "PROS (offer/pricing engine)",
+          "context": "PSS-neutral offer and dynamic-pricing engine used by airlines to generate offers",
+          "context_ko": "항공사가 오퍼 생성에 사용하는 PSS 중립 오퍼·동적 가격 엔진",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "Datalex",
+          "term": "Datalex (Retailaer)",
+          "context": "PSS-neutral airline retailing/offer platform constructing dynamic offers",
+          "context_ko": "동적 오퍼를 구성하는 PSS 중립 항공 리테일링·오퍼 플랫폼",
+          "relationship": "narrower"
+        }
+      ],
       "relationships": [
         {
           "type": "related",
@@ -21272,6 +23026,22 @@
         "Shipboard Credit",
         "Onboard Spending Credit",
         "Ship Board Credit"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Carnival Cruise Line",
+          "term": "Cruise Cash",
+          "context": "Carnival's 'Cruise Cash' is guest-purchased prepaid spending money loaded to the onboard account in $25–$100 denominations for specific areas (bar, casino, etc.); functionally OBC but bought rather than granted as a perk.",
+          "context_ko": "카니발의 'Cruise Cash'는 승객이 25~100달러 단위로 선구매해 온보드 계정에 충전하는 선불 지출금으로 특정 구역(바·카지노 등)에 쓴다. 기능상 OBC이지만 혜택 제공이 아닌 구매 방식이다.",
+          "relationship": "related"
+        },
+        {
+          "provider": "Industry (generic)",
+          "term": "Shipboard Credit (SBC)",
+          "context": "Many lines and travel advisors label the same spendable account credit 'shipboard credit' (SBC) interchangeably with onboard credit (OBC).",
+          "context_ko": "다수 선사·여행 어드바이저는 동일한 지출 가능 계정 크레딧을 온보드 크레딧(OBC)과 호환되게 'shipboard credit(SBC)'으로 표기한다.",
+          "relationship": "same"
+        }
       ],
       "relationships": [
         {
@@ -21996,6 +23766,22 @@
         "OpenTravel Object Model",
         "2.0 Object Model"
       ],
+      "providerTerms": [
+        {
+          "provider": "OpenTravel",
+          "term": "OpenTravel 1.x OTA_* message schemas",
+          "context": "The legacy message-centric OpenTravel 1.x XML messages (e.g. OTA_AirAvailRQ) that the object-oriented 2.0 model supersedes",
+          "context_ko": "객체지향 2.0 모델이 대체하는 레거시 메시지 중심 OpenTravel 1.x XML 메시지(예: OTA_AirAvailRQ)",
+          "relationship": "related"
+        },
+        {
+          "provider": "NDC/IATA",
+          "term": "AIDM / NDC schemas",
+          "context": "IATA's AIDM-derived NDC schemas are a parallel travel data model that OpenTravel collaborates with for interoperability",
+          "context_ko": "OpenTravel이 상호운용을 위해 협력하는, IATA AIDM 기반 NDC 스키마라는 병행 여행 데이터 모델",
+          "relationship": "related"
+        }
+      ],
       "relationships": [
         {
           "type": "parent",
@@ -22151,6 +23937,15 @@
       "standardBody": "IATA",
       "aliases": [
         "Operating Airline"
+      ],
+      "providerTerms": [
+        {
+          "provider": "NDC/IATA",
+          "term": "OperatingCarrier.AirlineID",
+          "context": "In NDC messages the operating carrier is represented by the OperatingCarrier element (AirlineID) on each flight segment, identifying the airline physically operating the flight for disclosure alongside the MarketingCarrier.",
+          "context_ko": "NDC 메시지에서 운항 항공사는 각 항공 구간의 OperatingCarrier 요소(AirlineID)로 표현되며, MarketingCarrier와 함께 고지 목적으로 실제 항공편을 운항하는 항공사를 식별한다.",
+          "relationship": "same"
+        }
       ],
       "relationships": [
         {
@@ -22434,6 +24229,29 @@
         "Airline OMS",
         "Offer and Order Management System"
       ],
+      "providerTerms": [
+        {
+          "provider": "Amadeus",
+          "term": "Amadeus Nevio Order Management System",
+          "context": "Amadeus Nevio's OMS creates and services the single customer Order with ONE Order capabilities",
+          "context_ko": "ONE Order 역량으로 단일 고객 주문을 생성·서비스하는 Amadeus Nevio의 OMS",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "Sabre",
+          "term": "Sabre Mosaic (Order Management)",
+          "context": "Sabre Mosaic's order-management layer maintains the order as source of truth across its lifecycle",
+          "context_ko": "주문 수명주기 전반에서 주문을 신뢰 원천으로 유지하는 Sabre Mosaic의 주문 관리 계층",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "Accelya",
+          "term": "Accelya FLX ONE",
+          "context": "PSS-neutral OMS that can sit atop an existing PSS to deliver ONE Order servicing",
+          "context_ko": "기존 PSS 위에 얹어 ONE Order 서비스를 제공할 수 있는 PSS 중립 OMS",
+          "relationship": "narrower"
+        }
+      ],
       "relationships": [
         {
           "type": "related",
@@ -22611,6 +24429,36 @@
         "OrderCreate/OrderView",
         "OrderCreateRQ/RS"
       ],
+      "providerTerms": [
+        {
+          "provider": "NDC/IATA",
+          "term": "IATA_OrderCreateRQ / IATA_OrderViewRS (21.3+)",
+          "context": "From NDC 21.3 the OrderCreate request and its OrderView response carry the IATA_ prefix; OrderViewRS returns the booked order",
+          "context_ko": "NDC 21.3부터 OrderCreate 요청과 OrderView 응답이 IATA_ 접두사를 가지며, OrderViewRS가 예약된 주문을 반환함",
+          "relationship": "same"
+        },
+        {
+          "provider": "Sabre",
+          "term": "NDC IT OrderCreate",
+          "context": "Sabre's NDC IT OrderCreate API converts a selected priced offer into a confirmed NDC order",
+          "context_ko": "선택된 가격 오퍼를 확정 NDC 주문으로 전환하는 Sabre의 NDC IT OrderCreate API",
+          "relationship": "same"
+        },
+        {
+          "provider": "ATPCO",
+          "term": "OrderCreate (returns OrderViewRS)",
+          "context": "ATPCO's NDC OrderCreate API returns an OrderViewRS representing the created order",
+          "context_ko": "생성된 주문을 나타내는 OrderViewRS를 반환하는 ATPCO의 NDC OrderCreate API",
+          "relationship": "same"
+        },
+        {
+          "provider": "Travelport",
+          "term": "Reservation (Book) workflow",
+          "context": "Travelport's JSON NDC flow creates the order via its booking/reservation endpoints after offer pricing",
+          "context_ko": "오퍼 가격 산정 후 예약 엔드포인트로 주문을 생성하는 Travelport JSON NDC 흐름",
+          "relationship": "related"
+        }
+      ],
       "relationships": [
         {
           "type": "child",
@@ -22701,6 +24549,13 @@
           "term": "O&D / Origin and Destination",
           "context": "Sabre availability and revenue-management documentation uses O&D as the market unit.",
           "context_ko": "Sabre의 가용성 및 수익 관리 문서는 O&D를 시장 단위로 사용한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "NDC/IATA",
+          "term": "OriginDestination",
+          "context": "NDC carries the O&D pair as the OriginDestination element in AirShopping requests/responses, the unit against which offers are shopped and priced.",
+          "context_ko": "NDC는 O&D 쌍을 AirShopping 요청/응답의 OriginDestination 요소로 전달하며, 이는 오퍼를 조회·가격산정하는 단위다.",
           "relationship": "same"
         }
       ],
@@ -22813,6 +24668,13 @@
           "context": "Sabre availability and RM tooling implements O&D-based seat valuation and married-segment availability.",
           "context_ko": "Sabre의 availability 및 RM 도구는 O&D 기반 좌석 가치 평가와 married-segment availability를 구현한다.",
           "relationship": "same"
+        },
+        {
+          "provider": "PROS",
+          "term": "O&D / Network Revenue Management (DAVN-style bid-price control)",
+          "context": "PROS RM implements O&D control via network optimization that generates displacement costs and pseudo-fares per leg, then leg optimization that sets bid prices reflecting full itinerary value.",
+          "context_ko": "PROS RM은 레그별 displacement cost와 pseudo-fare를 생성하는 네트워크 최적화와, 전체 여정 가치를 반영한 bid price를 설정하는 레그 최적화로 O&D control을 구현한다.",
+          "relationship": "same"
         }
       ],
       "relationships": [
@@ -22897,6 +24759,29 @@
       "standardBody": "UIC",
       "aliases": [
         "Open Sales and Distribution Model"
+      ],
+      "providerTerms": [
+        {
+          "provider": "UIC (IRS 90918-10)",
+          "term": "IRS 90918-10",
+          "context": "OSDM's formal standards identity is UIC International Railway Solution (IRS) 90918-10, the specification number under which the API and data model are published.",
+          "context_ko": "OSDM의 공식 표준 식별자는 UIC IRS(International Railway Solution) 90918-10으로, API와 데이터 모델이 발행되는 명세 번호다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "UIC / Hit Rail (legacy Hermes/HOSA, PRIFIS)",
+          "term": "Hermes/HOSA + PRIFIS (predecessor distribution stack)",
+          "context": "OSDM was designed by examining and replacing the legacy Hermes/HOSA reservation ecosystem and the PRIFIS tariff distribution tool (now UIC-DRTF), together with obsolete UIC Leaflets 108-1/108-2/108-3.",
+          "context_ko": "OSDM은 레거시 Hermes/HOSA 예약 생태계와 PRIFIS 운임 배포 도구(현 UIC-DRTF), 그리고 폐기된 UIC Leaflet 108-1/108-2/108-3을 검토·대체하며 설계되었다.",
+          "relationship": "broader"
+        },
+        {
+          "provider": "IATA (NDC / Offers & Orders)",
+          "term": "NDC (New Distribution Capability)",
+          "context": "NDC is the air industry's offer-and-order distribution standard occupying the analogous role to OSDM in rail; both are XML/JSON offer-order models, but NDC is airline-specific and not interoperable with OSDM.",
+          "context_ko": "NDC는 항공 산업의 오퍼·오더 유통 표준으로 철도의 OSDM과 유사한 역할을 한다. 둘 다 오퍼·오더 모델이지만 NDC는 항공 전용이며 OSDM과 상호운용되지 않는다.",
+          "relationship": "related"
+        }
       ],
       "relationships": [
         {
@@ -23007,6 +24892,22 @@
         "Other Service Information",
         "Other Supplementary Information"
       ],
+      "providerTerms": [
+        {
+          "provider": "Amadeus",
+          "term": "OS element (OS <airline> <text>)",
+          "context": "Amadeus creates an OSI as an OS element addressed to a carrier code (or YY for all), carrying up to 68 characters of free text requiring no carrier reply.",
+          "context_ko": "Amadeus는 OSI를 carrier code(또는 전체 대상 YY)로 지정한 OS element로 생성하며, 항공사 회신이 불필요한 최대 68자 free text를 담는다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Sabre",
+          "term": "3OSI entry (3OSI <airline> <text>)",
+          "context": "Sabre adds informational OSI data with the 3OSI command followed by the carrier code and message text (e.g. 3OSI SQ VIP).",
+          "context_ko": "Sabre는 3OSI 명령 뒤에 carrier code와 메시지 텍스트를 붙여 informational OSI 데이터를 추가한다(예: 3OSI SQ VIP).",
+          "relationship": "same"
+        }
+      ],
       "relationships": [
         {
           "type": "contrasts",
@@ -23074,6 +24975,22 @@
       "aliases": [
         "Online Travel Agency",
         "Online Travel Agent"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Booking.com",
+          "term": "Booking.com",
+          "context": "Major OTA aggregating and selling accommodation and other travel products to consumers",
+          "context_ko": "숙박 등 여행 상품을 소비자에게 통합·판매하는 주요 OTA",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "Expedia",
+          "term": "Expedia Group",
+          "context": "Major OTA selling flights, hotels, packages and activities sourced from multiple suppliers",
+          "context_ko": "여러 공급자로부터 소싱한 항공·호텔·패키지·액티비티를 판매하는 주요 OTA",
+          "relationship": "narrower"
+        }
       ],
       "relationships": [
         {
@@ -23291,6 +25208,15 @@
       "aliases": [
         "Package Plan",
         "Bundled Rate"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Oracle OPERA",
+          "term": "Package / Package element (rate code)",
+          "context": "OPERA builds package rates by attaching package elements (breakfast, parking, etc.) to a rate code, posting and allocating the bundled value automatically.",
+          "context_ko": "OPERA는 요금코드에 package element(조식·주차 등)를 붙여 패키지 요금을 구성하고 묶음 가치를 자동 포스팅·배분한다.",
+          "relationship": "same"
+        }
       ],
       "relationships": [
         {
@@ -23701,6 +25627,29 @@
         "PTC",
         "Passenger Type",
         "Pax Type Code"
+      ],
+      "providerTerms": [
+        {
+          "provider": "ATPCO",
+          "term": "PTC",
+          "context": "ATPCO maintains the master Passenger Type Code table (ADT, CNN/CHD, INF, YTH, etc.) used industry-wide to drive fare eligibility and discounts",
+          "context_ko": "ATPCO가 운임 적격성·할인을 구동하는 업계 표준 승객유형코드 테이블(ADT, CNN/CHD, INF, YTH 등)을 관리한다",
+          "relationship": "same"
+        },
+        {
+          "provider": "NDC/IATA",
+          "term": "PTC (PassengerType)",
+          "context": "NDC offer/order messages carry the ATPCO PTC in the PassengerType element to price and break down fares per passenger category",
+          "context_ko": "NDC 오퍼/오더 메시지는 PassengerType 요소에 ATPCO PTC를 실어 승객 범주별로 운임을 산출·분해한다",
+          "relationship": "same"
+        },
+        {
+          "provider": "Travelport",
+          "term": "Passenger Type Code (PTC)",
+          "context": "Travelport Universal API/GWS uses the same 3-letter PTC values to drive air pricing by passenger type",
+          "context_ko": "Travelport Universal API/GWS는 동일한 3자리 PTC 값으로 승객유형별 항공 운임 산출을 구동한다",
+          "relationship": "same"
+        }
       ],
       "relationships": [
         {
@@ -24115,6 +26064,27 @@
           "context": "Sabre refers to the booking file as a PNR identified by a record locator",
           "context_ko": "Sabre는 예약 파일을 record locator로 식별되는 PNR이라고 지칭한다",
           "relationship": "same"
+        },
+        {
+          "provider": "Amadeus",
+          "term": "PNR / Record Locator (RT retrieve)",
+          "context": "Amadeus assigns a six-character record locator to each PNR and retrieves it with the RT prefix; carriers return their own airline record locators per segment.",
+          "context_ko": "Amadeus는 각 PNR에 6자리 record locator를 부여하고 RT 접두로 조회하며, 항공사는 segment별 자체 airline record locator를 반환한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Sabre",
+          "term": "PNR / Record Locator (*<locator> retrieve)",
+          "context": "Sabre stores the booking as a PNR retrieved by an asterisk plus the six-character record locator; a GDS booking on a hosted carrier yields two locators.",
+          "context_ko": "Sabre는 예약을 PNR로 저장해 asterisk + 6자리 record locator로 조회하며, hosted carrier에 대한 GDS 예약은 두 개의 locator를 만든다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "NDC/IATA",
+          "term": "Order (OrderID)",
+          "context": "In NDC the booking is held as an Order identified by an OrderID; post-sale servicing references the OrderID (and may still carry a PNR record locator).",
+          "context_ko": "NDC에서 예약은 OrderID로 식별되는 Order로 보유되며, 판매 후 servicing은 OrderID를 참조한다(PNR record locator를 함께 가질 수도 있다).",
+          "relationship": "related"
         }
       ],
       "relationships": [
@@ -24748,6 +26718,22 @@
         "Passengers with Reduced Mobility",
         "Disabled passenger"
       ],
+      "providerTerms": [
+        {
+          "provider": "IATA",
+          "term": "SSR WCHR / WCHS / WCHC",
+          "context": "IATA defines graded wheelchair SSR codes — WCHR (ramp), WCHS (steps), WCHC (cabin/fully immobile) — to communicate the level of mobility assistance required",
+          "context_ko": "IATA는 필요한 이동지원 수준을 전달하기 위해 휠체어 SSR 코드 WCHR(램프)·WCHS(계단)·WCHC(기내/완전 부동)를 등급별로 정의한다",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "IATA",
+          "term": "SSR DPNA",
+          "context": "IATA SSR DPNA flags a disabled passenger needing assistance for intellectual, developmental or hidden/cognitive disabilities",
+          "context_ko": "IATA SSR DPNA는 지적·발달 또는 비가시적/인지 장애로 지원이 필요한 승객을 표시한다",
+          "relationship": "narrower"
+        }
+      ],
       "relationships": [
         {
           "type": "related",
@@ -24900,6 +26886,29 @@
         "Room & Rate Mapping",
         "Content Mapping"
       ],
+      "providerTerms": [
+        {
+          "provider": "GIATA",
+          "term": "MultiCodes (incl. Room Type Mapping)",
+          "context": "GIATA MultiCodes maps a property's many supplier/GDS/OTA codes to one GIATA-ID and offers Room Type Mapping (RTM) to align room types across systems via NLP.",
+          "context_ko": "GIATA MultiCodes는 한 숙소의 여러 공급자/GDS/OTA 코드를 하나의 GIATA-ID로 매핑하고, NLP를 통해 시스템 간 객실 유형을 정렬하는 Room Type Mapping(RTM)을 제공한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Vervotech",
+          "term": "Vervotech Mapping (Hotel + Room Mapping)",
+          "context": "Vervotech is an ML-based hotel and room mapping SaaS that unifies property and room-type identifiers across 600+ suppliers.",
+          "context_ko": "Vervotech은 600개 이상 공급자 전반의 숙소·객실 유형 식별자를 통합하는 ML 기반 호텔·객실 매핑 SaaS다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Gimmonix",
+          "term": "Mapping.Works",
+          "context": "Gimmonix's Mapping.Works is a fully automated cloud hotel-mapping solution focused on data accuracy.",
+          "context_ko": "Gimmonix의 Mapping.Works는 데이터 정확도에 중점을 둔 완전 자동화 클라우드 호텔 매핑 솔루션이다.",
+          "relationship": "same"
+        }
+      ],
       "relationships": [
         {
           "type": "related",
@@ -24983,6 +26992,15 @@
         "Prorating",
         "Fare Proration",
         "Pro-ration"
+      ],
+      "providerTerms": [
+        {
+          "provider": "IATA",
+          "term": "Prorate Manual Passenger (PMP) / Multilateral Prorate Agreement-Passenger (MPA-P)",
+          "context": "IATA publishes the Prorate Manual Passenger quarterly, containing the Multilateral Prorate Agreement (MPA-P) rules and prorate factors used to divide interline and codeshare fares among carriers in revenue accounting.",
+          "context_ko": "IATA는 분기별로 여객 프로레이트 매뉴얼(PMP)을 발행하며, 여기에는 수익 정산에서 인터라인·공동운항 운임을 항공사 간에 분배하는 데 쓰이는 다자간 프로레이트 협정(MPA-P) 규칙과 프로레이트 팩터가 담겨 있다.",
+          "relationship": "same"
+        }
       ],
       "relationships": [
         {
@@ -25295,6 +27313,20 @@
           "context": "Galileo/Apollo and Worldspan use queues to manage PNR follow-up",
           "context_ko": "Galileo/Apollo와 Worldspan은 PNR 후속 처리를 관리하기 위해 queue를 사용한다",
           "relationship": "same"
+        },
+        {
+          "provider": "Amadeus",
+          "term": "Queue (QE place / QE40)",
+          "context": "Amadeus places PNRs on numbered work queues via QE entries (e.g. QE40) for downstream agent action such as ticketing or schedule-change handling.",
+          "context_ko": "Amadeus는 QE 엔트리(예: QE40)로 PNR을 번호가 매겨진 작업 queue에 올려 발권·schedule change 처리 같은 후속 업무에 사용한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Sabre",
+          "term": "Queue (QP/40 place, Q-prefixed commands)",
+          "context": "Sabre routes PNRs to category/number queues with Q-prefixed commands (e.g. QP/40) for organized agency and airline workflows.",
+          "context_ko": "Sabre는 Q-접두 명령(예: QP/40)으로 PNR을 category/번호 queue에 보내 조직화된 agency·airline workflow에 사용한다.",
+          "relationship": "same"
         }
       ],
       "relationships": [
@@ -25362,6 +27394,15 @@
         "Rack",
         "Published Rate",
         "Standard Rate"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Oracle OPERA",
+          "term": "RACK rate code",
+          "context": "OPERA conventionally uses a RACK rate code as the property's highest published reference rate from which other rate codes discount.",
+          "context_ko": "OPERA는 관례적으로 RACK 요금코드를 다른 요금코드가 할인의 기준으로 삼는 최고 공시 기준요금으로 사용한다.",
+          "relationship": "same"
+        }
       ],
       "relationships": [
         {
@@ -25455,6 +27496,15 @@
         "EU Rail Passenger Rights Regulation",
         "Rail PRR",
         "PRR (rail)"
+      ],
+      "providerTerms": [
+        {
+          "provider": "EU (Regulation (EC) 261/2004)",
+          "term": "Air Passenger Rights Regulation (EC) 261/2004",
+          "context": "The air-mode counterpart is Regulation (EC) 261/2004; both grant delay/cancellation rights but differ sharply — rail compensates from a 60-minute delay at 25%/50% of the fare, air from 3 hours at fixed EUR 250-600 amounts.",
+          "context_ko": "항공 모드 대응 법령은 Regulation (EC) 261/2004이다. 둘 다 지연·취소 권리를 부여하나 기준이 크게 다르다 — 철도는 60분 지연부터 운임의 25%/50%, 항공은 3시간부터 거리별 고정 250~600유로다.",
+          "relationship": "related"
+        }
       ],
       "relationships": [
         {
@@ -25555,6 +27605,15 @@
         "Rate Access Code",
         "Negotiated Rate Code",
         "Hotel Rate Code (GDS access)"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Amadeus",
+          "term": "Rate Access Code / Special Rate (/SR-) request",
+          "context": "In Amadeus hotel availability the default displayed rates are RAC (Rate Access Code) rates; agents append /SR- to request the negotiated/special rates tied to a corporate or agency profile.",
+          "context_ko": "Amadeus 호텔 가용성에서 기본 표시 요금은 RAC(Rate Access Code) 요금이며, 에이전트는 /SR-를 붙여 기업/에이전시 프로필에 연결된 협상/특별 요금을 요청한다.",
+          "relationship": "same"
+        }
       ],
       "relationships": [
         {
@@ -25901,6 +27960,15 @@
         "Rate Parity Agreement",
         "Most Favoured Nation (rate clause)"
       ],
+      "providerTerms": [
+        {
+          "provider": "Sabre Hospitality",
+          "term": "Rate parity (SynXis distribution)",
+          "context": "SynXis CRS provides controls to maintain pricing consistency and enforce rate parity across GDS, OTA and direct channels from a single inventory source.",
+          "context_ko": "SynXis CRS는 단일 재고 소스에서 GDS·OTA·다이렉트 채널 전반의 가격 일관성과 rate parity를 유지·강제하는 제어를 제공한다.",
+          "relationship": "related"
+        }
+      ],
       "relationships": [
         {
           "type": "related",
@@ -26077,6 +28145,29 @@
         "Rate Code",
         "Rate Type",
         "Tariff"
+      ],
+      "providerTerms": [
+        {
+          "provider": "OpenTravel / HTNG",
+          "term": "RatePlan / RatePlanCode",
+          "context": "OTA messages identify a sellable pricing offer via RatePlanCandidate/RatePlan elements carrying a RatePlanCode, mapped between PMS, CRS and channels.",
+          "context_ko": "OTA 메시지는 RatePlanCode를 담은 RatePlanCandidate/RatePlan 요소로 판매 가능한 요금 오퍼를 식별하며 PMS·CRS·채널 간 매핑된다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Oracle OPERA",
+          "term": "Rate Code",
+          "context": "OPERA represents a rate plan as a Rate Code defining prices per room type over a date range/season plus rules, the core of its yield and reservation processes.",
+          "context_ko": "OPERA는 요금제를 룸타입별·시즌별 가격과 규칙을 정의하는 Rate Code로 표현하며 이는 yield·예약 프로세스의 핵심이다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Amadeus",
+          "term": "Rate Type / rate type code",
+          "context": "Amadeus Hospitality defines rate plans as rate types with unique 8-character codes, groupings, rules and restrictions for different bookers and markets.",
+          "context_ko": "Amadeus Hospitality는 요금제를 8자 고유 코드·그룹·규칙·제한을 가진 rate type으로 정의하며 booker·시장별로 구성한다.",
+          "relationship": "same"
+        }
       ],
       "relationships": [
         {
@@ -26611,6 +28702,15 @@
         "RFISC",
         "Optional Services Industry Sub Code"
       ],
+      "providerTerms": [
+        {
+          "provider": "ATPCO",
+          "term": "Optional Services Industry Sub Codes",
+          "context": "ATPCO is the official source that publishes and maintains the Optional Services industry sub codes (RFISC) that qualify each service within its RFIC group; sub codes 98x/99x are reserved per IATA Resolution 722f.",
+          "context_ko": "ATPCO는 RFIC 그룹 내 각 서비스를 한정하는 Optional Services 산업 서브코드(RFISC)를 발행·관리하는 공식 소스이며, 98x/99x 서브코드는 IATA Resolution 722f에 따라 예약(reserved)되어 있다.",
+          "relationship": "same"
+        }
+      ],
       "relationships": [
         {
           "type": "related",
@@ -26872,6 +28972,13 @@
           "context": "The Traveler Redress Inquiry Program that issues Redress Numbers.",
           "context_ko": "Redress Number를 발급하는 여행자 구제 문의 프로그램.",
           "relationship": "broader"
+        },
+        {
+          "provider": "IATA / GDS",
+          "term": "SSR DOCO (Redress)",
+          "context": "In reservations the redress number is entered as an SSR DOCO element associated to the passenger name (not the segment) for transmission to TSA Secure Flight",
+          "context_ko": "예약에서 Redress 번호는 TSA Secure Flight 전송을 위해 승객명에 연결된 SSR DOCO 요소로 입력된다(구간이 아닌 승객 단위)",
+          "relationship": "related"
         }
       ],
       "relationships": [
@@ -27013,6 +29120,22 @@
       "aliases": [
         "Ticket Refund",
         "Refund Application"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Amadeus",
+          "term": "ATC Refund (TRF / TRFP)",
+          "context": "Amadeus processes automated refunds through Amadeus Ticket Changer Refund, where the pricing engine calculates the refundable amount (TRF to display/redisplay, TRFP to process, TRFU to update).",
+          "context_ko": "Amadeus는 Amadeus Ticket Changer Refund로 자동 환불을 처리하며, 가격 엔진이 환불 가능액을 계산한다(TRF 표시/재표시, TRFP 처리, TRFU 갱신).",
+          "relationship": "same"
+        },
+        {
+          "provider": "Sabre",
+          "term": "WETRR / RFND",
+          "context": "Sabre processes refunds via the automated refund flow (WETRR) or RFND, and also offers the Quick Refunds and Exchanges (QREX) tool; cancel-refund must be done by midnight on the processing day.",
+          "context_ko": "Sabre는 자동 환불 흐름(WETRR) 또는 RFND로 환불을 처리하며 Quick Refunds and Exchanges(QREX) 도구도 제공한다. 환불 취소는 처리 당일 자정까지 가능하다.",
+          "relationship": "same"
+        }
       ],
       "relationships": [
         {
@@ -27162,6 +29285,29 @@
         "Ticket Exchange",
         "Reissuance"
       ],
+      "providerTerms": [
+        {
+          "provider": "Amadeus",
+          "term": "Amadeus Ticket Changer (ATC)",
+          "context": "Amadeus brands its automated reissue/exchange engine as Amadeus Ticket Changer (ATC), which reprices and issues the new ticket while marking original coupons EXCHANGED (voluntary FXP/TTP, involuntary FXI).",
+          "context_ko": "Amadeus는 자동 재발행/교환 엔진을 Amadeus Ticket Changer(ATC)로 브랜딩하며, 재산정 후 새 항공권을 발행하고 원본 쿠폰을 EXCHANGED 처리한다(자발적 FXP/TTP, 비자발적 FXI).",
+          "relationship": "same"
+        },
+        {
+          "provider": "Sabre",
+          "term": "WETR / PQR",
+          "context": "Sabre reissues are processed via the WETR exchange flow, storing the recomputed fare as a Price Quote Reissue Record (PQR) until the new ticket is issued; original coupons move to EXCHANGED.",
+          "context_ko": "Sabre 재발행은 WETR 교환 흐름으로 처리되어 재산정 운임을 새 항공권 발행 시까지 Price Quote Reissue Record(PQR)로 저장하며, 원본 쿠폰은 EXCHANGED로 전환된다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "NDC/IATA",
+          "term": "OrderChange",
+          "context": "In NDC, a reissue is expressed as an OrderChange that replaces affected OrderItems with new OfferItems; the airline's order management system reprices and reissues underlying documents.",
+          "context_ko": "NDC에서 재발행은 영향받는 OrderItem을 새 OfferItem으로 교체하는 OrderChange로 표현되며, 항공사 주문관리시스템이 재산정·재발행한다.",
+          "relationship": "same"
+        }
+      ],
       "relationships": [
         {
           "type": "related",
@@ -27266,6 +29412,15 @@
         "Release Back",
         "Cut-off Period",
         "Release Days"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Oracle OPERA",
+          "term": "Cutoff days (release)",
+          "context": "OPERA expresses the release period as cutoff days before arrival, after which unsold allotment/block rooms return to house inventory.",
+          "context_ko": "OPERA는 release 기간을 도착 전 cutoff days로 표현하며 그 이후 미판매 allotment/block 객실이 house inventory로 반환된다.",
+          "relationship": "same"
+        }
       ],
       "relationships": [
         {
@@ -27620,6 +29775,22 @@
         "Repositioning Sailing",
         "One-Way Cruise"
       ],
+      "providerTerms": [
+        {
+          "provider": "Cunard Line",
+          "term": "Transatlantic Crossing",
+          "context": "Cunard markets its scheduled one-way Queen Mary 2 ocean-liner 'Crossing' as a distinct formal product; it overlaps with repositioning but is a recurring branded service rather than a seasonal relocation sailing.",
+          "context_ko": "큐나드는 정기 편도 퀸메리2 오션라이너 'Crossing'을 별도의 격식 있는 상품으로 마케팅한다. 리포지셔닝과 겹치지만 계절성 이동 항해가 아닌 반복 운영 브랜드 서비스다.",
+          "relationship": "related"
+        },
+        {
+          "provider": "Holland America Line",
+          "term": "Transatlantic / Grand Voyage",
+          "context": "HAL groups one-way relocation sailings under 'Transatlantic' crossings and longer 'Grand Voyages', the latter being extended multi-region itineraries broader than a simple repositioning leg.",
+          "context_ko": "HAL은 편도 이동 항해를 'Transatlantic' 크로싱과 더 긴 'Grand Voyages'로 묶으며, 후자는 단순 리포지셔닝 구간보다 넓은 장기 다지역 일정이다.",
+          "relationship": "related"
+        }
+      ],
       "relationships": [
         {
           "type": "related",
@@ -27808,6 +29979,20 @@
           "context": "Amadeus describes a standalone EMD issued for residual value resulting from the exchange of a non-refundable old document of higher value than the new document.",
           "context_ko": "Amadeus는 새 서류보다 가치가 높은 비환불 원본 서류를 교환할 때 발생하는 잔여 가치에 대해 독립형 EMD를 발행하는 것으로 설명한다.",
           "relationship": "narrower"
+        },
+        {
+          "provider": "Sabre",
+          "term": "Residual to EMD",
+          "context": "In a Sabre WETR exchange where the new ticket is of lower value, the leftover amount (after penalties and fare difference) is automatically refunded as residual value onto an EMD rather than to the original ticket.",
+          "context_ko": "Sabre WETR 교환에서 새 항공권 가치가 더 낮을 때, 페널티·운임차액 차감 후 남는 금액은 원본 항공권이 아니라 EMD로 자동 잔여가치 환급된다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "NDC/IATA",
+          "term": "EMD-S (residual value)",
+          "context": "IATA designates the Standalone EMD (EMD-S) as the document type that holds residual value left over from an exchange to a lower-value ticket.",
+          "context_ko": "IATA는 더 낮은 가치의 항공권으로 교환 시 남은 잔여가치를 보관하는 서류 유형으로 Standalone EMD(EMD-S)를 지정한다.",
+          "relationship": "related"
         }
       ],
       "relationships": [
@@ -27996,6 +30181,15 @@
       "aliases": [
         "Yield Management",
         "Inventory Management"
+      ],
+      "providerTerms": [
+        {
+          "provider": "PROS",
+          "term": "PROS Airline Revenue Management (RM Advantage / Essentials)",
+          "context": "PROS is a leading commercial airline RM vendor whose products apply demand forecasting, network optimization and leg optimization to set class availability and bid prices.",
+          "context_ko": "PROS는 대표적 상용 항공 RM 공급사로, 수요예측·네트워크 최적화·레그 최적화를 적용해 클래스 가용성과 bid price를 설정하는 제품을 제공한다.",
+          "relationship": "related"
+        }
       ],
       "relationships": [
         {
@@ -28239,6 +30433,20 @@
           "context": "ERA's Organisation Code Register assigns each entity a code; for companies holding a UIC RICS code, ERA allocates an Organisation Code with the same value.",
           "context_ko": "ERA의 조직코드등록부(OCR)는 각 주체에 코드를 배정하며, UIC RICS 코드를 보유한 회사에는 동일 값의 Organisation Code를 배정한다.",
           "relationship": "related"
+        },
+        {
+          "provider": "UIC",
+          "term": "Company Code (RICS Code)",
+          "context": "UIC's own primary name for this identifier is 'Company Code', with RICS (Railway Interchange Coding System) as the expansion; from 1 Jan 2026 UIC manages only non-EU country codes while ERA handles EU countries.",
+          "context_ko": "UIC가 쓰는 이 식별자의 주 명칭은 'Company Code'이며 RICS(Railway Interchange Coding System)는 그 확장형이다. 2026년 1월 1일부터 UIC는 비EU 국가 코드만, ERA가 EU 국가를 관리한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "IATA / ICAO (air)",
+          "term": "IATA airline designator / ICAO airline code",
+          "context": "The air-industry analogue for uniquely identifying a carrier is the 2-letter IATA airline designator and 3-letter ICAO code; the RICS code is the rail counterpart but uses a 4-digit numeric scheme.",
+          "context_ko": "항공 산업에서 운송인을 고유 식별하는 대응물은 2자리 IATA 항공사 지정코드와 3자리 ICAO 코드다. RICS 코드는 철도 측 대응물이나 4자리 숫자 체계를 쓴다.",
+          "relationship": "related"
         }
       ],
       "relationships": [
@@ -28333,6 +30541,15 @@
         "Article 9 Care",
         "Right to Assistance"
       ],
+      "providerTerms": [
+        {
+          "provider": "Amadeus",
+          "term": "Airline Disruption Management / Passenger Recovery (passenger care)",
+          "context": "Amadeus's disruption-management suite operationalizes duty-of-care during IROPS, rebooking passengers and arranging care such as conveniently located hotels, alongside meal/voucher and refund-in-voucher options through partners.",
+          "context_ko": "Amadeus의 운항차질 관리 제품군으로, IROPS 중 보호의무(duty of care)를 실무화해 승객을 재예약하고 인접 호텔 등 케어를 수배하며, 파트너를 통한 식사·바우처 및 바우처 환불 옵션을 제공한다.",
+          "relationship": "related"
+        }
+      ],
       "relationships": [
         {
           "type": "child",
@@ -28424,6 +30641,36 @@
         "Re-routing (EU261 Article 8)",
         "Article 8 Re-routing"
       ],
+      "providerTerms": [
+        {
+          "provider": "ATPCO",
+          "term": "Category 31 (Voluntary Changes) / involuntary reissue handling",
+          "context": "ATPCO fare-rule category that machine-encodes the reissue/exchange conditions airlines file; when a disruption forces re-routing, systems use airline-filed Cat 31 (with Cat 16 penalties historically) to auto-build the involuntary reissue without recomputing fare.",
+          "context_ko": "항공사가 신고하는 재발행/변경 조건을 기계 판독 가능하게 코드화한 ATPCO 운임규정 카테고리. 운항 차질로 인한 재라우팅 시 시스템이 항공사가 신고한 Cat 31(과거에는 Cat 16 페널티)을 사용해 운임 재계산 없이 비자발 재발행을 자동 생성한다.",
+          "relationship": "related"
+        },
+        {
+          "provider": "Amadeus",
+          "term": "Amadeus Ticket Changer Involuntary (FXI) / Passenger Recovery & Self-Service Reaccommodation",
+          "context": "Amadeus's involuntary reissue product (cryptic entry FXI) automatically prepares the e-ticket reissue for an involuntary rerouting after a disruption or schedule change; Passenger Recovery and Self-Service Reaccommodation rebook disrupted passengers onto alternative flights per business rules.",
+          "context_ko": "Amadeus의 비자발 재발행 제품(크립틱 명령어 FXI)으로, 운항 차질·스케줄 변경 후 비자발 재라우팅에 대한 e-티켓 재발행을 자동 준비한다. Passenger Recovery 및 Self-Service Reaccommodation은 업무규칙에 따라 차질 승객을 대체편으로 재예약한다.",
+          "relationship": "related"
+        },
+        {
+          "provider": "Sabre",
+          "term": "Involuntary Reissue / Automated Exchange (Reroute, Schedule Change, No Coupon)",
+          "context": "Sabre's order-management exchange tooling handles involuntary reissues for irregular operations, with explicit Reroute, Schedule Change, and No Coupon involuntary types, auto-calculating collections/refunds using airline-filed rules.",
+          "context_ko": "Sabre의 주문관리 교환 도구로, 비정상 운항에 대한 비자발 재발행을 처리하며 Reroute·Schedule Change·No Coupon 비자발 유형을 명시적으로 지원하고 항공사 신고 규정으로 추징/환불을 자동 계산한다.",
+          "relationship": "related"
+        },
+        {
+          "provider": "NDC/IATA",
+          "term": "AIRIMP re-accommodation (action code NI) / IROPS interline re-accommodation",
+          "context": "IATA's interline IROPS guidance specifies re-accommodation messaging via AIRIMP, using reservations action code NI to request inventory from the new operating carrier when re-routing a disrupted passenger onto a partner airline.",
+          "context_ko": "IATA의 인터라인 IROPS 지침은 AIRIMP를 통한 재수용(re-accommodation) 메시징을 규정하며, 차질 승객을 파트너 항공사로 재라우팅할 때 예약 액션코드 NI로 새 운항 항공사에 좌석 재고를 요청한다.",
+          "relationship": "narrower"
+        }
+      ],
       "relationships": [
         {
           "type": "parent",
@@ -28507,6 +30754,22 @@
         "Room Category",
         "Accommodation Type",
         "Room Class"
+      ],
+      "providerTerms": [
+        {
+          "provider": "OpenTravel / HTNG",
+          "term": "RoomType / RoomTypeCode (InvTypeCode)",
+          "context": "OTA messages identify bookable accommodation via RoomTypeCode/InvTypeCode in RoomStayCandidate and ARI inventory updates, mapped across systems.",
+          "context_ko": "OTA 메시지는 RoomStayCandidate와 ARI 재고 갱신의 RoomTypeCode/InvTypeCode로 예약 가능 객실을 식별하며 시스템 간 매핑된다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Oracle OPERA",
+          "term": "Room Type / Room Class",
+          "context": "OPERA configures a Room Type code (e.g. Deluxe, Standard) grouped under a Room Class umbrella for controlled inventory management.",
+          "context_ko": "OPERA는 Room Type 코드(예: Deluxe, Standard)를 구성하고 이를 Room Class 우산 아래 묶어 재고를 통제한다.",
+          "relationship": "same"
+        }
       ],
       "relationships": [
         {
@@ -28685,6 +30948,15 @@
         "Run of the House",
         "Run-of-House Rate"
       ],
+      "providerTerms": [
+        {
+          "provider": "Oracle OPERA",
+          "term": "Run of House (ROH)",
+          "context": "OPERA books ROH without a guaranteed room type, redistributing those reservations to actual room types at arrival based on best available rooms.",
+          "context_ko": "OPERA는 ROH를 보장 룸타입 없이 예약한 뒤 도착 시 가용 최적 객실 기준으로 실제 룸타입에 재배분한다.",
+          "relationship": "same"
+        }
+      ],
       "relationships": [
         {
           "type": "contrasts",
@@ -28763,6 +31035,22 @@
         "Schedule Adjustment",
         "Schedule Change Notification",
         "Time Change"
+      ],
+      "providerTerms": [
+        {
+          "provider": "IATA",
+          "term": "SSM / ASM (Standard Schedules Message / Ad hoc Schedule Message)",
+          "context": "IATA SSM distributes permanent schedule creations, changes, and cancellations, and ASM conveys ad hoc/short-notice changes; GDSs ingest these to update flight schedules that drive schedule-change processing on booked PNRs.",
+          "context_ko": "IATA SSM은 영구적인 스케줄 생성·변경·취소를 배포하고 ASM은 임시·긴급 변경을 전달하며, GDS는 이를 수신해 예약된 PNR의 스케줄 변경 처리를 유발하는 항공편 스케줄을 갱신한다.",
+          "relationship": "related"
+        },
+        {
+          "provider": "Sabre",
+          "term": "Schedule Change (queue / Automation Manager)",
+          "context": "Sabre processes schedule changes via dedicated schedule-change queues and its Automation Manager, which links Schedule Change with PNR Manager to automate rebooking and notification when an operating schedule changes.",
+          "context_ko": "Sabre는 전용 스케줄 변경 큐와 Automation Manager를 통해 스케줄 변경을 처리하며, 운항 스케줄이 바뀌면 Schedule Change를 PNR Manager와 연동해 재예약·고지를 자동화한다.",
+          "relationship": "related"
+        }
       ],
       "relationships": [
         {
@@ -28873,6 +31161,27 @@
           "context": "Universal API/JSON service returning aircraft seat maps for booking and seat assignment.",
           "context_ko": "예약 및 좌석 배정을 위해 항공기 seat map을 반환하는 Universal API/JSON 서비스.",
           "relationship": "related"
+        },
+        {
+          "provider": "Amadeus",
+          "term": "SeatMap Display / NDC SeatAvailability",
+          "context": "Amadeus exposes seat maps via the SeatMap Display API and, in NDC, SeatAvailabilityRQ/RS returning cabin layout, availability and integrated seat fees.",
+          "context_ko": "Amadeus는 SeatMap Display API로, NDC에서는 SeatAvailabilityRQ/RS로 cabin layout, availability, 통합 좌석 요금을 반환하며 seat map을 제공한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Sabre",
+          "term": "Get Seats / Seat Map API",
+          "context": "Sabre's Get Seats (Seat Map) API returns the flight seat map with seat locations, facilities, chargeable/non-chargeable status, availability and pricing.",
+          "context_ko": "Sabre의 Get Seats(Seat Map) API는 좌석 위치, 시설, 유료/무료 상태, availability, 가격을 포함한 flight seat map을 반환한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "NDC/IATA",
+          "term": "SeatAvailabilityRS",
+          "context": "NDC SeatAvailabilityRS returns the data to construct a seat map on an offer or order, with integrated premium-seat fees and media content.",
+          "context_ko": "NDC SeatAvailabilityRS는 offer 또는 order에 대한 seat map 구성 데이터를 반환하며, premium 좌석 요금과 media content가 통합된다.",
+          "relationship": "same"
         }
       ],
       "relationships": [
@@ -28951,6 +31260,22 @@
       "aliases": [
         "Reservation (OSDM)",
         "Place Reservation"
+      ],
+      "providerTerms": [
+        {
+          "provider": "OSDM (UIC IRS 90918-10)",
+          "term": "ReservationOfferPart / Reservation",
+          "context": "OSDM names the place-bound reservation 'ReservationOfferPart' (becoming 'Reservation' when booked), explicitly a separate offer part from the AdmissionOfferPart so a reservation can be sold without buying the admission again.",
+          "context_ko": "OSDM은 특정 열차·좌석에 결합된 예약을 'ReservationOfferPart'(예약 확정 시 'Reservation')로 명명하며, 어드미션을 다시 구매하지 않고도 예약만 판매할 수 있도록 AdmissionOfferPart와 명시적으로 분리한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "ERA TAP TSI (TD B.5)",
+          "term": "Reservation data exchange (TD B.5)",
+          "context": "ERA TAP TSI Technical Document B.5 standardizes the electronic exchange of reservation messages between rail actors — the regulated interface behind cross-carrier seat reservations.",
+          "context_ko": "ERA TAP TSI 기술문서 B.5는 철도 주체 간 예약 메시지의 전자적 교환을 표준화하며, 운송인 간 좌석예약을 뒷받침하는 규제 인터페이스다.",
+          "relationship": "related"
+        }
       ],
       "relationships": [
         {
@@ -29035,6 +31360,29 @@
         "Secure Flight Passenger Data",
         "SFPD",
         "Secure Flight Program"
+      ],
+      "providerTerms": [
+        {
+          "provider": "TSA",
+          "term": "SFPD (Secure Flight Passenger Data)",
+          "context": "TSA names the mandatory data set (full name, DOB, gender, plus KTN/Redress) collected for watch-list matching as Secure Flight Passenger Data",
+          "context_ko": "TSA는 감시명단 대조를 위해 수집하는 필수 데이터셋(성명·생년월일·성별 및 KTN/Redress)을 SFPD라 부른다",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "IATA",
+          "term": "SSR DOCS / DOCO",
+          "context": "Carriers transmit SFPD to TSA using the existing IATA SSR DOCS (identity) and SSR DOCO (KTN/Redress) PNR elements",
+          "context_ko": "항공사는 기존 IATA SSR DOCS(신원)와 SSR DOCO(KTN/Redress) PNR 요소를 이용해 SFPD를 TSA에 전송한다",
+          "relationship": "related"
+        },
+        {
+          "provider": "Amadeus",
+          "term": "SSR ADPI",
+          "context": "Amadeus added the SSR ADPI element so airlines can request the passenger details needed when SFPD/APIS data is missing from the booking source",
+          "context_ko": "Amadeus는 예약 출처에 SFPD/APIS 데이터가 없을 때 항공사가 필요한 승객정보를 요청하도록 SSR ADPI 요소를 추가했다",
+          "relationship": "related"
+        }
       ],
       "relationships": [
         {
@@ -29127,6 +31475,15 @@
         "Booking Segment",
         "Flight Segment",
         "Air Segment"
+      ],
+      "providerTerms": [
+        {
+          "provider": "NDC/IATA",
+          "term": "Flight Segment / Service (in OrderItem)",
+          "context": "NDC retains the flight segment as a routing unit, but the commercial unit becomes the per-passenger-per-segment Service inside an OrderItem rather than a sold segment in a PNR.",
+          "context_ko": "NDC는 flight segment를 routing 단위로 유지하되, 상업 단위는 PNR의 판매 segment 대신 OrderItem 내 승객×segment 단위 Service가 된다.",
+          "relationship": "related"
+        }
       ],
       "relationships": [
         {
@@ -29328,6 +31685,15 @@
       "aliases": [
         "settlement period",
         "billing and settlement cycle"
+      ],
+      "providerTerms": [
+        {
+          "provider": "IATA",
+          "term": "Settlement with Orders (SwO)",
+          "context": "IATA order-based settlement that triggers BSP money collection via a simple agent-airline request, extending settlement to ticketless NDC/ONE Order carriers.",
+          "context_ko": "간단한 대리점-항공사 요청으로 BSP 자금 수금을 개시하는 IATA의 오더 기반 정산으로, 티켓리스 NDC/ONE Order 항공사까지 정산을 확장한다.",
+          "relationship": "related"
+        }
       ],
       "relationships": [
         {
@@ -29584,6 +31950,22 @@
         "Excursion",
         "Port Tour",
         "Shore Tour"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Disney Cruise Line",
+          "term": "Port Adventures",
+          "context": "Disney brands all port-of-call tours and activities as 'Port Adventures', its proprietary name for the shore-excursion product.",
+          "context_ko": "디즈니는 모든 기항지 투어·액티비티를 'Port Adventures'로 브랜딩하며, 이는 기항지 투어 상품의 고유 명칭이다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Royal Caribbean International",
+          "term": "Royal Signature Excursions",
+          "context": "Royal Caribbean's curated premium tier within its Shore Excursions program, marketed as elevated, immersive, authentic regional experiences.",
+          "context_ko": "로열캐리비안 Shore Excursions 프로그램 내 큐레이션된 프리미엄 등급으로, 한층 높은 몰입형·진정성 있는 지역 체험으로 마케팅된다.",
+          "relationship": "narrower"
+        }
       ],
       "relationships": [
         {
@@ -29917,6 +32299,15 @@
         "Single Occupancy Supplement",
         "Solo Traveler Surcharge"
       ],
+      "providerTerms": [
+        {
+          "provider": "Norwegian Cruise Line (NCL)",
+          "term": "Studio / Solo Staterooms",
+          "context": "NCL pioneered purpose-built single-occupancy 'Studio' (and Solo) staterooms always priced for one guest, eliminating the single supplement and adding private Studio Lounge access — the opposite mechanism to a supplement.",
+          "context_ko": "NCL은 1인 전용으로 설계해 항상 1인 요금만 매기는 'Studio'(및 Solo) 객실을 선도적으로 도입해 싱글 서플먼트를 없애고 전용 스튜디오 라운지 이용을 제공한다. 서플먼트와 반대되는 방식이다.",
+          "relationship": "related"
+        }
+      ],
       "relationships": [
         {
           "type": "related",
@@ -29996,6 +32387,22 @@
         "Standard Interline Passenger Procedure code",
         "SIP Code",
         "Car Type Code"
+      ],
+      "providerTerms": [
+        {
+          "provider": "GDS (legacy / IATA)",
+          "term": "SIPP code",
+          "context": "Standard Interline Passenger Procedure code, the original airline-booking-system four-letter classification that GDSs adopted and ACRISS later expanded and now maintains.",
+          "context_ko": "Standard Interline Passenger Procedure 코드로, 항공 예약 시스템에서 출발한 네 자리 분류를 GDS가 채택했고 이후 ACRISS가 확장·관리한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "ACRA (American Car Rental Association)",
+          "term": "SIP code",
+          "context": "ACRA refers to the same four-character vehicle classification as the ACRISS/SIP code in its US industry guidance.",
+          "context_ko": "ACRA는 미국 업계 가이드에서 동일한 네 자리 차량 분류를 ACRISS/SIP 코드로 부른다.",
+          "relationship": "same"
+        }
       ],
       "relationships": [
         {
@@ -30142,6 +32549,15 @@
         "Takeoff/Landing Slot",
         "Coordination Slot"
       ],
+      "providerTerms": [
+        {
+          "provider": "IATA",
+          "term": "Worldwide Airport Slot Guidelines (WASG)",
+          "context": "The WASG—jointly published by IATA, ACI World, and WWACG via the Worldwide Airport Slot Board—is the global standard governing how slots are allocated and managed at coordinated (capacity-constrained) airports.",
+          "context_ko": "WASG는 IATA·ACI World·WWACG가 세계 공항 슬롯 위원회(WASB)를 통해 공동 발행하는 표준으로, 조정(용량 제약) 공항에서 슬롯이 배정·관리되는 방식을 규율하는 글로벌 기준이다.",
+          "relationship": "same"
+        }
+      ],
       "relationships": [
         {
           "type": "related",
@@ -30197,6 +32613,15 @@
       "aliases": [
         "Special Prorate Agreement",
         "Special Pro-rate Agreement"
+      ],
+      "providerTerms": [
+        {
+          "provider": "IATA",
+          "term": "Special Prorate Agreement vs Multilateral Prorate Agreement (MPA)",
+          "context": "In IATA's proration hierarchy a bilateral SPA supersedes the Multilateral Prorate Agreement (MPA) for the tickets and routings it covers, typically as a fixed amount, a percentage of the local fare, or a discount off the standard rate.",
+          "context_ko": "IATA의 프로레이트 우선순위에서 양자간 SPA는 그것이 적용되는 항공권·노선에 대해 다자간 프로레이트 협정(MPA)에 우선하며, 통상 고정 금액, 로컬 운임의 일정 비율, 또는 표준 요율 할인 형태로 설정된다.",
+          "relationship": "same"
+        }
       ],
       "relationships": [
         {
@@ -30523,6 +32948,22 @@
         "Special Service Request",
         "Special Service Requirement"
       ],
+      "providerTerms": [
+        {
+          "provider": "Amadeus",
+          "term": "SR element (SR <code> <airline>)",
+          "context": "Amadeus enters an SSR as an SR element with a four-letter SSR code (e.g. SR WCHR) addressed to a carrier, which is queued back when the carrier responds.",
+          "context_ko": "Amadeus는 SSR을 carrier 대상의 4자리 SSR code를 가진 SR element(예: SR WCHR)로 입력하며, 항공사 응답 시 PNR이 queue로 회송된다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Sabre",
+          "term": "3<SSR code> entry (e.g. 3WCHR / SSR formats)",
+          "context": "Sabre adds SSRs via the 3-prefixed special-service entries carrying the IATA SSR code, carrier and passenger association.",
+          "context_ko": "Sabre는 IATA SSR code, carrier, 승객 연결을 담은 3-접두 special-service 엔트리로 SSR을 추가한다.",
+          "relationship": "same"
+        }
+      ],
       "relationships": [
         {
           "type": "contrasts",
@@ -30695,6 +33136,22 @@
         "Tarif Commun International pour le transport des Voyageurs",
         "Common International Tariff"
       ],
+      "providerTerms": [
+        {
+          "provider": "UIC (PRIFIS → UIC-DRTF)",
+          "term": "PRIFIS / UIC Database for Rail Tariffs and Fares (UIC-DRTF)",
+          "context": "TCV through-fare/NRT tariff data is the content historically stored and distributed via UIC's PRIFIS (Price and Fare Information Storage), redesigned in 2019 and now the UIC Database for Rail Tariffs and Fares feeding OSDM.",
+          "context_ko": "TCV 통과운임·NRT 운임 데이터는 역사적으로 UIC PRIFIS(Price and Fare Information Storage)로 저장·배포된 내용으로, 2019년 재설계되어 현재 OSDM에 공급되는 UIC-DRTF가 되었다.",
+          "relationship": "related"
+        },
+        {
+          "provider": "IATA (PTCCM)",
+          "term": "Passenger Tariffs Conference Composite Manual (PTCCM)",
+          "context": "The air-industry analogue for a common international fare/tariff framework is IATA's PTCCM governing passenger tariff resolutions; like the TCV it standardizes cross-carrier fare definitions, but for air.",
+          "context_ko": "공통 국제 운임 체계의 항공 측 대응물은 여객 운임 결의를 규율하는 IATA PTCCM이다. TCV처럼 운송인 간 운임 정의를 표준화하나 대상은 항공이다.",
+          "relationship": "related"
+        }
+      ],
       "relationships": [
         {
           "type": "related",
@@ -30860,6 +33317,20 @@
           "context": "Airlines transfer schedule data to OAG using SSIM-based file and SSM/ASM update formats.",
           "context_ko": "항공사는 SSIM 기반 파일과 SSM/ASM 갱신 포맷으로 OAG에 스케줄 데이터를 전송한다.",
           "relationship": "related"
+        },
+        {
+          "provider": "Cirium",
+          "term": "SSIM-format schedule feeds",
+          "context": "Cirium ingests and distributes airline schedules in IATA SSIM fixed-width format and via SSM/ASM update messages.",
+          "context_ko": "Cirium은 IATA SSIM 고정폭 포맷과 SSM/ASM 업데이트 메시지로 항공사 schedule을 수집·배포한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "IATA",
+          "term": "SSM / ASM messages",
+          "context": "SSM (Standard Schedules Message) transmits permanent schedule changes and ASM (Ad Hoc Schedules Message) transmits single-day deviations under the SSIM standard.",
+          "context_ko": "SSM(Standard Schedules Message)은 영구 schedule 변경을, ASM(Ad Hoc Schedules Message)은 단일일 편차를 SSIM 표준 하에 전송한다.",
+          "relationship": "narrower"
         }
       ],
       "relationships": [
@@ -31285,6 +33756,20 @@
           "context": "In OTA_HotelAvailNotifRQ a stop sell is sent as RestrictionStatus with Status=\"Close\", independent of MinLOS/CTA/CTD restrictions.",
           "context_ko": "OTA_HotelAvailNotifRQ에서 stop sell은 Status=\"Close\"인 RestrictionStatus로 전송되며 MinLOS/CTA/CTD 제약과 독립적이다.",
           "relationship": "same"
+        },
+        {
+          "provider": "Oracle OPERA",
+          "term": "Close (rate/room restriction)",
+          "context": "OPERA closes a rate code and/or room type for dates via rate strategy/availability restrictions, preventing sale regardless of physical inventory.",
+          "context_ko": "OPERA는 rate strategy/availability 제한으로 일자별 요금코드·룸타입을 Close해 물리 재고와 무관하게 판매를 막는다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Booking.com",
+          "term": "Closed restriction (Status=\"Close\")",
+          "context": "Booking.com applies a Closed restriction at rate-plan level so reservations can't be created for that date across the channel.",
+          "context_ko": "Booking.com은 요금제 레벨에 Closed 제한을 적용해 해당 일자에 채널 전반에서 예약 생성을 막는다.",
+          "relationship": "same"
         }
       ],
       "relationships": [
@@ -31387,6 +33872,15 @@
       "aliases": [
         "SCA",
         "Strong Customer Authentication (PSD2)"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Reserve Bank of India (RBI)",
+          "term": "Additional Factor of Authentication (AFA)",
+          "context": "India's RBI-mandated two-factor authentication for digital payments; the non-EU counterpart to PSD2 SCA, requiring at least one dynamic factor.",
+          "context_ko": "디지털 결제에 대한 인도 RBI 의무 2요소 인증으로, 최소 하나의 동적 요소를 요구하는 PSD2 SCA의 비EU 대응 규제.",
+          "relationship": "related"
+        }
       ],
       "relationships": [
         {
@@ -31530,6 +34024,15 @@
         "SLI",
         "Supplemental Liability Protection",
         "Additional Liability Insurance"
+      ],
+      "providerTerms": [
+        {
+          "provider": "OpenTravel (OTA)",
+          "term": "VCT code (Third-Party Liability / SLI)",
+          "context": "OTA's Vehicle Coverage Type list includes third-party liability coverage codes under which supplemental liability insurance is carried in vehicle messages.",
+          "context_ko": "OTA의 Vehicle Coverage Type 리스트는 third-party liability 보장 코드를 포함하며, 그 아래에 보완 책임보험(SLI)이 차량 메시지에 실린다.",
+          "relationship": "same"
+        }
       ],
       "relationships": [
         {
@@ -32141,6 +34644,15 @@
         "Airline Ticket Number",
         "Electronic Ticket Number"
       ],
+      "providerTerms": [
+        {
+          "provider": "Amadeus",
+          "term": "FA element / Document Number",
+          "context": "In an Amadeus PNR the issued e-ticket number is stored in the automated FA element as the 'document number' (3-digit carrier code + serial).",
+          "context_ko": "Amadeus PNR에서 발권된 e-티켓 번호는 자동 FA 요소에 'document number'(3자리 항공사 코드+일련번호)로 저장된다.",
+          "relationship": "same"
+        }
+      ],
       "relationships": [
         {
           "type": "related",
@@ -32320,6 +34832,15 @@
         "Time to Ticket",
         "Last Ticketing Date",
         "TTL"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Amadeus",
+          "term": "TKTL (Ticketing Arrangement / TK element)",
+          "context": "Amadeus records the ticketing deadline as a TK element (TKTL ddmmm); when the limit is reached the PNR drops to Queue 8, and airlines can drive deadlines via Automated Ticketing Limits (ATL).",
+          "context_ko": "Amadeus는 발권 기한을 TK 요소(TKTL ddmmm)로 기록하며, 기한 도달 시 PNR이 Queue 8로 이동하고 항공사는 Automated Ticketing Limits(ATL)로 기한을 설정할 수 있다.",
+          "relationship": "same"
+        }
       ],
       "relationships": [
         {
@@ -32567,6 +35088,27 @@
           "context": "Scheme-level tokenization that replaces a card-on-file PAN with a network-issued token kept current across reissuance.",
           "context_ko": "card-on-file PAN을 네트워크 발급 토큰으로 대체하고 카드 재발급 시에도 최신으로 유지하는 카드 네트워크 차원의 토큰화.",
           "relationship": "narrower"
+        },
+        {
+          "provider": "Visa",
+          "term": "Visa Token Service (VTS)",
+          "context": "Visa's network tokenization platform replacing the PAN with a network token (Digital PAN) for card-on-file and wallet payments.",
+          "context_ko": "카드 온파일·월렛 결제를 위해 PAN을 네트워크 토큰(Digital PAN)으로 대체하는 Visa의 네트워크 토큰화 플랫폼.",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "Mastercard",
+          "term": "MDES / Secure Card on File (SCOF)",
+          "context": "Mastercard Digital Enablement Service and its network-token solution that replaces PANs with token values for digital payments.",
+          "context_ko": "PAN을 토큰 값으로 대체해 디지털 결제를 가능케 하는 Mastercard Digital Enablement Service 및 그 네트워크 토큰 솔루션(SCOF).",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "American Express",
+          "term": "American Express Token Service (AETS)",
+          "context": "Amex's network tokenization service issuing tokens in place of the Amex account number.",
+          "context_ko": "Amex 계정번호 대신 토큰을 발급하는 Amex의 네트워크 토큰화 서비스.",
+          "relationship": "narrower"
         }
       ],
       "relationships": [
@@ -32641,6 +35183,13 @@
           "context": "Amadeus captures the tour code in the FT element of the PNR; codes beginning with BT or IT are limited to 14 characters and drive the masked BT/IT fare display on the ticket.",
           "context_ko": "Amadeus는 tour code를 PNR의 FT element에 담는다. BT 또는 IT로 시작하는 코드는 14자로 제한되며, 항공권의 가려진 BT/IT 운임 표시를 제어한다.",
           "relationship": "narrower"
+        },
+        {
+          "provider": "Travelport",
+          "term": "Tour Code (TC) / BT / IT modifier",
+          "context": "In Travelport (Galileo/Apollo/Worldspan), the Tour Code is added to the filed fare as a TC modifier, with BT (bulk) or IT (inclusive tour) indicators printed in the ticket's fare/tour-code area for net and bulk fares.",
+          "context_ko": "Travelport(Galileo/Apollo/Worldspan)에서 Tour Code는 filed fare에 TC 수정자로 추가되며, 네트/벌크 운임의 경우 BT(벌크) 또는 IT(포괄여행) 표시가 항공권 운임/투어코드 영역에 인쇄된다.",
+          "relationship": "same"
         }
       ],
       "relationships": [
@@ -32729,6 +35278,13 @@
           "term": "Tour Conductor (TC) Credit",
           "context": "For 2018+ group sailings the TC credit value is calculated on the average cruise fare of all stateroom categories booked in the group, replacing the prior predominant-category method; one TC is earned per eight cabins.",
           "context_ko": "2018년 이후 단체 출항부터 TC 크레딧 가치는 단체에 예약된 전 선실 카테고리의 평균 크루즈 운임으로 산정하며, 이는 종전 다수 카테고리 방식을 대체한다. 선실 8개당 TC 1개를 적립한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Carnival Cruise Line",
+          "term": "Tour Conductor credit / free berth (1 per 15) + Group Amenity Points",
+          "context": "Carnival awards one free berth (tour conductor) per 15 full-fare lower berths — i.e. the 16th guest sails free — calculated on the group's average fare, and lets Group Amenity Points accelerate the ratio or convert to perks/OBC.",
+          "context_ko": "카니발은 정상 운임 로어버스 15개당 무료 버스(투어 컨덕터) 1개를 부여해 16번째 승객이 무료 탑승하며, 그룹 평균 운임으로 계산하고 Group Amenity Points로 비율을 가속하거나 혜택·OBC로 전환할 수 있다.",
           "relationship": "same"
         }
       ],
@@ -32905,6 +35461,20 @@
           "term": "Transitional Stored Ticket (TST)",
           "context": "Amadeus uses TST as the named pricing record attached to the PNR, displayed/edited cryptically (e.g., TQT) and used to issue e-tickets; subtypes Automatic Stored Ticket (AST) and Manual Stored Ticket (MST).",
           "context_ko": "Amadeus는 TST를 PNR에 연결된 운임 레코드의 명칭으로 사용하며, 크립틱 명령(예: TQT)으로 표시·수정하고 e-ticket 발행에 사용한다. 하위 유형으로 AST(Automatic Stored Ticket)와 MST(Manual Stored Ticket)가 있다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Sabre",
+          "term": "Price Quote (PQ) Record",
+          "context": "Sabre stores the priced fare, tax, and fare-construction data for ticketing in a Price Quote (PQ) record attached to the PNR (up to 99 per PNR) — the functional equivalent of the Amadeus TST as the source for issuing the e-ticket.",
+          "context_ko": "Sabre는 발권용 운임·세금·운임구성 데이터를 PNR에 첨부된 Price Quote(PQ) 레코드(PNR당 최대 99개)에 저장하며, 이는 전자항공권 발행 소스로서 Amadeus TST의 기능적 대응물이다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Travelport",
+          "term": "Filed Fare (Stored Fare)",
+          "context": "Travelport (Galileo/Apollo/Worldspan) holds the priced fare-and-tax data for ticketing as a Filed Fare (stored fare) on the PNR/booking file, from which tickets are issued.",
+          "context_ko": "Travelport(Galileo/Apollo/Worldspan)는 발권용 운임·세금 데이터를 PNR/예약 파일의 Filed Fare(저장 운임)로 보관하며, 이로부터 항공권을 발행한다.",
           "relationship": "same"
         }
       ],
@@ -33162,6 +35732,22 @@
         "Travel Preference",
         "Guest Preference",
         "Passenger Preference"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Oracle OPERA (PMS)",
+          "term": "Preferences",
+          "context": "OPERA stores non-mandatory guest Preferences (room type, bedding, floor, smoking, etc.) on the profile and applies them to reservations",
+          "context_ko": "OPERA는 프로파일에 비강제 게스트 선호(객실유형·침구·층·흡연 등)를 저장하고 예약에 적용한다",
+          "relationship": "same"
+        },
+        {
+          "provider": "Amadeus",
+          "term": "SSR / OSI preference elements",
+          "context": "In air bookings stored preferences surface as SSR elements (seat, special meal) and OSI free-text, attached to the passenger in the PNR",
+          "context_ko": "항공 예약에서 저장된 선호는 PNR의 승객에 부착되는 SSR 요소(좌석·특별기내식)와 OSI 자유텍스트로 표현된다",
+          "relationship": "related"
+        }
       ],
       "relationships": [
         {
@@ -33520,6 +36106,29 @@
         "2-Way Connection",
         "Bidirectional XML"
       ],
+      "providerTerms": [
+        {
+          "provider": "HTNG",
+          "term": "Web Services Framework (WSF) / 2-Way XML Interface",
+          "context": "HTNG standardized two-way XML connectivity through its Web Services Framework, registering vendor 2-Way XML interfaces that exchange ARI outbound and reservations inbound.",
+          "context_ko": "HTNG은 Web Services Framework를 통해 양방향 XML 연결을 표준화했으며, ARI를 아웃바운드로 보내고 예약을 인바운드로 받는 벤더 2-Way XML 인터페이스를 등록한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "OpenTravel/Booking.com",
+          "term": "OTA_HotelResNotifRQ (inbound reservation push)",
+          "context": "The inbound half of two-way XML is realized as the OpenTravel HotelResNotif message that pushes new/modify/cancel reservations back to the hotel system.",
+          "context_ko": "양방향 XML의 인바운드 절반은 신규/변경/취소 예약을 호텔 시스템으로 되돌려 푸시하는 OpenTravel HotelResNotif 메시지로 구현된다.",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "MICROS (Oracle)",
+          "term": "MICROS-Fidelio Exchange",
+          "context": "MICROS introduced an early two-way XML interface (MICROS-Fidelio Exchange) delivering single image inventory between central and property systems.",
+          "context_ko": "MICROS는 중앙과 숙소 시스템 간 단일 이미지 재고를 제공하는 초기 양방향 XML 인터페이스(MICROS-Fidelio Exchange)를 도입했다.",
+          "relationship": "related"
+        }
+      ],
       "relationships": [
         {
           "type": "related",
@@ -33787,6 +36396,22 @@
         "Air Travel Card",
         "UATP card"
       ],
+      "providerTerms": [
+        {
+          "provider": "AirPlus International",
+          "term": "AirPlus (UATP-issued / Mastercard)",
+          "context": "Lufthansa-group B2B travel-payment brand issuing UATP-based corporate accounts and virtual cards for business travel.",
+          "context_ko": "출장용 UATP 기반 법인 계정과 가상카드를 발급하는 루프트한자 그룹 B2B 출장 결제 브랜드.",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "GDS ticketing (Amadeus/Sabre/Travelport)",
+          "term": "FOP card type TP",
+          "context": "UATP appears in GDS/BSP ticketing as form-of-payment card type code TP; not supported by NDC airlines as a FOP at present.",
+          "context_ko": "UATP는 GDS/BSP 발권에서 지불수단 카드유형 코드 TP로 나타나며, 현재 NDC 항공사에서는 지불수단으로 미지원.",
+          "relationship": "related"
+        }
+      ],
       "relationships": [
         {
           "type": "related",
@@ -34009,6 +36634,15 @@
         "UM",
         "Unaccompanied Minor Service"
       ],
+      "providerTerms": [
+        {
+          "provider": "IATA",
+          "term": "SSR UMNR",
+          "context": "The IATA/airline SSR UMNR code books and communicates the supervised unaccompanied-minor escort service, typically with the child's age appended",
+          "context_ko": "IATA/항공사 SSR UMNR 코드는 보호자 동반 없는 미성년자 에스코트 서비스를 예약·전달하며 보통 아동 나이가 부기된다",
+          "relationship": "same"
+        }
+      ],
       "relationships": [
         {
           "type": "related",
@@ -34174,6 +36808,15 @@
         "Unlimited Kilometres",
         "Unlimited Miles"
       ],
+      "providerTerms": [
+        {
+          "provider": "Sabre",
+          "term": "Mileage plan 'FM'",
+          "context": "In Sabre car bookings the mileage plan code FM denotes free/unlimited mileage on the rate.",
+          "context_ko": "Sabre car 예약에서 mileage plan 코드 FM은 해당 요금의 무제한(free) 주행거리를 의미한다.",
+          "relationship": "same"
+        }
+      ],
       "relationships": [
         {
           "type": "broader",
@@ -34312,6 +36955,36 @@
         "Virtual Credit Card",
         "Virtual Card",
         "Virtual Card Number"
+      ],
+      "providerTerms": [
+        {
+          "provider": "WEX / eNett",
+          "term": "WEX virtual cards",
+          "context": "Large-scale VCC issuer (Visa/Mastercard) for travel B2B used by major OTAs such as Booking.com and Expedia; absorbed eNett.",
+          "context_ko": "Booking.com·Expedia 등 대형 OTA가 쓰는 트래블 B2B용 대규모 VCC 발급사(Visa/Mastercard). eNett을 흡수.",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "Conferma Pay",
+          "term": "Conferma virtual cards",
+          "context": "VCC orchestration platform connecting TMCs, GDSs and booking tools to 50+ issuing banks rather than issuing cards itself.",
+          "context_ko": "직접 발급하지 않고 TMC·GDS·예약툴을 50여 개 발급은행과 연결하는 VCC 오케스트레이션 플랫폼.",
+          "relationship": "related"
+        },
+        {
+          "provider": "Amadeus",
+          "term": "Outpayce B2B Wallet",
+          "context": "Amadeus payments arm embedding virtual-card issuance and B2B payment into the GDS and booking flow.",
+          "context_ko": "가상카드 발급과 B2B 결제를 GDS·예약 흐름에 내장하는 Amadeus 결제 부문.",
+          "relationship": "related"
+        },
+        {
+          "provider": "AirPlus International",
+          "term": "AirPlus Virtual Cards",
+          "context": "Single-use/limited-use virtual card numbers for centrally billed business-travel expenses.",
+          "context_ko": "중앙 청구 출장 경비를 위한 일회성/제한사용 가상카드 번호.",
+          "relationship": "narrower"
+        }
       ],
       "relationships": [
         {
@@ -34491,6 +37164,22 @@
         "Voiding",
         "Same-Day Void",
         "Ticket Void"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Amadeus",
+          "term": "TRDC (formerly TWX)",
+          "context": "Amadeus voids a newly issued e-ticket or EMD within the same sales day using the TRDC transaction, which replaced the older TWX void entry effective January 2014.",
+          "context_ko": "Amadeus는 새로 발행한 전자항공권/EMD를 동일 판매일 내에 TRDC 트랜잭션으로 보이드하며, 이는 2014년 1월부로 기존 TWX 보이드 입력을 대체했다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Sabre",
+          "term": "WV (Void)",
+          "context": "Sabre voids a ticket or exchange with the WV command referencing the item number from the *T document list; when an exchange is voided, the original coupon status returns to REAC (reactivated).",
+          "context_ko": "Sabre는 *T 서류 목록의 항목 번호를 참조하는 WV 명령으로 항공권/교환을 보이드하며, 교환을 보이드하면 원본 쿠폰 상태가 REAC(재활성화)로 되돌아간다.",
+          "relationship": "same"
+        }
       ],
       "relationships": [
         {
@@ -34990,6 +37679,22 @@
         "ACMI Lease",
         "ACMI",
         "Wet Leasing"
+      ],
+      "providerTerms": [
+        {
+          "provider": "IATA",
+          "term": "ACMI lease",
+          "context": "Industry term for a wet lease: the lessor provides Aircraft, Crew, Maintenance, and Insurance (ACMI) and operates under its own AOC, with the lessee paying typically per block hour operated.",
+          "context_ko": "웻 리스의 업계 용어: 임대인이 항공기(Aircraft)·승무원(Crew)·정비(Maintenance)·보험(Insurance), 즉 ACMI를 제공하고 자사 AOC로 운항하며, 임차인은 통상 운항 블록 아워당 비용을 지불한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "EASA",
+          "term": "Wet lease-in (ORO.AOC.110)",
+          "context": "Under EASA rules (e.g., ORO.AOC.110) a wet lease-in must be approved by the relevant national aviation authority, and the lessee's compliance function oversees the lessor's AOC, crew qualifications, insurance, and maintenance approvals.",
+          "context_ko": "EASA 규정(예: ORO.AOC.110)에 따라 웻 리스-인은 관할 국가항공당국의 승인을 받아야 하며, 임차인의 준법 기능이 임대인의 AOC·승무원 자격·보험·정비 승인을 감독한다.",
+          "relationship": "related"
+        }
       ],
       "relationships": [
         {

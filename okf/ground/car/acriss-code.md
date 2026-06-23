@@ -22,6 +22,22 @@ aliases:
   - ACRISS Car Classification Code
   - ACRISS Vehicle Code
   - Car Type Code
+providerTerms:
+  - provider: Sabre
+    term: Vehicle Type Code
+    context: Sabre's car booking entries and APIs use the four-character ACRISS code as the vehicle type code (e.g. ECMR) to request and classify rental cars.
+    context_ko: 'Sabre의 car 예약 엔트리와 API에서는 네 자리 ACRISS 코드를 차량 유형 코드(예: ECMR)로 사용해 렌터카를 조회·분류한다.'
+    relationship: same
+  - provider: Amadeus
+    term: Car type code (ACRISS)
+    context: 'Amadeus Cars uses standard ACRISS four-character car type codes (alongside pseudo codes for predefined vehicle groups), filtered via the /VT- option.'
+    context_ko: 'Amadeus Cars는 표준 ACRISS 네 자리 car type code를 사용하며(사전 정의 그룹용 pseudo code 병행), /VT- 옵션으로 필터링한다.'
+    relationship: same
+  - provider: OpenTravel (OTA)
+    term: VehicleCategory / VehType (Code='ACRISS')
+    context: OpenTravel vehicle messages carry the ACRISS classification in the Vehicle element so brokers and suppliers exchange car type consistently.
+    context_ko: OpenTravel 차량 메시지는 Vehicle 요소에 ACRISS 분류를 실어 브로커·공급자 간 차량 유형을 일관되게 교환한다.
+    relationship: same
 relationships:
   - type: sameAs
     targetTerm: SIPP Code
@@ -61,6 +77,14 @@ Each of the four positions carries a single letter from a fixed value set: posit
 네 자리 각각은 고정된 값 집합에서 한 글자를 사용한다. 1번째 자리 = 등급(예: M=Mini, E=Economy, C=Compact, I=Intermediate, S=Standard, F=Fullsize, P=Premium, L=Luxury), 2번째 자리 = 차종(예: C=2/4도어, D=4/5도어, W=왜건, V=승합, F=SUV), 3번째 자리 = 변속기·구동(M=수동, A=자동 및 구동 표시), 4번째 자리 = 연료·에어컨(R=연료 미지정·에어컨 있음, N=연료 미지정·에어컨 없음, 전기/하이브리드 표시 등)이다. 예를 들어 'ECMR'은 Economy, 2/4도어, 수동·구동 미지정, 연료 미지정·에어컨 있음을 뜻한다. ACRISS 코드는 한 공급사의 차량 그룹을 다른 공급사의 그룹에 매핑하고 여행사가 동일 조건 차량을 비교할 수 있게 하므로, GDS 및 공급사 API의 렌터카 가용·가격·예약 메시지의 토대가 된다.
 
 **Aliases:** `ACRISS Car Classification Code`, `ACRISS Vehicle Code`, `Car Type Code`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Sabre | `Vehicle Type Code` | same | Sabre's car booking entries and APIs use the four-character ACRISS code as the vehicle type code (e.g. ECMR) to request and classify rental cars. |
+| Amadeus | `Car type code (ACRISS)` | same | Amadeus Cars uses standard ACRISS four-character car type codes (alongside pseudo codes for predefined vehicle groups), filtered via the /VT- option. |
+| OpenTravel (OTA) | `VehicleCategory / VehType (Code='ACRISS')` | same | OpenTravel vehicle messages carry the ACRISS classification in the Vehicle element so brokers and suppliers exchange car type consistently. |
 
 # Related
 - [SIPP Code](/ground/car/sipp-code.md) — sameAs

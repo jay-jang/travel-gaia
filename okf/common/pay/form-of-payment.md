@@ -21,6 +21,17 @@ standardBody: IATA
 aliases:
   - FOP
   - Form of Payment (FOP)
+providerTerms:
+  - provider: Amadeus
+    term: 'FP element (FPCASH, FPCCVI...)'
+    context: 'Amadeus cryptic command storing the form of payment in the PNR/ticket, e.g. FPCASH or FPCCVI<card>; FPO holds the original FOP for reissues.'
+    context_ko: 'PNR/티켓에 지불수단을 저장하는 Amadeus 크립틱 명령(FPCASH, FPCCVI 등). 재발행 원지불수단은 FPO 요소.'
+    relationship: narrower
+  - provider: Sabre
+    term: Form of Payment (*FOP) / 5- entry
+    context: Sabre's FOP wallet functionality for entering and referencing card and other payment types in the PNR.
+    context_ko: PNR에 카드 및 기타 지불수단을 입력·참조하는 Sabre의 FOP 월렛 기능.
+    relationship: narrower
 relationships:
   - type: related
     targetTerm: E-ticket
@@ -59,6 +70,13 @@ Form of Payment is a core element of an airline ticket and EMD, identifying how 
 Form of Payment은 항공권과 EMD의 핵심 요소로, 고객이 어떻게 결제했는지를 식별해 거래가 BSP 또는 ARC를 통해 올바르게 보고되고 Validating Carrier와 정산되도록 한다. 일반적인 FOP 유형으로는 현금(CA), 카드종류와 마스킹된 번호를 포함한 신용카드(CC), IATA EasyPay나 정부 운송 요청서 같은 기타 형태가 있다. FOP는 가맹점 수수료, Chargeback 위험, 자금이 여행사 정산 시스템을 거치는지 항공사 자체 매입(acquiring)을 거치는지에 영향을 준다. NDC 및 ONE Order 흐름에서는 결제 정보가 종이·e-ticket 쿠폰뿐 아니라 주문 안에 담기며, 하나의 주문에 여러 지불수단이 결합될 수 있다.
 
 **Aliases:** `FOP`, `Form of Payment (FOP)`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Amadeus | `FP element (FPCASH, FPCCVI...)` | narrower | Amadeus cryptic command storing the form of payment in the PNR/ticket, e.g. FPCASH or FPCCVI<card>; FPO holds the original FOP for reissues. |
+| Sabre | `Form of Payment (*FOP) / 5- entry` | narrower | Sabre's FOP wallet functionality for entering and referencing card and other payment types in the PNR. |
 
 # Related
 - [E-ticket](/air/air-ticket/e-ticket.md) — related

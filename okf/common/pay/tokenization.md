@@ -27,6 +27,21 @@ providerTerms:
     context: Scheme-level tokenization that replaces a card-on-file PAN with a network-issued token kept current across reissuance.
     context_ko: card-on-file PAN을 네트워크 발급 토큰으로 대체하고 카드 재발급 시에도 최신으로 유지하는 카드 네트워크 차원의 토큰화.
     relationship: narrower
+  - provider: Visa
+    term: Visa Token Service (VTS)
+    context: Visa's network tokenization platform replacing the PAN with a network token (Digital PAN) for card-on-file and wallet payments.
+    context_ko: 카드 온파일·월렛 결제를 위해 PAN을 네트워크 토큰(Digital PAN)으로 대체하는 Visa의 네트워크 토큰화 플랫폼.
+    relationship: narrower
+  - provider: Mastercard
+    term: MDES / Secure Card on File (SCOF)
+    context: Mastercard Digital Enablement Service and its network-token solution that replaces PANs with token values for digital payments.
+    context_ko: PAN을 토큰 값으로 대체해 디지털 결제를 가능케 하는 Mastercard Digital Enablement Service 및 그 네트워크 토큰 솔루션(SCOF).
+    relationship: narrower
+  - provider: American Express
+    term: American Express Token Service (AETS)
+    context: Amex's network tokenization service issuing tokens in place of the Amex account number.
+    context_ko: Amex 계정번호 대신 토큰을 발급하는 Amex의 네트워크 토큰화 서비스.
+    relationship: narrower
 relationships:
   - type: related
     targetTerm: PCI DSS
@@ -67,6 +82,9 @@ Payment tokenization is standardized by EMVCo through the EMV Payment Tokenisati
 | Provider | Term | Relationship | Context |
 | --- | --- | --- | --- |
 | Visa / Mastercard | `Network Token` | narrower | Scheme-level tokenization that replaces a card-on-file PAN with a network-issued token kept current across reissuance. |
+| Visa | `Visa Token Service (VTS)` | narrower | Visa's network tokenization platform replacing the PAN with a network token (Digital PAN) for card-on-file and wallet payments. |
+| Mastercard | `MDES / Secure Card on File (SCOF)` | narrower | Mastercard Digital Enablement Service and its network-token solution that replaces PANs with token values for digital payments. |
+| American Express | `American Express Token Service (AETS)` | narrower | Amex's network tokenization service issuing tokens in place of the Amex account number. |
 
 # Related
 - [PCI DSS](/common/pay/pci-dss.md) — related

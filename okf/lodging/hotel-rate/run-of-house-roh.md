@@ -19,6 +19,12 @@ longDef_ko: 'ROH에서는 특정 객실 타입이 아니라 호텔 전반을 대
 aliases:
   - Run of the House
   - Run-of-House Rate
+providerTerms:
+  - provider: Oracle OPERA
+    term: Run of House (ROH)
+    context: 'OPERA books ROH without a guaranteed room type, redistributing those reservations to actual room types at arrival based on best available rooms.'
+    context_ko: OPERA는 ROH를 보장 룸타입 없이 예약한 뒤 도착 시 가용 최적 객실 기준으로 실제 룸타입에 재배분한다.
+    relationship: same
 relationships:
   - type: contrasts
     targetTerm: Room Type
@@ -61,6 +67,12 @@ Under ROH the booking is made against the property generally rather than a named
 ROH에서는 특정 객실 타입이 아니라 호텔 전반을 대상으로 예약이 이루어지므로, 호텔은 수요에 가장 잘 맞는 곳에 재고를 배정할 유연성을 유지하며 이는 불균등한 점유 상황에서 객실을 채우는 데 도움이 된다. 최종 배정 객실은 보통 기본 편의시설을 갖춘 스탠다드 등급이고, 침대 구성·전망에 대한 고객의 선택권은 보장되지 않으나 호텔 재량으로 업그레이드가 일어날 수 있다. ROH는 그룹·홀세일·계약 비즈니스에서 흔하며, 특정 Room Type에 묶인 예약과 대비된다. 구체적 상품을 추상화하므로 ROH는 개별 객실 타입 가격 위에 얹히되 그와 구별되는 요금·재고 방식으로 이해하는 것이 적절하다.
 
 **Aliases:** `Run of the House`, `Run-of-House Rate`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Oracle OPERA | `Run of House (ROH)` | same | OPERA books ROH without a guaranteed room type, redistributing those reservations to actual room types at arrival based on best available rooms. |
 
 # Related
 - [Room Type](/lodging/hotel-rate/room-type.md) — contrasts

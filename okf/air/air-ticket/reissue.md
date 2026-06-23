@@ -21,6 +21,22 @@ aliases:
   - Exchange
   - Ticket Exchange
   - Reissuance
+providerTerms:
+  - provider: Amadeus
+    term: Amadeus Ticket Changer (ATC)
+    context: 'Amadeus brands its automated reissue/exchange engine as Amadeus Ticket Changer (ATC), which reprices and issues the new ticket while marking original coupons EXCHANGED (voluntary FXP/TTP, involuntary FXI).'
+    context_ko: 'Amadeus는 자동 재발행/교환 엔진을 Amadeus Ticket Changer(ATC)로 브랜딩하며, 재산정 후 새 항공권을 발행하고 원본 쿠폰을 EXCHANGED 처리한다(자발적 FXP/TTP, 비자발적 FXI).'
+    relationship: same
+  - provider: Sabre
+    term: WETR / PQR
+    context: 'Sabre reissues are processed via the WETR exchange flow, storing the recomputed fare as a Price Quote Reissue Record (PQR) until the new ticket is issued; original coupons move to EXCHANGED.'
+    context_ko: 'Sabre 재발행은 WETR 교환 흐름으로 처리되어 재산정 운임을 새 항공권 발행 시까지 Price Quote Reissue Record(PQR)로 저장하며, 원본 쿠폰은 EXCHANGED로 전환된다.'
+    relationship: same
+  - provider: NDC/IATA
+    term: OrderChange
+    context: 'In NDC, a reissue is expressed as an OrderChange that replaces affected OrderItems with new OfferItems; the airline''s order management system reprices and reissues underlying documents.'
+    context_ko: 'NDC에서 재발행은 영향받는 OrderItem을 새 OfferItem으로 교체하는 OrderChange로 표현되며, 항공사 주문관리시스템이 재산정·재발행한다.'
+    relationship: same
 relationships:
   - type: related
     targetTerm: E-ticket
@@ -74,6 +90,14 @@ A voluntary reissue is initiated at the passenger's request (e.g., a date or rou
 자발적 재발행은 승객의 요청(예: 날짜 또는 노선 변경)에 의해 시작되며, 변경 위약금, 운임 차액 재계산, 그리고 잔여 가치를 (흔히 EMD를 통해) 보존할 수 있는지 여부를 결정하는 해당 운임의 운임 규정(fare rule)에 따른다. 재발행은 새 서류의 origin/issue 데이터에 원래 항공권 번호를 기록하고 운임/세금 재계산과 추가 징수액(add-collect)을 표시한다. 재발행은 환불(고객에게 가치를 반환)이나 Void(미사용 발권의 당일 취소)와 구별된다.
 
 **Aliases:** `Exchange`, `Ticket Exchange`, `Reissuance`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Amadeus | `Amadeus Ticket Changer (ATC)` | same | Amadeus brands its automated reissue/exchange engine as Amadeus Ticket Changer (ATC), which reprices and issues the new ticket while marking original coupons EXCHANGED (voluntary FXP/TTP, involuntary FXI). |
+| Sabre | `WETR / PQR` | same | Sabre reissues are processed via the WETR exchange flow, storing the recomputed fare as a Price Quote Reissue Record (PQR) until the new ticket is issued; original coupons move to EXCHANGED. |
+| NDC/IATA | `OrderChange` | same | In NDC, a reissue is expressed as an OrderChange that replaces affected OrderItems with new OfferItems; the airline's order management system reprices and reissues underlying documents. |
 
 # Related
 - [E-ticket](/air/air-ticket/e-ticket.md) — related

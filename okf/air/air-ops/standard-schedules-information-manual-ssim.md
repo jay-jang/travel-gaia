@@ -28,6 +28,16 @@ providerTerms:
     context: Airlines transfer schedule data to OAG using SSIM-based file and SSM/ASM update formats.
     context_ko: 항공사는 SSIM 기반 파일과 SSM/ASM 갱신 포맷으로 OAG에 스케줄 데이터를 전송한다.
     relationship: related
+  - provider: Cirium
+    term: SSIM-format schedule feeds
+    context: Cirium ingests and distributes airline schedules in IATA SSIM fixed-width format and via SSM/ASM update messages.
+    context_ko: Cirium은 IATA SSIM 고정폭 포맷과 SSM/ASM 업데이트 메시지로 항공사 schedule을 수집·배포한다.
+    relationship: same
+  - provider: IATA
+    term: SSM / ASM messages
+    context: SSM (Standard Schedules Message) transmits permanent schedule changes and ASM (Ad Hoc Schedules Message) transmits single-day deviations under the SSIM standard.
+    context_ko: 'SSM(Standard Schedules Message)은 영구 schedule 변경을, ASM(Ad Hoc Schedules Message)은 단일일 편차를 SSIM 표준 하에 전송한다.'
+    relationship: narrower
 relationships:
   - type: child
     targetTerm: Standard Schedules Message
@@ -77,6 +87,8 @@ SSIM은 batch 파일 포맷(한 시즌 전체 스케줄을 전송하는 SSIM 레
 | Provider | Term | Relationship | Context |
 | --- | --- | --- | --- |
 | OAG | `SSIM / SSM & ASM feeds` | related | Airlines transfer schedule data to OAG using SSIM-based file and SSM/ASM update formats. |
+| Cirium | `SSIM-format schedule feeds` | same | Cirium ingests and distributes airline schedules in IATA SSIM fixed-width format and via SSM/ASM update messages. |
+| IATA | `SSM / ASM messages` | narrower | SSM (Standard Schedules Message) transmits permanent schedule changes and ASM (Ad Hoc Schedules Message) transmits single-day deviations under the SSIM standard. |
 
 # Related
 - [Standard Schedules Message](/air/air-partner/standard-schedules-message.md) — child

@@ -21,6 +21,12 @@ standardBody: IATA
 aliases:
   - Special Prorate Agreement
   - Special Pro-rate Agreement
+providerTerms:
+  - provider: IATA
+    term: Special Prorate Agreement vs Multilateral Prorate Agreement (MPA)
+    context: 'In IATA''s proration hierarchy a bilateral SPA supersedes the Multilateral Prorate Agreement (MPA) for the tickets and routings it covers, typically as a fixed amount, a percentage of the local fare, or a discount off the standard rate.'
+    context_ko: 'IATA의 프로레이트 우선순위에서 양자간 SPA는 그것이 적용되는 항공권·노선에 대해 다자간 프로레이트 협정(MPA)에 우선하며, 통상 고정 금액, 로컬 운임의 일정 비율, 또는 표준 요율 할인 형태로 설정된다.'
+    relationship: same
 relationships:
   - type: broader
     targetTerm: Proration
@@ -62,6 +68,12 @@ Where the default multilateral proration would not yield commercially attractive
 기본 다자간 프로레이션으로는 상업적으로 매력적인 수익 배분이 나오지 않는 경우, 항공사는 특정 출발지-목적지 쌍과 운임 유형에 대해 고정 금액, 비율 또는 특별 프로레이트 계수를 명시한 SPA를 체결한다. SPA는 동맹 및 파트너 운임 책정의 핵심으로, 경쟁력 있는 인터라인 및 공동운항 일관 운임을 구성할 수 있게 한다. 그 결과로 발생하는 금액의 정산은 일반적으로 IATA Clearing House를 통해 이루어진다.
 
 **Aliases:** `Special Prorate Agreement`, `Special Pro-rate Agreement`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| IATA | `Special Prorate Agreement vs Multilateral Prorate Agreement (MPA)` | same | In IATA's proration hierarchy a bilateral SPA supersedes the Multilateral Prorate Agreement (MPA) for the tickets and routings it covers, typically as a fixed amount, a percentage of the local fare, or a discount off the standard rate. |
 
 # Related
 - [Proration](/air/air-partner/proration.md) — broader

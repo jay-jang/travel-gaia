@@ -21,6 +21,17 @@ standardBody: IATA
 aliases:
   - Other Service Information
   - Other Supplementary Information
+providerTerms:
+  - provider: Amadeus
+    term: OS element (OS <airline> <text>)
+    context: 'Amadeus creates an OSI as an OS element addressed to a carrier code (or YY for all), carrying up to 68 characters of free text requiring no carrier reply.'
+    context_ko: 'Amadeus는 OSI를 carrier code(또는 전체 대상 YY)로 지정한 OS element로 생성하며, 항공사 회신이 불필요한 최대 68자 free text를 담는다.'
+    relationship: same
+  - provider: Sabre
+    term: 3OSI entry (3OSI <airline> <text>)
+    context: Sabre adds informational OSI data with the 3OSI command followed by the carrier code and message text (e.g. 3OSI SQ VIP).
+    context_ko: 'Sabre는 3OSI 명령 뒤에 carrier code와 메시지 텍스트를 붙여 informational OSI 데이터를 추가한다(예: 3OSI SQ VIP).'
+    relationship: same
 relationships:
   - type: contrasts
     targetTerm: SSR
@@ -59,6 +70,13 @@ OSI elements convey advisory information to the carrier (for example, frequent-f
 OSI 요소는 항공사에 안내성 정보(예: 상용고객 메모, 특별 응대 사항, 운영상 비고)를 전달하며, 특정 항공사 또는 여정 내 모든 항공사를 수신 대상으로 지정한다. OSI는 조치를 요하지 않으므로 항공사가 확인하거나 응답할 것으로 기대되지 않으며, 이것이 SSR과의 핵심적인 운영상 차이점이다.
 
 **Aliases:** `Other Service Information`, `Other Supplementary Information`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Amadeus | `OS element (OS <airline> <text>)` | same | Amadeus creates an OSI as an OS element addressed to a carrier code (or YY for all), carrying up to 68 characters of free text requiring no carrier reply. |
+| Sabre | `3OSI entry (3OSI <airline> <text>)` | same | Sabre adds informational OSI data with the 3OSI command followed by the carrier code and message text (e.g. 3OSI SQ VIP). |
 
 # Related
 - [SSR](/air/air-ops/ssr.md) — contrasts

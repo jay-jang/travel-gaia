@@ -28,6 +28,11 @@ providerTerms:
     context: 'GIATA''s hotel mapping and de-duplication product that assigns the GIATA ID and maps supplier codes from GDSs, OTAs, tour operators, and bedbanks to it.'
     context_ko: GIATA ID를 부여하고 GDS·OTA·투어 오퍼레이터·Bedbank의 공급자 코드를 여기에 매핑하는 GIATA의 호텔 매핑·중복 제거 제품.
     relationship: same
+  - provider: Vervotech
+    term: VervotechId
+    context: 'Vervotech assigns its own master property identifier (VervotechId) that, like a GIATA ID, links duplicate property records across suppliers.'
+    context_ko: Vervotech은 GIATA ID처럼 공급자 전반의 중복 숙소 레코드를 연결하는 자체 마스터 숙소 식별자(VervotechId)를 부여한다.
+    relationship: same
 relationships:
   - type: related
     targetTerm: Property Mapping
@@ -82,6 +87,7 @@ GIATA(1996년부터 운영되는 베를린 소재 사업자)는 각 숙소에 �
 | Provider | Term | Relationship | Context |
 | --- | --- | --- | --- |
 | GIATA | `GIATA Multicodes` | same | GIATA's hotel mapping and de-duplication product that assigns the GIATA ID and maps supplier codes from GDSs, OTAs, tour operators, and bedbanks to it. |
+| Vervotech | `VervotechId` | same | Vervotech assigns its own master property identifier (VervotechId) that, like a GIATA ID, links duplicate property records across suppliers. |
 
 # Related
 - [Property Mapping](/lodging/hotel-dist/property-mapping.md) — related

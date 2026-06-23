@@ -21,6 +21,12 @@ aliases:
   - Standard IATA Delay Codes
   - AHM 730 Delay Codes
   - Delay Codes
+providerTerms:
+  - provider: IATA (AHM 731)
+    term: Sub-delay codes
+    context: AHM 731 extension adding a granular sub-code beneath the AHM 730 two-character delay code to capture finer root-cause detail.
+    context_ko: 'AHM 730의 2자리 지연 코드 아래에 세분화된 하위 코드를 더하는 AHM 731 확장으로, 보다 정밀한 근본 원인을 기록한다.'
+    relationship: narrower
 relationships:
   - type: related
     targetTerm: IROPS
@@ -55,6 +61,12 @@ AHM 730 defines roughly 100 numeric codes (00-99) grouped into categories such a
 AHM 730은 약 100개의 숫자 코드(00-99)를 정의하며, 이는 여객·수하물 처리, 화물·우편, 항공기·램프 처리, 기술/기재 결함, 손상·전산(EDP) 장애, 운항·승무, 기상, 공항/정부 당국(ATFM 제한 포함), 연쇄(reactionary) 지연, 기타 사유 등의 범주로 분류된다. 2자리 알파벳 등가 코드도 존재하지만 운항 메시지 표준(예: AHM 780 MVT)은 숫자 형식을 규정한다. 모든 항공사와 지상조업사에 공통 어휘를 제공함으로써, 이 코드는 지연 통계·정시성 보고·근본원인 분석을 항공사와 공항 전반에 걸쳐 비교 가능하게 만든다.
 
 **Aliases:** `Standard IATA Delay Codes`, `AHM 730 Delay Codes`, `Delay Codes`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| IATA (AHM 731) | `Sub-delay codes` | narrower | AHM 731 extension adding a granular sub-code beneath the AHM 730 two-character delay code to capture finer root-cause detail. |
 
 # Related
 - [IROPS](/air/air-partner/irops.md) — related

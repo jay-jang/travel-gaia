@@ -22,6 +22,17 @@ aliases:
   - UN/EDIFACT
   - 'Electronic Data Interchange for Administration, Commerce and Transport'
   - PADIS EDIFACT
+providerTerms:
+  - provider: NDC/IATA
+    term: EDIST (NDC XML)
+    context: IATA's Enhanced and Simplified Distribution XML messages are the modern successor to EDIFACT for airline shopping and ordering
+    context_ko: IATA의 EDIST XML 메시지는 항공 조회·주문에서 EDIFACT를 잇는 현대적 후속 표준
+    relationship: related
+  - provider: IATA PADIS
+    term: PADIS EDIFACT message directory
+    context: IATA PADIS governs and publishes the EDIFACT passenger-travel message standards (Type A interactive messaging)
+    context_ko: IATA PADIS가 EDIFACT 여객 여행 메시지 표준(Type A 대화형 메시징)을 관리·발행함
+    relationship: broader
 relationships:
   - type: related
     targetTerm: GDS
@@ -84,6 +95,13 @@ Developed under the UN in the 1980s for an era of expensive, low-bandwidth links
 EDIFACT는 회선 비용이 비싸고 대역폭이 낮던 시대를 위해 1980년대 UN 주도로 개발되었으며, 세그먼트와 요소 기반의 간결한 텍스트 구문을 사용한다. IATA는 항공 산업용 적용으로 PADIS(Passenger and Airport Data Interchange Standards)를 유지하며, 이는 EDIFACT와 XML 두 구문으로 존재한다. 전통적인 GDS 유통과 대부분의 풀서비스 항공사 PSS 연동은 여전히 EDIFACT에 크게 의존하며, IATA의 NDC와 XML/JSON REST API로의 전반적 전환이 이를 완전히 대체하기보다 점차 보완하고 있다.
 
 **Aliases:** `UN/EDIFACT`, `Electronic Data Interchange for Administration, Commerce and Transport`, `PADIS EDIFACT`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| NDC/IATA | `EDIST (NDC XML)` | related | IATA's Enhanced and Simplified Distribution XML messages are the modern successor to EDIFACT for airline shopping and ordering |
+| IATA PADIS | `PADIS EDIFACT message directory` | broader | IATA PADIS governs and publishes the EDIFACT passenger-travel message standards (Type A interactive messaging) |
 
 # Related
 - [GDS](/common/standards/gds.md) — related

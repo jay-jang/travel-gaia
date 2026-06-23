@@ -22,6 +22,17 @@ aliases:
   - Excursion
   - Port Tour
   - Shore Tour
+providerTerms:
+  - provider: Disney Cruise Line
+    term: Port Adventures
+    context: 'Disney brands all port-of-call tours and activities as ''Port Adventures'', its proprietary name for the shore-excursion product.'
+    context_ko: '디즈니는 모든 기항지 투어·액티비티를 ''Port Adventures''로 브랜딩하며, 이는 기항지 투어 상품의 고유 명칭이다.'
+    relationship: same
+  - provider: Royal Caribbean International
+    term: Royal Signature Excursions
+    context: 'Royal Caribbean''s curated premium tier within its Shore Excursions program, marketed as elevated, immersive, authentic regional experiences.'
+    context_ko: '로열캐리비안 Shore Excursions 프로그램 내 큐레이션된 프리미엄 등급으로, 한층 높은 몰입형·진정성 있는 지역 체험으로 마케팅된다.'
+    relationship: narrower
 relationships:
   - type: broader
     targetTerm: Port of Call
@@ -61,6 +72,13 @@ Shore excursions are central to cruise ancillary revenue and distribution: cruis
 기항지 투어는 크루즈 부가 수익과 유통의 중심이다. 선사는 (흔히 현지 운영사를 통해) 투어를 큐레이션·재판매하며, 선사 예약 투어에 대해서는 선박 복귀를 보장한다. 선객은 대안으로 독립 투어를 구매할 수도 있다. 각 투어는 특정 기항지에 정원·시간·난이도·가격과 함께 연결되며, 출항 전 온라인, 여행 어드바이저를 통해, 또는 선상의 shore-excursion 데스크에서 예약할 수 있다. OpenTravel 크루즈 사양은 기항지 투어를 별개의 교환 가능한 메시지 구성 요소로 모델링하여 유통 채널을 통해 쇼핑·가격 책정·확정될 수 있게 한다.
 
 **Aliases:** `Shorex`, `Excursion`, `Port Tour`, `Shore Tour`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Disney Cruise Line | `Port Adventures` | same | Disney brands all port-of-call tours and activities as 'Port Adventures', its proprietary name for the shore-excursion product. |
+| Royal Caribbean International | `Royal Signature Excursions` | narrower | Royal Caribbean's curated premium tier within its Shore Excursions program, marketed as elevated, immersive, authentic regional experiences. |
 
 # Related
 - [Port of Call](/cruise/cruise/port-of-call.md) — broader

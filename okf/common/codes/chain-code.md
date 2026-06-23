@@ -19,6 +19,17 @@ aliases:
   - Hotel Chain Code
   - GDS Chain Code
   - Two-Letter Chain Code
+providerTerms:
+  - provider: GDS (Amadeus/Sabre/Travelport)
+    term: Two-letter chain code + GDS property code
+    context: In GDS hotel distribution the 2-letter chain code prefixes a GDS-specific property code; each GDS holds a different property code for the same hotel.
+    context_ko: 'GDS 호텔 유통에서 2자리 체인 코드는 GDS별 프로퍼티 코드 앞에 붙으며, 같은 호텔이라도 GDS마다 프로퍼티 코드가 다르다.'
+    relationship: broader
+  - provider: OpenTravel (OTA)
+    term: ChainCode / BrandCode
+    context: 'OpenTravel/HTNG attributes on PropertyInfo identifying the chain and brand (e.g., ChainCode STARWOOD, BrandCode WESTIN) in hotel reservation messages.'
+    context_ko: 'OpenTravel/HTNG의 PropertyInfo 속성으로 체인·브랜드를 식별한다(예: ChainCode STARWOOD, BrandCode WESTIN). 호텔 예약 메시지에 사용.'
+    relationship: same
 relationships:
   - type: related
     targetTerm: GDS
@@ -61,6 +72,13 @@ Chain codes group hotels under a common brand, parent company, or third-party re
 체인 코드는 공통 브랜드, 모기업, 또는 제3자 대리/유통 사업자(베드뱅크나 대리 회사 등) 아래로 호텔을 묶으며, 이를 통해 요금과 재고가 GDS에 등록되고 노출되는 방식이 결정된다. 독립 호텔은 실제 브랜드가 아니라 대리 회사의 체인 코드로 유통되는 경우가 많다. 체인 코드와 GDS 숙소 코드를 결합하면 조회 및 예약을 위해 호텔을 고유하게 지정할 수 있다. 구체적인 2자리 코드는 전 세계적으로 표준화되어 있지 않으며 GDS마다 다를 수 있다.
 
 **Aliases:** `Hotel Chain Code`, `GDS Chain Code`, `Two-Letter Chain Code`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| GDS (Amadeus/Sabre/Travelport) | `Two-letter chain code + GDS property code` | broader | In GDS hotel distribution the 2-letter chain code prefixes a GDS-specific property code; each GDS holds a different property code for the same hotel. |
+| OpenTravel (OTA) | `ChainCode / BrandCode` | same | OpenTravel/HTNG attributes on PropertyInfo identifying the chain and brand (e.g., ChainCode STARWOOD, BrandCode WESTIN) in hotel reservation messages. |
 
 # Related
 - [GDS](/common/standards/gds.md) — related

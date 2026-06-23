@@ -21,6 +21,17 @@ aliases:
   - Room Category
   - Accommodation Type
   - Room Class
+providerTerms:
+  - provider: OpenTravel / HTNG
+    term: RoomType / RoomTypeCode (InvTypeCode)
+    context: 'OTA messages identify bookable accommodation via RoomTypeCode/InvTypeCode in RoomStayCandidate and ARI inventory updates, mapped across systems.'
+    context_ko: OTA 메시지는 RoomStayCandidate와 ARI 재고 갱신의 RoomTypeCode/InvTypeCode로 예약 가능 객실을 식별하며 시스템 간 매핑된다.
+    relationship: same
+  - provider: Oracle OPERA
+    term: Room Type / Room Class
+    context: 'OPERA configures a Room Type code (e.g. Deluxe, Standard) grouped under a Room Class umbrella for controlled inventory management.'
+    context_ko: 'OPERA는 Room Type 코드(예: Deluxe, Standard)를 구성하고 이를 Room Class 우산 아래 묶어 재고를 통제한다.'
+    relationship: same
 relationships:
   - type: related
     targetTerm: Rate Plan
@@ -66,6 +77,13 @@ Room types are the inventory unit hoteliers count and sell; availability and all
 객실 유형은 호텔이 집계하고 판매하는 재고 단위로, 가용 객실과 allotment는 객실 유형 및 날짜별로 관리된다. 각 객실 유형은 CRS/PMS에서 room type code로 식별되며, 하나 이상의 요금제와 결합되어 판매 가능한 상품을 만든다. 궁극적으로 유통되는 판매 상품은 이 객실 유형과 요금제의 조합이다.
 
 **Aliases:** `Room Category`, `Accommodation Type`, `Room Class`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| OpenTravel / HTNG | `RoomType / RoomTypeCode (InvTypeCode)` | same | OTA messages identify bookable accommodation via RoomTypeCode/InvTypeCode in RoomStayCandidate and ARI inventory updates, mapped across systems. |
+| Oracle OPERA | `Room Type / Room Class` | same | OPERA configures a Room Type code (e.g. Deluxe, Standard) grouped under a Room Class umbrella for controlled inventory management. |
 
 # Related
 - [Rate Plan](/lodging/hotel-rate/rate-plan.md) — related

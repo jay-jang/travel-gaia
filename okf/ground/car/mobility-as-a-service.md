@@ -22,6 +22,12 @@ aliases:
   - Mobility as a Service
   - MaaS
   - Transportation as a Service
+providerTerms:
+  - provider: TOMP-API (MaaS Alliance)
+    term: TOMP-API
+    context: 'The standardized technical interface between MaaS providers and transport operators covering the full user journey including booking, trip execution and payments.'
+    context_ko: 'MaaS 제공자와 운송 사업자 간 표준 기술 인터페이스로, 예약·이용·결제를 포함한 전체 사용자 여정을 다룬다.'
+    relationship: related
 relationships:
   - type: contrasts
     targetTerm: Multimodal Transport
@@ -59,6 +65,12 @@ MaaS shifts the customer relationship from buying individual tickets and rentals
 MaaS는 고객 관계를 수단별로 개별 승차권·대여를 구매하던 방식에서, 공급을 통합하고 출발지-목적지 여정을 계획하며 발권·결제까지 처리하는 하나의 디지털 인터페이스로 모빌리티를 소비하는 방식으로 전환한다. 이는 종량제(pay-as-you-go)일 수도, 묶음 구독(subscription) 패키지일 수도 있다. 통합 수준은 흔히 무통합 → 정보 통합(여정 계획) → 예약·결제 통합 → 서비스 제공 통합(번들/구독) → 사회·정책 통합의 단계로 설명된다. 렌터카·공유 모빌리티 산업에서 MaaS가 중요한 이유는, 렌터카·카셰어·라이드헤일이 더 큰 모빌리티 생태계의 구성요소가 되며, 이 생태계는 GBFS 같은 명세를 통한 기계 판독 가능한 실시간 공급 데이터와 MDS 같은 규제 데이터 교환에 의존하기 때문이다. 국제대중교통연맹(UITP, International Association of Public Transport)은 MaaS 정의와 모범 사례를 이끄는 주요 기관이다.
 
 **Aliases:** `Mobility as a Service`, `MaaS`, `Transportation as a Service`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| TOMP-API (MaaS Alliance) | `TOMP-API` | related | The standardized technical interface between MaaS providers and transport operators covering the full user journey including booking, trip execution and payments. |
 
 # Related
 - [Multimodal Transport](/ground/rail/multimodal-transport.md) — contrasts

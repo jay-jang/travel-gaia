@@ -23,6 +23,17 @@ aliases:
   - IATA Airline Designator
   - Two-Letter Airline Code
   - Marketing Carrier Code
+providerTerms:
+  - provider: NDC/IATA
+    term: AirlineID
+    context: 'NDC schema element carrying the carrier code (IATA 2-char per Resolution 762, or ICAO 3-letter) for marketing/operating carrier.'
+    context_ko: 'NDC 스키마 요소로, 마케팅/운항 항공사의 항공사 코드(Resolution 762에 따른 IATA 2자리 또는 ICAO 3자리)를 담는다.'
+    relationship: same
+  - provider: ICAO (Doc 8585)
+    term: ICAO three-letter designator
+    context: '3-letter airline designator from ICAO Doc 8585 (e.g., AAL, BAW, DLH) used in ATC, flight plans and telephony, distinct from the IATA 2-char code.'
+    context_ko: 'ICAO Doc 8585의 3자리 항공사 지정자(예: AAL, BAW, DLH)로 ATC·비행계획·통신에 사용되며 IATA 2자리 코드와 구별된다.'
+    relationship: related
 relationships:
   - type: narrower
     targetTerm: IATA Code
@@ -73,6 +84,13 @@ IATA airline designators are two characters (alphabetic or alphanumeric) and for
 IATA 항공사 지정 코드는 2자리(알파벳 또는 영숫자 혼합)이며 편명의 접두어를 이룬다(예: 'AA100'). 2자리 공간이 제한적이기 때문에 IATA는 통제된 중복(controlled-duplicate) 코드와 숫자/영숫자 혼합 코드도 발급한다. ICAO의 3자리 지정 코드는 고유하며 ATC를 위한 전화 호출 부호(콜사인)를 동반한다. 공동운항(codeshare) 약정에서는 항공권에 표시되는 마케팅 항공사 지정 코드가 실제 운항 항공사 지정 코드와 다를 수 있다.
 
 **Aliases:** `Airline Code`, `Carrier Code`, `IATA Airline Designator`, `Two-Letter Airline Code`, `Marketing Carrier Code`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| NDC/IATA | `AirlineID` | same | NDC schema element carrying the carrier code (IATA 2-char per Resolution 762, or ICAO 3-letter) for marketing/operating carrier. |
+| ICAO (Doc 8585) | `ICAO three-letter designator` | related | 3-letter airline designator from ICAO Doc 8585 (e.g., AAL, BAW, DLH) used in ATC, flight plans and telephony, distinct from the IATA 2-char code. |
 
 # Related
 - [IATA Code](/common/codes/iata-code.md) — narrower

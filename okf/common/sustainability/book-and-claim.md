@@ -21,6 +21,27 @@ aliases:
   - Book and Claim
   - Book & Claim
   - Book-and-Claim
+providerTerms:
+  - provider: RSB
+    term: Book & Claim Unit (BCU)
+    context: 'Roundtable on Sustainable Biomaterials'' registered, certified attribute unit decoupled from physical SAF on its RSB Book & Claim Registry'
+    context_ko: RSB Book & Claim 레지스트리에서 물리적 SAF와 분리해 등록·인증하는 속성 단위(BCU)
+    relationship: narrower
+  - provider: RMI / SABA
+    term: Sustainable Aviation Fuel Certificate (SAFc)
+    context: Book-and-claim certificate (and SAFc Registry built with Energy Web) representing the environmental attributes of one tonne of neat SAF for Scope 1/Scope 3 claims
+    context_ko: Energy Web와 구축한 SAFc 레지스트리에서 1톤 순수 SAF의 환경 속성을 나타내는 book-and-claim 인증서(Scope1/Scope3 주장용)
+    relationship: narrower
+  - provider: Shell
+    term: Avelia
+    context: Shell/Accenture/Amex GBT blockchain book-and-claim platform issuing SAF attribute certificates for Shell-traded volumes
+    context_ko: Shell·Accenture·Amex GBT가 만든 블록체인 book-and-claim 플랫폼으로 Shell 거래량의 SAF 속성 인증서를 발행
+    relationship: related
+  - provider: IATA
+    term: SAF Registry (CADO)
+    context: IATA's airline-operator-oriented Global SAF Registry/CADO system that records SAF volumes and attributes to enable book-and-claim accounting
+    context_ko: 항공사 운영자 관점에서 SAF 물량·속성을 기록해 book-and-claim 회계를 가능케 하는 IATA Global SAF Registry/CADO 시스템
+    relationship: related
 relationships:
   - type: contrasts
     targetTerm: Mass Balance (MB)
@@ -58,6 +79,15 @@ SAF is scarce and expensive to ship, so it is uplifted only at a limited number 
 SAF는 희소하고 운송 비용이 비싸 제한된 수의 공항에서만 급유된다. Book and Claim은 구매자가 분자를 물리적으로 인도받아야 한다는 요건을 제거한다. SAF 생산자·공급자가 인증된 속성을 등록하고, 구매자가 이를 취득해 자신의 발자국에 대해 소각하며, 물리적 연료는 가장 효율적인 곳에서 소비된다. 이러한 분리(decoupling) 덕분에 기업의 Scope 3 SAF 조달과 SAFc(Sustainable Aviation Fuel Certificate) 같은 수단을 통한 SAF 인세팅(insetting)이 가능해지며, IATA와 SABA가 SAF 수요 확대를 위해 추진하는 메커니즘이다. 이중계상을 막기 위해 견고한 레지스트리와 1회 소각이 요구되며, 이 점에서 물리적으로 연결된 Mass Balance 모델과 구별된다.
 
 **Aliases:** `Book and Claim`, `Book & Claim`, `Book-and-Claim`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| RSB | `Book & Claim Unit (BCU)` | narrower | Roundtable on Sustainable Biomaterials' registered, certified attribute unit decoupled from physical SAF on its RSB Book & Claim Registry |
+| RMI / SABA | `Sustainable Aviation Fuel Certificate (SAFc)` | narrower | Book-and-claim certificate (and SAFc Registry built with Energy Web) representing the environmental attributes of one tonne of neat SAF for Scope 1/Scope 3 claims |
+| Shell | `Avelia` | related | Shell/Accenture/Amex GBT blockchain book-and-claim platform issuing SAF attribute certificates for Shell-traded volumes |
+| IATA | `SAF Registry (CADO)` | related | IATA's airline-operator-oriented Global SAF Registry/CADO system that records SAF volumes and attributes to enable book-and-claim accounting |
 
 # Related
 - [Mass Balance (MB)](/common/sustainability/mass-balance-mb.md) — contrasts

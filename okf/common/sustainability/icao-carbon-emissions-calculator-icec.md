@@ -22,6 +22,17 @@ aliases:
   - ICAO Carbon Emissions Calculator
   - ICEC
   - ICAO Carbon Calculator
+providerTerms:
+  - provider: Google / Travalyst
+    term: Travel Impact Model (TIM)
+    context: 'Alternative per-passenger flight CO2e estimator using aircraft type, cabin, load factor and well-to-wake life cycle rather than ICEC''s distance-based averages'
+    context_ko: ICEC의 거리 기반 평균 대신 기종·좌석등급·탑승률·well-to-wake 전과정을 쓰는 대안적 승객당 항공 CO2e 추정 모델
+    relationship: related
+  - provider: EUROCONTROL
+    term: Flight emission approximator
+    context: 'EUROCONTROL''s flight carbon emission approximator, an alternative tool benchmarked against ICAO ICEC'
+    context_ko: ICAO ICEC와 비교 평가되는 EUROCONTROL의 대안적 항공 탄소배출 근사 도구
+    relationship: related
 relationships:
   - type: contrasts
     targetTerm: IATA CO2 Connect
@@ -61,6 +72,13 @@ The ICEC methodology uses Great Circle Distance between airports to estimate fue
 ICEC 방법론은 공항 간 대권거리(Great Circle Distance)를 사용해 연료 소모량을 추정하며, 항공기 기종, 노선별 데이터, 승객 탑승률, 화물/승객 배분에 대한 최선의 산업 데이터를 적용하고, 이코노미·프리미엄 이코노미·비즈니스·퍼스트에 대해 객실 등급 승수(cabin-class factor)를 적용한다. 항공사가 자체 데이터로 커스터마이즈할 수 있도록 오픈소스 형식(예: 방법론 버전 13.1, 2024)으로 공개되며, 상쇄 프로그램과 여행자 배출량 추정의 기준 표준 역할을 한다.
 
 **Aliases:** `ICAO Carbon Emissions Calculator`, `ICEC`, `ICAO Carbon Calculator`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Google / Travalyst | `Travel Impact Model (TIM)` | related | Alternative per-passenger flight CO2e estimator using aircraft type, cabin, load factor and well-to-wake life cycle rather than ICEC's distance-based averages |
+| EUROCONTROL | `Flight emission approximator` | related | EUROCONTROL's flight carbon emission approximator, an alternative tool benchmarked against ICAO ICEC |
 
 # Related
 - [IATA CO2 Connect](/common/sustainability/iata-co2-connect.md) — contrasts

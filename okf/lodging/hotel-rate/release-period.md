@@ -19,6 +19,12 @@ aliases:
   - Release Back
   - Cut-off Period
   - Release Days
+providerTerms:
+  - provider: Oracle OPERA
+    term: Cutoff days (release)
+    context: 'OPERA expresses the release period as cutoff days before arrival, after which unsold allotment/block rooms return to house inventory.'
+    context_ko: OPERA는 release 기간을 도착 전 cutoff days로 표현하며 그 이후 미판매 allotment/block 객실이 house inventory로 반환된다.
+    relationship: same
 relationships:
   - type: related
     targetTerm: Allotment
@@ -58,6 +64,12 @@ Release period (often configured as a number of release days) governs allotment 
 Release Period(흔히 release days 수로 설정)는 allotment·group block 재고를 통제한다. 투어 오퍼레이터·기업 계정·행사 블록에 할당된 객실은 cut-off date까지 협정 조건으로 보류되며, 그 이후 미예약 객실은 호텔로 반환되어 다른 채널을 통해 재판매된다. cut-off date는 보통 도착 약 1주에서 1개월 전 사이로 설정되어 호텔이 회수·재판매할 시간을 확보한다. 따라서 release period는 cut-off 뒤에 있는 리드타임 파라미터이며, 블록 객실의 실제 소진이 너무 적을 경우 위약금을 부과하는 attrition 조항과 상호작용한다.
 
 **Aliases:** `Release Back`, `Cut-off Period`, `Release Days`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Oracle OPERA | `Cutoff days (release)` | same | OPERA expresses the release period as cutoff days before arrival, after which unsold allotment/block rooms return to house inventory. |
 
 # Related
 - [Allotment](/lodging/hotel-rate/allotment.md) — related

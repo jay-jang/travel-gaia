@@ -20,6 +20,22 @@ aliases:
   - Contrail Cirrus
   - Non-CO2 Effects
   - Non-CO2 Climate Effects of Aviation
+providerTerms:
+  - provider: Breakthrough Energy
+    term: Contrails.org / contrail management
+    context: 'Breakthrough Energy platform coordinating contrail science, open models and avoidance trials to mitigate non-CO2 warming'
+    context_ko: 비-CO2 온난화 완화를 위해 컨트레일 과학·오픈 모델·회피 시험을 조율하는 Breakthrough Energy 플랫폼
+    relationship: related
+  - provider: Google Research
+    term: Contrail forecast / contrail risk maps
+    context: AI satellite-based prediction of ice-supersaturated regions producing contrail risk maps used to re-route flights and avoid persistent contrails
+    context_ko: 얼음 과포화 영역을 AI·위성으로 예측해 컨트레일 위험 지도를 만들어 항로 재설정으로 지속성 컨트레일을 회피
+    relationship: related
+  - provider: EUROCONTROL
+    term: MUAC contrail avoidance trial
+    context: Maastricht Upper Area Control trial adjusting altitudes via ATC to avoid forming climate-warming contrails
+    context_ko: 관제(ATC)로 고도를 조정해 기후 온난화 컨트레일 형성을 회피하는 Maastricht Upper Area Control 시험
+    relationship: related
 relationships:
   - type: related
     targetTerm: GHG Protocol Scope 3 (Business Travel)
@@ -60,6 +76,14 @@ Scientific assessments estimate that non-CO2 effects (contrail cirrus, NOx, part
 과학적 평가에 따르면 비-CO2 효과(권운형 비행운, NOx, 입자상물질, 수증기)는 항공의 유효복사강제력 중 약 3분의 2를 차지하며, 그중 권운형 비행운이 단일 최대 요소로 일부 최선 추정치에서는 항공의 누적 CO2 강제력의 수 배에 달한다. 이러한 효과는 일부 배출 방법론에서 적용되는 복사강제력 승수(예: GHG 프로토콜 출장 항공 산정의 선택적 승수)의 근거이며, 비행운 회피 운항 계획 연구를 포함한 완전한 기후영향 회계의 핵심이다.
 
 **Aliases:** `Contrail`, `Contrail Cirrus`, `Non-CO2 Effects`, `Non-CO2 Climate Effects of Aviation`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Breakthrough Energy | `Contrails.org / contrail management` | related | Breakthrough Energy platform coordinating contrail science, open models and avoidance trials to mitigate non-CO2 warming |
+| Google Research | `Contrail forecast / contrail risk maps` | related | AI satellite-based prediction of ice-supersaturated regions producing contrail risk maps used to re-route flights and avoid persistent contrails |
+| EUROCONTROL | `MUAC contrail avoidance trial` | related | Maastricht Upper Area Control trial adjusting altitudes via ATC to avoid forming climate-warming contrails |
 
 # Related
 - [GHG Protocol Scope 3 (Business Travel)](/common/sustainability/ghg-protocol-scope-3-business-travel.md) — related

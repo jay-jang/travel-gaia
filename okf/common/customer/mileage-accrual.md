@@ -20,6 +20,12 @@ aliases:
   - Miles Accrual
   - Points Accrual
   - Earning
+providerTerms:
+  - provider: Amadeus
+    term: SSR FQTV
+    context: 'The SSR FQTV element flags that a passenger will accrue miles on the flown segment(s), the GDS mechanism that drives mileage crediting'
+    context_ko: SSR FQTV 요소는 승객이 탑승 구간에 대해 마일을 적립함을 표시하며 마일 적립을 구동하는 GDS 메커니즘이다
+    relationship: related
 relationships:
   - type: broader
     targetTerm: Frequent Flyer Program
@@ -66,6 +72,12 @@ Accrual rules determine the earning basis: distance-based programs credit miles 
 적립 규칙이 적립 기준을 정한다. 거리 기반 프로그램은 운임 등급 배수를 반영해 비행 거리당 마일을 적립하고, 매출 기반 프로그램은 회원 등급과 연동해 적격 운임의 일정 배수로 포인트를 적립한다. 적립은 회원의 Frequent Flyer Number에 기록되며 즉시 또는 탑승 후에 반영될 수 있다. 적립된 잔액은 회원이 이후 award redemption(보상 사용)을 통해 사용하는 자산이다. 일부 프로그램은 보상에 쓰는 적립 마일과 등급 달성·유지에 쓰는 자격(등급) 마일을 구분하므로, 하나의 활동이 둘 중 하나만 또는 둘 다 적립할 수 있다.
 
 **Aliases:** `Mileage Earning`, `Miles Accrual`, `Points Accrual`, `Earning`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Amadeus | `SSR FQTV` | related | The SSR FQTV element flags that a passenger will accrue miles on the flown segment(s), the GDS mechanism that drives mileage crediting |
 
 # Related
 - [Frequent Flyer Program](/common/customer/frequent-flyer-program.md) — broader

@@ -22,6 +22,12 @@ aliases:
   - IATCI
   - Interairline Through Check-In
   - Through Check-In
+providerTerms:
+  - provider: IATA
+    term: PADIS EDIFACT IATCI messages (Scenario 1 / Scenario 2)
+    context: IATCI is realized through IATA PADIS EDIFACT message standards—Scenario 1 (Inter-Airline Through Check-In) and Scenario 2 (Inter-Airline Local Check-In and Flight Management)—maintained with the IATCI Group.
+    context_ko: IATCI는 IATCI 그룹과 함께 유지되는 IATA PADIS EDIFACT 메시지 표준 — 시나리오 1(항공사 간 연계 체크인)과 시나리오 2(항공사 간 로컬 체크인 및 항공편 관리) — 을 통해 구현된다.
+    relationship: same
 relationships:
   - type: related
     targetTerm: Interline
@@ -64,6 +70,12 @@ IATCI is maintained by an industry interest group of airlines, system/software p
 IATCI는 항공사, 시스템/소프트웨어 제공자, 지상 조업사로 구성된 산업 이익 단체가 유지·관리하며, IATA PADIS와 긴밀히 협력하여 EDIFACT 메시지 지침과 Message Implementation Guide를 제공한다. 두 가지 주요 시나리오를 정의한다: 시나리오 1 — InterAirline Through Check-In(승객이 첫 항공사에서 체크인하고 하류 항공사가 승객/수하물을 수용) — 과 시나리오 2 — InterAirline Local Check-In and Flight Management. 항공사 간에 통과 수속이 가능하려면 사전에 양자 또는 다자 IATCI 협정이 있어야 하며, 규칙은 승객·수하물 데이터, 좌석 배정, 탑승권이 각 항공사의 출발통제시스템(DCS) 간에 어떻게 교환되는지를 규율한다. IATCI는 인터라인(interline) 운영 메커니즘의 핵심으로, 다항공사 발권을 가능케 하는 상업적 인터라인 협정 및 인터라인 전자항공권 발권을 보완한다.
 
 **Aliases:** `IATCI`, `Interairline Through Check-In`, `Through Check-In`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| IATA | `PADIS EDIFACT IATCI messages (Scenario 1 / Scenario 2)` | same | IATCI is realized through IATA PADIS EDIFACT message standards—Scenario 1 (Inter-Airline Through Check-In) and Scenario 2 (Inter-Airline Local Check-In and Flight Management)—maintained with the IATCI Group. |
 
 # Related
 - [Interline](/air/air-partner/interline.md) — related

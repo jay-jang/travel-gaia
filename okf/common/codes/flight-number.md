@@ -20,6 +20,12 @@ standardBody: IATA
 aliases:
   - Flight Designator
   - Flight Identifier
+providerTerms:
+  - provider: NDC/IATA
+    term: MarketingCarrier/FlightNumber
+    context: NDC schema element holding the marketing flight number; a parallel OperatingCarrier/FlightNumber carries the operating carrier's prime flight number.
+    context_ko: '마케팅 편명을 담는 NDC 스키마 요소로, 별도의 OperatingCarrier/FlightNumber는 운항사의 주(prime) 편명을 담는다.'
+    relationship: same
 relationships:
   - type: related
     targetTerm: Airline Designator
@@ -67,6 +73,12 @@ The numeric portion is limited to four digits. Many carriers follow conventions 
 숫자 부분은 최대 4자리로 제한된다. 다수 항공사는 방향에 따라 홀짝을 나누거나(예: 동행/북행은 짝수, 서행/남행은 홀수) 높은 번호 대역을 지역 노선·공동운항편에 배정하는 관례를 따르지만, 이러한 관례가 업계 전반에서 표준화되어 있지는 않다. 공동운항(codeshare)에서는 동일한 실제 운항편이 여러 편명을 갖는다. 고객에게 표시되는 마케팅 항공사 편명과 실제 운항 항공사 편명이 그것이다. 편명에 날짜와 출발지/도착지를 결합하면 PNR 내 항공 구간(segment)을 식별할 수 있다.
 
 **Aliases:** `Flight Designator`, `Flight Identifier`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| NDC/IATA | `MarketingCarrier/FlightNumber` | same | NDC schema element holding the marketing flight number; a parallel OperatingCarrier/FlightNumber carries the operating carrier's prime flight number. |
 
 # Related
 - [Airline Designator](/common/codes/airline-designator.md) — related

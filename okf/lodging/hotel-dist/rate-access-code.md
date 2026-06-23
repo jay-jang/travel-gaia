@@ -21,6 +21,12 @@ aliases:
   - Rate Access Code
   - Negotiated Rate Code
   - Hotel Rate Code (GDS access)
+providerTerms:
+  - provider: Amadeus
+    term: Rate Access Code / Special Rate (/SR-) request
+    context: In Amadeus hotel availability the default displayed rates are RAC (Rate Access Code) rates; agents append /SR- to request the negotiated/special rates tied to a corporate or agency profile.
+    context_ko: 'Amadeus 호텔 가용성에서 기본 표시 요금은 RAC(Rate Access Code) 요금이며, 에이전트는 /SR-를 붙여 기업/에이전시 프로필에 연결된 협상/특별 요금을 요청한다.'
+    relationship: same
 relationships:
   - type: related
     targetTerm: Corporate Rate
@@ -67,6 +73,12 @@ Negotiated hotel rates — corporate, consortia, or other confidential rates —
 협상 호텔 요금(기업·컨소시아 또는 기타 비공개 요금)은 누가 보고 판매할 수 있는지를 제한하는 규칙과 함께 GDS에 로딩된다. RAC(멀티레벨 요금 코드 또는 협상 요금 코드라고도 함)는 여행사 직원이 특정 협상 요금을 해제하기 위해 입력하는 자격 증명으로, 이것이 없으면 해당 요금은 표준 가용성 화면에 나타나지 않는다. RAC는 보통 3자(일부 프로그램은 3~5자, Galileo/Apollo는 최대 6자)이며, 협상 요금은 여행사의 pseudo-city code(PCC)에 묶여(secured) 권한 있는 해당 여행사만 비공개 가격을 예약할 수 있다. RAC는 상품을 명명/구조화하는 rate plan이나 rate code와 구별되며, 가시성을 통제하는 접근 키 그 자체다. RAC는 GDS 요금 로딩 맵에서 LRA/NLRA 같은 협상 요금 속성과 함께 로딩되는 경우가 많다.
 
 **Aliases:** `RAC`, `Rate Access Code`, `Negotiated Rate Code`, `Hotel Rate Code (GDS access)`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Amadeus | `Rate Access Code / Special Rate (/SR-) request` | same | In Amadeus hotel availability the default displayed rates are RAC (Rate Access Code) rates; agents append /SR- to request the negotiated/special rates tied to a corporate or agency profile. |
 
 # Related
 - [Corporate Rate](/lodging/hotel-rate/corporate-rate.md) — related

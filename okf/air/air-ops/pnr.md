@@ -34,6 +34,21 @@ providerTerms:
     context: Sabre refers to the booking file as a PNR identified by a record locator
     context_ko: Sabre는 예약 파일을 record locator로 식별되는 PNR이라고 지칭한다
     relationship: same
+  - provider: Amadeus
+    term: PNR / Record Locator (RT retrieve)
+    context: Amadeus assigns a six-character record locator to each PNR and retrieves it with the RT prefix; carriers return their own airline record locators per segment.
+    context_ko: 'Amadeus는 각 PNR에 6자리 record locator를 부여하고 RT 접두로 조회하며, 항공사는 segment별 자체 airline record locator를 반환한다.'
+    relationship: same
+  - provider: Sabre
+    term: PNR / Record Locator (*<locator> retrieve)
+    context: Sabre stores the booking as a PNR retrieved by an asterisk plus the six-character record locator; a GDS booking on a hosted carrier yields two locators.
+    context_ko: 'Sabre는 예약을 PNR로 저장해 asterisk + 6자리 record locator로 조회하며, hosted carrier에 대한 GDS 예약은 두 개의 locator를 만든다.'
+    relationship: same
+  - provider: NDC/IATA
+    term: Order (OrderID)
+    context: In NDC the booking is held as an Order identified by an OrderID; post-sale servicing references the OrderID (and may still carry a PNR record locator).
+    context_ko: 'NDC에서 예약은 OrderID로 식별되는 Order로 보유되며, 판매 후 servicing은 OrderID를 참조한다(PNR record locator를 함께 가질 수도 있다).'
+    relationship: related
 relationships:
   - type: related
     targetTerm: Segment
@@ -114,6 +129,9 @@ PNR은 흔히 'PRINT'로 요약되는 다섯 가지 필수 요소, 즉 Phone(연
 | --- | --- | --- | --- |
 | Amadeus | `PNR` | same | Amadeus calls the booking record a PNR with a 6-character record locator |
 | Sabre | `PNR / Record Locator` | same | Sabre refers to the booking file as a PNR identified by a record locator |
+| Amadeus | `PNR / Record Locator (RT retrieve)` | same | Amadeus assigns a six-character record locator to each PNR and retrieves it with the RT prefix; carriers return their own airline record locators per segment. |
+| Sabre | `PNR / Record Locator (*<locator> retrieve)` | same | Sabre stores the booking as a PNR retrieved by an asterisk plus the six-character record locator; a GDS booking on a hosted carrier yields two locators. |
+| NDC/IATA | `Order (OrderID)` | related | In NDC the booking is held as an Order identified by an OrderID; post-sale servicing references the OrderID (and may still carry a PNR record locator). |
 
 # Related
 - [Segment](/air/air-ops/segment.md) — related

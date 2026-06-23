@@ -22,6 +22,12 @@ aliases:
   - Electronic Ticket
   - ETKT
   - Electronic Ticketing
+providerTerms:
+  - provider: NDC/IATA
+    term: TicketDocument (TicketDocInfo)
+    context: 'In an NDC order, the electronic ticket is represented by the TicketDocument element inside TicketDocInfo of OrderViewRS, carrying the 13-digit ticket number, coupons, and statuses; under ONE Order it is being consolidated into the single Order record.'
+    context_ko: 'NDC 주문에서 전자항공권은 OrderViewRS의 TicketDocInfo 내 TicketDocument 요소로 표현되어 13자리 항공권번호·쿠폰·상태를 담으며, ONE Order에서는 단일 Order 레코드로 통합되고 있다.'
+    relationship: same
 relationships:
   - type: parent
     targetTerm: Flight Coupon
@@ -96,6 +102,12 @@ An e-ticket comprises ticket-level data (passenger name, fare calculation, form 
 전자항공권은 항공권 단위 데이터(승객명, 운임 계산, 지불 수단, 배서/제한 사항)와 하나 이상의 Flight Coupon으로 구성되며, 각 쿠폰은 특정 비행 구간에 연결되어 고유한 쿠폰 상태(예: OPEN FOR USE, AIRPORT CONTROL/CHECKED IN, FLOWN/USED, REFUNDED, VOID, EXCHANGED)를 가진다. 13자리 번호는 3자리 항공사 회계 코드(예: 델타항공의 경우 006), 폼/일련번호 부분, 그리고 체크 디지트로 구성된다. 전자항공권은 승객 운송을 위한 표준 서류이며, EMD는 부가 서비스 및 비항공 요금에 대응하는 전자 서류이다.
 
 **Aliases:** `Electronic Ticket`, `ETKT`, `Electronic Ticketing`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| NDC/IATA | `TicketDocument (TicketDocInfo)` | same | In an NDC order, the electronic ticket is represented by the TicketDocument element inside TicketDocInfo of OrderViewRS, carrying the 13-digit ticket number, coupons, and statuses; under ONE Order it is being consolidated into the single Order record. |
 
 # Related
 - [Flight Coupon](/air/air-ticket/flight-coupon.md) — parent

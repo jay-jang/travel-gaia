@@ -20,6 +20,17 @@ aliases:
   - Collision Damage Waiver
   - Damage Waiver
   - CDW
+providerTerms:
+  - provider: US/Canada rental market
+    term: Loss Damage Waiver (LDW)
+    context: 'In the US and Canada the collision damage waiver is generally branded and sold as Loss Damage Waiver (LDW), which also bundles theft.'
+    context_ko: 미국·캐나다 렌터카 시장에서는 collision damage waiver를 보통 Loss Damage Waiver(LDW)로 명명·판매하며 도난까지 포함한다.
+    relationship: broader
+  - provider: OpenTravel (OTA)
+    term: VCT code 'CDW'
+    context: OTA's Vehicle Coverage Type (VCT) code list assigns CDW its own coverage code so suppliers and brokers exchange the waiver consistently in vehicle messages.
+    context_ko: OTA의 Vehicle Coverage Type(VCT) 코드 리스트는 CDW에 별도 보장 코드를 부여해 차량 메시지에서 공급자·브로커가 일관되게 교환한다.
+    relationship: same
 relationships:
   - type: narrower
     targetTerm: Loss Damage Waiver
@@ -60,6 +71,13 @@ Because CDW is a contractual waiver rather than insurance, the supplier agrees n
 CDW는 보험이 아니라 계약상 면책이므로, 공급사는 면책 대상 충돌 손해에 대해 이용자에게 청구하지 않기로 합의하지만, 무단 운전자, 비포장 도로 주행, 음주운전 등 위반 시 보장이 무효가 될 수 있고 자기부담금이 남는 경우가 많다. CDW는 통상 차량 손해는 보장하지만 도난, 제3자 배상책임, 신체 상해, 개인 소지품은 보장하지 않으며, 이는 별도 상품으로 다뤄진다. 미국 시장의 상당 부분에서는 도난 보호와 흔히 휴차 손실(loss-of-use)까지 더한 더 넓은 Loss Damage Waiver가 단독 CDW를 대체해 판매되므로, 두 용어가 자주 혼용된다.
 
 **Aliases:** `Collision Damage Waiver`, `Damage Waiver`, `CDW`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| US/Canada rental market | `Loss Damage Waiver (LDW)` | broader | In the US and Canada the collision damage waiver is generally branded and sold as Loss Damage Waiver (LDW), which also bundles theft. |
+| OpenTravel (OTA) | `VCT code 'CDW'` | same | OTA's Vehicle Coverage Type (VCT) code list assigns CDW its own coverage code so suppliers and brokers exchange the waiver consistently in vehicle messages. |
 
 # Related
 - [Loss Damage Waiver](/ground/car/loss-damage-waiver.md) — narrower

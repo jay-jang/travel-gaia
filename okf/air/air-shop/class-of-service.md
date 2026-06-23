@@ -28,6 +28,21 @@ providerTerms:
     context: GDS maps each fare to one or more booking-class letters via Record 6 RBD data.
     context_ko: GDS는 Record 6 RBD 데이터를 통해 각 운임을 하나 이상의 booking class 문자에 매핑한다.
     relationship: same
+  - provider: Amadeus
+    term: Booking class / RBD
+    context: In Amadeus the single-letter inventory code is the booking class (Reservation Booking Designator); the system accepts one character when selling a class of service.
+    context_ko: 'Amadeus에서는 단일 문자 인벤토리 코드를 booking class(RBD)라 부르며, 클래스 판매 시 한 글자를 입력한다.'
+    relationship: same
+  - provider: Sabre
+    term: Booking class / RBD
+    context: Sabre also refers to the inventory-class letter as the booking class or RBD used to sell and price a seat.
+    context_ko: Sabre 역시 인벤토리 클래스 문자를 좌석 판매·운임계산에 쓰는 booking class(RBD)로 부른다.
+    relationship: same
+  - provider: NDC/IATA
+    term: RBD (Reservation Booking Designator)
+    context: 'IATA standardizes the one-letter code as the RBD; values (Y, J, M, K, etc.) are carrier-defined and not standardized across airlines.'
+    context_ko: 'IATA는 한 글자 코드를 RBD로 표준화하며, 값(Y, J, M, K 등)은 항공사별로 정의되어 항공사 간 통일되지 않는다.'
+    relationship: same
 relationships:
   - type: sameAs
     targetTerm: RBD
@@ -70,6 +85,9 @@ In airline distribution the term Class of Service is commonly used interchangeab
 | Provider | Term | Relationship | Context |
 | --- | --- | --- | --- |
 | Travelport | `Booking Class / RBD (Record 6)` | same | GDS maps each fare to one or more booking-class letters via Record 6 RBD data. |
+| Amadeus | `Booking class / RBD` | same | In Amadeus the single-letter inventory code is the booking class (Reservation Booking Designator); the system accepts one character when selling a class of service. |
+| Sabre | `Booking class / RBD` | same | Sabre also refers to the inventory-class letter as the booking class or RBD used to sell and price a seat. |
+| NDC/IATA | `RBD (Reservation Booking Designator)` | same | IATA standardizes the one-letter code as the RBD; values (Y, J, M, K, etc.) are carrier-defined and not standardized across airlines. |
 
 # Related
 - [RBD](/air/air-shop/rbd.md) — sameAs

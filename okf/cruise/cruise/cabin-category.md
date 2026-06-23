@@ -22,6 +22,17 @@ aliases:
   - Cabin Grade
   - Stateroom Grade
   - Cabin Class
+providerTerms:
+  - provider: Royal Caribbean International
+    term: 'Stateroom category code (e.g. 4B, 6D, 8M, IX, SB)'
+    context: 'Royal Caribbean prices each cabin against an alphanumeric subcategory code layered on the four broad types (Interior/Oceanview/Balcony/Suite), encoding deck, location and view obstruction within a fare tier.'
+    context_ko: '로열캐리비안은 인테리어/오션뷰/발코니/스위트 4대 유형 위에 4B, 6D, 8M 같은 영숫자 서브카테고리 코드를 두어 갑판·위치·시야 가림 여부와 운임 등급을 표현한다.'
+    relationship: same
+  - provider: Celebrity Cruises
+    term: 'Stateroom category (Interior / Ocean View / Veranda / Concierge Class / AquaClass / Suite, lettered codes)'
+    context: 'Celebrity grades inventory into six broad classes, each subdivided by lettered category codes that drive the per-person fare and onboard perks (e.g. Concierge Class, AquaClass as priced sub-tiers).'
+    context_ko: '셀러브리티는 재고를 6개 대분류로 나누고 각 분류를 알파벳 카테고리 코드로 세분해 1인당 운임과 온보드 혜택(예: 컨시어지 클래스, 아쿠아 클래스 등 가격 세부 등급)을 결정한다.'
+    relationship: same
 relationships:
   - type: sameAs
     targetTerm: Room Type
@@ -68,6 +79,13 @@ A cruise line publishes a category ladder: a small number of meta-categories (in
 크루즈 선사는 카테고리 사다리를 공표한다. 즉 소수의 상위 카테고리(내측·해측·발코니·스위트, 그리고 컨시어지나 ship-within-a-ship 스위트 같은 특수 등급)를 두고, 각 카테고리를 갑판, 선체 중앙 대 선수 위치, 면적, 시야 차단 여부, 연결 선실 여부에 따라 다수의 운임 등급 하위 카테고리로 나눈다. 재고는 하위 카테고리 단위로 보유·판매되며 1인당 2인 기준 운임이 여기에 연결된다. 유통 시스템과 OpenTravel 크루즈 메시지 셋은 이 카테고리 코드를 기준으로 가용성·가격·홀드를 표현하며, Guarantee(GTY) 예약은 특정 선실 번호 없이 보장 최저 카테고리를 판매한다.
 
 **Aliases:** `Stateroom Category`, `Cabin Grade`, `Stateroom Grade`, `Cabin Class`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Royal Caribbean International | `Stateroom category code (e.g. 4B, 6D, 8M, IX, SB)` | same | Royal Caribbean prices each cabin against an alphanumeric subcategory code layered on the four broad types (Interior/Oceanview/Balcony/Suite), encoding deck, location and view obstruction within a fare tier. |
+| Celebrity Cruises | `Stateroom category (Interior / Ocean View / Veranda / Concierge Class / AquaClass / Suite, lettered codes)` | same | Celebrity grades inventory into six broad classes, each subdivided by lettered category codes that drive the per-person fare and onboard perks (e.g. Concierge Class, AquaClass as priced sub-tiers). |
 
 # Related
 - [Room Type](/lodging/hotel-rate/room-type.md) — sameAs

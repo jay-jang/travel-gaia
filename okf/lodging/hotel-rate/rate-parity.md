@@ -19,6 +19,12 @@ aliases:
   - Price Parity
   - Rate Parity Agreement
   - Most Favoured Nation (rate clause)
+providerTerms:
+  - provider: Sabre Hospitality
+    term: Rate parity (SynXis distribution)
+    context: 'SynXis CRS provides controls to maintain pricing consistency and enforce rate parity across GDS, OTA and direct channels from a single inventory source.'
+    context_ko: SynXis CRS는 단일 재고 소스에서 GDS·OTA·다이렉트 채널 전반의 가격 일관성과 rate parity를 유지·강제하는 제어를 제공한다.
+    relationship: related
 relationships:
   - type: related
     targetTerm: BAR
@@ -62,6 +68,12 @@ Rate parity typically applies to public/BAR-type rates and aims to prevent chann
 Rate parity는 일반적으로 공개 요금/BAR 유형 요금에 적용되며 채널 간 가격 후려치기를 방지하는 것을 목표로 한다. 조항은 '광의 parity'(직판을 포함한 모든 채널에서 동등성 요구)부터 '협의 parity'(호텔 자체 직판 채널에 대해서만 동등성 요구)까지 다양하다. 이러한 조항은 여러 관할권에서 규제 및 경쟁법상 검토를 받아 광의 parity에 대한 제한이나 금지로 이어졌으므로, 이 용어의 적용 가능성은 시장마다 다르다.
 
 **Aliases:** `Price Parity`, `Rate Parity Agreement`, `Most Favoured Nation (rate clause)`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Sabre Hospitality | `Rate parity (SynXis distribution)` | related | SynXis CRS provides controls to maintain pricing consistency and enforce rate parity across GDS, OTA and direct channels from a single inventory source. |
 
 # Related
 - [BAR](/lodging/hotel-rate/bar.md) — related

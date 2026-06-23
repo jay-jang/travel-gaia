@@ -20,6 +20,17 @@ standardBody: UIC
 aliases:
   - Reservation (OSDM)
   - Place Reservation
+providerTerms:
+  - provider: OSDM (UIC IRS 90918-10)
+    term: ReservationOfferPart / Reservation
+    context: 'OSDM names the place-bound reservation ''ReservationOfferPart'' (becoming ''Reservation'' when booked), explicitly a separate offer part from the AdmissionOfferPart so a reservation can be sold without buying the admission again.'
+    context_ko: 'OSDM은 특정 열차·좌석에 결합된 예약을 ''ReservationOfferPart''(예약 확정 시 ''Reservation'')로 명명하며, 어드미션을 다시 구매하지 않고도 예약만 판매할 수 있도록 AdmissionOfferPart와 명시적으로 분리한다.'
+    relationship: same
+  - provider: ERA TAP TSI (TD B.5)
+    term: Reservation data exchange (TD B.5)
+    context: ERA TAP TSI Technical Document B.5 standardizes the electronic exchange of reservation messages between rail actors — the regulated interface behind cross-carrier seat reservations.
+    context_ko: 'ERA TAP TSI 기술문서 B.5는 철도 주체 간 예약 메시지의 전자적 교환을 표준화하며, 운송인 간 좌석예약을 뒷받침하는 규제 인터페이스다.'
+    relationship: related
 relationships:
   - type: parent
     targetTerm: OSDM
@@ -64,6 +75,13 @@ Reservation requirements vary by service: high-speed and yield-managed trains of
 예약 요건은 노선별로 다르다 — 고속·수익관리 열차는 흔히 예약을 의무·일체형으로 두고, 지역 열차는 예약이 불가한 경우가 많으며, 많은 도시간 열차는 선택 사항으로 둔다. OSDM은 reservation을 admission과 구별해 모델링하여 '승차권만', '예약만', 또는 묶음 상품을 표현할 수 있게 하고, 사후 처리에서 예약을 독립적으로 추가·변경·취소할 수 있게 한다.
 
 **Aliases:** `Reservation (OSDM)`, `Place Reservation`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| OSDM (UIC IRS 90918-10) | `ReservationOfferPart / Reservation` | same | OSDM names the place-bound reservation 'ReservationOfferPart' (becoming 'Reservation' when booked), explicitly a separate offer part from the AdmissionOfferPart so a reservation can be sold without buying the admission again. |
+| ERA TAP TSI (TD B.5) | `Reservation data exchange (TD B.5)` | related | ERA TAP TSI Technical Document B.5 standardizes the electronic exchange of reservation messages between rail actors — the regulated interface behind cross-carrier seat reservations. |
 
 # Related
 - [OSDM](/ground/rail/osdm.md) — parent

@@ -21,6 +21,22 @@ standardBody: OpenTravel
 aliases:
   - 'Availability, Rates and Inventory'
   - Availability Rates Inventory
+providerTerms:
+  - provider: OpenTravel/IATA
+    term: OTA_HotelAvailNotifRQ / OTA_HotelRateAmountNotifRQ / OTA_HotelInvCountNotifRQ
+    context: 'The OpenTravel ARI message set splits ARI into three core push messages: availability/restrictions, rate amounts, and physical inventory counts (plus a transaction message), the de facto standard for hotel-to-channel ARI sync.'
+    context_ko: 'OpenTravel의 ARI 메시지 세트는 ARI를 가용성/제한, 요금액, 물리적 객실 재고 카운트의 세 가지 푸시 메시지(및 트랜잭션 메시지)로 나누며, 호텔-채널 간 ARI 동기화의 사실상 표준이다.'
+    relationship: same
+  - provider: Booking.com
+    term: OTA_HotelAvailNotif / OTA_HotelRateAmountNotif (Connectivity APIs)
+    context: 'Booking.com''s Connectivity APIs implement the OpenTravel ARI messages to create/update inventory, restrictions, and rates for connected properties.'
+    context_ko: Booking.com의 Connectivity API는 연결된 숙소의 재고·제한·요금을 생성/수정하기 위해 OpenTravel ARI 메시지를 구현한다.
+    relationship: same
+  - provider: Expedia Group
+    term: Availability & Rate APIs (Rapid / EQC)
+    context: Expedia Group's supply-side Availability & Rate APIs are the channel through which properties push ARI to the Expedia marketplace.
+    context_ko: Expedia Group의 공급자측 Availability & Rate API는 숙소가 Expedia 마켓플레이스에 ARI를 전송하는 채널이다.
+    relationship: related
 relationships:
   - type: related
     targetTerm: Channel Manager
@@ -75,6 +91,14 @@ ARI is the data payload exchanged between a hotel's inventory source (CRS/PMS) a
 ARI는 호텔의 인벤토리 소스(CRS/PMS)와 채널 사이에 채널 매니저를 통해 교환되는 데이터 페이로드다. 일반적으로 가용성 수량, 요금 값, 그리고 최소 숙박일수(length-of-stay)나 판매 중지(stop-sell) 같은 제약 조건을 갱신하는 표준화된 메시지로 전송된다. ARI가 일관되지 않으면 오버부킹이나 요금 패리티 위반으로 이어진다.
 
 **Aliases:** `Availability, Rates and Inventory`, `Availability Rates Inventory`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| OpenTravel/IATA | `OTA_HotelAvailNotifRQ / OTA_HotelRateAmountNotifRQ / OTA_HotelInvCountNotifRQ` | same | The OpenTravel ARI message set splits ARI into three core push messages: availability/restrictions, rate amounts, and physical inventory counts (plus a transaction message), the de facto standard for hotel-to-channel ARI sync. |
+| Booking.com | `OTA_HotelAvailNotif / OTA_HotelRateAmountNotif (Connectivity APIs)` | same | Booking.com's Connectivity APIs implement the OpenTravel ARI messages to create/update inventory, restrictions, and rates for connected properties. |
+| Expedia Group | `Availability & Rate APIs (Rapid / EQC)` | related | Expedia Group's supply-side Availability & Rate APIs are the channel through which properties push ARI to the Expedia marketplace. |
 
 # Related
 - [Channel Manager](/lodging/hotel-dist/channel-manager.md) — related

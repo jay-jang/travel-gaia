@@ -23,6 +23,12 @@ aliases:
   - Time to Ticket
   - Last Ticketing Date
   - TTL
+providerTerms:
+  - provider: Amadeus
+    term: TKTL (Ticketing Arrangement / TK element)
+    context: 'Amadeus records the ticketing deadline as a TK element (TKTL ddmmm); when the limit is reached the PNR drops to Queue 8, and airlines can drive deadlines via Automated Ticketing Limits (ATL).'
+    context_ko: 'Amadeus는 발권 기한을 TK 요소(TKTL ddmmm)로 기록하며, 기한 도달 시 PNR이 Queue 8로 이동하고 항공사는 Automated Ticketing Limits(ATL)로 기한을 설정할 수 있다.'
+    relationship: same
 relationships:
   - type: related
     targetTerm: PNR
@@ -61,6 +67,12 @@ Ticketing time limits arise from two main sources: carrier/GDS-imposed limits ma
 발권 시한은 두 가지 주요 출처에서 발생한다. 하나는 PNR의 큐(queue) 및 옵션/타이머 요소를 통해 관리되는 항공사/GDS 부과 시한이고, 다른 하나는 운임 규정에 의한 시한(ATPCO Category 5, 사전 예약/발권으로, 예약 후 일정 일수 이내 또는 출발 전 특정 날짜까지 발권을 요구할 수 있음)이다. TTL까지 발권하지 못하면 일반적으로 해당 구간이 자동 취소되며 예약된 운임이 소멸될 수 있다. TTL 처리는 대리점 및 항공사 발권 업무의 핵심 요소로, 흔히 GDS 큐를 통해 모니터링된다.
 
 **Aliases:** `Time Limit`, `Time to Ticket`, `Last Ticketing Date`, `TTL`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Amadeus | `TKTL (Ticketing Arrangement / TK element)` | same | Amadeus records the ticketing deadline as a TK element (TKTL ddmmm); when the limit is reached the PNR drops to Queue 8, and airlines can drive deadlines via Automated Ticketing Limits (ATL). |
 
 # Related
 - [PNR](/air/air-ops/pnr.md) — related

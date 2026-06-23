@@ -19,6 +19,12 @@ aliases:
   - Unlimited Mileage
   - Unlimited Kilometres
   - Unlimited Miles
+providerTerms:
+  - provider: Sabre
+    term: Mileage plan 'FM'
+    context: In Sabre car bookings the mileage plan code FM denotes free/unlimited mileage on the rate.
+    context_ko: Sabre car 예약에서 mileage plan 코드 FM은 해당 요금의 무제한(free) 주행거리를 의미한다.
+    relationship: same
 relationships:
   - type: broader
     targetTerm: Time and Mileage
@@ -53,6 +59,12 @@ Unlimited mileage removes the distance variable from the price, so the quote dep
 주행거리 무제한은 가격에서 거리 변수를 제거하므로, 견적은 시간 요금과 세금·수수료·선택 상품에만 좌우된다. 많은 국내 시장의 표준 차량 등급에서 흔하지만, 편도 대여, 특정 차종(예: 스페셜티·프리미엄 등급), 국경 간 이동, 일부 국가에서는 제한될 수 있으며, 그 경우 초과 마일/킬로미터당 요금이 붙는 제한 허용량이 대신 적용된다. 제한 주행거리의 낮은 표면 요금이 거리를 주행하고 나면 약간 더 높은 무제한 요금보다 비쌀 수 있으므로, 주행거리 무제한은 쇼핑의 핵심 비교 속성이자 time-and-mileage 요금의 정의된 요소다.
 
 **Aliases:** `Unlimited Mileage`, `Unlimited Kilometres`, `Unlimited Miles`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Sabre | `Mileage plan 'FM'` | same | In Sabre car bookings the mileage plan code FM denotes free/unlimited mileage on the rate. |
 
 # Related
 - [Time and Mileage](/ground/car/time-and-mileage.md) — broader

@@ -19,6 +19,12 @@ aliases:
   - Bid-Price Control
   - Displacement Cost
   - Opportunity Cost Threshold
+providerTerms:
+  - provider: PROS
+    term: Bid price (deterministic / heuristic)
+    context: In PROS RM bid prices are the leg optimization output; the heuristic bid price uses EMSR-derived displacement cost while the deterministic bid price uses LP shadow prices.
+    context_ko: 'PROS RM에서 bid price는 레그 최적화 산출물로, heuristic bid price는 EMSR 기반 displacement cost를, deterministic bid price는 LP shadow price를 사용한다.'
+    relationship: same
 relationships:
   - type: broader
     targetTerm: Revenue Management
@@ -72,6 +78,12 @@ Bid-price control is an alternative to class-level booking limits: instead of co
 Bid-price 통제는 클래스 단위 booking limit의 대안이다. 운임 클래스별 좌석을 세는 대신, 시스템은 leg(또는 네트워크 capacity 단위)별 임계값을 저장하고 운임이 해당 임계값(들)을 넘는 요청을 수락한다. 네트워크/O&D revenue management에서는 여러 leg에 걸친 여정이 그 leg들의 bid price 합계를 넘어야 하므로, 동일한 운임이라도 각 leg의 한계 가치에 따라 어떤 routing에서는 수락되고 다른 routing에서는 거절될 수 있다. bid price는 수요와 잔여 capacity가 변할 때 재계산되며, 보통 결정론적 또는 무작위화 선형계획법(LP)의 쌍대값이나 동적계획법 근사 같은 네트워크 최적화에서 도출된다. 이는 좌석의 수락 가능 여부를, EMSR 같은 단일 leg 보호수준 방식의 고정된 클래스 배분이 아니라 displacement 대비 기여도에 따라 결정하게 한다.
 
 **Aliases:** `Bid-Price Control`, `Displacement Cost`, `Opportunity Cost Threshold`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| PROS | `Bid price (deterministic / heuristic)` | same | In PROS RM bid prices are the leg optimization output; the heuristic bid price uses EMSR-derived displacement cost while the deterministic bid price uses LP shadow prices. |
 
 # Related
 - [Revenue Management](/air/air-shop/revenue-management.md) — broader

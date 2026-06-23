@@ -21,6 +21,17 @@ aliases:
   - Schedule Adjustment
   - Schedule Change Notification
   - Time Change
+providerTerms:
+  - provider: IATA
+    term: SSM / ASM (Standard Schedules Message / Ad hoc Schedule Message)
+    context: 'IATA SSM distributes permanent schedule creations, changes, and cancellations, and ASM conveys ad hoc/short-notice changes; GDSs ingest these to update flight schedules that drive schedule-change processing on booked PNRs.'
+    context_ko: 'IATA SSM은 영구적인 스케줄 생성·변경·취소를 배포하고 ASM은 임시·긴급 변경을 전달하며, GDS는 이를 수신해 예약된 PNR의 스케줄 변경 처리를 유발하는 항공편 스케줄을 갱신한다.'
+    relationship: related
+  - provider: Sabre
+    term: Schedule Change (queue / Automation Manager)
+    context: 'Sabre processes schedule changes via dedicated schedule-change queues and its Automation Manager, which links Schedule Change with PNR Manager to automate rebooking and notification when an operating schedule changes.'
+    context_ko: 'Sabre는 전용 스케줄 변경 큐와 Automation Manager를 통해 스케줄 변경을 처리하며, 운항 스케줄이 바뀌면 Schedule Change를 PNR Manager와 연동해 재예약·고지를 자동화한다.'
+    relationship: related
 relationships:
   - type: related
     targetTerm: IROPS
@@ -68,6 +79,13 @@ Schedule changes are communicated via standardized schedule messaging (for examp
 스케줄 변경은 표준화된 스케줄 메시지(예: SSIM 기반 SSM 및 ASM 포맷)를 통해 전달되며, GDS와 항공사 예약 시스템으로 전파되어 영향을 받는 PNR이 상담원 또는 자동 처리를 위해 큐(queue)에 올라오는 경우가 많다. 변경의 정도와 운임 조건에 따라 승객은 재예약, 비자발적 재발권(involuntary reissue) 또는 환불을 받을 권리가 있을 수 있다. 스케줄 변경은 당일 운영 중단과는 다르며, 당일 중단은 비정상 운항(IROPS)에 해당한다.
 
 **Aliases:** `Schedule Adjustment`, `Schedule Change Notification`, `Time Change`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| IATA | `SSM / ASM (Standard Schedules Message / Ad hoc Schedule Message)` | related | IATA SSM distributes permanent schedule creations, changes, and cancellations, and ASM conveys ad hoc/short-notice changes; GDSs ingest these to update flight schedules that drive schedule-change processing on booked PNRs. |
+| Sabre | `Schedule Change (queue / Automation Manager)` | related | Sabre processes schedule changes via dedicated schedule-change queues and its Automation Manager, which links Schedule Change with PNR Manager to automate rebooking and notification when an operating schedule changes. |
 
 # Related
 - [IROPS](/air/air-partner/irops.md) — related

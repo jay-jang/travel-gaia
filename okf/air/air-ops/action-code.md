@@ -27,6 +27,16 @@ providerTerms:
     context: 'Universal API documents action/request codes such as NN, SS, DK, HN, LL sent to request space.'
     context_ko: 'Universal API는 space 요청에 보내는 NN, SS, DK, HN, LL 같은 action/request 코드를 문서화한다.'
     relationship: same
+  - provider: Amadeus
+    term: 'Action/Status code (NN, SS, DK, HN, LL)'
+    context: 'Amadeus segment-sell cryptic entries (e.g. SS, NN) carry the AIRIMP action code that requests space on the marketing carrier.'
+    context_ko: 'Amadeus의 segment 판매 cryptic 엔트리(예: SS, NN)는 marketing carrier에 space를 요청하는 AIRIMP action code를 담는다.'
+    relationship: same
+  - provider: Sabre
+    term: 'Status code (action) — NN, SS, DK, HN, LL'
+    context: Sabre sell/segment formats transmit the same two-letter action codes to request action from the carrier before an advice code is returned.
+    context_ko: Sabre의 판매/segment 포맷은 advice code가 반환되기 전 항공사에 조치를 요청하는 동일한 2자리 action code를 전송한다.
+    relationship: same
 relationships:
   - type: parent
     targetTerm: AIRIMP
@@ -74,6 +84,8 @@ Action code는 AIRIMP의 action/advice/status 관례에서 나가는 '요청' �
 | Provider | Term | Relationship | Context |
 | --- | --- | --- | --- |
 | Travelport | `Air Status Codes (action codes)` | same | Universal API documents action/request codes such as NN, SS, DK, HN, LL sent to request space. |
+| Amadeus | `Action/Status code (NN, SS, DK, HN, LL)` | same | Amadeus segment-sell cryptic entries (e.g. SS, NN) carry the AIRIMP action code that requests space on the marketing carrier. |
+| Sabre | `Status code (action) — NN, SS, DK, HN, LL` | same | Sabre sell/segment formats transmit the same two-letter action codes to request action from the carrier before an advice code is returned. |
 
 # Related
 - [AIRIMP](/air/air-ops/airimp.md) — parent

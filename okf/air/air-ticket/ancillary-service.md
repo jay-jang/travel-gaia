@@ -22,6 +22,17 @@ aliases:
   - Ancillaries
   - Add-on Service
   - Optional Service
+providerTerms:
+  - provider: ATPCO
+    term: Optional Services (Category 5 / Industry Sub Codes)
+    context: 'ATPCO files and standardizes chargeable ancillaries as ''Optional Services'', each identified by an industry sub code (RFISC) within an RFIC group; this is the pricing source for baggage, seats, and similar fees.'
+    context_ko: 'ATPCO는 유료 부가서비스를 ''Optional Services''로 표준화·등록하며, 각 항목은 RFIC 그룹 내 산업 서브코드(RFISC)로 식별된다. 수하물·좌석 등 요금의 가격 산정 소스다.'
+    relationship: same
+  - provider: NDC/IATA
+    term: Service (ServiceList / a-la-carte Offer)
+    context: 'In NDC, ancillaries are returned as ''Services'' via the ServiceList message and sold as OfferItems/OrderItems alongside flights, rather than as separately priced ATPCO optional-service records.'
+    context_ko: 'NDC에서는 부가서비스가 ServiceList 메시지를 통해 ''Service''로 반환되어 항공편과 함께 OfferItem/OrderItem으로 판매되며, 별도 가격의 ATPCO Optional Service 레코드 방식과 다르다.'
+    relationship: same
 relationships:
   - type: related
     targetTerm: EMD
@@ -75,6 +86,13 @@ Ancillary services are commonly divided into a-la-carte items (purchasable optio
 부가 서비스는 일반적으로 알라카르트 항목(구매 가능한 선택 서비스)과 서비스 수수료(예: 변경 또는 지불 수수료)로 구분된다. 이들은 ATPCO Optional Services 데이터와 표준화된 서비스 코드(RFISC, 즉 Reason For Issuance Sub Code 포함)를 통해 업계 데이터에 등록 및 기술되며, 점점 더 NDC 오퍼를 통해 판매되고 있다. 판매될 때 부가 서비스는 일반적으로 EMD-A(항공편에 연결됨) 또는 EMD-S(독립형)로 발행된다. 부가 서비스는 항공사에게 주요하고 성장하는 수익원이며 현대 항공사 리테일링의 핵심 요소이다.
 
 **Aliases:** `Ancillary`, `Ancillaries`, `Add-on Service`, `Optional Service`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| ATPCO | `Optional Services (Category 5 / Industry Sub Codes)` | same | ATPCO files and standardizes chargeable ancillaries as 'Optional Services', each identified by an industry sub code (RFISC) within an RFIC group; this is the pricing source for baggage, seats, and similar fees. |
+| NDC/IATA | `Service (ServiceList / a-la-carte Offer)` | same | In NDC, ancillaries are returned as 'Services' via the ServiceList message and sold as OfferItems/OrderItems alongside flights, rather than as separately priced ATPCO optional-service records. |
 
 # Related
 - [EMD](/air/air-ticket/emd.md) — related

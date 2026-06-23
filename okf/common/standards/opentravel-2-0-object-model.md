@@ -23,6 +23,17 @@ aliases:
   - OpenTravel 2.0
   - OpenTravel Object Model
   - 2.0 Object Model
+providerTerms:
+  - provider: OpenTravel
+    term: OpenTravel 1.x OTA_* message schemas
+    context: The legacy message-centric OpenTravel 1.x XML messages (e.g. OTA_AirAvailRQ) that the object-oriented 2.0 model supersedes
+    context_ko: '객체지향 2.0 모델이 대체하는 레거시 메시지 중심 OpenTravel 1.x XML 메시지(예: OTA_AirAvailRQ)'
+    relationship: related
+  - provider: NDC/IATA
+    term: AIDM / NDC schemas
+    context: IATA's AIDM-derived NDC schemas are a parallel travel data model that OpenTravel collaborates with for interoperability
+    context_ko: 'OpenTravel이 상호운용을 위해 협력하는, IATA AIDM 기반 NDC 스키마라는 병행 여행 데이터 모델'
+    relationship: related
 relationships:
   - type: parent
     targetTerm: OpenTravel Alliance
@@ -60,6 +71,13 @@ By incorporating JSON and REST, 2.0 reduces message weight and improves mobile a
 JSON과 REST를 도입함으로써 2.0은 장황한 1.x XML 스키마에 비해 메시지 크기를 줄이고 모바일·앱 호환성을 높인다. 단계적 상세 수준으로 설계되어 개발자는 가벼운 모바일 위젯부터 완전한 기능의 연동까지 목표로 삼을 수 있으며, XML, JSON, WSDL, OpenAPI(Swagger) 출력을 생성할 수 있다. 스키마는 OpenTravel Model-Development Environment(OTM-DE) 도구를 통해 이 모델로부터 산출된다.
 
 **Aliases:** `OTA 2.0`, `OpenTravel 2.0`, `OpenTravel Object Model`, `2.0 Object Model`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| OpenTravel | `OpenTravel 1.x OTA_* message schemas` | related | The legacy message-centric OpenTravel 1.x XML messages (e.g. OTA_AirAvailRQ) that the object-oriented 2.0 model supersedes |
+| NDC/IATA | `AIDM / NDC schemas` | related | IATA's AIDM-derived NDC schemas are a parallel travel data model that OpenTravel collaborates with for interoperability |
 
 # Related
 - [OpenTravel Alliance](/common/standards/opentravel-alliance.md) — parent

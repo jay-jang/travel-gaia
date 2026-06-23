@@ -20,6 +20,17 @@ standardBody: IATA
 aliases:
   - Fare Calculation
   - Pricing
+providerTerms:
+  - provider: Travelport
+    term: Linear Fare / Stored Linear Fare Quote (*LF)
+    context: 'In Apollo/Galileo the constructed fare result is shown as the (Stored) Linear Fare Quote (*LF), carrying the fare-break points, NUC amounts, surcharges and rates of exchange.'
+    context_ko: 'Apollo/Galileo에서는 운임계산 결과를 (Stored) Linear Fare Quote(*LF)로 표시하며, 운임분기점·NUC 금액·서차지·환율을 담는다.'
+    relationship: same
+  - provider: Amadeus
+    term: Fare calculation line
+    context: 'Amadeus presents the constructed fare as the fare calculation line, listing each fare element, pricing unit, surcharges, global indicator, NUC total and conversion.'
+    context_ko: 'Amadeus는 운임계산 결과를 fare calculation line으로 표시하며, 각 운임요소·pricing unit·서차지·글로벌 인디케이터·NUC 합계·환산을 나열한다.'
+    relationship: same
 relationships:
   - type: child
     targetTerm: Fare Component
@@ -67,6 +78,13 @@ Under IATA fare construction principles, a journey is divided into pricing units
 IATA 운임 산출 원칙에 따라 여정은 여러 pricing unit으로 나뉘고, 각 pricing unit은 하나 이상의 fare component(운임과 그 운임이 적용되는 비행 구간)로 구성된다. 운임은 현지 통화와 그에 상응하는 NUC 금액으로 공시되며, 서로 다른 통화의 운임을 합산할 수 있도록 모든 산출 연산은 NUC로 수행한 뒤, IATA Rate of Exchange(ROE)를 사용해 NUC 합계를 개시국 통화로 환산한다. 산출에는 공시 through-fare를 쓰거나, add-on으로 조합한 constructed fare(예: 국내 add-on + 국제 운임)를 쓸 수 있다. 마일리지 기반 점검(Maximum Permitted Mileage 대 Ticketed Point Mileage, 마일리지 할증 포함)과 routing 기반 유효성, 그리고 최저운임 점검을 통해 산출 금액의 유효성을 확보한다. 현대 pricing 엔진이 이를 자동화하지만, ATPCO 파일링 운임과 함께 NUC/ROE 체계는 여전히 유지된다.
 
 **Aliases:** `Fare Calculation`, `Pricing`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Travelport | `Linear Fare / Stored Linear Fare Quote (*LF)` | same | In Apollo/Galileo the constructed fare result is shown as the (Stored) Linear Fare Quote (*LF), carrying the fare-break points, NUC amounts, surcharges and rates of exchange. |
+| Amadeus | `Fare calculation line` | same | Amadeus presents the constructed fare as the fare calculation line, listing each fare element, pricing unit, surcharges, global indicator, NUC total and conversion. |
 
 # Related
 - [Fare Component](/air/air-shop/fare-component.md) — child

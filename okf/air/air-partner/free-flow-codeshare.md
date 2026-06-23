@@ -19,6 +19,12 @@ aliases:
   - Free Flow Codeshare
   - Free Sale Codeshare
   - Free-Flow Agreement
+providerTerms:
+  - provider: Amadeus
+    term: Free-sale code-share
+    context: 'Amadeus and GDS usage refers to free-flow codeshare as free-sale, where the marketing carrier sells against the operating carrier''s real-time availability rather than from a pre-allocated leased block.'
+    context_ko: '아마데우스 및 GDS 관행에서 프리플로 공동운항은 free-sale로 불리며, 판매 항공사가 사전 할당된 리스드 블록이 아니라 운항 항공사의 실시간 가용성에 기반해 판매한다.'
+    relationship: same
 relationships:
   - type: parent
     targetTerm: Codeshare
@@ -62,6 +68,12 @@ Under a free-flow (also called free-sale) codeshare, the marketing carrier does 
 프리플로(free-sale라고도 함) 공동운항에서 마케팅 항공사는 보장 좌석 수를 약정하거나 그에 대해 비용을 지불하지 않는다. 대신 예약 클래스(booking class)별로 운항사의 가용성을 실시간 조회하여 좌석이 열려 있을 때만 예약하므로, 운항사가 재고 통제권을 온전히 유지하고 빈 좌석 위험을 부담한다. 이는 마케팅사가 고정 좌석 할당량을 받아 스스로 통제·가격 책정하고 판매 위험을 떠안는 블록 스페이스 협정(block space agreement)과 대조된다. 프리플로는 파트너들이 블록 구매라는 상업적 약정 없이 폭넓은 네트워크 커버리지와 공동운항 확장성을 원할 때 선호되며, 다수의 동맹 및 양자 공동운항 관계의 토대가 된다.
 
 **Aliases:** `Free Flow Codeshare`, `Free Sale Codeshare`, `Free-Flow Agreement`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Amadeus | `Free-sale code-share` | same | Amadeus and GDS usage refers to free-flow codeshare as free-sale, where the marketing carrier sells against the operating carrier's real-time availability rather than from a pre-allocated leased block. |
 
 # Related
 - [Codeshare](/air/air-partner/codeshare.md) — parent

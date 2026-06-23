@@ -20,6 +20,17 @@ standardBody: IATA
 aliases:
   - IATA CO2 Connect
   - CO2 Connect
+providerTerms:
+  - provider: Google / Travalyst
+    term: Travel Impact Model (TIM)
+    context: 'Open per-passenger flight CO2e methodology (EEA Tier 3 based, well-to-wake) shown via Travalyst in Google Flights, Skyscanner, Booking.com, Expedia and Sabre'
+    context_ko: 'EEA Tier3 기반 well-to-wake 승객당 항공 CO2e 산정 모델로, Travalyst를 통해 Google Flights·Skyscanner·Booking.com·Expedia·Sabre에 표시'
+    relationship: related
+  - provider: Amadeus
+    term: Travel Impact Suite (TIM integration)
+    context: Amadeus suite integrating Travalyst's Travel Impact Model to surface per-passenger flight emissions in distribution
+    context_ko: 유통 단계에서 승객당 항공 배출량을 표시하기 위해 Travalyst의 Travel Impact Model을 통합한 Amadeus 솔루션 묶음
+    relationship: related
 relationships:
   - type: contrasts
     targetTerm: ICAO Carbon Emissions Calculator (ICEC)
@@ -60,6 +71,13 @@ Developed with an airline working group and validated with aircraft manufacturer
 항공사 작업그룹과 함께 개발되고 항공기 제작사가 검증한 RP 1726은 연료 측정, 승객 대 화물 CO2 배분, 객실 등급 승수를 처리하는 방식을 규정한다. IATA CO2 Connect은 전 세계 운항 중인 여객 기단의 대다수를 포괄하는 실제 연료 소모 데이터를 활용하여, 판매 시점에 일관되고 항공사 데이터에 근거한 수치가 필요한 판매자를 위한 사실상의 유통 채널 배출 표준이 되고 있다.
 
 **Aliases:** `IATA CO2 Connect`, `CO2 Connect`
+
+# Provider & standard equivalents
+
+| Provider | Term | Relationship | Context |
+| --- | --- | --- | --- |
+| Google / Travalyst | `Travel Impact Model (TIM)` | related | Open per-passenger flight CO2e methodology (EEA Tier 3 based, well-to-wake) shown via Travalyst in Google Flights, Skyscanner, Booking.com, Expedia and Sabre |
+| Amadeus | `Travel Impact Suite (TIM integration)` | related | Amadeus suite integrating Travalyst's Travel Impact Model to surface per-passenger flight emissions in distribution |
 
 # Related
 - [ICAO Carbon Emissions Calculator (ICEC)](/common/sustainability/icao-carbon-emissions-calculator-icec.md) — contrasts
