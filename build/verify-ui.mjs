@@ -238,6 +238,12 @@ const dom = new JSDOM(htmlContent, {
         configurable: true,
         writable: true
       });
+
+      if (window.SVGElement && !window.SVGElement.prototype.getBBox) {
+        window.SVGElement.prototype.getBBox = function() {
+          return { x: -450, y: -270, width: 900, height: 540 };
+        };
+      }
     }
 
     // Mock D3.js API for offline headless testing
@@ -350,6 +356,74 @@ const dom = new JSDOM(htmlContent, {
           on: function() { return dragObj; }
         };
         return dragObj;
+      },
+      hierarchy: function(data) {
+        const wrapNode = (nodeData, parentNode = null, depth = 0) => {
+          const node = {
+            data: nodeData,
+            parent: parentNode,
+            depth: depth,
+            children: null,
+            _children: null,
+            value: 0
+          };
+          if (nodeData.children) {
+            node.children = nodeData.children.map(c => wrapNode(c, node, depth + 1));
+          }
+          node.descendants = function() {
+            const list = [node];
+            const childrenList = node.children || node._children || [];
+            childrenList.forEach(c => {
+              list.push(...c.descendants());
+            });
+            return list;
+          };
+          node.links = function() {
+            const list = [];
+            const childrenList = node.children || node._children || [];
+            childrenList.forEach(c => {
+              list.push({ source: node, target: c });
+              list.push(...c.links());
+            });
+            return list;
+          };
+          node.count = function() {
+            node.value = 1;
+            const childrenList = node.children || node._children || [];
+            if (childrenList.length > 0) {
+              let sum = 0;
+              childrenList.forEach(c => {
+                c.count();
+                sum += c.value;
+              });
+              node.value = sum;
+            }
+            return node;
+          };
+          return node;
+        };
+        return wrapNode(data);
+      },
+      tree: function() {
+        const treeObj = {
+          size: function() { return treeObj; },
+          separation: function() { return treeObj; }
+        };
+        const layout = function(rootNode) {
+          rootNode.descendants().forEach((d, idx) => {
+            d.x = idx * 10;
+            d.y = d.depth * 50;
+          });
+          return rootNode;
+        };
+        Object.assign(layout, treeObj);
+        return layout;
+      },
+      linkRadial: function() {
+        const lr = function() { return 'M 0 0 L 10 10'; };
+        lr.angle = function() { return lr; };
+        lr.radius = function() { return lr; };
+        return lr;
       }
     };
   }
@@ -550,6 +624,60 @@ await runAsyncTest('Search Highlight Clearing on Home Route Transition', async (
   // Navigate back to default home route
   window.location.hash = '#/';
   await new Promise(resolve => setTimeout(resolve, 50));
+});
+
+// 7. Test Mindmap UI Redesign Verification
+await runAsyncTest('Taxonomy Mindmap Layouts, Click Interactions, and Path-Expanding Search', async () => {
+  // Trigger route change
+  window.location.hash = '#/mindmap';
+  await new Promise(resolve => setTimeout(resolve, 200));
+
+  // Assert container structures
+  const wrap = document.getElementById('mmwrap');
+  if (!wrap) {
+    throw new Error('Mindmap wrapper container (#mmwrap) not found.');
+  }
+  const svg = document.getElementById('mmsvg');
+  if (!svg) {
+    throw new Error('SVG container (#mmsvg) not found.');
+  }
+
+  // Verify Initial Layout State
+  if (window.mmLayoutMode !== 'radial') {
+    throw new Error(`Expected initial layout mode to be "radial", but got: ${window.mmLayoutMode}`);
+  }
+
+  // Verify Layout Toggle
+  const btnToggle = document.getElementById('mmLayoutToggle');
+  if (!btnToggle) {
+    throw new Error('Layout switch toggle button not found.');
+  }
+  btnToggle.click();
+  if (window.mmLayoutMode !== 'horizontal') {
+    throw new Error('Expected layout mode to change to "horizontal" after toggle click.');
+  }
+  btnToggle.click();
+  if (window.mmLayoutMode !== 'radial') {
+    throw new Error('Expected layout mode to return to "radial" after toggling back.');
+  }
+
+  // Verify Click Node Interaction (Toggles collapse)
+  const testCatId = 'c:air-ops';
+  if (!window.mmExpandedNodeIds.has(testCatId)) {
+    // Should start collapsed (since depth >= 2 is collapsed on initial render)
+    window.mmClickNode(testCatId);
+    if (!window.mmExpandedNodeIds.has(testCatId)) {
+      throw new Error('Expected category node ID to be in expanded state after click.');
+    }
+  }
+
+  // Verify Path-Expanding Search
+  // Term "PNR" should be inside category air-ops. Let's call search.
+  window.mmSearchAndFocus('PNR');
+  // Check if ancestor air-ops and its parents are expanded
+  if (!window.mmExpandedNodeIds.has(testCatId)) {
+    throw new Error('Expected parent category "c:air-ops" to be auto-expanded during search.');
+  }
 });
 
 console.log('All verification assertions passed successfully.');

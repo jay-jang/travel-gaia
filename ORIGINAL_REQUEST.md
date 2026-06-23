@@ -93,3 +93,48 @@ Integrity mode: development
 - [ ] `node build/build.mjs` 명령어로 컴파일했을 때 컴파일 에러 없이 `index.html`이 갱신된다.
 - [ ] `node build/verify-ui.mjs` 실행 시 클래스룸 개편에 따른 엘리먼트/동작성 테스트가 모두 PASS한다.
 - [ ] 생성된 `index.html`은 다른 네트워크 연결이나 백엔드 서버 없이 단독 파일로 로컬 브라우저에서 완전하게 실행된다.
+
+## Follow-up — 2026-06-23T02:09:28Z
+
+Redesign the taxonomy Mindmap UI in Travel Gaia into a highly interactive, modern, and visually premium exploration interface. The new UI will feature smooth transitions, dynamic collapsible layouts, path-expanding search with auto-focus, layout switching, inline details, and bilingual support.
+
+Working directory: /home/ubuntu/workspace/travel-gaia
+Integrity mode: benchmark
+
+## Requirements
+
+### R1. Multi-Layout Mindmap Visualization
+- Support toggling between a Radial Tree (circular layout) and a Horizontal Tree/Mindmap (left-to-right hierarchical tree) using D3.js.
+- Ensure smooth morphing transition animations between layout switches and node expand/collapse actions.
+- Provide interactive controls to zoom in/out, fit/reset the canvas, and an interactive minimap overlay displaying the entire tree overview.
+
+### R2. Rich Node Customization & Collapsible Interactions
+- Style nodes as card-like bubbles/boxes with colored borders mapped to their respective Vertical/Category.
+- Categories/subcategories must show term counts, and term nodes should have distinct sizing and visual weights.
+- Click interactions: Clicking subcategory or vertical nodes collapses/expands descendants recursively. Hovering shows tooltips with translation (KO/EN), definition, and connections count.
+
+### R3. Path-Expanding Search & Inline Detail Drawer
+- Add a search input on the mindmap view. Searching auto-expands parent paths to matching term nodes, pans/zooms the canvas to center the target node, and flashes/highlights it.
+- Clicking a term node opens an inline sidebar/drawer on the mindmap page showing its details (definition, category, vertical, links/relationships) instead of forcing full page navigation.
+
+### R4. Verification and Build Integrity
+- The build pipeline (`node build/build.mjs`) must run successfully to produce the standalone `index.html` file.
+- The UI test suite (`node build/verify-ui.mjs`) must pass. You must add programmatic JSDOM verification tests for mindmap state (e.g., verifying rendering, layout switching capability, expand/collapse toggling, and search focus path expansion).
+
+## Acceptance Criteria
+
+### Build & Test
+- [ ] Running `node build/build.mjs` compiles without errors and generates `index.html`.
+- [ ] Running `node build/verify-ui.mjs` executes and passes all tests (including new mindmap verification tests).
+
+### Interactive Mindmap Features
+- [ ] Render the taxonomy hierarchy (Vertical -> Category -> Term) in the SVG.
+- [ ] Layout toggles between Radial and Horizontal Mindmap with smooth D3 transitions.
+- [ ] Nodes are styled as rich visual cards/bubbles with appropriate colors, borders, and term counts.
+- [ ] Zoom, pan, reset, and minimap controls are fully operational.
+
+### Search, Expansion, and Inline Details
+- [ ] Search input highlights, auto-expands the paths of matched terms, and centers the view on the matched node.
+- [ ] Clicking nodes correctly collapses/expands children recursively.
+- [ ] Clicking a term node displays its details in an inline drawer/sidebar within the mindmap page.
+- [ ] The entire UI respects `LANG` global variable for KO/EN translations dynamically.
