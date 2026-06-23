@@ -592,6 +592,10 @@ footer{color:var(--faint);font-family:var(--sans);font-size:.76rem;text-align:ce
   const RAW = JSON.parse(document.getElementById('glossary-data').textContent);
   window.GLOSSARY_DATA = RAW;
   const META = RAW.meta||{}, CATS = RAW.categories||[], ENTRIES = RAW.entries||[];
+  const VERTICALS = RAW.verticals||[];
+  const vertById = new Map(VERTICALS.map(v=>[v.id,v]));
+  const vertName = v => LANG==='ko' ? (v.short||v.title) : (v.title||v.short);
+  const catsByVert = new Map(VERTICALS.map(v=>[v.id, CATS.filter(c=>c.vertical===v.id)]));
   const byId = new Map(ENTRIES.map(e=>[e.id,e]));
   const catById = new Map(CATS.map(c=>[c.id,c]));
   const entriesByCat = new Map(CATS.map(c=>[c.id,[]]));
@@ -713,9 +717,18 @@ footer{color:var(--faint);font-family:var(--sans);font-size:.76rem;text-align:ce
       <a class="cat-link${h2.startsWith('#/classroom')?' active':''}" href="#/classroom">${t('classroom')}</a>
       <a class="cat-link${h2.startsWith('#/confusables')?' active':''}" href="#/confusables">${LANG==='ko'?'⚖ 혼동 용어':'⚖ Confusables'}</a>
       <a class="cat-link${h2.startsWith('#/matrix')?' active':''}" href="#/matrix">${LANG==='ko'?'▦ 공급자 매트릭스':'▦ Provider matrix'}</a>
-      <div class="nav-title">${esc(t('cats'))} (${CATS.length})</div>`;
-    CATS.forEach(c=>{ const n=(entriesByCat.get(c.id)||[]).length;
-      h+=`<a class="cat-link${c.id===activeCat?' active':''}" href="#/category/${c.id}"><span>${dot(c)} ${esc(catName(c))}</span><span class="cnt">${n}</span></a>`; });
+      <div class="nav-title">${LANG==='ko'?'버티컬':'Verticals'} (${VERTICALS.length})</div>`;
+    if(VERTICALS.length){
+      VERTICALS.forEach(v=>{ const vcats=catsByVert.get(v.id)||[]; if(!vcats.length) return;
+        const vn=vcats.reduce((a,c)=>a+(entriesByCat.get(c.id)||[]).length,0);
+        h+=`<a class="cat-link${h2==='#/vertical/'+v.id?' active':''}" href="#/vertical/${v.id}" style="font-weight:700"><span><span class="dot" style="background:${v.color||'var(--accent)'}"></span> ${esc(vertName(v))}</span><span class="cnt">${vn}</span></a>`;
+        vcats.forEach(c=>{ const n=(entriesByCat.get(c.id)||[]).length;
+          h+=`<a class="cat-link${c.id===activeCat?' active':''}" href="#/category/${c.id}" style="padding-left:24px;font-size:.82rem"><span>${esc(catName(c))}</span><span class="cnt">${n}</span></a>`; });
+      });
+    } else {
+      CATS.forEach(c=>{ const n=(entriesByCat.get(c.id)||[]).length;
+        h+=`<a class="cat-link${c.id===activeCat?' active':''}" href="#/category/${c.id}"><span>${dot(c)} ${esc(catName(c))}</span><span class="cnt">${n}</span></a>`; });
+    }
     $('#sidebar').innerHTML=h; }
 
   function statusBadge(s){ if(!s) return ''; return `<span class="badge st-${s}">● ${esc((t('ST')[s])||s)}</span>`; }
@@ -3195,6 +3208,17 @@ footer{color:var(--faint);font-family:var(--sans);font-size:.76rem;text-align:ce
     else { h+=`<div style="display:grid;grid-template-columns:repeat(${es.length},minmax(0,1fr));gap:16px;align-items:start">${es.map(compareCard).join('')}</div>`; }
     main.innerHTML=h; renderSidebar(null); main.focus(); document.title='Compare — Travel Gaia'; }
 
+  /* ---- vertical landing (big grouping -> its subcategories) ---- */
+  function renderVertical(id){ showGraphDashboard(false); const v=vertById.get(id);
+    if(!v){ main.innerHTML=`<div class="empty">${esc(t('notFound'))}</div>`; renderSidebar(null); return; }
+    const vcats=(catsByVert.get(id)||[]); const total=vcats.reduce((a,c)=>a+(entriesByCat.get(c.id)||[]).length,0);
+    let h=pageHead(vertName(v), LANG==='ko'?`${vcats.length}개 세분류 · ${total}개 표제어`:`${vcats.length} subcategories · ${total} terms`);
+    h+=`<p style="color:var(--muted);max-width:62ch;margin:-2px 0 18px;font-family:var(--serif)">${esc(LANG==='ko'?(v.desc||''):(v.desc_en||v.desc||''))}</p><div class="cards">`;
+    vcats.forEach(c=>{ const list=(entriesByCat.get(c.id)||[]); const n=list.length;
+      const samples=list.slice(0,6).map(e=>`<a href="#/term/${e.id}">${esc(e.term)}</a>`).join('<span class="sep">·</span>');
+      h+=`<div class="card" style="--cc:${c.color}"><a class="ct" href="#/category/${c.id}"><span class="dot" style="background:${c.color}"></span> ${esc(catName(c))}<span class="cn">${n}</span></a><div class="cd">${esc(catDesc(c))}</div><div class="dir-terms">${samples}${n>6?`<span class="sep">·</span><a class="more" href="#/category/${c.id}">+${n-6}</a>`:''}</div></div>`; });
+    h+=`</div>`; main.innerHTML=h; renderSidebar(null); main.focus(); document.title=vertName(v)+' — Travel Gaia'; }
+
   /* ---- #5 machine-readable export (from inlined data; offline) ---- */
   window.tgExport=function(kind){ const d=window.GLOSSARY_DATA||{entries:[]}; let blob,name;
     if(kind==='csv'){ const cols=['id','term','term_ko','vertical','category','conceptType','status','definition']; const q=v=>`"${String(v==null?'':v).replace(/"/g,'""')}"`;
@@ -3207,6 +3231,7 @@ footer{color:var(--faint);font-family:var(--sans);font-size:.76rem;text-align:ce
     if(hash.startsWith('#/confusables')){ if($('#q'))$('#q').value=''; return renderConfusables(); }
     if(hash.startsWith('#/matrix')){ if($('#q'))$('#q').value=''; return renderMatrix(); }
     if(hash.startsWith('#/compare/')){ if($('#q'))$('#q').value=''; return renderCompare(decodeURIComponent(hash.slice(10))); }
+    if(hash.startsWith('#/vertical/')){ if($('#q'))$('#q').value=''; return renderVertical(decodeURIComponent(hash.slice(11))); }
     if(hash==='#/index'||hash.startsWith('#/index')){ showGraphDashboard(false); document.title='Index — Travel Gaia'; if($('#q'))$('#q').value=''; return renderIndex(); }
     if(hash==='#/classroom'||hash.startsWith('#/classroom')){ showGraphDashboard(false); document.title='Classroom — Travel Gaia'; if($('#q'))$('#q').value=''; return renderClassroom(); }
     if(hash==='#/graph'||hash.startsWith('#/graph?')){ showGraphDashboard(true); document.title='Knowledge Graph — Travel Gaia'; if($('#q'))$('#q').value=''; return renderGraphDashboard(); }
