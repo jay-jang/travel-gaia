@@ -54,11 +54,15 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/services/data/environment-sustainability/co2-connect/'
+    tier: association
   - org: IATA
     name: Passenger CO2 Calculation Methodology (Recommended Practice 1726)
     version: RP 1726
     section: ''
     url: 'https://www.iata.org/contentassets/139d686fa8f34c4ba7a41f7ba3e026e7/iata-rp-1726_passenger-co2.pdf'
+    tier: association
+    verifyQuote: IATA RECOMMENDED PRACTICE - RP 1726
+    verified: true
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 24a18 18 0 0 1 36 0"/><path d="M24 24l9-6"/><circle cx="24" cy="24" r="2.5" fill="currentColor"/><path d="M10 24h-3M41 24h-3M24 9V6"/><path d="M14 36a8 8 0 0 0 0 4M20 38h8"/></svg>
 ---
 

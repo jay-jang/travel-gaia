@@ -47,11 +47,13 @@ sources:
     version: ''
     section: ''
     url: 'https://guides.developer.iata.org/docs/21-1_ImplementationGuide.pdf'
+    tier: standard-body
   - org: IATA
     name: NDC Technical FAQ (Disruption Notifications)
     version: ''
     section: ''
     url: ''
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 8a9 9 0 0 1 9 9c0 8 4 11 4 11H11s4-3 4-11a9 9 0 0 1 9-9z"/><path d="M21 36a3 3 0 0 0 6 0"/><circle cx="35" cy="12" r="5" fill="currentColor" stroke="none"/></svg>
 ---
 

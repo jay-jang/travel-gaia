@@ -59,9 +59,12 @@ distinctions:
 sources:
   - name: Standard Schedules Information Manual (SSIM)
     org: IATA
-    version: ''
+    version: 36th Edition (2026)
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/standard-schedules-information/'
+    tier: association
+    verifyQuote: 'Significant Changes and Amendments to the 36th edition (2026) of the Standard Schedules Information Manual (SSIM) include:'
+    verified: true
 icon: '<svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="27" r="13"/><polyline points="24,20 24,27 29,30"/><path d="M9 9 H17 M17 9 L14 6 M17 9 L14 12"/><path d="M39 14 H31 M31 14 L34 11 M31 14 L34 17"/></svg>'
 ---
 
@@ -95,4 +98,4 @@ MCT 값은 공항과 항공사가 공시하고 IATA가 표준 참조 데이터�
 - **MCT** vs [Missed Connection](/common/insurance/missed-connection.md) — Minimum Connecting Time (MCT) is the airline-published time needed to make a connection; if a delay defeats the MCT and the connection is missed, a Missed Connection insurance benefit may reimburse the resulting catch-up costs.
 
 # Citations
-[1] [IATA — Standard Schedules Information Manual (SSIM)](https://www.iata.org/en/publications/manuals/standard-schedules-information/)
+[1] [IATA — Standard Schedules Information Manual (SSIM) — 36th Edition (2026)](https://www.iata.org/en/publications/manuals/standard-schedules-information/)

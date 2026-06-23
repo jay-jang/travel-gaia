@@ -52,11 +52,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.atpco.net/resource/optional-services-industry-sub-codes'
+    tier: vendor-doc
   - org: ARC
     name: Electronic Miscellaneous Document (EMD) - RFIC/RFISC usage
     version: ''
     section: ''
     url: 'https://www2.arccorp.com/support-training/electronic-miscellaneous-document/'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="14" width="12" height="20" rx="2"/><path d="M11 20h4M11 24h4M11 28h4"/><rect x="29" y="14" width="12" height="20" rx="2"/><path d="M33 20h4M33 24h4M33 28h4"/><path d="M19 24h10"/><circle cx="24" cy="24" r="1.5" fill="currentColor"/></svg>
 ---
 

@@ -47,14 +47,18 @@ distinctions:
 sources:
   - org: IATA
     name: BSP Data Interchange Specifications Handbook (DISH)
-    version: ''
+    version: '23'
     section: ''
     url: 'https://www.iata.org/en/publications/bspdish/'
+    tier: association
+    verifyQuote: DISH Revision 23 replaces all previous Revisions and is presented as a mandatory Revision.
+    verified: true
   - org: IATA
     name: Billing and Settlement Plan (BSP)
     version: ''
     section: ''
     url: 'https://www.iata.org/en/services/finance/bsp/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6h16l8 8v28H12z"/><path d="M28 6v8h8"/><path d="M17 24h14M17 30h14M17 36h9"/></svg>
 ---
 
@@ -85,5 +89,5 @@ BSP Data Interchange Specifications Handbook(DISH)이 정의하는 HOT은 판매
 - **HOT File** vs [BSP](/common/pay/bsp.md) — The BSP is the settlement plan and operator; the HOT is the data file the BSP hands off to airlines so they can account for and settle the period's transactions.
 
 # Citations
-[1] [IATA — BSP Data Interchange Specifications Handbook (DISH)](https://www.iata.org/en/publications/bspdish/)
+[1] [IATA — BSP Data Interchange Specifications Handbook (DISH) — 23](https://www.iata.org/en/publications/bspdish/)
 [2] [IATA — Billing and Settlement Plan (BSP)](https://www.iata.org/en/services/finance/bsp/)

@@ -48,11 +48,13 @@ sources:
     version: ''
     section: ''
     url: 'https://rivero.tech/guide-chargeback-reason-codes'
+    tier: secondary
   - org: Chargebacks911
     name: 'Chargeback Reason Codes: The Ultimate Guide'
     version: ''
     section: ''
     url: 'https://chargebacks911.com/chargeback-reason-codes/'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="12" width="34" height="24" rx="3"/><line x1="7" y1="19" x2="41" y2="19"/><path d="M13 27h6"/><path d="M13 31h10"/><circle cx="32" cy="29" r="2"/><path d="M32 25.5V27"/></svg>
 ---
 

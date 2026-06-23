@@ -62,11 +62,15 @@ sources:
     version: 2021/782
     section: ''
     url: 'https://eur-lex.europa.eu/eli/reg/2021/782/oj/eng'
+    tier: regulation
+    verifyQuote: Regulation (EU) 2021/782 of the European Parliament and of the Council of 29 April 2021 on rail passengers' rights and obligations (recast)
+    verified: true
   - org: European Commission
     name: Rail passenger rights — Mobility and Transport
     version: ''
     section: ''
     url: 'https://transport.ec.europa.eu/transport-themes/passenger-rights/rail-passenger-rights_en'
+    tier: regulator-guidance
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="16"/><circle cx="24" cy="14" r="2" fill="currentColor"/><path d="M24 14v0M16 24c0-3 3-5 8-5s8 2 8 5"/><path d="M18 33l3-7M30 33l-3-7"/><path d="M24 8v3M24 37v3M8 24h3M37 24h3"/></svg>
 ---
 

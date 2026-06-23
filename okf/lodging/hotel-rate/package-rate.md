@@ -46,11 +46,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.xotels.com/en/glossary/package-rate'
+    tier: secondary
   - org: Oracle
     name: OPERA Help — Rate Codes (package elements)
     version: ''
     section: Rate Management
     url: 'https://docs.oracle.com/cd/E98457_01/opera_5_6_core_help/rate_codes.htm'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M8 18l16-8 16 8-16 8z"/><path d="M8 18v14l16 8 16-8V18"/><path d="M24 26v14M16 14l16 8"/></svg>
 ---
 

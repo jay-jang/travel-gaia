@@ -67,11 +67,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/publications/directories/code-search/'
+    tier: association
   - name: 'Doc 8585 — Designators for Aircraft Operating Agencies, Aeronautical Authorities and Services'
     org: ICAO
     version: ''
     section: ''
     url: 'https://www.icao.int/operational-safety/Designators-and-indicators'
+    tier: standard-body
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14h22a6 6 0 0 1 0 12H10z"/><path d="M32 14l8-4M32 26l8 4"/><path d="M15 20h2M21 20h2"/></svg>
 ---
 

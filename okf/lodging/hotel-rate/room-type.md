@@ -60,11 +60,13 @@ sources:
     version: ''
     section: ''
     url: 'https://opentravel.org/download-specs/'
+    tier: association
   - name: HTNG messaging specifications
     org: HTNG
     version: ''
     section: ''
     url: 'https://www.ahla.com/htng-technical-specifications'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18v18"/><path d="M6 24h36v12"/><path d="M42 30v6"/><path d="M6 24v-6h22a8 8 0 0 1 8 8"/><path d="M12 22a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3"/></svg>
 ---
 

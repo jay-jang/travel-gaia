@@ -43,6 +43,7 @@ sources:
     version: ''
     section: ''
     url: ''
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 7l3.5 7.5L35 16l-5.5 5.5L31 29l-7-3.8L17 29l1.5-7.5L13 16l7.5-1.5z"/><path d="M38 31c4 4 4 9 0 13M10 31c-4 4-4 9 0 13"/></svg>
 ---
 

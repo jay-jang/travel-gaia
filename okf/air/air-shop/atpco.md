@@ -48,6 +48,7 @@ sources:
     version: ''
     section: ''
     url: 'https://www.atpco.net/'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="24" cy="12" rx="13" ry="5"/><path d="M11 12v10c0 2.8 5.8 5 13 5s13-2.2 13-5V12"/><path d="M11 22v10c0 2.8 5.8 5 13 5s13-2.2 13-5V22"/></svg>
 ---
 

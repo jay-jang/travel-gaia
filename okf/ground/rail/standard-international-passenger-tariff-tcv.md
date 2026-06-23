@@ -58,11 +58,13 @@ sources:
     version: ''
     section: ''
     url: 'https://uic.org/passenger/passenger-services-group/'
+    tier: association
   - name: Products — tariff information (TCV)
     org: UIC
     version: ''
     section: ''
     url: 'https://shop.uic.org/en/7-10-international-tariffs-compilation-application'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="16"/><path d="M8 24h32"/><path d="M24 8a22 22 0 0 1 0 32M24 8a22 22 0 0 0 0 32"/><circle cx="14" cy="15" r="2" fill="currentColor"/><circle cx="34" cy="33" r="2" fill="currentColor"/></svg>
 ---
 

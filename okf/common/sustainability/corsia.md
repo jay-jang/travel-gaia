@@ -48,14 +48,18 @@ distinctions:
 sources:
   - org: ICAO
     name: Carbon Offsetting and Reduction Scheme for International Aviation (CORSIA) FAQs
-    version: Apr 2024
+    version: updated as of April 2024
     section: ''
     url: 'https://www.icao.int/sites/default/files/environmental-protection/CORSIA/CORSIA_FAQs_Apr2024.pdf'
+    tier: standard-body
+    verifyQuote: Frequently Asked Questions (updated as of April 2024)
+    verified: true
   - org: IATA
     name: Offsetting CO2 Emissions with CORSIA
     version: ''
     section: ''
     url: 'https://www.iata.org/en/programs/sustainability/corsia/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="16"/><path d="M8 24h32M24 8a22 22 0 0 1 0 32M24 8a22 22 0 0 0 0 32"/><path d="M30 12l-6-3-6 3"/><path d="M18 30l3 3 8-9"/></svg>
 ---
 
@@ -83,5 +87,5 @@ CORSIA는 단계적으로 시행된다. 자발적 참여인 시범단계(2021-20
 - **CORSIA (Carbon Offsetting and Reduction Scheme for International Aviation)** vs [GHG Protocol Scope 3 (Business Travel)](/common/sustainability/ghg-protocol-scope-3-business-travel.md) — Scope 3 Category 6 is a corporate carbon-accounting standard for the buyer/traveler's own value-chain inventory; CORSIA is an operator-side regulatory offsetting obligation on airlines — different parties and purposes.
 
 # Citations
-[1] [ICAO — Carbon Offsetting and Reduction Scheme for International Aviation (CORSIA) FAQs — Apr 2024](https://www.icao.int/sites/default/files/environmental-protection/CORSIA/CORSIA_FAQs_Apr2024.pdf)
+[1] [ICAO — Carbon Offsetting and Reduction Scheme for International Aviation (CORSIA) FAQs — updated as of April 2024](https://www.icao.int/sites/default/files/environmental-protection/CORSIA/CORSIA_FAQs_Apr2024.pdf)
 [2] [IATA — Offsetting CO2 Emissions with CORSIA](https://www.iata.org/en/programs/sustainability/corsia/)

@@ -61,11 +61,13 @@ sources:
     version: ''
     section: ''
     url: 'https://support.travelport.com/webhelp/Smartpoint1G1V/Content/Air/Ticketing/TicketAssistant/TicketAssistant_VolChange_ExchTkt-AddCollect-ARC.htm'
+    tier: vendor-doc
   - org: Amadeus
     name: How to exchange an e-ticket (manual reissue) - NO ADC
     version: ''
     section: ''
     url: 'https://servicehub.amadeus.com/c/portal/view-solution/856106/'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="12" width="20" height="14" rx="2"/><path d="M12 19h12"/><circle cx="34" cy="30" r="9"/><path d="M34 26v8M30 30h8"/></svg>
 ---
 

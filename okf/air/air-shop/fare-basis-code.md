@@ -68,11 +68,13 @@ sources:
     version: ''
     section: ''
     url: 'https://atpco.net/standards/'
+    tier: vendor-doc
   - name: IATA Ticketing Handbook / fare construction
     org: IATA
     version: ''
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/ticketing-handbook/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7H10a3 3 0 00-3 3v13a3 3 0 00.9 2.1l15 15a3 3 0 004.2 0l11-11a3 3 0 000-4.2l-15-15A3 3 0 0023 7z"/><circle cx="16" cy="16" r="2.5"/><line x1="21" y1="27" x2="27" y2="33"/><line x1="26" y1="22" x2="32" y2="28"/></svg>
 ---
 

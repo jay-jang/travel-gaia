@@ -38,9 +38,12 @@ distinctions:
 sources:
   - name: Standard Schedules Information Manual (SSIM)
     org: IATA
-    version: ''
+    version: 36th Edition (2026)
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/standard-schedules-information/'
+    tier: association
+    verifyQuote: 'Significant Changes and Amendments to the 36th edition (2026) of the Standard Schedules Information Manual (SSIM) include:'
+    verified: true
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="40" x2="42" y2="40"/><path d="M9 36 C16 16 32 16 39 24"/><path d="M33 12 L41 20 L32 24"/></svg>
 ---
 
@@ -64,4 +67,4 @@ leg은 항공기 노선의 운영상 실제를 나타내며, 스케줄 데이터
 - **Leg** vs [Origin & Destination](/air/air-shop/origin-destination.md) — A leg is a single nonstop flight operation; an O&D is the full market between true origin and destination, possibly spanning multiple legs.
 
 # Citations
-[1] [IATA — Standard Schedules Information Manual (SSIM)](https://www.iata.org/en/publications/manuals/standard-schedules-information/)
+[1] [IATA — Standard Schedules Information Manual (SSIM) — 36th Edition (2026)](https://www.iata.org/en/publications/manuals/standard-schedules-information/)

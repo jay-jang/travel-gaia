@@ -51,11 +51,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/standard-schedules-information/'
+    tier: association
   - name: DOT rules on disclosure of code-share arrangements
     org: U.S. Department of Transportation
     version: ''
     section: ''
     url: 'https://www.transportation.gov/airconsumer/codeshare-disclosure'
+    tier: regulator-guidance
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 26l14-3 6-9 3 1-3 9 9-2 3-3 3 1-2 5"/><circle cx="38" cy="36" r="7"/><path d="M38 32v4l3 2"/></svg>
 ---
 

@@ -52,16 +52,19 @@ sources:
     version: ''
     section: ''
     url: 'https://www.mews.com/en/blog/hotel-rack-rates'
+    tier: secondary
   - org: roomMaster (InnQuest)
     name: 'Hotel Rack Rate: Definition, Meaning & How It Works (2026)'
     version: ''
     section: ''
     url: 'https://www.roommaster.com/blog/hotel-rack-rate'
+    tier: secondary
   - org: AltexSoft
     name: Rack rate (Hospitality Glossary)
     version: ''
     section: ''
     url: 'https://www.altexsoft.com/glossary/rack-rate/'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="8" width="28" height="32" rx="2"/><line x1="16" y1="16" x2="32" y2="16"/><line x1="16" y1="24" x2="32" y2="24"/><line x1="16" y1="32" x2="26" y2="32"/><path d="M30 32l4 4 6-7"/></svg>
 ---
 

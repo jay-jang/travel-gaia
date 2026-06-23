@@ -70,11 +70,15 @@ sources:
     version: '2004'
     section: Article 8
     url: 'https://eur-lex.europa.eu/eli/reg/2004/261/oj/eng'
+    tier: regulation
+    verifyQuote: 'passengers shall be offered the choice between: (a) reimbursement within seven days... of the full cost of the ticket...; (b) re-routing... to their final destination at the earliest opportunity; or (c) re-routing... at a later date at the '
+    verified: true
   - org: UK Civil Aviation Authority
     name: Re-routing in accordance with Article 8 of Regulation (EU) 261/2004
     version: ''
     section: ''
     url: 'https://www.caa.co.uk/our-work/publications/documents/content/cap2155/'
+    tier: regulator-guidance
 icon: '<svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="24" r="3"/><circle cx="38" cy="12" r="3"/><circle cx="38" cy="36" r="3"/><path d="M13 24h8c3 0 4-2 6-5l4-6"/><path d="M13 24h8c3 0 4 2 6 5l4 6"/><polyline points="32,11 35,12 34,15"/><polyline points="32,37 35,36 34,33"/></svg>'
 ---
 

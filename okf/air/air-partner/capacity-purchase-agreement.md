@@ -50,11 +50,13 @@ sources:
     version: ''
     section: ''
     url: 'https://simpleflying.com/capacity-purchase-agreements-guide/'
+    tier: secondary
   - name: 'Flight schedules under partnership: the effects of capacity purchase agreements on airline schedule buffers'
     org: Journal of Air Transport Management
     version: ''
     section: ''
     url: 'https://www.sciencedirect.com/science/article/abs/pii/S0969699725001395'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22l13-3 6-8 3 1-3 8 9-2 3-3 2 1-1 5"/><rect x="30" y="30" width="14" height="12" rx="2"/><path d="M34 30v-3a3 3 0 0 1 6 0v3"/><path d="M37 34v4"/></svg>
 ---
 

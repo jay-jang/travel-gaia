@@ -47,11 +47,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/contentassets/6de4dce5f38b45ce82b0db42acd23d1c/iata-arm-index-factsheet.pdf'
+    tier: association
   - org: IATA
     name: Airline Retailing
     version: ''
     section: ''
     url: 'https://www.iata.org/en/programs/airline-distribution/retailing/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="40" x2="40" y2="40"/><rect x="10" y="28" width="7" height="12"/><rect x="20" y="20" width="7" height="20"/><rect x="30" y="12" width="7" height="28"/><path d="M10 24l11-9 8 4 9-11"/></svg>
 ---
 

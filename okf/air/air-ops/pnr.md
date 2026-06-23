@@ -102,14 +102,18 @@ distinctions:
 sources:
   - name: Passenger Services Conference Resolutions Manual (PSCRM)
     org: IATA
-    version: ''
+    version: 46th Edition (2026)
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
+    tier: association
+    verifyQuote: 'Significant Changes and Amendments to the 46th edition (2026) of the IATA Passenger Services Conference Resolution Manual include:'
+    verified: true
   - name: Amadeus Functional Documentation — PNR
     org: Amadeus
     version: ''
     section: ''
     url: ''
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="11" y="6" width="26" height="36" rx="3"/><line x1="16" y1="14" x2="32" y2="14"/><line x1="16" y1="20" x2="32" y2="20"/><line x1="16" y1="26" x2="28" y2="26"/><circle cx="29" cy="34" r="4.5"/><path d="M32.2 37.2 35 40"/></svg>
 ---
 
@@ -156,5 +160,5 @@ PNR은 흔히 'PRINT'로 요약되는 다섯 가지 필수 요소, 즉 Phone(연
 - **PNR** vs [Transitional Stored Ticket (TST)](/air/air-ticket/transitional-stored-ticket-tst.md) — The PNR holds the itinerary, passenger and contact data; the TST is a separate record attached to that PNR that holds the priced fare/tax/fare-calculation data needed to ticket it.
 
 # Citations
-[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
+[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM) — 46th Edition (2026)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
 [2] Amadeus — Amadeus Functional Documentation — PNR

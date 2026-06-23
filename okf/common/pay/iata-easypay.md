@@ -46,11 +46,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/services/finance/iata-easy-pay/'
+    tier: association
   - name: IATA EasyPay | NewGen ISS
     org: IATA
     version: ''
     section: ''
     url: 'https://newgeniss.iata.org/airlines/iata-easy-pay/'
+    tier: standard-body
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M8 14h30a4 4 0 0 1 4 4v18a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4V14a3 3 0 0 1 3-3h25"/><path d="M34 24h8v8h-8a4 4 0 0 1 0-8z"/><path d="M18 23l-4 6h6l-4 6"/></svg>
 ---
 

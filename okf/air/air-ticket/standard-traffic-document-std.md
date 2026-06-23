@@ -48,11 +48,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/contentassets/bfacf03f8e914960898e262df2777352/bsp-manual-for-agents.pdf'
+    tier: association
   - org: IATA
     name: BSP Standard Documents and Procedures (training course)
     version: ''
     section: ''
     url: 'https://www.iata.org/en/training/pages/bsp/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M18 7h14l8 8v22a3 3 0 0 1-3 3H18a3 3 0 0 1-3-3V10a3 3 0 0 1 3-3z"/><path d="M32 7v8h8"/><path d="M9 14v27a3 3 0 0 0 3 3h21"/><path d="M21 24h12M21 30h8"/></svg>
 ---
 

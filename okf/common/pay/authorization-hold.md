@@ -58,11 +58,13 @@ sources:
     version: ''
     section: ''
     url: 'https://docs.adyen.com/point-of-sale/pre-authorisation'
+    tier: vendor-doc
   - org: Chargeback Gurus
     name: Credit Card Authorization Hold - How and When to Use
     version: ''
     section: ''
     url: 'https://www.chargebackgurus.com/blog/credit-card-authorization-holds'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="14" width="28" height="18" rx="3"/><line x1="6" y1="20" x2="34" y2="20"/><rect x="30" y="26" width="12" height="9" rx="1.5"/><path d="M33 26v-2a3 3 0 0 1 6 0v2"/></svg>
 ---
 

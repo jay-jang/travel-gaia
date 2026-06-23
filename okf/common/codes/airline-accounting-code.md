@@ -59,11 +59,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/store/publications/manuals-standards-and-regulations/airline-coding-directory-acd__acd/'
+    tier: association
   - org: AltexSoft
     name: IATA Numbers and Codes Explained
     version: ''
     section: ''
     url: 'https://www.altexsoft.com/blog/iata-numbers-codes/'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="16" width="34" height="16" rx="3"/><path d="M14 22v4M14 22h2M14 26h2M14 24h2"/><path d="M22 22v4M26 22v4M22 22h4M22 24h4"/><path d="M31 22v4M35 22v4M31 22h4"/></svg>
 ---
 

@@ -43,11 +43,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.squaremouth.com/travel-insurance-benefits/trip-interruption'
+    tier: secondary
   - name: 'Travel insurance for trip cancellation, interruption, and more'
     org: Allianz Travel Insurance
     version: ''
     section: ''
     url: 'https://www.allianztravelinsurance.com/'
+    tier: secondary
 icon: '<svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6,30 16,30 20,18 26,38 30,30 42,30"/><line x1="24" y1="6" x2="24" y2="6"/><path d="M34 8 a10 10 0 1 1 -8 4"/><line x1="34" y1="4" x2="34" y2="12"/><line x1="34" y1="12" x2="40" y2="12"/></svg>'
 ---
 

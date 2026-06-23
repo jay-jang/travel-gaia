@@ -59,14 +59,18 @@ distinctions:
 sources:
   - org: IATA
     name: Passenger Services Conference Resolutions Manual (PSCRM) — electronic ticket / document numbering
-    version: ''
+    version: 46th edition (2026)
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
+    tier: association
+    verifyQuote: Significant Changes and Amendments to the 46th edition (2026) of the IATA Passenger Services Conference Resolution Manual
+    verified: true
   - org: AltexSoft
     name: IATA Numbers and Codes Explained
     version: ''
     section: ''
     url: 'https://www.altexsoft.com/blog/iata-numbers-codes/'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 14h36v8a3 3 0 000 6v6H6v-6a3 3 0 000-6z"/><path d="M24 14v26" stroke-dasharray="2 3"/><path d="M11 22h7M11 27h5"/><path d="M30 22h7M30 27h7M30 32h4"/></svg>
 ---
 
@@ -102,5 +106,5 @@ Each flight coupon of an e-ticket is addressed by the document number plus a cou
 - **Ticket Number** vs [License Plate Number](/common/codes/license-plate-number.md) — A ticket number identifies the passenger's transportation document; the LPN identifies the physical bag and is recorded against the passenger's record but is not the ticket.
 
 # Citations
-[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM) — electronic ticket / document numbering](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
+[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM) — electronic ticket / document numbering — 46th edition (2026)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
 [2] [AltexSoft — IATA Numbers and Codes Explained](https://www.altexsoft.com/blog/iata-numbers-codes/)

@@ -59,11 +59,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.icao.int/sites/default/files/postalhistory/annex_7_aircraft_nationality_and_registration_marks.htm'
+    tier: standard-body
   - org: Wikipedia
     name: Aircraft registration
     version: ''
     section: ''
     url: 'https://en.wikipedia.org/wiki/Aircraft_registration'
+    tier: encyclopedia
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 8c2 0 3 3 3 8v6l12 7v3l-12-4v6l4 3v2l-7-2-7 2v-2l4-3v-6l-12 4v-3l12-7v-6c0-5 1-8 3-8z"/><rect x="15" y="40" width="18" height="6" rx="1.5"/><path d="M19 43h2M24 43h1M28 43h1"/></svg>
 ---
 

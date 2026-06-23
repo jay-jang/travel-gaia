@@ -74,11 +74,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/airline-industry-reservations-interline-message-procedures-airimp/'
+    tier: association
   - name: Amadeus Air documentation — Availability
     org: Amadeus
     version: ''
     section: ''
     url: 'https://amadeus.com/en/portfolio/airlines/numeric-availability'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="9" width="34" height="30" rx="3"/><line x1="7" y1="17" x2="41" y2="17"/><line x1="15" y1="6" x2="15" y2="12"/><line x1="33" y1="6" x2="33" y2="12"/><path d="M16 28l5 5 11-11"/></svg>
 ---
 

@@ -35,11 +35,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.sixt.com/rental-guide/young-driver/'
+    tier: secondary
   - org: ''
     name: What minimum age and under-25 fees apply when you hire a rental car
     version: ''
     section: ''
     url: ''
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="16"/><circle cx="24" cy="24" r="6"/><path d="M24 8v6M24 34v6M8 24h6M34 24h6"/><path d="M24 18v6l4 2"/></svg>
 ---
 

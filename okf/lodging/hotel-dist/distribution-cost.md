@@ -49,11 +49,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.cloudbeds.com/online-travel-agencies/commissions/'
+    tier: secondary
   - org: Hospitality Net
     name: The independent hotelier's playbook for reducing OTA commission
     version: ''
     section: ''
     url: 'https://www.hospitalitynet.org/explainer/4132193/the-independent-hoteliers-playbook-for-reducing-ota-commission'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="16"/><path d="M28 18c-1.5-2-9-2.5-9 1.5 0 4 9 2.5 9 6.5 0 4-7.5 3.5-9 1.5"/><line x1="24" y1="13" x2="24" y2="16"/><line x1="24" y1="32" x2="24" y2="35"/></svg>
 ---
 

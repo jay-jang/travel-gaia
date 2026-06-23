@@ -107,11 +107,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/programs/airline-distribution/retailing/ndc/'
+    tier: association
   - name: NDC Standards / Passenger Standards Conference
     org: IATA
     version: ''
     section: ''
     url: 'https://developer.iata.org/en/ndc/'
+    tier: standard-body
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="10" width="32" height="24" rx="3"/><path d="M8 18h32"/><circle cx="12" cy="14" r="0.5" fill="currentColor"/><path d="M14 26h8M14 30h12"/><path d="M30 24l5 4-5 4"/><path d="M18 38h12M24 34v4"/></svg>
 ---
 

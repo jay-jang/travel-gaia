@@ -36,11 +36,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.squaremouth.com/travel-insurance-benefits/pre-existing-condition'
+    tier: secondary
   - name: Pre-Existing Conditions & Travel Medical Insurance Plans
     org: InsureMyTrip
     version: ''
     section: ''
     url: 'https://www.insuremytrip.com/travel-insurance-plans-coverages/pre-existing-conditions/'
+    tier: secondary
 icon: '<svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="14" width="22" height="28" rx="3"/><polyline points="16,22 20,22 22,18 26,30 28,24 32,24"/><circle cx="33" cy="12" r="7"/><line x1="33" y1="9" x2="33" y2="15"/><line x1="30" y1="12" x2="36" y2="12"/></svg>'
 ---
 

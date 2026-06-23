@@ -44,11 +44,13 @@ sources:
     version: ''
     section: ''
     url: 'https://ocw.mit.edu/courses/16-75j-airline-management-spring-2006/'
+    tier: secondary
   - org: Journal of Revenue and Pricing Management (Springer)
     name: Airline overbooking with dynamic spoilage costs
     version: ''
     section: ''
     url: 'https://link.springer.com/article/10.1057/palgrave.rpm.5160059'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="10" width="14" height="28" rx="2"/><path d="M14 16v10M14 31v0"/><path d="M24 18h6M24 24h6M24 30h6" stroke-dasharray="3 3"/><rect x="33" y="10" width="8" height="28" rx="2"/><path d="M37 16l3 3M40 16l-3 3"/></svg>
 ---
 

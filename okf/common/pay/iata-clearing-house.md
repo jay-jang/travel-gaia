@@ -57,11 +57,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/services/finance/clearinghouse/'
+    tier: association
   - name: IATA Clearing House (ICH) FAQs
     org: IATA
     version: ''
     section: ''
     url: 'https://www.iata.org/en/services/finance/clearinghouse/faqs/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 20 24 8l18 12"/><line x1="9" y1="20" x2="9" y2="38"/><line x1="39" y1="20" x2="39" y2="38"/><line x1="17" y1="22" x2="17" y2="36"/><line x1="31" y1="22" x2="31" y2="36"/><line x1="5" y1="42" x2="43" y2="42"/></svg>
 ---
 

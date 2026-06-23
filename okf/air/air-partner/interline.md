@@ -62,11 +62,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/multilateral-interline-traffic-agreements/'
+    tier: association
   - name: Revenue Accounting Manual (RAM)
     org: IATA
     version: ''
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/revenue-accounting-manual/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="24" r="5"/><circle cx="37" cy="24" r="5"/><path d="M16 24h16"/><path d="M28 20l4 4-4 4"/><path d="M20 28l-4-4 4-4"/></svg>
 ---
 

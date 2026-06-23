@@ -45,13 +45,19 @@ sources:
   - org: European Banking Authority
     name: Regulatory Technical Standards on strong customer authentication and common and secure communication under PSD2
     version: ''
-    section: ''
+    section: Commission Delegated Regulation (EU) 2018/389
     url: 'https://www.eba.europa.eu/regulation-and-policy/payment-services-and-electronic-money/regulatory-technical-standards-on-strong-customer-authentication-and-secure-communication-under-psd2'
+    tier: regulator-guidance
+    verifyQuote: Commission Delegated Regulation (EU) 2018/389 — Regulatory Technical Standards on strong customer authentication and secure communication under PSD2.
+    verified: true
   - org: European Union
     name: Revised Payment Services Directive (PSD2)
-    version: ''
+    version: Directive (EU) 2015/2366
     section: ''
     url: 'https://eur-lex.europa.eu/eli/dir/2015/2366/oj/eng'
+    tier: regulation
+    verifyQuote: Directive (EU) 2015/2366 of the European Parliament and of the Council of 25 November 2015 on payment services in the internal market
+    verified: true
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="20" width="30" height="20" rx="2.5"/><path d="M16 20v-5a8 8 0 0 1 16 0v5"/><circle cx="24" cy="29" r="2.5"/><path d="M24 31.5V35"/></svg>
 ---
 
@@ -81,5 +87,5 @@ SCA는 PSD2에 의해 의무화되며, 유럽은행감독청(EBA)의 강력한 �
 - **Strong Customer Authentication** vs [Transparency in Payments (TIP)](/common/pay/transparency-in-payments-tip.md) — SCA is an EU regulatory authentication requirement protecting consumers; TIP is an IATA industry framework controlling airline card acceptance in the BSP agency channel. They address different aspects of payment.
 
 # Citations
-[1] [European Banking Authority — Regulatory Technical Standards on strong customer authentication and common and secure communication under PSD2](https://www.eba.europa.eu/regulation-and-policy/payment-services-and-electronic-money/regulatory-technical-standards-on-strong-customer-authentication-and-secure-communication-under-psd2)
-[2] [European Union — Revised Payment Services Directive (PSD2)](https://eur-lex.europa.eu/eli/dir/2015/2366/oj/eng)
+[1] [European Banking Authority — Regulatory Technical Standards on strong customer authentication and common and secure communication under PSD2 — Commission Delegated Regulation (EU) 2018/389](https://www.eba.europa.eu/regulation-and-policy/payment-services-and-electronic-money/regulatory-technical-standards-on-strong-customer-authentication-and-secure-communication-under-psd2)
+[2] [European Union — Revised Payment Services Directive (PSD2) — Directive (EU) 2015/2366](https://eur-lex.europa.eu/eli/dir/2015/2366/oj/eng)

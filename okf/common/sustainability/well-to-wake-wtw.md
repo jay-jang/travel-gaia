@@ -42,19 +42,26 @@ distinctions:
 sources:
   - org: ICAO
     name: CORSIA Eligible Fuels – Life Cycle Assessment Methodology
-    version: ''
+    version: Version 8 – November 2025
     section: ''
     url: 'https://www.icao.int/sites/default/files/environmental-protection/CORSIA/Documents/CORSIA%20Eligible%20Fuels/CORSIA_Supporting_Document_CORSIA-Eligible-Fuels_LCA_Methodology_V8.pdf'
+    tier: standard-body
+    verifyQuote: Version 8 – November 2025 ... WTWa (Well-to-Wake)
+    verified: true
   - org: IATA
     name: Sustainable Aviation Fuel (SAF) Accounting and Reporting Methodology
     version: ''
     section: ''
     url: 'https://www.iata.org/contentassets/d13875e9ed784f75bac90f000760e998/iata-sustainable-aviation-fuel-saf-accounting--reporting-methodology.pdf'
+    tier: association
   - org: ISCC
     name: ISCC CORSIA 205 Life Cycle Emissions
-    version: ''
+    version: Version 2.0
     section: ''
     url: 'https://www.iscc-system.org/wp-content/uploads/2023/12/ISCC_CORSIA_205_Life_Cycle_Emissions_2.0.pdf'
+    tier: association
+    verifyQuote: 'Document Title: ISCC CORSIA 205 Life Cycle Emissions — Version 2.0'
+    verified: true
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="34" r="4"/><path d="M9 30V16a3 3 0 0 1 6 0v2"/><path d="M13 38h22a5 5 0 0 0 4-8l-6-8"/><path d="M33 22h6M36 19v6"/><path d="M38 34c2 2 3 4 3 6M41 40l-2-1M41 40l1-2"/></svg>
 ---
 
@@ -79,6 +86,6 @@ Because SAF burned in an engine emits broadly similar CO2 to fossil kerosene at 
 - **Well-to-Wake (WtW)** vs [Contrail (Non-CO2 Effects)](/common/sustainability/contrail-non-co2-effects.md) — Well-to-Wake covers CO2 (and other GHGs) across the fuel's life cycle; contrails are a non-CO2 in-flight warming effect from the engine exhaust that WtW fuel LCA does not capture.
 
 # Citations
-[1] [ICAO — CORSIA Eligible Fuels – Life Cycle Assessment Methodology](https://www.icao.int/sites/default/files/environmental-protection/CORSIA/Documents/CORSIA%20Eligible%20Fuels/CORSIA_Supporting_Document_CORSIA-Eligible-Fuels_LCA_Methodology_V8.pdf)
+[1] [ICAO — CORSIA Eligible Fuels – Life Cycle Assessment Methodology — Version 8 – November 2025](https://www.icao.int/sites/default/files/environmental-protection/CORSIA/Documents/CORSIA%20Eligible%20Fuels/CORSIA_Supporting_Document_CORSIA-Eligible-Fuels_LCA_Methodology_V8.pdf)
 [2] [IATA — Sustainable Aviation Fuel (SAF) Accounting and Reporting Methodology](https://www.iata.org/contentassets/d13875e9ed784f75bac90f000760e998/iata-sustainable-aviation-fuel-saf-accounting--reporting-methodology.pdf)
-[3] [ISCC — ISCC CORSIA 205 Life Cycle Emissions](https://www.iscc-system.org/wp-content/uploads/2023/12/ISCC_CORSIA_205_Life_Cycle_Emissions_2.0.pdf)
+[3] [ISCC — ISCC CORSIA 205 Life Cycle Emissions — Version 2.0](https://www.iscc-system.org/wp-content/uploads/2023/12/ISCC_CORSIA_205_Life_Cycle_Emissions_2.0.pdf)

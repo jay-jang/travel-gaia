@@ -68,11 +68,13 @@ sources:
     version: ''
     section: ''
     url: 'https://servicehub.amadeus.com/c/portal/view-solution/837116/en_US/emd-frequently-asked-questions'
+    tier: vendor-doc
   - org: IATA
     name: Ticketing Handbook
     version: ''
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/ticketing-handbook/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="15"/><path d="M24 9a15 15 0 0 1 13 7.5L24 24z" fill="currentColor" stroke="none"/><path d="M19 26h10"/><path d="M24 21v3"/><path d="M21 30h6"/></svg>
 ---
 

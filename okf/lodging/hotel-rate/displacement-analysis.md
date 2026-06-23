@@ -42,16 +42,19 @@ sources:
     version: ''
     section: ''
     url: 'https://www.cloudbeds.com/hotel-group-business/displacement-analysis/'
+    tier: secondary
   - org: Lighthouse
     name: How to conduct an effective hotel displacement analysis
     version: ''
     section: ''
     url: 'https://www.mylighthouse.com/resources/blog/displacement-analysis-for-your-hotel'
+    tier: secondary
   - org: Xotels
     name: Displacement Analysis Definition / Meaning
     version: ''
     section: ''
     url: 'https://www.xotels.com/en/glossary/displacement-analysis'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 8v6"/><path d="M11 16h26"/><path d="M11 16l-5 9h10z"/><path d="M37 16l-5 9h10z"/><path d="M6 25a5 4 0 0 0 10 0"/><path d="M32 25a5 4 0 0 0 10 0"/><path d="M24 14v22"/><path d="M18 40h12"/></svg>
 ---
 

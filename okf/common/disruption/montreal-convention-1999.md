@@ -46,11 +46,15 @@ sources:
     version: '1999'
     section: ''
     url: 'https://www.icao.int/sites/default/files/secretariat/legal/CurrentListofParties/Mtl99_EN.pdf'
+    tier: standard-body
+    verifyQuote: CONVENTION FOR THE UNIFICATION OF CERTAIN RULES FOR INTERNATIONAL CARRIAGE BY AIR DONE AT MONTREAL ON 28 MAY 1999
+    verified: true
   - name: 2024 Revised Limits of Liability Under the Montreal Convention of 1999
     org: ICAO
     version: '2024'
     section: ''
     url: 'https://www.icao.int/sites/default/files/secretariat/legal/LEB%20Treaty%20Collection%20Documents/2024_Revised_Limits_of_Liability_Under_the_Montreal_Convention_of_1999_en.pdf'
+    tier: standard-body
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6l16 6v9c0 11-7 18-16 21-9-3-16-10-16-21v-9z"/><path d="M17 23l5 5 9-11"/></svg>
 ---
 

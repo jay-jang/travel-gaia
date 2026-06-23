@@ -56,11 +56,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/services/consulting/airlines/airline-retailing-order-and-offer-management/'
+    tier: association
   - name: NDC Standards
     org: IATA
     version: ''
     section: ''
     url: 'https://www.iata.org/en/programs/airline-distribution/retailing/ndc/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 8l9 5v10c0 7-5 12-9 13-4-1-9-6-9-13V13z"/><path d="M20 23l3 3 6-7"/><circle cx="36" cy="36" r="7"/><path d="M33 36l2 2 4-4"/></svg>
 ---
 

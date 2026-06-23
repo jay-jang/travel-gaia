@@ -55,16 +55,19 @@ sources:
     version: ''
     section: ''
     url: 'https://cdp.com/articles/cdp-for-travel/'
+    tier: secondary
   - name: 'Composable CDPs for Travel: Personalizing Guest Experiences with AI'
     org: Industry vendor guidance
     version: ''
     section: ''
     url: 'https://www.snowflake.com/en/blog/composable-cdp-travel-hospitality/'
+    tier: vendor-doc
   - name: Iberia Powers Next-Level Airline Customer Experience with Real-Time Data and AI
     org: Iberia / vendor case study
     version: ''
     section: ''
     url: 'https://tealium.com/blog/customer-experience/iberia-next-level-airline-customer-experience/'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="4"/><circle cx="10" cy="24" r="4"/><circle cx="10" cy="38" r="4"/><path d="M14 10h8l6 14M14 24h14M14 38h8l6-14"/><circle cx="34" cy="24" r="7"/><path d="M31 24l2 2 4-4"/></svg>
 ---
 

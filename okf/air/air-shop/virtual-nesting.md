@@ -45,16 +45,19 @@ sources:
     version: ''
     section: ''
     url: 'https://doi.org/10.1287/opre.1080.0550'
+    tier: secondary
   - org: Springer
     name: 'Talluri & van Ryzin, ''The Theory and Practice of Revenue Management'' (2004), Ch. on network capacity control / virtual nesting'
     version: ''
     section: ''
     url: 'https://link.springer.com/book/10.1007/b139000'
+    tier: secondary
   - org: SSRN
     name: 'Nesting Booking Limits in Revenue Management: The Good, the Bad and the Ugly (Jean Michel Chapuis, 2008)'
     version: ''
     section: ''
     url: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1124707'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="9" width="34" height="30" rx="3"/><rect x="12" y="14" width="24" height="20" rx="2"/><rect x="17" y="19" width="14" height="10" rx="1.5"/><path d="M9 24h-2M41 24h0"/></svg>
 ---
 

@@ -60,6 +60,7 @@ sources:
     version: ''
     section: ''
     url: ''
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M25 5H11a2 2 0 00-2 2v14l18 18a2 2 0 002.8 0l11.4-11.4a2 2 0 000-2.8L25 5z"/><circle cx="16" cy="12" r="2" fill="currentColor" stroke="none"/><path d="M19 27l10 10M29 27L19 37"/></svg>
 ---
 

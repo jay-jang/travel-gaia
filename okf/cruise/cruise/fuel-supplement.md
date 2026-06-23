@@ -59,11 +59,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.affordabletours.com/cruises/search/fuelsurcharges/'
+    tier: secondary
   - org: Cruise Hive / industry reporting
     name: 'Explained: What Is a ''Fuel Supplement'' on a Cruise? — trigger price and right to impose on paid bookings'
     version: ''
     section: ''
     url: 'https://www.cruisehive.com/two-cruise-lines-introduce-fuel-surcharges-could-more-follow/203270'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6c6 8 9 13 9 19a9 9 0 0 1-18 0c0-6 3-11 9-19z"/><path d="M20 27a4 4 0 0 0 8 0c0-3-4-6-4-6s-4 3-4 6z"/><polyline points="30 40 36 34 42 40"/><line x1="36" y1="34" x2="36" y2="44"/></svg>
 ---
 

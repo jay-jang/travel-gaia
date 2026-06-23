@@ -56,6 +56,7 @@ sources:
     version: ''
     section: ''
     url: 'https://www.atpco.net/resources/glossary/t'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="34" r="3"/><circle cx="24" cy="34" r="3"/><circle cx="40" cy="34" r="3"/><line x1="11" y1="34" x2="21" y2="34"/><line x1="27" y1="34" x2="37" y2="34"/><path d="M8 22 q16 -16 32 0"/><line x1="8" y1="22" x2="8" y2="18"/><line x1="40" y1="22" x2="40" y2="18"/></svg>
 ---
 

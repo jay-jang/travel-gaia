@@ -85,11 +85,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/ticketing-handbook/'
+    tier: association
   - name: Passenger Services Conference Resolutions Manual (PSCRM)
     org: IATA
     version: ''
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="14" width="36" height="20" rx="3"/><path d="M22 14v20"/><path d="M22 19v2M22 25v2M22 31v0"/><path d="M28 21h8M28 27h6"/><path d="M11 24h6"/></svg>
 ---
 

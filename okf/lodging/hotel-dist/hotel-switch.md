@@ -57,11 +57,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.altexsoft.com/glossary/switch-travel-technology/'
+    tier: secondary
   - org: DerbySoft
     name: Connectivity Services / Property Connector
     version: ''
     section: ''
     url: 'https://www.derbysoft.com/property-connector/'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="18" y="19" width="12" height="10" rx="2"/><line x1="6" y1="12" x2="18" y2="21"/><line x1="6" y1="24" x2="18" y2="24"/><line x1="6" y1="36" x2="18" y2="27"/><line x1="42" y1="12" x2="30" y2="21"/><line x1="42" y1="24" x2="30" y2="24"/><line x1="42" y1="36" x2="30" y2="27"/><circle cx="6" cy="12" r="2"/><circle cx="6" cy="24" r="2"/><circle cx="6" cy="36" r="2"/><circle cx="42" cy="12" r="2"/><circle cx="42" cy="24" r="2"/><circle cx="42" cy="36" r="2"/></svg>
 ---
 

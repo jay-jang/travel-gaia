@@ -61,19 +61,24 @@ distinctions:
 sources:
   - org: IATA
     name: Standard Schedules Information Manual (SSIM)
-    version: ''
+    version: 36th edition (2026)
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/standard-schedules-information/'
+    tier: association
+    verifyQuote: Significant Changes and Amendments to the 36th edition (2026) of the Standard Schedules Information Manual (SSIM)
+    verified: true
   - org: OAG
     name: 'Master Data: Equipment Data Fields Explained'
     version: ''
     section: ''
     url: 'https://knowledge.oag.com/docs/master-data-equipment-data-fields-explained'
+    tier: vendor-doc
   - org: Wikipedia
     name: List of aircraft type designators
     version: ''
     section: ''
     url: 'https://en.wikipedia.org/wiki/List_of_aircraft_type_designators'
+    tier: encyclopedia
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6c2.5 0 3.5 4 3.5 9v6l13 8v3l-13-4v7l4 3v2l-7.5-2L17 50v-2l4-3v-7l-13 4v-3l13-8v-6c0-5 1-9 3-9z" transform="translate(0 -4)"/></svg>
 ---
 
@@ -107,6 +112,6 @@ IATA 항공기 기종 지정 코드는 3자리이며, 스케줄·표시 화면·
 - **Aircraft Type Code** vs [Service Type Code](/common/codes/service-type-code.md) — The aircraft type code says which equipment operates the leg; the Service Type Code says the commercial nature of the operation, independent of the aircraft used.
 
 # Citations
-[1] [IATA — Standard Schedules Information Manual (SSIM)](https://www.iata.org/en/publications/manuals/standard-schedules-information/)
+[1] [IATA — Standard Schedules Information Manual (SSIM) — 36th edition (2026)](https://www.iata.org/en/publications/manuals/standard-schedules-information/)
 [2] [OAG — Master Data: Equipment Data Fields Explained](https://knowledge.oag.com/docs/master-data-equipment-data-fields-explained)
 [3] [Wikipedia — List of aircraft type designators](https://en.wikipedia.org/wiki/List_of_aircraft_type_designators)

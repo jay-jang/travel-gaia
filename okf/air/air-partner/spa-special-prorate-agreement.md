@@ -51,11 +51,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/services/finance/prorate-manuals/'
+    tier: association
   - name: Revenue Accounting Manual (RAM)
     org: IATA
     version: ''
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/revenue-accounting-manual/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="8" width="22" height="30" rx="2"/><path d="M14 16h12M14 21h12M14 26h7"/><path d="M28 32l5 5 10-10"/></svg>
 ---
 

@@ -73,11 +73,13 @@ sources:
     version: ''
     section: ''
     url: 'https://opentravel.org/download-specs/'
+    tier: association
   - org: SiteMinder
     name: pmsXchange — Availability and Restrictions
     version: ''
     section: ''
     url: 'https://developer.siteminder.com/siteminder-apis/pms-rms/introduction/pmsxchange/api-reference/availability-and-restrictions'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="16"/><path d="M13 13l22 22"/></svg>
 ---
 

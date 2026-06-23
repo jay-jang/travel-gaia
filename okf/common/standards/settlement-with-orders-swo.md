@@ -45,11 +45,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/programs/airline-distribution/retailing/settlement-orders-swo/'
+    tier: association
   - org: IATA
     name: Fact Sheet - Distribution with Offers and Orders
     version: ''
     section: ''
     url: 'https://www.iata.org/en/iata-repository/pressroom/fact-sheets/fact-sheet-ndc/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="10"/><path d="M24 18v12M21 21h4a2 2 0 0 1 0 4h-2a2 2 0 0 0 0 4h4"/><path d="M8 14l5-3 5 3M40 34l-5 3-5-3"/><path d="M13 11v9M35 37v-9"/></svg>
 ---
 

@@ -42,11 +42,13 @@ sources:
     version: ''
     section: '259.4'
     url: 'https://www.ecfr.gov/current/title-14/chapter-II/subchapter-A/part-259/section-259.4'
+    tier: regulation
   - name: Tarmac Delay Rule (Federal Register)
     org: US Department of Transportation
     version: ''
     section: ''
     url: 'https://www.federalregister.gov/documents/2021/05/03/2021-08850/tarmac-delay-rule'
+    tier: regulation
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 30l14-2 6-9 3 1-2 8 7-1 5 4-30 5-5-3z"/><line x1="6" y1="38" x2="40" y2="38"/><circle cx="34" cy="14" r="6"/><path d="M34 11v3l2 2"/></svg>
 ---
 

@@ -46,11 +46,15 @@ sources:
     version: ''
     section: ''
     url: 'https://www.xotels.com/en/glossary/rate-hurdle'
+    tier: secondary
   - org: Oracle
     name: OPERA Cloud Service - Configuring Hurdle Rates
     version: ''
-    section: ''
+    section: Configuring Hurdle Rates
     url: 'https://docs.oracle.com/en/industries/hospitality/opera-cloud/23.4/ocsuh/t_adding_hurdle_rate.htm'
+    tier: vendor-doc
+    verifyQuote: 'Page heading "Configuring Hurdle Rates" with sections Adding Hurdle Rates, Editing Hurdle Rates, Deleting Hurdle Rates (OPERA Cloud).'
+    verified: true
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="38" x2="42" y2="38"/><line x1="16" y1="20" x2="16" y2="38"/><line x1="32" y1="20" x2="32" y2="38"/><line x1="13" y1="20" x2="35" y2="20"/><path d="M10 30l8-8 8 6 8-12"/><path d="M30 16h4v4"/></svg>
 ---
 
@@ -78,4 +82,4 @@ Also called the rate hurdle or, conceptually, the last room value, the hurdle ra
 
 # Citations
 [1] [Xotels — Rate Hurdle Definition / Meaning (Glossary)](https://www.xotels.com/en/glossary/rate-hurdle)
-[2] [Oracle — OPERA Cloud Service - Configuring Hurdle Rates](https://docs.oracle.com/en/industries/hospitality/opera-cloud/23.4/ocsuh/t_adding_hurdle_rate.htm)
+[2] [Oracle — OPERA Cloud Service - Configuring Hurdle Rates — Configuring Hurdle Rates](https://docs.oracle.com/en/industries/hospitality/opera-cloud/23.4/ocsuh/t_adding_hurdle_rate.htm)

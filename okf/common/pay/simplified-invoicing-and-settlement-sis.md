@@ -56,11 +56,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/services/finance/sis/'
+    tier: association
   - org: IATA
     name: SIS - Simplified Invoicing and Settlement e-Invoicing Implementation Handbook
     version: ''
     section: ''
     url: 'https://www.iata.org/contentassets/9b1d8d19a6244e4e8cb8c7d7ad3f45e5/sis_e_invoicing_implementation_handbook.pdf'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M13 6h16l8 8v28H13z"/><path d="M29 6v8h8"/><line x1="18" y1="22" x2="32" y2="22"/><line x1="18" y1="28" x2="32" y2="28"/><line x1="18" y1="34" x2="26" y2="34"/></svg>
 ---
 

@@ -68,11 +68,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/services/consulting/airlines/airline-retailing-order-and-offer-management/'
+    tier: association
   - org: IATA
     name: ONE Order
     version: ''
     section: ''
     url: 'https://www.iata.org/en/programs/airline-distribution/retailing/one-order/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14h28l-3 24a2 2 0 0 1-2 2H15a2 2 0 0 1-2-2z"/><path d="M17 14a7 7 0 0 1 14 0"/><path d="M19 26l3 3 6-6"/></svg>
 ---
 

@@ -53,11 +53,15 @@ sources:
     version: ''
     section: ''
     url: 'https://iatci.com/'
+    tier: secondary
   - org: IATA
     name: Passenger and Airport Data Interchange Standards (PADIS) EDIFACT Implementation Guide
-    version: ''
+    version: '17.1'
     section: ''
     url: 'https://standards.atlassian.net/wiki/spaces/AIDM/pages/832471053'
+    tier: standard-body
+    verifyQuote: 'PADIS (Passenger and Airport Data Interchange Standards) EDIFACT implementation for airport services messages, version 17.1 ... messages used for the purpose of through check-in ... described in the INTER AIRLINE THROUGH CHECK-IN IMPLEMENTA'
+    verified: true
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="30" width="16" height="12" rx="2"/><path d="M10 30v-4a4 4 0 0 1 8 0v4"/><path d="M26 14h10l6 6-6 6H26z"/><line x1="30" y1="20" x2="36" y2="20"/><path d="M14 30c10-2 12-8 12-14"/></svg>
 ---
 
@@ -91,4 +95,4 @@ IATCI는 항공사, 시스템/소프트웨어 제공자, 지상 조업사로 구
 
 # Citations
 [1] [IATCI Group — IATCI - Home](https://iatci.com/)
-[2] [IATA — Passenger and Airport Data Interchange Standards (PADIS) EDIFACT Implementation Guide](https://standards.atlassian.net/wiki/spaces/AIDM/pages/832471053)
+[2] [IATA — Passenger and Airport Data Interchange Standards (PADIS) EDIFACT Implementation Guide — 17.1](https://standards.atlassian.net/wiki/spaces/AIDM/pages/832471053)

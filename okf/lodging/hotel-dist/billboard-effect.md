@@ -42,11 +42,13 @@ sources:
     version: ''
     section: ''
     url: 'https://ecornell-impact.cornell.edu/wp-content/uploads/sites/7/2014/07/The-Billboard-Effect.pdf'
+    tier: secondary
   - org: Cornell University (School of Hotel Administration)
     name: 'The Billboard Effect: Still Alive and Well (Chris Anderson, 2017)'
     version: ''
     section: ''
     url: 'https://sha.cornell.edu/wp-content/uploads/sites/4/2019/03/christopher-anderson_billboard-effect-still-alive-and-well.pdf'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="8" width="34" height="18" rx="2"/><path d="M14 26v14M34 26v14"/><path d="M13 15h12M13 19h8"/><path d="M30 13l5 4-5 4"/><path d="M35 17h-8"/></svg>
 ---
 

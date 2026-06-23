@@ -41,11 +41,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/ticketing-handbook/'
+    tier: association
   - org: IATA
     name: Conditions of Contract and Other Important Notices
     version: ''
     section: ''
     url: 'https://www.iatatravelcentre.com/tickets.htm'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="13" width="22" height="15" rx="2"/><rect x="19" y="20" width="22" height="15" rx="2"/><path d="M24 20v8"/><path d="M13 20h5"/><path d="M30 27h5"/></svg>
 ---
 

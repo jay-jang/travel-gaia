@@ -43,11 +43,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.altexsoft.com/blog/agency-model/'
+    tier: secondary
   - name: 'Merchant model vs. agency model: A guide for business success'
     org: WEX Inc.
     version: ''
     section: ''
     url: 'https://www.wexinc.com/resources/blog/merchant-vs-agency-model-travel-payments/'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="14" r="6"/><path d="M14 40a10 10 0 0 1 20 0"/><path d="M8 22h6"/><path d="M34 22h6"/><path d="M11 19l-3 3 3 3"/><path d="M37 19l3 3-3 3"/></svg>
 ---
 

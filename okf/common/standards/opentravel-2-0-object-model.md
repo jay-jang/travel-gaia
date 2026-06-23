@@ -54,11 +54,13 @@ sources:
     version: ''
     section: ''
     url: 'https://opentravel.org/news/2018a-2-0-object-model/'
+    tier: association
   - org: OpenTravel Alliance
     name: Releases 2018A 2.0 Object Model Publication for Hospitality
     version: ''
     section: ''
     url: 'https://opentravel.org/news/opentravel-alliance-releases-2018a-2-0-object-model-publication-for-hospitality/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6l16 9v18l-16 9-16-9V15z"/><path d="M8 15l16 9 16-9M24 24v18"/><path d="M16 19.5l16 9"/></svg>
 ---
 

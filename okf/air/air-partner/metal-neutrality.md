@@ -51,11 +51,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.justice.gov/atr/antitrust-immunity-and-international-airline-alliances'
+    tier: regulator-guidance
   - name: Joint ventures help airlines deliver choice to consumers (metal neutrality explained)
     org: IATA
     version: ''
     section: ''
     url: 'https://airlines.iata.org/2016/08/05/strategizing-success'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6v6M24 36v6"/><polygon points="24 12 30 18 24 24 18 18"/><path d="M10 30l6-3 4 5-6 3z" fill="currentColor" stroke="none"/><path d="M38 30l-6-3-4 5 6 3z" fill="currentColor" stroke="none"/><path d="M14 24h-6M40 24h-6"/></svg>
 ---
 

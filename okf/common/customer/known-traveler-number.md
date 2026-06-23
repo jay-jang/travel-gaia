@@ -55,11 +55,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.tsa.gov/travel/frequently-asked-questions/what-known-traveler-number-ktn'
+    tier: regulator-guidance
   - org: TSA
     name: TSA PreCheck FAQ
     version: ''
     section: ''
     url: 'https://www.tsa.gov/precheck/faq'
+    tier: regulator-guidance
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="12" width="36" height="24" rx="3"/><circle cx="16" cy="22" r="4"/><path d="M10 32c1-3 4-5 6-5s5 2 6 5"/><path d="M28 20h10"/><path d="M28 26h8"/><path d="M20 16l2 2 3-4"/></svg>
 ---
 

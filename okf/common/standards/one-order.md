@@ -62,11 +62,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/programs/airline-distribution/retailing/one-order/'
+    tier: association
   - name: ONE Order Standards
     org: IATA
     version: ''
     section: ''
     url: 'https://developer.iata.org/en/one-order/'
+    tier: standard-body
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="15"/><path d="M20 16h6a4 4 0 0 1 0 8h-6zM20 16v16M20 24h3l4 8"/><path d="M14 13l3-3 3 3"/></svg>
 ---
 

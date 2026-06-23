@@ -50,11 +50,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.bcdtravel.com/glossary/run-of-the-house-roh/'
+    tier: secondary
   - org: AltexSoft
     name: Travel Glossary — Run of the house (ROH)
     version: ''
     section: ''
     url: 'https://www.altexsoft.com/glossary/run-of-the-house-roh/'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22L24 8l18 14"/><path d="M10 20v18h28V20"/><path d="M19 38v-9h10v9"/><path d="M22 26h.01"/></svg>
 ---
 

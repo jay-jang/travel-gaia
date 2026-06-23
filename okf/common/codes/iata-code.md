@@ -41,6 +41,7 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/publications/directories/code-search/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22l36-12-4 14-6 12-5-10z"/><path d="M21 36l4-4"/><rect x="6" y="32" width="20" height="10" rx="2"/><path d="M11 37h2M16 37h2M21 37h2"/></svg>
 ---
 

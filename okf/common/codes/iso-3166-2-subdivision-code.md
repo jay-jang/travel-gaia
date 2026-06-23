@@ -40,11 +40,13 @@ sources:
     version: '2020'
     section: ''
     url: 'https://www.iso.org/standard/72483.html'
+    tier: standard-body
   - org: ISO
     name: ISO 3166 Country Codes
     version: ''
     section: ''
     url: 'https://www.iso.org/iso-3166-country-codes.html'
+    tier: standard-body
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M8 10l32 0 0 28-32 0z"/><path d="M24 10v28M8 24h16"/><path d="M30 17l7 0 0 7-7 0z"/></svg>
 ---
 

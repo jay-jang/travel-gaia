@@ -38,16 +38,19 @@ sources:
     version: ''
     section: ''
     url: 'https://www.optimove.com/resources/learning-center/rfm-segmentation'
+    tier: vendor-doc
   - name: Estimating travellers' value when purchasing auxiliary services in the airline industry based on the RFM model
     org: Academic research
     version: ''
     section: ''
     url: 'https://www.sciencedirect.com/science/article/abs/pii/S0969698923001807'
+    tier: secondary
   - name: What is RFM Analysis for Customer Segmentation & How Does it Work?
     org: Marketing analytics reference
     version: ''
     section: ''
     url: 'https://netcorecloud.com/blog/rfm-analysis-customer-segmentation/'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M7 41V7"/><path d="M7 41h34"/><rect x="13" y="28" width="6" height="9"/><rect x="23" y="20" width="6" height="17"/><rect x="33" y="12" width="6" height="25"/></svg>
 ---
 

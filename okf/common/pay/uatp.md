@@ -55,11 +55,13 @@ sources:
     version: ''
     section: ''
     url: 'https://uatp.com/'
+    tier: association
   - org: TreviPay
     name: Three Ways Airlines Can Get More From Their UATP Programs
     version: ''
     section: ''
     url: 'https://www.trevipay.com/resource-center/blog/three-ways-airlines-can-get-more-from-their-uatp-programs/'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="14" width="36" height="22" rx="3"/><line x1="6" y1="21" x2="42" y2="21"/><path d="M14 30l5-5 4 3 6-7"/><path d="M29 21l3-3 3 3"/></svg>
 ---
 

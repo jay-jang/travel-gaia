@@ -55,16 +55,19 @@ sources:
     version: ''
     section: ''
     url: 'https://partner.booking.com/en-us/help/channel-manager/partner-program/understanding-connectivity-partner-program'
+    tier: vendor-doc
   - org: Hospitality Net
     name: HotelRunner Recognized as Top Connectivity Provider Globally by Expedia Group
     version: ''
     section: ''
     url: 'https://www.hospitalitynet.org/news/4109407.html'
+    tier: secondary
   - org: Lodgify
     name: Lodgify Recognized as Booking.com Premier Connectivity Partner
     version: ''
     section: ''
     url: 'https://www.lodgify.com/blog/booking-premier-partner-status/'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="16" r="7"/><path d="M19 22l-3 9 8-5 8 5-3-9"/><path d="M14 16H6M42 16h-8"/><path d="M21 16l2 2 4-4"/></svg>
 ---
 

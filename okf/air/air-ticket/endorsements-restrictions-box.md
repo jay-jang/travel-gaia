@@ -50,11 +50,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.bcdtravel.com/glossary/non-endorsable/'
+    tier: secondary
   - org: Amadeus
     name: Working with the endorsement (FE) element
     version: ''
     section: ''
     url: 'https://servicehub.amadeus.com/c/portal/view-solution/875231/working-with-the-endorsement-fe-element'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="12" width="36" height="24" rx="3"/><path d="M11 19h14M11 24h10"/><path d="M27 31l4 4 9-11"/><path d="M14 35l20-23"/></svg>
 ---
 

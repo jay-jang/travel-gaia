@@ -42,6 +42,7 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iso.org/iso-4217-currency-codes.html'
+    tier: standard-body
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="10" width="32" height="28" rx="3"/><path d="M28 18a6 5 0 0 0-9 4c0 6 9 3 9 9a6 5 0 0 1-9 4"/><path d="M23 14v3M23 31v3"/></svg>
 ---
 

@@ -45,21 +45,25 @@ sources:
     version: ''
     section: Glossary
     url: 'https://www.budget.com/en/customer-care/faqs/global/glossary'
+    tier: secondary
   - org: BCD Travel
     name: Glossary — Time and mileage rate
     version: ''
     section: ''
     url: 'https://www.bcdtravel.com/glossary/time-and-mileage-rate/'
+    tier: secondary
   - org: Skyscanner
     name: 'Car rental costs in the US: Daily, weekly, and monthly'
     version: ''
     section: ''
     url: 'https://www.skyscanner.com/car-rental/advice/car-rental-costs'
+    tier: secondary
   - org: Engine
     name: 'Rental Car Mileage Fees: Complete Guide'
     version: ''
     section: ''
     url: 'https://engine.com/business-travel-guide/rental-car-mileage-fees'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18"/><path d="M24 24l8-5"/><path d="M14 24a10 10 0 0 1 20 0"/><path d="M14 24h2M32 24h2M24 14v2"/></svg>
 ---
 

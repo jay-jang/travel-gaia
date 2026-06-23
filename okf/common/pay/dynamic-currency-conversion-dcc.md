@@ -59,11 +59,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.mastercard.com/content/dam/mccom/shared/business/support/rules-pdfs/DCC-Guide-2025-Merchant-Version.pdf'
+    tier: standard-body
   - org: Adyen
     name: Dynamic Currency Conversion (DCC) - Rules & Regulations
     version: ''
     section: ''
     url: 'https://help.adyen.com/en_US/knowledge/in-person-payments/terminal-features/dynamic-currency-conversion-dcc-rules-regulations'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M10 16h22"/><path d="M26 10l6 6-6 6"/><path d="M38 32H16"/><path d="M22 26l-6 6 6 6"/><circle cx="13" cy="13" r="3"/><circle cx="35" cy="35" r="3"/></svg>
 ---
 

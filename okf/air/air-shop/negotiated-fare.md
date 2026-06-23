@@ -61,11 +61,13 @@ sources:
     version: ''
     section: Category 35
     url: 'https://support.travelport.com/webhelp/FaresAndPricing/Content/Cat35%20-%20Negotiated%20Fares.htm'
+    tier: vendor-doc
   - org: ATPCO
     name: What are ATPCO fare rules categories? (Cat 35 Negotiated)
     version: ''
     section: Category 35
     url: 'https://atpco.net/single-blog/what-are-atpco-fare-rules-categories/'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 10h20a2 2 0 012 2v26l-5-3-4 3-4-3-4 3-4-3-5 3V12a2 2 0 012-2z"/><line x1="18" y1="18" x2="30" y2="18"/><line x1="18" y1="24" x2="26" y2="24"/><circle cx="31" cy="25" r="4"/></svg>
 ---
 

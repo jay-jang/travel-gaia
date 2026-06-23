@@ -43,11 +43,13 @@ sources:
     version: ''
     section: ''
     url: 'https://content.naic.org/sites/default/files/model-law-632.pdf'
+    tier: regulator-guidance
   - org: Squaremouth
     name: What is a Free Look Period? — Travel Insurance Glossary
     version: ''
     section: ''
     url: 'https://www.squaremouth.com/resources/glossary/free-look-period'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 24 C12 14 20 10 24 10 C28 10 36 14 42 24 C36 34 28 38 24 38 C20 38 12 34 6 24 Z"/><circle cx="24" cy="24" r="6"/><path d="M14 38 L34 10"/></svg>
 ---
 

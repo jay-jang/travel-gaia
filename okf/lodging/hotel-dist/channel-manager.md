@@ -58,11 +58,13 @@ sources:
     version: ''
     section: ''
     url: 'https://opentravel.org/download-specs/'
+    tier: association
   - name: HTNG interface specifications
     org: HTNG
     version: ''
     section: ''
     url: 'https://www.ahla.com/htng-technical-specifications'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="18" y="18" width="12" height="12" rx="2"/><rect x="4" y="6" width="10" height="7" rx="1.5"/><rect x="34" y="6" width="10" height="7" rx="1.5"/><rect x="4" y="35" width="10" height="7" rx="1.5"/><rect x="34" y="35" width="10" height="7" rx="1.5"/><path d="M18 21l-7-5M30 21l7-5M18 27l-7 5M30 27l7 5"/></svg>
 ---
 

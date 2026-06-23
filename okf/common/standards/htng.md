@@ -43,6 +43,7 @@ sources:
     version: ''
     section: ''
     url: 'https://www.ahla.com/htng'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M8 40V14l16-6 16 6v26"/><path d="M4 40h40"/><path d="M14 40v-8h6v8M28 40v-8h6v8"/><path d="M16 20h2M22 20h2M28 20h2M16 25h2M22 25h2M28 25h2"/></svg>
 ---
 

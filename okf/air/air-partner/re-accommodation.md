@@ -54,11 +54,17 @@ sources:
     version: '2020'
     section: ''
     url: 'https://www.iata.org/contentassets/e7a533819be440edbb1e49da96e0f2a8/guidance-document-interline-irops_25june2020.pdf'
+    tier: association
+    verifyQuote: Interline Considerations on Irregular Operations (IROPs) — Guidance Document for Airlines. Copyright IATA 2020. ... based on Resolutions and Recommended Standards Conference Manual effective from 1 June 2020.
+    verified: true
   - name: 'Passenger Services Conference Resolutions Manual (PSCRM), Resolution 766 (Interline Passenger Reservation Procedures)'
     org: IATA
     version: ''
     section: Resolution 766
     url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
+    tier: association
+    verifyQuote: 'IATA Resolution 766 (Interline Passenger Reservation Procedures) states that whenever a passenger arrives at an interline point too late to make his connection, it is the responsibility of the delivering airline to cancel any continuing spa'
+    verified: true
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 16 a14 14 0 1 1 -3 12"/><polyline points="14 8 14 16 22 16"/><circle cx="24" cy="24" r="3" fill="currentColor" stroke="none"/><line x1="24" y1="24" x2="33" y2="19"/></svg>
 ---
 

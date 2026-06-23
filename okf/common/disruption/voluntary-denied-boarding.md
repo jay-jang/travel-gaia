@@ -40,11 +40,13 @@ sources:
     version: ''
     section: 250.2b
     url: 'https://www.ecfr.gov/current/title-14/chapter-II/subchapter-A/part-250/section-250.2b'
+    tier: regulation
   - name: Bumping & Oversales — Aviation Consumer Protection
     org: US Department of Transportation
     version: ''
     section: ''
     url: 'https://www.transportation.gov/individuals/aviation-consumer-protection/bumping-oversales'
+    tier: regulator-guidance
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="14" r="5"/><path d="M10 38v-6a8 8 0 0 1 16 0v6"/><path d="M28 16l4 4 8-9"/><path d="M30 30h12M30 34h8"/></svg>
 ---
 

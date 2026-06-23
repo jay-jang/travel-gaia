@@ -59,11 +59,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/programs/airline-distribution/retailing/ndc/'
+    tier: association
   - name: IATA fare construction principles
     org: IATA
     version: ''
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/ticketing-handbook/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M10 12h9a5 5 0 010 10H16a5 5 0 000 10h12"/><circle cx="10" cy="12" r="3"/><circle cx="38" cy="32" r="3"/><circle cx="24" cy="22" r="2"/></svg>
 ---
 

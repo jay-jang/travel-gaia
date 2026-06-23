@@ -54,11 +54,13 @@ sources:
     version: ''
     section: ''
     url: 'https://support.travelport.com/webhelp/uapi/Content/Air/Air_Ticketing/Net_Remittance_Ticketing_Modifiers.htm'
+    tier: vendor-doc
   - org: Travelport
     name: 'Assisted Ticketing: Voluntary Changes for IT/BT Fares'
     version: ''
     section: ''
     url: 'https://support.travelport.com/webhelp/smartpoint1g1v/content/Air/Ticketing/TicketAssistant/TicketAssistant_VolChange-ItBt-Refund.htm'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="14" width="28" height="20" rx="3"/><path d="M19 14v-3a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v3"/><path d="M16 22h6M16 27h10"/><circle cx="31" cy="24" r="3"/></svg>
 ---
 

@@ -71,11 +71,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.altexsoft.com/blog/virtual-credit-cards-travel/'
+    tier: secondary
   - name: Using Virtual Credit Cards for Travel Agency Payments
     org: J.P. Morgan
     version: ''
     section: ''
     url: 'https://www.jpmorgan.com/insights/treasury/cards-expense-management/using-virtual-credit-cards-for-travel-agency-payments'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="13" width="30" height="22" rx="3"/><line x1="6" y1="21" x2="36" y2="21"/><line x1="11" y1="28" x2="18" y2="28"/><path d="M40 18a6 6 0 0 1 0 12"/><path d="M40 23a2 2 0 0 1 0 2"/></svg>
 ---
 

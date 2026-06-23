@@ -49,11 +49,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
+    tier: association
   - org: SITA
     name: WorldTracer baggage management
     version: ''
     section: ''
     url: 'https://www.sita.aero/solutions/sita-at-airports/sita-baggage-management/worldtracer/'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 16h16a2 2 0 0 1 2 2v22H12V18a2 2 0 0 1 2-2z"/><path d="M18 16v-3a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v3"/><path d="M17 24h10M17 30h7"/><circle cx="34" cy="30" r="6"/><path d="M34 27v3M34 33v.5"/></svg>
 ---
 

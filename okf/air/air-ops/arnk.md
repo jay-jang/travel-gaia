@@ -67,11 +67,13 @@ sources:
     version: ''
     section: ''
     url: 'https://developer.sabre.com/docs/soap_apis/management/itinerary/Add_Arrival_Unknown_Segment'
+    tier: vendor-doc
   - name: Amadeus Functional Documentation — Itinerary Elements
     org: Amadeus
     version: ''
     section: ''
     url: ''
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="24" r="3"/><circle cx="40" cy="24" r="3"/><line x1="13" y1="24" x2="19" y2="24"/><line x1="29" y1="24" x2="35" y2="24"/><path d="M21 19 L27 29 M27 19 L21 29"/></svg>
 ---
 

@@ -50,6 +50,7 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/publications/directories/code-search/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 30h8V14l5-4 5 4v16"/><path d="M24 30V20h12v10"/><path d="M9 22h2M18 18h2M30 24h2"/><rect x="6" y="34" width="36" height="8" rx="2"/><path d="M11 38h2M16 38h2M21 38h2"/></svg>
 ---
 

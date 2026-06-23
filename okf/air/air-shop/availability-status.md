@@ -47,12 +47,15 @@ sources:
   - org: IATA
     name: AIRIMP (Airline Industry Reservations Interline Message Procedures)
     url: 'https://www.iata.org/en/publications/manuals/airline-industry-reservations-interline-message-procedures-airimp/'
+    tier: association
   - org: Travelport
     name: Air Pricing with Inventory Options – AVS/NAVS (Numeric AVS) availability
     url: 'https://support.travelport.com/webhelp/uapi/Content/Air/Air_Pricing/Air_Pricing_with_Inventory_Options.htm'
+    tier: vendor-doc
   - org: Amadeus
     name: Numeric Availability (NAVS) for Airlines
     url: 'https://amadeus.com/en/portfolio/airlines/numeric-availability'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="12" width="24" height="18" rx="3"/><path d="M6 17l12 7 12-7"/><circle cx="36" cy="32" r="8"/><path d="M33 32l2.5 2.5L40 30"/></svg>
 ---
 

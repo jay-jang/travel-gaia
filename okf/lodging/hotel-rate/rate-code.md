@@ -53,11 +53,13 @@ sources:
     version: ''
     section: Rate Management
     url: 'https://docs.oracle.com/cd/E98457_01/opera_5_6_core_help/rate_codes.htm'
+    tier: vendor-doc
   - org: OpenTravel Alliance
     name: OpenTravel Hotel Specification (RatePlanCode)
     version: ''
     section: ''
     url: 'https://opentravel.org/download-specs/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="12" width="36" height="24" rx="3"/><path d="M14 22h8M14 28h12"/><circle cx="32" cy="24" r="3"/><path d="M32 21v-3M32 30v-2"/></svg>
 ---
 

@@ -48,11 +48,13 @@ sources:
     version: ''
     section: ''
     url: 'https://rategain.com/blog/hotel-direct-booking-vs-ota/'
+    tier: secondary
   - org: Cloudbeds
     name: A Guide to OTA Commission Rates
     version: ''
     section: ''
     url: 'https://www.cloudbeds.com/online-travel-agencies/commissions/'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="24" r="5"/><path d="M6 38c0-4 3-6 6-6s6 2 6 6"/><rect x="28" y="12" width="16" height="24" rx="2"/><line x1="32" y1="18" x2="40" y2="18"/><line x1="32" y1="24" x2="40" y2="24"/><line x1="19" y1="24" x2="28" y2="24"/><path d="M25 21l3 3-3 3"/></svg>
 ---
 

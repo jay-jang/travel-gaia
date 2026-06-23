@@ -49,11 +49,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www2.arccorp.com/products-participation/travel-agencies/agency-participation/participation-products/interactive-agent-reporting-iar'
+    tier: association
   - org: ARC
     name: IAR Quick Start Guide
     version: January 2025
     section: ''
     url: 'https://www2.arccorp.com/globalassets/support--training/agency-support/arc-interactive-agent-reporting/iar-quick-start-guide.pdf'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="9" width="34" height="24" rx="2"/><path d="M13 16h12M13 22h18M13 28h9"/><path d="M18 33v6m12-6v6m-18 0h24"/></svg>
 ---
 

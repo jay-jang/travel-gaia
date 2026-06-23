@@ -72,6 +72,7 @@ sources:
     version: ''
     section: ''
     url: 'https://opentravel.org/download-specs/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18"/><circle cx="24" cy="19" r="6"/><path d="M13 38c0-6 5-10 11-10s11 4 11 10"/></svg>
 ---
 

@@ -59,11 +59,13 @@ sources:
     version: ''
     section: ''
     url: ''
+    tier: secondary
   - name: What is Onboard Credit (OBC)?
     org: Cruise industry
     version: ''
     section: ''
     url: ''
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="14" width="36" height="22" rx="3"/><line x1="6" y1="22" x2="42" y2="22"/><circle cx="31" cy="30" r="3"/><line x1="12" y1="30" x2="20" y2="30"/></svg>
 ---
 

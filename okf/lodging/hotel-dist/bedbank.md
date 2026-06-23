@@ -69,6 +69,7 @@ sources:
     version: ''
     section: ''
     url: ''
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M5 14l19-7 19 7"/><path d="M7 14v14M41 14v14M16 16v12M24 16v12M32 16v12"/><path d="M5 32h38v6H5z"/><path d="M5 38l-1 4h40l-1-4"/></svg>
 ---
 

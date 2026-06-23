@@ -46,16 +46,19 @@ sources:
     version: ''
     section: ''
     url: 'https://atpco.net/single-press/routehappy-by-atpco-announces-integration-of-rich-content-into-ndc-exchange/'
+    tier: vendor-doc
   - org: ATPCO
     name: Get Connected. Get Noticed. Stay Happy. (Routehappy + NDC Exchange)
     version: ''
     section: ''
     url: 'https://info.atpco.net/atpco-routehappy-ndc-exchange'
+    tier: vendor-doc
   - org: ATPCO
     name: ATPCO and SITA Collaborate to Build NDC Exchange to Overcome Barriers to NDC Adoption
     version: ''
     section: ''
     url: 'https://atpco.net/single-press/atpco-and-sita-collaborate-to-build-ndc-exchange-to-overcome-barriers-to-ndc-adoption/'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="6"/><circle cx="8" cy="12" r="3"/><circle cx="40" cy="12" r="3"/><circle cx="8" cy="36" r="3"/><circle cx="40" cy="36" r="3"/><path d="M11 13l8 6M37 13l-8 6M11 35l8-6M37 35l-8-6"/></svg>
 ---
 

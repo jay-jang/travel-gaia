@@ -62,14 +62,18 @@ distinctions:
 sources:
   - name: EMV 3-D Secure
     org: EMVCo
-    version: ''
+    version: 2.2.0–2.3.1.1
     section: ''
     url: 'https://www.emvco.com/emv-technologies/3-d-secure/'
+    tier: standard-body
+    verifyQuote: 'SB n° 279 EMV® 3-D Secure Protocol and Core Functions Specification v2.2.0–2.3.1.1 (published August 11, 2025).'
+    verified: true
   - name: 'Merchant of Record in Travel: OTA''s Guide to Owning the Payment Flow'
     org: AltexSoft
     version: ''
     section: ''
     url: 'https://www.altexsoft.com/blog/merchant-of-record-in-travel/'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="14" width="36" height="24" rx="3"/><line x1="6" y1="21" x2="42" y2="21"/><path d="M30 31a6 6 0 1 0-2-5"/><path d="M26 24l2 3 3-2"/></svg>
 ---
 
@@ -105,5 +109,5 @@ Chargebacks follow card scheme rules (e.g. Visa, Mastercard) with defined reason
 - **Chargeback** vs [Interchange Fee](/common/pay/interchange-fee.md) — Interchange is a per-transaction cost paid to the issuer for processing a card payment, whereas a chargeback is a reversal of a transaction initiated by the cardholder or issuer; they are unrelated mechanisms though both flow through the acquirer.
 
 # Citations
-[1] [EMVCo — EMV 3-D Secure](https://www.emvco.com/emv-technologies/3-d-secure/)
+[1] [EMVCo — EMV 3-D Secure — 2.2.0–2.3.1.1](https://www.emvco.com/emv-technologies/3-d-secure/)
 [2] [AltexSoft — Merchant of Record in Travel: OTA's Guide to Owning the Payment Flow](https://www.altexsoft.com/blog/merchant-of-record-in-travel/)

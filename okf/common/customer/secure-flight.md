@@ -68,11 +68,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.ecfr.gov/current/title-49/subtitle-B/chapter-XII/subchapter-C/part-1560'
+    tier: regulation
   - name: Secure Flight Program (Federal Register)
     org: TSA
     version: ''
     section: ''
     url: 'https://www.federalregister.gov/documents/2008/10/28/E8-25432/secure-flight-program'
+    tier: regulation
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5l15 5v10c0 11-7 18-15 23-8-5-15-12-15-23V10z"/><path d="M24 14l9 3v6c0 6.5-4 11-9 14-5-3-9-7.5-9-14v-6z" stroke-width="0"/><path d="M28 19l-9 9-4.5-4.5" stroke-width="2.5"/></svg>
 ---
 

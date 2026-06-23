@@ -57,16 +57,19 @@ sources:
     version: ''
     section: ''
     url: ''
+    tier: secondary
   - name: 'OpenTravel Specification (cruise message set: cabin category availability and pricing)'
     org: OpenTravel Alliance
     version: ''
     section: ''
     url: 'https://opentravel.org/download-specs/'
+    tier: association
   - name: Room Types & Included Amenities (cruise FAQ)
     org: Cruise industry
     version: ''
     section: ''
     url: ''
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="10" width="32" height="28" rx="2"/><line x1="8" y1="24" x2="40" y2="24"/><line x1="24" y1="10" x2="24" y2="38"/><circle cx="16" cy="17" r="2.5"/><circle cx="32" cy="17" r="2.5"/></svg>
 ---
 

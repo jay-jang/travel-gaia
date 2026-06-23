@@ -58,14 +58,18 @@ distinctions:
 sources:
   - org: IATA
     name: Passenger Services Conference Resolutions Manual (PSCRM) / AIRIMP
-    version: ''
+    version: 46th Edition (2026)
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
+    tier: association
+    verifyQuote: 'Significant Changes and Amendments to the 46th edition (2026) of the IATA Passenger Services Conference Resolution Manual include:'
+    verified: true
   - org: Travelport
     name: Universal API — Air Status Codes
     version: ''
     section: ''
     url: 'https://support.travelport.com/webhelp/uapi/Content/Air/Shared_Air_Topics/PNR_Status_Codes.htm'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="13" width="34" height="22" rx="3"/><path d="M13 24h5l3 5 4-10 3 5h7"/></svg>
 ---
 
@@ -100,5 +104,5 @@ status 코드는 판매·메시징 시 쓰는 action/request 코드(예: NN need
 - **Booking Status Code** vs [Availability Status Message (AVS)](/air/air-ops/availability-status-message-avs.md) — A Booking Status Code (e.g. HK, SS, UC) describes the state of one segment inside a specific PNR; an AVS describes, at the inventory level, whether a class on a flight is open or closed for everyone. AVS feeds the availability display that a sell then acts against.
 
 # Citations
-[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM) / AIRIMP](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
+[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM) / AIRIMP — 46th Edition (2026)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
 [2] [Travelport — Universal API — Air Status Codes](https://support.travelport.com/webhelp/uapi/Content/Air/Shared_Air_Topics/PNR_Status_Codes.htm)

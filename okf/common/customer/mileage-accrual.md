@@ -60,6 +60,7 @@ sources:
     version: ''
     section: ''
     url: 'https://navan.com/resources/glossary/what-is-frequent-flyer-miles'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 38h36"/><rect x="9" y="28" width="6" height="10"/><rect x="21" y="20" width="6" height="18"/><rect x="33" y="12" width="6" height="26"/><path d="M8 22l10-8 8 4 12-12"/></svg>
 ---
 

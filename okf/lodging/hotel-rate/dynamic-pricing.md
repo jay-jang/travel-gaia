@@ -51,16 +51,19 @@ sources:
     version: ''
     section: ''
     url: 'https://www.siteminder.com/r/hotel-dynamic-pricing/'
+    tier: secondary
   - org: Cvent / Hospitality Net
     name: 'Hotel Dynamic Pricing: The Complete Guide for Hoteliers'
     version: ''
     section: ''
     url: 'https://www.cvent.com/en/blog/hospitality/hotel-dynamic-pricing-complete-guide'
+    tier: secondary
   - org: 'International Journal of Hospitality Management (Talon-Ballestero, Nieto-Garcia & Gonzalez-Serrano)'
     name: 'The wheel of dynamic pricing: Towards open pricing and one to one pricing in hotel revenue management'
     version: 'Vol. 102, 2022, 103184'
     section: ''
     url: 'https://www.sciencedirect.com/science/article/pii/S0278431922000469'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 34l8-9 7 6 11-15"/><polyline points="26 16 38 16 38 28"/><path d="M6 40h36"/></svg>
 ---
 

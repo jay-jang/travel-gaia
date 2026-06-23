@@ -56,11 +56,13 @@ sources:
     version: ''
     section: ''
     url: 'https://opentravel.org/'
+    tier: association
   - org: HTNG (Hospitality Technology Next Generation)
     name: HTNG Customer Profile / Preferences specifications
     version: ''
     section: ''
     url: ''
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="15" r="6"/><path d="M12 38c0-7 5-12 12-12s12 5 12 12"/><path d="M33 9l1.4 2.9 3.1.4-2.3 2.1.6 3.1-2.8-1.5-2.8 1.5.6-3.1-2.3-2.1 3.1-.4z"/></svg>
 ---
 

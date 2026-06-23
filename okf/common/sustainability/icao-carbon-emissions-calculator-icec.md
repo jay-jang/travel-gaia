@@ -55,11 +55,15 @@ sources:
     version: ''
     section: ''
     url: 'https://www.icao.int/environmental-protection/environmental-tools/icec'
+    tier: standard-body
   - org: ICAO
     name: ICAO Carbon Emissions Calculator Methodology
-    version: v13.1 (Aug 2024)
+    version: Version 13.1 (Aug 2024)
     section: ''
     url: 'https://icec.icao.int/Documents/Methodology%20ICAO%20Carbon%20Emissions%20Calculator_v13_Final.pdf'
+    tier: standard-body
+    verifyQuote: Version 13.1 ... Aug 2024 ... Version 13 data is based on traffic during calendar year 2016.
+    verified: true
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="6" width="24" height="36" rx="3"/><rect x="17" y="11" width="14" height="7" rx="1"/><path d="M17 24h3M24 24h3M31 24h0M17 30h3M24 30h3M31 30h0M17 36h3M24 36h3"/><path d="M40 14l-6 4 6 4"/></svg>
 ---
 
@@ -92,4 +96,4 @@ ICEC 방법론은 공항 간 대권거리(Great Circle Distance)를 사용해 �
 
 # Citations
 [1] [ICAO — ICAO Carbon Emissions Calculator (ICEC)](https://www.icao.int/environmental-protection/environmental-tools/icec)
-[2] [ICAO — ICAO Carbon Emissions Calculator Methodology — v13.1 (Aug 2024)](https://icec.icao.int/Documents/Methodology%20ICAO%20Carbon%20Emissions%20Calculator_v13_Final.pdf)
+[2] [ICAO — ICAO Carbon Emissions Calculator Methodology — Version 13.1 (Aug 2024)](https://icec.icao.int/Documents/Methodology%20ICAO%20Carbon%20Emissions%20Calculator_v13_Final.pdf)

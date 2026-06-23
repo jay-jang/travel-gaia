@@ -59,11 +59,13 @@ sources:
     version: ''
     section: ''
     url: 'https://servicehub.amadeus.com/c/portal/view-solution/780102/understanding-transitional-stored-tickets-tst-cryptic-and-graphic-'
+    tier: vendor-doc
   - org: Amadeus
     name: How to display a TST and a TST history (Cryptic)
     version: ''
     section: ''
     url: 'https://servicehub.amadeus.com/c/portal/view-solution/820197/how-to-display-a-tst-and-a-tst-history-cryptic-'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="9" width="26" height="22" rx="3"/><path d="M7 16h26"/><path d="M12 22h10M12 26h7"/><path d="M29 24l5 5 8-8"/></svg>
 ---
 

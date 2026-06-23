@@ -50,11 +50,13 @@ sources:
     version: ''
     section: ''
     url: ''
+    tier: secondary
   - org: AHLA / HFTP
     name: Uniform System of Accounts for the Lodging Industry (USALI)
     version: ''
     section: ''
     url: ''
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="14" width="9" height="9" rx="1"/><rect x="19.5" y="14" width="9" height="9" rx="1"/><rect x="32" y="14" width="9" height="9" rx="1"/><rect x="13" y="27" width="9" height="9" rx="1"/><rect x="25.5" y="27" width="9" height="9" rx="1"/><path d="M11 11l5-4 5 4"/></svg>
 ---
 

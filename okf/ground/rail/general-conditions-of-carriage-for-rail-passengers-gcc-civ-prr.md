@@ -51,14 +51,18 @@ distinctions:
 sources:
   - org: CIT (International Rail Transport Committee)
     name: General Conditions of Carriage for Rail Passengers (GCC-CIV/PRR)
-    version: edition 14 December 2025
+    version: Edition 14 December 2025
     section: ''
     url: 'https://www.cit-rail.org/secure-media/files/civ-products-dezemebr-2024/gcc_civprr_2025-12-14_en_accessible_signed.pdf?cid=438003'
+    tier: association
+    verifyQuote: General Conditions of Carriage for Rail Passengers (GCC-CIV/PRR) — Edition 14 December 2025 — Applicable with effect from 7 June 2023
+    verified: true
   - org: CIT (International Rail Transport Committee)
     name: GCC-CIV/PRR — purpose and participating undertakings
     version: ''
     section: ''
     url: 'https://www.cit-rail.org/en/passenger-traffic/products/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="11" y="7" width="22" height="30" rx="2"/><path d="M16 14h12M16 20h12M16 26h8"/><path d="M27 31l4 4 7-8"/></svg>
 ---
 
@@ -91,5 +95,5 @@ CIT가 작성·관리하고 회원 운송사업자에게 적용을 권고하는 
 - **General Conditions of Carriage for Rail Passengers (GCC-CIV/PRR)** vs [Rail Passenger Rights Regulation (EU) 2021/782](/ground/rail/rail-passenger-rights-regulation-eu-2021-782.md) — Regulation (EU) 2021/782 is binding EU law setting passenger rights; the GCC-CIV/PRR is the CIT-drafted contractual document that carriers voluntarily adopt to implement those rights (and CIV obligations) in actual ticket terms. One is statute, the other is the contractual T&C that operationalises it.
 
 # Citations
-[1] [CIT (International Rail Transport Committee) — General Conditions of Carriage for Rail Passengers (GCC-CIV/PRR) — edition 14 December 2025](https://www.cit-rail.org/secure-media/files/civ-products-dezemebr-2024/gcc_civprr_2025-12-14_en_accessible_signed.pdf?cid=438003)
+[1] [CIT (International Rail Transport Committee) — General Conditions of Carriage for Rail Passengers (GCC-CIV/PRR) — Edition 14 December 2025](https://www.cit-rail.org/secure-media/files/civ-products-dezemebr-2024/gcc_civprr_2025-12-14_en_accessible_signed.pdf?cid=438003)
 [2] [CIT (International Rail Transport Committee) — GCC-CIV/PRR — purpose and participating undertakings](https://www.cit-rail.org/en/passenger-traffic/products/)

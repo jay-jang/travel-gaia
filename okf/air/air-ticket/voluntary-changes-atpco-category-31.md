@@ -63,11 +63,13 @@ sources:
     version: ''
     section: ''
     url: 'https://atpco.net/single-blog/what-are-atpco-fare-rules-categories/'
+    tier: vendor-doc
   - org: Amadeus
     name: Amadeus Ticket Changer - automated voluntary reissue
     version: ''
     section: ''
     url: 'https://amadeus.com/documents/en/travel-industry/sales-sheet/amadeus-ticket-changer.pdf'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="8" width="24" height="32" rx="3"/><path d="M16 16h12M16 21h8"/><path d="M37 26a6 6 0 0 0-10-3l-2 2"/><polyline points="25 21 25 25 29 25"/><path d="M27 34a6 6 0 0 0 10-3l2-2"/><polyline points="39 31 39 27 35 27"/></svg>
 ---
 

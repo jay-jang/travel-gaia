@@ -54,11 +54,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.altexsoft.com/blog/hotel-rate-shopping/'
+    tier: secondary
   - org: Cloudbeds
     name: What is a hotel rate shopper and why do hotels need one?
     version: ''
     section: ''
     url: 'https://www.cloudbeds.com/articles/hotel-rate-shopper/'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="21" cy="21" r="12"/><line x1="30" y1="30" x2="40" y2="40"/><line x1="16" y1="24" x2="16" y2="18"/><line x1="21" y1="24" x2="21" y2="15"/><line x1="26" y1="24" x2="26" y2="20"/></svg>
 ---
 

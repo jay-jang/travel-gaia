@@ -56,11 +56,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/whatwedo/airline-distribution/Pages/adm.aspx'
+    tier: association
   - org: IATA
     name: Passenger Agency Conference Resolutions Manual
     version: ''
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/passenger-agency-conference-resolutions-manual/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="8" width="28" height="32" rx="3"/><line x1="16" y1="16" x2="32" y2="16"/><line x1="16" y1="22" x2="32" y2="22"/><circle cx="24" cy="31" r="5"/><line x1="21" y1="31" x2="27" y2="31"/></svg>
 ---
 

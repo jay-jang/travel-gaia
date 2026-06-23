@@ -64,6 +64,7 @@ sources:
     version: ''
     section: ''
     url: 'https://en.wikipedia.org/wiki/Pseudo_city_code'
+    tier: encyclopedia
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M8 28h6V14l4-3 4 3v14"/><path d="M22 28V18h8v10"/><path d="M8 38c2-3 5-3 7 0s5 3 7 0 5-3 7 0 5 3 7 0"/></svg>
 ---
 

@@ -62,11 +62,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.celebritycruises.com/future-cruise-credit'
+    tier: secondary
   - org: Princess Cruises
     name: Cruise Credits — What are Cruise Credits?
     version: ''
     section: ''
     url: 'https://www.princess.com/plan/fcc-onboard-cruise-credits'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="14" width="36" height="22" rx="3"/><line x1="6" y1="22" x2="42" y2="22"/><path d="M30 30c2 2 5 2 6 0"/><polyline points="34 8 38 12 34 16"/><path d="M38 12H20"/></svg>
 ---
 

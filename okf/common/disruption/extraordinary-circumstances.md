@@ -43,11 +43,15 @@ sources:
     version: ''
     section: Article 5(3)
     url: 'https://eur-lex.europa.eu/eli/reg/2004/261/oj/eng'
+    tier: regulation
+    verifyQuote: 'An operating air carrier shall not be obliged to pay compensation in accordance with Article 7, if it can prove that the cancellation is caused by extraordinary circumstances which could not have been avoided even if all reasonable measures'
+    verified: true
   - name: Air Passenger Rights — European Case Law (CJEU judgements summary)
     org: Court of Justice of the European Union
     version: ''
     section: ''
     url: 'https://transport.ec.europa.eu/system/files/2022-03/2022-summary-of-the-most-relevant-cjeu-judgements.pdf'
+    tier: regulator-guidance
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 28a7 7 0 0 1 1-14 9 9 0 0 1 17 2 6 6 0 0 1 1 12z"/><path d="M18 34l-2 5M26 34l-2 5M34 34l-2 5"/><path d="M30 30l-2 4 4-1-2 5" stroke="currentColor"/></svg>
 ---
 

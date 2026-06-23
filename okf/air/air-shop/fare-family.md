@@ -56,11 +56,13 @@ sources:
     version: ''
     section: ''
     url: 'https://atpco.net/branded-fares/'
+    tier: vendor-doc
   - name: Amadeus Fare Families / Branded Fares documentation
     org: Amadeus
     version: ''
     section: ''
     url: ''
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="10" width="32" height="7" rx="2"/><rect x="11" y="21" width="26" height="7" rx="2"/><rect x="14" y="32" width="20" height="7" rx="2"/></svg>
 ---
 

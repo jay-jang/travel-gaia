@@ -36,11 +36,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.squaremouth.com/travel-insurance-benefits/medical-evacuation-and-repatriation'
+    tier: secondary
   - name: Medical Evacuation & Repatriation Insurance Benefits
     org: InsureMyTrip
     version: ''
     section: ''
     url: 'https://www.insuremytrip.com/travel-insurance-plans/evacuation/'
+    tier: secondary
 icon: '<svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="17"/><path d="M7 24 h34"/><path d="M24 7 a26 26 0 0 1 0 34 a26 26 0 0 1 0 -34"/><polyline points="30,18 24,12 18,18"/></svg>'
 ---
 

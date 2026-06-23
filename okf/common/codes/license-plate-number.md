@@ -43,14 +43,18 @@ distinctions:
 sources:
   - org: IATA
     name: Baggage Tracking — IATA Resolution 753 / A4A Resolution 30.53 Implementation Guide
-    version: '2023, Issue 4.0'
+    version: Issue 4.0 November 2023
     section: ''
     url: 'https://www.iata.org/contentassets/5c4aa8b8b3b1432697d2bf3301450684/reso753-implementation-guide---2023_issue-4.0.pdf'
+    tier: association
+    verifyQuote: 'IATA Resolution 753 Implementation Guide Issue 4.0 November 2023 ... License Plate Number: ... Also referred to as a 10-digit bar code or 10-digit bag tag.'
+    verified: true
   - org: IATA
     name: Baggage Standards
     version: ''
     section: ''
     url: 'https://www.iata.org/en/programs/ops-infra/baggage/standards/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 16h16a4 4 0 0 1 4 4v18a4 4 0 0 1-4 4H16a4 4 0 0 1-4-4V20a4 4 0 0 1 4-4z"/><path d="M19 16v-4a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v4"/><path d="M18 24v10M22 24v10M26 24v10M30 24v6"/></svg>
 ---
 
@@ -75,5 +79,5 @@ License Plate Number은 IATA Resolution 753 수하물 추적의 근간이다. �
 - **License Plate Number** vs [Ticket Number](/common/codes/ticket-number.md) — A ticket number identifies the passenger's transportation document; the LPN identifies the physical bag and is recorded against the passenger's record but is not the ticket.
 
 # Citations
-[1] [IATA — Baggage Tracking — IATA Resolution 753 / A4A Resolution 30.53 Implementation Guide — 2023, Issue 4.0](https://www.iata.org/contentassets/5c4aa8b8b3b1432697d2bf3301450684/reso753-implementation-guide---2023_issue-4.0.pdf)
+[1] [IATA — Baggage Tracking — IATA Resolution 753 / A4A Resolution 30.53 Implementation Guide — Issue 4.0 November 2023](https://www.iata.org/contentassets/5c4aa8b8b3b1432697d2bf3301450684/reso753-implementation-guide---2023_issue-4.0.pdf)
 [2] [IATA — Baggage Standards](https://www.iata.org/en/programs/ops-infra/baggage/standards/)

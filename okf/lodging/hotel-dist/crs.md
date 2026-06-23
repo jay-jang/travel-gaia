@@ -75,11 +75,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.ahla.com/htng-technical-specifications'
+    tier: association
   - name: OpenTravel Specification
     org: OpenTravel Alliance
     version: ''
     section: ''
     url: 'https://opentravel.org/download-specs/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="6"/><circle cx="24" cy="8" r="3"/><circle cx="24" cy="40" r="3"/><circle cx="8" cy="16" r="3"/><circle cx="40" cy="16" r="3"/><circle cx="8" cy="32" r="3"/><circle cx="40" cy="32" r="3"/><path d="M24 11v7M24 30v7M11 17l8 4M37 17l-8 4M11 31l8-4M37 31l-8-4"/></svg>
 ---
 

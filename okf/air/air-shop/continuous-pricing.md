@@ -54,11 +54,13 @@ sources:
     version: ''
     section: Continuous / dynamic pricing
     url: 'https://atpco.net/single-blog/what-are-dynamic-offers/'
+    tier: vendor-doc
   - org: Business Travel News
     name: 'Airline Continuous Pricing, Explained'
     version: ''
     section: Continuous pricing
     url: 'https://www.businesstravelnews.com/Procurement/Airline-Continuous-Pricing-Explained'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 34c5 0 6-18 11-18s6 12 11 12 6-16 11-16"/><line x1="6" y1="40" x2="42" y2="40"/><circle cx="17" cy="16" r="1.5" fill="currentColor"/><circle cx="28" cy="28" r="1.5" fill="currentColor"/></svg>
 ---
 

@@ -71,11 +71,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/airline-industry-reservations-interline-message-procedures-airimp/'
+    tier: association
   - name: ATPCO Fares data documentation
     org: ATPCO
     version: ''
     section: ''
     url: 'https://atpco.net/standards/'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 30V18a3 3 0 016 0v9h8a3 3 0 013 3v6"/><path d="M14 33h17"/><path d="M14 30h-2a2 2 0 00-2 2v6"/><circle cx="34" cy="15" r="7"/><path d="M32 18v-6h2.5a1.5 1.5 0 010 3H32m2 0l2.5 3"/></svg>
 ---
 

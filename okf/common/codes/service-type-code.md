@@ -47,19 +47,24 @@ distinctions:
 sources:
   - org: IATA
     name: Standard Schedules Information Manual (SSIM)
-    version: ''
+    version: 36th edition (2026)
     section: Appendix C — Service Types
     url: 'https://www.iata.org/en/publications/manuals/standard-schedules-information/'
+    tier: association
+    verifyQuote: Significant Changes and Amendments to the 36th edition (2026) of the Standard Schedules Information Manual (SSIM)
+    verified: true
   - org: Avinor
     name: Airport Data Dictionary — FlightServiceTypeIATA
     version: ''
     section: ''
     url: 'https://xwiki.avinor.no/display/ADD/FlightServiceTypeIATA'
+    tier: secondary
   - org: Wikipedia
     name: Standard Schedules Information Manual
     version: ''
     section: ''
     url: 'https://en.wikipedia.org/wiki/Standard_Schedules_Information_Manual'
+    tier: encyclopedia
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 24l10-6v4h12l8-6 4 2-4 4 4 4-4 2-8-6H16v4z"/><rect x="30" y="30" width="12" height="12" rx="2"/><path d="M34 36h4"/></svg>
 ---
 
@@ -90,6 +95,6 @@ The Service Type Code appears in core SSIM/SSM schedule records and in distribut
 - **Service Type Code** vs [Aircraft Type Code](/common/codes/aircraft-type-code.md) — The aircraft type code says which equipment operates the leg; the Service Type Code says the commercial nature of the operation, independent of the aircraft used.
 
 # Citations
-[1] [IATA — Standard Schedules Information Manual (SSIM) — Appendix C — Service Types](https://www.iata.org/en/publications/manuals/standard-schedules-information/)
+[1] [IATA — Standard Schedules Information Manual (SSIM) — 36th edition (2026) — Appendix C — Service Types](https://www.iata.org/en/publications/manuals/standard-schedules-information/)
 [2] [Avinor — Airport Data Dictionary — FlightServiceTypeIATA](https://xwiki.avinor.no/display/ADD/FlightServiceTypeIATA)
 [3] [Wikipedia — Standard Schedules Information Manual](https://en.wikipedia.org/wiki/Standard_Schedules_Information_Manual)

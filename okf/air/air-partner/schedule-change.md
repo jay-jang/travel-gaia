@@ -67,6 +67,7 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/standard-schedules-information/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="10" width="26" height="26" rx="2"/><path d="M8 17h26M14 7v6M28 7v6"/><circle cx="36" cy="34" r="8"/><path d="M36 30v4l3 2"/><path d="M30 30l-2-2v3h3"/></svg>
 ---
 

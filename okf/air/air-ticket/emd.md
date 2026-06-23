@@ -67,11 +67,13 @@ sources:
     version: ''
     section: ''
     url: 'https://portal.iata.org/faq/s/article/What-is-an-Electronic-Miscellaneous-Document-EMD-1415811054748'
+    tier: association
   - name: Passenger Services Conference Resolutions Manual (PSCRM)
     org: IATA
     version: ''
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="10" width="32" height="28" rx="3"/><path d="M8 18h32"/><path d="M14 25h8M14 30h12"/><circle cx="31" cy="29" r="4"/><path d="M31 27v4M29.5 28.5h3"/></svg>
 ---
 

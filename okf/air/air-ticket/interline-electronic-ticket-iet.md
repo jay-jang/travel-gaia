@@ -51,11 +51,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/multilateral-interline-traffic-agreements/'
+    tier: association
   - org: IATA
     name: Important changes to Multilateral Interline Traffic Agreements (MITA) - Interline E-ticketing FAQ
     version: ''
     section: ''
     url: 'https://www.iata.org/contentassets/e7a533819be440edbb1e49da96e0f2a8/webinar-important-changes-mita-faq.pdf'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="14" width="36" height="20" rx="3"/><line x1="24" y1="14" x2="24" y2="34" stroke-dasharray="3 3"/><path d="M11 22l6 2-6 2v-1l3-1-3-1z" fill="currentColor" stroke="none"/><path d="M31 22l6 2-6 2v-1l3-1-3-1z" fill="currentColor" stroke="none"/><path d="M13 30h8M27 30h8"/></svg>
 ---
 

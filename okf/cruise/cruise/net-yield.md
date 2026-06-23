@@ -51,6 +51,7 @@ sources:
     version: ''
     section: ''
     url: 'https://www.prnewswire.com/news-releases/royal-caribbean-group-reports-2025-results-issues-2026-guidance-302673898.html'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="7 34 20 22 27 28 41 13"/><polyline points="33 13 41 13 41 21"/><line x1="7" y1="40" x2="41" y2="40"/><line x1="7" y1="40" x2="7" y2="10"/></svg>
 ---
 

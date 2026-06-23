@@ -56,11 +56,13 @@ sources:
     version: ''
     section: FAQ
     url: 'https://www.royalcaribbean.com/faq/questions/what-is-a-guarantee-stateroom'
+    tier: secondary
   - name: What is a "Guarantee" (GTY) Stateroom or Cabin on a Cruise?
     org: CruiseExperts
     version: ''
     section: ''
     url: 'https://www.cruiseexperts.com/news/2015/09/29/what-is-a-guarantee-gty-stateroom-or-cabin-on-a-cruise/'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="12" width="28" height="24" rx="2"/><path d="M19 24l4 4 7-8"/><line x1="10" y1="18" x2="38" y2="18"/></svg>
 ---
 

@@ -45,6 +45,7 @@ sources:
     version: ''
     section: ''
     url: 'https://unece.org/trade/cefact/unlocode-code-list-country-and-territory'
+    tier: standard-body
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="18" r="12"/><path d="M12 18h24M24 6c4 3 4 21 0 24M24 6c-4 3-4 21 0 24"/><path d="M24 30v8"/><path d="M18 38c0 3 4 5 6 5s6-2 6-5"/></svg>
 ---
 

@@ -48,11 +48,13 @@ sources:
     version: ''
     section: ''
     url: 'https://newgeniss.iata.org/airlines/remittance-holding-capacity/'
+    tier: standard-body
   - org: IATA
     name: Risk Management Framework | NewGen ISS
     version: ''
     section: ''
     url: 'https://newgeniss.iata.org/travel-agents/risk-management/'
+    tier: standard-body
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 7a17 17 0 1 0 17 17"/><path d="M24 24V9"/><path d="M24 24l11-7"/><circle cx="24" cy="24" r="2.5"/></svg>
 ---
 

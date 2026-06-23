@@ -48,11 +48,13 @@ sources:
     version: ''
     section: EMSR / nested booking limits
     url: 'https://pubsonline.informs.org/doi/10.1287/opre.37.2.183'
+    tier: secondary
   - org: MIT OpenCourseWare
     name: '16.75J Airline Management (Spring 2006, MIT ICAT / Belobaba): Airline Revenue Management — Littlewood''s rule and EMSR'
     version: ''
     section: EMSR and protection levels
     url: 'https://ocw.mit.edu/courses/16-75j-airline-management-spring-2006/'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M8 38h32"/><path d="M8 38V8"/><path d="M10 30C18 30 20 14 38 12"/><line x1="24" y1="21" x2="24" y2="38" stroke-dasharray="3 3"/><line x1="8" y1="21" x2="24" y2="21" stroke-dasharray="3 3"/><circle cx="24" cy="21" r="2" fill="currentColor"/></svg>
 ---
 

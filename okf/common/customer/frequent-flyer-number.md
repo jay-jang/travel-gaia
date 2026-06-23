@@ -60,6 +60,7 @@ sources:
     version: ''
     section: ''
     url: ''
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="13" width="36" height="22" rx="3"/><path d="M6 21h36"/><path d="M13 28h6M24 28h4M32 28h4"/></svg>
 ---
 

@@ -54,14 +54,20 @@ distinctions:
 sources:
   - name: 'Standard Schedules Information Manual (SSIM), Chapter 4 — Standard Schedules Message (SSM)'
     org: IATA
-    version: ''
+    version: 36th edition (2026)
     section: Chapter 4
     url: 'https://www.iata.org/en/publications/manuals/standard-schedules-information/'
+    tier: association
+    verifyQuote: 'Chapter 4: Standard Schedules Message Procedure (Principles and Rules, Messaging Standards, Technical Message Specification). 36th edition (2026).'
+    verified: true
   - name: 'Standard Schedules Information Manual (SSIM), Chapter 5 — Ad-hoc Schedule Message (ASM)'
     org: IATA
-    version: ''
+    version: 36th edition (2026)
     section: Chapter 5
     url: 'https://www.iata.org/en/publications/manuals/standard-schedules-information/'
+    tier: association
+    verifyQuote: 'Chapter 5: Ad hoc Schedules Message Procedure (Principles and Rules, Message Standards, Technical Specification, Technical Message Specification). 36th edition (2026).'
+    verified: true
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M8 12h32a2 2 0 0 1 2 2v18a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V14a2 2 0 0 1 2-2z"/><path d="M6 15l18 11 18-11"/><path d="M14 38l5-5M34 38l-5-5"/></svg>
 ---
 
@@ -91,5 +97,5 @@ The Standard Schedules Message (SSM) is the operational mechanism behind schedul
 - **Standard Schedules Message** vs [Standard Schedules Information Manual (SSIM)](/air/air-ops/standard-schedules-information-manual-ssim.md) — The SSM is one message type defined within the SSIM; the SSIM is the full manual and file-format standard that defines the SSM, the ASM, the batch SSIM file and all the supporting code conventions.
 
 # Citations
-[1] [IATA — Standard Schedules Information Manual (SSIM), Chapter 4 — Standard Schedules Message (SSM) — Chapter 4](https://www.iata.org/en/publications/manuals/standard-schedules-information/)
-[2] [IATA — Standard Schedules Information Manual (SSIM), Chapter 5 — Ad-hoc Schedule Message (ASM) — Chapter 5](https://www.iata.org/en/publications/manuals/standard-schedules-information/)
+[1] [IATA — Standard Schedules Information Manual (SSIM), Chapter 4 — Standard Schedules Message (SSM) — 36th edition (2026) — Chapter 4](https://www.iata.org/en/publications/manuals/standard-schedules-information/)
+[2] [IATA — Standard Schedules Information Manual (SSIM), Chapter 5 — Ad-hoc Schedule Message (ASM) — 36th edition (2026) — Chapter 5](https://www.iata.org/en/publications/manuals/standard-schedules-information/)

@@ -43,11 +43,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.mwl-law.com/resources/rental-car-company-physical-damage-and-loss-of-use-claims/'
+    tier: secondary
   - org: Claims Journal
     name: Subrogating Rental Car Physical Damage and Loss of Use Claims
     version: ''
     section: ''
     url: 'https://www.claimsjournal.com/columns/road-to-recovery/2020/05/13/297034.htm'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 32h26l-3-9a3 3 0 0 0-3-2H12a3 3 0 0 0-3 2z"/><circle cx="14" cy="35" r="3"/><circle cx="28" cy="35" r="3"/><circle cx="35" cy="16" r="9"/><path d="M35 12v4l2 2"/></svg>
 ---
 

@@ -82,11 +82,13 @@ sources:
     version: ''
     section: ''
     url: 'https://opentravel.org/download-specs/'
+    tier: association
   - name: HTNG distribution and messaging specifications
     org: HTNG
     version: ''
     section: ''
     url: 'https://www.ahla.com/htng-technical-specifications'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="6" width="28" height="36" rx="3"/><line x1="16" y1="15" x2="32" y2="15"/><line x1="16" y1="22" x2="28" y2="22"/><path d="M19 31h7a3 3 0 0 1 0 6h-5l3 3"/><line x1="22" y1="28" x2="22" y2="40"/></svg>
 ---
 

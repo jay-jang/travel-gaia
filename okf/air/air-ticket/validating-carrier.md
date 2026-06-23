@@ -48,6 +48,7 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M23 6l13 5v8c0 8-5 13-13 16-8-3-13-8-13-16v-8z"/><path d="M17 19l4 4 9-9"/></svg>
 ---
 

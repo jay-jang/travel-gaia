@@ -53,11 +53,13 @@ sources:
     version: ''
     section: ''
     url: 'https://atpco.net/single-blog/what-are-atpco-fare-rules-categories/'
+    tier: vendor-doc
   - org: American Airlines
     name: ATPCO General Rule 0 - waivers filed in Cat 31/Cat 33
     version: ''
     section: ''
     url: 'https://saleslink.aa.com/en-US/resources/html/atpco-rule-0.html'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="8" width="24" height="32" rx="3"/><path d="M16 16h12M16 21h8"/><path d="M37 30a6 6 0 1 1-2-4.6"/><polyline points="37 24 37 28 33 28"/><path d="M24 30v6M21.5 33.5l2.5 2.5 2.5-2.5"/></svg>
 ---
 

@@ -61,11 +61,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/airline-industry-reservations-interline-message-procedures-airimp/'
+    tier: association
   - org: Travelport
     name: Universal API — Air Status Codes
     version: ''
     section: ''
     url: 'https://support.travelport.com/webhelp/uapi/Content/Air/Shared_Air_Topics/PNR_Status_Codes.htm'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="35" cy="24" r="5"/><line x1="30" y1="24" x2="14" y2="24"/><polyline points="20 18 14 24 20 30"/><path d="M10 14v20"/></svg>
 ---
 

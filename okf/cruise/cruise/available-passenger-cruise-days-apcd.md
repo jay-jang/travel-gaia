@@ -57,11 +57,13 @@ sources:
     version: ''
     section: Terminology / Selected Operating Data footnotes
     url: 'https://www.prnewswire.com/news-releases/royal-caribbean-group-reports-2025-results-issues-2026-guidance-302673898.html'
+    tier: secondary
   - org: Cruise Lines International Association (CLIA)
     name: Cruise Industry Terminology — capacity (double occupancy per cabin x cruise days)
     version: ''
     section: Terminology
     url: 'https://cruising.org/about-cruise-industry/terminology'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 32h36l-4 8H10z"/><path d="M14 32V14h12l6 6v12"/><line x1="18" y1="19" x2="22" y2="19"/><line x1="18" y1="24" x2="22" y2="24"/><circle cx="34" cy="24" r="5"/><polyline points="34 21 34 24 36 26"/></svg>
 ---
 

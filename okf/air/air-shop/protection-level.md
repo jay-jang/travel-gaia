@@ -49,11 +49,13 @@ sources:
     version: ''
     section: EMSR / protection levels
     url: 'https://ocw.mit.edu/courses/16-75j-airline-management-spring-2006/'
+    tier: secondary
   - org: INFORMS
     name: 'Revenue Management: Models and Methods'
     version: ''
     section: Protection levels
     url: 'https://www.informs-sim.org/wsc09papers/013.pdf'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6l14 6v9c0 9-6 15-14 19-8-4-14-10-14-19v-9z"/><rect x="19" y="20" width="10" height="8" rx="1.5"/><path d="M21 20v-3a3 3 0 016 0v3"/></svg>
 ---
 

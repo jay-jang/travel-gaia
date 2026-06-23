@@ -47,16 +47,19 @@ sources:
     version: ''
     section: Insurance Coverage Options FAQ
     url: 'https://www.alamo.com/en/customer-support/car-rental-faqs/insurance-coverage-options/supplement-liability-insurance.html'
+    tier: secondary
   - org: Budget Car Rental
     name: Supplemental Liability Insurance
     version: ''
     section: Products & Services - Protections
     url: 'https://www.budget.com/en/products-services/protections/supplemental-liability-insurance'
+    tier: secondary
   - org: Insuranceopedia
     name: Supplemental Liability Insurance (SLI)
     version: ''
     section: Definition
     url: 'https://www.insuranceopedia.com/definition/4430/supplemental-liability-insurance-sli'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6l14 5v9c0 8-5 15-14 18-9-3-14-10-14-18v-9z"/><circle cx="24" cy="19" r="3"/><path d="M17 32a7 7 0 0 1 14 0"/></svg>
 ---
 

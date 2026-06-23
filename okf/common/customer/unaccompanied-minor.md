@@ -50,11 +50,13 @@ sources:
     version: ''
     section: ''
     url: ''
+    tier: association
   - org: Wikipedia
     name: Unaccompanied minor (passenger)
     version: ''
     section: ''
     url: 'https://en.wikipedia.org/wiki/Unaccompanied_minor_(passenger)'
+    tier: encyclopedia
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="20" cy="13" r="5"/><path d="M20 18v14"/><path d="M12 24h16"/><path d="M20 32l-5 8"/><path d="M20 32l5 8"/><path d="M30 10h12"/><path d="M36 6l6 4-6 4"/></svg>
 ---
 

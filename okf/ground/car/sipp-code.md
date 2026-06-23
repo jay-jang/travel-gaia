@@ -50,11 +50,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.acriss.org/car-codes/'
+    tier: association
   - org: ''
     name: Travel industry FAQs — SIPP codes in the car rental industry
     version: ''
     section: ''
     url: 'https://www.carrentalgateway.com/glossary/sipp-codes-in-car-rental/'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="14" width="36" height="20" rx="3"/><path d="M13 20v8M13 20h4a2.5 2.5 0 0 1 0 5h-4M23 20a2.5 2.5 0 0 0 0 5h2a2.5 2.5 0 0 1 0 5h-4"/><path d="M33 20v8M37 20v8"/></svg>
 ---
 

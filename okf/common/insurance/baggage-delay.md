@@ -41,11 +41,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.squaremouth.com/travel-insurance-benefits/baggage-delay'
+    tier: secondary
   - org: Allianz Partners
     name: Baggage Delay Benefit
     version: ''
     section: ''
     url: 'https://www.allianztravelinsurance.com/find-a-plan/benefits/baggage-delay.htm'
+    tier: secondary
 icon: '<svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="18" width="24" height="20" rx="2"/><path d="M19 18 v-4 a2 2 0 0 1 2-2 h6 a2 2 0 0 1 2 2 v4"/><circle cx="34" cy="13" r="7"/><polyline points="34,9 34,13 37,15"/></svg>'
 ---
 

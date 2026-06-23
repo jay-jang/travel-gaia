@@ -40,9 +40,12 @@ distinctions:
 sources:
   - org: European Union
     name: Directive (EU) 2016/681 on the use of passenger name record (PNR) data
-    version: '2016'
-    section: ''
+    version: Directive (EU) 2016/681
+    section: Article 8
     url: 'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016L0681'
+    tier: regulation
+    verifyQuote: 'Directive (EU) 2016/681 of the European Parliament and of the Council of 27 April 2016. Article 8(1): air carriers transfer, by the ''push method'', the PNR data listed in Annex I... to the database of the PIU.'
+    verified: true
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="7" width="22" height="28" rx="2"/><path d="M14 15h12"/><path d="M14 21h12"/><path d="M14 27h7"/><circle cx="32" cy="32" r="7"/><path d="M37 37l5 5"/></svg>
 ---
 
@@ -67,4 +70,4 @@ Each EU member state establishes a Passenger Information Unit responsible for co
 - **EU PNR Directive** vs [Advance Passenger Information System](/common/customer/advance-passenger-information-system.md) — The EU PNR Directive transfers reservation-derived PNR data for terrorism and serious-crime purposes; APIS transfers passport-derived identity data for border and customs control. The two are separate carrier-to-government streams with different data sets and purposes.
 
 # Citations
-[1] [European Union — Directive (EU) 2016/681 on the use of passenger name record (PNR) data — 2016](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016L0681)
+[1] [European Union — Directive (EU) 2016/681 on the use of passenger name record (PNR) data — Directive (EU) 2016/681 — Article 8](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016L0681)

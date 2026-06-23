@@ -57,11 +57,13 @@ sources:
     version: ''
     section: Fare rule categories
     url: 'https://atpco.net/single-blog/what-are-atpco-fare-rules-categories/'
+    tier: vendor-doc
   - org: Travelport
     name: Fare Rules Guide
     version: ''
     section: Fare rule categories
     url: 'https://support.travelport.com/webhelp/JSONAPIs/Airv11/Content/Air11/Price/FareRulesGuide.htm'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="6" width="28" height="36" rx="3"/><line x1="16" y1="15" x2="32" y2="15"/><line x1="16" y1="22" x2="32" y2="22"/><line x1="16" y1="29" x2="26" y2="29"/><path d="M28 34l3 3 6-6"/></svg>
 ---
 

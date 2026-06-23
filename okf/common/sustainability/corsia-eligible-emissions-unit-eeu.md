@@ -77,11 +77,15 @@ sources:
     version: ''
     section: ''
     url: 'https://www.icao.int/CORSIA/corsia-eligible-emissions-units'
+    tier: standard-body
   - org: IATA
     name: Fact sheet – CORSIA
-    version: Jun 2026
+    version: June 2026
     section: ''
     url: 'https://www.iata.org/en/iata-repository/pressroom/fact-sheets/fact-sheet-corsia/'
+    tier: association
+    verifyQuote: Fact sheet – CORSIA – June 2026
+    verified: true
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="13"/><path d="M28 19a6 6 0 1 0 0 10"/><path d="M19 24h-5M9 21l-3 3 3 3"/><path d="M36 14l4-4M40 10h-4M40 10v4"/></svg>
 ---
 
@@ -119,4 +123,4 @@ ICAO 기술자문기구(TAB)는 탄소크레딧 프로그램과 그들이 발행
 
 # Citations
 [1] [ICAO — CORSIA Eligible Emissions Units](https://www.icao.int/CORSIA/corsia-eligible-emissions-units)
-[2] [IATA — Fact sheet – CORSIA — Jun 2026](https://www.iata.org/en/iata-repository/pressroom/fact-sheets/fact-sheet-corsia/)
+[2] [IATA — Fact sheet – CORSIA — June 2026](https://www.iata.org/en/iata-repository/pressroom/fact-sheets/fact-sheet-corsia/)

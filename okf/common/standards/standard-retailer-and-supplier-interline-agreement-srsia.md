@@ -45,11 +45,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/contentassets/4d183e7074f14a1abba291d68784aec6/srsia_overview-and-positioning-paper_25march2022.pdf'
+    tier: association
   - org: IATA
     name: Interlining with Offers & Orders
     version: ''
     section: ''
     url: 'https://www.iata.org/en/programs/airline-distribution/retailing/future-of-interline/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 6h14l6 6v30a2 2 0 0 1-2 2H14a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/><path d="M28 6v6h6"/><circle cx="19" cy="26" r="3"/><circle cx="29" cy="26" r="3"/><path d="M22 26h4"/><path d="M17 34h14"/></svg>
 ---
 

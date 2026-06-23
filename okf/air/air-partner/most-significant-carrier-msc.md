@@ -51,18 +51,23 @@ sources:
   - org: IATA
     name: Resolution 302 — Interline Considerations on Baggage Standards (Guidance Document)
     version: ''
-    section: ''
+    section: Resolution 302
     url: 'https://www.iata.org/contentassets/e7a533819be440edbb1e49da96e0f2a8/guidance-document-on-baggage-standards-for-interline.pdf'
+    tier: association
+    verifyQuote: 'IATA Resolution 302 determining which rules to apply in an interline journey, for each checked portion and defining the concept of the Most Significant Carrier (MSC). ... The process to determine the Most Significant Carrier (MSC) is define'
+    verified: true
   - org: ANA
     name: IATA Baggage Resolution 302 related to baggage provision
     version: ''
     section: ''
     url: 'https://www.ana.co.jp/en/jp/guide/boarding-procedures/baggage/international/iata-302/'
+    tier: secondary
   - org: Air New Zealand
     name: Most Significant Carrier Baggage Rules
     version: ''
     section: ''
     url: 'https://www.airnewzealand.com/most-significant-carrier'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="14" y="18" width="20" height="22" rx="2"/><path d="M19 18v-3a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v3"/><polyline points="19 27 23 31 30 23"/></svg>
 ---
 
@@ -95,6 +100,6 @@ IATA Resolution 302(2011년 4월 1일 이후 발권 항공권에 적용)에 따�
 - **Most Significant Carrier (MSC)** vs [Marketing Carrier](/air/air-partner/marketing-carrier.md) — Marketing carrier is the airline whose code is on the booking; the MSC is a selected role under Resolution 302 — since 2015 it is generally the marketing carrier of the first international sector, but it is determined by the rule's geographic method, not simply by who marketed each flight.
 
 # Citations
-[1] [IATA — Resolution 302 — Interline Considerations on Baggage Standards (Guidance Document)](https://www.iata.org/contentassets/e7a533819be440edbb1e49da96e0f2a8/guidance-document-on-baggage-standards-for-interline.pdf)
+[1] [IATA — Resolution 302 — Interline Considerations on Baggage Standards (Guidance Document) — Resolution 302](https://www.iata.org/contentassets/e7a533819be440edbb1e49da96e0f2a8/guidance-document-on-baggage-standards-for-interline.pdf)
 [2] [ANA — IATA Baggage Resolution 302 related to baggage provision](https://www.ana.co.jp/en/jp/guide/boarding-procedures/baggage/international/iata-302/)
 [3] [Air New Zealand — Most Significant Carrier Baggage Rules](https://www.airnewzealand.com/most-significant-carrier)

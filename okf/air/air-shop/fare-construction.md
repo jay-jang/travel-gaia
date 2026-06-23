@@ -61,11 +61,13 @@ sources:
     version: ''
     section: Fare construction
     url: 'https://www.iata.org/en/training/courses/journey-pricing-ticketing/tttg14/en/'
+    tier: association
   - org: IATA
     name: IATA Rates of Exchange
     version: ''
     section: NUC and ROE
     url: 'https://www.iata.org/en/publications/manuals/iata-rates-of-exchange/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="20" width="10" height="10" rx="1.5"/><rect x="31" y="20" width="10" height="10" rx="1.5"/><line x1="17" y1="25" x2="22" y2="25"/><line x1="26" y1="25" x2="31" y2="25"/><path d="M22 25l2-2 2 2-2 2z"/><line x1="12" y1="20" x2="12" y2="14"/><line x1="36" y1="20" x2="36" y2="14"/></svg>
 ---
 

@@ -52,11 +52,13 @@ sources:
     version: '2024'
     section: ''
     url: 'https://www.transportation.gov/airconsumer/refundsfinalruleapril2024'
+    tier: regulator-guidance
   - name: Refunds and Other Consumer Protections (2024 FAA Reauthorization Act)
     org: US Department of Transportation
     version: '2024'
     section: ''
     url: 'https://www.federalregister.gov/documents/2024/08/12/2024-17602/refunds-and-other-consumer-protections-2024-faa-reauthorization'
+    tier: regulation
 icon: '<svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20a14 14 0 1 1-2 10"/><polyline points="12,10 12,20 22,20"/><circle cx="30" cy="30" r="7"/><path d="M30 26v8M28 28.5c.5-.7 1.2-1 2-1 1.2 0 2 .6 2 1.6 0 2.2-4 1.3-4 3.5 0 1.1.9 1.7 2 1.7.9 0 1.6-.4 2-1"/></svg>'
 ---
 

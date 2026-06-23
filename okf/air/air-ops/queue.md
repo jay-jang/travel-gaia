@@ -64,11 +64,13 @@ sources:
     version: ''
     section: ''
     url: ''
+    tier: vendor-doc
   - name: Sabre Format Finder — Queues
     org: Sabre
     version: ''
     section: ''
     url: ''
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="12" r="2"/><circle cx="9" cy="24" r="2"/><circle cx="9" cy="36" r="2"/><line x1="17" y1="12" x2="40" y2="12"/><line x1="17" y1="24" x2="40" y2="24"/><line x1="17" y1="36" x2="40" y2="36"/></svg>
 ---
 

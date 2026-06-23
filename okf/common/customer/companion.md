@@ -50,11 +50,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.americanexpress.com/en-us/credit-cards/credit-intel/free-companion-ticket/'
+    tier: secondary
   - org: Southwest Airlines
     name: Companion Pass - Rapid Rewards
     version: ''
     section: ''
     url: 'https://www.southwest.com/rapid-rewards/tiers/companion-pass/'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="17" cy="15" r="5"/><circle cx="32" cy="17" r="4"/><path d="M8 38c0-6 4-10 9-10s9 4 9 10"/><path d="M28 38c0-5 3-8 7-8 3 0 5 2 6 5"/></svg>
 ---
 

@@ -62,16 +62,19 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/ticketing-handbook/'
+    tier: association
   - org: Travelport
     name: EMDs (Electronic Miscellaneous Documents) Support
     version: ''
     section: ''
     url: 'https://support.travelport.com/webhelp/Smartpoint1G1V/Content/Air/EMD/EMD.htm'
+    tier: vendor-doc
   - org: ARC
     name: Electronic Miscellaneous Document (EMD)
     version: ''
     section: ''
     url: 'https://www2.arccorp.com/support-training/electronic-miscellaneous-document/'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="7" width="30" height="34" rx="3"/><line x1="15" y1="15" x2="33" y2="15"/><line x1="15" y1="21" x2="33" y2="21"/><line x1="15" y1="27" x2="26" y2="27"/><path d="M22 33h12"/><path d="M29 30l3 3-3 3"/></svg>
 ---
 

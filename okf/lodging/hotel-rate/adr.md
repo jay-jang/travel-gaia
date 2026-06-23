@@ -46,11 +46,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.costar.com/products/str-benchmark/resources/glossary'
+    tier: secondary
   - name: Uniform System of Accounts for the Lodging Industry (USALI)
     org: AHLA / HFTP
     version: ''
     section: ''
     url: 'https://usali.hftp.org/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="10" width="32" height="30" rx="3"/><line x1="8" y1="18" x2="40" y2="18"/><line x1="16" y1="8" x2="16" y2="14"/><line x1="32" y1="8" x2="32" y2="14"/><path d="M27 24h-5a2.5 2.5 0 0 0 0 5h4a2.5 2.5 0 0 1 0 5h-6"/><line x1="24" y1="22" x2="24" y2="36"/></svg>
 ---
 

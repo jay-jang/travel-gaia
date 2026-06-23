@@ -53,11 +53,20 @@ console.log(`\n=== content health (WARN, non-fatal) ===`);
   const norm2 = s => String(s || '').toLowerCase().replace(/\s+/g, ' ').trim();
   const idByTerm = new Map(); for (const e of entries) { const n = norm2(e.term); if (n && !idByTerm.has(n)) idByTerm.set(n, e.id); (e.aliases || []).forEach(a => { const k = norm2(a); if (k && !idByTerm.has(k)) idByTerm.set(k, e.id); }); if (e.abbreviation) { const k = norm2(e.abbreviation); if (k && !idByTerm.has(k)) idByTerm.set(k, e.id); } }
   const byId = new Map(entries.map(e => [e.id, e]));
+  const PRIMARY = new Set(['regulation', 'standard-body', 'regulator-guidance', 'association', 'vendor-doc']);
+  const tokenCheck = (val, quote) => { if (!val || !String(val).trim()) return true; if (!quote) return false; const q = quote.toLowerCase(); const toks = String(val).toLowerCase().split(/[^a-z0-9.]+/).filter(t => t.length >= 2 || /[0-9]/.test(t)); return toks.length > 0 && toks.every(t => q.includes(t)); };
   let cites = 0, citesUrl = 0, noSrc = 0, withProv = 0, rels = 0, relRelated = 0;
+  let citesPrimary = 0, citesVer = 0, allSecondary = 0, verNoQuote = 0, verTokenMiss = 0, conceptStdNoPrimary = 0;
   const distPairs = new Set();
   for (const e of entries) {
     if (!(e.sources || []).length) noSrc++;
-    (e.sources || []).forEach(s => { cites++; if (s.url && String(s.url).trim()) citesUrl++; });
+    const srcs = e.sources || [];
+    const hasPrimary = srcs.some(s => PRIMARY.has(s.tier));
+    if (srcs.length && !hasPrimary) allSecondary++;
+    if (/standard|regulation/.test(e.conceptType || '') && srcs.length && !hasPrimary) conceptStdNoPrimary++;
+    srcs.forEach(s => { cites++; if (s.url && String(s.url).trim()) citesUrl++; if (PRIMARY.has(s.tier)) citesPrimary++;
+      const vs = (s.version && s.version.trim()) || (s.section && s.section.trim());
+      if (vs) { citesVer++; if (!s.verifyQuote || !(s.url && s.url.trim())) verNoQuote++; else if (!tokenCheck(s.version, s.verifyQuote) || !tokenCheck(s.section, s.verifyQuote)) verTokenMiss++; } });
     if ((e.providerTerms || []).length) withProv++;
     (e.relationships || []).forEach(r => { rels++; if (r.type === 'related') relRelated++; });
     (e.distinctions || []).forEach(d => { const t = (d.targetId && byId.has(d.targetId)) ? d.targetId : idByTerm.get(norm2(d.targetTerm)); if (t && t !== e.id) distPairs.add(e.id + '>' + t); });
@@ -65,6 +74,9 @@ console.log(`\n=== content health (WARN, non-fatal) ===`);
   let oneway = 0; for (const k of distPairs) { const [a, b] = k.split('>'); if (!distPairs.has(b + '>' + a)) oneway++; }
   const pct = (a, b) => b ? Math.round(100 * a / b) + '%' : '-';
   console.log(`  citations: ${cites} | with URL: ${citesUrl} (${pct(citesUrl, cites)})${cites - citesUrl ? `  ⚠ ${cites - citesUrl} without URL` : ''}`);
+  console.log(`  citations primary-tier: ${citesPrimary} (${pct(citesPrimary, cites)}) | with clause/version: ${citesVer} (${pct(citesVer, cites)})`);
+  console.log(`  entries with no primary source: ${allSecondary}${conceptStdNoPrimary ? ` (incl. ${conceptStdNoPrimary} standard/regulation terms ⚠)` : ''}`);
+  console.log(`  clause/version w/o evidence(url+verifyQuote): ${verNoQuote}${verNoQuote ? ' ⚠' : ' ✓'} | token-mismatch vs evidence (hallucination): ${verTokenMiss}${verTokenMiss ? ' ⚠' : ' ✓'}`);
   console.log(`  entries without any source: ${noSrc}`);
   console.log(`  entries with providerTerms: ${withProv}/${entries.length} (${pct(withProv, entries.length)})`);
   console.log(`  relationships: ${rels} | type=related: ${relRelated} (${pct(relRelated, rels)})`);

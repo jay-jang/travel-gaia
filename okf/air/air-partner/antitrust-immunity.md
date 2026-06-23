@@ -53,11 +53,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.gao.gov/products/gao-19-237'
+    tier: regulator-guidance
   - name: Antitrust immunity for international airline alliances and joint ventures (alliance/codeshare oversight)
     org: U.S. Department of Transportation
     version: ''
     section: ''
     url: 'https://www.transportation.gov/policy/aviation-policy/competition-data-analysis/alliance-codeshares'
+    tier: regulator-guidance
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5l15 6v9c0 10-7 16-15 19-8-3-15-9-15-19v-9z"/><path d="M17 24l5 5 9-11"/></svg>
 ---
 

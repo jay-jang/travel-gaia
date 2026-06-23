@@ -44,11 +44,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.altexsoft.com/blog/merchant-of-record-in-travel/'
+    tier: secondary
   - name: 'Merchant model vs. agency model: A guide for business success'
     org: WEX Inc.
     version: ''
     section: ''
     url: 'https://www.wexinc.com/resources/blog/merchant-vs-agency-model-travel-payments/'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M8 18 11 9h26l3 9"/><path d="M8 18a4 4 0 0 0 8 0 4 4 0 0 0 8 0 4 4 0 0 0 8 0 4 4 0 0 0 8 0"/><path d="M11 21v18h26V21"/><path d="M19 30l3 3 6-6"/></svg>
 ---
 

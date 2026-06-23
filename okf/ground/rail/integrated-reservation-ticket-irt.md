@@ -54,11 +54,13 @@ sources:
     version: ''
     section: ''
     url: 'https://uic.org/com/enews/nr/620/article/the-nrt-non-integrated-reservation-tickets-irt-and-nt-commercial-groups-met-in'
+    tier: association
   - name: Passenger Services Group (IRT/NRT subgroups)
     org: UIC
     version: ''
     section: ''
     url: 'https://uic.org/passenger/passenger-services-group/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="16" width="30" height="16" rx="2"/><path d="M28 16v16"/><path d="M14 24h9"/><path d="M31 20v8h5v-8z"/></svg>
 ---
 

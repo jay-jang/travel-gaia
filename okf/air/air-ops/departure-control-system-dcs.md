@@ -74,11 +74,13 @@ sources:
     version: ''
     section: ''
     url: 'https://amadeus.com/en/travel-glossary/departure-control-system'
+    tier: vendor-doc
   - org: Wikipedia
     name: Departure control system
     version: ''
     section: ''
     url: 'https://en.wikipedia.org/wiki/Departure_control_system'
+    tier: encyclopedia
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="10" width="18" height="14" rx="2"/><line x1="11" y1="15" x2="21" y2="15"/><line x1="11" y1="19" x2="18" y2="19"/><path d="M28 17 H40 M40 17 L36 13 M40 17 L36 21"/><path d="M16 28 C24 38 32 38 40 32"/><path d="M35 30 L41 31 L39 37"/></svg>
 ---
 

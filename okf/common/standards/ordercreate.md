@@ -67,11 +67,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/iata-repository/pressroom/fact-sheets/fact-sheet-ndc/'
+    tier: association
   - org: IATA
     name: Enhanced and Simplified Distribution Implementation Guide
     version: ''
     section: ''
     url: 'https://guides.developer.iata.org/docs/21-1_ImplementationGuide.pdf'
+    tier: standard-body
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="7" width="24" height="30" rx="3"/><path d="M15 15h12M15 21h12M15 27h7"/><circle cx="33" cy="33" r="9"/><path d="M33 29v8M29 33h8"/></svg>
 ---
 

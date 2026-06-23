@@ -60,11 +60,13 @@ sources:
     version: ''
     section: ''
     url: ''
+    tier: association
   - org: Industry usage
     name: Direct connect (travel distribution definition)
     version: ''
     section: ''
     url: ''
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="18" width="12" height="12" rx="2"/><rect x="32" y="18" width="12" height="12" rx="2"/><line x1="16" y1="24" x2="32" y2="24"/><circle cx="24" cy="24" r="2.5" fill="currentColor"/></svg>
 ---
 

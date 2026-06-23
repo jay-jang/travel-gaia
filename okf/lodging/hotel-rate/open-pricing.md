@@ -53,16 +53,19 @@ sources:
     version: ''
     section: ''
     url: 'https://www.hospitalitynet.org/opinion/4126278.html'
+    tier: secondary
   - org: Duetto
     name: Open Pricing Strategy for Hotel Revenue Management
     version: ''
     section: ''
     url: 'https://www.duettocloud.com/en-us/library/drive-profits-with-an-open-pricing-strategy-duetto'
+    tier: vendor-doc
   - org: ''
     name: 'Beyond BAR: the power of Open Pricing (André Santos)'
     version: ''
     section: ''
     url: 'https://www.duettocloud.com/library/beyond-bar-the-power-of-open-pricing'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="24" r="4"/><circle cx="38" cy="12" r="4"/><circle cx="38" cy="24" r="4"/><circle cx="38" cy="36" r="4"/><path d="M14 24l20-9M14 24h20M14 24l20 9"/></svg>
 ---
 

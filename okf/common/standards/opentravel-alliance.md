@@ -55,6 +55,7 @@ sources:
     version: ''
     section: ''
     url: 'https://opentravel.org/Specifications/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="16"/><path d="M8 24h32"/><path d="M24 8c5 4 5 28 0 32M24 8c-5 4-5 28 0 32"/><path d="M15 25l4-4 3 3 5-6 4 4"/></svg>
 ---
 

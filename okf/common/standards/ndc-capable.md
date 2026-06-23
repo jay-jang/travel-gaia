@@ -40,11 +40,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/contentassets/a0767ce7996445a3bc4cacd812e37ce4/guide-ndc-registration-certification-program.pdf'
+    tier: association
   - org: Travel Weekly
     name: IATA replacing current NDC certification process
     version: ''
     section: ''
     url: 'https://www.travelweekly.com/Travel-News/Airline-News/IATA-replacing-current-NDC-certification-process'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="8" width="28" height="32" rx="3"/><path d="M16 16h16M16 22h10"/><path d="M16 30l3 3 7-7"/><circle cx="32" cy="31" r="5"/><path d="M32 36v3l-2-1.5L28 39"/></svg>
 ---
 

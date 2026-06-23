@@ -41,11 +41,13 @@ sources:
     version: ''
     section: ''
     url: 'https://cdp.com/glossary/single-customer-view-scv/'
+    tier: vendor-doc
   - name: What is Identity Resolution?
     org: Industry vendor guidance
     version: ''
     section: ''
     url: 'https://www.salesforce.com/marketing/data/customer-identity-resolution/'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="15" cy="15" r="6"/><circle cx="33" cy="15" r="6"/><path d="M15 21c-4 0-8 3-8 8M33 21c4 0 8 3 8 8"/><circle cx="24" cy="34" r="8"/><path d="M20.5 34l2.5 2.5 4.5-5"/></svg>
 ---
 

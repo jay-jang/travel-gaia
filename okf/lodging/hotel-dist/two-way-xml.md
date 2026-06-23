@@ -70,11 +70,13 @@ sources:
     version: ''
     section: ''
     url: 'https://opentravel.org/'
+    tier: association
   - org: AltexSoft
     name: 'Hotel Tech Specifications by HTNG, OpenTravel, and HEDNA'
     version: ''
     section: ''
     url: 'https://www.altexsoft.com/blog/hotel-tech-specifications-htng-opentravel/'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M8 18h28"/><path d="M31 13l5 5-5 5"/><path d="M40 30H12"/><path d="M17 25l-5 5 5 5"/></svg>
 ---
 

@@ -78,11 +78,13 @@ sources:
     version: ''
     section: ''
     url: 'https://unece.org/trade/uncefact/introducing-unedifact'
+    tier: standard-body
   - org: IATA
     name: Passenger and Airport Data Interchange Standards (PADIS)
     version: ''
     section: ''
     url: ''
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="14" height="28" rx="2"/><rect x="30" y="10" width="14" height="28" rx="2"/><line x1="18" y1="18" x2="30" y2="18"/><line x1="18" y1="24" x2="30" y2="24"/><line x1="18" y1="30" x2="30" y2="30"/><path d="M26 21l4 3-4 3"/><line x1="8" y1="16" x2="14" y2="16"/><line x1="8" y1="22" x2="14" y2="22"/></svg>
 ---
 

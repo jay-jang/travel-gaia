@@ -63,11 +63,13 @@ sources:
     version: ''
     section: ''
     url: 'https://osdm.io/spec/models/'
+    tier: standard-body
   - name: 'Telematics Applications for Passenger Service TSI (timetables, tariffs, reservations, fulfillment)'
     org: European Union / ERA
     version: ''
     section: ''
     url: 'https://www.era.europa.eu/domains/registers/tap_en'
+    tier: regulator-guidance
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="10" width="24" height="30" rx="2"/><path d="M16 18h12M16 24h12M16 30h7"/><path d="M28 36l4 4 8-9"/></svg>
 ---
 

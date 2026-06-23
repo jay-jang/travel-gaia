@@ -50,11 +50,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.altexsoft.com/glossary/booking-engine/'
+    tier: secondary
   - org: RateGain
     name: 'Internet Booking Engine for Hotels: A Direct Booking Guide'
     version: ''
     section: ''
     url: 'https://rategain.com/blog/internet-booking-engines-for-hotels/'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="9" width="34" height="26" rx="2"/><line x1="7" y1="16" x2="41" y2="16"/><line x1="18" y1="39" x2="30" y2="39"/><line x1="24" y1="35" x2="24" y2="39"/><rect x="13" y="21" width="9" height="8" rx="1"/><path d="M27 23h8M27 27h6"/></svg>
 ---
 

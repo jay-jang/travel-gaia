@@ -56,16 +56,19 @@ sources:
     version: ''
     section: ''
     url: 'https://atpco.net/ancillaries/'
+    tier: vendor-doc
   - org: ATPCO
     name: Optional Services Industry Sub Codes
     version: ''
     section: ''
     url: 'https://www.atpco.net/resource/optional-services-industry-sub-codes'
+    tier: vendor-doc
   - org: Travelport
     name: Air Pricing for Optional Services — Universal API
     version: ''
     section: ''
     url: 'https://support.travelport.com/webhelp/uapi/Content/Air/Air_Pricing/Air_Pricing_for_Optional_Services.htm'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="15" width="30" height="22" rx="3"/><path d="M18 15v-3a6 6 0 0112 0v3"/><line x1="16" y1="24" x2="32" y2="24"/><path d="M27 21l3 3-3 3"/></svg>
 ---
 

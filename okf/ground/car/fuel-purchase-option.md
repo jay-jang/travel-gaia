@@ -37,11 +37,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.carrentalgateway.com/glossary/fuel-purchase-option/'
+    tier: secondary
   - org: ''
     name: Fuel Policies for Car Rentals — Full Tank vs. Prepay Explained
     version: ''
     section: ''
     url: 'https://www.finalrentals.com/blog/single/fuel-policies-for-car-rentals'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M10 40V12a4 4 0 0 1 4-4h12a4 4 0 0 1 4 4v28"/><path d="M8 40h24"/><path d="M14 14h12v8H14z"/><path d="M30 18l5 4v12a3 3 0 0 0 6 0V16l-5-5"/></svg>
 ---
 

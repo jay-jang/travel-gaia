@@ -62,11 +62,13 @@ sources:
     version: ''
     section: ''
     url: 'https://thepointsguy.com/loyalty-programs/american-airlines-elite-qualifying-miles-eqm/'
+    tier: secondary
   - org: AwardWallet
     name: A Complete Guide to American Airlines AAdvantage Elite Status (Elite Qualifying Dollars / Loyalty Points)
     version: ''
     section: ''
     url: 'https://awardwallet.com/blog/aa-elite-qualifying-dollar-eqd/'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="18" r="10"/><path d="M24 13l1.8 3.6 4 .6-2.9 2.8.7 4-3.6-1.9-3.6 1.9.7-4-2.9-2.8 4-.6z"/><path d="M17 27l-3 14 10-5 10 5-3-14"/></svg>
 ---
 

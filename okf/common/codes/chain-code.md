@@ -55,11 +55,13 @@ sources:
     version: ''
     section: ''
     url: 'https://openhotel.com/blog/news-and-articles-for-hotels/post.cfm/post/6034/20-gds-words-and-meanings'
+    tier: secondary
   - name: GDS Chain Codes
     org: Marriott
     version: ''
     section: ''
     url: 'https://www.travelagents.marriott.com/travelagents/GDSResInfo.mi'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="18" width="16" height="12" rx="6"/><rect x="26" y="18" width="16" height="12" rx="6"/><path d="M18 24h12"/></svg>
 ---
 

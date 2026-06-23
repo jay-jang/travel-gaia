@@ -49,11 +49,17 @@ sources:
     version: 50th Edition (2026)
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/airline-industry-reservations-interline-message-procedures-airimp/'
+    tier: association
+    verifyQuote: 'Significant Changes and Amendments to the 50th edition (2026) of the IATA Airline Industry Reservations Interline Message Procedures (AIRIMP) include:'
+    verified: true
   - org: IATA
     name: AIRIMP Table of Contents
-    version: ''
+    version: '44th Edition, 1 June 2020'
     section: ''
     url: 'https://www.iata.org/contentassets/c3c225d5a07249fd8f1447669ce27cdb/airimp-table-of-contents.pdf'
+    tier: association
+    verifyQuote: 'AIRIMP, 44th Edition, 1 June 2020 — A4A/IATA Reservations Interline Message Procedures—Passenger (AIRIMP)'
+    verified: true
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="7" width="32" height="34" rx="3"/><line x1="14" y1="15" x2="34" y2="15"/><line x1="14" y1="22" x2="34" y2="22"/><line x1="14" y1="29" x2="28" y2="29"/><path d="M30 33 33 36 38 30"/></svg>
 ---
 
@@ -81,4 +87,4 @@ AIRIMP은 IATA의 Passenger Services Conference를 통해 유지되며, 여행�
 
 # Citations
 [1] [IATA — Airline Industry Reservations Interline Message Procedures - Passenger (AIRIMP) — 50th Edition (2026)](https://www.iata.org/en/publications/manuals/airline-industry-reservations-interline-message-procedures-airimp/)
-[2] [IATA — AIRIMP Table of Contents](https://www.iata.org/contentassets/c3c225d5a07249fd8f1447669ce27cdb/airimp-table-of-contents.pdf)
+[2] [IATA — AIRIMP Table of Contents — 44th Edition, 1 June 2020](https://www.iata.org/contentassets/c3c225d5a07249fd8f1447669ce27cdb/airimp-table-of-contents.pdf)

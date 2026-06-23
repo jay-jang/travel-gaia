@@ -45,13 +45,17 @@ sources:
   - org: IATA
     name: Passenger Services Conference Resolution 787 — Enhanced Airline Distribution (PSC(34)787)
     version: ''
-    section: ''
+    section: PSC(34)787
     url: 'https://www.iata.org/contentassets/6de4dce5f38b45ce82b0db42acd23d1c/ndc-resolution-787.pdf'
+    tier: standard-body
+    verifyQuote: 'RESOLUTION 787 / ENHANCED AIRLINE DISTRIBUTION / (new) / PSC(34)787 / Expiry: Indefinite / Type: B'
+    verified: true
   - org: IATA
     name: Resolution 787 Application (NDC standards documentation)
     version: ''
     section: ''
     url: 'https://www.iata.org/contentassets/b669f9f64e4e406fa2162c4c8ac9c42e/resolution-787-application.pdf'
+    tier: standard-body
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6l16 7v10c0 10-7 16-16 19C15 39 8 33 8 23V13z"/><path d="M17 24l5 5 9-10"/></svg>
 ---
 
@@ -78,5 +82,5 @@ IATA 여객서비스회의를 통해 채택된 Resolution 787은 항공사가 �
 - **IATA Resolution 787** vs [Enhanced and Simplified Distribution (EDIST)](/common/standards/enhanced-and-simplified-distribution-edist.md) — EDIST is the IATA programme/governance umbrella that evolves the NDC and ONE Order standards under Resolution 787; Resolution 787 is the originating resolution that created the NDC standard.
 
 # Citations
-[1] [IATA — Passenger Services Conference Resolution 787 — Enhanced Airline Distribution (PSC(34)787)](https://www.iata.org/contentassets/6de4dce5f38b45ce82b0db42acd23d1c/ndc-resolution-787.pdf)
+[1] [IATA — Passenger Services Conference Resolution 787 — Enhanced Airline Distribution (PSC(34)787) — PSC(34)787](https://www.iata.org/contentassets/6de4dce5f38b45ce82b0db42acd23d1c/ndc-resolution-787.pdf)
 [2] [IATA — Resolution 787 Application (NDC standards documentation)](https://www.iata.org/contentassets/b669f9f64e4e406fa2162c4c8ac9c42e/resolution-787-application.pdf)

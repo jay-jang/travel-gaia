@@ -55,11 +55,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/programs/airline-distribution/retailing/ndc/'
+    tier: association
   - org: ATPCO
     name: NDC Solutions - AirShopping API
     version: ''
     section: ''
     url: 'https://devportal.atpco.net/ndc-solutions/default/airshopping-request'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="21" cy="21" r="12"/><line x1="30" y1="30" x2="40" y2="40"/><path d="M15 21h12"/><path d="M27 21l-4-4"/><path d="M27 21l-4 4"/></svg>
 ---
 

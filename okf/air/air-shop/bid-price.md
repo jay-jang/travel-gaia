@@ -61,11 +61,13 @@ sources:
     version: ''
     section: Bid-price control
     url: 'https://www.informs-sim.org/wsc09papers/013.pdf'
+    tier: secondary
   - org: INFORMS / Management Science
     name: 'Talluri & van Ryzin, ''An Analysis of Bid-Price Controls for Network Revenue Management'', Management Science 44(11), 1998'
     version: ''
     section: ''
     url: 'https://pubsonline.informs.org/doi/10.1287/mnsc.44.11.1577'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="28" x2="40" y2="28" stroke-dasharray="3 3"/><path d="M14 36V24"/><path d="M24 36V18"/><path d="M34 36V28"/><path d="M11 22h6M21 16h6"/></svg>
 ---
 

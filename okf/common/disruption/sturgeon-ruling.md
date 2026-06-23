@@ -44,11 +44,17 @@ sources:
     version: '2009'
     section: ''
     url: 'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62007CJ0402'
+    tier: regulation
+    verifyQuote: Judgment of the Court (Fourth Chamber) of 19 November 2009. Christopher Sturgeon... v Condor Flugdienst GmbH (C-402/07) and Stefan Böck and Cornelia Lepuschitz v Air France SA (C-432/07).
+    verified: true
   - org: Court of Justice of the European Union
     name: 'CJEU confirms Sturgeon: compensation due also for delayed flights (Nelson / TUI Travel)'
     version: '2012'
     section: ''
     url: 'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62010CJ0581'
+    tier: regulation
+    verifyQuote: Joined Cases C‑581/10 and C‑629/10 ... judgment delivered on 23 October 2012.
+    verified: true
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="24" y1="6" x2="24" y2="12"/><line x1="10" y1="14" x2="38" y2="14"/><path d="M10 14l-5 11h10z"/><path d="M38 14l-5 11h10z"/><path d="M5 25a5 5 0 0 0 10 0"/><path d="M33 25a5 5 0 0 0 10 0"/><line x1="24" y1="12" x2="24" y2="38"/><line x1="16" y1="40" x2="32" y2="40"/></svg>
 ---
 

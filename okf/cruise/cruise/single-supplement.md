@@ -50,11 +50,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.cruisecritic.com/articles/what-is-a-single-supplement-on-a-cruise'
+    tier: secondary
   - name: Single supplement
     org: Wikipedia
     version: ''
     section: ''
     url: 'https://en.wikipedia.org/wiki/Single_supplement'
+    tier: encyclopedia
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="15" r="6"/><path d="M14 38c0-6 4.5-10 10-10s10 4 10 10"/><line x1="36" y1="12" x2="42" y2="12"/><line x1="39" y1="9" x2="39" y2="15"/></svg>
 ---
 

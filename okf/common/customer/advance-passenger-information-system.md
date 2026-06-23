@@ -64,11 +64,15 @@ sources:
     version: '2014'
     section: ''
     url: 'https://www.iata.org/contentassets/18a5fdb2dc144d619a8c10dc1472ae80/api-guidelines-main-text_2014.pdf'
+    tier: standard-body
+    verifyQuote: GUIDELINES ON ADVANCE PASSENGER INFORMATION (API) — WCO/IATA/ICAO — 2014 (cover page)
+    verified: true
   - org: ICAO
     name: API Guidelines and PNR Reporting Standards
     version: ''
     section: ''
     url: 'https://www.icao.int/facilitation-programmes/api-guidelines-and-pnr-reporting-standards'
+    tier: standard-body
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="6" width="22" height="30" rx="2"/><circle cx="19" cy="16" r="4"/><path d="M13 27c1.5-3 9.5-3 11 0"/><path d="M30 21h12"/><path d="M37 16l5 5-5 5"/></svg>
 ---
 

@@ -43,11 +43,13 @@ sources:
     version: ''
     section: Pricing units
     url: 'https://www.iata.org/en/training/courses/journey-pricing-ticketing/tttg14/en/'
+    tier: association
   - org: IATA
     name: Passenger Fares and Ticketing - Advanced
     version: ''
     section: Pricing unit construction
     url: 'https://www.iata.org/en/training/courses/passenger-fares-advanced/talf24/en/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="13" width="30" height="22" rx="3"/><line x1="19" y1="13" x2="19" y2="35" stroke-dasharray="3 3"/><circle cx="14" cy="24" r="2"/><circle cx="29" cy="24" r="2"/><line x1="23" y1="24" x2="34" y2="24"/></svg>
 ---
 

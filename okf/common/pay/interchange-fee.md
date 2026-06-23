@@ -41,6 +41,7 @@ sources:
     version: ''
     section: ''
     url: 'https://www.mastercard.com/us/en/business/support/merchant-interchange-rates.html'
+    tier: standard-body
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="14" width="24" height="15" rx="2"/><line x1="7" y1="19" x2="31" y2="19"/><circle cx="36" cy="32" r="7"/><path d="M36 29v3l2 1.5"/><path d="M33.5 30.5v-2h2"/></svg>
 ---
 

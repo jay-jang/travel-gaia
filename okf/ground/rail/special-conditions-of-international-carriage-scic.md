@@ -50,11 +50,15 @@ sources:
     version: ''
     section: ''
     url: 'https://shop.uic.org/en/special-conditions-of-international-carriage-scic'
+    tier: association
   - org: CIT (International Rail Transport Committee)
     name: Special Conditions of International Carriage (SCIC) — NRT / IRT / NT / RPT
-    version: ''
+    version: 9 December 2012 edition
     section: ''
     url: 'https://www.cit-rail.org/media/files/public/CIT-Info_EN/2013/SCIC-NRT_09.12.2012_en.pdf'
+    tier: association
+    verifyQuote: Special Conditions of International Carriage (SCIC) for Journeys using Non Integrated Reservation Tickets (NRT) — 9 December 2012 edition
+    verified: true
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="18" height="24" rx="2"/><path d="M14 16h8M14 21h8M14 26h5"/><rect x="23" y="17" width="16" height="22" rx="2" fill="none"/><path d="M28 24h6M28 29h6M28 34h4"/></svg>
 ---
 
@@ -82,4 +86,4 @@ SCIC 문서는 국제 운임 편람에 발행되어 특정 국제 승차권 상�
 
 # Citations
 [1] [UIC — Special Conditions of International Carriage (SCIC) — international tariffs compilation](https://shop.uic.org/en/special-conditions-of-international-carriage-scic)
-[2] [CIT (International Rail Transport Committee) — Special Conditions of International Carriage (SCIC) — NRT / IRT / NT / RPT](https://www.cit-rail.org/media/files/public/CIT-Info_EN/2013/SCIC-NRT_09.12.2012_en.pdf)
+[2] [CIT (International Rail Transport Committee) — Special Conditions of International Carriage (SCIC) — NRT / IRT / NT / RPT — 9 December 2012 edition](https://www.cit-rail.org/media/files/public/CIT-Info_EN/2013/SCIC-NRT_09.12.2012_en.pdf)

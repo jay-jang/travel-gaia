@@ -55,9 +55,12 @@ distinctions:
 sources:
   - org: IATA
     name: Passenger Services Conference Resolutions Manual (PSCRM)
-    version: ''
+    version: 46th edition (2026)
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
+    tier: association
+    verifyQuote: The current edition mentioned is the 46th edition (2026).
+    verified: true
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="13" width="28" height="18" rx="2.5"/><line x1="6" y1="19" x2="34" y2="19"/><line x1="11" y1="26" x2="18" y2="26"/><circle cx="34" cy="32" r="7"/><path d="M34 28.5v3.5l2.5 1.5"/></svg>
 ---
 
@@ -91,4 +94,4 @@ Form of Payment은 항공권과 EMD의 핵심 요소로, 고객이 어떻게 결
 - **Form of Payment** vs [Transparency in Payments (TIP)](/common/pay/transparency-in-payments-tip.md) — Form of Payment is the ticketing element recording how a sale was paid; TIP is the policy framework governing which forms of payment an airline will accept through the agency channel.
 
 # Citations
-[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
+[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM) — 46th edition (2026)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)

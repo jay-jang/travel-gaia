@@ -62,11 +62,13 @@ sources:
     version: ''
     section: Availability Status Messages
     url: 'https://www.iata.org/en/publications/manuals/airline-industry-reservations-interline-message-procedures-airimp/'
+    tier: association
   - org: AeroCRS / GO7
     name: AVS Recap (PSS Support)
     version: ''
     section: ''
     url: 'https://support.aerocrs.com/hc/en-us/articles/360035474011-AVS-Recap'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="10" width="36" height="28" rx="3"/><path d="M6 18h36"/><circle cx="15" cy="28" r="4"/><path d="M13.5 28l1.2 1.2 2.3-2.6"/><line x1="24" y1="26" x2="36" y2="26"/><line x1="24" y1="31" x2="32" y2="31"/></svg>
 ---
 

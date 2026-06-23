@@ -54,11 +54,13 @@ sources:
     version: ''
     section: ''
     url: 'https://primer.io/blog/what-are-card-networks-and-how-do-they-work'
+    tier: secondary
   - org: Payment Expert
     name: 'The four-party card model: How Visa and Mastercard work'
     version: ''
     section: ''
     url: 'https://paymentexpert.com/2026/03/19/four-party-card-model-explained/'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="12" width="36" height="24" rx="3"/><path d="M6 19h36"/><circle cx="30" cy="29" r="4"/><circle cx="36" cy="29" r="4"/></svg>
 ---
 

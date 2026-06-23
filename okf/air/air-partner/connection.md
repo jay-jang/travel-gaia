@@ -58,6 +58,7 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/standard-schedules-information/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="12" r="3"/><circle cx="24" cy="24" r="4"/><circle cx="40" cy="36" r="3"/><line x1="10.5" y1="13.8" x2="21" y2="21.5"/><line x1="27" y1="26.5" x2="37.5" y2="34.2"/><path d="M24 20 a4 4 0 0 1 0 8"/></svg>
 ---
 

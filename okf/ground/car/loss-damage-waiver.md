@@ -54,11 +54,13 @@ sources:
     version: ''
     section: ''
     url: 'https://wallethub.com/answers/ci/ldw-vs-cdw-2140752380/'
+    tier: secondary
   - org: ''
     name: 'What is a Loss Damage Waiver (LDW), and What Does It Cover?'
     version: ''
     section: ''
     url: 'https://www.finalrentals.com/blog/single/what-is-a-loss-damage-waiver-ldw'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5l15 5v10c0 9-6 16-15 19-9-3-15-10-15-19V10z"/><path d="M16 25l4 4 9-9"/><circle cx="24" cy="21" r="1" fill="currentColor" stroke="none"/></svg>
 ---
 

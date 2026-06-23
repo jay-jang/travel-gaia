@@ -46,11 +46,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.squaremouth.com/travel-insurance-benefits/missed-connection'
+    tier: secondary
   - org: InsureMyTrip
     name: Missed Connection Coverage for Cruisers
     version: ''
     section: ''
     url: 'https://www.insuremytrip.com/travel-insurance-plans-coverages/meet-your-cruise-coverage/'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="24" r="4"/><circle cx="36" cy="24" r="4"/><line x1="16" y1="24" x2="21" y2="24"/><line x1="27" y1="24" x2="32" y2="24"/><line x1="22" y1="19" x2="26" y2="29"/><line x1="26" y1="19" x2="22" y2="29"/></svg>
 ---
 

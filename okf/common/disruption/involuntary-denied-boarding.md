@@ -45,11 +45,13 @@ sources:
     version: ''
     section: Part 250
     url: 'https://www.ecfr.gov/current/title-14/chapter-II/subchapter-A/part-250'
+    tier: regulation
   - name: Periodic Revisions to Denied Boarding Compensation and Domestic Baggage Liability Limits (Federal Register)
     org: US Department of Transportation
     version: '2024'
     section: ''
     url: 'https://www.federalregister.gov/documents/2024/10/24/2024-23588/periodic-revisions-to-denied-boarding-compensation-and-domestic-baggage-liability-limits'
+    tier: regulation
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="14" r="5"/><path d="M10 38v-6a8 8 0 0 1 16 0v6"/><rect x="30" y="16" width="12" height="16" rx="1"/><path d="M30 22h12"/><path d="M33 28l6-6M39 28l-6-6"/></svg>
 ---
 

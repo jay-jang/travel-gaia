@@ -50,11 +50,15 @@ sources:
     version: ''
     section: ''
     url: ''
+    tier: vendor-doc
   - org: IATA
     name: Passenger Services Conference Resolutions Manual (PSCRM)
-    version: ''
+    version: 46th Edition (2026)
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
+    tier: association
+    verifyQuote: 'Significant Changes and Amendments to the 46th edition (2026) of the IATA Passenger Services Conference Resolution Manual include:'
+    verified: true
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M10 24h8"/><path d="M18 24 28 14h10"/><path d="M18 24 28 34h10"/><circle cx="10" cy="24" r="3"/><circle cx="40" cy="14" r="3"/><circle cx="40" cy="34" r="3"/></svg>
 ---
 
@@ -86,4 +90,4 @@ Agents split a PNR when part of a group needs a different itinerary, cancellatio
 
 # Citations
 [1] Amadeus — Amadeus Service Hub — How to split a PNR (Cryptic)
-[2] [IATA — Passenger Services Conference Resolutions Manual (PSCRM)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
+[2] [IATA — Passenger Services Conference Resolutions Manual (PSCRM) — 46th Edition (2026)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)

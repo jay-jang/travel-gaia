@@ -61,16 +61,21 @@ sources:
     version: ''
     section: ''
     url: 'https://developers.booking.com/connectivity/docs/reservations-api/retrieving-new-reservations-ota'
+    tier: vendor-doc
   - org: RateGain
     name: OTA_HotelResNotifRQ — Developer Docs
     version: ''
     section: ''
     url: 'https://developer.rategain.com/our-products/channel-manager/direct-connect-demand-push/interface-specifications-reservation-notification-service/operation-reservation/ota_hotelresnotifrq'
+    tier: vendor-doc
   - org: OpenTravel Alliance
     name: OpenTravel 2014A Message Users Guide
     version: 2014A
-    section: ''
+    section: OTA_HotelResNotifRQ/RS
     url: 'https://www.opentraveldevelopersnetwork.com/sites/default/files/OpenTravel_2014A_Message_Users_Guide.pdf'
+    tier: association
+    verifyQuote: 'Message Users Guide — 2014A, Version 1, June 2014. OTA_HotelResNotifRQ/RS … The initiating system sends a report using the OTA_HotelResNotifRQ message.'
+    verified: true
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="12" width="36" height="26" rx="2"/><path d="M6 16l18 12 18-12"/><circle cx="38" cy="12" r="5" fill="currentColor" stroke="none"/></svg>
 ---
 
@@ -106,4 +111,4 @@ OTA_HotelResNotif는 OpenTravel Alliance 호텔 메시지 집합의 핵심 연�
 # Citations
 [1] [Booking.com — Retrieving new reservations (OTA_HotelResNotif)](https://developers.booking.com/connectivity/docs/reservations-api/retrieving-new-reservations-ota)
 [2] [RateGain — OTA_HotelResNotifRQ — Developer Docs](https://developer.rategain.com/our-products/channel-manager/direct-connect-demand-push/interface-specifications-reservation-notification-service/operation-reservation/ota_hotelresnotifrq)
-[3] [OpenTravel Alliance — OpenTravel 2014A Message Users Guide — 2014A](https://www.opentraveldevelopersnetwork.com/sites/default/files/OpenTravel_2014A_Message_Users_Guide.pdf)
+[3] [OpenTravel Alliance — OpenTravel 2014A Message Users Guide — 2014A — OTA_HotelResNotifRQ/RS](https://www.opentraveldevelopersnetwork.com/sites/default/files/OpenTravel_2014A_Message_Users_Guide.pdf)

@@ -40,17 +40,20 @@ sources:
     name: Standard Carrier Alpha Code (SCAC)
     version: ''
     section: ''
-    url: 'https://nmfta.org/scac/'
+    url: 'https://scac.nmfta.org/'
+    tier: association
   - org: NMFTA
     name: Standard Carrier Alpha Code (SCAC) History
     version: ''
     section: ''
     url: 'https://nmfta.org/scac/history/'
+    tier: association
   - org: Wikipedia
     name: Standard Carrier Alpha Code
     version: ''
     section: ''
     url: 'https://en.wikipedia.org/wiki/Standard_Carrier_Alpha_Code'
+    tier: encyclopedia
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18h20v14H4z"/><path d="M24 22h8l6 6v4H24z"/><circle cx="12" cy="34" r="3"/><circle cx="32" cy="34" r="3"/><path d="M8 14h12M10 10h8"/></svg>
 ---
 
@@ -74,6 +77,6 @@ Developed by NMFTA in the 1960s to enable computerization in transportation, the
 - **Standard Carrier Alpha Code** vs [Air Waybill Number](/common/codes/air-waybill-number.md) — An Air Waybill Number identifies a single air cargo shipment; the SCAC identifies the carrier company itself and may appear on many shipping documents regardless of mode.
 
 # Citations
-[1] [NMFTA — Standard Carrier Alpha Code (SCAC)](https://nmfta.org/scac/)
+[1] [NMFTA — Standard Carrier Alpha Code (SCAC)](https://scac.nmfta.org/)
 [2] [NMFTA — Standard Carrier Alpha Code (SCAC) History](https://nmfta.org/scac/history/)
 [3] [Wikipedia — Standard Carrier Alpha Code](https://en.wikipedia.org/wiki/Standard_Carrier_Alpha_Code)

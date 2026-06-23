@@ -54,14 +54,18 @@ distinctions:
 sources:
   - org: IATA
     name: Reservations Booking Designators (RBD) standard
-    version: ''
+    version: 46th edition (2026)
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
+    tier: association
+    verifyQuote: Significant Changes and Amendments to the 46th edition (2026) of the IATA Passenger Services Conference Resolution Manual
+    verified: true
   - org: Travelport
     name: Booking Class & Cabin (RBD)
     version: ''
     section: ''
     url: 'https://support.travelport.com/webhelp/faresandpricingagencyhelp/Content/Booking%20Class%20RBD%20(Record%206).htm'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="10" width="32" height="28" rx="3"/><path d="M18 30l4-12 4 12M19.3 26h5.4"/><path d="M30 18h3a3 3 0 010 6h-3v6"/></svg>
 ---
 
@@ -94,5 +98,5 @@ Class codes are not standardized across carriers: the same letter can mean diffe
 - **Class Code** vs [Fare Basis Code](/air/air-shop/fare-basis-code.md) — The class code is one letter (the booking bucket); a fare basis code is a longer alphanumeric string whose first character is usually the class code and which encodes the full fare and its conditions.
 
 # Citations
-[1] [IATA — Reservations Booking Designators (RBD) standard](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
+[1] [IATA — Reservations Booking Designators (RBD) standard — 46th edition (2026)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
 [2] [Travelport — Booking Class & Cabin (RBD)](https://support.travelport.com/webhelp/faresandpricingagencyhelp/Content/Booking%20Class%20RBD%20(Record%206).htm)

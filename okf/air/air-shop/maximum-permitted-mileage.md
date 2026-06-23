@@ -49,11 +49,15 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/mileage/mileage-manual-mpm/'
+    tier: association
   - org: IATA
     name: Mileage Suite (Resolution 011)
     version: ''
-    section: ''
+    section: Resolution 011
     url: 'https://www.iata.org/en/publications/manuals/mileage/'
+    tier: association
+    verifyQuote: 'Resolution 011 is referred to as the Mileages and Routes for Tariff Purposes that also denotes the details and applicability of Non-Stop Sector Mileages, Shortest Operated Mileages, Maximum Permitted Mileages and Ticketed Point Mileages.'
+    verified: true
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="35" r="3"/><circle cx="37" cy="13" r="3"/><path d="M13 33C20 30 18 20 26 17" stroke-dasharray="4 3"/><path d="M14 33l24-16"/><path d="M34 11l3 2 1 3"/></svg>
 ---
 
@@ -81,4 +85,4 @@ MPM은 Resolution 011 하의 IATA Mileage Suite의 일부이며, 국제선 운�
 
 # Citations
 [1] [IATA — Maximum Permitted Mileage Manual (MPM)](https://www.iata.org/en/publications/manuals/mileage/mileage-manual-mpm/)
-[2] [IATA — Mileage Suite (Resolution 011)](https://www.iata.org/en/publications/manuals/mileage/)
+[2] [IATA — Mileage Suite (Resolution 011) — Resolution 011](https://www.iata.org/en/publications/manuals/mileage/)

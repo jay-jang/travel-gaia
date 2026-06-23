@@ -44,11 +44,15 @@ sources:
     version: ''
     section: ''
     url: 'https://ec.europa.eu/commission/presscorner/detail/en/ip_23_2389'
+    tier: regulator-guidance
   - org: EUR-Lex / EASA
     name: ReFuelEU Aviation (Regulation (EU) 2023/2405)
-    version: ''
+    version: Regulation (EU) 2023/2405
     section: ''
     url: 'https://eur-lex.europa.eu/eli/reg/2023/2405/oj/eng'
+    tier: regulation
+    verifyQuote: Regulation (EU) 2023/2405 of the European Parliament and of the Council of 18 October 2023 on ensuring a level playing field for sustainable air transport (ReFuelEU Aviation)
+    verified: true
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="15" r="2" fill="currentColor"/><circle cx="31" cy="17" r="2" fill="currentColor"/><circle cx="17" cy="17" r="2" fill="currentColor"/><path d="M18 8h8"/><path d="M14 26h20l-2 14a2 2 0 0 1-2 2H18a2 2 0 0 1-2-2z"/><path d="M14 26l3-6h14l3 6"/><path d="M21 33c2 2 2 3 0 5M27 33c2 2 2 3 0 5"/></svg>
 ---
 
@@ -74,4 +78,4 @@ The regulation entered into force in 2023 and applies from January 2025. Its ble
 
 # Citations
 [1] [European Commission — ReFuelEU Aviation press release IP/23/2389](https://ec.europa.eu/commission/presscorner/detail/en/ip_23_2389)
-[2] [EUR-Lex / EASA — ReFuelEU Aviation (Regulation (EU) 2023/2405)](https://eur-lex.europa.eu/eli/reg/2023/2405/oj/eng)
+[2] [EUR-Lex / EASA — ReFuelEU Aviation (Regulation (EU) 2023/2405) — Regulation (EU) 2023/2405](https://eur-lex.europa.eu/eli/reg/2023/2405/oj/eng)

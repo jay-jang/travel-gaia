@@ -67,11 +67,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/iata-repository/pressroom/fact-sheets/fact-sheet-ndc/'
+    tier: association
   - org: IATA
     name: NDC Implementation Guide / AirShopping message
     version: ''
     section: ''
     url: 'https://guides.developer.iata.org/docs/21-1_ImplementationGuide.pdf'
+    tier: standard-body
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="19" cy="19" r="11"/><path d="M27 27l10 10"/><path d="M14 16h10M14 20h7M14 24h9"/></svg>
 ---
 

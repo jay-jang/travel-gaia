@@ -54,14 +54,18 @@ distinctions:
 sources:
   - org: IATA
     name: Passenger Services Conference Resolutions Manual (PSCRM)
-    version: ''
+    version: 46th Edition (2026)
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
+    tier: association
+    verifyQuote: 'Significant Changes and Amendments to the 46th edition (2026) of the IATA Passenger Services Conference Resolution Manual include:'
+    verified: true
   - org: Amadeus
     name: Amadeus Service Hub - PNR History (RH)
     version: ''
     section: ''
     url: 'https://amadeus.com/en/blog/articles/amadeus-tip-display-the-pnr-history'
+    tier: vendor-doc
 icon: '<svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 9 a15 15 0 1 1 -14 10"/><polyline points="7,11 10,19 18,17"/><polyline points="24,16 24,24 30,28"/></svg>'
 ---
 
@@ -94,5 +98,5 @@ PNR의 요소가 추가·변경·취소될 때마다 시스템은 office/agent(R
 - **PNR History** vs [Record Locator](/air/air-ops/record-locator.md) — A Record Locator is the short key used to retrieve a booking; PNR History is the internal change log of that booking, not an identifier.
 
 # Citations
-[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
+[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM) — 46th Edition (2026)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
 [2] [Amadeus — Amadeus Service Hub - PNR History (RH)](https://amadeus.com/en/blog/articles/amadeus-tip-display-the-pnr-history)

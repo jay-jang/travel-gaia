@@ -46,11 +46,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.littlehotelier.com/blog/running-your-property/hotel-cancellation-policy/'
+    tier: secondary
   - org: Prostay
     name: Hotel Guide to Non-Refundable Rates
     version: ''
     section: ''
     url: 'https://www.prostay.com/blog/2025-hotel-guide-non-refundable-rates/'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="15"/><path d="M24 15v10l5 3"/><path d="M14 14l20 20"/></svg>
 ---
 

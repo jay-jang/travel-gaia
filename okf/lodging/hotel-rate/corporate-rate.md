@@ -68,11 +68,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.amexglobalbusinesstravel.com/the-atlas/hotel-lingo-101/'
+    tier: secondary
   - org: SaaS4H
     name: GDS — Negotiated Rate Loading Map & Rate Access Codes
     version: ''
     section: ''
     url: 'https://www.saas4h.com/global-distribution-system-gds/negotiated-rate-loading-map-rate-access-codes'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="10" width="22" height="30" rx="2"/><path d="M30 18h10v22H30"/><path d="M14 16h6M14 22h6M14 28h6M35 24h2M35 30h2"/></svg>
 ---
 

@@ -47,11 +47,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www2.arccorp.com/'
+    tier: association
   - name: Interactive Agent Reporting (IAR)
     org: ARC
     version: ''
     section: ''
     url: 'https://www2.arccorp.com/products-participation/travel-agencies/agency-participation/participation-products/interactive-agent-reporting-iar'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6h17l7 7v29H12z"/><path d="M28 6v8h8"/><path d="M17 24a7 7 0 0 1 14 0"/><line x1="17" y1="33" x2="31" y2="33"/></svg>
 ---
 

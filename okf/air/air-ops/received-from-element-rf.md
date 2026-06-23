@@ -52,14 +52,18 @@ distinctions:
 sources:
   - org: IATA
     name: Passenger Services Conference Resolutions Manual (PSCRM)
-    version: ''
+    version: 46th Edition (2026)
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
+    tier: association
+    verifyQuote: 'Significant Changes and Amendments to the 46th edition (2026) of the IATA Passenger Services Conference Resolution Manual include:'
+    verified: true
   - org: Sabre
     name: Sabre - PNR Mandatory Elements (PRINT / Received From)
     version: ''
     section: ''
     url: ''
+    tier: vendor-doc
 icon: '<svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="16" r="7"/><path d="M12 38 a12 12 0 0 1 24 0"/><polyline points="30,30 35,35 42,26"/></svg>'
 ---
 
@@ -91,5 +95,5 @@ IATA 여객 예약 표준에 따라 모든 PNR은 흔히 PRINT로 암기되는 �
 - **Received From Element (RF)** vs [PNR History](/air/air-ops/pnr-history.md) — Received From is the single field entered for one action naming its source; PNR History is the accumulated log into which each Received From value, with office and timestamp, is recorded over time.
 
 # Citations
-[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
+[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM) — 46th Edition (2026)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
 [2] Sabre — Sabre - PNR Mandatory Elements (PRINT / Received From)

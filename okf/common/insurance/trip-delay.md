@@ -49,11 +49,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.squaremouth.com/travel-insurance-benefits/travel-delay'
+    tier: secondary
   - org: NerdWallet
     name: Trip Delay Insurance Explained
     version: ''
     section: ''
     url: 'https://www.nerdwallet.com/travel/learn/trip-delay-insurance-explained'
+    tier: secondary
 icon: '<svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="15"/><polyline points="24,15 24,24 31,28"/><path d="M9 9 l4 4 M39 9 l-4 4"/></svg>'
 ---
 

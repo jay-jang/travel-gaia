@@ -52,11 +52,15 @@ sources:
     version: ''
     section: ''
     url: 'https://gbfs.org/documentation/faq/'
+    tier: association
   - org: MobilityData
     name: MobilityData/gbfs — standardized data feed for shared mobility (GitHub)
-    version: ''
+    version: v3.0
     section: ''
     url: 'https://github.com/MobilityData/gbfs'
+    tier: association
+    verifyQuote: '[v3.0](https://github.com/MobilityData/gbfs/blob/v3.0/gbfs.md) | MAJOR | April 11, 2024 | Current Version'
+    verified: true
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="34" r="7"/><circle cx="36" cy="34" r="7"/><path d="M12 34l8-14h10M20 20l8 14M30 20h5M27 20l-2-5"/><path d="M6 8a18 18 0 0 1 8 8M6 14a10 10 0 0 1 4 4"/></svg>
 ---
 
@@ -87,4 +91,4 @@ GBFS 피드는 여러 JSON 파일로 구성되며, 각 파일은 시스템 정�
 
 # Citations
 [1] [MobilityData — General Bikeshare Feed Specification — gbfs.org documentation/FAQ](https://gbfs.org/documentation/faq/)
-[2] [MobilityData — MobilityData/gbfs — standardized data feed for shared mobility (GitHub)](https://github.com/MobilityData/gbfs)
+[2] [MobilityData — MobilityData/gbfs — standardized data feed for shared mobility (GitHub) — v3.0](https://github.com/MobilityData/gbfs)

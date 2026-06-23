@@ -45,11 +45,15 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/mileage/ticketed-point-mileage-tpm/'
+    tier: association
   - org: IATA
     name: Mileage Suite (Resolution 011)
     version: ''
-    section: ''
+    section: Resolution 011
     url: 'https://www.iata.org/en/publications/manuals/mileage/'
+    tier: association
+    verifyQuote: 'Resolution 011 is referred to as the Mileages and Routes for Tariff Purposes that also denotes the details and applicability of Non-Stop Sector Mileages, Shortest Operated Mileages, Maximum Permitted Mileages and Ticketed Point Mileages.'
+    verified: true
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="24" r="3"/><circle cx="37" cy="24" r="3"/><line x1="14" y1="24" x2="34" y2="24"/><line x1="19" y1="21" x2="19" y2="27"/><line x1="24" y1="20" x2="24" y2="28"/><line x1="29" y1="21" x2="29" y2="27"/></svg>
 ---
 
@@ -76,4 +80,4 @@ TPM은 Resolution 011 하의 IATA Mileage Suite에 공시되며, TPM Manual에�
 
 # Citations
 [1] [IATA — Ticketed Point Mileage (TPM)](https://www.iata.org/en/publications/manuals/mileage/ticketed-point-mileage-tpm/)
-[2] [IATA — Mileage Suite (Resolution 011)](https://www.iata.org/en/publications/manuals/mileage/)
+[2] [IATA — Mileage Suite (Resolution 011) — Resolution 011](https://www.iata.org/en/publications/manuals/mileage/)

@@ -59,11 +59,13 @@ sources:
     version: ''
     section: ''
     url: 'https://link.springer.com/article/10.1057/s41272-017-0101-5'
+    tier: secondary
   - org: MIT (Peter Belobaba)
     name: 'Network Revenue Management: O&D Control'
     version: ''
     section: ''
     url: 'https://ocw.mit.edu/courses/16-75j-airline-management-spring-2006/'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="24" r="3"/><circle cx="24" cy="11" r="3"/><circle cx="24" cy="37" r="3"/><circle cx="39" cy="24" r="3"/><path d="M12 24h24"/><path d="M11 22l11-9M37 22L26 13M11 26l11 9M37 26L26 35"/></svg>
 ---
 

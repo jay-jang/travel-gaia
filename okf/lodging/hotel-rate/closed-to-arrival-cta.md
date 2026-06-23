@@ -58,16 +58,19 @@ sources:
     version: ''
     section: ''
     url: 'https://www.xotels.com/en/glossary/cta-closed-to-arrival'
+    tier: secondary
   - org: NetSuite
     name: How to Use Stay Controls in Hotel Revenue Management
     version: ''
     section: ''
     url: 'https://www.netsuite.com/portal/resource/articles/accounting/hotel-stay-contols.shtml'
+    tier: secondary
   - org: Revenue Hub
     name: How do Restrictions Work in Hotel Revenue Management
     version: ''
     section: ''
     url: 'https://revenue-hub.com/how-do-restrictions-work-in-hotel-revenue-management/'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 24h22"/><polyline points="20 16 28 24 20 32"/><circle cx="38" cy="24" r="8"/><line x1="32.5" y1="18.5" x2="43.5" y2="29.5"/></svg>
 ---
 

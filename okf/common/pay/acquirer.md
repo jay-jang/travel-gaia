@@ -46,6 +46,7 @@ sources:
     version: ''
     section: ''
     url: ''
+    tier: standard-body
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6l16 7v3H8v-3z"/><line x1="12" y1="19" x2="12" y2="34"/><line x1="20" y1="19" x2="20" y2="34"/><line x1="28" y1="19" x2="28" y2="34"/><line x1="36" y1="19" x2="36" y2="34"/><line x1="8" y1="38" x2="40" y2="38"/></svg>
 ---
 

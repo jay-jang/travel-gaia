@@ -44,11 +44,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.icao.int/CORSIA/corsia-eligible-fuels'
+    tier: standard-body
   - org: ICAO
     name: Carbon Offsetting and Reduction Scheme for International Aviation (CORSIA)
     version: ''
     section: ''
     url: 'https://www.icao.int/CORSIA'
+    tier: standard-body
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M17 7h11a2 2 0 0 1 2 2v28a4 4 0 0 1-4 4h-7a4 4 0 0 1-4-4V9a2 2 0 0 1 2-2z"/><path d="M15 16h15M20 5v2M27 5v2"/><circle cx="22" cy="28" r="6"/><path d="M25 25a4 4 0 1 0 0 6"/></svg>
 ---
 

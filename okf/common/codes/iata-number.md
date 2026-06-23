@@ -47,11 +47,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/services/travel-agency-program/accreditation-travel/'
+    tier: association
   - org: AltexSoft
     name: IATA number (glossary)
     version: ''
     section: ''
     url: 'https://www.altexsoft.com/glossary/iata-number/'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="8" width="30" height="32" rx="3"/><circle cx="24" cy="19" r="4"/><path d="M17 32c0-4 3.5-6 7-6s7 2 7 6"/><path d="M14 12h4M30 12h4"/></svg>
 ---
 

@@ -54,11 +54,13 @@ sources:
     version: ''
     section: ''
     url: ''
+    tier: association
   - org: Wikipedia
     name: Passenger service system
     version: ''
     section: ''
     url: 'https://en.wikipedia.org/wiki/Passenger_service_system'
+    tier: encyclopedia
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="32" height="10" rx="2"/><rect x="8" y="20" width="32" height="10" rx="2"/><rect x="8" y="32" width="32" height="8" rx="2"/><path d="M13 13h.01M13 25h.01M13 36h.01"/><path d="M18 13h14M18 25h14M18 36h10"/></svg>
 ---
 

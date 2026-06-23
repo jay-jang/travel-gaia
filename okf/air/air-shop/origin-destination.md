@@ -68,11 +68,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/ticketing-handbook/'
+    tier: association
   - name: Airline revenue management literature on O&D control
     org: ''
     version: ''
     section: ''
     url: ''
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="34" r="4"/><path d="M16 32c8-2 12-6 16-16"/><path d="M34 11l3 1 1 3"/><path d="M33 8a4 4 0 11-1 8 4 4 0 011-8z"/></svg>
 ---
 

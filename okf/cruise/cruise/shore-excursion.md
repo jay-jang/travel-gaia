@@ -55,11 +55,13 @@ sources:
     version: ''
     section: ''
     url: 'https://opentravel.org/download-specs/'
+    tier: association
   - name: Everything You Need to Know About Shore Excursions
     org: Cruise industry
     version: ''
     section: ''
     url: ''
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 36h36"/><path d="M10 36l6-16 14 4-4 12"/><circle cx="30" cy="14" r="4"/><path d="M16 20l8-6"/></svg>
 ---
 

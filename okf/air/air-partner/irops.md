@@ -54,11 +54,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
+    tier: association
   - name: A4A IROPS / contingency planning guidance
     org: Airlines for America (A4A)
     version: ''
     section: ''
     url: ''
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 8l16 30H8z"/><line x1="24" y1="18" x2="24" y2="28"/><circle cx="24" cy="33" r="0.5" fill="currentColor"/><path d="M14 14l-4-4M34 14l4-4"/></svg>
 ---
 

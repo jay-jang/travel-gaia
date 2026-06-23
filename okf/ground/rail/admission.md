@@ -62,11 +62,13 @@ sources:
     version: ''
     section: ''
     url: 'https://osdm.io/spec/models/'
+    tier: standard-body
   - name: OSDM Offer structure (admissions / reservations / ancillaries)
     org: UIC
     version: ''
     section: ''
     url: 'https://osdm.io/spec/offer-structure/'
+    tier: standard-body
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M8 16h32a2 2 0 0 1 2 2v4a3 3 0 0 0 0 6v4a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-4a3 3 0 0 0 0-6v-4a2 2 0 0 1 2-2z"/><path d="M28 16v18" stroke-dasharray="2 3"/><path d="M13 24h9"/></svg>
 ---
 

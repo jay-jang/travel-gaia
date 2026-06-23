@@ -49,6 +49,7 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/iata-repository/publications/economic-reports/benefits-of-alliances-and-jointventures/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="24" r="10"/><circle cx="30" cy="24" r="10"/><path d="M24 16.5 a10 10 0 0 1 0 15 a10 10 0 0 1 0 -15z" fill="currentColor" stroke="none"/></svg>
 ---
 

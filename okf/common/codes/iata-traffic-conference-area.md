@@ -45,11 +45,13 @@ sources:
     version: ''
     section: ''
     url: 'https://support.travelport.com/webhelp/Content_Optimizer_Air/Content/Zones_Areas.htm'
+    tier: vendor-doc
   - org: Qantas
     name: IATA Traffic Conference Areas (AgencyConnect)
     version: ''
     section: ''
     url: 'https://www.qantas.com/agencyconnect/gb/en/policy-and-guidelines/clue-cards-and-quick-reference-guides/iata-traffic-conference-areas.html'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="17"/><path d="M24 7v34"/><path d="M9 18c5 3 10 3 15 0s10-3 15 0M9 30c5-3 10-3 15 0s10 3 15 0"/></svg>
 ---
 

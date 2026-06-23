@@ -52,16 +52,19 @@ sources:
     version: ''
     section: ''
     url: 'https://www.altexsoft.com/glossary/last-room-availability-lra/'
+    tier: secondary
   - org: Perk
     name: Last Room Availability (corporate travel glossary)
     version: ''
     section: ''
     url: 'https://www.perk.com/corporate-travel-glossary/last-room-availability/'
+    tier: secondary
   - org: Teplis Travel
     name: Are Last Room Availability Rates Overvalued?
     version: ''
     section: ''
     url: 'https://teplis.com/blog/last-room-availability-rates-overvalued/'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M8 22V14a2 2 0 0 1 2-2h28a2 2 0 0 1 2 2v8"/><path d="M8 22h32v12H8z"/><path d="M14 22v-4a2 2 0 0 1 2-2h6v8"/><path d="M34 28l3 3 5-6"/></svg>
 ---
 

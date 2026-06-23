@@ -47,6 +47,7 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iso.org/iso-3166-country-codes.html'
+    tier: standard-body
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6v36"/><path d="M12 8h22l-4 6 4 6H12"/><rect x="6" y="36" width="30" height="8" rx="2"/><path d="M11 40h2M16 40h2M21 40h2"/></svg>
 ---
 

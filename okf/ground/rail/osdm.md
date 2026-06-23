@@ -73,11 +73,15 @@ sources:
     version: IRS 90918-10
     section: ''
     url: 'https://uic.org/projects-99/osdm'
+    tier: association
+    verifyQuote: The Open Sales and Distribution Model (OSDM) is a rail sector specification enabling interoperable ticket sales for trains and other modes of transport and is defined in the new UIC International Railway Solution (IRS) 90918-10.
+    verified: true
   - name: What is OSDM? (Passenger Department factsheet)
     org: UIC
     version: ''
     section: ''
     url: 'https://uic.org/IMG/pdf/uic-passenger-open-sales-and-distribution-model.pdf'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="10" width="28" height="22" rx="3"/><path d="M10 20h28"/><circle cx="16" cy="15" r="1.5" fill="currentColor"/><circle cx="21" cy="15" r="1.5" fill="currentColor"/><path d="M16 38l-3 4M32 38l3 4M14 32v6M34 32v6"/><path d="M19 26h10"/></svg>
 ---
 

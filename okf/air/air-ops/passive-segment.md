@@ -55,11 +55,13 @@ sources:
     version: ''
     section: ''
     url: 'https://developer.sabre.com/docs/soap_apis/management/itinerary/Add_Passive_Segment'
+    tier: vendor-doc
   - name: Amadeus Functional Documentation — Passive Segments
     org: Amadeus
     version: ''
     section: ''
     url: ''
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="34" r="3.5"/><circle cx="38" cy="14" r="3.5"/><line x1="13" y1="31" x2="35.4" y2="16.6" stroke-dasharray="1 5"/></svg>
 ---
 

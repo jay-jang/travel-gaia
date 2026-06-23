@@ -44,13 +44,19 @@ sources:
   - org: GHG Protocol (WRI/WBCSD)
     name: Corporate Value Chain (Scope 3) Accounting and Reporting Standard
     version: ''
-    section: Category 6
+    section: 'Category 6: Business travel'
     url: 'https://ghgprotocol.org/sites/default/files/standards/Corporate-Value-Chain-Accounting-Reporing-Standard_041613_2.pdf'
+    tier: association
+    verifyQuote: 'Category 6: Business travel — Emissions from business travel may arise from: ... 6. Business travel'
+    verified: true
   - org: GHG Protocol
     name: Technical Guidance for Calculating Scope 3 Emissions – Category 6 (Business Travel)
     version: ''
-    section: Chapter 6
+    section: 'Category 6: Business Travel'
     url: 'https://ghgprotocol.org/sites/default/files/2022-12/Chapter6.pdf'
+    tier: association
+    verifyQuote: 'CATEGORY 6 Business Travel ... Scope 3, category 6 (Business travel)'
+    verified: true
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="16" y="14" width="16" height="28" rx="2"/><path d="M20 14v-3a3 3 0 0 1 3-3h2a3 3 0 0 1 3 3v3"/><path d="M16 22h16"/><path d="M38 10l-7 7-3-3"/><path d="M22 30h4M22 35h4"/></svg>
 ---
 
@@ -76,5 +82,5 @@ Category 6 covers business travel but excludes employee commuting (Category 7). 
 - **GHG Protocol Scope 3 (Business Travel)** vs [Contrail (Non-CO2 Effects)](/common/sustainability/contrail-non-co2-effects.md) — Non-CO2 contrail forcing is a physical climate effect; the GHG Protocol references it only as an optional radiative-forcing multiplier that companies may apply (and must disclose) when accounting for air travel emissions.
 
 # Citations
-[1] [GHG Protocol (WRI/WBCSD) — Corporate Value Chain (Scope 3) Accounting and Reporting Standard — Category 6](https://ghgprotocol.org/sites/default/files/standards/Corporate-Value-Chain-Accounting-Reporing-Standard_041613_2.pdf)
-[2] [GHG Protocol — Technical Guidance for Calculating Scope 3 Emissions – Category 6 (Business Travel) — Chapter 6](https://ghgprotocol.org/sites/default/files/2022-12/Chapter6.pdf)
+[1] [GHG Protocol (WRI/WBCSD) — Corporate Value Chain (Scope 3) Accounting and Reporting Standard — Category 6: Business travel](https://ghgprotocol.org/sites/default/files/standards/Corporate-Value-Chain-Accounting-Reporing-Standard_041613_2.pdf)
+[2] [GHG Protocol — Technical Guidance for Calculating Scope 3 Emissions – Category 6 (Business Travel) — Category 6: Business Travel](https://ghgprotocol.org/sites/default/files/2022-12/Chapter6.pdf)

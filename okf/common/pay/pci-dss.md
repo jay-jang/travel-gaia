@@ -42,6 +42,9 @@ sources:
     version: 4.0.1
     section: ''
     url: 'https://www.pcisecuritystandards.org/'
+    tier: standard-body
+    verifyQuote: 'PCI SSC has published a limited revision to the standard, PCI DSS v4.0.1.'
+    verified: true
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5l14 5v9c0 9-6 16-14 19-8-3-14-10-14-19v-9z"/><rect x="17" y="22" width="14" height="10" rx="1.5"/><path d="M20 22v-3a4 4 0 0 1 8 0v3"/></svg>
 ---
 

@@ -48,11 +48,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.uitp.org/trainings/mobility-as-a-service-maas/'
+    tier: association
   - org: ITF/OECD
     name: Integrating Public Transport into Mobility as a Service (Roundtable 184)
     version: ''
     section: ''
     url: 'https://www.oecd.org/en/publications/integrating-public-transport-into-mobility-as-a-service_94052f32-en.html'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="14" y="6" width="20" height="36" rx="3"/><line x1="14" y1="12" x2="34" y2="12"/><line x1="14" y1="36" x2="34" y2="36"/><circle cx="20" cy="24" r="2.5"/><circle cx="28" cy="20" r="2.5"/><circle cx="27" cy="29" r="2.5"/><path d="M22 24l3-3M22.5 26l4 2"/></svg>
 ---
 

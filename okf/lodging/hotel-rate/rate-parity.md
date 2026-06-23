@@ -56,6 +56,7 @@ sources:
     version: ''
     section: ''
     url: ''
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 8v30"/><path d="M14 38h20"/><path d="M10 14h28"/><path d="M10 14l-5 9a5 5 0 0 0 10 0z"/><path d="M38 14l-5 9a5 5 0 0 0 10 0z"/><circle cx="24" cy="10" r="2"/></svg>
 ---
 

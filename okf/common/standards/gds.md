@@ -81,11 +81,13 @@ sources:
     version: ''
     section: ''
     url: ''
+    tier: association
   - name: Global Distribution System
     org: Amadeus / Sabre / Travelport documentation
     version: ''
     section: ''
     url: ''
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="10"/><path d="M14 24h20M24 14v20"/><path d="M18 17a14 14 0 0 0 0 14M30 17a14 14 0 0 1 0 14"/><path d="M24 24L10 38M24 24l14-14M24 24L10 10M24 24l14 14"/><circle cx="10" cy="10" r="2"/><circle cx="38" cy="10" r="2"/><circle cx="10" cy="38" r="2"/><circle cx="38" cy="38" r="2"/></svg>
 ---
 

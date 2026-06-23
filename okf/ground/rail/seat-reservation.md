@@ -58,11 +58,13 @@ sources:
     version: ''
     section: ''
     url: 'https://osdm.io/spec/models/'
+    tier: standard-body
   - name: What's the difference between tickets and seat reservations?
     org: Rail operator guidance
     version: ''
     section: ''
     url: ''
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 14v14a3 3 0 0 0 3 3h11"/><path d="M16 28h14v8"/><path d="M16 14h-3M30 36v2"/><path d="M30 22l4-4 3 3-4 4z"/><path d="M37 21l-3 9-4 1 1-4z"/></svg>
 ---
 

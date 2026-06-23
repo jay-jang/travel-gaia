@@ -51,11 +51,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.altexsoft.com/blog/airline-interlining-codeshares/'
+    tier: secondary
   - org: Canadian Transportation Agency
     name: 'Code-share arrangements: A Guide'
     version: ''
     section: ''
     url: 'https://otc-cta.gc.ca/eng/publication/code-share-arrangements-a-guide'
+    tier: regulator-guidance
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18h28"/><polyline points="27 11 34 18 27 25"/><path d="M42 30H14"/><polyline points="21 23 14 30 21 37"/></svg>
 ---
 

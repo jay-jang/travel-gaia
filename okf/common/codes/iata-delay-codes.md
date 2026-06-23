@@ -41,14 +41,18 @@ distinctions:
 sources:
   - org: IATA
     name: 'Airport Handling Manual (AHM), Standard IATA Delay Codes'
-    version: ''
+    version: 46th edition (2026)
     section: AHM 730
     url: 'https://www.iata.org/en/publications/store/airport-handling-manual/'
+    tier: association
+    verifyQuote: Airport Handling Manual (AHM) ... 46th edition (2026)
+    verified: true
   - org: Wikipedia
     name: IATA delay codes
     version: ''
     section: ''
     url: 'https://en.wikipedia.org/wiki/IATA_delay_codes'
+    tier: encyclopedia
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="15"/><path d="M24 15v9l6 4"/><path d="M37 11l3-3M11 11L8 8"/></svg>
 ---
 
@@ -77,5 +81,5 @@ AHM 730은 약 100개의 숫자 코드(00-99)를 정의하며, 이는 여객·�
 - **IATA Delay Codes** vs [IROPS](/air/air-partner/irops.md) — IROPS describes the operational situation of irregular operations (delays, cancellations, diversions); IATA delay codes are the standardized two-character labels that classify why a specific delay occurred within that situation.
 
 # Citations
-[1] [IATA — Airport Handling Manual (AHM), Standard IATA Delay Codes — AHM 730](https://www.iata.org/en/publications/store/airport-handling-manual/)
+[1] [IATA — Airport Handling Manual (AHM), Standard IATA Delay Codes — 46th edition (2026) — AHM 730](https://www.iata.org/en/publications/store/airport-handling-manual/)
 [2] [Wikipedia — IATA delay codes](https://en.wikipedia.org/wiki/IATA_delay_codes)

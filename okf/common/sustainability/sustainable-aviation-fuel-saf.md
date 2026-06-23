@@ -58,11 +58,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/programs/sustainability/sustainable-aviation-fuel-saf/'
+    tier: association
   - org: ICAO
     name: Sustainable Aviation Fuels (SAF)
     version: ''
     section: ''
     url: 'https://www.icao.int/SAF'
+    tier: standard-body
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8h12a2 2 0 0 1 2 2v30a4 4 0 0 1-4 4h-8a4 4 0 0 1-4-4V10a2 2 0 0 1 2-2z"/><path d="M16 16h14M20 6v2M26 6v2"/><path d="M24 22c3 3 4 5 4 8a4 4 0 0 1-8 0c0-3 1-5 4-8z"/></svg>
 ---
 

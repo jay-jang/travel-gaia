@@ -43,16 +43,23 @@ sources:
     version: ''
     section: ''
     url: ''
+    tier: regulator-guidance
   - name: Commission Regulation (EU) No 454/2011 (TAP TSI)
     org: European Union
-    version: ''
+    version: 454/2011
     section: ''
     url: 'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011R0454-20190616'
+    tier: regulation
+    verifyQuote: Commission Regulation (EU) No 454/2011 of 5 May 2011 on the technical specification for interoperability relating to the subsystem 'telematics applications for passenger services'
+    verified: true
   - name: 'Commission Implementing Regulation (EU) 2026/253 (TSI Telematics, repealing 454/2011)'
     org: European Union
-    version: ''
+    version: 2026/253
     section: ''
     url: 'https://eur-lex.europa.eu/eli/reg_impl/2026/253/oj/eng'
+    tier: regulation
+    verifyQuote: Commission Implementing Regulation (EU) 2026/253 of 6 February 2026 ... repealing Regulations (EU) No 454/2011 (TAP TSI) and (EU) No 1305/2014 (TAF TSI)
+    verified: true
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="15"/><path d="M24 9v30M9 24h30"/><path d="M24 9a20 20 0 0 1 0 30M24 9a20 20 0 0 0 0 30"/><rect x="20" y="20" width="8" height="8" rx="1"/></svg>
 ---
 
@@ -78,5 +85,5 @@ EU 철도 상호운용 법제 하에서 Regulation (EU) No 454/2011로 채택된
 
 # Citations
 [1] European Union Agency for Railways (ERA) — Telematics Applications for Passenger Service TSI
-[2] [European Union — Commission Regulation (EU) No 454/2011 (TAP TSI)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011R0454-20190616)
-[3] [European Union — Commission Implementing Regulation (EU) 2026/253 (TSI Telematics, repealing 454/2011)](https://eur-lex.europa.eu/eli/reg_impl/2026/253/oj/eng)
+[2] [European Union — Commission Regulation (EU) No 454/2011 (TAP TSI) — 454/2011](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011R0454-20190616)
+[3] [European Union — Commission Implementing Regulation (EU) 2026/253 (TSI Telematics, repealing 454/2011) — 2026/253](https://eur-lex.europa.eu/eli/reg_impl/2026/253/oj/eng)

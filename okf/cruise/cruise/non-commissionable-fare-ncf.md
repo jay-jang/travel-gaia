@@ -51,21 +51,25 @@ sources:
     version: ''
     section: ''
     url: 'https://www.ncl.com/newsroom/norwegian-cruise-line-to-pay-travel-agent-partners-commission-on-non-commissionable-fares'
+    tier: secondary
   - name: NCL's NCF Commission Program FAQs
     org: Norwegian Cruise Line
     version: ''
     section: ''
     url: 'https://go.pardot.com/l/162131/2022-10-24/n7dbxj'
+    tier: secondary
   - name: 'Cruise Analysis: NCF Policies As Clear As Mud'
     org: Travel Market Report
     version: ''
     section: ''
     url: 'https://www.travelmarketreport.com/cruises/articles/cruise-analysis-ncf-policies-as-clear-as-mud'
+    tier: secondary
   - name: Norwegian Cruise Line Eliminates All Non-Commissionable Fares for Travel Advisors
     org: TravelPulse
     version: ''
     section: ''
     url: 'https://www.travelpulse.com/news/cruise/norwegian-cruise-line-eliminates-all-non-commissionable-fares-for-travel-advisors'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="15"/><path d="M24 16v16M20 20h6a3 3 0 0 1 0 6h-5M21 26l6 6"/><line x1="12" y1="36" x2="36" y2="12"/></svg>
 ---
 

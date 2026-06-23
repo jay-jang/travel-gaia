@@ -62,14 +62,20 @@ distinctions:
 sources:
   - name: Passenger Services Conference Resolutions Manual (PSCRM)
     org: IATA
-    version: ''
+    version: 46th Edition (2026)
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
+    tier: association
+    verifyQuote: 'Significant Changes and Amendments to the 46th edition (2026) of the IATA Passenger Services Conference Resolution Manual include:'
+    verified: true
   - name: PADIS EDIFACT/XML Message Standards
     org: IATA
-    version: ''
+    version: v17.1
     section: ''
     url: 'https://standards.atlassian.net/wiki/spaces/AIDM/pages/748453892/PADIS+-+Passenger+and+Airport+Data+Exchange+Standards+Edifact+Implementation+Guide+v17.1+Reservation+Messages'
+    tier: standard-body
+    verifyQuote: PADIS - Passenger and Airport Data Exchange Standards Edifact Implementation Guide (v17.1) Reservation Messages; Latest version is v17.1 (no longer maintained by IATA) since move to AIDM
+    verified: true
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 7 L29 18 L41 19.5 L32 28 L34.5 40 L24 34 L13.5 40 L16 28 L7 19.5 L19 18 Z"/></svg>
 ---
 
@@ -105,5 +111,5 @@ SSR은 IATA PADIS/PSCRM 표준 형식과 4자리 코드 체계(예: WCHR 휠체�
 - **SSR** vs [Traveler Preference](/common/customer/traveler-preference.md) — A traveler preference is stored profile data describing a wish, while an SSR is the actionable message that conveys a specific request to a carrier within a booking; preferences are often the source that drives creation of SSRs but are not themselves a transmitted request until applied.
 
 # Citations
-[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
-[2] [IATA — PADIS EDIFACT/XML Message Standards](https://standards.atlassian.net/wiki/spaces/AIDM/pages/748453892/PADIS+-+Passenger+and+Airport+Data+Exchange+Standards+Edifact+Implementation+Guide+v17.1+Reservation+Messages)
+[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM) — 46th Edition (2026)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
+[2] [IATA — PADIS EDIFACT/XML Message Standards — v17.1](https://standards.atlassian.net/wiki/spaces/AIDM/pages/748453892/PADIS+-+Passenger+and+Airport+Data+Exchange+Standards+Edifact+Implementation+Guide+v17.1+Reservation+Messages)

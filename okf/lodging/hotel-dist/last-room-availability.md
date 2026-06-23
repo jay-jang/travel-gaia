@@ -53,11 +53,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.bcdtravel.com/glossary/last-room-availability/'
+    tier: secondary
   - org: AltexSoft
     name: Last room availability (LRA) — Glossary
     version: ''
     section: ''
     url: 'https://www.altexsoft.com/glossary/last-room-availability-lra/'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="12" width="9" height="9" rx="1"/><rect x="20" y="12" width="9" height="9" rx="1"/><rect x="32" y="12" width="9" height="9" rx="1"/><path d="M10 17l1.5 1.5L14 15M22 17l1.5 1.5L26 15"/><path d="M32 12l9 9M41 12l-9 9"/><path d="M14 38l4-6 4 4 5-8 4 5" /><circle cx="36.5" cy="16.5" r="6.5" opacity="0"/></svg>
 ---
 

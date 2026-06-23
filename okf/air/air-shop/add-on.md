@@ -52,11 +52,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.atpco.net/resources/glossary'
+    tier: vendor-doc
   - org: ATPCO
     name: 'FareManager (constructed fares: add-ons and arbitraries)'
     version: ''
     section: ''
     url: 'https://atpco.net/atpco-faremanager/'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="20" width="12" height="8" rx="1.5"/><line x1="24" y1="24" x2="32" y2="24"/><line x1="28" y1="20" x2="28" y2="28"/><rect x="34" y="20" width="8" height="8" rx="1.5" stroke-dasharray="3 2"/></svg>
 ---
 

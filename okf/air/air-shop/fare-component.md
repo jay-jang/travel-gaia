@@ -61,11 +61,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/ticketing-handbook/'
+    tier: association
   - name: ATPCO Automated Rules documentation
     org: ATPCO
     version: ''
     section: ''
     url: 'https://atpco.net/standards/'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="24" r="3"/><circle cx="37" cy="24" r="3"/><line x1="14" y1="24" x2="34" y2="24"/><rect x="19" y="30" width="10" height="10" rx="2"/><path d="M24 30v-8"/></svg>
 ---
 

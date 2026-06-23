@@ -42,11 +42,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.xotels.com/en/glossary/no-show'
+    tier: secondary
   - org: Lighthouse
     name: Hotel Revenue Management Glossary
     version: ''
     section: No-Show
     url: 'https://www.mylighthouse.com/resources/blog/hotel-revenue-management-glossary'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="19" cy="15" r="5"/><path d="M10 34c0-6 4-10 9-10 2 0 4 .6 5.5 1.6"/><circle cx="34" cy="32" r="9"/><line x1="28" y1="26" x2="40" y2="38"/></svg>
 ---
 

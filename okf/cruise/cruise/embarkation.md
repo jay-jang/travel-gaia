@@ -49,11 +49,13 @@ sources:
     version: ''
     section: ''
     url: ''
+    tier: secondary
   - name: 'OpenTravel Specification (cruise message set: embark/debark times)'
     org: OpenTravel Alliance
     version: ''
     section: ''
     url: ''
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M8 34h32l-3 6H11z"/><path d="M14 34V22h12l5 5h5"/><path d="M22 16l4-4 4 4M26 12v14"/></svg>
 ---
 

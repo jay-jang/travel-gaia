@@ -42,16 +42,19 @@ sources:
     version: ''
     section: ''
     url: 'https://stova.io/successful-room-block-management-part-3-cut-off-dates/'
+    tier: secondary
   - org: Princeton University Travel & Expense
     name: Types of Group Contracts
     version: ''
     section: ''
     url: 'https://travel.princeton.edu/group-travel/meetings-events/types-group-contracts'
+    tier: secondary
   - org: Cvent
     name: Developing a Hotel Room Block Strategy
     version: ''
     section: ''
     url: 'https://www.cvent.com/en/blog/hospitality/hotel-room-block'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="11" width="32" height="29" rx="3"/><line x1="8" y1="19" x2="40" y2="19"/><line x1="16" y1="8" x2="16" y2="14"/><line x1="32" y1="8" x2="32" y2="14"/><path d="M18 28l5 5 9-9"/></svg>
 ---
 

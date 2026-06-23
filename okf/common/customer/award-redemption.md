@@ -58,6 +58,7 @@ sources:
     version: ''
     section: ''
     url: 'https://navan.com/resources/glossary/what-is-frequent-flyer-miles'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="9"/><path d="M16 11l1.6 3.3 3.6.5-2.6 2.5.6 3.6-3.2-1.7-3.2 1.7.6-3.6-2.6-2.5 3.6-.5z"/><path d="M26 26l12 12"/><path d="M38 31v7h-7"/></svg>
 ---
 

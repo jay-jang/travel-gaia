@@ -52,11 +52,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.prnewswire.com/news-releases/sabre-hospitality-solutions-launches-private-label-chain-code-for-park-hotel-group-188191421.html'
+    tier: secondary
   - org: HotelREZ
     name: HotelREZ now offering Private Label GDS chain code solutions
     version: ''
     section: ''
     url: 'https://hotelrez.net/private-label-gds-chain-code/'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22L22 6a2 2 0 012.8 0L42 23a2 2 0 010 2.8L26 42a2 2 0 01-2.8 0L6 25z"/><circle cx="16" cy="16" r="2.5"/><path d="M22 22h8M22 27h6"/></svg>
 ---
 

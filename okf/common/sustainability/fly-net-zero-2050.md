@@ -41,11 +41,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/programs/sustainability/flynetzero/'
+    tier: association
   - org: IATA
     name: Net zero carbon 2050 resolution (fact sheet)
     version: ''
     section: ''
     url: 'https://www.iata.org/en/iata-repository/pressroom/fact-sheets/fact-sheet-iata-net-zero-resolution/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="17"/><path d="M24 7v34M7 24h34"/><path d="M14 14l20 20"/><path d="M30 11a16 16 0 0 1 0 26"/></svg>
 ---
 

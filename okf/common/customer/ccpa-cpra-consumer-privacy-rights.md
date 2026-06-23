@@ -56,11 +56,13 @@ sources:
     version: ''
     section: ''
     url: 'https://oag.ca.gov/privacy/ccpa'
+    tier: regulation
   - org: California Privacy Protection Agency
     name: Text of the California Privacy Rights Act (CPRA)
     version: ''
     section: ''
     url: 'https://cppa.ca.gov/regulations/'
+    tier: regulation
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5l15 5v10c0 11-7 18-15 23-8-5-15-12-15-23V10z"/><path d="M16 24h16"/><path d="M28 20l4 4-4 4"/><circle cx="15" cy="24" r="1.4" fill="currentColor" stroke="none"/></svg>
 ---
 

@@ -51,11 +51,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/services/finance/payment-services/'
+    tier: association
   - org: Delta
     name: Payment Acceptance Policy and Alternative Transfer Methods
     version: ''
     section: ''
     url: 'https://pro.delta.com/content/agency/ca/en/policy-library/distribution-and-revenue-recovery/payment-acceptance-policy-and-alternative-transfer-methods.html'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 24s7-12 20-12 20 12 20 12-7 12-20 12S4 24 4 24z"/><circle cx="24" cy="24" r="6"/><rect x="31" y="30" width="12" height="9" rx="2"/><line x1="31" y1="34" x2="43" y2="34"/></svg>
 ---
 

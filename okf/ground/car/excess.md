@@ -48,16 +48,19 @@ sources:
     version: ''
     section: ''
     url: 'https://www.icarhireinsurance.com/insurance-information-centre/excess-insurance'
+    tier: secondary
   - org: Orbit Car Hire
     name: 'Excess in car rental: What does it mean?'
     version: ''
     section: ''
     url: 'https://www.orbitcarhire.com/en/blog/excess-in-car-rental/'
+    tier: secondary
   - org: RAC
     name: Car Hire Excess Insurance | Rental Protection Cover
     version: ''
     section: ''
     url: 'https://www.rac.co.uk/insurance/car-hire-excess-insurance'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6l16 6v9c0 9-6 15-16 21C14 36 8 30 8 21v-9z"/><path d="M24 14v18"/><path d="M27 18c-1.2-1.2-5-1.6-5 1.3s5 1.4 5 4.4c0 2.9-3.8 2.5-5 1.3"/></svg>
 ---
 

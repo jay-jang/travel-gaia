@@ -46,11 +46,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.hospitalitynet.org/viewpoint/125000006.html'
+    tier: secondary
   - org: RateGain
     name: Revamp Your Hotel's Rate Parity Strategy to Boost Revenue (revenue leakages / rogue rates)
     version: ''
     section: ''
     url: 'https://rategain.com/blog/hotel-parity-prevent-revenue-leakages/'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M10 8h20l-4 14h6L16 42l4-16h-8z" opacity="0"/><path d="M14 8h16a2 2 0 012 2v6a6 6 0 01-6 6h-2v6"/><path d="M14 8a2 2 0 00-2 2v6a6 6 0 006 6"/><circle cx="30" cy="36" r="4"/><path d="M30 30c2 3 4 4 4 6a4 4 0 11-8 0c0-2 2-3 4-6z"/></svg>
 ---
 

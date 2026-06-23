@@ -46,16 +46,19 @@ sources:
     version: ''
     section: ''
     url: 'https://thepointsguy.com/credit-cards/credit-card-transfer-partners/'
+    tier: secondary
   - name: Why all travelers should earn transferable credit card points
     org: The Points Guy
     version: ''
     section: ''
     url: 'https://thepointsguy.com/loyalty-programs/a-guide-to-earning-transferable-points/'
+    tier: secondary
   - name: Credit Card Transfer Partners At a Glance
     org: NerdWallet
     version: ''
     section: ''
     url: 'https://www.nerdwallet.com/travel/learn/heres-how-you-can-transfer-your-points-from-any-major-credit-card-issuer'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="13" cy="14" r="7"/><circle cx="35" cy="34" r="7"/><path d="M22 14h13l-3-3M22 14h13l-3 3"/><path d="M26 34H13l3-3M26 34H13l3 3"/></svg>
 ---
 

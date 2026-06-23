@@ -77,14 +77,18 @@ distinctions:
 sources:
   - name: EMV 3-D Secure
     org: EMVCo
-    version: ''
+    version: 2.2.0–2.3.1.1
     section: ''
     url: 'https://www.emvco.com/emv-technologies/3-d-secure/'
+    tier: standard-body
+    verifyQuote: 'SB n° 279 EMV® 3-D Secure Protocol and Core Functions Specification v2.2.0–2.3.1.1 (published August 11, 2025).'
+    verified: true
   - name: EMVCo explains how EMV 3DS helps meet PSD2 requirements for strong customer authentication
     org: NFCW
     version: ''
     section: ''
     url: 'https://www.nfcw.com/2020/09/09/367797/emvco-explains-how-emv-3ds-helps-meet-psd2-requirements-for-strong-customer-authentication/'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5 9 11v11c0 9 6 16 15 21 9-5 15-12 15-21V11z"/><path d="M17 24l5 5 9-10"/></svg>
 ---
 
@@ -121,5 +125,5 @@ The name refers to the three domains involved: the issuer (cardholder) domain, t
 - **3-D Secure** vs [Strong Customer Authentication](/common/pay/strong-customer-authentication.md) — SCA is the regulatory requirement (the 'what' and 'why'); 3-D Secure is a technical authentication protocol commonly used to satisfy SCA for online card payments (the 'how').
 
 # Citations
-[1] [EMVCo — EMV 3-D Secure](https://www.emvco.com/emv-technologies/3-d-secure/)
+[1] [EMVCo — EMV 3-D Secure — 2.2.0–2.3.1.1](https://www.emvco.com/emv-technologies/3-d-secure/)
 [2] [NFCW — EMVCo explains how EMV 3DS helps meet PSD2 requirements for strong customer authentication](https://www.nfcw.com/2020/09/09/367797/emvco-explains-how-emv-3ds-helps-meet-psd2-requirements-for-strong-customer-authentication/)

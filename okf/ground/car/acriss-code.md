@@ -60,11 +60,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.acriss.org/car-codes/'
+    tier: association
   - org: ACRISS (Association of Car Rental Industry Systems Standards)
     name: Car Codes Explained — Expanded Matrix
     version: ''
     section: ''
     url: 'https://www.acriss.org/car-codes/expanded-matrix/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M7 30l3-9a4 4 0 0 1 4-3h20a4 4 0 0 1 4 3l3 9"/><path d="M5 30h38v6a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2v-1H12v1a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2z"/><circle cx="13" cy="30" r="2"/><circle cx="35" cy="30" r="2"/><path d="M19 12h10M19 8h6"/></svg>
 ---
 

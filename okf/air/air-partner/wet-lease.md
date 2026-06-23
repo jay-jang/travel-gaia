@@ -54,9 +54,12 @@ distinctions:
 sources:
   - name: 'Convention on International Civil Aviation (Chicago Convention), Article 83 bis on lease/charter/interchange of aircraft'
     org: ICAO
-    version: ''
-    section: ''
+    version: Ninth Edition (2006)
+    section: Article 83 bis
     url: 'https://www.icao.int/sites/default/files/2024-12/7300_cons.pdf'
+    tier: standard-body
+    verifyQuote: 'Article 83 bis (transfer of certain functions and duties in cases of lease, charter or interchange of aircraft) ... Article 83 bis - Transfer of certain functions and duties. Ninth Edition - 2006.'
+    verified: true
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 24 L26 20 L40 8 L34 24 L40 40 L26 28 Z"/><path d="M4 34 q6 4 12 0 q6 -4 12 0 q6 4 12 0"/></svg>
 ---
 
@@ -89,4 +92,4 @@ Wet lease is also known as ACMI for the four elements the lessor supplies: Aircr
 - **Wet Lease** vs [Capacity Purchase Agreement](/air/air-partner/capacity-purchase-agreement.md) — A wet lease/ACMI provides aircraft, crew, maintenance, and insurance per block hour; a CPA is a longer-term commercial framework where the regional flies entirely under the mainline's brand and revenue control, not just supplying lift.
 
 # Citations
-[1] [ICAO — Convention on International Civil Aviation (Chicago Convention), Article 83 bis on lease/charter/interchange of aircraft](https://www.icao.int/sites/default/files/2024-12/7300_cons.pdf)
+[1] [ICAO — Convention on International Civil Aviation (Chicago Convention), Article 83 bis on lease/charter/interchange of aircraft — Ninth Edition (2006) — Article 83 bis](https://www.icao.int/sites/default/files/2024-12/7300_cons.pdf)

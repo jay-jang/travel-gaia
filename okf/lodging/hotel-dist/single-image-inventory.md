@@ -53,11 +53,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.hospitalitynet.org/news/4011822.html'
+    tier: secondary
   - org: SiteMinder
     name: What Is a Global Distribution System (GDS)?
     version: ''
     section: ''
     url: 'https://www.siteminder.com/r/global-distribution-system/'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="6"/><path d="M24 18V6M24 30v12M18 24H6M30 24h12"/><circle cx="24" cy="6" r="2.5"/><circle cx="24" cy="42" r="2.5"/><circle cx="6" cy="24" r="2.5"/><circle cx="42" cy="24" r="2.5"/></svg>
 ---
 

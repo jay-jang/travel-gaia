@@ -52,9 +52,12 @@ distinctions:
 sources:
   - org: IATA
     name: Passenger Services Conference Resolutions Manual (PSCRM)
-    version: ''
+    version: 46th Edition (2026)
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
+    tier: association
+    verifyQuote: 'Significant Changes and Amendments to the 46th edition (2026) of the IATA Passenger Services Conference Resolution Manual include:'
+    verified: true
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="11" y="7" width="26" height="34" rx="3"/><circle cx="18" cy="15" r="1.6" fill="currentColor" stroke="none"/><circle cx="18" cy="24" r="1.6" fill="currentColor" stroke="none"/><circle cx="18" cy="33" r="1.6" fill="currentColor" stroke="none"/><path d="M24 15h7M24 24h7M24 33h7"/></svg>
 ---
 
@@ -88,4 +91,4 @@ PNR 안에서 itinerary는 항공 Segment(및 그 Leg), ARNK surface 구간, 환
 - **Itinerary** vs [Repositioning Cruise](/cruise/cruise/repositioning-cruise.md) — An itinerary is any planned sequence of ports; a repositioning cruise is a specific kind of itinerary defined by different start and end ports because the ship is being moved between regions.
 
 # Citations
-[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
+[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM) — 46th Edition (2026)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)

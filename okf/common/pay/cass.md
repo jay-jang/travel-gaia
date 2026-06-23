@@ -53,11 +53,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/services/finance/cass/'
+    tier: association
   - org: IATA
     name: IATA Cargo Accounts Settlement System (CASS) - Airlines
     version: ''
     section: ''
     url: 'https://www.iata.org/contentassets/ef4dd454b4eb45ec8943ca351c61de07/iata-cass-airlines-en.pdf'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M8 18 24 10l16 8v12L24 38 8 30z"/><path d="M8 18l16 8 16-8"/><line x1="24" y1="26" x2="24" y2="38"/><path d="M16 14v6"/></svg>
 ---
 

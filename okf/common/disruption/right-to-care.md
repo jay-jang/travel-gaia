@@ -59,11 +59,15 @@ sources:
     version: ''
     section: Article 9
     url: 'https://eur-lex.europa.eu/eli/reg/2004/261/oj/eng'
+    tier: regulation
+    verifyQuote: 'Where reference is made to this Article, passengers shall be offered free of charge: (a) meals and refreshments... (b) hotel accommodation... and (c) transport between the airport and place of accommodation. (Article 9)'
+    verified: true
   - name: Air passenger rights
     org: Your Europe (European Commission)
     version: ''
     section: ''
     url: 'https://europa.eu/youreurope/citizens/travel/passenger-rights/air/index_en.htm'
+    tier: regulator-guidance
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 40C12 32 6 25 6 17a9 9 0 0 1 18-3 9 9 0 0 1 18 3c0 8-6 15-18 23z"/><path d="M16 22h5l2-4 3 8 2-4h4"/></svg>
 ---
 

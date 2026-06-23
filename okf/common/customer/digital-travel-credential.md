@@ -49,16 +49,23 @@ sources:
     version: '1.0'
     section: 3.2 ICAO DTC Types
     url: 'https://www.icao.int/sites/default/files/TRIP/Publications/High-Level-Guidance-explaining-ICAO-DTC.pdf'
+    tier: standard-body
+    verifyQuote: 'HIGH-LEVEL GUIDANCE: EXPLAINING THE ICAO DIGITAL TRAVEL CREDENTIALS — Version – 1.0 | June 2024. Section heading: ''3.2 ICAO DTC Types''.'
+    verified: true
   - name: Digital Travel Credentials (DTC)
     org: ICAO
-    version: ''
+    version: '1.2'
     section: ''
     url: 'https://www.icao.int/sites/default/files/TRIP/Publications/Digital-Travel-Credentials-DTC.pdf'
+    tier: standard-body
+    verifyQuote: 'Digital Travel Credentials (DTC) Virtual Component Data Structure and PKI Mechanisms — TECHNICAL REPORT — Version – 1.2, October 2020 (Author: ISO/IEC JTC1 SC17 WG3/TF5).'
+    verified: true
   - name: 'Digital travel credentials: Unlocking the future of borderless identity'
     org: ICAO Uniting Aviation
     version: ''
     section: ''
     url: 'https://unitingaviation.com/news/security-facilitation/digital-travel-credentials-unlocking-the-future-of-borderless-identity/'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="11" y="6" width="26" height="36" rx="3"/><circle cx="24" cy="18" r="5"/><path d="M17 31c0-4 3-6 7-6s7 2 7 6"/><path d="M30 9l2 2 3-3"/></svg>
 ---
 
@@ -89,5 +96,5 @@ DTC는 실물 여권 제시를 대체(궁극적으로) 또는 보완하는 신�
 
 # Citations
 [1] [ICAO — High-Level Guidance: Explaining the ICAO Digital Travel Credential (Version 1.0, June 2024) — 1.0 — 3.2 ICAO DTC Types](https://www.icao.int/sites/default/files/TRIP/Publications/High-Level-Guidance-explaining-ICAO-DTC.pdf)
-[2] [ICAO — Digital Travel Credentials (DTC)](https://www.icao.int/sites/default/files/TRIP/Publications/Digital-Travel-Credentials-DTC.pdf)
+[2] [ICAO — Digital Travel Credentials (DTC) — 1.2](https://www.icao.int/sites/default/files/TRIP/Publications/Digital-Travel-Credentials-DTC.pdf)
 [3] [ICAO Uniting Aviation — Digital travel credentials: Unlocking the future of borderless identity](https://unitingaviation.com/news/security-facilitation/digital-travel-credentials-unlocking-the-future-of-borderless-identity/)

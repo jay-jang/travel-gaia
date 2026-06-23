@@ -46,11 +46,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.easa.europa.eu/en/domains/environment/eaer/market-based-measures/eu-emissions-trading-system'
+    tier: regulator-guidance
   - org: European Commission
     name: Reducing emissions from aviation
     version: ''
     section: ''
     url: 'https://climate.ec.europa.eu/eu-action/transport-decarbonisation/reducing-emissions-aviation_en'
+    tier: regulator-guidance
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="10" r="2" fill="currentColor"/><circle cx="31" cy="12" r="2" fill="currentColor"/><circle cx="17" cy="12" r="2" fill="currentColor"/><circle cx="24" cy="17" r="2" fill="currentColor"/><path d="M10 40V30M19 40V26M28 40V30M37 40V24"/><path d="M8 40h32"/><path d="M10 30l9-4 9 4 9-6"/></svg>
 ---
 

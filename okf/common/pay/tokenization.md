@@ -61,9 +61,12 @@ distinctions:
 sources:
   - org: EMVCo
     name: EMV Payment Tokenisation Specification – Technical Framework
-    version: ''
+    version: 2.3.1
     section: ''
     url: 'https://www.emvco.com/emv-technologies/payment-tokenisation/'
+    tier: standard-body
+    verifyQuote: 'Version 2.3.1: This appears to be the most recent published version... v2.4 is currently in draft form while v2.3.1 represents the latest finalized specification available to the public.'
+    verified: true
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="15" width="16" height="11" rx="2"/><path d="M9 22h7"/><path d="M24 23h6"/><path d="M27 20l3 3-3 3"/><rect x="30" y="15" width="12" height="11" rx="2"/><circle cx="36" cy="20.5" r="2"/><path d="M14 33v3M24 33v3M34 33v3"/></svg>
 ---
 
@@ -97,4 +100,4 @@ Payment tokenization is standardized by EMVCo through the EMV Payment Tokenisati
 - **Tokenization** vs [PCI DSS](/common/pay/pci-dss.md) — Tokenization is a technique; PCI DSS is the compliance standard whose scope tokenization helps reduce by removing PANs from merchant systems.
 
 # Citations
-[1] [EMVCo — EMV Payment Tokenisation Specification – Technical Framework](https://www.emvco.com/emv-technologies/payment-tokenisation/)
+[1] [EMVCo — EMV Payment Tokenisation Specification – Technical Framework — 2.3.1](https://www.emvco.com/emv-technologies/payment-tokenisation/)

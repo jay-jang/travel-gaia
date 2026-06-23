@@ -52,11 +52,13 @@ sources:
     version: ''
     section: Booking limits and nested seat inventory control
     url: 'https://ocw.mit.edu/courses/16-75j-airline-management-spring-2006/2e0689d14860f52fbd0ea84a07d48048_lect18.pdf'
+    tier: secondary
   - org: SSRN
     name: 'Nesting Booking Limits in Revenue Management: The Good, the Bad and the Ugly (Jean Michel Chapuis, 2008)'
     version: ''
     section: ''
     url: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1124707'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="12" width="28" height="24" rx="3"/><line x1="10" y1="27" x2="38" y2="27"/><path d="M14 31h4M22 31h4M30 31h4"/><path d="M15 19l3 3 6-6"/></svg>
 ---
 

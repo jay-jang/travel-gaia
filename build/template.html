@@ -596,6 +596,7 @@ footer{color:var(--faint);font-family:var(--sans);font-size:.76rem;text-align:ce
   const vertById = new Map(VERTICALS.map(v=>[v.id,v]));
   const vertName = v => LANG==='ko' ? (v.short||v.title) : (v.title||v.short);
   const catsByVert = new Map(VERTICALS.map(v=>[v.id, CATS.filter(c=>c.vertical===v.id)]));
+  const PRIMARY_TIERS = new Set(['regulation','standard-body','regulator-guidance','association','vendor-doc']);
   const byId = new Map(ENTRIES.map(e=>[e.id,e]));
   const catById = new Map(CATS.map(c=>[c.id,c]));
   const entriesByCat = new Map(CATS.map(c=>[c.id,[]]));
@@ -812,7 +813,9 @@ footer{color:var(--faint);font-family:var(--sans);font-size:.76rem;text-align:ce
     if(e.distinctions&&e.distinctions.length){ h+=`<div class="note"><h4>${esc(t('fDist'))}</h4>`;
       e.distinctions.forEach(d=>{ const ex=(LANG==='ko'&&d.explanation_ko)||d.explanation; h+=`<div class="dist"><b>${linkTerm(d.targetId,d.targetTerm)}</b><br>${esc(ex)}</div>`; }); h+=`</div>`; }
     if(e.sources&&e.sources.length){ h+=`<div class="note"><h4>${esc(t('fSrc'))}</h4><ul class="src">`;
-      e.sources.forEach(s=>{ const bits=[s.org,s.name,s.version,s.section].filter(Boolean).map(esc).join(' · '); h+=`<li>${s.url?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${bits}</a>`:bits}</li>`; }); h+=`</ul></div>`; }
+      e.sources.forEach(s=>{ const bits=[s.org,s.name,s.version,s.section].filter(Boolean).map(esc).join(' · ');
+        const pri=PRIMARY_TIERS.has(s.tier); const tag=s.tier?`<span title="${esc(s.tier)}" style="font-family:var(--mono);font-size:.6rem;margin-right:5px;padding:0 4px;border:1px solid ${pri?'var(--accent)':'var(--rule)'};color:${pri?'var(--accent)':'var(--faint)'}">${pri?(LANG==='ko'?'1차':'primary'):(LANG==='ko'?'참고':'ref')}</span>`:'';
+        h+=`<li>${tag}${s.url?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${bits}</a>`:bits}</li>`; }); h+=`</ul></div>`; }
     h+=`</aside></article>`;
     main.innerHTML=h; renderSidebar(e.category); main.focus(); document.title=`${e.term} — Travel Gaia`; }
 

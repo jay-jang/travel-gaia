@@ -62,11 +62,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/contentassets/d13875e9ed784f75bac90f000760e998/saf-accounting-policy-paper_20230905_final.pdf'
+    tier: association
   - org: ICAO
     name: ACT-SAF Series 6 – SAF accounting and book-and-claim systems
     version: ''
     section: ''
     url: 'https://www.icao.int/sites/default/files/environmental-protection/Documents/ACT-SAF/ACT-SAF-Series-6-SAF-accounting-and-book-and-claim-systems.pdf'
+    tier: standard-body
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M8 12a4 4 0 0 1 4-4h9v28h-9a4 4 0 0 0-4 4z"/><path d="M40 12a4 4 0 0 0-4-4h-9v28h9a4 4 0 0 1 4 4z"/><path d="M30 22l4 4 8-9"/></svg>
 ---
 

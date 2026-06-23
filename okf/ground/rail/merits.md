@@ -63,11 +63,13 @@ sources:
     version: ''
     section: ''
     url: 'https://uic.org/passenger/passenger-services-group/merits'
+    tier: association
   - org: Global Railway Review
     name: UIC gives third party access to MERITS Integrated Data
     version: ''
     section: ''
     url: 'https://uic.org/com/enews/nr/637/article/merits-integrated-timetable-data-are-now-available-to-third-parties-uic-the'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="10" width="32" height="28" rx="2"/><path d="M8 18h32"/><path d="M14 10v8M22 10v8M30 10v8"/><path d="M13 26h6M13 31h10M25 26h10M27 31h8"/></svg>
 ---
 

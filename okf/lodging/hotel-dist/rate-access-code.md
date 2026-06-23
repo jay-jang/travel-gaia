@@ -56,11 +56,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.saas4h.com/global-distribution-system-gds/negotiated-rate-loading-map-rate-access-codes'
+    tier: secondary
   - org: Travelport
     name: Negotiated Rate Codes / Multi-Level Rates (Smartpoint)
     version: ''
     section: ''
     url: 'https://support.travelport.com/webhelp/Smartpoint1G1V/Content/Hotel/RelatedTopics/Hotel_NegotiatedRates.htm'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="22" width="28" height="18" rx="2"/><path d="M16 22v-6a8 8 0 0116 0v6"/><circle cx="24" cy="30" r="2.5"/><path d="M24 32.5V36"/></svg>
 ---
 

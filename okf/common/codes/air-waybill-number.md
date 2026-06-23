@@ -64,11 +64,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/programs/cargo/e/'
+    tier: association
   - org: Wikipedia
     name: Air waybill
     version: ''
     section: ''
     url: 'https://en.wikipedia.org/wiki/Air_waybill'
+    tier: encyclopedia
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="8" width="28" height="32" rx="2"/><path d="M16 16h16M16 22h16M16 28h10"/><path d="M30 34l4 4 8-8"/></svg>
 ---
 

@@ -53,14 +53,18 @@ distinctions:
 sources:
   - org: IATA
     name: Standard Schedules Information Manual (SSIM)
-    version: ''
+    version: 36th edition (2026)
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/standard-schedules-information/'
+    tier: association
+    verifyQuote: Significant Changes and Amendments to the 36th edition (2026) of the Standard Schedules Information Manual (SSIM)
+    verified: true
   - org: Wikipedia
     name: Flight number
     version: ''
     section: ''
     url: 'https://en.wikipedia.org/wiki/Flight_number'
+    tier: encyclopedia
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 27l30-9c2-.6 4 .4 4 2s-1.7 3-3.5 3.6L13 32l-4 6-3-1 2-7-6-1 2-2 5 1z"/><path d="M22 28l4 8"/></svg>
 ---
 
@@ -94,5 +98,5 @@ The numeric portion is limited to four digits. Many carriers follow conventions 
 - **Flight Number** vs [Service Type Code](/common/codes/service-type-code.md) — A flight number identifies a specific commercial flight (carrier + numeric); the Service Type Code is a separate one-character attribute on the same leg that says what kind of service it is (passenger, cargo, charter, ferry, etc.).
 
 # Citations
-[1] [IATA — Standard Schedules Information Manual (SSIM)](https://www.iata.org/en/publications/manuals/standard-schedules-information/)
+[1] [IATA — Standard Schedules Information Manual (SSIM) — 36th edition (2026)](https://www.iata.org/en/publications/manuals/standard-schedules-information/)
 [2] [Wikipedia — Flight number](https://en.wikipedia.org/wiki/Flight_number)

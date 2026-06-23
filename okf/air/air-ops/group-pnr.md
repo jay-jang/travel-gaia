@@ -57,11 +57,15 @@ sources:
     version: ''
     section: ''
     url: ''
+    tier: vendor-doc
   - org: IATA
     name: Passenger Services Conference Resolutions Manual (PSCRM)
-    version: ''
+    version: 46th Edition (2026)
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
+    tier: association
+    verifyQuote: 'Significant Changes and Amendments to the 46th edition (2026) of the IATA Passenger Services Conference Resolution Manual include:'
+    verified: true
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="17" cy="16" r="5"/><circle cx="31" cy="16" r="5"/><path d="M9 34c0-5 3.5-8 8-8s8 3 8 8"/><path d="M23 34c0-5 3.5-8 8-8s8 3 8 8"/></svg>
 ---
 
@@ -95,4 +99,4 @@ Group bookings are governed by negotiated group fares and carrier group policies
 
 # Citations
 [1] Amadeus — Amadeus Groups User Guide
-[2] [IATA — Passenger Services Conference Resolutions Manual (PSCRM)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
+[2] [IATA — Passenger Services Conference Resolutions Manual (PSCRM) — 46th Edition (2026)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)

@@ -54,11 +54,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.royalcaribbean.com/gbr/en/plan-a-cruise/transportation'
+    tier: secondary
   - org: Seatrade Cruise News
     name: Royal Caribbean's ChoiceAir is now called Air2Sea
     version: ''
     section: ''
     url: 'https://www.seatrade-cruise.com/information-technology/royal-caribbean-s-choiceair-is-now-called-air2sea'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16l10 3 6-6 4 1-4 8 9 3-1 4-12-2-3 6-3-1 1-7-8-3z"/><path d="M6 38a4 4 0 0 0 5 0 4 4 0 0 1 5 0 4 4 0 0 0 5 0 4 4 0 0 1 5 0 4 4 0 0 0 5 0 4 4 0 0 1 5 0"/></svg>
 ---
 

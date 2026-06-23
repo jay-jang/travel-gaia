@@ -65,11 +65,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/services/consulting/airlines/airline-retailing-order-and-offer-management/'
+    tier: association
   - org: IATA
     name: Distribution with Offers and Orders (NDC)
     version: ''
     section: ''
     url: 'https://www.iata.org/en/programs/airline-distribution/retailing/ndc/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="32" height="32" rx="3"/><path d="M14 18h12"/><path d="M14 24h20"/><path d="M14 30h16"/><path d="M30 14l4 4 6-7" stroke-width="2.5"/></svg>
 ---
 

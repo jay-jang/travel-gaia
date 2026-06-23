@@ -52,11 +52,13 @@ sources:
     version: ''
     section: ''
     url: 'https://hts.hopper.com/products/cancel-for-any-reason-for-hotels'
+    tier: vendor-doc
   - org: NAIC
     name: Travel Insurance (Insurance Topics) — cancellation fee waivers as non-insurance products
     version: ''
     section: ''
     url: 'https://content.naic.org/insurance-topics/travel-insurance'
+    tier: regulator-guidance
 icon: '<svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 16 L9 36 a3 3 0 0 0 3 3 L36 39 a3 3 0 0 0 3 -3 L39 16"/><path d="M6 12 L42 12 L39 16 L9 16 Z"/><path d="M28 26 a4 4 0 1 1 -3.5 -4"/><polyline points="28,20 28,24 24,24"/></svg>'
 ---
 

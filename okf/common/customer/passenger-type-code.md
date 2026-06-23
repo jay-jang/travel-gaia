@@ -61,11 +61,13 @@ sources:
     version: ''
     section: ''
     url: ''
+    tier: vendor-doc
   - name: ATPCO Automated Rules (Category 1 — Eligibility)
     org: ATPCO
     version: ''
     section: ''
     url: 'https://atpco.net/single-blog/what-are-atpco-fare-rules-categories/'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="17" cy="15" r="6"/><path d="M7 39c0-6 5-10 10-10s10 4 10 10"/><path d="M30 16h8a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3h-8z"/><circle cx="35" cy="23" r="1.5" fill="currentColor"/></svg>
 ---
 

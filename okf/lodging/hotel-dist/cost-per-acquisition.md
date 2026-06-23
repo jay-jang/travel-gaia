@@ -57,16 +57,19 @@ sources:
     version: ''
     section: ''
     url: 'https://www.mirai.com/blog/what-is-google-hotel-ads-commission-program-ghacp-and-how-does-it-work/'
+    tier: secondary
   - org: Revenue Hub
     name: This is how Tripadvisor net commission per stay model works
     version: ''
     section: ''
     url: 'https://revenue-hub.com/this-is-how-tripadvisor-net-commission-per-stay-model-works/'
+    tier: secondary
   - org: Triptease
     name: 'CPC or CPA on Metasearch: Which one''s right for you?'
     version: ''
     section: ''
     url: 'https://www.triptease.com/resources/cpc-or-cpa-on-metasearch'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M8 14a4 4 0 014-4h24a4 4 0 014 4v16a4 4 0 01-4 4H22l-8 7v-7h-2a4 4 0 01-4-4z"/><path d="M19 24l3 3 8-9"/><circle cx="33" cy="34" r="1" fill="currentColor" stroke="none" opacity="0"/></svg>
 ---
 

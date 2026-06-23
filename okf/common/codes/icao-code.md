@@ -46,14 +46,18 @@ distinctions:
 sources:
   - name: Doc 7910 — Location Indicators
     org: ICAO
-    version: ''
+    version: Doc 7910/199
     section: ''
     url: 'https://store.icao.int/en/location-indicators-doc-7910'
+    tier: standard-body
+    verifyQuote: Location Indicators (Doc 7910/199)
+    verified: true
   - name: 'Doc 8585 — Designators for Aircraft Operating Agencies, Aeronautical Authorities and Services'
     org: ICAO
     version: ''
     section: ''
     url: 'https://www.icao.int/operational-safety/Designators-and-indicators'
+    tier: standard-body
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="20" r="13"/><path d="M11 20h26M24 7c5 4 5 22 0 26M24 7c-5 4-5 22 0 26"/><rect x="8" y="36" width="32" height="8" rx="2"/><path d="M13 40h2M18 40h2M23 40h2M28 40h2"/></svg>
 ---
 
@@ -79,5 +83,5 @@ ICAO의 4자리 위치 지시자는 지역별로 구조화되어 있다. 첫 한
 - **ICAO Code** vs [Airline Designator](/common/codes/airline-designator.md) — The IATA airline designator is 2 characters for commercial use; the ICAO airline designator is 3 letters with a call sign for operational/ATC use.
 
 # Citations
-[1] [ICAO — Doc 7910 — Location Indicators](https://store.icao.int/en/location-indicators-doc-7910)
+[1] [ICAO — Doc 7910 — Location Indicators — Doc 7910/199](https://store.icao.int/en/location-indicators-doc-7910)
 [2] [ICAO — Doc 8585 — Designators for Aircraft Operating Agencies, Aeronautical Authorities and Services](https://www.icao.int/operational-safety/Designators-and-indicators)

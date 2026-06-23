@@ -50,14 +50,18 @@ distinctions:
 sources:
   - org: IATA
     name: Type B Messaging Whitepaper
-    version: v2.1 (14 June 2024)
+    version: Version 2.1 - 14 June 2024
     section: ''
     url: 'https://www.iata.org/contentassets/badbfd2d36a74f12b021c9dd899ecbad/type_b_messaging_whitepaper_v2dot1_14_june_2024.pdf'
+    tier: association
+    verifyQuote: Whitepaper — Type B Messaging — Market Study and Insights ... Version 2.1 - 14 June 2024
+    verified: true
   - org: SITA
     name: SITATEX / Type B and Type X messaging services
     version: ''
     section: ''
     url: 'https://www.sita.aero/solutions/sita-communications-and-data-exchange/sita-messaging/sitatex/'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="16" width="36" height="22" rx="2"/><path d="M12 16 V11 a3 3 0 0 1 3 -3 h18 a3 3 0 0 1 3 3 V16"/><line x1="12" y1="24" x2="30" y2="24"/><line x1="12" y1="30" x2="24" y2="30"/><circle cx="35" cy="28" r="1" fill="currentColor"/></svg>
 ---
 
@@ -89,5 +93,5 @@ Type B는 정의된 주소/헤더 구조, 메시지 식별자, 제한된 행/문
 - **Type B Message** vs [AIRIMP](/air/air-ops/airimp.md) — Type B is the physical message format/transport, while AIRIMP is the procedural standard that specifies what a given reservation message must contain and when it may be sent.
 
 # Citations
-[1] [IATA — Type B Messaging Whitepaper — v2.1 (14 June 2024)](https://www.iata.org/contentassets/badbfd2d36a74f12b021c9dd899ecbad/type_b_messaging_whitepaper_v2dot1_14_june_2024.pdf)
+[1] [IATA — Type B Messaging Whitepaper — Version 2.1 - 14 June 2024](https://www.iata.org/contentassets/badbfd2d36a74f12b021c9dd899ecbad/type_b_messaging_whitepaper_v2dot1_14_june_2024.pdf)
 [2] [SITA — SITATEX / Type B and Type X messaging services](https://www.sita.aero/solutions/sita-communications-and-data-exchange/sita-messaging/sitatex/)

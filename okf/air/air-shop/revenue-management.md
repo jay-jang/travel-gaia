@@ -55,11 +55,13 @@ sources:
     version: ''
     section: Revenue/yield management
     url: 'https://www.oag.com/blog/the-story-of-airline-pricing-strategies'
+    tier: secondary
   - org: ATPCO
     name: What are dynamic offers?
     version: ''
     section: Revenue management and pricing
     url: 'https://atpco.net/single-blog/what-are-dynamic-offers/'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M8 38h32"/><path d="M8 38V10"/><rect x="13" y="26" width="5" height="12"/><rect x="22" y="18" width="5" height="20"/><rect x="31" y="12" width="5" height="26"/><path d="M12 20l6-6 5 4 9-9"/></svg>
 ---
 

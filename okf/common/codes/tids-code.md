@@ -44,11 +44,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/services/travel-agency-program/tids/'
+    tier: association
   - org: IATA
     name: TIDS - Frequently Asked Questions
     version: ''
     section: ''
     url: 'https://www.iata.org/en/services/travel-agency-program/tids/faq/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="12" width="32" height="24" rx="3"/><circle cx="18" cy="22" r="4"/><path d="M13 31c1-3 3-4 5-4s4 1 5 4"/><path d="M28 20h8M28 25h8M28 30h5"/></svg>
 ---
 

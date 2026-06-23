@@ -49,6 +49,7 @@ sources:
     version: ''
     section: ''
     url: 'https://navan.com/resources/glossary/gds-global-distribution-system'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="10" width="20" height="30" rx="2"/><path d="M28 18h12v22H28"/><path d="M13 16h4"/><path d="M13 22h4"/><path d="M13 28h4"/><path d="M33 24h3"/><path d="M33 30h3"/><path d="M8 40h36"/></svg>
 ---
 

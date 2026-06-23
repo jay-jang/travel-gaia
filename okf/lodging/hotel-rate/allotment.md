@@ -69,11 +69,13 @@ sources:
     version: ''
     section: ''
     url: 'https://opentravel.org/download-specs/'
+    tier: association
   - name: HTNG inventory distribution specifications
     org: HTNG
     version: ''
     section: ''
     url: 'https://www.ahla.com/htng-technical-specifications'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="8" width="14" height="14" rx="2"/><rect x="27" y="8" width="14" height="14" rx="2"/><rect x="7" y="28" width="14" height="14" rx="2"/><rect x="27" y="28" width="14" height="14" rx="2" fill="currentColor" stroke="none"/></svg>
 ---
 

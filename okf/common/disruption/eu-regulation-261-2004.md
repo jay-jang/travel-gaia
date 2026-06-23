@@ -63,14 +63,18 @@ distinctions:
 sources:
   - name: Regulation (EC) No 261/2004 establishing common rules on compensation and assistance to passengers in the event of denied boarding and of cancellation or long delay of flights
     org: European Union
-    version: ''
+    version: '2004'
     section: ''
     url: 'https://eur-lex.europa.eu/eli/reg/2004/261/oj/eng'
+    tier: regulation
+    verifyQuote: Regulation (EC) No 261/2004 of the European Parliament and of the Council of 11 February 2004
+    verified: true
   - name: Air passenger rights
     org: Your Europe (European Commission)
     version: ''
     section: ''
     url: 'https://europa.eu/youreurope/citizens/travel/passenger-rights/air/index_en.htm'
+    tier: regulator-guidance
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="15"/><circle cx="24" cy="13" r="1.5" fill="currentColor" stroke="none"/><circle cx="24" cy="35" r="1.5" fill="currentColor" stroke="none"/><circle cx="13" cy="24" r="1.5" fill="currentColor" stroke="none"/><circle cx="35" cy="24" r="1.5" fill="currentColor" stroke="none"/><circle cx="16.2" cy="16.2" r="1.5" fill="currentColor" stroke="none"/><circle cx="31.8" cy="31.8" r="1.5" fill="currentColor" stroke="none"/><circle cx="16.2" cy="31.8" r="1.5" fill="currentColor" stroke="none"/><circle cx="31.8" cy="16.2" r="1.5" fill="currentColor" stroke="none"/><path d="M20 24l3 3 6-7"/></svg>
 ---
 
@@ -102,5 +106,5 @@ EU261은 EU/EEA 공항에서 출발하는 모든 항공편(항공사 무관)과 
 - **EU Regulation 261/2004** vs [Tarmac Delay Rule](/common/disruption/tarmac-delay-rule.md) — The tarmac delay rule governs on-aircraft conditions and deplaning during ground delays with per-passenger fines; EU261 governs cash compensation and care for denied boarding, cancellation, and long delay. They are separate jurisdictions and remedies.
 
 # Citations
-[1] [European Union — Regulation (EC) No 261/2004 establishing common rules on compensation and assistance to passengers in the event of denied boarding and of cancellation or long delay of flights](https://eur-lex.europa.eu/eli/reg/2004/261/oj/eng)
+[1] [European Union — Regulation (EC) No 261/2004 establishing common rules on compensation and assistance to passengers in the event of denied boarding and of cancellation or long delay of flights — 2004](https://eur-lex.europa.eu/eli/reg/2004/261/oj/eng)
 [2] [Your Europe (European Commission) — Air passenger rights](https://europa.eu/youreurope/citizens/travel/passenger-rights/air/index_en.htm)

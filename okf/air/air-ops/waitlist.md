@@ -43,14 +43,18 @@ distinctions:
 sources:
   - org: IATA
     name: Passenger Services Conference Resolutions Manual (PSCRM)
-    version: ''
+    version: 46th Edition (2026)
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
+    tier: association
+    verifyQuote: 'Significant Changes and Amendments to the 46th edition (2026) of the IATA Passenger Services Conference Resolution Manual include:'
+    verified: true
   - org: Travelport
     name: Smartpoint Cloud Help — Waitlist flights
     version: ''
     section: ''
     url: ''
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8h16M16 40h16"/><path d="M18 8c0 8 12 10 12 16s-12 8-12 16"/><path d="M30 8c0 8-12 10-12 16s12 8 12 16"/><path d="M21 36h6"/></svg>
 ---
 
@@ -81,5 +85,5 @@ Waitlist는 마감되거나 만석인 클래스에 sell을 요청할 수 있게 
 - **Waitlist** vs [Overbooking](/air/air-shop/overbooking.md) — Overbooking is the carrier deliberately confirming more bookings than seats to offset no-shows; a Waitlist holds unconfirmed requests awaiting space. Waitlisted passengers are not confirmed, whereas overbooked passengers hold confirmed status that may exceed capacity.
 
 # Citations
-[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
+[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM) — 46th Edition (2026)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
 [2] Travelport — Smartpoint Cloud Help — Waitlist flights

@@ -45,11 +45,15 @@ sources:
     version: ''
     section: ''
     url: 'https://www.caa.co.uk/air-passengers/travel-problems-and-rights/travel-complaints/consumer-protection-law/'
+    tier: regulator-guidance
   - name: Regulation (EC) No 261/2004 (as retained in UK law)
     org: UK Government (legislation.gov.uk)
-    version: ''
+    version: '2004'
     section: ''
     url: 'https://www.legislation.gov.uk/eur/2004/261/contents'
+    tier: regulation
+    verifyQuote: Regulation (EC) No 261/2004 of the European Parliament and of the Council of 11 February 2004 establishing common rules on compensation and assistance to passengers in the event of denied boarding and of cancellation or long delay of flight
+    verified: true
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="15"/><path d="M9 24h30M24 9v30"/><path d="M13 13l22 22M35 13L13 35"/><circle cx="24" cy="24" r="6" fill="none"/><circle cx="24" cy="24" r="2" fill="currentColor" stroke="none"/></svg>
 ---
 
@@ -75,4 +79,4 @@ When the UK left the EU, EU261 was incorporated into UK law via EU Exit regulati
 
 # Citations
 [1] [UK Civil Aviation Authority — UK air passenger rights after Brexit](https://www.caa.co.uk/air-passengers/travel-problems-and-rights/travel-complaints/consumer-protection-law/)
-[2] [UK Government (legislation.gov.uk) — Regulation (EC) No 261/2004 (as retained in UK law)](https://www.legislation.gov.uk/eur/2004/261/contents)
+[2] [UK Government (legislation.gov.uk) — Regulation (EC) No 261/2004 (as retained in UK law) — 2004](https://www.legislation.gov.uk/eur/2004/261/contents)

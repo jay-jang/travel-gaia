@@ -38,11 +38,13 @@ sources:
     version: ''
     section: ''
     url: 'https://content.naic.org/sites/default/files/model-law-632.pdf'
+    tier: regulator-guidance
   - name: 'Insurance Topics: Travel Insurance'
     org: NAIC
     version: ''
     section: ''
     url: 'https://content.naic.org/insurance-topics/travel-insurance'
+    tier: regulator-guidance
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="11" width="34" height="26" rx="3"/><circle cx="17" cy="22" r="4"/><path d="M12 32 a5 5 0 0 1 10 0"/><line x1="27" y1="19" x2="36" y2="19"/><line x1="27" y1="25" x2="36" y2="25"/><line x1="27" y1="31" x2="33" y2="31"/></svg>
 ---
 

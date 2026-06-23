@@ -59,14 +59,18 @@ distinctions:
 sources:
   - org: Booking.com
     name: Managing rate plans — rate relation (derived rate plan)
-    version: ''
+    version: '1.1'
     section: ''
     url: 'https://developers.booking.com/connectivity/docs/room-type-and-rate-plan-management/managing-rate-plans'
+    tier: vendor-doc
+    verifyQuote: 'rate relation (or derived rate plan) ... automatically base the price, restrictions, or status of another rate plan on a parent rate plan; Accept-Version header default API version 1.1.'
+    verified: true
   - org: Cloudbeds
     name: Revenue Management System (RMS) — base and derived rate plans
     version: ''
     section: ''
     url: 'https://developers.cloudbeds.com/docs/revenue-management-system-rms'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="18" y="6" width="12" height="10" rx="2"/><path d="M24 16v8M24 24H12v6M24 24h12v6"/><rect x="6" y="30" width="12" height="10" rx="2"/><rect x="30" y="30" width="12" height="10" rx="2"/></svg>
 ---
 
@@ -101,5 +105,5 @@ Derived Rate는 호텔 유통의 연동(connectivity) 구성요소로, 주로 �
 - **Derived Rate** vs [Open Pricing](/lodging/hotel-rate/open-pricing.md) — A derived rate is mechanically tied to a parent rate by a fixed percentage or amount; open pricing is the opposite philosophy, removing those rigid linkages so each rate is yielded independently.
 
 # Citations
-[1] [Booking.com — Managing rate plans — rate relation (derived rate plan)](https://developers.booking.com/connectivity/docs/room-type-and-rate-plan-management/managing-rate-plans)
+[1] [Booking.com — Managing rate plans — rate relation (derived rate plan) — 1.1](https://developers.booking.com/connectivity/docs/room-type-and-rate-plan-management/managing-rate-plans)
 [2] [Cloudbeds — Revenue Management System (RMS) — base and derived rate plans](https://developers.cloudbeds.com/docs/revenue-management-system-rms)

@@ -72,11 +72,13 @@ sources:
     version: ''
     section: ''
     url: 'https://opentravel.org/download-specs/'
+    tier: association
   - org: IATA
     name: NDC Implementation Guide — SeatAvailability
     version: ''
     section: ''
     url: 'https://guides.developer.iata.org/'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 11c-3 5-3 26 0 30M32 11c3 5 3 26 0 30"/><rect x="19" y="15" width="4" height="4" rx="1"/><rect x="25" y="15" width="4" height="4" rx="1"/><rect x="19" y="22" width="4" height="4" rx="1"/><rect x="25" y="22" width="4" height="4" rx="1"/><rect x="19" y="29" width="4" height="4" rx="1"/><rect x="25" y="29" width="4" height="4" rx="1"/></svg>
 ---
 

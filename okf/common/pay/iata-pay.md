@@ -52,11 +52,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/services/finance/iata-pay/'
+    tier: association
   - org: Outpayce from Amadeus
     name: IATA and Outpayce help airlines accept account-to-account payments
     version: ''
     section: ''
     url: 'https://outpayce.com/en/resources/news/iata-and-outpayce-help-airlines-accept-account-to-account-payments'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M8 16h32M8 16l16-9 16 9M12 16v16m8-16v16m8-16v16m8-16v16M8 38h32"/><path d="M20 24h8"/></svg>
 ---
 

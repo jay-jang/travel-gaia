@@ -45,11 +45,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.xotels.com/en/glossary/rate-fences'
+    tier: secondary
   - org: RoomPriceGenie
     name: Rate fences (Glossary)
     version: ''
     section: ''
     url: 'https://roompricegenie.com/glossary/rate-fences/'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="22" x2="42" y2="22"/><line x1="6" y1="32" x2="42" y2="32"/><line x1="14" y1="15" x2="14" y2="39"/><line x1="24" y1="15" x2="24" y2="39"/><line x1="34" y1="15" x2="34" y2="39"/><path d="M14 15l-2-3 2-3 2 3z"/><path d="M24 15l-2-3 2-3 2 3z"/><path d="M34 15l-2-3 2-3 2 3z"/></svg>
 ---
 

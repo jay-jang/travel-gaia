@@ -72,11 +72,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/services/finance/bsp/'
+    tier: association
   - name: BSP Manual for Agents (NewGen ISS Edition)
     org: IATA
     version: ''
     section: ''
     url: 'https://www.iata.org/contentassets/bfacf03f8e914960898e262df2777352/bsp-manual-for-agents.pdf'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="6"/><circle cx="9" cy="10" r="3"/><circle cx="39" cy="10" r="3"/><circle cx="9" cy="38" r="3"/><circle cx="39" cy="38" r="3"/><line x1="11" y1="12" x2="19" y2="20"/><line x1="37" y1="12" x2="29" y2="20"/><line x1="11" y1="36" x2="19" y2="28"/><line x1="37" y1="36" x2="29" y2="28"/></svg>
 ---
 

@@ -54,11 +54,13 @@ sources:
     version: ''
     section: ''
     url: 'https://opentravel.org/download-specs/'
+    tier: association
   - name: HTNG ARI messaging specifications
     org: HTNG
     version: ''
     section: ''
     url: 'https://www.ahla.com/htng-technical-specifications'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="10" width="34" height="30" rx="3"/><line x1="7" y1="18" x2="41" y2="18"/><line x1="15" y1="7" x2="15" y2="13"/><line x1="33" y1="7" x2="33" y2="13"/><path d="M15 25h2v9"/><path d="M33 29a4.5 4.5 0 1 1-5-5 5.5 5.5 0 0 0 5 5z"/></svg>
 ---
 

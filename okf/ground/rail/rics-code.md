@@ -65,16 +65,19 @@ sources:
     version: ''
     section: ''
     url: 'https://uic.org/support-activities/it/rics'
+    tier: association
   - org: UIC
     name: List of numeric codes for railway companies (RICS Code)
     version: ''
     section: ''
     url: 'https://www.uic.org/IMG/pdf/codification_4n_20151221.pdf'
+    tier: association
   - org: ERA (European Union Agency for Railways)
     name: Organisation Code Register (OCR)
     version: ''
     section: ''
     url: 'https://www.era.europa.eu/domains/registers/ocr_en'
+    tier: regulator-guidance
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="14" width="32" height="20" rx="3"/><path d="M14 22h4M14 26h7M22 22h4M28 22h6M28 26h4"/><path d="M19 34v4M29 34v4"/></svg>
 ---
 

@@ -62,11 +62,13 @@ sources:
     version: ''
     section: RBD / Booking Class
     url: 'https://support.travelport.com/webhelp/faresandpricingagencyhelp/Content/Booking%20Class%20RBD%20(Record%206).htm'
+    tier: vendor-doc
   - org: IATA
     name: Passenger Fares and Ticketing
     version: ''
     section: Booking class / class of service
     url: 'https://www.iata.org/en/training/subject-areas/fares-ticketing-courses/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="14" width="32" height="20" rx="4"/><line x1="8" y1="24" x2="40" y2="24"/><line x1="20" y1="14" x2="20" y2="34"/><line x1="30" y1="14" x2="30" y2="34"/><circle cx="14" cy="19" r="1.2" fill="currentColor"/></svg>
 ---
 

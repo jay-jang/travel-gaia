@@ -69,11 +69,13 @@ sources:
     version: ''
     section: ''
     url: 'https://atpco.net/ancillaries/'
+    tier: vendor-doc
   - name: New Distribution Capability (NDC)
     org: IATA
     version: ''
     section: ''
     url: 'https://www.iata.org/en/programs/airline-distribution/retailing/ndc/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 8l3 12 12 3-12 3-3 12-3-12-12-3 12-3z"/><path d="M11 10v4M9 12h4"/><path d="M38 34v4M36 36h4"/></svg>
 ---
 

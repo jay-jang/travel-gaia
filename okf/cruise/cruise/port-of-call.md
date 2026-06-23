@@ -48,16 +48,19 @@ sources:
     version: ''
     section: ''
     url: ''
+    tier: secondary
   - name: Cruising Terms (cruise glossary)
     org: Cruise industry
     version: ''
     section: ''
     url: ''
+    tier: secondary
   - name: OpenTravel Specification (cruise itinerary messages)
     org: OpenTravel Alliance
     version: ''
     section: ''
     url: 'https://opentravel.org/download-specs/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="18" r="6"/><path d="M24 24v14"/><path d="M16 32a8 6 0 0 0 16 0"/><line x1="18" y1="30" x2="30" y2="30"/></svg>
 ---
 

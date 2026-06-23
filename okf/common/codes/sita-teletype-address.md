@@ -50,11 +50,13 @@ sources:
     version: ''
     section: ''
     url: 'https://en.wikipedia.org/wiki/Airline_teletype_system'
+    tier: encyclopedia
   - org: SITA
     name: Type B Messaging
     version: ''
     section: ''
     url: 'https://www.sita.aero/'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="14" width="36" height="22" rx="2"/><path d="M6 18l18 11 18-11"/><path d="M14 40h20"/><path d="M24 36v4"/></svg>
 ---
 

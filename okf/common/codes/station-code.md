@@ -46,6 +46,7 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/iata-repository/pressroom/fact-sheets/fact-sheet-iata-location-codes/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 43c8-9 13-16 13-23a13 13 0 10-26 0c0 7 5 14 13 23z"/><path d="M19 22l4-7 4 7M20.5 19.5h5"/></svg>
 ---
 

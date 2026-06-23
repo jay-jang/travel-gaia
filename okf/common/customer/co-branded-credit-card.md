@@ -49,11 +49,13 @@ sources:
     version: ''
     section: ''
     url: 'https://ideaworkscompany.com/wp-content/uploads/2024/04/Airline-Loyalty-and-Co-Branding.pdf'
+    tier: secondary
   - org: Loyalty Partner Solutions (LPS)
     name: 'Co-Branded Credit Cards for Airlines: A success story to be continued?'
     version: ''
     section: ''
     url: 'https://lpsolutions.com/the-power-of-co-branded-credit-cards-in-loyalty/'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="12" width="38" height="24" rx="3"/><path d="M5 19h38"/><path d="M11 29h8"/><path d="M30 27l1.4 2.8 3.1.4-2.3 2.2.6 3.1-2.8-1.5-2.8 1.5.6-3.1-2.3-2.2 3.1-.4z"/></svg>
 ---
 

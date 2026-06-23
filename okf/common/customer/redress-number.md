@@ -50,11 +50,13 @@ sources:
     version: ''
     section: ''
     url: 'https://trip.dhs.gov/s/faq-page'
+    tier: regulator-guidance
   - org: TSA
     name: Secure Flight Program
     version: ''
     section: ''
     url: 'https://www.tsa.gov/travel/security-screening/secure-flight'
+    tier: regulator-guidance
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="6"/><path d="M8 36c0-5 4-8 8-8s8 3 8 8"/><path d="M30 18l12 12"/><path d="M42 18L30 30"/><path d="M28 8h12"/></svg>
 ---
 

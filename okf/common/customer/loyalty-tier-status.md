@@ -52,11 +52,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.staralliance.com/en/benefits-and-privileges'
+    tier: association
   - name: oneworld tier recognition (program documentation)
     org: oneworld
     version: ''
     section: ''
     url: 'https://www.oneworld.com/travel-benefits'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6l3 6 6 1-4.5 4.5L29.5 24 24 21l-5.5 3 1-6.5L15 13l6-1z"/><rect x="18" y="28" width="12" height="14"/><rect x="6" y="33" width="12" height="9"/><rect x="30" y="33" width="12" height="9"/></svg>
 ---
 

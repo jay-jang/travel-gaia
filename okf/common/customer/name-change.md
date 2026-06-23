@@ -41,6 +41,7 @@ sources:
     version: ''
     section: ''
     url: 'https://atpco.net/single-blog/what-are-atpco-fare-rules-categories/'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="15" cy="16" r="6"/><path d="M5 38c0-6 4-10 10-10 2 0 4 .5 5.5 1.5"/><path d="M39 26l4 4-11 11-5 1 1-5z"/></svg>
 ---
 

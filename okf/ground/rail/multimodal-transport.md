@@ -54,11 +54,13 @@ sources:
     version: ''
     section: ''
     url: ''
+    tier: secondary
   - name: Open Sales and Distribution Model (trains and other modes)
     org: UIC
     version: ''
     section: ''
     url: 'https://uic.org/projects-99/osdm'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="10" width="14" height="10" rx="2"/><path d="M8 20l-1 3M18 20l1 3"/><path d="M30 12l8 0 3 6v6h-11z"/><circle cx="33" cy="30" r="3"/><path d="M13 28v8M13 36l-3 3M13 36l3 3M13 28l-4 2M13 28l4 2"/></svg>
 ---
 

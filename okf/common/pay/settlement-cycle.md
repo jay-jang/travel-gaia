@@ -56,6 +56,7 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/services/finance/bsp/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M38 16a16 16 0 1 0 4 14"/><path d="M38 8v8h-8"/><circle cx="24" cy="24" r="3.5"/><path d="M24 16v3M24 29v3"/></svg>
 ---
 

@@ -65,11 +65,13 @@ sources:
     version: ''
     section: ''
     url: 'https://guides.developer.iata.org/docs/21-1_ImplementationGuide.pdf'
+    tier: standard-body
   - org: IATA
     name: Distribution with Offers & Orders (NDC)
     version: ''
     section: ''
     url: 'https://www.iata.org/en/programs/airline-distribution/retailing/ndc/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8H10a2 2 0 0 0-2 2v28a2 2 0 0 0 2 2h28a2 2 0 0 0 2-2v-6"/><path d="M18 22l-4 4 4 4M30 22l4 4-4 4M26 20l-4 12"/><path d="M30 8h10v10"/><path d="M40 8L28 20"/></svg>
 ---
 

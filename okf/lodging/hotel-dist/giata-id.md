@@ -59,16 +59,19 @@ sources:
     version: ''
     section: ''
     url: 'https://www.giata.com/en/products-services/hotel-mapping-for-otas/'
+    tier: vendor-doc
   - org: GIATA
     name: What Is GIATA MultiCodes?
     version: ''
     section: ''
     url: 'https://info.giata.com/en/knowledge/what-is-multicodes-mc'
+    tier: vendor-doc
   - org: AltexSoft
     name: 'Hotel Mapping Tools: How GIATA, Gimmonix, Vervotech and Others Work'
     version: ''
     section: ''
     url: 'https://www.altexsoft.com/blog/hotel-mapping-tools-how-giata-gimmonix-databindr-and-other-solutions-work/'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="22" r="6"/><circle cx="24" cy="22" r="1.5" fill="currentColor" stroke="none"/><path d="M9 14h6M9 22h4M9 30h6M33 14h6M35 22h4M33 30h6"/><path d="M15 14l3 5M15 30l3-5M33 14l-3 5M33 30l-3-5"/></svg>
 ---
 

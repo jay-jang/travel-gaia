@@ -75,6 +75,7 @@ sources:
     version: ''
     section: ''
     url: ''
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22 8l-13 13a3 3 0 0 0 0 4l14 14a3 3 0 0 0 4 0l13-13V12a4 4 0 0 0-4-4z"/><circle cx="32" cy="16" r="2.5"/><path d="M20 22l4 1 1 4 4-7z" fill="currentColor" stroke="none"/></svg>
 ---
 

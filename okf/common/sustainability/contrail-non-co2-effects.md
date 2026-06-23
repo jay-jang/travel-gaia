@@ -59,11 +59,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/contentassets/726b8a2559ad48fe9decb6f2534549a6/aviation-contrails-climate-impact-report.pdf'
+    tier: association
   - org: EASA
     name: Updated analysis of the non-CO2 effects of aviation
     version: ''
     section: ''
     url: 'https://www.easa.europa.eu/sites/default/files/dfu/201119_report_com_ep_council_updated_analysis_non_co2_climate_impacts_aviation.pdf'
+    tier: regulator-guidance
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M30 10l4 4-9 6 1 9-3 2-3-7-7-3 2-3 9 1 6-9z"/><path d="M6 38c3-2 5-2 8 0s5 2 8 0 5-2 8 0 5 2 8 0"/><path d="M8 32c2-1.5 4-1.5 6 0s4 1.5 6 0"/></svg>
 ---
 

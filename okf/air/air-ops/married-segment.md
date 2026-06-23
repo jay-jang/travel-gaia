@@ -49,14 +49,18 @@ distinctions:
 sources:
   - name: Passenger Services Conference Resolutions Manual (PSCRM)
     org: IATA
-    version: ''
+    version: 46th Edition (2026)
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
+    tier: association
+    verifyQuote: 'Significant Changes and Amendments to the 46th edition (2026) of the IATA Passenger Services Conference Resolution Manual include:'
+    verified: true
   - name: Amadeus Functional Documentation — Availability and Married Segment Logic
     org: Amadeus
     version: ''
     section: ''
     url: ''
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="24" r="9"/><circle cx="30" cy="24" r="9"/></svg>
 ---
 
@@ -88,5 +92,5 @@ Carriers use married-segment logic so that availability returned for a connectio
 - **Married Segment** vs [Origin & Destination Control (O&D Control)](/air/air-shop/origin-destination-control.md) — A married segment is the booking-side rule that ties connecting segments so they cannot be split; O&D control is the RM rationale that produces and prices those itinerary-level availabilities.
 
 # Citations
-[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
+[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM) — 46th Edition (2026)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
 [2] Amadeus — Amadeus Functional Documentation — Availability and Married Segment Logic

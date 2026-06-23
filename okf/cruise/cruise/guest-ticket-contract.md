@@ -58,11 +58,13 @@ sources:
     version: ''
     section: Athens Convention liability / cancellation / surcharges
     url: 'https://www.royalcaribbean.com/guest-terms/'
+    tier: secondary
   - org: Virgin Voyages
     name: Ticket Contract (U.S.)
     version: ''
     section: ''
     url: 'https://www.virginvoyages.com/ticket-contract'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6h16l8 8v28H12z"/><polyline points="28 6 28 14 36 14"/><line x1="17" y1="22" x2="31" y2="22"/><line x1="17" y1="28" x2="31" y2="28"/><line x1="17" y1="34" x2="26" y2="34"/></svg>
 ---
 

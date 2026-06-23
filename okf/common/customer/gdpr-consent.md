@@ -39,6 +39,7 @@ sources:
     version: ''
     section: 'Art. 4(11), Art. 6, Art. 7'
     url: 'https://eur-lex.europa.eu/eli/reg/2016/679/oj'
+    tier: regulation
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5l15 5v11c0 11-7 17-15 22-8-5-15-11-15-22V10z"/><rect x="18" y="21" width="12" height="9" rx="1.5"/><path d="M21 21v-3a3 3 0 0 1 6 0v3"/></svg>
 ---
 

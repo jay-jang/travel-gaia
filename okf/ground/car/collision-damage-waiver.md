@@ -54,11 +54,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.avis.com/en/help/usa-faqs/cdw-insurance'
+    tier: secondary
   - org: ''
     name: What Is a Collision Damage Waiver & Is It Worth It?
     version: ''
     section: ''
     url: 'https://wallethub.com/edu/ci/collision-damage-waiver/8822'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5l15 5v10c0 9-6 16-15 19-9-3-15-10-15-19V10z"/><path d="M16 26l3-6 3 4 3-7 3 9"/></svg>
 ---
 

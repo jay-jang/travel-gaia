@@ -50,16 +50,19 @@ sources:
     version: ''
     section: ''
     url: 'https://newgeniss.iata.org/travel-agents/risk-management/'
+    tier: standard-body
   - org: PhocusWire
     name: IATA adopts three-tier agency accreditation and a threshold for cash sales
     version: ''
     section: ''
     url: 'https://www.phocuswire.com/IATA-adopts-three-tier-agency-accreditation-and-a-threshold-for-cash-sales'
+    tier: secondary
   - org: IATA
     name: NewGen ISS — Airlines
     version: ''
     section: ''
     url: 'https://newgeniss.iata.org/airlines/'
+    tier: standard-body
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6v8"/><circle cx="24" cy="18" r="4"/><path d="M24 22v6m0 0H10v6m14-6h14v6M10 34v6m14-6v6m14-6v6"/></svg>
 ---
 

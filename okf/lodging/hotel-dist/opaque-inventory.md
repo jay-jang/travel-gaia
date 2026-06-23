@@ -55,11 +55,13 @@ sources:
     version: ''
     section: ''
     url: 'https://en.wikipedia.org/wiki/Opaque_travel_inventory'
+    tier: encyclopedia
   - org: Xotels
     name: Opaque Pricing / Opaque Hotel Sites — Revenue Management Book
     version: ''
     section: ''
     url: 'https://www.xotels.com/en/revenue-management/revenue-management-book/opaque-pricing'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M8 40V18l10-7 10 7v22"/><path d="M6 40h26"/><path d="M13 24h3M21 24h3M13 31h3M21 31h3"/><circle cx="36" cy="30" r="8"/><path d="M36 25v6M33 28h6" opacity="0"/><path d="M31 30c2-3 8-3 10 0-2 3-8 3-10 0z"/><circle cx="36" cy="30" r="1.6" fill="currentColor" stroke="none"/></svg>
 ---
 

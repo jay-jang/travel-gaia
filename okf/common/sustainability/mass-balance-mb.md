@@ -53,11 +53,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/contentassets/d13875e9ed784f75bac90f000760e998/iata-sustainable-aviation-fuel-saf-accounting--reporting-methodology.pdf'
+    tier: association
   - org: IATA
     name: SAF accounting based on robust chain-of-custody approaches (Policy Paper)
     version: ''
     section: ''
     url: 'https://www.iata.org/contentassets/d13875e9ed784f75bac90f000760e998/saf-accounting-policy-paper_20230905_final.pdf'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6v6M24 12 12 18M24 12l12 6"/><path d="M12 18 7 30h10z"/><path d="M36 18 31 30h10z"/><path d="M7 30a5 5 0 0 0 10 0M31 30a5 5 0 0 0 10 0"/><path d="M16 42h16M24 12v30"/></svg>
 ---
 

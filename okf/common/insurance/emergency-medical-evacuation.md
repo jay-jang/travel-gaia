@@ -48,11 +48,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.squaremouth.com/travel-insurance-benefits/medical-evacuation-and-repatriation'
+    tier: secondary
   - name: How the Travel Insurance Industry Works
     org: Investopedia
     version: ''
     section: ''
     url: 'https://www.investopedia.com/articles/personal-finance/050815/how-travel-insurance-industry-works.asp'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 30 L20 30 L26 22 L40 22 a4 4 0 0 1 0 8 L14 30 Z"/><line x1="10" y1="36" x2="34" y2="36"/><line x1="30" y1="13" x2="30" y2="19"/><line x1="27" y1="16" x2="33" y2="16"/></svg>
 ---
 

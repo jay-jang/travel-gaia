@@ -45,6 +45,7 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/programs/ops-infra/slots/slot-guidelines/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="16"/><path d="M24 14v10l7 4"/><path d="M24 8v3M24 37v3M8 24h3M37 24h3"/></svg>
 ---
 

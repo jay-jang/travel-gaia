@@ -43,9 +43,12 @@ distinctions:
 sources:
   - org: IATA
     name: Passenger Agency Conference Resolutions (BSP / Billing and Settlement Plan)
-    version: ''
+    version: 47th edition (2026)
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/passenger-agency-conference-resolutions-manual/'
+    tier: association
+    verifyQuote: 'The official title is the Passenger Agency Conference Resolutions Manual (PACRM), currently in its 47th edition (2026).'
+    verified: true
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="24" r="6"/><circle cx="37" cy="24" r="6"/><path d="M18 21h12"/><path d="M27 18l3 3-3 3"/><path d="M30 30H18"/><path d="M21 33l-3-3 3-3"/></svg>
 ---
 
@@ -72,4 +75,4 @@ Under the agency model, an accredited travel agent sells tickets on behalf of ai
 - **Remittance** vs [Remittance Holding Capacity (RHC)](/common/pay/remittance-holding-capacity-rhc.md) — Remittance is the act of transferring collected funds to airlines; RHC is the ceiling on how much cash sales may remain unremitted before cash is blocked.
 
 # Citations
-[1] [IATA — Passenger Agency Conference Resolutions (BSP / Billing and Settlement Plan)](https://www.iata.org/en/publications/manuals/passenger-agency-conference-resolutions-manual/)
+[1] [IATA — Passenger Agency Conference Resolutions (BSP / Billing and Settlement Plan) — 47th edition (2026)](https://www.iata.org/en/publications/manuals/passenger-agency-conference-resolutions-manual/)

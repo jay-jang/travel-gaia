@@ -54,11 +54,13 @@ sources:
     version: ''
     section: ''
     url: 'https://atpco.net/single-press/airline-data-platform-atpco-acquires-rich-content-provider-routehappy/'
+    tier: vendor-doc
   - org: ATPCO / Routehappy
     name: Routehappy Universal Product Attributes (UPAs)
     version: ''
     section: ''
     url: 'https://atpco.net/routehappy/'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="10" width="28" height="22" rx="3"/><circle cx="15" cy="18" r="3"/><path d="M7 28l8-7 6 5 5-4 9 8"/><path d="M30 38l4 3v-9"/><path d="M40 38l-4 3"/></svg>
 ---
 

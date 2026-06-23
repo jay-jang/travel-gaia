@@ -46,11 +46,13 @@ sources:
     version: ''
     section: ''
     url: ''
+    tier: association
   - org: IATA
     name: Enhanced and Simplified Distribution Implementation Guide
     version: ''
     section: ''
     url: ''
+    tier: standard-body
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="32" height="32" rx="3"/><path d="M8 16h32"/><path d="M14 24l-3 3 3 3"/><path d="M21 24l3 3-3 3"/><path d="M30 23l-3 8"/></svg>
 ---
 

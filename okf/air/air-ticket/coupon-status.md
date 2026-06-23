@@ -61,11 +61,13 @@ sources:
     version: ''
     section: ''
     url: 'https://servicehub.amadeus.com/c/portal/view-solution/879101/how-to-understand-e-ticket-coupon-status-codes-cryptic-'
+    tier: vendor-doc
   - org: IATA
     name: Ticketing Handbook
     version: ''
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/ticketing-handbook/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="12" width="32" height="24" rx="3"/><path d="M14 24l4 4 8-8"/><circle cx="32" cy="24" r="3"/></svg>
 ---
 

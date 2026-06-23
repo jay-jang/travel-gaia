@@ -47,11 +47,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.easa.europa.eu/en/domains/environment/eu-flight-emissions-label-fel'
+    tier: regulator-guidance
   - org: European Commission
     name: The EU Flight Emissions Label takes a flight forward with first airlines committing to the scheme
     version: ''
     section: ''
     url: 'https://transport.ec.europa.eu/news-events/news/eu-flight-emissions-label-takes-flight-forward-first-airlines-committing-scheme-2025-07-11_en'
+    tier: regulator-guidance
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12h22l12 12-12 12H6z"/><circle cx="12" cy="18" r="1.5" fill="currentColor"/><path d="M30 22l-6 4 6 4" transform="translate(-8 -2)"/><path d="M16 24h12M16 24l5-3M16 24l5 3"/></svg>
 ---
 

@@ -50,11 +50,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.acriss.org/car-codes/vehicle-selling-guides/'
+    tier: association
   - org: ''
     name: Car Rental and Mobility Tech Glossary — Car category
     version: ''
     section: ''
     url: 'https://www.carrentalgateway.com/glossary/car-category/'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 26l2-6a3 3 0 0 1 3-2h12a3 3 0 0 1 3 2l2 6"/><path d="M4 26h26v4a1.5 1.5 0 0 1-1.5 1.5h-2A1.5 1.5 0 0 1 25 30H9a1.5 1.5 0 0 1-1.5 1.5h-2A1.5 1.5 0 0 1 4 30z"/><circle cx="10" cy="26" r="1.6"/><circle cx="24" cy="26" r="1.6"/><path d="M34 20h8M34 28h8M34 36h8M37 20v16"/></svg>
 ---
 

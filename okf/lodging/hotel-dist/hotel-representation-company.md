@@ -63,16 +63,19 @@ sources:
     version: ''
     section: ''
     url: 'https://hotelrez.com/'
+    tier: secondary
   - org: Hospitality Net
     name: 'Utell by Pegasus Expands Hotel Representation Presence (Greece, Italy, Portugal, Spain)'
     version: ''
     section: ''
     url: 'https://www.hospitalitynet.org/'
+    tier: secondary
   - org: Keytel
     name: Keytel — Hotel representation on GDS
     version: ''
     section: ''
     url: 'https://www.keytel.com/EN/GDS/'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6l4 6h-8z"/><circle cx="24" cy="20" r="4"/><path d="M24 24v6"/><path d="M10 42v-3a6 6 0 016-6"/><path d="M38 42v-3a6 6 0 00-6-6"/><circle cx="10" cy="24" r="3"/><circle cx="38" cy="24" r="3"/><path d="M24 30c-5 0-8 4-8 8M24 30c5 0 8 4 8 8"/></svg>
 ---
 

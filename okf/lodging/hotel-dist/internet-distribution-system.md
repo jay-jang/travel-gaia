@@ -54,16 +54,19 @@ sources:
     version: ''
     section: ''
     url: 'https://www.xotels.com/en/glossary/ids'
+    tier: secondary
   - org: Xotels
     name: ADS — Alternative Distribution System Definition
     version: ''
     section: ''
     url: 'https://www.xotels.com/en/glossary/ads-alternative-distribution-system'
+    tier: secondary
   - org: Happyhotel
     name: 'Distribution Systems (ADS, GDS etc.) in the hotel industry'
     version: ''
     section: ''
     url: 'https://www.happyhotel.io/en/lexicon/distribution-systems-in-the-hotel-industry'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="10"/><path d="M14 24h20M24 14c4 3 4 17 0 20M24 14c-4 3-4 17 0 20"/><path d="M24 4v6M24 38v6M4 24h6M38 24h6"/></svg>
 ---
 

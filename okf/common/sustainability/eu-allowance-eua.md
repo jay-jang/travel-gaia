@@ -42,11 +42,13 @@ sources:
     version: ''
     section: ''
     url: 'https://climate.ec.europa.eu/eu-action/carbon-markets/about-eu-ets_en'
+    tier: regulator-guidance
   - org: EASA
     name: EU Emissions Trading System
     version: ''
     section: ''
     url: 'https://www.easa.europa.eu/en/domains/environment/eaer/market-based-measures/eu-emissions-trading-system'
+    tier: regulator-guidance
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="14" width="30" height="20" rx="3"/><circle cx="21" cy="24" r="5"/><path d="M21 21v6M19 22h3a1.5 1.5 0 0 1 0 3h-2"/><path d="M36 19a5 5 0 0 1 0 10"/><path d="M12 14v-2M30 14v-2"/></svg>
 ---
 

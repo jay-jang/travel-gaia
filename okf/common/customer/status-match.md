@@ -39,16 +39,19 @@ sources:
     version: ''
     section: ''
     url: 'https://thepointsguy.com/loyalty-programs/airline-status-matches-challenges/'
+    tier: secondary
   - name: 'Hotel Loyalty Program Status Matches & Challenges [2026 Guide]'
     org: Travel loyalty media
     version: ''
     section: ''
     url: 'https://upgradedpoints.com/travel/hotels/hotel-status-matches-challenges/'
+    tier: secondary
   - name: Elite Status with WorldHotels Rewards (Status Match)
     org: WorldHotels Rewards
     version: ''
     section: ''
     url: 'https://www.worldhotels.com/content/luxury-hotels/en_US/rewards/status-match.html'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M13 9l3 5 5 1-4 4 1 5-5-3-5 3 1-5-4-4 5-1z"/><path d="M35 9l3 5 5 1-4 4 1 5-5-3"/><path d="M20 28h8M20 28l3-3M28 28l-3 3"/><path d="M28 37h-8M28 37l-3 3M20 37l3-3"/></svg>
 ---
 

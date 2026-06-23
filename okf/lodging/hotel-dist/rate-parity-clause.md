@@ -49,16 +49,19 @@ sources:
     version: ''
     section: ''
     url: 'https://ec.europa.eu/commission/presscorner/detail/en/ip_24_5828'
+    tier: regulation
   - org: Court of Justice of the European Union
     name: 'Booking.com price parity clauses preliminary ruling (Case C-264/23, 19 Sep 2024)'
     version: ''
     section: ''
     url: 'https://www.covcompetition.com/2024/10/ecjs-preliminary-ruling-booking-coms-parity-clauses-are-not-ancillary-restraints/'
+    tier: secondary
   - org: SiteMinder
     name: 'Hotel rate parity: What it is and how to manage it'
     version: ''
     section: ''
     url: 'https://www.siteminder.com/r/hotel-rate-parity/'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6v30"/><path d="M12 14h24"/><path d="M12 14l-6 11h12z"/><path d="M36 14l-6 11h12z"/><path d="M6 25a6 6 0 0012 0M30 25a6 6 0 0012 0"/><path d="M16 40h16"/></svg>
 ---
 

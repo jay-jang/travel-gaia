@@ -46,11 +46,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.interrail.eu/en/interrail-passes/what-is-interrail/how-use-your-interrail-pass'
+    tier: vendor-doc
   - name: Global Pass (Flexi vs Continuous)
     org: Eurail B.V. (Interrail.eu)
     version: ''
     section: ''
     url: 'https://www.interrail.com/en/interrail-passes/global-pass'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="14" width="34" height="20" rx="3"/><circle cx="16" cy="24" r="4"/><path d="M25 21h11M25 27h8"/><path d="M11 38l3 3M37 38l-3 3"/></svg>
 ---
 

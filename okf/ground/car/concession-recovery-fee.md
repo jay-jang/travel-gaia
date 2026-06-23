@@ -47,11 +47,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.nationalcar.com/en/support/car-rental-faqs/taxes-surcharges-fees.html'
+    tier: secondary
   - org: Alamo Rent A Car
     name: 'Taxes, Surcharges and Fees'
     version: ''
     section: ''
     url: 'https://www.alamo.com/en/customer-support/car-rental-faqs/taxes-surcharges-fees.html'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 38h40"/><path d="M22 38V10l16 6v22"/><path d="M22 16l-12 4v18"/><line x1="28" y1="20" x2="28" y2="20"/><line x1="33" y1="22" x2="33" y2="22"/><path d="M14 26v8"/></svg>
 ---
 

@@ -54,11 +54,13 @@ sources:
     version: ''
     section: ''
     url: 'https://content.naic.org/insurance-topics/travel-insurance'
+    tier: regulator-guidance
   - name: Cancel for Any Reason (CFAR) Trip Insurance
     org: Progressive
     version: ''
     section: ''
     url: 'https://www.progressive.com/answers/cancel-for-any-reason-travel-insurance/'
+    tier: secondary
 icon: '<svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M38 24 a14 14 0 1 1 -4.1 -9.9"/><polyline points="38,8 38,16 30,16"/><line x1="18" y1="19" x2="30" y2="31"/><line x1="30" y1="19" x2="18" y2="31"/></svg>'
 ---
 

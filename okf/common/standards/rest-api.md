@@ -53,11 +53,15 @@ sources:
     version: ''
     section: ''
     url: 'https://roy.gbiv.com/pubs/dissertation/rest_arch_style.htm'
+    tier: standard-body
   - org: OpenAPI Initiative
     name: OpenAPI Specification
-    version: ''
+    version: 3.2.0
     section: ''
     url: 'https://spec.openapis.org/oas/latest.html'
+    tier: standard-body
+    verifyQuote: '"OpenAPI Specification v3.2.0" / Version 3.2.0, release date 19 September 2025'
+    verified: true
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="24" r="5"/><circle cx="38" cy="14" r="5"/><circle cx="38" cy="34" r="5"/><line x1="15" y1="24" x2="33" y2="16"/><line x1="15" y1="24" x2="33" y2="32"/><path d="M22 6l3 3-3 3"/><path d="M19 9h6"/></svg>
 ---
 
@@ -91,4 +95,4 @@ REST는 더 오래된 SOAP/XML 웹 서비스 및 EDIFACT 같은 배치 EDI와 �
 
 # Citations
 [1] [IETF / W3C — REST architectural style (HTTP)](https://roy.gbiv.com/pubs/dissertation/rest_arch_style.htm)
-[2] [OpenAPI Initiative — OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
+[2] [OpenAPI Initiative — OpenAPI Specification — 3.2.0](https://spec.openapis.org/oas/latest.html)

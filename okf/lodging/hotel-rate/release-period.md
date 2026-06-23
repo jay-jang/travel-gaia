@@ -47,11 +47,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.xotels.com/en/glossary/cut-off'
+    tier: secondary
   - org: HelloShift
     name: Hotel Term — Allotment (Room Block)
     version: ''
     section: ''
     url: 'https://www.helloshift.com/hotel-term/allotment'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="10" width="34" height="30" rx="3"/><path d="M7 18h34M16 7v6M32 7v6"/><path d="M19 30l5 5 9-11"/></svg>
 ---
 

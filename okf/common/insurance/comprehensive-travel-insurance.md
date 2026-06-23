@@ -56,11 +56,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.insuremytrip.com/travel-insurance-plans/comprehensive/'
+    tier: secondary
   - name: 'Comprehensive Travel Insurance: Plans & Prices'
     org: Squaremouth
     version: ''
     section: ''
     url: 'https://www.squaremouth.com/plans/comprehensive'
+    tier: secondary
 icon: '<svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5 L40 11 V24 c0 11 -8 16 -16 19 c-8 -3 -16 -8 -16 -19 V11 Z"/><polyline points="17,24 22,29 32,17"/></svg>'
 ---
 

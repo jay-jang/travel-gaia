@@ -55,16 +55,19 @@ sources:
     version: ''
     section: ''
     url: ''
+    tier: secondary
   - name: US DOT oversales / denied boarding compensation rules
     org: US DOT
     version: ''
     section: ''
     url: 'https://www.transportation.gov/individuals/aviation-consumer-protection/bumping-oversales'
+    tier: regulator-guidance
   - name: EU air passenger rights regulation (denied boarding compensation)
     org: European Union
     version: ''
     section: ''
     url: 'https://eur-lex.europa.eu/eli/reg/2004/261/oj/eng'
+    tier: regulation
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="15" r="5"/><path d="M8 34v-2a8 8 0 0116 0v2z"/><circle cx="33" cy="17" r="4"/><path d="M27 34v-1a6 6 0 0112 0v1z"/></svg>
 ---
 

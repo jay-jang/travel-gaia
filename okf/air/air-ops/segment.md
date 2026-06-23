@@ -64,14 +64,20 @@ distinctions:
 sources:
   - name: Passenger Services Conference Resolutions Manual (PSCRM)
     org: IATA
-    version: ''
+    version: 46th Edition (2026)
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
+    tier: association
+    verifyQuote: 'Significant Changes and Amendments to the 46th edition (2026) of the IATA Passenger Services Conference Resolution Manual include:'
+    verified: true
   - name: Standard Schedules Information Manual (SSIM)
     org: IATA
-    version: ''
+    version: 36th Edition (2026)
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/standard-schedules-information/'
+    tier: association
+    verifyQuote: 'Significant Changes and Amendments to the 36th edition (2026) of the Standard Schedules Information Manual (SSIM) include:'
+    verified: true
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="34" r="3.5"/><circle cx="38" cy="14" r="3.5"/><line x1="12.6" y1="31.4" x2="35.4" y2="16.6"/></svg>
 ---
 
@@ -109,5 +115,5 @@ segment는 판매를 위해 제공되는 출발지에서 도착지까지의 편�
 - **Segment** vs [Journey](/air/air-shop/journey.md) — A segment is one priced/booked flight portion within a journey; the journey is the full set of segments end to end.
 
 # Citations
-[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
-[2] [IATA — Standard Schedules Information Manual (SSIM)](https://www.iata.org/en/publications/manuals/standard-schedules-information/)
+[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM) — 46th Edition (2026)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
+[2] [IATA — Standard Schedules Information Manual (SSIM) — 36th Edition (2026)](https://www.iata.org/en/publications/manuals/standard-schedules-information/)

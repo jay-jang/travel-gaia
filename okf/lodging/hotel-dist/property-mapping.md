@@ -63,11 +63,13 @@ sources:
     version: ''
     section: Property Identification
     url: 'https://www.altexsoft.com/blog/hotel-tech-specifications-htng-opentravel/'
+    tier: secondary
   - org: OpenTravel Alliance
     name: OpenTravel Object Model (Hospitality)
     version: ''
     section: ''
     url: 'https://opentravel.org/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="14" width="14" height="20" rx="2"/><line x1="9" y1="19" x2="15" y2="19"/><line x1="9" y1="24" x2="15" y2="24"/><rect x="29" y="14" width="14" height="20" rx="2"/><line x1="33" y1="19" x2="39" y2="19"/><line x1="33" y1="24" x2="39" y2="24"/><path d="M19 24h4l2-3 2 6 1-3h1"/></svg>
 ---
 

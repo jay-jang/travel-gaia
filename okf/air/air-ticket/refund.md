@@ -89,11 +89,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
+    tier: association
   - name: BSP Refund procedures
     org: IATA
     version: ''
     section: ''
     url: 'https://www.iata.org/en/services/finance/bsp/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="16" width="30" height="20" rx="3"/><path d="M6 22h30"/><path d="M40 14a10 10 0 11-3 14"/><path d="M37 28v-5h5"/></svg>
 ---
 

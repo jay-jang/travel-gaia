@@ -54,11 +54,13 @@ sources:
     version: ''
     section: ''
     url: 'https://usali.hftp.org/'
+    tier: association
   - name: STR lodging performance metric definitions
     org: STR (CoStar)
     version: ''
     section: ''
     url: 'https://www.costar.com/products/str-benchmark/resources/glossary'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="17" cy="16" r="5"/><path d="M8 36v-2a9 9 0 0 1 18 0v2"/><circle cx="33" cy="18" r="4"/><path d="M28 36v-2a7 7 0 0 1 13-3"/></svg>
 ---
 

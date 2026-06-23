@@ -50,11 +50,15 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/publications/directories/code-search/'
+    tier: association
   - name: Doc 7910 — Location Indicators
     org: ICAO
-    version: ''
+    version: Doc 7910/199
     section: ''
     url: 'https://store.icao.int/en/location-indicators-doc-7910'
+    tier: standard-body
+    verifyQuote: Location Indicators (Doc 7910/199)
+    verified: true
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 30V12l4-4 4 4v18"/><path d="M22 8l-1-3M26 8l1-3"/><path d="M14 42l6-12h8l6 12z"/><path d="M20 36h8"/></svg>
 ---
 
@@ -82,4 +86,4 @@ IATA 공항 코드는 3자리로 IATA 체계 내에서 고유하지만, 상업 �
 
 # Citations
 [1] [IATA — IATA Airline and Airport Code Search](https://www.iata.org/en/publications/directories/code-search/)
-[2] [ICAO — Doc 7910 — Location Indicators](https://store.icao.int/en/location-indicators-doc-7910)
+[2] [ICAO — Doc 7910 — Location Indicators — Doc 7910/199](https://store.icao.int/en/location-indicators-doc-7910)

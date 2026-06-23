@@ -47,11 +47,13 @@ sources:
     version: ''
     section: ''
     url: ''
+    tier: association
   - org: IATA
     name: PADIS XML Implementation Guide
     version: ''
     section: ''
     url: ''
+    tier: standard-body
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="10" width="36" height="28" rx="3"/><path d="M6 18h36"/><path d="M11 14h.01M15 14h.01"/><path d="M12 26h10M12 31h14"/><path d="M30 24l5 4-5 4"/></svg>
 ---
 

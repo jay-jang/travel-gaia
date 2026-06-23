@@ -54,11 +54,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.budget.com/en/programs/travel-agent/gds-reservation-tools'
+    tier: secondary
   - org: Travelport
     name: 'Galileo Formats Guide for Cars (car availability qualifiers, CAL)'
     version: ''
     section: ''
     url: 'https://support.travelport.com/webhelp/Formats/Content/Car/CarAvail.htm'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="20" cy="20" r="11"/><line x1="28" y1="28" x2="40" y2="40"/><path d="M15 20h10M20 15v10"/></svg>
 ---
 

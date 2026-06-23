@@ -51,14 +51,18 @@ distinctions:
 sources:
   - org: IATA
     name: Passenger Services Conference Resolutions Manual (PSCRM) — special meal codes
-    version: ''
+    version: 46th edition (2026)
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
+    tier: association
+    verifyQuote: Significant Changes and Amendments to the 46th edition (2026) of the IATA Passenger Services Conference Resolution Manual
+    verified: true
   - org: Travelport
     name: SSR Codes for Meals and Special Services
     version: ''
     section: ''
     url: 'https://support.travelport.com/webhelp/GWS/Content/XML_Select_Web_Service/Codes/ssr_codes.htm'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 6v14a3 3 0 006 0V6M17 6v34"/><path d="M32 6c-3 0-5 4-5 10s2 8 5 8v16"/><circle cx="24" cy="24" r="21"/></svg>
 ---
 
@@ -90,5 +94,5 @@ IATA는 항공사·GDS·케이터링 업체 간에 언어와 무관하게 요청
 - **Meal Code** vs [Open Seating Dining](/cruise/cruise/open-seating-dining.md) — An airline/GDS Meal Code identifies the type of meal served on a flight; open seating dining is a cruise dining-arrangement attribute about when and how guests dine, not a coded meal-content selection.
 
 # Citations
-[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM) — special meal codes](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
+[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM) — special meal codes — 46th edition (2026)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
 [2] [Travelport — SSR Codes for Meals and Special Services](https://support.travelport.com/webhelp/GWS/Content/XML_Select_Web_Service/Codes/ssr_codes.htm)

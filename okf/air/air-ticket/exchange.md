@@ -62,11 +62,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/ticketing-handbook/'
+    tier: association
   - org: Travelport
     name: 'Exchange, Refund, and Void Guide'
     version: ''
     section: ''
     url: 'https://support.travelport.com/webhelp/JSONAPIs/Airv11/Content/Air11/General/ExchangeRefundGuide.htm'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 17h20"/><path d="M27 12l5 5-5 5"/><path d="M36 31H16"/><path d="M21 26l-5 5 5 5"/></svg>
 ---
 

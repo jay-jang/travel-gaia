@@ -54,11 +54,15 @@ sources:
     version: ''
     section: ''
     url: 'https://uic.org/com/enews/nr/620/article/the-nrt-non-integrated-reservation-tickets-irt-and-nt-commercial-groups-met-in'
+    tier: association
   - name: Special Conditions of International Carriage for NRT (SCIC-NRT)
     org: UIC
-    version: ''
+    version: 9 December 2012 edition
     section: ''
     url: 'https://www.cit-rail.org/media/files/public/CIT-Info_EN/2013/SCIC-NRT_09.12.2012_en.pdf'
+    tier: association
+    verifyQuote: Special Conditions of International Carriage (SCIC) for Journeys using Non Integrated Reservation Tickets (NRT) — 9 December 2012 edition
+    verified: true
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="18" width="15" height="12" rx="2"/><rect x="27" y="18" width="15" height="12" rx="2"/><path d="M21 24h6" stroke-dasharray="2 3"/><path d="M10 24h7M31 24h7"/></svg>
 ---
 
@@ -91,4 +95,4 @@ UIC 상업 체계에서 NRT 승차권은 NRT 국제운송 특별조건(SCIC-NRT)
 
 # Citations
 [1] [UIC — NRT (Non-Integrated Reservation Tickets) working group](https://uic.org/com/enews/nr/620/article/the-nrt-non-integrated-reservation-tickets-irt-and-nt-commercial-groups-met-in)
-[2] [UIC — Special Conditions of International Carriage for NRT (SCIC-NRT)](https://www.cit-rail.org/media/files/public/CIT-Info_EN/2013/SCIC-NRT_09.12.2012_en.pdf)
+[2] [UIC — Special Conditions of International Carriage for NRT (SCIC-NRT) — 9 December 2012 edition](https://www.cit-rail.org/media/files/public/CIT-Info_EN/2013/SCIC-NRT_09.12.2012_en.pdf)

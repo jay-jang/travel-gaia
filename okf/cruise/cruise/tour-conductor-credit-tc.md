@@ -57,11 +57,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.travelagentcentral.com/cruises/royal-caribbean-s-new-tour-conductor-credit-policy-to-use-average-cruise-fare'
+    tier: secondary
   - org: Cruise Fever
     name: Tour Conductor Credits — one free berth per eight cabins (group free-berth ratio)
     version: ''
     section: ''
     url: 'https://cruisefever.net/1-way-to-cruise-for-free-tour-conductor/'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="15" r="4"/><path d="M9 30c0-4 3-7 7-7s7 3 7 7"/><circle cx="33" cy="15" r="4"/><path d="M26 30c0-4 3-7 7-7s7 3 7 7"/><line x1="30" y1="38" x2="42" y2="38"/><line x1="36" y1="33" x2="36" y2="43"/></svg>
 ---
 

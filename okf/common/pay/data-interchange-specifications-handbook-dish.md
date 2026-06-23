@@ -57,14 +57,20 @@ distinctions:
 sources:
   - org: IATA
     name: BSP Data Interchange Specifications Handbook (DISH)
-    version: ''
+    version: '23'
     section: ''
     url: 'https://www.iata.org/en/publications/bspdish/'
+    tier: association
+    verifyQuote: DISH Revision 23 replaces all previous Revisions and is presented as a mandatory Revision.
+    verified: true
   - org: IATA
     name: 'BSP Data Interchange Specifications Handbook, Revision 23'
     version: '23'
     section: ''
     url: 'https://www.iata.org/contentassets/a8c86e315c4e4d62bbaccf611bf02485/bsp-dish-revision-23.pdf'
+    tier: association
+    verifyQuote: DISH Revision 23 replaces all previous Revisions and is presented as a mandatory Revision.
+    verified: true
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="24" cy="11" rx="14" ry="5"/><path d="M10 11v12c0 2.8 6.3 5 14 5s14-2.2 14-5V11"/><path d="M10 23v12c0 2.8 6.3 5 14 5s14-2.2 14-5V23"/><path d="M19 30l3 3 6-6"/></svg>
 ---
 
@@ -98,5 +104,5 @@ DISH는 전 세계 BSP 비즈니스 파트너 간 일관되고 고품질의 데�
 - **Data Interchange Specifications Handbook (DISH)** vs [HOT File](/common/pay/hot-file.md) — DISH is the specification that defines the record formats; the HOT file is one concrete output (airline-bound settlement data) produced in that DISH format.
 
 # Citations
-[1] [IATA — BSP Data Interchange Specifications Handbook (DISH)](https://www.iata.org/en/publications/bspdish/)
+[1] [IATA — BSP Data Interchange Specifications Handbook (DISH) — 23](https://www.iata.org/en/publications/bspdish/)
 [2] [IATA — BSP Data Interchange Specifications Handbook, Revision 23 — 23](https://www.iata.org/contentassets/a8c86e315c4e4d62bbaccf611bf02485/bsp-dish-revision-23.pdf)

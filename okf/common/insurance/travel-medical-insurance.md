@@ -46,16 +46,19 @@ sources:
     version: ''
     section: ''
     url: 'https://www.insuremytrip.com/travel-insurance-plans/travel-medical/'
+    tier: secondary
   - name: How Travel Medical Insurance Works
     org: NerdWallet
     version: ''
     section: ''
     url: 'https://www.nerdwallet.com/travel/learn/travel-medical-insurance-emergency-coverage-travel-internationally'
+    tier: secondary
   - name: 'Emergency Medical Insurance: Coverage Details'
     org: Squaremouth
     version: ''
     section: ''
     url: 'https://www.squaremouth.com/travel-insurance-benefits/emergency-medical'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 41 C10 31 6 22 6 16 a9 9 0 0 1 18 -3 a9 9 0 0 1 18 3 c0 6 -4 15 -18 25 Z"/><line x1="24" y1="19" x2="24" y2="29"/><line x1="19" y1="24" x2="29" y2="24"/></svg>
 ---
 

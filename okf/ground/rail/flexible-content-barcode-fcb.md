@@ -62,11 +62,17 @@ sources:
     version: IRS 90918-9
     section: ''
     url: 'https://uic.org/passenger/passenger-services-group/article/fcb-flexible-content-barcode'
+    tier: association
+    verifyQuote: 'The FCB is officially registered under the UIC IRS 90918-9 standard, which defines the technical and security requirements for its implementation.'
+    verified: true
   - name: TAP TSI Technical Document B.12
     org: European Union Agency for Railways (ERA)
     version: ''
-    section: B.12
+    section: TAP TSI TD B.12 (ERA-REC-122/TD/02 V2.0)
     url: 'https://www.era.europa.eu/system/files/2022-10/Recommendation%20on%20TAP%20TSI%20Revision%20-%20Technical%20Document%20-%20B12.pdf'
+    tier: regulator-guidance
+    verifyQuote: Technical document — TAP TSI TD B.12 — ERA-REC-122/TD/02 V2.0 — DIGITAL SECURITY ELEMENTS FOR RAIL PASSENGER TICKETING
+    verified: true
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M10 12v24M15 12v24M20 12v24M25 12v24M30 12v24M35 12v24M38 12v24" stroke-width="1.6"/><path d="M28 30l3 3 6-7"/></svg>
 ---
 
@@ -101,4 +107,4 @@ FCB는 계약 데이터와 비대칭 디지털 서명을 인코딩하여, 발행
 
 # Citations
 [1] [UIC — FCB: Flexible Content Barcode (factsheet) — IRS 90918-9](https://uic.org/passenger/passenger-services-group/article/fcb-flexible-content-barcode)
-[2] [European Union Agency for Railways (ERA) — TAP TSI Technical Document B.12 — B.12](https://www.era.europa.eu/system/files/2022-10/Recommendation%20on%20TAP%20TSI%20Revision%20-%20Technical%20Document%20-%20B12.pdf)
+[2] [European Union Agency for Railways (ERA) — TAP TSI Technical Document B.12 — TAP TSI TD B.12 (ERA-REC-122/TD/02 V2.0)](https://www.era.europa.eu/system/files/2022-10/Recommendation%20on%20TAP%20TSI%20Revision%20-%20Technical%20Document%20-%20B12.pdf)

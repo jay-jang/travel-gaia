@@ -54,14 +54,18 @@ distinctions:
 sources:
   - org: IATA
     name: Passenger Services Conference Resolutions Manual (PSCRM)
-    version: ''
+    version: 46th Edition (2026)
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
+    tier: association
+    verifyQuote: 'Significant Changes and Amendments to the 46th edition (2026) of the IATA Passenger Services Conference Resolution Manual include:'
+    verified: true
   - org: Travelport
     name: Travelport+ (Galileo) Format Guide
     version: ''
     section: ''
     url: 'https://support.travelport.com/webhelp/Formats/Content/Resources/MiniGuide/FormatsMiniGuidev2.pdf'
+    tier: vendor-doc
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="14" width="34" height="20" rx="3"/><path d="M14 22h6M14 28h12M28 22h6"/><circle cx="33" cy="28" r="3.5"/><path d="M35.5 30.5 39 34"/></svg>
 ---
 
@@ -93,5 +97,5 @@ Each reservation system that holds a copy of a booking generates its own Record 
 - **Record Locator** vs [PNR History](/air/air-ops/pnr-history.md) — A Record Locator is the short key used to retrieve a booking; PNR History is the internal change log of that booking, not an identifier.
 
 # Citations
-[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
+[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM) — 46th Edition (2026)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
 [2] [Travelport — Travelport+ (Galileo) Format Guide](https://support.travelport.com/webhelp/Formats/Content/Resources/MiniGuide/FormatsMiniGuidev2.pdf)

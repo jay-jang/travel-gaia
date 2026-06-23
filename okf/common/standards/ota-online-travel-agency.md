@@ -73,6 +73,7 @@ sources:
     version: ''
     section: ''
     url: ''
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="10" width="32" height="24" rx="2"/><path d="M8 16h32"/><path d="M18 42h12M24 34v8"/><path d="M28 20l-7 3 1 4M21 23l3 3"/><circle cx="29" cy="21" r="1" fill="currentColor"/></svg>
 ---
 

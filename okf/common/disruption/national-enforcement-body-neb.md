@@ -44,11 +44,15 @@ sources:
     version: ''
     section: ''
     url: 'https://transport.ec.europa.eu/transport-themes/passenger-rights/national-enforcement-bodies-neb_en'
+    tier: regulator-guidance
   - org: European Union
     name: 'Regulation (EC) No 261/2004, Article 16 — Infringements / enforcement'
     version: '2004'
     section: Article 16
     url: 'https://eur-lex.europa.eu/eli/reg/2004/261/oj/eng'
+    tier: regulation
+    verifyQuote: Each Member State shall designate a body responsible for the enforcement of this Regulation as regards flights from airports situated on its territory... (Article 16)
+    verified: true
 icon: '<svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="42" x2="40" y2="42"/><line x1="24" y1="8" x2="24" y2="12"/><circle cx="24" cy="7" r="1.5" fill="currentColor"/><line x1="12" y1="12" x2="36" y2="12"/><polyline points="13,20 13,36"/><polyline points="21,20 21,36"/><polyline points="27,20 27,36"/><polyline points="35,20 35,36"/><line x1="10" y1="20" x2="38" y2="20"/></svg>'
 ---
 

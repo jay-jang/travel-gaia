@@ -57,16 +57,19 @@ sources:
     version: ''
     section: ''
     url: 'https://opentravel.org/download-specs/'
+    tier: association
   - name: 'Cruise Ship Dining: Traditional vs Open Seating'
     org: Cruise industry
     version: ''
     section: ''
     url: ''
+    tier: secondary
   - name: Flexible Versus Traditional Dining
     org: Cruise industry
     version: ''
     section: ''
     url: ''
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 8v12a3 3 0 0 0 6 0V8M17 8v32"/><path d="M31 8c-3 0-5 4-5 9s2 7 5 7M31 8v32"/><circle cx="24" cy="24" r="21" opacity="0"/></svg>
 ---
 

@@ -62,6 +62,7 @@ sources:
     version: ''
     section: ''
     url: 'https://www.oag.com/blog/airline-codeshares-an-insiders-guide'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="10" width="32" height="28" rx="2"/><line x1="8" y1="24" x2="40" y2="24"/><line x1="24" y1="10" x2="24" y2="38"/><rect x="10" y="12" width="12" height="10" fill="currentColor" stroke="none"/></svg>
 ---
 

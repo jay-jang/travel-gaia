@@ -53,11 +53,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.celebritycruises.com/cruise-fare-options/cruise-only-rates'
+    tier: secondary
   - name: What Does Cruise-Only Mean?
     org: Sail Away Magazine
     version: ''
     section: ''
     url: 'https://sailawaymagazine.com/what-does-cruise-only-mean/'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M8 30h32l-4 8H12z"/><path d="M14 30V18h14l6 6h6"/><line x1="20" y1="18" x2="20" y2="12"/><line x1="24" y1="24" x2="24" y2="30"/></svg>
 ---
 

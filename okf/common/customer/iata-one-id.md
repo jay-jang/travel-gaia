@@ -43,11 +43,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/programs/passenger/one-id/'
+    tier: association
   - name: Fact Sheet — One ID
     org: IATA
     version: ''
     section: ''
     url: 'https://www.iata.org/en/iata-repository/pressroom/fact-sheets/fact-sheet-one-id/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="10" width="32" height="28" rx="3"/><circle cx="19" cy="21" r="4"/><path d="M13 32c0-4 3-6 6-6s6 2 6 6"/><path d="M30 19h6M30 24h6M30 29h4"/></svg>
 ---
 

@@ -38,6 +38,7 @@ sources:
     version: ''
     section: ''
     url: 'https://www.nationalcar.com/en/support/car-rental-faqs/drop-charge.html'
+    tier: secondary
   - org: Enterprise Rent-A-Car
     name: What is a car rental drop charge?
     version: ''
@@ -48,6 +49,7 @@ sources:
     version: ''
     section: ''
     url: 'https://www.altexsoft.com/glossary/drop-off-charge/'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="36" r="3"/><path d="M11 33V14a4 4 0 0 1 4-4h14"/><path d="M37 12l5 4-5 4"/><path d="M42 16H29"/><path d="M37 36a3 3 0 1 0 6 0 3 3 0 0 0-6 0z"/><path d="M40 33V24"/></svg>
 ---
 

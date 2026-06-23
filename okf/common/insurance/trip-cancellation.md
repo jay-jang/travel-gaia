@@ -56,16 +56,19 @@ sources:
     version: ''
     section: ''
     url: 'https://www.squaremouth.com/travel-insurance-benefits/trip-cancellation'
+    tier: secondary
   - name: Travel Insurance in the US - Industry Analysis
     org: IBISWorld
     version: ''
     section: ''
     url: 'https://www.ibisworld.com/united-states/industry/travel-insurance/4771/'
+    tier: secondary
   - name: How the Travel Insurance Industry Works
     org: Investopedia
     version: ''
     section: ''
     url: ''
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="8" width="30" height="32" rx="3"/><line x1="15" y1="16" x2="33" y2="16"/><line x1="15" y1="22" x2="27" y2="22"/><line x1="15" y1="28" x2="24" y2="28"/><line x1="28" y1="28" x2="40" y2="40"/><line x1="40" y1="28" x2="28" y2="40"/></svg>
 ---
 

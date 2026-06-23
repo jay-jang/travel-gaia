@@ -54,11 +54,13 @@ sources:
     version: ''
     section: Routings
     url: 'https://atpco.net/atpco-faremanager/'
+    tier: vendor-doc
   - org: IATA
     name: 'IATA fare construction: Mileage System and Routing System'
     version: ''
     section: Routing system
     url: 'https://www.iata.org/en/publications/manuals/ticketing-handbook/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="12" r="3"/><circle cx="24" cy="30" r="3"/><circle cx="39" cy="14" r="3"/><path d="M11 14l11 14M27 28l11-12"/><path d="M9 16v18a3 3 0 003 3h27" stroke-dasharray="3 3"/></svg>
 ---
 

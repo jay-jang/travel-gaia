@@ -55,11 +55,13 @@ sources:
     version: ''
     section: Carrier-imposed surcharges
     url: 'https://support.travelport.com/webhelp/FaresAndPricing/Content/YQ-YR.htm'
+    tier: vendor-doc
   - org: IATA
     name: Passenger Fares and Ticketing
     version: ''
     section: 'Taxes, fees and charges'
     url: 'https://www.iata.org/en/training/subject-areas/fares-ticketing-courses/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6l16 8v6c0 11-7 18-16 22C15 38 8 31 8 20v-6z"/><path d="M20 23l3 3 6-7"/></svg>
 ---
 

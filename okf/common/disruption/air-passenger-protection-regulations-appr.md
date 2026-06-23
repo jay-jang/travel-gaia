@@ -46,11 +46,15 @@ sources:
     version: ''
     section: ''
     url: 'https://otc-cta.gc.ca/eng/publication/flight-delays-and-cancellations-a-guide'
+    tier: regulator-guidance
   - org: Government of Canada
     name: Air Passenger Protection Regulations (SOR/2019-150)
     version: '2019'
     section: ''
     url: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2019-150/'
+    tier: regulation
+    verifyQuote: Air Passenger Protection Regulations (SOR/2019-150)
+    verified: true
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6c5 4 8 9 8 16 0 9-4 15-8 20-4-5-8-11-8-20 0-7 3-12 8-16z"/><line x1="16" y1="16" x2="32" y2="16"/><path d="M21 27l2.5 2.5L29 24"/></svg>
 ---
 

@@ -55,6 +55,7 @@ sources:
     version: ''
     section: ''
     url: 'https://guides.developer.iata.org/docs/21-1_ImplementationGuide.pdf'
+    tier: standard-body
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M8 12h32M8 24h12m16 0h4M8 36h32"/><path d="M28 20l4 4-4 4"/><circle cx="24" cy="24" r="2"/></svg>
 ---
 

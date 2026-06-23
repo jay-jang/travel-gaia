@@ -59,11 +59,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.royalcaribbean.com/faq/questions/onboard-service-gratuity-expense'
+    tier: secondary
   - org: Travel Market Report
     name: Here's What Each Major Ocean Cruise Line Charges in Gratuities
     version: ''
     section: ''
     url: 'https://www.travelmarketreport.com/cruises/articles/heres-what-each-major-ocean-cruise-line-charges-in-gratuities'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 28a12 12 0 0 1 24 0z"/><line x1="8" y1="28" x2="40" y2="28"/><path d="M24 16v-4"/><path d="M21 12h6"/><path d="M16 34h16"/><path d="M19 38h10"/></svg>
 ---
 

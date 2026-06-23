@@ -48,11 +48,15 @@ sources:
     version: '1999'
     section: Appendix A
     url: 'https://otif.org/en/?page_id=172'
+    tier: association
+    verifyQuote: Uniform Rules concerning the Contract of International Carriage of Passengers by Rail (CIV – Appendix A to the Convention) adopted by the General Assembly at its 5th session from 26 May to 3 June 1999
+    verified: true
   - org: CIT (International Rail Transport Committee)
     name: Railway Contract Law — CIV / CIM
     version: ''
     section: ''
     url: 'https://www.cit-rail.org/en/rail-transport-law/cotif/'
+    tier: association
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 6h14l8 8v28H14z"/><path d="M28 6v8h8"/><path d="M19 24h12M19 30h12M19 36h8"/><circle cx="32" cy="19" r="2.5"/></svg>
 ---
 

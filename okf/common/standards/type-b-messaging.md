@@ -50,11 +50,13 @@ sources:
     version: v2.1
     section: ''
     url: 'https://www.iata.org/contentassets/badbfd2d36a74f12b021c9dd899ecbad/type_b_messaging_whitepaper_v2dot1_14_june_2024.pdf'
+    tier: association
   - org: Wikipedia
     name: Airline teletype system
     version: ''
     section: ''
     url: 'https://en.wikipedia.org/wiki/Airline_teletype_system'
+    tier: encyclopedia
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="20" width="36" height="18" rx="2"/><path d="M12 20v-6a4 4 0 0 1 4-4h16a4 4 0 0 1 4 4v6"/><path d="M12 27h.01M17 27h.01M22 27h.01M27 27h.01M32 27h.01M36 27h.01"/><path d="M14 32h20"/></svg>
 ---
 

@@ -44,11 +44,13 @@ sources:
     version: ''
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/ticketing-handbook/'
+    tier: association
   - org: AltexSoft
     name: Open ticket (Travel Glossary)
     version: ''
     section: ''
     url: 'https://www.altexsoft.com/glossary/open-ticket/'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M7 16h26v16H7z"/><path d="M33 16l8 8-8 8"/><line x1="13" y1="22" x2="24" y2="22"/><line x1="13" y1="27" x2="20" y2="27"/></svg>
 ---
 

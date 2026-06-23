@@ -50,14 +50,20 @@ distinctions:
 sources:
   - name: Passenger Services Conference Resolutions Manual (PSCRM)
     org: IATA
-    version: ''
+    version: 46th Edition (2026)
     section: ''
     url: 'https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/'
+    tier: association
+    verifyQuote: 'Significant Changes and Amendments to the 46th edition (2026) of the IATA Passenger Services Conference Resolution Manual include:'
+    verified: true
   - name: PADIS EDIFACT/XML Message Standards
     org: IATA
-    version: ''
+    version: v17.1
     section: ''
     url: 'https://standards.atlassian.net/wiki/spaces/AIDM/pages/748453892/PADIS+-+Passenger+and+Airport+Data+Exchange+Standards+Edifact+Implementation+Guide+v17.1+Reservation+Messages'
+    tier: standard-body
+    verifyQuote: PADIS - Passenger and Airport Data Exchange Standards Edifact Implementation Guide (v17.1) Reservation Messages; Latest version is v17.1 (no longer maintained by IATA) since move to AIDM
+    verified: true
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="17"/><line x1="24" y1="22" x2="24" y2="33"/><circle cx="24" cy="16" r="0.5" fill="currentColor"/></svg>
 ---
 
@@ -88,5 +94,5 @@ OSI 요소는 항공사에 안내성 정보(예: 상용고객 메모, 특별 응
 - **OSI** vs [Received From Element (RF)](/air/air-ops/received-from-element-rf.md) — The Received From element is a mandatory internal PNR field recording who authorized a change; an OSI is an optional informational message sent to carriers and is unrelated to change accountability.
 
 # Citations
-[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
-[2] [IATA — PADIS EDIFACT/XML Message Standards](https://standards.atlassian.net/wiki/spaces/AIDM/pages/748453892/PADIS+-+Passenger+and+Airport+Data+Exchange+Standards+Edifact+Implementation+Guide+v17.1+Reservation+Messages)
+[1] [IATA — Passenger Services Conference Resolutions Manual (PSCRM) — 46th Edition (2026)](https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/)
+[2] [IATA — PADIS EDIFACT/XML Message Standards — v17.1](https://standards.atlassian.net/wiki/spaces/AIDM/pages/748453892/PADIS+-+Passenger+and+Airport+Data+Exchange+Standards+Edifact+Implementation+Guide+v17.1+Reservation+Messages)

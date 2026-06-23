@@ -45,16 +45,19 @@ sources:
     version: ''
     section: ''
     url: 'https://www.hedna.org/who-we-are/'
+    tier: association
   - org: OpenTravel Alliance
     name: Open Payments Alliance Standards Workgroup Announced
     version: ''
     section: ''
     url: 'https://opentravel.org/news/open-payments-alliance-standards-workgroup-announced/'
+    tier: association
   - org: Hospitality Net
     name: Hotel Electronic Distribution Network Association (HEDNA) — Organization profile
     version: ''
     section: ''
     url: 'https://www.hospitalitynet.org/organization/17000710/hedna.html'
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="12" r="5"/><circle cx="10" cy="34" r="5"/><circle cx="38" cy="34" r="5"/><path d="M24 17v6M22 25l-9 6M26 25l9 6"/><path d="M15 34h18"/></svg>
 ---
 

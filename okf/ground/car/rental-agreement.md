@@ -36,11 +36,13 @@ sources:
     version: ''
     section: ''
     url: 'https://navan.com/resources/glossary/car-rental-agreement'
+    tier: secondary
   - org: U.S. General Services Administration
     name: 'U.S. Government Rental Car Agreement #5'
     version: ''
     section: ''
     url: 'https://media.defense.gov/2024/Mar/07/2003408482/-1/-1/0/USG_RENTAL_CAR_AGREEMENT_5.PDF'
+    tier: regulator-guidance
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5h16l8 8v22a3 3 0 0 1-3 3H12a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3z"/><path d="M28 5v8h8"/><path d="M15 21h14M15 27h14"/><path d="M15 33c3-3 5 0 7-1"/></svg>
 ---
 

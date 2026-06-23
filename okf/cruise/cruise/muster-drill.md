@@ -54,11 +54,13 @@ sources:
     version: SOLAS reg. III/19 (amended by MSC.350(92))
     section: ''
     url: 'https://www.imo.org/en/MediaCentre/PressBriefings/Pages/45-SOLAS-eif-.aspx'
+    tier: standard-body
   - name: What is a muster drill? (cruise FAQ)
     org: Cruise industry
     version: ''
     section: ''
     url: ''
+    tier: secondary
 icon: <svg viewBox="0 0 48 48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="15"/><circle cx="24" cy="24" r="6"/><line x1="24" y1="9" x2="24" y2="15"/><line x1="24" y1="33" x2="24" y2="39"/><line x1="9" y1="24" x2="15" y2="24"/><line x1="33" y1="24" x2="39" y2="24"/></svg>
 ---
 
