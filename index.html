@@ -720,6 +720,7 @@ footer{color:var(--faint);font-family:var(--sans);font-size:.76rem;text-align:ce
       <a class="cat-link${(h2==='#/'||!h2)?' active':''}" href="#/">${t('home')}</a>
       <a class="cat-link${h2.startsWith('#/index')?' active':''}" href="#/index">${t('index')}</a>
       <a class="cat-link${h2.startsWith('#/graph')?' active':''}" href="#/graph">${t('graph')}</a>
+      <a class="cat-link${h2.startsWith('#/mindmap')?' active':''}" href="#/mindmap">${LANG==='ko'?'🧠 마인드맵':'🧠 Mindmap'}</a>
       <a class="cat-link${h2.startsWith('#/classroom')?' active':''}" href="#/classroom">${t('classroom')}</a>
       <a class="cat-link${h2.startsWith('#/confusables')?' active':''}" href="#/confusables">${LANG==='ko'?'⚖ 혼동 용어':'⚖ Confusables'}</a>
       <a class="cat-link${h2.startsWith('#/matrix')?' active':''}" href="#/matrix">${LANG==='ko'?'▦ 공급자 매트릭스':'▦ Provider matrix'}</a>
@@ -3214,6 +3215,53 @@ footer{color:var(--faint);font-family:var(--sans);font-size:.76rem;text-align:ce
     else { h+=`<div style="display:grid;grid-template-columns:repeat(${es.length},minmax(0,1fr));gap:16px;align-items:start">${es.map(compareCard).join('')}</div>`; }
     main.innerHTML=h; renderSidebar(null); main.focus(); document.title='Compare — Travel Gaia'; }
 
+  /* ---- mindmap: collapsible radial tree of the taxonomy (vertical -> subcategory -> term) ---- */
+  function renderMindmap(){ showGraphDashboard(false);
+    let h=pageHead(LANG==='ko'?'마인드맵 (분류 구조)':'Mindmap (taxonomy)', LANG==='ko'?`${VERTICALS.length} 버티컬 · ${CATS.length} 세분류 · ${ENTRIES.length} 표제어`:`${VERTICALS.length} verticals · ${CATS.length} subcategories · ${ENTRIES.length} terms`);
+    h+=`<div style="display:flex;gap:8px;flex-wrap:wrap;margin:0 0 10px"><button class="tbtn" id="mmCollapse">${LANG==='ko'?'모두 접기':'Collapse all'}</button><button class="tbtn" id="mmReset">${LANG==='ko'?'화면 리셋':'Reset view'}</button><span style="font-size:.74rem;color:var(--faint);align-self:center">${LANG==='ko'?'세분류 클릭=펼치기 · 표제어 클릭=상세 · 드래그/휠=이동·확대':'click subcategory=expand · click term=detail · drag/wheel=pan·zoom'}</span></div>`;
+    h+=`<div id="mmwrap" style="position:relative;height:calc(100vh - 210px);min-height:480px;border:1px solid var(--rule);background:var(--surface);overflow:hidden"><svg id="mmsvg" style="width:100%;height:100%;cursor:grab;display:block"></svg><div id="mmtip" class="kg-tip"></div></div>`;
+    main.innerHTML=h; renderSidebar(null); document.title='Mindmap — Travel Gaia';
+    if(typeof d3==='undefined'){ document.getElementById('mmwrap').innerHTML='<div class="empty">d3 unavailable</div>'; return; }
+    const root0={name:META.name||'Travel Gaia',isRoot:true,children:VERTICALS.map(v=>({id:'v:'+v.id,name:vertName(v),color:v.color,isVert:true,
+      children:(catsByVert.get(v.id)||[]).map(c=>({id:'c:'+c.id,name:catName(c),color:c.color,isCat:true,
+        children:(entriesByCat.get(c.id)||[]).map(e=>({id:'t:'+e.id,tid:e.id,name:(LANG==='ko'&&e.term_ko&&e.term_ko!==e.term?e.term_ko:e.term),term:e,color:c.color,isTerm:true}))}))}))};
+    const root=d3.hierarchy(root0);
+    root.descendants().forEach(d=>{ if(d.depth>=2 && d.children){ d._children=d.children; d.children=null; } });
+    const wrap=document.getElementById('mmwrap'); const W=wrap.clientWidth||900, H=wrap.clientHeight||540; const radius=Math.min(W,H)/2-72;
+    const svg=d3.select('#mmsvg').attr('viewBox',[-W/2,-H/2,W,H].join(' '));
+    const gZoom=svg.append('g');
+    const gLink=gZoom.append('g').attr('fill','none').attr('stroke-opacity',0.55).attr('stroke-width',1.1);
+    const gNode=gZoom.append('g');
+    const tip=document.getElementById('mmtip');
+    const tree=d3.tree().size([2*Math.PI,radius]).separation((a,b)=>(a.parent===b.parent?1:2)/(a.depth||1));
+    const zoom=d3.zoom().scaleExtent([0.35,5]).on('zoom',ev=>gZoom.attr('transform',ev.transform));
+    svg.call(zoom);
+    function update(){ tree(root);
+      const nodes=root.descendants(), links=root.links();
+      gLink.selectAll('path').data(links,d=>d.target.data.id).join('path')
+        .attr('stroke',d=>d.target.data.color||'var(--border)')
+        .attr('d',d3.linkRadial().angle(d=>d.x).radius(d=>d.y));
+      const node=gNode.selectAll('g.mmn').data(nodes,d=>d.data.id);
+      const ne=node.enter().append('g').attr('class','mmn');
+      ne.append('circle'); ne.append('text').attr('fill','currentColor').style('paint-order','stroke').attr('stroke','var(--surface)').attr('stroke-width',3).attr('stroke-linejoin','round');
+      const nm=ne.merge(node).style('cursor','pointer').attr('transform',d=>`rotate(${d.x*180/Math.PI-90}) translate(${d.y},0)`);
+      nm.select('circle').attr('r',d=>d.data.isRoot?6:d.data.isVert?5:d.data.isCat?4:2.6)
+        .attr('fill',d=>(d._children?'var(--accent)':(d.data.color||'var(--muted)'))).attr('stroke','var(--surface)').attr('stroke-width',1.4);
+      nm.select('text').attr('dy','0.31em').attr('font-size',d=>d.data.isTerm?'9px':d.data.isCat?'11px':'12.5px').attr('font-weight',d=>d.data.isTerm?400:700)
+        .attr('x',d=>d.x<Math.PI?7:-7).attr('text-anchor',d=>d.x<Math.PI?'start':'end')
+        .attr('transform',d=>d.x>=Math.PI?'rotate(180)':null).text(d=>d.data.name);
+      nm.on('click',(ev,d)=>{ ev.stopPropagation(); if(d.data.isTerm){ location.hash='#/term/'+d.data.tid; return; }
+        if(d.children){ d._children=d.children; d.children=null; } else if(d._children){ d.children=d._children; d._children=null; } update(); })
+        .on('mousemove',(ev,d)=>{ if(!d.data.isTerm){ tip.style.opacity=0; return; } const e=d.data.term; const def=esc(String((LANG==='ko'&&e.definition_ko)||e.definition||'').slice(0,90)); const rc=(e.relationships||[]).length;
+          tip.innerHTML=`<b>${esc(e.term)}</b>${rc?` · ${LANG==='ko'?'관계':'links'} ${rc}`:''}<br>${def}`; const r=wrap.getBoundingClientRect(); tip.style.left=(ev.clientX-r.left)+'px'; tip.style.top=(ev.clientY-r.top)+'px'; tip.style.opacity=1; })
+        .on('mouseleave',()=>{ tip.style.opacity=0; });
+      gNode.attr('color','var(--text)');
+    }
+    update();
+    document.getElementById('mmCollapse').onclick=()=>{ root.descendants().forEach(d=>{ if(d.depth>=2&&d.children){ d._children=d.children; d.children=null; } }); update(); };
+    document.getElementById('mmReset').onclick=()=>{ svg.transition().duration(300).call(zoom.transform,d3.zoomIdentity); };
+  }
+
   /* ---- vertical landing (big grouping -> its subcategories) ---- */
   function renderVertical(id){ showGraphDashboard(false); const v=vertById.get(id);
     if(!v){ main.innerHTML=`<div class="empty">${esc(t('notFound'))}</div>`; renderSidebar(null); return; }
@@ -3238,6 +3286,7 @@ footer{color:var(--faint);font-family:var(--sans);font-size:.76rem;text-align:ce
     if(hash.startsWith('#/matrix')){ if($('#q'))$('#q').value=''; return renderMatrix(); }
     if(hash.startsWith('#/compare/')){ if($('#q'))$('#q').value=''; return renderCompare(decodeURIComponent(hash.slice(10))); }
     if(hash.startsWith('#/vertical/')){ if($('#q'))$('#q').value=''; return renderVertical(decodeURIComponent(hash.slice(11))); }
+    if(hash.startsWith('#/mindmap')){ if($('#q'))$('#q').value=''; return renderMindmap(); }
     if(hash==='#/index'||hash.startsWith('#/index')){ showGraphDashboard(false); document.title='Index — Travel Gaia'; if($('#q'))$('#q').value=''; return renderIndex(); }
     if(hash==='#/classroom'||hash.startsWith('#/classroom')){ showGraphDashboard(false); document.title='Classroom — Travel Gaia'; if($('#q'))$('#q').value=''; return renderClassroom(); }
     if(hash==='#/graph'||hash.startsWith('#/graph?')){ showGraphDashboard(true); document.title='Knowledge Graph — Travel Gaia'; if($('#q'))$('#q').value=''; return renderGraphDashboard(); }

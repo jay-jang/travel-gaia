@@ -1,0 +1,374 @@
+Reading additional input from stdin...
+OpenAI Codex v0.140.0
+--------
+workdir: /home/ubuntu/workspace/travel-gaia
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: workspace-write [workdir, /tmp, $TMPDIR]
+reasoning effort: medium
+reasoning summaries: none
+session id: 019ef221-0a83-7c72-8a93-14c87a57abac
+--------
+user
+# Travel Gaia — 마인드맵 UI 설계 자문
+
+너는 시니어 데이터비주얼라이제이션 엔지니어다. 아래 기능의 **설계**를 제안하라. 결론 지향, 구체적으로.
+
+## 제품/현황
+Travel Gaia = 여행산업 용어 백과사전. **407개 표제어**, 명확한 계층: **vertical(5) → subcategory(16) → term(407)**. 각 term엔 relationships/distinctions(교차 링크)도 있음.
+- 단일 `index.html`, 의존성 0, 오프라인. **d3 v7 인라인 임베드**됨(이미 사용 중). KO/EN 토글, 다크모드.
+- 기존 뷰: 편집형 표제어 페이지, **D3 force-directed 관계 그래프**(카테고리→부모→자식, 관계 기반·확장형), 전체 색인(A-Z), 비교/공급자매트릭스, vertical 랜딩 페이지.
+
+## 추가하려는 것
+**마인드맵 UI** — 전체 용어를 **계층적으로 구조화해 한눈에 이해**하도록. 기존 관계 force-graph와는 **다른 목적**(관계 탐색이 아니라 **전체 분류 구조의 조망/이해**). 라우트 예: `#/mindmap`.
+
+## 제약
+- 단일 HTML·오프라인·d3 v7 사용. 기존 그래프/클래스룸 코드 **건드리지 않고 additive**. KO/EN.
+- 407개 리프를 한 번에 그리면 과밀 → 점진적 공개 필요.
+
+## 질문 (이대로 답하라)
+```
+[레이아웃] 최적 마인드맵 레이아웃 1개 추천 + 이유 (radial tree / dendrogram / collapsible indent tree / treemap / circle-packing 중). 대안 1개.
+[407 처리] 노드 과밀을 푸는 방식 (기본 vertical/category만, 클릭 확장, 검색 점프, 줌/팬 등)
+[상호작용] 노드 클릭/호버 동작, 표제어로의 네비, 접기/펼치기, 검색 연동
+[force-graph와 차별] 기존 관계 그래프와 무엇이 다르고 어떻게 공존하나
+[관계 표현] 계층(트리) 외에 cross-link(relationships/distinctions)를 마인드맵에 어떻게(또는 안 넣을지)
+[구현] d3 v7로 단일파일 내 구현 핵심(어떤 d3 모듈/레이아웃, SVG vs canvas, 반응형, 다크모드/KO-EN)
+[모바일] 좁은 화면 대응
+[리스크] 최대 함정 2~3개
+[한줄총평] 가장 중요한 한 가지
+```
+일반론 말고 **이 제품(계층 5→16→407, d3 인라인, 단일파일)에 특정된** 구체안으로.
+warning: Codex's Linux sandbox uses bubblewrap and needs access to create user namespaces.
+codex
+[레이아웃]  
+**추천: collapsible indent tree.**
+
+이 제품에는 `vertical(5) → subcategory(16) → term(407)`처럼 깊이가 얕고 리프가 많은 분류 구조가 있으므로, 방사형보다 **접히는 좌측 인덴트 트리**가 가장 적합하다.
+
+이유:
+- 407개 term을 한 화면에 “예쁘게” 배치하는 것보다, 사용자가 **5개 vertical → 16개 subcategory → 필요한 term** 순서로 이해하는 것이 중요하다.
+- KO/EN 용어 길이가 제각각이라 radial tree나 circle-packing은 라벨 충돌이 심하다.
+- 기존 백과사전/색인 UX와도 잘 맞는다. 사용자는 트리를 훑다가 바로 표제어로 이동할 수 있다.
+- 단일 HTML, D3 v7, 오프라인 조건에서 구현과 유지보수가 가장 안전하다.
+
+대안 1개: **radial tree**  
+전체 구조를 “한눈에 보는” 시각적 임팩트는 좋다. 다만 이 제품에서는 기본값보다는 “overview mode”로 제한하는 편이 낫다. vertical/subcategory까지만 radial로 보여주고 term 라벨은 검색 또는 선택 시에만 표시해야 한다.
+
+[407 처리]  
+기본 상태는 **vertical 5개 + subcategory 16개까지만 노출**한다.
+
+권장 동작:
+- 최초 진입: root → 5 vertical → 16 subcategory 표시
+- subcategory 클릭: 해당 term만 펼침
+- 다른 subcategory를 열 때 기존 열린 subcategory는 유지하되, “모두 접기” 제공
+- term은 한 subcategory 안에서만 노출되므로 한 번에 보이는 리프 수를 제한
+- 검색 입력 시:
+  - 매칭 term의 부모 vertical/subcategory를 자동 펼침
+  - 매칭 term을 하이라이트
+  - 첫 결과로 스크롤/줌 이동
+- `Expand all`은 제공하되 기본 버튼이 아니라 보조 액션으로 둔다. 407개 전체 펼침은 데모용이지 기본 탐색 UX가 아니다.
+- SVG에 `d3.zoom`을 적용해 pan/zoom 가능하게 하되, indent tree에서는 **스크롤 + fit-to-width**가 더 중요하다.
+
+[상호작용]  
+노드 클릭:
+- vertical/subcategory: 접기/펼치기
+- term: 해당 표제어 페이지로 이동, 예: `#/term/{id}` 또는 기존 라우트 규칙 사용
+- 이미 선택된 term 클릭 시에도 표제어로 이동하는 동작은 일관되게 유지
+
+호버:
+- 노드 라벨 강조
+- 부모 체인 강조: root → vertical → subcategory → term
+- term hover 시 짧은 정의 preview를 tooltip 또는 우측 detail pane에 표시
+- 모바일에서는 hover가 없으므로 tap selection으로 대체
+
+접기/펼치기:
+- vertical 단위 접기/펼치기
+- subcategory 단위 접기/펼치기
+- `Collapse all`, `Expand vertical`, `Reset view` 제공
+- 현재 열린 상태는 hash/query 또는 local state에 보관 가능  
+  예: `#/mindmap?open=lodging,distribution&q=ota`
+
+검색 연동:
+- 기존 전체 색인 검색이 있다면 같은 검색 유틸을 재사용
+- 검색 결과는 트리 안에서 직접 드러나야 한다
+- 검색 결과 목록을 별도로 오른쪽/상단에 두고, 클릭하면 해당 노드로 이동
+- KO/EN 토글 시 같은 term id를 유지하고 label만 교체
+
+[force-graph와 차별]  
+기존 force graph는 **관계 탐색용**이다. term 간 relationships/distinctions를 따라 “이 개념이 무엇과 연결되는가”를 보는 뷰다.
+
+마인드맵은 **분류 이해용**이다. “이 용어가 여행산업 전체 구조에서 어디에 속하는가”를 보여준다.
+
+공존 방식:
+- force graph: term 중심, 관계 중심, 확장형 탐색
+- mindmap: taxonomy 중심, 전체 구조 중심, 접힘 기반 탐색
+- term 페이지에서 양방향 링크:
+  - “분류에서 보기” → `#/mindmap?focus=termId`
+  - “관계 그래프에서 보기” → 기존 graph focus route
+- 두 뷰가 같은 데이터를 쓰되 시각적 목적을 섞지 않는다.
+
+[관계 표현]  
+마인드맵에는 cross-link를 **기본적으로 넣지 않는 것**을 추천한다.
+
+이유:
+- 계층 트리에 relationships/distinctions 선을 모두 얹으면 기존 force graph의 복잡도를 다시 가져오게 된다.
+- 407개 리프에서 교차 링크까지 보이면 “분류 구조 조망”이라는 목적이 흐려진다.
+
+대신 제한적으로 표현:
+- term 선택 시에만 해당 term의 cross-link를 우측 detail pane에 목록으로 표시
+- 현재 보이는 노드 안에 관계 대상이 있으면 얇은 보조선 또는 작은 badge 표시
+- badge 예:
+  - `3 related`
+  - `2 distinctions`
+- 클릭하면 기존 force graph로 이동하거나 해당 term으로 이동
+- “Show cross-links” 토글은 고급 옵션으로만 제공
+
+[구현]  
+D3 v7에서 핵심은 `d3.hierarchy` + `d3.tree`다.
+
+구조:
+```js
+const root = d3.hierarchy({
+  id: 'root',
+  children: verticals.map(v => ({
+    id: v.id,
+    children: subcategories.map(c => ({
+      id: c.id,
+      children: termsInCategory
+    }))
+  }))
+});
+```
+
+레이아웃:
+- `d3.tree().nodeSize([rowHeight, depthWidth])`
+- indent tree이므로 `x = row index`, `y = depth * indent`
+- 링크는 `d3.linkHorizontal()`
+- 노드는 SVG `g`
+- 라벨은 `text`
+- 긴 라벨은 ellipsis 처리 또는 최대 폭 기준으로 줄임
+
+SVG vs canvas:
+- **SVG 추천**
+- 407개 수준은 SVG로 충분하다
+- 텍스트, 클릭, 접근성, 다크모드 대응이 쉽다
+- canvas는 라벨/이벤트 관리 비용이 크고 이 규모에서는 이득이 작다
+
+반응형:
+- `ResizeObserver`로 컨테이너 폭 감지
+- height는 노출된 노드 수 기반으로 계산
+- 노드 수가 많을 때는 SVG 내부 pan보다 페이지 스크롤을 우선
+- `viewBox` 기반으로 width 반응형 처리
+
+다크모드:
+- 기존 CSS 변수 재사용
+- 예:
+  - `--mindmap-link`
+  - `--mindmap-node`
+  - `--mindmap-node-active`
+  - `--mindmap-text-muted`
+- JS에서 색을 하드코딩하지 말고 class 부여 후 CSS에서 처리
+
+KO/EN:
+- 노드 id는 언어와 무관하게 고정
+- label accessor만 분기:
+```js
+const label = currentLang === 'ko' ? d.data.ko : d.data.en;
+```
+- 언어 토글 시 hierarchy를 새로 만들 필요 없이 label만 업데이트해도 된다.
+
+[모바일]  
+좁은 화면에서는 “그래프 캔버스”보다 **탐색형 리스트 트리**처럼 동작해야 한다.
+
+권장:
+- depth indent 축소: desktop `28-36px`, mobile `16-20px`
+- 라벨 최대 폭 제한
+- term 정의 preview는 tooltip 대신 하단 sheet 또는 inline expanded row
+- vertical/subcategory는 sticky section header처럼 보이게 처리 가능
+- zoom/pan은 모바일에서 보조 기능으로 두고, 기본은 세로 스크롤
+- 검색창은 상단 sticky
+- term tap:
+  - 첫 tap: 선택/preview
+  - 두 번째 tap 또는 “열기” 버튼: 표제어 이동  
+  단, 단순함을 원하면 바로 이동도 괜찮다.
+
+[리스크]  
+1. **전체 펼침을 기본 UX로 만드는 것**  
+407개 term이 한 번에 보이면 마인드맵이 아니라 긴 덤프가 된다. 기본은 vertical/subcategory까지만 보여야 한다.
+
+2. **cross-link를 트리에 과하게 얹는 것**  
+관계선을 넣는 순간 기존 force graph와 목적이 겹친다. 마인드맵은 taxonomy를 지켜야 한다.
+
+3. **라벨 충돌과 언어 길이 차이**  
+KO/EN 토글에서 EN 라벨이 훨씬 길 수 있다. radial/circle 계열은 여기서 쉽게 깨진다. indent tree가 안전한 이유도 이것이다.
+
+[한줄총평]  
+**Travel Gaia의 마인드맵은 “예쁜 전체 그래프”가 아니라, 5→16→407 분류를 접고 펼치며 이해하는 taxonomy navigator로 설계해야 한다.**
+tokens used
+5,392
+[레이아웃]  
+**추천: collapsible indent tree.**
+
+이 제품에는 `vertical(5) → subcategory(16) → term(407)`처럼 깊이가 얕고 리프가 많은 분류 구조가 있으므로, 방사형보다 **접히는 좌측 인덴트 트리**가 가장 적합하다.
+
+이유:
+- 407개 term을 한 화면에 “예쁘게” 배치하는 것보다, 사용자가 **5개 vertical → 16개 subcategory → 필요한 term** 순서로 이해하는 것이 중요하다.
+- KO/EN 용어 길이가 제각각이라 radial tree나 circle-packing은 라벨 충돌이 심하다.
+- 기존 백과사전/색인 UX와도 잘 맞는다. 사용자는 트리를 훑다가 바로 표제어로 이동할 수 있다.
+- 단일 HTML, D3 v7, 오프라인 조건에서 구현과 유지보수가 가장 안전하다.
+
+대안 1개: **radial tree**  
+전체 구조를 “한눈에 보는” 시각적 임팩트는 좋다. 다만 이 제품에서는 기본값보다는 “overview mode”로 제한하는 편이 낫다. vertical/subcategory까지만 radial로 보여주고 term 라벨은 검색 또는 선택 시에만 표시해야 한다.
+
+[407 처리]  
+기본 상태는 **vertical 5개 + subcategory 16개까지만 노출**한다.
+
+권장 동작:
+- 최초 진입: root → 5 vertical → 16 subcategory 표시
+- subcategory 클릭: 해당 term만 펼침
+- 다른 subcategory를 열 때 기존 열린 subcategory는 유지하되, “모두 접기” 제공
+- term은 한 subcategory 안에서만 노출되므로 한 번에 보이는 리프 수를 제한
+- 검색 입력 시:
+  - 매칭 term의 부모 vertical/subcategory를 자동 펼침
+  - 매칭 term을 하이라이트
+  - 첫 결과로 스크롤/줌 이동
+- `Expand all`은 제공하되 기본 버튼이 아니라 보조 액션으로 둔다. 407개 전체 펼침은 데모용이지 기본 탐색 UX가 아니다.
+- SVG에 `d3.zoom`을 적용해 pan/zoom 가능하게 하되, indent tree에서는 **스크롤 + fit-to-width**가 더 중요하다.
+
+[상호작용]  
+노드 클릭:
+- vertical/subcategory: 접기/펼치기
+- term: 해당 표제어 페이지로 이동, 예: `#/term/{id}` 또는 기존 라우트 규칙 사용
+- 이미 선택된 term 클릭 시에도 표제어로 이동하는 동작은 일관되게 유지
+
+호버:
+- 노드 라벨 강조
+- 부모 체인 강조: root → vertical → subcategory → term
+- term hover 시 짧은 정의 preview를 tooltip 또는 우측 detail pane에 표시
+- 모바일에서는 hover가 없으므로 tap selection으로 대체
+
+접기/펼치기:
+- vertical 단위 접기/펼치기
+- subcategory 단위 접기/펼치기
+- `Collapse all`, `Expand vertical`, `Reset view` 제공
+- 현재 열린 상태는 hash/query 또는 local state에 보관 가능  
+  예: `#/mindmap?open=lodging,distribution&q=ota`
+
+검색 연동:
+- 기존 전체 색인 검색이 있다면 같은 검색 유틸을 재사용
+- 검색 결과는 트리 안에서 직접 드러나야 한다
+- 검색 결과 목록을 별도로 오른쪽/상단에 두고, 클릭하면 해당 노드로 이동
+- KO/EN 토글 시 같은 term id를 유지하고 label만 교체
+
+[force-graph와 차별]  
+기존 force graph는 **관계 탐색용**이다. term 간 relationships/distinctions를 따라 “이 개념이 무엇과 연결되는가”를 보는 뷰다.
+
+마인드맵은 **분류 이해용**이다. “이 용어가 여행산업 전체 구조에서 어디에 속하는가”를 보여준다.
+
+공존 방식:
+- force graph: term 중심, 관계 중심, 확장형 탐색
+- mindmap: taxonomy 중심, 전체 구조 중심, 접힘 기반 탐색
+- term 페이지에서 양방향 링크:
+  - “분류에서 보기” → `#/mindmap?focus=termId`
+  - “관계 그래프에서 보기” → 기존 graph focus route
+- 두 뷰가 같은 데이터를 쓰되 시각적 목적을 섞지 않는다.
+
+[관계 표현]  
+마인드맵에는 cross-link를 **기본적으로 넣지 않는 것**을 추천한다.
+
+이유:
+- 계층 트리에 relationships/distinctions 선을 모두 얹으면 기존 force graph의 복잡도를 다시 가져오게 된다.
+- 407개 리프에서 교차 링크까지 보이면 “분류 구조 조망”이라는 목적이 흐려진다.
+
+대신 제한적으로 표현:
+- term 선택 시에만 해당 term의 cross-link를 우측 detail pane에 목록으로 표시
+- 현재 보이는 노드 안에 관계 대상이 있으면 얇은 보조선 또는 작은 badge 표시
+- badge 예:
+  - `3 related`
+  - `2 distinctions`
+- 클릭하면 기존 force graph로 이동하거나 해당 term으로 이동
+- “Show cross-links” 토글은 고급 옵션으로만 제공
+
+[구현]  
+D3 v7에서 핵심은 `d3.hierarchy` + `d3.tree`다.
+
+구조:
+```js
+const root = d3.hierarchy({
+  id: 'root',
+  children: verticals.map(v => ({
+    id: v.id,
+    children: subcategories.map(c => ({
+      id: c.id,
+      children: termsInCategory
+    }))
+  }))
+});
+```
+
+레이아웃:
+- `d3.tree().nodeSize([rowHeight, depthWidth])`
+- indent tree이므로 `x = row index`, `y = depth * indent`
+- 링크는 `d3.linkHorizontal()`
+- 노드는 SVG `g`
+- 라벨은 `text`
+- 긴 라벨은 ellipsis 처리 또는 최대 폭 기준으로 줄임
+
+SVG vs canvas:
+- **SVG 추천**
+- 407개 수준은 SVG로 충분하다
+- 텍스트, 클릭, 접근성, 다크모드 대응이 쉽다
+- canvas는 라벨/이벤트 관리 비용이 크고 이 규모에서는 이득이 작다
+
+반응형:
+- `ResizeObserver`로 컨테이너 폭 감지
+- height는 노출된 노드 수 기반으로 계산
+- 노드 수가 많을 때는 SVG 내부 pan보다 페이지 스크롤을 우선
+- `viewBox` 기반으로 width 반응형 처리
+
+다크모드:
+- 기존 CSS 변수 재사용
+- 예:
+  - `--mindmap-link`
+  - `--mindmap-node`
+  - `--mindmap-node-active`
+  - `--mindmap-text-muted`
+- JS에서 색을 하드코딩하지 말고 class 부여 후 CSS에서 처리
+
+KO/EN:
+- 노드 id는 언어와 무관하게 고정
+- label accessor만 분기:
+```js
+const label = currentLang === 'ko' ? d.data.ko : d.data.en;
+```
+- 언어 토글 시 hierarchy를 새로 만들 필요 없이 label만 업데이트해도 된다.
+
+[모바일]  
+좁은 화면에서는 “그래프 캔버스”보다 **탐색형 리스트 트리**처럼 동작해야 한다.
+
+권장:
+- depth indent 축소: desktop `28-36px`, mobile `16-20px`
+- 라벨 최대 폭 제한
+- term 정의 preview는 tooltip 대신 하단 sheet 또는 inline expanded row
+- vertical/subcategory는 sticky section header처럼 보이게 처리 가능
+- zoom/pan은 모바일에서 보조 기능으로 두고, 기본은 세로 스크롤
+- 검색창은 상단 sticky
+- term tap:
+  - 첫 tap: 선택/preview
+  - 두 번째 tap 또는 “열기” 버튼: 표제어 이동  
+  단, 단순함을 원하면 바로 이동도 괜찮다.
+
+[리스크]  
+1. **전체 펼침을 기본 UX로 만드는 것**  
+407개 term이 한 번에 보이면 마인드맵이 아니라 긴 덤프가 된다. 기본은 vertical/subcategory까지만 보여야 한다.
+
+2. **cross-link를 트리에 과하게 얹는 것**  
+관계선을 넣는 순간 기존 force graph와 목적이 겹친다. 마인드맵은 taxonomy를 지켜야 한다.
+
+3. **라벨 충돌과 언어 길이 차이**  
+KO/EN 토글에서 EN 라벨이 훨씬 길 수 있다. radial/circle 계열은 여기서 쉽게 깨진다. indent tree가 안전한 이유도 이것이다.
+
+[한줄총평]  
+**Travel Gaia의 마인드맵은 “예쁜 전체 그래프”가 아니라, 5→16→407 분류를 접고 펼치며 이해하는 taxonomy navigator로 설계해야 한다.**

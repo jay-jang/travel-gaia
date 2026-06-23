@@ -1,0 +1,134 @@
+## Travel Gaia 마인드맵 UI — 설계 자문
+
+---
+
+### [레이아웃] **Radial Tree 추천**
+
+**이유:** 5→16→407 계층이 3단계라는 점이 핵심. Radial tree는 루트(Travel Gaia)→5 verticals→16 subcategories→407 terms를 **동심원 구조로 자연스럽게 매핑**한다. Vertical 5개가 72° 섹터를 각각 차지하고, 섹터 내부에서 subcategory가 부채꼴을 나눈다. 한 화면에서 **전체 분류의 균형과 크기 비례**가 직관적으로 보인다.
+
+- Dendrogram은 좌→우 선형이라 5개 vertical이 수직으로 겹쳐 공간 효율이 최악
+- Collapsible indent tree는 열람엔 좋으나 "한눈에 조망"이 안 됨
+- Treemap/Circle-packing은 면적 기반이라 계층적 경로가 불명확
+
+**대안:** `Collapsible Radial Tree` + 초기 상태는 **depth=2(vertical+subcategory만)** 노출. 클릭으로 term 레벨 확장. 모바일 폴백으로는 **Collapsible Indent Tree**.
+
+---
+
+### [407 처리] 3단계 점진적 공개
+
+| 단계 | 상태 | 노출 노드 수 |
+|------|------|-------------|
+| 초기 | root + 5 verticals | 6개 |
+| vertical 클릭 | + 해당 subcategories 펼침 | 최대 6개 추가 |
+| subcategory 클릭 | + 해당 terms 펼침 | 최대 ~30개 추가 |
+
+- **기본 렌더 대상: 22개(root+5+16)**만 SVG에 올림. term 407개는 데이터만 바인딩, DOM은 클릭 시 생성(enter/exit 패턴)
+- **검색창**: 타이핑 시 해당 term 경로를 자동 확장 + 노드 하이라이트 + 줌 이동(`zoom.translateTo`)
+- **"전체 펼치기"** 버튼은 의도적으로 숨김 또는 경고 제공("407개 노드 렌더 - 느릴 수 있음")
+
+---
+
+### [상호작용]
+
+| 이벤트 | 동작 |
+|--------|------|
+| **Vertical 클릭** | 해당 섹터 subcategory 펼침/접기, 나머지 섹터 dimming |
+| **Subcategory 클릭** | term 노드 확장, 이전 subcategory는 접힘(한 섹터에 하나만 열림) |
+| **Term 클릭** | `#/term/{id}` 라우트로 이동 (기존 표제어 페이지) |
+| **Term 호버** | 툴팁: 한/영 정의 1줄 + relationships 수 뱃지 |
+| **배경 클릭** | 모든 노드 depth≥3 접힘, 줌 리셋 |
+| **검색 연동** | 기존 검색 인풋 재활용 또는 마인드맵 전용 인풋 추가. 매칭 term까지 path를 `d3.zoom().translateTo`로 애니메이션 이동 |
+
+**접기/펼치기:** 각 내부 노드(vertical/subcategory)에 `collapsed` boolean 상태 관리. d3의 `tree()` 레이아웃 재계산 → `transition().duration(400)` + `d3.linkRadial()` path 보간.
+
+---
+
+### [force-graph와 차별]
+
+| | 기존 Force-directed 관계 그래프 | 新 Radial Mindmap |
+|---|---|---|
+| **목적** | cross-term 관계 탐색 | 분류 구조 조망 |
+| **레이아웃** | 물리 시뮬레이션, 위치 비결정적 | 고정 계층, 위치 결정적 |
+| **엣지** | relationships/distinctions 링크 | 부모→자식 트리 엣지만 |
+| **진입 컨텍스트** | "이 용어와 관련된 다른 용어는?" | "이 용어는 어디에 속하나?" |
+| **시작점** | 특정 term에서 출발 | 전체 루트에서 출발 |
+
+**공존 방식:** Term 노드 클릭 시 표제어 페이지에 **"관계 그래프에서 보기"** / **"마인드맵에서 보기"** 양방향 버튼. `#/mindmap?highlight=term_id` 파라미터로 마인드맵에 진입 시 해당 노드 자동 확장+하이라이트.
+
+---
+
+### [관계 표현] **마인드맵에 cross-link 넣지 말 것**
+
+이유:
+1. Radial tree의 **계층 명확성**이 마인드맵의 유일한 강점인데, cross-link 추가 시 force-graph와 차별이 없어짐
+2. 407개 term 간 cross-link는 시각적 스파게티로 즉각 전락
+3. 사용자 멘탈모델 충돌: "이건 구조 보는 뷰야, 관계 보는 뷰야?"
+
+**대신:** Term 노드 호버 시 tooltip에 "관계 X개 있음" 뱃지 표시 → 클릭하면 표제어 페이지의 relationships 섹션으로 이동. Cross-link는 force-graph에 위임.
+
+---
+
+### [구현] d3 v7 단일파일 핵심
+
+```js
+// 핵심 d3 모듈 (이미 인라인 임베드된 v7에 모두 포함)
+d3.hierarchy()      // 데이터 트리 구성
+d3.tree()           // radial 레이아웃: .size([2*Math.PI, radius])
+d3.linkRadial()     // 엣지 path 생성
+d3.zoom()           // 줌/팬
+d3.select/transition // 애니메이션
+```
+
+**SVG 선택:** Canvas는 이벤트 핸들링이 복잡하고 기존 코드가 SVG 기반이므로 **SVG 유지**. 407노드 전체 렌더 시 SVG 성능 한계가 있으나, 점진적 공개로 실제 DOM 노드 수를 ~100 이하로 유지하면 문제없음.
+
+**구조 스케치:**
+```js
+// 기존 코드 오염 없이 additive
+function initMindmap() {
+  const data = buildHierarchy(glossaryData); // vertical→subcat→term 트리 변환
+  const root = d3.hierarchy(data);
+  // 초기 depth≥2 노드 collapse
+  root.descendants().forEach(d => {
+    if (d.depth >= 2) d._children = d.children, d.children = null;
+  });
+  renderRadialTree(root);
+}
+
+// 라우터에 추가
+case 'mindmap': showView('mindmap-view'); initMindmap(); break;
+```
+
+**다크모드/KO-EN:** CSS변수(`--node-fill`, `--link-stroke` 등)로 SVG 스타일 관리 → 기존 `body.dark` 클래스 토글에 자동 반응. 노드 레이블은 `d.data.name[currentLang]` 참조.
+
+**반응형:** `svg.attr('viewBox', ...)` + `ResizeObserver`로 컨테이너 크기 변경 시 radius 재계산 → `renderRadialTree()` 재호출.
+
+---
+
+### [모바일]
+
+- 초기 radius를 `Math.min(vw, vh) * 0.42`로 설정
+- **depth≤1(vertical만)** 초기 노출, subcategory는 탭으로 확장
+- term 레이블: 모바일(`vw < 768`)에서는 노드 선택 시만 표시(평소엔 숨김)
+- 폴백: `vw < 480` → Radial 대신 **Collapsible Indent Tree** 자동 전환 (같은 데이터 구조, 레이아웃만 교체)
+- 핀치 줌은 `d3.zoom().scaleExtent([0.3, 4])` + `touch-action: none` CSS
+
+---
+
+### [리스크]
+
+**① 레이블 충돌 — 최대 함정.**
+Radial tree에서 subcategory 펼침 시 term 407개 레이블이 반경 바깥에 그려지면 겹침. 대응: 각도(`d.x`)에 따라 `text-anchor: start/end` 동적 전환 + 레이블 길이 `clip/ellipsis` + 줌 인 후에만 term 레이블 표시(`scaleThreshold` 조건부 렌더).
+
+**② 기존 glossaryData 구조 미스매치.**
+현재 데이터가 `{ terms: [...], relationships: [...] }` flat 구조라면 `d3.stratify()` 또는 수동 트리 변환 필요. 계층 빌드 로직이 잘못되면 전체 레이아웃 붕괴. → 구현 전 `buildHierarchy()` 함수 먼저 단위 테스트.
+
+**③ 상태 동기화.**
+마인드맵 내 collapse 상태 ↔ URL 라우트 ↔ 언어 토글이 동시에 발생할 때 race condition. → `renderRadialTree(root)` 를 순수 함수로 설계(외부 상태 읽지 않고 인자로만 받음), 언어 변경은 레이블만 업데이트(구조 재계산 없이).
+
+---
+
+### [한줄총평]
+
+> **"초기 렌더를 6개 노드로 강제하고, `d._children` 패턴으로 DOM을 지연 생성하는 것이 전부다 — 나머지는 이 결정에서 자동으로 따라온다."**
+
+구현 시작점이 필요하면 `buildHierarchy()` + `renderRadialTree()` 골격 코드를 바로 작성할 수 있다.
