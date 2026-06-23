@@ -612,7 +612,7 @@ g.mmn.focused rect {
   ENTRIES.forEach(e=>{ (entriesByCat.get(e.category)||entriesByCat.set(e.category,[]).get(e.category)).push(e); });
   entriesByCat.forEach(arr=>arr.sort((a,b)=>a.term.localeCompare(b.term)));
 
-  let mmLayoutMode = 'radial';
+  let mmLayoutMode = 'horizontal';
   const mmExpandedNodeIds = new Set();
 
   const esc = s => String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -2381,22 +2381,9 @@ g.mmn.focused rect {
       zoomFit();
     });
 
-    // Setup Drawer listeners
-    document.getElementById("drawerClose").addEventListener("click", () => {
-      if (location.hash.startsWith('#/mindmap')) {
-        closeDrawer();
-      } else {
-        location.hash = "#/graph";
-      }
-    });
-    document.getElementById("drawerLangBtn").addEventListener("click", () => {
-      LANG = LANG === 'ko' ? 'en' : 'ko';
-      try { localStorage.setItem('tg-lang', LANG); } catch(_) {}
-      applyStaticI18n();
-      if (activeTermId) {
-        updateDrawer(activeTermId);
-      }
-    });
+    // Setup Drawer listeners (also bound at startup so the drawer works on
+    // routes that never initialize the graph, e.g. the mindmap)
+    initDrawerListeners();
 
     // Compute degrees
     const nodeDegrees = new Map(ENTRIES.map(e => [e.id, 0]));
@@ -2961,6 +2948,26 @@ g.mmn.focused rect {
     }
   }
 
+  function initDrawerListeners() {
+    if (window.drawerListenersInit) return;
+    window.drawerListenersInit = true;
+    document.getElementById("drawerClose").addEventListener("click", () => {
+      if (location.hash.startsWith('#/mindmap')) {
+        closeDrawer();
+      } else {
+        location.hash = "#/graph";
+      }
+    });
+    document.getElementById("drawerLangBtn").addEventListener("click", () => {
+      LANG = LANG === 'ko' ? 'en' : 'ko';
+      try { localStorage.setItem('tg-lang', LANG); } catch(_) {}
+      applyStaticI18n();
+      if (activeTermId) {
+        updateDrawer(activeTermId);
+      }
+    });
+  }
+
   function closeDrawer() {
     const drawer = document.getElementById("drawer");
     if (drawer) {
@@ -3277,7 +3284,10 @@ g.mmn.focused rect {
     const wrap = document.getElementById('mmwrap');
     const W = wrap.clientWidth || 900;
     const H = wrap.clientHeight || 540;
-    const radius = Math.min(W, H) / 2 - 80;
+    const baseRadius = Math.min(W, H) / 2 - 80;
+    const ROW_GAP = 30, COL_GAP = 70;    // horizontal: row pitch, gap between columns
+    const PER_LEAF = 34;                  // min tangential spacing per leaf in radial mode
+    let curRadius = baseRadius, hOffsetX = 0, depthX = [];
 
     const svg = d3.select('#mmsvg').attr('viewBox', [-W / 2, -H / 2, W, H].join(' '));
     const gZoom = svg.append('g');
@@ -3332,8 +3342,10 @@ g.mmn.focused rect {
       }
     });
 
-    const radialTree = d3.tree().size([2 * Math.PI, radius]).separation((a, b) => (a.parent === b.parent ? 1.1 : 1.8) / (a.depth || 1));
-    const horizontalTree = d3.tree().size([H - 120, W - 240]).separation((a, b) => (a.parent === b.parent ? 1.2 : 2.0));
+    // Both layouts size by node COUNT (via dynamic radius / nodeSize) rather than
+    // forcing every node into the fixed viewport — that was the cause of overlap.
+    const radialTree = d3.tree().separation((a, b) => (a.parent === b.parent ? 1 : 2) / a.depth);
+    const horizontalTree = d3.tree().nodeSize([ROW_GAP, COL_GAP]).separation((a, b) => (a.parent === b.parent ? 1 : 1.4));
 
     const zoom = d3.zoom().scaleExtent([0.15, 5]).on('zoom', ev => {
       gZoom.attr('transform', ev.transform);
@@ -3354,9 +3366,8 @@ g.mmn.focused rect {
         const r = d.y;
         return [r * Math.cos(angle), r * Math.sin(angle)];
       } else {
-        const px = d.depth * 180 - (W - 240) / 2;
-        const py = d.x - (H - 120) / 2;
-        return [px, py];
+        // nodeSize layout: d.x = cross-axis offset; columns positioned adaptively
+        return [(depthX[d.depth] || 0) - hOffsetX, d.x];
       }
     }
 
@@ -3387,10 +3398,30 @@ g.mmn.focused rect {
     }
 
     function update() {
+      const leafCount = root.leaves().length;
+      const maxDepth = d3.max(root.descendants(), d => d.depth) || 1;
       if (mmLayoutMode === 'radial') {
-        radialTree(root);
+        // Grow the outer radius so its circumference fits every visible leaf, and
+        // keep ring gaps wide enough for the (wide) labels. Pan/zoom/minimap do the rest.
+        curRadius = Math.max(baseRadius, (leafCount * PER_LEAF) / (2 * Math.PI), maxDepth * 220);
+        radialTree.size([2 * Math.PI, curRadius])(root);
       } else {
         horizontalTree(root);
+        // Adaptive columns: offset each depth by the widest label in the prior
+        // columns (+ gap) so bubbles from adjacent depths never overlap horizontally.
+        const colW = [];
+        root.descendants().forEach(d => {
+          const w = getBubbleWidth(d);
+          if (!(colW[d.depth] >= w)) colW[d.depth] = w;
+        });
+        depthX = [];
+        let acc = 0;
+        for (let dp = 0; dp <= maxDepth; dp++) {
+          const w = colW[dp] || 0;
+          depthX[dp] = acc + w / 2;
+          acc += w + COL_GAP;
+        }
+        hOffsetX = (acc - COL_GAP) / 2;
       }
 
       const nodes = root.descendants();
@@ -3535,7 +3566,28 @@ g.mmn.focused rect {
         .attr('fill', d => d.data.color || 'var(--muted)');
     }
 
+    // Fit the whole (variably-sized) map into the viewport with padding.
+    // Computes the final layout extent from data coords so it's accurate even
+    // while node transitions are still animating.
+    function fitView(dur = 600) {
+      let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
+      root.descendants().forEach(d => {
+        const [x, y] = getCoords(d);
+        const hw = getBubbleWidth(d) / 2, hh = getBubbleHeight(d) / 2;
+        if (x - hw < minX) minX = x - hw;
+        if (x + hw > maxX) maxX = x + hw;
+        if (y - hh < minY) minY = y - hh;
+        if (y + hh > maxY) maxY = y + hh;
+      });
+      const bw = (maxX - minX) || 1, bh = (maxY - minY) || 1;
+      const k = Math.max(0.15, Math.min(5, Math.min(W / bw, H / bh) * 0.9));
+      const cx = (minX + maxX) / 2, cy = (minY + maxY) / 2;
+      const t = d3.zoomIdentity.translate(-k * cx, -k * cy).scale(k);
+      d3.select('#mmsvg').transition().duration(dur).call(zoom.transform, t);
+    }
+
     update();
+    fitView(0);
 
     // Center on node function with premium flashing animation
     function centerOnMindmapNode(nodeData) {
@@ -3624,8 +3676,7 @@ g.mmn.focused rect {
       window.mmLayoutMode = mmLayoutMode;
       document.getElementById('mmLayoutToggle').textContent = `${LANG==='ko'?'레이아웃 전환':'Switch Layout'} (${mmLayoutMode.toUpperCase()})`;
       update();
-      // Smoothly zoom fit on transition
-      d3.select('#mmsvg').transition().duration(750).call(zoom.transform, d3.zoomIdentity);
+      fitView(750);
     };
 
     document.getElementById('mmCollapse').onclick = () => {
@@ -3637,10 +3688,11 @@ g.mmn.focused rect {
       });
       mmExpandedNodeIds.clear();
       update();
+      fitView(600);
     };
 
     document.getElementById('mmReset').onclick = () => {
-      d3.select('#mmsvg').transition().duration(300).call(zoom.transform, d3.zoomIdentity);
+      fitView(400);
     };
 
     document.getElementById('mmZoomIn').onclick = () => {
@@ -3741,6 +3793,7 @@ g.mmn.focused rect {
   function openNav(){ document.body.classList.add('nav-open'); } function closeNav(){ document.body.classList.remove('nav-open'); }
   $('#menuBtn').addEventListener('click',openNav); $('#scrim').addEventListener('click',closeNav);
 
+  initDrawerListeners();
   applyStaticI18n(); route();
 })();
 </script>

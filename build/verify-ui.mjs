@@ -642,9 +642,9 @@ await runAsyncTest('Taxonomy Mindmap Layouts, Click Interactions, and Path-Expan
     throw new Error('SVG container (#mmsvg) not found.');
   }
 
-  // Verify Initial Layout State
-  if (window.mmLayoutMode !== 'radial') {
-    throw new Error(`Expected initial layout mode to be "radial", but got: ${window.mmLayoutMode}`);
+  // Verify Initial Layout State (horizontal is the default — no overlap with wide labels)
+  if (window.mmLayoutMode !== 'horizontal') {
+    throw new Error(`Expected initial layout mode to be "horizontal", but got: ${window.mmLayoutMode}`);
   }
 
   // Verify Layout Toggle
@@ -653,12 +653,12 @@ await runAsyncTest('Taxonomy Mindmap Layouts, Click Interactions, and Path-Expan
     throw new Error('Layout switch toggle button not found.');
   }
   btnToggle.click();
-  if (window.mmLayoutMode !== 'horizontal') {
-    throw new Error('Expected layout mode to change to "horizontal" after toggle click.');
+  if (window.mmLayoutMode !== 'radial') {
+    throw new Error('Expected layout mode to change to "radial" after toggle click.');
   }
   btnToggle.click();
-  if (window.mmLayoutMode !== 'radial') {
-    throw new Error('Expected layout mode to return to "radial" after toggling back.');
+  if (window.mmLayoutMode !== 'horizontal') {
+    throw new Error('Expected layout mode to return to "horizontal" after toggling back.');
   }
 
   // Verify Click Node Interaction (Toggles collapse)
@@ -677,6 +677,16 @@ await runAsyncTest('Taxonomy Mindmap Layouts, Click Interactions, and Path-Expan
   // Check if ancestor air-ops and its parents are expanded
   if (!window.mmExpandedNodeIds.has(testCatId)) {
     throw new Error('Expected parent category "c:air-ops" to be auto-expanded during search.');
+  }
+
+  // Verify the drawer Close (X) button works on the mindmap route even though
+  // the graph view (which used to bind it) was never initialized.
+  const drawerEl = document.getElementById('drawer');
+  const closeBtn = document.getElementById('drawerClose');
+  drawerEl.classList.add('open');
+  closeBtn.click();
+  if (drawerEl.classList.contains('open')) {
+    throw new Error('Expected drawer to close when the X button is clicked on the mindmap route.');
   }
 });
 
