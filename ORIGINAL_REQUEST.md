@@ -138,3 +138,59 @@ Integrity mode: benchmark
 - [ ] Clicking nodes correctly collapses/expands children recursively.
 - [ ] Clicking a term node displays its details in an inline drawer/sidebar within the mindmap page.
 - [ ] The entire UI respects `LANG` global variable for KO/EN translations dynamically.
+
+## Follow-up — 2026-06-24T04:45:11Z
+
+Redesign the Travel Gaia Knowledge Graph and Mindmap UIs to reduce clutter and overlap, using graph visualization best practices to make both views display hierarchical relationships more cleanly and elegantly.
+
+Working directory: /home/ubuntu/workspace/travel-gaia
+Integrity mode: benchmark
+
+## Requirements
+
+### R1. Knowledge Graph Clutter-Reduction & Auto-Collapse
+- Anchor Category nodes in a clean, stable circle/ring configuration (hub layout) to prevent categories from wandering and overlapping.
+- Implement accordion-style auto-collapse: when a Category node is clicked/expanded, automatically collapse any other expanded category nodes to keep the visible graph compact.
+- Use dynamic collision radius calculation in D3 based on text/label length to completely prevent overlaps between adjacent node cards.
+
+### R2. Focus Mode & Link Separation
+- Implement a "Focus / Isolation Mode" in the Knowledge Graph: when a node is clicked, hovered, or searched, highlight it and its 1-step direct neighbors. All other unrelated nodes and links should be dimmed or hidden.
+- Distinguish links visually based on their type:
+  - Hierarchical parent-child links should be solid, colored according to their vertical/category.
+  - Cross-category relational and distinction links should be styled differently (e.g., thin, dashed/dotted, lighter neutral gray) to clearly separate thematic relationships from hierarchy.
+
+### R3. Mindmap Layout & Path Highlighting
+- Update the Mindmap's Horizontal Tree layout to use clean orthogonal (right-angled) link routing instead of curved Bezier links.
+- Implement hierarchical path highlighting: dynamically highlight the path from the root node to the currently active/selected node with a vibrant color and subtle glow.
+- Add quick depth-level controls to the mindmap control panel:
+  - Collapse all to root/verticals.
+  - Expand to categories (Depth 2).
+  - Expand all terms.
+
+### R4. Premium Visual Card Styling & Animations
+- Redesign node representation in both views into elegant capsule cards with subtle background gradients and rounded borders.
+- Include visual badges on nodes: category cards show term counts, and term cards show subtle badges for concept types or status.
+- Add hover-zoom micro-animations on node cards for a highly responsive and premium interactive feel.
+
+### R5. Verification and Test Suite Compatibility
+- Ensure that the project compiles cleanly using `node build/build.mjs`.
+- Ensure all tests in `build/verify-ui.mjs` execute and pass successfully. Adapt the test assertions as needed to match the accordion-style expansion or new UI elements.
+
+## Acceptance Criteria
+
+### Build and Verification
+- [ ] Running `node build/build.mjs` runs successfully and updates `index.html` with no unresolved cross-references.
+- [ ] Running `node build/verify-ui.mjs` executes and passes all assertions.
+
+### Knowledge Graph Features
+- [ ] Category nodes are anchored in a stable circular configuration and do not overlap.
+- [ ] Expanding a Category node collapses all other expanded Category nodes (accordion behavior).
+- [ ] Direct hierarchy links and cross-category relational links are visually distinct (e.g. solid colored vs dashed gray).
+- [ ] Focus mode dims out non-neighboring nodes and links when a node is selected.
+
+### Mindmap Features
+- [ ] Horizontal Mindmap layout uses right-angle (orthogonal) link lines.
+- [ ] Path from root to selected node is highlighted dynamically.
+- [ ] Level-of-depth buttons ("Collapse All", "Show Categories", "Expand All") are present and functional.
+- [ ] Nodes are rendered as capsule cards with gradients, borders, and count/type badges.
+- [ ] Hovering over nodes triggers smooth zoom/scale micro-animations.
