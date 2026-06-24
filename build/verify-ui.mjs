@@ -432,162 +432,109 @@ const dom = new JSDOM(htmlContent, {
 const { window } = dom;
 const { document } = window;
 
-// 3. Test route registrations and classroom UI elements
-await runAsyncTest('Classroom SVG Layout and Interactive Quiz Elements', async () => {
-  // Trigger hash change to #/classroom
+// 3. Test the Distribution Flow page (classroom overhaul)
+await runAsyncTest('Distribution Flow: stages, term chips & vertical switching', async () => {
+  // Trigger hash change to #/classroom (now the distribution-flow page)
   window.location.hash = '#/classroom';
   await new Promise(resolve => setTimeout(resolve, 200));
 
-  // Assert classroom container wrapper exists
-  const classroomWrap = document.querySelector('.classroom-wrap');
-  if (!classroomWrap) {
-    throw new Error('Classroom layout wrapper (.classroom-wrap) not found in the DOM.');
+  // FLOWS data must be exposed and cover the 4 product verticals
+  if (!window.FLOWS) throw new Error('window.FLOWS is not defined.');
+  for (const v of ['air', 'lodging', 'ground', 'cruise']) {
+    if (!window.FLOWS[v]) throw new Error(`FLOWS is missing vertical "${v}".`);
   }
 
-  // Verify existence of 4 Vertical tabs
-  const vertTabs = document.querySelectorAll('#classVerticalTabs .classroom-tab');
-  if (vertTabs.length !== 4) {
-    throw new Error(`Expected 4 vertical tabs, found: ${vertTabs.length}`);
+  // Every term id referenced in any flow / foundation must resolve to a real entry
+  const ids = new Set((window.GLOSSARY_DATA.entries || []).map(e => e.id));
+  Object.entries(window.FLOWS).forEach(([v, f]) => {
+    Object.entries(f.stages).forEach(([stage, data]) => {
+      (data.terms || []).forEach(id => {
+        if (!ids.has(id)) throw new Error(`FLOWS.${v}.${stage} references unknown term id "${id}".`);
+      });
+    });
+  });
+
+  // full-screen mode engaged (sidebar hidden, viewport-filling)
+  if (!document.body.classList.contains('flow-full')) {
+    throw new Error('Expected body.flow-full to be set on the distribution-flow page.');
   }
 
-  // Verify existence of 2 Level selector toggles
-  const levelBtns = document.querySelectorAll('#classLevelToggles button');
-  if (levelBtns.length !== 2) {
-    throw new Error(`Expected 2 level selectors, found: ${levelBtns.length}`);
+  // 4 vertical tabs
+  const vtabs = document.querySelectorAll('#flowVerts .flow-vtab');
+  if (vtabs.length !== 4) throw new Error(`Expected 4 vertical tabs, found: ${vtabs.length}`);
+
+  // 6 lifecycle stages on the default (air) board
+  const stages = document.querySelectorAll('#flowBoard .flow-stage');
+  if (stages.length !== 6) throw new Error(`Expected 6 flow stages, found: ${stages.length}`);
+
+  // intro narration present
+  const intro = document.getElementById('flowIntro');
+  if (!intro || !intro.textContent.trim()) throw new Error('Flow intro narration is empty.');
+
+  // term chips are clickable links into the glossary
+  const firstChip = document.querySelector('#flowBoard .flow-term');
+  if (!firstChip) throw new Error('No term chips rendered on the flow board.');
+  if (!firstChip.getAttribute('href').startsWith('#/term/')) {
+    throw new Error('Flow term chip does not link to a #/term/ route.');
   }
 
-  // Verify that standard SVG container mounts correctly
-  const svg = document.querySelector('#classroomSvg');
-  if (!svg) {
-    throw new Error('SVG container (#classroomSvg) is missing.');
+  // cross-industry foundation band present with category cards
+  const fcats = document.querySelectorAll('.flow-foundation .flow-fcat');
+  if (fcats.length !== 6) throw new Error(`Expected 6 foundation categories, found: ${fcats.length}`);
+
+  // switching vertical re-renders the board (cruise has a 3-actor-free supply etc.)
+  const cruiseTab = Array.from(vtabs).find(b => b.dataset.vertical === 'cruise');
+  if (!cruiseTab) throw new Error('Cruise vertical tab not found.');
+  const airIntro = intro.textContent;
+  cruiseTab.click();
+  await new Promise(resolve => setTimeout(resolve, 50));
+  if (document.getElementById('flowIntro').textContent === airIntro) {
+    throw new Error('Switching to the cruise vertical did not update the intro/board.');
   }
-
-  // Test interaction: Click Hotel vertical & verify node rendering
-  const hotelTab = Array.from(vertTabs).find(b => b.textContent.includes('Hotel') || b.dataset.vertical === 'hotel');
-  if (hotelTab) {
-    hotelTab.click();
-    await new Promise(resolve => setTimeout(resolve, 50));
-    
-    // Hotel Basic has 4 nodes (Guest, OTA, Bedbank, PMS)
-    const nodes = document.querySelectorAll('#classroomSvg .node-group');
-    if (nodes.length !== 4) {
-      throw new Error(`Expected 4 nodes for Hotel Basic flow, found: ${nodes.length}`);
-    }
-  } else {
-    throw new Error('Hotel vertical tab not found.');
-  }
-
-  // Verify gated navigation (Quiz validation checks)
-  const btnNext = document.querySelector('#classBtnNext');
-  const quizBox = document.querySelector('#classroomQuiz');
-  
-  if (quizBox && quizBox.style.display !== 'none') {
-    // Assert next button is disabled on active quiz stage
-    if (!btnNext.disabled) {
-      throw new Error('Next button must be disabled until the active step quiz is answered correctly.');
-    }
-
-    // Trigger correct option click (find correct option based on correctIndex)
-    if (!window.CLASSES) {
-      throw new Error('window.CLASSES is not defined.');
-    }
-    const activeStep = window.CLASSES.find(c => c.vertical === 'hotel' && c.level === 'basic').steps[0];
-    const optionBtns = document.querySelectorAll('#quizOptions button');
-    const correctBtn = optionBtns[activeStep.quiz.correctIndex];
-    
-    if (correctBtn) {
-      correctBtn.click();
-      await new Promise(resolve => setTimeout(resolve, 50));
-
-      // Assert next button is now enabled
-      if (btnNext.disabled) {
-        throw new Error('Next button was not unlocked after selecting the correct answer.');
-      }
-    } else {
-      throw new Error('Correct quiz button not found.');
-    }
-  } else {
-    throw new Error('Quiz box is missing or not visible.');
+  if (document.querySelectorAll('#flowBoard .flow-stage').length !== 6) {
+    throw new Error('Cruise board did not render 6 stages.');
   }
 });
 
 // 4. Test Knowledge Graph initialized state & progressive node-focus exposure
-await runAsyncTest('Knowledge Graph Initialization and Progressive Node Constraints', async () => {
-  // Trigger hash change to #/graph
-  window.location.hash = '#/graph';
-  await new Promise(resolve => setTimeout(resolve, 50));
-
-  // Check exposed state variables
+// 4. Test Static Routing: term, category, and search pages
+await runAsyncTest('Static Routing: Term, Category, and Search Result Pages', async () => {
   const glossaryData = window.GLOSSARY_DATA;
-  if (!glossaryData) {
-    throw new Error('window.GLOSSARY_DATA is not exposed on the window object.');
-  }
-  if (!glossaryData.entries || !Array.isArray(glossaryData.entries)) {
-    throw new Error('window.GLOSSARY_DATA does not contain a valid entries array.');
-  }
+  if (!glossaryData) throw new Error('window.GLOSSARY_DATA is not exposed.');
 
-  const visibleNodeIds = window.kgVisibleNodeIds;
-  if (!visibleNodeIds) {
-    throw new Error('window.kgVisibleNodeIds is not exposed on the window object.');
-  }
-
-  const initialSize = visibleNodeIds.size;
-  console.log(`Initial visible nodes: ${initialSize}`);
-
-  // Assertions
-  // On load, only Category nodes are visible (16 categories)
-  if (initialSize !== 16) {
-    throw new Error(`Expected initial visible node count to be 16 (categories only), but got: ${initialSize}`);
+  // Verify term page renders statically
+  const firstEntry = glossaryData.entries[0];
+  if (!firstEntry) throw new Error('No entries in GLOSSARY_DATA.');
+  window.location.hash = `#/term/${firstEntry.id}`;
+  await new Promise(resolve => setTimeout(resolve, 80));
+  const mainEl = document.getElementById('main');
+  if (!mainEl || !mainEl.innerHTML.includes(firstEntry.term)) {
+    throw new Error(`Expected term page to render term "${firstEntry.term}" in #main.`);
   }
 
-  for (const id of visibleNodeIds) {
-    if (!id.startsWith('cat-')) {
-      throw new Error(`Expected initially visible node ID to start with "cat-", but got: "${id}"`);
-    }
+  // Verify category page renders statically
+  const firstCat = glossaryData.categories[0];
+  if (!firstCat) throw new Error('No categories in GLOSSARY_DATA.');
+  window.location.hash = `#/category/${firstCat.id}`;
+  await new Promise(resolve => setTimeout(resolve, 80));
+  if (!mainEl.innerHTML.includes(firstCat.title) && !mainEl.innerHTML.includes(firstCat.short || firstCat.id)) {
+    throw new Error(`Expected category page to include category title in #main.`);
   }
 
-  // Click a Category node to expand it (e.g. 'cat-air-ops')
-  const catId = 'cat-air-ops';
-  if (typeof window.kgClickNode !== 'function') {
-    throw new Error('window.kgClickNode is not defined on the window object.');
-  }
-  window.kgClickNode(catId);
-
-  const sizeAfterCatExpand = window.kgVisibleNodeIds.size;
-  console.log(`Visible nodes after expanding ${catId}: ${sizeAfterCatExpand}`);
-  if (sizeAfterCatExpand <= 16) {
-    throw new Error(`Expected visible node count to increase after expanding category ${catId}, but got: ${sizeAfterCatExpand}`);
+  // Verify search results render statically
+  window.location.hash = '#/q/PNR';
+  await new Promise(resolve => setTimeout(resolve, 80));
+  if (!mainEl.innerHTML.toLowerCase().includes('pnr')) {
+    throw new Error('Expected search results page to include "PNR" in #main.');
   }
 
-  // Find a Parent term node of 'air-ops' that is now visible and has children
-  const parentTermId = Array.from(window.kgVisibleNodeIds).find(id => {
-    if (id === catId || id.startsWith('cat-')) return false;
-    // Check if any other entry in the category has this id as a parent
-    return glossaryData.entries.some(e => {
-      if (e.category !== 'air-ops') return false;
-      return e.relationships && e.relationships.some(r => {
-        return (r.targetId === id && (r.type === 'parent' || r.type === 'broader'));
-      });
-    });
-  });
-  if (!parentTermId) {
-    throw new Error('Expected at least one Parent term node with children to be visible after category expansion.');
-  }
-
-  // Expand the Parent term node
-  window.kgClickNode(parentTermId);
-  const sizeAfterParentExpand = window.kgVisibleNodeIds.size;
-  console.log(`Visible nodes after expanding parent term ${parentTermId}: ${sizeAfterParentExpand}`);
-  if (sizeAfterParentExpand <= sizeAfterCatExpand) {
-    throw new Error(`Expected visible node count to increase after expanding parent term ${parentTermId}`);
-  }
-
-  // Collapse the category node to verify recursive collapse of all descendants
-  window.kgClickNode(catId);
-  const sizeAfterCollapse = window.kgVisibleNodeIds.size;
-  console.log(`Visible nodes after collapsing category ${catId}: ${sizeAfterCollapse}`);
-  if (sizeAfterCollapse !== 16) {
-    throw new Error(`Expected visible node count to return to 16 after collapsing the category, but got: ${sizeAfterCollapse}`);
+  // Verify #/graph redirects to mindmap (does not crash)
+  window.location.hash = '#/graph';
+  await new Promise(resolve => setTimeout(resolve, 80));
+  // Should not throw or leave stale content — just verify #main is visible
+  const mainDisplay = window.getComputedStyle ? window.getComputedStyle(mainEl).display : mainEl.style.display;
+  if (mainDisplay === 'none') {
+    throw new Error('Expected #main to remain visible after #/graph redirect.');
   }
 });
 
@@ -615,15 +562,14 @@ runTest('Language Toggling and document.lang synchronization', () => {
   }
 });
 
-// 6. Test Routing search query to home transitions resets node highlighting
-await runAsyncTest('Search Highlight Clearing on Home Route Transition', async () => {
-  // Navigate to query search first
+// 6. Test Routing search query renders a static list
+await runAsyncTest('Search Route renders static results in #main', async () => {
   window.location.hash = '#/q/air';
-  await new Promise(resolve => setTimeout(resolve, 50));
-  
-  // Navigate back to default home route
-  window.location.hash = '#/';
-  await new Promise(resolve => setTimeout(resolve, 50));
+  await new Promise(resolve => setTimeout(resolve, 80));
+  const mainEl = document.getElementById('main');
+  if (!mainEl || !mainEl.innerHTML) {
+    throw new Error('Expected #main to have content after #/q/air navigation.');
+  }
 });
 
 // 7. Test Mindmap UI Redesign Verification
@@ -661,15 +607,31 @@ await runAsyncTest('Taxonomy Mindmap Layouts, Click Interactions, and Path-Expan
     throw new Error('Expected layout mode to return to "horizontal" after toggling back.');
   }
 
-  // Verify Click Node Interaction (Toggles collapse)
+  // Verify Click Node Interaction (Toggles collapse) and DOM cleanup
   const testCatId = 'c:air-ops';
   if (!window.mmExpandedNodeIds.has(testCatId)) {
-    // Should start collapsed (since depth >= 2 is collapsed on initial render)
     window.mmClickNode(testCatId);
     if (!window.mmExpandedNodeIds.has(testCatId)) {
       throw new Error('Expected category node ID to be in expanded state after click.');
     }
   }
+
+  // Count rendered nodes after expansion
+  const nodesAfterExpand = svg.querySelectorAll('g.mmn').length;
+  if (nodesAfterExpand === 0) throw new Error('Expected mindmap nodes to be rendered after expansion.');
+
+  // Now collapse and verify nodes are removed from the DOM
+  window.mmClickNode(testCatId);
+  if (window.mmExpandedNodeIds.has(testCatId)) {
+    throw new Error('Expected category node to be collapsed after second click.');
+  }
+  const nodesAfterCollapse = svg.querySelectorAll('g.mmn').length;
+  if (nodesAfterCollapse >= nodesAfterExpand) {
+    throw new Error(`Expected fewer DOM nodes after collapse (was ${nodesAfterExpand}, got ${nodesAfterCollapse}).`);
+  }
+
+  // Re-expand for subsequent tests
+  window.mmClickNode(testCatId);
 
   // Verify Path-Expanding Search
   // Term "PNR" should be inside category air-ops. Let's call search.
@@ -677,6 +639,67 @@ await runAsyncTest('Taxonomy Mindmap Layouts, Click Interactions, and Path-Expan
   // Check if ancestor air-ops and its parents are expanded
   if (!window.mmExpandedNodeIds.has(testCatId)) {
     throw new Error('Expected parent category "c:air-ops" to be auto-expanded during search.');
+  }
+
+  // Verify orthogonal link routing is correctly computed in horizontal layout
+  const linkPaths = Array.from(svg.querySelectorAll('.mmsvg-link-path'));
+  if (linkPaths.length === 0) {
+    throw new Error('Expected mindmap link paths to be rendered.');
+  }
+  for (const path of linkPaths) {
+    const dAttr = path.getAttribute('d');
+    if (!dAttr) {
+      throw new Error('Link path is missing "d" attribute.');
+    }
+    if (!dAttr.includes('H') || !dAttr.includes('V') || dAttr.includes('C')) {
+      throw new Error(`Expected orthogonal link path in horizontal mode, but got: "${dAttr}"`);
+    }
+  }
+
+  // Verify layout toggle to radial changes paths to curved
+  btnToggle.click(); // switch to radial
+  if (window.d3 && window.d3.timerFlush) {
+    window.d3.timerFlush();
+  }
+  const radialLinkPaths = Array.from(svg.querySelectorAll('.mmsvg-link-path'));
+  for (const path of radialLinkPaths) {
+    const dAttr = path.getAttribute('d');
+    if (!dAttr.includes('C') || dAttr.includes('H') || dAttr.includes('V')) {
+      throw new Error(`Expected curved link path in radial mode, but got: "${dAttr}"`);
+    }
+  }
+  btnToggle.click(); // switch back to horizontal
+  if (window.d3 && window.d3.timerFlush) {
+    window.d3.timerFlush();
+  }
+
+  // Verify that the mindmap depth controls exist and correctly toggle node expansion levels
+  const mmCollapseAllBtn = document.getElementById('mmCollapseAll');
+  const mmShowCategoriesBtn = document.getElementById('mmShowCategories');
+  const mmExpandAllBtn = document.getElementById('mmExpandAll');
+
+  if (!mmCollapseAllBtn || !mmShowCategoriesBtn || !mmExpandAllBtn) {
+    throw new Error('Expected mindmap depth control buttons to exist in DOM.');
+  }
+
+  // Click Collapse All
+  mmCollapseAllBtn.click();
+  if (window.mmExpandedNodeIds.size !== 0) {
+    throw new Error(`Expected mmExpandedNodeIds to be empty after Collapse All, but got size: ${window.mmExpandedNodeIds.size}`);
+  }
+
+  // Click Show Categories
+  mmShowCategoriesBtn.click();
+  for (const id of window.mmExpandedNodeIds) {
+    if (id.startsWith('c:')) {
+      throw new Error(`Expected category ID ${id} to not be in mmExpandedNodeIds after Show Categories.`);
+    }
+  }
+
+  // Click Expand All
+  mmExpandAllBtn.click();
+  if (!window.mmExpandedNodeIds.has(testCatId)) {
+    throw new Error('Expected category node ID to be expanded after Expand All.');
   }
 
   // Verify the drawer Close (X) button works on the mindmap route even though
