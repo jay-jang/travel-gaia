@@ -854,24 +854,24 @@ g.mmn.focused rect {
         en: 'Tours & activities start as operator inventory (activities, attraction tickets, timeslots) in reservation technology, distribute to experiences marketplaces via connectivity hubs and reseller APIs, are booked instantly or on-request and paid (marketplace commission), then redeemed on-site as mobile tickets and vouchers.'
       },
       stages: {
-        supply: { actors:[{ko:'액티비티 운영사',en:'Activity Operator'},{ko:'예약 시스템',en:'Res-tech'}],
-          desc:{ ko:'운영사가 액티비티·가이드 투어·어트랙션 티켓을 타임슬롯 단위 정원으로 예약 시스템에 편성합니다.', en:'Operators load activities, guided tours and attraction tickets into reservation tech as per-timeslot capacity.' },
-          terms:['activity','attraction-ticket','guided-tour','timeslot'] },
+        supply: { actors:[{ko:'액티비티 운영사',en:'Activity Operator'},{ko:'DMC·랜드사',en:'DMC / Land'},{ko:'예약 시스템',en:'Res-tech'}],
+          desc:{ ko:'운영사·DMC가 액티비티·가이드/프라이빗 투어·어트랙션 티켓·시티패스를 타임슬롯 단위 정원으로 예약 시스템에 편성합니다.', en:'Operators and DMCs load activities, guided/private tours, attraction tickets and city passes into reservation tech as per-timeslot capacity.' },
+          terms:['activity','attraction-ticket','guided-tour','private-tour','city-pass','timeslot'] },
         distribute: { actors:[{ko:'커넥티비티 허브',en:'Connectivity Hub'},{ko:'마켓플레이스',en:'Marketplace'}],
-          desc:{ ko:'예약 시스템이 리셀러 API로 노출한 재고가 커넥티비티 허브를 거쳐 익스피리언스 마켓플레이스로 유통됩니다.', en:'Inventory exposed via reseller APIs flows through connectivity hubs to experiences marketplaces.' },
-          terms:['activity-operator','reservation-technology','connectivity-hub','reseller-api','experiences-marketplace'] },
+          desc:{ ko:'예약 시스템이 리셀러 API·OCTO 표준으로 노출한 재고가 커넥티비티 허브를 거쳐 익스피리언스 마켓플레이스로 유통됩니다.', en:'Inventory exposed via reseller APIs and the OCTO standard flows through connectivity hubs to experiences marketplaces.' },
+          terms:['activity-operator','reservation-technology','connectivity-hub','reseller-api','octo-spec','experiences-marketplace'] },
         shop: { actors:[{ko:'고객',en:'Customer'}],
-          desc:{ ko:'고객이 타임슬롯·스킵더라인 옵션을 조회하며, 즉시확정 또는 요청형 가용성에 따라 구매 가능 여부가 결정됩니다.', en:'Travelers shop timeslots and skip-the-line options; buyability depends on instant or on-request availability.' },
-          terms:['skip-the-line','timeslot','instant-confirmation','on-request-booking'] },
+          desc:{ ko:'고객이 스킵더라인·홉온홉오프·무료취소 옵션을 조회하며, 즉시확정 또는 요청형 가용성에 따라 구매 가능 여부가 결정됩니다.', en:'Travelers shop skip-the-line, hop-on hop-off and free-cancellation options; buyability depends on instant or on-request availability.' },
+          terms:['skip-the-line','hop-on-hop-off','free-cancellation','instant-confirmation','on-request-booking'] },
         book: { actors:[{ko:'고객',en:'Customer'}],
-          desc:{ ko:'예약이 확정되면 미팅 포인트가 안내되고 바우처·모바일 티켓이 발급됩니다.', en:'On confirmation the meeting point is issued along with a voucher and mobile ticket.' },
-          terms:['instant-confirmation','voucher','mobile-ticket','meeting-point'] },
+          desc:{ ko:'컷오프 이전 예약이 확정되면 미팅 포인트가 안내되고 바우처·모바일 티켓이 발급되며 책임 면제 동의서가 수집됩니다.', en:'Booked before the cut-off, the meeting point is issued with a voucher and mobile ticket, and a liability waiver is collected.' },
+          terms:['voucher','mobile-ticket','meeting-point','cut-off-time','liability-waiver'] },
         pay: { actors:[{ko:'마켓플레이스',en:'Marketplace'},{ko:'운영사',en:'Operator'}],
-          desc:{ ko:'마켓플레이스가 기록상 가맹점(MoR)으로 결제를 수납하고, 마켓플레이스 커미션을 제한 금액이 운영사에 정산됩니다.', en:'The marketplace takes payment as merchant of record and remits the operator net of the marketplace commission.' },
-          terms:['marketplace-commission','merchant-of-record','form-of-payment','3-d-secure'] },
-        fulfill: { actors:[{ko:'액티비티 운영사',en:'Activity Operator'}],
-          desc:{ ko:'현장에서 모바일 티켓·바우처를 스캔해 입장·체험이 이행되고, 가이드가 미팅 포인트에서 투어를 진행합니다.', en:'On-site the mobile ticket/voucher is scanned for entry and the guide runs the tour from the meeting point.' },
-          terms:['mobile-ticket','voucher','meeting-point','guided-tour','skip-the-line'] }
+          desc:{ ko:'마켓플레이스가 기록상 가맹점(MoR)으로 소매가 결제를 수납하고, 커미션 또는 넷 요금 대비 마크업을 제한 금액이 운영사에 정산됩니다.', en:'The marketplace takes the retail payment as merchant of record and remits the operator net of commission or the markup over net rate.' },
+          terms:['retail-rate','marketplace-commission','markup','merchant-of-record','form-of-payment'] },
+        fulfill: { actors:[{ko:'액티비티 운영사',en:'Activity Operator'},{ko:'투어 디렉터',en:'Tour Director'}],
+          desc:{ ko:'매니페스트와 리소스(가이드·차량)가 배정되고, 현장에서 모바일 티켓·바우처를 스캔해 입장·체험이 이행됩니다.', en:'Manifests and resources (guides, vehicles) are assigned, and on-site the mobile ticket/voucher is scanned for entry and delivery.' },
+          terms:['mobile-ticket','meeting-point','guided-tour','manifest','resource-management'] }
       }
     }
   };

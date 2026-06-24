@@ -3,8 +3,8 @@
     "name": "Travel Gaia",
     "tagline": "여행 산업 용어 백과사전",
     "generatedAt": "2026-06-24",
-    "entryCount": 423,
-    "categoryCount": 18,
+    "entryCount": 449,
+    "categoryCount": 19,
     "verticalCount": 6
   },
   "verticals": [
@@ -218,6 +218,15 @@
       "color": "#f08c00",
       "desc": "마켓플레이스·예약 시스템·커넥티비티 등 체험 상품 유통.",
       "desc_en": "Marketplaces, res-tech & connectivity — experience distribution.",
+      "vertical": "tours"
+    },
+    {
+      "id": "tour-ops",
+      "short": "투어 운영·트레이드",
+      "title": "Tours & Activities — Operations & Trade",
+      "color": "#d9480f",
+      "desc": "DMC·랜드사·매니페스트·요율 등 체험 상품의 운영과 거래.",
+      "desc_en": "DMCs, land operators, manifests & tariffs — experience operations & trade.",
       "vertical": "tours"
     }
   ],
@@ -1355,6 +1364,54 @@
       "term": "Advice Code",
       "definition": "An Advice Code is the two-letter code a carrier returns in response to a reservation action request — for example KK (confirmed), KL (waitlist now confirmed), UC (unable, no space), US (unable, waitlisted), UU (have requested/waitlisted) or NO (no action taken). It is the reply side of AIRIMP messaging and is written into PNR history when it supersedes a segment's prior status.",
       "lastReviewed": "2026-06-18"
+    },
+    {
+      "id": "affiliate-program",
+      "vertical": "tours",
+      "category": "tour-dist",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "어필리에이트 프로그램(Affiliate Program)",
+      "definition_ko": "제3자 퍼블리셔가 추적 링크·위젯·API를 통해 마켓플레이스나 운영사로 예약을 유치하고 그 대가로 커미션을 버는 모델이다.",
+      "longDef": "Affiliate programs let content sites, bloggers, hotels and OTAs monetize experiences traffic without holding inventory: the affiliate drives the booking, the marketplace handles fulfilment and is merchant of record, and revenue is shared via commission. It is a major demand channel for experiences and sits alongside white-label and direct API integration as a distribution option.",
+      "longDef_ko": "어필리에이트 프로그램은 콘텐츠 사이트·블로거·호텔·OTA가 재고를 보유하지 않고도 익스피리언스 트래픽을 수익화하게 한다. 어필리에이트가 예약을 유도하고, 마켓플레이스가 이행과 merchant of record를 맡으며, 매출은 커미션으로 배분된다. 익스피리언스의 주요 수요 채널이며 화이트라벨·직접 API 연동과 나란히 유통 옵션을 이룬다.",
+      "aliases": [
+        "Affiliate Distribution",
+        "Referral Program",
+        "Partner Affiliate"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Experiences Marketplace",
+          "targetId": "experiences-marketplace"
+        },
+        {
+          "type": "related",
+          "targetTerm": "White-Label Booking",
+          "targetId": "white-label-booking"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Marketplace Commission",
+          "targetId": "marketplace-commission"
+        }
+      ],
+      "sources": [
+        {
+          "name": "GetYourGuide — Partner / affiliate programme",
+          "org": "GetYourGuide",
+          "version": "",
+          "section": "",
+          "url": "https://partner.getyourguide.com/",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 20v8h6l16 8V12L16 20z\"/><path d=\"M36 20a6 6 0 0 1 0 8\"/></svg>",
+      "term": "Affiliate Program",
+      "definition": "A model where third-party publishers earn commission for referring bookings to a marketplace or operator, usually via tracked links, widgets, or APIs.",
+      "lastReviewed": "2026-06-24",
+      "distinctions": []
     },
     {
       "id": "agency-credit-memo-acm",
@@ -7052,6 +7109,61 @@
       "lastReviewed": "2026-06-15"
     },
     {
+      "id": "city-pass",
+      "vertical": "tours",
+      "category": "tour-product",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "시티 패스(City Pass)",
+      "definition_ko": "한 가격으로 목적지 내 여러 명소 입장을 제공하는 묶음 상품으로, 보통 유효기간 동안 전부 포함 또는 \"M개 중 N개 선택\" 방식이다.",
+      "longDef": "City passes (e.g. Go City, Paris Pass, CityPASS) aggregate attraction inventory into a single product, settling with each attraction per redemption. They require multi-attraction redemption tracking and present distinct pricing/yield questions (breakage, attraction payouts), making them a sophisticated packaged product within the experiences sector.",
+      "longDef_ko": "시티 패스(예: Go City, Paris Pass, CityPASS)는 여러 명소 재고를 하나의 상품으로 묶고, 사용처리(redemption)마다 각 명소와 정산한다. 다중 명소 사용처리 추적이 필요하고 고유한 가격·수익 문제(미사용분 breakage, 명소 정산)를 동반하므로, 익스피리언스 부문에서 정교한 패키지 상품에 해당한다.",
+      "aliases": [
+        "Attraction Pass",
+        "Multi-Attraction Pass",
+        "Sightseeing Pass"
+      ],
+      "relationships": [
+        {
+          "type": "broader",
+          "targetTerm": "Activity",
+          "targetId": "activity"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Combo Ticket",
+          "targetId": "combo-ticket"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Attraction Ticket",
+          "targetId": "attraction-ticket"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Combo Ticket",
+          "explanation": "A combo ticket bundles a fixed, specific set of attractions/activities; a city pass grants flexible access to a broad catalog of attractions over a validity period.",
+          "explanation_ko": "콤보 티켓은 정해진 특정 명소·액티비티 묶음이고, 시티 패스는 유효기간 동안 폭넓은 명소 카탈로그에 유연하게 입장할 권리를 준다.",
+          "targetId": "combo-ticket"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Go City — Multi-attraction passes",
+          "org": "Go City",
+          "version": "",
+          "section": "",
+          "url": "https://gocity.com/",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"12\" width=\"32\" height=\"24\" rx=\"3\"/><circle cx=\"18\" cy=\"22\" r=\"4\"/><line x1=\"27\" y1=\"20\" x2=\"34\" y2=\"20\"/><line x1=\"27\" y1=\"26\" x2=\"34\" y2=\"26\"/><line x1=\"14\" y1=\"30\" x2=\"34\" y2=\"30\"/></svg>",
+      "term": "City Pass",
+      "definition": "A bundled product granting entry to multiple attractions in a destination for one price, usually as an all-inclusive or \"choose N of M\" pass over a validity window.",
+      "lastReviewed": "2026-06-24"
+    },
+    {
       "id": "civ-uniform-rules",
       "vertical": "ground",
       "category": "rail",
@@ -7782,6 +7894,49 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "combo-ticket",
+      "vertical": "tours",
+      "category": "tour-product",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "콤보 티켓(Combo Ticket)",
+      "definition_ko": "특정 액티비티·명소 묶음을 결합 가격으로 묶은 단일 상품으로, 보통 개별 구매보다 저렴하다.",
+      "longDef": "Combo tickets are a curated, fixed bundle (e.g. a landmark plus a river cruise) created to raise average order value and move secondary inventory. Unlike a flexible city pass, the components are predetermined, so availability must be checked across every component and redemption tracked per component.",
+      "longDef_ko": "콤보 티켓은 평균 주문액을 높이고 보조 재고를 소진하기 위해 큐레이션한 고정 묶음(예: 랜드마크+리버 크루즈)이다. 유연한 시티 패스와 달리 구성요소가 미리 정해져 있어, 모든 구성요소의 가용성을 확인하고 구성요소별로 사용처리를 추적해야 한다.",
+      "aliases": [
+        "Combo Deal",
+        "Bundle Ticket",
+        "Package Ticket (Activities)"
+      ],
+      "relationships": [
+        {
+          "type": "broader",
+          "targetTerm": "Activity",
+          "targetId": "activity"
+        },
+        {
+          "type": "related",
+          "targetTerm": "City Pass",
+          "targetId": "city-pass"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Tiqets — Combi-tickets",
+          "org": "Tiqets",
+          "version": "",
+          "section": "",
+          "url": "https://www.tiqets.com/",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"10\" width=\"22\" height=\"16\" rx=\"2\"/><rect x=\"18\" y=\"22\" width=\"22\" height=\"16\" rx=\"2\"/></svg>",
+      "term": "Combo Ticket",
+      "definition": "A single product bundling a specific set of activities or attractions at a combined price, usually cheaper than buying each separately.",
+      "lastReviewed": "2026-06-24",
+      "distinctions": []
+    },
+    {
       "id": "commissionable-rate",
       "vertical": "lodging",
       "category": "hotel-dist",
@@ -8127,6 +8282,54 @@
       "term": "Concession Recovery Fee",
       "definition": "A concession recovery fee is a mandatory airport-rental surcharge by which the rental company passes through to the renter the concession fees it pays the airport authority for the right to operate on or serve the airport. It is typically itemized as a percentage of the time-and-mileage charges and is one of the largest add-on cost components on airport rentals.",
       "lastReviewed": "2026-06-18"
+    },
+    {
+      "id": "confidential-tariff",
+      "vertical": "tours",
+      "category": "tour-ops",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "컨피덴셜 타리프(Confidential Tariff)",
+      "definition_ko": "공급사나 DMC가 계약에 따라 거래 파트너에게 주는 넷 요금표로, 파트너가 도매 원가를 노출하지 않고 마크업할 수 있도록 비공개로 유지된다.",
+      "longDef": "A confidential tariff is the contractual backbone of net-rate, markup-based trade distribution: the supplier publishes confidential net prices (often seasonal, with allotments and conditions) to contracted operators/agents only. Confidentiality preserves the partner's margin and the supplier's public-rate integrity, and underpins land packages and B2B activity wholesale.",
+      "longDef_ko": "컨피덴셜 타리프는 넷 요금·마크업 기반 거래 유통의 계약적 근간이다. 공급사가 계약된 운영사·여행사에게만 비공개 넷 가격(흔히 시즌별, 할당량·조건 포함)을 제공한다. 비공개성은 파트너 마진과 공급사의 공시가 무결성을 지키며, 랜드 패키지와 B2B 액티비티 도매를 뒷받침한다.",
+      "aliases": [
+        "Confidential Rate",
+        "Net Tariff",
+        "Contracted Tariff"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Net Rate",
+          "targetId": "net-rate"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Markup",
+          "targetId": "markup"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Destination Management Company",
+          "targetId": "destination-management-company"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Phocuswright — Confidential net tariffs in trade distribution",
+          "org": "Phocuswright",
+          "version": "",
+          "section": "",
+          "url": "https://www.phocuswright.com/",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 8H10v14l18 18 14-14z\"/><circle cx=\"16\" cy=\"16\" r=\"2.5\"/></svg>",
+      "term": "Confidential Tariff",
+      "definition": "A schedule of net rates a supplier or DMC gives a trade partner under contract, kept confidential so the partner can mark it up without exposing the wholesale cost.",
+      "lastReviewed": "2026-06-24",
+      "distinctions": []
     },
     {
       "id": "conjunction-ticket",
@@ -9811,6 +10014,55 @@
       "lastReviewed": "2026-06-15"
     },
     {
+      "id": "cut-off-time",
+      "vertical": "tours",
+      "category": "tour-product",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "컷오프 타임(Cut-off Time)",
+      "definition_ko": "액티비티 시작 전 예약이 가능한 마지막 시점, 즉 판매 마감 시한으로, 흔히 최소 리드타임으로 표현된다.",
+      "longDef": "Cut-off (booking lead time) is set by operators to allow preparation — guide rostering, manifests sent, equipment readied — and is enforced per option/timeslot. Short or zero cut-offs enable true last-minute and same-day sales (a fast-growing segment) but require live availability and instant confirmation; long cut-offs block last-minute conversion.",
+      "longDef_ko": "컷오프(예약 리드타임)는 가이드 배정·매니페스트 전송·장비 준비 등 준비 시간을 확보하기 위해 운영사가 설정하며, 옵션/타임슬롯 단위로 적용된다. 짧거나 0인 컷오프는 진정한 라스트미닛·당일 판매(빠르게 성장하는 세그먼트)를 가능케 하지만 실시간 가용성과 즉시확정이 필요하고, 긴 컷오프는 라스트미닛 전환을 막는다.",
+      "aliases": [
+        "Booking Cut-off",
+        "Sales Cut-off",
+        "Booking Lead Time",
+        "Cutoff"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Timeslot",
+          "targetId": "timeslot"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Instant Confirmation",
+          "targetId": "instant-confirmation"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Manifest",
+          "targetId": "manifest"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Rezdy — Cut-off times and booking lead time",
+          "org": "Rezdy",
+          "version": "",
+          "section": "",
+          "url": "https://www.rezdy.com/",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"10\" width=\"32\" height=\"28\" rx=\"2\"/><line x1=\"8\" y1=\"18\" x2=\"40\" y2=\"18\"/><circle cx=\"13\" cy=\"14\" r=\"1\"/><circle cx=\"17\" cy=\"14\" r=\"1\"/></svg>",
+      "term": "Cut-off Time",
+      "definition": "The latest point before an activity's start at which a booking can still be made — the sales deadline, often expressed as a minimum lead time.",
+      "lastReviewed": "2026-06-24",
+      "distinctions": []
+    },
+    {
       "id": "cutoff-date",
       "vertical": "lodging",
       "category": "hotel-rate",
@@ -10417,6 +10669,63 @@
       "term": "Derived Rate",
       "definition": "A derived rate is a rate plan whose price, restrictions, or availability are computed automatically as a percentage or fixed amount offset from a parent (base) rate plan such as BAR, rather than being maintained independently. When the parent rate changes, the derived (child) rate recalculates accordingly.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "destination-management-company",
+      "vertical": "tours",
+      "category": "tour-ops",
+      "conceptType": "role",
+      "status": "active",
+      "abbreviation": "DMC",
+      "term_ko": "목적지 관리 회사(DMC)",
+      "definition_ko": "목적지 현지에서 인바운드 투어 오퍼레이터·여행사·기업/MICE 바이어를 대신해 투어·교통·가이드·물류 등 지상 서비스를 설계·운영하는 현지 회사다.",
+      "longDef": "A DMC is the on-the-ground supply aggregator and operator in a destination: it holds local supplier relationships, contracts net rates, assembles land arrangements, and executes logistics, while the selling tour operator or agent abroad markets to the traveler. DMCs are central to group, MICE, and packaged FIT travel and overlap with the term \"ground handler\".",
+      "longDef_ko": "DMC는 목적지의 현지 공급 집계·운영 주체다. 현지 공급사 관계를 보유하고 넷 요금을 계약하며 랜드 어레인지먼트를 구성하고 물류를 실행하는 한편, 해외의 판매 투어 오퍼레이터·여행사가 여행자에게 마케팅한다. 그룹·MICE·패키지 FIT 여행의 중심이며 \"그라운드 핸들러\"와 의미가 겹친다.",
+      "aliases": [
+        "DMC",
+        "Ground Handler",
+        "Local Ground Operator",
+        "Inbound Ground Agent"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Receptive Tour Operator",
+          "targetId": "receptive-tour-operator"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Land Package",
+          "targetId": "land-package"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Activity Operator",
+          "targetId": "activity-operator"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Receptive Tour Operator",
+          "explanation": "A receptive tour operator is the inbound seller/packager that receives international clients and books local services; a DMC is the local company that designs and operates those ground services on the ground.",
+          "explanation_ko": "리셉티브 투어 오퍼레이터는 해외 고객을 받아 현지 서비스를 예약·패키징하는 인바운드 판매자이고, DMC는 그 지상 서비스를 현지에서 설계·운영하는 현지 회사다.",
+          "targetId": "receptive-tour-operator"
+        }
+      ],
+      "sources": [
+        {
+          "name": "ADMEI — Association of Destination Management Executives Intl.",
+          "org": "ADMEI",
+          "version": "",
+          "section": "",
+          "url": "https://www.admei.org/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"12\" y=\"8\" width=\"24\" height=\"32\" rx=\"2\"/><line x1=\"18\" y1=\"16\" x2=\"22\" y2=\"16\"/><line x1=\"26\" y1=\"16\" x2=\"30\" y2=\"16\"/><line x1=\"18\" y1=\"24\" x2=\"22\" y2=\"24\"/><line x1=\"26\" y1=\"24\" x2=\"30\" y2=\"24\"/><rect x=\"21\" y=\"32\" width=\"6\" height=\"8\"/></svg>",
+      "term": "Destination Management Company",
+      "definition": "A local company in the destination that designs and operates ground services — tours, transfers, guides, logistics — on behalf of inbound tour operators, travel agents, and corporate/MICE buyers.",
+      "lastReviewed": "2026-06-24"
     },
     {
       "id": "digital-travel-credential",
@@ -13513,6 +13822,62 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "fit",
+      "vertical": "tours",
+      "category": "tour-ops",
+      "conceptType": "business-term",
+      "status": "active",
+      "abbreviation": "FIT",
+      "term_ko": "개별 자유여행(FIT)",
+      "definition_ko": "고정 그룹 출발 상품이 아니라 독립 여행자나 소규모 일행을 위해 개별 구성·맞춤하는 여행이다.",
+      "longDef": "FIT contrasts with group inclusive travel: instead of a scheduled coach group, the itinerary is tailored to one traveler/party, often assembled from à-la-carte components (land package, activities, transfers) by an agent, operator, or the traveler directly online. FIT is the fast-growing, personalization-driven mode and a primary consumer of dynamically distributed activity inventory.",
+      "longDef_ko": "FIT는 그룹 패키지 여행과 대비된다. 정해진 버스 그룹 대신, 일정이 한 여행자/일행에 맞춰지며 흔히 여행사·운영사 또는 여행자가 온라인에서 직접 개별 구성요소(랜드 패키지·액티비티·교통)로 조립한다. FIT는 개인화 중심으로 빠르게 성장하는 형태이며, 동적으로 유통되는 액티비티 재고의 주요 소비층이다.",
+      "aliases": [
+        "Free Independent Traveler",
+        "Foreign Independent Tour",
+        "Fully Independent Traveler"
+      ],
+      "relationships": [
+        {
+          "type": "contrasts",
+          "targetTerm": "GIT",
+          "targetId": "git-group-inclusive-tour"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Land Package",
+          "targetId": "land-package"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Activity",
+          "targetId": "activity"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "GIT",
+          "explanation": "FIT is an individually tailored trip for an independent traveler; GIT is a group inclusive tour sold as a fixed, scheduled departure for many travelers together.",
+          "explanation_ko": "FIT는 독립 여행자를 위한 개별 맞춤 여행이고, GIT는 다수 여행자를 함께 묶어 고정·정기 출발로 판매하는 그룹 패키지 투어다.",
+          "targetId": "git-group-inclusive-tour"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Phocuswright — FIT vs group travel",
+          "org": "Phocuswright",
+          "version": "",
+          "section": "",
+          "url": "https://www.phocuswright.com/",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"14\" r=\"6\"/><path d=\"M12 40c0-8 5.5-13 12-13s12 5 12 13\"/></svg>",
+      "term": "FIT",
+      "definition": "An individually arranged trip for an independent traveler or small party, customized rather than sold as a fixed group departure.",
+      "lastReviewed": "2026-06-24"
+    },
+    {
       "id": "flexible-content-barcode-fcb",
       "vertical": "ground",
       "category": "rail",
@@ -14141,6 +14506,55 @@
       "term": "Form of Payment",
       "definition": "Form of Payment (FOP) is the method by which a travel transaction is paid, recorded on a ticket, EMD, or order, such as cash, credit card, customer card, or miscellaneous charge order. In airline ticketing the FOP is stored as a coded element and drives how the sale is reported and settled.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "free-cancellation",
+      "vertical": "tours",
+      "category": "tour-product",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "무료 취소(Free Cancellation)",
+      "definition_ko": "액티비티 시작 전 정해진 기한(흔히 24시간 전)까지 전액 환불로 취소할 수 있게 하는 정책이다.",
+      "longDef": "Free cancellation is one of the strongest conversion levers in experiences and a near-standard filter on major marketplaces. It is defined as a deadline relative to the local start time; after the deadline the booking becomes non-refundable. It is a specific instance of the broader cancellation policy and must be communicated in the traveler's local time to avoid disputes.",
+      "longDef_ko": "무료 취소는 익스피리언스에서 가장 강력한 전환 지렛대 중 하나이며 주요 마켓플레이스에서 사실상 표준 필터다. 현지 시작 시각 기준 기한으로 정의되고, 기한이 지나면 환불 불가가 된다. 더 넓은 취소 정책의 구체적 사례이며, 분쟁을 피하려면 여행자 현지 시각으로 안내해야 한다.",
+      "aliases": [
+        "Free Cancellation Window",
+        "Cancellable Booking"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Cancellation Policy",
+          "targetId": "cancellation-policy"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Cut-off Time",
+          "targetId": "cut-off-time"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Cut-off Time",
+          "explanation": "Free cancellation is the refund deadline before which a customer may cancel; the cut-off time is the sales deadline after which the product can no longer be booked.",
+          "explanation_ko": "무료 취소는 고객이 취소할 수 있는 환불 기한이고, 컷오프 타임은 그 이후로는 상품을 예약할 수 없는 판매 마감 시한이다.",
+          "targetId": "cut-off-time"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Viator — Free cancellation policy",
+          "org": "Viator (Tripadvisor)",
+          "version": "",
+          "section": "",
+          "url": "https://www.viator.com/",
+          "tier": "encyclopedia"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"16\"/><line x1=\"18\" y1=\"18\" x2=\"30\" y2=\"30\"/><line x1=\"30\" y1=\"18\" x2=\"18\" y2=\"30\"/></svg>",
+      "term": "Free Cancellation",
+      "definition": "A policy letting the traveler cancel for a full refund up to a stated deadline before the activity (commonly 24 hours prior).",
+      "lastReviewed": "2026-06-24"
     },
     {
       "id": "free-look-period",
@@ -15631,6 +16045,50 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "git-group-inclusive-tour",
+      "vertical": "tours",
+      "category": "tour-ops",
+      "conceptType": "business-term",
+      "status": "active",
+      "abbreviation": "GIT",
+      "term_ko": "그룹 패키지 투어(GIT)",
+      "definition_ko": "정해진 일정의 고정·정기 출발에 다수 여행자를 모아 판매하는 사전 패키지 투어로, 보통 그룹 요금과 최소 인원 조건을 갖는다.",
+      "longDef": "Group inclusive tours bundle transport, accommodation, guiding and activities into one scheduled product, achieving lower per-person cost through volume and negotiated net/group rates, often with departure guarantees tied to minimum participant numbers. GIT is the traditional packaged-tour model and contrasts with the customized FIT mode.",
+      "longDef_ko": "그룹 패키지 투어는 교통·숙박·가이드·액티비티를 하나의 정기 상품으로 묶어, 물량과 협정 넷/그룹 요금을 통해 인원당 비용을 낮추며, 흔히 최소 인원 조건에 연동된 출발 보장을 둔다. GIT는 전통적 패키지 투어 모델로, 맞춤형 FIT 방식과 대비된다.",
+      "aliases": [
+        "Group Inclusive Tour",
+        "Group Inclusive Travel",
+        "Group Tour"
+      ],
+      "relationships": [
+        {
+          "type": "contrasts",
+          "targetTerm": "FIT",
+          "targetId": "fit"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Land Package",
+          "targetId": "land-package"
+        }
+      ],
+      "sources": [
+        {
+          "name": "NTA — Group tour operations",
+          "org": "National Tour Association",
+          "version": "",
+          "section": "",
+          "url": "https://ntaonline.com/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"18\" cy=\"16\" r=\"5\"/><circle cx=\"32\" cy=\"16\" r=\"5\"/><path d=\"M8 38c0-6 4.5-10 10-10s10 4 10 10M28 30c1.5-1.2 3.5-2 6-2 5.5 0 10 4 10 10\"/></svg>",
+      "term": "GIT",
+      "definition": "A pre-packaged tour sold to many travelers on a fixed, scheduled departure with a set itinerary, typically at group pricing and minimum-numbers terms.",
+      "lastReviewed": "2026-06-24",
+      "distinctions": []
+    },
+    {
       "id": "group-block",
       "vertical": "lodging",
       "category": "hotel-rate",
@@ -16218,6 +16676,49 @@
       "term": "HEDNA",
       "definition": "HEDNA (Hotel Electronic Distribution Network Association) is a not-for-profit trade association, founded in 1991, dedicated to advancing hotel electronic distribution through education, networking, and the development of distribution best practices and standards. Its members span hotels, representation/management companies, GDSs, switches, OTAs, payment and software providers, making it a primary authoritative body in the field.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "hop-on-hop-off",
+      "vertical": "tours",
+      "category": "tour-product",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "홉온홉오프(Hop-on Hop-off)",
+      "definition_ko": "정해진 정류장 노선에서 유효기간(예: 24/48시간) 동안 무제한 승하차를 제공하는 관광 상품으로, 게스트가 원하는 곳에서 자유롭게 타고 내린다.",
+      "longDef": "Hop-on hop-off is sold by validity duration rather than a single departure, so it behaves like a pass: activation typically starts on first boarding, and capacity is managed at the route/vehicle level rather than a strict timeslot. It is a high-volume, heavily distributed city product and a common combo or city-pass inclusion.",
+      "longDef_ko": "홉온홉오프는 단일 출발이 아니라 유효기간 단위로 판매되어 패스처럼 작동한다. 보통 첫 승차 시 활성화되며, 정원은 엄격한 타임슬롯이 아니라 노선/차량 단위로 관리된다. 대량 판매되고 유통이 활발한 도시 상품이며 콤보·시티패스에 흔히 포함된다.",
+      "aliases": [
+        "HOHO",
+        "Hop-on Hop-off Bus",
+        "Sightseeing Bus Pass"
+      ],
+      "relationships": [
+        {
+          "type": "broader",
+          "targetTerm": "Activity",
+          "targetId": "activity"
+        },
+        {
+          "type": "related",
+          "targetTerm": "City Pass",
+          "targetId": "city-pass"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Big Bus Tours — Hop-on hop-off sightseeing",
+          "org": "Big Bus Tours",
+          "version": "",
+          "section": "",
+          "url": "https://www.bigbustours.com/",
+          "tier": "encyclopedia"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"10\" width=\"32\" height=\"24\" rx=\"3\"/><line x1=\"8\" y1=\"22\" x2=\"40\" y2=\"22\"/><line x1=\"24\" y1=\"10\" x2=\"24\" y2=\"22\"/><circle cx=\"16\" cy=\"40\" r=\"2.5\"/><circle cx=\"32\" cy=\"40\" r=\"2.5\"/></svg>",
+      "term": "Hop-on Hop-off",
+      "definition": "A sightseeing product giving unlimited boarding along a fixed route of stops for a validity period (e.g. 24/48 hours), letting guests get on and off at will.",
+      "lastReviewed": "2026-06-24",
+      "distinctions": []
     },
     {
       "id": "hot-file",
@@ -19488,6 +19989,54 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "land-package",
+      "vertical": "tours",
+      "category": "tour-ops",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "랜드 패키지(Land Package)",
+      "definition_ko": "숙박·교통·투어·가이드·식사 등 목적지 지상 서비스를 하나의 상품으로 묶어 판매하는 묶음으로, 목적지까지의 국제 운송은 제외한다(\"랜드 온리\").",
+      "longDef": "\"Land\" (or \"land only\") arrangements are how operators price and sell the in-destination portion of a trip separately from flights, letting travelers add their own air or letting agents combine land with negotiated airfares. DMCs and receptive operators assemble land packages from contracted local inventory; the concept underlies much of group and packaged FIT travel.",
+      "longDef_ko": "\"랜드\"(또는 \"랜드 온리\") 어레인지먼트는 운영사가 여행의 목적지 내 부분을 항공과 분리해 가격을 매기고 판매하는 방식으로, 여행자가 항공을 직접 추가하거나 여행사가 협정 항공운임과 랜드를 결합하게 한다. DMC·리셉티브 오퍼레이터가 계약한 현지 재고로 랜드 패키지를 구성하며, 이 개념이 그룹·패키지 FIT 여행의 상당 부분을 뒷받침한다.",
+      "aliases": [
+        "Land Arrangement",
+        "Land Only",
+        "Ground Package"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Destination Management Company",
+          "targetId": "destination-management-company"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Receptive Tour Operator",
+          "targetId": "receptive-tour-operator"
+        },
+        {
+          "type": "related",
+          "targetTerm": "GIT",
+          "targetId": "git-group-inclusive-tour"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Phocuswright — Packaged and land travel",
+          "org": "Phocuswright",
+          "version": "",
+          "section": "",
+          "url": "https://www.phocuswright.com/",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 6 8 14v20l16 8 16-8V14z\"/><path d=\"M8 14l16 8 16-8M24 22v20\"/></svg>",
+      "term": "Land Package",
+      "definition": "The bundle of destination ground services — accommodation, transfers, tours, guiding, meals — sold as one product, excluding the international transport to reach the destination.",
+      "lastReviewed": "2026-06-24",
+      "distinctions": []
+    },
+    {
       "id": "last-room-availability",
       "vertical": "lodging",
       "category": "hotel-dist",
@@ -19835,6 +20384,57 @@
       "term": "Length of Stay",
       "definition": "Length of Stay is the number of nights of a hotel booking, and as a rate control it refers to restrictions tied to that duration — most commonly Minimum Length of Stay (MinLOS) and Maximum Length of Stay (MaxLOS) — used to qualify or block availability for a rate plan on specific dates. Related controls include length-of-stay-based pricing and arrival-day restrictions.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "liability-waiver",
+      "vertical": "tours",
+      "category": "tour-ops",
+      "conceptType": "document",
+      "status": "active",
+      "term_ko": "책임 면제 동의서(Liability Waiver)",
+      "definition_ko": "참가자가 액티비티의 위험을 인지하고 운영사의 일정 책임을 면제한다고 서명하는 문서로, 어드벤처·고위험 체험에서 흔히 요구된다.",
+      "longDef": "Waivers are an operations and risk-management artifact distinct from travel insurance: the participant assumes/acknowledges risk and releases the operator within legal limits. Increasingly collected digitally at or before check-in and tied to the booking, e-waivers are a standard feature of res-tech for activities such as rafting, diving, or zip-lining.",
+      "longDef_ko": "면책 동의서는 여행보험과 구별되는 운영·위험관리 산출물이다. 참가자가 위험을 인수·인지하고 법적 한도 내에서 운영사를 면책한다. 점차 체크인 시점이나 그 전에 디지털로 수집되어 예약에 연동되며, 래프팅·다이빙·짚라인 같은 액티비티를 위한 예약 시스템의 표준 기능이다.",
+      "aliases": [
+        "Waiver",
+        "Release of Liability",
+        "Participant Waiver",
+        "Assumption of Risk"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Activity",
+          "targetId": "activity"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Manifest",
+          "targetId": "manifest"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Travel Medical Insurance",
+          "explanation": "A liability waiver is the operator-facing legal release the participant signs to assume activity risk; travel medical insurance is a separate policy that reimburses the traveler's own medical costs.",
+          "explanation_ko": "책임 면제 동의서는 참가자가 액티비티 위험을 인수하며 서명하는 운영사 대상 법적 면책이고, 여행의료보험은 여행자 본인의 의료비를 보상하는 별도의 보험이다.",
+          "targetId": "travel-medical-insurance"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Ventrata / WaiverForever — Digital waivers for activities",
+          "org": "Ventrata",
+          "version": "",
+          "section": "",
+          "url": "https://ventrata.com/",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 36c6 0 6-12 12-12s2 8 6 8 6-16 14-16\"/><line x1=\"8\" y1=\"42\" x2=\"40\" y2=\"42\"/></svg>",
+      "term": "Liability Waiver",
+      "definition": "A document participants sign acknowledging the risks of an activity and releasing the operator from certain liability, commonly required for adventure and high-risk experiences.",
+      "lastReviewed": "2026-06-24"
     },
     {
       "id": "license-plate-number",
@@ -20246,6 +20846,55 @@
       "lastReviewed": "2026-06-15"
     },
     {
+      "id": "manifest",
+      "vertical": "tours",
+      "category": "tour-ops",
+      "conceptType": "document",
+      "status": "active",
+      "term_ko": "매니페스트(Manifest)",
+      "definition_ko": "특정 액티비티 출발 편에 예약된 모든 참가자 명단으로, 이름·일행 규모·픽업·특별 요구사항을 담아 투어 운영에 사용된다.",
+      "longDef": "The manifest (or day sheet/roster) is the operational hand-off from booking to delivery: reservation technology generates it per departure so guides and drivers know who to expect, where to collect them, and what they need. Accurate, up-to-the-minute manifests depend on the booking cut-off and on connectivity pushing late bookings through before departure.",
+      "longDef_ko": "매니페스트(데이 시트/로스터)는 예약에서 제공으로 넘어가는 운영 인계물이다. 예약 시스템이 출발 편마다 생성해 가이드·기사가 누구를 어디서 태우고 무엇이 필요한지 알게 한다. 정확하고 최신인 매니페스트는 예약 컷오프와, 출발 전 막판 예약을 밀어 넣는 연동에 달려 있다.",
+      "aliases": [
+        "Participant Manifest",
+        "Roster",
+        "Pax Manifest",
+        "Day Sheet"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Cut-off Time",
+          "targetId": "cut-off-time"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Resource Management",
+          "targetId": "resource-management"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Meeting Point",
+          "targetId": "meeting-point"
+        }
+      ],
+      "sources": [
+        {
+          "name": "FareHarbor — Manifests and rosters",
+          "org": "FareHarbor (Booking Holdings)",
+          "version": "",
+          "section": "",
+          "url": "https://fareharbor.com/",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"12\" y=\"8\" width=\"24\" height=\"34\" rx=\"3\"/><rect x=\"18\" y=\"5\" width=\"12\" height=\"7\" rx=\"2\"/><line x1=\"18\" y1=\"22\" x2=\"30\" y2=\"22\"/><line x1=\"18\" y1=\"28\" x2=\"30\" y2=\"28\"/><line x1=\"18\" y1=\"34\" x2=\"26\" y2=\"34\"/></svg>",
+      "term": "Manifest",
+      "definition": "The operator's list of all participants booked on a given activity departure, with names, party sizes, pickups, and special requirements, used to run the trip.",
+      "lastReviewed": "2026-06-24",
+      "distinctions": []
+    },
+    {
       "id": "marketing-carrier",
       "vertical": "air",
       "category": "air-partner",
@@ -20387,6 +21036,60 @@
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"15\"/><path d=\"M28 18a5 4 0 0 0-10 0c0 6 10 2 10 8a5 4 0 0 1-10 0M24 13v3M24 32v3\"/></svg>",
       "term": "Marketplace Commission",
       "definition": "The fee a marketplace or reseller takes for distributing an activity — typically a percentage of the retail price (or the margin over the operator's net rate).",
+      "lastReviewed": "2026-06-24"
+    },
+    {
+      "id": "markup",
+      "vertical": "tours",
+      "category": "tour-dist",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "마크업(Markup)",
+      "definition_ko": "리셀러가 운영사 넷 요금 위에 더해 소매가를 정하는 금액으로, 넷 요금 모델에서 리셀러의 마진을 이룬다.",
+      "longDef": "Markup is the net-rate-model counterpart of commission: instead of the operator publishing a retail price and paying away a percentage, the operator supplies a confidential net rate and the reseller adds a markup to reach its own sell price. Markup gives the reseller pricing control (and obscures the operator's net), whereas commission keeps the operator in control of the displayed price.",
+      "longDef_ko": "마크업은 커미션의 넷 요금 모델 대응 개념이다. 운영사가 소매가를 공시하고 일정 비율을 떼어주는 대신, 운영사가 비공개 넷 요금을 제공하고 리셀러가 마크업을 더해 자체 판매가를 만든다. 마크업은 리셀러에게 가격 통제권을 주고(운영사 넷가를 가린다), 커미션은 표시 가격의 통제권을 운영사에 남긴다.",
+      "aliases": [
+        "Margin (Reseller)",
+        "Reseller Markup"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Net Rate",
+          "targetId": "net-rate"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Retail Rate",
+          "targetId": "retail-rate"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Marketplace Commission",
+          "targetId": "marketplace-commission"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Marketplace Commission",
+          "explanation": "A markup is added by the reseller on top of a net rate to form its sell price; a commission is deducted by the marketplace from an operator-set retail price.",
+          "explanation_ko": "마크업은 리셀러가 넷 요금 위에 더해 판매가를 만드는 금액이고, 커미션은 마켓플레이스가 운영사가 정한 소매가에서 떼어가는 금액이다.",
+          "targetId": "marketplace-commission"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Arival — Markup vs commission models",
+          "org": "Arival",
+          "version": "",
+          "section": "",
+          "url": "https://arival.travel/",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><line x1=\"14\" y1=\"34\" x2=\"34\" y2=\"14\"/><circle cx=\"16\" cy=\"16\" r=\"4\"/><circle cx=\"32\" cy=\"32\" r=\"4\"/></svg>",
+      "term": "Markup",
+      "definition": "The amount a reseller adds on top of an operator's net rate to set its retail price, forming the reseller's margin under a net-rate model.",
       "lastReviewed": "2026-06-24"
     },
     {
@@ -23955,6 +24658,62 @@
       "term": "Occupancy",
       "definition": "In hotel inventory and rates, occupancy has two common meanings: (1) the number and composition of guests assigned to a room (e.g. single, double, or 2 adults + 1 child), which can drive occupancy-based pricing; and (2) occupancy rate, the operational metric of rooms sold divided by rooms available over a period.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "octo-spec",
+      "vertical": "tours",
+      "category": "tour-dist",
+      "conceptType": "standard",
+      "status": "active",
+      "abbreviation": "OCTO",
+      "term_ko": "OCTO(개방형 관광 연결 표준)",
+      "definition_ko": "투어·액티비티·어트랙션 연동을 위한 개방형 커뮤니티 유지보수 API 사양으로, 상품·옵션·가용성·예약에 대한 공통 모델을 정의한다.",
+      "longDef": "OCTO (Open Connectivity for Tourism Operators) addresses the experiences sector's historical lack of a connectivity standard, where each marketplace and reservation system built bespoke APIs. By standardizing product/option/unit/availability/booking endpoints, OCTO aims to cut integration cost and make instant-confirmation inventory more widely distributable — the role EDIFACT/NDC and OpenTravel play in air and hotel.",
+      "longDef_ko": "OCTO(Open Connectivity for Tourism Operators)는 마켓플레이스·예약 시스템마다 맞춤 API를 만들어 온, 익스피리언스 부문의 표준 부재 문제를 다룬다. 상품/옵션/유닛/가용성/예약 엔드포인트를 표준화해 연동 비용을 낮추고 즉시확정 재고의 유통성을 넓히는 것을 목표로 하며, 이는 항공의 EDIFACT/NDC, 호텔의 OpenTravel이 하는 역할에 해당한다.",
+      "aliases": [
+        "Open Connectivity for Tourism Operators",
+        "OCTO Spec",
+        "octo.travel"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Reseller API",
+          "targetId": "reseller-api"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Connectivity Hub",
+          "targetId": "connectivity-hub"
+        },
+        {
+          "type": "related",
+          "targetTerm": "OpenTravel Alliance",
+          "targetId": "opentravel-alliance"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Reseller API",
+          "explanation": "A reseller API is any single platform's proprietary connectivity interface; OCTO is an open cross-industry specification multiple platforms can implement to interoperate.",
+          "explanation_ko": "리셀러 API는 특정 플랫폼 하나의 독자 연동 인터페이스이고, OCTO는 여러 플랫폼이 구현해 상호 운용할 수 있는 개방형 범산업 사양이다.",
+          "targetId": "reseller-api"
+        }
+      ],
+      "sources": [
+        {
+          "name": "OCTo — Open API specification",
+          "org": "OCTO",
+          "version": "",
+          "section": "",
+          "url": "https://octo.travel/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M18 8v8M30 8v8\"/><rect x=\"14\" y=\"16\" width=\"20\" height=\"12\" rx=\"3\"/><path d=\"M24 28v6a6 6 0 0 0 6 6h2\"/></svg>",
+      "term": "OCTO",
+      "definition": "An open, community-maintained API specification for tours, activities and attractions connectivity, defining a common model for products, options, availability and bookings.",
+      "lastReviewed": "2026-06-24"
     },
     {
       "id": "offer",
@@ -27842,6 +28601,55 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "pricing-category",
+      "vertical": "tours",
+      "category": "tour-product",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "가격 카테고리(Pricing Category)",
+      "definition_ko": "액티비티가 가격을 매기고 인원을 세는 여행자 구분(성인·아동·유아·시니어·학생 등)으로, 각기 다른 가격과 (때로는) 연령 규칙·정원 가중치를 가진다.",
+      "longDef": "Pricing categories (units) are the per-person dimension of activity pricing: a booking specifies a quantity per category, and rules can restrict combinations (e.g. a child must travel with an adult). Connectivity specs model these as units so resellers can quote and book mixed-party prices correctly; mishandling them is a frequent source of price and capacity errors.",
+      "longDef_ko": "가격 카테고리(유닛)는 액티비티 가격의 인원당 차원이다. 예약은 카테고리별 수량을 지정하며, 조합을 제한하는 규칙(예: 아동은 성인 동반 필수)이 있을 수 있다. 연동 사양은 이를 유닛으로 모델링해 리셀러가 혼합 일행 가격을 정확히 견적·예약하게 한다. 잘못 처리하면 가격·정원 오류의 흔한 원인이 된다.",
+      "aliases": [
+        "Price Tier",
+        "Passenger Category",
+        "Unit (Pricing)",
+        "Age Band"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Product Option",
+          "targetId": "product-option"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Activity",
+          "targetId": "activity"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Markup",
+          "targetId": "markup"
+        }
+      ],
+      "sources": [
+        {
+          "name": "OCTO — Units and pricing",
+          "org": "OCTO",
+          "version": "",
+          "section": "",
+          "url": "https://octo.travel/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"30\" width=\"8\" height=\"10\"/><rect x=\"20\" y=\"22\" width=\"8\" height=\"18\"/><rect x=\"30\" y=\"14\" width=\"8\" height=\"26\"/></svg>",
+      "term": "Pricing Category",
+      "definition": "A traveler class an activity is priced and counted by — e.g. adult, child, infant, senior, student — each with its own price and sometimes age rules and capacity weighting.",
+      "lastReviewed": "2026-06-24",
+      "distinctions": []
+    },
+    {
       "id": "pricing-unit",
       "vertical": "air",
       "category": "air-shop",
@@ -28007,6 +28815,60 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "private-tour",
+      "vertical": "tours",
+      "category": "tour-product",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "프라이빗 투어(Private Tour)",
+      "definition_ko": "한 예약 일행에게만 독점 판매되어 모르는 사람이 합류하지 않는 액티비티로, 보통 그룹 단위 가격이거나 전담 가이드 프리미엄이 붙는다.",
+      "longDef": "Private tours trade shared-group economics for exclusivity and flexibility (custom pace, pickup, sometimes itinerary). Pricing is often per-vehicle or per-group with tiered bands by party size rather than strictly per person, which makes them a distinct option type that connectivity and pricing engines must handle separately from group-join products.",
+      "longDef_ko": "프라이빗 투어는 공유 그룹의 규모 경제를 포기하는 대신 독점성과 유연성(맞춤 속도·픽업·때로는 일정)을 제공한다. 가격은 흔히 인원당이 아니라 차량당·그룹당으로 책정되며 일행 규모별 구간 요율을 갖는다. 따라서 연동·가격 엔진이 그룹조인 상품과 별도로 다뤄야 하는 구별된 옵션 유형이다.",
+      "aliases": [
+        "Private Experience",
+        "Exclusive Tour"
+      ],
+      "relationships": [
+        {
+          "type": "broader",
+          "targetTerm": "Activity",
+          "targetId": "activity"
+        },
+        {
+          "type": "contrasts",
+          "targetTerm": "Small-Group Tour",
+          "targetId": "small-group-tour"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Pricing Category",
+          "targetId": "pricing-category"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Small-Group Tour",
+          "explanation": "A private tour admits only the booking party; a small-group tour caps headcount but still pools unrelated travelers together.",
+          "explanation_ko": "프라이빗 투어는 예약 일행만 받고, 소그룹 투어는 인원 상한을 두되 서로 모르는 여행자를 함께 묶는다.",
+          "targetId": "small-group-tour"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Arival — Private vs group experiences",
+          "org": "Arival",
+          "version": "",
+          "section": "",
+          "url": "https://arival.travel/",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"14\" r=\"6\"/><path d=\"M12 40c0-8 5.5-13 12-13s12 5 12 13\"/></svg>",
+      "term": "Private Tour",
+      "definition": "An activity sold exclusively to one booking party (no strangers join), typically priced per group or with a private-guide premium.",
+      "lastReviewed": "2026-06-24"
+    },
+    {
       "id": "prm",
       "vertical": "common",
       "category": "customer",
@@ -28097,6 +28959,61 @@
       "term": "PRM",
       "definition": "A Passenger with Reduced Mobility — any person whose mobility is reduced due to physical or mental disability, age, illness or other cause and who needs special assistance during travel. PRM needs are communicated to carriers and airports through standardized special-service request codes.",
       "lastReviewed": "2026-06-15"
+    },
+    {
+      "id": "product-option",
+      "vertical": "tours",
+      "category": "tour-product",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "상품 옵션(Product Option)",
+      "definition_ko": "액티비티의 예약 가능한 변형(언어·그룹 규모·출발 시각·소요시간·애드온 조합 등)으로, 각 옵션이 고유한 가용성과 가격을 가진다.",
+      "longDef": "Connectivity standards model an activity as a product that contains one or more options (sometimes called units or variants). The traveler picks an option, then a timeslot, then per-pricing-category quantities. Modeling options correctly is essential for accurate availability and pricing, because two options of the same product can have different capacity pools, durations, and inclusions.",
+      "longDef_ko": "연동 표준은 액티비티를 하나 이상의 옵션(유닛 또는 변형이라고도 함)을 포함하는 상품으로 모델링한다. 여행자는 옵션을 고른 뒤 타임슬롯, 이어서 가격 카테고리별 수량을 선택한다. 같은 상품의 두 옵션이 서로 다른 정원 풀·소요시간·포함내역을 가질 수 있으므로, 옵션을 정확히 모델링하는 것이 가용성·가격 정확도의 핵심이다.",
+      "aliases": [
+        "Option",
+        "Tour Option",
+        "Product Variant"
+      ],
+      "relationships": [
+        {
+          "type": "broader",
+          "targetTerm": "Activity",
+          "targetId": "activity"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Pricing Category",
+          "targetId": "pricing-category"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Timeslot",
+          "targetId": "timeslot"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Timeslot",
+          "explanation": "An option is the variant of the product being bought (language, group type, inclusions); a timeslot is the dated start time and capacity bucket against which a chosen option is booked.",
+          "explanation_ko": "옵션은 구매하는 상품의 변형(언어·그룹 유형·포함내역)이고, 타임슬롯은 선택한 옵션이 예약되는 날짜별 시작 시각·정원 버킷이다.",
+          "targetId": "timeslot"
+        }
+      ],
+      "sources": [
+        {
+          "name": "OCTO — Open API spec (products, options, units)",
+          "org": "OCTO",
+          "version": "",
+          "section": "",
+          "url": "https://octo.travel/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"14\" cy=\"14\" r=\"4\"/><circle cx=\"14\" cy=\"34\" r=\"4\"/><line x1=\"22\" y1=\"14\" x2=\"38\" y2=\"14\"/><line x1=\"22\" y1=\"34\" x2=\"38\" y2=\"34\"/></svg>",
+      "term": "Product Option",
+      "definition": "A bookable variant of an activity — e.g. a language, group size, departure time, duration, or add-on combination — each with its own availability and price.",
+      "lastReviewed": "2026-06-24"
     },
     {
       "id": "property-irregularity-report",
@@ -30216,6 +31133,56 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "receptive-tour-operator",
+      "vertical": "tours",
+      "category": "tour-ops",
+      "conceptType": "role",
+      "status": "active",
+      "abbreviation": "RTO",
+      "term_ko": "리셉티브 투어 오퍼레이터(RTO)",
+      "definition_ko": "목적지에 기반을 두고 인바운드 여행자를 데려오는 해외/역외 투어 오퍼레이터·여행사에게 현지 여행 서비스를 패키징·판매하는 사업자다.",
+      "longDef": "The receptive (inbound) tour operator is the wholesale bridge between distant sellers and local suppliers: it knows the destination, contracts local inventory at net rates, and resells assembled product B2B to outbound operators and agents, who in turn sell to the traveler. RTOs are key to international group and FIT distribution and are distinct from the outbound operator that originates demand.",
+      "longDef_ko": "리셉티브(인바운드) 투어 오퍼레이터는 원거리 판매자와 현지 공급사를 잇는 도매 가교다. 목적지를 잘 알고 현지 재고를 넷 요금으로 계약하며, 구성한 상품을 아웃바운드 오퍼레이터·여행사에 B2B로 재판매하면 그들이 다시 여행자에게 판매한다. 국제 그룹·FIT 유통의 핵심이며, 수요를 일으키는 아웃바운드 오퍼레이터와 구별된다.",
+      "aliases": [
+        "RTO",
+        "Inbound Tour Operator",
+        "Receptive Operator",
+        "Inbound Operator"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Destination Management Company",
+          "targetId": "destination-management-company"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Land Package",
+          "targetId": "land-package"
+        },
+        {
+          "type": "related",
+          "targetTerm": "FIT",
+          "targetId": "fit"
+        }
+      ],
+      "sources": [
+        {
+          "name": "NTA — Receptive operators in tour distribution",
+          "org": "National Tour Association",
+          "version": "",
+          "section": "",
+          "url": "https://ntaonline.com/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"16\"/><path d=\"M8 24h32M24 8c5 5 5 27 0 32M24 8c-5 5-5 27 0 32\"/></svg>",
+      "term": "Receptive Tour Operator",
+      "definition": "An operator based in the destination that packages and sells local travel services to foreign/out-of-area tour operators and travel agents who bring inbound travelers.",
+      "lastReviewed": "2026-06-24",
+      "distinctions": []
+    },
+    {
       "id": "record-locator",
       "vertical": "air",
       "category": "air-ops",
@@ -31585,6 +32552,54 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "resource-management",
+      "vertical": "tours",
+      "category": "tour-ops",
+      "conceptType": "process",
+      "status": "active",
+      "term_ko": "리소스 관리(Resource Management)",
+      "definition_ko": "액티비티에 필요한 한정 자원(가이드·차량·장비·공간·선박 등)을 예약에 맞춰 배정하여, 정원이 실제 운영 한계를 반영하도록 하는 일정 관리다.",
+      "longDef": "Sophisticated reservation technology ties availability not just to a headcount cap but to shared resources: a guide or bus used by one departure cannot be sold to an overlapping one. Resource management computes true sellable availability from these constraints, preventing oversell across products that draw on the same pooled assets — the experiences analog of airline/hotel inventory control.",
+      "longDef_ko": "정교한 예약 시스템은 가용성을 단순 인원 상한이 아니라 공유 자원에 묶는다. 한 출발 편이 쓰는 가이드나 버스는 시간이 겹치는 다른 편에 팔 수 없다. 리소스 관리는 이런 제약으로부터 진짜 판매 가능 가용성을 계산해, 같은 풀 자원을 끌어쓰는 상품 간 초과판매를 막는다 — 항공/호텔 인벤토리 통제에 해당하는 익스피리언스 개념이다.",
+      "aliases": [
+        "Resource Scheduling",
+        "Asset Management (Tours)",
+        "Capacity Resourcing"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Reservation Technology",
+          "targetId": "reservation-technology"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Timeslot",
+          "targetId": "timeslot"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Manifest",
+          "targetId": "manifest"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Rezdy — Resource management & scheduling",
+          "org": "Rezdy",
+          "version": "",
+          "section": "",
+          "url": "https://www.rezdy.com/",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"12\" width=\"32\" height=\"28\" rx=\"3\"/><line x1=\"8\" y1=\"20\" x2=\"40\" y2=\"20\"/><line x1=\"16\" y1=\"8\" x2=\"16\" y2=\"14\"/><line x1=\"32\" y1=\"8\" x2=\"32\" y2=\"14\"/><circle cx=\"18\" cy=\"28\" r=\"2\"/><circle cx=\"30\" cy=\"34\" r=\"2\"/></svg>",
+      "term": "Resource Management",
+      "definition": "Scheduling the finite assets an activity needs — guides, vehicles, equipment, rooms or boats — against bookings so capacity reflects real operational limits.",
+      "lastReviewed": "2026-06-24",
+      "distinctions": []
+    },
+    {
       "id": "rest-api",
       "vertical": "common",
       "category": "standards",
@@ -31680,6 +32695,62 @@
       "term": "REST API",
       "definition": "A REST API is a web-service interface built on the Representational State Transfer architectural style, using standard HTTP methods and verbs against resource URLs, typically with JSON payloads. In travel distribution it is the modern integration style used by airline, hotel, and aggregator APIs, increasingly including IATA NDC delivered as JSON/REST.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "retail-rate",
+      "vertical": "tours",
+      "category": "tour-dist",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "소매 요금(Retail Rate)",
+      "definition_ko": "여행자가 액티비티에 지불하는 공시 가격으로, 여기서 중개 커미션이 차감된다 — 운영사의 넷 요금과 대비된다.",
+      "longDef": "Retail (gross) rate is the consumer-facing price; under a commission model the marketplace remits retail minus its commission to the operator, while under a net-rate model the reseller marks the net rate up to its own retail price. Maintaining consistent retail rates across channels is the experiences-sector analog of rate parity and a frequent channel-conflict issue.",
+      "longDef_ko": "소매(그로스) 요금은 소비자 대면 가격이다. 커미션 모델에서는 마켓플레이스가 소매가에서 커미션을 뺀 금액을 운영사에 정산하고, 넷 요금 모델에서는 리셀러가 넷 요금에 마진을 얹어 자체 소매가를 만든다. 채널 간 소매가를 일관되게 유지하는 것은 익스피리언스 부문의 요금 동등성에 해당하며, 흔한 채널 충돌 이슈다.",
+      "aliases": [
+        "RRP",
+        "Recommended Retail Price",
+        "Gross Rate",
+        "Sell Rate"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Net Rate",
+          "targetId": "net-rate"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Markup",
+          "targetId": "markup"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Marketplace Commission",
+          "targetId": "marketplace-commission"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Net Rate",
+          "explanation": "Retail rate is the consumer price displayed for sale; net rate is the lower wholesale price the operator gives a reseller, who then marks it up to retail.",
+          "explanation_ko": "소매 요금은 판매용으로 표시되는 소비자 가격이고, 넷 요금은 운영사가 리셀러에게 주는 더 낮은 도매가로, 리셀러가 이를 소매가로 마크업한다.",
+          "targetId": "net-rate"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Arival — Net rates, retail and channel pricing",
+          "org": "Arival",
+          "version": "",
+          "section": "",
+          "url": "https://arival.travel/",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 8H10v14l18 18 14-14z\"/><circle cx=\"16\" cy=\"16\" r=\"2.5\"/></svg>",
+      "term": "Retail Rate",
+      "definition": "The published price a traveler pays for an activity, from which intermediary commission is deducted — as opposed to the operator's net rate.",
+      "lastReviewed": "2026-06-24"
     },
     {
       "id": "revenue-management",
@@ -33133,6 +34204,56 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "self-guided-tour",
+      "vertical": "tours",
+      "category": "tour-product",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "셀프 가이드 투어(Self-Guided Tour)",
+      "definition_ko": "여행자가 라이브 가이드 없이 제공된 자료(오디오 가이드·앱·지도·인쇄 경로)를 이용해 스스로 진행하는 체험이다.",
+      "longDef": "Self-guided products (audio guides, GPS app tours, scavenger hunts) scale without guide labor and have no fixed departure, so they are often freesale with open or long-dated validity rather than fixed timeslots. They blur the line between an attraction ticket and a guided tour and have grown with smartphone delivery.",
+      "longDef_ko": "셀프 가이드 상품(오디오 가이드·GPS 앱 투어·보물찾기)은 가이드 인건비 없이 확장 가능하고 고정 출발이 없어, 고정 타임슬롯보다 오픈/장기 유효의 프리세일로 판매되는 경우가 많다. 어트랙션 티켓과 가이드 투어의 경계를 흐리며 스마트폰 전달과 함께 성장했다.",
+      "aliases": [
+        "Audio Guide",
+        "Self-Guided Experience",
+        "App-Guided Tour"
+      ],
+      "relationships": [
+        {
+          "type": "broader",
+          "targetTerm": "Activity",
+          "targetId": "activity"
+        },
+        {
+          "type": "contrasts",
+          "targetTerm": "Guided Tour",
+          "targetId": "guided-tour"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Guided Tour",
+          "explanation": "A self-guided tour gives the traveler materials to explore alone with no departure time; a guided tour is led by a guide at a fixed start with capacity limits.",
+          "explanation_ko": "셀프 가이드 투어는 출발 시각 없이 혼자 둘러볼 자료를 제공하고, 가이드 투어는 정해진 출발 시각과 정원 제한 아래 가이드가 인솔한다.",
+          "targetId": "guided-tour"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Arival — Self-guided and app-based experiences",
+          "org": "Arival",
+          "version": "",
+          "section": "",
+          "url": "https://arival.travel/",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 26v-2a14 14 0 0 1 28 0v2\"/><rect x=\"8\" y=\"26\" width=\"7\" height=\"12\" rx=\"2\"/><rect x=\"33\" y=\"26\" width=\"7\" height=\"12\" rx=\"2\"/><path d=\"M36 38v2a5 5 0 0 1-5 5h-5\"/></svg>",
+      "term": "Self-Guided Tour",
+      "definition": "An experience the traveler completes independently using provided materials — an audio guide, app, map, or printed route — without a live guide.",
+      "lastReviewed": "2026-06-24"
+    },
+    {
       "id": "service-type-code",
       "vertical": "common",
       "category": "codes",
@@ -34217,6 +35338,48 @@
       "term": "Slot",
       "definition": "A permission allocated to an airline to operate an aircraft arrival or departure at a specific date and time at a capacity-constrained (coordinated) airport. Slots are required to schedule flights at congested airports and are administered under coordination rules such as the Worldwide Airport Slot Guidelines (WASG).",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "small-group-tour",
+      "vertical": "tours",
+      "category": "tour-product",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "소그룹 투어(Small-Group Tour)",
+      "definition_ko": "최대 인원을 제한한(흔히 8~16명) 공유 액티비티로, 대형 버스 투어보다 친밀한 대안으로 마케팅된다.",
+      "longDef": "Small-group is a widely used product positioning and filter on marketplaces: a guaranteed maximum group size is the core promise, traded off against a higher per-person price than mass-group tours. The cap directly defines the timeslot capacity pool, and \"guaranteed small group\" claims are a recurring content-accuracy and trust issue.",
+      "longDef_ko": "소그룹은 마켓플레이스에서 널리 쓰이는 상품 포지셔닝이자 필터다. 보장된 최대 그룹 규모가 핵심 약속이며, 대규모 그룹 투어보다 높은 인원당 가격과 맞바꾼다. 그 상한이 타임슬롯 정원 풀을 직접 규정하며, \"소그룹 보장\" 표기는 반복되는 콘텐츠 정확성·신뢰 이슈다.",
+      "aliases": [
+        "Small Group Experience",
+        "Group-Join Tour"
+      ],
+      "relationships": [
+        {
+          "type": "broader",
+          "targetTerm": "Activity",
+          "targetId": "activity"
+        },
+        {
+          "type": "contrasts",
+          "targetTerm": "Private Tour",
+          "targetId": "private-tour"
+        }
+      ],
+      "sources": [
+        {
+          "name": "GetYourGuide — Small-group tours",
+          "org": "GetYourGuide",
+          "version": "",
+          "section": "",
+          "url": "https://www.getyourguide.com/",
+          "tier": "encyclopedia"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"18\" cy=\"16\" r=\"5\"/><circle cx=\"32\" cy=\"16\" r=\"5\"/><path d=\"M8 38c0-6 4.5-10 10-10s10 4 10 10M28 30c1.5-1.2 3.5-2 6-2 5.5 0 10 4 10 10\"/></svg>",
+      "term": "Small-Group Tour",
+      "definition": "A shared activity with a capped maximum headcount (often ~8–16) marketed as a more personal alternative to large coach tours.",
+      "lastReviewed": "2026-06-24",
+      "distinctions": []
     },
     {
       "id": "spa-special-prorate-agreement",
@@ -37112,6 +38275,56 @@
       "lastReviewed": "2026-06-18"
     },
     {
+      "id": "tour-director",
+      "vertical": "tours",
+      "category": "tour-ops",
+      "conceptType": "role",
+      "status": "active",
+      "term_ko": "투어 디렉터(Tour Director)",
+      "definition_ko": "다일정 그룹 투어를 처음부터 끝까지 동행하며 물류·일정·고객 경험을 총괄하는 사람으로, 현지 명소 가이드와는 구별된다.",
+      "longDef": "On packaged group tours the tour director (or tour manager) travels with the group throughout, handling check-ins, transport, timing, problem resolution and group cohesion, while engaging local guides for specific sites. The role is distinct from a single-activity guide and is central to GIT delivery; tour-conductor credits in other verticals reference this function.",
+      "longDef_ko": "패키지 그룹 투어에서 투어 디렉터(투어 매니저)는 전 일정 동안 그룹과 함께 이동하며 체크인·교통·시간 관리·문제 해결·그룹 결속을 담당하고, 특정 명소에는 현지 가이드를 섭외한다. 단일 액티비티 가이드와 구별되는 역할로 GIT 운영의 핵심이며, 다른 버티컬의 투어 컨덕터 크레딧이 이 기능을 가리킨다.",
+      "aliases": [
+        "Tour Manager",
+        "Tour Leader",
+        "Tour Escort"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Guided Tour",
+          "targetId": "guided-tour"
+        },
+        {
+          "type": "related",
+          "targetTerm": "GIT",
+          "targetId": "git-group-inclusive-tour"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Guided Tour",
+          "explanation": "A guided tour is the product (a led experience); the tour director is the role of the person leading and managing a multi-day group throughout the trip.",
+          "explanation_ko": "가이드 투어는 상품(인솔되는 체험)이고, 투어 디렉터는 다일정 그룹을 전 여정 동안 인솔·관리하는 사람의 역할이다.",
+          "targetId": "guided-tour"
+        }
+      ],
+      "sources": [
+        {
+          "name": "IATM / NTA — Tour director vs guide",
+          "org": "National Tour Association",
+          "version": "",
+          "section": "",
+          "url": "https://ntaonline.com/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><line x1=\"14\" y1=\"6\" x2=\"14\" y2=\"42\"/><path d=\"M14 9h20l-4 6 4 6H14z\"/></svg>",
+      "term": "Tour Director",
+      "definition": "The person who accompanies and manages a multi-day group tour end to end — logistics, schedule, and guest experience — as distinct from a local site guide.",
+      "lastReviewed": "2026-06-24"
+    },
+    {
       "id": "transfer-partner",
       "vertical": "common",
       "category": "customer",
@@ -38957,6 +40170,61 @@
       "lastReviewed": "2026-06-18"
     },
     {
+      "id": "virtual-queue",
+      "vertical": "tours",
+      "category": "tour-product",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "가상 대기열(Virtual Queue)",
+      "definition_ko": "명소 게스트가 물리적으로 줄 서지 않고 디지털로 대기 순번을 잡아 지정된 시각에 돌아오게 하는 시스템이다.",
+      "longDef": "Virtual queuing — popularized by theme parks (e.g. Disney's Genie+/Lightning Lane, Universal's systems) — converts physical waiting into timed return windows, and is increasingly a paid, distributable product feature. It is related to but distinct from skip-the-line: the guest still has an assigned wait, just managed digitally and spread across the day.",
+      "longDef_ko": "가상 대기열은 테마파크(예: 디즈니 Genie+/Lightning Lane, 유니버설의 시스템)에서 대중화됐으며, 물리적 대기를 지정 복귀 시간대로 전환한다. 점차 유료·유통 가능한 상품 특성이 되고 있다. 스킵더라인과 관련되지만 구별된다. 게스트는 여전히 배정된 대기를 갖되 디지털로 관리되고 하루에 걸쳐 분산된다.",
+      "aliases": [
+        "Virtual Line",
+        "Lightning Lane",
+        "Ride Reservation"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Skip-the-Line",
+          "targetId": "skip-the-line"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Timeslot",
+          "targetId": "timeslot"
+        },
+        {
+          "type": "broader",
+          "targetTerm": "Attraction Ticket",
+          "targetId": "attraction-ticket"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Skip-the-Line",
+          "explanation": "Skip-the-line grants immediate priority or a dedicated lane on arrival; a virtual queue assigns a later return time so the guest waits remotely rather than at the gate.",
+          "explanation_ko": "스킵더라인은 도착 즉시 우선 입장이나 전용 레인을 주고, 가상 대기열은 나중의 복귀 시각을 배정해 게스트가 게이트가 아니라 원격에서 대기하게 한다.",
+          "targetId": "skip-the-line"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Walt Disney World — Lightning Lane / virtual queue",
+          "org": "Disney",
+          "version": "",
+          "section": "",
+          "url": "https://disneyworld.disney.go.com/",
+          "tier": "encyclopedia"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"24\" r=\"4\"/><circle cx=\"24\" cy=\"24\" r=\"4\"/><circle cx=\"36\" cy=\"24\" r=\"4\"/><path d=\"M16 24h4M28 24h4\"/></svg>",
+      "term": "Virtual Queue",
+      "definition": "A system that lets attraction guests hold a place in line digitally and return at an assigned time, instead of waiting physically in the queue.",
+      "lastReviewed": "2026-06-24"
+    },
+    {
       "id": "void",
       "vertical": "air",
       "category": "air-ticket",
@@ -39629,6 +40897,61 @@
       "term": "Wet Lease",
       "definition": "An aircraft lease in which the lessor provides the aircraft together with crew, maintenance, and insurance (ACMI) and operates it under the lessor's own Air Operator's Certificate (AOC). The lessee pays typically per block hour and uses the capacity for its own flights, but the lessor remains the operating carrier with operational control.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "white-label-booking",
+      "vertical": "tours",
+      "category": "tour-dist",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "화이트라벨 부킹(White-Label Booking)",
+      "definition_ko": "마켓플레이스나 예약 시스템 사업자가 구동하지만 파트너 자체 브랜드로 노출되는 예약 경험으로, 흔히 임베드 위젯이나 스토어프론트 형태다.",
+      "longDef": "White-label lets a hotel, DMO, or media brand sell a curated catalog of experiences on its own site while the underlying provider supplies inventory, booking, payment and support. It differs from affiliate links in that the transaction stays within the partner's branded surface; it is a key B2B2C distribution mechanism in the sector.",
+      "longDef_ko": "화이트라벨은 호텔·DMO·미디어 브랜드가 자사 사이트에서 큐레이션한 익스피리언스 카탈로그를 판매하되, 기반 사업자가 재고·예약·결제·지원을 공급하게 한다. 거래가 파트너의 브랜드 화면 안에서 완결된다는 점에서 어필리에이트 링크와 다르며, 이 부문의 핵심 B2B2C 유통 메커니즘이다.",
+      "aliases": [
+        "White Label",
+        "Booking Widget",
+        "Embedded Booking"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Affiliate Program",
+          "targetId": "affiliate-program"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Experiences Marketplace",
+          "targetId": "experiences-marketplace"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Reseller API",
+          "targetId": "reseller-api"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Affiliate Program",
+          "explanation": "White-label keeps the whole branded transaction on the partner's own surface; an affiliate program refers the traveler out to the marketplace, which owns the checkout.",
+          "explanation_ko": "화이트라벨은 브랜드 거래 전체를 파트너 자체 화면에 두고, 어필리에이트 프로그램은 여행자를 마켓플레이스로 내보내 결제를 그쪽이 소유한다.",
+          "targetId": "affiliate-program"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Bokun — White-label & booking widgets",
+          "org": "Bokun (Tripadvisor)",
+          "version": "",
+          "section": "",
+          "url": "https://www.bokun.io/",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"10\" width=\"32\" height=\"28\" rx=\"2\"/><line x1=\"8\" y1=\"18\" x2=\"40\" y2=\"18\"/><circle cx=\"13\" cy=\"14\" r=\"1\"/><circle cx=\"17\" cy=\"14\" r=\"1\"/></svg>",
+      "term": "White-Label Booking",
+      "definition": "A booking experience powered by a marketplace or res-tech provider but presented under the partner's own brand, often as an embeddable widget or storefront.",
+      "lastReviewed": "2026-06-24"
     },
     {
       "id": "worldtracer",

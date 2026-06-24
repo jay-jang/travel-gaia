@@ -29,6 +29,7 @@ const CATEGORIES = [
   { id:'sustainability', short:'지속가능성·배출', title:'Sustainability & Emissions',           color:'#66a80f', desc:'SAF·CORSIA·탄소배출 산정 등 지속가능 항공.', desc_en:'SAF, CORSIA, emissions accounting — sustainable travel.' },
   { id:'tour-product', short:'투어·액티비티 상품', title:'Tours & Activities — Products',         color:'#e8590c', desc:'액티비티·어트랙션 티켓·바우처 등 목적지 체험 상품.', desc_en:'Activities, attraction tickets, vouchers — in-destination experience products.' },
   { id:'tour-dist',    short:'투어 유통·예약',   title:'Tours & Activities — Distribution',        color:'#f08c00', desc:'마켓플레이스·예약 시스템·커넥티비티 등 체험 상품 유통.', desc_en:'Marketplaces, res-tech & connectivity — experience distribution.' },
+  { id:'tour-ops',     short:'투어 운영·트레이드', title:'Tours & Activities — Operations & Trade',  color:'#d9480f', desc:'DMC·랜드사·매니페스트·요율 등 체험 상품의 운영과 거래.', desc_en:'DMCs, land operators, manifests & tariffs — experience operations & trade.' },
 ];
 const catIds = new Set(CATEGORIES.map(c => c.id));
 
@@ -46,7 +47,7 @@ const CAT_VERTICAL = {
   'hotel-rate':'lodging','hotel-dist':'lodging',
   'car':'ground','rail':'ground',
   'cruise':'cruise',
-  'tour-product':'tours','tour-dist':'tours',
+  'tour-product':'tours','tour-dist':'tours','tour-ops':'tours',
   'pay':'common','codes':'common','customer':'common','standards':'common','insurance':'common','disruption':'common','sustainability':'common',
 };
 const vertOf = catId => CAT_VERTICAL[catId] || 'common';
