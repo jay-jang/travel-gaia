@@ -27,6 +27,8 @@ const CATEGORIES = [
   { id:'insurance',   short:'여행보험·보호',   title:'Travel Insurance & Protection',           color:'#2b8a3e', desc:'여행자보험·CFAR·취소보호 등 보호 상품.', desc_en:'Travel insurance, CFAR, cancellation protection — ancillary protection.' },
   { id:'disruption',  short:'운항중단·승객권리', title:'Disruption & Passenger Rights',         color:'#c92a2a', desc:'EU261·DOT 환불규정·초과예약 보상 등 승객 권리.', desc_en:'EU261, DOT refund rules, denied-boarding compensation — passenger rights.' },
   { id:'sustainability', short:'지속가능성·배출', title:'Sustainability & Emissions',           color:'#66a80f', desc:'SAF·CORSIA·탄소배출 산정 등 지속가능 항공.', desc_en:'SAF, CORSIA, emissions accounting — sustainable travel.' },
+  { id:'tour-product', short:'투어·액티비티 상품', title:'Tours & Activities — Products',         color:'#e8590c', desc:'액티비티·어트랙션 티켓·바우처 등 목적지 체험 상품.', desc_en:'Activities, attraction tickets, vouchers — in-destination experience products.' },
+  { id:'tour-dist',    short:'투어 유통·예약',   title:'Tours & Activities — Distribution',        color:'#f08c00', desc:'마켓플레이스·예약 시스템·커넥티비티 등 체험 상품 유통.', desc_en:'Marketplaces, res-tech & connectivity — experience distribution.' },
 ];
 const catIds = new Set(CATEGORIES.map(c => c.id));
 
@@ -36,6 +38,7 @@ const VERTICALS = [
   { id:'lodging', short:'숙박',      title:'Lodging',          color:'#c0623d', desc:'호텔 재고·요금·유통.', desc_en:'Hotel inventory, rates & distribution.' },
   { id:'ground',  short:'지상교통',  title:'Ground Transport', color:'#5f3dc4', desc:'렌터카·철도·복합운송.', desc_en:'Car rental, rail & multimodal ground transport.' },
   { id:'cruise',  short:'크루즈',    title:'Cruise',           color:'#1098ad', desc:'크루즈 상품·선실·해상 유통.', desc_en:'Cruise products, cabins & sea-travel distribution.' },
+  { id:'tours',   short:'투어·액티비티', title:'Tours & Activities', color:'#e8590c', desc:'액티비티·어트랙션·체험 상품의 유통·예약·이용.', desc_en:'Activities, attractions & experiences — distribution, booking & redemption.' },
   { id:'common',  short:'산업 공통', title:'Cross-Industry',   color:'#444c5e', desc:'결제·식별자·표준·고객·규제 등 공통.', desc_en:'Payments, identifiers, standards, customer & regulation — shared.' },
 ];
 const CAT_VERTICAL = {
@@ -43,6 +46,7 @@ const CAT_VERTICAL = {
   'hotel-rate':'lodging','hotel-dist':'lodging',
   'car':'ground','rail':'ground',
   'cruise':'cruise',
+  'tour-product':'tours','tour-dist':'tours',
   'pay':'common','codes':'common','customer':'common','standards':'common','insurance':'common','disruption':'common','sustainability':'common',
 };
 const vertOf = catId => CAT_VERTICAL[catId] || 'common';

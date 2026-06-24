@@ -438,9 +438,9 @@ await runAsyncTest('Distribution Flow: stages, term chips & vertical switching',
   window.location.hash = '#/classroom';
   await new Promise(resolve => setTimeout(resolve, 200));
 
-  // FLOWS data must be exposed and cover the 4 product verticals
+  // FLOWS data must be exposed and cover the 5 product verticals
   if (!window.FLOWS) throw new Error('window.FLOWS is not defined.');
-  for (const v of ['air', 'lodging', 'ground', 'cruise']) {
+  for (const v of ['air', 'lodging', 'ground', 'cruise', 'tours']) {
     if (!window.FLOWS[v]) throw new Error(`FLOWS is missing vertical "${v}".`);
   }
 
@@ -459,9 +459,9 @@ await runAsyncTest('Distribution Flow: stages, term chips & vertical switching',
     throw new Error('Expected body.flow-full to be set on the distribution-flow page.');
   }
 
-  // 4 vertical tabs
+  // 5 vertical tabs (air, lodging, ground, cruise, tours)
   const vtabs = document.querySelectorAll('#flowVerts .flow-vtab');
-  if (vtabs.length !== 4) throw new Error(`Expected 4 vertical tabs, found: ${vtabs.length}`);
+  if (vtabs.length !== 5) throw new Error(`Expected 5 vertical tabs, found: ${vtabs.length}`);
 
   // 6 lifecycle stages on the default (air) board
   const stages = document.querySelectorAll('#flowBoard .flow-stage');

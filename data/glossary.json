@@ -3,9 +3,9 @@
     "name": "Travel Gaia",
     "tagline": "여행 산업 용어 백과사전",
     "generatedAt": "2026-06-24",
-    "entryCount": 407,
-    "categoryCount": 16,
-    "verticalCount": 5
+    "entryCount": 423,
+    "categoryCount": 18,
+    "verticalCount": 6
   },
   "verticals": [
     {
@@ -39,6 +39,14 @@
       "color": "#1098ad",
       "desc": "크루즈 상품·선실·해상 유통.",
       "desc_en": "Cruise products, cabins & sea-travel distribution."
+    },
+    {
+      "id": "tours",
+      "short": "투어·액티비티",
+      "title": "Tours & Activities",
+      "color": "#e8590c",
+      "desc": "액티비티·어트랙션·체험 상품의 유통·예약·이용.",
+      "desc_en": "Activities, attractions & experiences — distribution, booking & redemption."
     },
     {
       "id": "common",
@@ -193,6 +201,24 @@
       "desc": "SAF·CORSIA·탄소배출 산정 등 지속가능 항공.",
       "desc_en": "SAF, CORSIA, emissions accounting — sustainable travel.",
       "vertical": "common"
+    },
+    {
+      "id": "tour-product",
+      "short": "투어·액티비티 상품",
+      "title": "Tours & Activities — Products",
+      "color": "#e8590c",
+      "desc": "액티비티·어트랙션 티켓·바우처 등 목적지 체험 상품.",
+      "desc_en": "Activities, attraction tickets, vouchers — in-destination experience products.",
+      "vertical": "tours"
+    },
+    {
+      "id": "tour-dist",
+      "short": "투어 유통·예약",
+      "title": "Tours & Activities — Distribution",
+      "color": "#f08c00",
+      "desc": "마켓플레이스·예약 시스템·커넥티비티 등 체험 상품 유통.",
+      "desc_en": "Marketplaces, res-tech & connectivity — experience distribution.",
+      "vertical": "tours"
     }
   ],
   "entries": [
@@ -604,6 +630,137 @@
       "term": "Action Code",
       "definition": "An Action Code is the two-letter code a reservation system sends to a carrier to request action on a segment — for example NN (need/sell), SS (sell, segment confirmed at sell), DK (direct sell), HN (have requested), or LL (waitlist). It governs how a segment is requested in AIRIMP/GDS messaging, as distinct from the holding status the carrier later returns.",
       "lastReviewed": "2026-06-18"
+    },
+    {
+      "id": "activity",
+      "vertical": "tours",
+      "category": "tour-product",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "액티비티(Activity)",
+      "definition_ko": "교통·숙박과 별개로 여행자에게 판매되는 예약 가능한 목적지 내 상품으로, 투어·클래스·어트랙션 입장·체험 등을 가리킨다.",
+      "longDef": "\"Activities\" (also \"experiences\" or \"tours & activities\") form the third major travel category after flights and hotels. Each activity is a discrete product with a date and often a timeslot, capacity, per-person price tiers (e.g. adult/child), a meeting or pickup point, duration, and a cancellation policy. They range from guided city tours and museum admissions to cooking classes, adventure sports, and day trips, and are distributed both directly by operators and through experiences marketplaces.",
+      "longDef_ko": "\"액티비티\"(또는 \"익스피리언스\", \"투어·액티비티\")는 항공·호텔에 이은 여행의 세 번째 주요 카테고리다. 각 액티비티는 날짜와 (대개) 시간대, 정원, 인원별 가격(예: 성인/아동), 미팅·픽업 지점, 소요시간, 취소 정책을 가진 개별 상품이다. 가이드 시티투어·박물관 입장부터 쿠킹 클래스·어드벤처 스포츠·당일 투어까지 다양하며, 운영사 직접 판매와 익스피리언스 마켓플레이스를 통한 유통이 모두 이뤄진다.",
+      "aliases": [
+        "Experience",
+        "Tour & Activity",
+        "Things to Do",
+        "In-destination Experience"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Attraction Ticket",
+          "targetId": "attraction-ticket"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Guided Tour",
+          "targetId": "guided-tour"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Ancillary Service",
+          "targetId": "ancillary-service"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Shore Excursion",
+          "targetId": "shore-excursion"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Shore Excursion",
+          "explanation": "A shore excursion is an activity packaged and sold against a cruise port of call (often with guaranteed return to the ship); an activity is the same kind of in-destination experience sold independently of any cruise.",
+          "explanation_ko": "기항지 투어(shore excursion)는 크루즈 기항지에 묶여 판매되는 액티비티(대개 선박 복귀 보장 포함)이고, 액티비티는 크루즈와 무관하게 독립적으로 판매되는 같은 유형의 목적지 체험이다.",
+          "targetId": "shore-excursion"
+        },
+        {
+          "targetTerm": "Ancillary Service",
+          "explanation": "An airline ancillary is an extra attached to a flight (bag, seat, meal); an activity is a standalone destination product not tied to a transport segment.",
+          "explanation_ko": "항공 부가서비스는 항공편에 붙는 추가 상품(수하물·좌석·기내식)이고, 액티비티는 운송 구간에 종속되지 않는 독립형 목적지 상품이다.",
+          "targetId": "ancillary-service"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Arival — Tours, Activities & Attractions industry research",
+          "org": "Arival",
+          "version": "",
+          "section": "",
+          "url": "https://arival.travel/",
+          "tier": "secondary"
+        },
+        {
+          "name": "What are tours, activities and experiences?",
+          "org": "GetYourGuide",
+          "version": "",
+          "section": "",
+          "url": "https://www.getyourguide.com/",
+          "tier": "encyclopedia"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><line x1=\"14\" y1=\"6\" x2=\"14\" y2=\"42\"/><path d=\"M14 9h20l-4 6 4 6H14z\"/></svg>",
+      "term": "Activity",
+      "definition": "A bookable in-destination product — a tour, class, attraction admission, or experience — sold to travelers separately from transport and accommodation.",
+      "lastReviewed": "2026-06-24"
+    },
+    {
+      "id": "activity-operator",
+      "vertical": "tours",
+      "category": "tour-dist",
+      "conceptType": "role",
+      "status": "active",
+      "term_ko": "액티비티 운영사(Activity Operator)",
+      "definition_ko": "액티비티를 소유·운영하고 정원을 보유한 목적지 내 사업자로, 그 재고가 여행자에게 유통되는 공급자다.",
+      "longDef": "The operator is the supply side of the experiences value chain: it defines products, options, capacity, pricing and policies, delivers the service on the ground, and is liable for it. Operators range from single-guide micro-businesses to large attraction venues. They sell directly and/or expose inventory to marketplaces, and their adoption of reservation technology is the key enabler of real-time distribution.",
+      "longDef_ko": "운영사는 익스피리언스 가치사슬의 공급 측이다. 상품·옵션·정원·가격·정책을 정의하고, 현장에서 서비스를 제공하며, 그에 대한 책임을 진다. 1인 가이드 소상공인부터 대형 명소 시설까지 다양하다. 직접 판매하거나 재고를 마켓플레이스에 노출하며, 이들의 예약 시스템 도입이 실시간 유통을 가능케 하는 핵심 동인이다.",
+      "aliases": [
+        "Experience Operator",
+        "Tour Operator (in-destination)",
+        "Supplier",
+        "Activity Provider"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Reservation Technology",
+          "targetId": "reservation-technology"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Experiences Marketplace",
+          "targetId": "experiences-marketplace"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Activity",
+          "targetId": "activity"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Experiences Marketplace",
+          "explanation": "An operator owns and runs the inventory; an experiences marketplace resells that inventory to travelers and does not deliver the service.",
+          "explanation_ko": "운영사는 재고를 소유·운영하고, 익스피리언스 마켓플레이스는 그 재고를 여행자에게 재판매할 뿐 서비스를 직접 제공하지 않는다.",
+          "targetId": "experiences-marketplace"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Arival — The in-destination operator",
+          "org": "Arival",
+          "version": "",
+          "section": "",
+          "url": "https://arival.travel/",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"13\" r=\"5\"/><path d=\"M14 40c0-7 4.5-12 10-12s10 5 10 12\"/><path d=\"M30 22l8-4\"/></svg>",
+      "term": "Activity Operator",
+      "definition": "The in-destination business that owns, runs, and holds the capacity for an activity — the supplier whose inventory is distributed to travelers.",
+      "lastReviewed": "2026-06-24"
     },
     {
       "id": "add-on",
@@ -3520,6 +3677,74 @@
       "term": "ATPCO",
       "definition": "ATPCO (Airline Tariff Publishing Company) is the airline-owned organization that collects, processes, and distributes the world's airfares, fare rules, and related pricing data to airlines, GDSs, and other industry systems. Its data underpins automated pricing and fare display across most distribution channels.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "attraction-ticket",
+      "vertical": "tours",
+      "category": "tour-product",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "어트랙션 티켓(Attraction Ticket)",
+      "definition_ko": "박물관·테마파크·랜드마크·시설에 대한 사전 예약 입장권으로, 보통 특정 날짜나 시간대로 판매되고 게이트에서 바코드/QR로 사용 처리된다.",
+      "longDef": "Attraction tickets differ from guided activities in that the product is admission itself rather than a led experience. Many high-demand attractions use timed entry (timeslots) to manage crowding, so the ticket carries both a date and an entry window. Distribution increasingly relies on direct API connectivity to the attraction's ticketing system, and tickets are commonly fulfilled as mobile tickets scanned at turnstiles.",
+      "longDef_ko": "어트랙션 티켓은 가이드 동반 체험이 아니라 \"입장 그 자체\"가 상품이라는 점에서 가이드 액티비티와 다르다. 수요가 많은 명소는 혼잡 관리를 위해 지정시간 입장(타임슬롯)을 운영하므로 티켓에 날짜와 입장 시간대가 함께 담긴다. 유통은 점차 명소 발권 시스템과의 직접 API 연동에 의존하며, 티켓은 보통 개찰구에서 스캔되는 모바일 티켓으로 이행된다.",
+      "aliases": [
+        "Admission Ticket",
+        "Entry Ticket",
+        "Attraction Admission"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Activity",
+          "targetId": "activity"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Timeslot",
+          "targetId": "timeslot"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Skip-the-Line",
+          "targetId": "skip-the-line"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Mobile Ticket",
+          "targetId": "mobile-ticket"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Voucher",
+          "explanation": "An attraction ticket is the right of admission itself; a voucher is the proof-of-booking document the traveler presents to obtain or redeem that right.",
+          "explanation_ko": "어트랙션 티켓은 입장 권리 자체이고, 바우처는 그 권리를 받거나 사용 처리하기 위해 여행자가 제시하는 예약 증빙 문서다.",
+          "targetId": "voucher"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Tiqets for Partners — attraction ticketing",
+          "org": "Tiqets",
+          "version": "",
+          "section": "",
+          "url": "https://www.tiqets.com/en/partners/",
+          "tier": "vendor-doc"
+        },
+        {
+          "name": "Viator Partner Programme",
+          "org": "Viator (Tripadvisor)",
+          "version": "",
+          "section": "",
+          "url": "https://www.viator.com/partner/home",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 16a3 3 0 0 1 3-3h26a3 3 0 0 1 3 3v4a3 3 0 0 0 0 8v4a3 3 0 0 1-3 3H11a3 3 0 0 1-3-3v-4a3 3 0 0 0 0-8z\"/><line x1=\"29\" y1=\"13\" x2=\"29\" y2=\"35\" stroke-dasharray=\"2 3\"/></svg>",
+      "term": "Attraction Ticket",
+      "definition": "A pre-booked admission to a museum, theme park, landmark, or venue, typically sold for a specific date or timeslot and redeemed by barcode/QR at the gate.",
+      "lastReviewed": "2026-06-24"
     },
     {
       "id": "authorization-hold",
@@ -8075,6 +8300,54 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "connectivity-hub",
+      "vertical": "tours",
+      "category": "tour-dist",
+      "conceptType": "system",
+      "status": "active",
+      "term_ko": "커넥티비티 허브(Connectivity Hub)",
+      "definition_ko": "다수 액티비티 운영사 시스템과 다수 리셀러를 단일 연동으로 연결하는 플랫폼으로, 호텔 채널 매니저에 대응하는 익스피리언스 개념이다.",
+      "longDef": "Connectivity hubs (e.g. Bokun, Rezgo, Ventrata, and aggregation layers within res-tech) solve the many-to-many integration problem: an operator integrates once and reaches multiple marketplaces, while a marketplace gains access to large pools of inventory without building per-operator connections. They normalize availability, pricing and redemption across heterogeneous operator systems and propagate live availability outward, exactly as a channel manager does for hotel ARI.",
+      "longDef_ko": "커넥티비티 허브(예: Bokun·Rezgo·Ventrata 및 res-tech 내 집계 계층)는 다대다 연동 문제를 해결한다. 운영사는 한 번만 연동하면 여러 마켓플레이스에 도달하고, 마켓플레이스는 운영사별 연결을 따로 구축하지 않고도 대규모 재고에 접근한다. 이질적인 운영사 시스템 전반에서 가용성·가격·사용처리를 정규화하고 실시간 가용성을 외부로 전파하며, 이는 호텔 ARI에 대한 채널 매니저의 역할과 같다.",
+      "aliases": [
+        "Channel Manager (Activities)",
+        "Aggregation Platform (Activities)",
+        "Connectivity Platform"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Reservation Technology",
+          "targetId": "reservation-technology"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Experiences Marketplace",
+          "targetId": "experiences-marketplace"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Channel Manager",
+          "targetId": "channel-manager"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Bokun — Connectivity marketplace",
+          "org": "Bokun (Tripadvisor)",
+          "version": "",
+          "section": "",
+          "url": "https://www.bokun.io/",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"5\"/><circle cx=\"10\" cy=\"12\" r=\"3\"/><circle cx=\"38\" cy=\"12\" r=\"3\"/><circle cx=\"10\" cy=\"36\" r=\"3\"/><circle cx=\"38\" cy=\"36\" r=\"3\"/><path d=\"M20 21 12 14M28 21l8-7M20 27l-8 7M28 27l8 7\"/></svg>",
+      "term": "Connectivity Hub",
+      "definition": "A platform that connects many activity operators' systems to many resellers through a single integration — the experiences analog of a hotel channel manager.",
+      "lastReviewed": "2026-06-24",
+      "distinctions": []
+    },
+    {
       "id": "connectivity-partner-program",
       "vertical": "lodging",
       "category": "hotel-dist",
@@ -12564,6 +12837,70 @@
       "lastReviewed": "2026-06-18"
     },
     {
+      "id": "experiences-marketplace",
+      "vertical": "tours",
+      "category": "tour-dist",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "익스피리언스 마켓플레이스(Experiences Marketplace)",
+      "definition_ko": "액티비티와 어트랙션 티켓을 모아 여행자에게 재판매하는 온라인 마켓플레이스로, 호텔·항공 OTA에 대응하는 익스피리언스 채널이다.",
+      "longDef": "Marketplaces such as Viator, GetYourGuide, Klook and Tiqets aggregate operator inventory, standardize content, and provide search, booking, payment, mobile tickets and customer service to travelers, typically as merchant of record. They monetize through a marketplace commission. Their reach depends on connectivity: directly via operator APIs or indirectly through connectivity hubs that aggregate many operators.",
+      "longDef_ko": "Viator·GetYourGuide·Klook·Tiqets 같은 마켓플레이스는 운영사 재고를 모으고 콘텐츠를 표준화하며, 여행자에게 검색·예약·결제·모바일 티켓·고객지원을 제공한다(대개 merchant of record로서). 수익은 마켓플레이스 커미션으로 낸다. 이들의 도달 범위는 연동에 좌우되며, 운영사 API로 직접 연결하거나 다수 운영사를 묶는 커넥티비티 허브를 통해 간접 연결한다.",
+      "aliases": [
+        "Activities OTA",
+        "Experiences OTA",
+        "Tours & Activities Marketplace",
+        "OTA for Experiences"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Activity",
+          "targetId": "activity"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Marketplace Commission",
+          "targetId": "marketplace-commission"
+        },
+        {
+          "type": "related",
+          "targetTerm": "OTA (Online Travel Agency)",
+          "targetId": "ota-online-travel-agency"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Activity Operator",
+          "explanation": "A marketplace resells inventory and owns the traveler relationship and (often) payment; the operator owns the inventory and delivers the service on the ground.",
+          "explanation_ko": "마켓플레이스는 재고를 재판매하고 여행자 관계와 (대개) 결제를 보유하며, 운영사는 재고를 소유하고 현장에서 서비스를 제공한다.",
+          "targetId": "activity-operator"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Viator Partner Programme",
+          "org": "Viator (Tripadvisor)",
+          "version": "",
+          "section": "",
+          "url": "https://www.viator.com/partner/home",
+          "tier": "vendor-doc"
+        },
+        {
+          "name": "Phocuswright — Tours & Activities market",
+          "org": "Phocuswright",
+          "version": "",
+          "section": "",
+          "url": "https://www.phocuswright.com/",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 16h28l-2 24H12z\"/><path d=\"M18 16a6 6 0 0 1 12 0\"/></svg>",
+      "term": "Experiences Marketplace",
+      "definition": "An online marketplace that aggregates and resells activities and attraction tickets to travelers, the experiences-sector analog of a hotel/air OTA.",
+      "lastReviewed": "2026-06-24"
+    },
+    {
       "id": "extraordinary-circumstances",
       "vertical": "common",
       "category": "disruption",
@@ -15753,6 +16090,48 @@
       "lastReviewed": "2026-06-18"
     },
     {
+      "id": "guided-tour",
+      "vertical": "tours",
+      "category": "tour-product",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "가이드 투어(Guided Tour)",
+      "definition_ko": "정해진 경로나 일정을 따라 가이드가 인솔하는 액티비티로, 자유(셀프 가이드)·입장권 전용 상품과 구별된다.",
+      "longDef": "A guided tour bundles access, narration/interpretation, and logistics under a guide for a fixed group and start time, and is therefore strongly capacity- and timeslot-constrained. Variants include small-group, private, and group-join tours, each with distinct price tiers. The guide and meeting point are core operational attributes, and guided tours are the archetypal product run on operator reservation technology.",
+      "longDef_ko": "가이드 투어는 정해진 그룹과 출발 시각에 맞춰 입장·해설·이동 등을 가이드 인솔 아래 묶은 상품으로, 그만큼 정원·시간대 제약이 크다. 소그룹·프라이빗·그룹조인 등 변형이 있고 각기 다른 가격대를 갖는다. 가이드와 미팅 지점이 핵심 운영 속성이며, 운영사 예약 시스템에서 운용되는 대표적인 상품 유형이다.",
+      "aliases": [
+        "Escorted Tour",
+        "Led Tour"
+      ],
+      "relationships": [
+        {
+          "type": "broader",
+          "targetTerm": "Activity",
+          "targetId": "activity"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Meeting Point",
+          "targetId": "meeting-point"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Arival — Guided tours and experiences",
+          "org": "Arival",
+          "version": "",
+          "section": "",
+          "url": "https://arival.travel/",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"13\" r=\"5\"/><path d=\"M14 40c0-7 4.5-12 10-12s10 5 10 12\"/><path d=\"M30 22l8-4\"/></svg>",
+      "term": "Guided Tour",
+      "definition": "An activity led by a guide along a set route or itinerary, contrasted with self-guided or admission-only products.",
+      "lastReviewed": "2026-06-24",
+      "distinctions": []
+    },
+    {
       "id": "hedna",
       "vertical": "lodging",
       "category": "hotel-dist",
@@ -17368,6 +17747,60 @@
       "term": "ICAO Code",
       "definition": "An umbrella term for codes assigned by the International Civil Aviation Organization (ICAO), principally the 4-letter location indicator for airports/aerodromes and the 3-letter airline designator. ICAO codes are used primarily for air traffic control, flight planning, and operational communications.",
       "lastReviewed": "2026-06-15"
+    },
+    {
+      "id": "instant-confirmation",
+      "vertical": "tours",
+      "category": "tour-dist",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "즉시 확정(Instant Confirmation)",
+      "definition_ko": "가용성이 실시간으로 연동되어 구매 즉시 여행자에게 예약이 확정되는 예약 방식이다.",
+      "longDef": "Instant confirmation requires the reseller to read true real-time availability from the operator's reservation system and to write the booking back atomically, so the customer receives a confirmed mobile ticket at once. It is the dominant expectation in modern experiences distribution because it lifts conversion and removes manual work; achieving it depends on API connectivity and accurate per-timeslot availability. The alternative is on-request booking.",
+      "longDef_ko": "즉시 확정은 리셀러가 운영사 예약 시스템에서 진짜 실시간 가용성을 읽고 예약을 원자적으로 기록해, 고객이 즉시 확정된 모바일 티켓을 받도록 한다. 전환율을 높이고 수작업을 없애므로 현대 익스피리언스 유통의 지배적 기대치이며, 구현은 API 연동과 정확한 타임슬롯별 가용성에 달려 있다. 대안은 요청형 예약(on-request)이다.",
+      "aliases": [
+        "Instant Booking",
+        "Live Availability Booking"
+      ],
+      "relationships": [
+        {
+          "type": "contrasts",
+          "targetTerm": "On-Request Booking",
+          "targetId": "on-request-booking"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Reseller API",
+          "targetId": "reseller-api"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Timeslot",
+          "targetId": "timeslot"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "On-Request Booking",
+          "explanation": "Instant confirmation finalizes the sale immediately against live inventory; on-request booking holds the sale pending the operator's manual confirmation.",
+          "explanation_ko": "즉시 확정은 실시간 재고를 상대로 판매를 즉시 확정하고, 요청형 예약은 운영사의 수동 확정 전까지 판매를 보류한다.",
+          "targetId": "on-request-booking"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Bokun — Instant vs request booking",
+          "org": "Bokun (Tripadvisor)",
+          "version": "",
+          "section": "",
+          "url": "https://www.bokun.io/",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"16\"/><path d=\"M16 24l6 6 11-12\"/></svg>",
+      "term": "Instant Confirmation",
+      "definition": "A booking model in which availability is live and the booking is confirmed to the traveler immediately at purchase.",
+      "lastReviewed": "2026-06-24"
     },
     {
       "id": "integrated-reservation-ticket-irt",
@@ -19902,6 +20335,61 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "marketplace-commission",
+      "vertical": "tours",
+      "category": "tour-dist",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "마켓플레이스 커미션(Marketplace Commission)",
+      "definition_ko": "마켓플레이스·리셀러가 액티비티를 유통한 대가로 가져가는 수수료로, 보통 소매가의 일정 비율(또는 운영사 넷 요금 대비 마진)이다.",
+      "longDef": "Marketplace commission is the core distribution economics of the experiences sector and commonly runs materially higher than air or hotel intermediary fees. It is structured either as a commission off the published retail price or as a markup the reseller adds over a net rate supplied by the operator. The level — and whether the marketplace is merchant of record — shapes operator margins and their direct-vs-marketplace channel strategy.",
+      "longDef_ko": "마켓플레이스 커미션은 익스피리언스 부문의 핵심 유통 경제이며, 항공·호텔 중개 수수료보다 상당히 높은 경우가 많다. 공시 소매가에서 커미션을 떼는 방식이거나, 운영사가 제시한 넷 요금 위에 리셀러가 마진을 얹는 방식으로 구성된다. 그 수준과 마켓플레이스의 merchant of record 여부가 운영사 마진과 직접판매 대 마켓플레이스 채널 전략을 좌우한다.",
+      "aliases": [
+        "Activities Commission",
+        "Distribution Commission (Activities)",
+        "OTA Commission (Experiences)"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Experiences Marketplace",
+          "targetId": "experiences-marketplace"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Net Rate",
+          "targetId": "net-rate"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Merchant of Record",
+          "targetId": "merchant-of-record"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Net Rate",
+          "explanation": "A net rate is the wholesale price the operator gives the reseller to mark up; a marketplace commission is the percentage the marketplace instead deducts from the retail price it displays.",
+          "explanation_ko": "넷 요금은 운영사가 리셀러에게 제공해 마크업하도록 하는 도매가이고, 마켓플레이스 커미션은 마켓플레이스가 표시 소매가에서 떼어가는 비율이다.",
+          "targetId": "net-rate"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Arival — Commissions and the cost of distribution",
+          "org": "Arival",
+          "version": "",
+          "section": "",
+          "url": "https://arival.travel/",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"15\"/><path d=\"M28 18a5 4 0 0 0-10 0c0 6 10 2 10 8a5 4 0 0 1-10 0M24 13v3M24 32v3\"/></svg>",
+      "term": "Marketplace Commission",
+      "definition": "The fee a marketplace or reseller takes for distributing an activity — typically a percentage of the retail price (or the margin over the operator's net rate).",
+      "lastReviewed": "2026-06-24"
+    },
+    {
       "id": "married-segment",
       "vertical": "air",
       "category": "air-ops",
@@ -20471,6 +20959,49 @@
       "term": "Meal Code",
       "definition": "A standardized four-letter IATA code identifying a special or dietary in-flight meal, such as VGML (vegetarian), KSML (kosher), MOML (Muslim), DBML (diabetic), or CHML (child). It is added to a PNR as a Special Service Request (SSR) so the airline can cater the requested meal.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "meeting-point",
+      "vertical": "tours",
+      "category": "tour-product",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "미팅 포인트(Meeting Point)",
+      "definition_ko": "액티비티를 시작하기 위해 게스트가 집결하거나 픽업되는 지정된 장소와 시각이다.",
+      "longDef": "Meeting point (or pickup point) is a mandatory operational attribute of most guided and transport-inclusive activities and a leading cause of no-shows and disputes when communicated poorly. Products specify either a fixed meeting point or hotel/zone pickup with a pickup window, and the data is carried on the voucher. Accurate geocoded meeting-point data is a recurring connectivity and content-quality requirement across marketplaces.",
+      "longDef_ko": "미팅 포인트(픽업 포인트)는 대부분의 가이드·교통 포함 액티비티의 필수 운영 속성이며, 전달이 부실하면 노쇼와 분쟁의 주요 원인이 된다. 상품은 고정 미팅 포인트 또는 호텔/구역 픽업(픽업 시간대 포함)을 지정하고, 해당 정보는 바우처에 실린다. 정확한 지오코딩 미팅 포인트 데이터는 마켓플레이스 전반에서 반복되는 연동·콘텐츠 품질 요건이다.",
+      "aliases": [
+        "Pickup Point",
+        "Departure Point",
+        "Meeting Location"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Guided Tour",
+          "targetId": "guided-tour"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Activity",
+          "targetId": "activity"
+        }
+      ],
+      "sources": [
+        {
+          "name": "GetYourGuide Supplier — Meeting points & pickup",
+          "org": "GetYourGuide",
+          "version": "",
+          "section": "",
+          "url": "https://supplier.getyourguide.support/",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 6c-6 0-10 4-10 10 0 7 10 18 10 18s10-11 10-18c0-6-4-10-10-10z\"/><circle cx=\"24\" cy=\"16\" r=\"3.5\"/></svg>",
+      "term": "Meeting Point",
+      "definition": "The designated place and time where guests assemble — or are picked up — to start an activity.",
+      "lastReviewed": "2026-06-24",
+      "distinctions": []
     },
     {
       "id": "merchant-cancellation-protection",
@@ -21412,6 +21943,54 @@
       "term": "MITA",
       "definition": "The IATA Multilateral Interline Traffic Agreements, a standardized framework that lets participating airlines (and accredited agents) accept each other's traffic documents and through-check passengers and baggage under common terms. Joining MITA establishes default interline relationships with other signatories rather than requiring individual bilateral agreements.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "mobile-ticket",
+      "vertical": "tours",
+      "category": "tour-product",
+      "conceptType": "document",
+      "status": "active",
+      "term_ko": "모바일 티켓(Mobile Ticket)",
+      "definition_ko": "스마트폰으로 전달되어(QR/바코드/월렛 패스) 서비스 현장에서 스캔으로 사용 처리되는 디지털 티켓·바우처다.",
+      "longDef": "Mobile tickets remove the print/exchange step: the reseller issues a scannable code (often a wallet pass) the moment a booking is confirmed, and the operator validates it at a turnstile or with a handheld scanner. This requires the operator's redemption system and the reseller to share a code namespace, which is why mobile ticketing is tightly coupled to API connectivity and instant confirmation.",
+      "longDef_ko": "모바일 티켓은 인쇄·교환 단계를 없앤다. 예약이 확정되는 즉시 리셀러가 스캔 가능한 코드(흔히 월렛 패스)를 발급하고, 운영사는 개찰구나 휴대 스캐너로 검증한다. 이를 위해 운영사 사용처리 시스템과 리셀러가 코드 네임스페이스를 공유해야 하므로, 모바일 티켓팅은 API 연동·즉시확정과 긴밀히 결합된다.",
+      "aliases": [
+        "QR Ticket",
+        "Mobile Voucher",
+        "Digital Ticket"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Voucher",
+          "targetId": "voucher"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Attraction Ticket",
+          "targetId": "attraction-ticket"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Instant Confirmation",
+          "targetId": "instant-confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Ventrata — Mobile ticketing and scanning",
+          "org": "Ventrata",
+          "version": "",
+          "section": "",
+          "url": "https://ventrata.com/",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"15\" y=\"6\" width=\"18\" height=\"36\" rx=\"3\"/><line x1=\"22\" y1=\"36\" x2=\"26\" y2=\"36\"/><rect x=\"20\" y=\"12\" width=\"8\" height=\"8\" rx=\"1\" stroke-dasharray=\"1.5 2\"/></svg>",
+      "term": "Mobile Ticket",
+      "definition": "A digital ticket or voucher delivered to a smartphone (QR/barcode/wallet pass) and redeemed by scanning at the point of service.",
+      "lastReviewed": "2026-06-24",
+      "distinctions": []
     },
     {
       "id": "mobility-as-a-service",
@@ -23589,6 +24168,56 @@
       "term": "Offer Management System",
       "definition": "An Offer Management System is the airline-retailing platform that constructs, prices, and manages Offers in response to shopping requests, dynamically bundling flights, ancillaries, and third-party products with conditions and validity. It is the 'shop' side counterpart to the Order Management System in IATA's Offer and Order model.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "on-request-booking",
+      "vertical": "tours",
+      "category": "tour-dist",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "요청형 예약(On-Request Booking)",
+      "definition_ko": "판매가 최종 확정되기 전에 리셀러가 운영사의 수동 또는 비동기 확정을 받아야 하는 예약 방식이다.",
+      "longDef": "On-request (or request) booking is used when an operator lacks real-time connectivity or wants to vet bookings: the traveler submits a request, the operator confirms or declines within a stated window, and payment is captured or released accordingly. It adds friction and abandonment risk versus instant confirmation but lets long-tail and complex products be sold before full API integration exists.",
+      "longDef_ko": "요청형(request) 예약은 운영사가 실시간 연동이 없거나 예약을 사전 검토하려는 경우에 쓰인다. 여행자가 요청을 보내면 운영사가 정해진 시간 안에 확정·거절하고, 그에 따라 결제가 청구되거나 해제된다. 즉시확정 대비 마찰과 이탈 위험이 크지만, 완전한 API 연동 이전에도 롱테일·복잡 상품을 판매할 수 있게 한다.",
+      "aliases": [
+        "Request Booking",
+        "Freesale on Request",
+        "Manual Confirmation Booking"
+      ],
+      "relationships": [
+        {
+          "type": "contrasts",
+          "targetTerm": "Instant Confirmation",
+          "targetId": "instant-confirmation"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Reseller API",
+          "targetId": "reseller-api"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Instant Confirmation",
+          "explanation": "On-request booking defers the sale to the operator's manual confirmation; instant confirmation finalizes it at purchase against live availability.",
+          "explanation_ko": "요청형 예약은 운영사의 수동 확정으로 판매를 미루고, 즉시 확정은 실시간 가용성을 상대로 구매 시점에 판매를 확정한다.",
+          "targetId": "instant-confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Rezdy — Request / manual confirmation bookings",
+          "org": "Rezdy",
+          "version": "",
+          "section": "",
+          "url": "https://www.rezdy.com/",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14 8h20M14 40h20M16 8c0 9 16 11 16 16S16 31 16 40M32 8c0 9-16 11-16 16\"/></svg>",
+      "term": "On-Request Booking",
+      "definition": "A booking model in which the reseller must obtain the operator's manual or asynchronous confirmation before the sale becomes final.",
+      "lastReviewed": "2026-06-24"
     },
     {
       "id": "onboard-credit-obc",
@@ -30603,6 +31232,62 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "reseller-api",
+      "vertical": "tours",
+      "category": "tour-dist",
+      "conceptType": "standard",
+      "status": "active",
+      "term_ko": "리셀러 API(Reseller API)",
+      "definition_ko": "마켓플레이스·리셀러가 운영사 예약 시스템을 상대로 실시간 가용성을 조회하고 예약을 생성하는 데 사용하는 API다.",
+      "longDef": "A reseller/booking API typically exposes product catalog, availability per timeslot, pricing, booking create/cancel, and redemption/ticket retrieval. Because the sector lacks a single dominant standard, most connectivity uses proprietary APIs (e.g. the Viator and GetYourGuide supplier APIs) plus emerging efforts toward common models; OpenTravel has published messages relevant to tour/activity exchange. API quality determines whether inventory sells with instant confirmation and mobile tickets.",
+      "longDef_ko": "리셀러/예약 API는 보통 상품 카탈로그, 타임슬롯별 가용성, 가격, 예약 생성/취소, 사용처리/티켓 조회를 노출한다. 업계에 단일 지배 표준이 없어 대부분의 연동이 독자 API(예: Viator·GetYourGuide 공급자 API)와 공통 모델을 향한 초기 시도들을 함께 사용한다. OpenTravel은 투어/액티비티 교환에 관련된 메시지를 발행한 바 있다. API 품질이 즉시확정·모바일 티켓 판매 가능 여부를 좌우한다.",
+      "aliases": [
+        "Booking API (Activities)",
+        "Connectivity API",
+        "Distribution API (Activities)"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Reservation Technology",
+          "targetId": "reservation-technology"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Instant Confirmation",
+          "targetId": "instant-confirmation"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Connectivity Hub",
+          "targetId": "connectivity-hub"
+        }
+      ],
+      "sources": [
+        {
+          "name": "GetYourGuide — Supplier API & connectivity",
+          "org": "GetYourGuide",
+          "version": "",
+          "section": "",
+          "url": "https://supplier.getyourguide.support/",
+          "tier": "vendor-doc"
+        },
+        {
+          "name": "OpenTravel Specifications",
+          "org": "OpenTravel Alliance",
+          "version": "",
+          "section": "",
+          "url": "https://opentravel.org/download-specs/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M18 16 8 24l10 8M30 16l10 8-10 8\"/><line x1=\"26\" y1=\"12\" x2=\"22\" y2=\"36\"/></svg>",
+      "term": "Reseller API",
+      "definition": "The API through which a marketplace or reseller queries live availability and creates bookings against an operator's reservation system in real time.",
+      "lastReviewed": "2026-06-24",
+      "distinctions": []
+    },
+    {
       "id": "reservation-notification-message",
       "vertical": "lodging",
       "category": "hotel-dist",
@@ -30715,6 +31400,70 @@
       "term": "Reservation Notification Message (OTA_HotelResNotif)",
       "definition": "The Reservation Notification Message (OTA_HotelResNotif) is the OpenTravel-standard XML message pair that pushes a new, modified, or cancelled hotel reservation from a source system (OTA, channel manager, or CRS) to the property's downstream system (PMS, RMS, CRM). The OTA_HotelResNotifRQ delivers the booking and the OTA_HotelResNotifRS acknowledges receipt or returns errors.",
       "lastReviewed": "2026-06-18"
+    },
+    {
+      "id": "reservation-technology",
+      "vertical": "tours",
+      "category": "tour-dist",
+      "conceptType": "system",
+      "status": "active",
+      "term_ko": "예약 시스템(Reservation Technology)",
+      "definition_ko": "액티비티 운영사가 상품·가용성·정원·예약을 관리하고 그 재고를 유통 채널에 연결하기 위해 사용하는 소프트웨어다.",
+      "longDef": "Reservation technology (res-tech) — platforms such as FareHarbor, Rezdy, Bokun, TrekkSoft and Ventrata — is the operator's system of record: it holds the live availability calendar, manages capacity and pricing, takes direct bookings, and exposes APIs so marketplaces can shop and book in real time. It is the activities-sector counterpart of an airline PSS or a hotel PMS/CRS, and its penetration determines how much inventory can be sold with instant confirmation.",
+      "longDef_ko": "예약 시스템(res-tech) — FareHarbor·Rezdy·Bokun·TrekkSoft·Ventrata 같은 플랫폼 — 은 운영사의 기록 시스템이다. 실시간 가용성 캘린더를 보유하고 정원·가격을 관리하며 직접 예약을 받고, 마켓플레이스가 실시간으로 조회·예약할 수 있도록 API를 노출한다. 항공의 PSS, 호텔의 PMS/CRS에 대응하는 개념으로, 그 보급률이 즉시확정으로 판매 가능한 재고 규모를 좌우한다.",
+      "aliases": [
+        "Res-tech",
+        "Booking System",
+        "Booking Software",
+        "Reservation System (Activities)"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Activity Operator",
+          "targetId": "activity-operator"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Reseller API",
+          "targetId": "reseller-api"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Connectivity Hub",
+          "targetId": "connectivity-hub"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Connectivity Hub",
+          "explanation": "Reservation technology runs one operator's availability and bookings; a connectivity hub interconnects many operators' systems with many resellers through a single integration.",
+          "explanation_ko": "예약 시스템은 한 운영사의 가용성·예약을 운용하고, 커넥티비티 허브는 다수 운영사 시스템과 다수 리셀러를 단일 연동으로 상호 연결한다.",
+          "targetId": "connectivity-hub"
+        }
+      ],
+      "sources": [
+        {
+          "name": "FareHarbor — Reservation & booking software",
+          "org": "FareHarbor (Booking Holdings)",
+          "version": "",
+          "section": "",
+          "url": "https://fareharbor.com/",
+          "tier": "vendor-doc"
+        },
+        {
+          "name": "Rezdy — Online booking software",
+          "org": "Rezdy",
+          "version": "",
+          "section": "",
+          "url": "https://www.rezdy.com/",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"6\"/><path d=\"M24 8v6M24 34v6M8 24h6M34 24h6M13 13l4 4M31 31l4 4M35 13l-4 4M17 31l-4 4\"/></svg>",
+      "term": "Reservation Technology",
+      "definition": "Software an activity operator uses to manage products, availability, capacity and bookings, and to connect that inventory to distribution channels.",
+      "lastReviewed": "2026-06-24"
     },
     {
       "id": "residual-value",
@@ -33360,6 +34109,50 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "skip-the-line",
+      "vertical": "tours",
+      "category": "tour-product",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "스킵더라인(Skip-the-Line)",
+      "definition_ko": "명소에 우선 입장 또는 전용 레인 입장을 부여하여 일반 입장 대기열을 건너뛰게 하는 상품 특성이다.",
+      "longDef": "Skip-the-line is sold either as a premium tier of an attraction ticket or bundled into a guided activity, and is one of the most marketed value propositions in the experiences category. It does not always mean \"no wait\" — depending on the venue it may mean a separate, shorter priority queue or a reserved timed entry. Resellers surface it prominently as a filter/badge because it strongly influences conversion.",
+      "longDef_ko": "스킵더라인은 어트랙션 티켓의 프리미엄 등급으로 팔리거나 가이드 액티비티에 묶여 제공되며, 익스피리언스 카테고리에서 가장 많이 마케팅되는 가치 제안 중 하나다. 항상 \"대기 없음\"을 뜻하지는 않으며, 시설에 따라 더 짧은 별도 우선 대기열이거나 예약된 지정시간 입장일 수 있다. 리셀러는 전환율에 큰 영향을 주므로 이를 필터/배지로 두드러지게 노출한다.",
+      "aliases": [
+        "Fast Track",
+        "Fast-Track Entry",
+        "Priority Entry",
+        "Skip the Line"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Attraction Ticket",
+          "targetId": "attraction-ticket"
+        },
+        {
+          "type": "broader",
+          "targetTerm": "Activity",
+          "targetId": "activity"
+        }
+      ],
+      "sources": [
+        {
+          "name": "GetYourGuide — Skip-the-line tickets",
+          "org": "GetYourGuide",
+          "version": "",
+          "section": "",
+          "url": "https://www.getyourguide.com/",
+          "tier": "encyclopedia"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M26 6 12 26h10l-2 16 16-22H26z\"/></svg>",
+      "term": "Skip-the-Line",
+      "definition": "A product feature granting priority or dedicated-lane entry to an attraction, letting the holder bypass the general-admission queue.",
+      "lastReviewed": "2026-06-24",
+      "distinctions": []
+    },
+    {
       "id": "slot",
       "vertical": "air",
       "category": "air-partner",
@@ -35983,6 +36776,50 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "timeslot",
+      "vertical": "tours",
+      "category": "tour-product",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "타임슬롯(Timeslot)",
+      "definition_ko": "액티비티나 어트랙션 티켓이 판매되는, 고유 정원·가용성을 가진 특정 날짜의 시작 시각이다.",
+      "longDef": "Timeslots are how experiences manage capacity over a day: each slot has an independent allocation that depletes as bookings are made, and resellers must read live availability per slot before confirming. Timed entry is now standard at high-demand attractions for crowd control. Timeslot availability is the activity-sector analog of seat/room availability and is the data most sensitive to real-time connectivity.",
+      "longDef_ko": "타임슬롯은 익스피리언스가 하루 동안 정원을 관리하는 방식이다. 각 슬롯은 독립된 할당량을 가지며 예약이 들어올수록 소진되므로, 리셀러는 확정 전에 슬롯별 실시간 가용성을 읽어야 한다. 지정시간 입장은 이제 수요가 많은 명소의 혼잡 관리 표준이다. 타임슬롯 가용성은 항공 좌석·호텔 객실 가용성에 대응하는 개념으로, 실시간 연동에 가장 민감한 데이터다.",
+      "aliases": [
+        "Time Slot",
+        "Timed Entry",
+        "Departure Time",
+        "Availability Slot"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Attraction Ticket",
+          "targetId": "attraction-ticket"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Instant Confirmation",
+          "targetId": "instant-confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Rezdy — Availability and capacity",
+          "org": "Rezdy",
+          "version": "",
+          "section": "",
+          "url": "https://www.rezdy.com/",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"16\"/><path d=\"M24 14v10l7 4\"/></svg>",
+      "term": "Timeslot",
+      "definition": "A specific dated start time, with its own capacity and availability, against which an activity or attraction ticket is sold.",
+      "lastReviewed": "2026-06-24",
+      "distinctions": []
+    },
+    {
       "id": "tokenization",
       "vertical": "common",
       "category": "pay",
@@ -38478,6 +39315,56 @@
       "term": "Voluntary Refunds (ATPCO Category 33)",
       "definition": "ATPCO Fare Rule Category 33 is the machine-readable rule set defining the conditions and applicable charges under which voluntary refunds of a ticket are permitted. It powers GDS and carrier automated refund products by letting systems compute refundable amounts and penalties without manual handling.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "voucher",
+      "vertical": "tours",
+      "category": "tour-product",
+      "conceptType": "document",
+      "status": "active",
+      "term_ko": "바우처(Voucher)",
+      "definition_ko": "확정된 액티비티 예약을 증빙하는 문서(인쇄물 또는 디지털)로, 여행자가 운영사에 제시하여 서비스를 사용 처리(redeem)한다.",
+      "longDef": "A voucher carries the booking reference, product/option, date and timeslot, participant count, and redemption instructions, and is the hand-off artifact between the reseller and the operator at the point of service. Vouchers may be \"operator vouchers\" requiring exchange for a physical ticket, or directly scannable. The modern form is the mobile ticket; the underlying concept — proof of a paid booking to be redeemed — is the voucher.",
+      "longDef_ko": "바우처에는 예약 참조번호, 상품/옵션, 날짜·시간대, 인원수, 사용 안내가 담기며, 서비스 현장에서 리셀러와 운영사 간 인계 매개물 역할을 한다. 실물 티켓으로 교환해야 하는 \"오퍼레이터 바우처\"이거나 바로 스캔 가능한 형태일 수 있다. 현대적 형태는 모바일 티켓이며, 그 바탕 개념(사용 처리할 결제 완료 예약의 증빙)이 바로 바우처다.",
+      "aliases": [
+        "Booking Voucher",
+        "Redemption Voucher",
+        "Confirmation Voucher"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Mobile Ticket",
+          "targetId": "mobile-ticket"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Activity",
+          "targetId": "activity"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Mobile Ticket",
+          "explanation": "A voucher is the booking-proof concept in any form; a mobile ticket is its smartphone-delivered, directly-scannable digital implementation.",
+          "explanation_ko": "바우처는 형태와 무관한 예약 증빙 개념이고, 모바일 티켓은 스마트폰으로 전달되어 바로 스캔되는 디지털 구현형이다.",
+          "targetId": "mobile-ticket"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Bokun — Vouchers and redemption",
+          "org": "Bokun (Tripadvisor)",
+          "version": "",
+          "section": "",
+          "url": "https://www.bokun.io/",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14 6h14l8 8v28H14z\"/><path d=\"M28 6v8h8\"/><line x1=\"19\" y1=\"24\" x2=\"31\" y2=\"24\"/><line x1=\"19\" y1=\"30\" x2=\"31\" y2=\"30\"/></svg>",
+      "term": "Voucher",
+      "definition": "The document — printed or digital — evidencing a confirmed activity booking, which the traveler presents to the operator to redeem the service.",
+      "lastReviewed": "2026-06-24"
     },
     {
       "id": "waitlist",

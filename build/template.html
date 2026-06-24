@@ -847,6 +847,32 @@ g.mmn.focused rect {
           desc:{ ko:'승선(임바케이션)과 비상소집훈련을 거쳐 항해가 시작되고 기항지 투어·오픈 시팅 다이닝으로 서비스가 제공됩니다.', en:'Sailing begins with embarkation and the muster drill, and service is delivered through shore excursions and open-seating dining.' },
           terms:['embarkation','muster-drill','shore-excursion','open-seating-dining'] }
       }
+    },
+    tours: {
+      intro: {
+        ko: '투어·액티비티 상품은 운영사가 예약 시스템에 등록한 액티비티·어트랙션 티켓·타임슬롯 재고에서 출발해 커넥티비티 허브·리셀러 API를 거쳐 익스피리언스 마켓플레이스로 유통되고, 즉시확정/요청형으로 예약·결제(마켓플레이스 커미션)된 뒤 모바일 티켓·바우처로 현장에서 사용 처리됩니다.',
+        en: 'Tours & activities start as operator inventory (activities, attraction tickets, timeslots) in reservation technology, distribute to experiences marketplaces via connectivity hubs and reseller APIs, are booked instantly or on-request and paid (marketplace commission), then redeemed on-site as mobile tickets and vouchers.'
+      },
+      stages: {
+        supply: { actors:[{ko:'액티비티 운영사',en:'Activity Operator'},{ko:'예약 시스템',en:'Res-tech'}],
+          desc:{ ko:'운영사가 액티비티·가이드 투어·어트랙션 티켓을 타임슬롯 단위 정원으로 예약 시스템에 편성합니다.', en:'Operators load activities, guided tours and attraction tickets into reservation tech as per-timeslot capacity.' },
+          terms:['activity','attraction-ticket','guided-tour','timeslot'] },
+        distribute: { actors:[{ko:'커넥티비티 허브',en:'Connectivity Hub'},{ko:'마켓플레이스',en:'Marketplace'}],
+          desc:{ ko:'예약 시스템이 리셀러 API로 노출한 재고가 커넥티비티 허브를 거쳐 익스피리언스 마켓플레이스로 유통됩니다.', en:'Inventory exposed via reseller APIs flows through connectivity hubs to experiences marketplaces.' },
+          terms:['activity-operator','reservation-technology','connectivity-hub','reseller-api','experiences-marketplace'] },
+        shop: { actors:[{ko:'고객',en:'Customer'}],
+          desc:{ ko:'고객이 타임슬롯·스킵더라인 옵션을 조회하며, 즉시확정 또는 요청형 가용성에 따라 구매 가능 여부가 결정됩니다.', en:'Travelers shop timeslots and skip-the-line options; buyability depends on instant or on-request availability.' },
+          terms:['skip-the-line','timeslot','instant-confirmation','on-request-booking'] },
+        book: { actors:[{ko:'고객',en:'Customer'}],
+          desc:{ ko:'예약이 확정되면 미팅 포인트가 안내되고 바우처·모바일 티켓이 발급됩니다.', en:'On confirmation the meeting point is issued along with a voucher and mobile ticket.' },
+          terms:['instant-confirmation','voucher','mobile-ticket','meeting-point'] },
+        pay: { actors:[{ko:'마켓플레이스',en:'Marketplace'},{ko:'운영사',en:'Operator'}],
+          desc:{ ko:'마켓플레이스가 기록상 가맹점(MoR)으로 결제를 수납하고, 마켓플레이스 커미션을 제한 금액이 운영사에 정산됩니다.', en:'The marketplace takes payment as merchant of record and remits the operator net of the marketplace commission.' },
+          terms:['marketplace-commission','merchant-of-record','form-of-payment','3-d-secure'] },
+        fulfill: { actors:[{ko:'액티비티 운영사',en:'Activity Operator'}],
+          desc:{ ko:'현장에서 모바일 티켓·바우처를 스캔해 입장·체험이 이행되고, 가이드가 미팅 포인트에서 투어를 진행합니다.', en:'On-site the mobile ticket/voucher is scanned for entry and the guide runs the tour from the meeting point.' },
+          terms:['mobile-ticket','voucher','meeting-point','guided-tour','skip-the-line'] }
+      }
     }
   };
 
@@ -860,7 +886,7 @@ g.mmn.focused rect {
     { cat:'sustainability', terms:['corsia','sustainable-aviation-fuel-saf','flight-emissions-label-fel','iata-co2-connect'] }
   ];
 
-  const FLOW_VERTS = ['air','lodging','ground','cruise'];
+  const FLOW_VERTS = ['air','lodging','ground','cruise','tours'];
   window.FLOWS = FLOWS;
 
   function renderClassroom() {
