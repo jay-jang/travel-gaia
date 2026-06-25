@@ -5,13 +5,13 @@ description: >-
   The published price a traveler pays for an activity, from which intermediary
   commission is deducted — as opposed to the operator's net rate.
 tags:
-  - tour-dist
+  - tour-commercial
   - active
   - Tours & Activities
-timestamp: '2026-06-24T00:00:00Z'
+timestamp: '2026-06-25T00:00:00Z'
 id: retail-rate
 vertical: tours
-category: tour-dist
+category: tour-commercial
 conceptType: business-term
 status: active
 term_ko: 소매 요금(Retail Rate)

@@ -160,3 +160,38 @@ claude code / codex(gpt-5.5) / agy 3자 라운드1 제안 → 라운드2 상호 
 - **의존성**: 빌드타임 `gray-matter`(frontmatter 파서) 추가. 런타임 산출물(index.html)은 여전히 데이터 인라인.
 
 주의: 별도 커밋 `a07acca`(사용자)가 그래프를 **D3.js(CDN)** 기반으로 교체 → 오프라인/단일파일 원칙과 상충(네트워크 필요). OKF 재설계와는 직교적이며 건드리지 않음(별도 결정 필요).
+
+---
+
+## 2026-06-24 — codex×agy 교차 리뷰 합의: Tours & 유통흐름 개선 계획
+
+투어·액티비티 용어(42개)와 유통흐름 페이지에 대해 codex(gpt-5.5)·agy를 2라운드 교차 리뷰(상호 토론→수렴)한 결과 도출된 **합의 개선안**. 아직 미구현(다음 작업 대기).
+
+**합의된 사실(양쪽 동의):**
+1. **OCTO 정의 오류** — "Open Connectivity for Tours, Activities & Attractions"의 **개방형 API 표준/JSON 스키마**(공급자·상품·가용성·예약 엔드포인트)이며 "커넥티비티 허브"가 아님. 정의 수정 + Reseller API·Connectivity Hub와의 distinction 추가.
+2. **고가치 누락 용어**: Capacity/Allotment, Net Rate(tours), Dynamic Pricing/Yield Mgmt, Review·UGC·Rating, Settlement/Payout/Remittance, Cancellation Policy/Refund/No-show, Redemption, Gift/Experience Voucher, Google "Things to Do" feed.
+3. **유통흐름에 사후(post-sale) 단계 부재** — 변경/취소/환불/노쇼/기상악화/리뷰는 투어 핵심 어휘. 반드시 표현.
+4. **pay 단계가 두 사건을 뭉갬** — 고객 결제(예약 시점) vs 운영사 정산/payout(이행 후 배치)은 분리.
+5. Virtual Queue는 상품/검색이 아니라 **정원·이행** 개념 → Skip-the-Line과 상호 distinction.
+6. Voucher는 사용처리(redemption) 증빙 vs 선물/결제 바우처를 혼동 → distinction + **Gift Experience Voucher** 신규.
+7. 가격·상거래 용어(retail/net rate, commission, markup, confidential tariff, MoR)가 흩어져 있음 → 정리 필요.
+8. 파운데이션 밴드에서 Sustainability는 Availability/Capacity·Payments/Settlement·Compliance/Liability·Standards보다 덜 기초적 → 재배치.
+9. 출처 등급 일관 적용(표준/규제=최상, 플랫폼 API문서=상[공급자 한정], Arival/Phocuswright=참고; 단 투어엔 IATA 등가 부재라 사실상 대표 연구기관으로 허용).
+
+**수렴된 결정(쟁점 해소):**
+- **C1 순서**: (1) **Capacity/Allotment**를 1급 용어로 추가(Timeslot·Virtual Queue·Resource Mgmt 교정 및 Dynamic Pricing 잠금해제의 구조적 선행조건) → (2) **사후+정산** 용어·흐름 단계 추가 → (3) **상거래 용어 정규화**.
+- **C2 카테고리**: 투어 버티컬을 **4분류**로. `tour-product`(판매 상품·정원·티켓·바우처·redemption), `tour-dist`(채널·API·OCTO·커넥티비티·Things-to-Do), `tour-ops`(DMC·RTO·FIT·GIT·매니페스트·리소스·면책·노쇼·기상·virtual queue 등 운영/트레이드 실행), **`tour-commercial`(신규)**(retail/net rate·commission·markup·confidential tariff·MoR·settlement/payout·dynamic pricing). ※ codex의 "tour-commercial 신설·tour-ops 유지"와 agy의 pricing 분리 요구를 병합; `tour-trade` 개명은 채택하지 않음(범위가 좁고 여행사 색채).
+- **C3 흐름**: **7단계** `supply → distribute → shop → book → pay → fulfill → settle` + `book/pay/fulfill/settle`를 감싸는 **사후(post-sale) 루프**(change·cancel·refund·no-show·weather·review). 정산(settle)은 이행 후 운영사 payout 사건으로 분리.
+
+**우선순위 실행 목록(레버리지 순):**
+1. [terms] **Capacity/Allotment** 추가 + Virtual Queue를 `tour-ops`로 이동, Skip-the-Line과 상호 distinction.
+2. [data-model] 투어 4분류 재편: `tour-commercial` 신설(흩어진 가격·정산 용어의 거처 확보).
+3. [terms] **OCTO** 정의 수정(개방형 JSON 스키마 API 표준) + Reseller API·Connectivity Hub distinction.
+4. [terms] `tour-commercial` 용어: Net/Retail Rate, Commission, Markup, Confidential Tariff, Dynamic Pricing/Yield, MoR, Settlement/Payout/Remittance.
+5. [flow] 흐름 7단계화(`…fulfill → settle`) + 사후 루프(피드백 화살표로 정원 release 표현).
+6. [terms] 사후 용어: Cancellation Policy, Refund, No-Show, Weather Disruption, Redemption, Review/UGC·Rating.
+7. [terms] **Voucher** 분리(redemption 증빙 vs Gift/Experience Voucher 신규).
+8. [flow] 파운데이션 밴드 재정렬: Availability/Capacity·Payments/Settlement·Compliance/Liability·Standards 강조, Sustainability는 컨텍스트로 강등.
+
+### 구현 완료 (2026-06-25)
+위 합의안 8개 항목 전부 구현. 결과: tours 50개 용어 / 4분류(tour-product 20·tour-dist 11·tour-ops 13·tour-commercial 6), 글로서리 **457 entries / 20 categories**. 유통흐름 **7단계**(supply→distribute→shop→book→pay→fulfill→**settle**) + **사후(post-sale) 루프 밴드**(5개 버티컬 전부), 파운데이션 밴드 7타일(결제·표준·식별자·고객·승객권리·보험·지속가능성). OCTO 정의 수정(개방형 JSON 스키마 표준) + Reseller API·Connectivity Hub distinction. 신규: capacity·gift-experience-voucher·review-ugc·redemption·supplier-cancellation·weather-policy·demand-based-pricing·operator-payout. virtual-queue→tour-ops 이동, retail-rate·markup·marketplace-commission·confidential-tariff→tour-commercial 이동. 빌드 0 unresolved/0 conformance, okf-validate 457개 round-trip 일치, verify-ui 6그룹 PASS(7단계·7타일·post-sale 검사 반영).

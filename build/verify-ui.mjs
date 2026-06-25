@@ -452,6 +452,10 @@ await runAsyncTest('Distribution Flow: stages, term chips & vertical switching',
         if (!ids.has(id)) throw new Error(`FLOWS.${v}.${stage} references unknown term id "${id}".`);
       });
     });
+    // post-sale loop term ids must resolve too
+    (f.postSale?.terms || []).forEach(id => {
+      if (!ids.has(id)) throw new Error(`FLOWS.${v}.postSale references unknown term id "${id}".`);
+    });
   });
 
   // full-screen mode engaged (sidebar hidden, viewport-filling)
@@ -463,9 +467,13 @@ await runAsyncTest('Distribution Flow: stages, term chips & vertical switching',
   const vtabs = document.querySelectorAll('#flowVerts .flow-vtab');
   if (vtabs.length !== 5) throw new Error(`Expected 5 vertical tabs, found: ${vtabs.length}`);
 
-  // 6 lifecycle stages on the default (air) board
+  // 7 lifecycle stages on the default (air) board (supply→…→fulfill→settle)
   const stages = document.querySelectorAll('#flowBoard .flow-stage');
-  if (stages.length !== 6) throw new Error(`Expected 6 flow stages, found: ${stages.length}`);
+  if (stages.length !== 7) throw new Error(`Expected 7 flow stages, found: ${stages.length}`);
+
+  // post-sale loop band rendered with term chips
+  const psChips = document.querySelectorAll('#flowPostsale .flow-term');
+  if (psChips.length < 3) throw new Error(`Expected a post-sale band with term chips, found: ${psChips.length}`);
 
   // intro narration present
   const intro = document.getElementById('flowIntro');
@@ -480,7 +488,7 @@ await runAsyncTest('Distribution Flow: stages, term chips & vertical switching',
 
   // cross-industry foundation band present with category cards
   const fcats = document.querySelectorAll('.flow-foundation .flow-fcat');
-  if (fcats.length !== 6) throw new Error(`Expected 6 foundation categories, found: ${fcats.length}`);
+  if (fcats.length !== 7) throw new Error(`Expected 7 foundation categories, found: ${fcats.length}`);
 
   // switching vertical re-renders the board (cruise has a 3-actor-free supply etc.)
   const cruiseTab = Array.from(vtabs).find(b => b.dataset.vertical === 'cruise');
@@ -491,8 +499,8 @@ await runAsyncTest('Distribution Flow: stages, term chips & vertical switching',
   if (document.getElementById('flowIntro').textContent === airIntro) {
     throw new Error('Switching to the cruise vertical did not update the intro/board.');
   }
-  if (document.querySelectorAll('#flowBoard .flow-stage').length !== 6) {
-    throw new Error('Cruise board did not render 6 stages.');
+  if (document.querySelectorAll('#flowBoard .flow-stage').length !== 7) {
+    throw new Error('Cruise board did not render 7 stages.');
   }
 });
 

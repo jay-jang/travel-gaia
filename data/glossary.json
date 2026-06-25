@@ -2,9 +2,9 @@
   "meta": {
     "name": "Travel Gaia",
     "tagline": "여행 산업 용어 백과사전",
-    "generatedAt": "2026-06-24",
-    "entryCount": 449,
-    "categoryCount": 19,
+    "generatedAt": "2026-06-25",
+    "entryCount": 457,
+    "categoryCount": 20,
     "verticalCount": 6
   },
   "verticals": [
@@ -225,8 +225,17 @@
       "short": "투어 운영·트레이드",
       "title": "Tours & Activities — Operations & Trade",
       "color": "#d9480f",
-      "desc": "DMC·랜드사·매니페스트·요율 등 체험 상품의 운영과 거래.",
-      "desc_en": "DMCs, land operators, manifests & tariffs — experience operations & trade.",
+      "desc": "DMC·랜드사·매니페스트·사후관리 등 체험 상품의 운영과 거래.",
+      "desc_en": "DMCs, land operators, manifests & post-sale — experience operations & trade.",
+      "vertical": "tours"
+    },
+    {
+      "id": "tour-commercial",
+      "short": "투어 가격·정산",
+      "title": "Tours & Activities — Commercial & Settlement",
+      "color": "#e67700",
+      "desc": "넷/소매 요금·커미션·마크업·정산 등 체험 상품의 상거래.",
+      "desc_en": "Net/retail rates, commission, markup & settlement — experience commercials.",
       "vertical": "tours"
     }
   ],
@@ -6169,6 +6178,81 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "capacity",
+      "vertical": "tours",
+      "category": "tour-product",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "정원·캐파시티(Capacity)",
+      "definition_ko": "액티비티·타임슬롯·자원이 판매할 수 있는 한정된 자리 수로, 요금이 아니라 슬롯에 제약되는 익스피리언스의 핵심 재고 단위다.",
+      "longDef": "Unlike air seats or hotel rooms managed as rate-loaded inventory, tours sell capacity against timeslots and shared resources. Capacity may be a fixed per-departure cap, an allotment contracted to a reseller, or a pooled count drawn down by several products that share one guide, vehicle or boat. Accurate live capacity is what enables instant confirmation and prevents oversell, and it is released back to the pool when a booking is cancelled — the hinge between availability, resource management and post-sale.",
+      "longDef_ko": "항공 좌석이나 호텔 객실이 요금 적재형 재고로 관리되는 것과 달리, 투어는 타임슬롯과 공유 자원을 상대로 정원을 판매한다. 정원은 출발 편당 고정 상한일 수도, 리셀러에게 계약된 할당(allotment)일 수도, 한 가이드·차량·선박을 공유하는 여러 상품이 함께 소진하는 풀 카운트일 수도 있다. 정확한 실시간 정원이 즉시확정을 가능케 하고 초과판매를 막으며, 예약이 취소되면 풀로 반환된다 — 가용성·리소스 관리·사후처리를 잇는 경첩이다.",
+      "aliases": [
+        "Slot Capacity",
+        "Pooled Capacity",
+        "Availability Count",
+        "Allotment (Tours)"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Timeslot",
+          "targetId": "timeslot"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Resource Management",
+          "targetId": "resource-management"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Instant Confirmation",
+          "targetId": "instant-confirmation"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Allotment",
+          "targetId": "allotment"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Timeslot",
+          "explanation": "A timeslot is the dated start time being sold; capacity is how many places that timeslot (or the resources behind it) can actually sell.",
+          "explanation_ko": "타임슬롯은 판매되는 날짜별 시작 시각이고, 정원은 그 타임슬롯(또는 그 뒤의 자원)이 실제로 팔 수 있는 자리 수다.",
+          "targetId": "timeslot"
+        },
+        {
+          "targetTerm": "Allotment",
+          "explanation": "In hotels an allotment is a block of rooms released to a channel; tours capacity is the live, resource-driven sellable count per slot that depletes and is released in real time.",
+          "explanation_ko": "호텔에서 allotment는 채널에 풀어주는 객실 블록이고, 투어 정원은 슬롯별로 자원에 따라 실시간으로 소진·반환되는 판매 가능 수량이다.",
+          "targetId": "allotment"
+        }
+      ],
+      "sources": [
+        {
+          "name": "OCTO — Availability & capacity model",
+          "org": "OCTO",
+          "version": "",
+          "section": "",
+          "url": "https://octo.travel/",
+          "tier": "association"
+        },
+        {
+          "name": "Rezdy — Capacity and availability",
+          "org": "Rezdy",
+          "version": "",
+          "section": "",
+          "url": "https://www.rezdy.com/",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 34a14 14 0 1 1 28 0\"/><line x1=\"24\" y1=\"34\" x2=\"32\" y2=\"22\"/><circle cx=\"24\" cy=\"34\" r=\"2.5\"/></svg>",
+      "term": "Capacity",
+      "definition": "The finite number of spaces an activity, timeslot, or resource can sell — the core inventory primitive of experiences, which are slot-constrained rather than rate-constrained.",
+      "lastReviewed": "2026-06-25"
+    },
+    {
       "id": "capacity-purchase-agreement",
       "vertical": "air",
       "category": "air-partner",
@@ -8286,7 +8370,7 @@
     {
       "id": "confidential-tariff",
       "vertical": "tours",
-      "category": "tour-ops",
+      "category": "tour-commercial",
       "conceptType": "business-term",
       "status": "active",
       "term_ko": "컨피덴셜 타리프(Confidential Tariff)",
@@ -8328,7 +8412,7 @@
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 8H10v14l18 18 14-14z\"/><circle cx=\"16\" cy=\"16\" r=\"2.5\"/></svg>",
       "term": "Confidential Tariff",
       "definition": "A schedule of net rates a supplier or DMC gives a trade partner under contract, kept confidential so the partner can mark it up without exposing the wholesale cost.",
-      "lastReviewed": "2026-06-24",
+      "lastReviewed": "2026-06-25",
       "distinctions": []
     },
     {
@@ -10351,6 +10435,67 @@
       "term": "Data Interchange Specifications Handbook (DISH)",
       "definition": "The Data Interchange Specifications Handbook (DISH) is IATA's global standard, maintained by the BSP Data Interchange Specifications Group (BDISG), that defines the file formats and data elements all BSPs, GDSs and airlines use to exchange passenger ticketing and settlement data. Its core record types include the RET (Agent Reporting) file by which GDSs report agent sales to the BSP, and the HOT (hand-off) file by which the BSP delivers processed sales and accounting data back to airlines.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "demand-based-pricing",
+      "vertical": "tours",
+      "category": "tour-commercial",
+      "conceptType": "process",
+      "status": "active",
+      "term_ko": "수요 기반 가격(Demand-Based Pricing)",
+      "definition_ko": "수요·시간대·시즌·잔여 정원에 따라 액티비티·명소 가격을 변동시켜 수익을 극대화하는 방식으로, 운영사·명소에서 빠르게 확산 중이다.",
+      "longDef": "Long static in tours, pricing is shifting to demand-based models as reservation technology exposes timeslot-level capacity and sell-through. Operators raise prices for peak slots and discount soft ones, mirroring airline/hotel revenue management but anchored on capacity rather than rate buckets. It depends on accurate live capacity and res-tech, and is increasingly central to operator economics in industry research.",
+      "longDef_ko": "오랫동안 정적이던 투어 가격은 예약 시스템이 타임슬롯 단위 정원과 소진율을 드러내면서 수요 기반 모델로 이동 중이다. 운영사는 피크 슬롯 가격을 올리고 약한 슬롯은 할인하는데, 이는 항공·호텔의 수익 관리와 닮았으나 요금 버킷이 아니라 정원에 기반한다. 정확한 실시간 정원과 res-tech에 의존하며, 업계 연구에서 운영사 경제의 핵심으로 부상하고 있다.",
+      "aliases": [
+        "Dynamic Pricing (Tours)",
+        "Yield Management (Activities)",
+        "Time-of-Day Pricing"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Capacity",
+          "targetId": "capacity"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Timeslot",
+          "targetId": "timeslot"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Dynamic Pricing",
+          "targetId": "dynamic-pricing"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Revenue Management",
+          "targetId": "revenue-management"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Arival — Dynamic / demand-based pricing in experiences",
+          "org": "Arival",
+          "version": "",
+          "section": "",
+          "url": "https://arival.travel/",
+          "tier": "secondary"
+        },
+        {
+          "name": "Phocuswright — Pricing in tours & activities",
+          "org": "Phocuswright",
+          "version": "",
+          "section": "",
+          "url": "https://www.phocuswright.com/",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 40V8M8 40h32\"/><path d=\"M14 32l8-8 6 6 10-14\"/></svg>",
+      "term": "Demand-Based Pricing",
+      "definition": "Varying activity or attraction prices by demand, time of day, season or remaining capacity to maximize yield — a fast-growing practice among operators and attractions.",
+      "lastReviewed": "2026-06-25",
+      "distinctions": []
     },
     {
       "id": "denied-boarding-compensation",
@@ -16045,6 +16190,70 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "gift-experience-voucher",
+      "vertical": "tours",
+      "category": "tour-product",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "체험 기프트 바우처(Gift Experience Voucher)",
+      "definition_ko": "선물용으로 구매하는 선불·양도 가능 바우처로, 수령인이 나중에 체험이나 적립 금액으로 사용처리한다 — 예약의 사용처리 바우처와 구별된다.",
+      "longDef": "Gift experience vouchers underpin a large gifting segment (e.g. Tinggly, Virgin Experience Days) and behave as stored value: they are open-dated, transferable, and carry no fixed departure until the recipient books. They introduce their own economics — breakage on unredeemed value, long liability tails, and a two-step purchase-then-book flow — making them a distinct product from the redemption voucher that proves a specific booking.",
+      "longDef_ko": "체험 기프트 바우처는 큰 기프팅 세그먼트(예: Tinggly, Virgin Experience Days)를 뒷받침하며 적립 금액처럼 작동한다. 오픈 데이트·양도 가능하고, 수령인이 예약하기 전까지 고정 출발이 없다. 미사용분 breakage, 긴 부채 꼬리, \"구매 후 예약\"의 2단계 흐름 등 고유 경제를 동반하므로, 특정 예약을 증빙하는 사용처리 바우처와 구별되는 상품이다.",
+      "aliases": [
+        "Experience Gift",
+        "Gift Card (Experiences)",
+        "Gifting Voucher",
+        "Open-Dated Voucher"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Voucher",
+          "targetId": "voucher"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Redemption",
+          "targetId": "redemption"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Activity",
+          "targetId": "activity"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Voucher",
+          "explanation": "A (redemption) voucher is proof of a specific paid booking, consumed once at the point of service; a gift experience voucher is prepaid transferable stored value, redeemed later by making a booking.",
+          "explanation_ko": "(사용처리) 바우처는 특정 결제 예약의 증빙으로 현장에서 1회 소비되고, 체험 기프트 바우처는 선불·양도 가능한 적립 금액으로 나중에 예약을 통해 사용된다.",
+          "targetId": "voucher"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Tinggly / Virgin Experience Days — experience gifting",
+          "org": "Virgin Experience Days",
+          "version": "",
+          "section": "",
+          "url": "https://www.virginexperiencedays.co.uk/",
+          "tier": "encyclopedia"
+        },
+        {
+          "name": "Arival — Experience gifting",
+          "org": "Arival",
+          "version": "",
+          "section": "",
+          "url": "https://arival.travel/",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"18\" width=\"28\" height=\"8\" rx=\"1\"/><rect x=\"12\" y=\"26\" width=\"24\" height=\"14\" rx=\"1\"/><line x1=\"24\" y1=\"18\" x2=\"24\" y2=\"40\"/><path d=\"M24 18c-2-8-12-6-8 0M24 18c2-8 12-6 8 0\"/></svg>",
+      "term": "Gift Experience Voucher",
+      "definition": "A prepaid, transferable voucher bought as a gift that the recipient later redeems for an experience or stored value — distinct from a booking's redemption voucher.",
+      "lastReviewed": "2026-06-25"
+    },
+    {
       "id": "git-group-inclusive-tour",
       "vertical": "tours",
       "category": "tour-ops",
@@ -20986,13 +21195,13 @@
     {
       "id": "marketplace-commission",
       "vertical": "tours",
-      "category": "tour-dist",
+      "category": "tour-commercial",
       "conceptType": "business-term",
       "status": "active",
       "term_ko": "마켓플레이스 커미션(Marketplace Commission)",
       "definition_ko": "마켓플레이스·리셀러가 액티비티를 유통한 대가로 가져가는 수수료로, 보통 소매가의 일정 비율(또는 운영사 넷 요금 대비 마진)이다.",
-      "longDef": "Marketplace commission is the core distribution economics of the experiences sector and commonly runs materially higher than air or hotel intermediary fees. It is structured either as a commission off the published retail price or as a markup the reseller adds over a net rate supplied by the operator. The level — and whether the marketplace is merchant of record — shapes operator margins and their direct-vs-marketplace channel strategy.",
-      "longDef_ko": "마켓플레이스 커미션은 익스피리언스 부문의 핵심 유통 경제이며, 항공·호텔 중개 수수료보다 상당히 높은 경우가 많다. 공시 소매가에서 커미션을 떼는 방식이거나, 운영사가 제시한 넷 요금 위에 리셀러가 마진을 얹는 방식으로 구성된다. 그 수준과 마켓플레이스의 merchant of record 여부가 운영사 마진과 직접판매 대 마켓플레이스 채널 전략을 좌우한다.",
+      "longDef": "Marketplace commission is the core distribution economics of the experiences sector and commonly runs materially higher than air or hotel intermediary fees. It is structured either as a commission off the published retail price or as a markup the reseller adds over a net rate supplied by the operator. The level — and whether the marketplace is merchant of record — shapes operator margins, the operator payout, and direct-vs-marketplace channel strategy.",
+      "longDef_ko": "마켓플레이스 커미션은 익스피리언스 부문의 핵심 유통 경제이며, 항공·호텔 중개 수수료보다 상당히 높은 경우가 많다. 공시 소매가에서 커미션을 떼는 방식이거나, 운영사가 제시한 넷 요금 위에 리셀러가 마진을 얹는 방식으로 구성된다. 그 수준과 마켓플레이스의 merchant of record 여부가 운영사 마진·운영사 정산금과 직접판매 대 마켓플레이스 채널 전략을 좌우한다.",
       "aliases": [
         "Activities Commission",
         "Distribution Commission (Activities)",
@@ -21013,6 +21222,11 @@
           "type": "related",
           "targetTerm": "Merchant of Record",
           "targetId": "merchant-of-record"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Operator Payout",
+          "targetId": "operator-payout"
         }
       ],
       "distinctions": [
@@ -21036,12 +21250,12 @@
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"15\"/><path d=\"M28 18a5 4 0 0 0-10 0c0 6 10 2 10 8a5 4 0 0 1-10 0M24 13v3M24 32v3\"/></svg>",
       "term": "Marketplace Commission",
       "definition": "The fee a marketplace or reseller takes for distributing an activity — typically a percentage of the retail price (or the margin over the operator's net rate).",
-      "lastReviewed": "2026-06-24"
+      "lastReviewed": "2026-06-25"
     },
     {
       "id": "markup",
       "vertical": "tours",
-      "category": "tour-dist",
+      "category": "tour-commercial",
       "conceptType": "business-term",
       "status": "active",
       "term_ko": "마크업(Markup)",
@@ -21090,7 +21304,7 @@
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><line x1=\"14\" y1=\"34\" x2=\"34\" y2=\"14\"/><circle cx=\"16\" cy=\"16\" r=\"4\"/><circle cx=\"32\" cy=\"32\" r=\"4\"/></svg>",
       "term": "Markup",
       "definition": "The amount a reseller adds on top of an operator's net rate to set its retail price, forming the reseller's margin under a net-rate model.",
-      "lastReviewed": "2026-06-24"
+      "lastReviewed": "2026-06-25"
     },
     {
       "id": "married-segment",
@@ -24666,12 +24880,12 @@
       "conceptType": "standard",
       "status": "active",
       "abbreviation": "OCTO",
-      "term_ko": "OCTO(개방형 관광 연결 표준)",
-      "definition_ko": "투어·액티비티·어트랙션 연동을 위한 개방형 커뮤니티 유지보수 API 사양으로, 상품·옵션·가용성·예약에 대한 공통 모델을 정의한다.",
-      "longDef": "OCTO (Open Connectivity for Tourism Operators) addresses the experiences sector's historical lack of a connectivity standard, where each marketplace and reservation system built bespoke APIs. By standardizing product/option/unit/availability/booking endpoints, OCTO aims to cut integration cost and make instant-confirmation inventory more widely distributable — the role EDIFACT/NDC and OpenTravel play in air and hotel.",
-      "longDef_ko": "OCTO(Open Connectivity for Tourism Operators)는 마켓플레이스·예약 시스템마다 맞춤 API를 만들어 온, 익스피리언스 부문의 표준 부재 문제를 다룬다. 상품/옵션/유닛/가용성/예약 엔드포인트를 표준화해 연동 비용을 낮추고 즉시확정 재고의 유통성을 넓히는 것을 목표로 하며, 이는 항공의 EDIFACT/NDC, 호텔의 OpenTravel이 하는 역할에 해당한다.",
+      "term_ko": "OCTO(개방형 투어·액티비티 연결 표준)",
+      "definition_ko": "투어·액티비티·어트랙션 연동을 위한 개방형 커뮤니티 유지보수 API 표준으로, 공급자·상품·가용성·예약 엔드포인트와 공통 JSON 스키마를 정의하며, 플랫폼들이 이를 구현해 상호 운용한다.",
+      "longDef": "OCTO addresses the experiences sector's historical lack of a connectivity standard, where every marketplace and reservation system built bespoke APIs. Crucially OCTO is the shared vocabulary/schema — not a service that moves bookings: it standardizes how products, options, units, availability and bookings are expressed so any compliant reseller and reservation system can interoperate. It plays the role EDIFACT/NDC and OpenTravel play in air and hotel, lowering integration cost and widening instant-confirmation distribution.",
+      "longDef_ko": "OCTO는 마켓플레이스·예약 시스템마다 맞춤 API를 만들어 온, 익스피리언스 부문의 표준 부재 문제를 다룬다. 중요한 점은 OCTO가 예약을 처리하는 서비스가 아니라 공유 어휘/스키마라는 것이다. 상품·옵션·유닛·가용성·예약을 표현하는 방식을 표준화해, 준수하는 리셀러와 예약 시스템이 상호 운용되게 한다. 항공의 EDIFACT/NDC, 호텔의 OpenTravel이 하는 역할로서 연동 비용을 낮추고 즉시확정 유통을 넓힌다.",
       "aliases": [
-        "Open Connectivity for Tourism Operators",
+        "Open Connectivity for Tours Activities & Attractions",
         "OCTO Spec",
         "octo.travel"
       ],
@@ -24698,11 +24912,17 @@
           "explanation": "A reseller API is any single platform's proprietary connectivity interface; OCTO is an open cross-industry specification multiple platforms can implement to interoperate.",
           "explanation_ko": "리셀러 API는 특정 플랫폼 하나의 독자 연동 인터페이스이고, OCTO는 여러 플랫폼이 구현해 상호 운용할 수 있는 개방형 범산업 사양이다.",
           "targetId": "reseller-api"
+        },
+        {
+          "targetTerm": "Connectivity Hub",
+          "explanation": "OCTO is the open schema/vocabulary that systems speak; a connectivity hub is a running service that interconnects many operators and resellers. A hub may implement OCTO, but OCTO itself moves no bookings.",
+          "explanation_ko": "OCTO는 시스템들이 말하는 개방형 스키마/어휘이고, 커넥티비티 허브는 다수 운영사·리셀러를 상호 연결하는 실행 서비스다. 허브가 OCTO를 구현할 수 있지만, OCTO 자체는 예약을 처리하지 않는다.",
+          "targetId": "connectivity-hub"
         }
       ],
       "sources": [
         {
-          "name": "OCTo — Open API specification",
+          "name": "OCTo — Open API specification (octo.travel)",
           "org": "OCTO",
           "version": "",
           "section": "",
@@ -24712,8 +24932,8 @@
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M18 8v8M30 8v8\"/><rect x=\"14\" y=\"16\" width=\"20\" height=\"12\" rx=\"3\"/><path d=\"M24 28v6a6 6 0 0 0 6 6h2\"/></svg>",
       "term": "OCTO",
-      "definition": "An open, community-maintained API specification for tours, activities and attractions connectivity, defining a common model for products, options, availability and bookings.",
-      "lastReviewed": "2026-06-24"
+      "definition": "An open, community-maintained API standard — a shared JSON schema and set of endpoints (supplier, products, availability, bookings) — for tours, activities and attractions connectivity, which platforms implement to interoperate.",
+      "lastReviewed": "2026-06-25"
     },
     {
       "id": "offer",
@@ -26002,6 +26222,74 @@
       "term": "Operating Carrier",
       "definition": "The airline that physically operates a flight, providing the aircraft, crew, and operational control, regardless of which carriers' codes are sold on it. On a codeshare flight there is one operating carrier but potentially several marketing carriers.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "operator-payout",
+      "vertical": "tours",
+      "category": "tour-commercial",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "운영사 정산금(Operator Payout)",
+      "definition_ko": "마켓플레이스·리셀러가 체험 제공 후 운영사에 커미션을 제하고 자금을 이전하는 것으로, 보통 이용 완료 후 배치 주기(예: 주간)로 이뤄진다.",
+      "longDef": "When the marketplace is merchant of record it collects the retail price up front and remits the operator its share later — frequently after travel and on a weekly batch — which makes payout timing a major operator cash-flow issue distinct from the customer payment event. Payout reconciles against redemption and no-shows and carries chargeback exposure, and is the settlement counterpart that the flow's separate \"settle\" stage represents.",
+      "longDef_ko": "마켓플레이스가 merchant of record일 때 소매가를 선수금으로 받고 운영사 몫을 나중에 — 흔히 이용 후, 주간 배치로 — 정산하는데, 이 정산 시점은 고객 결제 사건과 구별되는 운영사의 주요 현금흐름 이슈다. 정산은 사용처리·노쇼와 대사되고 차지백 위험을 동반하며, 유통 흐름의 별도 \"정산(settle)\" 단계가 표현하는 정산 측면이다.",
+      "aliases": [
+        "Supplier Payout",
+        "Settlement (Activities)",
+        "Remittance (Tours)"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Marketplace Commission",
+          "targetId": "marketplace-commission"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Merchant of Record",
+          "targetId": "merchant-of-record"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Remittance",
+          "targetId": "remittance"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Redemption",
+          "targetId": "redemption"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Marketplace Commission",
+          "explanation": "The marketplace commission is the fee the marketplace keeps; the operator payout is the remaining amount it actually transfers to the operator, usually after the experience is delivered.",
+          "explanation_ko": "마켓플레이스 커미션은 마켓플레이스가 갖는 수수료이고, 운영사 정산금은 보통 체험 제공 후 운영사에 실제 이전하는 잔액이다.",
+          "targetId": "marketplace-commission"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Bokun — Payouts & payment settlement",
+          "org": "Bokun (Tripadvisor)",
+          "version": "",
+          "section": "",
+          "url": "https://www.bokun.io/",
+          "tier": "vendor-doc"
+        },
+        {
+          "name": "Arival — How operators get paid",
+          "org": "Arival",
+          "version": "",
+          "section": "",
+          "url": "https://arival.travel/",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"12\" width=\"32\" height=\"24\" rx=\"3\"/><path d=\"M8 18h28a2 2 0 0 1 2 2v0\"/><circle cx=\"33\" cy=\"24\" r=\"2.5\"/></svg>",
+      "term": "Operator Payout",
+      "definition": "The post-fulfillment transfer of funds from a marketplace or reseller to the operator — net of commission — typically on a batch cycle (e.g. weekly) after the experience is delivered.",
+      "lastReviewed": "2026-06-25"
     },
     {
       "id": "optional-services",
@@ -31279,6 +31567,75 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "redemption",
+      "vertical": "tours",
+      "category": "tour-ops",
+      "conceptType": "process",
+      "status": "active",
+      "term_ko": "사용처리·리뎀션(Redemption)",
+      "definition_ko": "게이트나 미팅 포인트에서 바우처·모바일 티켓을 스캔해 검증·소비하는 현장 행위로, 예약을 실제 제공된 서비스로 전환한다.",
+      "longDef": "Redemption is where distribution meets fulfilment: the reseller-issued code is validated against the operator's access-control/redemption system, marked single-use (with partial redemption for passes and combos), and the event reconciles back to settlement — only redeemed bookings, net of no-shows, drive the operator payout. Reliable redemption is the operational payoff of API connectivity and mobile ticketing.",
+      "longDef_ko": "사용처리는 유통과 이행이 만나는 지점이다. 리셀러가 발급한 코드가 운영사의 출입통제·사용처리 시스템에서 검증되고 1회용으로 표시되며(패스·콤보는 부분 사용처리), 그 이벤트는 정산으로 환류된다 — 노쇼를 제한 실제 사용처리된 예약만이 운영사 정산금을 발생시킨다. 신뢰할 수 있는 사용처리는 API 연동·모바일 티켓팅의 운영적 결실이다.",
+      "aliases": [
+        "Ticket Redemption",
+        "Scan-in",
+        "Validation",
+        "Check-in (Activities)"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Mobile Ticket",
+          "targetId": "mobile-ticket"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Voucher",
+          "targetId": "voucher"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Manifest",
+          "targetId": "manifest"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Operator Payout",
+          "targetId": "operator-payout"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Voucher",
+          "explanation": "A voucher is the credential (proof of booking); redemption is the act of validating and consuming that credential at the point of service.",
+          "explanation_ko": "바우처는 자격증명(예약 증빙)이고, 사용처리는 현장에서 그 자격증명을 검증·소비하는 행위다.",
+          "targetId": "voucher"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Ventrata — Redemption & access control",
+          "org": "Ventrata",
+          "version": "",
+          "section": "",
+          "url": "https://ventrata.com/",
+          "tier": "vendor-doc"
+        },
+        {
+          "name": "Bokun — Redeeming bookings",
+          "org": "Bokun (Tripadvisor)",
+          "version": "",
+          "section": "",
+          "url": "https://www.bokun.io/",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 16v-4a2 2 0 0 1 2-2h4M32 10h4a2 2 0 0 1 2 2v4M38 32v4a2 2 0 0 1-2 2h-4M16 38h-4a2 2 0 0 1-2-2v-4\"/><line x1=\"10\" y1=\"24\" x2=\"38\" y2=\"24\"/></svg>",
+      "term": "Redemption",
+      "definition": "The point-of-service act of validating and consuming a voucher or mobile ticket — scanning the code at the gate or meeting point — that turns a booking into delivered service.",
+      "lastReviewed": "2026-06-25"
+    },
+    {
       "id": "redress-number",
       "vertical": "common",
       "category": "customer",
@@ -32699,7 +33056,7 @@
     {
       "id": "retail-rate",
       "vertical": "tours",
-      "category": "tour-dist",
+      "category": "tour-commercial",
       "conceptType": "business-term",
       "status": "active",
       "term_ko": "소매 요금(Retail Rate)",
@@ -32750,7 +33107,7 @@
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 8H10v14l18 18 14-14z\"/><circle cx=\"16\" cy=\"16\" r=\"2.5\"/></svg>",
       "term": "Retail Rate",
       "definition": "The published price a traveler pays for an activity, from which intermediary commission is deducted — as opposed to the operator's net rate.",
-      "lastReviewed": "2026-06-24"
+      "lastReviewed": "2026-06-25"
     },
     {
       "id": "revenue-management",
@@ -32851,6 +33208,64 @@
       "term": "Revenue Management",
       "definition": "Revenue Management is the airline discipline of dynamically controlling seat availability and pricing across booking classes to maximize total revenue for each flight. It forecasts demand by class and applies seat-allocation controls (e.g., booking limits, nesting, bid prices) so that higher-yield demand is not displaced by early low-fare bookings.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "review-ugc",
+      "vertical": "tours",
+      "category": "tour-dist",
+      "conceptType": "business-term",
+      "status": "active",
+      "abbreviation": "UGC",
+      "term_ko": "리뷰·UGC(Review & User-Generated Content)",
+      "definition_ko": "여행자가 작성한 리뷰·평점·사진으로, 사회적 증거가 가장 강력한 수요 신호인 익스피리언스에서 탐색과 전환을 견인한다.",
+      "longDef": "In tours and activities, ratings and review volume drive ranking, sort order, and \"likely to sell out\" signals more than any other factor, and a marketplace's review corpus (e.g. Tripadvisor/Viator) is a core competitive moat. UGC also raises moderation, authenticity and fraud-control needs, and feeds back into operator content quality and demand-based pricing.",
+      "longDef_ko": "투어·액티비티에서 평점과 리뷰 수는 다른 어떤 요인보다 순위·정렬·\"매진 임박\" 신호를 좌우하며, 마켓플레이스의 리뷰 코퍼스(예: Tripadvisor/Viator)는 핵심 경쟁 해자다. UGC는 검수·진정성·부정 방지 요구를 키우고, 운영사 콘텐츠 품질과 수요 기반 가격으로 피드백된다.",
+      "aliases": [
+        "User-Generated Content",
+        "Traveler Review",
+        "Rating",
+        "Star Rating"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Experiences Marketplace",
+          "targetId": "experiences-marketplace"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Activity",
+          "targetId": "activity"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Demand-Based Pricing",
+          "targetId": "demand-based-pricing"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Tripadvisor — Reviews & ratings",
+          "org": "Tripadvisor",
+          "version": "",
+          "section": "",
+          "url": "https://www.tripadvisor.com/",
+          "tier": "encyclopedia"
+        },
+        {
+          "name": "Phocuswright — Reviews and the path to purchase",
+          "org": "Phocuswright",
+          "version": "",
+          "section": "",
+          "url": "https://www.phocuswright.com/",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 8l5 11 12 1-9 8 3 12-11-6-11 6 3-12-9-8 12-1z\"/></svg>",
+      "term": "Review & UGC",
+      "definition": "Traveler-written reviews, ratings and photos that power discovery and conversion in experiences, where social proof is the single strongest demand signal.",
+      "lastReviewed": "2026-06-25",
+      "distinctions": []
     },
     {
       "id": "revpar",
@@ -35237,8 +35652,8 @@
       "status": "active",
       "term_ko": "스킵더라인(Skip-the-Line)",
       "definition_ko": "명소에 우선 입장 또는 전용 레인 입장을 부여하여 일반 입장 대기열을 건너뛰게 하는 상품 특성이다.",
-      "longDef": "Skip-the-line is sold either as a premium tier of an attraction ticket or bundled into a guided activity, and is one of the most marketed value propositions in the experiences category. It does not always mean \"no wait\" — depending on the venue it may mean a separate, shorter priority queue or a reserved timed entry. Resellers surface it prominently as a filter/badge because it strongly influences conversion.",
-      "longDef_ko": "스킵더라인은 어트랙션 티켓의 프리미엄 등급으로 팔리거나 가이드 액티비티에 묶여 제공되며, 익스피리언스 카테고리에서 가장 많이 마케팅되는 가치 제안 중 하나다. 항상 \"대기 없음\"을 뜻하지는 않으며, 시설에 따라 더 짧은 별도 우선 대기열이거나 예약된 지정시간 입장일 수 있다. 리셀러는 전환율에 큰 영향을 주므로 이를 필터/배지로 두드러지게 노출한다.",
+      "longDef": "Skip-the-line is sold either as a premium tier of an attraction ticket or bundled into a guided activity, and is one of the most marketed value propositions in the experiences category. It does not always mean \"no wait\" — depending on the venue it may mean a separate, shorter priority queue or a reserved timed entry. Resellers surface it prominently as a filter/badge because it strongly influences conversion. It is a commercial access privilege, distinct from a virtual queue, which is an operational capacity tool.",
+      "longDef_ko": "스킵더라인은 어트랙션 티켓의 프리미엄 등급으로 팔리거나 가이드 액티비티에 묶여 제공되며, 익스피리언스 카테고리에서 가장 많이 마케팅되는 가치 제안 중 하나다. 항상 \"대기 없음\"을 뜻하지는 않으며, 시설에 따라 더 짧은 별도 우선 대기열이거나 예약된 지정시간 입장일 수 있다. 리셀러는 전환율에 큰 영향을 주므로 이를 필터/배지로 두드러지게 노출한다. 운영적 정원 도구인 가상 대기열과 구별되는 상업적 입장 특권이다.",
       "aliases": [
         "Fast Track",
         "Fast-Track Entry",
@@ -35255,6 +35670,19 @@
           "type": "broader",
           "targetTerm": "Activity",
           "targetId": "activity"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Virtual Queue",
+          "targetId": "virtual-queue"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Virtual Queue",
+          "explanation": "Skip-the-line grants immediate priority or a dedicated lane on arrival (a commercial access privilege); a virtual queue assigns a later timed return so the guest waits remotely (an operational capacity tool).",
+          "explanation_ko": "스킵더라인은 도착 즉시 우선 입장·전용 레인을 주는 상업적 입장 특권이고, 가상 대기열은 나중의 복귀 시각을 배정해 원격 대기하게 하는 운영적 정원 도구다.",
+          "targetId": "virtual-queue"
         }
       ],
       "sources": [
@@ -35270,8 +35698,7 @@
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M26 6 12 26h10l-2 16 16-22H26z\"/></svg>",
       "term": "Skip-the-Line",
       "definition": "A product feature granting priority or dedicated-lane entry to an attraction, letting the holder bypass the general-admission queue.",
-      "lastReviewed": "2026-06-24",
-      "distinctions": []
+      "lastReviewed": "2026-06-25"
     },
     {
       "id": "slot",
@@ -36933,6 +37360,74 @@
       "term": "Supplemental Liability Insurance",
       "definition": "Supplemental Liability Insurance (SLI) is an optional counter product that covers third-party claims for bodily injury and property damage caused by the renter while operating the rental vehicle, up to a stated combined limit. Unlike a damage waiver, it protects the renter's legal liability to others rather than the vehicle itself.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "supplier-cancellation",
+      "vertical": "tours",
+      "category": "tour-ops",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "공급자 취소(Supplier Cancellation)",
+      "definition_ko": "여행자가 아니라 운영사가 확정된 출발 편을 취소하는 경우(기상·최소 인원 미달·안전 사유)로, 재예약 또는 전액 환불 의무를 발생시킨다.",
+      "longDef": "Supplier cancellation is the mirror image of customer cancellation and a defining risk of tours: many group products carry a minimum-numbers guarantee and cancel below threshold, and outdoor activities cancel for weather. It triggers regulated notification, refund or rebooking obligations and is a major driver of operational cost and marketplace trust scores — distinct from the traveler-initiated free-cancellation right.",
+      "longDef_ko": "공급자 취소는 고객 취소의 거울상이자 투어의 정의적 위험이다. 많은 그룹 상품이 최소 인원 보장을 두고 기준 미달 시 취소하며, 야외 액티비티는 기상으로 취소한다. 규정된 통지·환불·재예약 의무를 촉발하고 운영비용과 마켓플레이스 신뢰 점수의 주요 동인이며, 여행자가 행사하는 무료 취소권과 구별된다.",
+      "aliases": [
+        "Operator Cancellation",
+        "Tour Cancellation",
+        "Cancelled Departure"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Free Cancellation",
+          "targetId": "free-cancellation"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Weather Policy",
+          "targetId": "weather-policy"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Refund",
+          "targetId": "refund"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Manifest",
+          "targetId": "manifest"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Free Cancellation",
+          "explanation": "Free cancellation is the traveler's right to cancel for a refund before a deadline; supplier cancellation is the operator cancelling the departure, which obliges a refund or rebooking regardless of timing.",
+          "explanation_ko": "무료 취소는 여행자가 기한 전 환불받고 취소할 권리이고, 공급자 취소는 운영사가 출발을 취소하는 것으로 시점과 무관하게 환불·재예약 의무를 진다.",
+          "targetId": "free-cancellation"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Arival — Operator cancellations & guarantees",
+          "org": "Arival",
+          "version": "",
+          "section": "",
+          "url": "https://arival.travel/",
+          "tier": "secondary"
+        },
+        {
+          "name": "Rezdy — Cancelling a departure",
+          "org": "Rezdy",
+          "version": "",
+          "section": "",
+          "url": "https://www.rezdy.com/",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"16\"/><line x1=\"13\" y1=\"13\" x2=\"35\" y2=\"35\"/></svg>",
+      "term": "Supplier Cancellation",
+      "definition": "When the operator — not the traveler — cancels a confirmed departure (for weather, minimum-numbers not met, or safety), triggering rebooking or full-refund obligations.",
+      "lastReviewed": "2026-06-25"
     },
     {
       "id": "surcharge",
@@ -40172,13 +40667,13 @@
     {
       "id": "virtual-queue",
       "vertical": "tours",
-      "category": "tour-product",
+      "category": "tour-ops",
       "conceptType": "business-term",
       "status": "active",
       "term_ko": "가상 대기열(Virtual Queue)",
-      "definition_ko": "명소 게스트가 물리적으로 줄 서지 않고 디지털로 대기 순번을 잡아 지정된 시각에 돌아오게 하는 시스템이다.",
-      "longDef": "Virtual queuing — popularized by theme parks (e.g. Disney's Genie+/Lightning Lane, Universal's systems) — converts physical waiting into timed return windows, and is increasingly a paid, distributable product feature. It is related to but distinct from skip-the-line: the guest still has an assigned wait, just managed digitally and spread across the day.",
-      "longDef_ko": "가상 대기열은 테마파크(예: 디즈니 Genie+/Lightning Lane, 유니버설의 시스템)에서 대중화됐으며, 물리적 대기를 지정 복귀 시간대로 전환한다. 점차 유료·유통 가능한 상품 특성이 되고 있다. 스킵더라인과 관련되지만 구별된다. 게스트는 여전히 배정된 대기를 갖되 디지털로 관리되고 하루에 걸쳐 분산된다.",
+      "definition_ko": "명소 게스트가 물리적으로 줄 서지 않고 디지털로 대기 순번을 잡아 지정된 시각에 돌아오게 하는 정원 관리 시스템이다.",
+      "longDef": "Virtual queuing — popularized by theme parks (e.g. Disney's Genie+/Lightning Lane, Universal's systems) — converts physical waiting into timed return windows and is fundamentally a crowd/capacity tool, increasingly also a paid, distributable feature. It is related to but distinct from skip-the-line: the guest still has an assigned wait, just managed digitally and spread across the day, which is why it sits with operations and capacity rather than the product/shop layer.",
+      "longDef_ko": "가상 대기열은 테마파크(예: 디즈니 Genie+/Lightning Lane, 유니버설의 시스템)에서 대중화됐으며, 물리적 대기를 지정 복귀 시간대로 전환한다. 본질적으로 혼잡/정원 관리 도구이자 점차 유료·유통 가능한 기능이다. 스킵더라인과 관련되지만 구별된다 — 게스트는 여전히 배정된 대기를 갖되 디지털로 관리되고 하루에 분산되므로, 상품/검색 계층이 아니라 운영·정원 영역에 속한다.",
       "aliases": [
         "Virtual Line",
         "Lightning Lane",
@@ -40196,9 +40691,9 @@
           "targetId": "timeslot"
         },
         {
-          "type": "broader",
-          "targetTerm": "Attraction Ticket",
-          "targetId": "attraction-ticket"
+          "type": "related",
+          "targetTerm": "Capacity",
+          "targetId": "capacity"
         }
       ],
       "distinctions": [
@@ -40221,8 +40716,8 @@
       ],
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"24\" r=\"4\"/><circle cx=\"24\" cy=\"24\" r=\"4\"/><circle cx=\"36\" cy=\"24\" r=\"4\"/><path d=\"M16 24h4M28 24h4\"/></svg>",
       "term": "Virtual Queue",
-      "definition": "A system that lets attraction guests hold a place in line digitally and return at an assigned time, instead of waiting physically in the queue.",
-      "lastReviewed": "2026-06-24"
+      "definition": "A capacity-management system that lets attraction guests hold a place in line digitally and return at an assigned time, instead of waiting physically in the queue.",
+      "lastReviewed": "2026-06-25"
     },
     {
       "id": "void",
@@ -40592,8 +41087,8 @@
       "status": "active",
       "term_ko": "바우처(Voucher)",
       "definition_ko": "확정된 액티비티 예약을 증빙하는 문서(인쇄물 또는 디지털)로, 여행자가 운영사에 제시하여 서비스를 사용 처리(redeem)한다.",
-      "longDef": "A voucher carries the booking reference, product/option, date and timeslot, participant count, and redemption instructions, and is the hand-off artifact between the reseller and the operator at the point of service. Vouchers may be \"operator vouchers\" requiring exchange for a physical ticket, or directly scannable. The modern form is the mobile ticket; the underlying concept — proof of a paid booking to be redeemed — is the voucher.",
-      "longDef_ko": "바우처에는 예약 참조번호, 상품/옵션, 날짜·시간대, 인원수, 사용 안내가 담기며, 서비스 현장에서 리셀러와 운영사 간 인계 매개물 역할을 한다. 실물 티켓으로 교환해야 하는 \"오퍼레이터 바우처\"이거나 바로 스캔 가능한 형태일 수 있다. 현대적 형태는 모바일 티켓이며, 그 바탕 개념(사용 처리할 결제 완료 예약의 증빙)이 바로 바우처다.",
+      "longDef": "A voucher carries the booking reference, product/option, date and timeslot, participant count, and redemption instructions, and is the hand-off artifact between the reseller and the operator at the point of service. Vouchers may be \"operator vouchers\" requiring exchange for a physical ticket, or directly scannable. The modern form is the mobile ticket; the underlying concept — proof of a paid booking to be redeemed — is the voucher, and it should not be confused with a gift experience voucher (prepaid, transferable stored value).",
+      "longDef_ko": "바우처에는 예약 참조번호, 상품/옵션, 날짜·시간대, 인원수, 사용 안내가 담기며, 서비스 현장에서 리셀러와 운영사 간 인계 매개물 역할을 한다. 실물 티켓으로 교환해야 하는 \"오퍼레이터 바우처\"이거나 바로 스캔 가능한 형태일 수 있다. 현대적 형태는 모바일 티켓이며, 그 바탕 개념(사용 처리할 결제 완료 예약의 증빙)이 바로 바우처다. 선불·양도 가능한 적립형 체험 기프트 바우처와 혼동해서는 안 된다.",
       "aliases": [
         "Booking Voucher",
         "Redemption Voucher",
@@ -40607,8 +41102,13 @@
         },
         {
           "type": "related",
-          "targetTerm": "Activity",
-          "targetId": "activity"
+          "targetTerm": "Redemption",
+          "targetId": "redemption"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Gift Experience Voucher",
+          "targetId": "gift-experience-voucher"
         }
       ],
       "distinctions": [
@@ -40617,6 +41117,12 @@
           "explanation": "A voucher is the booking-proof concept in any form; a mobile ticket is its smartphone-delivered, directly-scannable digital implementation.",
           "explanation_ko": "바우처는 형태와 무관한 예약 증빙 개념이고, 모바일 티켓은 스마트폰으로 전달되어 바로 스캔되는 디지털 구현형이다.",
           "targetId": "mobile-ticket"
+        },
+        {
+          "targetTerm": "Gift Experience Voucher",
+          "explanation": "A redemption voucher proves a specific paid booking and is consumed once; a gift experience voucher is prepaid transferable stored value bought to gift, redeemed later by making a booking.",
+          "explanation_ko": "사용처리 바우처는 특정 결제 예약을 증빙하고 1회 소비되며, 체험 기프트 바우처는 선물용으로 구매하는 선불·양도 가능 적립 금액으로 나중에 예약으로 사용된다.",
+          "targetId": "gift-experience-voucher"
         }
       ],
       "sources": [
@@ -40632,7 +41138,7 @@
       "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14 6h14l8 8v28H14z\"/><path d=\"M28 6v8h8\"/><line x1=\"19\" y1=\"24\" x2=\"31\" y2=\"24\"/><line x1=\"19\" y1=\"30\" x2=\"31\" y2=\"30\"/></svg>",
       "term": "Voucher",
       "definition": "The document — printed or digital — evidencing a confirmed activity booking, which the traveler presents to the operator to redeem the service.",
-      "lastReviewed": "2026-06-24"
+      "lastReviewed": "2026-06-25"
     },
     {
       "id": "waitlist",
@@ -40717,6 +41223,62 @@
       "term": "Waitlist",
       "definition": "A Waitlist is a holding list for a flight and booking class that has no immediate confirmed Availability, on which a passenger's request is queued pending seats opening up. The segment is held in a waitlist status (e.g., HL) and is cleared to confirmed (HK) automatically or manually if and when space becomes available.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "weather-policy",
+      "vertical": "tours",
+      "category": "tour-ops",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "기상 정책(Weather Policy)",
+      "definition_ko": "기상으로 야외 액티비티가 불가할 때의 처리 규칙(재예약·레인 체크·부분 또는 전액 환불)으로, 어드벤처·수상 체험의 정의적 관심사다.",
+      "longDef": "Weather policy is a specialized post-sale rule set distinct from generic cancellation: it defines the threshold (what weather triggers it), who decides (operator call), and the remedy (reschedule, voucher/rain check, or refund). Because weather risk is borne differently across products and channels, clear, machine-readable weather policy is a recurring content and trust requirement, and a frequent source of supplier cancellations.",
+      "longDef_ko": "기상 정책은 일반 취소와 구별되는 특화된 사후 규칙이다. 발동 기준(어떤 기상에서), 결정 주체(운영사 판단), 구제책(재일정·바우처/레인 체크·환불)을 정의한다. 기상 위험이 상품·채널마다 다르게 부담되므로, 명확하고 기계 판독 가능한 기상 정책은 반복되는 콘텐츠·신뢰 요건이자 공급자 취소의 잦은 원인이다.",
+      "aliases": [
+        "Weather Disruption",
+        "Rain Check",
+        "Weather Guarantee"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Supplier Cancellation",
+          "targetId": "supplier-cancellation"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Refund",
+          "targetId": "refund"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Cancellation Policy",
+          "targetId": "cancellation-policy"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Arival — Weather and outdoor experience risk",
+          "org": "Arival",
+          "version": "",
+          "section": "",
+          "url": "https://arival.travel/",
+          "tier": "secondary"
+        },
+        {
+          "name": "FareHarbor — Weather cancellation handling",
+          "org": "FareHarbor (Booking Holdings)",
+          "version": "",
+          "section": "",
+          "url": "https://fareharbor.com/",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M16 30a8 8 0 0 1 .5-16 10 10 0 0 1 19 3 7 7 0 0 1-1.5 13z\"/><line x1=\"18\" y1=\"36\" x2=\"16\" y2=\"40\"/><line x1=\"26\" y1=\"36\" x2=\"24\" y2=\"40\"/><line x1=\"34\" y1=\"36\" x2=\"32\" y2=\"40\"/></svg>",
+      "term": "Weather Policy",
+      "definition": "The rules governing what happens when weather prevents an outdoor activity — rebooking, a rain check, or a partial or full refund — a defining concern for adventure and water-based experiences.",
+      "lastReviewed": "2026-06-25",
+      "distinctions": []
     },
     {
       "id": "well-to-wake-wtw",

@@ -5,13 +5,13 @@ description: >-
   The amount a reseller adds on top of an operator's net rate to set its retail
   price, forming the reseller's margin under a net-rate model.
 tags:
-  - tour-dist
+  - tour-commercial
   - active
   - Tours & Activities
-timestamp: '2026-06-24T00:00:00Z'
+timestamp: '2026-06-25T00:00:00Z'
 id: markup
 vertical: tours
-category: tour-dist
+category: tour-commercial
 conceptType: business-term
 status: active
 term_ko: 마크업(Markup)

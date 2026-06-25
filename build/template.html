@@ -235,6 +235,13 @@ mark{background:var(--accent-weak);color:var(--accent);padding:0 1px;border-radi
 .flow-arrow{flex:0 0 52px;align-self:flex-start;margin-top:20px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--muted);gap:5px;padding:0 3px}
 .flow-arrow .fa-line{font-size:1.35rem;line-height:1;color:var(--accent)}
 .flow-arrow .fa-lab{font-family:var(--sans);font-size:0.58rem;font-weight:600;text-align:center;color:var(--muted);white-space:normal;word-break:keep-all;line-height:1.3}
+.flow-postsale{margin:6px 0 4px;border:1px dashed var(--accent);border-left:3px solid var(--accent);border-radius:var(--r);background:var(--surface-2);padding:12px 16px}
+.flow-postsale:empty{display:none}
+.flow-ps-head{font-family:var(--sans);font-size:0.84rem;color:var(--text);margin-bottom:9px}
+.flow-ps-head strong{font-weight:700}
+.flow-ps-head .flow-ps-desc{font-family:var(--serif);font-weight:400;font-size:0.82rem;color:var(--muted)}
+.flow-ps-terms{display:flex;flex-wrap:wrap;gap:6px}
+.flow-ps-terms .flow-term{flex:0 1 auto}
 .flow-foundation{margin:20px 0 28px;border:1px dashed var(--border);border-radius:var(--r);background:var(--surface-2);padding:16px}
 .flow-foundation h4{font-family:var(--sans);font-weight:700;font-size:0.9rem;margin:0 0 4px;color:var(--text)}
 .flow-foundation .ff-sub{font-family:var(--serif);font-size:0.82rem;color:var(--muted);margin:0 0 14px}
@@ -488,7 +495,7 @@ g.mmn.focused rect {
       CT:{acronym:'약어',"standard-term":'표준 용어',standard:'표준',"business-term":'업무 용어',"provider-term":'공급자 용어',code:'코드',metric:'지표',process:'프로세스',role:'역할',document:'문서'},
       PR:{same:'같음',narrower:'하위',broader:'상위',related:'관련',conflicting:'충돌'},
       classroom:'🔄 유통 구조', classroomPh:'상품이 공급자에서 여행자에게 이르는 전체 유통·예약·이용 흐름을 버티컬별로 따라가며, 각 단계의 핵심 용어를 사전과 연결해 배치했습니다.',
-      flowFoundationH:'공통 기반 레이어 (Cross-industry)', flowFoundationP:'아래 영역은 모든 버티컬의 전 단계를 떠받치는 산업 공통 기반입니다. 식별자·고객·표준·결제·보험·지속가능성이 유통 흐름 전반에 함께 작동합니다.',
+      flowFoundationH:'공통 기반 레이어 (Cross-industry)', flowFoundationP:'아래 영역은 모든 버티컬의 전 단계를 떠받치는 산업 공통 기반입니다. 결제·정산, 유통 표준, 식별자, 고객, 승객권리·규제, 보험, 지속가능성이 유통 흐름 전반에 함께 작동합니다.',
       btnBack:'이전 단계', btnNext:'다음 단계', btnFinish:'학습 완료', btnRestart:'다시 학습',
       verticalAir:'항공 (Air)',
       verticalHotel:'호텔 (Hotel)',
@@ -518,7 +525,7 @@ g.mmn.focused rect {
       CT:{acronym:'Acronym',"standard-term":'Standard term',standard:'Standard',"business-term":'Business term',"provider-term":'Provider term',code:'Code',metric:'Metric',process:'Process',role:'Role',document:'Document'},
       PR:{same:'Same',narrower:'Narrower',broader:'Broader',related:'Related',conflicting:'Conflicting'},
       classroom:'🔄 Distribution', classroomPh:'Follow how each travel product flows from supplier to traveler — distribution, booking and fulfillment — with the key terms of every stage linked to the glossary.',
-      flowFoundationH:'Cross-industry foundation', flowFoundationP:'These layers underpin every stage of every vertical: identifiers, customer, standards, payments, insurance and sustainability all operate across the entire distribution flow.',
+      flowFoundationH:'Cross-industry foundation', flowFoundationP:'These layers underpin every stage of every vertical: payments & settlement, distribution standards, identifiers, customer, passenger-rights & compliance, insurance and sustainability all operate across the entire distribution flow.',
       btnBack:'Back', btnNext:'Next Step', btnFinish:'Finish', btnRestart:'Restart',
       verticalAir:'Air',
       verticalHotel:'Hotel',
@@ -731,16 +738,18 @@ g.mmn.focused rect {
     { key:'distribute', ico:'🔀', color:'#7d57c2', title:{ ko:'유통·중개',   en:'Distribution' } },
     { key:'shop',       ico:'🔎', color:'#2f86d6', title:{ ko:'검색·쇼핑',   en:'Search & Shopping' } },
     { key:'book',       ico:'📝', color:'#0e8a8a', title:{ ko:'예약·주문',   en:'Booking & Order' } },
-    { key:'pay',        ico:'💳', color:'#b5560f', title:{ ko:'결제·정산',   en:'Payment & Settlement' } },
-    { key:'fulfill',    ico:'🧳', color:'#2b8a3e', title:{ ko:'이용·이행',   en:'Fulfillment & Travel' } }
+    { key:'pay',        ico:'💳', color:'#b5560f', title:{ ko:'고객 결제',   en:'Customer Payment' } },
+    { key:'fulfill',    ico:'🧳', color:'#2b8a3e', title:{ ko:'이용·이행',   en:'Fulfillment & Travel' } },
+    { key:'settle',     ico:'🏦', color:'#1b6e4d', title:{ ko:'정산·지급',   en:'Settlement & Payout' } }
   ];
-  // labels for the 5 connectors between the 6 stages
+  // labels for the 6 connectors between the 7 stages
   const FLOW_ARROWS = [
     { ko:'재고 공개',  en:'Inventory' },
     { ko:'콘텐츠',    en:'Content' },
     { ko:'오퍼 선택', en:'Offer' },
     { ko:'주문 확정', en:'Order' },
-    { ko:'발권·이행', en:'Issue' }
+    { ko:'발권·이행', en:'Issue' },
+    { ko:'대금 회수', en:'Payout' }
   ];
 
   const FLOWS = {
@@ -762,13 +771,19 @@ g.mmn.focused rect {
         book: { actors:[{ko:'고객',en:'Customer'}],
           desc:{ ko:'오퍼를 선택하면 PNR(또는 NDC Order)이 생성되어 여정·좌석·특별요청이 기록되고 발권 시한이 설정됩니다.', en:'On selection a PNR (or NDC Order) is created capturing itinerary, seats and special requests, with a ticketing time limit set.' },
           terms:['pnr','record-locator','segment','ssr','order','ticketing-time-limit'] },
-        pay: { actors:[{ko:'여행사',en:'Agency'},{ko:'항공사',en:'Airline'},{ko:'IATA·ARC',en:'IATA / ARC'}],
-          desc:{ ko:'지불수단이 처리되고 여행사·항공사 간 판매대금이 BSP/ARC(또는 NDC SwO)를 통해 정산됩니다.', en:'The form of payment is processed and agency–airline funds settle through BSP/ARC (or NDC Settlement with Orders).' },
-          terms:['form-of-payment','bsp','arc','vcc','iata-clearing-house','settlement-with-orders-swo'] },
+        pay: { actors:[{ko:'고객',en:'Customer'},{ko:'여행사',en:'Agency'}],
+          desc:{ ko:'고객의 지불수단이 승인·처리됩니다(카드·VCC·강력한 고객 인증).', en:'The customer form of payment is authorized and processed (card, VCC, strong customer authentication).' },
+          terms:['form-of-payment','vcc','3-d-secure','authorization-hold'] },
         fulfill: { actors:[{ko:'항공사',en:'Airline'},{ko:'공항',en:'Airport'}],
-          desc:{ ko:'결제 후 전자항공권이 발권되고 출발 통제(DCS)로 탑승수속·탑승이 처리되며, 비정상 운항 시 승객 권리가 적용됩니다.', en:'After payment an e-ticket is issued, check-in and boarding run through the DCS, and passenger-rights rules apply on disruption.' },
-          terms:['e-ticket','flight-coupon','departure-control-system-dcs','irops','eu-regulation-261-2004','denied-boarding-compensation'] }
-      }
+          desc:{ ko:'결제 후 전자항공권이 발권되고 출발 통제(DCS)로 탑승수속·탑승이 처리됩니다.', en:'After payment an e-ticket is issued and check-in/boarding run through the DCS.' },
+          terms:['e-ticket','flight-coupon','departure-control-system-dcs','inter-airline-through-check-in-iatci'] },
+        settle: { actors:[{ko:'여행사',en:'Agency'},{ko:'항공사',en:'Airline'},{ko:'IATA',en:'IATA'}],
+          desc:{ ko:'판매 대금이 BSP/ARC·IATA 정산소를 거쳐 항공사로 정산되며, NDC에서는 주문 기반 정산(SwO)이 적용됩니다.', en:'Sales settle to the airline through BSP/ARC and the IATA Clearing House, with NDC Settlement with Orders in the order world.' },
+          terms:['bsp','arc','iata-clearing-house','settlement-cycle','settlement-with-orders-swo'] }
+      },
+      postSale: { actors:[{ko:'고객',en:'Customer'},{ko:'항공사',en:'Airline'}],
+        desc:{ ko:'환불·재발권·일정 변경과 비정상 운항(IROPS)·승객 권리가 처리됩니다.', en:'Refunds, reissues and changes plus disruption (IROPS) and passenger-rights handling.' },
+        terms:['refund','exchange','reissue','irops','eu-regulation-261-2004','denied-boarding-compensation'] }
     },
     lodging: {
       intro: {
@@ -788,13 +803,19 @@ g.mmn.focused rect {
         book: { actors:[{ko:'고객',en:'Customer'},{ko:'호텔',en:'Hotel'}],
           desc:{ ko:'예약이 확정되면 OTA_HotelResNotif로 호텔에 통지되고 취소·보증 정책과 컷오프가 적용됩니다.', en:'On confirmation the booking is pushed to the hotel via OTA_HotelResNotif, subject to cancellation, guarantee policies and cutoffs.' },
           terms:['reservation-notification-message','direct-booking','cancellation-policy','guarantee-policy','group-block'] },
-        pay: { actors:[{ko:'OTA',en:'OTA'},{ko:'호텔',en:'Hotel'}],
-          desc:{ ko:'머천트 모델(중개사 선결제)인지 에이전시 모델(투숙 후 커미션)인지에 따라 정산·유통 비용 구조가 달라집니다.', en:'Settlement and distribution-cost structure differ by merchant model (intermediary collects) versus agency model (commission post-stay).' },
-          terms:['merchant-model','agency-model','commissionable-rate','distribution-cost','merchant-of-record','3-d-secure'] },
+        pay: { actors:[{ko:'고객',en:'Customer'},{ko:'OTA',en:'OTA'}],
+          desc:{ ko:'머천트 모델(중개사 선결제)인지 에이전시 모델(투숙 후 결제)인지에 따라 누가 결제를 수납하는지가 달라집니다.', en:'Who collects the payment depends on the merchant model (intermediary collects upfront) versus the agency model (pay at stay).' },
+          terms:['merchant-model','agency-model','merchant-of-record','3-d-secure'] },
         fulfill: { actors:[{ko:'호텔',en:'Hotel'}],
-          desc:{ ko:'체크인·투숙으로 서비스가 제공되며 식사 조건·숙박일수가 반영되고, 노쇼 시 정책 요금이 부과됩니다.', en:'Service is delivered at check-in and stay reflecting board basis and length of stay, with policy charges on no-show.' },
-          terms:['occupancy','no-show','board-basis','length-of-stay','run-of-house-roh'] }
-      }
+          desc:{ ko:'체크인·투숙으로 서비스가 제공되며 식사 조건·숙박일수가 반영됩니다.', en:'Service is delivered at check-in and stay, reflecting board basis and length of stay.' },
+          terms:['occupancy','board-basis','length-of-stay','run-of-house-roh'] },
+        settle: { actors:[{ko:'OTA',en:'OTA'},{ko:'호텔',en:'Hotel'}],
+          desc:{ ko:'에이전시 모델에서는 투숙 후 커미션 요금으로 정산되고, 유통 비용·송금이 반영됩니다.', en:'Under the agency model the commissionable rate is settled post-stay, reflecting distribution cost and remittance.' },
+          terms:['commissionable-rate','distribution-cost','remittance','chargeback'] }
+      },
+      postSale: { actors:[{ko:'고객',en:'Customer'},{ko:'호텔',en:'Hotel'}],
+        desc:{ ko:'취소·보증 정책과 노쇼·해제 기간에 따라 변경·취소·환불이 처리됩니다.', en:'Changes, cancellations and refunds are handled per cancellation/guarantee policy, no-show and release period.' },
+        terms:['cancellation-policy','no-show','guarantee-policy','release-period'] }
     },
     ground: {
       intro: {
@@ -814,13 +835,19 @@ g.mmn.focused rect {
         book: { actors:[{ko:'고객',en:'Customer'}],
           desc:{ ko:'렌탈 계약 또는 통합/비통합 예약권(IRT/NRT)으로 예약이 확정되고 편도 반납 등 조건이 적용됩니다.', en:'Bookings are confirmed as rental agreements or integrated/non-integrated reservation tickets (IRT/NRT), with conditions like one-way drop.' },
           terms:['rental-agreement','integrated-reservation-ticket-irt','non-integrated-reservation-ticket-nrt','one-way-drop-fee'] },
-        pay: { actors:[{ko:'렌터카사',en:'Rental Co.'}],
+        pay: { actors:[{ko:'고객',en:'Customer'},{ko:'렌터카사',en:'Rental Co.'}],
           desc:{ ko:'기본요금에 면책(CDW/LDW)·자기부담금·연료·부가요금이 더해져 최종 대금이 산정·결제됩니다.', en:'Final charges combine the base rate with waivers (CDW/LDW), excess, fuel and surcharges.' },
-          terms:['collision-damage-waiver','loss-damage-waiver','excess','fuel-purchase-option','young-driver-surcharge','concession-recovery-fee'] },
+          terms:['collision-damage-waiver','loss-damage-waiver','excess','fuel-purchase-option','young-driver-surcharge'] },
         fulfill: { actors:[{ko:'렌터카사',en:'Rental Co.'},{ko:'철도',en:'Rail'}],
-          desc:{ ko:'차량 픽업·승차로 이용이 시작되고 바코드 발권(FCB)·휴차 손실 정산이 이뤄지며 철도 승객권리가 적용됩니다.', en:'Use begins at pickup/boarding with barcode fulfilment (FCB), loss-of-use settlement, and rail passenger-rights protections.' },
-          terms:['fulfillment-rail','flexible-content-barcode-fcb','loss-of-use','rail-passenger-rights-regulation-eu-2021-782'] }
-      }
+          desc:{ ko:'차량 픽업·승차로 이용이 시작되고 바코드 발권(FCB)·편도 반납 처리가 이뤄집니다.', en:'Use begins at pickup/boarding with barcode fulfilment (FCB) and one-way drop handling.' },
+          terms:['fulfillment-rail','flexible-content-barcode-fcb','one-way-drop-fee'] },
+        settle: { actors:[{ko:'렌터카사',en:'Rental Co.'},{ko:'공항',en:'Airport'}],
+          desc:{ ko:'반납 시 보증금·휴차 손실·영업권 회수 수수료 등 최종 정산이 이뤄집니다.', en:'On return the deposit, loss-of-use and concession-recovery fees are reconciled into a final settlement.' },
+          terms:['loss-of-use','concession-recovery-fee'] }
+      },
+      postSale: { actors:[{ko:'고객',en:'Customer'},{ko:'철도',en:'Rail'}],
+        desc:{ ko:'손해 청구·자기부담금 정산과 철도 여객권리에 따른 환불·보상이 처리됩니다.', en:'Damage claims and excess, plus refunds/compensation under rail passenger-rights, are handled.' },
+        terms:['rail-passenger-rights-regulation-eu-2021-782','loss-of-use','excess'] }
     },
     cruise: {
       intro: {
@@ -840,13 +867,19 @@ g.mmn.focused rect {
         book: { actors:[{ko:'고객',en:'Customer'},{ko:'선사',en:'Cruise Line'}],
           desc:{ ko:'예약이 확정되면 게스트 티켓 컨트랙트(승선 계약)가 성립하고 개런티 선실 배정 조건이 적용됩니다.', en:'On confirmation a guest ticket contract is formed, with guarantee-cabin assignment terms applying.' },
           terms:['guest-ticket-contract','guarantee-cabin-gty','single-supplement'] },
-        pay: { actors:[{ko:'선사',en:'Cruise Line'}],
-          desc:{ ko:'예치금·잔금이 결제되고 선상 크레딧(OBC)·퓨처 크루즈 크레딧·일일 서비스 차지가 정산에 반영됩니다.', en:'Deposits and balances are paid, with onboard credit, future cruise credit and daily service charges factored into settlement.' },
-          terms:['onboard-credit-obc','future-cruise-credit-fcc','daily-service-charge'] },
+        pay: { actors:[{ko:'고객',en:'Customer'},{ko:'선사',en:'Cruise Line'}],
+          desc:{ ko:'예치금과 잔금이 결제되고 일일 서비스 차지가 부과됩니다.', en:'A deposit and the balance are paid, with the daily service charge applied.' },
+          terms:['form-of-payment','daily-service-charge','3-d-secure'] },
         fulfill: { actors:[{ko:'선사',en:'Cruise Line'}],
           desc:{ ko:'승선(임바케이션)과 비상소집훈련을 거쳐 항해가 시작되고 기항지 투어·오픈 시팅 다이닝으로 서비스가 제공됩니다.', en:'Sailing begins with embarkation and the muster drill, and service is delivered through shore excursions and open-seating dining.' },
-          terms:['embarkation','muster-drill','shore-excursion','open-seating-dining'] }
-      }
+          terms:['embarkation','muster-drill','shore-excursion','open-seating-dining'] },
+        settle: { actors:[{ko:'여행사',en:'Travel Agent'},{ko:'선사',en:'Cruise Line'}],
+          desc:{ ko:'커미션 대상 운임과 비수수료 운임(NCF)·투어 컨덕터 크레딧으로 여행사·선사 간 정산이 이뤄집니다.', en:'Agent–line settlement is computed from commissionable fare net of the non-commissionable fare (NCF), with tour-conductor credits.' },
+          terms:['non-commissionable-fare-ncf','tour-conductor-credit-tc'] }
+      },
+      postSale: { actors:[{ko:'고객',en:'Customer'},{ko:'선사',en:'Cruise Line'}],
+        desc:{ ko:'취소 시 퓨처 크루즈 크레딧(FCC)·선상 크레딧(OBC)과 승선 계약 조건이 적용됩니다.', en:'On cancellation, future cruise credit (FCC), onboard credit (OBC) and the guest-ticket-contract terms apply.' },
+        terms:['future-cruise-credit-fcc','onboard-credit-obc','guest-ticket-contract'] }
     },
     tours: {
       intro: {
@@ -855,33 +888,41 @@ g.mmn.focused rect {
       },
       stages: {
         supply: { actors:[{ko:'액티비티 운영사',en:'Activity Operator'},{ko:'DMC·랜드사',en:'DMC / Land'},{ko:'예약 시스템',en:'Res-tech'}],
-          desc:{ ko:'운영사·DMC가 액티비티·가이드/프라이빗 투어·어트랙션 티켓·시티패스를 타임슬롯 단위 정원으로 예약 시스템에 편성합니다.', en:'Operators and DMCs load activities, guided/private tours, attraction tickets and city passes into reservation tech as per-timeslot capacity.' },
-          terms:['activity','attraction-ticket','guided-tour','private-tour','city-pass','timeslot'] },
+          desc:{ ko:'운영사·DMC가 액티비티·가이드 투어·어트랙션 티켓을 타임슬롯 단위 정원(capacity)으로 예약 시스템에 편성합니다.', en:'Operators and DMCs load activities, guided tours and attraction tickets into reservation tech as per-timeslot capacity.' },
+          terms:['activity','attraction-ticket','guided-tour','capacity','timeslot','city-pass'] },
         distribute: { actors:[{ko:'커넥티비티 허브',en:'Connectivity Hub'},{ko:'마켓플레이스',en:'Marketplace'}],
-          desc:{ ko:'예약 시스템이 리셀러 API·OCTO 표준으로 노출한 재고가 커넥티비티 허브를 거쳐 익스피리언스 마켓플레이스로 유통됩니다.', en:'Inventory exposed via reseller APIs and the OCTO standard flows through connectivity hubs to experiences marketplaces.' },
-          terms:['activity-operator','reservation-technology','connectivity-hub','reseller-api','octo-spec','experiences-marketplace'] },
+          desc:{ ko:'예약 시스템이 리셀러 API·OCTO 표준으로 노출한 재고가 커넥티비티 허브를 거쳐 익스피리언스 마켓플레이스로 유통되며, 리뷰·UGC가 노출을 좌우합니다.', en:'Inventory exposed via reseller APIs and the OCTO standard flows through connectivity hubs to experiences marketplaces, where reviews/UGC drive exposure.' },
+          terms:['reservation-technology','connectivity-hub','reseller-api','octo-spec','experiences-marketplace','review-ugc'] },
         shop: { actors:[{ko:'고객',en:'Customer'}],
-          desc:{ ko:'고객이 스킵더라인·홉온홉오프·무료취소 옵션을 조회하며, 즉시확정 또는 요청형 가용성에 따라 구매 가능 여부가 결정됩니다.', en:'Travelers shop skip-the-line, hop-on hop-off and free-cancellation options; buyability depends on instant or on-request availability.' },
-          terms:['skip-the-line','hop-on-hop-off','free-cancellation','instant-confirmation','on-request-booking'] },
+          desc:{ ko:'고객이 스킵더라인·홉온홉오프·무료취소 옵션을 조회하며, 수요 기반 가격과 즉시확정/요청형 가용성에 따라 구매 가능 여부가 결정됩니다.', en:'Travelers shop skip-the-line, hop-on hop-off and free-cancellation options; price and buyability depend on demand-based pricing and instant/on-request availability.' },
+          terms:['skip-the-line','hop-on-hop-off','free-cancellation','demand-based-pricing','instant-confirmation','on-request-booking'] },
         book: { actors:[{ko:'고객',en:'Customer'}],
           desc:{ ko:'컷오프 이전 예약이 확정되면 미팅 포인트가 안내되고 바우처·모바일 티켓이 발급되며 책임 면제 동의서가 수집됩니다.', en:'Booked before the cut-off, the meeting point is issued with a voucher and mobile ticket, and a liability waiver is collected.' },
           terms:['voucher','mobile-ticket','meeting-point','cut-off-time','liability-waiver'] },
-        pay: { actors:[{ko:'마켓플레이스',en:'Marketplace'},{ko:'운영사',en:'Operator'}],
-          desc:{ ko:'마켓플레이스가 기록상 가맹점(MoR)으로 소매가 결제를 수납하고, 커미션 또는 넷 요금 대비 마크업을 제한 금액이 운영사에 정산됩니다.', en:'The marketplace takes the retail payment as merchant of record and remits the operator net of commission or the markup over net rate.' },
-          terms:['retail-rate','marketplace-commission','markup','merchant-of-record','form-of-payment'] },
+        pay: { actors:[{ko:'마켓플레이스',en:'Marketplace'},{ko:'고객',en:'Customer'}],
+          desc:{ ko:'마켓플레이스가 기록상 가맹점(MoR)으로 고객의 소매가 결제를 즉시 수납합니다.', en:'The marketplace, as merchant of record, immediately collects the customer’s retail payment.' },
+          terms:['retail-rate','merchant-of-record','form-of-payment','3-d-secure'] },
         fulfill: { actors:[{ko:'액티비티 운영사',en:'Activity Operator'},{ko:'투어 디렉터',en:'Tour Director'}],
-          desc:{ ko:'매니페스트와 리소스(가이드·차량)가 배정되고, 현장에서 모바일 티켓·바우처를 스캔해 입장·체험이 이행됩니다.', en:'Manifests and resources (guides, vehicles) are assigned, and on-site the mobile ticket/voucher is scanned for entry and delivery.' },
-          terms:['mobile-ticket','meeting-point','guided-tour','manifest','resource-management'] }
-      }
+          desc:{ ko:'매니페스트와 리소스(가이드·차량)가 배정되고, 현장에서 모바일 티켓·바우처를 스캔(사용처리)해 입장·체험이 이행됩니다.', en:'Manifests and resources (guides, vehicles) are assigned, and on-site the mobile ticket/voucher is scanned (redeemed) for entry and delivery.' },
+          terms:['redemption','mobile-ticket','meeting-point','guided-tour','manifest','resource-management'] },
+        settle: { actors:[{ko:'마켓플레이스',en:'Marketplace'},{ko:'운영사',en:'Operator'}],
+          desc:{ ko:'이용(사용처리) 후 마켓플레이스가 커미션 또는 넷 요금 대비 마크업을 제한 금액을 운영사에 배치(예: 주간)로 지급합니다.', en:'After redemption the marketplace pays out to the operator — net of commission or the markup over net rate — on a batch (e.g. weekly) cycle.' },
+          terms:['operator-payout','marketplace-commission','markup','remittance'] }
+      },
+      postSale: { actors:[{ko:'고객',en:'Customer'},{ko:'운영사',en:'Operator'}],
+        desc:{ ko:'무료취소·공급자 취소·기상 정책에 따라 변경·취소·환불이 처리되고, 이용 후 리뷰·평점이 남습니다.', en:'Changes, cancellations and refunds run per free-cancellation, supplier-cancellation and weather policy; reviews/ratings follow the experience.' },
+        terms:['free-cancellation','supplier-cancellation','weather-policy','refund','review-ugc'] }
     }
   };
 
   // cross-industry layers that underpin every stage of every vertical
+  // ordered by operational foundationality: payments/standards/identifiers first, sustainability last
   const FLOW_FOUNDATION = [
+    { cat:'pay',            terms:['form-of-payment','merchant-of-record','3-d-secure','chargeback','tokenization'] },
+    { cat:'standards',      terms:['gds','ndc','one-order','order-management-system-oms','opentravel-alliance'] },
     { cat:'codes',          terms:['airport-code','airline-designator','iata-number','iso-4217-currency-code','ticket-number'] },
     { cat:'customer',       terms:['customer-profile','frequent-flyer-program','loyalty-tier-status','passenger-type-code','iata-one-id'] },
-    { cat:'standards',      terms:['gds','ndc','one-order','order-management-system-oms','opentravel-alliance'] },
-    { cat:'pay',            terms:['form-of-payment','merchant-of-record','3-d-secure','chargeback','tokenization'] },
+    { cat:'disruption',     terms:['eu-regulation-261-2004','denied-boarding-compensation','montreal-convention-1999','right-to-care','worldtracer'] },
     { cat:'insurance',      terms:['trip-cancellation','cancel-for-any-reason-cfar','travel-medical-insurance','trip-delay'] },
     { cat:'sustainability', terms:['corsia','sustainable-aviation-fuel-saf','flight-emissions-label-fel','iata-co2-connect'] }
   ];
@@ -954,6 +995,18 @@ g.mmn.focused rect {
       }).join('');
     }
 
+    function postSaleHTML() {
+      const ps = FLOWS[currentVertical].postSale;
+      if (!ps) return '';
+      const actors = (ps.actors || []).map(a => `<span class="flow-actor">${esc(LANG === 'ko' ? a.ko : a.en)}</span>`).join('');
+      const chips = (ps.terms || []).map(termChip).join('');
+      const desc = ps.desc ? (LANG === 'ko' ? ps.desc.ko : ps.desc.en) : '';
+      const head = LANG === 'ko' ? '🔁 사후 관리 — 예약·결제·이용·정산을 가로지르는 루프' : '🔁 Post-sale loop — spans book · pay · fulfill · settle';
+      return `<div class="flow-ps-head"><strong>${esc(head)}</strong> <span class="flow-ps-desc">${esc(desc)}</span></div>
+        ${actors ? `<div class="flow-actors">${actors}</div>` : ''}
+        <div class="flow-ps-terms">${chips}</div>`;
+    }
+
     function vtabsHTML() {
       return FLOW_VERTS.map(id => {
         const v = vertById.get(id) || { color:'var(--accent)' };
@@ -966,6 +1019,7 @@ g.mmn.focused rect {
     function renderBoard() {
       document.getElementById('flowIntro').textContent = FLOWS[currentVertical].intro[LANG] || FLOWS[currentVertical].intro.en;
       document.getElementById('flowBoard').innerHTML = boardHTML();
+      document.getElementById('flowPostsale').innerHTML = postSaleHTML();
       document.getElementById('flowVerts').innerHTML = vtabsHTML();
     }
 
@@ -979,6 +1033,7 @@ g.mmn.focused rect {
         <div class="flow-verticals" id="flowVerts">${vtabsHTML()}</div>
         <div class="flow-intro" id="flowIntro"></div>
         <div class="flow-board" id="flowBoard"></div>
+        <div class="flow-postsale" id="flowPostsale"></div>
 
         <div class="flow-foundation">
           <h4>${esc(t('flowFoundationH'))}</h4>
