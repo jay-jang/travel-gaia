@@ -248,6 +248,67 @@ mark{background:var(--accent-weak);color:var(--accent);padding:0 1px;border-radi
 .map-domain b{font-family:var(--mono);color:var(--muted);font-weight:500}
 @media (max-width:980px){.map-detail{grid-template-columns:1fr}.map-aside{border-left:0;border-top:1px solid var(--border)}.map-relgrid{grid-template-columns:1fr}}
 
+/* life-of flows: swimlane sequence journeys */
+.lf-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:14px;margin-bottom:8px}
+.lf-toolbar{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center}
+.lf-seg-label{font-family:var(--sans);font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--faint)}
+.lf-seg{display:inline-flex;border:1px solid var(--border);border-radius:var(--r);overflow:hidden}
+.lf-seg button{border:0;border-right:1px solid var(--border);background:var(--surface);color:var(--muted);font-family:var(--sans);font-weight:600;font-size:.8rem;padding:6px 13px;cursor:pointer;transition:.12s}
+.lf-seg button:last-child{border-right:0}
+.lf-seg button:hover{color:var(--accent)}
+.lf-seg button.on{background:var(--accent);color:var(--paper)}
+.lf-meta{font-family:var(--serif);color:var(--muted);font-size:.95rem;line-height:1.6;margin:6px 0 8px;max-width:84ch}
+.lf-bounds{font-family:var(--mono);font-size:.74rem;color:var(--faint);margin:0 0 6px}
+.lf-bounds b{color:var(--muted);font-weight:500}
+.lf-legend{display:flex;flex-wrap:wrap;gap:14px;margin:0 0 12px;font-family:var(--sans);font-size:.72rem;color:var(--muted)}
+.lf-lg{display:inline-flex;align-items:center;gap:7px}
+.lf-lg::before{content:"";width:22px;height:0;border-top:2px solid var(--muted)}
+.lf-lg-res::before{border-top-style:dashed}
+.lf-lg-asy::before{border-top-style:dotted}
+.lf-stage{display:grid;grid-template-columns:minmax(0,1fr) clamp(258px,28%,340px);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;background:var(--surface)}
+.lf-diagram{min-width:0;overflow-x:auto;padding:8px 6px;border-right:1px solid var(--border)}
+.lf-svg{display:block;width:100%;height:auto;min-width:540px}
+.lf-actor{font-family:var(--sans);font-size:11px;font-weight:700;fill:var(--text)}
+.lf-life{stroke:var(--border);stroke-width:1;stroke-dasharray:2 4}
+.lf-rowbg{fill:transparent;transition:fill .1s}
+.lf-hit{fill:transparent;cursor:pointer}
+.lf-step:hover .lf-rowbg{fill:color-mix(in srgb,var(--surface-2) 70%,transparent)}
+.lf-step.on .lf-rowbg{fill:var(--accent-weak)}
+.lf-line{stroke:var(--muted);stroke-width:1.4;fill:none}
+.lf-arrow{fill:var(--muted)}
+.lf-step.on .lf-line{stroke:var(--accent);stroke-width:2}
+.lf-step.on .lf-arrow{fill:var(--accent)}
+.lf-num{font-family:var(--mono);font-size:11px;fill:var(--faint)}
+.lf-step.on .lf-num{fill:var(--accent);font-weight:700}
+.lf-msg{font-family:var(--sans);font-size:10.5px;fill:var(--muted)}
+.lf-step.on .lf-msg{fill:var(--text)}
+.lf-inspector{padding:16px 18px;background:var(--surface-2);min-width:0}
+.lf-insp-n{font-family:var(--mono);font-size:.72rem;color:var(--faint);margin-bottom:4px}
+.lf-insp-route{font-family:var(--sans);font-size:.84rem;font-weight:600;color:var(--text);margin-bottom:6px}
+.lf-insp-route .lf-request,.lf-insp-route .lf-response,.lf-insp-route .lf-async,.lf-li-ar{color:var(--accent);font-weight:700;padding:0 3px}
+.lf-inspector h3{font-family:var(--serif);font-size:1.12rem;margin:0 0 6px;color:var(--text)}
+.lf-insp-msg{margin:0 0 8px}
+.lf-inspector code,.lf-li-act code{font-family:var(--mono);font-size:.76rem;background:var(--surface);border:1px solid var(--border);border-radius:2px;padding:1px 5px;color:var(--accent)}
+.lf-inspector p{font-family:var(--serif);font-size:.92rem;line-height:1.55;color:var(--muted);margin:8px 0}
+.lf-insp-note{font-style:italic;color:var(--faint)}
+.lf-inspector h4{font-family:var(--sans);font-size:.64rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--faint);margin:14px 0 6px}
+.lf-insp-terms a,.lf-insp-rel a,.lf-li-terms a{display:inline-block;font-family:var(--serif);color:var(--accent);font-size:.88rem;margin:1px 12px 1px 0;border-bottom:1px solid var(--accent-weak)}
+.lf-insp-terms a:hover,.lf-insp-rel a:hover,.lf-li-terms a:hover{text-decoration:none;color:var(--text);border-bottom-color:var(--text)}
+/* mobile message log (hidden on desktop) */
+.lf-log{display:none;list-style:none;margin:14px 0 0;padding:0;border:1px solid var(--border);border-radius:var(--r);overflow:hidden}
+.lf-log li{padding:12px 14px;border-bottom:1px solid var(--rule)}
+.lf-log li:last-child{border-bottom:0}
+.lf-li-h{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-bottom:5px}
+.lf-li-n{font-family:var(--mono);font-size:.74rem;color:var(--accent);font-weight:700}
+.lf-badge{font-family:var(--sans);font-size:.7rem;font-weight:600;color:var(--text);background:var(--surface-2);border:1px solid var(--border);border-radius:999px;padding:1px 9px}
+.lf-li-act{font-family:var(--sans);font-weight:600;font-size:.9rem;color:var(--text)}
+.lf-li-desc{font-family:var(--serif);font-size:.86rem;line-height:1.5;color:var(--muted);margin-top:3px}
+.lf-li-terms{margin-top:6px}
+@media (max-width:860px){
+  .lf-stage{display:none}
+  .lf-log{display:block}
+}
+
 /* distribution flow (classroom overhaul) */
 .flow-verticals{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 14px}
 .flow-vtab{padding:8px 16px;border:1px solid var(--border);background:var(--surface);color:var(--muted);border-radius:var(--r);cursor:pointer;font-family:var(--sans);font-weight:600;font-size:0.86rem;transition:.15s}
@@ -555,6 +616,7 @@ g.mmn.focused rect {
       gHint:'노드를 클릭하면 주변 관계가 확장되며, 이미 확장된 노드를 다시 클릭하면 용어 상세 페이지로 이동합니다. 외곽 점선 링 = 미확장 이웃 있음.',
       mapTitle:'개념 지도', mapSub:'업무 흐름을 상위 구조로 놓고 핵심 용어를 단계별로 배치합니다. 용어를 선택하면 상위·하위·관련/혼동 관계가 함께 정리됩니다.',
       mapOpen:'상세 보기', mapUp:'상위 · 기반', mapDown:'하위 · 결과', mapNear:'관련 · 혼동', mapDomains:'도메인 분포', mapTerms:n=>`+${n}개 더`,
+      flowsTitle:'여정 플로', flowArtifact:'추적 대상', flowStep:'단계', flowRelated:'관련 플로',
       idxTitle:'전체 색인', idxAZ:'가나다·ABC', idxByCat:'카테고리별', idxAll:n=>`전체 ${n}개 표제어`,
       RLAB:{sameAs:'같음',broader:'상위 개념',narrower:'하위 개념',parent:'부모',child:'자식',related:'관련',conflicts:'충돌',replaces:'대체',contrasts:'대비'},
       ST:{active:'활성',deprecated:'폐지/레거시',ambiguous:'중의적'},
@@ -587,6 +649,7 @@ g.mmn.focused rect {
       gHint:'Click a node to expand its relationships. Click it again when expanded to view details. Dashed outer ring = has hidden neighbors.',
       mapTitle:'Concept Map', mapSub:'Places core terms into a business-flow hierarchy first, then shows upstream, downstream, related and distinction links for the selected term.',
       mapOpen:'Open detail', mapUp:'Upstream / base', mapDown:'Downstream / output', mapNear:'Related / confused', mapDomains:'Domain mix', mapTerms:n=>`+${n} more`,
+      flowsTitle:'Journey Flows', flowArtifact:'Artifact traced', flowStep:'Step', flowRelated:'Related flows',
       idxTitle:'Full Index', idxAZ:'A–Z', idxByCat:'By category', idxAll:n=>`${n} terms total`,
       RLAB:{sameAs:'Same as',broader:'Broader',narrower:'Narrower',parent:'Parent',child:'Child',related:'Related',conflicts:'Conflicts',replaces:'Replaces',contrasts:'Contrasts'},
       ST:{active:'Active',deprecated:'Deprecated',ambiguous:'Ambiguous'},
@@ -651,6 +714,7 @@ g.mmn.focused rect {
       <a class="cat-link${h2.startsWith('#/index')?' active':''}" href="#/index">${t('index')}</a>
       <a class="cat-link${h2.startsWith('#/mindmap')?' active':''}" href="#/mindmap">${LANG==='ko'?'🧠 마인드맵':'🧠 Mindmap'}</a>
       <a class="cat-link${h2.startsWith('#/map')?' active':''}" href="#/map">${LANG==='ko'?'🗺 개념 지도':'🗺 Concept map'}</a>
+      <a class="cat-link${h2.startsWith('#/flows')?' active':''}" href="#/flows">${LANG==='ko'?'🛤 여정 플로':'🛤 Journey flows'}</a>
       <a class="cat-link${h2.startsWith('#/classroom')?' active':''}" href="#/classroom">${t('classroom')}</a>
       <a class="cat-link${h2.startsWith('#/tech')?' active':''}" href="#/tech">${LANG==='ko'?'🛠 기술 레퍼런스':'🛠 Tech & APIs'}</a>
       <a class="cat-link${h2.startsWith('#/confusables')?' active':''}" href="#/confusables">${LANG==='ko'?'⚖ 혼동 용어':'⚖ Confusables'}</a>
@@ -681,7 +745,7 @@ g.mmn.focused rect {
     const st=(n,l)=>`<div class="stat"><b>${n}</b><span>${esc(l)}</span></div>`;
     let h=`<section class="hero"><h1>${esc(t('heroT'))}</h1><p>${t('heroB')}</p>
       <div class="stats">${st(ENTRIES.length,t('sTerms'))}${st(CATS.length,t('sCats'))}${st(provSet.size,t('sProv'))}${st(srcCount,t('sSrc'))}</div>
-      <div class="cta-row"><a class="cta-graph" href="#/mindmap">🧠 ${LANG==='ko'?'마인드맵 탐색':'Explore Mindmap'}</a><a class="cta-2" href="#/map">🗺 ${LANG==='ko'?'개념 지도':'Concept map'}</a><a class="cta-2" href="#/index">📇 ${esc(t('openIndex'))}</a></div></section>`;
+      <div class="cta-row"><a class="cta-graph" href="#/mindmap">🧠 ${LANG==='ko'?'마인드맵 탐색':'Explore Mindmap'}</a><a class="cta-2" href="#/map">🗺 ${LANG==='ko'?'개념 지도':'Concept map'}</a><a class="cta-2" href="#/flows">🛤 ${LANG==='ko'?'여정 플로':'Journey flows'}</a><a class="cta-2" href="#/index">📇 ${esc(t('openIndex'))}</a></div></section>`;
     if(conflicts.length){ h+=`<div class="sec-title">${esc(t('confT'))}</div>`;
       conflicts.forEach(e=>{ const d=(e.distinctions&&e.distinctions[0]);
         h+=`<a class="conflict" href="#/term/${e.id}"><b>${esc(e.term)}</b> — ${esc(Lf(e,'definition')).slice(0,120)}…
@@ -2159,6 +2223,192 @@ g.mmn.focused rect {
 
   /* ---- mindmap: collapsible radial tree of the taxonomy (vertical -> subcategory -> term) ---- */
   /* ---- mindmap: collapsible radial tree of the taxonomy (vertical -> subcategory -> term) ---- */
+  /* ============================================================
+     LIFE-OF FLOWS (#/flows) — per-vertical journey sequence diagrams.
+     One artifact traced actor-to-actor over time (swimlane diagram).
+     Separate from FLOWS (which is a static stage board).
+     ============================================================ */
+  const LIFE_FLOW_ORDER = ['search','booking','fulfillment'];
+  const LIFE_FLOW_VERTS = [
+    { id:'air',     label:{en:'Air',en2:'Airline',ko:'항공'} },
+    { id:'lodging', label:{en:'Lodging',ko:'호텔·숙박'} }
+  ];
+  const LIFE_FLOWS = {
+    search: {
+      id:'search', name:{en:'Life of a Search',ko:'검색의 일생'}, shortName:{en:'Search',ko:'검색'},
+      description:{en:'How traveler intent becomes priced, bookable offers.',ko:'여행 의도가 가격이 붙은 예약 가능한 오퍼가 되기까지.'},
+      artifact:{en:'Search query → offer set',ko:'검색 요청 → 오퍼 묶음'}, status:'v1',
+      variants:{
+        air:{ intro:{en:'A shopping request fans out from the seller through the GDS/NDC to the airline and back as ranked offers.',ko:'쇼핑 요청이 판매자에서 GDS/NDC를 거쳐 항공사로 퍼졌다가 순위가 매겨진 오퍼로 돌아옵니다.'},
+          actors:[{id:'traveler',name:{en:'Traveler',ko:'여행자'}},{id:'retailer',name:{en:'OTA / TMC',ko:'OTA / 여행사'}},{id:'gds',name:{en:'GDS / Aggregator',ko:'GDS / 집계기'}},{id:'airline',name:{en:'Airline PSS',ko:'항공사 PSS'}}],
+          steps:[
+            {id:'as1',from:'traveler',to:'retailer',type:'request',action:{en:'Search query',ko:'검색 요청'},message:{en:'O&D · dates · pax',ko:'O&D · 날짜 · 인원'},description:{en:'The traveler enters origin, destination, dates and passenger types on the seller interface.',ko:'여행자가 판매자 화면에 출발/도착지, 날짜, 승객 유형을 입력합니다.'},terms:['origin-destination','passenger-type-code']},
+            {id:'as2',from:'retailer',to:'gds',type:'request',action:{en:'Shop request',ko:'오퍼 조회'},message:{en:'AirShopping RQ',ko:'AirShopping RQ'},description:{en:'The seller normalizes the request and asks the GDS / NDC aggregator for options.',ko:'판매자가 요청을 정규화해 GDS / NDC 집계기에 선택지를 조회합니다.'},terms:['ota-online-travel-agency','gds','airshopping']},
+            {id:'as3',from:'gds',to:'airline',type:'request',action:{en:'Avail & fare req',ko:'재고·운임 요청'},message:{en:'availability / fares',ko:'가용성 / 운임'},description:{en:'The aggregator requests live inventory, booking classes and fares from the airline PSS.',ko:'집계기가 항공사 PSS에 실시간 재고, 예약 클래스, 운임을 요청합니다.'},terms:['availability','rbd','fare-basis-code']},
+            {id:'as4',from:'airline',to:'gds',type:'response',action:{en:'Priced offers',ko:'오퍼 반환'},message:{en:'offers + rules',ko:'오퍼 + 규정'},description:{en:'The airline returns bookable, priced offers with fare families and rules.',ko:'항공사가 운임 패밀리·규정과 함께 예약 가능한 가격 오퍼를 반환합니다.'},terms:['offer','fare-family','fare-rule']},
+            {id:'as5',from:'gds',to:'retailer',type:'response',action:{en:'Aggregate',ko:'집계·정규화'},message:{en:'normalized set',ko:'정규화 결과'},description:{en:'Offers from GDS and NDC sources are aggregated and normalized into one comparable set.',ko:'GDS·NDC 출처의 오퍼가 비교 가능한 하나의 묶음으로 집계·정규화됩니다.'},terms:['aggregator','ndc']},
+            {id:'as6',from:'retailer',to:'traveler',type:'response',action:{en:'Ranked results',ko:'결과 표시'},message:{en:'sorted offers',ko:'정렬된 오퍼'},description:{en:'The seller ranks and displays results; the traveler filters and picks a candidate to book.',ko:'판매자가 결과를 정렬·표시하고, 여행자는 필터링해 예약 후보를 고릅니다.'},terms:['offer','metasearch']}
+          ] },
+        lodging:{ intro:{en:'A rate search flows from the seller through the channel manager / switch to the hotel CRS/PMS and back, shaped by parity.',ko:'요금 검색이 판매자에서 채널 매니저/스위치를 거쳐 호텔 CRS/PMS로 갔다가 패리티의 영향을 받아 돌아옵니다.'},
+          actors:[{id:'traveler',name:{en:'Traveler',ko:'여행자'}},{id:'ota',name:{en:'OTA / Metasearch',ko:'OTA / 메타서치'}},{id:'channel',name:{en:'Channel Mgr',ko:'채널 매니저'}},{id:'hotel',name:{en:'Hotel CRS/PMS',ko:'호텔 CRS/PMS'}}],
+          steps:[
+            {id:'ls1',from:'traveler',to:'ota',type:'request',action:{en:'Rate search',ko:'요금 검색'},message:{en:'dates · occupancy',ko:'날짜 · 인원'},description:{en:'The traveler searches dates and occupancy on a booking engine or metasearch.',ko:'여행자가 부킹 엔진·메타서치에서 날짜와 투숙 인원으로 검색합니다.'},terms:['booking-engine','metasearch','rate-shopping']},
+            {id:'ls2',from:'ota',to:'channel',type:'request',action:{en:'ARI request',ko:'ARI 조회'},message:{en:'avail / rate / inv',ko:'가용성/요금/재고'},description:{en:'The seller requests availability, rates and inventory through the channel manager / hotel switch.',ko:'판매자가 채널 매니저·호텔 스위치를 통해 가용성·요금·재고(ARI)를 조회합니다.'},terms:['channel-manager','ari','hotel-switch']},
+            {id:'ls3',from:'channel',to:'hotel',type:'request',action:{en:'Check inventory',ko:'재고 확인'},message:{en:'single-image',ko:'단일 이미지'},description:{en:'The request reaches the hotel CRS/PMS holding single-image inventory and last-room availability.',ko:'요청이 단일 이미지 재고와 잔실 가용성을 보유한 호텔 CRS/PMS에 도달합니다.'},terms:['crs','pms','single-image-inventory','last-room-availability']},
+            {id:'ls4',from:'hotel',to:'ota',type:'response',action:{en:'Rate plans',ko:'요금제 반환'},message:{en:'room × rate',ko:'룸×요금'},description:{en:'The hotel returns room types and rate plans (e.g. BAR) for the dates.',ko:'호텔이 해당 날짜의 룸타입과 요금제(예: BAR)를 반환합니다.'},terms:['rate-plan','room-type','bar']},
+            {id:'ls5',from:'ota',to:'traveler',type:'response',action:{en:'Displayed rates',ko:'요금 표시'},message:{en:'parity-shaped',ko:'패리티 반영'},description:{en:'Rates are displayed to the traveler, shaped by rate parity and the chosen sourcing (e.g. bedbank).',ko:'요금 패리티와 소싱(예: 베드뱅크)에 따라 형성된 요금이 여행자에게 표시됩니다.'},terms:['rate-parity','bedbank']}
+          ] }
+      }
+    },
+    booking: {
+      id:'booking', name:{en:'Life of a Booking',ko:'예약의 일생'}, shortName:{en:'Booking',ko:'예약'},
+      description:{en:'How a selected offer becomes a confirmed, paid reservation/order.',ko:'선택한 오퍼가 확정·결제된 예약/주문이 되기까지.'},
+      artifact:{en:'Reservation / order / PNR',ko:'예약 / 주문 / PNR'}, status:'v1',
+      variants:{
+        air:{ intro:{en:'On selection a PNR/order is created, payment is authorized, the ticket is issued within the time limit, and confirmation is sent.',ko:'오퍼 선택 시 PNR/주문이 생성되고 결제가 승인된 뒤 발권 시한 내 항공권이 발권되어 확정됩니다.'},
+          actors:[{id:'traveler',name:{en:'Traveler',ko:'여행자'}},{id:'retailer',name:{en:'OTA / TMC',ko:'OTA / 여행사'}},{id:'airline',name:{en:'Airline / GDS',ko:'항공사 / GDS'}},{id:'psp',name:{en:'Payment',ko:'결제'}}],
+          steps:[
+            {id:'ab1',from:'traveler',to:'retailer',type:'request',action:{en:'Select offer',ko:'오퍼 선택'},description:{en:'The traveler selects an offer and provides passenger details.',ko:'여행자가 오퍼를 선택하고 승객 정보를 제공합니다.'},terms:['offer','passenger-type-code']},
+            {id:'ab2',from:'retailer',to:'airline',type:'request',action:{en:'Create PNR/order',ko:'PNR/주문 생성'},message:{en:'OrderCreate',ko:'OrderCreate'},description:{en:'The seller re-prices/validates the offer and creates a PNR or NDC order capturing itinerary, segments and special requests.',ko:'판매자가 오퍼를 재산정·검증하고 여정·세그먼트·특별요청을 담은 PNR 또는 NDC 주문을 생성합니다.'},terms:['pnr','order','segment','ssr','pricing-unit']},
+            {id:'ab3',from:'airline',to:'retailer',type:'response',action:{en:'Record locator',ko:'예약번호 반환'},message:{en:'PNR / order id',ko:'PNR / 주문 ID'},description:{en:'The airline returns the record locator / order id and sets a ticketing time limit.',ko:'항공사가 예약번호(record locator)/주문 ID를 반환하고 발권 시한을 설정합니다.'},terms:['record-locator','ticketing-time-limit']},
+            {id:'ab4',from:'retailer',to:'psp',type:'request',action:{en:'Authorize payment',ko:'결제 승인'},message:{en:'auth + SCA',ko:'승인 + SCA'},description:{en:'The customer form of payment is authorized — card, VCC — with strong customer authentication where required.',ko:'카드·VCC 등 고객 지불수단이 (필요 시 강력한 고객 인증과 함께) 승인됩니다.'},terms:['form-of-payment','3-d-secure','vcc','authorization-hold'],emphasis:'key',relatedFlowIds:['payment_settlement']},
+            {id:'ab5',from:'psp',to:'retailer',type:'response',action:{en:'Auth result',ko:'승인 결과'},description:{en:'The payment provider returns the authorization result (hold/decline).',ko:'결제사가 승인 결과(보류/거절)를 반환합니다.'},terms:['authorization-hold']},
+            {id:'ab6',from:'retailer',to:'airline',type:'request',action:{en:'Issue ticket',ko:'발권 지시'},message:{en:'within TTL',ko:'시한 내'},description:{en:'Within the ticketing time limit the e-ticket is issued and flight coupons are created.',ko:'발권 시한 내에 전자항공권이 발권되고 항공 쿠폰이 생성됩니다.'},terms:['e-ticket','flight-coupon','ticketing-time-limit']},
+            {id:'ab7',from:'retailer',to:'traveler',type:'response',action:{en:'Confirmation',ko:'확정·항공권'},message:{en:'e-ticket',ko:'전자항공권'},description:{en:'The traveler receives confirmation and the e-ticket. Settlement and any later changes follow in their own flows.',ko:'여행자가 확정과 전자항공권을 받습니다. 정산과 이후 변경은 각각의 플로에서 이어집니다.'},terms:['e-ticket','record-locator'],relatedFlowIds:['payment_settlement','change_refund']}
+          ] },
+        lodging:{ intro:{en:'A room/rate is selected, guaranteed or paid per the merchant/agency model, pushed to the hotel, and confirmed.',ko:'룸/요금을 선택하고 머천트/에이전시 모델에 따라 보증·결제한 뒤 호텔에 통지되어 확정됩니다.'},
+          actors:[{id:'traveler',name:{en:'Traveler',ko:'여행자'}},{id:'ota',name:{en:'OTA / Retailer',ko:'OTA / 판매자'}},{id:'psp',name:{en:'Payment',ko:'결제'}},{id:'hotel',name:{en:'Hotel CRS/PMS',ko:'호텔 CRS/PMS'}}],
+          steps:[
+            {id:'lb1',from:'traveler',to:'ota',type:'request',action:{en:'Select room/rate',ko:'객실 선택'},description:{en:'The traveler picks a room type and rate plan and enters guest details.',ko:'여행자가 룸타입과 요금제를 고르고 투숙객 정보를 입력합니다.'},terms:['rate-plan','room-type']},
+            {id:'lb2',from:'traveler',to:'ota',type:'request',action:{en:'Guarantee terms',ko:'보증·취소 조건'},description:{en:'Cancellation and guarantee policies (deposit, cutoff) are accepted.',ko:'취소·보증 정책(예치금, 컷오프)에 동의합니다.'},terms:['cancellation-policy','guarantee-policy']},
+            {id:'lb3',from:'ota',to:'psp',type:'request',action:{en:'Pay or guarantee',ko:'결제/보증'},message:{en:'merchant vs agency',ko:'머천트 vs 에이전시'},description:{en:'Who collects depends on the model: merchant (intermediary collects upfront as MoR) vs agency (pay at stay).',ko:'수납 주체는 모델에 따라 다릅니다: 머천트(중개사가 MoR로 선결제) vs 에이전시(투숙 시 결제).'},terms:['merchant-model','agency-model','merchant-of-record','3-d-secure'],emphasis:'key',relatedFlowIds:['payment_settlement']},
+            {id:'lb4',from:'ota',to:'hotel',type:'request',action:{en:'Reservation push',ko:'예약 통지'},message:{en:'OTA_HotelResNotif',ko:'OTA_HotelResNotif'},description:{en:'The confirmed booking is pushed to the hotel via the reservation notification message.',ko:'확정된 예약이 예약 통지 메시지로 호텔에 전송됩니다.'},terms:['reservation-notification-message']},
+            {id:'lb5',from:'hotel',to:'ota',type:'response',action:{en:'Confirm in PMS',ko:'PMS 확정'},description:{en:'The hotel CRS/PMS records the reservation against allotment (and any group block).',ko:'호텔 CRS/PMS가 할당량(및 그룹 블록)에 맞춰 예약을 기록합니다.'},terms:['pms','allotment','group-block']},
+            {id:'lb6',from:'ota',to:'traveler',type:'response',action:{en:'Confirmation',ko:'예약 확인'},description:{en:'The traveler receives the booking confirmation. Settlement and changes follow in their own flows.',ko:'여행자가 예약 확인을 받습니다. 정산과 변경은 각각의 플로에서 이어집니다.'},terms:['direct-booking'],relatedFlowIds:['payment_settlement','change_refund']}
+          ] }
+      }
+    },
+    fulfillment: {
+      id:'fulfillment', name:{en:'Life of Fulfillment',ko:'이행의 일생'}, shortName:{en:'Fulfillment',ko:'이행'},
+      description:{en:'How a confirmed entitlement is consumed — check-in through to completion.',ko:'확정된 이용 권리가 소비되는 과정 — 체크인부터 완료까지.'},
+      artifact:{en:'Travel entitlement being consumed',ko:'소비되는 이용 권리'}, status:'v1',
+      variants:{
+        air:{ intro:{en:'From online check-in through identity/APIS and the DCS to boarding and the flown coupon.',ko:'온라인 체크인에서 신원/APIS와 DCS를 거쳐 탑승과 비행 완료(flown) 쿠폰까지.'},
+          actors:[{id:'traveler',name:{en:'Traveler',ko:'여행자'}},{id:'airline',name:{en:'Airline',ko:'항공사'}},{id:'airport',name:{en:'Airport / DCS',ko:'공항 / DCS'}}],
+          steps:[
+            {id:'af1',from:'traveler',to:'airline',type:'request',action:{en:'Online check-in',ko:'온라인 체크인'},message:{en:'T-24h',ko:'출발 24시간 전'},description:{en:'The check-in window opens; the traveler checks in via the airline app/site into the DCS.',ko:'체크인 창이 열리면 여행자가 항공사 앱/사이트로 DCS에 체크인합니다.'},terms:['departure-control-system-dcs']},
+            {id:'af2',from:'airline',to:'airport',type:'async',action:{en:'APIS / identity',ko:'APIS·신원'},description:{en:'Advance passenger information and identity data are transmitted to authorities and the airport DCS.',ko:'사전 승객 정보(APIS)와 신원 데이터가 당국과 공항 DCS로 전송됩니다.'},terms:['advance-passenger-information-system']},
+            {id:'af3',from:'airport',to:'traveler',type:'response',action:{en:'Boarding pass',ko:'탑승권 발급'},description:{en:'The DCS issues a boarding pass (mobile or printed).',ko:'DCS가 (모바일 또는 출력) 탑승권을 발급합니다.'},terms:['departure-control-system-dcs']},
+            {id:'af4',from:'traveler',to:'airport',type:'request',action:{en:'Bag drop · security',ko:'수하물·보안'},description:{en:'Bag drop and security/boarding controls; interline through check-in passes bags to the next carrier.',ko:'수하물 위탁과 보안/탑승 통제가 이뤄지며, 인터라인 통과 체크인으로 수하물이 다음 항공사로 연계됩니다.'},terms:['inter-airline-through-check-in-iatci']},
+            {id:'af5',from:'traveler',to:'airport',type:'request',action:{en:'Boarding',ko:'탑승'},description:{en:'The traveler boards; no-show triggers the disruption/refund flow instead.',ko:'여행자가 탑승합니다. 미탑승(no-show) 시에는 변경/환불 플로로 이어집니다.'},terms:['no-show'],relatedFlowIds:['change_refund']},
+            {id:'af6',from:'airline',to:'airline',type:'async',action:{en:'Coupon flown',ko:'쿠폰 비행완료'},description:{en:'After departure the flight coupon status is updated to flown, enabling downstream accounting.',ko:'출발 후 항공 쿠폰 상태가 비행완료(flown)로 갱신되어 후속 회계가 가능해집니다.'},terms:['flight-coupon'],relatedFlowIds:['payment_settlement']}
+          ] },
+        lodging:{ intro:{en:'From check-in and room assignment through the stay and incidentals to checkout and folio reconciliation.',ko:'체크인·객실 배정에서 투숙·부대 이용을 거쳐 체크아웃과 폴리오 정산까지.'},
+          actors:[{id:'traveler',name:{en:'Traveler',ko:'여행자'}},{id:'hotel',name:{en:'Front desk / PMS',ko:'프런트 / PMS'}},{id:'backoffice',name:{en:'Back office',ko:'백오피스'}}],
+          steps:[
+            {id:'lf1',from:'traveler',to:'hotel',type:'request',action:{en:'Check-in',ko:'체크인'},description:{en:'The guest arrives and checks in; the PMS sets the stay to in-house (occupancy).',ko:'투숙객이 도착해 체크인하면 PMS가 투숙 상태(occupancy)를 in-house로 설정합니다.'},terms:['pms','occupancy']},
+            {id:'lf2',from:'hotel',to:'hotel',type:'async',action:{en:'Room & key',ko:'객실 배정·키'},description:{en:'A room is assigned (run-of-house or specific type) and a key is issued.',ko:'객실이 배정(ROH 또는 특정 타입)되고 키가 발급됩니다.'},terms:['run-of-house-roh','room-type']},
+            {id:'lf3',from:'traveler',to:'hotel',type:'request',action:{en:'Stay & incidentals',ko:'투숙·부대이용'},description:{en:'The stay is consumed across the length of stay, with board basis and incidentals posted to the folio.',ko:'숙박일수에 걸쳐 투숙이 이뤄지고 식사 조건·부대 비용이 폴리오에 청구됩니다.'},terms:['board-basis','length-of-stay']},
+            {id:'lf4',from:'traveler',to:'hotel',type:'request',action:{en:'Check-out',ko:'체크아웃'},description:{en:'The guest checks out; a no-show or early departure is handled per guarantee policy.',ko:'투숙객이 체크아웃합니다. 노쇼·조기 퇴실은 보증 정책에 따라 처리됩니다.'},terms:['no-show','guarantee-policy']},
+            {id:'lf5',from:'hotel',to:'backoffice',type:'async',action:{en:'Folio & reconcile',ko:'폴리오·정산'},description:{en:'The folio is reconciled; under the agency model the commissionable rate is remitted post-stay.',ko:'폴리오가 정산되고, 에이전시 모델에서는 투숙 후 커미션 대상 요금이 송금됩니다.'},terms:['commissionable-rate','remittance'],relatedFlowIds:['payment_settlement']}
+          ] }
+      }
+    }
+  };
+  window.LIFE_FLOWS = LIFE_FLOWS;
+  let flowId = 'search', flowVert = 'air', flowStep = 0;
+
+  function renderFlows(){
+    const lx = o => o ? (LANG==='ko' ? (o.ko||o.en) : (o.en||o.ko)) : '';
+    if(!LIFE_FLOWS[flowId]) flowId = 'search';
+    const flow = LIFE_FLOWS[flowId];
+    if(!flow.variants[flowVert]) flowVert = (LIFE_FLOW_VERTS.find(v=>flow.variants[v.id])||{id:'air'}).id;
+    const v = flow.variants[flowVert];
+    const actors = v.actors, steps = v.steps;
+    if(flowStep >= steps.length) flowStep = 0;
+    const actorIx = new Map(actors.map((a,i)=>[a.id,i]));
+    const actorName = id => { const a=actors.find(x=>x.id===id)||{}; return lx(a.name)||id; };
+
+    // ---- swimlane SVG (desktop) ----
+    const W=860, mL=60, mR=24, top=40, rowH=54, H=top + steps.length*rowH + 18;
+    const N=actors.length, usable=W-mL-mR;
+    const lx_ = i => N===1 ? mL+usable/2 : Math.round(mL + i*usable/(N-1));
+    let svg = `<svg viewBox="0 0 ${W} ${H}" class="lf-svg" role="img">`;
+    // actor headers + lifelines
+    actors.forEach((a,i)=>{ const x=lx_(i); const anc = i===0?'start':(i===N-1?'end':'middle');
+      svg += `<text x="${x}" y="22" text-anchor="${anc}" class="lf-actor">${esc(lx(a.shortName)||lx(a.name))}</text>`;
+      svg += `<line x1="${x}" y1="30" x2="${x}" y2="${H-10}" class="lf-life"/>`; });
+    // steps
+    steps.forEach((s,i)=>{ const y=top + i*rowH + 22; const xa=lx_(actorIx.get(s.from)), xb=lx_(actorIx.get(s.to));
+      const dash = s.type==='response' ? '5 4' : (s.type==='async' ? '1.5 4' : '0');
+      svg += `<g class="lf-step${i===flowStep?' on':''}" data-i="${i}">`;
+      svg += `<rect class="lf-rowbg" x="2" y="${y-rowH/2+4}" width="${W-4}" height="${rowH-4}"/>`;
+      svg += `<text x="26" y="${y+4}" text-anchor="middle" class="lf-num">${String(i+1).padStart(2,'0')}</text>`;
+      if(xa===xb){ // self message loop
+        const x=xa, w=30;
+        svg += `<path class="lf-line" style="stroke-dasharray:${dash}" d="M${x} ${y-7} h${w} v14 h${-w}"/>`;
+        svg += `<polygon class="lf-arrow" points="${x},${y+7} ${x+7},${y+3} ${x+7},${y+11}"/>`;
+        svg += `<text x="${x+w+6}" y="${y+1}" class="lf-msg">${esc(lx(s.action))}</text>`;
+      } else { const dir = xb>xa?1:-1; const hx=xb-dir*7;
+        svg += `<line class="lf-line" style="stroke-dasharray:${dash}" x1="${xa}" y1="${y}" x2="${hx}" y2="${y}"/>`;
+        svg += `<polygon class="lf-arrow" points="${xb},${y} ${hx},${y-4} ${hx},${y+4}"/>`;
+        svg += `<text x="${(xa+xb)/2}" y="${y-7}" text-anchor="middle" class="lf-msg">${esc(lx(s.action))}</text>`;
+      }
+      svg += `<rect class="lf-hit" x="2" y="${y-rowH/2+4}" width="${W-4}" height="${rowH-4}"/></g>`;
+    });
+    svg += `</svg>`;
+
+    // ---- mobile message log (HTML <ol>) ----
+    const badge = id => `<span class="lf-badge">${esc(actorName(id))}</span>`;
+    const arrowGlyph = t => t==='response' ? '⇠' : (t==='async' ? '⇢' : '→');
+    const termLinks = s => (s.terms||[]).filter(id=>byId.has(id)).map(id=>`<a href="#/term/${id}">${esc(byId.get(id).term)}</a>`).join('');
+    const log = `<ol class="lf-log">` + steps.map((s,i)=>`<li class="lf-li${i===flowStep?' on':''}" data-i="${i}">
+        <div class="lf-li-h"><span class="lf-li-n">${String(i+1).padStart(2,'0')}</span>${badge(s.from)} <span class="lf-li-ar lf-${s.type}">${arrowGlyph(s.type)}</span> ${badge(s.to)}</div>
+        <div class="lf-li-act">${esc(lx(s.action))}${s.message?` · <code>${esc(lx(s.message))}</code>`:''}</div>
+        <div class="lf-li-desc">${esc(lx(s.description))}</div>
+        ${termLinks(s)?`<div class="lf-li-terms">${termLinks(s)}</div>`:''}</li>`).join('') + `</ol>`;
+
+    // ---- toolbar ----
+    const flowBtns = LIFE_FLOW_ORDER.map(id=>`<button data-flow="${id}" class="${id===flowId?'on':''}">${esc(lx(LIFE_FLOWS[id].shortName))}</button>`).join('');
+    const vertBtns = LIFE_FLOW_VERTS.map(vt=>`<button data-vert="${vt.id}" class="${vt.id===flowVert?'on':''}">${esc(LANG==='ko'?vt.label.ko:vt.label.en)}</button>`).join('');
+
+    main.innerHTML = `<div class="crumbs"><a href="#/">${esc(t('home2'))}</a> › ${esc(t('flowsTitle'))}</div>
+      <div class="lf-head"><div class="sec-title" style="margin:0">${esc(lx(flow.name))}</div>
+        <div class="lf-toolbar">
+          <span class="lf-seg-label">${LANG==='ko'?'플로':'Flow'}</span><span class="lf-seg" id="lfFlowSeg">${flowBtns}</span>
+          <span class="lf-seg-label">${LANG==='ko'?'버티컬':'Vertical'}</span><span class="lf-seg" id="lfVertSeg">${vertBtns}</span>
+        </div></div>
+      <p class="lf-meta">${esc(lx(flow.description))} — ${esc(lx(v.intro))}</p>
+      <div class="lf-bounds"><span><b>${esc(t('flowArtifact'))}:</b> ${esc(lx(flow.artifact))}</span></div>
+      <div class="lf-legend"><span class="lf-lg lf-lg-req">${LANG==='ko'?'요청':'request'}</span><span class="lf-lg lf-lg-res">${LANG==='ko'?'응답':'response'}</span><span class="lf-lg lf-lg-asy">${LANG==='ko'?'비동기/이벤트':'async'}</span></div>
+      <div class="lf-stage">
+        <div class="lf-diagram">${svg}</div>
+        <aside class="lf-inspector" id="lfInspector"></aside>
+      </div>
+      ${log}`;
+    renderSidebar(null);
+
+    function selectStep(i){ flowStep=i; const s=steps[i]; if(!s) return;
+      main.querySelectorAll('.lf-step').forEach(g=>g.classList.toggle('on', +g.dataset.i===i));
+      main.querySelectorAll('.lf-li').forEach(li=>li.classList.toggle('on', +li.dataset.i===i));
+      const rel = (s.relatedFlowIds||[]).filter(id=>LIFE_FLOWS[id]).map(id=>`<a href="#/flows" data-goflow="${id}">${esc(lx(LIFE_FLOWS[id].shortName||LIFE_FLOWS[id].name))}</a>`).join(' · ');
+      $('#lfInspector').innerHTML = `<div class="lf-insp-n">${t('flowStep')} ${String(i+1).padStart(2,'0')} / ${steps.length}</div>
+        <div class="lf-insp-route">${esc(actorName(s.from))} <span class="lf-${s.type}">${arrowGlyph(s.type)}</span> ${esc(actorName(s.to))}</div>
+        <h3>${esc(lx(s.action))}</h3>
+        ${s.message?`<div class="lf-insp-msg"><code>${esc(lx(s.message))}</code></div>`:''}
+        <p>${esc(lx(s.description))}</p>
+        ${s.note?`<p class="lf-insp-note">${esc(lx(s.note))}</p>`:''}
+        ${termLinks(s)?`<div class="lf-insp-terms"><h4>${esc(t('fRel'))}</h4>${termLinks(s)}</div>`:''}
+        ${rel?`<div class="lf-insp-rel"><h4>${esc(t('flowRelated'))}</h4>${rel}</div>`:''}`;
+    }
+    main.querySelector('#lfFlowSeg').addEventListener('click',e=>{ const b=e.target.closest('button[data-flow]'); if(!b)return; flowId=b.dataset.flow; flowStep=0; renderFlows(); });
+    main.querySelector('#lfVertSeg').addEventListener('click',e=>{ const b=e.target.closest('button[data-vert]'); if(!b)return; flowVert=b.dataset.vert; flowStep=0; renderFlows(); });
+    main.querySelector('.lf-diagram').addEventListener('click',e=>{ const g=e.target.closest('.lf-step'); if(g) selectStep(+g.dataset.i); });
+    main.querySelector('.lf-log').addEventListener('click',e=>{ const li=e.target.closest('.lf-li'); if(li && !e.target.closest('a')) selectStep(+li.dataset.i); });
+    main.querySelector('#lfInspector').addEventListener('click',e=>{ const a=e.target.closest('a[data-goflow]'); if(a){ e.preventDefault(); flowId=a.dataset.goflow; flowStep=0; renderFlows(); } });
+    selectStep(flowStep);
+  }
+
   /* top-down concept map */
   const MAP_LAYERS = [
     { id:'foundation',  color:'#6f6a5f', ko:'식별 · 표준 기반', en:'Identifiers & Standards', hintKo:'코드 · 표준 · 시스템', hintEn:'Codes, standards, systems' },
@@ -3076,6 +3326,7 @@ g.mmn.focused rect {
     if(hash.startsWith('#/vertical/')){ if($('#q'))$('#q').value=''; return renderVertical(decodeURIComponent(hash.slice(11))); }
     if(hash.startsWith('#/mindmap')){ if($('#q'))$('#q').value=''; return renderMindmap(); }
     if(hash==='#/map'){ document.title='Concept Map — Travel Wiki'; if($('#q'))$('#q').value=''; return renderMap(); }
+    if(hash==='#/flows'||hash.startsWith('#/flows')){ document.title='Journey Flows — Travel Wiki'; if($('#q'))$('#q').value=''; return renderFlows(); }
     if(hash==='#/index'||hash.startsWith('#/index')){ document.title='Index — Travel Wiki'; if($('#q'))$('#q').value=''; return renderIndex(); }
     if(hash==='#/classroom'||hash.startsWith('#/classroom')){ document.title='Distribution — Travel Wiki'; if($('#q'))$('#q').value=''; return renderClassroom(); }
     if(hash==='#/tech'||hash.startsWith('#/tech')){ if($('#q'))$('#q').value=''; return renderTech(); }
