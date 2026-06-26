@@ -1,5 +1,5 @@
 export const meta = {
-  name: 'travel-gaia-provider-backfill',
+  name: 'travel-wiki-provider-backfill',
   description: 'Add cross-provider/standard equivalents (providerTerms) where genuine naming differences exist; web-grounded, no hallucination',
   phases: [{ title: 'ProviderTerms', detail: '카테고리별 공급자/표준 대응어 백필' }],
 };

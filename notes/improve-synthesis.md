@@ -1,4 +1,4 @@
-# Travel Gaia 개선점 — 3자(claude/codex/agy) 종합 (2026-06-19)
+# Travel Wiki 개선점 — 3자(claude/codex/agy) 종합 (2026-06-19)
 
 세 자문가에 동일 브리프(notes/improve-brief.md). 원문: improve-claude.md / improve-codex.raw.txt / improve-agy.raw.txt.
 agy는 코드베이스를 직접 측정 → 수치를 **glossary.json으로 재검증 완료**:

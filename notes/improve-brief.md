@@ -1,9 +1,9 @@
-# Travel Gaia — 추가 개선점 도출 자문
+# Travel Wiki — 추가 개선점 도출 자문
 
 너는 시니어 프로덕트 엔지니어다. 아래 제품의 **다음 단계 개선점**을 도출해 달라. 칭찬 말고, 구체적이고 실행 가능한 개선안만.
 
 ## 제품
-**Travel Gaia** = 여행 산업(항공·호텔·렌터카·철도·크루즈·결제·표준 등) **용어 백과사전**. 공급자/표준마다 다른 이름을 통일하고(교차 동의어 매핑), 혼동되는 쌍을 구분(distinctions)하는 것이 핵심 가치.
+**Travel Wiki** = 여행 산업(항공·호텔·렌터카·철도·크루즈·결제·표준 등) **용어 백과사전**. 공급자/표준마다 다른 이름을 통일하고(교차 동의어 매핑), 혼동되는 쌍을 구분(distinctions)하는 것이 핵심 가치.
 
 ## 현재 상태 (이미 구현됨 — 중복 제안 금지)
 - **데이터**: 407개 표제어. 데이터 정본은 **OKF(Open Knowledge Format) v0.1 Knowledge Bundle**(`okf/<vertical>/<subcategory>/<id>.md`, frontmatter+마크다운 body, 번들상대 교차링크). 빌드(`build/build.mjs`)가 이를 소비해 단일 `index.html`로 컴파일. `okf-validate.mjs`로 적합성+무손실 라운드트립 검증.

@@ -1,5 +1,7 @@
+import { fileURLToPath } from 'node:url';
+
 export const meta = {
-  name: 'travel-gaia-content',
+  name: 'travel-wiki-content',
   description: 'Author + adversarially verify travel-terminology encyclopedia entries, one file per category',
   phases: [
     { title: 'Author', detail: '카테고리별 표제어 작성 (출처 근거)' },
@@ -7,7 +9,7 @@ export const meta = {
   ],
 };
 
-const DIR = '/home/ubuntu/workspace/travel-gaia/data';
+const DIR = fileURLToPath(new URL('../data', import.meta.url));
 
 const CATEGORIES = [
   { id:'air-ops',     title:'Air — Operations & Reservation',
@@ -70,7 +72,7 @@ const results = await pipeline(
   CATEGORIES,
   // stage 1: author entries -> return ONLY a JSON array (text)
   (c) => agent(
-`너는 여행 산업 도메인 전문가다. "Travel Gaia" 용어 백과사전의 한 카테고리를 집필한다.
+`너는 여행 산업 도메인 전문가다. "Travel Wiki" 용어 백과사전의 한 카테고리를 집필한다.
 
 카테고리: "${c.title}" (category id: "${c.id}")
 
@@ -89,7 +91,7 @@ ${RULES}
   ),
   // stage 2: adversarial verify, then WRITE the file, return small summary
   (draft, c) => agent(
-`너는 "Travel Gaia"의 적대적 사실검증가다. 카테고리 "${c.title}"(id "${c.id}")의 초안 entry JSON 배열을 검증·수정한다.
+`너는 "Travel Wiki"의 적대적 사실검증가다. 카테고리 "${c.title}"(id "${c.id}")의 초안 entry JSON 배열을 검증·수정한다.
 
 해야 할 일:
 1. 부정확/오해소지 정의 수정.

@@ -1,9 +1,9 @@
-# Travel Gaia — 출처 신뢰도 업그레이드 설계 자문
+# Travel Wiki — 출처 신뢰도 업그레이드 설계 자문
 
 너는 시니어 데이터/지식엔지니어다. 아래 작업의 **설계**를 검증·보완해 달라. 결론 지향, 구체적으로.
 
 ## 제품/현황
-Travel Gaia = 여행산업 용어 백과사전(407개). 데이터 정본은 OKF 마크다운 번들(`okf/<vertical>/<sub>/<id>.md`, frontmatter). 빌드가 단일 오프라인 `index.html`로 컴파일. 각 표제어에 `sources:[{org,name,version,section,url}]`.
+Travel Wiki = 여행산업 용어 백과사전(407개). 데이터 정본은 OKF 마크다운 번들(`okf/<vertical>/<sub>/<id>.md`, frontmatter). 빌드가 단일 오프라인 `index.html`로 컴파일. 각 표제어에 `sources:[{org,name,version,section,url}]`.
 실측(802 citations): URL 92%(완료) / **1차(권위) 도메인 48%**(나머지는 altexsoft·wikipedia·squaremouth·xotels 등 2차) / **version 4% · section 7%**(표준 조문/버전 거의 없음) / 단일출처 엔트리 15%.
 
 ## 하려는 것 (2가지)

@@ -1,9 +1,9 @@
-# Travel Gaia — 마인드맵 UI 설계 자문
+# Travel Wiki — 마인드맵 UI 설계 자문
 
 너는 시니어 데이터비주얼라이제이션 엔지니어다. 아래 기능의 **설계**를 제안하라. 결론 지향, 구체적으로.
 
 ## 제품/현황
-Travel Gaia = 여행산업 용어 백과사전. **407개 표제어**, 명확한 계층: **vertical(5) → subcategory(16) → term(407)**. 각 term엔 relationships/distinctions(교차 링크)도 있음.
+Travel Wiki = 여행산업 용어 백과사전. **407개 표제어**, 명확한 계층: **vertical(5) → subcategory(16) → term(407)**. 각 term엔 relationships/distinctions(교차 링크)도 있음.
 - 단일 `index.html`, 의존성 0, 오프라인. **d3 v7 인라인 임베드**됨(이미 사용 중). KO/EN 토글, 다크모드.
 - 기존 뷰: 편집형 표제어 페이지, **D3 force-directed 관계 그래프**(카테고리→부모→자식, 관계 기반·확장형), 전체 색인(A-Z), 비교/공급자매트릭스, vertical 랜딩 페이지.
 

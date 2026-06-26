@@ -1,4 +1,4 @@
-# Travel Gaia 🌐
+# Travel Wiki 🌐
 
 **여행 산업 용어 백과사전** — 항공·호텔·유통·정산·표준에 흩어진 용어를 **공급자/표준 간 통일**해
 정리한 wiki 형태의 콘텐츠 서비스. 의존성 0의 **standalone 단일 HTML**로, 더블클릭만으로 오프라인에서
@@ -31,7 +31,7 @@ Payments & Settlement, Identifiers & Codes, Customer·Loyalty, Distribution Stan
 콘텐츠 추가·수정은 `okf/<category>/<concept>.md` 를 직접 편집합니다.
 
 ```
-travel-gaia/
+travel-wiki/
 ├── index.html                # ★ 산출물: standalone 백과사전(OKF 번들 컴파일, 데이터 인라인)
 ├── okf/                       # ★ 데이터 정본: OKF v0.1 Knowledge Bundle
 │   ├── index.md              #   루트 목차 (okf_version: "0.1")

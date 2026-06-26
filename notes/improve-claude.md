@@ -1,4 +1,4 @@
-# Travel Gaia 추가 개선점 (claude code)
+# Travel Wiki 추가 개선점 (claude code)
 
 [우선순위 표]
 | 제목 | 임팩트 | 난이도 | 한 줄 설명 |

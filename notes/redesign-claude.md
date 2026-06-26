@@ -1,4 +1,4 @@
-# Travel Gaia — 재설계 제안 (claude code)
+# Travel Wiki — 재설계 제안 (claude code)
 
 [CONCEPT]
 "여행 산업 편람(field manual)" — 인쇄된 용어사전/연감의 권위와 밀도를 화면으로. 장식이 아니라 **활자와 괘선(rule)**이 구조를 만들고, 교차참조는 **여백 사이드노트**와 **스택 칼럼**으로 공간적으로 탐색한다.

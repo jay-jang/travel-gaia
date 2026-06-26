@@ -1,6 +1,6 @@
 # 마인드맵 UI 설계 (claude code)
 
-[레이아웃] **접이식 radial tree(d3.hierarchy+d3.tree, 방사형)** — 루트(Travel Gaia) 중심, 5 vertical→16 category→term이 바깥으로. "마인드맵" 미감 + 분류 조망에 최적. **대안**: 가로 dendrogram(라벨 가독 ↑, 빽빽한 읽기용).
+[레이아웃] **접이식 radial tree(d3.hierarchy+d3.tree, 방사형)** — 루트(Travel Wiki) 중심, 5 vertical→16 category→term이 바깥으로. "마인드맵" 미감 + 분류 조망에 최적. **대안**: 가로 dendrogram(라벨 가독 ↑, 빽빽한 읽기용).
 
 [407 처리] 기본은 **root+5 vertical+16 category(약 21노드)만** 펼침(각 노드에 표제어 수). category 클릭 시 그 하위 ~25 term 펼침/접기. 검색창으로 특정 term 경로 자동 펼침+하이라이트. d3.zoom 줌/팬.
 

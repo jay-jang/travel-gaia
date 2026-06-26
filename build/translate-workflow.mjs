@@ -1,10 +1,12 @@
+import { fileURLToPath } from 'node:url';
+
 export const meta = {
-  name: 'travel-gaia-translate',
+  name: 'travel-wiki-translate',
   description: 'Add Korean translations (_ko fields) to each category JSON for KO/EN toggle',
   phases: [{ title: 'Translate', detail: '카테고리별 한국어 번역 필드 추가' }],
 };
 
-const DIR = '/home/ubuntu/workspace/travel-gaia/data';
+const DIR = fileURLToPath(new URL('../data', import.meta.url));
 const CATS = ['air-ops','air-shop','air-ticket','air-partner','hotel-rate','hotel-dist','pay','codes','customer','standards'];
 
 const VERDICT = {

@@ -1,5 +1,5 @@
 export const meta = {
-  name: 'travel-gaia-verify-only',
+  name: 'travel-wiki-verify-only',
   description: 'Adversarial web fact-check of unverified expansion entries; returns keep/fix/drop verdict + patch per entry',
   phases: [
     { title: 'Verify', detail: '미검증 표제어 적대적 웹 팩트체크' },

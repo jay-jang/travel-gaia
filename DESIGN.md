@@ -1,4 +1,4 @@
-# Travel Gaia — Design & Decision Record
+# Travel Wiki — Design & Decision Record
 
 여행 산업의 **데이터 레퍼런스**가 되는 콘텐츠 서비스. 1차 산출물: 각 여행 업체/표준의 spec을
 분석해 **용어를 통일**한 **wiki 형태 백과사전**을, 항상 접근 가능한 **standalone 단일 HTML**로 제공.

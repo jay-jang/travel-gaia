@@ -2,7 +2,7 @@
 okf_version: "0.1"
 ---
 
-# Travel Gaia — Knowledge Bundle
+# Travel Wiki — Knowledge Bundle
 
 여행 산업 용어 백과사전  (407 concepts · 5 verticals · 16 subcategories · bilingual KO/EN)
 

@@ -1,5 +1,5 @@
 export const meta = {
-  name: 'travel-gaia-expand',
+  name: 'travel-wiki-expand',
   description: 'Expand each category (+8 terms, bilingual) and generate an SVG icon per term — worktree parallel',
   phases: [{ title: 'Expand', detail: '카테고리별 신규 용어 작성(EN/KO+SVG)' }, { title: 'Illustrate', detail: '기존 용어 SVG 아이콘 생성' }],
 };
@@ -31,7 +31,7 @@ const ICONS_SCHEMA  = { type:'object', additionalProperties:false, properties:{ 
 phase('Expand');
 const out = await parallel(cats.map(c => () => Promise.all([
   // expand: author ~8 new bilingual entries with per-term SVG icon (worktree-isolated authoring)
-  agent(`너는 여행 산업 도메인 전문가다. "Travel Gaia" 백과사전의 카테고리 "${c.title}"(id "${c.id}")에 **신규 표제어**를 추가 집필한다.
+  agent(`너는 여행 산업 도메인 전문가다. "Travel Wiki" 백과사전의 카테고리 "${c.title}"(id "${c.id}")에 **신규 표제어**를 추가 집필한다.
 
 이미 존재하는 표제어(중복 금지): ${c.existing.join(', ')}
 
@@ -56,7 +56,7 @@ ${c.suggest.map((t,i)=>`${i+1}. ${t}`).join('\n')}
 StructuredOutput으로 {id:"${c.id}", newEntries:[8개]} 반환.`,
     { label:`expand:${c.id}`, phase:'Expand', schema:EXPAND_SCHEMA, agentType:'general-purpose' }),
   // illustrate: SVG icon for each EXISTING term
-  agent(`너는 미니멀 라인아트 아이콘 디자이너다. "Travel Gaia"의 카테고리 "${c.title}"의 아래 기존 표제어 각각에 대해 개념을 표현하는 SVG 아이콘을 만들어라.
+  agent(`너는 미니멀 라인아트 아이콘 디자이너다. "Travel Wiki"의 카테고리 "${c.title}"의 아래 기존 표제어 각각에 대해 개념을 표현하는 SVG 아이콘을 만들어라.
 
 표제어: ${c.existing.join(', ')}
 

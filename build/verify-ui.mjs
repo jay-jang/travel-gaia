@@ -29,7 +29,7 @@ async function runAsyncTest(name, fn) {
   }
 }
 
-console.log('Starting Travel Gaia UI verification suite...\n');
+console.log('Starting Travel Wiki UI verification suite...\n');
 
 // 1. Run build script and verify zero unresolved cross-references
 runTest('Build Script Output and Unresolved Cross-references', () => {

@@ -165,7 +165,7 @@ for (const v of VERTICALS) {
 // ---- root index.md (only place an index.md may carry frontmatter: okf_version) ----
 const rootIdx = [
   '---', 'okf_version: "0.1"', '---', '',
-  `# ${esc(META.name || 'Travel Gaia')} — Knowledge Bundle`, '',
+  `# ${esc(META.name || 'Travel Wiki')} — Knowledge Bundle`, '',
   esc(META.tagline || '') + `  (${ENTRIES.length} concepts · ${VERTICALS.length} verticals · ${CATS.length} subcategories · bilingual KO/EN)`, '',
   'A cross-provider travel-industry terminology catalog as an OKF v0.1 bundle, organized as **verticals → subcategories → concepts**. Each concept is one markdown file with YAML frontmatter; relationships and distinctions are bundle-relative cross-links.', '',
   '# Verticals', '',
@@ -180,7 +180,7 @@ writeFileSync(join(OKF, 'index.md'), rootIdx.join('\n') + '\n');
 
 // ---- log.md ----
 const log = [
-  '# Travel Gaia — Update Log', '',
+  '# Travel Wiki — Update Log', '',
   `## ${TODAY}`,
   `* **Restructure**: Reorganized the bundle into ${VERTICALS.length} verticals → ${CATS.length} subcategories → ${fileCount} concepts (okf/<vertical>/<subcategory>/<id>.md). Added a \`vertical\` field to every concept.`,
   '',

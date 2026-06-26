@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Static server for the Travel Gaia demo that disables caching, so the
+# Static server for the Travel Wiki demo that disables caching, so the
 # tunnel always serves the freshly built index.html (no stale browser cache).
 # Threaded so a long-lived tunnel keep-alive connection can't block new requests.
 import http.server, sys

@@ -1,5 +1,5 @@
 export const meta = {
-  name: 'travel-gaia-trust-relabel',
+  name: 'travel-wiki-trust-relabel',
   description: 'Backfill authoritative source URLs (web-confirmed) and reclassify generic `related` edges into precise relationship types',
   phases: [{ title: 'TrustRelabel', detail: '카테고리별 출처 URL 백필 + 관계 재분류' }],
 };

@@ -1,5 +1,5 @@
 export const meta = {
-  name: 'travel-gaia-source-trust',
+  name: 'travel-wiki-source-trust',
   description: 'Classify source tier + fill WEB-CONFIRMED clause/version (with evidence quote); upgrade secondary→primary. No hallucinated clause numbers.',
   phases: [{ title: 'SourceTrust', detail: '카테고리별 tier 분류 + 조문/버전 검증 기입' }],
 };

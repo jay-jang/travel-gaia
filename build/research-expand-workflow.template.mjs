@@ -1,5 +1,5 @@
 export const meta = {
-  name: 'travel-gaia-research-expand',
+  name: 'travel-wiki-research-expand',
   description: 'Research-grounded term expansion: web-research candidates, author bilingual entries, adversarially fact-check each',
   phases: [
     { title: 'Research', detail: '웹 리서치로 누락/기초 표제어 후보 발굴' },
@@ -74,7 +74,7 @@ function researchPrompt(c) {
   const head = c.isNew
     ? '이 카테고리는 신규로 현재 표제어가 없다. 이 도메인의 **기초가 되는 가장 중요한** 표제어를 선정하라.'
     : `이미 존재하는 표제어(중복 금지): ${c.existing.join(', ')}`;
-  return `너는 여행산업 도메인 리서처다. "Travel Gaia" 백과사전의 카테고리 "${c.title}" (id "${c.id}")에 추가할 표제어를 **실제 웹 리서치**로 발굴한다.
+  return `너는 여행산업 도메인 리서처다. "Travel Wiki" 백과사전의 카테고리 "${c.title}" (id "${c.id}")에 추가할 표제어를 **실제 웹 리서치**로 발굴한다.
 
 ${head}
 
@@ -90,7 +90,7 @@ StructuredOutput으로 {id:"${c.id}", candidates:[...]} 반환.`;
 
 function authorPrompt(c, rsch) {
   const cands = ((rsch && rsch.candidates) || []).map((x, i) => `${i + 1}. ${x.term}${x.abbreviation ? ` (${x.abbreviation})` : ''} — ${x.rationale}${(x.sources && x.sources.length) ? ` [출처: ${x.sources.map(s => s.name || s.org).filter(Boolean).join('; ')}]` : ''}`).join('\n');
-  return `너는 여행산업 도메인 전문가 집필자다. "Travel Gaia"의 카테고리 "${c.title}"(id "${c.id}")에 **신규 표제어**를 집필한다.
+  return `너는 여행산업 도메인 전문가 집필자다. "Travel Wiki"의 카테고리 "${c.title}"(id "${c.id}")에 **신규 표제어**를 집필한다.
 
 아래는 리서치가 발굴한 후보다(부정확/약한 것은 제외하고, 더 적합한 동일 도메인 용어로 대체 가능). 정확히 ${c.target}개의 entry를 작성하라:
 ${cands || '(후보 없음 — 도메인 지식으로 핵심 표제어 직접 선정)'}

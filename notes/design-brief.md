@@ -1,4 +1,4 @@
-# Travel Gaia — Design Brief (자문 요청용)
+# Travel Wiki — Design Brief (자문 요청용)
 
 ## 목표
 여행 산업의 **데이터 레퍼런스**가 되는 콘텐츠 서비스. 1차 산출물은 여행 관련 각 업체/표준의

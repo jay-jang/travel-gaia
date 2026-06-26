@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Travel Gaia build: load OKF bundle (okf/) -> resolve cross-refs -> validate -> inline into index.html
+// Travel Wiki build: load OKF bundle (okf/) -> resolve cross-refs -> validate -> inline into index.html
 import { readFileSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
@@ -107,7 +107,7 @@ entries.sort((a,b) => a.term.localeCompare(b.term));
 
 // ---- assemble glossary + write ----
 const glossary = {
-  meta: { name:'Travel Gaia', tagline:'여행 산업 용어 백과사전', generatedAt:TODAY,
+  meta: { name:'Travel Wiki', tagline:'여행 산업 용어 백과사전', generatedAt:TODAY,
           entryCount:entries.length, categoryCount:CATEGORIES.length, verticalCount:VERTICALS.length },
   verticals: VERTICALS,
   categories: CATEGORIES,
@@ -138,7 +138,7 @@ let html = tpl.replace('/*__FONTS__*/', () => fontCss).replace('__GLOSSARY_DATA_
 // ---- inline JSON-LD (schema.org DefinedTermSet) for SEO / RAG / interop ----
 let jsonldKB = 0;
 if (tpl.includes('__JSONLD__')) {
-  const setId = 'https://travel-gaia/#termset';
+  const setId = 'https://travel-wiki/#termset';
   const jsonld = {
     '@context': 'https://schema.org', '@type': 'DefinedTermSet', '@id': setId,
     name: glossary.meta.name, inLanguage: ['en', 'ko'],
@@ -169,7 +169,7 @@ const fontKB = (fontCss.length/1024).toFixed(0);
 
 // ---- report ----
 const perCat = CATEGORIES.map(c => `  ${c.id}: ${entries.filter(e=>e.category===c.id).length}`).join('\n');
-console.log(`\n=== Travel Gaia build report (${TODAY}) ===`);
+console.log(`\n=== Travel Wiki build report (${TODAY}) ===`);
 console.log(`files:\n${fileReport.join('\n')}`);
 console.log(`entries: ${entries.length}  |  categories: ${CATEGORIES.length}`);
 console.log(`per category:\n${perCat}`);
