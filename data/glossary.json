@@ -3,7 +3,7 @@
     "name": "Travel Wiki",
     "tagline": "여행 산업 용어 백과사전",
     "generatedAt": "2026-06-26",
-    "entryCount": 457,
+    "entryCount": 466,
     "categoryCount": 20,
     "verticalCount": 6
   },
@@ -12393,6 +12393,61 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "emvco",
+      "vertical": "common",
+      "category": "pay",
+      "conceptType": "standard",
+      "status": "active",
+      "abbreviation": "EMVCo",
+      "term_ko": "EMVCo",
+      "definition_ko": "EMVCo는 6개 주요 카드 결제 네트워크(American Express, Discover, JCB, Mastercard, UnionPay, Visa)가 공동 소유하는 글로벌 기술 기구로, 칩·비접촉(contactless)·결제 토큰화·EMV 3-D Secure(3DS) 등 전 세계 카드 결제를 보호하는 EMV 명세를 관리하고 발전시킨다.",
+      "longDef": "The name EMV originally stood for Europay, Mastercard, and Visa. EMVCo facilitates worldwide interoperability and acceptance of secure payment transactions by publishing the EMV specifications and running related testing and certification. Its specifications underpin chip and contactless acceptance, the EMV Payment Tokenisation framework, and EMV 3DS used for cardholder authentication in card-not-present commerce. EMVCo's technical scope is distinct from the PCI Security Standards Council, which governs the security of cardholder-data handling.",
+      "longDef_ko": "EMV라는 이름은 본래 Europay, Mastercard, Visa의 머리글자에서 비롯됐다. EMVCo는 EMV 명세를 발행하고 관련 시험·인증을 운영함으로써 안전한 결제 거래의 전 세계 상호운용성과 수용성을 촉진한다. 칩·비접촉 수용, EMV 결제 토큰화 프레임워크, 비대면(CNP) 거래의 카드소지자 인증에 쓰이는 EMV 3DS가 그 명세에 기반한다. EMVCo의 기술 범위는 카드소지자 데이터 처리 보안을 관장하는 PCI 보안표준위원회(PCI SSC)와 구별된다.",
+      "standardBody": "EMVCo",
+      "aliases": [
+        "EMV"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "3-D Secure",
+          "targetId": "3-d-secure"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Tokenization",
+          "targetId": "tokenization"
+        },
+        {
+          "type": "related",
+          "targetTerm": "PCI DSS",
+          "targetId": "pci-dss"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "PCI DSS",
+          "explanation": "EMVCo defines the EMV/3DS technical payment specifications; PCI DSS (managed by the PCI Security Standards Council) is the security standard for storing and handling cardholder data. Different bodies, complementary scope.",
+          "explanation_ko": "EMVCo는 EMV/3DS 기술 결제 명세를 정의하고, PCI DSS(PCI 보안표준위원회 관리)는 카드소지자 데이터의 저장·처리 보안 표준이다. 서로 다른 기관이며 범위가 상호 보완적이다.",
+          "targetId": "pci-dss"
+        }
+      ],
+      "sources": [
+        {
+          "name": "About EMVCo",
+          "org": "EMVCo",
+          "version": "",
+          "section": "",
+          "url": "https://www.emvco.com/about-us/",
+          "tier": "standard-body"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"12\" width=\"36\" height=\"24\" rx=\"3\"/><rect x=\"11\" y=\"19\" width=\"9\" height=\"7\" rx=\"1.5\"/><path d=\"M13 22.5h5M15.5 19v7\"/><path d=\"M26 30h12\"/></svg>",
+      "term": "EMVCo",
+      "definition": "EMVCo is the global technical body, collectively owned by six major payment networks (American Express, Discover, JCB, Mastercard, UnionPay, and Visa), that manages and evolves the EMV specifications — including chip, contactless, payment tokenization, and EMV 3-D Secure (3DS) — that secure card-based payments worldwide.",
+      "lastReviewed": "2026-06-26"
+    },
+    {
       "id": "endorsements-restrictions-box",
       "vertical": "air",
       "category": "air-ticket",
@@ -16080,6 +16135,54 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "giata",
+      "vertical": "lodging",
+      "category": "hotel-dist",
+      "conceptType": "provider-term",
+      "status": "active",
+      "abbreviation": "GIATA",
+      "term_ko": "GIATA",
+      "definition_ko": "GIATA는 베를린에 본사를 둔 여행 기술 기업으로, 다국어 호텔 콘텐츠와 GIATA ID로 잘 알려져 있다. GIATA ID는 서로 다른 공급사·베드뱅크·유통 시스템 전반에서 호텔/숙박 레코드를 중복 제거하고 매핑하는 데 쓰이는 고유 식별자다.",
+      "longDef": "GIATA aggregates, standardizes, and enriches accommodation content (descriptions, images, facts, geodata) and operates a hotel-mapping service whose GIATA ID acts as a cross-provider key. Because the same property is listed under different codes by different suppliers and bedbanks, distributors use GIATA mapping to reconcile inventory, avoid duplicate listings, and join content to bookable rates across channels.",
+      "longDef_ko": "GIATA는 숙박 콘텐츠(설명, 이미지, 사실 정보, 지리정보)를 집계·표준화·보강하고, GIATA ID가 공급사 간 키 역할을 하는 호텔 매핑 서비스를 운영한다. 동일한 숙소가 공급사·베드뱅크마다 서로 다른 코드로 등재되기 때문에, 유통사는 GIATA 매핑을 이용해 재고를 정합화하고 중복 등재를 피하며 채널 전반에서 콘텐츠를 예약 가능한 요금과 연결한다.",
+      "standardBody": "GIATA",
+      "aliases": [
+        "GIATA mbH"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "GIATA ID",
+          "targetId": "giata-id"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Channel Manager",
+          "targetId": "channel-manager"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Bedbank",
+          "targetId": "bedbank"
+        }
+      ],
+      "sources": [
+        {
+          "name": "GIATA — company website",
+          "org": "GIATA",
+          "version": "",
+          "section": "",
+          "url": "https://www.giata.com/",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 40V14l16-7 16 7v26\"/><path d=\"M8 40h32\"/><rect x=\"15\" y=\"22\" width=\"6\" height=\"6\"/><rect x=\"27\" y=\"22\" width=\"6\" height=\"6\"/><path d=\"M20 40v-6h8v6\"/></svg>",
+      "term": "GIATA",
+      "definition": "GIATA is a Berlin-based travel-technology company best known for its multilingual hotel content and the GIATA ID, a unique identifier used to deduplicate and map hotel/accommodation records across different suppliers, bedbanks, and distribution systems.",
+      "lastReviewed": "2026-06-26",
+      "distinctions": []
+    },
+    {
       "id": "giata-id",
       "vertical": "lodging",
       "category": "hotel-dist",
@@ -17454,6 +17557,84 @@
       "lastReviewed": "2026-06-18"
     },
     {
+      "id": "iata",
+      "vertical": "common",
+      "category": "standards",
+      "conceptType": "standard",
+      "status": "active",
+      "abbreviation": "IATA",
+      "term_ko": "국제항공운송협회(IATA)",
+      "definition_ko": "IATA(국제항공운송협회)는 1945년 설립되어 몬트리올에 본부를, 제네바에 주요 사무소를 둔 전 세계 항공사들의 국제 무역 협회이다. 항공권 운임·판매·발권·정산을 떠받치는 상업 표준, 코드 체계, 정산 시스템, 결의(Resolution)를 개발한다.",
+      "longDef": "IATA represents more than 300 member airlines that account for the large majority of the world's scheduled air traffic. It is a commercial industry body — distinct from the intergovernmental regulator ICAO — and its outputs include airline and location codes, the Billing and Settlement Plan (BSP), distribution and order standards such as NDC and ONE Order, ticketing and interline resolutions, and operational manuals. IATA accreditation and numbering (e.g., IATA/IATAN agency numbers) are widely used commercial credentials across the travel trade.",
+      "longDef_ko": "IATA는 전 세계 정기 항공 운송의 대부분을 차지하는 300개 이상의 회원 항공사를 대표한다. 정부 간 규제 기관인 ICAO와 구별되는 상업 산업 단체로서, 항공사·위치 코드, BSP(은행 정산 계획), NDC·ONE Order 등 유통/주문 표준, 발권·인터라인 결의, 운영 매뉴얼 등을 산출한다. IATA 인증과 번호 체계(예: 대리점의 IATA/IATAN 번호)는 여행 업계에서 널리 쓰이는 상업적 자격 요소다.",
+      "standardBody": "IATA",
+      "aliases": [
+        "International Air Transport Association"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "IATA Code",
+          "targetId": "iata-code"
+        },
+        {
+          "type": "related",
+          "targetTerm": "BSP",
+          "targetId": "bsp"
+        },
+        {
+          "type": "related",
+          "targetTerm": "NDC",
+          "targetId": "ndc"
+        },
+        {
+          "type": "related",
+          "targetTerm": "ATPCO",
+          "targetId": "atpco"
+        },
+        {
+          "type": "related",
+          "targetTerm": "EDIFACT",
+          "targetId": "edifact"
+        },
+        {
+          "type": "related",
+          "targetTerm": "ICAO",
+          "targetId": "icao"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "ICAO",
+          "explanation": "IATA is the airlines' commercial trade association (standards, codes, settlement, distribution); ICAO is the intergovernmental UN agency that sets binding aviation safety/security standards for states.",
+          "explanation_ko": "IATA는 항공사들의 상업적 무역 협회(표준·코드·정산·유통)이고, ICAO는 각국에 구속력 있는 항공 안전·보안 표준을 정하는 정부 간 UN 전문기구다.",
+          "targetId": "icao"
+        }
+      ],
+      "sources": [
+        {
+          "name": "About IATA",
+          "org": "IATA",
+          "version": "",
+          "section": "",
+          "url": "https://www.iata.org/en/about/",
+          "tier": "association"
+        },
+        {
+          "name": "International Air Transport Association",
+          "org": "Encyclopaedia Britannica",
+          "version": "",
+          "section": "",
+          "url": "https://www.britannica.com/topic/International-Air-Transport-Association",
+          "tier": "encyclopedia"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"17\"/><path d=\"M7 24h34M24 7c5 5 5 29 0 34M24 7c-5 5-5 29 0 34M11 14c8 4 18 4 26 0M11 34c8-4 18-4 26 0\"/></svg>",
+      "term": "IATA",
+      "definition": "IATA (International Air Transport Association) is the global trade association of the world's airlines, founded in 1945 and headquartered in Montreal with a major operational office in Geneva. It develops the commercial standards, codes, settlement systems, and resolutions that underpin how airlines price, sell, ticket, and settle air travel.",
+      "lastReviewed": "2026-06-26"
+    },
+    {
       "id": "iata-clearing-house",
       "vertical": "common",
       "category": "pay",
@@ -18279,6 +18460,74 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "icao",
+      "vertical": "common",
+      "category": "standards",
+      "conceptType": "standard",
+      "status": "active",
+      "abbreviation": "ICAO",
+      "term_ko": "국제민간항공기구(ICAO)",
+      "definition_ko": "ICAO(국제민간항공기구)는 1944년 시카고 협약에 따라 설립되어 몬트리올에 본부를 둔 유엔 전문기구로, 국제 민간항공의 안전·보안·효율·환경 성과를 규율하는 국제 표준 및 권고 방식(SARPs)을 개발한다.",
+      "longDef": "ICAO is an intergovernmental body whose 190+ member states adopt its SARPs to harmonize aviation regulation worldwide. It maintains its own coding systems (4-letter airport and 3-letter airline designators, aircraft type designators) and authors specifications such as Doc 9303 for machine-readable travel documents and the CORSIA scheme for international aviation carbon offsetting. ICAO complements — and is institutionally separate from — the airlines' commercial trade association, IATA.",
+      "longDef_ko": "ICAO는 190여 개 회원국이 SARPs를 채택해 전 세계 항공 규제를 조화시키는 정부 간 기구다. 자체 코드 체계(4자리 공항·3자리 항공사 지정 코드, 항공기 기종 코드)를 운영하고, 기계판독여행문서(Doc 9303)와 국제항공 탄소 상쇄 제도(CORSIA) 등의 명세를 작성한다. 항공사들의 상업 무역 협회인 IATA를 보완하지만 제도적으로는 별개의 기관이다.",
+      "standardBody": "ICAO",
+      "aliases": [
+        "International Civil Aviation Organization"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "ICAO Code",
+          "targetId": "icao-code"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Aircraft Registration",
+          "targetId": "aircraft-registration"
+        },
+        {
+          "type": "related",
+          "targetTerm": "CORSIA",
+          "targetId": "corsia"
+        },
+        {
+          "type": "related",
+          "targetTerm": "IATA",
+          "targetId": "iata"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "IATA",
+          "explanation": "ICAO is the intergovernmental UN regulator that sets binding standards for member states; IATA is the airlines' commercial trade association.",
+          "explanation_ko": "ICAO는 회원국에 구속력 있는 표준을 정하는 정부 간 UN 규제 기관이고, IATA는 항공사들의 상업적 무역 협회다.",
+          "targetId": "iata"
+        }
+      ],
+      "sources": [
+        {
+          "name": "About ICAO",
+          "org": "ICAO",
+          "version": "",
+          "section": "",
+          "url": "https://www.icao.int/about-icao/Pages/default.aspx",
+          "tier": "standard-body"
+        },
+        {
+          "name": "Convention on International Civil Aviation (Chicago Convention, 1944)",
+          "org": "ICAO",
+          "version": "",
+          "section": "",
+          "url": "https://www.icao.int/publications/pages/doc7300.aspx",
+          "tier": "regulation"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"17\"/><path d=\"M24 7v34M7 24h34\"/><path d=\"M24 24l11-5M24 24l-9 8\"/><circle cx=\"24\" cy=\"24\" r=\"3\" fill=\"currentColor\" stroke=\"none\"/></svg>",
+      "term": "ICAO",
+      "definition": "ICAO (International Civil Aviation Organization) is a specialized agency of the United Nations, established by the 1944 Chicago Convention and headquartered in Montreal, that develops the international Standards and Recommended Practices (SARPs) governing the safety, security, efficiency, and environmental performance of international civil aviation.",
+      "lastReviewed": "2026-06-26"
+    },
+    {
       "id": "icao-carbon-emissions-calculator-icec",
       "vertical": "common",
       "category": "sustainability",
@@ -18457,6 +18706,44 @@
       "term": "ICAO Code",
       "definition": "An umbrella term for codes assigned by the International Civil Aviation Organization (ICAO), principally the 4-letter location indicator for airports/aerodromes and the 3-letter airline designator. ICAO codes are used primarily for air traffic control, flight planning, and operational communications.",
       "lastReviewed": "2026-06-15"
+    },
+    {
+      "id": "imo",
+      "vertical": "cruise",
+      "category": "cruise",
+      "conceptType": "standard",
+      "status": "active",
+      "abbreviation": "IMO",
+      "term_ko": "국제해사기구(IMO)",
+      "definition_ko": "IMO(국제해사기구)는 1948년 설립되어 런던에 본부를 둔 유엔 전문기구로, 해운의 안전·보안과 선박에 의한 해양·대기 오염 방지를 담당한다. 특히 SOLAS 협약 등을 통해 여객선·크루즈선 운항을 규율하는 안전 체계를 정한다.",
+      "longDef": "IMO develops global conventions and codes adopted by its member states, including SOLAS (Safety of Life at Sea), MARPOL (pollution prevention), STCW (crew training), and the ISPS security code. It also assigns the unique IMO ship identification number. For cruise operations these instruments drive requirements such as muster drills, lifesaving appliances, fire safety, and environmental compliance.",
+      "longDef_ko": "IMO는 회원국이 채택하는 국제 협약과 코드를 개발하며, 여기에는 SOLAS(해상인명안전), MARPOL(오염 방지), STCW(선원 훈련), ISPS 보안 코드 등이 포함된다. 또한 고유한 IMO 선박 식별번호를 부여한다. 크루즈 운항에서는 이러한 규범이 비상 대피 훈련(muster drill), 인명 구조 설비, 화재 안전, 환경 준수 등의 요건을 이끈다.",
+      "standardBody": "IMO",
+      "aliases": [
+        "International Maritime Organization"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Muster Drill",
+          "targetId": "muster-drill"
+        }
+      ],
+      "sources": [
+        {
+          "name": "About IMO",
+          "org": "IMO",
+          "version": "",
+          "section": "",
+          "url": "https://www.imo.org/en/About/Pages/Default.aspx",
+          "tier": "standard-body"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 30h32l-4 8H12z\"/><path d=\"M14 30V18h16l6 12\"/><path d=\"M22 18V9h2l8 6\"/><path d=\"M6 40c3 0 3 2 6 2s3-2 6-2 3 2 6 2 3-2 6-2 3 2 6 2\"/></svg>",
+      "term": "IMO",
+      "definition": "IMO (International Maritime Organization) is the United Nations specialized agency, established in 1948 and headquartered in London, responsible for the safety and security of shipping and the prevention of marine and atmospheric pollution by ships. Its conventions — notably SOLAS — set the safety regime that governs passenger and cruise-ship operations.",
+      "lastReviewed": "2026-06-26",
+      "distinctions": []
     },
     {
       "id": "instant-confirmation",
@@ -19624,6 +19911,54 @@
       "term": "IROPS",
       "definition": "Irregular Operations: the handling of unplanned disruptions to flight operations such as delays, cancellations, diversions, and missed connections, and the associated reaccommodation of affected passengers, baggage, and crew. IROPS processes restore travelers to their itineraries through rebooking, involuntary reissue, refunds, and care obligations.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "iso",
+      "vertical": "common",
+      "category": "standards",
+      "conceptType": "standard",
+      "status": "active",
+      "abbreviation": "ISO",
+      "term_ko": "국제표준화기구(ISO)",
+      "definition_ko": "ISO(국제표준화기구)는 1947년 설립되어 제네바에 본부를 둔 독립적 비정부 국제기구로, 사실상 모든 산업에 걸쳐 자발적 합의 표준을 개발·발행한다. 여행 분야에서는 ISO 3166(국가/하위 행정구역 코드), ISO 4217(통화 코드), ISO 8601(날짜·시간) 등 널리 쓰이는 코드·형식 표준의 출처다.",
+      "longDef": "ISO is a federation of national standards bodies from over 160 countries and has published well over 20,000 standards. The short name 'ISO' is not an acronym of the English title but derives from the Greek isos ('equal'), giving a consistent name across languages. Travel and transport systems rely on ISO code standards as canonical references for representing countries, currencies, languages, and timestamps in data exchange.",
+      "longDef_ko": "ISO는 160여 개국의 국가 표준화 기관으로 구성된 연합체로, 2만 개가 넘는 표준을 발행해 왔다. 약칭 'ISO'는 영어 명칭의 머리글자가 아니라 그리스어 isos('같다')에서 유래했으며, 언어와 무관하게 동일한 명칭을 쓰기 위함이다. 여행·운송 시스템은 데이터 교환에서 국가·통화·언어·시각을 표현하는 표준 참조로 ISO 코드 표준에 의존한다.",
+      "standardBody": "ISO",
+      "aliases": [
+        "International Organization for Standardization"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "ISO 3166 Country Code",
+          "targetId": "iso-3166-country-code"
+        },
+        {
+          "type": "related",
+          "targetTerm": "ISO 4217 Currency Code",
+          "targetId": "iso-4217-currency-code"
+        },
+        {
+          "type": "related",
+          "targetTerm": "ISO 3166-2 Subdivision Code",
+          "targetId": "iso-3166-2-subdivision-code"
+        }
+      ],
+      "sources": [
+        {
+          "name": "About ISO",
+          "org": "ISO",
+          "version": "",
+          "section": "",
+          "url": "https://www.iso.org/about-us.html",
+          "tier": "standard-body"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"17\"/><path d=\"M24 7a25 25 0 0 0 0 34M24 7a25 25 0 0 1 0 34\"/><path d=\"M8 18h32M8 30h32\"/></svg>",
+      "term": "ISO",
+      "definition": "ISO (International Organization for Standardization) is an independent, non-governmental international body, founded in 1947 and based in Geneva, that develops and publishes voluntary consensus standards across virtually every industry. In travel it is the source of widely used code and format standards such as ISO 3166 (country/subdivision codes), ISO 4217 (currency codes), and ISO 8601 (date and time).",
+      "lastReviewed": "2026-06-26",
+      "distinctions": []
     },
     {
       "id": "iso-3166-country-code",
@@ -39973,6 +40308,60 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "uic",
+      "vertical": "ground",
+      "category": "rail",
+      "conceptType": "standard",
+      "status": "active",
+      "abbreviation": "UIC",
+      "term_ko": "국제철도연맹(UIC)",
+      "definition_ko": "UIC(국제철도연맹, Union Internationale des Chemins de fer)는 1922년 설립되어 파리에 본부를 둔 전 세계 철도 부문의 전문 협회로, 발권·데이터 교환·회사/역 코드 등 국제 철도 유통에 쓰이는 기술·상업 표준, 코드, 상호운용 명세를 개발한다.",
+      "longDef": "UIC publishes leaflets and International Railway Solutions (IRS) used by railways and rail-distribution systems, and maintains coding and data standards (e.g., RICS company codes, station/location references) that feed cross-border ticketing and reservation interoperability. It works alongside European bodies and standards such as OSDM and MERITS that build on UIC reference data.",
+      "longDef_ko": "UIC는 철도 사업자와 철도 유통 시스템이 사용하는 규정집(leaflet)과 국제 철도 솔루션(IRS)을 발행하고, 국경 간 발권·예약 상호운용을 뒷받침하는 코드·데이터 표준(예: RICS 회사 코드, 역/위치 참조)을 유지한다. UIC 참조 데이터를 기반으로 하는 OSDM, MERITS 등의 표준과 함께 작동한다.",
+      "standardBody": "UIC",
+      "aliases": [
+        "International Union of Railways",
+        "Union Internationale des Chemins de fer"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "RICS Code (Company Code)",
+          "targetId": "rics-code"
+        },
+        {
+          "type": "related",
+          "targetTerm": "OSDM",
+          "targetId": "osdm"
+        },
+        {
+          "type": "related",
+          "targetTerm": "MERITS",
+          "targetId": "merits"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Standard International Passenger Tariff (TCV)",
+          "targetId": "standard-international-passenger-tariff-tcv"
+        }
+      ],
+      "sources": [
+        {
+          "name": "About UIC",
+          "org": "UIC",
+          "version": "",
+          "section": "",
+          "url": "https://uic.org/about/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"13\" y=\"6\" width=\"22\" height=\"28\" rx=\"3\"/><path d=\"M13 24h22\"/><circle cx=\"19\" cy=\"29\" r=\"1.6\" fill=\"currentColor\" stroke=\"none\"/><circle cx=\"29\" cy=\"29\" r=\"1.6\" fill=\"currentColor\" stroke=\"none\"/><path d=\"M16 42l4-6M32 42l-4-6M12 42h24\"/></svg>",
+      "term": "UIC",
+      "definition": "UIC (International Union of Railways) is the worldwide professional association of the railway sector, founded in 1922 and headquartered in Paris, that develops technical and commercial standards, codes, and interoperability specifications for rail — including ticketing, data-exchange, and company/station coding used in international rail distribution.",
+      "lastReviewed": "2026-06-26",
+      "distinctions": []
+    },
+    {
       "id": "uk-regulation-261",
       "vertical": "common",
       "category": "disruption",
@@ -40050,6 +40439,54 @@
       "term": "UK Regulation 261",
       "definition": "The post-Brexit version of EU261 retained in UK domestic law and enforced by the UK Civil Aviation Authority (CAA). It mirrors EU261's structure of care, re-routing/reimbursement, and fixed compensation, but denominates monetary compensation in pounds sterling and constitutes a distinct jurisdiction that distribution and disruption systems must handle separately from EU261.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "un-cefact",
+      "vertical": "common",
+      "category": "standards",
+      "conceptType": "standard",
+      "status": "active",
+      "abbreviation": "UN/CEFACT",
+      "term_ko": "유엔 무역간소화·전자거래센터(UN/CEFACT)",
+      "definition_ko": "UN/CEFACT(유엔 무역간소화·전자거래센터)는 UNECE 산하 기구로, 무역 간소화와 전자거래를 위한 글로벌 표준을 개발한다. 대표적으로 국제 EDI 표준인 UN/EDIFACT를 비롯해, 운송·여행 데이터 교환에 쓰이는 현대적 XML/JSON 시맨틱 데이터 표준을 만든다.",
+      "longDef": "UN/CEFACT maintains UN/EDIFACT (the United Nations rules for Electronic Data Interchange for Administration, Commerce and Transport) and develops reference data models and semantic standards (e.g., the Core Component Library and modern API/data specifications). Its work provides vendor-neutral message and data definitions that underpin cross-border commerce, logistics, and parts of travel/transport data interchange, complementing industry-specific bodies such as IATA and UIC.",
+      "longDef_ko": "UN/CEFACT는 UN/EDIFACT(행정·상업·운송을 위한 전자 데이터 교환에 관한 유엔 규칙)를 유지하고, 참조 데이터 모델과 시맨틱 표준(예: 핵심 구성요소 라이브러리, 현대적 API/데이터 명세)을 개발한다. 그 성과물은 국경 간 상거래·물류와 여행/운송 데이터 교환의 일부를 떠받치는 공급사 중립적 메시지·데이터 정의를 제공하며, IATA·UIC 같은 산업별 기구를 보완한다.",
+      "standardBody": "UN/CEFACT",
+      "aliases": [
+        "United Nations Centre for Trade Facilitation and Electronic Business"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "EDIFACT",
+          "targetId": "edifact"
+        },
+        {
+          "type": "related",
+          "targetTerm": "UNECE",
+          "targetId": "unece"
+        },
+        {
+          "type": "related",
+          "targetTerm": "UN/LOCODE",
+          "targetId": "un-locode"
+        }
+      ],
+      "sources": [
+        {
+          "name": "UN/CEFACT — About",
+          "org": "UNECE",
+          "version": "",
+          "section": "",
+          "url": "https://unece.org/trade/uncefact",
+          "tier": "standard-body"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M16 12l-8 12 8 12M32 12l8 12-8 12\"/><path d=\"M27 9l-6 30\"/></svg>",
+      "term": "UN/CEFACT",
+      "definition": "UN/CEFACT (United Nations Centre for Trade Facilitation and Electronic Business) is a UNECE body that develops global standards for trade facilitation and electronic business — most notably UN/EDIFACT, the international EDI standard, alongside modern XML/JSON semantic data standards used in transport and travel data exchange.",
+      "lastReviewed": "2026-06-26",
+      "distinctions": []
     },
     {
       "id": "un-locode",
@@ -40204,6 +40641,54 @@
       "term": "Unaccompanied Minor",
       "definition": "An Unaccompanied Minor (UMNR) is a child travelling by air without an accompanying parent, legal guardian, or responsible adult aged 18 or over, for whom the carrier provides a supervised escort service from departure check-in through to handover to an authorized adult at the destination. UMNR is also the IATA Special Service Request (SSR) code used to advise carriers that a passenger is an unaccompanied minor.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "unece",
+      "vertical": "common",
+      "category": "standards",
+      "conceptType": "standard",
+      "status": "active",
+      "abbreviation": "UNECE",
+      "term_ko": "유엔유럽경제위원회(UNECE)",
+      "definition_ko": "UNECE(유엔유럽경제위원회)는 1947년 설립되어 제네바에 본부를 둔 유엔 지역 위원회로, 무역·운송·경제 협력을 촉진하기 위한 규범·표준·협약을 개발한다. 여행·운송 분야에서는 UN/LOCODE 같은 코드 표준을 유지하고, UN/EDIFACT를 만든 UN/CEFACT를 산하에 둔다.",
+      "longDef": "Although 'Europe' is in its name, UNECE's trade-facilitation and transport instruments are used globally. It maintains UN/LOCODE (United Nations Code for Trade and Transport Locations), administers transport agreements and vehicle regulations, and provides the institutional home for UN/CEFACT, which develops electronic-business and EDI standards. These outputs are referenced across multimodal travel and logistics data exchange.",
+      "longDef_ko": "명칭에 '유럽'이 들어가지만 UNECE의 무역 간소화·운송 관련 도구는 전 세계적으로 사용된다. UN/LOCODE(무역·운송 위치에 대한 유엔 코드)를 유지하고, 운송 협정과 차량 규정을 관장하며, 전자거래·EDI 표준을 개발하는 UN/CEFACT의 제도적 모체 역할을 한다. 이러한 산출물은 복합운송 여행·물류 데이터 교환 전반에서 참조된다.",
+      "standardBody": "UNECE",
+      "aliases": [
+        "United Nations Economic Commission for Europe"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "UN/LOCODE",
+          "targetId": "un-locode"
+        },
+        {
+          "type": "related",
+          "targetTerm": "UN/CEFACT",
+          "targetId": "un-cefact"
+        },
+        {
+          "type": "related",
+          "targetTerm": "EDIFACT",
+          "targetId": "edifact"
+        }
+      ],
+      "sources": [
+        {
+          "name": "UNECE — Mission",
+          "org": "UNECE",
+          "version": "",
+          "section": "",
+          "url": "https://unece.org/mission",
+          "tier": "standard-body"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"17\"/><path d=\"M24 7v34M9 18h30M9 30h30\"/><path d=\"M24 7c-6 5-6 29 0 34M24 7c6 5 6 29 0 34\"/></svg>",
+      "term": "UNECE",
+      "definition": "UNECE (United Nations Economic Commission for Europe) is a UN regional commission, established in 1947 and based in Geneva, that develops norms, standards, and conventions to facilitate trade, transport, and economic cooperation. In travel and transport it maintains code standards such as UN/LOCODE and hosts UN/CEFACT, the body behind UN/EDIFACT.",
+      "lastReviewed": "2026-06-26",
+      "distinctions": []
     },
     {
       "id": "universal-product-attributes-upa",
