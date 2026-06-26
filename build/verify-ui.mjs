@@ -504,6 +504,69 @@ await runAsyncTest('Distribution Flow: stages, term chips & vertical switching',
   }
 });
 
+// 3b. Test the Tech & APIs reference page
+await runAsyncTest('Tech Reference: architecture overviews, API cards & external links', async () => {
+  window.location.hash = '#/tech';
+  await new Promise(resolve => setTimeout(resolve, 200));
+
+  // nav exposes the route
+  if (!document.querySelector('a[href="#/tech"]')) {
+    throw new Error('Tech & APIs nav link not found.');
+  }
+
+  // architecture overviews (3) with pipeline chips linking into the glossary
+  const arch = document.querySelectorAll('.tech-arch-card');
+  if (arch.length !== 3) throw new Error(`Expected 3 architecture overview cards, found: ${arch.length}`);
+  const pipeLink = document.querySelector('.tech-pipe a[href^="#/term/"]');
+  if (!pipeLink) throw new Error('Architecture pipeline chips do not link into the glossary.');
+
+  // standards/API reference groups and cards
+  const groups = document.querySelectorAll('.tech-grid');
+  if (groups.length < 5) throw new Error(`Expected >=5 reference groups, found: ${groups.length}`);
+  const cards = document.querySelectorAll('.tech-card');
+  if (cards.length < 15) throw new Error(`Expected >=15 reference cards, found: ${cards.length}`);
+
+  // every external link must open in a new tab with rel=noopener and a real https URL
+  const extLinks = [...document.querySelectorAll('.tech-link')];
+  if (extLinks.length < 20) throw new Error(`Expected >=20 external reference links, found: ${extLinks.length}`);
+  for (const a of extLinks) {
+    const href = a.getAttribute('href') || '';
+    if (!href.startsWith('https://')) throw new Error(`Tech link is not an https URL: ${href}`);
+    if (a.getAttribute('target') !== '_blank') throw new Error(`Tech link missing target=_blank: ${href}`);
+    if (!(a.getAttribute('rel') || '').includes('noopener')) throw new Error(`Tech link missing rel=noopener: ${href}`);
+  }
+
+  // glossary deep-links resolve to real entries
+  const ids = new Set((window.GLOSSARY_DATA.entries || []).map(e => e.id));
+  for (const a of document.querySelectorAll('.tech-card-term, .tech-pipe a')) {
+    const id = decodeURIComponent((a.getAttribute('href') || '').replace('#/term/', ''));
+    if (id && !ids.has(id)) throw new Error(`Tech page references unknown term id "${id}".`);
+  }
+
+  // clicking a glossary term opens the inline drawer overlay (does NOT navigate away)
+  const drawer = document.getElementById('drawer');
+  if (drawer.classList.contains('open')) drawer.classList.remove('open');
+  const termLink = document.querySelector('.tech-page .tech-card-term, .tech-page .tech-pipe a');
+  if (!termLink) throw new Error('No in-page glossary term link found on the tech page.');
+  termLink.click();
+  await new Promise(resolve => setTimeout(resolve, 50));
+  if (!drawer.classList.contains('open')) {
+    throw new Error('Clicking a tech-page term did not open the drawer overlay.');
+  }
+  if (!window.location.hash.startsWith('#/tech')) {
+    throw new Error('Tech-page term click navigated away instead of opening an overlay.');
+  }
+  // the drawer X button closes the overlay and stays on #/tech
+  document.getElementById('drawerClose').click();
+  await new Promise(resolve => setTimeout(resolve, 50));
+  if (drawer.classList.contains('open')) {
+    throw new Error('Drawer X did not close the overlay on the tech page.');
+  }
+  if (!window.location.hash.startsWith('#/tech')) {
+    throw new Error('Drawer X navigated away from #/tech instead of just closing.');
+  }
+});
+
 // 4. Test Knowledge Graph initialized state & progressive node-focus exposure
 // 4. Test Static Routing: term, category, and search pages
 await runAsyncTest('Static Routing: Term, Category, and Search Result Pages', async () => {
@@ -718,6 +781,74 @@ await runAsyncTest('Taxonomy Mindmap Layouts, Click Interactions, and Path-Expan
   closeBtn.click();
   if (drawerEl.classList.contains('open')) {
     throw new Error('Expected drawer to close when the X button is clicked on the mindmap route.');
+  }
+});
+
+// 8. Test Drawer Redesign (R1, R2, R3, R4)
+await runAsyncTest('Drawer Redesign Behavior', async () => {
+  // Navigate to #/classroom
+  window.location.hash = '#/classroom';
+  await new Promise(resolve => setTimeout(resolve, 200));
+
+  const drawer = document.getElementById('drawer');
+  // Initially drawer is closed
+  drawer.classList.remove('open');
+
+  // Find a term chip link on the classroom page
+  const termChipLink = document.querySelector('#flowBoard .flow-term');
+  if (!termChipLink) {
+    throw new Error('Could not find a term chip on the classroom page for the test.');
+  }
+
+  // Click the term chip
+  const initialHash = window.location.hash; // should be '#/classroom'
+  termChipLink.click();
+  await new Promise(resolve => setTimeout(resolve, 100));
+
+  // Assert: Clicking a term chip on the #classroom page does not change the URL hash or navigate away from #classroom
+  if (window.location.hash !== initialHash) {
+    throw new Error(`Expected hash to remain "${initialHash}" after clicking term chip, but it changed to "${window.location.hash}"`);
+  }
+
+  // Assert: Clicking a term chip on the #classroom page opens #drawer and populates it with the clicked term's data
+  if (!drawer.classList.contains('open')) {
+    throw new Error("Expected drawer to have the 'open' class after clicking a term chip on the #classroom page.");
+  }
+  
+  const drawerTitle = document.getElementById('drawerTitle');
+  if (!drawerTitle || !drawerTitle.textContent.trim()) {
+    throw new Error("Expected drawer title to be populated with term data.");
+  }
+
+  // Assert: Closing the drawer on #classroom via the close button closes it and keeps the hash at #classroom
+  const closeBtn = document.getElementById('drawerClose');
+  if (!closeBtn) {
+    throw new Error("Could not find the drawer close button (#drawerClose).");
+  }
+  closeBtn.click();
+  await new Promise(resolve => setTimeout(resolve, 100));
+
+  if (drawer.classList.contains('open')) {
+    throw new Error("Expected drawer to close (remove 'open' class) after clicking the close button on #classroom.");
+  }
+  if (window.location.hash !== initialHash) {
+    throw new Error(`Expected hash to remain "${initialHash}" after closing the drawer, but got "${window.location.hash}"`);
+  }
+
+  // Assert: Changing window.location.hash to a different page route closes the drawer (i.e. removes the 'open' class from #drawer)
+  // Let's first open the drawer again
+  termChipLink.click();
+  await new Promise(resolve => setTimeout(resolve, 100));
+  if (!drawer.classList.contains('open')) {
+    throw new Error("Expected drawer to open after clicking term chip again.");
+  }
+
+  // Now change hash to a different page route, e.g. #/mindmap
+  window.location.hash = '#/mindmap';
+  await new Promise(resolve => setTimeout(resolve, 200));
+
+  if (drawer.classList.contains('open')) {
+    throw new Error("Expected drawer to close (remove 'open' class) when navigating to a different page route.");
   }
 });
 

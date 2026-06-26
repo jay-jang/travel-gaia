@@ -259,6 +259,32 @@ mark{background:var(--accent-weak);color:var(--accent);padding:0 1px;border-radi
   .flow-arrow .fa-lab{text-align:left;white-space:nowrap}
 }
 
+/* tech & APIs reference page */
+.tech-intro{font-family:var(--serif);font-size:0.98rem;line-height:1.65;color:var(--muted);margin:0 0 22px;max-width:78ch}
+.tech-sec{margin:0 0 30px}
+.tech-sec-h{font-family:var(--sans);font-weight:700;font-size:1.0rem;color:var(--text);margin:0 0 4px;display:flex;align-items:center;gap:8px}
+.tech-sec-h .ts-dot{width:10px;height:10px;border-radius:0;flex:none}
+.tech-sec-sub{font-family:var(--serif);font-size:0.84rem;color:var(--muted);margin:0 0 14px}
+.tech-arch{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+.tech-arch-card{background:var(--surface);border:1px solid var(--border);border-top:3px solid var(--cc,var(--accent));border-radius:var(--r);padding:15px}
+.tech-arch-card h4{font-family:var(--sans);font-weight:700;font-size:0.92rem;margin:0 0 7px;color:var(--text)}
+.tech-arch-card p{font-family:var(--serif);font-size:0.85rem;line-height:1.55;color:var(--muted);margin:0 0 12px}
+.tech-pipe{display:flex;flex-wrap:wrap;align-items:center;gap:5px}
+.tech-pipe a{font-family:var(--mono);font-size:0.68rem;font-weight:600;color:var(--cc,var(--accent));background:var(--surface-2);border:1px solid var(--border);border-radius:999px;padding:2px 9px;text-decoration:none;white-space:nowrap}
+.tech-pipe a:hover{border-color:var(--cc,var(--accent))}
+.tech-pipe .tp-arr{color:var(--faint);font-size:0.8rem}
+.tech-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:14px}
+.tech-card{background:var(--surface);border:1px solid var(--border);border-top:3px solid var(--cc,var(--accent));border-radius:var(--r);padding:14px 15px;display:flex;flex-direction:column}
+.tech-card-h{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:6px}
+.tech-card-name{font-family:var(--sans);font-weight:700;font-size:0.92rem;color:var(--text)}
+.tech-card-name .tc-ko{font-family:var(--sans);font-weight:500;font-size:0.74rem;color:var(--muted);margin-left:5px}
+.tech-card-term{font-family:var(--mono);font-size:0.64rem;font-weight:600;color:var(--cc,var(--accent));border:1px solid var(--cc,var(--accent));border-radius:var(--r);padding:1px 6px;text-decoration:none;white-space:nowrap;flex:none}
+.tech-card-term:hover{background:var(--cc,var(--accent));color:var(--paper)}
+.tech-card-blurb{font-family:var(--serif);font-size:0.83rem;line-height:1.5;color:var(--muted);margin:0 0 11px;flex:1}
+.tech-links{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto}
+.tech-link{font-family:var(--sans);font-size:0.72rem;font-weight:600;color:var(--text);background:var(--surface-2);border:1px solid var(--border);border-radius:var(--r);padding:3px 9px;text-decoration:none;display:inline-flex;align-items:center;gap:4px}
+.tech-link:hover{border-color:var(--accent);color:var(--accent)}
+.tech-link .tl-ext{font-size:0.62rem;opacity:.6}
 footer{color:var(--faint);font-family:var(--sans);font-size:.76rem;text-align:center;padding:24px;border-top:1px solid var(--rule);margin-top:30px}
 
 @media (max-width:980px){
@@ -583,6 +609,7 @@ g.mmn.focused rect {
       <a class="cat-link${h2.startsWith('#/index')?' active':''}" href="#/index">${t('index')}</a>
       <a class="cat-link${h2.startsWith('#/mindmap')?' active':''}" href="#/mindmap">${LANG==='ko'?'🧠 마인드맵':'🧠 Mindmap'}</a>
       <a class="cat-link${h2.startsWith('#/classroom')?' active':''}" href="#/classroom">${t('classroom')}</a>
+      <a class="cat-link${h2.startsWith('#/tech')?' active':''}" href="#/tech">${LANG==='ko'?'🛠 기술 레퍼런스':'🛠 Tech & APIs'}</a>
       <a class="cat-link${h2.startsWith('#/confusables')?' active':''}" href="#/confusables">${LANG==='ko'?'⚖ 혼동 용어':'⚖ Confusables'}</a>
       <a class="cat-link${h2.startsWith('#/matrix')?' active':''}" href="#/matrix">${LANG==='ko'?'▦ 공급자 매트릭스':'▦ Provider matrix'}</a>
       <div class="nav-title">${LANG==='ko'?'버티컬':'Verticals'} (${VERTICALS.length})</div>`;
@@ -1042,6 +1069,20 @@ g.mmn.focused rect {
         </div>
       </div>
     `;
+
+    const flowPage = main.querySelector('.flow-page');
+    if (flowPage) {
+      flowPage.addEventListener('click', ev => {
+        const link = ev.target.closest('a[href^="#/term/"]');
+        if (link) {
+          ev.preventDefault();
+          const href = link.getAttribute('href');
+          const termId = decodeURIComponent(href.substring('#/term/'.length));
+          initDrawerListeners();
+          updateDrawer(termId);
+        }
+      });
+    }
 
     renderSidebar(null);
     renderBoard();
@@ -1796,10 +1837,10 @@ g.mmn.focused rect {
     if (window.drawerListenersInit) return;
     window.drawerListenersInit = true;
     document.getElementById("drawerClose").addEventListener("click", () => {
-      if (location.hash.startsWith('#/mindmap')) {
+      if (location.hash.startsWith('#/mindmap') || location.hash.startsWith('#/classroom') || location.hash.startsWith('#/tech')) {
         closeDrawer();
       } else {
-        location.hash = "#/graph";
+        location.hash = "#/mindmap";
       }
     });
     document.getElementById("drawerLangBtn").addEventListener("click", () => {
@@ -2763,6 +2804,135 @@ g.mmn.focused rect {
       h+=`<div class="card" style="--cc:${c.color}"><a class="ct" href="#/category/${c.id}"><span class="dot" style="background:${c.color}"></span> ${esc(catName(c))}<span class="cn">${n}</span></a><div class="cd">${esc(catDesc(c))}</div><div class="dir-terms">${samples}${n>6?`<span class="sep">·</span><a class="more" href="#/category/${c.id}">+${n-6}</a>`:''}</div></div>`; });
     h+=`</div>`; main.innerHTML=h; renderSidebar(null); main.focus(); document.title=vertName(v)+' — Travel Gaia'; }
 
+  /* ---- tech & APIs reference page (#/tech) ---- */
+  const TECH_ARCH = [
+    { color:'#1f6feb', title:{ko:'항공 리테일링·유통 아키텍처',en:'Airline retailing & distribution'},
+      blurb:{ko:'레거시 PSS/CRS와 GDS(EDIFACT 메시징) 기반 유통이 NDC(XML/REST)와 오퍼·오더 관리(OMS)·ONE Order·주문 기반 정산(SwO)으로 진화 중입니다. 핵심 흐름은 쇼핑 → 오퍼 → 오더 → 정산입니다.',
+        en:'Legacy PSS/CRS + GDS (EDIFACT messaging) distribution is evolving toward NDC (XML/REST), Offer/Order management (OMS), ONE Order and Settlement with Orders. The core flow is shop → offer → order → settle.'},
+      pipe:[['PSS/CRS','passenger-service-system-pss'],['GDS','gds'],['NDC','ndc'],['Offer','offer'],['Order','order'],['OMS','order-management-system-oms'],['ONE Order','one-order'],['SwO','settlement-with-orders-swo']] },
+    { color:'#c0623d', title:{ko:'호텔 유통 아키텍처',en:'Hotel distribution architecture'},
+      blurb:{ko:'PMS/CRS가 재고·요금을 보유하고, 채널 매니저·호텔 스위치가 ARI(가용성·요금·재고)를 OpenTravel XML(OTA_HotelResNotif, 양방향 XML)로 OTA·GDS·IDS에 동기화합니다. 메타서치·구글 호텔이 수요를 연결합니다.',
+        en:'PMS/CRS hold inventory and rates; channel managers and hotel switches sync ARI to OTAs/GDS/IDS via OpenTravel XML (OTA_HotelResNotif, two-way XML). Metasearch and Google Hotels connect demand.'},
+      pipe:[['PMS','pms'],['CRS','crs'],['Channel Mgr','channel-manager'],['Hotel Switch','hotel-switch'],['ARI','ari'],['OTA','ota-online-travel-agency']] },
+    { color:'#e8590c', title:{ko:'투어·액티비티 연결 아키텍처',en:'Tours & activities connectivity'},
+      blurb:{ko:'운영사 예약 시스템이 상품·가용성·예약을 노출하고, 커넥티비티 허브가 다대다로 집계하며, 리셀러·마켓플레이스가 독자 API와 개방형 OCTO 표준으로 연동합니다.',
+        en:'Operator reservation tech exposes products/availability/bookings; connectivity hubs aggregate many-to-many; resellers and marketplaces integrate via proprietary APIs and the open OCTO standard.'},
+      pipe:[['Res-tech','reservation-technology'],['Connectivity Hub','connectivity-hub'],['Reseller API','reseller-api'],['OCTO','octo-spec'],['Marketplace','experiences-marketplace']] }
+  ];
+  const TECH_REFS = [
+    { color:'#1f6feb', group:{ko:'항공 유통 표준·API',en:'Airline distribution standards & APIs'}, items:[
+      { name:'NDC', termId:'ndc', blurb:{ko:'오퍼 기반 항공 리테일링을 위한 IATA XML/REST 메시징 표준.',en:'IATA XML/REST messaging standard for offer-based airline retailing.'},
+        links:[['IATA NDC','https://www.iata.org/en/programs/airline-distribution/ndc/'],['Developer portal','https://developer.iata.org/']] },
+      { name:'ONE Order', termId:'one-order', blurb:{ko:'PNR·티켓·EMD를 대체하는 단일 주문 기록.',en:'A single order record replacing PNR + ticket + EMD.'},
+        links:[['IATA ONE Order','https://www.iata.org/en/programs/airline-distribution/one-order/']] },
+      { name:'EDIFACT / PADIS', termId:'edifact', blurb:{ko:'레거시 EDI·텔레타이프 메시징 표준(IATA PADIS 코드셋).',en:'Legacy EDI / teletype messaging standards (IATA PADIS codesets).'},
+        links:[['UN/EDIFACT','https://unece.org/trade/uncefact/introducing-unedifact'],['IATA Developer','https://developer.iata.org/']] },
+      { name:'GDS developer portals', termId:'gds', blurb:{ko:'Amadeus·Sabre·Travelport의 쇼핑·예약·발권 API.',en:'Amadeus, Sabre and Travelport shopping/booking/ticketing APIs.'},
+        links:[['Amadeus','https://developers.amadeus.com/'],['Sabre','https://developer.sabre.com/'],['Travelport','https://developer.travelport.com/']] }
+    ]},
+    { color:'#c0623d', group:{ko:'호텔 유통 표준·API',en:'Hotel distribution standards & APIs'}, items:[
+      { name:'OpenTravel (OTA 2.0)', termId:'opentravel-alliance', blurb:{ko:'호텔·항공·렌터카 등 여행 메시지를 위한 XML 스키마 표준.',en:'XML schema standard for hotel, air, car and other travel messages.'},
+        links:[['OpenTravel specs','https://opentravel.org/download-specs/']] },
+      { name:'HTNG', termId:'htng', blurb:{ko:'호스피탈리티 시스템 상호운용 사양(현 AHLA 산하).',en:'Hospitality systems interoperability specifications (now under AHLA).'},
+        links:[['HTNG (AHLA)','https://www.ahla.com/htng']] },
+      { name:'ARI & hotel messaging', termId:'ari', blurb:{ko:'가용성·요금·재고(ARI) 동기화 및 예약 통지(OTA_HotelResNotif).',en:'Availability/Rate/Inventory (ARI) sync and reservation notification (OTA_HotelResNotif).'},
+        links:[['OpenTravel specs','https://opentravel.org/download-specs/']] },
+      { name:'Google Hotels', blurb:{ko:'호텔 요금 피드·예약 연동(Hotel Center / Hotel prices API).',en:'Hotel price feeds and booking integration (Hotel Center / Hotel prices API).'},
+        links:[['Google Hotels','https://developers.google.com/hotels']] }
+    ]},
+    { color:'#e8590c', group:{ko:'투어·액티비티 표준·API',en:'Tours & activities standards & APIs'}, items:[
+      { name:'OCTO', termId:'octo-spec', blurb:{ko:'투어·액티비티·어트랙션 연결을 위한 개방형 JSON API 표준.',en:'Open JSON API standard for tours, activities and attractions connectivity.'},
+        links:[['OCTO','https://octo.travel/'],['Specification','https://octo.travel/specification']] },
+      { name:'Reseller / Booking APIs', termId:'reseller-api', blurb:{ko:'운영사 재고를 노출하는 마켓플레이스의 독자 공급자 API.',en:'Marketplaces’ proprietary supplier APIs exposing operator inventory.'},
+        links:[['Viator Partner','https://www.viator.com/partner/home'],['GetYourGuide Partner','https://partner.getyourguide.com/']] },
+      { name:'Google Things to Do', blurb:{ko:'어트랙션·투어 상품을 구글에 노출하는 피드 프로그램.',en:'Feed program that surfaces attraction and tour products on Google.'},
+        links:[['Google Things to Do','https://developers.google.com/travel/things-to-do']] }
+    ]},
+    { color:'#5f3dc4', group:{ko:'지상교통·철도 표준·API',en:'Ground & rail standards & APIs'}, items:[
+      { name:'OSDM', termId:'osdm', blurb:{ko:'철도 개방형 판매·유통 모델(REST API, 소매/유통 모드).',en:'Rail Open Sales and Distribution Model (REST API, retailer/distributor modes).'},
+        links:[['OSDM','https://osdm.io/']] },
+      { name:'GBFS', termId:'general-bikeshare-feed-specification', blurb:{ko:'공유 모빌리티 실시간 가용성 피드 명세(MobilityData).',en:'Real-time shared-mobility availability feed spec (MobilityData).'},
+        links:[['GBFS','https://gbfs.org/'],['GitHub','https://github.com/MobilityData/gbfs']] },
+      { name:'GTFS', blurb:{ko:'대중교통 시각표·실시간 표준(정적/실시간).',en:'Public-transit schedule and real-time standard (static / realtime).'},
+        links:[['GTFS','https://gtfs.org/']] },
+      { name:'NeTEx / Transmodel', blurb:{ko:'유럽 대중교통 데이터 교환 모델(CEN).',en:'European public-transport data exchange model (CEN).'},
+        links:[['NeTEx','https://netex-cen.eu/']] }
+    ]},
+    { color:'#b5560f', group:{ko:'결제·보안 표준',en:'Payments & security standards'}, items:[
+      { name:'PCI DSS', termId:'pci-dss', blurb:{ko:'카드 데이터 보안 표준(PCI SSC).',en:'Payment Card Industry Data Security Standard (PCI SSC).'},
+        links:[['PCI SSC','https://www.pcisecuritystandards.org/']] },
+      { name:'EMV 3-D Secure', termId:'3-d-secure', blurb:{ko:'비대면(CNP) 결제 인증 프로토콜(EMVCo).',en:'Card-not-present authentication protocol (EMVCo).'},
+        links:[['EMVCo 3DS','https://www.emvco.com/emv-technologies/3-d-secure/']] },
+      { name:'ISO 20022', blurb:{ko:'금융·결제 메시징 표준(정산·송금).',en:'Financial / payment messaging standard (settlement, remittance).'},
+        links:[['ISO 20022','https://www.iso20022.org/']] },
+      { name:'Tokenization', termId:'tokenization', blurb:{ko:'카드번호(PAN)를 토큰으로 대체하는 결제 보안(EMVCo).',en:'Replacing the card PAN with a token for payment security (EMVCo).'},
+        links:[['EMVCo Tokenisation','https://www.emvco.com/emv-technologies/payment-tokenisation/']] }
+    ]},
+    { color:'#5b6678', group:{ko:'식별자·데이터 표준',en:'Identifiers & data standards'}, items:[
+      { name:'ISO 3166 / 4217', termId:'iso-3166-country-code', blurb:{ko:'국가 코드·통화 코드 표준(ISO).',en:'Country-code and currency-code standards (ISO).'},
+        links:[['ISO 3166','https://www.iso.org/iso-3166-country-codes.html'],['ISO 4217','https://www.iso.org/iso-4217-currency-codes.html']] },
+      { name:'IATA / ICAO codes', termId:'iata-code', blurb:{ko:'공항·항공사·도시 코드 체계(IATA·ICAO).',en:'Airport, airline and city code systems (IATA / ICAO).'},
+        links:[['IATA','https://www.iata.org/'],['ICAO','https://www.icao.int/']] },
+      { name:'UN/LOCODE', termId:'un-locode', blurb:{ko:'유엔 무역·운송 위치 코드.',en:'UN code for trade and transport locations.'},
+        links:[['UNECE UN/LOCODE','https://unece.org/trade/cefact/unlocode-code-list-country-and-territory']] },
+      { name:'schema.org', blurb:{ko:'여행 구조화 데이터 어휘(Trip·Reservation·TouristAttraction).',en:'Structured-data vocabulary for travel (Trip, Reservation, TouristAttraction).'},
+        links:[['schema.org','https://schema.org/docs/full.html']] }
+    ]}
+  ];
+
+  function renderTech(){
+    showGraphDashboard(false);
+    const L = s => LANG==='ko' ? s.ko : s.en;
+    const extLink = ([label,url]) => `<a class="tech-link" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(label)}<span class="tl-ext">↗</span></a>`;
+    const pipeHTML = pipe => pipe.map(([lab,id],i)=>`${i?'<span class="tp-arr">→</span>':''}<a href="#/term/${encodeURIComponent(id)}">${esc(lab)}</a>`).join('');
+
+    let h = pageHead(LANG==='ko'?'기술 레퍼런스 · API & 아키텍처':'Tech Reference · APIs & Architecture',
+                     LANG==='ko'?'여행 산업 기술 표준·API와 외부 개발 문서':'Travel-industry tech standards, APIs & external developer references');
+    h += `<p class="tech-intro">${LANG==='ko'
+      ? '여행 상품의 검색·예약·정산·이행을 떠받치는 핵심 기술 표준과 API를 한자리에 모았습니다. 각 항목은 사전 표제어(있는 경우)와 공식 사양·개발자 문서로 연결됩니다. 먼저 버티컬별 아키텍처 개요를 보고, 이어서 표준·API 레퍼런스를 살펴보세요.'
+      : 'The core technical standards and APIs that power travel shopping, booking, settlement and fulfillment — each linked to its glossary entry (where one exists) and to the official spec or developer docs. Start with the per-vertical architecture overviews, then browse the standards & API references.'}</p>`;
+
+    // architecture overviews
+    h += `<div class="tech-sec"><div class="tech-sec-h"><span class="ts-dot" style="background:var(--accent)"></span>${LANG==='ko'?'아키텍처 개요':'Architecture overviews'}</div>`;
+    h += `<div class="tech-arch">` + TECH_ARCH.map(a=>`
+      <div class="tech-arch-card" style="--cc:${a.color}">
+        <h4>${esc(L(a.title))}</h4>
+        <p>${esc(L(a.blurb))}</p>
+        <div class="tech-pipe">${pipeHTML(a.pipe)}</div>
+      </div>`).join('') + `</div></div>`;
+
+    // standards & API reference groups
+    TECH_REFS.forEach(g=>{
+      h += `<div class="tech-sec"><div class="tech-sec-h"><span class="ts-dot" style="background:${g.color}"></span>${esc(L(g.group))}</div>`;
+      h += `<div class="tech-grid">` + g.items.map(it=>{
+        const term = it.termId && byId.get(it.termId)
+          ? `<a class="tech-card-term" href="#/term/${encodeURIComponent(it.termId)}" title="${LANG==='ko'?'사전 보기':'View glossary'}">${LANG==='ko'?'사전':'glossary'}</a>` : '';
+        return `<div class="tech-card" style="--cc:${g.color}">
+            <div class="tech-card-h"><span class="tech-card-name">${esc(it.name)}</span>${term}</div>
+            <div class="tech-card-blurb">${esc(L(it.blurb))}</div>
+            <div class="tech-links">${(it.links||[]).map(extLink).join('')}</div>
+          </div>`;
+      }).join('') + `</div></div>`;
+    });
+
+    main.innerHTML = `<div class="tech-page">${h}</div>`; renderSidebar(null); main.focus();
+    document.title = (LANG==='ko'?'기술 레퍼런스':'Tech Reference') + ' — Travel Gaia';
+
+    // clicking a glossary term opens the inline drawer overlay (like the flow & mindmap pages)
+    const techPage = main.querySelector('.tech-page');
+    if (techPage) {
+      techPage.addEventListener('click', ev => {
+        const link = ev.target.closest('a[href^="#/term/"]');
+        if (link) {
+          ev.preventDefault();
+          const termId = decodeURIComponent(link.getAttribute('href').substring('#/term/'.length));
+          initDrawerListeners();
+          updateDrawer(termId);
+        }
+      });
+    }
+  }
+
   /* ---- #5 machine-readable export (from inlined data; offline) ---- */
   window.tgExport=function(kind){ const d=window.GLOSSARY_DATA||{entries:[]}; let blob,name;
     if(kind==='csv'){ const cols=['id','term','term_ko','vertical','category','conceptType','status','definition']; const q=v=>`"${String(v==null?'':v).replace(/"/g,'""')}"`;
@@ -2779,6 +2949,7 @@ g.mmn.focused rect {
     if(hash.startsWith('#/mindmap')){ if($('#q'))$('#q').value=''; return renderMindmap(); }
     if(hash==='#/index'||hash.startsWith('#/index')){ document.title='Index — Travel Gaia'; if($('#q'))$('#q').value=''; return renderIndex(); }
     if(hash==='#/classroom'||hash.startsWith('#/classroom')){ document.title='Distribution — Travel Gaia'; if($('#q'))$('#q').value=''; return renderClassroom(); }
+    if(hash==='#/tech'||hash.startsWith('#/tech')){ if($('#q'))$('#q').value=''; return renderTech(); }
     // #/graph redirects to mindmap now that the Knowledge Graph has been removed
     if(hash==='#/graph'||hash.startsWith('#/graph?')){ location.replace('#/mindmap'); return; }
     const m=hash.match(/^#\/(term|category|q)\/(.+)$/);
@@ -2793,7 +2964,7 @@ g.mmn.focused rect {
     renderHome();
   }
   let _routed=false;
-  function route(){ stopGraph(); stopClassroom(); closeNav(); document.body.classList.remove('mm-full'); document.body.classList.remove('flow-full'); const go=()=>dispatch();
+  function route(){ closeDrawer(); stopGraph(); stopClassroom(); closeNav(); document.body.classList.remove('mm-full'); document.body.classList.remove('flow-full'); const go=()=>dispatch();
     if(_routed && document.startViewTransition && !location.hash.startsWith('#/classroom')){ document.startViewTransition(go); } else go(); _routed=true; }
   window.addEventListener('hashchange',route);
 
