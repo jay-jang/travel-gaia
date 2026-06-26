@@ -567,6 +567,62 @@ await runAsyncTest('Tech Reference: architecture overviews, API cards & external
   }
 });
 
+// 3c. Test the Concept Map page (top-down layered atlas)
+await runAsyncTest('Concept Map: layers, focus selection & relationship buckets', async () => {
+  window.location.hash = '#/map';
+  await new Promise(resolve => setTimeout(resolve, 200));
+
+  // nav exposes the route
+  if (!document.querySelector('a[href="#/map"]')) {
+    throw new Error('Concept map nav link not found.');
+  }
+
+  const wrap = document.querySelector('.map-wrap');
+  if (!wrap) throw new Error('Concept map wrapper (.map-wrap) not found in the DOM.');
+
+  // exactly six business-flow layers
+  const layers = document.querySelectorAll('.map-layer');
+  if (layers.length !== 6) {
+    throw new Error(`Expected 6 concept map layers, found: ${layers.length}`);
+  }
+
+  // initialized with a selected (focused) term
+  const sel = document.querySelector('.map-term.on');
+  if (!sel) throw new Error('Concept map did not initialize with a selected term.');
+
+  // detail panel reflects the selected term
+  const info = document.querySelector('#mapInfo');
+  if (!info) throw new Error('#mapInfo detail panel not found.');
+  const h2 = info.querySelector('h2');
+  const selName = ((sel.querySelector('.mt-name') || {}).textContent || '').trim();
+  if (!h2 || h2.textContent.trim() !== selName) {
+    throw new Error(`Detail heading "${h2 && h2.textContent}" does not match selected term "${selName}".`);
+  }
+
+  // three relationship buckets (upstream / downstream / related) + a term deep-link
+  if (info.querySelectorAll('.map-relbox').length !== 3) {
+    throw new Error(`Expected 3 relationship buckets, found: ${info.querySelectorAll('.map-relbox').length}`);
+  }
+  if (!info.querySelector('a.rel-link[href^="#/term/"]')) {
+    throw new Error('Concept map detail is missing the term deep-link.');
+  }
+
+  // clicking a different term updates the detail panel and active state
+  const other = [...document.querySelectorAll('.map-term')].find(b => !b.classList.contains('on'));
+  if (other) {
+    const otherName = ((other.querySelector('.mt-name') || {}).textContent || '').trim();
+    other.click();
+    await new Promise(resolve => setTimeout(resolve, 30));
+    const h2b = document.querySelector('#mapInfo h2');
+    if (!h2b || h2b.textContent.trim() !== otherName) {
+      throw new Error('Clicking a concept-map term did not update the detail panel.');
+    }
+    if (!other.classList.contains('on')) {
+      throw new Error('Clicked concept-map term was not marked active.');
+    }
+  }
+});
+
 // 4. Test Knowledge Graph initialized state & progressive node-focus exposure
 // 4. Test Static Routing: term, category, and search pages
 await runAsyncTest('Static Routing: Term, Category, and Search Result Pages', async () => {

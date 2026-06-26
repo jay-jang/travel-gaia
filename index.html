@@ -216,6 +216,43 @@ mark{background:var(--accent-weak);color:var(--accent);padding:0 1px;border-radi
 #kg:active{cursor:grabbing}
 .kg-tip{position:absolute;pointer-events:none;background:var(--text);color:var(--paper);font-family:var(--sans);font-size:.76rem;font-weight:500;padding:5px 9px;border-radius:var(--r);opacity:0;transform:translate(-50%,-130%);transition:opacity .1s;white-space:nowrap;z-index:5;max-width:260px}
 
+/* concept map: top-down layered atlas */
+.map-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:14px;margin-bottom:12px}
+.map-sub{font-family:var(--serif);color:var(--muted);font-size:.92rem;line-height:1.6;margin:4px 0 0;max-width:74ch}
+.map-wrap{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;max-width:100%;min-width:0}
+.map-layers{display:grid;grid-template-columns:repeat(6,minmax(176px,1fr));gap:0;overflow-x:auto;max-width:100%;min-width:0}
+.map-layer{min-width:176px;background:var(--surface);padding:14px;border-right:1px solid var(--border);border-top:3px solid var(--lc,var(--accent))}
+.map-layer:last-child{border-right:0}
+.map-layer-head{margin-bottom:10px}
+.map-layer h3{font-family:var(--sans);font-size:.84rem;line-height:1.2;margin:0;font-weight:700;color:var(--text)}
+.map-layer small{display:block;font-family:var(--sans);color:var(--faint);font-size:.68rem;font-weight:500;margin-top:2px}
+.map-terms{display:grid;gap:5px}
+.map-term{display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:var(--r);padding:6px 8px;text-align:left;cursor:pointer;font-family:var(--sans);font-size:.78rem;font-weight:500;line-height:1.25;transition:.12s}
+.map-term:hover{border-color:var(--accent);color:var(--accent)}
+.map-term.on{background:var(--accent);color:var(--paper);border-color:var(--accent)}
+.map-term .mt-name{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.map-term .mt-deg{flex:none;font-family:var(--mono);font-size:.66rem;font-weight:600;color:var(--faint)}
+.map-term.on .mt-deg{color:var(--paper);opacity:.8}
+.map-more{font-family:var(--mono);color:var(--faint);font-size:.7rem;text-align:center;padding:4px 0}
+.map-detail{display:grid;grid-template-columns:minmax(0,1fr) 264px;border-top:1px solid var(--border)}
+.map-info{padding:18px 20px;min-width:0}
+.map-info .badges{margin:0 0 10px}
+.map-info h2{font-family:var(--serif);font-size:1.5rem;line-height:1.12;margin:0;color:var(--text)}
+.map-ko{font-family:var(--sans);color:var(--muted);font-size:.9rem;margin:2px 0 8px}
+.map-info p{font-family:var(--serif);margin:8px 0;color:var(--muted);line-height:1.6}
+.map-relgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:14px}
+.map-relbox{background:var(--surface-2);border:1px solid var(--border);border-radius:var(--r);padding:11px;min-height:84px}
+.map-relbox h4{font-family:var(--sans);font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;color:var(--faint);margin:0 0 7px}
+.map-relbox a{display:block;font-family:var(--serif);color:var(--text);font-size:.86rem;line-height:1.3;margin:5px 0}
+.map-relbox a:hover{color:var(--accent);text-decoration:none}
+.map-aside{border-left:1px solid var(--border);background:var(--surface-2);padding:16px 18px}
+.map-aside h3{font-family:var(--sans);font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--faint);margin:0 0 8px}
+.map-domain{display:flex;align-items:center;justify-content:space-between;gap:10px;border-bottom:1px solid var(--border);padding:7px 0;font-family:var(--sans);font-size:.8rem}
+.map-domain span:first-child{display:flex;align-items:center;gap:7px;font-weight:600;color:var(--text)}
+.map-domain i{width:9px;height:9px;border-radius:0;display:inline-block;flex:none}
+.map-domain b{font-family:var(--mono);color:var(--muted);font-weight:500}
+@media (max-width:980px){.map-detail{grid-template-columns:1fr}.map-aside{border-left:0;border-top:1px solid var(--border)}.map-relgrid{grid-template-columns:1fr}}
+
 /* distribution flow (classroom overhaul) */
 .flow-verticals{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 14px}
 .flow-vtab{padding:8px 16px;border:1px solid var(--border);background:var(--surface);color:var(--muted);border-radius:var(--r);cursor:pointer;font-family:var(--sans);font-weight:600;font-size:0.86rem;transition:.15s}
@@ -521,6 +558,8 @@ g.mmn.focused rect {
       disc:`정의는 공개 산업 표준(IATA·ATPCO·OpenTravel·HTNG·ISO 등) 및 공급자 문서를 근거로 한 편집 요약이며, 중요한 의사결정 전 1차 출처로 검증하시기 바랍니다. 마지막 갱신: ${esc(META.generatedAt||'')}.`,
       gTitle:'용어 관계 그래프', gNodes:'노드', gEdges:'관계',
       gHint:'노드를 클릭하면 주변 관계가 확장되며, 이미 확장된 노드를 다시 클릭하면 용어 상세 페이지로 이동합니다. 외곽 점선 링 = 미확장 이웃 있음.',
+      mapTitle:'개념 지도', mapSub:'업무 흐름을 상위 구조로 놓고 핵심 용어를 단계별로 배치합니다. 용어를 선택하면 상위·하위·관련/혼동 관계가 함께 정리됩니다.',
+      mapOpen:'상세 보기', mapUp:'상위 · 기반', mapDown:'하위 · 결과', mapNear:'관련 · 혼동', mapDomains:'도메인 분포', mapTerms:n=>`+${n}개 더`,
       idxTitle:'전체 색인', idxAZ:'가나다·ABC', idxByCat:'카테고리별', idxAll:n=>`전체 ${n}개 표제어`,
       RLAB:{sameAs:'같음',broader:'상위 개념',narrower:'하위 개념',parent:'부모',child:'자식',related:'관련',conflicts:'충돌',replaces:'대체',contrasts:'대비'},
       ST:{active:'활성',deprecated:'폐지/레거시',ambiguous:'중의적'},
@@ -551,6 +590,8 @@ g.mmn.focused rect {
       disc:`Definitions are editorial summaries grounded in public industry standards (IATA, ATPCO, OpenTravel, HTNG, ISO, etc.) and provider docs; verify against primary sources before critical decisions. Last updated: ${esc(META.generatedAt||'')}.`,
       gTitle:'Term Knowledge Graph', gNodes:'nodes', gEdges:'links',
       gHint:'Click a node to expand its relationships. Click it again when expanded to view details. Dashed outer ring = has hidden neighbors.',
+      mapTitle:'Concept Map', mapSub:'Places core terms into a business-flow hierarchy first, then shows upstream, downstream, related and distinction links for the selected term.',
+      mapOpen:'Open detail', mapUp:'Upstream / base', mapDown:'Downstream / output', mapNear:'Related / confused', mapDomains:'Domain mix', mapTerms:n=>`+${n} more`,
       idxTitle:'Full Index', idxAZ:'A–Z', idxByCat:'By category', idxAll:n=>`${n} terms total`,
       RLAB:{sameAs:'Same as',broader:'Broader',narrower:'Narrower',parent:'Parent',child:'Child',related:'Related',conflicts:'Conflicts',replaces:'Replaces',contrasts:'Contrasts'},
       ST:{active:'Active',deprecated:'Deprecated',ambiguous:'Ambiguous'},
@@ -614,6 +655,7 @@ g.mmn.focused rect {
       <a class="cat-link${(h2==='#/'||!h2)?' active':''}" href="#/">${t('home')}</a>
       <a class="cat-link${h2.startsWith('#/index')?' active':''}" href="#/index">${t('index')}</a>
       <a class="cat-link${h2.startsWith('#/mindmap')?' active':''}" href="#/mindmap">${LANG==='ko'?'🧠 마인드맵':'🧠 Mindmap'}</a>
+      <a class="cat-link${h2.startsWith('#/map')?' active':''}" href="#/map">${LANG==='ko'?'🗺 개념 지도':'🗺 Concept map'}</a>
       <a class="cat-link${h2.startsWith('#/classroom')?' active':''}" href="#/classroom">${t('classroom')}</a>
       <a class="cat-link${h2.startsWith('#/tech')?' active':''}" href="#/tech">${LANG==='ko'?'🛠 기술 레퍼런스':'🛠 Tech & APIs'}</a>
       <a class="cat-link${h2.startsWith('#/confusables')?' active':''}" href="#/confusables">${LANG==='ko'?'⚖ 혼동 용어':'⚖ Confusables'}</a>
@@ -644,7 +686,7 @@ g.mmn.focused rect {
     const st=(n,l)=>`<div class="stat"><b>${n}</b><span>${esc(l)}</span></div>`;
     let h=`<section class="hero"><h1>${esc(t('heroT'))}</h1><p>${t('heroB')}</p>
       <div class="stats">${st(ENTRIES.length,t('sTerms'))}${st(CATS.length,t('sCats'))}${st(provSet.size,t('sProv'))}${st(srcCount,t('sSrc'))}</div>
-      <div class="cta-row"><a class="cta-graph" href="#/mindmap">🧠 ${LANG==='ko'?'마인드맵 탐색':'Explore Mindmap'}</a><a class="cta-2" href="#/index">📇 ${esc(t('openIndex'))}</a></div></section>`;
+      <div class="cta-row"><a class="cta-graph" href="#/mindmap">🧠 ${LANG==='ko'?'마인드맵 탐색':'Explore Mindmap'}</a><a class="cta-2" href="#/map">🗺 ${LANG==='ko'?'개념 지도':'Concept map'}</a><a class="cta-2" href="#/index">📇 ${esc(t('openIndex'))}</a></div></section>`;
     if(conflicts.length){ h+=`<div class="sec-title">${esc(t('confT'))}</div>`;
       conflicts.forEach(e=>{ const d=(e.distinctions&&e.distinctions[0]);
         h+=`<a class="conflict" href="#/term/${e.id}"><b>${esc(e.term)}</b> — ${esc(Lf(e,'definition')).slice(0,120)}…
@@ -2122,6 +2164,91 @@ g.mmn.focused rect {
 
   /* ---- mindmap: collapsible radial tree of the taxonomy (vertical -> subcategory -> term) ---- */
   /* ---- mindmap: collapsible radial tree of the taxonomy (vertical -> subcategory -> term) ---- */
+  /* top-down concept map */
+  const MAP_LAYERS = [
+    { id:'foundation',  color:'#6f6a5f', ko:'식별 · 표준 기반', en:'Identifiers & Standards', hintKo:'코드 · 표준 · 시스템', hintEn:'Codes, standards, systems' },
+    { id:'shopping',    color:'#3f5d66', ko:'탐색 · 가격 · 재고', en:'Shopping & Availability', hintKo:'조회 · 운임 · 요금', hintEn:'Search, fares, rates' },
+    { id:'booking',     color:'#7a5a3c', ko:'예약 · 기록', en:'Booking & Records', hintKo:'PNR · 세그먼트 · 객실', hintEn:'PNR, segments, rooms' },
+    { id:'fulfillment', color:'#4f6b4a', ko:'발권 · 주문 · 증빙', en:'Ticketing & Orders', hintKo:'티켓 · Order · 문서', hintEn:'Tickets, orders, documents' },
+    { id:'servicing',   color:'#9c2b2b', ko:'변경 · 중단 · 권리', en:'Servicing & Disruption', hintKo:'변경 · 환불 · 보호', hintEn:'Changes, refunds, rights' },
+    { id:'settlement',  color:'#8a5414', ko:'결제 · 정산 · 성과', en:'Payment & Settlement', hintKo:'결제 · 정산 · 지표', hintEn:'Payment, settlement, metrics' },
+  ];
+  const MAP_LAYER_BY_ID = new Map(MAP_LAYERS.map(l=>[l.id,l]));
+  const mapLayerName = l => LANG==='ko' ? l.ko : l.en;
+  const mapLayerHint = l => LANG==='ko' ? l.hintKo : l.hintEn;
+  const degreeById = new Map();
+  ENTRIES.forEach(e=>{
+    (e.relationships||[]).forEach(r=>{ if(r.targetId){ degreeById.set(e.id,(degreeById.get(e.id)||0)+1); degreeById.set(r.targetId,(degreeById.get(r.targetId)||0)+1); } });
+    (e.distinctions||[]).forEach(d=>{ if(d.targetId){ degreeById.set(e.id,(degreeById.get(e.id)||0)+1); degreeById.set(d.targetId,(degreeById.get(d.targetId)||0)+1); } });
+  });
+  function inferMapLayer(e){
+    const text=(e.id+' '+e.term+' '+(e.abbreviation||'')+' '+(e.category||'')+' '+(e.conceptType||'')).toLowerCase();
+    if(/pay|settlement|bsp|arc|vcc|chargeback|merchant|payment|revenue|adr|revpar|commission|invoice|payout|remit/.test(text)) return 'settlement';
+    if(/disruption|refund|reissue|exchange|cancel|denied|delay|rights|insurance|protection|cfar|schedule change|irregular|involuntary/.test(text)) return 'servicing';
+    if(/ticket|order|emd|coupon|receipt|fulfil|ancillar|voucher|itinerary|boarding/.test(text)) return 'fulfillment';
+    if(/pnr|booking|reservation|segment|room|guest|profile|loyalty|passenger/.test(text)) return 'booking';
+    if(/shop|price|fare|availability|inventory|rate|rbd|yield|offer|search|quote/.test(text)) return 'shopping';
+    if(/standard|api|code|identifier|iata|icao|iso|gds|ndc|open|htng|schema|pcc|oid|system/.test(text)) return 'foundation';
+    if(e.conceptType==='code'||e.conceptType==='standard'||e.conceptType==='standard-term'||e.conceptType==='system') return 'foundation';
+    if(e.conceptType==='metric') return 'settlement';
+    return 'booking';
+  }
+  function renderMap(){
+    const groups = new Map(MAP_LAYERS.map(l=>[l.id,[]]));
+    ENTRIES.forEach(e=>groups.get(inferMapLayer(e)).push(e));
+    groups.forEach(arr=>arr.sort((a,b)=>(degreeById.get(b.id)||0)-(degreeById.get(a.id)||0)||a.term.localeCompare(b.term)));
+    const focusId = (byId.has('pnr') ? 'pnr' : (ENTRIES[0]&&ENTRIES[0].id));
+    const layerHtml = MAP_LAYERS.map(l=>{
+      const list = groups.get(l.id)||[];
+      const terms = list.slice(0,12).map(e=>`<button class="map-term${e.id===focusId?' on':''}" data-term="${e.id}"><span class="mt-name">${esc(e.term)}</span><span class="mt-deg">${degreeById.get(e.id)||0}</span></button>`).join('');
+      const more = list.length>12 ? `<div class="map-more">${esc(t('mapTerms')(list.length-12))}</div>` : '';
+      return `<section class="map-layer" style="--lc:${l.color}"><div class="map-layer-head"><h3>${esc(mapLayerName(l))}</h3><small>${esc(mapLayerHint(l))}</small></div><div class="map-terms">${terms}${more}</div></section>`;
+    }).join('');
+    const domainRows = CATS.map(c=>{ const n=(entriesByCat.get(c.id)||[]).length;
+      return `<div class="map-domain"><span><i style="background:${c.color}"></i>${esc(catName(c))}</span><b>${n}</b></div>`;
+    }).join('');
+    main.innerHTML=`<div class="crumbs"><a href="#/">${esc(t('home2'))}</a> › ${esc(t('mapTitle'))}</div>
+      <div class="map-head"><div><div class="sec-title" style="margin:0">${esc(t('mapTitle'))}</div><p class="map-sub">${esc(t('mapSub'))}</p></div></div>
+      <div class="map-wrap"><div class="map-layers">${layerHtml}</div>
+        <div class="map-detail"><div class="map-info" id="mapInfo"></div><aside class="map-aside"><h3>${esc(t('mapDomains'))}</h3>${domainRows}</aside></div></div>`;
+    renderSidebar(null);
+    function relBuckets(e){
+      const up=[], down=[], near=[];
+      const push = (arr,id,label) => { if(id&&byId.has(id)&&id!==e.id&&!arr.some(x=>x.id===id)) arr.push({id,label:label||byId.get(id).term}); };
+      (e.relationships||[]).forEach(r=>{
+        if(r.type==='broader'||r.type==='parent') push(up,r.targetId,r.targetTerm);
+        else if(r.type==='narrower'||r.type==='child'||r.type==='replaces') push(down,r.targetId,r.targetTerm);
+        else push(near,r.targetId,r.targetTerm);
+      });
+      ENTRIES.forEach(src=>(src.relationships||[]).forEach(r=>{
+        if(r.targetId!==e.id) return;
+        if(r.type==='narrower'||r.type==='child') push(up,src.id,src.term);
+        else if(r.type==='broader'||r.type==='parent') push(down,src.id,src.term);
+        else push(near,src.id,src.term);
+      }));
+      (e.distinctions||[]).forEach(d=>push(near,d.targetId,d.targetTerm));
+      return {up:up.slice(0,7),down:down.slice(0,7),near:near.slice(0,9)};
+    }
+    function relBox(title,items){
+      const body = items.length ? items.map(x=>`<a href="#/term/${x.id}">${esc(x.label)}</a>`).join('') : `<span style="color:var(--faint);font-size:.82rem">—</span>`;
+      return `<div class="map-relbox"><h4>${esc(title)}</h4>${body}</div>`;
+    }
+    function selectTerm(id){
+      const e=byId.get(id); if(!e) return;
+      main.querySelectorAll('.map-term').forEach(b=>b.classList.toggle('on',b.dataset.term===id));
+      const c=catById.get(e.category)||{};
+      const layer=MAP_LAYER_BY_ID.get(inferMapLayer(e));
+      const rb=relBuckets(e);
+      const ko=LANG==='ko'&&e.term_ko&&e.term_ko!==e.term?`<div class="map-ko">${esc(e.term_ko)}</div>`:'';
+      $('#mapInfo').innerHTML=`<div class="badges"><span class="badge cat">${esc(catName(c))}</span><span class="badge">${esc(mapLayerName(layer))}</span>${e.conceptType?`<span class="badge">${esc((t('CT')[e.conceptType])||e.conceptType)}</span>`:''}</div>
+        <h2>${esc(e.term)}</h2>${ko}<p>${esc(Lf(e,'definition'))}</p>
+        <p><a class="rel-link" href="#/term/${e.id}">${esc(t('mapOpen'))} →</a></p>
+        <div class="map-relgrid">${relBox(t('mapUp'),rb.up)}${relBox(t('mapDown'),rb.down)}${relBox(t('mapNear'),rb.near)}</div>`;
+    }
+    main.querySelector('.map-layers').addEventListener('click',ev=>{ const b=ev.target.closest('.map-term'); if(b) selectTerm(b.dataset.term); });
+    selectTerm(focusId);
+  }
+
   function renderMindmap() {
     showGraphDashboard(false);
     document.body.classList.add('mm-full');   // full-bleed: canvas fills the screen
@@ -2953,6 +3080,7 @@ g.mmn.focused rect {
     if(hash.startsWith('#/compare/')){ if($('#q'))$('#q').value=''; return renderCompare(decodeURIComponent(hash.slice(10))); }
     if(hash.startsWith('#/vertical/')){ if($('#q'))$('#q').value=''; return renderVertical(decodeURIComponent(hash.slice(11))); }
     if(hash.startsWith('#/mindmap')){ if($('#q'))$('#q').value=''; return renderMindmap(); }
+    if(hash==='#/map'){ document.title='Concept Map — Travel Wiki'; if($('#q'))$('#q').value=''; return renderMap(); }
     if(hash==='#/index'||hash.startsWith('#/index')){ document.title='Index — Travel Wiki'; if($('#q'))$('#q').value=''; return renderIndex(); }
     if(hash==='#/classroom'||hash.startsWith('#/classroom')){ document.title='Distribution — Travel Wiki'; if($('#q'))$('#q').value=''; return renderClassroom(); }
     if(hash==='#/tech'||hash.startsWith('#/tech')){ if($('#q'))$('#q').value=''; return renderTech(); }
