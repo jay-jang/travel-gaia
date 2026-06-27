@@ -2,8 +2,8 @@
   "meta": {
     "name": "Travel Wiki",
     "tagline": "여행 산업 용어 백과사전",
-    "generatedAt": "2026-06-26",
-    "entryCount": 457,
+    "generatedAt": "2026-06-27",
+    "entryCount": 463,
     "categoryCount": 20,
     "verticalCount": 6
   },
@@ -6430,6 +6430,88 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "carbon-intensity-indicator-cii",
+      "vertical": "common",
+      "category": "sustainability",
+      "conceptType": "regulation",
+      "status": "active",
+      "abbreviation": "CII",
+      "term_ko": "탄소집약도지표(CII)",
+      "definition_ko": "CII(Carbon Intensity Indicator, 탄소집약도지표)는 연간 CO2 배출량을 운송 작업 단위(화물 톤×해리)로 나눈 값으로 선박의 운영 에너지 효율을 측정하는 IMO 의무 등급 제도이다. MARPOL 부속서 VI 제28규칙에 따라 2023년 1월 1일부터 발효되었으며, 대상 선박에 A(최우수)~E의 연간 등급을 부여한다. D 등급 3년 연속이나 E 등급을 받은 선박은 시정조치계획서를 제출해야 한다.",
+      "longDef": "CII applies to ships of 5,000 GT and above that are subject to MARPOL Annex VI. Each year, a ship's attained CII is calculated from its fuel consumption data (collected under the IMO Data Collection System, DCS), converted to CO2 and divided by its Capacity x Distance (nautical miles). The result is compared against an annual required CII value that tightens by 2% per year from 2023 to 2026. Ratings A-E are determined by rating boundaries (dd-factors) published by IMO. Ratings D or E trigger mandatory corrective action plans developed with the Flag State and Classification Society; continuous D/E ratings can influence port State control inspections and charterers' vessel selection. CII operates alongside EEXI (a one-time design-efficiency requirement for existing ships) as the two pillars of IMO's short-term GHG reduction strategy under MARPOL Annex VI.",
+      "longDef_ko": "CII는 MARPOL 부속서 VI의 적용을 받는 5,000 GT 이상 선박에 적용된다. 매년 선박의 달성 CII는 연료 소비 데이터(IMO 데이터수집시스템, DCS로 수집)로부터 CO2로 환산하고, 적재량(Capacity) × 운항 거리(해리)로 나누어 산정된다. 이 값은 2023~2026년 매년 2%씩 강화되는 연간 요구 CII와 비교된다. A~E 등급은 IMO가 발행한 등급 경계값(dd-factor)으로 결정된다. D 또는 E 등급을 받은 선박은 기국 및 선급과 함께 시정조치계획서를 수립해야 하고, 지속적인 D/E 등급은 항만국통제(PSC) 검사 및 용선자의 선박 선택에 영향을 미칠 수 있다. CII는 기존 선박의 일회성 설계 효율 요건인 EEXI와 함께 MARPOL 부속서 VI 하의 IMO 단기 온실가스 감축 전략의 두 축이다.",
+      "standardBody": "IMO",
+      "aliases": [
+        "Carbon Intensity Indicator",
+        "CII Rating",
+        "IMO CII"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Energy Efficiency Existing Ship Index (EEXI)",
+          "targetId": "eexi"
+        },
+        {
+          "type": "related",
+          "targetTerm": "EU Emissions Trading System (EU ETS)",
+          "targetId": "eu-emissions-trading-system-eu-ets"
+        },
+        {
+          "type": "related",
+          "targetTerm": "CORSIA (Carbon Offsetting and Reduction Scheme for International Aviation)",
+          "targetId": "corsia"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Gross Tonnage (GT)",
+          "targetId": "gross-tonnage"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Energy Efficiency Existing Ship Index (EEXI)",
+          "explanation": "EEXI is a one-time design-efficiency compliance certificate for existing ships (attained once at first annual survey from 2023); CII is an ongoing annual operational rating (A–E) that tracks year-by-year fuel efficiency in actual trading — design compliance vs. operational performance.",
+          "explanation_ko": "EEXI는 기존 선박의 설계 효율 준수 여부를 인증하는 일회성 증서(2023년 이후 최초 연차검사 시 취득)이고, CII는 실제 운항에서의 연도별 연료 효율을 추적하는 연간 운영 등급(A~E)이다 — 설계 준수 대 운영 성과의 차이다.",
+          "targetId": "eexi"
+        },
+        {
+          "targetTerm": "EU Emissions Trading System (EU ETS)",
+          "explanation": "CII is a global IMO operational rating system that assigns A–E grades to individual vessels; the EU ETS is a regional cap-and-trade scheme under which ship operators must surrender allowances for voyages to/from/between EU ports. Both apply to ships but are separate compliance regimes.",
+          "explanation_ko": "CII는 개별 선박에 A~E 등급을 부여하는 IMO 글로벌 운영 등급 시스템이고, EU ETS는 EU 항구 간 항해에 대해 선박 운영자가 배출권(allowance)을 제출해야 하는 지역 배출권거래제이다. 둘 다 선박에 적용되지만 별개의 이행 체계이다.",
+          "targetId": "eu-emissions-trading-system-eu-ets"
+        },
+        {
+          "targetTerm": "CORSIA (Carbon Offsetting and Reduction Scheme for International Aviation)",
+          "explanation": "CII is an IMO regulation for ships (maritime); CORSIA is an ICAO scheme for commercial aviation. Both impose carbon intensity or offset obligations on transport operators, but they apply to different modes, are governed by different international bodies, and use different mechanisms (operational rating vs. offsetting obligation).",
+          "explanation_ko": "CII는 선박(해운)에 대한 IMO 규정이고, CORSIA는 상업 항공에 대한 ICAO 제도이다. 두 제도 모두 운송 운영자에게 탄소 집약도 또는 상쇄 의무를 부과하지만, 적용 운송 수단과 관할 국제기구가 다르며 메커니즘(운영 등급 대 상쇄 의무)도 서로 다르다.",
+          "targetId": "corsia"
+        }
+      ],
+      "sources": [
+        {
+          "name": "MARPOL Annex VI — Regulation 28 (Carbon Intensity Indicators, CII), as amended by MEPC.328(76)",
+          "org": "IMO",
+          "version": "MEPC.328(76)",
+          "section": "Regulation 28",
+          "url": "https://www.imo.org/en/OurWork/Environment/Pages/Technical-and-Operational-Measures.aspx",
+          "tier": "standard-body"
+        },
+        {
+          "name": "IMO CII guidelines (Resolution MEPC.352(78))",
+          "org": "IMO",
+          "version": "MEPC.352(78)",
+          "section": "",
+          "url": "https://www.imo.org/en/OurWork/Environment/Pages/Technical-and-Operational-Measures.aspx",
+          "tier": "standard-body"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"26\" r=\"14\"/><path d=\"M24 12V6\"/><path d=\"M10 26H4m40 0h-6\"/><path d=\"M14.1 16.1l-4.2-4.2m28.2 0-4.2 4.2\"/><path d=\"M24 26l-6-8\"/><circle cx=\"24\" cy=\"26\" r=\"2\" fill=\"currentColor\"/><path d=\"M16 38h16\"/></svg>",
+      "term": "Carbon Intensity Indicator (CII)",
+      "definition": "The Carbon Intensity Indicator (CII) is an IMO mandatory operational energy-efficiency rating for ships that measures the annual CO2 emitted per unit of transport work (cargo tonnes × nautical miles). In force from 1 January 2023 under MARPOL Annex VI Regulation 28, it assigns each qualifying ship an annual rating from A (best) to E, with ships rated D for three consecutive years or E required to submit a corrective action plan.",
+      "lastReviewed": "2026-06-27"
+    },
+    {
       "id": "card-scheme",
       "vertical": "common",
       "category": "pay",
@@ -7533,6 +7615,80 @@
       "term": "Class of Service",
       "definition": "Class of Service is the single-letter code identifying the booking inventory class (Reservation Booking Designator) into which a seat is sold, indicating the fare/inventory bucket within a cabin rather than the physical cabin itself. It determines fare eligibility, mileage earning, upgrade, and change/refund conditions associated with the booking.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "clia",
+      "vertical": "cruise",
+      "category": "cruise",
+      "conceptType": "standard",
+      "status": "active",
+      "abbreviation": "CLIA",
+      "term_ko": "크루즈라인 국제협회(CLIA)",
+      "definition_ko": "CLIA(Cruise Lines International Association)는 세계 최대의 크루즈 산업 무역협회로, 50개 이상의 오션·리버·원정 크루즈 선사와 여행사·항구·목적지·해운 서비스 공급자를 대표한다. CLIA는 국제 및 각국 정부에 대해 업계를 대변하고, CLIA 아카데미를 통해 여행사 교육 및 인증 자격 부여를 제공하며, 권위 있는 연례 크루즈 산업 전망(State of the Cruise Industry Outlook) 보고서를 발간한다.",
+      "longDef": "CLIA was founded in 1975 and is headquartered in Washington, DC with offices in Brussels, London, and other regions. Its member cruise lines carry over 90% of ocean cruise passengers globally. CLIA runs the CLIA Academy, which certifies travel agents as Accredited Cruise Counsellors (ACC), Master Cruise Counsellors (MCC), or Elite Cruise Counsellors (ECC). Its annual State of the Cruise Industry Outlook provides globally cited data on passenger volumes, ship deployment, market trends, and economic impact. CLIA also leads industry positions on environmental regulations (including the IMO's CII and EEXI), port policy, and health protocols.",
+      "longDef_ko": "CLIA는 1975년에 설립되어 워싱턴 DC에 본부를 두고 브뤼셀, 런던 등에 지역 사무소를 운영한다. 회원 선사들은 전 세계 오션 크루즈 승객의 90% 이상을 수송한다. CLIA 아카데미는 여행사를 ACC(Accredited Cruise Counsellor), MCC(Master Cruise Counsellor), ECC(Elite Cruise Counsellor)로 인증한다. 연례 State of the Cruise Industry Outlook 보고서는 승객 수·선박 배치·시장 동향·경제적 파급 효과에 관한 글로벌 기준 데이터를 제공한다. CLIA는 또한 IMO의 CII·EEXI 등 환경 규제, 항만 정책, 건강 프로토콜에 관한 업계 입장을 주도한다.",
+      "standardBody": "CLIA",
+      "aliases": [
+        "Cruise Lines International Association",
+        "CLIA Academy"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Shore Excursion",
+          "targetId": "shore-excursion"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Embarkation",
+          "targetId": "embarkation"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Muster Drill",
+          "targetId": "muster-drill"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Net Yield",
+          "targetId": "net-yield"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Daily Service Charge",
+          "targetId": "daily-service-charge"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Shore Excursion",
+          "explanation": "Shore Excursion is a product type (an escorted port-of-call tour); CLIA is the trade association that represents the cruise lines that sell shore excursions, among many other industry roles.",
+          "explanation_ko": "Shore Excursion은 상품 유형(기항지 가이드 동반 투어)이고, CLIA는 기항지 투어를 판매하는 선사를 대표하는 무역협회다.",
+          "targetId": "shore-excursion"
+        }
+      ],
+      "sources": [
+        {
+          "name": "CLIA — About CLIA",
+          "org": "CLIA",
+          "version": "",
+          "section": "",
+          "url": "https://www.cruising.org/en-us/about-clia",
+          "tier": "association"
+        },
+        {
+          "name": "CLIA — State of the Cruise Industry Outlook",
+          "org": "CLIA",
+          "version": "2024",
+          "section": "",
+          "url": "https://cruising.org/en-us/news-and-research/research/2024",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 34h32l-4-10H12L8 34z\"/><path d=\"M12 24l4-12h16l4 12\"/><path d=\"M20 12V8m8 4V8\"/><path d=\"M4 38h40\"/><path d=\"M24 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4z\"/></svg>",
+      "term": "CLIA (Cruise Lines International Association)",
+      "definition": "The Cruise Lines International Association (CLIA) is the world's largest cruise industry trade association, representing more than 50 ocean, river, and expedition cruise lines as well as travel agencies, ports, destinations, and maritime service providers. CLIA advocates for the industry before international and national governments, provides travel agent training and accreditation through the CLIA Academy, and publishes the authoritative annual State of the Cruise Industry Outlook.",
+      "lastReviewed": "2026-06-27"
     },
     {
       "id": "closed-to-arrival-cta",
@@ -12482,6 +12638,76 @@
       "lastReviewed": "2026-06-18"
     },
     {
+      "id": "eexi",
+      "vertical": "common",
+      "category": "sustainability",
+      "conceptType": "regulation",
+      "status": "active",
+      "abbreviation": "EEXI",
+      "term_ko": "현존선 에너지효율지수(EEXI)",
+      "definition_ko": "EEXI(Energy Efficiency Existing Ship Index, 현존선 에너지효율지수)는 400 GT 이상 현존 선박이 선박 유형과 크기에 대한 최소 기준 에너지 효율 요건을 충족하도록 요구하는 MARPOL 부속서 VI 상의 IMO 의무 기술 조치이다. Regulation 23에 따라 2023년 1월 1일부터 의무화된 EEXI는 신조선 대상의 에너지효율설계지수(EEDI)에 준하는 일회성 인증으로, 달성 EEXI가 해당 선종과 크기에 대한 요구 EEXI를 초과하지 않아야 한다.",
+      "longDef": "The attained EEXI is calculated similarly to EEDI, using the formula that relates installed engine power, specific fuel oil consumption, and a reference transport work denominator (deadweight tonnage and design speed). Ships that fail to meet the required EEXI must implement power limitation (engine power management, EPL or ShaPoLi), shaft power limitation, or technical modifications to reduce the power used in the EEXI calculation. EEXI compliance is verified by the ship's classification society at the first annual, intermediate or renewal MARPOL survey on or after 1 January 2023, after which the ship receives an International Energy Efficiency Certificate (IEEC). While EEXI is a design measure (setting a baseline for the ship's capability), the Carbon Intensity Indicator (CII) is the complementary operational measure that tracks actual annual fuel consumption and CO2 intensity in service.",
+      "longDef_ko": "달성 EEXI는 설치 엔진 출력, 연료 소비율(SFOC), 재화중량(DWT)과 설계 속력을 기반으로 한 분모를 이용하여 EEDI와 유사한 방식으로 산정된다. 요구 EEXI를 충족하지 못하는 선박은 엔진 출력 제한(EPL 또는 ShaPoLi), 축 출력 제한, 또는 기술적 개조를 통해 EEXI 산정에 사용되는 출력을 줄여야 한다. EEXI 준수 여부는 2023년 1월 1일 이후 최초로 도래하는 연차·중간·갱신 MARPOL 검사에서 선급이 검증하고, 이후 선박은 국제에너지효율증서(IEEC)를 발급받는다. EEXI가 선박의 성능 상한을 설정하는 설계 측면의 조치인 반면, 탄소집약도지표(CII)는 실제 연간 연료 소비와 CO2 집약도를 추적하는 보완적 운영 측면의 조치이다.",
+      "standardBody": "IMO",
+      "aliases": [
+        "Energy Efficiency Existing Ship Index",
+        "EEXI Certificate"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Carbon Intensity Indicator (CII)",
+          "targetId": "carbon-intensity-indicator-cii"
+        },
+        {
+          "type": "related",
+          "targetTerm": "EU Emissions Trading System (EU ETS)",
+          "targetId": "eu-emissions-trading-system-eu-ets"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Gross Tonnage (GT)",
+          "targetId": "gross-tonnage"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Carbon Intensity Indicator (CII)",
+          "explanation": "EEXI is a one-time, design-based technical standard met by certificate at first survey (static, baseline compliance); CII is an annually recalculated operational rating A–E based on actual fuel consumption in trading (dynamic, ongoing monitoring) — one tells you what a ship is capable of, the other tracks what it actually does.",
+          "explanation_ko": "EEXI는 최초 검사 시 증서로 증명하는 일회성 설계 기반 기술 기준(정적, 기준 준수)이고, CII는 실제 운항 연료 소비에 기반하여 매년 재산정되는 A~E 운영 등급(동적, 지속적 모니터링)이다 — EEXI는 선박이 할 수 있는 것을, CII는 실제로 무엇을 하고 있는지를 알려준다.",
+          "targetId": "carbon-intensity-indicator-cii"
+        },
+        {
+          "targetTerm": "EU Emissions Trading System (EU ETS)",
+          "explanation": "EEXI is a global technical efficiency standard (IMO/MARPOL) applied via classification society certification; the EU ETS is a regional carbon market (EU law) requiring allowance surrender for voyages to/from EU ports. EEXI compliance reduces a ship's power ceiling, the EU ETS prices residual CO2 emissions.",
+          "explanation_ko": "EEXI는 선급 인증을 통해 적용되는 글로벌 기술 효율 기준(IMO/MARPOL)이고, EU ETS는 EU 항구 출입 항해에 대해 배출권 제출을 요구하는 지역 탄소 시장(EU 법)이다. EEXI 준수는 선박의 출력 상한을 낮추고, EU ETS는 잔여 CO2 배출에 가격을 부과한다.",
+          "targetId": "eu-emissions-trading-system-eu-ets"
+        }
+      ],
+      "sources": [
+        {
+          "name": "MARPOL Annex VI — Regulation 23 (Energy Efficiency Existing Ship Index, EEXI), as amended by MEPC.328(76)",
+          "org": "IMO",
+          "version": "MEPC.328(76)",
+          "section": "Regulation 23",
+          "url": "https://www.imo.org/en/OurWork/Environment/Pages/Technical-and-Operational-Measures.aspx",
+          "tier": "standard-body"
+        },
+        {
+          "name": "EEXI guidelines (Resolution MEPC.333(76))",
+          "org": "IMO",
+          "version": "MEPC.333(76)",
+          "section": "",
+          "url": "https://www.imo.org/en/OurWork/Environment/Pages/Technical-and-Operational-Measures.aspx",
+          "tier": "standard-body"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"8\" width=\"28\" height=\"32\" rx=\"3\"/><path d=\"M16 16h16m-16 6h16m-16 6h10\"/><path d=\"M30 28l4 4-4 4\"/><path d=\"M34 32h-6\"/></svg>",
+      "term": "Energy Efficiency Existing Ship Index (EEXI)",
+      "definition": "The Energy Efficiency Existing Ship Index (EEXI) is an IMO mandatory technical measure under MARPOL Annex VI that requires existing ships of 400 GT and above to demonstrate that their design energy efficiency meets a required minimum standard. Mandatory from 1 January 2023 under Regulation 23, the EEXI is a one-time certification—analogous to the Energy Efficiency Design Index (EEDI) for new ships—under which a ship's attained EEXI must not exceed the required EEXI for its ship type and size.",
+      "lastReviewed": "2026-06-27"
+    },
+    {
       "id": "enhanced-and-simplified-distribution-edist",
       "vertical": "common",
       "category": "standards",
@@ -16296,6 +16522,152 @@
       "definition": "A pre-packaged tour sold to many travelers on a fixed, scheduled departure with a set itinerary, typically at group pricing and minimum-numbers terms.",
       "lastReviewed": "2026-06-24",
       "distinctions": []
+    },
+    {
+      "id": "goppar",
+      "vertical": "lodging",
+      "category": "hotel-rate",
+      "conceptType": "metric",
+      "status": "active",
+      "abbreviation": "GOPPAR",
+      "term_ko": "가용 객실당 총영업이익(GOPPAR)",
+      "definition_ko": "GOPPAR(Gross Operating Profit Per Available Room)은 총영업이익(GOP)을 일정 기간의 가용 객실 수로 나눈 호텔 성과 지표다. 객실 매출만 포착하는 RevPAR과 달리, GOPPAR은 전 부문 매출에서 부문별·미배분 운영비용을 모두 차감하여 호텔 투자자와 자산운용사를 위한 주요 수익성 KPI가 된다.",
+      "longDef": "GOPPAR = Gross Operating Profit / Rooms Available. Gross Operating Profit (GOP) is defined in the Uniform System of Accounts for the Lodging Industry (USALI) as total hotel revenue minus departmental expenses (rooms, food & beverage, spa, parking, etc.) and undistributed operating expenses (administrative & general, sales & marketing, property operations and maintenance, and utilities). Because it reflects the full hotel P&L above the gross operating profit line—before ownership costs such as management fees, insurance, property taxes, depreciation, and debt service—GOPPAR is the preferred benchmarking KPI for investors, asset managers, lenders, and management companies comparing profitability across properties. It should not be confused with NOI (Net Operating Income) or EBITDA, which deduct additional fixed ownership costs below the GOP line.",
+      "longDef_ko": "GOPPAR = 총영업이익(GOP) / 가용 객실 수. USALI 기준 GOP는 총 호텔 매출에서 부문별 비용(객실, F&B, 스파, 주차 등)과 미배분 운영비용(일반관리, 영업·마케팅, 시설운영·유지, 전기·수도·가스)을 차감한 값이다. 관리수수료·보험·재산세·감가상각·차입금 이자 등 소유권 비용 반영 이전의 전체 호텔 P&L을 나타내므로, GOPPAR은 투자자·자산운용사·금융기관·위탁운영사가 숙소 간 수익성을 비교할 때 선호하는 벤치마킹 KPI다. GOP 라인 이하의 추가 고정 소유 비용을 차감하는 NOI(순영업이익)나 EBITDA와 혼동해서는 안 된다.",
+      "standardBody": "AHLA / HFTP",
+      "aliases": [
+        "Gross Operating Profit Per Available Room",
+        "GOP PAR"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "RevPAR",
+          "targetId": "revpar"
+        },
+        {
+          "type": "related",
+          "targetTerm": "TRevPAR",
+          "targetId": "trevpar"
+        },
+        {
+          "type": "related",
+          "targetTerm": "ADR",
+          "targetId": "adr"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Occupancy",
+          "targetId": "occupancy"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "RevPAR",
+          "explanation": "RevPAR = Room Revenue / Available Rooms and is limited to room revenue alone; GOPPAR = GOP / Available Rooms and deducts all operating expenses across every department, making it a profitability measure rather than a revenue measure.",
+          "explanation_ko": "RevPAR = 객실 매출 / 가용 객실 수로 객실 수익에만 한정되고, GOPPAR = GOP / 가용 객실 수로 모든 부문의 운영비용을 차감하여 수익성 지표가 된다.",
+          "targetId": "revpar"
+        },
+        {
+          "targetTerm": "TRevPAR",
+          "explanation": "TRevPAR = Total Revenue / Available Rooms and captures the full top-line revenue of the hotel before any expenses; GOPPAR takes that total revenue and deducts operating costs to show bottom-line profitability — TRevPAR is the breadth of revenue, GOPPAR is the depth of profit.",
+          "explanation_ko": "TRevPAR = 총매출 / 가용 객실 수로 비용 차감 전 호텔의 전체 톱라인을 포착하고, GOPPAR은 그 총매출에서 운영비용을 차감해 바텀라인 수익성을 나타낸다. TRevPAR은 매출의 폭, GOPPAR은 이익의 깊이다.",
+          "targetId": "trevpar"
+        },
+        {
+          "targetTerm": "ADR",
+          "explanation": "ADR measures the average rate achieved per sold room night, a pricing metric; GOPPAR measures net profitability per available room across all hotel departments — different segments of the income statement.",
+          "explanation_ko": "ADR은 판매된 객실 1박당 달성된 평균 요금을 나타내는 가격 지표이고, GOPPAR은 전 부문에 걸친 가용 객실당 순수익성을 나타낸다. 손익계산서의 서로 다른 구간에 위치한다.",
+          "targetId": "adr"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Uniform System of Accounts for the Lodging Industry (USALI), 12th Revised Edition",
+          "org": "AHLA / HFTP",
+          "version": "12th Revised Edition",
+          "section": "GOP and GOPPAR definitions",
+          "url": "https://www.hftp.org/usali/",
+          "tier": "association"
+        },
+        {
+          "name": "STR glossary of lodging performance metrics",
+          "org": "STR (CoStar)",
+          "version": "",
+          "section": "",
+          "url": "https://str.com/data-insights-center/glossary",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 42V6\"/><path d=\"M6 42h36\"/><rect x=\"10\" y=\"26\" width=\"7\" height=\"14\" rx=\"1\"/><rect x=\"20\" y=\"18\" width=\"7\" height=\"22\" rx=\"1\"/><rect x=\"30\" y=\"10\" width=\"7\" height=\"30\" rx=\"1\"/><path d=\"M10 22l10-8 7 5 11-13\"/></svg>",
+      "term": "GOPPAR",
+      "definition": "Gross Operating Profit Per Available Room (GOPPAR) is a hotel performance metric equal to gross operating profit divided by the total number of available rooms over a period. Unlike RevPAR, which captures only room revenue, GOPPAR deducts all departmental and undistributed operating expenses from total revenue, making it the primary profitability KPI for hotel investors and asset managers.",
+      "lastReviewed": "2026-06-27"
+    },
+    {
+      "id": "gross-tonnage",
+      "vertical": "cruise",
+      "category": "cruise",
+      "conceptType": "standard-term",
+      "status": "active",
+      "abbreviation": "GT",
+      "term_ko": "국제총톤수(GT)",
+      "definition_ko": "국제총톤수(GT, Gross Tonnage)는 1969년 선박 톤수 측정에 관한 국제협약(런던 협약)에 따라 산정되는, 선박의 전체 밀폐 내부 용적을 나타내는 국제 표준 무차원(dimensionless) 측정치다. 중량이나 화물 적재 능력이 아닌 선박 전체 크기를 나타내며, 항만 사용료, 안전 승무원 규정, 검사 요건, EEXI·CII 등 환경 규제의 기준이 된다.",
+      "longDef": "GT is calculated using the formula GT = K₁ × V, where V is the total volume (in cubic metres) of all enclosed spaces and K₁ is a variable derived from V (K₁ = 0.2 + 0.02 × log₁₀V). GT replaced the earlier Gross Register Tons (GRT) for most regulatory purposes following the entry into force of the 1969 Tonnage Convention in 1982. For cruise ships, GT determines port fees at most major ports, the ratio of officers and crew required under STCW and SOLAS, the mandatory lifeboat and safety equipment requirements, and thresholds for IMO environmental regulations. As a benchmark, modern large cruise ships typically range from 150,000 to over 230,000 GT. GT is also the denominator in the Passenger Space Ratio (PSR = GT / double-occupancy capacity), a common marketing metric for onboard spaciousness.",
+      "longDef_ko": "GT는 GT = K₁ × V 공식으로 산정된다. V는 전체 밀폐 공간의 체적(㎥)이고, K₁은 V로부터 도출되는 변수(K₁ = 0.2 + 0.02 × log₁₀V)이다. GT는 1982년 1969 톤수 협약의 발효 이후 대부분의 규제 목적에서 구 총톤수(GRT, Gross Register Tons)를 대체했다. 크루즈선의 경우, GT는 대부분의 주요 항만에서 항만 사용료, STCW·SOLAS에 따른 필요 승무원 비율, 필수 구명정·안전장비 요건, IMO 환경 규제의 적용 기준이 된다. 현대 대형 크루즈선의 GT는 일반적으로 15만에서 23만 GT 이상이다. GT는 또한 선상 공간감의 일반적인 마케팅 지표인 여객 공간비(PSR = GT / 2인 정원)의 분자이기도 하다.",
+      "standardBody": "IMO",
+      "aliases": [
+        "Gross Tonnage",
+        "International Gross Tonnage",
+        "GT"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Available Passenger Cruise Days (APCD)",
+          "targetId": "available-passenger-cruise-days-apcd"
+        },
+        {
+          "type": "related",
+          "targetTerm": "CLIA (Cruise Lines International Association)",
+          "targetId": "clia"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Energy Efficiency Existing Ship Index (EEXI)",
+          "targetId": "eexi"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Available Passenger Cruise Days (APCD)",
+          "explanation": "GT is a measure of ship size (internal volume); APCD is a measure of cruise capacity in passenger-days (lower berths × sailing days). GT determines what regulations apply to a vessel, while APCD is the denominator of the key cruise yield metric Net Yield.",
+          "explanation_ko": "GT는 선박 크기(내부 체적) 측정치이고, APCD는 크루즈 수용 능력을 여객-일(하부 침대 수 × 운항 일수)로 나타낸 지표이다. GT는 선박에 적용되는 규정을 결정하고, APCD는 핵심 크루즈 수익 지표인 Net Yield의 분모가 된다.",
+          "targetId": "available-passenger-cruise-days-apcd"
+        }
+      ],
+      "sources": [
+        {
+          "name": "International Convention on Tonnage Measurement of Ships, 1969",
+          "org": "IMO",
+          "version": "1969",
+          "section": "Annex I (Regulations for Determining Gross and Net Tonnages)",
+          "url": "https://www.imo.org/en/About/Conventions/Pages/International-Convention-on-Tonnage-Measurement-of-Ships.aspx",
+          "tier": "standard-body"
+        },
+        {
+          "name": "SOLAS Consolidated Edition",
+          "org": "IMO",
+          "version": "",
+          "section": "Chapter III (Life-saving appliances and arrangements)'",
+          "url": "https://www.imo.org/en/About/Conventions/Pages/International-Convention-for-the-Safety-of-Life-at-Sea-(SOLAS),-1974.aspx",
+          "tier": "standard-body"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 32c4-2 8-3 18-3s14 1 18 3\"/><path d=\"M8 36l4 4h24l4-4\"/><path d=\"M14 29V20h20v9\"/><path d=\"M18 20v-4h12v4\"/><path d=\"M24 16v-4\"/><path d=\"M21 12h6\"/></svg>",
+      "term": "Gross Tonnage (GT)",
+      "definition": "Gross Tonnage (GT) is the internationally standardized, dimensionless measurement of a ship's total internal enclosed volume, calculated under the International Convention on Tonnage Measurement of Ships, 1969 (London Convention). It is not a measure of weight or cargo capacity, but of overall ship size, and forms the basis for port dues, safety Manning rules, survey requirements, and environmental regulations such as EEXI and CII.",
+      "lastReviewed": "2026-06-27"
     },
     {
       "id": "group-block",
@@ -39291,6 +39663,76 @@
       "term": "Traveler Preference",
       "definition": "A traveler preference is a stored, non-mandatory attribute describing how a traveler prefers to be served, such as seat choice (aisle/window), special meal, room type, bedding, cabin, language, or preferred suppliers. Preferences are held in a customer or guest profile and applied to bookings to personalize the experience, distinct from regulatory or safety requirements.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "trevpar",
+      "vertical": "lodging",
+      "category": "hotel-rate",
+      "conceptType": "metric",
+      "status": "active",
+      "abbreviation": "TRevPAR",
+      "term_ko": "가용 객실당 총매출(TRevPAR)",
+      "definition_ko": "TRevPAR(Total Revenue Per Available Room)은 객실·F&B·스파·주차·부대 서비스 등 모든 부문의 호텔 총매출을 가용 객실 수로 나눈 지표다. RevPAR이 객실 매출에 한정되는 것과 달리, TRevPAR은 숙소의 전체 매출 창출 역량을 드러내며, 객실 외 수입이 상당한 풀서비스·리조트 호텔에 특히 의미 있다.",
+      "longDef": "TRevPAR = Total Hotel Revenue / Rooms Available, where Total Hotel Revenue encompasses all operated departments and other income before any operating expense deductions. It is the broadest single top-line KPI for a lodging property. Comparing TRevPAR to RevPAR highlights the contribution of ancillary and non-room revenue streams, useful for assessing the performance of spa, golf, F&B, and event facilities alongside room operations. For profitability benchmarking, TRevPAR is typically paired with GOPPAR, which applies expense deductions to the same total revenue base.",
+      "longDef_ko": "TRevPAR = 총 호텔 매출 / 가용 객실 수. 총 호텔 매출은 운영 중인 모든 부문의 수익과 기타 수입을 포함하되 운영비용은 차감하기 전이다. 숙박 시설의 가장 포괄적인 단일 톱라인 KPI다. TRevPAR과 RevPAR을 비교하면 스파·골프·F&B·행사 시설의 성과를 객실 운영과 나란히 평가할 때 유용한 부대·비객실 매출 기여도를 파악할 수 있다. 수익성 벤치마킹에는 동일한 총매출 기반에서 비용을 차감하는 GOPPAR과 함께 활용하는 것이 일반적이다.",
+      "standardBody": "AHLA / HFTP",
+      "aliases": [
+        "Total Revenue Per Available Room",
+        "Total RevPAR"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "RevPAR",
+          "targetId": "revpar"
+        },
+        {
+          "type": "related",
+          "targetTerm": "GOPPAR",
+          "targetId": "goppar"
+        },
+        {
+          "type": "related",
+          "targetTerm": "ADR",
+          "targetId": "adr"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "RevPAR",
+          "explanation": "RevPAR measures only room revenue per available room; TRevPAR measures total revenue across all hotel departments per available room. For limited-service hotels with minimal non-room revenue the two converge, but for full-service hotels TRevPAR is substantially higher.",
+          "explanation_ko": "RevPAR은 가용 객실당 객실 매출만 측정하고, TRevPAR은 가용 객실당 모든 부문의 총매출을 측정한다. 객실 외 수입이 미미한 리미티드서비스 호텔에서는 두 지표가 수렴하지만, 풀서비스 호텔에서는 TRevPAR이 RevPAR을 크게 웃돈다.",
+          "targetId": "revpar"
+        },
+        {
+          "targetTerm": "GOPPAR",
+          "explanation": "TRevPAR is a revenue metric (before costs); GOPPAR is a profitability metric that deducts departmental and undistributed operating expenses from that same total revenue base. TRevPAR shows how much revenue the hotel generates; GOPPAR shows how much profit it keeps.",
+          "explanation_ko": "TRevPAR은 비용 차감 전 수익 지표이고, GOPPAR은 동일한 총매출 기반에서 부문별·미배분 운영비용을 차감한 수익성 지표다. TRevPAR은 호텔이 얼마나 버는지를, GOPPAR은 얼마를 남기는지를 보여준다.",
+          "targetId": "goppar"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Uniform System of Accounts for the Lodging Industry (USALI), 12th Revised Edition",
+          "org": "AHLA / HFTP",
+          "version": "12th Revised Edition",
+          "section": "Total Revenue and TRevPAR definitions",
+          "url": "https://www.hftp.org/usali/",
+          "tier": "association"
+        },
+        {
+          "name": "STR glossary of lodging performance metrics",
+          "org": "STR (CoStar)",
+          "version": "",
+          "section": "",
+          "url": "https://str.com/data-insights-center/glossary",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 42V6\"/><path d=\"M6 42h36\"/><rect x=\"10\" y=\"30\" width=\"6\" height=\"10\" rx=\"1\"/><rect x=\"18\" y=\"22\" width=\"6\" height=\"18\" rx=\"1\"/><rect x=\"26\" y=\"14\" width=\"6\" height=\"26\" rx=\"1\"/><rect x=\"34\" y=\"8\" width=\"6\" height=\"32\" rx=\"1\"/><path d=\"M13 26l8-6 9 2 7-8\"/></svg>",
+      "term": "TRevPAR",
+      "definition": "Total Revenue Per Available Room (TRevPAR) is a hotel performance metric equal to all revenue generated by a property—across every department including rooms, food & beverage, spa, parking, and ancillaries—divided by the total number of available rooms. It extends RevPAR beyond room revenue to reveal the full revenue-generating breadth of a hotel and is especially significant for full-service and resort properties with substantial non-room income.",
+      "lastReviewed": "2026-06-27"
     },
     {
       "id": "trip-cancellation",
