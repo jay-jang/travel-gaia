@@ -2,8 +2,8 @@
   "meta": {
     "name": "Travel Wiki",
     "tagline": "여행 산업 용어 백과사전",
-    "generatedAt": "2026-06-27",
-    "entryCount": 463,
+    "generatedAt": "2026-06-28",
+    "entryCount": 469,
     "categoryCount": 20,
     "verticalCount": 6
   },
@@ -973,6 +973,80 @@
       "term": "Additional Collection (ADC)",
       "definition": "Additional Collection (ADC) is the difference-in-fare-and-tax amount collected from the passenger when a ticket is reissued or exchanged for a higher-value itinerary. When the new itinerary is equal or lower in value so that nothing is due, the transaction is shown as NOADC (no additional collection).",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "additional-driver",
+      "vertical": "ground",
+      "category": "car",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "추가 운전자(Additional Driver)",
+      "definition_ko": "추가 운전자(Additional Driver)는 주 임차인 이외에 렌탈 계약서에 승인·기재되어 렌터카를 운전할 수 있는 사람이다. 렌터카 업체는 일반적으로 추가 운전자당 일일 요금을 부과하지만, 멤버십 프로그램, 법인 계약, 배우자/동거인 정책에 따라 면제될 수 있다.",
+      "longDef": "Adding an authorized driver to the rental agreement is a legal and insurance prerequisite: an unnamed person driving the vehicle is typically in breach of the rental terms, which can void the collision damage waiver and expose the renter to full liability. Most companies charge USD 10–15 per day per additional driver, capped at the full rental period cost; loyalty programme members (Gold, Emerald, Avis Preferred Plus, etc.) and corporate contract holders frequently receive one additional driver at no charge. Age restrictions and the minimum driving-licence age applicable in the rental country also apply to additional drivers, with young-driver surcharges potentially layering on top. The fee and rules are governed by the rental agreement and must comply with local consumer-protection law.",
+      "longDef_ko": "임차인 이외의 승인된 운전자를 렌탈 계약서에 추가하는 것은 법적·보험적 전제 조건이다. 계약서에 미등재된 사람이 차량을 운전하면 렌탈 조건 위반으로, 충돌 손해 면책(CDW)이 무효화되고 임차인이 전액 책임을 지게 될 수 있다. 대부분의 업체는 추가 운전자당 하루 USD 10~15(전체 렌탈 기간 총액 상한)를 부과하며, 로열티 프로그램 회원(Gold, Emerald, Avis Preferred Plus 등)과 법인 계약 고객은 추가 운전자 1명을 무료로 받는 경우가 많다. 나이 제한 및 렌탈 국가의 최소 면허 연령도 추가 운전자에게 적용되며, 여기에 영 드라이버 요금이 더해질 수 있다. 요금과 규칙은 렌탈 계약서가 규정하며 현지 소비자 보호법을 준수해야 한다.",
+      "aliases": [
+        "Named Driver",
+        "Authorised Driver",
+        "Extra Driver"
+      ],
+      "relationships": [
+        {
+          "type": "parent",
+          "targetTerm": "Rental Agreement",
+          "targetId": "rental-agreement"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Collision Damage Waiver",
+          "targetId": "collision-damage-waiver"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Young Driver Surcharge",
+          "targetId": "young-driver-surcharge"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Excess",
+          "targetId": "excess"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Collision Damage Waiver",
+          "explanation": "CDW protects the primary renter against vehicle damage costs; an additional driver must be explicitly named on the rental agreement for that CDW protection to extend to them — an unnamed driver is typically excluded from coverage.",
+          "explanation_ko": "CDW는 주 임차인을 차량 손해 비용으로부터 보호하며, 추가 운전자가 CDW 적용을 받으려면 반드시 렌탈 계약서에 명시적으로 기재되어야 한다. 미등재 운전자는 일반적으로 적용 대상에서 제외된다.",
+          "targetId": "collision-damage-waiver"
+        },
+        {
+          "targetTerm": "Young Driver Surcharge",
+          "explanation": "A young driver surcharge is an age-based fee applied when a driver is under a defined age threshold (typically 25); an additional driver fee is charged regardless of age whenever a second driver is added. Both can apply simultaneously if the additional driver is young.",
+          "explanation_ko": "영 드라이버 요금은 운전자가 정해진 연령 기준(보통 25세) 미만일 때 부과되는 연령 기반 요금이고, 추가 운전자 요금은 두 번째 운전자가 추가될 때 연령과 무관하게 청구된다. 추가 운전자가 어릴 경우 두 요금이 동시에 적용될 수 있다.",
+          "targetId": "young-driver-surcharge"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Enterprise Rent-A-Car — Additional Drivers Policy",
+          "org": "Enterprise Holdings",
+          "version": "",
+          "section": "",
+          "url": "https://www.enterprise.com/en/help/faqs/additional-drivers.html",
+          "tier": "vendor-doc"
+        },
+        {
+          "name": "Hertz Gold Plus Rewards — Additional Driver Benefit",
+          "org": "Hertz",
+          "version": "",
+          "section": "",
+          "url": "https://www.hertz.com/rentacar/reservation/reviewmodifycancel/templates/rentalTerms.jsp",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"18\" cy=\"14\" r=\"5\"/><circle cx=\"32\" cy=\"14\" r=\"5\"/><path d=\"M6 38c0-7 5-12 12-12\"/><path d=\"M26 26c7 0 12 5 12 12\"/><path d=\"M20 28l4-3 4 3\"/></svg>",
+      "term": "Additional Driver",
+      "definition": "An additional driver is a person other than the primary renter who is authorized and named on the rental agreement to operate the rental vehicle. Rental companies typically charge a daily fee per additional driver, though membership programmes, corporate accounts, or spouse/domestic-partner policies can waive the surcharge.",
+      "lastReviewed": "2026-06-28"
     },
     {
       "id": "admission",
@@ -2998,6 +3072,79 @@
       "term": "AirShopping",
       "definition": "AirShopping is the entry-point NDC message that initiates a shopping session and returns a list of flight Offers built from the airline's offer engine in response to request criteria such as origin, destination, dates, cabin and passenger types. It is the first transaction in the NDC offer-and-order workflow, returning offers that a seller can later price and book.",
       "lastReviewed": "2026-06-18"
+    },
+    {
+      "id": "allocation",
+      "vertical": "tours",
+      "category": "tour-commercial",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "할당량(Allocation)",
+      "definition_ko": "할당량(Allocation)은 투어·액티비티·어트랙션 운영사가 특정 유통사 또는 리셀러에게 사전에 확약하는 고정 상품 정원 블록(좌석, 참가 인원, 타임슬롯 단위 등)이다. 리셀러는 합의된 수량과 릴리스 날짜 내에서 실시간 가용성 확인 없이 예약을 확정할 수 있다.",
+      "longDef": "Under an allocation model, the operator commits a defined quantity of spots to a distributor at agreed terms (usually a net or confidential rate). The distributor treats the allocation as instantly bookable inventory. If spots are not sold by the release date, they revert to the operator's open inventory. Allocation differs from free-sale (fully open) availability: free-sale allows unlimited bookings until the operator stops it, while an allocation is a capped, pre-committed quota. The OCTO connectivity specification models allocation-based availability so that distributor systems can confirm bookings without round-tripping to the operator on every request.",
+      "longDef_ko": "할당량 모델에서 운영사는 합의된 조건(보통 넷 또는 기밀 요금)으로 특정 수량의 참가 인원을 유통사에 확약한다. 유통사는 할당량을 즉시 예약 가능한 재고로 취급한다. 릴리스 날짜까지 판매되지 않은 인원은 운영사의 일반 재고로 반환된다. 할당량은 자유 판매(free-sale) 가용성과 다르다. 자유 판매는 운영사가 중단할 때까지 무제한 예약을 허용하는 반면, 할당량은 상한이 정해진 사전 확약 쿼터다. OCTO 커넥티비티 사양은 유통사 시스템이 매 요청마다 운영사와 왕복 통신하지 않고도 예약을 확정할 수 있도록 할당량 기반 가용성을 모델링한다.",
+      "aliases": [
+        "Capacity Allocation",
+        "Distributor Allocation",
+        "Channel Allocation"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "OCTO",
+          "targetId": "octo-spec"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Activity Operator",
+          "targetId": "activity-operator"
+        },
+        {
+          "type": "contrasts",
+          "targetTerm": "Allotment",
+          "targetId": "allotment"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Marketplace Commission",
+          "targetId": "marketplace-commission"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Net Rate",
+          "targetId": "net-rate"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Allotment",
+          "explanation": "A hotel allotment is a block of rooms contracted to a wholesaler, with a release date after which unsold rooms revert; a tour allocation is the product-level equivalent — a capped block of seats or spots committed to a specific distributor — governed by a reseller agreement and, in modern connectivity, the OCTO standard.",
+          "explanation_ko": "호텔 allotment는 릴리스 날짜 이후 미판매 객실이 반환되는 조건으로 도매업체에 계약된 객실 블록이다. 투어 allocation은 이와 유사하지만 특정 유통사에 확약된 상품 단위(좌석·참가 인원)의 정원 블록으로, 리셀러 계약과 OCTO 표준 기반의 디지털 연결로 관리된다.",
+          "targetId": "allotment"
+        }
+      ],
+      "sources": [
+        {
+          "name": "OCTO Open Connectivity Specification — Availability",
+          "org": "OCTO (open-connectivity)",
+          "version": "1.0",
+          "section": "Availability",
+          "url": "https://octo.travel/",
+          "tier": "standard-body"
+        },
+        {
+          "name": "Distribution pricing models for tours and activities",
+          "org": "Arival",
+          "version": "",
+          "section": "",
+          "url": "https://arival.travel/",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"8\" width=\"36\" height=\"32\" rx=\"3\"/><line x1=\"6\" y1=\"18\" x2=\"42\" y2=\"18\"/><line x1=\"20\" y1=\"18\" x2=\"20\" y2=\"40\"/><path d=\"M12 27h4M12 34h4M26 27h10M26 34h7\"/></svg>",
+      "term": "Allocation",
+      "definition": "An allocation is a fixed block of product capacity — seats, spots, or timeslot units — that a tour, activity, or attraction operator commits to a specific distributor or reseller in advance. The reseller may confirm bookings against the allocation without real-time availability checks, up to the agreed quantity and release date.",
+      "lastReviewed": "2026-06-28"
     },
     {
       "id": "allotment",
@@ -16605,6 +16752,64 @@
       "lastReviewed": "2026-06-27"
     },
     {
+      "id": "grace-period",
+      "vertical": "ground",
+      "category": "car",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "유예 기간(Grace Period)",
+      "definition_ko": "렌터카의 유예 기간(Grace Period)은 계약된 반납 시각 이후 추가 대여 기간이 청구되지 않고 차량을 반납할 수 있는 짧은 시간 창이다. 주요 렌터카 업체는 통상 29~59분을 허용하며, 이를 초과하면 지연 반납 요금 또는 하루 추가 요금이 청구된다.",
+      "longDef": "The grace period exists because exact-to-the-minute returns are operationally impractical: traffic, queuing, and fuel stops can cause minor overruns. Most major brands (Hertz, Avis, Enterprise, Alamo, Budget) publish a grace period of 29 or 59 minutes in their standard rental conditions; premium membership programmes sometimes extend this. Beyond the grace period the rental clock typically moves to a new billing day, so understanding the exact policy at each counter is essential for cost control. The grace period is typically stated in the rental agreement and may differ by country or franchisee.",
+      "longDef_ko": "유예 기간은 분 단위 정확 반납이 운영상 비현실적이기 때문에 존재한다. 교통 체증, 대기, 주유 등으로 인해 소폭 초과가 발생할 수 있다. 대부분의 주요 브랜드(Hertz, Avis, Enterprise, Alamo, Budget)는 표준 렌탈 조건에 29분 또는 59분의 유예 기간을 공개한다. 프리미엄 멤버십 프로그램은 이를 연장하기도 한다. 유예 기간을 초과하면 대개 새 요금 일이 시작되므로, 비용 관리를 위해 각 카운터의 정확한 정책을 파악하는 것이 중요하다. 유예 기간은 일반적으로 렌탈 계약서에 명시되며, 국가 또는 프랜차이지에 따라 다를 수 있다.",
+      "aliases": [
+        "Return Grace Period",
+        "Late-Return Grace",
+        "Buffer Period"
+      ],
+      "relationships": [
+        {
+          "type": "parent",
+          "targetTerm": "Rental Agreement",
+          "targetId": "rental-agreement"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Time and Mileage",
+          "targetId": "time-and-mileage"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Rental Agreement",
+          "explanation": "The rental agreement is the full contract governing the rental terms; the grace period is one specific provision within that agreement defining the tolerated return-time overrun before a new billing period begins.",
+          "explanation_ko": "렌탈 계약서는 렌탈 조건을 규정하는 전체 계약이고, 유예 기간은 그 계약 내 특정 조항으로 새 요금 기간이 시작되기 전 허용되는 반납 시각 초과 범위를 정의한다.",
+          "targetId": "rental-agreement"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Hertz Rental Agreement Terms and Conditions — Grace Period",
+          "org": "Hertz",
+          "version": "",
+          "section": "Return of Vehicle",
+          "url": "https://www.hertz.com/rentacar/misc/index.jsp?targetPage=termsandconditions.jsp",
+          "tier": "vendor-doc"
+        },
+        {
+          "name": "Avis General Rental Terms — Late Return",
+          "org": "Avis",
+          "version": "",
+          "section": "",
+          "url": "https://www.avis.com/en/terms-conditions",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"17\"/><path d=\"M24 13v11l7 4\"/><path d=\"M36 10l2 4-4 1\"/></svg>",
+      "term": "Grace Period",
+      "definition": "A grace period in car rental is the short window of time after the contracted return hour during which a customer may return the vehicle without being charged an additional rental period. Major rental companies typically allow 29–59 minutes, after which a late-return fee or a full extra day is billed.",
+      "lastReviewed": "2026-06-28"
+    },
+    {
       "id": "gross-tonnage",
       "vertical": "cruise",
       "category": "cruise",
@@ -27877,6 +28082,76 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "override-commission",
+      "vertical": "tours",
+      "category": "tour-commercial",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "초과 커미션(Override Commission)",
+      "definition_ko": "초과 커미션(Override Commission, 또는 Overrider)은 여행사 또는 리셀러가 사전에 합의된 기간 내 판매량·매출 목표를 달성하거나 초과할 때 표준 기본 커미션율보다 추가로 지급되는 퍼센트 커미션이다. 항공사, 호텔, 크루즈 라인, 투어 오퍼레이터 등 여행 유통 전반에서 사용되는 물량 인센티브 메커니즘이다.",
+      "longDef": "Override commissions are structured as a bonus layer on top of the base commission: an agent earning 10 % base might earn an additional 2–5 % override on all bookings (or on bookings above a threshold) once a quarterly volume target is hit. The override can apply retrospectively to all bookings in the period or only to bookings above the trigger level, depending on the contract. In the tours and activities sector, overrides are typically negotiated between high-volume OTAs or travel agencies and operators, alongside confidential tariff pricing, and are a key lever in preferred-partner programmes.",
+      "longDef_ko": "초과 커미션은 기본 커미션 위에 추가되는 보너스 레이어 구조다. 기본 커미션 10%를 받는 여행사가 분기 물량 목표를 달성하면 모든 예약(또는 기준치 초과 예약)에 2~5% 추가 오버라이드를 받을 수 있다. 계약에 따라 해당 기간의 모든 예약에 소급 적용되거나 트리거 수준 이상의 예약에만 적용된다. 투어·액티비티 부문에서 오버라이드는 고물량 OTA 또는 여행사와 운영사 간에 협상되는 경우가 많으며, 기밀 요금 책정과 함께 우선 파트너 프로그램의 핵심 레버다.",
+      "aliases": [
+        "Overrider",
+        "Volume Override",
+        "Performance Bonus",
+        "Volume Incentive Commission"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Marketplace Commission",
+          "targetId": "marketplace-commission"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Retail Rate",
+          "targetId": "retail-rate"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Confidential Tariff",
+          "targetId": "confidential-tariff"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Marketplace Commission",
+          "explanation": "A marketplace commission is the standard percentage deducted from every booking by the distribution platform; an override commission is an additional, threshold-triggered bonus earned on top of the base commission for meeting volume targets.",
+          "explanation_ko": "마켓플레이스 커미션은 유통 플랫폼이 모든 예약에서 차감하는 표준 퍼센트이고, 초과 커미션은 물량 목표 달성 시 기본 커미션 위에 추가로 지급되는 임계값 트리거 보너스다.",
+          "targetId": "marketplace-commission"
+        },
+        {
+          "targetTerm": "Confidential Tariff",
+          "explanation": "A confidential tariff is a discounted rate offered exclusively to a reseller at a lower price point; an override commission is an extra reward paid to that reseller for achieving volume, layered on top of whatever rate structure is in place.",
+          "explanation_ko": "기밀 요금은 리셀러에게만 제공되는 할인 요금이고, 초과 커미션은 적용 중인 요금 구조와 무관하게 물량 달성 시 추가로 지급되는 보너스다.",
+          "targetId": "confidential-tariff"
+        }
+      ],
+      "sources": [
+        {
+          "name": "ABTA — Commercial terms and override commissions in package travel",
+          "org": "ABTA (Association of British Travel Agents)",
+          "version": "",
+          "section": "",
+          "url": "https://www.abta.com/",
+          "tier": "association"
+        },
+        {
+          "name": "Tour operator and agency incentive structures",
+          "org": "Arival",
+          "version": "",
+          "section": "",
+          "url": "https://arival.travel/",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 34l8-14 8 8 6-10 6 7\"/><circle cx=\"38\" cy=\"25\" r=\"6\"/><path d=\"M38 22v3l2 2\"/></svg>",
+      "term": "Override Commission",
+      "definition": "An override commission (or overrider) is an additional percentage commission paid to a travel agent or reseller above the standard base commission rate, triggered when the agent meets or exceeds pre-agreed volume or revenue targets in a defined period. It is a volume-incentive mechanism used across travel distribution — airlines, hotels, cruise lines, and tour operators.",
+      "lastReviewed": "2026-06-28"
+    },
+    {
       "id": "package-rate",
       "vertical": "lodging",
       "category": "hotel-rate",
@@ -30490,6 +30765,80 @@
       "term": "Rail Passenger Rights Regulation (EU) 2021/782",
       "definition": "Regulation (EU) 2021/782 on rail passengers' rights and obligations is the EU law, applicable since 7 June 2023, that governs the rights of rail passengers — including delay compensation (25% of the fare for 60–119 minutes, 50% from 120 minutes), re-routing and assistance during disruption, through-ticket obligations, and rights for persons with reduced mobility (PRM). It is the rail counterpart of the air passenger-rights regulation EU 261/2004 and repealed the earlier Regulation (EC) No 1371/2007.",
       "lastReviewed": "2026-06-18"
+    },
+    {
+      "id": "railcard",
+      "vertical": "ground",
+      "category": "rail",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "할인 카드(Railcard)",
+      "definition_ko": "레일카드(Railcard)는 특정 인구 집단(청소년, 노인, 가족 등)을 대상으로 철도 운임 할인 혜택을 제공하는 카드(실물 또는 디지털)다. 카드 소지자는 일시불 또는 연간 요금을 내고 유효 기간 동안 대상 승차권 구매 시 일정 비율의 할인을 받는다.",
+      "longDef": "In the United Kingdom, the Rail Delivery Group (RDG) manages a family of named railcards (16–25 Railcard, Senior Railcard, Two Together Railcard, Family & Friends Railcard, etc.), each providing one-third off most standard and off-peak fares on National Rail services. The railcard must be carried and shown with the discounted ticket on request; travelling without it can result in a penalty fare equivalent to the full undiscounted price. Railcards are a retail distribution product sold at staffed stations, online, and through travel trade. Unlike a Eurail/Interrail pass, a railcard does not itself grant travel rights — it is a discount instrument that must be used in conjunction with a separately purchased ticket. The OSDM standard accommodates discount-card concepts, and national distributors exchange railcard eligibility data to support cross-border multi-carrier bookings.",
+      "longDef_ko": "영국에서 Rail Delivery Group(RDG)은 16~25 Railcard, Senior Railcard, Two Together Railcard, Family & Friends Railcard 등 이름이 붙은 레일카드 시리즈를 관리하며, 각각 National Rail 대부분의 일반 및 비성수기 운임에서 1/3 할인을 제공한다. 할인된 승차권과 함께 레일카드를 소지하고 요청 시 제시해야 하며, 미소지 시 미할인 전체 금액에 해당하는 페널티 운임이 부과될 수 있다. 레일카드는 유인 역사, 온라인, 여행 유통을 통해 판매되는 소매 유통 상품이다. Eurail/Interrail 패스와 달리 레일카드 자체는 여행 권리를 부여하지 않고, 별도로 구매한 승차권과 함께 사용해야 하는 할인 수단이다. OSDM 표준은 할인 카드 개념을 수용하며, 국내 유통사들은 국경 간 다중 운송사 예약 지원을 위해 레일카드 자격 데이터를 교환한다.",
+      "aliases": [
+        "Rail Discount Card",
+        "Senior Railcard",
+        "16-25 Railcard"
+      ],
+      "relationships": [
+        {
+          "type": "contrasts",
+          "targetTerm": "Eurail Pass",
+          "targetId": "eurail-pass"
+        },
+        {
+          "type": "contrasts",
+          "targetTerm": "Interrail Pass",
+          "targetId": "interrail-pass"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Seat Reservation",
+          "targetId": "seat-reservation"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Season Ticket",
+          "targetId": "season-ticket"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Eurail Pass",
+          "explanation": "A Eurail Pass is a multi-journey entitlement granting unlimited rail travel across Europe for non-European residents; a railcard is a discount instrument that reduces the price of individually purchased tickets — it grants no travel right by itself and is typically confined to one country's network.",
+          "explanation_ko": "Eurail Pass는 비유럽 거주자에게 유럽 전역의 무제한 철도 여행을 허용하는 다회 이용 권리이고, 레일카드는 개별 구매 승차권 가격을 낮추는 할인 수단으로 그 자체로는 여행 권리를 부여하지 않으며 일반적으로 한 국가 네트워크에 한정된다.",
+          "targetId": "eurail-pass"
+        },
+        {
+          "targetTerm": "Season Ticket",
+          "explanation": "A season ticket grants unlimited travel between two specific points for a fixed period; a railcard gives a discount on tickets purchased for any route served by the issuing network, subject to time-of-day restrictions, but does not itself authorise any travel.",
+          "explanation_ko": "정기권(Season Ticket)은 고정 기간 동안 특정 두 지점 간 무제한 여행을 허용하고, 레일카드는 발급 네트워크가 서비스하는 모든 노선의 구매 승차권에 할인을 제공하지만(시간대 제한 적용) 여행을 직접 승인하지는 않는다.",
+          "targetId": "season-ticket"
+        }
+      ],
+      "sources": [
+        {
+          "name": "National Railcards — Rail Delivery Group",
+          "org": "Rail Delivery Group (RDG)",
+          "version": "",
+          "section": "",
+          "url": "https://www.railcard.co.uk/",
+          "tier": "association"
+        },
+        {
+          "name": "OSDM — Open Sales and Distribution Model (discount cards)",
+          "org": "OSDM / UIC",
+          "version": "",
+          "section": "",
+          "url": "https://osdm.io/",
+          "tier": "standard-body"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"13\" width=\"36\" height=\"22\" rx=\"3\"/><line x1=\"6\" y1=\"21\" x2=\"42\" y2=\"21\"/><circle cx=\"15\" cy=\"30\" r=\"3\"/><path d=\"M22 28h14M22 32h10\"/></svg>",
+      "term": "Railcard",
+      "definition": "A railcard is a card (physical or digital) that entitles the holder to a standing discount on rail fares, typically targeting a specific demographic group such as young persons, seniors, or families. The cardholder pays a one-time or annual fee for the railcard and then receives a consistent percentage reduction on eligible tickets purchased for the card's validity period.",
+      "lastReviewed": "2026-06-28"
     },
     {
       "id": "rate-access-code",
@@ -34526,6 +34875,82 @@
       "term": "Schedule Change",
       "definition": "A change made by an airline to a previously published flight schedule, such as a revised departure or arrival time, equipment change, flight number change, or flight cancellation, that affects already-booked passengers. Schedule changes are distributed to selling systems and require reaccommodation or notification of affected bookings.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "season-ticket",
+      "vertical": "ground",
+      "category": "rail",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "정기권(Season Ticket)",
+      "definition_ko": "정기권(Season Ticket 또는 Commuter Pass)은 두 특정 역 사이 또는 정의된 구역 내에서 고정 기간(보통 주간·월간·연간) 동안 무제한 이용을 허용하는 철도 승차권이다. 주로 높은 이용 빈도에서 개별 승차권보다 낮은 1회 실효 비용을 제공하는 통근 상품이다.",
+      "longDef": "Season tickets are the cornerstone of rail revenue from regular commuters. They are typically priced at a discount relative to the equivalent number of single or return fourneys (in the UK, a monthly season is roughly equivalent to 43 single trips at a discounted rate). In the UK, season tickets are sold under the National Rail Conditions of Travel; their prices are regulated by the Department for Transport (DfT), which caps annual increases. Season tickets may be point-to-point (specific origin–destination pair) or zonal (valid on any route within a defined zone, as in London Travelcard–rail combinations). When purchased, the holder is typically issued a photocard railcard reference. Distribution occurs at station ticket offices, self-service machines, online, and increasingly via smartcard or mobile app. Season tickets are distinct from travel passes (Eurail, Interrail) because they are tied to a fixed route rather than granting open network access.",
+      "longDef_ko": "정기권은 정기 통근객으로부터의 철도 수익 핵심 상품이다. 동일 횟수의 편도 또는 왕복 여정 합산 대비 할인 가격으로 책정되며(영국에서 월 정기권은 약 43회 편도 할인 요금에 해당), 영국에서는 National Rail Conditions of Travel에 따라 판매되고 교통부(DfT)가 연간 인상 한도를 규제한다. 정기권은 지점 간(출발지-목적지 쌍 지정) 또는 구역 내(런던 Travelcard-철도 결합처럼 정의된 구역 내 모든 노선 유효) 방식이 있다. 구매 시 소지자는 통상 사진이 붙은 레일카드 참조번호를 발급받는다. 역 창구, 자동발매기, 온라인, 스마트카드 또는 모바일 앱을 통해 판매된다. 정기권은 개방형 네트워크 접근이 아니라 고정 노선에 연결된다는 점에서 Eurail·Interrail 여행 패스와 구별된다.",
+      "aliases": [
+        "Commuter Pass",
+        "Season Pass",
+        "Weekly Season",
+        "Monthly Season",
+        "Annual Season"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Railcard",
+          "targetId": "railcard"
+        },
+        {
+          "type": "contrasts",
+          "targetTerm": "Eurail Pass",
+          "targetId": "eurail-pass"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Seat Reservation",
+          "targetId": "seat-reservation"
+        },
+        {
+          "type": "related",
+          "targetTerm": "OSDM",
+          "targetId": "osdm"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Railcard",
+          "explanation": "A railcard is a discount card that reduces the purchase price of individual tickets; a season ticket is an all-in entitlement for unlimited travel between two fixed points, with no additional ticket purchase required per journey.",
+          "explanation_ko": "레일카드는 개별 승차권 구매 가격을 낮추는 할인 카드이고, 정기권은 두 고정 지점 간 무제한 이용 권리 자체로, 여정마다 별도 승차권을 구매할 필요가 없다.",
+          "targetId": "railcard"
+        },
+        {
+          "targetTerm": "Eurail Pass",
+          "explanation": "A Eurail Pass grants open-network access across multiple European countries for non-European residents; a season ticket is tied to a single specific route (or zone) and is intended for high-frequency commuter travel on a domestic network.",
+          "explanation_ko": "Eurail Pass는 비유럽 거주자에게 유럽 여러 국가에 걸친 개방형 네트워크 접근을 허용하고, 정기권은 국내 네트워크의 단일 특정 노선(또는 구역)에 연결되어 고빈도 통근 여행을 위한 상품이다.",
+          "targetId": "eurail-pass"
+        }
+      ],
+      "sources": [
+        {
+          "name": "National Rail Conditions of Travel — Season Tickets",
+          "org": "Rail Delivery Group (RDG)",
+          "version": "2024",
+          "section": "Season Tickets",
+          "url": "https://www.nationalrail.co.uk/times-fares/ticket-types/season-tickets/",
+          "tier": "association"
+        },
+        {
+          "name": "OSDM — Open Sales and Distribution Model",
+          "org": "OSDM / UIC",
+          "version": "",
+          "section": "Fare products",
+          "url": "https://osdm.io/",
+          "tier": "standard-body"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"10\" width=\"32\" height=\"28\" rx=\"3\"/><line x1=\"8\" y1=\"20\" x2=\"40\" y2=\"20\"/><path d=\"M16 14h16\"/><path d=\"M14 28h6M14 34h6M26 28h8M26 34h6\"/></svg>",
+      "term": "Season Ticket",
+      "definition": "A season ticket (or commuter pass) is a rail ticket that grants the holder unlimited travel between two specific stations — or within a defined zone — for a fixed calendar period, typically weekly, monthly, or annual. It is primarily a commuter product offering a lower effective per-journey cost than individual tickets at high travel frequency.",
+      "lastReviewed": "2026-06-28"
     },
     {
       "id": "seat-map",
