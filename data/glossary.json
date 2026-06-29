@@ -2,8 +2,8 @@
   "meta": {
     "name": "Travel Wiki",
     "tagline": "여행 산업 용어 백과사전",
-    "generatedAt": "2026-06-28",
-    "entryCount": 469,
+    "generatedAt": "2026-06-29",
+    "entryCount": 475,
     "categoryCount": 20,
     "verticalCount": 6
   },
@@ -4576,6 +4576,92 @@
       "term": "Available Passenger Cruise Days (APCD)",
       "definition": "The cruise industry's standard unit of capacity, equal to two passengers (double occupancy) per available cabin multiplied by the number of cruise days in the period. APCD is the denominator for virtually every cruise unit-revenue and unit-cost metric — Gross Yield, Net Yield, Net Cruise Cost per APCD and occupancy are all expressed per APCD — and is the cruise analogue of the airline's available seat mile or the hotel's available room night.",
       "lastReviewed": "2026-06-18"
+    },
+    {
+      "id": "average-length-of-stay",
+      "vertical": "lodging",
+      "category": "hotel-rate",
+      "conceptType": "metric",
+      "status": "active",
+      "abbreviation": "ALOS",
+      "term_ko": "평균 숙박일수(ALOS)",
+      "definition_ko": "평균 숙박일수(Average Length of Stay, ALOS)는 특정 기간 동안 예약 1건당 선객이 머무는 평균 박수로, 총 점유 객실·박수를 총 도착 건수로 나누어 산출한다. ADR 및 점유율과 함께 활용되는 숙박 업계 표준 성과 지표로, 수익 패턴 모델링·숙박일수 요금 제한 최적화·경쟁 집합 벤치마킹에 사용된다.",
+      "longDef": "ALOS is a central input for revenue management decisions including Minimum Length of Stay (MLOS) and Closed to Arrival (CTA) restrictions, which are calibrated to extend ALOS on high-demand nights or restrict short stays that displace longer-stay business. Properties with a longer ALOS (extended-stay hotels, resort destinations) incur lower per-stay costs for housekeeping and front-desk operations, enabling different pricing strategies compared with transient-focused urban hotels. STR (CoStar Group) tracks ALOS in its competitive benchmarking reports alongside RevPAR, ADR, and Occupancy; ALOS is also used by destination management organisations to evaluate the economic impact of tourism by multiplying average spend per night by ALOS.",
+      "longDef_ko": "ALOS는 최소 숙박일수(MLOS) 및 도착 제한(CTA) 등 수익 관리 결정의 핵심 입력값이다. 이러한 제한은 수요가 높은 날 밤 ALOS를 연장하거나 장기 체류 수요를 대체하는 단기 체류를 제한하도록 조정된다. ALOS가 긴 숙박 시설(장기 체류 호텔, 리조트 목적지)은 하우스키핑·프런트 운영의 1박당 비용이 낮아져 단기 체류 위주 도심 호텔과 다른 요금 전략을 구사할 수 있다. STR(CoStar Group)은 RevPAR·ADR·점유율과 함께 경쟁 집합 벤치마킹 보고서에서 ALOS를 추적하며, 목적지 관리 기관은 1박당 평균 지출에 ALOS를 곱해 관광의 경제적 영향을 평가한다.",
+      "standardBody": "STR (CoStar Group)",
+      "aliases": [
+        "Average Stay Length",
+        "Average Visitor Stay"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "ADR",
+          "targetId": "adr"
+        },
+        {
+          "type": "related",
+          "targetTerm": "RevPAR",
+          "targetId": "revpar"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Occupancy",
+          "targetId": "occupancy"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Minimum Length of Stay (MLOS)",
+          "targetId": "minimum-length-of-stay-mlos"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Closed to Arrival (CTA)",
+          "targetId": "closed-to-arrival-cta"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "ADR",
+          "explanation": "ADR (Average Daily Rate) measures the average revenue earned per occupied room per night; ALOS measures how many nights guests stay per arrival. Together with Occupancy, ADR and ALOS determine total room revenue — higher ALOS at the same ADR means proportionally more revenue per booking cycle.",
+          "explanation_ko": "ADR(평균 일일 요금)은 점유 객실 1실당 1박 평균 수익을 측정하고, ALOS는 도착 1건당 선객이 머무는 박수를 측정한다. ADR과 ALOS는 점유율과 함께 총 객실 수익을 결정하며, 동일 ADR에서 ALOS가 높을수록 예약 사이클당 수익이 비례적으로 증가한다.",
+          "targetId": "adr"
+        },
+        {
+          "targetTerm": "Occupancy",
+          "explanation": "Occupancy is the proportion of available rooms sold on a given night; ALOS reflects the duration pattern across bookings rather than single-night fill rate. A high-occupancy hotel with a low ALOS serves many short-stay guests; a lower-occupancy extended-stay property may generate comparable or higher revenue per booking.",
+          "explanation_ko": "점유율은 특정 날 밤 판매된 가용 객실 비율이고, ALOS는 단일 야간 충족률이 아닌 예약 전반의 기간 패턴을 반영한다. 점유율이 높고 ALOS가 낮은 호텔은 단기 체류 고객이 많고, 장기 체류 위주 시설은 점유율이 낮아도 예약당 비슷하거나 더 높은 수익을 낼 수 있다.",
+          "targetId": "occupancy"
+        },
+        {
+          "targetTerm": "Minimum Length of Stay (MLOS)",
+          "explanation": "MLOS is a booking restriction that requires guests to stay a minimum number of nights; ALOS is the observed average across all actual stays. MLOS is a lever used to increase ALOS on high-demand dates; ALOS is the outcome metric that measures whether the restriction is working.",
+          "explanation_ko": "MLOS는 선객에게 최소 박수 체류를 요구하는 예약 제한이고, ALOS는 실제 체류 전반의 평균 관측치다. MLOS는 수요가 높은 날짜에 ALOS를 높이기 위해 사용하는 수단이고, ALOS는 그 제한이 효과를 발휘하는지 측정하는 결과 지표다.",
+          "targetId": "minimum-length-of-stay-mlos"
+        }
+      ],
+      "sources": [
+        {
+          "name": "STR Benchmark Glossary — Average Length of Stay",
+          "org": "STR (CoStar Group)",
+          "version": "",
+          "section": "",
+          "url": "https://str.com/data-insights-blog/glossary",
+          "tier": "association"
+        },
+        {
+          "name": "HSMAI Revenue Optimization Glossary",
+          "org": "HSMAI (Hospitality Sales and Marketing Association International)",
+          "version": "",
+          "section": "",
+          "url": "https://hsmai.org/knowledge/glossary/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"14\" width=\"36\" height=\"28\" rx=\"2\"/><line x1=\"6\" y1=\"22\" x2=\"42\" y2=\"22\"/><line x1=\"16\" y1=\"8\" x2=\"16\" y2=\"18\"/><line x1=\"32\" y1=\"8\" x2=\"32\" y2=\"18\"/><rect x=\"12\" y=\"27\" width=\"6\" height=\"5\" rx=\"1\"/><rect x=\"21\" y=\"27\" width=\"6\" height=\"5\" rx=\"1\"/><rect x=\"30\" y=\"27\" width=\"6\" height=\"5\" rx=\"1\"/><line x1=\"15\" y1=\"36\" x2=\"33\" y2=\"36\"/></svg>",
+      "term": "Average Length of Stay (ALOS)",
+      "definition": "Average Length of Stay (ALOS) is the mean number of nights guests stay per booking during a given period, calculated as total occupied room-nights divided by total number of arrivals. It is a standard lodging performance metric used alongside ADR and Occupancy to model revenue patterns, optimise length-of-stay pricing restrictions, and benchmark against competitive sets.",
+      "lastReviewed": "2026-06-29"
     },
     {
       "id": "award-redemption",
@@ -21367,6 +21453,88 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "load-factor",
+      "vertical": "air",
+      "category": "air-shop",
+      "conceptType": "metric",
+      "status": "active",
+      "abbreviation": "LF",
+      "term_ko": "탑승률(Load Factor)",
+      "definition_ko": "탑승률(Load Factor, LF)은 수익 여객이 차지하는 가용 좌석-킬로미터(ASK)의 비율로, 수익 여객 킬로미터(RPK)를 가용 좌석 킬로미터(ASK)로 나눈 뒤 100을 곱해 산출한다. IATA가 매월 항공 교통 통계에서 발표하고 ICAO가 비교 항공 분석에 활용하는 항공사 주요 운송 효율 지표다.",
+      "longDef": "A passenger load factor (PLF) at or above the breakeven load factor signals that average fares are covering unit costs; airlines use it alongside yield (revenue per RPK) to measure revenue quality. System-wide load factors rose from around 75–77% in the early 2010s to above 83% in 2023 as revenue management systems matured and airlines right-sized capacity. The metric is produced at flight, route, and network level and is a standard item in IATA Monthly Statistics and airline investor reporting. Cargo load factor (CLF) applies the same formula to freight, substituting freight tonne kilometres (FTK) for RPK and available freight tonne kilometres (AFTK) for ASK.",
+      "longDef_ko": "여객 탑승률(PLF)이 손익분기 탑승률(breakeven load factor) 이상이면 평균 운임이 단위 비용을 충당하고 있다는 신호다. 항공사는 탑승률과 함께 수익률(RPK당 수익)을 활용해 수익 품질을 측정한다. 수익 관리 시스템이 성숙하고 항공사의 적절한 용량 조정이 이루어지면서 시스템 탑승률은 2010년대 초반 약 75~77%에서 2023년 83% 이상으로 상승했다. 이 지표는 항공편·노선·네트워크 수준에서 산출되며 IATA 월간 통계 및 항공사 IR 보고의 표준 항목이다. 화물 탑승률(CLF)은 동일한 공식을 화물에 적용하여 RPK 대신 화물 톤 킬로미터(FTK), ASK 대신 가용 화물 톤 킬로미터(AFTK)를 사용한다.",
+      "standardBody": "IATA",
+      "aliases": [
+        "Passenger Load Factor",
+        "PLF",
+        "Seat Factor"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Revenue Management",
+          "targetId": "revenue-management"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Overbooking",
+          "targetId": "overbooking"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Spill and Spoilage",
+          "targetId": "spill-and-spoilage"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Bid Price",
+          "targetId": "bid-price"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Revenue Management",
+          "explanation": "Load Factor measures the percentage of capacity filled; Revenue Management is the system and discipline that controls pricing and inventory to optimise load factor and yield simultaneously — load factor is an output metric, revenue management is the input process.",
+          "explanation_ko": "탑승률은 용량이 채워진 비율을 측정하는 지표이고, Revenue Management는 탑승률과 수익률을 동시에 최적화하기 위해 요금과 재고를 통제하는 시스템·학문이다. 탑승률은 결과 지표이고 Revenue Management는 입력 프로세스다.",
+          "targetId": "revenue-management"
+        },
+        {
+          "targetTerm": "Overbooking",
+          "explanation": "Overbooking is the practice of selling more seats than the aircraft holds to compensate for expected no-shows; Load Factor is the ex-post outcome metric measuring how many seats were actually filled by revenue passengers.",
+          "explanation_ko": "초과 예약은 예상 결항객을 보상하기 위해 항공기 수용 좌석보다 많이 판매하는 관행이고, 탑승률은 실제로 수익 여객이 탑승한 좌석 비율을 사후 측정하는 결과 지표다.",
+          "targetId": "overbooking"
+        },
+        {
+          "targetTerm": "Spill and Spoilage",
+          "explanation": "Spill (demand exceeding capacity) and spoilage (unfilled capacity) are the two failure modes Load Factor diagnoses: a load factor approaching 100% signals potential spill; a consistently low load factor signals spoilage and under-utilisation.",
+          "explanation_ko": "유출(Spill, 수요가 용량을 초과)과 낭비(Spoilage, 용량 미충족)는 탑승률이 진단하는 두 가지 실패 모드다. 탑승률이 100%에 가까우면 유출 가능성을 신호하고, 지속적으로 낮은 탑승률은 낭비와 비효율을 신호한다.",
+          "targetId": "spill-and-spoilage"
+        }
+      ],
+      "sources": [
+        {
+          "name": "World Air Transport Statistics (WATS)",
+          "org": "IATA",
+          "version": "68th Edition (2024)",
+          "section": "Traffic Statistics Definitions",
+          "url": "https://www.iata.org/en/publications/store/world-air-transport-statistics/",
+          "tier": "association"
+        },
+        {
+          "name": "ICAO Air Transport Reporting Forms and Traffic Statistics",
+          "org": "ICAO",
+          "version": "",
+          "section": "Definitions — Doc 9750",
+          "url": "https://www.icao.int/sustainability/Pages/Glossary.aspx",
+          "tier": "standard-body"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M9 40V10\"/><path d=\"M9 40h30\"/><rect x=\"12\" y=\"28\" width=\"7\" height=\"12\"/><rect x=\"22\" y=\"20\" width=\"7\" height=\"20\"/><rect x=\"32\" y=\"24\" width=\"7\" height=\"16\"/><polyline points=\"15,26 25,18 35,22\"/></svg>",
+      "term": "Load Factor",
+      "definition": "Load Factor (LF) is the percentage of available seat-kilometres (ASK) that are filled by revenue passengers, calculated as Revenue Passenger Kilometres (RPK) divided by Available Seat Kilometres (ASK) multiplied by 100. It is the primary measure of airline capacity utilisation, published by IATA in monthly traffic statistics and used by ICAO for comparative aviation analysis.",
+      "lastReviewed": "2026-06-29"
+    },
+    {
       "id": "loss-damage-waiver",
       "vertical": "ground",
       "category": "car",
@@ -26533,6 +26701,99 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "open-dated-voucher",
+      "vertical": "tours",
+      "category": "tour-product",
+      "conceptType": "business-term",
+      "status": "active",
+      "aliases": [
+        "Open Date Voucher",
+        "Undated Voucher",
+        "Flexible Date Voucher",
+        "Open-Ended Ticket"
+      ],
+      "term_ko": "날짜 미지정 바우처(Open-Dated Voucher)",
+      "definition_ko": "날짜 미지정 바우처(Open-Dated Voucher)는 구매 시점에 특정 방문 날짜나 시간대가 지정되지 않은 어트랙션 티켓 또는 액티비티 예약 확인서로, 소지자는 명시된 유효 기간 내 임의의 적합한 날에 입장구 또는 교환 지점에서 제시하여 사용할 수 있다. B2B·B2C 체험 상품 유통에서 특정 날짜 확정 없이 재판매 업체가 재고를 보유·판매할 수 있게 하는 주요 유연성 수단이다.",
+      "longDef": "Open-dated vouchers are standard in the distribution of major attraction tickets (theme parks, museums, city-sightseeing passes) and pre-packaged day tours sold through OTAs, bedbanks, and wholesalers, where the reseller may be months ahead of the guest",
+      "s visit. The voucher specifies a product, a number of participants, an expiry date (typically 30 days to 12 months from issue), and the operating conditions; the guest may be required to exchange it for a dated ticket on arrival or at a box office, or may walk in directly if the supplier accepts open-dated redemption. The OCTO (Open Connectivity for Tourism) specification distinguishes open-dated availability from closed/timed availability": "an OCTO product with \"openDated\" availability has no calendar or capacity check at booking time, whereas a timed product requires a specific start-time slot to be reserved.'",
+      "longDef_ko": "날짜 미지정 바우처는 재판매업체가 선객의 방문보다 몇 달 앞서 있을 수 있는 OTA·베드뱅크·도매상을 통해 판매되는 주요 어트랙션 티켓(테마파크, 박물관, 시티투어 패스)과 사전 패키지 당일 투어 유통에서 표준이다. 바우처에는 상품, 참가 인원, 유효 기간(발행 후 통상 30일~12개월), 운영 조건이 명시된다. 선객은 도착 시 또는 매표소에서 날짜가 지정된 티켓으로 교환해야 할 수도 있고, 공급사가 날짜 미지정 사용을 허용하면 바로 입장할 수도 있다. OCTO(Open Connectivity for Tourism) 사양은 날짜 미지정 가용성을 기한/시간제 가용성과 구분한다. OCTO에서 \"openDated\" 가용성을 갖는 상품은 예약 시 캘린더 또는 용량 확인이 없고, 시간제 상품은 특정 시작 시간대를 예약해야 한다.",
+      "standardBody": "OCTO (Open Connectivity for Tourism)",
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Voucher",
+          "targetId": "voucher"
+        },
+        {
+          "type": "contrasts",
+          "targetTerm": "Timeslot",
+          "targetId": "timeslot"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Capacity",
+          "targetId": "capacity"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Cut-off Time",
+          "targetId": "cut-off-time"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Mobile Ticket",
+          "targetId": "mobile-ticket"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Free Cancellation",
+          "targetId": "free-cancellation"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Voucher",
+          "explanation": "A voucher is the generic document or confirmation used to claim a travel product; an open-dated voucher is the specific type that has no pre-assigned visit date — all open-dated vouchers are vouchers, but most vouchers (hotel, tour, flight) carry a fixed date or service period.",
+          "explanation_ko": "바우처는 여행 상품을 청구하는 데 사용하는 일반적인 문서 또는 확인서이고, 날짜 미지정 바우처는 방문 날짜가 사전 지정되지 않은 특정 유형이다. 모든 날짜 미지정 바우처는 바우처이지만, 대부분의 바우처(호텔·투어·항공)는 고정된 날짜나 서비스 기간을 가지고 있다.",
+          "targetId": "voucher"
+        },
+        {
+          "targetTerm": "Timeslot",
+          "explanation": "A timeslot is a specific date-and-time window reserved for a visitor's entry or activity start; an open-dated voucher has no timeslot at the time of purchase. Depending on the supplier, a guest may need to exchange the open-dated voucher for a timeslot on arrival or before visiting, or may be admitted without a timed reservation.",
+          "explanation_ko": "시간대(Timeslot)는 방문자의 입장 또는 액티비티 시작을 위해 예약된 특정 날짜·시간 창이고, 날짜 미지정 바우처는 구매 시점에 시간대가 없다. 공급사에 따라 선객은 도착 전이나 방문 전에 날짜 미지정 바우처를 시간대 예약으로 교환해야 할 수도 있고, 시간제 예약 없이 입장이 가능할 수도 있다.",
+          "targetId": "timeslot"
+        },
+        {
+          "targetTerm": "Instant Confirmation",
+          "explanation": "Instant Confirmation is a booking status indicating that availability is confirmed in real time at the moment of purchase; an open-dated voucher may or may not be instantly confirmed depending on whether the supplier runs capacity checks. Many open-dated products grant instant confirmation precisely because no capacity slot is consumed at booking time.",
+          "explanation_ko": "Instant Confirmation은 구매 시점에 가용성이 실시간으로 확정되는 예약 상태이고, 날짜 미지정 바우처는 공급사의 용량 확인 여부에 따라 즉시 확정될 수도 있고 아닐 수도 있다. 많은 날짜 미지정 상품은 예약 시 용량 슬롯이 소비되지 않기 때문에 즉시 확정을 제공한다.",
+          "targetId": "instant-confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "name": "OCTO Core Specification — Availability Types",
+          "org": "OCTO (Open Connectivity for Tourism)",
+          "version": "1.3",
+          "section": "Availability / openDated",
+          "url": "https://github.com/octotravel/octo-core",
+          "tier": "standard-body"
+        },
+        {
+          "name": "OCTO Consortium — Open Connectivity for Tourism",
+          "org": "OCTO",
+          "version": "",
+          "section": "",
+          "url": "https://octotravel.com/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 18v-4a2 2 0 0 1 2-2h32a2 2 0 0 1 2 2v4a4 4 0 0 1 0 8v4a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-4a4 4 0 0 1 0-8z\"/><line x1=\"18\" y1=\"12\" x2=\"18\" y2=\"36\"/><circle cx=\"31\" cy=\"20\" r=\"2\"/><path d=\"M31 24v4\"/></svg>",
+      "term": "Open-Dated Voucher",
+      "definition": "An open-dated voucher is an attraction ticket or activity booking confirmation that does not carry a fixed visit date or timeslot at the point of purchase; the holder may redeem it on any qualifying day within the stated validity window by presenting it at the venue entrance or redemption point. It is the principal flexibility mechanism in B2B and B2C experience distribution, allowing downstream resellers to hold and sell inventory without committing to a specific date.",
+      "lastReviewed": "2026-06-29"
+    },
+    {
       "id": "opentravel-2-0-object-model",
       "vertical": "common",
       "category": "standards",
@@ -29377,6 +29638,88 @@
       "term": "PNRGOV",
       "definition": "PNRGOV is the IATA/WCO/ICAO standard message by which an airline pushes Passenger Name Record data from its reservation system to a state's border/security agencies, in fulfilment of national PNR-reporting requirements. Maintained by the joint PNRGOV Working Group, it is defined within the PADIS standards in both EDIFACT and XML formats.",
       "lastReviewed": "2026-06-18"
+    },
+    {
+      "id": "port-charges",
+      "vertical": "cruise",
+      "category": "cruise",
+      "conceptType": "business-term",
+      "status": "active",
+      "aliases": [
+        "Port Fees",
+        "Port Taxes",
+        "Government Taxes and Port Fees",
+        "GTPF"
+      ],
+      "term_ko": "기항지 세금·항만 비용(Port Charges)",
+      "definition_ko": "기항지 세금·항만 비용(Port Charges)은 크루즈 여정의 각 기항지에서 선객 1인당 부과되는 정부 세금 및 항만 당국 수수료로, 입항세·부두 사용료·접안료·도선사 비용 등을 포함하며 선사가 수취하여 해당 당국에 납부한다. 이 비용은 예약 인보이스에서 기본 크루즈 요금과 별도로 항목화되며, 일반적으로 커미션 대상이 아니다.",
+      "longDef": "Port charges vary by port and itinerary: Caribbean and Alaskan head taxes are among the most commonly cited, but every port in a cruise itinerary contributes its own fee schedule covering harbour pilotage, light dues, passenger facility charges, and sometimes environmental levies. Cruise lines estimate port charges at the time of booking and guarantee the total amount; material changes in the published amount are disclosed and may result in a price adjustment. Port charges are a \"pass-through\" cost — the cruise line neither profits from nor discounts them — and are excluded from base fare calculations used for commissionable revenue and agent net remit. In marketing materials and search displays, \"cruise fare\" often refers to the base price excluding port charges and fuel supplements.",
+      "longDef_ko": "항만 비용은 기항지와 여정에 따라 상이하다. 카리브해와 알래스카의 입항세가 가장 흔히 거론되지만, 크루즈 여정의 모든 기항지는 항만 도선·등대세·여객 시설 요금·환경 부담금 등 자체 요금 체계를 가지고 있다. 선사는 예약 시점에 항만 비용을 추정하고 총액을 보장하며, 공표 금액의 중대한 변동 시 고지하고 요금을 조정할 수 있다. 항만 비용은 '패스스루(pass-through)' 비용으로, 선사가 이로부터 수익을 얻거나 할인하지 않으며, 커미션 대상 수익 및 여행사 순 송금액 산정에 사용되는 기본 요금 계산에서 제외된다. 마케팅 자료 및 검색 화면에서 '크루즈 요금'은 흔히 항만 비용 및 연료 추가 요금을 제외한 기본 가격을 지칭한다.",
+      "standardBody": "CLIA",
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Non-Commissionable Fare (NCF)",
+          "targetId": "non-commissionable-fare-ncf"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Fuel Supplement",
+          "targetId": "fuel-supplement"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Cruise-Only Fare",
+          "targetId": "cruise-only-fare"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Daily Service Charge",
+          "targetId": "daily-service-charge"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Non-Commissionable Fare (NCF)",
+          "explanation": "NCF is the portion of the total cruise price that is excluded from commission calculation, which typically includes port charges plus other non-commissionable line items; port charges are the specific government/port-authority pass-through component within the NCF.",
+          "explanation_ko": "NCF는 커미션 산정에서 제외되는 크루즈 총가격 부분으로, 통상 항만 비용과 기타 비커미션 항목을 포함한다. 항만 비용은 NCF 내 정부/항만 당국 패스스루 구성 요소다.",
+          "targetId": "non-commissionable-fare-ncf"
+        },
+        {
+          "targetTerm": "Fuel Supplement",
+          "explanation": "Both port charges and fuel supplements are itemised additions to the base cruise fare; port charges are fixed government/port fees passed through to authorities, whereas a fuel supplement is a variable carrier surcharge triggered by high oil prices and retained by the cruise line.",
+          "explanation_ko": "항만 비용과 연료 추가 요금 모두 기본 크루즈 요금에 더해지는 항목이지만, 항만 비용은 당국에 납부하는 고정 정부/항만 수수료 패스스루이고, 연료 추가 요금은 유가 급등 시 부과되어 선사가 수취하는 변동 운송사 부가 요금이다.",
+          "targetId": "fuel-supplement"
+        },
+        {
+          "targetTerm": "Daily Service Charge",
+          "explanation": "The daily service charge (gratuity) is a per-day per-guest amount that compensates crew and is distributed internally by the cruise line; port charges are per-port government levies entirely passed through to external authorities and unrelated to crew compensation.",
+          "explanation_ko": "일일 서비스 요금(봉사료)은 승무원 보상을 위해 선사가 내부적으로 배분하는 1인당 일일 요금이고, 항만 비용은 완전히 외부 당국에 납부되는 기항지별 정부 부과금으로 승무원 보상과 무관하다.",
+          "targetId": "daily-service-charge"
+        }
+      ],
+      "sources": [
+        {
+          "name": "CLIA Cruise Industry Pricing Transparency Standards",
+          "org": "CLIA (Cruise Lines International Association)",
+          "version": "",
+          "section": "",
+          "url": "https://cruising.org/about-cruise-industry/news-room/stats-and-facts",
+          "tier": "association"
+        },
+        {
+          "name": "Federal Maritime Commission — Passenger Vessel Operations",
+          "org": "Federal Maritime Commission",
+          "version": "",
+          "section": "",
+          "url": "https://www.fmc.gov/bureaus-offices/bureau-of-certification-licensing/passenger-vessel-operators/",
+          "tier": "regulator-guidance"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"8\" width=\"28\" height=\"36\" rx=\"2\"/><line x1=\"17\" y1=\"18\" x2=\"31\" y2=\"18\"/><line x1=\"17\" y1=\"24\" x2=\"25\" y2=\"24\"/><path d=\"M24 29v8\"/><path d=\"M21 30.5h4.5a1.5 1.5 0 0 1 0 3h-3a1.5 1.5 0 0 0 0 3H27\"/></svg>",
+      "term": "Port Charges",
+      "definition": "Port charges are government-levied taxes and port-authority fees assessed on a per-passenger basis at each port of call in a cruise itinerary, including head taxes, wharfage fees, docking fees, and pilotage costs; they are collected by the cruise line and passed through to the relevant authorities. These fees are typically itemised separately from the base cruise fare on booking invoices and are generally non-commissionable.",
+      "lastReviewed": "2026-06-29"
     },
     {
       "id": "port-of-call",
@@ -38681,6 +39024,76 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "tender-port",
+      "vertical": "cruise",
+      "category": "cruise",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "텐더 기항지(Tender Port)",
+      "definition_ko": "텐더 기항지는 수심이 낮거나 부두 공간이 협소하거나 환경 제약으로 크루즈선이 직접 접안할 수 없는 기항지로, 선박이 외해에 정박하고 텐더(선박 자체 구명정을 재활용한 소형 동력선)로 선객을 육지와 선박 사이에 운반한다. 텐더링은 접안 기항지에 비해 이동 시간이 추가되며, 선사 주관 및 개인 기항지 투어 모두에 고유한 물류 절차가 수반된다.",
+      "longDef": "When a cruise ship anchors at a tender port, numbered tender tickets or boarding passes are issued to manage the flow; ship-sponsored shore excursion guests typically receive priority tender boarding to reach their tour departures on time, while independent travellers tender on a first-come, first-served basis. The tender service operates as a continuous shuttle throughout the port day, but it can be suspended or cancelled if sea conditions (wave height, swell, wind) exceed safe operating limits — a risk not present at docked ports. Well-known tender ports include Santorini (Greece), Bora Bora (French Polynesia), and Skagway (Alaska in past seasons). Cruise itineraries flag each stop as \"dock\" or \"tender\" to set passenger expectations.",
+      "longDef_ko": "크루즈선이 텐더 기항지에 정박하면 선객 흐름을 관리하기 위해 번호가 매겨진 텐더 티켓 또는 탑승권이 발급된다. 선사 주관 기항지 투어 참가 선객은 투어 출발 시간에 맞출 수 있도록 통상 텐더 우선 탑승권을 받으며, 개인 여행자는 선착순으로 텐더를 이용한다. 텐더 서비스는 기항일 내내 연속 셔틀 방식으로 운항하지만, 파고·너울·바람 등 해상 상태가 안전 운항 한계를 초과하면 운항이 중단 또는 취소될 수 있다(접안 기항지에는 없는 위험). 산토리니(그리스), 보라보라(프랑스령 폴리네시아), 스캐그웨이(알래스카) 등이 잘 알려진 텐더 기항지다. 크루즈 일정표는 각 기항지를 'dock'(접안) 또는 'tender'(텐더)로 표기해 선객 예상치를 설정한다.",
+      "standardBody": "CLIA",
+      "aliases": [
+        "Tender Anchorage",
+        "Anchor Port",
+        "Anchorage Port"
+      ],
+      "relationships": [
+        {
+          "type": "narrower",
+          "targetTerm": "Port of Call",
+          "targetId": "port-of-call"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Shore Excursion",
+          "targetId": "shore-excursion"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Embarkation",
+          "targetId": "embarkation"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Port of Call",
+          "explanation": "A port of call is any scheduled destination stop in a cruise itinerary whether the ship docks or anchors; a tender port is the specific subset where the ship anchors offshore and uses small vessels to ferry passengers, adding transit time and weather risk.",
+          "explanation_ko": "Port of Call는 선박이 접안하든 정박하든 크루즈 일정의 모든 예정 기항지를 가리키고, 텐더 기항지는 선박이 외해에 정박해 소형 선박으로 선객을 운반하여 이동 시간과 기상 위험이 추가되는 특정 하위 유형이다.",
+          "targetId": "port-of-call"
+        },
+        {
+          "targetTerm": "Shore Excursion",
+          "explanation": "A shore excursion is a tour or activity sold for a port of call; a tender port describes the access method for reaching that port. Shore excursions operate from both tender and docked ports, but tender ports add priority-boarding logistics and weather-cancellation risk for excursion operators.",
+          "explanation_ko": "기항지 투어는 기항지를 위해 판매하는 투어·액티비티이고, 텐더 기항지는 그 기항지에 도달하는 접근 방식을 설명한다. 기항지 투어는 텐더 기항지와 접안 기항지 모두에서 운영되지만, 텐더 기항지는 투어 운영사에게 우선 탑승 물류 및 기상 취소 위험을 추가한다.",
+          "targetId": "shore-excursion"
+        }
+      ],
+      "sources": [
+        {
+          "name": "CLIA Cruise Industry Terminology & Facts",
+          "org": "CLIA (Cruise Lines International Association)",
+          "version": "",
+          "section": "",
+          "url": "https://cruising.org/about-cruise-industry/news-room/stats-and-facts",
+          "tier": "association"
+        },
+        {
+          "name": "Cruise Ship Tender Operations — Industry Reference",
+          "org": "Royal Caribbean Blog",
+          "version": "",
+          "section": "",
+          "url": "https://www.royalcaribbeanblog.com/2020/11/03/what-tender-port-cruise-ship",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 38c4-4 8-5 18-5s14 1 18 5\"/><path d=\"M14 33v-6l4-4h12l4 4v6\"/><path d=\"M18 23h12\"/><circle cx=\"24\" cy=\"14\" r=\"4\"/><path d=\"M24 18v5\"/></svg>",
+      "term": "Tender Port",
+      "definition": "A tender port is a port of call where a cruise ship cannot berth directly at a pier due to shallow water, restricted quay space, or environmental constraints; the vessel anchors offshore and passengers are ferried to and from shore in small motorised vessels called tenders — typically the ship's own lifeboats repurposed for the transit. Tendering adds transit time compared with a docked port and creates distinct logistics for both ship-sponsored and independent shore excursions.",
+      "lastReviewed": "2026-06-29"
+    },
+    {
       "id": "through-fare",
       "vertical": "air",
       "category": "air-partner",
@@ -40443,6 +40856,81 @@
       "term": "Trip Interruption",
       "definition": "Trip interruption is the post-departure counterpart to trip cancellation, reimbursing the unused non-refundable portion of a trip plus the cost of returning home early (or rejoining the itinerary) when a trip already underway is cut short for a covered reason. Benefit limits are commonly set above 100% of trip cost (often up to 150%) to absorb unplanned return transportation.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "turnaround-day",
+      "vertical": "cruise",
+      "category": "cruise",
+      "conceptType": "business-term",
+      "status": "active",
+      "aliases": [
+        "Changeover Day",
+        "Embarkation Day",
+        "Turn Day"
+      ],
+      "term_ko": "선박 전환일(Turnaround Day)",
+      "definition_ko": "선박 전환일(Turnaround Day)은 한 크루즈 항해가 끝나고 새 항해가 빠르게 시작되는 모항 당일로, 하선 선객과 승선 선객이 보통 6~10시간 내에 교체된다. 보급·연료 보충·폐기물 처리·심층 청소·출입국/세관 처리·객실 전체 준비가 동시에 진행되는 크루즈 운영의 가장 집중적인 작업일이다.",
+      "longDef": "Turnaround day begins before dawn as the ship docks and disembarkation commences by cabin colour or luggage-tag zone; cleared passengers collect pre-tagged luggage in the terminal, while porters, cleaners, provisioners, and fuelling crews board simultaneously. Customs and immigration inspection of the ship — and sometimes of all crew — may also occur on turnaround day per port-state or flag-state requirements. New passengers typically begin boarding in the early afternoon with access to staterooms when cabin preparation is complete, followed by the mandatory muster drill before departure. The homeport city, infrastructure, and labour resources significantly affect a cruise line's ability to execute efficient turnarounds, making turnaround-day logistics a key factor in ship scheduling decisions.",
+      "longDef_ko": "선박 전환일은 선박 접안 및 하선 개시(객실 색상 또는 수하물 태그 구역별)와 함께 동트기 전부터 시작된다. 하선한 선객은 터미널에서 미리 태그된 수하물을 찾고, 그 사이 청소·보급·연료 보충 인원이 동시에 선박에 탑승한다. 항구국 또는 기국 요건에 따라 선박 전체 세관·출입국 검사 및 때로는 전체 승무원 검사도 전환일에 이루어진다. 신규 선객은 보통 오후 초에 탑승을 시작하며, 객실 준비가 완료되면 입실할 수 있고, 출항 전 의무 muster drill이 진행된다. 모항 도시의 인프라와 노동력 자원은 선사의 효율적 전환 실행에 크게 영향을 미치며, 선박 전환일 물류는 선박 스케줄 결정의 핵심 요소가 된다.",
+      "standardBody": "CLIA",
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Embarkation",
+          "targetId": "embarkation"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Port of Call",
+          "targetId": "port-of-call"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Muster Drill",
+          "targetId": "muster-drill"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Tender Port",
+          "targetId": "tender-port"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Embarkation",
+          "explanation": "Embarkation is the process of passengers boarding the ship at the start of a voyage; Turnaround Day is the full operational event that combines the prior voyage's disembarkation with the new voyage's embarkation, plus all ship servicing, in a single compressed port call.",
+          "explanation_ko": "Embarkation은 항해 시작 시 선객이 승선하는 과정이고, Turnaround Day는 직전 항해의 하선과 새 항해의 승선, 그리고 모든 선박 정비를 압축된 단일 기항 일정 안에 결합한 전체 운영 이벤트다.",
+          "targetId": "embarkation"
+        },
+        {
+          "targetTerm": "Port of Call",
+          "explanation": "A port of call is a scheduled stop during a voyage where passengers go ashore and return; Turnaround Day is a homeport event that marks the end of one voyage and the beginning of the next — passengers do not return to the same ship, and the operational scope is far greater than a regular port day.",
+          "explanation_ko": "Port of Call는 항해 중 선객이 상륙 후 복귀하는 예정 기항지이고, Turnaround Day는 한 항해의 종료와 다음 항해의 시작을 표시하는 모항 이벤트다. 선객은 같은 선박으로 돌아오지 않으며, 운영 범위도 일반 기항일보다 훨씬 크다.",
+          "targetId": "port-of-call"
+        }
+      ],
+      "sources": [
+        {
+          "name": "CLIA Cruise Industry Overview — Operational Standards",
+          "org": "CLIA (Cruise Lines International Association)",
+          "version": "",
+          "section": "",
+          "url": "https://cruising.org/about-cruise-industry/news-room/stats-and-facts",
+          "tier": "association"
+        },
+        {
+          "name": "Turnaround Day at a Cruise Ship Port",
+          "org": "Royal Caribbean Blog",
+          "version": "",
+          "section": "",
+          "url": "https://www.royalcaribbeanblog.com/2024/04/16/turnaround-day-cruise",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M36 10a14 14 0 0 1 0 28\"/><path d=\"M12 38a14 14 0 0 1 0-28\"/><polyline points=\"36,6 36,12 30,12\"/><polyline points=\"12,42 12,36 18,36\"/></svg>",
+      "term": "Turnaround Day",
+      "definition": "Turnaround Day is the homeport day when a cruise sailing ends and a new one begins in quick succession: disembarking passengers clear the ship while new passengers board, typically within a compressed window of 6–10 hours. It is one of the most operationally intensive events in cruise operations, requiring simultaneous provisioning, refuelling, waste management, deep cleaning, immigration/customs processing, and full cabin preparation.",
+      "lastReviewed": "2026-06-29"
     },
     {
       "id": "two-way-xml",
