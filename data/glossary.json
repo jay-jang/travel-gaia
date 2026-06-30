@@ -2,8 +2,8 @@
   "meta": {
     "name": "Travel Wiki",
     "tagline": "여행 산업 용어 백과사전",
-    "generatedAt": "2026-06-29",
-    "entryCount": 475,
+    "generatedAt": "2026-06-30",
+    "entryCount": 481,
     "categoryCount": 20,
     "verticalCount": 6
   },
@@ -5364,6 +5364,77 @@
       "term": "Block Space Agreement",
       "definition": "A codeshare arrangement in which a marketing carrier purchases a fixed block of seats on an operating carrier's flight to resell under its own code and flight number. The marketing carrier controls and bears commercial risk for that block, in contrast to free-flow/free-sale codeshares that sell from the operating carrier's live inventory.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "block-time",
+      "vertical": "air",
+      "category": "air-ops",
+      "conceptType": "business-term",
+      "status": "active",
+      "abbreviation": "BLK",
+      "term_ko": "블록 타임(Block Time)",
+      "definition_ko": "블록 타임은 출발 스탠드에서 항공기의 off-blocks(바퀴 고임대 제거·제동 해제·푸시백 또는 지상 활주 시작) 시각부터 도착 스탠드에서의 on-blocks(바퀴 고임대 설치·주차 제동 잠금) 시각까지의 운항 경과 시간이다. 항공사 스케줄링(SSIM), 승무원 근무 및 블록 시간 계산, 공항 슬롯 관리, IATA 지연 코드 측정의 표준 시간 단위다.",
+      "longDef": "Block Time = taxi-out time + airborne (flight) time + taxi-in time. It differs from flight time (wheels-up to wheels-down, airborne only) and from elapsed journey time (gate-to-gate door-open to door-open). IATA's Standard Schedules Information Manual (SSIM) defines scheduled block time as the primary field in the Standard Schedules Message (SSM), which carriers file with GDSs and slot coordinators. Actual departure delay under IATA delay codes is measured as the difference between the published scheduled off-blocks time (SOBT) and the actual off-blocks time (AOBT), the latter captured by A-CDM (Airport Collaborative Decision Making) systems. Block hours are the primary unit airlines use to measure engine utilization for maintenance intervals, lease billing, and crew pairing — a Boeing 737 typical block-hour burn rate is approximately 800 kg/h of fuel. FAA 14 CFR Part 117, EASA OPS Subpart FTL, and ICAO Annex 6 all define maximum block-hour limits for crew-duty and rest-period regulations.",
+      "longDef_ko": "블록 타임 = 지상 활주(출발) 시간 + 공중 비행 시간 + 지상 활주(도착) 시간이다. 이륙부터 착륙까지의 공중 시간만을 의미하는 비행 시간(flight time), 또는 게이트-투-게이트 도어 개방 시각 간 경과 시간과는 구별된다. IATA의 표준 스케줄 정보 매뉴얼(SSIM)은 항공사가 GDS 및 슬롯 조정 기관에 제출하는 표준 스케줄 메시지(SSM)의 핵심 필드로 예정 블록 타임을 정의한다. IATA 지연 코드에서 출발 지연은 게시된 예정 off-blocks 시각(SOBT)과 실제 off-blocks 시각(AOBT)의 차이로 측정되며, AOBT는 A-CDM(공항 협력 의사결정) 시스템이 포착한다. 블록 시간은 항공사가 엔진 사용량(정비 주기·리스 청구)과 승무원 페어링 측정에 사용하는 기본 단위이다. FAA 14 CFR Part 117, EASA OPS Subpart FTL, ICAO Annex 6 모두 승무원 근무 및 휴식 규정에 최대 블록 시간 한도를 정의한다.",
+      "aliases": [
+        "Block Hours",
+        "BLK Time",
+        "Chock-to-Chock Time",
+        "Gate-to-Gate Block Time"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Segment",
+          "targetId": "segment"
+        },
+        {
+          "type": "related",
+          "targetTerm": "IATA Delay Codes",
+          "targetId": "iata-delay-codes"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Flight Number",
+          "targetId": "flight-number"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Segment",
+          "explanation": "A Segment is the commercial booking unit representing a single flight between an origin and destination; Block Time is the operational time measurement for that same flight from off-blocks to on-blocks, used for scheduling, crew-duty rules, and slot allocation rather than as a sales or itinerary concept.",
+          "explanation_ko": "Segment는 출발지와 목적지 사이의 단일 비행을 나타내는 상업적 예약 단위이고, 블록 타임은 같은 비행에 대해 off-blocks에서 on-blocks까지 측정된 운항 시간으로, 판매·일정 개념이 아닌 스케줄링·승무원 근무 규정·슬롯 배분에 사용된다.",
+          "targetId": "segment"
+        },
+        {
+          "targetTerm": "IATA Delay Codes",
+          "explanation": "IATA Delay Codes classify the cause of a departure delay, which is measured as the gap between the published scheduled block time (SOBT) and the actual off-blocks time (AOBT); Block Time itself is the time reference being compared, not a cause category.",
+          "explanation_ko": "IATA 지연 코드는 출발 지연의 원인을 분류하며, 지연은 예정 off-blocks 시각(SOBT)과 실제 off-blocks 시각(AOBT) 간의 차이로 측정된다. 블록 타임 자체는 비교 기준이 되는 시간 참조점이지 원인 범주가 아니다.",
+          "targetId": "iata-delay-codes"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Standard Schedules Information Manual (SSIM)",
+          "org": "IATA",
+          "version": "",
+          "section": "Chapter 6 — Standard Schedules Messages",
+          "url": "https://www.iata.org/en/publications/manuals/standard-schedules-information-manual/",
+          "tier": "association"
+        },
+        {
+          "name": "Airport Handling Manual (AHM)",
+          "org": "IATA",
+          "version": "",
+          "section": "AHM 810 — Standard Ground Handling Agreement",
+          "url": "https://www.iata.org/en/publications/manuals/airport-handling-manual/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"4\" y=\"20\" width=\"8\" height=\"8\" rx=\"1\"/><rect x=\"36\" y=\"20\" width=\"8\" height=\"8\" rx=\"1\"/><line x1=\"12\" y1=\"24\" x2=\"36\" y2=\"24\"/><path d=\"M20 24c0-5 8-8 12-4\"/><path d=\"M24 13l4 5h-8z\"/><circle cx=\"24\" cy=\"38\" r=\"3\"/></svg>",
+      "term": "Block Time",
+      "definition": "Block Time is the elapsed operational time of a flight measured from off-blocks (chocks removed, brakes released for pushback or taxi) at the departure stand to on-blocks (chocks in, parking brake set) at the arrival stand. It is the standard time unit for airline scheduling (SSIM), crew-duty and block-hour calculations, airport slot management, and IATA delay-code measurement.",
+      "lastReviewed": "2026-06-30"
     },
     {
       "id": "board-basis",
@@ -10826,6 +10897,93 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "day-use",
+      "vertical": "lodging",
+      "category": "hotel-rate",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "데이 유즈(Day Use, 낮 시간 객실)",
+      "definition_ko": "데이 유즈(Day Use, 또는 Day Room)는 호텔 객실을 제한된 주간 시간대(일반적으로 08:00~정오 체크인, 18:00~22:00 체크아웃)에 숙박 없이 판매하는 수익 관행이다. 수요가 낮은 낮 시간대에 유휴 재고에서 수익을 창출하며, 비즈니스 여행자·장시간 환승 승객·항공편 사이에 업무 공간이나 휴식이 필요한 고객을 위한 서비스다.",
+      "longDef": "Day Use rates are typically priced at 40–60% of the full overnight BAR, reflecting the shorter occupancy window and the fact that the room must be released for overnight check-in. Digital marketplaces — DayUse.com, Byhours, HotelsByDay, and HRS Day Use — have brought day-use inventory into mainstream distribution, allowing customers to book rooms by the hour or as fixed daytime windows via OTA-style flows. Demand drivers include long layovers at airport hotels, remote workers seeking quiet meeting or workspace, local staycation use for couples or individuals without travel plans, and event overflow. Hotel revenue managers forecast day-use demand separately from overnight demand because it peaks around midday and near transit hubs, while overnight demand peaks in the early evening. Day Use is distinct from early check-in and late check-out, which are extensions of an existing overnight booking; a Day Use booking is an entirely separate product sold independently with its own rate code.",
+      "longDef_ko": "데이 유즈 요금은 일반적으로 전체 숙박 BAR 요금의 40~60%로 책정되며, 이는 짧은 체크인 시간과 당일 저녁 숙박을 위한 객실 반환 필요성을 반영한다. DayUse.com, Byhours, HotelsByDay, HRS Day Use 등 디지털 마켓플레이스가 데이 유즈 재고를 주류 유통에 편입시켜, 고객이 OTA 방식의 예약 플로우를 통해 시간 단위 또는 고정 주간 시간대로 객실을 예약할 수 있게 되었다. 수요 동인으로는 공항 호텔의 장시간 환승, 조용한 회의 공간이나 업무 공간을 원하는 원격 근무자, 여행 계획 없이 커플·개인이 이용하는 지역 내 스테이케이션, 행사 수요 초과 등이 있다. 호텔 수익 관리자는 낮 시간대와 환승 허브 근처에서 정점을 이루고 저녁에 정점을 이루는 숙박 수요와 달리 데이 유즈 수요를 별도로 예측한다. 데이 유즈는 기존 숙박 예약을 연장하는 조기 체크인·늦은 체크아웃과 구별되며, 데이 유즈 예약은 별도의 요금 코드로 독립적으로 판매되는 완전히 다른 상품이다.",
+      "aliases": [
+        "Day Room",
+        "Day-Use Rate",
+        "Daytime Room",
+        "Short-Stay Room",
+        "Day Use Room"
+      ],
+      "providerTerms": [
+        {
+          "provider": "DayUse.com",
+          "term": "Day Use Hotel",
+          "context": "DayUse.com markets hotel rooms for daytime-only use, typically 3–8 hour windows during the day at reduced rates versus overnight prices.",
+          "context_ko": "DayUse.com은 일반적으로 숙박 요금 대비 할인된 가격으로 낮 시간대(보통 3~8시간) 동안만 이용할 수 있는 호텔 객실을 중개한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Byhours",
+          "term": "Micro-Stay",
+          "context": "Byhours brands their day-use and short-stay hotel booking product as a \"Micro-Stay\", allowing bookings for 3, 6, or 12-hour windows.",
+          "context_ko": "Byhours는 데이 유즈 및 단기 체류 호텔 예약 상품을 \"Micro-Stay\"로 브랜딩하며, 3·6·12시간 단위 예약을 제공한다.",
+          "relationship": "narrower"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Rate Plan",
+          "targetId": "rate-plan"
+        },
+        {
+          "type": "related",
+          "targetTerm": "ADR",
+          "targetId": "adr"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Room Type",
+          "targetId": "room-type"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Rate Plan",
+          "explanation": "A Rate Plan defines pricing conditions for an overnight stay (including minimum stay, cancellation rules, and meal basis); Day Use is an entirely separate non-overnight product type — it is not a variant of an overnight rate plan but a distinct inventory category with its own time window and rate code.",
+          "explanation_ko": "Rate Plan은 숙박에 대한 가격 조건(최소 투숙 기간, 취소 규정, 식사 조건 포함)을 정의하는 반면, 데이 유즈는 완전히 별개의 비숙박 상품 유형으로, 숙박 Rate Plan의 변형이 아닌 고유한 시간 범위와 요금 코드를 가진 별개의 재고 범주다.",
+          "targetId": "rate-plan"
+        },
+        {
+          "targetTerm": "ADR",
+          "explanation": "ADR (Average Daily Rate) is calculated from overnight room revenue divided by occupied overnight rooms; Day Use revenue may be tracked separately and is often excluded from ADR calculations to avoid distorting the overnight performance metric.",
+          "explanation_ko": "ADR(객실 평균 일일 요금)은 숙박 객실 수익을 점유 숙박 객실 수로 나누어 산출하며, 데이 유즈 수익은 별도로 추적되고 숙박 성과 지표의 왜곡을 방지하기 위해 ADR 산출에서 제외되는 경우가 많다.",
+          "targetId": "adr"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Day Use Hotels: Maximizing Underutilized Inventory",
+          "org": "HotelsByDay",
+          "version": "",
+          "section": "",
+          "url": "https://www.hotelsbyday.com/blog/what-is-a-day-use-hotel/",
+          "tier": "vendor-doc"
+        },
+        {
+          "name": "Day Use Hotel Distribution",
+          "org": "HEDNA (Hotel Electronic Distribution Network Association)",
+          "version": "",
+          "section": "",
+          "url": "https://hedna.org/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"14\" width=\"32\" height=\"24\" rx=\"3\"/><path d=\"M16 14v-4\"/><path d=\"M32 14v-4\"/><line x1=\"8\" y1=\"22\" x2=\"40\" y2=\"22\"/><circle cx=\"24\" cy=\"33\" r=\"5\"/><line x1=\"24\" y1=\"30\" x2=\"24\" y2=\"33\"/><line x1=\"24\" y1=\"33\" x2=\"27\" y2=\"35\"/></svg>",
+      "term": "Day Use",
+      "definition": "Day Use (also Day Room) is a hotel revenue practice in which a room is sold for a limited daytime window — typically check-in between 08:00 and noon, check-out by 18:00–22:00 — without an overnight stay. It captures revenue from otherwise idle inventory during low-demand daytime hours and serves business travelers, long-layover passengers, and guests needing a workspace or rest between flights.",
+      "lastReviewed": "2026-06-30"
+    },
+    {
       "id": "demand-based-pricing",
       "vertical": "tours",
       "category": "tour-commercial",
@@ -13889,6 +14047,78 @@
       "term": "Extraordinary Circumstances",
       "definition": "The legal exemption under EU261 Article 5(3) that frees an airline from paying fixed cancellation/delay compensation when a disruption is caused by events that could not have been avoided even if all reasonable measures had been taken. It is the single most litigated concept in passenger-rights claims, shaped extensively by Court of Justice of the EU (CJEU) case law.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "fam-trip",
+      "vertical": "tours",
+      "category": "tour-ops",
+      "conceptType": "business-term",
+      "status": "active",
+      "abbreviation": "FAM",
+      "term_ko": "팸 트립(FAM Trip, 팸 투어)",
+      "definition_ko": "팸 트립(FAM Trip, Familiarization Trip)은 목적지·호텔·크루즈선사·여행사·DMO·관광 기관이 여행 어드바이저, 행사 기획자, 언론인, 콘텐츠 크리에이터를 대상으로 조직하는 무상 또는 대폭 지원되는 초청 여행 프로그램으로, 참가자에게 상품이나 목적지에 대한 직접 체험을 제공하고, 그 대가로 향후 판매·미디어 보도·콘텐츠 생성을 기대한다.",
+      "longDef": "FAM Trips serve a dual trade-marketing purpose: educating travel intermediaries (advisors, MICE planners) so they can confidently sell or recommend a product, and generating press coverage, social media content, or influencer posts. Host organizations cover accommodation, meals, transfers, and activities; participants are typically expected to produce post-trip deliverables (blog articles, social posts, agency bookings, or client recommendations). ASTA (American Society of Travel Advisors) and other trade bodies publish guidelines on FAM trip ethics, including disclosure obligations for advisors accepting hosted travel and minimum productivity requirements (e.g., a minimum number of bookings within six months). FAM trips exist in several formats: (a) Working FAMs focus on inspecting meeting venues or supplier facilities (often called site inspections in the MICE segment); (b) Experiential FAMs allow advisors to live the product as a guest would; (c) Award FAMs are offered to top-producing advisors as incentive recognition. A FAM trip organized specifically for journalists or content creators is typically called a press trip rather than a FAM, though the logistics are similar.",
+      "longDef_ko": "FAM 트립은 트레이드 마케팅 목적을 이중으로 수행한다. 첫째, 여행 중개인(어드바이저, MICE 기획자)이 상품을 자신 있게 판매·추천할 수 있도록 교육하는 것이고, 둘째, 언론 보도·소셜 미디어 콘텐츠·인플루언서 게시물을 생성하는 것이다. 주최 기관은 숙박·식사·이동·활동 비용을 부담하며, 참가자는 일반적으로 사후 산출물(블로그 기사, 소셜 게시물, 여행사 예약, 고객 추천)을 제공할 것으로 기대된다. ASTA(미국 여행 어드바이저 협회) 및 기타 트레이드 단체는 초청 여행을 수락하는 어드바이저의 공개 의무, 최소 생산성 요건(예: 6개월 내 최소 예약 수) 등 FAM 트립 윤리 지침을 게시하고 있다. FAM 트립은 여러 형태로 존재한다. (a) 실무형 FAM은 회의 장소나 공급업체 시설을 점검하는 데 중점을 두며(MICE 부문에서는 현장 답사라고도 함), (b) 체험형 FAM은 어드바이저가 실제 고객처럼 상품을 경험하도록 하고, (c) 어워드 FAM은 최고 실적 어드바이저에게 인센티브 인정의 형태로 제공된다. 언론인이나 콘텐츠 크리에이터를 위해 조직된 FAM 트립은 운영 방식은 비슷하지만 일반적으로 팸 투어가 아닌 프레스 투어(press trip)라고 부른다.",
+      "aliases": [
+        "Familiarization Trip",
+        "FAM Tour",
+        "Familiarization Tour",
+        "Hosted Trip",
+        "Press Trip"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Destination Management Company",
+          "targetId": "destination-management-company"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Receptive Tour Operator",
+          "targetId": "receptive-tour-operator"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Tour Director",
+          "targetId": "tour-director"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Receptive Tour Operator",
+          "explanation": "A Receptive Tour Operator is the ground-handling company that organizes and delivers inbound travel services for groups; a FAM Trip is a specific type of trade-marketing event that an RTO, hotel, cruise line, or DMO may organize to educate travel intermediaries. The RTO is a potential host or co-organizer of a FAM; the FAM is the event type itself.",
+          "explanation_ko": "수용 여행사(Receptive Tour Operator)는 인바운드 단체의 여행 서비스를 조직·제공하는 현지 운영사이고, FAM 트립은 RTO·호텔·크루즈선사·DMO가 여행 중개인을 교육하기 위해 조직할 수 있는 특정 유형의 트레이드 마케팅 행사다. RTO는 FAM의 잠재적 주최자 또는 공동 주최자이고, FAM은 행사 유형 자체다.",
+          "targetId": "receptive-tour-operator"
+        },
+        {
+          "targetTerm": "Destination Management Company",
+          "explanation": "A DMC is the local expert and ground-operations company at a destination; a FAM Trip is a marketing and education event that a DMC or other host may organize. DMCs frequently host FAM trips for travel advisors as a sales tool, but a FAM is the event the DMC organizes rather than what the DMC is.",
+          "explanation_ko": "DMC는 목적지의 현지 전문가이자 지상 운영사이고, FAM 트립은 DMC 또는 다른 주최자가 조직할 수 있는 마케팅·교육 행사다. DMC는 여행 어드바이저를 위해 영업 도구로서 FAM 트립을 자주 주최하지만, FAM은 DMC가 조직하는 행사이지 DMC 자체가 아니다.",
+          "targetId": "destination-management-company"
+        }
+      ],
+      "sources": [
+        {
+          "name": "ASTA FAM Trip Guidelines and Code of Ethics",
+          "org": "ASTA (American Society of Travel Advisors)",
+          "version": "",
+          "section": "",
+          "url": "https://www.asta.org/advocacy/industry-standards",
+          "tier": "association"
+        },
+        {
+          "name": "FAM Trips and Hosted Travel for Travel Advisors",
+          "org": "USTOA (United States Tour Operators Association)",
+          "version": "",
+          "section": "",
+          "url": "https://www.ustoa.com/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"14\" r=\"5\"/><path d=\"M14 38v-5a10 10 0 0 1 20 0v5\"/><line x1=\"32\" y1=\"18\" x2=\"38\" y2=\"20\"/><line x1=\"38\" y1=\"20\" x2=\"36\" y2=\"26\"/><line x1=\"16\" y1=\"18\" x2=\"10\" y2=\"20\"/><line x1=\"10\" y1=\"20\" x2=\"12\" y2=\"26\"/></svg>",
+      "term": "FAM Trip",
+      "definition": "A FAM Trip (Familiarization Trip) is a complimentary or heavily subsidized hosted travel program organized by a destination, hotel, cruise line, tour operator, DMO, or tourism board for travel advisors, meeting planners, journalists, or content creators, providing first-hand product or destination experience with the expectation that participants will generate future sales, media coverage, or content.",
+      "lastReviewed": "2026-06-30"
     },
     {
       "id": "fare-basis-code",
@@ -28841,6 +29071,76 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "passenger-space-ratio",
+      "vertical": "cruise",
+      "category": "cruise",
+      "conceptType": "metric",
+      "status": "active",
+      "abbreviation": "PSR",
+      "term_ko": "승객 공간 비율(PSR)",
+      "definition_ko": "승객 공간 비율(Passenger Space Ratio, PSR)은 선박의 국제총톤수(GT)를 2인 기준 하부 침대 정원으로 나눈 크루즈 업계 지표(GT ÷ 정원)로, 승객 1인당 이론적으로 배분되는 밀폐 선박 용적을 나타낸다. 수치가 높을수록 더 넓고 덜 혼잡한 선박임을 의미한다.",
+      "longDef": "PSR is used by travel advisors, rating guides (most notably the Berlitz Complete Guide to Cruising and Cruise Ships), and consumers to compare the relative spaciousness of cruise ships. As a rule of thumb: PSR below 35 is considered high-density (typical of large mass-market resort ships); 35–50 mainstream; 50–65 premium; above 65 indicates a luxury or ultra-luxury vessel. Expedition ships, which carry very few passengers relative to their hull size, can exceed PSR 100. Because GT measures total enclosed ship volume rather than net habitable guest area, PSR is a proxy metric — it correlates strongly with onboard crowding, amenity access, and passenger-to-crew ratios rather than giving a literal floor-area figure. PSR is calculated on double-occupancy lower-berth capacity (not maximum capacity including upper pullman berths or sofa beds), which makes cross-ship comparison consistent. The Gross Tonnage entry in this encyclopedia notes that GT is the numerator of PSR; the two metrics are inseparable in cruise ship evaluation.",
+      "longDef_ko": "PSR은 여행 어드바이저, 평가 가이드(특히 Berlitz 크루즈 완전 가이드), 소비자들이 크루즈선의 상대적 공간감을 비교하는 데 활용된다. 경험적 기준: PSR 35 미만은 고밀도(대형 대중 시장 리조트선), 35~50은 일반 시장, 50~65는 프리미엄, 65 초과는 럭셔리 또는 초호화 선박을 의미한다. 승객 수 대비 선체 크기가 큰 탐험 선박은 PSR 100을 초과하기도 한다. GT는 실제 거주 면적이 아닌 선박 전체 밀폐 용적을 기준으로 하므로 PSR은 대리 지표로, 절대적인 바닥 면적 수치가 아니라 선내 혼잡도·시설 접근성·승객 대 승무원 비율과 강한 상관관계를 보인다. PSR은 상층 풀만 침대·소파 포함 최대 정원이 아닌 2인 기준 하부 침대 정원을 기준으로 산출하여 선박 간 일관성 있는 비교를 가능하게 한다.",
+      "aliases": [
+        "Space Ratio",
+        "Space-to-Guest Ratio",
+        "Passenger-to-Space Ratio"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Gross Tonnage (GT)",
+          "targetId": "gross-tonnage"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Available Passenger Cruise Days (APCD)",
+          "targetId": "available-passenger-cruise-days-apcd"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Net Yield",
+          "targetId": "net-yield"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Gross Tonnage (GT)",
+          "explanation": "Gross Tonnage is the raw IMO-standardized measure of a ship's total enclosed volume; PSR is a derived comfort metric that divides GT by berth capacity to express per-passenger spaciousness. GT alone does not indicate how crowded a ship feels.",
+          "explanation_ko": "GT는 선박의 전체 밀폐 용적을 IMO 표준에 따라 측정한 원시 지표이고, PSR은 GT를 정원으로 나누어 승객 1인당 공간감을 표현한 파생 편의 지표다. GT만으로는 선내 혼잡도를 알 수 없다.",
+          "targetId": "gross-tonnage"
+        },
+        {
+          "targetTerm": "Available Passenger Cruise Days (APCD)",
+          "explanation": "APCD is a revenue and utilization metric (total lower berths × sailing days) measuring how much capacity a line has to sell; PSR is a static quality proxy for individual ship spaciousness and is not a revenue or yield concept.",
+          "explanation_ko": "APCD는 선사의 총 판매 가능 용량(하부 침대 수 × 운항 일수)을 측정하는 수익·가동률 지표이고, PSR은 개별 선박의 공간 쾌적성을 나타내는 정적인 품질 대리 지표로 수익·수율 개념이 아니다.",
+          "targetId": "available-passenger-cruise-days-apcd"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Berlitz Complete Guide to Cruising and Cruise Ships",
+          "org": "Berlitz",
+          "version": "2024 Edition",
+          "section": "Ship Ratings — Space Ratio",
+          "url": "https://www.berlitzpublishing.com/books/cruising/",
+          "tier": "secondary"
+        },
+        {
+          "name": "CLIA Cruise Industry Sources",
+          "org": "CLIA (Cruise Lines International Association)",
+          "version": "",
+          "section": "",
+          "url": "https://cruising.org/the-business-of-cruising/research",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 34h36\"/><path d=\"M8 34l4-14h24l4 14\"/><line x1=\"16\" y1=\"20\" x2=\"16\" y2=\"14\"/><line x1=\"24\" y1=\"20\" x2=\"24\" y2=\"11\"/><line x1=\"32\" y1=\"20\" x2=\"32\" y2=\"14\"/><circle cx=\"24\" cy=\"8\" r=\"3.5\"/><path d=\"M18 28h12\"/><path d=\"M21 32h6\"/></svg>",
+      "term": "Passenger Space Ratio",
+      "definition": "The Passenger Space Ratio (PSR) is a cruise-industry metric calculated by dividing a ship's gross tonnage by its double-occupancy lower-berth capacity (GT ÷ berths), expressing how much enclosed ship volume is theoretically available per passenger. Higher values indicate a more spacious, less densely populated vessel.",
+      "lastReviewed": "2026-06-30"
+    },
+    {
       "id": "passenger-type-code",
       "vertical": "common",
       "category": "customer",
@@ -38570,6 +38870,84 @@
       "lastReviewed": "2026-06-25"
     },
     {
+      "id": "supplier-default-coverage",
+      "vertical": "common",
+      "category": "insurance",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "공급업체 도산 보상(Supplier Default Coverage)",
+      "definition_ko": "공급업체 도산 보상(Supplier Default Coverage)은 항공사·크루즈선사·여행사·숙박 공급업체 등 여행 공급업체가 서비스 제공 전에 운영을 중단하거나, 파산을 신청하거나, 지급 불능 상태가 되는 경우 여행자의 선납 환불 불가 여행 경비를 보상하는 여행보험 혜택이다. 여행자는 여행 의사와 능력이 있지만 공급업체가 예약을 이행하지 못하는 상황을 보장한다.",
+      "longDef": "Supplier Default Coverage (also called Financial Default Coverage or Financial Failure Coverage) responds when a travel company files for bankruptcy or liquidation, ceases operations, or enters administration/receivership prior to departure, leaving the policyholder holding non-refundable bookings with no service to be delivered. Key conditions that most policies require: (1) the supplier was financially solvent at the time of policy purchase (a \"no prior knowledge\" clause excludes predictable defaults); (2) the default occurs after the policy effective date and typically more than 7 days after purchase; (3) the supplier is not an individual person or a government entity. This coverage is a named benefit in comprehensive travel insurance policies and may also be offered as a stand-alone rider. In the United Kingdom, the ATOL (Air Travel Organiser's Licence) scheme operated by the UK Civil Aviation Authority provides equivalent statutory protection for ATOL-protected packages; ABTA bonding provides similar protection for non-flight packages. In the United States, Supplier Default is regulated at the state level and is often explicitly excluded from basic travel insurance plans, requiring travelers to verify inclusion.",
+      "longDef_ko": "공급업체 도산 보상(금융 채무 불이행 보상 또는 금융 파산 보상이라고도 함)은 여행사가 출발 전에 파산 신청·청산·운영 중단·관리·파산 절차에 들어가 계약자가 서비스 없이 환불 불가 예약을 떠안게 되는 경우 적용된다. 대부분의 약관이 요구하는 주요 조건: (1) 보험 가입 시점에 공급업체가 재정적으로 건전했을 것(예측 가능한 도산을 배제하는 \"사전 인지 없음\" 조항); (2) 보험 유효일 이후, 일반적으로 가입 후 7일 이상 지난 시점에 도산이 발생할 것; (3) 공급업체가 개인이나 정부 기관이 아닐 것. 이 보장은 포괄적 여행보험 약관의 명시 혜택으로 제공되거나 별도 특약으로 제공되기도 한다. 영국에서는 영국 민간항공국(CAA)이 운영하는 ATOL(Air Travel Organiser's Licence) 제도가 ATOL 보호 패키지에 동등한 법적 보호를 제공하며, ABTA 보증은 비항공 패키지에 유사한 보호를 제공한다. 미국에서는 주 단위로 규제되며, 기본 여행보험 약관에서 종종 명시적으로 제외되므로 여행자는 포함 여부를 반드시 확인해야 한다.",
+      "aliases": [
+        "Financial Default Coverage",
+        "Financial Failure Coverage",
+        "Travel Supplier Insolvency Coverage",
+        "Supplier Financial Default"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Trip Cancellation",
+          "targetId": "trip-cancellation"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Comprehensive Travel Insurance",
+          "targetId": "comprehensive-travel-insurance"
+        },
+        {
+          "type": "contrasts",
+          "targetTerm": "Cancellation Fee Waiver",
+          "targetId": "cancellation-fee-waiver"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Trip Cancellation",
+          "explanation": "Trip Cancellation covers a traveler who cannot or chooses not to travel due to a covered reason (illness, death, etc.) — the supplier is still operational; Supplier Default Coverage responds to the opposite scenario: the traveler is ready and willing to travel but the supplier has failed and cannot deliver the service.",
+          "explanation_ko": "여행 취소 보험은 피보험 사유(질병, 사망 등)로 여행하지 못하거나 여행을 포기하는 여행자를 보상하며, 공급업체는 여전히 운영 중인 상황이다. 공급업체 도산 보상은 반대 상황, 즉 여행자는 여행 의사와 능력이 있지만 공급업체가 파산하여 서비스를 제공하지 못하는 경우에 적용된다.",
+          "targetId": "trip-cancellation"
+        },
+        {
+          "targetTerm": "Cancellation Fee Waiver",
+          "explanation": "A Cancellation Fee Waiver is the supplier itself waiving the penalty it would normally charge when the traveler cancels a booking — the supplier remains solvent and operational. Supplier Default Coverage is a third-party insurance payout when the supplier becomes insolvent. These are complementary but non-overlapping scenarios.",
+          "explanation_ko": "취소 수수료 면제는 여행자가 예약을 취소할 때 공급업체 자체가 통상적으로 부과하는 위약금을 면제하는 것으로, 공급업체는 지급 능력이 있고 운영 중이다. 공급업체 도산 보상은 공급업체가 지급 불능 상태가 될 때 지급되는 제3자 보험금이다. 두 보장은 상호 보완적이지만 겹치지 않는 상황이다.",
+          "targetId": "cancellation-fee-waiver"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Financial Default Coverage Explained",
+          "org": "Squaremouth (US travel insurance comparison)",
+          "version": "",
+          "section": "",
+          "url": "https://www.squaremouth.com/travel-insurance-benefits/financial-default",
+          "tier": "secondary"
+        },
+        {
+          "name": "ATOL Explained",
+          "org": "UK Civil Aviation Authority",
+          "version": "",
+          "section": "",
+          "url": "https://www.caa.co.uk/atol-protection/",
+          "tier": "regulator-guidance"
+        },
+        {
+          "name": "USTIA Travel Insurance Coverage Descriptions",
+          "org": "USTIA (US Travel Insurance Association)",
+          "version": "",
+          "section": "",
+          "url": "https://www.ustia.org/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 6L38 12v10c0 10-7 17-14 20C17 39 10 32 10 22V12Z\"/><line x1=\"24\" y1=\"18\" x2=\"24\" y2=\"26\"/><circle cx=\"24\" cy=\"30\" r=\"1.5\" fill=\"currentColor\" stroke=\"none\"/></svg>",
+      "term": "Supplier Default Coverage",
+      "definition": "Supplier Default Coverage is a travel insurance benefit that reimburses the traveler's prepaid, non-refundable trip costs when a travel supplier — such as an airline, cruise line, tour operator, or accommodation provider — ceases operations, enters bankruptcy, or becomes insolvent before the service is delivered. It covers scenarios where the traveler is willing and able to travel but the supplier cannot fulfill the booking.",
+      "lastReviewed": "2026-06-30"
+    },
+    {
       "id": "surcharge",
       "vertical": "air",
       "category": "air-shop",
@@ -42578,6 +42956,69 @@
       "term": "Waitlist",
       "definition": "A Waitlist is a holding list for a flight and booking class that has no immediate confirmed Availability, on which a passenger's request is queued pending seats opening up. The segment is held in a waitlist status (e.g., HL) and is cleared to confirmed (HK) automatically or manually if and when space becomes available.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "wave-season",
+      "vertical": "cruise",
+      "category": "cruise",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "웨이브 시즌(Wave Season)",
+      "definition_ko": "웨이브 시즌은 크루즈 업계의 연간 최대 예약 성수기로, 전통적으로 1월부터 3월까지 이어진다. 이 기간에 선사들은 연초 소비자 수요를 선점하기 위해 가장 경쟁력 있는 요금, 보너스 어메니티 패키지, 프로모션 혜택을 출시한다. 집중적인 세일 시즌에 해당하며, 연간 크루즈 예약량 중 불균형적으로 큰 비중을 차지한다.",
+      "longDef": "The term \"wave\" refers to the surge of bookings that begins after the new year, driven by post-holiday consumer intent, New Year travel resolutions, and coordinated marketing campaigns by cruise lines and travel agencies. CLIA (Cruise Lines International Association) has consistently reported that January–March generates a disproportionate share of annual booking volume — estimates range from 20 to 30% of the year's total cruise bookings in a three-month window. During Wave Season, promotional packages typically bundle free gratuities, onboard credits, complimentary beverage packages, reduced deposits, and stateroom upgrades. Travel advisors align marketing events, client outreach, and agency promotions around the Wave calendar. Cruise lines often release new itineraries and early-booking deals at the start of Wave Season to maximize lead time. While the rise of dynamic pricing and year-round promotions has softened the distinction, Wave Season remains the primary booking trigger for mainstream cruise consumers and is a critical planning period for travel trade partners.",
+      "longDef_ko": "\"웨이브\"는 연말연시 이후 새해 여행 결심, 여행사 마케팅 공세, 선사의 일제 캠페인에 힘입어 연초에 급증하는 예약의 물결을 의미한다. CLIA(Cruise Lines International Association)는 1~3월이 연간 예약량의 20~30%를 3개월 안에 발생시키는 불균형적으로 큰 비중을 차지한다고 일관되게 보고해왔다. 웨이브 시즌 동안 프로모션 패키지는 보통 무료 봉사료, 선내 크레딧, 무료 음료 패키지, 낮은 보증금, 선실 업그레이드를 묶어서 제공한다. 여행 어드바이저들은 웨이브 시즌에 맞춰 마케팅 행사, 고객 접촉, 여행사 프로모션을 조율한다. 선사들은 리드 타임을 최대화하기 위해 웨이브 시즌 초에 새 항로와 조기 예약 특가를 출시하는 경우가 많다. 다이나믹 프라이싱 확산과 연중 프로모션으로 그 경계가 다소 희미해졌지만, 웨이브 시즌은 주류 크루즈 소비자에게 여전히 가장 중요한 예약 트리거이자 여행업계 파트너에게 핵심 기획 기간으로 남아 있다.",
+      "aliases": [
+        "Wave Period",
+        "Wave Season Offers",
+        "January Wave"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Revenue Management",
+          "targetId": "revenue-management"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Future Cruise Credit (FCC)",
+          "targetId": "future-cruise-credit-fcc"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Dynamic Pricing",
+          "targetId": "dynamic-pricing"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Dynamic Pricing",
+          "explanation": "Dynamic Pricing is the revenue management practice of adjusting fares continuously in response to real-time supply and demand signals; Wave Season is a calendar-driven marketing phenomenon — a specific booking window — during which cruise lines strategically release promotional packages regardless of real-time demand signals.",
+          "explanation_ko": "다이나믹 프라이싱은 실시간 공급·수요 신호에 따라 요금을 지속적으로 조정하는 수익 관리 방식이고, 웨이브 시즌은 선사들이 실시간 수요 신호와 무관하게 전략적으로 프로모션 패키지를 출시하는 달력 기반의 마케팅 현상(특정 예약 기간)이다.",
+          "targetId": "dynamic-pricing"
+        }
+      ],
+      "sources": [
+        {
+          "name": "CLIA State of the Cruise Industry Report",
+          "org": "CLIA (Cruise Lines International Association)",
+          "version": "",
+          "section": "",
+          "url": "https://cruising.org/the-business-of-cruising/research",
+          "tier": "association"
+        },
+        {
+          "name": "Wave Season Explained",
+          "org": "Travel Weekly",
+          "version": "",
+          "section": "",
+          "url": "https://www.travelweekly.com",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 28c4-7 8 7 12 0s8-7 12 0 8 7 12 0\"/><path d=\"M4 36c4-7 8 7 12 0s8-7 12 0 8 7 12 0\"/><path d=\"M10 16l4-5 4 5 4-5 4 5\"/><line x1=\"24\" y1=\"11\" x2=\"24\" y2=\"22\"/></svg>",
+      "term": "Wave Season",
+      "definition": "Wave Season is the cruise industry's peak annual booking period, traditionally running from January through March, during which cruise lines release their most competitive fares, bonus amenity packages, and promotional offers to capture early-year consumer demand. It is the equivalent of a concentrated sale season and typically generates a disproportionately large share of annual cruise bookings.",
+      "lastReviewed": "2026-06-30"
     },
     {
       "id": "weather-policy",
