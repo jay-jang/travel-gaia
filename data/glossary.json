@@ -2,8 +2,8 @@
   "meta": {
     "name": "Travel Wiki",
     "tagline": "여행 산업 용어 백과사전",
-    "generatedAt": "2026-06-30",
-    "entryCount": 481,
+    "generatedAt": "2026-07-01",
+    "entryCount": 487,
     "categoryCount": 20,
     "verticalCount": 6
   },
@@ -11886,6 +11886,82 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "drydock",
+      "vertical": "cruise",
+      "category": "cruise",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "드라이도크(Drydock)",
+      "definition_ko": "크루즈 선박이 선체 검사, 유지보수, 수리 또는 리퍼비시(refurbishment)를 위해 여객 서비스에서 철수하여 건선거(dry dock) 시설에 입거하는 예정 또는 비예정 기간. SOLAS(해상인명안전협약)는 국제 여객선에 대해 법정 검사 주기의 일환으로 정기적인 드라이도크를 의무화한다.",
+      "longDef": "Drydock periods fall into two types: scheduled (planned) drydocks conducted in accordance with the SOLAS Chapter I survey cycle (typically every 2.5 to 5 years for the special survey, with intermediate docking surveys in between) and unscheduled drydocks triggered by damage or urgent repair. During a drydock the ship is floated into a large basin that is then pumped dry, exposing the underwater hull for inspection of the keel, propellers, rudder, sea chests, and anti-fouling paint. Passenger-facing refurbishments — new cabin furniture, restaurant redesigns, technology upgrades — are frequently bundled into the planned drydock to minimise revenue-losing downtime. Cruise lines schedule drydocks during low-demand periods or coincide them with Repositioning Cruises to reduce the commercial impact. A drydock typically lasts 2–6 weeks and represents a complete loss of revenue days for the ship.",
+      "longDef_ko": "드라이도크는 두 가지 유형으로 나뉜다. SOLAS 챕터 I 검사 주기(특별 검사는 통상 2.5~5년마다, 그 사이에 중간 입거 검사 포함)에 따라 실시하는 계획(정기) 드라이도크와, 손상 또는 긴급 수리로 인해 촉발되는 비계획(비정기) 드라이도크이다. 드라이도크 중에는 선박을 대형 선거(basin)에 입거시킨 후 배수하여 수선 아래 선체(용골·프로펠러·타·해수 흡입구·방오 도료 등)를 노출시켜 검사한다. 객실 가구 교체, 레스토랑 재설계, 기술 업그레이드 등 여객 대상 리퍼비시는 수익 손실 다운타임을 최소화하기 위해 정기 드라이도크에 집중하는 경우가 많다. 선사는 수요가 낮은 시기나 Repositioning Cruise와 일치하도록 드라이도크를 일정에 넣어 상업적 영향을 줄인다. 드라이도크는 보통 2~6주 지속되며, 해당 기간 동안 선박의 수익 일수는 전부 손실된다.",
+      "standardBody": "IMO",
+      "aliases": [
+        "Dry Dock",
+        "Dry-Dock",
+        "Refit",
+        "Planned Maintenance Period"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Repositioning Cruise",
+          "targetId": "repositioning-cruise"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Turnaround Day",
+          "targetId": "turnaround-day"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Wave Season",
+          "targetId": "wave-season"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Gross Tonnage (GT)",
+          "targetId": "gross-tonnage"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Repositioning Cruise",
+          "explanation": "A repositioning cruise is a commercial revenue voyage that moves the ship between deployment regions; a drydock is a non-revenue maintenance period during which the ship is withdrawn from service. Cruise lines often schedule a drydock at the end of a repositioning voyage to minimise lost revenue days.",
+          "explanation_ko": "Repositioning Cruise는 선박을 배치 지역 간 이동시키는 상업적 수익 항해이고, 드라이도크는 선박이 서비스에서 철수하는 비수익 유지보수 기간이다. 선사는 수익 손실 일수를 최소화하기 위해 드라이도크를 회항 항해 말미에 맞춰 일정을 잡는 경우가 많다.",
+          "targetId": "repositioning-cruise"
+        },
+        {
+          "targetTerm": "Turnaround Day",
+          "explanation": "A turnaround day is the port day between two back-to-back voyages while the ship remains in passenger service; a drydock takes the ship completely out of passenger service for technical inspection and maintenance.",
+          "explanation_ko": "Turnaround Day는 선박이 여객 서비스를 유지한 채 연속된 두 항해 사이에 항구에서 보내는 날이고, 드라이도크는 기술 검사 및 유지보수를 위해 선박을 여객 서비스에서 완전히 제외시키는 기간이다.",
+          "targetId": "turnaround-day"
+        }
+      ],
+      "sources": [
+        {
+          "name": "International Convention for the Safety of Life at Sea (SOLAS), 1974 — Chapter I, Regulation 10 (Surveys of ships)",
+          "org": "IMO (International Maritime Organization)",
+          "version": "as amended",
+          "section": "Chapter I, Part B, Regulation 10",
+          "url": "https://www.imo.org/en/About/Conventions/Pages/International-Convention-for-the-Safety-of-Life-at-Sea-(SOLAS),-1974.aspx",
+          "tier": "regulation"
+        },
+        {
+          "name": "Cruise Industry Overview — Fleet Maintenance Practices",
+          "org": "CLIA (Cruise Lines International Association)",
+          "version": "",
+          "section": "",
+          "url": "https://cruising.org/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"4\" y=\"30\" width=\"40\" height=\"10\" rx=\"1\"/><path d=\"M10 30 Q14 22 24 20 Q34 22 38 30\"/><line x1=\"4\" y1=\"35\" x2=\"44\" y2=\"35\"/><line x1=\"8\" y1=\"26\" x2=\"8\" y2=\"30\"/><line x1=\"40\" y1=\"26\" x2=\"40\" y2=\"30\"/><circle cx=\"24\" cy=\"14\" r=\"4\"/><line x1=\"24\" y1=\"18\" x2=\"24\" y2=\"20\"/></svg>",
+      "term": "Drydock",
+      "definition": "A scheduled or unscheduled period during which a cruise ship is withdrawn from passenger service and placed in a dry dock facility for hull inspection, maintenance, repair, or refurbishment. SOLAS (Safety of Life at Sea) mandates periodic drydockings as part of statutory survey cycles for international passenger vessels.",
+      "lastReviewed": "2026-07-01"
+    },
+    {
       "id": "dynamic-currency-conversion-dcc",
       "vertical": "common",
       "category": "pay",
@@ -17778,6 +17854,119 @@
       "term": "HEDNA",
       "definition": "HEDNA (Hotel Electronic Distribution Network Association) is a not-for-profit trade association, founded in 1991, dedicated to advancing hotel electronic distribution through education, networking, and the development of distribution best practices and standards. Its members span hotels, representation/management companies, GDSs, switches, OTAs, payment and software providers, making it a primary authoritative body in the field.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "high-speed-rail",
+      "vertical": "ground",
+      "category": "rail",
+      "conceptType": "business-term",
+      "status": "active",
+      "abbreviation": "HSR",
+      "term_ko": "고속철도(HSR)",
+      "definition_ko": "유럽연합 지침 96/48/EC 및 UIC 기술 규격에 따라, 고속 전용 신선(新線)에서 250 km/h 이상의 지속 속도로 운행하거나 개량된 기존 노선에서 200 km/h 이상의 속도로 운행하는 철도 여객 서비스. 유럽·일본·중국의 고속철도망은 도시 간 여행 시장을 재편하고, 약 500~700 km 이내 구간에서는 단거리 항공편과 직접 경쟁한다.",
+      "longDef": "EU Directive 96/48/EC on the interoperability of the trans-European high-speed rail system defined the operational thresholds (≥250 km/h for new infrastructure, ≥200 km/h for upgraded lines) that became the global reference for classifying HSR services. UIC Leaflet 776-1 and the subsequent Technical Specifications for Interoperability (TSIs) codify the rolling-stock, infrastructure, energy, control-command, and operations requirements for cross-border high-speed services in Europe. From a distribution standpoint, HSR is transforming rail ticketing: major operators — SNCF (TGV/Ouigo), Deutsche Bahn (ICE), Renfe (AVE), FS Trenitalia (Frecciarossa), Network Rail/Eurostar — distribute through OSDM-aligned APIs and GDS connections (Amadeus Rail, Sabre Rail), with seat reservation compulsory on most HSR services. In markets such as France-Spain and Japan, HSR accounts for the majority of intercity trips under 600 km, with modal shift from air documented by regulators and IATA.",
+      "longDef_ko": "범유럽 고속철도 상호운용성에 관한 EU 지침 96/48/EC는 신선 ≥250 km/h, 개량선 ≥200 km/h 등 작동 기준을 정의하여 전 세계적인 HSR 분류 기준이 되었다. UIC 전단 776-1 및 후속 상호운용성 기술 사양(TSI)은 유럽 국경 간 고속 서비스에 대한 차량, 인프라, 에너지, 신호 제어, 운영 요건을 규정한다. 유통 측면에서 HSR은 철도 발권을 혁신하고 있다. SNCF(TGV/Ouigo), Deutsche Bahn(ICE), Renfe(AVE), FS Trenitalia(Frecciarossa), Eurostar 등 주요 운영사는 OSDM 정렬 API와 GDS 연결(Amadeus Rail, Sabre Rail)을 통해 유통하며, 대부분의 HSR 서비스에서 좌석 예약이 의무적이다. 프랑스-스페인, 일본 등 시장에서 HSR은 600 km 미만 도시 간 여행의 대부분을 차지하며, 규제 당국과 IATA가 항공에서 철도로의 수단 전환(modal shift)을 문서화하고 있다.",
+      "standardBody": "UIC",
+      "aliases": [
+        "HSR",
+        "High Speed Rail",
+        "High-Speed Service",
+        "Haute Vitesse"
+      ],
+      "providerTerms": [
+        {
+          "provider": "SNCF (France)",
+          "term": "TGV / Ouigo",
+          "context": "SNCF operates TGV (Train à Grande Vitesse) as its full-service HSR product and Ouigo as its low-cost HSR brand, both running on the French LGV (Ligne à Grande Vitesse) network at up to 320 km/h.",
+          "context_ko": "SNCF는 TGV(Train à Grande Vitesse)를 풀서비스 HSR로, Ouigo를 저가 HSR 브랜드로 운영하며, 두 서비스 모두 프랑스 LGV(고속전용선) 네트워크에서 최대 320 km/h로 운행한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Deutsche Bahn (Germany)",
+          "term": "ICE (Intercity-Express)",
+          "context": "DB's ICE (Intercity-Express) fleet operates at up to 300 km/h on the German Schnellfahrstrecke network and into neighbouring countries, distributed through DB's own channels and OSDM-compatible APIs.",
+          "context_ko": "DB의 ICE(Intercity-Express)는 독일 고속전용선(Schnellfahrstrecke) 네트워크와 인근 국가에서 최대 300 km/h로 운행하며, DB 자체 채널과 OSDM 호환 API를 통해 유통된다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "JR (Japan)",
+          "term": "Shinkansen (新幹線)",
+          "context": "Japan's Shinkansen (\"bullet train\") network operates at up to 320 km/h (Nozomi/Hayabusa) and is the world's original HSR system, launched in 1964. It distributes internationally through Rail Pass schemes (Japan Rail Pass) and GDS connections.",
+          "context_ko": "일본의 신칸센(新幹線, \"탄환열차\") 네트워크는 최대 320 km/h(노조미/하야부사)로 운행하며, 1964년 개통된 세계 최초의 HSR 시스템이다. 국제적으로는 Rail Pass 스킴(Japan Rail Pass)과 GDS 연결을 통해 유통된다.",
+          "relationship": "same"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "OSDM",
+          "targetId": "osdm"
+        },
+        {
+          "type": "related",
+          "targetTerm": "TAP TSI",
+          "targetId": "tap-tsi"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Multimodal Transport",
+          "targetId": "multimodal-transport"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Seat Reservation",
+          "targetId": "seat-reservation"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Interrail Pass",
+          "targetId": "interrail-pass"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Multimodal Transport",
+          "explanation": "Multimodal transport refers to journey chains combining two or more modes (e.g., air + rail, bus + rail); high-speed rail is a specific category of rail service that may be one mode within a multimodal journey, but the two terms operate at different levels of abstraction.",
+          "explanation_ko": "Multimodal Transport는 두 가지 이상 교통수단(예: 항공+철도, 버스+철도)을 결합한 여정 체인을 가리키고, 고속철도는 복합운송 여정 내에서 하나의 수단이 될 수 있는 특정 철도 서비스 범주이다. 두 개념은 추상화 수준이 다르다.",
+          "targetId": "multimodal-transport"
+        },
+        {
+          "targetTerm": "OSDM",
+          "explanation": "OSDM (Open Sales and Distribution Model) is the UIC-backed API standard for rail offer, booking, and fulfillment across all rail types; high-speed rail is a service category of rail that is distributed using OSDM alongside conventional and regional services.",
+          "explanation_ko": "OSDM은 모든 철도 유형에 걸쳐 오퍼·예약·발권을 처리하는 UIC 후원의 API 표준이고, 고속철도는 일반·지역 서비스와 함께 OSDM을 통해 유통되는 철도 서비스 범주이다.",
+          "targetId": "osdm"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Council Directive 96/48/EC on the interoperability of the trans-European high-speed rail system",
+          "org": "European Union",
+          "version": "1996",
+          "section": "Annex I — Definition of the trans-European high-speed rail system",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:31996L0048",
+          "tier": "regulation"
+        },
+        {
+          "name": "UIC Leaflet 776-1 — Loads to consider in railway bridge design",
+          "org": "UIC (International Union of Railways)",
+          "version": "",
+          "section": "",
+          "url": "https://uic.org/",
+          "tier": "association"
+        },
+        {
+          "name": "High-Speed Rail — Global Market Overview",
+          "org": "IATA (International Air Transport Association)",
+          "version": "",
+          "section": "",
+          "url": "https://www.iata.org/en/iata-repository/publications/economic-reports/high-speed-rail/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"4\" y=\"18\" width=\"34\" height=\"16\" rx=\"4\"/><path d=\"M34 18 Q44 26 44 26\"/><circle cx=\"12\" cy=\"36\" r=\"3\"/><circle cx=\"28\" cy=\"36\" r=\"3\"/><line x1=\"4\" y1=\"26\" x2=\"38\" y2=\"26\"/><path d=\"M8 18l4-5h16l4 5\"/><line x1=\"12\" y1=\"39\" x2=\"12\" y2=\"43\"/><line x1=\"28\" y1=\"39\" x2=\"28\" y2=\"43\"/><line x1=\"8\" y1=\"43\" x2=\"36\" y2=\"43\"/></svg>",
+      "term": "High-Speed Rail",
+      "definition": "Rail passenger services operating at sustained speeds of 250 km/h or above on purpose-built dedicated infrastructure, or at 200 km/h or above on upgraded conventional lines, as defined by EU Directive 96/48/EC and UIC technical specifications. High-speed rail networks in Europe, Japan, and China have reshaped intercity travel markets and compete directly with short-haul aviation on city-pair routes of up to approximately 500–700 km.",
+      "lastReviewed": "2026-07-01"
     },
     {
       "id": "hop-on-hop-off",
@@ -30179,6 +30368,119 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "prepaid-ticket-advice-pta",
+      "vertical": "air",
+      "category": "air-ticket",
+      "conceptType": "document",
+      "status": "active",
+      "abbreviation": "PTA",
+      "term_ko": "선불 항공권 통지서(PTA)",
+      "definition_ko": "PTA(Prepaid Ticket Advice, 선불 항공권 통지서)는 한 장소(발행 도시)의 항공사 또는 여행사가 다른 장소(수령 도시)의 운송인 발권소 또는 판매 에이전트에게 특정 승객의 항공권 및/또는 EMD를 발행하도록 지시하는 IATA 관할의 정산 가능 여행 서류(또는 전자적 동등물)로, 발행 측에서 이미 비용을 전액 수취한 상태이다. 지불인이 여행자와 물리적 또는 상업적으로 분리되어 있을 때 사용한다.",
+      "longDef": "A PTA is initiated when a person or company (typically a corporate travel manager, an immigrant worker sending a ticket to a family member abroad, or an airline employee) wishes to purchase a ticket that will be picked up and used by a traveller in a different country or city. The PTA message — transmitted via the airline's internal system or the GDS — authorises the carrier's ticket office in the collecting city to issue the ticket against the pre-collected funds. Under IATA Resolution 722 (and related passenger conference resolutions), the issuing agent records the PTA as an accountable document in BSP. The traveller presents identification at the collecting office and receives the ticket or electronic record. With the near-universal adoption of e-tickets, physical PTA documents have largely disappeared; the workflow now occurs electronically — the PNR is built, the fare is quoted, payment collected at origin, and the ticket issued electronically for collection or delivery at destination. The PTA concept remains relevant for controlled-ticketing flows in corporate travel, airline staff travel, and charitable travel programs where payment and travel are intentionally separated.",
+      "longDef_ko": "PTA는 다른 국가나 도시의 여행자를 위해 항공권을 구매하려는 사람 또는 기업(보통 법인 여행 관리자, 해외 가족에게 항공권을 보내는 이민 노동자, 또는 항공사 직원)이 이를 이용한다. PTA 메시지는 항공사 내부 시스템 또는 GDS를 통해 전송되어, 수령 도시의 발권소가 미리 수취된 자금을 근거로 항공권을 발행하도록 승인한다. IATA Resolution 722(및 관련 여객 컨퍼런스 결의)에 따라 발행 에이전트는 PTA를 BSP의 정산 가능 서류로 기록한다. 여행자는 수령 사무소에서 신분증을 제시하고 항공권 또는 전자 기록을 받는다. e-ticket이 사실상 보편화됨에 따라 물리적 PTA 서류는 대부분 사라졌으며, 현재 워크플로는 전자적으로 이루어진다. 즉, 출발지에서 PNR을 생성하고 요금을 산출하며 결제를 수취한 뒤, 목적지에서 수령 또는 전달을 위해 전자적으로 항공권을 발행한다. PTA 개념은 법인 여행, 항공사 직원 여행, 자선 여행 프로그램 등 결제와 여행이 의도적으로 분리되는 통제된 발권 흐름에서 여전히 유효하다.",
+      "standardBody": "IATA",
+      "aliases": [
+        "Prepaid Ticket Advice",
+        "PTA",
+        "Prepaid Ticket"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Amadeus",
+          "term": "PTA (Prepaid Ticket Advice)",
+          "context": "In Amadeus, a PTA is handled as a special ticketing element within the PNR; the GDS records the issuing city, collecting city, and confirmation number and flags the booking for ticket collection at the remote office.",
+          "context_ko": "Amadeus에서 PTA는 PNR 내의 특수 발권 요소로 처리되며, GDS는 발행 도시, 수령 도시, 확인 번호를 기록하고 원격 발권소에서 항공권 수령을 위해 예약에 플래그를 표시한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Sabre",
+          "term": "PTA / Prepaid Ticket",
+          "context": "Sabre documents and processes PTAs through its ticketing workflow, linking the payment collected at origin to an authorisation for ticket issuance at the destination or remote city office.",
+          "context_ko": "Sabre는 발권 워크플로를 통해 PTA를 문서화·처리하며, 출발지에서 수취된 결제를 목적지 또는 원격 도시 발권소에서의 항공권 발행 승인과 연결한다.",
+          "relationship": "same"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "E-ticket",
+          "targetId": "e-ticket"
+        },
+        {
+          "type": "related",
+          "targetTerm": "PNR",
+          "targetId": "pnr"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Record Locator",
+          "targetId": "record-locator"
+        },
+        {
+          "type": "related",
+          "targetTerm": "BSP",
+          "targetId": "bsp"
+        },
+        {
+          "type": "related",
+          "targetTerm": "EMD",
+          "targetId": "emd"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Validating Carrier",
+          "targetId": "validating-carrier"
+        },
+        {
+          "type": "contrasts",
+          "targetTerm": "MCO (Miscellaneous Charges Order)",
+          "targetId": "mco-miscellaneous-charges-order"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "MCO (Miscellaneous Charges Order)",
+          "explanation": "An MCO (now largely replaced by EMD-S) records miscellaneous charges not tied to a specific flight coupon — residual values, deposits, fees; a PTA is specifically an instruction to issue a ticket for carriage, funded from a pre-collected payment at a different location. A PTA instructs ticket issuance; an MCO records a non-ticket charge.",
+          "explanation_ko": "MCO(현재는 EMD-S로 대부분 대체됨)는 특정 항공편 쿠폰과 연결되지 않은 기타 요금(잔여 가치, 보증금, 수수료 등)을 기록하는 반면, PTA는 다른 장소에서 미리 수취된 결제로 자금을 조달하여 운송 항공권을 발행하도록 지시하는 특수 목적 서류이다. PTA는 발권 지시이고, MCO는 비항공권 요금을 기록한다.",
+          "targetId": "mco-miscellaneous-charges-order"
+        },
+        {
+          "targetTerm": "EMD",
+          "explanation": "An EMD (Electronic Miscellaneous Document) records non-flight value such as ancillary services, fees, or residual amounts; a PTA authorises the issuance of a ticket (e-ticket or flight coupon) for actual air carriage. The PTA workflow often results in an e-ticket, not an EMD.",
+          "explanation_ko": "EMD(전자 기타 서류)는 부가 서비스, 수수료, 잔여 금액 등 비항공 가치를 기록하고, PTA는 실제 항공 운송을 위한 항공권(e-ticket 또는 비행 쿠폰) 발행을 승인한다. PTA 워크플로는 EMD가 아니라 e-ticket을 결과로 낳는 경우가 많다.",
+          "targetId": "emd"
+        },
+        {
+          "targetTerm": "E-ticket",
+          "explanation": "The e-ticket is the electronic document of carriage (the ticket itself); a PTA is the upstream authorisation mechanism that enables an e-ticket to be issued at a location remote from where the payment was collected. A PTA is not a ticket — it is the instruction that causes a ticket to be issued.",
+          "explanation_ko": "e-ticket은 운송 전자 서류(항공권 자체)이고, PTA는 결제가 수취된 곳과 다른 장소에서 e-ticket이 발행될 수 있도록 하는 선행 승인 메커니즘이다. PTA는 항공권이 아니라 항공권 발행을 일으키는 지시다.",
+          "targetId": "e-ticket"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Passenger Services Conference Resolutions Manual (PSCRM) — Resolution 722 et seq.",
+          "org": "IATA (International Air Transport Association)",
+          "version": "46th Edition (2026)",
+          "section": "Resolution 722",
+          "url": "https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/",
+          "tier": "association"
+        },
+        {
+          "name": "Passenger Agency Conference Resolutions Manual (PACRM) — PTA Provisions",
+          "org": "IATA",
+          "version": "",
+          "section": "",
+          "url": "https://www.iata.org/en/publications/manuals/passenger-agency-conference-resolutions-manual/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"4\" y=\"14\" width=\"16\" height=\"20\" rx=\"2\"/><rect x=\"28\" y=\"14\" width=\"16\" height=\"20\" rx=\"2\"/><line x1=\"8\" y1=\"21\" x2=\"16\" y2=\"21\"/><line x1=\"8\" y1=\"27\" x2=\"14\" y2=\"27\"/><line x1=\"32\" y1=\"21\" x2=\"40\" y2=\"21\"/><line x1=\"32\" y1=\"27\" x2=\"38\" y2=\"27\"/><path d=\"M20 24 h8\" marker-end=\"url(#a)\"/><line x1=\"21\" y1=\"20\" x2=\"27\" y2=\"24\"/><line x1=\"21\" y1=\"28\" x2=\"27\" y2=\"24\"/></svg>",
+      "term": "Prepaid Ticket Advice (PTA)",
+      "definition": "An IATA-governed accountable traffic document (or electronic equivalent) by which an airline or travel agent in one location (the issuing city) instructs a carrier ticket office or sales agent in a different location (the collecting city) to issue a ticket and/or EMD for a named passenger, the cost of which has already been fully collected at the issuing end. PTAs are used when the payer is physically or commercially separated from the traveller.",
+      "lastReviewed": "2026-07-01"
+    },
+    {
       "id": "pricing-category",
       "vertical": "tours",
       "category": "tour-product",
@@ -34273,6 +34575,101 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "resort-fee",
+      "vertical": "lodging",
+      "category": "hotel-rate",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "리조트 피(Resort Fee)",
+      "definition_ko": "호텔이나 리조트가 고지된 객실 요금에 추가하여 부과하는 의무적 일별(daily) 요금으로, 명목상 Wi-Fi, 피트니스센터, 수영장, 해변 시설, 객실 커피 등 번들 어메니티를 포함하는 것으로 설명된다. 선택이 불가능하며 광고 요금과 별도로 고지되는 경우가 많아, 요금 투명성과 소비자 보호 규제에서 핵심 쟁점이 되고 있다.",
+      "longDef": "Resort fees (also marketed as \"destination fees,\" \"amenity fees,\" or \"facility fees\") typically range from USD 20 to USD 100+ per night and are added at checkout or quoted separately in the booking flow. Critics and regulators argue they constitute drip pricing: the headline room rate understates the true cost, and the fee is non-negotiable even for guests who do not use the covered amenities. The U.S. Federal Trade Commission (FTC) issued enforcement guidelines in 2022–2024 targeting mandatory hotel fees as unfair or deceptive acts under 15 U.S.C. § 45. California's SB 478 (Honest Pricing Law, effective July 2024) prohibits advertising a price that excludes mandatory fees for hotels selling to California consumers. From a revenue-management standpoint, resort fees inflate RevPAR if counted as room revenue (some properties include them in ADR; others treat them as ancillary), and create complications for rate-parity monitoring and OTA price display.",
+      "longDef_ko": "\"Destination Fee\", \"Amenity Fee\", \"Facility Fee\"로도 불리는 리조트 피는 일반적으로 1박당 USD 20~100+ 수준이며, 체크아웃 시 청구되거나 예약 흐름에서 별도로 안내된다. 비평가와 규제 당국은 이를 드립 프라이싱(drip pricing)으로 간주한다. 헤드라인 객실 요금이 실제 비용을 과소 표시하고, 해당 어메니티를 이용하지 않는 고객도 피를 면제받을 수 없기 때문이다. 미국 연방거래위원회(FTC)는 2022~2024년 의무적 호텔 요금을 15 U.S.C. § 45의 불공정·기만적 행위로 보는 집행 지침을 발표했다. 캘리포니아주 SB 478(Honest Pricing Law, 2024년 7월 시행)은 캘리포니아 소비자 대상 호텔이 의무적 요금을 제외한 가격을 광고하는 것을 금지한다. 수익 관리 관점에서 리조트 피는 객실 수익으로 계상할 경우 RevPAR을 부풀릴 수 있으며(일부 호텔은 ADR에 포함하고, 일부는 부가 수익으로 처리), OTA 가격 표시 및 요금 동등성(rate-parity) 모니터링을 복잡하게 만든다.",
+      "aliases": [
+        "Destination Fee",
+        "Amenity Fee",
+        "Facility Fee",
+        "Property Fee",
+        "Urban Fee"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "ADR",
+          "targetId": "adr"
+        },
+        {
+          "type": "related",
+          "targetTerm": "RevPAR",
+          "targetId": "revpar"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Rate Fence",
+          "targetId": "rate-fence"
+        },
+        {
+          "type": "contrasts",
+          "targetTerm": "Rack Rate",
+          "targetId": "rack-rate"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Rate Plan",
+          "targetId": "rate-plan"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Rack Rate",
+          "explanation": "Rack Rate is the published base room price; a Resort Fee is an additional mandatory charge levied on top of that rate. The total cost to the guest is Rack Rate + Resort Fee + taxes, yet the advertised \"from\" price is typically only the Rack Rate portion.",
+          "explanation_ko": "Rack Rate는 게시된 기본 객실 가격이고, Resort Fee는 그 위에 부과되는 추가 의무 요금이다. 고객이 실제로 지불하는 비용은 Rack Rate + Resort Fee + 세금이지만, 광고에 표시되는 \"from\" 가격은 보통 Rack Rate 부분만이다.",
+          "targetId": "rack-rate"
+        },
+        {
+          "targetTerm": "Rate Fence",
+          "explanation": "A rate fence is a condition that restricts access to a specific discounted rate (e.g., advance purchase, non-refundable); a resort fee is a mandatory surcharge that applies to all guests regardless of which rate plan or fence they are under.",
+          "explanation_ko": "Rate Fence는 특정 할인 요금에 대한 접근을 제한하는 조건(예: 사전 구매, 비환불)이고, Resort Fee는 어떤 요금제나 fence에 있든 모든 고객에게 적용되는 의무적 부가 요금이다.",
+          "targetId": "rate-fence"
+        },
+        {
+          "targetTerm": "ADR",
+          "explanation": "ADR (Average Daily Rate) measures the average realised room revenue per occupied room; whether resort fees are included in ADR varies by property and reporting convention, creating comparability issues in benchmarking.",
+          "explanation_ko": "ADR(Average Daily Rate)은 점유 객실당 평균 실현 객실 수익을 측정하며, 리조트 피 포함 여부는 호텔과 보고 관행에 따라 다르기 때문에 벤치마킹 시 비교 가능성 문제가 발생한다.",
+          "targetId": "adr"
+        }
+      ],
+      "sources": [
+        {
+          "name": "FTC Policy Statement on Fees — Enforcement of Consumer Protection Laws on Junk Fees",
+          "org": "FTC (Federal Trade Commission)",
+          "version": "October 2022",
+          "section": "",
+          "url": "https://www.ftc.gov/system/files/ftc_gov/pdf/p204500junkfeesstmt.pdf",
+          "tier": "regulator-guidance"
+        },
+        {
+          "name": "SB 478 — Honest Pricing Law (hotel provisions)",
+          "org": "California State Legislature",
+          "version": "Effective July 1, 2024",
+          "section": "Cal. Bus. & Prof. Code § 55.5 et seq.",
+          "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240SB478",
+          "tier": "regulation"
+        },
+        {
+          "name": "Understanding Hotel Resort Fees",
+          "org": "AHLA (American Hotel & Lodging Association)",
+          "version": "",
+          "section": "",
+          "url": "https://www.ahla.com/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"14\" width=\"36\" height=\"28\" rx=\"2\"/><path d=\"M14 14V10a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v4\"/><circle cx=\"24\" cy=\"30\" r=\"6\"/><line x1=\"24\" y1=\"25\" x2=\"24\" y2=\"27\"/><line x1=\"24\" y1=\"33\" x2=\"24\" y2=\"35\"/><line x1=\"21\" y1=\"28\" x2=\"27\" y2=\"32\"/><line x1=\"27\" y1=\"28\" x2=\"21\" y2=\"32\"/></svg>",
+      "term": "Resort Fee",
+      "definition": "A mandatory daily charge levied by a hotel or resort on top of the quoted room rate, purportedly covering bundled amenities such as Wi-Fi, fitness centre access, pool use, beach facilities, or in-room coffee. The fee is non-optional and is often disclosed separately from the advertised rate, making it a focal point of consumer protection regulation on junk fees and price transparency.",
+      "lastReviewed": "2026-07-01"
+    },
+    {
       "id": "resource-management",
       "vertical": "tours",
       "category": "tour-ops",
@@ -37249,6 +37646,117 @@
       "distinctions": []
     },
     {
+      "id": "soft-brand",
+      "vertical": "lodging",
+      "category": "hotel-dist",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "소프트 브랜드(Soft Brand)",
+      "definition_ko": "대형 호텔 체인이 독립 호텔이나 부티크 호텔을 자사의 유통·로열티 우산(umbrella) 아래에 받아들이면서도 각 호텔이 고유한 이름, 디자인 정체성, 운영 자율성을 유지할 수 있도록 허용하는 큐레이션 컬렉션 프로그램. 소프트 브랜드는 독립 호텔이 표준화된 제품 형식을 따르지 않고도 체인의 CRS, GDS 연결, 로열티 프로그램, 판매 채널에 접근할 수 있게 해 준다.",
+      "longDef": "Soft brands emerged as a response to the growing segment of travellers seeking distinctive, non-cookie-cutter properties while still expecting the reliability of booking through a familiar loyalty programme. Unlike a traditional hard brand (where properties must meet uniform standards for design, service, food-and-beverage, and amenities), a soft-brand member keeps its own property name and retains design and operational freedom subject only to quality-threshold requirements. The host chain distributes the property through its CRS, makes it bookable on its direct website and app, and awards loyalty points for stays. In return, the property pays a programme fee, distributes at rate parity, and meets minimum quality standards. Well-known examples include Marriott Autograph Collection, Hilton Curio Collection, IHG Voco, Hyatt Unbound Collection, and Wyndham Trademark Collection. From a distribution standpoint, STR (now CoStar) tracks soft brands separately from traditional brand segments, recognising that their ADR and RevPAR profiles often sit above the chain's midscale banners but below luxury hard brands.",
+      "longDef_ko": "소프트 브랜드는 친숙한 로열티 프로그램을 통한 예약 신뢰성을 기대하면서도 개성 있는, 획일적이지 않은 숙소를 원하는 여행객 세그먼트가 성장하면서 등장했다. 디자인·서비스·식음료·어메니티에 대한 균일한 기준을 따라야 하는 전통적 하드 브랜드와 달리, 소프트 브랜드 회원은 자체 호텔 이름을 유지하고 최소 품질 요건만 충족하면 설계와 운영의 자유를 보장받는다. 호스트 체인은 해당 호텔을 자사 CRS를 통해 유통하고, 직접 예약 웹사이트·앱에서 예약 가능하게 하며, 숙박에 로열티 포인트를 부여한다. 호텔은 프로그램 피를 내고, 요금 동등성(rate parity)을 준수하며, 최소 품질 기준을 충족한다. 대표적인 예로 Marriott Autograph Collection, Hilton Curio Collection, IHG Voco, Hyatt Unbound Collection, Wyndham Trademark Collection이 있다. 유통 관점에서 STR(현 CoStar)은 소프트 브랜드를 전통적 브랜드 세그먼트와 별도로 추적하며, 소프트 브랜드의 ADR·RevPAR 프로파일은 흔히 체인의 중저가 브랜드보다는 높고 럭셔리 하드 브랜드보다는 낮다고 인식한다.",
+      "aliases": [
+        "Independent Collection",
+        "Lifestyle Collection",
+        "Curated Collection",
+        "Boutique Collection"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Marriott International",
+          "term": "Autograph Collection Hotels",
+          "context": "Marriott's soft-brand collection launched in 2010, grouping independent hotels under the Marriott Bonvoy loyalty programme and Marriott.com/GDS distribution while each property keeps its own name and design.",
+          "context_ko": "2010년 출시된 Marriott의 소프트 브랜드 컬렉션으로, 독립 호텔들을 Marriott Bonvoy 로열티 프로그램 및 Marriott.com/GDS 유통 아래에 묶으면서 각 호텔이 고유 이름과 디자인을 유지하게 한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Hilton Worldwide",
+          "term": "Curio Collection by Hilton",
+          "context": "Hilton's soft brand admits upper-upscale independent and boutique properties that offer local character into Hilton Honors distribution; the brand launched in 2014.",
+          "context_ko": "Hilton의 소프트 브랜드로, 지역적 개성을 가진 어퍼 업스케일 독립·부티크 호텔을 Hilton Honors 유통에 편입시키며, 2014년 출시되었다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "IHG Hotels & Resorts",
+          "term": "Voco Hotels",
+          "context": "IHG's soft brand (launched 2018), positioning each Voco property as 'reliably different' — sharing IHG One Rewards and GDS connectivity while preserving individual character.",
+          "context_ko": "IHG의 소프트 브랜드(2018년 출시)로, 각 Voco 호텔을 '믿을 수 있는 개성(reliably different)'으로 포지셔닝하며 IHG One Rewards 및 GDS 연결성을 공유하면서 개별 특성을 유지한다.",
+          "relationship": "same"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "CRS",
+          "targetId": "crs"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Rate Parity",
+          "targetId": "rate-parity"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Channel Manager",
+          "targetId": "channel-manager"
+        },
+        {
+          "type": "related",
+          "targetTerm": "GDS",
+          "targetId": "gds"
+        },
+        {
+          "type": "related",
+          "targetTerm": "PMS",
+          "targetId": "pms"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "CRS",
+          "explanation": "A CRS (Central Reservation System) is the technology platform through which a hotel's rates and availability are distributed to agents and consumers; soft-brand membership gives an independent hotel access to a chain's CRS as a distribution channel, but the CRS itself is the technology, not the commercial membership program.",
+          "explanation_ko": "CRS(중앙 예약 시스템)는 호텔의 요금과 가용성을 에이전트 및 소비자에게 유통하는 기술 플랫폼이고, 소프트 브랜드 가입은 독립 호텔이 체인의 CRS를 유통 채널로 이용할 수 있게 해 주지만, CRS 자체는 기술이지 상업적 멤버십 프로그램이 아니다.",
+          "targetId": "crs"
+        },
+        {
+          "targetTerm": "Rate Parity",
+          "explanation": "Rate parity is the obligation to offer consistent pricing across distribution channels; a soft-brand agreement typically includes a rate-parity clause requiring the property to honour the chain's parity standards. The two concepts are related but distinct: rate parity is the pricing rule, soft brand is the distribution membership.",
+          "explanation_ko": "요금 동등성(Rate Parity)은 유통 채널 간 일관된 가격 제공 의무이고, 소프트 브랜드 계약은 일반적으로 호텔이 체인의 동등성 기준을 준수하도록 요구하는 요금 동등성 조항을 포함한다. 두 개념은 관련되어 있지만 구별된다. Rate Parity는 가격 규칙이고, 소프트 브랜드는 유통 멤버십이다.",
+          "targetId": "rate-parity"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Hotel Brand Segmentation Report — Soft Brands",
+          "org": "STR (CoStar Hospitality Analytics)",
+          "version": "2024",
+          "section": "",
+          "url": "https://str.com/data-insights-listing/hotel-brand-segmentation",
+          "tier": "secondary"
+        },
+        {
+          "name": "Autograph Collection Hotels — Brand Standards Overview",
+          "org": "Marriott International",
+          "version": "",
+          "section": "",
+          "url": "https://www.marriott.com/brands/autograph-collection.mi",
+          "tier": "vendor-doc"
+        },
+        {
+          "name": "Curio Collection by Hilton — Brand Information",
+          "org": "Hilton Worldwide",
+          "version": "",
+          "section": "",
+          "url": "https://www.hilton.com/en/hotel-brands/curio-collection/",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"4\" y=\"32\" width=\"12\" height=\"10\" rx=\"1\"/><rect x=\"18\" y=\"28\" width=\"12\" height=\"14\" rx=\"1\"/><rect x=\"32\" y=\"32\" width=\"12\" height=\"10\" rx=\"1\"/><path d=\"M4 32 Q24 14 44 32\"/><line x1=\"24\" y1=\"14\" x2=\"24\" y2=\"10\"/><circle cx=\"24\" cy=\"8\" r=\"3\"/></svg>",
+      "term": "Soft Brand",
+      "definition": "A curated collection program created by a major hotel chain that admits independent or boutique hotels under its distribution and loyalty umbrella while permitting each property to retain its individual name, design identity, and operational autonomy. Soft brands give independents access to the chain's CRS, GDS connectivity, loyalty program, and sales channels without requiring conformance to a standardised product format.",
+      "lastReviewed": "2026-07-01"
+    },
+    {
       "id": "spa-special-prorate-agreement",
       "vertical": "air",
       "category": "air-partner",
@@ -39923,6 +40431,99 @@
       "term": "TIDS Code",
       "definition": "An IATA-issued numeric identifier from the Travel Industry Designator Service (TIDS) that lets non-accredited sales intermediaries (such as tour operators, travel advisors and other points of sale) be uniquely recognized by airlines, hotels, car rental firms and other suppliers in electronic reservation systems. It is distinct from the IATA Number, which is issued only to financially accredited agencies.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "timatic",
+      "vertical": "common",
+      "category": "customer",
+      "conceptType": "system",
+      "status": "active",
+      "abbreviation": "TIMATIC",
+      "term_ko": "TIMATIC (여행 정보 자동 시스템)",
+      "definition_ko": "IATA의 Travel Information Manual Automatic(여행 정보 자동 시스템). 항공사·여행사·공항이 출발지-목적지-국적 조합에 따른 여행 서류, 비자 조건, 건강 증명서, 승객 자격 요건을 신뢰성 있고 지속적으로 갱신된 형태로 조회할 수 있는 구독형 데이터베이스 및 API 서비스. 항공사는 예약 시점 및 체크인 시 TIMATIC 조회를 사용하여 목적지에서 입국 거부된 승객에 대한 운송인 책임 의무를 이행한다.",
+      "longDef": "TIMATIC is maintained by IATA in partnership with governments and embassies worldwide, aggregating official passport, visa, and health requirements from more than 200 countries and territories. Its content covers document requirements (passport validity, machine-readable requirements), visa requirements by nationality, transit visa requirements, health document requirements (vaccinations, COVID-19 certificates in applicable periods), and currency and customs information. Airlines integrate TIMATIC through the IATA Travel Centre API (AutoCheck) or via GDS-embedded access (Amadeus TravelCheck, Sabre Timatic, Travelport Timatic) to perform automated eligibility checks at booking (to warn agents of inadmissibility) and at check-in (before boarding passes are issued). Carriers are contractually obliged under their government agreements and IATA traffic conference resolutions to verify passenger documentation, and TIMATIC is the industry's primary tool for discharging that obligation. Importantly, TIMATIC reflects official government requirements; it does not handle biometric or real-time entry-clearance decisions, which remain with Advance Passenger Information System (APIS) and border agencies.",
+      "longDef_ko": "TIMATIC은 IATA가 전 세계 정부 및 대사관과 협력하여 200개 이상의 국가·지역으로부터 공식 여권·비자·건강 요건을 수집·유지한다. 수록 내용은 여행 서류 요건(여권 유효기간, 기계판독 요건), 국적별 비자 요건, 환승 비자 요건, 건강 서류 요건(예방 접종, 해당 기간 COVID-19 증명서), 통화·세관 정보를 포함한다. 항공사는 IATA Travel Centre API(AutoCheck) 또는 GDS 내장 접근(Amadeus TravelCheck, Sabre Timatic, Travelport Timatic)을 통해 TIMATIC을 연동하여 예약 시(에이전트에 입국 불가 경고) 및 체크인 시(탑승권 발급 전) 자동 자격 확인을 수행한다. 운송인은 정부 협정과 IATA 교통회의 결의에 따라 승객 서류를 확인할 계약적 의무가 있으며, TIMATIC이 이 의무 이행의 핵심 수단이다. 중요한 점은 TIMATIC이 공식 정부 요건을 반영하며, 생체인식 또는 실시간 입국 심사 결정을 처리하지 않는다는 것인데, 이는 APIS 및 국경 당국의 역할이다.",
+      "standardBody": "IATA",
+      "aliases": [
+        "Travel Information Manual Automatic",
+        "TIM",
+        "IATA Travel Centre",
+        "AutoCheck"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Amadeus",
+          "term": "Amadeus TravelCheck (TIMATIC)",
+          "context": "Amadeus embeds IATA TIMATIC data under the 'Amadeus TravelCheck' brand, accessible from within the Amadeus GDS terminal and via the Amadeus Travel APIs, providing automated document-check responses for agents.",
+          "context_ko": "Amadeus는 IATA TIMATIC 데이터를 'Amadeus TravelCheck' 브랜드로 임베드하며, Amadeus GDS 터미널과 Amadeus Travel API에서 접근 가능하고 에이전트에게 자동화된 서류 확인 응답을 제공한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Sabre",
+          "term": "Sabre Timatic",
+          "context": "Sabre delivers TIMATIC content directly within the Sabre Red 360 workspace and via Sabre APIs, enabling agents to query travel document requirements without leaving the booking workflow.",
+          "context_ko": "Sabre는 Sabre Red 360 워크스페이스와 Sabre API를 통해 TIMATIC 콘텐츠를 직접 제공하며, 에이전트가 예약 흐름을 벗어나지 않고 여행 서류 요건을 조회할 수 있게 한다.",
+          "relationship": "same"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Advance Passenger Information System",
+          "targetId": "advance-passenger-information-system"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Secure Flight",
+          "targetId": "secure-flight"
+        },
+        {
+          "type": "related",
+          "targetTerm": "PNRGOV",
+          "targetId": "pnrgov"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Known Traveler Number",
+          "targetId": "known-traveler-number"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Advance Passenger Information System",
+          "explanation": "APIS is the government-mandated data transmission from carrier to border agency about specific, named passengers on a specific flight, used for pre-departure border screening; TIMATIC is a private reference database used by carriers and agents at booking/check-in to determine whether a passenger's documents satisfy destination requirements before the journey begins. TIMATIC is predictive and advisory; APIS is transactional and regulatory.",
+          "explanation_ko": "APIS는 특정 항공편의 특정 승객에 대한 운송인 발 국경 기관 전송 데이터로 출발 전 국경 심사에 사용되는 정부 의무 데이터 전송이고, TIMATIC은 여정 시작 전에 승객 서류가 목적지 요건을 충족하는지 확인하기 위해 운송인·에이전트가 예약/체크인 시 사용하는 민간 참조 데이터베이스이다. TIMATIC은 예측·자문적이고, APIS는 거래·규제적이다.",
+          "targetId": "advance-passenger-information-system"
+        },
+        {
+          "targetTerm": "PNRGOV",
+          "explanation": "PNRGOV is the standardised message that transmits a passenger's PNR reservation data to government border agencies for security screening after booking; TIMATIC is the pre-travel reference tool that tells carriers and agents which documents a passenger needs to be allowed on board. TIMATIC is consulted before ticketing or boarding; PNRGOV is sent after booking, to governments.",
+          "explanation_ko": "PNRGOV는 예약 후 보안 심사를 위해 승객의 PNR 예약 데이터를 정부 국경 당국에 전송하는 표준 메시지이고, TIMATIC은 운송인·에이전트에게 승객이 탑승 허가를 받기 위해 어떤 서류가 필요한지 알려주는 사전 여행 참조 도구이다. TIMATIC은 발권 또는 탑승 전에 조회하고, PNRGOV는 예약 후 정부로 전송된다.",
+          "targetId": "pnrgov"
+        }
+      ],
+      "sources": [
+        {
+          "name": "TIMATIC — Travel Document and Visa Requirements Database",
+          "org": "IATA (International Air Transport Association)",
+          "version": "",
+          "section": "",
+          "url": "https://www.iata.org/en/services/tools/timatic/",
+          "tier": "association"
+        },
+        {
+          "name": "IATA Travel Centre (AutoCheck API) — Documentation",
+          "org": "IATA",
+          "version": "",
+          "section": "",
+          "url": "https://developer.iata.org/en/developer-tools/timatic",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"18\"/><ellipse cx=\"24\" cy=\"24\" rx=\"8\" ry=\"18\"/><line x1=\"6\" y1=\"24\" x2=\"42\" y2=\"24\"/><line x1=\"8\" y1=\"15\" x2=\"40\" y2=\"15\"/><line x1=\"8\" y1=\"33\" x2=\"40\" y2=\"33\"/><path d=\"M32 10 l4 4 -8 8\" stroke-width=\"2.5\"/></svg>",
+      "term": "TIMATIC",
+      "definition": "IATA's Travel Information Manual Automatic, a subscription database and API service that provides airlines, travel agents, and airports with authoritative, continuously maintained requirements for travel documents, visa conditions, health certificates, and passenger eligibility for any origin-destination-nationality combination. Airlines use TIMATIC checks at the point of sale and at check-in to satisfy carrier liability obligations for passengers refused entry at the destination.",
+      "lastReviewed": "2026-07-01"
     },
     {
       "id": "time-and-mileage",
