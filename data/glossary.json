@@ -2,8 +2,8 @@
   "meta": {
     "name": "Travel Wiki",
     "tagline": "여행 산업 용어 백과사전",
-    "generatedAt": "2026-07-01",
-    "entryCount": 487,
+    "generatedAt": "2026-07-02",
+    "entryCount": 493,
     "categoryCount": 20,
     "verticalCount": 6
   },
@@ -1979,6 +1979,85 @@
       "term": "Air Passenger Protection Regulations (APPR)",
       "definition": "Canada's air passenger-rights framework (SOR/2019-150), administered by the Canadian Transportation Agency, setting minimum airline obligations for flight delays and cancellations, denied boarding, tarmac delays, baggage and communication. It is the Canadian counterpart to EU261, UK261 and the US DOT consumer-protection rules.",
       "lastReviewed": "2026-06-18"
+    },
+    {
+      "id": "atol",
+      "vertical": "common",
+      "category": "insurance",
+      "conceptType": "regulation",
+      "status": "active",
+      "abbreviation": "ATOL",
+      "term_ko": "항공 여행 주최자 면허(ATOL)",
+      "definition_ko": "항공 여행 주최자 면허(Air Travel Organiser's Licence, ATOL)는 민간항공법 1982 및 ATOL 규정 2012에 따라 영국 민간항공국(CAA)이 운영하는 법정 재무 보호 제도다. 영국 내에서 항공 포함 패키지 여행 또는 항공권 단독 상품을 판매하는 사업체에 ATOL 면허 취득을 의무화하여, 해당 사업체가 도산할 경우 소비자가 환급을 받거나 추가 비용 없이 귀환할 수 있도록 보장한다.",
+      "longDef": "ATOL protection applies when a consumer buys an air-inclusive package or a flight-plus-accommodation arrangement from a UK-licensed ATOL holder. At the point of sale, the ATOL holder must issue an ATOL Certificate summarizing protection details. If the ATOL holder becomes insolvent: (a) travelers who have not yet departed receive a full refund of their payments; (b) travelers already abroad are repatriated and accommodated until they can fly home. The Air Travel Trust (ATT), funded by a per-passenger levy charged to ATOL holders, provides the financial backing. ATOL is administered by the UK CAA under Chapter II of the Civil Aviation Act 1982 as amended, and the Air Travel Organisers' Licensing Regulations 2012 (SI 2012/1714). From 2012, the scope was extended to cover flight-plus arrangements sold by OTAs and airlines (the \"Flight-Plus\" category). ATOL is the primary mechanism by which UK-registered tour operators and travel agents fulfill the insolvency-protection obligation of the UK Package Travel and Linked Travel Arrangements Regulations 2018 for air-inclusive products. The equivalent EU protection is the insolvency-protection requirement of EU Directive 2015/2302 (Package Travel Directive), though EU member states implement it through varying national schemes.",
+      "longDef_ko": "ATOL 보호는 소비자가 영국 ATOL 면허 보유자로부터 항공 포함 패키지 또는 항공+숙박 상품을 구매할 때 적용된다. 판매 시점에 ATOL 면허 보유자는 보호 내용을 요약한 ATOL Certificate를 발급해야 한다. ATOL 면허 보유자가 도산하면: (a) 아직 출발하지 않은 여행자는 지불금 전액을 환급받으며; (b) 이미 해외에 있는 여행자는 귀환 항공편이 마련될 때까지 귀환 및 숙박 지원을 받는다. 항공 여행 신탁(ATT)이 ATOL 면허 보유자에게 부과되는 승객당 부담금으로 재원을 마련한다. ATOL은 1982 민간항공법(개정) 및 2012 항공 여행 주최자 면허 규정(SI 2012/1714)에 따라 영국 CAA가 관리한다. 2012년부터 OTA와 항공사가 판매하는 항공+결합 상품(\"Flight-Plus\" 카테고리)으로 적용 범위가 확장되었다. ATOL은 영국에 등록된 여행사가 항공 포함 상품에 대해 영국 패키지 여행 규정 2018의 도산 보호 의무를 이행하는 주요 수단이다. EU의 동등한 보호는 EU 지침 2015/2302(패키지 여행 지침)의 도산 보호 요건이지만, EU 회원국마다 다른 국가 제도를 통해 구현한다.",
+      "standardBody": "UK Civil Aviation Authority",
+      "aliases": [
+        "Air Travel Organisers Licensing",
+        "ATOL Protection",
+        "ATOL Certificate"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Supplier Default Coverage",
+          "targetId": "supplier-default-coverage"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Package Travel Directive",
+          "targetId": "package-travel-directive"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Trip Cancellation",
+          "targetId": "trip-cancellation"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Supplier Default Coverage",
+          "explanation": "ATOL is a mandatory statutory government-backed scheme that UK tour operators and travel agents must hold to sell air-inclusive packages legally — protection is automatic and does not require the consumer to purchase additional insurance; Supplier Default Coverage is an optional, voluntary travel insurance benefit that the traveler purchases independently and must actively claim upon a supplier failure.",
+          "explanation_ko": "ATOL은 영국 여행사가 항공 포함 패키지를 합법적으로 판매하기 위해 반드시 보유해야 하는 정부 지원 법정 의무 제도로, 소비자는 추가 보험을 구매하지 않아도 자동으로 보호받는다. Supplier Default Coverage는 여행자가 독자적으로 구매하는 임의 선택 여행보험 혜택으로, 공급업체 파산 시 별도로 청구해야 한다.",
+          "targetId": "supplier-default-coverage"
+        },
+        {
+          "targetTerm": "Package Travel Directive",
+          "explanation": "The Package Travel Directive (EU 2015/2302) and its UK equivalent (PTR 2018) are the overarching laws that require organizers of package holidays to maintain insolvency protection; ATOL is the specific UK government scheme that fulfills this obligation for air-inclusive packages. The Directive sets the legal obligation; ATOL is the operational mechanism.",
+          "explanation_ko": "패키지 여행 지침(EU 2015/2302) 및 영국의 상응 법률(PTR 2018)은 패키지 여행 주최자에게 도산 보호 유지를 의무화하는 상위 법률이고, ATOL은 항공 포함 패키지에 대해 이 의무를 이행하는 영국 정부의 구체적인 제도이다. 지침이 법적 의무를 규정하고, ATOL이 운영 메커니즘이다.",
+          "targetId": "package-travel-directive"
+        }
+      ],
+      "sources": [
+        {
+          "name": "ATOL Protection — Civil Aviation Authority",
+          "org": "UK Civil Aviation Authority",
+          "version": "",
+          "section": "",
+          "url": "https://www.caa.co.uk/atol-protection/",
+          "tier": "regulator-guidance"
+        },
+        {
+          "name": "Air Travel Organisers'' Licensing Regulations 2012 (SI 2012/1714)",
+          "org": "UK Government",
+          "version": "2012",
+          "section": "",
+          "url": "https://www.legislation.gov.uk/uksi/2012/1714/contents/made",
+          "tier": "regulation"
+        },
+        {
+          "name": "Civil Aviation Act 1982 — Chapter II (Licensing of Air Travel Organisers)",
+          "org": "UK Government",
+          "version": "1982 (as amended)",
+          "section": "Chapter II, ss.71-86",
+          "url": "https://www.legislation.gov.uk/ukpga/1982/16/part/II",
+          "tier": "regulation"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 5L38 11v11c0 11-7 18-14 21C17 40 10 33 10 22V11Z\"/><path d=\"M19 23l4 4 7-8\"/></svg>",
+      "term": "Air Travel Organiser's Licence",
+      "definition": "The Air Travel Organiser's Licence (ATOL) is a statutory financial protection scheme administered by the UK Civil Aviation Authority (CAA) under the Civil Aviation Act 1982 and the ATOL Regulations 2012. It requires UK-based businesses selling air-inclusive package holidays or flight-only products to hold an ATOL licence, guaranteeing that consumers receive a refund or are brought home at no extra cost if the business fails.",
+      "lastReviewed": "2026-07-02"
     },
     {
       "id": "air-waybill-number",
@@ -13622,6 +13701,90 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "eu-sea-passenger-rights",
+      "vertical": "common",
+      "category": "disruption",
+      "conceptType": "regulation",
+      "status": "active",
+      "abbreviation": "",
+      "term_ko": "EU 해상 승객 권리(EU Sea Passenger Rights)",
+      "definition_ko": "EU 해상 승객 권리(규정 (EU) No 1177/2010)는 유럽연합 내 해상 및 내륙 수로를 이용하는 승객의 권리를 규정한다. 장애인 비차별, 여행 혼선 시 지원, 지연에 대한 보상, 최소 정보 제공 요건, 민원 처리를 포괄하며, 항공 여행에 대한 EU 규정 261/2004의 구조를 모델로 하되 EU 항구를 출발하는 국제 항해 및 국내 항해의 페리·해상 크루즈에 적용한다.",
+      "longDef": "Regulation (EU) No 1177/2010, in force since 18 December 2012, applies to passenger transport services by sea or inland waterway departing from a port situated in an EU member state (inbound journeys from non-EU ports on EU-licensed carriers are also covered in some respects). Key rights: (1) Non-discrimination — carriers must not discriminate against passengers with disabilities or reduced mobility; (2) Right to assistance in the event of cancellation or delay at the port of departure of 90 minutes or more — carriers must offer meals and refreshments and, where necessary, overnight accommodation up to three nights (capped at EUR 80 per night); (3) Compensation for delay at the final destination — passengers are entitled to 25% of the ticket price for a delay of 1 to 2 hours, and 50% for a delay of more than 2 hours; (4) Information — operators must publish clear information on rights and contact details of the national enforcement body; (5) Complaint handling — passengers can complain first to the carrier and then to the national enforcement body if unsatisfied. The Regulation exempts vessels certified for fewer than 12 passengers, ships without mechanical propulsion, and ferries certified for 36 or fewer passengers on domestic routes. In the UK, equivalent rights are maintained by The Rights of Passengers when Travelling by Sea and Inland Waterway Regulations 2015 (UK SI 2015/1628) following Brexit.",
+      "longDef_ko": "규정 (EU) No 1177/2010은 2012년 12월 18일부터 발효되어 EU 회원국 항구를 출발하는 해상 또는 내륙 수로 여객 운송 서비스에 적용된다(EU 면허 운송사가 운항하는 비EU 항구 출발 여정도 일부 적용). 주요 권리: (1) 비차별 — 운송사는 장애인·이동 불편 승객을 차별할 수 없다; (2) 출발항에서 90분 이상 취소·지연 시 지원 — 운송사는 식사·음료를 제공하고, 필요한 경우 최대 3박(박당 EUR 80 상한) 숙박을 제공해야 한다; (3) 최종 목적지 지연 보상 — 1~2시간 지연 시 티켓 가격의 25%, 2시간 초과 지연 시 50% 보상; (4) 정보 — 운영사는 권리와 국가 집행기관 연락처에 관한 명확한 정보를 공개해야 한다; (5) 민원 처리 — 먼저 운송사에, 불만족 시 국가 집행기관에 민원을 제기할 수 있다. 이 규정은 12인 이하 여객 인증 선박, 기계 추진 없는 선박, 국내 노선 36인 이하 페리를 면제한다. 영국에서는 브렉시트 이후 2015년 해상·내륙 수로 여행 승객 권리 규정(UK SI 2015/1628)으로 동등한 권리가 유지된다.",
+      "standardBody": "European Union",
+      "aliases": [
+        "Regulation 1177/2010",
+        "Maritime Passenger Rights Regulation",
+        "Sea Passenger Rights Regulation"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "EU Regulation 261/2004",
+          "targetId": "eu-regulation-261-2004"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Denied Boarding Compensation",
+          "targetId": "denied-boarding-compensation"
+        },
+        {
+          "type": "contrasts",
+          "targetTerm": "Montreal Convention 1999",
+          "targetId": "montreal-convention-1999"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Right to Care",
+          "targetId": "right-to-care"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "EU Regulation 261/2004",
+          "explanation": "EU Regulation 261/2004 applies to air passengers (flights departing from EU airports or operated by EU carriers into the EU) and grants fixed compensation of EUR 250–600 for cancellations and significant delays; Regulation 1177/2010 applies to sea and inland waterway passengers and grants compensation of 25–50% of the ticket price for delays at the final destination — the two regimes share the same structural approach (right to care, right to re-routing/refund, compensation) but cover different transport modes with different compensation formulae.",
+          "explanation_ko": "EU 규정 261/2004는 항공 승객(EU 공항 출발 항공편 또는 EU 항공사 운항 EU 도착 항공편)에 적용되어 취소·장시간 지연에 EUR 250~600의 정액 보상을 부여하고, 규정 1177/2010은 해상·내륙 수로 승객에 적용되어 최종 목적지 지연에 티켓 가격의 25~50% 보상을 부여한다. 두 체계는 같은 구조적 접근(care 권리·재노선/환불 권리·보상)을 공유하지만 서로 다른 운송 모드를 다르게 산정한다.",
+          "targetId": "eu-regulation-261-2004"
+        },
+        {
+          "targetTerm": "Montreal Convention 1999",
+          "explanation": "The Montreal Convention 1999 establishes fault-based liability of air carriers for death, injury, baggage loss, and cargo damage on international flights; it does not directly apply to sea transport. Regulation 1177/2010 is the EU sea and inland waterway equivalent governing passenger rights in disruption scenarios, but it is a separate, non-overlapping instrument covering a different mode of transport.",
+          "explanation_ko": "몬트리올 협약 1999는 국제 항공편에서 사망·부상·수하물 분실·화물 손상에 대한 항공사의 과실 기반 책임을 규정하며, 해상 운송에는 직접 적용되지 않는다. 규정 1177/2010은 disruption 상황에서 승객 권리를 규율하는 EU 해상·내륙 수로의 동등 법령이지만, 서로 다른 운송 수단을 다루는 별개의 중복 없는 법령이다.",
+          "targetId": "montreal-convention-1999"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Regulation (EU) No 1177/2010 of the European Parliament and of the Council concerning the rights of passengers when travelling by sea and inland waterway",
+          "org": "European Union",
+          "version": "2010",
+          "section": "",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32010R1177",
+          "tier": "regulation"
+        },
+        {
+          "name": "Passenger Rights — Sea and Inland Waterways (European Commission)",
+          "org": "European Commission",
+          "version": "",
+          "section": "",
+          "url": "https://transport.ec.europa.eu/transport-modes/waterborne/passenger-rights_en",
+          "tier": "regulator-guidance"
+        },
+        {
+          "name": "The Rights of Passengers when Travelling by Sea and Inland Waterway Regulations 2015 (SI 2015/1628)",
+          "org": "UK Government",
+          "version": "2015",
+          "section": "",
+          "url": "https://www.legislation.gov.uk/uksi/2015/1628/contents/made",
+          "tier": "regulation"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 34c3-2 6-2 9 0s6 2 9 0 6-2 9 0\"/><rect x=\"12\" y=\"18\" width=\"24\" height=\"12\" rx=\"2\"/><path d=\"M20 18v-6h8v6\"/><path d=\"M16 30v4\"/><path d=\"M32 30v4\"/><path d=\"M19 25l3 3 7-6\"/></svg>",
+      "term": "EU Sea Passenger Rights",
+      "definition": "EU Sea Passenger Rights (Regulation (EU) No 1177/2010) establishes the rights of passengers travelling by sea and inland waterway in the European Union. It covers non-discrimination for persons with disabilities, assistance in the event of disrupted journeys, compensation for delays, minimum information requirements, and the handling of complaints — mirroring the structure of EU Regulation 261/2004 for air travel but applied to ferries and sea cruises on international voyages and domestic voyages from EU ports.",
+      "lastReviewed": "2026-07-02"
+    },
+    {
       "id": "eurail-pass",
       "vertical": "ground",
       "category": "rail",
@@ -16758,6 +16921,77 @@
       "term": "General Conditions of Carriage for Rail Passengers (GCC-CIV/PRR)",
       "definition": "The GCC-CIV/PRR are the uniform contractual terms drawn up by the CIT (International Rail Transport Committee) that railway undertakings apply to passenger tickets, putting the CIV Uniform Rules and the EU Passenger Rights Regulation into day-to-day operational contract conditions. They are the everyday terms-and-conditions layer that carriers and rail passes reference for the contract of carriage, refunds, exchanges and after-sales handling.",
       "lastReviewed": "2026-06-18"
+    },
+    {
+      "id": "general-declaration",
+      "vertical": "air",
+      "category": "air-ops",
+      "conceptType": "document",
+      "status": "active",
+      "abbreviation": "GenDec",
+      "term_ko": "항공기 일반 신고서(General Declaration / GenDec)",
+      "definition_ko": "일반 신고서(General Declaration, GenDec)는 항공기 기장(또는 대리인)이 국제선 입항 시 각 도착지의 세관·출입국·검역 당국에 제출하는 ICAO Annex 9 표준 양식이다. 항공기, 항공편, 승무원을 특정하고, 위생·보안·탑재 물품에 관한 신고를 담아 승무원·승객·화물의 통관을 개시하는 핵심 입항 서류 역할을 한다.",
+      "longDef": "The General Declaration format is prescribed in Appendix 1 to Chapter 3 of ICAO Annex 9 (Facilitation). It must be filed for every international arrival and typically contains: aircraft registration and type, operator name, flight number, departure and arrival airports and dates, crew list with nationalities and passport numbers, a passenger summary (total count), a health declaration signed by the commander, a declaration that no prohibited items are on board, and an inventory of dutiable stores. National authorities may add supplementary fields. In practice, the GenDec is submitted electronically via APIS-type advance notification in many states, but a paper original or certified facsimile is often required at the gate. The form is separate from, but related to, the passenger manifest (which lists individual passengers), the cargo manifest, and APIS transmissions that carry individual traveler data for border control pre-screening.",
+      "longDef_ko": "일반 신고서 양식은 ICAO Annex 9(출입국 편의) 제3장 부록 1에 규정되어 있다. 국제선 입항 시마다 제출해야 하며 일반적으로 다음을 포함한다: 항공기 등록번호 및 기종, 운항사 이름, 편명, 출발·도착 공항 및 날짜, 승무원 명단(국적·여권번호 포함), 승객 요약(총 인원), 기장 서명 위생 신고서, 금지 물품 미탑재 신고, 면세 한도 초과 물품 목록. 각국 당국은 추가 항목을 요구할 수 있다. 실무적으로 많은 국가에서 APIS 형태의 전자 사전 통보로 제출하지만, 탑승구에서 종이 원본 또는 공증 팩시밀리를 요구하는 경우도 있다. 일반 신고서는 개별 승객을 기재하는 승객 명단, 화물 적하 목록, 국경 통제 사전 검색을 위해 개별 여행자 데이터를 전송하는 APIS와 별개이면서 관련되어 있다.",
+      "standardBody": "ICAO",
+      "aliases": [
+        "GenDec",
+        "Aircraft General Declaration",
+        "ICAO General Declaration"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Advance Passenger Information System",
+          "targetId": "advance-passenger-information-system"
+        },
+        {
+          "type": "related",
+          "targetTerm": "PNRGOV",
+          "targetId": "pnrgov"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Departure Control System (DCS)",
+          "targetId": "departure-control-system-dcs"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Advance Passenger Information System",
+          "explanation": "The General Declaration is filed by the aircraft commander at each port of arrival covering the entire flight, crew, and aggregate health/stores declarations; APIS transmits individual traveler identity and travel-document data for each passenger to border authorities, usually before departure. The GenDec is aircraft-level; APIS is passenger-level.",
+          "explanation_ko": "일반 신고서는 항공기 기장이 각 입항지에서 전체 항공편, 승무원, 위생·탑재품 요약을 신고하는 양식이고, APIS는 출발 전 각 승객의 개인 신원·여행서류 정보를 국경 당국에 전송하는 시스템이다. 일반 신고서는 항공기 단위 문서이고 APIS는 승객 단위 전송이다.",
+          "targetId": "advance-passenger-information-system"
+        },
+        {
+          "targetTerm": "PNRGOV",
+          "explanation": "PNRGOV transmits the reservation record (PNR) data — booking details, itineraries, contact info — from carriers to government agencies for security analysis; the General Declaration is the arrival-port declaration of aircraft identity, crew, and operational matters submitted by the commander.",
+          "explanation_ko": "PNRGOV는 보안 분석을 위해 예약 기록(PNR) 데이터, 즉 예약 세부 사항·여정·연락처를 항공사에서 정부 기관으로 전송하는 것이고, 일반 신고서는 기장이 도착항에 제출하는 항공기 신원·승무원·운항 사항에 관한 입항 신고서이다.",
+          "targetId": "pnrgov"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Annex 9 to the Convention on International Civil Aviation — Facilitation (Appendix 1 to Chapter 3: General Declaration)",
+          "org": "ICAO",
+          "version": "Fifteenth Edition, July 2017",
+          "section": "Appendix 1 to Chapter 3",
+          "url": "https://www.icao.int/security/facilitation/Pages/Annex9.aspx",
+          "tier": "standard-body"
+        },
+        {
+          "name": "Airport Handling Manual (AHM) — Section 9 (Ground Operations)",
+          "org": "IATA",
+          "version": "43rd Edition",
+          "section": "AHM 910",
+          "url": "https://www.iata.org/en/publications/manuals/airport-handling-manual/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"5\" width=\"28\" height=\"38\" rx=\"2\"/><line x1=\"15\" y1=\"13\" x2=\"33\" y2=\"13\"/><line x1=\"15\" y1=\"19\" x2=\"33\" y2=\"19\"/><line x1=\"15\" y1=\"25\" x2=\"25\" y2=\"25\"/><path d=\"M27 32l2.5 2.5L35 28\"/></svg>",
+      "term": "General Declaration",
+      "definition": "A General Declaration (GenDec) is the standard ICAO Annex 9 form submitted by the aircraft commander (or agent) to customs, immigration, and health authorities at each international arrival port. It identifies the aircraft, flight, crew members, and carries declarations covering health, security, and stores — serving as the master arrival document that gates the release of crew, passengers, and cargo.",
+      "lastReviewed": "2026-07-02"
     },
     {
       "id": "ghg-protocol-scope-3-business-travel",
@@ -27041,6 +27275,102 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "open-skies-agreement",
+      "vertical": "air",
+      "category": "air-partner",
+      "conceptType": "business-term",
+      "status": "active",
+      "abbreviation": "OSA",
+      "term_ko": "항공 자유화 협정(Open Skies Agreement)",
+      "definition_ko": "항공 자유화 협정(Open Skies Agreement)은 두 개 이상의 국가 정부 사이에 체결되는 국제 항공 운수 조약으로, 노선·운항 빈도·공급 좌석 수·운임에 대한 정부 규제를 철폐하여 협정국 항공사들이 상대국 간, 나아가 제3국까지 자유롭게 운항할 수 있도록 한다. 미국이 선도적으로 개발한 모델로, 현재 국제 항공 시장 접근의 글로벌 표준 프레임워크가 되었다.",
+      "longDef": "An Open Skies Agreement typically grants: (1) the right to operate between any point in the two countries (3rd and 4th freedoms), (2) the right to carry traffic between the other country and a third country (5th freedom), (3) unlimited frequency and capacity, and (4) freedom for airlines to set their own fares. The US-EU Open Aviation Area (Open Aviation Area / \"Open Skies\" agreement), signed in 2007 and amended in 2010, is the largest such agreement, covering transatlantic air transport. Operationally, an Open Skies regime is the precondition for airline alliances and joint ventures to operate commercially (though revenue-sharing joint ventures additionally require Antitrust Immunity from competition authorities). ICAO Doc 9587 (Policy and Guidance Material on the Economic Regulation of International Air Transport) and ICAO Policy Statement Doc 9587 form the authoritative analytical framework.",
+      "longDef_ko": "항공 자유화 협정은 일반적으로 다음을 허용한다: (1) 양국 내 임의 지점 간 운항권(3·4 자유권), (2) 상대국과 제3국 간 여객 운송권(5 자유권), (3) 운항 빈도·공급 좌석 수 무제한, (4) 항공사의 자율 운임 책정. 2007년에 서명하고 2010년에 개정된 미국-EU 항공 자유화 협정은 대서양 횡단 항공 운송을 포괄하는 세계 최대 협정이다. 항공 자유화 체계는 항공사 동맹과 합작 투자(JV)의 상업적 운영을 위한 전제 조건이며, 수익 공유 JV는 추가로 경쟁 당국의 Antitrust Immunity가 필요하다. ICAO Doc 9587이 국제 항공 경제 규제에 관한 권위 있는 분석 프레임워크를 제공한다.",
+      "standardBody": "ICAO",
+      "aliases": [
+        "Open Aviation Area",
+        "Bilateral Air Services Agreement",
+        "Air Services Agreement",
+        "ASA"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Antitrust Immunity",
+          "targetId": "antitrust-immunity"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Joint Venture",
+          "targetId": "joint-venture"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Airline Alliance",
+          "targetId": "airline-alliance"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Slot",
+          "targetId": "slot"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Codeshare",
+          "targetId": "codeshare"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Antitrust Immunity",
+          "explanation": "An Open Skies Agreement liberalizes government route and market access restrictions between countries; Antitrust Immunity is a separate competition-law grant allowing airlines to coordinate pricing, capacity, and revenue without violating antitrust statutes — both are typically required before a transatlantic joint venture can function commercially.",
+          "explanation_ko": "항공 자유화 협정은 국가 간 정부 노선·시장 접근 규제를 철폐하는 것이고, Antitrust Immunity는 항공사들이 독점 금지법을 위반하지 않고 운임·공급·수익을 조율할 수 있도록 허용하는 별도의 경쟁법상 허가다. 대서양 횡단 합작 투자가 상업적으로 기능하려면 일반적으로 두 가지가 모두 필요하다.",
+          "targetId": "antitrust-immunity"
+        },
+        {
+          "targetTerm": "Codeshare",
+          "explanation": "A Codeshare is a commercial agreement between two airlines to market each other's flights under their own codes — it can exist within a traditional restrictive bilateral or under an Open Skies regime. Open Skies enables, but does not require, codesharing.",
+          "explanation_ko": "코드셰어는 두 항공사가 서로의 항공편을 자사 코드로 판매하는 상업적 협정으로, 기존의 제한적인 양자 협정이나 항공 자유화 체계 아래 모두 존재할 수 있다. 항공 자유화 협정은 코드셰어를 가능하게 하지만 의무화하지는 않는다.",
+          "targetId": "codeshare"
+        },
+        {
+          "targetTerm": "Slot",
+          "explanation": "Even under an Open Skies Agreement, access to congested airports is constrained by Slots — the permission to use infrastructure at a specific time. Open Skies removes bilateral policy barriers; slot coordination is a separate capacity mechanism.",
+          "explanation_ko": "항공 자유화 협정 하에서도 혼잡한 공항 접근은 슬롯, 즉 특정 시간에 인프라를 사용할 수 있는 권한에 의해 제한된다. 항공 자유화 협정은 양자 정책 장벽을 제거하지만, 슬롯 조율은 별도의 공급 조율 메커니즘이다.",
+          "targetId": "slot"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Policy and Guidance Material on the Economic Regulation of International Air Transport (Doc 9587)",
+          "org": "ICAO",
+          "version": "Sixth Edition, 2013",
+          "section": "Chapter 4 — Market Access",
+          "url": "https://www.icao.int/Meetings/atconf6/Documents/WorkingPapers/ATConf6_wp002_en.pdf",
+          "tier": "standard-body"
+        },
+        {
+          "name": "Open Skies Agreements — International Aviation",
+          "org": "US Department of Transportation",
+          "version": "",
+          "section": "",
+          "url": "https://www.transportation.gov/policy/aviation-policy/open-skies",
+          "tier": "regulator-guidance"
+        },
+        {
+          "name": "Air Transport Agreement between the United States and the European Community",
+          "org": "European Commission",
+          "version": "2007, amended 2010",
+          "section": "",
+          "url": "https://transport.ec.europa.eu/transport-modes/air/international-aviation/eu-aviation-agreements_en",
+          "tier": "regulation"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"18\"/><path d=\"M6 24h36\"/><path d=\"M24 6c-5 4-8 11-8 18s3 14 8 18\"/><path d=\"M24 6c5 4 8 11 8 18s-3 14-8 18\"/><path d=\"M10 36l8-4 6 2 6-4 8 2\"/></svg>",
+      "term": "Open Skies Agreement",
+      "definition": "An Open Skies Agreement is a bilateral or multilateral intergovernmental aviation treaty that liberalizes international air transport by removing government restrictions on routes, frequencies, capacity, and pricing, allowing airlines of the signatory countries to operate freely between and beyond those countries. The model was pioneered by the United States and has become the global standard framework for international aviation market access.",
+      "lastReviewed": "2026-07-02"
+    },
+    {
       "id": "open-ticket",
       "vertical": "air",
       "category": "air-ticket",
@@ -28912,6 +29242,98 @@
       "term": "Package Rate",
       "definition": "A package rate is a room rate that bundles the accommodation with additional goods or services (such as breakfast, parking, spa access, meals or activities) sold for a single combined price. The blended price is normally lower than buying each element separately, and the package may be presented as a single rate to the guest while internally splitting revenue across components.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "package-travel-directive",
+      "vertical": "common",
+      "category": "disruption",
+      "conceptType": "regulation",
+      "status": "active",
+      "abbreviation": "PTD",
+      "term_ko": "패키지 여행 지침(Package Travel Directive)",
+      "definition_ko": "패키지 여행 지침(EU 지침 2015/2302, 90/314/EEC 대체)은 패키지 여행 및 연계 여행 상품 판매를 규율하는 EU 법령이다. 예약 전 충분한 정보 제공, 여행 주최자 도산에 대한 보호, 예약 양도 권리, 가격 인상 상한 및 해지 권리, 불이행 서비스에 대한 구제 또는 가격 감액 권리를 여행자에게 부여한다. 영국의 해당 법률은 The Package Travel and Linked Travel Arrangements Regulations 2018이다.",
+      "longDef": "The Package Travel Directive (PTD) applies to packages combining at least two different types of travel services (transport, accommodation, car rental, or other tourist services) sold together or at an inclusive price, as well as to Linked Travel Arrangements (LTAs) where a traveler books separately facilitated combinations. Key traveler rights under PTD 2015/2302: (1) Pre-contractual information obligation — organizers must provide standardized information on price, itinerary, visa requirements, and insolvency protection before booking; (2) Price revision — price increases are permitted only for cost factors beyond the organizer's control (fuel, taxes, exchange rates), capped at 8% of the total price; above 8% the traveler may terminate at no cost; (3) Transfer — travelers may transfer their package to another person with reasonable notice; (4) Termination for unavoidable extraordinary circumstances — travelers can cancel without penalty if the destination is significantly affected; (5) Insolvency protection — organizers and retailers must be protected against insolvency, ensuring refunds or repatriation; (6) Remedy — organizers must remedy non-conforming services or reduce the price. The UK's Package Travel and Linked Travel Arrangements Regulations 2018 (SI 2018/634) implement equivalent protections, with ATOL providing statutory insolvency protection for air-inclusive packages.",
+      "longDef_ko": "패키지 여행 지침(PTD)은 운송·숙박·렌터카·기타 관광 서비스 중 최소 두 종류를 함께 또는 일괄 가격으로 판매하는 패키지와, 여행자가 개별 구매를 통해 선택하는 연계 여행 상품(LTA)에 적용된다. PTD 2015/2302의 주요 여행자 권리: (1) 계약 전 정보 제공 의무 — 주최자는 예약 전 표준화된 가격·일정·비자 요건·도산 보호 정보를 제공해야 한다; (2) 가격 수정 — 가격 인상은 연료·세금·환율 등 주최자 통제 불가 비용 요소에 한해 허용되며, 총 가격의 8% 상한 초과 시 여행자는 위약금 없이 해지 가능하다; (3) 양도 — 여행자는 합리적인 기간 내 사전 통보 시 패키지를 제3자에게 양도할 수 있다; (4) 불가피한 이례적 상황으로 인한 해지 — 목적지가 심각하게 영향받는 경우 위약금 없이 취소 가능; (5) 도산 보호 — 주최자·소매판매자는 도산에 대비해 환급 또는 귀환 조치를 보장해야 한다; (6) 구제 — 주최자는 불이행 서비스를 시정하거나 가격을 감액해야 한다. 영국의 패키지 여행 규정 2018(SI 2018/634)은 동등한 보호를 이행하며, ATOL이 항공 포함 패키지의 법정 도산 보호를 제공한다.",
+      "standardBody": "European Union",
+      "aliases": [
+        "PTD",
+        "Package Travel Regulations",
+        "EU Package Travel Directive",
+        "Directive 2015/2302",
+        "Package Holiday Directive"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "EU Regulation 261/2004",
+          "targetId": "eu-regulation-261-2004"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Supplier Default Coverage",
+          "targetId": "supplier-default-coverage"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Trip Cancellation",
+          "targetId": "trip-cancellation"
+        },
+        {
+          "type": "related",
+          "targetTerm": "ATOL",
+          "targetId": "atol"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "EU Regulation 261/2004",
+          "explanation": "EU Regulation 261/2004 governs rights for flight disruptions (cancellations, delays, denied boarding) with fixed compensation per distance band; the Package Travel Directive governs the entire package holiday relationship — pre-sale information, price changes, insolvency protection, non-conformance, and termination. Both can apply simultaneously when a package flight is cancelled.",
+          "explanation_ko": "EU Regulation 261/2004는 항공편 disruption(취소·지연·탑승 거부)에 대한 거리 구간별 정액 보상을 규율하고, 패키지 여행 지침은 패키지 여행의 전 과정, 즉 판매 전 정보 제공·가격 변경·도산 보호·불이행·해지를 규율한다. 패키지 항공편이 취소될 경우 두 규정이 동시에 적용될 수 있다.",
+          "targetId": "eu-regulation-261-2004"
+        },
+        {
+          "targetTerm": "Supplier Default Coverage",
+          "explanation": "Supplier Default Coverage is a voluntary travel insurance benefit purchased by the individual traveler to recoup prepaid costs if a supplier fails; the Package Travel Directive imposes a mandatory statutory obligation on the organizer to maintain insolvency protection that actively ensures refunds or repatriation without the traveler needing to claim on personal insurance.",
+          "explanation_ko": "Supplier Default Coverage는 공급업체 파산 시 선납 비용을 보상받기 위해 여행자가 개별적으로 구매하는 임의 여행보험 혜택이고, 패키지 여행 지침은 여행자가 개인 보험을 청구할 필요 없이 환급 또는 귀환을 보장하도록 주최자에게 강제하는 의무적 법적 요건이다.",
+          "targetId": "supplier-default-coverage"
+        },
+        {
+          "targetTerm": "ATOL",
+          "explanation": "ATOL is the UK's statutory licensing scheme that operationalizes insolvency protection specifically for air-inclusive packages sold in the UK — it is the mechanism by which UK-regulated tour operators meet the Package Travel Regulations' insolvency-protection obligation. The Package Travel Directive/Regulations is the overarching legal framework; ATOL is one national implementation mechanism.",
+          "explanation_ko": "ATOL은 영국에서 판매되는 항공 포함 패키지에 대한 도산 보호를 실현하는 영국의 법정 면허 제도로, 영국 규제 여행사가 패키지 여행 규정의 도산 보호 의무를 이행하는 수단이다. 패키지 여행 지침/규정이 상위 법적 틀이고, ATOL은 영국의 구체적인 이행 메커니즘이다.",
+          "targetId": "atol"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Directive (EU) 2015/2302 of the European Parliament and of the Council on Package Travel and Linked Travel Arrangements",
+          "org": "European Union",
+          "version": "2015",
+          "section": "",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32015L0302",
+          "tier": "regulation"
+        },
+        {
+          "name": "The Package Travel and Linked Travel Arrangements Regulations 2018 (SI 2018/634)",
+          "org": "UK Government",
+          "version": "2018",
+          "section": "",
+          "url": "https://www.legislation.gov.uk/uksi/2018/634/contents/made",
+          "tier": "regulation"
+        },
+        {
+          "name": "Package Travel — European Commission Consumer Affairs",
+          "org": "European Commission",
+          "version": "",
+          "section": "",
+          "url": "https://commission.europa.eu/live-work-travel-eu/consumer-rights-and-complaints/package-holidays_en",
+          "tier": "regulator-guidance"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"9\" y=\"18\" width=\"30\" height=\"22\" rx=\"2\"/><path d=\"M16 18v-5a8 8 0 0 1 16 0v5\"/><path d=\"M24 28v4\"/><circle cx=\"24\" cy=\"27\" r=\"2\" fill=\"currentColor\" stroke=\"none\"/><path d=\"M17 38h14\"/></svg>",
+      "term": "Package Travel Directive",
+      "definition": "The Package Travel Directive (EU Directive 2015/2302, replacing 90/314/EEC) is the European Union law governing the sale of package holidays and linked travel arrangements. It grants travelers the rights to full information before booking, protection against insolvency of the organizer, the ability to transfer a booking, a price-increase cap and termination right, and remedy or a price reduction for non-conforming services. Its UK equivalent is The Package Travel and Linked Travel Arrangements Regulations 2018.",
+      "lastReviewed": "2026-07-02"
     },
     {
       "id": "padis-codeset-directory",
@@ -37755,6 +38177,85 @@
       "term": "Soft Brand",
       "definition": "A curated collection program created by a major hotel chain that admits independent or boutique hotels under its distribution and loyalty umbrella while permitting each property to retain its individual name, design identity, and operational autonomy. Soft brands give independents access to the chain's CRS, GDS connectivity, loyalty program, and sales channels without requiring conformance to a standardised product format.",
       "lastReviewed": "2026-07-01"
+    },
+    {
+      "id": "solas",
+      "vertical": "cruise",
+      "category": "cruise",
+      "conceptType": "regulation",
+      "status": "active",
+      "abbreviation": "SOLAS",
+      "term_ko": "해상인명안전협약(SOLAS)",
+      "definition_ko": "SOLAS(International Convention for the Safety of Life at Sea, 1974, 해상인명안전협약)는 크루즈선을 포함한 상선의 건조·설비·운항에 관한 최소 안전 기준을 정한 핵심 IMO 조약이다. 제3장은 인명 구조 설비와 구명 훈련(Muster Drill)을 의무화하고, 제II-2장은 화재 보호를 규율하며, 국제안전관리(ISM) 코드(제IX장)는 선사와 선박 각각에 안전관리증서(SMC)를 요구한다.",
+      "longDef": "SOLAS 1974 (and its subsequent Protocols and amendments administered by the International Maritime Organization) is in force for all flag states that are IMO member states and applies to passenger ships on international voyages. For cruise lines, the most operationally significant chapters are: (1) Chapter II-2 — fire safety (fire detection, suppression, construction standards); (2) Chapter III — life-saving appliances (lifeboats, rescue boats, immersion suits, EPIRBs, fire/emergency plans) and specifically Regulation III/19.2.2, which from January 2020 requires cruise passenger muster drills to be completed before or shortly after departure; (3) Chapter IX — the International Safety Management (ISM) Code, requiring every shipping company to maintain a Safety Management System (SMS) and every passenger ship to hold a Document of Compliance (DOC) and Safety Management Certificate (SMC); (4) Chapter XI-2 — the International Ship and Port Facility Security (ISPS) Code, governing physical security, crew ID, and port access. Amendments are adopted by the Maritime Safety Committee (MSC) and enter into force under the \"tacit acceptance\" procedure. SOLAS directly underlies cruise product representations around safety features, emergency procedures, and lifeboat capacity.",
+      "longDef_ko": "SOLAS 1974(및 국제해사기구가 관리하는 이후의 의정서·개정)는 IMO 회원국인 모든 기국에 발효되어 있으며, 국제 항해에 종사하는 여객선에 적용된다. 크루즈 선사에게 가장 중요한 장은 다음과 같다: (1) 제II-2장 — 화재 안전(화재 감지·진압·건조 기준); (2) 제III장 — 인명 구조 설비(구명정·구조선·방수복·EPIRB·비상 계획) 및 특히 규정 III/19.2.2(2020년 1월부터 크루즈 승객 구명 훈련을 출항 전 또는 출항 직후에 완료 의무화); (3) 제IX장 — 국제안전관리(ISM) 코드(선사의 안전관리시스템 유지와 여객선의 적합증서(DOC) 및 안전관리증서(SMC) 보유 의무화); (4) 제XI-2장 — 국제선박·항만보안(ISPS) 코드(물리적 보안·선원 신분증·항구 접근 규율). 개정은 해사안전위원회(MSC)가 채택하고 \"묵시적 수락\" 절차에 따라 발효된다. SOLAS는 크루즈 상품의 안전 특성, 비상 절차, 구명정 용량 표현의 직접적 근거가 된다.",
+      "standardBody": "IMO",
+      "aliases": [
+        "International Convention for the Safety of Life at Sea",
+        "SOLAS 1974",
+        "ISM Code"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Muster Drill",
+          "targetId": "muster-drill"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Gross Tonnage (GT)",
+          "targetId": "gross-tonnage"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Drydock",
+          "targetId": "drydock"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Muster Drill",
+          "explanation": "A Muster Drill is the mandatory emergency-assembly exercise that passengers and crew perform so that everyone knows their muster station and emergency procedures; SOLAS is the international convention that legally requires the muster drill (specifically SOLAS Chapter III Regulation 19) and sets the minimum standards for the drills and the life-saving equipment used in them.",
+          "explanation_ko": "Muster Drill은 승객과 승무원이 자신의 집합 지점과 비상 절차를 숙지하도록 실시하는 의무적 비상 집합 훈련이고, SOLAS는 그 훈련(특히 SOLAS 제III장 규정 19)을 법적으로 요구하며 훈련과 인명 구조 설비의 최소 기준을 정하는 국제 협약이다.",
+          "targetId": "muster-drill"
+        },
+        {
+          "targetTerm": "Drydock",
+          "explanation": "A Drydock is the periodic out-of-water scheduled maintenance period a cruise ship undergoes; SOLAS mandates certain surveys and inspections that ships must pass, which are typically carried out or completed during drydock — the drydock is the operational event, SOLAS defines the safety standards that must be verified at those events.",
+          "explanation_ko": "Drydock은 크루즈선이 받는 주기적인 수면 외 정기 정비 기간이고, SOLAS는 선박이 통과해야 하는 특정 검사·점검을 의무화하는데, 이는 일반적으로 Drydock 기간에 실시 또는 완료된다. Drydock은 운영 이벤트이고, SOLAS는 그 이벤트에서 검증해야 할 안전 기준을 정한다.",
+          "targetId": "drydock"
+        }
+      ],
+      "sources": [
+        {
+          "name": "International Convention for the Safety of Life at Sea (SOLAS), 1974 (consolidated text)",
+          "org": "IMO",
+          "version": "1974 (consolidated 2020)",
+          "section": "Chapters II-2, III, IX, XI-2",
+          "url": "https://www.imo.org/en/About/Conventions/Pages/International-Convention-for-the-Safety-of-Life-at-Sea-(SOLAS),-1974.aspx",
+          "tier": "standard-body"
+        },
+        {
+          "name": "ISM Code (International Safety Management Code) — Resolution A.741(18) as amended by MSC.104(73)",
+          "org": "IMO",
+          "version": "2002 (as amended)",
+          "section": "",
+          "url": "https://www.imo.org/en/OurWork/HumanElement/Pages/ISMCode.aspx",
+          "tier": "standard-body"
+        },
+        {
+          "name": "CLIA Cruise Industry Overview — Regulatory Framework",
+          "org": "CLIA (Cruise Lines International Association)",
+          "version": "",
+          "section": "",
+          "url": "https://cruising.org/en/research-and-advocacy/regulatory/safety",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 34c3-2 6-2 9 0s6 2 9 0 6-2 9 0\"/><path d=\"M10 34l2-10h24l2 10\"/><path d=\"M16 24l2-8h12l2 8\"/><circle cx=\"24\" cy=\"10\" r=\"4\"/><path d=\"M24 14v2\"/></svg>",
+      "term": "SOLAS",
+      "definition": "SOLAS (International Convention for the Safety of Life at Sea, 1974) is the primary IMO treaty establishing minimum safety standards for the construction, equipment, and operation of merchant ships, including cruise ships. Its requirements directly shape cruise operations: Chapter III mandates life-saving appliances and muster drills, Chapter II-2 governs fire protection, and the International Safety Management (ISM) Code (Chapter IX) requires each company and ship to hold a Safety Management Certificate.",
+      "lastReviewed": "2026-07-02"
     },
     {
       "id": "spa-special-prorate-agreement",
