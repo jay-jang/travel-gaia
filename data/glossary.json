@@ -2,8 +2,8 @@
   "meta": {
     "name": "Travel Wiki",
     "tagline": "여행 산업 용어 백과사전",
-    "generatedAt": "2026-07-02",
-    "entryCount": 493,
+    "generatedAt": "2026-07-03",
+    "entryCount": 499,
     "categoryCount": 20,
     "verticalCount": 6
   },
@@ -14145,6 +14145,88 @@
       "term": "Expected Marginal Seat Revenue (EMSR)",
       "definition": "Expected Marginal Seat Revenue (EMSR) is the heuristic method used to compute protection levels and booking limits for nested fare classes by comparing each fare to the expected revenue of holding a seat for higher-value demand. It generalizes Littlewood's two-class rule to multiple classes through Belobaba's EMSRa and the more widely used EMSRb approximation, and remains the backbone of most single-leg airline revenue-management systems.",
       "lastReviewed": "2026-06-18"
+    },
+    {
+      "id": "expedition-cruise",
+      "vertical": "cruise",
+      "category": "cruise",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "익스페디션 크루즈(Expedition Cruise)",
+      "definition_ko": "남극·북극·갈라파고스 제도·아마존 등 오지 또는 자연 야생 지역에 특화된 소형 선박(통상 200명 미만)으로 운항하며, 자연학자·과학자 등 전문가가 동반하는 탐험 중심의 크루즈. CLIA와 IAATO는 익스페디션 크루즈를 빠르게 성장하는 독자적 세그먼트로 인정한다.",
+      "longDef": "Expedition cruises differ from conventional ocean or river cruises in destination philosophy, vessel design, and onboard expertise. Vessels are engineered for remote navigation — many carry Polar Class ice ratings (e.g., PC6, PC5) enabling Antarctic or Arctic operations — and deploy Zodiac inflatable craft and kayaks to land guests on beaches, glaciers, or remote coastlines where no pier infrastructure exists. Passenger capacities typically range from 12 to 200, though a growing midsize segment carries 200–500. Itineraries are shaped by weather and wildlife rather than a fixed schedule; expedition captains and expedition leaders hold authority to reroute or cancel landings for safety reasons. Onboard enrichment staff — naturalists, glaciologists, ornithologists, historians, and divers — deliver lectures, citizen-science programs, and guided landings. CLIA tracks expedition cruising as a named segment: global expedition ship capacity is projected to grow 150% from 2019 to 2029, and passenger numbers rose 22% year-on-year from 2023 to 2024. For Antarctic voyages, operators must be members of IAATO (International Association of Antarctica Tour Operators), which classifies vessels by passenger capacity and landing permission. The Guest Ticket Contract for expedition cruises typically contains explicit itinerary-flexibility clauses, adverse-weather provisions, and conservation-compliance obligations under the Antarctic Treaty System.",
+      "longDef_ko": "익스페디션 크루즈는 목적지 철학, 선박 설계, 승선 전문성 면에서 일반 오션 크루즈나 리버 크루즈와 구별된다. 선박은 원격 항해를 위해 설계되며, 많은 경우 남극·북극 운항을 가능케 하는 극지 등급(PC6, PC5 등) 빙급 규격을 갖추고, 안벽 인프라가 없는 해변·빙하·오지 해안에 선객을 상륙시키기 위해 조디악 보트와 카약을 운용한다. 승객 정원은 통상 12~200명이지만 성장하는 중형 세그먼트는 200~500명을 수용한다. 여정은 고정 일정이 아닌 날씨와 야생동물에 따라 조정되며, 원정대 선장과 원정대 리더가 안전을 위해 노선 변경이나 상륙 취소를 결정할 권한을 갖는다. 자연학자·빙하학자·조류학자·역사학자·다이버 등 전문가가 강연·시민과학 프로그램·가이드 상륙을 제공한다. CLIA에 따르면 2019~2029년 익스페디션 선박 수용량은 150% 성장이 예상되며, 2023~2024년 승객 수는 22% 증가했다. 남극 항해의 경우 운영사는 선박 정원과 상륙 허가 기준에 따라 선박을 분류하는 IAATO 회원이어야 한다. 익스페디션 크루즈의 게스트 티켓 계약에는 여정 유연성 조항, 악기상 조항, 남극조약체계에 따른 환경 보전 준수 의무가 명시된다.",
+      "standardBody": "CLIA",
+      "aliases": [
+        "Expedition Cruising",
+        "Small-Ship Expedition Cruise",
+        "Polar Cruise",
+        "Polar Expedition Cruise",
+        "Adventure Cruise"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "River Cruise",
+          "targetId": "river-cruise"
+        },
+        {
+          "type": "related",
+          "targetTerm": "CLIA (Cruise Lines International Association)",
+          "targetId": "clia"
+        },
+        {
+          "type": "related",
+          "targetTerm": "SOLAS",
+          "targetId": "solas"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Shore Excursion",
+          "targetId": "shore-excursion"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Guest Ticket Contract",
+          "targetId": "guest-ticket-contract"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "River Cruise",
+          "explanation": "A river cruise follows fixed cultural routes on navigable inland waterways with established port infrastructure; an expedition cruise reaches uninhabited or remote wilderness destinations with no pier, often requiring ice-class vessels and small-boat landings.",
+          "explanation_ko": "리버 크루즈는 기존 항구 인프라를 갖춘 내수면 문화 노선을 운항하고, 익스페디션 크루즈는 안벽이 없는 미개발·오지 야생지역을 탐험하며 쇄빙급 선박과 소형 보트 상륙이 필요한 경우가 많다.",
+          "targetId": "river-cruise"
+        },
+        {
+          "targetTerm": "Shore Excursion",
+          "explanation": "In conventional ocean cruising a shore excursion is a structured tour sold for a mainstream port of call; in expedition cruising the equivalent \"landing\" is a guided wildlife or wilderness experience that may have no formal port at all and is subject to weather and wildlife conditions.",
+          "explanation_ko": "일반 오션 크루즈에서 기항지 투어는 주류 기항지를 위한 구조화된 투어 상품이고, 익스페디션 크루즈에서 이에 해당하는 \"상륙(landing)\"은 공식 항구가 없을 수 있으며 날씨·야생동물 상황에 따라 좌우되는 가이드 야생·자연 탐험 체험이다.",
+          "targetId": "shore-excursion"
+        }
+      ],
+      "sources": [
+        {
+          "name": "CLIA Expedition Cruise Guide",
+          "org": "Cruise Lines International Association (CLIA)",
+          "version": "",
+          "section": "",
+          "url": "https://cruising.org/resources/state-cruise-industry-report-2025",
+          "tier": "association"
+        },
+        {
+          "name": "IAATO Vessel Classification FAQ",
+          "org": "International Association of Antarctica Tour Operators (IAATO)",
+          "version": "",
+          "section": "Vessel Categories",
+          "url": "https://iaato.org/faqs",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 36 l-4 6 h32 l-4-6 z\"/><path d=\"M14 36 l-2-12 h16 l-2 12\"/><path d=\"M22 24 v-10\"/><path d=\"M18 14 l4-6 4 6\"/><path d=\"M32 22 l4-4 4 4\"/><path d=\"M6 20 l3-3 3 3\"/></svg>",
+      "term": "Expedition Cruise",
+      "definition": "A cruise to remote or wilderness destinations — such as Antarctica, the Arctic, the Galapagos Islands, or the Amazon — aboard small, purpose-built ships (typically under 200 passengers) equipped for off-the-beaten-path navigation and designed for immersive exploration led by onboard naturalists and scientists. CLIA and IAATO recognize expedition cruising as a distinct, fast-growing segment.",
+      "lastReviewed": "2026-07-03"
     },
     {
       "id": "experiences-marketplace",
@@ -35941,6 +36023,87 @@
       "lastReviewed": "2026-06-18"
     },
     {
+      "id": "river-cruise",
+      "vertical": "cruise",
+      "category": "cruise",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "리버 크루즈(River Cruise)",
+      "definition_ko": "다뉴브강·라인강·메콩강·나일강 등 문화·경관적으로 중요한 노선을 따라 통상 100~200명의 승객을 수용하는 얕은 흘수의 전용 선박으로 운항하는 강·운하·삼각주 등 내수면 크루즈. CLIA는 리버 크루즈를 오션 크루즈와 구별되는 독자적인 산업 세그먼트로 추적한다.",
+      "longDef": "River cruise vessels — called river ships or river boats — are purpose-built for inland waterways, with shallow drafts (typically under 1.5 m) and low profiles to navigate under bridges, carrying 100–200 guests compared with 2,000–7,000 on large ocean ships. Itineraries are geographically concentrated and culturally dense, with a port call nearly every day: classic routes include the Danube (Passau–Budapest–Bucharest), Rhine (Basel–Amsterdam), Mekong (Vietnam–Cambodia), Nile (Luxor–Aswan), and Douro (Porto–Salamanca). River cruising commands a premium price point; Viking River Cruises, AmaWaterways, Scenic, Emerald Cruises, and Avalon Waterways dominate the European and Asia segments. The distribution model parallels ocean cruising — travel advisors, cruise-only fares, non-commissionable fare structures — but with higher reliance on specialist river-cruise agents. Seasonality is more severe than ocean: most European river voyages run April–December, constrained by low-water or high-water events (droughts and floods are an operational risk disclosed in guest ticket contracts). Shore excursions are the primary ancillary revenue source, as vessels do not support the retail, casino, or entertainment infrastructure of large ocean ships.",
+      "longDef_ko": "\"리버 십(river ship)\" 또는 \"리버 보트(river boat)\"라 불리는 선박은 내수면 전용으로 건조되며, 얕은 흘수(통상 1.5 m 미만)와 낮은 선체로 교량 통과가 가능하다. 승객 정원은 100~200명으로 대형 오션 크루즈(2,000~7,000명)와 대비된다. 여정은 지리적으로 집중되고 문화적으로 밀도가 높으며, 거의 매일 기항한다. 주요 노선은 다뉴브강(파사우→부다페스트→부쿠레슈티), 라인강(바젤→암스테르담), 메콩강(베트남→캄보디아), 나일강(룩소르→아스완), 두에로강(포르투→살라만카)이다. 리버 크루즈는 프리미엄 시장을 형성하며 Viking River Cruises·AmaWaterways·Scenic·Emerald Cruises·Avalon Waterways 등이 주도한다. 유통 모델은 오션 크루즈와 유사하나 리버 크루즈 전문 여행사 의존도가 높다. 계절성이 강해 유럽 리버 크루즈는 대부분 4~12월에 운항하며, 가뭄·홍수로 인한 수위 변화는 운항 리스크로서 게스트 티켓 계약에 명시된다. 기항지 투어가 주요 부가 수익원이며, 대형 오션 선박의 면세점·카지노·엔터테인먼트 시설은 갖추지 않는다.",
+      "standardBody": "CLIA",
+      "aliases": [
+        "River Cruising",
+        "Inland Waterway Cruise",
+        "Riverboat Cruise",
+        "River Ship"
+      ],
+      "relationships": [
+        {
+          "type": "contrasts",
+          "targetTerm": "Repositioning Cruise",
+          "targetId": "repositioning-cruise"
+        },
+        {
+          "type": "related",
+          "targetTerm": "CLIA (Cruise Lines International Association)",
+          "targetId": "clia"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Shore Excursion",
+          "targetId": "shore-excursion"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Cruise-Only Fare",
+          "targetId": "cruise-only-fare"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Expedition Cruise",
+          "targetId": "expedition-cruise"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Repositioning Cruise",
+          "explanation": "A repositioning cruise is an ocean-going voyage relocating a large ship between seasonal homeports; a river cruise is a distinct product category operating exclusively on inland waterways in purpose-built shallow-draft vessels.",
+          "explanation_ko": "레포지셔닝 크루즈는 대형 선박을 계절별 모항 사이로 이동시키는 외양 항해이고, 리버 크루즈는 내수면 전용 얕은 흘수 선박이 내수면에서만 운항하는 별도의 상품 범주이다.",
+          "targetId": "repositioning-cruise"
+        },
+        {
+          "targetTerm": "Expedition Cruise",
+          "explanation": "An expedition cruise uses ice-class or reinforced small ships to reach remote or wilderness destinations (polar regions, Amazon, Galapagos); a river cruise follows fixed cultural routes on inland waterways with everyday port infrastructure.",
+          "explanation_ko": "익스페디션 크루즈는 쇄빙급 또는 강화된 소형 선박으로 극지·아마존·갈라파고스 등 오지를 탐험하고, 리버 크루즈는 일상적인 항구 인프라를 갖춘 내수면에서 정해진 문화 노선을 운항한다.",
+          "targetId": "expedition-cruise"
+        }
+      ],
+      "sources": [
+        {
+          "name": "CLIA 2025 State of the Cruise Industry Report — River Cruising Segment",
+          "org": "Cruise Lines International Association (CLIA)",
+          "version": "2025",
+          "section": "",
+          "url": "https://cruising.org/resources/state-cruise-industry-report-2025",
+          "tier": "association"
+        },
+        {
+          "name": "CLIA — River Cruise Resources",
+          "org": "Cruise Lines International Association (CLIA)",
+          "version": "",
+          "section": "",
+          "url": "https://cruising.org/",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 34 Q12 30 20 34 Q28 38 36 34 Q40 32 44 34\"/><path d=\"M4 40 Q12 36 20 40 Q28 44 36 40 Q40 38 44 40\"/><path d=\"M13 26 l-3 8 h18 l-2-8 z\"/><line x1=\"20\" y1=\"26\" x2=\"20\" y2=\"18\"/><line x1=\"16\" y1=\"18\" x2=\"24\" y2=\"18\"/></svg>",
+      "term": "River Cruise",
+      "definition": "A cruise operated on inland waterways — rivers, canals, or deltas — aboard purpose-built shallow-draft vessels typically carrying 100–200 passengers, offering near-daily port calls along culturally and scenically significant routes such as the Danube, Rhine, Mekong, or Nile. CLIA tracks river cruising as a distinct industry segment separate from ocean cruising.",
+      "lastReviewed": "2026-07-03"
+    },
+    {
       "id": "room-type",
       "vertical": "lodging",
       "category": "hotel-rate",
@@ -37960,6 +38123,105 @@
       "lastReviewed": "2026-06-25"
     },
     {
+      "id": "sleeper-train",
+      "vertical": "ground",
+      "category": "rail",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "슬리퍼 트레인(Sleeper Train)",
+      "definition_ko": "전용 침대칸(쿠셰트 또는 개인 침실)을 갖추고 장거리를 야간에 운행하는 정기 여객 열차로, 승객이 호텔 숙박 비용 없이 하룻밤 이동 중 취침하고 목적지에 도착할 수 있게 한다. UIC 나이트 트레인 아틀라스는 전 세계 운행 슬리퍼 서비스를 목록화하며, ERA는 2023년 신세대 슬리퍼 차량에 대해 첫 번째 형식 승인을 발급했다.",
+      "longDef": "Sleeper trains combine transport and accommodation in a single overnight service, eliminating the need for intermediate hotels on long-distance journeys. The UIC classifies sleeping accommodation on night trains into three main types: sleeping car (WL in UIC classification — private compartments with made beds, linen, and often a washbasin, typically 1–3 passengers), couchette car (BC — open compartments with fold-down berths, pillow, blanket, and sheet, typically 4–6 berths), and reclining or standard seats for budget travellers sharing the same train. Routes often cross national borders and operate on conventional rail infrastructure at speeds up to 200 km/h, departing in the early evening and arriving the following morning. Key European services include ÖBB Nightjet (Austria, Germany, Belgium, Switzerland, Netherlands, Italy, Croatia — the largest modern network), the Caledonian Sleeper (London–Scottish Highlands), and Snälltåget (Sweden). In November 2023, the European Union Agency for Railways (ERA) issued the first authorisation for the new-generation Siemens Mobility Nightjet sleeper vehicle family — a milestone that paved the way for fleet renewal across European operators after decades without purpose-built sleeper stock. The European Parliament (research service, 2017) identified night trains as trains \"that carry passengers overnight, usually departing in the evening and arriving the following morning, offering sleeping accommodation as a distinguishing feature from day trains.\" Night trains are positioned as a sustainable alternative to short-haul aviation; the European Commission has actively promoted their revival through regulatory measures and funding. The OSDM standard is increasingly used for cross-operator sleeper booking and distribution.",
+      "longDef_ko": "슬리퍼 트레인은 장거리 여정에서 중간 숙박 호텔 없이 야간 이동 중 취침을 가능케 하는 단일 야간 서비스로 교통과 숙박을 결합한다. UIC는 야간 열차의 침대 숙박 형태를 세 가지로 분류한다: 침대칸(WL — 린넨 제공, 세면대 포함 개인 침실, 통상 1~3인), 쿠셰트칸(BC — 접이식 침대, 베개·담요·시트 제공, 통상 4~6개 침대), 그리고 동일 열차의 일반 좌석 또는 리클라이닝 좌석. 노선은 흔히 국경을 넘으며 최대 200 km/h의 속도로 기존 선로에서 운행한다. 주요 유럽 서비스로는 ÖBB Nightjet(유럽 최대 현대 네트워크), 칼레도니안 슬리퍼(런던–스코틀랜드 하이랜드), Snälltåget(스웨덴) 등이 있다. 2023년 11월, 유럽철도청(ERA)은 수십 년간 전용 신조 슬리퍼 차량 없이 지내던 유럽 운영사들의 차량 갱신을 가능케 하는 지멘스 모빌리티 신세대 Nightjet 슬리퍼 차량군에 대한 최초 형식 승인을 발급했다. 야간 열차는 단거리 항공의 지속 가능한 대안으로 자리매김하며, 유럽위원회는 규제 조치와 재정 지원을 통해 부활을 적극 추진하고 있다.",
+      "standardBody": "UIC",
+      "aliases": [
+        "Night Train",
+        "Overnight Train",
+        "Sleeping Car Train",
+        "Couchette Train"
+      ],
+      "providerTerms": [
+        {
+          "provider": "ÖBB (Austria)",
+          "term": "Nightjet",
+          "context": "ÖBB operates Nightjet as Europe's largest modern sleeper train network, connecting Austria, Germany, Belgium, the Netherlands, Switzerland, Italy, and Croatia. Nightjet offers private sleeper compartments, couchette cars, and standard seating on the same train.",
+          "context_ko": "ÖBB는 오스트리아·독일·벨기에·네덜란드·스위스·이탈리아·크로아티아를 연결하는 유럽 최대 현대 슬리퍼 트레인 네트워크 Nightjet를 운영하며, 동일 열차에 개인 침실·쿠셰트칸·일반 좌석을 모두 제공한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Serco / ScotRail (UK)",
+          "term": "Caledonian Sleeper",
+          "context": "The Caledonian Sleeper operates two overnight trains between London Euston and the Scottish Highlands (Lowlander and Highlander routes), offering Club Rooms (private en-suite), Caledonian Berths, and Seats.",
+          "context_ko": "칼레도니안 슬리퍼는 런던 유스턴과 스코틀랜드 하이랜드 사이에 두 개의 야간 노선(Lowlander·Highlander)을 운영하며, Club Room(개인 욕실), Caledonian Berth, 좌석을 제공한다.",
+          "relationship": "same"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "High-Speed Rail",
+          "targetId": "high-speed-rail"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Seat Reservation",
+          "targetId": "seat-reservation"
+        },
+        {
+          "type": "related",
+          "targetTerm": "OSDM",
+          "targetId": "osdm"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Multimodal Transport",
+          "targetId": "multimodal-transport"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Eurail Pass",
+          "targetId": "eurail-pass"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "High-Speed Rail",
+          "explanation": "High-speed rail services operate at 200–320 km/h on dedicated infrastructure to minimise journey time during the day; sleeper trains prioritise overnight comfort and arrival time over maximum speed, often operating on conventional mixed-traffic rail infrastructure.",
+          "explanation_ko": "고속철도 서비스는 200~320 km/h의 속도로 전용 선로를 운행해 낮 시간 이동 시간을 최소화하고, 슬리퍼 트레인은 최고 속도보다 야간 편안함과 도착 시간을 우선시하며 흔히 일반 혼합 운행 선로에서 운행한다.",
+          "targetId": "high-speed-rail"
+        }
+      ],
+      "sources": [
+        {
+          "name": "UIC Night Train Atlas — 2024 Edition",
+          "org": "International Union of Railways (UIC)",
+          "version": "2024",
+          "section": "",
+          "url": "https://uic.org/com/enews/article/publication-of-the-uic-night-train-atlas-2024-edition",
+          "tier": "standard-body"
+        },
+        {
+          "name": "ERA — First Authorisation for New Generation Sleeper Trains",
+          "org": "European Union Agency for Railways (ERA)",
+          "version": "2023",
+          "section": "",
+          "url": "https://www.era.europa.eu/content/era-signs-first-authorisation-new-generation-sleeper-trains-substantial-step-reviving-night",
+          "tier": "standard-body"
+        },
+        {
+          "name": "European Parliament Research Service — Passenger Night Trains in Europe: The End of the Line?",
+          "org": "European Parliament",
+          "version": "STUD/2017/601977",
+          "section": "",
+          "url": "https://www.europarl.europa.eu/RegData/etudes/STUD/2017/601977/IPOL_STU(2017)601977_EN.pdf",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"4\" y=\"20\" width=\"34\" height=\"16\" rx=\"3\"/><circle cx=\"12\" cy=\"38\" r=\"3\"/><circle cx=\"28\" cy=\"38\" r=\"3\"/><line x1=\"4\" y1=\"28\" x2=\"38\" y2=\"28\"/><path d=\"M34 20 Q44 28 44 28\"/><path d=\"M8 20 l3-6 h18 l3 6\"/><path d=\"M14 24 h4\"/><path d=\"M22 24 h4\"/><path d=\"M42 10 l1-3\"/><path d=\"M45 13 l3-1\"/><circle cx=\"43\" cy=\"8\" r=\"2\"/></svg>",
+      "term": "Sleeper Train",
+      "definition": "A scheduled overnight passenger train providing dedicated sleeping accommodation — sleeping-car compartments (couchettes or private rooms with beds) — enabling passengers to travel long distances overnight and arrive at their destination rested, without the cost of a hotel night. The UIC Night Train Atlas catalogues active sleeper services worldwide; ERA issued the first authorisation for a new-generation sleeper train fleet in 2023.",
+      "lastReviewed": "2026-07-03"
+    },
+    {
       "id": "slot",
       "vertical": "air",
       "category": "air-partner",
@@ -38602,6 +38864,74 @@
       "term": "Split PNR",
       "definition": "Splitting a PNR is the reservation process of dividing one Passenger Name Record into two so that one or more passengers can be handled separately from the rest of the party. The divided passengers are moved into a new PNR with its own Record Locator, while the original PNR retains the remaining passengers.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "split-ticketing",
+      "vertical": "ground",
+      "category": "rail",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "분할 발권(Split Ticketing)",
+      "definition_ko": "단일 목적지까지의 여정을 위해 두 장 이상의 별도 철도 승차권을 구매하는 방식으로, 보통 분할된 승차권의 합계 금액이 직통 승차권보다 저렴할 때 활용한다. 영국 National Rail 이용 조건(Condition 14)은 중간역에서 해당 승차권 상의 경유지를 정차하는 열차를 이용하는 한 복수 승차권의 조합 사용을 명시적으로 허용한다.",
+      "longDef": "Split ticketing exploits structural pricing anomalies in dynamic and yield-managed rail fare systems, where a direct A→C fare may be priced higher than the sum of A→B and B→C fares because the intermediate-station tickets each qualify for a different regulated or promotional fare bucket. The UK Office of Rail and Road (ORR), in its independent review of train operator revenue protection practices, notes that split ticketing is a legitimate passenger behaviour — not fare evasion — and that operators must accept valid split-ticket combinations. The National Rail Conditions of Travel (NRCOT), updated April 2024, govern this through Condition 14: passengers need not alight or board at the split point, but their service must be scheduled to call at that station. Specialist online tools (Trainsplit, Split Ticket UK) automate the identification of optimal split points. From a retail and distribution standpoint, split ticketing is a form of passenger self-optimisation against a complex tariff structure; it differs from Through-Ticketing, which is a single-contract product sold by the industry to simplify multi-operator journeys. The UK Williams-Shapps Plan for Rail (2021) acknowledged that split ticketing causes confusion and proposed fare simplification under Great British Railways, which would reduce pricing anomalies. Regulatory context: the ORR reviews whether staff responses to passengers presenting split tickets amount to inappropriate revenue protection.",
+      "longDef_ko": "분할 발권은 동적 운임 및 수익 관리 시스템의 구조적 가격 불균형을 활용한다. A→C 직통 운임이 A→B와 B→C 운임의 합보다 비싼 경우, 각 중간역 구간 승차권이 서로 다른 규제·프로모션 운임 범주에 해당하기 때문이다. 영국 철도 규제 기관(ORR)은 열차 운영사 수익 보호 관행에 관한 독립 검토에서 분할 발권이 적법한 승객 행위이며 요금 사기가 아님을 명시하고, 운영사는 유효한 분할 발권 조합을 수용해야 한다고 밝혔다. 2024년 4월 개정된 National Rail 이용 조건(NRCOT) Condition 14에 따라 승객은 분할 지점에서 반드시 하차·탑승할 필요는 없으나, 이용 열차가 해당 역에 정차하도록 예정되어 있어야 한다. 유통 관점에서 분할 발권은 복잡한 운임 체계에 대한 승객의 자체 최적화이며, 복잡한 다중 운영사 여정을 단일 계약으로 단순화하는 Through-Ticketing(통합 발권)과 구별된다. 영국 Williams-Shapps 철도 개혁안(2021)은 분할 발권이 혼란을 초래함을 인정하고, Great British Railways 체제 하의 운임 단순화를 제안했다.",
+      "aliases": [
+        "Split Ticket",
+        "Ticket Split",
+        "Split-Fare Ticketing"
+      ],
+      "relationships": [
+        {
+          "type": "contrasts",
+          "targetTerm": "Through-Ticketing",
+          "targetId": "through-ticketing"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Season Ticket",
+          "targetId": "season-ticket"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Rail Passenger Rights Regulation (EU) 2021/782",
+          "targetId": "rail-passenger-rights-regulation-eu-2021-782"
+        },
+        {
+          "type": "related",
+          "targetTerm": "OSDM",
+          "targetId": "osdm"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Through-Ticketing",
+          "explanation": "Through-ticketing is a single contract product spanning multiple operators or modes, sold by the industry to simplify complex journeys; split ticketing is a passenger-initiated practice of buying separate tickets for journey segments where the disaggregated fares are cheaper, exploiting gaps in the pricing system rather than simplifying it.",
+          "explanation_ko": "통합 발권(Through-Ticketing)은 여러 운영사나 교통수단에 걸친 단일 계약 상품으로, 복잡한 여정을 단순화하기 위해 철도 업계가 판매하는 것이다. 반면 분할 발권은 분리된 구간 운임이 더 저렴한 경우 승객이 자체적으로 별도 승차권을 구매하는 방식으로, 가격 체계의 빈틈을 활용하는 것이다.",
+          "targetId": "through-ticketing"
+        }
+      ],
+      "sources": [
+        {
+          "name": "National Rail Conditions of Travel (April 2024) — Condition 14",
+          "org": "Rail Delivery Group (National Rail)",
+          "version": "April 2024",
+          "section": "Condition 14 — Combinations of tickets",
+          "url": "https://www.nationalrail.co.uk/tickets-railcards-and-offers/buying-a-ticket/split-train-tickets/",
+          "tier": "association"
+        },
+        {
+          "name": "Independent Review of Train Operators Revenue Protection Practices — Section 1: Context",
+          "org": "Office of Rail and Road (ORR)",
+          "version": "2024",
+          "section": "",
+          "url": "https://www.orr.gov.uk/independent-review-train-operators-revenue-protection-practices/1-context-review",
+          "tier": "standard-body"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"4\" y=\"16\" width=\"16\" height=\"16\" rx=\"2\"/><rect x=\"28\" y=\"16\" width=\"16\" height=\"16\" rx=\"2\"/><line x1=\"4\" y1=\"24\" x2=\"10\" y2=\"24\"/><line x1=\"16\" y1=\"24\" x2=\"20\" y2=\"24\" stroke-dasharray=\"2 2\"/><line x1=\"28\" y1=\"24\" x2=\"22\" y2=\"24\" stroke-dasharray=\"2 2\"/><line x1=\"38\" y1=\"24\" x2=\"44\" y2=\"24\"/><line x1=\"8\" y1=\"20\" x2=\"8\" y2=\"28\"/><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"28\"/></svg>",
+      "term": "Split Ticketing",
+      "definition": "The practice of purchasing two or more separate rail tickets that together cover a single through journey — typically because the combined cost of the split tickets is lower than the price of a single through-ticket. In Great Britain, the National Rail Conditions of Travel (Condition 14) explicitly permit passengers to use a combination of tickets, provided their boarded service calls at each intermediate point shown on the ticket.",
+      "lastReviewed": "2026-07-03"
     },
     {
       "id": "ssr",
@@ -40575,6 +40905,94 @@
       "term": "Through Fare",
       "definition": "A single published fare covering carriage between an origin and a final destination over the whole journey, including any intermediate connecting points, rather than the sum of separate local fares for each segment. Through fares are filed and priced as one product and are commonly lower than adding up point-to-point fares.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "through-ticketing",
+      "vertical": "ground",
+      "category": "rail",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "통합 발권(Through-Ticketing)",
+      "definition_ko": "하나 이상의 철도 운영사 또는 교통수단이 운영하는 연속 서비스를 단일 운송 계약 하에 묶어, 출발지에서 목적지까지 하나의 구매·운임·여객 권리 적용 체계로 여행할 수 있게 하는 승차권 또는 승차권 조합. EU 규정 2021/782 제3조는 이를 \"하나 이상의 철도 운영사가 운행하는 연속 철도 서비스에 대한 단일 운송 계약을 나타내는 승차권 또는 승차권들\"로 정의한다.",
+      "longDef": "The legal significance of through-ticketing is primarily in passenger rights: under EU Regulation 2021/782, when a passenger holds a through-ticket and misses a connection due to a delay, the carrier issuing the ticket is obliged to re-route or refund the passenger — even if the delay occurred on a service operated by a different railway undertaking. This protection does not apply when the passenger holds separate tickets (i.e., split ticketing) because each ticket represents an independent contract. In the UK, train operators are required as a condition of their operating licence to participate in arrangements for the sale and acceptance of through tickets across the National Rail network; the Rail Delivery Group (RDG) administers this via the Ticketing and Settlement Agreement (TSA). The OSDM (Open Sales and Distribution Model) standard, developed under UIC auspices, is the technical rail-industry architecture designed to enable cross-operator through-ticketing at scale across European networks, replacing bilateral agreements with a standardised offer-and-order API. The European Commission's proposed Single Digital Booking and Ticketing Regulation (SDBTR, May 2026) aims to extend through-ticketing obligations to multimodal journeys (rail + bus, rail + ferry) under a \"one journey, one ticket\" framework. In practice, true through-ticketing — where connection protection applies — is more common within a single operator (e.g., National Rail UK, DB Germany, SNCF France) than across multiple competing operators, where commercial agreements and technical interoperability have historically been barriers.",
+      "longDef_ko": "통합 발권의 법적 중요성은 주로 여객 권리에 있다. EU 규정 2021/782에 따르면, 승객이 통합 발권을 소지하고 지연으로 인해 환승을 놓칠 경우, 다른 철도 운영사의 서비스에서 지연이 발생했더라도 발권 운영사는 승객의 재경로 배정 또는 환불 의무를 진다. 별도 승차권을 소지한 경우(분할 발권)에는 각 승차권이 독립 계약을 구성하므로 이 보호가 적용되지 않는다. 영국에서는 열차 운영사가 운영 면허 조건에 따라 National Rail 전체 네트워크에서 통합 발권의 판매·수용 협정에 참여해야 하며, Rail Delivery Group(RDG)이 발권·정산 협정(TSA)을 통해 이를 관리한다. UIC 주관 하에 개발된 OSDM(개방형 판매·유통 모델)은 양자 협정을 표준화된 오퍼·주문 API로 대체해 유럽 네트워크 전반에 걸쳐 운영사 간 통합 발권을 가능케 하는 기술 표준이다. 유럽위원회의 단일 디지털 예약·발권 규정(SDBTR, 2026년 5월 제안)은 \"한 여정, 한 승차권\" 체계 하에 복합운송(철도+버스, 철도+페리) 여정에도 통합 발권 의무를 확대하는 것을 목표로 한다.",
+      "aliases": [
+        "Through Ticket",
+        "Through-Fare Ticket",
+        "Connecting Ticket",
+        "Combined Ticket"
+      ],
+      "relationships": [
+        {
+          "type": "contrasts",
+          "targetTerm": "Split Ticketing",
+          "targetId": "split-ticketing"
+        },
+        {
+          "type": "related",
+          "targetTerm": "OSDM",
+          "targetId": "osdm"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Multimodal Transport",
+          "targetId": "multimodal-transport"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Rail Passenger Rights Regulation (EU) 2021/782",
+          "targetId": "rail-passenger-rights-regulation-eu-2021-782"
+        },
+        {
+          "type": "related",
+          "targetTerm": "TAP TSI",
+          "targetId": "tap-tsi"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Split Ticketing",
+          "explanation": "A through-ticket is a single contract providing connection protection and unified passenger rights across operators; split ticketing involves separate contracts per segment, with no carrier liability if a connection is missed due to delay on a prior segment.",
+          "explanation_ko": "통합 발권은 운영사 전반에 걸쳐 환승 보호와 통합 여객 권리를 제공하는 단일 계약이고, 분할 발권은 구간별 별도 계약으로서 이전 구간의 지연으로 환승을 놓쳐도 운송사 책임이 없다.",
+          "targetId": "split-ticketing"
+        },
+        {
+          "targetTerm": "OSDM",
+          "explanation": "OSDM is the UIC-backed API standard that enables railway undertakings to exchange offer and booking data across operator boundaries; through-ticketing is the passenger-facing commercial product and contractual outcome that OSDM is designed to make technically feasible at scale.",
+          "explanation_ko": "OSDM은 철도 운영사들이 운영사 경계를 넘어 오퍼·예약 데이터를 교환할 수 있게 하는 UIC 후원 API 표준이고, 통합 발권은 OSDM이 대규모로 기술적으로 실현하고자 하는 승객 대면 상업 상품이자 계약 결과물이다.",
+          "targetId": "osdm"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Regulation (EU) 2021/782 on rail passengers' rights and obligations — Article 3",
+          "org": "European Union",
+          "version": "OJ L 172, 17 May 2021",
+          "section": "Article 3 — Definitions",
+          "url": "https://eur-lex.europa.eu/eli/reg/2021/782/oj/eng",
+          "tier": "regulation"
+        },
+        {
+          "name": "ORR — Licence Obligations: Through Ticketing",
+          "org": "Office of Rail and Road (ORR)",
+          "version": "",
+          "section": "",
+          "url": "https://www.orr.gov.uk/guidance-compliance/rail/operator-licences-exemptions/licence-obligations",
+          "tier": "standard-body"
+        },
+        {
+          "name": "European Commission — Single Digital Booking and Ticketing Regulation (SDBTR) Overview",
+          "org": "European Commission",
+          "version": "2026",
+          "section": "",
+          "url": "https://transport.ec.europa.eu/news-events/news/one-journey-one-ticket-full-rights-commission-simplifies-europe-wide-travel-booking-and-train-travel-2026-05-13_en",
+          "tier": "standard-body"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"4\" y=\"16\" width=\"40\" height=\"16\" rx=\"2\"/><circle cx=\"14\" cy=\"24\" r=\"2\"/><circle cx=\"24\" cy=\"24\" r=\"2\"/><circle cx=\"34\" cy=\"24\" r=\"2\"/><line x1=\"4\" y1=\"24\" x2=\"12\" y2=\"24\"/><line x1=\"16\" y1=\"24\" x2=\"22\" y2=\"24\"/><line x1=\"26\" y1=\"24\" x2=\"32\" y2=\"24\"/><line x1=\"36\" y1=\"24\" x2=\"44\" y2=\"24\"/><line x1=\"8\" y1=\"20\" x2=\"8\" y2=\"28\"/></svg>",
+      "term": "Through-Ticketing",
+      "definition": "A ticket or set of tickets representing a single transport contract for successive services operated by one or more railway undertakings or transport modes, enabling a passenger to travel from origin to destination under unified purchase, fare, and passenger-rights coverage. EU Regulation 2021/782 (Article 3) provides the binding legal definition within the EU/EEA: \"a ticket or tickets representing a single transport contract for successive railway services operated by one or more railway undertakings.\"",
+      "lastReviewed": "2026-07-03"
     },
     {
       "id": "ticket-number",
@@ -44412,6 +44830,98 @@
       "term": "White-Label Booking",
       "definition": "A booking experience powered by a marketplace or res-tech provider but presented under the partner's own brand, often as an embeddable widget or storefront.",
       "lastReviewed": "2026-06-24"
+    },
+    {
+      "id": "world-cruise",
+      "vertical": "cruise",
+      "category": "cruise",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "월드 크루즈(World Cruise)",
+      "definition_ko": "단일 선박이 지구를 일주하거나 세계 주요 대양을 광범위하게 순항하는 여정으로, 통상 100~120일 이상 운항하며 5대륙의 30~50개 이상 항구를 기항한다. 월드 크루즈는 주요 선사의 최고급 플래그십 상품으로, 산업 내 최고 수준의 선실 단가를 형성한다.",
+      "longDef": "A world cruise is defined by geographic scope (circumnavigation or near-circumnavigation), voyage length (typically 100 days or more), and a luxury positioning that places it at the apex of cruise pricing. Itineraries typically depart from a Northern Hemisphere homeport (Southampton, New York, or Fort Lauderdale) in January or early February, proceeding east or west to traverse the Atlantic, Pacific, and Indian Oceans and returning in April or May. Port calls span multiple continents and include marquee destinations (Cape Town, Mumbai, Sydney, Tokyo, the Panama or Suez Canal) alongside less-visited waypoints. Partial \"sector\" or \"grand voyage\" segments allow passengers who cannot commit to the full circumnavigation to join or leave at intermediate ports, and these segments are sold as separate products at proportional pricing. Revenue concentration is high: the average world-cruise fare per passenger typically exceeds USD 30,000 and can reach six figures for luxury suites. Cunarders (Queen Mary 2), Holland America, Silversea, Crystal, Regent Seven Seas, and Viking Ocean are the principal operators. CLIA reports that world-cruise and extended-voyage products attract the highest net promoter scores of any cruise segment and that repeat-passenger rates exceed 80% on some sailings. Wave Season (January–March) coincides with the peak world-cruise booking and departure window.",
+      "longDef_ko": "월드 크루즈는 지리적 범위(지구 일주 또는 근접 일주), 항해 기간(통상 100일 이상), 크루즈 산업 최고 수준의 고가 포지셔닝을 특징으로 한다. 여정은 통상 1월 또는 2월 초 북반구 모항(사우샘프턴·뉴욕·포트로더데일)을 출발해 동서 방향으로 대서양·태평양·인도양을 횡단한 뒤 4~5월에 귀항한다. 기항지는 케이프타운·뭄바이·시드니·도쿄·파나마운하·수에즈운하 등 핵심 목적지와 방문 빈도가 낮은 기항지를 포함하며 여러 대륙에 걸쳐 있다. 전체 일주에 참가하지 못하는 승객을 위한 부분 구간(섹터) 또는 \"그랜드 보야지(grand voyage)\" 상품도 별도로 판매된다. 수익 집중도가 높아 승객 1인당 평균 운임은 통상 3만 달러 이상이며, 럭셔리 스위트의 경우 6자리 숫자에 달하기도 한다. CLIA에 따르면 월드 크루즈 및 장기 항해 상품은 모든 크루즈 세그먼트 중 가장 높은 순추천지수(NPS)를 기록하며, 일부 항차에서는 반복 탑승객 비율이 80%를 초과한다.",
+      "standardBody": "CLIA",
+      "aliases": [
+        "Grand Voyage",
+        "Grand World Voyage",
+        "Around-the-World Cruise",
+        "Global Voyage",
+        "Circumnavigation Cruise"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Cunard (Carnival Corporation)",
+          "term": "World Voyage",
+          "context": "Cunard has marketed its annual circumnavigation aboard Queen Mary 2 as the \"World Voyage\" since the ship's launch in 2004, offering full and sector sailings.",
+          "context_ko": "커나드는 2004년 퀸 메리 2 취항 이후 연간 일주 항해를 \"World Voyage\"로 명명하며, 전 구간 및 구간 탑승 상품을 판매한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Viking Ocean",
+          "term": "World Cruises",
+          "context": "Viking Ocean offers extended circumnavigation voyages branded as \"World Cruises,\" typically over 120 days, departing in winter from Miami or London.",
+          "context_ko": "바이킹 오션은 통상 120일 이상의 일주 항해 상품을 \"World Cruises\"로 브랜딩하며, 겨울철 마이애미 또는 런던을 출발한다.",
+          "relationship": "same"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Repositioning Cruise",
+          "targetId": "repositioning-cruise"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Wave Season",
+          "targetId": "wave-season"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Cruise-Only Fare",
+          "targetId": "cruise-only-fare"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Non-Commissionable Fare (NCF)",
+          "targetId": "non-commissionable-fare-ncf"
+        },
+        {
+          "type": "related",
+          "targetTerm": "CLIA (Cruise Lines International Association)",
+          "targetId": "clia"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Repositioning Cruise",
+          "explanation": "A repositioning cruise moves a ship one-way between two homeports, typically lasting 10–20 days, and is priced at a discount to standard sailings; a world cruise is a prestige round-trip circumnavigation of 100+ days at premium pricing.",
+          "explanation_ko": "레포지셔닝 크루즈는 통상 10~20일 기간으로 선박을 두 모항 사이에서 편도 이동시키며 할인 운임이 적용된다. 반면 월드 크루즈는 100일 이상의 프리미엄 왕복 지구 일주 항해이다.",
+          "targetId": "repositioning-cruise"
+        }
+      ],
+      "sources": [
+        {
+          "name": "CLIA 2025 State of the Cruise Industry Report — Extended Voyage Segment",
+          "org": "Cruise Lines International Association (CLIA)",
+          "version": "2025",
+          "section": "",
+          "url": "https://cruising.org/resources/state-cruise-industry-report-2025",
+          "tier": "association"
+        },
+        {
+          "name": "CLIA — Cruise Types Overview",
+          "org": "Cruise Lines International Association (CLIA)",
+          "version": "",
+          "section": "",
+          "url": "https://cruising.org/",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"18\"/><ellipse cx=\"24\" cy=\"24\" rx=\"8\" ry=\"18\"/><line x1=\"6\" y1=\"24\" x2=\"42\" y2=\"24\"/><path d=\"M16 12 Q24 8 32 12\"/><path d=\"M16 36 Q24 40 32 36\"/><path d=\"M8 38 l4-6 12 2 4-6 12 4-2 4 z\" stroke-width=\"1.5\"/></svg>",
+      "term": "World Cruise",
+      "definition": "An itinerary in which a single ship circumnavigates the globe — or traverses a near-complete circuit of the world's oceans — typically over 100–120 or more days, calling at 30–50+ ports across multiple continents. World cruises are the flagship luxury product of major cruise lines and command the highest per-berth price points in the industry.",
+      "lastReviewed": "2026-07-03"
     },
     {
       "id": "worldtracer",
