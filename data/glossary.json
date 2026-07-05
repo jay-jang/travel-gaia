@@ -2,8 +2,8 @@
   "meta": {
     "name": "Travel Wiki",
     "tagline": "여행 산업 용어 백과사전",
-    "generatedAt": "2026-07-04",
-    "entryCount": 505,
+    "generatedAt": "2026-07-05",
+    "entryCount": 511,
     "categoryCount": 20,
     "verticalCount": 6
   },
@@ -6032,6 +6032,100 @@
       "term": "Booking Limit",
       "definition": "A booking limit is the maximum number of seats a revenue-management system will sell in a given fare class or inventory bucket on a flight. It is the operational output of seat inventory control that, class by class, governs how many seats are released and therefore what availability a seller sees.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "booking-pace",
+      "vertical": "lodging",
+      "category": "hotel-rate",
+      "conceptType": "metric",
+      "status": "active",
+      "term_ko": "예약 속도 (Booking Pace)",
+      "definition_ko": "예약 속도(Booking Pace)는 특정 미래 도착일에 대해 예약이 누적되는 속도를 측정하는 호텔 수익 관리 지표로, 특정 예약 선행기간(days in advance)에서의 확정 객실 수(OTB)로 표현된다. 속도는 전년 동일 시점(또는 기준 기간)과 비교하여 수요가 역사적 기준보다 빠르게 또는 느리게 쌓이고 있는지 파악하고, 요금 및 재고 의사결정을 선제적으로 내릴 수 있게 한다.",
+      "longDef": "Booking pace is read by comparing on-the-books (OTB) data for a future date at the same point in the booking window in a prior period — for example, comparing rooms booked 60 days before arrival this year against rooms booked 60 days before the same date last year. A positive pace (ahead of last year) suggests strong demand, which can support a rate increase; a negative pace may warrant promotional action or lower channel restrictions. Pace is distinct from pickup: pace is the snapshot comparison of a cumulative OTB count, while pickup measures the incremental change in OTB over a short recent window (e.g., the past 7 days). Both metrics are standard inputs to revenue-management system (RMS) algorithms and manual revenue-management review processes. Pace is also used in group and events business to monitor block fill against the contract cut-off date.",
+      "longDef_ko": "예약 속도는 특정 미래 날짜의 확정 객실 수(OTB) 데이터를, 예약 창 내 동일 시점의 이전 기간과 비교하여 파악한다. 예를 들어, 올해 도착일 60일 전 예약 객실 수를 작년 같은 날짜의 60일 전과 비교하는 방식이다. 속도가 전년보다 빠르면(positive pace) 강한 수요를 시사하여 요금 인상을 지지하고, 느리면(negative pace) 프로모션 실행이나 채널 제한 완화를 고려할 수 있다. 예약 속도는 픽업(pickup)과 구별된다. 속도는 누적 OTB 건수의 스냅샷 비교이고, 픽업은 최근 단기간(예: 과거 7일)의 OTB 증분 변화다. 두 지표 모두 수익 관리 시스템(RMS) 알고리즘 및 수동 수익 관리 검토 프로세스의 표준 입력값이다. 그룹·이벤트 영업에서는 계약 cut-off date에 대비한 블록 채움 속도를 모니터링하는 데도 사용된다.",
+      "aliases": [
+        "Pace",
+        "Booking Build",
+        "On-the-Books Pace",
+        "OTB Pace"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Dynamic Pricing",
+          "targetId": "dynamic-pricing"
+        },
+        {
+          "type": "broader",
+          "targetTerm": "Revenue Management",
+          "targetId": "revenue-management"
+        },
+        {
+          "type": "related",
+          "targetTerm": "ADR",
+          "targetId": "adr"
+        },
+        {
+          "type": "related",
+          "targetTerm": "RevPAR",
+          "targetId": "revpar"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Occupancy",
+          "targetId": "occupancy"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Dynamic Pricing",
+          "explanation": "Booking pace is an input metric — it tells the revenue manager how fast demand is building for a date; dynamic pricing is the output process of adjusting the selling rate in response to that and other signals.",
+          "explanation_ko": "예약 속도는 입력 지표로, 특정 날짜에 수요가 얼마나 빠르게 쌓이는지 수익 관리자에게 알려주고, Dynamic Pricing은 그 신호와 다른 신호에 반응하여 판매 요금을 조정하는 출력 프로세스이다.",
+          "targetId": "dynamic-pricing"
+        },
+        {
+          "targetTerm": "Occupancy",
+          "explanation": "Occupancy is a historical metric reporting the percentage of rooms sold for dates that have already passed; booking pace is a forward-looking metric showing how rooms are accumulating for future dates.",
+          "explanation_ko": "객실 점유율(Occupancy)은 이미 지난 날짜에 대해 판매된 객실 비율을 보고하는 과거 지표이고, 예약 속도는 미래 날짜에 대해 객실이 어떻게 누적되는지 보여주는 전향적 지표이다.",
+          "targetId": "occupancy"
+        },
+        {
+          "targetTerm": "RevPAR",
+          "explanation": "RevPAR measures realised revenue per available room across dates already sold; booking pace gives the forward-looking trajectory of demand accumulation, indicating what RevPAR may materialise if the current trend continues.",
+          "explanation_ko": "RevPAR는 이미 판매된 날짜의 가용 객실당 실현 수익을 측정하고, 예약 속도는 현재 추세가 지속될 경우 어떤 RevPAR가 실현될지 시사하는 수요 누적의 전향적 궤적을 제공한다.",
+          "targetId": "revpar"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Booking Pace Definition / Meaning",
+          "org": "Xotels — Hotel Revenue Management Consultancy",
+          "version": "",
+          "section": "",
+          "url": "https://www.xotels.com/en/glossary/booking-pace",
+          "tier": "secondary"
+        },
+        {
+          "name": "What Is Booking Pace? (Hotel Terminology)",
+          "org": "Canary Technologies",
+          "version": "",
+          "section": "",
+          "url": "https://www.canarytechnologies.com/hotel-terminology/booking-pace",
+          "tier": "secondary"
+        },
+        {
+          "name": "The importance of pickup and pace in hotel revenue management",
+          "org": "Lighthouse (formerly OTA Insight)",
+          "version": "",
+          "section": "",
+          "url": "https://www.mylighthouse.com/resources/blog/booking-pickup-and-pace-revenue-management",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"8,36 18,24 26,30 38,12\"/><circle cx=\"38\" cy=\"12\" r=\"3\"/><line x1=\"8\" y1=\"40\" x2=\"40\" y2=\"40\"/><line x1=\"8\" y1=\"40\" x2=\"8\" y2=\"8\"/></svg>",
+      "term": "Booking Pace",
+      "definition": "Booking pace is a hotel revenue-management metric that measures the rate at which reservations are accumulating for a specific future arrival date — expressed as rooms on-the-books (OTB) at a given number of days in advance. Pace is compared against the same point last year (or a benchmark period) to reveal whether demand is building faster or slower than historic norms, enabling proactive rate and inventory decisions.",
+      "lastReviewed": "2026-07-05"
     },
     {
       "id": "booking-status-code",
@@ -15869,6 +15963,100 @@
       "term": "Fly-Cruise",
       "definition": "The air-inclusive cruise booking model in which the cruise line's own air program bundles flights to and from the embarkation/disembarkation ports with the cruise — typically adding airport-to-pier transfers and disruption protection. Branded programs such as Royal Caribbean's Air2Sea (formerly ChoiceAir / now 'Flights by Royal') let guests buy airfare through the line, often with price guarantees and dedicated re-accommodation support if a flight is delayed or cancelled.",
       "lastReviewed": "2026-06-18"
+    },
+    {
+      "id": "force-majeure",
+      "vertical": "common",
+      "category": "disruption",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "불가항력 (Force Majeure)",
+      "definition_ko": "불가항력(Force Majeure, 프랑스어로 \"더 큰 힘\")은 자연재해, 팬데믹, 전쟁 행위, 정부 조치 등 예견할 수 없고 회피 불가능한 특별한 사건이 계약 이행을 불가능하게 만들 때, 당사자 일방 또는 쌍방을 의무 이행에서 면제하는 계약법 원칙이다. 여행 계약에서 불가항력 조항은 당사자의 통제 밖에서 발생한 사건으로 인한 취소·변경에 대한 책임을 제한하거나 배제하기 위해 원용된다.",
+      "longDef": "Force majeure clauses define the triggering events (often called \"events of force majeure\" or \"acts of God\"), the notice obligations on the party invoking the clause, and the resulting rights — which may include suspension of obligations, price adjustments, or termination without penalty. In package travel, EU Directive 2015/2302 Article 12 codifies \"unavoidable and extraordinary circumstances\" as a statutory analogue to force majeure, allowing travellers to cancel without cancellation fees and entitling organisers to terminate if performance is impossible. Tour operator terms-and-conditions routinely list specific force majeure triggers such as war, terrorism, pandemic, earthquake, volcanic eruption, flood, and government travel prohibitions. Force majeure is distinct from frustration of contract (a common-law doctrine) and from the EU261 \"extraordinary circumstances\" defence (which is specific to airline compensation obligations).",
+      "longDef_ko": "불가항력 조항은 발동 사건(흔히 \"불가항력 사건\" 또는 \"천재지변\"이라 함), 이를 원용하는 당사자의 통지 의무, 그리고 그 결과적 권리 — 이행 유예, 가격 조정, 위약금 없는 계약 해지 등 — 를 규정한다. 패키지 여행 분야에서 EU 지침 2015/2302 Article 12는 \"피할 수 없는 특별한 사정\"을 불가항력의 법정 유사 개념으로 성문화하여, 여행자는 취소 수수료 없이 취소할 수 있고 이행이 불가능한 경우 주최자도 계약을 해지할 수 있다. 투어 운영사의 이용약관은 전쟁, 테러, 팬데믹, 지진, 화산 폭발, 홍수, 정부의 여행 금지 등 구체적인 불가항력 발동 사건을 열거한다. 불가항력은 보통법상 계약 이행 불능(frustration) 개념, 그리고 항공사 보상 의무에 특유한 EU261의 \"특별한 사정\" 항변과 구별된다.",
+      "aliases": [
+        "Force Majeure Clause",
+        "Act of God",
+        "Vis Major",
+        "Unavoidable and Extraordinary Circumstances"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Extraordinary Circumstances",
+          "targetId": "extraordinary-circumstances"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Package Travel Directive",
+          "targetId": "package-travel-directive"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Weather Policy",
+          "targetId": "weather-policy"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Cancellation Policy",
+          "targetId": "cancellation-policy"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Travel Advisory",
+          "targetId": "travel-advisory"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Extraordinary Circumstances",
+          "explanation": "\"Extraordinary circumstances\" under EU Regulation 261/2004 is a narrowly defined statutory defence specific to airline cancellation/delay compensation; force majeure is the broader contractual doctrine that appears across all travel contracts (tours, hotels, cruises) and may excuse a wider range of obligations.",
+          "explanation_ko": "EU Regulation 261/2004의 \"특별한 사정\"은 항공 취소·지연 보상에 특유한 좁게 정의된 법정 항변이고, 불가항력은 모든 여행 계약(투어, 호텔, 크루즈)에 걸쳐 더 폭넓은 의무를 면제할 수 있는 더 넓은 계약법 원칙이다.",
+          "targetId": "extraordinary-circumstances"
+        },
+        {
+          "targetTerm": "Package Travel Directive",
+          "explanation": "The Package Travel Directive provides a statutory minimum framework for \"unavoidable and extraordinary circumstances\" in package holidays; force majeure is the underlying legal doctrine from which that statutory concept derives, and may also appear in individual travel contracts as a contractual (non-statutory) term.",
+          "explanation_ko": "Package Travel Directive는 패키지 여행의 \"피할 수 없는 특별한 사정\"에 대한 법정 최소 프레임워크를 제공하고, 불가항력은 그 법정 개념이 도출된 기저 법리로, 개별 여행 계약에서는 계약상(비법정) 조항으로도 등장할 수 있다.",
+          "targetId": "package-travel-directive"
+        },
+        {
+          "targetTerm": "Cancellation Policy",
+          "explanation": "A cancellation policy governs the fees and procedures for cancelling a booking under normal circumstances; a force majeure clause is invoked only when performance becomes impossible due to an exceptional, uncontrollable event and may override or supplement the standard cancellation policy.",
+          "explanation_ko": "취소 정책은 통상적인 상황에서 예약을 취소할 때의 수수료와 절차를 규정하고, 불가항력 조항은 이행이 통제 불가능한 특별한 사건으로 불가능해질 때만 원용되며, 표준 취소 정책보다 우선하거나 이를 보완할 수 있다.",
+          "targetId": "cancellation-policy"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Directive (EU) 2015/2302 on Package Travel — Article 12",
+          "org": "European Union",
+          "version": "",
+          "section": "Article 12",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32015L2302",
+          "tier": "regulation"
+        },
+        {
+          "name": "Force Majeure in Travel Contracts (ABTA guidance)",
+          "org": "ABTA — The Travel Association",
+          "version": "",
+          "section": "",
+          "url": "https://www.abta.com/news/force-majeure-when-unexpected-happens",
+          "tier": "association"
+        },
+        {
+          "name": "Force Majeure Clauses in Travel and Event Contracts",
+          "org": "Nova Southeastern University Law Review",
+          "version": "",
+          "section": "",
+          "url": "https://nsuworks.nova.edu/cgi/viewcontent.cgi?article=1184&context=nlr",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 6L6 36h36L24 6z\"/><path d=\"M24 18v8\"/><circle cx=\"24\" cy=\"30\" r=\"1.5\" fill=\"currentColor\"/><path d=\"M12 40h24\"/><path d=\"M8 44h32\"/></svg>",
+      "term": "Force Majeure",
+      "definition": "Force majeure (French: \"greater force\") is a contractual doctrine that excuses one or both parties from performance of their obligations when an unforeseeable and unavoidable extraordinary event — such as a natural disaster, pandemic, act of war, or government action — renders performance impossible. In travel contracts, force majeure clauses are invoked to limit or eliminate liability for cancellations and changes caused by events outside the parties' control.",
+      "lastReviewed": "2026-07-05"
     },
     {
       "id": "form-of-payment",
@@ -39002,6 +39190,102 @@
       "lastReviewed": "2026-06-18"
     },
     {
+      "id": "specialty-dining",
+      "vertical": "cruise",
+      "category": "cruise",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "스페셜티 다이닝(Specialty Dining)",
+      "definition_ko": "스페셜티 다이닝은 크루즈선 내 포함된 메인 다이닝룸 외의 대안 레스토랑으로, 통상 특색 있는 요리, 아늑한 분위기, 또는 수준 높은 미식 경험을 인당 커버차지 또는 단품 가격으로 제공한다. 스페셜티 다이닝 시설은 크루즈 선내 부가(ancillary) 수익의 주요 원천으로, 승선 전 및 선상에서 판매된다.",
+      "longDef": "Specialty restaurants typically seat fewer guests than the main dining room and require advance reservations. Surcharges commonly range from USD 15 for casual concepts (burger bars, taco counters) to USD 150 or more for premium chef-driven restaurants. Some cruise lines bundle specialty dining into premium drink-and-dining packages or include select venues in higher cabin grades. Cruise lines such as Norwegian Cruise Line pioneered the \"Freestyle Dining\" model that expanded specialty options to fill the gap left by eliminating fixed-seating main-dining schedules; today virtually every major cruise brand operates multiple specialty venues per ship as core ancillary revenue generators. Onboard credit (OBC) may be applied toward specialty dining charges. In distribution, specialty dining is modelled as a separate bookable ancillary service, distinct from standard meal inclusions.",
+      "longDef_ko": "스페셜티 레스토랑은 메인 다이닝룸보다 좌석 수가 적고 사전 예약이 필요한 경우가 대부분이다. 추가 요금은 통상 캐주얼 개념(버거 바, 타코 카운터)의 경우 USD 15부터, 셰프가 운영하는 프리미엄 레스토랑의 경우 USD 150 이상까지 다양하다. 일부 선사는 스페셜티 다이닝을 프리미엄 음료·다이닝 패키지에 묶거나 상위 선실 등급에 포함시킨다. 노르위전 크루즈라인은 고정석 메인다이닝 스케줄을 없애고 스페셜티 옵션을 확대한 \"Freestyle Dining\" 모델을 선도했으며, 현재 거의 모든 주요 크루즈 브랜드가 핵심 부가 수익원으로 선박당 여러 스페셜티 시설을 운영한다. 선내 크레딧(OBC)은 스페셜티 다이닝 요금에 사용할 수 있다. 유통 측면에서 스페셜티 다이닝은 표준 식사 포함과 구별되는 별도 예약 가능한 부가 서비스로 모델링된다.",
+      "aliases": [
+        "Specialty Restaurant",
+        "Alternative Dining",
+        "Premium Dining"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Norwegian Cruise Line",
+          "term": "Specialty Dining / Freestyle Choice Dining Package",
+          "context": "NCL pioneered the Freestyle Dining model and sells specialty dining access via per-venue cover charges or bundled dining packages (e.g. Specialty Dining Package).",
+          "context_ko": "NCL은 Freestyle Dining 모델을 선도했으며, 시설별 커버차지 또는 묶음 다이닝 패키지(예: Specialty Dining Package)를 통해 스페셜티 다이닝 이용권을 판매한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Royal Caribbean International",
+          "term": "Specialty Dining / Dining Package",
+          "context": "Royal Caribbean offers specialty dining venues at per-reservation cover charges or via a multi-night Dining Package sold pre-cruise.",
+          "context_ko": "로열캐리비안은 예약당 커버차지 또는 승선 전 판매하는 멀티나이트 Dining Package를 통해 스페셜티 다이닝 시설을 제공한다.",
+          "relationship": "same"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Onboard Credit (OBC)",
+          "targetId": "onboard-credit-obc"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Daily Service Charge",
+          "targetId": "daily-service-charge"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Shore Excursion",
+          "targetId": "shore-excursion"
+        },
+        {
+          "type": "contrasts",
+          "targetTerm": "Open Seating Dining",
+          "targetId": "open-seating-dining"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Open Seating Dining",
+          "explanation": "Open seating dining is the flexible, included approach to the main dining room (any time, any table); specialty dining is a separately priced, reservable alternative restaurant experience beyond the standard included meals.",
+          "explanation_ko": "Open Seating Dining은 메인 다이닝룸에 대한 유연한 포함 방식(시간·좌석 자유)이고, 스페셜티 다이닝은 표준 포함 식사를 넘어 별도 가격이 부과되고 예약 가능한 대안 레스토랑 경험이다.",
+          "targetId": "open-seating-dining"
+        },
+        {
+          "targetTerm": "Onboard Credit (OBC)",
+          "explanation": "OBC is the shipboard credit balance the guest can spend on any onboard purchase including specialty dining; specialty dining is one of the specific services that OBC can be applied toward.",
+          "explanation_ko": "OBC는 스페셜티 다이닝을 포함한 모든 선내 구매에 사용할 수 있는 선상 크레딧 잔액이고, 스페셜티 다이닝은 OBC를 사용할 수 있는 구체적 서비스 중 하나다.",
+          "targetId": "onboard-credit-obc"
+        },
+        {
+          "targetTerm": "Daily Service Charge",
+          "explanation": "The daily service charge (also called gratuity) is an automatic per-day fee applied fleet-wide to the guest folio to cover crew gratuities; specialty dining charges are separate per-reservation fees for the restaurant experience itself, though a gratuity may be embedded in or added to the specialty dining price.",
+          "explanation_ko": "일일 서비스 요금(그래추이티)은 선원 팁을 충당하기 위해 전 선박에 걸쳐 게스트 계정에 자동으로 부과되는 일일 요금이고, 스페셜티 다이닝 요금은 레스토랑 경험 자체에 대한 별도 예약 단위 요금이다(팁이 스페셜티 다이닝 가격에 포함되거나 추가될 수 있다).",
+          "targetId": "daily-service-charge"
+        }
+      ],
+      "sources": [
+        {
+          "name": "What to Expect — Specialty Dining on Cruise Ships",
+          "org": "Cruise Critic",
+          "version": "",
+          "section": "",
+          "url": "https://www.cruisecritic.com/articles/what-to-expect-on-a-cruise-specialty-dining-on-cruise-ships",
+          "tier": "secondary"
+        },
+        {
+          "name": "Specialty Dining FAQ — Included and Specialty Restaurants",
+          "org": "Royal Caribbean International",
+          "version": "",
+          "section": "",
+          "url": "https://www.royalcaribbean.com/faq/topics/complimentary-specialty-dining-packages",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"22\" r=\"12\"/><path d=\"M16 22c0-4.4 3.6-8 8-8\"/><path d=\"M24 34v8\"/><path d=\"M18 42h12\"/><path d=\"M30 12l3-4\"/><path d=\"M18 12l-3-4\"/><path d=\"M24 10V6\"/></svg>",
+      "term": "Specialty Dining",
+      "definition": "Specialty dining refers to alternative restaurants aboard a cruise ship that go beyond the included main dining room, typically offering a distinct cuisine, intimate setting, or elevated culinary experience in exchange for a per-person cover charge or à la carte pricing. Specialty venues are a principal driver of cruise onboard ancillary revenue and are sold pre-cruise and onboard.",
+      "lastReviewed": "2026-07-05"
+    },
+    {
       "id": "spill-and-spoilage",
       "vertical": "air",
       "category": "air-shop",
@@ -41280,6 +41564,112 @@
       "lastReviewed": "2026-06-29"
     },
     {
+      "id": "theft-protection-tp",
+      "vertical": "ground",
+      "category": "car",
+      "conceptType": "business-term",
+      "status": "active",
+      "abbreviation": "TP",
+      "term_ko": "도난 보호(TP, Theft Protection)",
+      "definition_ko": "도난 보호(TP, Theft Protection)는 렌터카 카운터에서 판매되는 보장 상품으로, 렌탈 기간 중 차량이 도난당하거나 도난 시도로 인해 손상된 경우 이용자의 재정적 책임을 제한하거나 면제한다. 통상 자기부담금(excess)이 적용되며, 이용자가 경찰과 렌탈 회사 양쪽에 도난 사실을 즉시 신고해야 보장이 유효하다.",
+      "longDef": "TP covers the risk of vehicle theft and theft-attempt damage, which are explicitly excluded from a standard Collision Damage Waiver (CDW). In the US and Canadian market, Loss Damage Waiver (LDW) is commonly sold instead, as LDW bundles CDW-equivalent collision protection and TP together. Outside North America, CDW and TP are often sold as separate optional products, so a renter purchasing only CDW would remain liable for vehicle theft. TP does not cover personal belongings left inside the vehicle (addressed by personal-effects coverage), third-party liability (covered by Supplemental Liability Insurance), or personal injury. Coverage is voided by breaches such as leaving keys in the car, failure to secure the vehicle, or unauthorized drivers. ACRISS standardises TP as a distinct coverage category in its abbrevation and coverage documentation so it can be compared across rental suppliers.",
+      "longDef_ko": "TP는 표준 CDW에서 명시적으로 제외되는 차량 도난 및 도난 시도로 인한 손상 위험을 커버한다. 미국·캐나다 시장에서는 충돌 손해 면책(CDW)과 TP를 묶은 Loss Damage Waiver(LDW)가 주로 판매된다. 북미 이외 지역에서는 CDW와 TP가 별도 선택 상품으로 판매되는 경우가 많아, CDW만 구매한 이용자는 차량 도난에 대한 책임이 남는다. TP는 차량 내 유류품(개인 소지품 보장 별도), 제3자 배상책임(SLI로 보장), 신체 상해를 커버하지 않는다. 차량 내 키를 두거나, 차량 잠금을 해태하거나, 무단 운전자가 운전한 경우 보장이 무효가 된다. ACRISS는 TP를 임차인이 공급사 간 비교할 수 있도록 약칭·보장 설명서에서 별도 보장 범주로 표준화하고 있다.",
+      "standardBody": "ACRISS",
+      "aliases": [
+        "Theft Protection",
+        "TP",
+        "Theft Waiver",
+        "Theft and Vandalism Protection"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Hertz",
+          "term": "Theft Protection (TP)",
+          "context": "Hertz offers TP as a named counter product; coverage applies to the rented vehicle if stolen and covers theft-attempt damage subject to a deductible and reporting conditions.",
+          "context_ko": "Hertz는 TP를 명시된 카운터 상품으로 제공하며, 도난 시 대여 차량에 적용되고 자기부담금 및 신고 조건 하에 도난 시도 손상을 보장한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "US/Canada market",
+          "term": "Loss Damage Waiver (LDW)",
+          "context": "In the US and Canada, LDW bundles collision damage and theft protection into a single product, effectively replacing standalone TP.",
+          "context_ko": "미국·캐나다에서는 LDW가 충돌 손해와 도난 보호를 단일 상품으로 묶어 단독 TP를 사실상 대체한다.",
+          "relationship": "broader"
+        },
+        {
+          "provider": "OpenTravel (OTA)",
+          "term": "VCT code 'TP'",
+          "context": "The OpenTravel Vehicle Coverage Type (VCT) code list assigns TP its own code so rental suppliers and aggregators can exchange theft coverage information consistently.",
+          "context_ko": "OpenTravel VCT(Vehicle Coverage Type) 코드 리스트는 TP에 별도 코드를 부여하여 렌탈 공급사와 애그리게이터가 도난 보장 정보를 일관되게 교환할 수 있도록 한다.",
+          "relationship": "same"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "narrower",
+          "targetTerm": "Loss Damage Waiver",
+          "targetId": "loss-damage-waiver"
+        },
+        {
+          "type": "contrasts",
+          "targetTerm": "Collision Damage Waiver",
+          "targetId": "collision-damage-waiver"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Excess",
+          "targetId": "excess"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Supplemental Liability Insurance",
+          "targetId": "supplemental-liability-insurance"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Collision Damage Waiver",
+          "explanation": "CDW covers damage to the rental vehicle caused by collision or accident; TP covers loss of the vehicle by theft or damage caused during a theft attempt. Theft is explicitly excluded from CDW, so a renter buying only CDW remains exposed to theft risk.",
+          "explanation_ko": "CDW는 충돌·사고로 인한 대여 차량 손상을 보장하고, TP는 도난으로 인한 차량 분실이나 도난 시도 중 발생한 손상을 보장한다. 도난은 CDW에서 명시적으로 제외되므로, CDW만 구매한 이용자는 도난 위험에 노출된다.",
+          "targetId": "collision-damage-waiver"
+        },
+        {
+          "targetTerm": "Loss Damage Waiver",
+          "explanation": "LDW is the North American composite product that bundles collision (CDW-equivalent) and theft (TP-equivalent) protection into a single waiver; TP is the standalone theft-only coverage sold separately in most non-North-American markets.",
+          "explanation_ko": "LDW는 충돌(CDW 해당)과 도난(TP 해당) 보호를 단일 면책으로 묶은 북미 복합 상품이고, TP는 북미 외 대부분 시장에서 별도로 판매되는 도난 전용 단독 보장이다.",
+          "targetId": "loss-damage-waiver"
+        },
+        {
+          "targetTerm": "Excess",
+          "explanation": "TP sets the overall protection regime (theft is covered, not the renter's problem); the excess is the carve-out from that protection — the amount the renter still owes even when TP is in place.",
+          "explanation_ko": "TP는 전체 보호 범위를 설정하고(도난은 보장되어 이용자 부담이 아님), excess는 그 보호에서 떼어낸 예외, 즉 TP가 있어도 이용자가 여전히 부담하는 금액이다.",
+          "targetId": "excess"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Coverages and Insurances — Theft Protection (TP)",
+          "org": "ACRISS — The Association of Car Rental Industry System Standards",
+          "version": "",
+          "section": "",
+          "url": "https://www.acriss.org/car-rental/coverages-and-insurances/",
+          "tier": "association"
+        },
+        {
+          "name": "Theft Protection (TP) policy detail",
+          "org": "Hertz",
+          "version": "",
+          "section": "",
+          "url": "https://www.hertz.com/rentacar/reservation/policy/policy-detail/enGB/DUBT52/TP",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"12\" y=\"20\" width=\"24\" height=\"20\" rx=\"3\"/><path d=\"M18 20v-6a6 6 0 0 1 12 0v6\"/><line x1=\"24\" y1=\"28\" x2=\"24\" y2=\"34\"/><circle cx=\"24\" cy=\"27\" r=\"2\" fill=\"currentColor\"/></svg>",
+      "term": "Theft Protection",
+      "definition": "Theft Protection (TP) is a counter coverage product in car rental that limits or eliminates the renter's financial liability if the rental vehicle is stolen during the rental period or damaged as a result of an attempted theft. An excess (deductible) typically applies, and coverage is conditional on the renter reporting the theft promptly to both the police and the rental company.",
+      "lastReviewed": "2026-07-05"
+    },
+    {
       "id": "through-fare",
       "vertical": "air",
       "category": "air-partner",
@@ -42397,6 +42787,93 @@
       "lastReviewed": "2026-06-24"
     },
     {
+      "id": "train-operating-company",
+      "vertical": "ground",
+      "category": "rail",
+      "conceptType": "role",
+      "status": "active",
+      "abbreviation": "TOC",
+      "term_ko": "철도 운영사(TOC, Train Operating Company)",
+      "definition_ko": "철도 운영사(TOC, Train Operating Company)는 국가 철도 인프라에서 여객 철도 서비스를 운영할 면허 또는 프랜차이즈를 보유한 민간 회사다. TOC는 시간표 작성, 인력 배치, 고객 서비스, 발권 등을 담당하는 반면, 인프라(선로, 신호, 역)는 별도의 인프라 관리자가 소유·유지한다. 이 모델은 영국 및 일부 유럽 국가의 민영화·프랜차이즈 철도 시장의 핵심 구조다.",
+      "longDef": "In Great Britain the term TOC designates companies operating services under the National Rail brand, regulated by the Office of Rail and Road (ORR), which issues the operating licence. Traditionally, most TOCs held time-limited franchises let by the Department for Transport (DfT), under which the TOC receives a mix of fare revenue and public subsidy (or pays a premium to the government) in exchange for meeting specified service levels. A small number of open-access operators hold licences to run supplementary services on specific routes outside the franchise model. The Rail Delivery Group (RDG) coordinates the TOCs, owns the National Rail brand, and operates interoperable ticketing. The 2021 Williams–Shapps Rail Review proposed replacing the franchise model with National Rail Contracts (NRCs), under which operators act as management contractors with the revenue risk held by government — a transition that has been ongoing. Beyond the UK, the EU railway liberalisation packages mandate separation of infrastructure management from train operation and open the network to licensed passenger operators, making the TOC concept broadly applicable across European markets. In the OSDM standard and rail distribution APIs, the TOC is typically identified by its RICS code (UIC company code).",
+      "longDef_ko": "영국에서 TOC는 운영 면허를 부여하는 철도도로청(ORR)의 규제 하에 National Rail 브랜드로 서비스를 운영하는 회사를 가리킨다. 전통적으로 대부분의 TOC는 교통부(DfT)가 발주하는 기간제 프랜차이즈를 보유하며, 지정된 서비스 수준 충족 대가로 운임 수입과 정부 보조금(또는 프리미엄 납부)을 혼합으로 수령한다. 소수의 오픈액세스 운영사는 프랜차이즈 모델 밖에서 특정 노선에 보완 서비스를 운영할 면허를 보유한다. Rail Delivery Group(RDG)은 TOC를 조율하고, National Rail 브랜드를 소유하며, 상호운용 발권 체계를 운영한다. 2021년 Williams–Shapps 철도 검토는 프랜차이즈 모델을 수입 리스크를 정부가 부담하는 관리 계약(NRC) 방식으로 대체할 것을 제안했으며, 이 전환이 진행 중이다. 영국 밖에서는 EU 철도 자유화 패키지가 인프라 관리와 열차 운영의 분리를 의무화하고 면허 운영사에 네트워크를 개방함으로써 TOC 개념이 유럽 전역에 광범위하게 적용된다. OSDM 표준 및 철도 유통 API에서 TOC는 일반적으로 RICS 코드(UIC 회사 코드)로 식별된다.",
+      "standardBody": "Office of Rail and Road",
+      "aliases": [
+        "Train Operating Company",
+        "TOC",
+        "Rail Operator",
+        "Passenger Train Operator",
+        "Franchised Operator",
+        "Open-Access Operator"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "OSDM",
+          "targetId": "osdm"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Rail Passenger Rights Regulation (EU) 2021/782",
+          "targetId": "rail-passenger-rights-regulation-eu-2021-782"
+        },
+        {
+          "type": "related",
+          "targetTerm": "RICS Code (Company Code)",
+          "targetId": "rics-code"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Through-Ticketing",
+          "targetId": "through-ticketing"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "RICS Code (Company Code)",
+          "explanation": "A TOC is the operating company entity holding the franchise or licence to run train services; the RICS code (UIC company code) is the standardised numeric identifier assigned to that company for use in rail distribution and interoperability systems.",
+          "explanation_ko": "TOC는 열차 서비스 운영 프랜차이즈 또는 면허를 보유한 운영 회사 주체이고, RICS 코드(UIC 회사 코드)는 철도 유통 및 상호운용 시스템에서 사용하기 위해 해당 회사에 부여되는 표준화된 숫자 식별자이다.",
+          "targetId": "rics-code"
+        },
+        {
+          "targetTerm": "OSDM",
+          "explanation": "OSDM is the open API and data model standard for rail distribution; a TOC is the type of company that typically acts as a supply-side participant in OSDM-based distribution, providing offers, managing bookings, and fulfilling tickets.",
+          "explanation_ko": "OSDM은 철도 유통을 위한 개방형 API 및 데이터 모델 표준이고, TOC는 OSDM 기반 유통에서 공급 측 참여자로서 오퍼를 제공하고 예약을 관리하며 티켓을 발권하는 형태의 회사 유형이다.",
+          "targetId": "osdm"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Train Operating Companies — Who we work with",
+          "org": "Office of Rail and Road (ORR)",
+          "version": "",
+          "section": "",
+          "url": "https://www.orr.gov.uk/about/who-we-work-with/industry/train-operating-companies",
+          "tier": "regulator-guidance"
+        },
+        {
+          "name": "A Quick Guide to the Railways",
+          "org": "UK Parliament — House of Commons Library",
+          "version": "",
+          "section": "",
+          "url": "https://researchbriefings.files.parliament.uk/documents/SN04128/SN04128.pdf",
+          "tier": "regulator-guidance"
+        },
+        {
+          "name": "Train operating company",
+          "org": "Wikipedia",
+          "version": "",
+          "section": "",
+          "url": "https://en.wikipedia.org/wiki/Train_operating_company",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"14\" width=\"28\" height=\"22\" rx=\"4\"/><path d=\"M10 26h28\"/><circle cx=\"17\" cy=\"38\" r=\"3\"/><circle cx=\"31\" cy=\"38\" r=\"3\"/><path d=\"M14 38H10\"/><path d=\"M34 38h4\"/><rect x=\"16\" y=\"18\" width=\"6\" height=\"6\" rx=\"1\"/><rect x=\"26\" y=\"18\" width=\"6\" height=\"6\" rx=\"1\"/></svg>",
+      "term": "Train Operating Company",
+      "definition": "A Train Operating Company (TOC) is a private company that holds a licence or franchise to operate passenger rail services on national rail infrastructure. TOCs are responsible for timetabling, staffing, customer service, and ticketing, while the infrastructure (track, signals, stations) is typically owned and maintained by a separate infrastructure manager. The model is central to the privatised and franchised rail markets of Great Britain and several other European countries.",
+      "lastReviewed": "2026-07-05"
+    },
+    {
       "id": "transfer-partner",
       "vertical": "common",
       "category": "customer",
@@ -42679,6 +43156,97 @@
       "term": "Transparency in Payments (TIP)",
       "definition": "Transparency in Payments (TIP) is an IATA framework, adopted by the Passenger Agency Conference alongside NewGen ISS and implemented from 1 March 2018, that gives each airline control over which forms of payment are accepted for its sales through the BSP travel-agency channel. Under TIP an agent may use customer cards, the agent's own cards, or Alternative Transfer Methods only with the prior explicit agreement of the individual airline.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "travel-advisory",
+      "vertical": "common",
+      "category": "disruption",
+      "conceptType": "document",
+      "status": "active",
+      "term_ko": "여행 주의보 / 여행 권고 (Travel Advisory)",
+      "definition_ko": "여행 주의보(Travel Advisory, 또는 여행 경보·여행 알림·여행 안전정보)는 정부 외교부가 자국민에게 특정 해외 목적지의 안전·보안·보건·입국 요건 위험을 알리기 위해 발행하는 공식 안내문이다. 주의보는 등급별 심각도 체계를 사용하며, 여행 보험 보장 범위, 투어 운영사 의무, 기업 출장 정책에 직접적 영향을 미친다.",
+      "longDef": "Advisory-issuing bodies include the US Department of State (four-level system: Level 1 Exercise Normal Precautions → Level 4 Do Not Travel), the UK Foreign, Commonwealth and Development Office (FCDO; Advise Against All Travel / Against All But Essential Travel / No specific advice), the Australian Department of Foreign Affairs and Trade (DFAT; four levels), and similar agencies worldwide. A Level 3 or higher US advisory, or FCDO \"Advise Against All Travel,\" typically triggers package-holiday cancellation rights for travellers without cancellation fee under the Package Travel Directive, and may activate force-majeure clauses in individual travel contracts. Travel insurers routinely exclude or reduce coverage for destinations to which a government has advised against non-essential or all travel at the time of purchase or departure. Airlines, cruise lines, and tour operators monitor advisory changes to adjust routing, cancellation policies, and proactive rebooking offers. TIMATIC, the IATA-operated travel information database, incorporates official entry and health requirements but is distinct from advisories.",
+      "longDef_ko": "주의보를 발행하는 기관으로는 미국 국무부(4단계 체계: 일반 주의 → 여행 금지), 영국 외교연방개발부(FCDO; 모든 여행 자제 / 불필수 여행 자제 / 특별 권고 없음), 호주 외교통상부(DFAT; 4단계), 그리고 전 세계 유사 기관들이 있다. 미국 Level 3 이상 또는 FCDO \"모든 여행 자제\" 권고는 통상 Package Travel Directive 하에 패키지 여행 취소 수수료 없는 취소권을 발동시키며, 개별 여행 계약의 불가항력 조항을 활성화할 수 있다. 여행 보험사는 구매 또는 출발 시점에 정부가 불필수·모든 여행을 자제하도록 권고한 목적지에 대해 보장을 통상 제외하거나 축소한다. 항공사, 크루즈, 투어 운영사는 주의보 변경을 모니터링하여 노선, 취소 정책, 사전 예약 변경 제안을 조정한다. IATA가 운영하는 여행 정보 데이터베이스인 TIMATIC은 공식 입국 및 보건 요건을 포함하지만 여행 주의보와는 별개이다.",
+      "standardBody": "",
+      "aliases": [
+        "Travel Warning",
+        "Travel Alert",
+        "Travel Notice",
+        "Foreign Travel Advice",
+        "Government Travel Advisory"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Force Majeure",
+          "targetId": "force-majeure"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Extraordinary Circumstances",
+          "targetId": "extraordinary-circumstances"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Package Travel Directive",
+          "targetId": "package-travel-directive"
+        },
+        {
+          "type": "related",
+          "targetTerm": "TIMATIC",
+          "targetId": "timatic"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "TIMATIC",
+          "explanation": "TIMATIC is an IATA-operated database of entry requirements, visa rules, health documentation, and customs regulations maintained for airline check-in staff and travel agents to verify traveller eligibility; a Travel Advisory is a government-issued risk assessment recommending whether citizens should travel to a destination, which may trigger insurance and package-holiday rights. The two are complementary but distinct: TIMATIC covers can-you-enter; the advisory covers should-you-go.",
+          "explanation_ko": "TIMATIC는 항공사 체크인 직원과 여행사가 여행자 적격 여부를 확인하기 위해 운영되는 IATA 데이터베이스로, 입국 요건·비자 규정·건강 서류·세관 규정을 담는다. 여행 주의보는 정부가 자국민에게 목적지 여행 여부를 권고하는 위험 평가로, 보험 및 패키지 여행 권리를 발동시킬 수 있다. 둘은 상호 보완적이지만 별개이다. TIMATIC은 \"입국할 수 있는가\"를, 주의보는 \"가야 하는가\"를 다룬다.",
+          "targetId": "timatic"
+        },
+        {
+          "targetTerm": "Extraordinary Circumstances",
+          "explanation": "Extraordinary circumstances is the specific EU Regulation 261/2004 defence that excuses airlines from paying fixed compensation; a Travel Advisory is a government-issued risk communication that may help establish that a disruption qualifies as extraordinary — but the Advisory itself is a document, not a legal defence.",
+          "explanation_ko": "\"특별한 사정\"은 항공사를 정액 보상 지급에서 면제하는 EU Regulation 261/2004의 법적 항변이고, 여행 주의보는 disruption이 특별한 사정으로 인정되는 데 근거를 제공할 수 있는 정부 발행 위험 안내문이다. 단, 주의보 자체는 문서이지 법적 항변이 아니다.",
+          "targetId": "extraordinary-circumstances"
+        },
+        {
+          "targetTerm": "Force Majeure",
+          "explanation": "A Travel Advisory is the government document that communicates destination risk; force majeure is the contractual doctrine that may be invoked when an advisory-level event renders travel performance impossible or unconscionable — the advisory is evidence of the force-majeure-triggering event.",
+          "explanation_ko": "여행 주의보는 목적지 위험을 알리는 정부 문서이고, 불가항력은 주의보 수준의 사건이 여행 이행을 불가능하게 만들 때 원용될 수 있는 계약법 원칙이다. 주의보는 불가항력 발동 사건의 증거로 기능한다.",
+          "targetId": "force-majeure"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Travel Advisories — U.S. Department of State",
+          "org": "U.S. Department of State",
+          "version": "",
+          "section": "",
+          "url": "https://travel.state.gov/en/international-travel/travel-advisories.html",
+          "tier": "regulator-guidance"
+        },
+        {
+          "name": "FCDO Foreign Travel Advice",
+          "org": "UK Foreign, Commonwealth and Development Office (FCDO)",
+          "version": "",
+          "section": "",
+          "url": "https://www.gov.uk/foreign-travel-advice",
+          "tier": "regulator-guidance"
+        },
+        {
+          "name": "Travel warning",
+          "org": "Wikipedia",
+          "version": "",
+          "section": "",
+          "url": "https://en.wikipedia.org/wiki/Travel_warning",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"16\"/><path d=\"M24 8c-4 6-4 12 0 16s4 10 0 16\"/><path d=\"M8 24h32\"/><path d=\"M10 16h28\"/><path d=\"M10 32h28\"/></svg>",
+      "term": "Travel Advisory",
+      "definition": "A Travel Advisory (also known as a travel warning, travel alert, or travel advice) is an official statement issued by a government foreign-affairs body to inform citizens about safety, security, health, or entry-requirement risks at a specific foreign destination. Advisories use tiered severity levels and directly influence travel insurance coverage, tour operator obligations, and corporate travel policy.",
+      "lastReviewed": "2026-07-05"
     },
     {
       "id": "travel-medical-insurance",
