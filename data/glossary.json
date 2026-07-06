@@ -2,8 +2,8 @@
   "meta": {
     "name": "Travel Wiki",
     "tagline": "여행 산업 용어 백과사전",
-    "generatedAt": "2026-07-05",
-    "entryCount": 511,
+    "generatedAt": "2026-07-06",
+    "entryCount": 517,
     "categoryCount": 20,
     "verticalCount": 6
   },
@@ -5234,6 +5234,100 @@
       "term": "Bedbank",
       "definition": "A bedbank is a B2B hotel wholesaler/aggregator that contracts room inventory from hotels (usually at net, non-commissionable rates) and resells it to travel sellers such as OTAs, tour operators, and travel agencies, typically via API. Bedbanks act as intermediaries between hotel supply and downstream distributors rather than selling directly to the public.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "beverages-package",
+      "vertical": "cruise",
+      "category": "cruise",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "음료 패키지 (Beverages Package)",
+      "definition_ko": "음료 패키지(Beverages Package)는 크루즈 선사가 판매하는 사전 구매형 부가 상품으로, 항해 기간 동안 정의된 범위의 주류 및/또는 비주류 음료에 대해 무제한 또는 한도 내 이용 혜택을 제공한다. 인당·일당(per person per day) 기준으로 가격이 책정되며, 일반적으로 승선 전 또는 승선 시 추가한다. 기항지 투어, 스페셜티 다이닝과 함께 크루즈 선사의 가장 중요한 부가 수익 카테고리 중 하나이다.",
+      "longDef": "Cruise lines typically offer two or more tiers of beverages packages: a non-alcoholic (soft drinks, juices, specialty coffee) package and a premium all-inclusive package covering alcoholic and premium beverages up to a per-drink price ceiling. Some lines add a mid-tier \"classic\" option. Packages are sold per person per day for the full voyage and are generally non-refundable after embarkation. The key commercial mechanism is that the passenger pays a fixed daily rate while the line captures high margin on beverages that would otherwise be sold individually; the package also increases on-board spend predictability. Cruise lines use package uptake rates as an ancillary revenue KPI. Pricing varies by sailing (cruise ships in premium markets often include the package in the headline fare, making the product \"all-inclusive\"), itinerary, and booking channel. Travel advisors typically earn commission on beverages package sales. Under CLIA reporting, beverage revenues are a significant component of total onboard revenue per passenger cruise day (PCD).",
+      "longDef_ko": "크루즈 선사는 일반적으로 두 개 이상의 음료 패키지 등급을 제공한다. 주류를 제외한 비주류(탄산음료·주스·스페셜티 커피) 패키지와 음료당 가격 상한까지 주류·프리미엄 음료를 포함하는 프리미엄 올인클루시브 패키지가 기본이며, 일부 선사는 중간 등급의 \"클래식\" 옵션을 추가로 운영한다. 패키지는 전체 항해 기간에 대해 인당·일당 기준으로 판매되며, 승선 후에는 일반적으로 환불이 불가하다. 핵심 상업 구조는 승객이 고정 일당 요금을 지불하는 반면, 선사는 개별 판매 시보다 높은 마진을 확보하는 것이다. 또한 선상 지출의 예측 가능성을 높인다. 크루즈 선사는 패키지 구매율을 부가 수익 KPI로 활용한다. 가격은 운항 일정(프리미엄 시장의 크루즈는 종종 헤드라인 운임에 패키지를 포함해 상품을 \"올인클루시브\"로 만든다), 여정, 예약 채널에 따라 다르다. 여행 어드바이저는 일반적으로 음료 패키지 판매에 대해 커미션을 받는다. CLIA 보고 기준에서 음료 수익은 승객 크루즈 일수(PCD)당 총 선상 수익의 중요한 구성 요소이다.",
+      "standardBody": "CLIA",
+      "aliases": [
+        "Drinks Package",
+        "Drink Package",
+        "All-Inclusive Beverage Package",
+        "Beverage Package",
+        "Unlimited Beverage Package"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Royal Caribbean International",
+          "term": "Deluxe Beverage Package",
+          "context": "Royal Caribbean's premium beverages package covers alcoholic and non-alcoholic drinks up to a per-item price ceiling; branded as the \"Deluxe Beverage Package\" and bookable pre-cruise at a lower rate.",
+          "context_ko": "로열캐리비안의 프리미엄 음료 패키지는 항목당 가격 상한까지 주류·비주류 음료를 포함하며, \"Deluxe Beverage Package\"로 브랜딩되어 출항 전 낮은 요금으로 예약할 수 있다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Norwegian Cruise Line",
+          "term": "Free at Sea — Beverage Package",
+          "context": "Norwegian includes a beverages package as part of its \"Free at Sea\" promotional offer, bundling it with other perks such as shore excursion credits and Wi-Fi.",
+          "context_ko": "노르위지안은 자사 \"Free at Sea\" 프로모션 오퍼의 일부로 음료 패키지를 포함하며, 기항지 투어 크레딧·Wi-Fi 등 다른 혜택과 묶어 제공한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Carnival Cruise Line",
+          "term": "CHEERS! Beverage Program",
+          "context": "Carnival's CHEERS! program offers unlimited beverages up to a per-drink retail value for a flat per-person per-day charge, excluding the debarkation day.",
+          "context_ko": "카니발의 CHEERS! 프로그램은 음료당 소매가 상한까지 하선일을 제외한 항해 기간에 대해 인당·일당 정액 요금으로 무제한 음료를 제공한다.",
+          "relationship": "same"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Onboard Credit (OBC)",
+          "targetId": "onboard-credit-obc"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Daily Service Charge",
+          "targetId": "daily-service-charge"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Shore Excursion",
+          "targetId": "shore-excursion"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Non-Commissionable Fare (NCF)",
+          "targetId": "non-commissionable-fare-ncf"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Onboard Credit (OBC)",
+          "explanation": "An Onboard Credit is a pre-loaded monetary allowance that can be spent on any onboard purchase including beverages, shore excursions, and spa services; a Beverages Package is a fixed-rate prepaid entitlement to a specific category of consumption. The package eliminates per-drink charges for covered items, whereas OBC is a general spend credit.",
+          "explanation_ko": "Onboard Credit(OBC)는 음료·기항지 투어·스파 등 선내 구매에 사용할 수 있는 선불 금액 크레딧이고, Beverages Package는 특정 소비 카테고리에 대한 고정 요금 선불 이용권이다. 패키지는 해당 항목의 개별 요금을 없애는 반면, OBC는 일반 지출 크레딧이다.",
+          "targetId": "onboard-credit-obc"
+        }
+      ],
+      "sources": [
+        {
+          "name": "CLIA 2024 State of the Cruise Industry Report",
+          "org": "CLIA (Cruise Lines International Association)",
+          "version": "2024",
+          "section": "Onboard Revenue & Ancillaries",
+          "url": "https://cruising.org/en/research/publications/annual-report",
+          "tier": "association"
+        },
+        {
+          "name": "Royal Caribbean Group Annual Report 2023 — Onboard Revenue Discussion",
+          "org": "Royal Caribbean Group",
+          "version": "2023",
+          "section": "",
+          "url": "https://www.rclcorporate.com/financials/annual-reports/",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M16 12 L14 36 Q14 40 24 40 Q34 40 34 36 L32 12 Z\"/><line x1=\"13\" y1=\"22\" x2=\"35\" y2=\"22\"/><path d=\"M20 8 Q24 4 28 8\"/><circle cx=\"35\" cy=\"14\" r=\"4\"/><path d=\"M33 12 L37 16 M37 12 L33 16\"/></svg>",
+      "term": "Beverages Package",
+      "definition": "A Beverages Package is a pre-purchased cruise ancillary that grants the guest unlimited or allowance-based access to a defined range of alcoholic and/or non-alcoholic drinks throughout the voyage, priced per person per day and typically added at or before embarkation. It is one of the most significant ancillary revenue categories for cruise lines, alongside specialty dining and shore excursions.",
+      "lastReviewed": "2026-07-06"
     },
     {
       "id": "bid-price",
@@ -12362,6 +12456,91 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "downgrade-compensation",
+      "vertical": "common",
+      "category": "disruption",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "강등 보상 (Downgrade Compensation)",
+      "definition_ko": "강등 보상(Downgrade Compensation)은 구매한 좌석 등급보다 낮은 등급에 비자발적으로 배정된 항공 승객에게 지급되는 환급금이다. EU Regulation 261/2004 제10조에 따라, 운항 항공사는 비행 거리에 따라 편도 항공권 가격의 30%, 50%, 또는 75%를 7일 이내에 지급해야 하며, 이 비율은 해당 구간(sector)에만 적용된다.",
+      "longDef": "EU Regulation 261/2004 Article 10 sets three distance-based reimbursement rates: 30% of the ticket price for flights of 1,500 km or less; 50% for all intra-EU flights over 1,500 km and all other flights between 1,500 km and 3,500 km; and 75% for flights over 3,500 km that are not intra-EU. The ticket price used is the price paid for the seat (excluding taxes and charges), applied only to the downgraded sector if the journey contains multiple legs. The reimbursement must be made within seven days by cash, bank transfer, bank order, or — with the passenger's signed agreement — travel vouchers. Downgrade compensation is distinct from denied boarding compensation (which applies when carriage is refused altogether) and from the duty of care and right to re-routing that apply to cancellations and long delays. The EU regulation applies when the operating carrier's flight departs from an EU airport, or arrives at an EU airport on an EU-licensed carrier. UK Regulation 261 provides equivalent rules post-Brexit for UK-departing flights.",
+      "longDef_ko": "EU Regulation 261/2004 제10조는 세 가지 거리 기반 환급율을 규정한다. 1,500 km 이하 항공편은 항공권 가격의 30%, EU 역내 1,500 km 초과 항공편 및 기타 1,500~3,500 km 항공편은 50%, EU 역내가 아닌 3,500 km 초과 항공편은 75%이다. 적용되는 항공권 가격은 (세금·수수료 제외) 좌석 구매 가격이며, 여정이 여러 구간으로 구성된 경우 강등된 구간에만 적용된다. 환급은 현금, 은행 이체, 은행 주문, 또는 승객의 서면 동의를 받은 여행 바우처로 7일 이내에 이루어져야 한다. 강등 보상은 탑승 자체가 거부될 때 적용되는 denied boarding compensation, 취소·장기 지연 시 발생하는 duty of care 및 재배정 권리와는 구별된다. EU 규정은 EU 공항을 출발하는 항공편 또는 EU 면허 항공사의 EU 도착 항공편에 적용된다. Brexit 이후 영국 출발 항공편에는 UK Regulation 261이 동등한 규정을 제공한다.",
+      "standardBody": "European Union",
+      "aliases": [
+        "Involuntary Downgrade Reimbursement",
+        "Class Downgrade Compensation",
+        "Downgrade Refund"
+      ],
+      "relationships": [
+        {
+          "type": "parent",
+          "targetTerm": "EU Regulation 261/2004",
+          "targetId": "eu-regulation-261-2004"
+        },
+        {
+          "type": "contrasts",
+          "targetTerm": "Denied Boarding Compensation",
+          "targetId": "denied-boarding-compensation"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Involuntary Denied Boarding",
+          "targetId": "involuntary-denied-boarding"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Right to Care",
+          "targetId": "right-to-care"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Right to Re-routing",
+          "targetId": "right-to-re-routing"
+        },
+        {
+          "type": "related",
+          "targetTerm": "UK Regulation 261",
+          "targetId": "uk-regulation-261"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Denied Boarding Compensation",
+          "explanation": "Denied Boarding Compensation applies when the carrier refuses to carry the passenger at all (involuntary bumping from an oversold flight); Downgrade Compensation applies when the passenger is carried but in a lower cabin class than booked. Both are EU261 entitlements but arise from different circumstances and have different calculation rules.",
+          "explanation_ko": "Denied Boarding Compensation은 항공사가 승객을 아예 탑승시키지 않을 때(초과 판매 항공편에서의 비자발적 bumping) 적용되고, Downgrade Compensation은 승객이 탑승하지만 예약한 것보다 낮은 클래스에 배정될 때 적용된다. 둘 다 EU261에 따른 권리이지만 발생 상황과 계산 방식이 다르다.",
+          "targetId": "denied-boarding-compensation"
+        },
+        {
+          "targetTerm": "Right to Re-routing",
+          "explanation": "Right to Re-routing gives a passenger alternative travel arrangements to their final destination when a flight is cancelled or significantly delayed; Downgrade Compensation is a retroactive cash reimbursement after the passenger has already been carried in a lower class.",
+          "explanation_ko": "Right to Re-routing는 항공편 취소 또는 장기 지연 시 승객에게 최종 목적지까지의 대체 여행 수단을 제공하는 것이고, Downgrade Compensation은 낮은 등급으로 이미 탑승된 후 지급되는 소급 현금 환급이다.",
+          "targetId": "right-to-re-routing"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Regulation (EC) No 261/2004 of the European Parliament and of the Council — Article 10",
+          "org": "European Union",
+          "version": "",
+          "section": "Article 10 — Upgrading and downgrading",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32004R0261",
+          "tier": "regulation"
+        },
+        {
+          "name": "UK Statutory Instrument 2019 No. 278 — Air Passengers Rights and Air Travel Organisers'' Licensing (Amendment) (EU Exit) Regulations 2019",
+          "org": "UK Government",
+          "version": "",
+          "section": "",
+          "url": "https://www.legislation.gov.uk/uksi/2019/278/contents/made",
+          "tier": "regulation"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"8\" width=\"32\" height=\"10\" rx=\"2\"/><rect x=\"8\" y=\"22\" width=\"32\" height=\"10\" rx=\"2\" stroke-dasharray=\"4,2\"/><path d=\"M24 38 L24 32\"/><path d=\"M20 36 L24 40 L28 36\"/></svg>",
+      "term": "Downgrade Compensation",
+      "definition": "Downgrade Compensation is the reimbursement owed to an air passenger who is involuntarily placed in a lower class of service than the one for which they purchased a ticket. Under EU Regulation 261/2004 Article 10, the operating carrier must pay 30%, 50%, or 75% of the one-way ticket price (depending on flight distance) within seven days; the percentage applies to the affected sector only.",
+      "lastReviewed": "2026-07-06"
+    },
+    {
       "id": "drydock",
       "vertical": "cruise",
       "category": "cruise",
@@ -12965,6 +13144,87 @@
       "term": "E-ticket",
       "definition": "An electronic record of a passenger's transportation entitlement held in the issuing/validating carrier's (or BSP) database, identified by a 13-digit ticket number, that replaces the traditional paper ticket. IATA mandated 100% electronic ticketing for BSP-issued air transport documents from 1 June 2008.",
       "lastReviewed": "2026-06-15"
+    },
+    {
+      "id": "early-bird-discount",
+      "vertical": "tours",
+      "category": "tour-commercial",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "얼리버드 할인 (Early Bird Discount)",
+      "definition_ko": "얼리버드 할인(Early Bird Discount)은 출발일 또는 방문일 기준 일정 기간(일반적으로 30~90일) 전에 투어·액티비티·어트랙션 티켓을 예약하는 여행자에게 제공하는 가격 인하 혜택이다. 운영사는 이를 통해 선행 예약을 확보하고 수요 예측을 개선하며, 막판 정원 미달 위험을 줄이고 사전 결정에 대한 보상을 제공한다. OTA는 얼리버드 할인을 전환율 제고를 위한 프로모션 필터로 자주 활용한다.",
+      "longDef": "Early bird discounts are a demand-management tool that creates an inter-temporal price incentive: travelers who accept the uncertainty of a future trip receive a lower price in exchange for locking in their purchase. Discount magnitudes typically range from 5% to 20% off the standard retail rate, with the deepest discounts reserved for the longest advance purchase windows. Operators structure eligibility by defining a qualifying booking window (e.g., \"book 60 days or more before departure\") and sometimes by combining the discount with non-refundable payment terms, aligning the operator's cash-flow benefit with the risk transfer to the buyer. In OTA systems such as Viator/TripAdvisor Experiences, GetYourGuide, and Airbnb Experiences, early bird rates appear as a tagged rate type in the pricing API, allowing the platform to surface them as \"SAVE X% — Early Bird\" chips in search results. Operators uploading rates via OCTO or channel managers may define early bird rates as time-conditional price modifiers on the base rate. Economically, early bird pricing is a form of dynamic pricing where price is a function of booking horizon rather than real-time demand, complementing last-minute promotions at the other end of the booking window.",
+      "longDef_ko": "얼리버드 할인은 시간적 가격 인센티브를 생성하는 수요 관리 도구다. 미래 여행의 불확실성을 감수하는 여행자에게 사전 구매를 확약받는 대가로 더 낮은 가격을 제공한다. 할인율은 일반적으로 표준 소매가 대비 5~20% 범위이며, 가장 긴 사전 구매 기간에 대해 가장 큰 할인이 제공된다. 운영사는 자격 기준을 구매 기간(예: \"출발 60일 이상 전 예약\")으로 정의하고, 때로는 비환불 결제 조건과 결합하여 운영사의 현금 흐름 이익과 구매자의 위험 전가를 연계한다. Viator/TripAdvisor Experiences, GetYourGuide, Airbnb Experiences 같은 OTA 시스템에서 얼리버드 요금은 가격 API의 태그된 요금 유형으로 표시되어, 플랫폼이 검색 결과에 \"X% 절약 — 얼리버드\" 칩 형태로 노출할 수 있게 한다. OCTO 또는 채널 매니저를 통해 요금을 업로드하는 운영사는 기준 요금에 대한 시간 조건부 가격 수정자로 얼리버드 요금을 정의할 수 있다. 경제적으로 얼리버드 가격은 실시간 수요 대신 예약 시점을 가격 함수로 하는 동적 가격의 한 형태로, 예약 윈도우의 반대편 끝에 있는 막판 프로모션을 보완한다.",
+      "standardBody": "ATTA",
+      "aliases": [
+        "Early Bird Rate",
+        "Advance Purchase Discount",
+        "APD (tours)",
+        "Early Booking Discount"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Demand-Based Pricing",
+          "targetId": "demand-based-pricing"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Allocation",
+          "targetId": "allocation"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Guaranteed Departure",
+          "targetId": "guaranteed-departure"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Retail Rate",
+          "targetId": "retail-rate"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Markup",
+          "targetId": "markup"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Demand-Based Pricing",
+          "explanation": "Demand-Based Pricing adjusts prices dynamically in response to real-time demand signals (remaining capacity, booking pace, competitor pricing); an Early Bird Discount is a pre-set, rule-based discount that triggers on the booking horizon alone, regardless of how much capacity remains at the time of booking.",
+          "explanation_ko": "Demand-Based Pricing은 실시간 수요 신호(남은 정원·예약 속도·경쟁사 가격)에 반응하여 가격을 동적으로 조정하고, 얼리버드 할인은 예약 시점의 남은 정원과 무관하게 예약 시점(booking horizon)만을 기준으로 적용되는 사전 설정·규칙 기반 할인이다.",
+          "targetId": "demand-based-pricing"
+        },
+        {
+          "targetTerm": "Retail Rate",
+          "explanation": "The Retail Rate is the standard consumer-facing price for the tour or activity; an Early Bird Discount is a time-conditional reduction applied to the retail rate, not a distinct pricing tier. Once the qualifying booking window closes, buyers pay the full retail rate.",
+          "explanation_ko": "소매 요금(Retail Rate)은 투어 또는 액티비티의 표준 소비자 가격이고, 얼리버드 할인은 별도의 가격 등급이 아니라 소매 요금에 시간 조건부로 적용되는 인하이다. 자격 예약 기간이 종료되면 구매자는 전체 소매 가격을 지불한다.",
+          "targetId": "retail-rate"
+        }
+      ],
+      "sources": [
+        {
+          "name": "GetYourGuide Supplier Help Center — Pricing & Promotions",
+          "org": "GetYourGuide",
+          "version": "",
+          "section": "Early Bird Discounts",
+          "url": "https://supplier.getyourguide.com/en/",
+          "tier": "vendor-doc"
+        },
+        {
+          "name": "Viator / TripAdvisor Experiences — Supplier Help Center",
+          "org": "Viator (TripAdvisor)",
+          "version": "",
+          "section": "Promotions and Pricing",
+          "url": "https://supplier.viator.com/",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"14\"/><path d=\"M24 14 L24 24 L31 29\"/><path d=\"M10 14 Q7 10 10 7 Q14 4 16 8\" stroke-dasharray=\"3,2\"/><line x1=\"16\" y1=\"8\" x2=\"14\" y2=\"5\"/><line x1=\"16\" y1=\"8\" x2=\"13\" y2=\"9\"/></svg>",
+      "term": "Early Bird Discount",
+      "definition": "An Early Bird Discount is a price reduction offered to travelers who book a tour, activity, or attraction ticket a defined period in advance of the departure or visit date — typically 30 to 90 days ahead. Operators use it to secure forward bookings, improve demand forecasting, reduce last-minute capacity risk, and reward commitment; OTAs often feature it as a promotional filter to drive conversions.",
+      "lastReviewed": "2026-07-06"
     },
     {
       "id": "edifact",
@@ -18431,6 +18691,86 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "guaranteed-departure",
+      "vertical": "tours",
+      "category": "tour-product",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "출발 확정(Guaranteed Departure)",
+      "definition_ko": "출발 확정(Guaranteed Departure)은 운영사가 예약 인원 수에 관계없이 해당 출발일에 투어를 반드시 운영하겠다고 확약하는 것이다. 이는 항공권·숙박 등 환불 불가한 부가 예약을 이미 완료한 여행자에게 막판 취소 위험을 없애주며, 투어 유통에서 프리미엄 상업 신호로서 일반적으로 더 높은 가격이나 특정 날짜 슬롯에만 적용된다.",
+      "longDef": "Tour operators typically set a minimum group size (MGS) threshold below which a departure may be cancelled. A Guaranteed Departure waives this threshold for one or more specific dates, accepting the commercial risk of running a tour with fewer passengers than the break-even size. Operators use guaranteed departures strategically: peak season dates may be unconditionally guaranteed; off-peak dates may only be guaranteed on select slots after a promotional push. In distribution systems (e.g., OCTO, Bokun, Rezdy), a guaranteed departure is modelled as a boolean flag (`isFreesale` or `guaranteedDeparture`) on the availability slot, enabling OTAs and bedbanks to confidently display and sell the date without a \"request-only\" caveat. From a pricing perspective, guaranteed departures are often sold at a slight premium to offset the MGS risk and to signal reliability to the consumer.",
+      "longDef_ko": "투어 운영사는 일반적으로 최소 그룹 규모(MGS) 임계값을 설정하며, 이에 미달하면 출발을 취소할 수 있다. 출발 확정은 하나 이상의 특정 날짜에 대해 이 임계값을 면제하고, 손익분기점에 미치지 못하는 인원으로도 투어를 운영하는 상업적 위험을 수용하는 것이다. 운영사는 전략적으로 출발 확정을 활용한다. 성수기 날짜는 무조건 확정되고, 비수기 날짜는 프로모션 이후 일부 슬롯에서만 확정될 수 있다. 유통 시스템(예: OCTO, Bokun, Rezdy)에서 출발 확정은 가용성 슬롯의 불리언 플래그(`isFreesale` 또는 `guaranteedDeparture`)로 모델링되어, OTA와 베드뱅크가 \"요청 확인 필요\" 단서 없이 해당 날짜를 자신 있게 표시·판매할 수 있게 한다. 가격 측면에서 출발 확정 투어는 MGS 위험을 상쇄하고 소비자에게 신뢰성을 신호하기 위해 약간의 프리미엄이 붙는 경우가 많다.",
+      "standardBody": "ATTA",
+      "aliases": [
+        "Guaranteed Run",
+        "GTD Departure",
+        "Minimum-Guaranteed Departure"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Capacity",
+          "targetId": "capacity"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Cut-off Time",
+          "targetId": "cut-off-time"
+        },
+        {
+          "type": "related",
+          "targetTerm": "FIT",
+          "targetId": "fit"
+        },
+        {
+          "type": "related",
+          "targetTerm": "GIT",
+          "targetId": "git-group-inclusive-tour"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Early Bird Discount",
+          "targetId": "early-bird-discount"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "FIT",
+          "explanation": "A FIT (Fully Independent Traveller) booking is a private, custom itinerary assembled for an individual or small group that typically runs whenever arranged; a Guaranteed Departure is a scheduled, fixed-date group tour departure that the operator publicly commits to run regardless of pax count.",
+          "explanation_ko": "FIT(Fully Independent Traveller) 예약은 개인 또는 소규모 그룹을 위해 맞춤 조합된 비공개 여정으로 대개 예약에 따라 운영되는 반면, 출발 확정은 운영사가 탑승자 수와 무관하게 운영을 공개 확약하는 일정·날짜가 고정된 그룹 투어 출발이다.",
+          "targetId": "fit"
+        },
+        {
+          "targetTerm": "Capacity",
+          "explanation": "Capacity is the maximum number of participants a departure can accommodate; a Guaranteed Departure commitment relates to the minimum — it assures operation even when booking numbers are below the usual viable threshold, not the upper limit.",
+          "explanation_ko": "Capacity는 하나의 출발이 수용할 수 있는 최대 참가자 수이고, 출발 확정 약속은 최솟값에 관한 것이다. 즉, 예약 인원이 일반적인 운영 가능 임계값에 미달하더라도 운영을 보장하며, 상한과는 관련이 없다.",
+          "targetId": "capacity"
+        }
+      ],
+      "sources": [
+        {
+          "name": "OCTO (OpenConnectivity) Booking API Specification — Availability fields",
+          "org": "OpenConnectivity",
+          "version": "",
+          "section": "Availability — isFreesale / guaranteedDeparture field",
+          "url": "https://docs.octo.travel/",
+          "tier": "association"
+        },
+        {
+          "name": "Adventure Travel Trade Association (ATTA) — Adventure Travel Industry Snapshot",
+          "org": "ATTA",
+          "version": "",
+          "section": "",
+          "url": "https://www.adventuretravel.biz/research/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"14\" width=\"28\" height=\"24\" rx=\"3\"/><line x1=\"16\" y1=\"10\" x2=\"16\" y2=\"18\"/><line x1=\"32\" y1=\"10\" x2=\"32\" y2=\"18\"/><line x1=\"10\" y1=\"22\" x2=\"38\" y2=\"22\"/><path d=\"M18 30 L22 34 L30 26\" stroke-width=\"2.5\"/></svg>",
+      "term": "Guaranteed Departure",
+      "definition": "A Guaranteed Departure is a tour departure that the operator commits to run regardless of the number of passengers booked, eliminating the risk of last-minute cancellation due to low demand. It provides certainty for travelers who have made non-refundable ancillary commitments (flights, accommodation) and is a premium commercial signal in tour distribution, typically offered at a higher price or reserved for specific date slots.",
+      "lastReviewed": "2026-07-06"
+    },
+    {
       "id": "guest-ticket-contract",
       "vertical": "cruise",
       "category": "cruise",
@@ -20346,6 +20686,82 @@
       "term": "ICAO Code",
       "definition": "An umbrella term for codes assigned by the International Civil Aviation Organization (ICAO), principally the 4-letter location indicator for airports/aerodromes and the 3-letter airline designator. ICAO codes are used primarily for air traffic control, flight planning, and operational communications.",
       "lastReviewed": "2026-06-15"
+    },
+    {
+      "id": "icao-ltag",
+      "vertical": "common",
+      "category": "sustainability",
+      "conceptType": "standard",
+      "status": "active",
+      "abbreviation": "LTAG",
+      "term_ko": "ICAO 장기 달성 목표(LTAG)",
+      "definition_ko": "ICAO 장기 달성 목표(LTAG, Long-Term Aspirational Goal)는 ICAO 회원국이 2050년까지 국제항공 부문의 탄소 순배출 제로(net-zero)를 달성하기로 한 집합적 정부 간 공약으로, 2022년 10월 제41차 ICAO 총회에서 결의 A41-21을 통해 채택되었다. 법적 구속력은 없는 달성 목표(aspirational goal)이지만, CORSIA·SAF 의무화·항공기 효율 기준 등 정책 수단의 방향을 제시하는 포괄적 배출 목표 역할을 한다.",
+      "longDef": "The LTAG was adopted by 193 ICAO member states at the 41st Assembly (Montreal, 2022) in Resolution A41-21, succeeding earlier aspirational goals of 2% annual fuel efficiency improvement and carbon-neutral growth from 2020 (CNG2020). Unlike CORSIA — which is a mandatory market-based measure phased in progressively — the LTAG is a non-binding collective aspiration that the assembly endorses as a guiding beacon for the whole aviation system. Reaching net-zero by 2050 is expected to require four pillars: sustainable aviation fuels (SAF), new aircraft technologies (hydrogen, electric), improved operations and infrastructure (ATM efficiency), and market-based measures such as CORSIA. The ICAO secretariat produces modelling (the ICAO Long-Term Traffic Forecasts and LTAG Feasibility Study) showing that technology alone cannot close the gap, making SAF adoption and carbon markets essential. The LTAG aligns with the Paris Agreement's 1.5°C pathway and mirrors IATA's industry-level Fly Net Zero 2050 commitment, though LTAG is intergovernmental while Fly Net Zero 2050 is an airline industry association pledge.",
+      "longDef_ko": "LTAG는 2022년 몬트리올에서 개최된 제41차 ICAO 총회에서 결의 A41-21을 통해 193개 회원국이 채택했으며, 이전의 연간 2% 연료 효율 개선 및 2020년부터의 탄소 중립 성장(CNG2020)이라는 달성 목표를 계승한다. 단계적으로 도입되는 의무적 시장기반조치인 CORSIA와 달리, LTAG는 총회가 항공 시스템 전체의 지침 기준으로 승인하는 비구속적 집합 목표이다. 2050년까지 탄소 순배출 제로를 달성하려면 지속가능항공연료(SAF), 신규 항공기 기술(수소·전기), 운항·인프라 개선(ATM 효율), CORSIA 같은 시장기반조치의 네 가지 기둥이 필요할 것으로 예상된다. ICAO 사무국은 기술만으로는 격차를 해소할 수 없으며 SAF 도입과 탄소 시장이 필수적임을 보여주는 모델링(ICAO 장기 교통 수요 예측 및 LTAG 실현 가능성 연구)을 발표한다. LTAG는 파리협정 1.5°C 경로와 부합하며, IATA의 업계 차원 Fly Net Zero 2050 공약과 궤를 같이하지만, LTAG는 정부 간 합의인 반면 Fly Net Zero 2050은 항공사 업계 협회의 서약이라는 점에서 다르다.",
+      "standardBody": "ICAO",
+      "aliases": [
+        "Long-Term Aspirational Goal",
+        "Net Zero 2050 (ICAO)",
+        "ICAO Net Zero 2050"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "CORSIA (Carbon Offsetting and Reduction Scheme for International Aviation)",
+          "targetId": "corsia"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Fly Net Zero 2050",
+          "targetId": "fly-net-zero-2050"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Sustainable Aviation Fuel (SAF)",
+          "targetId": "sustainable-aviation-fuel-saf"
+        },
+        {
+          "type": "related",
+          "targetTerm": "ReFuelEU Aviation",
+          "targetId": "refueleu-aviation"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "CORSIA (Carbon Offsetting and Reduction Scheme for International Aviation)",
+          "explanation": "CORSIA is a mandatory market-based measure under which airlines must offset their share of growth in international aviation CO2 emissions through purchased credits; the LTAG is a non-binding aspirational target for net-zero emissions by 2050 that provides the strategic direction for policies including CORSIA. CORSIA addresses near-term emission growth; the LTAG articulates the long-term endpoint.",
+          "explanation_ko": "CORSIA는 항공사가 국제항공 CO2 배출 성장분을 구매한 크레딧으로 상쇄해야 하는 의무적 시장기반조치이고, LTAG는 CORSIA를 포함한 정책들의 전략적 방향을 제시하는 2050년 탄소 순배출 제로의 비구속적 달성 목표이다. CORSIA는 단기 배출 성장에 대응하고, LTAG는 장기 최종 목표를 명시한다.",
+          "targetId": "corsia"
+        },
+        {
+          "targetTerm": "Fly Net Zero 2050",
+          "explanation": "Fly Net Zero 2050 is IATA's industry association pledge by its airline members to achieve net-zero emissions by 2050; the ICAO LTAG is the equivalent intergovernmental commitment by member states at ICAO Assemblies. Both target 2050 net-zero but differ in legal character (association pledge vs. ICAO Resolution) and scope (IATA members vs. all 193 ICAO member states).",
+          "explanation_ko": "Fly Net Zero 2050은 IATA 항공사 회원들이 2050년까지 탄소 순배출 제로를 달성하겠다는 업계 협회 차원의 서약이고, ICAO LTAG는 ICAO 총회에서 회원국들이 채택한 동등한 정부 간 공약이다. 둘 다 2050 탄소 순배출 제로를 목표로 하지만, 법적 성격(협회 서약 vs. ICAO 결의) 및 범위(IATA 회원 vs. 193개 ICAO 회원국)에서 차이가 있다.",
+          "targetId": "fly-net-zero-2050"
+        }
+      ],
+      "sources": [
+        {
+          "name": "ICAO Assembly Resolution A41-21 — Consolidated statement of continuing ICAO policies and practices related to environmental protection — Global Market-based Measure (LTAG)",
+          "org": "ICAO",
+          "version": "A41-21 (2022)",
+          "section": "Appendix I — Long-Term Aspirational Goal",
+          "url": "https://www.icao.int/environmental-protection/Pages/LTASKnowledgeSharing.aspx",
+          "tier": "standard-body"
+        },
+        {
+          "name": "ICAO Environmental Protection — Long-Term Aspirational Goal",
+          "org": "ICAO",
+          "version": "",
+          "section": "",
+          "url": "https://www.icao.int/environmental-protection/Pages/LTASKnowledgeSharing.aspx",
+          "tier": "standard-body"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"16\"/><ellipse cx=\"24\" cy=\"24\" rx=\"8\" ry=\"16\"/><line x1=\"8\" y1=\"24\" x2=\"40\" y2=\"24\"/><line x1=\"24\" y1=\"8\" x2=\"24\" y2=\"40\"/><path d=\"M17 16 Q21 13 24 12 Q28 11 32 14\" stroke-dasharray=\"3,2\"/><path d=\"M14 20 Q18 18 24 20 Q30 22 34 20\"/></svg>",
+      "term": "ICAO Long-Term Aspirational Goal (LTAG)",
+      "definition": "The ICAO Long-Term Aspirational Goal (LTAG) is the collective intergovernmental commitment by ICAO member states to achieve net-zero carbon emissions for international aviation by 2050, adopted through Resolution A41-21 at the 41st ICAO Assembly in October 2022. It is aspirational rather than legally binding, providing the overarching emissions target that guides policy instruments including CORSIA, SAF mandates, and aircraft efficiency standards.",
+      "lastReviewed": "2026-07-06"
     },
     {
       "id": "instant-confirmation",
@@ -27557,6 +27973,93 @@
       "term": "Opaque Inventory",
       "definition": "Opaque inventory is a hotel-distribution model in which rooms are sold at a discount while the property's name (and exact details) are hidden from the shopper until after purchase. By revealing only star rating, general location, and amenities up front, it lets hotels clear distressed or excess inventory without publicly undercutting their own rates or eroding brand value.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "open-jaw",
+      "vertical": "air",
+      "category": "air-shop",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "오픈조(Open Jaw)",
+      "definition_ko": "오픈조(Open Jaw)는 지상 구간의 양 끝 도시가 동일하지 않은 항공 여정이다. 출발지와 도착지 사이에 항공편이 없는 지상 이동 구간(gap, 즉 \"jaw\")이 존재하며, 이 구간은 실제 운항되지 않는다. 단일 오픈조(Single Open Jaw)는 불일치 도시가 한 곳(예: A→B 항공, 지상 이동, C→A 항공)이고, 이중 오픈조(Double Open Jaw)는 두 곳이 불일치한다(A→B 항공, 지상 이동, C→D 항공). Gap 구간은 실제 비행 마일이 없지만 일부 거리 기반 운임 계산 시 반영된다.",
+      "longDef": "Open jaw itineraries arise commonly when a traveler flies into one city and out of a different city, with surface transport bridging the gap. IATA fare construction principles classify international round-trip itineraries into four types: round trip (RT), open jaw (OJ), circle trip (CT), and one-way (OW). For an OJ, the applicable fare is typically half the round-trip fare for each leg, with the gap city pair determining which half is used. The surface gap distance may be included in mileage calculation: for the TPM (Ticketed Point Mileage) check, if the gap city is geographically close it may be ignored, but the rules depend on the applicable tariff and region. Many pricing engines today compute open-jaw fares automatically from ATPCO-filed round-trip fares, splitting them by the highest applicable one-way combination. Open jaw bookings require two separate origin-destination fare components that together form a single pricing unit.",
+      "longDef_ko": "오픈조 여정은 여행자가 한 도시에 도착 후 다른 도시에서 출발하고, 그 사이를 지상 교통으로 이동할 때 흔히 발생한다. IATA 운임 산출 원칙은 국제 왕복 여정을 네 가지 유형, 즉 round trip(RT)·open jaw(OJ)·circle trip(CT)·one-way(OW)로 분류한다. OJ의 경우 적용 운임은 일반적으로 각 구간에 대한 왕복 운임의 절반이며, gap 도시 쌍이 어느 절반을 적용할지를 결정한다. 지상 gap 거리는 마일리지 계산에 포함될 수 있다. TPM(Ticketed Point Mileage) 점검 시, gap 도시가 지리적으로 인접하면 무시될 수도 있으나 규칙은 적용 운임표와 지역에 따라 다르다. 오늘날 대부분의 pricing 엔진은 ATPCO에 파일된 왕복 운임을 기반으로 오픈조 운임을 자동 산출하고, 적용 가능한 최고 편도 조합으로 분할한다. 오픈조 예약은 단일 pricing unit을 구성하는 두 개의 별도 origin-destination 운임 컴포넌트를 필요로 한다.",
+      "standardBody": "IATA",
+      "aliases": [
+        "Open-Jaw Trip",
+        "Open Jaw Fare",
+        "OJ",
+        "Single Open Jaw",
+        "Double Open Jaw"
+      ],
+      "relationships": [
+        {
+          "type": "broader",
+          "targetTerm": "Journey",
+          "targetId": "journey"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Fare Construction",
+          "targetId": "fare-construction"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Fare Component",
+          "targetId": "fare-component"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Pricing Unit",
+          "targetId": "pricing-unit"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Origin & Destination",
+          "targetId": "origin-destination"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Stopover",
+          "targetId": "stopover"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Stopover",
+          "explanation": "A Stopover is a deliberate stop of more than 24 hours at an intermediate point within a single flown journey; an Open Jaw gap is a surface portion between two separate air legs that are not connected by any flight at all.",
+          "explanation_ko": "Stopover는 단일 비행 여정 내 중간 지점에서의 24시간 초과 체류이고, 오픈조의 gap은 항공편으로 전혀 연결되지 않는 두 별도 항공 구간 사이의 지상 구간이다.",
+          "targetId": "stopover"
+        },
+        {
+          "targetTerm": "Journey",
+          "explanation": "A Journey is the complete end-to-end trip concept; an Open Jaw is a specific journey type defined by the surface gap between its two air legs, as distinct from a round trip (same endpoints) or one-way (single direction) journey.",
+          "explanation_ko": "Journey는 출발지부터 목적지까지의 전체 여행 개념이고, 오픈조는 두 항공 구간 사이의 지상 gap으로 정의되는 특정 여정 유형으로, 같은 출발·도착 도시를 사용하는 round trip이나 편도(one-way) 여정과 구별된다.",
+          "targetId": "journey"
+        }
+      ],
+      "sources": [
+        {
+          "name": "IATA Ticket Services Guide (Fare Construction Principles)",
+          "org": "IATA",
+          "version": "",
+          "section": "Fare Construction — Journey Types",
+          "url": "https://www.iata.org/en/publications/manuals/",
+          "tier": "association"
+        },
+        {
+          "name": "ATPCO Fares — Journey Type Definitions",
+          "org": "ATPCO",
+          "version": "",
+          "section": "",
+          "url": "https://www.atpco.net/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 16 Q16 8 24 16 Q32 24 42 16\"/><path d=\"M6 32 Q16 24 24 32 Q32 40 42 32\"/><line x1=\"6\" y1=\"16\" x2=\"8\" y2=\"14\"/><line x1=\"6\" y1=\"16\" x2=\"8\" y2=\"18\"/><line x1=\"42\" y1=\"32\" x2=\"40\" y2=\"30\"/><line x1=\"42\" y1=\"32\" x2=\"40\" y2=\"34\"/><line x1=\"24\" y1=\"16\" x2=\"24\" y2=\"32\" stroke-dasharray=\"3,3\"/></svg>",
+      "term": "Open Jaw",
+      "definition": "An Open Jaw is an air itinerary in which the two endpoints of a surface journey are not the same city: the outbound and inbound air journeys are connected by an implied surface gap (the \"jaw\"). A single open jaw has one mismatched city (e.g., fly A→B, surface to C, return C→A), while a double open jaw has two mismatched cities (fly A→B, surface gap, return C→D). The gap segment carries no flown mileage but is counted in certain distance-based fare checks.",
+      "lastReviewed": "2026-07-06"
     },
     {
       "id": "open-pricing",
