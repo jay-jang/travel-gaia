@@ -2,8 +2,8 @@
   "meta": {
     "name": "Travel Wiki",
     "tagline": "여행 산업 용어 백과사전",
-    "generatedAt": "2026-07-06",
-    "entryCount": 517,
+    "generatedAt": "2026-07-07",
+    "entryCount": 523,
     "categoryCount": 20,
     "verticalCount": 6
   },
@@ -3470,6 +3470,77 @@
       "term": "Ancillary Service",
       "definition": "A chargeable product or service sold by an airline in addition to the base air transportation, such as paid checked baggage, advance seat selection, priority boarding, lounge access, or onboard amenities. Ancillary services are documented and settled via EMDs and described through ATPCO/NDC service definitions.",
       "lastReviewed": "2026-06-15"
+    },
+    {
+      "id": "annual-multi-trip-insurance",
+      "vertical": "common",
+      "category": "insurance",
+      "conceptType": "business-term",
+      "status": "active",
+      "abbreviation": "AMT",
+      "term_ko": "연간 다중 여행 보험(Annual Multi-Trip)",
+      "definition_ko": "연간 다중 여행 보험(Annual Multi-Trip, AMT)은 보험 가입자가 12개월 이내에 떠나는 횟수 제한 없는 모든 여행에 대해 지속적인 보장을 제공하는 여행 보험 상품이다. 단, 1회 여행당 최장 보장 기간(보험사 및 플랜에 따라 일반적으로 17~45일)이 적용된다. 각 여행마다 단일 여행 보험을 별도로 구매하는 것보다 자주 여행하는 고객에게 비용 효율적이지만, 1회 여행별 취소 보장 범위는 전용 단일 여행 보험보다 좁은 경우가 많다.",
+      "longDef": "An AMT policy is typically structured as a single annual premium that activates automatically each time the policyholder departs on a covered trip. Standard coverages include emergency medical and hospitalisation, emergency medical evacuation and repatriation, trip delay and missed connection, loss or delay of baggage, and accidental death and dismemberment. Trip cancellation coverage — the most expensive benefit to price — is either excluded, limited in sum, or offered only as an optional add-on in many AMT products, whereas it is usually a core benefit in single-trip comprehensive policies. AMT policies also impose a maximum per-trip duration: trips exceeding this duration are uninsured after the limit, meaning a traveller planning a long gap year or extended assignment would require a single-trip or long-stay specialist policy instead. AMT policies are sold widely through banks, credit card providers, insurers, travel agencies, and membership programmes. Under UK regulation, travel insurance is subject to the Financial Conduct Authority (FCA); in the US, each state insurance commission licenses travel insurance products.",
+      "longDef_ko": "AMT 보험은 일반적으로 연간 단일 보험료로 구성되며, 보험 가입자가 보장 대상 여행을 출발할 때마다 자동으로 활성화된다. 표준 보장 항목에는 응급 의료·입원, 응급 의료 대피·송환, 여행 지연·환승 실패, 수하물 분실·지연, 상해 사망·후유장해가 포함된다. 여행 취소 보장(보험료 산정에서 가장 비용이 높은 혜택)은 많은 AMT 상품에서 제외되거나 보장 한도가 낮게 설정되거나 선택적 추가 특약으로만 제공된다. 반면 단일 여행 종합 보험에서는 일반적으로 핵심 혜택이다. AMT 보험은 1회 여행당 최장 기간도 제한하며, 이 기간을 초과하는 여행은 한도 이후 보장이 되지 않으므로, 장기 갭이어나 장기 출장을 계획하는 여행자는 단일 여행 또는 장기 체류 전문 보험을 필요로 한다. AMT 보험은 은행·신용카드사·보험사·여행사·멤버십 프로그램을 통해 널리 판매된다. 영국에서는 여행 보험이 FCA(금융감독청) 규제를 받으며, 미국에서는 각 주 보험위원회가 여행 보험 상품을 인가한다.",
+      "standardBody": "ABTA",
+      "aliases": [
+        "AMT Policy",
+        "Annual Travel Insurance",
+        "Multi-Trip Annual Policy",
+        "Year-Round Travel Insurance"
+      ],
+      "relationships": [
+        {
+          "type": "narrower",
+          "targetTerm": "Comprehensive Travel Insurance",
+          "targetId": "comprehensive-travel-insurance"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Trip Cancellation",
+          "targetId": "trip-cancellation"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Cancel For Any Reason (CFAR)",
+          "targetId": "cancel-for-any-reason-cfar"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Free Look Period",
+          "targetId": "free-look-period"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Comprehensive Travel Insurance",
+          "explanation": "Comprehensive Travel Insurance is typically a single-trip policy covering one defined journey from departure to return with full trip-cancellation coverage at its core; Annual Multi-Trip Insurance covers unlimited trips within a year at a single annual premium but usually offers reduced or optional trip-cancellation benefits and imposes a maximum duration per trip.",
+          "explanation_ko": "Comprehensive Travel Insurance는 일반적으로 출발부터 귀환까지 하나의 확정된 여정을 보장하며 여행 취소 보장을 핵심으로 하는 단일 여행 보험이고, Annual Multi-Trip Insurance는 연간 단일 보험료로 연내 무제한 여행을 보장하지만 여행 취소 보장은 축소되거나 선택 특약으로 제공되며 1회 여행당 최장 기간 제한이 적용된다.",
+          "targetId": "comprehensive-travel-insurance"
+        }
+      ],
+      "sources": [
+        {
+          "name": "ABTA Travel Insurance Guidance — Annual & Multi-Trip",
+          "org": "ABTA — The Travel Association",
+          "version": "",
+          "section": "",
+          "url": "https://www.abta.com/tips-and-advice/planning-and-booking-a-holiday/travel-insurance",
+          "tier": "association"
+        },
+        {
+          "name": "US Travel Insurance Association (USTIA) — Travel Insurance FAQs",
+          "org": "US Travel Insurance Association (USTIA)",
+          "version": "",
+          "section": "",
+          "url": "https://ustia.org/about-ustia/faq/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"12\" width=\"32\" height=\"28\" rx=\"2\"/><path d=\"M8 20h32\"/><line x1=\"16\" y1=\"8\" x2=\"16\" y2=\"16\"/><line x1=\"32\" y1=\"8\" x2=\"32\" y2=\"16\"/><path d=\"M16 30l4 4 8-8\"/></svg>",
+      "term": "Annual Multi-Trip Travel Insurance",
+      "definition": "An Annual Multi-Trip (AMT) travel insurance policy provides continuous coverage for an unlimited number of trips taken within a 12-month period, subject to a maximum duration per individual trip (typically 17–45 days per trip depending on the insurer and plan). It is cost-effective for frequent travellers compared with purchasing separate single-trip policies for each journey, but commonly provides narrower per-trip cancellation benefits than a dedicated single-trip policy.",
+      "lastReviewed": "2026-07-07"
     },
     {
       "id": "antitrust-immunity",
@@ -9148,6 +9219,92 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "competitive-set",
+      "vertical": "lodging",
+      "category": "hotel-rate",
+      "conceptType": "business-term",
+      "status": "active",
+      "abbreviation": "CompSet",
+      "term_ko": "경쟁 비교군(Competitive Set)",
+      "definition_ko": "Competitive Set(CompSet)은 호텔이 자체 수익 성과를 벤치마킹하는 비교 대상 호텔 군으로, 보통 위치·서비스 수준·편의시설·가격대가 유사한 3~5개 호텔로 구성된다. CompSet 비교는 RevPAR Index(RGI), 객실 점유율 지수, ADR 지수 등을 통해 호텔 수익 관리 벤치마킹의 핵심을 이루며, STR STAR Report 등 표준 보고서를 통해 제공된다.",
+      "longDef": "A hotel selects its CompSet based on market criteria: properties that travellers would genuinely consider as alternatives when booking. Once submitted to a benchmarking service (most commonly STR, now part of CoStar Group), the hotel receives weekly or monthly STAR Reports comparing its own occupancy, ADR, and RevPAR against the aggregated CompSet average. Three key indices result: the Occupancy Index (also called Market Penetration Index, MPI) measures whether the hotel is capturing its fair share of occupancy; the ADR Index measures relative average rate performance; and the RevPAR Index (RGI) is the composite measure of revenue per available room performance against the CompSet. An RGI above 100 indicates the hotel is outperforming its peer group. Ownership, asset management, and revenue management teams use CompSet tracking to assess strategy effectiveness, set performance targets, and validate pricing decisions. Selecting the wrong CompSet — peers that are not genuine alternatives — is a common pitfall that distorts benchmarking signals.",
+      "longDef_ko": "호텔은 여행자가 예약 시 실제 대안으로 고려할 만한 호텔을 기준으로 CompSet을 선정한다. 벤치마킹 서비스(가장 일반적으로 CoStar Group 소속 STR)에 제출하면, 호텔은 자체 점유율·ADR·RevPAR을 CompSet 집계 평균과 비교하는 주간 또는 월간 STAR Report를 받는다. 세 가지 핵심 지수가 도출된다: 점유율 지수(시장 침투 지수, MPI)는 호텔이 적정 점유 점유율을 확보하고 있는지를 측정하고, ADR 지수는 상대적 평균 요금 성과를 측정하며, RevPAR 지수(RGI)는 CompSet 대비 객실당 수익의 종합 지표이다. RGI가 100 이상이면 CompSet 대비 초과 성과를 나타낸다. 오너십·자산 관리·수익 관리 팀은 CompSet 추적을 통해 전략 효과를 평가하고, 성과 목표를 설정하며, 가격 결정을 검증한다. 실제 대안이 아닌 호텔로 CompSet을 잘못 구성하는 것은 벤치마킹 신호를 왜곡하는 흔한 실수이다.",
+      "standardBody": "STR",
+      "aliases": [
+        "CompSet",
+        "Comp Set",
+        "Competitive Set Analysis"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "RevPAR",
+          "targetId": "revpar"
+        },
+        {
+          "type": "related",
+          "targetTerm": "ADR",
+          "targetId": "adr"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Occupancy",
+          "targetId": "occupancy"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Revenue Management",
+          "targetId": "revenue-management"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Rate Shopping",
+          "targetId": "rate-shopping"
+        },
+        {
+          "type": "related",
+          "targetTerm": "TRevPAR",
+          "targetId": "trevpar"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Rate Shopping",
+          "explanation": "Rate Shopping monitors competitor room rates in real time or near-real time to inform pricing decisions; Competitive Set benchmarking tracks actual achieved RevPAR, ADR, and occupancy relative to the peer group over time — one is a live pricing intelligence tool, the other is a retrospective performance scorecard.",
+          "explanation_ko": "Rate Shopping은 가격 결정을 위해 경쟁사 객실 요금을 실시간 또는 준실시간으로 모니터링하는 도구이고, Competitive Set 벤치마킹은 시간이 지남에 따라 경쟁 호텔 대비 달성된 RevPAR·ADR·점유율을 추적하는 것이다. 하나는 실시간 가격 인텔리전스 도구이고, 다른 하나는 회고적 성과 성적표이다.",
+          "targetId": "rate-shopping"
+        },
+        {
+          "targetTerm": "Revenue Management",
+          "explanation": "Revenue Management is the overall discipline of optimising room revenue through demand forecasting, pricing, and inventory control; a Competitive Set is an external benchmarking input that tells the revenue manager how the hotel is performing relative to its peers, not how to set prices per se.",
+          "explanation_ko": "Revenue Management는 수요 예측·가격 책정·재고 관리를 통해 객실 수익을 최적화하는 전반적인 전략 체계이고, Competitive Set은 수익 관리자에게 경쟁 호텔 대비 성과를 알려주는 외부 벤치마킹 투입 요소로서, 그 자체로 가격 설정 방법을 제시하는 것은 아니다.",
+          "targetId": "revenue-management"
+        }
+      ],
+      "sources": [
+        {
+          "name": "STR Glossary — Competitive Set (Comp Set)",
+          "org": "STR (CoStar Group)",
+          "version": "",
+          "section": "",
+          "url": "https://str.com/resourcesglossary/competitive-set-comp-set",
+          "tier": "vendor-doc"
+        },
+        {
+          "name": "HSMAI Hotel Revenue Management Reference Guide",
+          "org": "Hospitality Sales and Marketing Association International (HSMAI)",
+          "version": "",
+          "section": "",
+          "url": "https://hsmai.org",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 38h36\"/><path d=\"M6 38V8\"/><rect x=\"9\" y=\"24\" width=\"7\" height=\"14\"/><rect x=\"20\" y=\"16\" width=\"7\" height=\"22\"/><rect x=\"31\" y=\"20\" width=\"7\" height=\"18\"/></svg>",
+      "term": "Competitive Set",
+      "definition": "A Competitive Set (CompSet) is the defined peer group of hotels — typically three to five properties with similar location, service level, amenities, and price tier — against which a hotel benchmarks its own revenue performance. CompSet comparisons are the backbone of hotel revenue management benchmarking, producing the RevPAR Index (RGI), Occupancy Index, and ADR Index through standardised reports such as the STR STAR Report.",
+      "lastReviewed": "2026-07-07"
+    },
+    {
       "id": "comprehensive-travel-insurance",
       "vertical": "common",
       "category": "insurance",
@@ -11920,6 +12077,75 @@
       "lastReviewed": "2026-06-24"
     },
     {
+      "id": "destination-management-organization",
+      "vertical": "tours",
+      "category": "tour-ops",
+      "conceptType": "role",
+      "status": "active",
+      "abbreviation": "DMO",
+      "term_ko": "목적지 관리 기구(DMO)",
+      "definition_ko": "목적지 관리 기구(DMO)는 국가·지역·도시 수준에서 관광 목적지의 통합적 관리와 전략적 홍보를 담당하는 공공·준공공·비영리 기관이다. 민간 기업인 DMC(목적지 관리 회사)와 달리, DMO는 장기 목적지 스튜어드십, 이해관계자 조정, 브랜드 포지셔닝을 주도하며 방문객 분산과 지속가능성 프로그램도 관리할 수 있다.",
+      "longDef": "DMOs operate at multiple geographic scales: national tourism organisations (NTOs) promote an entire country abroad; regional tourism organisations (RTOs) cover states, provinces, or tourism zones; and local DMOs — often branded as Convention & Visitors Bureaux (CVBs) or Tourism Boards — focus on cities or districts. Their functions span destination marketing (advertising, content, trade representation at travel trade shows), convention and meetings sales (attracting MICE business), visitor services (information centres, itinerary tools), product development (working with local suppliers), and increasingly destination stewardship (managing visitor flows, supporting local communities, and implementing sustainability strategies). Destinations International (formerly DMAI — Destination Marketing Association International) is the leading global trade association for DMOs and operates the Destination Marketing Accreditation Program (DMAP). UNWTO guidelines recognise DMOs as the primary governance and coordination mechanism for destination competitiveness and sustainability.",
+      "longDef_ko": "DMO는 여러 지리적 단위로 운영된다: 국가 관광 기구(NTO)는 국가 전체를 해외에 홍보하고, 지역 관광 기구(RTO)는 주·도·관광 구역을 담당하며, 지역 DMO(흔히 컨벤션·방문자 뷰로(CVB) 또는 관광청으로 브랜딩됨)는 도시나 구역에 집중한다. DMO의 기능은 목적지 마케팅(광고·콘텐츠·여행 박람회 무역 대표), 컨벤션·미팅 유치(MICE 비즈니스 유치), 방문객 서비스(안내 센터, 여정 도구), 상품 개발(현지 공급사와의 협력), 그리고 점점 더 중요해지는 목적지 스튜어드십(방문객 흐름 관리, 지역 공동체 지원, 지속가능성 전략 실행)에 걸쳐 있다. Destinations International(구 DMAI)은 DMO의 주요 글로벌 무역 협회로 목적지 마케팅 인증 프로그램(DMAP)을 운영한다. UNWTO 지침은 DMO를 목적지 경쟁력과 지속가능성을 위한 주요 거버넌스·조정 메커니즘으로 인정한다.",
+      "standardBody": "UNWTO",
+      "aliases": [
+        "DMO",
+        "Tourism Board",
+        "National Tourism Organization",
+        "NTO",
+        "Convention and Visitors Bureau",
+        "CVB",
+        "Regional Tourism Organization"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Destination Management Company",
+          "targetId": "destination-management-company"
+        },
+        {
+          "type": "related",
+          "targetTerm": "FAM Trip",
+          "targetId": "fam-trip"
+        },
+        {
+          "type": "related",
+          "targetTerm": "MICE",
+          "targetId": "mice"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Destination Management Company",
+          "explanation": "A DMC is a private commercial company that designs and executes ground services (tours, transfers, logistics) for inbound groups on a for-profit basis; a DMO is a public or quasi-public body whose mandate is the strategic governance and promotion of a destination on behalf of the broader community, not the execution of individual trips.",
+          "explanation_ko": "DMC는 인바운드 그룹의 지상 서비스(투어·교통·물류)를 영리 목적으로 설계·실행하는 민간 상업 회사이고, DMO는 개별 여행 실행이 아니라 더 넓은 공동체를 대신해 목적지의 전략적 거버넌스와 홍보를 사명으로 하는 공공 또는 준공공 기관이다.",
+          "targetId": "destination-management-company"
+        }
+      ],
+      "sources": [
+        {
+          "name": "UNWTO Guidelines for Institutional Strengthening of Destination Management Organizations",
+          "org": "UN Tourism (UNWTO)",
+          "version": "",
+          "section": "",
+          "url": "https://www.unwto.org/global/publication/unwto-guidelines-institutional-strengthening-destination-management-organizations-dmos-p",
+          "tier": "association"
+        },
+        {
+          "name": "Destinations International — Destination Marketing Accreditation Program (DMAP)",
+          "org": "Destinations International",
+          "version": "",
+          "section": "",
+          "url": "https://destinationsinternational.org",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 6 C16 6 10 13 10 20 C10 30 24 42 24 42 C24 42 38 30 38 20 C38 13 32 6 24 6\"/><circle cx=\"24\" cy=\"20\" r=\"5\"/><line x1=\"24\" y1=\"6\" x2=\"24\" y2=\"3\"/><line x1=\"24\" y1=\"3\" x2=\"34\" y2=\"3\"/><line x1=\"34\" y1=\"3\" x2=\"34\" y2=\"10\"/></svg>",
+      "term": "Destination Management Organization",
+      "definition": "A Destination Management Organization (DMO) is a public, quasi-public, or non-profit body responsible for the coordinated management and strategic promotion of a tourism destination at the national, regional, or local level. Unlike a private Destination Management Company (DMC), a DMO leads long-term destination stewardship, stakeholder coordination, and brand positioning, and may also manage visitor dispersal and sustainability programmes.",
+      "lastReviewed": "2026-07-07"
+    },
+    {
       "id": "digital-travel-credential",
       "vertical": "common",
       "category": "customer",
@@ -12615,6 +12841,81 @@
       "term": "Drydock",
       "definition": "A scheduled or unscheduled period during which a cruise ship is withdrawn from passenger service and placed in a dry dock facility for hull inspection, maintenance, repair, or refurbishment. SOLAS (Safety of Life at Sea) mandates periodic drydockings as part of statutory survey cycles for international passenger vessels.",
       "lastReviewed": "2026-07-01"
+    },
+    {
+      "id": "duty-of-care",
+      "vertical": "common",
+      "category": "customer",
+      "conceptType": "standard",
+      "status": "active",
+      "term_ko": "보호 의무(Duty of Care)",
+      "definition_ko": "보호 의무(Duty of Care)는 기업이 임직원의 출장 중 건강·안전·보안을 보호하기 위해 합리적인 모든 조치를 취해야 하는 법적·윤리적 의무이다. ISO 31030:2021(여행 위험 관리 — 조직을 위한 지침)은 이 의무를 이행하기 위한 여행 위험 관리 정책 및 프로그램의 개발·실행·검토에 구조화된 체계를 제공하는 국제 표준이다.",
+      "longDef": "Duty of Care in travel risk management encompasses three broad obligations: pre-trip (risk assessment, policy communication, traveller briefing, pre-approval for high-risk destinations), in-trip (real-time location tracking, communication channels, emergency response and evacuation capability), and post-trip (incident reporting, traveller support and mental-health aftercare). ISO 31030:2021, published by ISO Technical Committee 262 (Risk Management), is the first international standard to codify these obligations systematically. It defines a risk-based approach: organisations identify travel risks, evaluate their likelihood and consequence, establish controls, and monitor performance. The Global Business Travel Association (GBTA) and the Business Travel Association (BTA) both align their corporate travel frameworks with ISO 31030. A Duty of Care failure can expose an organisation to regulatory sanctions, civil liability, and reputational damage under employment law in most jurisdictions. Corporate travel programmes embed Duty of Care through travel risk management platforms that integrate real-time alerts, traveller tracking, and emergency-assistance services.",
+      "longDef_ko": "여행 위험 관리에서 보호 의무는 세 가지 의무를 포괄한다: 출발 전(위험 평가, 정책 전달, 여행자 브리핑, 고위험 목적지 사전 승인), 이동 중(실시간 위치 추적, 소통 채널, 비상 대응 및 대피 역량), 출장 후(사건 보고, 여행자 지원 및 정신 건강 사후 관리). ISO 31030:2021은 ISO 기술위원회 262(위험 관리)가 발행한 최초의 국제 표준으로, 이러한 의무를 체계적으로 성문화했다. 이 표준은 위험 기반 접근법을 정의하며, 조직이 여행 위험을 식별하고 발생 가능성과 결과를 평가하며 통제 수단을 수립하고 성과를 모니터링하도록 한다. GBTA와 BTA는 모두 기업 여행 체계를 ISO 31030에 맞추고 있다. 보호 의무 위반은 대부분의 국가 고용법에 따라 규제 제재, 민사 책임, 평판 손실로 이어질 수 있다. 기업 출장 프로그램은 실시간 알림·여행자 추적·비상 지원 서비스를 통합한 여행 위험 관리 플랫폼을 통해 보호 의무를 내재화한다.",
+      "standardBody": "ISO",
+      "aliases": [
+        "Duty of Assistance",
+        "Travel Risk Management",
+        "TRM"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Travel Advisory",
+          "targetId": "travel-advisory"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Emergency Medical Evacuation",
+          "targetId": "emergency-medical-evacuation"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Comprehensive Travel Insurance",
+          "targetId": "comprehensive-travel-insurance"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Corporate Profile",
+          "targetId": "corporate-profile"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Travel Advisory",
+          "explanation": "A Travel Advisory is a government-issued public warning about risks in a destination; Duty of Care is the organisation's internal obligation to act on such advisories and take additional protective measures for its travelling employees.",
+          "explanation_ko": "Travel Advisory는 목적지 위험에 대해 정부가 발행하는 공개 경보이고, Duty of Care는 그러한 경보에 대응하고 출장 임직원을 위한 추가 보호 조치를 취해야 하는 조직의 내부 의무이다.",
+          "targetId": "travel-advisory"
+        },
+        {
+          "targetTerm": "Comprehensive Travel Insurance",
+          "explanation": "Comprehensive Travel Insurance is a financial product that reimburses losses from covered perils; Duty of Care is the broader legal and operational obligation to prevent harm in the first place — insurance is one tool used to fulfill Duty of Care, but the obligation extends well beyond insurance coverage.",
+          "explanation_ko": "Comprehensive Travel Insurance는 담보 위험으로 인한 손실을 보상하는 금융 상품이고, Duty of Care는 애초에 피해를 예방해야 하는 더 광범위한 법적·운영적 의무이다. 보험은 Duty of Care를 이행하기 위해 사용되는 하나의 도구이지만, 의무는 보험 보장 범위를 훨씬 넘어선다.",
+          "targetId": "comprehensive-travel-insurance"
+        }
+      ],
+      "sources": [
+        {
+          "name": "ISO 31030:2021 — Travel risk management — Guidance for organizations",
+          "org": "International Organization for Standardization (ISO)",
+          "version": "2021",
+          "section": "",
+          "url": "https://www.iso.org/standard/54204.html",
+          "tier": "standard-body"
+        },
+        {
+          "name": "GBTA Guide to ISO 31030 Implementation",
+          "org": "Global Business Travel Association (GBTA)",
+          "version": "",
+          "section": "",
+          "url": "https://www.gbta.org",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 5 L40 12 L40 27 C40 36 24 43 24 43 C24 43 8 36 8 27 L8 12 Z\"/><circle cx=\"24\" cy=\"20\" r=\"4\"/><path d=\"M17 35 C17 29 31 29 31 35\"/></svg>",
+      "term": "Duty of Care",
+      "definition": "Duty of Care is an organisation's legal and ethical obligation to take all reasonable steps to protect the health, safety, and security of its employees while they travel on business. ISO 31030:2021 (Travel risk management — Guidance for organizations) is the international standard that provides a structured framework for organisations to develop, implement, and review travel risk management policies and programmes to fulfil this obligation.",
+      "lastReviewed": "2026-07-07"
     },
     {
       "id": "dynamic-currency-conversion-dcc",
@@ -24867,6 +25168,82 @@
       "lastReviewed": "2026-06-15"
     },
     {
+      "id": "mice",
+      "vertical": "lodging",
+      "category": "hotel-dist",
+      "conceptType": "business-term",
+      "status": "active",
+      "abbreviation": "MICE",
+      "term_ko": "기업 행사(MICE)",
+      "definition_ko": "MICE(Meetings, Incentives, Conferences, and Exhibitions)는 여행 산업에서 기업·협회·정부 고객을 위한 전문 단체 모임의 기획·진행·개최를 아우르는 비즈니스 이벤트 부문의 산업 명칭이다. 호텔·컨벤션센터·목적지에 있어 가장 중요한 수요 카테고리 중 하나이며, ICCA·MPI 등 주요 단체는 이를 '기업 행사(Business Events)' 또는 '회의 산업(Meetings Industry)'이라고도 부른다.",
+      "longDef": "MICE breaks into four components: Meetings (internal corporate gatherings or association business meetings), Incentives (reward travel programmes offered to top-performing employees or distribution partners), Conferences/Conventions (larger participatory events designed for discussion, education, and networking — often run by associations or governments), and Exhibitions/Expositions (trade fairs and public shows at which products and services are displayed). Hotels and venues pursue MICE business because it drives high-value contracted blocks that fill low-demand periods, generates room-night volume, and yields significant ancillary spend (food and beverage, audio-visual, transportation). For a destination, MICE is valued for its high average spend per delegate, off-peak demand generation, and long lead-time that aids forward-booking certainty. Destination Management Companies (DMCs) are often engaged to handle on-the-ground logistics for MICE groups.",
+      "longDef_ko": "MICE는 네 가지 구성 요소로 나뉜다: Meetings(기업 내부 모임 또는 협회 업무 회의), Incentives(성과 우수 임직원·유통 파트너에게 제공하는 포상 여행 프로그램), Conferences/Conventions(협회·정부가 주관하는 토의·교육·네트워킹 중심의 대규모 참여형 행사), Exhibitions/Expositions(제품·서비스 전시 무역 박람회). 호텔·행사장이 MICE를 추구하는 이유는 수요가 낮은 시기를 채우는 고가 확정 블록을 유발하고, 객실 수 물량을 확보하며, F&B·AV·교통 등 부가 매출을 창출하기 때문이다. 목적지 입장에서 MICE는 대표단 1인당 지출이 높고, 비수기 수요를 창출하며, 예약 리드타임이 길어 예측 가능성이 높다는 점에서 가치가 크다. DMC는 MICE 그룹의 현장 물류를 처리하기 위해 종종 참여한다.",
+      "standardBody": "ICCA",
+      "aliases": [
+        "Meetings Industry",
+        "Business Events",
+        "Meetings Incentives Conferences Exhibitions"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Group Block",
+          "targetId": "group-block"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Destination Management Company",
+          "targetId": "destination-management-company"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Corporate Profile",
+          "targetId": "corporate-profile"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Destination Management Organization",
+          "targetId": "destination-management-organization"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Group Block",
+          "explanation": "A Group Block is the hotel inventory mechanism — the contracted set of rooms reserved at a negotiated rate for a group; MICE is the demand segment label for the broader category of business-events clients that generates group blocks.",
+          "explanation_ko": "Group Block은 호텔 인벤토리 메커니즘으로, 단체를 위해 협상된 요금으로 예약된 객실 묶음이다. MICE는 단체 블록을 발생시키는 더 넓은 비즈니스 이벤트 고객 카테고리에 대한 수요 부문 명칭이다.",
+          "targetId": "group-block"
+        },
+        {
+          "targetTerm": "Destination Management Company",
+          "explanation": "A DMC is a private local company that executes on-the-ground logistics, transfers, and activities; MICE is the demand-segment classification for the business-events travel market that DMCs often serve.",
+          "explanation_ko": "DMC는 현지 물류·교통·액티비티를 실행하는 민간 현지 회사이고, MICE는 DMC가 자주 서비스하는 비즈니스 이벤트 여행 시장에 대한 수요 부문 분류 명칭이다.",
+          "targetId": "destination-management-company"
+        }
+      ],
+      "sources": [
+        {
+          "name": "ICCA Industry Facts & Figures",
+          "org": "International Congress and Convention Association (ICCA)",
+          "version": "",
+          "section": "",
+          "url": "https://iccaworld.org/about-icca/faq",
+          "tier": "association"
+        },
+        {
+          "name": "MPI MICE Terminology",
+          "org": "Meeting Professionals International (MPI)",
+          "version": "",
+          "section": "",
+          "url": "https://www.mpi.org",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"14\" width=\"32\" height=\"20\" rx=\"2\"/><line x1=\"8\" y1=\"22\" x2=\"40\" y2=\"22\"/><circle cx=\"16\" cy=\"8\" r=\"3\"/><circle cx=\"32\" cy=\"8\" r=\"3\"/><line x1=\"16\" y1=\"34\" x2=\"16\" y2=\"40\"/><line x1=\"32\" y1=\"34\" x2=\"32\" y2=\"40\"/></svg>",
+      "term": "MICE",
+      "definition": "MICE (Meetings, Incentives, Conferences, and Exhibitions) is the industry designation for the business-events segment of travel: the planning, facilitation, and hosting of professional group gatherings for corporate, association, and governmental clients. It represents a major demand category for hotels, convention centres, and destinations worldwide and is increasingly referred to simply as the \"Meetings Industry\" or \"Business Events\" by leading trade bodies such as ICCA and MPI.",
+      "lastReviewed": "2026-07-07"
+    },
+    {
       "id": "mileage-accrual",
       "vertical": "common",
       "category": "customer",
@@ -30236,6 +30613,52 @@
       "term": "Override Commission",
       "definition": "An override commission (or overrider) is an additional percentage commission paid to a travel agent or reseller above the standard base commission rate, triggered when the agent meets or exceeds pre-agreed volume or revenue targets in a defined period. It is a volume-incentive mechanism used across travel distribution — airlines, hotels, cruise lines, and tour operators.",
       "lastReviewed": "2026-06-28"
+    },
+    {
+      "id": "overtourism",
+      "vertical": "common",
+      "category": "sustainability",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "과잉 관광(Overtourism)",
+      "definition_ko": "과잉 관광(Overtourism)은 목적지(또는 그 일부)에서 관광이 지나치게 발전해 주민의 삶의 질 및/또는 방문객 경험의 질에 과도하게 부정적인 영향을 미치는 상태를 뜻한다. 2018년 UNWTO 보고서에서 공식 정의된 이 개념은 목적지의 인프라·사회적 수용 능력을 초과하는 방문객 수로 인한 혼잡, 환경 훼손, 지역 문화 침식, 주민 반감을 포괄한다.",
+      "longDef": "Overtourism gained global recognition in UNWTO's 2018 report \"'Overtourism'? Understanding and Managing Urban Tourism Growth beyond Perceptions\", which surveyed 18 cities and documented both the perceptions of residents and the policy responses of destination managers. The report distinguishes between sheer visitor volume and the concentration of those visitors in time and space: a destination may receive many tourists sustainably if well-managed, while a smaller number concentrated on a single street, viewpoint, or peak season can produce overtourism conditions. Key indicators include rising resident complaints and displacement, degradation of natural or heritage assets, infrastructure saturation (public transport, waste, water, housing), and declining visitor satisfaction. Responses available to Destination Management Organizations (DMOs) include demand dispersal strategies (promoting off-peak seasons and secondary attractions), visitor caps at sensitive sites, pricing mechanisms, zoning, and community-led carrying-capacity assessments. The concept is closely linked to the broader sustainable tourism agenda and the UN Sustainable Development Goals (SDGs), particularly SDG 11 (Sustainable Cities and Communities) and SDG 17 (Partnerships).",
+      "longDef_ko": "과잉 관광은 UNWTO의 2018년 보고서 \"'Overtourism'? Understanding and Managing Urban Tourism Growth beyond Perceptions\"에서 18개 도시를 대상으로 주민 인식과 목적지 관리자 정책 대응을 기록하며 전 세계적 주목을 받았다. 이 보고서는 단순한 방문객 수와 시간·공간적 집중도를 구분한다. 방문객이 많더라도 잘 관리되면 지속가능할 수 있는 반면, 단일 거리·전망대·성수기에 집중된 소수의 방문객이 과잉 관광 상황을 야기할 수 있다. 주요 지표에는 주민 민원 증가와 이주, 자연·유산 자원 훼손, 인프라 포화(대중교통·폐기물·수자원·주택), 방문객 만족도 저하 등이 있다. DMO가 활용할 수 있는 대응 방안에는 수요 분산 전략(비수기·보조 명소 홍보), 민감 지역 방문객 상한, 가격 메커니즘, 용도 지역 규제, 지역사회 주도 수용 능력 평가 등이 있다. 이 개념은 더 넓은 지속가능 관광 의제 및 UN 지속가능발전목표(SDGs), 특히 SDG 11(지속가능한 도시·공동체)과 SDG 17(파트너십)과 밀접하게 연결되어 있다.",
+      "standardBody": "UNWTO",
+      "aliases": [
+        "Over-tourism",
+        "Tourism Overload",
+        "Mass Tourism Saturation"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Destination Management Organization",
+          "targetId": "destination-management-organization"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Destination Management Organization",
+          "explanation": "A Destination Management Organization is the body responsible for coordinating destination governance and promotion; overtourism is the problem condition that DMOs must identify, monitor, and mitigate through demand management, dispersal strategies, and carrying-capacity frameworks.",
+          "explanation_ko": "Destination Management Organization(DMO)은 목적지 거버넌스와 홍보를 조정하는 기관이고, 과잉 관광은 DMO가 수요 관리·분산 전략·수용 능력 체계를 통해 식별·모니터링·완화해야 하는 문제 상황이다.",
+          "targetId": "destination-management-organization"
+        }
+      ],
+      "sources": [
+        {
+          "name": "'Overtourism'? Understanding and Managing Urban Tourism Growth beyond Perceptions (Vol. 1)",
+          "org": "UN Tourism (UNWTO)",
+          "version": "2018",
+          "section": "",
+          "url": "https://www.unwto.org/global/publication/overtourism-understanding-and-managing-urban-tourism-growth-beyond-perceptions",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"14\" r=\"4\"/><circle cx=\"24\" cy=\"14\" r=\"4\"/><circle cx=\"36\" cy=\"14\" r=\"4\"/><path d=\"M5 34 C5 27 19 27 19 34\"/><path d=\"M17 34 C17 27 31 27 31 34\"/><path d=\"M29 34 C29 27 43 27 43 34\"/></svg>",
+      "term": "Overtourism",
+      "definition": "Overtourism describes the condition in which tourism in a destination — or parts thereof — excessively and negatively influences the perceived quality of life of citizens and/or the quality of visitor experience. Defined by UN Tourism (UNWTO) in its landmark 2018 report, the concept encompasses visitor volumes that exceed a destination's infrastructure and social carrying capacity, leading to congestion, environmental degradation, erosion of local culture, and resident resentment.",
+      "lastReviewed": "2026-07-07"
     },
     {
       "id": "package-rate",
