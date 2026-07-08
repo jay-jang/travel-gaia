@@ -2,8 +2,8 @@
   "meta": {
     "name": "Travel Wiki",
     "tagline": "여행 산업 용어 백과사전",
-    "generatedAt": "2026-07-07",
-    "entryCount": 523,
+    "generatedAt": "2026-07-08",
+    "entryCount": 529,
     "categoryCount": 20,
     "verticalCount": 6
   },
@@ -1236,6 +1236,95 @@
       "term": "ADR",
       "definition": "Average Daily Rate is a core lodging performance metric equal to total room revenue divided by the number of rooms sold (occupied) over a given period. It measures the average price actually realized per occupied room and excludes complimentary and house-use rooms.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "advance-deposit",
+      "vertical": "lodging",
+      "category": "hotel-rate",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "사전 보증금(Advance Deposit)",
+      "definition_ko": "사전 보증금(Advance Deposit)은 예약 시 또는 지정 기한까지 예약 보증을 위해 고객으로부터 징수하는 부분 또는 전액 결제금이다. 취소 위험을 호텔에서 고객에게 이전하고, 투숙 전 확정 매출을 확보하며, 체크인 시 징수하는 보안/파손 보증금과는 구별된다.",
+      "longDef": "Advance deposits are a revenue-protection tool widely used for leisure bookings, peak seasons, long stays, and high-value rooms. Common structures include a first-night deposit, a percentage of the total stay (e.g. 25–50 %), or full prepayment. In distribution systems, three payment types are typically modelled: guarantee (secures the room but no charge until arrival or no-show), deposit (partial advance payment), and prepay (full payment at booking). The deposit amount, due date, and forfeiture rules on cancellation are components of the rate plan's Cancellation Policy. International hotel distribution systems — including Travelport uAPI and the OpenTravel Hotel Rate Plan standard — define deposit requirements as structured attributes on rate plans so that OTAs and TMCs can display them to customers at the time of booking. If the guest cancels after the deposit deadline, the deposit is typically forfeited according to the Cancellation Policy terms.",
+      "longDef_ko": "사전 보증금은 레저 예약, 성수기, 장기 투숙, 고가 객실에 널리 사용되는 매출 보호 수단이다. 일반적 구조로는 첫째 날치 요금, 총 숙박비의 일정 비율(예: 25~50%), 전액 선불이 있다. 유통 시스템에서는 통상 세 가지 결제 유형이 모델링된다: guarantee(객실 확보, 도착 전 또는 노쇼 시까지 청구 없음), deposit(부분 사전 결제), prepay(예약 시 전액 결제). 보증금 금액, 납부 기한, 취소 시 환불 불가 규정은 요금제의 Cancellation Policy 구성 요소이다. Travelport uAPI 및 OpenTravel Hotel Rate Plan 표준을 포함한 국제 호텔 유통 시스템은 보증금 요건을 요금제의 구조화된 속성으로 정의하여 OTA와 TMC가 예약 시점에 고객에게 표시할 수 있도록 한다. 고객이 보증금 마감일 이후 취소하면 Cancellation Policy 조건에 따라 보증금은 통상 환불되지 않는다.",
+      "aliases": [
+        "Booking Deposit",
+        "Room Deposit",
+        "Advance Payment"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Travelport uAPI",
+          "term": "Deposit (Hotel Payment Type)",
+          "context": "Travelport uAPI models hotel payment as Guarantee, Deposit, or Pre-Pay; Deposit requires a partial advance payment by a specified due date.",
+          "context_ko": "Travelport uAPI는 호텔 결제를 Guarantee, Deposit, Pre-Pay로 모델링하며, Deposit은 지정 납부 기한까지 부분 사전 결제를 요구한다.",
+          "relationship": "same"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Cancellation Policy",
+          "targetId": "cancellation-policy"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Guarantee Policy",
+          "targetId": "guarantee-policy"
+        },
+        {
+          "type": "related",
+          "targetTerm": "No-Show",
+          "targetId": "no-show"
+        },
+        {
+          "type": "child",
+          "targetTerm": "Rate Plan",
+          "targetId": "rate-plan"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Guarantee Policy",
+          "explanation": "A Guarantee Policy secures the booking against a credit card but typically charges nothing until the guest no-shows or cancels within the penalty window; an Advance Deposit requires actual partial or full payment to be transferred before arrival to hold the reservation.",
+          "explanation_ko": "Guarantee Policy는 신용카드로 예약을 담보하되 노쇼 또는 위약금 기간 내 취소 전까지 실제 청구가 없는 방식이고, Advance Deposit은 예약을 유지하기 위해 도착 전 실제 부분 또는 전액 결제 이전을 요구한다.",
+          "targetId": "guarantee-policy"
+        },
+        {
+          "targetTerm": "Cancellation Policy",
+          "explanation": "A Cancellation Policy is the broader set of rules governing when and how a booking can be cancelled and what penalties apply; an Advance Deposit is a specific payment mechanism defined within that policy that is forfeited if the cancellation conditions are breached.",
+          "explanation_ko": "Cancellation Policy는 예약 취소 시기·방법 및 위약금을 규율하는 포괄적 규칙 집합이고, Advance Deposit은 취소 조건 위반 시 몰취되는, 해당 정책 내에 정의된 특정 결제 메커니즘이다.",
+          "targetId": "cancellation-policy"
+        },
+        {
+          "targetTerm": "No-Show",
+          "explanation": "A No-Show occurs when a guest fails to arrive without cancelling; an Advance Deposit is the financial mechanism that protects the hotel from the revenue loss a No-Show would otherwise cause.",
+          "explanation_ko": "No-Show는 고객이 취소 없이 나타나지 않는 상황이고, Advance Deposit은 No-Show로 인한 매출 손실로부터 호텔을 보호하는 금융 메커니즘이다.",
+          "targetId": "no-show"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Hotel Booking with Guarantee, Deposit, or Pre-Payment",
+          "org": "Travelport",
+          "version": "",
+          "section": "",
+          "url": "https://support.travelport.com/webhelp/uapi/Content/Hotel/Hotel_Booking/Hotel_Booking_with_Deposit_or_Guarantee.htm",
+          "tier": "vendor-doc"
+        },
+        {
+          "name": "Hotel Deposit Policies — A Practical Guide for Hoteliers",
+          "org": "Mews",
+          "version": "",
+          "section": "",
+          "url": "https://www.mews.com/en/blog/hotel-deposit",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"18\" width=\"28\" height=\"20\" rx=\"3\"/><path d=\"M16 18v-4a8 8 0 0 1 16 0v4\"/><circle cx=\"24\" cy=\"28\" r=\"3\"/><line x1=\"24\" y1=\"31\" x2=\"24\" y2=\"34\"/></svg>",
+      "term": "Advance Deposit",
+      "definition": "An Advance Deposit is a partial or full payment collected from the guest at the time of booking, or by a specified date before arrival, to secure the reservation. It shifts cancellation risk from the hotel to the guest, guarantees committed revenue ahead of the stay, and is distinct from a security/damage deposit collected at check-in.",
+      "lastReviewed": "2026-07-08"
     },
     {
       "id": "advance-passenger-information-system",
@@ -10902,6 +10991,91 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "cruise-terminal",
+      "vertical": "cruise",
+      "category": "cruise",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "크루즈 터미널(Cruise Terminal)",
+      "definition_ko": "크루즈 터미널(Cruise Terminal)은 크루즈 선박 승객 및 수하물을 처리하기 위해 특수 설계된 항만 시설이다. 승선·하선 운영을 위해 체크인, 보안 검색, 출입국 심사, 수하물 처리, 탑승 갱웨이, 그리고 라운지·리테일·다이닝 등 승객 편의 시설을 갖춘다. 홈포트 터미널은 전체 턴어라운드 운영을 담당하고, 기항지 터미널은 당일 방문 승객 처리만 담당한다.",
+      "longDef": "Cruise terminals are classified by their operational role: homeport (or turnaround) terminals must handle the simultaneous disembarkation of one full sailing's passengers, deep-cleaning and reprovisioning of the ship, and the embarkation of the next sailing's passengers — all within a single turnaround day of four to eight hours. Port-of-call terminals need only manage the temporary landing of day visitors and the flow of shore excursion coaches. Terminal design accounts for ship size (measured by gross tonnage and passenger capacity), gangway count, baggage carousel capacity, and vehicle access for ground transport. Major cruise terminal hubs include PortMiami, Port Canaveral, Port Everglades, Barcelona, and Southampton. Terminal concession agreements between cruise lines and port authorities are long-term contracts that typically grant the cruise line exclusive berth access in exchange for minimum call-volume commitments.",
+      "longDef_ko": "크루즈 터미널은 운영 역할에 따라 분류된다. 홈포트(또는 턴어라운드) 터미널은 한 항차 승객 전원의 하선, 선박 청소 및 재보급, 그리고 다음 항차 승객 탑승을 하나의 턴어라운드 데이(4~8시간) 내에 처리해야 한다. 기항지 터미널은 당일 방문객의 임시 하선과 기항지 투어 버스 흐름만 관리하면 된다. 터미널 설계는 선박 규모(총톤수 및 승객 수용 인원), 갱웨이 수, 수하물 컨베이어 용량, 지상 교통수단 진입로를 고려한다. 주요 크루즈 터미널 허브로는 PortMiami, Port Canaveral, Port Everglades, 바르셀로나, 사우샘프턴이 있다. 크루즈 선사와 항만 당국 간 터미널 운영 계약은 통상 최소 기항 횟수 약정을 대가로 선사에 전용 선석 이용권을 부여하는 장기 계약이다.",
+      "aliases": [
+        "Passenger Cruise Terminal",
+        "Cruise Ship Terminal",
+        "Embarkation Terminal"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Embarkation",
+          "targetId": "embarkation"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Turnaround Day",
+          "targetId": "turnaround-day"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Port of Call",
+          "targetId": "port-of-call"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Disembarkation",
+          "targetId": "disembarkation"
+        },
+        {
+          "type": "related",
+          "targetTerm": "SOLAS",
+          "targetId": "solas"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Port of Call",
+          "explanation": "A Port of Call is any stop on a cruise itinerary, including both homeports and intermediate stops; a Cruise Terminal is the physical land-side facility at a port that passengers use — every port of call may have a terminal, but the terminal is the building and infrastructure, not the port stop itself.",
+          "explanation_ko": "Port of Call는 홈포트와 중간 기항지를 모두 포함하는 크루즈 여정의 모든 기항지이고, Cruise Terminal은 승객이 이용하는 항만 육상 시설이다. 모든 기항지에 터미널이 있을 수 있지만, 터미널은 건물과 인프라이지 기항 자체가 아니다.",
+          "targetId": "port-of-call"
+        },
+        {
+          "targetTerm": "Turnaround Day",
+          "explanation": "A Turnaround Day is the operational cycle when one cruise ends and the next begins at the same port; a Cruise Terminal is the physical facility where that turnaround takes place.",
+          "explanation_ko": "Turnaround Day는 한 항차가 끝나고 다음 항차가 같은 항구에서 시작되는 운영 사이클이고, Cruise Terminal은 그 턴어라운드가 이루어지는 물리적 시설이다.",
+          "targetId": "turnaround-day"
+        },
+        {
+          "targetTerm": "Embarkation",
+          "explanation": "Embarkation is the act of passengers boarding the ship; a Cruise Terminal is the land-side facility in which the embarkation check-in, security, and boarding process takes place.",
+          "explanation_ko": "Embarkation은 승객이 선박에 탑승하는 행위이고, Cruise Terminal은 그 탑승 체크인·보안·승선 절차가 이루어지는 육상 시설이다.",
+          "targetId": "embarkation"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Cruise Terminal Design and Equipment (Chapter 7.5)",
+          "org": "Port Economics, Management and Policy",
+          "version": "",
+          "section": "Chapter 7.5",
+          "url": "https://porteconomicsmanagement.org/pemp/contents/part7_1/cruise-terminal-design-equipment/",
+          "tier": "secondary"
+        },
+        {
+          "name": "Typology of Cruise Ports",
+          "org": "Port Economics, Management and Policy",
+          "version": "",
+          "section": "",
+          "url": "https://porteconomicsmanagement.org/pemp/contents/part7_1/cruises-ports/typology-cruise-ports/",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"26\" width=\"36\" height=\"14\" rx=\"2\"/><path d=\"M6 26l6-10h24l6 10\"/><line x1=\"14\" y1=\"26\" x2=\"14\" y2=\"40\"/><line x1=\"24\" y1=\"26\" x2=\"24\" y2=\"40\"/><line x1=\"34\" y1=\"26\" x2=\"34\" y2=\"40\"/><path d=\"M10 16h28\"/></svg>",
+      "term": "Cruise Terminal",
+      "definition": "A Cruise Terminal is a purpose-built port facility that processes cruise ship passengers and their luggage, providing check-in, security screening, customs and immigration clearance, baggage handling, boarding gangways, and passenger amenities (lounges, retail, dining) for embarkation and disembarkation operations. Homeport terminals handle full turnaround operations; port-of-call terminals handle day-visit passenger flow only.",
+      "lastReviewed": "2026-07-08"
+    },
+    {
       "id": "cruise-only-fare",
       "vertical": "cruise",
       "category": "cruise",
@@ -19417,6 +19591,96 @@
       "lastReviewed": "2026-07-01"
     },
     {
+      "id": "homeport",
+      "vertical": "cruise",
+      "category": "cruise",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "홈포트(Homeport)",
+      "definition_ko": "홈포트(Homeport)는 크루즈 선박이 정기적으로 출발·귀항하는 항구로, 해당 위치에서 운항하는 여정의 주요 승·하선 거점이다. 선박의 물자 보급, 잦은 승무원 교대, 연속 항차 간 턴어라운드 운영이 이루어지는 곳이다.",
+      "longDef": "A ship may have a single homeport (year-round deployment from one port) or a seasonal homeport (operating from different ports in summer and winter, a practice known as seasonal repositioning). Popular homeport cities include Miami, Fort Lauderdale, Port Canaveral, Barcelona, Southampton, and Sydney, selected for their proximity to source markets, airlift connections, terminal infrastructure, and itinerary geography. Homeporting decisions by cruise lines have significant economic impact on host communities, as each ship call generates local spending on provisions, fuel, crew wages, and passenger pre/post spending. The homeport concept is central to cruise distribution: it determines which passengers can conveniently drive to the ship (drive-to-market), which require fly-cruise packages, and how the itinerary geography is structured around turnaround timing. In revenue management, ships homeported in drive markets often see different booking curves from fly-cruise markets — shorter lead times and more last-minute bookings.",
+      "longDef_ko": "선박은 단일 홈포트(연중 한 항구에서 배치)를 가질 수도 있고, 계절별 홈포트(여름·겨울 다른 항구에서 운항, 계절적 repositioning이라 함)를 가질 수도 있다. 인기 홈포트 도시로는 마이애미, 포트로더데일, 포트커내버럴, 바르셀로나, 사우샘프턴, 시드니 등이 있으며, 출발 시장과의 근접성, 항공 연결, 터미널 인프라, 여정 지리를 고려해 선정된다. 크루즈 선사의 홈포팅 결정은 지역 사회에 상당한 경제적 영향을 미치며, 각 기항은 물자·연료·승무원 임금·승객 사전/사후 지출을 통해 현지 소비를 창출한다. 홈포트 개념은 크루즈 유통의 핵심이다. 어떤 승객이 자가용으로 승선할 수 있는지(drive-to-market), 어떤 승객에게 fly-cruise 패키지가 필요한지, 여정 지리가 턴어라운드 일정에 맞춰 어떻게 구성되는지를 결정한다. 수익 관리 측면에서 drive market에 홈포팅된 선박은 fly-cruise 시장과 다른 예약 패턴을 보이는 경우가 많다(더 짧은 리드타임, 더 많은 막판 예약).",
+      "aliases": [
+        "Home Port",
+        "Base Port",
+        "Turnaround Port"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Turnaround Day",
+          "targetId": "turnaround-day"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Embarkation",
+          "targetId": "embarkation"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Port of Call",
+          "targetId": "port-of-call"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Cruise Terminal",
+          "targetId": "cruise-terminal"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Fly-Cruise",
+          "targetId": "fly-cruise"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Repositioning Cruise",
+          "targetId": "repositioning-cruise"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Port of Call",
+          "explanation": "A Port of Call is any stop on a cruise itinerary — including intermediate stops where passengers go ashore for the day; a Homeport is specifically the port from which the itinerary departs and returns, where full turnaround operations occur.",
+          "explanation_ko": "Port of Call는 당일 하선 중간 기항지를 포함한 크루즈 여정의 모든 기항지이고, Homeport는 여정이 출발·귀항하고 전체 턴어라운드 운영이 이루어지는 특정 항구이다.",
+          "targetId": "port-of-call"
+        },
+        {
+          "targetTerm": "Turnaround Day",
+          "explanation": "A Turnaround Day is the operational event — the day one cruise ends and the next begins at the homeport; the Homeport is the location where that event repeatedly takes place.",
+          "explanation_ko": "Turnaround Day는 홈포트에서 한 항차가 끝나고 다음 항차가 시작되는 운영 이벤트(일)이고, Homeport는 그 이벤트가 반복적으로 발생하는 장소이다.",
+          "targetId": "turnaround-day"
+        },
+        {
+          "targetTerm": "Repositioning Cruise",
+          "explanation": "A Repositioning Cruise is the sailing that moves a ship from one homeport to another (e.g. Miami to Barcelona at the start of the European season); the Homeport is the fixed base the ship departs from during its deployment at that location.",
+          "explanation_ko": "Repositioning Cruise는 선박을 한 홈포트에서 다른 홈포트로 이동시키는 항해(예: 유럽 시즌 시작 시 마이애미에서 바르셀로나로)이고, Homeport는 해당 배치 기간 동안 선박이 정기적으로 출발하는 고정 거점이다.",
+          "targetId": "repositioning-cruise"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Cruise Industry Overview — Homeport and Deployment",
+          "org": "CLIA (Cruise Lines International Association)",
+          "version": "",
+          "section": "",
+          "url": "https://cruising.org/en/research-and-advocacy/research",
+          "tier": "association"
+        },
+        {
+          "name": "Port Economics, Management and Policy — Typology of Cruise Ports",
+          "org": "Port Economics, Management and Policy",
+          "version": "",
+          "section": "",
+          "url": "https://porteconomicsmanagement.org/pemp/contents/part7_1/cruises-ports/typology-cruise-ports/",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 6l3 8h8l-6.5 4.8 2.5 7.7L24 22l-7 4.5 2.5-7.7L13 14h8z\"/><path d=\"M12 38h24\"/><path d=\"M24 26v12\"/><path d=\"M16 42h16\"/></svg>",
+      "term": "Homeport",
+      "definition": "A Homeport is the port from which a cruise ship regularly departs and returns, serving as the primary embarkation and disembarkation point for the itineraries it operates from that location. The homeport is where the ship is provisioned, where crew changes most frequently occur, and where turnaround operations take place between consecutive sailings.",
+      "lastReviewed": "2026-07-08"
+    },
+    {
       "id": "hop-on-hop-off",
       "vertical": "tours",
       "category": "tour-product",
@@ -23741,6 +24005,81 @@
       "term": "Loyalty Tier Status",
       "definition": "The graded level a member holds within a Frequent Flyer Program (e.g. Silver, Gold, Platinum), earned through qualifying activity and conferring escalating benefits such as priority services, lounge access, extra baggage and upgrade eligibility. Status is typically tied to the member's Frequent Flyer Number and recalculated each qualification period.",
       "lastReviewed": "2026-06-15"
+    },
+    {
+      "id": "maiden-voyage",
+      "vertical": "cruise",
+      "category": "cruise",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "처녀 항해(Maiden Voyage)",
+      "definition_ko": "처녀 항해(Maiden Voyage)는 신조 선박이 조선소에서 크루즈 선사에 인도된 후 최초로 판매되는 수익 항해로, 일반 대중에게 처음으로 티켓이 판매되는 크루즈이다. 수요가 높고 프리미엄 가격으로 책정되는 상업적으로 중요한 이벤트이며, 선박의 수익 운항 공식 데뷔를 의미한다.",
+      "longDef": "Prior to the maiden voyage, the cruise line typically operates one or more preview sailings (media cruises, travel-agent familiarisation trips) that are not open to the general public. The maiden voyage itself is the first publicly ticketed sailing and commands premium pricing due to novelty demand and limited availability. Bookings for maiden voyages often open during the Wave Season, when cruise lines launch new ships and promotion campaigns simultaneously. The term can also apply to a ship returning to service after a major refit or drydock, occasionally called a \"re-inaugural\" voyage. Inaugural sailings that follow the maiden voyage carry the name of the ship's deployment region (e.g. \"maiden Caribbean voyage\") and are technically the ship's first revenue sailing in that region. From a risk perspective, maiden voyages carry a higher probability of operational teething problems — unfinished outfitting, crew unfamiliarity — which some experienced cruisers factor into their booking decisions.",
+      "longDef_ko": "처녀 항해 전에 크루즈 선사는 통상 일반에게 공개되지 않는 프리뷰 항해(언론 초청 크루즈, 여행사 팸 트립)를 한 차례 이상 운항한다. 처녀 항해 자체는 최초의 일반 티켓 판매 항해로, 신규성 수요와 제한된 가용 객실로 인해 프리미엄 가격이 적용된다. 처녀 항해 예약은 크루즈 선사들이 신규 선박과 프로모션 캠페인을 동시에 출시하는 Wave Season에 오픈되는 경우가 많다. 이 용어는 대규모 개보수 또는 Drydock 후 운항을 재개하는 선박에도 적용되며, 이를 '재취항 항해(re-inaugural)'라 부르기도 한다. 처녀 항해 이후 이어지는 Inaugural 항해는 배치 지역 이름이 붙으며(예: \"첫 카리브해 항해\"), 기술적으로는 해당 지역에서의 최초 수익 항해다. 위험 관점에서 처녀 항해는 마감되지 않은 의장 공사, 승무원 미숙지 등 운항 초기 문제가 발생할 가능성이 상대적으로 높으며, 경험 많은 크루저들은 예약 시 이를 고려한다.",
+      "aliases": [
+        "Inaugural Sailing",
+        "First Sailing",
+        "Inaugural Voyage",
+        "Inaugural Cruise"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Drydock",
+          "targetId": "drydock"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Wave Season",
+          "targetId": "wave-season"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Repositioning Cruise",
+          "targetId": "repositioning-cruise"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Fly-Cruise",
+          "targetId": "fly-cruise"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Drydock",
+          "explanation": "A Drydock is a scheduled maintenance or refurbishment period when a ship is taken out of service; a Maiden Voyage is the first revenue sailing after a ship is newly built and delivered, not a post-maintenance return.",
+          "explanation_ko": "Drydock는 선박이 운항에서 빠져 정기 유지 보수 또는 개보수가 이루어지는 기간이고, Maiden Voyage는 신조 선박이 인도된 후의 최초 수익 항해로, 유지 보수 후 복귀가 아니다.",
+          "targetId": "drydock"
+        },
+        {
+          "targetTerm": "Repositioning Cruise",
+          "explanation": "A Repositioning Cruise moves an existing ship from one region or homeport to another; a Maiden Voyage is the inaugural revenue sailing of a brand-new ship, regardless of itinerary.",
+          "explanation_ko": "Repositioning Cruise는 기존 선박을 한 지역 또는 홈포트에서 다른 곳으로 이동시키는 항해이고, Maiden Voyage는 여정과 관계없이 신조 선박의 최초 수익 항해이다.",
+          "targetId": "repositioning-cruise"
+        }
+      ],
+      "sources": [
+        {
+          "name": "What Are Maiden and Inaugural Voyages?",
+          "org": "CruiseHabit",
+          "version": "",
+          "section": "",
+          "url": "https://www.cruisehabit.com/what-are-maiden-and-inaugural-voyages",
+          "tier": "secondary"
+        },
+        {
+          "name": "10 Things to Know About Maiden Voyages and Inaugural Sailings",
+          "org": "Cruise Critic",
+          "version": "",
+          "section": "",
+          "url": "https://www.cruisecritic.com/articles/10-things-to-know-about-maiden-voyages-and-inaugural-sailings-on-brand-new-ships",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 36h32\"/><path d=\"M12 36l-2-10h28l-2 10\"/><path d=\"M24 12v14\"/><path d=\"M16 22l8-10 8 10\"/><path d=\"M20 12h8\"/></svg>",
+      "term": "Maiden Voyage",
+      "definition": "The Maiden Voyage of a cruise ship is the first revenue-producing sailing of a newly built vessel after delivery from the shipyard to the cruise line — the first cruise for which tickets are sold to the general public. It is commercially significant as a high-demand, premium-priced event and marks the formal debut of the ship in revenue service.",
+      "lastReviewed": "2026-07-08"
     },
     {
       "id": "manifest",
@@ -29330,6 +29669,81 @@
       "term": "Operator Payout",
       "definition": "The post-fulfillment transfer of funds from a marketplace or reseller to the operator — net of commission — typically on a batch cycle (e.g. weekly) after the experience is delivered.",
       "lastReviewed": "2026-06-25"
+    },
+    {
+      "id": "option-date",
+      "vertical": "tours",
+      "category": "tour-commercial",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "옵션 만료일(Option Date)",
+      "definition_ko": "옵션 만료일(Option Date, 또는 hold date)은 가예약을 결제를 통해 확정하거나 취소해야 하는 마감일이다. 이 날짜까지 아무 조치도 없으면 해당 재고에 대한 홀드가 자동으로 해제된다. 미확정 예약으로 재고가 무기한 묶이는 것을 방지하기 위해 단체 예약·allotment 계약·투어 운영에서 표준 관행이다.",
+      "longDef": "When a travel agent, group organiser, or tour operator tentatively reserves seats, rooms, or tour spaces, the supplier grants a hold (or option) for a fixed period, after which the inventory returns to open sale if the booking is not confirmed. The option date is the expiry of that hold. In the group and MICE segment, options are typically three to fourteen days from the hold date; in tour contracting, they may coincide with specific payment-schedule milestones. Some systems send automated reminders before the option date expires. Failing to confirm by the option date does not trigger a cancellation penalty (because no confirmed booking yet exists), but any rate or availability guarantee lapses. In allotment agreements, the concept overlaps with the release period: once past the release date, the allotment block is returned to the hotel's open inventory, which is functionally equivalent to an option lapsing.",
+      "longDef_ko": "여행사, 단체 주최자, 또는 투어 운영사가 좌석·객실·투어 공간을 잠정 예약하면, 공급사는 일정 기간 동안 홀드(또는 옵션)를 부여하며, 이 기간 내 예약이 확정되지 않으면 재고는 일반 판매로 돌아간다. 옵션 만료일은 바로 그 홀드의 만기일이다. 단체·MICE 세그먼트에서 옵션 기간은 홀드일로부터 통상 3~14일이며, 투어 계약에서는 특정 결제 일정 마일스톤과 일치하기도 한다. 일부 시스템은 옵션 만료일 전에 자동 리마인더를 발송한다. 옵션 만료일까지 확정하지 않아도 취소 위약금은 발생하지 않지만(아직 확정 예약이 없으므로), 요율 또는 가용성 보장은 소멸된다. Allotment 계약에서 이 개념은 반환 기간(release period)과 겹친다. 반환일을 지나면 allotment 블록이 호텔 개방 재고로 돌아오는데, 이는 기능적으로 옵션 소멸과 동일하다.",
+      "aliases": [
+        "Option Expiry",
+        "Hold Date",
+        "Option Expiry Date",
+        "Booking Deadline"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Allocation",
+          "targetId": "allocation"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Cut-off Time",
+          "targetId": "cut-off-time"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Cancellation Policy",
+          "targetId": "cancellation-policy"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Markup",
+          "targetId": "markup"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Cut-off Time",
+          "explanation": "A Cut-off Time is the latest point before an activity's start at which any booking can still be accepted; an Option Date is the deadline specific to a provisional booking, after which the held inventory is released whether or not the activity start date has been reached.",
+          "explanation_ko": "Cut-off Time은 액티비티 시작 전 신규 예약을 받을 수 있는 최후 시점이고, Option Date는 가예약에 특유한 마감일로, 액티비티 시작일과 무관하게 이 날짜가 지나면 홀드된 재고가 해제된다.",
+          "targetId": "cut-off-time"
+        },
+        {
+          "targetTerm": "Cancellation Policy",
+          "explanation": "A Cancellation Policy governs what happens when a confirmed booking is cancelled (whether penalties apply and how much); an Option Date is the deadline to confirm a provisional hold — lapsing it is not a cancellation and does not trigger a penalty.",
+          "explanation_ko": "Cancellation Policy는 확정 예약이 취소될 때 어떤 조건이 적용되는지(위약금 여부 및 금액)를 규율하고, Option Date는 가예약 홀드를 확정해야 하는 마감일이다. 옵션이 소멸되는 것은 취소가 아니며 위약금이 발생하지 않는다.",
+          "targetId": "cancellation-policy"
+        }
+      ],
+      "sources": [
+        {
+          "name": "The Key Points of Hotel Contracting with Tour Operators",
+          "org": "Hotelier Academy",
+          "version": "",
+          "section": "",
+          "url": "https://www.hotelieracademy.org/the-key-points-of-hotel-contracting-with-tour-operators/",
+          "tier": "secondary"
+        },
+        {
+          "name": "Allotment (travel industry)",
+          "org": "Wikipedia",
+          "version": "",
+          "section": "",
+          "url": "https://en.wikipedia.org/wiki/Allotment_(travel_industry)",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"12\" width=\"28\" height=\"28\" rx=\"3\"/><line x1=\"10\" y1=\"20\" x2=\"38\" y2=\"20\"/><line x1=\"18\" y1=\"8\" x2=\"18\" y2=\"16\"/><line x1=\"30\" y1=\"8\" x2=\"30\" y2=\"16\"/><line x1=\"28\" y1=\"30\" x2=\"34\" y2=\"30\"/><line x1=\"28\" y1=\"34\" x2=\"32\" y2=\"34\"/></svg>",
+      "term": "Option Date",
+      "definition": "An Option Date (also called an option expiry or hold date) is the deadline by which a provisional booking must either be confirmed with payment or be cancelled; if no action is taken, the hold on the inventory is automatically released. It is standard practice in group bookings, allotment contracting, and tour operations to prevent inventory being tied up indefinitely by unconfirmed reservations.",
+      "lastReviewed": "2026-07-08"
     },
     {
       "id": "optional-services",
@@ -44173,6 +44587,93 @@
       "term": "Travel Advisory",
       "definition": "A Travel Advisory (also known as a travel warning, travel alert, or travel advice) is an official statement issued by a government foreign-affairs body to inform citizens about safety, security, health, or entry-requirement risks at a specific foreign destination. Advisories use tiered severity levels and directly influence travel insurance coverage, tour operator obligations, and corporate travel policy.",
       "lastReviewed": "2026-07-05"
+    },
+    {
+      "id": "travel-management-company",
+      "vertical": "common",
+      "category": "customer",
+      "conceptType": "business-term",
+      "status": "active",
+      "abbreviation": "TMC",
+      "term_ko": "기업 출장 관리 회사(TMC)",
+      "definition_ko": "TMC(Travel Management Company, 기업 출장 관리 회사)는 법인 고객을 대신해 항공·호텔·철도·렌터카 예약, 출장 정책 준수 관리, 여행자 위치 모니터링(Duty of Care), 공급사 요율 협상, 비용 보고 등 법인 출장 전 과정을 제공하는 B2B 전문 여행사이다.",
+      "longDef": "TMCs sit at the centre of corporate travel programmes, combining booking technology (often a GDS-powered online booking tool, OBT) with dedicated travel consultants, 24/7 traveler support, and sophisticated reporting. A key function is policy enforcement at point-of-sale: the TMC's system applies the client company's travel policy rules (preferred carrier fares, hotel caps, approval workflows) before a booking is confirmed. TMCs also consolidate spend across air, hotel, and ground into unified invoice and data feeds, enabling clients to track total programme cost, benchmark performance, and report carbon emissions. Large global TMCs include American Express Global Business Travel (Amex GBT), BCD Travel, and CWT; the Global Business Travel Association (GBTA) is the primary trade body. TMCs earn revenue through transaction fees, management fees, and supplier commissions, a model distinct from leisure OTAs.",
+      "longDef_ko": "TMC는 법인 출장 프로그램의 중심에 위치하며, GDS 기반 온라인 예약 도구(OBT), 전담 출장 컨설턴트, 24시간 여행자 지원, 정교한 리포팅 기능을 결합한다. 핵심 기능은 예약 시점의 정책 준수 적용이다. TMC 시스템은 예약 확정 전 클라이언트 회사의 출장 정책 규칙(선호 항공사 운임, 호텔 상한액, 승인 워크플로)을 적용한다. TMC는 또한 항공·호텔·지상 교통 지출을 통합 청구서 및 데이터 피드로 집계해 클라이언트가 총 프로그램 비용 추적, 성과 벤치마킹, 탄소 배출 보고를 할 수 있게 한다. 주요 글로벌 TMC로는 American Express Global Business Travel(Amex GBT), BCD Travel, CWT가 있으며, GBTA(Global Business Travel Association)가 주요 업계 단체다. TMC는 거래 수수료, 관리 수수료, 공급사 커미션으로 수익을 창출하며, 이는 레저 OTA와 구별되는 수익 모델이다.",
+      "aliases": [
+        "TMC",
+        "Corporate Travel Agency",
+        "Business Travel Agency",
+        "Corporate Travel Management Company"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Corporate Profile",
+          "targetId": "corporate-profile"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Duty of Care",
+          "targetId": "duty-of-care"
+        },
+        {
+          "type": "related",
+          "targetTerm": "GDS",
+          "targetId": "gds"
+        },
+        {
+          "type": "related",
+          "targetTerm": "BSP",
+          "targetId": "bsp"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Corporate Rate",
+          "targetId": "corporate-rate"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "GDS",
+          "explanation": "A GDS is the technology platform that aggregates airline seat and hotel room inventory; a TMC is a service company that uses the GDS (and other tools) to book and manage corporate travel on behalf of clients.",
+          "explanation_ko": "GDS는 항공권·호텔 객실 재고를 집계하는 기술 플랫폼이고, TMC는 법인 고객을 대신해 GDS(및 기타 도구)를 활용해 출장을 예약·관리하는 서비스 회사이다.",
+          "targetId": "gds"
+        },
+        {
+          "targetTerm": "Corporate Profile",
+          "explanation": "A Corporate Profile is the traveler's personal master record (preferences, loyalty numbers, documents) stored in a booking system; a TMC is the company providing the booking and management services that use that profile.",
+          "explanation_ko": "Corporate Profile은 예약 시스템에 저장된 여행자의 개인 마스터 기록(선호도, 마일리지 번호, 서류)이고, TMC는 그 프로필을 활용해 예약·관리 서비스를 제공하는 회사이다.",
+          "targetId": "corporate-profile"
+        },
+        {
+          "targetTerm": "Duty of Care",
+          "explanation": "Duty of Care is the legal and ethical obligation to protect travelling employees; a TMC is a service partner that helps organisations fulfil that obligation through traveler tracking, alerts, and emergency support tools.",
+          "explanation_ko": "Duty of Care는 출장 임직원 보호에 관한 법적·윤리적 의무이고, TMC는 여행자 추적·경보·비상 지원 도구를 통해 기업이 그 의무를 이행하도록 지원하는 서비스 파트너이다.",
+          "targetId": "duty-of-care"
+        }
+      ],
+      "sources": [
+        {
+          "name": "TMCs 101 — If, Why, and How to Use TMCs",
+          "org": "Global Business Travel Association (GBTA)",
+          "version": "",
+          "section": "",
+          "url": "https://gbta.org/tmcs-101-if-why-and-how-to-use-tmcs/",
+          "tier": "association"
+        },
+        {
+          "name": "What is a Travel Management Company (TMC)?",
+          "org": "American Express Global Business Travel",
+          "version": "",
+          "section": "",
+          "url": "https://www.amexglobalbusinesstravel.com/blog/what-is-a-travel-management-company-tmc/",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"14\" width=\"32\" height=\"22\" rx=\"3\"/><path d=\"M16 14v-3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3\"/><line x1=\"8\" y1=\"22\" x2=\"40\" y2=\"22\"/><line x1=\"20\" y1=\"22\" x2=\"20\" y2=\"36\"/><line x1=\"28\" y1=\"22\" x2=\"28\" y2=\"36\"/></svg>",
+      "term": "Travel Management Company",
+      "definition": "A Travel Management Company (TMC) is a specialist B2B travel agency that provides end-to-end corporate travel services — booking air, hotel, rail, and car; enforcing travel policy; monitoring traveler locations for duty of care; negotiating supplier rates; and delivering management reporting — on behalf of corporate clients.",
+      "lastReviewed": "2026-07-08"
     },
     {
       "id": "travel-medical-insurance",
