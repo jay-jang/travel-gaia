@@ -2,8 +2,8 @@
   "meta": {
     "name": "Travel Wiki",
     "tagline": "여행 산업 용어 백과사전",
-    "generatedAt": "2026-07-08",
-    "entryCount": 529,
+    "generatedAt": "2026-07-09",
+    "entryCount": 535,
     "categoryCount": 20,
     "verticalCount": 6
   },
@@ -3724,6 +3724,77 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "aog",
+      "vertical": "air",
+      "category": "air-ops",
+      "conceptType": "business-term",
+      "status": "active",
+      "abbreviation": "AOG",
+      "term_ko": "지상 억류 항공기 (AOG)",
+      "definition_ko": "AOG(Aircraft on Ground, 지상 억류 항공기)는 미해결 기술적·정비 결함으로 인해 수익 비행에 투입될 수 없는 항공기의 상태를 나타내는 용어다. AOG가 선언되면 항공사 정비 및 공급망 팀이 우선 처리를 진행하며, 운영 차질을 최소화하기 위해 긴급 부품 확보, 기술자 파견, 또는 대체 항공기 수배가 필요한 경우가 많다.",
+      "longDef": "An AOG condition is distinguished from routine scheduled maintenance by its urgency and impact on scheduled operations: an AOG aircraft cannot generate revenue and its passengers or cargo must be re-accommodated, potentially triggering IROPS (Irregular Operations) procedures. Airlines maintain AOG desks or MCC (Maintenance Control Center) teams operating 24/7 to coordinate parts logistics, contact MRO (Maintenance, Repair & Overhaul) partners, and communicate with the affected station. Spare parts required to resolve an AOG are often shipped on priority or charter basis (AOG freight), and component leasing or interchange agreements between carriers allow short-term substitution. Where restoration cannot be achieved quickly, the airline may acquire a wet-lease (ACMI) aircraft to cover the schedule gap. IATA guidance in the Airport Handling Manual (AHM) and Ground Operations Manual (GOM) addresses communication and coordination protocols when an AOG affects ground handling at a station.",
+      "longDef_ko": "AOG 상태는 그 긴급성과 정시 운항에 미치는 영향 때문에 정례적인 정기 정비와 구별된다. AOG 항공기는 수익을 창출할 수 없으며, 해당 편 승객이나 화물은 재배치해야 하고 IROPS(불규칙 운항) 절차가 발동될 수 있다. 항공사는 24시간 운영되는 AOG 데스크 또는 MCC(정비통제센터) 팀을 운영하여 부품 물류를 조율하고 MRO(항공기 유지·보수·수리) 파트너에 연락하며 해당 스테이션과 소통한다. AOG 해소에 필요한 예비 부품은 우선 순위 또는 전세 방식(AOG 화물)으로 운송되는 경우가 많으며, 항공사 간 부품 임대 또는 교환 협정을 통해 단기 대체가 이루어질 수 있다. 신속한 복원이 어려울 경우 항공사는 운항 공백을 메우기 위해 Wet Lease(ACMI) 항공기를 확보할 수 있다. IATA의 AHM(공항 취급 매뉴얼) 및 GOM(지상 운영 매뉴얼)에는 AOG가 지상 취급에 영향을 미칠 때의 통신·조정 프로토콜이 규정되어 있다.",
+      "standardBody": "IATA",
+      "aliases": [
+        "Aircraft on Ground",
+        "AOG condition",
+        "AOG aircraft"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "IROPS",
+          "targetId": "irops"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Wet Lease",
+          "targetId": "wet-lease"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Block Time",
+          "targetId": "block-time"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "IROPS",
+          "explanation": "IROPS is the broad category of any irregular operations that disrupt the normal schedule (weather, strikes, airport closures, mechanical issues, etc.) and triggers passenger re-accommodation and recovery protocols. AOG is a specific technical status applied to a single aircraft that cannot fly; it is a common cause of IROPS but is narrower in scope.",
+          "explanation_ko": "IROPS는 정상 운항을 교란하는 모든 불규칙 운항(기상·파업·공항 폐쇄·기계 결함 등)의 광범위한 범주로, 승객 재배치 및 복구 프로토콜을 발동시킨다. AOG는 비행 불가 상태의 단일 항공기에 적용되는 특정 기술적 상태이며, IROPS의 흔한 원인이지만 그 범위는 더 좁다.",
+          "targetId": "irops"
+        },
+        {
+          "targetTerm": "Wet Lease",
+          "explanation": "A Wet Lease (ACMI) is a contractual arrangement whereby one airline leases a fully crewed, maintained and insured aircraft from another to cover capacity gaps. An AOG is the operational problem that may drive the decision to wet-lease; the wet lease is the recovery mechanism.",
+          "explanation_ko": "Wet Lease(ACMI)는 한 항공사가 용량 공백을 메우기 위해 다른 항공사로부터 승무원·정비·보험이 포함된 완전한 항공기를 임차하는 계약 방식이다. AOG는 Wet Lease 결정을 유발하는 운영상의 문제이고, Wet Lease는 그 복구 수단이다.",
+          "targetId": "wet-lease"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Airport Handling Manual (AHM)",
+          "org": "IATA",
+          "version": "",
+          "section": "",
+          "url": "https://www.iata.org/en/publications/manuals/airport-handling-manual/",
+          "tier": "association"
+        },
+        {
+          "name": "Ground Operations Manual (GOM)",
+          "org": "IATA",
+          "version": "",
+          "section": "",
+          "url": "https://www.iata.org/en/publications/manuals/ground-operations-manual/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 36h36\"/><path d=\"M20 28l-8-6 2-2 8 4 10-12 3 2-10 12-5 2z\"/><line x1=\"24\" y1=\"36\" x2=\"24\" y2=\"28\"/><path d=\"M10 40h28\"/><line x1=\"16\" y1=\"16\" x2=\"32\" y2=\"16\"/><line x1=\"24\" y1=\"12\" x2=\"24\" y2=\"20\"/></svg>",
+      "term": "AOG",
+      "definition": "Aircraft on Ground (AOG) is a term used to indicate that an aircraft is out of service due to an unresolved technical or maintenance fault that prevents it from being dispatched for revenue flight. An AOG declaration triggers priority handling by airline maintenance and supply-chain teams, often requiring emergency sourcing of parts, technicians, or replacement aircraft to minimize operational disruption.",
+      "lastReviewed": "2026-07-09"
+    },
+    {
       "id": "arc",
       "vertical": "common",
       "category": "pay",
@@ -6709,6 +6780,99 @@
       "term": "BSP",
       "definition": "The Billing and Settlement Plan is an IATA-administered system that simplifies selling, reporting, and remittance between IATA-accredited travel agents and participating airlines in a given market. It consolidates each agent's sales into a single periodic statement and nets the funds owed to airlines through a central settlement process.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "buy-now-pay-later",
+      "vertical": "common",
+      "category": "pay",
+      "conceptType": "business-term",
+      "status": "active",
+      "abbreviation": "BNPL",
+      "term_ko": "선구매 후결제 (BNPL)",
+      "definition_ko": "BNPL(Buy Now Pay Later, 선구매 후결제)은 여행객이 여행 상품을 즉시 구매하고 대금을 분할로 납부하는 단기 소비자 금융 방식이다. 일반적으로 수 주에서 수 개월에 걸쳐 2~4회 균등 분할되며, 일정에 맞게 납부하면 무이자인 경우가 많다. BNPL 상품은 항공사·OTA·호텔·여행사 등의 결제 단계에서 제3자 신용 제공사(Klarna, Afterpay/Clearpay, Affirm, Laybuy 등)가 통합하는 형태로 제공된다.",
+      "longDef": "In travel, BNPL is particularly attractive for high-value bookings (long-haul flights, package holidays, cruises) where the total cost may exceed a traveler's available credit or immediate budget. The BNPL provider pays the travel merchant upfront (in full, minus a fee of typically 2–8%), absorbs the credit risk, and collects installments directly from the consumer. This differs from traditional airline installment plans or travel lay-bys. Integration is typically via a payment gateway plug-in or direct API; the traveler selects the BNPL option at checkout, completes a soft credit check, and receives an approved credit line for that purchase. Regulatory treatment of BNPL is evolving: the UK FCA proposed bringing BNPL within its consumer credit regulatory perimeter, and similar frameworks are under development in the EU and US. For travel merchants, BNPL can increase average order value and conversion rates but adds a settlement delay and cost per transaction. BNPL providers in travel include Klarna (partnerships with airlines including Lufthansa Group brands), Affirm (United Airlines), and Afterpay/Clearpay. Strong Customer Authentication (SCA/PSD2) requirements under EU regulation apply to BNPL arrangements in Europe.",
+      "longDef_ko": "여행 분야에서 BNPL은 총 비용이 여행객의 가용 신용이나 즉각적인 예산을 초과하는 고가 예약(장거리 항공, 패키지 여행, 크루즈 등)에 특히 매력적이다. BNPL 제공사는 여행 판매자에게 전액을 선지급(보통 2~8% 수수료 차감)하고 신용 위험을 부담한 뒤, 소비자로부터 직접 분할금을 수취한다. 이는 전통적인 항공사 할부 납부나 여행 레이바이와 구별된다. 통합은 보통 결제 게이트웨이 플러그인 또는 직접 API를 통해 이루어지며, 여행객은 결제 단계에서 BNPL 옵션을 선택하고 소프트 신용조회를 거쳐 해당 구매에 대한 신용 한도를 승인받는다. BNPL의 규제 처리는 진화 중이다: 영국 FCA는 BNPL을 소비자 신용 규제 범위에 포함하는 방안을 제안했으며, EU와 미국에서도 유사한 프레임워크가 개발 중이다. 여행 가맹점 입장에서 BNPL은 평균 주문 금액과 전환율을 높일 수 있지만, 정산 지연과 거래당 비용이 추가된다. 여행 분야 BNPL 제공사로는 Klarna(Lufthansa Group 브랜드 항공사 파트너십), Affirm(United Airlines), Afterpay/Clearpay 등이 있다.",
+      "aliases": [
+        "Buy Now Pay Later",
+        "BNPL payments",
+        "Pay Later",
+        "Installment Payments",
+        "Pay in Installments"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Klarna",
+          "term": "Pay Later / Pay in 3 / Financing",
+          "context": "Klarna offers multiple BNPL products integrated with airlines (e.g. Lufthansa Group) and OTAs; ''Pay in 3'' splits the total into three equal monthly installments interest-free.",
+          "context_ko": "Klarna는 항공사(예: Lufthansa Group)·OTA와 통합된 다양한 BNPL 상품을 제공하며, 'Pay in 3'는 총액을 3회 동일 월 분할로 무이자 납부하는 방식이다.",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "Affirm",
+          "term": "Affirm Adaptive Checkout",
+          "context": "Affirm partners with US carriers including United Airlines, offering travelers flexible pay-later installment plans at checkout — interest rates range from 0% to 36% APR depending on credit profile and purchase.",
+          "context_ko": "Affirm은 United Airlines를 포함한 미국 항공사들과 파트너십을 맺고 결제 시 유연한 분할납부 방식을 제공한다. 신용 프로필과 구매 금액에 따라 0%~36% APR이 적용된다.",
+          "relationship": "narrower"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Merchant of Record",
+          "targetId": "merchant-of-record"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Strong Customer Authentication",
+          "targetId": "strong-customer-authentication"
+        },
+        {
+          "type": "related",
+          "targetTerm": "PCI DSS",
+          "targetId": "pci-dss"
+        },
+        {
+          "type": "contrasts",
+          "targetTerm": "3-D Secure",
+          "targetId": "3-d-secure"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "3-D Secure",
+          "explanation": "3-D Secure (3DS) is an authentication protocol applied at the point of card payment to verify the cardholder's identity and satisfy Strong Customer Authentication requirements. BNPL is an alternative payment method that replaces the card transaction: the BNPL provider pays the merchant directly and the 3DS/SCA obligation applies to the BNPL provider's own internal payment collection from the consumer, not necessarily at the merchant checkout.",
+          "explanation_ko": "3-D Secure(3DS)는 카드 결제 시점에 카드 소지자 신원을 확인하고 SCA 요건을 충족하기 위한 인증 프로토콜이다. BNPL은 카드 거래를 대체하는 결제 방식으로, BNPL 제공사가 가맹점에 직접 지급하며 3DS/SCA 의무는 가맹점 결제창이 아니라 BNPL 제공사의 소비자 분할금 수취 과정에 적용된다.",
+          "targetId": "3-d-secure"
+        },
+        {
+          "targetTerm": "Merchant of Record",
+          "explanation": "When a BNPL provider is used, the Merchant of Record (MoR) arrangement determines who bears the regulatory and settlement obligations: the travel merchant remains the MoR for the underlying trip, while the BNPL provider is the payment intermediary collecting installments. If the airline or OTA acts as MoR they may still need to integrate BNPL refund flows into their settlement processes.",
+          "explanation_ko": "BNPL 제공사를 이용하는 경우 MoR(결제 주체) 계약에 따라 규제·정산 의무의 귀속이 결정된다. 여행 가맹점은 해당 여정에 대한 MoR로 남으며, BNPL 제공사는 분할금을 수취하는 결제 중개자 역할을 한다. 항공사나 OTA가 MoR인 경우 BNPL 환불 흐름을 자체 정산 프로세스에 통합해야 할 수 있다.",
+          "targetId": "merchant-of-record"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Buy Now Pay Later",
+          "org": "FCA",
+          "version": "",
+          "section": "",
+          "url": "https://www.fca.org.uk/consumers/buy-now-pay-later",
+          "tier": "regulator-guidance"
+        },
+        {
+          "name": "Affirm and United Airlines partnership",
+          "org": "United Airlines",
+          "version": "",
+          "section": "",
+          "url": "https://www.united.com/en/us/fly/travel/payment-options.html",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"14\" width=\"36\" height=\"20\" rx=\"3\"/><line x1=\"6\" y1=\"20\" x2=\"42\" y2=\"20\"/><path d=\"M14 28h6\"/><path d=\"M28 28h6\"/><path d=\"M24 34v6M18 40h12\"/></svg>",
+      "term": "Buy Now Pay Later",
+      "definition": "Buy Now Pay Later (BNPL) is a short-term consumer financing arrangement that allows a traveler to purchase a travel product immediately and pay for it in installments — typically two to four equal payments spread over weeks or months — often interest-free if paid on schedule. BNPL products in travel are offered by third-party credit providers (Klarna, Afterpay/Clearpay, Affirm, Laybuy) integrated at checkout by airlines, OTAs, hotels, and tour operators.",
+      "lastReviewed": "2026-07-09"
     },
     {
       "id": "cabin-category",
@@ -14993,6 +15157,117 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "e-visa",
+      "vertical": "common",
+      "category": "customer",
+      "conceptType": "standard-term",
+      "status": "active",
+      "abbreviation": "eVisa",
+      "term_ko": "전자비자 (eVisa)",
+      "definition_ko": "eVisa(전자비자)는 목적지 국가의 정부가 온라인으로 발급하는 여행 허가증으로, 여행객의 여권에 전자적으로 연계되며 물리적 비자 스티커나 스탬프 없이도 입국에 유효하다. 여행객은 공식 정부 웹 포털을 통해 신청하고 수수료를 납부하며, 승인 시 도착 시 국경 담당관이 전자적으로 확인할 수 있는 디지털 허가 기록을 받는다. 호주(ETA/eVisitor), 인도(e-Visa), 케냐, UAE 등 여러 국가에서 도입되었다.",
+      "longDef": "An eVisa differs from a traditional visa in that it is issued and stored digitally rather than printed into the passport. The traveler's approval is stored in the issuing country's immigration database and linked by the passport machine-readable zone (MRZ) data; the border officer queries the database at the port of entry. eVisas typically have defined validity windows (single-entry or multi-entry), maximum stay durations, and permitted purposes (tourism, business, transit). Some countries distinguish \"eVisa\" (a pre-approved visa for multiple nationalities) from \"Electronic Travel Authority\" (ETA) or \"Electronic Travel Authorisation\" (ETA), which are automatic pre-clearance systems for qualifying passport holders similar to the US ESTA. Key international standards applicable to eVisas are found in ICAO Doc 9303 (Machine Readable Travel Documents), which governs the passport MRZ and chip data used to link eVisas to physical documents, and the ICAO/IATA guidance on advance traveler information exchange. IATA's TIMATIC database tracks eVisa eligibility by nationality and passport type, helping airlines and agents determine pre-travel authorization requirements. At check-in, the Advance Passenger Information (APIS) data transmitted by the carrier to destination border authorities typically includes the eVisa reference number where required.",
+      "longDef_ko": "eVisa는 여권에 인쇄되는 대신 디지털로 발급·보관된다는 점에서 전통적인 비자와 다르다. 여행객의 승인 정보는 발급 국가의 출입국 데이터베이스에 저장되고 여권의 MRZ(기계 판독 구역) 데이터로 연계된다. 국경 담당관은 입국 항구에서 데이터베이스를 조회한다. eVisa는 일반적으로 유효 기간(단일입국 또는 복수입국), 최대 체류 기간, 허가 목적(관광·비즈니스·경유)이 정해져 있다. 일부 국가는 \"eVisa\"(여러 국적에 대한 사전 승인 비자)와 \"전자여행허가(ETA)\"(적격 여권 소지자에 대한 자동 사전 통관 시스템, 미국 ESTA 유사)를 구분한다. eVisa에 적용되는 주요 국제 표준은 여권 MRZ와 칩 데이터를 규율하는 ICAO Doc 9303(기계 판독 여행 서류)에 있으며, 이 데이터를 통해 eVisa가 물리적 문서와 연계된다. IATA TIMATIC은 국적과 여권 유형별 eVisa 자격을 추적하여 항공사와 대리점이 사전 여행 허가 요건을 판단하는 데 도움을 준다. 체크인 시 항공사가 목적지 국경 당국에 전송하는 APIS 데이터에는 요구 사항이 있는 경우 eVisa 참조 번호가 포함된다.",
+      "standardBody": "ICAO",
+      "aliases": [
+        "Electronic Visa",
+        "e-Visa",
+        "Electronic Travel Authority",
+        "ETA",
+        "Electronic Travel Authorisation",
+        "ESTA"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Australia (Department of Home Affairs)",
+          "term": "Electronic Travel Authority (ETA) / eVisitor",
+          "context": "Australia operates two no-label visa products: the ETA (subclass 601) for eligible passport holders from some countries, and the eVisitor (subclass 651) for European passport holders — both are electronically linked and require no label in the passport.",
+          "context_ko": "호주는 두 가지 스티커 없는 비자 상품을 운영한다. ETA(소분류 601)는 일부 국가의 적격 여권 소지자용이고, eVisitor(소분류 651)는 유럽 여권 소지자용으로, 둘 다 전자 연계되며 여권에 스티커가 필요 없다.",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "India (Ministry of Home Affairs)",
+          "term": "e-Visa India",
+          "context": "India's e-Visa system covers multiple categories (e-Tourist, e-Business, e-Medical) and is applied for online at least four days before travel; the eVisa record is linked to the passport and checked at immigration counters and airports.",
+          "context_ko": "인도의 e-Visa 시스템은 여러 카테고리(e-관광·e-비즈니스·e-의료)를 포괄하며, 여행 최소 4일 전에 온라인으로 신청한다. e-Visa 기록은 여권에 연계되어 입국심사대와 공항에서 확인된다.",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "USA (DHS)",
+          "term": "ESTA (Electronic System for Travel Authorization)",
+          "context": "The US ESTA is an automated pre-travel authorization required for Visa Waiver Program (VWP) nationals traveling to the United States. It is approved electronically and linked to the traveler's passport, functioning as the US equivalent of an eVisa for eligible nationalities.",
+          "context_ko": "미국 ESTA는 미국으로 여행하는 비자 면제 프로그램(VWP) 해당 국가 국민에게 요구되는 자동화된 사전 여행 허가다. 전자적으로 승인되어 여행객의 여권에 연계되며, 적격 국적에 대한 eVisa의 미국 동등 시스템 역할을 한다.",
+          "relationship": "same"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "TIMATIC",
+          "targetId": "timatic"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Advance Passenger Information System",
+          "targetId": "advance-passenger-information-system"
+        },
+        {
+          "type": "contrasts",
+          "targetTerm": "Digital Travel Credential",
+          "targetId": "digital-travel-credential"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Digital Travel Credential",
+          "explanation": "A Digital Travel Credential (DTC) is a biometric, cryptographically secured mobile identity credential derived from a physical ICAO Doc 9303 passport chip — it proves who the traveler IS. An eVisa is a government-issued entry authorization that proves the traveler has PERMISSION to enter a specific country. A traveler may present both: their DTC as proof of identity and their eVisa as proof of authorization.",
+          "explanation_ko": "Digital Travel Credential(DTC)은 ICAO Doc 9303 여권 칩에서 파생된 생체 인식·암호화 보안 모바일 신원 증명서로, 여행객이 누구인지를 증명한다. eVisa는 정부가 발급한 입국 허가증으로, 여행객이 특정 국가에 입국할 권한이 있음을 증명한다. 여행객은 둘 다 제시할 수 있다: 신원 증명으로 DTC, 입국 허가 증명으로 eVisa.",
+          "targetId": "digital-travel-credential"
+        },
+        {
+          "targetTerm": "TIMATIC",
+          "explanation": "TIMATIC is IATA's automated database tool that airlines and agents use to check visa and entry requirements (including whether an eVisa is required or available) by nationality and destination. TIMATIC surfaces eVisa information; it does not issue eVisas. An eVisa is the actual authorization document issued by the government after the traveler applies.",
+          "explanation_ko": "TIMATIC은 항공사와 대리점이 국적·목적지별로 비자 및 입국 요건(eVisa 필요 여부 또는 가용 여부 포함)을 확인하는 데 사용하는 IATA의 자동화 데이터베이스 도구다. TIMATIC은 eVisa 정보를 제공하지만 eVisa를 발급하지는 않는다. eVisa는 여행객이 신청 후 정부가 발급하는 실제 허가 문서다.",
+          "targetId": "timatic"
+        },
+        {
+          "targetTerm": "Advance Passenger Information System",
+          "explanation": "APIS is the carrier-to-government data transmission containing passenger identity and document details (collected at check-in) used for border pre-screening — it may include the eVisa reference number. An eVisa is the pre-issued entry authorization that APIS data is checked against at the border.",
+          "explanation_ko": "APIS는 체크인 시 수집한 승객 신원·서류 상세 정보를 담아 항공사가 정부에 전송하는 데이터로 국경 사전 심사에 활용되며, eVisa 참조 번호가 포함될 수 있다. eVisa는 국경에서 APIS 데이터와 대조하는 사전 발급 입국 허가증이다.",
+          "targetId": "advance-passenger-information-system"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Doc 9303 — Machine Readable Travel Documents",
+          "org": "ICAO",
+          "version": "8th Edition",
+          "section": "",
+          "url": "https://www.icao.int/publications/pages/publication.aspx?docnum=9303",
+          "tier": "standard-body"
+        },
+        {
+          "name": "Electronic Travel Authority (ETA) — Subclass 601",
+          "org": "Australian Department of Home Affairs",
+          "version": "",
+          "section": "",
+          "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/electronic-travel-authority-601",
+          "tier": "regulator-guidance"
+        },
+        {
+          "name": "TIMATIC — Travel Information",
+          "org": "IATA",
+          "version": "",
+          "section": "",
+          "url": "https://www.iata.org/en/services/compliance/timatic/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"9\" y=\"12\" width=\"30\" height=\"24\" rx=\"2\"/><line x1=\"9\" y1=\"20\" x2=\"39\" y2=\"20\"/><circle cx=\"20\" cy=\"30\" r=\"4\"/><path d=\"M26 28h7M26 32h5\"/><path d=\"M24 12V9M14 12V9M34 12V9\"/></svg>",
+      "term": "eVisa",
+      "definition": "An eVisa (electronic visa) is a government-issued travel authorization granted online by a destination country, electronically linked to the traveler's passport, and valid for entry without requiring a physical visa sticker or stamp. The traveler applies through an official government web portal, pays a processing fee, and on approval receives a digital authorization record that border officers verify electronically at arrival. Introduced by several countries including Australia (ETA/eVisitor), India (e-Visa), Kenya, and the UAE.",
+      "lastReviewed": "2026-07-09"
+    },
+    {
       "id": "excess",
       "vertical": "ground",
       "category": "car",
@@ -16010,6 +16285,93 @@
       "term": "Fare Family",
       "definition": "A fare family is a marketed bundle of a fare together with a defined set of attributes and ancillaries (such as baggage, seat selection, changes, and refunds) presented under a brand name like Basic, Standard, or Flex. It groups one or more underlying fares so travelers compare branded products rather than raw fare codes.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "fare-lock",
+      "vertical": "air",
+      "category": "air-shop",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "운임 잠금 (Fare Lock)",
+      "definition_ko": "Fare Lock(운임 잠금, Fare Hold 또는 Price Hold라고도 함)은 항공사나 예약 플랫폼이 제공하는 유료 부가 서비스로, 여행객이 비환급 수수료를 내고 특정 여정과 운임을 일정 기간(보통 24~72시간) 동안 즉시 구매 없이 예약·보류할 수 있는 서비스다. 여행객이 보류 기간 내에 구매를 완료하면 운임이 보장되고, 그렇지 않으면 보류가 만료되어 수수료는 환급되지 않는다.",
+      "longDef": "Fare Lock gives travelers time to confirm travel plans, obtain approval (e.g., corporate travel), or gather co-traveler agreement without risking that the fare will increase or sell out. The hold fee is typically between USD 5 and USD 30, varies by fare level and carrier, and is non-refundable regardless of whether the ticket is ultimately purchased. From a revenue management perspective, the airline benefits from the hold fee revenue and from binding a high-intent traveler. Technically, a fare lock may function as a ticketing time limit extension (the airline holds the seat, deferring the ticketing deadline to the end of the hold window) or as a separate confirmed seat reservation with a conditional purchase commitment. ATPCO Optional Services (formerly Optionals/Category 12) is the standard framework through which airlines publish ancillary service fees including fare lock/hold. Hold periods may be as short as one hour (some airlines) or up to seven days (limited cases). Booking platforms (e.g., Google Flights, Kayak) sometimes intermediate their own price-guarantee products on top of airline-issued holds.",
+      "longDef_ko": "Fare Lock은 여행객이 운임이 오르거나 좌석이 매진될 위험 없이 여행 계획을 확인하거나 승인을 받거나(예: 법인 출장) 동행자 동의를 구할 시간을 준다. 보류 수수료는 보통 USD 5~30이며 운임 수준과 항공사에 따라 다르고, 최종적으로 항공권을 구매하든 안 하든 환급되지 않는다. 수익 관리 관점에서 항공사는 보류 수수료 수익을 얻고 구매 의향이 높은 여행객을 확보하는 이점이 있다. 기술적으로 Fare Lock은 발권 마감 기한을 보류 기간 종료 시점까지 연장하는 방식(항공사가 좌석을 보류하고 발권 기한 유예)으로 작동하거나, 조건부 구매 약정이 포함된 별도의 좌석 확약 예약으로 처리될 수 있다. ATPCO Optional Services(구 Optionals/Category 12)는 항공사가 Fare Lock을 포함한 부가 서비스 요금을 공시하는 표준 체계다. 보류 기간은 1시간(일부 항공사)~최장 7일까지 다양하다. Google Flights·Kayak 등 예약 플랫폼이 항공사 발급 보류 위에 자체 가격 보증 상품을 제공하기도 한다.",
+      "aliases": [
+        "Fare Hold",
+        "Price Hold",
+        "Hold My Fare",
+        "Fare Guarantee",
+        "Seat Hold"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Ryanair",
+          "term": "Hold My Fare",
+          "context": "Ryanair's branded fare-lock product, available for a flat fee, reserves the selected flight and price for 24 hours while the traveler decides.",
+          "context_ko": "여행객이 결정을 내리는 동안 선택한 항공편과 가격을 24시간 동안 보류하는 Ryanair의 브랜드 운임 잠금 서비스로, 정액 수수료로 제공된다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "easyJet",
+          "term": "Flexi Fare / Hold Seat",
+          "context": "easyJet offers a hold option within its Flexi booking tier, allowing travelers to change or confirm their booking within a defined window.",
+          "context_ko": "easyJet은 Flexi 예약 등급 내에서 보류 옵션을 제공하여 여행객이 정해진 기간 내에 예약을 변경하거나 확정할 수 있게 한다.",
+          "relationship": "same"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "narrower",
+          "targetTerm": "Ancillary Service",
+          "targetId": "ancillary-service"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Fare Rule",
+          "targetId": "fare-rule"
+        },
+        {
+          "type": "contrasts",
+          "targetTerm": "Ticketing Time Limit",
+          "targetId": "ticketing-time-limit"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Ticketing Time Limit",
+          "explanation": "A Ticketing Time Limit (TTL) is the mandatory system-enforced deadline by which a PNR must be ticketed or it will auto-cancel — it is set automatically by the airline or GDS and the traveler incurs no separate fee for the window. A Fare Lock is an optional, paid service that extends or replaces the ticketing window at the traveler's election, providing a longer or more formal hold in exchange for a non-refundable fee.",
+          "explanation_ko": "발권 기한(TTL)은 PNR이 발권되지 않으면 자동 취소되도록 항공사나 GDS가 자동으로 설정하는 의무적 시스템 마감 기한이며, 여행객은 이 기간에 대해 별도 수수료를 내지 않는다. Fare Lock은 여행객이 선택하는 선택적 유료 서비스로, 비환급 수수료를 내고 발권 기간을 연장하거나 공식적인 보류를 제공한다.",
+          "targetId": "ticketing-time-limit"
+        },
+        {
+          "targetTerm": "Ancillary Service",
+          "explanation": "A Fare Lock is a specific type of ancillary service focused on holding a price and seat combination. Ancillary Service is the broader category that includes all revenue items sold beyond the base fare (bags, meals, seat upgrades, lounge access, and hold fees).",
+          "explanation_ko": "Fare Lock은 가격과 좌석 조합을 보류하는 특정 유형의 부가 서비스다. Ancillary Service는 기본 운임 외에 판매되는 모든 수익 항목(수하물·기내식·좌석 업그레이드·라운지 이용·보류 수수료 등)을 포괄하는 더 넓은 범주다.",
+          "targetId": "ancillary-service"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Optional Services (Ancillary Fees)",
+          "org": "ATPCO",
+          "version": "",
+          "section": "",
+          "url": "https://atpco.net/solutions/optional-services/",
+          "tier": "vendor-doc"
+        },
+        {
+          "name": "Passenger Services Conference Resolutions Manual (PSCRM)",
+          "org": "IATA",
+          "version": "46th Edition (2026)",
+          "section": "",
+          "url": "https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"14\" y=\"18\" width=\"20\" height=\"16\" rx=\"2\"/><path d=\"M20 18v-4a4 4 0 0 1 8 0v4\"/><circle cx=\"24\" cy=\"27\" r=\"2\" fill=\"currentColor\" stroke=\"none\"/><line x1=\"24\" y1=\"27\" x2=\"24\" y2=\"30\"/></svg>",
+      "term": "Fare Lock",
+      "definition": "A Fare Lock (also called a Fare Hold or Price Hold) is a paid ancillary service offered by airlines and booking platforms that allows a traveler to reserve a specific itinerary and fare for a defined hold period — typically 24 to 72 hours — without immediately purchasing the ticket, in exchange for a non-refundable fee. If the traveler completes the purchase within the hold window, the fare is guaranteed; if not, the hold expires and the fee is forfeited.",
+      "lastReviewed": "2026-07-09"
     },
     {
       "id": "fare-rule",
@@ -23913,6 +24275,105 @@
       "lastReviewed": "2026-06-18"
     },
     {
+      "id": "low-cost-carrier",
+      "vertical": "air",
+      "category": "air-shop",
+      "conceptType": "business-term",
+      "status": "active",
+      "abbreviation": "LCC",
+      "term_ko": "저비용항공사 (LCC)",
+      "definition_ko": "LCC(Low Cost Carrier, 저비용항공사)는 낮은 기본 운임, 분리 판매 부가서비스 요금, 높은 항공기 가동률, 단일 좌석 등급, 주로 포인트-투-포인트 노선 운영 및 최소한의 인터라인 협약을 특징으로 하는 비즈니스 모델을 채택한 항공사다. 이 모델은 1978년 미국 항공 규제 완화 이후 등장했으며, 현재 여러 지역에서 승객 수 기준 지배적인 항공 여행 부문을 형성하고 있다.",
+      "longDef": "The LCC model was pioneered by Southwest Airlines in the United States and Ryanair/easyJet in Europe, and has spread globally. Key structural characteristics include: single aircraft type (typically one narrow-body family) to reduce maintenance and training costs; high seat density (no or minimal business class); rapid turnaround times (under 25 minutes) to maximize daily utilization; no free in-flight meals or checked baggage (all ancillary services priced separately); secondary or underutilized airports to reduce landing fees; direct (web or app) booking channels with limited or no GDS distribution; no interline or code-share with other carriers (though some \"hybrid\" LCCs have introduced limited partnerships); no free seat selection or ticket changes without fees. LCCs rely heavily on ancillary revenue (bag fees, seat selection, onboard catering, car-hire commissions, hotel commissions) to supplement low base fares. Revenue management for LCCs tends to be leg-based rather than O&D network optimization, with a smaller number of fare buckets than full-service carriers (FSCs). The boundary between LCC and FSC has blurred with the rise of \"hybrid\" or \"ultra-low cost\" carriers (ULCCs).",
+      "longDef_ko": "LCC 모델은 미국의 Southwest Airlines와 유럽의 Ryanair/easyJet이 선구자 역할을 하였으며, 이제 전 세계로 확산되었다. 주요 구조적 특징: 단일 기종 운영(유지·훈련 비용 절감); 높은 좌석 밀도(비즈니스 클래스 없음 또는 최소화); 빠른 턴어라운드(25분 이내, 일일 가동률 극대화); 기내식·위탁수하물 무료 없음(모든 부가서비스는 별도 요금); 착륙료 절감을 위한 보조 또는 미활용 공항 이용; 직접 예약 채널(웹·앱) 중심, GDS 유통 제한 또는 없음; 타 항공사와 인터라인·코드셰어 협약 없음(일부 \"하이브리드\" LCC는 제한적 제휴 도입); 좌석 선택이나 항공권 변경은 유료. LCC는 낮은 기본 운임을 보완하기 위해 수하물 요금·좌석 선택·기내식·렌터카 커미션·호텔 커미션 등 부가서비스 수익에 크게 의존한다. LCC의 수익 관리는 O&D 네트워크 최적화보다 구간(leg) 기반 방식이 일반적이며, FSC(일반항공사)보다 운임 버킷 수가 적다. \"하이브리드\" 또는 ULCC(초저가항공사)의 부상으로 LCC와 FSC의 경계가 점차 모호해지고 있다.",
+      "aliases": [
+        "Budget Carrier",
+        "No-Frills Carrier",
+        "Budget Airline",
+        "Low-Fare Carrier",
+        "ULCC",
+        "Ultra-Low Cost Carrier"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Southwest Airlines",
+          "term": "Southwest Model",
+          "context": "Southwest Airlines originated the LCC model in the US with single-class seating, point-to-point routes, no change fees (a later differentiator), and rapid turns — later adopted and adapted globally.",
+          "context_ko": "Southwest Airlines는 미국에서 단일 좌석 등급, 포인트-투-포인트 노선, 변경 수수료 없음(후기 차별화 요소), 신속한 턴어라운드로 LCC 모델을 시작했으며, 이후 전 세계적으로 도입·변형되었다.",
+          "relationship": "related"
+        },
+        {
+          "provider": "Ryanair",
+          "term": "Ultra-Low Cost Model",
+          "context": "Ryanair is widely cited as the archetypal European LCC/ULCC, operating a strict ancillary-first pricing model and distributing predominantly through its own direct channels.",
+          "context_ko": "Ryanair는 엄격한 부가서비스 우선 가격 모델을 운영하며 주로 자체 직접 채널을 통해 판매하는 유럽의 전형적인 LCC/ULCC로 널리 알려져 있다.",
+          "relationship": "narrower"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Revenue Management",
+          "targetId": "revenue-management"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Ancillary Service",
+          "targetId": "ancillary-service"
+        },
+        {
+          "type": "related",
+          "targetTerm": "GDS",
+          "targetId": "gds"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Overbooking",
+          "targetId": "overbooking"
+        },
+        {
+          "type": "contrasts",
+          "targetTerm": "Fare Family",
+          "targetId": "fare-family"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Fare Family",
+          "explanation": "Full-service carriers (FSCs) use branded Fare Families (e.g., Light/Classic/Flex) that bundle services such as seat selection and checked baggage into tiered products. LCCs typically offer a single base fare plus à la carte charges — each service (bag, seat, meal) is priced and sold individually rather than bundled into a named family.",
+          "explanation_ko": "FSC(일반항공사)는 좌석 선택·위탁수하물 등 서비스를 묶은 브랜드 운임 패밀리(예: Light/Classic/Flex)를 사용한다. LCC는 보통 단일 기본 운임에 부가 서비스(수하물·좌석·식사)를 각각 개별 가격으로 제공하며, 이를 명칭이 붙은 패밀리로 묶지 않는다.",
+          "targetId": "fare-family"
+        },
+        {
+          "targetTerm": "GDS",
+          "explanation": "LCCs traditionally distribute primarily through direct channels (their own website and app) to avoid GDS booking fees. However, some LCCs have signed GDS agreements or participate in NDC to reach corporate and agency markets; distribution strategy varies by carrier.",
+          "explanation_ko": "LCC는 전통적으로 GDS 예약 수수료를 피하기 위해 자체 웹사이트·앱 등 직접 채널 중심으로 판매해 왔다. 다만 일부 LCC는 법인·대리점 시장에 도달하기 위해 GDS 계약을 체결하거나 NDC에 참여하기도 하며, 유통 전략은 항공사마다 다르다.",
+          "targetId": "gds"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Low-Cost Carrier Statistics",
+          "org": "ICAO",
+          "version": "",
+          "section": "",
+          "url": "https://www.icao.int/sustainability/Pages/Low-Cost-Carrier-Statistics.aspx",
+          "tier": "regulator-guidance"
+        },
+        {
+          "name": "IATA Economics Research",
+          "org": "IATA",
+          "version": "",
+          "section": "",
+          "url": "https://www.iata.org/en/publications/economics/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 30l8-10 6 4 8-14 6 4 8-8\"/><circle cx=\"14\" cy=\"20\" r=\"2.5\" fill=\"currentColor\" stroke=\"none\"/><circle cx=\"28\" cy=\"14\" r=\"2.5\" fill=\"currentColor\" stroke=\"none\"/><line x1=\"8\" y1=\"40\" x2=\"40\" y2=\"40\"/><path d=\"M14 40v-4M24 40v-6M34 40v-4\"/></svg>",
+      "term": "Low Cost Carrier",
+      "definition": "A Low Cost Carrier (LCC) is an airline that operates on a business model emphasizing low base fares, unbundled ancillary charges, high aircraft utilization, a single cabin class, and typically point-to-point routes with minimal interline agreements. The model emerged after US airline deregulation in 1978 and is now the dominant air travel segment by passenger numbers in many regions.",
+      "lastReviewed": "2026-07-09"
+    },
+    {
       "id": "loyalty-tier-status",
       "vertical": "common",
       "category": "customer",
@@ -27796,6 +28257,83 @@
       "term": "Non-Refundable Rate",
       "definition": "A non-refundable rate is a room rate sold at a discount in exchange for full prepayment and no right to a refund if the guest cancels, amends or fails to arrive. The commercial risk shifts to the guest, and the hotel secures committed revenue earlier than with a flexible rate.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "notam",
+      "vertical": "air",
+      "category": "air-ops",
+      "conceptType": "standard",
+      "status": "active",
+      "abbreviation": "NOTAM",
+      "term_ko": "항공고시보 (NOTAM)",
+      "definition_ko": "NOTAM(Notice to Air Missions, 항공고시보)은 항공 당국에 제출되어 전자적으로 운항 승무원 및 운항 관련 직원에게 배포되는 통지로, 안전한 비행 운항에 필수적인 항공 인프라 변경 사항, 항법 장애물, 또는 임시 비행 제한에 관한 정보를 담는다. NOTAM은 ICAO Annex 15(항공정보서비스)에 따라 의무화되고 표준화되어 있다.",
+      "longDef": "NOTAM classes include NOTAM N (new), NOTAM R (replace), and NOTAM C (cancel/withdraw). Each NOTAM is identified by a unique series letter and sequential number issued by the originating NOTAM Office, contains structured fields (Q-code, location indicator, effective time, lower/upper limits, and free-text content), and is transmitted through the Aeronautical Fixed Telecommunication Network (AFTN) and ICAO NOTAMserver to pilots and dispatchers worldwide. Common NOTAM subjects include runway or taxiway closures, navigational aid (navaid) outages, airspace restrictions (TFRs, NOTAMs for VIP movements), aerodrome obstacle warnings, and changes to instrument approach procedures. Pilots are required to review relevant NOTAMs as part of pre-flight planning. The digital NOTAM format NOTAM-D is structured for automated machine parsing, supporting integration with flight planning systems and EFBs (Electronic Flight Bags).",
+      "longDef_ko": "NOTAM 종류에는 NOTAM N(신규), NOTAM R(대체), NOTAM C(취소/철회)가 있다. 각 NOTAM은 발행 NOTAM 사무소가 부여한 고유 시리즈 문자와 일련번호로 식별되며, 구조화된 필드(Q코드·위치표지·유효 시간·하한/상한 고도·자유 텍스트)를 담고 AFTN(항공고정통신망) 및 ICAO NOTAMserver를 통해 전 세계 조종사·운항관리사에게 전송된다. 일반적인 NOTAM 대상에는 활주로·유도로 폐쇄, 항행안전시설(navaid) 장애, 공역 제한(TFR, VIP 이동 관련 NOTAM), 비행장 장애물 경고, 계기접근절차 변경 등이 있다. 조종사는 비행 전 계획의 일환으로 관련 NOTAM을 검토할 의무가 있다. 디지털 NOTAM 형식인 NOTAM-D는 자동 기계 파싱을 위해 구조화되어 있어, 비행계획 시스템 및 전자비행가방(EFB)과의 통합을 지원한다.",
+      "standardBody": "ICAO",
+      "aliases": [
+        "Notice to Air Missions",
+        "Notice to Airmen",
+        "NOTAM-D",
+        "Aeronautical Notice"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Block Time",
+          "targetId": "block-time"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Slot",
+          "targetId": "slot"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Departure Control System (DCS)",
+          "targetId": "departure-control-system-dcs"
+        },
+        {
+          "type": "related",
+          "targetTerm": "General Declaration",
+          "targetId": "general-declaration"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "General Declaration",
+          "explanation": "A General Declaration (GenDec) is the official administrative document submitted to customs and immigration on arrival and departure; a NOTAM is an operational safety notice distributed to flight crews and operations staff before or during flight. They are distinct information flows: NOTAM (aeronautical authority → crew) and GenDec (airline → border authority).",
+          "explanation_ko": "General Declaration(GenDec)은 입·출항 시 세관과 출입국 당국에 제출하는 공식 행정 문서이고, NOTAM은 비행 전후로 운항 승무원과 운항 담당자에게 배포되는 운영 안전 통지다. 이 둘은 별개의 정보 흐름이다: NOTAM(항공 당국→승무원)과 GenDec(항공사→국경 당국).",
+          "targetId": "general-declaration"
+        },
+        {
+          "targetTerm": "Slot",
+          "explanation": "An airport slot is a scheduled time window for aircraft movement; a NOTAM may restrict or suspend the use of a runway or airspace that an allocated slot covers, requiring operational re-planning.",
+          "explanation_ko": "공항 슬롯은 항공기 이동을 위한 예약 시간 창이고, NOTAM은 할당된 슬롯이 적용되는 활주로나 공역을 제한·중단시켜 운영 재계획을 요구할 수 있다.",
+          "targetId": "slot"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Annex 15 — Aeronautical Information Services",
+          "org": "ICAO",
+          "version": "16th Edition",
+          "section": "",
+          "url": "https://www.icao.int/safety/information-management/Pages/AeronauticalInformationServices.aspx",
+          "tier": "regulator-guidance"
+        },
+        {
+          "name": "Notices to Air Missions (NOTAMs) and Temporary Flight Restrictions (TFRs)",
+          "org": "FAA",
+          "version": "",
+          "section": "",
+          "url": "https://www.faa.gov/pilots/safety/notams_tfr",
+          "tier": "regulator-guidance"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"18\"/><line x1=\"24\" y1=\"14\" x2=\"24\" y2=\"26\"/><circle cx=\"24\" cy=\"31\" r=\"1.5\" fill=\"currentColor\"/><path d=\"M14 8l-4-4M34 8l4-4\"/></svg>",
+      "term": "NOTAM",
+      "definition": "A NOTAM (Notice to Air Missions) is a notice filed with an aviation authority and distributed electronically to flight crews and operations staff that contains information about changes to aeronautical infrastructure, hazards to navigation, or temporary flight restrictions that are essential for safe flight operations. NOTAMs are mandated and standardized under ICAO Annex 15 (Aeronautical Information Services).",
+      "lastReviewed": "2026-07-09"
     },
     {
       "id": "nuc",
