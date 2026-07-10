@@ -2,8 +2,8 @@
   "meta": {
     "name": "Travel Wiki",
     "tagline": "여행 산업 용어 백과사전",
-    "generatedAt": "2026-07-09",
-    "entryCount": 535,
+    "generatedAt": "2026-07-10",
+    "entryCount": 541,
     "categoryCount": 20,
     "verticalCount": 6
   },
@@ -14661,6 +14661,83 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "etops-edto",
+      "vertical": "air",
+      "category": "air-ops",
+      "conceptType": "standard",
+      "status": "active",
+      "abbreviation": "ETOPS/EDTO",
+      "term_ko": "쌍발 장거리 운항 기준 / 연장 회항시간 운항(ETOPS/EDTO)",
+      "definition_ko": "ETOPS/EDTO(Extended-range Twin-engine Operational Performance Standards / Extended Diversion Time Operations)는 쌍발(ETOPS) 또는 다발(ICAO EDTO) 항공기가 적합한 대체 공항까지의 회항 시간이 역사적 기준인 단발 60분을 초과하는 항로를 운항할 수 있도록 허용하는 규제 체계다. 특정 ETOPS 시간 한도(예: 120분, 180분, 240분)에 대해 기종(type design)과 운항 항공사가 별도로 승인을 받아야 한다.",
+      "longDef": "Before ETOPS, the FAA's 60-minute rule confined twin-engine airliners to routes within one engine-out flight from a diversion airport, barring them from long overwater transoceanic routes. The first commercial ETOPS approval was granted to TWA in 1985 for B767 North Atlantic operations (ETOPS-120). As airframe reliability improved, authorities expanded limits: ETOPS-180 is now standard for North Atlantic and Pacific routes; ETOPS-207 (3.5 hours) and ETOPS-240 exist for remote Pacific segments; ETOPS-330 is the maximum, enabling ultra-long routes such as Australia–South America. ICAO adopted the term EDTO (Extended Diversion Time Operations) in Amendment 38 to Annex 6 Part I (2012) to encompass all multi-engine aircraft types — not just twins. Both the aircraft type certificate and the operator must hold separate approvals specifying maintenance programs, ETOPS-suitable alternates, fuel reserves, and dispatch procedures.",
+      "longDef_ko": "ETOPS 이전 FAA의 60분 규칙은 쌍발 여객기를 대체 공항까지 단발 비행 60분 이내 항로로 제한하여 장거리 해상 횡단 항로 운항을 금지했다. 최초 상업용 ETOPS 승인은 1985년 TWA의 B767 북대서양 운항(ETOPS-120)에 부여되었다. 기체 신뢰성이 향상되면서 허용 범위가 확대되었다. ETOPS-180은 현재 북대서양·태평양 항로의 표준이며, 원격 태평양 구간에는 ETOPS-207(3.5시간)·ETOPS-240이, 호주–남미 등 초장거리 항로에는 최대치인 ETOPS-330이 적용된다. ICAO는 2012년 부속서 6 Part I 개정 38호에서 쌍발 외 다발 항공기 전체를 포괄하는 EDTO(Extended Diversion Time Operations)라는 용어를 채택했다. 기종 형식증명과 운항 항공사는 정비 프로그램, ETOPS 적합 대체 공항, 연료 예비량, 출발 절차를 명시한 각각의 별도 승인을 보유해야 한다.",
+      "standardBody": "ICAO",
+      "aliases": [
+        "Extended-range Twin-engine Operational Performance Standards",
+        "Extended Diversion Time Operations",
+        "EDTO",
+        "ETOPS"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Block Time",
+          "targetId": "block-time"
+        },
+        {
+          "type": "related",
+          "targetTerm": "NOTAM",
+          "targetId": "notam"
+        },
+        {
+          "type": "related",
+          "targetTerm": "AOG",
+          "targetId": "aog"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Wet Lease",
+          "targetId": "wet-lease"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Block Time",
+          "explanation": "Block Time is the duration of a completed flight from pushback to engine shutdown; ETOPS/EDTO is the regulatory approval framework that permits twin-engine aircraft to operate specific routes where the single-engine diversion time exceeds the basic 60-minute threshold.",
+          "explanation_ko": "Block Time은 항공편 출발(pushback)부터 엔진 정지까지의 실제 비행 시간이고, ETOPS/EDTO는 쌍발 항공기가 단발 회항 시간이 기본 60분 임계값을 초과하는 특정 항로를 운항할 수 있도록 허용하는 규제 승인 체계다.",
+          "targetId": "block-time"
+        },
+        {
+          "targetTerm": "AOG",
+          "explanation": "An AOG (Aircraft on Ground) occurs when mechanical unserviceability grounds a specific aircraft; ETOPS/EDTO is a pre-flight regulatory framework governing which routes and alternates are permissible for twin-engine types. An AOG on an ETOPS-certified aircraft does not revoke the airline''s ETOPS program.",
+          "explanation_ko": "AOG는 기계적 결함으로 특정 항공기가 운항 불능 상태가 된 것이고, ETOPS/EDTO는 쌍발 기종에 허용되는 항로와 대체 공항을 규정하는 비행 전 규제 체계다. ETOPS 인증 항공기에 AOG가 발생해도 항공사의 ETOPS 프로그램 자체가 취소되지는 않는다.",
+          "targetId": "aog"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Advisory Circular 120-42B — Extended Operations (ETOPS and Polar Operations)",
+          "org": "FAA",
+          "version": "AC 120-42B (Change 1, 2015)",
+          "section": "General",
+          "url": "https://rgl.faa.gov/Regulatory_and_Guidance_Library/rgAdvisoryCircular.nsf/0/c17e2398c9a9f74b862579e5005e9875/$FILE/AC120-42B.pdf",
+          "tier": "regulator-guidance"
+        },
+        {
+          "name": "ICAO Annex 6 — Operation of Aircraft, Part I, Section 4.7 Extended Diversion Time Operations",
+          "org": "ICAO",
+          "version": "11th Edition (2018)",
+          "section": "4.7",
+          "url": "https://store.icao.int/en/annex-6-operation-of-aircraft-part-i-international-commercial-air-transport-aeroplanes",
+          "tier": "standard-body"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"17\"/><path d=\"M7 24h34\"/><path d=\"M24 7a28 28 0 0 1 0 34M24 7a28 28 0 0 0 0 34\"/><path d=\"M16 18l5 2-2 2 2 4-4-1-2 2-3-8z\"/><path d=\"M28 28l4 2\"/></svg>",
+      "term": "ETOPS/EDTO",
+      "definition": "ETOPS/EDTO (Extended-range Twin-engine Operational Performance Standards / Extended Diversion Time Operations) is the regulatory framework that allows twin-engine (and, under ICAO's broader EDTO term, multi-engine) aircraft to operate routes where the diversion time to an adequate alternate airport exceeds a threshold — historically 60 minutes on a single engine. Both the aircraft type and the operating airline must be separately approved for a specific ETOPS time limit (e.g., 120, 180, 240 minutes).",
+      "lastReviewed": "2026-07-10"
+    },
+    {
       "id": "eu-allowance-eua",
       "vertical": "common",
       "category": "sustainability",
@@ -19357,6 +19434,72 @@
       "term": "Group PNR",
       "definition": "A Group PNR is a single Passenger Name Record created to hold a block of seats for a group of passengers (typically a defined minimum, such as 10 or more) travelling together on the same itinerary, often before all individual names are known. Names are added against the held seats over time, and unassigned places are tracked until name-in or cancellation.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "gstc-criteria",
+      "vertical": "common",
+      "category": "sustainability",
+      "conceptType": "standard",
+      "status": "active",
+      "abbreviation": "GSTC",
+      "term_ko": "세계지속가능관광협의회 기준(GSTC Criteria)",
+      "definition_ko": "GSTC Criteria(세계지속가능관광협의회 기준)는 GSTC — 2010년 유엔환경계획(UNEP)과 유엔세계관광기구(UNWTO)의 지원으로 설립된 독립 비영리 기구 — 가 관리하는 지속가능관광의 글로벌 최소 기준이다. 지속가능 경영·사회경제적 영향·문화적 영향·환경적 영향의 네 기둥(pillar)에 걸쳐 숙박 제공업체·투어 운영사·여행지가 충족해야 하는 최소 역치를 설정하며, 국내외 관광 인증 프로그램이 GSTC 인정(Recognition) 또는 인증기관 공인(Accreditation)을 위해 평가받는 기준으로 기능한다.",
+      "longDef": "The GSTC publishes two sets of Industry Criteria — one for Hotels & Accommodations (GSTC-H) and one for Tour Operators (GSTC-TO) — as well as Destination Criteria (GSTC-D). Each Criterion is organized into a four-pillar structure: Pillar A (Sustainable Management) — governance, monitoring, employee training, customer satisfaction, accurate marketing; Pillar B (Socioeconomic Impacts) — community economic benefits, local employment, fair trade, child protection, anti-corruption); Pillar C (Cultural Heritage) — respect for local traditions, protection of historic sites and intellectual property); Pillar D (Environmental) — conservation of ecosystems and biodiversity, water and energy use, greenhouse gas reduction, waste management, hazardous substances). Certification bodies (CBs) that base their programs on the GSTC Criteria can apply for GSTC Accreditation, making their certified businesses eligible to display the GSTC-recognized label. Examples of GSTC-Recognized programs include Green Key International, Travelife, EarthCheck, and numerous national schemes. The GSTC Criteria are periodically reviewed; the current Hotel and Tour Operator criteria date from version 2 (2016) with ongoing updates. For tour operators and destinations selling or managing travel experiences, alignment with the GSTC Criteria is increasingly required by corporate buyers, OTAs such as Booking.com and Expedia, and destination management organizations.",
+      "longDef_ko": "GSTC는 호텔·숙박업(GSTC-H)과 투어 운영사(GSTC-TO)를 위한 두 가지 산업 기준 세트와 여행지 기준(GSTC-D)을 발간한다. 각 기준은 4개 기둥 구조로 구성된다. 기둥 A(지속가능 경영): 거버넌스·모니터링·직원 교육·고객 만족도·정확한 마케팅. 기둥 B(사회경제적 영향): 지역사회 경제적 혜택·현지 고용·공정 거래·아동 보호·반부패. 기둥 C(문화유산): 현지 전통 존중·역사 유적지 및 지식재산권 보호. 기둥 D(환경): 생태계·생물다양성 보존·수자원·에너지 사용·온실가스 감축·폐기물 관리·유해물질. GSTC 기준을 기반으로 하는 인증기관(CB)은 GSTC 공인을 신청할 수 있으며, 그 기관에서 인증받은 사업체는 GSTC 인정 라벨을 표시할 수 있다. GSTC 인정 프로그램 예로는 그린키 인터내셔널(Green Key International), 트래블라이프(Travelife), 어스체크(EarthCheck), 각국 국가 체계 등이 있다. GSTC 기준은 정기적으로 검토되며, 현행 호텔·투어 운영사 기준은 2016년 버전 2에서 지속 업데이트 중이다. 여행 경험을 판매·관리하는 투어 운영사와 여행지의 경우 GSTC 기준 준수는 기업 구매자, 부킹닷컴·익스피디아 같은 OTA, 여행지 관리 기구(DMO)에 의해 점점 더 요구되고 있다.",
+      "standardBody": "GSTC",
+      "aliases": [
+        "Global Sustainable Tourism Council Criteria",
+        "GSTC Standards",
+        "Global Sustainable Tourism Criteria"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Overtourism",
+          "targetId": "overtourism"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Destination Management Organization",
+          "targetId": "destination-management-organization"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Overtourism",
+          "explanation": "Overtourism is the phenomenon of a destination receiving so many visitors that quality of life for residents and visitor experience both degrade; the GSTC Criteria are a preventive and management standard framework that helps destinations and businesses measure and reduce their tourism impact, thereby addressing the root causes of overtourism.",
+          "explanation_ko": "과잉관광(Overtourism)은 여행지에 너무 많은 방문객이 몰려 주민 삶의 질과 방문객 경험 모두 악화되는 현상이고, GSTC Criteria는 여행지와 사업체가 관광 영향을 측정·감축할 수 있게 하는 예방·관리 표준 체계로, 과잉관광의 근본 원인을 해소하는 데 기여한다.",
+          "targetId": "overtourism"
+        },
+        {
+          "targetTerm": "Destination Management Organization",
+          "explanation": "A Destination Management Organization (DMO) is the body that coordinates tourism promotion and management for a destination; the GSTC Destination Criteria are the benchmark standard DMOs use to assess and improve the sustainability of their destination — the DMO implements, the GSTC Criteria define what \"sustainable\" means.",
+          "explanation_ko": "여행지 관리 기구(DMO)는 여행지의 관광 홍보·관리를 조율하는 기구이고, GSTC 여행지 기준(GSTC-D)은 DMO가 자신의 여행지 지속가능성을 평가·개선하는 데 사용하는 벤치마크 표준이다. DMO가 실행하고, GSTC Criteria가 \"지속가능\"의 의미를 정의한다.",
+          "targetId": "destination-management-organization"
+        }
+      ],
+      "sources": [
+        {
+          "name": "GSTC Criteria for Hotels & Accommodations (GSTC-H) — Version 2",
+          "org": "GSTC",
+          "version": "Version 2 (2016, updated 2022)",
+          "section": "",
+          "url": "https://www.gstc.org/what-we-do/sustainable-tourism-gstc-criteria/gstc-industry-criteria/",
+          "tier": "standard-body"
+        },
+        {
+          "name": "GSTC Destination Criteria (GSTC-D) — Version 2.0",
+          "org": "GSTC",
+          "version": "Version 2.0",
+          "section": "",
+          "url": "https://www.gstc.org/what-we-do/sustainable-tourism-gstc-criteria/gstc-destination-criteria/",
+          "tier": "standard-body"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 40c7-16 20-24 32-24-3 13-15 22-32 24z\"/><path d=\"M8 40l10-12\"/><circle cx=\"36\" cy=\"16\" r=\"7\"/><polyline points=\"32,16 35,19 41,13\"/></svg>",
+      "term": "GSTC Criteria",
+      "definition": "The GSTC Criteria (Global Sustainable Tourism Council Criteria) are the globally recognized baseline standards for sustainable tourism, maintained by the GSTC — an independent, non-profit organization established in 2010 with support from the UN Environment Programme (UNEP) and the UN World Tourism Organization (UNWTO). The Criteria set a minimum threshold across four pillars — sustainable management, socioeconomic impacts, cultural impacts, and environmental impacts — that accommodation providers, tour operators, and destinations must meet, and they form the benchmark against which national and international tourism certification programs are assessed for GSTC Recognition or Accreditation.",
+      "lastReviewed": "2026-07-10"
     },
     {
       "id": "guarantee-cabin-gty",
@@ -24592,6 +24735,72 @@
       "distinctions": []
     },
     {
+      "id": "mlc-2006",
+      "vertical": "cruise",
+      "category": "cruise",
+      "conceptType": "regulation",
+      "status": "active",
+      "abbreviation": "MLC 2006",
+      "term_ko": "해사노동협약(MLC 2006)",
+      "definition_ko": "해사노동협약 2006(MLC 2006)은 2006년 채택되어 2013년 8월 20일 발효된 ILO 협약 제186호로, 기존 ILO 해사노동 문서 거의 전부를 단일의 포괄적 최소기준으로 통합한다. 해상근로자의 근로·생활 조건, 사회적 보호, 이행 체계를 다루며, 흔히 \"선원 권리장전(Seafarers' Bill of Rights)\"으로 불린다. 국제 항해에 종사하는 총톤수 500톤 이상 크루즈선 및 기타 상업용 선박은 해사노동증서(MLC Certificate)와 해사노동이행선언서(DMLC)를 비치해야 한다.",
+      "longDef": "MLC 2006 is structured into five Titles: Title 1 sets minimum age, medical fitness, training, and recruitment/placement standards; Title 2 governs seafarer employment agreements (SEAs), wages, hours of work and rest, paid leave, repatriation, and compensation for ship loss; Title 3 addresses accommodation, recreational facilities, food and catering; Title 4 covers medical care on board and ashore, health and safety, and access to welfare facilities; Title 5 establishes the compliance and enforcement regime — flag State certification, port State control inspections, and on-board complaint procedures. Cruise lines are substantial MLC stakeholders because they employ large crews; MLC directly shapes collective bargaining agreements, crew-to-guest ratios, rest-hour records, and guest-contract disclosures around crew welfare. The Port State Control inspection right under MLC Title 5 means that non-compliant cruise ships may be detained in any ratifying nation's port. As of 2024, MLC 2006 has been ratified by states representing over 97% of world shipping tonnage.",
+      "longDef_ko": "MLC 2006는 5개 표제(Title)로 구성된다. 표제 1은 최저 연령·건강 적합성·훈련·모집 배치 기준을, 표제 2는 선원 고용계약(SEA)·임금·근로·휴식 시간·유급휴가·본국 송환·선박 손실 보상을, 표제 3은 거처·레저 시설·식사·취사를, 표제 4는 선상·항만 내 의료 서비스·보건·안전·복지 시설 이용을, 표제 5는 이행·집행 체계(기국 증서, 항만국 통제 검사, 선내 고충 절차)를 규율한다. 크루즈 선사는 대규모 승무원을 고용하므로 MLC의 주요 당사자이며, MLC는 단체협약·승객 대비 승무원 비율·휴식시간 기록·승무원 복지 관련 게스트 계약 공시에 직접적인 영향을 미친다. MLC 표제 5의 항만국 통제 검사권으로 인해 불이행 크루즈선은 비준국 어느 항구에서든 억류될 수 있다. 2024년 현재 세계 선박 총톤수의 97% 이상을 보유한 국가들이 MLC 2006을 비준했다.",
+      "standardBody": "ILO",
+      "aliases": [
+        "Maritime Labour Convention",
+        "MLC",
+        "ILO Convention No. 186",
+        "Seafarers Bill of Rights"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "SOLAS",
+          "targetId": "solas"
+        },
+        {
+          "type": "related",
+          "targetTerm": "CLIA (Cruise Lines International Association)",
+          "targetId": "clia"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Guest Ticket Contract",
+          "targetId": "guest-ticket-contract"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "SOLAS",
+          "explanation": "SOLAS (International Convention for the Safety of Life at Sea) governs vessel construction, equipment, and operational safety to protect everyone on board, including passengers; MLC 2006 specifically governs the labor rights, welfare, and working conditions of the seafarers who crew those vessels. They are complementary \"pillars\" of international maritime law — SOLAS for safety, MLC for seafarer labor standards.",
+          "explanation_ko": "SOLAS(해상인명안전협약)는 선박 구조·장비·운항 안전을 규율하여 승객을 포함한 선박 내 모든 사람을 보호하고, MLC 2006은 그 선박을 운항하는 해상근로자의 노동권·복지·근로 조건을 구체적으로 규율한다. SOLAS(안전)와 MLC(노동 기준)는 국제 해사법의 상호 보완적 \"4대 기둥\" 중 두 축을 이룬다.",
+          "targetId": "solas"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Maritime Labour Convention, 2006 (MLC, 2006) — Consolidated text",
+          "org": "ILO",
+          "version": "MLC 2006, as amended (2022 amendments)",
+          "section": "",
+          "url": "https://www.ilo.org/dyn/normlex/en/f?p=NORMLEXPUB:91:0::NO::P91_ILO_CODE:C186",
+          "tier": "regulation"
+        },
+        {
+          "name": "Guidelines for port State control officers carrying out inspections under the Maritime Labour Convention, 2006",
+          "org": "ILO",
+          "version": "",
+          "section": "",
+          "url": "https://www.ilo.org/sector/activities/sectoral-meetings/WCMS_175227/lang--en/index.htm",
+          "tier": "regulator-guidance"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 34h32l-4-14H12L8 34z\"/><path d=\"M24 20V10M18 10h12\"/><path d=\"M4 38h40\"/><path d=\"M14 38l2 6h16l2-6\"/><circle cx=\"24\" cy=\"8\" r=\"2\"/></svg>",
+      "term": "Maritime Labour Convention 2006 (MLC 2006)",
+      "definition": "The Maritime Labour Convention 2006 (MLC 2006) is ILO Convention No. 186, adopted in 2006 and entered into force on 20 August 2013, that consolidates virtually all existing ILO maritime labour instruments into a single, comprehensive set of minimum standards covering seafarers' working and living conditions, social protection, and compliance mechanisms. Often called the \"Seafarers' Bill of Rights,\" it requires cruise ships and other commercial vessels of 500 gross tons or more engaged on international voyages to carry a Maritime Labour Certificate and a Declaration of Maritime Labour Compliance.",
+      "lastReviewed": "2026-07-10"
+    },
+    {
       "id": "marketing-carrier",
       "vertical": "air",
       "category": "air-partner",
@@ -27524,6 +27733,95 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "net-promoter-score",
+      "vertical": "common",
+      "category": "customer",
+      "conceptType": "metric",
+      "status": "active",
+      "abbreviation": "NPS",
+      "term_ko": "순고객추천지수(NPS)",
+      "definition_ko": "순고객추천지수(NPS, Net Promoter Score)는 \"친구나 동료에게 우리를 추천할 가능성이 얼마나 됩니까?\"라는 단일 설문 문항(0~10점 척도)에서 도출하는 고객 충성도 지표다. 응답자를 추천자(Promoter, 9~10점)·중립자(Passive, 7~8점)·비방자(Detractor, 0~6점)로 분류하고, 추천자 비율에서 비방자 비율을 빼 −100~+100 범위의 점수를 산출한다. 2003년 도입된 NPS는 항공사·호텔·크루즈 선사·OTA·투어 운영사 등 여행 산업 전반에서 성장 잠재력과 브랜드 충성도의 대용 지표로 광범위하게 채택되고 있다.",
+      "longDef": "NPS was introduced by Fred Reichheld, Bain & Company, and Satmetrix in a December 2003 Harvard Business Review article (\"The One Number You Need to Grow\"). The methodology posits that Promoters drive organic growth through referrals and repeat business, while Detractors create negative word-of-mouth. In travel, NPS is measured at two levels: Relational NPS (periodic brand-level surveys) and Transactional NPS (measured immediately after a specific touchpoint such as a flight, hotel stay, or shore excursion). Airlines such as Delta and Lufthansa report NPS as a key performance indicator; IATA uses NPS as one measure in its Global Passenger Survey. Hotel brands anchor NPS targets in franchise standards and management contracts, and cruise lines deploy post-cruise surveys to capture turnaround-day NPS. NPS benchmarks vary significantly by travel segment and culture, so raw NPS numbers should be interpreted within a competitive set rather than as absolute good/bad thresholds. NPS has been supplemented or critiqued by alternative metrics such as Customer Effort Score (CES) and Customer Satisfaction Score (CSAT), but it remains the travel industry's most-cited single-number loyalty measure.",
+      "longDef_ko": "NPS는 Fred Reichheld, 베인앤드컴퍼니(Bain & Company), Satmetrix가 2003년 12월 하버드 비즈니스 리뷰 기사(\"The One Number You Need to Grow\")에서 소개했다. 이 방법론은 추천자(Promoter)가 추천과 재구매를 통해 유기적 성장을 이끌고, 비방자(Detractor)는 부정적 구전을 유발한다고 본다. 여행 산업에서 NPS는 두 수준에서 측정된다. 관계형 NPS(정기적 브랜드 수준 설문)와 거래형 NPS(항공편·호텔 투숙·기항지 투어 등 특정 접점 직후 측정)다. 델타·루프트한자 등 항공사는 NPS를 핵심 성과 지표(KPI)로 보고하며, IATA는 글로벌 여객 설문(Global Passenger Survey)에서 NPS를 주요 지표 중 하나로 활용한다. 호텔 브랜드는 프랜차이즈 기준·운영 계약에 NPS 목표치를 명시하고, 크루즈 선사는 출항일(turnaround day) NPS를 파악하기 위해 크루즈 종료 후 설문을 실시한다. NPS 벤치마크는 여행 세분 시장과 문화에 따라 큰 차이가 있으므로, 절댓값보다 경쟁 업체군(competitive set) 내에서 해석해야 한다. NPS는 고객 노력 점수(CES), 고객 만족도(CSAT) 등 대안 지표로 보완·비판받기도 하지만, 여행 산업에서 가장 많이 인용되는 단일 충성도 지표 자리를 유지하고 있다.",
+      "aliases": [
+        "Net Promoter Score",
+        "NPS Score",
+        "Transactional NPS",
+        "Relational NPS"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Review & UGC",
+          "targetId": "review-ugc"
+        },
+        {
+          "type": "related",
+          "targetTerm": "RFM Segmentation",
+          "targetId": "rfm-segmentation"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Single Customer View",
+          "targetId": "single-customer-view"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Loyalty Tier Status",
+          "targetId": "loyalty-tier-status"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Customer Profile",
+          "targetId": "customer-profile"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Review & UGC",
+          "explanation": "Review & UGC (User-Generated Content) is publicly posted qualitative and star-rating feedback on platforms like TripAdvisor or Google; NPS is a privately surveyed quantitative loyalty score collected by the company directly from customers and used for internal performance measurement and benchmarking rather than public display.",
+          "explanation_ko": "Review & UGC(사용자 생성 콘텐츠)는 트립어드바이저나 구글 같은 플랫폼에 공개적으로 게시된 정성적 및 별점 피드백이고, NPS는 기업이 고객으로부터 직접 수집하는 비공개 정량적 충성도 점수로, 공개 표시보다 내부 성과 측정과 벤치마킹에 사용된다.",
+          "targetId": "review-ugc"
+        },
+        {
+          "targetTerm": "RFM Segmentation",
+          "explanation": "RFM Segmentation groups customers by Recency, Frequency, and Monetary value of past transactions — backward-looking behavioral data; NPS captures the forward-looking likelihood to recommend, making it a predictive attitudinal metric rather than a historical transactional one.",
+          "explanation_ko": "RFM 세분화는 과거 거래의 최근성(Recency)·빈도(Frequency)·금액(Monetary) 기준으로 고객을 묶는 후방 지향적 행동 데이터이고, NPS는 미래 지향적 추천 의향을 포착하는 지표로, 과거 거래 기반 지표가 아닌 예측적 태도 지표다.",
+          "targetId": "rfm-segmentation"
+        }
+      ],
+      "sources": [
+        {
+          "name": "\"The One Number You Need to Grow\"",
+          "org": "Harvard Business Review / Bain & Company",
+          "version": "December 2003",
+          "section": "",
+          "url": "https://hbr.org/2003/12/the-one-number-you-need-to-grow",
+          "tier": "secondary"
+        },
+        {
+          "name": "Net Promoter System — Bain & Company",
+          "org": "Bain & Company",
+          "version": "",
+          "section": "",
+          "url": "https://www.bain.com/consulting-services/customer-strategy-and-marketing/nps-loyalty-forum/",
+          "tier": "secondary"
+        },
+        {
+          "name": "IATA Global Passenger Survey 2023",
+          "org": "IATA",
+          "version": "2023",
+          "section": "",
+          "url": "https://www.iata.org/en/publications/store/global-passenger-survey/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"20\" r=\"12\"/><path d=\"M18 24s2 4 6 4 6-4 6-4\"/><circle cx=\"19.5\" cy=\"18\" r=\"1.5\" fill=\"currentColor\"/><circle cx=\"28.5\" cy=\"18\" r=\"1.5\" fill=\"currentColor\"/><path d=\"M24 32v8M18 38l6-4 6 4\"/></svg>",
+      "term": "Net Promoter Score (NPS)",
+      "definition": "Net Promoter Score (NPS) is a customer loyalty metric derived from a single survey question — \"How likely are you to recommend us to a friend or colleague?\" on a 0–10 scale — that classifies respondents as Promoters (9–10), Passives (7–8), or Detractors (0–6) and calculates the score as the percentage of Promoters minus the percentage of Detractors, yielding a value from −100 to +100. Introduced in 2003, NPS is widely adopted across the travel industry by airlines, hotels, cruise lines, OTAs, and tour operators as a proxy for growth potential and brand loyalty.",
+      "lastReviewed": "2026-07-10"
+    },
+    {
       "id": "net-rate",
       "vertical": "lodging",
       "category": "hotel-dist",
@@ -27710,6 +28008,89 @@
       "term": "Net Yield",
       "definition": "The principal pricing-performance KPI in cruise revenue management: net revenue divided by Available Passenger Cruise Days (APCD). Net revenue is total revenue less the most significant variable costs — travel-agent commissions, air/transportation and other costs, and onboard/other costs — so Net Yield isolates the revenue a cruise line truly keeps per unit of capacity, making it the cruise analogue of hotel RevPAR.",
       "lastReviewed": "2026-06-18"
+    },
+    {
+      "id": "netex",
+      "vertical": "ground",
+      "category": "rail",
+      "conceptType": "standard",
+      "status": "active",
+      "abbreviation": "NeTEx",
+      "term_ko": "네텍스(NeTEx) — 네트워크 시간표 교환 표준",
+      "definition_ko": "NeTEx(Network Timetable Exchange)는 CEN 기술 사양 CEN/TS 16614로, 교통 당국·운영사·여행자 정보 또는 예약 시스템 간 대중교통 네트워크 위상(topology)·예정 시간표·운임 데이터를 교환하기 위한 XML 기반 표준이다. 유럽의 구조화된 철도·대중교통 데이터 공개의 주요 표준으로, 운임 부분(Part 3)은 TAP TSI 및 여러 OSDM 운임 데이터 프로파일의 유통 데이터 요건을 뒷받침한다.",
+      "longDef": "NeTEx is a profile of Transmodel (EN 12896), the European conceptual reference data model for public transport. It is published in five parts: Part 1 (CEN/TS 16614-1) covers network topology (stops, lines, routes, networks, operators); Part 2 (CEN/TS 16614-2) covers scheduled timetables (service journeys, vehicle journeys, passing times); Part 3 (CEN/TS 16614-3) covers fare data (distance-based, zone-based, product/pass structures, discount rules, railcard validities); Part 4 (CEN/TS 16614-4) covers passenger information and accessibility; Part 5 (CEN/TS 16614-5) provides an alternative fare structure profile (NeTEx-FHS). NeTEx has been adopted as the mandatory data format by the European Union for the National Access Point (NAP) datasets required under Commission Delegated Regulation (EU) 2017/1926 (Multimodal Travel Information Services), and by the ERA for TAP TSI fare-data reporting. National implementations include the UK DfT's NeTEx profile for National Rail open data, Norway's ENTUR national public transport data hub, and the Netherlands' KV1/BISON-to-NeTEx migration. OSDM references NeTEx Part 3 fare data types as the exchange format for structured fare data between rail distribution systems.",
+      "longDef_ko": "NeTEx는 유럽 대중교통 개념적 참조 데이터 모델인 Transmodel(EN 12896)의 프로파일이다. 다섯 부분으로 발간된다. Part 1(CEN/TS 16614-1)은 네트워크 위상(정류장·노선·경로·네트워크·운영사), Part 2(CEN/TS 16614-2)는 예정 시간표(서비스 여정·차량 여정·통과 시간), Part 3(CEN/TS 16614-3)은 운임 데이터(거리 기반·구역 기반·상품·패스 구조·할인 규칙·레일카드 유효성), Part 4(CEN/TS 16614-4)는 여객 정보·접근성, Part 5(CEN/TS 16614-5)는 대안 운임 구조 프로파일(NeTEx-FHS)을 다룬다. 유럽연합은 NeTEx를 위원회 위임 규정 (EU) 2017/1926(다중 교통수단 여행 정보 서비스)에 따른 국가접근포인트(NAP) 데이터셋의 필수 데이터 형식으로 채택했으며, ERA도 TAP TSI 운임 데이터 보고에 채택했다. 국가별 구현 사례로는 영국 DfT의 National Rail 개방 데이터용 NeTEx 프로파일, 노르웨이 ENTUR 국가 대중교통 데이터 허브, 네덜란드의 KV1/BISON-to-NeTEx 마이그레이션 등이 있다. OSDM은 철도 유통 시스템 간 구조화된 운임 데이터 교환 형식으로 NeTEx Part 3 운임 데이터 유형을 참조한다.",
+      "standardBody": "CEN",
+      "aliases": [
+        "Network Timetable Exchange",
+        "CEN/TS 16614"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "OSDM",
+          "targetId": "osdm"
+        },
+        {
+          "type": "related",
+          "targetTerm": "TAP TSI",
+          "targetId": "tap-tsi"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Through-Ticketing",
+          "targetId": "through-ticketing"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Railcard",
+          "targetId": "railcard"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "OSDM",
+          "explanation": "OSDM (Open Sales and Distribution Model) is the rail industry API/schema standard governing the sale and distribution of rail products end-to-end (offer, order, fulfilment); NeTEx is a data exchange format for publishing static or scheduled network and fare data from authorities and operators. OSDM references NeTEx Part 3 fare data structures for interoperable fare data exchange, making them complementary rather than competing.",
+          "explanation_ko": "OSDM(Open Sales and Distribution Model)은 철도 상품의 판매·유통 전 과정(제안·주문·이행)을 관장하는 철도 산업 API/스키마 표준이고, NeTEx는 당국·운영사로부터 정적 또는 예정된 네트워크·운임 데이터를 공개하는 데이터 교환 형식이다. OSDM은 상호운용 가능한 운임 데이터 교환을 위해 NeTEx Part 3 운임 데이터 구조를 참조하므로 양자는 경쟁이 아닌 상호 보완 관계다.",
+          "targetId": "osdm"
+        },
+        {
+          "targetTerm": "TAP TSI",
+          "explanation": "TAP TSI (Telematics Applications for Passengers Technical Specification for Interoperability) is the EU regulatory framework mandating data exchange standards for rail passenger systems; NeTEx is one of the specific data formats TAP TSI mandates for fare and timetable data publication. TAP TSI is the regulatory mandate; NeTEx is a technical tool that satisfies part of it.",
+          "explanation_ko": "TAP TSI(여객 텔레매틱스 응용 상호운용성 기술 사양)는 철도 여객 시스템의 데이터 교환 표준을 의무화하는 EU 규제 프레임워크이고, NeTEx는 TAP TSI가 운임 및 시간표 데이터 공개에 의무화하는 구체적인 데이터 형식 중 하나다. TAP TSI는 규제적 의무이고, NeTEx는 그 일부를 충족하는 기술적 도구다.",
+          "targetId": "tap-tsi"
+        }
+      ],
+      "sources": [
+        {
+          "name": "CEN/TS 16614-1:2014 — Public transport — Network and Timetable Exchange (NeTEx) — Part 1: Public transport network topology exchange format",
+          "org": "CEN",
+          "version": "2014",
+          "section": "",
+          "url": "https://www.cen.eu/work/areas/transport/pages/cen-ts-16614.aspx",
+          "tier": "standard-body"
+        },
+        {
+          "name": "Commission Delegated Regulation (EU) 2017/1926 — Multimodal Travel Information Services — NeTEx as mandatory NAP format",
+          "org": "European Commission",
+          "version": "2017",
+          "section": "Annex",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32017R1926",
+          "tier": "regulation"
+        },
+        {
+          "name": "NeTEx — the CEN standard for exchanging Public Transport schedules and related data",
+          "org": "ERA / NeTEx community",
+          "version": "",
+          "section": "",
+          "url": "https://netex-cen.eu/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"5\" y=\"9\" width=\"13\" height=\"9\" rx=\"2\"/><rect x=\"30\" y=\"9\" width=\"13\" height=\"9\" rx=\"2\"/><rect x=\"5\" y=\"30\" width=\"13\" height=\"9\" rx=\"2\"/><rect x=\"30\" y=\"30\" width=\"13\" height=\"9\" rx=\"2\"/><path d=\"M18 13.5h12M18 34.5h12M11.5 18v12M36.5 18v12\"/></svg>",
+      "term": "NeTEx",
+      "definition": "NeTEx (Network Timetable Exchange) is CEN Technical Specification CEN/TS 16614, an XML-based standard for exchanging public transport network topology, scheduled timetable, and fare data between transport authorities, operators, and traveler-information or booking systems. It is the primary European standard for publishing structured rail and public transport data, and its fare part (Part 3) underpins the distribution data requirements of the TAP TSI and several OSDM fare-data profiles.",
+      "lastReviewed": "2026-07-10"
     },
     {
       "id": "newgen-iss",
@@ -37742,6 +38123,97 @@
       "term": "Retail Rate",
       "definition": "The published price a traveler pays for an activity, from which intermediary commission is deducted — as opposed to the operator's net rate.",
       "lastReviewed": "2026-06-25"
+    },
+    {
+      "id": "revenue-integrity",
+      "vertical": "air",
+      "category": "air-shop",
+      "conceptType": "process",
+      "status": "active",
+      "term_ko": "수익 무결성 관리(Revenue Integrity)",
+      "definition_ko": "수익 무결성 관리(Revenue Integrity)는 팬텀 PNR, 반복 예약(churning), 발권 시한(TTL)을 초과해 보유된 미발권 좌석 등 무효·중복·악용 예약을 탐지·제거하는 항공사의 체계적 프로세스다. 이를 통해 재고가 실제 수요를 반영하도록 보장하고, 수익 희석을 방지하며, 실제 고객에 대한 정확한 좌석 가용성을 유지한다.",
+      "longDef": "Revenue Integrity (RI) addresses a core tension in airline distribution: seats are simultaneously held in reservation systems for speculative or abusive purposes while genuine demand is turned away as sold-out. Key RI activities include enforcing Ticketing Time Limits (TTL) — canceling unticketed bookings after the agreed deadline; removing duplicate bookings (the same passenger holding multiple reservations on the same flight); eliminating passive segments placed by intermediaries for informational or space-holding purposes; and detecting \"churning,\" where an agent repeatedly cancels and re-books the same itinerary to reset the TTL and defer payment. Airlines operate automated RI systems (sometimes provided by vendors such as Amadeus, PROS, or ATPCO) that scan the PNR database, queue violating bookings for auto-cancel or agent action, and release recovered inventory back to sale. IATA publishes Revenue Integrity guidelines under its Distribution Standards and Passenger Agency Programme, which define permissible booking behaviors and outline BSP-related debit memo triggers for RI violations.",
+      "longDef_ko": "수익 무결성 관리(RI)는 항공사 유통의 핵심 모순을 해결한다. 투기적 또는 악의적 목적으로 예약 시스템에 좌석이 잡혀 있는 동안 실제 수요는 매진으로 거절되는 상황이다. 주요 RI 활동에는 발권 시한(TTL) 집행(합의된 기한 이후 미발권 예약 취소), 중복 예약 제거(동일 항공편에 여러 예약을 보유한 동일 승객), 중간 유통사가 정보 목적 또는 좌석 확보 목적으로 입력한 패시브 세그먼트 제거, 그리고 \"처닝(churning)\" 탐지(대리점이 발권과 결제를 미루려고 동일 여정을 반복 취소·재예약하는 행위) 등이 포함된다. 항공사는 Amadeus, PROS, ATPCO 등 공급업체가 제공하는 자동화 RI 시스템을 운영하여 PNR 데이터베이스를 스캔하고, 위반 예약을 자동 취소 또는 상담원 처리 큐로 보내며, 회수된 재고를 판매로 돌린다. IATA는 유통 기준 및 여객 대리점 프로그램 내에서 수익 무결성 지침을 발간하며, 허용 가능한 예약 행위를 정의하고 RI 위반에 대한 BSP 관련 청구 메모(debit memo) 유발 요인을 명시한다.",
+      "standardBody": "IATA",
+      "aliases": [
+        "RI",
+        "Booking Integrity",
+        "PNR Integrity"
+      ],
+      "relationships": [
+        {
+          "type": "broader",
+          "targetTerm": "Revenue Management",
+          "targetId": "revenue-management"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Passive Segment",
+          "targetId": "passive-segment"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Overbooking",
+          "targetId": "overbooking"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Ticketing Time Limit",
+          "targetId": "ticketing-time-limit"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Queue",
+          "targetId": "queue"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Booking Status Code",
+          "targetId": "booking-status-code"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Revenue Management",
+          "explanation": "Revenue Management is the broader discipline of forecasting demand and setting seat availability/price controls to maximize revenue; Revenue Integrity is a specific operational process within that ecosystem that cleans inventory of invalid bookings so that RM controls act on accurate data.",
+          "explanation_ko": "Revenue Management는 수익 극대화를 위해 수요를 예측하고 좌석 가용성·가격 통제를 설정하는 더 넓은 영역이고, Revenue Integrity는 RM 통제가 정확한 데이터에 기반해 작동할 수 있도록 무효 예약으로부터 재고를 정리하는 그 생태계 내의 구체적 운영 프로세스다.",
+          "targetId": "revenue-management"
+        },
+        {
+          "targetTerm": "Overbooking",
+          "explanation": "Overbooking is the deliberate practice of accepting more reservations than physical seats, relying on statistical no-show rates; Revenue Integrity removes phantom and abusive bookings so that the overbooking model is calibrated against real demand rather than artificially inflated reservation counts.",
+          "explanation_ko": "초과예약(Overbooking)은 통계적 노쇼율에 의존하여 물리적 좌석 수보다 많은 예약을 의도적으로 수락하는 관행이고, Revenue Integrity는 오버부킹 모델이 인위적으로 부풀려진 예약 건수가 아닌 실제 수요에 따라 조정될 수 있도록 팬텀·악용 예약을 제거한다.",
+          "targetId": "overbooking"
+        },
+        {
+          "targetTerm": "Passive Segment",
+          "explanation": "A Passive Segment is the booking construct created in the GDS for informational purposes without actually requesting inventory from the airline; Revenue Integrity is the process that identifies and removes passive segments — along with other booking abuses — that hold inventory without genuine intent to travel.",
+          "explanation_ko": "Passive Segment는 실제로 항공사에 재고를 요청하지 않고 GDS에서 정보 목적으로 생성된 예약 구조이고, Revenue Integrity는 실제 여행 의도 없이 재고를 점유하는 패시브 세그먼트를 비롯한 예약 악용 행위를 식별·제거하는 프로세스다.",
+          "targetId": "passive-segment"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Revenue Integrity — IATA Programme Overview",
+          "org": "IATA",
+          "version": "",
+          "section": "",
+          "url": "https://www.iata.org/en/programs/distribution/revenue-integrity/",
+          "tier": "association"
+        },
+        {
+          "name": "Passenger Agency Programme — IATA Resolution 824 (Reservation and Ticketing Practices)",
+          "org": "IATA",
+          "version": "",
+          "section": "",
+          "url": "https://www.iata.org/en/programs/passenger/resolution-824/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 6l14 5v10c0 9-6 16-14 19C16 37 10 30 10 21V11z\"/><polyline points=\"17,24 22,29 31,18\"/></svg>",
+      "term": "Revenue Integrity",
+      "definition": "Revenue Integrity is the systematic airline process of detecting and eliminating invalid, duplicate, or abusive bookings — such as phantom PNRs, churned reservations, and unticketed seats held past their Ticketing Time Limit — to ensure that inventory reflects genuine demand, prevent revenue dilution, and maintain accurate seat availability for real customers.",
+      "lastReviewed": "2026-07-10"
     },
     {
       "id": "revenue-management",
