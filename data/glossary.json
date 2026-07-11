@@ -2,8 +2,8 @@
   "meta": {
     "name": "Travel Wiki",
     "tagline": "여행 산업 용어 백과사전",
-    "generatedAt": "2026-07-10",
-    "entryCount": 541,
+    "generatedAt": "2026-07-11",
+    "entryCount": 547,
     "categoryCount": 20,
     "verticalCount": 6
   },
@@ -5751,6 +5751,92 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "blackout-date",
+      "vertical": "lodging",
+      "category": "hotel-rate",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "블랙아웃 날짜 (Blackout Date)",
+      "definition_ko": "블랙아웃 날짜(blackout date)는 프로모션 요금·할인 운임·로열티 보상 사용·협상 계약 혜택이 명시적으로 제외되어 예약에 적용할 수 없는 특정 날짜 또는 날짜 범위이다. 블랙아웃 날짜는 공휴일·대형 행사·성수기 등 수요가 높을 것으로 예상되는 기간에 인센티브 없이 정가로 판매할 수 있도록 요금 플랜·로열티 프로그램 약관·단체 계약·프로모션 오퍼에 삽입된다.",
+      "longDef": "Blackout dates are a form of rate fencing: the supplier creates a pricing rule that limits access to discounted or incentivised pricing by date, ensuring that the benefit is not available when demand is already strong enough to fill capacity at full price. In hotel revenue management, blackout dates appear in multiple contexts: (1) Loyalty programme award bookings — major hotel chains specify blackout periods (e.g. New Year's Eve, Chinese New Year, major conventions) during which points redemptions are restricted or barred entirely; (2) Corporate negotiated rates — a company's preferred rate may include a schedule of blackout dates (e.g. Formula 1 race weekends, local trade fairs) where the rate reverts to BAR; (3) Package and promotional rates — a \"Book 3 nights, get 1 free\" promotion may exclude peak holiday weeks; (4) OTA and connectivity — blackout dates are transmitted via ARI (Availability, Rates, Inventory) updates through channel managers to OTAs and GDSs, typically by closing the rate plan or applying a minimum-price restriction on those dates. Operationally, a blackout date acts as a date-specific override on an otherwise-open rate plan: it does not close the room to all bookings (that is the function of Stop Sell or Closed to Arrival), but closes that specific discounted or redemption rate only, leaving other rate plans accessible. Revenue managers use blackout calendars as part of their annual yield strategy and review them in conjunction with demand forecasts and the competitive set's rate positioning.",
+      "longDef_ko": "블랙아웃 날짜는 요금 울타리(rate fencing)의 한 형태로, 공급자는 수요가 이미 정가로 채울 수 있을 만큼 강한 시기에 할인 또는 인센티브 가격에 대한 접근을 날짜별로 제한하는 가격 규칙을 만든다. 호텔 수익 관리에서 블랙아웃 날짜는 다양한 맥락에서 나타난다: (1) 로열티 포인트 리딤 예약 — 대형 호텔 체인은 포인트 리딤이 제한되거나 완전히 금지되는 블랙아웃 기간(연말·구정·대형 컨벤션 등)을 명시한다; (2) 기업 협상 요금 — 회사의 우선 요금에 블랙아웃 날짜(예: F1 레이스 주말, 지역 무역 박람회) 일정이 포함되어 해당 날짜에는 BAR로 회귀할 수 있다; (3) 패키지·프로모션 요금 — \"3박 예약 시 1박 무료\" 프로모션이 성수기 주간을 제외할 수 있다; (4) OTA·연결성 — 블랙아웃 날짜는 채널 매니저를 통해 ARI 업데이트로 OTA·GDS에 전달되며, 통상 해당 날짜에 요금 플랜을 마감하거나 최저 가격 제한을 적용하는 방식으로 구현된다. 운영 측면에서 블랙아웃 날짜는 개방 요금 플랜에 날짜별 오버라이드를 적용한다. 객실 자체의 모든 예약을 마감하지는 않고(이는 Stop Sell 또는 CTA의 기능), 해당 특정 할인 또는 리딤 요금만을 닫아 다른 요금 플랜은 계속 이용 가능하게 한다.",
+      "aliases": [
+        "Blackout Dates",
+        "Black-out Date",
+        "Excluded Date",
+        "Closed Date (loyalty)"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Rate Fence",
+          "targetId": "rate-fence"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Rate Plan",
+          "targetId": "rate-plan"
+        },
+        {
+          "type": "contrasts",
+          "targetTerm": "Stop Sell",
+          "targetId": "stop-sell"
+        },
+        {
+          "type": "contrasts",
+          "targetTerm": "Closed to Arrival (CTA)",
+          "targetId": "closed-to-arrival-cta"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Loyalty Tier Status",
+          "targetId": "loyalty-tier-status"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Stop Sell",
+          "explanation": "A Stop Sell closes the property to all new reservations across all or most rate plans, typically in response to a near-capacity situation; a blackout date closes only the specific discounted or redemption rate while leaving the property open at standard/full rates, because demand is high but capacity is not yet exhausted.",
+          "explanation_ko": "Stop Sell은 보통 정원 초과 임박 상황에서 전체 또는 대부분의 요금 플랜에 대한 모든 신규 예약을 마감하는 것이고, 블랙아웃 날짜는 수요가 높지만 아직 정원이 소진되지 않은 상황에서 특정 할인 또는 리딤 요금만 마감하고 표준/정가로는 계속 오픈한다.",
+          "targetId": "stop-sell"
+        },
+        {
+          "targetTerm": "Closed to Arrival (CTA)",
+          "explanation": "Closed to Arrival restricts the ability to begin a stay on that date (guests already in-house may continue); a blackout date restricts the availability of a specific rate or benefit on that date — a guest can still arrive on a blackout date, just not at the blocked rate or with the blocked redemption.",
+          "explanation_ko": "Closed to Arrival은 해당 날짜에 투숙을 시작하는 것을 제한한다(이미 투숙 중인 고객은 계속 이용 가능). 블랙아웃 날짜는 해당 날짜에 특정 요금이나 혜택을 제한하는 것으로, 투숙 자체는 가능하지만 해당 요금이나 리딤은 사용할 수 없다.",
+          "targetId": "closed-to-arrival-cta"
+        },
+        {
+          "targetTerm": "Rate Fence",
+          "explanation": "A rate fence is any condition that controls who can access a discounted rate (advance purchase, non-refundable, minimum stay, membership requirement); a blackout date is a type of rate fence applied to time — it fences the discount off on specific calendar dates rather than by purchase behaviour, channel, or customer attribute.",
+          "explanation_ko": "요금 울타리(rate fence)는 할인 요금에 접근할 수 있는 조건(사전 구매·환불 불가·최소 숙박·회원 자격)을 통제하는 모든 규칙이고, 블랙아웃 날짜는 특정 역일(曆日)에 적용되는 요금 울타리 유형으로, 구매 행동·채널·고객 속성이 아닌 날짜별로 할인을 차단한다.",
+          "targetId": "rate-fence"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Hotel Revenue Management Foundations — Revenue Fencing Techniques",
+          "org": "HSMAI (Hospitality Sales and Marketing Association International)",
+          "version": "",
+          "section": "Rate Restrictions and Blackout Dates",
+          "url": "https://hsmai.org/resource/revenue-management-fundamentals/",
+          "tier": "association"
+        },
+        {
+          "name": "IHG One Rewards Programme Terms and Conditions — Blackout Dates",
+          "org": "IHG (InterContinental Hotels Group)",
+          "version": "",
+          "section": "Award Night Terms",
+          "url": "https://www.ihg.com/content/us/en/global/terms/rewards/award-night.html",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"10\" width=\"32\" height=\"30\" rx=\"3\"/><path d=\"M8 20h32\"/><line x1=\"16\" y1=\"8\" x2=\"16\" y2=\"14\"/><line x1=\"32\" y1=\"8\" x2=\"32\" y2=\"14\"/><line x1=\"18\" y1=\"28\" x2=\"30\" y2=\"38\"/><line x1=\"30\" y1=\"28\" x2=\"18\" y2=\"38\"/></svg>",
+      "term": "Blackout Date",
+      "definition": "A blackout date is a specific date or date range on which a promotional rate, discounted fare, loyalty award redemption, or negotiated contract benefit is explicitly excluded and not available for booking. Blackout dates are inserted into rate plans, loyalty programme terms, group contracts, and promotional offers to protect revenue during periods of high anticipated demand — such as public holidays, major events, or peak travel seasons — when the supplier can sell at full price without incentivising early commitment.",
+      "lastReviewed": "2026-07-11"
+    },
+    {
       "id": "block-space-agreement",
       "vertical": "air",
       "category": "air-partner",
@@ -7640,6 +7726,103 @@
       "lastReviewed": "2026-06-27"
     },
     {
+      "id": "carbon-offset",
+      "vertical": "common",
+      "category": "sustainability",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "탄소 상쇄(Carbon Offset)",
+      "definition_ko": "탄소 상쇄(carbon offset)는 배출자의 자체 운영 외부에서 생성된 검증된 온실가스 1tCO2e(이산화탄소 환산 1미터톤)의 감축·제거·회피를 나타내는 금융 수단으로, 아직 자체적으로 제거하지 못한 배출을 보상하기 위해 구매자가 구입한다. 여행 분야에서 탄소 상쇄는 항공사·호텔·OTA가 여행의 기후 영향을 중화하고자 하는 승객과 고객에게 판매하며, 여행사가 자발적 넷제로(net-zero) 약속을 이행하는 데도 활용된다.",
+      "longDef": "Carbon offsets originate from projects that: reduce emissions (renewable energy replacing fossil fuels, efficient cookstoves), avoid emissions (protected forests under REDD+ schemes), or remove carbon from the atmosphere (reforestation, direct air capture). Each tonne of CO2e reduced, avoided, or removed is issued as a serialised credit and tracked on a public registry to prevent double-counting. Major certification standards include Gold Standard (founded with WWF backing), Verified Carbon Standard (VCS/Verra), and the American Carbon Registry. In international aviation, ICAO's CORSIA scheme uses a specific subset of validated offsets — CORSIA Eligible Emissions Units (EEUs) — to allow airlines to offset their international growth emissions above 2020 baselines; not all voluntary market offsets qualify under CORSIA. In practice there is a quality spectrum: offsets vary significantly in additionality (would the project have happened anyway?), permanence (does the carbon stay stored?), and co-benefits (biodiversity, community impact). Travel industry criticism has intensified around offsets that overstate their impact, particularly from avoided-deforestation projects, so reputable sellers now highlight certification and vintage year. Offsets are a complement to, not a substitute for, primary emissions reductions: most corporate sustainability frameworks (SBTi, Science Based Targets) require companies to reduce absolute emissions first and use offsets only for residual or hard-to-abate emissions. In the travel payment flow, offsets are often bundled as an optional add-on during checkout on airline and OTA booking flows, typically priced per passenger per flight segment based on a CO2 calculation engine.",
+      "longDef_ko": "탄소 상쇄는 다음 프로젝트에서 발생한다: 배출 감축(화석연료를 대체하는 재생에너지, 고효율 조리기), 배출 회피(REDD+ 체계의 보호 산림), 대기 중 탄소 제거(재식림, 직접 공기 포집). tCO2e 감축·회피·제거당 일련번호가 부여된 크레딧이 이중 계산 방지를 위해 공개 레지스트리에 등록된다. 주요 인증 기준으로는 Gold Standard, Verified Carbon Standard(VCS/Verra), American Carbon Registry 등이 있다. 국제 항공에서 ICAO의 CORSIA 제도는 검증된 상쇄 크레딧의 특정 하위 집합인 CORSIA 적격 배출 단위(EEU)를 사용하여 항공사가 2020년 기준 이상의 국제 성장 배출을 상쇄할 수 있게 한다. 실질적으로 탄소 상쇄는 품질 스펙트럼이 넓어, 추가성(프로젝트가 없어도 발생했을까?), 영속성(탄소가 계속 저장되는가?), 공동 이익(생물다양성·지역사회 영향) 면에서 크게 차이가 난다. 상쇄는 배출 감축의 보완재이지 대체재가 아니며, SBTi 등 기업 지속가능성 체계는 절대 배출량 감축을 먼저 요구하고 잔여 또는 감축 곤란 배출에만 상쇄를 사용하도록 한다.",
+      "standardBody": "ICAO; Gold Standard; Verra",
+      "aliases": [
+        "Carbon Offset",
+        "Carbon Credit",
+        "Voluntary Carbon Credit",
+        "CO2 Offset",
+        "Emissions Offset",
+        "Carbon Offsetting"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "CORSIA (Carbon Offsetting and Reduction Scheme for International Aviation)",
+          "targetId": "corsia"
+        },
+        {
+          "type": "related",
+          "targetTerm": "CORSIA Eligible Emissions Unit (EEU)",
+          "targetId": "corsia-eligible-emissions-unit-eeu"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Sustainable Aviation Fuel (SAF)",
+          "targetId": "sustainable-aviation-fuel-saf"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Book and Claim",
+          "targetId": "book-and-claim"
+        },
+        {
+          "type": "contrasts",
+          "targetTerm": "Mass Balance (MB)",
+          "targetId": "mass-balance-mb"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "CORSIA Eligible Emissions Unit (EEU)",
+          "explanation": "An EEU is a carbon offset that has been specifically certified and approved under ICAO's CORSIA criteria for use by airlines to meet their CORSIA compliance obligations; a carbon offset is the broader category of voluntary and compliance market credits — most voluntary carbon offsets do not qualify as EEUs, and EEUs represent a regulatory-grade subset.",
+          "explanation_ko": "EEU는 항공사가 CORSIA 준수 의무를 이행하기 위해 ICAO의 CORSIA 기준에 따라 특별히 인증·승인된 탄소 상쇄이고, 탄소 상쇄는 자발적·준수 시장 크레딧의 더 넓은 범주이다. 대부분의 자발적 탄소 상쇄는 EEU 자격 요건을 충족하지 못하며, EEU는 규제 등급의 하위 집합을 나타낸다.",
+          "targetId": "corsia-eligible-emissions-unit-eeu"
+        },
+        {
+          "targetTerm": "Sustainable Aviation Fuel (SAF)",
+          "explanation": "SAF is an in-sector decarbonisation measure — using lower-carbon fuel in the aircraft itself reduces emissions at the point of combustion; a carbon offset is an out-of-sector financial instrument that compensates for emissions by funding reductions elsewhere. SAF is preferred over offsets by most science-based frameworks because it directly reduces aviation emissions rather than compensating for them.",
+          "explanation_ko": "SAF는 항공기 자체에 저탄소 연료를 사용하여 연소 지점에서 배출을 줄이는 부문 내 탈탄소 수단이고, 탄소 상쇄는 다른 곳에서의 감축에 자금을 지원하여 배출을 보상하는 부문 외 금융 수단이다. SAF는 항공 배출을 보상하는 대신 직접 감축하기 때문에 대부분의 과학 기반 체계에서 상쇄보다 선호된다.",
+          "targetId": "sustainable-aviation-fuel-saf"
+        },
+        {
+          "targetTerm": "Book and Claim",
+          "explanation": "Book and Claim is a certificate-based accounting mechanism for SAF's environmental attributes — it is a method of tracking and transferring the GHG benefit of SAF through supply chains, not an offset instrument. Carbon offsets represent reductions achieved outside the aviation supply chain; Book and Claim represents reductions achieved within it (via SAF) but physically separated from the certificate buyer.",
+          "explanation_ko": "북앤클레임(Book and Claim)은 SAF의 환경적 속성에 대한 증서 기반 회계 메커니즘으로, 공급망을 통해 SAF의 GHG 혜택을 추적·이전하는 방법이며 상쇄 수단이 아니다. 탄소 상쇄는 항공 공급망 외부에서 달성된 감축을 나타내고, 북앤클레임은 공급망 내부(SAF)에서 달성되었지만 증서 구매자와 물리적으로 분리된 감축을 나타낸다.",
+          "targetId": "book-and-claim"
+        }
+      ],
+      "sources": [
+        {
+          "name": "CORSIA — Emissions Offsetting and Carbon Markets",
+          "org": "ICAO",
+          "version": "",
+          "section": "Section 3 — Carbon Offsetting",
+          "url": "https://www.icao.int/environmental-protection/CORSIA/Pages/CORSIA-Offsetting.aspx",
+          "tier": "regulation"
+        },
+        {
+          "name": "Gold Standard — Carbon Credit Certification",
+          "org": "Gold Standard Foundation",
+          "version": "",
+          "section": "",
+          "url": "https://www.goldstandard.org/our-story/gold-standard-offsetting",
+          "tier": "standard-body"
+        },
+        {
+          "name": "VCS Program — Verified Carbon Standard",
+          "org": "Verra",
+          "version": "",
+          "section": "",
+          "url": "https://verra.org/programs/verified-carbon-standard/",
+          "tier": "standard-body"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 38V24\"/><path d=\"M24 24c-2-8 8-16 14-10-4 2-8 6-8 10\"/><path d=\"M24 30c2-6-8-12-14-6 4 1 8 4 8 6\"/><circle cx=\"24\" cy=\"40\" r=\"2\"/><path d=\"M14 44h20\" stroke-dasharray=\"4,2\"/></svg>",
+      "term": "Carbon Offset",
+      "definition": "A carbon offset is a financial instrument representing a verified reduction, removal, or avoidance of one metric tonne of CO2 or CO2-equivalent greenhouse gas emissions, generated by a project outside the emitter's own operations and purchased to compensate for emissions that the buyer has not yet eliminated. In travel, carbon offsets are sold by airlines, hotels, and OTAs to passengers and guests who wish to neutralise the climate impact of their trips, and are also used by travel companies to meet voluntary net-zero commitments.",
+      "lastReviewed": "2026-07-11"
+    },
+    {
       "id": "card-scheme",
       "vertical": "common",
       "category": "pay",
@@ -8324,6 +8507,87 @@
       "term": "Chargeback Reason Code",
       "definition": "A chargeback reason code is a standardized alphanumeric identifier assigned by the card networks that classifies why a cardholder is disputing a transaction (for example fraud, processing error, or service not as described) and determines the evidence required and the deadlines for the merchant's response. Each network uses its own scheme, such as Visa's four dispute categories (e.g. category 10 Fraud) and Mastercard's numeric codes (e.g. 4837).",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "charter-flight",
+      "vertical": "air",
+      "category": "air-partner",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "전세기(Charter Flight)",
+      "definition_ko": "전세기(charter flight)는 항공편 전체를 투어 운영사·기업·스포츠팀·정부 등 전세 계약자(charterer)가 독점적으로 계약하여 운항하는 항공기 운영 방식으로, 일반 공중에게 좌석 단위로 판매하는 정기편(scheduled service)과 구별된다. 전세 계약자는 항공사 또는 항공기 운영자와 직접 계약하여 지정 노선·날짜에 항공기를 독점적으로 사용하며, 좌석을 채우는 상업적 위험을 직접 부담한다.",
+      "longDef": "Charter operations are classified by ICAO and national regulators as non-scheduled air transport, subject to separate operating rules from scheduled service. Common charter models include: (1) Inclusive Tour (IT) charters, where a tour operator blocks the aircraft to serve its own holiday packages — historically the backbone of European leisure aviation; (2) Affinity charters, restricted to members of a qualifying group; (3) Public charters sold through travel agents to the general public, subject to special consumer protection rules (e.g. DOT Part 380 in the US); and (4) Private/corporate charters for business or government use. A wet-lease arrangement (ACMI) is closely related but distinct: under ACMI the lessee uses the lessor airline's aircraft, crew, maintenance, and insurance under the lessor's Air Operator Certificate (AOC), whereas in a charter the charterer may contract with an airline that itself operates under its own AOC. Charter operations are key to group travel and leisure tourism, enabling carriers to deploy surplus capacity and tour operators to control cost and scheduling, but they are excluded from most GDS-based scheduled-service distribution and must be sold through direct or package channels. IATA's MITA and interline agreements do not automatically apply to charter flights.",
+      "longDef_ko": "전세 운항은 ICAO 및 각국 규제 당국에 의해 비정기 항공 운송으로 분류되어 정기편과는 별도의 운항 규칙이 적용된다. 주요 전세기 유형으로는 (1) 항공기 전체를 자사 패키지 여행에 사용하는 투어 운영사의 포괄 여행(IT) 전세기 — 역사적으로 유럽 레저 항공의 근간; (2) 자격 요건을 갖춘 그룹 회원으로 제한된 친목 전세기; (3) 미국 DOT Part 380 등 특별 소비자 보호 규정이 적용되어 여행사를 통해 일반 공중에 판매되는 공공 전세기; (4) 기업·정부용 사적/법인 전세기가 있다. 웻 리스(ACMI)는 밀접하게 관련되어 있으나 구별된다. ACMI에서는 임차인이 임대인 항공사의 항공기·승무원·정비·보험을 임대인의 항공운항증명(AOC) 하에 이용하는 반면, 전세기에서 전세 계약자는 자체 AOC 하에 운항하는 항공사와 계약한다. 전세 운항은 단체 여행과 레저 관광의 핵심으로, 항공사가 잉여 공급력을 활용하고 투어 운영사가 비용과 스케줄을 통제할 수 있게 해 주지만, 대부분의 GDS 기반 정기편 유통에서 제외되어 직판 또는 패키지 채널을 통해 판매해야 한다. IATA의 MITA 및 인터라인 협정은 전세기에 자동으로 적용되지 않는다.",
+      "aliases": [
+        "Charter",
+        "Charter Service",
+        "Chartered Flight",
+        "IT Charter",
+        "Inclusive Tour Charter"
+      ],
+      "relationships": [
+        {
+          "type": "contrasts",
+          "targetTerm": "Codeshare",
+          "targetId": "codeshare"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Wet Lease",
+          "targetId": "wet-lease"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Operating Carrier",
+          "targetId": "operating-carrier"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Group PNR",
+          "targetId": "group-pnr"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Interline",
+          "targetId": "interline"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Wet Lease",
+          "explanation": "In a wet lease (ACMI) an airline provides its aircraft, crew, maintenance, and insurance to another airline (the lessee), which operates the flight under its own flight number and commercial responsibility while the lessor retains its AOC; a charter flight is sold commercially by the airline or charterer directly, with the charterer controlling the distribution of seats.",
+          "explanation_ko": "웻 리스(ACMI)에서는 항공사가 자사 항공기·승무원·정비·보험을 다른 항공사(임차인)에게 제공하고, 임차인이 자사 편명 및 상업적 책임 하에 운항하며 임대인이 AOC를 유지한다. 전세기에서는 항공사 또는 전세 계약자가 상업적으로 직접 판매하며, 전세 계약자가 좌석 배분을 통제한다.",
+          "targetId": "wet-lease"
+        },
+        {
+          "targetTerm": "Codeshare",
+          "explanation": "A codeshare places an airline's marketing designator on a scheduled flight operated by a different carrier; a charter flight is not a scheduled service at all — the charterer contracts for the entire aircraft and seat distribution is handled outside standard GDS scheduled-service channels.",
+          "explanation_ko": "공동운항(codeshare)은 다른 항공사가 운항하는 정기편에 판매 항공사의 마케팅 지정자를 부여하는 것이고, 전세기는 정기편이 아니다. 전세 계약자는 항공기 전체를 계약하며, 좌석 배분은 표준 GDS 정기편 채널 밖에서 이루어진다.",
+          "targetId": "codeshare"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Annex 6 to the Convention on International Civil Aviation — Part I (International Commercial Air Transport — Aeroplanes)",
+          "org": "ICAO",
+          "version": "Part I, 12th edition",
+          "section": "Definitions — Non-scheduled flight",
+          "url": "https://www.icao.int/safety/airnavigation/nationalitymarks/annexes_bookmark/annex6.pdf",
+          "tier": "regulation"
+        },
+        {
+          "name": "Public Charter Rule (14 CFR Part 380)",
+          "org": "U.S. Department of Transportation",
+          "version": "",
+          "section": "14 CFR § 380.2 Definitions",
+          "url": "https://www.ecfr.gov/current/title-14/chapter-II/subchapter-A/part-380",
+          "tier": "regulator-guidance"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M7 30l4-9 13-1 8-9h3l-5 10 8-1 4-4h2l-2 6-22 8z\"/><path d=\"M6 36h36\" stroke-dasharray=\"3,3\"/><line x1=\"14\" y1=\"36\" x2=\"14\" y2=\"39\"/><line x1=\"24\" y1=\"36\" x2=\"24\" y2=\"39\"/><line x1=\"34\" y1=\"36\" x2=\"34\" y2=\"39\"/></svg>",
+      "term": "Charter Flight",
+      "definition": "A charter flight is an aircraft operation hired in its entirety by a charterer — typically a tour operator, corporation, sports team, or government — rather than being sold seat-by-seat to the general public as a scheduled service. The charterer contracts directly with the airline or aircraft operator for exclusive use of the aircraft on a specified route and date, bearing the commercial risk of filling the seats themselves.",
+      "lastReviewed": "2026-07-11"
     },
     {
       "id": "city-code",
@@ -17645,6 +17909,89 @@
       "lastReviewed": "2026-06-18"
     },
     {
+      "id": "free-of-charge-place-foc",
+      "vertical": "tours",
+      "category": "tour-commercial",
+      "conceptType": "business-term",
+      "status": "active",
+      "abbreviation": "FOC",
+      "term_ko": "무료 탑승·숙박 자리 (FOC, Free-of-Charge Place)",
+      "definition_ko": "무료 자리(FOC)는 최소 지불 승객 수를 충족시키는 대가로 투어 운영사·단체 주선사·여행사에게 무상으로 제공되는 좌석·객실·선실 침대·입장권이다. \"15명당 1 FOC\" 또는 \"20명당 1 FOC\" 같은 비율로 표현되며, 호텔·코치·크루즈·철도·명소 등 전 분야에서 거래량 확약에 대한 보상과 주선사의 실질 인당 비용 절감을 위한 표준적인 단체 예약 인센티브이다.",
+      "longDef": "FOC places are negotiated in group contracts between suppliers (hotels, tour operators, cruise lines, attractions) and the buyer (tour operator, DMC, travel agent) and recorded as a ratio in the contract terms. The mechanism reduces the effective cost per passenger without changing the published or contracted per-person rate: if a hotel charges USD 100 per room and offers 1 FOC per 15, the operator pays 15 × USD 100 = USD 1,500 for 16 rooms, yielding an effective cost of USD 93.75 per room. The FOC may be used by the organiser to cover the tour director, local guide, driver, or another member of the group, or it may be converted to a cash discount or ancillary credit at the discretion of the organiser and supplier agreement. In hotels, an FOC room is often offered as \"1 complimentary room per X rooms occupied (ROH).\" In cruise, the equivalent concept is operationalised as the Tour Conductor Credit (TC) for airline seats and as an FOC berth or complimentary cabin for the group leader. In coaches, \"1 in 30\" or \"1 in 40\" is common. The FOC ratio is a key lever in the negotiation of confidential tariffs: a deeper FOC ratio may allow a supplier to maintain a higher headline rate while still providing a competitive net cost to the operator. FOC policy varies widely by supplier, season, and market: peak periods may exclude FOC entitlements entirely (effectively functioning as a blackout date for the benefit), or the ratio may be stepped (e.g. 1/15 for 15–30 pax, 1/12 for 31–50 pax).",
+      "longDef_ko": "FOC 자리는 공급자(호텔·투어 운영사·크루즈·명소)와 구매자(투어 운영사·DMC·여행사) 간 단체 계약에서 협상되어 계약 조건에 비율로 기록된다. 이 메커니즘은 공개 또는 계약 인당 요금을 변경하지 않고 실질적인 인당 비용을 낮춘다. 예를 들어 호텔이 USD 100/실에 15명당 1 FOC를 제공하면, 운영사는 16실에 15 × USD 100 = USD 1,500을 지불하여 실당 실효 비용 USD 93.75를 얻는다. FOC는 투어 디렉터·현지 가이드·드라이버 또는 다른 그룹 구성원에 사용되거나, 운영사·공급자 합의에 따라 현금 할인이나 부가 크레딧으로 전환될 수 있다. 호텔에서는 \"X 객실 이용 당 1 무료 객실(ROH)\"로 제공되는 경우가 많다. 크루즈에서는 항공 좌석용으로 Tour Conductor Credit(TC)이, 단체 리더용으로 FOC 선실(complimentary cabin)이 사용된다. 코치에서는 \"30명당 1\" 또는 \"40명당 1\"이 일반적이다. FOC 비율은 비공개 요율 협상의 핵심 레버로, 더 높은 FOC 비율은 공급자가 표제 요금을 유지하면서도 운영사에게 경쟁력 있는 실질 비용을 제공하게 한다. FOC 정책은 공급자·시즌·시장에 따라 크게 다르며, 성수기에는 FOC 자격이 완전히 제외되거나 비율이 단계적으로 조정(예: 15~30명은 1/15, 31~50명은 1/12)되기도 한다.",
+      "aliases": [
+        "FOC",
+        "Free of Charge",
+        "FOC Place",
+        "Complimentary Place",
+        "Comp Place",
+        "1-in-15"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Allocation",
+          "targetId": "allocation"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Confidential Tariff",
+          "targetId": "confidential-tariff"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Markup",
+          "targetId": "markup"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Group Block",
+          "targetId": "group-block"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Tour Conductor Credit (TC)",
+          "targetId": "tour-conductor-credit-tc"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Tour Conductor Credit (TC)",
+          "explanation": "A Tour Conductor Credit is specifically the airline industry's provision of a free or reduced-fare air ticket for the tour conductor or group leader, typically 1 TC per 15 full-fare passengers on international flights per IATA conventions; an FOC place is the broader concept of a complimentary unit of inventory (room, berth, seat, admission) in any travel sector, negotiated in group supplier contracts.",
+          "explanation_ko": "Tour Conductor Credit(TC)는 IATA 관행에 따라 국제선에서 보통 15명의 정규 요금 승객당 1TC 비율로 투어 인솔자나 단체 리더에게 무료 또는 할인 항공권을 제공하는 항공 산업 특유의 제도이고, FOC 자리는 어떤 여행 분야에서든 단체 공급자 계약에서 협상되는 재고 단위(객실·선실·좌석·입장권)의 더 넓은 무료 제공 개념이다.",
+          "targetId": "tour-conductor-credit-tc"
+        },
+        {
+          "targetTerm": "Allocation",
+          "explanation": "An Allocation is a block of inventory pre-committed to a distributor at a contracted rate, which the distributor then sells and pays for (or releases before the cutoff); an FOC place is a specific incentive within that allocation or group contract — a unit that is provided at zero cost once the minimum paying-passenger threshold is met.",
+          "explanation_ko": "배정(Allocation)은 유통사에게 계약 요금으로 사전 확약된 재고 블록으로, 유통사가 판매하고 대금을 지불하거나(또는 마감 전에 반납)하는 것이고, FOC 자리는 해당 배정 또는 단체 계약 내의 구체적인 인센티브로, 최소 지불 승객 기준을 충족하면 무상으로 제공되는 단위이다.",
+          "targetId": "allocation"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Tour Operator and Group Business — Group Contracting Practices",
+          "org": "ATTA (Adventure Travel Trade Association)",
+          "version": "",
+          "section": "Pricing and Incentives — FOC Policy",
+          "url": "https://www.adventuretravelnews.com/",
+          "tier": "association"
+        },
+        {
+          "name": "CLIA Global — Group Cruise Booking Guidelines",
+          "org": "CLIA (Cruise Lines International Association)",
+          "version": "",
+          "section": "Group Amenities and FOC Policy",
+          "url": "https://cruising.org/en-us/travel-agents/resources",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"20\" width=\"28\" height=\"22\" rx=\"2\"/><path d=\"M10 28h28\"/><path d=\"M24 20v22\"/><path d=\"M24 20c0-4-3-6-6-6s-4 3-2 5 8 1 8 1z\"/><path d=\"M24 20c0-4 3-6 6-6s4 3 2 5-8 1-8 1z\"/><circle cx=\"37\" cy=\"13\" r=\"4\"/><line x1=\"35\" y1=\"13\" x2=\"39\" y2=\"13\"/><line x1=\"37\" y1=\"11\" x2=\"37\" y2=\"15\"/></svg>",
+      "term": "Free-of-Charge Place (FOC)",
+      "definition": "A Free-of-Charge (FOC) place is a complimentary seat, room, cabin berth, or admission granted at no cost to a tour operator, group organiser, or travel agent in exchange for delivering a minimum number of paying passengers. Expressed as a ratio such as \"1 FOC per 15 paying\" or \"1 FOC per 20,\" it is a standard group-booking incentive used across hotels, coaches, cruise lines, rail, and attractions to reward volume commitment and reduce the effective per-person cost for the organiser.",
+      "lastReviewed": "2026-07-11"
+    },
+    {
       "id": "frequent-flyer-number",
       "vertical": "common",
       "category": "customer",
@@ -18739,6 +19086,88 @@
       "term": "General Declaration",
       "definition": "A General Declaration (GenDec) is the standard ICAO Annex 9 form submitted by the aircraft commander (or agent) to customs, immigration, and health authorities at each international arrival port. It identifies the aircraft, flight, crew members, and carries declarations covering health, security, and stores — serving as the master arrival document that gates the release of crew, passengers, and cargo.",
       "lastReviewed": "2026-07-02"
+    },
+    {
+      "id": "general-sales-agent-gsa",
+      "vertical": "air",
+      "category": "air-partner",
+      "conceptType": "business-term",
+      "status": "active",
+      "abbreviation": "GSA",
+      "term_ko": "일반 판매 대리점(GSA, General Sales Agent)",
+      "definition_ko": "일반 판매 대리점(GSA)은 항공사가 직접 상업 거점을 두지 않거나 자원이 제한된 특정 지역 시장에서 자사를 대신하여 독점 또는 주요 영업·마케팅 대리인으로 임명한 조직이다. GSA는 해당 항공사의 항공편을 판매·홍보하고, 예약·발권을 처리하며, 여행사와 연락을 취하고, 통상 판매 커미션을 받는 대가로 항공사에 수익을 송금한다.",
+      "longDef": "GSAs are a strategic tool for airlines to achieve market coverage without the fixed costs of establishing a local office with full commercial, operational, and administrative staff. The GSA arrangement is formalised through a dedicated GSA agreement that specifies territory, exclusivity, responsibilities (passenger and/or cargo), commercial targets, commission rate, and the handling of claims. IATA defines a GSA in its Passenger Sales Agency Programme and imposes obligations on airlines appointing them; IATA-accredited GSAs may themselves be authorised to issue tickets on behalf of the airline under the airline's own IATA Numeric Code and TIDS arrangements. GSAs are common where: (a) an airline operates seasonal or charter services but no year-round scheduled routes; (b) the market is strategically important but not large enough to justify a resident sales force; or (c) regulatory barriers or limited bilateral rights restrict direct establishment. In cargo, a Cargo General Sales Agent (CGSA) performs equivalent functions for air freight. A GSA is categorically different from a travel agency: the travel agency is the retailer selling to the end traveller, while the GSA is the airline's wholesale/commercial representative in the market, managing agency relationships on the airline's behalf.",
+      "longDef_ko": "GSA는 항공사가 전임 상업·운영·관리 인력을 갖춘 현지 사무소를 설립하는 고정 비용 없이 시장 커버리지를 달성하는 전략적 수단이다. GSA 약정은 영역, 독점 여부, 책임(여객 및/또는 화물), 상업적 목표, 커미션율, 클레임 처리를 명시하는 전용 GSA 계약으로 공식화된다. IATA는 여객 판매 대리점 프로그램(Passenger Sales Agency Programme)에서 GSA를 정의하고, GSA를 임명하는 항공사에 의무를 부과한다. IATA 공인 GSA는 항공사 자체 IATA 숫자 코드 및 TIDS 약정에 따라 항공사를 대신하여 발권이 승인될 수 있다. GSA는 다음 상황에서 흔히 활용된다: (a) 항공사가 연중 정기 노선 없이 계절·전세 서비스만 운항할 때; (b) 시장이 전략적으로 중요하지만 상주 영업 인력을 정당화할 만큼 크지 않을 때; (c) 규제 장벽이나 제한적 양자 협정으로 직접 설립이 제한될 때. 화물 분야에서는 화물 일반 판매 대리점(CGSA)이 항공 화물에 동등한 기능을 수행한다. GSA는 여행사(end traveller에게 소매 판매)와 근본적으로 다르며, GSA는 항공사의 시장 내 도매/상업 대리인으로 항공사를 대신하여 대리점 관계를 관리한다.",
+      "aliases": [
+        "GSA",
+        "General Sales Agency",
+        "Cargo General Sales Agent",
+        "CGSA",
+        "Airline GSA"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Marketing Carrier",
+          "targetId": "marketing-carrier"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Codeshare",
+          "targetId": "codeshare"
+        },
+        {
+          "type": "related",
+          "targetTerm": "IATA Number",
+          "targetId": "iata-number"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Airline Designator",
+          "targetId": "airline-designator"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Charter Flight",
+          "targetId": "charter-flight"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Marketing Carrier",
+          "explanation": "A marketing carrier is an airline that sells seats under its own designator on a flight operated by another airline (codeshare); a GSA is a third-party organisation that represents an airline in a local market — it is a distribution intermediary, not itself a carrier.",
+          "explanation_ko": "판매 항공사(marketing carrier)는 다른 항공사가 운항하는 항공편에 자사 지정자 코드로 좌석을 판매하는 항공사(공동운항)이고, GSA는 현지 시장에서 항공사를 대리하는 제3자 조직으로, 운송인이 아닌 유통 중개자이다.",
+          "targetId": "marketing-carrier"
+        },
+        {
+          "targetTerm": "Charter Flight",
+          "explanation": "Charter flights are commonly distributed through GSAs in markets without a scheduled service by the operating carrier; the GSA is the distribution channel, while the charter flight is the product it sells.",
+          "explanation_ko": "전세기는 운항 항공사의 정기 노선이 없는 시장에서 흔히 GSA를 통해 유통되며, GSA는 유통 채널이고 전세기는 GSA가 판매하는 상품이다.",
+          "targetId": "charter-flight"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Passenger Sales Agency Programme — General Sales Agent Requirements",
+          "org": "IATA",
+          "version": "",
+          "section": "GSA Definition and Obligations",
+          "url": "https://www.iata.org/en/programs/airline-distribution/gsa/",
+          "tier": "association"
+        },
+        {
+          "name": "IATA Resolution 824r — General Sales Agent",
+          "org": "IATA",
+          "version": "",
+          "section": "Section 1 — Definitions",
+          "url": "https://www.iata.org/en/programs/airline-distribution/passenger-agency-programme/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"15\" cy=\"15\" r=\"6\"/><path d=\"M6 38c0-7 4-12 9-12s9 5 9 12\"/><circle cx=\"34\" cy=\"22\" r=\"7\"/><path d=\"M26 38c0-5 4-9 8-9s8 4 8 9\"/><line x1=\"22\" y1=\"22\" x2=\"27\" y2=\"22\"/></svg>",
+      "term": "General Sales Agent (GSA)",
+      "definition": "A General Sales Agent (GSA) is an organisation appointed by an airline to act as its exclusive or primary sales and marketing representative in a defined geographic market where the airline has no direct commercial presence or only limited resources. The GSA sells and promotes the carrier's flights, handles reservations and ticketing, liaises with travel agencies, and remits revenues to the airline, typically in exchange for a commission on sales.",
+      "lastReviewed": "2026-07-11"
     },
     {
       "id": "ghg-protocol-scope-3-business-travel",
@@ -32940,6 +33369,94 @@
       "term": "Penalty Fee",
       "definition": "A penalty fee is a charge imposed under a fare's rules when a ticket is changed (reissued/exchanged) or cancelled/refunded, over and above any fare difference and taxes. The applicable penalties and conditions are defined in the fare rule, traditionally ATPCO Category 16 (Penalties) and, for automated processing, Category 31 (Voluntary Changes) and Category 33 (Voluntary Refunds).",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "personal-accident-insurance-pai",
+      "vertical": "ground",
+      "category": "car",
+      "conceptType": "business-term",
+      "status": "active",
+      "abbreviation": "PAI",
+      "term_ko": "탑승자 상해 보험(PAI, Personal Accident Insurance)",
+      "definition_ko": "탑승자 상해 보험(PAI)은 렌터카 카운터에서 판매하는 상품으로, 대여 차량과 관련된 충돌·사고로 인한 임차인 및 탑승객의 신체 상해, 사망, 장해에 대해 사고 급부금을 제공한다. 차량 손해를 다루는 충돌 손해 면책(CDW)과 달리 PAI는 재산이 아닌 사람을 대상으로 하는 실제 보험이다.",
+      "longDef": "PAI typically pays a lump-sum benefit for accidental death (AD&D) and may also cover accident-related medical expenses for the renter and all passengers who were in the vehicle at the time of the accident. Coverage limits, eligible beneficiaries, exclusions (e.g. acts of war, driving under the influence, off-road use), and the distinction between single-incident limits and per-person sub-limits vary by country and rental brand. In many markets an equivalent product is sold under the name Personal Accident Cover (PAC). Some travelers already carry equivalent protection through their personal auto or health insurance or through credit card benefit programmes, making PAI genuinely redundant for them — rental companies are required in many jurisdictions to disclose pre-existing coverage options to the renter. The ACRISS Counter Products taxonomy identifies PAI as a separate product code alongside CDW, SLI, TP, and the Excess waiver, so it appears as a distinct line item on rental agreements and is exchanged as such between suppliers, brokers, and booking platforms via OpenTravel vehicle messages.",
+      "longDef_ko": "PAI는 일반적으로 운전자 및 사고 당시 차량에 탑승한 모든 승객에 대해 사망(AD&D) 시 일시금과 사고 관련 의료비를 지급한다. 보상 한도, 수혜 대상, 면책 사항(전쟁 행위, 음주운전, 비포장 주행 등), 사고 건별 한도와 1인당 부한도의 구분은 국가 및 렌털 브랜드마다 다르다. 많은 시장에서 동일한 상품이 Personal Accident Cover(PAC)라는 명칭으로 판매된다. 일부 여행자는 이미 개인 자동차보험, 건강보험 또는 신용카드 부가 혜택을 통해 동등한 보호를 받고 있어 PAI가 실질적으로 중복될 수 있다. 많은 법역에서 렌털 업체는 기존 보장 옵션을 임차인에게 고지해야 한다. ACRISS 카운터 상품 분류 체계는 PAI를 CDW, SLI, TP, 자기부담금 면제와 별도의 상품 코드로 식별하므로, 렌털 계약서에서 독립된 항목으로 표시되며 OpenTravel 차량 메시지를 통해 공급자·브로커·예약 플랫폼 간에 그렇게 교환된다.",
+      "aliases": [
+        "PAI",
+        "Personal Accident Cover",
+        "PAC",
+        "Accidental Death and Disability",
+        "ADD"
+      ],
+      "relationships": [
+        {
+          "type": "parent",
+          "targetTerm": "Rental Agreement",
+          "targetId": "rental-agreement"
+        },
+        {
+          "type": "contrasts",
+          "targetTerm": "Collision Damage Waiver",
+          "targetId": "collision-damage-waiver"
+        },
+        {
+          "type": "contrasts",
+          "targetTerm": "Supplemental Liability Insurance",
+          "targetId": "supplemental-liability-insurance"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Theft Protection",
+          "targetId": "theft-protection-tp"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Excess",
+          "targetId": "excess"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Collision Damage Waiver",
+          "explanation": "CDW (or LDW) waives the renter's financial liability for damage to the rental vehicle itself; PAI is personal injury insurance covering bodily harm, death, and disability for people inside the vehicle. CDW protects the asset; PAI protects the occupants.",
+          "explanation_ko": "CDW(또는 LDW)는 대여 차량 자체에 대한 손해 책임을 면제하고, PAI는 차량 탑승자의 신체 상해·사망·장해를 보장하는 인신 상해 보험이다. CDW는 자산을 보호하고, PAI는 탑승자를 보호한다.",
+          "targetId": "collision-damage-waiver"
+        },
+        {
+          "targetTerm": "Supplemental Liability Insurance",
+          "explanation": "SLI covers the renter's legal liability to third parties (other drivers, pedestrians, property owners) who suffer harm caused by the renter; PAI covers the renter and passengers inside the rented car, regardless of fault.",
+          "explanation_ko": "SLI는 임차인이 야기한 피해를 입은 제3자(다른 운전자, 보행자, 재산 소유자)에 대한 임차인의 법적 배상책임을 보장하고, PAI는 과실 여부와 무관하게 대여 차량 내 임차인과 탑승객을 보장한다.",
+          "targetId": "supplemental-liability-insurance"
+        },
+        {
+          "targetTerm": "Excess",
+          "explanation": "The excess is the out-of-pocket amount a renter pays for vehicle damage even when CDW is in force; PAI has no excess in this sense — it pays the stated benefit directly to the covered person(s) without deducting a prior charge.",
+          "explanation_ko": "자기부담금(excess)은 CDW가 있어도 임차인이 차량 손해에 대해 부담하는 자기 부담 금액이고, PAI에는 이런 의미의 자기부담금이 없다. PAI는 사전 공제 없이 피보험자에게 명시된 급부금을 직접 지급한다.",
+          "targetId": "excess"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Counter Products — ACRISS Code Set",
+          "org": "ACRISS",
+          "version": "",
+          "section": "PAI — Personal Accident Insurance",
+          "url": "https://acriss.org/car-codes/counter-products-codes/",
+          "tier": "association"
+        },
+        {
+          "name": "OpenTravel Vehicle Specification — Vehicle Coverage Types (VCT)",
+          "org": "OpenTravel Alliance",
+          "version": "",
+          "section": "Coverage Type Codes",
+          "url": "https://opentravel.org/download-specs/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 5l15 5v10c0 9-6 16-15 19-9-3-15-10-15-19V10z\"/><circle cx=\"24\" cy=\"17\" r=\"4\"/><path d=\"M16 33c0-5 4-8 8-8s8 3 8 8\"/></svg>",
+      "term": "Personal Accident Insurance (PAI)",
+      "definition": "Personal Accident Insurance (PAI) is a car-rental counter product that provides accident-benefit coverage for the renter and any passengers against bodily injury, death, and disability arising from a collision or accident involving the rented vehicle. Unlike a Collision Damage Waiver, which addresses damage to the vehicle, PAI is true insurance covering people rather than property.",
+      "lastReviewed": "2026-07-11"
     },
     {
       "id": "pms",
