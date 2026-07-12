@@ -2,8 +2,8 @@
   "meta": {
     "name": "Travel Wiki",
     "tagline": "여행 산업 용어 백과사전",
-    "generatedAt": "2026-07-11",
-    "entryCount": 547,
+    "generatedAt": "2026-07-12",
+    "entryCount": 553,
     "categoryCount": 20,
     "verticalCount": 6
   },
@@ -369,6 +369,91 @@
       "term": "3-D Secure",
       "definition": "3-D Secure is a messaging protocol that adds an authentication layer to card-not-present (online) card payments, enabling the issuer to verify the cardholder before authorization. The current generation, EMV 3-D Secure (3DS2), is managed by EMVCo and underpins liability shift and Strong Customer Authentication (SCA) compliance.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "accommodation-tax",
+      "vertical": "lodging",
+      "category": "hotel-rate",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "숙박세(Accommodation Tax)",
+      "definition_ko": "숙박세(Accommodation Tax, 도시세·관광세·침대세·방문자 부담금이라고도 함)는 호텔·서비스 아파트·휴가 임대·호스텔 등 상업적 숙박 시설에 투숙하는 손님에게 부과되어, 숙박 시설이 지방·지역·국가 당국을 대신해 징수하는 정부 의무 부담금이다. 통상 1인 1박당 고정 금액(예: 바르셀로나 호텔 등급에 따라 €3.25~€4.00) 또는 객실 요금의 일정 비율로 부과되며, 부가가치세/소비세(VAT/GST)나 리조트 피(Resort Fee)와 같은 호텔 자체 부과금과는 구별된다.",
+      "longDef": "Accommodation taxes are collected globally under a wide variety of names and structures. Major examples include: Venice and most Italian cities (imposta di soggiorno, €1–€5 per person/night depending on hotel category); Amsterdam (toeristenbelasting, 12.5% of the room rate plus €3 per night from 2024); Barcelona (taxa turística, €3.25–€8.00 for city centre hotels); Paris (taxe de séjour, €0.70–€14.95 depending on accommodation category). Outside Europe, Japan introduced the Tokyo Metropolitan Tax (¥100–¥200 per night) in 2002, and many US cities levy hotel occupancy taxes (e.g., New York City 14.75% plus $3.50 per night). For distribution, accommodation taxes must be clearly itemized in the price breakdown presented to the consumer (mandated by EU consumer rights and price transparency regulations) and are not commissionable. Hotels and OTAs typically display these separately from the room rate as \"taxes and fees\" or \"mandatory local charges\". The prevalence and rate of accommodation taxes have increased significantly since 2015 as cities seek to manage overtourism and fund destination tourism infrastructure, putting the concept at the intersection of hotel distribution, rate parity, and sustainability policy.",
+      "longDef_ko": "숙박세는 전 세계적으로 다양한 명칭과 구조로 징수된다. 주요 예로는 베네치아를 비롯한 이탈리아 대부분의 도시(imposta di soggiorno, 호텔 등급에 따라 1인 1박당 €1~€5), 암스테르담(toeristenbelasting, 2024년부터 객실 요금의 12.5% + 1박당 €3), 바르셀로나(taxa turística, €3.25~€8.00), 파리(taxe de séjour, 숙박 시설 유형에 따라 €0.70~€14.95)가 있다. 유럽 외에도 일본 도쿄(도쿄도 숙박세, 1박당 ¥100~¥200, 2002년 도입), 뉴욕시(호텔 점유세, 14.75% + 1박당 $3.50) 등이 있다. 유통 관점에서 숙박세는 EU 소비자 권리 및 가격 투명성 규정에 따라 소비자에게 제시되는 가격 내역에 명확히 항목별로 표시되어야 하며, 수수료 산정 대상이 아니다. 호텔과 OTA는 일반적으로 이를 객실 요금과 별도로 \"세금 및 수수료\" 또는 \"현지 의무 부과금\"으로 표시한다.",
+      "aliases": [
+        "City Tax",
+        "Tourist Tax",
+        "Bed Tax",
+        "Visitor Levy",
+        "Tourism Levy",
+        "Hotel Occupancy Tax",
+        "Taxe de Séjour",
+        "Toeristenbelasting",
+        "Imposta di Soggiorno"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "ADR",
+          "targetId": "adr"
+        },
+        {
+          "type": "related",
+          "targetTerm": "RevPAR",
+          "targetId": "revpar"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Resort Fee",
+          "targetId": "resort-fee"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Rate Plan",
+          "targetId": "rate-plan"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Overtourism",
+          "targetId": "overtourism"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Resort Fee",
+          "explanation": "A Resort Fee is a mandatory daily charge set by the hotel itself for bundled amenities (Wi-Fi, pool access, fitness centre) and is a commercial decision by the property; an Accommodation Tax is a government-mandated levy that the hotel collects on behalf of a public authority and must remit to that authority — the hotel has no discretion over its imposition or rate.",
+          "explanation_ko": "리조트 피(Resort Fee)는 호텔이 번들 편의시설(Wi-Fi·수영장·피트니스 센터 등)에 대해 자체적으로 설정하는 의무 일일 부과금으로 자산의 상업적 결정이고, 숙박세는 호텔이 공공 기관을 대신해 징수하여 납부해야 하는 정부 의무 부담금으로, 부과 여부와 요율에 대해 호텔은 재량이 없다.",
+          "targetId": "resort-fee"
+        },
+        {
+          "targetTerm": "ADR",
+          "explanation": "ADR (Average Daily Rate) is the average revenue earned per occupied room and represents room revenue only; an Accommodation Tax is a pass-through government levy excluded from ADR and RevPAR calculations, as it is not revenue retained by the hotel.",
+          "explanation_ko": "ADR(평균 일별 요금)은 객실 수익만을 나타내는 점유 객실당 평균 수익이고, 숙박세는 ADR 및 RevPAR 계산에서 제외되는 정부 부과금의 통과 항목으로, 호텔이 보유하는 수익이 아니다.",
+          "targetId": "adr"
+        }
+      ],
+      "sources": [
+        {
+          "name": "European Tourism Association (ETOA) — City Tax Survey",
+          "org": "ETOA (European Tourism Association)",
+          "version": "2024",
+          "section": "",
+          "url": "https://www.etoa.org/reports/city-taxes/",
+          "tier": "association"
+        },
+        {
+          "name": "EU Package Travel Directive 2015/2302 — Price breakdown transparency requirements",
+          "org": "European Union",
+          "version": "2015/2302",
+          "section": "Article 5 (pre-contractual information) and Article 6 (price transparency)",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32015L2302",
+          "tier": "regulation"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 40h36\"/><rect x=\"10\" y=\"20\" width=\"10\" height=\"20\"/><rect x=\"28\" y=\"12\" width=\"10\" height=\"28\"/><path d=\"M15 20v-6l9-8 9 8\"/><circle cx=\"24\" cy=\"8\" r=\"3\"/></svg>",
+      "term": "Accommodation Tax",
+      "definition": "An Accommodation Tax (also called a City Tax, Tourist Tax, Bed Tax, or Visitor Levy) is a government-mandated charge levied on guests staying in commercial accommodation — hotels, serviced apartments, vacation rentals, and hostels — collected by the accommodation provider on behalf of a local, regional, or national authority. It is typically expressed as a fixed amount per person per night (e.g., Barcelona €3.25–€4.00 depending on hotel category) or as a percentage of the room rate, and is distinct from VAT/GST and from hotel-set surcharges such as Resort Fees.",
+      "lastReviewed": "2026-07-12"
     },
     {
       "id": "acquirer",
@@ -3793,6 +3878,100 @@
       "term": "AOG",
       "definition": "Aircraft on Ground (AOG) is a term used to indicate that an aircraft is out of service due to an unresolved technical or maintenance fault that prevents it from being dispatched for revenue flight. An AOG declaration triggers priority handling by airline maintenance and supply-chain teams, often requiring emergency sourcing of parts, technicians, or replacement aircraft to minimize operational disruption.",
       "lastReviewed": "2026-07-09"
+    },
+    {
+      "id": "apex-fare",
+      "vertical": "air",
+      "category": "air-shop",
+      "conceptType": "business-term",
+      "status": "active",
+      "abbreviation": "APEX",
+      "term_ko": "사전구매 할인 운임(APEX 운임)",
+      "definition_ko": "APEX 운임(Advance Purchase Excursion Fare)은 출발 전 지정된 일수(보통 7일, 14일 또는 21일) 이전에 항공권을 구매해야 하는 조건으로 저렴한 가격을 제공하는 할인 왕복 항공 운임이다. 표준 조건에는 최소·최대 체류 기간, 스탑오버 제한, 상당한 변경·취소 위약금이 포함된다. 1970년대에 도입된 APEX 운임 논리는 현대의 사전구매 운임 패밀리와 ATPCO Category 14(사전구매) 규정의 개념적 토대를 형성한다.",
+      "longDef": "APEX fares were pioneered by Laker Airways and adopted by US carriers following the US Airline Deregulation Act of 1978, spreading globally as IATA deregulated international tariffs through the 1980s and 1990s. The core pricing principle — larger discounts for earlier purchase commitments — incentivizes advance booking, allows airlines to forecast demand, and fills capacity that would otherwise sell closer to departure at higher prices. In the ATPCO (Airline Tariff Publishing Company) fare rules structure, advance purchase conditions are codified in Category 14 (Advance Purchase): an airline specifies a required \"purchase by\" date or day-count before departure (e.g., \"must purchase 14 days before departure\"), failure of which invalidates the fare. The APEX framework also typically incorporates: Category 6 (Minimum Stay — e.g., must include a Saturday night) and Category 7 (Maximum Stay — e.g., must return within 30 days); Category 3 (Seasonality — blacking out peak periods); and Category 31 (Voluntary Changes — the change fee, or in modern \"Flex\" fares, the waiver). While airlines no longer sell fares literally branded as \"APEX\", the concept remains active in every advance-purchase discount economy fare and is standard in IATA Conditions of Carriage.",
+      "longDef_ko": "APEX 운임은 레이커 에어웨이즈가 선도하였고 1978년 미국 항공 규제 완화법 이후 미국 항공사들이 채택하였으며, 1980~90년대 IATA가 국제 운임을 규제 완화함에 따라 전 세계로 확산되었다. 더 일찍 예약할수록 더 큰 할인을 제공하는 핵심 가격 원리는 사전 예약을 유인하고, 항공사가 수요를 예측하며, 출발 임박 시 더 높은 가격에 판매될 좌석을 미리 채울 수 있게 한다. ATPCO(항공사 요율 게시 회사) 운임 규정 구조에서 사전구매 조건은 Category 14(사전구매)에 코드화되어 있다. APEX 체계에는 또한 Category 6(최소 체류, 예: 토요일 밤 포함 의무), Category 7(최대 체류, 예: 30일 이내 귀환), Category 3(계절성, 성수기 블랙아웃), Category 31(자발적 변경, 변경 수수료 또는 현대 Flex 운임의 면제 조건)이 포함된다. 항공사들이 더 이상 \"APEX\"라는 브랜드명으로 운임을 판매하지 않지만, 이 개념은 모든 사전구매 할인 이코노미 운임에 현재도 유효하며 IATA 운송 약관의 표준이다.",
+      "aliases": [
+        "Advance Purchase Excursion Fare",
+        "Advance Purchase Fare",
+        "APEX",
+        "Super APEX"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Fare Rule",
+          "targetId": "fare-rule"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Fare Basis Code",
+          "targetId": "fare-basis-code"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Blackout Date",
+          "targetId": "blackout-date"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Booking Limit",
+          "targetId": "booking-limit"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Overbooking",
+          "targetId": "overbooking"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Voluntary Changes (ATPCO Category 31)",
+          "targetId": "voluntary-changes-atpco-category-31"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Fare Rule",
+          "explanation": "A Fare Rule is the full set of ATPCO-published conditions (Categories 1–35) that govern when a fare can be sold, changed, or refunded; the APEX Fare is a class of discounted ticket defined by specific values in those rules, most notably Category 14 (Advance Purchase) combined with Category 6 (Minimum Stay) and Category 31 (Voluntary Changes).",
+          "explanation_ko": "Fare Rule은 운임을 언제 판매·변경·환불할 수 있는지를 규율하는 ATPCO 공시 조건(Category 1~35) 전체 집합이고, APEX 운임은 그 규정 중 특히 Category 14(사전구매), Category 6(최소 체류), Category 31(자발적 변경)의 특정 값에 의해 정의되는 할인 항공권의 한 유형이다.",
+          "targetId": "fare-rule"
+        },
+        {
+          "targetTerm": "Fare Basis Code",
+          "explanation": "A Fare Basis Code is the alphanumeric string that uniquely identifies a specific published fare and encodes its class, booking code, and key conditions; an APEX Fare is the broader category of advance-purchase discount fare, of which a particular Fare Basis Code (e.g., \"VLAX14\") is one specific instance with a defined advance-purchase period.",
+          "explanation_ko": "Fare Basis Code는 특정 공시 운임을 고유하게 식별하고 그 등급·예약 코드·주요 조건을 인코딩하는 영숫자 문자열이고, APEX 운임은 특정 사전구매 기간을 가진 특정 Fare Basis Code(예: \"VLAX14\")가 하나의 구체적 사례인 사전구매 할인 운임의 더 넓은 범주이다.",
+          "targetId": "fare-basis-code"
+        }
+      ],
+      "sources": [
+        {
+          "name": "IATA Conditions of Carriage for Passengers and Baggage",
+          "org": "IATA",
+          "version": "",
+          "section": "Article 3 (Tickets/Fares)",
+          "url": "https://www.iata.org/en/programs/passenger/conditions-of-carriage/",
+          "tier": "association"
+        },
+        {
+          "name": "ATPCO — Category 14 (Advance Purchase) Fare Rules",
+          "org": "ATPCO (Airline Tariff Publishing Company)",
+          "version": "",
+          "section": "Fare Rules Category 14",
+          "url": "https://www.atpco.net/learn/what-is-a-fare-rule",
+          "tier": "association"
+        },
+        {
+          "name": "U.S. Department of Transportation — Airline Deregulation History",
+          "org": "U.S. Department of Transportation (DOT)",
+          "version": "",
+          "section": "",
+          "url": "https://www.transportation.gov/testimony/airline-deregulation-act-1978-impact-consumers",
+          "tier": "regulator-guidance"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"10\" width=\"32\" height=\"30\" rx=\"2\"/><line x1=\"8\" y1=\"18\" x2=\"40\" y2=\"18\"/><line x1=\"16\" y1=\"6\" x2=\"16\" y2=\"14\"/><line x1=\"32\" y1=\"6\" x2=\"32\" y2=\"14\"/><path d=\"M14 26h6v6h-6z\"/><line x1=\"26\" y1=\"26\" x2=\"34\" y2=\"26\"/><line x1=\"26\" y1=\"32\" x2=\"32\" y2=\"32\"/></svg>",
+      "term": "APEX Fare",
+      "definition": "An APEX Fare (Advance Purchase Excursion Fare) is a discounted round-trip airfare that requires the traveler to purchase the ticket a specified number of days before the outbound departure — typically 7, 14, or 21 days — in exchange for a lower price. Standard conditions include minimum and maximum stay requirements, restricted stopovers, and substantial change or cancellation penalties. Introduced in the 1970s, APEX fare logic forms the conceptual foundation of modern advance-purchase fare families and ATPCO Category 14 (advance purchase) rules.",
+      "lastReviewed": "2026-07-12"
     },
     {
       "id": "arc",
@@ -11864,6 +12043,88 @@
       "definition": "The latest point before an activity's start at which a booking can still be made — the sales deadline, often expressed as a minimum lead time.",
       "lastReviewed": "2026-06-24",
       "distinctions": []
+    },
+    {
+      "id": "cute",
+      "vertical": "common",
+      "category": "standards",
+      "conceptType": "standard",
+      "status": "active",
+      "abbreviation": "CUTE",
+      "term_ko": "공용 터미널 장비(CUTE)",
+      "definition_ko": "CUTE(Common Use Terminal Equipment)는 여러 항공사가 전용 하드웨어나 소프트웨어를 각 장치에 설치하지 않고도 동일한 체크인 카운터, 탑승구 단말기, 셀프서비스 키오스크를 공동으로 사용할 수 있도록 하는, 공유 인프라 모델을 정의한 IATA 표준(권고 관행 1797)이다. 항공사 애플리케이션은 공항 소유의 워크스테이션에 있는 중앙 미들웨어 레이어를 통해 연결되어, 공항이 수 분 내에 한 항공사에서 다른 항공사로 카운터를 재배정할 수 있다.",
+      "longDef": "CUTE was introduced by IATA in the early 1990s as airports grew too large to dedicate counters to individual carriers. The standard specifies the Common Use Passenger Processing System (CUPPS) middleware layer, communication protocols, and the application programming interface (API) through which each airline's check-in or boarding application runs on shared airport hardware. A CUTE workstation displays the correct airline branding and connects to the appropriate Passenger Service System (PSS) or Departure Control System (DCS) when an agent logs in under a specific carrier code. The successor standard CUPPS (Common Use Passenger Processing Systems — IATA RP 1797B) extends CUTE to include self-service kiosks (CUSS — Common Use Self-Service) and biometric gates. CUTE reduces airport capital expenditure and enables flexible gate management, particularly important in multi-carrier terminals and during irregular operations (IROPS).",
+      "longDef_ko": "CUTE는 공항이 개별 항공사에 카운터를 전담 배정하기 어려울 만큼 커진 1990년대 초 IATA가 도입하였다. 이 표준은 각 항공사의 체크인 또는 탑승 애플리케이션이 공유 공항 하드웨어에서 실행되도록 하는 공용 승객 처리 시스템(CUPPS) 미들웨어 레이어, 통신 프로토콜, 애플리케이션 프로그래밍 인터페이스(API)를 규정한다. CUTE 워크스테이션은 에이전트가 특정 항공사 코드로 로그인하면 해당 항공사 브랜딩을 표시하고 적절한 승객 서비스 시스템(PSS) 또는 출발 통제 시스템(DCS)에 연결된다. 후속 표준인 CUPPS(Common Use Passenger Processing Systems — IATA RP 1797B)는 셀프서비스 키오스크(CUSS) 및 생체 인식 게이트를 포함하도록 CUTE를 확장한다. CUTE는 공항의 자본 지출을 줄이고 유연한 게이트 관리를 가능하게 하며, 이는 특히 복수 항공사 터미널과 비정상 운항(IROPS) 시에 중요하다.",
+      "aliases": [
+        "Common Use Terminal Equipment",
+        "CUPPS",
+        "Common Use Passenger Processing Systems",
+        "CUSS",
+        "Common Use Self-Service"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Departure Control System (DCS)",
+          "targetId": "departure-control-system-dcs"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Boarding Pass",
+          "targetId": "boarding-pass"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Passenger Service System (PSS)",
+          "targetId": "passenger-service-system-pss"
+        },
+        {
+          "type": "related",
+          "targetTerm": "GDS",
+          "targetId": "gds"
+        },
+        {
+          "type": "related",
+          "targetTerm": "IATA One ID",
+          "targetId": "iata-one-id"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Departure Control System (DCS)",
+          "explanation": "A DCS (Departure Control System) is the airline application that performs the check-in, seat assignment, boarding, and load-control functions — the operational software; CUTE is the shared airport hardware and middleware standard that hosts and connects that DCS application (and those of other airlines) on common airport equipment.",
+          "explanation_ko": "DCS(출발 통제 시스템)는 체크인·좌석 배정·탑승·로드 컨트롤 기능을 수행하는 항공사 애플리케이션, 즉 운영 소프트웨어이고, CUTE는 그 DCS 애플리케이션(및 다른 항공사의 애플리케이션)을 공통 공항 장비에서 호스팅하고 연결하는 공유 공항 하드웨어·미들웨어 표준이다.",
+          "targetId": "departure-control-system-dcs"
+        },
+        {
+          "targetTerm": "Passenger Service System (PSS)",
+          "explanation": "A PSS is the airline's reservation and inventory management system (the source of booking data and seat availability); CUTE is the airport check-in counter infrastructure that the PSS connects through when a passenger presents at the counter.",
+          "explanation_ko": "PSS는 예약 데이터와 좌석 가용성의 원천인 항공사의 예약·인벤토리 관리 시스템이고, CUTE는 승객이 카운터에 나타났을 때 PSS가 연결되는 공항 체크인 카운터 인프라이다.",
+          "targetId": "passenger-service-system-pss"
+        }
+      ],
+      "sources": [
+        {
+          "name": "IATA Recommended Practice 1797 — Common Use Terminal Equipment (CUTE)",
+          "org": "IATA",
+          "version": "RP 1797 / RP 1797B (CUPPS)",
+          "section": "",
+          "url": "https://www.iata.org/en/programs/airport/common-use/cute/",
+          "tier": "association"
+        },
+        {
+          "name": "ACI World — Common Use Airport Infrastructure Guide",
+          "org": "ACI World (Airports Council International)",
+          "version": "",
+          "section": "",
+          "url": "https://aci.aero/2016/02/01/aci-world-common-use-passenger-processing-systems-cupps-standards/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"10\" width=\"32\" height=\"22\" rx=\"2\"/><line x1=\"16\" y1=\"32\" x2=\"16\" y2=\"38\"/><line x1=\"32\" y1=\"32\" x2=\"32\" y2=\"38\"/><line x1=\"12\" y1=\"38\" x2=\"36\" y2=\"38\"/><line x1=\"14\" y1=\"20\" x2=\"34\" y2=\"20\"/><line x1=\"14\" y1=\"16\" x2=\"22\" y2=\"16\"/><circle cx=\"30\" cy=\"22\" r=\"3\"/></svg>",
+      "term": "CUTE",
+      "definition": "CUTE (Common Use Terminal Equipment) is the IATA standard (Recommended Practice 1797) that defines a shared-infrastructure model for airports, allowing multiple airlines to use the same physical check-in desks, boarding gate readers, and self-service kiosks without installing proprietary hardware or software on each device. Airline applications connect to a central middleware layer on airport-owned workstations, enabling an airport to reassign a counter from one airline to another in minutes.",
+      "lastReviewed": "2026-07-12"
     },
     {
       "id": "cutoff-date",
@@ -20745,6 +21006,87 @@
       "lastReviewed": "2026-06-18"
     },
     {
+      "id": "hotel-management-agreement-hma",
+      "vertical": "lodging",
+      "category": "hotel-dist",
+      "conceptType": "document",
+      "status": "active",
+      "abbreviation": "HMA",
+      "term_ko": "호텔 위탁운영 계약(HMA)",
+      "definition_ko": "호텔 위탁운영 계약(HMA, Hotel Management Agreement)은 호텔 소유주와 전문 운영사 간에 체결하는 계약으로, 운영사는 기본 관리 수수료와 인센티브 관리 수수료를 받는 대가로 소유주를 대신해 호텔의 일상 운영을 담당하고, 소유주는 자산의 법적 소유권을 유지하며 사업의 경제적 위험을 부담한다. HMA는 소유와 운영을 분리하는, 현대 호텔 산업의 핵심 구조적 특징을 이루는 법적 계약 수단이다.",
+      "longDef": "Under a typical HMA, the owner contributes the land, building, fixtures, and initial working capital, while the operator provides brand affiliation (or its own brand), management expertise, distribution systems, loyalty program access, and reservation technology. Key financial terms include: (1) a Base Management Fee, typically 2–3% of total hotel revenues; (2) an Incentive Management Fee (IMF), commonly 8–10% of Gross Operating Profit (GOP) above an owner's priority return threshold; (3) FF&E (Furniture, Fixtures, and Equipment) Reserve contributions. The agreement governs a term of 10–30 years with renewal options, performance tests (usually based on RevPAR against a competitive set), and termination for cause provisions. HMAs are distinct from franchise agreements (where the operator provides only brand access and standards, not active management) and lease agreements (where the operator pays rent and bears all operating risk). The rise of asset-light strategies by major hotel companies has made HMAs and franchise agreements the dominant models, with most major brands managing, rather than owning, their portfolio hotels.",
+      "longDef_ko": "전형적인 HMA에서 소유주는 토지·건물·설비·초기 운전자본을 제공하고, 운영사는 브랜드 제휴(또는 자체 브랜드)·경영 전문성·유통 시스템·로열티 프로그램 접근·예약 기술을 제공한다. 주요 재무 조건으로는 (1) 호텔 총 매출의 통상 2~3%인 기본 관리 수수료, (2) 소유주 우선 수익 기준을 초과하는 총 운영 이익(GOP)의 통상 8~10%인 인센티브 관리 수수료(IMF), (3) FF&E(가구·설비·장비) 적립금이 포함된다. HMA는 10~30년 계약 기간에 갱신 옵션, 실적 테스트(보통 경쟁 셋 대비 RevPAR 기준), 원인에 의한 해지 조항을 규정한다. HMA는 운영사가 브랜드 접근권과 기준만 제공하고 실제 경영은 하지 않는 프랜차이즈 계약, 운영사가 임대료를 납부하고 모든 운영 위험을 부담하는 임대 계약과 구별된다. 주요 호텔 기업의 자산 경량화 전략 확산으로 HMA와 프랜차이즈 계약이 지배적 모델이 되었으며, 대부분의 주요 브랜드는 포트폴리오 호텔을 소유하기보다 운영한다.",
+      "aliases": [
+        "HMA",
+        "Hotel Management Contract",
+        "Management Agreement",
+        "Hotel Operating Agreement"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "PMS",
+          "targetId": "pms"
+        },
+        {
+          "type": "related",
+          "targetTerm": "CRS",
+          "targetId": "crs"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Soft Brand",
+          "targetId": "soft-brand"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Chain Code",
+          "targetId": "chain-code"
+        },
+        {
+          "type": "related",
+          "targetTerm": "RevPAR",
+          "targetId": "revpar"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Soft Brand",
+          "explanation": "A soft brand is a collection or portfolio program offered by a hotel company to independent hotels that want brand affiliation and distribution benefits while retaining their individual identity; an HMA is the management contract under which an operator actively runs a hotel's daily operations on behalf of its owner — the two are distinct contractual and business models, though an operator can manage a soft-brand hotel under an HMA.",
+          "explanation_ko": "소프트 브랜드는 호텔 기업이 독자적 정체성을 유지하면서 브랜드 제휴와 유통 혜택을 원하는 독립 호텔에 제공하는 포트폴리오 프로그램이고, HMA는 운영사가 소유주를 대신해 호텔의 일상 운영을 적극적으로 수행하는 경영 계약이다. 두 모델은 구별되나, 운영사가 HMA에 따라 소프트 브랜드 호텔을 경영할 수 있다.",
+          "targetId": "soft-brand"
+        },
+        {
+          "targetTerm": "RevPAR",
+          "explanation": "RevPAR (Revenue per Available Room) is the primary key performance indicator used in HMA performance tests to evaluate whether an operator is meeting the required return for the owner; an HMA is the contract that defines the performance test thresholds and the consequences of underperformance.",
+          "explanation_ko": "RevPAR(이용 가능 객실당 수익)은 운영사가 소유주에게 필요한 수익을 달성하고 있는지 평가하는 HMA 실적 테스트의 주요 핵심성과지표이고, HMA는 실적 테스트 기준과 미달 시 결과를 정의하는 계약이다.",
+          "targetId": "revpar"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Hotel Management Agreements — Structure, Negotiation, and Key Issues",
+          "org": "American Hotel & Lodging Educational Institute (AHLEI)",
+          "version": "",
+          "section": "",
+          "url": "https://www.ahlei.org/",
+          "tier": "association"
+        },
+        {
+          "name": "Cornell Hospitality Quarterly — The Hotel Management Agreement: Issues and Trends",
+          "org": "Cornell University, Center for Hospitality Research",
+          "version": "",
+          "section": "",
+          "url": "https://scholarship.sha.cornell.edu/chrpubs/",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"6\" width=\"28\" height=\"36\" rx=\"2\"/><line x1=\"16\" y1=\"16\" x2=\"32\" y2=\"16\"/><line x1=\"16\" y1=\"22\" x2=\"32\" y2=\"22\"/><line x1=\"16\" y1=\"28\" x2=\"24\" y2=\"28\"/><path d=\"M28 32l4 4 6-8\" stroke-width=\"2.5\"/></svg>",
+      "term": "Hotel Management Agreement (HMA)",
+      "definition": "A Hotel Management Agreement (HMA) is a contract between a hotel property owner and a professional hotel operator under which the operator manages day-to-day hotel operations on behalf of the owner in return for a base management fee and an incentive management fee, while the owner retains legal ownership of the property and bears the economic risk of the business. The HMA is the legal instrument that separates ownership from operations, a defining structural feature of the modern hotel industry.",
+      "lastReviewed": "2026-07-12"
+    },
+    {
       "id": "hotel-representation-company",
       "vertical": "lodging",
       "category": "hotel-dist",
@@ -22261,6 +22603,104 @@
       "term": "ICAO Long-Term Aspirational Goal (LTAG)",
       "definition": "The ICAO Long-Term Aspirational Goal (LTAG) is the collective intergovernmental commitment by ICAO member states to achieve net-zero carbon emissions for international aviation by 2050, adopted through Resolution A41-21 at the 41st ICAO Assembly in October 2022. It is aspirational rather than legally binding, providing the overarching emissions target that guides policy instruments including CORSIA, SAF mandates, and aircraft efficiency standards.",
       "lastReviewed": "2026-07-06"
+    },
+    {
+      "id": "imo",
+      "vertical": "cruise",
+      "category": "cruise",
+      "conceptType": "standard",
+      "status": "active",
+      "abbreviation": "IMO",
+      "term_ko": "국제해사기구(IMO)",
+      "definition_ko": "국제해사기구(IMO, International Maritime Organization)는 국제 해운의 안전·보안·환경 보호를 규율하는 유엔 전문기구다. 1948년 채택되어 1958년 발효된 IMO 협약에 의해 설립되고 런던에 본부를 두며, 회원국에 구속력 있는 SOLAS(안전), MARPOL(오염), MLC 2006(선원 복지) 등 주요 해사 협약을 채택·관리한다.",
+      "longDef": "IMO currently has 176 member states and 3 associate members. Its work is conducted through five principal committees: the Maritime Safety Committee (MSC), the Marine Environment Protection Committee (MEPC), the Legal Committee, the Technical Co-operation Committee, and the Facilitation Committee. Conventions are adopted by the IMO Assembly and brought into force under the \"tacit acceptance\" procedure, under which an amendment enters into force automatically unless a specified number of contracting parties object within a set period. For the cruise industry, the most consequential IMO conventions are SOLAS (ship construction and life-saving), MARPOL (emissions limits including the 2020 sulphur cap and 2023 GHG strategy), and the ISM Code (safety management systems). IMO also maintains the GISIS (Global Integrated Shipping Information System) database and publishes IMO numbers — unique seven-digit vessel identifiers assigned at time of build and retained for the life of the ship.",
+      "longDef_ko": "IMO는 현재 176개 회원국과 3개 준회원을 보유한다. 업무는 해사안전위원회(MSC), 해양환경보호위원회(MEPC), 법률위원회, 기술협력위원회, 원활화위원회 등 5개 주요 위원회에서 수행된다. 협약은 IMO 총회에서 채택되고 \"묵시적 수락\" 절차에 따라 발효되는데, 지정된 수의 당사국이 정해진 기간 내에 이의를 제기하지 않으면 개정안이 자동으로 발효된다. 크루즈 산업에 가장 큰 영향을 미치는 IMO 협약은 SOLAS(선박 건조·인명 구조), MARPOL(2020년 황 함량 상한 및 2023년 온실가스 전략을 포함한 배출 한도), ISM 코드(안전 관리 시스템)이다. IMO는 또한 GISIS(전 세계 통합 해운 정보 시스템) 데이터베이스를 관리하며, 건조 시 부여되어 선박 존속 기간 내내 유지되는 고유 7자리 선박 식별 번호인 IMO 번호를 발급한다.",
+      "aliases": [
+        "International Maritime Organization",
+        "IMO Convention"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "SOLAS",
+          "targetId": "solas"
+        },
+        {
+          "type": "related",
+          "targetTerm": "MARPOL",
+          "targetId": "marpol"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Carbon Intensity Indicator (CII)",
+          "targetId": "carbon-intensity-indicator-cii"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Energy Efficiency Existing Ship Index (EEXI)",
+          "targetId": "eexi"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Maritime Labour Convention 2006 (MLC 2006)",
+          "targetId": "mlc-2006"
+        },
+        {
+          "type": "related",
+          "targetTerm": "CLIA (Cruise Lines International Association)",
+          "targetId": "clia"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "SOLAS",
+          "explanation": "IMO is the United Nations agency that develops and administers international maritime conventions; SOLAS is one specific convention adopted under IMO's auspices governing ship safety standards.",
+          "explanation_ko": "IMO는 국제 해사 협약을 개발·관리하는 유엔 기구이고, SOLAS는 선박 안전 기준을 규율하는, IMO 주관 하에 채택된 하나의 특정 협약이다.",
+          "targetId": "solas"
+        },
+        {
+          "targetTerm": "MARPOL",
+          "explanation": "IMO is the regulatory body that promulgates international shipping rules; MARPOL is the specific IMO convention addressing prevention of marine and atmospheric pollution from ships.",
+          "explanation_ko": "IMO는 국제 해운 규칙을 공포하는 규제 기구이고, MARPOL은 선박으로 인한 해양 및 대기 오염 방지를 다루는 특정 IMO 협약이다.",
+          "targetId": "marpol"
+        },
+        {
+          "targetTerm": "CLIA (Cruise Lines International Association)",
+          "explanation": "IMO is a United Nations intergovernmental body that sets mandatory international standards binding on flag states; CLIA is a private industry trade association that represents cruise lines and advocates before regulators, including IMO.",
+          "explanation_ko": "IMO는 기국(flag state)에 구속력 있는 국제 기준을 정하는 유엔 정부간 기구이고, CLIA는 선사를 대표하며 IMO를 포함한 규제 기관에 로비하는 민간 산업 무역협회다.",
+          "targetId": "clia"
+        }
+      ],
+      "sources": [
+        {
+          "name": "IMO — About IMO",
+          "org": "IMO",
+          "version": "",
+          "section": "",
+          "url": "https://www.imo.org/en/About/Pages/Default.aspx",
+          "tier": "standard-body"
+        },
+        {
+          "name": "IMO Convention on the International Maritime Organization, 1948 (as amended)",
+          "org": "IMO",
+          "version": "1948 (consolidated)",
+          "section": "",
+          "url": "https://www.imo.org/en/About/Conventions/Pages/Convention-on-the-International-Maritime-Organization.aspx",
+          "tier": "standard-body"
+        },
+        {
+          "name": "CLIA — Regulatory Framework overview",
+          "org": "CLIA (Cruise Lines International Association)",
+          "version": "",
+          "section": "",
+          "url": "https://cruising.org/en/research-and-advocacy/regulatory/safety",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"12\" r=\"5\"/><line x1=\"24\" y1=\"17\" x2=\"24\" y2=\"38\"/><path d=\"M15 22h18\"/><path d=\"M12 38c3-3 7-4 12-4s9 1 12 4\"/><path d=\"M8 38h32\"/></svg>",
+      "term": "IMO",
+      "definition": "The International Maritime Organization (IMO) is the United Nations specialized agency responsible for regulating international shipping for safety, security, and environmental protection. Established by the IMO Convention (adopted 1948, entered into force 1958) and headquartered in London, IMO adopts and administers the primary maritime conventions binding on its member states, including SOLAS (safety), MARPOL (pollution), and the MLC 2006 (seafarer welfare).",
+      "lastReviewed": "2026-07-12"
     },
     {
       "id": "instant-confirmation",
@@ -25431,6 +25871,94 @@
       "term": "Markup",
       "definition": "The amount a reseller adds on top of an operator's net rate to set its retail price, forming the reseller's margin under a net-rate model.",
       "lastReviewed": "2026-06-25"
+    },
+    {
+      "id": "marpol",
+      "vertical": "cruise",
+      "category": "cruise",
+      "conceptType": "regulation",
+      "status": "active",
+      "abbreviation": "MARPOL",
+      "term_ko": "선박오염방지국제협약(MARPOL)",
+      "definition_ko": "MARPOL(선박으로 인한 오염 방지를 위한 국제협약, 1973/1978)은 선박 운항으로 인한 해양 및 대기 오염을 방지하는 구속력 있는 전 세계 기준을 정한 IMO 조약이다. 6개의 부속서는 기름 배출(I), 유해 액체 물질(II), 포장 유해 화물(III), 하수(IV), 쓰레기(V), 대기 배출(VI)을 다룬다. 부속서 VI은 크루즈 산업에 가장 큰 영향을 미치며, 전 세계 황산화물·질소산화물 배출 한도를 정하고 탄소집약도지표(CII)를 포함한 IMO 온실가스 감축 전략의 틀을 제공한다.",
+      "longDef": "MARPOL was originally adopted in 1973 and substantially amended by the 1978 Protocol (hence \"73/78\"). It entered into force in 1983 and is in force for over 160 flag states covering more than 99% of the world's merchant shipping tonnage. Annex VI (Regulations for the Prevention of Air Pollution from Ships), adopted in 1997 and in force since 2005, is the most rapidly evolving annex for the cruise sector. Key requirements include: (1) the global 0.50% m/m sulphur cap on fuel oil (in force 1 January 2020) and the stricter 0.10% cap in Emission Control Areas (ECAs) such as the Baltic Sea, North Sea, and North American ECA; (2) NOx Tier III limits in NOx ECAs for new ships; (3) the Energy Efficiency Design Index (EEDI) for new ships (Regulation 20) and the Ship Energy Efficiency Management Plan (SEEMP) for all ships (Regulation 22); and (4) the Carbon Intensity Indicator (CII) and annual rating system (in force 1 January 2023). MARPOL amendments are adopted by the MEPC (Marine Environment Protection Committee) of IMO.",
+      "longDef_ko": "MARPOL은 원래 1973년에 채택되어 1978년 의정서로 대폭 개정되어 \"73/78\"로 표기된다. 1983년 발효되었으며, 전 세계 상선 톤수의 99% 이상을 커버하는 160개 이상의 기국에서 발효 중이다. 1997년 채택되어 2005년 발효된 부속서 VI(선박 대기오염 방지 규정)는 크루즈 분야에서 가장 빠르게 발전하는 부속서다. 주요 요건은 다음과 같다: (1) 전 세계 선박 연료유 황 함량 0.50% m/m 상한(2020년 1월 1일 발효)과 발트해·북해·북미 ECA 등 배출통제구역(ECA) 내 0.10% 강화 상한; (2) 신조선에 대한 NOx ECA 내 NOx 티어 III 한도; (3) 신조선 에너지효율설계지수(EEDI, 규정 20) 및 모든 선박의 선박에너지효율관리계획(SEEMP, 규정 22); (4) 탄소집약도지표(CII) 및 연간 등급 시스템(2023년 1월 1일 발효). MARPOL 개정은 IMO의 해양환경보호위원회(MEPC)에서 채택된다.",
+      "aliases": [
+        "International Convention for the Prevention of Pollution from Ships",
+        "MARPOL 73/78",
+        "Annex VI"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "IMO",
+          "targetId": "imo"
+        },
+        {
+          "type": "related",
+          "targetTerm": "SOLAS",
+          "targetId": "solas"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Carbon Intensity Indicator (CII)",
+          "targetId": "carbon-intensity-indicator-cii"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Energy Efficiency Existing Ship Index (EEXI)",
+          "targetId": "eexi"
+        },
+        {
+          "type": "related",
+          "targetTerm": "EU Emissions Trading System (EU ETS)",
+          "targetId": "eu-emissions-trading-system-eu-ets"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "SOLAS",
+          "explanation": "SOLAS (Safety of Life at Sea) governs the physical safety of ships and persons on board — hull construction, fire protection, life-saving appliances, and ship security; MARPOL governs the environmental impact of ship operations, covering oil, chemical, sewage, garbage, and air-emission discharges.",
+          "explanation_ko": "SOLAS(해상 인명 안전)는 선체 건조·화재 방호·인명 구조 설비·선박 보안 등 선박과 탑승자의 물리적 안전을 규율하고, MARPOL은 기름·화학 물질·하수·쓰레기·대기 배출물의 배출을 다루는 선박 운항의 환경적 영향을 규율한다.",
+          "targetId": "solas"
+        },
+        {
+          "targetTerm": "Carbon Intensity Indicator (CII)",
+          "explanation": "CII is the annual operational efficiency rating metric for individual ships, defined under MARPOL Annex VI Regulation 28 and measured in grams of CO2 per cargo-carrying capacity and nautical mile; MARPOL is the overarching international convention under which CII was established and under which its rules are enforced by flag states.",
+          "explanation_ko": "CII는 MARPOL 부속서 VI 규정 28에 따라 정의된 개별 선박의 연간 운항 효율 등급 지표로, CO2 그램/화물 운반 능력/해리로 측정되며, MARPOL은 CII가 수립된 상위 국제 협약으로 기국에 의해 그 규칙이 집행된다.",
+          "targetId": "carbon-intensity-indicator-cii"
+        }
+      ],
+      "sources": [
+        {
+          "name": "MARPOL — International Convention for the Prevention of Pollution from Ships",
+          "org": "IMO",
+          "version": "1973 as amended by Protocol of 1978 (MARPOL 73/78)",
+          "section": "Annex VI (Regulations for the Prevention of Air Pollution from Ships)",
+          "url": "https://www.imo.org/en/About/Conventions/Pages/International-Convention-for-the-Prevention-of-Pollution-from-Ships-(MARPOL).aspx",
+          "tier": "standard-body"
+        },
+        {
+          "name": "IMO — 2020 sulphur limit — cleaner air, healthier planet",
+          "org": "IMO",
+          "version": "",
+          "section": "",
+          "url": "https://www.imo.org/en/MediaCentre/HotTopics/Pages/Sulphur-2020.aspx",
+          "tier": "standard-body"
+        },
+        {
+          "name": "IMO — Carbon Intensity Indicator (CII) and EEXI",
+          "org": "IMO",
+          "version": "",
+          "section": "",
+          "url": "https://www.imo.org/en/OurWork/Environment/Pages/Carbon-Intensity-Indicators.aspx",
+          "tier": "standard-body"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 32h32l-4-12H12z\"/><path d=\"M16 20l2-8h12l2 8\"/><path d=\"M24 12V8\"/><path d=\"M20 8h8\"/><path d=\"M7 38c3-2 6-2 9 0s6 2 9 0 6-2 9 0\"/><path d=\"M20 26c0 0 1 3 4 3s4-3 4-3\"/></svg>",
+      "term": "MARPOL",
+      "definition": "MARPOL (International Convention for the Prevention of Pollution from Ships, 1973/1978) is the IMO treaty that sets binding global standards to prevent marine and atmospheric pollution caused by ship operations. Its six annexes cover oil discharges (I), noxious liquid substances (II), packaged harmful goods (III), sewage (IV), garbage (V), and air emissions (VI). Annex VI is most consequential for the cruise industry: it establishes global sulphur-oxide and nitrogen-oxide emission limits and provides the framework for the IMO GHG reduction strategy, including the Carbon Intensity Indicator (CII).",
+      "lastReviewed": "2026-07-12"
     },
     {
       "id": "married-segment",
