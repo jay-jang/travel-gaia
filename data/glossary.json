@@ -2,8 +2,8 @@
   "meta": {
     "name": "Travel Wiki",
     "tagline": "여행 산업 용어 백과사전",
-    "generatedAt": "2026-07-13",
-    "entryCount": 559,
+    "generatedAt": "2026-07-14",
+    "entryCount": 565,
     "categoryCount": 20,
     "verticalCount": 6
   },
@@ -14832,6 +14832,88 @@
       "lastReviewed": "2026-06-15"
     },
     {
+      "id": "emergency-assistance",
+      "vertical": "common",
+      "category": "insurance",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "긴급 지원 서비스(Emergency Assistance)",
+      "definition_ko": "긴급 지원 서비스(Emergency Assistance)는 대부분의 종합 여행보험에 포함된 24/7/365 실시간 지원 서비스로, 해외에서 위기 상황에 처한 여행자와 즉각적이고 조율된 도움을 연결한다. 의료 사례 관리, 긴급 의료 후송 조율, 분실 서류 교체 안내, 긴급 법률 지원 안내, 본국 송환 물류 등을 포함한다. 금전적 보상과 구별되는 서비스 급부로 운영되며, 일반적으로 보험사가 계약한 전문 어시스턴스 업체가 제공한다.",
+      "longDef": "Emergency assistance is operationally distinct from the insurance policy's financial cover: the insurer underwrites and pays claims, while a 24/7 assistance centre (staffed by multilingual coordinators and medical professionals) takes live calls, assesses situations, and dispatches resources in real time. Core functions include: hospital pre-authorisation to ensure direct payment so the traveler does not front costs; medical evacuation or air ambulance coordination; monitoring and managing hospitalised policyholders; emergency cash advance or bail bond coordination; and arranging repatriation of remains. Assistance companies contracted by insurers include Europ Assistance (Generali), International SOS, Allianz Partners, and AXA Assistance. For travelers, the correct step during a medical emergency is to call the assistance line before seeking treatment whenever possible — not to pay and claim later — because the assistance company can pre-authorise direct billing and arrange the most appropriate care.",
+      "longDef_ko": "긴급 지원 서비스는 운영상 보험의 금전 보상과 구별된다: 보험사는 클레임을 인수·지급하고, 24/7 어시스턴스 센터(다국어 코디네이터와 의료 전문가로 구성)는 실시간 전화를 받아 상황을 평가하고 자원을 배치한다. 핵심 기능에는 여행자가 비용을 선지급하지 않도록 병원 선지급 승인, 의료 후송·항공 앰뷸런스 조율, 입원 보험계약자 모니터링·관리, 긴급 현금 지급이나 보석금 조율, 본국 송환 준비가 포함된다. 보험사가 계약하는 어시스턴스 업체에는 Europ Assistance(Generali), International SOS, Allianz Partners, AXA Assistance 등이 있다. 여행자 관점에서 의료 응급 상황 시 올바른 절차는 가능한 한 진료 전 어시스턴스 라인에 먼저 전화하는 것이다. 나중에 선지급·청구하는 방식보다 어시스턴스 업체가 직접 청구를 승인하고 가장 적절한 의료를 준비할 수 있기 때문이다.",
+      "aliases": [
+        "24/7 Assistance Services",
+        "Emergency Travel Assistance",
+        "Travel Assistance Services",
+        "Concierge Assistance",
+        "Assistance Line",
+        "Emergency Hotline"
+      ],
+      "relationships": [
+        {
+          "type": "child",
+          "targetTerm": "Comprehensive Travel Insurance",
+          "targetId": "comprehensive-travel-insurance"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Emergency Medical Evacuation",
+          "targetId": "emergency-medical-evacuation"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Travel Medical Insurance",
+          "targetId": "travel-medical-insurance"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Trip Cancellation",
+          "targetId": "trip-cancellation"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Trip Interruption",
+          "targetId": "trip-interruption"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Emergency Medical Evacuation",
+          "explanation": "Emergency medical evacuation is the physical act of transporting a critically ill or injured traveler to an appropriate medical facility (including by air ambulance); emergency assistance is the broader 24/7 service umbrella that coordinates the evacuation alongside case management, pre-authorisation, and other non-transport support.",
+          "explanation_ko": "긴급 의료 후송(Emergency Medical Evacuation)은 중증 환자나 부상자를 적절한 의료 시설로 이송하는 물리적 행위(항공 앰뷸런스 포함)이고, 긴급 지원 서비스는 후송 조율 외에도 사례 관리·선지급 승인·기타 비이송 지원을 포함하는 더 넓은 24/7 서비스 영역이다.",
+          "targetId": "emergency-medical-evacuation"
+        },
+        {
+          "targetTerm": "Travel Medical Insurance",
+          "explanation": "Travel medical insurance is the financial product that reimburses or directly pays medical expenses abroad; emergency assistance is the live operational service — the phone line and coordination team — that arranges care and authorises direct payment. A policy can include both: the assistance company arranges treatment and the insurer underwrites the cost.",
+          "explanation_ko": "여행 의료보험(Travel Medical Insurance)은 해외 의료비를 환급하거나 직접 지급하는 금융 상품이고, 긴급 지원 서비스는 의료를 주선하고 직접 지급을 승인하는 실시간 운영 서비스, 즉 전화 창구와 조율 팀이다. 하나의 보험 상품이 두 가지를 모두 포함할 수 있다: 어시스턴스 업체가 치료를 준비하고 보험사가 비용을 인수한다.",
+          "targetId": "travel-medical-insurance"
+        }
+      ],
+      "sources": [
+        {
+          "name": "24-Hour Assistance Service — Travel Insurance Benefit Explained",
+          "org": "U.S. Travel Insurance Association",
+          "version": "",
+          "section": "",
+          "url": "https://www.ustia.org",
+          "tier": "association"
+        },
+        {
+          "name": "International Travel Assistance and Repatriation Services",
+          "org": "International SOS",
+          "version": "",
+          "section": "",
+          "url": "https://www.internationalsos.com",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"18\"/><path d=\"M24 15v9l6 3\"/><line x1=\"10\" y1=\"24\" x2=\"6\" y2=\"24\"/><line x1=\"42\" y1=\"24\" x2=\"38\" y2=\"24\"/><line x1=\"24\" y1=\"6\" x2=\"24\" y2=\"10\"/><line x1=\"24\" y1=\"38\" x2=\"24\" y2=\"42\"/></svg>",
+      "term": "Emergency Assistance",
+      "definition": "Emergency assistance is the 24/7/365 real-time support service included in most comprehensive travel insurance policies that connects travelers with immediate, coordinated help during crises abroad — encompassing medical case management, emergency medical evacuation coordination, lost-document replacement referrals, emergency legal referrals, and repatriation logistics. It operates as a service benefit distinct from financial reimbursement, typically provided through a specialist assistance company retained by the insurer.",
+      "lastReviewed": "2026-07-14"
+    },
+    {
       "id": "emergency-medical-evacuation",
       "vertical": "common",
       "category": "insurance",
@@ -17202,6 +17284,88 @@
       "term": "FIT",
       "definition": "An individually arranged trip for an independent traveler or small party, customized rather than sold as a fixed group departure.",
       "lastReviewed": "2026-06-24"
+    },
+    {
+      "id": "flag-state",
+      "vertical": "cruise",
+      "category": "cruise",
+      "conceptType": "standard-term",
+      "status": "active",
+      "term_ko": "기국(旗國, Flag State)",
+      "definition_ko": "기국(旗國, Flag State)은 선박이 법적으로 등록된 국가로, 선박이 어디를 항해하든 그 나라의 국내법과 국제 해사 의무를 준수해야 한다. 기국은 SOLAS·MARPOL·MLC 2006 등 IMO 협약에서 요구하는 법정 증서 발급과 검사 체계를 통해 자국 선박에 대한 안전·노동·환경 기준 이행을 감독할 책임을 진다.",
+      "longDef": "The legal basis for flag state jurisdiction is Article 91 of UNCLOS (UN Convention on the Law of the Sea), which requires genuine link between the ship and its flag state. In practice, the cruise industry widely uses open registries — commonly called \"flags of convenience\" — in countries such as the Bahamas, Panama, Bermuda, and the Marshall Islands, which offer lower registration costs and tax advantages while still meeting IMO standards. The flag state issues a ship's Certificate of Registry, determines the nationality of the vessel for diplomatic purposes, and bears primary responsibility for flag state control (FSC) inspections. Port state control (PSC) provides an additional layer of inspection in the port country. For travelers, the flag state matters because employment law (including minimum wage and working hours for crew under MLC 2006) and some consumer-protection provisions are governed by the flag state rather than the home country of the cruise line or the port of embarkation.",
+      "longDef_ko": "기국 관할권의 법적 근거는 UNCLOS(유엔 해양법 협약) 제91조로, 선박과 기국 간의 진정한 연결(genuine link)을 요구한다. 실제 크루즈 산업에서는 바하마·파나마·버뮤다·마셜군도 등 개방 등록부(편의치적, flags of convenience)를 광범위하게 이용하며, 이 국가들은 IMO 기준을 충족하면서도 낮은 등록 비용과 세제 혜택을 제공한다. 기국은 선박 등록증(Certificate of Registry)을 발급하고, 외교적 목적에서 선박의 국적을 결정하며, 기국통제(FSC) 검사에 1차적인 책임을 진다. 항만국통제(PSC)는 입항국에서 추가적인 검사 층을 제공한다. 여행자 관점에서 기국은 중요한데, MLC 2006에 따른 승무원의 최저 임금·근로 시간을 포함한 고용법과 일부 소비자 보호 조항이 선사 본국이나 승선항이 아닌 기국의 법률에 의해 규율되기 때문이다.",
+      "standardBody": "IMO",
+      "aliases": [
+        "Flag of Registry",
+        "Flag Country",
+        "Ship Registry State",
+        "Flag of Convenience",
+        "FOC",
+        "Open Registry"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "IMO",
+          "targetId": "imo"
+        },
+        {
+          "type": "related",
+          "targetTerm": "SOLAS",
+          "targetId": "solas"
+        },
+        {
+          "type": "related",
+          "targetTerm": "MARPOL",
+          "targetId": "marpol"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Maritime Labour Convention 2006 (MLC 2006)",
+          "targetId": "mlc-2006"
+        },
+        {
+          "type": "related",
+          "targetTerm": "CLIA (Cruise Lines International Association)",
+          "targetId": "clia"
+        },
+        {
+          "type": "contrasts",
+          "targetTerm": "Cabotage (Maritime)",
+          "targetId": "cabotage"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Cabotage (Maritime)",
+          "explanation": "Cabotage rules restrict which vessels may carry passengers or goods between ports of the same country; flag state is the country of a ship's legal registration that determines which national laws and IMO obligations govern the vessel. A foreign-flagged ship may be cabotage-restricted in a given country's ports regardless of its flag state.",
+          "explanation_ko": "연안수송권(cabotage) 규칙은 같은 나라의 항구 간 승객·화물 운송에 어떤 선박이 허용되는지를 제한하고, 기국은 선박에 적용되는 국내법과 IMO 의무를 결정하는 선박 법적 등록 국가다. 외국 기국의 선박은 기국에 관계없이 특정 국가 항구에서 연안수송권 제한을 받을 수 있다.",
+          "targetId": "cabotage"
+        }
+      ],
+      "sources": [
+        {
+          "name": "UN Convention on the Law of the Sea (UNCLOS), Article 91",
+          "org": "United Nations",
+          "version": "",
+          "section": "Article 91",
+          "url": "https://www.un.org/depts/los/convention_agreements/texts/unclos/unclos_e.pdf",
+          "tier": "regulation"
+        },
+        {
+          "name": "Flag State Implementation",
+          "org": "IMO",
+          "version": "",
+          "section": "",
+          "url": "https://www.imo.org/en/OurWork/MSAS/Pages/FlagStateImplementation.aspx",
+          "tier": "standard-body"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"42\"/><path d=\"M12 10l18 6-18 6z\" fill=\"none\"/><path d=\"M6 40h36\"/><circle cx=\"37\" cy=\"36\" r=\"4\"/></svg>",
+      "term": "Flag State",
+      "definition": "A flag state is the country in which a vessel is legally registered, whose national laws and international maritime obligations the ship must comply with regardless of where it sails. Flag states are responsible for enforcing safety, labour, and environmental standards on vessels flying their flag, acting through inspection regimes and issuing the statutory certificates required by IMO conventions such as SOLAS, MARPOL, and MLC 2006.",
+      "lastReviewed": "2026-07-14"
     },
     {
       "id": "flexible-content-barcode-fcb",
@@ -21277,6 +21441,89 @@
       "term": "Hotel Representation Company",
       "definition": "A hotel representation company is a third party that gives independent hotels GDS and OTA distribution reach—plus voice, sales, and marketing services—typically by placing them under a shared or private-label chain code that they would not have on their own. Examples include Utell, HotelREZ, and Keytel.",
       "lastReviewed": "2026-06-18"
+    },
+    {
+      "id": "hotel-star-classification",
+      "vertical": "lodging",
+      "category": "hotel-rate",
+      "conceptType": "standard-term",
+      "status": "active",
+      "term_ko": "호텔 등급 분류(호텔 스타 등급)",
+      "definition_ko": "호텔 스타 등급은 공인 품질 등급 체계로, 시설·서비스·객실 품질·청결도 등의 평가 기준에 따라 숙박 시설에 1~5성급을 부여한다. 예약 전 품질에 대한 표준화된 기대를 여행자에게 제공하며, 단일 글로벌 관할 기관은 없고 국가별 관광청·호텔 협회(예: 유럽의 Hotelstars Union) 또는 독립 가이드가 등급을 부여하므로 기준과 동등성은 국가별로 다르다.",
+      "longDef": "Star classification serves two primary functions: consumer orientation (helping travelers select a property matching their expectations and budget) and industry benchmarking (enabling rate-setting, contract negotiation, and competitive positioning relative to a defined quality tier). In practice, three major systems coexist: the Hotelstars Union (HSU) system used by most European countries and based on a 270-criterion checklist; national tourist-board systems (e.g. VisitEngland, Atout France); and brand-internal classification used by global hotel groups. In the United States, AAA Diamond Ratings are the most recognised independent classification. For distribution purposes, OTAs and GDS systems carry self-reported star ratings which may differ from official classifications, making property quality classification a persistent accuracy challenge.",
+      "longDef_ko": "스타 등급은 두 가지 주요 기능을 한다: 여행자가 기대와 예산에 맞는 숙소를 선택하도록 돕는 소비자 안내, 그리고 요금 설정·계약 협상·정의된 품질 등급 대비 경쟁 포지셔닝을 가능하게 하는 산업 벤치마킹. 실제로는 세 가지 주요 체계가 공존한다: 대부분의 유럽 국가에서 270개 항목 체크리스트를 기반으로 사용하는 Hotelstars Union(HSU) 체계, 국가별 관광청 체계(예: VisitEngland, Atout France), 그리고 글로벌 호텔 그룹이 사용하는 브랜드 자체 분류. 미국에서는 AAA Diamond Rating이 가장 널리 인정받는 독립 분류이다. 유통 측면에서 OTA와 GDS 시스템은 공식 분류와 다를 수 있는 자체 신고 스타 등급을 표시하므로, 숙박 품질 분류의 정확성은 지속적인 과제다.",
+      "standardBody": "Hotelstars Union",
+      "aliases": [
+        "Star Rating",
+        "Hotel Rating",
+        "Hotel Classification",
+        "Hotel Grading",
+        "Star Category",
+        "AAA Diamond Rating"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Competitive Set",
+          "targetId": "competitive-set"
+        },
+        {
+          "type": "related",
+          "targetTerm": "ADR",
+          "targetId": "adr"
+        },
+        {
+          "type": "related",
+          "targetTerm": "RevPAR",
+          "targetId": "revpar"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Rate Plan",
+          "targetId": "rate-plan"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Dynamic Pricing",
+          "targetId": "dynamic-pricing"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Competitive Set",
+          "explanation": "A competitive set is a hotelier's self-selected group of rival properties used for performance benchmarking (RevPAR, ADR); a hotel star classification is a third-party quality grade applied to a property's facilities and service standard, not its market performance.",
+          "explanation_ko": "경쟁 집합(competitive set)은 성과 벤치마킹(RevPAR, ADR)을 위해 호텔리어가 자체 선정한 경쟁 시설 그룹이고, 호텔 스타 등급은 시장 성과가 아닌 시설·서비스 수준에 대해 제3자가 부여하는 품질 등급이다.",
+          "targetId": "competitive-set"
+        },
+        {
+          "targetTerm": "ADR",
+          "explanation": "ADR (Average Daily Rate) is a financial performance metric measuring the average revenue per occupied room; a star classification is a quality-tier label. A 5-star property may have a lower ADR than a competitor if it discounts heavily, and a 3-star property may post a higher ADR in a supply-constrained market.",
+          "explanation_ko": "ADR(Average Daily Rate)은 판매된 객실당 평균 수익을 측정하는 재무 성과 지표이고, 스타 등급은 품질 등급 레이블이다. 5성급 시설이 가격 할인이 많다면 경쟁사보다 낮은 ADR을 가질 수 있고, 공급이 제한된 시장에서는 3성급 시설이 더 높은 ADR을 기록할 수 있다.",
+          "targetId": "adr"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Hotelstars Union Criteria",
+          "org": "Hotelstars Union",
+          "version": "",
+          "section": "",
+          "url": "https://www.hotelstars.eu/criteria",
+          "tier": "association"
+        },
+        {
+          "name": "Hotel Star Rating Systems — Overview",
+          "org": "HEDNA",
+          "version": "",
+          "section": "",
+          "url": "https://hedna.org",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 6l4.5 9.5 10.5 1.5-7.5 7.5 1.5 10.5L24 30l-9 5 1.5-10.5L9 17l10.5-1.5z\"/></svg>",
+      "term": "Hotel Star Classification",
+      "definition": "Hotel star classification is the official quality-grading system that assigns 1–5 stars to a lodging property based on evaluated criteria such as facilities, services, room quality, and cleanliness, giving travelers a standardised expectation of quality before booking. No single global body governs the system; ratings are issued by national tourism boards, hotel associations (e.g. Hotelstars Union in Europe), or independent guides, so criteria and equivalence vary between countries.",
+      "lastReviewed": "2026-07-14"
     },
     {
       "id": "hotel-switch",
@@ -41293,6 +41540,91 @@
       "lastReviewed": "2026-06-24"
     },
     {
+      "id": "sepa",
+      "vertical": "common",
+      "category": "pay",
+      "conceptType": "standard",
+      "status": "active",
+      "abbreviation": "SEPA",
+      "term_ko": "단일유로결제구역(SEPA)",
+      "definition_ko": "SEPA(Single Euro Payments Area, 단일유로결제구역)는 유럽연합의 유로화 무현금 결제 표준화 프레임워크로, 36개 회원국에서 신용이체·직접출금·즉시이체를 국내 거래와 동일한 규칙으로 처리할 수 있게 한다. 유럽결제위원회(EPC)가 관리하고 유럽중앙은행(ECB)이 감독하며, 유럽 내 여행 산업 B2B 정산을 위한 핵심 은행 인프라다.",
+      "longDef": "SEPA comprises three core payment instruments: SEPA Credit Transfer (SCT) for one-off bank-to-bank transfers, SEPA Direct Debit (SDD) for recurring or single pull payments authorised by mandate, and SEPA Instant Credit Transfer (SCT Inst) for 10-second real-time transfers available 24/7/365. For the travel industry, SEPA eliminates the cost and delay of cross-border euro wire transfers; airlines, OTAs, GDS companies, and hotel chains operating in Europe rely on SEPA to settle B2B invoices, agent remittances, and supplier payables. SEPA coverage includes all EU/EEA countries plus Switzerland, the UK (post-Brexit), Monaco, San Marino, and Andorra — 36 countries in total.",
+      "longDef_ko": "SEPA는 세 가지 핵심 결제 수단으로 구성된다: 1회성 은행 간 이체를 위한 SEPA 신용이체(SCT), 위임장으로 승인된 반복·단일 출금을 위한 SEPA 직접출금(SDD), 24/7/365 10초 실시간 이체를 위한 SEPA 즉시 신용이체(SCT Inst). 여행 산업에서 SEPA는 국경 간 유로화 전신송금의 비용과 지연을 제거한다. 유럽에서 운영하는 항공사, OTA, GDS사, 호텔 체인은 SEPA를 활용해 B2B 인보이스, 에이전트 송금, 공급업체 미지급금을 정산한다. SEPA 대상 국가는 모든 EU/EEA 국가 외에 스위스, 영국(브렉시트 후), 모나코, 산마리노, 안도라를 포함한 총 36개국이다.",
+      "standardBody": "European Payments Council",
+      "aliases": [
+        "Single Euro Payments Area",
+        "SEPA Credit Transfer",
+        "SEPA Direct Debit",
+        "SEPA Instant Credit Transfer",
+        "SCT",
+        "SDD",
+        "SCT Inst"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Strong Customer Authentication",
+          "targetId": "strong-customer-authentication"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Card Scheme",
+          "targetId": "card-scheme"
+        },
+        {
+          "type": "related",
+          "targetTerm": "BSP",
+          "targetId": "bsp"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Settlement Cycle",
+          "targetId": "settlement-cycle"
+        },
+        {
+          "type": "related",
+          "targetTerm": "3-D Secure",
+          "targetId": "3-d-secure"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "BSP",
+          "explanation": "BSP (Billing and Settlement Plan) is IATA's multilateral clearing scheme specific to air-ticket sales by travel agents; SEPA is a pan-European bank-account payment network used for any euro-denominated transfer — including the underlying bank movements that actually settle BSP obligations.",
+          "explanation_ko": "BSP(Billing and Settlement Plan)는 여행사의 항공권 판매에 특화된 IATA의 다자간 청산 체계이고, SEPA는 BSP 채무를 실제로 정산하는 은행 이동을 포함해 모든 유로화 이체에 사용되는 범유럽 은행 계좌 결제망이다.",
+          "targetId": "bsp"
+        },
+        {
+          "targetTerm": "Card Scheme",
+          "explanation": "A card scheme (Visa, Mastercard) is a payment card network defining rules for card-based transactions; SEPA is a bank-account-to-bank-account payment framework covering credit transfers and direct debits, running independently of card schemes.",
+          "explanation_ko": "카드 결제망(Visa, Mastercard)은 카드 기반 거래 규칙을 정의하는 결제 카드 네트워크이고, SEPA는 카드 결제망과 독립적으로 신용이체 및 직접출금을 처리하는 은행 계좌 간 결제 프레임워크다.",
+          "targetId": "card-scheme"
+        }
+      ],
+      "sources": [
+        {
+          "name": "SEPA — Single Euro Payments Area",
+          "org": "European Central Bank",
+          "version": "",
+          "section": "",
+          "url": "https://www.ecb.europa.eu/paym/retail/sepa/html/index.en.html",
+          "tier": "regulator-guidance"
+        },
+        {
+          "name": "SEPA Payment Schemes",
+          "org": "European Payments Council",
+          "version": "",
+          "section": "",
+          "url": "https://www.europeanpaymentscouncil.eu/what-we-do/sepa-payment-schemes",
+          "tier": "standard-body"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"18\"/><path d=\"M31 17c-2-2-4.5-3-7-3-6.5 0-11 5-11 10s4.5 10 11 10c2.5 0 5-1 7-3\"/><line x1=\"14\" y1=\"22\" x2=\"27\" y2=\"22\"/><line x1=\"14\" y1=\"26\" x2=\"27\" y2=\"26\"/></svg>",
+      "term": "SEPA (Single Euro Payments Area)",
+      "definition": "SEPA (Single Euro Payments Area) is the European Union's standardised framework for cashless euro-denominated payments, enabling credit transfers, direct debits, and instant transfers to be executed across 36 member countries under identical rules, as if they were domestic transactions. It is governed by the European Payments Council (EPC) and overseen by the European Central Bank (ECB), and forms the primary bank-account infrastructure for B2B settlement within the travel industry across Europe.",
+      "lastReviewed": "2026-07-14"
+    },
+    {
       "id": "service-type-code",
       "vertical": "common",
       "category": "codes",
@@ -48061,6 +48393,84 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "uic-location-code",
+      "vertical": "common",
+      "category": "codes",
+      "conceptType": "code",
+      "status": "active",
+      "abbreviation": "UIC",
+      "term_ko": "UIC 위치 코드(철도역 코드)",
+      "definition_ko": "UIC 위치 코드는 국제철도연맹(UIC)이 철도역·화물 터미널·기타 운송 거점에 부여하는 7자리 숫자 식별자로, 앞 두 자리는 UIC 국가 코드, 나머지 다섯 자리는 특정 위치를 식별한다. 공식 등록부는 UIC 중앙 참조 파일 데이터베이스(CRD, ENEE라고도 함)이며, 이 코드는 OSDM과 NeTEx를 포함한 유럽 철도 유통 시스템 전반에서 표준 위치 식별자로 사용된다.",
+      "longDef": "UIC location codes underpin rail distribution interoperability: they are the de facto identifiers used in ticket data, timetable exchange (e.g. TAP TSI Annex C), journey planners, and the OSDM open distribution standard for passenger railways. The UIC country code embedded in the first two digits follows a continent-based numbering scheme (e.g. 10–19: Finland/Sweden/Norway; 20–28: France; 80: Germany; 87: France SNCF under legacy numbering). The CRD/ENEE database is updated by UIC member operators and can be queried via the UIC IT portal. In linked-data contexts, the code is exposed as the uic_ref attribute, and in NeTEx documents as a StopPlace identifier. The equivalent for rail companies (not locations) is the RICS code.",
+      "longDef_ko": "UIC 위치 코드는 철도 유통 상호운용성의 기반이다: 발권 데이터, 시각표 교환(예: TAP TSI 부속서 C), 여정 계획기, 여객 철도용 OSDM 개방 유통 표준에서 사실상의 식별자로 사용된다. 앞 두 자리에 내재된 UIC 국가 코드는 대륙 기반 번호 체계를 따른다(예: 10~19: 핀란드/스웨덴/노르웨이; 20~28: 프랑스; 80: 독일; 87: 구 번호 체계의 SNCF 프랑스). CRD/ENEE 데이터베이스는 UIC 회원 운영사가 갱신하고 UIC IT 포털을 통해 조회할 수 있다. 링크드 데이터 환경에서 이 코드는 uic_ref 속성으로, NeTEx 문서에서는 StopPlace 식별자로 노출된다. 철도 회사(위치가 아님)의 동등 코드는 RICS 코드다.",
+      "standardBody": "UIC",
+      "aliases": [
+        "UIC Station Code",
+        "uic_ref",
+        "ENEE Location Code",
+        "CRD Code",
+        "Railway Location Code"
+      ],
+      "relationships": [
+        {
+          "type": "contrasts",
+          "targetTerm": "RICS Code (Company Code)",
+          "targetId": "rics-code"
+        },
+        {
+          "type": "contrasts",
+          "targetTerm": "Station Code",
+          "targetId": "station-code"
+        },
+        {
+          "type": "related",
+          "targetTerm": "NeTEx",
+          "targetId": "netex"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Airport Code",
+          "targetId": "airport-code"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Station Code",
+          "explanation": "The station code in travel-industry parlance is the IATA 3-letter location code identifying an airline's operational presence (airport or city); the UIC location code is the 7-digit numeric identifier for railway stations and freight terminals used across European rail distribution. The two schemes are entirely separate and serve different transport modes.",
+          "explanation_ko": "여행 업계에서 station code는 항공사의 운영 거점(공항 또는 도시)을 식별하는 IATA 3자리 위치 코드이고, UIC 위치 코드는 유럽 철도 유통에서 사용되는 철도역 및 화물 터미널의 7자리 숫자 식별자다. 두 체계는 완전히 별개이며 서로 다른 교통 수단에 적용된다.",
+          "targetId": "station-code"
+        },
+        {
+          "targetTerm": "RICS Code (Company Code)",
+          "explanation": "RICS identifies a rail company or organisation (e.g. a train operating company or distributor); UIC location code identifies a physical place such as a station. The two codes are complementary — a booking system uses the RICS of the TOC and the UIC code of the departure and arrival stations.",
+          "explanation_ko": "RICS는 철도 회사나 조직(예: 열차 운행사 또는 유통사)을 식별하고, UIC 위치 코드는 역과 같은 물리적 장소를 식별한다. 두 코드는 상호 보완적으로, 예약 시스템은 TOC의 RICS와 출발·도착역의 UIC 코드를 함께 사용한다.",
+          "targetId": "rics-code"
+        }
+      ],
+      "sources": [
+        {
+          "name": "UIC Location Codes (ENEE)",
+          "org": "UIC (International Union of Railways)",
+          "version": "",
+          "section": "",
+          "url": "https://uic.org/support-activities/it/location-codes-enee",
+          "tier": "standard-body"
+        },
+        {
+          "name": "TAP TSI — Technical Specification for Interoperability relating to Telematic Applications for Passenger Services",
+          "org": "European Union Agency for Railways",
+          "version": "Commission Regulation (EU) 2023/1695",
+          "section": "Annex C",
+          "url": "https://www.era.europa.eu/domains/interoperability/tap_en",
+          "tier": "regulation"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"30\" width=\"32\" height=\"8\" rx=\"2\"/><path d=\"M14 30V18h20v12\"/><path d=\"M18 18v-6h12v6\"/><line x1=\"24\" y1=\"12\" x2=\"24\" y2=\"6\"/><line x1=\"8\" y1=\"38\" x2=\"8\" y2=\"42\"/><line x1=\"40\" y1=\"38\" x2=\"40\" y2=\"42\"/></svg>",
+      "term": "UIC Location Code",
+      "definition": "A UIC location code is a 7-digit numeric identifier assigned by the International Union of Railways (UIC) to railway stations, freight terminals, and other transport locations, where the first two digits encode the UIC country code and the remaining five identify the specific site. The authoritative register is the UIC Central Reference File Database (CRD), also known as ENEE, and these codes are the standard place-identifiers used across European rail distribution systems including OSDM and NeTEx.",
+      "lastReviewed": "2026-07-14"
+    },
+    {
       "id": "uk-regulation-261",
       "vertical": "common",
       "category": "disruption",
@@ -49586,6 +49996,80 @@
       "definition": "The rules governing what happens when weather prevents an outdoor activity — rebooking, a rain check, or a partial or full refund — a defining concern for adventure and water-based experiences.",
       "lastReviewed": "2026-06-25",
       "distinctions": []
+    },
+    {
+      "id": "weight-and-balance",
+      "vertical": "air",
+      "category": "air-ops",
+      "conceptType": "process",
+      "status": "active",
+      "abbreviation": "W&B",
+      "term_ko": "중량 및 평형(Weight and Balance)",
+      "definition_ko": "중량 및 평형(W&B)은 항공사가 항공기의 총 탑재 중량과 무게중심(CG) 위치를 계산하여 양쪽 모두 항공기 비행 매뉴얼(AFM)에서 정의한 인증된 안전 운용 범위 내에 있는지 확인하는 의무적인 출발 전 절차다. 그 결과물인 로드 시트(load sheet) 또는 로드 앤 트림 시트(load and trim sheet)는 모든 비행 전 기장에게 전달해야 하는 법적 문서다.",
+      "longDef": "Weight and balance calculations involve four key limits: maximum takeoff weight (MTOW), maximum landing weight (MLW), maximum zero fuel weight (MZFW), and the forward/aft CG envelope. Inputs include zero fuel weight of the empty aircraft, passengers and their baggage (using standard or actual weights), cargo and mail, and the fuel uplift plan. The load sheet is produced by the load controller at the airport — or automatically by a DCS integrated with the airline's load planning system — and must be signed off by the captain. ICAO Annex 6 and national authority regulations (e.g. FAA AC 120-27F, EASA standards) mandate the procedure for all commercial air transport operations. Errors in weight and balance are a documented cause of hull loss accidents; the procedure directly affects take-off performance data, including V1/VR/V2 speeds.",
+      "longDef_ko": "중량 및 평형 계산에는 네 가지 핵심 한계치가 관여한다: 최대 이륙 중량(MTOW), 최대 착륙 중량(MLW), 최대 무연료 중량(MZFW), 그리고 전방/후방 CG 한계 범위. 입력값에는 빈 항공기의 무연료 중량, 승객과 수하물(표준 또는 실제 중량 사용), 화물·우편물, 연료 탑재 계획이 포함된다. 로드 시트는 공항의 로드 컨트롤러가 작성하거나 — 항공사 로드 플래닝 시스템과 통합된 DCS가 자동으로 생성하며 — 기장의 확인 서명이 필요하다. ICAO Annex 6 및 각국 항공 당국 규정(예: FAA AC 120-27F, EASA 기준)은 모든 상업 항공 운송 운항에 이 절차를 의무화하고 있다. 중량 및 평형 오류는 항공기 손실 사고의 기록된 원인이며, 이 절차는 V1/VR/V2 속도를 포함한 이륙 성능 데이터에 직접 영향을 미친다.",
+      "standardBody": "ICAO",
+      "aliases": [
+        "W&B",
+        "Load and Balance",
+        "Load Sheet",
+        "Load and Trim Sheet",
+        "CG Calculation",
+        "Aircraft Loading"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Departure Control System (DCS)",
+          "targetId": "departure-control-system-dcs"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Block Time",
+          "targetId": "block-time"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Manifest",
+          "targetId": "manifest"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Departure Control System (DCS)",
+          "explanation": "The Departure Control System (DCS) is the IT platform managing check-in, boarding, and passenger/baggage data at the airport; weight and balance is the safety calculation that the DCS feeds with passenger and baggage data to produce the load sheet. DCS is the system; W&B is the regulatory procedure the system supports.",
+          "explanation_ko": "출발 통제 시스템(DCS)은 공항에서 체크인·탑승·승객/수하물 데이터를 관리하는 IT 플랫폼이고, 중량 및 평형은 DCS가 승객·수하물 데이터를 제공받아 로드 시트를 산출하는 안전 계산이다. DCS는 시스템이고, W&B는 시스템이 지원하는 규제 절차다.",
+          "targetId": "departure-control-system-dcs"
+        },
+        {
+          "targetTerm": "Manifest",
+          "explanation": "A manifest (passenger or cargo) is a list of people or goods on board; weight and balance is the calculation confirming the total load is within the aircraft's safe performance envelope. The manifest provides a data input to the W&B calculation but is a separate document with a different regulatory purpose.",
+          "explanation_ko": "탑재 명단(Manifest, 승객 또는 화물)은 탑승 인원이나 화물의 목록이고, 중량 및 평형은 총 탑재량이 항공기의 안전 성능 범위 내에 있음을 확인하는 계산이다. Manifest는 W&B 계산의 입력 데이터를 제공하지만 별개의 문서로 다른 규제 목적을 가진다.",
+          "targetId": "manifest"
+        }
+      ],
+      "sources": [
+        {
+          "name": "ICAO Annex 6 — Operation of Aircraft, Part I: International Commercial Air Transport — Aeroplanes",
+          "org": "ICAO",
+          "version": "12th Edition",
+          "section": "Section 4.3 (Mass and Balance)",
+          "url": "https://www.icao.int/safety/airnavigation/nationalitymarks/annexes_booklet_en.pdf",
+          "tier": "standard-body"
+        },
+        {
+          "name": "Advisory Circular AC 120-27F — Aircraft Weight and Balance Control",
+          "org": "FAA",
+          "version": "AC 120-27F",
+          "section": "",
+          "url": "https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_120-27F.pdf",
+          "tier": "regulator-guidance"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><line x1=\"24\" y1=\"8\" x2=\"24\" y2=\"40\"/><path d=\"M10 28L24 8l14 20\"/><line x1=\"8\" y1=\"40\" x2=\"40\" y2=\"40\"/><circle cx=\"24\" cy=\"28\" r=\"3\"/><line x1=\"12\" y1=\"28\" x2=\"10\" y2=\"34\"/><line x1=\"36\" y1=\"28\" x2=\"38\" y2=\"34\"/></svg>",
+      "term": "Weight and Balance",
+      "definition": "Weight and balance (W&B) is the mandatory pre-departure procedure in which an airline calculates an aircraft's total loaded weight and its centre of gravity (CG) to verify that both fall within the certified safe operating envelope defined in the Aircraft Flight Manual (AFM). The output — the load sheet or load and trim sheet — is a legally required document given to the commander before every flight.",
+      "lastReviewed": "2026-07-14"
     },
     {
       "id": "well-to-wake-wtw",
