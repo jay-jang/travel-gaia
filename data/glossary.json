@@ -2,8 +2,8 @@
   "meta": {
     "name": "Travel Wiki",
     "tagline": "여행 산업 용어 백과사전",
-    "generatedAt": "2026-07-17",
-    "entryCount": 583,
+    "generatedAt": "2026-07-18",
+    "entryCount": 589,
     "categoryCount": 20,
     "verticalCount": 6
   },
@@ -9099,6 +9099,85 @@
       "lastReviewed": "2026-07-11"
     },
     {
+      "id": "circle-trip",
+      "vertical": "air",
+      "category": "air-shop",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "일주 여행(Circle Trip)",
+      "definition_ko": "IATA 운임 구성 개념으로, 승객이 출발지에서 출발해 하나 이상의 중간 지점을 방문한 뒤 왕복 경로와 다른 루트 또는 다른 중간 도시를 경유해 같은 출발지로 돌아오는 여정. 왕복 여행과 달리 왕복 구간이 같은 경로를 역순으로 거슬러 가지 않으며, 오픈 조와 달리 출발지와 최종 목적지가 동일한 도시이다.",
+      "longDef": "Circle trips are priced using either a round-trip (RT) fare applied to the whole journey where permitted by the tariff, or by building each fare component individually and combining them under the general fare construction rules (Global Indicators, maximum permitted mileage / MPM, etc.). IATA's Travel Agent Tariff Rules define circle trips as one of the principal journey types alongside one-way, round trip, and open jaw. Circle trips are common for multi-destination trips such as a transatlantic journey that departs from and returns to the same city but visits different intermediate hubs on each direction (e.g. London–New York–Chicago–Los Angeles–Tokyo–London). Airlines and GDSs model circle trips in PNRs as a sequence of segments where the first and last points are the same.",
+      "longDef_ko": "일주 여행은 운임 규정이 허용하는 경우 전체 여정에 왕복(RT) 운임을 적용하거나, 일반 운임 구성 규칙(Global Indicators, 최대 허용 마일리지/MPM 등)에 따라 각 운임 구성 요소를 개별 산출한 뒤 결합하여 가격을 책정한다. IATA의 Travel Agent Tariff Rules는 일주 여행을 단방향, 왕복, 오픈 조와 함께 주요 여정 유형 중 하나로 정의한다. 일주 여행은 같은 도시에서 출발·도착하지만 각 방향에서 서로 다른 중간 허브를 경유하는 다중 목적지 여행(예: 런던-뉴욕-시카고-로스앤젤레스-도쿄-런던)에 흔하다. 항공사와 GDS는 PNR에서 첫 지점과 마지막 지점이 동일한 구간의 연속으로 일주 여행을 모델링한다.",
+      "standardBody": "IATA",
+      "aliases": [
+        "CT",
+        "Circle Journey"
+      ],
+      "relationships": [
+        {
+          "type": "contrasts",
+          "targetTerm": "Open Jaw",
+          "targetId": "open-jaw"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Routing",
+          "targetId": "routing"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Stopover",
+          "targetId": "stopover"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Fare Basis Code",
+          "targetId": "fare-basis-code"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Ticketed Point Mileage (TPM)",
+          "targetId": "ticketed-point-mileage"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Open Jaw",
+          "explanation": "A circle trip departs from and returns to the same city, completing a geographic loop; an open jaw has a gap in the routing — either the return journey begins at a city different from the outbound destination, or the return ends at a city different from the outbound origin.",
+          "explanation_ko": "일주 여행은 같은 도시에서 출발하고 돌아와 지리적 루프를 완성하는 반면, 오픈 조는 루트에 구간 공백이 있어 귀국 여정이 왕복 목적지가 아닌 도시에서 시작하거나, 출발지가 아닌 도시에서 끝난다.",
+          "targetId": "open-jaw"
+        },
+        {
+          "targetTerm": "Stopover",
+          "explanation": "A stopover is a deliberate intermediate stop at a city during a journey; a circle trip is a journey type defined by its routing shape (departure = final destination). Circle trips routinely contain stopovers at intermediate cities.",
+          "explanation_ko": "경유 스탑오버는 여정 중 도시에서의 의도적인 중간 기착이고, 일주 여행은 루트 형태(출발지 = 최종 목적지)로 정의되는 여정 유형이다. 일주 여행에는 통상적으로 중간 도시에서의 스탑오버가 포함된다.",
+          "targetId": "stopover"
+        }
+      ],
+      "sources": [
+        {
+          "name": "IATA Travel Agent Tariff Rules — Journey Types (One-Way, Round Trip, Open Jaw, Circle Trip)",
+          "org": "IATA",
+          "version": "",
+          "section": "Journey Types",
+          "url": "https://www.iata.org/en/publications/manuals/",
+          "tier": "association"
+        },
+        {
+          "name": "ATPCO Fare Filing Rules — Fare Construction Principles (Global Indicators, Circle Trip provisions)",
+          "org": "ATPCO",
+          "version": "",
+          "section": "",
+          "url": "https://www.atpco.net/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"10\" r=\"3\"/><circle cx=\"40\" cy=\"28\" r=\"3\"/><circle cx=\"14\" cy=\"38\" r=\"3\"/><path d=\"M26 11.5 37.5 26\"/><path d=\"M38 31 16 37\"/><path d=\"M13 35 22 12\"/></svg>",
+      "term": "Circle Trip",
+      "definition": "An IATA fare-construction concept in which a passenger departs from an origin, visits one or more intermediate points, and returns to that same origin city via a different routing or via different intermediate cities than the outbound. Unlike a round trip, the outbound and inbound sectors do not retrace the same path, and unlike an open jaw, the origin and final destination are the same city.",
+      "lastReviewed": "2026-07-18"
+    },
+    {
       "id": "city-code",
       "vertical": "common",
       "category": "codes",
@@ -12904,6 +12983,76 @@
       "lastReviewed": "2026-06-30"
     },
     {
+      "id": "deck-plan",
+      "vertical": "cruise",
+      "category": "cruise",
+      "conceptType": "document",
+      "status": "active",
+      "term_ko": "갑판 배치도(Deck Plan)",
+      "definition_ko": "크루즈 선박의 각 갑판 레이아웃을 보여주는 도표로, 선실 등급 및 번호, 공용 공간, 편의 시설, 구명정, 구조물 등을 포함한다. 갑판 배치도는 승객이 예약 전 특정 선실 위치를 선택하는 데 사용하는 주요 도구이며, 크루즈 예약 시스템 및 온라인 예약 플랫폼을 통해 배포되는 표준 데이터 구성 요소이다.",
+      "longDef": "A deck plan shows each horizontal level of the ship from bow to stern, typically in a bird's-eye view, with each cabin represented by its number and colour-coded to indicate its category (e.g. inside, ocean view, balcony, suite). Public amenity decks show restaurants, pools, entertainment venues, the lido deck, the spa, and navigation/bridge areas. Deck plans also indicate muster station locations as required by SOLAS, and the position of lifeboats and tenders relevant to evacuation procedures. In cruise distribution, deck plans are provided by the cruise line to GDSs, travel agencies, and consumer websites so that passengers can evaluate cabin placement factors such as deck level, proximity to elevators or the bow/stern (affecting motion sensitivity), and adjacency to public venues. The OpenTravel Alliance cruise schemas include structured data elements for deck number and cabin location, enabling downstream systems to display deck-plan-level information programmatically.",
+      "longDef_ko": "갑판 배치도는 선박의 각 수평 층을 선수부터 선미까지 일반적으로 조감도로 보여주며, 각 선실은 번호와 등급(예: 내향, 오션뷰, 발코니, 스위트)을 나타내는 색상 코드로 표시된다. 공용 편의 시설 갑판에는 레스토랑, 수영장, 공연장, 리도 갑판, 스파, 항법/선교 구역이 표시된다. 갑판 배치도에는 SOLAS가 요구하는 집합 지점 위치와 대피 절차와 관련된 구명정 및 텐더 위치도 포함된다. 크루즈 유통에서 갑판 배치도는 선사가 GDS, 여행사, 소비자 웹사이트에 제공하여, 승객이 갑판 층, 엘리베이터나 선수/선미까지의 거리(흔들림 민감도에 영향), 공용 시설 인접성 등 선실 위치 요소를 평가할 수 있도록 한다. OpenTravel Alliance 크루즈 스키마에는 갑판 번호와 선실 위치에 대한 구조화된 데이터 요소가 포함되어 있어, 하위 시스템이 프로그래밍 방식으로 갑판 배치도 수준의 정보를 표시할 수 있다.",
+      "standardBody": "CLIA",
+      "aliases": [
+        "Ship Deck Plan",
+        "Stateroom Deck Plan",
+        "Cabin Deck Plan"
+      ],
+      "relationships": [
+        {
+          "type": "parent",
+          "targetTerm": "Cabin Category",
+          "targetId": "cabin-category"
+        },
+        {
+          "type": "related",
+          "targetTerm": "SOLAS",
+          "targetId": "solas"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Guarantee Cabin (GTY)",
+          "targetId": "guarantee-cabin-gty"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Cabin Category",
+          "explanation": "A cabin category is the classification tier (inside, ocean-view, balcony, suite, etc.) that groups cabins by features and price; a deck plan is the physical layout document that shows where each specific cabin — within all categories — is located on the ship.",
+          "explanation_ko": "선실 등급은 특성과 가격에 따라 선실을 묶는 분류 계층(내향, 오션뷰, 발코니, 스위트 등)이고, 갑판 배치도는 모든 등급의 각 특정 선실이 선박 어디에 위치하는지를 보여주는 물리적 레이아웃 문서이다.",
+          "targetId": "cabin-category"
+        },
+        {
+          "targetTerm": "SOLAS",
+          "explanation": "SOLAS (Safety of Life at Sea) is the IMO convention that mandates safety equipment, fire protection, and muster stations; deck plans graphically indicate the muster station locations and lifeboat/tender positions required by SOLAS, translating regulatory requirements into a navigable passenger reference.",
+          "explanation_ko": "SOLAS(해상인명안전협약)는 안전 장비, 화재 방호, 집합 지점을 의무화하는 IMO 협약이고, 갑판 배치도는 SOLAS가 요구하는 집합 지점 위치와 구명정/텐더 위치를 그래픽으로 표시하여 규제 요건을 승객이 탐색할 수 있는 참조 자료로 변환한다.",
+          "targetId": "solas"
+        }
+      ],
+      "sources": [
+        {
+          "name": "CLIA Cruise Industry Overview — Distribution and booking tools for cruise cabins",
+          "org": "Cruise Lines International Association (CLIA)",
+          "version": "",
+          "section": "",
+          "url": "https://cruising.org/research-and-advocacy/research",
+          "tier": "association"
+        },
+        {
+          "name": "OpenTravel Alliance Cruise Specification — OTA_CruiseSailAvailRQ/RS (DeckNumber, CabinLocation elements)",
+          "org": "OpenTravel Alliance",
+          "version": "",
+          "section": "",
+          "url": "https://opentravel.org/download-specs/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"4\" y=\"6\" width=\"40\" height=\"10\" rx=\"1\"/><rect x=\"4\" y=\"20\" width=\"40\" height=\"10\" rx=\"1\"/><rect x=\"4\" y=\"34\" width=\"40\" height=\"10\" rx=\"1\"/><rect x=\"8\" y=\"8\" width=\"6\" height=\"6\" rx=\"1\"/><rect x=\"16\" y=\"8\" width=\"6\" height=\"6\" rx=\"1\"/><rect x=\"24\" y=\"8\" width=\"6\" height=\"6\" rx=\"1\"/><rect x=\"8\" y=\"22\" width=\"6\" height=\"6\" rx=\"1\"/><rect x=\"16\" y=\"22\" width=\"6\" height=\"6\" rx=\"1\"/><rect x=\"24\" y=\"22\" width=\"6\" height=\"6\" rx=\"1\"/><rect x=\"32\" y=\"22\" width=\"6\" height=\"6\" rx=\"1\"/></svg>",
+      "term": "Deck Plan",
+      "definition": "A diagrammatic representation of a cruise ship showing the layout of each deck, including cabin categories and numbers, public spaces, amenities, lifeboats, and structural features. Deck plans are the primary tool passengers use to choose a specific cabin location prior to booking, and they are a standard data component distributed through cruise reservation systems and online booking platforms.",
+      "lastReviewed": "2026-07-18"
+    },
+    {
       "id": "demand-based-pricing",
       "vertical": "tours",
       "category": "tour-commercial",
@@ -14028,6 +14177,70 @@
       "term": "Downgrade Compensation",
       "definition": "Downgrade Compensation is the reimbursement owed to an air passenger who is involuntarily placed in a lower class of service than the one for which they purchased a ticket. Under EU Regulation 261/2004 Article 10, the operating carrier must pay 30%, 50%, or 75% of the one-way ticket price (depending on flight distance) within seven days; the percentage applies to the affected sector only.",
       "lastReviewed": "2026-07-06"
+    },
+    {
+      "id": "dry-lease",
+      "vertical": "air",
+      "category": "air-partner",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "드라이 리스(항공기 단독 임차)",
+      "definition_ko": "임대인(lessor)이 승무원·정비·보험(ACMI) 없이 항공기 기체만 제공하는 항공기 임차. 임차인(lessee)은 자체 승무원과 정비 조직을 갖추고 자사 운항증명(AOC) 하에 항공기를 운항하며 완전한 운항 통제권을 보유한다. 드라이 리스는 상업 항공의 장기 항공기 금융에서 지배적인 형태이다.",
+      "longDef": "A dry lease typically runs from two to twelve years and is used by airlines to grow, replace, or restructure their fleet without the capital outlay of ownership. Because the lessee holds the AOC and provides crew and maintenance, it is the operating carrier and bears full operational responsibility; it may also be the marketing carrier, though it can in turn enter codeshare arrangements. Lessors are usually specialist aircraft leasing companies (e.g. AerCap, Air Lease Corporation, SMBC Aviation Capital) rather than other airlines. Under ICAO Article 83 bis, states may transfer safety oversight obligations to the state of the lessee when a dry-leased aircraft crosses registry. This is the primary distinction from a wet lease, where the lessor provides aircraft, crew, maintenance, and insurance and retains the AOC and operational control.",
+      "longDef_ko": "드라이 리스는 일반적으로 2~12년간 지속되며, 항공사가 소유에 따른 자본 지출 없이 기단을 확장·교체·구조조정하는 데 활용된다. 임차인이 AOC를 보유하고 승무원과 정비를 제공하므로 운항 항공사로서 완전한 운항 책임을 지며, 그 자체가 판매 항공사이면서 별도로 코드셰어 협정을 체결할 수도 있다. 임대인은 다른 항공사가 아닌 전문 항공기 리스 전문사(예: AerCap, Air Lease Corporation, SMBC Aviation Capital)인 경우가 많다. ICAO 제83조 bis에 따라, 드라이 리스 항공기가 등록 국가를 넘을 경우 국가는 안전 감독 의무를 임차인의 국가에 이전할 수 있다. 이것이 임대인이 항공기·승무원·정비·보험을 제공하고 AOC와 운항 통제권을 보유하는 웻 리스와의 핵심 차이다.",
+      "standardBody": "ICAO",
+      "aliases": [
+        "Dry Leasing",
+        "Aircraft Dry Lease",
+        "Barefoot Lease"
+      ],
+      "relationships": [
+        {
+          "type": "contrasts",
+          "targetTerm": "Wet Lease",
+          "targetId": "wet-lease"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Operating Carrier",
+          "targetId": "operating-carrier"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Marketing Carrier",
+          "targetId": "marketing-carrier"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Wet Lease",
+          "explanation": "A dry lease provides the aircraft hull only; the lessee holds the AOC, provides crew and maintenance, and bears operational control. A wet lease includes aircraft, crew, maintenance, and insurance (ACMI), with the lessor retaining the AOC and operational control.",
+          "explanation_ko": "드라이 리스는 항공기 기체만 제공하며 임차인이 AOC를 보유하고 승무원·정비를 제공하며 운항 통제권을 진다. 웻 리스는 항공기·승무원·정비·보험(ACMI)을 포함하며 임대인이 AOC와 운항 통제권을 보유한다.",
+          "targetId": "wet-lease"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Convention on International Civil Aviation (Chicago Convention), Article 83 bis — Transfer of Functions and Duties",
+          "org": "ICAO",
+          "version": "Ninth Edition (2006)",
+          "section": "Article 83 bis",
+          "url": "https://www.icao.int/sites/default/files/2024-12/7300_cons.pdf",
+          "tier": "standard-body"
+        },
+        {
+          "name": "EASA Easy Access Rules for Air Operations (Regulation EU No 965/2012) — ORO.AOC.110 Leasing agreements",
+          "org": "EASA",
+          "version": "",
+          "section": "ORO.AOC.110",
+          "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-air-operations-regulation-eu-no-9652012",
+          "tier": "regulation"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 34l7-2 3-8 5 1-1 7 7-2 1-4 3 1v5\"/><line x1=\"6\" y1=\"38\" x2=\"42\" y2=\"38\"/><path d=\"M36 38l4-2-4-2\"/><circle cx=\"12\" cy=\"42\" r=\"2\"/><circle cx=\"28\" cy=\"42\" r=\"2\"/></svg>",
+      "term": "Dry Lease",
+      "definition": "An aircraft lease in which the lessor provides the aircraft hull only, without crew, maintenance, or insurance (ACMI). The lessee supplies its own crew and maintenance organisation, operates under its own Air Operator's Certificate (AOC), and retains full operational control. Dry leases are the dominant form of long-term aircraft financing in commercial aviation.",
+      "lastReviewed": "2026-07-18"
     },
     {
       "id": "drydock",
@@ -19510,6 +19723,88 @@
       "lastReviewed": "2026-06-18"
     },
     {
+      "id": "gdpr",
+      "vertical": "common",
+      "category": "customer",
+      "conceptType": "regulation",
+      "status": "active",
+      "abbreviation": "GDPR",
+      "term_ko": "일반 개인정보 보호 규정(GDPR)",
+      "definition_ko": "일반 개인정보 보호 규정(Regulation (EU) 2016/679)은 유럽경제지역(EEA) 내 개인의 개인정보 수집·처리·저장·이전을 규율하는 주요 EU 법률이다. EEA 거주자의 예약·로열티·승객 데이터를 처리하는 여행 기업(항공사, 호텔, 크루즈 선사, 렌터카 회사, 온라인 여행사 등)은 GDPR을 준수해야 하며, 위반 시 전 세계 연간 매출의 최대 4%에 달하는 과징금이 부과될 수 있다.",
+      "longDef": "GDPR came into force on 25 May 2018, replacing the 1995 Data Protection Directive. Its key principles require that personal data is processed lawfully, fairly, and transparently; collected for specified, explicit, and legitimate purposes; limited to what is necessary; kept accurate; stored only as long as necessary; and processed with appropriate security. For travel companies, GDPR governs booking data (name, passport, payment), frequent flyer programme profiles, passenger name records (PNRs), hotel guest folios, loyalty data, and any marketing analytics tied to identified individuals. Specific travel-sector obligations include: providing a lawful basis for international PNR data transfers to government agencies (noting tension with EU PNR Directive requirements); meeting data subject rights (access, erasure/right to be forgotten, portability, rectification); and ensuring cross-border data transfers are covered by adequacy decisions, Standard Contractual Clauses (SCCs), or other approved mechanisms. The European Data Protection Board (EDPB) provides sector-specific guidance, and national data protection authorities (DPAs) enforce the regulation.",
+      "longDef_ko": "GDPR은 1995년 개인정보 보호 지침을 대체하여 2018년 5월 25일 발효되었다. 핵심 원칙으로 개인정보는 적법하고 공정하며 투명하게 처리되어야 하고, 특정·명시적·정당한 목적으로만 수집되어야 하며, 필요한 범위로 제한되고, 정확하게 유지되어야 하며, 필요한 기간만 보관하고, 적절한 보안으로 처리해야 한다. 여행 기업에 대해 GDPR은 예약 데이터(이름, 여권, 결제), 상용고객 프로그램 프로파일, PNR, 호텔 게스트 폴리오, 로열티 데이터, 식별된 개인과 연결된 마케팅 분석을 규율한다. 여행 분야의 주요 의무로는 정부 기관에 대한 국제 PNR 데이터 이전의 적법한 근거 제공(EU PNR Directive 요건과의 긴장 관계 포함), 정보 주체 권리 이행(열람, 삭제/잊혀질 권리, 이동성, 정정), 적정성 결정·표준 계약 조항(SCC) 또는 기타 승인된 메커니즘을 통한 국경 간 데이터 이전 보장 등이 있다. 유럽 데이터 보호 이사회(EDPB)는 분야별 지침을 제공하며, 각국 데이터 보호 당국(DPA)이 규정을 집행한다.",
+      "standardBody": "European Parliament and Council of the EU",
+      "aliases": [
+        "General Data Protection Regulation",
+        "Regulation (EU) 2016/679",
+        "EU GDPR"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Customer Profile",
+          "targetId": "customer-profile"
+        },
+        {
+          "type": "related",
+          "targetTerm": "EU PNR Directive",
+          "targetId": "eu-pnr-directive"
+        },
+        {
+          "type": "related",
+          "targetTerm": "PNRGOV",
+          "targetId": "pnrgov"
+        },
+        {
+          "type": "related",
+          "targetTerm": "GDPR Consent",
+          "targetId": "gdpr-consent"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "GDPR Consent",
+          "explanation": "GDPR is the overarching regulation establishing the legal framework for personal data processing, including six lawful bases (consent, contract, legal obligation, vital interests, public task, legitimate interests); GDPR Consent is one specific lawful basis — a freely given, specific, informed, and unambiguous indication of the data subject's agreement — which travel companies use for optional processing such as marketing.",
+          "explanation_ko": "GDPR은 개인정보 처리를 위한 법적 프레임워크(6가지 적법한 근거: 동의, 계약, 법적 의무, 중대한 이익, 공공 과업, 정당한 이익)를 수립하는 포괄적 규정이고, GDPR 동의는 여행 기업이 마케팅 등 선택적 처리에 사용하는 하나의 특정 적법 근거, 즉 정보 주체의 자유롭고 구체적이며 정보에 입각한 명확한 동의 표시이다.",
+          "targetId": "gdpr-consent"
+        },
+        {
+          "targetTerm": "EU PNR Directive",
+          "explanation": "GDPR protects passengers' personal data across all processing activities and restricts onward transfers; the EU PNR Directive specifically requires airlines to transfer passenger name records to national Passenger Information Units for law-enforcement purposes. The two instruments are complementary but create obligations that carriers must balance: mandatory transfer under PNR Directive vs. data minimisation and transfer restrictions under GDPR.",
+          "explanation_ko": "GDPR은 모든 처리 활동에서 승객의 개인정보를 보호하고 추가 이전을 제한하며, EU PNR 지침은 특히 항공사가 법 집행 목적으로 PNR을 국가 여객 정보 부서에 이전하도록 요구한다. 두 법 체계는 보완적이지만 항공사가 균형을 맞춰야 하는 의무를 만든다: PNR 지침에 따른 의무적 이전 vs. GDPR에 따른 데이터 최소화 및 이전 제한.",
+          "targetId": "eu-pnr-directive"
+        },
+        {
+          "targetTerm": "Customer Profile",
+          "explanation": "A customer profile is the structured data record holding a traveler's preferences and history in a booking or loyalty system; GDPR governs how that profile may be created, enriched, retained, and transferred, and grants the traveler rights to access, correct, or delete it.",
+          "explanation_ko": "고객 프로파일은 예약 또는 로열티 시스템에서 여행자의 선호도와 이력을 보유하는 구조화된 데이터 레코드이고, GDPR은 해당 프로파일의 생성·보강·보관·이전 방법을 규율하며 여행자에게 열람·수정·삭제 권리를 부여한다.",
+          "targetId": "customer-profile"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Regulation (EU) 2016/679 of the European Parliament and of the Council (General Data Protection Regulation — GDPR)",
+          "org": "European Parliament and Council of the EU",
+          "version": "",
+          "section": "",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679",
+          "tier": "regulation"
+        },
+        {
+          "name": "IATA Data Privacy in the Airline Industry — GDPR compliance guidance for carriers",
+          "org": "IATA",
+          "version": "",
+          "section": "",
+          "url": "https://www.iata.org/en/programs/passenger/data-protection/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"6\" width=\"28\" height=\"36\" rx=\"3\"/><circle cx=\"24\" cy=\"22\" r=\"5\"/><path d=\"M20 22c0-2.2 1.8-4 4-4\"/><line x1=\"16\" y1=\"32\" x2=\"32\" y2=\"32\"/><line x1=\"16\" y1=\"14\" x2=\"24\" y2=\"14\"/><path d=\"M38 8l4 4-4 4\"/></svg>",
+      "term": "GDPR",
+      "definition": "The General Data Protection Regulation (Regulation (EU) 2016/679) is the primary EU framework governing the collection, processing, storage, and transfer of personal data of individuals located within the European Economic Area (EEA). Travel companies — including airlines, hotels, cruise lines, car rental firms, and online travel agencies — that handle booking, loyalty, or passenger data of EEA residents must comply with GDPR or face fines of up to 4% of global annual turnover.",
+      "lastReviewed": "2026-07-18"
+    },
+    {
       "id": "gdpr-consent",
       "vertical": "common",
       "category": "customer",
@@ -21557,6 +21852,87 @@
       "term": "HEDNA",
       "definition": "HEDNA (Hotel Electronic Distribution Network Association) is a not-for-profit trade association, founded in 1991, dedicated to advancing hotel electronic distribution through education, networking, and the development of distribution best practices and standards. Its members span hotels, representation/management companies, GDSs, switches, OTAs, payment and software providers, making it a primary authoritative body in the field.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "hidden-city-ticketing",
+      "vertical": "air",
+      "category": "air-shop",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "숨겨진 도시 발권(Hidden City Ticketing)",
+      "definition_ko": "여행자가 실제 목적지보다 더 먼 도착지로 항공권을 예약한 뒤, 중간 환승 지점('숨겨진 도시')에서 하기하는 운임 조합 관행. 더 먼 목적지로 가는 통과 운임이 환승지까지의 직접 편도 운임보다 저렴한 경우가 있어 가격 차익이 발생하며, 항공사는 운송 약관으로 이를 금지한다.",
+      "longDef": "Hidden city ticketing exploits a structural price anomaly where the lowest available fare between two cities routes through a third city at a lower price than the direct fare to that intermediate city. The traveler disembarks at the connection and abandons the remaining coupon. Carriers prohibit the practice through their general conditions of carriage because it misrepresents the traveler's actual routing, potentially strands other passengers in waitlist queues, and undermines the revenue management model that prices each route independently. Checked baggage is typically routed to the final destination, so hidden city ticketing is only practical with carry-on luggage only. Carriers have pursued legal remedies against systematic commercial facilitation of the practice (e.g. Skiplagged.com). The practice is related to, but distinct from, back-to-back ticketing (buying two one-way tickets to exploit a change-of-direction discount).",
+      "longDef_ko": "숨겨진 도시 발권은 두 도시 간 최저 운임이 제3의 도시를 경유하는 루트에서 형성되며, 이 경유지까지의 직접 운임보다 낮은 가격 이상 현상을 이용하는 것이다. 여행자는 환승지에서 하기한 뒤 나머지 탑승권을 포기한다. 항공사는 일반 운송 약관으로 이를 금지하는데, 이 관행이 여행자의 실제 루트를 잘못 표시하고, 대기자 명단의 다른 승객에게 불이익을 줄 수 있으며, 각 노선을 독립적으로 가격 책정하는 수익 관리 모델을 훼손하기 때문이다. 위탁 수하물은 일반적으로 최종 목적지로 수송되므로, 숨겨진 도시 발권은 기내 반입 수하물만 있을 때만 실용적이다. 항공사는 이러한 관행의 체계적 상업적 조장(예: Skiplagged.com)에 대해 법적 조치를 취한 바 있다. 이 관행은 왕복 할인 혜택을 이용하기 위해 단방향 항공권 두 장을 구매하는 back-to-back 발권과 관련은 있으나 구별된다.",
+      "standardBody": "ATPCO",
+      "aliases": [
+        "Skiplagging",
+        "Point-Beyond Ticketing",
+        "Throwaway Ticketing"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Routing",
+          "targetId": "routing"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Stopover",
+          "targetId": "stopover"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Through Fare",
+          "targetId": "through-fare"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Fare Basis Code",
+          "targetId": "fare-basis-code"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Through Fare",
+          "explanation": "A through fare is a legitimately priced fare for the full routing including all intermediate stops; hidden city ticketing exploits the price differential of a through fare by abandoning the second coupon at the intermediate point.",
+          "explanation_ko": "통과 운임은 모든 중간 기착을 포함한 전체 루트에 대해 정당하게 책정된 운임이고, 숨겨진 도시 발권은 중간 지점에서 두 번째 탑승권을 포기함으로써 통과 운임의 가격 차이를 이용하는 것이다.",
+          "targetId": "through-fare"
+        },
+        {
+          "targetTerm": "Open Jaw",
+          "explanation": "An open jaw is an itinerary where the return journey begins from a city different from the outbound destination, or ends at a city different from the outbound origin — a legitimate and carrier-permitted booking pattern. Hidden city ticketing involves intentionally not flying a ticketed segment without carrier authorisation.",
+          "explanation_ko": "오픈 조는 귀국 여정이 왕복 목적지가 아닌 다른 도시에서 시작하거나, 출발지가 아닌 다른 도시에서 끝나는 여정으로, 정당하고 항공사가 허용하는 예약 패턴이다. 숨겨진 도시 발권은 항공사 승인 없이 발권된 구간을 의도적으로 탑승하지 않는 것이다.",
+          "targetId": "open-jaw"
+        },
+        {
+          "targetTerm": "Split Ticketing",
+          "explanation": "Split ticketing combines two or more separately purchased tickets for a single journey to obtain a lower total fare; it is legal though sometimes restricted by fare rules. Hidden city ticketing purchases a single through-ticket and intentionally disembarks at an intermediate stop, violating conditions of carriage.",
+          "explanation_ko": "분할 발권은 단일 여정에 대해 별도로 구매한 두 장 이상의 항공권을 조합해 총 운임을 낮추는 것으로, 때로 운임 규정에 의해 제한되지만 합법적이다. 숨겨진 도시 발권은 단일 통과 항공권을 구매하고 중간 기착지에서 의도적으로 하기하여 운송 약관을 위반하는 것이다.",
+          "targetId": "split-ticketing"
+        }
+      ],
+      "sources": [
+        {
+          "name": "ATPCO Fare Filing — General Booking Rules and Carrier Conditions of Carriage (prohibit intentional no-fly of a segment)",
+          "org": "ATPCO",
+          "version": "",
+          "section": "",
+          "url": "https://www.atpco.net/",
+          "tier": "association"
+        },
+        {
+          "name": "IATA Conditions of Carriage for International Passenger Services — Clause on passengers travelling on connecting flights",
+          "org": "IATA",
+          "version": "",
+          "section": "",
+          "url": "https://www.iata.org/en/programs/passenger/conditions-of-carriage/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"36\" r=\"3\"/><circle cx=\"36\" cy=\"12\" r=\"3\"/><circle cx=\"24\" cy=\"24\" r=\"3\"/><path d=\"M14.5 34 22 26\"/><path d=\"M26 22 33.5 14.5\"/><path d=\"M12 33V20\"/><path d=\"M12 20h24\"/><path d=\"M36 20v-5\"/></svg>",
+      "term": "Hidden City Ticketing",
+      "definition": "A fare-construction practice in which a traveler intentionally books a ticket to a destination beyond their actual intended destination, planning to disembark at an intermediate stop or connection point (the 'hidden city'). The through-fare to the further destination is sometimes lower than the point-to-point fare directly to the connection, creating a price arbitrage that carriers prohibit under their conditions of carriage.",
+      "lastReviewed": "2026-07-18"
     },
     {
       "id": "high-speed-rail",
@@ -43318,6 +43694,80 @@
       "term": "Shore Excursion",
       "definition": "An escorted or independent tour or activity sold for a port of call, taking guests ashore for sightseeing, adventure, or cultural experiences and returning them before the ship sails. It is the primary ancillary product of the cruise business and an explicitly standardized component of the OpenTravel cruise message set.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "shoulder-season",
+      "vertical": "lodging",
+      "category": "hotel-rate",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "숄더 시즌(어깨 시즌)",
+      "definition_ko": "목적지의 성수기(최고 수요)와 비수기 또는 저수기(최저 수요) 사이에 해당하는 중간 수준의 여행 수요 및 점유율 기간. 숄더 시즌은 일반적으로 성수기보다 저렴한 요금, 짧은 예약 리드 타임, 덜 붐비는 환경을 제공하면서도 합리적인 날씨 또는 활동 여건을 유지한다. 호텔리어, 투어 운영사, 항공사는 숄더 시즌 요금 전략을 활용해 수요 곡선을 평탄화하고 연간 수익을 최적화한다.",
+      "longDef": "Shoulder season boundaries vary by destination, product type, and traveler segment: a beach resort may define its shoulder season as spring and autumn, while a ski resort treats spring as shoulder and late autumn as the transition from low to shoulder. Revenue managers use shoulder season pricing to stimulate demand when the property would otherwise be underoccupied, offering promotional rates, added-value packages, or minimum-stay waivers without undermining peak-season rate integrity. In hotel performance benchmarking (STR/CoStar), properties frequently compare their ADR, occupancy, and RevPAR against competitive sets separately for each season to assess relative performance. Online travel agencies and tour operators similarly segment inventory and marketing spend by season, bidding more aggressively in shoulder periods where conversion costs are lower.",
+      "longDef_ko": "숄더 시즌의 경계는 목적지, 상품 유형, 여행자 세그먼트에 따라 다르다. 해변 리조트는 봄·가을을 숄더 시즌으로 정의할 수 있는 반면, 스키 리조트는 봄을 숄더로, 늦가을을 비수기에서 숄더로의 전환기로 본다. 수익 관리자는 성수기 요금 무결성을 훼손하지 않으면서 숙박 시설이 저조한 점유율을 보일 시기에 수요를 촉진하기 위해 프로모션 요금, 부가가치 패키지, 최소 숙박 면제 등을 제공하는 숄더 시즌 요금 전략을 활용한다. 호텔 성과 벤치마킹(STR/CoStar)에서 숙박 시설은 상대적 성과를 평가하기 위해 각 시즌별로 경쟁 세트 대비 ADR, 점유율, RevPAR을 비교한다. 온라인 여행사와 투어 운영사도 유사하게 시즌별로 재고와 마케팅 예산을 분류하며, 전환 비용이 낮은 숄더 시즌에 더욱 적극적으로 입찰한다.",
+      "aliases": [
+        "Shoulder Period",
+        "Mid-Season",
+        "Transitional Season"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Rate Plan",
+          "targetId": "rate-plan"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Revenue Management",
+          "targetId": "revenue-management"
+        },
+        {
+          "type": "related",
+          "targetTerm": "ADR",
+          "targetId": "adr"
+        },
+        {
+          "type": "related",
+          "targetTerm": "RevPAR",
+          "targetId": "revpar"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Rate Plan",
+          "explanation": "A rate plan is a configured pricing product with specific conditions; shoulder season is a demand period that drives which rate plans are activated, promoted, or restricted. Shoulder-season promotions are commonly implemented by creating or enabling specific rate plans.",
+          "explanation_ko": "요금 플랜은 특정 조건이 있는 구성된 가격 상품이고, 숄더 시즌은 어떤 요금 플랜이 활성화·홍보·제한되는지를 결정하는 수요 기간이다. 숄더 시즌 프로모션은 일반적으로 특정 요금 플랜을 생성하거나 활성화하여 실행된다.",
+          "targetId": "rate-plan"
+        },
+        {
+          "targetTerm": "ADR",
+          "explanation": "ADR measures the average rate actually achieved per sold room in any given period; shoulder season is the demand context that determines whether rate management targets higher or lower ADR relative to peak and off-peak periods.",
+          "explanation_ko": "ADR은 특정 기간에 판매된 객실당 실제 달성된 평균 요금을 측정하고, 숄더 시즌은 요금 관리가 성수기 및 비수기 대비 더 높거나 낮은 ADR을 목표로 할지를 결정하는 수요 맥락이다.",
+          "targetId": "adr"
+        }
+      ],
+      "sources": [
+        {
+          "name": "UNWTO Glossary of Tourism Terms — Seasonality",
+          "org": "UN World Tourism Organization (UNWTO)",
+          "version": "",
+          "section": "",
+          "url": "https://www.unwto.org/glossary-tourism-terms",
+          "tier": "association"
+        },
+        {
+          "name": "STR Hotel Performance Benchmarking Methodology — Seasonal demand segmentation",
+          "org": "STR (CoStar)",
+          "version": "",
+          "section": "",
+          "url": "https://str.com/data-insights-research",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"4\" y=\"30\" width=\"10\" height=\"12\" rx=\"1\"/><rect x=\"19\" y=\"20\" width=\"10\" height=\"22\" rx=\"1\"/><rect x=\"34\" y=\"10\" width=\"10\" height=\"32\" rx=\"1\"/><line x1=\"2\" y1=\"44\" x2=\"46\" y2=\"44\"/><path d=\"M9 30 24 20 39 10\"/><path d=\"M37 8 39 10 37 12\"/></svg>",
+      "term": "Shoulder Season",
+      "definition": "The period of moderate travel demand and occupancy that falls between a destination's peak season (highest demand) and off-peak or low season (lowest demand). Shoulder season typically offers intermediate pricing, shorter booking lead times, and less crowding than peak, while still providing reasonable weather or activity conditions. Hoteliers, tour operators, and carriers use shoulder-season rate strategies to smooth demand curves and optimise annual revenue.",
+      "lastReviewed": "2026-07-18"
     },
     {
       "id": "simplified-invoicing-and-settlement-sis",
