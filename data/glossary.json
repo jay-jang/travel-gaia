@@ -2,8 +2,8 @@
   "meta": {
     "name": "Travel Wiki",
     "tagline": "여행 산업 용어 백과사전",
-    "generatedAt": "2026-07-18",
-    "entryCount": 589,
+    "generatedAt": "2026-07-19",
+    "entryCount": 595,
     "categoryCount": 20,
     "verticalCount": 6
   },
@@ -1518,6 +1518,75 @@
       "term": "Advance Passenger Information System",
       "definition": "A border-control process in which a carrier transmits a defined set of each traveler's identity and travel-document data — typically full name, date of birth, gender, nationality, and passport/travel-document details together with flight information — to the destination (and sometimes departure) state's authorities before or at departure. The data set and message format follow the joint WCO/IATA/ICAO Guidelines on Advance Passenger Information (API).",
       "lastReviewed": "2026-06-18"
+    },
+    {
+      "id": "adventure-tourism",
+      "vertical": "tours",
+      "category": "tour-product",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "어드벤처 투어리즘(Adventure Tourism)",
+      "definition_ko": "자연 환경, 신체 활동, 문화적 몰입이라는 세 가지 요소 중 최소 두 가지를 결합한 체험형 여행 상품. 등산·급류 래프팅 등 고위험 하드 어드벤처와 하이킹·사이클링 등 저위험 소프트 어드벤처로 구분된다.",
+      "longDef": "The UNWTO and the Adventure Travel Trade Association (ATTA) jointly defined adventure tourism as a trip that contains at least two of three elements: physical activity, natural environment, and cultural immersion. This framework is the dominant industry taxonomy. The market is segmented between \"hard adventure\" (mountaineering, technical rock climbing, cave diving, extreme skiing, whitewater kayaking) that requires specialized skills, fitness, and often safety certification; and \"soft adventure\" (hiking, cycling, wildlife safaris, kayaking on flatwater, snorkeling) accessible to the mainstream leisure traveler with minimal preparation. Key business attributes differentiating adventure from mainstream tours include: mandatory or strongly recommended travel insurance (often requiring medical evacuation coverage), safety management protocols (ANSI/ASSE Z359 or EN 15567 for ropes courses), specialist liability management, guide qualification standards (Wilderness First Responder, UIAGM/IFMGA mountain guide certification), and smaller group sizes to manage risk. Adventure tourism aligns commercially with ecotourism when taking place in natural environments, but its defining characteristic is active physical participation rather than observation.",
+      "longDef_ko": "UNWTO와 모험 여행 무역 협회(ATTA)는 공동으로 어드벤처 투어리즘을 신체 활동, 자연 환경, 문화적 몰입 중 최소 두 가지를 포함하는 여행으로 정의했다. 이 프레임워크는 업계의 지배적인 분류 체계다. 시장은 전문 기술·체력·안전 인증이 필요한 \"하드 어드벤처\"(등산, 기술 암벽 등반, 동굴 다이빙, 극한 스키, 급류 카약)와 일반 레저 여행자가 최소한의 준비로 즐길 수 있는 \"소프트 어드벤처\"(하이킹, 사이클링, 야생 동물 사파리, 평수 카약, 스노클링)로 구분된다. 어드벤처 투어를 일반 투어와 구별하는 주요 사업적 특성에는 여행자보험 필수 또는 강력 권장(의료 후송 보장 포함), 안전 관리 프로토콜(로프 코스의 경우 ANSI/ASSE Z359 또는 EN 15567), 전문 책임 관리, 가이드 자격 기준(Wilderness First Responder, UIAGM/IFMGA 산악 가이드 인증), 위험 관리를 위한 소규모 그룹 등이 포함된다. 어드벤처 투어리즘은 자연 환경에서 이루어질 때 에코투어리즘과 상업적으로 맞닿아 있지만, 핵심 특징은 관찰이 아닌 적극적 신체 참여다.",
+      "standardBody": "UNWTO",
+      "aliases": [
+        "Adventure Travel",
+        "Active Tourism",
+        "Active Travel"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Guided Tour",
+          "targetId": "guided-tour"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Private Tour",
+          "targetId": "private-tour"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Small-Group Tour",
+          "targetId": "small-group-tour"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Liability Waiver",
+          "targetId": "liability-waiver"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Guided Tour",
+          "explanation": "A guided tour typically offers site interpretation and narration by a local expert at a specific place; adventure tourism is defined by active physical participation in a challenging environment, where guide expertise is primarily about safety management and technical skill rather than narration.",
+          "explanation_ko": "가이드 투어는 일반적으로 특정 장소에서 현지 전문가가 제공하는 현장 해설과 설명을 특징으로 하고, 어드벤처 투어리즘은 도전적인 환경에서 적극적인 신체 참여로 정의되며 가이드 전문성은 단순 해설이 아닌 주로 안전 관리와 기술 능력에 있다.",
+          "targetId": "guided-tour"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Global Report on Adventure Tourism (UNWTO and ATTA)",
+          "org": "World Tourism Organization (UNWTO) and Adventure Travel Trade Association (ATTA)",
+          "version": "2014",
+          "section": "Chapter 1 — Definition and Scope",
+          "url": "https://www.e-unwto.org/doi/book/10.18111/9789284416622",
+          "tier": "association"
+        },
+        {
+          "name": "Adventure Travel Trade Association — State of Adventure Travel Report",
+          "org": "Adventure Travel Trade Association (ATTA)",
+          "version": "",
+          "section": "",
+          "url": "https://adventuretravel.biz/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 38l10-20 8 12 6-8 8 16\"/><path d=\"M4 38h40\"/><circle cx=\"36\" cy=\"12\" r=\"4\"/><path d=\"M30 18l6-6\"/></svg>",
+      "term": "Adventure Tourism",
+      "definition": "A form of tourism that combines at least two of three key elements — physical activity, natural environment, and cultural immersion — into an experiential travel product. Broadly divided into hard adventure (high-risk activities requiring specialized skill: mountaineering, white-water rafting, technical diving) and soft adventure (lower-risk activities accessible to most travelers: hiking, cycling, wildlife safaris).",
+      "lastReviewed": "2026-07-19"
     },
     {
       "id": "advice-code",
@@ -3400,6 +3469,86 @@
       "term": "AirShopping",
       "definition": "AirShopping is the entry-point NDC message that initiates a shopping session and returns a list of flight Offers built from the airline's offer engine in response to request criteria such as origin, destination, dates, cabin and passenger types. It is the first transaction in the NDC offer-and-order workflow, returning offers that a seller can later price and book.",
       "lastReviewed": "2026-06-18"
+    },
+    {
+      "id": "all-inclusive-cruise",
+      "vertical": "cruise",
+      "category": "cruise",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "올인클루시브 크루즈(All-Inclusive Cruise)",
+      "definition_ko": "숙박, 전 레스토랑 식사, 음료(주류 포함), 엔터테인먼트, 봉사료 등 주요 선상 비용을 하나의 운임에 포함하는 크루즈 요금 모델. 주로 럭셔리 크루즈 세그먼트와 연관된다.",
+      "longDef": "The all-inclusive (AI) cruise model is primarily associated with the luxury segment — operators such as Regent Seven Seas Cruises, Silversea, Seabourn, Viking Ocean Cruises, and Scenic market themselves as all-inclusive, meaning alcoholic beverages, specialty dining, shore excursions (at some lines), Wi-Fi, and crew gratuities are bundled into the cruise fare. Contemporary and premium lines often offer opt-in beverage packages while keeping specialty dining, gratuities, and excursions as separately priced add-ons. The AI model is distinct from à la carte pricing in which beverages packages, specialty dining, gratuities, and shore excursions are each priced separately. From a distribution standpoint, the AI fare simplifies pricing for travel advisors and guests but compresses the onboard revenue line, so cruise lines offset this through higher published cruise fares.",
+      "longDef_ko": "올인클루시브(AI) 크루즈 모델은 주로 럭셔리 세그먼트와 연관된다 — Regent Seven Seas Cruises, Silversea, Seabourn, Viking Ocean Cruises, Scenic 등은 주류, 스페셜티 다이닝, 기항지 투어(일부 선사), Wi-Fi, 봉사료를 크루즈 운임에 포함한다. 컨템포러리·프리미엄 선사는 종종 음료 패키지를 선택형으로 제공하면서 스페셜티 다이닝·봉사료·기항지 투어는 별도 유료로 유지한다. AI 모델은 음료 패키지·스페셜티 다이닝·봉사료·기항지 투어를 각각 개별 가격으로 책정하는 à la carte 방식과 구별된다. 유통 관점에서 AI 운임은 여행사와 고객의 요금 이해를 단순화하지만 선상 수익을 압축하므로, 선사는 이를 높은 공시 크루즈 운임으로 상쇄한다.",
+      "standardBody": "CLIA",
+      "aliases": [
+        "AI Cruise",
+        "True All-Inclusive",
+        "All In"
+      ],
+      "relationships": [
+        {
+          "type": "contrasts",
+          "targetTerm": "Cruise-Only Fare",
+          "targetId": "cruise-only-fare"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Non-Commissionable Fare (NCF)",
+          "targetId": "non-commissionable-fare-ncf"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Onboard Credit (OBC)",
+          "targetId": "onboard-credit-obc"
+        },
+        {
+          "type": "contrasts",
+          "targetTerm": "Beverages Package",
+          "targetId": "beverages-package"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Daily Service Charge",
+          "targetId": "daily-service-charge"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Cruise-Only Fare",
+          "explanation": "A cruise-only fare covers transportation and accommodation on the ship but excludes flights, pre/post hotel, and most on-board extras; an all-inclusive cruise fare bundles the majority of on-board expenses — beverages, gratuities, specialty dining, and sometimes Wi-Fi and shore excursions — into one price.",
+          "explanation_ko": "Cruise-only fare는 선상 운송 및 숙박을 포함하지만 항공편·사전/사후 호텔 및 대부분의 선상 부가 비용을 제외한다. 올인클루시브 크루즈 운임은 음료·봉사료·스페셜티 다이닝, 경우에 따라 Wi-Fi 및 기항지 투어까지 대부분의 선상 비용을 하나의 가격에 묶는다.",
+          "targetId": "cruise-only-fare"
+        },
+        {
+          "targetTerm": "Beverages Package",
+          "explanation": "A beverages package is an add-on sold separately on à la carte cruise lines to cover drinks; on an all-inclusive cruise, beverages (including premium spirits) are already bundled into the fare at no extra charge.",
+          "explanation_ko": "음료 패키지는 à la carte 선사에서 음료 비용을 충당하기 위해 별도로 판매하는 부가 상품이다. 올인클루시브 크루즈에서는 음료(프리미엄 주류 포함)가 이미 운임에 포함되어 추가 요금이 없다.",
+          "targetId": "beverages-package"
+        }
+      ],
+      "sources": [
+        {
+          "name": "CLIA State of the Cruise Industry Outlook",
+          "org": "Cruise Lines International Association",
+          "version": "2024",
+          "section": "Premium and Luxury Segment",
+          "url": "https://cruising.org/en/research-and-statistics/research/state-of-the-cruise-industry",
+          "tier": "association"
+        },
+        {
+          "name": "Regent Seven Seas Cruises — The Most Inclusive Luxury Cruise Line",
+          "org": "Regent Seven Seas Cruises (Norwegian Cruise Line Holdings)",
+          "version": "",
+          "section": "",
+          "url": "https://www.rssc.com/why-regent/all-inclusive",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"18\"/><path d=\"M16 24l6 6 10-12\"/><path d=\"M24 8v4\"/><path d=\"M24 36v4\"/></svg>",
+      "term": "All-Inclusive Cruise",
+      "definition": "A cruise pricing model in which one fare covers accommodation, all dining venues, non-alcoholic and typically alcoholic beverages, entertainment, gratuities/service charges, and often specialty services such as Wi-Fi, with minimal or no supplementary on-board charges. Primarily associated with the luxury cruise segment.",
+      "lastReviewed": "2026-07-19"
     },
     {
       "id": "allocation",
@@ -15879,6 +16028,92 @@
       "term": "Enhanced and Simplified Distribution (EDIST)",
       "definition": "Enhanced and Simplified Distribution is the formal IATA name for the family of XML messages that implement NDC and ONE Order, such as AirShopping, OfferPrice, OrderCreate, and OrderRetrieve. The term distinguishes the concrete message schema itself from the NDC program and brand.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "escorted-tour",
+      "vertical": "tours",
+      "category": "tour-product",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "에스코티드 투어(Escorted Tour)",
+      "definition_ko": "전문 투어 에스코트 또는 투어 디렉터가 여행 전 일정 동안 그룹과 동행하며 모든 물류(숙소 체크인, 교통, 입장권)를 관리하고 해설·문화적 맥락·현지 지원을 제공하는 패키지 여행.",
+      "longDef": "Escorted tours are the flagship product of the major tour operating sector (companies such as Trafalgar, Insight Vacations, Globus, Collette, and Tauck). The tour director or escort is the constant presence throughout the journey — unlike a local guide who leads only at specific sites, the escort travels with the group by motorcoach or train, handles problems at hotels and attractions, and is reachable around the clock. The escort facilitates the schedule, conducts cultural briefings, and serves as the primary contact for participants with any concern. Escorted tours are typically sold as fully pre-packaged itineraries with predetermined departure dates (guaranteed departures) and fixed group sizes, making them distinct from FIT (Fully Independent Travel) and self-guided products. They are popular with first-time overseas travelers and older demographics who value reduced logistical stress and the social aspects of group travel.",
+      "longDef_ko": "에스코티드 투어는 Trafalgar, Insight Vacations, Globus, Collette, Tauck 등 주요 투어 운영사의 주력 상품이다. 투어 디렉터/에스코트는 여행 내내 상주하는 존재로, 특정 관광지에서만 안내하는 현지 가이드와 달리 버스 또는 기차로 그룹과 함께 이동하고, 호텔·관광지에서 발생하는 문제를 처리하며, 24시간 연락 가능하다. 에스코트는 일정을 진행하고 문화적 배경 설명을 제공하며 참가자의 모든 문의에 대한 주요 연락 창구 역할을 한다. 에스코티드 투어는 일반적으로 사전 확정된 출발일(보증 출발)과 고정 인원으로 구성된 완전 패키지 여정으로 판매되며, FIT 및 셀프 가이드 상품과 구별된다. 처음 해외여행을 하는 여행자나 물류 부담을 줄이고 그룹 여행의 사교적 측면을 원하는 고령 인구층에게 인기가 높다.",
+      "standardBody": "USTOA",
+      "aliases": [
+        "Coach Tour",
+        "Fully Escorted Tour",
+        "Guided Group Tour",
+        "Escorted Vacation"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Tour Director",
+          "targetId": "tour-director"
+        },
+        {
+          "type": "related",
+          "targetTerm": "GIT",
+          "targetId": "git-group-inclusive-tour"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Guided Tour",
+          "targetId": "guided-tour"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Small-Group Tour",
+          "targetId": "small-group-tour"
+        },
+        {
+          "type": "contrasts",
+          "targetTerm": "Self-Guided Tour",
+          "targetId": "self-guided-tour"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Guaranteed Departure",
+          "targetId": "guaranteed-departure"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Guided Tour",
+          "explanation": "A guided tour is a site-specific or activity-specific experience led by a local guide at a single attraction or destination; an escorted tour is a multi-day or multi-destination trip where one escort accompanies the same group for the entire journey.",
+          "explanation_ko": "가이드 투어는 단일 명소나 목적지에서 현지 가이드가 안내하는 특정 장소·활동 중심의 체험이고, 에스코티드 투어는 한 명의 에스코트가 동일 그룹과 전체 여정 동안 동행하는 다일/다목적지 여행이다.",
+          "targetId": "guided-tour"
+        },
+        {
+          "targetTerm": "Self-Guided Tour",
+          "explanation": "A self-guided tour provides maps, audio, or materials for independent exploration with no escort; an escorted tour provides a human escort who is continuously present to manage all aspects of the trip.",
+          "explanation_ko": "셀프 가이드 투어는 에스코트 없이 지도·오디오·자료를 제공해 독립적으로 탐방하는 형태이고, 에스코티드 투어는 여행의 모든 측면을 관리하기 위해 지속적으로 동행하는 인간 에스코트를 제공한다.",
+          "targetId": "self-guided-tour"
+        }
+      ],
+      "sources": [
+        {
+          "name": "United States Tour Operators Association — Member Standards",
+          "org": "United States Tour Operators Association (USTOA)",
+          "version": "",
+          "section": "",
+          "url": "https://www.ustoa.com/",
+          "tier": "association"
+        },
+        {
+          "name": "UNWTO Tourism Glossary: Package Tour and Escorted Tour",
+          "org": "World Tourism Organization (UNWTO)",
+          "version": "",
+          "section": "",
+          "url": "https://www.unwto.org/glossary-tourism-terms",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"14\" cy=\"14\" r=\"4\"/><circle cx=\"24\" cy=\"14\" r=\"4\"/><circle cx=\"34\" cy=\"14\" r=\"4\"/><path d=\"M8 38v-8a4 4 0 014-4h24a4 4 0 014 4v8\"/><path d=\"M24 26v12\"/></svg>",
+      "term": "Escorted Tour",
+      "definition": "A packaged holiday in which a professional tour escort or tour director accompanies the group for the entire duration of the trip, managing all logistics (accommodation check-ins, transportation, entrance tickets) and providing narration, cultural context, and on-the-ground assistance throughout.",
+      "lastReviewed": "2026-07-19"
     },
     {
       "id": "etias",
@@ -36178,6 +36413,69 @@
       "lastReviewed": "2026-06-18"
     },
     {
+      "id": "port-agent",
+      "vertical": "cruise",
+      "category": "cruise",
+      "conceptType": "role",
+      "status": "active",
+      "term_ko": "항만 대리인(Port Agent)",
+      "definition_ko": "특정 항구에서 선사를 대리하기 위해 선임된 현지 선박 대리인 회사. 공식 입출항 신고, 선석 배정, 선용품 보급, 승무원 서비스, 기항지 측 물류를 담당한다.",
+      "longDef": "When a cruise ship calls at a port, the cruise line works through a local port agent who holds the necessary licenses and relationships with port authorities, customs, immigration, and local suppliers. The port agent's duties encompass: pre-arrival documentation (customs and immigration manifests, health and security declarations), berth coordination with the port authority, local provisioning and bunkering arrangements, managing crew shore leave and sign-on/sign-off formalities, liaising with shore-excursion operators and coaches, and handling emergencies such as medical evacuations and technical repairs. Port agents are typically engaged under a Standard Port Agency Agreement (as defined by FONASBA) that sets out the principal-agent relationship, liability limits, and disbursement accounting. For turnaround ports (homeports), the port agent's role expands significantly to cover embarkation and disembarkation logistics and luggage handling coordination.",
+      "longDef_ko": "크루즈 선박이 항구에 기항할 때, 선사는 항만 당국·세관·출입국 관리·현지 공급업체와의 면허와 관계를 보유한 현지 항만 대리인을 통해 업무를 처리한다. 항만 대리인의 임무에는 입항 전 서류 준비(세관/출입국 매니페스트, 위생/보안 신고), 항만 당국과의 선석 조율, 현지 선용품 및 연료 보급 조율, 승무원 상륙 및 승하선 절차 관리, 기항지 투어 운영사·버스와의 연계, 의료 후송·기술 수리 등 비상 상황 처리가 포함된다. 항만 대리인은 흔히 FONASBA가 정의한 표준 항만 대리인 계약에 따라 선임되며, 이 계약은 본인-대리인 관계, 책임 한도, 지출 회계를 규정한다. 모항(turnaround port)에서는 승하선 물류 및 수하물 처리 조율까지 역할이 크게 확대된다.",
+      "standardBody": "FONASBA",
+      "aliases": [
+        "Shipping Agent",
+        "Port Shipping Agent",
+        "Vessel Agent",
+        "Port Captain's Agent"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Port of Call",
+          "targetId": "port-of-call"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Turnaround Day",
+          "targetId": "turnaround-day"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Shore Excursion",
+          "targetId": "shore-excursion"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Cruise Terminal",
+          "targetId": "cruise-terminal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "FONASBA Standard Port Agency Agreement",
+          "org": "Federation of National Associations of Ship Brokers and Agents (FONASBA)",
+          "version": "",
+          "section": "",
+          "url": "https://www.fonasba.com/standard-forms/",
+          "tier": "association"
+        },
+        {
+          "name": "BIMCO GENagency — General Agency Agreement",
+          "org": "Baltic and International Maritime Council (BIMCO)",
+          "version": "",
+          "section": "",
+          "url": "https://www.bimco.org/contracts-and-clauses/bimco-contracts/genagency",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"16\" r=\"6\"/><path d=\"M12 40c0-6.627 5.373-12 12-12s12 5.373 12 12\"/><path d=\"M36 20l4 4-4 4\"/><path d=\"M38 24h-8\"/></svg>",
+      "term": "Port Agent",
+      "definition": "A local shipping agency company appointed by a cruise line to represent the vessel at a specific port, handling official clearances, berth arrangements, provisioning, crew services, and shore-side logistics during port calls and turnaround days.",
+      "lastReviewed": "2026-07-19",
+      "distinctions": []
+    },
+    {
       "id": "port-charges",
       "vertical": "cruise",
       "category": "cruise",
@@ -46013,6 +46311,71 @@
       "lastReviewed": "2026-07-04"
     },
     {
+      "id": "stateroom",
+      "vertical": "cruise",
+      "category": "cruise",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "스테이트룸(Stateroom)",
+      "definition_ko": "크루즈 선박의 객실을 뜻하는 업계 표준 용어. 위치(내측·외측·발코니·스위트)와 갑판에 따라 등급이 나뉘며, 선사가 판매하는 기본 재고 단위다.",
+      "longDef": "The term \"stateroom\" has historical roots in the private cabins reserved for VIPs on steamships, large enough to receive guests in a formal reception. In modern cruise distribution, staterooms are the primary revenue-generating inventory unit and are classified into categories — inside (no porthole), oceanview (porthole/window), balcony (private balcony), mini-suite, and suite — each with its own deck-plan layout code and pricing tier. Unlike hotel rooms, staterooms are tied to a specific vessel, deck, and position (fore/aft/midship), which matters for motion sensitivity and convenience. Cruise lines reserve a proportion of staterooms as guarantee cabins (GTY), assigned at check-in within the purchased category.",
+      "longDef_ko": "역사적으로 스팀선에서 귀빈을 맞이하던 접견실을 갖춘 고급 객실에서 유래한 용어다. 현대 크루즈 유통에서 스테이트룸은 주요 수익 창출 재고 단위이며, 내측(창문 없음)·오션뷰(현창/창문)·발코니(개인 발코니)·미니 스위트·스위트 등으로 분류된다. 호텔 객실과 달리 특정 선박·갑판·위치(선수/선미/중앙)와 연계되며, 멀미 민감도 및 편의성에 영향을 미친다. 선사는 일정 비율의 스테이트룸을 구매 등급 내에서 체크인 시 배정하는 보증 객실(GTY)로 운영한다.",
+      "standardBody": "CLIA",
+      "aliases": [
+        "Cabin",
+        "Guest Cabin",
+        "Cruise Cabin",
+        "State Room"
+      ],
+      "relationships": [
+        {
+          "type": "broader",
+          "targetTerm": "Cabin Category",
+          "targetId": "cabin-category"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Guarantee Cabin (GTY)",
+          "targetId": "guarantee-cabin-gty"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Deck Plan",
+          "targetId": "deck-plan"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Cabin Category",
+          "explanation": "A stateroom is the physical accommodation unit on the ship; a cabin category is the classification code (e.g. \"OV\" for oceanview) that groups staterooms of similar type and deck range for pricing and inventory management.",
+          "explanation_ko": "스테이트룸은 선박 내 실제 객실 단위이고, 객실 카테고리는 유사한 유형과 갑판 범위의 스테이트룸을 요금 책정 및 재고 관리 목적으로 묶는 분류 코드(예: 오션뷰를 뜻하는 \"OV\")다.",
+          "targetId": "cabin-category"
+        }
+      ],
+      "sources": [
+        {
+          "name": "CLIA Cruise Industry Glossary",
+          "org": "Cruise Lines International Association",
+          "version": "",
+          "section": "Stateroom",
+          "url": "https://cruising.org/",
+          "tier": "association"
+        },
+        {
+          "name": "Princess Cruises — Stateroom Categories Guide",
+          "org": "Princess Cruises",
+          "version": "",
+          "section": "",
+          "url": "https://www.princess.com/learn/faq/pre-cruise/staterooms/",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"14\" width=\"32\" height=\"22\" rx=\"2\"/><path d=\"M8 22h32\"/><path d=\"M16 22v14\"/><circle cx=\"30\" cy=\"18\" r=\"2\"/><path d=\"M8 36h32\"/></svg>",
+      "term": "Stateroom",
+      "definition": "A guest cabin on a cruise ship; the standard term used across the cruise industry for sleeping accommodation. Staterooms are categorized by location (inside, outside, balcony, suite) and deck, and form the primary inventory unit sold by cruise lines.",
+      "lastReviewed": "2026-07-19"
+    },
+    {
       "id": "station-code",
       "vertical": "common",
       "category": "codes",
@@ -48132,6 +48495,82 @@
       "term": "Time and Mileage",
       "definition": "Time and Mileage is the fundamental car rental rate structure that pairs a time charge (daily, weekly, or monthly) with a mileage (or kilometre) allowance. It is the basis on which car rental base rates are filed and quoted, before taxes, surcharges, and optional products are added.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "timed-entry",
+      "vertical": "tours",
+      "category": "tour-product",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "시간 지정 입장(Timed Entry)",
+      "definition_ko": "입장 티켓을 특정 날짜 및 사전 지정 시간대에 발급하여 하루 종일 방문객 흐름을 분산함으로써 과밀을 방지하고 방문 경험 및 유적지 자체를 보호하는 방문객 관리 메커니즘.",
+      "longDef": "Timed entry (also called timed-ticketing or time-slot entry) was pioneered in museums and heritage sites and then adopted widely post-2020 as a response to overtourism and COVID-19 capacity restrictions. Attractions sell a fixed number of tickets per time slot (e.g., 09:00–10:00, 10:00–11:00), limiting the concurrent visitor count, reducing queuing, and improving the on-site experience. Timed entry integrates with online booking platforms and generates real-time capacity data, enabling dynamic pricing in some implementations where peak slots are charged at a premium. Major implementations include the Colosseum (Rome), the Acropolis (Athens), Vatican Museums, the Palace of Versailles, the Taj Mahal, and numerous national parks. Operators and OTAs must obtain timed-entry tickets through official supplier channels or accredited reseller APIs; free-sale general-admission tickets are replaced by slot-specific allocations that cannot be reused in a different time window.",
+      "longDef_ko": "시간 지정 입장(timed-ticketing 또는 time-slot entry라고도 함)은 박물관과 유적지에서 먼저 도입된 후 2020년 이후 과잉 관광(overtourism) 및 코로나19 수용 제한 대응으로 널리 채택되었다. 명소는 시간대별(예: 09:00–10:00, 10:00–11:00) 고정 인원 티켓을 판매하여 동시 방문객 수를 제한하고, 대기 줄을 줄이며, 현장 경험을 개선한다. 시간 지정 입장은 온라인 예약 플랫폼과 연동되어 실시간 수용력 데이터를 생성하며, 일부 구현에서는 피크 시간대 프리미엄을 부과하는 동적 가격 책정이 가능하다. 주요 도입 사례로는 콜로세움(로마), 아크로폴리스(아테네), 바티칸 박물관, 베르사유 궁전, 타지마할, 다수의 국립공원이 있다. 운영사 및 OTA는 공식 공급업체 채널이나 공인 리셀러 API를 통해 시간 지정 입장권을 확보해야 하며, 일반 입장권은 다른 시간대에 재사용할 수 없는 슬롯별 배정 티켓으로 대체된다.",
+      "standardBody": "UNWTO",
+      "aliases": [
+        "Timed Ticketing",
+        "Time-Slot Entry",
+        "Timed Ticket",
+        "Time-Slot Booking"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Timeslot",
+          "targetId": "timeslot"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Capacity",
+          "targetId": "capacity"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Skip-the-Line",
+          "targetId": "skip-the-line"
+        },
+        {
+          "type": "contrasts",
+          "targetTerm": "Virtual Queue",
+          "targetId": "virtual-queue"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Skip-the-Line",
+          "explanation": "Skip-the-line tickets grant priority access past the general-admission queue but do not always fix the entry to a specific time window; timed entry specifically controls the visit time slot and is typically mandatory for all visitors rather than being a premium tier add-on.",
+          "explanation_ko": "Skip-the-line 티켓은 일반 입장 대기열을 건너뛰는 우선 접근권을 부여하지만 반드시 특정 시간대를 고정하지는 않는다. 시간 지정 입장은 방문 시간대를 구체적으로 통제하며, 일반적으로 프리미엄 부가 옵션이 아니라 모든 방문객에게 의무 적용된다.",
+          "targetId": "skip-the-line"
+        },
+        {
+          "targetTerm": "Virtual Queue",
+          "explanation": "A virtual queue lets visitors join a digital line in real time and waits for an opening notification without physically standing in line; timed entry is an advance reservation of a date and time window purchased before the visit day.",
+          "explanation_ko": "가상 대기열(Virtual Queue)은 방문객이 실시간으로 디지털 줄에 합류해 물리적으로 줄 서지 않고 입장 알림을 기다리는 방식이고, 시간 지정 입장은 방문 당일 이전에 날짜와 시간대를 사전 예약하는 방식이다.",
+          "targetId": "virtual-queue"
+        }
+      ],
+      "sources": [
+        {
+          "name": "UNWTO: Reducing the Negative Impacts of Tourism on Cultural Heritage",
+          "org": "World Tourism Organization (UNWTO)",
+          "version": "",
+          "section": "Visitor Management",
+          "url": "https://www.unwto.org/toolkit/reducing-the-negative-impacts-of-tourism",
+          "tier": "association"
+        },
+        {
+          "name": "Colosseo — Official Timed-Entry Booking (Parco Colosseo)",
+          "org": "Parco Colosseo (Italian Ministry of Culture)",
+          "version": "",
+          "section": "",
+          "url": "https://www.coopculture.it/en/colosseo-e-shop.cfm",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"26\" r=\"14\"/><path d=\"M24 18v8l6 4\"/><path d=\"M14 6h20\"/><path d=\"M24 6v6\"/></svg>",
+      "term": "Timed Entry",
+      "definition": "A visitor management mechanism in which admission tickets to an attraction or heritage site are issued for a specific date and pre-defined time window, distributing visitor flow throughout the day to prevent overcrowding and protect both the visitor experience and the site itself.",
+      "lastReviewed": "2026-07-19"
     },
     {
       "id": "timeslot",
