@@ -2,8 +2,8 @@
   "meta": {
     "name": "Travel Wiki",
     "tagline": "여행 산업 용어 백과사전",
-    "generatedAt": "2026-07-19",
-    "entryCount": 595,
+    "generatedAt": "2026-07-20",
+    "entryCount": 601,
     "categoryCount": 20,
     "verticalCount": 6
   },
@@ -13132,6 +13132,89 @@
       "lastReviewed": "2026-06-30"
     },
     {
+      "id": "deadhead-flight",
+      "vertical": "air",
+      "category": "air-ops",
+      "conceptType": "business-term",
+      "status": "active",
+      "abbreviation": "DH",
+      "term_ko": "데드헤드 비행(Deadhead, DH)",
+      "definition_ko": "데드헤드 비행(Deadhead, DH)은 승무원이 업무를 수행하지 않고 자사 또는 타사 항공편의 일반 승객 자리에 탑승하여 원격 근무지로 이동하거나 임무를 마치고 귀환하는 항공 운항을 말한다. 항공기 전체가 수익 승객 없이 공항 간 이동하는 경우는 페리(ferry) 비행 또는 포지셔닝(positioning) 비행이라고도 한다. 두 경우 모두 승무원 스케줄링·운항통제 시스템에서 관리되며 비수익 비행으로 처리된다.",
+      "longDef": "Deadheading is a routine part of airline network operations: pilots, cabin crew, and other duty personnel must often travel between cities to be in the right place for their next scheduled service. Airlines track DH legs in crew scheduling systems (such as Jeppesen Crew Management, AIMS, or OPTi) and are required under collective bargaining agreements to compensate crew for deadhead time. Ferry flights arise from aircraft rotation requirements — when an aircraft finishes a day's flying at a city where it is not based, it may be ferried empty to its next morning's departure point. Both types consume fuel and crew-time without generating ticket revenue, making minimization a key goal of schedule optimization. IATA's SSIM standard uses a specific designation for non-revenue aircraft movements in schedule data.",
+      "longDef_ko": "데드헤드는 항공 네트워크 운항의 일상적인 부분이다. 조종사, 객실 승무원, 기타 임무 직원은 다음 예정 운항에 맞춰 위치를 잡기 위해 도시 간 이동을 해야 하는 경우가 많다. 항공사는 DH 구간을 승무원 스케줄링 시스템(Jeppesen Crew Management, AIMS, OPTi 등)에서 추적하며, 단체 교섭 협약에 따라 데드헤드 시간에 대해 승무원에게 보상해야 한다. 페리 비행은 항공기 순환 요건에서 발생한다. 항공기가 하루 비행을 자기 베이스가 아닌 도시에서 마치면, 다음 날 아침 출발지까지 빈 상태로 페리 비행을 해야 할 수 있다. 두 유형 모두 항공권 수익 없이 연료와 승무원 시간을 소모하므로, 최소화가 스케줄 최적화의 핵심 목표다. IATA의 SSIM 표준은 스케줄 데이터에서 비수익 항공기 이동에 대해 특정 지정 코드를 사용한다.",
+      "standardBody": "IATA",
+      "aliases": [
+        "Deadhead",
+        "DH Leg",
+        "Ferry Flight",
+        "Positioning Flight",
+        "Aircraft Positioning Flight"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Segment",
+          "targetId": "segment"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Flight Number",
+          "targetId": "flight-number"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Ground Handling",
+          "targetId": "ground-handling"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Load Factor",
+          "targetId": "load-factor"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Non-Revenue Passenger",
+          "targetId": "non-revenue-passenger"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Non-Revenue Passenger",
+          "explanation": "A deadhead crew member is a specific type of non-revenue traveler who is airline personnel traveling to position for duty; a Non-Revenue Passenger (NRPAX/NRSA) is the broader category that also includes employee personal travel, family pass beneficiaries, and industry-discount travelers.",
+          "explanation_ko": "데드헤드 승무원은 임무를 위해 포지셔닝하는 항공사 직원이라는 특정 유형의 비수익 여행자이고, 비수익 승객(NRPAX/NRSA)은 직원 개인 여행, 가족 패스 수혜자, 업계 할인 여행자까지 포함하는 더 넓은 범주다.",
+          "targetId": "non-revenue-passenger"
+        },
+        {
+          "targetTerm": "Segment",
+          "explanation": "A deadhead leg is a segment in the airline's operational sense — a flight from origin to destination — but it carries no ticketed revenue passengers; a revenue segment is the normal billable unit of transportation.",
+          "explanation_ko": "데드헤드 구간은 항공사 운항 의미에서의 segment, 즉 출발지에서 목적지까지의 비행이지만, 발권된 수익 승객을 태우지 않는다. 수익 segment는 일반적인 청구 가능 운송 단위다.",
+          "targetId": "segment"
+        }
+      ],
+      "sources": [
+        {
+          "name": "IATA Standard Schedules Information Manual (SSIM)",
+          "org": "IATA",
+          "version": "2023 Edition",
+          "section": "Chapter 3 — Aircraft Rotations and Non-Revenue Movements",
+          "url": "https://www.iata.org/en/publications/manuals/standard-schedules-information/",
+          "tier": "association"
+        },
+        {
+          "name": "Crew Management — Deadhead and Positioning",
+          "org": "Jeppesen (Boeing)",
+          "version": "",
+          "section": "",
+          "url": "https://ww2.jeppesen.com/airline-solutions/crew-management/",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 24h36\" stroke-dasharray=\"6,3\"/><path d=\"M28 14l10 10-10 10\"/><path d=\"M10 24h18\"/><circle cx=\"10\" cy=\"24\" r=\"3\"/></svg>",
+      "term": "Deadhead Flight",
+      "definition": "A deadhead flight (abbrev. DH) is an airline operation in which a crew member travels as a non-operating passenger on their own or another carrier's flight to position for duty at a remote location or to return home after completing duty. When an entire aircraft operates without revenue passengers to reposition between airports, it is alternatively called a ferry flight or positioning flight. Both are tracked in crew-scheduling and operations-control systems and are treated as non-revenue flights.",
+      "lastReviewed": "2026-07-20"
+    },
+    {
       "id": "deck-plan",
       "vertical": "cruise",
       "category": "cruise",
@@ -21113,6 +21196,76 @@
       "lastReviewed": "2026-06-28"
     },
     {
+      "id": "green-key-certification",
+      "vertical": "common",
+      "category": "sustainability",
+      "conceptType": "standard",
+      "status": "active",
+      "term_ko": "그린 키 인증(Green Key Certification)",
+      "definition_ko": "그린 키(Green Key)는 환경교육재단(Foundation for Environmental Education, FEE)이 관리하는 국제적으로 인정받는 에코 라벨로, 에너지 효율·물 관리·폐기물 및 자원 관리·유지 및 기후·그린 활동·식음료·기업 사회적 책임·자연 관리를 포함한 엄격한 환경·지속가능성 기준을 충족하는 호텔·호스텔·휴가지·캠핑장·소규모 숙박시설·기타 관광 사업체를 인증한다. Green Key는 글로벌 지속가능 관광 위원회(GSTC)의 인증을 받아, 인증 업체는 GSTC 호텔 기준 베이스라인도 충족한다.",
+      "longDef": "Founded in Denmark in 1994, Green Key has grown into one of the world's largest and most recognised eco-labels for tourism and leisure: as of 2025 more than 6,000 establishments in 65+ countries carry the label. Certification requires an independent external audit against a national standard adapted from FEE's global criteria, with annual re-inspection. The programme is organised through National Operators (e.g., national hotel associations or environmental agencies) who adapt criteria to local regulations and conduct the audit. Green Key criteria are structured around 13 sections: 1 — Environmental Policy & Staff Engagement; 2 — Water; 3 — Washing & Cleaning; 4 — Waste; 5 — Energy; 6 — Food & Beverage; 7 — Green Areas & Activities; 8 — CSR & Communication; 9 — Indoor Climate; 10 — Maintenance; 11 — Pest Control; 12 — Nature Management; 13 — Site Area. The GSTC accreditation of Green Key means that OTAs and corporate travel buyers who require GSTC-recognized sustainability certification can accept Green Key as proof of compliance. Green Key for Restaurants and Green Key for Attractions extend the label beyond accommodation to food-service and visitor attractions.",
+      "longDef_ko": "1994년 덴마크에서 창설된 Green Key는 2025년 현재 65개국 이상에서 6,000개 이상의 사업체가 인증을 취득하여 세계에서 가장 크고 인정받는 관광·레저 에코 라벨 중 하나로 성장했다. 인증은 FEE의 글로벌 기준에서 조정된 국내 기준에 대한 독립 외부 심사를 요구하며, 매년 재검사가 이루어진다. 프로그램은 지역 규제에 맞게 기준을 조정하고 심사를 수행하는 국내 운영자(국내 호텔 협회 또는 환경 기관 등)를 통해 운영된다. Green Key 기준은 13개 섹션(환경 정책 및 직원 참여, 물, 세탁 및 청소, 폐기물, 에너지, 식음료, 녹지 및 활동, CSR 및 커뮤니케이션, 실내 기후, 유지 관리, 해충 방제, 자연 관리, 부지 면적)으로 구성된다. Green Key의 GSTC 인증을 통해 GSTC 인정 지속가능성 인증을 요구하는 OTA 및 기업 여행 구매자는 Green Key를 적합성 증거로 인정할 수 있다. 레스토랑용 Green Key와 어트랙션용 Green Key는 인증을 숙박 시설을 넘어 식음료 서비스와 방문객 어트랙션으로 확장한다.",
+      "standardBody": "FEE; GSTC",
+      "aliases": [
+        "Green Key",
+        "Green Key Eco-Label",
+        "FEE Green Key"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "GSTC Criteria",
+          "targetId": "gstc-criteria"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Carbon Offset",
+          "targetId": "carbon-offset"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Overtourism",
+          "targetId": "overtourism"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "GSTC Criteria",
+          "explanation": "The GSTC Criteria are the global baseline standard for sustainable tourism against which certification programmes are evaluated and accredited; Green Key Certification is a specific eco-label programme that has been accredited by the GSTC as meeting those baseline criteria. A property holding Green Key is effectively verified as meeting GSTC Criteria by proxy.",
+          "explanation_ko": "GSTC 기준은 인증 프로그램이 평가·인증되는 지속가능 관광에 대한 글로벌 기준선 표준이고, Green Key 인증은 해당 기준선을 충족하는 것으로 GSTC의 인증을 받은 특정 에코 라벨 프로그램이다. Green Key를 보유한 업체는 사실상 GSTC 기준을 대리 검증받은 것이다.",
+          "targetId": "gstc-criteria"
+        },
+        {
+          "targetTerm": "Carbon Offset",
+          "explanation": "Green Key Certification is a property-level operational sustainability standard covering energy, water, waste, and biodiversity management; a Carbon Offset is a financial instrument that compensates for greenhouse gas emissions by funding reductions elsewhere. A Green Key-certified property may additionally purchase carbon offsets, but the certification itself is not an offset instrument.",
+          "explanation_ko": "Green Key 인증은 에너지·물·폐기물·생물다양성 관리를 포괄하는 시설 수준의 운영 지속가능성 표준이고, 탄소 상쇄는 다른 곳에서의 감축에 자금을 지원하여 온실가스 배출을 보상하는 금융 수단이다. Green Key 인증 업체가 추가로 탄소 상쇄를 구매할 수 있지만, 인증 자체는 상쇄 수단이 아니다.",
+          "targetId": "carbon-offset"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Green Key — Criteria and Standards",
+          "org": "Foundation for Environmental Education (FEE)",
+          "version": "",
+          "section": "Green Key International Criteria (v.2023)",
+          "url": "https://www.greenkey.global/criteria",
+          "tier": "standard-body"
+        },
+        {
+          "name": "GSTC — Recognized Standards Programme",
+          "org": "Global Sustainable Tourism Council",
+          "version": "",
+          "section": "",
+          "url": "https://www.gstcouncil.org/gstc-recognized-standards/",
+          "tier": "standard-body"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"20\" cy=\"20\" r=\"8\"/><path d=\"M26 26l14 14\"/><path d=\"M20 12c-4 4-4 4 0 8s8 4 8 8\" stroke-dasharray=\"3,2\"/><circle cx=\"20\" cy=\"20\" r=\"3\"/></svg>",
+      "term": "Green Key Certification",
+      "definition": "Green Key is an internationally recognized eco-label administered by the Foundation for Environmental Education (FEE) that certifies hotels, hostels, holiday parks, campsites, small accommodations, and other tourism establishments that meet a rigorous set of environmental and sustainability criteria. The label covers energy efficiency, water management, waste and resource management, maintenance and climate, green activities, food and beverage, corporate social responsibility, and nature management. Green Key is accredited by the Global Sustainable Tourism Council (GSTC), meaning certified properties also meet the GSTC Hotel Criteria baseline.",
+      "lastReviewed": "2026-07-20"
+    },
+    {
       "id": "gross-tonnage",
       "vertical": "cruise",
       "category": "cruise",
@@ -22501,6 +22654,138 @@
       "term": "HOT File",
       "definition": "The HOT file (Hand-Off Tape) is the standardized DISH-format output file the BSP transmits to airlines and their back-office systems, carrying the accounting and settlement detail of all agent ticketing and refund transactions processed in a billing period. It is the outbound, airline-facing counterpart to the inbound agent sales report (the RET file) and is a core mechanical artifact of BSP settlement.",
       "lastReviewed": "2026-06-18"
+    },
+    {
+      "id": "hotel-loyalty-program",
+      "vertical": "lodging",
+      "category": "hotel-dist",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "호텔 로열티 프로그램(Hotel Loyalty Program)",
+      "definition_ko": "호텔 로열티 프로그램(Hotel Loyalty Program, 호텔 리워드 프로그램)은 호텔 브랜드·컬렉션·컨소시엄이 운영하는 고객 유지 제도로, 회원들이 유상 숙박에 대해 포인트·자격 박 수·크레딧을 적립하고 무료 숙박·객실 업그레이드·식음료·파트너 리워드로 교환할 수 있다. 이 프로그램은 직접 예약의 가장 강력한 동인 중 하나로, 수수료가 15~25%에 달하는 OTA 채널의 수요를 브랜드 웹사이트로 전환함으로써 훨씬 낮은 비용으로 수익을 창출한다.",
+      "longDef": "Hotel loyalty programs operate on a earn-and-burn model: members earn a fixed number of points per dollar spent (or per stay), accumulate them in a central account, and redeem them against award night prices set dynamically or in award charts. Large programs — Marriott Bonvoy (220 M+ members), Hilton Honors (180 M+), IHG One Rewards, World of Hyatt, Wyndham Rewards, Choice Privileges — carry enormous balance sheets of unredeemed point liabilities, often securitized or collateralized for corporate financing. Tier structures (Silver, Gold, Platinum, Diamond) grant elite benefits (room upgrades, late checkout, lounge access, bonus points) to high-frequency guests, incentivizing concentration of spend at a single brand. Co-branded credit cards (issued in partnership with banks) are the largest driver of new member acquisition and of point issuance outside stays, and card spend has become a primary revenue stream for the program itself. Hotel loyalty programs differ from airline frequent-flyer programs primarily in the lower average redemption values and the property-by-property benefit variability across franchise networks. Distribution systems (GDS, OTAs) typically cannot enroll members or credit stays — only a booking with a member rate on the brand channel or recognized intermediary guarantees accrual.",
+      "longDef_ko": "호텔 로열티 프로그램은 적립·사용(earn-and-burn) 모델로 운영된다. 회원은 지출 금액 또는 숙박 당 고정 포인트를 적립하고, 중앙 계정에 축적한 후 동적으로 설정되거나 어워드 차트에 따라 책정된 어워드 숙박 가격으로 교환한다. 대형 프로그램—Marriott Bonvoy(2억 2천만 명 이상), Hilton Honors(1억 8천만 명 이상), IHG One Rewards, World of Hyatt, Wyndham Rewards, Choice Privileges—은 미상환 포인트 부채를 대규모 대차대조표로 보유하며, 종종 기업 자금 조달을 위해 유동화·담보화된다. 티어 구조(실버·골드·플래티넘·다이아몬드)는 고빈도 이용자에게 객실 업그레이드·늦은 체크아웃·라운지 이용·보너스 포인트 등 우대 혜택을 제공하여 단일 브랜드에 집중 소비를 유도한다. 은행과 파트너십으로 발행되는 공동 브랜드 신용카드는 신규 회원 유치와 숙박 외 포인트 발급의 가장 큰 동인이며, 카드 소비는 프로그램 자체의 주요 수익원이 되었다.",
+      "standardBody": "AHLA; HEDNA",
+      "aliases": [
+        "Hotel Rewards Program",
+        "Hotel Points Program",
+        "Hotel Membership Program",
+        "Marriott Bonvoy",
+        "Hilton Honors",
+        "IHG One Rewards",
+        "World of Hyatt",
+        "Wyndham Rewards",
+        "Choice Privileges"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Marriott International",
+          "term": "Marriott Bonvoy",
+          "context": "Marriott Bonvoy is the unified loyalty program for Marriott International's 30+ hotel brands, launched in 2019, unifying Marriott Rewards, Starwood Preferred Guest (SPG), and Ritz-Carlton Rewards.",
+          "context_ko": "Marriott Bonvoy는 마리어트 인터내셔널의 30개 이상 호텔 브랜드를 위한 통합 로열티 프로그램으로, 2019년 출시되어 Marriott Rewards, Starwood Preferred Guest(SPG), Ritz-Carlton Rewards를 통합했다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Hilton Worldwide",
+          "term": "Hilton Honors",
+          "context": "Hilton Honors is the loyalty program for Hilton's 18+ brands with over 180 million members, offering points earning on stays, dining, and co-branded credit card spend.",
+          "context_ko": "힐튼 호너스는 힐튼의 18개 이상 브랜드를 위한 로열티 프로그램으로 1억 8천만 명 이상의 회원을 보유하며, 숙박·식음료·공동 브랜드 신용카드 소비에 대해 포인트를 적립한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "IHG Hotels & Resorts",
+          "term": "IHG One Rewards",
+          "context": "IHG One Rewards is the loyalty program for IHG's 19 hotel brands including InterContinental, Holiday Inn, Crowne Plaza, and Kimpton.",
+          "context_ko": "IHG One Rewards는 InterContinental, Holiday Inn, Crowne Plaza, Kimpton을 포함한 IHG의 19개 호텔 브랜드를 위한 로열티 프로그램이다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Hyatt Hotels Corporation",
+          "term": "World of Hyatt",
+          "context": "World of Hyatt offers a points-and-qualifying-nights structure with a strong focus on premium benefits for top-tier Globalist members.",
+          "context_ko": "World of Hyatt는 포인트·자격 박 구조를 제공하며, 최고 등급 Globalist 회원을 위한 프리미엄 혜택에 중점을 둔다.",
+          "relationship": "same"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Loyalty Tier Status",
+          "targetId": "loyalty-tier-status"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Award Redemption",
+          "targetId": "award-redemption"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Direct Booking",
+          "targetId": "direct-booking"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Co-branded Credit Card",
+          "targetId": "co-branded-credit-card"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Booking Engine",
+          "targetId": "booking-engine"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Metasearch",
+          "targetId": "metasearch"
+        },
+        {
+          "type": "contrasts",
+          "targetTerm": "Frequent Flyer Program",
+          "targetId": "frequent-flyer-program"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Frequent Flyer Program",
+          "explanation": "A Frequent Flyer Program (FFP) is the loyalty scheme operated by an airline rewarding flight activity; a Hotel Loyalty Program rewards hotel stays. The two are distinct systems but often linked through airline-hotel transfer partnerships. Hotel points typically have lower cents-per-point values than airline miles when redeemed for premium award flights.",
+          "explanation_ko": "상용고객 프로그램(FFP)은 항공사가 비행 활동에 보상하기 위해 운영하는 로열티 제도이고, 호텔 로열티 프로그램은 호텔 숙박에 보상한다. 두 제도는 별개의 시스템이지만 항공-호텔 이전 파트너십으로 연결되는 경우가 많다. 호텔 포인트는 프리미엄 어워드 항공편으로 교환할 때 항공 마일보다 포인트당 센트 가치가 낮은 경향이 있다.",
+          "targetId": "frequent-flyer-program"
+        },
+        {
+          "targetTerm": "Loyalty Tier Status",
+          "explanation": "Loyalty Tier Status is the specific tier level (Silver, Gold, Platinum, Diamond, Globalist etc.) earned by a member through qualifying activity; Hotel Loyalty Program is the overall reward scheme that defines and operates those tiers.",
+          "explanation_ko": "로열티 등급 상태(Loyalty Tier Status)는 회원이 자격 활동을 통해 획득한 특정 등급 수준(실버·골드·플래티넘·다이아몬드·글로벌리스트 등)이고, 호텔 로열티 프로그램은 해당 등급을 정의하고 운영하는 전반적인 리워드 제도다.",
+          "targetId": "loyalty-tier-status"
+        },
+        {
+          "targetTerm": "Direct Booking",
+          "explanation": "Direct Booking is the mechanism (booking through the hotel's own brand channel) that hotel loyalty programs are designed to incentivize; the loyalty program is the reward structure motivating the direct booking behavior.",
+          "explanation_ko": "직접 예약(Direct Booking)은 호텔 로열티 프로그램이 장려하도록 설계된 메커니즘(호텔 자체 브랜드 채널을 통한 예약)이고, 로열티 프로그램은 직접 예약 행동을 동기부여하는 리워드 구조다.",
+          "targetId": "direct-booking"
+        }
+      ],
+      "sources": [
+        {
+          "name": "HEDNA (Hospitality Electronic Distribution Network Association) Distribution Strategy Guide",
+          "org": "HEDNA",
+          "version": "2024",
+          "section": "Direct Booking and Loyalty",
+          "url": "https://hedna.org/resources/white-papers/",
+          "tier": "association"
+        },
+        {
+          "name": "Marriott Bonvoy Program Overview",
+          "org": "Marriott International",
+          "version": "",
+          "section": "",
+          "url": "https://www.marriott.com/loyalty/member-benefits.mi",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"20\" width=\"32\" height=\"22\" rx=\"2\"/><path d=\"M16 20v-6a8 8 0 0 1 16 0v6\"/><path d=\"M24 30v4\"/><circle cx=\"24\" cy=\"29\" r=\"3\"/><path d=\"M19 42h10\"/></svg>",
+      "term": "Hotel Loyalty Program",
+      "definition": "A hotel loyalty program (also called a hotel rewards program) is a customer-retention scheme operated by a hotel brand, collection, or consortium in which members earn points, qualifying nights, or credits for paid stays and can redeem them for free nights, room upgrades, dining, and partner rewards. Programs are among the most powerful drivers of direct booking, enabling hotel companies to shift demand away from OTA channels — where commissions range from 15–25% — toward the brand website at a fraction of the cost.",
+      "lastReviewed": "2026-07-20"
     },
     {
       "id": "hotel-management-agreement-hma",
@@ -31414,6 +31699,101 @@
       "term": "Non-Refundable Rate",
       "definition": "A non-refundable rate is a room rate sold at a discount in exchange for full prepayment and no right to a refund if the guest cancels, amends or fails to arrive. The commercial risk shifts to the guest, and the hotel secures committed revenue earlier than with a flexible rate.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "non-revenue-passenger",
+      "vertical": "air",
+      "category": "air-ops",
+      "conceptType": "business-term",
+      "status": "active",
+      "abbreviation": "NRPAX",
+      "term_ko": "비수익 승객(Non-Revenue Passenger, NRPAX/NRSA)",
+      "definition_ko": "비수익 승객(NRPAX 또는 NRSA — Non-Revenue Space Available)은 항공사 직원 및 스태프 여행 혜택을 받는 가족, 데드헤드로 이동하는 승무원, 팸 트립(familiarization trip)을 떠나는 여행 업계 종사자, 무상 또는 대폭 할인 항공권 소지자 등 거의 또는 전혀 운임을 지불하지 않고 항공기를 이용하는 여객이다. 비수익 승객은 일반적으로 모든 유상 승객 탑승 후 대기(standby) 방식으로 탑승하며, 운임 수익에 기여하지 않는다.",
+      "longDef": "Airlines distinguish several non-revenue categories. Staff travel (ID travel) covers employee personal-use benefits — the airline's own staff fly at sharply reduced fares and family members may fly on pass benefits. Interline staff travel (ZED — Zonal Employee Discount fares) extends reciprocal staff discounts across airlines via bilateral ZED agreements. Industry discount (ID) fares are offered to travel agents at significant discounts in exchange for promotion of the airline. Complimentary (COMP) travel includes vouchers issued for service recovery, frequent-flyer program rewards fulfilled as free tickets, and upgrades cleared from the upgrade waitlist. Deadheading crew (see Deadhead Flight) are a specific sub-type required operationally. Non-revenue passengers create a yield-management tension: each NRSA seat taken reduces last-minute revenue inventory. To protect revenue, airlines govern NRSA priority boarding order (generally: revenue upgrades > ZED/ID fares > airline employees) and restrict or eliminate non-revenue travel on high-demand flights. IATA Resolution 788 and bilateral staff-travel agreements specify ZED/ID fare rules.",
+      "longDef_ko": "항공사는 비수익 범주를 여러 가지로 구분한다. 스태프 트래블(ID 여행)은 직원 개인용 혜택으로, 항공사 직원은 대폭 할인된 운임으로, 가족은 패스 혜택으로 비행한다. 인터라인 스태프 트래블(ZED — 지역별 직원 할인 운임)은 양자 ZED 협정을 통해 항공사 간 상호 직원 할인을 확대한다. 업계 할인(ID) 운임은 항공사 홍보 대가로 여행사에 상당한 할인을 제공한다. 무상(COMP) 여행에는 서비스 보상 바우처, 상용고객 프로그램 리워드로 발행된 무료 항공권, 업그레이드 대기자 명단에서 확정된 업그레이드가 포함된다. 데드헤딩 승무원(Deadhead Flight 참조)은 운항상 필요한 특정 하위 유형이다. 비수익 승객은 수율 관리 긴장을 초래하므로, 항공사는 NRSA 탑승 우선순위 순서(일반적으로 수익 업그레이드 > ZED/ID 운임 > 항공사 직원 순)를 관리하고, 수요가 높은 항공편에서 비수익 여행을 제한 또는 금지한다.",
+      "standardBody": "IATA",
+      "aliases": [
+        "NRSA",
+        "Non-Revenue Space Available",
+        "Staff Travel Passenger",
+        "ID Travel",
+        "ZED Travel",
+        "Industry Discount Passenger"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Standby",
+          "targetId": "standby"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Load Factor",
+          "targetId": "load-factor"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Revenue Management",
+          "targetId": "revenue-management"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Passenger Type Code",
+          "targetId": "passenger-type-code"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Deadhead Flight",
+          "targetId": "deadhead-flight"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Overbooking",
+          "targetId": "overbooking"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Deadhead Flight",
+          "explanation": "A deadhead crew member is a sub-type of non-revenue passenger: airline duty personnel traveling to position for their next operating assignment. The broader NRPAX category also includes employees and family members traveling for personal purposes, industry agents, and complimentary ticket holders.",
+          "explanation_ko": "데드헤딩 승무원은 비수익 승객의 하위 유형으로, 다음 운항 임무를 위해 이동하는 항공사 직무 직원이다. 더 넓은 NRPAX 범주에는 개인 여행을 하는 직원·가족, 업계 에이전트, 무상 항공권 소지자도 포함된다.",
+          "targetId": "deadhead-flight"
+        },
+        {
+          "targetTerm": "Standby",
+          "explanation": "Standby is the boarding status: a passenger waiting for an open seat on a specific flight without a confirmed booking. Non-revenue passengers almost always travel on standby, but a paying passenger whose earlier flight was cancelled can also travel standby on a revenue basis; the two concepts overlap but are not identical.",
+          "explanation_ko": "Standby는 탑승 상태, 즉 확정 예약 없이 특정 항공편의 빈 좌석을 기다리는 승객의 상태다. 비수익 승객은 거의 항상 standby로 여행하지만, 이전 항공편이 취소된 유상 승객도 수익 기준으로 standby로 여행할 수 있으므로 두 개념은 겹치지만 동일하지 않다.",
+          "targetId": "standby"
+        },
+        {
+          "targetTerm": "Passenger Type Code",
+          "explanation": "A Passenger Type Code (PTC) is the GDS code used in pricing to categorize a traveler (ADT, CHD, INF, etc.). Non-revenue passengers may be ticketed with specific non-revenue PTCs (e.g., ID — Industry Discount) that trigger the applicable fare discount; PTC is the booking/ticketing mechanism, NRPAX is the policy category.",
+          "explanation_ko": "승객 유형 코드(PTC)는 여행자를 분류하기 위해 가격 산정 시 GDS에서 사용하는 코드(ADT, CHD, INF 등)다. 비수익 승객은 해당 운임 할인을 적용하는 특정 비수익 PTC(예: ID — 업계 할인)로 발권될 수 있다. PTC는 예약/발권 메커니즘이고, NRPAX는 정책 범주다.",
+          "targetId": "passenger-type-code"
+        }
+      ],
+      "sources": [
+        {
+          "name": "IATA Resolution 788 (Staff Travel)",
+          "org": "IATA",
+          "version": "",
+          "section": "Zonal Employee Discount (ZED) Framework",
+          "url": "https://www.iata.org/en/programs/airline-distribution/staff-travel/",
+          "tier": "association"
+        },
+        {
+          "name": "IATA Passenger Services Conference Resolutions Manual (PSCRM)",
+          "org": "IATA",
+          "version": "46th Edition (2026)",
+          "section": "",
+          "url": "https://www.iata.org/en/publications/manuals/passenger-services-conference-resolution-manual/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"14\" r=\"6\"/><path d=\"M10 40c0-8 6-14 14-14s14 6 14 14\"/><rect x=\"32\" y=\"26\" width=\"10\" height=\"7\" rx=\"1.5\" stroke-dasharray=\"3,2\"/><line x1=\"34\" y1=\"29\" x2=\"40\" y2=\"29\" stroke-dasharray=\"3,2\"/></svg>",
+      "term": "Non-Revenue Passenger",
+      "definition": "A non-revenue passenger (NRPAX or NRSA — Non-Revenue Space Available) is a person traveling on an airline who pays little or no fare, including airline employees and their eligible family members using staff travel benefits, crew members deadheading to position for duty, travel-industry agents on familiarization trips, and holders of complimentary or heavily discounted tickets. Non-revenue passengers are typically boarded on a standby basis after all revenue passengers have been accommodated and do not contribute meaningfully to fare-box revenue.",
+      "lastReviewed": "2026-07-20"
     },
     {
       "id": "notam",
@@ -49119,6 +49499,94 @@
       "lastReviewed": "2026-07-05"
     },
     {
+      "id": "transatlantic-crossing",
+      "vertical": "cruise",
+      "category": "cruise",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "대서양 횡단(Transatlantic Crossing)",
+      "definition_ko": "대서양 횡단(Transatlantic Crossing)은 대서양 양쪽의 항구, 즉 주로 북미 동부 항구(뉴욕·보스턴·포트로더데일)와 북유럽 또는 남유럽 항구(사우샘프턴·함부르크·리스본·바르셀로나) 사이를 운항하는 편도 해양 항해로, 출발 항구로 복귀하지 않는다. 함대를 계절별 배치 지역 사이에 이동시키는 리포지셔닝 크루즈와 달리, 대서양 횡단은 연속적인 해상 항해일·격식 있는 저녁·교양 프로그램·대양 여객선 여행의 전통으로 특징지어지는 독자적인 여행 경험으로 마케팅된다.",
+      "longDef": "Transatlantic crossings have roots in the liner trade that predates aviation: ships like RMS Titanic, RMS Queen Mary, and SS United States transported passengers between Europe and the Americas as the primary mode of intercontinental travel. Today Cunard's Queen Mary 2 (QM2) is the only dedicated ocean liner purpose-built for regular transatlantic service, completing approximately 20 crossings per year between Southampton and New York, with some voyages calling at Boston, Hamburg, or Lisbon. The typical crossing is 7 nights eastbound or westbound, covering roughly 3,500 nautical miles (6,500 km) at 25–30 knots. Other major cruise lines (MSC, Norwegian, Royal Caribbean, Celebrity, and Holland America) operate seasonal transatlantic repositioning voyages in spring (eastbound) and autumn (westbound) as their fleets shift between Caribbean/US East Coast and Mediterranean/Northern Europe deployments. These may include several port calls and differ from QM2's line voyages in character. From a distribution standpoint, transatlantic crossings are sold as fly-cruise or cruise-only products: the one-way nature typically requires an airlift add-on at one end, which is often sold as a package. CLIA classifies transatlantic voyages separately from Caribbean and Mediterranean cruises in its annual cruise market reports.",
+      "longDef_ko": "대서양 횡단은 항공이 등장하기 전 유럽과 아메리카 대륙 간 주요 이동 수단인 정기 선박 운항에 뿌리를 두고 있다. RMS Titanic, RMS Queen Mary, SS United States 등의 선박이 대륙 간 여행의 주 수단으로 운항했다. 오늘날 큐나드(Cunard)의 Queen Mary 2(QM2)는 정기 대서양 횡단 서비스를 위해 특별 설계된 유일한 전용 대양 여객선으로, 연간 약 20회 사우샘프턴과 뉴욕 사이를 운항하며 일부 항해는 보스턴·함부르크·리스본에 기항한다. 전형적인 횡단은 7박으로, 약 3,500해리(6,500km)를 25~30노트로 항해한다. MSC·노르웨이지안·로열캐리비안·셀러브리티·홀란드아메리카 등 주요 크루즈 선사들도 카리브해/미국 동부 해안과 지중해/북유럽 배치 사이에 선대를 이동시키는 봄(동쪽)·가을(서쪽) 계절적 대서양 리포지셔닝 항해를 운항한다. 유통 측면에서 대서양 횡단은 플라이-크루즈 또는 크루즈 단독 상품으로 판매되며, 편도 특성상 보통 항공권 패키지가 필요하다.",
+      "standardBody": "CLIA",
+      "aliases": [
+        "Transatlantic Voyage",
+        "Atlantic Crossing",
+        "Ocean Crossing",
+        "Liner Crossing",
+        "QM2 Crossing"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Repositioning Cruise",
+          "targetId": "repositioning-cruise"
+        },
+        {
+          "type": "related",
+          "targetTerm": "World Cruise",
+          "targetId": "world-cruise"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Homeport",
+          "targetId": "homeport"
+        },
+        {
+          "type": "related",
+          "targetTerm": "CLIA (Cruise Lines International Association)",
+          "targetId": "clia"
+        },
+        {
+          "type": "contrasts",
+          "targetTerm": "River Cruise",
+          "targetId": "river-cruise"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Repositioning Cruise",
+          "explanation": "A Repositioning Cruise is primarily a logistical voyage to move a ship between seasonal deployment areas; a Transatlantic Crossing is marketed as a destination experience in its own right — passengers choose it for the voyage itself, not merely as a way to reach Europe or North America. The distinction is one of intent: reposition vs. experience.",
+          "explanation_ko": "리포지셔닝 크루즈는 주로 선박을 계절적 배치 지역 사이에 이동시키기 위한 물류적 항해이고, 대서양 횡단은 그 자체로 목적지 경험으로 마케팅된다. 승객은 유럽이나 북미에 도달하는 수단이 아니라 항해 자체를 위해 대서양 횡단을 선택한다. 구분의 핵심은 의도다: 재배치 vs. 경험.",
+          "targetId": "repositioning-cruise"
+        },
+        {
+          "targetTerm": "World Cruise",
+          "explanation": "A World Cruise circumnavigates the globe or covers multiple oceans over 80–180+ days; a Transatlantic Crossing is a focused single-ocean voyage of 7–14 days between North America and Europe. A world cruise will include a transatlantic segment, but the Transatlantic Crossing is sold as a standalone product.",
+          "explanation_ko": "월드 크루즈는 80~180일 이상에 걸쳐 지구를 일주하거나 여러 대양을 거치는 반면, 대서양 횡단은 북미와 유럽 사이를 7~14일간 운항하는 단일 대양 집중 항해다. 월드 크루즈에는 대서양 횡단 구간이 포함되지만, 대서양 횡단은 독립 상품으로 판매된다.",
+          "targetId": "world-cruise"
+        },
+        {
+          "targetTerm": "River Cruise",
+          "explanation": "A River Cruise operates on inland waterways (Rhine, Danube, Mekong, Nile, Amazon) with small ships carrying 100–200 passengers and port calls every day or two; a Transatlantic Crossing is an open-ocean voyage of consecutive sea days on a large ship carrying 1,000–4,000 passengers.",
+          "explanation_ko": "강 크루즈는 소형 선박(100~200명)으로 내륙 수로(라인강·다뉴브강·메콩강·나일강·아마존강)를 운항하며 매일 또는 이틀마다 기항하는 반면, 대서양 횡단은 대형 선박(1,000~4,000명)으로 연속 해상 항해일을 보내는 공해 항해다.",
+          "targetId": "river-cruise"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Cunard Line — Transatlantic Crossings",
+          "org": "Cunard Line",
+          "version": "",
+          "section": "",
+          "url": "https://www.cunard.com/en-gb/cruise-types/transatlantic-crossings",
+          "tier": "vendor-doc"
+        },
+        {
+          "name": "CLIA State of the Cruise Industry Outlook",
+          "org": "Cruise Lines International Association (CLIA)",
+          "version": "2025",
+          "section": "Voyage Type Classification",
+          "url": "https://cruising.org/en/research-and-advocacy/research/state-of-the-cruise-industry",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 34c4-4 8 4 12 0s8-4 12 0 8 4 12 0\"/><path d=\"M4 40c4-4 8 4 12 0s8-4 12 0 8 4 12 0\"/><path d=\"M10 34l4-12h20l4 12\"/><path d=\"M16 22v-6h16v6\"/><path d=\"M24 16v-6\"/><path d=\"M21 10h6\"/></svg>",
+      "term": "Transatlantic Crossing",
+      "definition": "A transatlantic crossing is an ocean voyage between ports on opposite sides of the Atlantic Ocean — typically between eastern North American ports (New York, Boston, Fort Lauderdale) and northern or southern European ports (Southampton, Hamburg, Lisbon, Barcelona) — offered as a one-way voyage without returning to the departure port. Unlike repositioning cruises that move a ship between seasonal deployment areas, transatlantic crossings are marketed in their own right as a distinct travel experience characterized by consecutive sea days, formal evenings, enrichment programming, and the tradition of ocean-liner travel.",
+      "lastReviewed": "2026-07-20"
+    },
+    {
       "id": "transfer",
       "vertical": "tours",
       "category": "tour-ops",
@@ -50995,6 +51463,84 @@
       "term": "Unaccompanied Minor",
       "definition": "An Unaccompanied Minor (UMNR) is a child travelling by air without an accompanying parent, legal guardian, or responsible adult aged 18 or over, for whom the carrier provides a supervised escort service from departure check-in through to handover to an authorized adult at the destination. UMNR is also the IATA Special Service Request (SSR) code used to advise carriers that a passenger is an unaccompanied minor.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "unit-load-device",
+      "vertical": "air",
+      "category": "air-ops",
+      "conceptType": "standard",
+      "status": "active",
+      "abbreviation": "ULD",
+      "term_ko": "단위 적재 장치(ULD, Unit Load Device)",
+      "definition_ko": "ULD(Unit Load Device, 단위 적재 장치)는 상업용 항공기에서 화물·수하물·우편물을 항공기 하부 화물칸의 잠금 장치에 고정할 수 있는 기계적으로 취급 가능한 단위로 통합하기 위해 IATA가 인증한 표준화된 팔레트·컨테이너·이글루다. ULD는 램프 적재 시간을 줄이고, 내용물을 보호하며, 중량 및 균형 계산에 필요한 알려진 중량·용적 데이터를 제공한다. IATA는 장치 유형·치수·감항성 요건을 정의하는 ULD 기술 매뉴얼(UTM)과 ULD 규정(ULDR)을 관리한다.",
+      "longDef": "ULDs are classified into two broad families: containers (AKE, AKH, LD3, LD7 and other IATA-coded types) and pallets (P1P, PMC, PAP etc.), each with a standardized footprint and contour matching the aircraft hold cross-section. A two-letter type code followed by optional letters identifies shape, material, and build standard (e.g., LD3 = lower-deck container fitting the 747/777 lower hold; AKE = aluminium lower-deck container). Airlines own or lease fleets of ULDs and track them with ULD control numbers (IATA 3-letter airline prefix + 4–5 digits + check digit) encoded in barcodes and RFID tags. Transfer of ULDs between airlines is governed by the IATA Interchange Agreement (IIA). ULD damage, loss, or return delays incur charges per the IATA ULD Regulations. From a revenue standpoint, the ability to unitize cargo is foundational to belly cargo revenue which provides significant ancillary revenue to passenger airlines — typically 5–10% of total revenue on international widebody routes.",
+      "longDef_ko": "ULD는 두 가지 큰 군으로 분류된다: 컨테이너(AKE, AKH, LD3, LD7 등 IATA 코드 유형)와 팔레트(P1P, PMC, PAP 등)이며, 각각 항공기 화물칸 단면에 맞는 표준화된 바닥 면적과 외곽선을 가진다. 2자 유형 코드에 선택적 문자를 붙여 형상·재질·제작 기준을 식별한다(예: LD3 = 747/777 하부 화물칸에 맞는 하부 데크 컨테이너, AKE = 알루미늄 하부 데크 컨테이너). 항공사는 ULD 기단을 소유 또는 임대하고, 바코드와 RFID 태그에 인코딩된 ULD 관리 번호(IATA 3자 항공사 접두사 + 4~5자리 + 검사 자리)로 추적한다. 항공사 간 ULD 이전은 IATA 교환 협정(IIA)이 규율하며, ULD 손상·분실·반납 지연은 IATA ULD 규정에 따라 요금이 부과된다. 수익 측면에서 화물 단위화 능력은 벨리 화물 수익의 기반이며, 국제 광동체 노선에서 총 수익의 5~10%를 차지하는 중요한 부가 수익원이다.",
+      "standardBody": "IATA",
+      "aliases": [
+        "ULD",
+        "Air Container",
+        "LD3",
+        "Air Pallet",
+        "Unit Load Container"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Ground Handling",
+          "targetId": "ground-handling"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Weight and Balance",
+          "targetId": "weight-and-balance"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Air Waybill Number",
+          "targetId": "air-waybill-number"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Load Factor",
+          "targetId": "load-factor"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Air Waybill Number",
+          "explanation": "The Air Waybill Number (AWB) is the transport document and contract of carriage for a specific cargo shipment; the ULD is the physical device in which one or more shipments are consolidated for aircraft loading. An AWB tracks the shipment's commercial journey; a ULD tracks the physical container's journey across the airline's network.",
+          "explanation_ko": "항공화물운송장 번호(AWB)는 특정 화물 운송에 대한 운송 서류 및 운송 계약이고, ULD는 하나 이상의 화물을 항공기 적재를 위해 통합하는 물리적 장치다. AWB는 화물의 상업적 여정을 추적하고, ULD는 물리적 컨테이너의 항공사 네트워크 내 여정을 추적한다.",
+          "targetId": "air-waybill-number"
+        },
+        {
+          "targetTerm": "Ground Handling",
+          "explanation": "Ground Handling encompasses the full range of ramp and terminal services, including ULD build-up, breakdown, transport, and loading/offloading; ULD is the specific piece of equipment that the ground handler moves and loads.",
+          "explanation_ko": "Ground Handling은 ULD 구축·해체·운반·적재/하역을 포함한 램프 및 터미널 서비스 전체를 포괄하고, ULD는 지상 취급 업체가 이동·적재하는 특정 장비다.",
+          "targetId": "ground-handling"
+        }
+      ],
+      "sources": [
+        {
+          "name": "IATA ULD Technical Manual (UTM)",
+          "org": "IATA",
+          "version": "8th Edition",
+          "section": "Chapter 1 — ULD Types and Codes",
+          "url": "https://www.iata.org/en/publications/manuals/uld-technical-manual/",
+          "tier": "association"
+        },
+        {
+          "name": "IATA ULD Regulations (ULDR)",
+          "org": "IATA",
+          "version": "2023",
+          "section": "",
+          "url": "https://www.iata.org/en/publications/manuals/uld-regulations/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"16\" width=\"26\" height=\"22\" rx=\"2\"/><path d=\"M8 22h26\"/><path d=\"M14 38v4M28 38v4\"/><path d=\"M34 24l6-8\"/><path d=\"M34 16l6 0\"/><path d=\"M40 16v8\"/></svg>",
+      "term": "Unit Load Device",
+      "definition": "A Unit Load Device (ULD) is a standardized pallet, container, or igloo certified by IATA for use on commercial aircraft to consolidate cargo, baggage, and mail into mechanically handleable units that lock into the aircraft lower hold. ULDs reduce ramp loading time, protect contents, and provide the known weight and volumetric data required for weight-and-balance calculations. IATA maintains the ULD Technical Manual (UTM) and ULD Regulations (ULDR) defining device types, dimensions, and airworthiness requirements.",
+      "lastReviewed": "2026-07-20"
     },
     {
       "id": "universal-product-attributes-upa",
