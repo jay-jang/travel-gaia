@@ -2,8 +2,8 @@
   "meta": {
     "name": "Travel Wiki",
     "tagline": "여행 산업 용어 백과사전",
-    "generatedAt": "2026-07-20",
-    "entryCount": 601,
+    "generatedAt": "2026-07-21",
+    "entryCount": 607,
     "categoryCount": 20,
     "verticalCount": 6
   },
@@ -369,6 +369,91 @@
       "term": "3-D Secure",
       "definition": "3-D Secure is a messaging protocol that adds an authentication layer to card-not-present (online) card payments, enabling the issuer to verify the cardholder before authorization. The current generation, EMV 3-D Secure (3DS2), is managed by EMVCo and underpins liability shift and Strong Customer Authentication (SCA) compliance.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "accidental-death-dismemberment",
+      "vertical": "common",
+      "category": "insurance",
+      "conceptType": "business-term",
+      "status": "active",
+      "abbreviation": "AD&D",
+      "term_ko": "상해사망·후유장애(Accidental Death & Dismemberment, AD&D)",
+      "definition_ko": "AD&D(Accidental Death & Dismemberment, 상해사망·후유장애)는 여행 중 보장된 사고로 피보험자가 사망하면 지명 수익자에게, 특정 영구적 신체 손실(사지 절단, 실명, 청각·언어 기능 완전 상실)이 발생하면 피보험자 본인에게 고정 일시금(principal sum)을 지급하는 여행보험 특약이다. 질병은 보장 대상이 아니며 오직 사고에 의한 손실만 보장된다. 24시간 AD&D(전 여행 기간), 정기 운송수단 AD&D(허가된 운송수단 탑승 중), 항공 한정 AD&D의 세 가지 변형이 일반적으로 존재한다.",
+      "longDef": "AD&D benefits are structured around a \"principal sum\" — the face-value indemnity amount stated in the policy schedule. For accidental death, 100% of the principal sum is paid to the named beneficiary (or, absent a named beneficiary, to the insured's estate). For dismemberment, the benefit is a percentage of the principal sum as specified in the policy's benefit schedule: typically 100% for the loss of both hands, both feet, or sight in both eyes; 50% for one hand, one foot, or sight in one eye; and lesser percentages for loss of hearing or speech. The triggering event must be an accident — sudden, unintentional, and caused by external means — and the loss must occur within a specified period following the accident (often 365 days). Illness, pre-existing conditions, and losses from high-risk activities (unless a rider is purchased) are excluded. AD&D is fundamentally different from travel medical insurance: it is a fixed indemnity product rather than an expense-reimbursement product. The three common variants are: (1) 24-Hour AD&D — covers accidents occurring at any time during the trip, including non-travel activities; (2) Common Carrier AD&D — covers accidents while the insured is a fare-paying passenger aboard a licensed common carrier (airline, cruise ship, bus, rail); (3) Flight AD&D — restricted to accidents aboard commercial aircraft. AD&D is often included as a component of a comprehensive travel insurance policy rather than sold standalone.",
+      "longDef_ko": "AD&D 특약은 약관 스케줄에 명시된 액면 보상액인 \"principal sum\"을 기준으로 구성된다. 상해사망의 경우 principal sum의 100%가 지명 수익자(또는 수익자 미지정 시 상속재산)에게 지급된다. 후유장애의 경우 약관의 급부 스케줄에 따른 principal sum의 일정 비율이 지급된다. 예를 들어 양손·양발 또는 양안 시력 상실의 경우 100%, 한 손·한 발 또는 한쪽 눈 시력 상실의 경우 50%, 청각·언어 기능 상실의 경우 더 낮은 비율이 적용된다. 보험 사고는 외부 원인에 의한 갑작스럽고 의도하지 않은 사고여야 하며, 손실은 사고 후 일정 기간(흔히 365일) 이내에 발생해야 한다. 질병·기왕증 및 위험 스포츠로 인한 손실(특약 미가입 시)은 제외된다. AD&D는 여행의료보험(travel medical insurance)과 근본적으로 다른 확정 일시금(fixed indemnity) 상품이며, 비용 상환(expense-reimbursement) 상품이 아니다. 세 가지 일반적 변형으로는 (1) 24시간 AD&D: 여행 기간 중 어느 때든 발생한 사고를 보장, (2) 정기 운송수단 AD&D: 허가된 정기 운송수단(항공사·크루즈·버스·철도) 탑승 중 사고 보장, (3) 항공 한정 AD&D: 상업 항공편 탑승 중 사고만 보장이 있다. AD&D는 단독 판매보다 종합 여행보험의 구성 요소로 포함되는 경우가 많다.",
+      "aliases": [
+        "AD&D Insurance",
+        "Accidental Death and Dismemberment",
+        "24-Hour AD&D",
+        "Common Carrier AD&D",
+        "Flight AD&D"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Travel Medical Insurance",
+          "targetId": "travel-medical-insurance"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Comprehensive Travel Insurance",
+          "targetId": "comprehensive-travel-insurance"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Emergency Medical Evacuation",
+          "targetId": "emergency-medical-evacuation"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Trip Cancellation",
+          "targetId": "trip-cancellation"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Travel Medical Insurance",
+          "explanation": "Travel medical insurance reimburses actual medical expenses (hospital bills, surgery, emergency evacuation) incurred due to illness or injury during a trip; AD&D pays a fixed lump-sum indemnity only when an accident results in death or permanent physical loss. TMI covers the cost of treatment; AD&D replaces income and provides financial security for catastrophic permanent loss — it does not pay for any medical bills.",
+          "explanation_ko": "여행의료보험(travel medical insurance)은 여행 중 질병·부상으로 발생한 실제 의료비(입원비·수술비·긴급후송비)를 상환하는 반면, AD&D는 사고로 인한 사망 또는 영구적 신체 손실이 발생한 경우에만 고정 일시금을 지급한다. 여행의료보험은 치료 비용을 충당하고, AD&D는 영구적 손실에 대한 소득 대체와 재정적 안전망을 제공하는 것으로 의료비는 지급하지 않는다.",
+          "targetId": "travel-medical-insurance"
+        },
+        {
+          "targetTerm": "Emergency Medical Evacuation",
+          "explanation": "Emergency medical evacuation covers the cost of transporting an ill or injured traveller to the nearest adequate medical facility or back home; AD&D pays a lump sum only when an accident results in death or permanent dismemberment — neither medical bills nor evacuation costs are covered. The two benefits address different phases: evacuation addresses the emergency response; AD&D addresses the financial aftermath of a catastrophic permanent outcome.",
+          "explanation_ko": "긴급의료후송은 아픈 또는 부상당한 여행자를 가장 가까운 적절한 의료 시설이나 본국으로 이송하는 비용을 보장하는 반면, AD&D는 사고로 인한 사망 또는 영구적 후유장애가 발생한 경우에만 일시금을 지급한다. 두 특약은 서로 다른 단계를 다룬다: 긴급후송은 응급 대응을, AD&D는 심각한 영구적 결과의 재정적 사후를 다룬다.",
+          "targetId": "emergency-medical-evacuation"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Should I Get Travel Insurance?",
+          "org": "NAIC (National Association of Insurance Commissioners)",
+          "version": "",
+          "section": "Accidental Death and Dismemberment",
+          "url": "https://content.naic.org/article/should-i-get-travel-insurance",
+          "tier": "regulator-guidance"
+        },
+        {
+          "name": "24-Hour AD&D Coverage",
+          "org": "Squaremouth",
+          "version": "",
+          "section": "",
+          "url": "https://www.squaremouth.com/travel-insurance-benefits/24-hour-a-d-and-d",
+          "tier": "secondary"
+        },
+        {
+          "name": "What Is the Accidental Death Benefit in Travel Health Insurance",
+          "org": "WorldTrips",
+          "version": "",
+          "section": "",
+          "url": "https://www.worldtrips.com/resources/what-is-the-accidental-death-benefit",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"12\" r=\"6\"/><path d=\"M16 28v-4a8 8 0 0 1 16 0v4\"/><path d=\"M12 40h24\"/><path d=\"M20 40v-8\"/><path d=\"M28 40v-8\"/><path d=\"M8 26l6 4\"/><path d=\"M40 26l-6 4\"/></svg>",
+      "term": "Accidental Death & Dismemberment (AD&D)",
+      "definition": "Accidental Death & Dismemberment (AD&D) is a travel insurance benefit that pays a fixed lump-sum indemnity — the principal sum — to the insured's named beneficiary if the insured dies as a direct result of a covered accident during the trip, or directly to the insured if they suffer a scheduled permanent physical loss (complete severance or irreversible loss of a limb, sight, hearing, or speech) from a covered accident. Coverage is accident-only; illness is excluded. Three common variants exist: 24-Hour AD&D (entire trip), Common Carrier AD&D (while aboard licensed carriers), and Flight AD&D (air travel only).",
+      "lastReviewed": "2026-07-21"
     },
     {
       "id": "accommodation-tax",
@@ -18407,6 +18492,105 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "flifo",
+      "vertical": "air",
+      "category": "air-ops",
+      "conceptType": "business-term",
+      "status": "active",
+      "abbreviation": "FLIFO",
+      "term_ko": "항공편 운항 정보(FLIFO)",
+      "definition_ko": "FLIFO(Flight Information)는 특정 항공편의 현재 및 예상 운항 상태를 나타내는 항공 업계 실시간 운항 정보 용어로, 계획 대비 실제 출발·도착 시각, 게이트 배정, 지연 코드, 회항, 결항 상태를 포함한다. GDS 시스템은 전용 FLIFO 조회 명령어로 이 데이터를 제공하며, SITA는 IATA AIDX XML 표준을 사용하는 FLIFO Airport Management System(AMS)을 중앙 항공편 정보 교환 허브로 운영한다.",
+      "longDef": "FLIFO data is sourced from multiple inputs — the operating airline, the departure airport, en-route ATC, and the arrival airport — and covers a window typically spanning 52 hours before scheduled departure through 24 hours after scheduled arrival. Key data elements include: estimated time of departure (ETD), estimated time of arrival (ETA), actual times (ATD/ATA), gate/stand assignments, delay codes, diversion airport (indicated by OVR/RTN codes), and cancellation flags (CX/FX for full cancellation, LX for a leg cancellation). In GDS cryptic-entry environments, \"FLIFO\" is a standard display command — for example, in Amadeus the entry FI followed by flight details retrieves FLIFO. Operationally the data feeds departure control systems (DCS), gate allocation, baggage systems, and passenger notification. SITA's FLIFO AMS Community is the industry-standard data-sharing platform through which airports and airlines publish flight information in AIDX (Aviation Information Data Exchange) format; AIDX is the IATA/ACI-endorsed XML schema for structured flight data exchange and supersedes earlier IATA Type B telex-based operational messages (such as MVT movement messages) for modern real-time integrations.",
+      "longDef_ko": "FLIFO 데이터는 운항 항공사, 출발 공항, 항로 ATC, 도착 공항 등 여러 소스로부터 수집되며, 일반적으로 계획 출발 52시간 전부터 계획 도착 24시간 후까지의 범위를 커버한다. 주요 데이터 요소에는 예상 출발 시각(ETD), 예상 도착 시각(ETA), 실제 출발/도착 시각(ATD/ATA), 게이트/스탠드 배정, 지연 코드, 회항 공항(OVR/RTN 코드), 결항 플래그(CX/FX: 전편 결항, LX: 구간 결항)가 포함된다. GDS 암호형 입력 환경에서 \"FLIFO\"는 표준 조회 명령어로, 예를 들어 Amadeus에서는 FI 입력 후 항공편 정보를 입력하면 FLIFO를 조회할 수 있다. 운영 측면에서 이 데이터는 출발관리시스템(DCS)·게이트 배분·수하물 시스템·승객 알림에 연동된다. SITA의 FLIFO AMS Community는 공항과 항공사가 AIDX(Aviation Information Data Exchange) 형식으로 항공편 정보를 공유하는 업계 표준 데이터 공유 플랫폼이다. AIDX는 IATA·ACI가 승인한 구조적 항공편 데이터 교환 XML 스키마로, 현대적 실시간 통합에서 이전의 IATA Type B 텔레타이프 기반 운항 메시지(MVT 등)를 대체한다.",
+      "aliases": [
+        "Flight Information",
+        "Flight Info",
+        "FLIFO Data"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Amadeus",
+          "term": "FI (FLIFO display)",
+          "context": "In Amadeus cryptic entry, the FI command retrieves real-time flight information (FLIFO) for a specified flight, displaying operational status including actual and estimated times, gate, and delay codes.",
+          "context_ko": "Amadeus 암호형 입력에서 FI 명령어를 사용하면 지정 항공편의 실시간 운항 정보(FLIFO)를 조회할 수 있으며, 실제/예상 시각·게이트·지연 코드를 포함한 운항 상태가 표시된다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "SITA",
+          "term": "FLIFO AMS (Airport Management System)",
+          "context": "SITA operates the FLIFO Airport Management System as a centralised community platform enabling airports and airlines to publish and subscribe to standardised flight information using the AIDX XML format.",
+          "context_ko": "SITA는 FLIFO Airport Management System을 중앙화된 커뮤니티 플랫폼으로 운영하여, 공항과 항공사가 AIDX XML 형식으로 표준화된 항공편 정보를 발행·구독할 수 있게 한다.",
+          "relationship": "same"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "AIRIMP",
+          "targetId": "airimp"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Type B Message",
+          "targetId": "type-b-message"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Departure Control System (DCS)",
+          "targetId": "departure-control-system-dcs"
+        },
+        {
+          "type": "related",
+          "targetTerm": "IATA Delay Codes",
+          "targetId": "iata-delay-codes"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "AIRIMP",
+          "explanation": "AIRIMP defines the format and procedural rules for passenger reservations interline messages (PNR, SSR, availability) between airlines and GDS systems; FLIFO carries operational flight status data (actual/estimated times, gate, delay, diversion) from airlines and airports to distribution and operations systems. The two serve different data domains: commercial reservation versus operational movement.",
+          "explanation_ko": "AIRIMP은 항공사와 GDS 시스템 간 여객 예약 interline 메시지(PNR, SSR, 가용성)의 형식과 절차 규칙을 정의하는 반면, FLIFO는 항공사와 공항에서 유통·운영 시스템으로 전달되는 운항 상태 데이터(실제/예상 시각, 게이트, 지연, 회항)를 전송한다. 두 표준은 서로 다른 데이터 도메인을 담당한다: 상업적 예약 vs. 운항 이동(movement).",
+          "targetId": "airimp"
+        },
+        {
+          "targetTerm": "Departure Control System (DCS)",
+          "explanation": "A DCS manages the operational check-in, boarding, and load-control processes at departure; FLIFO is the upstream flight status data feed that the DCS consumes to trigger notifications, update displays, and synchronise gate processes. FLIFO is the information source; DCS is the downstream operational system.",
+          "explanation_ko": "DCS는 출발 시 체크인·탑승·탑재 관리 운영 프로세스를 처리하고, FLIFO는 DCS가 알림 발송·화면 갱신·게이트 프로세스 동기화에 활용하는 상위 항공편 상태 데이터 피드다. FLIFO는 정보 소스이고, DCS는 하위 운영 시스템이다.",
+          "targetId": "departure-control-system-dcs"
+        }
+      ],
+      "sources": [
+        {
+          "name": "FLIFO Overview",
+          "org": "SITA (Société Internationale de Télécommunications Aéronautiques)",
+          "version": "",
+          "section": "",
+          "url": "https://www.developer.aero/api-catalog/flifo-overview",
+          "tier": "vendor-doc"
+        },
+        {
+          "name": "AIDX (Aviation Information Data Exchange) Overview",
+          "org": "SITA / IATA / ACI",
+          "version": "",
+          "section": "",
+          "url": "https://www.developer.aero/api-catalog/aidx-overview",
+          "tier": "association"
+        },
+        {
+          "name": "IATA Type B Messaging Whitepaper v2.5",
+          "org": "IATA",
+          "version": "2.5 (May 2025)",
+          "section": "",
+          "url": "https://www.iata.org/contentassets/badbfd2d36a74f12b021c9dd899ecbad/type-b-messaging-whitepaper-v2.5.pdf",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 24h6l4-10 6 20 4-14 3 4h9\"/><circle cx=\"38\" cy=\"14\" r=\"5\"/><path d=\"M36 12l4 4M40 12l-4 4\"/></svg>",
+      "term": "FLIFO",
+      "definition": "FLIFO (Flight Information) is the airline industry term for real-time operational flight status data, covering the current and projected state of a specific flight — including scheduled vs. actual departure and arrival times, gate assignments, delay codes, diversion, and cancellation status. GDS systems surface this data via dedicated FLIFO display commands, and SITA operates the FLIFO Airport Management System (AMS) as a central flight-information exchange hub using the IATA AIDX XML standard.",
+      "lastReviewed": "2026-07-21"
+    },
+    {
       "id": "flight-coupon",
       "vertical": "air",
       "category": "air-ticket",
@@ -21916,6 +22100,93 @@
       "lastReviewed": "2026-07-06"
     },
     {
+      "id": "guaranteed-reservation",
+      "vertical": "lodging",
+      "category": "hotel-dist",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "보증 예약(Guaranteed Reservation)",
+      "definition_ko": "보증 예약(Guaranteed Reservation)은 투숙객의 신용카드, 사전 보증금, 또는 승인된 법인 계정으로 담보된 호텔 예약으로, 호텔은 투숙객의 도착 시각과 무관하게 다음 날 체크아웃 시각까지 객실을 유지할 의무를 진다. 그 대가로 투숙객이 도착하지 않고 호텔이 정한 취소 마감(흔히 도착일 오후 6시) 전에 취소하지 않으면 호텔은 통상 1박 요금에 세금을 더한 노쇼 요금을 청구할 수 있다.",
+      "longDef": "A guaranteed reservation provides the guest with certainty of accommodation regardless of arrival time, which is particularly important for late arrivals (after the hotel's standard 6 PM hold cut-off). Guarantee types accepted by most properties include: credit-card guarantee (the most common form — the card is charged only if the guest no-shows), advance deposit (typically one night's room rate collected at booking), and corporate billing account (an approved company guarantee in lieu of individual payment). Mastercard's hotel-guarantee programme — to which all Mastercard-accepting lodging merchants are automatically enrolled — specifies that a guaranteed reservation must be held until checkout time on the day following arrival, and that a no-show charge may not exceed one night's room rate; the cardholder must cancel before 18:00 local hotel time on the arrival date to avoid the charge. In OpenTravel Alliance (OTA) XML messaging, the guarantee requirement is a structured field (GuaranteeType) within the hotel reservation message set, enabling CRS, PMS, and OTA systems to communicate guarantee type and amount in a standardised way. A guaranteed reservation differs from the guarantee policy — the property-level rules defining which guarantee methods are accepted and the associated deadlines and penalties — which governs the reservation type.",
+      "longDef_ko": "보증 예약은 특히 호텔의 표준 오후 6시 보류 마감 이후에 도착하는 경우에 도착 시각과 무관하게 숙박을 보장받는다는 확신을 투숙객에게 제공한다. 대부분의 숙박 시설이 수용하는 보증 유형으로는 신용카드 보증(가장 일반적인 형태 — 노쇼 시에만 청구됨), 사전 보증금(예약 시 일반적으로 1박 요금 선불), 법인 계정(개인 결제를 대신하는 승인된 법인 보증)이 있다. Mastercard의 호텔 보증 프로그램은 — Mastercard를 받는 모든 숙박업체가 자동 등록된다 — 보증 예약이 도착일 다음 날 체크아웃 시각까지 유지되어야 하고 노쇼 요금이 1박 요금을 초과할 수 없다고 규정하며, 투숙객은 도착일 현지 오후 6시 전에 취소해야 요금을 면한다. OpenTravel Alliance(OTA) XML 메시징에서 보증 요구 사항은 호텔 예약 메시지 세트 내 구조화된 필드(GuaranteeType)로, CRS·PMS·OTA 시스템이 보증 유형 및 금액을 표준화된 방식으로 통신할 수 있게 한다. 보증 예약은 개런티 정책(Guarantee Policy) — 어떤 보증 방법이 수용되는지, 관련 마감 및 위약금을 정의하는 숙박 시설 수준의 규칙 — 과 구별된다.",
+      "aliases": [
+        "Guaranteed Hotel Reservation",
+        "Credit Card Guaranteed Reservation",
+        "Secured Reservation"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Guarantee Policy",
+          "targetId": "guarantee-policy"
+        },
+        {
+          "type": "related",
+          "targetTerm": "No-Show",
+          "targetId": "no-show"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Cancellation Policy",
+          "targetId": "cancellation-policy"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Overbooking",
+          "targetId": "overbooking"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Hotel Walk",
+          "targetId": "hotel-walk"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Guarantee Policy",
+          "explanation": "A guaranteed reservation is the specific type of booking that has been secured by a credit card or deposit; the guarantee policy is the property-level ruleset that defines what forms of guarantee are accepted, when cancellation must occur to avoid penalty, and what the no-show charge will be. One is a booking type; the other is the policy framework that governs it.",
+          "explanation_ko": "보증 예약은 신용카드 또는 보증금으로 담보된 특정 예약 유형이고, 개런티 정책(guarantee policy)은 어떤 보증 방법을 수용하는지, 위약금 없는 취소 기한은 언제인지, 노쇼 요금이 얼마인지를 정의하는 숙박 시설 수준의 규칙 체계다. 하나는 예약 유형이고, 다른 하나는 그것을 규율하는 정책 체계다.",
+          "targetId": "guarantee-policy"
+        },
+        {
+          "targetTerm": "No-Show",
+          "explanation": "A no-show is the event that triggers the guaranteed reservation's penalty clause — the guest neither arrives nor cancels within the allowed window, so the hotel charges the guarantee. Without a guarantee, a no-show results only in the room being released with no financial consequence for the guest.",
+          "explanation_ko": "노쇼는 보증 예약의 위약금 조항을 발동시키는 사건으로, 투숙객이 허용 기간 내에 도착하지도 취소하지도 않아 호텔이 보증 요금을 청구한다. 보증이 없는 예약의 경우 노쇼는 단지 객실 해제로 이어질 뿐 투숙객에게 금전적 결과가 없다.",
+          "targetId": "no-show"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Guaranteed Reservation (Wex Legal Dictionary)",
+          "org": "Cornell Law School / Legal Information Institute (LII)",
+          "version": "",
+          "section": "",
+          "url": "https://www.law.cornell.edu/wex/guaranteed_reservation",
+          "tier": "secondary"
+        },
+        {
+          "name": "Hotel 2.0 Availability and Reservation — GuaranteeType",
+          "org": "OpenTravel Alliance Developers Network",
+          "version": "2.0",
+          "section": "GuaranteeType",
+          "url": "https://www.opentraveldevelopersnetwork.com/hotel-20-availability-and-reservation",
+          "tier": "association"
+        },
+        {
+          "name": "Mastercard Hotel Guarantees",
+          "org": "Mastercard",
+          "version": "",
+          "section": "",
+          "url": "https://travel.mastercard.com/product/page/hotel-guarantees",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"14\" width=\"28\" height=\"20\" rx=\"3\"/><path d=\"M18 24l4 4 8-8\"/><path d=\"M10 20h28\"/><path d=\"M16 30v6M32 30v6\"/></svg>",
+      "term": "Guaranteed Reservation",
+      "definition": "A guaranteed reservation is a hotel booking secured by the guest's credit card, advance deposit, or approved corporate account, under which the hotel commits to holding the room until checkout time on the day following arrival — regardless of when the guest arrives. In exchange, the hotel may charge a no-show fee (typically one night's room and tax) if the guest fails to arrive and has not cancelled by the property's stated cancellation deadline, commonly 6:00 PM on the arrival date.",
+      "lastReviewed": "2026-07-21"
+    },
+    {
       "id": "guest-folio",
       "vertical": "lodging",
       "category": "hotel-dist",
@@ -22152,6 +22423,91 @@
       "definition": "An activity led by a guide along a set route or itinerary, contrasted with self-guided or admission-only products.",
       "lastReviewed": "2026-06-24",
       "distinctions": []
+    },
+    {
+      "id": "handling-fee",
+      "vertical": "tours",
+      "category": "tour-commercial",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "핸들링 피(Handling Fee)",
+      "definition_ko": "핸들링 피(Handling Fee)는 투어 운영사, 수신 운영사(receptive/inbound operator), 또는 목적지 관리 기업(DMC)이 예약 처리 및 이에 수반되는 조율·문서화·물류 서비스에 대해 부과하는 행정 수수료로, 여행 구성 요소 자체의 비용과는 별개다. 예약 접수 및 처리, 고객 도시에(바우처·룸 리스트·여정·확인서) 작성, 현지 공급자와의 조율, 변경 및 운영 커뮤니케이션 관리에 대한 보상이며, 건당(per-dossier) 정액 또는 인당 요금으로 부과되고 B2B 도매·단체 예약 관계에서 가장 흔하게 적용된다.",
+      "longDef": "Handling fees are a standard B2B charge in the tour operations and DMC sector, particularly in inbound/receptive operator relationships where a foreign wholesaler, outbound tour operator, or travel agency sends individual or group bookings to a local handling agent or DMC. The fee is separate from and additional to the land components (accommodation, transfers, activities, meals), ensuring that the operator recovers the fixed cost of the booking process regardless of the size of the booking. Handling fees may also be called dossier fees (emphasising the per-file administrative cost), booking fees (emphasising the point-of-booking trigger), or service charges (a broader term also used by travel agents for non-tour services). In FIT (Fully Independent Travel) bookings handled by a DMC, the handling fee typically applies per booking file; in group bookings it may be structured as a per-person or per-group charge above a minimum group size. The fee is usually non-commissionable — it is not subject to reseller commission — and must be agreed upon and disclosed in the operator's rate sheet or contract before booking. Handling fees are a tool for operators to maintain service margins in a distribution environment where net rates and marketplace commission structures compress per-booking profitability.",
+      "longDef_ko": "핸들링 피는 투어 운영 및 DMC 섹터, 특히 해외 도매업체·아웃바운드 투어 운영사·여행사가 현지 핸들링 에이전트 또는 DMC에 개인 또는 단체 예약을 보낼 때의 인바운드/수신 운영사 관계에서 표준 B2B 요금이다. 이 수수료는 예약 규모와 무관하게 예약 처리의 고정 비용을 운영사가 회수할 수 있게 하며, 숙박·이동·액티비티·식사 등 지상 구성 요소와는 별개로 부과된다. 핸들링 피는 도시에(파일)당 행정 비용을 강조하는 도시에 수수료(dossier fee), 예약 시점의 발생을 강조하는 예약 수수료(booking fee), 또는 여행사의 비투어 서비스에도 쓰이는 포괄적 용어인 서비스 수수료(service charge)라고도 불린다. DMC가 처리하는 FIT(개별 자유 여행) 예약에서는 예약 파일별로 부과되는 것이 일반적이며, 단체 예약에서는 최소 단체 규모 이상에 대해 인당 또는 단체별 요금으로 구조화될 수 있다. 핸들링 피는 보통 커미션 대상이 아닌 비커미셔너블(non-commissionable) 요금으로, 예약 전 운영사의 요금표 또는 계약서에 합의되고 공개되어야 한다. 핸들링 피는 넷 요금 및 마켓플레이스 커미션 구조가 건당 수익성을 압박하는 유통 환경에서 운영사가 서비스 마진을 유지하는 수단이다.",
+      "aliases": [
+        "Booking Fee",
+        "Dossier Fee",
+        "Service Charge (Tour Operator)",
+        "File Fee"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Destination Management Company",
+          "targetId": "destination-management-company"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Receptive Tour Operator",
+          "targetId": "receptive-tour-operator"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Net Rate",
+          "targetId": "net-rate"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Markup",
+          "targetId": "markup"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Operator Payout",
+          "targetId": "operator-payout"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Marketplace Commission",
+          "targetId": "marketplace-commission"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Marketplace Commission",
+          "explanation": "A marketplace commission is a percentage deducted by a marketplace or OTA from the operator-set retail price as the reseller's margin; a handling fee is a flat administrative charge levied by the operator on the booking, compensating for processing and coordination costs. Commission flows to the reseller; the handling fee stays with the operator.",
+          "explanation_ko": "마켓플레이스 커미션은 마켓플레이스 또는 OTA가 리셀러의 마진으로 운영사가 정한 소매가에서 공제하는 비율인 반면, 핸들링 피는 운영사가 예약에 부과하는 정액 행정 수수료로 처리·조율 비용에 대한 보상이다. 커미션은 리셀러에게 지급되고, 핸들링 피는 운영사가 보유한다.",
+          "targetId": "marketplace-commission"
+        },
+        {
+          "targetTerm": "Markup",
+          "explanation": "Markup is the amount a reseller adds on top of the operator's net rate to form its own retail price — it is the reseller's margin in a net-rate distribution model; a handling fee is an administrative charge levied by the operator on top of the land components, applied before any reseller markup. Markup benefits the reseller; the handling fee is revenue for the operator.",
+          "explanation_ko": "마크업은 리셀러가 운영사 넷 요금 위에 더해 자체 소매가를 만드는 금액으로, 넷 요금 유통 모델에서 리셀러의 마진이다. 핸들링 피는 운영사가 지상 구성 요소에 추가로 부과하는 행정 수수료로, 리셀러 마크업 이전에 적용된다. 마크업은 리셀러에게 귀속되고, 핸들링 피는 운영사의 수익이다.",
+          "targetId": "markup"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Glossary of Terms — Multi-Day Tours Industry",
+          "org": "Arival",
+          "version": "",
+          "section": "",
+          "url": "https://arival.travel/article/glossary-terms-multi-day-tours-industry/",
+          "tier": "secondary"
+        },
+        {
+          "name": "Tourism Glossary A to Z for Tour Operators",
+          "org": "Softrip",
+          "version": "",
+          "section": "",
+          "url": "https://www.softrip.com/resources/blog/tourism-glossary-a-to-z/",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"12\" width=\"32\" height=\"24\" rx=\"3\"/><line x1=\"8\" y1=\"20\" x2=\"40\" y2=\"20\"/><line x1=\"20\" y1=\"20\" x2=\"20\" y2=\"36\"/><path d=\"M14 28h3\"/><path d=\"M25 28h9\"/><path d=\"M25 32h6\"/></svg>",
+      "term": "Handling Fee",
+      "definition": "A handling fee is an administrative charge levied by a tour operator, receptive (inbound) operator, or Destination Management Company (DMC) for processing a booking and providing the associated coordination, documentation, and logistical services — distinct from the cost of the travel components themselves. It compensates the operator for receiving and processing the booking request, preparing the client dossier (vouchers, rooming lists, itineraries, confirmations), coordinating with local suppliers on behalf of the client, and managing changes and operational communications. The fee is typically structured as a flat per-booking (per-dossier) charge or a per-person amount, and is most common in B2B wholesale and group booking relationships.",
+      "lastReviewed": "2026-07-21"
     },
     {
       "id": "hedna",
@@ -23168,6 +23524,95 @@
       "term": "Hotel Switch",
       "definition": "A hotel switch is a technical pass-through intermediary that connects a hotel's CRS or PMS to many distribution channels (GDSs, OTAs, wholesalers, metasearch) through a single integration, translating and routing availability, rate, and inventory (ARI) messages and reservation traffic between the two sides. The switch is purely technical: it routes data without owning inventory, setting rates, or applying its own business rules.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "hotel-walk",
+      "vertical": "lodging",
+      "category": "hotel-dist",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "호텔 워크(Hotel Walk)",
+      "definition_ko": "호텔 워크(Hotel Walk)는 호텔이 확정 예약을 보유한 투숙객을 수용할 수 없을 때 — 주로 초과 예약(overbooking) 또는 운영상의 문제로 인해 — 해당 투숙객을 동급 이상의 인근 호텔로 이전시키는 것을 말한다. 이전을 시행한 호텔이 보통 대체 숙박비·교통비·장거리 전화 한 통 등의 비용을 부담하나, 미국에서는 항공과 달리 이를 의무화하는 연방 법령이 없어 보상 범위는 개별 브랜드 정책과 업계 관행에 따른다.",
+      "longDef": "A hotel walk (sometimes called \"walking a guest\") is the lodging equivalent of airline denied boarding. It arises most commonly from deliberate overbooking — the practice of accepting more reservations than available rooms to offset anticipated no-shows and last-minute cancellations — but can also result from rooms going out of service due to maintenance, water damage, or pest issues. Unlike denied boarding on airlines, which is subject to mandatory DOT compensation rules in the U.S. and EU Regulation 261/2004 in Europe, hotel walking is governed primarily by individual chain policy and local consumer-protection law; there is no federal U.S. mandate beyond returning the guest's money. The de facto industry standard remedy — voluntarily observed by most branded chains — is: (1) one or more nights' accommodation at a comparable or superior property at no charge; (2) ground transportation to and from the alternate property; and (3) a complimentary long-distance call to notify family. Some brands (e.g. Marriott, Hyatt, IHG) add cash compensation or loyalty-programme points. Hotels typically prioritise which guests to walk based on rate type, loyalty tier, length of stay, and whether the booking was guaranteed. Revenue managers calibrate overbooking levels by monitoring historical no-show and cancellation rates; walk rates are tracked as a property KPI.",
+      "longDef_ko": "호텔 워크(때로 \"walking a guest\"라고도 함)는 항공의 탑승 거절(denied boarding)에 해당하는 숙박업 개념이다. 예상 노쇼와 막판 취소를 상쇄하기 위해 가용 객실보다 많은 예약을 받는 의도적 초과 예약(overbooking) 관행에서 가장 흔히 발생하지만, 객실 유지보수·수해·해충 문제로 인한 시설 이용 불가도 원인이 될 수 있다. 항공의 탑승 거절과 달리 호텔 워크는 미국 DOT 보상 규정이나 EU 261/2004 규정 같은 법적 강제 기준이 없으며, 개별 체인 정책과 현지 소비자보호법이 주로 적용된다. 업계의 사실상 표준 구제책(대부분의 브랜드 체인이 자발적으로 준수)은 (1) 동급 이상 대체 호텔에서의 1박 이상 무료 숙박, (2) 대체 호텔까지의 교통비 부담, (3) 가족에게 이전 사실을 알리기 위한 장거리 통화 한 통이다. Marriott, Hyatt, IHG 등 일부 브랜드는 현금 보상이나 로열티 포인트를 추가로 제공한다. 호텔은 보통 요금 유형·로열티 등급·투숙 기간·보증 예약 여부를 기준으로 어느 투숙객을 이전시킬지 우선순위를 정하며, 수익 관리자는 역사적 노쇼·취소율을 모니터링하여 초과 예약 수준을 조정한다.",
+      "aliases": [
+        "Walk",
+        "Guest Walk",
+        "Walking a Guest",
+        "Walked Guest",
+        "Relocated Guest"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Overbooking",
+          "targetId": "overbooking"
+        },
+        {
+          "type": "related",
+          "targetTerm": "No-Show",
+          "targetId": "no-show"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Guarantee Policy",
+          "targetId": "guarantee-policy"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Guaranteed Reservation",
+          "targetId": "guaranteed-reservation"
+        },
+        {
+          "type": "contrasts",
+          "targetTerm": "Denied Boarding Compensation",
+          "targetId": "denied-boarding-compensation"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Denied Boarding Compensation",
+          "explanation": "Denied boarding compensation applies to air passengers who are involuntarily bumped from a confirmed flight and is subject to mandatory regulatory minima (DOT rules in the U.S., EU 261/2004 in Europe). A hotel walk has no analogous federal mandate in the U.S.; the hotel's remedy obligations arise only from its own brand policy and any applicable state consumer-protection law.",
+          "explanation_ko": "탑승 거절 보상(Denied Boarding Compensation)은 확정된 항공편에서 비자발적으로 거절된 항공 여객에게 적용되며 미국 DOT 규정·EU 261/2004 등 의무적 법적 최저 기준이 있다. 반면 호텔 워크는 미국에서 이에 상응하는 연방 의무 기준이 없으며, 호텔의 구제 의무는 자체 브랜드 정책과 해당 주 소비자보호법에서만 발생한다.",
+          "targetId": "denied-boarding-compensation"
+        },
+        {
+          "targetTerm": "No-Show",
+          "explanation": "A no-show is a guest who fails to arrive at a hotel with a confirmed reservation; a hotel walk is the inverse — the hotel is unable to honour the confirmed reservation. No-shows create revenue risk for the hotel; hotel walks create service-failure risk and cost for the hotel.",
+          "explanation_ko": "노쇼는 확정 예약을 보유한 투숙객이 호텔에 도착하지 않는 경우이고, 호텔 워크는 그 반대로 호텔이 확정 예약을 이행할 수 없는 경우다. 노쇼는 호텔에 수익 리스크를 야기하고, 호텔 워크는 호텔에 서비스 실패 리스크와 비용을 발생시킨다.",
+          "targetId": "no-show"
+        }
+      ],
+      "sources": [
+        {
+          "name": "The Hotel \"Walk\" Policy Defined",
+          "org": "Cvent",
+          "version": "",
+          "section": "",
+          "url": "https://www.cvent.com/en/blog/events/hotel-walk-policy-defined",
+          "tier": "secondary"
+        },
+        {
+          "name": "Answering Questions About Hotel Overbooking and Walking Guests",
+          "org": "Duetto",
+          "version": "",
+          "section": "",
+          "url": "https://www.duettocloud.com/library/answering-questions-hotel-overbooking-walking-guests",
+          "tier": "secondary"
+        },
+        {
+          "name": "Walk Definition / Meaning",
+          "org": "Xotels",
+          "version": "",
+          "section": "",
+          "url": "https://www.xotels.com/en/glossary/walk",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"18\" width=\"16\" height=\"20\" rx=\"2\"/><rect x=\"26\" y=\"14\" width=\"16\" height=\"24\" rx=\"2\"/><path d=\"M22 28h4\"/><path d=\"M22 28l-3-3m3 3l-3 3\"/></svg>",
+      "term": "Hotel Walk",
+      "definition": "A hotel walk occurs when a hotel cannot accommodate a guest with a confirmed reservation — typically due to overbooking or an operational issue — and relocates the guest to a comparable or superior property at the original hotel's expense. The walking hotel customarily covers room charges, ground transportation to and from the alternate property, and one complimentary phone call; no U.S. federal law mandates these remedies, so the extent of compensation is governed by individual brand policy and common industry practice.",
+      "lastReviewed": "2026-07-21"
     },
     {
       "id": "htng",
@@ -27142,6 +27587,93 @@
       "term": "Load Factor",
       "definition": "Load Factor (LF) is the percentage of available seat-kilometres (ASK) that are filled by revenue passengers, calculated as Revenue Passenger Kilometres (RPK) divided by Available Seat Kilometres (ASK) multiplied by 100. It is the primary measure of airline capacity utilisation, published by IATA in monthly traffic statistics and used by ICAO for comparative aviation analysis.",
       "lastReviewed": "2026-06-29"
+    },
+    {
+      "id": "look-back-period",
+      "vertical": "common",
+      "category": "insurance",
+      "conceptType": "standard-term",
+      "status": "active",
+      "term_ko": "소급 심사 기간(Look-Back Period)",
+      "definition_ko": "Look-Back Period(소급 심사 기간)는 여행보험 약관의 발효일 직전의 특정 기간으로, 보험사가 피보험자의 과거 병력을 소급하여 검토해 특정 질환이 기왕증(pre-existing condition)에 해당하는지, 따라서 표준 약관에서 면책 대상인지를 판단하는 기준 기간이다. 해당 기간 중 의료 상담·진단·치료를 받거나, 증상·약물·치료 내용에 변화가 있었던 모든 질환은 기왕증으로 분류된다.",
+      "longDef": "The look-back period is a fundamental underwriting parameter that appears in virtually every travel insurance policy that contains a pre-existing condition exclusion. In the U.S. comprehensive trip-cancellation market, the most common durations are 60, 90, or 180 days before the policy effective date (or purchase date, depending on plan terms). During claims adjudication, the insurer reviews the insured's medical records for that window to determine whether the claim is related to a condition that existed — or changed — within the period. Purchasing a pre-existing condition waiver does not narrow or eliminate the look-back period; the waiver removes the exclusion the period defines, making claims from stable prior conditions eligible. State insurance laws in the U.S. regulate maximum look-back periods for certain products, and the NAIC Travel Insurance Model Act (Model Law 632) provides the overarching regulatory framework. Travel medical and long-term travel health plans often apply significantly longer look-back windows of 12–36 months.",
+      "longDef_ko": "Look-back period는 기왕증 면책 조항이 포함된 거의 모든 여행보험 약관에 등장하는 핵심 보험 인수 파라미터다. 미국의 종합형 취소 여행보험에서 가장 일반적인 기간은 약관 발효일(또는 가입일) 기준으로 60일, 90일, 또는 180일이다. 클레임 심사에서 보험사는 해당 기간의 피보험자 의료 기록을 소급 검토하여 클레임이 기존에 존재했거나 변화한 질환과 관련이 있는지 판단한다. 기왕증 면제(pre-existing condition waiver)를 가입해도 look-back period 자체는 변하지 않으며, waiver는 해당 기간이 정의하는 면책 조항을 제거하여 안정된 기존 질환으로 인한 클레임도 보장받을 수 있게 할 뿐이다. 미국 각 주 보험법은 특정 상품의 최대 look-back period를 규율하며, NAIC 여행보험 모델법(Model Law 632)이 전반적인 규제 체계를 제공한다. 여행 의료보험 및 장기 여행 건강보험은 흔히 12~36개월의 훨씬 긴 look-back 기간을 적용한다.",
+      "aliases": [
+        "Lookback Period",
+        "Review Period",
+        "Pre-Existing Condition Look-Back Period"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Pre-Existing Condition Waiver",
+          "targetId": "pre-existing-condition-waiver"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Comprehensive Travel Insurance",
+          "targetId": "comprehensive-travel-insurance"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Trip Cancellation",
+          "targetId": "trip-cancellation"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Travel Medical Insurance",
+          "targetId": "travel-medical-insurance"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Cancel For Any Reason (CFAR)",
+          "targetId": "cancel-for-any-reason-cfar"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Pre-Existing Condition Waiver",
+          "explanation": "The look-back period is the factual time window the insurer uses to identify pre-existing conditions; a pre-existing condition waiver is an optional benefit that removes the exclusion the look-back period defines. Purchasing the waiver does not narrow or eliminate the look-back period — it only lifts the resulting coverage exclusion.",
+          "explanation_ko": "Look-back period는 보험사가 기왕증을 식별하는 데 사용하는 시간 기준 창이고, 기왕증 면제(pre-existing condition waiver)는 해당 기간이 정의하는 면책 조항을 제거하는 선택적 특약이다. Waiver 가입이 look-back period를 단축하거나 없애지는 않으며, 다만 그로 인한 보장 면책만 해제한다.",
+          "targetId": "pre-existing-condition-waiver"
+        },
+        {
+          "targetTerm": "Cancel For Any Reason (CFAR)",
+          "explanation": "CFAR lets the insured cancel for any reason not covered by the policy and receive a partial refund; the look-back period is a factual underwriting criterion for identifying pre-existing conditions. CFAR sidesteps the covered-cause requirement entirely, so the look-back period is not relevant to a CFAR claim.",
+          "explanation_ko": "CFAR는 약관이 보장하지 않는 어떤 사유로도 취소하고 부분 환불을 받을 수 있게 하는 반면, look-back period는 기왕증을 식별하기 위한 사실 기반 보험 인수 기준이다. CFAR는 보장 사유 요건을 완전히 우회하므로 CFAR 클레임에는 look-back period가 관련이 없다.",
+          "targetId": "cancel-for-any-reason-cfar"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Travel Insurance Look-Back Period — Glossary",
+          "org": "Squaremouth",
+          "version": "",
+          "section": "",
+          "url": "https://www.squaremouth.com/resources/glossary/look-back-period",
+          "tier": "secondary"
+        },
+        {
+          "name": "Insurance Topics — Travel Insurance",
+          "org": "NAIC (National Association of Insurance Commissioners)",
+          "version": "",
+          "section": "",
+          "url": "https://content.naic.org/insurance-topics/travel-insurance",
+          "tier": "regulator-guidance"
+        },
+        {
+          "name": "Pre-Existing Conditions & Travel Medical Insurance Plans",
+          "org": "InsureMyTrip",
+          "version": "",
+          "section": "",
+          "url": "https://www.insuremytrip.com/travel-insurance-plans-coverages/pre-existing-conditions/",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"16\"/><polyline points=\"24 14 24 24 30 30\"/><path d=\"M14 8 L8 14 L14 14\"/></svg>",
+      "term": "Look-Back Period",
+      "definition": "The look-back period is the defined span of time immediately before a travel insurance policy's effective date during which the insurer reviews the insured's medical history to determine whether a condition qualifies as pre-existing and is therefore excluded from coverage. Any illness, injury, or condition for which the insured received medical advice, diagnosis, care, or treatment — or for which there was a change in symptoms, medications, or treatment — during the look-back window is classified as a pre-existing condition.",
+      "lastReviewed": "2026-07-21"
     },
     {
       "id": "loss-damage-waiver",
