@@ -2,8 +2,8 @@
   "meta": {
     "name": "Travel Wiki",
     "tagline": "여행 산업 용어 백과사전",
-    "generatedAt": "2026-07-22",
-    "entryCount": 613,
+    "generatedAt": "2026-07-23",
+    "entryCount": 619,
     "categoryCount": 20,
     "verticalCount": 6
   },
@@ -2320,6 +2320,107 @@
       "lastReviewed": "2026-06-15"
     },
     {
+      "id": "air-consolidator",
+      "vertical": "air",
+      "category": "air-ticket",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "항공권 콘솔리데이터(Air Consolidator)",
+      "definition_ko": "항공권 콘솔리데이터는 항공사로부터 공개 운임보다 훨씬 낮은 기밀 계약 순운임(net fare)으로 좌석 블록을 구매하고, 이를 여행사 또는 소비자에게 재판매하는 공인 여행 중개업체다. 표준 소매 채널을 통해 접근할 수 없는 할인 운임에 대한 접근을 가능하게 한다.",
+      "longDef": "Consolidators operate under contracts with airlines (sometimes called bulk-fare agreements or net-fare contracts) that grant access to deeply discounted fares in exchange for volume commitments. They typically work as B2B wholesalers, selling to retail agencies at a markup that still undercuts the airline's own published fare. In some markets they sell direct to consumers (known as \"bucket shops\" in the UK). Consolidators must be accredited — typically as IATA-accredited agents or ARC-appointed agents in the US market — and they issue tickets on the airline's ticket stock (the validating carrier's document) or through the BSP/ARC settlement cycle. Airlines use consolidators to fill capacity that would otherwise fly empty, especially on thin routes, long-haul leisure markets, or during off-peak periods. The consolidator model has faced pressure from airline direct distribution and online comparison sites but remains relevant for premium-cabin inventory, ethnic/VFR markets, and certain long-haul routes.",
+      "longDef_ko": "콘솔리데이터는 항공사와 대량 운임 계약(bulk-fare agreement) 또는 순운임 계약(net-fare contract)을 체결하여 물량 약정 대가로 대폭 할인된 운임에 접근한다. 주로 소매 여행사에 항공사 공개 운임보다 낮은 마크업 가격에 판매하는 B2B 도매상으로 기능한다. 일부 시장에서는 소비자 직판(영국에서 흔히 \"bucket shop\"이라 불림)도 이루어진다. 콘솔리데이터는 인가를 받아야 하며, 통상 IATA 공인 대리점이거나 미국 시장에서는 ARC 지정 대리점이어야 한다. 이들은 항공사 항공권 용지(발권 항공사 문서)로 티켓을 발행하거나 BSP/ARC 정산 주기를 통해 정산한다. 항공사는 공석으로 비행할 수밖에 없는 좌석, 특히 운항 빈도 낮은 노선·장거리 레저 시장·비수기 등을 채우기 위해 콘솔리데이터를 활용한다. 항공사 직판 강화와 온라인 비교 사이트의 확산으로 콘솔리데이터 모델은 압박을 받고 있으나, 프리미엄 클래스 재고, 민족/VFR(Visiting Friends & Relatives) 시장, 일부 장거리 노선에서 여전히 유효하다.",
+      "standardBody": "IATA",
+      "aliases": [
+        "Consolidator",
+        "Ticket Consolidator",
+        "Bucket Shop",
+        "Net-Fare Consolidator",
+        "Bulk-Fare Wholesaler"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Validating Carrier",
+          "targetId": "validating-carrier"
+        },
+        {
+          "type": "related",
+          "targetTerm": "BSP",
+          "targetId": "bsp"
+        },
+        {
+          "type": "related",
+          "targetTerm": "ARC",
+          "targetId": "arc"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Net Rate",
+          "targetId": "net-rate"
+        },
+        {
+          "type": "related",
+          "targetTerm": "E-ticket",
+          "targetId": "e-ticket"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Agency Debit Memo (ADM)",
+          "targetId": "agency-debit-memo-adm"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Validating Carrier",
+          "explanation": "The Air Consolidator is the licensed intermediary that contracts and resells net fares; the Validating Carrier is the airline on whose ticket stock the consolidator issues the ticket and whose IATA plate carries financial liability for the settlement.",
+          "explanation_ko": "항공권 콘솔리데이터는 순운임을 계약·재판매하는 공인 중개업체이고, Validating Carrier는 콘솔리데이터가 해당 항공권 용지에 발권하고 정산에 대한 재정적 책임을 지는 항공사다.",
+          "targetId": "validating-carrier"
+        },
+        {
+          "targetTerm": "Net Rate",
+          "explanation": "Net Rate is the confidential contracted fare the consolidator pays to the airline; the consolidator's retail or agency-selling price includes a margin on top of that net rate. The net rate itself does not reach the consumer.",
+          "explanation_ko": "Net Rate는 콘솔리데이터가 항공사에 지불하는 기밀 계약 운임이고, 콘솔리데이터의 소매 또는 대리점 판매 가격은 그 순운임에 마진을 더한 것이다. 순운임 자체는 소비자에게 노출되지 않는다.",
+          "targetId": "net-rate"
+        },
+        {
+          "targetTerm": "BSP",
+          "explanation": "BSP is IATA's settlement mechanism that handles money flows between agencies (including consolidators) and airlines; the Air Consolidator is a participant within the BSP ecosystem, not a settlement body.",
+          "explanation_ko": "BSP는 대리점(콘솔리데이터 포함)과 항공사 간 자금 흐름을 처리하는 IATA 정산 체계이고, 항공권 콘솔리데이터는 BSP 생태계의 참여자이지 정산 기관이 아니다.",
+          "targetId": "bsp"
+        }
+      ],
+      "sources": [
+        {
+          "name": "IATA — BSP Manual for Agents",
+          "org": "IATA",
+          "version": "",
+          "section": "Definitions — consolidator",
+          "url": "https://www.iata.org/en/publications/manuals/bsp-manual-for-agents/",
+          "tier": "association"
+        },
+        {
+          "name": "ARC — Arc Industry Agent Handbook",
+          "org": "Airlines Reporting Corporation (ARC)",
+          "version": "",
+          "section": "",
+          "url": "https://www2.arccorp.com/articles-trends/the-wire/what-you-need-to-know-about-consolidators/",
+          "tier": "association"
+        },
+        {
+          "name": "IATA — Consolidated Ticketing (CTSA guidance)",
+          "org": "IATA",
+          "version": "",
+          "section": "",
+          "url": "https://www.iata.org/en/services/finance/iata-easyprint/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"20\" width=\"10\" height=\"14\" rx=\"2\"/><rect x=\"19\" y=\"14\" width=\"10\" height=\"20\" rx=\"2\"/><rect x=\"32\" y=\"8\" width=\"10\" height=\"26\" rx=\"2\"/><path d=\"M11 20l8-6M29 14l3-6\"/><path d=\"M6 38h36\"/></svg>",
+      "term": "Air Consolidator",
+      "definition": "An Air Consolidator is a licensed travel intermediary that purchases blocks of airline seats at confidential, contracted net fares well below published tariffs and resells them to travel agencies or directly to consumers, enabling access to discounted fares not available through standard retail channels.",
+      "lastReviewed": "2026-07-23"
+    },
+    {
       "id": "air-passenger-protection-regulations-appr",
       "vertical": "common",
       "category": "disruption",
@@ -2685,6 +2786,84 @@
       "term": "Aircraft Registration",
       "definition": "The unique alphanumeric mark assigned to an individual airframe, comprising a nationality mark (prefix indicating the State of Registry) and a registration mark, as governed by ICAO Annex 7 to the Chicago Convention. Commonly called the tail number (e.g., N-, G-, D-, HL-), it identifies one specific physical aircraft.",
       "lastReviewed": "2026-06-18"
+    },
+    {
+      "id": "aircraft-turnaround",
+      "vertical": "air",
+      "category": "air-ops",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "항공기 지상 회전(Aircraft Turnaround)",
+      "definition_ko": "항공기 지상 회전(Aircraft Turnaround, 턴 타임 또는 그라운드 턴이라고도 함)은 항공기가 게이트에 도착한 후 다음 운항을 위해 출발할 때까지 지상에서 보내는 총 시간으로, 승객 하기·탑승, 수하물 교환, 화물 적재, 연료 보급, 케이터링, 객실 청소, 기술 점검, 푸시백 등 모든 지상 처리 활동을 포함한다.",
+      "longDef": "The turnaround time is a critical constraint in airline scheduling and operations control. Low-cost carriers (LCCs) such as Southwest, Ryanair, and easyJet have built their business models around minimising turnaround times — often targeting 25 minutes or less — to achieve high aircraft utilisation and reduce the number of aircraft required for a given network. Full-service carriers typically plan longer turns (60–90 min) to accommodate connecting passengers, catering for long-haul cabins, and more complex ground processes. IATA's Ground Operations Manual (IGOM) standardises the sequence and safety protocols for each ground-handling task within the turnaround. The Minimum Ground Time (MGT) is the shortest safe turn the airline schedules; actual turns that overrun MGT generate delay codes under IATA/AHM 730 and feed into punctuality reporting. Aircraft utilisation, measured in block hours per aircraft per day, is directly limited by average turnaround time: a 10-minute reduction in turns across a 10-aircraft fleet can effectively add an extra flying slot per aircraft per day.",
+      "longDef_ko": "지상 회전 시간은 항공 일정 계획과 운항 통제에서 핵심적인 제약 요소다. 사우스웨스트, 라이언에어, 이지젯 등 저비용 항공사(LCC)는 통상 25분 이하를 목표로 지상 회전 시간을 최소화하는 것을 중심으로 비즈니스 모델을 구축하여, 높은 항공기 가동률을 달성하고 주어진 네트워크에 필요한 항공기 수를 줄인다. 풀서비스 항공사는 연결 승객 수용, 장거리 노선 기내식 서비스, 더 복잡한 지상 절차를 위해 통상 더 긴 회전 시간(60~90분)을 계획한다. IATA의 지상운영 매뉴얼(IGOM)은 지상 회전 내 각 지상 처리 작업의 순서와 안전 절차를 표준화한다. 최소 지상 시간(MGT, Minimum Ground Time)은 항공사가 계획하는 가장 짧은 안전 회전 시간이며, MGT를 초과하는 실제 회전은 IATA/AHM 730에 따른 지연 코드를 생성하고 정시 운항 보고에 반영된다. 항공기 가동률(항공기당 일일 블록 시간으로 측정)은 평균 지상 회전 시간에 직접 제한되며, 10기 항공기 대수에서 회전 시간을 10분 단축하면 항공기당 하루 비행 슬롯이 사실상 한 편 추가된다.",
+      "standardBody": "IATA",
+      "aliases": [
+        "Turn Time",
+        "Ground Turn",
+        "Gate Turn",
+        "Turnaround Time",
+        "Aircraft Turn"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Block Time",
+          "targetId": "block-time"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Aircraft Utilization",
+          "targetId": "aircraft-utilization"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Slot",
+          "targetId": "slot"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Block Time",
+          "explanation": "Block Time is the total elapsed time from when an aircraft's parking brakes are released at departure until they are set at the destination gate; Aircraft Turnaround is the ground phase at the destination between that block-in and the next block-out. Block Time is the airborne (and taxi) metric; Turnaround is the intervening ground metric.",
+          "explanation_ko": "Block Time은 출발 시 항공기 주차 브레이크 해제부터 목적지 게이트에서 브레이크 설정까지의 총 경과 시간이고, Aircraft Turnaround는 해당 block-in과 다음 block-out 사이의 목적지 지상 단계다. Block Time은 비행(및 지상 이동) 지표이고, Turnaround는 그 사이의 지상 지표다.",
+          "targetId": "block-time"
+        },
+        {
+          "targetTerm": "Aircraft Utilization",
+          "explanation": "Aircraft Utilization measures how many block hours an aircraft flies per day (or year); the Aircraft Turnaround time is the principal driver that limits how many flights — and therefore how many block hours — can be operated per day. Shorter turns directly increase utilization.",
+          "explanation_ko": "항공기 가동률은 항공기가 하루(또는 연간) 비행하는 블록 시간 수를 측정하고, 항공기 지상 회전 시간은 하루에 운항할 수 있는 비행 편수(따라서 블록 시간 수)를 제한하는 주요 요인이다. 회전 시간이 짧을수록 가동률이 직접 향상된다.",
+          "targetId": "aircraft-utilization"
+        },
+        {
+          "targetTerm": "Slot",
+          "explanation": "A Slot is the scheduled permission for an aircraft to use airport infrastructure (runway, gate) at a specific time; the Aircraft Turnaround is the actual ground-time process that must be completed within the window between the in-bound slot and the next out-bound slot.",
+          "explanation_ko": "Slot은 항공기가 특정 시간에 공항 인프라(활주로, 게이트)를 사용할 수 있는 예약 허가이고, Aircraft Turnaround는 인바운드 슬롯과 다음 아웃바운드 슬롯 사이의 창 내에서 완료되어야 하는 실제 지상 처리 프로세스다.",
+          "targetId": "slot"
+        }
+      ],
+      "sources": [
+        {
+          "name": "IATA — Ground Operations Manual (IGOM)",
+          "org": "IATA",
+          "version": "12th Edition (2023)",
+          "section": "Turnaround coordination and ground handling",
+          "url": "https://www.iata.org/en/publications/manuals/ground-operations-manual/",
+          "tier": "association"
+        },
+        {
+          "name": "Eurocontrol CODA — Digest: Delays to Air Transport in Europe",
+          "org": "Eurocontrol CODA",
+          "version": "",
+          "section": "Delay code and turnaround analysis",
+          "url": "https://www.eurocontrol.int/publication/delays-air-transport-europe-coda-digest",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 32l8-14 4 6 8-12 4 6 8-10\"/><path d=\"M8 38h32\"/><circle cx=\"8\" cy=\"32\" r=\"2\" fill=\"currentColor\" stroke=\"none\"/><circle cx=\"40\" cy=\"22\" r=\"2\" fill=\"currentColor\" stroke=\"none\"/><path d=\"M36 10l4 12-4 0\"/></svg>",
+      "term": "Aircraft Turnaround",
+      "definition": "Aircraft Turnaround (also called turn time or ground turn) is the total time an aircraft spends on the ground between arriving at a gate and departing on its next flight, encompassing all ground-handling activities — passenger deplaning and boarding, baggage exchange, cargo loading, fueling, catering, cabin cleaning, technical checks, and pushback.",
+      "lastReviewed": "2026-07-23"
     },
     {
       "id": "aircraft-type-code",
@@ -16502,6 +16681,77 @@
       "term": "Enhanced and Simplified Distribution (EDIST)",
       "definition": "Enhanced and Simplified Distribution is the formal IATA name for the family of XML messages that implement NDC and ONE Order, such as AirShopping, OfferPrice, OrderCreate, and OrderRetrieve. The term distinguishes the concrete message schema itself from the NDC program and brand.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "era-european-union-agency-for-railways",
+      "vertical": "ground",
+      "category": "rail",
+      "conceptType": "role",
+      "status": "active",
+      "abbreviation": "ERA",
+      "term_ko": "유럽연합 철도청(ERA)",
+      "definition_ko": "유럽연합 철도청(ERA, European Union Agency for Railways)은 유럽 철도 구역 전반의 철도 안전 및 상호운용성을 담당하는 EU 규제 기관으로, 상호운용성 기술 사양(TSI)을 발행하고 인프라·차량 등록부를 유지하며 국경 간 운행을 위한 철도 차량 승인을 담당한다.",
+      "longDef": "ERA was established in 2004 by Regulation (EC) 881/2004 and reformed by Regulation (EU) 2016/796 (the Fourth Railway Package) which significantly expanded its powers. It is headquartered in Valenciennes and Lille, France. ERA's core functions are: (1) drafting and updating Technical Specifications for Interoperability (TSIs) — mandatory EU technical rules covering subsystems such as rolling stock, control-command, and telematics applications for passengers (TAP TSI) and freight (TAF TSI); (2) issuing Single Safety Certificates to railway undertakings allowing them to operate across the EU Single European Railway Area (SERA); (3) operating the European Vehicle Register (EVR) and European Register of Authorised Types of Vehicles (ERATV); and (4) issuing type authorisations and vehicle authorisations for cross-border operation. In the distribution sphere, ERA's oversight of TAP TSI directly shapes how passenger information, ticketing APIs, and interoperable timetable data must be exchanged.",
+      "longDef_ko": "ERA는 2004년 규정(EC) 881/2004에 의해 설립되었고, 그 권한을 대폭 확대한 규정(EU) 2016/796(제4차 철도 패키지)에 의해 개편되었다. 본부는 프랑스 발렌시엔 및 릴에 있다. ERA의 핵심 기능은 다음과 같다: (1) TSI(Technical Specifications for Interoperability) 초안 작성 및 갱신 — 차량, 열차 제어·명령, 승객용 텔레매틱스 애플리케이션(TAP TSI), 화물용 텔레매틱스(TAF TSI) 등 서브시스템을 포함하는 필수 EU 기술 규칙; (2) 철도 운영사에 EU 단일 유럽 철도 구역(SERA) 전역에서 운행할 수 있는 단일 안전 인증(Single Safety Certificate) 발급; (3) 유럽 차량 등록부(EVR)와 유럽 승인 차량 유형 등록부(ERATV) 운영; (4) 국경 간 운행을 위한 차량 유형 승인 및 차량 승인 발급. 유통 분야에서 ERA의 TAP TSI 감독은 승객 정보, 발권 API, 상호운용 가능한 시각표 데이터가 교환되어야 하는 방식을 직접 규정한다.",
+      "standardBody": "ERA",
+      "aliases": [
+        "European Union Agency for Railways",
+        "EU Agency for Railways",
+        "European Railway Agency (pre-2016 name)"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "TAP TSI",
+          "targetId": "tap-tsi"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Rail Interoperability Directive (EU 2016/797)",
+          "targetId": "rail-interoperability-directive"
+        },
+        {
+          "type": "related",
+          "targetTerm": "OSDM",
+          "targetId": "osdm"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "TAP TSI",
+          "explanation": "ERA is the agency that drafts, maintains and enforces the TSIs (including TAP TSI); TAP TSI is the specific EU technical specification for telematics applications for rail passengers that ERA administers. ERA is the institution; TAP TSI is one of its key regulatory products.",
+          "explanation_ko": "ERA는 TAP TSI를 포함한 TSI를 초안 작성·유지·집행하는 기관이고, TAP TSI는 ERA가 관리하는 철도 여객 텔레매틱스 애플리케이션에 관한 특정 EU 기술 사양이다. ERA는 기관이고 TAP TSI는 그 핵심 규제 산물 중 하나다.",
+          "targetId": "tap-tsi"
+        },
+        {
+          "targetTerm": "Rail Interoperability Directive (EU 2016/797)",
+          "explanation": "The Rail Interoperability Directive is the EU legislation that mandates technical interoperability and under which ERA has authority to issue TSIs and vehicle authorisations; ERA is the executing agency that implements the directive in practice.",
+          "explanation_ko": "철도 상호운용성 지침(Rail Interoperability Directive)은 기술적 상호운용성을 의무화하는 EU 법규이며, ERA는 이 지침을 근거로 TSI 발행 및 차량 승인 권한을 갖는다. ERA는 실제로 지침을 이행하는 집행 기관이다.",
+          "targetId": "rail-interoperability-directive"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Regulation (EU) 2016/796 of the European Parliament and of the Council — on the European Union Agency for Railways",
+          "org": "European Parliament and Council",
+          "version": "2016/796",
+          "section": "",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0796",
+          "tier": "regulation"
+        },
+        {
+          "name": "ERA — About the Agency",
+          "org": "European Union Agency for Railways (ERA)",
+          "version": "",
+          "section": "",
+          "url": "https://www.era.europa.eu/agency/about-the-agency_en",
+          "tier": "regulator-guidance"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"16\"/><path d=\"M24 8v8M8 24h8M24 40v-8M40 24h-8\"/><circle cx=\"24\" cy=\"24\" r=\"4\"/><path d=\"M14 14l6 6M34 14l-6 6M14 34l6-6M34 34l-6-6\"/></svg>",
+      "term": "ERA (European Union Agency for Railways)",
+      "definition": "The European Union Agency for Railways (ERA) is the EU regulatory body responsible for railway safety and interoperability across the European rail area, issuing Technical Specifications for Interoperability (TSIs), maintaining registers of infrastructure and rolling stock, and authorising railway vehicles for cross-border operation.",
+      "lastReviewed": "2026-07-23"
     },
     {
       "id": "escorted-tour",
@@ -30350,6 +30600,81 @@
       "lastReviewed": "2026-07-22"
     },
     {
+      "id": "minimum-group-size",
+      "vertical": "tours",
+      "category": "tour-product",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "최소 출발 인원(Minimum Group Size)",
+      "definition_ko": "최소 출발 인원은 투어·액티비티·가이드 체험이 진행되기 위해 필요한 최소 확정 참가자 수다. 출발일까지 확정 예약이 이 기준에 미치지 못할 경우, 운영사는 해당 출발을 취소하거나 다른 예정 날짜의 참가자와 통합할 수 있다.",
+      "longDef": "Minimum Group Size (sometimes called minimum pax or minimum participants) exists because operating a tour below a certain headcount is economically unviable — guide fees, transport costs, and venue guarantees may not be recouped. Operators publish the minimum alongside the maximum capacity; a tour with a minimum of 2 and a maximum of 15 will depart only when at least 2 have confirmed. If minimums are not met, operators typically offer affected customers a full refund or a free rebooking to the next available departure. In distribution platforms and connectivity APIs such as OCTO, the minimum group size is exposed as a product attribute on the availability response so resellers and OTAs can surface the risk of cancellation to consumers. Some products with high fixed costs (private boat tours, helicopter experiences) set the minimum equal to the maximum, effectively operating only when fully sold.",
+      "longDef_ko": "최소 출발 인원(최소 pax 또는 최소 참가 인원이라고도 함)은 특정 인원 이하로 투어를 운영하는 것이 경제적으로 불가능하기 때문에 존재한다. 가이드 비용, 교통 비용, 장소 보증 등이 회수되지 않을 수 있다. 운영사는 최대 정원과 함께 최소 인원을 공시하며, 최소 2명/최대 15명 투어는 최소 2명이 확정되어야만 출발한다. 최소 인원을 충족하지 못하면 운영사는 일반적으로 영향을 받는 고객에게 전액 환불 또는 다음 가능한 출발일로의 무료 재예약을 제공한다. OCTO와 같은 유통 플랫폼 및 커넥티비티 API에서 최소 출발 인원은 가용성 응답의 상품 속성으로 제공되어 리셀러와 OTA가 소비자에게 취소 위험을 알릴 수 있게 한다. 고정 비용이 높은 일부 상품(전세 보트 투어, 헬리콥터 체험 등)은 최소 인원을 최대 정원과 동일하게 설정하여 완전 판매 시에만 운영한다.",
+      "aliases": [
+        "Minimum Pax",
+        "Minimum Participants",
+        "Minimum Booking Threshold"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Guaranteed Departure",
+          "targetId": "guaranteed-departure"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Capacity",
+          "targetId": "capacity"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Supplier Cancellation",
+          "targetId": "supplier-cancellation"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Guaranteed Departure",
+          "explanation": "A Guaranteed Departure is a departure confirmed by the operator to run regardless of how many book (i.e., no minimum group size risk to the consumer); Minimum Group Size is the threshold that must be reached before a non-guaranteed departure is confirmed to operate.",
+          "explanation_ko": "Guaranteed Departure(보장 출발)는 운영사가 예약 인원에 관계없이 진행하기로 확인한 출발(즉 소비자에게 최소 출발 인원 위험 없음)이고, 최소 출발 인원은 미보장 출발이 운영되기 위해 달성해야 하는 기준이다.",
+          "targetId": "guaranteed-departure"
+        },
+        {
+          "targetTerm": "Capacity",
+          "explanation": "Capacity is the maximum number of participants a tour can accommodate; Minimum Group Size is the lower bound below which the tour may not operate at all. A sold-out tour has reached capacity; a cancelled departure has failed to reach the minimum group size.",
+          "explanation_ko": "Capacity(정원)는 투어가 수용할 수 있는 최대 참가자 수이고, 최소 출발 인원은 투어가 운영되지 않을 수 있는 하한선이다. 매진 투어는 정원을 달성한 것이고, 취소된 출발은 최소 출발 인원을 충족하지 못한 것이다.",
+          "targetId": "capacity"
+        },
+        {
+          "targetTerm": "Supplier Cancellation",
+          "explanation": "Supplier Cancellation is any operator-initiated cancellation of a confirmed booking; a Minimum Group Size cancellation is a specific sub-type of supplier cancellation that occurs because the headcount did not reach the operational threshold, not because of force majeure or operator error.",
+          "explanation_ko": "Supplier Cancellation(공급사 취소)은 운영사가 확정 예약을 취소하는 모든 경우이고, 최소 출발 인원 취소는 불가항력이나 운영사 오류가 아니라 참가 인원이 운영 기준에 미달했기 때문에 발생하는 특정 하위 유형이다.",
+          "targetId": "supplier-cancellation"
+        }
+      ],
+      "sources": [
+        {
+          "name": "OCTO Specification — Booking and Availability Model (unit, capacity, and availability object)",
+          "org": "Open Connectivity for Tours and Activities (OCTO)",
+          "version": "1.3",
+          "section": "Availability",
+          "url": "https://docs.octo.travel/",
+          "tier": "association"
+        },
+        {
+          "name": "Viator / TripAdvisor Experiences — Product creation guidelines (minimum and maximum participants)",
+          "org": "Viator",
+          "version": "",
+          "section": "Product Attributes",
+          "url": "https://supplier.viator.com/help",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"16\" cy=\"18\" r=\"5\"/><circle cx=\"32\" cy=\"18\" r=\"5\"/><path d=\"M6 38c0-6 4-10 10-10h16c6 0 10 4 10 10\"/><line x1=\"24\" y1=\"8\" x2=\"24\" y2=\"40\"/><line x1=\"20\" y1=\"40\" x2=\"28\" y2=\"40\"/><path d=\"M19 12l2 2 4-4\"/></svg>",
+      "term": "Minimum Group Size",
+      "definition": "Minimum Group Size is the minimum number of confirmed participants required for a tour, activity, or guided experience to operate; if confirmed bookings fall below this threshold by the departure date, the operator may cancel the departure or consolidate participants with another scheduled date.",
+      "lastReviewed": "2026-07-23"
+    },
+    {
       "id": "minimum-length-of-stay-mlos",
       "vertical": "lodging",
       "category": "hotel-rate",
@@ -33762,6 +34087,84 @@
       "term": "One-Way Drop Fee",
       "definition": "A One-Way Drop Fee is the surcharge a supplier levies when a vehicle is returned to a location different from where it was picked up. It compensates the supplier for repositioning cost and fleet imbalance and is a key line item in car rental distribution pricing.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "online-booking-tool",
+      "vertical": "common",
+      "category": "standards",
+      "conceptType": "system",
+      "status": "active",
+      "abbreviation": "OBT",
+      "term_ko": "온라인 예약 도구(OBT)",
+      "definition_ko": "OBT(Online Booking Tool)는 직원이 항공편·호텔·렌터카를 검색·비교·예약할 수 있게 하는 기업 여행 셀프서비스 애플리케이션으로, 회사의 출장 정책을 준수하면서도 일반적인 출장에 대한 수동 대리점 지원 필요성을 줄여 준다.",
+      "longDef": "An OBT sits between the GDS (or direct supplier connections) and the corporate traveler, applying the company's travel policy rules — preferred suppliers, booking windows, cabin-class restrictions, approval workflows — in real time. Leading OBT platforms include Concur Travel (SAP), Cytric (Amadeus), and Egencia (Amex GBT); they integrate with expense-management systems and can feed data back to the Travel Management Company (TMC) that administers the programme. OBTs are the primary data-collection point for corporate travel analytics, duty-of-care tracking, and policy-compliance reporting. Modern OBTs increasingly connect via NDC alongside legacy GDS content, and some extend to rail, taxi, and hotel-direct content.",
+      "longDef_ko": "OBT는 GDS(또는 공급사 직접 연결)와 기업 출장자 사이에 위치하며, 회사의 출장 정책 규칙 — 선호 공급사, 예약 가능 기간, 좌석 등급 제한, 승인 워크플로 — 을 실시간으로 적용한다. 주요 OBT 플랫폼으로는 Concur Travel(SAP), Cytric(Amadeus), Egencia(Amex GBT)가 있으며, 이들은 경비 관리 시스템과 통합되고 해당 프로그램을 관리하는 TMC(Travel Management Company)에 데이터를 제공할 수 있다. OBT는 기업 출장 분석, 안전 배려(duty of care) 추적, 정책 준수 보고를 위한 주요 데이터 수집 지점이다. 현대 OBT는 레거시 GDS 콘텐츠와 함께 NDC를 통한 연결이 늘어나고 있으며, 일부는 철도·택시·호텔 직접 콘텐츠로 확장되고 있다.",
+      "standardBody": "GBTA",
+      "aliases": [
+        "OBT",
+        "Self-Booking Tool",
+        "SBT",
+        "Corporate Booking Tool",
+        "CBT"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Travel Management Company",
+          "targetId": "travel-management-company"
+        },
+        {
+          "type": "related",
+          "targetTerm": "GDS",
+          "targetId": "gds"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Corporate Rate",
+          "targetId": "corporate-rate"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Duty of Care",
+          "targetId": "duty-of-care"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Travel Management Company",
+          "explanation": "A Travel Management Company is the specialist agency that manages a corporate travel programme and provides agent servicing; the OBT is the self-service software tool through which employees book directly without agent involvement. Many TMCs deploy and support an OBT as part of their service.",
+          "explanation_ko": "TMC는 기업 출장 프로그램을 관리하고 대리점 서비스를 제공하는 전문 여행사이고, OBT는 직원이 대리점 개입 없이 직접 예약하는 셀프서비스 소프트웨어 도구다. 많은 TMC가 서비스의 일환으로 OBT를 배포·지원한다.",
+          "targetId": "travel-management-company"
+        },
+        {
+          "targetTerm": "GDS",
+          "explanation": "The GDS is the global distribution infrastructure that sources flight, hotel, and car content from suppliers; the OBT is the consumer-facing application layered on top of GDS content (and increasingly on NDC/direct connections) that applies corporate policy.",
+          "explanation_ko": "GDS는 공급사로부터 항공편·호텔·렌터카 콘텐츠를 공급받는 글로벌 유통 인프라이고, OBT는 기업 정책을 적용하면서 GDS 콘텐츠(점차 NDC/직접 연결도) 위에 구축된 사용자 대면 애플리케이션이다.",
+          "targetId": "gds"
+        }
+      ],
+      "sources": [
+        {
+          "name": "GBTA — Business Travel Glossary",
+          "org": "Global Business Travel Association (GBTA)",
+          "version": "",
+          "section": "Online Booking Tool (OBT)",
+          "url": "https://www.gbta.org/education-and-events/glossary/",
+          "tier": "association"
+        },
+        {
+          "name": "SAP Concur — What is an Online Booking Tool?",
+          "org": "SAP Concur",
+          "version": "",
+          "section": "",
+          "url": "https://www.concur.com/en-us/resource-center/factsheets/travel-booking-tool",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"10\" width=\"32\" height=\"22\" rx=\"3\"/><line x1=\"8\" y1=\"18\" x2=\"40\" y2=\"18\"/><circle cx=\"14\" cy=\"14\" r=\"2\"/><line x1=\"16\" y1=\"26\" x2=\"32\" y2=\"26\"/><line x1=\"16\" y1=\"22\" x2=\"28\" y2=\"22\"/><path d=\"M20 32v4h8v-4\"/><line x1=\"14\" y1=\"36\" x2=\"34\" y2=\"36\"/></svg>",
+      "term": "Online Booking Tool",
+      "definition": "An Online Booking Tool (OBT) is a self-service corporate travel application that enables employees to search, compare, and book flights, hotels, and car rentals in compliance with their company's travel policy, reducing the need for manual agent assistance on routine trips.",
+      "lastReviewed": "2026-07-23"
     },
     {
       "id": "opaque-inventory",
@@ -38578,6 +38981,85 @@
       "term": "PRM",
       "definition": "A Passenger with Reduced Mobility — any person whose mobility is reduced due to physical or mental disability, age, illness or other cause and who needs special assistance during travel. PRM needs are communicated to carriers and airports through standardized special-service request codes.",
       "lastReviewed": "2026-06-15"
+    },
+    {
+      "id": "product-feed",
+      "vertical": "tours",
+      "category": "tour-dist",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "상품 피드(Product Feed)",
+      "definition_ko": "상품 피드는 운영사의 전체 상품 카탈로그(상품 설명, 이미지, 가격, 가용성, 예약 규칙 포함)를 기계 판독 가능한 구조화된 형식으로 내보내어, 파일 전송 또는 API를 통해 유통 파트너에게 전달함으로써 그들이 자신의 플랫폼에서 운영사 인벤토리를 가져와 표시하고 판매할 수 있게 하는 데이터 출력물이다.",
+      "longDef": "Product feeds are the backbone of large-scale tours-and-activities distribution: a major OTA such as Viator or GetYourGuide receives feeds from thousands of operators, normalises the content, and lists products alongside independently managed content. A feed can be static (a scheduled file export in JSON, XML, or CSV format) or dynamic (a real-time API pull that reflects live availability and pricing). Modern connectivity standards such as OCTO define how a product catalog should be structured so that any compliant OTA or aggregator can ingest it without bespoke mappings. Google Things to Do, the Google surfaces for in-destination activities, ingests product feeds from certified connectivity providers to populate search results and Google Maps. Key attributes in a product feed include: product ID, title, description, media (images/video), pricing tiers by participant type, availability schedule, meeting point or pickup options, cancellation policy, and booking confirmation type (instant or on-request). Quality of the product feed — completeness, accuracy, and freshness — directly drives conversion rates on distribution platforms.",
+      "longDef_ko": "상품 피드는 대규모 투어·액티비티 유통의 근간이다. Viator나 GetYourGuide 같은 주요 OTA는 수천 개 운영사로부터 피드를 받아 콘텐츠를 표준화하고 독립적으로 관리하는 콘텐츠와 함께 상품을 등록한다. 피드는 정적(JSON, XML, CSV 형식의 예약 파일 내보내기)일 수도, 실시간 가용성과 가격을 반영하는 동적(실시간 API 풀)일 수도 있다. OCTO와 같은 현대적 커넥티비티 표준은 상품 카탈로그의 구조를 정의하여 규격 준수 OTA나 집계업체가 맞춤형 매핑 없이 이를 수집할 수 있게 한다. Google Things to Do는 인증된 커넥티비티 제공업체로부터 상품 피드를 받아 검색 결과와 구글 지도를 채운다. 상품 피드의 주요 속성으로는 상품 ID, 제목, 설명, 미디어(이미지/동영상), 참가자 유형별 가격 등급, 가용성 스케줄, 집합 장소 또는 픽업 옵션, 취소 정책, 예약 확정 유형(즉시 또는 요청 시)이 있다. 상품 피드의 품질(완성도·정확성·최신성)은 유통 플랫폼의 전환율에 직접 영향을 미친다.",
+      "aliases": [
+        "Content Feed",
+        "Catalog Feed",
+        "Inventory Feed"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "OCTO",
+          "targetId": "octo-spec"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Connectivity Hub",
+          "targetId": "connectivity-hub"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Reseller API",
+          "targetId": "reseller-api"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Instant Confirmation",
+          "targetId": "instant-confirmation"
+        },
+        {
+          "type": "related",
+          "targetTerm": "On-Request Booking",
+          "targetId": "on-request-booking"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "OCTO",
+          "explanation": "OCTO is the connectivity standard that defines the API schema for product, availability, and booking data; a Product Feed is the actual data payload exported or served according to that (or any comparable) schema. OCTO specifies the format; the Product Feed is the content transported in that format.",
+          "explanation_ko": "OCTO는 상품·가용성·예약 데이터의 API 스키마를 정의하는 커넥티비티 표준이고, 상품 피드는 그 스키마(또는 유사 스키마)에 따라 내보내거나 제공하는 실제 데이터 페이로드다. OCTO가 형식을 규정하고, 상품 피드는 그 형식으로 전달되는 콘텐츠다.",
+          "targetId": "octo-spec"
+        },
+        {
+          "targetTerm": "Reseller API",
+          "explanation": "A Reseller API is a booking-enabled API that allows partners to search availability and create bookings in real time; a Product Feed is typically a catalog-level data export used to populate content (descriptions, images, pricing) on a partner platform before or independently of the live booking flow.",
+          "explanation_ko": "Reseller API는 파트너가 실시간으로 가용성을 검색하고 예약을 생성할 수 있는 예약 기능 API이고, 상품 피드는 라이브 예약 흐름 이전 또는 독립적으로 파트너 플랫폼의 콘텐츠(설명, 이미지, 가격)를 채우는 데 사용되는 카탈로그 수준의 데이터 내보내기다.",
+          "targetId": "reseller-api"
+        }
+      ],
+      "sources": [
+        {
+          "name": "OCTO API Specification — Product Object",
+          "org": "Open Connectivity for Tours and Activities (OCTO)",
+          "version": "1.3",
+          "section": "Product",
+          "url": "https://docs.octo.travel/",
+          "tier": "association"
+        },
+        {
+          "name": "Google Things to Do — Feed Specification",
+          "org": "Google",
+          "version": "",
+          "section": "",
+          "url": "https://developers.google.com/travel/activities",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"10\" width=\"16\" height=\"28\" rx=\"2\"/><rect x=\"26\" y=\"10\" width=\"16\" height=\"28\" rx=\"2\"/><path d=\"M22 18l4-4M22 24l4 0M22 30l4 4\"/><line x1=\"11\" y1=\"17\" x2=\"17\" y2=\"17\"/><line x1=\"11\" y1=\"22\" x2=\"17\" y2=\"22\"/><line x1=\"11\" y1=\"27\" x2=\"17\" y2=\"27\"/><line x1=\"31\" y1=\"17\" x2=\"37\" y2=\"17\"/><line x1=\"31\" y1=\"22\" x2=\"37\" y2=\"22\"/><line x1=\"31\" y1=\"27\" x2=\"37\" y2=\"27\"/></svg>",
+      "term": "Product Feed",
+      "definition": "A Product Feed is a machine-readable, structured export of an operator's entire product catalog — including product descriptions, images, pricing, availability, and booking rules — delivered to distribution partners via file transfer or API so they can import, display, and sell the operator's inventory on their platforms.",
+      "lastReviewed": "2026-07-23"
     },
     {
       "id": "product-option",
