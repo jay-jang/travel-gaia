@@ -2,8 +2,8 @@
   "meta": {
     "name": "Travel Wiki",
     "tagline": "여행 산업 용어 백과사전",
-    "generatedAt": "2026-07-24",
-    "entryCount": 625,
+    "generatedAt": "2026-07-25",
+    "entryCount": 631,
     "categoryCount": 20,
     "verticalCount": 6
   },
@@ -5252,6 +5252,92 @@
       "term": "Attraction Ticket",
       "definition": "A pre-booked admission to a museum, theme park, landmark, or venue, typically sold for a specific date or timeslot and redeemed by barcode/QR at the gate.",
       "lastReviewed": "2026-06-24"
+    },
+    {
+      "id": "attrition",
+      "vertical": "lodging",
+      "category": "hotel-dist",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "객실 소비 의무(Attrition)",
+      "definition_ko": "호텔 단체 계약에서 단체 주최자가 예약된 단체 블록의 최소 비율 또는 수의 객실을 실제 이용해야 하는 계약상 의무로, 그 기준에 미달할 경우 금전적 위약금(attrition fee)이 청구된다. Attrition 조항은 일반 재고에서 제외된 채 팔리지 않은 객실에 따른 수익 손실로부터 호텔을 보호하며, 단체 주최자는 계약상 반환(cut-off) 일자 이전에 미사용 객실을 반환함으로써 위약금을 피할 수 있다.",
+      "longDef": "Attrition clauses are standard in group hotel contracts for meetings, conferences, incentive travel, and tour groups. The minimum pick-up is typically set at 80–90% of the contracted room block (e.g., if 100 rooms are blocked and the attrition rate is 80%, the group must use at least 80 rooms). If the group falls short, the hotel calculates the attrition fee by multiplying the number of unfulfilled rooms by the contracted room rate (sometimes by the room rate minus the hotel's estimated avoided costs such as housekeeping). Some contracts apply a sliding scale, with the fee rate increasing as the shortfall grows. Groups can mitigate attrition exposure by: (1) negotiating a realistic room block based on expected attendance; (2) releasing rooms back to the hotel in tranches before the cut-off date; (3) including force majeure clauses that excuse attrition fees when attendance drops due to events beyond the organizer's control (e.g., pandemic, natural disaster). Attrition is tracked through regular pick-up reports from the hotel showing actual room nights booked against the contracted block.",
+      "longDef_ko": "Attrition 조항은 회의, 컨퍼런스, 인센티브 여행, 투어 단체를 위한 호텔 단체 계약에서 표준이다. 최소 소비 의무는 일반적으로 계약 객실 블록의 80~90%로 설정된다(예: 100개 객실이 블록되고 attrition 비율이 80%이면 단체는 최소 80개 객실을 이용해야 함). 단체가 미달할 경우 호텔은 미이행 객실 수에 계약 요금(때로는 하우스키핑 등 회피된 비용을 차감한 금액)을 곱해 위약금을 산정한다. 일부 계약은 부족분이 클수록 위약금 비율이 높아지는 단계적 산정 방식을 적용한다. 단체는 (1) 예상 참가 인원에 맞는 현실적 객실 블록 협상, (2) cut-off 일자 이전 단계적 객실 반환, (3) 전염병·자연재해 등 주최자 통제 불가 사유로 참가 인원이 줄어들 경우 위약금을 면제하는 불가항력 조항 포함 등을 통해 attrition 위험을 줄일 수 있다.",
+      "standardBody": "AHLA",
+      "aliases": [
+        "Attrition Clause",
+        "Attrition Fee",
+        "Room Attrition",
+        "Minimum Pick-up",
+        "Pick-up Requirement"
+      ],
+      "relationships": [
+        {
+          "type": "broader",
+          "targetTerm": "Allotment",
+          "targetId": "allotment"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Release Period",
+          "targetId": "release-period"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Overbooking",
+          "targetId": "overbooking"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Allotment",
+          "explanation": "An allotment is the block of rooms pre-assigned to a partner or group; attrition is the contractual minimum pick-up obligation attached to that block, specifying how many of those allotted rooms must actually be used or paid for.",
+          "explanation_ko": "Allotment는 파트너 또는 단체에 사전 배정된 객실 블록이고, Attrition은 그 블록에 부과된 최소 소비 의무로, 배정된 객실 중 실제로 이용하거나 대금을 지불해야 하는 최소 수를 규정한다.",
+          "targetId": "allotment"
+        },
+        {
+          "targetTerm": "Release Period",
+          "explanation": "The release period is the deadline by which unbooked allotment rooms are returned to the hotel's general inventory; attrition is the penalty owed if the group still falls short of its minimum pick-up commitment on the accounting date (typically the day of check-out or shortly after).",
+          "explanation_ko": "반환 기간(Release Period)은 미예약 allotment 객실이 호텔 일반 재고로 반환되는 기한이고, Attrition은 정산일(보통 체크아웃 당일 또는 직후) 기준으로 단체가 최소 소비 의무에 미달할 경우 부담하는 위약금이다.",
+          "targetId": "release-period"
+        },
+        {
+          "targetTerm": "Hotel Walk",
+          "explanation": "A hotel walk occurs when the hotel relocates an arriving guest to another property due to overbooking—a problem caused by the hotel selling too many rooms; attrition is the opposite risk, where the group organizer does not use enough of the rooms they blocked, causing the hotel a revenue shortfall.",
+          "explanation_ko": "호텔 워크(Hotel Walk)는 초과 예약으로 인해 호텔이 도착 투숙객을 다른 숙소로 이동시키는 것으로 호텔이 객실을 너무 많이 판매한 문제이고, Attrition은 반대 위험으로서 단체 주최자가 예약한 객실을 충분히 이용하지 않아 호텔에 수익 부족이 발생하는 것이다.",
+          "targetId": "hotel-walk"
+        }
+      ],
+      "sources": [
+        {
+          "name": "AHLA — Hotel Group Sales and Contract Guide",
+          "org": "American Hotel & Lodging Association",
+          "version": "",
+          "section": "",
+          "url": "https://www.ahla.com/",
+          "tier": "association"
+        },
+        {
+          "name": "PCMA — Group Contract Negotiation Best Practices",
+          "org": "Professional Convention Management Association",
+          "version": "",
+          "section": "",
+          "url": "https://www.pcma.org/",
+          "tier": "association"
+        },
+        {
+          "name": "GBTA — Meetings & Events Hotel Program Guidance",
+          "org": "Global Business Travel Association",
+          "version": "",
+          "section": "",
+          "url": "https://www.gbta.org/research-insights/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"32\" width=\"8\" height=\"10\" rx=\"1\"/><rect x=\"20\" y=\"22\" width=\"8\" height=\"20\" rx=\"1\"/><rect x=\"34\" y=\"14\" width=\"8\" height=\"28\" rx=\"1\"/><path d=\"M6 28l14-10 14-6\"/><line x1=\"32\" y1=\"36\" x2=\"40\" y2=\"28\" stroke-dasharray=\"2 2\"/></svg>",
+      "term": "Attrition",
+      "definition": "In hotel group contracting, attrition is the contractual obligation for a group organizer to occupy a minimum percentage or number of rooms in a reserved group block, with a monetary penalty (attrition fee) charged for any shortfall below that threshold. The attrition clause protects the hotel against revenue loss from unsold rooms held out of general inventory; the group organizer can avoid the fee by releasing unused rooms before the contracted release (cut-off) date.",
+      "lastReviewed": "2026-07-25"
     },
     {
       "id": "authorization-hold",
@@ -27206,6 +27292,99 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "irrops",
+      "vertical": "common",
+      "category": "disruption",
+      "conceptType": "business-term",
+      "status": "active",
+      "abbreviation": "IRROPS",
+      "term_ko": "비정상 운항(IRROPS)",
+      "definition_ko": "항공사의 정기 항공편이 악천후, 기체 기술 결함, 항공 교통 관제 제한, 승무원 부족, 보안 사건, 공항 폐쇄 등 예측 불가능하거나 통제 불가능한 사건으로 인해 게재된 시간표에서 실질적으로 벗어나는 모든 상황을 가리키는 항공 업계 용어이다. IRROPS 사건이 발생하면 항공사 비상 계획이 가동되어 운항 통제 센터(OCC)가 항공기 재배정, 승객 재수용 및 지상 서비스 조율을 수행한다.",
+      "longDef": "IRROPS encompasses a spectrum of disruptions: cancellations (flight does not operate at all), diversions (flight lands at an unplanned alternate airport), significant delays (typically defined as 3+ hours under major passenger-rights regulations), and ground stops or ground delays imposed by ATC. Airlines distinguish between controllable IRROPS (caused by the carrier, e.g., a maintenance issue) and uncontrollable IRROPS (caused by extraordinary circumstances such as severe weather or a security incident), because passenger-rights legislation in many jurisdictions—notably EU Regulation 261/2004, APPR in Canada, and the DOT rules in the United States—links the carrier's duty to pay compensation to whether the disruption was controllable. The term is also used by ground handlers, airports, and travel management companies as a signal to activate IRROPS protocols: proactive rebooking, lounge access, hotel and meal vouchers, and real-time traveler communications.",
+      "longDef_ko": "IRROPS는 취소(항공편 미운항), 회항(예정되지 않은 대체 공항 착륙), 상당한 지연(주요 승객 권리 규정상 통상 3시간 이상), ATC 부과 그라운드 스톱·그라운드 딜레이 등 다양한 장애 유형을 포괄한다. 항공사는 조종 가능한 IRROPS(항공사 책임, 예: 정비 문제)와 조종 불가능한 IRROPS(악천후, 보안 사고 등 특이한 상황으로 인한 것)를 구분하는데, EU Regulation 261/2004, 캐나다 APPR, 미국 DOT 규정 등 많은 국가의 승객 권리 법령이 보상 지급 의무를 장애 통제 가능 여부에 연계하기 때문이다. 이 용어는 지상 조업사, 공항, 여행 관리 회사도 IRROPS 프로토콜(선제적 재예약, 라운지 이용, 호텔·식사 바우처, 실시간 여행자 통보) 가동 신호로 사용한다.",
+      "standardBody": "IATA",
+      "aliases": [
+        "IROPs",
+        "Irregular Ops",
+        "Irregular Flight Operations",
+        "Operational Disruption"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Force Majeure",
+          "targetId": "force-majeure"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Schedule Change",
+          "targetId": "schedule-change"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Re-accommodation",
+          "targetId": "re-accommodation"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Right to Care",
+          "targetId": "right-to-care"
+        },
+        {
+          "type": "related",
+          "targetTerm": "EU Regulation 261/2004",
+          "targetId": "eu-regulation-261-2004"
+        },
+        {
+          "type": "related",
+          "targetTerm": "AOG",
+          "targetId": "aog"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Force Majeure",
+          "explanation": "Force majeure is a legal concept that excuses a party from contractual obligations due to extraordinary events beyond their control; IRROPS is the operational term describing the disruption event itself, regardless of whether legal force majeure applies.",
+          "explanation_ko": "불가항력(Force Majeure)은 통제 불가능한 특이 사건으로 인해 계약상 의무를 면제하는 법적 개념이고, IRROPS는 법적 불가항력 성립 여부와 관계없이 장애 사건 자체를 설명하는 운항 용어이다.",
+          "targetId": "force-majeure"
+        },
+        {
+          "targetTerm": "Schedule Change",
+          "explanation": "A schedule change is typically a planned, advance modification to a flight's departure time, route, or equipment; IRROPS refers to unplanned, real-time disruptions that occur on or close to the day of operation.",
+          "explanation_ko": "일정 변경(Schedule Change)은 통상 항공편 출발 시각, 노선, 기종의 계획적인 사전 변경이고, IRROPS는 운항 당일 또는 직전에 발생하는 비계획적 실시간 장애를 가리킨다.",
+          "targetId": "schedule-change"
+        },
+        {
+          "targetTerm": "Re-accommodation",
+          "explanation": "IRROPS is the triggering disruption event; re-accommodation is the carrier action taken in response to it—moving affected passengers to the next available flight or alternative transport.",
+          "explanation_ko": "IRROPS는 장애를 유발하는 사건이고, 재수용(Re-accommodation)은 그에 대응하여 피해 승객을 다음 가용 항공편 또는 대체 교통수단으로 이동시키는 항공사 조치이다.",
+          "targetId": "re-accommodation"
+        }
+      ],
+      "sources": [
+        {
+          "name": "IATA — Airline Operations Control (OCC) Guidance",
+          "org": "IATA",
+          "version": "",
+          "section": "",
+          "url": "https://www.iata.org/en/programs/ops-infra/operations-control/",
+          "tier": "association"
+        },
+        {
+          "name": "EU Regulation 261/2004 — Passenger Rights in the Event of Cancellation or Long Delay",
+          "org": "European Parliament and Council",
+          "version": "Regulation (EC) No 261/2004",
+          "section": "Article 5 (cancellation) and Article 6 (delay)",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32004R0261",
+          "tier": "regulation"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"16\"/><line x1=\"24\" y1=\"12\" x2=\"24\" y2=\"26\"/><circle cx=\"24\" cy=\"32\" r=\"1.5\" fill=\"currentColor\" stroke=\"none\"/><path d=\"M14 10l4 4M34 10l-4 4\"/></svg>",
+      "term": "Irregular Operations (IRROPS)",
+      "definition": "Irregular Operations (IRROPS) is the airline industry term for any situation in which an airline's scheduled flights deviate materially from the published timetable due to unforeseeable or uncontrollable events—including severe weather, mechanical or technical failures, air traffic control constraints, crew unavailability, security incidents, or airport closures. An IRROPS event triggers a carrier's contingency plan, engaging the Operations Control Center (OCC) to re-route aircraft, re-accommodate passengers, and coordinate ground services.",
+      "lastReviewed": "2026-07-25"
+    },
+    {
       "id": "iso-3166-country-code",
       "vertical": "common",
       "category": "codes",
@@ -28537,6 +28716,97 @@
       "term": "Look-Back Period",
       "definition": "The look-back period is the defined span of time immediately before a travel insurance policy's effective date during which the insurer reviews the insured's medical history to determine whether a condition qualifies as pre-existing and is therefore excluded from coverage. Any illness, injury, or condition for which the insured received medical advice, diagnosis, care, or treatment — or for which there was a change in symptoms, medications, or treatment — during the look-back window is classified as a pre-existing condition.",
       "lastReviewed": "2026-07-21"
+    },
+    {
+      "id": "look-to-book-ratio",
+      "vertical": "lodging",
+      "category": "hotel-dist",
+      "conceptType": "metric",
+      "status": "active",
+      "abbreviation": "L2B",
+      "term_ko": "조회 대 예약 비율(Look-to-Book Ratio)",
+      "definition_ko": "특정 유통 채널에서 시작된 숙박 시설 검색 또는 쇼핑 세션 수를 같은 기간 완료된 확정 예약 건수로 나눈 비율이다. 채널이 브라우저를 구매자로 얼마나 효율적으로 전환하는지를 나타내며, 100:1 비율은 예약 1건당 100번의 검색 세션이 발생했음을 의미한다. 비율이 낮을수록 전환 효율이 높고, 비율이 높을수록 예약 프로세스의 마찰, 가격 불일치, 또는 재고 부족을 시사한다.",
+      "longDef": "The look-to-book ratio is a primary KPI for hospitality distribution and revenue management teams. In the GDS and OTA channel context, it reflects the efficiency of a property's rate and inventory presentation: a very high L2B (e.g., 500:1 or more on GDS channels) may signal that displayed rates are uncompetitive, rooms are closed to needed dates, or booking-path friction is causing abandonment. Benchmarks vary significantly by channel: direct booking engines typically achieve much lower L2B ratios (10:1 to 50:1) than metasearch or GDS channels (100:1 to 500:1+). The metric is tracked by CRS vendors, channel managers, and booking-engine providers and is often used alongside conversion rate (the inverse of L2B expressed as a percentage) and cost-per-booking (CPA) to optimize channel mix. In the airline GDS context, IATA tracks segment booking rates (bookings per search) similarly. Reducing L2B is addressed through rate competitiveness audits (rate shopping), improving content quality (images, descriptions, room-type mapping), enabling instant confirmation, and streamlining the checkout flow.",
+      "longDef_ko": "조회 대 예약 비율은 호스피탈리티 유통 및 수익 관리팀의 주요 KPI이다. GDS·OTA 채널 맥락에서는 숙박 시설의 요금·재고 표시 효율을 반영한다. L2B가 매우 높으면(예: GDS 채널에서 500:1 이상) 표시 요금이 경쟁력이 없거나, 필요한 날짜의 객실이 마감되었거나, 예약 경로의 마찰로 이탈이 발생하고 있음을 나타낼 수 있다. 채널별 벤치마크는 상당히 다르다: 직접 예약 엔진은 일반적으로 메타서치·GDS 채널보다 훨씬 낮은 L2B 비율을 달성한다(10:1~50:1 대 100:1~500:1 이상). 이 지표는 CRS 벤더, 채널 매니저, 예약 엔진 제공업체가 추적하며, 채널 믹스 최적화를 위해 전환율(L2B의 역수를 백분율로 표현)·예약당 비용(CPA)과 함께 활용된다. L2B 감소는 요금 경쟁력 감사(rate shopping), 콘텐츠 품질 개선, 즉시 확정 활성화, 결제 프로세스 간소화를 통해 해결된다.",
+      "aliases": [
+        "L2B Ratio",
+        "Search-to-Book Ratio",
+        "Search-to-Convert Ratio",
+        "LTB Ratio",
+        "Booking Conversion Rate (inverse)"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Booking Engine",
+          "targetId": "booking-engine"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Channel Manager",
+          "targetId": "channel-manager"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Revenue Management",
+          "targetId": "revenue-management"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Rate Shopping",
+          "targetId": "rate-shopping"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Rate Shopping",
+          "explanation": "Rate shopping is the practice of monitoring competitor room rates to keep a hotel's own pricing competitive; a high look-to-book ratio is often a symptom that rate shopping reveals—the property's rates are out of position—prompting corrective pricing action to improve conversion.",
+          "explanation_ko": "Rate Shopping은 호텔의 가격 경쟁력을 유지하기 위해 경쟁사 객실 요금을 모니터링하는 관행이고, 높은 조회 대 예약 비율은 흔히 rate shopping이 드러내는 증상, 즉 숙박 시설의 요금이 경쟁 위치에서 벗어나 있음을 나타내며 전환율 개선을 위한 가격 시정 조치를 촉구한다.",
+          "targetId": "rate-shopping"
+        },
+        {
+          "targetTerm": "Booking Engine",
+          "explanation": "A booking engine is the technology platform where shopping sessions and confirmed bookings both occur; the look-to-book ratio is the KPI measuring how efficiently that booking engine converts visitors into reservations.",
+          "explanation_ko": "예약 엔진(Booking Engine)은 쇼핑 세션과 확정 예약이 모두 이루어지는 기술 플랫폼이고, 조회 대 예약 비율은 그 예약 엔진이 방문자를 예약으로 얼마나 효율적으로 전환하는지를 측정하는 KPI이다.",
+          "targetId": "booking-engine"
+        },
+        {
+          "targetTerm": "Revenue Management",
+          "explanation": "Revenue management sets prices and availability to maximize total room revenue; the look-to-book ratio is a diagnostic input that tells revenue managers whether their pricing strategy is attracting browsers but failing to convert them, or whether availability restrictions are unnecessarily restricting searches.",
+          "explanation_ko": "수익 관리(Revenue Management)는 총 객실 수익을 극대화하기 위해 가격과 가용성을 설정하고, 조회 대 예약 비율은 수익 관리자에게 가격 전략이 브라우저를 유인하지만 전환에 실패하는지, 또는 가용성 제한이 불필요하게 검색을 제한하는지를 알려주는 진단 입력값이다.",
+          "targetId": "revenue-management"
+        }
+      ],
+      "sources": [
+        {
+          "name": "STR — Hotel Distribution & Channel Performance Benchmarks",
+          "org": "STR (CoStar Group)",
+          "version": "",
+          "section": "",
+          "url": "https://str.com/",
+          "tier": "secondary"
+        },
+        {
+          "name": "Phocuswright — Online Travel Overview (Look-to-Book Analysis)",
+          "org": "Phocuswright",
+          "version": "",
+          "section": "",
+          "url": "https://www.phocuswright.com/",
+          "tier": "secondary"
+        },
+        {
+          "name": "HSMAI — Revenue Management Strategy (Conversion Metrics)",
+          "org": "Hospitality Sales and Marketing Association International",
+          "version": "",
+          "section": "",
+          "url": "https://hsmai.org/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"20\" cy=\"20\" r=\"10\"/><line x1=\"28\" y1=\"28\" x2=\"40\" y2=\"40\"/><path d=\"M20 14v6l4 4\"/><rect x=\"30\" y=\"32\" width=\"10\" height=\"8\" rx=\"1\"/></svg>",
+      "term": "Look-to-Book Ratio",
+      "definition": "The look-to-book ratio (L2B) is the number of property search or shopping sessions initiated on a distribution channel divided by the number of confirmed bookings completed in the same period. It expresses how efficiently a channel converts browsers into buyers: a ratio of 100:1 means 100 search sessions occurred for every one booking made. Lower ratios indicate higher conversion efficiency; higher ratios signal friction in the booking funnel, pricing mismatch, or inventory gaps.",
+      "lastReviewed": "2026-07-25"
     },
     {
       "id": "loss-damage-waiver",
@@ -31080,6 +31350,97 @@
       "lastReviewed": "2026-07-24"
     },
     {
+      "id": "misconnect",
+      "vertical": "common",
+      "category": "disruption",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "연결편 미탑승(Misconnect)",
+      "definition_ko": "다구간 여정으로 여행하는 승객이 입항 항공편이 환승 공항의 최소 연결 시간(MCT) 이후에 도착하거나 환승 수속을 제때 완료하지 못해 연결 항공편에 탑승하지 못하는 상황이다. Misconnect는 장애 사건으로서, 운항 또는 발권 항공사에게 승객을 최종 목적지까지 가는 다음 가용 항공편으로 재수용할 의무를 발생시킨다.",
+      "longDef": "Misconnects arise from two root causes: (1) inbound flight delay that leaves insufficient transit time, and (2) self-inflicted misconnect where the passenger voluntarily booked a connection below MCT or made an error during transit. When the misconnect is caused by the carrier (controllable IRROPS), the carrier's duty to assist under passenger rights legislation and IATA interline agreements is clear: the passenger must be re-routed to the final destination at no additional charge on the earliest available flight, whether operated by the same airline or by an interline partner. When it is a self-inflicted misconnect on a split PNR (tickets not linked), the passenger bears the cost of rebooking. Airport agents classify a misconnect by scanning the boarding pass status at the gate; the departed flight is recorded as a \"misconnect\" or \"off-load\" in the departure control system, triggering IRROPS handling workflows. Protection Connection products (sold or implicit in interline agreements) automatically rebook passengers onto the next flight when a misconnect is detected before the connecting flight departs.",
+      "longDef_ko": "연결편 미탑승은 두 가지 근본 원인에서 발생한다: (1) 입항 항공편 지연으로 환승 시간이 부족해지는 경우, (2) 승객이 자발적으로 MCT 미만의 연결 편을 예약하거나 환승 중 오류를 범하는 자발적 미탑승. 항공사 원인(조종 가능한 IRROPS)으로 인한 연결편 미탑승의 경우, 승객 권리 법령 및 IATA 인터라인 협정에 따라 항공사의 지원 의무가 명확하다: 동일 항공사 또는 인터라인 파트너가 운항하는 가장 빠른 가용 항공편으로 추가 비용 없이 최종 목적지까지 재라우팅해야 한다. 분리된 PNR(연결되지 않은 항공권)에서 자발적 미탑승이 발생한 경우 승객이 재예약 비용을 부담한다. 공항 직원은 탑승구에서 탑승권 상태를 스캔하여 연결편 미탑승을 분류하며, 출발 항공편은 출발 통제 시스템(DCS)에 \"misconnect\" 또는 \"off-load\"로 기록되어 IRROPS 처리 워크플로를 가동시킨다.",
+      "standardBody": "IATA",
+      "aliases": [
+        "Missed Connection",
+        "Missed Connect",
+        "Off-Load (connection context)"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "MCT",
+          "targetId": "mct"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Connection",
+          "targetId": "connection"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Re-accommodation",
+          "targetId": "re-accommodation"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Right to Re-routing",
+          "targetId": "right-to-re-routing"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Irregular Operations (IRROPS)",
+          "targetId": "irrops"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Split PNR",
+          "targetId": "split-pnr"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Re-accommodation",
+          "explanation": "A misconnect is the event—the passenger failing to board the connecting flight; re-accommodation is the carrier's response action of rebooking the passenger onto the next available onward flight.",
+          "explanation_ko": "연결편 미탑승(Misconnect)은 사건, 즉 승객이 연결 항공편에 탑승하지 못하는 것이고, 재수용(Re-accommodation)은 항공사가 승객을 다음 가용 항공편으로 재예약하는 대응 조치이다.",
+          "targetId": "re-accommodation"
+        },
+        {
+          "targetTerm": "MCT",
+          "explanation": "MCT (Minimum Connecting Time) is the published minimum time required for a valid connection at an airport; a misconnect occurs when actual transit time falls below MCT (or the passenger cannot complete transit in time), causing the connection to be broken.",
+          "explanation_ko": "MCT(최소 연결 시간)는 공항에서 유효한 연결을 위해 필요한 최소 시간으로 공시된 것이고, 연결편 미탑승은 실제 환승 시간이 MCT 미만으로 떨어지거나(또는 승객이 제때 환승 수속을 완료하지 못해) 연결이 끊길 때 발생한다.",
+          "targetId": "mct"
+        },
+        {
+          "targetTerm": "Denied Boarding Compensation",
+          "explanation": "Denied boarding occurs when the passenger arrives at the gate on time but is turned away due to the flight being oversold; a misconnect occurs when the passenger cannot reach the gate in time due to an inbound flight delay.",
+          "explanation_ko": "탑승 거절(Denied Boarding)은 승객이 제시간에 탑승구에 도착했음에도 초과 판매로 인해 거절당하는 것이고, 연결편 미탑승은 입항 항공편 지연으로 인해 승객이 제시간에 탑승구에 도달하지 못하는 것이다.",
+          "targetId": "denied-boarding-compensation"
+        }
+      ],
+      "sources": [
+        {
+          "name": "IATA Resolution 735d — Interline Traffic Agreements (Passenger)",
+          "org": "IATA",
+          "version": "",
+          "section": "",
+          "url": "https://www.iata.org/en/programs/ops-infra/interline/",
+          "tier": "association"
+        },
+        {
+          "name": "EU Regulation 261/2004 — Right to Re-routing",
+          "org": "European Parliament and Council",
+          "version": "Regulation (EC) No 261/2004",
+          "section": "Article 8",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32004R0261",
+          "tier": "regulation"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 32l10-10 8 8 10-16\"/><circle cx=\"36\" cy=\"14\" r=\"4\"/><line x1=\"33\" y1=\"11\" x2=\"39\" y2=\"17\"/><line x1=\"39\" y1=\"11\" x2=\"33\" y2=\"17\"/></svg>",
+      "term": "Misconnect",
+      "definition": "A misconnect (or missed connection) occurs when a passenger traveling on a multi-segment itinerary fails to board their connecting flight because the inbound flight arrived after the contracted or published Minimum Connecting Time (MCT) at the transit airport, or because the passenger was unable to complete transit formalities in time. A misconnect is a disruption event that obligates the operating or ticketing carrier to re-accommodate the passenger on the next available flight to their destination.",
+      "lastReviewed": "2026-07-25"
+    },
+    {
       "id": "missed-connection",
       "vertical": "common",
       "category": "insurance",
@@ -32347,6 +32708,108 @@
       "term": "Negotiated Fare",
       "definition": "A negotiated fare is a private or contract fare offered to a specific channel (such as a consolidator, corporation, or agency) rather than published to the general public, governed by ATPCO Category 35 (Negotiated Fares). Category 35 carries the ticketing-security and net/sell fare-creation rules that control who may sell the fare and how the net cost and selling price are derived.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "negotiated-rate",
+      "vertical": "lodging",
+      "category": "hotel-rate",
+      "conceptType": "business-term",
+      "status": "active",
+      "abbreviation": "LNR",
+      "term_ko": "협약 요금(Negotiated Rate)",
+      "definition_ko": "호텔 또는 호텔 체인이 특정 기업 계정, 여행 관리 회사(TMC), 또는 컨소시엄과 사전에 계약하여 일정 수요량 또는 우선 공급자 지정을 조건으로 적격 여행자에게 우대 요금을 보장하는 객실 요금이다. 협약 요금은 통상 1년 단위의 계약 기간 동안 호텔의 CRS/PMS에 레이트 코드로 등록되어 합의된 채널을 통해 접근된다.",
+      "longDef": "Negotiated rates are the cornerstone of corporate hotel programs. A company (or its TMC on its behalf) solicits proposals from hotels—often via the annual RFP (Request for Proposal) cycle facilitated by consortia such as HRS, Lanyon/Cvent, or Amadeus Travel Optimizer—specifying estimated room nights and preferred markets. Hotels respond with net or commissionable rate offers, and the agreed rate is assigned a Rate Access Code (RAC) so it appears only in authorized booking channels. Local Negotiated Rates (LNRs) are property-specific agreements, while consortium rates (e.g., BCD, CWT, AMEX GBT preferred program) leverage collective volume across multiple client companies. Unlike BAR, which varies with demand, a negotiated rate is fixed for the contract year, giving travelers and travel managers predictable cost and simplifying T&E reporting.",
+      "longDef_ko": "협약 요금은 기업 호텔 프로그램의 근간이다. 기업(또는 그 TMC)은 HRS, Lanyon/Cvent, Amadeus Travel Optimizer 등 컨소시엄이 진행하는 연간 RFP(제안 요청) 사이클을 통해 호텔에 예상 숙박 야수와 선호 시장을 명시한 제안을 요청한다. 호텔은 순액(net) 또는 수수료 포함 요금 제안으로 응답하며, 합의된 요금은 승인된 예약 채널에서만 표시되도록 Rate Access Code(RAC)에 할당된다. LNR(Local Negotiated Rate)은 개별 숙박 시설별 협약이며, 컨소시엄 요금(예: BCD, CWT, AMEX GBT 우선 프로그램)은 여러 고객사의 집합 물량을 활용한다. 수요에 따라 변동하는 BAR와 달리, 협약 요금은 계약 연도 동안 고정되어 여행자와 여행 관리자에게 예측 가능한 비용과 간편한 출장경비 보고를 제공한다.",
+      "standardBody": "GBTA",
+      "aliases": [
+        "LNR",
+        "Corporate Rate",
+        "Contract Rate",
+        "Account Rate",
+        "Preferred Rate"
+      ],
+      "relationships": [
+        {
+          "type": "contrasts",
+          "targetTerm": "BAR",
+          "targetId": "bar"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Rate Plan",
+          "targetId": "rate-plan"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Rate Code",
+          "targetId": "rate-code"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Rate Access Code (RAC)",
+          "targetId": "rate-access-code"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Rate Parity",
+          "targetId": "rate-parity"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Corporate Profile",
+          "targetId": "corporate-profile"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "BAR",
+          "explanation": "BAR (Best Available Rate) is the lowest publicly bookable rate at a given time and fluctuates with demand; a negotiated rate is a fixed, privately contracted rate for a specific account, invisible to the general public.",
+          "explanation_ko": "BAR(Best Available Rate)는 특정 시점에 일반에게 예약 가능한 최저 공개 요금으로 수요에 따라 변동하고, 협약 요금은 특정 계정을 위해 계약된 고정 비공개 요금으로 일반 대중에게 노출되지 않는다.",
+          "targetId": "bar"
+        },
+        {
+          "targetTerm": "Rate Parity",
+          "explanation": "Rate parity requires that a hotel offer the same rate across all public distribution channels; a negotiated rate is exempt from parity obligations because it is a private, account-specific contract rate, not a public rate.",
+          "explanation_ko": "레이트 패리티는 호텔이 모든 공개 유통 채널에서 동일한 요금을 제공하도록 요구하고, 협약 요금은 공개 요금이 아닌 계정별 비공개 계약 요금이므로 패리티 의무에서 제외된다.",
+          "targetId": "rate-parity"
+        },
+        {
+          "targetTerm": "Rate Fence",
+          "explanation": "A rate fence is a rule that restricts who can access a public fare or rate (e.g., advance purchase, minimum stay); a negotiated rate is controlled by account credentials (Rate Access Code) rather than a public fence condition.",
+          "explanation_ko": "요금 울타리(rate fence)는 특정 공개 요금에 접근할 수 있는 사람을 제한하는 조건(예: 사전 구매, 최소 숙박)이고, 협약 요금은 공개 울타리 조건이 아닌 계정 자격증명(Rate Access Code)으로 통제된다.",
+          "targetId": "rate-fence"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Global Business Travel Association — Corporate Lodging Program Best Practices",
+          "org": "GBTA",
+          "version": "",
+          "section": "",
+          "url": "https://www.gbta.org/research-insights/",
+          "tier": "association"
+        },
+        {
+          "name": "AHLA — Group & Business Travel Insights",
+          "org": "American Hotel & Lodging Association",
+          "version": "",
+          "section": "",
+          "url": "https://www.ahla.com/",
+          "tier": "association"
+        },
+        {
+          "name": "OpenTravel Hotel Rate Specification — Rate Access Code (RAC) element",
+          "org": "OpenTravel Alliance",
+          "version": "",
+          "section": "",
+          "url": "https://opentravel.org/download-specs/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"8\" width=\"32\" height=\"32\" rx=\"3\"/><path d=\"M16 18h16M16 24h10\"/><path d=\"M28 30l4-4 4 4M32 26v8\"/></svg>",
+      "term": "Negotiated Rate",
+      "definition": "A hotel room rate contracted in advance between a hotel or hotel chain and a specific corporate account, travel management company (TMC), or consortia, guaranteeing preferential pricing for qualifying travelers in exchange for a committed volume or preferred-supplier designation. Negotiated rates are loaded against a rate code in the hotel's CRS/PMS and accessed via agreed channels for a defined contract period, typically one calendar year.",
+      "lastReviewed": "2026-07-25"
     },
     {
       "id": "net-promoter-score",
@@ -34555,6 +35018,91 @@
       "term": "Opaque Inventory",
       "definition": "Opaque inventory is a hotel-distribution model in which rooms are sold at a discount while the property's name (and exact details) are hidden from the shopper until after purchase. By revealing only star rating, general location, and amenities up front, it lets hotels clear distressed or excess inventory without publicly undercutting their own rates or eroding brand value.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "open-access-operator",
+      "vertical": "ground",
+      "category": "rail",
+      "conceptType": "business-term",
+      "status": "active",
+      "abbreviation": "OAO",
+      "term_ko": "개방 접근 운영사(Open Access Operator)",
+      "definition_ko": "소유하지 않은 철도 인프라에서 상업 여객 서비스를 운영하는 철도 사업자로, 유럽 또는 국내 철도 자유화 법령에 따라 경쟁에 개방된 선로 운영 면허 및 안전 인증을 보유한다. 개방 접근 운영사는 동일 노선에서 기존 주요 운영사와 경쟁하거나 이를 보완하며, 인프라 관리자에게 선로 이용 요금을 지불하고 티켓 가격, 서비스 품질, 시간표로 경쟁한다.",
+      "longDef": "Open access rail was established in the European Union through Directive 91/440/EEC (separation of infrastructure management from operations) and extended to domestic passenger markets by the Fourth Railway Package (Directive (EU) 2016/2370), requiring member states to grant open access rights for international and domestic passenger routes by December 2020. Operators must obtain: (1) a railway undertaking license from the national regulatory authority; (2) a single safety certificate under ERA's framework; and (3) capacity allocation (train paths/slots) from the Infrastructure Manager. Examples include Italo (NTV) in Italy competing with Trenitalia on high-speed routes, Ouigo España competing with Renfe, and Eurostar competitors on cross-Channel routes. In the UK (which pre-dates EU liberalization), open access operators such as Lumo, Avanti (grandfathered) and Hull Trains operate under ORR licenses on Network Rail tracks. Open access operators are distinguished from franchised Train Operating Companies (TOCs) which hold time-limited public service contracts with a government authority.",
+      "longDef_ko": "EU에서 개방 접근 철도는 Directive 91/440/EEC(인프라 관리와 운영의 분리)을 통해 확립되었으며, 제4철도패키지(EU 지침 2016/2370)에 의해 2020년 12월까지 회원국이 국제 및 국내 여객 노선에 개방 접근권을 부여하도록 확대되었다. 운영사는 (1) 국가 규제 당국의 철도 사업자 면허, (2) ERA 프레임워크 하의 단일 안전 인증, (3) 인프라 관리자로부터의 운행 능력(열차 경로/슬롯) 할당을 획득해야 한다. 사례로는 이탈리아 고속 노선에서 Trenitalia와 경쟁하는 Italo(NTV), Renfe와 경쟁하는 Ouigo España 등이 있다. EU 자유화에 앞서 있는 영국에서는 Lumo, Hull Trains 등이 ORR 면허 하에 Network Rail 선로에서 운영한다. 개방 접근 운영사는 정부 기관과 시한부 공공 서비스 계약을 체결하는 프랜차이즈 열차 운영 회사(TOC)와 구별된다.",
+      "standardBody": "ERA",
+      "aliases": [
+        "OAO",
+        "New Entrant Operator",
+        "Open Access Rail Operator",
+        "Open Access Carrier"
+      ],
+      "relationships": [
+        {
+          "type": "contrasts",
+          "targetTerm": "Train Operating Company",
+          "targetId": "train-operating-company"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Infrastructure Manager",
+          "targetId": "infrastructure-manager"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Rail Interoperability Directive (EU 2016/797)",
+          "targetId": "rail-interoperability-directive"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Track Access Charge",
+          "targetId": "track-access-charge"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Train Operating Company",
+          "explanation": "A Train Operating Company (TOC) in the UK context holds a time-limited franchise or public service contract awarded by a government authority to run a specified network of services; an open access operator holds no franchise, competes commercially on open routes, and receives no public subsidy for its operations.",
+          "explanation_ko": "영국 맥락에서 열차 운영 회사(TOC)는 정부 기관이 수여한 시한부 프랜차이즈 또는 공공 서비스 계약을 보유하며 지정된 노선망을 운영하고, 개방 접근 운영사는 프랜차이즈 없이 개방된 노선에서 상업적으로 경쟁하며 운영에 대한 공공 보조금을 받지 않는다.",
+          "targetId": "train-operating-company"
+        },
+        {
+          "targetTerm": "Infrastructure Manager",
+          "explanation": "The infrastructure manager owns and maintains the tracks, stations, and signalling; the open access operator uses that infrastructure by paying track access charges and does not itself manage the physical rail network.",
+          "explanation_ko": "인프라 관리자는 선로, 역, 신호 시스템을 소유하고 유지하며, 개방 접근 운영사는 선로 이용 요금을 지불하고 해당 인프라를 이용할 뿐 물리적 철도망을 직접 관리하지 않는다.",
+          "targetId": "infrastructure-manager"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Fourth Railway Package — Directive (EU) 2016/2370",
+          "org": "European Parliament and Council",
+          "version": "Directive (EU) 2016/2370",
+          "section": "Article 11 — Open access rights for domestic passenger services",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016L2370",
+          "tier": "regulation"
+        },
+        {
+          "name": "ERA — European Union Agency for Railways — Open Access",
+          "org": "European Union Agency for Railways",
+          "version": "",
+          "section": "",
+          "url": "https://www.era.europa.eu/domains/regulatory-framework/open-access_en",
+          "tier": "regulator-guidance"
+        },
+        {
+          "name": "UK Office of Rail and Road — Open Access Operators",
+          "org": "Office of Rail and Road",
+          "version": "",
+          "section": "",
+          "url": "https://www.orr.gov.uk/rail/markets/open-access-operators",
+          "tier": "regulator-guidance"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"18\" width=\"36\" height=\"16\" rx=\"3\"/><path d=\"M12 18v-4a2 2 0 012-2h20a2 2 0 012 2v4\"/><line x1=\"6\" y1=\"34\" x2=\"4\" y2=\"40\"/><line x1=\"42\" y1=\"34\" x2=\"44\" y2=\"40\"/><line x1=\"16\" y1=\"34\" x2=\"16\" y2=\"40\"/><line x1=\"32\" y1=\"34\" x2=\"32\" y2=\"40\"/><circle cx=\"14\" cy=\"27\" r=\"2\"/><circle cx=\"34\" cy=\"27\" r=\"2\"/><path d=\"M20 22h8\"/><path d=\"M6 22h4M38 22h4\"/></svg>",
+      "term": "Open Access Operator",
+      "definition": "An open access operator (OAO) is a railway undertaking that runs commercial passenger services on rail infrastructure it does not own, holding a license and safety certificate to operate on tracks opened to competition under European or national rail liberalization legislation. Open access operators compete with or complement the historic incumbent operator on the same routes, paying track access charges to the Infrastructure Manager and competing on ticket price, service quality, and schedule.",
+      "lastReviewed": "2026-07-25"
     },
     {
       "id": "open-jaw",
