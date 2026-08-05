@@ -32,6 +32,8 @@ relationships:
   - type: related
     targetTerm: Revenue Management
   - type: related
+    targetTerm: Total Revenue Management
+  - type: related
     targetTerm: Rate Shopping
   - type: related
     targetTerm: PMS
@@ -76,6 +78,7 @@ RMS는 호텔 수익 관리의 분석 엔진 역할을 한다. 핵심 모듈에�
 - [ADR](/lodging/hotel-rate/adr.md) — related
 - [Dynamic Pricing](/lodging/hotel-rate/dynamic-pricing.md) — related
 - [Revenue Management](/air/air-shop/revenue-management.md) — related
+- [Total Revenue Management](/lodging/hotel-rate/total-revenue-management.md) — related
 - [Rate Shopping](/lodging/hotel-dist/rate-shopping.md) — related
 - [PMS](/lodging/hotel-dist/pms.md) — related
 

@@ -26,12 +26,17 @@ relationships:
   - type: related
     targetTerm: Ecotourism
   - type: related
+    targetTerm: Wellness Tourism
+  - type: related
     targetTerm: Adventure Tourism
   - type: related
     targetTerm: Destination Management Organization
   - type: related
     targetTerm: Dark Tourism
 distinctions:
+  - targetTerm: Wellness Tourism
+    explanation: 'Wellness Tourism is motivated by personal health improvement — physical, mental, or spiritual restoration; Culinary Tourism is motivated by cultural and gustatory experience of a destination''s food heritage. The two may overlap in healthy-cuisine retreats or mindful-eating programmes, but serve fundamentally different primary purposes.'
+    explanation_ko: '웰니스 관광은 신체적·정신적·영적 회복이라는 개인 건강 향상이 동기이고, 음식 관광은 목적지 음식 유산의 문화적·미식적 체험이 동기다. 건강 요리 리트리트나 마음챙김 식사 프로그램에서 겹칠 수 있지만 근본적으로 다른 주목적을 지닌다.'
   - targetTerm: Ecotourism
     explanation: 'Ecotourism centres on experiencing and conserving natural environments and biodiversity; Culinary Tourism centres on experiencing a destination''s food and beverage culture. Agritourism — farm visits, harvest participation, and nature-based food sourcing — is the zone where both legitimately overlap.'
     explanation_ko: '에코투어리즘은 자연환경과 생물 다양성의 체험 및 보전이 중심이고, 음식 관광은 목적지의 음식·음료 문화 체험이 중심이다. 농촌 관광(농장 방문·수확 참여·자연 기반 식재료 조달)은 두 가지 모두 적용되는 교차 영역이다.'
@@ -66,11 +71,13 @@ WFTA 창립자 Erik Wolf는 음식 관광을 "독특하고 기억에 남는 음�
 
 # Related
 - [Ecotourism](/tours/tour-product/ecotourism.md) — related
+- [Wellness Tourism](/tours/tour-product/wellness-tourism.md) — related
 - [Adventure Tourism](/tours/tour-product/adventure-tourism.md) — related
 - [Destination Management Organization](/tours/tour-ops/destination-management-organization.md) — related
 - [Dark Tourism](/tours/tour-product/dark-tourism.md) — related
 
 # Distinctions
+- **Culinary Tourism** vs [Wellness Tourism](/tours/tour-product/wellness-tourism.md) — Wellness Tourism is motivated by personal health improvement — physical, mental, or spiritual restoration; Culinary Tourism is motivated by cultural and gustatory experience of a destination's food heritage. The two may overlap in healthy-cuisine retreats or mindful-eating programmes, but serve fundamentally different primary purposes.
 - **Culinary Tourism** vs [Ecotourism](/tours/tour-product/ecotourism.md) — Ecotourism centres on experiencing and conserving natural environments and biodiversity; Culinary Tourism centres on experiencing a destination's food and beverage culture. Agritourism — farm visits, harvest participation, and nature-based food sourcing — is the zone where both legitimately overlap.
 - **Culinary Tourism** vs [Dark Tourism](/tours/tour-product/dark-tourism.md) — Dark Tourism is travel to sites of death, tragedy, or historical atrocity motivated by education, empathy, or contemplation; Culinary Tourism is travel motivated by positive sensory and cultural engagement with food heritage. Both are special-interest subsets of cultural tourism but serve entirely different experiential and motivational purposes.
 
