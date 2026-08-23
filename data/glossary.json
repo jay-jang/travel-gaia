@@ -2,8 +2,8 @@
   "meta": {
     "name": "Travel Wiki",
     "tagline": "여행 산업 용어 백과사전",
-    "generatedAt": "2026-08-22",
-    "entryCount": 794,
+    "generatedAt": "2026-08-23",
+    "entryCount": 800,
     "categoryCount": 20,
     "verticalCount": 6
   },
@@ -5083,6 +5083,103 @@
       "term": "Allotment",
       "definition": "A block of room inventory that a hotel pre-assigns to a specific distribution partner, channel, group, or contract for a defined period, allowing that partner to sell those rooms up to the allotted quantity without checking real-time availability for each booking. Unsold rooms are typically released back to the hotel by a contracted release (cut-off) date.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "alternative-payment-method",
+      "vertical": "common",
+      "category": "pay",
+      "conceptType": "business-term",
+      "status": "active",
+      "abbreviation": "APM",
+      "term_ko": "대안적 결제 수단(APM)",
+      "definition_ko": "전통적인 신용·직불카드 이외에 여행 거래에서 허용되는 모든 결제 수단. 디지털 지갑, 계좌이체, 선구매후지불(BNPL), 선불 바우처, 가상 계좌 번호, 지역 특화 결제 수단 등이 포함된다. 카드 사용을 꺼리는 시장과 젊은 여행자 수요를 포착하기 위해 항공사와 OTA를 중심으로 APM 도입이 빠르게 확산되고 있다.",
+      "longDef": "APMs encompass a broad and growing range of non-card instruments: bank-account–based transfers (e.g., iDEAL in the Netherlands, Sofort in Germany, PIX in Brazil), digital wallets (PayPal, Alipay, WeChat Pay, Apple Pay, Google Pay), buy now pay later (BNPL) products (Klarna, Afterpay, Affirm), airline-specific instruments such as UATP, virtual credit cards (VCC) used in B2B channels, prepaid travel vouchers, and direct airline credit (flight credit). The mix of accepted APMs varies by market: in many Asian markets digital wallets account for the majority of travel payments, while in Europe account-based schemes and BNPL are growing fastest. From a merchant perspective, APMs typically involve different settlement, chargeback, and reconciliation mechanics compared to card schemes, and may require separate gateway integrations and PSP relationships. IATA has published guidance on APM acceptance in the airline context. Tokenization increasingly underpins digital wallet APMs, improving security and enabling one-click repeat purchases.",
+      "longDef_ko": "APM은 계좌 기반 이체(네덜란드의 iDEAL, 독일의 Sofort, 브라질의 PIX), 디지털 지갑(PayPal, Alipay, WeChat Pay, Apple Pay, Google Pay), 선구매후지불(BNPL) 상품(Klarna, Afterpay, Affirm), 항공사 전용 수단(UATP), B2B 채널에서 사용되는 VCC(가상 신용카드), 선불 여행 바우처, 직항 크레딧(항공사 크레딧) 등 광범위하고 빠르게 성장하는 비카드 수단을 포괄한다. 허용되는 APM 조합은 시장마다 다르다. 많은 아시아 시장에서 디지털 지갑이 여행 결제의 대부분을 차지하고, 유럽에서는 계좌 기반 수단과 BNPL이 가장 빠르게 성장하고 있다. 가맹점 관점에서 APM은 일반적으로 카드 수단과 다른 정산·차지백·대사 방식을 수반하며, 별도의 게이트웨이 통합 및 PSP 계약이 필요할 수 있다. IATA는 항공사 맥락에서의 APM 수락에 관한 가이드라인을 발표했다. 토큰화는 점점 더 디지털 지갑 APM의 기반이 되어 보안을 강화하고 원클릭 재구매를 가능하게 한다.",
+      "aliases": [
+        "APM",
+        "Non-Card Payment",
+        "Local Payment Method",
+        "Digital Wallet"
+      ],
+      "providerTerms": [
+        {
+          "provider": "IATA",
+          "term": "Alternative Forms of Payment",
+          "context": "IATA uses \"Alternative Forms of Payment\" in its payment guidance, covering wallets, bank transfers, and local schemes accepted by airlines via BSP or direct channels.",
+          "context_ko": "IATA는 결제 가이드라인에서 \"Alternative Forms of Payment\"라는 용어를 사용하며, BSP 또는 직접 채널을 통해 항공사가 허용하는 지갑·계좌이체·현지 수단을 포괄한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Worldpay / FIS",
+          "term": "Alternative Payment Methods (APMs)",
+          "context": "Payment processors such as Worldpay use APM as the standard industry label in their annual Global Payments Reports, categorising digital wallets, bank transfers, BNPL, and local schemes.",
+          "context_ko": "Worldpay 등 결제 처리업체는 연간 글로벌 결제 보고서에서 디지털 지갑·계좌이체·BNPL·현지 수단을 분류하는 업계 표준 용어로 APM을 사용한다.",
+          "relationship": "same"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Buy Now Pay Later",
+          "targetId": "buy-now-pay-later"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Tokenization",
+          "targetId": "tokenization"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Payment Gateway",
+          "targetId": "payment-gateway"
+        },
+        {
+          "type": "related",
+          "targetTerm": "UATP",
+          "targetId": "uatp"
+        },
+        {
+          "type": "related",
+          "targetTerm": "VCC",
+          "targetId": "vcc"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Buy Now Pay Later",
+          "explanation": "Buy Now Pay Later (BNPL) is one specific type of alternative payment method that defers or installs payment; APM is the broader category covering all non-traditional-card instruments including BNPL.",
+          "explanation_ko": "BNPL(선구매후지불)은 결제를 이연하거나 분할하는 특정 APM 유형이고, APM은 BNPL을 포함한 모든 비전통카드 수단을 망라하는 더 넓은 범주이다.",
+          "targetId": "buy-now-pay-later"
+        },
+        {
+          "targetTerm": "UATP",
+          "explanation": "UATP (Universal Air Travel Plan) is a specific airline-sector payment network and card product; APM is the general label for all non-card-scheme payment methods, of which UATP is one industry-specific example.",
+          "explanation_ko": "UATP(Universal Air Travel Plan)는 항공 업계 전용 결제 네트워크이자 카드 상품이고, APM은 모든 비카드 결제 수단에 대한 일반 명칭으로 UATP는 그 업계 특화 예시 중 하나다.",
+          "targetId": "uatp"
+        }
+      ],
+      "sources": [
+        {
+          "name": "IATA — Payment Methods in the Airline Industry",
+          "org": "IATA",
+          "version": "",
+          "section": "",
+          "url": "https://www.iata.org/en/services/finance/payment-methods/",
+          "tier": "association"
+        },
+        {
+          "name": "Global Payments Report",
+          "org": "Worldpay / FIS",
+          "version": "2024",
+          "section": "",
+          "url": "https://worldpay.com/en-gb/worldpay-us/insights/global-payments-report",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"16\" r=\"5\"/><line x1=\"24\" y1=\"21\" x2=\"24\" y2=\"28\"/><line x1=\"24\" y1=\"28\" x2=\"14\" y2=\"36\"/><line x1=\"24\" y1=\"28\" x2=\"24\" y2=\"36\"/><line x1=\"24\" y1=\"28\" x2=\"34\" y2=\"36\"/><rect x=\"10\" y=\"35\" width=\"8\" height=\"6\" rx=\"1\"/><rect x=\"20\" y=\"35\" width=\"8\" height=\"6\" rx=\"1\"/><rect x=\"30\" y=\"35\" width=\"8\" height=\"6\" rx=\"1\"/></svg>",
+      "term": "Alternative Payment Method",
+      "definition": "Any payment instrument other than a traditional credit or debit card that is accepted for travel transactions, including digital wallets, bank transfers, buy now pay later schemes, prepaid vouchers, virtual account numbers, and region-specific local payment schemes. APMs have grown rapidly as carriers and OTAs seek to capture demand from card-averse markets and younger travellers.",
+      "lastReviewed": "2026-08-23"
     },
     {
       "id": "asta",
@@ -26574,6 +26671,85 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "full-content-agreement",
+      "vertical": "common",
+      "category": "standards",
+      "conceptType": "standard-term",
+      "status": "active",
+      "term_ko": "전체 콘텐츠 협약(Full Content Agreement)",
+      "definition_ko": "GDS가 항공사에 부과하던 계약상 의무로, 어떤 유통 채널에 상업적으로 제공하는 모든 운임·가용성·부가 콘텐츠를 GDS에도 동등한 조건으로 탑재하도록 요구한다. GDS–항공사 관계에서 핵심적인 경쟁 수단이었으며, 기존 GDS 조건을 벗어나 콘텐츠를 차별화할 수 있는 독자적인 기술 방식을 항공사에 제공하기 위해 IATA NDC 표준이 등장하게 된 주된 원인이다.",
+      "longDef": "Historically, GDS providers required airlines signing their distribution agreements to load their full published tariff — every ATPCO-filed fare, booking class, and availability — into the GDS with no preferential treatment for competing channels. These \"full content\" or \"most-favoured-nation\" clauses meant an airline could not offer lower fares on its own website or direct API than what it loaded in the GDS, nor could it withhold content from the GDS that it offered elsewhere. The arrangement was mutually beneficial in the CRS era (airlines gained global reach; GDSs could guarantee agencies comprehensive inventory), but became contentious as low-cost carriers chose not to sign and online direct channels grew. In the NDC era, airlines argued that full content agreements prevented them from offering personalised, ancillary-rich offers through modern APIs without simultaneously loading the same offer structure in the legacy GDS environment — an expensive and technically complex requirement. Regulatory scrutiny of GDS agreements has varied by market: the US DOT issued a rulemaking in 2011 (the \"GDS Rule\") that limited display-bias and contract provisions, while the EU relied on competition law to review individual agreements. Airlines negotiating post-NDC distribution agreements typically seek to limit or remove full content clauses, enabling content differentiation between the GDS and NDC-connected channels.",
+      "longDef_ko": "역사적으로 GDS 제공업체는 유통 계약에 서명하는 항공사에 ATPCO에 등록된 모든 운임, 예약 클래스, 가용성을 타 채널보다 우선 처리 없이 GDS에 탑재하도록 요구했다. 이 \"전체 콘텐츠\" 또는 \"최혜국 대우\" 조항은 항공사가 GDS에 탑재한 운임보다 낮은 운임을 자사 웹사이트나 직접 API에 제공하거나, GDS에는 없는 콘텐츠를 다른 곳에 제공하는 것을 금지했다. 이 방식은 CRS 시대에는 상호 이익(항공사는 글로벌 도달 범위 확보, GDS는 여행사에 포괄적 재고 보장)이 있었으나, LCC들이 계약 서명을 거부하고 온라인 직접 채널이 성장하면서 논란이 되었다. NDC 시대에 항공사들은 전체 콘텐츠 협약이 레거시 GDS 환경에 동일한 오퍼 구조를 동시에 탑재하는 비용이 높고 기술적으로 복잡한 요건 없이는, 현대 API를 통해 맞춤화된 부가 서비스 중심의 오퍼를 제공하는 것을 막는다고 주장했다. GDS 협약에 대한 규제 검토는 시장마다 달랐다. 미국 DOT는 2011년 디스플레이 편향 및 계약 조항을 제한하는 규칙(GDS Rule)을 발표했고, EU는 개별 협약 검토에 경쟁법을 활용했다. NDC 이후 유통 협약을 협상하는 항공사들은 일반적으로 GDS와 NDC 연결 채널 간 콘텐츠 차별화를 가능케 하기 위해 전체 콘텐츠 조항을 제한하거나 제거하려 한다.",
+      "aliases": [
+        "Full Content Clause",
+        "Most-Favoured-Nation Clause (GDS)",
+        "Content Parity Agreement"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "GDS",
+          "targetId": "gds"
+        },
+        {
+          "type": "related",
+          "targetTerm": "NDC",
+          "targetId": "ndc"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Fare Filing",
+          "targetId": "fare-filing"
+        },
+        {
+          "type": "related",
+          "targetTerm": "ATPCO",
+          "targetId": "atpco"
+        },
+        {
+          "type": "related",
+          "targetTerm": "OTA (Online Travel Agency)",
+          "targetId": "ota-online-travel-agency"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "GDS",
+          "explanation": "A GDS is the technology platform; a full content agreement is the contractual term airlines historically signed with that platform requiring them to load all commercially offered fares and content into it.",
+          "explanation_ko": "GDS는 기술 플랫폼이고, 전체 콘텐츠 협약은 항공사가 역사적으로 그 플랫폼과 체결한 계약 조항으로, 상업적으로 제공하는 모든 운임·콘텐츠를 탑재하도록 요구했다.",
+          "targetId": "gds"
+        },
+        {
+          "targetTerm": "NDC",
+          "explanation": "NDC is the IATA-standard XML API that enables airlines to distribute rich, personalised content directly to agencies and OTAs; the full content agreement is the legacy contractual constraint NDC was partly designed to circumvent, giving airlines a standard way to differentiate content outside GDS obligations.",
+          "explanation_ko": "NDC는 항공사가 여행사와 OTA에 풍부하고 개인화된 콘텐츠를 직접 유통할 수 있게 하는 IATA 표준 XML API이고, 전체 콘텐츠 협약은 NDC가 부분적으로 우회하기 위해 설계된 레거시 계약상 제약으로, 항공사에 GDS 의무 밖에서 콘텐츠를 차별화할 표준 방식을 제공했다.",
+          "targetId": "ndc"
+        }
+      ],
+      "sources": [
+        {
+          "name": "NDC — What is NDC and Why Does It Exist?",
+          "org": "IATA",
+          "version": "",
+          "section": "",
+          "url": "https://www.iata.org/en/programs/airline-distribution/ndc/",
+          "tier": "association"
+        },
+        {
+          "name": "GDS Rulemaking — Final Rule on Computer Reservations System Regulations",
+          "org": "US Department of Transportation (DOT)",
+          "version": "76 FR 23166 (2011)",
+          "section": "",
+          "url": "https://www.govinfo.gov/content/pkg/FR-2011-04-25/pdf/2011-8704.pdf",
+          "tier": "regulation"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"10\" width=\"14\" height=\"18\" rx=\"2\"/><rect x=\"26\" y=\"10\" width=\"14\" height=\"18\" rx=\"2\"/><line x1=\"15\" y1=\"19\" x2=\"33\" y2=\"19\"/><path d=\"M15 24l18-10M15 14l18 10\"/><path d=\"M12 28l-4 10h32l-4-10\"/></svg>",
+      "term": "Full Content Agreement",
+      "definition": "A contractual obligation historically imposed by Global Distribution Systems on airlines, requiring that all fares, availability, and ancillary content commercially offered to any distribution channel be made available on equal terms through the GDS. Full content agreements were a major competitive lever in the GDS–airline relationship and a primary driver behind the IATA NDC standard, which gives airlines a technically independent way to differentiate their content outside classic GDS terms.",
+      "lastReviewed": "2026-08-23"
+    },
+    {
       "id": "full-service-carrier",
       "vertical": "air",
       "category": "air-ops",
@@ -32343,6 +32519,82 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "iatan",
+      "vertical": "common",
+      "category": "codes",
+      "conceptType": "system",
+      "status": "active",
+      "abbreviation": "IATAN",
+      "term_ko": "국제항공여행사네트워크(IATAN)",
+      "definition_ko": "IATA의 북미 자회사로, 소매 여행사 및 개인 여행 전문가를 인가하고, 업계 표준 IATAN ID 카드를 발급하며, 미국 소재 여행사를 항공사 정산에서 식별하는 데 사용되는 IATA/ARC 공동 숫자 로케이션 코드를 관리한다.",
+      "longDef": "IATAN (formerly the International Airlines Travel Agent Network) operates within the IATA framework to establish accreditation and professional standards for the North American retail travel distribution channel. An agency holding IATAN accreditation receives an IATA Numeric Code (7 or 8 digits) and is recognised by airlines and suppliers as an authorised issuing agent for tickets settled through the BSP or, for US domestic sales, through ARC. Critically, IATAN and ARC use the same numeric location coding scheme, so a dually accredited US agency carries a single shared IATAN/ARC number, avoiding duplication. Individual agents who meet qualification criteria (minimum sales volume, relevant coursework) may obtain an IATAN ID Card, a widely accepted industry credential granting access to agent fares (ID/AD fares) and familiarisation trips. Outside North America, agency accreditation is handled directly by IATA under the Travel Agent Commissioner programme; IATAN is specific to the US and Canadian market.",
+      "longDef_ko": "IATAN(구 International Airlines Travel Agent Network)은 IATA 체계 내에서 북미 소매 여행 유통 채널의 인가 및 전문성 기준을 수립하고 운영한다. IATAN 인가를 받은 여행사는 IATA 숫자 코드(7~8자리)를 부여받고, BSP(미국 국내선의 경우 ARC)를 통해 정산이 이루어지는 항공권의 공인 발권 대리점으로 항공사 및 공급사에 인정된다. 중요한 점은 IATAN과 ARC가 동일한 숫자 위치 코드 체계를 사용한다는 것으로, 양쪽에 이중으로 인가된 미국 여행사는 중복 없이 하나의 공유 IATAN/ARC 번호를 갖는다. 자격 기준(최소 판매량, 관련 교육 이수)을 충족한 개인 여행사 직원은 IATAN ID 카드를 발급받을 수 있으며, 이는 ID/AD 운임 및 팸투어 이용 자격을 부여하는 업계 공인 자격증으로 널리 인정된다. 북미 이외 지역의 여행사 인가는 Travel Agent Commissioner 프로그램을 통해 IATA가 직접 처리하며, IATAN은 미국·캐나다 시장에 특화된다.",
+      "standardBody": "IATA",
+      "aliases": [
+        "International Airlines Travel Agent Network",
+        "IATAN Accreditation",
+        "IATAN ID Card"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "IATA Number",
+          "targetId": "iata-number"
+        },
+        {
+          "type": "related",
+          "targetTerm": "ARC",
+          "targetId": "arc"
+        },
+        {
+          "type": "related",
+          "targetTerm": "BSP",
+          "targetId": "bsp"
+        },
+        {
+          "type": "related",
+          "targetTerm": "GDS",
+          "targetId": "gds"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "IATA Number",
+          "explanation": "The IATA Number is the numeric code itself assigned to an accredited agency location; IATAN is the North American accreditation body and programme that administers that code for US and Canadian agencies.",
+          "explanation_ko": "IATA 번호는 인가된 여행사 지점에 부여되는 숫자 코드 자체이고, IATAN은 미국·캐나다 여행사에 대해 그 코드를 관리하는 북미 인가 기구 및 프로그램이다.",
+          "targetId": "iata-number"
+        },
+        {
+          "targetTerm": "ARC",
+          "explanation": "ARC (Airlines Reporting Corporation) is the US ticket-settlement clearing house through which accredited US agencies report and settle; IATAN is the accreditation authority that issues the shared numeric code used by both ARC and IATAN-accredited agencies.",
+          "explanation_ko": "ARC(Airlines Reporting Corporation)는 인가된 미국 여행사가 보고 및 정산을 수행하는 미국 항공권 정산 기관이고, IATAN은 ARC와 IATAN 인가 여행사 모두가 사용하는 공동 숫자 코드를 발급하는 인가 당국이다.",
+          "targetId": "arc"
+        }
+      ],
+      "sources": [
+        {
+          "name": "IATAN — Agency Accreditation",
+          "org": "IATAN / IATA",
+          "version": "",
+          "section": "",
+          "url": "https://iatan.iata.org/",
+          "tier": "association"
+        },
+        {
+          "name": "IATA — Travel Agent Network",
+          "org": "IATA",
+          "version": "",
+          "section": "",
+          "url": "https://www.iata.org/en/services/accreditation/agency-accreditation/agency-list/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"14\" width=\"32\" height=\"22\" rx=\"3\"/><circle cx=\"18\" cy=\"24\" r=\"4\"/><line x1=\"26\" y1=\"21\" x2=\"36\" y2=\"21\"/><line x1=\"26\" y1=\"27\" x2=\"34\" y2=\"27\"/><path d=\"M8 20h32\"/></svg>",
+      "term": "IATAN",
+      "definition": "The International Airlines Travel Agent Network — the North American subsidiary of IATA that accredits retail travel agencies and individual travel professionals, issues the industry-standard IATAN ID Card, and administers the shared IATA/ARC numeric location code used to identify US-based agencies in airline settlement.",
+      "lastReviewed": "2026-08-23"
+    },
+    {
       "id": "icao-carbon-emissions-calculator-icec",
       "vertical": "common",
       "category": "sustainability",
@@ -32844,6 +33096,82 @@
       "term": "Inbound Tourism",
       "definition": "Inbound tourism comprises the activities of a non-resident visitor within the country of reference on an inbound tourism trip. It is one of the three basic forms of tourism defined by the UNWTO and generates foreign exchange earnings, forms the basis of national tourism statistics, and is the primary focus of national tourism organizations charged with attracting international arrivals.",
       "lastReviewed": "2026-08-13"
+    },
+    {
+      "id": "incentive-travel",
+      "vertical": "tours",
+      "category": "tour-commercial",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "인센티브 여행(Incentive Travel)",
+      "definition_ko": "성과 목표를 달성한 임직원, 채널 파트너 또는 딜러를 보상하기 위해 후원 기업이 전액 비용을 부담하는 동기 부여형 단체 여행. MICE(회의·인센티브·컨퍼런스·전시)의 핵심 네 가지 세그먼트 중 하나로, 열망적인 목적지, 맞춤형 프로그램, 후원 기업의 전액 경비 지원을 특징으로 한다.",
+      "longDef": "Incentive travel is distinguished from ordinary corporate travel by its experiential and motivational character: the trip itself is the reward. The industry body SITE (Society for Incentive Travel Excellence) defines incentive travel as \"a global management tool that uses an exceptional travel experience to motivate and/or recognise participants for increased levels of performance in support of organisational goals.\" Programmes are designed to be aspirational — destinations, activities, and hospitality levels that participants would not typically purchase themselves — and are wholly funded by the sponsoring company. Buyers are typically corporate incentive managers and Travel Management Companies (TMCs) collaborating with Destination Management Companies (DMCs) and specialist incentive agencies. Budget per head commonly ranges from a few hundred to several thousand US dollars. The segment is sensitive to economic cycles and corporate governance regulations, particularly rules capping entertainment or gift expenditure.",
+      "longDef_ko": "인센티브 여행은 체험적·동기부여적 성격에서 일반 출장과 구별된다. 여행 자체가 보상이다. 업계 단체인 SITE(Society for Incentive Travel Excellence)는 인센티브 여행을 \"조직의 목표 달성을 위해 참가자의 성과 수준을 동기부여하고/또는 인정하는 글로벌 경영 도구로서 탁월한 여행 경험을 활용하는 것\"으로 정의한다. 프로그램은 열망적으로 설계된다. 즉 참가자가 스스로 구매하지 않을 목적지, 액티비티, 수준 높은 환대를 제공하며 후원 기업이 전액 지불한다. 구매자는 일반적으로 기업 인센티브 담당자이며, DMC(목적지 관리 회사) 및 전문 인센티브 에이전시와 협력하는 TMC와 함께 일한다. 1인당 예산은 통상 수백 달러에서 수천 달러에 이른다. 이 세그먼트는 경기 사이클과 기업 거버넌스 규정(일부 시장에서의 접대비·선물비 한도 규정)에 민감하다.",
+      "standardBody": "SITE",
+      "aliases": [
+        "Incentive Programme",
+        "Incentive Trip",
+        "Performance Travel",
+        "Reward Travel"
+      ],
+      "relationships": [
+        {
+          "type": "parent",
+          "targetTerm": "MICE",
+          "targetId": "mice"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Travel Management Company",
+          "targetId": "travel-management-company"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Destination Management Company",
+          "targetId": "destination-management-company"
+        },
+        {
+          "type": "related",
+          "targetTerm": "FIT",
+          "targetId": "fit"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "MICE",
+          "explanation": "MICE (Meetings, Incentives, Conferences, Exhibitions) is the collective category; incentive travel is specifically the motivational reward-travel segment within it, distinct from conferences, meetings, and trade exhibitions.",
+          "explanation_ko": "MICE(회의·인센티브·컨퍼런스·전시)는 총칭 범주이고, 인센티브 여행은 그 안에서 회의·컨퍼런스·전시와 구별되는 동기부여 보상 여행 세그먼트이다.",
+          "targetId": "mice"
+        },
+        {
+          "targetTerm": "FIT",
+          "explanation": "FIT (Fully Independent Travel) is individually arranged travel where the traveller self-funds and self-plans; incentive travel is group-based, company-funded, and planned by the sponsoring organisation.",
+          "explanation_ko": "FIT(완전 자유 여행)은 여행자가 직접 비용을 부담하고 계획하는 개별 여행이고, 인센티브 여행은 후원 기업이 비용을 부담하고 기획하는 단체 여행이다.",
+          "targetId": "fit"
+        }
+      ],
+      "sources": [
+        {
+          "name": "What is Incentive Travel?",
+          "org": "SITE (Society for Incentive Travel Excellence)",
+          "version": "",
+          "section": "",
+          "url": "https://www.siteglobal.com/page/what-is-incentive-travel",
+          "tier": "association"
+        },
+        {
+          "name": "GBTA Foundation — Business Travel Report",
+          "org": "GBTA (Global Business Travel Association)",
+          "version": "",
+          "section": "",
+          "url": "https://www.gbta.org/research/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 8l3.5 7 7.5 1.1-5.5 5.4 1.3 7.5L24 25l-6.8 4 1.3-7.5L13 16.1l7.5-1.1z\"/><path d=\"M18 33l-2 7h16l-2-7\"/><line x1=\"20\" y1=\"40\" x2=\"28\" y2=\"40\"/></svg>",
+      "term": "Incentive Travel",
+      "definition": "A form of motivational group travel fully funded by a sponsoring company to reward employees, channel partners, or dealers for achieving defined performance targets. It is one of the four core segments of MICE (Meetings, Incentives, Conferences, and Exhibitions) and is characterised by aspirational destinations, bespoke programming, and full cost underwriting by the sponsoring organisation.",
+      "lastReviewed": "2026-08-23"
     },
     {
       "id": "inclusions",
@@ -58382,6 +58710,92 @@
       "lastReviewed": "2026-06-18"
     },
     {
+      "id": "serviced-apartment",
+      "vertical": "lodging",
+      "category": "hotel-dist",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "서비스 아파트(Serviced Apartment)",
+      "definition_ko": "단기~중기로 제공되는 완전 가구 갖춤·자취형 아파트로, 하우스키핑·프런트 데스크·Wi-Fi 등 호텔식 서비스와 함께 주방 시설 및 추가 생활 공간을 갖춘다. 기업 이주, 장기 출장, 호텔 객실이 비실용적이거나 비용 효율이 낮은 장기 가족 여행을 대상으로 한다.",
+      "longDef": "Serviced apartments occupy a distinct segment between a hotel and a private short-term rental. The Association of Serviced Apartment Providers (ASAP) defines them as accommodation providing a living area and a fully equipped kitchen alongside hotel-like services such as regular housekeeping, utilities, and front-desk support. They are available by the night (often with a minimum stay of 7 or 30 nights for favourable rates) or on monthly terms. Key buyer segments include corporate relocation programmes (HR-managed, often using a Travel Management Company or direct supplier agreements), extended project-team deployments, and leisure travellers on multi-week trips. Serviced apartments are distributed via corporate housing platforms (e.g., CHBO, Blueground), specialist aggregators (HRS, SilverDoor, Hotelbeds Corporate), OTAs (Booking.com, Airbnb), and direct channel. Revenue is measured by ADR and REVPAR similarly to hotels, but longer average lengths of stay and lower distribution costs (fewer OTA bookings) often result in higher profitability per available unit. Unlike short-term rentals (STR) on peer-to-peer platforms, serviced apartments are operated professionally and must comply with local planning, licensing, and safety regulations.",
+      "longDef_ko": "서비스 아파트는 호텔과 개인 단기 임대의 중간에 위치한 별개의 세그먼트다. ASAP(Association of Serviced Apartment Providers)는 정기 하우스키핑, 유틸리티, 프런트 데스크 지원 등 호텔식 서비스와 함께 거실 및 완비된 주방을 제공하는 숙소로 정의한다. 야간 단위(유리한 요율을 위해 최소 7일 또는 30일 이상의 스테이 조건이 있는 경우가 많다)로 이용하거나 월 단위로 계약할 수 있다. 주요 구매자 세그먼트는 기업 이주 프로그램(TMC 또는 직접 공급사 계약을 통한 HR 관리), 장기 프로젝트 팀 배치, 수 주간의 장기 여행을 하는 레저 여행자이다. 서비스 아파트는 기업 임시 주거 플랫폼(CHBO, Blueground), 전문 어그리게이터(HRS, SilverDoor, Hotelbeds Corporate), OTA(Booking.com, Airbnb), 직접 채널을 통해 유통된다. 수익은 호텔과 유사하게 ADR 및 REVPAR로 측정되지만, 더 긴 평균 체류 기간과 낮은 유통 비용(OTA 예약 비중 낮음)으로 인해 단위당 수익성이 더 높은 경우가 많다. 개인 간(P2P) 플랫폼의 단기 임대(STR)와 달리 서비스 아파트는 전문적으로 운영되며 현지 계획·인허가·안전 규정을 준수해야 한다.",
+      "standardBody": "ASAP",
+      "aliases": [
+        "Extended Stay Accommodation",
+        "Corporate Apartment",
+        "Aparthotel",
+        "Apart-Hotel"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Booking.com",
+          "term": "Apartments",
+          "context": "Booking.com lists serviced apartments under its \"Apartments\" property type alongside non-serviced private rentals; filtering by \"Serviced Apartments\" or amenities (kitchen, housekeeping) is needed to distinguish the category.",
+          "context_ko": "Booking.com은 서비스 아파트를 비서비스형 개인 임대와 함께 \"Apartments\" 속성 유형에 나열한다. \"Serviced Apartments\" 또는 편의 시설(주방, 하우스키핑) 필터를 적용해야 구분할 수 있다.",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "HRS Group",
+          "term": "Corporate Housing / Serviced Apartments",
+          "context": "HRS uses \"corporate housing\" and \"serviced apartments\" interchangeably in its B2B lodging platform, targeting companies needing extended-stay solutions under negotiated corporate rates.",
+          "context_ko": "HRS는 협상된 기업 요율 하에 장기 체류 솔루션이 필요한 기업을 대상으로 하는 B2B 숙박 플랫폼에서 \"corporate housing\"과 \"serviced apartments\"를 혼용한다.",
+          "relationship": "same"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "contrasts",
+          "targetTerm": "Short-Term Rental",
+          "targetId": "short-term-rental"
+        },
+        {
+          "type": "related",
+          "targetTerm": "PMS",
+          "targetId": "pms"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Channel Manager",
+          "targetId": "channel-manager"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Direct Booking",
+          "targetId": "direct-booking"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Short-Term Rental",
+          "explanation": "A Short-Term Rental (STR) is typically a privately owned home let on a peer-to-peer platform (Airbnb, Vrbo) with variable service levels; a serviced apartment is a professionally operated, purpose-built or converted property with consistent hotel-like services, longer minimum stays, and corporate compliance standards.",
+          "explanation_ko": "단기 임대(STR)는 일반적으로 개인이 소유한 주택을 P2P 플랫폼(Airbnb, Vrbo)에서 임대하는 것으로 서비스 수준이 다양한 반면, 서비스 아파트는 일관된 호텔식 서비스, 더 긴 최소 체류, 기업 컴플라이언스 기준을 갖춘 전문 운영 목적 건물이나 개조 건물이다.",
+          "targetId": "short-term-rental"
+        }
+      ],
+      "sources": [
+        {
+          "name": "What is a Serviced Apartment? Industry Definition and Standards",
+          "org": "ASAP (Association of Serviced Apartment Providers)",
+          "version": "",
+          "section": "",
+          "url": "https://www.theasap.org.uk/what-is-a-serviced-apartment/",
+          "tier": "association"
+        },
+        {
+          "name": "STR — Extended Stay Market Data",
+          "org": "STR (CoStar)",
+          "version": "",
+          "section": "",
+          "url": "https://str.com/",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"14\" width=\"32\" height=\"28\" rx=\"2\"/><path d=\"M8 22h32\"/><rect x=\"14\" y=\"28\" width=\"8\" height=\"8\"/><rect x=\"26\" y=\"28\" width=\"8\" height=\"8\"/><path d=\"M20 14V8h8v6\"/><line x1=\"24\" y1=\"8\" x2=\"24\" y2=\"5\"/></svg>",
+      "term": "Serviced Apartment",
+      "definition": "A fully furnished self-catering apartment available on a short-to-medium term basis, offering hotel-like services (housekeeping, front-desk, Wi-Fi) alongside kitchen facilities and extra living space. It targets corporate relocations, long-stay business travellers, and extended family trips where a traditional hotel room is impractical or cost-inefficient.",
+      "lastReviewed": "2026-08-23"
+    },
+    {
       "id": "settlement-cycle",
       "vertical": "common",
       "category": "pay",
@@ -60236,6 +60650,86 @@
       "term": "Spill and Spoilage",
       "definition": "Spill and spoilage are the paired error metrics revenue management trades off against each other: spill is high-yield demand turned away because a class or flight was closed or too tightly limited, while spoilage is the revenue lost from seats that depart empty because too many were protected or the flight was under-sold. Effective seat-inventory control minimizes the combined cost of selling too few high-fare seats (spill) and protecting too aggressively (spoilage).",
       "lastReviewed": "2026-06-18"
+    },
+    {
+      "id": "split-payment",
+      "vertical": "common",
+      "category": "pay",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "분할 결제(Split Payment)",
+      "definition_ko": "단일 예약에 대해 두 가지 이상의 결제 수단을 동시에 사용할 수 있는 결제 방식. 로열티 포인트와 신용카드를 결합하거나, 여행 바우처와 직불카드를 함께 사용하는 것 등이 해당된다. 항공사, OTA, 호텔 예약 엔진에서 로열티 프로그램 회원 및 바우처 보유자의 지갑 점유율을 완전히 확보하기 위해 점점 더 요구되고 있다.",
+      "longDef": "Split payment (also called mixed payment or multi-tender) addresses the practical limitation that a single booking amount may exceed a loyalty balance or voucher value, requiring the remainder to be charged to a second instrument. Common split combinations in travel include: (1) miles/points redemption plus a cash co-pay (the \"points + money\" model used by most frequent flyer programmes); (2) airline gift voucher or flight credit applied against a new booking with the residual charged to a card; (3) corporate travel voucher (e.g., Lufthansa BusinessPlus credits) combined with a personal card; and (4) UATP lodged card covering the corporate portion with employee card covering extras. Technically, split payment requires the booking system and payment gateway to process two separate authorisation flows against a single booking, maintain atomic consistency (if one leg fails, the other is reversed), and present correctly in the BSP/ARC settlement records and invoices. PCI DSS applies to any card leg of the split. Not all GDS booking flows support split payment natively; some carriers implement it post-ticketing via their own servicing tools. IATA NDC order management enables richer split-payment scenarios because the Order model separates the booking record from its payment instruments more cleanly than the legacy PNR/TST architecture.",
+      "longDef_ko": "분할 결제(혼합 결제 또는 다중 결제 수단이라고도 한다)는 단일 예약 금액이 로열티 잔액이나 바우처 가치를 초과하여 나머지를 두 번째 수단으로 청구해야 하는 실질적인 한계를 해결한다. 여행에서 흔한 분할 결제 조합에는 (1) 마일리지·포인트 상환과 현금 공동 부담(대부분의 FFP가 사용하는 \"포인트+현금\" 모델), (2) 항공사 상품권이나 항공사 크레딧을 새 예약에 적용하고 잔액을 카드로 청구, (3) 기업 여행 바우처(예: Lufthansa BusinessPlus 크레딧)와 개인 카드 결합, (4) UATP 법인 카드로 기업 비용을 충당하고 추가 비용은 임직원 카드로 처리하는 방식이 포함된다. 기술적으로 분할 결제는 예약 시스템과 결제 게이트웨이가 단일 예약에 대해 두 개의 별도 승인 흐름을 처리하고, 원자적 일관성(한쪽이 실패하면 다른 쪽도 취소)을 유지하며, BSP/ARC 정산 기록과 인보이스에 올바르게 표시되도록 요구한다. PCI DSS는 분할 결제의 카드 구간에 적용된다. 일부 GDS 예약 흐름은 분할 결제를 네이티브로 지원하지 않으며, 일부 항공사는 자체 서비스 도구를 통해 발권 후 구현한다. IATA NDC 오더 관리는 Order 모델이 레거시 PNR/TST 구조보다 예약 기록과 결제 수단을 더 명확하게 분리하므로 더 풍부한 분할 결제 시나리오를 가능하게 한다.",
+      "aliases": [
+        "Mixed Payment",
+        "Multi-Tender Payment",
+        "Points Plus Money",
+        "Hybrid Payment"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Payment Gateway",
+          "targetId": "payment-gateway"
+        },
+        {
+          "type": "related",
+          "targetTerm": "VCC",
+          "targetId": "vcc"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Buy Now Pay Later",
+          "targetId": "buy-now-pay-later"
+        },
+        {
+          "type": "related",
+          "targetTerm": "UATP",
+          "targetId": "uatp"
+        },
+        {
+          "type": "related",
+          "targetTerm": "BSP",
+          "targetId": "bsp"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Buy Now Pay Later",
+          "explanation": "Buy Now Pay Later (BNPL) defers or instals the total booking amount across time using a single payment product; split payment combines two different instruments at the moment of checkout to cover one total amount.",
+          "explanation_ko": "BNPL(선구매후지불)은 단일 결제 상품으로 총 예약 금액을 시간에 걸쳐 이연하거나 분할하는 반면, 분할 결제는 결제 시점에 두 가지 다른 수단을 결합해 하나의 총액을 충당한다.",
+          "targetId": "buy-now-pay-later"
+        },
+        {
+          "targetTerm": "VCC",
+          "explanation": "A VCC (Virtual Credit Card) is a single-use or limited-use card number used primarily in B2B payments; split payment describes the checkout model where multiple instruments are used together, and a VCC might be one of those instruments in a corporate split-payment scenario.",
+          "explanation_ko": "VCC(가상 신용카드)는 주로 B2B 결제에 사용되는 일회성 또는 제한적 사용 카드 번호이고, 분할 결제는 여러 수단을 함께 사용하는 결제 모델로, VCC는 기업 분할 결제 시나리오에서 그 수단 중 하나가 될 수 있다.",
+          "targetId": "vcc"
+        }
+      ],
+      "sources": [
+        {
+          "name": "IATA — Payment Services — Mixed Payment Guidance",
+          "org": "IATA",
+          "version": "",
+          "section": "",
+          "url": "https://www.iata.org/en/services/finance/payment-methods/",
+          "tier": "association"
+        },
+        {
+          "name": "IATA — NDC Standard — Order and Payment",
+          "org": "IATA",
+          "version": "NDC 21.3",
+          "section": "",
+          "url": "https://www.iata.org/en/programs/airline-distribution/ndc/ndc-standard/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"16\" width=\"36\" height=\"10\" rx=\"2\"/><line x1=\"6\" y1=\"22\" x2=\"42\" y2=\"22\"/><line x1=\"24\" y1=\"26\" x2=\"24\" y2=\"32\"/><line x1=\"24\" y1=\"32\" x2=\"14\" y2=\"38\"/><line x1=\"24\" y1=\"32\" x2=\"34\" y2=\"38\"/><rect x=\"8\" y=\"37\" width=\"12\" height=\"5\" rx=\"1\"/><rect x=\"28\" y=\"37\" width=\"12\" height=\"5\" rx=\"1\"/></svg>",
+      "term": "Split Payment",
+      "definition": "A checkout mechanism that allows a traveller to pay for a single booking using two or more payment instruments simultaneously — for example, combining loyalty points with a credit card, or using a travel voucher together with a debit card. Split payment is increasingly required by airlines, OTAs, and hotel booking engines to capture the full wallet share of loyalty-programme members and voucher holders.",
+      "lastReviewed": "2026-08-23"
     },
     {
       "id": "split-pnr",
