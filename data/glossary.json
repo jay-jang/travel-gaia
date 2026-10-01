@@ -2,8 +2,8 @@
   "meta": {
     "name": "Travel Wiki",
     "tagline": "여행 산업 용어 백과사전",
-    "generatedAt": "2026-09-30",
-    "entryCount": 806,
+    "generatedAt": "2026-10-01",
+    "entryCount": 812,
     "categoryCount": 20,
     "verticalCount": 6
   },
@@ -16873,6 +16873,102 @@
       "lastReviewed": "2026-07-15"
     },
     {
+      "id": "cruise-itinerary",
+      "vertical": "cruise",
+      "category": "cruise",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "크루즈 여정(Cruise Itinerary)",
+      "definition_ko": "크루즈 여정은 특정 크루즈 항해를 정의하는 기항지, 해상일, 날짜의 공시 순서로, 선박이 어디를 항해하고, 각 항구에 얼마나 머물며, 모항에서 언제 출발하고 귀항하는지를 명시한다. 크루즈 라인이 항해를 차별화하고, 지역을 마케팅하며, 항해 가격을 책정하는 핵심 상품 사양이다 — 같은 선박이 서로 다른 기간과 목적지의 여러 여정을 제공할 수 있다.",
+      "longDef": "A cruise itinerary typically lists each day of the voyage with the corresponding port of call (or \"at sea\" notation for sea days), along with scheduled arrival and departure times in local time. Itineraries are categorized by region (Caribbean, Mediterranean, Alaska, Norwegian Fjords, etc.), voyage length (3-night, 7-night, 14-night), and itinerary shape — closed-loop or repositioning. A closed-loop itinerary departs from and returns to the same homeport, while a repositioning itinerary departs from one port and ends at a different one. The itinerary is the primary driver of the cruise's retail price: unique or exotic itineraries (e.g., world cruises, polar expeditions) command significant premiums, while Caribbean loops are typically the most price-competitive. Itinerary changes — caused by weather, port closures, or mechanical issues — are a significant source of guest relations issues and are addressed in passenger contracts. The OpenTravel cruise specification models a cruise itinerary as a sequence of cruise packages with port, dates, and ship identifiers.",
+      "longDef_ko": "크루즈 여정은 보통 각 항해일을 기항지(또는 해상일의 경우 \"at sea\" 표기)와 함께 현지 시간의 도착·출항 예정 시각으로 나열한다. 여정은 지역(카리브해, 지중해, 알래스카, 노르웨이 피오르드 등), 항해 기간(3박, 7박, 14박), 여정 형태 — 폐쇄 루프(closed-loop) 또는 리포지셔닝 — 으로 분류된다. 폐쇄 루프 여정은 같은 모항에서 출발·귀항하고, 리포지셔닝 여정은 한 항구에서 출발해 다른 항구에서 종료된다. 여정은 크루즈 소매 가격의 주요 결정 요인이다: 독특하거나 이국적인 여정(예: 세계 일주 크루즈, 극지 탐험)은 상당한 프리미엄을 받고, 카리브해 루프는 일반적으로 가격 경쟁이 가장 치열하다. 날씨, 항구 폐쇄, 기계 문제로 인한 여정 변경은 중요한 고객 관계 이슈이며 여객 계약에서 다루어진다. OpenTravel 크루즈 사양은 크루즈 여정을 항구, 날짜, 선박 식별자가 포함된 크루즈 패키지 순서로 모델링한다.",
+      "standardBody": "CLIA (Cruise Lines International Association)",
+      "aliases": [
+        "Cruise Route",
+        "Sailing Itinerary",
+        "Voyage Itinerary"
+      ],
+      "relationships": [
+        {
+          "type": "broader",
+          "targetTerm": "Voyage Number",
+          "targetId": "voyage-number"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Port of Call",
+          "targetId": "port-of-call"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Sea Day",
+          "targetId": "sea-day"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Homeport",
+          "targetId": "homeport"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Embarkation",
+          "targetId": "embarkation"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Disembarkation",
+          "targetId": "disembarkation"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Turnaround Day",
+          "targetId": "turnaround-day"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Itinerary",
+          "explanation": "A cruise itinerary is the published product specification for a cruise voyage — the ship's route, ports, and schedule; an Itinerary in air travel is the ordered list of flight segments in a passenger's PNR. Although the word is shared, the cruise itinerary is a product definition rather than an individual passenger's booking record.",
+          "explanation_ko": "크루즈 여정(Cruise Itinerary)은 크루즈 항해의 공시 상품 사양, 즉 선박의 루트, 기항지, 일정이고, 항공에서 Itinerary는 승객의 PNR에 담긴 항공 구간의 순서 목록이다. 같은 단어를 사용하지만, 크루즈 여정은 개별 승객의 예약 기록이 아니라 상품 정의이다.",
+          "targetId": "itinerary"
+        },
+        {
+          "targetTerm": "Voyage Number",
+          "explanation": "A cruise itinerary is the route template specifying ports, sea days, and dates for a class of sailing; a voyage number is the unique identifier assigned to a specific scheduled departure of that itinerary on a specific ship and sail date.",
+          "explanation_ko": "크루즈 여정은 기항지, 해상일, 날짜를 명시하는 항해 유형의 루트 템플릿이고, 항해 번호(Voyage Number)는 특정 선박과 출항일의 구체적인 예정 출발에 부여되는 고유 식별자이다.",
+          "targetId": "voyage-number"
+        },
+        {
+          "targetTerm": "Turnaround Day",
+          "explanation": "A cruise itinerary is the planned route and schedule across multiple days; a turnaround day is the specific operational day at the homeport when one itinerary ends (disembarkation) and the next begins (embarkation) on the same ship.",
+          "explanation_ko": "크루즈 여정은 여러 날에 걸친 계획된 루트와 일정이고, 전환일(Turnaround Day)은 모항에서 한 여정이 끝나고(하선) 같은 선박에서 다음 여정이 시작되는(승선) 특정 운영일이다.",
+          "targetId": "turnaround-day"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Cruise Industry Overview and Itinerary Types",
+          "org": "CLIA (Cruise Lines International Association)",
+          "version": "",
+          "section": "",
+          "url": "https://cruising.org/research-and-advocacy/research",
+          "tier": "association"
+        },
+        {
+          "name": "OpenTravel Cruise Message Set — Cruise Package and Itinerary Structure",
+          "org": "OpenTravel Alliance",
+          "version": "",
+          "section": "",
+          "url": "https://opentravel.org/download-specs/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 34 C10 28, 16 22, 24 20 C32 18, 38 22, 42 28\"/><circle cx=\"10\" cy=\"31\" r=\"3\"/><circle cx=\"24\" cy=\"21\" r=\"3\"/><circle cx=\"38\" cy=\"27\" r=\"3\"/><path d=\"M10 31 L24 21 L38 27\"/><path d=\"M20 40 h8\"/><path d=\"M24 38 v-8\"/></svg>",
+      "term": "Cruise Itinerary",
+      "definition": "A cruise itinerary is the published sequence of ports of call, sea days, and dates that defines a specific cruise voyage, specifying where the ship will sail, how long it will stay in each port, and when it departs and returns to the homeport. It is the core product specification that cruise lines use to differentiate sailings, market regions, and price voyages — the same ship may offer multiple itineraries of different lengths and destinations.",
+      "lastReviewed": "2026-10-01"
+    },
+    {
       "id": "cruise-terminal",
       "vertical": "cruise",
       "category": "cruise",
@@ -21590,6 +21686,106 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "emissions-factor",
+      "vertical": "common",
+      "category": "sustainability",
+      "conceptType": "metric",
+      "status": "active",
+      "term_ko": "배출 계수(Emissions Factor)",
+      "definition_ko": "배출 계수는 정의된 여행 활동 단위당 — 예를 들어 승객 킬로미터당 kg CO2e, 좌석 킬로미터당, 또는 연소 연료 1톤당 — 방출되는 온실가스 질량을 나타내는 공시 계수이다. 측정된 활동 데이터를 추정 탄소 발자국으로 변환하는 데 사용되며, ICAO, GHG 프로토콜, GLEC 등의 기관에서 발행하고 운송 수단, 연료 유형, 항공기 유형, 좌석 등급, 탑승률에 따라 달라진다.",
+      "longDef": "For aviation, emissions factors are typically expressed as kg CO2 (or CO2e including non-CO2 effects such as contrails and NOx) per revenue passenger-kilometre (RPK) or per available seat-kilometre (ASK). The ICAO Carbon Emissions Calculator (ICEC) uses ICAO-published seat-class-specific factors; the IATA CO2 Connect methodology publishes flight-level factors accounting for payload and actual fuel burn. For hotels, the Hotel Carbon Measurement Initiative (HCMI) defines factors per occupied room-night using energy consumption data. The GHG Protocol Scope 3 Category 6 (Business Travel) guidance directs companies to use the most specific emission factor available for each leg of a trip. Factors must match the system boundary: a well-to-wake (WtW) factor covers the full fuel life cycle (production + combustion), whereas a tank-to-wake (TtW) factor covers only combustion. Emissions factors are periodically revised as the fuel mix, aircraft technology, and load factors change; using outdated factors is a common source of corporate carbon accounting error.",
+      "longDef_ko": "항공의 경우 배출 계수는 보통 수익 승객 킬로미터(RPK) 또는 가용 좌석 킬로미터(ASK)당 kg CO2(또는 항적운, NOx 등 비CO2 효과를 포함한 CO2e)로 표현된다. ICAO 탄소 배출 계산기(ICEC)는 ICAO가 발행한 좌석 등급별 계수를 사용하고, IATA CO2 Connect 방법론은 페이로드와 실제 연료 소모를 반영한 항공편 수준의 계수를 발행한다. 호텔의 경우 호텔 탄소 측정 이니셔티브(HCMI)는 에너지 소비 데이터를 사용해 점유 객실 숙박당 계수를 정의한다. GHG 프로토콜 Scope 3 카테고리 6(비즈니스 여행) 가이던스는 기업들이 여행의 각 구간에 가장 구체적인 배출 계수를 사용하도록 안내한다. 계수는 시스템 경계와 일치해야 한다: 유정-익면(WtW) 계수는 전체 연료 생애주기(생산 + 연소)를 포함하고, 탱크-익면(TtW) 계수는 연소만 포함한다. 연료 믹스, 항공기 기술, 탑승률이 변화함에 따라 배출 계수는 주기적으로 개정되며, 구식 계수 사용은 기업 탄소 회계의 일반적인 오류 원인이다.",
+      "standardBody": "ICAO",
+      "aliases": [
+        "Emission Factor",
+        "Carbon Emission Factor",
+        "CO2 Factor",
+        "GHG Emission Factor"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "GHG Protocol Scope 3 (Business Travel)",
+          "targetId": "ghg-protocol-scope-3-business-travel"
+        },
+        {
+          "type": "related",
+          "targetTerm": "IATA CO2 Connect",
+          "targetId": "iata-co2-connect"
+        },
+        {
+          "type": "related",
+          "targetTerm": "ICAO Carbon Emissions Calculator (ICEC)",
+          "targetId": "icao-carbon-emissions-calculator-icec"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Well-to-Wake (WtW)",
+          "targetId": "well-to-wake-wtw"
+        },
+        {
+          "type": "related",
+          "targetTerm": "CORSIA",
+          "targetId": "corsia"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Sustainable Aviation Fuel (SAF)",
+          "targetId": "sustainable-aviation-fuel-saf"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Carbon Offset",
+          "explanation": "An emissions factor is a data input used to quantify how much CO2e a given amount of travel activity produces; a carbon offset is a purchased credit that compensates for a stated quantity of emissions already calculated — an emissions factor is a calculation tool, an offset is a financial instrument.",
+          "explanation_ko": "배출 계수는 주어진 여행 활동이 얼마나 많은 CO2e를 생성하는지 정량화하는 데 사용되는 데이터 입력값이고, 탄소 상쇄권은 이미 계산된 배출량에 대해 보상하기 위해 구매하는 크레딧이다. 배출 계수는 계산 도구이고, 상쇄권은 금융 수단이다.",
+          "targetId": "carbon-offset"
+        },
+        {
+          "targetTerm": "Well-to-Wake (WtW)",
+          "explanation": "A Well-to-Wake (WtW) scope is the system boundary decision that determines which life-cycle stages to include in an emissions calculation; an emissions factor with WtW scope is one that covers fuel production through combustion. An emissions factor is the numerical coefficient; WtW is the boundary specification that defines what that coefficient covers.",
+          "explanation_ko": "유정-익면(WtW) 범위는 배출 계산에 포함할 생애주기 단계를 결정하는 시스템 경계 결정이고, WtW 범위의 배출 계수는 연료 생산부터 연소까지를 포함하는 계수이다. 배출 계수는 수치 계수이고, WtW는 그 계수가 무엇을 포함하는지를 정의하는 경계 사양이다.",
+          "targetId": "well-to-wake-wtw"
+        },
+        {
+          "targetTerm": "IATA CO2 Connect",
+          "explanation": "IATA CO2 Connect is a specific API-based flight carbon calculation service that applies IATA-published emissions factors to flight-level data; an emissions factor is the underlying coefficient that any such calculator consumes.",
+          "explanation_ko": "IATA CO2 Connect는 IATA가 발행한 배출 계수를 항공편 수준의 데이터에 적용하는 특정 API 기반 항공편 탄소 계산 서비스이고, 배출 계수는 그러한 계산기가 사용하는 기본 계수이다.",
+          "targetId": "iata-co2-connect"
+        }
+      ],
+      "sources": [
+        {
+          "name": "ICAO Carbon Emissions Calculator Methodology",
+          "org": "ICAO",
+          "version": "Version 13 (2023)",
+          "section": "",
+          "url": "https://www.icao.int/environmental-protection/CarbonOffset/Pages/default.aspx",
+          "tier": "standard-body"
+        },
+        {
+          "name": "GHG Protocol Corporate Accounting and Reporting Standard — Scope 3 Category 6",
+          "org": "GHG Protocol / World Resources Institute",
+          "version": "",
+          "section": "Category 6 Business Travel",
+          "url": "https://ghgprotocol.org/scope-3-technical-calculation-guidance",
+          "tier": "standard-body"
+        },
+        {
+          "name": "Global Logistics Emissions Council (GLEC) Framework for Logistics Emissions Accounting",
+          "org": "Smart Freight Centre",
+          "version": "Version 3 (2023)",
+          "section": "",
+          "url": "https://www.smartfreightcentre.org/en/how-to-implement-items/what-is-glec-framework/58/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"4\"/><path d=\"M24 8v4M24 36v4M8 24h4M36 24h4\"/><path d=\"M14.1 14.1l2.8 2.8M31.1 31.1l2.8 2.8M14.1 33.9l2.8-2.8M31.1 16.9l2.8-2.8\"/><path d=\"M24 12a12 12 0 0 1 8.5 20.5\"/><path d=\"M24 12a12 12 0 0 0-8.5 20.5\"/></svg>",
+      "term": "Emissions Factor",
+      "definition": "An emissions factor is a published coefficient expressing the mass of greenhouse gases emitted per unit of a defined travel activity — such as kg CO2e per passenger-kilometre, per seat-kilometre, or per tonne of fuel burned — used to convert measured activity data into an estimated carbon footprint. Emissions factors are published by bodies including ICAO, the GHG Protocol, and GLEC, and vary by transport mode, fuel type, aircraft type, seat class, and load factor.",
+      "lastReviewed": "2026-10-01"
+    },
+    {
       "id": "endorsements-restrictions-box",
       "vertical": "air",
       "category": "air-ticket",
@@ -24253,6 +24449,102 @@
       "term": "Fare Filing",
       "definition": "The formal process by which airlines submit their fares, rules, footnotes, and associated pricing data to a central tariff repository — primarily ATPCO (Airline Tariff Publishing Company) — for validation and onward distribution to GDSs, NDC channels, OTAs, and corporate booking tools. A single fare filing at ATPCO propagates to all connected distribution channels within hours, giving airlines precise, rule-governed control over their worldwide pricing.",
       "lastReviewed": "2026-07-26"
+    },
+    {
+      "id": "fare-ladder",
+      "vertical": "air",
+      "category": "air-shop",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "운임 사다리(Fare Ladder)",
+      "definition_ko": "Fare Ladder(운임 사다리)는 한 노선에서 예약 클래스(RBD)와 관련 운임을 최저가부터 최고가 순으로 나열한 순서 구조로, 수익 관리에서 저렴한 좌석이 언제 매진되어 더 비싼 클래스를 구매해야 하는지를 제어하는 데 사용된다. 항공기 탑승률이 높아질수록 수요를 낮은 운임에서 높은 운임 수준으로 이동시키는 구조화된 진행 경로를 나타낸다.",
+      "longDef": "A typical fare ladder for an economy cabin might progress from Q (lowest discount) through V, K, M, B, Y (full fare) in ascending price order. Revenue management systems open and close booking classes on the ladder based on demand forecasts, booking curves, and bid-price thresholds: when low-fare classes fill, the system closes them, forcing subsequent bookings into higher rungs. The ladder concept is closely linked to EMSR (Expected Marginal Seat Revenue) methods, which calculate the optimal booking limit for each class as a function of remaining capacity and forecast unconstrained demand. In ATPCO-based distribution, fare classes on the ladder correspond to specific ATPCO-filed fares with booking conditions including minimum stay, advance purchase, and changeability rules. Revenue management systems use nested, serial, or parallel nesting of the ladder classes to prevent lower-class bookings from displacing high-value demand.",
+      "longDef_ko": "전형적인 이코노미 객실의 운임 사다리는 가장 낮은 할인 클래스(Q)에서 V, K, M, B, Y(정상 운임) 순으로 가격이 상승한다. 수익 관리 시스템은 수요 예측, 예약 곡선, 입찰가(bid price) 임계값을 기반으로 사다리의 예약 클래스를 개방하고 폐쇄한다. 저가 클래스가 매진되면 시스템은 이를 폐쇄하여 이후 예약이 더 높은 단계로 이동하게 한다. 사다리 개념은 EMSR(Expected Marginal Seat Revenue) 방법과 긴밀히 연결되어 있으며, 이 방법은 남은 좌석 수와 수요 예측에 따라 각 클래스의 최적 예약 한도를 계산한다. ATPCO 기반 유통에서 사다리의 운임 클래스는 최소 체류, 사전 구매, 변경 규정 등 예약 조건이 포함된 ATPCO 게재 운임에 대응된다. 수익 관리 시스템은 저가 예약이 고가 수요를 대체하지 않도록 사다리 클래스의 중첩, 연속, 병렬 중첩을 활용한다.",
+      "standardBody": "IATA",
+      "aliases": [
+        "Booking Class Ladder",
+        "Fare Class Hierarchy",
+        "Class Hierarchy"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "RBD",
+          "targetId": "rbd"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Booking Limit",
+          "targetId": "booking-limit"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Revenue Management",
+          "targetId": "revenue-management"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Bid Price",
+          "targetId": "bid-price"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Yield Management",
+          "targetId": "yield-management"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Protection Level",
+          "targetId": "protection-level"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Load Factor",
+          "targetId": "load-factor"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "RBD",
+          "explanation": "An RBD (Reservation Booking Designator) is the single letter code identifying one booking class; a fare ladder is the ordered collection of multiple RBDs ranked by price, showing how they relate to each other as an availability progression.",
+          "explanation_ko": "RBD(Reservation Booking Designator)는 하나의 예약 클래스를 식별하는 단일 문자 코드이고, 운임 사다리는 여러 RBD를 가격 순으로 정렬한 집합으로, 이들이 가용성 진행 순서로 서로 어떻게 관련되는지를 보여준다.",
+          "targetId": "rbd"
+        },
+        {
+          "targetTerm": "Revenue Management",
+          "explanation": "A fare ladder is the structural representation of the booking-class hierarchy on a specific route; revenue management is the broader discipline of forecasting demand, setting booking limits, and opening/closing classes on that ladder to maximize total flight revenue.",
+          "explanation_ko": "운임 사다리는 특정 노선의 예약 클래스 계층 구조 표현이고, 수익 관리는 수요를 예측하고 예약 한도를 설정하며, 전체 항공편 수익을 극대화하기 위해 해당 사다리의 클래스를 개폐하는 더 광범위한 전문 분야이다.",
+          "targetId": "revenue-management"
+        },
+        {
+          "targetTerm": "Bid Price",
+          "explanation": "A bid price is the minimum revenue threshold above which a seat can be sold at a given point in time; the fare ladder provides the set of discrete fare levels from which the system selects the lowest available class still above the bid price.",
+          "explanation_ko": "입찰가(bid price)는 특정 시점에 좌석을 판매할 수 있는 최소 수익 임계값이고, 운임 사다리는 시스템이 입찰가 이상의 이용 가능한 최저 클래스를 선택하는 이산 운임 수준 집합을 제공한다.",
+          "targetId": "bid-price"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Airline Revenue Management — Seat Inventory Control",
+          "org": "IATA",
+          "version": "",
+          "section": "",
+          "url": "https://www.iata.org/en/training/courses/airline-revenue-management-fundamentals/",
+          "tier": "association"
+        },
+        {
+          "name": "Revenue Management and Pricing — Booking Class Structures",
+          "org": "ATPCO",
+          "version": "",
+          "section": "",
+          "url": "https://www.atpco.net/solutions/automated-pricing-and-shopping",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><line x1=\"10\" y1=\"38\" x2=\"38\" y2=\"38\"/><rect x=\"10\" y=\"28\" width=\"6\" height=\"10\"/><rect x=\"21\" y=\"20\" width=\"6\" height=\"18\"/><rect x=\"32\" y=\"11\" width=\"6\" height=\"27\"/><polyline points=\"13,28 24,20 35,11\"/><polyline points=\"32,14 35,11 38,14\"/></svg>",
+      "term": "Fare Ladder",
+      "definition": "A fare ladder is the sequential ordering of booking classes (RBDs) and their associated fares from the lowest-priced to the highest-priced on a route, used in revenue management to control when cheaper seats become unavailable and more expensive classes must be purchased. It represents the structured progression through which an airline moves demand from low to high fare levels as the flight fills.",
+      "lastReviewed": "2026-10-01"
     },
     {
       "id": "fare-lock",
@@ -30714,6 +31006,81 @@
       "term": "HOT File",
       "definition": "The HOT file (Hand-Off Tape) is the standardized DISH-format output file the BSP transmits to airlines and their back-office systems, carrying the accounting and settlement detail of all agent ticketing and refund transactions processed in a billing period. It is the outbound, airline-facing counterpart to the inbound agent sales report (the RET file) and is a core mechanical artifact of BSP settlement.",
       "lastReviewed": "2026-06-18"
+    },
+    {
+      "id": "hotel-brand-standard",
+      "vertical": "lodging",
+      "category": "hotel-dist",
+      "conceptType": "standard",
+      "status": "active",
+      "term_ko": "호텔 브랜드 기준(Hotel Brand Standard)",
+      "definition_ko": "호텔 브랜드 기준은 호텔 프랜차이저의 브랜드 마크를 사용하고 유지하기 위해 호텔 자산이 충족하고 유지해야 하는 운영 사양, 물리적 설계 요건, 품질 기준, 서비스 프로토콜에 관한 문서화된 집합이다. 브랜드 기준은 품질 보증(QA) 점검을 통해 집행되며, 일반적으로 프랜차이즈 계약 및 운영 계약에 명시되어 기준이 정해진 임계값 이하로 떨어지면 브랜드 소유자가 계약을 해지할 권리를 갖는다.",
+      "longDef": "Brand standards typically span multiple dimensions: physical plant (room size, bath fixtures, bedding specifications, lobby design, fitness centre, pool), technology (property management system, in-room entertainment, Wi-Fi speed), food and beverage, loyalty programme integration, safety and security, and service delivery (check-in time, guest satisfaction scores). Hotel groups such as IHG, Marriott, and Hilton publish brand standards for each of their distinct brands — a Holiday Inn Express standard differs substantially from an InterContinental standard — and update them periodically. Compliance is audited annually or biannually through unannounced or scheduled Quality Assurance (QA) inspections, and scores are typically expressed as a percentage or a numerical rating. A poor QA score can trigger a Performance Improvement Plan (PIP) and, if not remedied, termination. New-build and conversion projects must meet a Brand Approval review before opening; refurbishments must follow a Property Improvement Plan (PIP) that aligns the asset with current brand standards.",
+      "longDef_ko": "브랜드 기준은 보통 여러 차원에 걸쳐 있다: 물리적 설비(객실 크기, 욕실 비품, 침구 사양, 로비 설계, 피트니스 센터, 수영장), 기술(PMS, 객실 내 엔터테인먼트, Wi-Fi 속도), 식음료, 로열티 프로그램 연동, 안전·보안, 서비스 제공(체크인 시간, 고객 만족도 점수) 등이다. IHG, 매리어트, 힐튼 같은 호텔 그룹은 각 브랜드에 대한 브랜드 기준을 발행하며 — 홀리데이 익스프레스 기준과 인터컨티넨탈 기준은 상당히 다름 — 주기적으로 업데이트한다. 준수 여부는 매년 또는 2년마다 불시 또는 예정된 품질 보증(QA) 점검을 통해 감사되며, 점수는 보통 백분율 또는 수치 등급으로 표현된다. 낮은 QA 점수는 성능 개선 계획(PIP)을 유발할 수 있으며, 개선되지 않으면 계약 해지로 이어질 수 있다. 신축 및 전환 프로젝트는 개관 전 브랜드 승인 검토를 통과해야 하고, 리노베이션은 자산을 현행 브랜드 기준에 맞추는 부동산 개선 계획(PIP)을 따라야 한다.",
+      "aliases": [
+        "Brand Standards",
+        "Quality Standard (hotel)",
+        "Franchise Standard",
+        "QA Standard (hotel)"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Soft Brand",
+          "targetId": "soft-brand"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Hotel Management Agreement (HMA)",
+          "targetId": "hotel-management-agreement-hma"
+        },
+        {
+          "type": "related",
+          "targetTerm": "OTA (Online Travel Agency)",
+          "targetId": "ota-online-travel-agency"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Rate Parity",
+          "targetId": "rate-parity"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Soft Brand",
+          "explanation": "A brand standard defines the non-negotiable mandatory requirements a hotel must meet to carry a hard brand flag; a soft brand is a collection concept that tolerates significant property individuality while providing some shared marketing benefits — soft-brand members often face lighter or more flexible brand standards than hard-branded hotels.",
+          "explanation_ko": "브랜드 기준은 호텔이 하드 브랜드 마크를 사용하기 위해 반드시 충족해야 하는 비협상적 필수 요건을 정의하고, 소프트 브랜드는 일부 공유 마케팅 혜택을 제공하면서 개별 자산의 개성을 상당히 허용하는 컬렉션 개념이다. 소프트 브랜드 멤버는 종종 하드 브랜드 호텔보다 가볍거나 유연한 브랜드 기준을 적용받는다.",
+          "targetId": "soft-brand"
+        },
+        {
+          "targetTerm": "Hotel Management Agreement (HMA)",
+          "explanation": "A brand standard is the technical specification of what the property must physically and operationally look like; a Hotel Management Agreement (HMA) is the legal contract between the property owner and the operator or franchisor that grants the right to use the brand flag, and embeds the brand standards as contractual obligations.",
+          "explanation_ko": "브랜드 기준은 자산이 물리적·운영적으로 어떠해야 하는지에 관한 기술 사양이고, 호텔 운영 계약(HMA)은 자산 소유자와 운영자 또는 프랜차이저 간의 법적 계약으로 브랜드 마크 사용 권리를 부여하며, 브랜드 기준을 계약상 의무로 포함시킨다.",
+          "targetId": "hotel-management-agreement-hma"
+        }
+      ],
+      "sources": [
+        {
+          "name": "IHG Brand Standards and Quality Assurance framework",
+          "org": "IHG (InterContinental Hotels Group)",
+          "version": "",
+          "section": "",
+          "url": "https://www.ihg.com/content/us/en/about/owner-resources",
+          "tier": "vendor-doc"
+        },
+        {
+          "name": "Brand Standards and Hotel Classification — Overview",
+          "org": "American Hotel & Lodging Association (AHLA)",
+          "version": "",
+          "section": "",
+          "url": "https://www.ahla.com/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"8\" width=\"32\" height=\"32\" rx=\"3\"/><polyline points=\"16,24 21,29 32,18\"/><line x1=\"16\" y1=\"16\" x2=\"32\" y2=\"16\"/><line x1=\"16\" y1=\"32\" x2=\"26\" y2=\"32\"/></svg>",
+      "term": "Hotel Brand Standard",
+      "definition": "A hotel brand standard is the documented set of operational specifications, physical design requirements, quality benchmarks, and service protocols that a hotel property must meet and maintain in order to carry and retain a franchisor's brand flag. Brand standards are enforced through quality assurance inspections and are typically embedded in franchise agreements and management contracts, giving the brand owner the right to terminate the agreement if standards fall below defined thresholds.",
+      "lastReviewed": "2026-10-01"
     },
     {
       "id": "hotel-carbon-measurement-initiative",
@@ -47064,6 +47431,108 @@
       "lastReviewed": "2026-06-15"
     },
     {
+      "id": "ota-extranet",
+      "vertical": "lodging",
+      "category": "hotel-dist",
+      "conceptType": "system",
+      "status": "active",
+      "term_ko": "OTA 엑스트라넷(OTA Extranet)",
+      "definition_ko": "OTA 엑스트라넷은 온라인 여행사가 호텔 파트너에게 제공하는 웹 기반 자산 관리 포털로, 해당 OTA 채널에서 객실 재고, 요금, 콘텐츠, 프로모션, 예약 정책을 관리할 수 있게 한다. Booking.com(엑스트라넷), Expedia(파트너 센트럴), Agoda(YCS) 등 주요 OTA는 별도의 엑스트라넷을 운영하므로, 호텔리어는 여러 포털을 개별 관리하거나 채널 매니저를 통해 통합 관리해야 한다.",
+      "longDef": "Within an OTA extranet a hotel typically manages: room types and their descriptions, photos and amenity content; rate plans (BAR, non-refundable, member rates); availability and stop-sell instructions; special promotions and visibility programmes; cancellation and prepayment policies; invoicing and financial reporting; guest review responses; and connectivity settings (XML/API connections via channel manager or direct ARI push). Content quality within the extranet directly affects the property's ranking algorithm on the OTA's consumer-facing site — a higher content score or completion rate typically boosts search placement. Booking.com's extranet also exposes the Genius loyalty tier performance dashboard, property analytics, and the Visibility Booster tool. Expedia Partner Central additionally serves as the access point for the Expedia Group's real-time pricing and availability API (EPS) configuration. Relying solely on manual extranet updates without a channel manager creates a high risk of overbooking and rate inconsistency across channels.",
+      "longDef_ko": "OTA 엑스트라넷 내에서 호텔은 보통 다음을 관리한다: 객실 유형과 설명, 사진, 편의시설 콘텐츠; 요금 플랜(BAR, 환불 불가, 회원 요금); 가용성 및 판매 중단 지시; 특별 프로모션 및 노출 프로그램; 취소 및 선불 정책; 청구서 및 재무 보고서; 고객 리뷰 응답; 연결 설정(채널 매니저 또는 직접 ARI 푸시를 통한 XML/API 연결). 엑스트라넷 내 콘텐츠 품질은 OTA 소비자 사이트의 노출 순위 알고리즘에 직접 영향을 미친다 — 콘텐츠 점수나 완성도가 높을수록 검색 노출이 향상되는 경향이 있다. Booking.com 엑스트라넷은 Genius 로열티 등급 성과 대시보드, 자산 분석, Visibility Booster 도구도 제공한다. Expedia 파트너 센트럴은 Expedia Group의 실시간 요금·가용성 API(EPS) 설정 접근점이기도 하다. 채널 매니저 없이 수동 엑스트라넷 업데이트에만 의존하면 초과 예약 및 채널 간 요금 불일치 위험이 높아진다.",
+      "providerTerms": [
+        {
+          "provider": "Booking.com",
+          "term": "Extranet (Booking.com)",
+          "context": "Booking.com's property management portal is generically called the Extranet; it covers inventory, rates, promotions, analytics, reviews and connectivity settings.",
+          "context_ko": "Booking.com의 자산 관리 포털은 일반적으로 엑스트라넷이라고 불리며, 재고, 요금, 프로모션, 분석, 리뷰, 연결 설정을 포함한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Expedia Group",
+          "term": "Partner Central",
+          "context": "Expedia's extranet is branded Partner Central; it provides rate and availability management, EPS API configuration, analytics, and review management for Expedia and Hotels.com properties.",
+          "context_ko": "Expedia의 엑스트라넷은 파트너 센트럴이라는 브랜드명으로, Expedia 및 Hotels.com 자산에 대해 요금·가용성 관리, EPS API 설정, 분석, 리뷰 관리를 제공한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Agoda",
+          "term": "YCS (Your Connected Services)",
+          "context": "Agoda's property portal is branded YCS (Your Connected Services), covering inventory, rates, content, and performance reporting for properties on the Agoda and Booking.com platforms (since both are part of Booking Holdings).",
+          "context_ko": "Agoda의 자산 포털은 YCS(Your Connected Services)라는 브랜드명으로, Agoda 및 Booking.com 플랫폼의 자산에 대해 재고, 요금, 콘텐츠, 성과 보고를 제공한다(두 플랫폼 모두 Booking Holdings 소속).",
+          "relationship": "same"
+        }
+      ],
+      "aliases": [
+        "Partner Extranet",
+        "Property Management Portal (OTA)",
+        "Partner Portal (OTA)"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Channel Manager",
+          "targetId": "channel-manager"
+        },
+        {
+          "type": "related",
+          "targetTerm": "ARI",
+          "targetId": "ari"
+        },
+        {
+          "type": "related",
+          "targetTerm": "OTA (Online Travel Agency)",
+          "targetId": "ota-online-travel-agency"
+        },
+        {
+          "type": "related",
+          "targetTerm": "CRS",
+          "targetId": "crs"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Rate Parity",
+          "targetId": "rate-parity"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Channel Manager",
+          "explanation": "An OTA extranet is the portal a specific OTA provides to its hotel partners for direct rate and inventory management on that platform; a channel manager is a third-party system the hotel uses to push rates and availability to multiple OTA extranets simultaneously, avoiding manual updates on each.",
+          "explanation_ko": "OTA 엑스트라넷은 특정 OTA가 해당 플랫폼의 요금과 재고를 직접 관리하기 위해 호텔 파트너에게 제공하는 포털이고, 채널 매니저는 호텔이 여러 OTA 엑스트라넷에 요금과 가용성을 동시에 푸시하기 위해 사용하는 제3자 시스템으로 각 포털의 수동 업데이트를 방지한다.",
+          "targetId": "channel-manager"
+        },
+        {
+          "targetTerm": "CRS",
+          "explanation": "A CRS (Central Reservations System) is the hotel's own master inventory and reservation system that aggregates bookings from all channels; an OTA extranet is the channel-specific interface through which the OTA and hotel exchange rates, availability, and reservations, typically connecting into the CRS via an ARI feed or channel manager.",
+          "explanation_ko": "CRS(중앙 예약 시스템)는 모든 채널의 예약을 집계하는 호텔 자체의 마스터 재고·예약 시스템이고, OTA 엑스트라넷은 OTA와 호텔이 요금, 가용성, 예약을 교환하는 채널별 인터페이스로, 보통 ARI 피드 또는 채널 매니저를 통해 CRS에 연결된다.",
+          "targetId": "crs"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Booking.com Extranet Help Centre — Getting Started with the Extranet",
+          "org": "Booking.com",
+          "version": "",
+          "section": "",
+          "url": "https://partner.booking.com/en-gb/help/getting-started/your-extranet",
+          "tier": "vendor-doc"
+        },
+        {
+          "name": "Expedia Partner Central — Help and Resources",
+          "org": "Expedia Group",
+          "version": "",
+          "section": "",
+          "url": "https://partner.expediagroup.com/en-us/help-hub",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"8\" width=\"36\" height=\"28\" rx=\"3\"/><line x1=\"6\" y1=\"16\" x2=\"42\" y2=\"16\"/><circle cx=\"11\" cy=\"12\" r=\"1.5\" fill=\"currentColor\"/><circle cx=\"16\" cy=\"12\" r=\"1.5\" fill=\"currentColor\"/><circle cx=\"21\" cy=\"12\" r=\"1.5\" fill=\"currentColor\"/><line x1=\"13\" y1=\"40\" x2=\"35\" y2=\"40\"/><line x1=\"24\" y1=\"36\" x2=\"24\" y2=\"40\"/><rect x=\"12\" y=\"22\" width=\"10\" height=\"6\" rx=\"1\"/><rect x=\"26\" y=\"22\" width=\"10\" height=\"6\" rx=\"1\"/></svg>",
+      "term": "OTA Extranet",
+      "definition": "An OTA extranet is the web-based property management portal that an online travel agency provides to hotel partners, enabling the property to manage its room inventory, rates, content, promotions, and booking policies on that specific OTA channel. Each major OTA — Booking.com (Extranet), Expedia (Partner Central), Agoda (YCS) — runs a separate extranet, requiring hoteliers to manage multiple portals or to centralise via a channel manager.",
+      "lastReviewed": "2026-10-01"
+    },
+    {
       "id": "out-of-hours-fee",
       "vertical": "ground",
       "category": "car",
@@ -57250,6 +57719,99 @@
       "term": "Rooming List",
       "definition": "A rooming list is the formal document prepared by a tour operator, travel agent, or group organiser and delivered to a hotel (or series of hotels) that specifies the name, room type, arrival/departure dates, and any special requirements for each guest in a group booking. It converts a group block or allotment into individual room assignments and serves as the operational handover between the seller and the accommodation supplier.",
       "lastReviewed": "2026-08-11"
+    },
+    {
+      "id": "round-trip",
+      "vertical": "air",
+      "category": "air-shop",
+      "conceptType": "business-term",
+      "status": "active",
+      "abbreviation": "RT",
+      "term_ko": "왕복 여행(Round Trip)",
+      "definition_ko": "Round Trip(왕복 여행)은 IATA 운임 구성 여정 유형으로, 승객이 출발지 도시에서 출발해 하나 이상의 목적지를 방문한 후 왕복(RT) 또는 절반 왕복(HRT) 운임을 적용하여 동일한 경로의 역순이나 대칭 루트로 출발지로 돌아오는 여정이다. IATA 운임 규칙에서 단방향(One-Way), 오픈 조(Open Jaw), 일주 여행(Circle Trip)과 함께 4대 주요 여정 유형 중 하나이다.",
+      "longDef": "A round trip uses a single round-trip fare (or two half round-trip fares summing to the full RT base) to price the entire outbound-and-return itinerary. ATPCO publishes RT fares in the tariff; fare construction rules require the outbound and inbound to use the same or symmetrically-applicable fare basis codes. Round-trip pricing is distinguished from pricing two back-to-back one-way fares (which may be cheaper or more expensive depending on carrier and route). Where a round trip passes through the same intermediate cities in reverse order on the return leg, it is a pure round trip; if the return uses a different routing through different intermediate cities, it becomes a circle trip. Minimum-stay and maximum-stay rules under ATPCO Category 6 and Category 7 are central to the economics of round-trip fares and are used by airlines to fence leisure demand from business demand.",
+      "longDef_ko": "Round Trip은 왕복 전체 여정을 단일 RT 운임(또는 두 개의 HRT 운임 합계)으로 가격을 책정한다. ATPCO는 관세에 RT 운임을 게재하며, 운임 구성 규칙은 왕복 구간이 동일하거나 대칭적으로 적용 가능한 운임 기준 코드를 사용하도록 요구한다. 왕복 운임 책정은 두 개의 편도 운임을 연속으로 결합하는 방식(항공사·노선에 따라 더 저렴하거나 비쌀 수 있음)과 구별된다. 왕복 여정에서 귀국 구간이 동일한 중간 도시를 역순으로 통과하면 순수 왕복 여행이고, 귀국 구간이 다른 중간 도시를 경유하는 다른 루트를 사용하면 일주 여행(Circle Trip)이 된다. ATPCO Category 6 및 Category 7의 최소 체류 및 최대 체류 규칙은 왕복 운임 경제성의 핵심이며, 항공사가 레저 수요와 비즈니스 수요를 분리하는 데 활용된다.",
+      "standardBody": "IATA",
+      "aliases": [
+        "Return Journey",
+        "Return Fare",
+        "RT Fare",
+        "Return Trip"
+      ],
+      "relationships": [
+        {
+          "type": "contrasts",
+          "targetTerm": "Circle Trip",
+          "targetId": "circle-trip"
+        },
+        {
+          "type": "contrasts",
+          "targetTerm": "Open Jaw",
+          "targetId": "open-jaw"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Fare Component",
+          "targetId": "fare-component"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Journey",
+          "targetId": "journey"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Fare Basis Code",
+          "targetId": "fare-basis-code"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Fare Construction",
+          "targetId": "fare-construction"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Circle Trip",
+          "explanation": "A round trip returns to the origin via a reverse or mirror of the outbound routing; a circle trip also returns to the same origin city but uses a different set of intermediate cities or a different routing on the return, meaning the sectors do not simply retrace the outbound path.",
+          "explanation_ko": "왕복 여행은 왕복 경로의 역순 또는 대칭 루트로 출발지에 돌아오는 반면, 일주 여행도 같은 출발지로 돌아오지만 귀국 구간에서 다른 중간 도시 또는 다른 루트를 사용하여 단순히 왕복 경로를 역순으로 거슬러 가지 않는다.",
+          "targetId": "circle-trip"
+        },
+        {
+          "targetTerm": "Open Jaw",
+          "explanation": "A round trip departs from and returns to the same city by a matched routing; an open jaw has a surface sector gap — either the outbound destination differs from the inbound origin, or the inbound destination differs from the outbound origin.",
+          "explanation_ko": "왕복 여행은 대칭 루트로 같은 도시에서 출발하고 돌아오는 반면, 오픈 조는 지상 구간 공백이 있어 왕복 목적지와 귀국 출발지가 다르거나, 귀국 목적지가 출발지와 다르다.",
+          "targetId": "open-jaw"
+        },
+        {
+          "targetTerm": "Fare Construction",
+          "explanation": "A round trip is a journey-type concept (the shape of the itinerary); fare construction is the rule set and calculation method for arriving at the applicable fare for that itinerary, including determining whether RT or HRT bases are used.",
+          "explanation_ko": "왕복 여행은 여정 유형 개념(여정의 형태)이고, 운임 구성은 RT 또는 HRT 기준을 사용할지를 포함하여 해당 여정에 적용할 운임을 산출하는 규칙 집합 및 계산 방법이다.",
+          "targetId": "fare-construction"
+        }
+      ],
+      "sources": [
+        {
+          "name": "IATA Travel Agent Tariff Rules — Journey Types (One-Way, Round Trip, Open Jaw, Circle Trip)",
+          "org": "IATA",
+          "version": "",
+          "section": "Journey Types",
+          "url": "https://www.iata.org/en/publications/manuals/",
+          "tier": "association"
+        },
+        {
+          "name": "ATPCO Fare Filing Rules — Category 6 (Minimum Stay) and Category 7 (Maximum Stay)",
+          "org": "ATPCO",
+          "version": "",
+          "section": "Categories 6 & 7",
+          "url": "https://www.atpco.net/solutions/automated-pricing-and-shopping",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"24\" r=\"4\"/><circle cx=\"36\" cy=\"24\" r=\"4\"/><path d=\"M16 21 32 18\"/><path d=\"M16 27 32 30\"/><polyline points=\"28,14 32,18 28,22\"/><polyline points=\"20,26 16,30 20,34\"/></svg>",
+      "term": "Round Trip",
+      "definition": "A round trip is an IATA fare-construction journey type in which a passenger departs from an origin city, travels to one or more destination cities, and returns to the same origin city via a routing that is the reverse or mirror of the outbound, using a single applicable round-trip (RT) or half round-trip (HRT) fare. It is one of the four principal journey types defined in IATA tariff rules alongside one-way, open jaw, and circle trip.",
+      "lastReviewed": "2026-10-01"
     },
     {
       "id": "routing",
