@@ -2,8 +2,8 @@
   "meta": {
     "name": "Travel Wiki",
     "tagline": "여행 산업 용어 백과사전",
-    "generatedAt": "2026-10-01",
-    "entryCount": 812,
+    "generatedAt": "2026-10-02",
+    "entryCount": 818,
     "categoryCount": 20,
     "verticalCount": 6
   },
@@ -11605,6 +11605,85 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "car-hire-excess-insurance",
+      "vertical": "common",
+      "category": "insurance",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "렌터카 초과 보험(Car Hire Excess Insurance)",
+      "definition_ko": "렌터카 초과 보험(Car Hire Excess Insurance)은 렌터카 CDW 또는 LDW 보험으로 손상·도난 청구를 할 때 여행자가 직접 부담해야 하는 초과 공제액(excess/deductible)을 보상하는 제3자 보험 상품이다. 렌터카 카운터에서 판매하는 면제 상품(excess waiver)과 무관하게 전문 브로커나 여행 보험사가 별도로 판매하며, 통상 렌터카 회사의 면제 상품보다 훨씬 저렴하고 하나의 여행 또는 연간 보험 기간 중 복수의 렌터카에 적용될 수 있다.",
+      "longDef": "When a traveler rents a car, the standard CDW/LDW reduces or eliminates liability for vehicle damage but almost always retains an excess (a first-loss amount, typically £1,000–£3,000 in Europe). The rental company sells an excess waiver at the counter that eliminates this excess, but counter prices are high (£10–£25/day is common). Car hire excess insurance — sold in advance online by specialists such as iCarhireinsurance, RentalCover, Questor Insurance, and many travel-insurance packagers — steps in to pay that excess after the traveler has paid it and been reimbursed by the rental company on its own terms. Because the product is activated after the rental company settles, it does not change the rental agreement; the traveler still pays the excess to the rental company and then claims it back from the insurer. Annual multi-trip policies covering unlimited rentals are widely available and especially cost-effective for frequent travelers. In the UK this product is regulated by the Financial Conduct Authority (FCA).",
+      "longDef_ko": "여행자가 렌터카를 이용할 때 표준 CDW/LDW는 차량 손상 책임을 줄이거나 없애지만, 거의 모든 경우 초과 공제액(유럽 기준 보통 £1,000~£3,000)을 남겨 둔다. 렌터카 회사는 카운터에서 이 초과분을 없애는 면제 상품을 판매하지만 카운터 가격이 높다(하루 £10~£25가 일반적). 렌터카 초과 보험은 iCarhireinsurance, RentalCover, Questor Insurance, 많은 여행보험 패키저 등의 전문 업체가 사전에 온라인으로 판매하며, 여행자가 렌터카 회사에 초과분을 지불한 후 보험사에 청구하는 방식이다. 이 상품은 렌트 계약을 변경하지 않으며, 여행자는 렌터카 회사에 초과분을 지불하고 보험사로부터 환급 받는다. 무제한 렌트에 적용되는 연간 다중 여행 정책도 폭넓게 제공되어 자주 여행하는 사람에게 특히 경제적이다. 영국에서는 이 상품이 FCA(금융행위감독청)의 규제를 받는다.",
+      "aliases": [
+        "Rental Car Excess Insurance",
+        "Car Rental Excess Insurance",
+        "CDW Excess Insurance"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Excess",
+          "targetId": "excess"
+        },
+        {
+          "type": "contrasts",
+          "targetTerm": "Excess Waiver",
+          "targetId": "excess-waiver"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Collision Damage Waiver",
+          "targetId": "collision-damage-waiver"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Loss Damage Waiver",
+          "targetId": "loss-damage-waiver"
+        },
+        {
+          "type": "child",
+          "targetTerm": "Comprehensive Travel Insurance",
+          "targetId": "comprehensive-travel-insurance"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Excess Waiver",
+          "explanation": "An excess waiver is a product sold by the car rental company at the counter that eliminates the excess on its own CDW/LDW policy; car hire excess insurance is a third-party insurance product purchased independently that reimburses the excess after the traveler has paid it. The waiver changes the rental agreement; the insurance does not.",
+          "explanation_ko": "초과 면제(Excess Waiver)는 렌터카 회사가 카운터에서 판매하는 상품으로 자사 CDW/LDW의 초과분을 없애고, 렌터카 초과 보험은 여행자가 초과분을 지불한 후 이를 보상하는 독립적으로 구매하는 제3자 보험 상품이다. 면제는 렌트 계약을 변경하지만 보험은 그렇지 않다.",
+          "targetId": "excess-waiver"
+        },
+        {
+          "targetTerm": "Collision Damage Waiver",
+          "explanation": "CDW is the primary damage product on the rental contract that reduces the traveler's liability for vehicle damage (but retains an excess); car hire excess insurance is a supplementary third-party product that covers that retained excess.",
+          "explanation_ko": "CDW는 렌트 계약의 기본 손해 상품으로 차량 손상에 대한 여행자 책임을 줄이지만(초과분은 남김) 렌터카 초과 보험은 그 남은 초과분을 보장하는 보조적 제3자 상품이다.",
+          "targetId": "collision-damage-waiver"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Car Hire Excess Insurance — What Is It?",
+          "org": "iCarhireinsurance (RAC partner)",
+          "version": "",
+          "section": "",
+          "url": "https://rac.icarhireinsurance.com/insurance-information-centre/excess-insurance",
+          "tier": "secondary"
+        },
+        {
+          "name": "How to Insure a Rental Car Without Paying Over the Odds",
+          "org": "WeCovr (FCA-authorised broker)",
+          "version": "",
+          "section": "",
+          "url": "https://wecovr.com/guides/how-to-insure-a-rental-car-without-paying-over-the-odds/",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 30h32\"/><path d=\"M11 30l3-10h20l3 10\"/><circle cx=\"16\" cy=\"33\" r=\"3\"/><circle cx=\"32\" cy=\"33\" r=\"3\"/><path d=\"M32 17l4 4-4 4\"/><path d=\"M28 21h8\"/><path d=\"M36 11a8 8 0 0 1 0 16\"/></svg>",
+      "term": "Car Hire Excess Insurance",
+      "definition": "Car hire excess insurance is a third-party insurance product that reimburses the excess (deductible) a traveler would otherwise pay out of pocket when making a damage or theft claim under a rental car CDW or LDW policy. Sold by specialist brokers and travel insurers independently of the rental counter, it is typically far cheaper than the excess-waiver product offered by the car hire company and can cover a policyholder across multiple rentals during a trip or annual policy period.",
+      "lastReviewed": "2026-10-02"
+    },
+    {
       "id": "car-sharing",
       "vertical": "ground",
       "category": "car",
@@ -17464,6 +17543,90 @@
       "term": "Curtailment",
       "definition": "Curtailment is a travel insurance benefit that reimburses a policyholder for the unused, non-refundable portion of a prepaid trip plus any additional transport costs incurred to return home earlier than planned, when the early return is caused by a covered emergency such as the serious illness or death of the insured or a close relative, a home emergency, or another listed peril. It is the predominant UK and EU term for what North American policies call trip interruption.",
       "lastReviewed": "2026-08-13"
+    },
+    {
+      "id": "cuss",
+      "vertical": "air",
+      "category": "air-ops",
+      "conceptType": "standard",
+      "status": "active",
+      "abbreviation": "CUSS",
+      "term_ko": "공용 셀프서비스(CUSS)",
+      "definition_ko": "CUSS(Common-Use Self-Service)는 공항의 공용 셀프서비스 키오스크를 여러 항공사가 함께 사용할 수 있도록 규정한 IATA 표준(RP 1706c)이다. 해당 항공사의 승객은 항공사 전용 하드웨어 없이 체크인, 좌석 선택, 탑승권 출력 등의 셀프서비스를 이용할 수 있다. 직원 전용 탑승구·카운터 장비 공유를 규정하는 CUTE와 달리, CUSS는 키오스크·자동수하물위탁(bag-drop) 장비 등 승객 대면 셀프서비스 계층을 다룬다.",
+      "longDef": "Under CUSS, an airport authority or ground handler installs shared kiosk hardware running CUSS-compliant software; each participating airline contributes its own application module, which the kiosk loads when a passenger identifies their carrier. This model reduces airline capex (no per-carrier dedicated hardware), increases airport floor-space efficiency, and provides a consistent self-service experience. The companion standard CUPPS (IATA RP 1797) governs common-use staff workstations at check-in counters and gates. CUSS 2.0, published around 2018, updated the technical specifications to support biometric boarding and off-airport kiosk deployments (hotels, city check-in counters). The standard is maintained by IATA in coordination with ACI (Airports Council International) and NCI (NARITA Common IT Infrastructure).",
+      "longDef_ko": "CUSS에서는 공항 당국 또는 지상취급사가 CUSS 호환 소프트웨어를 실행하는 공용 키오스크 하드웨어를 설치하고, 각 참여 항공사는 자체 애플리케이션 모듈을 제공하여 승객이 항공사를 확인하면 키오스크가 해당 모듈을 로드한다. 이 방식은 항공사 자본비용(항공사 전용 하드웨어 불필요)을 줄이고 공항 공간 효율을 높이며 일관된 셀프서비스 경험을 제공한다. 직원용 체크인 카운터와 게이트의 공용 장비를 규정하는 동반 표준은 CUPPS(IATA RP 1797)이다. 2018년 전후로 발표된 CUSS 2.0은 생체인식 탑승 및 공항 외부 키오스크(호텔, 시내 체크인 카운터) 배포를 지원하도록 기술 사양을 갱신했다.",
+      "standardBody": "IATA",
+      "aliases": [
+        "Common-Use Self-Service",
+        "CUSS Kiosk",
+        "Common Use Self Service"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "CUTE",
+          "targetId": "cute"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Boarding Pass",
+          "targetId": "boarding-pass"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Departure Control System (DCS)",
+          "targetId": "departure-control-system-dcs"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Biometric Passport",
+          "targetId": "biometric-passport"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "CUTE",
+          "explanation": "CUTE (Common Use Terminal Equipment) governs shared staff workstations at check-in counters and boarding gates, used by airline agents; CUSS governs shared self-service kiosks used directly by passengers without staff assistance.",
+          "explanation_ko": "CUTE는 항공사 직원이 사용하는 체크인 카운터와 탑승 게이트의 공용 직원 워크스테이션을 규정하고, CUSS는 직원 도움 없이 승객이 직접 사용하는 공용 셀프서비스 키오스크를 규정한다.",
+          "targetId": "cute"
+        },
+        {
+          "targetTerm": "Departure Control System (DCS)",
+          "explanation": "The DCS is the airline back-end system managing check-in, seat assignments, and boarding; CUSS is the front-end standard that defines how shared kiosks present the DCS-connected airline applications to passengers.",
+          "explanation_ko": "DCS는 체크인, 좌석 배정, 탑승을 관리하는 항공사 백엔드 시스템이고, CUSS는 DCS에 연결된 항공사 애플리케이션을 승객에게 제공하는 공용 키오스크의 프런트엔드 표준이다.",
+          "targetId": "departure-control-system-dcs"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Common-Use Self-Service (CUSS) Standard",
+          "org": "IATA",
+          "version": "",
+          "section": "",
+          "url": "https://www.iata.org/en/store/publications/manuals-standards-and-regulations/common-use-self-service-cuss__cuss/",
+          "tier": "standard-body"
+        },
+        {
+          "name": "Common Use Programs Overview",
+          "org": "IATA",
+          "version": "",
+          "section": "",
+          "url": "https://www.iata.org/en/programs/passenger/common-use/",
+          "tier": "standard-body"
+        },
+        {
+          "name": "CUSS and CUPPS Explained",
+          "org": "KMA Global",
+          "version": "",
+          "section": "",
+          "url": "https://kma.global/cuss-cupps/",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"14\" y=\"6\" width=\"20\" height=\"32\" rx=\"2\"/><line x1=\"19\" y1=\"12\" x2=\"29\" y2=\"12\"/><line x1=\"19\" y1=\"17\" x2=\"29\" y2=\"17\"/><line x1=\"19\" y1=\"22\" x2=\"25\" y2=\"22\"/><rect x=\"18\" y=\"27\" width=\"12\" height=\"5\" rx=\"1\"/><line x1=\"24\" y1=\"38\" x2=\"24\" y2=\"42\"/><line x1=\"18\" y1=\"42\" x2=\"30\" y2=\"42\"/></svg>",
+      "term": "CUSS",
+      "definition": "Common-Use Self-Service (CUSS) is an IATA standard (RP 1706c) that allows a shared self-service kiosk at an airport to be used by multiple participating airlines, enabling passengers of those airlines to check in, select seats, or print boarding passes without airline-dedicated hardware. Unlike CUTE (which governs shared staff workstations), CUSS governs the passenger-facing self-service layer at kiosks and bag-drop units.",
+      "lastReviewed": "2026-10-02"
     },
     {
       "id": "customer-data-platform",
@@ -40995,6 +41158,85 @@
       "lastReviewed": "2026-06-18"
     },
     {
+      "id": "missed-departure",
+      "vertical": "common",
+      "category": "insurance",
+      "conceptType": "standard-term",
+      "status": "active",
+      "term_ko": "출발 누락 보장(Missed Departure)",
+      "definition_ko": "Missed Departure(출발 누락)는 대중교통 고장, 본인 차량 고장, 심각한 교통 정체 등 약관이 보장하는 원인으로 인해 여행자가 예정된 출발지(공항, 페리·크루즈 터미널, 기차역)에 제때 도착하지 못해 예약한 교통편을 놓쳤을 때 보험금을 지급하는 여행 보험 보장 위험이다. 출발 전 여행하지 않기로 결정하는 경우를 다루는 여행 취소(Trip Cancellation), 그리고 여행 중도에 연결 서비스에 탑승하지 못하는 경우를 다루는 Missed Connection과 구분된다.",
+      "longDef": "Missed departure typically covers the cost of additional transport or accommodation needed to catch up with the original trip at a later point (e.g., flying to a cruise ship's next port of call or taking a later train to the holiday destination). Covered reasons vary by policy but commonly include: the public transport vehicle the traveler was using to reach the departure point being cancelled or significantly delayed; the traveler's own vehicle suffering a breakdown; an accident on the route causing severe traffic delay; and sometimes a preceding connecting flight arriving late. Not covered reasons usually include: the traveler simply setting off too late, foreseeable disruption (e.g., a known industrial strike), or disruption affecting the booked transport itself (which falls under separate delay or cancellation cover). The UK Financial Ombudsman Service handles a significant number of missed departure disputes centred on whether causation and evidence were sufficient.",
+      "longDef_ko": "Missed Departure는 통상 원래 여정의 다음 지점(예: 크루즈 선박의 다음 기항지로의 비행 또는 이후 기차편으로 휴양지 도달)으로 따라가는 데 필요한 추가 교통비 또는 숙박비를 보장한다. 보장 사유는 약관마다 다르지만 일반적으로 다음을 포함한다: 출발지로 이동하던 대중교통 취소 또는 심각한 지연, 본인 차량 고장, 노선상의 사고로 인한 심각한 교통 정체, 경우에 따라 앞서 이용한 연결편의 지연. 보장되지 않는 사유로는 여행자가 너무 늦게 출발한 경우, 예측 가능한 혼란(예: 알려진 파업) 또는 예약된 교통편 자체의 혼란(별도의 지연 또는 취소 보장이 적용)이 있다. 영국 금융옵서비스에서는 인과 관계 및 증거 충분성과 관련된 missed departure 분쟁을 상당 수 처리한다.",
+      "aliases": [
+        "Missed Departure Cover",
+        "Late Departure Cover"
+      ],
+      "relationships": [
+        {
+          "type": "contrasts",
+          "targetTerm": "Trip Cancellation",
+          "targetId": "trip-cancellation"
+        },
+        {
+          "type": "contrasts",
+          "targetTerm": "Missed Connection",
+          "targetId": "missed-connection"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Trip Delay",
+          "targetId": "trip-delay"
+        },
+        {
+          "type": "child",
+          "targetTerm": "Comprehensive Travel Insurance",
+          "targetId": "comprehensive-travel-insurance"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Trip Cancellation",
+          "explanation": "Trip cancellation pays when the traveler decides (or is forced) not to travel at all, before departure, for a covered reason; missed departure pays when the traveler intends to travel but fails to reach the departure point in time due to a covered cause en route.",
+          "explanation_ko": "여행 취소는 여행자가 출발 전에 보장 사유로 아예 여행을 하지 않기로 결정하거나 강요받을 때 지급되고, missed departure는 여행자가 여행하려는 의사가 있었으나 이동 중 보장 사유로 출발지에 제때 도착하지 못할 때 지급된다.",
+          "targetId": "trip-cancellation"
+        },
+        {
+          "targetTerm": "Missed Connection",
+          "explanation": "A missed connection arises mid-journey when a traveler fails to board a connecting service because a prior leg ran late; missed departure arises at the very start of the journey when the traveler cannot reach the first departure point in time.",
+          "explanation_ko": "Missed Connection은 여행 도중 앞선 구간의 지연으로 연결편에 탑승하지 못할 때 발생하고, missed departure는 여행의 출발 시점에 여행자가 첫 번째 출발지에 제때 도달하지 못할 때 발생한다.",
+          "targetId": "missed-connection"
+        },
+        {
+          "targetTerm": "Trip Delay",
+          "explanation": "Trip delay cover usually responds to a delayed departure of the booked transport itself (the flight or train is late); missed departure responds to the traveler failing to arrive at the point of departure on time regardless of whether the transport departs on time.",
+          "explanation_ko": "Trip Delay 보장은 보통 예약된 교통편 자체의 출발 지연(항공편이나 기차가 지연)에 대응하고, missed departure는 교통편의 정시 출발 여부와 무관하게 여행자가 출발 지점에 제때 도달하지 못한 경우에 대응한다.",
+          "targetId": "trip-delay"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Missed departure, delay and abandonment — guidance for businesses",
+          "org": "UK Financial Ombudsman Service",
+          "version": "",
+          "section": "",
+          "url": "https://www.financial-ombudsman.org.uk/businesses/complaints-deal/insurance/travel-insurance/missed-departure",
+          "tier": "regulator-guidance"
+        },
+        {
+          "name": "Missed or Delayed Departures — Everything You Need to Know",
+          "org": "Allianz Assistance UK",
+          "version": "",
+          "section": "",
+          "url": "https://www.allianz-assistance.co.uk/travel-insurance/travel-advice-and-news/missed-or-delayed-departures-everything-you-need-to-know.html",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"22\" r=\"12\"/><line x1=\"24\" y1=\"22\" x2=\"24\" y2=\"14\"/><line x1=\"24\" y1=\"22\" x2=\"30\" y2=\"22\"/><path d=\"M36 36l-4-4\"/><path d=\"M40 40l-4-4\"/><line x1=\"32\" y1=\"36\" x2=\"40\" y2=\"36\"/><line x1=\"36\" y1=\"32\" x2=\"36\" y2=\"40\"/></svg>",
+      "term": "Missed Departure",
+      "definition": "Missed departure is a travel insurance peril that pays a benefit when a traveler fails to reach the scheduled departure point — airport, ferry or cruise terminal, or rail station — in time to board the booked transport due to a covered cause such as public transport failure, the traveler's own vehicle breaking down, or severe traffic disruption. It is distinct from trip cancellation (which covers a pre-departure decision not to travel) and from missed connection (which covers failing to board a connecting service mid-journey).",
+      "lastReviewed": "2026-10-02"
+    },
+    {
       "id": "mita",
       "vertical": "air",
       "category": "air-partner",
@@ -53123,6 +53365,94 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "rate-loading",
+      "vertical": "lodging",
+      "category": "hotel-dist",
+      "conceptType": "process",
+      "status": "active",
+      "term_ko": "요금 로딩(Rate Loading)",
+      "definition_ko": "요금 로딩(Rate Loading)은 호텔의 계약 요금 또는 공개 요금을 CRS, PMS, GDS, OTA 익스트라넷 등 유통 시스템에 입력·설정·게시하는 운영 프로세스다. 요금 코드, 요금 플랜, 객실 유형별 가격, 제한 조건, 프로모션 등이 포함된다. 정확하고 시의적절한 요금 로딩은 모든 예약 채널에 올바른 요금과 가용성이 나타나기 위한 전제 조건이며, 요금 로딩 오류는 요금 불일치(rate disparity)와 수익 유출(revenue leakage)의 주요 원인이다.",
+      "longDef": "Rate loading typically covers: (1) Base rates — entering room-type pricing into the PMS/CRS against rate plans (e.g., BAR, corporate, wholesale, package); (2) GDS loading — submitting rate codes and restrictions to the GDS via the hotel switch or CRS connection, often following GDS-specific formats; (3) OTA extranet configuration — setting up rates, photos, room descriptions and policies on OTA portals (Booking.com, Expedia, etc.); (4) Restriction loading — applying minimum-length-of-stay, closed-to-arrival, and stop-sell rules; (5) Rate auditing — verifying that loaded rates display correctly across channels. Hotels employ dedicated rate loaders or distribution coordinators for this task; large hotel chains maintain centralized rate-loading teams. HEDNA (Hotel Electronic Distribution Network Association) has published best-practice guidelines for rate loading efficiency and accuracy. Common errors include: incorrect currency, wrong date ranges, missing room types, and parity violations.",
+      "longDef_ko": "요금 로딩은 일반적으로 다음을 포함한다: (1) 기본 요금 — PMS/CRS에 요금 플랜(예: BAR, 기업, 도매, 패키지)에 따른 객실 유형별 가격 입력; (2) GDS 로딩 — 호텔 스위치 또는 CRS 연결을 통해 GDS 특정 형식으로 요금 코드와 제한 조건 제출; (3) OTA 익스트라넷 설정 — OTA 포털(Booking.com, Expedia 등)에서 요금, 사진, 객실 설명, 정책 설정; (4) 제한 조건 로딩 — 최소 연박 수, 도착 마감, 판매 중지 규칙 적용; (5) 요금 감사 — 로딩된 요금이 채널별로 올바르게 표시되는지 검증. 호텔은 이 작업을 위해 전담 요금 로더 또는 유통 코디네이터를 고용하며, 대형 호텔 체인은 중앙 집중식 요금 로딩 팀을 운영한다. HEDNA는 요금 로딩 효율성과 정확성을 위한 모범 사례 지침을 발표했다. 일반적인 오류로는 잘못된 통화, 잘못된 날짜 범위, 누락된 객실 유형, 요금 동일성 위반이 있다.",
+      "aliases": [
+        "Rate Entry",
+        "Rate Configuration"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Rate Plan",
+          "targetId": "rate-plan"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Rate Code",
+          "targetId": "rate-code"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Channel Management",
+          "targetId": "channel-management"
+        },
+        {
+          "type": "related",
+          "targetTerm": "CRS",
+          "targetId": "crs"
+        },
+        {
+          "type": "related",
+          "targetTerm": "ARI",
+          "targetId": "ari"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Rate Parity",
+          "targetId": "rate-parity"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Rate Leakage",
+          "targetId": "rate-leakage"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Channel Management",
+          "explanation": "Channel management is the ongoing strategic and operational activity of managing rates, availability, and restrictions across distribution channels in real time; rate loading is a specific configuration task — the initial (or updated) entry of rates and rules into those systems before they become live.",
+          "explanation_ko": "채널 관리(Channel Management)는 유통 채널 전반에서 요금, 가용성, 제한 조건을 실시간으로 전략적·운영적으로 관리하는 지속적 활동이고, 요금 로딩은 그 시스템들에 요금과 규칙을 처음(또는 업데이트하여) 입력하는 특정 설정 작업이다.",
+          "targetId": "channel-management"
+        },
+        {
+          "targetTerm": "ARI",
+          "explanation": "ARI (Availability, Rates and Inventory) is the hotel-switch message standard used to transmit rate and availability updates from the CRS to distribution channels; rate loading is the human or automated process of creating and maintaining the source data that generates those ARI messages.",
+          "explanation_ko": "ARI는 CRS에서 유통 채널로 요금과 가용성 업데이트를 전송하는 데 사용되는 호텔 스위치 메시지 표준이고, 요금 로딩은 그 ARI 메시지를 생성하는 원본 데이터를 생성·관리하는 사람 또는 자동화 프로세스이다.",
+          "targetId": "ari"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Rate Loading Instructions — Hotel Distribution Best Practices",
+          "org": "HEDNA (Hotel Electronic Distribution Network Association)",
+          "version": "",
+          "section": "",
+          "url": "https://www.hedna.org",
+          "tier": "association"
+        },
+        {
+          "name": "How Online Hotel Distribution Works",
+          "org": "Lodging Magazine",
+          "version": "",
+          "section": "",
+          "url": "https://lodgingmagazine.com/how-online-hotel-distribution-works/",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"10\" width=\"32\" height=\"8\" rx=\"2\"/><rect x=\"8\" y=\"22\" width=\"32\" height=\"8\" rx=\"2\"/><rect x=\"8\" y=\"34\" width=\"32\" height=\"8\" rx=\"2\"/><circle cx=\"37\" cy=\"14\" r=\"2\" fill=\"currentColor\" stroke=\"none\"/><path d=\"M20 26l4 4 8-8\"/></svg>",
+      "term": "Rate Loading",
+      "definition": "Rate loading is the operational process of entering, configuring, and publishing a hotel's contracted or published rates — including rate codes, rate plans, room-type pricing, restrictions, and promotional offers — into distribution systems such as the CRS, PMS, GDS, and OTA extranets. Accurate and timely rate loading is a prerequisite for the correct rates and availability to appear across all booking channels; errors in rate loading are a primary cause of rate disparity and revenue leakage.",
+      "lastReviewed": "2026-10-02"
+    },
+    {
       "id": "rate-of-exchange",
       "vertical": "air",
       "category": "air-shop",
@@ -64696,6 +65026,85 @@
       "lastReviewed": "2026-07-03"
     },
     {
+      "id": "ticket-designator",
+      "vertical": "air",
+      "category": "air-shop",
+      "conceptType": "standard-term",
+      "status": "active",
+      "term_ko": "티켓 지정자(Ticket Designator)",
+      "definition_ko": "Ticket Designator는 운임 기준 코드(fare basis code) 뒤에 슬래시(/) 구분자 다음에 붙는 1~8자리 코드로, 해당 운임이 허가된 승객 범주 또는 할인 유형을 나타낸다. 항공사는 ATPCO에 운임과 함께 ticket designator를 등록하며, 예약 시스템은 항공권에 운임 기준 코드를 표시할 때 designator를 분리한다. 예를 들어 기업 할인 운임(CD)과 업계 할인 운임(ID)을 구분하는 항공사 정의 인증 신호 역할을 한다.",
+      "longDef": "Airlines register ticket designators in ATPCO Table 173. The designator is appended to the filed fare basis to form the full fare basis that appears on itinerary displays (e.g., YLOWCD for a Y-class low fare with corporate designator CD), but systems typically display only the base fare basis on the ticket itself. Common designator categories include: corporate (CD), industry/staff (ID), press/media (PV), emergency (EM), bereavement (BR), senior/youth (SD/YD), companion (CP), and promotional codes specific to individual carriers. The designator controls who may purchase the fare without requiring a separate booking class — this is important because multiple discount types can share a single booking class (RBD) while remaining separately authorized and auditable. Misuse of a ticket designator (e.g., claiming corporate discount without eligibility) is an audit risk and may result in debit memos from the carrier.",
+      "longDef_ko": "항공사는 ATPCO Table 173에 ticket designator를 등록한다. Designator는 등록된 fare basis에 추가되어 여정 표시에 전체 fare basis(예: YLOWCD — Y클래스 저가 운임 + 기업 designator CD)가 되지만, 시스템은 보통 항공권에 기본 fare basis만 표시한다. 일반적인 designator 범주로는 기업(CD), 업계/직원(ID), 언론/미디어(PV), 응급(EM), 조문(BR), 시니어/청소년(SD/YD), 동반자(CP) 및 항공사별 프로모션 코드가 있다. Designator는 별도의 예약 클래스(RBD) 없이도 구매 자격을 통제하여, 여러 할인 유형이 단일 예약 클래스를 공유하면서도 별도로 인가되고 감사 추적이 가능하다. Ticket designator의 오용(예: 자격 없이 기업 할인 주장)은 감사 위험이 되며 항공사 debit memo로 이어질 수 있다.",
+      "standardBody": "ATPCO",
+      "aliases": [
+        "Fare Designator",
+        "Discount Designator"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Fare Basis Code",
+          "targetId": "fare-basis-code"
+        },
+        {
+          "type": "related",
+          "targetTerm": "RBD",
+          "targetId": "rbd"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Negotiated Fare",
+          "targetId": "negotiated-fare"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Corporate Rate",
+          "targetId": "corporate-rate"
+        },
+        {
+          "type": "parent",
+          "targetTerm": "ATPCO",
+          "targetId": "atpco"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Fare Basis Code",
+          "explanation": "The fare basis code identifies the specific fare (class, booking conditions, etc.); the ticket designator is an authorization suffix appended to that code that restricts who may use the fare. A fare basis code can exist without a designator; a designator cannot exist without a fare basis code.",
+          "explanation_ko": "Fare basis code는 특정 운임(클래스, 예약 조건 등)을 식별하고, ticket designator는 그 코드에 추가된 인증 접미사로 해당 운임을 사용할 수 있는 사람을 제한한다. Fare basis code는 designator 없이 존재할 수 있지만, designator는 fare basis code 없이 존재할 수 없다.",
+          "targetId": "fare-basis-code"
+        },
+        {
+          "targetTerm": "RBD",
+          "explanation": "An RBD (Reservation Booking Designator) is a single-letter class code that drives inventory control and revenue management; a ticket designator is a multi-character authorization suffix that identifies the discount category within one or more RBDs without creating additional booking classes.",
+          "explanation_ko": "RBD는 재고 통제와 수익 관리를 구동하는 단일 문자 클래스 코드이고, ticket designator는 추가 예약 클래스 없이 하나 이상의 RBD 내 할인 범주를 식별하는 다중 문자 인증 접미사이다.",
+          "targetId": "rbd"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Glossary — Ticket Designator",
+          "org": "ATPCO",
+          "version": "",
+          "section": "",
+          "url": "https://www.atpco.net/glossary",
+          "tier": "standard-body"
+        },
+        {
+          "name": "Fare Basis Codes Reference",
+          "org": "Travelport (uAPI documentation)",
+          "version": "",
+          "section": "",
+          "url": "https://support.travelport.com/webhelp/uapi/Content/Air/Shared_Air_Topics/Fare_Basis_Codes.htm",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"16\" width=\"36\" height=\"16\" rx=\"3\"/><circle cx=\"14\" cy=\"24\" r=\"3\"/><circle cx=\"34\" cy=\"24\" r=\"3\"/><line x1=\"20\" y1=\"21\" x2=\"28\" y2=\"21\"/><line x1=\"20\" y1=\"27\" x2=\"28\" y2=\"27\"/><line x1=\"30\" y1=\"9\" x2=\"36\" y2=\"9\"/><line x1=\"33\" y1=\"6\" x2=\"33\" y2=\"12\"/></svg>",
+      "term": "Ticket Designator",
+      "definition": "A Ticket Designator is a code (1–8 characters) appended to a fare basis code after a slash delimiter to indicate the passenger category or discount type for which the fare is authorized. Airlines file ticket designators in ATPCO alongside their fares, and reservations systems strip the designator from the fare basis when displaying the basis on the ticket; they serve as the carrier-defined authorization signal distinguishing, for example, a corporate-discount fare (CD) from an industry-discount fare (ID).",
+      "lastReviewed": "2026-10-02"
+    },
+    {
       "id": "ticket-number",
       "vertical": "common",
       "category": "codes",
@@ -70304,6 +70713,93 @@
       "term": "Voluntary Refunds (ATPCO Category 33)",
       "definition": "ATPCO Fare Rule Category 33 is the machine-readable rule set defining the conditions and applicable charges under which voluntary refunds of a ticket are permitted. It powers GDS and carrier automated refund products by letting systems compute refundable amounts and penalties without manual handling.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "voluntourism",
+      "vertical": "tours",
+      "category": "tour-product",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "자원봉사 관광(볼런투어리즘)",
+      "definition_ko": "볼런투어리즘(Voluntourism)은 여행자가 목적지로의 여가 여행과 NGO·사회적 기업 또는 전문 여행사가 주선하는 자원봉사 활동(자연보전, 지역사회 건설, 교육, 돌봄 등)을 결합하는 관광 형태다. 참가자는 숙박, 현지 물류, 주관 프로젝트에 대한 기여금을 포함하는 프로그램 비용을 지불한다. 볼런투어리즘은 지속가능 관광과 체험 여행의 교차점에 위치하며, UNWTO는 이를 상당한 성장세를 보이는 틈새 관광 세그먼트로 인정한다.",
+      "longDef": "Voluntourism programs range from short stays of one to two weeks to multi-month placements, and span sectors including wildlife conservation, habitat restoration, orphanage support, medical assistance, disaster relief, and language teaching. The industry is served by specialist organizations such as Projects Abroad, Earthwatch Institute, i-to-i, Global Vision International, and World Wide Opportunities on Organic Farms (WWOOF). Critics of voluntourism note risks of 'voluntourist dependency', displacement of local workers, and projects designed to meet traveler preferences rather than genuine community needs. Best-practice guidelines from organizations such as Learning Service and the GSTC emphasize long-term community partnerships, skills matching, and transparent fee allocation. Voluntourism is a sub-segment of responsible tourism and is increasingly framed within the broader discourse of regenerative travel. The term was coined in 1998 by shuttle astronaut and educator Rick Husband and later popularized by the voluntourism.org resource site.",
+      "longDef_ko": "볼런투어리즘 프로그램은 1~2주의 단기 체류부터 수개월에 걸친 배치까지 다양하며, 야생동물 보전, 서식지 복원, 고아원 지원, 의료 지원, 재난 구호, 언어 교육 등 다양한 분야에 걸쳐 있다. Projects Abroad, Earthwatch Institute, i-to-i, Global Vision International, WWOOF 등 전문 기관이 이 분야를 지원한다. 비판자들은 \"볼런투어리스트 의존성\", 지역 노동자 대체, 진정한 지역사회 필요보다 여행자 선호에 맞춘 프로젝트 설계 등의 위험을 지적한다. Learning Service와 GSTC 등의 모범 사례 지침은 장기 지역사회 파트너십, 역량 매칭, 투명한 수수료 배분을 강조한다. 볼런투어리즘은 책임 관광의 하위 세그먼트이며, 점점 더 재생 여행의 광범위한 담론 안에서 논의되고 있다.",
+      "aliases": [
+        "Volunteer Tourism",
+        "Volunteer Travel",
+        "Service Tourism"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Sustainable Tourism",
+          "targetId": "sustainable-tourism"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Ecotourism",
+          "targetId": "ecotourism"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Regenerative Tourism",
+          "targetId": "regenerative-tourism"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Cultural Tourism",
+          "targetId": "cultural-tourism"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Adventure Tourism",
+          "targetId": "adventure-tourism"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Ecotourism",
+          "explanation": "Ecotourism focuses on experiencing and conserving natural environments with minimal impact; voluntourism involves active contribution of labor or skills to a project (environmental or social), making the volunteer work central rather than incidental to the trip.",
+          "explanation_ko": "에코투어리즘은 최소한의 영향으로 자연 환경을 체험하고 보전하는 데 중점을 두고, 볼런투어리즘은 환경적 또는 사회적 프로젝트에 노동이나 기술을 적극적으로 기여하여 자원봉사 활동이 여행의 부수적 요소가 아닌 핵심이 된다.",
+          "targetId": "ecotourism"
+        },
+        {
+          "targetTerm": "Regenerative Tourism",
+          "explanation": "Regenerative tourism is a broad philosophy of travel that leaves destinations better than found, encompassing choices by any traveler; voluntourism is a specific form of travel product organized around structured volunteer placements, usually via a facilitating organization.",
+          "explanation_ko": "재생 관광은 목적지를 방문 전보다 더 나은 상태로 남기는 광범위한 여행 철학으로 모든 여행자의 선택을 포함하고, 볼런투어리즘은 통상 촉진 기관을 통해 구조화된 자원봉사 배치를 중심으로 조직된 특정 여행 상품 형태다.",
+          "targetId": "regenerative-tourism"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Voluntourism — Tourism Types and Niche Markets",
+          "org": "UNWTO (World Tourism Organization)",
+          "version": "",
+          "section": "",
+          "url": "https://www.unwto.org/tourism-types",
+          "tier": "association"
+        },
+        {
+          "name": "Voluntourism Definition",
+          "org": "Merriam-Webster",
+          "version": "",
+          "section": "",
+          "url": "https://www.merriam-webster.com/dictionary/voluntourisms",
+          "tier": "encyclopedia"
+        },
+        {
+          "name": "Voluntourism — Responsible Travel Guidance",
+          "org": "Learning Service",
+          "version": "",
+          "section": "",
+          "url": "https://learningservice.info",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"16\"/><path d=\"M15 24a9 9 0 0 0 9 9\"/><path d=\"M24 15a9 9 0 0 1 9 9\"/><path d=\"M20 20l8 8\"/><path d=\"M28 20l-8 8\"/><circle cx=\"24\" cy=\"12\" r=\"3\" fill=\"currentColor\" stroke=\"none\"/></svg>",
+      "term": "Voluntourism",
+      "definition": "Voluntourism is a form of tourism in which travelers combine leisure travel to a destination with organized volunteer work — such as conservation, community construction, education, or care — typically facilitated by an NGO, social enterprise, or specialist tour operator. Participants pay program fees that cover accommodation, in-country logistics, and a contribution to the host project. Voluntourism sits at the intersection of sustainable tourism and experiential travel, and is recognized by the UNWTO as a niche tourism segment with significant growth.",
+      "lastReviewed": "2026-10-02"
     },
     {
       "id": "voucher",
