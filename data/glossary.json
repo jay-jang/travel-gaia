@@ -2,8 +2,8 @@
   "meta": {
     "name": "Travel Wiki",
     "tagline": "여행 산업 용어 백과사전",
-    "generatedAt": "2026-10-02",
-    "entryCount": 818,
+    "generatedAt": "2026-10-03",
+    "entryCount": 824,
     "categoryCount": 20,
     "verticalCount": 6
   },
@@ -369,6 +369,77 @@
       "term": "3-D Secure",
       "definition": "3-D Secure is a messaging protocol that adds an authentication layer to card-not-present (online) card payments, enabling the issuer to verify the cardholder before authorization. The current generation, EMV 3-D Secure (3DS2), is managed by EMVCo and underpins liability shift and Strong Customer Authentication (SCA) compliance.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "a-cdm",
+      "vertical": "air",
+      "category": "air-ops",
+      "conceptType": "standard",
+      "status": "active",
+      "abbreviation": "A-CDM",
+      "term_ko": "공항 협력 의사 결정(A-CDM)",
+      "definition_ko": "A-CDM(Airport Collaborative Decision Making, 공항 협력 의사 결정)은 공항 운영자·항공사·지상 조업사·항공 항행 서비스 제공자·네트워크 매니저가 실시간 데이터를 공유하여 출발 시간 정확도를 높이고, 지상 이동 시간을 줄이며, 공항 용량 활용을 최적화하는 EUROCONTROL의 운영 개념이다. 개별 양자 간 통신을 공통 마일스톤 접근법으로 대체하여 각 항공기의 착륙부터 이륙까지 전 과정을 추적한다.",
+      "longDef": "The A-CDM Milestone Approach defines a sequence of about 16 key events (milestones) in each aircraft's turnaround cycle — from actual in-blocks through pushback — giving all stakeholders a shared, updated view of each flight's departure readiness. A central mechanism is the Target Off-Block Time (TOBT), which the airline or ground handler updates in real time and which allows the network to sequence departures accurately. Key metrics improved by A-CDM include Target Start-Up Approval Time (TSAT), pre-departure sequencing, and Average Departure Delay. The EUROCONTROL Specification for A-CDM (Edition 1.0, January 2025) sets the mandatory and recommended requirements for airports wishing to achieve A-CDM Status. As of 2025, over 34 European airports are fully A-CDM compliant, enabling EUROCONTROL's Network Manager to issue accurate departure sequences that reduce ATFM delays across the European network.",
+      "longDef_ko": "A-CDM 마일스톤 접근법은 각 항공기의 지상 처리 주기에서 약 16개의 주요 이벤트(마일스톤)를 정의하며, 실제 블록 인(actual in-blocks)부터 푸시백까지 모든 이해관계자에게 각 항공편의 출발 준비 상태에 대한 공유된 최신 뷰를 제공한다. 핵심 메커니즘은 항공사 또는 지상 조업사가 실시간으로 업데이트하는 목표 블록아웃 시간(TOBT)으로, 네트워크가 출발을 정확하게 순서화할 수 있게 한다. A-CDM으로 개선되는 주요 지표에는 목표 시동 승인 시간(TSAT), 출발 전 순서화, 평균 출발 지연 등이 포함된다. EUROCONTROL A-CDM 사양(2025년 1월 1.0판)은 A-CDM 지위를 달성하려는 공항에 대한 필수 및 권장 요건을 규정한다. 2025년 현재 34개 이상의 유럽 공항이 A-CDM을 완전히 준수하여 EUROCONTROL 네트워크 매니저가 유럽 네트워크 전반의 ATFM 지연을 줄이는 정확한 출발 순서를 발행할 수 있다.",
+      "standardBody": "EUROCONTROL",
+      "aliases": [
+        "Airport Collaborative Decision Making",
+        "CDM",
+        "Airport CDM"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Aircraft Turnaround",
+          "targetId": "aircraft-turnaround"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Departure Control System (DCS)",
+          "targetId": "departure-control-system-dcs"
+        },
+        {
+          "type": "related",
+          "targetTerm": "On-Time Performance (OTP)",
+          "targetId": "on-time-performance"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Departure Control System (DCS)",
+          "explanation": "A DCS is the airline or airport system that manages passenger check-in, baggage acceptance, seat assignment, boarding, and weight-and-balance — it handles the passenger and baggage lifecycle. A-CDM is a cross-stakeholder data-sharing framework that coordinates the aircraft turnaround process to improve departure punctuality; A-CDM consumes DCS data (e.g., boarding status) as input but focuses on sequencing, slot utilisation, and ATFM coordination, which are outside the DCS scope.",
+          "explanation_ko": "DCS는 여객 체크인, 수하물 접수, 좌석 배정, 탑승, 중량 및 균형을 관리하는 항공사 또는 공항 시스템으로 승객·수하물 생애주기를 처리한다. A-CDM은 출발 정시성을 향상시키기 위해 항공기 지상 처리 과정을 조율하는 이해관계자 간 데이터 공유 체계로, DCS 데이터(예: 탑승 상태)를 입력값으로 활용하지만 DCS 범위 밖의 순서화, 슬롯 활용, ATFM 조정에 집중한다.",
+          "targetId": "departure-control-system-dcs"
+        },
+        {
+          "targetTerm": "Aircraft Turnaround",
+          "explanation": "Aircraft Turnaround is the total ground time from landing to next departure for a single aircraft; A-CDM is the collaborative framework that manages and shares data about turnaround milestones across all airport stakeholders in real time to improve the predictability and efficiency of that turnaround process.",
+          "explanation_ko": "항공기 지상 처리(Aircraft Turnaround)는 착륙부터 다음 출발까지 단일 항공기의 총 지상 체류 시간이고, A-CDM은 그 지상 처리 과정의 예측 가능성과 효율성을 향상시키기 위해 모든 공항 이해관계자에게 실시간으로 지상 처리 마일스톤 데이터를 관리·공유하는 협력 체계이다.",
+          "targetId": "aircraft-turnaround"
+        }
+      ],
+      "sources": [
+        {
+          "name": "EUROCONTROL Specification for Airport Collaborative Decision Making, Edition 1.0",
+          "org": "EUROCONTROL",
+          "version": "Edition 1.0 (January 2025)",
+          "section": "",
+          "url": "https://www.eurocontrol.int/publication/eurocontrol-specification-airport-collaborative-decision-making-cdm",
+          "tier": "standard-body"
+        },
+        {
+          "name": "Airport Collaborative Decision Making concept page",
+          "org": "EUROCONTROL",
+          "version": "",
+          "section": "",
+          "url": "https://www.eurocontrol.int/concept/airport-collaborative-decision-making",
+          "tier": "standard-body"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"16\"/><path d=\"M12 24h24M24 12l4 6h-8l4-6z\"/><circle cx=\"24\" cy=\"24\" r=\"3\" fill=\"currentColor\" stroke=\"none\"/><path d=\"M19 30h10M17 34h14\"/></svg>",
+      "term": "A-CDM (Airport Collaborative Decision Making)",
+      "definition": "A EUROCONTROL operational concept in which the airport operator, airlines, ground handlers, air navigation service provider, and Network Manager share real-time data to improve departure-time accuracy, reduce taxi times, and optimise the use of airport capacity. A-CDM replaces fragmented bilateral communications with a common Milestone Approach that tracks each aircraft from landing through to takeoff.",
+      "lastReviewed": "2026-10-03"
     },
     {
       "id": "abta",
@@ -900,6 +971,77 @@
       "term": "Account-Based Ticketing",
       "definition": "A public-transport fare collection architecture in which entitlement, validation, and fare calculation are managed in a central back-end account linked to the passenger, rather than stored on a physical or digital fare medium at the point of travel. Passengers tap in and out using a contactless bank card, EMV card, mobile wallet, or linked credential; the back-end records the journey, applies fare-capping rules, and charges the optimal amount to the linked payment method.",
       "lastReviewed": "2026-08-16"
+    },
+    {
+      "id": "aci-world",
+      "vertical": "common",
+      "category": "standards",
+      "conceptType": "standard",
+      "status": "active",
+      "abbreviation": "ACI",
+      "term_ko": "국제공항협의회(ACI World)",
+      "definition_ko": "ACI World(Airports Council International, 국제공항협의회)는 전 세계 공항을 대표하는 국제 무역 단체로, 180개 이상의 국가·지역에서 700개 이상의 운영자와 1,900개 이상의 공항을 회원으로 보유한다. ACI World는 국제기구 및 정부와의 관계에서 공항을 대변하고, 공항 산업 기준을 수립하며, IATA·WWACG와 공동으로 전 세계 공항 슬롯 가이드라인(WASG) 등 핵심 글로벌 지침을 발행한다.",
+      "longDef": "ACI World (headquartered in Geneva) works through five regional offices (ACI Africa, ACI Asia-Pacific, ACI Europe, ACI Latin America & Caribbean, and ACI North America) to represent airports in the ICAO system, at the World Trade Organization, and with other intergovernmental bodies. Key programmes and publications include: (1) Airport Economics Survey and Airport Key Performance Indicators — annual benchmarking of financial and operational performance; (2) Airport Service Quality (ASQ) Programme — the world's largest passenger satisfaction benchmarking programme (covering over 390 airports); (3) Airport Carbon Accreditation (ACA) — the industry standard for carbon management at airports, with four levels from Mapping to Transformation; (4) ACI Airport Health Accreditation (AHA) — hygiene standard introduced post-COVID; (5) APEX in Safety — peer-review programme for safety management; (6) co-publication of the Worldwide Airport Slot Guidelines (WASG) with IATA and WWACG, and joint management of CUTE (Common Use Terminal Equipment) standards. ACI World also publishes the World Airport Traffic Forecasts (WATF) and is a founding member of the Aviation Benefits Beyond Borders coalition. It is the principal counterpart to IATA in bilateral work on airport charges, service standards, and facilitation policies.",
+      "longDef_ko": "ACI World(제네바 본부)는 5개 지역 사무소(ACI 아프리카, ACI 아시아·태평양, ACI 유럽, ACI 라틴아메리카·카리브해, ACI 북미)를 통해 ICAO 시스템, 세계무역기구 및 기타 정부간 기구에서 공항을 대표한다. 주요 프로그램 및 간행물: (1) 공항 경제 조사 및 공항 핵심 성과 지표 — 재무·운영 성과 연간 벤치마킹; (2) 공항 서비스 품질(ASQ) 프로그램 — 390개 이상 공항을 대상으로 하는 세계 최대 여객 만족도 벤치마킹 프로그램; (3) 공항 탄소 인증(ACA) — 매핑부터 전환까지 4단계를 갖춘 공항 탄소 관리 산업 표준; (4) ACI 공항 건강 인증(AHA) — 코로나19 이후 도입된 위생 기준; (5) APEX in Safety — 안전 관리를 위한 동료 검토 프로그램; (6) IATA·WWACG와 WASG 공동 발행 및 CUTE(공용 터미널 장비) 표준 공동 관리. ACI World는 세계 공항 교통 예측(WATF)도 발행하며, Aviation Benefits Beyond Borders 연합의 창립 회원이다. 공항 이용료·서비스 기준·원활화 정책에 관한 양자 업무에서 IATA의 주요 상대방이다.",
+      "standardBody": "ACI",
+      "aliases": [
+        "Airports Council International",
+        "ACI",
+        "ACI World"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "CUTE",
+          "targetId": "cute"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Worldwide Airport Slot Guidelines (WASG)",
+          "targetId": "wasg"
+        },
+        {
+          "type": "related",
+          "targetTerm": "FIDS",
+          "targetId": "fids"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "CUTE",
+          "explanation": "CUTE (Common Use Terminal Equipment) is the technical standard and framework that allows multiple airlines to share check-in counters and airport infrastructure; ACI World is the airport industry trade body and one of the governance partners overseeing CUTE standards, but ACI World is the organisation while CUTE is the specific technical programme it helps govern.",
+          "explanation_ko": "CUTE(공용 터미널 장비)는 여러 항공사가 체크인 카운터 및 공항 인프라를 공유할 수 있게 하는 기술 표준이고, ACI World는 CUTE 표준을 감독하는 거버넌스 파트너 중 하나인 공항 업계 무역 단체이다. ACI World는 조직이고 CUTE는 그것이 관리하는 특정 기술 프로그램이다.",
+          "targetId": "cute"
+        },
+        {
+          "targetTerm": "Worldwide Airport Slot Guidelines (WASG)",
+          "explanation": "The WASG is the published framework governing slot allocation at coordinated airports; ACI World is one of the three co-publishers (with IATA and the WWACG) and a co-governance member of the Worldwide Airport Slot Board (WASB) that oversees the WASG. ACI World is the organisation, the WASG is the document it helps create.",
+          "explanation_ko": "WASG는 조정 대상 공항의 슬롯 배분을 규율하는 발행된 체계이고, ACI World는 WASG를 감독하는 세계 공항 슬롯 위원회(WASB)의 공동 거버넌스 구성원이자 세 공동 발행자(IATA 및 WWACG와 함께) 중 하나이다. ACI World는 조직이고 WASG는 그것이 공동 제작하는 문서이다.",
+          "targetId": "wasg"
+        }
+      ],
+      "sources": [
+        {
+          "name": "About ACI World",
+          "org": "ACI World",
+          "version": "",
+          "section": "",
+          "url": "https://aci.aero/about-aci/",
+          "tier": "association"
+        },
+        {
+          "name": "ACI World — Airport Service Quality (ASQ) Programme",
+          "org": "ACI World",
+          "version": "",
+          "section": "",
+          "url": "https://aci.aero/airport-service-quality/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 6C14 6 6 14 6 24s8 18 18 18 18-8 18-18S34 6 24 6z\"/><path d=\"M6 24h36M24 6c-4 4-6 10-6 18s2 14 6 18M24 6c4 4 6 10 6 18s-2 14-6 18\"/><path d=\"M10 16h28M10 32h28\"/></svg>",
+      "term": "ACI World (Airports Council International)",
+      "definition": "The international trade body representing airports globally, with membership covering over 700 operators and more than 1,900 airports in over 180 countries and territories. ACI World advocates for airports in relations with international organisations and governments, sets airport industry standards, and co-publishes key global guidelines including the Worldwide Airport Slot Guidelines (WASG) jointly with IATA and the WWACG.",
+      "lastReviewed": "2026-10-03"
     },
     {
       "id": "acquirer",
@@ -43939,6 +44081,77 @@
       "lastReviewed": "2026-07-09"
     },
     {
+      "id": "notoc",
+      "vertical": "air",
+      "category": "air-ops",
+      "conceptType": "document",
+      "status": "active",
+      "abbreviation": "NOTOC",
+      "term_ko": "기장 통보(NOTOC)",
+      "definition_ko": "NOTOC(Notification to Captain, 기장 통보)는 출발 전 항공기 운항자가 기장에게 제공하는 서면 또는 인쇄 통보로, 화물로 적재된 모든 위험물 목록과 기내 사고 발생 시 사용할 비상 대응 정보를 명시한다. IATA 위험물 항공 운송 규정(DGR) 및 ICAO 기술 지침(Doc 9284)에서 의무화하며, 엔진 시동 전에 조종석 승무원에게 전달해야 한다.",
+      "longDef": "The NOTOC must state, for each dangerous goods shipment: the proper shipping name, UN number, hazard class or division, packing group (where assigned), number and type of packages, net quantity, and aircraft stowage location. For radioactive material it must additionally include the Transport Index. The pilot-in-command uses the NOTOC to brief crew and to communicate hazard information to emergency services in the event of fire, smoke, or an accident. Ground handling agents generate the NOTOC as part of the dangerous goods acceptance and load process; the original is handed to the cockpit crew and a copy is retained at the departure station. Many operators now accept an electronic NOTOC (e-NOTOC) in place of paper, subject to regulatory approval and operator procedures.",
+      "longDef_ko": "NOTOC에는 각 위험물 화물별로 정식 운송 명칭, UN 번호, 위험성 등급 또는 구분, 포장 등급(해당 시), 포장 수 및 유형, 순량, 기내 적재 위치가 포함되어야 한다. 방사성 물질의 경우 운반 지수(Transport Index)도 추가로 표시해야 한다. 기장은 NOTOC를 이용해 승무원에게 사전 브리핑하고, 화재·연기·사고 발생 시 비상 서비스에 위험 정보를 전달한다. 지상 조업사가 위험물 접수·탑재 과정의 일환으로 NOTOC를 생성하며, 원본은 조종석 승무원에게 전달하고 사본은 출발 스테이션에 보관한다. 현재 많은 항공사에서 규제 승인 및 운항사 절차에 따라 전자 NOTOC(e-NOTOC)를 종이 서류 대신 인정한다.",
+      "standardBody": "IATA",
+      "aliases": [
+        "Notification to Captain",
+        "Dangerous Goods Notification to Captain",
+        "e-NOTOC"
+      ],
+      "relationships": [
+        {
+          "type": "broader",
+          "targetTerm": "IATA Dangerous Goods Regulations (DGR)",
+          "targetId": "iata-dangerous-goods-regulations-dgr"
+        },
+        {
+          "type": "related",
+          "targetTerm": "General Declaration",
+          "targetId": "general-declaration"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Ground Handling",
+          "targetId": "ground-handling"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "General Declaration",
+          "explanation": "The General Declaration (GenDec) is the aircraft's full departure document submitted to customs and immigration authorities, covering passengers, crew, cargo, stores, and health; the NOTOC is a cockpit-specific notification listing only the dangerous goods on board with their emergency response information for the pilot-in-command, and it is not submitted to authorities.",
+          "explanation_ko": "일반 신고서(GenDec)는 세관·출입국 당국에 제출하는 항공기 전반의 출발 서류로 승객·승무원·화물·저장품·위생 사항을 포괄하고, NOTOC는 기장에게 기내 위험물과 비상 대응 정보만을 전달하는 조종실 전용 통보로서 당국에 제출하지 않는다.",
+          "targetId": "general-declaration"
+        },
+        {
+          "targetTerm": "IATA Dangerous Goods Regulations (DGR)",
+          "explanation": "The DGR is the comprehensive annual rulebook that governs classification, packaging, marking, labelling, documentation, and acceptance of dangerous goods for air transport; the NOTOC is one specific document produced within that framework — it is the final flight-deck notification required when dangerous goods are loaded, not the regulatory publication itself.",
+          "explanation_ko": "DGR은 항공 운송을 위한 위험물의 분류·포장·표시·표찰·서류화·접수를 규율하는 포괄적인 연간 규정집이고, NOTOC는 그 체계 내에서 생성되는 특정 서류로서, 위험물 탑재 시 요구되는 최종 조종실 통보이며 규정 간행물 자체가 아니다.",
+          "targetId": "iata-dangerous-goods-regulations-dgr"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Dangerous Goods Regulations (DGR) — Section 9.5.1.1 Notification to Captain",
+          "org": "IATA",
+          "version": "67th Edition (2026)",
+          "section": "9.5.1.1",
+          "url": "https://www.iata.org/en/publications/dangerous-goods-regulations/",
+          "tier": "association"
+        },
+        {
+          "name": "Technical Instructions for the Safe Transport of Dangerous Goods by Air (Doc 9284) — Part 7, Chapter 4",
+          "org": "ICAO",
+          "version": "",
+          "section": "Part 7, Chapter 4",
+          "url": "https://www.icao.int/safety/DangerousGoods/Pages/technical-instructions.aspx",
+          "tier": "standard-body"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"6\" width=\"22\" height=\"30\" rx=\"2\"/><line x1=\"15\" y1=\"13\" x2=\"27\" y2=\"13\"/><line x1=\"15\" y1=\"18\" x2=\"27\" y2=\"18\"/><line x1=\"15\" y1=\"23\" x2=\"22\" y2=\"23\"/><path d=\"M30 30l-4 4h10l-4-4z\" fill=\"currentColor\" stroke=\"none\"/><circle cx=\"32\" cy=\"38\" r=\"1.5\" fill=\"currentColor\" stroke=\"none\"/></svg>",
+      "term": "NOTOC",
+      "definition": "A written or printed notification provided by the aircraft operator to the pilot-in-command before departure that lists all dangerous goods loaded as cargo and specifies the emergency response information to be used in the event of an in-flight incident. The NOTOC is mandated by the IATA Dangerous Goods Regulations (DGR) and by ICAO Technical Instructions (Doc 9284), and must be delivered to the cockpit crew before engine start.",
+      "lastReviewed": "2026-10-03"
+    },
+    {
       "id": "nuc",
       "vertical": "air",
       "category": "air-shop",
@@ -67262,6 +67475,87 @@
       "lastReviewed": "2026-08-18"
     },
     {
+      "id": "transit-visa",
+      "vertical": "common",
+      "category": "customer",
+      "conceptType": "document",
+      "status": "active",
+      "term_ko": "통과 비자(Transit Visa)",
+      "definition_ko": "통과 비자(Transit Visa)는 여행자가 최종 목적지로 가는 도중 해당 국가의 영토를 통과할 수 있도록 해당 국가가 발급하는 단기 여행 허가로, 완전한 입국 권리를 부여하지 않는다. 국적 및 여정 조합에 따라 필요하며, 항공사는 TIMATIC을 이용해 실시간으로 요건을 확인하여 서류 미비 승객 탑승에 따른 벌금을 방지한다.",
+      "longDef": "Transit visas are typically required when a traveler must clear immigration and exit the international transit zone (e.g., to connect to a domestic flight or change airports) or when a country's national policy requires documented presence in its territory for certain passport holders even in the transit zone. Key distinctions exist between airside transit (staying within the secured international zone without passing through customs/immigration, often visa-free) and landside transit (exiting the international zone, which may require a transit visa). Requirements vary by: the traveler's nationality, the transit country's policy, the purpose and duration of the transit, and whether the traveler holds a valid visa for the final destination. ICAO Annex 9 (Facilitation) establishes the international framework for facilitation of travel documents, and IATA's TIMATIC (Travel Information Manual Automatic) system, integrated into airline departure control systems, is the primary operational tool airlines use to verify whether a transit visa is required for any given nationality-route combination. Carriers who board incorrectly documented passengers can be fined and required to return passengers at their own expense under national carrier liability rules.",
+      "longDef_ko": "통과 비자는 일반적으로 여행자가 출입국 심사를 거치고 국제 통과 구역을 벗어나야 할 때(예: 국내선 연결 또는 공항 변경), 또는 해당 국가의 국가 정책이 특정 여권 소지자에게 통과 구역 내에서도 문서화된 체류를 요구할 때 필요하다. 공항 에어사이드 통과(세관·출입국을 거치지 않고 보안 국제 구역 내에 머무는 것으로 흔히 비자 불필요)와 랜드사이드 통과(국제 구역을 벗어나는 것으로 통과 비자가 필요할 수 있음) 간에 핵심적인 구분이 있다. 요건은 여행자 국적, 통과 국가의 정책, 통과 목적 및 기간, 최종 목적지의 유효 비자 보유 여부에 따라 달라진다. ICAO Annex 9(원활화)는 여행 서류 원활화를 위한 국제 체계를 수립하며, IATA의 TIMATIC(Travel Information Manual Automatic) 시스템은 항공사 출발 관리 시스템에 통합되어 항공사가 국적-노선 조합별로 통과 비자 필요 여부를 확인하는 주요 운영 도구이다. 서류 미비 승객을 탑승시킨 항공사는 국가 항공사 책임 규정에 따라 벌금을 부과받고 자비로 승객을 귀환시켜야 한다.",
+      "standardBody": "ICAO",
+      "aliases": [
+        "Airport Transit Visa",
+        "Transit Authorisation",
+        "ATV"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "TIMATIC",
+          "targetId": "timatic"
+        },
+        {
+          "type": "related",
+          "targetTerm": "eVisa",
+          "targetId": "e-visa"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Visa on Arrival",
+          "targetId": "visa-on-arrival"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Biometric Passport",
+          "targetId": "biometric-passport"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "eVisa",
+          "explanation": "An eVisa is an electronically issued full-entry visa granting the holder the right to enter and stay in the issuing country for tourism, business, or other purposes; a transit visa is a limited authorisation specifically permitting passage through a country without full entry rights, and is typically shorter in duration and more restricted in permitted activities.",
+          "explanation_ko": "eVisa는 전자적으로 발급되는 정식 입국 비자로 소지자에게 관광, 비즈니스 또는 기타 목적으로 발급국에 입국·체류할 권리를 부여하고, 통과 비자는 완전한 입국 권리 없이 국가 통과만을 허용하는 제한적 허가로, 일반적으로 기간이 짧고 허용 활동이 더 제한된다.",
+          "targetId": "e-visa"
+        },
+        {
+          "targetTerm": "Visa on Arrival",
+          "explanation": "A visa on arrival is a full-entry visa that can be obtained upon arrival at the border, granting entry rights; a transit visa is obtained before travel (or in some cases at the airside port of entry) and permits only passage through the country, not a full stay.",
+          "explanation_ko": "도착 비자(Visa on Arrival)는 국경 도착 시 취득할 수 있는 정식 입국 비자로 입국 권리를 부여하고, 통과 비자는 여행 전에(또는 일부 경우 에어사이드 입국 지점에서) 취득하며 완전한 체류가 아닌 국가 통과만을 허용한다.",
+          "targetId": "visa-on-arrival"
+        },
+        {
+          "targetTerm": "TIMATIC",
+          "explanation": "TIMATIC is the IATA database and airline decision-support tool that contains the real-time visa, passport, and health requirement data for any nationality-destination-route combination, including whether a transit visa is required; a transit visa is the actual government-issued travel document whose requirement TIMATIC helps determine and verify.",
+          "explanation_ko": "TIMATIC은 통과 비자 필요 여부를 포함한 국적-목적지-노선 조합별 비자·여권·건강 요건 데이터를 실시간으로 제공하는 IATA 데이터베이스 및 항공사 의사결정 지원 도구이고, 통과 비자는 TIMATIC이 확인·검증하는 데 도움을 주는 실제 정부 발급 여행 서류이다.",
+          "targetId": "timatic"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Annex 9 to the Convention on International Civil Aviation — Facilitation, 15th Edition",
+          "org": "ICAO",
+          "version": "15th Edition",
+          "section": "Chapter 3 — Entry and Departure of Persons",
+          "url": "https://www.icao.int/safety/facilitation/Pages/default.aspx",
+          "tier": "standard-body"
+        },
+        {
+          "name": "TIMATIC — Travel Information Manual Automatic",
+          "org": "IATA",
+          "version": "",
+          "section": "",
+          "url": "https://www.iata.org/en/services/compliance/timatic/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"10\" width=\"32\" height=\"28\" rx=\"3\"/><line x1=\"8\" y1=\"18\" x2=\"40\" y2=\"18\"/><circle cx=\"20\" cy=\"28\" r=\"4\"/><path d=\"M26 24h10M26 28h10M26 32h7\"/></svg>",
+      "term": "Transit Visa",
+      "definition": "A short-stay travel authorisation issued by a state that permits a traveler to pass through its territory en route to a third country, without granting full entry rights. Transit visas are required by certain nationality and itinerary combinations, and airlines verify requirements in real time using TIMATIC to avoid fines for carrying incorrectly documented passengers.",
+      "lastReviewed": "2026-10-03"
+    },
+    {
       "id": "transitional-stored-ticket-tst",
       "vertical": "air",
       "category": "air-ticket",
@@ -71852,6 +72146,134 @@
       "term": "WorldTracer",
       "definition": "SITA's globally dominant baggage tracing and reconciliation system, developed with IATA, used by hundreds of airlines and thousands of airports to register, match, and locate mishandled (lost, delayed, or misrouted) bags. It is the de facto industry infrastructure behind delayed-baggage handling worldwide.",
       "lastReviewed": "2026-06-17"
+    },
+    {
+      "id": "wasg",
+      "vertical": "air",
+      "category": "air-partner",
+      "conceptType": "standard",
+      "status": "active",
+      "abbreviation": "WASG",
+      "term_ko": "전 세계 공항 슬롯 가이드라인(WASG)",
+      "definition_ko": "WASG(Worldwide Airport Slot Guidelines, 전 세계 공항 슬롯 가이드라인)는 조정 대상(레벨 3) 및 스케줄 조율 대상(레벨 2) 공항에서 활주로·터미널 용량 슬롯의 중립적·투명·비차별적 배분 및 관리를 위한 전 세계적으로 통용되는 체계이다. IATA·ACI World·WWACG가 세계 공항 슬롯 위원회(WASB)의 거버넌스 하에 공동 발행하며, 전 세계 슬롯 조정관들의 주요 참조 문서이다.",
+      "longDef": "The WASG is updated periodically (Edition 4 effective 1 August 2025) and defines: (1) the three coordination levels (Level 1 = uncoordinated, Level 2 = schedules facilitated, Level 3 = fully coordinated), the criteria for classifying an airport at each level, and the obligations this places on airlines and coordinators; (2) the slot allocation process, including the priority given to historic (\"grandfather\") slots, the 80/20 use-it-or-lose-it rule (an airline must operate at least 80% of a series of slots to retain them the following equivalent season), new-entrant quotas (minimum 50% of any pool must be offered to new entrants), and the slot pool; (3) neutrality and independence requirements for slot coordinators; (4) the monitoring, enforcement, and appeal mechanisms for breaches; (5) exemptions and waivers, including the force-majeure waiver framework applied during COVID-19 and subsequent disruptions. The WASG does not itself have the force of law in any jurisdiction — individual states and the European Union have enacted their own slot regulations that use the WASG as the standard, notably EC Regulation 95/93 (as amended) in the EU.",
+      "longDef_ko": "WASG는 주기적으로 개정되며(4판, 2025년 8월 1일 발효), 다음을 정의한다: (1) 3단계 조정 수준(레벨 1 = 비조정, 레벨 2 = 스케줄 조율, 레벨 3 = 완전 조정), 각 수준에서 공항을 분류하는 기준, 이에 따른 항공사·조정관의 의무; (2) 과거 운항 실적(\"조부\") 슬롯 우선권, 80/20 사용 않으면 상실 규정(항공사는 연속 슬롯의 80% 이상을 운항해야 다음 동등 시즌에 유지 가능), 신규 진입자 쿼터(풀의 최소 50%를 신규 진입자에게 제공), 슬롯 풀을 포함한 슬롯 배분 과정; (3) 슬롯 조정관의 중립성 및 독립성 요건; (4) 위반에 대한 모니터링·시행·이의신청 메커니즘; (5) COVID-19 및 이후 혼란 시 적용된 불가항력 면제 체계를 포함한 면제 및 특례. WASG 자체는 어떤 관할권에서도 법적 효력을 갖지 않으며, EU의 EC Regulation 95/93(개정판) 등 개별 국가와 EU가 WASG를 표준으로 사용하여 자체 슬롯 규정을 제정하였다.",
+      "standardBody": "IATA",
+      "aliases": [
+        "Worldwide Airport Slot Guidelines",
+        "IATA Slot Guidelines",
+        "Airport Slot Guidelines"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Slot",
+          "targetId": "slot"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Bilateral Air Service Agreement",
+          "targetId": "bilateral-air-service-agreement"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Slot",
+          "explanation": "A slot is the unit of allocation — the permission for one aircraft movement at a specific time; the WASG is the multi-volume guideline framework that governs how slots at coordinated airports are classified, allocated, monitored, and exchanged globally.",
+          "explanation_ko": "슬롯은 배분의 단위로, 특정 시간에 항공기 이동 1회에 대한 허가이고, WASG는 전 세계 조정 대상 공항에서 슬롯이 분류·배분·모니터링·교환되는 방식을 규율하는 다권 가이드라인 체계이다.",
+          "targetId": "slot"
+        },
+        {
+          "targetTerm": "Bilateral Air Service Agreement",
+          "explanation": "A Bilateral Air Service Agreement (BASA) is the intergovernmental treaty that grants airlines of two countries the right to operate routes between them, establishing traffic rights and frequency entitlements at a government level; the WASG governs the operational day-to-day slot-allocation process at the airport level for all carriers irrespective of the bilateral that created their route rights.",
+          "explanation_ko": "양자간 항공 협정(BASA)은 두 국가의 항공사에게 노선 운항 권한을 부여하는 정부 간 조약으로 정부 차원에서 운수권 및 운항 빈도 권한을 수립하고, WASG는 노선 권한을 창출한 양자 협정과 무관하게 모든 항공사에 대해 공항 수준에서 일상적인 슬롯 배분 과정을 규율한다.",
+          "targetId": "bilateral-air-service-agreement"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Worldwide Airport Slot Guidelines (WASG), Edition 4",
+          "org": "IATA / ACI World / WWACG",
+          "version": "Edition 4 (effective 1 August 2025)",
+          "section": "",
+          "url": "https://www.iata.org/en/programs/ops-infra/slots/slot-guidelines/",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"16\"/><path d=\"M24 8v6M24 34v6M8 24h6M34 24h6\"/><path d=\"M24 17v7l6 3\"/><circle cx=\"24\" cy=\"24\" r=\"2\" fill=\"currentColor\" stroke=\"none\"/></svg>",
+      "term": "Worldwide Airport Slot Guidelines (WASG)",
+      "definition": "The globally accepted framework for the neutral, transparent, and non-discriminatory allocation and management of runway and terminal capacity slots at coordinated (Level 3) and schedules-facilitated (Level 2) airports. The WASG is jointly published by IATA, Airports Council International (ACI World), and the Worldwide Airport Coordinators Group (WWACG) under the governance of the Worldwide Airport Slot Board (WASB), and is the primary reference for slot coordinators worldwide.",
+      "lastReviewed": "2026-10-03"
+    },
+    {
+      "id": "wttc",
+      "vertical": "common",
+      "category": "standards",
+      "conceptType": "standard",
+      "status": "active",
+      "abbreviation": "WTTC",
+      "term_ko": "세계 여행 관광 협의회(WTTC)",
+      "definition_ko": "WTTC(World Travel & Tourism Council, 세계 여행 관광 협의회)는 세계 주요 여행·관광 기업의 CEO와 회장들로 구성된 비영리 회원 조직으로, 민간 부문을 전 세계적으로 대표한다. WTTC는 여행·관광 분야의 경제적·사회적 기여에 관한 주요 권위 기관으로, 185개 경제권을 대상으로 연간 경제 영향 연구를 발표하며 전 세계적으로 주목받는 여행·관광 GDP 기여도 수치를 산출한다.",
+      "longDef": "Founded in 1990, the WTTC conducts its flagship annual Economic Impact Research (EIR) using a Tourism Satellite Account (TSA) methodology aligned with UNWTO and UN standards, estimating travel and tourism's total contribution to GDP (direct, indirect, and induced), employment, capital investment, and export earnings for each of the 185 economies modelled. The 2024 EIR estimated global Travel & Tourism GDP at USD 11.1 trillion (around 10% of global GDP) and employment at 348 million jobs. Beyond research, WTTC operates the Safe Travels stamp programme (hygiene and safety standards), the Hotel Sustainability Basics (with GSTC), the Crisis Communication Centre, and publishes playbooks and white papers on issues including aviation recovery, sustainable tourism, and technology adoption. WTTC advocates with governments for policies that support tourism growth, open borders, and visa facilitation, and convenes the annual WTTC Global Summit which brings heads of state and industry CEOs together.",
+      "longDef_ko": "1990년에 설립된 WTTC는 UNWTO 및 UN 표준에 맞는 관광 위성 계정(TSA) 방법론을 사용한 연간 경제 영향 연구(EIR)를 수행하며, 185개 모델 경제권에 대해 여행·관광의 GDP 총 기여도(직접·간접·유발), 고용, 자본 투자, 수출 수익을 추정한다. 2024년 EIR은 전 세계 여행·관광 GDP를 11조 1,000억 달러(전 세계 GDP의 약 10%)로 추정하고 고용을 3억 4,800만 명으로 집계했다. WTTC는 연구 외에도 Safe Travels 스탬프 프로그램(위생·안전 기준), Hotel Sustainability Basics(GSTC 협력), 위기 커뮤니케이션 센터를 운영하고, 항공 회복·지속 가능한 관광·기술 채택 등을 주제로 플레이북과 백서를 발간한다. WTTC는 관광 성장, 국경 개방, 비자 간소화를 지원하는 정책을 위해 각국 정부에 옹호 활동을 펼치며, 국가 원수와 산업 CEO들이 함께하는 연간 WTTC 글로벌 서밋을 주최한다.",
+      "standardBody": "WTTC",
+      "aliases": [
+        "World Travel & Tourism Council",
+        "World Travel and Tourism Council"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "World Tourism Organization",
+          "targetId": "unwto"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Tourism Satellite Account",
+          "targetId": "tourism-satellite-account"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Global Business Travel Association (GBTA)",
+          "targetId": "global-business-travel-association-gbta"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "World Tourism Organization",
+          "explanation": "The World Tourism Organization (UNWTO) is a United Nations specialized agency that sets international tourism norms and policies from a government and intergovernmental perspective, publishing the Universal Tourism Ethical Framework and official tourism statistics; the WTTC is a private-sector CEO membership body that focuses on the economic impact of the industry, corporate advocacy, and promoting enabling policies for the travel sector, without regulatory authority.",
+          "explanation_ko": "세계관광기구(UNWTO)는 정부 간 관점에서 국제 관광 규범과 정책을 수립하는 유엔 전문기구로, 세계 관광 윤리 강령과 공식 관광 통계를 발표한다. WTTC는 업계의 경제적 영향, 기업 옹호, 여행 부문 활성화 정책 촉진에 초점을 맞추는 민간 부문 CEO 회원 조직으로 규제 권한이 없다.",
+          "targetId": "unwto"
+        },
+        {
+          "targetTerm": "Tourism Satellite Account",
+          "explanation": "A Tourism Satellite Account (TSA) is the national-level statistical framework recommended by UNWTO and UN for measuring the economic contribution of tourism; the WTTC uses TSA methodology as the basis of its annual Economic Impact Research, applying it across 185 economies to produce globally comparable figures that the WTTC then publishes and advocates with.",
+          "explanation_ko": "관광 위성 계정(TSA)은 관광의 경제적 기여를 측정하기 위해 UNWTO와 UN이 권고하는 국가 수준의 통계 체계이고, WTTC는 TSA 방법론을 연간 경제 영향 연구의 기반으로 사용하여 185개 경제권에 적용해 전 세계적으로 비교 가능한 수치를 산출·발표·옹호한다.",
+          "targetId": "tourism-satellite-account"
+        }
+      ],
+      "sources": [
+        {
+          "name": "About WTTC — Who We Are",
+          "org": "WTTC",
+          "version": "",
+          "section": "",
+          "url": "https://wttc.org/about/who-we-are",
+          "tier": "association"
+        },
+        {
+          "name": "WTTC Economic Impact Research 2024",
+          "org": "WTTC",
+          "version": "2024",
+          "section": "",
+          "url": "https://wttc.org/research/economic-impact",
+          "tier": "association"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"24\" r=\"16\"/><ellipse cx=\"24\" cy=\"24\" rx=\"6\" ry=\"16\"/><line x1=\"8\" y1=\"24\" x2=\"40\" y2=\"24\"/><line x1=\"10\" y1=\"15\" x2=\"38\" y2=\"15\"/><line x1=\"10\" y1=\"33\" x2=\"38\" y2=\"33\"/></svg>",
+      "term": "WTTC (World Travel & Tourism Council)",
+      "definition": "A non-profit membership organisation whose members are the CEOs and Chairpersons of the world's leading travel and tourism companies, representing the private sector globally. WTTC is the primary authority on the economic and social contribution of the Travel & Tourism sector, producing annual Economic Impact Research covering 185 economies and the closely watched global Travel & Tourism GDP share figure.",
+      "lastReviewed": "2026-10-03"
     },
     {
       "id": "yield-management",
