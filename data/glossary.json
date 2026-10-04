@@ -2,8 +2,8 @@
   "meta": {
     "name": "Travel Wiki",
     "tagline": "여행 산업 용어 백과사전",
-    "generatedAt": "2026-10-03",
-    "entryCount": 824,
+    "generatedAt": "2026-10-04",
+    "entryCount": 830,
     "categoryCount": 20,
     "verticalCount": 6
   },
@@ -4474,6 +4474,101 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "airline-insolvency",
+      "vertical": "common",
+      "category": "disruption",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "항공사 지급 불능(Airline Insolvency)",
+      "definition_ko": "항공사 지급 불능(airline insolvency)은 항공사가 재정적 의무를 이행하지 못하는 상태로, 통상 운항 중단, 관재인·청산인 선임, 그리고 취소된 항공편 티켓을 보유한 승객의 고립으로 이어진다. 지급 불능 항공사는 주의 의무(duty of care)나 경로 재배정 의무를 이행할 수 없어, 승객 보호는 여행자 보험, 신용카드 환불, ATOL/ABTA 보호(패키지 여행의 경우), 또는 IATA 회원 항공사의 구조 운임에 의존하게 된다.",
+      "longDef": "Airlines operate on thin margins and are exposed to fuel price volatility, demand shocks, and competitive pressures that periodically result in high-profile failures — including Monarch Airlines (UK, 2017), WOW Air (Iceland, 2019), Flybe (UK, 2020, re-entered administration 2023), and Thomas Cook Airlines (2019). Regulatory frameworks differ by jurisdiction. In the EU, Regulation 261/2004 requires the \"operating carrier\" to provide care and assistance, but insolvency proceedings may prevent the carrier from funding those obligations, leaving them unpaid. In the UK, the ATOL scheme (administered by the CAA) protects package-holiday travellers and requires ATOL-bonded operators to repatriate stranded passengers; the UK Government used this scheme ad hoc for the Monarch collapse (2017), repatriating all affected passengers regardless of ATOL status. In the US, the DOT requires airlines to issue refunds for cancelled flights but does not mandate a government repatriation fund. IATA member airlines may offer rescue fares — discounted transport on their services — to passengers stranded by a failed carrier's collapse under IATA's Airlines Customer Commitment. From the distribution perspective, travel agents and OTAs face liability for payments to insolvent carriers and potential chargebacks from customers, and IATA settlement systems (BSP, ARC) have specific procedures for handling insolvency events. Booking protections such as travel insurance with Supplier Default Coverage, payment by credit card (Section 75 UK; chargeback globally), and ATOL bonding are the primary tools consumers use to recover costs.",
+      "longDef_ko": "항공사는 박리다매 구조로 운영되며 연료 가격 변동성, 수요 충격, 경쟁 압력에 노출되어 Monarch Airlines(영국, 2017), WOW Air(아이슬란드, 2019), Flybe(영국, 2020·2023), Thomas Cook Airlines(2019) 등 고프로파일 실패 사례가 주기적으로 발생한다. 규제 프레임워크는 관할 지역마다 다르다. EU에서는 규정 261/2004가 \"운항 항공사\"의 주의 의무 제공을 요구하지만 도산 절차로 인해 그 의무 이행 재원이 없을 수 있다. 영국에서는 ATOL 제도(CAA 운영)가 패키지 여행자를 보호하며, 2017년 모나크 항공 붕괴 시 정부가 ATOL 보호 여부와 무관하게 모든 영향받은 승객을 송환하는 데 이 제도를 활용하였다. 유통 관점에서 여행사와 OTA는 도산 항공사에 대한 지급 책임과 고객의 환불 요청에 노출되며, IATA 정산 시스템(BSP, ARC)은 도산 사태 처리를 위한 특정 절차를 두고 있다.",
+      "standardBody": "IATA",
+      "aliases": [
+        "Carrier Insolvency",
+        "Airline Bankruptcy",
+        "Airline Failure",
+        "Carrier Failure"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Force Majeure",
+          "targetId": "force-majeure"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Air Travel Organiser's Licence",
+          "targetId": "atol"
+        },
+        {
+          "type": "related",
+          "targetTerm": "EU Regulation 261/2004",
+          "targetId": "eu-regulation-261-2004"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Right to Care",
+          "targetId": "right-to-care"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Supplier Default Coverage",
+          "targetId": "supplier-default-coverage"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Force Majeure",
+          "explanation": "Force majeure covers extraordinary events outside the carrier's control (severe weather, political unrest, acts of terrorism) that excuse obligations; airline insolvency is not a force majeure event — it is caused by financial mismanagement or market failure and typically does not relieve passengers of their contractual entitlements under consumer protection law, even if the carrier cannot practically fulfil them.",
+          "explanation_ko": "불가항력(force majeure)은 항공사의 통제를 벗어난 특별한 사건(혹독한 기상, 정치적 불안, 테러 행위)이 의무를 면제하는 경우이고, 항공사 지급 불능은 불가항력 사건이 아니다 — 재무 실패나 시장 실패로 인해 발생하며, 항공사가 실질적으로 이행하지 못하더라도 소비자 보호법상 여행자의 계약적 권리를 일반적으로 면제하지 않는다.",
+          "targetId": "force-majeure"
+        },
+        {
+          "targetTerm": "Air Travel Organiser's Licence",
+          "explanation": "ATOL is a UK consumer protection scheme that bonds tour operators and flight sellers, guaranteeing that package-holiday customers can be repatriated or refunded if the licence holder fails; airline insolvency is the event that triggers ATOL claims, but ATOL coverage does not extend to standalone airline tickets not sold as part of a licensable package.",
+          "explanation_ko": "ATOL은 여행사·항공권 판매자에게 보증을 요구하는 영국 소비자 보호 제도로, 면허 보유자가 파산할 경우 패키지 여행자의 송환 또는 환불을 보장한다. 항공사 지급 불능은 ATOL 청구를 촉발하는 사건이지만, ATOL 보장은 면허 대상 패키지의 일부가 아닌 단독 항공권에는 적용되지 않는다.",
+          "targetId": "atol"
+        },
+        {
+          "targetTerm": "Supplier Default Coverage",
+          "explanation": "Supplier Default Coverage is a travel insurance benefit that reimburses pre-paid costs when a travel supplier (including an airline) becomes insolvent; airline insolvency is the underlying risk event. Supplier Default Coverage is the financial protection instrument; airline insolvency is the trigger condition it responds to.",
+          "explanation_ko": "공급자 채무 불이행 보장(Supplier Default Coverage)은 여행 공급자(항공사 포함)가 지급 불능이 될 때 선불 비용을 보상하는 여행 보험 혜택이고, 항공사 지급 불능은 그 보장이 반응하는 근본 위험 사건이다.",
+          "targetId": "supplier-default-coverage"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Airlines Customer Commitment — Rescue Fares Agreement",
+          "org": "IATA",
+          "version": "",
+          "section": "",
+          "url": "https://www.iata.org/en/programs/passenger/airlines-customer-commitment/",
+          "tier": "association"
+        },
+        {
+          "name": "The UK's Airline Insolvency Review — Implications for Passenger Protection and Airlines",
+          "org": "Bird & Bird LLP",
+          "version": "2019",
+          "section": "",
+          "url": "https://www.twobirds.com/en/insights/2019/uk/the-uks-airline-insolvency-review-implications-for-passenger-protection-and-airlines",
+          "tier": "secondary"
+        },
+        {
+          "name": "Airline Insolvency Review: Final Report",
+          "org": "UK Government / Department for Transport",
+          "version": "2019",
+          "section": "",
+          "url": "https://www.gov.uk/government/publications/airline-insolvency-review",
+          "tier": "regulator-guidance"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 28l7-7 5 3 8-10 4 4\"/><path d=\"M6 36h36\"/><line x1=\"12\" y1=\"36\" x2=\"12\" y2=\"40\"/><line x1=\"36\" y1=\"36\" x2=\"36\" y2=\"40\"/><circle cx=\"38\" cy=\"14\" r=\"6\"/><line x1=\"35\" y1=\"11\" x2=\"41\" y2=\"17\"/><line x1=\"41\" y1=\"11\" x2=\"35\" y2=\"17\"/></svg>",
+      "term": "Airline Insolvency",
+      "definition": "Airline insolvency is the condition in which an airline is unable to meet its financial obligations, typically resulting in its suspension of operations, appointment of an administrator or liquidator, and the stranding of passengers who hold tickets for cancelled flights. It is distinct from ordinary cancellation or disruption events because the insolvent carrier cannot fulfil its duty of care or rerouting obligations, leaving passenger protection dependent on travel insurance, payment-card chargebacks, ATOL/ABTA protection (for package holidays), or IATA member airline rescue fares.",
+      "lastReviewed": "2026-10-04"
+    },
+    {
       "id": "airline-retailing-maturity-arm",
       "vertical": "common",
       "category": "standards",
@@ -8455,6 +8550,77 @@
       "term": "Basic Economy",
       "definition": "Basic Economy is a deeply restricted, entry-level fare class offered by major full-service carriers to compete on price with low-cost carriers while retaining ancillary upsell opportunity. It typically excludes advance seat selection, ticket changes, refunds, standard carry-on allowances, and elite-qualifying miles, compelling passengers who need those features to purchase add-ons or upgrade to a higher fare class.",
       "lastReviewed": "2026-07-31"
+    },
+    {
+      "id": "bcbp",
+      "vertical": "air",
+      "category": "air-ops",
+      "conceptType": "standard",
+      "status": "active",
+      "abbreviation": "BCBP",
+      "term_ko": "바코드 탑승권(BCBP)",
+      "definition_ko": "BCBP(Bar Coded Boarding Pass)는 공항 키오스크·항공사 체크인 카운터·가정용 프린터·모바일 기기에서 발급되는 기계 판독 탑승권에 인코딩할 데이터 내용과 2차원 바코드 형식(PDF417, Aztec, Data Matrix, QR 코드)을 규정한 IATA 표준(Resolution 792 및 BCBP Implementation Guide)이다. 어떤 항공사·공항 시스템이 생성한 탑승권이든 전 세계 규격 게이트 스캐너에서 읽을 수 있도록 보장한다.",
+      "longDef": "IATA Resolution 792, first adopted in 2001 and maintained in the BCBP Implementation Guide (7th edition, 2021), defines the mandatory and optional data elements encoded in every compliant boarding pass barcode. Mandatory fields include: passenger name, operating carrier PNR code, departure and arrival airport IATA codes, operating carrier designator and flight number, flight date, compartment code (booking class), seat number, check-in sequence number, and passenger status. The standard covers four symbologies: PDF417 (the legacy primary format), Aztec Code, Data Matrix, and QR Code — the latter three enabling compact encoding suited to mobile-screen display. BCBP underpins industry programs including IATA's Mobile Boarding Pass specification and the Common Use Self-Service (CUSS) kiosk standard. Airport common-use terminal equipment (CUTE) and departure control systems (DCS) consume the BCBP barcode to validate passenger identity and boarding entitlement at the gate. A boarding pass barcode that does not conform to BCBP may fail to scan at interline or codeshare gate equipment operated by a different carrier.",
+      "longDef_ko": "IATA Resolution 792(2001년 최초 채택, BCBP Implementation Guide 제7판 2021년 현재 유지)는 규격 탑승권 바코드에 인코딩되는 필수 및 선택 데이터 요소를 정의한다. 필수 필드: 승객명, 운영 항공사 PNR 코드, 출발·도착 공항 IATA 코드, 운영 항공사 코드 및 편명, 비행 날짜, 구획 코드(예약 등급), 좌석 번호, 체크인 일련 번호, 승객 상태. 표준은 PDF417(구형 기본), Aztec Code, Data Matrix, QR Code 네 가지 형식을 규정하며, 후자 세 형식은 모바일 화면 표시에 적합한 소형 인코딩을 가능하게 한다. BCBP는 IATA 모바일 탑승권 사양 및 공용 셀프서비스(CUSS) 키오스크 표준의 기반이 된다. 공항 공용 단말 장비(CUTE)와 출발 통제 시스템(DCS)은 게이트에서 승객 신원 및 탑승 자격 검증에 BCBP 바코드를 사용한다.",
+      "standardBody": "IATA",
+      "aliases": [
+        "Bar Coded Boarding Pass",
+        "IATA BCBP",
+        "Boarding Pass Barcode Standard"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Boarding Pass",
+          "targetId": "boarding-pass"
+        },
+        {
+          "type": "related",
+          "targetTerm": "PNR",
+          "targetId": "pnr"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Digital Travel Credential",
+          "targetId": "digital-travel-credential"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Boarding Pass",
+          "explanation": "A Boarding Pass is the travel document that authorises a passenger to board — it can be printed on paper or displayed digitally; BCBP is the IATA barcode encoding standard that governs exactly what data must be encoded in the 2-D barcode on that document so that any gate scanner worldwide can read it interoperably.",
+          "explanation_ko": "탑승권(Boarding Pass)은 승객 탑승을 허가하는 여행 서류로 종이 출력이나 디지털 형태를 띨 수 있고, BCBP는 전 세계 어떤 게이트 스캐너에서도 상호 판독이 가능하도록 해당 서류의 2차원 바코드에 인코딩해야 할 데이터를 규정하는 IATA 바코드 인코딩 표준이다.",
+          "targetId": "boarding-pass"
+        },
+        {
+          "targetTerm": "Digital Travel Credential",
+          "explanation": "A Digital Travel Credential (DTC) is an ICAO standard for a chip-based, cryptographically verifiable digital equivalent of a passport; BCBP is an IATA standard for the data barcode on an airline boarding pass. DTC addresses identity verification at border control; BCBP addresses boarding eligibility encoding for airport gate scanning.",
+          "explanation_ko": "DTC(Digital Travel Credential)는 칩 기반의 암호학적으로 검증 가능한 여권의 디지털 대응물에 관한 ICAO 표준이고, BCBP는 항공사 탑승권의 데이터 바코드에 관한 IATA 표준이다. DTC는 국경 통제에서의 신원 확인을 다루고, BCBP는 공항 게이트 스캔을 위한 탑승 자격 인코딩을 다룬다.",
+          "targetId": "digital-travel-credential"
+        }
+      ],
+      "sources": [
+        {
+          "name": "BCBP Implementation Guide Version 7",
+          "org": "IATA",
+          "version": "Version 7 (2021)",
+          "section": "",
+          "url": "https://www.iata.org/contentassets/1dccc9ed041b4f3bbdcf8ee8682e75c4/2021_03_02-bcbp-implementation-guide-version-7-.pdf",
+          "tier": "standard-body"
+        },
+        {
+          "name": "IATA Common Use Programs — BCBP (Resolution 792)",
+          "org": "IATA",
+          "version": "",
+          "section": "",
+          "url": "https://www.iata.org/en/programs/passenger/common-use/",
+          "tier": "standard-body"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"7\" y=\"9\" width=\"34\" height=\"26\" rx=\"2\"/><line x1=\"13\" y1=\"16\" x2=\"13\" y2=\"30\"/><line x1=\"17\" y1=\"16\" x2=\"17\" y2=\"25\"/><line x1=\"21\" y1=\"16\" x2=\"21\" y2=\"30\"/><line x1=\"25\" y1=\"16\" x2=\"25\" y2=\"22\"/><line x1=\"29\" y1=\"16\" x2=\"29\" y2=\"30\"/><line x1=\"33\" y1=\"16\" x2=\"33\" y2=\"22\"/><line x1=\"25\" y1=\"25\" x2=\"25\" y2=\"30\"/><line x1=\"33\" y1=\"25\" x2=\"33\" y2=\"30\"/></svg>",
+      "term": "BCBP",
+      "definition": "BCBP (Bar Coded Boarding Pass) is the IATA standard, defined in Resolution 792 and maintained in the BCBP Implementation Guide, that specifies the data content and 2-D barcode symbologies — PDF417, Aztec, Data Matrix, and QR Code — to be encoded in machine-readable boarding passes issued at airport kiosks, airline counters, home printers, and mobile devices. It ensures that boarding passes generated by any carrier or airport system can be scanned by any compliant gate reader worldwide.",
+      "lastReviewed": "2026-10-04"
     },
     {
       "id": "bedbank",
@@ -14343,6 +14509,107 @@
       "term": "Closed to Departure (CTD)",
       "definition": "Closed to Departure (CTD) is a stay-control restriction that prevents new reservations from having a checkout (departure) date on a specified night, while guests already booked through that date are unaffected. Paired with Closed to Arrival (CTA), it is one of the four standard hotel stay controls used in revenue management alongside Minimum Length of Stay and Maximum Length of Stay.",
       "lastReviewed": "2026-08-18"
+    },
+    {
+      "id": "closed-user-group",
+      "vertical": "lodging",
+      "category": "hotel-dist",
+      "conceptType": "business-term",
+      "status": "active",
+      "abbreviation": "CUG",
+      "term_ko": "폐쇄형 사용자 그룹(CUG)",
+      "definition_ko": "CUG(Closed User Group, 폐쇄형 사용자 그룹)는 호텔·여행 유통에서 사용되는 접근 제한 특별 요금 등급으로, OTA의 인증된 회원, 항공사 로열티 회원, 또는 호텔 직접 예약 프로그램 구독자 등 특정 그룹의 검증된 회원에게만 특별 요금이 표시되고 예약 가능한 구조이다. 요금이 공개적으로 표시되지 않으므로, 일반적으로 표준 요금 동등(rate parity) 조항의 허용 예외로 인정되어 호텔이 공개 요금 약정을 위반하지 않고 특정 고객층에 낮은 가격을 제공할 수 있다.",
+      "longDef": "To qualify as a genuine CUG under most hotel distribution contracts, the rate must meet several conditions: membership is not automatic — users must actively opt in; access requires a password-protected login or authenticated session; the member must have a registered profile; and the discounted rate must not be accessible to anonymous or unregistered visitors. Hotels use CUG mechanisms both through OTAs (enabling the OTA to offer members-only rates that technically comply with rate parity) and through their own direct-booking programmes (e.g., \"book direct\" rates for loyalty members that cannot legally be matched by third parties under the parity clause). The CUG exception became increasingly important after the hotel industry's legal battles over rate parity with OTAs in Europe, where competition authorities in France, Germany, and the UK led to partial restrictions on broad parity clauses. Hotels leverage CUG pricing as a yield lever: they can use it to fill distressed inventory, reward high-value segments, or stimulate direct bookings without the rate appearing in public rate-shopping tools. Rate shopping and parity auditing tools can detect CUG rates by creating test member accounts — a practice hotels and OTAs actively monitor.",
+      "longDef_ko": "대부분의 호텔 유통 계약에서 정당한 CUG로 인정받으려면 요금은 다음 조건을 충족해야 한다: 회원 가입이 자동이 아닌 능동적 선택일 것; 비밀번호 보호 로그인 또는 인증된 세션이 필요할 것; 회원이 등록 프로필을 보유할 것; 할인 요금이 익명 또는 미등록 방문자에게 접근 불가할 것. 호텔은 OTA(요율 동등 조항을 기술적으로 준수하면서 회원 전용 요금을 제공하도록 활성화)와 자체 직접 예약 프로그램(로열티 회원 대상 \"직접 예약\" 요금 등) 모두에 CUG 메커니즘을 사용한다. CUG 예외는 프랑스·독일·영국의 경쟁 당국이 광범위한 요율 동등 조항에 대한 부분 제한을 이끌어낸 유럽에서의 호텔-OTA 법적 분쟁 이후 더욱 중요해졌다. 호텔은 CUG 가격을 수익 관리 수단으로 활용한다: 재고 소진, 고가치 세그먼트 보상, 공개 요율 조회 도구에 표시 없이 직접 예약 촉진 등에 쓰인다.",
+      "standardBody": "HEDNA",
+      "aliases": [
+        "CUG Rate",
+        "Member Rate",
+        "Members-Only Rate",
+        "Private Rate (OTA)"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Booking.com",
+          "term": "Genius Rate",
+          "context": "Booking.com's Genius programme offers discounted rates exclusively to Genius-tier members; these are distributed as a CUG rate, not visible to the general public without login.",
+          "context_ko": "Booking.com의 Genius 프로그램은 Genius 등급 회원에게만 할인 요금을 제공하며, 이는 로그인 없이 일반 대중에게는 표시되지 않는 CUG 요금으로 유통된다.",
+          "relationship": "narrower"
+        },
+        {
+          "provider": "Hotels.com / Expedia Group",
+          "term": "Member Prices",
+          "context": "Hotels.com and Expedia offer \"Member Prices\" to registered, signed-in members — a CUG discount layer on top of the public best available rate.",
+          "context_ko": "Hotels.com과 Expedia는 등록·로그인한 회원에게 \"Member Prices\"를 제공하며, 이는 공개 최저 요금 위에 추가되는 CUG 할인 레이어이다.",
+          "relationship": "narrower"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Rate Parity",
+          "targetId": "rate-parity"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Rate Parity Clause",
+          "targetId": "rate-parity-clause"
+        },
+        {
+          "type": "related",
+          "targetTerm": "OTA (Online Travel Agency)",
+          "targetId": "ota-online-travel-agency"
+        },
+        {
+          "type": "contrasts",
+          "targetTerm": "Opaque Inventory",
+          "targetId": "opaque-inventory"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Rate Parity Clause",
+          "explanation": "A Rate Parity Clause is a contract provision requiring a hotel to offer the same rate across distribution channels; the CUG rate is the most widely accepted exception to that clause, because the rate is not publicly visible and is accessible only to a verified member group.",
+          "explanation_ko": "요율 동등 조항은 호텔이 유통 채널 전반에 동일한 요금을 제공하도록 요구하는 계약 조항이고, CUG 요금은 공개 표시 없이 검증된 회원 그룹에만 접근 가능하므로 해당 조항에서 가장 널리 인정되는 예외이다.",
+          "targetId": "rate-parity-clause"
+        },
+        {
+          "targetTerm": "Opaque Inventory",
+          "explanation": "Opaque Inventory hides the hotel brand or property name from the consumer until after purchase, offering a discounted rate in exchange for that anonymity; a CUG rate reveals the exact hotel to the member but restricts access to the rate behind a login — the discount mechanism and the information withheld are fundamentally different.",
+          "explanation_ko": "Opaque Inventory는 구매 전까지 호텔 브랜드·숙소명을 소비자에게 숨기고 그 익명성의 대가로 할인 요금을 제공하고, CUG 요금은 회원에게 정확한 호텔을 공개하되 로그인 뒤에만 요금에 접근하도록 제한한다. 할인 메커니즘과 비공개 정보가 근본적으로 다르다.",
+          "targetId": "opaque-inventory"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Closed User Groups — Hotel Rate Distribution Explained",
+          "org": "AltexSoft",
+          "version": "",
+          "section": "",
+          "url": "https://www.altexsoft.com/blog/closed-user-groups/",
+          "tier": "secondary"
+        },
+        {
+          "name": "Direct hotel bookings, loyalty and the clandestine world of closed user groups",
+          "org": "PhocusWire",
+          "version": "",
+          "section": "",
+          "url": "https://www.phocuswire.com/Direct-hotel-bookings-loyalty-and-the-clandestine-world-of-closed-user-groups",
+          "tier": "secondary"
+        },
+        {
+          "name": "Utilize Closed User Group Customers to Increase Revenue and Direct Bookings",
+          "org": "RateGain",
+          "version": "",
+          "section": "",
+          "url": "https://rategain.com/blog/utilize-closed-user-group-customers-increase-revenue-direct-bookings/",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"18\" cy=\"16\" r=\"5\"/><circle cx=\"30\" cy=\"16\" r=\"5\"/><path d=\"M8 36c0-5.5 4.5-10 10-10h12c5.5 0 10 4.5 10 10\"/><rect x=\"20\" y=\"28\" width=\"8\" height=\"10\" rx=\"1\"/><path d=\"M22 32v2\"/></svg>",
+      "term": "Closed User Group (CUG)",
+      "definition": "A Closed User Group (CUG) is a private, access-restricted pricing tier used in hotel and travel distribution in which a special rate is only visible and bookable by verified members of a defined group — typically authenticated registered users of an OTA, airline loyalty members, or subscribers to a hotel direct-booking programme. Because the rate is not publicly displayed, it is generally accepted as a permitted exception to standard rate parity clauses, enabling hotels to offer lower prices to specific audiences without breaching their public rate commitments.",
+      "lastReviewed": "2026-10-04"
     },
     {
       "id": "co-branded-credit-card",
@@ -25338,6 +25605,100 @@
       "lastReviewed": "2026-07-14"
     },
     {
+      "id": "flexi-pass",
+      "vertical": "ground",
+      "category": "rail",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "유연 패스(Flexi Pass)",
+      "definition_ko": "Flexi Pass(유연 패스)는 정해진 유효 기간 내에서 비연속적인 날짜에 자유롭게 사용할 수 있는 고정 여행 일수를 부여하는 철도 패스 유형이다. 연속된 고정 일수를 활성화하는 연속형(consecutive) 철도 패스와 달리, Flexi Pass는 여행자가 여행할 날짜를 자유롭게 선택할 수 있어 도시 체류, 해상 이동, 기타 교통 수단과 조합하는 여정에 적합하다. Eurail Global Flexi Pass와 Interrail Global Flexi Pass가 가장 널리 유통되는 사례이다.",
+      "longDef": "A Flexi Pass defines two key parameters: the number of travel days (e.g., 5, 7, 10, or 15 days) and the validity period within which those days must be used (e.g., one or two months). On each day the pass holder wishes to travel, they activate the pass for that date — historically by writing the date in a paper pass, and now by activating it digitally in the Eurail or Interrail app. The validity period begins from the date of first activation and runs to the calendar date that exhausts the stated period (e.g., a 1-month pass activated on 18 August expires on 17 September). Flexi Passes are sold for single countries and for multi-country global networks; price varies by number of travel days, validity period, and pass class (1st or 2nd). In the OSDM (Open Sales and Distribution Model) and Interrail/Eurail reservation systems, each activated travel day creates a pass usage record against which seat reservations can be attached. Flexi Passes are distributed through national rail operators, Eurail Group B.V., and authorised rail agents worldwide. They are not the same as point-to-point advance tickets, which offer no flexibility on dates, or Season Tickets, which allow unlimited travel within a fixed calendar period.",
+      "longDef_ko": "Flexi Pass는 두 가지 핵심 매개변수를 정의한다: 여행 일수(예: 5·7·10·15일)와 그 일수를 사용해야 하는 유효 기간(예: 1개월 또는 2개월). 패스 소지자는 여행하는 날 해당 날짜에 패스를 활성화한다 — 과거에는 종이 패스에 날짜를 적는 방식이었고, 현재는 Eurail 또는 Interrail 앱에서 디지털로 활성화한다. 유효 기간은 최초 활성화일부터 시작되어 명시된 기간이 소진되는 달력 날짜까지 이어진다(예: 1개월 패스를 8월 18일에 활성화하면 9월 17일에 만료). Flexi Pass는 단일 국가와 다국가 글로벌 네트워크 모두를 위해 판매되며, 가격은 여행 일수, 유효 기간, 패스 등급(1등석 또는 2등석)에 따라 달라진다.",
+      "standardBody": "Eurail",
+      "aliases": [
+        "Flexible Pass",
+        "Select Pass",
+        "Non-Consecutive Pass"
+      ],
+      "providerTerms": [
+        {
+          "provider": "Eurail Group B.V.",
+          "term": "Eurail Flexi Pass",
+          "context": "Eurail offers Global Flexi Passes (e.g., 5 days within 1 month, 10 days within 2 months) for non-EU residents travelling in Europe, as well as single-country flexi options.",
+          "context_ko": "Eurail은 EU 비거주자를 대상으로 유럽 내 여행을 위한 Global Flexi Pass(예: 1개월 내 5일, 2개월 내 10일 등)와 단일 국가 플렉시 옵션을 제공한다.",
+          "relationship": "same"
+        },
+        {
+          "provider": "Interrail (Rail Europe Group)",
+          "term": "Interrail Flexi Pass",
+          "context": "Interrail offers Global Flexi Passes and one-country flexi passes for EU/EEA residents, with the same non-consecutive-day structure as Eurail.",
+          "context_ko": "Interrail은 EU/EEA 거주자를 위해 Global Flexi Pass와 1개국 플렉시 패스를 제공하며, Eurail과 동일한 비연속 일수 구조를 사용한다.",
+          "relationship": "same"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Eurail Pass",
+          "targetId": "eurail-pass"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Interrail Pass",
+          "targetId": "interrail-pass"
+        },
+        {
+          "type": "contrasts",
+          "targetTerm": "Season Ticket",
+          "targetId": "season-ticket"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Eurail Pass",
+          "explanation": "A Eurail Pass is the umbrella product for rail passes sold to non-EU/EEA residents travelling in Europe; a Flexi Pass is a specific pass type within the Eurail product range that allocates a set number of non-consecutive travel days within a validity period, as opposed to the continuous Eurail Pass, which grants travel on every consecutive calendar day within a fixed block.",
+          "explanation_ko": "Eurail Pass는 유럽을 여행하는 EU/EEA 비거주자에게 판매되는 철도 패스의 포괄 상품이고, Flexi Pass는 Eurail 상품 범위 내의 특정 패스 유형으로 유효 기간 내에서 비연속적인 고정 여행 일수를 부여한다. 이는 고정 구간 내 매일 연속으로 여행 가능한 연속형 Eurail Pass와 대조된다.",
+          "targetId": "eurail-pass"
+        },
+        {
+          "targetTerm": "Season Ticket",
+          "explanation": "A Season Ticket allows unlimited travel between designated stations (typically a commuter route) for a fixed calendar period; a Flexi Pass allows a fixed number of days of travel across a broad rail network (potentially the whole of Europe) within a longer validity period, but does not permit unlimited travel — each travel day counts against the allocated total.",
+          "explanation_ko": "시즌권(Season Ticket)은 고정 달력 기간 동안 지정 구간(통상 통근 노선) 사이의 무제한 이용이 가능한 반면, Flexi Pass는 더 긴 유효 기간 내에서 넓은 철도 네트워크(잠재적으로 유럽 전체)에서 고정 일수의 이용이 가능하지만 무제한 이용은 아니며 각 여행 일수는 배정된 총량에서 차감된다.",
+          "targetId": "season-ticket"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Flexi vs Continuous Pass — EveryRail Glossary",
+          "org": "EveryRail",
+          "version": "",
+          "section": "",
+          "url": "https://everyrail.com/glossary/flexi-vs-continuous-pass/",
+          "tier": "secondary"
+        },
+        {
+          "name": "Eurail Global Pass — Types and Options",
+          "org": "Eurail Group B.V.",
+          "version": "",
+          "section": "",
+          "url": "https://www.eurail.com/en/eurail-passes/global-pass",
+          "tier": "vendor-doc"
+        },
+        {
+          "name": "Interrail Global Pass — Types and Options",
+          "org": "Interrail / Rail Europe Group",
+          "version": "",
+          "section": "",
+          "url": "https://www.interrail.eu/en/interrail-passes/global-pass",
+          "tier": "vendor-doc"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"8\" width=\"32\" height=\"32\" rx=\"3\"/><line x1=\"8\" y1=\"18\" x2=\"40\" y2=\"18\"/><line x1=\"16\" y1=\"8\" x2=\"16\" y2=\"18\"/><line x1=\"32\" y1=\"8\" x2=\"32\" y2=\"18\"/><circle cx=\"18\" cy=\"28\" r=\"3\" fill=\"currentColor\"/><circle cx=\"30\" cy=\"28\" r=\"3\" fill=\"currentColor\"/><circle cx=\"24\" cy=\"35\" r=\"1.5\" stroke=\"none\" fill=\"currentColor\" opacity=\"0.4\"/></svg>",
+      "term": "Flexi Pass",
+      "definition": "A Flexi Pass is a type of rail pass that grants a fixed number of travel days that the holder may use freely on any non-consecutive dates within a defined validity period. Unlike a continuous (consecutive) rail pass, which activates a fixed block of consecutive days, a Flexi Pass allows the traveller to choose which days to travel, making it suited to itineraries that combine rail travel with stays in a city, sea crossings, or other modes. Eurail Global Flexi Pass and Interrail Global Flexi Pass are the most widely distributed examples.",
+      "lastReviewed": "2026-10-04"
+    },
+    {
       "id": "flexible-content-barcode-fcb",
       "vertical": "ground",
       "category": "rail",
@@ -26315,6 +26676,89 @@
       "term": "Fly-Cruise",
       "definition": "The air-inclusive cruise booking model in which the cruise line's own air program bundles flights to and from the embarkation/disembarkation ports with the cruise — typically adding airport-to-pier transfers and disruption protection. Branded programs such as Royal Caribbean's Air2Sea (formerly ChoiceAir / now 'Flights by Royal') let guests buy airfare through the line, often with price guarantees and dedicated re-accommodation support if a flight is delayed or cancelled.",
       "lastReviewed": "2026-06-18"
+    },
+    {
+      "id": "flygskam",
+      "vertical": "common",
+      "category": "sustainability",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "플뤼그스캄(비행 부끄러움)",
+      "definition_ko": "플뤼그스캄(Flygskam, 스웨덴어: 비행 부끄러움)은 항공 여행이 온실가스 배출과 기후 변화에 과도하게 기여한다는 이유로 비행을 자제하도록 촉구하는 사회 운동이다. 2018년 스웨덴에서 시작되어 기후 활동가 그레타 툰베리를 통해 전 세계에 확산된 이 운동은 스칸디나비아 지역에서 여행 행동의 측정 가능한 변화를 이끌었으며, 항공사 지속 가능성 전략, 지속 가능한 항공 연료(SAF) 공약 가속화, 정책 논의에 영향을 미쳤다.",
+      "longDef": "The term Flygskam already existed in Swedish, but it was in spring 2018 that the word gained social force when Swedish journalist and athlete Björn Ferry, opera singer Malena Ernman (Greta Thunberg's mother), and others publicly discussed feelings of guilt about flying for environmental reasons. The movement gathered wider momentum when Greta Thunberg famously refused to fly, travelling instead by sailing boat to climate conferences, which attracted global media coverage. In Sweden, domestic air passenger numbers declined noticeably in 2018–2019, and surveys showed a growing \"flight shame\" sentiment among younger travellers. The companion concept Tågskryt (train brag) — pride in choosing rail over air — emerged alongside it. The aviation industry responded with accelerated commitments: IATA's Fly Net Zero 2050 goal, airline net-zero pledges, SAF mandates (including ReFuelEU Aviation), and investment in carbon labelling schemes such as the Flight Emissions Label. The COVID-19 pandemic disrupted travel in 2020–2021, but sustainability consciousness remained elevated post-recovery, with climate considerations increasingly integrated into corporate travel policies and leisure booking behaviour.",
+      "longDef_ko": "플뤼그스캄이라는 단어는 스웨덴어에 이미 존재했지만, 2018년 봄 스웨덴 언론인·운동선수 비외른 페리, 오페라 가수 말레나 에른만(그레타 툰베리의 어머니) 등이 환경적 이유로 비행에 대한 죄책감을 공개적으로 논의하면서 사회적 힘을 얻었다. 그레타 툰베리가 비행기 탑승을 거부하고 기후 회의를 항해선으로 이동한 것이 세계 미디어의 주목을 받으며 더욱 확산되었다. 스웨덴에서는 2018–2019년 국내선 항공 여객 수가 눈에 띄게 감소했으며, 설문조사에서 젊은 여행자들 사이에 \"비행 부끄러움\" 감정이 커지고 있음을 보여주었다. 동반 개념인 Tågskryt(기차 자랑)—항공 대신 철도를 선택하는 것에 대한 자부심—이 함께 등장했다. 항공 산업은 IATA의 Fly Net Zero 2050 목표, 항공사 넷제로 공약, SAF 의무화(ReFuelEU Aviation 포함), 비행 배출 라벨 등의 탄소 라벨링 제도 투자로 응답했다.",
+      "standardBody": "UNWTO",
+      "aliases": [
+        "Flight Shame",
+        "Flight Guilt",
+        "Flugscham (German)"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Sustainable Tourism",
+          "targetId": "sustainable-tourism"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Sustainable Aviation Fuel (SAF)",
+          "targetId": "sustainable-aviation-fuel-saf"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Fly Net Zero 2050",
+          "targetId": "fly-net-zero-2050"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Carbon Offset",
+          "targetId": "carbon-offset"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Sustainable Tourism",
+          "explanation": "Sustainable tourism is an industry management framework and policy goal that guides how destinations and operators minimise environmental, social, and economic harm; flygskam is a grassroots behavioural movement that places the moral burden of flight avoidance on the individual traveller rather than on industry systems. The two are complementary but operate at different levels.",
+          "explanation_ko": "지속 가능한 관광은 목적지와 운영사가 환경·사회·경제적 피해를 최소화하는 방법을 안내하는 산업 관리 프레임워크이자 정책 목표이고, 플뤼그스캄은 비행 자제의 도덕적 부담을 산업 시스템이 아닌 개인 여행자에게 부여하는 풀뿌리 행동 운동이다. 둘은 보완적이지만 서로 다른 차원에서 작동한다.",
+          "targetId": "sustainable-tourism"
+        },
+        {
+          "targetTerm": "Fly Net Zero 2050",
+          "explanation": "Fly Net Zero 2050 is the IATA-led industry commitment for commercial aviation to achieve net-zero carbon emissions by 2050 through SAF, new aircraft technology, and carbon markets; flygskam is a consumer-behaviour movement that encourages individuals to fly less now due to current aviation emissions. Flygskam is driven by present-day consumer guilt; Fly Net Zero 2050 is a future supply-side decarbonisation roadmap.",
+          "explanation_ko": "Fly Net Zero 2050은 SAF, 신형 항공기 기술, 탄소 시장을 통해 2050년까지 상업 항공의 넷제로 탄소 배출을 달성하겠다는 IATA 주도 산업 공약이고, 플뤼그스캄은 현재의 항공 배출로 인해 개인에게 지금 당장 비행을 줄이도록 촉구하는 소비자 행동 운동이다. 플뤼그스캄은 현재의 소비자 죄책감에 의해 추동되고, Fly Net Zero 2050은 미래의 공급 측 탈탄소화 로드맵이다.",
+          "targetId": "fly-net-zero-2050"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Flight shame — Wikipedia",
+          "org": "Wikipedia",
+          "version": "",
+          "section": "",
+          "url": "https://en.wikipedia.org/wiki/Flight_shame",
+          "tier": "secondary"
+        },
+        {
+          "name": "Flightshame in Sweden — Nordics.info",
+          "org": "Nordic Council of Ministers / Nordics.info",
+          "version": "",
+          "section": "",
+          "url": "https://nordics.info/show/artikel/flightshame-in-sweden",
+          "tier": "secondary"
+        },
+        {
+          "name": "Sustainable Development — Tourism and Climate",
+          "org": "UNWTO",
+          "version": "",
+          "section": "",
+          "url": "https://www.unwto.org/sustainable-development",
+          "tier": "standard-body"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 28l8-8 6 4 10-12 4 4\"/><path d=\"M34 8l4 4-4 4\"/><circle cx=\"35\" cy=\"35\" r=\"7\"/><line x1=\"32\" y1=\"32\" x2=\"38\" y2=\"38\"/><line x1=\"38\" y1=\"32\" x2=\"32\" y2=\"38\"/></svg>",
+      "term": "Flygskam (Flight Shame)",
+      "definition": "Flygskam (Swedish: flight shame) is a social movement that discourages air travel on the grounds of its outsized contribution to greenhouse gas emissions and climate change. Originating in Sweden in 2018 and amplified globally by climate activist Greta Thunberg, the movement prompted measurable shifts in travel behaviour in Scandinavia and influenced policy debates, airline sustainability strategies, and the accelerated adoption of sustainable aviation fuel commitments worldwide.",
+      "lastReviewed": "2026-10-04"
     },
     {
       "id": "force-majeure",
@@ -52567,6 +53011,82 @@
       "term": "Pseudo City Code",
       "definition": "An alphanumeric identifier assigned by a GDS/CRS to a subscriber such as a travel agency or corporate travel department, used to associate bookings with the agency, access private (negotiated) fares, and control privileges. Despite the name it does not identify a geographic city.",
       "lastReviewed": "2026-06-15"
+    },
+    {
+      "id": "published-fare",
+      "vertical": "air",
+      "category": "air-shop",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "공시 운임(Published Fare)",
+      "definition_ko": "공시 운임(published fare)은 ATPCO(또는 GDS 직접)에 공개 타리프로 신고된 항공 운임으로, 제한 없이 모든 유통 채널에 동일한 가격으로 제공된다. 한정 유통으로 신고되어 지정 대리점·기업 계정·예약 채널에만 접근 가능한 협상 운임(negotiated/private fare)과 대조된다. 공시 운임은 항공 요금 체계의 기준이 되며, 자발적 변경·재발행·위약금 산정의 출발점을 형성한다.",
+      "longDef": "ATPCO defines a public tariff as one whose data is available for retrieval by any organisation once processed; fares filed in public tariffs are universally visible to all subscribing GDSs and booking channels at the same price without restriction. Airlines file published fares for all cabin classes, fare basis codes, and routing combinations, specifying conditions such as advance purchase requirements, minimum stay, non-refundability, and seasonality through ATPCO category rules (Cat 2–35). Unlike negotiated fares, published fares carry no \"need not match\" or \"net reporting\" flag; they are the single common price any agent can quote and book. In the context of repricing and reissue, the distinction matters significantly: an involuntary rerouting or schedule change reissue must compare against the fare originally paid (which may be published or negotiated) and the currently applicable published fare to determine any additional collection or waiver. The rise of NDC dynamic pricing has introduced some complexity: while traditional published fares are static ATPCO filings, NDC dynamic offers may produce prices not pre-filed in any public tariff, though underlying fare rules often still trace back to ATPCO-published constructs for historical and regulatory reasons.",
+      "longDef_ko": "ATPCO는 공개 타리프를 모든 가입 조직이 처리 후 조회할 수 있는 타리프로 정의하며, 공개 타리프에 신고된 운임은 제한 없이 모든 가입 GDS와 예약 채널에서 동일 가격으로 조회 가능하다. 항공사는 모든 좌석 등급, 운임 기준 코드, 구간 조합에 대해 ATPCO 카테고리 규칙(Cat 2–35)을 통해 사전 구매 요건, 최소 체류, 환불 불가, 계절성 등의 조건을 지정하여 공시 운임을 신고한다. 협상 운임과 달리 공시 운임에는 \"need not match\" 또는 \"net reporting\" 플래그가 없어, 어떤 대리점이든 인용하고 예약할 수 있는 단일 공통 가격이다. 재요금 산정 및 재발행 맥락에서 이 구분은 중요하다: 비자발적 경로 변경이나 일정 변경 재발행은 추가 징수 또는 면제 결정을 위해 원래 지불한 운임(공시 또는 협상)과 현재 적용 가능한 공시 운임을 비교해야 한다.",
+      "standardBody": "ATPCO",
+      "aliases": [
+        "Public Fare",
+        "Filed Fare",
+        "Tariff Fare",
+        "Normal Fare"
+      ],
+      "relationships": [
+        {
+          "type": "contrasts",
+          "targetTerm": "Negotiated Fare",
+          "targetId": "negotiated-fare"
+        },
+        {
+          "type": "related",
+          "targetTerm": "ATPCO",
+          "targetId": "atpco"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Fare Basis Code",
+          "targetId": "fare-basis-code"
+        },
+        {
+          "type": "related",
+          "targetTerm": "GDS",
+          "targetId": "gds"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Negotiated Fare",
+          "explanation": "A negotiated (private) fare is filed with limited distribution in ATPCO — it is visible only to designated agencies or booking channels and the fare amount may be net or selling; a published fare is filed in a public tariff accessible to all distribution channels simultaneously at the same price, with no distribution restriction. In passenger booking systems a \"private fare\" indicator distinguishes the two.",
+          "explanation_ko": "협상 운임(private fare)은 ATPCO에 한정 유통으로 신고되어 지정 대리점이나 예약 채널에만 표시되며 운임 금액은 순액(net) 또는 판매가(selling)일 수 있고, 공시 운임은 배포 제한 없이 모든 유통 채널에 동시에 동일 가격으로 접근 가능한 공개 타리프에 신고된다. 예약 시스템에서 \"private fare\" 표시자가 둘을 구분한다.",
+          "targetId": "negotiated-fare"
+        },
+        {
+          "targetTerm": "Fare Family",
+          "explanation": "A Fare Family (Branded Fare) is a marketing bundle that groups fares with defined ancillary inclusions and restrictions under a brand name such as Basic or Flex; a published fare is the underlying price filed with ATPCO. A single branded fare tier can map to multiple published fares across different booking classes and routing combinations.",
+          "explanation_ko": "운임 패밀리(Fare Family, 브랜드 운임)는 Basic, Flex 같은 브랜드명으로 정의된 부가 포함 사항과 제약 조건을 포함한 운임 묶음이고, 공시 운임은 ATPCO에 신고된 기초 가격이다. 단일 브랜드 운임 등급은 다양한 예약 등급과 구간 조합에 걸친 여러 공시 운임으로 매핑될 수 있다.",
+          "targetId": "fare-family"
+        }
+      ],
+      "sources": [
+        {
+          "name": "ATPCO Glossary — Published Fare / Public Tariff",
+          "org": "ATPCO",
+          "version": "",
+          "section": "",
+          "url": "https://www.atpco.net/glossary/P",
+          "tier": "standard-body"
+        },
+        {
+          "name": "ATPCO Glossary — Negotiated Fare",
+          "org": "ATPCO",
+          "version": "",
+          "section": "",
+          "url": "https://www.atpco.net/glossary/N",
+          "tier": "standard-body"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"6\" width=\"28\" height=\"36\" rx=\"2\"/><line x1=\"16\" y1=\"14\" x2=\"32\" y2=\"14\"/><line x1=\"16\" y1=\"20\" x2=\"32\" y2=\"20\"/><line x1=\"16\" y1=\"26\" x2=\"24\" y2=\"26\"/><path d=\"M26 32l4-4 4 4\"/><line x1=\"30\" y1=\"28\" x2=\"30\" y2=\"38\"/></svg>",
+      "term": "Published Fare",
+      "definition": "A published fare is an airline fare filed with ATPCO (or directly with a GDS) in a public tariff, made available to all distribution channels at the same price without restriction. It contrasts with a negotiated (private) fare, which is filed with limited distribution and is accessible only to designated agencies, corporate accounts, or booking channels. Published fares are the baseline of the airline pricing system and form the starting point for all voluntary change, reissue, and penalty calculations.",
+      "lastReviewed": "2026-10-04"
     },
     {
       "id": "queue",
