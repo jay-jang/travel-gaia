@@ -2,8 +2,8 @@
   "meta": {
     "name": "Travel Wiki",
     "tagline": "여행 산업 용어 백과사전",
-    "generatedAt": "2026-10-05",
-    "entryCount": 836,
+    "generatedAt": "2026-10-06",
+    "entryCount": 842,
     "categoryCount": 20,
     "verticalCount": 6
   },
@@ -18975,6 +18975,90 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "day-delegate-rate",
+      "vertical": "lodging",
+      "category": "hotel-rate",
+      "conceptType": "business-term",
+      "status": "active",
+      "abbreviation": "DDR",
+      "term_ko": "일일 참가자 요금(DDR, Day Delegate Rate)",
+      "definition_ko": "호텔이나 컨퍼런스 시설이 회의·이벤트 고객에게 제공하는 1인당 1일 통합 패키지 요금으로, 회의실 임대·음향영상 장비·티/커피 브레이크·업무용 점심을 단일 가격으로 묶는다. MICE(회의·인센티브·컨퍼런스·전시) 업계의 표준 가격 단위이다.",
+      "longDef": "The DDR simplifies event budgeting by bundling what would otherwise be separately negotiated cost items — venue hire, catering, AV, and stationery — into a single headline number that scales linearly with headcount. A typical DDR package covers: main meeting room (full-day); two tea/coffee breaks; a working lunch (two courses); projector, screen, and flipchart; Wi-Fi; and delegate stationery. Items excluded from DDR vary by property but commonly include overnight accommodation, parking at city-centre venues, alcohol, and room hire for break-out rooms. An extended variant — the 24-Hour Delegate Rate (24HDR) — adds one night of accommodation and dinner. In the UK, DDRs are benchmarked by the Meetings Industry Association (MIA) and included in hotel group rate cards; similar packages are sold globally under terms such as Day Meeting Package (DMP) or Conference Day Rate.",
+      "longDef_ko": "DDR은 시설 임대·케이터링·음향영상·문구류 등 개별적으로 협상해야 하는 비용 항목들을 단일 가격으로 묶어 이벤트 예산 편성을 간소화하며, 참가자 수에 따라 선형적으로 확장된다. 일반적인 DDR 패키지에 포함되는 항목: 메인 회의실(하루 종일), 티/커피 브레이크 2회, 2코스 업무용 점심, 프로젝터·스크린·플립차트, Wi-Fi, 참가자 문구류. DDR에서 제외되는 항목은 시설에 따라 다르지만, 일반적으로 숙박·도심 시설 주차·주류·별도 회의실 임대가 포함된다. 확장 형태인 24시간 참가자 요금(24HDR)은 1박 숙박과 저녁 식사를 추가한다. 영국에서는 MIA(Meetings Industry Association)가 DDR을 벤치마킹하며, 유사한 패키지가 전 세계에서 Day Meeting Package(DMP) 또는 Conference Day Rate 등의 명칭으로 판매된다.",
+      "aliases": [
+        "DDR",
+        "Daily Delegate Rate",
+        "Day Meeting Package",
+        "DMP",
+        "Conference Day Rate",
+        "Delegate Package"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "MICE",
+          "targetId": "mice"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Group Block",
+          "targetId": "group-block"
+        },
+        {
+          "type": "related",
+          "targetTerm": "ADR",
+          "targetId": "adr"
+        },
+        {
+          "type": "related",
+          "targetTerm": "RevPAR",
+          "targetId": "revpar"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "ADR",
+          "explanation": "ADR (Average Daily Rate) is a backward-looking hotel revenue metric measuring the average price achieved per occupied room; DDR is a forward-facing per-person package price for meetings and events that bundles room hire with catering and AV into a single contracted rate.",
+          "explanation_ko": "ADR(객실 평균 단가)은 판매된 객실당 실현된 평균 가격을 측정하는 사후 호텔 수익 지표이고, DDR은 회의실 임대·케이터링·AV를 단일 계약 요금으로 묶는 회의·이벤트용 1인당 사전 패키지 가격이다.",
+          "targetId": "adr"
+        },
+        {
+          "targetTerm": "Group Block",
+          "explanation": "A group block is a reserved allocation of guestrooms (sleeping accommodation) for a group at a negotiated rate; a DDR is the meeting-space and catering package for the same group during their conference day — the two are often quoted together but cover different hospitality cost elements.",
+          "explanation_ko": "그룹 블록은 그룹을 위해 협의된 요금으로 예약된 객실(숙박) 배정이고, DDR은 동일 그룹의 컨퍼런스 당일 회의 공간·케이터링 패키지이다. 두 가지는 흔히 함께 견적되지만 각각 다른 호스피탈리티 비용 항목을 포괄한다.",
+          "targetId": "group-block"
+        },
+        {
+          "targetTerm": "MICE",
+          "explanation": "MICE is the industry segment encompassing Meetings, Incentives, Conferences, and Exhibitions; DDR is one of the primary pricing formats through which hotels sell their meeting facilities and catering services to the MICE segment.",
+          "explanation_ko": "MICE는 회의·인센티브·컨퍼런스·전시를 아우르는 산업 부문이고, DDR은 호텔이 MICE 부문에 회의 시설과 케이터링 서비스를 판매하는 주요 가격 포맷 중 하나이다.",
+          "targetId": "mice"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Daily Delegate Rate (DDR) — hospitality glossary",
+          "org": "AltexSoft",
+          "version": "",
+          "section": "",
+          "url": "https://www.altexsoft.com/glossary/daily-delegate-rate-ddr/",
+          "tier": "secondary"
+        },
+        {
+          "name": "Hotel abbreviations list — Guide to hospitality terms",
+          "org": "Engine (Business Travel)",
+          "version": "",
+          "section": "",
+          "url": "https://engine.com/blog/hotel-terms",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"16\" width=\"36\" height=\"24\" rx=\"2\"/><path d=\"M14 16V10a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v6\"/><line x1=\"6\" y1=\"26\" x2=\"42\" y2=\"26\"/><circle cx=\"16\" cy=\"21\" r=\"2\"/><circle cx=\"24\" cy=\"21\" r=\"2\"/><circle cx=\"32\" cy=\"21\" r=\"2\"/></svg>",
+      "term": "Day Delegate Rate (DDR)",
+      "definition": "An all-inclusive, per-person daily meeting package offered by a hotel or conference venue that bundles the main meeting room hire, audio-visual equipment, tea/coffee breaks, and a working lunch into a single quoted price per delegate per day — the standard pricing unit in the MICE (Meetings, Incentives, Conferences, and Exhibitions) industry.",
+      "lastReviewed": "2026-10-06"
+    },
+    {
       "id": "day-use",
       "vertical": "lodging",
       "category": "hotel-rate",
@@ -27090,6 +27174,82 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "formal-night",
+      "vertical": "cruise",
+      "category": "cruise",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "포멀 나이트(Formal Night)",
+      "definition_ko": "크루즈 항해 중 드레스 코드가 포멀(이브닝 가운·칵테일 드레스·정장·턱시도 등)로 격상되는 지정 저녁으로, 갈라 디너, 캡틴의 리셉션, 특별 공연 등이 함께 진행된다. 프리미엄·럭셔리 크루즈 라인을 중심으로 브랜드 차별화와 특별 경험 제공의 수단으로 활용된다.",
+      "longDef": "Formal nights trace their origins to the golden age of ocean liner transatlantic crossings, when evening dress was expected throughout a voyage. On contemporary cruise ships, formal nights typically occur once or twice per voyage (more frequently on longer itineraries), are announced in the daily programme, and are associated with gala menus in the main dining room, a captain's cocktail reception or captain's table, and headline entertainment. Most mainstream cruise lines now allow guests to dine in casual alternative restaurants on formal evenings, and enforcement of dress codes has relaxed across much of the fleet. CLIA industry data note a broad shift toward 'resort casual' norms, but formal nights remain a retained feature — particularly on premium and luxury lines (e.g., Cunard, Regent Seven Seas) — where they carry strong brand identity and guest expectation of elevated service.",
+      "longDef_ko": "포멀 나이트의 기원은 대서양 황금기 여객선 항해 시대로, 당시에는 항해 내내 정장 착용이 기대됐다. 현대 크루즈 선에서 포멀 나이트는 보통 항해당 1~2회(장거리 일정에서는 더 자주) 진행되며, 일일 프로그램에 공지된다. 메인 다이닝룸의 갈라 메뉴, 캡틴의 칵테일 리셉션 또는 캡틴스 테이블, 특별 엔터테인먼트가 함께 제공된다. 대부분의 메인스트림 크루즈 라인은 포멀 나이트에도 캐주얼 레스토랑 이용을 허용하며, 드레스코드 집행이 전반적으로 완화됐다. CLIA 데이터는 대부분의 크루즈 라인이 '리조트 캐주얼' 기조로 전환하고 있음을 나타내지만, 특히 Cunard·Regent Seven Seas 등 프리미엄·럭셔리 라인에서는 포멀 나이트가 강한 브랜드 정체성과 서비스 수준의 상징으로 여전히 유지된다.",
+      "aliases": [
+        "Gala Evening",
+        "Gala Night",
+        "Black Tie Night",
+        "Formal Evening",
+        "Dressy Night"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Cruise Itinerary",
+          "targetId": "cruise-itinerary"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Specialty Dining",
+          "targetId": "specialty-dining"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Open Seating Dining",
+          "targetId": "open-seating-dining"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Daily Service Charge",
+          "targetId": "daily-service-charge"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Specialty Dining",
+          "explanation": "Specialty dining is any paid or reservation-only alternative restaurant onboard that contrasts with the included main dining room; a formal night is a whole-ship event tied to the main dining room experience and social programme, and specialty restaurants may or may not observe the elevated dress code.",
+          "explanation_ko": "스페셜티 다이닝은 포함된 메인 다이닝룸과 대비되는 유료·예약 전용 대안 레스토랑 전체를 가리키고, 포멀 나이트는 메인 다이닝룸 경험과 사교 프로그램에 연계된 선박 전체의 이벤트로, 스페셜티 레스토랑에도 격상된 드레스코드가 적용될 수도 있고 아닐 수도 있다.",
+          "targetId": "specialty-dining"
+        },
+        {
+          "targetTerm": "Open Seating Dining",
+          "explanation": "Open seating dining is a dining-room operational policy about how guests are seated (flexible times, any available table); formal night is a themed dress-code event that can occur regardless of whether the ship uses open or fixed seating.",
+          "explanation_ko": "Open seating dining은 유연한 시간·자유석을 허용하는 다이닝룸의 운영 방식이고, 포멀 나이트는 드레스코드 테마 이벤트로 선박이 오픈 시팅이든 고정 시팅이든 무관하게 진행된다.",
+          "targetId": "open-seating-dining"
+        }
+      ],
+      "sources": [
+        {
+          "name": "A Guide to Cruise Formal Nights",
+          "org": "Porthole Cruise and Travel Magazine",
+          "version": "",
+          "section": "",
+          "url": "https://porthole.com/a-guide-to-cruise-formal-nights/",
+          "tier": "secondary"
+        },
+        {
+          "name": "Cruise Line Dress Codes",
+          "org": "Frommers",
+          "version": "",
+          "section": "",
+          "url": "https://www.frommers.com/tips/cruise/cruise-line-dress-codes",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"12\" r=\"5\"/><path d=\"M15 42V30c0-3 3-5 6-5h6c3 0 6 2 6 5v12\"/><path d=\"M18 28l6 7 6-7\"/><path d=\"M20 35h8\"/></svg>",
+      "term": "Formal Night",
+      "definition": "A designated evening during a cruise voyage when the onboard dress code is elevated to formal or smart-formal attire — evening gowns, cocktail dresses, suits, or tuxedos — combined with a gala dining experience, captain's reception, and enhanced entertainment. Formal nights serve as a brand differentiator and premium experience marker, particularly for mainstream, premium, and luxury cruise lines.",
+      "lastReviewed": "2026-10-06"
+    },
+    {
       "id": "franchise-fee",
       "vertical": "lodging",
       "category": "hotel-rate",
@@ -33110,6 +33270,75 @@
       "lastReviewed": "2026-06-18"
     },
     {
+      "id": "hybrid-carrier",
+      "vertical": "air",
+      "category": "air-shop",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "하이브리드 항공사(Hybrid Carrier)",
+      "definition_ko": "FSC(대형 항공사)와 LCC(저비용 항공사) 양쪽의 요소를 혼합한 항공사 모델로, 보통 a la carte 부가 서비스 요금 체계와 포인트-투-포인트 노선 구조를 사용하면서도 상용고객 프로그램, 인터라인 협약 또는 네트워크 연결성을 함께 유지한다.",
+      "longDef": "The hybrid carrier concept emerged as LCCs matured and sought new revenue streams and some FSCs stripped costs from short-haul routes. Airlines such as JetBlue (USA), Jetstar (Asia-Pacific), and Wizz Air (Europe) are frequently cited examples: they price fares at the low end, monetize ancillaries aggressively, and yet offer loyalty programs or interline arrangements that pure LCCs historically avoided. IATA and CAPA Centre for Aviation both reference the hybrid carrier segment when tracking airline business-model convergence. The lines between categories are increasingly blurred: industry analyses published by IATA note that true LCCs are a shrinking share of the market as hybrid features become the competitive norm.",
+      "longDef_ko": "하이브리드 항공사 개념은 LCC가 성숙기에 접어들며 새로운 수익원을 모색하고, 일부 FSC가 단거리 노선에서 비용을 절감하면서 등장했다. JetBlue(미국), Jetstar(아시아-태평양), Wizz Air(유럽) 등이 대표적 예시로 자주 언급된다. 이들은 저가 운임 체계를 유지하면서 부가 서비스를 적극적으로 유료화하고, 동시에 순수 LCC가 역사적으로 기피했던 상용고객 프로그램이나 인터라인 협약을 제공한다. IATA와 CAPA는 항공사 비즈니스 모델 수렴을 추적할 때 하이브리드 항공사 부문을 별도로 언급하며, 하이브리드 특성이 경쟁의 표준이 되면서 순수 LCC 비중은 감소 추세다.",
+      "aliases": [
+        "Hybrid Airline",
+        "Value Carrier",
+        "New Generation Carrier"
+      ],
+      "relationships": [
+        {
+          "type": "broader",
+          "targetTerm": "Low Cost Carrier",
+          "targetId": "low-cost-carrier"
+        },
+        {
+          "type": "contrasts",
+          "targetTerm": "Full-Service Carrier",
+          "targetId": "full-service-carrier"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Ancillary Service",
+          "targetId": "ancillary-service"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Low Cost Carrier",
+          "explanation": "A pure LCC competes solely on base-fare price, stripping every service into a fee and typically avoiding interline or loyalty features; a hybrid carrier retains some bundled or premium options and builds distribution or loyalty infrastructure beyond the pure LCC model.",
+          "explanation_ko": "순수 LCC는 기본 운임 가격에만 경쟁력을 두며 모든 서비스를 별도 유료화하고 인터라인·상용고객 기능을 기피하는 반면, 하이브리드 항공사는 일부 통합 서비스나 프리미엄 옵션을 유지하고 순수 LCC 모델을 넘는 유통·로열티 인프라를 구축한다.",
+          "targetId": "low-cost-carrier"
+        },
+        {
+          "targetTerm": "Full-Service Carrier",
+          "explanation": "An FSC bundles seat, meals, lounge access, and interline connectivity into the ticket price and operates a hub network; a hybrid carrier deconstructs much of that bundle into optional fees and focuses on point-to-point simplicity while adopting selected FSC traits.",
+          "explanation_ko": "FSC는 좌석·기내식·라운지 접근·인터라인 연결성을 항공권 가격에 묶고 허브 네트워크를 운영하는 반면, 하이브리드 항공사는 그 번들의 상당 부분을 선택적 유료 항목으로 분리하고 포인트-투-포인트 단순성에 초점을 맞추면서 일부 FSC 특성을 채택한다.",
+          "targetId": "full-service-carrier"
+        }
+      ],
+      "sources": [
+        {
+          "name": "ULCCs & Hybrid Airlines in the Americas — True LCCs start to look like a vanishing species",
+          "org": "CAPA Centre for Aviation / IATA",
+          "version": "",
+          "section": "",
+          "url": "https://centreforaviation.com/analysis/reports/iata-ulccs-hybrid-airlines-in-the-americas-true-lccs-start-to-look-like-a-vanishing-species-281884",
+          "tier": "secondary"
+        },
+        {
+          "name": "What is a Hybrid Airline and Why They Will Join Our Awards",
+          "org": "AirlineRatings",
+          "version": "",
+          "section": "",
+          "url": "https://airlineratings.com/articles/what-is-a-hybrid-airline-and-why-they-will-join-our-awards-",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 28l8-8 4 4 10-12 4 4 10-8\"/><path d=\"M38 18l2 6-6 2\"/><path d=\"M6 36h36\"/></svg>",
+      "term": "Hybrid Carrier",
+      "definition": "An airline that blends elements of both the full-service carrier (FSC) and low-cost carrier (LCC) business models — typically offering unbundled ancillary pricing and point-to-point fare structures while retaining connectivity through a loyalty programme, interline agreements, or a wider network.",
+      "lastReviewed": "2026-10-06"
+    },
+    {
       "id": "iata-clearing-house",
       "vertical": "common",
       "category": "pay",
@@ -35259,6 +35488,77 @@
       "term": "Insetting",
       "definition": "A corporate climate strategy in which an organisation invests in greenhouse gas emission reductions, removals, or avoided deforestation within its own value chain and supply chain — for example, funding agroforestry among its food suppliers, restoring reefs at cruise destinations, or supporting regenerative land management by the farmers who supply its lodges — as distinct from carbon offsetting, which purchases credits from unrelated third-party projects outside the company's supply chain. Insetting keeps the environmental and community benefit directly connected to the commercial activity generating the emissions.",
       "lastReviewed": "2026-08-07"
+    },
+    {
+      "id": "inspection-trip",
+      "vertical": "tours",
+      "category": "tour-ops",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "인스펙션 트립(Inspection Trip)",
+      "definition_ko": "여행사, 투어 오퍼레이터, DMC 또는 법인 여행 담당자 등 전문 구매자가 계약 체결 전에 숙박 시설, 목적지 인프라, 공급업체 서비스를 직접 방문하여 품질과 적합성을 검증하는 구조화된 현장 방문. 현장 조사(Site Inspection) 또는 현장 방문(Site Visit)이라고도 한다.",
+      "longDef": "Unlike a FAM trip — which is a broader, group-based familiarisation experience designed to promote a destination to a wider trade audience — an inspection trip is a focused visit arranged by a specific supplier or DMC for a buyer who is in active contracting discussions. The buyer evaluates bedrooms, meeting rooms, food and beverage outlets, accessibility, transfer logistics, and overall product suitability with the specific intent of deciding whether to recommend, contract, or include the property in an itinerary. The cost may be borne partly or wholly by the host supplier. Fáilte Ireland and other national tourism organisations define site visits/inspections as the mechanism for Professional Conference Organisers (PCOs), tour operators, and corporate buyers to inspect potential venues and suppliers prior to committing. Site inspection reports are often formalised in a written evaluation shared with sales managers.",
+      "longDef_ko": "포괄적이고 그룹 중심으로 목적지를 더 넓은 여행업 관계자에게 홍보하는 팸 트립과 달리, 인스펙션 트립은 계약 논의가 진행 중인 특정 구매자를 위해 특정 공급업체나 DMC가 주선하는 집중적인 방문이다. 구매자는 객실·회의실·식음료 시설·접근성·이동 물류 및 전반적인 상품 적합성을 평가하며, 해당 시설을 추천하거나 계약하거나 일정에 포함할지 여부를 결정하기 위한 목적으로 진행된다. 비용은 호스트 공급업체가 부분 또는 전액 부담하는 경우가 많다. Fáilte Ireland 등 국가 관광 기관은 PCO·투어 오퍼레이터·법인 구매자가 잠재 시설 및 공급업체를 계약 전에 평가하는 메커니즘으로 사이트 방문/인스펙션을 정의한다. 현장 조사 보고서는 영업 매니저와 공유하는 서면 평가서로 공식화되는 경우가 많다.",
+      "aliases": [
+        "Site Inspection",
+        "Site Visit",
+        "Product Inspection Visit",
+        "Property Inspection",
+        "Venue Inspection"
+      ],
+      "relationships": [
+        {
+          "type": "contrasts",
+          "targetTerm": "FAM Trip",
+          "targetId": "fam-trip"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Receptive Tour Operator",
+          "targetId": "receptive-tour-operator"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Destination Management Company",
+          "targetId": "destination-management-company"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "FAM Trip",
+          "explanation": "A FAM trip is a complimentary or discounted group trip designed to familiarise a broad group of travel advisors or journalists with a destination; an inspection trip is a targeted, buyer-initiated visit to a specific property or supplier — typically one-on-one or very small group — conducted because a purchase or contract decision is imminent.",
+          "explanation_ko": "팸 트립은 여행사나 기자 등 광범위한 그룹이 목적지를 체험하도록 무료 또는 할인가로 제공되는 홍보 여행이고, 인스펙션 트립은 구매 또는 계약 결정이 임박한 상황에서 특정 시설이나 공급업체를 대상으로 구매자가 주도하는 1:1 또는 소수 그룹의 집중 방문이다.",
+          "targetId": "fam-trip"
+        },
+        {
+          "targetTerm": "Receptive Tour Operator",
+          "explanation": "A receptive tour operator is the in-destination supplier that receives and services incoming groups; an inspection trip is the pre-contract process by which a buying tour operator or travel manager visits and evaluates that receptive operator before signing a contract.",
+          "explanation_ko": "접수 투어 오퍼레이터(RTO)는 입국하는 그룹을 수용·서비스하는 현지 공급업체이고, 인스펙션 트립은 구매 투어 오퍼레이터나 여행 담당자가 계약 체결 전에 해당 RTO를 방문·평가하는 사전 계약 과정이다.",
+          "targetId": "receptive-tour-operator"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Site Visits & Familiarisation Trips — Get Brexit Ready guidance",
+          "org": "Fáilte Ireland",
+          "version": "",
+          "section": "",
+          "url": "https://www.failteireland.ie/FailteIreland/media/WebsiteStructure/Documents/Brexit/GB_NI/Market_Diversifcation/Get-Brexit-Ready-Site-Visits-Familiarisation-Trips.pdf",
+          "tier": "secondary"
+        },
+        {
+          "name": "FAM Trip — hospitality glossary",
+          "org": "XOTELS",
+          "version": "",
+          "section": "",
+          "url": "https://xotels.com/en/glossary/fam-trip",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"12\" width=\"20\" height=\"24\" rx=\"2\"/><path d=\"M16 20h8\"/><path d=\"M16 26h5\"/><circle cx=\"34\" cy=\"32\" r=\"6\"/><line x1=\"38.2\" y1=\"36.2\" x2=\"42\" y2=\"40\"/></svg>",
+      "term": "Inspection Trip",
+      "definition": "A structured visit by a professional travel buyer — travel agent, tour operator, DMC, or corporate travel manager — to inspect accommodation, destination infrastructure, or supplier services near the point of contracting, allowing the buyer to verify quality and suitability before committing to purchase or contract. Also called a site inspection or site visit.",
+      "lastReviewed": "2026-10-06"
     },
     {
       "id": "instant-confirmation",
@@ -51946,6 +52246,88 @@
       "lastReviewed": "2026-06-17"
     },
     {
+      "id": "pre-post-cruise-package",
+      "vertical": "cruise",
+      "category": "cruise",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "크루즈 전후 패키지(Pre/Post-Cruise Package)",
+      "definition_ko": "승선(pre-cruise) 직전 또는 하선(post-cruise) 직후에 출발 항구 또는 환승 도시에서 크루즈 승객에게 판매되는 호텔 숙박·공항-부두 이동·선택적 육상 투어로 구성된 연장 패키지. 여행의 가치를 높이고 당일 이동의 불편함을 줄여 준다.",
+      "longDef": "Pre/post-cruise packages are sold both by cruise lines directly and by specialist tour operators. CLIA research found that close to two-thirds of cruise passengers book some form of pre- or post-cruise hotel arrangement. Major cruise lines offer branded programmes (e.g., Celebrity Cruises' 'Hotels by Celebrity', Norwegian Cruise Line's pre/post hotel programme), while third-party operators such as Avanti Destinations provide dedicated microsites for travel advisors. Packages are typically fully commissionable to travel advisors and bundle hotel at negotiated rates, private transfers between airport and cruise terminal, and optional sightseeing. They help guests avoid the risk of missing embarkation due to flight delays and allow deeper exploration of the embarkation or disembarkation city. Pre-cruise packages are particularly high-value for fly-cruise passengers and for itineraries that begin in less-familiar international ports.",
+      "longDef_ko": "Pre/post-cruise 패키지는 선사 직판(예: Celebrity Cruises의 \"Hotels by Celebrity\", Norwegian Cruise Line의 Pre/Post 호텔 프로그램)과 전문 투어 오퍼레이터(예: Avanti Destinations의 여행사 전용 마이크로사이트) 두 채널을 통해 판매된다. CLIA 조사에 따르면 크루즈 승객의 약 3분의 2가 어떤 형태로든 Pre/Post 호텔 상품을 예약한다. 패키지는 일반적으로 여행사에 전액 커미션이 지급되며, 협의된 요금의 호텔, 공항-크루즈 터미널 간 전용 이동, 선택적 관광을 묶어 제공한다. 항공 지연으로 인한 승선 불가 위험을 줄이고 출발·도착 도시를 더 깊이 탐험할 수 있게 한다. 특히 Fly-Cruise 승객이나 낯선 해외 항구에서 출발하는 일정에서 높은 부가가치를 제공한다.",
+      "aliases": [
+        "Pre-Cruise Extension",
+        "Post-Cruise Extension",
+        "Pre/Post Package",
+        "Pre-Cruise Hotel Package",
+        "Cruise Extension Package",
+        "Pre-Cruise Hotel"
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetTerm": "Fly-Cruise",
+          "targetId": "fly-cruise"
+        },
+        {
+          "type": "related",
+          "targetTerm": "CruiseTour",
+          "targetId": "cruisetour"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Homeport",
+          "targetId": "homeport"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Embarkation",
+          "targetId": "embarkation"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Disembarkation",
+          "targetId": "disembarkation"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "CruiseTour",
+          "explanation": "A CruiseTour is a seamlessly packaged combination of a cruise segment and a multi-day land touring itinerary, sold as a single product by the cruise line; a pre/post-cruise package is a separate hotel and transfer add-on at the embarkation or disembarkation city and does not involve extended land touring.",
+          "explanation_ko": "CruiseTour는 크루즈 구간과 다일 육상 투어 일정을 하나의 상품으로 결합해 선사가 단일 패키지로 판매하는 것이고, Pre/Post-Cruise Package는 승선 또는 하선 도시에서의 별도 호텔·이동 부가 상품으로 광범위한 육상 투어를 포함하지 않는다.",
+          "targetId": "cruisetour"
+        },
+        {
+          "targetTerm": "Fly-Cruise",
+          "explanation": "Fly-Cruise is the combination of a flight and a cruise sold together; a pre/post-cruise package is the hotel and land extension at the port before or after the cruise and may be sold alongside a fly-cruise booking or independently.",
+          "explanation_ko": "Fly-Cruise는 항공편과 크루즈를 함께 판매하는 조합이고, Pre/Post-Cruise Package는 크루즈 전후 항구에서의 호텔·육상 연장 상품으로 Fly-Cruise와 함께 또는 독립적으로 판매될 수 있다.",
+          "targetId": "fly-cruise"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Celebrity Cruises Launches New Pre- and Post-Hotel Program",
+          "org": "Cruise Industry News",
+          "version": "",
+          "section": "",
+          "url": "https://cruiseindustrynews.com/cruise-news/2022/02/celebrity-cruises-launches-new-pre-and-post-hotel-program/",
+          "tier": "secondary"
+        },
+        {
+          "name": "Tour operator Avanti creates site for advisors to book pre-/post-cruise packages",
+          "org": "Travel Weekly",
+          "version": "",
+          "section": "",
+          "url": "https://www.travelweekly.com/Travel-News/Tour-Operators/Avanti-microsite-post-cruise-packages",
+          "tier": "secondary"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"14\" width=\"18\" height=\"14\" rx=\"2\"/><path d=\"M6 28v6h18v-6\"/><path d=\"M12 22h6\"/><path d=\"M28 30l6-12 8 12\"/><path d=\"M30 26h8\"/><line x1=\"6\" y1=\"36\" x2=\"42\" y2=\"36\"/></svg>",
+      "term": "Pre/Post-Cruise Package",
+      "definition": "Hotel accommodation, airport and pier transfers, and optional land touring sold to cruise passengers as an extension immediately before embarkation (pre-cruise) or after disembarkation (post-cruise) at the homeport or turnaround city, extending the vacation and easing same-day travel logistics.",
+      "lastReviewed": "2026-10-06"
+    },
+    {
       "id": "preferred-supplier",
       "vertical": "tours",
       "category": "tour-commercial",
@@ -61668,6 +62050,80 @@
       "term": "Shoulder Season",
       "definition": "The period of moderate travel demand and occupancy that falls between a destination's peak season (highest demand) and off-peak or low season (lowest demand). Shoulder season typically offers intermediate pricing, shorter booking lead times, and less crowding than peak, while still providing reasonable weather or activity conditions. Hoteliers, tour operators, and carriers use shoulder-season rate strategies to smooth demand curves and optimise annual revenue.",
       "lastReviewed": "2026-07-18"
+    },
+    {
+      "id": "significant-change-package-travel",
+      "vertical": "common",
+      "category": "disruption",
+      "conceptType": "business-term",
+      "status": "active",
+      "term_ko": "중대한 변경(Significant Change, 패키지 여행)",
+      "definition_ko": "EU 지침 2015/2302(패키지 여행 지침) 제11조에서 규정하는 개념으로, 목적지·출발지·일정·숙박 등급 또는 총 가격의 8% 초과 인상 등 패키지 여행의 주요 특성에 대한 중요한 변경. 주최자는 여행자에게 통보해야 하며, 여행자는 변경 수락, 대안 패키지 선택, 또는 위약금 없는 전액 환급 중 하나를 선택할 권리를 갖는다.",
+      "longDef": "Under Article 11 of Directive 2015/2302, if the organiser is constrained to alter significantly any of the main characteristics of the travel services before the start of the package, the traveller may, within a reasonable period set by the organiser, (a) accept the proposed change or (b) terminate the contract without paying a termination fee and receive a full refund. The organiser must offer an alternative package of equivalent or higher quality where possible. Price increases of more than 8% of the total package price are treated as a significant change and trigger the same rights. 'Significant' is assessed in context — the Directive lists main characteristics as destination, itinerary, times of departure or return, duration, frequency, departure point, type or class of transport, accommodation, meals, and excursions included. Minor administrative adjustments do not qualify. In the UK, equivalent rights apply under The Package Travel and Linked Travel Arrangements Regulations 2018 (SI 2018/634). The concept is operationally distinct from Extraordinary Circumstances, which allows the traveller (not the organiser) to terminate when the destination is significantly affected by unavoidable events.",
+      "longDef_ko": "EU 지침 2015/2302 제11조에 따라, 주최자가 패키지 출발 전 여행 서비스의 주요 특성을 중대하게 변경해야 하는 경우, 여행자는 주최자가 설정한 합리적인 기간 내에 (a) 제안된 변경을 수락하거나 (b) 위약금 없이 계약을 해지하고 전액 환급을 받을 수 있다. 주최자는 가능한 경우 동급 이상의 대안 패키지를 제시해야 한다. 총 패키지 가격의 8% 초과 가격 인상도 중대한 변경으로 간주되며 동일한 권리를 발생시킨다. '중대한' 여부는 맥락에 따라 판단하며, 지침은 주요 특성으로 목적지·여정·출발/귀환 시각·기간·빈도·출발지·운송 수단의 종류·등급·숙박·식사·포함된 투어를 열거한다. 소소한 행정 조정은 해당하지 않는다. 영국에서는 Package Travel and Linked Travel Arrangements Regulations 2018(SI 2018/634)에 따라 동등한 권리가 적용된다. 이 개념은 여행자(주최자가 아님)가 불가피한 사건으로 인해 목적지에 심각한 영향이 있을 때 해지할 수 있는 Extraordinary Circumstances와 구별된다.",
+      "aliases": [
+        "Material Change (Package Travel)",
+        "Significant Alteration (Package Travel)",
+        "Main Characteristics Change"
+      ],
+      "relationships": [
+        {
+          "type": "parent",
+          "targetTerm": "Package Travel Directive",
+          "targetId": "package-travel-directive"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Package Holiday",
+          "targetId": "package-holiday"
+        },
+        {
+          "type": "related",
+          "targetTerm": "Force Majeure",
+          "targetId": "force-majeure"
+        },
+        {
+          "type": "contrasts",
+          "targetTerm": "Extraordinary Circumstances",
+          "targetId": "extraordinary-circumstances"
+        }
+      ],
+      "distinctions": [
+        {
+          "targetTerm": "Extraordinary Circumstances",
+          "explanation": "A Significant Change is a unilateral alteration made by the organiser to the package before departure, giving the traveller the right to terminate; Extraordinary Circumstances is an event at or near the destination (war, natural disaster) that allows the traveller to cancel before departure without penalty — in that case neither party is responsible for the disruption.",
+          "explanation_ko": "중대한 변경은 주최자가 출발 전 패키지에 일방적으로 가하는 변경으로 여행자에게 해지 권리를 부여하고, Extraordinary Circumstances는 목적지 또는 인근의 전쟁·자연재해 등 사건으로 여행자가 위약금 없이 사전 취소할 수 있는 경우이며 이 때는 어느 쪽도 disruption에 대한 책임이 없다.",
+          "targetId": "extraordinary-circumstances"
+        },
+        {
+          "targetTerm": "Package Travel Directive",
+          "explanation": "The Package Travel Directive is the overarching EU regulation governing package holidays; Significant Change is one specific right-triggering concept defined within Article 11 of that Directive, dealing with pre-departure alterations the organiser makes to the package.",
+          "explanation_ko": "Package Travel Directive는 패키지 여행을 규율하는 포괄적인 EU 규정이고, 중대한 변경은 해당 지침 제11조에 정의된 하나의 권리 발생 개념으로, 출발 전 주최자가 패키지에 가하는 변경을 다룬다.",
+          "targetId": "package-travel-directive"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Directive (EU) 2015/2302 — Article 11: Alteration of the package travel contract before the start of the package",
+          "org": "European Union",
+          "version": "2015",
+          "section": "Article 11",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32015L0302",
+          "tier": "regulation"
+        },
+        {
+          "name": "The Package Travel and Linked Travel Arrangements Regulations 2018 (SI 2018/634)",
+          "org": "UK Government",
+          "version": "2018",
+          "section": "Regulation 13",
+          "url": "https://www.legislation.gov.uk/uksi/2018/634/contents/made",
+          "tier": "regulation"
+        }
+      ],
+      "icon": "<svg viewBox=\"0 0 48 48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"6\" width=\"28\" height=\"36\" rx=\"3\"/><line x1=\"16\" y1=\"14\" x2=\"32\" y2=\"14\"/><line x1=\"16\" y1=\"21\" x2=\"32\" y2=\"21\"/><line x1=\"16\" y1=\"28\" x2=\"24\" y2=\"28\"/><circle cx=\"32\" cy=\"33\" r=\"5\"/><line x1=\"32\" y1=\"30\" x2=\"32\" y2=\"34\"/><circle cx=\"32\" cy=\"36\" r=\"1\" fill=\"currentColor\" stroke=\"none\"/></svg>",
+      "term": "Significant Change (Package Travel)",
+      "definition": "A material alteration to any of the main characteristics of a package travel arrangement — such as destination, departure point, timing, standard of accommodation, or a price increase exceeding 8% — that obligates the organiser to notify the traveller and gives the traveller the right to accept the change, choose an alternative package, or terminate the contract and receive a full refund, as defined in Article 11 of EU Directive 2015/2302.",
+      "lastReviewed": "2026-10-06"
     },
     {
       "id": "simplified-invoicing-and-settlement-sis",
